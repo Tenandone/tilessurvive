@@ -1,0 +1,131 @@
+<style>
+.level-card {
+  max-width: 520px;
+  background: linear-gradient(135deg, #2b5fa7, #1f3f73);
+  border-radius: 16px;
+  padding: 16px;
+  color: #fff;
+  font-family: Arial, sans-serif;
+  margin: 20px auto;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.25);
+}
+.level-header {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.level-box { flex: 1; }
+.level-box span {
+  display:block; font-size:13px; opacity:.85;
+}
+.level-box strong {
+  display:block; font-size:22px; margin-top:4px;
+}
+
+.exp-bar {
+  position: relative;
+  background: #16345f;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 46px;
+  margin-top: 12px;
+}
+.exp-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #6adf4a, #9af06d);
+  width: 100%;
+}
+.exp-text {
+  position:absolute; inset:0;
+  display:flex; align-items:center; justify-content:center;
+  font-weight:bold; color:#083800;
+}
+
+.sub {
+  margin-top: 8px;
+  text-align: center;
+  font-size: 13px;
+  opacity: .9;
+}
+</style>
+
+<style>
+  .step-cell {
+    width:90px;
+    height:50px; 
+    vertical-align:middle;
+    text-align:center;
+  }
+  .step-img {
+    width:34px;
+    height:34px;
+  }
+  .step-img-large {
+    width:42px;
+    height:42px;
+  }
+  .rounded {
+    border-radius:12px;
+  }
+</style>
+
+<div style="max-width:820px; margin:25px auto; font-family:'Segoe UI',sans-serif;">
+
+<div style="
+  display:flex;
+  justify-content:space-between;
+  align-items:flex-end;
+  margin-bottom:15px;
+  padding-bottom:8px;
+  border-bottom:3px solid #A7D8FF;
+">
+  <h2 style="
+    margin:0;
+    font-size:26px;
+    font-weight:700;
+    color:#2f2f2f;
+    letter-spacing:-0.5px;
+  ">
+    타일서바이벌 영웅 레벨 1~150 경험치 소모 요약표
+  </h2>
+
+  <span style="
+    display:inline-flex;
+    align-items:center;
+    font-size:14px;
+    color:#555;
+    font-weight:600;
+    letter-spacing:0.2px;
+  ">
+    <img src="img/king/ten.png"
+         style="width:30px; height:30px; border-radius:6px; margin-right:8px;">
+    제작 Ten
+  </span>
+</div>
+
+<div class="level-card">
+  <div class="level-header">
+    <div class="level-box">
+      <span>가디언 수량</span>
+      <strong>8</strong>
+    </div>
+    <div class="level-box">
+      <span>레벨</span>
+      <strong>1 ~ 150</strong>
+    </div>
+    <div class="level-box">
+      <span>부대 용량</span>
+      <strong>+20,000</strong>
+    </div>
+  </div>
+
+  <div class="exp-bar">
+    <div class="exp-fill"></div>
+    <div class="exp-text">총 소모 EXP 43.32M</div>
+  </div>
+
+  <div class="sub">
+    1레벨부터 150레벨(만렙)까지 필요한 전체 경험치
+  </div>
+</div>

@@ -1,0 +1,1786 @@
+<!doctype html>
+<html lang="ja" data-lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>シーズンⅢ 未定 指南 | タイルサバイバル シーズンガイド | TilesSurvive.net</title>
+  <base href="/" />
+
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="description" content="タイルサバイバル シーズンⅢ 未定の指南ページです。シーズン目標、シーズンパス、シーズン週間パス、イベント、英雄昇格、サーバー戦までまとめて整理しました。" />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+  <meta name="author" content="TilesSurvive.net" />
+
+  <link rel="canonical" href="https://tilessurvive.net/ja/seasons/season-3-undecided/" />
+  <link rel="alternate" hreflang="x-default" href="https://tilessurvive.net/en/seasons/season-3-undecided/" />
+  <link rel="alternate" hreflang="ko" href="https://tilessurvive.net/ko/seasons/season-3-undecided/" />
+  <link rel="alternate" hreflang="en" href="https://tilessurvive.net/en/seasons/season-3-undecided/" />
+  <link rel="alternate" hreflang="ja" href="https://tilessurvive.net/ja/seasons/season-3-undecided/" />
+  <link rel="alternate" hreflang="ru" href="https://tilessurvive.net/ru/seasons/season-3-undecided/" />
+  <link rel="alternate" hreflang="zh-TW" href="https://tilessurvive.net/zh-tw/seasons/season-3-undecided/" />
+
+  <meta property="og:site_name" content="TilesSurvive.net" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="シーズンⅢ 未定 指南 | タイルサバイバル シーズンガイド" />
+  <meta property="og:description" content="シーズン目標、シーズンパス、シーズン週間パス、イベント、英雄昇格、KvKまでシーズンⅢ全体の流れを整理" />
+  <meta property="og:url" content="https://tilessurvive.net/ja/seasons/season-3-undecided/" />
+  <meta property="og:image" content="https://tilessurvive.net/img/seasons/season-3-eternal-night-descends.webp" />
+  <meta property="og:locale" content="ja_JP" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="シーズンⅢ 未定 指南 | タイルサバイバル シーズンガイド" />
+  <meta name="twitter:description" content="タイルサバイバル シーズンⅢ 未定の要点を整理した指南ページ" />
+  <meta name="twitter:image" content="https://tilessurvive.net/img/seasons/season-3-eternal-night-descends.webp" />
+
+  <link rel="preload" as="image" href="/img/logo-tilessurvive.png" />
+  <link rel="preload" as="image" href="/img/seasons/season-3-eternal-night-descends.webp" />
+
+  <style>
+    :root{
+      --bg:#f4f7fb;
+      --surface:#ffffff;
+      --surface-soft:#f8fafc;
+      --line:#e5e7eb;
+      --line-strong:#cbd5e1;
+      --text:#0f172a;
+      --text-soft:#475569;
+      --text-faint:#64748b;
+      --dark:#0f172a;
+      --brand:#0ea5e9;
+      --brand-soft:#e0f2fe;
+      --container:min(1180px, calc(100% - 32px));
+      --radius-xl:28px;
+      --radius-lg:24px;
+      --radius-md:18px;
+      --shadow:0 18px 40px rgba(15,23,42,.08);
+    }
+
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;overflow-x:hidden}
+    body{
+      color:var(--text);
+      background:var(--bg);
+      font-family:"Pretendard","Noto Sans JP","Hiragino Sans","Yu Gothic","Meiryo",system-ui,-apple-system,sans-serif;
+      line-height:1.6;
+      padding-bottom:calc(76px + env(safe-area-inset-bottom, 0px));
+    }
+
+    a{color:inherit;text-decoration:none}
+    img{display:block;max-width:100%}
+    button{font:inherit}
+    .container{width:var(--container);margin:0 auto;min-width:0}
+
+    .skip-link{
+      position:absolute;
+      left:12px;
+      top:-44px;
+      z-index:3000;
+      background:#111827;
+      color:#fff;
+      padding:10px 14px;
+      border-radius:10px;
+      font-weight:800;
+    }
+    .skip-link:focus{top:12px}
+
+    .site-header{
+      position:sticky;
+      top:0;
+      z-index:1500;
+      background:rgba(255,255,255,.92);
+      backdrop-filter:saturate(160%) blur(12px);
+      border-bottom:1px solid rgba(15,23,42,.06);
+    }
+
+    .nav-bar{
+      min-height:68px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+    }
+
+    .nav-left{
+      display:flex;
+      align-items:center;
+      gap:20px;
+      min-width:0;
+      flex:1 1 auto;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      min-width:0;
+      color:#111827;
+    }
+
+    .brand-logo{
+      width:30px;
+      height:30px;
+      border-radius:9px;
+      flex:0 0 auto;
+      background:#e5e7eb;
+      object-fit:cover;
+    }
+
+    .brand-text{
+      display:flex;
+      flex-direction:column;
+      gap:2px;
+      min-width:0;
+      line-height:1.1;
+    }
+
+    .brand-title{
+      font-size:16px;
+      font-weight:900;
+      white-space:nowrap;
+    }
+
+    .brand-sub{
+      font-size:12px;
+      color:#6b7280;
+      white-space:nowrap;
+    }
+
+    .nav{
+      display:flex;
+      align-items:center;
+      gap:4px;
+      min-width:0;
+      flex-wrap:wrap;
+    }
+
+    .nav a{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:40px;
+      padding:0 12px;
+      border-radius:999px;
+      color:#475569;
+      font-size:14px;
+      font-weight:800;
+      white-space:nowrap;
+    }
+
+    .nav a:hover,
+    .nav a:focus,
+    .nav a[aria-current="page"]{
+      background:#eef2f7;
+      color:#111827;
+      outline:none;
+    }
+
+    .nav-right{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      flex:0 0 auto;
+    }
+
+    .lang-pills{
+      display:flex;
+      align-items:center;
+      gap:8px;
+      flex-wrap:wrap;
+    }
+
+    .lang-pill{
+      appearance:none;
+      border:1px solid var(--line);
+      background:#fff;
+      color:#6b7280;
+      padding:8px 10px;
+      border-radius:999px;
+      font:13px/1.1 system-ui,-apple-system,Segoe UI,Roboto,"Noto Sans",Arial;
+      cursor:pointer;
+      white-space:nowrap;
+      user-select:none;
+    }
+
+    .lang-pill:hover{color:#111827}
+    .lang-pill[aria-current="true"]{
+      color:#111827;
+      font-weight:900;
+      border-color:var(--line-strong);
+      background:#f8fafc;
+    }
+
+    .hamburger{
+      display:none;
+      appearance:none;
+      border:1px solid var(--line);
+      background:#fff;
+      color:#111827;
+      width:42px;
+      height:42px;
+      border-radius:12px;
+      font-size:20px;
+      cursor:pointer;
+      flex:0 0 auto;
+    }
+
+    .countdown-bar-wrap{
+      background:#fff;
+      border-bottom:1px solid rgba(15,23,42,.06);
+    }
+
+    .countdown-bar{
+      min-height:52px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      padding:10px 0;
+    }
+
+    .countdown-bar__left{
+      min-width:0;
+      display:flex;
+      align-items:center;
+      gap:10px;
+      flex:1 1 auto;
+    }
+
+    .countdown-badge{
+      flex:0 0 auto;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:28px;
+      padding:0 10px;
+      border-radius:999px;
+      background:#111827;
+      color:#fff;
+      font-size:12px;
+      font-weight:900;
+    }
+
+    .countdown-copy{
+      min-width:0;
+      font-size:14px;
+      color:#334155;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+    }
+
+    .countdown-copy strong{
+      color:#111827;
+      font-weight:900;
+    }
+
+    .countdown-bar__actions{
+      flex:0 0 auto;
+      display:flex;
+      align-items:center;
+      gap:8px;
+      flex-wrap:nowrap;
+    }
+
+    .countdown-link{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:34px;
+      padding:0 12px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      background:#f8fafc;
+      font-size:13px;
+      font-weight:800;
+      color:#111827;
+      white-space:nowrap;
+      flex:0 0 auto;
+    }
+
+    .countdown-link:hover,
+    .countdown-link:focus{
+      background:#eef2f7;
+      outline:none;
+    }
+
+    .page-main{
+      padding-top:18px;
+      padding-bottom:32px;
+    }
+
+    .breadcrumb{
+      display:flex;
+      align-items:center;
+      gap:8px;
+      flex-wrap:wrap;
+      margin-bottom:16px;
+      color:#64748b;
+      font-size:13px;
+      font-weight:700;
+    }
+    .breadcrumb a{color:#475569}
+    .breadcrumb span[aria-current="page"]{color:#111827}
+
+    .hero{
+      display:grid;
+      grid-template-columns:minmax(0,1.1fr) minmax(320px,.9fr);
+      gap:18px;
+      align-items:stretch;
+    }
+
+    .hero-card,
+    .section-card,
+    .aside-card{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:var(--radius-xl);
+      box-shadow:var(--shadow);
+      min-width:0;
+    }
+
+    .hero-card{
+      padding:28px 24px;
+      background:
+        radial-gradient(circle at top right, rgba(14,165,233,.12), transparent 30%),
+        linear-gradient(180deg,#ffffff,#f8fbff);
+    }
+
+    .eyebrow{
+      display:inline-flex;
+      align-items:center;
+      min-height:30px;
+      padding:0 12px;
+      border-radius:999px;
+      background:var(--brand-soft);
+      color:#0369a1;
+      font-size:12px;
+      font-weight:900;
+      margin-bottom:14px;
+    }
+
+    .hero-card h1{
+      margin:0;
+      font-size:42px;
+      line-height:1.1;
+      letter-spacing:-.04em;
+      color:var(--dark);
+      word-break:keep-all;
+    }
+
+    .hero-card p{
+      margin:14px 0 0;
+      color:var(--text-soft);
+      font-size:15px;
+      max-width:760px;
+    }
+
+    .hero-meta{
+      margin-top:18px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+    }
+
+    .meta-pill{
+      display:inline-flex;
+      align-items:center;
+      min-height:38px;
+      padding:0 14px;
+      border-radius:999px;
+      background:#f8fafc;
+      border:1px solid #e2e8f0;
+      color:#111827;
+      font-size:13px;
+      font-weight:800;
+    }
+
+    .hero-links{
+      margin-top:18px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+    }
+
+    .hero-link{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:44px;
+      padding:0 16px;
+      border-radius:999px;
+      font-size:14px;
+      font-weight:900;
+      border:1px solid var(--line);
+      background:#fff;
+    }
+
+    .hero-link.is-primary{
+      background:#111827;
+      color:#fff;
+      border-color:#111827;
+    }
+
+    .aside-card{
+      padding:18px;
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+    }
+
+    .guide-thumb{
+      border-radius:22px;
+      background:linear-gradient(180deg,#eef8ff,#e0f2fe);
+      border:1px solid #dbeafe;
+      padding:18px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      min-height:260px;
+    }
+
+    .guide-thumb img{
+      width:100%;
+      max-width:320px;
+      height:auto;
+      object-fit:contain;
+    }
+
+    .quick-grid{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:10px;
+    }
+
+    .quick-item{
+      border:1px solid #e2e8f0;
+      background:#f8fafc;
+      border-radius:18px;
+      padding:14px;
+    }
+
+    .quick-item strong{
+      display:block;
+      font-size:12px;
+      color:#64748b;
+      margin-bottom:4px;
+    }
+
+    .quick-item span{
+      display:block;
+      font-size:15px;
+      font-weight:900;
+      color:#111827;
+      word-break:keep-all;
+    }
+
+    .section-stack{
+      margin-top:18px;
+      display:grid;
+      gap:18px;
+    }
+
+    .section-card{
+      padding:24px;
+    }
+
+    .section-head{
+      margin-bottom:18px;
+    }
+
+    .section-head h2{
+      margin:0;
+      font-size:30px;
+      line-height:1.2;
+      letter-spacing:-.03em;
+      color:var(--dark);
+      word-break:keep-all;
+    }
+
+    .section-head p{
+      margin:8px 0 0;
+      font-size:14px;
+      color:var(--text-soft);
+      word-break:keep-all;
+    }
+
+    .highlight-box{
+      border:1px solid #dbeafe;
+      background:linear-gradient(180deg,#f8fbff,#eef6ff);
+      border-radius:22px;
+      padding:18px;
+    }
+
+    .highlight-box strong{
+      display:block;
+      font-size:16px;
+      color:#0f172a;
+      margin-bottom:8px;
+    }
+
+    .card-grid{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:14px;
+    }
+
+    .info-box{
+      border:1px solid #e2e8f0;
+      border-radius:20px;
+      padding:18px;
+      background:#fff;
+      min-width:0;
+    }
+
+    .info-box h3{
+      margin:0 0 10px;
+      font-size:20px;
+      line-height:1.3;
+      word-break:keep-all;
+    }
+
+    .info-box p{
+      margin:0;
+      color:var(--text-soft);
+      font-size:14px;
+    }
+
+    .timeline{
+      display:grid;
+      gap:12px;
+    }
+
+    .timeline-item{
+      display:grid;
+      grid-template-columns:96px minmax(0,1fr);
+      gap:14px;
+      align-items:start;
+      border:1px solid var(--line);
+      border-radius:20px;
+      padding:16px;
+      background:#fff;
+    }
+
+    .timeline-week{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      min-height:54px;
+      border-radius:16px;
+      background:#eff6ff;
+      color:#1d4ed8;
+      font-size:18px;
+      font-weight:900;
+    }
+
+    .timeline-copy h3{
+      margin:0 0 6px;
+      font-size:20px;
+      line-height:1.2;
+      word-break:keep-all;
+    }
+
+    .timeline-copy p{
+      margin:0;
+      color:var(--text-soft);
+      font-size:14px;
+    }
+
+    .table-wrap{
+      max-width:100%;
+      overflow-x:auto;
+      border:1px solid #e2e8f0;
+      border-radius:22px;
+      background:#fff;
+      -webkit-overflow-scrolling:touch;
+    }
+
+    table{
+      width:100%;
+      min-width:760px;
+      border-collapse:collapse;
+      text-align:left;
+    }
+
+    thead{
+      background:#f4f6f8;
+    }
+
+    th,td{
+      border-bottom:1px solid #e5e7eb;
+      padding:14px 12px;
+      font-size:14px;
+      vertical-align:top;
+    }
+
+    th{
+      color:#334155;
+      font-weight:900;
+      white-space:nowrap;
+    }
+
+    td{
+      color:#111827;
+      font-weight:700;
+    }
+
+    .tag-row{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      margin-top:12px;
+    }
+
+    .tag{
+      display:inline-flex;
+      align-items:center;
+      min-height:32px;
+      padding:0 12px;
+      border-radius:999px;
+      background:#f8fafc;
+      border:1px solid #e2e8f0;
+      color:#334155;
+      font-size:13px;
+      font-weight:800;
+    }
+
+    .back-list{
+      margin-top:18px;
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+
+    .back-link{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:42px;
+      padding:0 16px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      background:#fff;
+      font-size:14px;
+      font-weight:900;
+      color:#111827;
+    }
+
+    .site-footer{
+      margin-top:26px;
+      border-top:1px solid var(--line);
+      background:#fff;
+    }
+
+    .footer-link-strip{
+      padding:14px 0;
+      border-bottom:1px solid #eef2f7;
+    }
+
+    .footer-link-strip__inner{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      flex-wrap:wrap;
+      text-align:center;
+    }
+
+    .footer-link-strip__actions{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      flex-wrap:wrap;
+    }
+
+    .footer-inner{padding:24px 0 34px}
+    .footer-top{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      gap:18px;
+      text-align:center;
+    }
+
+    .footer-brand{
+      font-size:18px;
+      font-weight:900;
+      color:#111827;
+    }
+
+    .footer-desc{
+      margin:8px 0 0;
+      color:var(--text-faint);
+      font-size:14px;
+      max-width:720px;
+      word-break:keep-all;
+    }
+
+    .footer-links{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:10px;
+    }
+
+    .footer-links a{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:40px;
+      padding:0 14px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      background:#f8fafc;
+      font-size:14px;
+      font-weight:800;
+    }
+
+    .footer-copy{
+      margin-top:18px;
+      padding-top:18px;
+      border-top:1px solid #eef2f7;
+      color:var(--text-faint);
+      font-size:13px;
+      text-align:center;
+    }
+
+    .mobile-bottom-nav{
+      position:fixed;
+      left:0;
+      right:0;
+      bottom:0;
+      z-index:1400;
+      display:none;
+      background:rgba(255,255,255,.96);
+      backdrop-filter:saturate(160%) blur(10px);
+      border-top:1px solid rgba(15,23,42,.08);
+      padding:8px 10px calc(8px + env(safe-area-inset-bottom, 0px));
+    }
+
+    .mobile-bottom-nav__inner{
+      display:grid;
+      grid-template-columns:repeat(4,minmax(0,1fr));
+      gap:6px;
+      max-width:640px;
+      margin:0 auto;
+    }
+
+    .mobile-bottom-nav__item{
+      min-width:0;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      gap:4px;
+      padding:8px 4px 7px;
+      border-radius:12px;
+      color:#6b7280;
+    }
+
+    .mobile-bottom-nav__item svg{
+      width:20px;
+      height:20px;
+      display:block;
+      flex:0 0 auto;
+    }
+
+    .mobile-bottom-nav__label{
+      font-size:11px;
+      line-height:1.1;
+      font-weight:700;
+      letter-spacing:-0.01em;
+      white-space:nowrap;
+    }
+
+    .mobile-bottom-nav__item.is-active,
+    .mobile-bottom-nav__item[aria-current="page"]{
+      color:#111827;
+      background:#f3f4f6;
+    }
+
+    .backdrop{
+      position:fixed;
+      inset:0;
+      background:rgba(15,23,42,.38);
+      z-index:1600;
+    }
+
+    .drawer{
+      position:fixed;
+      top:0;
+      right:0;
+      bottom:0;
+      width:min(78vw,360px);
+      background:#fff;
+      box-shadow:-16px 0 40px rgba(15,23,42,.15);
+      z-index:1700;
+      overflow-y:auto;
+      transform:translateX(100%);
+      transition:transform .25s ease;
+    }
+
+    html.is-open .drawer{transform:translateX(0)}
+
+    .drawer header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:16px;
+      border-bottom:1px solid var(--line);
+      position:sticky;
+      top:0;
+      background:#fff;
+      z-index:2;
+    }
+
+    .drawer .section{padding:16px}
+    .drawer .nav-list{display:flex;flex-direction:column;gap:4px}
+    .drawer .nav-list a{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      width:100%;
+      min-height:44px;
+      padding:0 12px;
+      border-radius:12px;
+      font-weight:800;
+      color:#111827;
+      background:#f8fafc;
+    }
+
+    .lang-pills--drawer{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:8px;
+    }
+
+    .lang-pills--drawer .lang-pill{
+      width:100%;
+      display:flex;
+      justify-content:center;
+    }
+
+    .drawer-dotrule{
+      width:calc(100% - 32px);
+      margin:0 auto;
+      border-top:1px dashed rgba(15,23,42,.16);
+    }
+
+    .drawer-quick-stack{
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+      margin-top:14px;
+    }
+
+    .drawer-quick-pill{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      min-height:44px;
+      border:1px solid #dbe2ea;
+      border-radius:999px;
+      font-weight:800;
+      background:#fff;
+    }
+
+    .visually-hidden-seo{
+      position:absolute !important;
+      width:1px !important;
+      height:1px !important;
+      padding:0 !important;
+      margin:-1px !important;
+      overflow:hidden !important;
+      clip:rect(0,0,0,0) !important;
+      white-space:nowrap !important;
+      border:0 !important;
+    }
+
+    @media (max-width:980px){
+      .nav{display:none}
+      .hamburger{display:inline-flex;align-items:center;justify-content:center}
+      .nav-right{display:none}
+      .mobile-bottom-nav{display:block}
+      .countdown-bar{
+        min-height:52px;
+        align-items:center;
+        flex-direction:row;
+        justify-content:space-between;
+        gap:10px;
+      }
+      .countdown-bar__left{
+        width:auto;
+        min-width:0;
+        flex:1 1 auto;
+      }
+      .countdown-bar__actions{
+        width:auto;
+        justify-content:flex-end;
+        flex-wrap:nowrap;
+      }
+      .hero{
+        grid-template-columns:1fr;
+      }
+      .card-grid{
+        grid-template-columns:1fr;
+      }
+    }
+
+    @media (max-width:640px){
+      .container{width:min(100% - 24px,1180px)}
+      .brand-title{font-size:14px}
+      .brand-sub{display:none}
+      .hero-card,
+      .section-card,
+      .aside-card{
+        border-radius:22px;
+      }
+      .hero-card{padding:20px 18px}
+      .hero-card h1{font-size:30px}
+      .aside-card{padding:14px}
+      .section-card{padding:20px 16px}
+      .section-head h2{font-size:25px}
+      .quick-grid{grid-template-columns:1fr}
+      .timeline-item{
+        grid-template-columns:1fr;
+        gap:10px;
+      }
+      .timeline-week{
+        width:100%;
+      }
+      table{min-width:680px}
+      .countdown-bar{gap:8px}
+      .countdown-bar__left{gap:8px}
+      .countdown-copy{
+        font-size:13px;
+        white-space:nowrap;
+        overflow:hidden;
+        text-overflow:ellipsis;
+      }
+      .countdown-link{
+        min-height:32px;
+        padding:0 10px;
+        font-size:12px;
+      }
+      .footer-link-strip__inner{
+        flex-direction:column;
+      }
+    }
+
+    html.is-open body,
+    body.no-scroll{overflow:hidden}
+  </style>
+
+  <script id="ts-website-schema" type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "name":"TilesSurvive.net",
+    "url":"https://tilessurvive.net/",
+    "inLanguage":"ja",
+    "description":"タイルサバイバルのデータ、ガイド、シーズン、コードを整理したデータハブ",
+    "potentialAction":{
+      "@type":"SearchAction",
+      "target":"https://tilessurvive.net/ja/search/?q={search_term_string}",
+      "query-input":"required name=search_term_string"
+    }
+  }
+  </script>
+
+  <script id="ts-breadcrumb-schema" type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {
+        "@type":"ListItem",
+        "position":1,
+        "name":"ホーム",
+        "item":"https://tilessurvive.net/ja/"
+      },
+      {
+        "@type":"ListItem",
+        "position":2,
+        "name":"シーズン",
+        "item":"https://tilessurvive.net/ja/seasons/"
+      },
+      {
+        "@type":"ListItem",
+        "position":3,
+        "name":"シーズンⅢ 未定",
+        "item":"https://tilessurvive.net/ja/seasons/season-3-undecided/"
+      }
+    ]
+  }
+  </script>
+
+  <script id="ts-article-schema" type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Article",
+    "headline":"シーズンⅢ 未定 指南",
+    "description":"タイルサバイバル シーズンⅢ 未定の主要な流れ、シーズン目標、パス、イベント、英雄昇格、サーバー戦を整理したガイド",
+    "image":"https://tilessurvive.net/img/seasons/season-3-eternal-night-descends.webp",
+    "author":{
+      "@type":"Organization",
+      "name":"TilesSurvive.net"
+    },
+    "publisher":{
+      "@type":"Organization",
+      "name":"TilesSurvive.net",
+      "logo":{
+        "@type":"ImageObject",
+        "url":"https://tilessurvive.net/img/logo-tilessurvive.png"
+      }
+    },
+    "mainEntityOfPage":"https://tilessurvive.net/ja/seasons/season-3-undecided/",
+    "inLanguage":"ja-JP"
+  }
+  </script>
+
+  <script>
+    (function(){
+      function normalizeLang(code){
+        var low = String(code || '').trim().toLowerCase();
+        if (low === 'ko') return 'ko';
+        if (low === 'en') return 'en';
+        if (low === 'ja') return 'ja';
+        if (low === 'ru') return 'ru';
+        if (low === 'zh-tw' || low === 'zh_tw' || low === 'tw') return 'zh-tw';
+        return 'ja';
+      }
+
+      function pathWithLang(lang, path){
+        return '/' + lang + path;
+      }
+
+      function applyLang(lang){
+        lang = normalizeLang(lang);
+        var currentPath = location.pathname.replace(/^\/(ko|en|ja|ru|zh-tw)(\/|$)/i, '/');
+        if (currentPath === '') currentPath = '/';
+        location.href = pathWithLang(lang, currentPath);
+      }
+
+      window.TS_LANG = {
+        normalize: normalizeLang,
+        apply: applyLang
+      };
+    })();
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">本文へスキップ</a>
+
+  <header class="site-header" role="banner">
+    <div class="container nav-bar">
+      <div class="nav-left">
+        <a class="brand" href="/ja/" aria-label="TilesSurvive.net ホーム">
+          <img class="brand-logo" src="/img/logo-tilessurvive.png" alt="TilesSurvive.net" width="30" height="30" />
+          <span class="brand-text">
+            <span class="brand-title">TilesSurvive.net</span>
+            <span class="brand-sub">Tiles Survive Data / Guides / Codes / Tools Hub</span>
+          </span>
+        </a>
+
+        <nav class="nav" id="primaryNav" role="navigation" aria-label="上部メニュー">
+          <a href="/ja/buildings/">建物</a>
+          <a href="/ja/heroes/">英雄</a>
+          <a href="/ja/database/">データベース</a>
+          <a href="/ja/guides/">ガイド</a>
+          <a href="/ja/seasons/" aria-current="page">シーズン</a>
+        </nav>
+      </div>
+
+      <button class="hamburger" id="menuToggle" aria-label="メニューを開く" aria-controls="mobileDrawer" aria-expanded="false">☰</button>
+
+      <div class="nav-right">
+        <div id="langDropdownHeader" class="lang-pills" aria-label="言語選択"></div>
+      </div>
+    </div>
+  </header>
+
+  <section class="countdown-bar-wrap" aria-label="コードカウントダウン">
+    <div class="container countdown-bar">
+      <div class="countdown-bar__left">
+        <span class="countdown-badge">コード</span>
+        <div class="countdown-copy">
+          <strong>タイルズサバイバル コード残り時間</strong>
+        </div>
+      </div>
+      <div class="countdown-bar__actions">
+        <a class="countdown-link" href="/ja/codes/">最新コード</a>
+        <a class="countdown-link" href="/ja/guides/gift-code-how-to-use/">入力方法</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="backdrop" id="backdrop" hidden></div>
+
+  <aside class="drawer" id="mobileDrawer" aria-hidden="true" aria-label="モバイルメニュー">
+    <header>
+      <strong>Menu</strong>
+      <button id="btnClose" aria-label="閉じる" style="background:none;border:0;font-size:20px;cursor:pointer">✕</button>
+    </header>
+
+    <div class="section">
+      <div id="langDropdownDrawer" class="lang-pills lang-pills--drawer" aria-label="言語選択"></div>
+    </div>
+
+    <div class="drawer-dotrule" aria-hidden="true"></div>
+
+    <div class="section">
+      <div class="nav-list" role="navigation" aria-label="モバイルメニュー一覧">
+        <a href="/ja/buildings/">建物</a>
+        <a href="/ja/heroes/">英雄</a>
+        <a href="/ja/behemoths/">ベヒーモス</a>
+        <a href="/ja/database/">データベース</a>
+        <a href="/ja/guides/">ガイド</a>
+        <a href="/ja/seasons/" aria-current="page">シーズン</a>
+      </div>
+
+      <div class="drawer-quick-stack">
+        <a class="drawer-quick-pill js-drawer-close" href="https://discord.gg/EjqWhTPyaEjqWhTPya" target="_blank" rel="noopener noreferrer">Discord</a>
+        <a class="drawer-quick-pill js-drawer-close" href="/ja/codes/">ギフトコード</a>
+      </div>
+    </div>
+  </aside>
+
+  <main class="container page-main" id="main" role="main" aria-label="メインコンテンツ">
+    <section class="visually-hidden-seo" aria-label="SEO summary">
+      <p>タイルサバイバル シーズンⅢ 未定 指南 シーズン目標 シーズンパス シーズン週間パス イベント 英雄昇格 サーバー戦 整理</p>
+    </section>
+
+    <nav class="breadcrumb" aria-label="パンくず">
+      <a href="/ja/">ホーム</a>
+      <span>›</span>
+      <a href="/ja/seasons/">シーズン</a>
+      <span>›</span>
+      <span aria-current="page">シーズンⅢ 未定</span>
+    </nav>
+
+    <section class="hero" aria-labelledby="pageTitle">
+      <article class="hero-card">
+        <span class="eyebrow">シーズンⅢ</span>
+        <h1 id="pageTitle">シーズンⅢ 未定</h1>
+        <p>
+          シーズンⅢの未定コンテンツを基準に全体の流れを整理したページです。
+          シーズン目標、シーズンパス、シーズン週間パス、主要イベント、英雄昇格、サーバー戦まで、
+          シーズン運営の流れをひと目で確認できるよう構成しました。
+        </p>
+
+        <div class="hero-meta">
+          <span class="meta-pill">総期間: 8週間</span>
+          <span class="meta-pill">重要数値: 未定</span>
+          <span class="meta-pill">主要システム: 未定</span>
+          <span class="meta-pill">昇格英雄: 未定</span>
+        </div>
+
+        <div class="hero-links">
+          <a class="hero-link is-primary" href="#season-flow">8週間の進行構造</a>
+          <a class="hero-link" href="#season-pass">パス / 週間パス</a>
+          <a class="hero-link" href="#promotionTitle">英雄昇格</a>
+        </div>
+      </article>
+
+      <aside class="aside-card" aria-label="シーズンⅢ要約">
+        <div class="guide-thumb">
+          <img src="/img/seasons/season-3-eternal-night-descends.webp" alt="シーズンⅢ 未定 代表画像" />
+        </div>
+
+        <div class="quick-grid">
+          <div class="quick-item">
+            <strong>シーズン目標</strong>
+            <span>未定</span>
+          </div>
+          <div class="quick-item">
+            <strong>個人スキル</strong>
+            <span>未定</span>
+          </div>
+          <div class="quick-item">
+            <strong>主要イベント</strong>
+            <span>未定</span>
+          </div>
+          <div class="quick-item">
+            <strong>重要おすすめ</strong>
+            <span>未定</span>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <div class="section-stack">
+      <section class="section-card" aria-labelledby="summaryTitle">
+        <div class="section-head">
+          <h2 id="summaryTitle">シーズンⅢ 要点まとめ</h2>
+          <p>細かいシーズン用語やシステム名は未定のままにして、まずは運営構造だけを整理したバージョンです。</p>
+        </div>
+
+        <div class="highlight-box">
+          <strong>まず覚えておくこと</strong>
+          シーズンⅢは合計8週間基準で運営されるシーズンコンテンツです。
+          細かいシーズン用語や個別システム名はまだ未定のまま、
+          シーズン目標進行、パス報酬、週間パス効率、イベント参加、英雄昇格、サーバー戦準備の流れだけ先に整理した構成です。
+        </div>
+
+        <div class="tag-row">
+          <span class="tag">シーズン目標</span>
+          <span class="tag">シーズンパス</span>
+          <span class="tag">シーズン週間パス</span>
+          <span class="tag">イベント</span>
+          <span class="tag">英雄昇格</span>
+          <span class="tag">KvK</span>
+          <span class="tag">未定</span>
+        </div>
+      </section>
+
+      <section class="section-card" aria-labelledby="coreSystemTitle">
+        <div class="section-head">
+          <h2 id="coreSystemTitle">シーズン主要システム</h2>
+          <p>シーズンⅢでは、細かい名称よりも構造を先に整理します。</p>
+        </div>
+
+        <div class="card-grid">
+          <article class="info-box">
+            <h3>重要数値</h3>
+            <p>
+              シーズンⅢの重要数値は現在未定です。
+              実際のゲーム内シーズン構造が確定したら、その数値と成長方向に合わせて詳細内容を追加できます。
+            </p>
+          </article>
+
+          <article class="info-box">
+            <h3>主要システム</h3>
+            <p>
+              シーズンⅢの代表システム名も現在は未定です。
+              ただし、シーズン目標進行、イベント参加、パス報酬、週間パス効率、サーバー戦接続構造は同じフレームで整理できます。
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-card" aria-labelledby="serverProgressTitle">
+        <div class="section-head">
+          <h2 id="serverProgressTitle">シーズン進行度</h2>
+          <p>シーズンⅢ全体の流れを理解するためのカレンダー型構造です。</p>
+        </div>
+
+        <div class="highlight-box">
+          <strong>わかりやすく言うと</strong>
+          シーズン中にどのコンテンツがいつ開くのかを知らせるカレンダー構造です。
+          細かいイベント名やシーズン用語は未定のまま、各週ごとに開くシーズンコンテンツとサーバー単位の進行フローだけ先に把握しておけば十分です。
+        </div>
+      </section>
+
+      <section class="section-card" aria-labelledby="seasonFlowTitle" id="season-flow">
+        <div class="section-head">
+          <h2 id="seasonFlowTitle">シーズンⅢ 全体の流れ</h2>
+          <p>シーズンⅢは合計8週間進行します。細かい用語は未定でも、運営の流れは以下のように考えておけば大丈夫です。</p>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-week">1週目</div>
+            <div class="timeline-copy">
+              <h3>シーズン開始 / シーズン目標進行</h3>
+              <p>
+                シーズンⅢが始まったら、シーズン目標に沿って基本成長構造を先に整えます。
+                細かい数値名は未定でも、序盤はシーズンの重要成長数値を最優先で確保するのが基本です。
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-week">2週目</div>
+            <div class="timeline-copy">
+              <h3>シーズン戦闘コンテンツ進行</h3>
+              <p>
+                シーズン戦闘型イベントが本格化する区間です。
+                細かいコンテンツ名は未定のまま、個人報酬とランキング報酬構造を軸に理解しておけば十分です。
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-week">3週目</div>
+            <div class="timeline-copy">
+              <h3>補助コンテンツ開放</h3>
+              <p>
+                シーズン中盤の報酬型コンテンツが開く時期です。
+                細かい用語は未定でも、加速、成長素材、シーズン素材などの補助報酬を回収する流れとして見れば大丈夫です。
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-week">4週目</div>
+            <div class="timeline-copy">
+              <h3>英雄昇格準備</h3>
+              <p>
+                シーズンⅢでつながる昇格英雄または強化要素を準備する時期です。
+                対象英雄と素材名は未定のまま、昇格タイミングだけ先に管理しておく形で十分です。
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-week">5週目</div>
+            <div class="timeline-copy">
+              <h3>中後半の成長圧縮</h3>
+              <p>
+                パス、週間パス、シーズン素材、成長加速効率の差が体感しやすい区間です。
+                この時点からは残り週数を基準に、素材配分とスコア準備を一緒に見る必要があります。
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-week">6週目</div>
+            <div class="timeline-copy">
+              <h3>戦闘準備の本格化</h3>
+              <p>
+                連盟単位の戦闘準備とスコア整理が重要になる区間です。
+                細かいシーズンイベント名が未定でも、サーバー全体の運営方向は先に合わせておくほうが有利です。
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-week">7週目</div>
+            <div class="timeline-copy">
+              <h3>サーバー戦直前整理</h3>
+              <p>
+                加速、兵力、スコア素材を整理し、本格的にサーバー戦準備へ入ります。
+                個人成長よりも、州全体のスコア運営が重要になる時期です。
+              </p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-week">8週目</div>
+            <div class="timeline-copy">
+              <h3>サーバー戦とシーズン締め</h3>
+              <p>
+                シーズン終了前に残ったシーズン素材、パス報酬、昇格素材などを整理する区間です。
+                最終的にはサーバー戦結果とシーズン報酬回収まできちんと締めればOKです。
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-card" id="season-pass" aria-labelledby="passTitle">
+        <div class="section-head">
+          <h2 id="passTitle">シーズンパス / シーズン週間パス</h2>
+          <p>課金効率を見る時に最初に確認したいシーズン専用商品です。</p>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>区分</th>
+                <th>価格</th>
+                <th>主要効果</th>
+                <th>備考</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>上級パス</td>
+                <td>7,500円</td>
+                <td>シーズンパス報酬開放</td>
+                <td>シーズン中1回購入</td>
+              </tr>
+              <tr>
+                <td>プレミアムパス</td>
+                <td>30,000円</td>
+                <td>上級パス前提 + 追加シーズン成長効果</td>
+                <td>上級パス購入後に購入可能</td>
+              </tr>
+              <tr>
+                <td>シーズン週間パス</td>
+                <td>週単位</td>
+                <td>追加シーズン成長効果および週間特権</td>
+                <td>7日基準、延長購入可能</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="card-grid" style="margin-top:16px;">
+          <article class="info-box">
+            <h3>プレミアムパス</h3>
+            <p>
+              シーズンⅢ専用プレミアムパスの細かい効果名は未定です。
+              ただし、シーズン専用成長報酬をより速く確保する構造として理解すれば十分です。
+            </p>
+          </article>
+
+          <article class="info-box">
+            <h3>シーズン週間パス</h3>
+            <p>
+              シーズンⅢ週間パスの細かい特権名も現在は未定です。
+              週単位の追加効果と補助成長バフを提供する構造として整理すれば十分です。
+            </p>
+          </article>
+        </div>
+
+        <div class="highlight-box" style="margin-top:16px;">
+          <strong>シーズン週間パス追加ルール</strong>
+          シーズン週間パスは7日単位の特権型商品として整理すれば大丈夫です。
+          細かい名称と個別数値は未定なので、実際のシーズンⅢデータが出たらここに数値だけ差し替えれば使えます。
+        </div>
+      </section>
+
+      <section class="section-card" aria-labelledby="eventTitle">
+        <div class="section-head">
+          <h2 id="eventTitle">シーズンイベント</h2>
+          <p>シーズン中盤で開く主要な補助イベント区間です。</p>
+        </div>
+
+        <div class="card-grid">
+          <article class="info-box">
+            <h3>イベント構造</h3>
+            <p>
+              シーズンⅢの細かいイベント名は未定です。
+              ただし、中間報酬型イベント、個人ランキング型イベント、サーバー協力型イベントが週ごとに分かれて開く構造として見れば十分です。
+            </p>
+          </article>
+
+          <article class="info-box">
+            <h3>重要な役割</h3>
+            <p>
+              メインのシーズン成長とは別に、加速や成長素材、シーズン素材を確保する補助供給先として機能します。
+              細かいイベント名が確定したら、このボックス部分だけ差し替えれば運用できます。
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-card" aria-labelledby="promotionTitle">
+        <div class="section-head">
+          <h2 id="promotionTitle">英雄昇格</h2>
+          <p>シーズンⅢで連動する昇格英雄構造を先に整理しておく領域です。</p>
+        </div>
+
+        <div class="highlight-box">
+          <strong>要点</strong>
+          シーズンⅢの昇格対象英雄と素材名は現在未定です。
+          ただし、シーズン進行中に特定英雄が昇格可能になり、一定の星数と専用素材を要求する構造として整理しておけば十分です。
+        </div>
+
+        <div class="table-wrap" style="margin-top:16px;">
+          <table>
+            <thead>
+              <tr>
+                <th>項目</th>
+                <th>内容</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>対象英雄</td>
+                <td>未定</td>
+              </tr>
+              <tr>
+                <td>昇格条件</td>
+                <td>未定</td>
+              </tr>
+              <tr>
+                <td>昇格結果</td>
+                <td>未定</td>
+              </tr>
+              <tr>
+                <td>強化変化</td>
+                <td>未定</td>
+              </tr>
+              <tr>
+                <td>影響なし</td>
+                <td>未定</td>
+              </tr>
+              <tr>
+                <td>スキルブック処理</td>
+                <td>未定</td>
+              </tr>
+              <tr>
+                <td>昇格後の欠片消費</td>
+                <td>未定</td>
+              </tr>
+              <tr>
+                <td>昇格素材獲得</td>
+                <td>未定</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section-card" aria-labelledby="kvkTitle">
+        <div class="section-head">
+          <h2 id="kvkTitle">サーバー戦 (KvK)</h2>
+          <p>シーズン後半の核心は、結局スコア勝負です。</p>
+        </div>
+
+        <div class="card-grid">
+          <article class="info-box">
+            <h3>基本構造</h3>
+            <p>
+              連盟対決に近い方式で進みますが、相手は別サーバーです。
+              スコアが高い側が優勢な流れを持っていく構造で、結局のところ重要なのは週単位スコア競争です。
+            </p>
+          </article>
+
+          <article class="info-box">
+            <h3>実戦運営ポイント</h3>
+            <p>
+              後半は個人成長よりもサーバー全体のスコア運営が重要です。
+              トラック攻撃、スコアイベント参加、連盟単位の役割分担を先に合わせておくほうが有利です。
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-card" aria-labelledby="finishTitle">
+        <div class="section-head">
+          <h2 id="finishTitle">シーズンⅢ 運営結論</h2>
+          <p>最後に、シーズンⅢを実戦基準で整理すると以下の順序で見れば大丈夫です。</p>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <div class="timeline-week">1</div>
+            <div class="timeline-copy">
+              <h3>シーズン目標を優先進行</h3>
+              <p>シーズンⅢの細かい用語は未定でも、序盤優先順位はシーズンの重要成長数値を先に上げることです。</p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-week">2</div>
+            <div class="timeline-copy">
+              <h3>パスと週間パス効率確認</h3>
+              <p>シーズンパスとシーズン週間パスは、シーズンが長いほど体感差が大きくなります。シーズンⅢの細かい数値が確定したら効率計算だけ追加すれば運用できます。</p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-week">3</div>
+            <div class="timeline-copy">
+              <h3>中間イベント報酬回収</h3>
+              <p>補助イベント区間では、加速と成長素材を継続して回収することが重要です。</p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-week">4</div>
+            <div class="timeline-copy">
+              <h3>英雄昇格タイミング確認</h3>
+              <p>昇格対象英雄と素材は未定でも、シーズン後半のスコアイベントと連動する構造を先に考慮しておく必要があります。</p>
+            </div>
+          </article>
+
+          <article class="timeline-item">
+            <div class="timeline-week">5</div>
+            <div class="timeline-copy">
+              <h3>サーバー戦は個人よりサーバースコア</h3>
+              <p>後半は個人戦闘よりも、サーバー全体のスコア運営と連盟単位協力のほうが重要です。</p>
+            </div>
+          </article>
+        </div>
+
+        <div class="back-list">
+          <a class="back-link" href="/ja/seasons/">シーズン一覧へ</a>
+          <a class="back-link" href="/ja/">ホームへ</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer" role="contentinfo" aria-label="フッター">
+    <div class="footer-link-strip">
+      <div class="container footer-link-strip__inner">
+        <div class="footer-link-strip__actions">
+          <a class="countdown-link" href="https://discord.gg/EjqWhTPyaEjqWhTPya" target="_blank" rel="noopener noreferrer">Discord</a>
+          <a class="countdown-link" href="/ja/codes/">ギフトコード</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <div>
+          <div class="footer-brand">TilesSurvive.net</div>
+          <p class="footer-desc">
+            タイルサバイバル関連データを整理し、ユーザーの定着を助けるために作成された、
+            公式とは無関係の非公式ファンサイトです。
+          </p>
+        </div>
+
+        <nav class="footer-links" aria-label="フッターメニュー">
+          <a href="/ja/about/">紹介</a>
+          <a href="/ja/privacy/">プライバシー</a>
+        </nav>
+      </div>
+
+      <div class="footer-copy">
+        © 2026 TilesSurvive.net. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <nav class="mobile-bottom-nav" aria-label="モバイルクイック移動">
+    <div class="mobile-bottom-nav__inner">
+      <a class="mobile-bottom-nav__item" href="/ja/" data-mobile-nav="home">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M4 10.5 12 4l8 6.5V20a1 1 0 0 1-1 1h-4v-6H9v6H5a1 1 0 0 1-1-1v-9.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+        </svg>
+        <span class="mobile-bottom-nav__label">ホーム</span>
+      </a>
+
+      <a class="mobile-bottom-nav__item" href="/ja/guides/" data-mobile-nav="guides">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M6 5.5A2.5 2.5 0 0 1 8.5 3H19v16H8.5A2.5 2.5 0 0 0 6 21V5.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+          <path d="M6 6h11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+        <span class="mobile-bottom-nav__label">ガイド</span>
+      </a>
+
+      <a class="mobile-bottom-nav__item" href="/ja/seasons/" data-mobile-nav="seasons">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 3v4M12 17v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M3 12h4M17 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          <circle cx="12" cy="12" r="3.5" stroke="currentColor" stroke-width="1.8"/>
+        </svg>
+        <span class="mobile-bottom-nav__label">シーズン</span>
+      </a>
+
+      <a class="mobile-bottom-nav__item" href="/ja/codes/" data-mobile-nav="codes">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M8 7.5h8a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="1.8"/>
+          <path d="M9 7V6a3 3 0 1 1 6 0v1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          <path d="M12 11v3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+        <span class="mobile-bottom-nav__label">コード</span>
+      </a>
+    </div>
+  </nav>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var html = document.documentElement;
+      var body = document.body;
+      var drawer = document.getElementById('mobileDrawer');
+      var backdrop = document.getElementById('backdrop');
+      var btnOpen = document.getElementById('menuToggle');
+      var btnClose = document.getElementById('btnClose');
+
+      function openDrawer(){
+        html.classList.add('is-open');
+        body.classList.add('no-scroll');
+        backdrop.hidden = false;
+        drawer.setAttribute('aria-hidden', 'false');
+        btnOpen && btnOpen.setAttribute('aria-expanded', 'true');
+      }
+
+      function closeDrawer(){
+        html.classList.remove('is-open');
+        body.classList.remove('no-scroll');
+        backdrop.hidden = true;
+        drawer.setAttribute('aria-hidden', 'true');
+        btnOpen && btnOpen.setAttribute('aria-expanded', 'false');
+      }
+
+      btnOpen && btnOpen.addEventListener('click', openDrawer);
+      btnClose && btnClose.addEventListener('click', closeDrawer);
+      backdrop && backdrop.addEventListener('click', closeDrawer);
+
+      window.addEventListener('keydown', function(e){
+        if (e.key === 'Escape') closeDrawer();
+      });
+
+      var drawerLinks = drawer ? drawer.querySelectorAll('a') : [];
+      Array.prototype.forEach.call(drawerLinks, function(link){
+        link.addEventListener('click', closeDrawer);
+      });
+    });
+  </script>
+
+  <script>
+    (function(){
+      var LANGS = [
+        { code:'ko', label:'KO' },
+        { code:'en', label:'EN' },
+        { code:'ja', label:'JA' },
+        { code:'ru', label:'RU' },
+        { code:'zh-tw', label:'TW' }
+      ];
+
+      function currentLang(){
+        return 'ja';
+      }
+
+      function render(root){
+        if (!root) return;
+        var cur = currentLang();
+        root.innerHTML = LANGS.map(function(lang){
+          return '<button type="button" class="lang-pill" data-lang="' + lang.code + '" aria-current="' + (lang.code === cur ? 'true' : 'false') + '">' + lang.label + '</button>';
+        }).join('');
+      }
+
+      function bind(root){
+        if (!root) return;
+        root.addEventListener('click', function(e){
+          var btn = e.target.closest('.lang-pill[data-lang]');
+          if (!btn) return;
+          e.preventDefault();
+          window.TS_LANG.apply(btn.getAttribute('data-lang'));
+        });
+      }
+
+      document.addEventListener('DOMContentLoaded', function(){
+        var header = document.getElementById('langDropdownHeader');
+        var drawer = document.getElementById('langDropdownDrawer');
+        render(header);
+        render(drawer);
+        bind(header);
+        bind(drawer);
+      });
+    })();
+  </script>
+
+  <script>
+    (function(){
+      function updateBottomNavActive(){
+        var pathname = location.pathname.toLowerCase();
+        var items = document.querySelectorAll('.mobile-bottom-nav__item');
+
+        Array.prototype.forEach.call(items, function(item){
+          item.classList.remove('is-active');
+          item.removeAttribute('aria-current');
+
+          var key = item.getAttribute('data-mobile-nav');
+          var active = false;
+
+          if (key === 'home') {
+            active = pathname === '/ja/' || pathname === '/ja';
+          } else if (key === 'guides') {
+            active = pathname.indexOf('/ja/guides') === 0;
+          } else if (key === 'seasons') {
+            active = pathname.indexOf('/ja/seasons') === 0;
+          } else if (key === 'codes') {
+            active = pathname.indexOf('/ja/codes') === 0;
+          }
+
+          if (active) {
+            item.classList.add('is-active');
+            item.setAttribute('aria-current', 'page');
+          }
+        });
+      }
+
+      document.addEventListener('DOMContentLoaded', updateBottomNavActive);
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en" data-lang="root">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TilesSurvive.net</title>
+  <meta name="robots" content="index,follow" />
+  <meta name="description" content="TilesSurvive.net language entry page" />
+  <link rel="canonical" href="https://tilessurvive.net/" />
+  <link rel="alternate" hreflang="x-default" href="https://tilessurvive.net/" />
+  <link rel="alternate" hreflang="en" href="https://tilessurvive.net/en/" />
+  <link rel="alternate" hreflang="ko" href="https://tilessurvive.net/ko/" />
+  <link rel="alternate" hreflang="ja" href="https://tilessurvive.net/ja/" />
+  <link rel="alternate" hreflang="ru" href="https://tilessurvive.net/ru/" />
+  <link rel="alternate" hreflang="zh-TW" href="https://tilessurvive.net/zh-tw/" />
+  <meta name="theme-color" content="#ffffff" />
+
+  <style>
+    :root{
+      --bg:#f5f7fb;
+      --surface:#ffffff;
+      --line:#e5e7eb;
+      --text:#111827;
+      --text-soft:#64748b;
+      --shadow:0 20px 48px rgba(15,23,42,.08);
+      --radius-lg:28px;
+      --radius-md:18px;
+    }
+
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0}
+    body{
+      min-height:100vh;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:24px;
+      background:var(--bg);
+      color:var(--text);
+      font-family:Arial,"Pretendard","Noto Sans KR","Noto Sans JP","Noto Sans TC",sans-serif;
+    }
+
+    .card{
+      width:min(680px,100%);
+      background:var(--surface);
+      border:1px solid var(--line);
+      border-radius:var(--radius-lg);
+      padding:32px 24px;
+      box-shadow:var(--shadow);
+      text-align:center;
+    }
+
+    .logo{
+      width:56px;
+      height:56px;
+      margin:0 auto 16px;
+      border-radius:16px;
+      object-fit:cover;
+      background:#e5e7eb;
+    }
+
+    h1{
+      margin:0 0 10px;
+      font-size:32px;
+      line-height:1.15;
+      letter-spacing:-0.03em;
+    }
+
+    p{
+      margin:0;
+      color:var(--text-soft);
+      font-size:15px;
+      line-height:1.6;
+    }
+
+    .status{
+      margin-top:18px;
+      font-size:14px;
+      color:var(--text-soft);
+    }
+
+    .lang-grid{
+      margin-top:26px;
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:12px;
+    }
+
+    .lang-btn{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      min-height:48px;
+      padding:0 14px;
+      border:1px solid var(--line);
+      border-radius:999px;
+      background:#fff;
+      color:var(--text);
+      font-size:14px;
+      font-weight:700;
+      cursor:pointer;
+      text-decoration:none;
+    }
+
+    .lang-btn:hover{
+      background:#f8fafc;
+    }
+
+    .note{
+      margin-top:18px;
+      font-size:13px;
+      color:var(--text-soft);
+    }
+
+    @media (max-width:560px){
+      .card{
+        padding:24px 18px;
+      }
+      h1{
+        font-size:26px;
+      }
+      .lang-grid{
+        grid-template-columns:1fr;
+      }
+    }
+  </style>
+
+  <script>
+    (function () {
+      var LANG_PATHS = {
+        en: '/en/',
+        ko: '/ko/',
+        ja: '/ja/',
+        ru: '/ru/',
+        'zh-tw': '/zh-tw/'
+      };
+
+      function normalizeLang(lang) {
+        var value = String(lang || '').toLowerCase();
+
+        if (value.startsWith('ko')) return 'ko';
+        if (value.startsWith('ja')) return 'ja';
+        if (value.startsWith('ru')) return 'ru';
+
+        if (
+          value === 'zh-tw' ||
+          value === 'zh_hant' ||
+          value.startsWith('zh-tw') ||
+          value.startsWith('zh-hant')
+        ) {
+          return 'zh-tw';
+        }
+
+        return 'en';
+      }
+
+      function goToLang(lang) {
+        var target = LANG_PATHS[lang] || LANG_PATHS.en;
+        try {
+          localStorage.setItem('preferred_lang', lang);
+        } catch (e) {}
+        window.location.replace(target);
+      }
+
+      function detectAndRedirect() {
+        var savedLang = null;
+
+        try {
+          savedLang = localStorage.getItem('preferred_lang');
+        } catch (e) {}
+
+        if (savedLang && LANG_PATHS[savedLang]) {
+          goToLang(savedLang);
+          return;
+        }
+
+        var browserLang = normalizeLang(
+          navigator.language ||
+          (navigator.languages && navigator.languages[0]) ||
+          'en'
+        );
+
+        goToLang(browserLang);
+      }
+
+      window.TS_ROOT_LANG = {
+        goToLang: goToLang
+      };
+
+      window.addEventListener('DOMContentLoaded', function () {
+        var status = document.getElementById('redirectStatus');
+        if (status) {
+          status.textContent = 'Detecting your language and redirecting...';
+        }
+
+        setTimeout(detectAndRedirect, 120);
+      });
+    })();
+  </script>
+</head>
+<body>
+  <main class="card" aria-label="Language entry">
+    <img class="logo" src="/img/logo-tilessurvive.png" alt="TilesSurvive.net" />
+
+    <h1>TilesSurvive.net</h1>
+    <p>Select your language or wait a moment to be redirected automatically.</p>
+
+    <div id="redirectStatus" class="status">Preparing language redirect...</div>
+
+    <div class="lang-grid">
+      <a class="lang-btn" href="/en/" onclick="localStorage.setItem('preferred_lang','en')">English</a>
+      <a class="lang-btn" href="/ko/" onclick="localStorage.setItem('preferred_lang','ko')">한국어</a>
+      <a class="lang-btn" href="/ja/" onclick="localStorage.setItem('preferred_lang','ja')">日本語</a>
+      <a class="lang-btn" href="/zh-tw/" onclick="localStorage.setItem('preferred_lang','zh-tw')">繁體中文</a>
+      <a class="lang-btn" href="/ru/" onclick="localStorage.setItem('preferred_lang','ru')">Русский</a>
+    </div>
+
+    <div class="note">
+      This page is only for root language routing. Each language keeps its own separate index page.
+    </div>
+  </main>
+</body>
+</html>

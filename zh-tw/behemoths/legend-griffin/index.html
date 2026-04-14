@@ -1,0 +1,1826 @@
+<!doctype html>
+<html lang="zh-Hant" data-lang="zh-tw">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>橘光獅鷲獸 | Tiles Survive 巨獸 | TilesSurvive.net</title>
+  <base href="/" />
+
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="description" content="Tiles Survive 巨獸橘光獅鷲獸詳細頁面。整理了星級強化、活動增幅、造型變化、代表天賦與星級表。" />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+  <meta name="author" content="TilesSurvive.net" />
+
+  <link rel="canonical" href="https://tilessurvive.net/zh-tw/behemoths/legend-griffin/" />
+  <link rel="alternate" hreflang="x-default" href="https://tilessurvive.net/en/behemoths/legend-griffin/" />
+  <link rel="alternate" hreflang="ko" href="https://tilessurvive.net/ko/behemoths/legend-griffin/" />
+  <link rel="alternate" hreflang="en" href="https://tilessurvive.net/en/behemoths/legend-griffin/" />
+  <link rel="alternate" hreflang="ja" href="https://tilessurvive.net/ja/behemoths/legend-griffin/" />
+  <link rel="alternate" hreflang="ru" href="https://tilessurvive.net/ru/behemoths/legend-griffin/" />
+  <link rel="alternate" hreflang="zh-TW" href="https://tilessurvive.net/zh-tw/behemoths/legend-griffin/" />
+
+  <meta property="og:site_name" content="TilesSurvive.net" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="橘光獅鷲獸 | Tiles Survive 巨獸 | TilesSurvive.net" />
+  <meta property="og:description" content="整理橘光獅鷲獸的星級強化、活動增幅、代表天賦與星級表的詳細頁面" />
+  <meta property="og:url" content="https://tilessurvive.net/zh-tw/behemoths/legend-griffin/" />
+  <meta property="og:image" content="https://tilessurvive.net/img/behemoths/legend-griffin.png" />
+  <meta property="og:locale" content="zh_TW" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="橘光獅鷲獸 | Tiles Survive 巨獸 | TilesSurvive.net" />
+  <meta name="twitter:description" content="整理橘光獅鷲獸的星級強化、活動增幅、代表天賦與星級表的詳細頁面" />
+  <meta name="twitter:image" content="https://tilessurvive.net/img/behemoths/legend-griffin.png" />
+
+  <link rel="preload" as="image" href="/img/logo-tilessurvive.png" />
+  <link rel="preload" as="image" href="/img/behemoths/legend-griffin.png" />
+
+  <style>
+    :root{
+      --bg:#f5f7fb;
+      --surface:#ffffff;
+      --surface-soft:#f8fafc;
+      --line:#e5e7eb;
+      --line-strong:#cbd5e1;
+      --text:#111827;
+      --text-soft:#475569;
+      --text-faint:#64748b;
+      --dark:#0f172a;
+      --shadow-sm:0 8px 24px rgba(15,23,42,.04);
+      --shadow-md:0 20px 48px rgba(15,23,42,.08);
+      --radius-lg:28px;
+      --radius-md:22px;
+      --radius-sm:14px;
+      --container:min(1180px, calc(100% - 32px));
+    }
+
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;overflow-x:hidden}
+    body{
+      color:var(--text);
+      background:var(--bg);
+      font-family:"Pretendard","Noto Sans TC","Microsoft JhengHei","PingFang TC","Heiti TC",system-ui,-apple-system,sans-serif;
+      line-height:1.6;
+      padding-bottom:calc(76px + env(safe-area-inset-bottom, 0px));
+    }
+    a{color:inherit;text-decoration:none}
+    img{display:block;max-width:100%}
+    button{font:inherit}
+    .container{width:var(--container);margin:0 auto}
+
+    .skip-link{
+      position:absolute;
+      left:12px;
+      top:-44px;
+      z-index:3000;
+      background:#111827;
+      color:#fff;
+      padding:10px 14px;
+      border-radius:10px;
+      font-weight:800;
+    }
+    .skip-link:focus{top:12px}
+
+    .site-header{
+      position:sticky;
+      top:0;
+      z-index:1500;
+      background:rgba(255,255,255,.92);
+      backdrop-filter:saturate(160%) blur(12px);
+      border-bottom:1px solid rgba(15,23,42,.06);
+    }
+
+    .nav-bar{
+      min-height:68px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+    }
+
+    .nav-left{
+      display:flex;
+      align-items:center;
+      gap:20px;
+      min-width:0;
+      flex:1 1 auto;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      min-width:0;
+      color:#111827;
+    }
+
+    .brand-logo{
+      width:30px;
+      height:30px;
+      border-radius:9px;
+      flex:0 0 auto;
+      background:#e5e7eb;
+      object-fit:cover;
+    }
+
+    .brand-text{
+      display:flex;
+      flex-direction:column;
+      gap:2px;
+      min-width:0;
+      line-height:1.1;
+    }
+
+    .brand-title{
+      font-size:16px;
+      font-weight:900;
+      white-space:nowrap;
+    }
+
+    .brand-sub{
+      font-size:12px;
+      color:#6b7280;
+      white-space:nowrap;
+    }
+
+    .nav{
+      display:flex;
+      align-items:center;
+      gap:4px;
+      min-width:0;
+      flex-wrap:wrap;
+    }
+
+    .nav a{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:40px;
+      padding:0 12px;
+      border-radius:999px;
+      color:#475569;
+      font-size:14px;
+      font-weight:800;
+      white-space:nowrap;
+    }
+
+    .nav a:hover,
+    .nav a:focus,
+    .nav a[aria-current="page"]{
+      background:#eef2f7;
+      color:#111827;
+      outline:none;
+    }
+
+    .nav-right{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      flex:0 0 auto;
+    }
+
+    .lang-pills{
+      display:flex;
+      align-items:center;
+      gap:8px;
+      flex-wrap:wrap;
+    }
+
+    .lang-pill{
+      appearance:none;
+      border:1px solid var(--line);
+      background:#fff;
+      color:#6b7280;
+      padding:8px 10px;
+      border-radius:999px;
+      font:13px/1.1 system-ui,-apple-system,Segoe UI,Roboto,"Noto Sans",Arial;
+      cursor:pointer;
+      white-space:nowrap;
+      user-select:none;
+    }
+
+    .lang-pill:hover{color:#111827}
+    .lang-pill[aria-current="true"]{
+      color:#111827;
+      font-weight:900;
+      border-color:var(--line-strong);
+      background:#f8fafc;
+    }
+
+    .hamburger{
+      display:none;
+      appearance:none;
+      border:1px solid var(--line);
+      background:#fff;
+      color:#111827;
+      width:42px;
+      height:42px;
+      border-radius:12px;
+      font-size:20px;
+      cursor:pointer;
+      flex:0 0 auto;
+    }
+
+    .countdown-bar-wrap{
+      background:#fff;
+      border-bottom:1px solid rgba(15,23,42,.06);
+    }
+
+    .countdown-bar{
+      min-height:52px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      padding:10px 0;
+    }
+
+    .countdown-bar__left{
+      min-width:0;
+      display:flex;
+      align-items:center;
+      gap:10px;
+      flex:1 1 auto;
+    }
+
+    .countdown-badge{
+      flex:0 0 auto;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:28px;
+      padding:0 10px;
+      border-radius:999px;
+      background:#111827;
+      color:#fff;
+      font-size:12px;
+      font-weight:900;
+    }
+
+    .countdown-copy{
+      min-width:0;
+      font-size:14px;
+      color:#334155;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+    }
+
+    .countdown-copy strong{
+      color:#111827;
+      font-weight:900;
+    }
+
+    .countdown-bar__actions{
+      flex:0 0 auto;
+      display:flex;
+      align-items:center;
+      gap:8px;
+      flex-wrap:nowrap;
+    }
+
+    .countdown-link{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:34px;
+      padding:0 12px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      background:#f8fafc;
+      font-size:13px;
+      font-weight:800;
+      color:#111827;
+      white-space:nowrap;
+      flex:0 0 auto;
+    }
+
+    .countdown-link:hover,
+    .countdown-link:focus{
+      background:#eef2f7;
+      outline:none;
+    }
+
+    .page-main{
+      padding-top:18px;
+      padding-bottom:32px;
+    }
+
+    .breadcrumb{
+      display:flex;
+      align-items:center;
+      gap:8px;
+      flex-wrap:wrap;
+      margin-bottom:16px;
+      color:#64748b;
+      font-size:13px;
+      font-weight:700;
+    }
+
+    .breadcrumb a{color:#475569}
+    .breadcrumb span[aria-current="page"]{color:#111827}
+
+    .hero-wrap{
+      display:grid;
+      grid-template-columns:minmax(0, 1.1fr) minmax(320px, .9fr);
+      gap:18px;
+      align-items:stretch;
+    }
+
+    .hero-card,
+    .info-card,
+    .section-card{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:var(--radius-lg);
+      box-shadow:0 14px 34px rgba(15,23,42,.05);
+    }
+
+    .hero-card{
+      padding:26px 24px;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      background:linear-gradient(180deg,#ffffff,#f8fafc);
+    }
+
+    .eyebrow{
+      display:inline-flex;
+      width:fit-content;
+      align-items:center;
+      min-height:30px;
+      padding:0 12px;
+      border-radius:999px;
+      background:#eff6ff;
+      color:#1d4ed8;
+      font-size:12px;
+      font-weight:900;
+      margin-bottom:14px;
+    }
+
+    .hero-card h1{
+      margin:0;
+      font-size:40px;
+      line-height:1.1;
+      letter-spacing:-.04em;
+      color:var(--dark);
+    }
+
+    .hero-card p{
+      margin:12px 0 0;
+      color:var(--text-soft);
+      font-size:15px;
+      max-width:720px;
+    }
+
+    .hero-meta{
+      margin-top:18px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+    }
+
+    .meta-pill{
+      display:inline-flex;
+      align-items:center;
+      min-height:38px;
+      padding:0 14px;
+      border-radius:999px;
+      background:#f8fafc;
+      border:1px solid #e2e8f0;
+      color:#111827;
+      font-size:13px;
+      font-weight:800;
+    }
+
+    .info-card{
+      padding:18px;
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+    }
+
+    .behemoth-thumb{
+      border-radius:22px;
+      background:linear-gradient(180deg,#f8fafc,#eef2f7);
+      border:1px solid #e2e8f0;
+      padding:18px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      min-height:280px;
+    }
+
+    .behemoth-thumb img{
+      width:100%;
+      max-width:300px;
+      height:auto;
+      object-fit:contain;
+    }
+
+    .quick-stats{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:10px;
+    }
+
+    .quick-stat{
+      padding:14px;
+      border-radius:18px;
+      background:#f8fafc;
+      border:1px solid #e2e8f0;
+    }
+
+    .quick-stat strong{
+      display:block;
+      font-size:12px;
+      color:#64748b;
+      margin-bottom:4px;
+    }
+
+    .quick-stat span{
+      display:block;
+      font-size:15px;
+      font-weight:900;
+      color:#111827;
+    }
+
+    .section-stack{margin-top:18px;display:grid;gap:18px}
+    .section-card{padding:24px}
+    .section-head{margin-bottom:16px}
+    .section-head h2{
+      margin:0;
+      font-size:28px;
+      line-height:1.2;
+      letter-spacing:-.03em;
+      color:var(--dark);
+    }
+    .section-head p{
+      margin:8px 0 0;
+      font-size:14px;
+      color:var(--text-soft);
+    }
+
+    .summary-grid{
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:14px;
+    }
+
+    .summary-box{
+      border:1px solid #e2e8f0;
+      border-radius:22px;
+      background:#f8fafc;
+      padding:18px;
+    }
+
+    .summary-box strong{
+      display:block;
+      font-size:13px;
+      color:#475569;
+      margin-bottom:8px;
+    }
+
+    .summary-box span{
+      display:block;
+      font-size:22px;
+      line-height:1.2;
+      font-weight:900;
+      color:#111827;
+      letter-spacing:-.03em;
+    }
+
+    .material-grid{
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:12px;
+    }
+
+    .material-card{
+      border:1px solid #e2e8f0;
+      border-radius:18px;
+      background:#f8fafc;
+      padding:14px;
+      text-align:center;
+    }
+
+    .material-icon{
+      width:68px;
+      height:68px;
+      margin:0 auto 10px;
+      border-radius:18px;
+      background:#fff;
+      border:1px solid #e2e8f0;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:10px;
+      overflow:hidden;
+    }
+
+    .material-icon img{
+      width:100%;
+      height:100%;
+      object-fit:contain;
+    }
+
+    .material-card strong{
+      display:block;
+      font-size:14px;
+      line-height:1.35;
+      color:#111827;
+    }
+
+    .material-card span{
+      display:block;
+      margin-top:6px;
+      font-size:12px;
+      color:#64748b;
+      font-weight:700;
+    }
+
+    .milestone-grid{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:14px;
+    }
+
+    .milestone-card{
+      border:1px solid #e2e8f0;
+      border-radius:22px;
+      background:#fff;
+      padding:18px;
+    }
+
+    .milestone-top{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px;
+      margin-bottom:10px;
+    }
+
+    .milestone-level{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:34px;
+      padding:0 12px;
+      border-radius:999px;
+      background:#eff6ff;
+      color:#1d4ed8;
+      font-size:13px;
+      font-weight:900;
+    }
+
+    .milestone-card h3{
+      margin:0;
+      font-size:20px;
+      line-height:1.2;
+      color:#111827;
+    }
+
+    .milestone-card ul{
+      margin:0;
+      padding-left:18px;
+      color:#334155;
+      font-size:14px;
+    }
+
+    .milestone-card li + li{margin-top:6px}
+
+    .talent-grid{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:14px;
+    }
+
+    .talent-card{
+      border:1px solid #e2e8f0;
+      border-radius:22px;
+      background:#fff;
+      padding:18px;
+    }
+
+    .talent-card h3{
+      margin:0 0 8px;
+      font-size:20px;
+      line-height:1.2;
+      color:#111827;
+    }
+
+    .talent-card p{
+      margin:0;
+      color:#334155;
+      font-size:14px;
+    }
+
+    .talent-note{
+      margin-top:14px;
+      padding:14px 16px;
+      border-radius:18px;
+      background:#f8fafc;
+      border:1px dashed #cbd5e1;
+      color:#475569;
+      font-size:13px;
+      font-weight:700;
+    }
+
+    .wide-table-wrap{
+      overflow-x:auto;
+      border:1px solid #e2e8f0;
+      border-radius:22px;
+      background:#fff;
+    }
+
+    table{
+      width:100%;
+      border-collapse:collapse;
+      min-width:900px;
+    }
+
+    thead{background:#f8fafc}
+    th,td{
+      padding:12px 10px;
+      text-align:center;
+      border-bottom:1px solid #eef2f7;
+      font-size:14px;
+    }
+    th{
+      color:#334155;
+      font-weight:900;
+      white-space:nowrap;
+    }
+    td{
+      color:#111827;
+      font-weight:700;
+    }
+    tbody tr:hover{background:#fafcff}
+
+    .star-card-grid{
+      display:none;
+      gap:12px;
+    }
+
+    .star-card{
+      border:1px solid #e2e8f0;
+      border-radius:18px;
+      background:#f8fafc;
+      padding:16px;
+    }
+
+    .star-card__top{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:10px;
+      margin-bottom:12px;
+    }
+
+    .star-card__title{
+      font-size:18px;
+      font-weight:900;
+      color:#111827;
+      line-height:1.2;
+    }
+
+    .star-card__total{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:32px;
+      padding:0 12px;
+      border-radius:999px;
+      background:#111827;
+      color:#fff;
+      font-size:12px;
+      font-weight:900;
+      white-space:nowrap;
+    }
+
+    .star-card__grid{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:8px;
+    }
+
+    .star-card__item{
+      border:1px solid #e2e8f0;
+      background:#fff;
+      border-radius:14px;
+      padding:10px 12px;
+    }
+
+    .star-card__item strong{
+      display:block;
+      font-size:12px;
+      color:#64748b;
+      margin-bottom:4px;
+    }
+
+    .star-card__item span{
+      display:block;
+      font-size:15px;
+      font-weight:900;
+      color:#111827;
+      line-height:1.2;
+    }
+
+    .note-box{
+      margin-top:14px;
+      padding:14px 16px;
+      border-radius:18px;
+      background:#fff7ed;
+      border:1px solid #fed7aa;
+      color:#9a3412;
+      font-size:13px;
+      font-weight:700;
+    }
+
+    .back-list{
+      margin-top:18px;
+      display:flex;
+      gap:10px;
+      flex-wrap:wrap;
+    }
+
+    .back-link{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:42px;
+      padding:0 16px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      background:#fff;
+      font-size:14px;
+      font-weight:900;
+      color:#111827;
+    }
+
+    .site-footer{
+      margin-top:26px;
+      border-top:1px solid var(--line);
+      background:#fff;
+    }
+
+    .footer-link-strip{
+      padding:14px 0;
+      border-bottom:1px solid #eef2f7;
+    }
+
+    .footer-link-strip__inner{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      flex-wrap:wrap;
+      text-align:center;
+    }
+
+    .footer-link-strip__actions{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      flex-wrap:wrap;
+    }
+
+    .footer-inner{padding:24px 0 34px}
+    .footer-top{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      gap:18px;
+      text-align:center;
+    }
+
+    .footer-brand{
+      font-size:18px;
+      font-weight:900;
+      color:#111827;
+    }
+
+    .footer-desc{
+      margin:8px 0 0;
+      color:var(--text-faint);
+      font-size:14px;
+      max-width:720px;
+    }
+
+    .footer-links{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:10px;
+    }
+
+    .footer-links a{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:40px;
+      padding:0 14px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      background:#f8fafc;
+      font-size:14px;
+      font-weight:800;
+    }
+
+    .footer-copy{
+      margin-top:18px;
+      padding-top:18px;
+      border-top:1px solid #eef2f7;
+      color:var(--text-faint);
+      font-size:13px;
+      text-align:center;
+    }
+
+    .mobile-bottom-nav{
+      position:fixed;
+      left:0;
+      right:0;
+      bottom:0;
+      z-index:1400;
+      display:none;
+      background:rgba(255,255,255,.96);
+      backdrop-filter:saturate(160%) blur(10px);
+      border-top:1px solid rgba(15,23,42,.08);
+      padding:8px 10px calc(8px + env(safe-area-inset-bottom, 0px));
+    }
+
+    .mobile-bottom-nav__inner{
+      display:grid;
+      grid-template-columns:repeat(4,minmax(0,1fr));
+      gap:6px;
+      max-width:640px;
+      margin:0 auto;
+    }
+
+    .mobile-bottom-nav__item{
+      min-width:0;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      gap:4px;
+      padding:8px 4px 7px;
+      border-radius:12px;
+      color:#6b7280;
+    }
+
+    .mobile-bottom-nav__item svg{
+      width:20px;
+      height:20px;
+      display:block;
+      flex:0 0 auto;
+    }
+
+    .mobile-bottom-nav__label{
+      font-size:11px;
+      line-height:1.1;
+      font-weight:700;
+      letter-spacing:-0.01em;
+      white-space:nowrap;
+    }
+
+    .mobile-bottom-nav__item.is-active,
+    .mobile-bottom-nav__item[aria-current="page"]{
+      color:#111827;
+      background:#f3f4f6;
+    }
+
+    .backdrop{
+      position:fixed;
+      inset:0;
+      background:rgba(15,23,42,.38);
+      z-index:1600;
+    }
+
+    .drawer{
+      position:fixed;
+      top:0;
+      right:0;
+      bottom:0;
+      width:min(78vw,360px);
+      background:#fff;
+      box-shadow:-16px 0 40px rgba(15,23,42,.15);
+      z-index:1700;
+      overflow-y:auto;
+      transform:translateX(100%);
+      transition:transform .25s ease;
+    }
+
+    html.is-open .drawer{transform:translateX(0)}
+
+    .drawer header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:16px;
+      border-bottom:1px solid var(--line);
+      position:sticky;
+      top:0;
+      background:#fff;
+      z-index:2;
+    }
+
+    .drawer .section{padding:16px}
+    .drawer .nav-list{display:flex;flex-direction:column;gap:4px}
+    .drawer .nav-list a{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      width:100%;
+      min-height:44px;
+      padding:0 12px;
+      border-radius:12px;
+      font-weight:800;
+      color:#111827;
+      background:#f8fafc;
+    }
+
+    .lang-pills--drawer{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:8px;
+    }
+
+    .lang-pills--drawer .lang-pill{
+      width:100%;
+      display:flex;
+      justify-content:center;
+    }
+
+    .drawer-dotrule{
+      width:calc(100% - 32px);
+      margin:0 auto;
+      border-top:1px dashed rgba(15,23,42,.16);
+    }
+
+    .drawer-quick-stack{
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+      margin-top:14px;
+    }
+
+    .drawer-quick-pill{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      min-height:44px;
+      border:1px solid #dbe2ea;
+      border-radius:999px;
+      font-weight:800;
+      background:#fff;
+    }
+
+    .visually-hidden-seo{
+      position:absolute !important;
+      width:1px !important;
+      height:1px !important;
+      padding:0 !important;
+      margin:-1px !important;
+      overflow:hidden !important;
+      clip:rect(0,0,0,0) !important;
+      white-space:nowrap !important;
+      border:0 !important;
+    }
+
+    @media (max-width:980px){
+      .nav{display:none}
+      .hamburger{display:inline-flex;align-items:center;justify-content:center}
+      .nav-right{display:none}
+      .mobile-bottom-nav{display:block}
+      .countdown-bar{
+        min-height:52px;
+        align-items:center;
+        flex-direction:row;
+        justify-content:space-between;
+        gap:10px;
+      }
+      .countdown-bar__left{
+        width:auto;
+        min-width:0;
+        flex:1 1 auto;
+      }
+      .countdown-bar__actions{
+        width:auto;
+        justify-content:flex-end;
+        flex-wrap:nowrap;
+      }
+      .hero-wrap,
+      .talent-grid,
+      .milestone-grid{
+        grid-template-columns:1fr;
+      }
+      .summary-grid{
+        grid-template-columns:1fr;
+      }
+      .material-grid{
+        grid-template-columns:repeat(2,minmax(0,1fr));
+      }
+    }
+
+    @media (max-width:640px){
+      .container{width:min(100% - 24px,1180px)}
+      .brand-title{font-size:14px}
+      .brand-sub{display:none}
+      .hero-card,
+      .info-card,
+      .section-card{
+        border-radius:22px;
+      }
+      .hero-card{padding:20px 18px}
+      .hero-card h1{font-size:29px}
+      .info-card{padding:14px}
+      .quick-stats{grid-template-columns:1fr}
+      .behemoth-thumb{min-height:220px}
+      .section-card{padding:20px 18px}
+      .section-head h2{font-size:24px}
+      .material-grid{grid-template-columns:1fr}
+      .countdown-bar{gap:8px}
+      .countdown-bar__left{gap:8px}
+      .countdown-copy{
+        font-size:13px;
+        white-space:nowrap;
+        overflow:hidden;
+        text-overflow:ellipsis;
+      }
+      .countdown-link{
+        min-height:32px;
+        padding:0 10px;
+        font-size:12px;
+      }
+      .footer-link-strip__inner{
+        flex-direction:column;
+      }
+
+      .wide-table-wrap{display:none}
+      .star-card-grid{display:grid}
+      .star-card__grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    }
+
+    html.is-open body,
+    body.no-scroll{overflow:hidden}
+  </style>
+
+  <script id="ts-website-schema" type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "name":"TilesSurvive.net",
+    "url":"https://tilessurvive.net/",
+    "inLanguage":"zh-TW",
+    "description":"整理 Tiles Survive 數據、指南、賽季與代碼的資料型網站",
+    "potentialAction":{
+      "@type":"SearchAction",
+      "target":"https://tilessurvive.net/zh-tw/search/?q={search_term_string}",
+      "query-input":"required name=search_term_string"
+    }
+  }
+  </script>
+
+  <script id="ts-breadcrumb-schema" type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {
+        "@type":"ListItem",
+        "position":1,
+        "name":"首頁",
+        "item":"https://tilessurvive.net/zh-tw/"
+      },
+      {
+        "@type":"ListItem",
+        "position":2,
+        "name":"巨獸",
+        "item":"https://tilessurvive.net/zh-tw/behemoths/"
+      },
+      {
+        "@type":"ListItem",
+        "position":3,
+        "name":"橘光獅鷲獸",
+        "item":"https://tilessurvive.net/zh-tw/behemoths/legend-griffin/"
+      }
+    ]
+  }
+  </script>
+
+  <script id="ts-article-schema" type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Article",
+    "headline":"橘光獅鷲獸",
+    "description":"整理 Tiles Survive 巨獸橘光獅鷲獸的星級強化、活動增幅、代表天賦與星級表的詳細頁面",
+    "image":"https://tilessurvive.net/img/behemoths/legend-griffin.png",
+    "author":{
+      "@type":"Organization",
+      "name":"TilesSurvive.net"
+    },
+    "publisher":{
+      "@type":"Organization",
+      "name":"TilesSurvive.net",
+      "logo":{
+        "@type":"ImageObject",
+        "url":"https://tilessurvive.net/img/logo-tilessurvive.png"
+      }
+    },
+    "mainEntityOfPage":"https://tilessurvive.net/zh-tw/behemoths/legend-griffin/",
+    "inLanguage":"zh-TW"
+  }
+  </script>
+
+  <script>
+    (function(){
+      function normalizeLang(code){
+        var low = String(code || '').trim().toLowerCase();
+        if (low === 'ko') return 'ko';
+        if (low === 'en') return 'en';
+        if (low === 'ja') return 'ja';
+        if (low === 'ru') return 'ru';
+        if (low === 'zh-tw' || low === 'zh_tw' || low === 'tw') return 'zh-tw';
+        return 'zh-tw';
+      }
+
+      function pathWithLang(lang, path){
+        return '/' + lang + path;
+      }
+
+      function applyLang(lang){
+        lang = normalizeLang(lang);
+        var currentPath = location.pathname.replace(/^\/(ko|en|ja|ru|zh-tw)(\/|$)/i, '/');
+        if (currentPath === '') currentPath = '/';
+        location.href = pathWithLang(lang, currentPath);
+      }
+
+      window.TS_LANG = {
+        normalize: normalizeLang,
+        apply: applyLang
+      };
+    })();
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#main">跳到正文</a>
+
+  <header class="site-header" role="banner">
+    <div class="container nav-bar">
+      <div class="nav-left">
+        <a class="brand" href="/zh-tw/" aria-label="TilesSurvive.net 首頁">
+          <img class="brand-logo" src="/img/logo-tilessurvive.png" alt="TilesSurvive.net" width="30" height="30" />
+          <span class="brand-text">
+            <span class="brand-title">TilesSurvive.net</span>
+            <span class="brand-sub">Tiles Survive Data / Guides / Codes / Tools Hub</span>
+          </span>
+        </a>
+
+        <nav class="nav" id="primaryNav" role="navigation" aria-label="上方選單">
+          <a href="/zh-tw/buildings/">建築</a>
+          <a href="/zh-tw/heroes/">英雄</a>
+          <a href="/zh-tw/behemoths/" aria-current="page">巨獸</a>
+          <a href="/zh-tw/database/">資料庫</a>
+          <a href="/zh-tw/guides/">指南</a>
+          <a href="/zh-tw/seasons/">賽季</a>
+        </nav>
+      </div>
+
+      <button class="hamburger" id="menuToggle" aria-label="開啟選單" aria-controls="mobileDrawer" aria-expanded="false">☰</button>
+
+      <div class="nav-right">
+        <div id="langDropdownHeader" class="lang-pills" aria-label="語言選擇"></div>
+      </div>
+    </div>
+  </header>
+
+  <section class="countdown-bar-wrap" aria-label="代碼倒數區">
+    <div class="container countdown-bar">
+      <div class="countdown-bar__left">
+        <span class="countdown-badge">代碼</span>
+        <div class="countdown-copy">
+          <strong>點點大作戰 禮包碼倒數計時</strong>
+        </div>
+      </div>
+      <div class="countdown-bar__actions">
+        <a class="countdown-link" href="/zh-tw/codes/">最新代碼</a>
+        <a class="countdown-link" href="/zh-tw/guides/gift-code-how-to-use/">兌換方法</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="backdrop" id="backdrop" hidden></div>
+
+  <aside class="drawer" id="mobileDrawer" aria-hidden="true" aria-label="手機選單">
+    <header>
+      <strong>Menu</strong>
+      <button id="btnClose" aria-label="關閉" style="background:none;border:0;font-size:20px;cursor:pointer">✕</button>
+    </header>
+
+    <div class="section">
+      <div id="langDropdownDrawer" class="lang-pills lang-pills--drawer" aria-label="語言選擇"></div>
+    </div>
+
+    <div class="drawer-dotrule" aria-hidden="true"></div>
+
+    <div class="section">
+      <div class="nav-list" role="navigation" aria-label="手機選單列表">
+        <a href="/zh-tw/buildings/">建築</a>
+        <a href="/zh-tw/heroes/">英雄</a>
+        <a href="/zh-tw/behemoths/">巨獸</a>
+        <a href="/zh-tw/database/">資料庫</a>
+        <a href="/zh-tw/guides/">指南</a>
+        <a href="/zh-tw/seasons/">賽季</a>
+      </div>
+
+      <div class="drawer-quick-stack">
+        <a class="drawer-quick-pill js-drawer-close" href="https://discord.gg/EjqWhTPyaEjqWhTPya" target="_blank" rel="noopener noreferrer">Discord</a>
+        <a class="drawer-quick-pill js-drawer-close" href="/zh-tw/codes/">禮包碼</a>
+      </div>
+    </div>
+  </aside>
+
+  <main class="container page-main" id="main" role="main" aria-label="主要內容">
+    <section class="visually-hidden-seo" aria-label="SEO summary">
+      <p>Tiles Survive 橘光獅鷲獸 巨獸 星級表 巨獸細胞 活性蛋白 風之力 活動增幅 豔陽獅鷲獸 閃光獅鷲獸 代表天賦</p>
+    </section>
+
+    <nav class="breadcrumb" aria-label="麵包屑">
+      <a href="/zh-tw/">首頁</a>
+      <span>›</span>
+      <a href="/zh-tw/behemoths/">巨獸</a>
+      <span>›</span>
+      <span aria-current="page">橘光獅鷲獸</span>
+    </nav>
+
+    <section class="hero-wrap" aria-labelledby="pageTitle">
+      <article class="hero-card">
+        <span class="eyebrow">巨獸詳情</span>
+        <h1 id="pageTitle">橘光獅鷲獸</h1>
+        <p>
+          橘光獅鷲獸是可培養等級、星級與天賦的巨獸。
+          這一頁整理了各星級強化效果、活動增幅、造型變化、代表天賦與星級表，方便一次查看。
+        </p>
+
+        <div class="hero-meta">
+          <span class="meta-pill">升星素材: 巨獸細胞</span>
+          <span class="meta-pill">升級素材: 巨獸部分血清 / 巨獸少量血清</span>
+          <span class="meta-pill">天賦素材: 活性蛋白</span>
+          <span class="meta-pill">代表效果: 風之力 / 活動增幅</span>
+        </div>
+      </article>
+
+      <aside class="info-card" aria-label="橘光獅鷲獸摘要">
+        <div class="behemoth-thumb">
+          <img src="/img/behemoths/legend-griffin.png" alt="橘光獅鷲獸" />
+        </div>
+
+        <div class="quick-stats">
+          <div class="quick-stat">
+            <strong>名稱</strong>
+            <span>橘光獅鷲獸</span>
+          </div>
+          <div class="quick-stat">
+            <strong>分類</strong>
+            <span>巨獸</span>
+          </div>
+          <div class="quick-stat">
+            <strong>造型變化</strong>
+            <span>氣流 / 豔陽獅鷲獸</span>
+          </div>
+          <div class="quick-stat">
+            <strong>最終區間</strong>
+            <span>達到 Lv.500 後解鎖後續階段</span>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <div class="section-stack">
+      <section class="section-card" aria-labelledby="overviewTitle">
+        <div class="section-head">
+          <h2 id="overviewTitle">快速總覽</h2>
+        </div>
+
+        <div class="summary-grid">
+          <div class="summary-box">
+            <strong>30星 累計消耗</strong>
+            <span>巨獸細胞 6,566 個</span>
+          </div>
+          <div class="summary-box">
+            <strong>60星 累計消耗</strong>
+            <span>巨獸細胞 31,526 個</span>
+          </div>
+          <div class="summary-box">
+            <strong>天賦素材</strong>
+            <span>活性蛋白</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-card" aria-labelledby="materialsTitle">
+        <div class="section-head">
+          <h2 id="materialsTitle">培養素材</h2>
+        </div>
+
+        <div class="material-grid">
+          <div class="material-card">
+            <div class="material-icon">
+              <img src="/img/behemoths/behemoth-cell.png" alt="巨獸細胞" />
+            </div>
+            <strong>巨獸細胞</strong>
+            <span>星級強化素材</span>
+          </div>
+
+          <div class="material-card">
+            <div class="material-icon">
+              <img src="/img/behemoths/behemoth-serum-small.png" alt="巨獸少量血清" />
+            </div>
+            <strong>巨獸少量血清</strong>
+            <span>升級素材</span>
+          </div>
+
+          <div class="material-card">
+            <div class="material-icon">
+              <img src="/img/behemoths/behemoth-serum-partial.png" alt="巨獸部分血清" />
+            </div>
+            <strong>巨獸部分血清</strong>
+            <span>升級素材</span>
+          </div>
+
+          <div class="material-card">
+            <div class="material-icon">
+              <img src="/img/behemoths/active-protein.png" alt="活性蛋白" />
+            </div>
+            <strong>活性蛋白</strong>
+            <span>天賦素材</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-card" aria-labelledby="milestoneTitle">
+        <div class="section-head">
+          <h2 id="milestoneTitle">星級強化效果</h2>
+        </div>
+
+        <div class="milestone-grid">
+          <article class="milestone-card">
+            <div class="milestone-top">
+              <h3>橘光獅鷲獸</h3>
+              <span class="milestone-level">0</span>
+            </div>
+            <ul>
+              <li>解鎖橘光獅鷲獸</li>
+            </ul>
+          </article>
+
+          <article class="milestone-card">
+            <div class="milestone-top">
+              <h3>風之力 Lv.1</h3>
+              <span class="milestone-level">100</span>
+            </div>
+            <ul>
+              <li>戰鬥中，每隔 5 秒，隨機提升我方 1 名英雄攻擊 +1000</li>
+              <li>活動增幅: 天空之城增傷 +1.5%</li>
+              <li>活動增幅: 地下金礦增傷 +1.5%</li>
+              <li>活動增幅: 沙巢爭霸增傷 +1.5%</li>
+            </ul>
+          </article>
+
+          <article class="milestone-card">
+            <div class="milestone-top">
+              <h3>風之力 Lv.2</h3>
+              <span class="milestone-level">200</span>
+            </div>
+            <ul>
+              <li>風之力強化 +100%</li>
+              <li>城內特效: 氣流</li>
+            </ul>
+          </article>
+
+          <article class="milestone-card">
+            <div class="milestone-top">
+              <h3>風之力 Lv.3</h3>
+              <span class="milestone-level">300</span>
+            </div>
+            <ul>
+              <li>風之力強化 +200%</li>
+              <li>活動增幅: 天空之城減傷 +1.5%</li>
+              <li>活動增幅: 地下金礦減傷 +1.5%</li>
+              <li>活動增幅: 沙巢爭霸減傷 +1.5%</li>
+            </ul>
+          </article>
+
+          <article class="milestone-card">
+            <div class="milestone-top">
+              <h3>風之力 Lv.4</h3>
+              <span class="milestone-level">400</span>
+            </div>
+            <ul>
+              <li>風之力強化 +300%</li>
+              <li>解鎖豔陽獅鷲獸造型</li>
+            </ul>
+          </article>
+
+          <article class="milestone-card">
+            <div class="milestone-top">
+              <h3>風之力 Lv.5</h3>
+              <span class="milestone-level">500</span>
+            </div>
+            <ul>
+              <li>風之力強化 +400%</li>
+              <li>活動增幅: 天空之城增傷 +3%</li>
+              <li>活動增幅: 地下金礦增傷 +3%</li>
+              <li>活動增幅: 沙巢爭霸增傷 +3%</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-card" aria-labelledby="talentTitle">
+        <div class="section-head">
+          <h2 id="talentTitle">代表天賦</h2>
+        </div>
+
+        <div class="talent-grid">
+          <article class="talent-card">
+            <h3>雷暴覺醒</h3>
+            <p>巨獸核心技能「毀滅風暴」進階為「超・毀滅風暴」，造成的傷害提高 1%</p>
+          </article>
+
+          <article class="talent-card">
+            <h3>雷霆萬鈞</h3>
+            <p>巨獸發動核心技能後，接下來 5 秒內我方全體英雄造成傷害提高 1%</p>
+          </article>
+
+          <article class="talent-card">
+            <h3>風馳電掣</h3>
+            <p>行軍容量提高 3.0K</p>
+          </article>
+
+          <article class="talent-card">
+            <h3>雷嗥怒嘯</h3>
+            <p>解鎖造型「閃光獅鷲獸」後，額外提高巨獸傷害 4%</p>
+          </article>
+
+          <article class="talent-card">
+            <h3>天雷秩序</h3>
+            <p>陣營剋制強化提高 1%</p>
+          </article>
+        </div>
+
+        <div class="talent-note">
+          天賦啟用素材為活性蛋白。
+        </div>
+      </section>
+
+      <section class="section-card" aria-labelledby="starTableTitle">
+        <div class="section-head">
+          <h2 id="starTableTitle">巨獸星級表</h2>
+        </div>
+
+        <div class="wide-table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>星級</th>
+                <th>1階段</th>
+                <th>2階段</th>
+                <th>3階段</th>
+                <th>4階段</th>
+                <th>5階段</th>
+                <th>6階段</th>
+                <th>合計</th>
+                <th>累計</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr><td>1星</td><td>4</td><td>4</td><td>4</td><td>4</td><td>4</td><td>6</td><td>26</td><td>26</td></tr>
+              <tr><td>2星</td><td>6</td><td>6</td><td>6</td><td>6</td><td>6</td><td>8</td><td>38</td><td>64</td></tr>
+              <tr><td>3星</td><td>8</td><td>8</td><td>8</td><td>8</td><td>8</td><td>10</td><td>50</td><td>114</td></tr>
+              <tr><td>4星</td><td>10</td><td>10</td><td>10</td><td>10</td><td>10</td><td>12</td><td>62</td><td>176</td></tr>
+              <tr><td>5星</td><td>12</td><td>12</td><td>12</td><td>12</td><td>12</td><td>14</td><td>74</td><td>250</td></tr>
+              <tr><td>6星</td><td>14</td><td>14</td><td>14</td><td>14</td><td>14</td><td>16</td><td>86</td><td>336</td></tr>
+              <tr><td>7星</td><td>16</td><td>16</td><td>16</td><td>16</td><td>16</td><td>18</td><td>98</td><td>434</td></tr>
+              <tr><td>8星</td><td>18</td><td>18</td><td>18</td><td>18</td><td>18</td><td>20</td><td>110</td><td>544</td></tr>
+              <tr><td>9星</td><td>20</td><td>20</td><td>20</td><td>20</td><td>20</td><td>22</td><td>122</td><td>666</td></tr>
+              <tr><td>10星</td><td>22</td><td>22</td><td>22</td><td>22</td><td>22</td><td>24</td><td>134</td><td>800</td></tr>
+              <tr><td>11星</td><td>24</td><td>24</td><td>24</td><td>24</td><td>24</td><td>26</td><td>146</td><td>946</td></tr>
+              <tr><td>12星</td><td>26</td><td>26</td><td>26</td><td>26</td><td>26</td><td>28</td><td>158</td><td>1104</td></tr>
+              <tr><td>13星</td><td>28</td><td>28</td><td>28</td><td>28</td><td>28</td><td>30</td><td>170</td><td>1274</td></tr>
+              <tr><td>14星</td><td>30</td><td>30</td><td>30</td><td>30</td><td>30</td><td>32</td><td>182</td><td>1456</td></tr>
+              <tr><td>15星</td><td>32</td><td>32</td><td>32</td><td>32</td><td>32</td><td>34</td><td>194</td><td>1650</td></tr>
+              <tr><td>16星</td><td>36</td><td>36</td><td>36</td><td>36</td><td>36</td><td>38</td><td>218</td><td>1868</td></tr>
+              <tr><td>17星</td><td>38</td><td>38</td><td>38</td><td>38</td><td>38</td><td>40</td><td>230</td><td>2098</td></tr>
+              <tr><td>18星</td><td>40</td><td>40</td><td>40</td><td>40</td><td>40</td><td>42</td><td>242</td><td>2340</td></tr>
+              <tr><td>19星</td><td>42</td><td>42</td><td>42</td><td>42</td><td>42</td><td>44</td><td>254</td><td>2594</td></tr>
+              <tr><td>20星</td><td>44</td><td>44</td><td>44</td><td>44</td><td>44</td><td>46</td><td>266</td><td>2860</td></tr>
+              <tr><td>21星</td><td>46</td><td>46</td><td>46</td><td>46</td><td>46</td><td>48</td><td>278</td><td>3138</td></tr>
+              <tr><td>22星</td><td>48</td><td>48</td><td>48</td><td>48</td><td>48</td><td>50</td><td>290</td><td>3428</td></tr>
+              <tr><td>23星</td><td>50</td><td>50</td><td>50</td><td>50</td><td>50</td><td>52</td><td>302</td><td>3730</td></tr>
+              <tr><td>24星</td><td>52</td><td>52</td><td>52</td><td>52</td><td>52</td><td>56</td><td>316</td><td>4046</td></tr>
+              <tr><td>25星</td><td>60</td><td>60</td><td>60</td><td>60</td><td>60</td><td>64</td><td>364</td><td>4410</td></tr>
+              <tr><td>26星</td><td>64</td><td>64</td><td>64</td><td>64</td><td>64</td><td>68</td><td>388</td><td>4798</td></tr>
+              <tr><td>27星</td><td>68</td><td>68</td><td>68</td><td>68</td><td>68</td><td>72</td><td>412</td><td>5210</td></tr>
+              <tr><td>28星</td><td>72</td><td>72</td><td>72</td><td>72</td><td>72</td><td>76</td><td>436</td><td>5646</td></tr>
+              <tr><td>29星</td><td>76</td><td>76</td><td>76</td><td>76</td><td>76</td><td>80</td><td>460</td><td>6106</td></tr>
+              <tr><td>30星</td><td>76</td><td>76</td><td>76</td><td>76</td><td>76</td><td>80</td><td>460</td><td>6566</td></tr>
+              <tr><td>31星</td><td>80</td><td>80</td><td>80</td><td>80</td><td>80</td><td>84</td><td>484</td><td>7050</td></tr>
+              <tr><td>32星</td><td>84</td><td>84</td><td>84</td><td>84</td><td>84</td><td>88</td><td>508</td><td>7558</td></tr>
+              <tr><td>33星</td><td>88</td><td>88</td><td>88</td><td>88</td><td>88</td><td>92</td><td>532</td><td>8090</td></tr>
+              <tr><td>34星</td><td>92</td><td>92</td><td>92</td><td>92</td><td>92</td><td>96</td><td>556</td><td>8646</td></tr>
+              <tr><td>35星</td><td>96</td><td>96</td><td>96</td><td>96</td><td>96</td><td>100</td><td>580</td><td>9226</td></tr>
+              <tr><td>36星</td><td>100</td><td>100</td><td>100</td><td>100</td><td>100</td><td>104</td><td>604</td><td>9830</td></tr>
+              <tr><td>37星</td><td>104</td><td>104</td><td>104</td><td>104</td><td>104</td><td>108</td><td>628</td><td>10458</td></tr>
+              <tr><td>38星</td><td>108</td><td>108</td><td>108</td><td>108</td><td>108</td><td>112</td><td>652</td><td>11110</td></tr>
+              <tr><td>39星</td><td>112</td><td>112</td><td>112</td><td>112</td><td>112</td><td>116</td><td>676</td><td>11786</td></tr>
+              <tr><td>40星</td><td>116</td><td>116</td><td>116</td><td>116</td><td>116</td><td>120</td><td>700</td><td>12486</td></tr>
+              <tr><td>41星</td><td>120</td><td>120</td><td>120</td><td>120</td><td>120</td><td>124</td><td>724</td><td>13210</td></tr>
+              <tr><td>42星</td><td>124</td><td>124</td><td>124</td><td>124</td><td>124</td><td>128</td><td>748</td><td>13958</td></tr>
+              <tr><td>43星</td><td>128</td><td>128</td><td>128</td><td>128</td><td>128</td><td>132</td><td>772</td><td>14730</td></tr>
+              <tr><td>44星</td><td>132</td><td>132</td><td>132</td><td>132</td><td>132</td><td>136</td><td>796</td><td>15526</td></tr>
+              <tr><td>45星</td><td>136</td><td>136</td><td>136</td><td>136</td><td>136</td><td>140</td><td>820</td><td>16346</td></tr>
+              <tr><td>46星</td><td>140</td><td>140</td><td>140</td><td>140</td><td>140</td><td>144</td><td>844</td><td>17190</td></tr>
+              <tr><td>47星</td><td>144</td><td>144</td><td>144</td><td>144</td><td>144</td><td>148</td><td>868</td><td>18058</td></tr>
+              <tr><td>48星</td><td>148</td><td>148</td><td>148</td><td>148</td><td>148</td><td>152</td><td>892</td><td>18950</td></tr>
+              <tr><td>49星</td><td>152</td><td>152</td><td>152</td><td>152</td><td>152</td><td>156</td><td>916</td><td>19866</td></tr>
+              <tr><td>50星</td><td>156</td><td>156</td><td>156</td><td>156</td><td>156</td><td>160</td><td>940</td><td>20806</td></tr>
+              <tr><td>51星</td><td>160</td><td>160</td><td>160</td><td>160</td><td>160</td><td>164</td><td>964</td><td>21770</td></tr>
+              <tr><td>52星</td><td>164</td><td>164</td><td>164</td><td>164</td><td>164</td><td>168</td><td>988</td><td>22758</td></tr>
+              <tr><td>53星</td><td>168</td><td>168</td><td>168</td><td>168</td><td>168</td><td>172</td><td>1012</td><td>23770</td></tr>
+              <tr><td>54星</td><td>172</td><td>172</td><td>172</td><td>172</td><td>172</td><td>176</td><td>1036</td><td>24806</td></tr>
+              <tr><td>55星</td><td>176</td><td>176</td><td>176</td><td>176</td><td>176</td><td>180</td><td>1060</td><td>25866</td></tr>
+              <tr><td>56星</td><td>180</td><td>180</td><td>180</td><td>180</td><td>180</td><td>184</td><td>1084</td><td>26950</td></tr>
+              <tr><td>57星</td><td>184</td><td>184</td><td>184</td><td>184</td><td>184</td><td>188</td><td>1108</td><td>28058</td></tr>
+              <tr><td>58星</td><td>188</td><td>188</td><td>188</td><td>188</td><td>188</td><td>192</td><td>1132</td><td>29190</td></tr>
+              <tr><td>59星</td><td>192</td><td>192</td><td>192</td><td>192</td><td>192</td><td>196</td><td>1156</td><td>30346</td></tr>
+              <tr><td>60星</td><td>196</td><td>196</td><td>196</td><td>196</td><td>196</td><td>200</td><td>1180</td><td>31526</td></tr>
+            </tbody>
+          </table>
+        </div>
+
+        <div class="star-card-grid">
+          <article class="star-card"><div class="star-card__top"><div class="star-card__title">1星</div><div class="star-card__total">合計 26 / 累計 26</div></div><div class="star-card__grid"><div class="star-card__item"><strong>1階段</strong><span>4</span></div><div class="star-card__item"><strong>2階段</strong><span>4</span></div><div class="star-card__item"><strong>3階段</strong><span>4</span></div><div class="star-card__item"><strong>4階段</strong><span>4</span></div><div class="star-card__item"><strong>5階段</strong><span>4</span></div><div class="star-card__item"><strong>6階段</strong><span>6</span></div></div></article>
+          <article class="star-card"><div class="star-card__top"><div class="star-card__title">2星</div><div class="star-card__total">合計 38 / 累計 64</div></div><div class="star-card__grid"><div class="star-card__item"><strong>1階段</strong><span>6</span></div><div class="star-card__item"><strong>2階段</strong><span>6</span></div><div class="star-card__item"><strong>3階段</strong><span>6</span></div><div class="star-card__item"><strong>4階段</strong><span>6</span></div><div class="star-card__item"><strong>5階段</strong><span>6</span></div><div class="star-card__item"><strong>6階段</strong><span>8</span></div></div></article>
+          <article class="star-card"><div class="star-card__top"><div class="star-card__title">3星</div><div class="star-card__total">合計 50 / 累計 114</div></div><div class="star-card__grid"><div class="star-card__item"><strong>1階段</strong><span>8</span></div><div class="star-card__item"><strong>2階段</strong><span>8</span></div><div class="star-card__item"><strong>3階段</strong><span>8</span></div><div class="star-card__item"><strong>4階段</strong><span>8</span></div><div class="star-card__item"><strong>5階段</strong><span>8</span></div><div class="star-card__item"><strong>6階段</strong><span>10</span></div></div></article>
+          <article class="star-card"><div class="star-card__top"><div class="star-card__title">4星</div><div class="star-card__total">合計 62 / 累計 176</div></div><div class="star-card__grid"><div class="star-card__item"><strong>1階段</strong><span>10</span></div><div class="star-card__item"><strong>2階段</strong><span>10</span></div><div class="star-card__item"><strong>3階段</strong><span>10</span></div><div class="star-card__item"><strong>4階段</strong><span>10</span></div><div class="star-card__item"><strong>5階段</strong><span>10</span></div><div class="star-card__item"><strong>6階段</strong><span>12</span></div></div></article>
+          <article class="star-card"><div class="star-card__top"><div class="star-card__title">5星</div><div class="star-card__total">合計 74 / 累計 250</div></div><div class="star-card__grid"><div class="star-card__item"><strong>1階段</strong><span>12</span></div><div class="star-card__item"><strong>2階段</strong><span>12</span></div><div class="star-card__item"><strong>3階段</strong><span>12</span></div><div class="star-card__item"><strong>4階段</strong><span>12</span></div><div class="star-card__item"><strong>5階段</strong><span>12</span></div><div class="star-card__item"><strong>6階段</strong><span>14</span></div></div></article>
+          <article class="star-card"><div class="star-card__top"><div class="star-card__title">6星</div><div class="star-card__total">合計 86 / 累計 336</div></div><div class="star-card__grid"><div class="star-card__item"><strong>1階段</strong><span>14</span></div><div class="star-card__item"><strong>2階段</strong><span>14</span></div><div class="star-card__item"><strong>3階段</strong><span>14</span></div><div class="star-card__item"><strong>4階段</strong><span>14</span></div><div class="star-card__item"><strong>5階段</strong><span>14</span></div><div class="star-card__item"><strong>6階段</strong><span>16</span></div></div></article>
+          <article class="star-card"><div class="star-card__top"><div class="star-card__title">7星</div><div class="star-card__total">合計 98 / 累計 434</div></div><div class="star-card__grid"><div class="star-card__item"><strong>1階段</strong><span>16</span></div><div class="star-card__item"><strong>2階段</strong><span>16</span></div><div class="star-card__item"><strong>3階段</strong><span>16</span></div><div class="star-card__item"><strong>4階段</strong><span>16</span></div><div class="star-card__item"><strong>5階段</strong><span>16</span></div><div class="star-card__item"><strong>6階段</strong><span>18</span></div></div></article>
+          <article class="star-card"><div class="star-card__top"><div class="star-card__title">8星</div><div class="star-card__total">合計 110 / 累計 544</div></div><div class="star-card__grid"><div class="star-card__item"><strong>1階段</strong><span>18</span></div><div class="star-card__item"><strong>2階段</strong><span>18</span></div><div class="star-card__item"><strong>3階段</strong><span>18</span></div><div class="star-card__item"><strong>4階段</strong><span>18</span></div><div class="star-card__item"><strong>5階段</strong><span>18</span></div><div class="star-card__item"><strong>6階段</strong><span>20</span></div></div></article>
+          <article class="star-card"><div class="star-card__top"><div class="star-card__title">9星</div><div class="star-card__total">合計 122 / 累計 666</div></div><div class="star-card__grid"><div class="star-card__item"><strong>1階段</strong><span>20</span></div><div class="star-card__item"><strong>2階段</strong><span>20</span></div><div class="star-card__item"><strong>3階段</strong><span>20</span></div><div class="star-card__item"><strong>4階段</strong><span>20</span></div><div class="star-card__item"><strong>5階段</strong><span>20</span></div><div class="star-card__item"><strong>6階段</strong><span>22</span></div></div></article>
+          <article class="star-card"><div class="star-card__top"><div class="star-card__title">10星</div><div class="star-card__total">合計 134 / 累計 800</div></div><div class="star-card__grid"><div class="star-card__item"><strong>1階段</strong><span>22</span></div><div class="star-card__item"><strong>2階段</strong><span>22</span></div><div class="star-card__item"><strong>3階段</strong><span>22</span></div><div class="star-card__item"><strong>4階段</strong><span>22</span></div><div class="star-card__item"><strong>5階段</strong><span>22</span></div><div class="star-card__item"><strong>6階段</strong><span>24</span></div></div></article>
+
+          <article class="star-card"><div class="star-card__top"><div class="star-card__title">11星</div><div class="star-card__total">合計 146 / 累計 946</div></div><div class="star-card__grid"><div class="star-card__item"><strong>1階段</strong><span>24</span></div><div class="star-card__item"><strong>2階段</strong><span>24</span></div><div class="star-card__item"><strong>3階段</strong><span>24</span></div><div class="star-card__item"><strong>4階段</strong><span>24</span></div><div class="star-card__item"><strong>5階段</strong><span>24</span></div><div class="star-card__item"><strong>6階段</strong><span>26</span></div></div></article>
+          <article class="star-card"><div class="star-card__top"><div class="star-card__title">12星</div><div class="star-card__total">合計 158 / 累計 1104</div></div><div class="star-card__grid"><div class="star-card__item"><strong>1階段</strong><span>26</span></div><div class="star-card__item"><strong>2階段</strong><span>26</span></div><div class="star-card__item"><strong>3階段</strong><span>26</span></div><div class="star-card__item"><strong>4階段</strong><span>26</span></div><div class="star-card__item"><strong>5階段</strong><span>26</span></div><div class="star-card__item"><strong>6階段</strong><span>28</span></div></div></article>
+          <article class="star-card"><div class="star-card__top"><div class="star-card__title">13星</div><div class="star-card__total">合計 170 / 累計 1274</div></div><div class="star-card__grid"><div class="star-card__item"><strong>1階段</strong><span>28</span></div><div class="star-card__item"><strong>2階段</strong><span>28</span></div><div class="star-card__item"><strong>3階段</strong><span>28</span></div><div class="star-card__item"><strong>4階段</strong><span>28</span></div><div class="star-card__item"><strong>5階段</strong><span>28</span></div><div class="star-card__item"><strong>6階段</strong><span>30</span></div></div></article>
+          <article class="star-card"><div class="star-card__top"><div class="star-card__title">14星</div><div class="star-card__total">合計 182 / 累計 1456</div></div><div class="star-card__grid"><div class="star-card__item"><strong>1階段</strong><span>30</span></div><div class="star-card__item"><strong>2階段</strong><span>30</span></div><div class="star-card__item"><strong>3階段</strong><span>30</span></div><div class="star-card__item"><strong>4階段</strong><span>30</span></div><div class="star-card__item"><strong>5階段</strong><span>30</span></div><div class="star-card__item"><strong>6階段</strong><span>32</span></div></div></article>
+          <article class="star-card"><div class="star-card__top"><div class="star-card__title">15星</div><div class="star-card__total">合計 194 / 累計 1650</div></div><div class="star-card__grid"><div class="star-card__item"><strong>1階段</strong><span>32</span></div><div class="star-card__item"><strong>2階段</strong><span>32</span></div><div class="star-card__item"><strong>3階段</strong><span>32</span></div><div class="star-card__item"><strong>4階段</strong><span>32</span></div><div class="star-card__item"><strong>5階段</strong><span>32</span></div><div class="star-card__item"><strong>6階段</strong><span>34</span></div></div></article>
+          <article class="star-card"><div class="star-card__top"><div class="star-card__title">16星</div><div class="star-card__total">合計 218 / 累計 1868</div></div><div class="star-card__grid"><div class="star-card__item"><strong>1階段</strong><span>36</span></div><div class="star-card__item"><strong>2階段</strong><span>36</span></div><div class="star-card__item"><strong>3階段</strong><span>36</span></div><div class="star-card__item"><strong>4階段</strong><span>36</span></div><div class="star-card__item"><strong>5階段</strong><span>36</span></div><div class="star-card__item"><strong>6階段</strong><span>38</span></div></div></article>
+          <article class="star-card"><div class="star-card__top"><div class="star-card__title">17星</div><div class="star-card__total">合計 230 / 累計 2098</div></div><div class="star-card__grid"><div class="star-card__item"><strong>1階段</strong><span>38</span></div><div class="star-card__item"><strong>2階段</strong><span>38</span></div><div class="star-card__item"><strong>3階段</strong><span>38</span></div><div class="star-card__item"><strong>4階段</strong><span>38</span></div><div class="star-card__item"><strong>5階段</strong><span>38</span></div><div class="star-card__item"><strong>6階段</strong><span>40</span></div></div></article>
+          <article class="star-card"><div class="star-card__top"><div class="star-card__title">18星</div><div class="star-card__total">合計 242 / 累計 2340</div></div><div class="star-card__grid"><div class="star-card__item"><strong>1階段</strong><span>40</span></div><div class="star-card__item"><strong>2階段</strong><span>40</span></div><div class="star-card__item"><strong>3階段</strong><span>40</span></div><div class="star-card__item"><strong>4階段</strong><span>40</span></div><div class="star-card__item"><strong>5階段</strong><span>40</span></div><div class="star-card__item"><strong>6階段</strong><span>42</span></div></div></article>
+          <article class="star-card"><div class="star-card__top"><div class="star-card__title">19星</div><div class="star-card__total">合計 254 / 累計 2594</div></div><div class="star-card__grid"><div class="star-card__item"><strong>1階段</strong><span>42</span></div><div class="star-card__item"><strong>2階段</strong><span>42</span></div><div class="star-card__item"><strong>3階段</strong><span>42</span></div><div class="star-card__item"><strong>4階段</strong><span>42</span></div><div class="star-card__item"><strong>5階段</strong><span>42</span></div><div class="star-card__item"><strong>6階段</strong><span>44</span></div></div></article>
+          <article class="star-card"><div class="star-card__top"><div class="star-card__title">20星</div><div class="star-card__total">合計 266 / 累計 2860</div></div><div class="star-card__grid"><div class="star-card__item"><strong>1階段</strong><span>44</span></div><div class="star-card__item"><strong>2階段</strong><span>44</span></div><div class="star-card__item"><strong>3階段</strong><span>44</span></div><div class="star-card__item"><strong>4階段</strong><span>44</span></div><div class="star-card__item"><strong>5階段</strong><span>44</span></div><div class="star-card__item"><strong>6階段</strong><span>46</span></div></div></article>
+
+          <article class="star-card"><div class="star-card__top"><div class="star-card__title">21星</div><div class="star-card__total">合計 278 / 累計 3138</div></div><div class="star-card__grid"><div class="star-card__item"><strong>1階段</strong><span>46</span></div><div class="star-card__item"><strong>2階段</strong><span>46</span></div><div class="star-card__item"><strong>3階段</strong><span>46</span></div><div class="star-card__item"><strong>4階段</strong><span>46</span></div><div class="star-card__item"><strong>5階段</strong><span>46</span></div><div class="star-card__item"><strong>6階段</strong><span>48</span></div></div></article>
+          <article class="star-card"><div class="star-card__top"><div class="star-card__title">22星</div><div class="star-card__total">合計 290 / 累計 3428</div></div><div class="star-card__grid"><div class="star-card__item"><strong>1階段</strong><span>48</span></div><div class="star-card__item"><strong>2階段</strong><span>48</span></div><div class="star-card__item"><strong>3階段</strong><span>48</span></div><div class="star-card__item"><strong>4階段</strong><span>48</span></div><div class="star-card__item"><strong>5階段</strong><span>48</span></div><div class="star-card__item"><strong>6階段</strong><span>50</span></div></div></article>
+          <article class="star-card"><div class="star-card__top"><div class="star-card__title">23星</div><div class="star-card__total">合計 302 / 累計 3730</div></div><div class="star-card__grid"><div class="star-card__item"><strong>1階段</strong><span>50</span></div><div class="star-card__item"><strong>2階段</strong><span>50</span></div><div class="star-card__item"><strong>3階段</strong><span>50</span></div><div class="star-card__item"><strong>4階段</strong><span>50</span></div><div class="star-card__item"><strong>5階段</strong><span>50</span></div><div class="star-card__item"><strong>6階段</strong><span>52</span></div></div></article>
+          <article class="star-card"><div class="star-card__top"><div class="star-card__title">24星</div><div class="star-card__total">合計 316 / 累計 4046</div></div><div class="star-card__grid"><div class="star-card__item"><strong>1階段</strong><span>52</span></div><div class="star-card__item"><strong>2階段</strong><span>52</span></div><div class="star-card__item"><strong>3階段</strong><span>52</span></div><div class="star-card__item"><strong>4階段</strong><span>52</span></div><div class="star-card__item"><strong>5階段</strong><span>52</span></div><div class="star-card__item"><strong>6階段</strong><span>56</span></div></div></article>
+          <article class="star-card"><div class="star-card__top"><div class="star-card__title">25星</div><div class="star-card__total">合計 364 / 累計 4410</div></div><div class="star-card__grid"><div class="star-card__item"><strong>1階段</strong><span>60</span></div><div class="star-card__item"><strong>2階段</strong><span>60</span></div><div class="star-card__item"><strong>3階段</strong><span>60</span></div><div class="star-card__item"><strong>4階段</strong><span>60</span></div><div class="star-card__item"><strong>5階段</strong><span>60</span></div><div class="star-card__item"><strong>6階段</strong><span>64</span></div></div></article>
+          <article class="star-card"><div class="star-card__top"><div class="star-card__title">26星</div><div class="star-card__total">合計 388 / 累計 4798</div></div><div class="star-card__grid"><div class="star-card__item"><strong>1階段</strong><span>64</span></div><div class="star-card__item"><strong>2階段</strong><span>64</span></div><div class="star-card__item"><strong>3階段</strong><span>64</span></div><div class="star-card__item"><strong>4階段</strong><span>64</span></div><div class="star-card__item"><strong>5階段</strong><span>64</span></div><div class="star-card__item"><strong>6階段</strong><span>68</span></div></div></article>
+          <article class="star-card"><div class="star-card__top"><div class="star-card__title">27星</div><div class="star-card__total">合計 412 / 累計 5210</div></div><div class="star-card__grid"><div class="star-card__item"><strong>1階段</strong><span>68</span></div><div class="star-card__item"><strong>2階段</strong><span>68</span></div><div class="star-card__item"><strong>3階段</strong><span>68</span></div><div class="star-card__item"><strong>4階段</strong><span>68</span></div><div class="star-card__item"><strong>5階段</strong><span>68</span></div><div class="star-card__item"><strong>6階段</strong><span>72</span></div></div></article>
+          <article class="star-card"><div class="star-card__top"><div class="star-card__title">28星</div><div class="star-card__total">合計 436 / 累計 5646</div></div><div class="star-card__grid"><div class="star-card__item"><strong>1階段</strong><span>72</span></div><div class="star-card__item"><strong>2階段</strong><span>72</span></div><div class="star-card__item"><strong>3階段</strong><span>72</span></div><div class="star-card__item"><strong>4階段</strong><span>72</span></div><div class="star-card__item"><strong>5階段</strong><span>72</span></div><div class="star-card__item"><strong>6階段</strong><span>76</span></div></div></article>
+          <article class="star-card"><div class="star-card__top"><div class="star-card__title">29星</div><div class="star-card__total">合計 460 / 累計 6106</div></div><div class="star-card__grid"><div class="star-card__item"><strong>1階段</strong><span>76</span></div><div class="star-card__item"><strong>2階段</strong><span>76</span></div><div class="star-card__item"><strong>3階段</strong><span>76</span></div><div class="star-card__item"><strong>4階段</strong><span>76</span></div><div class="star-card__item"><strong>5階段</strong><span>76</span></div><div class="star-card__item"><strong>6階段</strong><span>80</span></div></div></article>
+          <article class="star-card"><div class="star-card__top"><div class="star-card__title">30星</div><div class="star-card__total">合計 460 / 累計 6566</div></div><div class="star-card__grid"><div class="star-card__item"><strong>1階段</strong><span>76</span></div><div class="star-card__item"><strong>2階段</strong><span>76</span></div><div class="star-card__item"><strong>3階段</strong><span>76</span></div><div class="star-card__item"><strong>4階段</strong><span>76</span></div><div class="star-card__item"><strong>5階段</strong><span>76</span></div><div class="star-card__item"><strong>6階段</strong><span>80</span></div></div></article>
+
+          <article class="star-card"><div class="star-card__top"><div class="star-card__title">31星</div><div class="star-card__total">合計 484 / 累計 7050</div></div><div class="star-card__grid"><div class="star-card__item"><strong>1階段</strong><span>80</span></div><div class="star-card__item"><strong>2階段</strong><span>80</span></div><div class="star-card__item"><strong>3階段</strong><span>80</span></div><div class="star-card__item"><strong>4階段</strong><span>80</span></div><div class="star-card__item"><strong>5階段</strong><span>80</span></div><div class="star-card__item"><strong>6階段</strong><span>84</span></div></div></article>
+          <article class="star-card"><div class="star-card__top"><div class="star-card__title">32星</div><div class="star-card__total">合計 508 / 累計 7558</div></div><div class="star-card__grid"><div class="star-card__item"><strong>1階段</strong><span>84</span></div><div class="star-card__item"><strong>2階段</strong><span>84</span></div><div class="star-card__item"><strong>3階段</strong><span>84</span></div><div class="star-card__item"><strong>4階段</strong><span>84</span></div><div class="star-card__item"><strong>5階段</strong><span>84</span></div><div class="star-card__item"><strong>6階段</strong><span>88</span></div></div></article>
+          <article class="star-card"><div class="star-card__top"><div class="star-card__title">33星</div><div class="star-card__total">合計 532 / 累計 8090</div></div><div class="star-card__grid"><div class="star-card__item"><strong>1階段</strong><span>88</span></div><div class="star-card__item"><strong>2階段</strong><span>88</span></div><div class="star-card__item"><strong>3階段</strong><span>88</span></div><div class="star-card__item"><strong>4階段</strong><span>88</span></div><div class="star-card__item"><strong>5階段</strong><span>88</span></div><div class="star-card__item"><strong>6階段</strong><span>92</span></div></div></article>
+          <article class="star-card"><div class="star-card__top"><div class="star-card__title">34星</div><div class="star-card__total">合計 556 / 累計 8646</div></div><div class="star-card__grid"><div class="star-card__item"><strong>1階段</strong><span>92</span></div><div class="star-card__item"><strong>2階段</strong><span>92</span></div><div class="star-card__item"><strong>3階段</strong><span>92</span></div><div class="star-card__item"><strong>4階段</strong><span>92</span></div><div class="star-card__item"><strong>5階段</strong><span>92</span></div><div class="star-card__item"><strong>6階段</strong><span>96</span></div></div></article>
+          <article class="star-card"><div class="star-card__top"><div class="star-card__title">35星</div><div class="star-card__total">合計 580 / 累計 9226</div></div><div class="star-card__grid"><div class="star-card__item"><strong>1階段</strong><span>96</span></div><div class="star-card__item"><strong>2階段</strong><span>96</span></div><div class="star-card__item"><strong>3階段</strong><span>96</span></div><div class="star-card__item"><strong>4階段</strong><span>96</span></div><div class="star-card__item"><strong>5階段</strong><span>96</span></div><div class="star-card__item"><strong>6階段</strong><span>100</span></div></div></article>
+          <article class="star-card"><div class="star-card__top"><div class="star-card__title">36星</div><div class="star-card__total">合計 604 / 累計 9830</div></div><div class="star-card__grid"><div class="star-card__item"><strong>1階段</strong><span>100</span></div><div class="star-card__item"><strong>2階段</strong><span>100</span></div><div class="star-card__item"><strong>3階段</strong><span>100</span></div><div class="star-card__item"><strong>4階段</strong><span>100</span></div><div class="star-card__item"><strong>5階段</strong><span>100</span></div><div class="star-card__item"><strong>6階段</strong><span>104</span></div></div></article>
+          <article class="star-card"><div class="star-card__top"><div class="star-card__title">37星</div><div class="star-card__total">合計 628 / 累計 10458</div></div><div class="star-card__grid"><div class="star-card__item"><strong>1階段</strong><span>104</span></div><div class="star-card__item"><strong>2階段</strong><span>104</span></div><div class="star-card__item"><strong>3階段</strong><span>104</span></div><div class="star-card__item"><strong>4階段</strong><span>104</span></div><div class="star-card__item"><strong>5階段</strong><span>104</span></div><div class="star-card__item"><strong>6階段</strong><span>108</span></div></div></article>
+          <article class="star-card"><div class="star-card__top"><div class="star-card__title">38星</div><div class="star-card__total">合計 652 / 累計 11110</div></div><div class="star-card__grid"><div class="star-card__item"><strong>1階段</strong><span>108</span></div><div class="star-card__item"><strong>2階段</strong><span>108</span></div><div class="star-card__item"><strong>3階段</strong><span>108</span></div><div class="star-card__item"><strong>4階段</strong><span>108</span></div><div class="star-card__item"><strong>5階段</strong><span>108</span></div><div class="star-card__item"><strong>6階段</strong><span>112</span></div></div></article>
+          <article class="star-card"><div class="star-card__top"><div class="star-card__title">39星</div><div class="star-card__total">合計 676 / 累計 11786</div></div><div class="star-card__grid"><div class="star-card__item"><strong>1階段</strong><span>112</span></div><div class="star-card__item"><strong>2階段</strong><span>112</span></div><div class="star-card__item"><strong>3階段</strong><span>112</span></div><div class="star-card__item"><strong>4階段</strong><span>112</span></div><div class="star-card__item"><strong>5階段</strong><span>112</span></div><div class="star-card__item"><strong>6階段</strong><span>116</span></div></div></article>
+          <article class="star-card"><div class="star-card__top"><div class="star-card__title">40星</div><div class="star-card__total">合計 700 / 累計 12486</div></div><div class="star-card__grid"><div class="star-card__item"><strong>1階段</strong><span>116</span></div><div class="star-card__item"><strong>2階段</strong><span>116</span></div><div class="star-card__item"><strong>3階段</strong><span>116</span></div><div class="star-card__item"><strong>4階段</strong><span>116</span></div><div class="star-card__item"><strong>5階段</strong><span>116</span></div><div class="star-card__item"><strong>6階段</strong><span>120</span></div></div></article>
+
+          <article class="star-card"><div class="star-card__top"><div class="star-card__title">41星</div><div class="star-card__total">合計 724 / 累計 13210</div></div><div class="star-card__grid"><div class="star-card__item"><strong>1階段</strong><span>120</span></div><div class="star-card__item"><strong>2階段</strong><span>120</span></div><div class="star-card__item"><strong>3階段</strong><span>120</span></div><div class="star-card__item"><strong>4階段</strong><span>120</span></div><div class="star-card__item"><strong>5階段</strong><span>120</span></div><div class="star-card__item"><strong>6階段</strong><span>124</span></div></div></article>
+          <article class="star-card"><div class="star-card__top"><div class="star-card__title">42星</div><div class="star-card__total">合計 748 / 累計 13958</div></div><div class="star-card__grid"><div class="star-card__item"><strong>1階段</strong><span>124</span></div><div class="star-card__item"><strong>2階段</strong><span>124</span></div><div class="star-card__item"><strong>3階段</strong><span>124</span></div><div class="star-card__item"><strong>4階段</strong><span>124</span></div><div class="star-card__item"><strong>5階段</strong><span>124</span></div><div class="star-card__item"><strong>6階段</strong><span>128</span></div></div></article>
+          <article class="star-card"><div class="star-card__top"><div class="star-card__title">43星</div><div class="star-card__total">合計 772 / 累計 14730</div></div><div class="star-card__grid"><div class="star-card__item"><strong>1階段</strong><span>128</span></div><div class="star-card__item"><strong>2階段</strong><span>128</span></div><div class="star-card__item"><strong>3階段</strong><span>128</span></div><div class="star-card__item"><strong>4階段</strong><span>128</span></div><div class="star-card__item"><strong>5階段</strong><span>128</span></div><div class="star-card__item"><strong>6階段</strong><span>132</span></div></div></article>
+          <article class="star-card"><div class="star-card__top"><div class="star-card__title">44星</div><div class="star-card__total">合計 796 / 累計 15526</div></div><div class="star-card__grid"><div class="star-card__item"><strong>1階段</strong><span>132</span></div><div class="star-card__item"><strong>2階段</strong><span>132</span></div><div class="star-card__item"><strong>3階段</strong><span>132</span></div><div class="star-card__item"><strong>4階段</strong><span>132</span></div><div class="star-card__item"><strong>5階段</strong><span>132</span></div><div class="star-card__item"><strong>6階段</strong><span>136</span></div></div></article>
+          <article class="star-card"><div class="star-card__top"><div class="star-card__title">45星</div><div class="star-card__total">合計 820 / 累計 16346</div></div><div class="star-card__grid"><div class="star-card__item"><strong>1階段</strong><span>136</span></div><div class="star-card__item"><strong>2階段</strong><span>136</span></div><div class="star-card__item"><strong>3階段</strong><span>136</span></div><div class="star-card__item"><strong>4階段</strong><span>136</span></div><div class="star-card__item"><strong>5階段</strong><span>136</span></div><div class="star-card__item"><strong>6階段</strong><span>140</span></div></div></article>
+          <article class="star-card"><div class="star-card__top"><div class="star-card__title">46星</div><div class="star-card__total">合計 844 / 累計 17190</div></div><div class="star-card__grid"><div class="star-card__item"><strong>1階段</strong><span>140</span></div><div class="star-card__item"><strong>2階段</strong><span>140</span></div><div class="star-card__item"><strong>3階段</strong><span>140</span></div><div class="star-card__item"><strong>4階段</strong><span>140</span></div><div class="star-card__item"><strong>5階段</strong><span>140</span></div><div class="star-card__item"><strong>6階段</strong><span>144</span></div></div></article>
+          <article class="star-card"><div class="star-card__top"><div class="star-card__title">47星</div><div class="star-card__total">合計 868 / 累計 18058</div></div><div class="star-card__grid"><div class="star-card__item"><strong>1階段</strong><span>144</span></div><div class="star-card__item"><strong>2階段</strong><span>144</span></div><div class="star-card__item"><strong>3階段</strong><span>144</span></div><div class="star-card__item"><strong>4階段</strong><span>144</span></div><div class="star-card__item"><strong>5階段</strong><span>144</span></div><div class="star-card__item"><strong>6階段</strong><span>148</span></div></div></article>
+          <article class="star-card"><div class="star-card__top"><div class="star-card__title">48星</div><div class="star-card__total">合計 892 / 累計 18950</div></div><div class="star-card__grid"><div class="star-card__item"><strong>1階段</strong><span>148</span></div><div class="star-card__item"><strong>2階段</strong><span>148</span></div><div class="star-card__item"><strong>3階段</strong><span>148</span></div><div class="star-card__item"><strong>4階段</strong><span>148</span></div><div class="star-card__item"><strong>5階段</strong><span>148</span></div><div class="star-card__item"><strong>6階段</strong><span>152</span></div></div></article>
+          <article class="star-card"><div class="star-card__top"><div class="star-card__title">49星</div><div class="star-card__total">合計 916 / 累計 19866</div></div><div class="star-card__grid"><div class="star-card__item"><strong>1階段</strong><span>152</span></div><div class="star-card__item"><strong>2階段</strong><span>152</span></div><div class="star-card__item"><strong>3階段</strong><span>152</span></div><div class="star-card__item"><strong>4階段</strong><span>152</span></div><div class="star-card__item"><strong>5階段</strong><span>152</span></div><div class="star-card__item"><strong>6階段</strong><span>156</span></div></div></article>
+          <article class="star-card"><div class="star-card__top"><div class="star-card__title">50星</div><div class="star-card__total">合計 940 / 累計 20806</div></div><div class="star-card__grid"><div class="star-card__item"><strong>1階段</strong><span>156</span></div><div class="star-card__item"><strong>2階段</strong><span>156</span></div><div class="star-card__item"><strong>3階段</strong><span>156</span></div><div class="star-card__item"><strong>4階段</strong><span>156</span></div><div class="star-card__item"><strong>5階段</strong><span>156</span></div><div class="star-card__item"><strong>6階段</strong><span>160</span></div></div></article>
+
+          <article class="star-card"><div class="star-card__top"><div class="star-card__title">51星</div><div class="star-card__total">合計 964 / 累計 21770</div></div><div class="star-card__grid"><div class="star-card__item"><strong>1階段</strong><span>160</span></div><div class="star-card__item"><strong>2階段</strong><span>160</span></div><div class="star-card__item"><strong>3階段</strong><span>160</span></div><div class="star-card__item"><strong>4階段</strong><span>160</span></div><div class="star-card__item"><strong>5階段</strong><span>160</span></div><div class="star-card__item"><strong>6階段</strong><span>164</span></div></div></article>
+          <article class="star-card"><div class="star-card__top"><div class="star-card__title">52星</div><div class="star-card__total">合計 988 / 累計 22758</div></div><div class="star-card__grid"><div class="star-card__item"><strong>1階段</strong><span>164</span></div><div class="star-card__item"><strong>2階段</strong><span>164</span></div><div class="star-card__item"><strong>3階段</strong><span>164</span></div><div class="star-card__item"><strong>4階段</strong><span>164</span></div><div class="star-card__item"><strong>5階段</strong><span>164</span></div><div class="star-card__item"><strong>6階段</strong><span>168</span></div></div></article>
+          <article class="star-card"><div class="star-card__top"><div class="star-card__title">53星</div><div class="star-card__total">合計 1012 / 累計 23770</div></div><div class="star-card__grid"><div class="star-card__item"><strong>1階段</strong><span>168</span></div><div class="star-card__item"><strong>2階段</strong><span>168</span></div><div class="star-card__item"><strong>3階段</strong><span>168</span></div><div class="star-card__item"><strong>4階段</strong><span>168</span></div><div class="star-card__item"><strong>5階段</strong><span>168</span></div><div class="star-card__item"><strong>6階段</strong><span>172</span></div></div></article>
+          <article class="star-card"><div class="star-card__top"><div class="star-card__title">54星</div><div class="star-card__total">合計 1036 / 累計 24806</div></div><div class="star-card__grid"><div class="star-card__item"><strong>1階段</strong><span>172</span></div><div class="star-card__item"><strong>2階段</strong><span>172</span></div><div class="star-card__item"><strong>3階段</strong><span>172</span></div><div class="star-card__item"><strong>4階段</strong><span>172</span></div><div class="star-card__item"><strong>5階段</strong><span>172</span></div><div class="star-card__item"><strong>6階段</strong><span>176</span></div></div></article>
+          <article class="star-card"><div class="star-card__top"><div class="star-card__title">55星</div><div class="star-card__total">合計 1060 / 累計 25866</div></div><div class="star-card__grid"><div class="star-card__item"><strong>1階段</strong><span>176</span></div><div class="star-card__item"><strong>2階段</strong><span>176</span></div><div class="star-card__item"><strong>3階段</strong><span>176</span></div><div class="star-card__item"><strong>4階段</strong><span>176</span></div><div class="star-card__item"><strong>5階段</strong><span>176</span></div><div class="star-card__item"><strong>6階段</strong><span>180</span></div></div></article>
+          <article class="star-card"><div class="star-card__top"><div class="star-card__title">56星</div><div class="star-card__total">合計 1084 / 累計 26950</div></div><div class="star-card__grid"><div class="star-card__item"><strong>1階段</strong><span>180</span></div><div class="star-card__item"><strong>2階段</strong><span>180</span></div><div class="star-card__item"><strong>3階段</strong><span>180</span></div><div class="star-card__item"><strong>4階段</strong><span>180</span></div><div class="star-card__item"><strong>5階段</strong><span>180</span></div><div class="star-card__item"><strong>6階段</strong><span>184</span></div></div></article>
+          <article class="star-card"><div class="star-card__top"><div class="star-card__title">57星</div><div class="star-card__total">合計 1108 / 累計 28058</div></div><div class="star-card__grid"><div class="star-card__item"><strong>1階段</strong><span>184</span></div><div class="star-card__item"><strong>2階段</strong><span>184</span></div><div class="star-card__item"><strong>3階段</strong><span>184</span></div><div class="star-card__item"><strong>4階段</strong><span>184</span></div><div class="star-card__item"><strong>5階段</strong><span>184</span></div><div class="star-card__item"><strong>6階段</strong><span>188</span></div></div></article>
+          <article class="star-card"><div class="star-card__top"><div class="star-card__title">58星</div><div class="star-card__total">合計 1132 / 累計 29190</div></div><div class="star-card__grid"><div class="star-card__item"><strong>1階段</strong><span>188</span></div><div class="star-card__item"><strong>2階段</strong><span>188</span></div><div class="star-card__item"><strong>3階段</strong><span>188</span></div><div class="star-card__item"><strong>4階段</strong><span>188</span></div><div class="star-card__item"><strong>5階段</strong><span>188</span></div><div class="star-card__item"><strong>6階段</strong><span>192</span></div></div></article>
+          <article class="star-card"><div class="star-card__top"><div class="star-card__title">59星</div><div class="star-card__total">合計 1156 / 累計 30346</div></div><div class="star-card__grid"><div class="star-card__item"><strong>1階段</strong><span>192</span></div><div class="star-card__item"><strong>2階段</strong><span>192</span></div><div class="star-card__item"><strong>3階段</strong><span>192</span></div><div class="star-card__item"><strong>4階段</strong><span>192</span></div><div class="star-card__item"><strong>5階段</strong><span>192</span></div><div class="star-card__item"><strong>6階段</strong><span>196</span></div></div></article>
+          <article class="star-card"><div class="star-card__top"><div class="star-card__title">60星</div><div class="star-card__total">合計 1180 / 累計 31526</div></div><div class="star-card__grid"><div class="star-card__item"><strong>1階段</strong><span>196</span></div><div class="star-card__item"><strong>2階段</strong><span>196</span></div><div class="star-card__item"><strong>3階段</strong><span>196</span></div><div class="star-card__item"><strong>4階段</strong><span>196</span></div><div class="star-card__item"><strong>5階段</strong><span>196</span></div><div class="star-card__item"><strong>6階段</strong><span>200</span></div></div></article>
+        </div>
+
+        <div class="back-list">
+          <a class="back-link" href="/zh-tw/behemoths/">返回巨獸列表</a>
+          <a class="back-link" href="/zh-tw/">返回首頁</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer" role="contentinfo" aria-label="頁尾">
+    <div class="footer-link-strip">
+      <div class="container footer-link-strip__inner">
+        <div class="footer-link-strip__actions">
+          <a class="countdown-link" href="https://discord.gg/EjqWhTPyaEjqWhTPya" target="_blank" rel="noopener noreferrer">Discord</a>
+          <a class="countdown-link" href="/zh-tw/codes/">禮包碼</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <div>
+          <div class="footer-brand">TilesSurvive.net</div>
+          <p class="footer-desc">
+            這是為了整理 Tiles Survive 相關資料並幫助玩家更容易查找資訊而建立的
+            Tiles Survive 非官方粉絲網站。
+          </p>
+        </div>
+
+        <nav class="footer-links" aria-label="頁尾選單">
+          <a href="/zh-tw/about/">介紹</a>
+          <a href="/zh-tw/privacy/">隱私</a>
+        </nav>
+      </div>
+
+      <div class="footer-copy">
+        © 2026 TilesSurvive.net. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <nav class="mobile-bottom-nav" aria-label="手機快速移動">
+    <div class="mobile-bottom-nav__inner">
+      <a class="mobile-bottom-nav__item" href="/zh-tw/" data-mobile-nav="home">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M4 10.5 12 4l8 6.5V20a1 1 0 0 1-1 1h-4v-6H9v6H5a1 1 0 0 1-1-1v-9.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+        </svg>
+        <span class="mobile-bottom-nav__label">首頁</span>
+      </a>
+
+      <a class="mobile-bottom-nav__item" href="/zh-tw/behemoths/" data-mobile-nav="behemoths">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 4c3.5 0 6.5 2.6 7 6.1.5 3.7-1.7 7.4-5.6 9.4l-1.4.7-1.4-.7C6.7 17.5 4.5 13.8 5 10.1 5.5 6.6 8.5 4 12 4Z" stroke="currentColor" stroke-width="1.8"/>
+          <path d="M9 12h6M12 9v6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+        <span class="mobile-bottom-nav__label">巨獸</span>
+      </a>
+
+      <a class="mobile-bottom-nav__item" href="/zh-tw/guides/" data-mobile-nav="guides">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M6 5.5A2.5 2.5 0 0 1 8.5 3H19v16H8.5A2.5 2.5 0 0 0 6 21V5.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+          <path d="M6 6h11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+        <span class="mobile-bottom-nav__label">指南</span>
+      </a>
+
+      <a class="mobile-bottom-nav__item" href="/zh-tw/codes/" data-mobile-nav="codes">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M8 7.5 5 12l3 4.5h8L19 12l-3-4.5H8Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+          <path d="M9.5 9.5h.01M14.5 14.5h.01M14.8 9.2l-5.6 5.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+        <span class="mobile-bottom-nav__label">代碼</span>
+      </a>
+    </div>
+  </nav>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var html = document.documentElement;
+      var body = document.body;
+      var drawer = document.getElementById('mobileDrawer');
+      var backdrop = document.getElementById('backdrop');
+      var btnOpen = document.getElementById('menuToggle');
+      var btnClose = document.getElementById('btnClose');
+
+      function openDrawer(){
+        html.classList.add('is-open');
+        body.classList.add('no-scroll');
+        backdrop.hidden = false;
+        drawer.setAttribute('aria-hidden', 'false');
+        btnOpen && btnOpen.setAttribute('aria-expanded', 'true');
+      }
+
+      function closeDrawer(){
+        html.classList.remove('is-open');
+        body.classList.remove('no-scroll');
+        backdrop.hidden = true;
+        drawer.setAttribute('aria-hidden', 'true');
+        btnOpen && btnOpen.setAttribute('aria-expanded', 'false');
+      }
+
+      btnOpen && btnOpen.addEventListener('click', openDrawer);
+      btnClose && btnClose.addEventListener('click', closeDrawer);
+      backdrop && backdrop.addEventListener('click', closeDrawer);
+
+      window.addEventListener('keydown', function(e){
+        if (e.key === 'Escape') closeDrawer();
+      });
+
+      var drawerLinks = drawer ? drawer.querySelectorAll('a') : [];
+      Array.prototype.forEach.call(drawerLinks, function(link){
+        link.addEventListener('click', closeDrawer);
+      });
+    });
+  </script>
+
+  <script>
+    (function(){
+      var LANGS = [
+        { code:'ko', label:'KO' },
+        { code:'en', label:'EN' },
+        { code:'ja', label:'JA' },
+        { code:'ru', label:'RU' },
+        { code:'zh-tw', label:'TW' }
+      ];
+
+      function currentLang(){
+        return 'zh-tw';
+      }
+
+      function render(root){
+        if (!root) return;
+        var cur = currentLang();
+        root.innerHTML = LANGS.map(function(lang){
+          return '<button type="button" class="lang-pill" data-lang="' + lang.code + '" aria-current="' + (lang.code === cur ? 'true' : 'false') + '">' + lang.label + '</button>';
+        }).join('');
+      }
+
+      function bind(root){
+        if (!root) return;
+        root.addEventListener('click', function(e){
+          var btn = e.target.closest('.lang-pill[data-lang]');
+          if (!btn) return;
+          e.preventDefault();
+          window.TS_LANG.apply(btn.getAttribute('data-lang'));
+        });
+      }
+
+      document.addEventListener('DOMContentLoaded', function(){
+        var header = document.getElementById('langDropdownHeader');
+        var drawer = document.getElementById('langDropdownDrawer');
+        render(header);
+        render(drawer);
+        bind(header);
+        bind(drawer);
+      });
+    })();
+  </script>
+
+  <script>
+    (function(){
+      function updateBottomNavActive(){
+        var pathname = location.pathname.toLowerCase();
+        var items = document.querySelectorAll('.mobile-bottom-nav__item');
+
+        Array.prototype.forEach.call(items, function(item){
+          item.classList.remove('is-active');
+          item.removeAttribute('aria-current');
+
+          var key = item.getAttribute('data-mobile-nav');
+          var active = false;
+
+          if (key === 'home') {
+            active = pathname === '/zh-tw/' || pathname === '/zh-tw';
+          } else if (key === 'behemoths') {
+            active = pathname.indexOf('/zh-tw/behemoths') === 0;
+          } else if (key === 'guides') {
+            active = pathname.indexOf('/zh-tw/guides') === 0;
+          } else if (key === 'codes') {
+            active = pathname.indexOf('/zh-tw/codes') === 0;
+          }
+
+          if (active) {
+            item.classList.add('is-active');
+            item.setAttribute('aria-current', 'page');
+          }
+        });
+      }
+
+      document.addEventListener('DOMContentLoaded', updateBottomNavActive);
+    })();
+  </script>
+</body>
+</html>

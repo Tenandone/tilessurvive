@@ -1,0 +1,1531 @@
+<!doctype html>
+<html lang="zh-Hant" data-lang="zh-tw">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>伊娃 | 寒霜啟示錄 英雄 | TilesSurvive.net</title>
+  <base href="/" />
+
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="description" content="寒霜啟示錄英雄伊娃詳細頁面。可一眼查看英雄介紹、英雄陣營、戰鬥特性、最大等級與星級屬性、星級加成與技能資訊。" />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+  <meta name="author" content="TilesSurvive.net" />
+
+  <link rel="canonical" href="https://tilessurvive.net/zh-tw/heroes/eva/" />
+  <link rel="alternate" hreflang="x-default" href="https://tilessurvive.net/en/heroes/eva/" />
+  <link rel="alternate" hreflang="ko" href="https://tilessurvive.net/ko/heroes/eva/" />
+  <link rel="alternate" hreflang="en" href="https://tilessurvive.net/en/heroes/eva/" />
+  <link rel="alternate" hreflang="ja" href="https://tilessurvive.net/ja/heroes/eva/" />
+  <link rel="alternate" hreflang="ru" href="https://tilessurvive.net/ru/heroes/eva/" />
+  <link rel="alternate" hreflang="zh-TW" href="https://tilessurvive.net/zh-tw/heroes/eva/" />
+
+  <meta property="og:site_name" content="TilesSurvive.net" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="伊娃 | 寒霜啟示錄 英雄 | TilesSurvive.net" />
+  <meta property="og:description" content="整理寒霜啟示錄英雄伊娃的介紹、英雄陣營、戰鬥特性、技能與星級加成的詳細頁面" />
+  <meta property="og:url" content="https://tilessurvive.net/zh-tw/heroes/eva/" />
+  <meta property="og:image" content="https://tilessurvive.net/img/heroes/eva-cover.webp" />
+  <meta property="og:locale" content="zh_TW" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="伊娃 | 寒霜啟示錄 英雄 | TilesSurvive.net" />
+  <meta name="twitter:description" content="整理寒霜啟示錄英雄伊娃的介紹、英雄陣營、戰鬥特性、技能與星級加成的詳細頁面" />
+  <meta name="twitter:image" content="https://tilessurvive.net/img/heroes/eva-cover.webp" />
+
+  <link rel="preload" as="image" href="/img/logo-tilessurvive.png" />
+  <link rel="preload" as="image" href="/img/heroes/eva.webp" />
+
+  <style>
+    :root{
+      --bg:#f5f7fb;
+      --surface:#ffffff;
+      --surface-soft:#f8fafc;
+      --line:#e5e7eb;
+      --line-strong:#cbd5e1;
+      --text:#111827;
+      --text-soft:#64748b;
+      --text-faint:#94a3b8;
+      --title:#0f172a;
+      --accent:#111827;
+      --accent-soft:#eef2f7;
+      --green:#16a34a;
+      --container:min(1180px, calc(100% - 32px));
+      --radius-lg:28px;
+      --radius-md:18px;
+      --radius-sm:12px;
+      --shadow:0 16px 40px rgba(15,23,42,.06);
+    }
+
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;overflow-x:hidden}
+    body{
+      background:var(--bg);
+      color:var(--text);
+      font-family:"Pretendard","Noto Sans TC","PingFang TC","Microsoft JhengHei","Heiti TC",sans-serif;
+      line-height:1.6;
+      padding-bottom:calc(76px + env(safe-area-inset-bottom, 0px));
+    }
+
+    a{color:inherit;text-decoration:none}
+    img{display:block;max-width:100%}
+    button{font:inherit}
+
+    .container{
+      width:var(--container);
+      margin:0 auto;
+    }
+
+    .skip-link{
+      position:absolute;
+      left:12px;
+      top:-44px;
+      z-index:3000;
+      background:#111827;
+      color:#fff;
+      padding:10px 14px;
+      border-radius:10px;
+      font-weight:800;
+    }
+    .skip-link:focus{top:12px}
+
+    .site-header{
+      position:sticky;
+      top:0;
+      z-index:1500;
+      background:rgba(255,255,255,.92);
+      backdrop-filter:saturate(160%) blur(12px);
+      border-bottom:1px solid rgba(15,23,42,.06);
+    }
+
+    .nav-bar{
+      min-height:68px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+    }
+
+    .nav-left{
+      display:flex;
+      align-items:center;
+      gap:20px;
+      min-width:0;
+      flex:1 1 auto;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      min-width:0;
+      color:#111827;
+    }
+
+    .brand-logo{
+      width:30px;
+      height:30px;
+      border-radius:9px;
+      flex:0 0 auto;
+      background:#e5e7eb;
+      object-fit:cover;
+    }
+
+    .brand-text{
+      display:flex;
+      flex-direction:column;
+      gap:2px;
+      min-width:0;
+      line-height:1.1;
+    }
+
+    .brand-title{
+      font-size:16px;
+      font-weight:900;
+      white-space:nowrap;
+    }
+
+    .brand-sub{
+      font-size:12px;
+      color:#6b7280;
+      white-space:nowrap;
+    }
+
+    .nav{
+      display:flex;
+      align-items:center;
+      gap:4px;
+      min-width:0;
+      flex-wrap:wrap;
+    }
+
+    .nav a{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:40px;
+      padding:0 12px;
+      border-radius:999px;
+      color:#475569;
+      font-size:14px;
+      font-weight:800;
+      white-space:nowrap;
+    }
+
+    .nav a:hover,
+    .nav a:focus,
+    .nav a[aria-current="page"]{
+      background:#eef2f7;
+      color:#111827;
+      outline:none;
+    }
+
+    .nav-right{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      flex:0 0 auto;
+    }
+
+    .lang-pills{
+      display:flex;
+      align-items:center;
+      gap:8px;
+      flex-wrap:wrap;
+    }
+
+    .lang-pill{
+      appearance:none;
+      border:1px solid var(--line);
+      background:#fff;
+      color:#6b7280;
+      padding:8px 10px;
+      border-radius:999px;
+      font:13px/1.1 system-ui,-apple-system,Segoe UI,Roboto,"Noto Sans",Arial;
+      cursor:pointer;
+      white-space:nowrap;
+      user-select:none;
+    }
+
+    .lang-pill:hover{color:#111827}
+    .lang-pill[aria-current="true"]{
+      color:#111827;
+      font-weight:900;
+      border-color:var(--line-strong);
+      background:#f8fafc;
+    }
+
+    .hamburger{
+      display:none;
+      appearance:none;
+      border:1px solid var(--line);
+      background:#fff;
+      color:#111827;
+      width:42px;
+      height:42px;
+      border-radius:12px;
+      font-size:20px;
+      cursor:pointer;
+      flex:0 0 auto;
+    }
+
+    .countdown-bar-wrap{
+      background:#fff;
+      border-bottom:1px solid rgba(15,23,42,.06);
+    }
+
+    .countdown-bar{
+      min-height:52px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      padding:10px 0;
+    }
+
+    .countdown-bar__left{
+      min-width:0;
+      display:flex;
+      align-items:center;
+      gap:10px;
+      flex:1 1 auto;
+    }
+
+    .countdown-badge{
+      flex:0 0 auto;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:28px;
+      padding:0 10px;
+      border-radius:999px;
+      background:#111827;
+      color:#fff;
+      font-size:12px;
+      font-weight:900;
+    }
+
+    .countdown-copy{
+      min-width:0;
+      font-size:14px;
+      color:#334155;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+    }
+
+    .countdown-copy strong{
+      color:#111827;
+      font-weight:900;
+    }
+
+    .countdown-bar__actions{
+      flex:0 0 auto;
+      display:flex;
+      align-items:center;
+      gap:8px;
+      flex-wrap:nowrap;
+    }
+
+    .countdown-link{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:34px;
+      padding:0 12px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      background:#f8fafc;
+      font-size:13px;
+      font-weight:800;
+      color:#111827;
+      white-space:nowrap;
+      flex:0 0 auto;
+    }
+
+    .countdown-link:hover,
+    .countdown-link:focus{
+      background:#eef2f7;
+      outline:none;
+    }
+
+    .page{
+      padding:24px 0 40px;
+    }
+
+    .breadcrumb{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      align-items:center;
+      margin-bottom:16px;
+      color:var(--text-soft);
+      font-size:13px;
+      font-weight:700;
+    }
+
+    .breadcrumb a{color:#475569}
+    .breadcrumb span[aria-current="page"]{color:#111827}
+
+    .hero{
+      background:linear-gradient(180deg,#ffffff,#f8fafc);
+      border:1px solid var(--line);
+      border-radius:var(--radius-lg);
+      padding:28px 24px;
+      box-shadow:var(--shadow);
+    }
+
+    .hero-grid{
+      display:grid;
+      grid-template-columns:360px minmax(0,1fr);
+      gap:24px;
+      align-items:center;
+    }
+
+    .hero-media{
+      position:relative;
+      background:#eaf2fb;
+      overflow:hidden;
+      aspect-ratio:1 / 1;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:22px;
+      clip-path:polygon(
+        25% 6.7%,
+        75% 6.7%,
+        93.3% 50%,
+        75% 93.3%,
+        25% 93.3%,
+        6.7% 50%
+      );
+    }
+
+    .hero-media::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      border:1px solid var(--line);
+      clip-path:polygon(
+        25% 6.7%,
+        75% 6.7%,
+        93.3% 50%,
+        75% 93.3%,
+        25% 93.3%,
+        6.7% 50%
+      );
+      pointer-events:none;
+    }
+
+    .hero-media img{
+      width:100%;
+      height:100%;
+      object-fit:contain;
+      position:relative;
+      z-index:1;
+    }
+
+    .eyebrow{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:30px;
+      padding:0 10px;
+      border-radius:999px;
+      background:var(--accent-soft);
+      color:#334155;
+      font-size:12px;
+      font-weight:900;
+      margin-bottom:12px;
+    }
+
+    .hero-title-row{
+      display:flex;
+      flex-wrap:wrap;
+      align-items:center;
+      gap:10px;
+      margin-bottom:8px;
+    }
+
+    .hero h1{
+      margin:0;
+      font-size:40px;
+      line-height:1.12;
+      letter-spacing:-.04em;
+      color:var(--title);
+    }
+
+    .rarity-badge,
+    .role-badge{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:32px;
+      padding:0 12px;
+      border-radius:999px;
+      font-size:13px;
+      font-weight:900;
+      border:1px solid var(--line);
+      background:#fff;
+    }
+
+    .hero-sub{
+      margin:0;
+      color:var(--text-soft);
+      font-size:15px;
+    }
+
+    .hero-summary{
+      margin-top:16px;
+      padding:14px 16px;
+      border:1px solid var(--line);
+      border-radius:16px;
+      background:var(--surface-soft);
+      color:#334155;
+      font-size:14px;
+      font-weight:700;
+    }
+
+    .summary-grid{
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:12px;
+      margin-top:18px;
+    }
+
+    .summary-card{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:16px;
+      padding:14px;
+      text-align:center;
+    }
+
+    .summary-card .label{
+      font-size:12px;
+      font-weight:800;
+      color:var(--text-soft);
+      margin-bottom:6px;
+    }
+
+    .summary-card .value{
+      font-size:18px;
+      font-weight:900;
+      color:var(--title);
+      line-height:1.3;
+    }
+
+    .section{
+      margin-top:18px;
+      background:var(--surface);
+      border:1px solid var(--line);
+      border-radius:var(--radius-lg);
+      padding:24px;
+      box-shadow:var(--shadow);
+    }
+
+    .section-head{
+      margin-bottom:18px;
+      text-align:center;
+    }
+
+    .section-head h2{
+      margin:0;
+      font-size:28px;
+      line-height:1.2;
+      letter-spacing:-.03em;
+      color:var(--title);
+      text-align:center;
+    }
+
+    .story-box{
+      padding:18px;
+      border:1px solid var(--line);
+      border-radius:18px;
+      background:#fbfdff;
+      color:#334155;
+      font-size:15px;
+      text-align:left;
+    }
+
+    .story-box p{
+      margin:0 0 14px;
+    }
+
+    .story-box p:last-child{
+      margin-bottom:0;
+    }
+
+    .info-grid{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:14px;
+    }
+
+    .info-card{
+      border:1px solid var(--line);
+      border-radius:18px;
+      background:#fff;
+      padding:18px;
+      text-align:center;
+    }
+
+    .info-card h3{
+      margin:0 0 8px;
+      font-size:20px;
+      line-height:1.25;
+      letter-spacing:-.02em;
+      color:var(--title);
+      text-align:center;
+    }
+
+    .info-card p{
+      margin:0;
+      color:#334155;
+      font-size:15px;
+      font-weight:700;
+      text-align:center;
+    }
+
+    .stat-grid{
+      display:grid;
+      grid-template-columns:repeat(4,minmax(0,1fr));
+      gap:12px;
+    }
+
+    .stat-card{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:18px;
+      padding:16px;
+      text-align:center;
+    }
+
+    .stat-card .k{
+      font-size:13px;
+      color:var(--text-soft);
+      font-weight:800;
+      margin-bottom:6px;
+      text-align:center;
+    }
+
+    .stat-card .v{
+      font-size:28px;
+      color:var(--title);
+      font-weight:900;
+      line-height:1.15;
+      text-align:center;
+    }
+
+    .table-wrap{
+      border:1px solid var(--line);
+      border-radius:18px;
+      overflow:hidden;
+      background:#fff;
+    }
+
+    table{
+      width:100%;
+      border-collapse:collapse;
+      table-layout:fixed;
+      font-size:14px;
+    }
+
+    thead tr{
+      background:linear-gradient(to right,#f7f7f7,#ececec);
+      border-bottom:2px solid #d0d0d0;
+    }
+
+    th,td{
+      padding:14px 12px;
+      border-bottom:1px solid #eceff3;
+      text-align:center;
+      vertical-align:middle;
+      word-break:keep-all;
+    }
+
+    th{
+      text-align:center;
+      font-weight:900;
+      color:var(--title);
+    }
+
+    td:first-child{
+      font-weight:800;
+      color:var(--title);
+      width:30%;
+      text-align:center;
+    }
+
+    tbody tr:nth-child(even){background:#fafafa}
+    tbody tr:hover{background:#f0faff;transition:.2s}
+
+    .ability-grid{
+      display:grid;
+      grid-template-columns:repeat(4,minmax(0,1fr));
+      gap:14px;
+    }
+
+    .ability-card{
+      border:1px solid var(--line);
+      border-radius:18px;
+      background:#fff;
+      padding:16px;
+      text-align:center;
+    }
+
+    .ability-card__thumb{
+      width:72px;
+      height:72px;
+      border-radius:18px;
+      overflow:hidden;
+      background:#edf2f7;
+      border:1px solid var(--line);
+      margin:0 auto 14px;
+    }
+
+    .ability-card__thumb img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+    }
+
+    .ability-card h3{
+      margin:0 0 8px;
+      font-size:20px;
+      line-height:1.25;
+      letter-spacing:-.02em;
+      color:var(--title);
+      text-align:center;
+    }
+
+    .ability-level{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:28px;
+      padding:0 10px;
+      border-radius:999px;
+      background:#eefbf1;
+      border:1px solid #d7f0dc;
+      color:#166534;
+      font-size:12px;
+      font-weight:900;
+      margin-bottom:10px;
+    }
+
+    .ability-tag{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:28px;
+      padding:0 10px;
+      border-radius:999px;
+      background:#f8fafc;
+      border:1px solid var(--line);
+      color:#334155;
+      font-size:12px;
+      font-weight:900;
+      margin-bottom:10px;
+      margin-left:6px;
+      vertical-align:middle;
+    }
+
+    .ability-card p{
+      margin:0;
+      font-size:14px;
+      color:#334155;
+      text-align:center;
+    }
+
+    .related-links{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      justify-content:center;
+    }
+
+    .pill-link{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:38px;
+      padding:0 14px;
+      border:1px solid var(--line);
+      border-radius:999px;
+      background:#f8fafc;
+      font-size:13px;
+      font-weight:800;
+      color:#111827;
+    }
+
+    .site-footer{
+      margin-top:26px;
+      border-top:1px solid var(--line);
+      background:#fff;
+    }
+
+    .footer-link-strip{
+      padding:14px 0;
+      border-bottom:1px solid #eef2f7;
+    }
+
+    .footer-link-strip__inner{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      flex-wrap:wrap;
+      text-align:center;
+    }
+
+    .footer-link-strip__actions{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      flex-wrap:wrap;
+    }
+
+    .footer-inner{padding:24px 0 34px}
+    .footer-top{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      gap:18px;
+      text-align:center;
+    }
+
+    .footer-brand{
+      font-size:18px;
+      font-weight:900;
+      color:#111827;
+    }
+
+    .footer-desc{
+      margin:8px 0 0;
+      color:var(--text-faint);
+      font-size:14px;
+      max-width:720px;
+    }
+
+    .footer-links{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:10px;
+    }
+
+    .footer-links a{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:40px;
+      padding:0 14px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      background:#f8fafc;
+      font-size:14px;
+      font-weight:800;
+    }
+
+    .footer-copy{
+      margin-top:18px;
+      padding-top:18px;
+      border-top:1px solid #eef2f7;
+      color:var(--text-faint);
+      font-size:13px;
+      text-align:center;
+    }
+
+    .mobile-bottom-nav{
+      position:fixed;
+      left:0;
+      right:0;
+      bottom:0;
+      z-index:1400;
+      display:none;
+      background:rgba(255,255,255,.96);
+      backdrop-filter:saturate(160%) blur(10px);
+      border-top:1px solid rgba(15,23,42,.08);
+      padding:8px 10px calc(8px + env(safe-area-inset-bottom, 0px));
+    }
+
+    .mobile-bottom-nav__inner{
+      display:grid;
+      grid-template-columns:repeat(4,minmax(0,1fr));
+      gap:6px;
+      max-width:640px;
+      margin:0 auto;
+    }
+
+    .mobile-bottom-nav__item{
+      min-width:0;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      gap:4px;
+      padding:8px 4px 7px;
+      border-radius:12px;
+      color:#6b7280;
+    }
+
+    .mobile-bottom-nav__item svg{
+      width:20px;
+      height:20px;
+      display:block;
+      flex:0 0 auto;
+    }
+
+    .mobile-bottom-nav__label{
+      font-size:11px;
+      line-height:1.1;
+      font-weight:700;
+      letter-spacing:-0.01em;
+      white-space:nowrap;
+    }
+
+    .mobile-bottom-nav__item.is-active,
+    .mobile-bottom-nav__item[aria-current="page"]{
+      color:#111827;
+      background:#f3f4f6;
+    }
+
+    .backdrop{
+      position:fixed;
+      inset:0;
+      background:rgba(15,23,42,.38);
+      z-index:1600;
+    }
+
+    .drawer{
+      position:fixed;
+      top:0;
+      right:0;
+      bottom:0;
+      width:min(78vw,360px);
+      background:#fff;
+      box-shadow:-16px 0 40px rgba(15,23,42,.15);
+      z-index:1700;
+      overflow-y:auto;
+      transform:translateX(100%);
+      transition:transform .25s ease;
+    }
+
+    html.is-open .drawer{transform:translateX(0)}
+
+    .drawer header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:16px;
+      border-bottom:1px solid var(--line);
+      position:sticky;
+      top:0;
+      background:#fff;
+      z-index:2;
+    }
+
+    .drawer .section-drawer{padding:16px}
+    .drawer .nav-list{display:flex;flex-direction:column;gap:4px}
+    .drawer .nav-list a{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      width:100%;
+      min-height:44px;
+      padding:0 12px;
+      border-radius:12px;
+      font-weight:800;
+      color:#111827;
+      background:#f8fafc;
+    }
+
+    .lang-pills--drawer{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:8px;
+    }
+
+    .lang-pills--drawer .lang-pill{
+      width:100%;
+      display:flex;
+      justify-content:center;
+    }
+
+    .drawer-dotrule{
+      width:calc(100% - 32px);
+      margin:0 auto;
+      border-top:1px dashed rgba(15,23,42,.16);
+    }
+
+    .drawer-quick-stack{
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+      margin-top:14px;
+    }
+
+    .drawer-quick-pill{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      min-height:44px;
+      border:1px solid #dbe2ea;
+      border-radius:999px;
+      font-weight:800;
+      background:#fff;
+    }
+
+    @media (max-width:980px){
+      .nav{display:none}
+      .hamburger{display:inline-flex;align-items:center;justify-content:center}
+      .nav-right{display:none}
+      .mobile-bottom-nav{display:block}
+      .hero-grid{grid-template-columns:1fr}
+      .summary-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .info-grid{grid-template-columns:1fr}
+      .stat-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .ability-grid{grid-template-columns:1fr}
+    }
+
+    @media (max-width:640px){
+      .container{width:min(100% - 24px,1180px)}
+      .brand-title{font-size:14px}
+      .brand-sub{display:none}
+      .hero{padding:22px 18px}
+      .hero h1{font-size:30px}
+      .section{padding:20px 18px}
+      .section-head h2{font-size:24px}
+      .summary-grid,.stat-grid{grid-template-columns:1fr}
+      .hero-title-row{flex-direction:column;align-items:flex-start}
+      .countdown-bar{gap:8px}
+      .countdown-bar__left{gap:8px}
+      .countdown-copy{
+        font-size:13px;
+        white-space:nowrap;
+        overflow:hidden;
+        text-overflow:ellipsis;
+      }
+      .countdown-link{
+        min-height:32px;
+        padding:0 10px;
+        font-size:12px;
+      }
+      .footer-link-strip__inner{flex-direction:column}
+    }
+
+    html.is-open body,
+    body.no-scroll{overflow:hidden}
+  </style>
+
+  <script id="ts-website-schema" type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "name":"TilesSurvive.net",
+    "url":"https://tilessurvive.net/",
+    "inLanguage":"zh-tw",
+    "description":"整理寒霜啟示錄資料、指南、賽季與代碼的資料中心",
+    "potentialAction":{
+      "@type":"SearchAction",
+      "target":"https://tilessurvive.net/zh-tw/search/?q={search_term_string}",
+      "query-input":"required name=search_term_string"
+    }
+  }
+  </script>
+
+  <script id="ts-breadcrumb-schema" type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {
+        "@type":"ListItem",
+        "position":1,
+        "name":"首頁",
+        "item":"https://tilessurvive.net/zh-tw/"
+      },
+      {
+        "@type":"ListItem",
+        "position":2,
+        "name":"英雄",
+        "item":"https://tilessurvive.net/zh-tw/heroes/"
+      },
+      {
+        "@type":"ListItem",
+        "position":3,
+        "name":"伊娃",
+        "item":"https://tilessurvive.net/zh-tw/heroes/eva/"
+      }
+    ]
+  }
+  </script>
+
+  <script>
+    (function(){
+      function normalizeLang(code){
+        var low = String(code || '').trim().toLowerCase();
+        if (low === 'ko') return 'ko';
+        if (low === 'en') return 'en';
+        if (low === 'ja') return 'ja';
+        if (low === 'ru') return 'ru';
+        if (low === 'zh-tw' || low === 'zh_tw' || low === 'tw') return 'zh-tw';
+        return 'zh-tw';
+      }
+
+      function pathWithLang(lang, path){
+        return '/' + lang + path;
+      }
+
+      function applyLang(lang){
+        lang = normalizeLang(lang);
+        var currentPath = location.pathname.replace(/^\/(ko|en|ja|ru|zh-tw)(\/|$)/i, '/');
+        if (currentPath === '') currentPath = '/';
+        location.href = pathWithLang(lang, currentPath);
+      }
+
+      window.TS_LANG = {
+        normalize: normalizeLang,
+        apply: applyLang
+      };
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">跳至正文</a>
+
+  <header class="site-header" role="banner">
+    <div class="container nav-bar">
+      <div class="nav-left">
+        <a class="brand" href="/zh-tw/" aria-label="TilesSurvive.net 首頁">
+          <img class="brand-logo" src="/img/logo-tilessurvive.png" alt="TilesSurvive.net" width="30" height="30" />
+          <span class="brand-text">
+            <span class="brand-title">TilesSurvive.net</span>
+            <span class="brand-sub">Tiles Survive Data / Guides / Codes / Tools Hub</span>
+          </span>
+        </a>
+
+        <nav class="nav" id="primaryNav" role="navigation" aria-label="頂部選單">
+          <a href="/zh-tw/buildings/">建築</a>
+          <a href="/zh-tw/heroes/" aria-current="page">英雄</a>
+          <a href="/zh-tw/behemoths/">巨獸</a>
+          <a href="/zh-tw/database/">資料庫</a>
+          <a href="/zh-tw/guides/">指南</a>
+          <a href="/zh-tw/seasons/">賽季</a>
+          <a href="/zh-tw/codes/">代碼</a>
+        </nav>
+      </div>
+
+      <button class="hamburger" id="menuToggle" aria-label="開啟選單" aria-controls="mobileDrawer" aria-expanded="false">☰</button>
+
+      <div class="nav-right">
+        <div id="langDropdownHeader" class="lang-pills" aria-label="語言選擇"></div>
+      </div>
+    </div>
+  </header>
+
+  <section class="countdown-bar-wrap" aria-label="代碼倒數">
+    <div class="container countdown-bar">
+      <div class="countdown-bar__left">
+        <span class="countdown-badge">代碼</span>
+        <div class="countdown-copy">
+          <strong>寒霜啟示錄 代碼倒數</strong>
+        </div>
+      </div>
+      <div class="countdown-bar__actions">
+        <a class="countdown-link" href="/zh-tw/codes/">最新代碼</a>
+        <a class="countdown-link" href="/zh-tw/guides/gift-code-how-to-use/">兌換方法</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="backdrop" id="backdrop" hidden></div>
+
+  <aside class="drawer" id="mobileDrawer" aria-hidden="true" aria-label="手機選單">
+    <header>
+      <strong>Menu</strong>
+      <button id="btnClose" aria-label="關閉" style="background:none;border:0;font-size:20px;cursor:pointer">✕</button>
+    </header>
+
+    <div class="section-drawer">
+      <div id="langDropdownDrawer" class="lang-pills lang-pills--drawer" aria-label="語言選擇"></div>
+    </div>
+
+    <div class="drawer-dotrule" aria-hidden="true"></div>
+
+    <div class="section-drawer">
+      <div class="nav-list" role="navigation" aria-label="手機選單列表">
+        <a href="/zh-tw/buildings/">建築</a>
+        <a href="/zh-tw/heroes/">英雄</a>
+        <a href="/zh-tw/behemoths/">巨獸</a>
+        <a href="/zh-tw/database/">資料庫</a>
+        <a href="/zh-tw/guides/">指南</a>
+        <a href="/zh-tw/seasons/">賽季</a>
+        <a href="/zh-tw/codes/">代碼</a>
+      </div>
+
+      <div class="drawer-quick-stack">
+        <a class="drawer-quick-pill js-drawer-close" href="https://discord.gg/EjqWhTPyaEjqWhTPya" target="_blank" rel="noopener noreferrer">Discord</a>
+        <a class="drawer-quick-pill js-drawer-close" href="/zh-tw/codes/">禮包碼</a>
+      </div>
+    </div>
+  </aside>
+
+  <main class="page" id="main">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="麵包屑">
+        <a href="/zh-tw/">首頁</a>
+        <span>›</span>
+        <a href="/zh-tw/heroes/">英雄</a>
+        <span>›</span>
+        <span aria-current="page">伊娃</span>
+      </nav>
+
+      <section class="hero">
+        <div class="hero-grid">
+          <div class="hero-media">
+            <img src="/img/heroes/eva.webp" alt="寒霜啟示錄 英雄 伊娃" />
+          </div>
+
+          <div>
+            <div class="eyebrow">英雄詳情</div>
+
+            <div class="hero-title-row">
+              <h1>伊娃</h1>
+              <span class="rarity-badge">SR</span>
+              <span class="role-badge">近距離</span>
+            </div>
+
+            <p class="hero-sub">
+              寒霜啟示錄的SR近距離英雄。隸屬於荒野陣營，擅長連續高火力攻擊，同時也具備提升採集速度與強化基礎屬性的能力，是偏進攻型的實用英雄。
+            </p>
+
+            <div class="hero-summary">
+              以最大等級與星級全滿為基準，可提供出征上限 +20.0K、英雄攻擊力 +40.11K、英雄防禦力 +8.02K、英雄生命值 +2.67M。
+            </div>
+
+            <div class="summary-grid">
+              <div class="summary-card">
+                <div class="label">等級</div>
+                <div class="value">SR</div>
+              </div>
+              <div class="summary-card">
+                <div class="label">定位</div>
+                <div class="value">近距離</div>
+              </div>
+              <div class="summary-card">
+                <div class="label">最大等級</div>
+                <div class="value">150</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <h2>英雄介紹</h2>
+        </div>
+
+        <div class="story-box">
+          <p>
+            伊娃有著在貧民窟中鍛鍊出來的鋼鐵拳頭。她的父親曾是過氣拳擊手，母親則很早就離開人世。十歲時，她就已經明白，想活下去，就只能握緊拳頭、流血到底。
+          </p>
+          <p>
+            她在地下拳賽中保持不敗，名聲逐漸傳進黑幫耳中，最終被組織吸收。那些穿著講究西裝的男人，看著她在地下賭場裡把失敗者踩在腳下，稱她為毒蜂。
+          </p>
+          <p>
+            但他們不知道的是，她把在賭場賺來的分成，全都拿去換成社區拳館裡的沙袋。只要有人敢挑戰她，她也從不介意直接拿起槍——拳頭已經夠硬，但AK顯然更能保證一擊斃命。
+          </p>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <h2>戰鬥特性</h2>
+        </div>
+
+        <div class="info-grid">
+          <article class="info-card">
+            <h3>英雄陣營</h3>
+            <p>荒野</p>
+          </article>
+          <article class="info-card">
+            <h3>戰鬥時兵種</h3>
+            <p>率領近距離部隊</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <h2>最大等級＆星級全滿屬性</h2>
+        </div>
+
+        <div class="stat-grid">
+          <div class="stat-card">
+            <div class="k">出征上限</div>
+            <div class="v">+20.0K</div>
+          </div>
+          <div class="stat-card">
+            <div class="k">英雄攻擊力</div>
+            <div class="v">+40.11K</div>
+          </div>
+          <div class="stat-card">
+            <div class="k">英雄防禦力</div>
+            <div class="v">+8.02K</div>
+          </div>
+          <div class="stat-card">
+            <div class="k">英雄生命值</div>
+            <div class="v">+2.67M</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <h2>星級加成</h2>
+        </div>
+
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>項目</th>
+                <th>內容</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>加成名稱</td>
+                <td>火力壓制★10</td>
+              </tr>
+              <tr>
+                <td>目前追加效果</td>
+                <td>全體英雄防禦力 +160</td>
+              </tr>
+              <tr>
+                <td>生效條件</td>
+                <td>即使未編入隊伍，此追加效果仍然生效</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <h2>技能</h2>
+        </div>
+
+        <div class="ability-grid">
+          <article class="ability-card">
+            <div class="ability-card__thumb">
+              <img src="/img/heroes/skills/eva-skill-1.webp" alt="彈幕之雨" />
+            </div>
+            <span class="ability-level">Lv. 40</span>
+            <span class="ability-tag">戰鬥</span>
+            <h3>彈幕之雨</h3>
+            <p>
+              使用機槍射擊，對敵人造成攻擊力139%的傷害。
+            </p>
+          </article>
+
+          <article class="ability-card">
+            <div class="ability-card__thumb">
+              <img src="/img/heroes/skills/eva-skill-2.webp" alt="火力全開" />
+            </div>
+            <span class="ability-level">Lv. 40</span>
+            <span class="ability-tag">戰鬥</span>
+            <h3>火力全開</h3>
+            <p>
+              朝選定方向的敵人連續攻擊8次，每次造成攻擊力104.25%的傷害。
+            </p>
+          </article>
+
+          <article class="ability-card">
+            <div class="ability-card__thumb">
+              <img src="/img/heroes/skills/eva-skill-3.webp" alt="高速採集" />
+            </div>
+            <span class="ability-level">Lv. 40</span>
+            <span class="ability-tag">探索 / 內政</span>
+            <h3>高速採集</h3>
+            <p>
+              全體效果：採集技術提升，採集速度提高60%。
+            </p>
+          </article>
+
+          <article class="ability-card">
+            <div class="ability-card__thumb">
+              <img src="/img/heroes/skills/eva-skill-4.webp" alt="鋼鐵之軀" />
+            </div>
+            <span class="ability-level">Lv. 3</span>
+            <span class="ability-tag">被動</span>
+            <h3>鋼鐵之軀</h3>
+            <p>
+              英雄的額外效果提高20%。
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <h2>相關連結</h2>
+        </div>
+
+        <div class="related-links">
+          <a class="pill-link" href="/zh-tw/database/hero-star/">英雄星級表</a>
+          <a class="pill-link" href="/zh-tw/heroes/">英雄列表</a>
+          <a class="pill-link" href="/zh-tw/database/">資料庫列表</a>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer" role="contentinfo" aria-label="頁尾">
+    <div class="footer-link-strip">
+      <div class="container footer-link-strip__inner">
+        <div class="footer-link-strip__actions">
+          <a class="countdown-link" href="https://discord.gg/EjqWhTPyaEjqWhTPya" target="_blank" rel="noopener noreferrer">Discord</a>
+          <a class="countdown-link" href="/zh-tw/codes/">禮包碼</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <div>
+          <div class="footer-brand">TilesSurvive.net</div>
+          <p class="footer-desc">
+            本站為整理寒霜啟示錄相關資訊、協助玩家更快上手而建立的
+            寒霜啟示錄非官方粉絲網站。
+          </p>
+        </div>
+
+        <nav class="footer-links" aria-label="頁尾選單">
+          <a href="/zh-tw/about/">介紹</a>
+          <a href="/zh-tw/privacy/">隱私權</a>
+        </nav>
+      </div>
+
+      <div class="footer-copy">
+        © 2026 TilesSurvive.net. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <nav class="mobile-bottom-nav" aria-label="手機快速導覽">
+    <div class="mobile-bottom-nav__inner">
+      <a class="mobile-bottom-nav__item" href="/zh-tw/" data-mobile-nav="home">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M4 10.5 12 4l8 6.5V20a1 1 0 0 1-1 1h-4v-6H9v6H5a1 1 0 0 1-1-1v-9.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+        </svg>
+        <span class="mobile-bottom-nav__label">首頁</span>
+      </a>
+
+      <a class="mobile-bottom-nav__item" href="/zh-tw/heroes/" data-mobile-nav="heroes">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 12a4 4 0 1 0-4-4 4 4 0 0 0 4 4Zm-7 8a7 7 0 0 1 14 0" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="mobile-bottom-nav__label">英雄</span>
+      </a>
+
+      <a class="mobile-bottom-nav__item" href="/zh-tw/guides/" data-mobile-nav="guides">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M6 5.5A2.5 2.5 0 0 1 8.5 3H19v16H8.5A2.5 2.5 0 0 0 6 21V5.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+          <path d="M6 6h11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+        <span class="mobile-bottom-nav__label">指南</span>
+      </a>
+
+      <a class="mobile-bottom-nav__item" href="/zh-tw/codes/" data-mobile-nav="codes">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M8 7.5 5 12l3 4.5h8L19 12l-3-4.5H8Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+          <path d="M9.5 9.5h.01M14.5 14.5h.01M14.8 9.2l-5.6 5.6" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+        <span class="mobile-bottom-nav__label">代碼</span>
+      </a>
+    </div>
+  </nav>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var html = document.documentElement;
+      var body = document.body;
+      var drawer = document.getElementById('mobileDrawer');
+      var backdrop = document.getElementById('backdrop');
+      var btnOpen = document.getElementById('menuToggle');
+      var btnClose = document.getElementById('btnClose');
+
+      function openDrawer(){
+        html.classList.add('is-open');
+        body.classList.add('no-scroll');
+        backdrop.hidden = false;
+        drawer.setAttribute('aria-hidden', 'false');
+        btnOpen && btnOpen.setAttribute('aria-expanded', 'true');
+      }
+
+      function closeDrawer(){
+        html.classList.remove('is-open');
+        body.classList.remove('no-scroll');
+        backdrop.hidden = true;
+        drawer.setAttribute('aria-hidden', 'true');
+        btnOpen && btnOpen.setAttribute('aria-expanded', 'false');
+      }
+
+      btnOpen && btnOpen.addEventListener('click', openDrawer);
+      btnClose && btnClose.addEventListener('click', closeDrawer);
+      backdrop && backdrop.addEventListener('click', closeDrawer);
+
+      window.addEventListener('keydown', function(e){
+        if (e.key === 'Escape') closeDrawer();
+      });
+
+      var drawerLinks = drawer ? drawer.querySelectorAll('a') : [];
+      Array.prototype.forEach.call(drawerLinks, function(link){
+        link.addEventListener('click', closeDrawer);
+      });
+    });
+  </script>
+
+  <script>
+    (function(){
+      var LANGS = [
+        { code:'ko', label:'KO' },
+        { code:'en', label:'EN' },
+        { code:'ja', label:'JA' },
+        { code:'ru', label:'RU' },
+        { code:'zh-tw', label:'TW' }
+      ];
+
+      function currentLang(){
+        return 'zh-tw';
+      }
+
+      function render(root){
+        if (!root) return;
+        var cur = currentLang();
+        root.innerHTML = LANGS.map(function(lang){
+          return '<button type="button" class="lang-pill" data-lang="' + lang.code + '" aria-current="' + (lang.code === cur ? 'true' : 'false') + '">' + lang.label + '</button>';
+        }).join('');
+      }
+
+      function bind(root){
+        if (!root) return;
+        root.addEventListener('click', function(e){
+          var btn = e.target.closest('.lang-pill[data-lang]');
+          if (!btn) return;
+          e.preventDefault();
+          window.TS_LANG.apply(btn.getAttribute('data-lang'));
+        });
+      }
+
+      document.addEventListener('DOMContentLoaded', function(){
+        var header = document.getElementById('langDropdownHeader');
+        var drawer = document.getElementById('langDropdownDrawer');
+        render(header);
+        render(drawer);
+        bind(header);
+        bind(drawer);
+      });
+    })();
+  </script>
+
+  <script>
+    (function(){
+      function updateBottomNavActive(){
+        var pathname = location.pathname.toLowerCase();
+        var items = document.querySelectorAll('.mobile-bottom-nav__item');
+
+        Array.prototype.forEach.call(items, function(item){
+          item.classList.remove('is-active');
+          item.removeAttribute('aria-current');
+
+          var key = item.getAttribute('data-mobile-nav');
+          var active = false;
+
+          if (key === 'home') {
+            active = pathname === '/zh-tw/' || pathname === '/zh-tw';
+          } else if (key === 'heroes') {
+            active = pathname.indexOf('/zh-tw/heroes') === 0;
+          } else if (key === 'guides') {
+            active = pathname.indexOf('/zh-tw/guides') === 0;
+          } else if (key === 'codes') {
+            active = pathname.indexOf('/zh-tw/codes') === 0;
+          }
+
+          if (active) {
+            item.classList.add('is-active');
+            item.setAttribute('aria-current', 'page');
+          }
+        });
+      }
+
+      document.addEventListener('DOMContentLoaded', updateBottomNavActive);
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,1882 @@
+<!doctype html>
+<html lang="zh-Hant" data-lang="zh-tw">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tiles Survive 折扣儲值指南 | 自助儲值方式、使用條件、雙重驗證、優惠碼說明 | TilesSurvive.net</title>
+  <base href="/" />
+
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="description" content="整理 Tiles Survive 自助儲值前一定要先確認的使用條件、Google 或 Facebook 帳號綁定、雙重驗證確認方式、Google Play Games 無法使用的說明、實際儲值流程與優惠碼輸入方法的完整指南。" />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+  <meta name="author" content="TilesSurvive.net" />
+
+  <link rel="canonical" href="https://tilessurvive.net/zh-tw/guides/discount-topup/" />
+  <link rel="alternate" hreflang="x-default" href="https://tilessurvive.net/en/guides/discount-topup/" />
+  <link rel="alternate" hreflang="ko" href="https://tilessurvive.net/ko/guides/discount-topup/" />
+  <link rel="alternate" hreflang="en" href="https://tilessurvive.net/en/guides/discount-topup/" />
+  <link rel="alternate" hreflang="ja" href="https://tilessurvive.net/ja/guides/discount-topup/" />
+  <link rel="alternate" hreflang="ru" href="https://tilessurvive.net/ru/guides/discount-topup/" />
+  <link rel="alternate" hreflang="zh-TW" href="https://tilessurvive.net/zh-tw/guides/discount-topup/" />
+
+  <meta property="og:site_name" content="TilesSurvive.net" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Tiles Survive 折扣儲值指南 | 自助儲值方式、使用條件、雙重驗證、優惠碼說明" />
+  <meta property="og:description" content="整理 Tiles Survive 自助儲值前一定要先確認的條件、雙重驗證、Google Play Games 無法使用的說明、實際流程與優惠碼套用方式的完整指南。" />
+  <meta property="og:url" content="https://tilessurvive.net/zh-tw/guides/discount-topup/" />
+  <meta property="og:image" content="https://tilessurvive.net/img/guides/discount-topup.png" />
+  <meta property="og:locale" content="zh_TW" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Tiles Survive 折扣儲值指南 | 自助儲值方式、使用條件、雙重驗證、優惠碼說明" />
+  <meta name="twitter:description" content="Tiles Survive 自助儲值完整指南，整理帳號條件、雙重驗證、實際流程、優惠碼與聯絡支援方式。" />
+  <meta name="twitter:image" content="https://tilessurvive.net/img/guides/discount-topup.png" />
+
+  <link rel="preload" as="image" href="/img/logo-tilessurvive.png" />
+  <link rel="preload" as="image" href="/img/guides/discount-topup.png" />
+  <link rel="preload" as="image" href="/img/lootbar/step1.png" />
+
+  <style>
+    :root{
+      --bg:#f4f7fb;
+      --surface:#ffffff;
+      --surface-soft:#f8fafc;
+      --line:#e5e7eb;
+      --line-strong:#cbd5e1;
+      --text:#0f172a;
+      --text-soft:#475569;
+      --text-faint:#64748b;
+      --dark:#0f172a;
+      --brand:#0ea5e9;
+      --brand-soft:#e0f2fe;
+      --green:#16a34a;
+      --green-soft:#dcfce7;
+      --amber:#f59e0b;
+      --amber-soft:#fef3c7;
+      --red:#dc2626;
+      --red-soft:#fee2e2;
+      --blue:#2563eb;
+      --blue-soft:#dbeafe;
+      --container:min(1180px, calc(100% - 32px));
+      --radius-xl:28px;
+      --radius-lg:24px;
+      --radius-md:18px;
+      --shadow:0 18px 40px rgba(15,23,42,.08);
+
+      --warn-bg:rgba(245,158,11,.08);
+      --warn-border:rgba(245,158,11,.35);
+      --soft-bg:#f8fbff;
+      --soft-border:#dbeafe;
+      --ok-bg:#f0fdf4;
+      --ok-border:#bbf7d0;
+    }
+
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;overflow-x:hidden}
+    html{scroll-behavior:smooth}
+    body{
+      color:var(--text);
+      background:var(--bg);
+      font-family:"Pretendard","Noto Sans TC","Microsoft JhengHei","PingFang TC",system-ui,-apple-system,sans-serif;
+      line-height:1.68;
+      text-rendering:optimizeLegibility;
+      -webkit-font-smoothing:antialiased;
+      padding-bottom:calc(76px + env(safe-area-inset-bottom, 0px));
+    }
+
+    a{color:inherit;text-decoration:none}
+    img{display:block;max-width:100%}
+    button{font:inherit}
+    .container{width:var(--container);margin:0 auto;min-width:0}
+
+    .skip-link{
+      position:absolute;
+      left:12px;
+      top:-44px;
+      z-index:3000;
+      background:#111827;
+      color:#fff;
+      padding:10px 14px;
+      border-radius:10px;
+      font-weight:800;
+    }
+    .skip-link:focus{top:12px}
+
+    .site-header{
+      position:sticky;
+      top:0;
+      z-index:1500;
+      background:rgba(255,255,255,.92);
+      backdrop-filter:saturate(160%) blur(12px);
+      border-bottom:1px solid rgba(15,23,42,.06);
+    }
+
+    .nav-bar{
+      min-height:68px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+    }
+
+    .nav-left{
+      display:flex;
+      align-items:center;
+      gap:20px;
+      min-width:0;
+      flex:1 1 auto;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      min-width:0;
+      color:#111827;
+    }
+
+    .brand-logo{
+      width:30px;
+      height:30px;
+      border-radius:9px;
+      flex:0 0 auto;
+      background:#e5e7eb;
+      object-fit:cover;
+    }
+
+    .brand-text{
+      display:flex;
+      flex-direction:column;
+      gap:2px;
+      min-width:0;
+      line-height:1.1;
+    }
+
+    .brand-title{
+      font-size:16px;
+      font-weight:900;
+      white-space:nowrap;
+    }
+
+    .brand-sub{
+      font-size:12px;
+      color:#6b7280;
+      white-space:nowrap;
+    }
+
+    .nav{
+      display:flex;
+      align-items:center;
+      gap:4px;
+      min-width:0;
+      flex-wrap:wrap;
+    }
+
+    .nav a{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:40px;
+      padding:0 12px;
+      border-radius:999px;
+      color:#475569;
+      font-size:14px;
+      font-weight:800;
+      white-space:nowrap;
+    }
+
+    .nav a:hover,
+    .nav a:focus,
+    .nav a[aria-current="page"]{
+      background:#eef2f7;
+      color:#111827;
+      outline:none;
+    }
+
+    .nav-right{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      flex:0 0 auto;
+    }
+
+    .lang-pills{
+      display:flex;
+      align-items:center;
+      gap:8px;
+      flex-wrap:wrap;
+    }
+
+    .lang-pill{
+      appearance:none;
+      border:1px solid var(--line);
+      background:#fff;
+      color:#6b7280;
+      padding:8px 10px;
+      border-radius:999px;
+      font:13px/1.1 system-ui,-apple-system,Segoe UI,Roboto,"Noto Sans",Arial;
+      cursor:pointer;
+      white-space:nowrap;
+      user-select:none;
+    }
+
+    .lang-pill:hover{color:#111827}
+    .lang-pill[aria-current="true"]{
+      color:#111827;
+      font-weight:900;
+      border-color:var(--line-strong);
+      background:#f8fafc;
+    }
+
+    .hamburger{
+      display:none;
+      appearance:none;
+      border:1px solid var(--line);
+      background:#fff;
+      color:#111827;
+      width:42px;
+      height:42px;
+      border-radius:12px;
+      font-size:20px;
+      cursor:pointer;
+      flex:0 0 auto;
+    }
+
+    .countdown-bar-wrap{
+      background:#fff;
+      border-bottom:1px solid rgba(15,23,42,.06);
+    }
+
+    .countdown-bar{
+      min-height:52px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      padding:10px 0;
+    }
+
+    .countdown-bar__left{
+      min-width:0;
+      display:flex;
+      align-items:center;
+      gap:10px;
+      flex:1 1 auto;
+    }
+
+    .countdown-badge{
+      flex:0 0 auto;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:28px;
+      padding:0 10px;
+      border-radius:999px;
+      background:#111827;
+      color:#fff;
+      font-size:12px;
+      font-weight:900;
+    }
+
+    .countdown-copy{
+      min-width:0;
+      font-size:14px;
+      color:#334155;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+    }
+
+    .countdown-copy strong{
+      color:#111827;
+      font-weight:900;
+    }
+
+    .countdown-bar__actions{
+      flex:0 0 auto;
+      display:flex;
+      align-items:center;
+      gap:8px;
+      flex-wrap:nowrap;
+    }
+
+    .countdown-link{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:34px;
+      padding:0 12px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      background:#f8fafc;
+      font-size:13px;
+      font-weight:800;
+      color:#111827;
+      white-space:nowrap;
+      flex:0 0 auto;
+    }
+
+    .countdown-link:hover,
+    .countdown-link:focus{
+      background:#eef2f7;
+      outline:none;
+    }
+
+    .page-main{
+      padding-top:18px;
+      padding-bottom:32px;
+    }
+
+    .breadcrumb{
+      display:flex;
+      align-items:center;
+      gap:8px;
+      flex-wrap:wrap;
+      margin-bottom:16px;
+      color:#64748b;
+      font-size:13px;
+      font-weight:700;
+    }
+
+    .breadcrumb a{color:#475569}
+    .breadcrumb span[aria-current="page"]{color:#111827}
+
+    .hero{
+      display:grid;
+      grid-template-columns:minmax(0,1.1fr) minmax(320px,.9fr);
+      gap:18px;
+      align-items:stretch;
+    }
+
+    .hero-card,
+    .section-card,
+    .aside-card{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:var(--radius-xl);
+      box-shadow:var(--shadow);
+      min-width:0;
+    }
+
+    .hero-card{
+      padding:28px 24px;
+      background:
+        radial-gradient(circle at top right, rgba(14,165,233,.12), transparent 30%),
+        linear-gradient(180deg,#ffffff,#f8fbff);
+    }
+
+    .eyebrow{
+      display:inline-flex;
+      align-items:center;
+      min-height:30px;
+      padding:0 12px;
+      border-radius:999px;
+      background:var(--brand-soft);
+      color:#0369a1;
+      font-size:12px;
+      font-weight:900;
+      margin-bottom:14px;
+    }
+
+    .hero-card h1{
+      margin:0;
+      font-size:42px;
+      line-height:1.1;
+      letter-spacing:-.04em;
+      color:var(--dark);
+      word-break:keep-all;
+      overflow-wrap:anywhere;
+    }
+
+    .hero-card p{
+      margin:14px 0 0;
+      color:var(--text-soft);
+      font-size:15px;
+      max-width:760px;
+    }
+
+    .hero-meta{
+      margin-top:18px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+    }
+
+    .meta-pill{
+      display:inline-flex;
+      align-items:center;
+      min-height:38px;
+      padding:0 14px;
+      border-radius:999px;
+      background:#f8fafc;
+      border:1px solid #e2e8f0;
+      color:#111827;
+      font-size:13px;
+      font-weight:800;
+    }
+
+    .hero-links{
+      margin-top:18px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+    }
+
+    .hero-link{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:44px;
+      padding:0 16px;
+      border-radius:999px;
+      font-size:14px;
+      font-weight:900;
+      border:1px solid var(--line);
+      background:#fff;
+    }
+
+    .hero-link.is-primary{
+      background:#111827;
+      color:#fff;
+      border-color:#111827;
+    }
+
+    .aside-card{
+      padding:18px;
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+    }
+
+    .guide-thumb{
+      border-radius:22px;
+      background:linear-gradient(180deg,#eef8ff,#e0f2fe);
+      border:1px solid #dbeafe;
+      padding:18px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      min-height:260px;
+    }
+
+    .guide-thumb img{
+      width:100%;
+      max-width:320px;
+      height:auto;
+      object-fit:contain;
+    }
+
+    .quick-grid{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:10px;
+    }
+
+    .quick-item{
+      border:1px solid #e2e8f0;
+      background:#f8fafc;
+      border-radius:18px;
+      padding:14px;
+    }
+
+    .quick-item strong{
+      display:block;
+      font-size:12px;
+      color:#64748b;
+      margin-bottom:4px;
+    }
+
+    .quick-item span{
+      display:block;
+      font-size:15px;
+      font-weight:900;
+      color:#111827;
+      word-break:keep-all;
+      overflow-wrap:anywhere;
+    }
+
+    .section-stack{
+      margin-top:18px;
+      display:grid;
+      gap:18px;
+    }
+
+    .section-card{
+      padding:24px;
+    }
+
+    .section-head{
+      margin-bottom:18px;
+    }
+
+    .section-head h2{
+      margin:0;
+      font-size:30px;
+      line-height:1.2;
+      letter-spacing:-.03em;
+      color:var(--dark);
+      word-break:keep-all;
+      overflow-wrap:anywhere;
+    }
+
+    .section-head p{
+      margin:8px 0 0;
+      font-size:14px;
+      color:var(--text-soft);
+      word-break:keep-all;
+      overflow-wrap:anywhere;
+    }
+
+    .highlight-box{
+      border:1px solid #dbeafe;
+      background:linear-gradient(180deg,#f8fbff,#eef6ff);
+      border-radius:22px;
+      padding:18px;
+    }
+
+    .highlight-box strong{
+      display:block;
+      font-size:16px;
+      color:#0f172a;
+      margin-bottom:8px;
+    }
+
+    .card-grid{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:14px;
+    }
+
+    .info-box{
+      border:1px solid #e2e8f0;
+      border-radius:20px;
+      padding:18px;
+      background:#fff;
+      min-width:0;
+    }
+
+    .info-box h3{
+      margin:0 0 10px;
+      font-size:20px;
+      line-height:1.3;
+      word-break:keep-all;
+      overflow-wrap:anywhere;
+    }
+
+    .info-box p{
+      margin:0;
+      color:var(--text-soft);
+      font-size:14px;
+    }
+
+    .note,
+    .ok-note{
+      display:flex;
+      gap:10px;
+      padding:14px 16px;
+      border-radius:18px;
+      margin:12px 0 16px;
+      font-size:14px;
+    }
+
+    .note{
+      border:1px solid var(--warn-border);
+      background:var(--warn-bg);
+    }
+
+    .ok-note{
+      border:1px solid var(--ok-border);
+      background:var(--ok-bg);
+    }
+
+    .note strong,
+    .ok-note strong{
+      font-weight:900;
+    }
+
+    .note .note-ico{
+      width:18px;
+      height:18px;
+      flex:0 0 18px;
+      margin-top:2px;
+      color:#b45309;
+    }
+
+    .panel{
+      border:1px solid var(--soft-border);
+      background:var(--soft-bg);
+      border-radius:18px;
+      padding:14px 16px;
+      margin:12px 0 16px;
+    }
+
+    .check-grid{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:12px;
+      margin-top:12px;
+    }
+
+    .check-card{
+      border:1px solid var(--line);
+      border-radius:18px;
+      background:#fff;
+      padding:16px;
+    }
+
+    .check-card h3{
+      margin:0 0 6px;
+      font-size:17px;
+      line-height:1.3;
+    }
+
+    .check-card p{
+      margin:0;
+      color:var(--text-soft);
+      font-size:14px;
+    }
+
+    .imgrow{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:12px;
+      margin:12px 0;
+    }
+
+    .imgrow img{
+      width:100%;
+      border:1px solid var(--line);
+      border-radius:16px;
+      background:#fff;
+      display:block;
+    }
+
+    .guide-list{
+      margin:0;
+      padding-left:18px;
+    }
+
+    .guide-list li{margin:6px 0}
+
+    .faq-list{
+      display:grid;
+      gap:12px;
+    }
+
+    .faq-item{
+      border:1px solid var(--line);
+      border-radius:18px;
+      background:#fff;
+      padding:16px;
+    }
+
+    .faq-q{
+      font-weight:900;
+      margin:0 0 6px;
+    }
+
+    .faq-a{
+      margin:0;
+      color:var(--text-soft);
+    }
+
+    .links{
+      background:var(--soft-bg);
+      padding:16px;
+      border-radius:18px;
+      margin-top:14px;
+      border:1px solid var(--soft-border);
+    }
+
+    .links h3{
+      color:var(--text);
+      margin:0 0 8px;
+      font-size:18px;
+      line-height:1.35;
+    }
+
+    .links p{
+      margin:0 0 10px;
+      color:var(--text-soft);
+    }
+
+    .links a{
+      font-weight:900;
+      color:#111827;
+    }
+
+    .bottom-cta{
+      margin-top:18px;
+      border-radius:22px;
+      border:1px solid var(--line);
+      background:linear-gradient(180deg,#ffffff,#fafcff);
+      box-shadow:var(--shadow);
+      padding:18px;
+    }
+
+    .bottom-cta .title{
+      font-size:21px;
+      font-weight:900;
+      color:var(--text);
+      margin:0 0 8px;
+      line-height:1.3;
+    }
+
+    .bottom-cta .desc{
+      margin:0 0 14px;
+      color:var(--text-soft);
+      font-size:14px;
+    }
+
+    .cta-row{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      align-items:center;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      min-height:44px;
+      padding:0 16px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      cursor:pointer;
+      font-weight:900;
+      text-decoration:none !important;
+      line-height:1;
+      user-select:none;
+      background:#fff;
+      color:#111827;
+      transition:transform .12s ease, box-shadow .12s ease, border-color .12s ease, background .12s ease;
+    }
+
+    .btn:hover{
+      text-decoration:none;
+      transform:translateY(-1px);
+      box-shadow:0 8px 18px rgba(0,0,0,.06);
+      border-color:#d1d5db;
+      background:#f8fafc;
+    }
+
+    .btn-primary{
+      background:#111827;
+      color:#fff;
+      border-color:#111827;
+    }
+
+    .btn-primary:hover{
+      border-color:#111827;
+      background:#0f172a;
+    }
+
+    .cta-badges{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      margin-top:10px;
+    }
+
+    .badge{
+      font-size:12px;
+      padding:6px 10px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      color:var(--text-soft);
+      background:#fff;
+    }
+
+    .kbd{
+      font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+      font-weight:900;
+      color:var(--text);
+      background:#fff;
+      border:1px solid var(--line);
+      border-bottom-width:2px;
+      padding:2px 6px;
+      border-radius:8px;
+      display:inline-block;
+    }
+
+    .mini-note{
+      margin-top:10px;
+      color:var(--text-faint);
+      font-size:13px;
+    }
+
+    .site-footer{
+      margin-top:26px;
+      border-top:1px solid var(--line);
+      background:#fff;
+    }
+
+    .footer-link-strip{
+      padding:14px 0;
+      border-bottom:1px solid #eef2f7;
+    }
+
+    .footer-link-strip__inner{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      flex-wrap:wrap;
+      text-align:center;
+    }
+
+    .footer-link-strip__actions{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      flex-wrap:wrap;
+    }
+
+    .footer-inner{padding:24px 0 34px}
+    .footer-top{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      gap:18px;
+      text-align:center;
+    }
+
+    .footer-brand{
+      font-size:18px;
+      font-weight:900;
+      color:#111827;
+    }
+
+    .footer-desc{
+      margin:8px 0 0;
+      color:var(--text-faint);
+      font-size:14px;
+      max-width:720px;
+      word-break:keep-all;
+      overflow-wrap:anywhere;
+    }
+
+    .footer-links{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:10px;
+    }
+
+    .footer-links a{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:40px;
+      padding:0 14px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      background:#f8fafc;
+      font-size:14px;
+      font-weight:800;
+    }
+
+    .footer-copy{
+      margin-top:18px;
+      padding-top:18px;
+      border-top:1px solid #eef2f7;
+      color:var(--text-faint);
+      font-size:13px;
+      text-align:center;
+    }
+
+    .mobile-bottom-nav{
+      position:fixed;
+      left:0;
+      right:0;
+      bottom:0;
+      z-index:1400;
+      display:none;
+      background:rgba(255,255,255,.96);
+      backdrop-filter:saturate(160%) blur(10px);
+      border-top:1px solid rgba(15,23,42,.08);
+      padding:8px 10px calc(8px + env(safe-area-inset-bottom, 0px));
+    }
+
+    .mobile-bottom-nav__inner{
+      display:grid;
+      grid-template-columns:repeat(4,minmax(0,1fr));
+      gap:6px;
+      max-width:640px;
+      margin:0 auto;
+    }
+
+    .mobile-bottom-nav__item{
+      min-width:0;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      gap:4px;
+      padding:8px 4px 7px;
+      border-radius:12px;
+      color:#6b7280;
+    }
+
+    .mobile-bottom-nav__item svg{
+      width:20px;
+      height:20px;
+      display:block;
+      flex:0 0 auto;
+    }
+
+    .mobile-bottom-nav__label{
+      font-size:11px;
+      line-height:1.1;
+      font-weight:700;
+      letter-spacing:-0.01em;
+      white-space:nowrap;
+    }
+
+    .mobile-bottom-nav__item.is-active,
+    .mobile-bottom-nav__item[aria-current="page"]{
+      color:#111827;
+      background:#f3f4f6;
+    }
+
+    .backdrop{
+      position:fixed;
+      inset:0;
+      background:rgba(15,23,42,.38);
+      z-index:1600;
+    }
+
+    .drawer{
+      position:fixed;
+      top:0;
+      right:0;
+      bottom:0;
+      width:min(78vw,360px);
+      background:#fff;
+      box-shadow:-16px 0 40px rgba(15,23,42,.15);
+      z-index:1700;
+      overflow-y:auto;
+      transform:translateX(100%);
+      transition:transform .25s ease;
+    }
+
+    html.is-open .drawer{transform:translateX(0)}
+
+    .drawer header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:16px;
+      border-bottom:1px solid var(--line);
+      position:sticky;
+      top:0;
+      background:#fff;
+      z-index:2;
+    }
+
+    .drawer .section{padding:16px}
+    .drawer .nav-list{display:flex;flex-direction:column;gap:4px}
+    .drawer .nav-list a{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      width:100%;
+      min-height:44px;
+      padding:0 12px;
+      border-radius:12px;
+      font-weight:800;
+      color:#111827;
+      background:#f8fafc;
+    }
+
+    .lang-pills--drawer{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:8px;
+    }
+
+    .lang-pills--drawer .lang-pill{
+      width:100%;
+      display:flex;
+      justify-content:center;
+    }
+
+    .drawer-dotrule{
+      width:calc(100% - 32px);
+      margin:0 auto;
+      border-top:1px dashed rgba(15,23,42,.16);
+    }
+
+    .drawer-quick-stack{
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+      margin-top:14px;
+    }
+
+    .drawer-quick-pill{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      min-height:44px;
+      border:1px solid #dbe2ea;
+      border-radius:999px;
+      font-weight:800;
+      background:#fff;
+    }
+
+    .visually-hidden-seo{
+      position:absolute !important;
+      width:1px !important;
+      height:1px !important;
+      padding:0 !important;
+      margin:-1px !important;
+      overflow:hidden !important;
+      clip:rect(0,0,0,0) !important;
+      white-space:nowrap !important;
+      border:0 !important;
+    }
+
+    @media (max-width:980px){
+      .nav{display:none}
+      .hamburger{display:inline-flex;align-items:center;justify-content:center}
+      .nav-right{display:none}
+      .countdown-bar{
+        min-height:52px;
+        align-items:center;
+        flex-direction:row;
+        justify-content:space-between;
+        gap:10px;
+      }
+      .countdown-bar__left{
+        width:auto;
+        min-width:0;
+        flex:1 1 auto;
+      }
+      .countdown-bar__actions{
+        width:auto;
+        justify-content:flex-end;
+        flex-wrap:nowrap;
+      }
+      .hero{
+        grid-template-columns:1fr;
+      }
+      .card-grid,
+      .check-grid,
+      .quick-grid{
+        grid-template-columns:1fr;
+      }
+      .mobile-bottom-nav{display:block}
+    }
+
+    @media (max-width:640px){
+      .container{width:min(100% - 24px,1180px)}
+      .brand-title{font-size:14px}
+      .brand-sub{display:none}
+      .hero-card,
+      .section-card,
+      .aside-card{
+        border-radius:22px;
+      }
+      .hero-card{padding:20px 18px}
+      .hero-card h1{font-size:30px}
+      .aside-card{padding:14px}
+      .section-card{padding:20px 16px}
+      .section-head h2{font-size:25px}
+      .countdown-bar{gap:8px}
+      .countdown-bar__left{gap:8px}
+      .countdown-copy{
+        font-size:13px;
+        white-space:nowrap;
+        overflow:hidden;
+        text-overflow:ellipsis;
+      }
+      .countdown-link{
+        min-height:32px;
+        padding:0 10px;
+        font-size:12px;
+      }
+      .footer-link-strip__inner{
+        flex-direction:column;
+      }
+      .cta-row .btn{
+        width:100%;
+      }
+      .hero-visual{
+        min-height:220px;
+      }
+      .bottom-cta .title{
+        font-size:19px;
+      }
+    }
+
+    html.is-open body,
+    body.no-scroll{overflow:hidden}
+  </style>
+
+  <script id="ts-website-schema" type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "name":"TilesSurvive.net",
+    "url":"https://tilessurvive.net/",
+    "inLanguage":"zh-TW",
+    "description":"整理 Tiles Survive 資料庫、指南、賽季與代碼的資料中心",
+    "potentialAction":{
+      "@type":"SearchAction",
+      "target":"https://tilessurvive.net/zh-tw/search/?q={search_term_string}",
+      "query-input":"required name=search_term_string"
+    }
+  }
+  </script>
+
+  <script id="ts-breadcrumb-schema" type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {
+        "@type":"ListItem",
+        "position":1,
+        "name":"首頁",
+        "item":"https://tilessurvive.net/zh-tw/"
+      },
+      {
+        "@type":"ListItem",
+        "position":2,
+        "name":"指南",
+        "item":"https://tilessurvive.net/zh-tw/guides/"
+      },
+      {
+        "@type":"ListItem",
+        "position":3,
+        "name":"Tiles Survive 折扣儲值",
+        "item":"https://tilessurvive.net/zh-tw/guides/discount-topup/"
+      }
+    ]
+  }
+  </script>
+
+  <script id="ts-article-schema" type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Article",
+    "headline":"Tiles Survive 折扣儲值指南",
+    "description":"整理 Tiles Survive 自助儲值前一定要先確認的使用條件、雙重驗證、Google Play Games 無法使用的說明、實際流程與優惠碼輸入方法的完整指南。",
+    "image":"https://tilessurvive.net/img/guides/discount-topup.png",
+    "author":{
+      "@type":"Organization",
+      "name":"TilesSurvive.net"
+    },
+    "publisher":{
+      "@type":"Organization",
+      "name":"TilesSurvive.net",
+      "logo":{
+        "@type":"ImageObject",
+        "url":"https://tilessurvive.net/img/logo-tilessurvive.png"
+      }
+    },
+    "mainEntityOfPage":"https://tilessurvive.net/zh-tw/guides/discount-topup/",
+    "inLanguage":"zh-TW"
+  }
+  </script>
+
+  <script id="ts-faq-schema" type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question",
+        "name":"使用 Google Play Games 綁定的 Tiles Survive 帳號也能使用自助儲值嗎？",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"不行。使用 Google Play Games 綁定的 Tiles Survive 帳號目前無法使用自助儲值。現在只支援直接綁定 Google 帳號或 Facebook 帳號的情況。"
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"為什麼一定要開啟雙重驗證？",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"因為自助儲值在登入時需要安全驗證，所以綁定的 Google 或 Facebook 帳號必須先設定雙重驗證。"
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"要怎麼確認雙重驗證有沒有開啟？",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"可以用無痕模式嘗試登入 Google 或 Facebook。若出現簡訊驗證、電子郵件驗證或驗證器 App 核准請求等額外驗證畫面，就代表雙重驗證已啟用。"
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"如果中途卡住了該怎麼辦？",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"請先重新確認帳號綁定方式和雙重驗證狀態。如果還是看不懂，可以到 Discord 支援頻道詢問。"
+        }
+      }
+    ]
+  }
+  </script>
+
+  <script>
+    (function(){
+      function normalizeLang(code){
+        var low = String(code || '').trim().toLowerCase();
+        if (low === 'ko') return 'ko';
+        if (low === 'en') return 'en';
+        if (low === 'ja') return 'ja';
+        if (low === 'ru') return 'ru';
+        if (low === 'zh-tw' || low === 'zh_tw' || low === 'tw') return 'zh-tw';
+        return 'zh-tw';
+      }
+
+      function pathWithLang(lang, path){
+        return '/' + lang + path;
+      }
+
+      function applyLang(lang){
+        lang = normalizeLang(lang);
+        var currentPath = location.pathname.replace(/^\/(ko|en|ja|ru|zh-tw)(\/|$)/i, '/');
+        if (currentPath === '') currentPath = '/';
+        location.href = pathWithLang(lang, currentPath);
+      }
+
+      window.TS_LANG = {
+        normalize: normalizeLang,
+        apply: applyLang
+      };
+    })();
+  </script>
+</head>
+
+<body>
+  <svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+    <symbol id="ico-info" viewBox="0 0 24 24">
+      <path d="M12 2a10 10 0 1 0 .001 20.001A10 10 0 0 0 12 2z" fill="currentColor"/>
+      <path d="M12 10v7" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+      <path d="M12 7h.01" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+    </symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">跳到正文</a>
+
+  <header class="site-header" role="banner">
+    <div class="container nav-bar">
+      <div class="nav-left">
+        <a class="brand" href="/zh-tw/" aria-label="TilesSurvive.net 首頁">
+          <img class="brand-logo" src="/img/logo-tilessurvive.png" alt="TilesSurvive.net" width="30" height="30" />
+          <span class="brand-text">
+            <span class="brand-title">TilesSurvive.net</span>
+            <span class="brand-sub">Tiles Survive Data / Guides / Codes / Tools Hub</span>
+          </span>
+        </a>
+
+        <nav class="nav" id="primaryNav" role="navigation" aria-label="上方選單">
+          <a href="/zh-tw/buildings/">建築</a>
+          <a href="/zh-tw/heroes/">英雄</a>
+          <a href="/zh-tw/behemoths/">巨獸</a>
+          <a href="/zh-tw/database/">資料庫</a>
+          <a href="/zh-tw/guides/" aria-current="page">指南</a>
+          <a href="/zh-tw/seasons/">賽季</a>
+        </nav>
+      </div>
+
+      <button class="hamburger" id="menuToggle" aria-label="開啟選單" aria-controls="mobileDrawer" aria-expanded="false">☰</button>
+
+      <div class="nav-right">
+        <div id="langDropdownHeader" class="lang-pills" aria-label="語言選擇"></div>
+      </div>
+    </div>
+  </header>
+
+  <section class="countdown-bar-wrap" aria-label="代碼倒數">
+    <div class="container countdown-bar">
+      <div class="countdown-bar__left">
+        <span class="countdown-badge">優惠碼</span>
+        <div class="countdown-copy">
+          <strong>點點大作戰 禮包碼倒數計時</strong>
+        </div>
+      </div>
+      <div class="countdown-bar__actions">
+        <a class="countdown-link" href="/zh-tw/codes/">最新代碼</a>
+        <a class="countdown-link" href="/zh-tw/guides/gift-code-how-to-use/">兌換方法</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="backdrop" id="backdrop" hidden></div>
+
+  <aside class="drawer" id="mobileDrawer" aria-hidden="true" aria-label="手機選單">
+    <header>
+      <strong>Menu</strong>
+      <button id="btnClose" aria-label="關閉" style="background:none;border:0;font-size:20px;cursor:pointer">✕</button>
+    </header>
+
+    <div class="section">
+      <div id="langDropdownDrawer" class="lang-pills lang-pills--drawer" aria-label="語言選擇"></div>
+    </div>
+
+    <div class="drawer-dotrule" aria-hidden="true"></div>
+
+    <div class="section">
+      <div class="nav-list" role="navigation" aria-label="手機選單列表">
+        <a href="/zh-tw/buildings/">建築</a>
+        <a href="/zh-tw/heroes/">英雄</a>
+        <a href="/zh-tw/database/">資料庫</a>
+        <a href="/zh-tw/guides/">指南</a>
+        <a href="/zh-tw/seasons/">賽季</a>
+      </div>
+
+      <div class="drawer-quick-stack">
+        <a class="drawer-quick-pill js-drawer-close" href="https://discord.gg/EjqWhTPyaEjqWhTPya" target="_blank" rel="noopener noreferrer">Discord</a>
+        <a class="drawer-quick-pill js-drawer-close" href="/zh-tw/codes/">禮包碼</a>
+      </div>
+    </div>
+  </aside>
+
+  <main class="container page-main" id="main" role="main" aria-label="主要內容">
+    <section class="visually-hidden-seo" aria-label="SEO summary">
+      <p>Tiles Survive 折扣儲值指南 自助儲值方式 使用條件 雙重驗證 Google Play Games 無法使用 實際儲值流程 優惠碼輸入方法</p>
+    </section>
+
+    <nav class="breadcrumb" aria-label="麵包屑">
+      <a href="/zh-tw/">首頁</a>
+      <span>›</span>
+      <a href="/zh-tw/guides/">指南</a>
+      <span>›</span>
+      <span aria-current="page">Tiles Survive 折扣儲值</span>
+    </nav>
+
+    <section class="hero" aria-labelledby="pageTitle">
+      <article class="hero-card">
+        <span class="eyebrow">指南</span>
+        <h1 id="pageTitle">Tiles Survive 折扣儲值指南</h1>
+        <p>
+          這一頁會先整理 Tiles Survive 自助儲值前一定要先確認的重點，
+          包含 Google 或 Facebook 帳號綁定、雙重驗證、Google Play Games 無法使用的說明，
+          以及實際操作流程與優惠碼套用方式。
+        </p>
+
+        <div class="hero-meta">
+          <span class="meta-pill">需要 Google / Facebook 直接綁定</span>
+          <span class="meta-pill">需要雙重驗證</span>
+          <span class="meta-pill">不支援 Google Play Games 綁定</span>
+          <span class="meta-pill">已整理完整自助儲值流程</span>
+        </div>
+
+        <div class="hero-links">
+          <a class="hero-link is-primary" href="https://lootbar.gg/shop/ten/top-up/tiles-survive" target="_blank" rel="noopener noreferrer">前往折扣儲值頁面</a>
+          <a class="hero-link" href="#overview">查看必要確認項目</a>
+          <a class="hero-link" href="#help">查看聯絡支援方式</a>
+        </div>
+      </article>
+
+      <aside class="aside-card" aria-label="Tiles Survive 折扣儲值摘要">
+        <div class="guide-thumb">
+          <img src="/img/guides/discount-topup.png" alt="Tiles Survive 折扣儲值代表圖片" />
+        </div>
+
+        <div class="quick-grid">
+          <div class="quick-item">
+            <strong>確認重點 1</strong>
+            <span>先確認是否為直接綁定帳號</span>
+          </div>
+          <div class="quick-item">
+            <strong>確認重點 2</strong>
+            <span>確認雙重驗證是否已啟用</span>
+          </div>
+          <div class="quick-item">
+            <strong>注意事項</strong>
+            <span>Google Play Games 綁定不可用</span>
+          </div>
+          <div class="quick-item">
+            <strong>額外優惠</strong>
+            <span>付款前可套用優惠碼</span>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <div class="section-stack">
+      <section class="section-card" id="overview" aria-labelledby="overviewTitle">
+        <div class="section-head">
+          <h2 id="overviewTitle">開始前請先確認這 2 件事</h2>
+          <p>在自助儲值前先確認下面 2 點，可以大幅減少登入失敗或流程中途卡住的情況。</p>
+        </div>
+
+        <div class="note" role="note" aria-label="Important notice">
+          <svg class="note-ico" aria-hidden="true"><use href="#ico-info"></use></svg>
+          <div>
+            <strong>重要:</strong>
+            帳號安全與個人資訊請務必由本人自行管理。付款前請先確認登入方式與安全設定都正確。
+          </div>
+        </div>
+
+        <div class="check-grid">
+          <article class="check-card">
+            <h3>1. 確認是否為直接綁定帳號</h3>
+            <p>Tiles Survive 帳號必須是<strong>直接綁定 Google 帳號</strong>或<strong>直接綁定 Facebook 帳號</strong>才可以使用。</p>
+          </article>
+
+          <article class="check-card">
+            <h3>2. 確認是否已啟用雙重驗證</h3>
+            <p>綁定的 Google 或 Facebook 帳號必須先開啟<strong>雙重驗證</strong>。</p>
+          </article>
+        </div>
+
+        <div class="highlight-box" style="margin-top:16px;">
+          <strong>可使用的帳號綁定方式</strong>
+          自助儲值目前只支援<strong>直接綁定 Google 帳號或 Facebook 帳號的 Tiles Survive 帳號</strong>。
+        </div>
+
+        <div class="faq-list" style="margin-top:16px;">
+          <article class="faq-item">
+            <p class="faq-q">Google Play Games 綁定帳號也可以使用嗎？</p>
+            <p class="faq-a">不行。<strong>使用 Google Play Games 綁定的帳號目前無法使用自助儲值。</strong> 現在僅支援<strong>直接綁定 Google 帳號或 Facebook 帳號</strong>的情況。</p>
+          </article>
+        </div>
+
+        <div class="ok-note" role="note" aria-label="Ready account note">
+          <div>
+            <strong>快速判斷:</strong> 只要你是用 Google 或 Facebook 直接登入，而且登入時會出現額外驗證畫面，通常就表示前置準備已經差不多完成。
+          </div>
+        </div>
+      </section>
+
+      <section class="section-card" id="security" aria-labelledby="securityTitle">
+        <div class="section-head">
+          <h2 id="securityTitle">為什麼一定要開啟雙重驗證？</h2>
+          <p>自助儲值在登入時需要額外的安全驗證，因此如果綁定的 Google 或 Facebook 帳號沒有開啟雙重驗證，就無法順利完成流程。</p>
+        </div>
+
+        <div class="card-grid">
+          <article class="info-box">
+            <h3>Google 雙重驗證設定方式</h3>
+            <ul class="guide-list">
+              <li>打開 Google 帳號管理頁面。</li>
+              <li>進入<strong>安全性</strong>選單。</li>
+              <li>找到<strong>兩步驟驗證程序</strong>項目。</li>
+              <li>選擇電話號碼、驗證器 App 等你要使用的驗證方式。</li>
+              <li>設定完成後，再確認一次是否已正常啟用。</li>
+            </ul>
+          </article>
+
+          <article class="info-box">
+            <h3>Facebook 雙重驗證設定方式</h3>
+            <ul class="guide-list">
+              <li>進入 Facebook 的<strong>設定與隱私</strong>。</li>
+              <li>打開<strong>密碼與安全性</strong>選單。</li>
+              <li>找到雙重驗證相關設定。</li>
+              <li>選擇簡訊驗證或驗證器 App 等方式完成設定。</li>
+              <li>設定完成後，再確認一次是否已正常啟用。</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="highlight-box" style="margin-top:16px;">
+          <strong>如何確認雙重驗證是否已啟用</strong>
+          最簡單的方式就是使用<strong>無痕模式</strong>嘗試登入。
+          當你在 Google 或 Facebook 登入頁面用自己的帳號登入時，
+          若出現簡訊驗證、電子郵件驗證或驗證器 App 核准請求等額外驗證畫面，就代表雙重驗證已經啟用。
+        </div>
+
+        <div class="ok-note" role="note" aria-label="2FA check note">
+          <div>
+            <strong>判斷標準:</strong> 只要出現簡訊、郵件或驗證器 App 其中任一種額外驗證畫面，就代表雙重驗證是開啟狀態。
+          </div>
+        </div>
+      </section>
+
+      <section class="section-card" id="howto" aria-labelledby="howtoTitle">
+        <div class="section-head">
+          <h2 id="howtoTitle">實際自助儲值流程</h2>
+          <p>只要帳號條件和雙重驗證都準備好，後面的流程其實不難。照著下面順序操作就可以。</p>
+        </div>
+
+        <div class="panel">
+          <p style="margin:0 0 8px;"><strong>儲值頁面</strong></p>
+          <p style="margin:0 0 8px;">
+            <a href="https://lootbar.gg/shop/ten/top-up/tiles-survive" target="_blank" rel="noopener noreferrer">前往 Tiles Survive 折扣儲值頁面</a>
+          </p>
+          <p style="margin:0;">在搜尋欄輸入 <span class="kbd">#s4qU</span>，即可在付款前套用額外優惠碼。</p>
+        </div>
+
+        <div class="ok-note" role="note" aria-label="quick reassurance">
+          <div>
+            <strong>其實不用太緊張。</strong> 只要條件正確，大部分情況下照著下面的步驟一路操作就能完成自助儲值。
+          </div>
+        </div>
+
+        <div class="timeline">
+          <article class="faq-item">
+            <p class="faq-q">1. 選擇單筆禮包</p>
+            <p class="faq-a">選好你要的禮包後，按下 <strong>Top-up Now</strong>。</p>
+          </article>
+        </div>
+        <div class="imgrow">
+          <img src="/img/lootbar/step1.png" alt="Tiles Survive 選擇單筆禮包畫面" loading="lazy">
+        </div>
+
+        <div class="timeline">
+          <article class="faq-item">
+            <p class="faq-q">2. 把多個禮包加入購物車</p>
+            <p class="faq-a">如果想一次買多個禮包，可以用購物車按鈕把需要的禮包加入。</p>
+          </article>
+        </div>
+        <div class="imgrow">
+          <img src="/img/lootbar/step2.png" alt="Tiles Survive 將多個禮包加入購物車畫面" loading="lazy">
+        </div>
+
+        <div class="timeline">
+          <article class="faq-item">
+            <p class="faq-q">3. 進入付款流程</p>
+            <p class="faq-a">付款方式可選信用卡或 PayPal，選好後按下 <strong>Pay Now</strong>。左側是<strong>自助儲值</strong>，右側是客服代儲方式，請務必選擇<strong>自助儲值</strong>。</p>
+          </article>
+        </div>
+        <div class="imgrow">
+          <img src="/img/lootbar/step3.png" alt="Tiles Survive 付款方式選擇畫面" loading="lazy">
+          <img src="/img/lootbar/step8.png" alt="Tiles Survive 自助儲值選擇畫面" loading="lazy">
+        </div>
+
+        <div class="timeline">
+          <article class="faq-item">
+            <p class="faq-q">4. 使用綁定帳號登入</p>
+            <p class="faq-a">選擇自助儲值後會進入登入畫面。大多數情況下，用 Google 登入會是最容易進行的方式。</p>
+          </article>
+        </div>
+
+        <ul class="guide-list">
+          <li>輸入你的 Google 帳號。</li>
+          <li>輸入你的密碼。</li>
+        </ul>
+
+        <div class="note" role="note" aria-label="Password note">
+          <svg class="note-ico" aria-hidden="true"><use href="#ico-info"></use></svg>
+          <div>
+            <strong>提醒:</strong> 如果你不太確定密碼，建議先確認後再繼續操作。
+          </div>
+        </div>
+
+        <div class="imgrow">
+          <img src="/img/lootbar/step4.png" alt="Google 登入畫面" loading="lazy">
+          <img src="/img/lootbar/step5.png" alt="Google 帳號輸入畫面" loading="lazy">
+          <img src="/img/lootbar/step6.png" alt="Google 密碼輸入畫面" loading="lazy">
+        </div>
+
+        <div class="timeline">
+          <article class="faq-item">
+            <p class="faq-q">5. 付款購物車總金額</p>
+            <p class="faq-a">確認購物車內的總金額後，完成付款即可。</p>
+          </article>
+        </div>
+        <div class="imgrow">
+          <img src="/img/lootbar/step7.png" alt="Tiles Survive 購物車確認畫面" loading="lazy">
+          <img src="/img/lootbar/step9.png" alt="儲值金額確認畫面" loading="lazy">
+          <img src="/img/lootbar/step10.png" alt="最終付款畫面" loading="lazy">
+        </div>
+
+        <div class="timeline">
+          <article class="faq-item">
+            <p class="faq-q">6. 確認付款完成</p>
+            <p class="faq-a">付款完成後會顯示完成畫面，必要時按下 <strong>Got it</strong> 即可。<strong>到這一步代表儲值已經完成。</strong></p>
+          </article>
+        </div>
+        <div class="imgrow">
+          <img src="/img/lootbar/step12.png" alt="付款完成畫面" loading="lazy">
+          <img src="/img/lootbar/step13.png" alt="儲值完成提示畫面" loading="lazy">
+          <img src="/img/lootbar/step14.png" alt="最終完成畫面" loading="lazy">
+        </div>
+
+        <div class="timeline">
+          <article class="faq-item">
+            <p class="faq-q">7. 回到遊戲確認是否已入帳</p>
+            <p class="faq-a">進入 Tiles Survive，確認你購買的禮包是否已正常發放。</p>
+          </article>
+        </div>
+        <div class="imgrow">
+          <img src="/img/lootbar/step15.png" alt="遊戲內儲值入帳確認畫面" loading="lazy">
+        </div>
+      </section>
+
+      <section class="section-card" id="faq" aria-labelledby="faqTitle">
+        <div class="section-head">
+          <h2 id="faqTitle">常見問題</h2>
+          <p>這裡先整理自助儲值前最常遇到的疑問。</p>
+        </div>
+
+        <div class="faq-list">
+          <article class="faq-item">
+            <p class="faq-q">為什麼很多人會在自助儲值時卡住？</p>
+            <p class="faq-a">大多數情況並不是付款本身有問題，而是因為帳號綁定方式不正確，或是沒有先啟用雙重驗證。</p>
+          </article>
+
+          <article class="faq-item">
+            <p class="faq-q">Google Play Games 綁定帳號不能使用嗎？</p>
+            <p class="faq-a">對，目前只有直接綁定 Google 帳號或 Facebook 帳號的情況才支援自助儲值。</p>
+          </article>
+
+          <article class="faq-item">
+            <p class="faq-q">怎麼知道雙重驗證真的有開啟？</p>
+            <p class="faq-a">在無痕模式登入時，只要出現簡訊、電子郵件或驗證器 App 之類的額外驗證畫面，就代表已經啟用。</p>
+          </article>
+
+          <article class="faq-item">
+            <p class="faq-q">優惠碼要在哪裡輸入？</p>
+            <p class="faq-a">請在儲值頁面的搜尋欄輸入 <span class="kbd">#s4qU</span> 再進入付款流程。</p>
+          </article>
+
+          <article class="faq-item">
+            <p class="faq-q">如果中途卡住了該怎麼辦？</p>
+            <p class="faq-a">請先重新確認帳號綁定方式和雙重驗證狀態。如果還是不清楚，可以直接到 Discord 支援頻道詢問。</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-card" id="help" aria-labelledby="helpTitle">
+        <div class="section-head">
+          <h2 id="helpTitle">聯絡與補充說明</h2>
+          <p>如果所有條件都確認過了，還是有看不懂或操作卡住的地方，可以使用下面的支援連結。</p>
+        </div>
+
+        <div class="note" role="note" aria-label="Discord help">
+          <svg class="note-ico" aria-hidden="true"><use href="#ico-info"></use></svg>
+          <div>
+            <strong>如果在自助儲值過程中卡住</strong><br>
+            <a href="https://discord.gg/EjqWhTPyaEjqWhTPyaEjqWhTPya" target="_blank" rel="noopener noreferrer">前往 Discord 支援頻道詢問</a><br>
+            把你卡住的步驟一起說明，通常會更快獲得協助。
+          </div>
+        </div>
+
+        <div class="links">
+          <h3>也建議一起查看最新折扣儲值活動與優惠碼資訊</h3>
+          <p>累積儲值活動、每月優惠碼資訊與相關說明，都整理在下面這一頁。</p>
+          <a href="/zh-tw/guides/discount-topup-promotion/">查看最新折扣儲值 / 優惠碼資訊</a>
+        </div>
+
+        <div class="links">
+          <h3>如果也想看其他手機遊戲的折扣儲值</h3>
+          <p>支援中的其他遊戲折扣儲值，也可以從下面連結一起查看。</p>
+          <a href="https://lootbar.gg/shop/ten" target="_blank" rel="noopener noreferrer">查看更多手機遊戲折扣</a>
+        </div>
+
+        <div class="bottom-cta" aria-label="Top-up CTA">
+          <p class="title">已經準備好開始自助儲值了嗎？</p>
+          <p class="desc">
+            如果你的 Tiles Survive 帳號是直接綁定 Google 或 Facebook，
+            而且雙重驗證也已經啟用，就可以直接從下面連結進入自助儲值。
+            付款前也別忘了套用 <span class="kbd">#s4qU</span> 優惠碼。
+          </p>
+
+          <div class="cta-row">
+            <a class="btn btn-primary" href="https://lootbar.gg/shop/ten/top-up/tiles-survive" target="_blank" rel="noopener noreferrer">打開 Tiles Survive 折扣儲值頁面</a>
+            <a class="btn" href="https://discord.gg/EjqWhTPyaEjqWhTPyaEjqWhTPya" target="_blank" rel="noopener noreferrer">前往 Discord 詢問</a>
+            <a class="btn" href="/zh-tw/guides/discount-topup-promotion/">最新折扣儲值 / 優惠碼資訊</a>
+            <a class="btn" href="https://lootbar.gg/shop/ten" target="_blank" rel="noopener noreferrer">查看更多手機遊戲折扣</a>
+            <a class="btn" href="/zh-tw/codes/">查看最新禮包碼</a>
+          </div>
+
+          <div class="cta-badges" aria-label="quick notes">
+            <span class="badge">需要 Google / Facebook 直接綁定</span>
+            <span class="badge">需要雙重驗證</span>
+            <span class="badge">不支援 Google Play Games 綁定</span>
+            <span class="badge">附圖片步驟教學</span>
+            <span class="badge">卡住時可到 Discord 詢問</span>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer" role="contentinfo" aria-label="頁尾">
+    <div class="footer-link-strip">
+      <div class="container footer-link-strip__inner">
+        <div class="footer-link-strip__actions">
+          <a class="countdown-link" href="https://discord.gg/EjqWhTPyaEjqWhTPya" target="_blank" rel="noopener noreferrer">Discord</a>
+          <a class="countdown-link" href="/zh-tw/codes/">禮包碼</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <div>
+          <div class="footer-brand">TilesSurvive.net</div>
+          <p class="footer-desc">
+            TilesSurvive.net 是為了整理 Tiles Survive 相關資料、幫助玩家更容易查找資訊而建立的非官方粉絲網站，與官方無直接關係。
+          </p>
+        </div>
+
+        <nav class="footer-links" aria-label="頁尾選單">
+          <a href="/zh-tw/about/">介紹</a>
+          <a href="/zh-tw/privacy/">隱私</a>
+        </nav>
+      </div>
+
+      <div class="footer-copy">
+        © 2026 TilesSurvive.net. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <nav class="mobile-bottom-nav" aria-label="手機快速移動">
+    <div class="mobile-bottom-nav__inner">
+      <a class="mobile-bottom-nav__item" href="/zh-tw/" data-mobile-nav="home">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M4 10.5 12 4l8 6.5V20a1 1 0 0 1-1 1h-4v-6H9v6H5a1 1 0 0 1-1-1v-9.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+        </svg>
+        <span class="mobile-bottom-nav__label">首頁</span>
+      </a>
+
+      <a class="mobile-bottom-nav__item" href="/zh-tw/guides/" data-mobile-nav="guides">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M6 5.5A2.5 2.5 0 0 1 8.5 3H19v16H8.5A2.5 2.5 0 0 0 6 21V5.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+          <path d="M6 6h11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+        <span class="mobile-bottom-nav__label">指南</span>
+      </a>
+
+      <a class="mobile-bottom-nav__item" href="/zh-tw/seasons/" data-mobile-nav="seasons">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 3v4M12 17v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M3 12h4M17 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          <circle cx="12" cy="12" r="3.5" stroke="currentColor" stroke-width="1.8"/>
+        </svg>
+        <span class="mobile-bottom-nav__label">賽季</span>
+      </a>
+
+      <a class="mobile-bottom-nav__item" href="/zh-tw/codes/" data-mobile-nav="codes">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M8 7.5h8a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="1.8"/>
+          <path d="M9 7V6a3 3 0 1 1 6 0v1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          <path d="M12 11v3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+        <span class="mobile-bottom-nav__label">代碼</span>
+      </a>
+    </div>
+  </nav>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var html = document.documentElement;
+      var body = document.body;
+      var drawer = document.getElementById('mobileDrawer');
+      var backdrop = document.getElementById('backdrop');
+      var btnOpen = document.getElementById('menuToggle');
+      var btnClose = document.getElementById('btnClose');
+
+      function openDrawer(){
+        html.classList.add('is-open');
+        body.classList.add('no-scroll');
+        backdrop.hidden = false;
+        drawer.setAttribute('aria-hidden', 'false');
+        btnOpen && btnOpen.setAttribute('aria-expanded', 'true');
+      }
+
+      function closeDrawer(){
+        html.classList.remove('is-open');
+        body.classList.remove('no-scroll');
+        backdrop.hidden = true;
+        drawer.setAttribute('aria-hidden', 'true');
+        btnOpen && btnOpen.setAttribute('aria-expanded', 'false');
+      }
+
+      btnOpen && btnOpen.addEventListener('click', openDrawer);
+      btnClose && btnClose.addEventListener('click', closeDrawer);
+      backdrop && backdrop.addEventListener('click', closeDrawer);
+
+      window.addEventListener('keydown', function(e){
+        if (e.key === 'Escape') closeDrawer();
+      });
+
+      var drawerLinks = drawer ? drawer.querySelectorAll('a') : [];
+      Array.prototype.forEach.call(drawerLinks, function(link){
+        link.addEventListener('click', closeDrawer);
+      });
+    });
+  </script>
+
+  <script>
+    (function(){
+      var LANGS = [
+        { code:'ko', label:'KO' },
+        { code:'en', label:'EN' },
+        { code:'ja', label:'JA' },
+        { code:'ru', label:'RU' },
+        { code:'zh-tw', label:'TW' }
+      ];
+
+      function currentLang(){
+        return 'zh-tw';
+      }
+
+      function render(root){
+        if (!root) return;
+        var cur = currentLang();
+        root.innerHTML = LANGS.map(function(lang){
+          return '<button type="button" class="lang-pill" data-lang="' + lang.code + '" aria-current="' + (lang.code === cur ? 'true' : 'false') + '">' + lang.label + '</button>';
+        }).join('');
+      }
+
+      function bind(root){
+        if (!root) return;
+        root.addEventListener('click', function(e){
+          var btn = e.target.closest('.lang-pill[data-lang]');
+          if (!btn) return;
+          e.preventDefault();
+          window.TS_LANG.apply(btn.getAttribute('data-lang'));
+        });
+      }
+
+      document.addEventListener('DOMContentLoaded', function(){
+        var header = document.getElementById('langDropdownHeader');
+        var drawer = document.getElementById('langDropdownDrawer');
+        render(header);
+        render(drawer);
+        bind(header);
+        bind(drawer);
+      });
+    })();
+  </script>
+
+  <script>
+    (function(){
+      function updateBottomNavActive(){
+        var pathname = location.pathname.toLowerCase();
+        var items = document.querySelectorAll('.mobile-bottom-nav__item');
+
+        Array.prototype.forEach.call(items, function(item){
+          item.classList.remove('is-active');
+          item.removeAttribute('aria-current');
+
+          var key = item.getAttribute('data-mobile-nav');
+          var active = false;
+
+          if (key === 'home') {
+            active = pathname === '/zh-tw/' || pathname === '/zh-tw';
+          } else if (key === 'guides') {
+            active = pathname.indexOf('/zh-tw/guides') === 0;
+          } else if (key === 'seasons') {
+            active = pathname.indexOf('/zh-tw/seasons') === 0;
+          } else if (key === 'codes') {
+            active = pathname.indexOf('/zh-tw/codes') === 0;
+          }
+
+          if (active) {
+            item.classList.add('is-active');
+            item.setAttribute('aria-current', 'page');
+          }
+        });
+      }
+
+      document.addEventListener('DOMContentLoaded', updateBottomNavActive);
+    })();
+  </script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>VIP 계산기 – Tiles Survival / Kingshot</title>
+<style>
+    body { font-family: Arial, sans-serif; background:#f2f2f2; padding:20px; }
+    .box { background:#fff; padding:20px; border-radius:10px; max-width:900px; margin:auto; }
+    h2 { text-align:center; margin-bottom:25px; }
+    table { width:100%; border-collapse:collapse; margin-top:20px; }
+    th, td { border:1px solid #ccc; padding:10px; text-align:center; }
+    th { background:#eaeaea; }
+    input { width:200px; padding:10px; font-size:16px; }
+    button { padding:10px 20px; font-size:16px; cursor:pointer; }
+</style>
+</head>
+<body>
+
+<div class="box">
+    <h2>VIP12 계산기 (총 4,800,000 VIP 포인트 기준)</h2>
+
+    <p><b>패키지 선택 후 계산 버튼을 누르면 필요한 개수와 총 비용이 아래 표에 자동 출력됩니다.</b></p>
+
+    <label>목표 VIP 포인트 입력:</label>
+    <input id="targetVIP" type="number" value="4800000">
+
+    <button onclick="calc()">계산하기</button>
+
+    <table id="resultTable">
+        <thead>
+            <tr>
+                <th>패키지</th>
+                <th>VIP 포인트</th>
+                <th>개당 가격(원)</th>
+                <th>필요 개수</th>
+                <th>총 비용(원)</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+</div>
+
+<script>
+// 패키지 데이터
+const packs = [
+    { name:"499", vip:2500,  price:7500 },
+    { name:"999", vip:4000,  price:15000 },
+    { name:"1999", vip:6000, price:30000 },
+    { name:"4999", vip:12000, price:79000 },
+    { name:"9999", vip:20000, price:149000 },
+];
+
+// 계산 함수
+function calc() {
+    const target = Number(document.getElementById("targetVIP").value);
+    const tbody = document.querySelector("#resultTable tbody");
+    tbody.innerHTML = ""; // 초기화
+
+    packs.forEach(p => {
+        const count = Math.ceil(target / p.vip);             // 필요한 개수
+        const total = count * p.price;                       // 총 비용
+
+        const row = `
+            <tr>
+                <td>${p.name}</td>
+                <td>${p.vip.toLocaleString()}</td>
+                <td>${p.price.toLocaleString()}</td>
+                <td>${count.toLocaleString()}</td>
+                <td>${total.toLocaleString()}</td>
+            </tr>
+        `;
+        tbody.insertAdjacentHTML("beforeend", row);
+    });
+}
+</script>
+
+</body>
+</html>

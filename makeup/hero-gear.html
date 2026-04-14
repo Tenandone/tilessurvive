@@ -1,0 +1,290 @@
+<style>
+  .star-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+  }
+
+  .star-table th, .star-table td {
+    border: 1px solid #ccc;
+    padding: 12px;
+    text-align: center;
+  }
+
+  .header-img-set {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .header-img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+  }
+
+  .star-img-set, .gear-box {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .star-img, .gear-img {
+    width: 38px;
+    height: 38px;
+    object-fit: contain;
+  }
+
+  .arrow {
+    font-size: 26px;
+    font-weight: bold;
+  }
+
+  h2 {
+    text-align:center;
+    margin-top:25px;
+  }
+</style>
+
+<h2>
+  영웅 레전드 장비 성급 소모표<br>
+  <span style="font-size:14px;">제작 : #211 Ten</span>
+  <img src="/img/ten.png" 
+           style="width:40px; height:40px; vertical-align:middle; margin-left:6px; border-radius:50%;">
+    </strong>
+  </span>
+</h2>
+
+<table class="star-table">
+  <thead>
+    <tr>
+      <!-- 제목칸을 이미지로 -->
+      <th>
+        <div class="header-img-set">
+          <img src="/img/0star.png" class="header-img">
+          <img src="/img/1star.png" class="header-img">
+          <img src="/img/6star.png" class="header-img">
+        </div>
+      </th>
+
+      <th></th>
+
+      <th>
+        <div class="header-img-set">
+          <img src="/img/gear1.png" class="header-img">
+          <img src="/img/gear2.png" class="header-img">
+          <img src="/img/gear3.png" class="header-img">
+        </div>
+      </th>
+    </tr>
+  </thead>
+
+  <tbody>
+
+    <!-- 0 → 1성 -->
+    <tr>
+      <td>
+        <div class="star-img-set">
+          <img src="/img/1star.png" class="star-img">
+          <img src="/img/0star.png" class="star-img">
+          <img src="/img/0star.png" class="star-img">
+          <img src="/img/0star.png" class="star-img">
+          <img src="/img/0star.png" class="star-img">
+        </div>
+      </td>
+      <td class="arrow">→</td>
+      <td>
+        <div class="gear-box">
+          <img src="/img/gear1.png" class="gear-img">
+        </div>
+      </td>
+    </tr>
+
+    <!-- 1 → 2성 -->
+    <tr>
+      <td>
+        <div class="star-img-set">
+          <img src="/img/1star.png" class="star-img">
+          <img src="/img/1star.png" class="star-img">
+          <img src="/img/0star.png" class="star-img">
+          <img src="/img/0star.png" class="star-img">
+          <img src="/img/0star.png" class="star-img">
+        </div>
+      </td>
+      <td class="arrow">→</td>
+      <td>
+        <div class="gear-box">
+          <img src="/img/gear1.png" class="gear-img">
+        </div>
+      </td>
+    </tr>
+
+    <!-- 2 → 3성 -->
+    <tr>
+      <td>
+        <div class="star-img-set">
+          <img src="/img/1star.png" class="star-img">
+          <img src="/img/1star.png" class="star-img">
+          <img src="/img/1star.png" class="star-img">
+          <img src="/img/0star.png" class="star-img">
+          <img src="/img/0star.png" class="star-img">
+        </div>
+      </td>
+      <td class="arrow">→</td>
+      <td>
+        <div class="gear-box">
+          <img src="/img/gear1.png" class="gear-img">
+        </div>
+      </td>
+    </tr>
+
+    <!-- 3 → 4성 -->
+    <tr>
+      <td>
+        <div class="star-img-set">
+          <img src="/img/1star.png" class="star-img">
+          <img src="/img/1star.png" class="star-img">
+          <img src="/img/1star.png" class="star-img">
+          <img src="/img/1star.png" class="star-img">
+          <img src="/img/0star.png" class="star-img">
+        </div>
+      </td>
+      <td class="arrow">→</td>
+      <td>
+        <div class="gear-box">
+          <img src="/img/gear1.png" class="gear-img">
+          <img src="/img/gear1.png" class="gear-img">
+        </div>
+      </td>
+    </tr>
+
+    <!-- 4 → 5성 -->
+    <tr>
+      <td>
+        <div class="star-img-set">
+          <img src="/img/1star.png" class="star-img">
+          <img src="/img/1star.png" class="star-img">
+          <img src="/img/1star.png" class="star-img">
+          <img src="/img/1star.png" class="star-img">
+          <img src="/img/1star.png" class="star-img">
+        </div>
+      </td>
+      <td class="arrow">→</td>
+      <td>
+        <div class="gear-box">
+          <img src="/img/gear1.png" class="gear-img">
+          <img src="/img/gear1.png" class="gear-img">
+        </div>
+      </td>
+    </tr>
+
+    <!-- 5 → 6성 -->
+    <tr>
+      <td>
+        <div class="star-img-set">
+          <img src="/img/6star.png" class="star-img">
+          <img src="/img/1star.png" class="star-img">
+          <img src="/img/1star.png" class="star-img">
+          <img src="/img/1star.png" class="star-img">
+          <img src="/img/1star.png" class="star-img">
+        </div>
+      </td>
+      <td class="arrow">→</td>
+      <td>
+        <div class="gear-box">
+          <img src="/img/gear1.png" class="gear-img">
+          <img src="/img/gear1.png" class="gear-img">
+          <img src="/img/gear1.png" class="gear-img">
+        </div>
+      </td>
+    </tr>
+
+    <!-- 6 → 7성 -->
+    <tr>
+      <td>
+        <div class="star-img-set">
+          <img src="/img/6star.png" class="star-img">
+          <img src="/img/6star.png" class="star-img">
+          <img src="/img/1star.png" class="star-img">
+          <img src="/img/1star.png" class="star-img">
+          <img src="/img/1star.png" class="star-img">
+        </div>
+      </td>
+      <td class="arrow">→</td>
+      <td>
+        <div class="gear-box">
+          <img src="/img/gear1.png" class="gear-img">
+          <img src="/img/gear1.png" class="gear-img">
+          <img src="/img/gear1.png" class="gear-img">
+        </div>
+      </td>
+    </tr>
+
+    <!-- 7 → 8성 -->
+    <tr>
+      <td>
+        <div class="star-img-set">
+          <img src="/img/6star.png" class="star-img">
+          <img src="/img/6star.png" class="star-img">
+          <img src="/img/6star.png" class="star-img">
+          <img src="/img/1star.png" class="star-img">
+          <img src="/img/1star.png" class="star-img">
+        </div>
+      </td>
+      <td class="arrow">→</td>
+      <td>
+        <div class="gear-box">
+          <img src="/img/gear1.png" class="gear-img">
+          <img src="/img/gear1.png" class="gear-img">
+          <img src="/img/gear1.png" class="gear-img">
+        </div>
+      </td>
+    </tr>
+
+    <!-- 8 → 9성 -->
+    <tr>
+      <td>
+        <div class="star-img-set">
+          <img src="/img/6star.png" class="star-img">
+          <img src="/img/6star.png" class="star-img">
+          <img src="/img/6star.png" class="star-img">
+          <img src="/img/6star.png" class="star-img">
+          <img src="/img/1star.png" class="star-img">
+        </div>
+      </td>
+      <td class="arrow">→</td>
+      <td>
+        <div class="gear-box">
+          <img src="/img/gear1.png" class="gear-img">
+          <img src="/img/gear1.png" class="gear-img">
+          <img src="/img/gear1.png" class="gear-img">
+          <img src="/img/gear1.png" class="gear-img">
+        </div>
+      </td>
+    </tr>
+
+    <!-- 9 → 10성 -->
+    <tr>
+      <td>
+        <div class="star-img-set">
+          <img src="/img/6star.png" class="star-img">
+          <img src="/img/6star.png" class="star-img">
+          <img src="/img/6star.png" class="star-img">
+          <img src="/img/6star.png" class="star-img">
+          <img src="/img/6star.png" class="star-img">
+        </div>
+      </td>
+      <td class="arrow">→</td>
+      <td>
+        <div class="gear-box">
+          <img src="/img/gear1.png" class="gear-img">
+          <img src="/img/gear1.png" class="gear-img">
+          <img src="/img/gear1.png" class="gear-img">
+          <img src="/img/gear1.png" class="gear-img">
+          <img src="/img/gear1.png" class="gear-img">
+        </div>
+      </td>
+    </tr>
+
+  </tbody>
+</table>

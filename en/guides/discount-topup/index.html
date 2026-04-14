@@ -1,0 +1,1884 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tiles Survive Discount Top-Up Guide | Self Top-Up Steps, Requirements, 2FA, Coupon Info | TilesSurvive.net</title>
+  <base href="/" />
+
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="description" content="This guide explains everything you need to check before using self top-up for Tiles Survive, including account requirements, direct Google or Facebook login, 2FA setup, Google Play Games login not supported, the actual payment flow, and coupon usarge." />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+  <meta name="author" content="TilesSurvive.net" />
+
+  <link rel="canonical" href="https://tilessurvive.net/en/guides/discount-topup/" />
+  <link rel="alternate" hreflang="x-default" href="https://tilessurvive.net/en/guides/discount-topup/" />
+  <link rel="alternate" hreflang="ko" href="https://tilessurvive.net/ko/guides/discount-topup/" />
+  <link rel="alternate" hreflang="en" href="https://tilessurvive.net/en/guides/discount-topup/" />
+  <link rel="alternate" hreflang="ja" href="https://tilessurvive.net/ja/guides/discount-topup/" />
+  <link rel="alternate" hreflang="ru" href="https://tilessurvive.net/ru/guides/discount-topup/" />
+  <link rel="alternate" hreflang="zh-TW" href="https://tilessurvive.net/zh-tw/guides/discount-topup/" />
+
+  <meta property="og:site_name" content="TilesSurvive.net" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Tiles Survive Discount Top-Up Guide | Self Top-Up Steps, Requirements, 2FA, Coupon Info" />
+  <meta property="og:description" content="A complete guide to Tiles Survive self top-up, including account requirements, 2FA checks, Google Play Games login not supported, the actual purchase flow, and coupon usarge." />
+  <meta property="og:url" content="https://tilessurvive.net/en/guides/discount-topup/" />
+  <meta property="og:image" content="https://tilessurvive.net/img/guides/discount-topup.png" />
+  <meta property="og:locale" content="en_US" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Tiles Survive Discount Top-Up Guide | Self Top-Up Steps, Requirements, 2FA, Coupon Info" />
+  <meta name="twitter:description" content="Complete self top-up guide for Tiles Survive. Check account requirements, 2FA, the actual payment flow, coupon usarge, and support options." />
+  <meta name="twitter:image" content="https://tilessurvive.net/img/guides/discount-topup.png" />
+
+  <link rel="preload" as="image" href="/img/logo-tilessurvive.png" />
+  <link rel="preload" as="image" href="/img/guides/discount-topup.png" />
+  <link rel="preload" as="image" href="/img/lootbar/step1.png" />
+
+  <style>
+    :root{
+      --bg:#f4f7fb;
+      --surface:#ffffff;
+      --surface-soft:#f8fafc;
+      --line:#e5e7eb;
+      --line-strong:#cbd5e1;
+      --text:#0f172a;
+      --text-soft:#475569;
+      --text-faint:#64748b;
+      --dark:#0f172a;
+      --brand:#0ea5e9;
+      --brand-soft:#e0f2fe;
+      --green:#16a34a;
+      --green-soft:#dcfce7;
+      --amber:#f59e0b;
+      --amber-soft:#fef3c7;
+      --red:#dc2626;
+      --red-soft:#fee2e2;
+      --blue:#2563eb;
+      --blue-soft:#dbeafe;
+      --container:min(1180px, calc(100% - 32px));
+      --radius-xl:28px;
+      --radius-lg:24px;
+      --radius-md:18px;
+      --shadow:0 18px 40px rgba(15,23,42,.08);
+
+      --warn-bg:rgba(245,158,11,.08);
+      --warn-border:rgba(245,158,11,.35);
+      --soft-bg:#f8fbff;
+      --soft-border:#dbeafe;
+      --ok-bg:#f0fdf4;
+      --ok-border:#bbf7d0;
+    }
+
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;overflow-x:hidden}
+    html{scroll-behavior:smooth}
+    body{
+      color:var(--text);
+      background:var(--bg);
+      font-family:"Pretendard","Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",system-ui,-apple-system,sans-serif;
+      line-height:1.68;
+      text-rendering:optimizeLegibility;
+      -webkit-font-smoothing:antialiased;
+      padding-bottom:calc(76px + env(safe-area-inset-bottom, 0px));
+    }
+
+    a{color:inherit;text-decoration:none}
+    img{display:block;max-width:100%}
+    button{font:inherit}
+    .container{width:var(--container);margin:0 auto;min-width:0}
+
+    .skip-link{
+      position:absolute;
+      left:12px;
+      top:-44px;
+      z-index:3000;
+      background:#111827;
+      color:#fff;
+      padding:10px 14px;
+      border-radius:10px;
+      font-weight:800;
+    }
+    .skip-link:focus{top:12px}
+
+    .site-header{
+      position:sticky;
+      top:0;
+      z-index:1500;
+      background:rgba(255,255,255,.92);
+      backdrop-filter:saturate(160%) blur(12px);
+      border-bottom:1px solid rgba(15,23,42,.06);
+    }
+
+    .nav-bar{
+      min-height:68px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+    }
+
+    .nav-left{
+      display:flex;
+      align-items:center;
+      gap:20px;
+      min-width:0;
+      flex:1 1 auto;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      min-width:0;
+      color:#111827;
+    }
+
+    .brand-logo{
+      width:30px;
+      height:30px;
+      border-radius:9px;
+      flex:0 0 auto;
+      background:#e5e7eb;
+      object-fit:cover;
+    }
+
+    .brand-text{
+      display:flex;
+      flex-direction:column;
+      gap:2px;
+      min-width:0;
+      line-height:1.1;
+    }
+
+    .brand-title{
+      font-size:16px;
+      font-weight:900;
+      white-space:nowrap;
+    }
+
+    .brand-sub{
+      font-size:12px;
+      color:#6b7280;
+      white-space:nowrap;
+    }
+
+    .nav{
+      display:flex;
+      align-items:center;
+      gap:4px;
+      min-width:0;
+      flex-wrap:wrap;
+    }
+
+    .nav a{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:40px;
+      padding:0 12px;
+      border-radius:999px;
+      color:#475569;
+      font-size:14px;
+      font-weight:800;
+      white-space:nowrap;
+    }
+
+    .nav a:hover,
+    .nav a:focus,
+    .nav a[aria-current="page"]{
+      background:#eef2f7;
+      color:#111827;
+      outline:none;
+    }
+
+    .nav-right{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      flex:0 0 auto;
+    }
+
+    .lang-pills{
+      display:flex;
+      align-items:center;
+      gap:8px;
+      flex-wrap:wrap;
+    }
+
+    .lang-pill{
+      appearance:none;
+      border:1px solid var(--line);
+      background:#fff;
+      color:#6b7280;
+      padding:8px 10px;
+      border-radius:999px;
+      font:13px/1.1 system-ui,-apple-system,Segoe UI,Roboto,"Noto Sans",Arial;
+      cursor:pointer;
+      white-space:nowrap;
+      user-select:none;
+    }
+
+    .lang-pill:hover{color:#111827}
+    .lang-pill[aria-current="true"]{
+      color:#111827;
+      font-weight:900;
+      border-color:var(--line-strong);
+      background:#f8fafc;
+    }
+
+    .hamburger{
+      display:none;
+      appearance:none;
+      border:1px solid var(--line);
+      background:#fff;
+      color:#111827;
+      width:42px;
+      height:42px;
+      border-radius:12px;
+      font-size:20px;
+      cursor:pointer;
+      flex:0 0 auto;
+    }
+
+    .countdown-bar-wrap{
+      background:#fff;
+      border-bottom:1px solid rgba(15,23,42,.06);
+    }
+
+    .countdown-bar{
+      min-height:52px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      padding:10px 0;
+    }
+
+    .countdown-bar__left{
+      min-width:0;
+      display:flex;
+      align-items:center;
+      gap:10px;
+      flex:1 1 auto;
+    }
+
+    .countdown-badge{
+      flex:0 0 auto;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:28px;
+      padding:0 10px;
+      border-radius:999px;
+      background:#111827;
+      color:#fff;
+      font-size:12px;
+      font-weight:900;
+    }
+
+    .countdown-copy{
+      min-width:0;
+      font-size:14px;
+      color:#334155;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+    }
+
+    .countdown-copy strong{
+      color:#111827;
+      font-weight:900;
+    }
+
+    .countdown-bar__actions{
+      flex:0 0 auto;
+      display:flex;
+      align-items:center;
+      gap:8px;
+      flex-wrap:nowrap;
+    }
+
+    .countdown-link{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:34px;
+      padding:0 12px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      background:#f8fafc;
+      font-size:13px;
+      font-weight:800;
+      color:#111827;
+      white-space:nowrap;
+      flex:0 0 auto;
+    }
+
+    .countdown-link:hover,
+    .countdown-link:focus{
+      background:#eef2f7;
+      outline:none;
+    }
+
+    .page-main{
+      padding-top:18px;
+      padding-bottom:32px;
+    }
+
+    .breadcrumb{
+      display:flex;
+      align-items:center;
+      gap:8px;
+      flex-wrap:wrap;
+      margin-bottom:16px;
+      color:#64748b;
+      font-size:13px;
+      font-weight:700;
+    }
+
+    .breadcrumb a{color:#475569}
+    .breadcrumb span[aria-current="page"]{color:#111827}
+
+    .hero{
+      display:grid;
+      grid-template-columns:minmax(0,1.1fr) minmax(320px,.9fr);
+      gap:18px;
+      align-items:stretch;
+    }
+
+    .hero-card,
+    .section-card,
+    .aside-card{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:var(--radius-xl);
+      box-shadow:var(--shadow);
+      min-width:0;
+    }
+
+    .hero-card{
+      padding:28px 24px;
+      background:
+        radial-gradient(circle at top right, rgba(14,165,233,.12), transparent 30%),
+        linear-gradient(180deg,#ffffff,#f8fbff);
+    }
+
+    .eyebrow{
+      display:inline-flex;
+      align-items:center;
+      min-height:30px;
+      padding:0 12px;
+      border-radius:999px;
+      background:var(--brand-soft);
+      color:#0369a1;
+      font-size:12px;
+      font-weight:900;
+      margin-bottom:14px;
+    }
+
+    .hero-card h1{
+      margin:0;
+      font-size:42px;
+      line-height:1.1;
+      letter-spacing:-.04em;
+      color:var(--dark);
+      word-break:keep-all;
+      overflow-wrap:anywhere;
+    }
+
+    .hero-card p{
+      margin:14px 0 0;
+      color:var(--text-soft);
+      font-size:15px;
+      max-width:760px;
+    }
+
+    .hero-meta{
+      margin-top:18px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+    }
+
+    .meta-pill{
+      display:inline-flex;
+      align-items:center;
+      min-height:38px;
+      padding:0 14px;
+      border-radius:999px;
+      background:#f8fafc;
+      border:1px solid #e2e8f0;
+      color:#111827;
+      font-size:13px;
+      font-weight:800;
+    }
+
+    .hero-links{
+      margin-top:18px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+    }
+
+    .hero-link{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:44px;
+      padding:0 16px;
+      border-radius:999px;
+      font-size:14px;
+      font-weight:900;
+      border:1px solid var(--line);
+      background:#fff;
+    }
+
+    .hero-link.is-primary{
+      background:#111827;
+      color:#fff;
+      border-color:#111827;
+    }
+
+    .aside-card{
+      padding:18px;
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+    }
+
+    .guide-thumb{
+      border-radius:22px;
+      background:linear-gradient(180deg,#eef8ff,#e0f2fe);
+      border:1px solid #dbeafe;
+      padding:18px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      min-height:260px;
+    }
+
+    .guide-thumb img{
+      width:100%;
+      max-width:320px;
+      height:auto;
+      object-fit:contain;
+    }
+
+    .quick-grid{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:10px;
+    }
+
+    .quick-item{
+      border:1px solid #e2e8f0;
+      background:#f8fafc;
+      border-radius:18px;
+      padding:14px;
+    }
+
+    .quick-item strong{
+      display:block;
+      font-size:12px;
+      color:#64748b;
+      margin-bottom:4px;
+    }
+
+    .quick-item span{
+      display:block;
+      font-size:15px;
+      font-weight:900;
+      color:#111827;
+      word-break:keep-all;
+      overflow-wrap:anywhere;
+    }
+
+    .section-stack{
+      margin-top:18px;
+      display:grid;
+      gap:18px;
+    }
+
+    .section-card{
+      padding:24px;
+    }
+
+    .section-head{
+      margin-bottom:18px;
+    }
+
+    .section-head h2{
+      margin:0;
+      font-size:30px;
+      line-height:1.2;
+      letter-spacing:-.03em;
+      color:var(--dark);
+      word-break:keep-all;
+      overflow-wrap:anywhere;
+    }
+
+    .section-head p{
+      margin:8px 0 0;
+      font-size:14px;
+      color:var(--text-soft);
+      word-break:keep-all;
+      overflow-wrap:anywhere;
+    }
+
+    .highlight-box{
+      border:1px solid #dbeafe;
+      background:linear-gradient(180deg,#f8fbff,#eef6ff);
+      border-radius:22px;
+      padding:18px;
+    }
+
+    .highlight-box strong{
+      display:block;
+      font-size:16px;
+      color:#0f172a;
+      margin-bottom:8px;
+    }
+
+    .card-grid{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:14px;
+    }
+
+    .info-box{
+      border:1px solid #e2e8f0;
+      border-radius:20px;
+      padding:18px;
+      background:#fff;
+      min-width:0;
+    }
+
+    .info-box h3{
+      margin:0 0 10px;
+      font-size:20px;
+      line-height:1.3;
+      word-break:keep-all;
+      overflow-wrap:anywhere;
+    }
+
+    .info-box p{
+      margin:0;
+      color:var(--text-soft);
+      font-size:14px;
+    }
+
+    .note,
+    .ok-note{
+      display:flex;
+      gap:10px;
+      padding:14px 16px;
+      border-radius:18px;
+      margin:12px 0 16px;
+      font-size:14px;
+    }
+
+    .note{
+      border:1px solid var(--warn-border);
+      background:var(--warn-bg);
+    }
+
+    .ok-note{
+      border:1px solid var(--ok-border);
+      background:var(--ok-bg);
+    }
+
+    .note strong,
+    .ok-note strong{
+      font-weight:900;
+    }
+
+    .note .note-ico{
+      width:18px;
+      height:18px;
+      flex:0 0 18px;
+      margin-top:2px;
+      color:#b45309;
+    }
+
+    .panel{
+      border:1px solid var(--soft-border);
+      background:var(--soft-bg);
+      border-radius:18px;
+      padding:14px 16px;
+      margin:12px 0 16px;
+    }
+
+    .check-grid{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:12px;
+      margin-top:12px;
+    }
+
+    .check-card{
+      border:1px solid var(--line);
+      border-radius:18px;
+      background:#fff;
+      padding:16px;
+    }
+
+    .check-card h3{
+      margin:0 0 6px;
+      font-size:17px;
+      line-height:1.3;
+    }
+
+    .check-card p{
+      margin:0;
+      color:var(--text-soft);
+      font-size:14px;
+    }
+
+    .imgrow{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+      gap:12px;
+      margin:12px 0;
+    }
+
+    .imgrow img{
+      width:100%;
+      border:1px solid var(--line);
+      border-radius:16px;
+      background:#fff;
+      display:block;
+    }
+
+    .guide-list{
+      margin:0;
+      padding-left:18px;
+    }
+
+    .guide-list li{margin:6px 0}
+
+    .faq-list{
+      display:grid;
+      gap:12px;
+    }
+
+    .faq-item{
+      border:1px solid var(--line);
+      border-radius:18px;
+      background:#fff;
+      padding:16px;
+    }
+
+    .faq-q{
+      font-weight:900;
+      margin:0 0 6px;
+    }
+
+    .faq-a{
+      margin:0;
+      color:var(--text-soft);
+    }
+
+    .links{
+      background:var(--soft-bg);
+      padding:16px;
+      border-radius:18px;
+      margin-top:14px;
+      border:1px solid var(--soft-border);
+    }
+
+    .links h3{
+      color:var(--text);
+      margin:0 0 8px;
+      font-size:18px;
+      line-height:1.35;
+    }
+
+    .links p{
+      margin:0 0 10px;
+      color:var(--text-soft);
+    }
+
+    .links a{
+      font-weight:900;
+      color:#111827;
+    }
+
+    .bottom-cta{
+      margin-top:18px;
+      border-radius:22px;
+      border:1px solid var(--line);
+      background:linear-gradient(180deg,#ffffff,#fafcff);
+      box-shadow:var(--shadow);
+      padding:18px;
+    }
+
+    .bottom-cta .title{
+      font-size:21px;
+      font-weight:900;
+      color:var(--text);
+      margin:0 0 8px;
+      line-height:1.3;
+    }
+
+    .bottom-cta .desc{
+      margin:0 0 14px;
+      color:var(--text-soft);
+      font-size:14px;
+    }
+
+    .cta-row{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      align-items:center;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      min-height:44px;
+      padding:0 16px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      cursor:pointer;
+      font-weight:900;
+      text-decoration:none !important;
+      line-height:1;
+      user-select:none;
+      background:#fff;
+      color:#111827;
+      transition:transform .12s ease, box-shadow .12s ease, border-color .12s ease, background .12s ease;
+    }
+
+    .btn:hover{
+      text-decoration:none;
+      transform:translateY(-1px);
+      box-shadow:0 8px 18px rgba(0,0,0,.06);
+      border-color:#d1d5db;
+      background:#f8fafc;
+    }
+
+    .btn-primary{
+      background:#111827;
+      color:#fff;
+      border-color:#111827;
+    }
+
+    .btn-primary:hover{
+      border-color:#111827;
+      background:#0f172a;
+    }
+
+    .cta-badges{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      margin-top:10px;
+    }
+
+    .badge{
+      font-size:12px;
+      padding:6px 10px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      color:var(--text-soft);
+      background:#fff;
+    }
+
+    .kbd{
+      font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberation Mono","Courier New",monospace;
+      font-weight:900;
+      color:var(--text);
+      background:#fff;
+      border:1px solid var(--line);
+      border-bottom-width:2px;
+      padding:2px 6px;
+      border-radius:8px;
+      display:inline-block;
+    }
+
+    .mini-note{
+      margin-top:10px;
+      color:var(--text-faint);
+      font-size:13px;
+    }
+
+    .site-footer{
+      margin-top:26px;
+      border-top:1px solid var(--line);
+      background:#fff;
+    }
+
+    .footer-link-strip{
+      padding:14px 0;
+      border-bottom:1px solid #eef2f7;
+    }
+
+    .footer-link-strip__inner{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      flex-wrap:wrap;
+      text-align:center;
+    }
+
+    .footer-link-strip__actions{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      flex-wrap:wrap;
+    }
+
+    .footer-inner{padding:24px 0 34px}
+    .footer-top{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      gap:18px;
+      text-align:center;
+    }
+
+    .footer-brand{
+      font-size:18px;
+      font-weight:900;
+      color:#111827;
+    }
+
+    .footer-desc{
+      margin:8px 0 0;
+      color:var(--text-faint);
+      font-size:14px;
+      max-width:720px;
+      word-break:keep-all;
+      overflow-wrap:anywhere;
+    }
+
+    .footer-links{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:10px;
+    }
+
+    .footer-links a{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:40px;
+      padding:0 14px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      background:#f8fafc;
+      font-size:14px;
+      font-weight:800;
+    }
+
+    .footer-copy{
+      margin-top:18px;
+      padding-top:18px;
+      border-top:1px solid #eef2f7;
+      color:var(--text-faint);
+      font-size:13px;
+      text-align:center;
+    }
+
+    .mobile-bottom-nav{
+      position:fixed;
+      left:0;
+      right:0;
+      bottom:0;
+      z-index:1400;
+      display:none;
+      background:rgba(255,255,255,.96);
+      backdrop-filter:saturate(160%) blur(10px);
+      border-top:1px solid rgba(15,23,42,.08);
+      padding:8px 10px calc(8px + env(safe-area-inset-bottom, 0px));
+    }
+
+    .mobile-bottom-nav__inner{
+      display:grid;
+      grid-template-columns:repeat(4,minmax(0,1fr));
+      gap:6px;
+      max-width:640px;
+      margin:0 auto;
+    }
+
+    .mobile-bottom-nav__item{
+      min-width:0;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      gap:4px;
+      padding:8px 4px 7px;
+      border-radius:12px;
+      color:#6b7280;
+    }
+
+    .mobile-bottom-nav__item svg{
+      width:20px;
+      height:20px;
+      display:block;
+      flex:0 0 auto;
+    }
+
+    .mobile-bottom-nav__label{
+      font-size:11px;
+      line-height:1.1;
+      font-weight:700;
+      letter-spacing:-0.01em;
+      white-space:nowrap;
+    }
+
+    .mobile-bottom-nav__item.is-active,
+    .mobile-bottom-nav__item[aria-current="page"]{
+      color:#111827;
+      background:#f3f4f6;
+    }
+
+    .backdrop{
+      position:fixed;
+      inset:0;
+      background:rgba(15,23,42,.38);
+      z-index:1600;
+    }
+
+    .drawer{
+      position:fixed;
+      top:0;
+      right:0;
+      bottom:0;
+      width:min(78vw,360px);
+      background:#fff;
+      box-shadow:-16px 0 40px rgba(15,23,42,.15);
+      z-index:1700;
+      overflow-y:auto;
+      transform:translateX(100%);
+      transition:transform .25s ease;
+    }
+
+    html.is-open .drawer{transform:translateX(0)}
+
+    .drawer header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:16px;
+      border-bottom:1px solid var(--line);
+      position:sticky;
+      top:0;
+      background:#fff;
+      z-index:2;
+    }
+
+    .drawer .section{padding:16px}
+    .drawer .nav-list{display:flex;flex-direction:column;gap:4px}
+    .drawer .nav-list a{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      width:100%;
+      min-height:44px;
+      padding:0 12px;
+      border-radius:12px;
+      font-weight:800;
+      color:#111827;
+      background:#f8fafc;
+    }
+
+    .lang-pills--drawer{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:8px;
+    }
+
+    .lang-pills--drawer .lang-pill{
+      width:100%;
+      display:flex;
+      justify-content:center;
+    }
+
+    .drawer-dotrule{
+      width:calc(100% - 32px);
+      margin:0 auto;
+      border-top:1px dashed rgba(15,23,42,.16);
+    }
+
+    .drawer-quick-stack{
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+      margin-top:14px;
+    }
+
+    .drawer-quick-pill{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      min-height:44px;
+      border:1px solid #dbe2ea;
+      border-radius:999px;
+      font-weight:800;
+      background:#fff;
+    }
+
+    .visually-hidden-seo{
+      position:absolute !important;
+      width:1px !important;
+      height:1px !important;
+      padding:0 !important;
+      margin:-1px !important;
+      overflow:hidden !important;
+      clip:rect(0,0,0,0) !important;
+      white-space:nowrap !important;
+      border:0 !important;
+    }
+
+    @media (max-width:980px){
+      .nav{display:none}
+      .hamburger{display:inline-flex;align-items:center;justify-content:center}
+      .nav-right{display:none}
+      .mobile-bottom-nav{display:block}
+      .countdown-bar{
+        min-height:52px;
+        align-items:center;
+        flex-direction:row;
+        justify-content:space-between;
+        gap:10px;
+      }
+      .countdown-bar__left{
+        width:auto;
+        min-width:0;
+        flex:1 1 auto;
+      }
+      .countdown-bar__actions{
+        width:auto;
+        justify-content:flex-end;
+        flex-wrap:nowrap;
+      }
+      .hero{
+        grid-template-columns:1fr;
+      }
+      .card-grid,
+      .check-grid,
+      .quick-grid{
+        grid-template-columns:1fr;
+      }
+    }
+
+    @media (max-width:640px){
+      .container{width:min(100% - 24px,1180px)}
+      .brand-title{font-size:14px}
+      .brand-sub{display:none}
+      .hero-card,
+      .section-card,
+      .aside-card{
+        border-radius:22px;
+      }
+      .hero-card{padding:20px 18px}
+      .hero-card h1{font-size:30px}
+      .aside-card{padding:14px}
+      .section-card{padding:20px 16px}
+      .section-head h2{font-size:25px}
+      .countdown-bar{gap:8px}
+      .countdown-bar__left{gap:8px}
+      .countdown-copy{
+        font-size:13px;
+        white-space:nowrap;
+        overflow:hidden;
+        text-overflow:ellipsis;
+      }
+      .countdown-link{
+        min-height:32px;
+        padding:0 10px;
+        font-size:12px;
+      }
+      .footer-link-strip__inner{
+        flex-direction:column;
+      }
+      .cta-row .btn{
+        width:100%;
+      }
+      .hero-visual{
+        min-height:220px;
+      }
+      .bottom-cta .title{
+        font-size:19px;
+      }
+    }
+
+    html.is-open body,
+    body.no-scroll{overflow:hidden}
+  </style>
+
+  <script id="ts-website-schema" type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "name":"TilesSurvive.net",
+    "url":"https://tilessurvive.net/",
+    "inLanguage":"en",
+    "description":"A Tiles Survive data hub for database pages, guides, seasons, and codes",
+    "potentialAction":{
+      "@type":"SearchAction",
+      "target":"https://tilessurvive.net/en/search/?q={search_term_string}",
+      "query-input":"required name=search_term_string"
+    }
+  }
+  </script>
+
+  <script id="ts-breadcrumb-schema" type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {
+        "@type":"ListItem",
+        "position":1,
+        "name":"Home",
+        "item":"https://tilessurvive.net/en/"
+      },
+      {
+        "@type":"ListItem",
+        "position":2,
+        "name":"Guides",
+        "item":"https://tilessurvive.net/en/guides/"
+      },
+      {
+        "@type":"ListItem",
+        "position":3,
+        "name":"Tiles Survive Discount Top-Up",
+        "item":"https://tilessurvive.net/en/guides/discount-topup/"
+      }
+    ]
+  }
+  </script>
+
+  <script id="ts-article-schema" type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Article",
+    "headline":"Tiles Survive Discount Top-Up Guide",
+    "description":"A complete guide explaining the requirements you should check before using self top-up for Tiles Survive, including 2FA, Google Play Games login not supported, the actual top-up flow, and coupon usarge.",
+    "image":"https://tilessurvive.net/img/guides/discount-topup.png",
+    "author":{
+      "@type":"Organization",
+      "name":"TilesSurvive.net"
+    },
+    "publisher":{
+      "@type":"Organization",
+      "name":"TilesSurvive.net",
+      "logo":{
+        "@type":"ImageObject",
+        "url":"https://tilessurvive.net/img/logo-tilessurvive.png"
+      }
+    },
+    "mainEntityOfPage":"https://tilessurvive.net/en/guides/discount-topup/",
+    "inLanguage":"en-US"
+  }
+  </script>
+
+  <script id="ts-faq-schema" type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question",
+        "name":"Can I use self top-up if my Tiles Survive account is linked through Google Play Games?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"No. Tiles Survive accounts linked through Google Play Games are currently not supported for self top-up. Only accounts directly linked to a Google account or Facebook account are supported."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"Why is 2FA required?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"Self top-up requires a security verification step during login, so 2FA must be enabled on the linked Google or Facebook account for the process to work properly."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"How can I check whether 2FA is enabled?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"Try logging into your Google or Facebook account in an incognito window. If you see an extra verification step such as phone verification, email verification, or authenticator approval, then 2FA is enabled."
+        }
+      },
+      {
+        "@type":"Question",
+        "name":"What should I do if I get stuck during the process?",
+        "acceptedAnswer":{
+          "@type":"Answer",
+          "text":"First recheck your account login method and 2FA status. If you are still unsure, you can contact support through the Discord help channel."
+        }
+      }
+    ]
+  }
+  </script>
+
+  <script>
+    (function(){
+      function normalizeLang(code){
+        var low = String(code || '').trim().toLowerCase();
+        if (low === 'ko') return 'ko';
+        if (low === 'en') return 'en';
+        if (low === 'ja') return 'ja';
+        if (low === 'ru') return 'ru';
+        if (low === 'zh-tw' || low === 'zh_tw' || low === 'tw') return 'zh-tw';
+        return 'en';
+      }
+
+      function pathWithLang(lang, path){
+        return '/' + lang + path;
+      }
+
+      function applyLang(lang){
+        lang = normalizeLang(lang);
+        var currentPath = location.pathname.replace(/^\/(ko|en|ja|ru|zh-tw)(\/|$)/i, '/');
+        if (currentPath === '') currentPath = '/';
+        location.href = pathWithLang(lang, currentPath);
+      }
+
+      window.TS_LANG = {
+        normalize: normalizeLang,
+        apply: applyLang
+      };
+    })();
+  </script>
+</head>
+
+<body>
+  <svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+    <symbol id="ico-info" viewBox="0 0 24 24">
+      <path d="M12 2a10 10 0 1 0 .001 20.001A10 10 0 0 0 12 2z" fill="currentColor"/>
+      <path d="M12 10v7" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+      <path d="M12 7h.01" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+    </symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" role="banner">
+    <div class="container nav-bar">
+      <div class="nav-left">
+        <a class="brand" href="/en/" aria-label="TilesSurvive.net home">
+          <img class="brand-logo" src="/img/logo-tilessurvive.png" alt="TilesSurvive.net" width="30" height="30" />
+          <span class="brand-text">
+            <span class="brand-title">TilesSurvive.net</span>
+            <span class="brand-sub">Tiles Survive Data / Guides / Codes / Tools Hub</span>
+          </span>
+        </a>
+
+        <nav class="nav" id="primaryNav" role="navigation" aria-label="Primary menu">
+          <a href="/en/buildings/">Buildings</a>
+          <a href="/en/heroes/">Heroes</a>
+          <a href="/en/behemoths/">Behemoths</a>
+          <a href="/en/database/">Database</a>
+          <a href="/en/guides/" aria-current="page">Guides</a>
+          <a href="/en/seasons/">Seasons</a>
+        </nav>
+      </div>
+
+      <button class="hamburger" id="menuToggle" aria-label="Open menu" aria-controls="mobileDrawer" aria-expanded="false">☰</button>
+
+      <div class="nav-right">
+        <div id="langDropdownHeader" class="lang-pills" aria-label="Language selector"></div>
+      </div>
+    </div>
+  </header>
+
+  <section class="countdown-bar-wrap" aria-label="Coupon countdown">
+    <div class="container countdown-bar">
+      <div class="countdown-bar__left">
+        <span class="countdown-badge">Codes</span>
+        <div class="countdown-copy">
+          <strong>Tiles Survive Coupon Countdown</strong>
+        </div>
+      </div>
+      <div class="countdown-bar__actions">
+        <a class="countdown-link" href="/en/codes/">Latest Codes</a>
+        <a class="countdown-link" href="/en/guides/gift-code-how-to-use/">How to Redeem</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="backdrop" id="backdrop" hidden></div>
+
+  <aside class="drawer" id="mobileDrawer" aria-hidden="true" aria-label="Mobile menu">
+    <header>
+      <strong>Menu</strong>
+      <button id="btnClose" aria-label="Close" style="background:none;border:0;font-size:20px;cursor:pointer">✕</button>
+    </header>
+
+    <div class="section">
+      <div id="langDropdownDrawer" class="lang-pills lang-pills--drawer" aria-label="Language selector"></div>
+    </div>
+
+    <div class="drawer-dotrule" aria-hidden="true"></div>
+
+    <div class="section">
+      <div class="nav-list" role="navigation" aria-label="Mobile menu list">
+        <a href="/en/buildings/">Buildings</a>
+        <a href="/en/heroes/">Heroes</a>
+        <a href="/en/database/">Database</a>
+        <a href="/en/guides/">Guides</a>
+        <a href="/en/seasons/">Seasons</a>
+      </div>
+
+      <div class="drawer-quick-stack">
+        <a class="drawer-quick-pill js-drawer-close" href="https://discord.gg/EjqWhTPyaEjqWhTPyaEjqWhTPya" target="_blank" rel="noopener noreferrer">Discord</a>
+        <a class="drawer-quick-pill js-drawer-close" href="/en/codes/">Gift Codes</a>
+      </div>
+    </div>
+  </aside>
+
+  <main class="container page-main" id="main" role="main" aria-label="Main content">
+    <section class="visually-hidden-seo" aria-label="SEO summary">
+      <p>Tiles Survive discount top-up guide, self top-up method, account requirements, 2FA, Google Play Games not supported, actual payment steps, coupon usarge</p>
+    </section>
+
+    <nav class="breadcrumb" aria-label="Breadcrumb">
+      <a href="/en/">Home</a>
+      <span>›</span>
+      <a href="/en/guides/">Guides</a>
+      <span>›</span>
+      <span aria-current="page">Tiles Survive Discount Top-Up</span>
+    </nav>
+
+    <section class="hero" aria-labelledby="pageTitle">
+      <article class="hero-card">
+        <span class="eyebrow">Guide</span>
+        <h1 id="pageTitle">Tiles Survive Discount Top-Up Guide</h1>
+        <p>
+          This page first explains what you should check before using self top-up for Tiles Survive,
+          including direct Google or Facebook account login, 2FA, Google Play Games login not supported,
+          the actual payment flow, and how to apply a coupon.
+        </p>
+
+        <div class="hero-meta">
+          <span class="meta-pill">Direct Google / Facebook login required</span>
+          <span class="meta-pill">2FA required</span>
+          <span class="meta-pill">Google Play Games login not supported</span>
+          <span class="meta-pill">Step-by-step self top-up guide</span>
+        </div>
+
+        <div class="hero-links">
+          <a class="hero-link is-primary" href="https://lootbar.gg/shop/ten/top-up/tiles-survive" target="_blank" rel="noopener noreferrer">Start Discount Top-Up</a>
+          <a class="hero-link" href="#overview">View Requirements</a>
+          <a class="hero-link" href="#help">View Support Info</a>
+        </div>
+      </article>
+
+      <aside class="aside-card" aria-label="Tiles Survive discount top-up summary">
+        <div class="guide-thumb">
+          <img src="/img/guides/discount-topup.png" alt="Tiles Survive discount top-up featured image" />
+        </div>
+
+        <div class="quick-grid">
+          <div class="quick-item">
+            <strong>Check First</strong>
+            <span>Confirm direct account login type</span>
+          </div>
+          <div class="quick-item">
+            <strong>Check Second</strong>
+            <span>Confirm whether 2FA is enabled</span>
+          </div>
+          <div class="quick-item">
+            <strong>Important Note</strong>
+            <span>Google Play Games login not supported</span>
+          </div>
+          <div class="quick-item">
+            <strong>Extra Benefit</strong>
+            <span>Coupon can be applied before payment</span>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <div class="section-stack">
+      <section class="section-card" id="overview" aria-labelledby="overviewTitle">
+        <div class="section-head">
+          <h2 id="overviewTitle">Please check these 2 things before you start</h2>
+          <p>If you confirm these two points first, you can avoid most login failures or interruptions during self top-up.</p>
+        </div>
+
+        <div class="note" role="note" aria-label="Important notice">
+          <svg class="note-ico" aria-hidden="true"><use href="#ico-info"></use></svg>
+          <div>
+            <strong>Important:</strong>
+            Your personal information and account security must be managed by you directly. Before paying, make sure your login method and security settings are correct.
+          </div>
+        </div>
+
+        <div class="check-grid">
+          <article class="check-card">
+            <h3>1. Confirm that your account is directly linked</h3>
+            <p>Your Tiles Survive account must be directly linked to a <strong>Google account</strong> or a <strong>Facebook account</strong>.</p>
+          </article>
+
+          <article class="check-card">
+            <h3>2. Confirm that 2FA is enabled</h3>
+            <p>The linked Google or Facebook account must have <strong>2FA</strong> enabled.</p>
+          </article>
+        </div>
+
+        <div class="highlight-box" style="margin-top:16px;">
+          <strong>Supported account login methods</strong>
+          Self top-up currently supports <strong>only Tiles Survive accounts directly linked to a Google account or Facebook account</strong>.
+        </div>
+
+        <div class="faq-list" style="margin-top:16px;">
+          <article class="faq-item">
+            <p class="faq-q">Can I use an account linked through Google Play Games?</p>
+            <p class="faq-a">No. <strong>Accounts linked through Google Play Games are currently not supported for self top-up.</strong> At the moment, <strong>only direct Google account or Facebook account login is supported.</strong></p>
+          </article>
+        </div>
+
+        <div class="ok-note" role="note" aria-label="Ready account note">
+          <div>
+            <strong>Quick check:</strong> If you normally log in directly with Google or Facebook and you see an extra verification step during login, you are almost ready.
+          </div>
+        </div>
+      </section>
+
+      <section class="section-card" id="security" aria-labelledby="securityTitle">
+        <div class="section-head">
+          <h2 id="securityTitle">Why is 2FA required?</h2>
+          <p>Self top-up requires a security verification step during login. That is why the linked Google or Facebook account must have 2FA enabled for the process to work properly.</p>
+        </div>
+
+        <div class="card-grid">
+          <article class="info-box">
+            <h3>How to enable 2FA on Google</h3>
+            <ul class="guide-list">
+              <li>Go to your Google Account management page.</li>
+              <li>Open the <strong>Security</strong> menu.</li>
+              <li>Find <strong>2-Step Verification</strong>.</li>
+              <li>Register your preferred method such as phone number or an authenticator app.</li>
+              <li>After setup, verify that it is working properly.</li>
+            </ul>
+          </article>
+
+          <article class="info-box">
+            <h3>How to enable 2FA on Facebook</h3>
+            <ul class="guide-list">
+              <li>Open <strong>Settings & Privacy</strong> in Facebook.</li>
+              <li>Go to <strong>Password and Security</strong>.</li>
+              <li>Find the 2FA section.</li>
+              <li>Choose your preferred method such as text verification or an authenticator app.</li>
+              <li>After setup, verify that it is working properly.</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="highlight-box" style="margin-top:16px;">
+          <strong>How to check whether 2FA is enabled</strong>
+          The easiest way is to test it in an <strong>incognito window</strong>.
+          Try logging into your Google account or Facebook account there.
+          If you see an extra step such as phone verification, email verification, or authenticator approval,
+          then 2FA is enabled.
+        </div>
+
+        <div class="ok-note" role="note" aria-label="2FA check note">
+          <div>
+            <strong>Check result:</strong> If you see phone verification, email verification, or an authenticator approval step, then 2FA is active.
+          </div>
+        </div>
+      </section>
+
+      <section class="section-card" id="howto" aria-labelledby="howtoTitle">
+        <div class="section-head">
+          <h2 id="howtoTitle">Actual self top-up process</h2>
+          <p>If your account type and 2FA are ready, the remaining flow is not difficult. Just follow the steps below.</p>
+        </div>
+
+        <div class="panel">
+          <p style="margin:0 0 8px;"><strong>Top-up page</strong></p>
+          <p style="margin:0 0 8px;">
+            <a href="https://lootbar.gg/shop/ten/top-up/tiles-survive" target="_blank" rel="noopener noreferrer">Open the Tiles Survive discount top-up page</a>
+          </p>
+          <p style="margin:0;">Enter <span class="kbd">#s4qU</span> in the search box before payment to apply an extra coupon.</p>
+        </div>
+
+        <div class="ok-note" role="note" aria-label="quick reassurance">
+          <div>
+            <strong>Do not worry too much.</strong> If the conditions are correct, most users can complete self top-up by simply following the steps below.
+          </div>
+        </div>
+
+        <div class="timeline">
+          <article class="faq-item">
+            <p class="faq-q">1. Choose a single package</p>
+            <p class="faq-a">Select the package you want, then click <strong>Top-up Now</strong>.</p>
+          </article>
+        </div>
+        <div class="imgrow">
+          <img src="/img/lootbar/step1.png" alt="Tiles Survive single package selection screen" loading="lazy">
+        </div>
+
+        <div class="timeline">
+          <article class="faq-item">
+            <p class="faq-q">2. Add multiple packages</p>
+            <p class="faq-a">If you want to buy multiple items together, add the packages you want to the cart.</p>
+          </article>
+        </div>
+        <div class="imgrow">
+          <img src="/img/lootbar/step2.png" alt="Tiles Survive multiple packages added to cart screen" loading="lazy">
+        </div>
+
+        <div class="timeline">
+          <article class="faq-item">
+            <p class="faq-q">3. Proceed to payment</p>
+            <p class="faq-a">Choose your payment method, either card or PayPal, then click <strong>Pay Now</strong>. The left side is <strong>self top-up</strong> and the right side is agent-assisted top-up. Make sure you choose <strong>self top-up</strong>.</p>
+          </article>
+        </div>
+        <div class="imgrow">
+          <img src="/img/lootbar/step3.png" alt="Tiles Survive payment method selection screen" loading="lazy">
+          <img src="/img/lootbar/step8.png" alt="Tiles Survive self top-up option screen" loading="lazy">
+        </div>
+
+        <div class="timeline">
+          <article class="faq-item">
+            <p class="faq-q">4. Log in with your linked account</p>
+            <p class="faq-a">Once you choose self top-up, a login screen will appear. For most users, Google login is the easiest option.</p>
+          </article>
+        </div>
+
+        <ul class="guide-list">
+          <li>Enter your Google account.</li>
+          <li>Enter your password.</li>
+        </ul>
+
+        <div class="note" role="note" aria-label="Password note">
+          <svg class="note-ico" aria-hidden="true"><use href="#ico-info"></use></svg>
+          <div>
+            <strong>Tip:</strong> If you are unsure about your password, check it once in advance before starting the process.
+          </div>
+        </div>
+
+        <div class="imgrow">
+          <img src="/img/lootbar/step4.png" alt="Google login screen" loading="lazy">
+          <img src="/img/lootbar/step5.png" alt="Google account input screen" loading="lazy">
+          <img src="/img/lootbar/step6.png" alt="Google password input screen" loading="lazy">
+        </div>
+
+        <div class="timeline">
+          <article class="faq-item">
+            <p class="faq-q">5. Pay the total cart amount</p>
+            <p class="faq-a">Check the total amount in your cart, then complete the payment.</p>
+          </article>
+        </div>
+        <div class="imgrow">
+          <img src="/img/lootbar/step7.png" alt="Tiles Survive cart confirmation screen" loading="lazy">
+          <img src="/img/lootbar/step9.png" alt="Top-up amount confirmation screen" loading="lazy">
+          <img src="/img/lootbar/step10.png" alt="Final payment screen" loading="lazy">
+        </div>
+
+        <div class="timeline">
+          <article class="faq-item">
+            <p class="faq-q">6. Confirm payment completion</p>
+            <p class="faq-a">Once payment is completed, a completion screen will appear. If needed, click <strong>Got it</strong>. <strong>Your top-up is complete at this point.</strong></p>
+          </article>
+        </div>
+        <div class="imgrow">
+          <img src="/img/lootbar/step12.png" alt="Payment completion screen" loading="lazy">
+          <img src="/img/lootbar/step13.png" alt="Top-up completed 안내 screen" loading="lazy">
+          <img src="/img/lootbar/step14.png" alt="Final completion screen" loading="lazy">
+        </div>
+
+        <div class="timeline">
+          <article class="faq-item">
+            <p class="faq-q">7. Check the in-game delivery</p>
+            <p class="faq-a">Log into Tiles Survive and confirm that the purchased package has been delivered correctly.</p>
+          </article>
+        </div>
+        <div class="imgrow">
+          <img src="/img/lootbar/step15.png" alt="In-game top-up delivery confirmation screen" loading="lazy">
+        </div>
+      </section>
+
+      <section class="section-card" id="faq" aria-labelledby="faqTitle">
+        <div class="section-head">
+          <h2 id="faqTitle">Frequently Asked Questions</h2>
+          <p>This section covers the issues that users most often get confused about before starting self top-up.</p>
+        </div>
+
+        <div class="faq-list">
+          <article class="faq-item">
+            <p class="faq-q">Why do so many users get stuck during self top-up?</p>
+            <p class="faq-a">In most cases, it is not a payment problem. The issue is usually that the account login method is unsupported or 2FA has not been enabled.</p>
+          </article>
+
+          <article class="faq-item">
+            <p class="faq-q">Can I use an account linked through Google Play Games?</p>
+            <p class="faq-a">No. At the moment, only accounts directly linked to a Google account or Facebook account are supported for self top-up.</p>
+          </article>
+
+          <article class="faq-item">
+            <p class="faq-q">How can I confirm that 2FA is enabled?</p>
+            <p class="faq-a">If you log in through an incognito window and see an extra verification step such as phone, email, or authenticator verification, then 2FA is enabled.</p>
+          </article>
+
+          <article class="faq-item">
+            <p class="faq-q">Where do I enter the coupon?</p>
+            <p class="faq-a">Enter <span class="kbd">#s4qU</span> in the search box on the payment page before completing checkout.</p>
+          </article>
+
+          <article class="faq-item">
+            <p class="faq-q">What should I do if I get stuck in the middle?</p>
+            <p class="faq-a">Recheck your account login method and 2FA status first. If you are still unsure, contact support through the Discord help channel.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section-card" id="help" aria-labelledby="helpTitle">
+        <div class="section-head">
+          <h2 id="helpTitle">Support and additional info</h2>
+          <p>If you have checked all conditions but still feel unsure, use the support links below.</p>
+        </div>
+
+        <div class="note" role="note" aria-label="Discord help">
+          <svg class="note-ico" aria-hidden="true"><use href="#ico-info"></use></svg>
+          <div>
+            <strong>If you get stuck during self top-up</strong><br>
+            <a href="https://discord.gg/EjqWhTPyaEjqWhTPyaEjqWhTPya" target="_blank" rel="noopener noreferrer">Contact support through Discord</a><br>
+            If you tell them which step you got stuck on, they can guide you more quickly.
+          </div>
+        </div>
+
+        <div class="links">
+          <h3>Check the latest discount top-up promotions and coupon info</h3>
+          <p>You can find cumulative top-up benefits, monthly coupon schedules, and related notices on the page below.</p>
+          <a href="/en/guides/discount-topup-promotion/">View the latest discount top-up and coupon info</a>
+        </div>
+
+        <div class="links">
+          <h3>Want to check discounts for other mobile games too?</h3>
+          <p>You can browse discounts for other supported games through the link below.</p>
+          <a href="https://lootbar.gg/shop/ten" target="_blank" rel="noopener noreferrer">View more mobile game discounts</a>
+        </div>
+
+        <div class="bottom-cta" aria-label="Top-up CTA">
+          <p class="title">Ready to continue with self top-up?</p>
+          <p class="desc">
+            If your Tiles Survive account is directly linked to Google or Facebook and 2FA is enabled,
+            you can continue with self top-up through the link below.
+            Before payment, do not forget to apply the <span class="kbd">#s4qU</span> coupon as well.
+          </p>
+
+          <div class="cta-row">
+            <a class="btn btn-primary" href="https://lootbar.gg/shop/ten/top-up/tiles-survive" target="_blank" rel="noopener noreferrer">Open the Tiles Survive discount top-up page</a>
+            <a class="btn" href="https://discord.gg/EjqWhTPyaEjqWhTPyaEjqWhTPya" target="_blank" rel="noopener noreferrer">Go to Discord support</a>
+            <a class="btn" href="/en/guides/discount-topup-promotion/">Latest discount top-up and coupon info</a>
+            <a class="btn" href="https://lootbar.gg/shop/ten" target="_blank" rel="noopener noreferrer">More mobile game discounts</a>
+            <a class="btn" href="/en/codes/">View the latest gift codes</a>
+          </div>
+
+          <div class="cta-badges" aria-label="quick notes">
+            <span class="badge">Direct Google / Facebook login required</span>
+            <span class="badge">2FA required</span>
+            <span class="badge">Google Play Games login not supported</span>
+            <span class="badge">Step images included</span>
+            <span class="badge">Discord support available if stuck</span>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer" role="contentinfo" aria-label="Footer">
+    <div class="footer-link-strip">
+      <div class="container footer-link-strip__inner">
+        <div class="footer-link-strip__actions">
+          <a class="countdown-link" href="https://discord.gg/EjqWhTPyaEjqWhTPyaEjqWhTPya" target="_blank" rel="noopener noreferrer">Discord</a>
+          <a class="countdown-link" href="/en/codes/">Gift Codes</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <div>
+          <div class="footer-brand">TilesSurvive.net</div>
+          <p class="footer-desc">
+            This unofficial fan site was created to organize Tiles Survive data and help players settle in more easily.
+            It is not affiliated with Tiles Survive.
+          </p>
+        </div>
+
+        <nav class="footer-links" aria-label="Footer menu">
+          <a href="/en/about/">About</a>
+          <a href="/en/privacy/">Privacy</a>
+        </nav>
+      </div>
+
+      <div class="footer-copy">
+        © 2026 TilesSurvive.net. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <nav class="mobile-bottom-nav" aria-label="Mobile quick navigation">
+    <div class="mobile-bottom-nav__inner">
+      <a class="mobile-bottom-nav__item" href="/en/" data-mobile-nav="home">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M4 10.5 12 4l8 6.5V20a1 1 0 0 1-1 1h-4v-6H9v6H5a1 1 0 0 1-1-1v-9.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+        </svg>
+        <span class="mobile-bottom-nav__label">Home</span>
+      </a>
+
+      <a class="mobile-bottom-nav__item" href="/en/guides/" data-mobile-nav="guides">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M6 5.5A2.5 2.5 0 0 1 8.5 3H19v16H8.5A2.5 2.5 0 0 0 6 21V5.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+          <path d="M6 6h11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+        <span class="mobile-bottom-nav__label">Guides</span>
+      </a>
+
+      <a class="mobile-bottom-nav__item" href="/en/seasons/" data-mobile-nav="seasons">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 3v4M12 17v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M3 12h4M17 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          <circle cx="12" cy="12" r="3.5" stroke="currentColor" stroke-width="1.8"/>
+        </svg>
+        <span class="mobile-bottom-nav__label">Seasons</span>
+      </a>
+
+      <a class="mobile-bottom-nav__item" href="/en/codes/" data-mobile-nav="codes">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M8 7.5h8a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="1.8"/>
+          <path d="M9 7V6a3 3 0 1 1 6 0v1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          <path d="M12 11v3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+        <span class="mobile-bottom-nav__label">Codes</span>
+      </a>
+    </div>
+  </nav>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var html = document.documentElement;
+      var body = document.body;
+      var drawer = document.getElementById('mobileDrawer');
+      var backdrop = document.getElementById('backdrop');
+      var btnOpen = document.getElementById('menuToggle');
+      var btnClose = document.getElementById('btnClose');
+
+      function openDrawer(){
+        html.classList.add('is-open');
+        body.classList.add('no-scroll');
+        backdrop.hidden = false;
+        drawer.setAttribute('aria-hidden', 'false');
+        btnOpen && btnOpen.setAttribute('aria-expanded', 'true');
+      }
+
+      function closeDrawer(){
+        html.classList.remove('is-open');
+        body.classList.remove('no-scroll');
+        backdrop.hidden = true;
+        drawer.setAttribute('aria-hidden', 'true');
+        btnOpen && btnOpen.setAttribute('aria-expanded', 'false');
+      }
+
+      btnOpen && btnOpen.addEventListener('click', openDrawer);
+      btnClose && btnClose.addEventListener('click', closeDrawer);
+      backdrop && backdrop.addEventListener('click', closeDrawer);
+
+      window.addEventListener('keydown', function(e){
+        if (e.key === 'Escape') closeDrawer();
+      });
+
+      var drawerLinks = drawer ? drawer.querySelectorAll('a') : [];
+      Array.prototype.forEach.call(drawerLinks, function(link){
+        link.addEventListener('click', closeDrawer);
+      });
+    });
+  </script>
+
+  <script>
+    (function(){
+      var LANGS = [
+        { code:'ko', label:'KO' },
+        { code:'en', label:'EN' },
+        { code:'ja', label:'JA' },
+        { code:'ru', label:'RU' },
+        { code:'zh-tw', label:'TW' }
+      ];
+
+      function currentLang(){
+        return 'en';
+      }
+
+      function render(root){
+        if (!root) return;
+        var cur = currentLang();
+        root.innerHTML = LANGS.map(function(lang){
+          return '<button type="button" class="lang-pill" data-lang="' + lang.code + '" aria-current="' + (lang.code === cur ? 'true' : 'false') + '">' + lang.label + '</button>';
+        }).join('');
+      }
+
+      function bind(root){
+        if (!root) return;
+        root.addEventListener('click', function(e){
+          var btn = e.target.closest('.lang-pill[data-lang]');
+          if (!btn) return;
+          e.preventDefault();
+          window.TS_LANG.apply(btn.getAttribute('data-lang'));
+        });
+      }
+
+      document.addEventListener('DOMContentLoaded', function(){
+        var header = document.getElementById('langDropdownHeader');
+        var drawer = document.getElementById('langDropdownDrawer');
+        render(header);
+        render(drawer);
+        bind(header);
+        bind(drawer);
+      });
+    })();
+  </script>
+
+  <script>
+    (function(){
+      function updateBottomNavActive(){
+        var pathname = location.pathname.toLowerCase();
+        var items = document.querySelectorAll('.mobile-bottom-nav__item');
+
+        Array.prototype.forEach.call(items, function(item){
+          item.classList.remove('is-active');
+          item.removeAttribute('aria-current');
+
+          var key = item.getAttribute('data-mobile-nav');
+          var active = false;
+
+          if (key === 'home') {
+            active = pathname === '/en/' || pathname === '/en';
+          } else if (key === 'guides') {
+            active = pathname.indexOf('/en/guides') === 0;
+          } else if (key === 'seasons') {
+            active = pathname.indexOf('/en/seasons') === 0;
+          } else if (key === 'codes') {
+            active = pathname.indexOf('/en/codes') === 0;
+          }
+
+          if (active) {
+            item.classList.add('is-active');
+            item.setAttribute('aria-current', 'page');
+          }
+        });
+      }
+
+      document.addEventListener('DOMContentLoaded', updateBottomNavActive);
+    })();
+  </script>
+</body>
+</html>

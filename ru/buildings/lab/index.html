@@ -1,0 +1,1380 @@
+<!doctype html>
+<html lang="ru" data-lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Lab | Здания Tiles Survive | TilesSurvive.net</title>
+  <base href="/" />
+
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="description" content="Индекс-страница Lab в Tiles Survive. Здесь в одном месте собраны исследования Development, Economy, Hero, Soldier, Intel Outpost, Alliance Duel, Special Forces, Infected Hunt и Doomsday Transport." />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+  <meta name="author" content="TilesSurvive.net" />
+
+  <link rel="canonical" href="https://tilessurvive.net/ru/buildings/lab/" />
+  <link rel="alternate" hreflang="x-default" href="https://tilessurvive.net/en/buildings/lab/" />
+  <link rel="alternate" hreflang="ko" href="https://tilessurvive.net/ko/buildings/lab/" />
+  <link rel="alternate" hreflang="en" href="https://tilessurvive.net/en/buildings/lab/" />
+  <link rel="alternate" hreflang="ja" href="https://tilessurvive.net/ja/buildings/lab/" />
+  <link rel="alternate" hreflang="ru" href="https://tilessurvive.net/ru/buildings/lab/" />
+  <link rel="alternate" hreflang="zh-TW" href="https://tilessurvive.net/zh-tw/buildings/lab/" />
+
+  <meta property="og:site_name" content="TilesSurvive.net" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Lab | Здания Tiles Survive | TilesSurvive.net" />
+  <meta property="og:description" content="Индекс-страница со структурой категорий исследований и приоритетами исследований в Tiles Survive" />
+  <meta property="og:url" content="https://tilessurvive.net/ru/buildings/lab/" />
+  <meta property="og:image" content="https://tilessurvive.net/img/buildings/lab-cover.webp" />
+  <meta property="og:locale" content="ru_RU" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Lab | Здания Tiles Survive | TilesSurvive.net" />
+  <meta name="twitter:description" content="Индекс-страница со структурой категорий исследований и приоритетами исследований в Tiles Survive" />
+  <meta name="twitter:image" content="https://tilessurvive.net/img/buildings/lab-cover.webp" />
+
+  <link rel="preload" as="image" href="/img/logo-tilessurvive.png" />
+  <link rel="preload" as="image" href="/img/buildings/lab-cover.webp" />
+
+  <style>
+    :root{
+      --bg:#f5f7fb;
+      --surface:#ffffff;
+      --surface-soft:#f8fafc;
+      --line:#e5e7eb;
+      --line-strong:#cbd5e1;
+      --text:#111827;
+      --text-soft:#64748b;
+      --text-faint:#94a3b8;
+      --title:#0f172a;
+      --accent:#111827;
+      --accent-soft:#eef2f7;
+      --brand:#2563eb;
+      --brand-soft:#dbeafe;
+      --good:#166534;
+      --good-soft:#ecfdf3;
+      --warn:#9a3412;
+      --warn-soft:#fff7ed;
+      --container:min(1180px, calc(100% - 32px));
+      --radius-lg:28px;
+      --radius-md:18px;
+      --radius-sm:12px;
+      --shadow:0 16px 40px rgba(15,23,42,.06);
+    }
+
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;overflow-x:hidden}
+    body{
+      background:var(--bg);
+      color:var(--text);
+      font-family:"Pretendard","Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",sans-serif;
+      line-height:1.6;
+      padding-bottom:calc(76px + env(safe-area-inset-bottom, 0px));
+      word-break:keep-all;
+    }
+
+    a{color:inherit;text-decoration:none}
+    img{display:block;max-width:100%}
+    button{font:inherit}
+
+    .container{
+      width:var(--container);
+      margin:0 auto;
+    }
+
+    .skip-link{
+      position:absolute;
+      left:12px;
+      top:-44px;
+      z-index:3000;
+      background:#111827;
+      color:#fff;
+      padding:10px 14px;
+      border-radius:10px;
+      font-weight:800;
+    }
+    .skip-link:focus{top:12px}
+
+    .site-header{
+      position:sticky;
+      top:0;
+      z-index:1500;
+      background:rgba(255,255,255,.92);
+      backdrop-filter:saturate(160%) blur(12px);
+      border-bottom:1px solid rgba(15,23,42,.06);
+    }
+
+    .nav-bar{
+      min-height:68px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+    }
+
+    .nav-left{
+      display:flex;
+      align-items:center;
+      gap:20px;
+      min-width:0;
+      flex:1 1 auto;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      min-width:0;
+      color:#111827;
+    }
+
+    .brand-logo{
+      width:30px;
+      height:30px;
+      border-radius:9px;
+      flex:0 0 auto;
+      background:#e5e7eb;
+      object-fit:cover;
+    }
+
+    .brand-text{
+      display:flex;
+      flex-direction:column;
+      gap:2px;
+      min-width:0;
+      line-height:1.1;
+    }
+
+    .brand-title{
+      font-size:16px;
+      font-weight:900;
+      white-space:nowrap;
+    }
+
+    .brand-sub{
+      font-size:12px;
+      color:#6b7280;
+      white-space:nowrap;
+    }
+
+    .nav{
+      display:flex;
+      align-items:center;
+      gap:4px;
+      min-width:0;
+      flex-wrap:wrap;
+    }
+
+    .nav a{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:40px;
+      padding:0 12px;
+      border-radius:999px;
+      color:#475569;
+      font-size:14px;
+      font-weight:800;
+      white-space:nowrap;
+    }
+
+    .nav a:hover,
+    .nav a:focus,
+    .nav a[aria-current="page"]{
+      background:#eef2f7;
+      color:#111827;
+      outline:none;
+    }
+
+    .nav-right{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      flex:0 0 auto;
+    }
+
+    .lang-pills{
+      display:flex;
+      align-items:center;
+      gap:8px;
+      flex-wrap:wrap;
+    }
+
+    .lang-pill{
+      appearance:none;
+      border:1px solid var(--line);
+      background:#fff;
+      color:#6b7280;
+      padding:8px 10px;
+      border-radius:999px;
+      font:13px/1.1 system-ui,-apple-system,Segoe UI,Roboto,"Noto Sans",Arial;
+      cursor:pointer;
+      white-space:nowrap;
+      user-select:none;
+    }
+
+    .lang-pill:hover{color:#111827}
+    .lang-pill[aria-current="true"]{
+      color:#111827;
+      font-weight:900;
+      border-color:var(--line-strong);
+      background:#f8fafc;
+    }
+
+    .hamburger{
+      display:none;
+      appearance:none;
+      border:1px solid var(--line);
+      background:#fff;
+      color:#111827;
+      width:42px;
+      height:42px;
+      border-radius:12px;
+      font-size:20px;
+      cursor:pointer;
+      flex:0 0 auto;
+    }
+
+    .countdown-bar-wrap{
+      background:#fff;
+      border-bottom:1px solid rgba(15,23,42,.06);
+    }
+
+    .countdown-bar{
+      min-height:52px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      padding:10px 0;
+    }
+
+    .countdown-bar__left{
+      min-width:0;
+      display:flex;
+      align-items:center;
+      gap:10px;
+      flex:1 1 auto;
+    }
+
+    .countdown-badge{
+      flex:0 0 auto;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:28px;
+      padding:0 10px;
+      border-radius:999px;
+      background:#111827;
+      color:#fff;
+      font-size:12px;
+      font-weight:900;
+    }
+
+    .countdown-copy{
+      min-width:0;
+      font-size:14px;
+      color:#334155;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+    }
+
+    .countdown-copy strong{
+      color:#111827;
+      font-weight:900;
+    }
+
+    .countdown-bar__actions{
+      flex:0 0 auto;
+      display:flex;
+      align-items:center;
+      gap:8px;
+      flex-wrap:nowrap;
+    }
+
+    .countdown-link{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:34px;
+      padding:0 12px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      background:#f8fafc;
+      font-size:13px;
+      font-weight:800;
+      color:#111827;
+      white-space:nowrap;
+      flex:0 0 auto;
+    }
+
+    .countdown-link:hover,
+    .countdown-link:focus{
+      background:#eef2f7;
+      outline:none;
+    }
+
+    .backdrop{
+      position:fixed;
+      inset:0;
+      background:rgba(15,23,42,.38);
+      z-index:1600;
+    }
+
+    .drawer{
+      position:fixed;
+      top:0;
+      right:0;
+      bottom:0;
+      width:min(78vw,360px);
+      background:#fff;
+      box-shadow:-16px 0 40px rgba(15,23,42,.15);
+      z-index:1700;
+      overflow-y:auto;
+      transform:translateX(100%);
+      transition:transform .25s ease;
+    }
+
+    html.is-open .drawer{transform:translateX(0)}
+
+    .drawer header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:16px;
+      border-bottom:1px solid var(--line);
+      position:sticky;
+      top:0;
+      background:#fff;
+      z-index:2;
+    }
+
+    .section-drawer{padding:16px}
+
+    .nav-list{
+      display:flex;
+      flex-direction:column;
+      gap:4px;
+    }
+
+    .nav-list a{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      width:100%;
+      min-height:44px;
+      padding:0 12px;
+      border-radius:12px;
+      font-weight:800;
+      color:#111827;
+      background:#f8fafc;
+    }
+
+    .lang-pills--drawer{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:8px;
+    }
+
+    .lang-pills--drawer .lang-pill{
+      width:100%;
+      display:flex;
+      justify-content:center;
+    }
+
+    .drawer-dotrule{
+      width:calc(100% - 32px);
+      margin:0 auto;
+      border-top:1px dashed rgba(15,23,42,.16);
+    }
+
+    .drawer-quick-stack{
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+      margin-top:14px;
+    }
+
+    .drawer-quick-pill{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      min-height:44px;
+      border:1px solid #dbe2ea;
+      border-radius:999px;
+      font-weight:800;
+      background:#fff;
+    }
+
+    .page{
+      padding:24px 0 40px;
+    }
+
+    .breadcrumb{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      align-items:center;
+      margin-bottom:16px;
+      color:var(--text-soft);
+      font-size:13px;
+      font-weight:700;
+    }
+
+    .breadcrumb a{color:#475569}
+    .breadcrumb span[aria-current="page"]{color:#111827}
+
+    .hero{
+      background:linear-gradient(180deg,#ffffff,#f8fafc);
+      border:1px solid var(--line);
+      border-radius:var(--radius-lg);
+      padding:28px 24px;
+      box-shadow:var(--shadow);
+    }
+
+    .hero-grid{
+      display:grid;
+      grid-template-columns:minmax(0,1.1fr) 360px;
+      gap:24px;
+      align-items:center;
+    }
+
+    .eyebrow{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:30px;
+      padding:0 10px;
+      border-radius:999px;
+      background:var(--brand-soft);
+      color:#1d4ed8;
+      font-size:12px;
+      font-weight:900;
+      margin-bottom:12px;
+    }
+
+    .hero h1{
+      margin:0;
+      font-size:40px;
+      line-height:1.12;
+      letter-spacing:-.04em;
+      color:var(--title);
+    }
+
+    .hero-sub{
+      margin:12px 0 0;
+      color:var(--text-soft);
+      font-size:15px;
+    }
+
+    .hero-summary{
+      margin-top:18px;
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:12px;
+    }
+
+    .hero-summary-card{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:16px;
+      padding:16px;
+    }
+
+    .hero-summary-card .k{
+      font-size:12px;
+      font-weight:800;
+      color:var(--text-soft);
+      margin-bottom:6px;
+    }
+
+    .hero-summary-card .v{
+      font-size:17px;
+      line-height:1.35;
+      font-weight:900;
+      color:var(--title);
+    }
+
+    .hero-media{
+      border:1px solid var(--line);
+      border-radius:24px;
+      background:#edf4ff;
+      overflow:hidden;
+      min-height:280px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      padding:16px;
+    }
+
+    .hero-media img{
+      width:100%;
+      height:auto;
+      object-fit:contain;
+    }
+
+    .section{
+      margin-top:18px;
+      background:var(--surface);
+      border:1px solid var(--line);
+      border-radius:var(--radius-lg);
+      padding:24px;
+      box-shadow:var(--shadow);
+    }
+
+    .section-head{
+      margin-bottom:18px;
+      text-align:center;
+    }
+
+    .section-head h2{
+      margin:0;
+      font-size:28px;
+      line-height:1.2;
+      letter-spacing:-.03em;
+      color:var(--title);
+      text-align:center;
+    }
+
+    .section-head p{
+      margin:8px 0 0;
+      color:var(--text-soft);
+      font-size:14px;
+      text-align:center;
+    }
+
+    .priority-box{
+      display:grid;
+      grid-template-columns:1fr 1fr;
+      gap:14px;
+    }
+
+    .priority-card{
+      border:1px solid var(--line);
+      border-radius:20px;
+      background:#fff;
+      padding:18px;
+    }
+
+    .priority-card.is-top{
+      border-color:#bbf7d0;
+      background:linear-gradient(180deg,#ffffff,#f0fdf4);
+    }
+
+    .priority-rank{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:32px;
+      padding:0 12px;
+      border-radius:999px;
+      background:#111827;
+      color:#fff;
+      font-size:12px;
+      font-weight:900;
+      margin-bottom:12px;
+    }
+
+    .priority-card.is-top .priority-rank{
+      background:#166534;
+    }
+
+    .priority-card h3{
+      margin:0 0 8px;
+      font-size:22px;
+      line-height:1.25;
+      color:var(--title);
+    }
+
+    .priority-card p{
+      margin:0;
+      color:var(--text-soft);
+      font-size:14px;
+    }
+
+    .notice-box{
+      border:1px solid #fed7aa;
+      background:var(--warn-soft);
+      color:var(--warn);
+      border-radius:18px;
+      padding:18px;
+      text-align:center;
+      font-size:15px;
+      font-weight:800;
+    }
+
+    .lab-grid{
+      display:grid;
+      grid-template-columns:repeat(3,minmax(0,1fr));
+      gap:14px;
+    }
+
+    .lab-card{
+      border:1px solid var(--line);
+      border-radius:22px;
+      background:#fff;
+      overflow:hidden;
+      box-shadow:var(--shadow);
+      display:flex;
+      flex-direction:column;
+      min-height:100%;
+    }
+
+    .lab-thumb{
+      background:#eaf4ff;
+      padding:16px;
+      aspect-ratio:1 / 1;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+    }
+
+    .lab-thumb img{
+      width:100%;
+      height:100%;
+      object-fit:cover;
+      border-radius:16px;
+    }
+
+    .lab-body{
+      padding:18px 16px 16px;
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+      height:100%;
+    }
+
+    .lab-body h3{
+      margin:0;
+      font-size:22px;
+      line-height:1.25;
+      color:var(--title);
+    }
+
+    .lab-desc{
+      margin:0;
+      color:var(--text-soft);
+      font-size:14px;
+    }
+
+    .lab-meta{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      margin-top:auto;
+    }
+
+    .chip{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:30px;
+      padding:0 10px;
+      border-radius:999px;
+      background:#f8fafc;
+      border:1px solid var(--line);
+      color:#334155;
+      font-size:12px;
+      font-weight:800;
+      white-space:nowrap;
+    }
+
+    .lab-link{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:42px;
+      padding:0 16px;
+      border-radius:999px;
+      background:#111827;
+      color:#fff;
+      font-size:14px;
+      font-weight:900;
+      margin-top:4px;
+      align-self:flex-start;
+    }
+
+    .lab-link:hover{background:#1f2937}
+
+    .info-grid{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:14px;
+    }
+
+    .info-card{
+      border:1px solid var(--line);
+      border-radius:18px;
+      background:#fff;
+      padding:18px;
+    }
+
+    .info-card h3{
+      margin:0 0 8px;
+      font-size:20px;
+      color:var(--title);
+    }
+
+    .info-card p{
+      margin:0;
+      color:var(--text-soft);
+      font-size:14px;
+    }
+
+    .site-footer{
+      margin-top:26px;
+      border-top:1px solid var(--line);
+      background:#fff;
+    }
+
+    .footer-link-strip{
+      padding:14px 0;
+      border-bottom:1px solid #eef2f7;
+    }
+
+    .footer-link-strip__inner{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      flex-wrap:wrap;
+      text-align:center;
+    }
+
+    .footer-link-strip__actions{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      flex-wrap:wrap;
+    }
+
+    .footer-inner{padding:24px 0 34px}
+    .footer-top{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      gap:18px;
+      text-align:center;
+    }
+
+    .footer-brand{
+      font-size:18px;
+      font-weight:900;
+      color:#111827;
+    }
+
+    .footer-desc{
+      margin:8px 0 0;
+      color:var(--text-faint);
+      font-size:14px;
+      max-width:720px;
+      word-break:keep-all;
+      overflow-wrap:anywhere;
+    }
+
+    .footer-links{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:10px;
+    }
+
+    .footer-links a{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:40px;
+      padding:0 14px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      background:#f8fafc;
+      font-size:14px;
+      font-weight:800;
+    }
+
+    .footer-copy{
+      margin-top:18px;
+      padding-top:18px;
+      border-top:1px solid #eef2f7;
+      color:var(--text-faint);
+      font-size:13px;
+      text-align:center;
+    }
+
+    .mobile-bottom-nav{
+      position:fixed;
+      left:0;
+      right:0;
+      bottom:0;
+      z-index:1400;
+      display:none;
+      background:rgba(255,255,255,.96);
+      backdrop-filter:saturate(160%) blur(10px);
+      border-top:1px solid rgba(15,23,42,.08);
+      padding:8px 10px calc(8px + env(safe-area-inset-bottom, 0px));
+    }
+
+    .mobile-bottom-nav__inner{
+      display:grid;
+      grid-template-columns:repeat(4,minmax(0,1fr));
+      gap:6px;
+      max-width:640px;
+      margin:0 auto;
+    }
+
+    .mobile-bottom-nav__item{
+      min-width:0;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      gap:4px;
+      padding:8px 4px 7px;
+      border-radius:12px;
+      color:#6b7280;
+    }
+
+    .mobile-bottom-nav__item svg{
+      width:20px;
+      height:20px;
+      display:block;
+      flex:0 0 auto;
+    }
+
+    .mobile-bottom-nav__label{
+      font-size:11px;
+      line-height:1.1;
+      font-weight:700;
+      letter-spacing:-0.01em;
+      white-space:nowrap;
+    }
+
+    .mobile-bottom-nav__item.is-active,
+    .mobile-bottom-nav__item[aria-current="page"]{
+      color:#111827;
+      background:#f3f4f6;
+    }
+
+    @media (max-width:980px){
+      .nav{display:none}
+      .hamburger{display:inline-flex;align-items:center;justify-content:center}
+      .nav-right{display:none}
+      .mobile-bottom-nav{display:block}
+      .hero-grid{grid-template-columns:1fr}
+      .hero-summary{grid-template-columns:1fr}
+      .priority-box{grid-template-columns:1fr}
+      .lab-grid{grid-template-columns:1fr 1fr}
+      .info-grid{grid-template-columns:1fr}
+    }
+
+    @media (max-width:640px){
+      .container{width:min(100% - 24px,1180px)}
+      .brand-title{font-size:14px}
+      .brand-sub{display:none}
+      .hero{padding:22px 18px}
+      .hero h1{font-size:30px}
+      .section{padding:20px 18px}
+      .section-head h2{font-size:24px}
+      .lab-grid{grid-template-columns:1fr}
+      .countdown-bar{gap:8px}
+      .countdown-bar__left{gap:8px}
+      .countdown-copy{
+        font-size:13px;
+        white-space:nowrap;
+        overflow:hidden;
+        text-overflow:ellipsis;
+      }
+      .countdown-link{
+        min-height:32px;
+        padding:0 10px;
+        font-size:12px;
+      }
+      .footer-link-strip__inner{flex-direction:column}
+    }
+
+    html.is-open body,
+    body.no-scroll{overflow:hidden}
+  </style>
+
+  <script id="ts-website-schema" type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "name":"TilesSurvive.net",
+    "url":"https://tilessurvive.net/",
+    "inLanguage":"ru",
+    "description":"Дата-хаб по Tiles Survive с базой данных, гайдами, сезонами и кодами",
+    "potentialAction":{
+      "@type":"SearchAction",
+      "target":"https://tilessurvive.net/ru/search/?q={search_term_string}",
+      "query-input":"required name=search_term_string"
+    }
+  }
+  </script>
+
+  <script id="ts-breadcrumb-schema" type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {
+        "@type":"ListItem",
+        "position":1,
+        "name":"Главная",
+        "item":"https://tilessurvive.net/ru/"
+      },
+      {
+        "@type":"ListItem",
+        "position":2,
+        "name":"Здания",
+        "item":"https://tilessurvive.net/ru/buildings/"
+      },
+      {
+        "@type":"ListItem",
+        "position":3,
+        "name":"Lab",
+        "item":"https://tilessurvive.net/ru/buildings/lab/"
+      }
+    ]
+  }
+  </script>
+
+  <script id="ts-article-schema" type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Article",
+    "headline":"Lab | Здания Tiles Survive",
+    "description":"Индекс-страница со структурой категорий исследований и приоритетами исследований в Tiles Survive",
+    "image":"https://tilessurvive.net/img/buildings/lab-cover.webp",
+    "author":{
+      "@type":"Organization",
+      "name":"TilesSurvive.net"
+    },
+    "publisher":{
+      "@type":"Organization",
+      "name":"TilesSurvive.net",
+      "logo":{
+        "@type":"ImageObject",
+        "url":"https://tilessurvive.net/img/logo-tilessurvive.png"
+      }
+    },
+    "mainEntityOfPage":"https://tilessurvive.net/ru/buildings/lab/",
+    "inLanguage":"ru-RU"
+  }
+  </script>
+
+  <script>
+    (function(){
+      function normalizeLang(code){
+        var low = String(code || '').trim().toLowerCase();
+        if (low === 'ko') return 'ko';
+        if (low === 'en') return 'en';
+        if (low === 'ja') return 'ja';
+        if (low === 'ru') return 'ru';
+        if (low === 'zh-tw' || low === 'zh_tw' || low === 'tw') return 'zh-tw';
+        return 'ko';
+      }
+
+      function pathWithLang(lang, path){
+        return '/' + lang + path;
+      }
+
+      function applyLang(lang){
+        lang = normalizeLang(lang);
+        var currentPath = location.pathname.replace(/^\/(ko|en|ja|ru|zh-tw)(\/|$)/i, '/');
+        if (currentPath === '') currentPath = '/';
+        location.href = pathWithLang(lang, currentPath);
+      }
+
+      window.TS_LANG = {
+        normalize: normalizeLang,
+        apply: applyLang
+      };
+    })();
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Перейти к содержимому</a>
+
+  <header class="site-header" role="banner">
+    <div class="container nav-bar">
+      <div class="nav-left">
+        <a class="brand" href="/ru/" aria-label="Главная TilesSurvive.net">
+          <img class="brand-logo" src="/img/logo-tilessurvive.png" alt="TilesSurvive.net" width="30" height="30" />
+          <span class="brand-text">
+            <span class="brand-title">TilesSurvive.net</span>
+            <span class="brand-sub">Tiles Survive Data / Guides / Codes / Tools Hub</span>
+          </span>
+        </a>
+
+        <nav class="nav" id="primaryNav" role="navigation" aria-label="Верхнее меню">
+          <a href="/ru/buildings/" aria-current="page">Здания</a>
+          <a href="/ru/heroes/">Герои</a>
+          <a href="/ru/behemoths/">Бегемоты</a>
+          <a href="/ru/database/">База данных</a>
+          <a href="/ru/guides/">Гайды</a>
+          <a href="/ru/seasons/">Сезоны</a>
+        </nav>
+      </div>
+
+      <button class="hamburger" id="menuToggle" aria-label="Открыть меню" aria-controls="mobileDrawer" aria-expanded="false">☰</button>
+
+      <div class="nav-right">
+        <div id="langDropdownHeader" class="lang-pills" aria-label="Выбор языка"></div>
+      </div>
+    </div>
+  </header>
+
+  <section class="countdown-bar-wrap" aria-label="Обратный отсчёт кодов">
+    <div class="container countdown-bar">
+      <div class="countdown-bar__left">
+        <span class="countdown-badge">Коды</span>
+        <div class="countdown-copy">
+          <strong>Обратный отсчёт кодов Tiles Survive</strong>
+        </div>
+      </div>
+      <div class="countdown-bar__actions">
+        <a class="countdown-link" href="/ru/codes/">Актуальные коды</a>
+        <a class="countdown-link" href="/ru/guides/gift-code-how-to-use/">Как ввести</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="backdrop" id="backdrop" hidden></div>
+
+  <aside class="drawer" id="mobileDrawer" aria-hidden="true" aria-label="Мобильное меню">
+    <header>
+      <strong>Menu</strong>
+      <button id="btnClose" aria-label="Закрыть" style="background:none;border:0;font-size:20px;cursor:pointer">✕</button>
+    </header>
+
+    <div class="section-drawer">
+      <div id="langDropdownDrawer" class="lang-pills lang-pills--drawer" aria-label="Выбор языка"></div>
+    </div>
+
+    <div class="drawer-dotrule" aria-hidden="true"></div>
+
+    <div class="section-drawer">
+      <div class="nav-list" role="navigation" aria-label="Список мобильного меню">
+        <a href="/ru/buildings/">Здания</a>
+        <a href="/ru/heroes/">Герои</a>
+        <a href="/ru/behemoths/">Бегемоты</a>
+        <a href="/ru/database/">База данных</a>
+        <a href="/ru/guides/">Гайды</a>
+        <a href="/ru/seasons/">Сезоны</a>
+      </div>
+
+      <div class="drawer-quick-stack">
+        <a class="drawer-quick-pill js-drawer-close" href="https://discord.gg/EjqWhTPyaEjqWhTPya" target="_blank" rel="noopener noreferrer">Discord</a>
+        <a class="drawer-quick-pill js-drawer-close" href="/ru/codes/">Подарочные коды</a>
+      </div>
+    </div>
+  </aside>
+
+  <main class="page" id="main">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Хлебные крошки">
+        <a href="/ru/">Главная</a>
+        <span>›</span>
+        <a href="/ru/buildings/">Здания</a>
+        <span>›</span>
+        <span aria-current="page">Lab</span>
+      </nav>
+
+      <section class="hero">
+        <div class="hero-grid">
+          <div>
+            <div class="eyebrow">Здание</div>
+            <h1>Lab</h1>
+            <p class="hero-sub">
+              Это индекс-страница, где в одном месте собраны категории исследований Development, Economy, Hero, Soldier, Intel Outpost, Alliance Duel, Special Forces, Infected Hunt и Doomsday Transport.
+            </p>
+
+            <div class="hero-summary">
+              <div class="hero-summary-card">
+                <div class="k">Рекомендуемый приоритет</div>
+                <div class="v">Сначала Infected Hunt и Alliance Duel</div>
+              </div>
+              <div class="hero-summary-card">
+                <div class="k">Таблица улучшения</div>
+                <div class="v">Будет добавляться по мере подготовки данных</div>
+              </div>
+              <div class="hero-summary-card">
+                <div class="k">Направление исследований</div>
+                <div class="v">Со временем можно прокачать все направления</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-media">
+            <img src="/img/buildings/lab-cover.webp" alt="Экран Lab в Tiles Survive" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <h2>Приоритет исследований</h2>
+          <p>Все исследования со временем закрываются, но ранний приоритет лучше выстраивать отдельно.</p>
+        </div>
+
+        <div class="priority-box">
+          <article class="priority-card is-top">
+            <span class="priority-rank">Приоритет 1</span>
+            <h3>Infected Hunt</h3>
+            <p>
+              Это направление повышает эффективность наград за убийство обычных заражённых и боссов.
+              Эффект на ежедневный фарм и получение ускорений ощущается быстро, поэтому его выгодно качать в первую очередь.
+            </p>
+          </article>
+
+          <article class="priority-card is-top">
+            <span class="priority-rank">Приоритет 1</span>
+            <h3>Alliance Duel</h3>
+            <p>
+              Это ключевое исследование, связанное с очками Alliance Duel.
+              Чем стабильнее оно прокачано, тем выше общая эффективность ежедневной активности альянса, поэтому оно тоже рекомендуется в приоритет.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <h2>Информация о таблице улучшения</h2>
+        </div>
+
+        <div class="notice-box">
+          Данные таблицы улучшения были утрачены и сейчас собираются заново. После подготовки они будут добавляться поэтапно.
+        </div>
+      </section>
+
+      <section class="section">
+        <div class="section-head">
+          <h2>Справочные данные по Infected Hunt</h2>
+          <p>Пока собраны только ключевые подтверждённые данные с доступных экранов.</p>
+        </div>
+
+        <div class="info-grid">
+          <article class="info-card">
+            <h3>Infected Hunt - Speedup Item I</h3>
+            <p>На уровне 5 за убийство обычного заражённого подтверждено получение 5 speedup items и 131100 боевой мощи.</p>
+          </article>
+
+          <article class="info-card">
+            <h3>Boss Hunt - Speedup Item I</h3>
+            <p>На уровне 5 за убийство заражённого босса подтверждено получение 5 speedup items и 348340 боевой мощи.</p>
+          </article>
+
+          <article class="info-card">
+            <h3>Infected Hunt - Speedup Item II</h3>
+            <p>На уровне 5 за убийство обычного заражённого подтверждено получение 5 speedup items и 485560 боевой мощи.</p>
+          </article>
+
+          <article class="info-card">
+            <h3>Boss Hunt - Speedup Item II</h3>
+            <p>На уровне 5 за убийство заражённого босса подтверждено получение 5 speedup items и 543120 боевой мощи.</p>
+          </article>
+
+          <article class="info-card">
+            <h3>Random Chest</h3>
+            <p>Подтвержден дополнительный дроп Random Chest за убийство обычных заражённых, с ограничением до 100 штук в день.</p>
+          </article>
+
+          <article class="info-card">
+            <h3>Вывод</h3>
+            <p>Исследования Infected Hunt быстро дают заметную отдачу в ежедневном фарме, поэтому их удобно ставить в высокий ранний приоритет.</p>
+          </article>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer" role="contentinfo" aria-label="Футер">
+    <div class="footer-link-strip">
+      <div class="container footer-link-strip__inner">
+        <div class="footer-link-strip__actions">
+          <a class="countdown-link" href="https://discord.gg/EjqWhTPyaEjqWhTPya" target="_blank" rel="noopener noreferrer">Discord</a>
+          <a class="countdown-link" href="/ru/codes/">Подарочные коды</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <div>
+          <div class="footer-brand">TilesSurvive.net</div>
+          <p class="footer-desc">
+            Этот сайт создан для того, чтобы собирать данные по Tiles Survive и помогать игрокам лучше освоиться в игре.
+            Это неофициальный фан-сайт, не связанный напрямую с Tiles Survive.
+          </p>
+        </div>
+
+        <nav class="footer-links" aria-label="Меню футера">
+          <a href="/ru/about/">О сайте</a>
+          <a href="/ru/privacy/">Конфиденциальность</a>
+        </nav>
+      </div>
+
+      <div class="footer-copy">
+        © 2026 TilesSurvive.net. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <nav class="mobile-bottom-nav" aria-label="Быстрый переход на мобильном">
+    <div class="mobile-bottom-nav__inner">
+      <a class="mobile-bottom-nav__item" href="/ru/" data-mobile-nav="home">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M4 10.5 12 4l8 6.5V20a1 1 0 0 1-1 1h-4v-6H9v6H5a1 1 0 0 1-1-1v-9.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+        </svg>
+        <span class="mobile-bottom-nav__label">Главная</span>
+      </a>
+
+      <a class="mobile-bottom-nav__item" href="/ru/buildings/" data-mobile-nav="buildings">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M5 5h14v14H5z" stroke="currentColor" stroke-width="1.8"/>
+          <path d="M9 5v14M15 5v14M5 9h14M5 15h14" stroke="currentColor" stroke-width="1.8"/>
+        </svg>
+        <span class="mobile-bottom-nav__label">Здания</span>
+      </a>
+
+      <a class="mobile-bottom-nav__item" href="/ru/guides/" data-mobile-nav="guides">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M6 5.5A2.5 2.5 0 0 1 8.5 3H19v16H8.5A2.5 2.5 0 0 0 6 21V5.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+          <path d="M6 6h11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+        <span class="mobile-bottom-nav__label">Гайды</span>
+      </a>
+
+      <a class="mobile-bottom-nav__item" href="/ru/codes/" data-mobile-nav="codes">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M8 7.5h8a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="1.8"/>
+          <path d="M9 7V6a3 3 0 1 1 6 0v1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          <path d="M12 11v3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+        <span class="mobile-bottom-nav__label">Коды</span>
+      </a>
+    </div>
+  </nav>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var html = document.documentElement;
+      var body = document.body;
+      var drawer = document.getElementById('mobileDrawer');
+      var backdrop = document.getElementById('backdrop');
+      var btnOpen = document.getElementById('menuToggle');
+      var btnClose = document.getElementById('btnClose');
+
+      function openDrawer(){
+        html.classList.add('is-open');
+        body.classList.add('no-scroll');
+        backdrop.hidden = false;
+        drawer.setAttribute('aria-hidden', 'false');
+        btnOpen && btnOpen.setAttribute('aria-expanded', 'true');
+      }
+
+      function closeDrawer(){
+        html.classList.remove('is-open');
+        body.classList.remove('no-scroll');
+        backdrop.hidden = true;
+        drawer.setAttribute('aria-hidden', 'true');
+        btnOpen && btnOpen.setAttribute('aria-expanded', 'false');
+      }
+
+      btnOpen && btnOpen.addEventListener('click', openDrawer);
+      btnClose && btnClose.addEventListener('click', closeDrawer);
+      backdrop && backdrop.addEventListener('click', closeDrawer);
+
+      window.addEventListener('keydown', function(e){
+        if (e.key === 'Escape') closeDrawer();
+      });
+
+      var drawerLinks = drawer ? drawer.querySelectorAll('a') : [];
+      Array.prototype.forEach.call(drawerLinks, function(link){
+        link.addEventListener('click', closeDrawer);
+      });
+    });
+  </script>
+
+  <script>
+    (function(){
+      var LANGS = [
+        { code:'ko', label:'KO' },
+        { code:'en', label:'EN' },
+        { code:'ja', label:'JA' },
+        { code:'ru', label:'RU' },
+        { code:'zh-tw', label:'TW' }
+      ];
+
+      function currentLang(){
+        return 'ru';
+      }
+
+      function render(root){
+        if (!root) return;
+        var cur = currentLang();
+        root.innerHTML = LANGS.map(function(lang){
+          return '<button type="button" class="lang-pill" data-lang="' + lang.code + '" aria-current="' + (lang.code === cur ? 'true' : 'false') + '">' + lang.label + '</button>';
+        }).join('');
+      }
+
+      function bind(root){
+        if (!root) return;
+        root.addEventListener('click', function(e){
+          var btn = e.target.closest('.lang-pill[data-lang]');
+          if (!btn) return;
+          e.preventDefault();
+          window.TS_LANG.apply(btn.getAttribute('data-lang'));
+        });
+      }
+
+      document.addEventListener('DOMContentLoaded', function(){
+        var header = document.getElementById('langDropdownHeader');
+        var drawer = document.getElementById('langDropdownDrawer');
+        render(header);
+        render(drawer);
+        bind(header);
+        bind(drawer);
+      });
+    })();
+  </script>
+
+  <script>
+    (function(){
+      function updateBottomNavActive(){
+        var pathname = location.pathname.toLowerCase();
+        var items = document.querySelectorAll('.mobile-bottom-nav__item');
+
+        Array.prototype.forEach.call(items, function(item){
+          item.classList.remove('is-active');
+          item.removeAttribute('aria-current');
+
+          var key = item.getAttribute('data-mobile-nav');
+          var active = false;
+
+          if (key === 'home') {
+            active = pathname === '/ru/' || pathname === '/ru';
+          } else if (key === 'buildings') {
+            active = pathname.indexOf('/ru/buildings') === 0;
+          } else if (key === 'guides') {
+            active = pathname.indexOf('/ru/guides') === 0;
+          } else if (key === 'codes') {
+            active = pathname.indexOf('/ru/codes') === 0;
+          }
+
+          if (active) {
+            item.classList.add('is-active');
+            item.setAttribute('aria-current', 'page');
+          }
+        });
+      }
+
+      document.addEventListener('DOMContentLoaded', updateBottomNavActive);
+    })();
+  </script>
+</body>
+</html>
