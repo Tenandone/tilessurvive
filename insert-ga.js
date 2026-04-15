@@ -6,12 +6,12 @@ const ROOT_DIR = process.cwd();
 // Google Analytics 코드
 const GA_SNIPPET = `
   <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z2MJ6TZXHK"></script>
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z2MJ6TXZHK"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
     function gtag(){dataLayer.push(arguments);}
     gtag('js', new Date());
-    gtag('config', 'G-Z2MJ6TZXHK');
+    gtag('config', 'G-Z2MJ6TXZHK');
   </script>
 `;
 
@@ -45,7 +45,7 @@ function insertGA(filePath) {
   let html = fs.readFileSync(filePath, 'utf8');
 
   // 이미 들어간 파일은 건너뜀
-  if (html.includes('G-Z2MJ6TZXHK')) {
+  if (html.includes('G-Z2MJ6TXZHK')) {
     console.log(`skip: ${filePath}`);
     return;
   }
