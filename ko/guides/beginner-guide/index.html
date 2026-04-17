@@ -1,0 +1,1847 @@
+<!doctype html>
+<html lang="ko" data-lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>타일서바이벌 초반 공략 | 초보 유저 기준 플레이 방향 정리 | TilesSurvive.net</title>
+  <base href="/" />
+
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="description" content="타일서바이벌 초보 유저를 위한 초반 공략 가이드입니다. 신서버 선택, 동맹 선택, 농장 계정 운영, 가속 관리, 발전소 성장 방향, 소과금 운영 기준까지 한 번에 정리했습니다." />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+  <meta name="author" content="TilesSurvive.net" />
+
+  <link rel="canonical" href="https://tilessurvive.net/ko/guides/beginner-guide/" />
+  <link rel="alternate" hreflang="x-default" href="https://tilessurvive.net/en/guides/beginner-guide/" />
+  <link rel="alternate" hreflang="ko" href="https://tilessurvive.net/ko/guides/beginner-guide/" />
+  <link rel="alternate" hreflang="en" href="https://tilessurvive.net/en/guides/beginner-guide/" />
+  <link rel="alternate" hreflang="ja" href="https://tilessurvive.net/ja/guides/beginner-guide/" />
+  <link rel="alternate" hreflang="ru" href="https://tilessurvive.net/ru/guides/beginner-guide/" />
+  <link rel="alternate" hreflang="zh-TW" href="https://tilessurvive.net/zh-tw/guides/beginner-guide/" />
+
+  <meta property="og:site_name" content="TilesSurvive.net" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="타일서바이벌 초반 공략 | 초보 유저 기준 플레이 방향 정리" />
+  <meta property="og:description" content="타일서바이벌을 처음 시작하는 유저를 위한 초반 방향 정리. 신서버, 1위 동맹, 농장 계정, 가속 사용, 발전소 목표, 소과금 운영 기준까지 한 번에 정리했습니다." />
+  <meta property="og:url" content="https://tilessurvive.net/ko/guides/beginner-guide/" />
+  <meta property="og:image" content="https://tilessurvive.net/img/guides/beginner-guide.png" />
+  <meta property="og:locale" content="ko_KR" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="타일서바이벌 초반 공략 | 초보 유저 기준 플레이 방향 정리" />
+  <meta name="twitter:description" content="타일서바이벌 초보 유저 기준 초반 운영 가이드. 신서버 선택, 동맹 선택, 농장 계정, 가속 사용, 발전소 목표를 정리했습니다." />
+  <meta name="twitter:image" content="https://tilessurvive.net/img/guides/beginner-guide.png" />
+
+  <link rel="preload" as="image" href="/img/logo-tilessurvive.png" />
+  <link rel="preload" as="image" href="/img/guides/beginner-guide.png" />
+
+  <style>
+    :root{
+      --bg:#f4f7fb;
+      --surface:#ffffff;
+      --surface-soft:#f8fafc;
+      --line:#e5e7eb;
+      --line-strong:#cbd5e1;
+      --text:#0f172a;
+      --text-soft:#475569;
+      --text-faint:#64748b;
+      --dark:#0f172a;
+      --brand:#0ea5e9;
+      --brand-soft:#e0f2fe;
+      --green:#16a34a;
+      --green-soft:#dcfce7;
+      --amber:#f59e0b;
+      --amber-soft:#fef3c7;
+      --red:#dc2626;
+      --red-soft:#fee2e2;
+      --blue:#2563eb;
+      --blue-soft:#dbeafe;
+      --container:min(1180px, calc(100% - 32px));
+      --radius-xl:28px;
+      --radius-lg:24px;
+      --radius-md:18px;
+      --shadow:0 18px 40px rgba(15,23,42,.08);
+
+      --warn-bg:rgba(245,158,11,.08);
+      --warn-border:rgba(245,158,11,.35);
+      --soft-bg:#f8fbff;
+      --soft-border:#dbeafe;
+      --ok-bg:#f0fdf4;
+      --ok-border:#bbf7d0;
+    }
+
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;overflow-x:hidden}
+    html{scroll-behavior:smooth}
+    body{
+      color:var(--text);
+      background:var(--bg);
+      font-family:"Pretendard","Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic",system-ui,-apple-system,sans-serif;
+      line-height:1.68;
+      text-rendering:optimizeLegibility;
+      -webkit-font-smoothing:antialiased;
+      padding-bottom:calc(76px + env(safe-area-inset-bottom, 0px));
+    }
+
+    a{color:inherit;text-decoration:none}
+    img{display:block;max-width:100%}
+    button{font:inherit}
+    .container{width:var(--container);margin:0 auto;min-width:0}
+
+    .skip-link{
+      position:absolute;
+      left:12px;
+      top:-44px;
+      z-index:3000;
+      background:#111827;
+      color:#fff;
+      padding:10px 14px;
+      border-radius:10px;
+      font-weight:800;
+    }
+    .skip-link:focus{top:12px}
+
+    .site-header{
+      position:sticky;
+      top:0;
+      z-index:1500;
+      background:rgba(255,255,255,.92);
+      backdrop-filter:saturate(160%) blur(12px);
+      border-bottom:1px solid rgba(15,23,42,.06);
+    }
+
+    .nav-bar{
+      min-height:68px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+    }
+
+    .nav-left{
+      display:flex;
+      align-items:center;
+      gap:20px;
+      min-width:0;
+      flex:1 1 auto;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      min-width:0;
+      color:#111827;
+    }
+
+    .brand-logo{
+      width:30px;
+      height:30px;
+      border-radius:9px;
+      flex:0 0 auto;
+      background:#e5e7eb;
+      object-fit:cover;
+    }
+
+    .brand-text{
+      display:flex;
+      flex-direction:column;
+      gap:2px;
+      min-width:0;
+      line-height:1.1;
+    }
+
+    .brand-title{
+      font-size:16px;
+      font-weight:900;
+      white-space:nowrap;
+    }
+
+    .brand-sub{
+      font-size:12px;
+      color:#6b7280;
+      white-space:nowrap;
+    }
+
+    .nav{
+      display:flex;
+      align-items:center;
+      gap:4px;
+      min-width:0;
+      flex-wrap:wrap;
+    }
+
+    .nav a{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:40px;
+      padding:0 12px;
+      border-radius:999px;
+      color:#475569;
+      font-size:14px;
+      font-weight:800;
+      white-space:nowrap;
+    }
+
+    .nav a:hover,
+    .nav a:focus,
+    .nav a[aria-current="page"]{
+      background:#eef2f7;
+      color:#111827;
+      outline:none;
+    }
+
+    .nav-right{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      flex:0 0 auto;
+    }
+
+    .lang-pills{
+      display:flex;
+      align-items:center;
+      gap:8px;
+      flex-wrap:wrap;
+    }
+
+    .lang-pill{
+      appearance:none;
+      border:1px solid var(--line);
+      background:#fff;
+      color:#6b7280;
+      padding:8px 10px;
+      border-radius:999px;
+      font:13px/1.1 system-ui,-apple-system,Segoe UI,Roboto,"Noto Sans",Arial;
+      cursor:pointer;
+      white-space:nowrap;
+      user-select:none;
+    }
+
+    .lang-pill:hover{color:#111827}
+    .lang-pill[aria-current="true"]{
+      color:#111827;
+      font-weight:900;
+      border-color:var(--line-strong);
+      background:#f8fafc;
+    }
+
+    .hamburger{
+      display:none;
+      appearance:none;
+      border:1px solid var(--line);
+      background:#fff;
+      color:#111827;
+      width:42px;
+      height:42px;
+      border-radius:12px;
+      font-size:20px;
+      cursor:pointer;
+      flex:0 0 auto;
+    }
+
+    .countdown-bar-wrap{
+      background:#fff;
+      border-bottom:1px solid rgba(15,23,42,.06);
+    }
+
+    .countdown-bar{
+      min-height:52px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      padding:10px 0;
+    }
+
+    .countdown-bar__left{
+      min-width:0;
+      display:flex;
+      align-items:center;
+      gap:10px;
+      flex:1 1 auto;
+    }
+
+    .countdown-badge{
+      flex:0 0 auto;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:28px;
+      padding:0 10px;
+      border-radius:999px;
+      background:#111827;
+      color:#fff;
+      font-size:12px;
+      font-weight:900;
+    }
+
+    .countdown-copy{
+      min-width:0;
+      font-size:14px;
+      color:#334155;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+    }
+
+    .countdown-copy strong{
+      color:#111827;
+      font-weight:900;
+    }
+
+    .countdown-bar__actions{
+      flex:0 0 auto;
+      display:flex;
+      align-items:center;
+      gap:8px;
+      flex-wrap:nowrap;
+    }
+
+    .countdown-link{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:34px;
+      padding:0 12px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      background:#f8fafc;
+      font-size:13px;
+      font-weight:800;
+      color:#111827;
+      white-space:nowrap;
+      flex:0 0 auto;
+    }
+
+    .countdown-link:hover,
+    .countdown-link:focus{
+      background:#eef2f7;
+      outline:none;
+    }
+
+    .page-main{
+      padding-top:18px;
+      padding-bottom:32px;
+    }
+
+    .breadcrumb{
+      display:flex;
+      align-items:center;
+      gap:8px;
+      flex-wrap:wrap;
+      margin-bottom:16px;
+      color:#64748b;
+      font-size:13px;
+      font-weight:700;
+    }
+
+    .breadcrumb a{color:#475569}
+    .breadcrumb span[aria-current="page"]{color:#111827}
+
+    .hero{
+      display:grid;
+      grid-template-columns:minmax(0,1.1fr) minmax(320px,.9fr);
+      gap:18px;
+      align-items:stretch;
+    }
+
+    .hero-card,
+    .section-card,
+    .aside-card{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:var(--radius-xl);
+      box-shadow:var(--shadow);
+      min-width:0;
+    }
+
+    .hero-card{
+      padding:28px 24px;
+      background:
+        radial-gradient(circle at top right, rgba(14,165,233,.12), transparent 30%),
+        linear-gradient(180deg,#ffffff,#f8fbff);
+    }
+
+    .eyebrow{
+      display:inline-flex;
+      align-items:center;
+      min-height:30px;
+      padding:0 12px;
+      border-radius:999px;
+      background:var(--brand-soft);
+      color:#0369a1;
+      font-size:12px;
+      font-weight:900;
+      margin-bottom:14px;
+    }
+
+    .hero-card h1{
+      margin:0;
+      font-size:42px;
+      line-height:1.1;
+      letter-spacing:-.04em;
+      color:var(--dark);
+      word-break:keep-all;
+      overflow-wrap:anywhere;
+    }
+
+    .hero-card p{
+      margin:14px 0 0;
+      color:var(--text-soft);
+      font-size:15px;
+      max-width:760px;
+    }
+
+    .hero-meta{
+      margin-top:18px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+    }
+
+    .meta-pill{
+      display:inline-flex;
+      align-items:center;
+      min-height:38px;
+      padding:0 14px;
+      border-radius:999px;
+      background:#f8fafc;
+      border:1px solid #e2e8f0;
+      color:#111827;
+      font-size:13px;
+      font-weight:800;
+    }
+
+    .hero-links{
+      margin-top:18px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+    }
+
+    .hero-link{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:44px;
+      padding:0 16px;
+      border-radius:999px;
+      font-size:14px;
+      font-weight:900;
+      border:1px solid var(--line);
+      background:#fff;
+    }
+
+    .hero-link.is-primary{
+      background:#111827;
+      color:#fff;
+      border-color:#111827;
+    }
+
+    .aside-card{
+      padding:18px;
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+    }
+
+    .guide-thumb{
+      border-radius:22px;
+      background:linear-gradient(180deg,#eef8ff,#e0f2fe);
+      border:1px solid #dbeafe;
+      padding:18px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      min-height:260px;
+    }
+
+    .guide-thumb img{
+      width:100%;
+      max-width:320px;
+      height:auto;
+      object-fit:contain;
+    }
+
+    .quick-grid{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:10px;
+    }
+
+    .quick-item{
+      border:1px solid #e2e8f0;
+      background:#f8fafc;
+      border-radius:18px;
+      padding:14px;
+    }
+
+    .quick-item strong{
+      display:block;
+      font-size:12px;
+      color:#64748b;
+      margin-bottom:4px;
+    }
+
+    .quick-item span{
+      display:block;
+      font-size:15px;
+      font-weight:900;
+      color:#111827;
+      word-break:keep-all;
+      overflow-wrap:anywhere;
+    }
+
+    .section-stack{
+      margin-top:18px;
+      display:grid;
+      gap:18px;
+    }
+
+    .section-card{
+      padding:24px;
+    }
+
+    .section-head{
+      margin-bottom:18px;
+    }
+
+    .section-head h2{
+      margin:0;
+      font-size:30px;
+      line-height:1.2;
+      letter-spacing:-.03em;
+      color:var(--dark);
+      word-break:keep-all;
+      overflow-wrap:anywhere;
+    }
+
+    .section-head p{
+      margin:8px 0 0;
+      font-size:14px;
+      color:var(--text-soft);
+      word-break:keep-all;
+      overflow-wrap:anywhere;
+    }
+
+    .highlight-box{
+      border:1px solid #dbeafe;
+      background:linear-gradient(180deg,#f8fbff,#eef6ff);
+      border-radius:22px;
+      padding:18px;
+    }
+
+    .highlight-box strong{
+      display:block;
+      font-size:16px;
+      color:#0f172a;
+      margin-bottom:8px;
+    }
+
+    .card-grid{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:14px;
+    }
+
+    .info-box{
+      border:1px solid #e2e8f0;
+      border-radius:20px;
+      padding:18px;
+      background:#fff;
+      min-width:0;
+    }
+
+    .info-box h3{
+      margin:0 0 10px;
+      font-size:20px;
+      line-height:1.3;
+      word-break:keep-all;
+      overflow-wrap:anywhere;
+    }
+
+    .info-box p{
+      margin:0;
+      color:var(--text-soft);
+      font-size:14px;
+    }
+
+    .note,
+    .ok-note{
+      display:flex;
+      gap:10px;
+      padding:14px 16px;
+      border-radius:18px;
+      margin:12px 0 16px;
+      font-size:14px;
+    }
+
+    .note{
+      border:1px solid var(--warn-border);
+      background:var(--warn-bg);
+    }
+
+    .ok-note{
+      border:1px solid var(--ok-border);
+      background:var(--ok-bg);
+    }
+
+    .note strong,
+    .ok-note strong{
+      font-weight:900;
+    }
+
+    .note .note-ico{
+      width:18px;
+      height:18px;
+      flex:0 0 18px;
+      margin-top:2px;
+      color:#b45309;
+    }
+
+    .guide-list{
+      margin:0;
+      padding-left:18px;
+    }
+
+    .guide-list li{margin:6px 0}
+
+    .faq-list{
+      display:grid;
+      gap:12px;
+    }
+
+    .faq-item{
+      border:1px solid var(--line);
+      border-radius:18px;
+      background:#fff;
+      padding:16px;
+    }
+
+    .faq-q{
+      font-weight:900;
+      margin:0 0 6px;
+    }
+
+    .faq-a{
+      margin:0;
+      color:var(--text-soft);
+    }
+
+    .bottom-cta{
+      margin-top:18px;
+      border-radius:22px;
+      border:1px solid var(--line);
+      background:linear-gradient(180deg,#ffffff,#fafcff);
+      box-shadow:var(--shadow);
+      padding:18px;
+    }
+
+    .bottom-cta .title{
+      font-size:21px;
+      font-weight:900;
+      color:var(--text);
+      margin:0 0 8px;
+      line-height:1.3;
+    }
+
+    .bottom-cta .desc{
+      margin:0 0 14px;
+      color:var(--text-soft);
+      font-size:14px;
+    }
+
+    .cta-row{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      align-items:center;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      min-height:44px;
+      padding:0 16px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      cursor:pointer;
+      font-weight:900;
+      text-decoration:none !important;
+      line-height:1;
+      user-select:none;
+      background:#fff;
+      color:#111827;
+      transition:transform .12s ease, box-shadow .12s ease, border-color .12s ease, background .12s ease;
+    }
+
+    .btn:hover{
+      text-decoration:none;
+      transform:translateY(-1px);
+      box-shadow:0 8px 18px rgba(0,0,0,.06);
+      border-color:#d1d5db;
+      background:#f8fafc;
+    }
+
+    .btn-primary{
+      background:#111827;
+      color:#fff;
+      border-color:#111827;
+    }
+
+    .btn-primary:hover{
+      border-color:#111827;
+      background:#0f172a;
+    }
+
+    .cta-badges{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      margin-top:10px;
+    }
+
+    .badge{
+      font-size:12px;
+      padding:6px 10px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      color:var(--text-soft);
+      background:#fff;
+    }
+
+    .site-footer{
+      margin-top:26px;
+      border-top:1px solid var(--line);
+      background:#fff;
+    }
+
+    .footer-link-strip{
+      padding:14px 0;
+      border-bottom:1px solid #eef2f7;
+    }
+
+    .footer-link-strip__inner{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      flex-wrap:wrap;
+      text-align:center;
+    }
+
+    .footer-link-strip__actions{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      flex-wrap:wrap;
+    }
+
+    .footer-inner{padding:24px 0 34px}
+    .footer-top{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      gap:18px;
+      text-align:center;
+    }
+
+    .footer-brand{
+      font-size:18px;
+      font-weight:900;
+      color:#111827;
+    }
+
+    .footer-desc{
+      margin:8px 0 0;
+      color:var(--text-faint);
+      font-size:14px;
+      max-width:720px;
+      word-break:keep-all;
+      overflow-wrap:anywhere;
+    }
+
+    .footer-links{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:10px;
+    }
+
+    .footer-links a{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:40px;
+      padding:0 14px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      background:#f8fafc;
+      font-size:14px;
+      font-weight:800;
+    }
+
+    .footer-copy{
+      margin-top:18px;
+      padding-top:18px;
+      border-top:1px solid #eef2f7;
+      color:var(--text-faint);
+      font-size:13px;
+      text-align:center;
+    }
+
+    .mobile-bottom-nav{
+      position:fixed;
+      left:0;
+      right:0;
+      bottom:0;
+      z-index:1400;
+      display:none;
+      background:rgba(255,255,255,.96);
+      backdrop-filter:saturate(160%) blur(10px);
+      border-top:1px solid rgba(15,23,42,.08);
+      padding:8px 10px calc(8px + env(safe-area-inset-bottom, 0px));
+    }
+
+    .mobile-bottom-nav__inner{
+      display:grid;
+      grid-template-columns:repeat(4,minmax(0,1fr));
+      gap:6px;
+      max-width:640px;
+      margin:0 auto;
+    }
+
+    .mobile-bottom-nav__item{
+      min-width:0;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      gap:4px;
+      padding:8px 4px 7px;
+      border-radius:12px;
+      color:#6b7280;
+    }
+
+    .mobile-bottom-nav__item svg{
+      width:20px;
+      height:20px;
+      display:block;
+      flex:0 0 auto;
+    }
+
+    .mobile-bottom-nav__label{
+      font-size:11px;
+      line-height:1.1;
+      font-weight:700;
+      letter-spacing:-0.01em;
+      white-space:nowrap;
+    }
+
+    .mobile-bottom-nav__item.is-active,
+    .mobile-bottom-nav__item[aria-current="page"]{
+      color:#111827;
+      background:#f3f4f6;
+    }
+
+    .backdrop{
+      position:fixed;
+      inset:0;
+      background:rgba(15,23,42,.38);
+      z-index:1600;
+    }
+
+    .drawer{
+      position:fixed;
+      top:0;
+      right:0;
+      bottom:0;
+      width:min(78vw,360px);
+      background:#fff;
+      box-shadow:-16px 0 40px rgba(15,23,42,.15);
+      z-index:1700;
+      overflow-y:auto;
+      transform:translateX(100%);
+      transition:transform .25s ease;
+    }
+
+    html.is-open .drawer{transform:translateX(0)}
+
+    .drawer header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:16px;
+      border-bottom:1px solid var(--line);
+      position:sticky;
+      top:0;
+      background:#fff;
+      z-index:2;
+    }
+
+    .drawer .section{padding:16px}
+    .drawer .nav-list{display:flex;flex-direction:column;gap:4px}
+    .drawer .nav-list a{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      width:100%;
+      min-height:44px;
+      padding:0 12px;
+      border-radius:12px;
+      font-weight:800;
+      color:#111827;
+      background:#f8fafc;
+    }
+
+    .lang-pills--drawer{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:8px;
+    }
+
+    .lang-pills--drawer .lang-pill{
+      width:100%;
+      display:flex;
+      justify-content:center;
+    }
+
+    .drawer-dotrule{
+      width:calc(100% - 32px);
+      margin:0 auto;
+      border-top:1px dashed rgba(15,23,42,.16);
+    }
+
+    .drawer-quick-stack{
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+      margin-top:14px;
+    }
+
+    .drawer-quick-pill{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      min-height:44px;
+      border:1px solid #dbe2ea;
+      border-radius:999px;
+      font-weight:800;
+      background:#fff;
+    }
+
+    .visually-hidden-seo{
+      position:absolute !important;
+      width:1px !important;
+      height:1px !important;
+      padding:0 !important;
+      margin:-1px !important;
+      overflow:hidden !important;
+      clip:rect(0,0,0,0) !important;
+      white-space:nowrap !important;
+      border:0 !important;
+    }
+
+    @media (max-width:980px){
+      .nav{display:none}
+      .hamburger{display:inline-flex;align-items:center;justify-content:center}
+      .nav-right{display:none}
+      .mobile-bottom-nav{display:block}
+      .countdown-bar{
+        min-height:52px;
+        align-items:center;
+        flex-direction:row;
+        justify-content:space-between;
+        gap:10px;
+      }
+      .countdown-bar__left{
+        width:auto;
+        min-width:0;
+        flex:1 1 auto;
+      }
+      .countdown-bar__actions{
+        width:auto;
+        justify-content:flex-end;
+        flex-wrap:nowrap;
+      }
+      .hero{
+        grid-template-columns:1fr;
+      }
+      .card-grid,
+      .quick-grid{
+        grid-template-columns:1fr;
+      }
+    }
+
+    @media (max-width:640px){
+      .container{width:min(100% - 24px,1180px)}
+      .brand-title{font-size:14px}
+      .brand-sub{display:none}
+      .hero-card,
+      .section-card,
+      .aside-card{
+        border-radius:22px;
+      }
+      .hero-card{padding:20px 18px}
+      .hero-card h1{font-size:30px}
+      .aside-card{padding:14px}
+      .section-card{padding:20px 16px}
+      .section-head h2{font-size:25px}
+      .countdown-bar{gap:8px}
+      .countdown-bar__left{gap:8px}
+      .countdown-copy{
+        font-size:13px;
+        white-space:nowrap;
+        overflow:hidden;
+        text-overflow:ellipsis;
+      }
+      .countdown-link{
+        min-height:32px;
+        padding:0 10px;
+        font-size:12px;
+      }
+      .footer-link-strip__inner{
+        flex-direction:column;
+      }
+      .cta-row .btn{
+        width:100%;
+      }
+      .bottom-cta .title{
+        font-size:19px;
+      }
+    }
+
+    html.is-open body,
+    body.no-scroll{overflow:hidden}
+  </style>
+
+  <script id="ts-website-schema" type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "name":"TilesSurvive.net",
+    "url":"https://tilessurvive.net/",
+    "inLanguage":"ko",
+    "description":"타일서바이벌 데이터베이스, 가이드, 시즌을 정리한 데이터 허브",
+    "potentialAction":{
+      "@type":"SearchAction",
+      "target":"https://tilessurvive.net/ko/search/?q={search_term_string}",
+      "query-input":"required name=search_term_string"
+    }
+  }
+  </script>
+
+  <script id="ts-breadcrumb-schema" type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {
+        "@type":"ListItem",
+        "position":1,
+        "name":"홈",
+        "item":"https://tilessurvive.net/ko/"
+      },
+      {
+        "@type":"ListItem",
+        "position":2,
+        "name":"가이드",
+        "item":"https://tilessurvive.net/ko/guides/"
+      },
+      {
+        "@type":"ListItem",
+        "position":3,
+        "name":"타일서바이벌 초반 공략",
+        "item":"https://tilessurvive.net/ko/guides/beginner-guide/"
+      }
+    ]
+  }
+  </script>
+
+  <script id="ts-article-schema" type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Article",
+    "headline":"타일서바이벌 초반 공략",
+    "description":"타일서바이벌 초보 유저 기준 초반 플레이 방향을 정리한 가이드입니다. 신서버 선택, 동맹 선택, 농장 계정, 가속 사용, 발전소 목표, 소과금 운영 기준까지 정리했습니다.",
+    "image":"https://tilessurvive.net/img/guides/beginner-guide.png",
+    "author":{
+      "@type":"Organization",
+      "name":"TilesSurvive.net"
+    },
+    "publisher":{
+      "@type":"Organization",
+      "name":"TilesSurvive.net",
+      "logo":{
+        "@type":"ImageObject",
+        "url":"https://tilessurvive.net/img/logo-tilessurvive.png"
+      }
+    },
+    "mainEntityOfPage":"https://tilessurvive.net/ko/guides/beginner-guide/",
+    "inLanguage":"ko-KR"
+  }
+  </script>
+
+  <script>
+    (function(){
+      function normalizeLang(code){
+        var low = String(code || '').trim().toLowerCase();
+        if (low === 'ko') return 'ko';
+        if (low === 'en') return 'en';
+        if (low === 'ja') return 'ja';
+        if (low === 'ru') return 'ru';
+        if (low === 'zh-tw' || low === 'zh_tw' || low === 'tw') return 'zh-tw';
+        return 'ko';
+      }
+
+      function pathWithLang(lang, path){
+        return '/' + lang + path;
+      }
+
+      function applyLang(lang){
+        lang = normalizeLang(lang);
+        var currentPath = location.pathname.replace(/^\/(ko|en|ja|ru|zh-tw)(\/|$)/i, '/');
+        if (currentPath === '') currentPath = '/';
+        location.href = pathWithLang(lang, currentPath);
+      }
+
+      window.TS_LANG = {
+        normalize: normalizeLang,
+        apply: applyLang
+      };
+    })();
+  </script>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z2MJ6TXZHK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Z2MJ6TXZHK');
+  </script>
+</head>
+
+<body>
+  <svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+    <symbol id="ico-info" viewBox="0 0 24 24">
+      <path d="M12 2a10 10 0 1 0 .001 20.001A10 10 0 0 0 12 2z" fill="currentColor"/>
+      <path d="M12 10v7" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+      <path d="M12 7h.01" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+    </symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">본문 바로가기</a>
+
+  <header class="site-header" role="banner">
+    <div class="container nav-bar">
+      <div class="nav-left">
+        <a class="brand" href="/ko/" aria-label="TilesSurvive.net 홈">
+          <img class="brand-logo" src="/img/logo-tilessurvive.png" alt="TilesSurvive.net" width="30" height="30" />
+          <span class="brand-text">
+            <span class="brand-title">TilesSurvive.net</span>
+            <span class="brand-sub">Tiles Survive Data / Guides / Codes / Tools Hub</span>
+          </span>
+        </a>
+
+        <nav class="nav" id="primaryNav" role="navigation" aria-label="상단 메뉴">
+          <a href="/ko/buildings/">건물</a>
+          <a href="/ko/heroes/">영웅</a>
+          <a href="/ko/database/">데이터베이스</a>
+          <a href="/ko/guides/" aria-current="page">가이드</a>
+          <a href="/ko/seasons/">시즌</a>
+        </nav>
+      </div>
+
+      <button class="hamburger" id="menuToggle" aria-label="메뉴 열기" aria-controls="mobileDrawer" aria-expanded="false">☰</button>
+
+      <div class="nav-right">
+        <div id="langDropdownHeader" class="lang-pills" aria-label="언어 선택"></div>
+      </div>
+    </div>
+  </header>
+
+  <section class="countdown-bar-wrap" aria-label="쿠폰 카운트다운">
+    <div class="container countdown-bar">
+      <div class="countdown-bar__left">
+        <span class="countdown-badge">쿠폰</span>
+        <div class="countdown-copy">
+          <strong>타일서바이벌 쿠폰 카운트다운</strong>
+        </div>
+      </div>
+      <div class="countdown-bar__actions">
+        <a class="countdown-link" href="/ko/codes/">최신 코드</a>
+        <a class="countdown-link" href="/ko/guides/gift-code-how-to-use/">입력 방법</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="backdrop" id="backdrop" hidden></div>
+
+  <aside class="drawer" id="mobileDrawer" aria-hidden="true" aria-label="모바일 메뉴">
+    <header>
+      <strong>Menu</strong>
+      <button id="btnClose" aria-label="닫기" style="background:none;border:0;font-size:20px;cursor:pointer">✕</button>
+    </header>
+
+    <div class="section">
+      <div id="langDropdownDrawer" class="lang-pills lang-pills--drawer" aria-label="언어 선택"></div>
+    </div>
+
+    <div class="drawer-dotrule" aria-hidden="true"></div>
+
+    <div class="section">
+      <div class="nav-list" role="navigation" aria-label="모바일 메뉴 목록">
+        <a href="/ko/buildings/">건물</a>
+        <a href="/ko/heroes/">영웅</a>
+        <a href="/ko/database/">데이터베이스</a>
+        <a href="/ko/guides/">가이드</a>
+        <a href="/ko/seasons/">시즌</a>
+      </div>
+
+      <div class="drawer-quick-stack">
+        <a class="drawer-quick-pill js-drawer-close" href="https://open.kakao.com/o/gako89Wh" target="_blank" rel="noopener noreferrer">카카오톡</a>
+        <a class="drawer-quick-pill js-drawer-close" href="/ko/codes/">기프트코드</a>
+        <a class="drawer-quick-pill js-drawer-close" href="/ko/guides/discount-topup/">할인충전</a>
+      </div>
+    </div>
+  </aside>
+
+  <main class="container page-main" id="main" role="main" aria-label="메인 콘텐츠">
+    <section class="visually-hidden-seo" aria-label="SEO summary">
+      <p>타일서바이벌 초반 공략, 초보 유저 기준 플레이 방향 정리, 신서버 선택, 동맹 선택, 농장 계정 운영, 가속 관리, 발전소 레벨 목표, 소과금 운영 기준</p>
+    </section>
+
+    <nav class="breadcrumb" aria-label="브레드크럼">
+      <a href="/ko/">홈</a>
+      <span>›</span>
+      <a href="/ko/guides/">가이드</a>
+      <span>›</span>
+      <span aria-current="page">타일서바이벌 초반 공략</span>
+    </nav>
+
+    <section class="hero" aria-labelledby="pageTitle">
+      <article class="hero-card">
+        <span class="eyebrow">가이드</span>
+        <h1 id="pageTitle">타일서바이벌 초반 공략</h1>
+        <p>
+          타일서바이벌을 처음 시작하는 유저를 위한 초반 플레이 방향 정리입니다.
+          신서버 선택, 동맹 선택, 농장 계정 운영, 가속 관리, 발전소 목표,
+          그리고 소과금 유저 기준 운영 방향까지 한 번에 정리했습니다.
+        </p>
+
+        <div class="hero-meta">
+          <span class="meta-pill">신서버 기준</span>
+          <span class="meta-pill">초보 유저용</span>
+          <span class="meta-pill">동맹 선택 중요</span>
+          <span class="meta-pill">가속 관리 핵심</span>
+        </div>
+
+        <div class="hero-links">
+          <a class="hero-link is-primary" href="#guide-start">초반 공략 바로 보기</a>
+          <a class="hero-link" href="#summary">핵심 요약 보기</a>
+          <a class="hero-link" href="/ko/codes/">최신 코드 보기</a>
+        </div>
+      </article>
+
+      <aside class="aside-card" aria-label="타일서바이벌 초반 공략 요약">
+        <div class="guide-thumb">
+          <img src="/img/guides/beginner-guide.png" alt="타일서바이벌 초반 공략 대표 이미지" />
+        </div>
+
+        <div class="quick-grid">
+          <div class="quick-item">
+            <strong>핵심 1</strong>
+            <span>구서버 말고 신서버</span>
+          </div>
+          <div class="quick-item">
+            <strong>핵심 2</strong>
+            <span>1위 동맹 또는 강한 동맹</span>
+          </div>
+          <div class="quick-item">
+            <strong>핵심 3</strong>
+            <span>농장 계정 최대한 준비</span>
+          </div>
+          <div class="quick-item">
+            <strong>핵심 4</strong>
+            <span>가속은 아껴서 사용</span>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <div class="section-stack" id="guide-start">
+      <section class="section-card" aria-labelledby="introTitle">
+        <div class="section-head">
+          <h2 id="introTitle">들어가기 전에</h2>
+          <p>이 글은 타일서바이벌을 처음 접하는 유저 기준으로, 초반에 무엇부터 판단하고 어떻게 운영해야 하는지 방향을 잡는 데 초점을 맞췄습니다.</p>
+        </div>
+
+        <p>
+          나처럼 처음에 방향을 잘 못 잡는 분들이 많을 것 같아서, 의식의 흐름대로 초반 공략을 한 번 정리해본다.
+        </p>
+
+        <p>
+          타일서바이벌을 먼저 해본 사람들 입장에서는 공략이라고 부르기 민망할 수도 있다.
+          그래도 나처럼 이 게임이 처음인 사람들에게 조금이나마 방향을 잡는 데 도움이 될까 싶어서 적어본 글이니, 가볍게 읽어주면 좋겠다.
+        </p>
+
+        <p>
+          현재 타일서바이벌은 시즌3까지 공개된 상태다.
+          아직 정보가 아주 많은 게임은 아니라서, 직접 알아가며 플레이하는 재미가 있다.
+        </p>
+
+        <div class="highlight-box" style="margin-top:16px;">
+          <strong>이 게임의 주요 과금 요소</strong>
+          <ul class="guide-list">
+            <li>영웅 조각 및 성급 강화</li>
+            <li>스킬북</li>
+            <li>영웅 장비</li>
+            <li>SSR 영웅 전용장비</li>
+            <li>각종 가속 아이템</li>
+          </ul>
+          특히 영웅 성급은 10성까지 올라가기 때문에 생각보다 투자 요소가 크다.
+        </div>
+
+        <div class="ok-note" role="note" aria-label="play mindset">
+          <div>
+            <strong>가장 먼저 기억할 점:</strong>
+            다른 사람이 나보다 빠르게 성장하는 모습을 보며 스트레스를 받는다면, 이 게임은 오래 할수록 피곤할 가능성이 크다.
+            반대로 천천히 내 속도에 맞게 즐긴다면 훨씬 오래 재미있게 할 수 있다.
+          </div>
+        </div>
+      </section>
+
+      <section class="section-card" aria-labelledby="serverTitle">
+        <div class="section-head">
+          <h2 id="serverTitle">1. 절대 구서버로 가지 말자</h2>
+          <p>초반에 가장 중요한 건 한국인 유무보다도 서버 선택입니다. 시작 서버가 잘못되면 이후 성장 효율이 크게 떨어질 수 있습니다.</p>
+        </div>
+
+        <p>
+          많은 유저들이 한국인이 많은 서버나 한국인 동맹으로 가라고 이야기한다.
+          물론 소통이 잘 되는 건 중요하다. 하지만 그보다 더 중요한 건 서버 선택이다.
+        </p>
+
+        <p>
+          절대 구서버, 즉 이미 많이 진행된 앞서버로 가지 말자.
+        </p>
+
+        <p>
+          구서버는 이미 격차가 너무 벌어진 상태라, 뒤늦게 시작하면 따라잡기가 매우 힘들다.
+          핵과금러가 아닌 이상 효율적으로 성장하기 어렵다.
+        </p>
+
+        <div class="note" role="note" aria-label="old server caution">
+          <svg class="note-ico" aria-hidden="true"><use href="#ico-info"></use></svg>
+          <div>
+            <strong>주의:</strong> 구서버는 이미 성장 격차가 심하게 벌어져 있어서, 웬만한 과금으로도 효율적으로 따라가기 어렵다.
+          </div>
+        </div>
+
+        <p>
+          무조건 신서버 기준으로 시작하는 걸 추천한다.
+          이 글도 신서버를 기준으로 작성한다.
+        </p>
+      </section>
+
+      <section class="section-card" aria-labelledby="allianceTitle">
+        <div class="section-head">
+          <h2 id="allianceTitle">2. 가능하면 신서버 1위 동맹으로 가자</h2>
+          <p>1위 동맹은 단순히 지금 순위가 높은 곳이 아니라, 실제로 서버를 주도할 과금 유저가 있는 동맹을 뜻합니다.</p>
+        </div>
+
+        <p>
+          여기서 말하는 1위 동맹은 단순히 일시적으로 순위가 높은 곳이 아니다.
+          확실한 과금 유저가 최소 1~2명 이상 있고, 앞으로도 상위권을 유지할 가능성이 높은 동맹을 뜻한다.
+        </p>
+
+        <p>
+          초반에는 정보력이 중요하다.
+          서버가 열리면 유저들을 잘 관찰하고, 누가 주도권을 잡는지 빠르게 파악하는 게 좋다.
+        </p>
+
+        <p>
+          만약 1위 동맹에 들어가지 못했는데, 서버 분위기 자체가 초반부터 강자들끼리 계속 싸우고 전쟁이 심하다면 그 서버는 피하는 게 낫다.
+          우리 같은 일반 유저에게는 평화롭게 성장할 수 있는 왕국이 훨씬 중요하다.
+        </p>
+
+        <p>
+          이미 시작했더라도 분위기가 너무 안 좋으면 미련 갖지 말고 신규 서버에서 다시 시작하는 것도 방법이다.
+          처음에는 아깝게 느껴질 수 있지만, 신섭은 꾸준히 열리고 결국 중요한 건 나한테 맞는 서버를 찾는 것이다.
+        </p>
+
+        <div class="highlight-box" style="margin-top:16px;">
+          <strong>그래도 서버를 다시 옮기기 귀찮다면</strong>
+          최소한 한국인 동맹으로 가는 걸 추천한다.
+          이 게임은 소통이 정말 중요해서, 말이 안 통하면 생각보다 많이 답답하다.
+        </div>
+      </section>
+
+      <section class="section-card" aria-labelledby="spenderAllianceTitle">
+        <div class="section-head">
+          <h2 id="spenderAllianceTitle">3. 과금 유저가 많은 동맹을 선택해야 하는 이유</h2>
+          <p>강한 동맹에 들어가야 하는 이유는 단순히 전투력 때문만이 아니라, 선물, 이벤트 참여, 성장 속도 전반에 영향을 주기 때문입니다.</p>
+        </div>
+
+        <p>
+          과금 유저가 많은 동맹에 들어가야 하는 이유는 단순하다.
+        </p>
+
+        <p>
+          그들이 패키지를 구매하면 동맹원들에게도 선물이 지급된다.
+          이 차이가 생각보다 크다.
+        </p>
+
+        <p>
+          게다가 과금 유저들은 보통 게임 이해도가 높고, 각종 이벤트나 집결 사냥에도 적극적으로 참여한다.
+          결국 그런 동맹은 전체 성장 속도도 빠르다.
+        </p>
+
+        <p>
+          모든 SLG 게임이 그렇듯, 나중에는 서버 이전 같은 기능도 생길 가능성이 높다.
+          하지만 그게 바로 열리지는 않을 것이다.
+        </p>
+
+        <p>
+          내 생각에는 최소 5개월 정도는 평화로운 서버에서 성장할 시간이 필요하다.
+          그래서 초반 서버와 동맹 선택이 정말 중요하다.
+        </p>
+
+        <div class="card-grid" style="margin-top:16px;">
+          <article class="info-box">
+            <h3>강한 동맹 선택</h3>
+            <p>
+              동맹 선물, 집결, 이벤트 참여, 성장 보너스를 함께 누릴 수 있다.
+              장기적으로는 가장 안정적인 성장 루트에 가깝다.
+            </p>
+          </article>
+          <article class="info-box">
+            <h3>시골 서버 선택</h3>
+            <p>
+              개인 과금 이벤트 보상을 독식하기 쉬울 수 있다.
+              하지만 서버 간 이벤트, 동맹 간 이벤트는 확실히 어려워질 가능성이 크다.
+            </p>
+          </article>
+        </div>
+
+        <div class="note" role="note" aria-label="alliance choice note">
+          <svg class="note-ico" aria-hidden="true"><use href="#ico-info"></use></svg>
+          <div>
+            <strong>둘 중 하나다:</strong>
+            모든 과금 이벤트 보상을 독식하고 싶다면 과금 유저가 거의 없는 시골 서버도 선택지가 될 수 있다.
+            하지만 내가 서버 내 유일한 과금 유저라면 개인 보상은 수월할 수 있어도, 모든 서버 간 이벤트와 동맹 간 이벤트는 어려워질 가능성이 크다.
+          </div>
+        </div>
+      </section>
+
+      <section class="section-card" aria-labelledby="farmTitle">
+        <div class="section-head">
+          <h2 id="farmTitle">4. 무과금이든 소과금이든 농장 계정은 최대한 만들어라</h2>
+          <p>농장 계정은 단순 자원 수급용이 아니라, 시즌이 시작된 뒤 본계정 성장 속도를 안정적으로 끌어올리는 핵심 기반입니다.</p>
+        </div>
+
+        <p>
+          이건 정말 중요하다.
+        </p>
+
+        <p>
+          무과금 유저든 소과금 유저든, 만들 수 있는 만큼 농장 계정을 만들어두는 걸 추천한다.
+          시즌1이 시작되면 그 농장 계정들은 내 연구와 건설을 도와주는 든든한 서포터가 된다.
+        </p>
+
+        <p>
+          초반에는 건설과 연구가 막막해 보여도, 농장 계정이 여러 개 있으면 자원 수급이 훨씬 편해진다.
+          결국 본계정 성장 속도도 안정적으로 올라간다.
+        </p>
+
+        <p>
+          특히 무과금이라면 더더욱 부지런함이 곧 성장이다.
+        </p>
+
+        <div class="highlight-box" style="margin-top:16px;">
+          <strong>농장 계정의 장점</strong>
+          자원 수급뿐 아니라 시즌이 시작되면 연구와 건설 버프를 받을 수 있는 기반도 마련된다.
+          결국 초반에 농장 계정을 얼마나 잘 준비해두느냐에 따라 나중에 성장 속도 차이가 꽤 크게 벌어진다.
+        </div>
+      </section>
+
+      <section class="section-card" aria-labelledby="speedupTitle">
+        <div class="section-head">
+          <h2 id="speedupTitle">5. 가속은 아무 데나 쓰지 말자</h2>
+          <p>타일서바이벌은 가속 사용 효율이 성장 속도를 크게 좌우합니다. 특히 공용 가속은 사용처를 잘못 잡으면 나중에 크게 아쉬워질 수 있습니다.</p>
+        </div>
+
+        <p>
+          타일서바이벌은 가속 사용 효율이 매우 중요한 게임이다.
+        </p>
+
+        <p>
+          가속은 건설, 연구, 훈련, 회복, 이벤트 등 거의 모든 분야에 사용된다.
+          그래서 아무 생각 없이 쓰다 보면 항상 부족해진다.
+        </p>
+
+        <p>
+          초반에는 랭킹 욕심 때문에 무작정 가속을 쓰기 쉽다.
+          하지만 대부분의 경우 그보다는 이벤트 기본 보상을 꾸준히 챙기면서 다이아와 자원을 모으는 편이 훨씬 효율적이다.
+        </p>
+
+        <p>
+          가속은 모아두었다가 정말 중요한 이벤트 때 한 번에 사용하는 게 좋다.
+          건물 업그레이드, 연구, 영웅 성급, 장비 강화 같은 요소들은 결국 점수로 환산된다.
+          즉, 가속을 언제 어디에 쓰느냐가 성장 속도를 크게 좌우한다.
+        </p>
+
+        <p>
+          무과금 유저라면 특히 더 가속을 아껴야 한다.
+          가속을 남용하면 결국 자원이 부족해지고, 자원이 부족하면 성장도 멈춘다.
+        </p>
+
+        <div class="note" role="note" aria-label="common speedup note">
+          <svg class="note-ico" aria-hidden="true"><use href="#ico-info"></use></svg>
+          <div>
+            <strong>중요:</strong>
+            공용 가속은 정말 아무 데나 쓰지 말자.
+            특히 훈련에 공용 가속을 쓰는 건 추천하지 않는다.
+          </div>
+        </div>
+
+        <p>
+          게임을 하다 보면 공용 가속이 200일, 300일 이상 쌓이는 구간도 오긴 한다.
+          그래도 그 가속을 함부로 훈련에 써버리기보다는 연구나 건설 쪽에 투자하는 편이 훨씬 낫다.
+        </p>
+
+        <div class="ok-note" role="note" aria-label="speedup advice">
+          <div>
+            <strong>핵심 기준:</strong>
+            결국 성장의 뼈대를 만드는 건 연구와 건설이고,
+            공용 가속의 가치는 그쪽에서 훨씬 크게 체감된다.
+          </div>
+        </div>
+      </section>
+
+      <section class="section-card" aria-labelledby="powerTitle">
+        <div class="section-head">
+          <h2 id="powerTitle">6. 초반 1차 목표는 발전소 레벨 올리기</h2>
+          <p>초반에는 모든 걸 한 번에 끌어올리기보다, 발전소를 1차 목표로 잡고 기반을 다지는 식으로 가는 편이 훨씬 안정적입니다.</p>
+        </div>
+
+        <p>
+          내 기준에서 초반 1차 목표는 발전소 레벨을 올리는 것이다.
+        </p>
+
+        <p>
+          여기까지 어느 정도 올라오면 사실상 초반 구간은 벗어났다고 봐도 된다.
+          그 이후부터는 각종 이벤트 위주로 운영하면서 성장 방향을 잡으면 된다.
+        </p>
+
+        <p>
+          초반부터 건설과 연구에 너무 목맬 필요는 없다.
+          농장 계정이 충분히 있다면 건설과 연구는 생각보다 훨씬 수월해진다.
+        </p>
+
+        <p>
+          그리고 발전소 30에 너무 집착할 필요도 없다.
+          시즌이 시작되면 발전소 30을 훨씬 수월하게 올릴 수 있는 상황이 만들어진다.
+        </p>
+
+        <p>
+          물론 그 전제는 동맹 유저들이 활발하게 움직여주어야 한다는 점이다.
+          결국 여기서도 다시 중요한 건 서버와 동맹 선택이다.
+        </p>
+
+        <div class="highlight-box" style="margin-top:16px;">
+          <strong>정리하면</strong>
+          초반에는 무리해서 모든 자원과 가속을 쏟아붓기보다,
+          발전소를 1차 목표로 삼고 차근차근 기반을 다지는 식으로 가는 편이 더 안정적이다.
+        </div>
+      </section>
+
+      <section class="section-card" aria-labelledby="lightspendTitle">
+        <div class="section-head">
+          <h2 id="lightspendTitle">7. 소과금 유저라면 이렇게 하자</h2>
+          <p>소과금 유저도 핵심은 무과금과 크게 다르지 않습니다. 다만 초반에 효율 좋은 패키지 위주로만 신중하게 접근하는 것이 중요합니다.</p>
+        </div>
+
+        <p>
+          소과금 유저도 기본 방향은 무과금과 크게 다르지 않다.
+          여전히 가장 중요한 건 동맹 선택이다.
+        </p>
+
+        <p>
+          초반에 조금만 잘 치고 나가도 상위권 동맹에서 먼저 연락이 오는 경우가 있다.
+          그중에서 분위기 괜찮고 오래 함께할 만한 동맹을 선택해서 들어가면 된다.
+        </p>
+
+        <p>
+          패키지 구매는 신중해야 한다.
+        </p>
+
+        <div class="highlight-box" style="margin-top:16px;">
+          <strong>초반 기준 추천 우선순위</strong>
+          <ul class="guide-list">
+            <li>월간 카드</li>
+            <li>주간 카드</li>
+            <li>초반 건설 대열</li>
+          </ul>
+          이 정도는 체감 효율이 괜찮은 편이다.
+        </div>
+
+        <p style="margin-top:16px;">
+          반대로 게임 구조를 잘 모르는 상태에서 성급하게 이것저것 과금하다 보면 효율이 낮은 패키지에 돈을 쓰기 쉽다.
+          타일서바이벌에 대한 이해가 충분히 생기기 전까지는 무리해서 결제하지 않는 걸 추천한다.
+        </p>
+      </section>
+
+      <section class="section-card" id="summary" aria-labelledby="summaryTitle">
+        <div class="section-head">
+          <h2 id="summaryTitle">마무리</h2>
+          <p>처음 시작하는 유저들이 너무 헤매지 않도록, 초반에 꼭 기억해야 할 핵심만 다시 정리했습니다.</p>
+        </div>
+
+        <p>
+          부족하지만, 처음 시작하는 유저들이 너무 헤매지 않았으면 하는 마음으로 적어봤다.
+        </p>
+
+        <div class="faq-list" style="margin-top:16px;">
+          <article class="faq-item">
+            <p class="faq-q">초반 핵심 요약</p>
+            <ul class="guide-list">
+              <li>구서버 말고 신서버로 시작하기</li>
+              <li>가능하면 1위 동맹, 최소한 강한 과금 유저가 있는 동맹 들어가기</li>
+              <li>서버 분위기가 전쟁 위주면 미련 없이 새 서버 고려하기</li>
+              <li>농장 계정은 최대한 많이 만들기</li>
+              <li>가속은 함부로 쓰지 말고 중요한 이벤트를 위해 모아두기</li>
+              <li>공용 가속은 특히 훈련에 낭비하지 않기</li>
+              <li>초반 1차 목표는 발전소 레벨 올리기</li>
+              <li>발전소 30에 너무 조급해하지 않기</li>
+              <li>건설과 연구에 너무 목매지 않기</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="ok-note" role="note" aria-label="final note">
+          <div>
+            <strong>마지막 한 줄:</strong>
+            이 게임은 남들과 비교하기 시작하면 끝없이 피곤해진다.
+            하지만 내 속도대로, 좋은 동맹에서, 꾸준히 쌓아간다면 충분히 오래 재미있게 즐길 수 있다.
+          </div>
+        </div>
+
+        <div class="bottom-cta" aria-label="Guide CTA">
+          <p class="title">다음으로 같이 보면 좋은 페이지</p>
+          <p class="desc">
+            초반 공략을 읽었다면, 최신 기프트코드와 시즌 페이지도 함께 보면 실제 운영에 더 도움이 된다.
+          </p>
+
+          <div class="cta-row">
+            <a class="btn btn-primary" href="/ko/codes/">최신 코드 보기</a>
+            <a class="btn" href="/ko/seasons/">시즌 가이드 보기</a>
+            <a class="btn" href="/ko/guides/gift-code-how-to-use/">기프트코드 입력 방법</a>
+            <a class="btn" href="/ko/guides/discount-topup/">할인충전 보기</a>
+          </div>
+
+          <div class="cta-badges" aria-label="quick notes">
+            <span class="badge">초보 유저 기준</span>
+            <span class="badge">신서버 기준</span>
+            <span class="badge">동맹 선택 중요</span>
+            <span class="badge">농장 계정 중요</span>
+            <span class="badge">가속 관리 핵심</span>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer" role="contentinfo" aria-label="푸터">
+    <div class="footer-link-strip">
+      <div class="container footer-link-strip__inner">
+        <div class="footer-link-strip__actions">
+          <a class="countdown-link" href="https://open.kakao.com/o/gako89Wh" target="_blank" rel="noopener noreferrer">카카오톡</a>
+          <a class="countdown-link" href="/ko/codes/">기프트코드</a>
+          <a class="countdown-link" href="/ko/guides/discount-topup/">할인충전</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <div>
+          <div class="footer-brand">TilesSurvive.net</div>
+          <p class="footer-desc">
+            타일서바이벌 관련 데이터를 취합하여 유저들의 정착을 돕기 위해 만들어졌으며,
+            타일서바이벌과 관련 없는 비공식 팬사이트입니다.
+          </p>
+        </div>
+
+        <nav class="footer-links" aria-label="푸터 메뉴">
+          <a href="/ko/about/">소개</a>
+          <a href="/ko/privacy/">프라이버시</a>
+        </nav>
+      </div>
+
+      <div class="footer-copy">
+        © 2026 TilesSurvive.net. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <nav class="mobile-bottom-nav" aria-label="모바일 빠른 이동">
+    <div class="mobile-bottom-nav__inner">
+      <a class="mobile-bottom-nav__item" href="/ko/" data-mobile-nav="home">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M4 10.5 12 4l8 6.5V20a1 1 0 0 1-1 1h-4v-6H9v6H5a1 1 0 0 1-1-1v-9.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+        </svg>
+        <span class="mobile-bottom-nav__label">홈</span>
+      </a>
+
+      <a class="mobile-bottom-nav__item" href="/ko/guides/" data-mobile-nav="guides">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M6 5.5A2.5 2.5 0 0 1 8.5 3H19v16H8.5A2.5 2.5 0 0 0 6 21V5.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+          <path d="M6 6h11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+        <span class="mobile-bottom-nav__label">가이드</span>
+      </a>
+
+      <a class="mobile-bottom-nav__item" href="/ko/seasons/" data-mobile-nav="seasons">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 3v4M12 17v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M3 12h4M17 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          <circle cx="12" cy="12" r="3.5" stroke="currentColor" stroke-width="1.8"/>
+        </svg>
+        <span class="mobile-bottom-nav__label">시즌</span>
+      </a>
+
+      <a class="mobile-bottom-nav__item" href="/ko/codes/" data-mobile-nav="codes">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M8 7.5h8a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="1.8"/>
+          <path d="M9 7V6a3 3 0 1 1 6 0v1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          <path d="M12 11v3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+        <span class="mobile-bottom-nav__label">코드</span>
+      </a>
+    </div>
+  </nav>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var html = document.documentElement;
+      var body = document.body;
+      var drawer = document.getElementById('mobileDrawer');
+      var backdrop = document.getElementById('backdrop');
+      var btnOpen = document.getElementById('menuToggle');
+      var btnClose = document.getElementById('btnClose');
+
+      function openDrawer(){
+        html.classList.add('is-open');
+        body.classList.add('no-scroll');
+        backdrop.hidden = false;
+        drawer.setAttribute('aria-hidden', 'false');
+        btnOpen && btnOpen.setAttribute('aria-expanded', 'true');
+      }
+
+      function closeDrawer(){
+        html.classList.remove('is-open');
+        body.classList.remove('no-scroll');
+        backdrop.hidden = true;
+        drawer.setAttribute('aria-hidden', 'true');
+        btnOpen && btnOpen.setAttribute('aria-expanded', 'false');
+      }
+
+      btnOpen && btnOpen.addEventListener('click', openDrawer);
+      btnClose && btnClose.addEventListener('click', closeDrawer);
+      backdrop && backdrop.addEventListener('click', closeDrawer);
+
+      window.addEventListener('keydown', function(e){
+        if (e.key === 'Escape') closeDrawer();
+      });
+
+      var drawerLinks = drawer ? drawer.querySelectorAll('a') : [];
+      Array.prototype.forEach.call(drawerLinks, function(link){
+        link.addEventListener('click', closeDrawer);
+      });
+    });
+  </script>
+
+  <script>
+    (function(){
+      var LANGS = [
+        { code:'ko', label:'KO' },
+        { code:'en', label:'EN' },
+        { code:'ja', label:'JA' },
+        { code:'ru', label:'RU' },
+        { code:'zh-tw', label:'TW' }
+      ];
+
+      function currentLang(){
+        return 'ko';
+      }
+
+      function render(root){
+        if (!root) return;
+        var cur = currentLang();
+        root.innerHTML = LANGS.map(function(lang){
+          return '<button type="button" class="lang-pill" data-lang="' + lang.code + '" aria-current="' + (lang.code === cur ? 'true' : 'false') + '">' + lang.label + '</button>';
+        }).join('');
+      }
+
+      function bind(root){
+        if (!root) return;
+        root.addEventListener('click', function(e){
+          var btn = e.target.closest('.lang-pill[data-lang]');
+          if (!btn) return;
+          e.preventDefault();
+          window.TS_LANG.apply(btn.getAttribute('data-lang'));
+        });
+      }
+
+      document.addEventListener('DOMContentLoaded', function(){
+        var header = document.getElementById('langDropdownHeader');
+        var drawer = document.getElementById('langDropdownDrawer');
+        render(header);
+        render(drawer);
+        bind(header);
+        bind(drawer);
+      });
+    })();
+  </script>
+
+  <script>
+    (function(){
+      function updateBottomNavActive(){
+        var pathname = location.pathname.toLowerCase();
+        var items = document.querySelectorAll('.mobile-bottom-nav__item');
+
+        Array.prototype.forEach.call(items, function(item){
+          item.classList.remove('is-active');
+          item.removeAttribute('aria-current');
+
+          var key = item.getAttribute('data-mobile-nav');
+          var active = false;
+
+          if (key === 'home') {
+            active = pathname === '/ko/' || pathname === '/ko';
+          } else if (key === 'guides') {
+            active = pathname.indexOf('/ko/guides') === 0;
+          } else if (key === 'seasons') {
+            active = pathname.indexOf('/ko/seasons') === 0;
+          } else if (key === 'codes') {
+            active = pathname.indexOf('/ko/codes') === 0;
+          }
+
+          if (active) {
+            item.classList.add('is-active');
+            item.setAttribute('aria-current', 'page');
+          }
+        });
+      }
+
+      document.addEventListener('DOMContentLoaded', updateBottomNavActive);
+    })();
+  </script>
+</body>
+</html>

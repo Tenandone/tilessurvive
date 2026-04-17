@@ -1,0 +1,1860 @@
+<!doctype html>
+<html lang="zh-Hant" data-lang="zh-tw">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>寒霜啟示錄新手前期攻略 | 新手玩家遊玩方向整理 | TilesSurvive.net</title>
+  <base href="/" />
+
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="description" content="寒霜啟示錄新手玩家前期攻略指南。整理新伺服器選擇、聯盟選擇、農場帳號經營、加速道具管理、發電廠成長方向，以及小課玩家的遊玩基準。" />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+  <meta name="author" content="TilesSurvive.net" />
+
+  <link rel="canonical" href="https://tilessurvive.net/zh-tw/guides/beginner-guide/" />
+  <link rel="alternate" hreflang="x-default" href="https://tilessurvive.net/en/guides/beginner-guide/" />
+  <link rel="alternate" hreflang="ko" href="https://tilessurvive.net/ko/guides/beginner-guide/" />
+  <link rel="alternate" hreflang="en" href="https://tilessurvive.net/en/guides/beginner-guide/" />
+  <link rel="alternate" hreflang="ja" href="https://tilessurvive.net/ja/guides/beginner-guide/" />
+  <link rel="alternate" hreflang="ru" href="https://tilessurvive.net/ru/guides/beginner-guide/" />
+  <link rel="alternate" hreflang="zh-TW" href="https://tilessurvive.net/zh-tw/guides/beginner-guide/" />
+
+  <meta property="og:site_name" content="TilesSurvive.net" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="寒霜啟示錄新手前期攻略 | 新手玩家遊玩方向整理" />
+  <meta property="og:description" content="給剛開始玩寒霜啟示錄的新手玩家的前期攻略。整理新伺服器、頂級聯盟、農場帳號、加速使用、發電廠目標，以及小課玩家的營運方向。" />
+  <meta property="og:url" content="https://tilessurvive.net/zh-tw/guides/beginner-guide/" />
+  <meta property="og:image" content="https://tilessurvive.net/img/guides/beginner-guide.png" />
+  <meta property="og:locale" content="zh_TW" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="寒霜啟示錄新手前期攻略 | 新手玩家遊玩方向整理" />
+  <meta name="twitter:description" content="寒霜啟示錄新手玩家前期營運指南。整理新伺服器選擇、聯盟選擇、農場帳號、加速道具與發電廠目標。" />
+  <meta name="twitter:image" content="https://tilessurvive.net/img/guides/beginner-guide.png" />
+
+  <link rel="preload" as="image" href="/img/logo-tilessurvive.png" />
+  <link rel="preload" as="image" href="/img/guides/beginner-guide.png" />
+
+  <style>
+    :root{
+      --bg:#f4f7fb;
+      --surface:#ffffff;
+      --surface-soft:#f8fafc;
+      --line:#e5e7eb;
+      --line-strong:#cbd5e1;
+      --text:#0f172a;
+      --text-soft:#475569;
+      --text-faint:#64748b;
+      --dark:#0f172a;
+      --brand:#0ea5e9;
+      --brand-soft:#e0f2fe;
+      --green:#16a34a;
+      --green-soft:#dcfce7;
+      --amber:#f59e0b;
+      --amber-soft:#fef3c7;
+      --red:#dc2626;
+      --red-soft:#fee2e2;
+      --blue:#2563eb;
+      --blue-soft:#dbeafe;
+      --container:min(1180px, calc(100% - 32px));
+      --radius-xl:28px;
+      --radius-lg:24px;
+      --radius-md:18px;
+      --shadow:0 18px 40px rgba(15,23,42,.08);
+
+      --warn-bg:rgba(245,158,11,.08);
+      --warn-border:rgba(245,158,11,.35);
+      --soft-bg:#f8fbff;
+      --soft-border:#dbeafe;
+      --ok-bg:#f0fdf4;
+      --ok-border:#bbf7d0;
+    }
+
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;overflow-x:hidden}
+    html{scroll-behavior:smooth}
+    body{
+      color:var(--text);
+      background:var(--bg);
+      font-family:"Noto Sans TC","Microsoft JhengHei","PingFang TC","Heiti TC",system-ui,-apple-system,sans-serif;
+      line-height:1.68;
+      text-rendering:optimizeLegibility;
+      -webkit-font-smoothing:antialiased;
+      padding-bottom:calc(76px + env(safe-area-inset-bottom, 0px));
+    }
+
+    a{color:inherit;text-decoration:none}
+    img{display:block;max-width:100%}
+    button{font:inherit}
+    .container{width:var(--container);margin:0 auto;min-width:0}
+
+    .skip-link{
+      position:absolute;
+      left:12px;
+      top:-44px;
+      z-index:3000;
+      background:#111827;
+      color:#fff;
+      padding:10px 14px;
+      border-radius:10px;
+      font-weight:800;
+    }
+    .skip-link:focus{top:12px}
+
+    .site-header{
+      position:sticky;
+      top:0;
+      z-index:1500;
+      background:rgba(255,255,255,.92);
+      backdrop-filter:saturate(160%) blur(12px);
+      border-bottom:1px solid rgba(15,23,42,.06);
+    }
+
+    .nav-bar{
+      min-height:68px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+    }
+
+    .nav-left{
+      display:flex;
+      align-items:center;
+      gap:20px;
+      min-width:0;
+      flex:1 1 auto;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      min-width:0;
+      color:#111827;
+    }
+
+    .brand-logo{
+      width:30px;
+      height:30px;
+      border-radius:9px;
+      flex:0 0 auto;
+      background:#e5e7eb;
+      object-fit:cover;
+    }
+
+    .brand-text{
+      display:flex;
+      flex-direction:column;
+      gap:2px;
+      min-width:0;
+      line-height:1.1;
+    }
+
+    .brand-title{
+      font-size:16px;
+      font-weight:900;
+      white-space:nowrap;
+    }
+
+    .brand-sub{
+      font-size:12px;
+      color:#6b7280;
+      white-space:nowrap;
+    }
+
+    .nav{
+      display:flex;
+      align-items:center;
+      gap:4px;
+      min-width:0;
+      flex-wrap:wrap;
+    }
+
+    .nav a{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:40px;
+      padding:0 12px;
+      border-radius:999px;
+      color:#475569;
+      font-size:14px;
+      font-weight:800;
+      white-space:nowrap;
+    }
+
+    .nav a:hover,
+    .nav a:focus,
+    .nav a[aria-current="page"]{
+      background:#eef2f7;
+      color:#111827;
+      outline:none;
+    }
+
+    .nav-right{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      flex:0 0 auto;
+    }
+
+    .lang-pills{
+      display:flex;
+      align-items:center;
+      gap:8px;
+      flex-wrap:wrap;
+    }
+
+    .lang-pill{
+      appearance:none;
+      border:1px solid var(--line);
+      background:#fff;
+      color:#6b7280;
+      padding:8px 10px;
+      border-radius:999px;
+      font:13px/1.1 system-ui,-apple-system,Segoe UI,Roboto,"Noto Sans",Arial;
+      cursor:pointer;
+      white-space:nowrap;
+      user-select:none;
+    }
+
+    .lang-pill:hover{color:#111827}
+    .lang-pill[aria-current="true"]{
+      color:#111827;
+      font-weight:900;
+      border-color:var(--line-strong);
+      background:#f8fafc;
+    }
+
+    .hamburger{
+      display:none;
+      appearance:none;
+      border:1px solid var(--line);
+      background:#fff;
+      color:#111827;
+      width:42px;
+      height:42px;
+      border-radius:12px;
+      font-size:20px;
+      cursor:pointer;
+      flex:0 0 auto;
+    }
+
+    .countdown-bar-wrap{
+      background:#fff;
+      border-bottom:1px solid rgba(15,23,42,.06);
+    }
+
+    .countdown-bar{
+      min-height:52px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      padding:10px 0;
+    }
+
+    .countdown-bar__left{
+      min-width:0;
+      display:flex;
+      align-items:center;
+      gap:10px;
+      flex:1 1 auto;
+    }
+
+    .countdown-badge{
+      flex:0 0 auto;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:28px;
+      padding:0 10px;
+      border-radius:999px;
+      background:#111827;
+      color:#fff;
+      font-size:12px;
+      font-weight:900;
+    }
+
+    .countdown-copy{
+      min-width:0;
+      font-size:14px;
+      color:#334155;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+    }
+
+    .countdown-copy strong{
+      color:#111827;
+      font-weight:900;
+    }
+
+    .countdown-bar__actions{
+      flex:0 0 auto;
+      display:flex;
+      align-items:center;
+      gap:8px;
+      flex-wrap:nowrap;
+    }
+
+    .countdown-link{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:34px;
+      padding:0 12px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      background:#f8fafc;
+      font-size:13px;
+      font-weight:800;
+      color:#111827;
+      white-space:nowrap;
+      flex:0 0 auto;
+    }
+
+    .countdown-link:hover,
+    .countdown-link:focus{
+      background:#eef2f7;
+      outline:none;
+    }
+
+    .page-main{
+      padding-top:18px;
+      padding-bottom:32px;
+    }
+
+    .breadcrumb{
+      display:flex;
+      align-items:center;
+      gap:8px;
+      flex-wrap:wrap;
+      margin-bottom:16px;
+      color:#64748b;
+      font-size:13px;
+      font-weight:700;
+    }
+
+    .breadcrumb a{color:#475569}
+    .breadcrumb span[aria-current="page"]{color:#111827}
+
+    .hero{
+      display:grid;
+      grid-template-columns:minmax(0,1.1fr) minmax(320px,.9fr);
+      gap:18px;
+      align-items:stretch;
+    }
+
+    .hero-card,
+    .section-card,
+    .aside-card{
+      background:#fff;
+      border:1px solid var(--line);
+      border-radius:var(--radius-xl);
+      box-shadow:var(--shadow);
+      min-width:0;
+    }
+
+    .hero-card{
+      padding:28px 24px;
+      background:
+        radial-gradient(circle at top right, rgba(14,165,233,.12), transparent 30%),
+        linear-gradient(180deg,#ffffff,#f8fbff);
+    }
+
+    .eyebrow{
+      display:inline-flex;
+      align-items:center;
+      min-height:30px;
+      padding:0 12px;
+      border-radius:999px;
+      background:var(--brand-soft);
+      color:#0369a1;
+      font-size:12px;
+      font-weight:900;
+      margin-bottom:14px;
+    }
+
+    .hero-card h1{
+      margin:0;
+      font-size:42px;
+      line-height:1.1;
+      letter-spacing:-.04em;
+      color:var(--dark);
+      word-break:keep-all;
+      overflow-wrap:anywhere;
+    }
+
+    .hero-card p{
+      margin:14px 0 0;
+      color:var(--text-soft);
+      font-size:15px;
+      max-width:760px;
+    }
+
+    .hero-meta{
+      margin-top:18px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+    }
+
+    .meta-pill{
+      display:inline-flex;
+      align-items:center;
+      min-height:38px;
+      padding:0 14px;
+      border-radius:999px;
+      background:#f8fafc;
+      border:1px solid #e2e8f0;
+      color:#111827;
+      font-size:13px;
+      font-weight:800;
+    }
+
+    .hero-links{
+      margin-top:18px;
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+    }
+
+    .hero-link{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:44px;
+      padding:0 16px;
+      border-radius:999px;
+      font-size:14px;
+      font-weight:900;
+      border:1px solid var(--line);
+      background:#fff;
+    }
+
+    .hero-link.is-primary{
+      background:#111827;
+      color:#fff;
+      border-color:#111827;
+    }
+
+    .aside-card{
+      padding:18px;
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+    }
+
+    .guide-thumb{
+      border-radius:22px;
+      background:linear-gradient(180deg,#eef8ff,#e0f2fe);
+      border:1px solid #dbeafe;
+      padding:18px;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      min-height:260px;
+    }
+
+    .guide-thumb img{
+      width:100%;
+      max-width:320px;
+      height:auto;
+      object-fit:contain;
+    }
+
+    .quick-grid{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:10px;
+    }
+
+    .quick-item{
+      border:1px solid #e2e8f0;
+      background:#f8fafc;
+      border-radius:18px;
+      padding:14px;
+    }
+
+    .quick-item strong{
+      display:block;
+      font-size:12px;
+      color:#64748b;
+      margin-bottom:4px;
+    }
+
+    .quick-item span{
+      display:block;
+      font-size:15px;
+      font-weight:900;
+      color:#111827;
+      word-break:keep-all;
+      overflow-wrap:anywhere;
+    }
+
+    .section-stack{
+      margin-top:18px;
+      display:grid;
+      gap:18px;
+    }
+
+    .section-card{
+      padding:24px;
+    }
+
+    .section-head{
+      margin-bottom:18px;
+    }
+
+    .section-head h2{
+      margin:0;
+      font-size:30px;
+      line-height:1.2;
+      letter-spacing:-.03em;
+      color:var(--dark);
+      word-break:keep-all;
+      overflow-wrap:anywhere;
+    }
+
+    .section-head p{
+      margin:8px 0 0;
+      font-size:14px;
+      color:var(--text-soft);
+      word-break:keep-all;
+      overflow-wrap:anywhere;
+    }
+
+    .highlight-box{
+      border:1px solid #dbeafe;
+      background:linear-gradient(180deg,#f8fbff,#eef6ff);
+      border-radius:22px;
+      padding:18px;
+    }
+
+    .highlight-box strong{
+      display:block;
+      font-size:16px;
+      color:#0f172a;
+      margin-bottom:8px;
+    }
+
+    .card-grid{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:14px;
+    }
+
+    .info-box{
+      border:1px solid #e2e8f0;
+      border-radius:20px;
+      padding:18px;
+      background:#fff;
+      min-width:0;
+    }
+
+    .info-box h3{
+      margin:0 0 10px;
+      font-size:20px;
+      line-height:1.3;
+      word-break:keep-all;
+      overflow-wrap:anywhere;
+    }
+
+    .info-box p{
+      margin:0;
+      color:var(--text-soft);
+      font-size:14px;
+    }
+
+    .note,
+    .ok-note{
+      display:flex;
+      gap:10px;
+      padding:14px 16px;
+      border-radius:18px;
+      margin:12px 0 16px;
+      font-size:14px;
+    }
+
+    .note{
+      border:1px solid var(--warn-border);
+      background:var(--warn-bg);
+    }
+
+    .ok-note{
+      border:1px solid var(--ok-border);
+      background:var(--ok-bg);
+    }
+
+    .note strong,
+    .ok-note strong{
+      font-weight:900;
+    }
+
+    .note .note-ico{
+      width:18px;
+      height:18px;
+      flex:0 0 18px;
+      margin-top:2px;
+      color:#b45309;
+    }
+
+    .guide-list{
+      margin:0;
+      padding-left:18px;
+    }
+
+    .guide-list li{margin:6px 0}
+
+    .faq-list{
+      display:grid;
+      gap:12px;
+    }
+
+    .faq-item{
+      border:1px solid var(--line);
+      border-radius:18px;
+      background:#fff;
+      padding:16px;
+    }
+
+    .faq-q{
+      font-weight:900;
+      margin:0 0 6px;
+    }
+
+    .faq-a{
+      margin:0;
+      color:var(--text-soft);
+    }
+
+    .bottom-cta{
+      margin-top:18px;
+      border-radius:22px;
+      border:1px solid var(--line);
+      background:linear-gradient(180deg,#ffffff,#fafcff);
+      box-shadow:var(--shadow);
+      padding:18px;
+    }
+
+    .bottom-cta .title{
+      font-size:21px;
+      font-weight:900;
+      color:var(--text);
+      margin:0 0 8px;
+      line-height:1.3;
+    }
+
+    .bottom-cta .desc{
+      margin:0 0 14px;
+      color:var(--text-soft);
+      font-size:14px;
+    }
+
+    .cta-row{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      align-items:center;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      min-height:44px;
+      padding:0 16px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      cursor:pointer;
+      font-weight:900;
+      text-decoration:none !important;
+      line-height:1;
+      user-select:none;
+      background:#fff;
+      color:#111827;
+      transition:transform .12s ease, box-shadow .12s ease, border-color .12s ease, background .12s ease;
+    }
+
+    .btn:hover{
+      text-decoration:none;
+      transform:translateY(-1px);
+      box-shadow:0 8px 18px rgba(0,0,0,.06);
+      border-color:#d1d5db;
+      background:#f8fafc;
+    }
+
+    .btn-primary{
+      background:#111827;
+      color:#fff;
+      border-color:#111827;
+    }
+
+    .btn-primary:hover{
+      border-color:#111827;
+      background:#0f172a;
+    }
+
+    .cta-badges{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      margin-top:10px;
+    }
+
+    .badge{
+      font-size:12px;
+      padding:6px 10px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      color:var(--text-soft);
+      background:#fff;
+    }
+
+    .site-footer{
+      margin-top:26px;
+      border-top:1px solid var(--line);
+      background:#fff;
+    }
+
+    .footer-link-strip{
+      padding:14px 0;
+      border-bottom:1px solid #eef2f7;
+    }
+
+    .footer-link-strip__inner{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      flex-wrap:wrap;
+      text-align:center;
+    }
+
+    .footer-link-strip__actions{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      flex-wrap:wrap;
+    }
+
+    .footer-inner{padding:24px 0 34px}
+    .footer-top{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      gap:18px;
+      text-align:center;
+    }
+
+    .footer-brand{
+      font-size:18px;
+      font-weight:900;
+      color:#111827;
+    }
+
+    .footer-desc{
+      margin:8px 0 0;
+      color:var(--text-faint);
+      font-size:14px;
+      max-width:720px;
+      word-break:keep-all;
+      overflow-wrap:anywhere;
+    }
+
+    .footer-links{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:10px;
+    }
+
+    .footer-links a{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:40px;
+      padding:0 14px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      background:#f8fafc;
+      font-size:14px;
+      font-weight:800;
+    }
+
+    .footer-copy{
+      margin-top:18px;
+      padding-top:18px;
+      border-top:1px solid #eef2f7;
+      color:var(--text-faint);
+      font-size:13px;
+      text-align:center;
+    }
+
+    .mobile-bottom-nav{
+      position:fixed;
+      left:0;
+      right:0;
+      bottom:0;
+      z-index:1400;
+      display:none;
+      background:rgba(255,255,255,.96);
+      backdrop-filter:saturate(160%) blur(10px);
+      border-top:1px solid rgba(15,23,42,.08);
+      padding:8px 10px calc(8px + env(safe-area-inset-bottom, 0px));
+    }
+
+    .mobile-bottom-nav__inner{
+      display:grid;
+      grid-template-columns:repeat(4,minmax(0,1fr));
+      gap:6px;
+      max-width:640px;
+      margin:0 auto;
+    }
+
+    .mobile-bottom-nav__item{
+      min-width:0;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      gap:4px;
+      padding:8px 4px 7px;
+      border-radius:12px;
+      color:#6b7280;
+    }
+
+    .mobile-bottom-nav__item svg{
+      width:20px;
+      height:20px;
+      display:block;
+      flex:0 0 auto;
+    }
+
+    .mobile-bottom-nav__label{
+      font-size:11px;
+      line-height:1.1;
+      font-weight:700;
+      letter-spacing:-0.01em;
+      white-space:nowrap;
+    }
+
+    .mobile-bottom-nav__item.is-active,
+    .mobile-bottom-nav__item[aria-current="page"]{
+      color:#111827;
+      background:#f3f4f6;
+    }
+
+    .backdrop{
+      position:fixed;
+      inset:0;
+      background:rgba(15,23,42,.38);
+      z-index:1600;
+    }
+
+    .drawer{
+      position:fixed;
+      top:0;
+      right:0;
+      bottom:0;
+      width:min(78vw,360px);
+      background:#fff;
+      box-shadow:-16px 0 40px rgba(15,23,42,.15);
+      z-index:1700;
+      overflow-y:auto;
+      transform:translateX(100%);
+      transition:transform .25s ease;
+    }
+
+    html.is-open .drawer{transform:translateX(0)}
+
+    .drawer header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:16px;
+      border-bottom:1px solid var(--line);
+      position:sticky;
+      top:0;
+      background:#fff;
+      z-index:2;
+    }
+
+    .drawer .section{padding:16px}
+    .drawer .nav-list{display:flex;flex-direction:column;gap:4px}
+    .drawer .nav-list a{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      width:100%;
+      min-height:44px;
+      padding:0 12px;
+      border-radius:12px;
+      font-weight:800;
+      color:#111827;
+      background:#f8fafc;
+    }
+
+    .lang-pills--drawer{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:8px;
+    }
+
+    .lang-pills--drawer .lang-pill{
+      width:100%;
+      display:flex;
+      justify-content:center;
+    }
+
+    .drawer-dotrule{
+      width:calc(100% - 32px);
+      margin:0 auto;
+      border-top:1px dashed rgba(15,23,42,.16);
+    }
+
+    .drawer-quick-stack{
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+      margin-top:14px;
+    }
+
+    .drawer-quick-pill{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      min-height:44px;
+      border:1px solid #dbe2ea;
+      border-radius:999px;
+      font-weight:800;
+      background:#fff;
+    }
+
+    .visually-hidden-seo{
+      position:absolute !important;
+      width:1px !important;
+      height:1px !important;
+      padding:0 !important;
+      margin:-1px !important;
+      overflow:hidden !important;
+      clip:rect(0,0,0,0) !important;
+      white-space:nowrap !important;
+      border:0 !important;
+    }
+
+    @media (max-width:980px){
+      .nav{display:none}
+      .hamburger{display:inline-flex;align-items:center;justify-content:center}
+      .nav-right{display:none}
+      .mobile-bottom-nav{display:block}
+      .countdown-bar{
+        min-height:52px;
+        align-items:center;
+        flex-direction:row;
+        justify-content:space-between;
+        gap:10px;
+      }
+      .countdown-bar__left{
+        width:auto;
+        min-width:0;
+        flex:1 1 auto;
+      }
+      .countdown-bar__actions{
+        width:auto;
+        justify-content:flex-end;
+        flex-wrap:nowrap;
+      }
+      .hero{
+        grid-template-columns:1fr;
+      }
+      .card-grid,
+      .quick-grid{
+        grid-template-columns:1fr;
+      }
+    }
+
+    @media (max-width:640px){
+      .container{width:min(100% - 24px,1180px)}
+      .brand-title{font-size:14px}
+      .brand-sub{display:none}
+      .hero-card,
+      .section-card,
+      .aside-card{
+        border-radius:22px;
+      }
+      .hero-card{padding:20px 18px}
+      .hero-card h1{font-size:30px}
+      .aside-card{padding:14px}
+      .section-card{padding:20px 16px}
+      .section-head h2{font-size:25px}
+      .countdown-bar{gap:8px}
+      .countdown-bar__left{gap:8px}
+      .countdown-copy{
+        font-size:13px;
+        white-space:nowrap;
+        overflow:hidden;
+        text-overflow:ellipsis;
+      }
+      .countdown-link{
+        min-height:32px;
+        padding:0 10px;
+        font-size:12px;
+      }
+      .footer-link-strip__inner{
+        flex-direction:column;
+      }
+      .cta-row .btn{
+        width:100%;
+      }
+      .bottom-cta .title{
+        font-size:19px;
+      }
+    }
+
+    html.is-open body,
+    body.no-scroll{overflow:hidden}
+  </style>
+
+  <script id="ts-website-schema" type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "name":"TilesSurvive.net",
+    "url":"https://tilessurvive.net/",
+    "inLanguage":"zh-tw",
+    "description":"整理寒霜啟示錄資料庫、攻略與賽季內容的數據網站",
+    "potentialAction":{
+      "@type":"SearchAction",
+      "target":"https://tilessurvive.net/zh-tw/search/?q={search_term_string}",
+      "query-input":"required name=search_term_string"
+    }
+  }
+  </script>
+
+  <script id="ts-breadcrumb-schema" type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {
+        "@type":"ListItem",
+        "position":1,
+        "name":"首頁",
+        "item":"https://tilessurvive.net/zh-tw/"
+      },
+      {
+        "@type":"ListItem",
+        "position":2,
+        "name":"攻略",
+        "item":"https://tilessurvive.net/zh-tw/guides/"
+      },
+      {
+        "@type":"ListItem",
+        "position":3,
+        "name":"寒霜啟示錄新手前期攻略",
+        "item":"https://tilessurvive.net/zh-tw/guides/beginner-guide/"
+      }
+    ]
+  }
+  </script>
+
+  <script id="ts-article-schema" type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Article",
+    "headline":"寒霜啟示錄新手前期攻略",
+    "description":"寒霜啟示錄新手玩家前期遊玩方向整理。包含新伺服器選擇、聯盟選擇、農場帳號、加速道具使用、發電廠目標與小課玩家的遊玩基準。",
+    "image":"https://tilessurvive.net/img/guides/beginner-guide.png",
+    "author":{
+      "@type":"Organization",
+      "name":"TilesSurvive.net"
+    },
+    "publisher":{
+      "@type":"Organization",
+      "name":"TilesSurvive.net",
+      "logo":{
+        "@type":"ImageObject",
+        "url":"https://tilessurvive.net/img/logo-tilessurvive.png"
+      }
+    },
+    "mainEntityOfPage":"https://tilessurvive.net/zh-tw/guides/beginner-guide/",
+    "inLanguage":"zh-TW"
+  }
+  </script>
+
+  <script>
+    (function(){
+      function normalizeLang(code){
+        var low = String(code || '').trim().toLowerCase();
+        if (low === 'ko') return 'ko';
+        if (low === 'en') return 'en';
+        if (low === 'ja') return 'ja';
+        if (low === 'ru') return 'ru';
+        if (low === 'zh-tw' || low === 'zh_tw' || low === 'tw') return 'zh-tw';
+        return 'zh-tw';
+      }
+
+      function pathWithLang(lang, path){
+        return '/' + lang + path;
+      }
+
+      function applyLang(lang){
+        lang = normalizeLang(lang);
+        var currentPath = location.pathname.replace(/^\/(ko|en|ja|ru|zh-tw)(\/|$)/i, '/');
+        if (currentPath === '') currentPath = '/';
+        location.href = pathWithLang(lang, currentPath);
+      }
+
+      window.TS_LANG = {
+        normalize: normalizeLang,
+        apply: applyLang
+      };
+    })();
+  </script>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z2MJ6TXZHK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Z2MJ6TXZHK');
+  </script>
+</head>
+
+<body>
+  <svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+    <symbol id="ico-info" viewBox="0 0 24 24">
+      <path d="M12 2a10 10 0 1 0 .001 20.001A10 10 0 0 0 12 2z" fill="currentColor"/>
+      <path d="M12 10v7" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+      <path d="M12 7h.01" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+    </symbol>
+  </svg>
+
+  <a class="skip-link" href="#main">跳到正文</a>
+
+  <header class="site-header" role="banner">
+    <div class="container nav-bar">
+      <div class="nav-left">
+        <a class="brand" href="/zh-tw/" aria-label="TilesSurvive.net 首頁">
+          <img class="brand-logo" src="/img/logo-tilessurvive.png" alt="TilesSurvive.net" width="30" height="30" />
+          <span class="brand-text">
+            <span class="brand-title">TilesSurvive.net</span>
+            <span class="brand-sub">Tiles Survive Data / Guides / Codes / Tools Hub</span>
+          </span>
+        </a>
+
+        <nav class="nav" id="primaryNav" role="navigation" aria-label="上方選單">
+          <a href="/zh-tw/buildings/">建築</a>
+          <a href="/zh-tw/heroes/">英雄</a>
+          <a href="/zh-tw/database/">資料庫</a>
+          <a href="/zh-tw/guides/" aria-current="page">攻略</a>
+          <a href="/zh-tw/seasons/">賽季</a>
+        </nav>
+      </div>
+
+      <button class="hamburger" id="menuToggle" aria-label="開啟選單" aria-controls="mobileDrawer" aria-expanded="false">☰</button>
+
+      <div class="nav-right">
+        <div id="langDropdownHeader" class="lang-pills" aria-label="語言選擇"></div>
+      </div>
+    </div>
+  </header>
+
+  <section class="countdown-bar-wrap" aria-label="禮包碼倒數">
+    <div class="container countdown-bar">
+      <div class="countdown-bar__left">
+        <span class="countdown-badge">禮包碼</span>
+        <div class="countdown-copy">
+          <strong>寒霜啟示錄禮包碼倒數</strong>
+        </div>
+      </div>
+      <div class="countdown-bar__actions">
+        <a class="countdown-link" href="/zh-tw/codes/">最新代碼</a>
+        <a class="countdown-link" href="/zh-tw/guides/gift-code-how-to-use/">兌換方式</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="backdrop" id="backdrop" hidden></div>
+
+  <aside class="drawer" id="mobileDrawer" aria-hidden="true" aria-label="手機選單">
+    <header>
+      <strong>Menu</strong>
+      <button id="btnClose" aria-label="關閉" style="background:none;border:0;font-size:20px;cursor:pointer">✕</button>
+    </header>
+
+    <div class="section">
+      <div id="langDropdownDrawer" class="lang-pills lang-pills--drawer" aria-label="語言選擇"></div>
+    </div>
+
+    <div class="drawer-dotrule" aria-hidden="true"></div>
+
+    <div class="section">
+      <div class="nav-list" role="navigation" aria-label="手機選單列表">
+        <a href="/zh-tw/buildings/">建築</a>
+        <a href="/zh-tw/heroes/">英雄</a>
+        <a href="/zh-tw/database/">資料庫</a>
+        <a href="/zh-tw/guides/">攻略</a>
+        <a href="/zh-tw/seasons/">賽季</a>
+      </div>
+
+      <div class="drawer-quick-stack">
+        <a class="drawer-quick-pill js-drawer-close" href="https://discord.gg/EjqWhTPyaEjqWhTPyaEjqWhTPya" target="_blank" rel="noopener noreferrer">Discord</a>
+        <a class="drawer-quick-pill js-drawer-close" href="/zh-tw/codes/">禮包碼</a>
+        <a class="drawer-quick-pill js-drawer-close" href="/zh-tw/guides/discount-topup/">折扣儲值</a>
+      </div>
+    </div>
+  </aside>
+
+  <main class="container page-main" id="main" role="main" aria-label="主要內容">
+    <section class="visually-hidden-seo" aria-label="SEO summary">
+      <p>寒霜啟示錄 新手前期攻略 新手玩家遊玩方向整理 新伺服器選擇 聯盟選擇 農場帳號經營 加速道具管理 發電廠等級目標 小課玩家營運基準</p>
+    </section>
+
+    <nav class="breadcrumb" aria-label="麵包屑">
+      <a href="/zh-tw/">首頁</a>
+      <span>›</span>
+      <a href="/zh-tw/guides/">攻略</a>
+      <span>›</span>
+      <span aria-current="page">寒霜啟示錄新手前期攻略</span>
+    </nav>
+
+    <section class="hero" aria-labelledby="pageTitle">
+      <article class="hero-card">
+        <span class="eyebrow">攻略</span>
+        <h1 id="pageTitle">寒霜啟示錄新手前期攻略</h1>
+        <p>
+          這是一篇寫給剛開始玩寒霜啟示錄的新手玩家的前期方向整理。
+          內容包含新伺服器選擇、聯盟選擇、農場帳號經營、加速道具管理、發電廠目標，
+          以及小課玩家的遊玩方向。
+        </p>
+
+        <div class="hero-meta">
+          <span class="meta-pill">以新伺服器為基準</span>
+          <span class="meta-pill">新手向內容</span>
+          <span class="meta-pill">聯盟選擇很重要</span>
+          <span class="meta-pill">加速管理是核心</span>
+        </div>
+
+        <div class="hero-links">
+          <a class="hero-link is-primary" href="#guide-start">直接看攻略</a>
+          <a class="hero-link" href="#summary">查看重點整理</a>
+          <a class="hero-link" href="/zh-tw/codes/">查看最新代碼</a>
+        </div>
+      </article>
+
+      <aside class="aside-card" aria-label="寒霜啟示錄新手前期攻略摘要">
+        <div class="guide-thumb">
+          <img src="/img/guides/beginner-guide.png" alt="寒霜啟示錄新手前期攻略代表圖片" />
+        </div>
+
+        <div class="quick-grid">
+          <div class="quick-item">
+            <strong>重點 1</strong>
+            <span>不要去舊伺服器</span>
+          </div>
+          <div class="quick-item">
+            <strong>重點 2</strong>
+            <span>優先進前排強盟</span>
+          </div>
+          <div class="quick-item">
+            <strong>重點 3</strong>
+            <span>農場帳號盡量多準備</span>
+          </div>
+          <div class="quick-item">
+            <strong>重點 4</strong>
+            <span>加速要省著用</span>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <div class="section-stack" id="guide-start">
+      <section class="section-card" aria-labelledby="introTitle">
+        <div class="section-head">
+          <h2 id="introTitle">開始之前</h2>
+          <p>這篇內容是寫給第一次接觸寒霜啟示錄的新手玩家，重點放在前期該先判斷什麼、該怎麼玩，幫你先抓到大方向。</p>
+        </div>
+
+        <p>
+          我覺得像我一樣，一開始完全抓不到方向的人應該不少，
+          所以就先照自己的思路，把前期攻略整理一下。
+        </p>
+
+        <p>
+          對已經玩過寒霜啟示錄的人來說，這篇可能稱不上什麼正式攻略。
+          但如果能讓像我一樣第一次接觸這款遊戲的人，至少先抓到一點方向，那這篇就有意義了。
+          大家就輕鬆看看就好。
+        </p>
+
+        <p>
+          目前寒霜啟示錄已經開到賽季 3。
+          這遊戲的資料還不算特別多，所以自己一邊摸索一邊玩，其實也有它的樂趣。
+        </p>
+
+        <div class="highlight-box" style="margin-top:16px;">
+          <strong>這款遊戲主要的課金項目</strong>
+          <ul class="guide-list">
+            <li>英雄碎片與星級強化</li>
+            <li>技能書</li>
+            <li>英雄裝備</li>
+            <li>SSR 英雄專屬裝備</li>
+            <li>各類加速道具</li>
+          </ul>
+          尤其英雄星級最高可以升到 10 星，所以整體來說投資深度比想像中還大。
+        </div>
+
+        <div class="ok-note" role="note" aria-label="play mindset">
+          <div>
+            <strong>最先要記住的一點：</strong>
+            如果你會因為別人比你成長得快而一直感到壓力，那這遊戲玩久了會非常累。
+            反過來說，如果你能照自己的節奏慢慢玩，反而會更耐玩。
+          </div>
+        </div>
+      </section>
+
+      <section class="section-card" aria-labelledby="serverTitle">
+        <div class="section-head">
+          <h2 id="serverTitle">1. 絕對不要去舊伺服器</h2>
+          <p>前期最重要的不是有沒有同語言玩家，而是伺服器選擇。開局伺服器選錯，之後整體成長效率會差很多。</p>
+        </div>
+
+        <p>
+          很多人都會說，最好去華人多的伺服器或聯盟玩。
+          溝通順不順當然很重要，但更重要的還是伺服器本身。
+        </p>
+
+        <p>
+          絕對不要去那種已經開很久的舊伺服器。
+        </p>
+
+        <p>
+          舊伺服器的差距通常已經被拉得很大，
+          如果你是後面才進去，想追上幾乎會非常辛苦。
+          除非你是超重課玩家，不然很難用有效率的方式追上。
+        </p>
+
+        <div class="note" role="note" aria-label="old server caution">
+          <svg class="note-ico" aria-hidden="true"><use href="#ico-info"></use></svg>
+          <div>
+            <strong>注意：</strong> 舊伺服器通常差距已經非常大，
+            不是重課玩家的話，想追上幾乎沒有什麼效率可言。
+          </div>
+        </div>
+
+        <p>
+          所以基本上建議直接以新伺服器為基準開始。
+          這篇也是用新伺服器的角度來寫。
+        </p>
+      </section>
+
+      <section class="section-card" aria-labelledby="allianceTitle">
+        <div class="section-head">
+          <h2 id="allianceTitle">2. 盡量進新伺服器第一聯盟</h2>
+          <p>這裡說的第一聯盟，不是單純現在排名高，而是真的有核心課長、能夠主導伺服器走向的聯盟。</p>
+        </div>
+
+        <p>
+          我說的第一聯盟，不是那種只是暫時排在前面的聯盟。
+          而是裡面至少有 1 到 2 位以上明顯的課長，而且之後也有機會穩定維持上位的聯盟。
+        </p>
+
+        <p>
+          前期很看情報力。
+          伺服器一開，你就要盡量去觀察玩家，快速判斷到底是誰在掌握主導權。
+        </p>
+
+        <p>
+          如果你沒辦法進第一聯盟，而且整個伺服器從開局就一直是強者互打、戰爭很多的氣氛，
+          那這種伺服器其實不太適合一般玩家。
+          對我們來說，能安穩成長的王國反而比較重要。
+        </p>
+
+        <p>
+          就算你已經開玩了，只要覺得整體氣氛很差，也可以考慮直接去新的伺服器重開。
+          一開始可能會覺得可惜，但新伺服器會一直開，
+          真正重要的是找到適合自己的伺服器。
+        </p>
+
+        <div class="highlight-box" style="margin-top:16px;">
+          <strong>如果你真的懶得重開</strong>
+          那至少也盡量去能順利溝通的聯盟。
+          這遊戲其實很吃交流，講不通真的會玩得很悶。
+        </div>
+      </section>
+
+      <section class="section-card" aria-labelledby="spenderAllianceTitle">
+        <div class="section-head">
+          <h2 id="spenderAllianceTitle">3. 為什麼要選課金玩家多的聯盟</h2>
+          <p>選強聯盟不是只看戰力，而是因為禮物、活動參與、集結效率、整體成長速度都會被拉開。</p>
+        </div>
+
+        <p>
+          為什麼要進課金玩家多的聯盟，原因其實很簡單。
+        </p>
+
+        <p>
+          因為他們買禮包時，聯盟成員也會一起拿到聯盟禮物。
+          這個差距其實比想像中大很多。
+        </p>
+
+        <p>
+          而且課金玩家通常對遊戲的理解也比較深，
+          各種活動和集結狩獵也會更積極參與。
+          到最後，這種聯盟整體成長速度通常都比較快。
+        </p>
+
+        <p>
+          跟大部分 SLG 一樣，之後大概也會開跨服移民之類的功能。
+          但那不會太快出現。
+        </p>
+
+        <p>
+          以我的看法來說，至少前 5 個月左右，還是需要在一個相對和平的伺服器裡穩定成長。
+          所以開局的伺服器和聯盟選擇真的很重要。
+        </p>
+
+        <div class="card-grid" style="margin-top:16px;">
+          <article class="info-box">
+            <h3>選強盟的情況</h3>
+            <p>
+              可以一起吃聯盟禮物、打集結、參與大型活動，也比較容易穩定成長。
+              長期來看通常是比較穩的路線。
+            </p>
+          </article>
+          <article class="info-box">
+            <h3>選鄉下服的情況</h3>
+            <p>
+              個人課金活動獎勵可能比較容易獨拿，
+              但跨服活動和聯盟活動通常會變得很難打。
+            </p>
+          </article>
+        </div>
+
+        <div class="note" role="note" aria-label="alliance choice note">
+          <svg class="note-ico" aria-hidden="true"><use href="#ico-info"></use></svg>
+          <div>
+            <strong>說白了就是二選一：</strong>
+            如果你想把所有課金活動獎勵都盡量獨吃，那課長少的鄉下服也不是不能考慮。
+            但如果整個伺服器裡只有你一個課長，那你雖然比較容易拿個人獎勵，
+            可是所有伺服器對抗活動和聯盟對抗活動都會變得很難。
+          </div>
+        </div>
+      </section>
+
+      <section class="section-card" aria-labelledby="farmTitle">
+        <div class="section-head">
+          <h2 id="farmTitle">4. 不管無課還是小課，農場帳號能開多少就開多少</h2>
+          <p>農場帳號不只是拿來補資源，它其實是賽季開始後，幫你穩定拉高本帳成長速度的重要基礎。</p>
+        </div>
+
+        <p>
+          這點真的非常重要。
+        </p>
+
+        <p>
+          不管你是無課還是小課，只要能開就盡量多開幾個農場帳號。
+          等到賽季 1 開始之後，這些農場帳號會變成幫助你研究和建設的穩定支援。
+        </p>
+
+        <p>
+          前期你可能會覺得建設和研究很卡，
+          但只要農場帳號夠多，資源供應會輕鬆很多。
+          最後本帳的成長速度也會更穩定。
+        </p>
+
+        <p>
+          特別是無課玩家，勤勞本身就是你的成長資源。
+        </p>
+
+        <div class="highlight-box" style="margin-top:16px;">
+          <strong>農場帳號真正的價值</strong>
+          不只是補資源而已。
+          等到賽季開始後，還能幫你吃到研究和建設相關的加成。
+          所以前期有沒有先把農場帳號準備好，後面差距其實會慢慢被拉開。
+        </div>
+      </section>
+
+      <section class="section-card" aria-labelledby="speedupTitle">
+        <div class="section-head">
+          <h2 id="speedupTitle">5. 加速不要亂花</h2>
+          <p>寒霜啟示錄裡，加速的使用方式會直接影響你的成長速度。尤其通用加速如果亂用，後面通常會非常後悔。</p>
+        </div>
+
+        <p>
+          寒霜啟示錄是一款非常看加速使用效率的遊戲。
+        </p>
+
+        <p>
+          加速會用在建設、研究、訓練、治療、活動等幾乎所有地方。
+          所以如果沒有想法地亂花，到最後一定會缺。
+        </p>
+
+        <p>
+          前期很多人會因為想衝排名，就把加速隨便丟出去。
+          但大多數情況下，與其這樣，不如穩穩把活動的基本獎勵拿滿，
+          然後慢慢把鑽石和資源存起來，效率會更高。
+        </p>
+
+        <p>
+          加速最好留到真正重要的大活動時再一次爆發。
+          建築升級、研究、英雄星級、裝備強化，最後都會轉成分數。
+          所以加速要花在哪裡、什麼時候花，會直接影響你的成長速度。
+        </p>
+
+        <p>
+          如果你是無課玩家，就更要珍惜加速。
+          加速一亂用，資源很快就會不夠，資源一不夠，成長就會直接卡住。
+        </p>
+
+        <div class="note" role="note" aria-label="common speedup note">
+          <svg class="note-ico" aria-hidden="true"><use href="#ico-info"></use></svg>
+          <div>
+            <strong>重點：</strong>
+            通用加速真的不要亂用。
+            尤其不建議把通用加速拿去丟訓練。
+          </div>
+        </div>
+
+        <p>
+          玩到後面，你手上的通用加速可能會累積到 200 天、300 天以上。
+          但就算如此，也還是比起拿去訓練，更建議投入研究或建設。
+        </p>
+
+        <div class="ok-note" role="note" aria-label="speedup advice">
+          <div>
+            <strong>判斷基準：</strong>
+            因為真正構成成長骨架的，是研究和建設。
+            通用加速的價值，在這兩個方向上會明顯更高。
+          </div>
+        </div>
+      </section>
+
+      <section class="section-card" aria-labelledby="powerTitle">
+        <div class="section-head">
+          <h2 id="powerTitle">6. 前期第一目標是把發電廠等級拉上去</h2>
+          <p>前期與其什麼都想一起衝，不如先把發電廠當成第一目標，穩穩把基礎打起來會更順。</p>
+        </div>
+
+        <p>
+          以我自己來看，前期的第一個主要目標就是把發電廠等級拉上去。
+        </p>
+
+        <p>
+          等你把這一段推上來之後，基本上就算脫離最前期了。
+          之後就可以把重心慢慢轉到各種活動上，再去決定後續怎麼發展。
+        </p>
+
+        <p>
+          前期其實不用把建設和研究看得太重。
+          如果農場帳號夠多，建設和研究都會比想像中輕鬆很多。
+        </p>
+
+        <p>
+          而且也不用太執著一定要馬上把發電廠衝到 30。
+          等賽季開始之後，會出現比較容易衝到 30 的環境。
+        </p>
+
+        <p>
+          當然前提還是聯盟玩家夠活躍。
+          所以說到底，重要的還是你前面選的伺服器和聯盟。
+        </p>
+
+        <div class="highlight-box" style="margin-top:16px;">
+          <strong>簡單整理</strong>
+          前期不要急著把所有資源和加速一次砸光，
+          先把發電廠當成第一目標，慢慢把整體基礎打穩會更安全。
+        </div>
+      </section>
+
+      <section class="section-card" aria-labelledby="lightspendTitle">
+        <div class="section-head">
+          <h2 id="lightspendTitle">7. 如果你是小課玩家，可以這樣玩</h2>
+          <p>小課玩家的大方向其實跟無課差不多，只是前期更要把資源集中在高效率的項目上。</p>
+        </div>
+
+        <p>
+          小課玩家的基本方向，和無課其實差不多。
+          核心還是聯盟選擇。
+        </p>
+
+        <p>
+          前期只要稍微衝得好一點，有時候上位聯盟會主動來找你。
+          這時候就選一個氛圍不錯、感覺能長期待下去的聯盟進去就好。
+        </p>
+
+        <p>
+          禮包購買一定要保守一點。
+        </p>
+
+        <div class="highlight-box" style="margin-top:16px;">
+          <strong>前期比較推薦的優先順序</strong>
+          <ul class="guide-list">
+            <li>月卡</li>
+            <li>週卡</li>
+            <li>前期建設隊列</li>
+          </ul>
+          這幾樣通常體感效益會比較好。
+        </div>
+
+        <p style="margin-top:16px;">
+          相反地，如果你對遊戲系統還不熟，就急著東買西買，
+          很容易把錢花在效率很低的禮包上。
+          在你真正看懂寒霜啟示錄的結構之前，不建議亂課。
+        </p>
+      </section>
+
+      <section class="section-card" id="summary" aria-labelledby="summaryTitle">
+        <div class="section-head">
+          <h2 id="summaryTitle">結尾整理</h2>
+          <p>為了讓剛開始玩的玩家不要太迷茫，最後把前期最重要的幾個重點再整理一次。</p>
+        </div>
+
+        <p>
+          這篇雖然不算什麼完整教科書，
+          但還是希望能讓剛入坑的人少繞一點路。
+        </p>
+
+        <div class="faq-list" style="margin-top:16px;">
+          <article class="faq-item">
+            <p class="faq-q">前期重點總整理</p>
+            <ul class="guide-list">
+              <li>不要去舊伺服器，直接從新伺服器開始</li>
+              <li>盡量進第一聯盟，至少也要進有強力課長的聯盟</li>
+              <li>如果整個伺服器戰爭太重，就果斷考慮重開</li>
+              <li>農場帳號能開多少就開多少</li>
+              <li>加速不要亂花，盡量留給重要活動</li>
+              <li>通用加速尤其不要浪費在訓練上</li>
+              <li>前期第一目標先放在發電廠等級</li>
+              <li>不要太執著發電廠 30</li>
+              <li>不要對建設和研究太焦慮</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="ok-note" role="note" aria-label="final note">
+          <div>
+            <strong>最後一句：</strong>
+            這款遊戲一旦開始一直拿自己和別人比，就會越玩越累。
+            但如果你能照自己的節奏，在好的聯盟裡穩穩玩下去，其實可以玩得很久，也會越玩越順。
+          </div>
+        </div>
+
+        <div class="bottom-cta" aria-label="Guide CTA">
+          <p class="title">接下來可以一起看的頁面</p>
+          <p class="desc">
+            如果你已經看完這篇前期攻略，那再一起看最新禮包碼和賽季頁面，實際遊玩時會更有幫助。
+          </p>
+
+          <div class="cta-row">
+            <a class="btn btn-primary" href="/zh-tw/codes/">查看最新代碼</a>
+            <a class="btn" href="/zh-tw/seasons/">查看賽季攻略</a>
+            <a class="btn" href="/zh-tw/guides/gift-code-how-to-use/">查看禮包碼兌換方式</a>
+            <a class="btn" href="/zh-tw/guides/discount-topup/">查看折扣儲值</a>
+          </div>
+
+          <div class="cta-badges" aria-label="quick notes">
+            <span class="badge">新手向內容</span>
+            <span class="badge">以新伺服器為基準</span>
+            <span class="badge">聯盟選擇重要</span>
+            <span class="badge">農場帳號重要</span>
+            <span class="badge">加速管理是核心</span>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer" role="contentinfo" aria-label="頁尾">
+    <div class="footer-link-strip">
+      <div class="container footer-link-strip__inner">
+        <div class="footer-link-strip__actions">
+          <a class="countdown-link" href="https://discord.gg/EjqWhTPyaEjqWhTPyaEjqWhTPya" target="_blank" rel="noopener noreferrer">Discord</a>
+          <a class="countdown-link" href="/zh-tw/codes/">禮包碼</a>
+          <a class="countdown-link" href="/zh-tw/guides/discount-topup/">折扣儲值</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <div>
+          <div class="footer-brand">TilesSurvive.net</div>
+          <p class="footer-desc">
+            本站為整理寒霜啟示錄相關資料、協助玩家更快上手而建立，
+            與遊戲官方無關，屬於非官方粉絲網站。
+          </p>
+        </div>
+
+        <nav class="footer-links" aria-label="頁尾選單">
+          <a href="/zh-tw/about/">介紹</a>
+          <a href="/zh-tw/privacy/">隱私權</a>
+        </nav>
+      </div>
+
+      <div class="footer-copy">
+        © 2026 TilesSurvive.net. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <nav class="mobile-bottom-nav" aria-label="手機快速導覽">
+    <div class="mobile-bottom-nav__inner">
+      <a class="mobile-bottom-nav__item" href="/zh-tw/" data-mobile-nav="home">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M4 10.5 12 4l8 6.5V20a1 1 0 0 1-1 1h-4v-6H9v6H5a1 1 0 0 1-1-1v-9.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+        </svg>
+        <span class="mobile-bottom-nav__label">首頁</span>
+      </a>
+
+      <a class="mobile-bottom-nav__item" href="/zh-tw/guides/" data-mobile-nav="guides">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M6 5.5A2.5 2.5 0 0 1 8.5 3H19v16H8.5A2.5 2.5 0 0 0 6 21V5.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+          <path d="M6 6h11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+        <span class="mobile-bottom-nav__label">攻略</span>
+      </a>
+
+      <a class="mobile-bottom-nav__item" href="/zh-tw/seasons/" data-mobile-nav="seasons">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 3v4M12 17v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M3 12h4M17 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          <circle cx="12" cy="12" r="3.5" stroke="currentColor" stroke-width="1.8"/>
+        </svg>
+        <span class="mobile-bottom-nav__label">賽季</span>
+      </a>
+
+      <a class="mobile-bottom-nav__item" href="/zh-tw/codes/" data-mobile-nav="codes">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M8 7.5h8a2 2 0 0 1 2 2v7a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2v-7a2 2 0 0 1 2-2Z" stroke="currentColor" stroke-width="1.8"/>
+          <path d="M9 7V6a3 3 0 1 1 6 0v1" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          <path d="M12 11v3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+        <span class="mobile-bottom-nav__label">代碼</span>
+      </a>
+    </div>
+  </nav>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var html = document.documentElement;
+      var body = document.body;
+      var drawer = document.getElementById('mobileDrawer');
+      var backdrop = document.getElementById('backdrop');
+      var btnOpen = document.getElementById('menuToggle');
+      var btnClose = document.getElementById('btnClose');
+
+      function openDrawer(){
+        html.classList.add('is-open');
+        body.classList.add('no-scroll');
+        backdrop.hidden = false;
+        drawer.setAttribute('aria-hidden', 'false');
+        btnOpen && btnOpen.setAttribute('aria-expanded', 'true');
+      }
+
+      function closeDrawer(){
+        html.classList.remove('is-open');
+        body.classList.remove('no-scroll');
+        backdrop.hidden = true;
+        drawer.setAttribute('aria-hidden', 'true');
+        btnOpen && btnOpen.setAttribute('aria-expanded', 'false');
+      }
+
+      btnOpen && btnOpen.addEventListener('click', openDrawer);
+      btnClose && btnClose.addEventListener('click', closeDrawer);
+      backdrop && backdrop.addEventListener('click', closeDrawer);
+
+      window.addEventListener('keydown', function(e){
+        if (e.key === 'Escape') closeDrawer();
+      });
+
+      var drawerLinks = drawer ? drawer.querySelectorAll('a') : [];
+      Array.prototype.forEach.call(drawerLinks, function(link){
+        link.addEventListener('click', closeDrawer);
+      });
+    });
+  </script>
+
+  <script>
+    (function(){
+      var LANGS = [
+        { code:'ko', label:'KO' },
+        { code:'en', label:'EN' },
+        { code:'ja', label:'JA' },
+        { code:'ru', label:'RU' },
+        { code:'zh-tw', label:'TW' }
+      ];
+
+      function currentLang(){
+        return 'zh-tw';
+      }
+
+      function render(root){
+        if (!root) return;
+        var cur = currentLang();
+        root.innerHTML = LANGS.map(function(lang){
+          return '<button type="button" class="lang-pill" data-lang="' + lang.code + '" aria-current="' + (lang.code === cur ? 'true' : 'false') + '">' + lang.label + '</button>';
+        }).join('');
+      }
+
+      function bind(root){
+        if (!root) return;
+        root.addEventListener('click', function(e){
+          var btn = e.target.closest('.lang-pill[data-lang]');
+          if (!btn) return;
+          e.preventDefault();
+          window.TS_LANG.apply(btn.getAttribute('data-lang'));
+        });
+      }
+
+      document.addEventListener('DOMContentLoaded', function(){
+        var header = document.getElementById('langDropdownHeader');
+        var drawer = document.getElementById('langDropdownDrawer');
+        render(header);
+        render(drawer);
+        bind(header);
+        bind(drawer);
+      });
+    })();
+  </script>
+
+  <script>
+    (function(){
+      function updateBottomNavActive(){
+        var pathname = location.pathname.toLowerCase();
+        var items = document.querySelectorAll('.mobile-bottom-nav__item');
+
+        Array.prototype.forEach.call(items, function(item){
+          item.classList.remove('is-active');
+          item.removeAttribute('aria-current');
+
+          var key = item.getAttribute('data-mobile-nav');
+          var active = false;
+
+          if (key === 'home') {
+            active = pathname === '/zh-tw/' || pathname === '/zh-tw';
+          } else if (key === 'guides') {
+            active = pathname.indexOf('/zh-tw/guides') === 0;
+          } else if (key === 'seasons') {
+            active = pathname.indexOf('/zh-tw/seasons') === 0;
+          } else if (key === 'codes') {
+            active = pathname.indexOf('/zh-tw/codes') === 0;
+          }
+
+          if (active) {
+            item.classList.add('is-active');
+            item.setAttribute('aria-current', 'page');
+          }
+        });
+      }
+
+      document.addEventListener('DOMContentLoaded', updateBottomNavActive);
+    })();
+  </script>
+</body>
+</html>
