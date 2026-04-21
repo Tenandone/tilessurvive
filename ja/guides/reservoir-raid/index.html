@@ -1,0 +1,1515 @@
+<!doctype html>
+<html lang="ja" data-lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>貯水池レイド 勝利ガイド | タイルサバイバル ガイド | TilesSurvive.net</title>
+  <base href="/" />
+
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="description" content="貯水池レイドの参加条件、勝利条件、主要建物の役割、チーム分担、フェーズ別運営、追加のコツまでまとめたタイルサバイバル実戦ガイドです。" />
+  <meta name="keywords" content="タイルサバイバル, Tiles Survive, 貯水池レイド, 貯水池レイド 攻略, 貯水池レイド 勝利ガイド, タイルサバイバル ガイド, タイルサバイバル 攻略" />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+  <meta name="author" content="TilesSurvive.net" />
+
+  <link rel="canonical" href="https://tilessurvive.net/ja/guides/reservoir-raid/" />
+  <link rel="alternate" hreflang="x-default" href="https://tilessurvive.net/en/guides/reservoir-raid/" />
+  <link rel="alternate" hreflang="ko" href="https://tilessurvive.net/ko/guides/reservoir-raid/" />
+  <link rel="alternate" hreflang="en" href="https://tilessurvive.net/en/guides/reservoir-raid/" />
+  <link rel="alternate" hreflang="ja" href="https://tilessurvive.net/ja/guides/reservoir-raid/" />
+  <link rel="alternate" hreflang="ru" href="https://tilessurvive.net/ru/guides/reservoir-raid/" />
+  <link rel="alternate" hreflang="zh-TW" href="https://tilessurvive.net/zh-tw/guides/reservoir-raid/" />
+
+  <meta property="og:site_name" content="TilesSurvive.net" />
+  <meta property="og:title" content="貯水池レイド 勝利ガイド | TilesSurvive.net" />
+  <meta property="og:description" content="参加条件、建物の役割、チーム分担、フェーズ運営、追加のコツまで貯水池レイドの要点をまとめました。" />
+  <meta property="og:image" content="https://tilessurvive.net/img/guides/reservoir-raid.png" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:url" content="https://tilessurvive.net/ja/guides/reservoir-raid/" />
+  <meta property="og:type" content="article" />
+  <meta property="og:locale" content="ja_JP" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="貯水池レイド 勝利ガイド | TilesSurvive.net" />
+  <meta name="twitter:description" content="貯水池レイドの重要な運営ポイントと勝利の流れをまとめた日本語ガイドです。" />
+  <meta name="twitter:image" content="https://tilessurvive.net/img/guides/reservoir-raid.png" />
+
+  <link rel="preload" as="image" href="/img/logo-tilessurvive.png" />
+
+  <style>
+    :root{
+      --bg:#f5f7fb;
+      --surface:#ffffff;
+      --surface-soft:#f8fafc;
+      --line:#e5e7eb;
+      --line-strong:#cbd5e1;
+      --text:#111827;
+      --text-soft:#475569;
+      --text-faint:#64748b;
+      --dark:#0f172a;
+      --shadow-sm:0 8px 24px rgba(15,23,42,.04);
+      --shadow-md:0 20px 48px rgba(15,23,42,.08);
+      --radius-xl:28px;
+      --radius-lg:22px;
+      --radius-md:18px;
+      --radius-sm:14px;
+      --container:min(1180px, calc(100% - 32px));
+      --guide-container:min(920px, calc(100% - 32px));
+    }
+
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;overflow-x:hidden}
+    body{
+      background:var(--bg);
+      color:var(--text);
+      font-family:"Pretendard","Noto Sans JP","Hiragino Sans","Yu Gothic","Meiryo",system-ui,-apple-system,sans-serif;
+      line-height:1.7;
+      padding-bottom:calc(76px + env(safe-area-inset-bottom, 0px));
+      word-break:keep-all;
+    }
+
+    a{color:inherit;text-decoration:none}
+    img{display:block;max-width:100%}
+    button{font:inherit}
+
+    .container{width:var(--container);margin:0 auto;min-width:0}
+    .guide-container{width:var(--guide-container);margin:0 auto;min-width:0}
+
+    .skip-link{
+      position:absolute;
+      left:12px;
+      top:-44px;
+      z-index:3000;
+      background:#111827;
+      color:#fff;
+      padding:10px 14px;
+      border-radius:10px;
+      font-weight:800;
+    }
+    .skip-link:focus{top:12px}
+
+    .site-header{
+      position:sticky;
+      top:0;
+      z-index:1500;
+      background:rgba(255,255,255,.92);
+      backdrop-filter:saturate(160%) blur(12px);
+      border-bottom:1px solid rgba(15,23,42,.06);
+    }
+
+    .nav-bar{
+      min-height:68px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+    }
+
+    .nav-left{
+      display:flex;
+      align-items:center;
+      gap:20px;
+      min-width:0;
+      flex:1 1 auto;
+    }
+
+    .brand{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      min-width:0;
+      color:#111827;
+    }
+
+    .brand-logo{
+      width:30px;
+      height:30px;
+      border-radius:9px;
+      flex:0 0 auto;
+      background:#e5e7eb;
+      object-fit:cover;
+    }
+
+    .brand-text{
+      display:flex;
+      flex-direction:column;
+      gap:2px;
+      min-width:0;
+      line-height:1.1;
+    }
+
+    .brand-title{
+      font-size:16px;
+      font-weight:900;
+      white-space:nowrap;
+    }
+
+    .brand-sub{
+      font-size:12px;
+      color:#6b7280;
+      white-space:nowrap;
+    }
+
+    .nav{
+      display:flex;
+      align-items:center;
+      gap:4px;
+      min-width:0;
+      flex-wrap:wrap;
+    }
+
+    .nav a{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:40px;
+      padding:0 12px;
+      border-radius:999px;
+      color:#475569;
+      font-size:14px;
+      font-weight:800;
+      white-space:nowrap;
+    }
+
+    .nav a:hover,
+    .nav a:focus,
+    .nav a[aria-current="page"]{
+      background:#eef2f7;
+      color:#111827;
+      outline:none;
+    }
+
+    .nav-right{
+      display:flex;
+      align-items:center;
+      gap:10px;
+      flex:0 0 auto;
+    }
+
+    .lang-pills{
+      display:flex;
+      align-items:center;
+      gap:8px;
+      flex-wrap:wrap;
+    }
+
+    .lang-pill{
+      appearance:none;
+      border:1px solid var(--line);
+      background:#fff;
+      color:#6b7280;
+      padding:8px 10px;
+      border-radius:999px;
+      font:13px/1.1 system-ui,-apple-system,Segoe UI,Roboto,"Noto Sans",Arial;
+      cursor:pointer;
+      white-space:nowrap;
+      user-select:none;
+    }
+
+    .lang-pill:hover{color:#111827}
+    .lang-pill[aria-current="true"]{
+      color:#111827;
+      font-weight:900;
+      border-color:var(--line-strong);
+      background:#f8fafc;
+    }
+
+    .hamburger{
+      display:none;
+      appearance:none;
+      border:1px solid var(--line);
+      background:#fff;
+      color:#111827;
+      width:42px;
+      height:42px;
+      border-radius:12px;
+      font-size:20px;
+      cursor:pointer;
+      flex:0 0 auto;
+    }
+
+    .countdown-bar-wrap{
+      background:#fff;
+      border-bottom:1px solid rgba(15,23,42,.06);
+    }
+
+    .countdown-bar{
+      min-height:52px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      padding:10px 0;
+    }
+
+    .countdown-bar__left{
+      min-width:0;
+      display:flex;
+      align-items:center;
+      gap:10px;
+      flex:1 1 auto;
+    }
+
+    .countdown-badge{
+      flex:0 0 auto;
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:28px;
+      padding:0 10px;
+      border-radius:999px;
+      background:#111827;
+      color:#fff;
+      font-size:12px;
+      font-weight:900;
+    }
+
+    .countdown-copy{
+      min-width:0;
+      font-size:14px;
+      color:#334155;
+      white-space:nowrap;
+      overflow:hidden;
+      text-overflow:ellipsis;
+    }
+
+    .countdown-copy strong{
+      color:#111827;
+      font-weight:900;
+    }
+
+    .countdown-bar__actions{
+      flex:0 0 auto;
+      display:flex;
+      align-items:center;
+      gap:8px;
+      flex-wrap:nowrap;
+    }
+
+    .countdown-link{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:34px;
+      padding:0 12px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      background:#f8fafc;
+      font-size:13px;
+      font-weight:800;
+      color:#111827;
+      white-space:nowrap;
+      flex:0 0 auto;
+    }
+
+    .countdown-link:hover,
+    .countdown-link:focus{
+      background:#eef2f7;
+      outline:none;
+    }
+
+    .backdrop{
+      position:fixed;
+      inset:0;
+      background:rgba(15,23,42,.38);
+      z-index:1600;
+    }
+
+    .drawer{
+      position:fixed;
+      top:0;
+      right:0;
+      bottom:0;
+      width:min(78vw,360px);
+      background:#fff;
+      box-shadow:-16px 0 40px rgba(15,23,42,.15);
+      z-index:1700;
+      overflow-y:auto;
+      transform:translateX(100%);
+      transition:transform .25s ease;
+    }
+
+    html.is-open .drawer{transform:translateX(0)}
+
+    .drawer header{
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:16px;
+      border-bottom:1px solid var(--line);
+      position:sticky;
+      top:0;
+      background:#fff;
+      z-index:2;
+    }
+
+    .drawer .section{padding:16px}
+    .drawer .nav-list{display:flex;flex-direction:column;gap:4px}
+    .drawer .nav-list a{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      width:100%;
+      min-height:44px;
+      padding:0 12px;
+      border-radius:12px;
+      font-weight:800;
+      color:#111827;
+      background:#f8fafc;
+    }
+
+    .lang-pills--drawer{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:8px;
+    }
+
+    .lang-pills--drawer .lang-pill{
+      width:100%;
+      display:flex;
+      justify-content:center;
+    }
+
+    .drawer-dotrule{
+      width:calc(100% - 32px);
+      margin:0 auto;
+      border-top:1px dashed rgba(15,23,42,.16);
+    }
+
+    .drawer-quick-stack{
+      display:flex;
+      flex-direction:column;
+      gap:10px;
+      margin-top:14px;
+    }
+
+    .drawer-quick-pill{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      min-height:44px;
+      border:1px solid #dbe2ea;
+      border-radius:999px;
+      font-weight:800;
+      background:#fff;
+    }
+
+    .page-main{
+      padding:28px 0 48px;
+    }
+
+    .breadcrumb{
+      display:flex;
+      flex-wrap:wrap;
+      gap:8px;
+      align-items:center;
+      margin-bottom:18px;
+      color:var(--text-faint);
+      font-size:13px;
+      font-weight:700;
+    }
+
+    .breadcrumb a:hover{color:var(--text)}
+
+    .guide-hero{
+      background:linear-gradient(180deg,#ffffff 0%, #f8fafc 100%);
+      border:1px solid var(--line);
+      border-radius:var(--radius-xl);
+      box-shadow:var(--shadow-md);
+      padding:28px;
+    }
+
+    .guide-hero__eyebrow{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:30px;
+      padding:0 12px;
+      border-radius:999px;
+      background:#111827;
+      color:#fff;
+      font-size:12px;
+      font-weight:900;
+      letter-spacing:.02em;
+    }
+
+    .guide-hero h1{
+      margin:14px 0 10px;
+      font-size:38px;
+      line-height:1.16;
+      letter-spacing:-.03em;
+    }
+
+    .guide-hero__desc{
+      margin:0;
+      color:var(--text-soft);
+      font-size:17px;
+    }
+
+    .guide-meta{
+      display:flex;
+      flex-wrap:wrap;
+      gap:10px;
+      margin-top:18px;
+    }
+
+    .guide-meta__item{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:36px;
+      padding:0 12px;
+      border:1px solid var(--line);
+      border-radius:999px;
+      background:#fff;
+      color:#334155;
+      font-size:13px;
+      font-weight:800;
+    }
+
+    .guide-video-section{
+      margin:24px 0 0;
+    }
+
+    .guide-video-wrap{
+      position:relative;
+      width:100%;
+      overflow:hidden;
+      border-radius:24px;
+      background:#000;
+      box-shadow:0 14px 34px rgba(15,23,42,.12);
+    }
+
+    .guide-video-wrap iframe{
+      width:100%;
+      height:100%;
+      border:0;
+      display:block;
+    }
+
+    .guide-video-wrap--shorts{
+      max-width:420px;
+      aspect-ratio:9 / 16;
+      margin:0 auto;
+    }
+
+    .guide-video-link{
+      margin:12px 0 0;
+      text-align:center;
+      font-size:14px;
+      color:var(--text-faint);
+    }
+
+    .guide-video-link a{
+      color:var(--text);
+      font-weight:800;
+    }
+
+    .guide-grid{
+      display:grid;
+      grid-template-columns:minmax(0,1fr) 280px;
+      gap:20px;
+      margin-top:22px;
+      align-items:start;
+    }
+
+    .guide-article{
+      display:flex;
+      flex-direction:column;
+      gap:18px;
+      min-width:0;
+    }
+
+    .card{
+      background:var(--surface);
+      border:1px solid var(--line);
+      border-radius:var(--radius-xl);
+      box-shadow:var(--shadow-sm);
+      padding:24px;
+    }
+
+    .toc-card{
+      position:sticky;
+      top:92px;
+    }
+
+    .toc-title{
+      margin:0 0 14px;
+      font-size:18px;
+      font-weight:900;
+      letter-spacing:-.02em;
+    }
+
+    .toc-list{
+      display:flex;
+      flex-direction:column;
+      gap:8px;
+    }
+
+    .toc-list a{
+      display:block;
+      padding:10px 12px;
+      border-radius:12px;
+      background:#f8fafc;
+      border:1px solid #eef2f7;
+      color:#334155;
+      font-size:14px;
+      font-weight:800;
+    }
+
+    .toc-list a:hover{
+      background:#eef2f7;
+      color:#111827;
+    }
+
+    .summary-box{
+      background:#f8fafc;
+      border:1px solid #e2e8f0;
+      border-radius:18px;
+      padding:18px;
+    }
+
+    .summary-box h2,
+    .section-card h2{
+      margin:0 0 14px;
+      font-size:24px;
+      line-height:1.2;
+      letter-spacing:-.02em;
+    }
+
+    .summary-list,
+    .tips-list,
+    .phase-list,
+    .role-list,
+    .win-list,
+    .condition-list{
+      margin:0;
+      padding-left:20px;
+    }
+
+    .summary-list li,
+    .tips-list li,
+    .phase-list li,
+    .role-list li,
+    .win-list li,
+    .condition-list li{
+      margin:8px 0;
+    }
+
+    .section-card h3{
+      margin:18px 0 10px;
+      font-size:18px;
+      line-height:1.35;
+      letter-spacing:-.02em;
+    }
+
+    .section-card p{
+      margin:0 0 12px;
+      color:#334155;
+    }
+
+    .building-grid{
+      display:grid;
+      grid-template-columns:repeat(2,minmax(0,1fr));
+      gap:12px;
+      margin-top:14px;
+    }
+
+    .building-item{
+      border:1px solid #e2e8f0;
+      background:#f8fafc;
+      border-radius:18px;
+      padding:16px;
+    }
+
+    .building-item strong{
+      display:block;
+      margin-bottom:8px;
+      font-size:16px;
+      color:#111827;
+    }
+
+    .phase-block{
+      border:1px solid #e2e8f0;
+      background:#f8fafc;
+      border-radius:18px;
+      padding:18px;
+    }
+
+    .phase-block + .phase-block{
+      margin-top:14px;
+    }
+
+    .phase-label{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:30px;
+      padding:0 12px;
+      border-radius:999px;
+      background:#111827;
+      color:#fff;
+      font-size:12px;
+      font-weight:900;
+      margin-bottom:12px;
+    }
+
+    .note-box{
+      margin-top:14px;
+      padding:16px;
+      border-radius:18px;
+      background:#fff7ed;
+      border:1px solid #fed7aa;
+      color:#7c2d12;
+      font-size:14px;
+      font-weight:700;
+    }
+
+    .source-note{
+      margin-top:12px;
+      font-size:13px;
+      color:var(--text-faint);
+    }
+
+    .source-note strong{
+      color:var(--text);
+    }
+
+    .cta-card{
+      text-align:center;
+      background:linear-gradient(180deg,#ffffff 0%, #f8fafc 100%);
+    }
+
+    .cta-card h2{
+      margin:0 0 10px;
+      font-size:26px;
+      line-height:1.2;
+      letter-spacing:-.02em;
+    }
+
+    .cta-card p{
+      margin:0;
+      color:var(--text-soft);
+    }
+
+    .site-footer{
+      margin-top:26px;
+      border-top:1px solid var(--line);
+      background:#fff;
+    }
+
+    .footer-link-strip{
+      padding:14px 0;
+      border-bottom:1px solid #eef2f7;
+    }
+
+    .footer-link-strip__inner{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:10px;
+      flex-wrap:wrap;
+      text-align:center;
+    }
+
+    .footer-link-strip__actions{
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      gap:8px;
+      flex-wrap:wrap;
+    }
+
+    .footer-inner{padding:24px 0 34px}
+    .footer-top{
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      gap:18px;
+      text-align:center;
+    }
+
+    .footer-brand{
+      font-size:18px;
+      font-weight:900;
+      color:#111827;
+    }
+
+    .footer-desc{
+      margin:8px 0 0;
+      color:var(--text-faint);
+      font-size:14px;
+      max-width:720px;
+    }
+
+    .footer-links{
+      display:flex;
+      flex-wrap:wrap;
+      justify-content:center;
+      gap:10px;
+    }
+
+    .footer-links a{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      min-height:40px;
+      padding:0 14px;
+      border-radius:999px;
+      border:1px solid var(--line);
+      background:#f8fafc;
+      font-size:14px;
+      font-weight:800;
+    }
+
+    .footer-copy{
+      margin-top:18px;
+      padding-top:18px;
+      border-top:1px solid #eef2f7;
+      color:var(--text-faint);
+      font-size:13px;
+      text-align:center;
+    }
+
+    .mobile-bottom-nav{
+      position:fixed;
+      left:0;
+      right:0;
+      bottom:0;
+      z-index:1400;
+      display:none;
+      background:rgba(255,255,255,.96);
+      backdrop-filter:saturate(160%) blur(10px);
+      border-top:1px solid rgba(15,23,42,.08);
+      padding:8px 10px calc(8px + env(safe-area-inset-bottom, 0px));
+    }
+
+    .mobile-bottom-nav__inner{
+      display:grid;
+      grid-template-columns:repeat(4,minmax(0,1fr));
+      gap:6px;
+      max-width:640px;
+      margin:0 auto;
+    }
+
+    .mobile-bottom-nav__item{
+      min-width:0;
+      display:flex;
+      flex-direction:column;
+      align-items:center;
+      justify-content:center;
+      gap:4px;
+      padding:8px 4px 7px;
+      border-radius:12px;
+      color:#6b7280;
+    }
+
+    .mobile-bottom-nav__item svg{
+      width:20px;
+      height:20px;
+      display:block;
+      flex:0 0 auto;
+    }
+
+    .mobile-bottom-nav__label{
+      font-size:11px;
+      line-height:1.1;
+      font-weight:700;
+      letter-spacing:-0.01em;
+      white-space:nowrap;
+    }
+
+    .mobile-bottom-nav__item.is-active,
+    .mobile-bottom-nav__item[aria-current="page"]{
+      color:#111827;
+      background:#f3f4f6;
+    }
+
+    @media (max-width:980px){
+      .nav{display:none}
+      .hamburger{display:inline-flex;align-items:center;justify-content:center}
+      .nav-right{display:none}
+      .mobile-bottom-nav{display:block}
+      .guide-grid{
+        grid-template-columns:minmax(0,1fr);
+      }
+      .toc-card{
+        position:static;
+      }
+      .countdown-bar{
+        min-height:52px;
+        align-items:center;
+        flex-direction:row;
+        justify-content:space-between;
+        gap:10px;
+      }
+      .countdown-bar__left{
+        width:auto;
+        min-width:0;
+        flex:1 1 auto;
+      }
+      .countdown-bar__actions{
+        width:auto;
+        justify-content:flex-end;
+        flex-wrap:nowrap;
+      }
+    }
+
+    @media (max-width:720px){
+      .page-main{
+        padding:22px 0 42px;
+      }
+      .guide-hero,
+      .card{
+        padding:20px 18px;
+        border-radius:22px;
+      }
+      .guide-hero h1{
+        font-size:30px;
+      }
+      .guide-hero__desc{
+        font-size:15px;
+      }
+      .building-grid{
+        grid-template-columns:1fr;
+      }
+      .guide-video-wrap--shorts{
+        max-width:100%;
+      }
+    }
+
+    @media (max-width:640px){
+      .container,
+      .guide-container{
+        width:min(100% - 24px,1180px);
+      }
+      .brand-title{font-size:14px}
+      .brand-sub{display:none}
+      .countdown-bar{
+        gap:8px;
+      }
+      .countdown-bar__left{
+        gap:8px;
+      }
+      .countdown-copy{
+        font-size:13px;
+        white-space:nowrap;
+        overflow:hidden;
+        text-overflow:ellipsis;
+      }
+      .countdown-link{
+        min-height:32px;
+        padding:0 10px;
+        font-size:12px;
+      }
+      .footer-link-strip__inner{
+        flex-direction:column;
+      }
+    }
+
+    html.is-open body,
+    body.no-scroll{overflow:hidden}
+  </style>
+
+  <script id="ts-guide-schema" type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"Article",
+    "headline":"貯水池レイド 勝利ガイド",
+    "description":"貯水池レイドの参加条件、建物の役割、チーム分担、フェーズ別運営、追加のコツまでまとめたタイルサバイバル攻略ガイドです。",
+    "author":{
+      "@type":"Organization",
+      "name":"TilesSurvive.net"
+    },
+    "publisher":{
+      "@type":"Organization",
+      "name":"TilesSurvive.net",
+      "logo":{
+        "@type":"ImageObject",
+        "url":"https://tilessurvive.net/img/logo-tilessurvive.png"
+      }
+    },
+    "mainEntityOfPage":"https://tilessurvive.net/ja/guides/reservoir-raid/",
+    "inLanguage":"ja-JP"
+  }
+  </script>
+
+  <script id="ts-breadcrumb-schema" type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {
+        "@type":"ListItem",
+        "position":1,
+        "name":"ホーム",
+        "item":"https://tilessurvive.net/ja/"
+      },
+      {
+        "@type":"ListItem",
+        "position":2,
+        "name":"ガイド",
+        "item":"https://tilessurvive.net/ja/guides/"
+      },
+      {
+        "@type":"ListItem",
+        "position":3,
+        "name":"貯水池レイド 勝利ガイド",
+        "item":"https://tilessurvive.net/ja/guides/reservoir-raid/"
+      }
+    ]
+  }
+  </script>
+
+  <script>
+    (function(){
+      function normalizeLang(code){
+        var low = String(code || '').trim().toLowerCase();
+        if (low === 'ko') return 'ko';
+        if (low === 'en') return 'en';
+        if (low === 'ja') return 'ja';
+        if (low === 'ru') return 'ru';
+        if (low === 'zh-tw' || low === 'zh_tw' || low === 'tw') return 'zh-tw';
+        return 'ja';
+      }
+
+      function pathWithLang(lang, path){
+        return '/' + lang + path;
+      }
+
+      function applyLang(lang){
+        lang = normalizeLang(lang);
+        var currentPath = location.pathname.replace(/^\/(ko|en|ja|ru|zh-tw)(\/|$)/i, '/');
+        if (currentPath === '') currentPath = '/';
+        location.href = pathWithLang(lang, currentPath);
+      }
+
+      window.TS_LANG = {
+        normalize: normalizeLang,
+        apply: applyLang
+      };
+    })();
+  </script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z2MJ6TXZHK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Z2MJ6TXZHK');
+  </script>
+</head>
+<body data-page="guide-article" data-category="guides" data-slug="reservoir-raid">
+  <a class="skip-link" href="#main">本文へスキップ</a>
+
+  <div id="site-header"></div>
+
+
+  <header class="site-header" role="banner">
+    <div class="container nav-bar">
+      <div class="nav-left">
+        <a class="brand" href="/ja/" aria-label="TilesSurvive.net ホーム">
+          <img class="brand-logo" src="/img/logo-tilessurvive.png" alt="TilesSurvive.net" width="30" height="30" />
+          <span class="brand-text">
+            <span class="brand-title">TilesSurvive.net</span>
+            <span class="brand-sub">Tiles Survive Data / Guides / Codes / Tools Hub</span>
+          </span>
+        </a>
+
+        <nav class="nav" id="primaryNav" role="navigation" aria-label="上部メニュー">
+          <a href="/ja/buildings/">建物</a>
+          <a href="/ja/heroes/">英雄</a>
+          <a href="/ja/behemoths/">ベヒーモス</a>
+          <a href="/ja/database/">データベース</a>
+          <a href="/ja/guides/" aria-current="page">ガイド</a>
+          <a href="/ja/seasons/">シーズン</a>
+        </nav>
+      </div>
+
+      <button class="hamburger" id="menuToggle" aria-label="メニューを開く" aria-controls="mobileDrawer" aria-expanded="false">☰</button>
+
+      <div class="nav-right">
+        <div id="langDropdownHeader" class="lang-pills" aria-label="言語選択"></div>
+      </div>
+    </div>
+  </header>
+
+  <section class="countdown-bar-wrap" aria-label="コード案内">
+    <div class="container countdown-bar">
+      <div class="countdown-bar__left">
+        <span class="countdown-badge">コード</span>
+        <div class="countdown-copy">
+          <strong>タイルサバイバル コード案内</strong>
+        </div>
+      </div>
+      <div class="countdown-bar__actions">
+        <a class="countdown-link" href="/ja/codes/">最新コード</a>
+        <a class="countdown-link" href="/ja/guides/gift-code-how-to-use/">入力方法</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="backdrop" id="backdrop" hidden></div>
+
+  <aside class="drawer" id="mobileDrawer" aria-hidden="true" aria-label="モバイルメニュー">
+    <header>
+      <strong>Menu</strong>
+      <button id="btnClose" aria-label="閉じる" style="background:none;border:0;font-size:20px;cursor:pointer">✕</button>
+    </header>
+
+    <div class="section">
+      <div id="langDropdownDrawer" class="lang-pills lang-pills--drawer" aria-label="言語選択"></div>
+    </div>
+
+    <div class="drawer-dotrule" aria-hidden="true"></div>
+
+    <div class="section">
+      <div class="nav-list" role="navigation" aria-label="モバイルメニュー一覧">
+        <a href="/ja/buildings/">建物</a>
+        <a href="/ja/heroes/">英雄</a>
+        <a href="/ja/behemoths/">ベヒーモス</a>
+        <a href="/ja/database/">データベース</a>
+        <a href="/ja/guides/">ガイド</a>
+        <a href="/ja/seasons/">シーズン</a>
+      </div>
+
+      <div class="drawer-quick-stack">
+        <a class="drawer-quick-pill js-drawer-close" href="https://discord.gg/sUqbBskd" target="_blank" rel="noopener noreferrer">Discord</a>
+        <a class="drawer-quick-pill js-drawer-close" href="/ja/codes/">ギフトコード</a>
+      </div>
+    </div>
+  </aside>
+
+  <main class="page-main" id="main" role="main" aria-label="メインコンテンツ">
+    <div class="guide-container">
+      <nav class="breadcrumb" aria-label="パンくずリスト">
+        <a href="/ja/">ホーム</a>
+        <span>/</span>
+        <a href="/ja/guides/">ガイド</a>
+        <span>/</span>
+        <span>貯水池レイド 勝利ガイド</span>
+      </nav>
+
+      <header class="guide-hero">
+        <span class="guide-hero__eyebrow">JA GUIDE</span>
+        <h1>貯水池レイド 勝利ガイド</h1>
+        <p class="guide-hero__desc">
+          参加条件、勝利条件、主要建物の役割、チーム分担、フェーズ別運営、追加のコツまで
+          貯水池レイドの要点だけを素早く確認できる実戦要約版です。
+        </p>
+
+        <div class="guide-meta">
+          <span class="guide-meta__item">貯水池レイド</span>
+          <span class="guide-meta__item">運営型ガイド</span>
+          <span class="guide-meta__item">序盤・中盤・終盤整理</span>
+        </div>
+
+        <section class="guide-video-section" aria-label="貯水池レイド攻略動画">
+          <div class="guide-video-wrap guide-video-wrap--shorts">
+            <iframe
+              src="https://www.youtube.com/embed/Bs9zmb4DgXw"
+              title="貯水池レイド 勝利ガイド Shorts"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen>
+            </iframe>
+          </div>
+
+          <p class="guide-video-link">
+            動画で見る:
+            <a href="https://www.youtube.com/shorts/Bs9zmb4DgXw" target="_blank" rel="noopener noreferrer">YouTube Shorts はこちら</a>
+          </p>
+        </section>
+      </header>
+
+      <div class="guide-grid">
+        <article class="guide-article">
+          <section class="card summary-box" id="summary">
+            <h2>まずはこれだけ覚えれば十分</h2>
+            <ul class="summary-list">
+              <li>序盤は太陽光発電所と空港を先に確保し、全体の運営速度を上げるのが重要です。</li>
+              <li>中盤以降は建物ポイントの維持と敵兵力の消耗を同時に管理する必要があります。</li>
+              <li>残り10分では水資源センターを軸に逆転のチャンスが最も大きくなります。</li>
+              <li>ただ戦うだけでなく、得点構造を理解して建物運営で勝つ方が強いです。</li>
+              <li>落ちた臨時ポイントや採集地のポイント箱は即回収できる側が有利です。</li>
+            </ul>
+          </section>
+
+          <section class="card section-card" id="conditions">
+            <h2>1. 参加条件</h2>
+            <ul class="condition-list">
+              <li>各同盟は1チームのみ編成できます。</li>
+              <li>チーム構成は主力30名 + 待機10名を基準に準備します。</li>
+              <li>同盟長またはR4がチーム登録を行います。</li>
+              <li>登録締切前に必ずその同盟へ加入している必要があります。</li>
+              <li>部隊が移動中または治療中の場合は入場できません。</li>
+            </ul>
+            <p class="source-note"><strong>出典:</strong> ゲーム内の貯水池レイド案内をもとに要約</p>
+          </section>
+
+          <section class="card section-card" id="win">
+            <h2>2. 勝利条件</h2>
+            <ul class="win-list">
+              <li>貯水池エリア内の建物を占領してポイントを獲得します。</li>
+              <li>終了時点でポイントが多い同盟が勝利します。</li>
+              <li>報酬はチーム成績と個人ポイントに応じて差がつきます。</li>
+            </ul>
+            <p>
+              このコンテンツは単なる戦闘イベントではなく、
+              <strong>建物制圧 + ポイント管理 + 兵力運用</strong>が組み合わさったポイント戦です。
+            </p>
+            <p class="source-note"><strong>出典:</strong> ゲーム内の貯水池レイド案内をもとに要約</p>
+          </section>
+
+          <section class="card section-card" id="buildings">
+            <h2>3. 主要建物の役割</h2>
+            <div class="building-grid">
+              <div class="building-item">
+                <strong>水資源センター</strong>
+                <p>最終的な中核得点建物です。残り10分の運営で最重要の勝負所になります。</p>
+              </div>
+              <div class="building-item">
+                <strong>太陽光発電所</strong>
+                <p>建物占領速度が50%増加します。序盤の主導権確保に非常に重要です。</p>
+              </div>
+              <div class="building-item">
+                <strong>空港</strong>
+                <p>テレポートのクールタイムが50%減少します。前線転換や中央合流速度に大きな差を作ります。</p>
+              </div>
+              <div class="building-item">
+                <strong>感染者キャンプ</strong>
+                <p>敵建物へ感染者を送り込んで攻撃でき、デバフ運用も可能です。</p>
+              </div>
+              <div class="building-item">
+                <strong>タンク工場</strong>
+                <p>攻撃15%、防御15%バフ。衝突区間の安定性に役立ちます。</p>
+              </div>
+              <div class="building-item">
+                <strong>採集地</strong>
+                <p>出現時に即獲得できるポイント箱の役割です。素早い回収が重要です。</p>
+              </div>
+            </div>
+
+            <h3>追加で必ず覚えておくこと</h3>
+            <p>
+              建物占領に失敗すると累積した臨時ポイントが地面に落ち、
+              そのポイントは味方も敵も拾うことができます。
+              つまり交戦後に残ったポイントをどちらが早く回収するかが、そのまま得点差につながります。
+            </p>
+            <p class="source-note"><strong>出典:</strong> ゲーム内の貯水池レイド案内をもとに要約</p>
+          </section>
+
+          <section class="card section-card" id="roles">
+            <h2>4. チーム役割分担</h2>
+            <p>
+              戦闘を安定させるため、参加人数は3〜4グループに分ける方が良いです。
+              全員が一か所に集まると、占領維持と回転運営が崩れます。
+            </p>
+            <ul class="role-list">
+              <li><strong>攻撃チーム:</strong> 敵戦力の弱体化、衝突誘導、敵兵力の消耗担当</li>
+              <li><strong>支援チーム:</strong> 必要な場所へ即移動し、攻撃と防衛を柔軟に補助</li>
+              <li><strong>防衛チーム:</strong> 占領建物の維持と安定した得点確保を担当</li>
+              <li><strong>回収チーム:</strong> 敵占領地の奪取成功時に落ちるポイントと採集地の回収を担当</li>
+            </ul>
+            <p>
+              重要なのは「全員で戦うこと」ではなく、
+              <strong>誰が戦い、誰が守り、誰がポイントを回収するか</strong>を
+              はっきり分けることです。
+            </p>
+            <p class="source-note"><strong>出典:</strong> ゲーム内の貯水池レイド案内をもとに要約</p>
+          </section>
+
+          <section class="card section-card" id="phases">
+            <h2>5. フェーズ別運営</h2>
+
+            <div class="phase-block">
+              <span class="phase-label">PHASE 1</span>
+              <h3>序盤: まず運営基盤を作る</h3>
+              <ul class="phase-list">
+                <li>防衛チームと支援チームは太陽光発電所と空港を優先して占領します。</li>
+                <li>攻撃チームは序盤から敵兵力を削り、相手の戦闘テンポを崩します。</li>
+                <li>攻撃チームの兵力が減ったら無理をせず撤退し、治療後に再合流します。</li>
+              </ul>
+              <p>
+                序盤はキル数よりも <strong>運営速度バフの確保</strong> が重要です。
+                太陽光発電所と空港を先に取った側が、中盤からかなり楽に回せます。
+              </p>
+            </div>
+
+            <div class="phase-block">
+              <span class="phase-label">PHASE 2</span>
+              <h3>中盤: 建物ポイント運営が核心</h3>
+              <ul class="phase-list">
+                <li>防衛チームを2グループに分けます。</li>
+                <li>A組: 太陽光発電所 + 2号処理センター + 感染者収容所を管理</li>
+                <li>B組: 空港 + 1号処理センター + タンク工場を管理</li>
+                <li>攻撃チームは引き続き敵兵力を圧迫して、相手の建物運営を妨害します。</li>
+                <li>支援チームは建物状況や前線崩壊の有無に応じて柔軟に動きます。</li>
+              </ul>
+              <p>
+                中盤は目の前の戦闘よりも、<strong>どちらがどの建物を安定して維持できるか</strong>が重要です。
+                一度取った建物を長く守れる側が、最終的に得点の流れを握ります。
+              </p>
+            </div>
+
+            <div class="phase-block">
+              <span class="phase-label">PHASE 3</span>
+              <h3>終盤残り10分: 水資源センター集中</h3>
+              <ul class="phase-list">
+                <li>水資源センターの占領を本格的に狙います。</li>
+                <li>中央周辺に循環型のテレポート配置を作り、合流速度を高めます。</li>
+                <li>攻撃チームが最初の集結を開始します。</li>
+                <li>支援チームは数秒間隔で後続集結をつなげます。</li>
+                <li>占領に成功すれば逆転の可能性が非常に高くなります。</li>
+              </ul>
+              <p>
+                貯水池レイドは残り10分の運営が本当の勝負です。
+                序中盤でやや押されていても、
+                <strong>水資源センター + 後続集結 + 素早い復帰</strong> の組み合わせが噛み合えば十分に逆転できます。
+              </p>
+            </div>
+
+            <p class="source-note"><strong>出典:</strong> ゲーム内の貯水池レイド案内をもとに要約</p>
+          </section>
+
+          <section class="card section-card" id="tips">
+            <h2>6. 追加のコツ</h2>
+            <ul class="tips-list">
+              <li>相手の最強戦力から集中して潰すと、前線全体がかなり楽になります。</li>
+              <li>建物占領失敗時に落ちたポイントはすぐ回収します。</li>
+              <li>採集地が出現したら可能な限り即回収します。</li>
+              <li>戦闘前にバフ・装備・スキルをすべて事前に有効化しておきます。</li>
+              <li>空港を取るとテレポートのクールタイムが大きく減り、全体運営が有利になります。</li>
+              <li>治療加速は十分に準備しておく方が良いです。</li>
+              <li>可能ならボイスチャットでリアルタイム指示を合わせる方がはるかに安定します。</li>
+            </ul>
+
+            <div class="note-box">
+              貯水池レイドでは常に戦い続ける必要はありません。
+              序盤に主要建物を素早く取って初回制圧報酬を確保した後、
+              一部区域はあえて敵に取らせ、ポイントが十分に溜まったタイミングで集中攻略し、
+              一気に逆転する形も十分有効です。
+            </div>
+
+            <p style="margin-top:14px;">
+              貯水池レイドは戦闘力だけで固定の正解が決まるコンテンツではありません。
+              各同盟の戦力、参加度、指揮体制、プレイスタイルに合った運営方法を選ぶことが最も重要です。
+            </p>
+            <p class="source-note"><strong>出典:</strong> ゲーム内の貯水池レイド案内をもとに要約</p>
+          </section>
+
+          <section class="card cta-card">
+            <h2>まとめ</h2>
+            <p>
+              序盤は運営バフ建物、中盤は得点維持、終盤は水資源センター。
+              この3つを明確に押さえるだけでも、貯水池レイドの勝率は確実に上がります。
+            </p>
+          </section>
+        </article>
+
+        <aside class="card toc-card" aria-label="目次">
+          <h2 class="toc-title">目次</h2>
+          <nav class="toc-list">
+            <a href="#summary">要点まとめ</a>
+            <a href="#conditions">1. 参加条件</a>
+            <a href="#win">2. 勝利条件</a>
+            <a href="#buildings">3. 主要建物の役割</a>
+            <a href="#roles">4. チーム役割分担</a>
+            <a href="#phases">5. フェーズ別運営</a>
+            <a href="#tips">6. 追加のコツ</a>
+          </nav>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer" role="contentinfo" aria-label="フッター">
+    <div class="footer-link-strip">
+      <div class="container footer-link-strip__inner">
+        <div class="footer-link-strip__actions">
+          <a class="countdown-link" href="https://discord.gg/sUqbBskd" target="_blank" rel="noopener noreferrer">Discord</a>
+          <a class="countdown-link" href="/ja/codes/">ギフトコード</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer-inner">
+      <div class="footer-top">
+        <div>
+          <div class="footer-brand">TilesSurvive.net</div>
+          <p class="footer-desc">
+            TilesSurvive.net はタイルサバイバル関連データを整理してユーザーの定着を助けるために作られた、公式とは無関係の非公式ファンコミュニティです。
+          </p>
+        </div>
+
+        <nav class="footer-links" aria-label="フッターメニュー">
+          <a href="/ja/about/">紹介</a>
+          <a href="/ja/privacy/">プライバシー</a>
+        </nav>
+      </div>
+
+      <div class="footer-copy">
+        © 2026 TilesSurvive.net. All rights reserved.
+      </div>
+    </div>
+  </footer>
+
+  <nav class="mobile-bottom-nav" aria-label="モバイルクイック移動">
+    <div class="mobile-bottom-nav__inner">
+      <a class="mobile-bottom-nav__item" href="/ja/" data-mobile-nav="home">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M4 10.5 12 4l8 6.5V20a1 1 0 0 1-1 1h-4v-6H9v6H5a1 1 0 0 1-1-1v-9.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+        </svg>
+        <span class="mobile-bottom-nav__label">ホーム</span>
+      </a>
+
+      <a class="mobile-bottom-nav__item" href="/ja/database/" data-mobile-nav="database">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <ellipse cx="12" cy="6" rx="6" ry="3" stroke="currentColor" stroke-width="1.8"/>
+          <path d="M6 6v6c0 1.657 2.686 3 6 3s6-1.343 6-3V6M6 12v6c0 1.657 2.686 3 6 3s6-1.343 6-3v-6" stroke="currentColor" stroke-width="1.8"/>
+        </svg>
+        <span class="mobile-bottom-nav__label">DB</span>
+      </a>
+
+      <a class="mobile-bottom-nav__item" href="/ja/guides/" data-mobile-nav="guides">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M6 5.5A2.5 2.5 0 0 1 8.5 3H19v16H8.5A2.5 2.5 0 0 0 6 21V5.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/>
+          <path d="M6 6h11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+        </svg>
+        <span class="mobile-bottom-nav__label">ガイド</span>
+      </a>
+
+      <a class="mobile-bottom-nav__item" href="/ja/seasons/" data-mobile-nav="seasons">
+        <svg viewBox="0 0 24 24" fill="none" aria-hidden="true">
+          <path d="M12 3v4M12 17v4M4.93 4.93l2.83 2.83M16.24 16.24l2.83 2.83M3 12h4M17 12h4M4.93 19.07l2.83-2.83M16.24 7.76l2.83-2.83" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
+          <circle cx="12" cy="12" r="3.5" stroke="currentColor" stroke-width="1.8"/>
+        </svg>
+        <span class="mobile-bottom-nav__label">シーズン</span>
+      </a>
+    </div>
+  </nav>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      var html = document.documentElement;
+      var body = document.body;
+      var drawer = document.getElementById('mobileDrawer');
+      var backdrop = document.getElementById('backdrop');
+      var btnOpen = document.getElementById('menuToggle');
+      var btnClose = document.getElementById('btnClose');
+
+      function openDrawer(){
+        html.classList.add('is-open');
+        body.classList.add('no-scroll');
+        backdrop.hidden = false;
+        drawer.setAttribute('aria-hidden', 'false');
+        btnOpen && btnOpen.setAttribute('aria-expanded', 'true');
+      }
+
+      function closeDrawer(){
+        html.classList.remove('is-open');
+        body.classList.remove('no-scroll');
+        backdrop.hidden = true;
+        drawer.setAttribute('aria-hidden', 'true');
+        btnOpen && btnOpen.setAttribute('aria-expanded', 'false');
+      }
+
+      btnOpen && btnOpen.addEventListener('click', openDrawer);
+      btnClose && btnClose.addEventListener('click', closeDrawer);
+      backdrop && backdrop.addEventListener('click', closeDrawer);
+
+      window.addEventListener('keydown', function(e){
+        if (e.key === 'Escape') closeDrawer();
+      });
+
+      var drawerLinks = drawer ? drawer.querySelectorAll('a') : [];
+      Array.prototype.forEach.call(drawerLinks, function(link){
+        link.addEventListener('click', closeDrawer);
+      });
+    });
+  </script>
+
+  <script>
+    (function(){
+      var LANGS = [
+        { code:'ko', label:'KO' },
+        { code:'en', label:'EN' },
+        { code:'ja', label:'JA' },
+        { code:'ru', label:'RU' },
+        { code:'zh-tw', label:'TW' }
+      ];
+
+      function currentLang(){
+        return 'ja';
+      }
+
+      function render(root){
+        if (!root) return;
+        var cur = currentLang();
+        root.innerHTML = LANGS.map(function(lang){
+          return '<button type="button" class="lang-pill" data-lang="' + lang.code + '" aria-current="' + (lang.code === cur ? 'true' : 'false') + '">' + lang.label + '</button>';
+        }).join('');
+      }
+
+      function bind(root){
+        if (!root) return;
+        root.addEventListener('click', function(e){
+          var btn = e.target.closest('.lang-pill[data-lang]');
+          if (!btn) return;
+          e.preventDefault();
+          window.TS_LANG.apply(btn.getAttribute('data-lang'));
+        });
+      }
+
+      document.addEventListener('DOMContentLoaded', function(){
+        var header = document.getElementById('langDropdownHeader');
+        var drawer = document.getElementById('langDropdownDrawer');
+        render(header);
+        render(drawer);
+        bind(header);
+        bind(drawer);
+      });
+    })();
+  </script>
+
+  <script>
+    (function(){
+      function updateBottomNavActive(){
+        var pathname = location.pathname.toLowerCase();
+        var items = document.querySelectorAll('.mobile-bottom-nav__item');
+
+        Array.prototype.forEach.call(items, function(item){
+          item.classList.remove('is-active');
+          item.removeAttribute('aria-current');
+
+          var key = item.getAttribute('data-mobile-nav');
+          var active = false;
+
+          if (key === 'home') {
+            active = pathname === '/ja/' || pathname === '/ja';
+          } else if (key === 'database') {
+            active = pathname.indexOf('/ja/database') === 0;
+          } else if (key === 'guides') {
+            active = pathname.indexOf('/ja/guides') === 0;
+          } else if (key === 'seasons') {
+            active = pathname.indexOf('/ja/seasons') === 0;
+          }
+
+          if (active) {
+            item.classList.add('is-active');
+            item.setAttribute('aria-current', 'page');
+          }
+        });
+      }
+
+      document.addEventListener('DOMContentLoaded', updateBottomNavActive);
+    })();
+  </script>
+  <div id="site-footer"></div>
+  <script src="/js/layout.js"></script>
+</body>
+</html>
