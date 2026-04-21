@@ -1,0 +1,75 @@
+<!-- /components/ru/header.html -->
+<header class="site-header" role="banner">
+  <div class="container nav-bar">
+    <div class="nav-left">
+      <a class="brand" href="/ru/" aria-label="Главная TilesSurvive.net">
+        <img class="brand-logo" src="/img/logo-tilessurvive.png" alt="TilesSurvive.net" width="30" height="30" />
+        <span class="brand-text">
+          <span class="brand-title">TilesSurvive.net</span>
+          <span class="brand-sub">Tiles Survive Data / Guides / Codes / Tools Hub</span>
+        </span>
+      </a>
+
+      <nav class="nav" id="primaryNav" role="navigation" aria-label="Главное меню">
+        <a href="/ru/buildings/">Здания</a>
+        <a href="/ru/heroes/">Герои</a>
+        <a href="/ru/behemoths/">Бегемоты</a>
+        <a href="/ru/database/">База данных</a>
+        <a href="/ru/guides/">Гайды</a>
+        <a href="/ru/seasons/">Сезоны</a>
+      </nav>
+    </div>
+
+    <button class="hamburger" id="menuToggle" aria-label="Открыть меню" aria-controls="mobileDrawer" aria-expanded="false">☰</button>
+
+    <div class="nav-right">
+      <div id="langDropdownHeader" class="lang-pills" aria-label="Выбор языка"></div>
+    </div>
+  </div>
+</header>
+
+<section class="countdown-bar-wrap" aria-label="Обратный отсчёт кодов">
+  <div class="container countdown-bar">
+    <div class="countdown-bar__left">
+      <span class="countdown-badge">Коды</span>
+      <div class="countdown-copy">
+        <strong>Обратный отсчёт кодов Tiles Survive</strong>
+      </div>
+    </div>
+    <div class="countdown-bar__actions">
+      <a class="countdown-link" href="/ru/codes/">Последние коды</a>
+      <a class="countdown-link" href="/ru/guides/gift-code-how-to-use/">Как ввести</a>
+    </div>
+  </div>
+</section>
+
+<div class="backdrop" id="backdrop" hidden></div>
+
+<aside class="drawer" id="mobileDrawer" aria-hidden="true" aria-label="Мобильное меню">
+  <header>
+    <strong>Menu</strong>
+    <button id="btnClose" aria-label="Закрыть" style="background:none;border:0;font-size:20px;cursor:pointer">✕</button>
+  </header>
+
+  <div class="section">
+    <div id="langDropdownDrawer" class="lang-pills lang-pills--drawer" aria-label="Выбор языка"></div>
+  </div>
+
+  <div class="drawer-dotrule" aria-hidden="true"></div>
+
+  <div class="section">
+    <div class="nav-list" role="navigation" aria-label="Список мобильного меню">
+      <a href="/ru/buildings/">Здания</a>
+      <a href="/ru/heroes/">Герои</a>
+      <a href="/ru/behemoths/">Бегемоты</a>
+      <a href="/ru/database/">База данных</a>
+      <a href="/ru/guides/">Гайды</a>
+      <a href="/ru/seasons/">Сезоны</a>
+    </div>
+
+    <div class="drawer-quick-stack">
+      <a class="drawer-quick-pill js-drawer-close" href="https://discord.gg/sUqbBskd" target="_blank" rel="noopener noreferrer">Discord</a>
+      <a class="drawer-quick-pill js-drawer-close" href="/ru/codes/">Подарочные коды</a>
+    </div>
+  </div>
+</aside>

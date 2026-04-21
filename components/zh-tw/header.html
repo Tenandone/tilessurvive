@@ -1,0 +1,75 @@
+<!-- /components/zh-tw/header.html -->
+<header class="site-header" role="banner">
+  <div class="container nav-bar">
+    <div class="nav-left">
+      <a class="brand" href="/zh-tw/" aria-label="TilesSurvive.net 首頁">
+        <img class="brand-logo" src="/img/logo-tilessurvive.png" alt="TilesSurvive.net" width="30" height="30" />
+        <span class="brand-text">
+          <span class="brand-title">TilesSurvive.net</span>
+          <span class="brand-sub">Tiles Survive Data / Guides / Codes / Tools Hub</span>
+        </span>
+      </a>
+
+      <nav class="nav" id="primaryNav" role="navigation" aria-label="上方選單">
+        <a href="/zh-tw/buildings/">建築</a>
+        <a href="/zh-tw/heroes/">英雄</a>
+        <a href="/zh-tw/behemoths/">巨獸</a>
+        <a href="/zh-tw/database/">資料庫</a>
+        <a href="/zh-tw/guides/">攻略</a>
+        <a href="/zh-tw/seasons/">賽季</a>
+      </nav>
+    </div>
+
+    <button class="hamburger" id="menuToggle" aria-label="開啟選單" aria-controls="mobileDrawer" aria-expanded="false">☰</button>
+
+    <div class="nav-right">
+      <div id="langDropdownHeader" class="lang-pills" aria-label="語言選擇"></div>
+    </div>
+  </div>
+</header>
+
+<section class="countdown-bar-wrap" aria-label="禮包碼倒數">
+  <div class="container countdown-bar">
+    <div class="countdown-bar__left">
+      <span class="countdown-badge">代碼</span>
+      <div class="countdown-copy">
+        <strong>點點大作戰 禮包碼倒數計時</strong>
+      </div>
+    </div>
+    <div class="countdown-bar__actions">
+      <a class="countdown-link" href="/zh-tw/codes/">最新代碼</a>
+      <a class="countdown-link" href="/zh-tw/guides/gift-code-how-to-use/">輸入方法</a>
+    </div>
+  </div>
+</section>
+
+<div class="backdrop" id="backdrop" hidden></div>
+
+<aside class="drawer" id="mobileDrawer" aria-hidden="true" aria-label="手機選單">
+  <header>
+    <strong>Menu</strong>
+    <button id="btnClose" aria-label="關閉" style="background:none;border:0;font-size:20px;cursor:pointer">✕</button>
+  </header>
+
+  <div class="section">
+    <div id="langDropdownDrawer" class="lang-pills lang-pills--drawer" aria-label="語言選擇"></div>
+  </div>
+
+  <div class="drawer-dotrule" aria-hidden="true"></div>
+
+  <div class="section">
+    <div class="nav-list" role="navigation" aria-label="手機選單列表">
+      <a href="/zh-tw/buildings/">建築</a>
+      <a href="/zh-tw/heroes/">英雄</a>
+      <a href="/zh-tw/behemoths/">巨獸</a>
+      <a href="/zh-tw/database/">資料庫</a>
+      <a href="/zh-tw/guides/">攻略</a>
+      <a href="/zh-tw/seasons/">賽季</a>
+    </div>
+
+    <div class="drawer-quick-stack">
+      <a class="drawer-quick-pill js-drawer-close" href="https://discord.gg/EjqWhTPya" target="_blank" rel="noopener noreferrer">Discord</a>
+      <a class="drawer-quick-pill js-drawer-close" href="/zh-tw/codes/">禮包碼</a>
+    </div>
+  </div>
+</aside>

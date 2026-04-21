@@ -1,0 +1,75 @@
+<!-- /components/ko/header.html -->
+<header class="site-header" role="banner">
+  <div class="container nav-bar">
+    <div class="nav-left">
+      <a class="brand" href="/ko/" aria-label="TilesSurvive.net 홈 ">
+        <img class="brand-logo" src="/img/logo-tilessurvive.png" alt="TilesSurvive.net" width="30" height="30" />
+        <span class="brand-text">
+          <span class="brand-title">TilesSurvive.net</span>
+          <span class="brand-sub">Tiles Survive Data / Guides / Codes / Tools Hub</span>
+        </span>
+      </a>
+
+      <nav class="nav" id="primaryNav" role="navigation" aria-label="상단 메뉴">
+        <a href="/ko/buildings/">건물</a>
+        <a href="/ko/heroes/">영웅</a>
+        <a href="/ko/behemoths/">베헤모스</a>
+        <a href="/ko/database/">데이터베이스</a>
+        <a href="/ko/guides/">가이드</a>
+        <a href="/ko/seasons/">시즌</a>
+      </nav>
+    </div>
+
+    <button class="hamburger" id="menuToggle" aria-label="메뉴 열기" aria-controls="mobileDrawer" aria-expanded="false">☰</button>
+
+    <div class="nav-right">
+      <div id="langDropdownHeader" class="lang-pills" aria-label="언어 선택"></div>
+    </div>
+  </div>
+</header>
+
+<section class="countdown-bar-wrap" aria-label="쿠폰 카운트다운">
+  <div class="container countdown-bar">
+    <div class="countdown-bar__left">
+      <span class="countdown-badge">쿠폰</span>
+      <div class="countdown-copy">
+        <strong>타일서바이벌 쿠폰 카운트다운</strong>
+      </div>
+    </div>
+    <div class="countdown-bar__actions">
+      <a class="countdown-link" href="/ko/codes/">최신 코드</a>
+      <a class="countdown-link" href="/ko/guides/gift-code-how-to-use/">입력 방법</a>
+    </div>
+  </div>
+</section>
+
+<div class="backdrop" id="backdrop" hidden></div>
+
+<aside class="drawer" id="mobileDrawer" aria-hidden="true" aria-label="모바일 메뉴">
+  <header>
+    <strong>Menu</strong>
+    <button id="btnClose" aria-label="닫기" style="background:none;border:0;font-size:20px;cursor:pointer">✕</button>
+  </header>
+
+  <div class="section">
+    <div id="langDropdownDrawer" class="lang-pills lang-pills--drawer" aria-label="언어 선택"></div>
+  </div>
+
+  <div class="drawer-dotrule" aria-hidden="true"></div>
+
+  <div class="section">
+    <div class="nav-list" role="navigation" aria-label="모바일 메뉴 목록">
+      <a href="/ko/buildings/">건물</a>
+      <a href="/ko/heroes/">영웅</a>
+      <a href="/ko/behemoths/">베헤모스</a>
+      <a href="/ko/database/">데이터베이스</a>
+      <a href="/ko/guides/">가이드</a>
+      <a href="/ko/seasons/">시즌</a>
+    </div>
+
+    <div class="drawer-quick-stack">
+      <a class="drawer-quick-pill js-drawer-close" href="https://open.kakao.com/o/gako89Wh" target="_blank" rel="noopener noreferrer">카카오톡</a>
+      <a class="drawer-quick-pill js-drawer-close" href="/ko/codes/">기프트코드</a>
+    </div>
+  </div>
+</aside>

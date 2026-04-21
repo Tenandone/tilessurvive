@@ -1128,7 +1128,8 @@
 </head>
 
 <body>
-  <svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+  <div id="site-header"></div>
+<svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
     <symbol id="ico-info" viewBox="0 0 24 24">
       <path d="M12 2a10 10 0 1 0 .001 20.001A10 10 0 0 0 12 2z" fill="currentColor"/>
       <path d="M12 10v7" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
@@ -1845,5 +1846,7 @@
       document.addEventListener('DOMContentLoaded', updateBottomNavActive);
     })();
   </script>
+  <div id="site-footer"></div>
+  <script src="/js/layout.js"></script>
 </body>
 </html>

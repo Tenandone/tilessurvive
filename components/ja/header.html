@@ -1,0 +1,75 @@
+<!-- /components/ja/header.html -->
+<header class="site-header" role="banner">
+  <div class="container nav-bar">
+    <div class="nav-left">
+      <a class="brand" href="/ja/" aria-label="TilesSurvive.net ホーム">
+        <img class="brand-logo" src="/img/logo-tilessurvive.png" alt="TilesSurvive.net" width="30" height="30" />
+        <span class="brand-text">
+          <span class="brand-title">TilesSurvive.net</span>
+          <span class="brand-sub">Tiles Survive Data / Guides / Codes / Tools Hub</span>
+        </span>
+      </a>
+
+      <nav class="nav" id="primaryNav" role="navigation" aria-label="上部メニュー">
+        <a href="/ja/buildings/">建物</a>
+        <a href="/ja/heroes/">英雄</a>
+        <a href="/ja/behemoths/">ベヒーモス</a>
+        <a href="/ja/database/">データベース</a>
+        <a href="/ja/guides/">ガイド</a>
+        <a href="/ja/seasons/">シーズン</a>
+      </nav>
+    </div>
+
+    <button class="hamburger" id="menuToggle" aria-label="メニューを開く" aria-controls="mobileDrawer" aria-expanded="false">☰</button>
+
+    <div class="nav-right">
+      <div id="langDropdownHeader" class="lang-pills" aria-label="言語選択"></div>
+    </div>
+  </div>
+</header>
+
+<section class="countdown-bar-wrap" aria-label="コードカウントダウン">
+  <div class="container countdown-bar">
+    <div class="countdown-bar__left">
+      <span class="countdown-badge">コード</span>
+      <div class="countdown-copy">
+        <strong>タイルズサバイバル コード残り時間</strong>
+      </div>
+    </div>
+    <div class="countdown-bar__actions">
+      <a class="countdown-link" href="/ja/codes/">最新コード</a>
+      <a class="countdown-link" href="/ja/guides/gift-code-how-to-use/">入力方法</a>
+    </div>
+  </div>
+</section>
+
+<div class="backdrop" id="backdrop" hidden></div>
+
+<aside class="drawer" id="mobileDrawer" aria-hidden="true" aria-label="モバイルメニュー">
+  <header>
+    <strong>Menu</strong>
+    <button id="btnClose" aria-label="閉じる" style="background:none;border:0;font-size:20px;cursor:pointer">✕</button>
+  </header>
+
+  <div class="section">
+    <div id="langDropdownDrawer" class="lang-pills lang-pills--drawer" aria-label="言語選択"></div>
+  </div>
+
+  <div class="drawer-dotrule" aria-hidden="true"></div>
+
+  <div class="section">
+    <div class="nav-list" role="navigation" aria-label="モバイルメニュー一覧">
+      <a href="/ja/buildings/">建物</a>
+      <a href="/ja/heroes/">英雄</a>
+      <a href="/ja/behemoths/">ベヒーモス</a>
+      <a href="/ja/database/">データベース</a>
+      <a href="/ja/guides/">ガイド</a>
+      <a href="/ja/seasons/">シーズン</a>
+    </div>
+
+    <div class="drawer-quick-stack">
+      <a class="drawer-quick-pill js-drawer-close" href="https://discord.gg/sUqbBskd" target="_blank" rel="noopener noreferrer">Discord</a>
+      <a class="drawer-quick-pill js-drawer-close" href="/ja/codes/">ギフトコード</a>
+    </div>
+  </div>
+</aside>

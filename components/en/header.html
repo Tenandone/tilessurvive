@@ -1,0 +1,75 @@
+<!-- /components/en/header.html -->
+<header class="site-header" role="banner">
+  <div class="container nav-bar">
+    <div class="nav-left">
+      <a class="brand" href="/en/" aria-label="TilesSurvive.net home">
+        <img class="brand-logo" src="/img/logo-tilessurvive.png" alt="TilesSurvive.net" width="30" height="30" />
+        <span class="brand-text">
+          <span class="brand-title">TilesSurvive.net</span>
+          <span class="brand-sub">Tiles Survive Data / Guides / Codes / Tools Hub</span>
+        </span>
+      </a>
+
+      <nav class="nav" id="primaryNav" role="navigation" aria-label="Primary menu">
+        <a href="/en/buildings/">Buildings</a>
+        <a href="/en/heroes/">Heroes</a>
+        <a href="/en/behemoths/">Behemoths</a>
+        <a href="/en/database/">Database</a>
+        <a href="/en/guides/">Guides</a>
+        <a href="/en/seasons/">Seasons</a>
+      </nav>
+    </div>
+
+    <button class="hamburger" id="menuToggle" aria-label="Open menu" aria-controls="mobileDrawer" aria-expanded="false">☰</button>
+
+    <div class="nav-right">
+      <div id="langDropdownHeader" class="lang-pills" aria-label="Language selector"></div>
+    </div>
+  </div>
+</header>
+
+<section class="countdown-bar-wrap" aria-label="Coupon countdown">
+  <div class="container countdown-bar">
+    <div class="countdown-bar__left">
+      <span class="countdown-badge">Codes</span>
+      <div class="countdown-copy">
+        <strong>Tiles Survive Coupon Countdown</strong>
+      </div>
+    </div>
+    <div class="countdown-bar__actions">
+      <a class="countdown-link" href="/en/codes/">Latest Codes</a>
+      <a class="countdown-link" href="/en/guides/gift-code-how-to-use/">How to Redeem</a>
+    </div>
+  </div>
+</section>
+
+<div class="backdrop" id="backdrop" hidden></div>
+
+<aside class="drawer" id="mobileDrawer" aria-hidden="true" aria-label="Mobile menu">
+  <header>
+    <strong>Menu</strong>
+    <button id="btnClose" aria-label="Close" style="background:none;border:0;font-size:20px;cursor:pointer">✕</button>
+  </header>
+
+  <div class="section">
+    <div id="langDropdownDrawer" class="lang-pills lang-pills--drawer" aria-label="Language selector"></div>
+  </div>
+
+  <div class="drawer-dotrule" aria-hidden="true"></div>
+
+  <div class="section">
+    <div class="nav-list" role="navigation" aria-label="Mobile menu list">
+      <a href="/en/buildings/">Buildings</a>
+      <a href="/en/heroes/">Heroes</a>
+      <a href="/en/behemoths/">Behemoths</a>
+      <a href="/en/database/">Database</a>
+      <a href="/en/guides/">Guides</a>
+      <a href="/en/seasons/">Seasons</a>
+    </div>
+
+    <div class="drawer-quick-stack">
+      <a class="drawer-quick-pill js-drawer-close" href="https://discord.gg/sUqbBskd" target="_blank" rel="noopener noreferrer">Discord</a>
+      <a class="drawer-quick-pill js-drawer-close" href="/en/codes/">Gift Codes</a>
+    </div>
+  </div>
+</aside>
