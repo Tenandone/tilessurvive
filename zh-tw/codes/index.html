@@ -1898,8 +1898,33 @@
         .replace(/'/g,"&#39;");
     }
 
+    const CODE_LABELS = {
+      referenceTime: "基準時間:",
+      expiryTime: "到期時間:",
+      noActive: "目前沒有有效的兌換碼。",
+      active: "有效",
+      permanent: "常駐",
+      noExpiry: "無期限",
+      expired: "已到期",
+      expiringSoon: "即將到期",
+      permanentCode: "常駐兌換碼",
+      generalCoupon: "一般兌換碼",
+      copy: "複製",
+      copied: "已複製: "
+    };
+
+    function normalizeReward(c){
+      const raw = safeStr(c && c.reward).trim();
+      const lower = raw.toLowerCase();
+      if (c && c.permanent === true) return CODE_LABELS.permanentCode;
+      if (!raw) return "";
+      if (raw === "\uC0C1\uC2DC \uCF54\uB4DC" || lower === "permanent code") return CODE_LABELS.permanentCode;
+      if (raw === "\uC77C\uBC18 \uCFE0\uD3F0" || lower === "general coupon") return CODE_LABELS.generalCoupon;
+      return raw;
+    }
+
     function setLineLabels(mode){
-      const txt = (mode === "since") ? "基準時間：" : "到期時間：";
+      const txt = (mode === "since") ? CODE_LABELS.referenceTime : CODE_LABELS.expiryTime;
       if (dom.aLineK) dom.aLineK.textContent = txt;
       if (dom.eLineK) dom.eLineK.textContent = txt;
       if (dom.uLineK) dom.uLineK.textContent = txt;
@@ -1917,7 +1942,7 @@
         empty.style.textAlign = "center";
         empty.style.color = "rgba(255,255,255,.75)";
         empty.style.padding = "10px 0 2px";
-        empty.textContent = "目前沒有有效代碼。";
+        empty.textContent = CODE_LABELS.noActive;
         dom.codesGrid.appendChild(empty);
         return;
       }
@@ -1926,21 +1951,21 @@
         const exp = parseExpiryMs(c);
         const diff = exp ? (exp - nowMs) : 0;
 
-        let tag = "有效";
-        let metaText = "UTC: " + (exp ? new Date(exp).toISOString().replace("T"," ").slice(0,16) : "—");
+        let tag = CODE_LABELS.active;
+        let metaText = "UTC: " + (exp ? new Date(exp).toISOString().replace("T"," ").slice(0,16) : "-");
         let pillClass = "pill";
 
         if (c.permanent === true) {
-          tag = "常駐";
-          metaText = "無到期時間";
+          tag = CODE_LABELS.permanent;
+          metaText = CODE_LABELS.noExpiry;
           pillClass = "pill permanent";
         } else if(diff <= 0) {
-          tag = "已過期";
+          tag = CODE_LABELS.expired;
         } else if(diff <= 2 * 86400 * 1000) {
-          tag = "即將到期";
+          tag = CODE_LABELS.expiringSoon;
         }
 
-        const reward = safeStr(c.reward).trim();
+        const reward = normalizeReward(c);
 
         const card = document.createElement("div");
         card.className = "codeCard";
@@ -1953,17 +1978,16 @@
               (reward ? ('<span class="pill">' + escapeHTML(reward) + '</span>') : '') +
             '</div>' +
           '</div>' +
-          '<button class="btnCopy" type="button">複製</button>';
+          '<button class="btnCopy" type="button">' + escapeHTML(CODE_LABELS.copy) + '</button>';
 
         card.querySelector("button").addEventListener("click", async function(){
           await copyText(c.code || "");
-          toast("已複製：" + (c.code || ""));
+          toast(CODE_LABELS.copied + (c.code || ""));
         });
 
         dom.codesGrid.appendChild(card);
       });
     }
-
     async function loadCoupons(){
       const url = DATA_URL + "?v=" + Date.now();
       const res = await fetch(url, { cache:"no-store" });

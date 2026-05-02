@@ -1902,8 +1902,33 @@
         .replace(/'/g,"&#39;");
     }
 
+    const CODE_LABELS = {
+      referenceTime: "기준 시각:",
+      expiryTime: "만료 시각:",
+      noActive: "현재 활성 코드가 없습니다.",
+      active: "활성",
+      permanent: "상시",
+      noExpiry: "만료 없음",
+      expired: "만료",
+      expiringSoon: "곧 만료",
+      permanentCode: "상시 코드",
+      generalCoupon: "일반 쿠폰",
+      copy: "복사",
+      copied: "복사됨: "
+    };
+
+    function normalizeReward(c){
+      const raw = safeStr(c && c.reward).trim();
+      const lower = raw.toLowerCase();
+      if (c && c.permanent === true) return CODE_LABELS.permanentCode;
+      if (!raw) return "";
+      if (raw === "상시 코드" || lower === "permanent code") return CODE_LABELS.permanentCode;
+      if (raw === "일반 쿠폰" || lower === "general coupon") return CODE_LABELS.generalCoupon;
+      return raw;
+    }
+
     function setLineLabels(mode){
-      const txt = (mode === "since") ? "기준 시각:" : "만료 시각:";
+      const txt = (mode === "since") ? CODE_LABELS.referenceTime : CODE_LABELS.expiryTime;
       if (dom.aLineK) dom.aLineK.textContent = txt;
       if (dom.eLineK) dom.eLineK.textContent = txt;
       if (dom.uLineK) dom.uLineK.textContent = txt;
@@ -1921,7 +1946,7 @@
         empty.style.textAlign = "center";
         empty.style.color = "rgba(255,255,255,.75)";
         empty.style.padding = "10px 0 2px";
-        empty.textContent = "현재 활성 코드가 없습니다.";
+        empty.textContent = CODE_LABELS.noActive;
         dom.codesGrid.appendChild(empty);
         return;
       }
@@ -1930,21 +1955,21 @@
         const exp = parseExpiryMs(c);
         const diff = exp ? (exp - nowMs) : 0;
 
-        let tag = "활성";
-        let metaText = "UTC: " + (exp ? new Date(exp).toISOString().replace("T"," ").slice(0,16) : "—");
+        let tag = CODE_LABELS.active;
+        let metaText = "UTC: " + (exp ? new Date(exp).toISOString().replace("T"," ").slice(0,16) : "-");
         let pillClass = "pill";
 
         if (c.permanent === true) {
-          tag = "상시";
-          metaText = "만료 없음";
+          tag = CODE_LABELS.permanent;
+          metaText = CODE_LABELS.noExpiry;
           pillClass = "pill permanent";
         } else if(diff <= 0) {
-          tag = "만료";
+          tag = CODE_LABELS.expired;
         } else if(diff <= 2 * 86400 * 1000) {
-          tag = "곧 만료";
+          tag = CODE_LABELS.expiringSoon;
         }
 
-        const reward = safeStr(c.reward).trim();
+        const reward = normalizeReward(c);
 
         const card = document.createElement("div");
         card.className = "codeCard";
@@ -1957,17 +1982,16 @@
               (reward ? ('<span class="pill">' + escapeHTML(reward) + '</span>') : '') +
             '</div>' +
           '</div>' +
-          '<button class="btnCopy" type="button">복사</button>';
+          '<button class="btnCopy" type="button">' + escapeHTML(CODE_LABELS.copy) + '</button>';
 
         card.querySelector("button").addEventListener("click", async function(){
           await copyText(c.code || "");
-          toast("복사됨: " + (c.code || ""));
+          toast(CODE_LABELS.copied + (c.code || ""));
         });
 
         dom.codesGrid.appendChild(card);
       });
     }
-
     async function loadCoupons(){
       const url = DATA_URL + "?v=" + Date.now();
       const res = await fetch(url, { cache:"no-store" });
