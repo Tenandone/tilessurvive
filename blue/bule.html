@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>주식회사 노마드텐 푸른방송 발주솔루션 제안</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    @page {
+      size: A4 landscape;
+      margin: 0;
+    }
+
+    :root {
+      --blue: #2563eb;
+      --blue-dark: #1d4ed8;
+      --blue-soft: #eff6ff;
+      --blue-line: #bfdbfe;
+      --green: #16a34a;
+      --green-soft: #dcfce7;
+      --orange: #ea580c;
+      --orange-soft: #ffedd5;
+      --red: #dc2626;
+      --red-soft: #fee2e2;
+      --gray-900: #111827;
+      --gray-800: #1f2937;
+      --gray-700: #374151;
+      --gray-600: #4b5563;
+      --gray-500: #6b7280;
+      --gray-300: #d1d5db;
+      --gray-200: #e5e7eb;
+      --gray-100: #f3f4f6;
+      --paper: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      background: #d9dee8;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", Arial, sans-serif;
+      color: var(--gray-900);
+    }
+
+    .slide {
+      width: 297mm;
+      height: 210mm;
+      margin: 0 auto 14px;
+      padding: 18mm 20mm 14mm;
+      background: var(--paper);
+      color: var(--gray-900);
+      position: relative;
+      page-break-after: always;
+      overflow: hidden;
+    }
+
+    h1, h2, h3, p, li, div, span {
+      word-break: keep-all;
+      overflow-wrap: break-word;
+    }
+
+    .nowrap,
+    .badge,
+    .label,
+    .footer span,
+    .big-card strong,
+    .big-card span,
+    .metric strong,
+    .metric span,
+    .problem .num,
+    .problem strong,
+    .step,
+    .closing h3 {
+      white-space: nowrap;
+    }
+
+    h1 {
+      margin: 0;
+      max-width: 250mm;
+      font-size: 48px;
+      line-height: 1.13;
+      letter-spacing: -0.055em;
+      font-weight: 950;
+      color: var(--gray-900);
+      text-wrap: balance;
+    }
+
+    h2 {
+      margin: 0;
+      max-width: 255mm;
+      font-size: 41px;
+      line-height: 1.16;
+      letter-spacing: -0.05em;
+      font-weight: 950;
+      color: var(--gray-900);
+      text-wrap: balance;
+    }
+
+    h3 {
+      margin: 0 0 8px;
+      font-size: 21px;
+      line-height: 1.28;
+      letter-spacing: -0.03em;
+      font-weight: 900;
+      color: var(--gray-900);
+      text-wrap: balance;
+    }
+
+    p {
+      margin: 0;
+      font-size: 18px;
+      line-height: 1.55;
+      color: var(--gray-600);
+    }
+
+    .lead {
+      margin-top: 24px;
+      max-width: 255mm;
+      font-size: 26px;
+      line-height: 1.42;
+      letter-spacing: -0.035em;
+      color: var(--gray-700);
+      font-weight: 750;
+    }
+
+    .sub {
+      margin-top: 20px;
+      max-width: 255mm;
+      font-size: 22px;
+      line-height: 1.52;
+      letter-spacing: -0.03em;
+      color: var(--gray-700);
+      font-weight: 650;
+    }
+
+    .brand {
+      font-size: 13px;
+      font-weight: 900;
+      letter-spacing: .12em;
+      color: var(--blue);
+      margin-bottom: 14px;
+      white-space: nowrap;
+    }
+
+    .footer {
+      position: absolute;
+      left: 20mm;
+      right: 20mm;
+      bottom: 9mm;
+      display: flex;
+      justify-content: space-between;
+      color: var(--gray-500);
+      font-size: 11px;
+      font-weight: 700;
+    }
+
+    .hero-grid {
+      height: calc(100% - 18mm);
+      display: grid;
+      grid-template-columns: 1.5fr .5fr;
+      gap: 28px;
+      align-items: center;
+    }
+
+    .hero-box {
+      border-radius: 26px;
+      padding: 26px;
+      background: #f8fafc;
+      border: 1px solid var(--gray-200);
+      box-shadow: none;
+    }
+
+    .hero-box-title {
+      font-size: 20px;
+      font-weight: 950;
+      margin-bottom: 14px;
+      color: var(--gray-900);
+      white-space: nowrap;
+    }
+
+    .hero-box p {
+      font-size: 17px;
+      line-height: 1.65;
+      color: var(--gray-700);
+      font-weight: 650;
+    }
+
+    .badges {
+      display: flex;
+      gap: 9px;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .badge {
+      padding: 9px 14px;
+      border-radius: 999px;
+      font-size: 14px;
+      font-weight: 850;
+      color: var(--blue-dark);
+      background: var(--blue-soft);
+      border: 1px solid var(--blue-line);
+    }
+
+    .big-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 32px;
+    }
+
+    .big-card {
+      min-height: 118px;
+      border-radius: 24px;
+      padding: 22px;
+      background: #f8fafc;
+      border: 1px solid var(--gray-200);
+      box-shadow: none;
+    }
+
+    .big-card strong {
+      display: block;
+      font-size: 38px;
+      line-height: 1;
+      letter-spacing: -0.06em;
+      margin-bottom: 12px;
+      color: var(--blue);
+    }
+
+    .big-card span {
+      display: block;
+      font-size: 14px;
+      line-height: 1.45;
+      color: var(--gray-700);
+      font-weight: 750;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 24px;
+      margin-top: 32px;
+      align-items: stretch;
+    }
+
+    .card {
+      border-radius: 24px;
+      padding: 24px;
+      background: #ffffff;
+      border: 1px solid var(--gray-200);
+      box-shadow: none;
+    }
+
+    .card.soft {
+      background: #f8fafc;
+    }
+
+    .card p {
+      font-size: 16px;
+      line-height: 1.55;
+      color: var(--gray-600);
+    }
+
+    .label {
+      display: inline-flex;
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 900;
+      margin-bottom: 14px;
+      background: #dbeafe;
+      color: var(--blue-dark);
+    }
+
+    .label.green {
+      background: var(--green-soft);
+      color: #15803d;
+    }
+
+    .label.orange {
+      background: var(--orange-soft);
+      color: #c2410c;
+    }
+
+    .label.red {
+      background: var(--red-soft);
+      color: #b91c1c;
+    }
+
+    .problem-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+      margin-top: 34px;
+    }
+
+    .problem {
+      min-height: 118px;
+      border-radius: 24px;
+      padding: 21px;
+      background: #f8fafc;
+      border: 1px solid var(--gray-200);
+    }
+
+    .problem .num {
+      color: var(--red);
+      font-size: 15px;
+      font-weight: 950;
+      margin-bottom: 12px;
+    }
+
+    .problem strong {
+      display: block;
+      font-size: 21px;
+      letter-spacing: -0.04em;
+      line-height: 1.25;
+      margin-bottom: 12px;
+      color: var(--gray-900);
+    }
+
+    .problem span {
+      display: block;
+      font-size: 14.5px;
+      line-height: 1.5;
+      color: var(--gray-600);
+      font-weight: 650;
+    }
+
+    .metric-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 18px;
+      margin-top: 34px;
+    }
+
+    .metric {
+      border-radius: 26px;
+      padding: 26px;
+      background: #f8fafc;
+      border: 1px solid var(--gray-200);
+      min-height: 158px;
+      box-shadow: none;
+    }
+
+    .metric strong {
+      display: block;
+      font-size: 44px;
+      line-height: 1;
+      letter-spacing: -0.07em;
+      color: var(--blue);
+      margin-bottom: 16px;
+    }
+
+    .metric span {
+      display: block;
+      font-size: 18px;
+      line-height: 1.45;
+      color: var(--gray-900);
+      font-weight: 850;
+      margin-bottom: 10px;
+    }
+
+    .metric p {
+      font-size: 15px;
+      line-height: 1.5;
+      color: var(--gray-600);
+      font-weight: 600;
+    }
+
+    .diagram {
+      margin-top: 34px;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 12px;
+    }
+
+    .step {
+      min-height: 98px;
+      border-radius: 22px;
+      background: var(--blue-soft);
+      border: 1px solid var(--blue-line);
+      color: #1e40af;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 10px;
+      font-size: 16px;
+      font-weight: 950;
+      line-height: 1.3;
+      letter-spacing: -0.03em;
+    }
+
+    .closing {
+      margin-top: 36px;
+      padding: 30px;
+      border-radius: 28px;
+      background: #f8fafc;
+      border: 1px solid var(--gray-200);
+      box-shadow: none;
+    }
+
+    .closing h3 {
+      font-size: 34px;
+      letter-spacing: -0.055em;
+      margin-bottom: 16px;
+      color: var(--gray-900);
+    }
+
+    .closing p {
+      font-size: 20px;
+      line-height: 1.65;
+      color: var(--gray-700);
+      font-weight: 650;
+    }
+
+    .accent-line {
+      width: 56px;
+      height: 5px;
+      border-radius: 999px;
+      background: var(--blue);
+      margin: 24px 0 0;
+    }
+    .cover-title {
+  max-width: none;
+  font-size: 40px;
+  line-height: 1.12;
+  letter-spacing: -0.065em;
+  white-space: nowrap;
+}
+
+    @media print {
+      body {
+        background: #ffffff;
+      }
+
+      .slide {
+        margin: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- 1. 표지 -->
+  <section class="slide">
+    <div class="hero-grid">
+      <div>
+        <div class="brand">주식회사 노마드텐</div>
+        <h1 class="cover-title">푸른방송 자재 발주·재고관리 운영 제안</h1>
+        <p class="lead">
+          자재팀 반복 업무를 줄이고, </br>푸른방송의 매출 활동 집중 시간을 확보합니다.
+        </p>
+        <div class="accent-line"></div>
+
+        <div class="badges">
+          <span class="badge">ERP형 운영 시스템</span>          
+          <span class="badge">자재 업무 표준화</span>
+          <span class="badge">반복 업무 절감</span>
+          <span class="badge">매출 활동 집중</span>
+        </div>
+
+        <div class="big-grid">
+          <div class="big-card">
+            <strong>1/6</strong>
+            <span>반복 업무 감소 목표</span>
+          </div>
+          <div class="big-card">
+            <strong>시범 운영</strong>
+            <span>현장 기반 운영 검증</span>
+          </div>
+          <div class="big-card">
+            <strong>ERP</strong>
+            <span>ERP 시스템 확장</span>
+          </div>
+        </div>
+      </div>
+
+      
+    </div>
+
+    <div class="footer">
+      <span>주식회사 노마드텐</span>
+      <span>푸른방송 브리핑 자료</span>
+    </div>
+  </section>
+
+  <!-- 2. 문제 정의 -->
+  <section class="slide">
+    <h2>자재 업무는 필요하지만, 핵심 과제는 매출 증대입니다</h2>
+    <p class="sub">
+      자재 매입과 재고 관리는 반드시 필요합니다. </br>하지만 푸른방송의 핵심 성장 과제는 매입 업무 자체가 아니라 고객 대응, 현장 운영, 신규 매출 창출입니다.
+    </p>
+
+    <div class="problem-grid">
+      <div class="problem">
+        <div class="num">문제 1</div>
+        <strong>요청 채널 분산</strong>
+        <span>카카오톡, 전화, 메일로 요청이 흩어집니다.</span>
+      </div>
+      <div class="problem">
+        <div class="num">문제 2</div>
+        <strong>품목 기준 불일치</strong>
+        <span>담당자마다 품명과 규격 표현이 달라집니다.</span>
+      </div>
+      <div class="problem">
+        <div class="num">문제 3</div>
+        <strong>재고 확인 지연</strong>
+        <span>현재고 확인에 문의와 재확인이 반복됩니다.</span>
+      </div>
+      <div class="problem">
+        <div class="num">문제 4</div>
+        <strong>불출 이력 추적</strong>
+        <span>누가 어떤 자재를 가져갔는지 추적이 어렵습니다.</span>
+      </div>
+    </div>
+
+    <div class="footer">
+      <span>주식회사 노마드텐</span>
+      <span>1</span>
+    </div>
+  </section>
+
+  <!-- 3. 해결 방향 -->
+  <section class="slide">
+    <h2>자재 요청부터 불출 이력까지 하나의 흐름으로 연결합니다</h2>
+    <p class="sub">
+      흩어진 요청과 확인 업무를 시스템 안에서 표준화하고, 자재 데이터가 누적되는 구조로 전환합니다.
+    </p>
+
+    <div class="diagram">
+      <div class="step">요청 표준화</div>
+      <div class="step">주문 이력 관리</div>
+      <div class="step">현재고 확인</div>
+      <div class="step">불출 이력 기록</div>
+      <div class="step">문서 체계화</div>
+    </div>
+
+    <div class="two-col">
+      <div class="card soft">
+        <span class="label orange">기존 방식</span>
+        <h3>사람이 다시 확인하는 구조</h3>
+        <p>요청, 품목명, 재고, 불출 기록을 담당자가 반복적으로 확인하고 정리합니다.</p>
+      </div>
+      <div class="card soft">
+        <span class="label green">개선 방향</span>
+        <h3>시스템이 기준을 잡는 구조</h3>
+        <p>품목과 이력이 시스템 기준으로 정리되어, 담당자 변경에도 업무 기준을 유지할 수 있습니다.</p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <span>주식회사 노마드텐</span>
+      <span>2</span>
+    </div>
+  </section>
+
+  <!-- 4. 경제효과 -->
+  <section class="slide">
+    <h2>반복 업무시간 절감이 핵심 경제효과입니다</h2>
+    <p class="sub">
+      절감된 시간은 단순한 비용 절감이 아니라, 고객 대응과 매출 활동에 다시 투입될 수 있는 시간입니다.
+    </p>
+
+    <div class="metric-grid">
+      <div class="metric">
+        <strong>최대 50%</strong>
+        <span>자재 업무 시간 절감 목표</span>
+        <p>요청 확인, 품목 재확인, 재고 확인 시간을 줄입니다.</p>
+      </div>
+      <div class="metric">
+        <strong>월 30h</strong>
+        <span>반복 업무 절감 기대</span>
+        <p>월 50건 기준 최대 30시간 수준의 절감 효과를 목표로 합니다.</p>
+      </div>
+      <div class="metric">
+        <strong>1/6</strong>
+        <span>자재팀 부담 축소 목표</span>
+        <p>반복 확인과 정리 업무를 시스템 흐름으로 대체합니다.</p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <span>주식회사 노마드텐</span>
+      <span>3</span>
+    </div>
+  </section>
+
+  
+  <section class="slide">
+    <h2>푸른방송과 노마드텐이 함께 검증하고 성장하는 구조입니다</h2>
+    <p class="sub">
+      단순 무상 제공이 아니라, 실제 업무 데이터를 기반으로 시스템을 검증하고 고도화하는 공동 운영입니다.
+    </p>
+
+    <div class="two-col">
+      <div class="card">
+        <span class="label green">푸른방송</span>
+        <h3>도입비용 부담 없이 효율 검증</h3>
+        <p>자재 요청, 재고 확인, 불출 이력, 문서 확인 기능을 실제 업무에 적용하며 효율화를 검증합니다.</p>
+      </div>
+
+      <div class="card">
+        <span class="label orange">주식회사 노마드텐</span>
+        <h3>운영 데이터·개선 경험 확보</h3>
+        <p>현장 오류, 업무 흐름, 사용 피드백을 바탕으로 ERP형 운영 시스템의 완성도를 높입니다.</p>
+      </div>
+    </div>
+
+    <div class="two-col">
+      <div class="card soft">
+        <h3>푸른방송이 얻는 것</h3>
+        <p>업무 효율화, 반복 업무 절감, 데이터 기반 자재 관리, 담당자 변경 리스크 감소.</p>
+      </div>
+      <div class="card soft">
+        <h3>노마드텐이 얻는 것</h3>
+        <p>실사용 데이터, 오류 개선 경험, 운영 검증 사례, 시스템 고도화 기반.</p>
+      </div>
+    </div>
+
+    <div class="footer">
+      <span>주식회사 노마드텐</span>
+      <span>4</span>
+    </div>
+  </section>
+
+  <!-- 6. 마무리 -->
+  <section class="slide">
+    <h2>與民同樂</h2>
+
+    <div class="closing">
+      <h3>함께 성장하고, 성과와 이익을 나누는 운영 철학</h3>
+      <p>
+        與民同樂은 본래 백성과 즐거움을 함께한다는 뜻입니다.</br>
+저는 이 말을 오늘날 기업 운영 관점에서, 함께 성장하고 성과와 이익을 나누는 철학으로 해석하고 싶습니다.
+      </p>
+      
+      <p style="margin-top: 18px;">
+        노마드텐은 단순한 발주 시스템을 넘어, </br>거래처와 운영사가 함께 성장할 수 있는 효율적인 자재 발주·재고관리 시스템을 지향합니다.
+      </p>
+    </div>
+    <p style="margin-top: 18px; text-align: center; display: flex; align-items: center; justify-content: center; min-height: 32px;">
+  주식회사 노마드텐 안태현
+</p>
+
+    <div class="footer">
+      <span>주식회사 노마드텐</span>
+      <span>END</span>
+    </div>
+  </section>
+
+</body>
+</html>
