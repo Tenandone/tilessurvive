@@ -1,0 +1,822 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>개인 토지 법인 이전 3가지 구조 비교</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #0f172a;
+      color: #111827;
+      font-family: "Pretendard", "Noto Sans KR", Arial, sans-serif;
+      line-height: 1.65;
+    }
+
+    .deck {
+      width: 100%;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
+    .slide {
+      width: min(1120px, 100%);
+      min-height: 680px;
+      margin: 0 auto 40px;
+      padding: 56px 64px;
+      background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%);
+      border-radius: 28px;
+      box-shadow: 0 24px 80px rgba(0, 0, 0, 0.28);
+      page-break-after: always;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .slide::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 10px;
+      background: linear-gradient(90deg, #1e3a8a, #2563eb, #38bdf8);
+    }
+
+    .kicker {
+      display: inline-block;
+      padding: 7px 14px;
+      border-radius: 999px;
+      background: #e0f2fe;
+      color: #0369a1;
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+
+    h1 {
+      margin: 0 0 18px;
+      font-size: 46px;
+      line-height: 1.18;
+      letter-spacing: -1.2px;
+      color: #0f172a;
+    }
+
+    h2 {
+      margin: 0 0 18px;
+      font-size: 34px;
+      line-height: 1.25;
+      letter-spacing: -0.8px;
+      color: #0f172a;
+    }
+
+    h3 {
+      margin: 26px 0 10px;
+      font-size: 22px;
+      color: #1e3a8a;
+    }
+
+    p {
+      margin: 0 0 16px;
+      font-size: 20px;
+      color: #334155;
+    }
+
+    .lead {
+      font-size: 24px;
+      color: #1e293b;
+      font-weight: 600;
+      margin-top: 18px;
+    }
+
+    .small {
+      font-size: 15px;
+      color: #64748b;
+    }
+
+    .muted {
+      color: #64748b;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 28px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 18px;
+      margin-top: 22px;
+    }
+
+    .card {
+      padding: 24px;
+      background: #ffffff;
+      border: 1px solid #e2e8f0;
+      border-radius: 22px;
+      box-shadow: 0 10px 28px rgba(15, 23, 42, 0.08);
+    }
+
+    .card strong {
+      display: block;
+      margin-bottom: 10px;
+      color: #0f172a;
+      font-size: 22px;
+    }
+
+    .card p {
+      font-size: 17px;
+      margin-bottom: 0;
+    }
+
+    .tag {
+      display: inline-block;
+      margin-bottom: 12px;
+      padding: 5px 11px;
+      border-radius: 999px;
+      background: #eef2ff;
+      color: #3730a3;
+      font-size: 13px;
+      font-weight: 800;
+    }
+
+    .flow {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 14px;
+      margin: 34px 0 26px;
+    }
+
+    .box {
+      flex: 1;
+      min-height: 110px;
+      padding: 22px 18px;
+      border-radius: 20px;
+      background: #eff6ff;
+      border: 1px solid #bfdbfe;
+      text-align: center;
+      font-size: 19px;
+      font-weight: 700;
+      color: #1e3a8a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .arrow {
+      font-size: 28px;
+      color: #2563eb;
+      font-weight: 900;
+    }
+
+    ul {
+      margin: 14px 0 0 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    li {
+      position: relative;
+      padding-left: 20px;
+      margin-bottom: 10px;
+      font-size: 18px;
+      color: #334155;
+    }
+
+    li::before {
+      content: "•";
+      position: absolute;
+      left: 0;
+      top: 0;
+      color: #2563eb;
+      font-weight: 900;
+    }
+
+    .compare {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 24px;
+      overflow: hidden;
+      border-radius: 18px;
+      box-shadow: 0 10px 28px rgba(15, 23, 42, 0.08);
+      background: #ffffff;
+    }
+
+    .compare th {
+      background: #1e3a8a;
+      color: #ffffff;
+      padding: 16px 14px;
+      font-size: 17px;
+      text-align: left;
+    }
+
+    .compare td {
+      border-bottom: 1px solid #e2e8f0;
+      padding: 15px 14px;
+      font-size: 16px;
+      color: #334155;
+      vertical-align: top;
+    }
+
+    .compare tr:last-child td {
+      border-bottom: none;
+    }
+
+    .highlight {
+      padding: 22px 26px;
+      border-radius: 22px;
+      background: #ecfdf5;
+      border: 1px solid #a7f3d0;
+      margin-top: 24px;
+    }
+
+    .highlight p {
+      color: #065f46;
+      font-weight: 700;
+      margin-bottom: 0;
+    }
+
+    .warning {
+      padding: 22px 26px;
+      border-radius: 22px;
+      background: #fff7ed;
+      border: 1px solid #fed7aa;
+      margin-top: 24px;
+    }
+
+    .warning p {
+      color: #9a3412;
+      font-weight: 700;
+      margin-bottom: 0;
+    }
+
+    .footer {
+      position: absolute;
+      left: 64px;
+      right: 64px;
+      bottom: 28px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #94a3b8;
+      font-size: 14px;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .big-number {
+      font-size: 72px;
+      font-weight: 900;
+      color: #1e3a8a;
+      letter-spacing: -2px;
+    }
+
+    @media print {
+      body {
+        background: #ffffff;
+      }
+
+      .deck {
+        padding: 0;
+      }
+
+      .slide {
+        width: 100%;
+        min-height: 100vh;
+        margin: 0;
+        border-radius: 0;
+        box-shadow: none;
+      }
+    }
+
+    @media (max-width: 860px) {
+      .slide {
+        padding: 42px 26px;
+      }
+
+      h1 {
+        font-size: 34px;
+      }
+
+      h2 {
+        font-size: 28px;
+      }
+
+      .grid,
+      .grid-2 {
+        grid-template-columns: 1fr;
+      }
+
+      .flow {
+        flex-direction: column;
+      }
+
+      .arrow {
+        transform: rotate(90deg);
+      }
+
+      .footer {
+        position: static;
+        margin-top: 40px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="deck">
+
+    <!-- Slide 1 -->
+    <section class="slide">
+      <span class="kicker">부동산 자산 법인 이전 검토</span>
+      <h1>개인 보유 토지를 법인으로 이전하는 3가지 구조</h1>
+      <p class="lead">
+        개인 토지를 법인으로 넘기는 방식은 대가를 무엇으로 받는지에 따라
+        지분형, 현금형, 부채상환형으로 나누어 검토할 수 있습니다.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <span class="tag">1안</span>
+          <strong>지분 수령 버전</strong>
+          <p>토지를 법인에 이전하고, 그 대가로 법인 지분을 받는 구조입니다.</p>
+        </div>
+
+        <div class="card">
+          <span class="tag">2안</span>
+          <strong>현금 지급 버전</strong>
+          <p>법인이 개인에게 매매대금을 지급하고 토지를 취득하는 구조입니다.</p>
+        </div>
+
+        <div class="card">
+          <span class="tag">3안</span>
+          <strong>부채 상환 버전</strong>
+          <p>법인이 개인에게 갚아야 할 채무를 토지 이전과 연계해 정리하는 구조입니다.</p>
+        </div>
+      </div>
+
+      <div class="warning">
+        <p>
+          특수관계인 거래라면 명칭보다 중요한 것은 시가 평가, 실제 대가, 세금 처리, 주주 간 이익 이전 여부입니다.
+        </p>
+      </div>
+
+      <div class="footer">
+        <span>NOMADTEN</span>
+        <span>01</span>
+      </div>
+    </section>
+
+    <!-- Slide 2 -->
+    <section class="slide">
+      <span class="kicker">전체 구조</span>
+      <h2>핵심은 “토지 이전 대가”를 어떻게 설계하느냐입니다</h2>
+
+      <div class="flow">
+        <div class="box">개인 보유 토지</div>
+        <div class="arrow">→</div>
+        <div class="box">법인으로 이전</div>
+        <div class="arrow">→</div>
+        <div class="box">대가 수령 방식 결정</div>
+      </div>
+
+      <div class="grid">
+        <div class="card">
+          <strong>지분</strong>
+          <p>법인 주식 또는 지분을 받는 방식입니다. 현물출자 성격이 강합니다.</p>
+        </div>
+
+        <div class="card">
+          <strong>현금</strong>
+          <p>법인이 매매대금을 지급하는 방식입니다. 일반 매매 구조에 가깝습니다.</p>
+        </div>
+
+        <div class="card">
+          <strong>부채 상환</strong>
+          <p>법인이 개인에게 갚아야 할 채무를 토지 이전으로 정리하는 방식입니다.</p>
+        </div>
+      </div>
+
+      <div class="highlight">
+        <p>
+          결론적으로 3가지 안 모두 가능성은 있으나, 세무상 안전성은 “시가대로 거래했는지”가 핵심입니다.
+        </p>
+      </div>
+
+      <p class="small" style="margin-top: 18px;">
+        개인과 법인이 특수관계인이라면 저가 양수·고가 양도, 부당행위계산부인, 증여의제 검토가 필요합니다.
+      </p>
+
+      <div class="footer">
+        <span>NOMADTEN</span>
+        <span>02</span>
+      </div>
+    </section>
+
+    <!-- Slide 3 -->
+    <section class="slide">
+      <span class="kicker">1안</span>
+      <h2>개인 토지 법인 이전 — 지분 수령 버전</h2>
+      <p>
+        개인이 보유한 토지를 법인에 이전하고, 그 대가로 법인 지분 또는 주식을 받는 방식입니다.
+        실무적으로는 현물출자 구조에 가깝습니다.
+      </p>
+
+      <div class="flow">
+        <div class="box">개인 토지</div>
+        <div class="arrow">→</div>
+        <div class="box">법인 취득</div>
+        <div class="arrow">→</div>
+        <div class="box">개인에게 지분 지급</div>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <strong>장점</strong>
+          <ul>
+            <li>법인의 자산 규모와 신용도를 키울 수 있음</li>
+            <li>현금 유출 없이 법인이 토지를 확보할 수 있음</li>
+            <li>개인은 법인 지분을 통해 향후 성장 이익을 공유 가능</li>
+            <li>장기적으로 가족법인 또는 자산법인 구조 설계 가능</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <strong>주의점</strong>
+          <ul>
+            <li>토지 가치 평가가 매우 중요함</li>
+            <li>지분 가치와 토지 시가가 맞아야 함</li>
+            <li>개인에게 양도소득세 이슈 발생 가능</li>
+            <li>법인에는 취득세 및 등기비용 발생 가능</li>
+            <li>특수관계인이라면 증여의제 검토 필요</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="warning">
+        <p>
+          이 구조는 “현금이 없는 법인”이 토지를 확보하기에는 좋지만, 감정평가와 세무 검토 없이 진행하면 위험합니다.
+        </p>
+      </div>
+
+      <div class="footer">
+        <span>NOMADTEN</span>
+        <span>03</span>
+      </div>
+    </section>
+
+    <!-- Slide 4 -->
+    <section class="slide">
+      <span class="kicker">2안</span>
+      <h2>개인 토지 법인 이전 — 현금 지급 버전</h2>
+      <p>
+        법인이 개인에게 토지 매매대금을 지급하고, 개인은 법인에 토지를 양도하는 방식입니다.
+        가장 직관적인 매매 구조입니다.
+      </p>
+
+      <div class="flow">
+        <div class="box">개인 토지</div>
+        <div class="arrow">→</div>
+        <div class="box">법인 매수</div>
+        <div class="arrow">→</div>
+        <div class="box">개인에게 현금 지급</div>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <strong>장점</strong>
+          <ul>
+            <li>거래 구조가 단순하고 이해하기 쉬움</li>
+            <li>계약서와 대금 흐름이 명확함</li>
+            <li>지분 변동 없이 법인이 토지를 확보 가능</li>
+            <li>법인 장부에 취득가액 반영이 비교적 명확함</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <strong>주의점</strong>
+          <ul>
+            <li>법인에 충분한 현금 또는 자금 조달 능력이 필요함</li>
+            <li>개인은 양도소득세 부담 검토 필요</li>
+            <li>법인은 취득세와 등기비용 부담 발생 가능</li>
+            <li>특수관계인 거래라면 시가보다 낮거나 높은 금액 모두 위험</li>
+            <li>대금 지급 증빙이 명확해야 함</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="highlight">
+        <p>
+          가장 깔끔한 방식은 시가에 맞춘 매매입니다. 다만 법인 자금 여력이 충분해야 합니다.
+        </p>
+      </div>
+
+      <div class="footer">
+        <span>NOMADTEN</span>
+        <span>04</span>
+      </div>
+    </section>
+
+    <!-- Slide 5 -->
+    <section class="slide">
+      <span class="kicker">3안</span>
+      <h2>개인 토지 법인 이전 — 부채 상환 버전</h2>
+      <p>
+        법인이 개인에게 갚아야 할 채무가 있는 경우, 토지 이전 또는 대금 상계 방식으로
+        그 채무를 정리하는 구조입니다. 기존 대표이사 차입금 등이 있는 경우 검토할 수 있습니다.
+      </p>
+
+      <div class="flow">
+        <div class="box">법인의 개인 채무</div>
+        <div class="arrow">→</div>
+        <div class="box">토지 이전과 연계</div>
+        <div class="arrow">→</div>
+        <div class="box">채무 상환 또는 상계</div>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <strong>장점</strong>
+          <ul>
+            <li>기존 대표이사 차입금 등을 정리할 수 있음</li>
+            <li>법인과 개인 간 채무 관계를 명확히 정리 가능</li>
+            <li>현금 지급 부담을 일부 줄일 수 있음</li>
+            <li>기존 자금 흐름과 연계해 설명 가능</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <strong>주의점</strong>
+          <ul>
+            <li>먼저 실제 채무가 법인 장부에 존재해야 함</li>
+            <li>채무 금액과 토지 시가의 대응 관계가 명확해야 함</li>
+            <li>상계 또는 대물변제 계약 구조를 분명히 해야 함</li>
+            <li>양도소득세, 취득세, 법인세 검토가 필요함</li>
+            <li>특수관계 거래라면 증빙이 더 중요함</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="warning">
+        <p>
+          부채 상환 버전은 기존 채무가 없으면 대물변제로 보기 어렵습니다. 장부상 대표이사 차입금 등 근거가 먼저 필요합니다.
+        </p>
+      </div>
+
+      <div class="footer">
+        <span>NOMADTEN</span>
+        <span>05</span>
+      </div>
+    </section>
+
+    <!-- Slide 6 -->
+    <section class="slide">
+      <span class="kicker">비교표</span>
+      <h2>3가지 안 비교</h2>
+
+      <table class="compare">
+        <thead>
+          <tr>
+            <th>구분</th>
+            <th>1안 지분 수령</th>
+            <th>2안 현금 지급</th>
+            <th>3안 부채 상환</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>거래 성격</td>
+            <td>현물출자 성격</td>
+            <td>매매 성격</td>
+            <td>대물변제 또는 상계 성격</td>
+          </tr>
+          <tr>
+            <td>개인이 받는 대가</td>
+            <td>법인 지분 또는 주식</td>
+            <td>현금</td>
+            <td>채무 상환 효과</td>
+          </tr>
+          <tr>
+            <td>법인 현금 부담</td>
+            <td>낮음</td>
+            <td>높음</td>
+            <td>중간 또는 낮음</td>
+          </tr>
+          <tr>
+            <td>구조 단순성</td>
+            <td>중간</td>
+            <td>가장 단순</td>
+            <td>기존 채무 증빙 필요</td>
+          </tr>
+          <tr>
+            <td>핵심 검토</td>
+            <td>토지 가치와 지분 가치</td>
+            <td>시가 매매 여부</td>
+            <td>채무 존재와 상계 근거</td>
+          </tr>
+          <tr>
+            <td>주요 세무 이슈</td>
+            <td>양도세, 취득세, 증여의제</td>
+            <td>양도세, 취득세, 부당행위</td>
+            <td>양도세, 취득세, 채무 상환 처리</td>
+          </tr>
+          <tr>
+            <td>적합한 상황</td>
+            <td>법인 자산화와 지분 구조 설계</td>
+            <td>법인 자금 여력이 충분할 때</td>
+            <td>대표이사 차입금 등 기존 채무가 있을 때</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="footer">
+        <span>NOMADTEN</span>
+        <span>06</span>
+      </div>
+    </section>
+
+    <!-- Slide 7 -->
+    <section class="slide">
+      <span class="kicker">세무 리스크</span>
+      <h2>특수관계인 거래에서는 “시가”가 핵심입니다</h2>
+      <p>
+        개인과 법인이 특수관계인이라면, 계약서상 명칭보다 실제 경제적 이익이 누구에게 이전되는지가 중요합니다.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <strong>저가 이전</strong>
+          <p>개인이 법인에 토지를 시가보다 낮게 넘기면 법인 또는 법인 주주에게 이익이 이전된 것으로 볼 수 있습니다.</p>
+        </div>
+
+        <div class="card">
+          <strong>고가 이전</strong>
+          <p>법인이 개인에게 시가보다 높은 대가를 지급하면 법인 자금이 개인에게 과다 이전된 것으로 볼 수 있습니다.</p>
+        </div>
+
+        <div class="card">
+          <strong>증빙 부족</strong>
+          <p>감정평가, 계약서, 대금 흐름, 이사회 의사록이 부족하면 거래의 정당성을 설명하기 어려워질 수 있습니다.</p>
+        </div>
+      </div>
+
+      <div class="warning">
+        <p>
+          특수관계 거래는 시가보다 낮거나 높은 금액 모두 세무 리스크가 있습니다. 감정평가 또는 객관적 시가 산정이 필요합니다.
+        </p>
+      </div>
+
+      <p class="small" style="margin-top: 18px;">
+        참고: 상속세 및 증여세법상 저가 양수·고가 양도에 따른 이익의 증여 규정, 법인세법상 부당행위계산부인 검토가 필요할 수 있습니다.
+      </p>
+
+      <div class="footer">
+        <span>NOMADTEN</span>
+        <span>07</span>
+      </div>
+    </section>
+
+    <!-- Slide 8 -->
+    <section class="slide">
+      <span class="kicker">실무 준비자료</span>
+      <h2>진행 전 반드시 준비해야 할 자료</h2>
+
+      <div class="grid-2">
+        <div class="card">
+          <strong>토지 관련 자료</strong>
+          <ul>
+            <li>등기부등본</li>
+            <li>토지대장 또는 임야대장</li>
+            <li>토지이용계획확인원</li>
+            <li>공시지가 자료</li>
+            <li>감정평가서 또는 시가 산정 자료</li>
+            <li>근저당, 압류, 지상권 등 권리관계</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <strong>거래 구조 자료</strong>
+          <ul>
+            <li>매도인 개인 정보</li>
+            <li>매수 법인 정보</li>
+            <li>법인 등기부등본</li>
+            <li>사업자등록증</li>
+            <li>법인 인감증명서</li>
+            <li>거래 예정 금액</li>
+            <li>지분 지급 여부</li>
+            <li>현금 지급 여부</li>
+            <li>대표이사 차입금 등 채무 장부</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="highlight">
+        <p>
+          세무사에게는 “토지 시가, 대가 지급 방식, 특수관계 여부, 지분 구조, 기존 채무 여부”를 한 번에 전달해야 합니다.
+        </p>
+      </div>
+
+      <div class="footer">
+        <span>NOMADTEN</span>
+        <span>08</span>
+      </div>
+    </section>
+
+    <!-- Slide 9 -->
+    <section class="slide">
+      <span class="kicker">추천 검토 순서</span>
+      <h2>바로 계약서부터 쓰지 말고, 평가와 세무 검토부터 진행해야 합니다</h2>
+
+      <div class="grid">
+        <div class="card">
+          <div class="big-number">1</div>
+          <strong>토지 시가 산정</strong>
+          <p>공시지가, 실거래가, 감정평가 등을 통해 기준 금액을 먼저 정합니다.</p>
+        </div>
+
+        <div class="card">
+          <div class="big-number">2</div>
+          <strong>대가 방식 선택</strong>
+          <p>지분, 현금, 부채 상환 중 어떤 방식이 가장 적합한지 정합니다.</p>
+        </div>
+
+        <div class="card">
+          <div class="big-number">3</div>
+          <strong>세무·법무 검토</strong>
+          <p>양도세, 취득세, 증여의제, 부당행위계산부인, 등기 절차를 확인합니다.</p>
+        </div>
+      </div>
+
+      <div class="grid-2">
+        <div class="card">
+          <strong>세무사에게 확인할 질문</strong>
+          <ul>
+            <li>이 구조가 현물출자인지, 매매인지, 대물변제인지</li>
+            <li>개인 양도소득세가 어느 정도인지</li>
+            <li>법인 취득세와 비용이 어느 정도인지</li>
+            <li>특수관계 거래로 인한 증여의제 리스크가 있는지</li>
+          </ul>
+        </div>
+
+        <div class="card">
+          <strong>법무사에게 확인할 질문</strong>
+          <ul>
+            <li>소유권 이전등기에 필요한 서류</li>
+            <li>근저당 또는 압류 말소 필요 여부</li>
+            <li>현물출자 또는 대물변제 계약서 작성 방식</li>
+            <li>법인 이사회 또는 주주총회 의사록 필요 여부</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer">
+        <span>NOMADTEN</span>
+        <span>09</span>
+      </div>
+    </section>
+
+    <!-- Slide 10 -->
+    <section class="slide center">
+      <span class="kicker">최종 정리</span>
+      <h1>가장 안전한 기준은<br />“시가에 맞춘 명확한 거래 구조”입니다</h1>
+
+      <p class="lead">
+        지분으로 받을지, 현금으로 받을지, 부채 상환으로 처리할지는
+        법인의 자금 상황과 지분 구조, 기존 채무 여부에 따라 달라집니다.
+      </p>
+
+      <div class="highlight" style="text-align: left;">
+        <p>
+          1안은 법인 자산화와 지분 구조 설계에 유리하고,<br />
+          2안은 거래가 가장 단순하며,<br />
+          3안은 기존 대표이사 차입금 등 채무가 있을 때 검토할 수 있습니다.
+        </p>
+      </div>
+
+      <div class="warning" style="text-align: left;">
+        <p>
+          단, 특수관계인 거래라면 반드시 감정평가, 세무 검토, 법무 검토를 거친 뒤 진행하는 것이 안전합니다.
+        </p>
+      </div>
+
+      <p class="small" style="margin-top: 26px;">
+        본 자료는 구조 검토용 초안이며, 실제 실행 전 세무사·법무사·감정평가사의 개별 검토가 필요합니다.
+      </p>
+
+      <div class="footer">
+        <span>NOMADTEN</span>
+        <span>10</span>
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>

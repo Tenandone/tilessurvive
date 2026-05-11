@@ -1,0 +1,835 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>달서맥주 홍콩나잇 콘셉트 제안서</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at top left, rgba(255, 68, 68, 0.28), transparent 34%),
+        radial-gradient(circle at bottom right, rgba(255, 188, 84, 0.22), transparent 32%),
+        linear-gradient(135deg, #0b0b10 0%, #171018 45%, #070707 100%);
+      font-family: -apple-system, BlinkMacSystemFont, "Pretendard", "Noto Sans KR", Arial, sans-serif;
+      color: #111827;
+      line-height: 1.6;
+    }
+
+    .deck {
+      width: 100%;
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 42px 22px;
+    }
+
+    .slide {
+      min-height: 680px;
+      margin-bottom: 36px;
+      padding: 58px 64px;
+      border-radius: 30px;
+      background:
+        linear-gradient(180deg, rgba(255,255,255,0.98), rgba(255,247,237,0.96));
+      border: 1px solid rgba(255,255,255,0.7);
+      box-shadow: 0 28px 90px rgba(0,0,0,0.36);
+      page-break-after: always;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .slide.dark {
+      background:
+        radial-gradient(circle at top right, rgba(255, 56, 56, 0.26), transparent 34%),
+        radial-gradient(circle at bottom left, rgba(255, 196, 87, 0.18), transparent 38%),
+        linear-gradient(135deg, #100b0b 0%, #1d1115 48%, #070707 100%);
+      color: #fff;
+      border: 1px solid rgba(255,255,255,0.12);
+    }
+
+    .slide::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 10px;
+      background: linear-gradient(90deg, #ff3838, #ff9f43, #ffd166);
+    }
+
+    h1, h2, h3, p {
+      position: relative;
+      z-index: 1;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 52px;
+      line-height: 1.14;
+      letter-spacing: -1.8px;
+      color: #111827;
+    }
+
+    .dark h1,
+    .dark h2,
+    .dark h3 {
+      color: #fff;
+    }
+
+    h2 {
+      margin: 0 0 26px;
+      font-size: 36px;
+      line-height: 1.25;
+      letter-spacing: -1px;
+      color: #111827;
+    }
+
+    h3 {
+      margin: 0 0 12px;
+      font-size: 22px;
+      color: #991b1b;
+    }
+
+    p {
+      margin: 0 0 16px;
+      font-size: 20px;
+      color: #374151;
+    }
+
+    .dark p {
+      color: rgba(255,255,255,0.78);
+    }
+
+    .lead {
+      margin-top: 24px;
+      font-size: 25px;
+      font-weight: 800;
+      color: #1f2937;
+    }
+
+    .dark .lead {
+      color: rgba(255,255,255,0.9);
+    }
+
+    .sub {
+      margin-top: 18px;
+      font-size: 18px;
+      color: #6b7280;
+    }
+
+    .dark .sub {
+      color: rgba(255,255,255,0.55);
+    }
+
+    .neon-title {
+      display: inline-block;
+      margin-bottom: 20px;
+      padding: 8px 16px;
+      border-radius: 999px;
+      background: rgba(255, 56, 56, 0.12);
+      border: 1px solid rgba(255, 56, 56, 0.24);
+      color: #b91c1c;
+      font-size: 14px;
+      font-weight: 900;
+      letter-spacing: 0.4px;
+    }
+
+    .dark .neon-title {
+      background: rgba(255, 210, 138, 0.12);
+      border: 1px solid rgba(255, 210, 138, 0.25);
+      color: #ffd28a;
+    }
+
+    .grid {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+      margin-top: 28px;
+    }
+
+    .grid.two {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .card {
+      padding: 24px;
+      border-radius: 22px;
+      background: rgba(255,255,255,0.78);
+      border: 1px solid rgba(229,231,235,0.9);
+      box-shadow: 0 12px 30px rgba(17,24,39,0.08);
+    }
+
+    .dark .card {
+      background: rgba(255,255,255,0.075);
+      border: 1px solid rgba(255,255,255,0.13);
+      box-shadow: 0 16px 44px rgba(0,0,0,0.24);
+    }
+
+    .card strong {
+      display: block;
+      margin-bottom: 10px;
+      font-size: 21px;
+      color: #111827;
+    }
+
+    .dark .card strong {
+      color: #fff;
+    }
+
+    .card p {
+      font-size: 17px;
+      color: #4b5563;
+      margin: 0;
+    }
+
+    .dark .card p {
+      color: rgba(255,255,255,0.68);
+    }
+
+    ul {
+      position: relative;
+      z-index: 1;
+      margin: 0;
+      padding-left: 22px;
+    }
+
+    li {
+      margin-bottom: 12px;
+      font-size: 19px;
+      color: #374151;
+    }
+
+    .dark li {
+      color: rgba(255,255,255,0.78);
+    }
+
+    .highlight {
+      position: relative;
+      z-index: 1;
+      margin-top: 30px;
+      padding: 24px 28px;
+      border-radius: 22px;
+      background: #fff7ed;
+      border: 1px solid #fed7aa;
+      color: #9a3412;
+      font-size: 19px;
+      font-weight: 800;
+    }
+
+    .dark .highlight {
+      background: rgba(255, 159, 67, 0.13);
+      border: 1px solid rgba(255, 159, 67, 0.28);
+      color: #ffd28a;
+    }
+
+    table {
+      position: relative;
+      z-index: 1;
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 24px;
+      background: #fff;
+      border-radius: 18px;
+      overflow: hidden;
+      box-shadow: 0 12px 30px rgba(17,24,39,0.08);
+    }
+
+    th {
+      padding: 15px 16px;
+      background: #111827;
+      color: #fff;
+      text-align: left;
+      font-size: 17px;
+    }
+
+    td {
+      padding: 15px 16px;
+      border-bottom: 1px solid #e5e7eb;
+      font-size: 17px;
+      color: #374151;
+      vertical-align: top;
+    }
+
+    tr:last-child td {
+      border-bottom: 0;
+    }
+
+    .dark table {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+    }
+
+    .dark th {
+      background: rgba(255,255,255,0.12);
+    }
+
+    .dark td {
+      border-bottom: 1px solid rgba(255,255,255,0.1);
+      color: rgba(255,255,255,0.76);
+    }
+
+    .big-number {
+      font-size: 54px;
+      font-weight: 950;
+      letter-spacing: -2px;
+      color: #dc2626;
+      line-height: 1;
+      margin-bottom: 12px;
+    }
+
+    .dark .big-number {
+      color: #ffb347;
+    }
+
+    .footer {
+      position: absolute;
+      left: 64px;
+      right: 64px;
+      bottom: 30px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      color: #9ca3af;
+      font-size: 14px;
+      z-index: 1;
+    }
+
+    .dark .footer {
+      color: rgba(255,255,255,0.4);
+    }
+
+    .hk-bg {
+      position: absolute;
+      right: -70px;
+      bottom: -80px;
+      font-size: 230px;
+      opacity: 0.06;
+      font-weight: 950;
+      line-height: 0.9;
+      letter-spacing: -10px;
+      color: #000;
+      z-index: 0;
+      pointer-events: none;
+    }
+
+    .dark .hk-bg {
+      color: #fff;
+      opacity: 0.055;
+    }
+
+    .pill-row {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 24px;
+    }
+
+    .pill {
+      padding: 10px 16px;
+      border-radius: 999px;
+      background: #111827;
+      color: #fff;
+      font-size: 15px;
+      font-weight: 800;
+    }
+
+    .dark .pill {
+      background: rgba(255,255,255,0.1);
+      border: 1px solid rgba(255,255,255,0.12);
+      color: #ffd28a;
+    }
+
+    @media print {
+      body {
+        background: #fff;
+      }
+
+      .deck {
+        max-width: none;
+        padding: 0;
+      }
+
+      .slide {
+        margin: 0;
+        border-radius: 0;
+        box-shadow: none;
+        min-height: 100vh;
+      }
+    }
+
+    @media (max-width: 880px) {
+      .slide {
+        padding: 42px 28px;
+      }
+
+      h1 {
+        font-size: 38px;
+      }
+
+      h2 {
+        font-size: 28px;
+      }
+
+      .grid,
+      .grid.two {
+        grid-template-columns: 1fr;
+      }
+
+      .footer {
+        position: static;
+        margin-top: 40px;
+      }
+
+      .hk-bg {
+        display: none;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="deck">
+
+    <section class="slide dark">
+      <div class="hk-bg">香港<br>夜市</div>
+      <span class="neon-title">DALSEO BEER RENEWAL CONCEPT</span>
+      <h1>달서맥주<br>홍콩나잇 콘셉트 제안</h1>
+      <p class="lead">
+        옛 홍콩거리 감성, 테이블 모드 시스템, VIP 클럽형 운영을 결합한
+        달서구형 젊은 포차 리뉴얼 전략입니다.
+      </p>
+
+      <div class="pill-row">
+        <span class="pill">홍콩 야시장</span>
+        <span class="pill">테이블 모드</span>
+        <span class="pill">대화형 포차</span>
+        <span class="pill">VIP 테이블</span>
+      </div>
+
+      <div class="footer">
+        <span>DAL SEO BEER · HONG KONG NIGHT</span>
+        <span>01</span>
+      </div>
+    </section>
+
+    <section class="slide">
+      <h2>핵심 방향</h2>
+      <p>
+        달서맥주는 단순한 맥주집이나 헌팅포차가 아니라,
+        젊은 손님이 사진을 찍고, 친구와 즐기고, 자연스럽게 대화가 생기는 공간으로 전환합니다.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <strong>공간</strong>
+          <p>홍콩 야시장과 네온 골목 감성을 적용해 한 번쯤 가보고 싶은 분위기를 만듭니다.</p>
+        </div>
+        <div class="card">
+          <strong>시스템</strong>
+          <p>태블릿으로 테이블 상태를 선택하고, 직원이 자연스럽게 이벤트를 연결합니다.</p>
+        </div>
+        <div class="card">
+          <strong>매출</strong>
+          <p>일반 손님은 가성비로, 고액 손님은 VIP 테이블과 세트 메뉴로 끌어옵니다.</p>
+        </div>
+      </div>
+
+      <div class="highlight">
+        핵심은 “헌팅”을 전면에 내세우는 것이 아니라, 대화와 이벤트가 자연스럽게 생기는 구조를 만드는 것입니다.
+      </div>
+
+      <div class="footer">
+        <span>DAL SEO BEER</span>
+        <span>02</span>
+      </div>
+    </section>
+
+    <section class="slide dark">
+      <div class="hk-bg">NEON</div>
+      <h2>왜 홍콩거리인가</h2>
+      <p>
+        홍콩 네온 골목은 적은 인테리어 변화만으로도 강한 분위기를 만들 수 있습니다.
+        젊은 층에게는 사진과 영상으로 남기기 좋은 공간이 되고,
+        기존 포차보다 브랜드화하기 쉽습니다.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <strong>사진성</strong>
+          <p>네온, 간판, 붉은 조명, 포토존이 SNS 콘텐츠가 됩니다.</p>
+        </div>
+        <div class="card">
+          <strong>차별성</strong>
+          <p>일반 술집보다 기억에 남고, 재방문 이유를 만들 수 있습니다.</p>
+        </div>
+        <div class="card">
+          <strong>확장성</strong>
+          <p>홍콩나잇, 야시장 세트, 네온 테이블 등 메뉴와 이벤트로 확장 가능합니다.</p>
+        </div>
+      </div>
+
+      <div class="highlight">
+        단, 중국집 느낌이 아니라 “홍콩 영화 골목 + 네온 포차” 방향으로 잡아야 합니다.
+      </div>
+
+      <div class="footer">
+        <span>HONG KONG NIGHT STREET</span>
+        <span>03</span>
+      </div>
+    </section>
+
+    <section class="slide">
+      <h2>공간 콘셉트</h2>
+      <p>
+        전체 분위기는 어둡게만 가는 것이 아니라, 붉은 네온과 따뜻한 조명을 섞어
+        사진은 잘 나오고, 여성 손님도 부담 없이 들어올 수 있는 톤으로 구성합니다.
+      </p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>구분</th>
+            <th>적용 방향</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>조명</td>
+            <td>붉은 네온, 노란 간접조명, 테이블 포인트 조명</td>
+          </tr>
+          <tr>
+            <td>벽면</td>
+            <td>홍콩식 간판, 영화 포스터 느낌, 거울 포토존</td>
+          </tr>
+          <tr>
+            <td>좌석</td>
+            <td>일반 테이블 + 안쪽 VIP 테이블 구분</td>
+          </tr>
+          <tr>
+            <td>사진 포인트</td>
+            <td>입구 네온, 홍콩 골목 벽면, 하이볼/맥주 연출</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="highlight">
+        공간의 목표는 “술 마시는 곳”이 아니라 “찍고 올릴 이유가 있는 곳”입니다.
+      </div>
+
+      <div class="footer">
+        <span>DAL SEO BEER</span>
+        <span>04</span>
+      </div>
+    </section>
+
+    <section class="slide dark">
+      <h2>테이블 모드 시스템</h2>
+      <p>
+        각 테이블은 태블릿 또는 미니 키오스크에서 오늘의 분위기를 선택합니다.
+        직원은 전체 테이블 상태를 확인하고, 게임·대화·건배 이벤트를 자연스럽게 연결합니다.
+      </p>
+
+      <div class="grid two">
+        <div class="card">
+          <strong>손님 화면</strong>
+          <ul>
+            <li>조용히 마실래요</li>
+            <li>대화 가능</li>
+            <li>게임 가능</li>
+            <li>건배 이벤트 가능</li>
+            <li>이벤트 참여</li>
+            <li>직원 호출</li>
+          </ul>
+        </div>
+        <div class="card">
+          <strong>직원 화면</strong>
+          <ul>
+            <li>테이블별 상태 확인</li>
+            <li>이벤트 참여 테이블 파악</li>
+            <li>불편 요청 즉시 확인</li>
+            <li>VIP 테이블 관리</li>
+            <li>테이블 연결 타이밍 조율</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="highlight">
+        “합석”이나 “헌팅”이라는 단어 없이, 대화와 이벤트가 자연스럽게 일어나는 구조입니다.
+      </div>
+
+      <div class="footer">
+        <span>TABLE MODE SYSTEM</span>
+        <span>05</span>
+      </div>
+    </section>
+
+    <section class="slide">
+      <h2>운영 프로세스</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>단계</th>
+            <th>내용</th>
+            <th>목적</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>손님 착석 후 테이블 모드 선택</td>
+            <td>손님 성향 파악</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>직원 화면에 테이블 상태 표시</td>
+            <td>무리한 접근 방지</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>게임 가능·이벤트 가능 테이블 중심으로 연결</td>
+            <td>자연스러운 대화 유도</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>성공 시 서비스 또는 할인 제공</td>
+            <td>참여율과 재방문 강화</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>리뷰·인스타 태그 이벤트 연계</td>
+            <td>SNS 확산</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="highlight">
+        직원이 억지로 분위기를 만드는 것이 아니라, 손님이 선택한 상태값을 기준으로 운영합니다.
+      </div>
+
+      <div class="footer">
+        <span>DAL SEO BEER</span>
+        <span>06</span>
+      </div>
+    </section>
+
+    <section class="slide dark">
+      <h2>VIP·클럽 시스템</h2>
+      <p>
+        고액 손님을 위해 별도 VIP 테이블과 세트 메뉴를 구성합니다.
+        단순히 비싼 술을 파는 것이 아니라, 자리와 대우, 연출을 판매하는 구조입니다.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <strong>VIP TABLE</strong>
+          <p>포토존 인근 또는 안쪽 좌석을 프리미엄 테이블로 운영합니다.</p>
+        </div>
+        <div class="card">
+          <strong>PREMIUM SET</strong>
+          <p>하이볼 타워, 맥주 타워, 안주 플래터, 생일 연출 세트로 구성합니다.</p>
+        </div>
+        <div class="card">
+          <strong>MEMBERSHIP</strong>
+          <p>재방문 고객에게 우선 예약, 서비스, 생일 혜택을 제공합니다.</p>
+        </div>
+      </div>
+
+      <div class="highlight">
+        고액 손님은 가격보다 “대우받는 느낌”과 “보여줄 수 있는 소비”에 반응합니다.
+      </div>
+
+      <div class="footer">
+        <span>VIP TABLE STRATEGY</span>
+        <span>07</span>
+      </div>
+    </section>
+
+    <section class="slide">
+      <h2>메뉴 전략</h2>
+      <p>
+        홍콩 감성을 살리되, 실제 운영은 한국식 포차 메뉴를 기반으로 합니다.
+        사진이 잘 나오고 나눠 먹기 쉬운 메뉴를 중심으로 구성합니다.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <strong>가성비 메뉴</strong>
+          <p>감튀, 떡볶이, 어묵탕, 마른안주, 치킨류</p>
+        </div>
+        <div class="card">
+          <strong>홍콩나잇 메뉴</strong>
+          <p>칠리새우, 마라치킨, 홍콩식 볶음면, 탄탄 떡볶이</p>
+        </div>
+        <div class="card">
+          <strong>세트 메뉴</strong>
+          <p>하이볼 세트, 맥주 타워 세트, 생일 네온 세트</p>
+        </div>
+      </div>
+
+      <div class="highlight">
+        메뉴는 정통 홍콩 음식보다 “홍콩 느낌이 나는 포차 메뉴”가 더 현실적입니다.
+      </div>
+
+      <div class="footer">
+        <span>MENU STRATEGY</span>
+        <span>08</span>
+      </div>
+    </section>
+
+    <section class="slide dark">
+      <h2>젊은 층 유입 전략</h2>
+      <p>
+        젊은 손님은 단순히 술을 마시러 오는 것이 아니라,
+        친구와 경험하고, 찍고, 공유할 수 있는 장면을 찾습니다.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <strong>사진</strong>
+          <p>홍콩 네온 포토존, 하이볼 연출, 테이블 이벤트 장면</p>
+        </div>
+        <div class="card">
+          <strong>참여</strong>
+          <p>테이블 모드, 랜덤 미션, 건배 이벤트, 게임 이벤트</p>
+        </div>
+        <div class="card">
+          <strong>확산</strong>
+          <p>인스타 태그, 릴스, 틱톡, 네이버 리뷰 이벤트</p>
+        </div>
+      </div>
+
+      <div class="highlight">
+        젊은 층 유입의 핵심은 “술집”이 아니라 “콘텐츠가 있는 공간”으로 보이게 만드는 것입니다.
+      </div>
+
+      <div class="footer">
+        <span>YOUNG TARGET STRATEGY</span>
+        <span>09</span>
+      </div>
+    </section>
+
+    <section class="slide">
+      <h2>월매출 기준</h2>
+      <p>
+        달서맥주 리뉴얼 후 기준 매출은 월 5천만 원을 평타 구간으로 보고,
+        7천만 원 이상부터는 성공 구간으로 판단할 수 있습니다.
+      </p>
+
+      <table>
+        <thead>
+          <tr>
+            <th>월매출</th>
+            <th>판단</th>
+            <th>의미</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>3,000만 원 이하</td>
+            <td>위험 구간</td>
+            <td>콘셉트, 상권, 운영 방식 재점검 필요</td>
+          </tr>
+          <tr>
+            <td>4,000만 원</td>
+            <td>생존 구간</td>
+            <td>고정비와 인건비 관리가 중요</td>
+          </tr>
+          <tr>
+            <td>5,000만 원</td>
+            <td>평타 구간</td>
+            <td>하루 평균 약 166만 원 매출</td>
+          </tr>
+          <tr>
+            <td>6,000만~7,000만 원</td>
+            <td>성공 구간</td>
+            <td>콘셉트와 운영이 자리 잡은 상태</td>
+          </tr>
+          <tr>
+            <td>8,000만 원 이상</td>
+            <td>강한 매장</td>
+            <td>VIP·SNS·재방문이 함께 작동하는 상태</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="footer">
+        <span>SALES TARGET</span>
+        <span>10</span>
+      </div>
+    </section>
+
+    <section class="slide">
+      <h2>초기 실행 순서</h2>
+
+      <div class="grid">
+        <div class="card">
+          <div class="big-number">1</div>
+          <strong>공간 분위기 정리</strong>
+          <p>네온, 포토존, 홍콩 골목 느낌을 먼저 만듭니다.</p>
+        </div>
+        <div class="card">
+          <div class="big-number">2</div>
+          <strong>테이블 모드 도입</strong>
+          <p>태블릿 또는 미니 키오스크로 상태 선택 시스템을 만듭니다.</p>
+        </div>
+        <div class="card">
+          <div class="big-number">3</div>
+          <strong>이벤트 운영</strong>
+          <p>게임, 건배, 리뷰, 생일 이벤트를 요일별로 테스트합니다.</p>
+        </div>
+      </div>
+
+      <div class="highlight">
+        처음부터 모든 것을 바꾸기보다, 공간 분위기와 테이블 모드부터 테스트하는 것이 현실적입니다.
+      </div>
+
+      <div class="footer">
+        <span>EXECUTION PLAN</span>
+        <span>11</span>
+      </div>
+    </section>
+
+    <section class="slide dark">
+      <div class="hk-bg">DAL<br>SEO</div>
+      <h2>최종 정리</h2>
+
+      <p class="lead">
+        달서맥주는 “헌팅포차”가 아니라,
+        홍콩 야시장 감성의 대화형 클럽포차로 포지셔닝하는 것이 좋습니다.
+      </p>
+
+      <div class="grid">
+        <div class="card">
+          <strong>젊은 층</strong>
+          <p>사진과 영상이 나오는 공간으로 유입</p>
+        </div>
+        <div class="card">
+          <strong>일반 손님</strong>
+          <p>가성비 메뉴와 테이블 이벤트로 체류</p>
+        </div>
+        <div class="card">
+          <strong>고액 손님</strong>
+          <p>VIP 테이블과 세트 메뉴로 객단가 상승</p>
+        </div>
+      </div>
+
+      <div class="highlight">
+        홍콩거리 감성으로 끌어오고, 테이블 모드로 참여시키고, VIP 시스템으로 매출을 올리는 구조입니다.
+      </div>
+
+      <div class="footer">
+        <span>DAL SEO BEER · HONG KONG NIGHT</span>
+        <span>12</span>
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>
