@@ -68,8 +68,6 @@
     .big-card span,
     .metric strong,
     .metric span,
-    .problem .num,
-    .problem strong,
     .step,
     .closing h3 {
       white-space: nowrap;
@@ -158,32 +156,25 @@
     .hero-grid {
       height: calc(100% - 18mm);
       display: grid;
-      grid-template-columns: 1.5fr .5fr;
-      gap: 28px;
+      grid-template-columns: 1.15fr .85fr;
+      gap: 34px;
       align-items: center;
     }
 
-    .hero-box {
-      border-radius: 26px;
-      padding: 26px;
-      background: #f8fafc;
-      border: 1px solid var(--gray-200);
-      box-shadow: none;
-    }
-
-    .hero-box-title {
-      font-size: 20px;
-      font-weight: 950;
-      margin-bottom: 14px;
-      color: var(--gray-900);
+    .cover-title {
+      max-width: none;
+      font-size: 40px;
+      line-height: 1.12;
+      letter-spacing: -0.065em;
       white-space: nowrap;
     }
 
-    .hero-box p {
-      font-size: 17px;
-      line-height: 1.65;
-      color: var(--gray-700);
-      font-weight: 650;
+    .accent-line {
+      width: 56px;
+      height: 5px;
+      border-radius: 999px;
+      background: var(--blue);
+      margin: 24px 0 0;
     }
 
     .badges {
@@ -221,7 +212,7 @@
 
     .big-card strong {
       display: block;
-      font-size: 38px;
+      font-size: 35px;
       line-height: 1;
       letter-spacing: -0.06em;
       margin-bottom: 12px;
@@ -234,6 +225,53 @@
       line-height: 1.45;
       color: var(--gray-700);
       font-weight: 750;
+    }
+
+    .flow-panel {
+      border-radius: 30px;
+      padding: 28px;
+      background: #f8fafc;
+      border: 1px solid var(--gray-200);
+    }
+
+    .flow-title {
+      font-size: 22px;
+      font-weight: 950;
+      letter-spacing: -0.04em;
+      color: var(--gray-900);
+      margin-bottom: 20px;
+    }
+
+    .vertical-flow {
+      display: grid;
+      gap: 12px;
+    }
+
+    .flow-item {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      padding: 15px 16px;
+      border-radius: 18px;
+      background: #ffffff;
+      border: 1px solid var(--gray-200);
+      color: var(--gray-800);
+      font-size: 17px;
+      font-weight: 850;
+    }
+
+    .flow-num {
+      width: 28px;
+      height: 28px;
+      border-radius: 999px;
+      background: var(--blue);
+      color: #ffffff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 13px;
+      font-weight: 950;
+      flex: 0 0 auto;
     }
 
     .two-col {
@@ -281,50 +319,6 @@
     .label.orange {
       background: var(--orange-soft);
       color: #c2410c;
-    }
-
-    .label.red {
-      background: var(--red-soft);
-      color: #b91c1c;
-    }
-
-    .problem-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 16px;
-      margin-top: 34px;
-    }
-
-    .problem {
-      min-height: 118px;
-      border-radius: 24px;
-      padding: 21px;
-      background: #f8fafc;
-      border: 1px solid var(--gray-200);
-    }
-
-    .problem .num {
-      color: var(--red);
-      font-size: 15px;
-      font-weight: 950;
-      margin-bottom: 12px;
-    }
-
-    .problem strong {
-      display: block;
-      font-size: 21px;
-      letter-spacing: -0.04em;
-      line-height: 1.25;
-      margin-bottom: 12px;
-      color: var(--gray-900);
-    }
-
-    .problem span {
-      display: block;
-      font-size: 14.5px;
-      line-height: 1.5;
-      color: var(--gray-600);
-      font-weight: 650;
     }
 
     .metric-grid {
@@ -415,20 +409,36 @@
       font-weight: 650;
     }
 
-    .accent-line {
-      width: 56px;
-      height: 5px;
-      border-radius: 999px;
-      background: var(--blue);
-      margin: 24px 0 0;
+    .wide-card {
+      margin-top: 30px;
+      padding: 26px 30px;
+      border-radius: 28px;
+      background: #f8fafc;
+      border: 1px solid var(--gray-200);
     }
-    .cover-title {
-  max-width: none;
-  font-size: 40px;
-  line-height: 1.12;
-  letter-spacing: -0.065em;
-  white-space: nowrap;
-}
+
+    .wide-card h3 {
+      font-size: 26px;
+      margin-bottom: 12px;
+    }
+
+    .wide-card p {
+      font-size: 18px;
+      color: var(--gray-700);
+      font-weight: 650;
+    }
+
+    .signature {
+      margin-top: 18px;
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 32px;
+      font-size: 18px;
+      color: var(--gray-700);
+      font-weight: 700;
+    }
 
     @media print {
       body {
@@ -449,35 +459,52 @@
       <div>
         <div class="brand">주식회사 노마드텐</div>
         <h1 class="cover-title">푸른방송 자재 발주·재고관리 운영 제안</h1>
+
         <p class="lead">
-          자재팀 반복 업무를 줄이고, </br>푸른방송의 매출 활동 집중 시간을 확보합니다.
+          자재 요청부터 재고 확인까지,<br>
+          하나의 운영 흐름으로 관리합니다.
         </p>
+
+        <p class="sub">
+          품목 기준을 통일하고, 발주·입고·불출 이력을 전산으로 남겨
+          담당자 변경에도 같은 기준으로 운영할 수 있습니다.
+        </p>
+
         <div class="accent-line"></div>
 
         <div class="badges">
-          <span class="badge">ERP형 운영 시스템</span>          
-          <span class="badge">자재 업무 표준화</span>
-          <span class="badge">반복 업무 절감</span>
-          <span class="badge">매출 활동 집중</span>
+          <span class="badge">발주 통합</span>
+          <span class="badge">입고 기록</span>
+          <span class="badge">불출 이력</span>
+          <span class="badge">재고 현황</span>
         </div>
 
         <div class="big-grid">
           <div class="big-card">
-            <strong>1/6</strong>
-            <span>반복 업무 감소 목표</span>
+            <strong>월 30h</strong>
+            <span>확인 업무 절감 목표</span>
           </div>
           <div class="big-card">
-            <strong>시범 운영</strong>
-            <span>현장 기반 운영 검증</span>
+            <strong>초기 부담</strong>
+            <span>별도 도입비용 없이 시범 운영</span>
           </div>
           <div class="big-card">
-            <strong>ERP</strong>
-            <span>ERP 시스템 확장</span>
+            <strong>통합 관리</strong>
+            <span>발주·입고·불출·재고 흐름 연결</span>
           </div>
         </div>
       </div>
 
-      
+      <div class="flow-panel">
+        <div class="flow-title">운영 흐름</div>
+        <div class="vertical-flow">
+          <div class="flow-item"><span class="flow-num">1</span> 자재 요청</div>
+          <div class="flow-item"><span class="flow-num">2</span> 발주</div>
+          <div class="flow-item"><span class="flow-num">3</span> 입고</div>
+          <div class="flow-item"><span class="flow-num">4</span> 불출</div>
+          <div class="flow-item"><span class="flow-num">5</span> 재고 현황</div>
+        </div>
+      </div>
     </div>
 
     <div class="footer">
@@ -486,34 +513,41 @@
     </div>
   </section>
 
-  <!-- 2. 문제 정의 -->
+  <!-- 2. 문제와 해결 구조 통합 -->
   <section class="slide">
-    <h2>자재 업무는 필요하지만, 핵심 과제는 매출 증대입니다</h2>
+    <h2>반복 확인 업무를 하나의 시스템 흐름으로 줄입니다</h2>
+
     <p class="sub">
-      자재 매입과 재고 관리는 반드시 필요합니다. </br>하지만 푸른방송의 핵심 성장 과제는 매입 업무 자체가 아니라 고객 대응, 현장 운영, 신규 매출 창출입니다.
+      기존에는 품목명 확인, 재고 확인, 불출 이력 추적을 사람이 반복적으로 확인해야 했다면,
+      노마드텐은 자재 요청부터 재고 현황까지 하나의 흐름으로 연결합니다.
     </p>
 
-    <div class="problem-grid">
-      <div class="problem">
-        <div class="num">문제 1</div>
-        <strong>요청 채널 분산</strong>
-        <span>카카오톡, 전화, 메일로 요청이 흩어집니다.</span>
+    <div class="two-col">
+      <div class="card soft">
+        <span class="label orange">기존 방식</span>
+        <h3>사람이 다시 확인하는 구조</h3>
+        <p>
+          품목명이 다르게 전달되거나, 현재고를 다시 확인해야 하거나,
+          자재가 현장으로 나간 뒤 불출 이력을 따로 추적해야 했습니다.
+        </p>
       </div>
-      <div class="problem">
-        <div class="num">문제 2</div>
-        <strong>품목 기준 불일치</strong>
-        <span>담당자마다 품명과 규격 표현이 달라집니다.</span>
+
+      <div class="card soft">
+        <span class="label green">노마드텐 방식</span>
+        <h3>시스템 안에서 확인하는 구조</h3>
+        <p>
+          품목명을 표준화하고, 주문 이력과 현재고, 입고·불출 기록을 전산에 남겨
+          담당자가 바뀌어도 같은 기준으로 업무를 이어갈 수 있습니다.
+        </p>
       </div>
-      <div class="problem">
-        <div class="num">문제 3</div>
-        <strong>재고 확인 지연</strong>
-        <span>현재고 확인에 문의와 재확인이 반복됩니다.</span>
-      </div>
-      <div class="problem">
-        <div class="num">문제 4</div>
-        <strong>불출 이력 추적</strong>
-        <span>누가 어떤 자재를 가져갔는지 추적이 어렵습니다.</span>
-      </div>
+    </div>
+
+    <div class="diagram">
+      <div class="step">요청 표준화</div>
+      <div class="step">주문 이력</div>
+      <div class="step">입고 확인</div>
+      <div class="step">불출 기록</div>
+      <div class="step">재고 현황</div>
     </div>
 
     <div class="footer">
@@ -522,32 +556,41 @@
     </div>
   </section>
 
-  <!-- 3. 해결 방향 -->
+  <!-- 3. 경제효과 -->
   <section class="slide">
-    <h2>자재 요청부터 불출 이력까지 하나의 흐름으로 연결합니다</h2>
+    <h2>절감된 시간은 다시 매출 활동에 투입될 수 있습니다</h2>
+
     <p class="sub">
-      흩어진 요청과 확인 업무를 시스템 안에서 표준화하고, 자재 데이터가 누적되는 구조로 전환합니다.
+      자재 확인 업무를 줄이는 목적은 인력 감축이 아니라,
+      고객 대응과 현장 운영에 투입할 시간을 확보하는 것입니다.
     </p>
 
-    <div class="diagram">
-      <div class="step">요청 표준화</div>
-      <div class="step">주문 이력 관리</div>
-      <div class="step">현재고 확인</div>
-      <div class="step">불출 이력 기록</div>
-      <div class="step">문서 체계화</div>
+    <div class="metric-grid">
+      <div class="metric">
+        <strong>월 30h</strong>
+        <span>확인 업무 절감 기대</span>
+        <p>월 50건 기준 최대 30시간 수준의 반복 확인 업무 절감을 목표로 합니다.</p>
+      </div>
+
+      <div class="metric">
+        <strong>약 30만 원</strong>
+        <span>월 업무시간 가치</span>
+        <p>최저시급 10,030원 기준, 월 30시간은 약 300,900원 상당의 업무시간입니다.</p>
+      </div>
+
+      <div class="metric">
+        <strong>약 360만 원</strong>
+        <span>연간 업무시간 가치</span>
+        <p>월 30시간 절감 기준, 연간 약 360만 원 상당의 반복 업무시간을 줄일 수 있습니다.</p>
+      </div>
     </div>
 
-    <div class="two-col">
-      <div class="card soft">
-        <span class="label orange">기존 방식</span>
-        <h3>사람이 다시 확인하는 구조</h3>
-        <p>요청, 품목명, 재고, 불출 기록을 담당자가 반복적으로 확인하고 정리합니다.</p>
-      </div>
-      <div class="card soft">
-        <span class="label green">개선 방향</span>
-        <h3>시스템이 기준을 잡는 구조</h3>
-        <p>품목과 이력이 시스템 기준으로 정리되어, 담당자 변경에도 업무 기준을 유지할 수 있습니다.</p>
-      </div>
+    <div class="wide-card">
+      <h3>핵심은 시간 재배치입니다</h3>
+      <p>
+        반복 확인 업무에 쓰이던 시간을 줄이면,
+        담당자는 고객 대응, 현장 운영, 신규 매출 활동에 더 집중할 수 있습니다.
+      </p>
     </div>
 
     <div class="footer">
@@ -556,28 +599,50 @@
     </div>
   </section>
 
-  <!-- 4. 경제효과 -->
+  <!-- 4. 푸른방송 도입 효과 -->
   <section class="slide">
-    <h2>반복 업무시간 절감이 핵심 경제효과입니다</h2>
+    <h2>푸른방송이 얻는 효과</h2>
+
     <p class="sub">
-      절감된 시간은 단순한 비용 절감이 아니라, 고객 대응과 매출 활동에 다시 투입될 수 있는 시간입니다.
+      노마드텐 발주 시스템은 별도 도입비용 없이 자재 업무를 전산화하고,
+      담당자가 같은 기준으로 업무를 이어갈 수 있도록 돕습니다.
     </p>
 
     <div class="metric-grid">
       <div class="metric">
-        <strong>최대 50%</strong>
-        <span>자재 업무 시간 절감 목표</span>
-        <p>요청 확인, 품목 재확인, 재고 확인 시간을 줄입니다.</p>
+        <strong>효율화</strong>
+        <span>확인 업무 감소</span>
+        <p>품목명 확인, 재고 확인, 불출 이력 추적에 들어가는 시간을 줄입니다.</p>
       </div>
+
       <div class="metric">
-        <strong>월 30h</strong>
-        <span>반복 업무 절감 기대</span>
-        <p>월 50건 기준 최대 30시간 수준의 절감 효과를 목표로 합니다.</p>
+        <strong>표준화</strong>
+        <span>품목명·규격 기준 통일</span>
+        <p>담당자가 바뀌어도 같은 기준으로 자재 요청과 발주 업무를 이어갈 수 있습니다.</p>
       </div>
+
       <div class="metric">
-        <strong>1/6</strong>
-        <span>자재팀 부담 축소 목표</span>
-        <p>반복 확인과 정리 업무를 시스템 흐름으로 대체합니다.</p>
+        <strong>기록화</strong>
+        <span>발주·입고·불출 이력 관리</span>
+        <p>누가 요청했고, 어떤 자재가 입고·불출되었는지 전산 기록으로 확인할 수 있습니다.</p>
+      </div>
+    </div>
+
+    <div class="two-col">
+      <div class="card soft">
+        <h3>도입비용 부담 없음</h3>
+        <p>
+          별도의 시스템 구축비 없이 실제 업무에 적용해보고,
+          운영 과정에서 필요한 개선사항을 단계적으로 반영할 수 있습니다.
+        </p>
+      </div>
+
+      <div class="card soft">
+        <h3>매출 활동 집중</h3>
+        <p>
+          자재 관리에 쓰이던 시간을 줄이고,
+          고객 대응, 현장 운영, 신규 매출 활동에 더 집중할 수 있습니다.
+        </p>
       </div>
     </div>
 
@@ -587,62 +652,32 @@
     </div>
   </section>
 
-  
-  <section class="slide">
-    <h2>푸른방송과 노마드텐이 함께 검증하고 성장하는 구조입니다</h2>
-    <p class="sub">
-      단순 무상 제공이 아니라, 실제 업무 데이터를 기반으로 시스템을 검증하고 고도화하는 공동 운영입니다.
-    </p>
-
-    <div class="two-col">
-      <div class="card">
-        <span class="label green">푸른방송</span>
-        <h3>도입비용 부담 없이 효율 검증</h3>
-        <p>자재 요청, 재고 확인, 불출 이력, 문서 확인 기능을 실제 업무에 적용하며 효율화를 검증합니다.</p>
-      </div>
-
-      <div class="card">
-        <span class="label orange">주식회사 노마드텐</span>
-        <h3>운영 데이터·개선 경험 확보</h3>
-        <p>현장 오류, 업무 흐름, 사용 피드백을 바탕으로 ERP형 운영 시스템의 완성도를 높입니다.</p>
-      </div>
-    </div>
-
-    <div class="two-col">
-      <div class="card soft">
-        <h3>푸른방송이 얻는 것</h3>
-        <p>업무 효율화, 반복 업무 절감, 데이터 기반 자재 관리, 담당자 변경 리스크 감소.</p>
-      </div>
-      <div class="card soft">
-        <h3>노마드텐이 얻는 것</h3>
-        <p>실사용 데이터, 오류 개선 경험, 운영 검증 사례, 시스템 고도화 기반.</p>
-      </div>
-    </div>
-
-    <div class="footer">
-      <span>주식회사 노마드텐</span>
-      <span>4</span>
-    </div>
-  </section>
-
-  <!-- 6. 마무리 -->
+  <!-- 5. 마무리 -->
   <section class="slide">
     <h2>與民同樂</h2>
 
     <div class="closing">
       <h3>함께 성장하고, 성과와 이익을 나누는 운영 철학</h3>
       <p>
-        與民同樂은 본래 백성과 즐거움을 함께한다는 뜻입니다.</br>
-저는 이 말을 오늘날 기업 운영 관점에서, 함께 성장하고 성과와 이익을 나누는 철학으로 해석하고 싶습니다.
+        與民同樂은 지도자가 혼자 즐거움과 성과를 누리는 것이 아니라,<br>
+        사람들과 함께 나누는 모습을 의미합니다.
       </p>
-      
+
       <p style="margin-top: 18px;">
-        노마드텐은 단순한 발주 시스템을 넘어, </br>거래처와 운영사가 함께 성장할 수 있는 효율적인 자재 발주·재고관리 시스템을 지향합니다.
+        노마드텐은 이 의미를 오늘날 기업 운영 관점에서,<br>
+        거래처와 운영사가 함께 성장하고 성과를 나누는 구조로 해석하고자 합니다.
+      </p>
+
+      <p style="margin-top: 18px;">
+        단순한 발주 시스템을 넘어,<br>
+        푸른방송의 업무 효율과 현장 운영에 도움이 되는
+        자재 발주·재고관리 시스템을 지향합니다.
       </p>
     </div>
-    <p style="margin-top: 18px; text-align: center; display: flex; align-items: center; justify-content: center; min-height: 32px;">
-  주식회사 노마드텐 안태현
-</p>
+
+    <p class="signature">
+      주식회사 노마드텐 안태현
+    </p>
 
     <div class="footer">
       <span>주식회사 노마드텐</span>
