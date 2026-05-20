@@ -3,10 +3,10 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>??????????? Tiles Survive | ????????????, ???????? ???????, ????? ?????? | TilesSurvive.net</title>
+  <title>Инструменты Tiles Survive | помощник событий, калькуляторы, поиск наград | TilesSurvive.net</title>
   <base href="/" />
   <meta name="theme-color" content="#ffffff" />
-  <meta name="description" content="??? ???????????? Tiles Survive ??? ?????????? ? ????????: ???????? ???????, ????????????, ????? ??????, ???? ?????? ? ?????." />
+  <meta name="description" content="Хаб инструментов Tiles Survive: помощник событий, калькулятор ускорений, поиск наград и полезные ссылки на базу данных." />
   <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
   <meta name="author" content="TilesSurvive.net" />
   <link rel="canonical" href="https://tilessurvive.net/ru/tools/" />
@@ -14,278 +14,72 @@
   <link rel="alternate" hreflang="ko" href="https://tilessurvive.net/ko/tools/" />
   <link rel="alternate" hreflang="en" href="https://tilessurvive.net/en/tools/" />
   <link rel="alternate" hreflang="ja" href="https://tilessurvive.net/ja/tools/" />
-  <link rel="alternate" hreflang="ru" href="https://tilessurvive.net/ru/tools/" />
   <link rel="alternate" hreflang="zh-TW" href="https://tilessurvive.net/zh-tw/tools/" />
+  <link rel="alternate" hreflang="ru" href="https://tilessurvive.net/ru/tools/" />
   <meta property="og:site_name" content="TilesSurvive.net" />
   <meta property="og:type" content="website" />
-  <meta property="og:title" content="??????????? Tiles Survive | ????????????, ???????? ???????, ????? ?????? | TilesSurvive.net" />
-  <meta property="og:description" content="??? TilesSurvive.net ? ?????????? ???????, ??????????????, ??????? ??????, ????? ?????? ? ???????." />
+  <meta property="og:title" content="Инструменты Tiles Survive | помощник событий, калькуляторы, поиск наград | TilesSurvive.net" />
+  <meta property="og:description" content="Хаб инструментов Tiles Survive: помощник событий, калькулятор ускорений, поиск наград и полезные ссылки на базу данных." />
   <meta property="og:url" content="https://tilessurvive.net/ru/tools/" />
   <meta property="og:image" content="https://tilessurvive.net/img/logo-tilessurvive.png" />
   <meta property="og:locale" content="ru_RU" />
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="??????????? Tiles Survive | TilesSurvive.net" />
-  <meta name="twitter:description" content="??????????? ??? ?????????? ? ????????, ?????????????, ?????? ?????? ? ???????? ??????." />
+  <meta name="twitter:title" content="Инструменты Tiles Survive | помощник событий, калькуляторы, поиск наград | TilesSurvive.net" />
+  <meta name="twitter:description" content="Хаб инструментов Tiles Survive: помощник событий, калькулятор ускорений, поиск наград и полезные ссылки на базу данных." />
   <meta name="twitter:image" content="https://tilessurvive.net/img/logo-tilessurvive.png" />
-  <style>
-    :root{--bg:#f5f7fb;--panel:#ffffff;--ink:#0f172a;--muted:#64748b;--line:#e2e8f0;--brand:#2563eb;--brand-soft:#eff6ff;--ok:#16a34a;--warn:#d97706;--radius-lg:24px;--radius-md:18px;--shadow:0 16px 42px rgba(15,23,42,.08)}
-    *{box-sizing:border-box}
-    body{margin:0;background:var(--bg);color:var(--ink);font-family:system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.65;word-break:keep-all}
-    a{color:inherit}
-    .container{width:min(1180px,calc(100% - 32px));margin:0 auto}
-    .page-main{padding:24px 0 80px}
-    .tool-breadcrumb{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:2px 0 16px;color:var(--muted);font-size:14px}
-    .tool-breadcrumb a{color:var(--brand);text-decoration:none;font-weight:800}
-    .hero-card{border:1px solid var(--line);border-radius:var(--radius-lg);background:linear-gradient(135deg,#fff 0%,#f8fbff 55%,#eef7ff 100%);box-shadow:var(--shadow);padding:30px;margin-bottom:22px}
-    .hero-card .eyebrow{font-size:13px;font-weight:900;color:var(--brand);text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px}
-    .hero-card h1{font-size:clamp(30px,4vw,48px);line-height:1.12;margin:0 0 14px;letter-spacing:0}
-    .hero-card p{max-width:850px;margin:0;color:#334155;font-size:17px}
-    .hero-card .hero-note{margin-top:12px;color:var(--muted);font-size:15px}
-    .home-section{margin-top:22px}
-    .section-card{border:1px solid var(--line);border-radius:var(--radius-lg);background:var(--panel);box-shadow:0 12px 30px rgba(15,23,42,.05);padding:24px}
-    .section-head{display:flex;justify-content:space-between;gap:16px;align-items:flex-end;flex-wrap:wrap;margin-bottom:16px}
-    .section-head h2{font-size:24px;line-height:1.22;margin:0 0 4px;letter-spacing:0}
-    .section-head p{margin:0;color:var(--muted)}
-    .tool-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
-    .tool-grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
-    .tool-card{display:flex;flex-direction:column;min-width:0;border:1px solid var(--line);border-radius:var(--radius-md);background:#fff;overflow:hidden}
-    .tool-card-disabled{background:#f8fafc;opacity:.86}
-    .tool-thumb,.tool-placeholder{aspect-ratio:16 / 10;background:#eef2f7;display:flex;align-items:center;justify-content:center;padding:12px;text-decoration:none}
-    .tool-thumb img{width:100%;height:100%;object-fit:contain;object-position:center}
-    .tool-placeholder{font-size:34px;color:var(--warn)}
-    .tool-body{display:flex;flex:1;flex-direction:column;gap:10px;padding:16px;text-align:left}
-    .tool-body h3{font-size:18px;line-height:1.28;margin:0;letter-spacing:0}
-    .tool-body p{margin:0;color:#475569;font-size:14px;line-height:1.55}
-    .tool-link{display:inline-flex;align-items:center;justify-content:center;align-self:flex-start;min-height:36px;padding:0 13px;border:1px solid var(--line);border-radius:999px;background:#f8fafc;color:var(--brand);font-size:13px;font-weight:900;text-decoration:none;margin-top:auto}
-    .tool-link:hover,.tool-link:focus{background:var(--brand-soft);outline:none}
-    .tool-pill{display:inline-flex;align-items:center;align-self:flex-start;border:1px solid #f59e0b;background:#fffbeb;border-radius:999px;padding:6px 10px;color:#92400e;font-size:12px;font-weight:900;margin-top:auto}
-    .tool-cta{display:flex;gap:14px;align-items:center;justify-content:space-between;border:1px solid #bfdbfe;background:#f8fbff;border-radius:var(--radius-md);padding:16px 18px;text-decoration:none;color:var(--ink)}
-    .tool-cta strong{display:block;font-size:16px;margin-bottom:3px}
-    .tool-cta span{display:block;color:#475569;font-size:14px}
-    .tool-cta em{font-style:normal;font-weight:900;color:var(--brand);white-space:nowrap}
-    .tool-faq{display:grid;gap:12px}
-    .tool-faq details{border:1px solid var(--line);background:#f8fafc;border-radius:16px;padding:14px}
-    .tool-faq summary{font-weight:900;cursor:pointer}
-    .tool-faq p{margin:10px 0 0;color:#475569}
-    .tool-source{border-left:4px solid var(--brand);background:var(--brand-soft);color:#334155;border-radius:14px;padding:14px;margin:0}
-    @media (max-width:900px){.tool-grid,.tool-grid-2{grid-template-columns:repeat(2,minmax(0,1fr))}}
-    @media (max-width:560px){.container{width:min(100% - 24px,1180px)}.page-main{padding-top:14px}.hero-card,.section-card{padding:18px;border-radius:20px}.tool-grid,.tool-grid-2{grid-template-columns:1fr}.tool-cta{align-items:flex-start;flex-direction:column}.tool-cta em{white-space:normal}}
-  </style>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"???????","item":"https://tilessurvive.net/ru/"},{"@type":"ListItem","position":2,"name":"???????????","item":"https://tilessurvive.net/ru/tools/"}]}</script>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"????? ??????????? ??????? ??????","acceptedAnswer":{"@type":"Answer","text":"????? ??????? ???????? TilesSurvive.net ??? ?????????? ? ????????, ?????????????, ?????? ?????? ? ???????? ??????."}},{"@type":"Question","name":"????? ???????? ?? ???????? ????????","acceptedAnswer":{"@type":"Answer","text":"???. ? ??? ??? ??? ???????? ???????, ??????? ?????? ????????? ?? ?????????."}},{"@type":"Question","name":"????? ???????????? ?????? ?????????? ???????????","acceptedAnswer":{"@type":"Answer","text":"??????????? ? ???????????? ????????? ? ??????? ????? ???????? ? ????????? ???????? ???????."}}]}</script>
+  <style>:root{--bg:#f5f7fb;--surface:#fff;--surface-soft:#f8fafc;--line:#e5e7eb;--line-strong:#cbd5e1;--text:#111827;--text-soft:#475569;--text-faint:#64748b;--dark:#0f172a;--brand:#2563eb;--brand-soft:#eff6ff;--ok:#16a34a;--warn:#d97706;--shadow-sm:0 8px 24px rgba(15,23,42,.04);--shadow-md:0 20px 48px rgba(15,23,42,.08);--radius-lg:28px;--radius-md:20px;--radius-sm:14px;--container:min(1180px,calc(100% - 32px))}*{box-sizing:border-box}html,body{margin:0;padding:0;overflow-x:hidden}body{color:var(--text);background:var(--bg);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.6;word-break:keep-all;padding-bottom:calc(76px + env(safe-area-inset-bottom,0px))}a{color:inherit;text-decoration:none}img{display:block;max-width:100%}button,input{font:inherit}.container{width:var(--container);margin:0 auto}.skip-link{position:absolute;left:12px;top:-44px;z-index:3000;background:#111827;color:#fff;padding:10px 14px;border-radius:10px;font-weight:800}.skip-link:focus{top:12px}.site-header{position:sticky;top:0;z-index:1500;background:rgba(255,255,255,.92);backdrop-filter:saturate(160%) blur(12px);border-bottom:1px solid rgba(15,23,42,.06)}.nav-bar{min-height:68px;display:flex;align-items:center;justify-content:space-between;gap:16px}.nav-left{display:flex;align-items:center;gap:20px;min-width:0;flex:1 1 auto}.brand{display:flex;align-items:center;gap:10px;min-width:0;color:#111827}.brand-logo{width:30px;height:30px;border-radius:9px;flex:0 0 auto;background:#e5e7eb;object-fit:cover}.brand-text{display:flex;flex-direction:column;gap:2px;min-width:0;line-height:1.1}.brand-title{font-size:16px;font-weight:900;white-space:nowrap}.brand-sub{font-size:12px;color:#6b7280;white-space:nowrap}.nav{display:flex;align-items:center;gap:4px;min-width:0;flex-wrap:wrap}.nav a{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:0 12px;border-radius:999px;color:#475569;font-size:14px;font-weight:800;white-space:nowrap}.nav a:hover,.nav a:focus,.nav a[aria-current="page"]{background:#eef2f7;color:#111827;outline:none}.nav-right{display:flex;align-items:center;gap:10px;flex:0 0 auto}.lang-pills{display:flex;align-items:center;gap:8px;flex-wrap:wrap}.lang-pill{appearance:none;border:1px solid var(--line);background:#fff;color:#6b7280;padding:8px 10px;border-radius:999px;font:13px/1.1 system-ui,-apple-system,Segoe UI,Roboto,"Noto Sans",Arial;cursor:pointer;white-space:nowrap;user-select:none}.lang-pill:hover{color:#111827}.lang-pill[aria-current="true"]{color:#111827;font-weight:900;border-color:var(--line-strong);background:#f8fafc}.hamburger{display:none;appearance:none;border:1px solid var(--line);background:#fff;color:#111827;width:42px;height:42px;border-radius:12px;font-size:20px;cursor:pointer;flex:0 0 auto}.countdown-bar-wrap{background:#fff;border-bottom:1px solid rgba(15,23,42,.06)}.countdown-bar{min-height:52px;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:10px 0}.countdown-bar__left{min-width:0;display:flex;align-items:center;gap:10px;flex:1 1 auto}.countdown-badge{flex:0 0 auto;display:inline-flex;align-items:center;justify-content:center;min-height:28px;padding:0 10px;border-radius:999px;background:#111827;color:#fff;font-size:12px;font-weight:900}.countdown-copy{min-width:0;font-size:14px;color:#334155;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}.countdown-copy strong{color:#111827;font-weight:900}.countdown-bar__actions{flex:0 0 auto;display:flex;align-items:center;gap:8px;flex-wrap:nowrap}.countdown-link{display:inline-flex;align-items:center;justify-content:center;min-height:34px;padding:0 12px;border-radius:999px;border:1px solid var(--line);background:#f8fafc;font-size:13px;font-weight:800;color:#111827;white-space:nowrap;flex:0 0 auto}.countdown-link:hover,.countdown-link:focus{background:#eef2f7;outline:none}.page-main{padding-top:22px;padding-bottom:32px}.tool-breadcrumb{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:2px 0 16px;color:var(--text-faint);font-size:14px}.tool-breadcrumb a{color:var(--brand);font-weight:900}.hero-card{background:linear-gradient(180deg,#ffffff,#f8fafc);border:1px solid var(--line);border-radius:var(--radius-lg);padding:28px 24px;box-shadow:0 18px 40px rgba(15,23,42,.06);text-align:left}.hero-card .eyebrow{display:inline-flex;align-items:center;min-height:28px;padding:0 10px;border-radius:999px;background:var(--brand-soft);color:var(--brand);font-size:12px;font-weight:900;letter-spacing:.04em;text-transform:uppercase;margin-bottom:12px}.hero-card h1{margin:0;font-size:40px;line-height:1.15;letter-spacing:-.03em;color:var(--dark)}.hero-card p{max-width:820px;margin:12px 0 0;color:var(--text-soft);font-size:15px}.hero-card .hero-note{font-size:14px;color:var(--text-faint)}.home-section{margin-top:18px}.section-card{background:#fff;border:1px solid var(--line);border-radius:var(--radius-lg);padding:24px;box-shadow:0 14px 34px rgba(15,23,42,.05)}.section-head{margin-bottom:18px}.section-head h2{margin:0;font-size:28px;line-height:1.2;letter-spacing:-.03em;color:var(--dark)}.section-head p{margin:8px 0 0;font-size:14px;color:var(--text-soft)}.tool-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px;align-items:stretch}.tool-grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;align-items:stretch}.tool-card{display:flex;flex-direction:column;min-width:0;height:100%;border:1px solid var(--line);border-radius:20px;overflow:hidden;background:#fff;box-shadow:0 8px 24px rgba(15,23,42,.04)}a.tool-card:hover,.tool-card.is-linked:hover{border-color:var(--line-strong);box-shadow:0 16px 36px rgba(15,23,42,.08)}.tool-card-disabled{background:#f8fafc;opacity:.88}.tool-thumb,.tool-placeholder{height:150px;background:linear-gradient(180deg,#f8fafc,#eef2f7);border-bottom:1px solid #eef2f7;display:flex;align-items:center;justify-content:center;padding:14px}.tool-thumb img{width:100%;height:100%;object-fit:contain;object-position:center;transform:scale(.92)}.tool-placeholder{font-size:34px;color:var(--warn);font-weight:900}.tool-body{display:flex;flex:1 1 auto;flex-direction:column;gap:8px;padding:16px;min-height:172px}.tool-body h3{font-size:18px;line-height:1.3;margin:0;letter-spacing:-.02em;color:var(--dark);min-height:46px}.tool-body p{margin:0;color:#475569;font-size:13px;line-height:1.55;min-height:42px}.tool-meta{display:flex;gap:6px;flex-wrap:wrap;margin-top:auto}.chip{display:inline-flex;align-items:center;justify-content:center;min-height:28px;padding:0 10px;border-radius:999px;background:var(--surface-soft);border:1px solid var(--line);font-size:12px;font-weight:800;color:#334155}.tool-link{margin-top:10px;display:inline-flex;align-items:center;justify-content:center;min-height:36px;padding:0 12px;border-radius:999px;background:var(--dark);color:#fff;font-size:13px;font-weight:900;width:fit-content}.tool-pill{margin-top:10px;display:inline-flex;align-items:center;justify-content:center;min-height:32px;padding:0 11px;border-radius:999px;border:1px solid #fed7aa;background:#fffbeb;color:#9a3412;font-size:12px;font-weight:900;width:fit-content}.tool-cta{display:flex;gap:14px;align-items:center;justify-content:space-between;border:1px solid #bfdbfe;background:#f8fbff;border-radius:20px;padding:18px;text-decoration:none;color:var(--ink)}.tool-cta strong{display:block;font-size:16px;margin-bottom:3px}.tool-cta span{display:block;color:#475569;font-size:14px}.tool-cta em{font-style:normal;font-weight:900;color:var(--brand);white-space:nowrap}.tool-faq{display:grid;gap:12px}.tool-faq details{border:1px solid var(--line);background:#f8fafc;border-radius:16px;padding:14px}.tool-faq summary{font-weight:900;cursor:pointer}.tool-faq p{margin:10px 0 0;color:#475569}.tool-source{border-left:4px solid var(--brand);background:var(--brand-soft);color:#334155;border-radius:14px;padding:14px;margin:0}.speedup-form{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.speedup-field{display:flex;flex-direction:column;gap:8px;font-weight:900}.speedup-field input{min-height:46px;border:1px solid var(--line);border-radius:14px;padding:0 12px;background:#fff;color:var(--dark);font-weight:800}.speedup-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}.speedup-button{appearance:none;border:0;background:var(--dark);color:#fff;min-height:42px;padding:0 16px;border-radius:999px;font-weight:900;cursor:pointer}.speedup-button.secondary{background:#fff;color:var(--dark);border:1px solid var(--line)}.speedup-result-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}.speedup-result{border:1px solid var(--line);border-radius:18px;background:#f8fafc;padding:18px}.speedup-result strong{display:block;color:#475569;font-size:13px;margin-bottom:8px}.speedup-result span{display:block;color:var(--dark);font-size:28px;font-weight:900;line-height:1.15;word-break:break-word}.speedup-notice{margin:16px 0 0;border-left:4px solid var(--warn);background:#fffbeb;border-radius:14px;padding:14px;color:#713f12}.site-footer{margin-top:26px;border-top:1px solid var(--line);background:#fff}.footer-link-strip{padding:14px 0;border-bottom:1px solid #eef2f7}.footer-link-strip__inner{display:flex;align-items:center;justify-content:center;gap:10px;flex-wrap:wrap;text-align:center}.footer-link-strip__actions{display:flex;align-items:center;justify-content:center;gap:8px;flex-wrap:wrap}.footer-inner{padding:24px 0 34px}.footer-top{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;text-align:center}.footer-brand{font-size:18px;font-weight:900;color:#111827}.footer-desc{margin:8px 0 0;color:var(--text-faint);font-size:14px;max-width:720px}.footer-links{display:flex;flex-wrap:wrap;justify-content:center;gap:10px}.footer-links a{display:inline-flex;align-items:center;justify-content:center;min-height:40px;padding:0 14px;border-radius:999px;border:1px solid var(--line);background:#f8fafc;font-size:14px;font-weight:800}.footer-copy{margin-top:18px;padding-top:18px;border-top:1px solid #eef2f7;color:var(--text-faint);font-size:13px;text-align:center}.mobile-bottom-nav{position:fixed;left:0;right:0;bottom:0;z-index:1400;display:none;background:rgba(255,255,255,.96);backdrop-filter:saturate(160%) blur(10px);border-top:1px solid rgba(15,23,42,.08);padding:8px 10px calc(8px + env(safe-area-inset-bottom,0px))}.mobile-bottom-nav__inner{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:6px;max-width:640px;margin:0 auto}.mobile-bottom-nav__item{min-width:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;padding:8px 4px 7px;border-radius:12px;color:#6b7280}.mobile-bottom-nav__item svg{width:20px;height:20px;display:block;flex:0 0 auto}.mobile-bottom-nav__label{font-size:11px;line-height:1.1;font-weight:700;letter-spacing:0;white-space:nowrap}.mobile-bottom-nav__item.is-active,.mobile-bottom-nav__item[aria-current="page"]{color:#111827;background:#f3f4f6}.backdrop,.drawer-backdrop{position:fixed;inset:0;background:rgba(15,23,42,.38);z-index:1600}.drawer,.drawer-panel{position:fixed;top:0;right:0;bottom:0;width:min(78vw,360px);background:#fff;box-shadow:-16px 0 40px rgba(15,23,42,.15);z-index:1700;overflow-y:auto;transform:translateX(100%);transition:transform .25s ease}html.is-open .drawer,html.is-open .drawer-panel{transform:translateX(0)}.drawer header,.drawer-panel header{display:flex;align-items:center;justify-content:space-between;padding:16px;border-bottom:1px solid var(--line);position:sticky;top:0;background:#fff;z-index:2}.drawer .section,.drawer-panel .section{padding:16px}.drawer .nav-list,.drawer-panel .nav-list{display:flex;flex-direction:column;gap:4px}.drawer .nav-list a,.drawer-panel .nav-list a{display:flex;align-items:center;justify-content:center;width:100%;min-height:44px;padding:0 12px;border-radius:12px;font-weight:800;color:#111827;background:#f8fafc}.lang-pills--drawer{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}.lang-pills--drawer .lang-pill{width:100%;display:flex;justify-content:center}.drawer-dotrule{width:calc(100% - 32px);margin:0 auto;border-top:1px dashed rgba(15,23,42,.16)}.drawer-quick-stack{display:flex;flex-direction:column;gap:10px;margin-top:14px}.drawer-quick-pill{display:flex;align-items:center;justify-content:center;min-height:44px;border:1px solid #dbe2ea;border-radius:999px;font-weight:800;background:#fff}.visually-hidden-seo{position:absolute!important;width:1px!important;height:1px!important;padding:0!important;margin:-1px!important;overflow:hidden!important;clip:rect(0,0,0,0)!important;white-space:nowrap!important;border:0!important}@media(max-width:980px){.nav{display:none}.hamburger{display:inline-flex;align-items:center;justify-content:center}.nav-right{display:none}.mobile-bottom-nav{display:block}.countdown-bar{min-height:52px;align-items:center;flex-direction:row;justify-content:space-between;gap:10px}.countdown-bar__left{width:auto;min-width:0;flex:1 1 auto}.countdown-bar__actions{width:auto;justify-content:flex-end;flex-wrap:nowrap}.tool-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}@media(max-width:700px){.tool-grid,.tool-grid-2,.speedup-form,.speedup-result-grid{grid-template-columns:1fr}.tool-cta{align-items:flex-start;flex-direction:column}.tool-cta em{white-space:normal}}@media(max-width:640px){.container{width:min(100% - 24px,1180px)}.brand-title{font-size:14px}.brand-sub{display:none}.hero-card,.section-card{border-radius:22px;padding:20px 18px}.hero-card h1{font-size:28px}.tool-thumb,.tool-placeholder{height:112px}.tool-body{padding:12px;min-height:148px}.tool-body h3{font-size:15px;min-height:auto}.tool-body p{font-size:12px;min-height:auto}.countdown-copy{font-size:13px}.countdown-link{min-height:32px;padding:0 10px;font-size:12px}.footer-link-strip__inner{flex-direction:column}}html.is-open body,body.no-scroll{overflow:hidden}</style>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://tilessurvive.net/ru/"},{"@type":"ListItem","position":2,"name":"Инструменты","item":"https://tilessurvive.net/ru/tools/"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Что собрано на этой странице","acceptedAnswer":{"@type":"Answer","text":"Здесь собраны инструменты TilesSurvive.net: помощник событий, калькулятор ускорений, поиск наград и страницы данных."}},{"@type":"Question","name":"Можно ли использовать карточки в разработке","acceptedAnswer":{"@type":"Answer","text":"Инструменты без отдельной страницы показаны как неактивные карточки без ссылки."}},{"@type":"Question","name":"Можно ли пополнять счет на этой странице","acceptedAnswer":{"@type":"Answer","text":"Нет. Нижняя ссылка ведет на внешний справочный ресурс для проверки предложений перед подготовкой к событиям."}}]}</script>
+  <script>(function(){function normalizeLang(code){var low=String(code||'').trim().toLowerCase();if(low==='ko')return 'ko';if(low==='en')return 'en';if(low==='ja')return 'ja';if(low==='ru')return 'ru';if(low==='zh-tw'||low==='zh_tw'||low==='tw')return 'zh-tw';return 'ru'}function applyLang(lang){lang=normalizeLang(lang);var currentPath=location.pathname.replace(/^\/(ko|en|ja|ru|zh-tw)(\/|$)/i,'/');if(currentPath==='')currentPath='/';location.href='/' + lang + currentPath}window.TS_LANG={normalize:normalizeLang,apply:applyLang}})();</script>
 </head>
 <body>
+  <a class="skip-link" href="#main">Перейти к содержанию</a>
   <div id="site-header"></div>
-  <main class="container page-main" id="main" role="main">
-    <nav class="tool-breadcrumb" aria-label="Breadcrumb">
-      <a href="/ru/">???????</a><span>/</span><span>???????????</span>
-    </nav>
-
-    <section class="hero-card" aria-labelledby="toolsTitle">
-      <div class="eyebrow">TilesSurvive.net Tools</div>
-      <h1 id="toolsTitle">??????????? Tiles Survive</h1>
-      <p>??? ??? ???????? ???????? ? ????????? ???????, ?????????????, ?????? ??????, ???? ?????? ? ??????.</p>
-      <p class="hero-note">??????? ??????????? ????? ?? ???????? ????????, ? ??????? ???????????? ???????? ?????????? ??? ??????.</p>
-    </section>
-
-    <section class="home-section section-card" aria-labelledby="availableToolsTitle">
-      <div class="section-head"><div><h2 id="availableToolsTitle">????????? ???????????</h2><p>????????, ??????? ??? ????? ???????????? ??? ?????????? ? ???????? ? ???????? ??????.</p></div></div>
-      <div class="tool-grid">
-          <article class="tool-card is-linked">
-            <a class="tool-thumb" href="/ru/event-helper/">
-              <img src="/img/home/calculator.png" alt="???????? ???????" loading="lazy" />
-            </a>
-            <div class="tool-body">
-              <h3>???????? ???????</h3>
-              <p>??????? ??????? ?? ???????, ????????? ?????????, ????? ?????? ? ??????? ????????????.</p>
-              <a class="tool-link" href="/ru/event-helper/">???????</a>
-            </div>
-          </article>
-<article class="tool-card is-linked">
-            <a class="tool-thumb" href="/ru/database/alliance-duel/">
-              <img src="/img/database/alliance-duel-guide.webp" alt="?????? ????? ????????" loading="lazy" />
-            </a>
-            <div class="tool-body">
-              <h3>?????? ????? ????????</h3>
-              <p>??????? ??????? ? ????????? ????? ???????? ????? ?????????.</p>
-              <a class="tool-link" href="/ru/database/alliance-duel/">????????</a>
-            </div>
-          </article>
-<article class="tool-card is-linked">
-            <a class="tool-thumb" href="/ru/guides/gift-code-how-to-use/">
-              <img src="/img/guides/gift-code-how-to-use.png" alt="??? ??????? ????" loading="lazy" />
-            </a>
-            <div class="tool-body">
-              <h3>??? ??????? ????</h3>
-              <p>??????? ???? ????? ? ?????????? ?????????? ????? ????? ?????????.</p>
-              <a class="tool-link" href="/ru/guides/gift-code-how-to-use/">????????</a>
-            </div>
-          </article>
-      </div>
-    </section>
-
-    <section class="home-section section-card" aria-labelledby="comingToolsTitle">
-      <div class="section-head"><div><h2 id="comingToolsTitle">??????? ????????????</h2><p>???????????? ??? ??????? ??????? ???????? ??? ???????? ???????? ??? ??????.</p></div></div>
-      <div class="tool-grid">
-          <article class="tool-card is-linked">
-            <a class="tool-thumb" href="/ru/tools/speedup-calculator/">
-              <img src="/img/home/calculator.png" alt="Калькулятор ускорений" loading="lazy" />
-            </a>
-            <div class="tool-body">
-              <h3>Калькулятор ускорений</h3>
-              <p>Сложите время ускорений перед событиями.</p>
-              <a class="tool-link" href="/ru/tools/speedup-calculator/">Рассчитать</a>
-            </div>
-          </article>
-<article class="tool-card tool-card-disabled" aria-disabled="true">
-            <div class="tool-placeholder" aria-hidden="true">?</div>
-            <div class="tool-body">
-              <h3>??????????? ????? ????</h3>
-              <p>????????? ???? ??????? ?? ???????? ???? ? ?????????????.</p>
-              <span class="tool-pill">?????</span>
-            </div>
-          </article>
-<article class="tool-card tool-card-disabled" aria-disabled="true">
-            <div class="tool-placeholder" aria-hidden="true">?</div>
-            <div class="tool-body">
-              <h3>????? ??????</h3>
-              <p>???????? ????? ??????? ? ?????? ?? ?????? ????????.</p>
-              <span class="tool-pill">?????</span>
-            </div>
-          </article>
-<article class="tool-card tool-card-disabled" aria-disabled="true">
-            <div class="tool-placeholder" aria-hidden="true">?</div>
-            <div class="tool-body">
-              <h3>????????? ???????</h3>
-              <p>?????? ????????? ?????????? ????? ???????? ??????????.</p>
-              <span class="tool-pill">?????</span>
-            </div>
-          </article>
-<article class="tool-card tool-card-disabled" aria-disabled="true">
-            <div class="tool-placeholder" aria-hidden="true">?</div>
-            <div class="tool-body">
-              <h3>??????????? ??????????</h3>
-              <p>??????? ??????????? ????????? ?????????? ? ????????????? ??????????.</p>
-              <span class="tool-pill">?????</span>
-            </div>
-          </article>
-<article class="tool-card tool-card-disabled" aria-disabled="true">
-            <div class="tool-placeholder" aria-hidden="true">?</div>
-            <div class="tool-body">
-              <h3>??????????? ???????? ??????</h3>
-              <p>????????? ?????? ??????? ?????? ? ????????? ?? ????.</p>
-              <span class="tool-pill">?????</span>
-            </div>
-          </article>
-<article class="tool-card tool-card-disabled" aria-disabled="true">
-            <div class="tool-placeholder" aria-hidden="true">?</div>
-            <div class="tool-body">
-              <h3>??????????? ??????? ??????</h3>
-              <p>??????? ?????????? ?? ?????? ??????? ? ???????? ???????.</p>
-              <span class="tool-pill">?????</span>
-            </div>
-          </article>
-<article class="tool-card tool-card-disabled" aria-disabled="true">
-            <div class="tool-placeholder" aria-hidden="true">?</div>
-            <div class="tool-body">
-              <h3>??????????? ??????? ??????</h3>
-              <p>??????? ??????????? ???? ? ????????? ??????? ??????.</p>
-              <span class="tool-pill">?????</span>
-            </div>
-          </article>
-      </div>
-    </section>
-
-    <section class="home-section section-card" aria-labelledby="dataLinksTitle">
-      <div class="section-head"><div><h2 id="dataLinksTitle">???????? ?????? ?????</h2><p>???????????? ???????? ???? ??????, ??????? ?????? ????????? ?????? ? ??????????????.</p></div></div>
-      <div class="tool-grid-2">
-          <article class="tool-card is-linked">
-            <a class="tool-thumb" href="/ru/database/hero-exp/">
-              <img src="/img/database/hero-exp-guide.webp" alt="???? ??????" loading="lazy" />
-            </a>
-            <div class="tool-body">
-              <h3>???? ??????</h3>
-              <p>??????? ???? ?????? ????? ????????????? ???????.</p>
-              <a class="tool-link" href="/ru/database/hero-exp/">????????</a>
-            </div>
-          </article>
-<article class="tool-card is-linked">
-            <a class="tool-thumb" href="/ru/database/hero-star/">
-              <img src="/img/database/hero-star-guide.webp" alt="?????? ??????" loading="lazy" />
-            </a>
-            <div class="tool-body">
-              <h3>?????? ??????</h3>
-              <p>????? ??????? ? ???? ????? ?????? ??????.</p>
-              <a class="tool-link" href="/ru/database/hero-star/">????????</a>
-            </div>
-          </article>
-<article class="tool-card is-linked">
-            <a class="tool-thumb" href="/ru/database/skill-book/">
-              <img src="/img/database/skill-book-guide.webp" alt="????? ???????" loading="lazy" />
-            </a>
-            <div class="tool-body">
-              <h3>????? ???????</h3>
-              <p>??????? ????? ??????? ????? ????????????? ???????? ???????.</p>
-              <a class="tool-link" href="/ru/database/skill-book/">????????</a>
-            </div>
-          </article>
-<article class="tool-card is-linked">
-            <a class="tool-thumb" href="/ru/database/exclusive-gear/">
-              <img src="/img/database/exclusive-gear-guide.webp" alt="???????????? ??????????" loading="lazy" />
-            </a>
-            <div class="tool-body">
-              <h3>???????????? ??????????</h3>
-              <p>??????? ?????? ?????????? ??? ???????????? ??????????.</p>
-              <a class="tool-link" href="/ru/database/exclusive-gear/">????????</a>
-            </div>
-          </article>
-<article class="tool-card is-linked">
-            <a class="tool-thumb" href="/ru/database/legend-gear-star/">
-              <img src="/img/database/legend-gear-star-guide.webp" alt="?????? ???????????? ??????????" loading="lazy" />
-            </a>
-            <div class="tool-body">
-              <h3>?????? ???????????? ??????????</h3>
-              <p>??????? ?????? ????? ??????????? ???????????? ??????????.</p>
-              <a class="tool-link" href="/ru/database/legend-gear-star/">????????</a>
-            </div>
-          </article>
-<article class="tool-card is-linked">
-            <a class="tool-thumb" href="/ru/database/vip-point/">
-              <img src="/img/database/vip-point-guide.webp" alt="VIP ????" loading="lazy" />
-            </a>
-            <div class="tool-body">
-              <h3>VIP ????</h3>
-              <p>??????? VIP ???? ????? ????????????? ??????? ? ??????????.</p>
-              <a class="tool-link" href="/ru/database/vip-point/">????????</a>
-            </div>
-          </article>
-      </div>
-    </section>
-
-    <section class="home-section section-card" aria-labelledby="eventCtaTitle">
-      <div class="section-head"><div><h2 id="eventCtaTitle">?????? ??????????</h2><p>??????? ??????? ??????????? ??????? ? ?????? ???????.</p></div></div>
-      <a class="tool-cta" href="/ru/event-helper/"><div><strong>??????? ???????? ???????</strong><span>????????? ???????, ????? ?????? ? ??????? ???????????? ??????? ? ????? ?????.</span></div><em>???????</em></a>
-    </section>
-
-    <section class="home-section section-card" aria-labelledby="lootbarTitle">
-      <div class="section-head"><div><h2 id="lootbarTitle">????????? top-up ???????????</h2><p>????? ???????? ???????? ? ???????? ???????? ???????? ?????? ?????? ? ????????? ???????????.</p></div></div>
-      <a class="tool-cta" href="https://lootbar.gg/shop/ten/top-up/tiles-survive" target="_blank" rel="sponsored noopener noreferrer"><div><strong>????????? ??????????? ????? ?????????</strong><span>????? ?????? ???????? ???????? ????????? ?????? ? ??????.</span></div><em>???????? LootBar</em></a>
-    </section>
-
-    <section class="home-section section-card" aria-labelledby="faqTitle">
-      <div class="section-head"><div><h2 id="faqTitle">FAQ</h2></div></div>
-      <div class="tool-faq">
-        <details><summary>????? ??????????? ??????? ??????</summary><p>????? ??????? ???????? TilesSurvive.net ??? ?????????? ? ????????, ?????????????, ?????? ?????? ? ???????? ??????.</p></details>
-        <details><summary>????? ???????? ?? ???????? ????????</summary><p>???. ? ??? ??? ??? ???????? ???????, ??????? ?????? ????????? ?? ?????????.</p></details>
-        <details><summary>????? ???????????? ?????? ?????????? ???????????</summary><p>??????????? ? ???????????? ????????? ? ??????? ????? ???????? ? ????????? ???????? ???????.</p></details>
-      </div>
-    </section>
-
-    <section class="home-section section-card" aria-labelledby="sourceNoteTitle">
-      <h2 id="sourceNoteTitle">??????????</h2>
-      <p class="tool-source">???? ??? ???????? ???????? ???????? TilesSurvive.net ?? ??????????? ????????? ????????????.</p>
-    </section>
+  <header class="site-header" role="banner"><div class="container nav-bar"><div class="nav-left"><a class="brand" href="/ru/" aria-label="TilesSurvive.net Главная"><img class="brand-logo" src="/img/logo-tilessurvive.png" alt="TilesSurvive.net" width="30" height="30" /><span class="brand-text"><span class="brand-title">TilesSurvive.net</span><span class="brand-sub">Tiles Survive: данные, гайды, коды и инструменты</span></span></a><nav class="nav" id="primaryNav" role="navigation" aria-label="Меню"><a href="/ru/buildings/">Здания</a>
+          <a href="/ru/heroes/">Герои</a>
+          <a href="/ru/behemoths/">Бегемоты</a>
+          <a href="/ru/database/">База данных</a>
+          <a href="/ru/guides/">Гайды</a>
+          <a href="/ru/seasons/">Сезоны</a></nav></div><button class="hamburger" id="menuToggle" aria-label="Меню" aria-controls="mobileDrawer" aria-expanded="false">☰</button><div class="nav-right"><div id="langDropdownHeader" class="lang-pills" aria-label="Language"></div></div></div></header>
+  <section class="countdown-bar-wrap" aria-label="Подарочные коды"><div class="container countdown-bar"><div class="countdown-bar__left"><span class="countdown-badge">Подарочные коды</span><div class="countdown-copy"><strong>Обратный отсчет кодов Tiles Survive</strong></div></div><div class="countdown-bar__actions"><a class="countdown-link" href="/ru/codes/">Новые коды</a><a class="countdown-link" href="/ru/guides/gift-code-how-to-use/">Как активировать</a></div></div></section>
+  <div class="backdrop drawer-backdrop" id="backdrop" hidden></div><aside class="drawer drawer-panel" id="mobileDrawer" aria-hidden="true" aria-label="Меню"><header><strong>Меню</strong><button id="btnClose" aria-label="Закрыть" style="background:none;border:0;font-size:20px;cursor:pointer">✕</button></header><div class="section"><div id="langDropdownDrawer" class="lang-pills lang-pills--drawer" aria-label="Language"></div></div><div class="drawer-dotrule" aria-hidden="true"></div><div class="section"><div class="nav-list" role="navigation" aria-label="Меню"><a href="/ru/buildings/">Здания</a>
+          <a href="/ru/heroes/">Герои</a>
+          <a href="/ru/behemoths/">Бегемоты</a>
+          <a href="/ru/database/">База данных</a>
+          <a href="/ru/guides/">Гайды</a>
+          <a href="/ru/seasons/">Сезоны</a></div><div class="drawer-quick-stack"><a class="drawer-quick-pill js-drawer-close" href="https://discord.gg/sUqbBskd" target="_blank" rel="noopener noreferrer">Discord</a><a class="drawer-quick-pill js-drawer-close" href="/ru/codes/">Подарочные коды</a></div></div></aside>
+  <main class="container page-main" id="main" role="main" aria-label="Основное содержимое">
+    <nav class="tool-breadcrumb" aria-label="Breadcrumb"><a href="/ru/">Главная</a><span>/</span><span aria-current="page">Инструменты</span></nav>
+    <section class="hero-card" aria-labelledby="toolsTitle"><div class="eyebrow">TilesSurvive.net Tools</div><h1 id="toolsTitle">Инструменты Tiles Survive</h1><p>Откройте помощник событий, калькулятор ускорений, поиск наград и ссылки на базу данных из одного удобного раздела.</p><p class="hero-note">Ссылки ведут только на существующие страницы. Планируемые калькуляторы показаны как неактивные карточки.</p></section>
+    <section class="home-section section-card" aria-labelledby="availableToolsTitle"><div class="section-head"><h2 id="availableToolsTitle">Доступные инструменты</h2><p>Инструменты и справочные страницы, которые уже можно открыть для подготовки к событиям.</p></div><div class="tool-grid"><article class="tool-card is-linked"><a class="tool-thumb" href="/ru/event-helper/"><img src="/img/home/calculator.png" alt="Помощник событий" loading="lazy" /></a><div class="tool-body"><h3>Помощник событий</h3><p>Проверьте сегодняшние события, поиск наград и базовый план действий.</p><div class="tool-meta"><span class="chip">Инструменты</span></div><a class="tool-link" href="/ru/event-helper/">Открыть</a></div></article>
+<article class="tool-card is-linked"><a class="tool-thumb" href="/ru/tools/speedup-calculator/"><img src="/img/home/calculator.png" alt="Калькулятор ускорений" loading="lazy" /></a><div class="tool-body"><h3>Калькулятор ускорений</h3><p>Сложите время ускорений и проверьте общий запас перед событием.</p><div class="tool-meta"><span class="chip">Инструменты</span></div><a class="tool-link" href="/ru/tools/speedup-calculator/">Посчитать</a></div></article>
+<article class="tool-card is-linked"><a class="tool-thumb" href="/ru/database/alliance-duel/"><img src="/img/database/alliance-duel-guide.webp" alt="Данные дуэли альянсов" loading="lazy" /></a><div class="tool-body"><h3>Данные дуэли альянсов</h3><p>Посмотрите поток события альянса и начисление очков.</p><div class="tool-meta"><span class="chip">База данных</span></div><a class="tool-link" href="/ru/database/alliance-duel/">Открыть</a></div></article>
+<article class="tool-card is-linked"><a class="tool-thumb" href="/ru/guides/gift-code-how-to-use/"><img src="/img/guides/gift-code-how-to-use.png" alt="Гайд по кодам" loading="lazy" /></a><div class="tool-body"><h3>Гайд по кодам</h3><p>Проверьте, как находить и активировать коды перед подготовкой к событию.</p><div class="tool-meta"><span class="chip">Гайды</span></div><a class="tool-link" href="/ru/guides/gift-code-how-to-use/">Открыть</a></div></article></div></section>
+    <section class="home-section section-card" aria-labelledby="comingToolsTitle"><div class="section-head"><h2 id="comingToolsTitle">Калькуляторы в разработке</h2><p>Инструменты без отдельной страницы показаны неактивными карточками.</p></div><div class="tool-grid"><article class="tool-card tool-card-disabled" aria-disabled="true"><div class="tool-placeholder" aria-hidden="true">＋</div><div class="tool-body"><h3>Калькулятор силы</h3><p>Инструмент для оценки прироста силы перед событиями роста.</p><span class="tool-pill">В разработке</span></div></article>
+<article class="tool-card tool-card-disabled" aria-disabled="true"><div class="tool-placeholder" aria-hidden="true">＋</div><div class="tool-body"><h3>Поиск наград</h3><p>Инструмент для быстрого поиска наград события и нужных ресурсов.</p><span class="tool-pill">В разработке</span></div></article>
+<article class="tool-card tool-card-disabled" aria-disabled="true"><div class="tool-placeholder" aria-hidden="true">＋</div><div class="tool-body"><h3>Календарь событий</h3><p>Календарь для просмотра событий по дням недели.</p><span class="tool-pill">В разработке</span></div></article>
+<article class="tool-card tool-card-disabled" aria-disabled="true"><div class="tool-placeholder" aria-hidden="true">＋</div><div class="tool-body"><h3>Калькулятор снаряжения</h3><p>Инструмент для планирования улучшений и материалов снаряжения.</p><span class="tool-pill">В разработке</span></div></article>
+<article class="tool-card tool-card-disabled" aria-disabled="true"><div class="tool-placeholder" aria-hidden="true">＋</div><div class="tool-body"><h3>Калькулятор осколков героев</h3><p>Инструмент для планирования осколков героев.</p><span class="tool-pill">В разработке</span></div></article>
+<article class="tool-card tool-card-disabled" aria-disabled="true"><div class="tool-placeholder" aria-hidden="true">＋</div><div class="tool-body"><h3>Калькулятор навыков героев</h3><p>Инструмент для расчета книг навыков и роста навыков.</p><span class="tool-pill">В разработке</span></div></article>
+<article class="tool-card tool-card-disabled" aria-disabled="true"><div class="tool-placeholder" aria-hidden="true">＋</div><div class="tool-body"><h3>Калькулятор уровня героя</h3><p>Инструмент для расчета ресурсов и опыта уровня героя.</p><span class="tool-pill">В разработке</span></div></article></div></section>
+    <section class="home-section section-card" aria-labelledby="dataLinksTitle"><div class="section-head"><h2 id="dataLinksTitle">Полезные страницы данных</h2><p>Справочные страницы для планирования событий и ресурсов.</p></div><div class="tool-grid-2"><article class="tool-card is-linked"><a class="tool-thumb" href="/ru/database/hero-exp/"><img src="/img/database/hero-exp-guide.webp" alt="Опыт героев" loading="lazy" /></a><div class="tool-body"><h3>Опыт героев</h3><p>Данные опыта, нужного для развития героев.</p><div class="tool-meta"></div><a class="tool-link" href="/ru/database/hero-exp/">Открыть</a></div></article>
+<article class="tool-card is-linked"><a class="tool-thumb" href="/ru/database/hero-star/"><img src="/img/database/hero-star-guide.webp" alt="Таблица звезд героев" loading="lazy" /></a><div class="tool-body"><h3>Таблица звезд героев</h3><p>Проверьте звезды героев и план осколков.</p><div class="tool-meta"></div><a class="tool-link" href="/ru/database/hero-star/">Открыть</a></div></article>
+<article class="tool-card is-linked"><a class="tool-thumb" href="/ru/database/skill-book/"><img src="/img/database/skill-book-guide.webp" alt="Книги навыков" loading="lazy" /></a><div class="tool-body"><h3>Книги навыков</h3><p>Данные книг навыков для развития навыков.</p><div class="tool-meta"></div><a class="tool-link" href="/ru/database/skill-book/">Открыть</a></div></article>
+<article class="tool-card is-linked"><a class="tool-thumb" href="/ru/database/exclusive-gear/"><img src="/img/database/exclusive-gear-guide.webp" alt="Эксклюзивное снаряжение" loading="lazy" /></a><div class="tool-body"><h3>Эксклюзивное снаряжение</h3><p>Поток улучшения и материалы эксклюзивного снаряжения.</p><div class="tool-meta"></div><a class="tool-link" href="/ru/database/exclusive-gear/">Открыть</a></div></article>
+<article class="tool-card is-linked"><a class="tool-thumb" href="/ru/database/legend-gear-star/"><img src="/img/database/legend-gear-star-guide.webp" alt="Звезды легендарного снаряжения" loading="lazy" /></a><div class="tool-body"><h3>Звезды легендарного снаряжения</h3><p>Звезды легендарного снаряжения и бонусные атрибуты.</p><div class="tool-meta"></div><a class="tool-link" href="/ru/database/legend-gear-star/">Открыть</a></div></article>
+<article class="tool-card is-linked"><a class="tool-thumb" href="/ru/database/vip-point/"><img src="/img/database/vip-point-guide.webp" alt="VIP очки" loading="lazy" /></a><div class="tool-body"><h3>VIP очки</h3><p>VIP очки и накопительная структура.</p><div class="tool-meta"></div><a class="tool-link" href="/ru/database/vip-point/">Открыть</a></div></article></div></section>
+    <section class="home-section section-card" aria-labelledby="eventCtaTitle"><div class="section-head"><h2 id="eventCtaTitle">Перейти к подготовке событий</h2><p>Проверьте сегодняшние события, поиск наград и инструменты планирования.</p></div><a class="tool-cta" href="/ru/event-helper/"><div><strong>Открыть помощник событий</strong><span>Проверьте сегодняшние события, поиск наград и инструменты планирования.</span></div><em>Открыть</em></a></section>
+    <section class="home-section section-card" aria-labelledby="lootbarTitle"><div class="section-head"><h2 id="lootbarTitle">Перед пополнением</h2><p>Перед активным участием в событии спокойно сравните нужные ресурсы и доступные предложения.</p></div><a class="tool-cta" href="https://lootbar.gg/shop/ten/top-up/tiles-survive" target="_blank" rel="sponsored noopener noreferrer"><div><strong>Проверьте бонусы пополнения перед событием</strong><span>Перед расходом ресурсов можно заранее посмотреть нужные пакеты и доступные предложения.</span></div><em>Смотреть LootBar</em></a></section>
+    <section class="home-section section-card" aria-labelledby="faqTitle"><div class="section-head"><h2 id="faqTitle">FAQ</h2></div><div class="tool-faq"><details><summary>Что собрано на этой странице</summary><p>Здесь собраны инструменты TilesSurvive.net: помощник событий, калькулятор ускорений, поиск наград и страницы данных.</p></details>
+<details><summary>Можно ли использовать карточки в разработке</summary><p>Инструменты без отдельной страницы показаны как неактивные карточки без ссылки.</p></details>
+<details><summary>Можно ли пополнять счет на этой странице</summary><p>Нет. Нижняя ссылка ведет на внешний справочный ресурс для проверки предложений перед подготовкой к событиям.</p></details></div></section>
+    <section class="home-section section-card" aria-labelledby="sourceNoteTitle"><h2 id="sourceNoteTitle">Примечание</h2><p class="tool-source">Эта страница помогает быстро найти инструменты и справочные страницы TilesSurvive.net.</p></section>
   </main>
+  <footer class="site-footer" role="contentinfo" aria-label="Подвал"><div class="footer-link-strip"><div class="container footer-link-strip__inner"><div class="footer-link-strip__actions"><a class="countdown-link" href="https://discord.gg/sUqbBskd" target="_blank" rel="noopener noreferrer">Discord</a><a class="countdown-link" href="/ru/codes/">Подарочные коды</a></div></div></div><div class="container footer-inner"><div class="footer-top"><div><div class="footer-brand">TilesSurvive.net</div><p class="footer-desc">Неофициальный справочный хаб сообщества с данными, гайдами, кодами и инструментами для Tiles Survive.</p></div><nav class="footer-links" aria-label="Подвал"><a href="/ru/about/">О сайте</a><a href="/ru/privacy/">Конфиденциальность</a></nav></div><div class="footer-copy">© 2026 TilesSurvive.net. All rights reserved.</div></div></footer>
+  <nav class="mobile-bottom-nav" aria-label="Быстрая мобильная навигация"><div class="mobile-bottom-nav__inner"><a class="mobile-bottom-nav__item" href="/ru/" data-mobile-nav="home"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 10.5 12 4l8 6.5V20a1 1 0 0 1-1 1h-4v-6H9v6H5a1 1 0 0 1-1-1v-9.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg><span class="mobile-bottom-nav__label">Главная</span></a><a class="mobile-bottom-nav__item" href="/ru/database/" data-mobile-nav="database"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><ellipse cx="12" cy="6" rx="6" ry="3" stroke="currentColor" stroke-width="1.8"/><path d="M6 6v6c0 1.657 2.686 3 6 3s6-1.343 6-3V6M6 12v6c0 1.657 2.686 3 6 3s6-1.343 6-3v-6" stroke="currentColor" stroke-width="1.8"/></svg><span class="mobile-bottom-nav__label">DB</span></a><a class="mobile-bottom-nav__item" href="/ru/guides/" data-mobile-nav="guides"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 5.5A2.5 2.5 0 0 1 8.5 3H19v16H8.5A2.5 2.5 0 0 0 6 21V5.5Z" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M6 6h11" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span class="mobile-bottom-nav__label">Гайды</span></a><a class="mobile-bottom-nav__item" href="/ru/tools/" data-mobile-nav="tools"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M4 7h16M7 4v6M12 4v6M17 4v6M6 14h12M8 18h8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg><span class="mobile-bottom-nav__label">Инструменты</span></a></div></nav>
+  <script>document.addEventListener('DOMContentLoaded',function(){var html=document.documentElement,body=document.body,drawer=document.getElementById('mobileDrawer'),backdrop=document.getElementById('backdrop'),btnOpen=document.getElementById('menuToggle'),btnClose=document.getElementById('btnClose');function openDrawer(){html.classList.add('is-open');body.classList.add('no-scroll');if(backdrop)backdrop.hidden=false;if(drawer)drawer.setAttribute('aria-hidden','false');if(btnOpen)btnOpen.setAttribute('aria-expanded','true')}function closeDrawer(){html.classList.remove('is-open');body.classList.remove('no-scroll');if(backdrop)backdrop.hidden=true;if(drawer)drawer.setAttribute('aria-hidden','true');if(btnOpen)btnOpen.setAttribute('aria-expanded','false')}if(btnOpen)btnOpen.addEventListener('click',openDrawer);if(btnClose)btnClose.addEventListener('click',closeDrawer);if(backdrop)backdrop.addEventListener('click',closeDrawer);window.addEventListener('keydown',function(e){if(e.key==='Escape')closeDrawer()});if(drawer){Array.prototype.forEach.call(drawer.querySelectorAll('a'),function(link){link.addEventListener('click',closeDrawer)})}});</script>
+  <script>(function(){var LANGS=[{"code":"ko","label":"KO"},{"code":"en","label":"EN"},{"code":"ja","label":"JA"},{"code":"ru","label":"RU"},{"code":"zh-tw","label":"TW"}];function render(root){if(!root)return;var cur='ru';root.innerHTML=LANGS.map(function(lang){return '<button type="button" class="lang-pill" data-lang="'+lang.code+'" aria-current="'+(lang.code===cur?'true':'false')+'">'+lang.label+'</button>'}).join('')}function bind(root){if(!root)return;root.addEventListener('click',function(e){var btn=e.target.closest('.lang-pill[data-lang]');if(!btn)return;e.preventDefault();window.TS_LANG.apply(btn.getAttribute('data-lang'))})}document.addEventListener('DOMContentLoaded',function(){var header=document.getElementById('langDropdownHeader'),drawer=document.getElementById('langDropdownDrawer');render(header);render(drawer);bind(header);bind(drawer)})})();</script>
+  <script>(function(){function updateBottomNavActive(){var pathname=location.pathname.toLowerCase();Array.prototype.forEach.call(document.querySelectorAll('.mobile-bottom-nav__item'),function(item){item.classList.remove('is-active');item.removeAttribute('aria-current');var key=item.getAttribute('data-mobile-nav');var active=false;if(key==='home')active=pathname==='/ru/'||pathname==='/ru';else active=pathname.indexOf('/ru/'+key)===0;if(active){item.classList.add('is-active');item.setAttribute('aria-current','page')}})}document.addEventListener('DOMContentLoaded',updateBottomNavActive)})();</script>
   <div id="site-footer"></div>
   <script src="/js/layout.js"></script>
 </body>
