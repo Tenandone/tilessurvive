@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-20",
+  "generatedAt": "2026-05-21",
   "timeBasisNote": {
     "ko": "샘플 이벤트 시간은 원본 공유 자료 구조를 바탕으로 한 예시입니다. 실제 게임 내 일정과 비교 검증이 필요합니다.",
     "en": "Sample event times are reorganized from shared helper material and should be checked against the live game schedule.",
@@ -7,7 +7,4234 @@
     "zh-tw": "範例活動時間根據分享資料重新整理，實際使用前請與遊戲內排程再次確認。",
     "ru": "Пример времени событий переработан на основе общих материалов. Перед использованием проверьте расписание в игре."
   },
+  "dataSourceNote": {
+    "ko": "이 데이터는 원본 Event Helper 정적 데이터에서 추출한 운영 후보입니다. 게임 내 최신성 검증이 필요합니다.",
+    "en": "This is an operational candidate extracted from the original Event Helper static data. Live in-game verification is required.",
+    "ja": "このデータは元の Event Helper 静的データから抽出した運用候補です。ゲーム内の最新情報との照合が必要です。",
+    "zh-tw": "此資料是由原始 Event Helper 靜態資料擷取的營運候選資料，仍需與遊戲內最新資訊核對。",
+    "ru": "Эти данные являются кандидатом для использования, извлечённым из статических данных оригинального Event Helper. Требуется проверка актуальности в игре."
+  },
+  "source": "data/event-helper-events-grouped-draft.json",
+  "sourceBlock": "standard-calendar",
+  "selectionRule": "confidence == source-imported && reviewNeeded == false",
+  "verified": false,
+  "confidence": "source-imported",
   "events": [
+    {
+      "id": "standard-mon-0300-big-game-hero-upgrade-1",
+      "sourceBlock": "standard-calendar",
+      "groupKey": {
+        "day": "mon",
+        "time": "03:00",
+        "modeKey": "big-game",
+        "activityKey": "hero-upgrade"
+      },
+      "sourceRawRows": [
+        {
+          "day": 1,
+          "time": "03:00",
+          "mode": "Игра по-крупному",
+          "activity": "Улучшение героя",
+          "action": "Алмазы за покупку наборов",
+          "points": 60,
+          "overlapModes": []
+        },
+        {
+          "day": 1,
+          "time": "03:00",
+          "mode": "Игра по-крупному",
+          "activity": "Улучшение героя",
+          "action": "Книга навыков героя",
+          "points": 857,
+          "overlapModes": []
+        },
+        {
+          "day": 1,
+          "time": "03:00",
+          "mode": "Игра по-крупному",
+          "activity": "Улучшение героя",
+          "action": "Фрагмент легендарного героя",
+          "points": 9000,
+          "overlapModes": []
+        },
+        {
+          "day": 1,
+          "time": "03:00",
+          "mode": "Игра по-крупному",
+          "activity": "Улучшение героя",
+          "action": "Фрагмент редкого героя",
+          "points": 150,
+          "overlapModes": []
+        },
+        {
+          "day": 1,
+          "time": "03:00",
+          "mode": "Игра по-крупному",
+          "activity": "Улучшение героя",
+          "action": "Фрагмент эпического героя",
+          "points": 1000,
+          "overlapModes": []
+        }
+      ],
+      "eventType": "hero",
+      "scheduleType": "source-grouped",
+      "days": [
+        "mon"
+      ],
+      "startTime": "03:00",
+      "endTime": null,
+      "timeBasis": "source-msk-reset",
+      "serverResetBased": true,
+      "priority": 1,
+      "mode": {
+        "ko": "빅 게임",
+        "en": "Big Game",
+        "ja": "ビッグゲーム",
+        "zh-tw": "大型活動",
+        "ru": "Игра по-крупному"
+      },
+      "title": {
+        "ko": "빅 게임 - 영웅 강화",
+        "en": "Big Game - Hero Upgrade",
+        "ja": "ビッグゲーム - 英雄強化",
+        "zh-tw": "大型活動 - 英雄強化",
+        "ru": "Игра по-крупному - Улучшение героя"
+      },
+      "description": {
+        "ko": "빅 게임 / 영웅 강화 원본 Event Helper 데이터 기반 초안입니다. 게임 내 최신성 검증이 필요합니다.",
+        "en": "Draft based on original Event Helper data for Big Game / Hero Upgrade. Live in-game verification is required.",
+        "ja": "ビッグゲーム / 英雄強化 の元 Event Helper データに基づくドラフトです。ゲーム内の最新情報との照合が必要です。",
+        "zh-tw": "大型活動 / 英雄強化 的原始 Event Helper 資料草稿，仍需與遊戲內最新資訊核對。",
+        "ru": "Черновик на основе данных оригинального Event Helper для Игра по-крупному / Улучшение героя. Требуется проверка актуальности в игре."
+      },
+      "activities": [
+        "hero-upgrade",
+        "skills"
+      ],
+      "rewards": [
+        "diamonds",
+        "skill-books",
+        "hero-fragments"
+      ],
+      "rewardItems": [],
+      "scoreRules": [
+        {
+          "id": "diamond-pack-purchase",
+          "sourceAction": "Алмазы за покупку наборов",
+          "action": {
+            "ko": "패키지 구매 다이아",
+            "en": "Diamonds from pack purchases",
+            "ja": "パック購入のダイヤ",
+            "zh-tw": "購買禮包獲得鑽石",
+            "ru": "Алмазы за покупку наборов"
+          },
+          "metric": "diamonds",
+          "pointsPerUnit": null,
+          "sourcePoints": 60,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        },
+        {
+          "id": "hero-skill-book",
+          "sourceAction": "Книга навыков героя",
+          "action": {
+            "ko": "영웅 스킬북",
+            "en": "Hero skill book",
+            "ja": "英雄スキルブック",
+            "zh-tw": "英雄技能書",
+            "ru": "Книга навыков героя"
+          },
+          "metric": "skillBooks",
+          "pointsPerUnit": null,
+          "sourcePoints": 857,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        },
+        {
+          "id": "legendary-hero-fragment",
+          "sourceAction": "Фрагмент легендарного героя",
+          "action": {
+            "ko": "전설 영웅 조각",
+            "en": "Legendary hero fragment",
+            "ja": "レジェンド英雄欠片",
+            "zh-tw": "傳說英雄碎片",
+            "ru": "Фрагмент легендарного героя"
+          },
+          "metric": "heroFragments",
+          "pointsPerUnit": null,
+          "sourcePoints": 9000,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        },
+        {
+          "id": "rare-hero-fragment",
+          "sourceAction": "Фрагмент редкого героя",
+          "action": {
+            "ko": "희귀 영웅 조각",
+            "en": "Rare hero fragment",
+            "ja": "レア英雄欠片",
+            "zh-tw": "稀有英雄碎片",
+            "ru": "Фрагмент редкого героя"
+          },
+          "metric": "heroFragments",
+          "pointsPerUnit": null,
+          "sourcePoints": 150,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        },
+        {
+          "id": "epic-hero-fragment",
+          "sourceAction": "Фрагмент эпического героя",
+          "action": {
+            "ko": "에픽 영웅 조각",
+            "en": "Epic hero fragment",
+            "ja": "エピック英雄欠片",
+            "zh-tw": "史詩英雄碎片",
+            "ru": "Фрагмент эпического героя"
+          },
+          "metric": "heroFragments",
+          "pointsPerUnit": null,
+          "sourcePoints": 1000,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        }
+      ],
+      "recommendedActions": {
+        "ko": [],
+        "en": [],
+        "ja": [],
+        "zh-tw": [],
+        "ru": []
+      },
+      "relatedGuides": [],
+      "relatedTools": [],
+      "verified": false,
+      "verifiedAt": null,
+      "lastUpdated": "2026-05-21",
+      "confidence": "source-imported",
+      "reviewNeeded": false,
+      "reviewReasons": [],
+      "sourceNote": {
+        "ko": "원본 Event Helper 데이터 기반입니다. 게임 내 최신성 검증이 필요합니다.",
+        "en": "Based on the original Event Helper data. Live in-game verification is required.",
+        "ja": "元の Event Helper データに基づいています。ゲーム内の最新情報との照合が必要です。",
+        "zh-tw": "根據原始 Event Helper 資料整理，仍需與遊戲內最新資訊核對。",
+        "ru": "На основе данных оригинального Event Helper. Требуется проверка актуальности в игре."
+      },
+      "dataSource": "source-imported",
+      "sourceType": "event-helper-static-extract"
+    },
+    {
+      "id": "standard-mon-2300-big-game-titan-6",
+      "sourceBlock": "standard-calendar",
+      "groupKey": {
+        "day": "mon",
+        "time": "23:00",
+        "modeKey": "big-game",
+        "activityKey": "titan"
+      },
+      "sourceRawRows": [
+        {
+          "day": 1,
+          "time": "23:00",
+          "mode": "Игра по-крупному",
+          "activity": "Титан",
+          "action": "Алмазы за покупку наборов",
+          "points": 60,
+          "overlapModes": []
+        },
+        {
+          "day": 1,
+          "time": "23:00",
+          "mode": "Игра по-крупному",
+          "activity": "Титан",
+          "action": "Клетка титана",
+          "points": 2800,
+          "overlapModes": []
+        },
+        {
+          "day": 1,
+          "time": "23:00",
+          "mode": "Игра по-крупному",
+          "activity": "Титан",
+          "action": "Опыт титана за 100 ед",
+          "points": 200,
+          "overlapModes": []
+        }
+      ],
+      "eventType": "titan",
+      "scheduleType": "source-grouped",
+      "days": [
+        "mon"
+      ],
+      "startTime": "23:00",
+      "endTime": null,
+      "timeBasis": "source-msk-reset",
+      "serverResetBased": true,
+      "priority": 6,
+      "mode": {
+        "ko": "빅 게임",
+        "en": "Big Game",
+        "ja": "ビッグゲーム",
+        "zh-tw": "大型活動",
+        "ru": "Игра по-крупному"
+      },
+      "title": {
+        "ko": "빅 게임 - 타이탄",
+        "en": "Big Game - Titan",
+        "ja": "ビッグゲーム - タイタン",
+        "zh-tw": "大型活動 - 泰坦",
+        "ru": "Игра по-крупному - Титан"
+      },
+      "description": {
+        "ko": "빅 게임 / 타이탄 원본 Event Helper 데이터 기반 초안입니다. 게임 내 최신성 검증이 필요합니다.",
+        "en": "Draft based on original Event Helper data for Big Game / Titan. Live in-game verification is required.",
+        "ja": "ビッグゲーム / タイタン の元 Event Helper データに基づくドラフトです。ゲーム内の最新情報との照合が必要です。",
+        "zh-tw": "大型活動 / 泰坦 的原始 Event Helper 資料草稿，仍需與遊戲內最新資訊核對。",
+        "ru": "Черновик на основе данных оригинального Event Helper для Игра по-крупному / Титан. Требуется проверка актуальности в игре."
+      },
+      "activities": [
+        "titan"
+      ],
+      "rewards": [
+        "diamonds",
+        "titan"
+      ],
+      "rewardItems": [],
+      "scoreRules": [
+        {
+          "id": "diamond-pack-purchase",
+          "sourceAction": "Алмазы за покупку наборов",
+          "action": {
+            "ko": "패키지 구매 다이아",
+            "en": "Diamonds from pack purchases",
+            "ja": "パック購入のダイヤ",
+            "zh-tw": "購買禮包獲得鑽石",
+            "ru": "Алмазы за покупку наборов"
+          },
+          "metric": "diamonds",
+          "pointsPerUnit": null,
+          "sourcePoints": 60,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        },
+        {
+          "id": "titan-cage",
+          "sourceAction": "Клетка титана",
+          "action": {
+            "ko": "타이탄 케이지",
+            "en": "Titan cage",
+            "ja": "タイタンケージ",
+            "zh-tw": "泰坦籠",
+            "ru": "Клетка титана"
+          },
+          "metric": "titan",
+          "pointsPerUnit": null,
+          "sourcePoints": 2800,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        },
+        {
+          "id": "titan-exp-100",
+          "sourceAction": "Опыт титана за 100 ед",
+          "action": {
+            "ko": "타이탄 경험치 100",
+            "en": "Titan EXP per 100",
+            "ja": "タイタン経験値100ごと",
+            "zh-tw": "每100泰坦經驗",
+            "ru": "Опыт титана за 100 ед"
+          },
+          "metric": "titan",
+          "pointsPerUnit": null,
+          "sourcePoints": 200,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        }
+      ],
+      "recommendedActions": {
+        "ko": [],
+        "en": [],
+        "ja": [],
+        "zh-tw": [],
+        "ru": []
+      },
+      "relatedGuides": [],
+      "relatedTools": [],
+      "verified": false,
+      "verifiedAt": null,
+      "lastUpdated": "2026-05-21",
+      "confidence": "source-imported",
+      "reviewNeeded": false,
+      "reviewReasons": [],
+      "sourceNote": {
+        "ko": "원본 Event Helper 데이터 기반입니다. 게임 내 최신성 검증이 필요합니다.",
+        "en": "Based on the original Event Helper data. Live in-game verification is required.",
+        "ja": "元の Event Helper データに基づいています。ゲーム内の最新情報との照合が必要です。",
+        "zh-tw": "根據原始 Event Helper 資料整理，仍需與遊戲內最新資訊核對。",
+        "ru": "На основе данных оригинального Event Helper. Требуется проверка актуальности в игре."
+      },
+      "dataSource": "source-imported",
+      "sourceType": "event-helper-static-extract"
+    },
+    {
+      "id": "standard-mon-all-day-alliance-duel-recon-missions-12",
+      "sourceBlock": "standard-calendar",
+      "groupKey": {
+        "day": "mon",
+        "time": null,
+        "modeKey": "alliance-duel",
+        "activityKey": "recon-missions"
+      },
+      "sourceRawRows": [
+        {
+          "day": 1,
+          "time": null,
+          "mode": "Дуэль союзов",
+          "activity": "Разведмиссии",
+          "action": "Завершить разведмиссию",
+          "points": 37500,
+          "overlapModes": []
+        }
+      ],
+      "eventType": "general",
+      "scheduleType": "source-grouped",
+      "days": [
+        "mon"
+      ],
+      "startTime": null,
+      "endTime": null,
+      "timeBasis": "source-msk-reset",
+      "serverResetBased": true,
+      "priority": 12,
+      "mode": {
+        "ko": "동맹 듀얼",
+        "en": "Alliance Duel",
+        "ja": "同盟デュエル",
+        "zh-tw": "聯盟對決",
+        "ru": "Дуэль союзов"
+      },
+      "title": {
+        "ko": "동맹 듀얼 - 정찰 임무",
+        "en": "Alliance Duel - Recon Missions",
+        "ja": "同盟デュエル - 偵察任務",
+        "zh-tw": "聯盟對決 - 偵察任務",
+        "ru": "Дуэль союзов - Разведмиссии"
+      },
+      "description": {
+        "ko": "동맹 듀얼 / 정찰 임무 원본 Event Helper 데이터 기반 초안입니다. 게임 내 최신성 검증이 필요합니다.",
+        "en": "Draft based on original Event Helper data for Alliance Duel / Recon Missions. Live in-game verification is required.",
+        "ja": "同盟デュエル / 偵察任務 の元 Event Helper データに基づくドラフトです。ゲーム内の最新情報との照合が必要です。",
+        "zh-tw": "聯盟對決 / 偵察任務 的原始 Event Helper 資料草稿，仍需與遊戲內最新資訊核對。",
+        "ru": "Черновик на основе данных оригинального Event Helper для Дуэль союзов / Разведмиссии. Требуется проверка актуальности в игре."
+      },
+      "activities": [
+        "recon-missions",
+        "recon"
+      ],
+      "rewards": [],
+      "rewardItems": [],
+      "scoreRules": [
+        {
+          "id": "complete-recon-mission",
+          "sourceAction": "Завершить разведмиссию",
+          "action": {
+            "ko": "정찰 임무 완료",
+            "en": "Complete a recon mission",
+            "ja": "偵察任務を完了",
+            "zh-tw": "完成偵察任務",
+            "ru": "Завершить разведмиссию"
+          },
+          "metric": "count",
+          "pointsPerUnit": null,
+          "sourcePoints": 37500,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        }
+      ],
+      "recommendedActions": {
+        "ko": [],
+        "en": [],
+        "ja": [],
+        "zh-tw": [],
+        "ru": []
+      },
+      "relatedGuides": [],
+      "relatedTools": [],
+      "verified": false,
+      "verifiedAt": null,
+      "lastUpdated": "2026-05-21",
+      "confidence": "source-imported",
+      "reviewNeeded": false,
+      "reviewReasons": [],
+      "sourceNote": {
+        "ko": "원본 Event Helper 데이터 기반입니다. 게임 내 최신성 검증이 필요합니다.",
+        "en": "Based on the original Event Helper data. Live in-game verification is required.",
+        "ja": "元の Event Helper データに基づいています。ゲーム内の最新情報との照合が必要です。",
+        "zh-tw": "根據原始 Event Helper 資料整理，仍需與遊戲內最新資訊核對。",
+        "ru": "На основе данных оригинального Event Helper. Требуется проверка актуальности в игре."
+      },
+      "dataSource": "source-imported",
+      "sourceType": "event-helper-static-extract"
+    },
+    {
+      "id": "standard-mon-all-day-alliance-duel-resources-13",
+      "sourceBlock": "standard-calendar",
+      "groupKey": {
+        "day": "mon",
+        "time": null,
+        "modeKey": "alliance-duel",
+        "activityKey": "resources"
+      },
+      "sourceRawRows": [
+        {
+          "day": 1,
+          "time": null,
+          "mode": "Дуэль союзов",
+          "activity": "Ресурсы",
+          "action": "Заготовьте 100 древесины",
+          "points": 1,
+          "overlapModes": []
+        },
+        {
+          "day": 1,
+          "time": null,
+          "mode": "Дуэль союзов",
+          "activity": "Ресурсы",
+          "action": "Заготовьте 5 топлива",
+          "points": 1,
+          "overlapModes": []
+        },
+        {
+          "day": 1,
+          "time": null,
+          "mode": "Дуэль союзов",
+          "activity": "Ресурсы",
+          "action": "Соберите 100 еды",
+          "points": 1,
+          "overlapModes": []
+        },
+        {
+          "day": 1,
+          "time": null,
+          "mode": "Дуэль союзов",
+          "activity": "Ресурсы",
+          "action": "Соберите 20 металла",
+          "points": 1,
+          "overlapModes": []
+        }
+      ],
+      "eventType": "resource",
+      "scheduleType": "source-grouped",
+      "days": [
+        "mon"
+      ],
+      "startTime": null,
+      "endTime": null,
+      "timeBasis": "source-msk-reset",
+      "serverResetBased": true,
+      "priority": 13,
+      "mode": {
+        "ko": "동맹 듀얼",
+        "en": "Alliance Duel",
+        "ja": "同盟デュエル",
+        "zh-tw": "聯盟對決",
+        "ru": "Дуэль союзов"
+      },
+      "title": {
+        "ko": "동맹 듀얼 - 자원",
+        "en": "Alliance Duel - Resources",
+        "ja": "同盟デュエル - 資源",
+        "zh-tw": "聯盟對決 - 資源",
+        "ru": "Дуэль союзов - Ресурсы"
+      },
+      "description": {
+        "ko": "동맹 듀얼 / 자원 원본 Event Helper 데이터 기반 초안입니다. 게임 내 최신성 검증이 필요합니다.",
+        "en": "Draft based on original Event Helper data for Alliance Duel / Resources. Live in-game verification is required.",
+        "ja": "同盟デュエル / 資源 の元 Event Helper データに基づくドラフトです。ゲーム内の最新情報との照合が必要です。",
+        "zh-tw": "聯盟對決 / 資源 的原始 Event Helper 資料草稿，仍需與遊戲內最新資訊核對。",
+        "ru": "Черновик на основе данных оригинального Event Helper для Дуэль союзов / Ресурсы. Требуется проверка актуальности в игре."
+      },
+      "activities": [
+        "resources",
+        "gathering"
+      ],
+      "rewards": [
+        "resources"
+      ],
+      "rewardItems": [],
+      "scoreRules": [
+        {
+          "id": "gather-100-wood",
+          "sourceAction": "Заготовьте 100 древесины",
+          "action": {
+            "ko": "목재 100 채집",
+            "en": "Gather 100 wood",
+            "ja": "木材100を採集",
+            "zh-tw": "採集100木材",
+            "ru": "Заготовьте 100 древесины"
+          },
+          "metric": "resourceGathering",
+          "pointsPerUnit": null,
+          "sourcePoints": 1,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        },
+        {
+          "id": "gather-5-fuel",
+          "sourceAction": "Заготовьте 5 топлива",
+          "action": {
+            "ko": "연료 5 채집",
+            "en": "Gather 5 fuel",
+            "ja": "燃料5を採集",
+            "zh-tw": "採集5燃料",
+            "ru": "Заготовьте 5 топлива"
+          },
+          "metric": "resourceGathering",
+          "pointsPerUnit": null,
+          "sourcePoints": 1,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        },
+        {
+          "id": "collect-100-food",
+          "sourceAction": "Соберите 100 еды",
+          "action": {
+            "ko": "식량 100 수집",
+            "en": "Collect 100 food",
+            "ja": "食料100を収集",
+            "zh-tw": "收集100食物",
+            "ru": "Соберите 100 еды"
+          },
+          "metric": "resourceGathering",
+          "pointsPerUnit": null,
+          "sourcePoints": 1,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        },
+        {
+          "id": "collect-20-metal",
+          "sourceAction": "Соберите 20 металла",
+          "action": {
+            "ko": "금속 20 수집",
+            "en": "Collect 20 metal",
+            "ja": "金属20を収集",
+            "zh-tw": "收集20金屬",
+            "ru": "Соберите 20 металла"
+          },
+          "metric": "resourceGathering",
+          "pointsPerUnit": null,
+          "sourcePoints": 1,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        }
+      ],
+      "recommendedActions": {
+        "ko": [],
+        "en": [],
+        "ja": [],
+        "zh-tw": [],
+        "ru": []
+      },
+      "relatedGuides": [],
+      "relatedTools": [],
+      "verified": false,
+      "verifiedAt": null,
+      "lastUpdated": "2026-05-21",
+      "confidence": "source-imported",
+      "reviewNeeded": false,
+      "reviewReasons": [],
+      "sourceNote": {
+        "ko": "원본 Event Helper 데이터 기반입니다. 게임 내 최신성 검증이 필요합니다.",
+        "en": "Based on the original Event Helper data. Live in-game verification is required.",
+        "ja": "元の Event Helper データに基づいています。ゲーム内の最新情報との照合が必要です。",
+        "zh-tw": "根據原始 Event Helper 資料整理，仍需與遊戲內最新資訊核對。",
+        "ru": "На основе данных оригинального Event Helper. Требуется проверка актуальности в игре."
+      },
+      "dataSource": "source-imported",
+      "sourceType": "event-helper-static-extract"
+    },
+    {
+      "id": "standard-tue-1900-big-game-titan-19",
+      "sourceBlock": "standard-calendar",
+      "groupKey": {
+        "day": "tue",
+        "time": "19:00",
+        "modeKey": "big-game",
+        "activityKey": "titan"
+      },
+      "sourceRawRows": [
+        {
+          "day": 2,
+          "time": "19:00",
+          "mode": "Игра по-крупному",
+          "activity": "Титан",
+          "action": "Алмазы за покупку наборов",
+          "points": 60,
+          "overlapModes": []
+        },
+        {
+          "day": 2,
+          "time": "19:00",
+          "mode": "Игра по-крупному",
+          "activity": "Титан",
+          "action": "Клетка титана",
+          "points": 2800,
+          "overlapModes": []
+        },
+        {
+          "day": 2,
+          "time": "19:00",
+          "mode": "Игра по-крупному",
+          "activity": "Титан",
+          "action": "Опыт титана за 100 ед",
+          "points": 200,
+          "overlapModes": []
+        }
+      ],
+      "eventType": "titan",
+      "scheduleType": "source-grouped",
+      "days": [
+        "tue"
+      ],
+      "startTime": "19:00",
+      "endTime": null,
+      "timeBasis": "source-msk-reset",
+      "serverResetBased": true,
+      "priority": 19,
+      "mode": {
+        "ko": "빅 게임",
+        "en": "Big Game",
+        "ja": "ビッグゲーム",
+        "zh-tw": "大型活動",
+        "ru": "Игра по-крупному"
+      },
+      "title": {
+        "ko": "빅 게임 - 타이탄",
+        "en": "Big Game - Titan",
+        "ja": "ビッグゲーム - タイタン",
+        "zh-tw": "大型活動 - 泰坦",
+        "ru": "Игра по-крупному - Титан"
+      },
+      "description": {
+        "ko": "빅 게임 / 타이탄 원본 Event Helper 데이터 기반 초안입니다. 게임 내 최신성 검증이 필요합니다.",
+        "en": "Draft based on original Event Helper data for Big Game / Titan. Live in-game verification is required.",
+        "ja": "ビッグゲーム / タイタン の元 Event Helper データに基づくドラフトです。ゲーム内の最新情報との照合が必要です。",
+        "zh-tw": "大型活動 / 泰坦 的原始 Event Helper 資料草稿，仍需與遊戲內最新資訊核對。",
+        "ru": "Черновик на основе данных оригинального Event Helper для Игра по-крупному / Титан. Требуется проверка актуальности в игре."
+      },
+      "activities": [
+        "titan"
+      ],
+      "rewards": [
+        "diamonds",
+        "titan"
+      ],
+      "rewardItems": [],
+      "scoreRules": [
+        {
+          "id": "diamond-pack-purchase",
+          "sourceAction": "Алмазы за покупку наборов",
+          "action": {
+            "ko": "패키지 구매 다이아",
+            "en": "Diamonds from pack purchases",
+            "ja": "パック購入のダイヤ",
+            "zh-tw": "購買禮包獲得鑽石",
+            "ru": "Алмазы за покупку наборов"
+          },
+          "metric": "diamonds",
+          "pointsPerUnit": null,
+          "sourcePoints": 60,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        },
+        {
+          "id": "titan-cage",
+          "sourceAction": "Клетка титана",
+          "action": {
+            "ko": "타이탄 케이지",
+            "en": "Titan cage",
+            "ja": "タイタンケージ",
+            "zh-tw": "泰坦籠",
+            "ru": "Клетка титана"
+          },
+          "metric": "titan",
+          "pointsPerUnit": null,
+          "sourcePoints": 2800,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        },
+        {
+          "id": "titan-exp-100",
+          "sourceAction": "Опыт титана за 100 ед",
+          "action": {
+            "ko": "타이탄 경험치 100",
+            "en": "Titan EXP per 100",
+            "ja": "タイタン経験値100ごと",
+            "zh-tw": "每100泰坦經驗",
+            "ru": "Опыт титана за 100 ед"
+          },
+          "metric": "titan",
+          "pointsPerUnit": null,
+          "sourcePoints": 200,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        }
+      ],
+      "recommendedActions": {
+        "ko": [],
+        "en": [],
+        "ja": [],
+        "zh-tw": [],
+        "ru": []
+      },
+      "relatedGuides": [],
+      "relatedTools": [],
+      "verified": false,
+      "verifiedAt": null,
+      "lastUpdated": "2026-05-21",
+      "confidence": "source-imported",
+      "reviewNeeded": false,
+      "reviewReasons": [],
+      "sourceNote": {
+        "ko": "원본 Event Helper 데이터 기반입니다. 게임 내 최신성 검증이 필요합니다.",
+        "en": "Based on the original Event Helper data. Live in-game verification is required.",
+        "ja": "元の Event Helper データに基づいています。ゲーム内の最新情報との照合が必要です。",
+        "zh-tw": "根據原始 Event Helper 資料整理，仍需與遊戲內最新資訊核對。",
+        "ru": "На основе данных оригинального Event Helper. Требуется проверка актуальности в игре."
+      },
+      "dataSource": "source-imported",
+      "sourceType": "event-helper-static-extract"
+    },
+    {
+      "id": "standard-tue-2300-big-game-hero-upgrade-20",
+      "sourceBlock": "standard-calendar",
+      "groupKey": {
+        "day": "tue",
+        "time": "23:00",
+        "modeKey": "big-game",
+        "activityKey": "hero-upgrade"
+      },
+      "sourceRawRows": [
+        {
+          "day": 2,
+          "time": "23:00",
+          "mode": "Игра по-крупному",
+          "activity": "Улучшение героя",
+          "action": "Алмазы за покупку наборов",
+          "points": 60,
+          "overlapModes": []
+        },
+        {
+          "day": 2,
+          "time": "23:00",
+          "mode": "Игра по-крупному",
+          "activity": "Улучшение героя",
+          "action": "Книга навыков героя",
+          "points": 857,
+          "overlapModes": []
+        },
+        {
+          "day": 2,
+          "time": "23:00",
+          "mode": "Игра по-крупному",
+          "activity": "Улучшение героя",
+          "action": "Фрагмент легендарного героя",
+          "points": 9000,
+          "overlapModes": []
+        },
+        {
+          "day": 2,
+          "time": "23:00",
+          "mode": "Игра по-крупному",
+          "activity": "Улучшение героя",
+          "action": "Фрагмент редкого героя",
+          "points": 150,
+          "overlapModes": []
+        },
+        {
+          "day": 2,
+          "time": "23:00",
+          "mode": "Игра по-крупному",
+          "activity": "Улучшение героя",
+          "action": "Фрагмент эпического героя",
+          "points": 1000,
+          "overlapModes": []
+        }
+      ],
+      "eventType": "hero",
+      "scheduleType": "source-grouped",
+      "days": [
+        "tue"
+      ],
+      "startTime": "23:00",
+      "endTime": null,
+      "timeBasis": "source-msk-reset",
+      "serverResetBased": true,
+      "priority": 20,
+      "mode": {
+        "ko": "빅 게임",
+        "en": "Big Game",
+        "ja": "ビッグゲーム",
+        "zh-tw": "大型活動",
+        "ru": "Игра по-крупному"
+      },
+      "title": {
+        "ko": "빅 게임 - 영웅 강화",
+        "en": "Big Game - Hero Upgrade",
+        "ja": "ビッグゲーム - 英雄強化",
+        "zh-tw": "大型活動 - 英雄強化",
+        "ru": "Игра по-крупному - Улучшение героя"
+      },
+      "description": {
+        "ko": "빅 게임 / 영웅 강화 원본 Event Helper 데이터 기반 초안입니다. 게임 내 최신성 검증이 필요합니다.",
+        "en": "Draft based on original Event Helper data for Big Game / Hero Upgrade. Live in-game verification is required.",
+        "ja": "ビッグゲーム / 英雄強化 の元 Event Helper データに基づくドラフトです。ゲーム内の最新情報との照合が必要です。",
+        "zh-tw": "大型活動 / 英雄強化 的原始 Event Helper 資料草稿，仍需與遊戲內最新資訊核對。",
+        "ru": "Черновик на основе данных оригинального Event Helper для Игра по-крупному / Улучшение героя. Требуется проверка актуальности в игре."
+      },
+      "activities": [
+        "hero-upgrade",
+        "skills"
+      ],
+      "rewards": [
+        "diamonds",
+        "skill-books",
+        "hero-fragments"
+      ],
+      "rewardItems": [],
+      "scoreRules": [
+        {
+          "id": "diamond-pack-purchase",
+          "sourceAction": "Алмазы за покупку наборов",
+          "action": {
+            "ko": "패키지 구매 다이아",
+            "en": "Diamonds from pack purchases",
+            "ja": "パック購入のダイヤ",
+            "zh-tw": "購買禮包獲得鑽石",
+            "ru": "Алмазы за покупку наборов"
+          },
+          "metric": "diamonds",
+          "pointsPerUnit": null,
+          "sourcePoints": 60,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        },
+        {
+          "id": "hero-skill-book",
+          "sourceAction": "Книга навыков героя",
+          "action": {
+            "ko": "영웅 스킬북",
+            "en": "Hero skill book",
+            "ja": "英雄スキルブック",
+            "zh-tw": "英雄技能書",
+            "ru": "Книга навыков героя"
+          },
+          "metric": "skillBooks",
+          "pointsPerUnit": null,
+          "sourcePoints": 857,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        },
+        {
+          "id": "legendary-hero-fragment",
+          "sourceAction": "Фрагмент легендарного героя",
+          "action": {
+            "ko": "전설 영웅 조각",
+            "en": "Legendary hero fragment",
+            "ja": "レジェンド英雄欠片",
+            "zh-tw": "傳說英雄碎片",
+            "ru": "Фрагмент легендарного героя"
+          },
+          "metric": "heroFragments",
+          "pointsPerUnit": null,
+          "sourcePoints": 9000,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        },
+        {
+          "id": "rare-hero-fragment",
+          "sourceAction": "Фрагмент редкого героя",
+          "action": {
+            "ko": "희귀 영웅 조각",
+            "en": "Rare hero fragment",
+            "ja": "レア英雄欠片",
+            "zh-tw": "稀有英雄碎片",
+            "ru": "Фрагмент редкого героя"
+          },
+          "metric": "heroFragments",
+          "pointsPerUnit": null,
+          "sourcePoints": 150,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        },
+        {
+          "id": "epic-hero-fragment",
+          "sourceAction": "Фрагмент эпического героя",
+          "action": {
+            "ko": "에픽 영웅 조각",
+            "en": "Epic hero fragment",
+            "ja": "エピック英雄欠片",
+            "zh-tw": "史詩英雄碎片",
+            "ru": "Фрагмент эпического героя"
+          },
+          "metric": "heroFragments",
+          "pointsPerUnit": null,
+          "sourcePoints": 1000,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        }
+      ],
+      "recommendedActions": {
+        "ko": [],
+        "en": [],
+        "ja": [],
+        "zh-tw": [],
+        "ru": []
+      },
+      "relatedGuides": [],
+      "relatedTools": [],
+      "verified": false,
+      "verifiedAt": null,
+      "lastUpdated": "2026-05-21",
+      "confidence": "source-imported",
+      "reviewNeeded": false,
+      "reviewReasons": [],
+      "sourceNote": {
+        "ko": "원본 Event Helper 데이터 기반입니다. 게임 내 최신성 검증이 필요합니다.",
+        "en": "Based on the original Event Helper data. Live in-game verification is required.",
+        "ja": "元の Event Helper データに基づいています。ゲーム内の最新情報との照合が必要です。",
+        "zh-tw": "根據原始 Event Helper 資料整理，仍需與遊戲內最新資訊核對。",
+        "ru": "На основе данных оригинального Event Helper. Требуется проверка актуальности в игре."
+      },
+      "dataSource": "source-imported",
+      "sourceType": "event-helper-static-extract"
+    },
+    {
+      "id": "standard-tue-all-day-alliance-duel-trucks-22",
+      "sourceBlock": "standard-calendar",
+      "groupKey": {
+        "day": "tue",
+        "time": null,
+        "modeKey": "alliance-duel",
+        "activityKey": "trucks"
+      },
+      "sourceRawRows": [
+        {
+          "day": 2,
+          "time": null,
+          "mode": "Дуэль союзов",
+          "activity": "Грузовики",
+          "action": "Отправьте грузовик A-класса",
+          "points": 50000,
+          "overlapModes": []
+        }
+      ],
+      "eventType": "alliance",
+      "scheduleType": "source-grouped",
+      "days": [
+        "tue"
+      ],
+      "startTime": null,
+      "endTime": null,
+      "timeBasis": "source-msk-reset",
+      "serverResetBased": true,
+      "priority": 22,
+      "mode": {
+        "ko": "동맹 듀얼",
+        "en": "Alliance Duel",
+        "ja": "同盟デュエル",
+        "zh-tw": "聯盟對決",
+        "ru": "Дуэль союзов"
+      },
+      "title": {
+        "ko": "동맹 듀얼 - 트럭",
+        "en": "Alliance Duel - Trucks",
+        "ja": "同盟デュエル - トラック",
+        "zh-tw": "聯盟對決 - 卡車",
+        "ru": "Дуэль союзов - Грузовики"
+      },
+      "description": {
+        "ko": "동맹 듀얼 / 트럭 원본 Event Helper 데이터 기반 초안입니다. 게임 내 최신성 검증이 필요합니다.",
+        "en": "Draft based on original Event Helper data for Alliance Duel / Trucks. Live in-game verification is required.",
+        "ja": "同盟デュエル / トラック の元 Event Helper データに基づくドラフトです。ゲーム内の最新情報との照合が必要です。",
+        "zh-tw": "聯盟對決 / 卡車 的原始 Event Helper 資料草稿，仍需與遊戲內最新資訊核對。",
+        "ru": "Черновик на основе данных оригинального Event Helper для Дуэль союзов / Грузовики. Требуется проверка актуальности в игре."
+      },
+      "activities": [
+        "trucks"
+      ],
+      "rewards": [],
+      "rewardItems": [],
+      "scoreRules": [
+        {
+          "id": "send-a-class-truck",
+          "sourceAction": "Отправьте грузовик A-класса",
+          "action": {
+            "ko": "A급 트럭 발송",
+            "en": "Send an A-class truck",
+            "ja": "Aクラスのトラックを送る",
+            "zh-tw": "派遣A級卡車",
+            "ru": "Отправьте грузовик A-класса"
+          },
+          "metric": "count",
+          "pointsPerUnit": null,
+          "sourcePoints": 50000,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        }
+      ],
+      "recommendedActions": {
+        "ko": [],
+        "en": [],
+        "ja": [],
+        "zh-tw": [],
+        "ru": []
+      },
+      "relatedGuides": [],
+      "relatedTools": [],
+      "verified": false,
+      "verifiedAt": null,
+      "lastUpdated": "2026-05-21",
+      "confidence": "source-imported",
+      "reviewNeeded": false,
+      "reviewReasons": [],
+      "sourceNote": {
+        "ko": "원본 Event Helper 데이터 기반입니다. 게임 내 최신성 검증이 필요합니다.",
+        "en": "Based on the original Event Helper data. Live in-game verification is required.",
+        "ja": "元の Event Helper データに基づいています。ゲーム内の最新情報との照合が必要です。",
+        "zh-tw": "根據原始 Event Helper 資料整理，仍需與遊戲內最新資訊核對。",
+        "ru": "На основе данных оригинального Event Helper. Требуется проверка актуальности в игре."
+      },
+      "dataSource": "source-imported",
+      "sourceType": "event-helper-static-extract"
+    },
+    {
+      "id": "standard-wed-1100-big-game-gear-enhancement-28",
+      "sourceBlock": "standard-calendar",
+      "groupKey": {
+        "day": "wed",
+        "time": "11:00",
+        "modeKey": "big-game",
+        "activityKey": "gear-enhancement"
+      },
+      "sourceRawRows": [
+        {
+          "day": 3,
+          "time": "11:00",
+          "mode": "Игра по-крупному",
+          "activity": "Усиление снаряжения",
+          "action": "Алмазы за покупку наборов",
+          "points": 60,
+          "overlapModes": []
+        },
+        {
+          "day": 3,
+          "time": "11:00",
+          "mode": "Игра по-крупному",
+          "activity": "Усиление снаряжения",
+          "action": "Обломок 100 опыта",
+          "points": 714,
+          "overlapModes": []
+        },
+        {
+          "day": 3,
+          "time": "11:00",
+          "mode": "Игра по-крупному",
+          "activity": "Усиление снаряжения",
+          "action": "Обломок 10000 опыта",
+          "points": 71429,
+          "overlapModes": []
+        },
+        {
+          "day": 3,
+          "time": "11:00",
+          "mode": "Игра по-крупному",
+          "activity": "Усиление снаряжения",
+          "action": "Обломок 2000 опыта",
+          "points": 14286,
+          "overlapModes": []
+        },
+        {
+          "day": 3,
+          "time": "11:00",
+          "mode": "Игра по-крупному",
+          "activity": "Усиление снаряжения",
+          "action": "Обломок 400 опыта",
+          "points": 2857,
+          "overlapModes": []
+        }
+      ],
+      "eventType": "hero",
+      "scheduleType": "source-grouped",
+      "days": [
+        "wed"
+      ],
+      "startTime": "11:00",
+      "endTime": null,
+      "timeBasis": "source-msk-reset",
+      "serverResetBased": true,
+      "priority": 28,
+      "mode": {
+        "ko": "빅 게임",
+        "en": "Big Game",
+        "ja": "ビッグゲーム",
+        "zh-tw": "大型活動",
+        "ru": "Игра по-крупному"
+      },
+      "title": {
+        "ko": "빅 게임 - 장비 강화",
+        "en": "Big Game - Gear Enhancement",
+        "ja": "ビッグゲーム - 装備強化",
+        "zh-tw": "大型活動 - 裝備強化",
+        "ru": "Игра по-крупному - Усиление снаряжения"
+      },
+      "description": {
+        "ko": "빅 게임 / 장비 강화 원본 Event Helper 데이터 기반 초안입니다. 게임 내 최신성 검증이 필요합니다.",
+        "en": "Draft based on original Event Helper data for Big Game / Gear Enhancement. Live in-game verification is required.",
+        "ja": "ビッグゲーム / 装備強化 の元 Event Helper データに基づくドラフトです。ゲーム内の最新情報との照合が必要です。",
+        "zh-tw": "大型活動 / 裝備強化 的原始 Event Helper 資料草稿，仍需與遊戲內最新資訊核對。",
+        "ru": "Черновик на основе данных оригинального Event Helper для Игра по-крупному / Усиление снаряжения. Требуется проверка актуальности в игре."
+      },
+      "activities": [
+        "gear-enhancement"
+      ],
+      "rewards": [
+        "diamonds",
+        "exp"
+      ],
+      "rewardItems": [],
+      "scoreRules": [
+        {
+          "id": "diamond-pack-purchase",
+          "sourceAction": "Алмазы за покупку наборов",
+          "action": {
+            "ko": "패키지 구매 다이아",
+            "en": "Diamonds from pack purchases",
+            "ja": "パック購入のダイヤ",
+            "zh-tw": "購買禮包獲得鑽石",
+            "ru": "Алмазы за покупку наборов"
+          },
+          "metric": "diamonds",
+          "pointsPerUnit": null,
+          "sourcePoints": 60,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        },
+        {
+          "id": "exp-shard-100",
+          "sourceAction": "Обломок 100 опыта",
+          "action": {
+            "ko": "경험치 파편 100",
+            "en": "EXP shard 100",
+            "ja": "経験値欠片100",
+            "zh-tw": "經驗碎片100",
+            "ru": "Обломок 100 опыта"
+          },
+          "metric": "expShards",
+          "pointsPerUnit": null,
+          "sourcePoints": 714,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        },
+        {
+          "id": "exp-shard-10000",
+          "sourceAction": "Обломок 10000 опыта",
+          "action": {
+            "ko": "경험치 파편 10000",
+            "en": "EXP shard 10000",
+            "ja": "経験値欠片10000",
+            "zh-tw": "經驗碎片10000",
+            "ru": "Обломок 10000 опыта"
+          },
+          "metric": "expShards",
+          "pointsPerUnit": null,
+          "sourcePoints": 71429,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        },
+        {
+          "id": "exp-shard-2000",
+          "sourceAction": "Обломок 2000 опыта",
+          "action": {
+            "ko": "경험치 파편 2000",
+            "en": "EXP shard 2000",
+            "ja": "経験値欠片2000",
+            "zh-tw": "經驗碎片2000",
+            "ru": "Обломок 2000 опыта"
+          },
+          "metric": "expShards",
+          "pointsPerUnit": null,
+          "sourcePoints": 14286,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        },
+        {
+          "id": "exp-shard-400",
+          "sourceAction": "Обломок 400 опыта",
+          "action": {
+            "ko": "경험치 파편 400",
+            "en": "EXP shard 400",
+            "ja": "経験値欠片400",
+            "zh-tw": "經驗碎片400",
+            "ru": "Обломок 400 опыта"
+          },
+          "metric": "expShards",
+          "pointsPerUnit": null,
+          "sourcePoints": 2857,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        }
+      ],
+      "recommendedActions": {
+        "ko": [],
+        "en": [],
+        "ja": [],
+        "zh-tw": [],
+        "ru": []
+      },
+      "relatedGuides": [],
+      "relatedTools": [],
+      "verified": false,
+      "verifiedAt": null,
+      "lastUpdated": "2026-05-21",
+      "confidence": "source-imported",
+      "reviewNeeded": false,
+      "reviewReasons": [],
+      "sourceNote": {
+        "ko": "원본 Event Helper 데이터 기반입니다. 게임 내 최신성 검증이 필요합니다.",
+        "en": "Based on the original Event Helper data. Live in-game verification is required.",
+        "ja": "元の Event Helper データに基づいています。ゲーム内の最新情報との照合が必要です。",
+        "zh-tw": "根據原始 Event Helper 資料整理，仍需與遊戲內最新資訊核對。",
+        "ru": "На основе данных оригинального Event Helper. Требуется проверка актуальности в игре."
+      },
+      "dataSource": "source-imported",
+      "sourceType": "event-helper-static-extract"
+    },
+    {
+      "id": "standard-wed-1900-big-game-hero-upgrade-30",
+      "sourceBlock": "standard-calendar",
+      "groupKey": {
+        "day": "wed",
+        "time": "19:00",
+        "modeKey": "big-game",
+        "activityKey": "hero-upgrade"
+      },
+      "sourceRawRows": [
+        {
+          "day": 3,
+          "time": "19:00",
+          "mode": "Игра по-крупному",
+          "activity": "Улучшение героя",
+          "action": "Алмазы за покупку наборов",
+          "points": 60,
+          "overlapModes": []
+        },
+        {
+          "day": 3,
+          "time": "19:00",
+          "mode": "Игра по-крупному",
+          "activity": "Улучшение героя",
+          "action": "Книга навыков героя",
+          "points": 857,
+          "overlapModes": []
+        },
+        {
+          "day": 3,
+          "time": "19:00",
+          "mode": "Игра по-крупному",
+          "activity": "Улучшение героя",
+          "action": "Фрагмент легендарного героя",
+          "points": 9000,
+          "overlapModes": []
+        },
+        {
+          "day": 3,
+          "time": "19:00",
+          "mode": "Игра по-крупному",
+          "activity": "Улучшение героя",
+          "action": "Фрагмент редкого героя",
+          "points": 150,
+          "overlapModes": []
+        },
+        {
+          "day": 3,
+          "time": "19:00",
+          "mode": "Игра по-крупному",
+          "activity": "Улучшение героя",
+          "action": "Фрагмент эпического героя",
+          "points": 1000,
+          "overlapModes": []
+        }
+      ],
+      "eventType": "hero",
+      "scheduleType": "source-grouped",
+      "days": [
+        "wed"
+      ],
+      "startTime": "19:00",
+      "endTime": null,
+      "timeBasis": "source-msk-reset",
+      "serverResetBased": true,
+      "priority": 30,
+      "mode": {
+        "ko": "빅 게임",
+        "en": "Big Game",
+        "ja": "ビッグゲーム",
+        "zh-tw": "大型活動",
+        "ru": "Игра по-крупному"
+      },
+      "title": {
+        "ko": "빅 게임 - 영웅 강화",
+        "en": "Big Game - Hero Upgrade",
+        "ja": "ビッグゲーム - 英雄強化",
+        "zh-tw": "大型活動 - 英雄強化",
+        "ru": "Игра по-крупному - Улучшение героя"
+      },
+      "description": {
+        "ko": "빅 게임 / 영웅 강화 원본 Event Helper 데이터 기반 초안입니다. 게임 내 최신성 검증이 필요합니다.",
+        "en": "Draft based on original Event Helper data for Big Game / Hero Upgrade. Live in-game verification is required.",
+        "ja": "ビッグゲーム / 英雄強化 の元 Event Helper データに基づくドラフトです。ゲーム内の最新情報との照合が必要です。",
+        "zh-tw": "大型活動 / 英雄強化 的原始 Event Helper 資料草稿，仍需與遊戲內最新資訊核對。",
+        "ru": "Черновик на основе данных оригинального Event Helper для Игра по-крупному / Улучшение героя. Требуется проверка актуальности в игре."
+      },
+      "activities": [
+        "hero-upgrade",
+        "skills"
+      ],
+      "rewards": [
+        "diamonds",
+        "skill-books",
+        "hero-fragments"
+      ],
+      "rewardItems": [],
+      "scoreRules": [
+        {
+          "id": "diamond-pack-purchase",
+          "sourceAction": "Алмазы за покупку наборов",
+          "action": {
+            "ko": "패키지 구매 다이아",
+            "en": "Diamonds from pack purchases",
+            "ja": "パック購入のダイヤ",
+            "zh-tw": "購買禮包獲得鑽石",
+            "ru": "Алмазы за покупку наборов"
+          },
+          "metric": "diamonds",
+          "pointsPerUnit": null,
+          "sourcePoints": 60,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        },
+        {
+          "id": "hero-skill-book",
+          "sourceAction": "Книга навыков героя",
+          "action": {
+            "ko": "영웅 스킬북",
+            "en": "Hero skill book",
+            "ja": "英雄スキルブック",
+            "zh-tw": "英雄技能書",
+            "ru": "Книга навыков героя"
+          },
+          "metric": "skillBooks",
+          "pointsPerUnit": null,
+          "sourcePoints": 857,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        },
+        {
+          "id": "legendary-hero-fragment",
+          "sourceAction": "Фрагмент легендарного героя",
+          "action": {
+            "ko": "전설 영웅 조각",
+            "en": "Legendary hero fragment",
+            "ja": "レジェンド英雄欠片",
+            "zh-tw": "傳說英雄碎片",
+            "ru": "Фрагмент легендарного героя"
+          },
+          "metric": "heroFragments",
+          "pointsPerUnit": null,
+          "sourcePoints": 9000,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        },
+        {
+          "id": "rare-hero-fragment",
+          "sourceAction": "Фрагмент редкого героя",
+          "action": {
+            "ko": "희귀 영웅 조각",
+            "en": "Rare hero fragment",
+            "ja": "レア英雄欠片",
+            "zh-tw": "稀有英雄碎片",
+            "ru": "Фрагмент редкого героя"
+          },
+          "metric": "heroFragments",
+          "pointsPerUnit": null,
+          "sourcePoints": 150,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        },
+        {
+          "id": "epic-hero-fragment",
+          "sourceAction": "Фрагмент эпического героя",
+          "action": {
+            "ko": "에픽 영웅 조각",
+            "en": "Epic hero fragment",
+            "ja": "エピック英雄欠片",
+            "zh-tw": "史詩英雄碎片",
+            "ru": "Фрагмент эпического героя"
+          },
+          "metric": "heroFragments",
+          "pointsPerUnit": null,
+          "sourcePoints": 1000,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        }
+      ],
+      "recommendedActions": {
+        "ko": [],
+        "en": [],
+        "ja": [],
+        "zh-tw": [],
+        "ru": []
+      },
+      "relatedGuides": [],
+      "relatedTools": [],
+      "verified": false,
+      "verifiedAt": null,
+      "lastUpdated": "2026-05-21",
+      "confidence": "source-imported",
+      "reviewNeeded": false,
+      "reviewReasons": [],
+      "sourceNote": {
+        "ko": "원본 Event Helper 데이터 기반입니다. 게임 내 최신성 검증이 필요합니다.",
+        "en": "Based on the original Event Helper data. Live in-game verification is required.",
+        "ja": "元の Event Helper データに基づいています。ゲーム内の最新情報との照合が必要です。",
+        "zh-tw": "根據原始 Event Helper 資料整理，仍需與遊戲內最新資訊核對。",
+        "ru": "На основе данных оригинального Event Helper. Требуется проверка актуальности в игре."
+      },
+      "dataSource": "source-imported",
+      "sourceType": "event-helper-static-extract"
+    },
+    {
+      "id": "standard-thu-0700-big-game-gear-enhancement-37",
+      "sourceBlock": "standard-calendar",
+      "groupKey": {
+        "day": "thu",
+        "time": "07:00",
+        "modeKey": "big-game",
+        "activityKey": "gear-enhancement"
+      },
+      "sourceRawRows": [
+        {
+          "day": 4,
+          "time": "07:00",
+          "mode": "Игра по-крупному",
+          "activity": "Усиление снаряжения",
+          "action": "Алмазы за покупку наборов",
+          "points": 60,
+          "overlapModes": []
+        },
+        {
+          "day": 4,
+          "time": "07:00",
+          "mode": "Игра по-крупному",
+          "activity": "Усиление снаряжения",
+          "action": "Обломок 100 опыта",
+          "points": 714,
+          "overlapModes": []
+        },
+        {
+          "day": 4,
+          "time": "07:00",
+          "mode": "Игра по-крупному",
+          "activity": "Усиление снаряжения",
+          "action": "Обломок 10000 опыта",
+          "points": 71429,
+          "overlapModes": []
+        },
+        {
+          "day": 4,
+          "time": "07:00",
+          "mode": "Игра по-крупному",
+          "activity": "Усиление снаряжения",
+          "action": "Обломок 2000 опыта",
+          "points": 14286,
+          "overlapModes": []
+        },
+        {
+          "day": 4,
+          "time": "07:00",
+          "mode": "Игра по-крупному",
+          "activity": "Усиление снаряжения",
+          "action": "Обломок 400 опыта",
+          "points": 2857,
+          "overlapModes": []
+        }
+      ],
+      "eventType": "hero",
+      "scheduleType": "source-grouped",
+      "days": [
+        "thu"
+      ],
+      "startTime": "07:00",
+      "endTime": null,
+      "timeBasis": "source-msk-reset",
+      "serverResetBased": true,
+      "priority": 37,
+      "mode": {
+        "ko": "빅 게임",
+        "en": "Big Game",
+        "ja": "ビッグゲーム",
+        "zh-tw": "大型活動",
+        "ru": "Игра по-крупному"
+      },
+      "title": {
+        "ko": "빅 게임 - 장비 강화",
+        "en": "Big Game - Gear Enhancement",
+        "ja": "ビッグゲーム - 装備強化",
+        "zh-tw": "大型活動 - 裝備強化",
+        "ru": "Игра по-крупному - Усиление снаряжения"
+      },
+      "description": {
+        "ko": "빅 게임 / 장비 강화 원본 Event Helper 데이터 기반 초안입니다. 게임 내 최신성 검증이 필요합니다.",
+        "en": "Draft based on original Event Helper data for Big Game / Gear Enhancement. Live in-game verification is required.",
+        "ja": "ビッグゲーム / 装備強化 の元 Event Helper データに基づくドラフトです。ゲーム内の最新情報との照合が必要です。",
+        "zh-tw": "大型活動 / 裝備強化 的原始 Event Helper 資料草稿，仍需與遊戲內最新資訊核對。",
+        "ru": "Черновик на основе данных оригинального Event Helper для Игра по-крупному / Усиление снаряжения. Требуется проверка актуальности в игре."
+      },
+      "activities": [
+        "gear-enhancement"
+      ],
+      "rewards": [
+        "diamonds",
+        "exp"
+      ],
+      "rewardItems": [],
+      "scoreRules": [
+        {
+          "id": "diamond-pack-purchase",
+          "sourceAction": "Алмазы за покупку наборов",
+          "action": {
+            "ko": "패키지 구매 다이아",
+            "en": "Diamonds from pack purchases",
+            "ja": "パック購入のダイヤ",
+            "zh-tw": "購買禮包獲得鑽石",
+            "ru": "Алмазы за покупку наборов"
+          },
+          "metric": "diamonds",
+          "pointsPerUnit": null,
+          "sourcePoints": 60,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        },
+        {
+          "id": "exp-shard-100",
+          "sourceAction": "Обломок 100 опыта",
+          "action": {
+            "ko": "경험치 파편 100",
+            "en": "EXP shard 100",
+            "ja": "経験値欠片100",
+            "zh-tw": "經驗碎片100",
+            "ru": "Обломок 100 опыта"
+          },
+          "metric": "expShards",
+          "pointsPerUnit": null,
+          "sourcePoints": 714,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        },
+        {
+          "id": "exp-shard-10000",
+          "sourceAction": "Обломок 10000 опыта",
+          "action": {
+            "ko": "경험치 파편 10000",
+            "en": "EXP shard 10000",
+            "ja": "経験値欠片10000",
+            "zh-tw": "經驗碎片10000",
+            "ru": "Обломок 10000 опыта"
+          },
+          "metric": "expShards",
+          "pointsPerUnit": null,
+          "sourcePoints": 71429,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        },
+        {
+          "id": "exp-shard-2000",
+          "sourceAction": "Обломок 2000 опыта",
+          "action": {
+            "ko": "경험치 파편 2000",
+            "en": "EXP shard 2000",
+            "ja": "経験値欠片2000",
+            "zh-tw": "經驗碎片2000",
+            "ru": "Обломок 2000 опыта"
+          },
+          "metric": "expShards",
+          "pointsPerUnit": null,
+          "sourcePoints": 14286,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        },
+        {
+          "id": "exp-shard-400",
+          "sourceAction": "Обломок 400 опыта",
+          "action": {
+            "ko": "경험치 파편 400",
+            "en": "EXP shard 400",
+            "ja": "経験値欠片400",
+            "zh-tw": "經驗碎片400",
+            "ru": "Обломок 400 опыта"
+          },
+          "metric": "expShards",
+          "pointsPerUnit": null,
+          "sourcePoints": 2857,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        }
+      ],
+      "recommendedActions": {
+        "ko": [],
+        "en": [],
+        "ja": [],
+        "zh-tw": [],
+        "ru": []
+      },
+      "relatedGuides": [],
+      "relatedTools": [],
+      "verified": false,
+      "verifiedAt": null,
+      "lastUpdated": "2026-05-21",
+      "confidence": "source-imported",
+      "reviewNeeded": false,
+      "reviewReasons": [],
+      "sourceNote": {
+        "ko": "원본 Event Helper 데이터 기반입니다. 게임 내 최신성 검증이 필요합니다.",
+        "en": "Based on the original Event Helper data. Live in-game verification is required.",
+        "ja": "元の Event Helper データに基づいています。ゲーム内の最新情報との照合が必要です。",
+        "zh-tw": "根據原始 Event Helper 資料整理，仍需與遊戲內最新資訊核對。",
+        "ru": "На основе данных оригинального Event Helper. Требуется проверка актуальности в игре."
+      },
+      "dataSource": "source-imported",
+      "sourceType": "event-helper-static-extract"
+    },
+    {
+      "id": "standard-thu-1100-big-game-titan-38",
+      "sourceBlock": "standard-calendar",
+      "groupKey": {
+        "day": "thu",
+        "time": "11:00",
+        "modeKey": "big-game",
+        "activityKey": "titan"
+      },
+      "sourceRawRows": [
+        {
+          "day": 4,
+          "time": "11:00",
+          "mode": "Игра по-крупному",
+          "activity": "Титан",
+          "action": "Алмазы за покупку наборов",
+          "points": 60,
+          "overlapModes": []
+        },
+        {
+          "day": 4,
+          "time": "11:00",
+          "mode": "Игра по-крупному",
+          "activity": "Титан",
+          "action": "Клетка титана",
+          "points": 2800,
+          "overlapModes": []
+        },
+        {
+          "day": 4,
+          "time": "11:00",
+          "mode": "Игра по-крупному",
+          "activity": "Титан",
+          "action": "Опыт титана за 100 ед",
+          "points": 200,
+          "overlapModes": []
+        }
+      ],
+      "eventType": "titan",
+      "scheduleType": "source-grouped",
+      "days": [
+        "thu"
+      ],
+      "startTime": "11:00",
+      "endTime": null,
+      "timeBasis": "source-msk-reset",
+      "serverResetBased": true,
+      "priority": 38,
+      "mode": {
+        "ko": "빅 게임",
+        "en": "Big Game",
+        "ja": "ビッグゲーム",
+        "zh-tw": "大型活動",
+        "ru": "Игра по-крупному"
+      },
+      "title": {
+        "ko": "빅 게임 - 타이탄",
+        "en": "Big Game - Titan",
+        "ja": "ビッグゲーム - タイタン",
+        "zh-tw": "大型活動 - 泰坦",
+        "ru": "Игра по-крупному - Титан"
+      },
+      "description": {
+        "ko": "빅 게임 / 타이탄 원본 Event Helper 데이터 기반 초안입니다. 게임 내 최신성 검증이 필요합니다.",
+        "en": "Draft based on original Event Helper data for Big Game / Titan. Live in-game verification is required.",
+        "ja": "ビッグゲーム / タイタン の元 Event Helper データに基づくドラフトです。ゲーム内の最新情報との照合が必要です。",
+        "zh-tw": "大型活動 / 泰坦 的原始 Event Helper 資料草稿，仍需與遊戲內最新資訊核對。",
+        "ru": "Черновик на основе данных оригинального Event Helper для Игра по-крупному / Титан. Требуется проверка актуальности в игре."
+      },
+      "activities": [
+        "titan"
+      ],
+      "rewards": [
+        "diamonds",
+        "titan"
+      ],
+      "rewardItems": [],
+      "scoreRules": [
+        {
+          "id": "diamond-pack-purchase",
+          "sourceAction": "Алмазы за покупку наборов",
+          "action": {
+            "ko": "패키지 구매 다이아",
+            "en": "Diamonds from pack purchases",
+            "ja": "パック購入のダイヤ",
+            "zh-tw": "購買禮包獲得鑽石",
+            "ru": "Алмазы за покупку наборов"
+          },
+          "metric": "diamonds",
+          "pointsPerUnit": null,
+          "sourcePoints": 60,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        },
+        {
+          "id": "titan-cage",
+          "sourceAction": "Клетка титана",
+          "action": {
+            "ko": "타이탄 케이지",
+            "en": "Titan cage",
+            "ja": "タイタンケージ",
+            "zh-tw": "泰坦籠",
+            "ru": "Клетка титана"
+          },
+          "metric": "titan",
+          "pointsPerUnit": null,
+          "sourcePoints": 2800,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        },
+        {
+          "id": "titan-exp-100",
+          "sourceAction": "Опыт титана за 100 ед",
+          "action": {
+            "ko": "타이탄 경험치 100",
+            "en": "Titan EXP per 100",
+            "ja": "タイタン経験値100ごと",
+            "zh-tw": "每100泰坦經驗",
+            "ru": "Опыт титана за 100 ед"
+          },
+          "metric": "titan",
+          "pointsPerUnit": null,
+          "sourcePoints": 200,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        }
+      ],
+      "recommendedActions": {
+        "ko": [],
+        "en": [],
+        "ja": [],
+        "zh-tw": [],
+        "ru": []
+      },
+      "relatedGuides": [],
+      "relatedTools": [],
+      "verified": false,
+      "verifiedAt": null,
+      "lastUpdated": "2026-05-21",
+      "confidence": "source-imported",
+      "reviewNeeded": false,
+      "reviewReasons": [],
+      "sourceNote": {
+        "ko": "원본 Event Helper 데이터 기반입니다. 게임 내 최신성 검증이 필요합니다.",
+        "en": "Based on the original Event Helper data. Live in-game verification is required.",
+        "ja": "元の Event Helper データに基づいています。ゲーム内の最新情報との照合が必要です。",
+        "zh-tw": "根據原始 Event Helper 資料整理，仍需與遊戲內最新資訊核對。",
+        "ru": "На основе данных оригинального Event Helper. Требуется проверка актуальности в игре."
+      },
+      "dataSource": "source-imported",
+      "sourceType": "event-helper-static-extract"
+    },
+    {
+      "id": "standard-fri-0700-big-game-titan-47",
+      "sourceBlock": "standard-calendar",
+      "groupKey": {
+        "day": "fri",
+        "time": "07:00",
+        "modeKey": "big-game",
+        "activityKey": "titan"
+      },
+      "sourceRawRows": [
+        {
+          "day": 5,
+          "time": "07:00",
+          "mode": "Игра по-крупному",
+          "activity": "Титан",
+          "action": "Алмазы за покупку наборов",
+          "points": 60,
+          "overlapModes": []
+        },
+        {
+          "day": 5,
+          "time": "07:00",
+          "mode": "Игра по-крупному",
+          "activity": "Титан",
+          "action": "Клетка титана",
+          "points": 2800,
+          "overlapModes": []
+        },
+        {
+          "day": 5,
+          "time": "07:00",
+          "mode": "Игра по-крупному",
+          "activity": "Титан",
+          "action": "Опыт титана за 100 ед",
+          "points": 200,
+          "overlapModes": []
+        }
+      ],
+      "eventType": "titan",
+      "scheduleType": "source-grouped",
+      "days": [
+        "fri"
+      ],
+      "startTime": "07:00",
+      "endTime": null,
+      "timeBasis": "source-msk-reset",
+      "serverResetBased": true,
+      "priority": 47,
+      "mode": {
+        "ko": "빅 게임",
+        "en": "Big Game",
+        "ja": "ビッグゲーム",
+        "zh-tw": "大型活動",
+        "ru": "Игра по-крупному"
+      },
+      "title": {
+        "ko": "빅 게임 - 타이탄",
+        "en": "Big Game - Titan",
+        "ja": "ビッグゲーム - タイタン",
+        "zh-tw": "大型活動 - 泰坦",
+        "ru": "Игра по-крупному - Титан"
+      },
+      "description": {
+        "ko": "빅 게임 / 타이탄 원본 Event Helper 데이터 기반 초안입니다. 게임 내 최신성 검증이 필요합니다.",
+        "en": "Draft based on original Event Helper data for Big Game / Titan. Live in-game verification is required.",
+        "ja": "ビッグゲーム / タイタン の元 Event Helper データに基づくドラフトです。ゲーム内の最新情報との照合が必要です。",
+        "zh-tw": "大型活動 / 泰坦 的原始 Event Helper 資料草稿，仍需與遊戲內最新資訊核對。",
+        "ru": "Черновик на основе данных оригинального Event Helper для Игра по-крупному / Титан. Требуется проверка актуальности в игре."
+      },
+      "activities": [
+        "titan"
+      ],
+      "rewards": [
+        "diamonds",
+        "titan"
+      ],
+      "rewardItems": [],
+      "scoreRules": [
+        {
+          "id": "diamond-pack-purchase",
+          "sourceAction": "Алмазы за покупку наборов",
+          "action": {
+            "ko": "패키지 구매 다이아",
+            "en": "Diamonds from pack purchases",
+            "ja": "パック購入のダイヤ",
+            "zh-tw": "購買禮包獲得鑽石",
+            "ru": "Алмазы за покупку наборов"
+          },
+          "metric": "diamonds",
+          "pointsPerUnit": null,
+          "sourcePoints": 60,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        },
+        {
+          "id": "titan-cage",
+          "sourceAction": "Клетка титана",
+          "action": {
+            "ko": "타이탄 케이지",
+            "en": "Titan cage",
+            "ja": "タイタンケージ",
+            "zh-tw": "泰坦籠",
+            "ru": "Клетка титана"
+          },
+          "metric": "titan",
+          "pointsPerUnit": null,
+          "sourcePoints": 2800,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        },
+        {
+          "id": "titan-exp-100",
+          "sourceAction": "Опыт титана за 100 ед",
+          "action": {
+            "ko": "타이탄 경험치 100",
+            "en": "Titan EXP per 100",
+            "ja": "タイタン経験値100ごと",
+            "zh-tw": "每100泰坦經驗",
+            "ru": "Опыт титана за 100 ед"
+          },
+          "metric": "titan",
+          "pointsPerUnit": null,
+          "sourcePoints": 200,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        }
+      ],
+      "recommendedActions": {
+        "ko": [],
+        "en": [],
+        "ja": [],
+        "zh-tw": [],
+        "ru": []
+      },
+      "relatedGuides": [],
+      "relatedTools": [],
+      "verified": false,
+      "verifiedAt": null,
+      "lastUpdated": "2026-05-21",
+      "confidence": "source-imported",
+      "reviewNeeded": false,
+      "reviewReasons": [],
+      "sourceNote": {
+        "ko": "원본 Event Helper 데이터 기반입니다. 게임 내 최신성 검증이 필요합니다.",
+        "en": "Based on the original Event Helper data. Live in-game verification is required.",
+        "ja": "元の Event Helper データに基づいています。ゲーム内の最新情報との照合が必要です。",
+        "zh-tw": "根據原始 Event Helper 資料整理，仍需與遊戲內最新資訊核對。",
+        "ru": "На основе данных оригинального Event Helper. Требуется проверка актуальности в игре."
+      },
+      "dataSource": "source-imported",
+      "sourceType": "event-helper-static-extract"
+    },
+    {
+      "id": "standard-fri-1100-big-game-hero-upgrade-48",
+      "sourceBlock": "standard-calendar",
+      "groupKey": {
+        "day": "fri",
+        "time": "11:00",
+        "modeKey": "big-game",
+        "activityKey": "hero-upgrade"
+      },
+      "sourceRawRows": [
+        {
+          "day": 5,
+          "time": "11:00",
+          "mode": "Игра по-крупному",
+          "activity": "Улучшение героя",
+          "action": "Алмазы за покупку наборов",
+          "points": 60,
+          "overlapModes": []
+        },
+        {
+          "day": 5,
+          "time": "11:00",
+          "mode": "Игра по-крупному",
+          "activity": "Улучшение героя",
+          "action": "Книга навыков героя",
+          "points": 857,
+          "overlapModes": []
+        },
+        {
+          "day": 5,
+          "time": "11:00",
+          "mode": "Игра по-крупному",
+          "activity": "Улучшение героя",
+          "action": "Фрагмент легендарного героя",
+          "points": 9000,
+          "overlapModes": []
+        },
+        {
+          "day": 5,
+          "time": "11:00",
+          "mode": "Игра по-крупному",
+          "activity": "Улучшение героя",
+          "action": "Фрагмент редкого героя",
+          "points": 150,
+          "overlapModes": []
+        },
+        {
+          "day": 5,
+          "time": "11:00",
+          "mode": "Игра по-крупному",
+          "activity": "Улучшение героя",
+          "action": "Фрагмент эпического героя",
+          "points": 1000,
+          "overlapModes": []
+        }
+      ],
+      "eventType": "hero",
+      "scheduleType": "source-grouped",
+      "days": [
+        "fri"
+      ],
+      "startTime": "11:00",
+      "endTime": null,
+      "timeBasis": "source-msk-reset",
+      "serverResetBased": true,
+      "priority": 48,
+      "mode": {
+        "ko": "빅 게임",
+        "en": "Big Game",
+        "ja": "ビッグゲーム",
+        "zh-tw": "大型活動",
+        "ru": "Игра по-крупному"
+      },
+      "title": {
+        "ko": "빅 게임 - 영웅 강화",
+        "en": "Big Game - Hero Upgrade",
+        "ja": "ビッグゲーム - 英雄強化",
+        "zh-tw": "大型活動 - 英雄強化",
+        "ru": "Игра по-крупному - Улучшение героя"
+      },
+      "description": {
+        "ko": "빅 게임 / 영웅 강화 원본 Event Helper 데이터 기반 초안입니다. 게임 내 최신성 검증이 필요합니다.",
+        "en": "Draft based on original Event Helper data for Big Game / Hero Upgrade. Live in-game verification is required.",
+        "ja": "ビッグゲーム / 英雄強化 の元 Event Helper データに基づくドラフトです。ゲーム内の最新情報との照合が必要です。",
+        "zh-tw": "大型活動 / 英雄強化 的原始 Event Helper 資料草稿，仍需與遊戲內最新資訊核對。",
+        "ru": "Черновик на основе данных оригинального Event Helper для Игра по-крупному / Улучшение героя. Требуется проверка актуальности в игре."
+      },
+      "activities": [
+        "hero-upgrade",
+        "skills"
+      ],
+      "rewards": [
+        "diamonds",
+        "skill-books",
+        "hero-fragments"
+      ],
+      "rewardItems": [],
+      "scoreRules": [
+        {
+          "id": "diamond-pack-purchase",
+          "sourceAction": "Алмазы за покупку наборов",
+          "action": {
+            "ko": "패키지 구매 다이아",
+            "en": "Diamonds from pack purchases",
+            "ja": "パック購入のダイヤ",
+            "zh-tw": "購買禮包獲得鑽石",
+            "ru": "Алмазы за покупку наборов"
+          },
+          "metric": "diamonds",
+          "pointsPerUnit": null,
+          "sourcePoints": 60,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        },
+        {
+          "id": "hero-skill-book",
+          "sourceAction": "Книга навыков героя",
+          "action": {
+            "ko": "영웅 스킬북",
+            "en": "Hero skill book",
+            "ja": "英雄スキルブック",
+            "zh-tw": "英雄技能書",
+            "ru": "Книга навыков героя"
+          },
+          "metric": "skillBooks",
+          "pointsPerUnit": null,
+          "sourcePoints": 857,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        },
+        {
+          "id": "legendary-hero-fragment",
+          "sourceAction": "Фрагмент легендарного героя",
+          "action": {
+            "ko": "전설 영웅 조각",
+            "en": "Legendary hero fragment",
+            "ja": "レジェンド英雄欠片",
+            "zh-tw": "傳說英雄碎片",
+            "ru": "Фрагмент легендарного героя"
+          },
+          "metric": "heroFragments",
+          "pointsPerUnit": null,
+          "sourcePoints": 9000,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        },
+        {
+          "id": "rare-hero-fragment",
+          "sourceAction": "Фрагмент редкого героя",
+          "action": {
+            "ko": "희귀 영웅 조각",
+            "en": "Rare hero fragment",
+            "ja": "レア英雄欠片",
+            "zh-tw": "稀有英雄碎片",
+            "ru": "Фрагмент редкого героя"
+          },
+          "metric": "heroFragments",
+          "pointsPerUnit": null,
+          "sourcePoints": 150,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        },
+        {
+          "id": "epic-hero-fragment",
+          "sourceAction": "Фрагмент эпического героя",
+          "action": {
+            "ko": "에픽 영웅 조각",
+            "en": "Epic hero fragment",
+            "ja": "エピック英雄欠片",
+            "zh-tw": "史詩英雄碎片",
+            "ru": "Фрагмент эпического героя"
+          },
+          "metric": "heroFragments",
+          "pointsPerUnit": null,
+          "sourcePoints": 1000,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        }
+      ],
+      "recommendedActions": {
+        "ko": [],
+        "en": [],
+        "ja": [],
+        "zh-tw": [],
+        "ru": []
+      },
+      "relatedGuides": [],
+      "relatedTools": [],
+      "verified": false,
+      "verifiedAt": null,
+      "lastUpdated": "2026-05-21",
+      "confidence": "source-imported",
+      "reviewNeeded": false,
+      "reviewReasons": [],
+      "sourceNote": {
+        "ko": "원본 Event Helper 데이터 기반입니다. 게임 내 최신성 검증이 필요합니다.",
+        "en": "Based on the original Event Helper data. Live in-game verification is required.",
+        "ja": "元の Event Helper データに基づいています。ゲーム内の最新情報との照合が必要です。",
+        "zh-tw": "根據原始 Event Helper 資料整理，仍需與遊戲內最新資訊核對。",
+        "ru": "На основе данных оригинального Event Helper. Требуется проверка актуальности в игре."
+      },
+      "dataSource": "source-imported",
+      "sourceType": "event-helper-static-extract"
+    },
+    {
+      "id": "standard-fri-all-day-alliance-duel-troop-training-54",
+      "sourceBlock": "standard-calendar",
+      "groupKey": {
+        "day": "fri",
+        "time": null,
+        "modeKey": "alliance-duel",
+        "activityKey": "troop-training"
+      },
+      "sourceRawRows": [
+        {
+          "day": 5,
+          "time": null,
+          "mode": "Дуэль союзов",
+          "activity": "Обучение войск",
+          "action": "Обучить солдат ур.1",
+          "points": 6,
+          "overlapModes": [
+            "Дуэль союзов"
+          ]
+        },
+        {
+          "day": 5,
+          "time": null,
+          "mode": "Дуэль союзов",
+          "activity": "Обучение войск",
+          "action": "Обучить солдат ур.10",
+          "points": 60,
+          "overlapModes": [
+            "Дуэль союзов"
+          ]
+        },
+        {
+          "day": 5,
+          "time": null,
+          "mode": "Дуэль союзов",
+          "activity": "Обучение войск",
+          "action": "Обучить солдат ур.2",
+          "points": 11,
+          "overlapModes": [
+            "Дуэль союзов"
+          ]
+        },
+        {
+          "day": 5,
+          "time": null,
+          "mode": "Дуэль союзов",
+          "activity": "Обучение войск",
+          "action": "Обучить солдат ур.3",
+          "points": 17,
+          "overlapModes": [
+            "Дуэль союзов"
+          ]
+        },
+        {
+          "day": 5,
+          "time": null,
+          "mode": "Дуэль союзов",
+          "activity": "Обучение войск",
+          "action": "Обучить солдат ур.4",
+          "points": 22,
+          "overlapModes": [
+            "Дуэль союзов"
+          ]
+        },
+        {
+          "day": 5,
+          "time": null,
+          "mode": "Дуэль союзов",
+          "activity": "Обучение войск",
+          "action": "Обучить солдат ур.5",
+          "points": 26,
+          "overlapModes": [
+            "Дуэль союзов"
+          ]
+        },
+        {
+          "day": 5,
+          "time": null,
+          "mode": "Дуэль союзов",
+          "activity": "Обучение войск",
+          "action": "Обучить солдат ур.6",
+          "points": 33,
+          "overlapModes": [
+            "Дуэль союзов"
+          ]
+        },
+        {
+          "day": 5,
+          "time": null,
+          "mode": "Дуэль союзов",
+          "activity": "Обучение войск",
+          "action": "Обучить солдат ур.7",
+          "points": 37,
+          "overlapModes": [
+            "Дуэль союзов"
+          ]
+        },
+        {
+          "day": 5,
+          "time": null,
+          "mode": "Дуэль союзов",
+          "activity": "Обучение войск",
+          "action": "Обучить солдат ур.8",
+          "points": 44,
+          "overlapModes": [
+            "Дуэль союзов"
+          ]
+        },
+        {
+          "day": 5,
+          "time": null,
+          "mode": "Дуэль союзов",
+          "activity": "Обучение войск",
+          "action": "Обучить солдат ур.9",
+          "points": 52,
+          "overlapModes": [
+            "Дуэль союзов"
+          ]
+        },
+        {
+          "day": 5,
+          "time": null,
+          "mode": "Дуэль союзов",
+          "activity": "Обучение войск",
+          "action": "Ускорение обучения 1 мин",
+          "points": 250,
+          "overlapModes": [
+            "Дуэль союзов"
+          ]
+        }
+      ],
+      "eventType": "training",
+      "scheduleType": "source-grouped",
+      "days": [
+        "fri"
+      ],
+      "startTime": null,
+      "endTime": null,
+      "timeBasis": "source-msk-reset",
+      "serverResetBased": true,
+      "priority": 54,
+      "mode": {
+        "ko": "동맹 듀얼",
+        "en": "Alliance Duel",
+        "ja": "同盟デュエル",
+        "zh-tw": "聯盟對決",
+        "ru": "Дуэль союзов"
+      },
+      "title": {
+        "ko": "동맹 듀얼 - 병사 훈련",
+        "en": "Alliance Duel - Troop Training",
+        "ja": "同盟デュエル - 兵士訓練",
+        "zh-tw": "聯盟對決 - 士兵訓練",
+        "ru": "Дуэль союзов - Обучение войск"
+      },
+      "description": {
+        "ko": "동맹 듀얼 / 병사 훈련 원본 Event Helper 데이터 기반 초안입니다. 게임 내 최신성 검증이 필요합니다.",
+        "en": "Draft based on original Event Helper data for Alliance Duel / Troop Training. Live in-game verification is required.",
+        "ja": "同盟デュエル / 兵士訓練 の元 Event Helper データに基づくドラフトです。ゲーム内の最新情報との照合が必要です。",
+        "zh-tw": "聯盟對決 / 士兵訓練 的原始 Event Helper 資料草稿，仍需與遊戲內最新資訊核對。",
+        "ru": "Черновик на основе данных оригинального Event Helper для Дуэль союзов / Обучение войск. Требуется проверка актуальности в игре."
+      },
+      "activities": [
+        "troop-training",
+        "training"
+      ],
+      "rewards": [
+        "speedups"
+      ],
+      "rewardItems": [],
+      "scoreRules": [
+        {
+          "id": "train-soldiers-level-1",
+          "sourceAction": "Обучить солдат ур.1",
+          "action": {
+            "ko": "레벨 1 병사 훈련",
+            "en": "Train level 1 soldiers",
+            "ja": "レベル1兵士を訓練",
+            "zh-tw": "訓練1級士兵",
+            "ru": "Обучить солдат ур.1"
+          },
+          "metric": "troopTraining",
+          "pointsPerUnit": null,
+          "sourcePoints": 6,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        },
+        {
+          "id": "train-soldiers-level-10",
+          "sourceAction": "Обучить солдат ур.10",
+          "action": {
+            "ko": "레벨 10 병사 훈련",
+            "en": "Train level 10 soldiers",
+            "ja": "レベル10兵士を訓練",
+            "zh-tw": "訓練10級士兵",
+            "ru": "Обучить солдат ур.10"
+          },
+          "metric": "troopTraining",
+          "pointsPerUnit": null,
+          "sourcePoints": 60,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        },
+        {
+          "id": "train-soldiers-level-2",
+          "sourceAction": "Обучить солдат ур.2",
+          "action": {
+            "ko": "레벨 2 병사 훈련",
+            "en": "Train level 2 soldiers",
+            "ja": "レベル2兵士を訓練",
+            "zh-tw": "訓練2級士兵",
+            "ru": "Обучить солдат ур.2"
+          },
+          "metric": "troopTraining",
+          "pointsPerUnit": null,
+          "sourcePoints": 11,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        },
+        {
+          "id": "train-soldiers-level-3",
+          "sourceAction": "Обучить солдат ур.3",
+          "action": {
+            "ko": "레벨 3 병사 훈련",
+            "en": "Train level 3 soldiers",
+            "ja": "レベル3兵士を訓練",
+            "zh-tw": "訓練3級士兵",
+            "ru": "Обучить солдат ур.3"
+          },
+          "metric": "troopTraining",
+          "pointsPerUnit": null,
+          "sourcePoints": 17,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        },
+        {
+          "id": "train-soldiers-level-4",
+          "sourceAction": "Обучить солдат ур.4",
+          "action": {
+            "ko": "레벨 4 병사 훈련",
+            "en": "Train level 4 soldiers",
+            "ja": "レベル4兵士を訓練",
+            "zh-tw": "訓練4級士兵",
+            "ru": "Обучить солдат ур.4"
+          },
+          "metric": "troopTraining",
+          "pointsPerUnit": null,
+          "sourcePoints": 22,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        },
+        {
+          "id": "train-soldiers-level-5",
+          "sourceAction": "Обучить солдат ур.5",
+          "action": {
+            "ko": "레벨 5 병사 훈련",
+            "en": "Train level 5 soldiers",
+            "ja": "レベル5兵士を訓練",
+            "zh-tw": "訓練5級士兵",
+            "ru": "Обучить солдат ур.5"
+          },
+          "metric": "troopTraining",
+          "pointsPerUnit": null,
+          "sourcePoints": 26,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        },
+        {
+          "id": "train-soldiers-level-6",
+          "sourceAction": "Обучить солдат ур.6",
+          "action": {
+            "ko": "레벨 6 병사 훈련",
+            "en": "Train level 6 soldiers",
+            "ja": "レベル6兵士を訓練",
+            "zh-tw": "訓練6級士兵",
+            "ru": "Обучить солдат ур.6"
+          },
+          "metric": "troopTraining",
+          "pointsPerUnit": null,
+          "sourcePoints": 33,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        },
+        {
+          "id": "train-soldiers-level-7",
+          "sourceAction": "Обучить солдат ур.7",
+          "action": {
+            "ko": "레벨 7 병사 훈련",
+            "en": "Train level 7 soldiers",
+            "ja": "レベル7兵士を訓練",
+            "zh-tw": "訓練7級士兵",
+            "ru": "Обучить солдат ур.7"
+          },
+          "metric": "troopTraining",
+          "pointsPerUnit": null,
+          "sourcePoints": 37,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        },
+        {
+          "id": "train-soldiers-level-8",
+          "sourceAction": "Обучить солдат ур.8",
+          "action": {
+            "ko": "레벨 8 병사 훈련",
+            "en": "Train level 8 soldiers",
+            "ja": "レベル8兵士を訓練",
+            "zh-tw": "訓練8級士兵",
+            "ru": "Обучить солдат ур.8"
+          },
+          "metric": "troopTraining",
+          "pointsPerUnit": null,
+          "sourcePoints": 44,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        },
+        {
+          "id": "train-soldiers-level-9",
+          "sourceAction": "Обучить солдат ур.9",
+          "action": {
+            "ko": "레벨 9 병사 훈련",
+            "en": "Train level 9 soldiers",
+            "ja": "レベル9兵士を訓練",
+            "zh-tw": "訓練9級士兵",
+            "ru": "Обучить солдат ур.9"
+          },
+          "metric": "troopTraining",
+          "pointsPerUnit": null,
+          "sourcePoints": 52,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        },
+        {
+          "id": "training-speedup-1-min",
+          "sourceAction": "Ускорение обучения 1 мин",
+          "action": {
+            "ko": "훈련 가속 1분",
+            "en": "Training speedup 1 min",
+            "ja": "訓練加速1分",
+            "zh-tw": "訓練加速1分鐘",
+            "ru": "Ускорение обучения 1 мин"
+          },
+          "metric": "speedupMinutes",
+          "pointsPerUnit": null,
+          "sourcePoints": 250,
+          "unit": "minute",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        }
+      ],
+      "recommendedActions": {
+        "ko": [],
+        "en": [],
+        "ja": [],
+        "zh-tw": [],
+        "ru": []
+      },
+      "relatedGuides": [],
+      "relatedTools": [],
+      "verified": false,
+      "verifiedAt": null,
+      "lastUpdated": "2026-05-21",
+      "confidence": "source-imported",
+      "reviewNeeded": false,
+      "reviewReasons": [],
+      "sourceNote": {
+        "ko": "원본 Event Helper 데이터 기반입니다. 게임 내 최신성 검증이 필요합니다.",
+        "en": "Based on the original Event Helper data. Live in-game verification is required.",
+        "ja": "元の Event Helper データに基づいています。ゲーム内の最新情報との照合が必要です。",
+        "zh-tw": "根據原始 Event Helper 資料整理，仍需與遊戲內最新資訊核對。",
+        "ru": "На основе данных оригинального Event Helper. Требуется проверка актуальности в игре."
+      },
+      "dataSource": "source-imported",
+      "sourceType": "event-helper-static-extract"
+    },
+    {
+      "id": "standard-fri-all-day-alliance-duel-recon-missions-55",
+      "sourceBlock": "standard-calendar",
+      "groupKey": {
+        "day": "fri",
+        "time": null,
+        "modeKey": "alliance-duel",
+        "activityKey": "recon-missions"
+      },
+      "sourceRawRows": [
+        {
+          "day": 5,
+          "time": null,
+          "mode": "Дуэль союзов",
+          "activity": "Разведмиссии",
+          "action": "Завершить разведмиссию",
+          "points": 37500,
+          "overlapModes": []
+        }
+      ],
+      "eventType": "general",
+      "scheduleType": "source-grouped",
+      "days": [
+        "fri"
+      ],
+      "startTime": null,
+      "endTime": null,
+      "timeBasis": "source-msk-reset",
+      "serverResetBased": true,
+      "priority": 55,
+      "mode": {
+        "ko": "동맹 듀얼",
+        "en": "Alliance Duel",
+        "ja": "同盟デュエル",
+        "zh-tw": "聯盟對決",
+        "ru": "Дуэль союзов"
+      },
+      "title": {
+        "ko": "동맹 듀얼 - 정찰 임무",
+        "en": "Alliance Duel - Recon Missions",
+        "ja": "同盟デュエル - 偵察任務",
+        "zh-tw": "聯盟對決 - 偵察任務",
+        "ru": "Дуэль союзов - Разведмиссии"
+      },
+      "description": {
+        "ko": "동맹 듀얼 / 정찰 임무 원본 Event Helper 데이터 기반 초안입니다. 게임 내 최신성 검증이 필요합니다.",
+        "en": "Draft based on original Event Helper data for Alliance Duel / Recon Missions. Live in-game verification is required.",
+        "ja": "同盟デュエル / 偵察任務 の元 Event Helper データに基づくドラフトです。ゲーム内の最新情報との照合が必要です。",
+        "zh-tw": "聯盟對決 / 偵察任務 的原始 Event Helper 資料草稿，仍需與遊戲內最新資訊核對。",
+        "ru": "Черновик на основе данных оригинального Event Helper для Дуэль союзов / Разведмиссии. Требуется проверка актуальности в игре."
+      },
+      "activities": [
+        "recon-missions",
+        "recon"
+      ],
+      "rewards": [],
+      "rewardItems": [],
+      "scoreRules": [
+        {
+          "id": "complete-recon-mission",
+          "sourceAction": "Завершить разведмиссию",
+          "action": {
+            "ko": "정찰 임무 완료",
+            "en": "Complete a recon mission",
+            "ja": "偵察任務を完了",
+            "zh-tw": "完成偵察任務",
+            "ru": "Завершить разведмиссию"
+          },
+          "metric": "count",
+          "pointsPerUnit": null,
+          "sourcePoints": 37500,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        }
+      ],
+      "recommendedActions": {
+        "ko": [],
+        "en": [],
+        "ja": [],
+        "zh-tw": [],
+        "ru": []
+      },
+      "relatedGuides": [],
+      "relatedTools": [],
+      "verified": false,
+      "verifiedAt": null,
+      "lastUpdated": "2026-05-21",
+      "confidence": "source-imported",
+      "reviewNeeded": false,
+      "reviewReasons": [],
+      "sourceNote": {
+        "ko": "원본 Event Helper 데이터 기반입니다. 게임 내 최신성 검증이 필요합니다.",
+        "en": "Based on the original Event Helper data. Live in-game verification is required.",
+        "ja": "元の Event Helper データに基づいています。ゲーム内の最新情報との照合が必要です。",
+        "zh-tw": "根據原始 Event Helper 資料整理，仍需與遊戲內最新資訊核對。",
+        "ru": "На основе данных оригинального Event Helper. Требуется проверка актуальности в игре."
+      },
+      "dataSource": "source-imported",
+      "sourceType": "event-helper-static-extract"
+    },
+    {
+      "id": "standard-sat-2300-big-game-gear-enhancement-64",
+      "sourceBlock": "standard-calendar",
+      "groupKey": {
+        "day": "sat",
+        "time": "23:00",
+        "modeKey": "big-game",
+        "activityKey": "gear-enhancement"
+      },
+      "sourceRawRows": [
+        {
+          "day": 6,
+          "time": "23:00",
+          "mode": "Игра по-крупному",
+          "activity": "Усиление снаряжения",
+          "action": "Алмазы за покупку наборов",
+          "points": 60,
+          "overlapModes": []
+        },
+        {
+          "day": 6,
+          "time": "23:00",
+          "mode": "Игра по-крупному",
+          "activity": "Усиление снаряжения",
+          "action": "Обломок 100 опыта",
+          "points": 714,
+          "overlapModes": []
+        },
+        {
+          "day": 6,
+          "time": "23:00",
+          "mode": "Игра по-крупному",
+          "activity": "Усиление снаряжения",
+          "action": "Обломок 10000 опыта",
+          "points": 71429,
+          "overlapModes": []
+        },
+        {
+          "day": 6,
+          "time": "23:00",
+          "mode": "Игра по-крупному",
+          "activity": "Усиление снаряжения",
+          "action": "Обломок 2000 опыта",
+          "points": 14286,
+          "overlapModes": []
+        },
+        {
+          "day": 6,
+          "time": "23:00",
+          "mode": "Игра по-крупному",
+          "activity": "Усиление снаряжения",
+          "action": "Обломок 400 опыта",
+          "points": 2857,
+          "overlapModes": []
+        }
+      ],
+      "eventType": "hero",
+      "scheduleType": "source-grouped",
+      "days": [
+        "sat"
+      ],
+      "startTime": "23:00",
+      "endTime": null,
+      "timeBasis": "source-msk-reset",
+      "serverResetBased": true,
+      "priority": 64,
+      "mode": {
+        "ko": "빅 게임",
+        "en": "Big Game",
+        "ja": "ビッグゲーム",
+        "zh-tw": "大型活動",
+        "ru": "Игра по-крупному"
+      },
+      "title": {
+        "ko": "빅 게임 - 장비 강화",
+        "en": "Big Game - Gear Enhancement",
+        "ja": "ビッグゲーム - 装備強化",
+        "zh-tw": "大型活動 - 裝備強化",
+        "ru": "Игра по-крупному - Усиление снаряжения"
+      },
+      "description": {
+        "ko": "빅 게임 / 장비 강화 원본 Event Helper 데이터 기반 초안입니다. 게임 내 최신성 검증이 필요합니다.",
+        "en": "Draft based on original Event Helper data for Big Game / Gear Enhancement. Live in-game verification is required.",
+        "ja": "ビッグゲーム / 装備強化 の元 Event Helper データに基づくドラフトです。ゲーム内の最新情報との照合が必要です。",
+        "zh-tw": "大型活動 / 裝備強化 的原始 Event Helper 資料草稿，仍需與遊戲內最新資訊核對。",
+        "ru": "Черновик на основе данных оригинального Event Helper для Игра по-крупному / Усиление снаряжения. Требуется проверка актуальности в игре."
+      },
+      "activities": [
+        "gear-enhancement"
+      ],
+      "rewards": [
+        "diamonds",
+        "exp"
+      ],
+      "rewardItems": [],
+      "scoreRules": [
+        {
+          "id": "diamond-pack-purchase",
+          "sourceAction": "Алмазы за покупку наборов",
+          "action": {
+            "ko": "패키지 구매 다이아",
+            "en": "Diamonds from pack purchases",
+            "ja": "パック購入のダイヤ",
+            "zh-tw": "購買禮包獲得鑽石",
+            "ru": "Алмазы за покупку наборов"
+          },
+          "metric": "diamonds",
+          "pointsPerUnit": null,
+          "sourcePoints": 60,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        },
+        {
+          "id": "exp-shard-100",
+          "sourceAction": "Обломок 100 опыта",
+          "action": {
+            "ko": "경험치 파편 100",
+            "en": "EXP shard 100",
+            "ja": "経験値欠片100",
+            "zh-tw": "經驗碎片100",
+            "ru": "Обломок 100 опыта"
+          },
+          "metric": "expShards",
+          "pointsPerUnit": null,
+          "sourcePoints": 714,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        },
+        {
+          "id": "exp-shard-10000",
+          "sourceAction": "Обломок 10000 опыта",
+          "action": {
+            "ko": "경험치 파편 10000",
+            "en": "EXP shard 10000",
+            "ja": "経験値欠片10000",
+            "zh-tw": "經驗碎片10000",
+            "ru": "Обломок 10000 опыта"
+          },
+          "metric": "expShards",
+          "pointsPerUnit": null,
+          "sourcePoints": 71429,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        },
+        {
+          "id": "exp-shard-2000",
+          "sourceAction": "Обломок 2000 опыта",
+          "action": {
+            "ko": "경험치 파편 2000",
+            "en": "EXP shard 2000",
+            "ja": "経験値欠片2000",
+            "zh-tw": "經驗碎片2000",
+            "ru": "Обломок 2000 опыта"
+          },
+          "metric": "expShards",
+          "pointsPerUnit": null,
+          "sourcePoints": 14286,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        },
+        {
+          "id": "exp-shard-400",
+          "sourceAction": "Обломок 400 опыта",
+          "action": {
+            "ko": "경험치 파편 400",
+            "en": "EXP shard 400",
+            "ja": "経験値欠片400",
+            "zh-tw": "經驗碎片400",
+            "ru": "Обломок 400 опыта"
+          },
+          "metric": "expShards",
+          "pointsPerUnit": null,
+          "sourcePoints": 2857,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        }
+      ],
+      "recommendedActions": {
+        "ko": [],
+        "en": [],
+        "ja": [],
+        "zh-tw": [],
+        "ru": []
+      },
+      "relatedGuides": [],
+      "relatedTools": [],
+      "verified": false,
+      "verifiedAt": null,
+      "lastUpdated": "2026-05-21",
+      "confidence": "source-imported",
+      "reviewNeeded": false,
+      "reviewReasons": [],
+      "sourceNote": {
+        "ko": "원본 Event Helper 데이터 기반입니다. 게임 내 최신성 검증이 필요합니다.",
+        "en": "Based on the original Event Helper data. Live in-game verification is required.",
+        "ja": "元の Event Helper データに基づいています。ゲーム内の最新情報との照合が必要です。",
+        "zh-tw": "根據原始 Event Helper 資料整理，仍需與遊戲內最新資訊核對。",
+        "ru": "На основе данных оригинального Event Helper. Требуется проверка актуальности в игре."
+      },
+      "dataSource": "source-imported",
+      "sourceType": "event-helper-static-extract"
+    },
+    {
+      "id": "standard-sat-all-day-alliance-duel-squad-battles-65",
+      "sourceBlock": "standard-calendar",
+      "groupKey": {
+        "day": "sat",
+        "time": null,
+        "modeKey": "alliance-duel",
+        "activityKey": "squad-battles"
+      },
+      "sourceRawRows": [
+        {
+          "day": 6,
+          "time": null,
+          "mode": "Дуэль союзов",
+          "activity": "Бои отрядов",
+          "action": "Победить отряд ур.1",
+          "points": 2,
+          "overlapModes": []
+        },
+        {
+          "day": 6,
+          "time": null,
+          "mode": "Дуэль союзов",
+          "activity": "Бои отрядов",
+          "action": "Победить отряд ур.10",
+          "points": 21,
+          "overlapModes": []
+        },
+        {
+          "day": 6,
+          "time": null,
+          "mode": "Дуэль союзов",
+          "activity": "Бои отрядов",
+          "action": "Победить отряд ур.2",
+          "points": 4,
+          "overlapModes": []
+        },
+        {
+          "day": 6,
+          "time": null,
+          "mode": "Дуэль союзов",
+          "activity": "Бои отрядов",
+          "action": "Победить отряд ур.3",
+          "points": 6,
+          "overlapModes": []
+        },
+        {
+          "day": 6,
+          "time": null,
+          "mode": "Дуэль союзов",
+          "activity": "Бои отрядов",
+          "action": "Победить отряд ур.4",
+          "points": 8,
+          "overlapModes": []
+        },
+        {
+          "day": 6,
+          "time": null,
+          "mode": "Дуэль союзов",
+          "activity": "Бои отрядов",
+          "action": "Победить отряд ур.5",
+          "points": 9,
+          "overlapModes": []
+        },
+        {
+          "day": 6,
+          "time": null,
+          "mode": "Дуэль союзов",
+          "activity": "Бои отрядов",
+          "action": "Победить отряд ур.6",
+          "points": 12,
+          "overlapModes": []
+        },
+        {
+          "day": 6,
+          "time": null,
+          "mode": "Дуэль союзов",
+          "activity": "Бои отрядов",
+          "action": "Победить отряд ур.7",
+          "points": 13,
+          "overlapModes": []
+        },
+        {
+          "day": 6,
+          "time": null,
+          "mode": "Дуэль союзов",
+          "activity": "Бои отрядов",
+          "action": "Победить отряд ур.8",
+          "points": 15,
+          "overlapModes": []
+        },
+        {
+          "day": 6,
+          "time": null,
+          "mode": "Дуэль союзов",
+          "activity": "Бои отрядов",
+          "action": "Победить отряд ур.9",
+          "points": 18,
+          "overlapModes": []
+        }
+      ],
+      "eventType": "combat",
+      "scheduleType": "source-grouped",
+      "days": [
+        "sat"
+      ],
+      "startTime": null,
+      "endTime": null,
+      "timeBasis": "source-msk-reset",
+      "serverResetBased": true,
+      "priority": 65,
+      "mode": {
+        "ko": "동맹 듀얼",
+        "en": "Alliance Duel",
+        "ja": "同盟デュエル",
+        "zh-tw": "聯盟對決",
+        "ru": "Дуэль союзов"
+      },
+      "title": {
+        "ko": "동맹 듀얼 - 부대 전투",
+        "en": "Alliance Duel - Squad Battles",
+        "ja": "同盟デュエル - 部隊戦闘",
+        "zh-tw": "聯盟對決 - 部隊戰鬥",
+        "ru": "Дуэль союзов - Бои отрядов"
+      },
+      "description": {
+        "ko": "동맹 듀얼 / 부대 전투 원본 Event Helper 데이터 기반 초안입니다. 게임 내 최신성 검증이 필요합니다.",
+        "en": "Draft based on original Event Helper data for Alliance Duel / Squad Battles. Live in-game verification is required.",
+        "ja": "同盟デュエル / 部隊戦闘 の元 Event Helper データに基づくドラフトです。ゲーム内の最新情報との照合が必要です。",
+        "zh-tw": "聯盟對決 / 部隊戰鬥 的原始 Event Helper 資料草稿，仍需與遊戲內最新資訊核對。",
+        "ru": "Черновик на основе данных оригинального Event Helper для Дуэль союзов / Бои отрядов. Требуется проверка актуальности в игре."
+      },
+      "activities": [
+        "squad-battles",
+        "combat"
+      ],
+      "rewards": [],
+      "rewardItems": [],
+      "scoreRules": [
+        {
+          "id": "defeat-squad-level-1",
+          "sourceAction": "Победить отряд ур.1",
+          "action": {
+            "ko": "레벨 1 부대 처치",
+            "en": "Defeat level 1 squad",
+            "ja": "レベル1部隊を撃破",
+            "zh-tw": "擊敗1級部隊",
+            "ru": "Победить отряд ур.1"
+          },
+          "metric": "count",
+          "pointsPerUnit": null,
+          "sourcePoints": 2,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        },
+        {
+          "id": "defeat-squad-level-10",
+          "sourceAction": "Победить отряд ур.10",
+          "action": {
+            "ko": "레벨 10 부대 처치",
+            "en": "Defeat level 10 squad",
+            "ja": "レベル10部隊を撃破",
+            "zh-tw": "擊敗10級部隊",
+            "ru": "Победить отряд ур.10"
+          },
+          "metric": "count",
+          "pointsPerUnit": null,
+          "sourcePoints": 21,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        },
+        {
+          "id": "defeat-squad-level-2",
+          "sourceAction": "Победить отряд ур.2",
+          "action": {
+            "ko": "레벨 2 부대 처치",
+            "en": "Defeat level 2 squad",
+            "ja": "レベル2部隊を撃破",
+            "zh-tw": "擊敗2級部隊",
+            "ru": "Победить отряд ур.2"
+          },
+          "metric": "count",
+          "pointsPerUnit": null,
+          "sourcePoints": 4,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        },
+        {
+          "id": "defeat-squad-level-3",
+          "sourceAction": "Победить отряд ур.3",
+          "action": {
+            "ko": "레벨 3 부대 처치",
+            "en": "Defeat level 3 squad",
+            "ja": "レベル3部隊を撃破",
+            "zh-tw": "擊敗3級部隊",
+            "ru": "Победить отряд ур.3"
+          },
+          "metric": "count",
+          "pointsPerUnit": null,
+          "sourcePoints": 6,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        },
+        {
+          "id": "defeat-squad-level-4",
+          "sourceAction": "Победить отряд ур.4",
+          "action": {
+            "ko": "레벨 4 부대 처치",
+            "en": "Defeat level 4 squad",
+            "ja": "レベル4部隊を撃破",
+            "zh-tw": "擊敗4級部隊",
+            "ru": "Победить отряд ур.4"
+          },
+          "metric": "count",
+          "pointsPerUnit": null,
+          "sourcePoints": 8,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        },
+        {
+          "id": "defeat-squad-level-5",
+          "sourceAction": "Победить отряд ур.5",
+          "action": {
+            "ko": "레벨 5 부대 처치",
+            "en": "Defeat level 5 squad",
+            "ja": "レベル5部隊を撃破",
+            "zh-tw": "擊敗5級部隊",
+            "ru": "Победить отряд ур.5"
+          },
+          "metric": "count",
+          "pointsPerUnit": null,
+          "sourcePoints": 9,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        },
+        {
+          "id": "defeat-squad-level-6",
+          "sourceAction": "Победить отряд ур.6",
+          "action": {
+            "ko": "레벨 6 부대 처치",
+            "en": "Defeat level 6 squad",
+            "ja": "レベル6部隊を撃破",
+            "zh-tw": "擊敗6級部隊",
+            "ru": "Победить отряд ур.6"
+          },
+          "metric": "count",
+          "pointsPerUnit": null,
+          "sourcePoints": 12,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        },
+        {
+          "id": "defeat-squad-level-7",
+          "sourceAction": "Победить отряд ур.7",
+          "action": {
+            "ko": "레벨 7 부대 처치",
+            "en": "Defeat level 7 squad",
+            "ja": "レベル7部隊を撃破",
+            "zh-tw": "擊敗7級部隊",
+            "ru": "Победить отряд ур.7"
+          },
+          "metric": "count",
+          "pointsPerUnit": null,
+          "sourcePoints": 13,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        },
+        {
+          "id": "defeat-squad-level-8",
+          "sourceAction": "Победить отряд ур.8",
+          "action": {
+            "ko": "레벨 8 부대 처치",
+            "en": "Defeat level 8 squad",
+            "ja": "レベル8部隊を撃破",
+            "zh-tw": "擊敗8級部隊",
+            "ru": "Победить отряд ур.8"
+          },
+          "metric": "count",
+          "pointsPerUnit": null,
+          "sourcePoints": 15,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        },
+        {
+          "id": "defeat-squad-level-9",
+          "sourceAction": "Победить отряд ур.9",
+          "action": {
+            "ko": "레벨 9 부대 처치",
+            "en": "Defeat level 9 squad",
+            "ja": "レベル9部隊を撃破",
+            "zh-tw": "擊敗9級部隊",
+            "ru": "Победить отряд ур.9"
+          },
+          "metric": "count",
+          "pointsPerUnit": null,
+          "sourcePoints": 18,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        }
+      ],
+      "recommendedActions": {
+        "ko": [],
+        "en": [],
+        "ja": [],
+        "zh-tw": [],
+        "ru": []
+      },
+      "relatedGuides": [],
+      "relatedTools": [],
+      "verified": false,
+      "verifiedAt": null,
+      "lastUpdated": "2026-05-21",
+      "confidence": "source-imported",
+      "reviewNeeded": false,
+      "reviewReasons": [],
+      "sourceNote": {
+        "ko": "원본 Event Helper 데이터 기반입니다. 게임 내 최신성 검증이 필요합니다.",
+        "en": "Based on the original Event Helper data. Live in-game verification is required.",
+        "ja": "元の Event Helper データに基づいています。ゲーム内の最新情報との照合が必要です。",
+        "zh-tw": "根據原始 Event Helper 資料整理，仍需與遊戲內最新資訊核對。",
+        "ru": "На основе данных оригинального Event Helper. Требуется проверка актуальности в игре."
+      },
+      "dataSource": "source-imported",
+      "sourceType": "event-helper-static-extract"
+    },
+    {
+      "id": "standard-sat-all-day-alliance-duel-trucks-66",
+      "sourceBlock": "standard-calendar",
+      "groupKey": {
+        "day": "sat",
+        "time": null,
+        "modeKey": "alliance-duel",
+        "activityKey": "trucks"
+      },
+      "sourceRawRows": [
+        {
+          "day": 6,
+          "time": null,
+          "mode": "Дуэль союзов",
+          "activity": "Грузовики",
+          "action": "Отправьте грузовик A-класса",
+          "points": 50000,
+          "overlapModes": []
+        }
+      ],
+      "eventType": "alliance",
+      "scheduleType": "source-grouped",
+      "days": [
+        "sat"
+      ],
+      "startTime": null,
+      "endTime": null,
+      "timeBasis": "source-msk-reset",
+      "serverResetBased": true,
+      "priority": 66,
+      "mode": {
+        "ko": "동맹 듀얼",
+        "en": "Alliance Duel",
+        "ja": "同盟デュエル",
+        "zh-tw": "聯盟對決",
+        "ru": "Дуэль союзов"
+      },
+      "title": {
+        "ko": "동맹 듀얼 - 트럭",
+        "en": "Alliance Duel - Trucks",
+        "ja": "同盟デュエル - トラック",
+        "zh-tw": "聯盟對決 - 卡車",
+        "ru": "Дуэль союзов - Грузовики"
+      },
+      "description": {
+        "ko": "동맹 듀얼 / 트럭 원본 Event Helper 데이터 기반 초안입니다. 게임 내 최신성 검증이 필요합니다.",
+        "en": "Draft based on original Event Helper data for Alliance Duel / Trucks. Live in-game verification is required.",
+        "ja": "同盟デュエル / トラック の元 Event Helper データに基づくドラフトです。ゲーム内の最新情報との照合が必要です。",
+        "zh-tw": "聯盟對決 / 卡車 的原始 Event Helper 資料草稿，仍需與遊戲內最新資訊核對。",
+        "ru": "Черновик на основе данных оригинального Event Helper для Дуэль союзов / Грузовики. Требуется проверка актуальности в игре."
+      },
+      "activities": [
+        "trucks"
+      ],
+      "rewards": [],
+      "rewardItems": [],
+      "scoreRules": [
+        {
+          "id": "send-a-class-truck",
+          "sourceAction": "Отправьте грузовик A-класса",
+          "action": {
+            "ko": "A급 트럭 발송",
+            "en": "Send an A-class truck",
+            "ja": "Aクラスのトラックを送る",
+            "zh-tw": "派遣A級卡車",
+            "ru": "Отправьте грузовик A-класса"
+          },
+          "metric": "count",
+          "pointsPerUnit": null,
+          "sourcePoints": 50000,
+          "unit": "source-unit",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        }
+      ],
+      "recommendedActions": {
+        "ko": [],
+        "en": [],
+        "ja": [],
+        "zh-tw": [],
+        "ru": []
+      },
+      "relatedGuides": [],
+      "relatedTools": [],
+      "verified": false,
+      "verifiedAt": null,
+      "lastUpdated": "2026-05-21",
+      "confidence": "source-imported",
+      "reviewNeeded": false,
+      "reviewReasons": [],
+      "sourceNote": {
+        "ko": "원본 Event Helper 데이터 기반입니다. 게임 내 최신성 검증이 필요합니다.",
+        "en": "Based on the original Event Helper data. Live in-game verification is required.",
+        "ja": "元の Event Helper データに基づいています。ゲーム内の最新情報との照合が必要です。",
+        "zh-tw": "根據原始 Event Helper 資料整理，仍需與遊戲內最新資訊核對。",
+        "ru": "На основе данных оригинального Event Helper. Требуется проверка актуальности в игре."
+      },
+      "dataSource": "source-imported",
+      "sourceType": "event-helper-static-extract"
+    },
+    {
+      "id": "standard-sat-all-day-alliance-duel-healing-72",
+      "sourceBlock": "standard-calendar",
+      "groupKey": {
+        "day": "sat",
+        "time": null,
+        "modeKey": "alliance-duel",
+        "activityKey": "healing"
+      },
+      "sourceRawRows": [
+        {
+          "day": 6,
+          "time": null,
+          "mode": "Дуэль союзов",
+          "activity": "Исцеление",
+          "action": "Ускорение исцеления 1 мин",
+          "points": 250,
+          "overlapModes": [
+            "Дуэль союзов"
+          ]
+        }
+      ],
+      "eventType": "growth",
+      "scheduleType": "source-grouped",
+      "days": [
+        "sat"
+      ],
+      "startTime": null,
+      "endTime": null,
+      "timeBasis": "source-msk-reset",
+      "serverResetBased": true,
+      "priority": 72,
+      "mode": {
+        "ko": "동맹 듀얼",
+        "en": "Alliance Duel",
+        "ja": "同盟デュエル",
+        "zh-tw": "聯盟對決",
+        "ru": "Дуэль союзов"
+      },
+      "title": {
+        "ko": "동맹 듀얼 - 치료",
+        "en": "Alliance Duel - Healing",
+        "ja": "同盟デュエル - 治療",
+        "zh-tw": "聯盟對決 - 治療",
+        "ru": "Дуэль союзов - Исцеление"
+      },
+      "description": {
+        "ko": "동맹 듀얼 / 치료 원본 Event Helper 데이터 기반 초안입니다. 게임 내 최신성 검증이 필요합니다.",
+        "en": "Draft based on original Event Helper data for Alliance Duel / Healing. Live in-game verification is required.",
+        "ja": "同盟デュエル / 治療 の元 Event Helper データに基づくドラフトです。ゲーム内の最新情報との照合が必要です。",
+        "zh-tw": "聯盟對決 / 治療 的原始 Event Helper 資料草稿，仍需與遊戲內最新資訊核對。",
+        "ru": "Черновик на основе данных оригинального Event Helper для Дуэль союзов / Исцеление. Требуется проверка актуальности в игре."
+      },
+      "activities": [
+        "healing"
+      ],
+      "rewards": [
+        "speedups"
+      ],
+      "rewardItems": [],
+      "scoreRules": [
+        {
+          "id": "healing-speedup-1-min",
+          "sourceAction": "Ускорение исцеления 1 мин",
+          "action": {
+            "ko": "치료 가속 1분",
+            "en": "Healing speedup 1 min",
+            "ja": "治療加速1分",
+            "zh-tw": "治療加速1分鐘",
+            "ru": "Ускорение исцеления 1 мин"
+          },
+          "metric": "speedupMinutes",
+          "pointsPerUnit": null,
+          "sourcePoints": 250,
+          "unit": "minute",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        }
+      ],
+      "recommendedActions": {
+        "ko": [],
+        "en": [],
+        "ja": [],
+        "zh-tw": [],
+        "ru": []
+      },
+      "relatedGuides": [],
+      "relatedTools": [],
+      "verified": false,
+      "verifiedAt": null,
+      "lastUpdated": "2026-05-21",
+      "confidence": "source-imported",
+      "reviewNeeded": false,
+      "reviewReasons": [],
+      "sourceNote": {
+        "ko": "원본 Event Helper 데이터 기반입니다. 게임 내 최신성 검증이 필요합니다.",
+        "en": "Based on the original Event Helper data. Live in-game verification is required.",
+        "ja": "元の Event Helper データに基づいています。ゲーム内の最新情報との照合が必要です。",
+        "zh-tw": "根據原始 Event Helper 資料整理，仍需與遊戲內最新資訊核對。",
+        "ru": "На основе данных оригинального Event Helper. Требуется проверка актуальности в игре."
+      },
+      "dataSource": "source-imported",
+      "sourceType": "event-helper-static-extract"
+    },
+    {
+      "id": "standard-sat-all-day-alliance-duel-troop-training-73",
+      "sourceBlock": "standard-calendar",
+      "groupKey": {
+        "day": "sat",
+        "time": null,
+        "modeKey": "alliance-duel",
+        "activityKey": "troop-training"
+      },
+      "sourceRawRows": [
+        {
+          "day": 6,
+          "time": null,
+          "mode": "Дуэль союзов",
+          "activity": "Обучение войск",
+          "action": "Ускорение обучения 1 мин",
+          "points": 250,
+          "overlapModes": [
+            "Дуэль союзов"
+          ]
+        }
+      ],
+      "eventType": "training",
+      "scheduleType": "source-grouped",
+      "days": [
+        "sat"
+      ],
+      "startTime": null,
+      "endTime": null,
+      "timeBasis": "source-msk-reset",
+      "serverResetBased": true,
+      "priority": 73,
+      "mode": {
+        "ko": "동맹 듀얼",
+        "en": "Alliance Duel",
+        "ja": "同盟デュエル",
+        "zh-tw": "聯盟對決",
+        "ru": "Дуэль союзов"
+      },
+      "title": {
+        "ko": "동맹 듀얼 - 병사 훈련",
+        "en": "Alliance Duel - Troop Training",
+        "ja": "同盟デュエル - 兵士訓練",
+        "zh-tw": "聯盟對決 - 士兵訓練",
+        "ru": "Дуэль союзов - Обучение войск"
+      },
+      "description": {
+        "ko": "동맹 듀얼 / 병사 훈련 원본 Event Helper 데이터 기반 초안입니다. 게임 내 최신성 검증이 필요합니다.",
+        "en": "Draft based on original Event Helper data for Alliance Duel / Troop Training. Live in-game verification is required.",
+        "ja": "同盟デュエル / 兵士訓練 の元 Event Helper データに基づくドラフトです。ゲーム内の最新情報との照合が必要です。",
+        "zh-tw": "聯盟對決 / 士兵訓練 的原始 Event Helper 資料草稿，仍需與遊戲內最新資訊核對。",
+        "ru": "Черновик на основе данных оригинального Event Helper для Дуэль союзов / Обучение войск. Требуется проверка актуальности в игре."
+      },
+      "activities": [
+        "troop-training",
+        "training"
+      ],
+      "rewards": [
+        "speedups"
+      ],
+      "rewardItems": [],
+      "scoreRules": [
+        {
+          "id": "training-speedup-1-min",
+          "sourceAction": "Ускорение обучения 1 мин",
+          "action": {
+            "ko": "훈련 가속 1분",
+            "en": "Training speedup 1 min",
+            "ja": "訓練加速1分",
+            "zh-tw": "訓練加速1分鐘",
+            "ru": "Ускорение обучения 1 мин"
+          },
+          "metric": "speedupMinutes",
+          "pointsPerUnit": null,
+          "sourcePoints": 250,
+          "unit": "minute",
+          "verified": false,
+          "confidence": "source-imported",
+          "reviewNeeded": false,
+          "reviewReasons": [],
+          "suggestedTags": {
+            "activities": [],
+            "rewards": [],
+            "eventType": [],
+            "scoreMetric": []
+          }
+        }
+      ],
+      "recommendedActions": {
+        "ko": [],
+        "en": [],
+        "ja": [],
+        "zh-tw": [],
+        "ru": []
+      },
+      "relatedGuides": [],
+      "relatedTools": [],
+      "verified": false,
+      "verifiedAt": null,
+      "lastUpdated": "2026-05-21",
+      "confidence": "source-imported",
+      "reviewNeeded": false,
+      "reviewReasons": [],
+      "sourceNote": {
+        "ko": "원본 Event Helper 데이터 기반입니다. 게임 내 최신성 검증이 필요합니다.",
+        "en": "Based on the original Event Helper data. Live in-game verification is required.",
+        "ja": "元の Event Helper データに基づいています。ゲーム内の最新情報との照合が必要です。",
+        "zh-tw": "根據原始 Event Helper 資料整理，仍需與遊戲內最新資訊核對。",
+        "ru": "На основе данных оригинального Event Helper. Требуется проверка актуальности в игре."
+      },
+      "dataSource": "source-imported",
+      "sourceType": "event-helper-static-extract"
+    }
+  ],
+  "fallbackSamples": [
     {
       "id": "big-game-training",
       "days": [
@@ -134,7 +4361,9 @@
         "ja": "同盟共有資料ベース。ゲーム内最新日程との照合が必要です。",
         "zh-tw": "根據聯盟分享資料，仍需對照遊戲內最新時程。",
         "ru": "На основе материалов альянса. Нужно сверить с актуальным расписанием в игре."
-      }
+      },
+      "dataSource": "fallback-sample",
+      "sourceType": "manual-sample"
     },
     {
       "id": "alliance-duel-construction",
@@ -262,7 +4491,9 @@
         "ja": "同盟共有資料ベース。ゲーム内最新日程との照合が必要です。",
         "zh-tw": "根據聯盟分享資料，仍需對照遊戲內最新時程。",
         "ru": "На основе материалов альянса. Нужно сверить с актуальным расписанием в игре."
-      }
+      },
+      "dataSource": "fallback-sample",
+      "sourceType": "manual-sample"
     },
     {
       "id": "research-sprint",
@@ -390,7 +4621,9 @@
         "ja": "同盟共有資料ベース。ゲーム内最新日程との照合が必要です。",
         "zh-tw": "根據聯盟分享資料，仍需對照遊戲內最新時程。",
         "ru": "На основе материалов альянса. Нужно сверить с актуальным расписанием в игре."
-      }
+      },
+      "dataSource": "fallback-sample",
+      "sourceType": "manual-sample"
     },
     {
       "id": "hero-shard-exchange",
@@ -517,7 +4750,9 @@
         "ja": "同盟共有資料ベース。ゲーム内最新日程との照合が必要です。",
         "zh-tw": "根據聯盟分享資料，仍需對照遊戲內最新時程。",
         "ru": "На основе материалов альянса. Нужно сверить с актуальным расписанием в игре."
-      }
+      },
+      "dataSource": "fallback-sample",
+      "sourceType": "manual-sample"
     },
     {
       "id": "gear-upgrade-window",
@@ -645,7 +4880,16 @@
         "ja": "同盟共有資料ベース。ゲーム内最新日程との照合が必要です。",
         "zh-tw": "根據聯盟分享資料，仍需對照遊戲內最新時程。",
         "ru": "На основе материалов альянса. Нужно сверить с актуальным расписанием в игре."
-      }
+      },
+      "dataSource": "fallback-sample",
+      "sourceType": "manual-sample"
     }
-  ]
+  ],
+  "diagnostics": {
+    "groupedEventCount": 91,
+    "selectedEventCount": 20,
+    "fallbackSampleCount": 5,
+    "sourceRawRowsTotal": 78,
+    "scoreRulesTotal": 78
+  }
 }
