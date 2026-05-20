@@ -1,0 +1,2198 @@
+{
+  "source": "data/event-helper-source-extract.json",
+  "generatedAt": "2026-05-20",
+  "verified": false,
+  "confidence": "mapping-draft",
+  "notes": {
+    "ko": "원본 러시아어 이벤트 row의 고유값을 TilesSurvive.net 데이터 구조에 맞추기 위한 매핑 초안입니다. 실제 게임 내 최신성 및 번역 검수가 필요합니다.",
+    "en": "Draft mapping for unique Russian event row values into the TilesSurvive.net data structure. Live in-game verification and translation review are required."
+  },
+  "counts": {
+    "sourceRows": 628,
+    "uniqueModes": 3,
+    "uniqueActivities": 19,
+    "uniqueActions": 63,
+    "uniqueOverlapModes": 3
+  },
+  "modeMap": [
+    {
+      "source": "Дуэль союзов",
+      "key": "alliance-duel",
+      "label": {
+        "ko": "동맹 듀얼",
+        "en": "Alliance Duel",
+        "ja": "同盟デュエル",
+        "zh-tw": "聯盟對決",
+        "ru": "Дуэль союзов"
+      },
+      "confidence": "draft-reviewed"
+    },
+    {
+      "source": "Игра по-крупному",
+      "key": "big-game",
+      "label": {
+        "ko": "빅 게임",
+        "en": "Big Game",
+        "ja": "ビッグゲーム",
+        "zh-tw": "大型活動",
+        "ru": "Игра по-крупному"
+      },
+      "confidence": "draft-reviewed"
+    },
+    {
+      "source": "Турбочерепаха",
+      "key": "turbo-turtle",
+      "label": {
+        "ko": "터보 거북이",
+        "en": "Turbo Turtle",
+        "ja": "ターボタートル",
+        "zh-tw": "渦輪龜",
+        "ru": "Турбочерепаха"
+      },
+      "confidence": "needs-review",
+      "reviewNote": {
+        "en": "Confirm the official in-game event name before promoting this translation."
+      }
+    }
+  ],
+  "activityMap": [
+    {
+      "source": "Алмазы",
+      "key": "diamonds",
+      "label": {
+        "ko": "다이아",
+        "en": "Diamonds",
+        "ja": "ダイヤ",
+        "zh-tw": "鑽石",
+        "ru": "Алмазы"
+      },
+      "confidence": "draft-reviewed"
+    },
+    {
+      "source": "Бои отрядов",
+      "key": "squad-battles",
+      "label": {
+        "ko": "부대 전투",
+        "en": "Squad Battles",
+        "ja": "部隊戦闘",
+        "zh-tw": "部隊戰鬥",
+        "ru": "Бои отрядов"
+      },
+      "confidence": "draft-reviewed"
+    },
+    {
+      "source": "Выносливость шефа",
+      "key": "chief-stamina",
+      "label": {
+        "ko": "셰프 스태미나",
+        "en": "Chief Stamina",
+        "ja": "シェフスタミナ",
+        "zh-tw": "主廚體力",
+        "ru": "Выносливость шефа"
+      },
+      "confidence": "needs-review",
+      "reviewNote": {
+        "en": "Confirm whether the game uses Chief, Chef, or another localized role title."
+      }
+    },
+    {
+      "source": "Грузовики",
+      "key": "trucks",
+      "label": {
+        "ko": "트럭",
+        "en": "Trucks",
+        "ja": "トラック",
+        "zh-tw": "卡車",
+        "ru": "Грузовики"
+      },
+      "confidence": "draft-reviewed"
+    },
+    {
+      "source": "Зараженные",
+      "key": "infected",
+      "label": {
+        "ko": "감염자",
+        "en": "Infected",
+        "ja": "感染者",
+        "zh-tw": "感染者",
+        "ru": "Зараженные"
+      },
+      "confidence": "draft-reviewed"
+    },
+    {
+      "source": "Исследования",
+      "key": "research",
+      "label": {
+        "ko": "연구",
+        "en": "Research",
+        "ja": "研究",
+        "zh-tw": "研究",
+        "ru": "Исследования"
+      },
+      "confidence": "draft-reviewed"
+    },
+    {
+      "source": "Исцеление",
+      "key": "healing",
+      "label": {
+        "ko": "치료",
+        "en": "Healing",
+        "ja": "治療",
+        "zh-tw": "治療",
+        "ru": "Исцеление"
+      },
+      "confidence": "draft-reviewed"
+    },
+    {
+      "source": "Навыки",
+      "key": "skills",
+      "label": {
+        "ko": "스킬",
+        "en": "Skills",
+        "ja": "スキル",
+        "zh-tw": "技能",
+        "ru": "Навыки"
+      },
+      "confidence": "draft-reviewed"
+    },
+    {
+      "source": "Обучение войск",
+      "key": "troop-training",
+      "label": {
+        "ko": "병사 훈련",
+        "en": "Troop Training",
+        "ja": "兵士訓練",
+        "zh-tw": "士兵訓練",
+        "ru": "Обучение войск"
+      },
+      "confidence": "draft-reviewed"
+    },
+    {
+      "source": "Отчаянные отправки",
+      "key": "desperate-dispatch",
+      "label": {
+        "ko": "절박한 파견",
+        "en": "Desperate Dispatch",
+        "ja": "緊急派遣",
+        "zh-tw": "緊急派遣",
+        "ru": "Отчаянные отправки"
+      },
+      "confidence": "needs-review",
+      "reviewNote": {
+        "en": "Likely an event/activity name; confirm official wording in-game."
+      }
+    },
+    {
+      "source": "Призыв",
+      "key": "summon",
+      "label": {
+        "ko": "소환",
+        "en": "Summon",
+        "ja": "召喚",
+        "zh-tw": "招募",
+        "ru": "Призыв"
+      },
+      "confidence": "draft-reviewed"
+    },
+    {
+      "source": "Разведмиссии",
+      "key": "recon-missions",
+      "label": {
+        "ko": "정찰 임무",
+        "en": "Recon Missions",
+        "ja": "偵察任務",
+        "zh-tw": "偵察任務",
+        "ru": "Разведмиссии"
+      },
+      "confidence": "draft-reviewed"
+    },
+    {
+      "source": "Ресурсы",
+      "key": "resources",
+      "label": {
+        "ko": "자원",
+        "en": "Resources",
+        "ja": "資源",
+        "zh-tw": "資源",
+        "ru": "Ресурсы"
+      },
+      "confidence": "draft-reviewed"
+    },
+    {
+      "source": "Строительство",
+      "key": "construction",
+      "label": {
+        "ko": "건설",
+        "en": "Construction",
+        "ja": "建設",
+        "zh-tw": "建設",
+        "ru": "Строительство"
+      },
+      "confidence": "draft-reviewed"
+    },
+    {
+      "source": "Титан",
+      "key": "titan",
+      "label": {
+        "ko": "타이탄",
+        "en": "Titan",
+        "ja": "タイタン",
+        "zh-tw": "泰坦",
+        "ru": "Титан"
+      },
+      "confidence": "draft-reviewed"
+    },
+    {
+      "source": "Улучшение героя",
+      "key": "hero-upgrade",
+      "label": {
+        "ko": "영웅 강화",
+        "en": "Hero Upgrade",
+        "ja": "英雄強化",
+        "zh-tw": "英雄強化",
+        "ru": "Улучшение героя"
+      },
+      "confidence": "draft-reviewed"
+    },
+    {
+      "source": "Усиление снаряжения",
+      "key": "gear-enhancement",
+      "label": {
+        "ko": "장비 강화",
+        "en": "Gear Enhancement",
+        "ja": "装備強化",
+        "zh-tw": "裝備強化",
+        "ru": "Усиление снаряжения"
+      },
+      "confidence": "draft-reviewed"
+    },
+    {
+      "source": "Фрагменты героев",
+      "key": "hero-fragments",
+      "label": {
+        "ko": "영웅 조각",
+        "en": "Hero Fragments",
+        "ja": "英雄欠片",
+        "zh-tw": "英雄碎片",
+        "ru": "Фрагменты героев"
+      },
+      "confidence": "draft-reviewed"
+    },
+    {
+      "source": "Шеф Коллекция",
+      "key": "chief-collection",
+      "label": {
+        "ko": "셰프 컬렉션",
+        "en": "Chef Collection",
+        "ja": "シェフコレクション",
+        "zh-tw": "主廚收藏",
+        "ru": "Шеф Коллекция"
+      },
+      "confidence": "needs-review",
+      "reviewNote": {
+        "en": "Confirm whether this should be Chef Collection, Chief Collection, or a localized proper name."
+      }
+    }
+  ],
+  "actionMap": [
+    {
+      "source": "Алмазы за покупку наборов",
+      "key": "diamond-pack-purchase",
+      "label": {
+        "ko": "패키지 구매 다이아",
+        "en": "Diamonds from pack purchases",
+        "ja": "パック購入のダイヤ",
+        "zh-tw": "購買禮包獲得鑽石",
+        "ru": "Алмазы за покупку наборов"
+      },
+      "confidence": "draft-reviewed",
+      "suggestedTags": {
+        "activities": [],
+        "rewards": [
+          "diamonds"
+        ],
+        "eventType": [
+          "resource"
+        ],
+        "scoreMetric": [
+          "diamonds"
+        ]
+      }
+    },
+    {
+      "source": "Желаемый призыв 1 р.",
+      "key": "wish-summon-1",
+      "label": {
+        "ko": "희망 소환 1회",
+        "en": "Wish summon x1",
+        "ja": "希望召喚1回",
+        "zh-tw": "心願招募1次",
+        "ru": "Желаемый призыв 1 р."
+      },
+      "confidence": "needs-review",
+      "suggestedTags": {
+        "activities": [
+          "summon"
+        ],
+        "rewards": [
+          "summon"
+        ],
+        "eventType": [
+          "hero"
+        ],
+        "scoreMetric": [
+          "summonCount"
+        ]
+      },
+      "reviewNote": {
+        "en": "Confirm whether this is Wish Summon, Desired Summon, or another official summon type."
+      }
+    },
+    {
+      "source": "Завершить разведмиссию",
+      "key": "complete-recon-mission",
+      "label": {
+        "ko": "정찰 임무 완료",
+        "en": "Complete a recon mission",
+        "ja": "偵察任務を完了",
+        "zh-tw": "完成偵察任務",
+        "ru": "Завершить разведмиссию"
+      },
+      "confidence": "draft-reviewed",
+      "suggestedTags": {
+        "activities": [
+          "recon"
+        ],
+        "rewards": [],
+        "eventType": [
+          "general"
+        ],
+        "scoreMetric": [
+          "count"
+        ]
+      }
+    },
+    {
+      "source": "Заготовьте 100 древесины",
+      "key": "gather-100-wood",
+      "label": {
+        "ko": "목재 100 채집",
+        "en": "Gather 100 wood",
+        "ja": "木材100を採集",
+        "zh-tw": "採集100木材",
+        "ru": "Заготовьте 100 древесины"
+      },
+      "confidence": "draft-reviewed",
+      "suggestedTags": {
+        "activities": [
+          "gathering"
+        ],
+        "rewards": [
+          "resources"
+        ],
+        "eventType": [
+          "resource"
+        ],
+        "scoreMetric": [
+          "resourceGathering"
+        ]
+      }
+    },
+    {
+      "source": "Заготовьте 5 топлива",
+      "key": "gather-5-fuel",
+      "label": {
+        "ko": "연료 5 채집",
+        "en": "Gather 5 fuel",
+        "ja": "燃料5を採集",
+        "zh-tw": "採集5燃料",
+        "ru": "Заготовьте 5 топлива"
+      },
+      "confidence": "draft-reviewed",
+      "suggestedTags": {
+        "activities": [
+          "gathering"
+        ],
+        "rewards": [
+          "resources"
+        ],
+        "eventType": [
+          "resource"
+        ],
+        "scoreMetric": [
+          "resourceGathering"
+        ]
+      }
+    },
+    {
+      "source": "Задание ранга S",
+      "key": "s-rank-task",
+      "label": {
+        "ko": "S등급 임무",
+        "en": "S-rank task",
+        "ja": "Sランク任務",
+        "zh-tw": "S級任務",
+        "ru": "Задание ранга S"
+      },
+      "confidence": "draft-reviewed",
+      "suggestedTags": {
+        "activities": [
+          "general"
+        ],
+        "rewards": [],
+        "eventType": [
+          "general"
+        ],
+        "scoreMetric": [
+          "count"
+        ]
+      }
+    },
+    {
+      "source": "Изолента для перековки x1",
+      "key": "reforge-tape-1",
+      "label": {
+        "ko": "재련 테이프 x1",
+        "en": "Reforge tape x1",
+        "ja": "再鍛造テープx1",
+        "zh-tw": "重鑄膠帶x1",
+        "ru": "Изолента для перековки x1"
+      },
+      "confidence": "needs-review",
+      "suggestedTags": {
+        "activities": [
+          "equipment"
+        ],
+        "rewards": [
+          "equipment"
+        ],
+        "eventType": [
+          "equipment"
+        ],
+        "scoreMetric": [
+          "equipmentUpgrade"
+        ]
+      },
+      "reviewNote": {
+        "en": "Reforge item name needs official terminology review."
+      }
+    },
+    {
+      "source": "Используйте 1 очко выносливости",
+      "key": "stamina-1",
+      "label": {
+        "ko": "스태미나 1 사용",
+        "en": "Use 1 stamina point",
+        "ja": "スタミナ1を使用",
+        "zh-tw": "使用1點體力",
+        "ru": "Используйте 1 очко выносливости"
+      },
+      "confidence": "draft-reviewed",
+      "suggestedTags": {
+        "activities": [
+          "combat"
+        ],
+        "rewards": [],
+        "eventType": [
+          "general"
+        ],
+        "scoreMetric": [
+          "stamina"
+        ]
+      }
+    },
+    {
+      "source": "Используйте 1ед. биогенного белка (кроме эксклюзивного)",
+      "key": "biogenic-protein-1",
+      "label": {
+        "ko": "생체 단백질 1개 사용",
+        "en": "Use 1 biogenic protein",
+        "ja": "生体タンパク質1個を使用",
+        "zh-tw": "使用1個生物蛋白",
+        "ru": "Используйте 1ед. биогенного белка (кроме эксклюзивного)"
+      },
+      "confidence": "needs-review",
+      "suggestedTags": {
+        "activities": [
+          "equipment"
+        ],
+        "rewards": [
+          "equipment"
+        ],
+        "eventType": [
+          "equipment"
+        ],
+        "scoreMetric": []
+      },
+      "reviewNote": {
+        "en": "Item meaning is partially clear, but official item naming and the exclusive exception need review."
+      }
+    },
+    {
+      "source": "Клетка титана",
+      "key": "titan-cage",
+      "label": {
+        "ko": "타이탄 케이지",
+        "en": "Titan cage",
+        "ja": "タイタンケージ",
+        "zh-tw": "泰坦籠",
+        "ru": "Клетка титана"
+      },
+      "confidence": "draft-reviewed",
+      "suggestedTags": {
+        "activities": [
+          "titan"
+        ],
+        "rewards": [
+          "titan"
+        ],
+        "eventType": [
+          "titan"
+        ],
+        "scoreMetric": [
+          "titan"
+        ]
+      }
+    },
+    {
+      "source": "Книга навыков героя",
+      "key": "hero-skill-book",
+      "label": {
+        "ko": "영웅 스킬북",
+        "en": "Hero skill book",
+        "ja": "英雄スキルブック",
+        "zh-tw": "英雄技能書",
+        "ru": "Книга навыков героя"
+      },
+      "confidence": "draft-reviewed",
+      "suggestedTags": {
+        "activities": [
+          "skills"
+        ],
+        "rewards": [
+          "skill-books"
+        ],
+        "eventType": [
+          "hero"
+        ],
+        "scoreMetric": [
+          "skillBooks"
+        ]
+      }
+    },
+    {
+      "source": "Молот перековки x1",
+      "key": "reforge-hammer-1",
+      "label": {
+        "ko": "재련 망치 x1",
+        "en": "Reforge hammer x1",
+        "ja": "再鍛造ハンマーx1",
+        "zh-tw": "重鑄錘x1",
+        "ru": "Молот перековки x1"
+      },
+      "confidence": "needs-review",
+      "suggestedTags": {
+        "activities": [
+          "equipment"
+        ],
+        "rewards": [
+          "equipment"
+        ],
+        "eventType": [
+          "equipment"
+        ],
+        "scoreMetric": [
+          "equipmentUpgrade"
+        ]
+      },
+      "reviewNote": {
+        "en": "Reforge item name needs official terminology review."
+      }
+    },
+    {
+      "source": "Обломок 100 опыта",
+      "key": "exp-shard-100",
+      "label": {
+        "ko": "경험치 파편 100",
+        "en": "EXP shard 100",
+        "ja": "経験値欠片100",
+        "zh-tw": "經驗碎片100",
+        "ru": "Обломок 100 опыта"
+      },
+      "confidence": "draft-reviewed",
+      "suggestedTags": {
+        "activities": [],
+        "rewards": [
+          "exp"
+        ],
+        "eventType": [
+          "hero"
+        ],
+        "scoreMetric": [
+          "expShards"
+        ]
+      }
+    },
+    {
+      "source": "Обломок 10000 опыта",
+      "key": "exp-shard-10000",
+      "label": {
+        "ko": "경험치 파편 10000",
+        "en": "EXP shard 10000",
+        "ja": "経験値欠片10000",
+        "zh-tw": "經驗碎片10000",
+        "ru": "Обломок 10000 опыта"
+      },
+      "confidence": "draft-reviewed",
+      "suggestedTags": {
+        "activities": [],
+        "rewards": [
+          "exp"
+        ],
+        "eventType": [
+          "hero"
+        ],
+        "scoreMetric": [
+          "expShards"
+        ]
+      }
+    },
+    {
+      "source": "Обломок 2000 опыта",
+      "key": "exp-shard-2000",
+      "label": {
+        "ko": "경험치 파편 2000",
+        "en": "EXP shard 2000",
+        "ja": "経験値欠片2000",
+        "zh-tw": "經驗碎片2000",
+        "ru": "Обломок 2000 опыта"
+      },
+      "confidence": "draft-reviewed",
+      "suggestedTags": {
+        "activities": [],
+        "rewards": [
+          "exp"
+        ],
+        "eventType": [
+          "hero"
+        ],
+        "scoreMetric": [
+          "expShards"
+        ]
+      }
+    },
+    {
+      "source": "Обломок 400 опыта",
+      "key": "exp-shard-400",
+      "label": {
+        "ko": "경험치 파편 400",
+        "en": "EXP shard 400",
+        "ja": "経験値欠片400",
+        "zh-tw": "經驗碎片400",
+        "ru": "Обломок 400 опыта"
+      },
+      "confidence": "draft-reviewed",
+      "suggestedTags": {
+        "activities": [],
+        "rewards": [
+          "exp"
+        ],
+        "eventType": [
+          "hero"
+        ],
+        "scoreMetric": [
+          "expShards"
+        ]
+      }
+    },
+    {
+      "source": "Обучить солдат ур.1",
+      "key": "train-soldiers-level-1",
+      "label": {
+        "ko": "레벨 1 병사 훈련",
+        "en": "Train level 1 soldiers",
+        "ja": "レベル1兵士を訓練",
+        "zh-tw": "訓練1級士兵",
+        "ru": "Обучить солдат ур.1"
+      },
+      "confidence": "draft-reviewed",
+      "suggestedTags": {
+        "activities": [
+          "training"
+        ],
+        "rewards": [],
+        "eventType": [
+          "training"
+        ],
+        "scoreMetric": [
+          "troopTraining"
+        ]
+      }
+    },
+    {
+      "source": "Обучить солдат ур.10",
+      "key": "train-soldiers-level-10",
+      "label": {
+        "ko": "레벨 10 병사 훈련",
+        "en": "Train level 10 soldiers",
+        "ja": "レベル10兵士を訓練",
+        "zh-tw": "訓練10級士兵",
+        "ru": "Обучить солдат ур.10"
+      },
+      "confidence": "draft-reviewed",
+      "suggestedTags": {
+        "activities": [
+          "training"
+        ],
+        "rewards": [],
+        "eventType": [
+          "training"
+        ],
+        "scoreMetric": [
+          "troopTraining"
+        ]
+      }
+    },
+    {
+      "source": "Обучить солдат ур.2",
+      "key": "train-soldiers-level-2",
+      "label": {
+        "ko": "레벨 2 병사 훈련",
+        "en": "Train level 2 soldiers",
+        "ja": "レベル2兵士を訓練",
+        "zh-tw": "訓練2級士兵",
+        "ru": "Обучить солдат ур.2"
+      },
+      "confidence": "draft-reviewed",
+      "suggestedTags": {
+        "activities": [
+          "training"
+        ],
+        "rewards": [],
+        "eventType": [
+          "training"
+        ],
+        "scoreMetric": [
+          "troopTraining"
+        ]
+      }
+    },
+    {
+      "source": "Обучить солдат ур.3",
+      "key": "train-soldiers-level-3",
+      "label": {
+        "ko": "레벨 3 병사 훈련",
+        "en": "Train level 3 soldiers",
+        "ja": "レベル3兵士を訓練",
+        "zh-tw": "訓練3級士兵",
+        "ru": "Обучить солдат ур.3"
+      },
+      "confidence": "draft-reviewed",
+      "suggestedTags": {
+        "activities": [
+          "training"
+        ],
+        "rewards": [],
+        "eventType": [
+          "training"
+        ],
+        "scoreMetric": [
+          "troopTraining"
+        ]
+      }
+    },
+    {
+      "source": "Обучить солдат ур.4",
+      "key": "train-soldiers-level-4",
+      "label": {
+        "ko": "레벨 4 병사 훈련",
+        "en": "Train level 4 soldiers",
+        "ja": "レベル4兵士を訓練",
+        "zh-tw": "訓練4級士兵",
+        "ru": "Обучить солдат ур.4"
+      },
+      "confidence": "draft-reviewed",
+      "suggestedTags": {
+        "activities": [
+          "training"
+        ],
+        "rewards": [],
+        "eventType": [
+          "training"
+        ],
+        "scoreMetric": [
+          "troopTraining"
+        ]
+      }
+    },
+    {
+      "source": "Обучить солдат ур.5",
+      "key": "train-soldiers-level-5",
+      "label": {
+        "ko": "레벨 5 병사 훈련",
+        "en": "Train level 5 soldiers",
+        "ja": "レベル5兵士を訓練",
+        "zh-tw": "訓練5級士兵",
+        "ru": "Обучить солдат ур.5"
+      },
+      "confidence": "draft-reviewed",
+      "suggestedTags": {
+        "activities": [
+          "training"
+        ],
+        "rewards": [],
+        "eventType": [
+          "training"
+        ],
+        "scoreMetric": [
+          "troopTraining"
+        ]
+      }
+    },
+    {
+      "source": "Обучить солдат ур.6",
+      "key": "train-soldiers-level-6",
+      "label": {
+        "ko": "레벨 6 병사 훈련",
+        "en": "Train level 6 soldiers",
+        "ja": "レベル6兵士を訓練",
+        "zh-tw": "訓練6級士兵",
+        "ru": "Обучить солдат ур.6"
+      },
+      "confidence": "draft-reviewed",
+      "suggestedTags": {
+        "activities": [
+          "training"
+        ],
+        "rewards": [],
+        "eventType": [
+          "training"
+        ],
+        "scoreMetric": [
+          "troopTraining"
+        ]
+      }
+    },
+    {
+      "source": "Обучить солдат ур.7",
+      "key": "train-soldiers-level-7",
+      "label": {
+        "ko": "레벨 7 병사 훈련",
+        "en": "Train level 7 soldiers",
+        "ja": "レベル7兵士を訓練",
+        "zh-tw": "訓練7級士兵",
+        "ru": "Обучить солдат ур.7"
+      },
+      "confidence": "draft-reviewed",
+      "suggestedTags": {
+        "activities": [
+          "training"
+        ],
+        "rewards": [],
+        "eventType": [
+          "training"
+        ],
+        "scoreMetric": [
+          "troopTraining"
+        ]
+      }
+    },
+    {
+      "source": "Обучить солдат ур.8",
+      "key": "train-soldiers-level-8",
+      "label": {
+        "ko": "레벨 8 병사 훈련",
+        "en": "Train level 8 soldiers",
+        "ja": "レベル8兵士を訓練",
+        "zh-tw": "訓練8級士兵",
+        "ru": "Обучить солдат ур.8"
+      },
+      "confidence": "draft-reviewed",
+      "suggestedTags": {
+        "activities": [
+          "training"
+        ],
+        "rewards": [],
+        "eventType": [
+          "training"
+        ],
+        "scoreMetric": [
+          "troopTraining"
+        ]
+      }
+    },
+    {
+      "source": "Обучить солдат ур.9",
+      "key": "train-soldiers-level-9",
+      "label": {
+        "ko": "레벨 9 병사 훈련",
+        "en": "Train level 9 soldiers",
+        "ja": "レベル9兵士を訓練",
+        "zh-tw": "訓練9級士兵",
+        "ru": "Обучить солдат ур.9"
+      },
+      "confidence": "draft-reviewed",
+      "suggestedTags": {
+        "activities": [
+          "training"
+        ],
+        "rewards": [],
+        "eventType": [
+          "training"
+        ],
+        "scoreMetric": [
+          "troopTraining"
+        ]
+      }
+    },
+    {
+      "source": "Общие детали (1)",
+      "key": "common-parts-1",
+      "label": {
+        "ko": "일반 부품 x1",
+        "en": "Common parts x1",
+        "ja": "共通部品x1",
+        "zh-tw": "一般零件x1",
+        "ru": "Общие детали (1)"
+      },
+      "confidence": "needs-review",
+      "suggestedTags": {
+        "activities": [
+          "equipment"
+        ],
+        "rewards": [
+          "equipment"
+        ],
+        "eventType": [
+          "equipment"
+        ],
+        "scoreMetric": [
+          "equipmentUpgrade"
+        ]
+      },
+      "reviewNote": {
+        "en": "Equipment/material item name needs official terminology review."
+      }
+    },
+    {
+      "source": "Обычный призыв 1 р.",
+      "key": "normal-summon-1",
+      "label": {
+        "ko": "일반 소환 1회",
+        "en": "Normal summon x1",
+        "ja": "通常召喚1回",
+        "zh-tw": "普通招募1次",
+        "ru": "Обычный призыв 1 р."
+      },
+      "confidence": "draft-reviewed",
+      "suggestedTags": {
+        "activities": [
+          "summon"
+        ],
+        "rewards": [
+          "summon"
+        ],
+        "eventType": [
+          "hero"
+        ],
+        "scoreMetric": [
+          "summonCount"
+        ]
+      }
+    },
+    {
+      "source": "Опыт титана за 100 ед",
+      "key": "titan-exp-100",
+      "label": {
+        "ko": "타이탄 경험치 100",
+        "en": "Titan EXP per 100",
+        "ja": "タイタン経験値100ごと",
+        "zh-tw": "每100泰坦經驗",
+        "ru": "Опыт титана за 100 ед"
+      },
+      "confidence": "draft-reviewed",
+      "suggestedTags": {
+        "activities": [
+          "titan"
+        ],
+        "rewards": [
+          "titan"
+        ],
+        "eventType": [
+          "titan"
+        ],
+        "scoreMetric": [
+          "titan"
+        ]
+      }
+    },
+    {
+      "source": "Отправьте грузовик A-класса",
+      "key": "send-a-class-truck",
+      "label": {
+        "ko": "A급 트럭 발송",
+        "en": "Send an A-class truck",
+        "ja": "Aクラスのトラックを送る",
+        "zh-tw": "派遣A級卡車",
+        "ru": "Отправьте грузовик A-класса"
+      },
+      "confidence": "draft-reviewed",
+      "suggestedTags": {
+        "activities": [
+          "trucks"
+        ],
+        "rewards": [],
+        "eventType": [
+          "alliance"
+        ],
+        "scoreMetric": [
+          "count"
+        ]
+      }
+    },
+    {
+      "source": "Победить отряд ур.1",
+      "key": "defeat-squad-level-1",
+      "label": {
+        "ko": "레벨 1 부대 처치",
+        "en": "Defeat level 1 squad",
+        "ja": "レベル1部隊を撃破",
+        "zh-tw": "擊敗1級部隊",
+        "ru": "Победить отряд ур.1"
+      },
+      "confidence": "draft-reviewed",
+      "suggestedTags": {
+        "activities": [
+          "combat"
+        ],
+        "rewards": [],
+        "eventType": [
+          "combat"
+        ],
+        "scoreMetric": [
+          "count"
+        ]
+      }
+    },
+    {
+      "source": "Победить отряд ур.10",
+      "key": "defeat-squad-level-10",
+      "label": {
+        "ko": "레벨 10 부대 처치",
+        "en": "Defeat level 10 squad",
+        "ja": "レベル10部隊を撃破",
+        "zh-tw": "擊敗10級部隊",
+        "ru": "Победить отряд ур.10"
+      },
+      "confidence": "draft-reviewed",
+      "suggestedTags": {
+        "activities": [
+          "combat"
+        ],
+        "rewards": [],
+        "eventType": [
+          "combat"
+        ],
+        "scoreMetric": [
+          "count"
+        ]
+      }
+    },
+    {
+      "source": "Победить отряд ур.2",
+      "key": "defeat-squad-level-2",
+      "label": {
+        "ko": "레벨 2 부대 처치",
+        "en": "Defeat level 2 squad",
+        "ja": "レベル2部隊を撃破",
+        "zh-tw": "擊敗2級部隊",
+        "ru": "Победить отряд ур.2"
+      },
+      "confidence": "draft-reviewed",
+      "suggestedTags": {
+        "activities": [
+          "combat"
+        ],
+        "rewards": [],
+        "eventType": [
+          "combat"
+        ],
+        "scoreMetric": [
+          "count"
+        ]
+      }
+    },
+    {
+      "source": "Победить отряд ур.3",
+      "key": "defeat-squad-level-3",
+      "label": {
+        "ko": "레벨 3 부대 처치",
+        "en": "Defeat level 3 squad",
+        "ja": "レベル3部隊を撃破",
+        "zh-tw": "擊敗3級部隊",
+        "ru": "Победить отряд ур.3"
+      },
+      "confidence": "draft-reviewed",
+      "suggestedTags": {
+        "activities": [
+          "combat"
+        ],
+        "rewards": [],
+        "eventType": [
+          "combat"
+        ],
+        "scoreMetric": [
+          "count"
+        ]
+      }
+    },
+    {
+      "source": "Победить отряд ур.4",
+      "key": "defeat-squad-level-4",
+      "label": {
+        "ko": "레벨 4 부대 처치",
+        "en": "Defeat level 4 squad",
+        "ja": "レベル4部隊を撃破",
+        "zh-tw": "擊敗4級部隊",
+        "ru": "Победить отряд ур.4"
+      },
+      "confidence": "draft-reviewed",
+      "suggestedTags": {
+        "activities": [
+          "combat"
+        ],
+        "rewards": [],
+        "eventType": [
+          "combat"
+        ],
+        "scoreMetric": [
+          "count"
+        ]
+      }
+    },
+    {
+      "source": "Победить отряд ур.5",
+      "key": "defeat-squad-level-5",
+      "label": {
+        "ko": "레벨 5 부대 처치",
+        "en": "Defeat level 5 squad",
+        "ja": "レベル5部隊を撃破",
+        "zh-tw": "擊敗5級部隊",
+        "ru": "Победить отряд ур.5"
+      },
+      "confidence": "draft-reviewed",
+      "suggestedTags": {
+        "activities": [
+          "combat"
+        ],
+        "rewards": [],
+        "eventType": [
+          "combat"
+        ],
+        "scoreMetric": [
+          "count"
+        ]
+      }
+    },
+    {
+      "source": "Победить отряд ур.6",
+      "key": "defeat-squad-level-6",
+      "label": {
+        "ko": "레벨 6 부대 처치",
+        "en": "Defeat level 6 squad",
+        "ja": "レベル6部隊を撃破",
+        "zh-tw": "擊敗6級部隊",
+        "ru": "Победить отряд ур.6"
+      },
+      "confidence": "draft-reviewed",
+      "suggestedTags": {
+        "activities": [
+          "combat"
+        ],
+        "rewards": [],
+        "eventType": [
+          "combat"
+        ],
+        "scoreMetric": [
+          "count"
+        ]
+      }
+    },
+    {
+      "source": "Победить отряд ур.7",
+      "key": "defeat-squad-level-7",
+      "label": {
+        "ko": "레벨 7 부대 처치",
+        "en": "Defeat level 7 squad",
+        "ja": "レベル7部隊を撃破",
+        "zh-tw": "擊敗7級部隊",
+        "ru": "Победить отряд ур.7"
+      },
+      "confidence": "draft-reviewed",
+      "suggestedTags": {
+        "activities": [
+          "combat"
+        ],
+        "rewards": [],
+        "eventType": [
+          "combat"
+        ],
+        "scoreMetric": [
+          "count"
+        ]
+      }
+    },
+    {
+      "source": "Победить отряд ур.8",
+      "key": "defeat-squad-level-8",
+      "label": {
+        "ko": "레벨 8 부대 처치",
+        "en": "Defeat level 8 squad",
+        "ja": "レベル8部隊を撃破",
+        "zh-tw": "擊敗8級部隊",
+        "ru": "Победить отряд ур.8"
+      },
+      "confidence": "draft-reviewed",
+      "suggestedTags": {
+        "activities": [
+          "combat"
+        ],
+        "rewards": [],
+        "eventType": [
+          "combat"
+        ],
+        "scoreMetric": [
+          "count"
+        ]
+      }
+    },
+    {
+      "source": "Победить отряд ур.9",
+      "key": "defeat-squad-level-9",
+      "label": {
+        "ko": "레벨 9 부대 처치",
+        "en": "Defeat level 9 squad",
+        "ja": "レベル9部隊を撃破",
+        "zh-tw": "擊敗9級部隊",
+        "ru": "Победить отряд ур.9"
+      },
+      "confidence": "draft-reviewed",
+      "suggestedTags": {
+        "activities": [
+          "combat"
+        ],
+        "rewards": [],
+        "eventType": [
+          "combat"
+        ],
+        "scoreMetric": [
+          "count"
+        ]
+      }
+    },
+    {
+      "source": "Повышение звезд снаряжения",
+      "key": "gear-star-up",
+      "label": {
+        "ko": "장비 별 승급",
+        "en": "Gear star upgrade",
+        "ja": "装備スター強化",
+        "zh-tw": "裝備升星",
+        "ru": "Повышение звезд снаряжения"
+      },
+      "confidence": "draft-reviewed",
+      "suggestedTags": {
+        "activities": [
+          "equipment"
+        ],
+        "rewards": [
+          "equipment"
+        ],
+        "eventType": [
+          "equipment"
+        ],
+        "scoreMetric": [
+          "equipmentUpgrade"
+        ]
+      }
+    },
+    {
+      "source": "Продвинутый призыв 1 р.",
+      "key": "advanced-summon-1",
+      "label": {
+        "ko": "고급 소환 1회",
+        "en": "Advanced summon x1",
+        "ja": "高級召喚1回",
+        "zh-tw": "高級招募1次",
+        "ru": "Продвинутый призыв 1 р."
+      },
+      "confidence": "draft-reviewed",
+      "suggestedTags": {
+        "activities": [
+          "summon"
+        ],
+        "rewards": [
+          "summon"
+        ],
+        "eventType": [
+          "hero"
+        ],
+        "scoreMetric": [
+          "summonCount"
+        ]
+      }
+    },
+    {
+      "source": "Рост силы (исследование)",
+      "key": "research-power-growth",
+      "label": {
+        "ko": "연구 전투력 상승",
+        "en": "Power gain from research",
+        "ja": "研究による戦力上昇",
+        "zh-tw": "研究戰力提升",
+        "ru": "Рост силы (исследование)"
+      },
+      "confidence": "needs-review",
+      "relatedTo": "research-power-growth-alt",
+      "suggestedTags": {
+        "activities": [
+          "research"
+        ],
+        "rewards": [],
+        "eventType": [
+          "research"
+        ],
+        "scoreMetric": [
+          "researchPower"
+        ]
+      },
+      "reviewNote": {
+        "en": "Potential duplicate or variant of research power growth wording."
+      }
+    },
+    {
+      "source": "Рост силы (строительство)",
+      "key": "construction-power-growth",
+      "label": {
+        "ko": "건설 전투력 상승",
+        "en": "Power gain from construction",
+        "ja": "建設による戦力上昇",
+        "zh-tw": "建設戰力提升",
+        "ru": "Рост силы (строительство)"
+      },
+      "confidence": "needs-review",
+      "relatedTo": "construction-power-growth-alt",
+      "suggestedTags": {
+        "activities": [
+          "construction"
+        ],
+        "rewards": [],
+        "eventType": [
+          "construction"
+        ],
+        "scoreMetric": [
+          "constructionPower"
+        ]
+      },
+      "reviewNote": {
+        "en": "Potential duplicate or variant of construction power growth wording."
+      }
+    },
+    {
+      "source": "Рост силы исследованием",
+      "key": "research-power-growth-alt",
+      "label": {
+        "ko": "연구로 전투력 상승",
+        "en": "Power growth through research",
+        "ja": "研究で戦力上昇",
+        "zh-tw": "透過研究提升戰力",
+        "ru": "Рост силы исследованием"
+      },
+      "confidence": "needs-review",
+      "duplicateOf": "research-power-growth",
+      "suggestedTags": {
+        "activities": [
+          "research"
+        ],
+        "rewards": [],
+        "eventType": [
+          "research"
+        ],
+        "scoreMetric": [
+          "researchPower"
+        ]
+      },
+      "reviewNote": {
+        "en": "Potential duplicate or variant of research power growth wording."
+      }
+    },
+    {
+      "source": "Рост силы строительством",
+      "key": "construction-power-growth-alt",
+      "label": {
+        "ko": "건설로 전투력 상승",
+        "en": "Power growth through construction",
+        "ja": "建設で戦力上昇",
+        "zh-tw": "透過建設提升戰力",
+        "ru": "Рост силы строительством"
+      },
+      "confidence": "needs-review",
+      "duplicateOf": "construction-power-growth",
+      "suggestedTags": {
+        "activities": [
+          "construction"
+        ],
+        "rewards": [],
+        "eventType": [
+          "construction"
+        ],
+        "scoreMetric": [
+          "constructionPower"
+        ]
+      },
+      "reviewNote": {
+        "en": "Potential duplicate or variant of construction power growth wording."
+      }
+    },
+    {
+      "source": "Соберите 100 еды",
+      "key": "collect-100-food",
+      "label": {
+        "ko": "식량 100 수집",
+        "en": "Collect 100 food",
+        "ja": "食料100を収集",
+        "zh-tw": "收集100食物",
+        "ru": "Соберите 100 еды"
+      },
+      "confidence": "draft-reviewed",
+      "suggestedTags": {
+        "activities": [
+          "gathering"
+        ],
+        "rewards": [
+          "resources"
+        ],
+        "eventType": [
+          "resource"
+        ],
+        "scoreMetric": [
+          "resourceGathering"
+        ]
+      }
+    },
+    {
+      "source": "Соберите 20 металла",
+      "key": "collect-20-metal",
+      "label": {
+        "ko": "금속 20 수집",
+        "en": "Collect 20 metal",
+        "ja": "金属20を収集",
+        "zh-tw": "收集20金屬",
+        "ru": "Соберите 20 металла"
+      },
+      "confidence": "draft-reviewed",
+      "suggestedTags": {
+        "activities": [
+          "gathering"
+        ],
+        "rewards": [
+          "resources"
+        ],
+        "eventType": [
+          "resource"
+        ],
+        "scoreMetric": [
+          "resourceGathering"
+        ]
+      }
+    },
+    {
+      "source": "Точные чертежи (1)",
+      "key": "precision-blueprints-1",
+      "label": {
+        "ko": "정밀 설계도 x1",
+        "en": "Precision blueprints x1",
+        "ja": "精密設計図x1",
+        "zh-tw": "精密藍圖x1",
+        "ru": "Точные чертежи (1)"
+      },
+      "confidence": "needs-review",
+      "suggestedTags": {
+        "activities": [
+          "equipment"
+        ],
+        "rewards": [
+          "equipment"
+        ],
+        "eventType": [
+          "equipment"
+        ],
+        "scoreMetric": [
+          "equipmentUpgrade"
+        ]
+      },
+      "reviewNote": {
+        "en": "Blueprint item name needs official terminology review."
+      }
+    },
+    {
+      "source": "Убейте заражённых в разведмиссиях",
+      "key": "kill-infected-in-recon",
+      "label": {
+        "ko": "정찰 임무 감염자 처치",
+        "en": "Kill infected in recon missions",
+        "ja": "偵察任務で感染者を撃破",
+        "zh-tw": "在偵察任務中擊殺感染者",
+        "ru": "Убейте заражённых в разведмиссиях"
+      },
+      "confidence": "draft-reviewed",
+      "suggestedTags": {
+        "activities": [
+          "recon",
+          "combat"
+        ],
+        "rewards": [],
+        "eventType": [
+          "combat"
+        ],
+        "scoreMetric": [
+          "count"
+        ]
+      }
+    },
+    {
+      "source": "Убейте заражённых ур.1-6",
+      "key": "kill-infected-level-1-6",
+      "label": {
+        "ko": "레벨 1-6 감염자 처치",
+        "en": "Kill level 1-6 infected",
+        "ja": "レベル1-6感染者を撃破",
+        "zh-tw": "擊殺1-6級感染者",
+        "ru": "Убейте заражённых ур.1-6"
+      },
+      "confidence": "draft-reviewed",
+      "suggestedTags": {
+        "activities": [
+          "combat"
+        ],
+        "rewards": [],
+        "eventType": [
+          "combat"
+        ],
+        "scoreMetric": [
+          "count"
+        ]
+      }
+    },
+    {
+      "source": "Убейте заражённых ур.13-18",
+      "key": "kill-infected-level-13-18",
+      "label": {
+        "ko": "레벨 13-18 감염자 처치",
+        "en": "Kill level 13-18 infected",
+        "ja": "レベル13-18感染者を撃破",
+        "zh-tw": "擊殺13-18級感染者",
+        "ru": "Убейте заражённых ур.13-18"
+      },
+      "confidence": "draft-reviewed",
+      "suggestedTags": {
+        "activities": [
+          "combat"
+        ],
+        "rewards": [],
+        "eventType": [
+          "combat"
+        ],
+        "scoreMetric": [
+          "count"
+        ]
+      }
+    },
+    {
+      "source": "Убейте заражённых ур.19-24",
+      "key": "kill-infected-level-19-24",
+      "label": {
+        "ko": "레벨 19-24 감염자 처치",
+        "en": "Kill level 19-24 infected",
+        "ja": "レベル19-24感染者を撃破",
+        "zh-tw": "擊殺19-24級感染者",
+        "ru": "Убейте заражённых ур.19-24"
+      },
+      "confidence": "draft-reviewed",
+      "suggestedTags": {
+        "activities": [
+          "combat"
+        ],
+        "rewards": [],
+        "eventType": [
+          "combat"
+        ],
+        "scoreMetric": [
+          "count"
+        ]
+      }
+    },
+    {
+      "source": "Убейте заражённых ур.25-30",
+      "key": "kill-infected-level-25-30",
+      "label": {
+        "ko": "레벨 25-30 감염자 처치",
+        "en": "Kill level 25-30 infected",
+        "ja": "レベル25-30感染者を撃破",
+        "zh-tw": "擊殺25-30級感染者",
+        "ru": "Убейте заражённых ур.25-30"
+      },
+      "confidence": "draft-reviewed",
+      "suggestedTags": {
+        "activities": [
+          "combat"
+        ],
+        "rewards": [],
+        "eventType": [
+          "combat"
+        ],
+        "scoreMetric": [
+          "count"
+        ]
+      }
+    },
+    {
+      "source": "Убейте заражённых ур.7-12",
+      "key": "kill-infected-level-7-12",
+      "label": {
+        "ko": "레벨 7-12 감염자 처치",
+        "en": "Kill level 7-12 infected",
+        "ja": "レベル7-12感染者を撃破",
+        "zh-tw": "擊殺7-12級感染者",
+        "ru": "Убейте заражённых ур.7-12"
+      },
+      "confidence": "draft-reviewed",
+      "suggestedTags": {
+        "activities": [
+          "combat"
+        ],
+        "rewards": [],
+        "eventType": [
+          "combat"
+        ],
+        "scoreMetric": [
+          "count"
+        ]
+      }
+    },
+    {
+      "source": "Убейте нечестивых заражённых ур.1 (рейд)",
+      "key": "kill-unholy-infected-level-1-raid",
+      "label": {
+        "ko": "레벨 1 불경한 감염자 처치(레이드)",
+        "en": "Kill level 1 unholy infected (raid)",
+        "ja": "レベル1不浄感染者を撃破（レイド）",
+        "zh-tw": "擊殺1級邪惡感染者（集結）",
+        "ru": "Убейте нечестивых заражённых ур.1 (рейд)"
+      },
+      "confidence": "needs-review",
+      "suggestedTags": {
+        "activities": [
+          "combat"
+        ],
+        "rewards": [],
+        "eventType": [
+          "combat"
+        ],
+        "scoreMetric": [
+          "count"
+        ]
+      },
+      "reviewNote": {
+        "en": "Combat target and raid/gather wording need in-game confirmation."
+      }
+    },
+    {
+      "source": "Ускорение исцеления 1 мин",
+      "key": "healing-speedup-1-min",
+      "label": {
+        "ko": "치료 가속 1분",
+        "en": "Healing speedup 1 min",
+        "ja": "治療加速1分",
+        "zh-tw": "治療加速1分鐘",
+        "ru": "Ускорение исцеления 1 мин"
+      },
+      "confidence": "draft-reviewed",
+      "suggestedTags": {
+        "activities": [
+          "healing"
+        ],
+        "rewards": [
+          "speedups"
+        ],
+        "eventType": [
+          "growth"
+        ],
+        "scoreMetric": [
+          "speedupMinutes"
+        ]
+      }
+    },
+    {
+      "source": "Ускорение обучения 1 мин",
+      "key": "training-speedup-1-min",
+      "label": {
+        "ko": "훈련 가속 1분",
+        "en": "Training speedup 1 min",
+        "ja": "訓練加速1分",
+        "zh-tw": "訓練加速1分鐘",
+        "ru": "Ускорение обучения 1 мин"
+      },
+      "confidence": "draft-reviewed",
+      "suggestedTags": {
+        "activities": [
+          "training"
+        ],
+        "rewards": [
+          "speedups"
+        ],
+        "eventType": [
+          "training"
+        ],
+        "scoreMetric": [
+          "speedupMinutes"
+        ]
+      }
+    },
+    {
+      "source": "Ускорение строительства 1 мин",
+      "key": "construction-speedup-1-min",
+      "label": {
+        "ko": "건설 가속 1분",
+        "en": "Construction speedup 1 min",
+        "ja": "建設加速1分",
+        "zh-tw": "建設加速1分鐘",
+        "ru": "Ускорение строительства 1 мин"
+      },
+      "confidence": "draft-reviewed",
+      "suggestedTags": {
+        "activities": [
+          "construction"
+        ],
+        "rewards": [
+          "speedups"
+        ],
+        "eventType": [
+          "construction"
+        ],
+        "scoreMetric": [
+          "speedupMinutes"
+        ]
+      }
+    },
+    {
+      "source": "Ускоритель исследования 1 мин",
+      "key": "research-speedup-1-min",
+      "label": {
+        "ko": "연구 가속 1분",
+        "en": "Research speedup 1 min",
+        "ja": "研究加速1分",
+        "zh-tw": "研究加速1分鐘",
+        "ru": "Ускоритель исследования 1 мин"
+      },
+      "confidence": "draft-reviewed",
+      "suggestedTags": {
+        "activities": [
+          "research"
+        ],
+        "rewards": [
+          "speedups"
+        ],
+        "eventType": [
+          "research"
+        ],
+        "scoreMetric": [
+          "speedupMinutes"
+        ]
+      }
+    },
+    {
+      "source": "Фрагмент легендарного героя",
+      "key": "legendary-hero-fragment",
+      "label": {
+        "ko": "전설 영웅 조각",
+        "en": "Legendary hero fragment",
+        "ja": "レジェンド英雄欠片",
+        "zh-tw": "傳說英雄碎片",
+        "ru": "Фрагмент легендарного героя"
+      },
+      "confidence": "draft-reviewed",
+      "suggestedTags": {
+        "activities": [],
+        "rewards": [
+          "hero-fragments"
+        ],
+        "eventType": [
+          "hero"
+        ],
+        "scoreMetric": [
+          "heroFragments"
+        ]
+      }
+    },
+    {
+      "source": "Фрагмент редкого героя",
+      "key": "rare-hero-fragment",
+      "label": {
+        "ko": "희귀 영웅 조각",
+        "en": "Rare hero fragment",
+        "ja": "レア英雄欠片",
+        "zh-tw": "稀有英雄碎片",
+        "ru": "Фрагмент редкого героя"
+      },
+      "confidence": "draft-reviewed",
+      "suggestedTags": {
+        "activities": [],
+        "rewards": [
+          "hero-fragments"
+        ],
+        "eventType": [
+          "hero"
+        ],
+        "scoreMetric": [
+          "heroFragments"
+        ]
+      }
+    },
+    {
+      "source": "Фрагмент эпического героя",
+      "key": "epic-hero-fragment",
+      "label": {
+        "ko": "에픽 영웅 조각",
+        "en": "Epic hero fragment",
+        "ja": "エピック英雄欠片",
+        "zh-tw": "史詩英雄碎片",
+        "ru": "Фрагмент эпического героя"
+      },
+      "confidence": "draft-reviewed",
+      "suggestedTags": {
+        "activities": [],
+        "rewards": [
+          "hero-fragments"
+        ],
+        "eventType": [
+          "hero"
+        ],
+        "scoreMetric": [
+          "heroFragments"
+        ]
+      }
+    }
+  ],
+  "overlapModeMap": [
+    {
+      "source": "Дуэль союзов",
+      "key": "alliance-duel",
+      "label": {
+        "ko": "동맹 듀얼",
+        "en": "Alliance Duel",
+        "ja": "同盟デュエル",
+        "zh-tw": "聯盟對決",
+        "ru": "Дуэль союзов"
+      },
+      "confidence": "draft-reviewed",
+      "relatedTo": "alliance-duel",
+      "note": {
+        "en": "This key intentionally mirrors modeMap. Add a namespace if these maps are flattened into one dictionary."
+      }
+    },
+    {
+      "source": "Игра по-крупному",
+      "key": "big-game",
+      "label": {
+        "ko": "빅 게임",
+        "en": "Big Game",
+        "ja": "ビッグゲーム",
+        "zh-tw": "大型活動",
+        "ru": "Игра по-крупному"
+      },
+      "confidence": "draft-reviewed",
+      "relatedTo": "big-game",
+      "note": {
+        "en": "This key intentionally mirrors modeMap. Add a namespace if these maps are flattened into one dictionary."
+      }
+    },
+    {
+      "source": "Турбочерепаха",
+      "key": "turbo-turtle",
+      "label": {
+        "ko": "터보 거북이",
+        "en": "Turbo Turtle",
+        "ja": "ターボタートル",
+        "zh-tw": "渦輪龜",
+        "ru": "Турбочерепаха"
+      },
+      "confidence": "needs-review",
+      "reviewNote": {
+        "en": "Confirm the official in-game event name before promoting this translation."
+      },
+      "relatedTo": "turbo-turtle",
+      "note": {
+        "en": "This key intentionally mirrors modeMap. Add a namespace if these maps are flattened into one dictionary."
+      }
+    }
+  ],
+  "tagRules": {
+    "notes": {
+      "en": "Standard tag dictionary for converting source action/activity rows into event-helper-events.json fields. All entries remain draft-level until in-game review.",
+      "ko": "원본 action/activity row를 event-helper-events.json 필드로 변환하기 위한 표준 태그 초안입니다. 게임 내 검수 전까지 초안 상태로 유지합니다."
+    },
+    "activities": [
+      {
+        "tag": "training",
+        "confidence": "mapping-draft"
+      },
+      {
+        "tag": "construction",
+        "confidence": "mapping-draft"
+      },
+      {
+        "tag": "research",
+        "confidence": "mapping-draft"
+      },
+      {
+        "tag": "healing",
+        "confidence": "mapping-draft"
+      },
+      {
+        "tag": "skills",
+        "confidence": "mapping-draft"
+      },
+      {
+        "tag": "summon",
+        "confidence": "mapping-draft"
+      },
+      {
+        "tag": "equipment",
+        "confidence": "mapping-draft"
+      },
+      {
+        "tag": "gathering",
+        "confidence": "mapping-draft"
+      },
+      {
+        "tag": "resources",
+        "confidence": "mapping-draft"
+      },
+      {
+        "tag": "diamonds",
+        "confidence": "mapping-draft"
+      },
+      {
+        "tag": "combat",
+        "confidence": "mapping-draft"
+      },
+      {
+        "tag": "recon",
+        "confidence": "mapping-draft"
+      },
+      {
+        "tag": "trucks",
+        "confidence": "mapping-draft"
+      },
+      {
+        "tag": "titan",
+        "confidence": "mapping-draft"
+      },
+      {
+        "tag": "hero-upgrade",
+        "confidence": "mapping-draft"
+      },
+      {
+        "tag": "hero-fragments",
+        "confidence": "mapping-draft"
+      },
+      {
+        "tag": "chief-stamina",
+        "confidence": "mapping-draft"
+      },
+      {
+        "tag": "chief-collection",
+        "confidence": "mapping-draft"
+      },
+      {
+        "tag": "desperate-dispatch",
+        "confidence": "mapping-draft"
+      },
+      {
+        "tag": "general",
+        "confidence": "mapping-draft"
+      }
+    ],
+    "rewards": [
+      {
+        "tag": "speedups",
+        "confidence": "mapping-draft"
+      },
+      {
+        "tag": "hero-fragments",
+        "confidence": "mapping-draft"
+      },
+      {
+        "tag": "summon",
+        "confidence": "mapping-draft"
+      },
+      {
+        "tag": "resources",
+        "confidence": "mapping-draft"
+      },
+      {
+        "tag": "diamonds",
+        "confidence": "mapping-draft"
+      },
+      {
+        "tag": "equipment",
+        "confidence": "mapping-draft"
+      },
+      {
+        "tag": "titan",
+        "confidence": "mapping-draft"
+      },
+      {
+        "tag": "skill-books",
+        "confidence": "mapping-draft"
+      },
+      {
+        "tag": "exp",
+        "confidence": "mapping-draft"
+      },
+      {
+        "tag": "power",
+        "confidence": "mapping-draft"
+      }
+    ],
+    "eventTypes": [
+      {
+        "tag": "training",
+        "confidence": "mapping-draft"
+      },
+      {
+        "tag": "construction",
+        "confidence": "mapping-draft"
+      },
+      {
+        "tag": "research",
+        "confidence": "mapping-draft"
+      },
+      {
+        "tag": "hero",
+        "confidence": "mapping-draft"
+      },
+      {
+        "tag": "equipment",
+        "confidence": "mapping-draft"
+      },
+      {
+        "tag": "resource",
+        "confidence": "mapping-draft"
+      },
+      {
+        "tag": "combat",
+        "confidence": "mapping-draft"
+      },
+      {
+        "tag": "alliance",
+        "confidence": "mapping-draft"
+      },
+      {
+        "tag": "titan",
+        "confidence": "mapping-draft"
+      },
+      {
+        "tag": "growth",
+        "confidence": "mapping-draft"
+      },
+      {
+        "tag": "general",
+        "confidence": "mapping-draft"
+      }
+    ],
+    "scoreMetrics": [
+      {
+        "tag": "speedupMinutes",
+        "confidence": "mapping-draft"
+      },
+      {
+        "tag": "troopTraining",
+        "confidence": "mapping-draft"
+      },
+      {
+        "tag": "trainingPower",
+        "confidence": "mapping-draft"
+      },
+      {
+        "tag": "constructionPower",
+        "confidence": "mapping-draft"
+      },
+      {
+        "tag": "researchPower",
+        "confidence": "mapping-draft"
+      },
+      {
+        "tag": "heroFragments",
+        "confidence": "mapping-draft"
+      },
+      {
+        "tag": "heroShards",
+        "confidence": "mapping-draft"
+      },
+      {
+        "tag": "summonCount",
+        "confidence": "mapping-draft"
+      },
+      {
+        "tag": "equipmentUpgrade",
+        "confidence": "mapping-draft"
+      },
+      {
+        "tag": "resourceGathering",
+        "confidence": "mapping-draft"
+      },
+      {
+        "tag": "count",
+        "confidence": "mapping-draft"
+      },
+      {
+        "tag": "titan",
+        "confidence": "mapping-draft"
+      },
+      {
+        "tag": "diamonds",
+        "confidence": "mapping-draft"
+      },
+      {
+        "tag": "skillBooks",
+        "confidence": "mapping-draft"
+      },
+      {
+        "tag": "expShards",
+        "confidence": "mapping-draft"
+      },
+      {
+        "tag": "stamina",
+        "confidence": "mapping-draft"
+      }
+    ]
+  },
+  "dictionaryNotes": {
+    "flatKeyCollision": {
+      "en": "modeMap and overlapModeMap intentionally share keys for the same source modes. Prefix keys by map type if these dictionaries are flattened.",
+      "ko": "modeMap과 overlapModeMap은 같은 원본 모드에 대해 의도적으로 동일 key를 공유합니다. 하나의 flat dictionary로 합칠 때는 map type prefix를 붙이세요."
+    }
+  },
+  "reviewSummary": {
+    "draftReviewedCriteria": {
+      "en": "Promoted only when the source meaning is direct and the label can be used as a draft UI/tag label without claiming official wording.",
+      "ko": "원문 의미가 직접적이고 공식 용어 확정 없이도 초안 UI/tag 라벨로 사용할 수 있는 항목만 draft-reviewed로 올렸습니다."
+    },
+    "needsReviewCriteria": {
+      "en": "Kept when official item/event names, duplicate semantics, or game-specific terminology need confirmation.",
+      "ko": "공식 아이템/이벤트명, 의미 중복, 게임 고유 용어 확인이 필요한 항목은 needs-review를 유지했습니다."
+    }
+  }
+}
