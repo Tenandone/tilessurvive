@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="ru" data-lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Инструменты Tiles Survive | Калькуляторы, помощник событий, поиск наград | TilesSurvive.net</title>
+  <base href="/" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="description" content="Хаб инструментов Tiles Survive для подготовки к событиям: помощник событий, калькуляторы, поиск наград, база данных и гайды." />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+  <meta name="author" content="TilesSurvive.net" />
+  <link rel="canonical" href="https://tilessurvive.net/ru/tools/" />
+  <link rel="alternate" hreflang="x-default" href="https://tilessurvive.net/en/tools/" />
+  <link rel="alternate" hreflang="ko" href="https://tilessurvive.net/ko/tools/" />
+  <link rel="alternate" hreflang="en" href="https://tilessurvive.net/en/tools/" />
+  <link rel="alternate" hreflang="ja" href="https://tilessurvive.net/ja/tools/" />
+  <link rel="alternate" hreflang="ru" href="https://tilessurvive.net/ru/tools/" />
+  <link rel="alternate" hreflang="zh-TW" href="https://tilessurvive.net/zh-tw/tools/" />
+  <meta property="og:site_name" content="TilesSurvive.net" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Инструменты Tiles Survive | Калькуляторы, помощник событий, поиск наград | TilesSurvive.net" />
+  <meta property="og:description" content="Хаб TilesSurvive.net для помощника событий, калькуляторов, поиска наград, базы данных и гайдов." />
+  <meta property="og:url" content="https://tilessurvive.net/ru/tools/" />
+  <meta property="og:image" content="https://tilessurvive.net/img/logo-tilessurvive.png" />
+  <meta property="og:locale" content="ru_RU" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Инструменты Tiles Survive | TilesSurvive.net" />
+  <meta name="twitter:description" content="Хаб инструментов для подготовки к событиям, калькуляторов, поиска наград и проверки данных." />
+  <meta name="twitter:image" content="https://tilessurvive.net/img/logo-tilessurvive.png" />
+  <style>
+    .tools-page{color:#0f172a;background:#f4f7fb;min-height:100vh;padding:22px 0 96px;line-height:1.68;word-break:keep-all}
+    .tools-page *{box-sizing:border-box}
+    .tools-page .tools-container{width:min(1180px,calc(100% - 32px));margin:0 auto;min-width:0}
+    .tools-page .tools-breadcrumb{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:10px 0 18px;color:#64748b;font-size:14px}
+    .tools-page .tools-breadcrumb a{color:#2563eb;text-decoration:none;font-weight:800}
+    .tools-page .tools-hero{border:1px solid #dbeafe;background:linear-gradient(135deg,#ffffff 0%,#eff6ff 55%,#ecfdf5 100%);border-radius:28px;padding:30px;box-shadow:0 18px 46px rgba(15,23,42,.08)}
+    .tools-page .tools-eyebrow{font-size:13px;font-weight:900;color:#2563eb;text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px}
+    .tools-page h1{font-size:clamp(30px,4vw,54px);line-height:1.08;margin:0 0 16px;color:#0f172a;letter-spacing:0}
+    .tools-page h2{font-size:24px;line-height:1.22;margin:0 0 6px;color:#0f172a;letter-spacing:0}
+    .tools-page h3{font-size:17px;margin:0 0 8px;color:#0f172a;letter-spacing:0}
+    .tools-page .tools-lead{font-size:18px;max-width:840px;margin:0;color:#334155}
+    .tools-page .tools-note{margin:14px 0 0;color:#475569;max-width:860px}
+    .tools-page .tools-section{margin-top:22px;border:1px solid #e2e8f0;background:#fff;border-radius:24px;padding:24px;box-shadow:0 12px 34px rgba(15,23,42,.05)}
+    .tools-page .tools-section-head{display:flex;justify-content:space-between;gap:18px;align-items:flex-end;flex-wrap:wrap;margin-bottom:16px}
+    .tools-page .tools-muted{color:#64748b;margin:0}
+    .tools-page .tools-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+    .tools-page .tools-grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+    .tools-page .tools-card{border:1px solid #e2e8f0;background:#f8fafc;border-radius:18px;padding:16px;min-width:0}
+    .tools-page .tools-card p{margin:0;color:#475569}
+    .tools-page .tools-link{display:flex;justify-content:space-between;gap:12px;align-items:center;text-decoration:none;color:#0f172a;border:1px solid #e2e8f0;border-radius:18px;padding:16px;background:#f8fafc}
+    .tools-page .tools-link:hover{border-color:#93c5fd;background:#eff6ff}
+    .tools-page .tools-link span{color:#2563eb;font-weight:900;white-space:nowrap}
+    .tools-page .tools-disabled{opacity:.78}
+    .tools-page .tools-pill{display:inline-flex;align-items:center;border:1px solid #f59e0b;background:#fffbeb;border-radius:999px;padding:5px 9px;color:#92400e;font-size:12px;font-weight:900;margin-top:10px}
+    .tools-page .tools-cta{display:flex;gap:14px;align-items:center;justify-content:space-between;border:1px solid #bfdbfe;background:#fff;border-radius:20px;padding:16px 18px;text-decoration:none;color:#0f172a;box-shadow:0 10px 28px rgba(37,99,235,.08)}
+    .tools-page .tools-cta strong{display:block;font-size:16px;margin-bottom:3px}
+    .tools-page .tools-cta span{display:block;color:#475569;font-size:14px}
+    .tools-page .tools-cta em{font-style:normal;font-weight:900;color:#2563eb;white-space:nowrap}
+    .tools-page .tools-faq{display:grid;gap:12px}
+    .tools-page .tools-faq details{border:1px solid #e2e8f0;background:#f8fafc;border-radius:16px;padding:14px}
+    .tools-page .tools-faq summary{font-weight:900;cursor:pointer}
+    .tools-page .tools-faq p{margin:10px 0 0;color:#475569}
+    .tools-page .tools-source{border-left:4px solid #2563eb;background:#eff6ff;color:#334155;border-radius:14px;padding:14px;margin:0}
+    @media (max-width:900px){.tools-page .tools-grid,.tools-page .tools-grid-2{grid-template-columns:1fr}}
+    @media (max-width:560px){.tools-page{padding-top:14px}.tools-page .tools-container{width:min(100% - 24px,1180px)}.tools-page .tools-hero,.tools-page .tools-section{padding:18px;border-radius:20px}.tools-page .tools-cta{align-items:flex-start;flex-direction:column}.tools-page .tools-cta em{white-space:normal}}
+  </style>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Главная","item":"https://tilessurvive.net/ru/"},{"@type":"ListItem","position":2,"name":"Инструменты","item":"https://tilessurvive.net/ru/tools/"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Какие инструменты собраны на этой странице?","acceptedAnswer":{"@type":"Answer","text":"Здесь собраны реальные страницы TilesSurvive.net и будущие инструменты для подготовки к событиям, калькуляторов, поиска наград и проверки данных."}},{"@type":"Question","name":"Можно ли нажимать карточки в подготовке?","acceptedAnswer":{"@type":"Answer","text":"Нет. Калькуляторы без готовых страниц показаны как карточки без ссылок."}},{"@type":"Question","name":"Зачем здесь ссылка LootBar?","acceptedAnswer":{"@type":"Answer","text":"Это информационная рекомендация для игроков, которые хотят проверить top-up преимущества во время подготовки к событиям."}}]}</script>
+</head>
+<body>
+  <div id="site-header"></div>
+  <main class="tools-page" id="main">
+    <div class="tools-container">
+      <nav class="tools-breadcrumb" aria-label="Breadcrumb">
+        <a href="/ru/">Главная</a><span>/</span><span>Инструменты</span>
+      </nav>
+      <section class="tools-hero" aria-labelledby="toolsTitle">
+        <div class="tools-eyebrow">TilesSurvive.net Tools</div>
+        <h1 id="toolsTitle">Инструменты Tiles Survive</h1>
+        <p class="tools-lead">Хаб для быстрого перехода к помощнику событий, калькуляторам, поиску наград, базе данных и гайдам.</p>
+        <p class="tools-note">Доступные инструменты ведут только на реальные страницы, а будущие калькуляторы показаны без ссылок.</p>
+      </section>
+
+      <section class="tools-section" aria-labelledby="availableToolsTitle">
+        <div class="tools-section-head"><div><h2 id="availableToolsTitle">Доступные инструменты</h2><p class="tools-muted">Страницы, которые уже можно использовать для подготовки к событиям и проверки данных.</p></div></div>
+        <div class="tools-grid">
+          <a class="tools-link" href="/ru/event-helper/"><div><h3>Помощник событий</h3><p>Проверь события на сегодня, недельный календарь, поиск наград и базовые калькуляторы.</p></div><span>Открыть</span></a>
+          <a class="tools-link" href="/ru/database/alliance-duel/"><div><h3>Данные Alliance Duel</h3><p>Проверь таблицы и ориентиры Alliance Duel перед активностью в событии.</p></div><span>Смотреть</span></a>
+          <a class="tools-link" href="/ru/guides/gift-code-how-to-use/"><div><h3>Как вводить коды</h3><p>Проверь процесс ввода кодов и подготовку gift code перед событиями.</p></div><span>Смотреть</span></a>
+        </div>
+      </section>
+
+      <section class="tools-section" aria-labelledby="comingToolsTitle">
+        <div class="tools-section-head"><div><h2 id="comingToolsTitle">Калькуляторы в подготовке</h2><p class="tools-muted">У них пока нет реальных страниц, поэтому они показаны как карточки без ссылок.</p></div></div>
+        <div class="tools-grid">
+          <article class="tools-card tools-disabled"><h3>Калькулятор ускорений</h3><p>Отдельный инструмент для суммы ускорений и планирования трат в событиях.</p><span class="tools-pill">В подготовке</span></article>
+          <article class="tools-card tools-disabled"><h3>Калькулятор очков силы</h3><p>Оценивает очки события по приросту силы и коэффициенту.</p><span class="tools-pill">В подготовке</span></article>
+          <article class="tools-card tools-disabled"><h3>Поиск наград</h3><p>Поможет искать события и данные по нужным наградам.</p><span class="tools-pill">В подготовке</span></article>
+          <article class="tools-card tools-disabled"><h3>Календарь событий</h3><p>Станет отдельным календарем после подготовки проверенного расписания.</p><span class="tools-pill">В подготовке</span></article>
+          <article class="tools-card tools-disabled"><h3>Калькулятор снаряжения</h3><p>Поможет планировать материалы для снаряжения и эксклюзивного снаряжения.</p><span class="tools-pill">В подготовке</span></article>
+          <article class="tools-card tools-disabled"><h3>Калькулятор фрагментов героев</h3><p>Посчитает нужные фрагменты героев и недостающий объем.</p><span class="tools-pill">В подготовке</span></article>
+          <article class="tools-card tools-disabled"><h3>Калькулятор навыков героев</h3><p>Соберет потребности в книгах навыков и развитии навыков.</p><span class="tools-pill">В подготовке</span></article>
+          <article class="tools-card tools-disabled"><h3>Калькулятор уровней героев</h3><p>Поможет планировать опыт и материалы для уровней героев.</p><span class="tools-pill">В подготовке</span></article>
+        </div>
+      </section>
+
+      <section class="tools-section" aria-labelledby="dataLinksTitle">
+        <div class="tools-section-head"><div><h2 id="dataLinksTitle">Полезные данные рядом</h2><p class="tools-muted">Существующие страницы базы данных, которые удобно проверять вместе с калькуляторами.</p></div></div>
+        <div class="tools-grid-2">
+          <a class="tools-link" href="/ru/database/hero-exp/"><div><h3>Опыт героев</h3><p>Проверь опыт перед планированием уровней героев.</p></div><span>Смотреть</span></a>
+          <a class="tools-link" href="/ru/database/hero-star/"><div><h3>Звезды героев</h3><p>Проверь фрагменты и ориентиры роста звезд героев.</p></div><span>Смотреть</span></a>
+          <a class="tools-link" href="/ru/database/skill-book/"><div><h3>Книги навыков</h3><p>Проверь данные книг навыков перед планированием развития.</p></div><span>Смотреть</span></a>
+          <a class="tools-link" href="/ru/database/exclusive-gear/"><div><h3>Эксклюзивное снаряжение</h3><p>Проверь данные для планирования снаряжения.</p></div><span>Смотреть</span></a>
+          <a class="tools-link" href="/ru/database/legend-gear-star/"><div><h3>Звезды легендарного снаряжения</h3><p>Проверь данные звезд перед расширением калькулятора снаряжения.</p></div><span>Смотреть</span></a>
+          <a class="tools-link" href="/ru/database/vip-point/"><div><h3>VIP-очки</h3><p>Проверь ориентиры VIP перед планированием пакетов.</p></div><span>Смотреть</span></a>
+        </div>
+      </section>
+
+      <section class="tools-section" aria-labelledby="eventCtaTitle">
+        <div class="tools-section-head"><div><h2 id="eventCtaTitle">Начать подготовку к событию</h2><p class="tools-muted">Сначала проверь события на сегодня и нужные награды.</p></div></div>
+        <a class="tools-cta" href="/ru/event-helper/"><div><strong>Открыть помощник событий</strong><span>Календарь событий, поиск наград и базовые калькуляторы в одном месте.</span></div><em>Открыть</em></a>
+      </section>
+
+      <section class="tools-section" aria-labelledby="lootbarTitle">
+        <div class="tools-section-head"><div><h2 id="lootbarTitle">Проверить top-up преимущества</h2><p class="tools-muted">Перед событием спокойно сравни нужные пакеты и доступные преимущества.</p></div></div>
+        <a class="tools-cta" href="https://lootbar.gg/shop/ten/top-up/tiles-survive" target="_blank" rel="sponsored noopener noreferrer"><div><strong>Проверь top-up преимущества перед событиями</strong><span>Перед тратой ресурсов сравни нужные пакеты и доступные преимущества.</span></div><em>Открыть LootBar</em></a>
+      </section>
+
+      <section class="tools-section" aria-labelledby="faqTitle">
+        <div class="tools-section-head"><div><h2 id="faqTitle">FAQ</h2></div></div>
+        <div class="tools-faq">
+          <details><summary>Какие инструменты собраны на этой странице?</summary><p>Здесь собраны страницы TilesSurvive.net для подготовки к событиям, калькуляторов, поиска наград и проверки данных.</p></details>
+          <details><summary>Можно ли нажимать карточки в подготовке?</summary><p>Нет. У них пока нет реальных страниц, поэтому ссылки намеренно не добавлены.</p></details>
+          <details><summary>Когда калькуляторы станут отдельными страницами?</summary><p>Сначала отдельными страницами станут инструменты с проверенными формулами и данными.</p></details>
+        </div>
+      </section>
+
+      <section class="tools-section" aria-labelledby="sourceNoteTitle">
+        <h2 id="sourceNoteTitle">Примечание</h2>
+        <p class="tools-source">Этот хаб безопасно разделяет реальные страницы TilesSurvive.net и будущие фанатские инструменты.</p>
+      </section>
+    </div>
+  </main>
+  <div id="site-footer"></div>
+  <script src="/js/layout.js"></script>
+</body>
+</html>

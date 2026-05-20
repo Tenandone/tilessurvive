@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="ja" data-lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>タイルサバイバル ツール集 | 計算機、イベントヘルパー、報酬検索 | TilesSurvive.net</title>
+  <base href="/" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="description" content="タイルサバイバルのイベント準備に役立つツール集です。イベントヘルパー、計算機、報酬検索、データベース、ガイドへ素早く移動できます。" />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+  <meta name="author" content="TilesSurvive.net" />
+  <link rel="canonical" href="https://tilessurvive.net/ja/tools/" />
+  <link rel="alternate" hreflang="x-default" href="https://tilessurvive.net/en/tools/" />
+  <link rel="alternate" hreflang="ko" href="https://tilessurvive.net/ko/tools/" />
+  <link rel="alternate" hreflang="en" href="https://tilessurvive.net/en/tools/" />
+  <link rel="alternate" hreflang="ja" href="https://tilessurvive.net/ja/tools/" />
+  <link rel="alternate" hreflang="ru" href="https://tilessurvive.net/ru/tools/" />
+  <link rel="alternate" hreflang="zh-TW" href="https://tilessurvive.net/zh-tw/tools/" />
+  <meta property="og:site_name" content="TilesSurvive.net" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="タイルサバイバル ツール集 | 計算機、イベントヘルパー、報酬検索 | TilesSurvive.net" />
+  <meta property="og:description" content="イベントヘルパー、計算機、報酬検索、データベース、ガイドをつなぐ TilesSurvive.net のツールハブです。" />
+  <meta property="og:url" content="https://tilessurvive.net/ja/tools/" />
+  <meta property="og:image" content="https://tilessurvive.net/img/logo-tilessurvive.png" />
+  <meta property="og:locale" content="ja_JP" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="タイルサバイバル ツール集 | TilesSurvive.net" />
+  <meta name="twitter:description" content="イベント準備、計算機、報酬検索、データ確認のためのツールハブです。" />
+  <meta name="twitter:image" content="https://tilessurvive.net/img/logo-tilessurvive.png" />
+  <style>
+    .tools-page{color:#0f172a;background:#f4f7fb;min-height:100vh;padding:22px 0 96px;line-height:1.68;word-break:keep-all}
+    .tools-page *{box-sizing:border-box}
+    .tools-page .tools-container{width:min(1180px,calc(100% - 32px));margin:0 auto;min-width:0}
+    .tools-page .tools-breadcrumb{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:10px 0 18px;color:#64748b;font-size:14px}
+    .tools-page .tools-breadcrumb a{color:#2563eb;text-decoration:none;font-weight:800}
+    .tools-page .tools-hero{border:1px solid #dbeafe;background:linear-gradient(135deg,#ffffff 0%,#eff6ff 55%,#ecfdf5 100%);border-radius:28px;padding:30px;box-shadow:0 18px 46px rgba(15,23,42,.08)}
+    .tools-page .tools-eyebrow{font-size:13px;font-weight:900;color:#2563eb;text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px}
+    .tools-page h1{font-size:clamp(30px,4vw,54px);line-height:1.08;margin:0 0 16px;color:#0f172a;letter-spacing:0}
+    .tools-page h2{font-size:24px;line-height:1.22;margin:0 0 6px;color:#0f172a;letter-spacing:0}
+    .tools-page h3{font-size:17px;margin:0 0 8px;color:#0f172a;letter-spacing:0}
+    .tools-page .tools-lead{font-size:18px;max-width:840px;margin:0;color:#334155}
+    .tools-page .tools-note{margin:14px 0 0;color:#475569;max-width:860px}
+    .tools-page .tools-section{margin-top:22px;border:1px solid #e2e8f0;background:#fff;border-radius:24px;padding:24px;box-shadow:0 12px 34px rgba(15,23,42,.05)}
+    .tools-page .tools-section-head{display:flex;justify-content:space-between;gap:18px;align-items:flex-end;flex-wrap:wrap;margin-bottom:16px}
+    .tools-page .tools-muted{color:#64748b;margin:0}
+    .tools-page .tools-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+    .tools-page .tools-grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+    .tools-page .tools-card{border:1px solid #e2e8f0;background:#f8fafc;border-radius:18px;padding:16px;min-width:0}
+    .tools-page .tools-card p{margin:0;color:#475569}
+    .tools-page .tools-link{display:flex;justify-content:space-between;gap:12px;align-items:center;text-decoration:none;color:#0f172a;border:1px solid #e2e8f0;border-radius:18px;padding:16px;background:#f8fafc}
+    .tools-page .tools-link:hover{border-color:#93c5fd;background:#eff6ff}
+    .tools-page .tools-link span{color:#2563eb;font-weight:900;white-space:nowrap}
+    .tools-page .tools-disabled{opacity:.78}
+    .tools-page .tools-pill{display:inline-flex;align-items:center;border:1px solid #f59e0b;background:#fffbeb;border-radius:999px;padding:5px 9px;color:#92400e;font-size:12px;font-weight:900;margin-top:10px}
+    .tools-page .tools-cta{display:flex;gap:14px;align-items:center;justify-content:space-between;border:1px solid #bfdbfe;background:#fff;border-radius:20px;padding:16px 18px;text-decoration:none;color:#0f172a;box-shadow:0 10px 28px rgba(37,99,235,.08)}
+    .tools-page .tools-cta strong{display:block;font-size:16px;margin-bottom:3px}
+    .tools-page .tools-cta span{display:block;color:#475569;font-size:14px}
+    .tools-page .tools-cta em{font-style:normal;font-weight:900;color:#2563eb;white-space:nowrap}
+    .tools-page .tools-faq{display:grid;gap:12px}
+    .tools-page .tools-faq details{border:1px solid #e2e8f0;background:#f8fafc;border-radius:16px;padding:14px}
+    .tools-page .tools-faq summary{font-weight:900;cursor:pointer}
+    .tools-page .tools-faq p{margin:10px 0 0;color:#475569}
+    .tools-page .tools-source{border-left:4px solid #2563eb;background:#eff6ff;color:#334155;border-radius:14px;padding:14px;margin:0}
+    @media (max-width:900px){.tools-page .tools-grid,.tools-page .tools-grid-2{grid-template-columns:1fr}}
+    @media (max-width:560px){.tools-page{padding-top:14px}.tools-page .tools-container{width:min(100% - 24px,1180px)}.tools-page .tools-hero,.tools-page .tools-section{padding:18px;border-radius:20px}.tools-page .tools-cta{align-items:flex-start;flex-direction:column}.tools-page .tools-cta em{white-space:normal}}
+  </style>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://tilessurvive.net/ja/"},{"@type":"ListItem","position":2,"name":"ツール","item":"https://tilessurvive.net/ja/tools/"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"このページにはどんなツールがありますか？","acceptedAnswer":{"@type":"Answer","text":"イベント準備、計算機、報酬検索、データ確認に使える実在ページと準備中ツールを整理しています。"}},{"@type":"Question","name":"準備中カードはクリックできますか？","acceptedAnswer":{"@type":"Answer","text":"いいえ。実際のページがない計算機はリンクなしの準備中カードとして表示します。"}},{"@type":"Question","name":"LootBar リンクはなぜありますか？","acceptedAnswer":{"@type":"Answer","text":"イベント準備中にチャージ特典を確認したいユーザー向けの情報性リンクです。"}}]}</script>
+</head>
+<body>
+  <div id="site-header"></div>
+  <main class="tools-page" id="main">
+    <div class="tools-container">
+      <nav class="tools-breadcrumb" aria-label="Breadcrumb">
+        <a href="/ja/">ホーム</a><span>/</span><span>ツール</span>
+      </nav>
+      <section class="tools-hero" aria-labelledby="toolsTitle">
+        <div class="tools-eyebrow">TilesSurvive.net Tools</div>
+        <h1 id="toolsTitle">タイルサバイバル ツール集</h1>
+        <p class="tools-lead">イベントヘルパー、計算機、報酬検索、データベース、ガイドへ素早く移動できるツールハブです。</p>
+        <p class="tools-note">利用可能なツールは実在ページへリンクし、未公開の計算機はリンクなしで表示します。</p>
+      </section>
+
+      <section class="tools-section" aria-labelledby="availableToolsTitle">
+        <div class="tools-section-head"><div><h2 id="availableToolsTitle">現在使えるツール</h2><p class="tools-muted">イベント準備とデータ確認にすぐ使えるページです。</p></div></div>
+        <div class="tools-grid">
+          <a class="tools-link" href="/ja/event-helper/"><div><h3>イベントヘルパー</h3><p>今日のイベント、週間イベントカレンダー、報酬検索、基本計算機を確認します。</p></div><span>開く</span></a>
+          <a class="tools-link" href="/ja/database/alliance-duel/"><div><h3>同盟対決データ</h3><p>イベント前に同盟対決の表と基準を確認します。</p></div><span>見る</span></a>
+          <a class="tools-link" href="/ja/guides/gift-code-how-to-use/"><div><h3>コード入力方法</h3><p>イベント前にコード入力の流れとギフトコード準備を確認します。</p></div><span>見る</span></a>
+        </div>
+      </section>
+
+      <section class="tools-section" aria-labelledby="comingToolsTitle">
+        <div class="tools-section-head"><div><h2 id="comingToolsTitle">準備中の計算機</h2><p class="tools-muted">まだ実在ページがないため、リンクなしの計画カードとして表示します。</p></div></div>
+        <div class="tools-grid">
+          <article class="tools-card tools-disabled"><h3>加速計算機</h3><p>加速時間の合計とイベント使用量の計画を分けて扱う予定です。</p><span class="tools-pill">準備中</span></article>
+          <article class="tools-card tools-disabled"><h3>戦力スコア計算機</h3><p>戦力増加と点数倍率からイベント点数を見積もります。</p><span class="tools-pill">準備中</span></article>
+          <article class="tools-card tools-disabled"><h3>報酬検索</h3><p>必要な報酬から関連イベントとデータを探す専用ページです。</p><span class="tools-pill">準備中</span></article>
+          <article class="tools-card tools-disabled"><h3>イベントカレンダー</h3><p>検証済み日程データが揃ったら独立カレンダーへ拡張します。</p><span class="tools-pill">準備中</span></article>
+          <article class="tools-card tools-disabled"><h3>装備計算機</h3><p>装備と専用装備の成長素材を計画するツールです。</p><span class="tools-pill">準備中</span></article>
+          <article class="tools-card tools-disabled"><h3>英雄欠片計算機</h3><p>必要な英雄欠片と目標までの不足分を計算します。</p><span class="tools-pill">準備中</span></article>
+          <article class="tools-card tools-disabled"><h3>英雄スキル計算機</h3><p>スキルブックと英雄スキル成長の必要量を整理します。</p><span class="tools-pill">準備中</span></article>
+          <article class="tools-card tools-disabled"><h3>英雄レベル計算機</h3><p>英雄レベルの経験値と素材計画を助ける計算機です。</p><span class="tools-pill">準備中</span></article>
+        </div>
+      </section>
+
+      <section class="tools-section" aria-labelledby="dataLinksTitle">
+        <div class="tools-section-head"><div><h2 id="dataLinksTitle">一緒に確認したいデータ</h2><p class="tools-muted">計算機と一緒に使いやすい既存データベースページです。</p></div></div>
+        <div class="tools-grid-2">
+          <a class="tools-link" href="/ja/database/hero-exp/"><div><h3>英雄経験値</h3><p>英雄レベル計画の前に経験値データを確認します。</p></div><span>見る</span></a>
+          <a class="tools-link" href="/ja/database/hero-star/"><div><h3>英雄星級</h3><p>英雄欠片と星級成長の基準を一緒に確認します。</p></div><span>見る</span></a>
+          <a class="tools-link" href="/ja/database/skill-book/"><div><h3>スキルブック</h3><p>スキル成長計画の前に必要なデータを確認します。</p></div><span>見る</span></a>
+          <a class="tools-link" href="/ja/database/exclusive-gear/"><div><h3>専用装備</h3><p>装備成長計画に必要な専用装備データを確認します。</p></div><span>見る</span></a>
+          <a class="tools-link" href="/ja/database/legend-gear-star/"><div><h3>伝説装備星級</h3><p>装備計算機の拡張前に星級データを確認します。</p></div><span>見る</span></a>
+          <a class="tools-link" href="/ja/database/vip-point/"><div><h3>VIPポイント</h3><p>パッケージやチャージ計画の前にVIP基準を確認します。</p></div><span>見る</span></a>
+        </div>
+      </section>
+
+      <section class="tools-section" aria-labelledby="eventCtaTitle">
+        <div class="tools-section-head"><div><h2 id="eventCtaTitle">イベント準備を始める</h2><p class="tools-muted">今日のイベントと必要な報酬を先に確認しましょう。</p></div></div>
+        <a class="tools-cta" href="/ja/event-helper/"><div><strong>イベントヘルパーへ移動</strong><span>イベントカレンダー、報酬検索、基本計算機を一つの画面で確認します。</span></div><em>開く</em></a>
+      </section>
+
+      <section class="tools-section" aria-labelledby="lootbarTitle">
+        <div class="tools-section-head"><div><h2 id="lootbarTitle">チャージ特典を確認</h2><p class="tools-muted">イベント前に必要なパッケージと利用できる特典を落ち着いて確認しましょう。</p></div></div>
+        <a class="tools-cta" href="https://lootbar.gg/shop/ten/top-up/tiles-survive" target="_blank" rel="sponsored noopener noreferrer"><div><strong>イベント前にチャージ特典を確認</strong><span>資源を使う前に、必要なパッケージと特典を比較しましょう。</span></div><em>LootBarを見る</em></a>
+      </section>
+
+      <section class="tools-section" aria-labelledby="faqTitle">
+        <div class="tools-section-head"><div><h2 id="faqTitle">FAQ</h2></div></div>
+        <div class="tools-faq">
+          <details><summary>このページにはどんなツールがありますか？</summary><p>イベント準備、計算機、報酬検索、データ確認に使う TilesSurvive.net ページをまとめています。</p></details>
+          <details><summary>準備中カードはクリックできますか？</summary><p>いいえ。実際のページがないため、意図的にリンクを入れていません。</p></details>
+          <details><summary>計算機はいつ分離されますか？</summary><p>検証済みの公式とデータが揃ったツールから独立ページに分けます。</p></details>
+        </div>
+      </section>
+
+      <section class="tools-section" aria-labelledby="sourceNoteTitle">
+        <h2 id="sourceNoteTitle">案内</h2>
+        <p class="tools-source">このハブは、TilesSurvive.net の実在ページと準備中のファンメイドツールを安全に分けて案内します。</p>
+      </section>
+    </div>
+  </main>
+  <div id="site-footer"></div>
+  <script src="/js/layout.js"></script>
+</body>
+</html>

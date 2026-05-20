@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="zh-Hant" data-lang="zh-tw">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>點點木作戰工具集 | 計算器、活動助手、獎勵搜尋 | TilesSurvive.net</title>
+  <base href="/" />
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="description" content="點點木作戰活動準備工具集，快速前往活動助手、計算器、獎勵搜尋、資料庫與攻略頁面。" />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+  <meta name="author" content="TilesSurvive.net" />
+  <link rel="canonical" href="https://tilessurvive.net/zh-tw/tools/" />
+  <link rel="alternate" hreflang="x-default" href="https://tilessurvive.net/en/tools/" />
+  <link rel="alternate" hreflang="ko" href="https://tilessurvive.net/ko/tools/" />
+  <link rel="alternate" hreflang="en" href="https://tilessurvive.net/en/tools/" />
+  <link rel="alternate" hreflang="ja" href="https://tilessurvive.net/ja/tools/" />
+  <link rel="alternate" hreflang="ru" href="https://tilessurvive.net/ru/tools/" />
+  <link rel="alternate" hreflang="zh-TW" href="https://tilessurvive.net/zh-tw/tools/" />
+  <meta property="og:site_name" content="TilesSurvive.net" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="點點木作戰工具集 | 計算器、活動助手、獎勵搜尋 | TilesSurvive.net" />
+  <meta property="og:description" content="連結活動助手、計算器、獎勵搜尋、資料庫與攻略的 TilesSurvive.net 工具中心。" />
+  <meta property="og:url" content="https://tilessurvive.net/zh-tw/tools/" />
+  <meta property="og:image" content="https://tilessurvive.net/img/logo-tilessurvive.png" />
+  <meta property="og:locale" content="zh_TW" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="點點木作戰工具集 | TilesSurvive.net" />
+  <meta name="twitter:description" content="用於活動準備、計算器、獎勵搜尋與資料確認的工具中心。" />
+  <meta name="twitter:image" content="https://tilessurvive.net/img/logo-tilessurvive.png" />
+  <style>
+    .tools-page{color:#0f172a;background:#f4f7fb;min-height:100vh;padding:22px 0 96px;line-height:1.68;word-break:keep-all}
+    .tools-page *{box-sizing:border-box}
+    .tools-page .tools-container{width:min(1180px,calc(100% - 32px));margin:0 auto;min-width:0}
+    .tools-page .tools-breadcrumb{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:10px 0 18px;color:#64748b;font-size:14px}
+    .tools-page .tools-breadcrumb a{color:#2563eb;text-decoration:none;font-weight:800}
+    .tools-page .tools-hero{border:1px solid #dbeafe;background:linear-gradient(135deg,#ffffff 0%,#eff6ff 55%,#ecfdf5 100%);border-radius:28px;padding:30px;box-shadow:0 18px 46px rgba(15,23,42,.08)}
+    .tools-page .tools-eyebrow{font-size:13px;font-weight:900;color:#2563eb;text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px}
+    .tools-page h1{font-size:clamp(30px,4vw,54px);line-height:1.08;margin:0 0 16px;color:#0f172a;letter-spacing:0}
+    .tools-page h2{font-size:24px;line-height:1.22;margin:0 0 6px;color:#0f172a;letter-spacing:0}
+    .tools-page h3{font-size:17px;margin:0 0 8px;color:#0f172a;letter-spacing:0}
+    .tools-page .tools-lead{font-size:18px;max-width:840px;margin:0;color:#334155}
+    .tools-page .tools-note{margin:14px 0 0;color:#475569;max-width:860px}
+    .tools-page .tools-section{margin-top:22px;border:1px solid #e2e8f0;background:#fff;border-radius:24px;padding:24px;box-shadow:0 12px 34px rgba(15,23,42,.05)}
+    .tools-page .tools-section-head{display:flex;justify-content:space-between;gap:18px;align-items:flex-end;flex-wrap:wrap;margin-bottom:16px}
+    .tools-page .tools-muted{color:#64748b;margin:0}
+    .tools-page .tools-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+    .tools-page .tools-grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+    .tools-page .tools-card{border:1px solid #e2e8f0;background:#f8fafc;border-radius:18px;padding:16px;min-width:0}
+    .tools-page .tools-card p{margin:0;color:#475569}
+    .tools-page .tools-link{display:flex;justify-content:space-between;gap:12px;align-items:center;text-decoration:none;color:#0f172a;border:1px solid #e2e8f0;border-radius:18px;padding:16px;background:#f8fafc}
+    .tools-page .tools-link:hover{border-color:#93c5fd;background:#eff6ff}
+    .tools-page .tools-link span{color:#2563eb;font-weight:900;white-space:nowrap}
+    .tools-page .tools-disabled{opacity:.78}
+    .tools-page .tools-pill{display:inline-flex;align-items:center;border:1px solid #f59e0b;background:#fffbeb;border-radius:999px;padding:5px 9px;color:#92400e;font-size:12px;font-weight:900;margin-top:10px}
+    .tools-page .tools-cta{display:flex;gap:14px;align-items:center;justify-content:space-between;border:1px solid #bfdbfe;background:#fff;border-radius:20px;padding:16px 18px;text-decoration:none;color:#0f172a;box-shadow:0 10px 28px rgba(37,99,235,.08)}
+    .tools-page .tools-cta strong{display:block;font-size:16px;margin-bottom:3px}
+    .tools-page .tools-cta span{display:block;color:#475569;font-size:14px}
+    .tools-page .tools-cta em{font-style:normal;font-weight:900;color:#2563eb;white-space:nowrap}
+    .tools-page .tools-faq{display:grid;gap:12px}
+    .tools-page .tools-faq details{border:1px solid #e2e8f0;background:#f8fafc;border-radius:16px;padding:14px}
+    .tools-page .tools-faq summary{font-weight:900;cursor:pointer}
+    .tools-page .tools-faq p{margin:10px 0 0;color:#475569}
+    .tools-page .tools-source{border-left:4px solid #2563eb;background:#eff6ff;color:#334155;border-radius:14px;padding:14px;margin:0}
+    @media (max-width:900px){.tools-page .tools-grid,.tools-page .tools-grid-2{grid-template-columns:1fr}}
+    @media (max-width:560px){.tools-page{padding-top:14px}.tools-page .tools-container{width:min(100% - 24px,1180px)}.tools-page .tools-hero,.tools-page .tools-section{padding:18px;border-radius:20px}.tools-page .tools-cta{align-items:flex-start;flex-direction:column}.tools-page .tools-cta em{white-space:normal}}
+  </style>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"首頁","item":"https://tilessurvive.net/zh-tw/"},{"@type":"ListItem","position":2,"name":"工具","item":"https://tilessurvive.net/zh-tw/tools/"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"這個頁面整理哪些工具？","acceptedAnswer":{"@type":"Answer","text":"整理活動準備、計算器、獎勵搜尋與資料確認所需的 TilesSurvive.net 實際頁面與預定工具。"}},{"@type":"Question","name":"準備中卡片可以點擊嗎？","acceptedAnswer":{"@type":"Answer","text":"不可以。尚未有實際頁面的計算器只會以準備中卡片顯示，不放連結。"}},{"@type":"Question","name":"為什麼有 LootBar 連結？","acceptedAnswer":{"@type":"Answer","text":"這是給想在活動準備時確認儲值優惠的玩家使用的資訊型推薦連結。"}}]}</script>
+</head>
+<body>
+  <div id="site-header"></div>
+  <main class="tools-page" id="main">
+    <div class="tools-container">
+      <nav class="tools-breadcrumb" aria-label="Breadcrumb">
+        <a href="/zh-tw/">首頁</a><span>/</span><span>工具</span>
+      </nav>
+      <section class="tools-hero" aria-labelledby="toolsTitle">
+        <div class="tools-eyebrow">TilesSurvive.net Tools</div>
+        <h1 id="toolsTitle">點點木作戰工具集</h1>
+        <p class="tools-lead">快速前往活動助手、計算器、獎勵搜尋、資料庫與攻略的工具中心。</p>
+        <p class="tools-note">目前可用的工具只連到實際存在的頁面，尚未公開的計算器則不放連結。</p>
+      </section>
+
+      <section class="tools-section" aria-labelledby="availableToolsTitle">
+        <div class="tools-section-head"><div><h2 id="availableToolsTitle">目前可用的工具</h2><p class="tools-muted">可立即用於活動準備與資料確認的頁面。</p></div></div>
+        <div class="tools-grid">
+          <a class="tools-link" href="/zh-tw/event-helper/"><div><h3>活動助手</h3><p>確認今日活動、每週活動行事曆、獎勵搜尋與基本計算器。</p></div><span>開啟</span></a>
+          <a class="tools-link" href="/zh-tw/database/alliance-duel/"><div><h3>聯盟對決資料</h3><p>活動前確認聯盟對決相關表格與基準。</p></div><span>查看</span></a>
+          <a class="tools-link" href="/zh-tw/guides/gift-code-how-to-use/"><div><h3>兌換碼輸入方法</h3><p>活動前再次確認兌換碼輸入流程與準備事項。</p></div><span>查看</span></a>
+        </div>
+      </section>
+
+      <section class="tools-section" aria-labelledby="comingToolsTitle">
+        <div class="tools-section-head"><div><h2 id="comingToolsTitle">準備中的計算器</h2><p class="tools-muted">尚未有實際頁面，因此只以無連結的計畫卡片顯示。</p></div></div>
+        <div class="tools-grid">
+          <article class="tools-card tools-disabled"><h3>加速計算器</h3><p>用於加總加速時間並規劃活動使用量。</p><span class="tools-pill">準備中</span></article>
+          <article class="tools-card tools-disabled"><h3>戰力分數計算器</h3><p>依戰力成長與分數倍率估算活動分數。</p><span class="tools-pill">準備中</span></article>
+          <article class="tools-card tools-disabled"><h3>獎勵搜尋</h3><p>從需要的獎勵找到相關活動與資料。</p><span class="tools-pill">準備中</span></article>
+          <article class="tools-card tools-disabled"><h3>活動行事曆</h3><p>取得已驗證時程資料後，將擴充成獨立行事曆。</p><span class="tools-pill">準備中</span></article>
+          <article class="tools-card tools-disabled"><h3>裝備計算器</h3><p>規劃裝備與專屬裝備成長材料。</p><span class="tools-pill">準備中</span></article>
+          <article class="tools-card tools-disabled"><h3>英雄碎片計算器</h3><p>計算需要的英雄碎片與目標缺口。</p><span class="tools-pill">準備中</span></article>
+          <article class="tools-card tools-disabled"><h3>英雄技能計算器</h3><p>整理技能書與英雄技能成長需求。</p><span class="tools-pill">準備中</span></article>
+          <article class="tools-card tools-disabled"><h3>英雄等級計算器</h3><p>協助規劃英雄升級經驗與材料。</p><span class="tools-pill">準備中</span></article>
+        </div>
+      </section>
+
+      <section class="tools-section" aria-labelledby="dataLinksTitle">
+        <div class="tools-section-head"><div><h2 id="dataLinksTitle">一起查看的資料</h2><p class="tools-muted">適合搭配計算器使用的既有資料庫頁面。</p></div></div>
+        <div class="tools-grid-2">
+          <a class="tools-link" href="/zh-tw/database/hero-exp/"><div><h3>英雄經驗值</h3><p>規劃英雄等級前，先確認經驗值資料。</p></div><span>查看</span></a>
+          <a class="tools-link" href="/zh-tw/database/hero-star/"><div><h3>英雄星級</h3><p>一起確認英雄碎片與星級成長基準。</p></div><span>查看</span></a>
+          <a class="tools-link" href="/zh-tw/database/skill-book/"><div><h3>技能書</h3><p>規劃技能成長前確認技能書資料。</p></div><span>查看</span></a>
+          <a class="tools-link" href="/zh-tw/database/exclusive-gear/"><div><h3>專屬裝備</h3><p>確認裝備成長計畫所需的專屬裝備資料。</p></div><span>查看</span></a>
+          <a class="tools-link" href="/zh-tw/database/legend-gear-star/"><div><h3>傳說裝備星級</h3><p>裝備計算器擴充前可先確認星級資料。</p></div><span>查看</span></a>
+          <a class="tools-link" href="/zh-tw/database/vip-point/"><div><h3>VIP 點數</h3><p>規劃禮包與儲值前確認 VIP 點數基準。</p></div><span>查看</span></a>
+        </div>
+      </section>
+
+      <section class="tools-section" aria-labelledby="eventCtaTitle">
+        <div class="tools-section-head"><div><h2 id="eventCtaTitle">開始活動準備</h2><p class="tools-muted">先確認今日活動與需要的獎勵。</p></div></div>
+        <a class="tools-cta" href="/zh-tw/event-helper/"><div><strong>前往活動助手</strong><span>在同一頁查看活動行事曆、獎勵搜尋與基本計算器。</span></div><em>開啟</em></a>
+      </section>
+
+      <section class="tools-section" aria-labelledby="lootbarTitle">
+        <div class="tools-section-head"><div><h2 id="lootbarTitle">確認儲值優惠</h2><p class="tools-muted">活動前可先確認需要的禮包與可用優惠。</p></div></div>
+        <a class="tools-cta" href="https://lootbar.gg/shop/ten/top-up/tiles-survive" target="_blank" rel="sponsored noopener noreferrer"><div><strong>活動前確認儲值優惠</strong><span>投入資源前，先比較需要的禮包與優惠。</span></div><em>查看 LootBar</em></a>
+      </section>
+
+      <section class="tools-section" aria-labelledby="faqTitle">
+        <div class="tools-section-head"><div><h2 id="faqTitle">FAQ</h2></div></div>
+        <div class="tools-faq">
+          <details><summary>這個頁面整理哪些工具？</summary><p>整理活動準備、計算器、獎勵搜尋與資料確認所需的 TilesSurvive.net 頁面。</p></details>
+          <details><summary>準備中卡片可以點擊嗎？</summary><p>不可以。因為尚未有實際頁面，所以刻意不加入連結。</p></details>
+          <details><summary>計算器何時會獨立成頁面？</summary><p>會從已取得驗證公式與資料的工具開始拆成獨立頁面。</p></details>
+        </div>
+      </section>
+
+      <section class="tools-section" aria-labelledby="sourceNoteTitle">
+        <h2 id="sourceNoteTitle">說明</h2>
+        <p class="tools-source">此工具中心會安全區分 TilesSurvive.net 的實際頁面與準備中的粉絲製作工具。</p>
+      </section>
+    </div>
+  </main>
+  <div id="site-footer"></div>
+  <script src="/js/layout.js"></script>
+</body>
+</html>
