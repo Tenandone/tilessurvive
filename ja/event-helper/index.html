@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="ja" data-lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tiles Survive イベントヘルパー | イベントカレンダー・報酬検索・計算機 | TilesSurvive.net</title>
+  <base href="/" />
+
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="description" content="Tiles Survive のイベントヘルパーです。今日のイベント、週間イベントカレンダー、報酬検索、基本計算機、準備用リンクをまとめて確認できます。" />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+  <meta name="author" content="TilesSurvive.net" />
+
+  <link rel="canonical" href="https://tilessurvive.net/ja/event-helper/" />
+  <link rel="alternate" hreflang="x-default" href="https://tilessurvive.net/en/event-helper/" />
+  <link rel="alternate" hreflang="ko" href="https://tilessurvive.net/ko/event-helper/" />
+  <link rel="alternate" hreflang="en" href="https://tilessurvive.net/en/event-helper/" />
+  <link rel="alternate" hreflang="ja" href="https://tilessurvive.net/ja/event-helper/" />
+  <link rel="alternate" hreflang="ru" href="https://tilessurvive.net/ru/event-helper/" />
+  <link rel="alternate" hreflang="zh-TW" href="https://tilessurvive.net/zh-tw/event-helper/" />
+
+  <meta property="og:site_name" content="TilesSurvive.net" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Tiles Survive イベントヘルパー | イベントカレンダー・報酬検索・計算機 | TilesSurvive.net" />
+  <meta property="og:description" content="Tiles Survive のイベントヘルパーです。今日のイベント、週間イベントカレンダー、報酬検索、基本計算機、準備用リンクをまとめて確認できます。" />
+  <meta property="og:url" content="https://tilessurvive.net/ja/event-helper/" />
+  <meta property="og:image" content="https://tilessurvive.net/img/logo-tilessurvive.png" />
+  <meta property="og:locale" content="ja_JP" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Tiles Survive イベントヘルパー | イベントカレンダー・報酬検索・計算機 | TilesSurvive.net" />
+  <meta name="twitter:description" content="Tiles Survive のイベントヘルパーです。今日のイベント、週間イベントカレンダー、報酬検索、基本計算機、準備用リンクをまとめて確認できます。" />
+  <meta name="twitter:image" content="https://tilessurvive.net/img/logo-tilessurvive.png" />
+
+  <link rel="preload" as="image" href="/img/logo-tilessurvive.png" />
+
+  <style>
+    .event-helper-page{color:#0f172a;background:#f4f7fb;min-height:100vh;padding:22px 0 96px;line-height:1.68;word-break:keep-all}
+    .event-helper-page *{box-sizing:border-box}
+    .event-helper-page .eh-container{width:min(1180px,calc(100% - 32px));margin:0 auto;min-width:0}
+    .event-helper-page .eh-breadcrumb{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:10px 0 18px;color:#64748b;font-size:14px}
+    .event-helper-page .eh-breadcrumb a{color:#2563eb;text-decoration:none;font-weight:800}
+    .event-helper-page .eh-hero{border:1px solid #dbeafe;background:linear-gradient(135deg,#ffffff 0%,#eff6ff 52%,#ecfdf5 100%);border-radius:28px;padding:30px;box-shadow:0 18px 46px rgba(15,23,42,.08)}
+    .event-helper-page .eh-eyebrow{font-size:13px;font-weight:900;color:#2563eb;text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px}
+    .event-helper-page h1{font-size:clamp(30px,4vw,54px);line-height:1.08;margin:0 0 16px;color:#0f172a;letter-spacing:0}
+    .event-helper-page .eh-lead{font-size:18px;max-width:820px;margin:0;color:#334155}
+    .event-helper-page .eh-hero-note{margin:14px 0 0;color:#475569;max-width:840px}
+    .event-helper-page .eh-hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px;align-items:stretch}
+    .event-helper-page .eh-cta{display:flex;gap:14px;align-items:center;justify-content:space-between;border:1px solid #bfdbfe;background:#fff;border-radius:20px;padding:16px 18px;min-width:min(100%,520px);text-decoration:none;color:#0f172a;box-shadow:0 10px 28px rgba(37,99,235,.08)}
+    .event-helper-page .eh-cta strong{display:block;font-size:16px;margin-bottom:3px}
+    .event-helper-page .eh-cta span{display:block;color:#475569;font-size:14px}
+    .event-helper-page .eh-cta em{font-style:normal;font-weight:900;color:#2563eb;white-space:nowrap}
+    .event-helper-page .eh-section{margin-top:22px;border:1px solid #e2e8f0;background:#fff;border-radius:24px;padding:24px;box-shadow:0 12px 34px rgba(15,23,42,.05)}
+    .event-helper-page .eh-section-head{display:flex;justify-content:space-between;gap:18px;align-items:flex-end;flex-wrap:wrap;margin-bottom:16px}
+    .event-helper-page h2{font-size:24px;line-height:1.22;margin:0 0 6px;color:#0f172a;letter-spacing:0}
+    .event-helper-page h3{font-size:17px;margin:0 0 8px;color:#0f172a;letter-spacing:0}
+    .event-helper-page .eh-muted{color:#64748b;margin:0}
+    .event-helper-page .eh-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+    .event-helper-page .eh-grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+    .event-helper-page .eh-card{border:1px solid #e2e8f0;background:#f8fafc;border-radius:18px;padding:16px;min-width:0}
+    .event-helper-page .eh-card p{margin:0;color:#475569}
+    .event-helper-page .eh-event-meta{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 0}
+    .event-helper-page .eh-pill{display:inline-flex;align-items:center;border:1px solid #cbd5e1;background:#fff;border-radius:999px;padding:5px 9px;color:#334155;font-size:12px;font-weight:800}
+    .event-helper-page .eh-pill-warn{border-color:#f59e0b;background:#fffbeb;color:#92400e}
+    .event-helper-page .eh-toolbar{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-bottom:14px}
+    .event-helper-page .eh-field{display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:800;color:#334155}
+    .event-helper-page .eh-field input,.event-helper-page .eh-field select{width:100%;border:1px solid #cbd5e1;border-radius:12px;padding:10px 11px;background:#fff;color:#0f172a;font:inherit;font-weight:600}
+    .event-helper-page .eh-list{display:grid;gap:10px}
+    .event-helper-page .eh-day-board{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:10px}
+    .event-helper-page .eh-day{border:1px solid #e2e8f0;border-radius:16px;padding:12px;background:#f8fafc;min-height:140px}
+    .event-helper-page .eh-day-title{font-weight:900;margin-bottom:8px;color:#2563eb}
+    .event-helper-page .eh-mini-event{border-top:1px solid #e2e8f0;padding-top:8px;margin-top:8px;font-size:13px;color:#334155}
+    .event-helper-page .eh-mini-event strong{display:block;color:#0f172a}
+    .event-helper-page .eh-calc-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+    .event-helper-page .eh-calc-result{margin-top:12px;border-radius:14px;background:#ecfdf5;border:1px solid #bbf7d0;padding:12px;color:#166534;font-weight:900}
+    .event-helper-page .eh-button{border:0;border-radius:12px;background:#2563eb;color:#fff;padding:11px 14px;font-weight:900;cursor:pointer}
+    .event-helper-page .eh-button:hover{background:#1d4ed8}
+    .event-helper-page .eh-checklist{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:0;padding:0;list-style:none}
+    .event-helper-page .eh-checklist li{border:1px solid #e2e8f0;background:#f8fafc;border-radius:14px;padding:12px;color:#334155}
+    .event-helper-page .eh-guide-link{display:flex;justify-content:space-between;gap:12px;align-items:center;text-decoration:none;color:#0f172a;border:1px solid #e2e8f0;border-radius:16px;padding:14px;background:#f8fafc}
+    .event-helper-page .eh-guide-link:hover{border-color:#93c5fd;background:#eff6ff}
+    .event-helper-page .eh-guide-link span{color:#2563eb;font-weight:900;white-space:nowrap}
+    .event-helper-page .eh-faq{display:grid;gap:12px}
+    .event-helper-page .eh-faq details{border:1px solid #e2e8f0;background:#f8fafc;border-radius:16px;padding:14px}
+    .event-helper-page .eh-faq summary{font-weight:900;cursor:pointer}
+    .event-helper-page .eh-faq p{margin:10px 0 0;color:#475569}
+    .event-helper-page .eh-source{border-left:4px solid #2563eb;background:#eff6ff;color:#334155;border-radius:14px;padding:14px;margin:0}
+    .event-helper-page .eh-status{border:1px dashed #cbd5e1;border-radius:16px;padding:16px;background:#f8fafc;color:#475569}
+    .event-helper-page .eh-error{border-color:#fecaca;background:#fef2f2;color:#991b1b}
+    @media (max-width:900px){.event-helper-page .eh-grid,.event-helper-page .eh-grid-2,.event-helper-page .eh-calc-grid,.event-helper-page .eh-toolbar{grid-template-columns:1fr}.event-helper-page .eh-day-board{grid-template-columns:repeat(2,minmax(0,1fr))}.event-helper-page .eh-checklist{grid-template-columns:1fr}}
+    @media (max-width:560px){.event-helper-page{padding-top:14px}.event-helper-page .eh-container{width:min(100% - 24px,1180px)}.event-helper-page .eh-hero,.event-helper-page .eh-section{padding:18px;border-radius:20px}.event-helper-page .eh-day-board{grid-template-columns:1fr}.event-helper-page .eh-cta{align-items:flex-start;flex-direction:column}.event-helper-page .eh-cta em{white-space:normal}}
+  </style>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"ホーム","item":"https://tilessurvive.net/ja/"},{"@type":"ListItem","position":2,"name":"イベントヘルパー","item":"https://tilessurvive.net/ja/event-helper/"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"このイベントヘルパーは公式ツールですか？","acceptedAnswer":{"@type":"Answer","text":"いいえ。TilesSurvive.net が整理したファンメイドツールで、ゲーム運営の公式ツールではありません。"}},{"@type":"Question","name":"「検証必要」バッジとは何ですか？","acceptedAnswer":{"@type":"Answer","text":"最新のゲーム内数値と完全に照合していないサンプルデータです。実際に資源を使う前にゲーム内情報を確認してください。"}},{"@type":"Question","name":"LootBar リンクはなぜありますか？","acceptedAnswer":{"@type":"Answer","text":"イベント準備中にチャージ特典を確認したいユーザー向けの情報性リンクです。"}}]}</script>
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main class="event-helper-page" id="main" data-event-helper-page="true">
+    <div class="eh-container">
+      <nav class="eh-breadcrumb" aria-label="Breadcrumb">
+        <a href="/ja/">ホーム</a>
+        <span aria-hidden="true">›</span>
+        <span aria-current="page">イベントヘルパー</span>
+      </nav>
+
+      <section class="eh-hero" aria-labelledby="eventHelperTitle">
+        <div class="eh-eyebrow">ファンメイドツール</div>
+        <h1 id="eventHelperTitle">Tiles Survive イベントヘルパー</h1>
+        <p class="eh-lead">今日のイベントを確認し、イベントカレンダー、報酬検索、計算機で資源使用の流れを整理できます。</p>
+        <p class="eh-hero-note">イベント準備、関連ガイド確認、必要に応じたチャージ特典確認までをつなげる TilesSurvive.net 向けツールです。</p>
+        <div class="eh-hero-actions">
+          <a class="eh-cta" href="https://lootbar.gg/shop/ten/top-up/tiles-survive" target="_blank" rel="sponsored noopener noreferrer">
+            <div><strong>イベント前にチャージ特典を確認</strong><span>資源を使う前に、利用できるチャージ特典を確認しておきましょう。</span></div>
+            <em>LootBar 特典を見る</em>
+          </a>
+        </div>
+      </section>
+
+      <section class="eh-section" aria-labelledby="todayEventsTitle">
+        <div class="eh-section-head"><div><h2 id="todayEventsTitle">今日のイベント</h2><p class="eh-muted">ブラウザの現在の曜日を基準に表示します。各イベントの時間基準も表示されます。</p></div></div>
+        <div id="ehTodayEvents" class="eh-list"><div class="eh-status" data-eh-loading="true"></div></div>
+      </section>
+
+      <section class="eh-section" aria-labelledby="weeklyCalendarTitle">
+        <div class="eh-section-head"><div><h2 id="weeklyCalendarTitle">週間イベントカレンダー</h2><p class="eh-muted">曜日ごとの流れと重なりやすい活動を事前に確認できます。</p></div></div>
+        <div id="ehWeeklyCalendar" class="eh-day-board"></div>
+      </section>
+
+      <section class="eh-section" aria-labelledby="eventFiltersTitle">
+        <div class="eh-section-head"><div><h2 id="eventFiltersTitle">Event Search &amp; Filters</h2><p class="eh-muted">曜日、モード、活動、報酬キーワードでイベントを絞り込めます。</p></div></div>
+        <div class="eh-toolbar" role="search">
+          <label class="eh-field"><span data-eh-label="keyword"></span><input id="ehSearchInput" type="search" autocomplete="off" /></label>
+          <label class="eh-field"><span data-eh-label="day"></span><select id="ehDayFilter"></select></label>
+          <label class="eh-field"><span data-eh-label="mode"></span><select id="ehModeFilter"></select></label>
+          <label class="eh-field"><span data-eh-label="activity"></span><select id="ehActivityFilter"></select></label>
+        </div>
+        <div id="ehEventResults" class="eh-grid"></div>
+      </section>
+
+      <section class="eh-section" aria-labelledby="rewardFinderTitle">
+        <div class="eh-section-head"><div><h2 id="rewardFinderTitle">報酬検索</h2><p class="eh-muted">欲しい報酬や資源名を入力して、関連イベントを素早く探せます。</p></div></div>
+        <label class="eh-field"><span data-eh-label="reward"></span><input id="ehRewardInput" type="search" autocomplete="off" /></label>
+        <div id="ehRewardResults" class="eh-grid" style="margin-top:14px"></div>
+      </section>
+
+      <section class="eh-section" aria-labelledby="basicCalculatorsTitle">
+        <div class="eh-section-head"><div><h2 id="basicCalculatorsTitle">基本計算機</h2><p class="eh-muted">未確認の高度な公式は future tools として残し、MVP では基本計算のみ提供します。</p></div></div>
+        <div id="ehCalculators" class="eh-calc-grid"></div>
+      </section>
+
+      <section class="eh-section" aria-labelledby="prepChecklistTitle">
+        <div class="eh-section-head"><div><h2 id="prepChecklistTitle">イベント準備チェックリスト</h2><p class="eh-muted">イベント前に資源、加速、英雄、建物、シーズン目標をまとめて確認しましょう。</p></div></div>
+        <ul class="eh-checklist" id="ehChecklist"></ul>
+        <div class="eh-hero-actions">
+          <a class="eh-cta" href="https://lootbar.gg/shop/ten/top-up/tiles-survive" target="_blank" rel="sponsored noopener noreferrer">
+            <div><strong>イベントで資源を使う前に、チャージ特典も確認しておきましょう。</strong><span>資源を使う前に、利用できるチャージ特典を確認しておきましょう。</span></div>
+            <em>Tiles Survive チャージ特典を見る</em>
+          </a>
+        </div>
+      </section>
+
+      <section class="eh-section" aria-labelledby="recommendedGuidesTitle">
+        <div class="eh-section-head"><div><h2 id="recommendedGuidesTitle">おすすめガイド</h2><p class="eh-muted">イベント準備と一緒に確認したい TilesSurvive.net の既存コンテンツです。</p></div></div>
+        <div class="eh-grid-2">
+          <a class="eh-guide-link" href="/ja/heroes/">
+            <div><h3>英雄データを確認</h3><p>戦力イベントや戦闘イベント前に主要英雄を確認しましょう。</p></div>
+            <span>英雄を見る</span>
+          </a>
+          <a class="eh-guide-link" href="/ja/buildings/">
+            <div><h3>建物データを確認</h3><p>建設、戦力、成長イベント前に建物情報を確認します。</p></div>
+            <span>建物を見る</span>
+          </a>
+          <a class="eh-guide-link" href="/ja/behemoths/">
+            <div><h3>ベヒーモスデータを確認</h3><p>戦闘イベントや育成目標に必要な情報を確認します。</p></div>
+            <span>ベヒーモスを見る</span>
+          </a>
+          <a class="eh-guide-link" href="/ja/seasons/">
+            <div><h3>シーズン準備</h3><p>シーズン目標とサーバー戦準備の流れを確認します。</p></div>
+            <span>シーズンを見る</span>
+          </a>
+          <a class="eh-guide-link" href="/ja/guides/beginner-guide/">
+            <div><h3>初心者ガイドを再確認</h3><p>イベント前に基本の成長方針を整理します。</p></div>
+            <span>ガイドを見る</span>
+          </a>
+          <a class="eh-guide-link" href="/ja/guides/discount-topup/">
+            <div><h3>VIP/パッケージ効率確認</h3><p>チャージ前に割引チャージガイドを確認します。</p></div>
+            <span>チャージガイド</span>
+          </a>
+          <a class="eh-guide-link" href="/ja/database/legend-gear-star/">
+            <div><h3>装備関連データ</h3><p>装備イベント前に伝説装備の星級データを確認します。</p></div>
+            <span>装備データ</span>
+          </a>
+          <a class="eh-guide-link" href="/ja/codes/">
+            <div><h3>コード確認</h3><p>イベント前に最新ギフトコードを確認します。</p></div>
+            <span>コードを見る</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="eh-section" aria-labelledby="faqTitle">
+        <div class="eh-section-head"><div><h2 id="faqTitle">FAQ</h2></div></div>
+        <div class="eh-faq">
+          <details>
+            <summary>このイベントヘルパーは公式ツールですか？</summary>
+            <p>いいえ。TilesSurvive.net が整理したファンメイドツールで、ゲーム運営の公式ツールではありません。</p>
+          </details>
+          <details>
+            <summary>「検証必要」バッジとは何ですか？</summary>
+            <p>最新のゲーム内数値と完全に照合していないサンプルデータです。実際に資源を使う前にゲーム内情報を確認してください。</p>
+          </details>
+          <details>
+            <summary>LootBar リンクはなぜありますか？</summary>
+            <p>イベント準備中にチャージ特典を確認したいユーザー向けの情報性リンクです。</p>
+          </details>
+        </div>
+      </section>
+
+      <section class="eh-section" aria-labelledby="sourceNoteTitle">
+        <h2 id="sourceNoteTitle">出典メモ</h2>
+        <p class="eh-source">このページは、同盟メンバーが共有したイベントヘルパー資料をもとに、TilesSurvive.net向けに再構成したファンメイドコンテンツです。</p>
+      </section>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="/js/event-helper.js" defer></script>
+  <script src="/js/layout.js"></script>
+</body>
+</html>

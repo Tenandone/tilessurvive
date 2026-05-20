@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en" data-lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tiles Survive Event Helper | Event Calendar, Reward Finder, Calculator | TilesSurvive.net</title>
+  <base href="/" />
+
+  <meta name="theme-color" content="#ffffff" />
+  <meta name="description" content="A Tiles Survive Event Helper with today’s events, weekly event calendar, reward finder, basic calculators, and preparation links for TilesSurvive.net players." />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+  <meta name="author" content="TilesSurvive.net" />
+
+  <link rel="canonical" href="https://tilessurvive.net/en/event-helper/" />
+  <link rel="alternate" hreflang="x-default" href="https://tilessurvive.net/en/event-helper/" />
+  <link rel="alternate" hreflang="ko" href="https://tilessurvive.net/ko/event-helper/" />
+  <link rel="alternate" hreflang="en" href="https://tilessurvive.net/en/event-helper/" />
+  <link rel="alternate" hreflang="ja" href="https://tilessurvive.net/ja/event-helper/" />
+  <link rel="alternate" hreflang="ru" href="https://tilessurvive.net/ru/event-helper/" />
+  <link rel="alternate" hreflang="zh-TW" href="https://tilessurvive.net/zh-tw/event-helper/" />
+
+  <meta property="og:site_name" content="TilesSurvive.net" />
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Tiles Survive Event Helper | Event Calendar, Reward Finder, Calculator | TilesSurvive.net" />
+  <meta property="og:description" content="A Tiles Survive Event Helper with today’s events, weekly event calendar, reward finder, basic calculators, and preparation links for TilesSurvive.net players." />
+  <meta property="og:url" content="https://tilessurvive.net/en/event-helper/" />
+  <meta property="og:image" content="https://tilessurvive.net/img/logo-tilessurvive.png" />
+  <meta property="og:locale" content="en_US" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Tiles Survive Event Helper | Event Calendar, Reward Finder, Calculator | TilesSurvive.net" />
+  <meta name="twitter:description" content="A Tiles Survive Event Helper with today’s events, weekly event calendar, reward finder, basic calculators, and preparation links for TilesSurvive.net players." />
+  <meta name="twitter:image" content="https://tilessurvive.net/img/logo-tilessurvive.png" />
+
+  <link rel="preload" as="image" href="/img/logo-tilessurvive.png" />
+
+  <style>
+    .event-helper-page{color:#0f172a;background:#f4f7fb;min-height:100vh;padding:22px 0 96px;line-height:1.68;word-break:keep-all}
+    .event-helper-page *{box-sizing:border-box}
+    .event-helper-page .eh-container{width:min(1180px,calc(100% - 32px));margin:0 auto;min-width:0}
+    .event-helper-page .eh-breadcrumb{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin:10px 0 18px;color:#64748b;font-size:14px}
+    .event-helper-page .eh-breadcrumb a{color:#2563eb;text-decoration:none;font-weight:800}
+    .event-helper-page .eh-hero{border:1px solid #dbeafe;background:linear-gradient(135deg,#ffffff 0%,#eff6ff 52%,#ecfdf5 100%);border-radius:28px;padding:30px;box-shadow:0 18px 46px rgba(15,23,42,.08)}
+    .event-helper-page .eh-eyebrow{font-size:13px;font-weight:900;color:#2563eb;text-transform:uppercase;letter-spacing:.08em;margin-bottom:8px}
+    .event-helper-page h1{font-size:clamp(30px,4vw,54px);line-height:1.08;margin:0 0 16px;color:#0f172a;letter-spacing:0}
+    .event-helper-page .eh-lead{font-size:18px;max-width:820px;margin:0;color:#334155}
+    .event-helper-page .eh-hero-note{margin:14px 0 0;color:#475569;max-width:840px}
+    .event-helper-page .eh-hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:22px;align-items:stretch}
+    .event-helper-page .eh-cta{display:flex;gap:14px;align-items:center;justify-content:space-between;border:1px solid #bfdbfe;background:#fff;border-radius:20px;padding:16px 18px;min-width:min(100%,520px);text-decoration:none;color:#0f172a;box-shadow:0 10px 28px rgba(37,99,235,.08)}
+    .event-helper-page .eh-cta strong{display:block;font-size:16px;margin-bottom:3px}
+    .event-helper-page .eh-cta span{display:block;color:#475569;font-size:14px}
+    .event-helper-page .eh-cta em{font-style:normal;font-weight:900;color:#2563eb;white-space:nowrap}
+    .event-helper-page .eh-section{margin-top:22px;border:1px solid #e2e8f0;background:#fff;border-radius:24px;padding:24px;box-shadow:0 12px 34px rgba(15,23,42,.05)}
+    .event-helper-page .eh-section-head{display:flex;justify-content:space-between;gap:18px;align-items:flex-end;flex-wrap:wrap;margin-bottom:16px}
+    .event-helper-page h2{font-size:24px;line-height:1.22;margin:0 0 6px;color:#0f172a;letter-spacing:0}
+    .event-helper-page h3{font-size:17px;margin:0 0 8px;color:#0f172a;letter-spacing:0}
+    .event-helper-page .eh-muted{color:#64748b;margin:0}
+    .event-helper-page .eh-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+    .event-helper-page .eh-grid-2{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+    .event-helper-page .eh-card{border:1px solid #e2e8f0;background:#f8fafc;border-radius:18px;padding:16px;min-width:0}
+    .event-helper-page .eh-card p{margin:0;color:#475569}
+    .event-helper-page .eh-event-meta{display:flex;flex-wrap:wrap;gap:8px;margin:10px 0 0}
+    .event-helper-page .eh-pill{display:inline-flex;align-items:center;border:1px solid #cbd5e1;background:#fff;border-radius:999px;padding:5px 9px;color:#334155;font-size:12px;font-weight:800}
+    .event-helper-page .eh-pill-warn{border-color:#f59e0b;background:#fffbeb;color:#92400e}
+    .event-helper-page .eh-toolbar{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-bottom:14px}
+    .event-helper-page .eh-field{display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:800;color:#334155}
+    .event-helper-page .eh-field input,.event-helper-page .eh-field select{width:100%;border:1px solid #cbd5e1;border-radius:12px;padding:10px 11px;background:#fff;color:#0f172a;font:inherit;font-weight:600}
+    .event-helper-page .eh-list{display:grid;gap:10px}
+    .event-helper-page .eh-day-board{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:10px}
+    .event-helper-page .eh-day{border:1px solid #e2e8f0;border-radius:16px;padding:12px;background:#f8fafc;min-height:140px}
+    .event-helper-page .eh-day-title{font-weight:900;margin-bottom:8px;color:#2563eb}
+    .event-helper-page .eh-mini-event{border-top:1px solid #e2e8f0;padding-top:8px;margin-top:8px;font-size:13px;color:#334155}
+    .event-helper-page .eh-mini-event strong{display:block;color:#0f172a}
+    .event-helper-page .eh-calc-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px}
+    .event-helper-page .eh-calc-result{margin-top:12px;border-radius:14px;background:#ecfdf5;border:1px solid #bbf7d0;padding:12px;color:#166534;font-weight:900}
+    .event-helper-page .eh-button{border:0;border-radius:12px;background:#2563eb;color:#fff;padding:11px 14px;font-weight:900;cursor:pointer}
+    .event-helper-page .eh-button:hover{background:#1d4ed8}
+    .event-helper-page .eh-checklist{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:0;padding:0;list-style:none}
+    .event-helper-page .eh-checklist li{border:1px solid #e2e8f0;background:#f8fafc;border-radius:14px;padding:12px;color:#334155}
+    .event-helper-page .eh-guide-link{display:flex;justify-content:space-between;gap:12px;align-items:center;text-decoration:none;color:#0f172a;border:1px solid #e2e8f0;border-radius:16px;padding:14px;background:#f8fafc}
+    .event-helper-page .eh-guide-link:hover{border-color:#93c5fd;background:#eff6ff}
+    .event-helper-page .eh-guide-link span{color:#2563eb;font-weight:900;white-space:nowrap}
+    .event-helper-page .eh-faq{display:grid;gap:12px}
+    .event-helper-page .eh-faq details{border:1px solid #e2e8f0;background:#f8fafc;border-radius:16px;padding:14px}
+    .event-helper-page .eh-faq summary{font-weight:900;cursor:pointer}
+    .event-helper-page .eh-faq p{margin:10px 0 0;color:#475569}
+    .event-helper-page .eh-source{border-left:4px solid #2563eb;background:#eff6ff;color:#334155;border-radius:14px;padding:14px;margin:0}
+    .event-helper-page .eh-status{border:1px dashed #cbd5e1;border-radius:16px;padding:16px;background:#f8fafc;color:#475569}
+    .event-helper-page .eh-error{border-color:#fecaca;background:#fef2f2;color:#991b1b}
+    @media (max-width:900px){.event-helper-page .eh-grid,.event-helper-page .eh-grid-2,.event-helper-page .eh-calc-grid,.event-helper-page .eh-toolbar{grid-template-columns:1fr}.event-helper-page .eh-day-board{grid-template-columns:repeat(2,minmax(0,1fr))}.event-helper-page .eh-checklist{grid-template-columns:1fr}}
+    @media (max-width:560px){.event-helper-page{padding-top:14px}.event-helper-page .eh-container{width:min(100% - 24px,1180px)}.event-helper-page .eh-hero,.event-helper-page .eh-section{padding:18px;border-radius:20px}.event-helper-page .eh-day-board{grid-template-columns:1fr}.event-helper-page .eh-cta{align-items:flex-start;flex-direction:column}.event-helper-page .eh-cta em{white-space:normal}}
+  </style>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Home","item":"https://tilessurvive.net/en/"},{"@type":"ListItem","position":2,"name":"Event Helper","item":"https://tilessurvive.net/en/event-helper/"}]}</script>
+  <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is this an official event tool?","acceptedAnswer":{"@type":"Answer","text":"No. This is a fan-made TilesSurvive.net utility and is not an official tool from the game publisher."}},{"@type":"Question","name":"What does “Needs verification” mean?","acceptedAnswer":{"@type":"Answer","text":"It marks sample data that has not been fully checked against the latest in-game values. Confirm details in game before spending resources."}},{"@type":"Question","name":"Why is there a LootBar link?","acceptedAnswer":{"@type":"Answer","text":"It is a helpful recommendation for players who want to check top-up benefits while preparing for events."}}]}</script>
+</head>
+<body>
+  <div id="site-header"></div>
+
+  <main class="event-helper-page" id="main" data-event-helper-page="true">
+    <div class="eh-container">
+      <nav class="eh-breadcrumb" aria-label="Breadcrumb">
+        <a href="/en/">Home</a>
+        <span aria-hidden="true">›</span>
+        <span aria-current="page">Event Helper</span>
+      </nav>
+
+      <section class="eh-hero" aria-labelledby="eventHelperTitle">
+        <div class="eh-eyebrow">Fan-made tool</div>
+        <h1 id="eventHelperTitle">Tiles Survive Event Helper</h1>
+        <p class="eh-lead">Check today’s events, scan the weekly event calendar, find rewards, and use simple calculators before spending resources.</p>
+        <p class="eh-hero-note">A TilesSurvive.net utility designed for event planning, guide discovery, and helpful top-up benefit checks when needed.</p>
+        <div class="eh-hero-actions">
+          <a class="eh-cta" href="https://lootbar.gg/shop/ten/top-up/tiles-survive" target="_blank" rel="sponsored noopener noreferrer">
+            <div><strong>Check top-up benefits before pushing events</strong><span>Before spending resources during events, check available top-up benefits.</span></div>
+            <em>View LootBar offers</em>
+          </a>
+        </div>
+      </section>
+
+      <section class="eh-section" aria-labelledby="todayEventsTitle">
+        <div class="eh-section-head"><div><h2 id="todayEventsTitle">Today’s Events</h2><p class="eh-muted">Shown from your browser’s current weekday. Each event also displays its own time basis.</p></div></div>
+        <div id="ehTodayEvents" class="eh-list"><div class="eh-status" data-eh-loading="true"></div></div>
+      </section>
+
+      <section class="eh-section" aria-labelledby="weeklyCalendarTitle">
+        <div class="eh-section-head"><div><h2 id="weeklyCalendarTitle">Weekly Event Calendar</h2><p class="eh-muted">Review the weekly flow and spot overlapping event activities early.</p></div></div>
+        <div id="ehWeeklyCalendar" class="eh-day-board"></div>
+      </section>
+
+      <section class="eh-section" aria-labelledby="eventFiltersTitle">
+        <div class="eh-section-head"><div><h2 id="eventFiltersTitle">Event Search &amp; Filters</h2><p class="eh-muted">Filter events by day, mode, activity, and reward keywords.</p></div></div>
+        <div class="eh-toolbar" role="search">
+          <label class="eh-field"><span data-eh-label="keyword"></span><input id="ehSearchInput" type="search" autocomplete="off" /></label>
+          <label class="eh-field"><span data-eh-label="day"></span><select id="ehDayFilter"></select></label>
+          <label class="eh-field"><span data-eh-label="mode"></span><select id="ehModeFilter"></select></label>
+          <label class="eh-field"><span data-eh-label="activity"></span><select id="ehActivityFilter"></select></label>
+        </div>
+        <div id="ehEventResults" class="eh-grid"></div>
+      </section>
+
+      <section class="eh-section" aria-labelledby="rewardFinderTitle">
+        <div class="eh-section-head"><div><h2 id="rewardFinderTitle">Reward Finder</h2><p class="eh-muted">Enter a reward or resource keyword to find matching events quickly.</p></div></div>
+        <label class="eh-field"><span data-eh-label="reward"></span><input id="ehRewardInput" type="search" autocomplete="off" /></label>
+        <div id="ehRewardResults" class="eh-grid" style="margin-top:14px"></div>
+      </section>
+
+      <section class="eh-section" aria-labelledby="basicCalculatorsTitle">
+        <div class="eh-section-head"><div><h2 id="basicCalculatorsTitle">Basic Calculators</h2><p class="eh-muted">Advanced formulas stay in future tools until confirmed. This MVP focuses on safe basic calculators.</p></div></div>
+        <div id="ehCalculators" class="eh-calc-grid"></div>
+      </section>
+
+      <section class="eh-section" aria-labelledby="prepChecklistTitle">
+        <div class="eh-section-head"><div><h2 id="prepChecklistTitle">Event Preparation Checklist</h2><p class="eh-muted">Before pushing an event, check resources, speedups, heroes, buildings, and season goals together.</p></div></div>
+        <ul class="eh-checklist" id="ehChecklist"></ul>
+        <div class="eh-hero-actions">
+          <a class="eh-cta" href="https://lootbar.gg/shop/ten/top-up/tiles-survive" target="_blank" rel="sponsored noopener noreferrer">
+            <div><strong>Before spending resources during events, check available top-up benefits.</strong><span>Before spending resources during events, check available top-up benefits.</span></div>
+            <em>View Tiles Survive top-up offers</em>
+          </a>
+        </div>
+      </section>
+
+      <section class="eh-section" aria-labelledby="recommendedGuidesTitle">
+        <div class="eh-section-head"><div><h2 id="recommendedGuidesTitle">Recommended Guides</h2><p class="eh-muted">Existing TilesSurvive.net pages that help with event preparation.</p></div></div>
+        <div class="eh-grid-2">
+          <a class="eh-guide-link" href="/en/heroes/">
+            <div><h3>Check hero data</h3><p>Review key heroes before power or combat events.</p></div>
+            <span>View heroes</span>
+          </a>
+          <a class="eh-guide-link" href="/en/buildings/">
+            <div><h3>Check building data</h3><p>Prepare for construction, power, and growth events.</p></div>
+            <span>View buildings</span>
+          </a>
+          <a class="eh-guide-link" href="/en/behemoths/">
+            <div><h3>Check behemoth data</h3><p>Review behemoths before combat and growth goals.</p></div>
+            <span>View behemoths</span>
+          </a>
+          <a class="eh-guide-link" href="/en/seasons/">
+            <div><h3>Prepare season content</h3><p>Check season goals and server-war preparation flow.</p></div>
+            <span>View seasons</span>
+          </a>
+          <a class="eh-guide-link" href="/en/guides/beginner-guide/">
+            <div><h3>Revisit beginner guide</h3><p>Refresh your basic growth plan before events.</p></div>
+            <span>View guide</span>
+          </a>
+          <a class="eh-guide-link" href="/en/guides/discount-topup/">
+            <div><h3>Check VIP/package value</h3><p>Read the discount top-up guide before topping up.</p></div>
+            <span>Top-up guide</span>
+          </a>
+          <a class="eh-guide-link" href="/en/database/legend-gear-star/">
+            <div><h3>Gear-related data</h3><p>Check legendary gear star data before gear events.</p></div>
+            <span>Gear data</span>
+          </a>
+          <a class="eh-guide-link" href="/en/codes/">
+            <div><h3>Coupons and notices</h3><p>Check current gift codes before event pushes.</p></div>
+            <span>View codes</span>
+          </a>
+        </div>
+      </section>
+
+      <section class="eh-section" aria-labelledby="faqTitle">
+        <div class="eh-section-head"><div><h2 id="faqTitle">FAQ</h2></div></div>
+        <div class="eh-faq">
+          <details>
+            <summary>Is this an official event tool?</summary>
+            <p>No. This is a fan-made TilesSurvive.net utility and is not an official tool from the game publisher.</p>
+          </details>
+          <details>
+            <summary>What does “Needs verification” mean?</summary>
+            <p>It marks sample data that has not been fully checked against the latest in-game values. Confirm details in game before spending resources.</p>
+          </details>
+          <details>
+            <summary>Why is there a LootBar link?</summary>
+            <p>It is a helpful recommendation for players who want to check top-up benefits while preparing for events.</p>
+          </details>
+        </div>
+      </section>
+
+      <section class="eh-section" aria-labelledby="sourceNoteTitle">
+        <h2 id="sourceNoteTitle">Source Note</h2>
+        <p class="eh-source">This fan-made page is based on event helper data shared by an alliance member and reorganized for TilesSurvive.net.</p>
+      </section>
+    </div>
+  </main>
+
+  <div id="site-footer"></div>
+  <script src="/js/event-helper.js" defer></script>
+  <script src="/js/layout.js"></script>
+</body>
+</html>

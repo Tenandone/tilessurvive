@@ -1,0 +1,127 @@
+{
+  "calculators": [
+    {
+      "id": "power-score",
+      "type": "powerScore",
+      "labels": {
+        "ko": {
+          "title": "전투력 점수 계산기",
+          "amount": "증가 전투력",
+          "rate": "전투력 1당 점수",
+          "button": "계산하기"
+        },
+        "en": {
+          "title": "Power Score Calculator",
+          "amount": "Power gained",
+          "rate": "Points per 1 power",
+          "button": "Calculate"
+        },
+        "ja": {
+          "title": "戦力スコア計算機",
+          "amount": "上昇戦力",
+          "rate": "戦力 1 あたりの点数",
+          "button": "計算"
+        },
+        "zh-tw": {
+          "title": "戰力分數計算器",
+          "amount": "增加戰力",
+          "rate": "每 1 戰力分數",
+          "button": "計算"
+        },
+        "ru": {
+          "title": "Калькулятор очков силы",
+          "amount": "Прирост силы",
+          "rate": "Очков за 1 силы",
+          "button": "Рассчитать"
+        }
+      }
+    },
+    {
+      "id": "speedup-sum",
+      "type": "speedupSum",
+      "labels": {
+        "ko": {
+          "title": "가속 시간 합산 계산기",
+          "days": "일",
+          "hours": "시간",
+          "minutes": "분",
+          "button": "합산하기"
+        },
+        "en": {
+          "title": "Speedup Time Sum Calculator",
+          "days": "Days",
+          "hours": "Hours",
+          "minutes": "Minutes",
+          "button": "Sum time"
+        },
+        "ja": {
+          "title": "加速時間合計計算機",
+          "days": "日",
+          "hours": "時間",
+          "minutes": "分",
+          "button": "合計"
+        },
+        "zh-tw": {
+          "title": "加速時間合計計算器",
+          "days": "天",
+          "hours": "小時",
+          "minutes": "分鐘",
+          "button": "合計"
+        },
+        "ru": {
+          "title": "Калькулятор ускорений",
+          "days": "Дни",
+          "hours": "Часы",
+          "minutes": "Минуты",
+          "button": "Сложить"
+        }
+      }
+    }
+  ],
+  "futureTools": [
+    {
+      "id": "equipment",
+      "status": "planned",
+      "title": {
+        "ko": "장비 계산기",
+        "en": "Equipment calculator",
+        "ja": "装備計算機",
+        "zh-tw": "裝備計算器",
+        "ru": "Калькулятор снаряжения"
+      }
+    },
+    {
+      "id": "hero-fragments",
+      "status": "planned",
+      "title": {
+        "ko": "영웅 조각 계산기",
+        "en": "Hero fragment calculator",
+        "ja": "英雄欠片計算機",
+        "zh-tw": "英雄碎片計算器",
+        "ru": "Калькулятор фрагментов героя"
+      }
+    },
+    {
+      "id": "hero-skills",
+      "status": "planned",
+      "title": {
+        "ko": "영웅 스킬 계산기",
+        "en": "Hero skill calculator",
+        "ja": "英雄スキル計算機",
+        "zh-tw": "英雄技能計算器",
+        "ru": "Калькулятор навыков героя"
+      }
+    },
+    {
+      "id": "hero-level",
+      "status": "planned",
+      "title": {
+        "ko": "영웅 레벨 계산기",
+        "en": "Hero level calculator",
+        "ja": "英雄レベル計算機",
+        "zh-tw": "英雄等級計算器",
+        "ru": "Калькулятор уровня героя"
+      }
+    }
+  ]
+}

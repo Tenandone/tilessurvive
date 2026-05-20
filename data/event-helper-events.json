@@ -1,0 +1,216 @@
+{
+  "generatedAt": "2026-05-20",
+  "timeBasisNote": {
+    "ko": "샘플 이벤트 시간은 원본 공유 자료 구조를 바탕으로 한 예시입니다. 실제 게임 내 일정과 비교 검증이 필요합니다.",
+    "en": "Sample event times are reorganized from shared helper material and should be checked against the live game schedule.",
+    "ja": "サンプルのイベント時間は共有資料をもとに再整理した例です。実際のゲーム内スケジュールと照合してください。",
+    "zh-tw": "範例活動時間根據分享資料重新整理，實際使用前請與遊戲內排程再次確認。",
+    "ru": "Пример времени событий переработан на основе общих материалов. Перед использованием проверь расписание в игре."
+  },
+  "events": [
+    {
+      "id": "big-game-training",
+      "days": [
+        "mon",
+        "thu"
+      ],
+      "startTime": "03:00",
+      "endTime": "07:00",
+      "timeBasis": "server",
+      "mode": {
+        "ko": "빅 게임",
+        "en": "Big Game",
+        "ja": "ビッグゲーム",
+        "zh-tw": "大型活動",
+        "ru": "Игра по-крупному"
+      },
+      "title": {
+        "ko": "병사 훈련 집중",
+        "en": "Troop Training Push",
+        "ja": "兵士訓練集中",
+        "zh-tw": "士兵訓練衝刺",
+        "ru": "Упор на обучение войск"
+      },
+      "description": {
+        "ko": "훈련 가속과 병사 생산을 맞춰 점수를 노리는 샘플 이벤트입니다.",
+        "en": "A sample event for timing training speedups and troop production.",
+        "ja": "訓練加速と兵士生産を合わせて得点を狙うサンプルイベントです。",
+        "zh-tw": "配合訓練加速與士兵生產取得分數的範例活動。",
+        "ru": "Пример события для траты ускорений обучения и подготовки войск."
+      },
+      "activities": [
+        "training",
+        "speedup"
+      ],
+      "rewards": [
+        "points",
+        "hero-fragments",
+        "speedups"
+      ],
+      "verified": false
+    },
+    {
+      "id": "alliance-duel-construction",
+      "days": [
+        "tue",
+        "fri"
+      ],
+      "startTime": "11:00",
+      "endTime": "15:00",
+      "timeBasis": "server",
+      "mode": {
+        "ko": "동맹 듀얼",
+        "en": "Alliance Duel",
+        "ja": "同盟デュエル",
+        "zh-tw": "聯盟對決",
+        "ru": "Дуэль союзов"
+      },
+      "title": {
+        "ko": "건설 점수 구간",
+        "en": "Construction Score Window",
+        "ja": "建設スコア区間",
+        "zh-tw": "建設分數時段",
+        "ru": "Окно очков строительства"
+      },
+      "description": {
+        "ko": "건설 가속과 건물 업그레이드를 묶어 쓰기 좋은 샘플 구간입니다.",
+        "en": "A sample window for pairing construction speedups with building upgrades.",
+        "ja": "建設加速と建物強化をまとめて使いやすいサンプル区間です。",
+        "zh-tw": "適合搭配建築加速與建築升級使用的範例時段。",
+        "ru": "Пример окна для строительных ускорений и улучшения зданий."
+      },
+      "activities": [
+        "construction",
+        "speedup"
+      ],
+      "rewards": [
+        "points",
+        "building-power",
+        "resources"
+      ],
+      "verified": false
+    },
+    {
+      "id": "research-sprint",
+      "days": [
+        "wed",
+        "sat"
+      ],
+      "startTime": "15:00",
+      "endTime": "19:00",
+      "timeBasis": "server",
+      "mode": {
+        "ko": "성장 이벤트",
+        "en": "Growth Event",
+        "ja": "成長イベント",
+        "zh-tw": "成長活動",
+        "ru": "Событие роста"
+      },
+      "title": {
+        "ko": "연구 가속 사용",
+        "en": "Research Speedup Use",
+        "ja": "研究加速使用",
+        "zh-tw": "研究加速使用",
+        "ru": "Использование ускорений исследования"
+      },
+      "description": {
+        "ko": "연구 완료와 가속 사용을 함께 점검하는 샘플 이벤트입니다.",
+        "en": "A sample event for checking research completions and speedup use together.",
+        "ja": "研究完了と加速使用をまとめて確認するサンプルイベントです。",
+        "zh-tw": "用來同時檢查研究完成與加速使用的範例活動。",
+        "ru": "Пример события для завершения исследований и траты ускорений."
+      },
+      "activities": [
+        "research",
+        "speedup"
+      ],
+      "rewards": [
+        "points",
+        "research-power",
+        "resources"
+      ],
+      "verified": false
+    },
+    {
+      "id": "hero-shard-exchange",
+      "days": [
+        "sun"
+      ],
+      "startTime": "09:00",
+      "endTime": "23:00",
+      "timeBasis": "local",
+      "mode": {
+        "ko": "보상 교환",
+        "en": "Reward Exchange",
+        "ja": "報酬交換",
+        "zh-tw": "獎勵兌換",
+        "ru": "Обмен наград"
+      },
+      "title": {
+        "ko": "영웅 조각 보상 확인",
+        "en": "Hero Fragment Reward Check",
+        "ja": "英雄欠片報酬確認",
+        "zh-tw": "英雄碎片獎勵確認",
+        "ru": "Проверка фрагментов героя"
+      },
+      "description": {
+        "ko": "영웅 조각과 소환권 보상 여부를 확인하는 샘플 항목입니다.",
+        "en": "A sample entry for checking hero fragments and summon-related rewards.",
+        "ja": "英雄欠片と召喚関連報酬を確認するためのサンプル項目です。",
+        "zh-tw": "用來確認英雄碎片與招募相關獎勵的範例項目。",
+        "ru": "Пример для проверки наград с фрагментами героев и призывом."
+      },
+      "activities": [
+        "summon",
+        "hero"
+      ],
+      "rewards": [
+        "hero-fragments",
+        "summon",
+        "points"
+      ],
+      "verified": false
+    },
+    {
+      "id": "gear-upgrade-window",
+      "days": [
+        "wed",
+        "sun"
+      ],
+      "startTime": "19:00",
+      "endTime": "23:00",
+      "timeBasis": "server",
+      "mode": {
+        "ko": "장비 성장",
+        "en": "Gear Growth",
+        "ja": "装備成長",
+        "zh-tw": "裝備成長",
+        "ru": "Рост снаряжения"
+      },
+      "title": {
+        "ko": "장비 강화 준비",
+        "en": "Gear Upgrade Prep",
+        "ja": "装備強化準備",
+        "zh-tw": "裝備強化準備",
+        "ru": "Подготовка снаряжения"
+      },
+      "description": {
+        "ko": "장비 재료와 전투력 상승을 이벤트 전에 확인하는 샘플입니다.",
+        "en": "A sample reminder to check gear materials and power gain before events.",
+        "ja": "装備素材と戦力上昇をイベント前に確認するサンプルです。",
+        "zh-tw": "活動前確認裝備材料與戰力提升的範例提醒。",
+        "ru": "Пример напоминания проверить материалы снаряжения и прирост силы."
+      },
+      "activities": [
+        "gear",
+        "power"
+      ],
+      "rewards": [
+        "equipment",
+        "points",
+        "power"
+      ],
+      "verified": false
+    }
+  ]
+}
