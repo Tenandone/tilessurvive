@@ -1,0 +1,1102 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <title>루트바 파트너 셀러 운영 가이드</title>
+
+  <style>
+    @page {
+      size: A4;
+      margin: 10mm;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: #ffffff;
+      color: #222;
+      font-family: Arial, "Noto Sans KR", sans-serif;
+      font-size: 12px;
+      line-height: 1.48;
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+
+    .pdf-wrap {
+      width: 190mm;
+      margin: 0 auto;
+      background: #ffffff;
+    }
+
+    .pdf-page {
+      width: 190mm;
+      height: 277mm;
+      page-break-after: always;
+      break-after: page;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow: hidden;
+      padding: 0;
+    }
+
+    .pdf-page:last-child {
+      page-break-after: auto;
+      break-after: auto;
+    }
+
+    .page-header {
+      border-bottom: 3px solid #111;
+      padding-bottom: 8px;
+      margin-bottom: 10px;
+    }
+
+    .page-no {
+      font-size: 10.5px;
+      color: #777;
+      letter-spacing: 1.6px;
+      font-weight: 700;
+      margin-bottom: 4px;
+    }
+
+    .page-title {
+      font-size: 22px;
+      line-height: 1.25;
+      color: #111;
+      font-weight: 800;
+      margin: 0;
+    }
+
+    .page-subtitle {
+      font-size: 12px;
+      color: #666;
+      margin-top: 4px;
+    }
+
+    .page-body {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 9px;
+    }
+
+    .page-bottom {
+      margin-top: 10px;
+      padding: 10px 12px;
+      background: #111;
+      color: #fff;
+      font-size: 12px;
+      line-height: 1.45;
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+
+    .cover {
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      border: 4px solid #111;
+      padding: 34px;
+    }
+
+    .cover .eyebrow {
+      font-size: 12px;
+      letter-spacing: 2px;
+      color: #777;
+      font-weight: 800;
+      margin-bottom: 10px;
+    }
+
+    .cover h1 {
+      font-size: 34px;
+      line-height: 1.25;
+      margin: 0 0 12px;
+      color: #111;
+    }
+
+    .cover .sub {
+      font-size: 15px;
+      color: #555;
+      margin: 0 0 28px;
+    }
+
+    .cover-box {
+      border-top: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+      padding: 18px 0;
+      margin: 20px 0;
+      text-align: left;
+      font-size: 13px;
+      line-height: 1.65;
+    }
+
+    .box,
+    .black-box,
+    .left-box,
+    .card,
+    table {
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+
+    .box {
+      border: 1px solid #d8d8d8;
+      background: #fafafa;
+      padding: 10px 11px;
+    }
+
+    .white-box {
+      border: 1px solid #d8d8d8;
+      background: #fff;
+      padding: 10px 11px;
+    }
+
+    .left-box {
+      padding: 11px 13px;
+      background: #f7f7f7;
+      border-left: 5px solid #111;
+    }
+
+    .black-box {
+      padding: 11px 13px;
+      background: #111;
+      color: #fff;
+    }
+
+    .card {
+      border: 1px solid #ddd;
+      background: #fff;
+    }
+
+    .card-title {
+      background: #111;
+      color: #fff;
+      padding: 8px 11px;
+      font-weight: 800;
+    }
+
+    .card-body {
+      padding: 10px 12px;
+    }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 9px;
+    }
+
+    .grid-3 {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 8px;
+    }
+
+    .mini {
+      font-size: 11.2px;
+      line-height: 1.42;
+    }
+
+    .danger-box {
+      background: #fff4f4;
+      border: 1px solid #f0b5b5;
+      padding: 10px 12px;
+    }
+
+    .good-box {
+      background: #f6fff6;
+      border: 1px solid #b9dfb9;
+      padding: 10px 12px;
+    }
+
+    .box-title {
+      font-weight: 800;
+      color: #111;
+      margin-bottom: 5px;
+      font-size: 13px;
+    }
+
+    .black-box .box-title {
+      color: #fff;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 10.8px;
+    }
+
+    th,
+    td {
+      border: 1px solid #ccc;
+      padding: 5px 6px;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: #f1f1f1;
+      font-weight: 800;
+    }
+
+    .quote {
+      font-size: 16px;
+      font-weight: 800;
+      line-height: 1.45;
+      color: #111;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .footer-note {
+      color: #777;
+      font-size: 10.5px;
+      text-align: center;
+      border-top: 1px solid #ddd;
+      padding-top: 10px;
+      margin-top: 10px;
+    }
+
+    @media print {
+      body {
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      .pdf-page {
+        page-break-after: always;
+        break-after: page;
+      }
+
+      .pdf-page:last-child {
+        page-break-after: auto;
+        break-after: auto;
+      }
+    }
+  </style>
+</head>
+
+<body>
+<div class="pdf-wrap">
+
+  <!-- 1 PAGE -->
+  <section class="pdf-page">
+    <div class="cover">
+      <div class="eyebrow">LOOTBAR PARTNER SELLER GUIDE</div>
+      <h1>루트바 파트너 셀러<br>운영 가이드</h1>
+      <p class="sub">레퍼럴 세팅 이후, 커뮤니티를 키우고 수익화로 연결하는 실전 운영 매뉴얼</p>
+
+      <div class="cover-box">
+        <strong>이 가이드의 목적</strong><br>
+        이 문서는 루트바 레퍼럴 링크를 단순히 홍보하는 것이 아니라, 게임 커뮤니티를 운영하면서 자연스럽게 유저 유입과 수익화를 만드는 방법을 안내하기 위한 교육자료입니다.
+        <br><br>
+        핵심은 링크를 뿌리는 것이 아니라, 게임 유저가 필요한 정보를 제공하고 그 과정에서 레퍼럴 수익이 발생할 수 있는 구조를 만드는 것입니다.
+      </div>
+
+      <div class="black-box center">
+        레퍼럴 수익화의 시작은 링크가 아니라 커뮤니티입니다.
+      </div>
+    </div>
+  </section>
+
+  <!-- 2 PAGE -->
+  <section class="pdf-page">
+    <div>
+      <div class="page-header">
+        <div class="page-no">PAGE 02</div>
+        <h2 class="page-title">기본 역할 구분과 레퍼럴 구조</h2>
+        <div class="page-subtitle">운영자는 세팅하고, 셀러는 커뮤니티를 운영합니다.</div>
+      </div>
+
+      <div class="page-body">
+        <div class="grid-2">
+          <div class="card">
+            <div class="card-title">운영자가 세팅하는 부분</div>
+            <div class="card-body">
+              - 루트바 레퍼럴 링크 세팅<br>
+              - 게임별 홍보 링크 전달<br>
+              - 기본 안내 문구 제공<br>
+              - 금지 표현 및 주의사항 안내<br>
+              - 정산 기준 안내<br>
+              - 주요 공지 및 이벤트 자료 제공<br>
+              - 커뮤니티 운영 방향 가이드
+            </div>
+          </div>
+
+          <div class="card">
+            <div class="card-title">셀러가 담당하는 부분</div>
+            <div class="card-body">
+              - 게임 커뮤니티 글 작성<br>
+              - 쿠폰, 이벤트, 공지 정보 공유<br>
+              - 유저 질문에 대한 기본 응대<br>
+              - 레퍼럴 링크를 자연스럽게 안내<br>
+              - 조회수, 댓글, 문의 반응 확인<br>
+              - 커뮤니티 운영 방향 유지<br>
+              - 지속적인 콘텐츠 생산
+            </div>
+          </div>
+        </div>
+
+        <div class="left-box">
+          <strong>핵심 기준</strong><br>
+          셀러는 단순 홍보자가 아니라, 게임 유저에게 필요한 정보를 정리해주는 커뮤니티 운영자입니다.
+          커뮤니티가 살아야 레퍼럴 수익화도 지속될 수 있습니다.
+        </div>
+
+        <div class="box">
+          <div class="box-title">루트바 레퍼럴 기본 흐름</div>
+          1. 셀러가 게임 정보 콘텐츠를 작성합니다.<br>
+          2. 유저가 공략, 쿠폰, 이벤트 정보를 확인합니다.<br>
+          3. 필요한 경우 레퍼럴 링크를 클릭합니다.<br>
+          4. 유저가 가입 또는 충전을 진행합니다.<br>
+          5. 레퍼럴 성과로 기록됩니다.<br>
+          6. 성과에 따라 수익화가 발생합니다.
+        </div>
+
+        <div class="white-box">
+          중요한 것은 유저가 링크를 클릭할 이유를 만드는 것입니다.
+          단순히 여기서 충전하세요라고만 안내하면 반응이 낮습니다.
+          유저가 필요한 정보를 먼저 제공하고, 그 안에서 자연스럽게 링크를 안내하는 방식이 가장 안정적입니다.
+        </div>
+      </div>
+    </div>
+
+    <div class="page-bottom">
+      레퍼럴 수익화는 링크 자체에서 시작되는 것이 아니라, 유저가 모이는 커뮤니티에서 시작됩니다.
+    </div>
+  </section>
+
+  <!-- 3 PAGE -->
+  <section class="pdf-page">
+    <div>
+      <div class="page-header">
+        <div class="page-no">PAGE 03</div>
+        <h2 class="page-title">커뮤니티화가 중요한 이유</h2>
+        <div class="page-subtitle">유저는 충전 링크보다 먼저 정보를 찾습니다.</div>
+      </div>
+
+      <div class="page-body">
+        <div class="white-box">
+          게임 유저는 처음부터 충전 링크를 찾는 것이 아니라, 대부분 자신에게 필요한 정보를 먼저 찾습니다.
+          이 정보를 꾸준히 제공하면 유저는 커뮤니티를 신뢰하게 됩니다.
+        </div>
+
+        <div class="grid-3">
+          <div class="box">
+            <div class="box-title">초기 유입 콘텐츠</div>
+            - 쿠폰 코드<br>
+            - 이벤트 일정<br>
+            - 초보자 공략<br>
+            - 업데이트 번역
+          </div>
+
+          <div class="box">
+            <div class="box-title">체류 콘텐츠</div>
+            - 영웅 정보<br>
+            - 장비 정보<br>
+            - 펫 정보<br>
+            - 콘텐츠 사용법
+          </div>
+
+          <div class="box">
+            <div class="box-title">전환 콘텐츠</div>
+            - 패키지 효율<br>
+            - 과금 우선순위<br>
+            - 이벤트 보상 효율<br>
+            - 구매 전 체크사항
+          </div>
+        </div>
+
+        <div class="left-box">
+          <strong>운영 기준</strong><br>
+          정보 제공 80%, 레퍼럴 안내 20% 비율을 유지하는 것이 가장 안정적입니다.
+        </div>
+
+        <table>
+          <thead>
+            <tr>
+              <th>콘텐츠 유형</th>
+              <th>작성 목적</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>쿠폰 안내</td>
+              <td>유저가 가장 쉽게 반응하는 기본 유입 콘텐츠</td>
+            </tr>
+            <tr>
+              <td>이벤트 공략</td>
+              <td>검색 유입과 댓글 반응을 만들기 좋음</td>
+            </tr>
+            <tr>
+              <td>초보자 가이드</td>
+              <td>신규 유저를 커뮤니티에 붙잡아두기 좋음</td>
+            </tr>
+            <tr>
+              <td>패키지 효율 정리</td>
+              <td>충전 관심 유저에게 자연스럽게 연결 가능</td>
+            </tr>
+            <tr>
+              <td>기능 설명</td>
+              <td>초보 유저가 검색할 만한 기본 콘텐츠 확보</td>
+            </tr>
+            <tr>
+              <td>업데이트 번역</td>
+              <td>공식 정보를 빠르게 전달해 커뮤니티 신뢰 확보</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="page-bottom">
+      커뮤니티 신뢰가 쌓이면 레퍼럴 링크도 단순 광고가 아니라 하나의 선택지로 받아들여질 수 있습니다.
+    </div>
+  </section>
+
+  <!-- 4 PAGE -->
+  <section class="pdf-page">
+    <div>
+      <div class="page-header">
+        <div class="page-no">PAGE 04</div>
+        <h2 class="page-title">콘텐츠는 어디서 나오는가</h2>
+        <div class="page-subtitle">게임 안의 모든 기능, 이벤트, 패키지, 업데이트가 콘텐츠가 됩니다.</div>
+      </div>
+
+      <div class="page-body">
+        <div class="white-box">
+          신작 게임이나 새롭게 커뮤니티화를 진행하는 게임은 처음에 어떤 콘텐츠를 올려야 할지 막막할 수 있습니다.
+          하지만 실제로 운영해보면 게임 안의 모든 기능, 모든 이벤트, 모든 패키지, 모든 업데이트가 콘텐츠가 됩니다.
+        </div>
+
+        <div class="grid-2">
+          <div class="box">
+            <div class="box-title">초보자가 찾는 것</div>
+            - 쿠폰 입력 방법<br>
+            - 상점 위치<br>
+            - 초반 성장 루트<br>
+            - 먼저 올려야 할 건물<br>
+            - 이벤트 보상 받는 법<br>
+            - 서버 선택 기준
+          </div>
+
+          <div class="box">
+            <div class="box-title">중급자가 찾는 것</div>
+            - 이벤트 효율<br>
+            - 영웅 조합<br>
+            - 장비 강화 순서<br>
+            - 자원 사용 우선순위<br>
+            - PvP 준비법<br>
+            - 콘텐츠별 보상 구조
+          </div>
+        </div>
+
+        <div class="box">
+          <div class="box-title">과금 유저가 찾는 것</div>
+          - 어떤 패키지가 효율적인지<br>
+          - 이벤트 점수를 위해 무엇을 사야 하는지<br>
+          - 보상 대비 가격이 합리적인지<br>
+          - 공식 가격과 외부 충전 선택지를 어떻게 비교해야 하는지
+        </div>
+
+        <div class="black-box">
+          운영자가 보기에는 너무 기본적인 내용도, 누군가에게는 필요한 정보가 됩니다.
+        </div>
+
+        <div class="left-box">
+          처음에는 수요 없는 공급처럼 느껴질 수 있지만, 일주일에서 한 달만 꾸준히 운영해보면 실제로는 수요가 있는 공급이라는 것을 느끼게 됩니다.
+        </div>
+      </div>
+    </div>
+
+    <div class="page-bottom">
+      콘텐츠가 부족한 것이 아니라, 아직 콘텐츠로 보는 관점이 부족한 것입니다.
+    </div>
+  </section>
+
+  <!-- 5 PAGE -->
+  <section class="pdf-page">
+    <div>
+      <div class="page-header">
+        <div class="page-no">PAGE 05</div>
+        <h2 class="page-title">글 작성 구조와 제목 예시</h2>
+        <div class="page-subtitle">읽기 쉽게 구분된 글이 조회수와 체류 시간을 만듭니다.</div>
+      </div>
+
+      <div class="page-body">
+        <div class="box">
+          <div class="box-title">추천 글 구조</div>
+          1. 제목<br>
+          2. 핵심 요약<br>
+          3. 상세 내용<br>
+          4. 주의사항<br>
+          5. 유저가 해야 할 행동<br>
+          6. 필요한 경우 레퍼럴 링크 안내
+        </div>
+
+        <div class="grid-2">
+          <div class="box">
+            <div class="box-title">정보형 제목</div>
+            - [게임명] 신규 쿠폰 코드 및 입력 방법 안내<br>
+            - [게임명] 이번 이벤트 핵심 보상 정리<br>
+            - [게임명] 초보자가 먼저 해야 할 것 정리<br>
+            - [게임명] 신규 업데이트 핵심 정리
+          </div>
+
+          <div class="box">
+            <div class="box-title">전환형 제목</div>
+            - [게임명] 패키지 구매 전 확인해야 할 내용<br>
+            - [게임명] 이벤트 점수 올리는 방법<br>
+            - [게임명] 초반 성장 루트 정리<br>
+            - [게임명] 보상 효율 비교 정리
+          </div>
+        </div>
+
+        <div class="white-box">
+          글은 길게 쓰는 것보다 유저가 빠르게 이해할 수 있도록 구분해서 작성하는 것이 중요합니다.
+          제목, 요약, 주의사항이 잘 보이면 조회수와 체류 시간이 좋아질 가능성이 높습니다.
+        </div>
+
+        <div class="left-box">
+          <strong>작성 팁</strong><br>
+          처음부터 완벽한 글을 쓰려고 하지 않아도 됩니다.
+          공지 번역, 쿠폰 안내, 간단한 이벤트 요약부터 시작해도 충분합니다.
+          중요한 것은 꾸준히 쌓는 것입니다.
+        </div>
+      </div>
+    </div>
+
+    <div class="page-bottom">
+      좋은 글은 길이가 아니라 구조로 읽힙니다.
+    </div>
+  </section>
+
+  <!-- 6 PAGE -->
+  <section class="pdf-page">
+    <div>
+      <div class="page-header">
+        <div class="page-no">PAGE 06</div>
+        <h2 class="page-title">GPT 활용법</h2>
+        <div class="page-subtitle">셀러는 모든 글을 직접 처음부터 작성할 필요가 없습니다.</div>
+      </div>
+
+      <div class="page-body">
+        <div class="card">
+          <div class="card-title">GPT로 할 수 있는 작업</div>
+          <div class="card-body">
+            - 영어 공지 한국어 번역<br>
+            - 카페 공지 스타일 정리<br>
+            - 초보자용 쉬운 설명 만들기<br>
+            - 제목 후보 10개 만들기<br>
+            - 댓글 답변 문구 만들기<br>
+            - 이벤트 핵심 요약 만들기<br>
+            - 긴 글을 짧은 공지로 압축하기<br>
+            - 레퍼럴 안내 문구 자연스럽게 다듬기<br>
+            - 유저 질문을 FAQ로 정리하기
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div class="box mini">
+            <div class="box-title">공지 정리</div>
+            아래 영어 공지를 한국 유저가 이해하기 쉽게 카페 공지 스타일로 정리해줘.
+          </div>
+
+          <div class="box mini">
+            <div class="box-title">광고 완화</div>
+            이 내용을 너무 광고처럼 보이지 않게 자연스러운 커뮤니티 안내문으로 바꿔줘.
+          </div>
+
+          <div class="box mini">
+            <div class="box-title">요약</div>
+            이 게임 이벤트 내용을 초보자도 이해할 수 있게 핵심만 요약해줘.
+          </div>
+
+          <div class="box mini">
+            <div class="box-title">제목 추천</div>
+            조회수가 잘 나올 만한 제목 10개 추천해줘.
+          </div>
+
+          <div class="box mini">
+            <div class="box-title">링크 문구</div>
+            이 글 마지막에 레퍼럴 링크 안내 문구를 너무 광고처럼 보이지 않게 자연스럽게 넣어줘.
+          </div>
+
+          <div class="box mini">
+            <div class="box-title">댓글 답변</div>
+            유저가 문의했을 때 정중하고 확정적이지 않은 답변 문구를 만들어줘.
+          </div>
+        </div>
+
+        <div class="left-box">
+          GPT를 사용할 때는 결과물을 그대로 올리기보다, 게임명, 서버 상황, 이벤트 기간, 실제 확인된 내용을 한 번 더 확인한 뒤 게시해야 합니다.
+        </div>
+      </div>
+    </div>
+
+    <div class="page-bottom">
+      GPT는 글을 대신 써주는 도구가 아니라, 운영자의 시간을 줄여주는 도구입니다.
+    </div>
+  </section>
+
+  <!-- 7 PAGE -->
+  <section class="pdf-page">
+    <div>
+      <div class="page-header">
+        <div class="page-no">PAGE 07</div>
+        <h2 class="page-title">레퍼럴 링크 안내 문구</h2>
+        <div class="page-subtitle">링크는 글의 중심이 아니라 마지막 참고 안내로 넣는 것이 좋습니다.</div>
+      </div>
+
+      <div class="page-body">
+        <div class="white-box">
+          레퍼럴 링크는 글의 중심이 아니라, 글의 마지막에 참고 안내 형태로 넣는 것이 좋습니다.
+          너무 노골적인 광고 문구는 유저 반감을 만들 수 있습니다.
+        </div>
+
+        <div class="box">
+          <div class="box-title">기본 안내 문구</div>
+          추가로 충전 서비스를 이용하실 경우, 게임명과 서버 정보, 캐릭터 정보를 반드시 확인한 뒤 진행해 주세요.
+          이용 전 상품명, 서버, 캐릭터 정보, 결제 금액을 확인하시는 것을 권장드립니다.
+        </div>
+
+        <div class="box">
+          <div class="box-title">커뮤니티형 안내 문구</div>
+          해당 링크는 커뮤니티 운영자가 공유하는 이용 링크입니다.
+          충전 전에는 상품명, 서버, 캐릭터 정보, 결제 금액을 반드시 확인해 주세요.
+        </div>
+
+        <div class="box">
+          <div class="box-title">패키지 효율 글 하단 문구</div>
+          패키지 구매를 고려하시는 분들은 공식 가격과 보상 구성을 비교해보신 뒤 본인에게 가장 합리적인 방식으로 이용하시면 됩니다.
+        </div>
+
+        <div class="black-box">
+          정보 제공 80%, 레퍼럴 안내 20%의 비율을 유지하면 광고 반감은 줄이고 신뢰는 높일 수 있습니다.
+        </div>
+      </div>
+    </div>
+
+    <div class="page-bottom">
+      링크를 먼저 보여주면 광고가 되고, 정보를 먼저 제공하면 선택지가 됩니다.
+    </div>
+  </section>
+
+  <!-- 8 PAGE -->
+  <section class="pdf-page">
+    <div>
+      <div class="page-header">
+        <div class="page-no">PAGE 08</div>
+        <h2 class="page-title">댓글 응대와 금지 표현</h2>
+        <div class="page-subtitle">확인된 내용만 안내하고, 보장성 표현은 피해야 합니다.</div>
+      </div>
+
+      <div class="page-body">
+        <table>
+          <thead>
+            <tr>
+              <th>질문</th>
+              <th>답변 예시</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>이거 공식인가요?</td>
+              <td>해당 안내는 팬 커뮤니티에서 정리한 정보이며, 공식 공지와는 구분해서 확인해 주세요.</td>
+            </tr>
+            <tr>
+              <td>쿠폰 적용되나요?</td>
+              <td>쿠폰 적용 여부는 상품과 시점에 따라 달라질 수 있어, 이용 전 적용 여부를 확인해 주세요.</td>
+            </tr>
+            <tr>
+              <td>어떤 패키지가 좋나요?</td>
+              <td>목표가 성장인지, 이벤트 점수인지, 장비 강화인지에 따라 효율이 달라질 수 있습니다.</td>
+            </tr>
+            <tr>
+              <td>링크로 들어가면 혜택이 있나요?</td>
+              <td>링크를 통해 접속하면 커뮤니티 운영자에게 유입이 기록될 수 있습니다. 실제 조건은 이용 시점에 확인해 주세요.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <div class="grid-2">
+          <div class="danger-box">
+            <div class="box-title">금지 표현</div>
+            - 무조건 안전합니다.<br>
+            - 무조건 지급됩니다.<br>
+            - 공식 보장입니다.<br>
+            - 지금 안 하면 손해입니다.<br>
+            - 100% 최저가입니다.<br>
+            - 무조건 수익 납니다.<br>
+            - 누구나 바로 큰돈 벌 수 있습니다.<br>
+            - 문제 생겨도 바로 해결됩니다.
+          </div>
+
+          <div class="good-box">
+            <div class="box-title">권장 표현</div>
+            - 현재 확인된 내용 기준으로 안내드립니다.<br>
+            - 이용 전 상품명과 서버 정보를 꼭 확인해 주세요.<br>
+            - 조건이 합리적이라고 판단될 경우 이용하시면 됩니다.<br>
+            - 수익화까지는 시간이 필요할 수 있습니다.<br>
+            - 커뮤니티가 자리 잡을수록 레퍼럴 성과도 함께 커질 수 있습니다.
+          </div>
+        </div>
+
+        <div class="left-box">
+          댓글 응대에서 가장 중요한 기준은 확인된 내용만 안내하는 것입니다.
+          확정되지 않은 보상, 지급 여부, 수익 조건은 보장하면 안 됩니다.
+        </div>
+      </div>
+    </div>
+
+    <div class="page-bottom">
+      신뢰를 지키는 답변이 장기적으로 수익을 지키는 답변입니다.
+    </div>
+  </section>
+
+  <!-- 9 PAGE -->
+  <section class="pdf-page">
+    <div>
+      <div class="page-header">
+        <div class="page-no">PAGE 09</div>
+        <h2 class="page-title">게임별 선택 기준</h2>
+        <div class="page-subtitle">루트바 추천 게임 중 본인 스타일과 맞는 게임부터 시작합니다.</div>
+      </div>
+
+      <div class="page-body">
+        <div class="box">
+          루트바 측에서는 트래픽 수익률이 높거나, 한국 유저풀이 있는 게임들을 추천해주었고 해당 게임들의 커뮤니티화를 요청했습니다.
+        </div>
+
+        <div class="grid-2">
+          <div class="box mini">
+            Dark War Survival<br>
+            Pokémon GO<br>
+            Whiteout Survival<br>
+            Last War: Survival<br>
+            Last Z: Survival Shooter<br>
+            AFK Journey<br>
+            Delta Force
+          </div>
+
+          <div class="box mini">
+            Mobile Legends: Bang Bang<br>
+            Heartopia<br>
+            FC 26<br>
+            GODDESS OF VICTORY: NIKKE<br>
+            Seven Deadly Sins: Origin<br>
+            Limbus Company
+          </div>
+        </div>
+
+        <div class="left-box">
+          이 모든 게임을 혼자서 동시에 운영하는 것은 현실적으로 어렵습니다.
+          따라서 이 중에서 본인의 성향과 맞는 게임을 선택하고, 해당 게임부터 커뮤니티화를 진행하는 것이 좋습니다.
+        </div>
+
+        <div class="box">
+          <div class="box-title">선택 기준</div>
+          - 내가 실제로 플레이하거나 이해할 수 있는 게임인가<br>
+          - 한국 유저가 검색할 가능성이 있는가<br>
+          - 쿠폰, 이벤트, 공략 콘텐츠가 꾸준히 나오는가<br>
+          - 기존 커뮤니티가 너무 강하지 않은가<br>
+          - 내가 3~5개월 이상 꾸준히 운영할 수 있는가
+        </div>
+      </div>
+    </div>
+
+    <div class="page-bottom">
+      모든 게임을 다 하려고 하지 말고, 내가 오래 운영할 수 있는 게임부터 시작해야 합니다.
+    </div>
+  </section>
+
+  <!-- 10 PAGE -->
+  <section class="pdf-page">
+    <div>
+      <div class="page-header">
+        <div class="page-no">PAGE 10</div>
+        <h2 class="page-title">킹샷 운영 경험</h2>
+        <div class="page-subtitle">공식 커뮤니티를 이기는 것이 아니라 일부 유저를 확보하는 전략입니다.</div>
+      </div>
+
+      <div class="page-body">
+        <div class="card">
+          <div class="card-title">킹샷은 직접 커뮤니티화를 진행하며 경험을 쌓은 사례입니다</div>
+          <div class="card-body">
+            킹샷은 신작 게임 단계에서 커뮤니티를 선점했고, 현재는 공식 카페보다 높은 활동성을 보유하게 되었습니다.
+            하지만 중요한 점은 게임사가 직접 운영하는 공식 커뮤니티를 이기려고 접근하면 안 된다는 것입니다.
+            <br><br>
+            공식 커뮤니티 전체를 이기겠다는 관점보다는, 그 유저들 중 10~20% 정도만 확보한다는 생각으로 운영 방향을 잡는 것이 현실적입니다.
+            실제로 저 역시 그런 방향으로 접근했기 때문에 커뮤니티가 자리 잡을 수 있었습니다.
+            <br><br>
+            즉, 목표는 공식 커뮤니티를 대체하는 것이 아니라, 유저들이 추가로 참고하고 소통할 수 있는 서브 커뮤니티를 만드는 것입니다.
+          </div>
+        </div>
+
+        <div class="left-box">
+          <strong>핵심 경험</strong><br>
+          처음부터 대형 커뮤니티를 만들겠다는 생각보다, 공식 커뮤니티에 있는 유저 중 일부만 확보한다는 관점이 현실적입니다.
+        </div>
+
+        <div class="black-box">
+          공식 커뮤니티를 이기려는 순간 방향이 틀어질 수 있습니다.
+          중요한 것은 유저가 추가로 머무를 이유를 만드는 것입니다.
+        </div>
+      </div>
+    </div>
+
+    <div class="page-bottom">
+      킹샷 사례는 공식 커뮤니티를 대체한 것이 아니라, 서브 커뮤니티로 자리 잡은 경험입니다.
+    </div>
+  </section>
+
+  <!-- 11 PAGE -->
+  <section class="pdf-page">
+    <div>
+      <div class="page-header">
+        <div class="page-no">PAGE 11</div>
+        <h2 class="page-title">타일서바이벌과 신작게임 운영 방향</h2>
+        <div class="page-subtitle">게임마다 고점과 운영 방식은 다르게 봐야 합니다.</div>
+      </div>
+
+      <div class="page-body">
+        <div class="card">
+          <div class="card-title">타일서바이벌 운영 경험</div>
+          <div class="card-body">
+            타일서바이벌은 루트바 측에서 추천한 게임으로, 러시아 등 유럽 유저풀을 보유하고 있는 게임입니다.
+            <br><br>
+            한국 커뮤니티가 완전히 적은 편은 아니지만, 한국 시장 기준으로는 고점이 높지 않다고 판단했습니다.
+            <br><br>
+            따라서 타일서바이벌은 대형 커뮤니티로 키우기보다는, 쿠폰, 이벤트, 영웅 정보, 초보자 공략 등을 빠르게 정리해 검색 유입과 기본 유저 반응을 확보하는 방식으로 운영하는 것이 적합합니다.
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title">신작 게임 커뮤니티 운영 방향</div>
+          <div class="card-body">
+            본인이 더 많은 수익을 올리고 싶다면, 지속적으로 신작 게임 커뮤니티를 생성하며 유저풀을 만드는 것이 중요합니다.
+            <br><br>
+            신작 게임은 아직 대형 커뮤니티가 자리 잡기 전이기 때문에, 초기에 쿠폰, 공략, 이벤트 정보를 선점하면 유저들이 특정 커뮤니티로 집중될 가능성이 있습니다.
+            <br><br>
+            초보자는 기본 기능도 궁금해하고, 중급자는 이벤트 효율을 궁금해하며, 과금 유저는 패키지 효율과 보상 구조를 궁금해합니다.
+          </div>
+        </div>
+
+        <div class="black-box">
+          신작 게임은 어떤 콘텐츠를 올려야 할지 고민되지만, 실제로는 게임 안의 모든 기능과 이벤트가 콘텐츠가 됩니다.
+        </div>
+      </div>
+    </div>
+
+    <div class="page-bottom">
+      타일서바이벌은 경험으로 판단하고, 신작게임은 계속 시도하며 유저풀을 만들어야 합니다.
+    </div>
+  </section>
+
+  <!-- 12 PAGE -->
+  <section class="pdf-page">
+    <div>
+      <div class="page-header">
+        <div class="page-no">PAGE 12</div>
+        <h2 class="page-title">운영자의 캐릭터와 장기 운영</h2>
+        <div class="page-subtitle">커뮤니티는 정보만으로 성장하지 않습니다.</div>
+      </div>
+
+      <div class="page-body">
+        <div class="card">
+          <div class="card-title">운영자의 캐릭터가 중요한 이유</div>
+          <div class="card-body">
+            어떤 게임 커뮤니티를 운영하더라도 카페장 또는 운영자의 캐릭터가 확실한 것이 중요합니다.
+            <br><br>
+            단순히 정보만 올리는 커뮤니티보다, 운영자의 말투, 판단 기준, 운영 방식, 유저 응대 스타일이 분명한 커뮤니티가 더 오래 살아남습니다.
+            <br><br>
+            유저들은 정보만 보는 것이 아니라, 이 운영자가 계속 관리하고 있다는 신뢰를 보고 커뮤니티에 남습니다.
+            <br><br>
+            따라서 커뮤니티 운영자는 단순 게시글 작성자가 아니라, 해당 게임 유저들이 모일 수 있는 분위기를 만드는 사람이라고 생각해야 합니다.
+          </div>
+        </div>
+
+        <div class="box">
+          커뮤니티 운영은 단기간에 성과가 나오기 어렵습니다.
+          최소 5개월은 성과가 없다고 생각하고 진행하는 것이 마음이 편합니다.
+          처음부터 큰 수익을 기대하기보다, 조회수, 댓글, 문의, 검색 유입, 재방문 유저가 조금씩 생기는 과정을 확인해야 합니다.
+        </div>
+
+        <div class="black-box">
+          하지만 단 1달러, 10달러라도 수익화가 되는 순간 커뮤니티 운영은 가속화됩니다.
+          작은 수익이 발생하면 이 방향이 실제로 돈이 될 수 있다는 확신이 생기고, 그때부터 콘텐츠 생산 속도와 운영 집중도가 달라집니다.
+        </div>
+      </div>
+    </div>
+
+    <div class="page-bottom">
+      커뮤니티는 한 번에 만들어지는 것이 아니라, 반복되는 글 작성과 작은 반응들이 쌓이면서 만들어집니다.
+    </div>
+  </section>
+
+  <!-- 13 PAGE -->
+  <section class="pdf-page">
+    <div>
+      <div class="page-header">
+        <div class="page-no">PAGE 13</div>
+        <h2 class="page-title">실제 운영 경험과 수익화 사례</h2>
+        <div class="page-subtitle">처음부터 수익화를 목표로 시작한 것은 아니었습니다.</div>
+      </div>
+
+      <div class="page-body">
+        <div class="card">
+          <div class="card-title">시작은 킹샷 커뮤니티였습니다</div>
+          <div class="card-body">
+            제 첫 시작은 킹샷이었습니다.
+            처음부터 레퍼럴 수익화를 목표로 시작한 것은 아니었습니다.
+            당시에는 GPT를 활용할 생각도 하지 못했고, 단순히 게임을 하면서 겸사겸사 네이버 카페나 한번 해볼까라는 생각으로 시작했습니다.
+            <br><br>
+            그렇게 꾸준히 3~4개월 정도 운영하니 가입자가 100명, 1,000명, 4,000명으로 늘어났고, 한때는 하루에 200~300명씩 유입되기도 했습니다.
+            현재는 하루 50명 이상, 100명 미만 수준으로 꾸준히 유입되고 있습니다.
+            <br><br>
+            요즘 모바일 게임은 한 번 시작하면 1~2개월만 하는 것이 아니라, 3년에서 5년 이상 장기적으로 플레이하는 유저도 많습니다.
+            그렇기 때문에 게임 커뮤니티는 충분히 해볼 만한 영역이라고 생각합니다.
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-title">루트바를 알게 된 시점</div>
+          <div class="card-body">
+            저도 게임을 시작한 후 3~4개월 동안은 루트바의 존재도 몰랐습니다.
+            처음에는 그저 게임을 하면서 네이버 카페를 운영했고, 유저들이 모이기 시작하면서 이 회원들을 데리고 어떤 방식으로 수익화를 할 수 있을까를 고민하게 되었습니다.
+            <br><br>
+            네이버 카페 회원이 5,000명을 넘고, 10,000명에 가까워졌을 때 본격적으로 커뮤니티 기반 수익화에 대해 고민했고, 그 과정에서 루트바의 존재를 알게 되었습니다.
+            이후 바로 루트바와 연결을 진행했고, 그때부터 레퍼럴 수익화 구조를 만들기 시작했습니다.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="page-bottom">
+      제가 경험한 기준으로, 레퍼럴 수익화는 단순 링크 홍보가 아니라 커뮤니티를 먼저 만들었을 때 가능성이 커졌습니다.
+    </div>
+  </section>
+
+  <!-- 14 PAGE -->
+  <section class="pdf-page">
+    <div>
+      <div class="page-header">
+        <div class="page-no">PAGE 14</div>
+        <h2 class="page-title">수익화 전환과 현실적인 기준</h2>
+        <div class="page-subtitle">주 500달러는 시간과 꾸준함으로 도전해볼 수 있는 현실적인 목표입니다.</div>
+      </div>
+
+      <div class="page-body">
+        <div class="card">
+          <div class="card-title">수익화 전환이 생긴 시점</div>
+          <div class="card-body">
+            루트바와 연결을 진행한 후, 정확히 약 2개월 정도가 지나면서 전환율이 생기기 시작했습니다.
+            <br><br>
+            3~4개월째에는 주간 수익이 500달러를 돌파했습니다.
+            평균적으로는 주 1,000달러에서 2,000달러 수준을 보기도 했고, 한 주 최대 3,000달러까지도 본 적이 있습니다.
+            <br><br>
+            다만 그 이상을 안정적으로 만들기 위해서는 더 많은 시간과 운, 그리고 더 큰 유저풀이 필요하다고 생각합니다.
+            하지만 주 500달러 수준은 꾸준한 시간 투자와 노력만으로도 충분히 도전해볼 수 있는 구간이라고 생각합니다.
+          </div>
+        </div>
+
+        <div class="left-box">
+          <strong>주 500달러 기준</strong><br>
+          주 500달러는 4주 기준으로 약 2,000달러입니다.
+          환율에 따라 달라질 수 있지만, 월 추가수익으로 약 300만 원 전후를 기대할 수 있는 수준입니다.
+          <br><br>
+          이 정도 수익은 한 번에 만들어지는 것이 아니라, 커뮤니티 운영, 콘텐츠 누적, 유저 신뢰, 레퍼럴 안내가 함께 쌓이면서 만들어집니다.
+        </div>
+
+        <table>
+          <thead>
+            <tr>
+              <th>기간</th>
+              <th>실행 내용</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1주차</td>
+              <td>게임 1~2개 선정, 기본 공지/쿠폰/초보자 글 작성</td>
+            </tr>
+            <tr>
+              <td>2주차</td>
+              <td>이벤트 공략, 패키지 정보, 업데이트 번역 글 작성</td>
+            </tr>
+            <tr>
+              <td>3주차</td>
+              <td>댓글 반응 확인, 자주 묻는 질문 정리, 레퍼럴 안내 문구 테스트</td>
+            </tr>
+            <tr>
+              <td>4주차</td>
+              <td>조회수 높은 글 분석, 반복 콘텐츠 선정, 다음 달 운영 방향 정리</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="page-bottom">
+      처음 30일의 목표는 매출이 아니라 유저 반응 확인입니다.
+    </div>
+  </section>
+
+  <!-- 15 PAGE -->
+  <section class="pdf-page">
+    <div>
+      <div class="page-header">
+        <div class="page-no">PAGE 15</div>
+        <h2 class="page-title">셀러 운영 핵심 요약</h2>
+        <div class="page-subtitle">레퍼럴 수익화의 핵심은 링크가 아니라 커뮤니티입니다.</div>
+      </div>
+
+      <div class="page-body">
+        <div class="box">
+          - 셀러는 단순 홍보자가 아니라 커뮤니티 운영자입니다.<br>
+          - 링크보다 먼저 유저가 필요한 정보를 제공해야 합니다.<br>
+          - GPT를 활용해 번역, 공지, 답변, 제목 작업 시간을 줄입니다.<br>
+          - 확인되지 않은 보상, 지급, 수익 조건은 보장하지 않습니다.<br>
+          - 공식 커뮤니티를 이기려 하기보다, 일부 유저를 확보한다는 관점으로 접근합니다.<br>
+          - 커뮤니티 운영자의 캐릭터와 지속성이 중요합니다.<br>
+          - 최소 5개월은 성과가 없다고 생각하고 꾸준히 운영하는 것이 좋습니다.<br>
+          - 작은 수익이라도 발생하는 순간 운영은 가속화될 수 있습니다.<br>
+          - 레퍼럴 수익화의 핵심은 링크가 아니라 커뮤니티입니다.<br>
+          - 주 500달러 수준은 시간과 꾸준함으로 도전해볼 수 있는 현실적인 목표입니다.
+        </div>
+
+        <div class="black-box center">
+          루트바 레퍼럴 운영의 핵심은 링크 홍보가 아니라, 게임 유저가 모이는 커뮤니티를 만드는 것입니다.
+        </div>
+
+        <div class="left-box">
+          <strong>마지막 기준</strong><br>
+          셀러가 처음부터 큰 수익을 만들기는 어렵습니다.
+          하지만 하나의 게임을 꾸준히 운영하고, 콘텐츠를 쌓고, 유저가 모이면 레퍼럴 수익화는 충분히 현실적인 구조가 될 수 있습니다.
+        </div>
+
+        <div class="quote center">
+          커뮤니티를 먼저 만들고,<br>
+          그다음 수익화를 연결한다.
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <div class="footer-note">
+        본 자료는 루트바 파트너 셀러 교육 및 커뮤니티 기반 레퍼럴 수익화 이해를 위한 내부 교육용 자료입니다.<br>
+        실제 레퍼럴 성과와 수익은 운영 방식, 유저풀, 게임 선택, 콘텐츠 지속성에 따라 달라질 수 있습니다.
+      </div>
+    </div>
+  </section>
+
+</div>
+</body>
+</html>
