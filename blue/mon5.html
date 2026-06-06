@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>사업 구조 효율화 및 별도 사업 분리 검토 보고서</title>
+  <style>
+    @page { size: A4; margin: 12mm; }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f3f4f6;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", Arial, sans-serif;
+      color: #1f2937;
+      line-height: 1.62;
+      word-break: keep-all;
+    }
+
+    .report {
+      max-width: 1020px;
+      margin: 34px auto;
+      padding: 42px;
+      background: #ffffff;
+      border-radius: 18px;
+      box-shadow: 0 12px 34px rgba(15, 23, 42, 0.08);
+    }
+
+    .cover {
+      padding-bottom: 22px;
+      border-bottom: 4px solid #111827;
+      margin-bottom: 24px;
+    }
+
+    .label {
+      display: inline-block;
+      padding: 6px 13px;
+      border-radius: 999px;
+      background: #111827;
+      color: #ffffff;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      margin-bottom: 14px;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      color: #111827;
+      font-size: 30px;
+      line-height: 1.32;
+      letter-spacing: -0.04em;
+    }
+
+    .subtitle {
+      margin: 0;
+      color: #4b5563;
+      font-size: 15.5px;
+    }
+
+    h2 {
+      margin: 30px 0 12px;
+      padding: 9px 12px;
+      color: #111827;
+      background: #f3f4f6;
+      border-left: 6px solid #111827;
+      font-size: 20px;
+      line-height: 1.35;
+      letter-spacing: -0.03em;
+      break-after: avoid;
+      page-break-after: avoid;
+    }
+
+    h3 {
+      margin: 22px 0 8px;
+      color: #111827;
+      font-size: 17px;
+      letter-spacing: -0.02em;
+      break-after: avoid;
+      page-break-after: avoid;
+    }
+
+    p { margin: 8px 0 12px; }
+
+    .summary-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 14px;
+      margin: 18px 0 22px;
+    }
+
+    .box,
+    .summary-box,
+    .point-box,
+    .warning-box,
+    .decision-box {
+      margin: 14px 0;
+      padding: 16px 18px;
+      border-radius: 13px;
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+
+    .summary-box {
+      border: 1px solid #bfdbfe;
+      background: #eff6ff;
+    }
+
+    .summary-box strong { color: #1d4ed8; }
+
+    .point-box {
+      border: 1px solid #dbeafe;
+      border-left: 5px solid #2563eb;
+      background: #f8fafc;
+    }
+
+    .warning-box {
+      border: 1px solid #fed7aa;
+      border-left: 5px solid #f59e0b;
+      background: #fffbeb;
+      color: #78350f;
+    }
+
+    .decision-box {
+      border: 1px solid #bbf7d0;
+      border-left: 5px solid #16a34a;
+      background: #f0fdf4;
+    }
+
+    .box {
+      border: 1px solid #e5e7eb;
+      background: #ffffff;
+    }
+
+    .mini-title {
+      display: block;
+      margin-bottom: 6px;
+      color: #111827;
+      font-weight: 800;
+    }
+
+    table {
+      width: 100%;
+      margin: 14px 0 22px;
+      border-collapse: collapse;
+      background: #ffffff;
+      font-size: 14px;
+      page-break-inside: auto;
+      break-inside: auto;
+    }
+
+    thead { display: table-header-group; }
+    tfoot { display: table-footer-group; }
+
+    tr {
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+
+    th,
+    td {
+      padding: 10px 11px;
+      border: 1px solid #d1d5db;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: #f3f4f6;
+      color: #111827;
+      font-weight: 800;
+    }
+
+    ul { margin: 8px 0 14px; padding-left: 21px; }
+    li { margin: 4px 0; }
+
+    .safe { color: #047857; font-weight: 800; }
+    .danger { color: #dc2626; font-weight: 800; }
+    .muted { color: #6b7280; }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+    }
+
+    .checklist td:first-child { width: 70px; text-align: center; font-weight: 800; }
+
+    .footer {
+      margin-top: 26px;
+      padding-top: 14px;
+      border-top: 1px solid #e5e7eb;
+      color: #6b7280;
+      font-size: 12.5px;
+    }
+
+    .soft-break {
+      break-before: page;
+      page-break-before: always;
+    }
+
+    @media print {
+      body {
+        background: #ffffff;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+      }
+
+      .report {
+        max-width: none;
+        margin: 0;
+        padding: 0;
+        border-radius: 0;
+        box-shadow: none;
+      }
+
+      h1 { font-size: 25px; }
+      h2 { font-size: 17px; margin: 22px 0 10px; padding: 7px 10px; }
+      h3 { font-size: 15.5px; margin: 16px 0 7px; }
+      p { margin: 6px 0 9px; }
+
+      .cover { margin-bottom: 16px; padding-bottom: 16px; }
+      .subtitle { font-size: 13px; }
+
+      .summary-grid,
+      .two-col { gap: 10px; }
+
+      .box,
+      .summary-box,
+      .point-box,
+      .warning-box,
+      .decision-box {
+        padding: 11px 13px;
+        margin: 10px 0;
+        border-radius: 10px;
+      }
+
+      table {
+        font-size: 11.2px;
+        margin: 10px 0 16px;
+      }
+
+      th,
+      td { padding: 6px 7px; }
+
+      ul { margin: 5px 0 10px; padding-left: 18px; }
+      li { margin: 2px 0; }
+
+      .footer { font-size: 10.8px; margin-top: 18px; padding-top: 10px; }
+    }
+
+    @media (max-width: 760px) {
+      .report { margin: 0; padding: 22px 16px; border-radius: 0; }
+      .summary-grid,
+      .two-col { grid-template-columns: 1fr; }
+      h1 { font-size: 24px; }
+      h2 { font-size: 19px; }
+      table { font-size: 13px; }
+      th, td { padding: 9px 8px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="report">
+    <header class="cover">
+      <div class="label">검토 보고서</div>
+      <h1>사업 구조 효율화 및 별도 사업 분리 검토 결론</h1>
+      <p class="subtitle">핵심 사업 집중, 관리성 사업 분리, 별도 수익 구조 확보를 위한 실행 검토 자료</p>
+    </header>
+
+    <section class="summary-grid">
+      <div class="summary-box">
+        <span class="mini-title">핵심 결론</span>
+        <p>
+          사업법인에는 본연의 핵심 사업만 남기고, 청소용역·경비용역·임대업 등 비핵심 또는 관리성 사업은
+          별도 법인, 별도 사업자, 외부 협력 구조로 분리하는 방향이 적합하다.
+        </p>
+        <p>
+          이를 통해 기존 직원들은 <strong>영업, 고객관리, 신규 사업매출 창출, 핵심 사업 성장</strong>에 집중할 수 있다.
+        </p>
+      </div>
+
+      <div class="decision-box">
+        <span class="mini-title">운영 원칙</span>
+        <p>
+          회사가 모든 업무를 직접 떠안는 구조가 아니라, 핵심 사업은 내부에 남기고 반복 관리 업무는 분리하여
+          비용·책임·손익을 명확히 구분하는 구조가 필요하다.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>1. 기본 방향</h2>
+      <p>
+        현재 사업법인은 핵심 사업과 부수 사업이 혼재되어 있을 가능성이 있다. 이 경우 직원들의 업무 집중도가 떨어지고,
+        관리비용과 지출 구조가 복잡해질 수 있다.
+      </p>
+      <div class="point-box">
+        <span class="mini-title">핵심 원칙</span>
+        사업법인은 본업과 매출 확대에 집중하고, 반복 관리 업무나 용역성 지출 구조는 별도 법인 또는 별도 사업으로 분리한다.
+      </div>
+    </section>
+
+    <section class="soft-break">
+  <h2>2. 본연의 업무 정의</h2>
+      <p>본연의 업무란 단순 관리 업무가 아니라 회사의 성장과 직접 연결되는 업무를 의미한다.</p>
+      <table>
+        <thead>
+          <tr>
+            <th>구분</th>
+            <th>본연의 업무 내용</th>
+            <th>기대 효과</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>영업</td>
+            <td>기존 고객 관리, 신규 고객 확보, 계약 확대</td>
+            <td>직접적인 매출 증가</td>
+          </tr>
+          <tr>
+            <td>추가 사업매출</td>
+            <td>통신 제휴, B2B 상품 연계, 신규 서비스 제안</td>
+            <td>사업 확장과 수익 다변화</td>
+          </tr>
+          <tr>
+            <td>고객관리</td>
+            <td>기존 거래처 유지, 재계약, 추가 판매 연결</td>
+            <td>반복 매출 확보</td>
+          </tr>
+          <tr>
+            <td>핵심 사업 운영</td>
+            <td>회사의 주요 매출 사업 관리 및 개선</td>
+            <td>조직 역량 집중</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>3. 분리 검토 대상 사업</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>사업 구분</th>
+            <th>분리 방향</th>
+            <th>검토 의견</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>청소용역</td>
+            <td>별도 법인 또는 외부 협력 사업 구조</td>
+            <td>
+              전문 업체와 협력하거나 신뢰 가능한 인물을 중심으로 별도 사업화하는 방식이 가능하다.
+              직접 고용과 직접 운영을 최소화하면 관리 부담과 고정비를 줄일 수 있다.
+            </td>
+          </tr>
+          <tr>
+            <td>경비용역</td>
+            <td>직접 계약 또는 별도 법인 검토</td>
+            <td>
+              직접 계약 구조로 진행될 가능성이 높다. 인건비, 보험, 관리책임, 계약책임을 명확히 분리해야 한다.
+              경비업 관련 허가 요건이 필요한지 별도 확인이 필요하다.
+            </td>
+          </tr>
+          <tr>
+            <td>임대업</td>
+            <td>별도 사업 또는 자산관리 구조로 분리</td>
+            <td>
+              본업과 성격이 다르므로 핵심 사업법인에 혼재시키기보다 별도 관리 구조로 두는 것이 수익성과 비용 구조를 파악하기 쉽다.
+            </td>
+          </tr>
+          <tr>
+            <td>통신 제휴사업</td>
+            <td>초기에는 기존 법인 내 테스트, 이후 분리 검토</td>
+            <td>
+              초기에는 기존 브랜드와 고객 접점을 활용해 테스트하고, 수익성과 반복성이 확인되면 별도 사업부 또는 별도 법인으로 분리한다.
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>4. 직접 계약·외부 협력·별도 법인 비교</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>구분</th>
+            <th>장점</th>
+            <th>단점</th>
+            <th>적합 상황</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>직접 계약</td>
+            <td>수익 구조와 고객 관계를 직접 확보할 수 있다.</td>
+            <td>인건비, 4대보험, 보험, 민원 대응, 계약 불이행 리스크가 발생한다.</td>
+            <td>수익성이 검증되고 직접 관리 여력이 있을 때</td>
+          </tr>
+          <tr>
+            <td>외부 협력 계약</td>
+            <td>직접 지출과 관리 부담을 줄일 수 있고 초기 테스트에 유리하다.</td>
+            <td>서비스 품질과 고객 응대 품질을 완전히 통제하기 어렵다.</td>
+            <td>청소용역, 통신 제휴처럼 초기 검증이 필요한 경우</td>
+          </tr>
+          <tr>
+            <td>별도 법인 운영</td>
+            <td>사업별 손익과 리스크를 명확히 구분할 수 있다.</td>
+            <td>별도 회계, 세무, 운영 인력, 관리비가 발생한다.</td>
+            <td>반복 매출과 전담 운영자가 확보된 경우</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>5. 당사의 지출 이슈 최소화</h2>
+      <p>
+        본 구조의 중요한 목적 중 하나는 당사의 지출 이슈를 최소화하는 것이다. 청소, 경비, 임대, 기타 관리성 사업을
+        기존 사업법인 안에서 모두 직접 처리하면 인건비와 관리비가 증가하고 직원들의 업무 집중도가 낮아질 수 있다.
+      </p>
+      <table>
+        <thead>
+          <tr>
+            <th>항목</th>
+            <th>기존 구조</th>
+            <th>분리 후 구조</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>인건비</td>
+            <td>사업법인 내부 비용으로 누적</td>
+            <td>별도 사업 또는 협력 구조에서 관리</td>
+          </tr>
+          <tr>
+            <td>관리 부담</td>
+            <td>기존 직원이 본업 외 업무까지 부담</td>
+            <td>전담 인물 또는 별도 사업 주체가 관리</td>
+          </tr>
+          <tr>
+            <td>수익성 파악</td>
+            <td>핵심 사업과 부수 사업 손익이 혼재</td>
+            <td>사업별 손익 구분 가능</td>
+          </tr>
+          <tr>
+            <td>직원 집중도</td>
+            <td>업무 분산 발생</td>
+            <td>영업 및 추가 매출 창출에 집중 가능</td>
+          </tr>
+          <tr>
+            <td>리스크</td>
+            <td>모든 리스크가 사업법인에 집중</td>
+            <td>사업별 리스크 분산 가능</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>6. 신뢰 가능한 인물 활용 전략</h2>
+      <div class="point-box">
+        <span class="mini-title">전략 방향</span>
+        회사가 모든 사업을 직접 떠안는 구조가 아니라, 신뢰 가능한 인물에게 사업 운영 역할을 부여하고
+        당사는 고객 연결, 초기 기획, 관리 기준, 수익 구조 설계를 담당하는 방식이 효율적이다.
+      </div>
+      <table>
+        <thead>
+          <tr>
+            <th>활용 대상</th>
+            <th>역할</th>
+            <th>당사와의 관계</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>청소용역 운영자</td>
+            <td>현장 인력 관리, 일정 관리, 서비스 품질 관리</td>
+            <td>협력업체, 별도 사업자, 공동사업 형태 가능</td>
+          </tr>
+          <tr>
+            <td>경비용역 운영자</td>
+            <td>인력 배치, 계약 관리, 고객 대응</td>
+            <td>직접 계약 또는 별도 법인 운영 검토</td>
+          </tr>
+          <tr>
+            <td>임대관리 담당자</td>
+            <td>임차인 관리, 계약 관리, 공실 관리</td>
+            <td>별도 자산관리 또는 위탁관리 구조 가능</td>
+          </tr>
+          <tr>
+            <td>통신 제휴 담당자</td>
+            <td>가입자 연결, 상담 접수, 제휴 대리점 관리</td>
+            <td>초기 내부 테스트 후 별도 사업화 가능</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="soft-break">
+  <h2>7. 분리 전 반드시 확인해야 할 자료</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>구분</th>
+            <th>확인 자료</th>
+            <th>확인 목적</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>계약 구조</td>
+            <td>기존 용역계약서, 거래처 계약서, 견적서, 정산서</td>
+            <td>직접 계약인지, 소개·중개인지, 외주 협력인지 구분</td>
+          </tr>
+          <tr>
+            <td>비용 구조</td>
+            <td>인건비, 4대보험, 보험료, 장비비, 차량비, 관리비</td>
+            <td>분리 시 실제 줄어드는 비용과 새로 생기는 비용 확인</td>
+          </tr>
+          <tr>
+            <td>매출 구조</td>
+            <td>월별 매출, 반복 매출, 계약 기간, 고객 수</td>
+            <td>별도 사업으로 운영할 만큼 반복성이 있는지 검토</td>
+          </tr>
+          <tr>
+            <td>인허가</td>
+            <td>경비업 허가, 위생·청소 관련 신고, 사업 목적</td>
+            <td>법적으로 별도 허가가 필요한지 확인</td>
+          </tr>
+          <tr>
+            <td>세무·회계</td>
+            <td>사업자등록 업종, 세금계산서 발행 구조, 비용 처리 기준</td>
+            <td>법인 내 운영과 별도 사업 운영의 세무 차이 확인</td>
+          </tr>
+          <tr>
+            <td>책임 범위</td>
+            <td>고객 민원, 사고, 손해배상, 보험 가입 여부</td>
+            <td>핵심 사업법인으로 리스크가 전이되지 않게 하기 위함</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="soft-break">
+      <h2>8. 당사가 얻게 되는 이득</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>이득 구분</th>
+            <th>내용</th>
+            <th>기대 효과</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>운영 효율화</td>
+            <td>사업법인에는 핵심 사업만 남기고 부수 사업은 분리한다.</td>
+            <td>직원들이 본연의 업무에 집중할 수 있다.</td>
+          </tr>
+          <tr>
+            <td>지출 절감</td>
+            <td>청소, 경비, 관리성 업무를 내부에서 모두 부담하지 않고 별도 구조로 운영한다.</td>
+            <td>인건비, 관리비, 불필요한 고정비를 줄일 수 있다.</td>
+          </tr>
+          <tr>
+            <td>신규 수익 창출</td>
+            <td>청소용역, 경비용역, 임대관리, 통신 제휴 등에서 별도 수익을 만들 수 있다.</td>
+            <td>본업 외 추가 매출원이 생긴다.</td>
+          </tr>
+          <tr>
+            <td>리스크 분산</td>
+            <td>모든 사업 리스크를 하나의 법인에 집중시키지 않는다.</td>
+            <td>사업 실패나 민원 발생 시 핵심 사업법인의 부담을 줄일 수 있다.</td>
+          </tr>
+          <tr>
+            <td>사업별 손익 파악</td>
+            <td>각 사업을 별도 구조로 관리하면 매출, 비용, 이익을 명확히 볼 수 있다.</td>
+            <td>돈이 되는 사업과 정리할 사업을 구분할 수 있다.</td>
+          </tr>
+          <tr>
+            <td>조직 집중도 상승</td>
+            <td>기존 직원들은 영업, 고객관리, 추가 사업매출에 집중한다.</td>
+            <td>핵심 사업의 성장 속도를 높일 수 있다.</td>
+          </tr>
+          <tr>
+            <td>신뢰 인물 기반 확장</td>
+            <td>검증된 인물에게 사업 운영을 맡기고 당사는 기획과 연결 구조를 담당한다.</td>
+            <td>적은 내부 인력으로 여러 사업을 동시에 진행할 수 있다.</td>
+          </tr>
+          <tr>
+            <td>법인 현금흐름 개선</td>
+            <td>임원 급여 조정과 비용 구조 개선을 통해 법인에 유보되는 현금을 늘릴 수 있다.</td>
+            <td>신규사업 투자, 차입금 상환, 배당 재원 확보가 가능하다.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>9. 실행 순서</h2>
+      <table class="checklist">
+        <thead>
+          <tr>
+            <th>순서</th>
+            <th>실행 항목</th>
+            <th>목적</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>기존 사업법인에 남길 핵심 업무와 분리할 업무를 구분한다.</td>
+            <td>사업 구조 정리</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>청소, 경비, 임대, 통신 제휴별 매출과 비용을 분리 집계한다.</td>
+            <td>사업별 손익 확인</td>
+          </tr>
+          <tr>
+            <td>3</td>
+            <td>직접 계약이 필요한 사업과 외부 협력이 가능한 사업을 나눈다.</td>
+            <td>책임 범위 조정</td>
+          </tr>
+          <tr>
+            <td>4</td>
+            <td>경비용역 등 인허가가 필요한 사업은 법무·행정 요건을 확인한다.</td>
+            <td>법적 리스크 점검</td>
+          </tr>
+          <tr>
+            <td>5</td>
+            <td>신뢰 가능한 운영자를 선정하고 역할과 정산 기준을 문서화한다.</td>
+            <td>운영 안정성 확보</td>
+          </tr>
+          <tr>
+            <td>6</td>
+            <td>3~6개월 테스트 후 반복 매출과 순이익이 확인되면 분리한다.</td>
+            <td>무리한 법인 분리 방지</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section>
+      <h2>10. 최종 결론</h2>
+      <div class="summary-box">
+        <p>
+          당사는 핵심 사업만 사업법인에 남기고, 청소용역, 경비용역, 임대업, 통신 제휴사업 등은
+          별도 법인 또는 별도 사업 구조로 분리하는 방향이 적합하다.
+        </p>
+        <p>
+          이를 통해 기존 직원들은 본연의 업무인 <strong>영업, 고객관리, 신규 사업매출 창출</strong>에 집중할 수 있다.
+          이는 단순한 비용 절감이 아니라 회사 전체의 운영 효율을 높이는 구조 개편이다.
+        </p>
+        <p>
+          청소용역은 외부 협력업체 또는 신뢰 가능한 인물을 활용한 별도 운영 구조를 검토할 수 있다.
+          반면 경비용역은 직접 계약 가능성이 높으므로, 지출 이슈와 관리 책임이 발생할 수 있어 별도 법인 또는 별도 책임 구조가 필요하다.
+        </p>
+        <p>
+          결과적으로 당사는 핵심 사업의 집중도 향상, 지출 구조 개선, 신규 수익원 확보, 리스크 분산,
+          신뢰 가능한 인물을 활용한 사업 확장이라는 이득을 얻을 수 있다.
+        </p>
+      </div>
+      <div class="decision-box">
+        <span class="mini-title">최종 방향</span>
+        <ul>
+          <li>사업법인에는 핵심 사업과 영업 기능을 남긴다.</li>
+          <li>청소용역은 외부 협력 또는 별도 사업 구조로 검토한다.</li>
+          <li>경비용역은 직접 계약 가능성이 높으므로 별도 법인 또는 별도 책임 구조를 검토한다.</li>
+          <li>임대업은 핵심 사업과 분리하여 별도 관리한다.</li>
+          <li>신뢰 가능한 인물들을 활용해 여러 사업을 병렬적으로 진행한다.</li>
+          <li>당사는 지출 이슈를 최소화하면서 신규 수익 구조를 확보한다.</li>
+        </ul>
+      </div>
+    </section>
+
+    <footer class="footer">
+      ※ 본 보고서는 내부 검토용 자료이며, 실제 법인 분리, 경비업 운영, 임대업 분리, 세무 처리는 전문가 검토 후 진행해야 한다.
+    </footer>
+  </main>
+</body>
+</html>

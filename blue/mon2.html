@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>상가·주택 임대 시나리오 검토 보고서</title>
+  <style>
+    @page {
+      size: A4;
+      margin: 14mm;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      background: #f3f4f6;
+      color: #1f2937;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Noto Sans KR", Arial, sans-serif;
+      line-height: 1.62;
+      font-size: 14.5px;
+    }
+
+    .report {
+      max-width: 980px;
+      margin: 36px auto;
+      padding: 46px 52px;
+      background: #ffffff;
+      border-radius: 18px;
+      box-shadow: 0 12px 34px rgba(15, 23, 42, 0.08);
+    }
+
+    .report-header {
+      padding-bottom: 20px;
+      margin-bottom: 24px;
+      border-bottom: 3px solid #111827;
+    }
+
+    .label {
+      display: inline-block;
+      margin-bottom: 12px;
+      padding: 6px 13px;
+      border-radius: 999px;
+      background: #111827;
+      color: #ffffff;
+      font-size: 12px;
+      font-weight: 800;
+      letter-spacing: 0.04em;
+    }
+
+    h1 {
+      margin: 0 0 10px;
+      color: #111827;
+      font-size: 30px;
+      line-height: 1.32;
+      letter-spacing: -0.03em;
+    }
+
+    .subtitle {
+      margin: 0;
+      color: #4b5563;
+      font-size: 15.5px;
+    }
+
+    h2 {
+      margin: 32px 0 14px;
+      padding-left: 12px;
+      border-left: 6px solid #111827;
+      color: #111827;
+      font-size: 21px;
+      line-height: 1.35;
+      letter-spacing: -0.02em;
+    }
+
+    h3 {
+      margin: 22px 0 10px;
+      color: #111827;
+      font-size: 17px;
+      line-height: 1.35;
+    }
+
+    p {
+      margin: 8px 0 12px;
+    }
+
+    .summary-box,
+    .point-box,
+    .warning-box,
+    .decision-box,
+    .info-box,
+    .note,
+    table,
+    .two-col,
+    .check-grid {
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+
+    .summary-box {
+      margin: 18px 0;
+      padding: 18px 20px;
+      border: 1px solid #dbeafe;
+      border-radius: 14px;
+      background: #eff6ff;
+    }
+
+    .point-box {
+      margin: 16px 0;
+      padding: 16px 18px;
+      border: 1px solid #c7d2fe;
+      border-radius: 14px;
+      background: #eef2ff;
+    }
+
+    .warning-box {
+      margin: 16px 0;
+      padding: 16px 18px;
+      border: 1px solid #fed7aa;
+      border-radius: 14px;
+      background: #fff7ed;
+    }
+
+    .decision-box {
+      margin: 18px 0;
+      padding: 18px 20px;
+      border: 1px solid #a7f3d0;
+      border-radius: 14px;
+      background: #ecfdf5;
+    }
+
+    .info-box {
+      margin: 16px 0;
+      padding: 16px 18px;
+      border: 1px solid #e5e7eb;
+      border-radius: 14px;
+      background: #f9fafb;
+    }
+
+    .note {
+      margin: 16px 0;
+      padding: 14px 16px;
+      border-left: 5px solid #f59e0b;
+      background: #fffbeb;
+      color: #78350f;
+    }
+
+    .strong {
+      font-weight: 800;
+      color: #111827;
+    }
+
+    .point {
+      color: #dc2626;
+      font-weight: 800;
+    }
+
+    .safe {
+      color: #047857;
+      font-weight: 800;
+    }
+
+    table {
+      width: 100%;
+      margin: 14px 0 20px;
+      border-collapse: collapse;
+      background: #ffffff;
+      font-size: 13.5px;
+    }
+
+    th,
+    td {
+      padding: 10px 11px;
+      border: 1px solid #e5e7eb;
+      text-align: left;
+      vertical-align: top;
+    }
+
+    th {
+      background: #f3f4f6;
+      color: #111827;
+      font-weight: 800;
+      text-align: center;
+    }
+
+    td:first-child {
+      font-weight: 700;
+      color: #111827;
+    }
+
+    ul {
+      margin: 8px 0 14px;
+      padding-left: 20px;
+    }
+
+    li {
+      margin: 4px 0;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 14px;
+      margin: 16px 0;
+    }
+
+    .check-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin: 14px 0;
+    }
+
+    .check-card {
+      padding: 14px 16px;
+      border: 1px solid #e5e7eb;
+      border-radius: 14px;
+      background: #f9fafb;
+      break-inside: avoid;
+      page-break-inside: avoid;
+    }
+
+    .check-card strong {
+      display: block;
+      margin-bottom: 6px;
+      color: #111827;
+      font-size: 14px;
+    }
+
+    .small {
+      color: #6b7280;
+      font-size: 12.3px;
+    }
+
+    .footer {
+      margin-top: 28px;
+      padding-top: 16px;
+      border-top: 1px solid #e5e7eb;
+      color: #6b7280;
+      font-size: 12px;
+    }
+
+    .new-page {
+      break-before: page;
+      page-break-before: always;
+    }
+
+    @media print {
+      body {
+        background: #ffffff;
+        -webkit-print-color-adjust: exact;
+        print-color-adjust: exact;
+        font-size: 12.2px;
+        line-height: 1.5;
+      }
+
+      .report {
+        margin: 0;
+        padding: 0;
+        max-width: none;
+        border-radius: 0;
+        box-shadow: none;
+      }
+
+      .report-header {
+        margin-bottom: 16px;
+        padding-bottom: 14px;
+      }
+
+      h1 {
+        font-size: 25px;
+      }
+
+      .subtitle {
+        font-size: 12.8px;
+      }
+
+      h2 {
+        margin: 22px 0 10px;
+        font-size: 17.5px;
+        break-after: avoid;
+        page-break-after: avoid;
+      }
+
+      h3 {
+        margin: 15px 0 7px;
+        font-size: 14.5px;
+        break-after: avoid;
+        page-break-after: avoid;
+      }
+
+      p {
+        margin: 5px 0 8px;
+      }
+
+      table {
+        margin: 9px 0 14px;
+        font-size: 10.7px;
+      }
+
+      th,
+      td {
+        padding: 6px 7px;
+      }
+
+      ul {
+        margin: 5px 0 9px;
+      }
+
+      li {
+        margin: 2px 0;
+      }
+
+      .summary-box,
+      .point-box,
+      .warning-box,
+      .decision-box,
+      .info-box,
+      .note {
+        margin: 9px 0;
+        padding: 11px 13px;
+      }
+
+      .two-col,
+      .check-grid {
+        gap: 8px;
+        margin: 9px 0;
+      }
+
+      .check-card {
+        padding: 10px 11px;
+      }
+
+      .new-page {
+        break-before: page;
+        page-break-before: always;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .report {
+        margin: 0;
+        padding: 26px 18px;
+        border-radius: 0;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+
+      .two-col,
+      .check-grid {
+        grid-template-columns: 1fr;
+      }
+
+      table {
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="report">
+    <header class="report-header">
+      <div class="label">임대 시나리오 검토 보고서</div>
+      <h1>상가·주택 임대계약 기간 및 임대료 조정 기준 정리</h1>
+      <p class="subtitle">
+        상가와 주택 임대계약의 기간, 임대료 조정, 공실 리스크, 투자수익률 검토 기준을 비교하고,
+        실제 임대 시나리오 검토에 필요한 자료를 정리한 보고서입니다.
+      </p>
+    </header>
+
+    <section class="summary-box">
+      <p>
+        상가와 주택은 모두 임대수익을 만들 수 있는 자산이지만,
+        <strong>계약기간, 임대료 조정 가능성, 임차인 보호 규정, 공실 리스크</strong>가 다르게 적용됩니다.
+      </p>
+      <p>
+        주택은 계약갱신청구권과 5% 인상 제한의 영향을 강하게 받는 안정형 자산에 가깝고,
+        상가는 입지와 업종이 맞을 경우 높은 수익률을 기대할 수 있으나 공실 기간과 임차인 교체 리스크를 반드시 반영해야 합니다.
+      </p>
+    </section>
+
+    <section class="decision-box">
+      <h3>핵심 판단</h3>
+      <p>
+        공격적인 수익률을 목표로 한다면 상가가 유리할 수 있으나,
+        상가는 임차인 교체 시 2~6개월 이상의 공실 가능성을 보수적으로 반영해야 합니다.
+      </p>
+      <p>
+        안정적인 현금흐름과 낮은 공실 리스크를 우선한다면 주택이 유리하지만,
+        갱신 시 임대료 인상폭은 제한될 수 있습니다.
+      </p>
+    </section>
+
+    <section>
+      <h2>1. 상가 임대계약 기준</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>구분</th>
+            <th>일반적인 기준</th>
+            <th>검토 포인트</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>일반 계약기간</td>
+            <td>보통 1년 또는 2년</td>
+            <td>소형 상가나 사무실은 1년 계약도 많고, 인테리어 비용이 들어가는 매장은 2년 이상으로 설정하는 경우가 많습니다.</td>
+          </tr>
+          <tr>
+            <td>장기 계약</td>
+            <td>3년~5년 가능</td>
+            <td>병원, 학원, 프랜차이즈, 대형 점포처럼 초기 시설투자비가 큰 업종은 장기 계약을 선호할 수 있습니다.</td>
+          </tr>
+          <tr>
+            <td>계약갱신요구권</td>
+            <td>최대 10년 가능성 고려</td>
+            <td>상가임대차보호법 적용 대상이면 임차인의 계약갱신요구권을 고려해야 합니다.</td>
+          </tr>
+          <tr>
+            <td>임대료 증액</td>
+            <td>보호법 적용 시 5% 한도 가능성</td>
+            <td>차임 또는 보증금 증액청구는 청구 당시 금액의 5%를 초과하지 못할 수 있습니다.</td>
+          </tr>
+          <tr>
+            <td>투자 수익률</td>
+            <td><span class="point">연 12% 목표 가능성 검토</span></td>
+            <td>12%는 법정 임대료 인상률이 아니라 투자수익률 목표로 봐야 합니다.</td>
+          </tr>
+          <tr>
+            <td>공실 기간</td>
+            <td><span class="point">2~6개월 공실 가능성 고려</span></td>
+            <td>상가는 업종 매칭, 인테리어, 권리금 협의, 계약 협상 때문에 공실 기간이 길어질 수 있습니다.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="point-box">
+        <h3>상가 임대 전략</h3>
+        <ul>
+          <li>기본 계약기간은 2년을 기준으로 검토합니다.</li>
+          <li>초기 임차인 검증이 필요한 경우 1년 계약도 가능합니다.</li>
+          <li>우량 임차인 또는 시설투자비가 큰 업종은 3년 이상 장기계약을 검토할 수 있습니다.</li>
+          <li>수익률은 높게 잡을 수 있지만, 공실 2~6개월 가능성을 반드시 반영해야 합니다.</li>
+          <li>상가임대차보호법 적용 여부에 따라 임대료 인상과 계약갱신 제한이 달라질 수 있습니다.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>2. 주택 임대계약 기준</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>구분</th>
+            <th>일반적인 기준</th>
+            <th>검토 포인트</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>일반 계약기간</td>
+            <td>보통 2년</td>
+            <td>주택 임대차는 실무적으로 2년 계약이 일반적이며, 임차인의 주거 안정성이 강하게 보호됩니다.</td>
+          </tr>
+          <tr>
+            <td>계약갱신청구권</td>
+            <td>임차인 1회 행사 가능</td>
+            <td>임차인이 계약갱신청구권을 행사하면 추가 2년 거주 가능성이 생기므로 총 4년 운용 시나리오를 고려해야 합니다.</td>
+          </tr>
+          <tr>
+            <td>임대료 증액</td>
+            <td><span class="point">5% 한도</span></td>
+            <td>계약갱신청구권 행사 시 차임 또는 보증금 증액은 5% 범위가 핵심 기준입니다.</td>
+          </tr>
+          <tr>
+            <td>수익 안정성</td>
+            <td><span class="safe">상가보다 안정적</span></td>
+            <td>주택은 수요가 비교적 안정적이고 공실 리스크가 상가보다 낮은 편입니다.</td>
+          </tr>
+          <tr>
+            <td>투자 성격</td>
+            <td>안정형 자산</td>
+            <td>높은 월수익률보다는 안정적인 임대수익과 자산가치 상승 가능성을 함께 보는 자산에 가깝습니다.</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="point-box">
+        <h3>주택 임대 전략</h3>
+        <ul>
+          <li>기본 계약기간은 2년을 기준으로 봅니다.</li>
+          <li>계약갱신청구권 행사 가능성을 고려해 총 4년 운용 시나리오를 잡는 것이 좋습니다.</li>
+          <li>갱신 시 임대료 인상은 5% 한도를 기준으로 보수적으로 계산합니다.</li>
+          <li>상가보다 수익률은 낮을 수 있지만 공실과 변동성은 상대적으로 낮습니다.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>3. 상가와 주택 비교 요약</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>항목</th>
+            <th>상가</th>
+            <th>주택</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>일반 계약기간</td>
+            <td>1년~2년, 경우에 따라 3년~5년</td>
+            <td>보통 2년</td>
+          </tr>
+          <tr>
+            <td>임차인 보호</td>
+            <td>상가임대차보호법 적용 시 최대 10년 갱신 가능성</td>
+            <td>계약갱신청구권 1회 행사 가능</td>
+          </tr>
+          <tr>
+            <td>임대료 인상</td>
+            <td>보호법 적용 시 5% 제한 가능성</td>
+            <td>계약갱신청구권 행사 시 5% 한도</td>
+          </tr>
+          <tr>
+            <td>수익률</td>
+            <td>입지와 업종에 따라 연 12% 목표 가능성 검토</td>
+            <td>상가보다 낮은 편이나 안정성 높음</td>
+          </tr>
+          <tr>
+            <td>공실 리스크</td>
+            <td>높음. 2~6개월 이상도 고려 필요</td>
+            <td>상대적으로 낮음</td>
+          </tr>
+          <tr>
+            <td>투자 성격</td>
+            <td>수익형·공격형</td>
+            <td>안정형·방어형</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="new-page">
+      <h2>4. 현재 임대 시나리오 검토에 필요한 자료</h2>
+
+      <p>
+        실제 임대 시나리오를 검토하려면 단순히 상가인지 주택인지보다,
+        <strong>매입가, 보증금, 월세, 공실기간, 대출이자, 세금, 관리비, 수선비, 법적 제한</strong>을 함께 봐야 합니다.
+        아래 자료가 있어야 실제 수익률과 리스크를 계산할 수 있습니다.
+      </p>
+
+      <div class="check-grid">
+        <div class="check-card">
+          <strong>1. 부동산 기본정보</strong>
+          주소, 건물 유형, 용도지역, 전용면적, 공용면적, 층수, 사용승인일, 건축물대장, 등기부등본
+        </div>
+        <div class="check-card">
+          <strong>2. 취득 관련 자료</strong>
+          매입가, 취득세, 중개수수료, 법무비용, 리모델링 비용, 초기 시설투자비
+        </div>
+        <div class="check-card">
+          <strong>3. 현재 또는 예상 임대조건</strong>
+          보증금, 월세, 관리비, 부가세 포함 여부, 권리금, 렌트프리 여부, 계약기간
+        </div>
+        <div class="check-card">
+          <strong>4. 임차인 정보</strong>
+          업종, 신용도, 매출 안정성, 사업 지속 가능성, 시설투자 규모, 장기계약 의향
+        </div>
+        <div class="check-card">
+          <strong>5. 공실 리스크</strong>
+          주변 공실률, 유사 매물 임대기간, 예상 공실 0개월·2개월·4개월·6개월 시나리오
+        </div>
+        <div class="check-card">
+          <strong>6. 금융비용</strong>
+          대출금액, 금리, 원리금 상환 방식, 이자비용, 금리 상승 시 민감도
+        </div>
+        <div class="check-card">
+          <strong>7. 운영비용</strong>
+          재산세, 종합부동산세 가능성, 보험료, 수선비, 관리비 미수, 공용부담금
+        </div>
+        <div class="check-card">
+          <strong>8. 법률 검토자료</strong>
+          상가임대차보호법 적용 여부, 환산보증금, 계약갱신 가능성, 임대료 증액 제한, 주택 갱신청구권 여부
+        </div>
+      </div>
+
+      <div class="warning-box">
+        <h3>추가로 반드시 확인할 부분</h3>
+        <ul>
+          <li>상가는 권리금 분쟁 가능성과 업종 제한 여부를 확인해야 합니다.</li>
+          <li>주택은 계약갱신청구권 행사 가능성과 실거주 필요 여부를 함께 봐야 합니다.</li>
+          <li>임대료 수익률은 월세 기준이 아니라 공실, 세금, 이자, 수선비를 차감한 순수익 기준으로 계산해야 합니다.</li>
+          <li>상가의 목표 수익률 12%는 법정 인상률이 아니라 투자수익률 목표로만 사용해야 합니다.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section>
+      <h2>5. 임대 수익률 계산 구조</h2>
+
+      <table>
+        <thead>
+          <tr>
+            <th>구분</th>
+            <th>계산 방식</th>
+            <th>의미</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>연간 총임대수입</td>
+            <td>월세 × 12개월</td>
+            <td>공실과 비용 차감 전 총수입</td>
+          </tr>
+          <tr>
+            <td>공실 반영 수입</td>
+            <td>월세 × 실제 임대 개월 수</td>
+            <td>상가는 2~6개월 공실 시나리오를 별도 계산해야 함</td>
+          </tr>
+          <tr>
+            <td>순수익</td>
+            <td>임대수입 - 이자 - 세금 - 수선비 - 관리비 부담</td>
+            <td>실제 손에 남는 임대수익</td>
+          </tr>
+          <tr>
+            <td>투자수익률</td>
+            <td>연간 순수익 ÷ 총투자금 × 100</td>
+            <td>상가와 주택을 비교할 때 가장 중요한 기준</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="point-box">
+        <p>
+          임대 시나리오는 최소 3가지로 나누어 계산하는 것이 좋습니다.
+          <strong>보수적 시나리오</strong>는 공실과 비용을 크게 보고,
+          <strong>기준 시나리오</strong>는 현실적인 임대조건을 반영하며,
+          <strong>공격적 시나리오</strong>는 우량 임차인 확보와 낮은 공실을 전제로 봅니다.
+        </p>
+      </div>
+    </section>
+
+    <section>
+      <h2>6. 결론</h2>
+
+      <div class="summary-box">
+        <p>
+          상가는 입지와 임차인만 잘 맞으면 높은 수익률을 기대할 수 있습니다.
+          특히 투자 관점에서는 연 12% 수준의 수익률 목표도 검토할 수 있지만,
+          임차인 교체 시 2~6개월 이상의 공실 가능성을 반드시 반영해야 합니다.
+        </p>
+        <p>
+          반면 주택은 계약갱신청구권과 5% 인상 제한의 영향을 크게 받기 때문에
+          단기간에 임대료를 크게 올리기 어렵습니다. 대신 공실 리스크가 비교적 낮고 안정적인 임대수익을 기대할 수 있습니다.
+        </p>
+        <p>
+          따라서 공격적인 수익률을 노린다면 상가,
+          안정적인 현금흐름과 낮은 공실 리스크를 원한다면 주택이 유리합니다.
+        </p>
+        <p class="strong">
+          다만 실제 투자 판단은 상가·주택 구분만으로 결정해서는 안 되며,
+          매입가, 대출이자, 공실률, 세금, 수선비, 임차인 안정성, 계약갱신 가능성을 모두 반영한 순수익률 기준으로 판단해야 합니다.
+        </p>
+      </div>
+
+      <div class="note">
+        <strong>주의:</strong>
+        상가의 12%는 법정 임대료 인상률이 아니라 투자수익률 목표로 정리해야 합니다.
+        상가와 주택 모두 실제 계약에서는 임대차보호법 적용 여부, 보증금 규모, 지역 조례,
+        계약갱신 여부, 신규계약 여부에 따라 결과가 달라질 수 있습니다.
+      </div>
+    </section>
+
+    <footer class="footer">
+      본 보고서는 내부 검토용 자료이며, 실제 계약 또는 투자 실행 전에는 등기부등본, 건축물대장, 임대차계약서,
+      세금·대출 조건, 임대차보호법 적용 여부를 전문가와 함께 확인하는 것이 필요합니다.
+    </footer>
+  </main>
+</body>
+</html>
