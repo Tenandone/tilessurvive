@@ -499,7 +499,7 @@
       font-weight: 800;
     }
 
-    .strategy-list span {
+    .strategy-list li > span:first-child {
       display: inline-flex;
       align-items: center;
       justify-content: center;
@@ -511,6 +511,11 @@
       flex: 0 0 auto;
       font-size: 13px;
       font-weight: 900;
+    }
+
+    .strategy-list li > span:last-child {
+      min-width: 0;
+      flex: 1 1 auto;
     }
 
     .final-message {
