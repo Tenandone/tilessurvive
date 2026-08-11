@@ -1,0 +1,1059 @@
+<!doctype html>
+<html lang="ko" data-page-lang="ko">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TikTok Match Quick Guide | Tap Tap, Power Glove, x2, x3, x5</title>
+  <meta name="description" content="A quick TikTok LIVE Match side guide that explains why Tap Tap is enough in regular matches, why we save Power Gloves, and how x2, x3, and x5 multipliers work." />
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+  <link rel="canonical" href="https://tilessurvive.net/tiktok-live-match/" />
+  <meta property="og:site_name" content="TilesSurvive.net" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="TikTok Match Quick Guide | Tap Tap and Power Glove" />
+  <meta property="og:description" content="Learn the simple TikTok LIVE Match flow: Tap Tap in regular matches, collect Power Gloves, then use them for big weekend matches." />
+  <meta property="og:url" content="https://tilessurvive.net/tiktok-live-match/" />
+  <meta property="og:image" content="https://tilessurvive.net/img/logo-tilessurvive.png" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="TikTok Match Quick Guide | Tap Tap and Power Glove" />
+  <meta name="twitter:description" content="A mobile-first guide for Tap Tap, Power Gloves, x2, x3, and x5 timing." />
+  <meta name="twitter:image" content="https://tilessurvive.net/img/logo-tilessurvive.png" />
+  <style>
+    :root {
+      --bg: #f5f7fb;
+      --surface: #ffffff;
+      --surface-soft: #f8fafc;
+      --ink: #111827;
+      --muted: #64748b;
+      --line: #e5e7eb;
+      --line-strong: #cbd5e1;
+      --brand: #2563eb;
+      --brand-soft: #eff6ff;
+      --dark: #0f172a;
+      --accent: #e11d48;
+      --accent-soft: #fff1f2;
+      --gold: #d97706;
+      --gold-soft: #fffbeb;
+      --ok: #16a34a;
+      --ok-soft: #ecfdf5;
+      --shadow: 0 18px 44px rgba(15, 23, 42, .08);
+      --radius-lg: 28px;
+      --radius-md: 20px;
+      --container: min(1040px, calc(100% - 28px));
+    }
+
+    * { box-sizing: border-box; }
+    html, body { margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      min-height: 100vh;
+      color: var(--ink);
+      background:
+        radial-gradient(circle at top left, rgba(37, 99, 235, .14), transparent 30%),
+        radial-gradient(circle at top right, rgba(225, 29, 72, .10), transparent 28%),
+        var(--bg);
+      font-family: Arial, "Pretendard", "Noto Sans KR", "Noto Sans", sans-serif;
+      line-height: 1.55;
+    }
+
+    a { color: inherit; text-decoration: none; }
+    button { font: inherit; }
+
+    .match-page {
+      width: var(--container);
+      margin: 0 auto;
+      padding: 18px 0 40px;
+    }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      min-height: 64px;
+      margin: 0 calc((100vw - min(1040px, calc(100vw - 28px))) / -2);
+      padding: 10px max(14px, calc((100vw - 1040px) / 2));
+      background: rgba(255, 255, 255, .9);
+      border-bottom: 1px solid rgba(15, 23, 42, .08);
+      backdrop-filter: saturate(160%) blur(12px);
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      min-width: 0;
+      font-weight: 900;
+    }
+
+    .brand img {
+      width: 30px;
+      height: 30px;
+      border-radius: 9px;
+    }
+
+    .brand span {
+      display: block;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .lang-switch {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-wrap: wrap;
+      justify-content: flex-end;
+    }
+
+    .lang-button {
+      appearance: none;
+      border: 1px solid var(--line);
+      background: #fff;
+      color: #475569;
+      min-height: 34px;
+      padding: 0 10px;
+      border-radius: 999px;
+      font-size: 13px;
+      font-weight: 900;
+      cursor: pointer;
+    }
+
+    .lang-button[aria-pressed="true"] {
+      color: #fff;
+      background: var(--dark);
+      border-color: var(--dark);
+    }
+
+    .hero {
+      margin-top: 20px;
+      padding: 26px 22px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      background: linear-gradient(180deg, #fff, #f8fafc);
+      box-shadow: var(--shadow);
+    }
+
+    .eyebrow {
+      display: inline-flex;
+      align-items: center;
+      min-height: 28px;
+      padding: 0 11px;
+      border-radius: 999px;
+      color: var(--brand);
+      background: var(--brand-soft);
+      font-size: 12px;
+      font-weight: 900;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 12px 0 0;
+      font-size: clamp(32px, 8vw, 58px);
+      line-height: 1.05;
+      letter-spacing: -.04em;
+    }
+
+    .hero-lead {
+      max-width: 760px;
+      margin: 14px 0 0;
+      color: #334155;
+      font-size: clamp(18px, 4.4vw, 24px);
+      font-weight: 900;
+      line-height: 1.35;
+    }
+
+    .hero-copy {
+      max-width: 760px;
+      margin: 12px 0 0;
+      color: var(--muted);
+      font-size: 15px;
+    }
+
+    .hero-actions {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+      margin-top: 18px;
+    }
+
+    .primary-button,
+    .ghost-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 42px;
+      padding: 0 16px;
+      border-radius: 999px;
+      font-weight: 900;
+      border: 1px solid transparent;
+      cursor: pointer;
+    }
+
+    .primary-button {
+      color: #fff;
+      background: var(--dark);
+    }
+
+    .ghost-button {
+      color: var(--dark);
+      background: #fff;
+      border-color: var(--line);
+    }
+
+    .flow {
+      display: grid;
+      grid-template-columns: repeat(7, minmax(0, 1fr));
+      gap: 8px;
+      margin-top: 18px;
+    }
+
+    .flow-step {
+      min-height: 72px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: #fff;
+      text-align: center;
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    .flow-step.is-hot {
+      background: var(--gold-soft);
+      border-color: #fed7aa;
+      color: #9a3412;
+    }
+
+    .section {
+      margin-top: 18px;
+      padding: 22px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius-lg);
+      background: var(--surface);
+      box-shadow: 0 12px 30px rgba(15, 23, 42, .05);
+    }
+
+    .section-head {
+      margin-bottom: 16px;
+    }
+
+    .section-head h2 {
+      margin: 0;
+      font-size: clamp(24px, 5.4vw, 36px);
+      line-height: 1.15;
+      letter-spacing: -.03em;
+    }
+
+    .section-head p {
+      margin: 8px 0 0;
+      color: var(--muted);
+    }
+
+    .grid-2,
+    .grid-3,
+    .grid-4 {
+      display: grid;
+      gap: 12px;
+    }
+
+    .grid-2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+    .grid-3 { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+    .grid-4 { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+
+    .info-card,
+    .demo-card {
+      border: 1px solid var(--line);
+      border-radius: var(--radius-md);
+      background: var(--surface-soft);
+      padding: 16px;
+      min-width: 0;
+    }
+
+    .info-card h3,
+    .demo-card h3 {
+      margin: 0 0 8px;
+      font-size: 18px;
+      line-height: 1.25;
+    }
+
+    .info-card p,
+    .demo-card p {
+      margin: 0;
+      color: #475569;
+      font-size: 14px;
+    }
+
+    .highlight {
+      display: block;
+      margin-top: 12px;
+      color: var(--accent);
+      font-weight: 900;
+      font-size: 18px;
+    }
+
+    .tap-panel {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(260px, 360px);
+      gap: 16px;
+      align-items: stretch;
+    }
+
+    .phone-demo {
+      position: relative;
+      min-height: 300px;
+      border: 1px solid var(--line-strong);
+      border-radius: 28px;
+      background:
+        linear-gradient(180deg, rgba(15, 23, 42, .76), rgba(15, 23, 42, .92)),
+        radial-gradient(circle at 50% 20%, rgba(37, 99, 235, .6), transparent 42%);
+      color: #fff;
+      overflow: hidden;
+      padding: 18px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-shadow: inset 0 0 0 8px rgba(255, 255, 255, .06);
+    }
+
+    .tap-count {
+      font-size: 46px;
+      line-height: 1;
+      font-weight: 900;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .tap-label {
+      color: rgba(255, 255, 255, .72);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+    }
+
+    .tap-buttons {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 8px;
+    }
+
+    .tap-button {
+      appearance: none;
+      border: 0;
+      min-height: 48px;
+      border-radius: 16px;
+      background: #fff;
+      color: var(--dark);
+      font-weight: 900;
+      cursor: pointer;
+    }
+
+    .float-hit {
+      position: absolute;
+      right: 24px;
+      bottom: 92px;
+      color: #fff;
+      font-size: 24px;
+      font-weight: 900;
+      opacity: 0;
+      transform: translateY(8px);
+      pointer-events: none;
+    }
+
+    .float-hit.is-active {
+      animation: floatHit .6s ease;
+    }
+
+    @keyframes floatHit {
+      0% { opacity: 0; transform: translateY(8px) scale(.96); }
+      20% { opacity: 1; transform: translateY(0) scale(1); }
+      100% { opacity: 0; transform: translateY(-42px) scale(1.08); }
+    }
+
+    .progress-row {
+      display: grid;
+      grid-template-columns: repeat(6, minmax(0, 1fr));
+      gap: 8px;
+      align-items: end;
+    }
+
+    .day-card {
+      border: 1px solid var(--line);
+      border-radius: 16px;
+      background: #fff;
+      padding: 12px 8px;
+      text-align: center;
+      font-weight: 900;
+      min-height: 78px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 4px;
+    }
+
+    .day-card.is-weekend {
+      color: #9a3412;
+      background: var(--gold-soft);
+      border-color: #fed7aa;
+    }
+
+    .glove-stack {
+      color: var(--brand);
+      font-size: 12px;
+      letter-spacing: .06em;
+    }
+
+    .multiplier {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      min-height: 132px;
+      border: 1px dashed var(--line-strong);
+      border-radius: 18px;
+      background: #fff;
+      font-size: clamp(24px, 7vw, 42px);
+      font-weight: 900;
+      font-variant-numeric: tabular-nums;
+    }
+
+    .multiplier b {
+      color: var(--accent);
+    }
+
+    .demo-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .small-button {
+      appearance: none;
+      border: 1px solid var(--line);
+      background: #fff;
+      min-height: 38px;
+      padding: 0 12px;
+      border-radius: 999px;
+      font-weight: 900;
+      cursor: pointer;
+    }
+
+    .small-button.is-danger {
+      color: #fff;
+      background: var(--accent);
+      border-color: var(--accent);
+    }
+
+    .compare-card {
+      border: 1px solid var(--line);
+      border-radius: 18px;
+      background: #fff;
+      padding: 16px;
+      text-align: center;
+    }
+
+    .compare-card strong {
+      display: block;
+      font-size: 15px;
+      margin-bottom: 8px;
+    }
+
+    .compare-score {
+      font-size: 30px;
+      line-height: 1;
+      font-weight: 900;
+      color: var(--dark);
+      font-variant-numeric: tabular-nums;
+    }
+
+    .compare-card.is-x5 {
+      background: var(--accent-soft);
+      border-color: #fecdd3;
+    }
+
+    .strategy-list {
+      display: grid;
+      gap: 10px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .strategy-list li {
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      border: 1px solid var(--line);
+      background: #fff;
+      border-radius: 16px;
+      padding: 13px;
+      color: #334155;
+      font-weight: 800;
+    }
+
+    .strategy-list span {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 26px;
+      height: 26px;
+      border-radius: 999px;
+      background: var(--brand-soft);
+      color: var(--brand);
+      flex: 0 0 auto;
+      font-size: 13px;
+      font-weight: 900;
+    }
+
+    .final-message {
+      border: 1px solid #bfdbfe;
+      background: #f8fbff;
+      border-radius: var(--radius-lg);
+      padding: 22px;
+      text-align: center;
+    }
+
+    .final-message strong {
+      display: block;
+      font-size: clamp(24px, 6vw, 42px);
+      line-height: 1.15;
+      color: var(--dark);
+    }
+
+    .final-message p {
+      margin: 12px auto 0;
+      max-width: 680px;
+      color: #475569;
+      font-weight: 800;
+    }
+
+    .footer {
+      margin: 18px 0 0;
+      padding: 20px 0;
+      color: var(--muted);
+      font-size: 13px;
+      text-align: center;
+    }
+
+    @media (max-width: 860px) {
+      .flow,
+      .grid-4 {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .grid-3 {
+        grid-template-columns: 1fr;
+      }
+
+      .tap-panel,
+      .grid-2 {
+        grid-template-columns: 1fr;
+      }
+
+      .progress-row {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 560px) {
+      .topbar {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .lang-switch {
+        justify-content: flex-start;
+      }
+
+      .hero,
+      .section,
+      .final-message {
+        border-radius: 22px;
+        padding: 18px;
+      }
+
+      .flow {
+        grid-template-columns: 1fr;
+      }
+
+      .progress-row {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+  </style>
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "name": "TikTok Match Quick Guide",
+      "description": "A quick guide for Tap Tap, Power Gloves, x2, x3, and x5 in TikTok LIVE Match.",
+      "url": "https://tilessurvive.net/tiktok-live-match/",
+      "isPartOf": {
+        "@type": "WebSite",
+        "name": "TilesSurvive.net",
+        "url": "https://tilessurvive.net/"
+      }
+    }
+  </script>
+</head>
+<body>
+  <main class="match-page" id="main">
+    <div class="topbar">
+      <a class="brand" href="/" aria-label="TilesSurvive.net home">
+        <img src="/img/logo-tilessurvive.png" alt="TilesSurvive.net" width="30" height="30" />
+        <span>TilesSurvive.net</span>
+      </a>
+      <div class="lang-switch" aria-label="Language">
+        <button class="lang-button" type="button" data-lang="ko" aria-pressed="true">KR</button>
+        <button class="lang-button" type="button" data-lang="en" aria-pressed="false">EN</button>
+        <button class="lang-button" type="button" data-lang="es" aria-pressed="false">ES</button>
+        <button class="lang-button" type="button" data-lang="pt" aria-pressed="false">PT</button>
+      </div>
+    </div>
+
+    <section class="hero" aria-labelledby="pageTitle">
+      <span class="eyebrow" data-i18n="heroEyebrow">TikTok LIVE Match</span>
+      <h1 id="pageTitle" data-i18n="heroTitle">TikTok Match 간단 가이드</h1>
+      <p class="hero-lead" data-i18n="heroLead">평소에는 Tap Tap만으로 충분합니다.</p>
+      <p class="hero-copy" data-i18n="heroCopy">평소 Match의 목표는 무리해서 모든 경기를 이기는 것이 아니라, 주말 큰 경기를 위해 Power Glove를 모으는 것입니다.</p>
+      <div class="hero-actions">
+        <button class="primary-button" type="button" data-scroll-target="multipliers" data-i18n="heroCta">배수 시스템 알아보기</button>
+        <button class="ghost-button" type="button" data-scroll-target="tapTap" data-i18n="heroGhost">Tap Tap 먼저 보기</button>
+      </div>
+      <div class="flow" aria-label="Match flow">
+        <div class="flow-step" data-i18n="flowTap">TAP TAP</div>
+        <div class="flow-step" data-i18n="flowGloveCollect">GLOVE 모으기</div>
+        <div class="flow-step">x2</div>
+        <div class="flow-step">x3</div>
+        <div class="flow-step" data-i18n="flowPowerGlove">POWER GLOVE</div>
+        <div class="flow-step is-hot">x5</div>
+        <div class="flow-step is-hot" data-i18n="flowWeekend">주말 BIG MATCH</div>
+      </div>
+    </section>
+
+    <section class="section" id="tapTap" aria-labelledby="tapTapTitle">
+      <div class="section-head">
+        <h2 id="tapTapTitle" data-i18n="tapTitle">Tap Tap만 해주세요</h2>
+        <p data-i18n="tapIntro">평소 Match에서는 Gift를 사용할 필요가 없습니다. 화면을 계속 탭해서 함께 참여해주세요.</p>
+      </div>
+      <div class="tap-panel">
+        <div class="info-card">
+          <h3 data-i18n="tapPurposeTitle">평소 Match의 목적</h3>
+          <p data-i18n="tapPurpose">Power Glove를 수집하고, 중요한 Match를 위해 아껴두는 과정입니다.</p>
+          <span class="highlight" data-i18n="tapHighlight">지금은 Gift보다 Tap Tap</span>
+        </div>
+        <div class="phone-demo" aria-label="Tap Tap demo">
+          <div>
+            <div class="tap-label" data-i18n="tapCounterLabel">Tap Count</div>
+            <div class="tap-count" id="tapCount">0</div>
+          </div>
+          <div class="float-hit" id="tapFloat">+1 TAP</div>
+          <div class="tap-buttons">
+            <button class="tap-button" type="button" data-tap>+1 TAP</button>
+            <button class="tap-button" type="button" data-tap>+1 TAP</button>
+            <button class="tap-button" type="button" data-tap>+1 TAP</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="gloveTitle">
+      <div class="section-head">
+        <h2 id="gloveTitle" data-i18n="gloveTitle">왜 Power Glove를 모으나요?</h2>
+        <p data-i18n="gloveIntro">중요한 Match에서는 기본 점수보다 배수 타이밍이 훨씬 중요할 수 있습니다.</p>
+      </div>
+      <div class="progress-row" aria-label="Power Glove weekly progress">
+        <div class="day-card"><strong>MON</strong><span class="glove-stack">G</span></div>
+        <div class="day-card"><strong>TUE</strong><span class="glove-stack">G G</span></div>
+        <div class="day-card"><strong>WED</strong><span class="glove-stack">G G G</span></div>
+        <div class="day-card"><strong>THU</strong><span class="glove-stack">G G G G</span></div>
+        <div class="day-card"><strong>FRI</strong><span class="glove-stack">G G G G G</span></div>
+        <div class="day-card is-weekend"><strong>SAT / SUN</strong><span>BIG MATCH</span></div>
+      </div>
+      <div class="grid-3" style="margin-top:12px">
+        <article class="info-card"><h3 data-i18n="gloveStep1Title">평소 Match</h3><p data-i18n="gloveStep1">Tap Tap으로 참여합니다.</p></article>
+        <article class="info-card"><h3 data-i18n="gloveStep2Title">Glove 저장</h3><p data-i18n="gloveStep2">Power Glove를 모아둡니다.</p></article>
+        <article class="info-card"><h3 data-i18n="gloveStep3Title">중요한 Match</h3><p data-i18n="gloveStep3">주말 큰 경기에서 사용합니다.</p></article>
+      </div>
+    </section>
+
+    <section class="section" id="multipliers" aria-labelledby="multiplierTitle">
+      <div class="section-head">
+        <h2 id="multiplierTitle" data-i18n="multiTitle">x2 / x3는 무엇인가요?</h2>
+        <p data-i18n="multiIntro">같은 Gift라도 배수가 켜진 시간에 따라 Match 점수가 달라질 수 있습니다.</p>
+      </div>
+      <div class="grid-2">
+        <article class="demo-card">
+          <h3>x2</h3>
+          <div class="multiplier"><span>100</span><b>x2</b><span>= 200</span></div>
+          <p data-i18n="x2Copy">x2가 활성화되면 해당 점수가 2배로 적용됩니다.</p>
+        </article>
+        <article class="demo-card">
+          <h3>x3</h3>
+          <div class="multiplier"><span>100</span><b>x3</b><span>= 300</span></div>
+          <p data-i18n="x3Copy">x3에서는 해당 점수가 3배로 적용됩니다.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="powerGloveTitle">
+      <div class="section-head">
+        <h2 id="powerGloveTitle" data-i18n="powerTitle">Power Glove</h2>
+        <p data-i18n="powerIntro">Power Glove는 평소 Match에서 모아두고, 중요한 Match에서 사용하는 아이템입니다.</p>
+      </div>
+      <div class="grid-3">
+        <article class="info-card"><h3 data-i18n="powerFlow1">Power Glove 사용</h3><p data-i18n="powerFlow1Copy">중요한 타이밍에 활성화합니다.</p></article>
+        <article class="info-card"><h3 data-i18n="powerFlow2">Gift</h3><p data-i18n="powerFlow2Copy">필요한 순간에 점수를 넣습니다.</p></article>
+        <article class="info-card"><h3 data-i18n="powerFlow3">x5 기회</h3><p data-i18n="powerFlow3Copy">모든 Gift가 자동 x5가 되는 것은 아닙니다.</p></article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="x5Title">
+      <div class="section-head">
+        <h2 id="x5Title" data-i18n="x5Title">x5</h2>
+        <p data-i18n="x5Intro">Power Glove 사용 후 x5가 적용되면 큰 점수 차이를 만들 수 있습니다.</p>
+      </div>
+      <div class="demo-card">
+        <div class="multiplier" id="x5Formula"><span>1,000</span><b>x5</b><span>= 5,000</span></div>
+        <div class="demo-actions">
+          <button class="small-button" type="button" data-score="100" data-i18n="demoGift100">Gift 100</button>
+          <button class="small-button" type="button" data-score="1000" data-i18n="demoGift1000">Gift 1,000</button>
+          <button class="small-button is-danger" type="button" data-x5-demo>x5 HIT</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="compareTitle">
+      <div class="section-head">
+        <h2 id="compareTitle" data-i18n="compareTitle">한눈에 이해하기</h2>
+        <p data-i18n="compareIntro">기본 점수 100이 배수에 따라 어떻게 바뀌는지 먼저 보면 쉽습니다.</p>
+      </div>
+      <div class="grid-4">
+        <article class="compare-card"><strong>NORMAL</strong><div class="compare-score">100</div></article>
+        <article class="compare-card"><strong>x2</strong><div class="compare-score">200</div></article>
+        <article class="compare-card"><strong>x3</strong><div class="compare-score">300</div></article>
+        <article class="compare-card is-x5"><strong>x5 HIT</strong><div class="compare-score">500</div></article>
+      </div>
+    </section>
+
+    <section class="section" aria-labelledby="strategyTitle">
+      <div class="section-head">
+        <h2 id="strategyTitle" data-i18n="strategyTitle">우리의 Match 방식</h2>
+        <p data-i18n="strategyIntro">길게 외울 필요 없이 이 흐름만 기억하면 됩니다.</p>
+      </div>
+      <ul class="strategy-list">
+        <li><span>1</span><span data-i18n="strategy1">평소 Match에서는 Tap Tap으로 참여합니다.</span></li>
+        <li><span>2</span><span data-i18n="strategy2">Power Glove를 모아둡니다.</span></li>
+        <li><span>3</span><span data-i18n="strategy3">주말 Big Match를 기다립니다.</span></li>
+        <li><span>4</span><span data-i18n="strategy4">x2 / x3 타이밍을 확인합니다.</span></li>
+        <li><span>5</span><span data-i18n="strategy5">중요한 순간에 Power Glove를 사용하고 x5 기회를 노립니다.</span></li>
+      </ul>
+    </section>
+
+    <section class="final-message" aria-labelledby="finalTitle">
+      <strong id="finalTitle" data-i18n="finalTitle">Tap Tap만으로 충분합니다.</strong>
+      <p data-i18n="finalCopy">평소 Match는 Power Glove를 준비하는 과정입니다. Gloves는 주말 큰 경기를 위해 모아주세요.</p>
+    </section>
+
+    <footer class="footer">
+      <p>© 2026 TilesSurvive.net · TikTok LIVE Match side guide</p>
+    </footer>
+  </main>
+
+  <script>
+    const translations = {
+      ko: {
+        heroEyebrow: "TikTok LIVE Match",
+        heroTitle: "TikTok Match 간단 가이드",
+        heroLead: "평소에는 Tap Tap만으로 충분합니다.",
+        heroCopy: "평소 Match의 목표는 무리해서 모든 경기를 이기는 것이 아니라, 주말 큰 경기를 위해 Power Glove를 모으는 것입니다.",
+        heroCta: "배수 시스템 알아보기",
+        heroGhost: "Tap Tap 먼저 보기",
+        flowTap: "TAP TAP",
+        flowGloveCollect: "GLOVE 모으기",
+        flowPowerGlove: "POWER GLOVE",
+        flowWeekend: "주말 BIG MATCH",
+        tapTitle: "Tap Tap만 해주세요",
+        tapIntro: "평소 Match에서는 Gift를 사용할 필요가 없습니다. 화면을 계속 탭해서 함께 참여해주세요.",
+        tapPurposeTitle: "평소 Match의 목적",
+        tapPurpose: "Power Glove를 수집하고, 중요한 Match를 위해 아껴두는 과정입니다.",
+        tapHighlight: "지금은 Gift보다 Tap Tap",
+        tapCounterLabel: "Tap Count",
+        gloveTitle: "왜 Power Glove를 모으나요?",
+        gloveIntro: "중요한 Match에서는 기본 점수보다 배수 타이밍이 훨씬 중요할 수 있습니다.",
+        gloveStep1Title: "평소 Match",
+        gloveStep1: "Tap Tap으로 참여합니다.",
+        gloveStep2Title: "Glove 저장",
+        gloveStep2: "Power Glove를 모아둡니다.",
+        gloveStep3Title: "중요한 Match",
+        gloveStep3: "주말 큰 경기에서 사용합니다.",
+        multiTitle: "x2 / x3는 무엇인가요?",
+        multiIntro: "같은 Gift라도 배수가 켜진 시간에 따라 Match 점수가 달라질 수 있습니다.",
+        x2Copy: "x2가 활성화되면 해당 점수가 2배로 적용됩니다.",
+        x3Copy: "x3에서는 해당 점수가 3배로 적용됩니다.",
+        powerTitle: "Power Glove",
+        powerIntro: "Power Glove는 평소 Match에서 모아두고, 중요한 Match에서 사용하는 아이템입니다.",
+        powerFlow1: "Power Glove 사용",
+        powerFlow1Copy: "중요한 타이밍에 활성화합니다.",
+        powerFlow2: "Gift",
+        powerFlow2Copy: "필요한 순간에 점수를 넣습니다.",
+        powerFlow3: "x5 기회",
+        powerFlow3Copy: "모든 Gift가 자동 x5가 되는 것은 아닙니다.",
+        x5Title: "x5",
+        x5Intro: "Power Glove 사용 후 x5가 적용되면 큰 점수 차이를 만들 수 있습니다.",
+        demoGift100: "Gift 100",
+        demoGift1000: "Gift 1,000",
+        compareTitle: "한눈에 이해하기",
+        compareIntro: "기본 점수 100이 배수에 따라 어떻게 바뀌는지 먼저 보면 쉽습니다.",
+        strategyTitle: "우리의 Match 방식",
+        strategyIntro: "길게 외울 필요 없이 이 흐름만 기억하면 됩니다.",
+        strategy1: "평소 Match에서는 Tap Tap으로 참여합니다.",
+        strategy2: "Power Glove를 모아둡니다.",
+        strategy3: "주말 Big Match를 기다립니다.",
+        strategy4: "x2 / x3 타이밍을 확인합니다.",
+        strategy5: "중요한 순간에 Power Glove를 사용하고 x5 기회를 노립니다.",
+        finalTitle: "Tap Tap만으로 충분합니다.",
+        finalCopy: "평소 Match는 Power Glove를 준비하는 과정입니다. Gloves는 주말 큰 경기를 위해 모아주세요."
+      },
+      en: {
+        heroEyebrow: "TikTok LIVE Match",
+        heroTitle: "TikTok Match Quick Guide",
+        heroLead: "For regular matches, Tap Tap is enough.",
+        heroCopy: "The reason we usually play regular matches is not simply to win every match. We do it to collect Power Gloves for the big matches on the weekend.",
+        heroCta: "Learn the Multiplier System",
+        heroGhost: "Start with Tap Tap",
+        flowTap: "TAP TAP",
+        flowGloveCollect: "COLLECT GLOVES",
+        flowPowerGlove: "POWER GLOVE",
+        flowWeekend: "WEEKEND BIG MATCH",
+        tapTitle: "Just Tap Tap",
+        tapIntro: "You do not need to use Gifts in our regular matches. Just keep tapping the screen and participate with us.",
+        tapPurposeTitle: "Purpose of Regular Matches",
+        tapPurpose: "We collect Power Gloves and save them for important matches.",
+        tapHighlight: "For now: Tap Tap, not Gifts",
+        tapCounterLabel: "Tap Count",
+        gloveTitle: "Why do we collect Power Gloves?",
+        gloveIntro: "In important matches, multiplier timing can be much more important than normal scoring.",
+        gloveStep1Title: "Regular Match",
+        gloveStep1: "Participate with Tap Tap.",
+        gloveStep2Title: "Save Gloves",
+        gloveStep2: "Keep collecting Power Gloves.",
+        gloveStep3Title: "Important Match",
+        gloveStep3: "Use them in big weekend matches.",
+        multiTitle: "What are x2 and x3?",
+        multiIntro: "The same Gift can create a different Match score depending on multiplier timing.",
+        x2Copy: "When x2 is active, the applicable Match score is multiplied by 2.",
+        x3Copy: "With x3, the applicable score is multiplied by 3.",
+        powerTitle: "Power Glove",
+        powerIntro: "Power Glove is the item we collect during regular matches and save for important matches.",
+        powerFlow1: "Activate Power Glove",
+        powerFlow1Copy: "Use it at an important timing.",
+        powerFlow2: "Gift",
+        powerFlow2Copy: "Score at the moment that matters.",
+        powerFlow3: "Chance for x5",
+        powerFlow3Copy: "Do not describe every Gift as automatically becoming x5.",
+        x5Title: "x5",
+        x5Intro: "If x5 is applied after using a Power Glove, it can create a huge score difference.",
+        demoGift100: "Gift 100",
+        demoGift1000: "Gift 1,000",
+        compareTitle: "Understand at a Glance",
+        compareIntro: "It is easier to see how a base score of 100 changes with each multiplier.",
+        strategyTitle: "Our Match Strategy",
+        strategyIntro: "You only need to remember this simple flow.",
+        strategy1: "Use Tap Tap during regular matches.",
+        strategy2: "Save Power Gloves.",
+        strategy3: "Wait for the weekend Big Match.",
+        strategy4: "Watch the x2 / x3 timing.",
+        strategy5: "Use Power Glove at the key moment and aim for an x5 chance.",
+        finalTitle: "Tap Tap is enough.",
+        finalCopy: "Regular matches help us prepare Power Gloves. Let us save the Gloves for the big weekend matches."
+      },
+      es: {
+        heroEyebrow: "TikTok LIVE Match",
+        heroTitle: "Guía rápida de TikTok Match",
+        heroLead: "En los matches normales, con Tap Tap es suficiente.",
+        heroCopy: "Normalmente no jugamos los matches solo para ganar cada partida. Lo hacemos para conseguir Power Gloves para los grandes matches del fin de semana.",
+        heroCta: "Entender los multiplicadores",
+        heroGhost: "Ver Tap Tap primero",
+        flowTap: "TAP TAP",
+        flowGloveCollect: "CONSEGUIR GLOVES",
+        flowPowerGlove: "POWER GLOVE",
+        flowWeekend: "BIG MATCH DEL FIN DE SEMANA",
+        tapTitle: "Solo haz Tap Tap",
+        tapIntro: "En nuestros matches normales no necesitas usar Gifts. Simplemente toca la pantalla y participa con nosotros.",
+        tapPurposeTitle: "Objetivo de los matches normales",
+        tapPurpose: "Conseguimos Power Gloves y los guardamos para los matches importantes.",
+        tapHighlight: "Por ahora: Tap Tap, no Gifts",
+        tapCounterLabel: "Contador de taps",
+        gloveTitle: "¿Por qué conseguimos Power Gloves?",
+        gloveIntro: "En los matches importantes, el momento de los multiplicadores puede ser mucho más importante que los puntos normales.",
+        gloveStep1Title: "Match normal",
+        gloveStep1: "Participa con Tap Tap.",
+        gloveStep2Title: "Guardar Gloves",
+        gloveStep2: "Sigue consiguiendo Power Gloves.",
+        gloveStep3Title: "Match importante",
+        gloveStep3: "Úsalos en los grandes matches del fin de semana.",
+        multiTitle: "¿Qué son x2 y x3?",
+        multiIntro: "El mismo Gift puede generar una puntuación diferente según el momento del multiplicador.",
+        x2Copy: "Cuando x2 está activo, la puntuación correspondiente del Match se multiplica por 2.",
+        x3Copy: "Con x3, la puntuación correspondiente se multiplica por 3.",
+        powerTitle: "Power Glove",
+        powerIntro: "Power Glove es el objeto que conseguimos en matches normales y guardamos para matches importantes.",
+        powerFlow1: "Activar Power Glove",
+        powerFlow1Copy: "Úsalo en un momento importante.",
+        powerFlow2: "Gift",
+        powerFlow2Copy: "Suma puntos en el momento clave.",
+        powerFlow3: "Posibilidad de x5",
+        powerFlow3Copy: "No significa que todos los Gifts se conviertan automáticamente en x5.",
+        x5Title: "x5",
+        x5Intro: "Si se aplica x5 después de usar Power Glove, puede crear una gran diferencia de puntuación.",
+        demoGift100: "Gift 100",
+        demoGift1000: "Gift 1.000",
+        compareTitle: "Entender de un vistazo",
+        compareIntro: "Es más fácil ver cómo cambia una base de 100 puntos con cada multiplicador.",
+        strategyTitle: "Nuestra estrategia de Match",
+        strategyIntro: "Solo necesitas recordar este flujo sencillo.",
+        strategy1: "Usar Tap Tap durante los matches normales.",
+        strategy2: "Guardar Power Gloves.",
+        strategy3: "Esperar el Big Match del fin de semana.",
+        strategy4: "Mirar el timing de x2 / x3.",
+        strategy5: "Usar Power Glove en el momento clave y buscar la posibilidad de x5.",
+        finalTitle: "Con Tap Tap es suficiente.",
+        finalCopy: "Los matches normales nos ayudan a preparar Power Gloves. Guardemos los Gloves para los grandes matches del fin de semana."
+      },
+      pt: {
+        heroEyebrow: "TikTok LIVE Match",
+        heroTitle: "Guia rápida do TikTok Match",
+        heroLead: "Nos matches normais, só o Tap Tap já é suficiente.",
+        heroCopy: "Normalmente não fazemos os matches apenas para ganhar todas as partidas. Fazemos isso para conseguir Power Gloves para os grandes matches do fim de semana.",
+        heroCta: "Entender os multiplicadores",
+        heroGhost: "Ver Tap Tap primeiro",
+        flowTap: "TAP TAP",
+        flowGloveCollect: "CONSEGUIR GLOVES",
+        flowPowerGlove: "POWER GLOVE",
+        flowWeekend: "BIG MATCH DO FIM DE SEMANA",
+        tapTitle: "Só faça Tap Tap",
+        tapIntro: "Nos nossos matches normais você não precisa usar Gifts. É só tocar na tela e participar com a gente.",
+        tapPurposeTitle: "Objetivo dos matches normais",
+        tapPurpose: "Conseguimos Power Gloves e guardamos para os matches importantes.",
+        tapHighlight: "Por enquanto: Tap Tap, não Gifts",
+        tapCounterLabel: "Contador de taps",
+        gloveTitle: "Por que conseguimos Power Gloves?",
+        gloveIntro: "Nos matches importantes, o momento dos multiplicadores pode ser muito mais importante que a pontuação normal.",
+        gloveStep1Title: "Match normal",
+        gloveStep1: "Participe com Tap Tap.",
+        gloveStep2Title: "Guardar Gloves",
+        gloveStep2: "Continue juntando Power Gloves.",
+        gloveStep3Title: "Match importante",
+        gloveStep3: "Use nos grandes matches do fim de semana.",
+        multiTitle: "O que são x2 e x3?",
+        multiIntro: "O mesmo Gift pode gerar uma pontuação diferente dependendo do momento do multiplicador.",
+        x2Copy: "Quando o x2 está ativo, a pontuação correspondente do Match é multiplicada por 2.",
+        x3Copy: "Com x3, a pontuação correspondente é multiplicada por 3.",
+        powerTitle: "Power Glove",
+        powerIntro: "Power Glove é o item que juntamos nos matches normais e guardamos para matches importantes.",
+        powerFlow1: "Ativar Power Glove",
+        powerFlow1Copy: "Use em um momento importante.",
+        powerFlow2: "Gift",
+        powerFlow2Copy: "Faça pontos no momento certo.",
+        powerFlow3: "Chance de x5",
+        powerFlow3Copy: "Isso não significa que todos os Gifts viram x5 automaticamente.",
+        x5Title: "x5",
+        x5Intro: "Se o x5 for aplicado depois de usar Power Glove, isso pode criar uma grande diferença de pontuação.",
+        demoGift100: "Gift 100",
+        demoGift1000: "Gift 1.000",
+        compareTitle: "Entender de relance",
+        compareIntro: "Fica mais fácil ver como uma base de 100 pontos muda com cada multiplicador.",
+        strategyTitle: "Nossa estratégia de Match",
+        strategyIntro: "Você só precisa lembrar deste fluxo simples.",
+        strategy1: "Use Tap Tap nos matches normais.",
+        strategy2: "Guarde Power Gloves.",
+        strategy3: "Espere o Big Match do fim de semana.",
+        strategy4: "Observe o timing de x2 / x3.",
+        strategy5: "Use Power Glove no momento certo e tente a chance de x5.",
+        finalTitle: "Só o Tap Tap já é suficiente.",
+        finalCopy: "Os matches normais ajudam a preparar Power Gloves. Vamos guardar os Gloves para os grandes matches do fim de semana."
+      }
+    };
+
+    const page = document.documentElement;
+    const langButtons = Array.from(document.querySelectorAll(".lang-button"));
+    const textNodes = Array.from(document.querySelectorAll("[data-i18n]"));
+    const tapCount = document.getElementById("tapCount");
+    const tapFloat = document.getElementById("tapFloat");
+    const x5Formula = document.getElementById("x5Formula");
+    let taps = 0;
+    let demoScore = 1000;
+
+    function formatScore(value, lang) {
+      return new Intl.NumberFormat(lang === "ko" ? "ko-KR" : lang === "pt" ? "pt-BR" : lang).format(value);
+    }
+
+    function setLanguage(lang) {
+      const dictionary = translations[lang] || translations.ko;
+      page.lang = lang === "pt" ? "pt-BR" : lang;
+      page.dataset.pageLang = lang;
+      textNodes.forEach((node) => {
+        const key = node.dataset.i18n;
+        if (dictionary[key]) node.textContent = dictionary[key];
+      });
+      langButtons.forEach((button) => {
+        button.setAttribute("aria-pressed", String(button.dataset.lang === lang));
+      });
+      updateX5();
+    }
+
+    function updateX5() {
+      const lang = page.dataset.pageLang || "ko";
+      x5Formula.innerHTML = `<span>${formatScore(demoScore, lang)}</span><b>x5</b><span>= ${formatScore(demoScore * 5, lang)}</span>`;
+    }
+
+    langButtons.forEach((button) => {
+      button.addEventListener("click", () => setLanguage(button.dataset.lang));
+    });
+
+    document.querySelectorAll("[data-scroll-target]").forEach((button) => {
+      button.addEventListener("click", () => {
+        const target = document.getElementById(button.dataset.scrollTarget);
+        if (target) target.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+    });
+
+    document.querySelectorAll("[data-tap]").forEach((button) => {
+      button.addEventListener("click", () => {
+        taps += 1;
+        tapCount.textContent = String(taps);
+        tapFloat.classList.remove("is-active");
+        void tapFloat.offsetWidth;
+        tapFloat.classList.add("is-active");
+      });
+    });
+
+    document.querySelectorAll("[data-score]").forEach((button) => {
+      button.addEventListener("click", () => {
+        demoScore = Number(button.dataset.score) || 100;
+        updateX5();
+      });
+    });
+
+    document.querySelector("[data-x5-demo]").addEventListener("click", () => {
+      x5Formula.animate(
+        [
+          { transform: "scale(1)", backgroundColor: "#fff" },
+          { transform: "scale(1.03)", backgroundColor: "#fff1f2" },
+          { transform: "scale(1)", backgroundColor: "#fff" }
+        ],
+        { duration: 600, easing: "ease" }
+      );
+    });
+  </script>
+</body>
+</html>
