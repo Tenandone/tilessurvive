@@ -56,7 +56,9 @@ The repository is a five-language static site with 300+ sitemap URLs. It has her
 - The Tile Survive Field Guide endpoint was not reliably readable during this audit, so no claim from it was promoted into production.
 - TilesSurviveGuide and MTurboGamer were reviewed for coverage gaps. Their lineup, gear, scoring, and economy details remain candidate material unless another reliable source agrees.
 - The official update list now identifies v2.6.100 (2026-09-17) as the latest patch. No newer official patch was visible during this review.
+- MTurboGamer currently surfaces additional demand around formations, gem use, State Transfer, research priorities, and alliance progression. These remain single-source candidates and were not promoted into production data.
+- No stable public API or sufficiently reliable two-source feed for Gift Codes was found. The home page therefore exposes only the already verified permanent/no-known-expiry codes and keeps the full code archive as a lower-priority destination.
 
 ## Immediate implementation boundary
 
-This phase adds a verified Pet System entity and five-language page, strengthens the home-to-Top-Up funnel, and preserves low-intent information pages by placing only one contextual CTA after the content. Numeric game data that lacks sufficient evidence remains out of production and is tracked in `DATA_CONFLICT_REPORT.md`.
+This phase keeps the verified Pet System entity and five-language page, strengthens the home-to-Top-Up funnel, and preserves low-intent information pages by placing only one contextual CTA after the content. Numeric game data that lacks sufficient evidence remains out of production and is tracked in `DATA_CONFLICT_REPORT.md`.

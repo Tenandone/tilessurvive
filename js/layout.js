@@ -297,7 +297,23 @@
     const paths = getComponentPaths(currentLang);
 
     try {
-      // 기존 헤더/푸터가 있더라도 제거 후 공통 템플릿으로 강제 통일
+      const legacyHeader = findLegacyHeader();
+      const legacyFooter = findLegacyFooter();
+
+      // Most legacy content pages already contain a complete header and footer.
+      // Replacing them after first paint caused a large layout shift, so keep the
+      // static shell and only wire up its interactive controls.
+      if (legacyHeader && legacyFooter) {
+        const headerTarget = document.getElementById("site-header");
+        const footerTarget = document.getElementById("site-footer");
+        if (headerTarget && !headerTarget.textContent.trim()) headerTarget.remove();
+        if (footerTarget && !footerTarget.textContent.trim()) footerTarget.remove();
+        setupLanguageSelectors(currentLang);
+        setupDrawer();
+        updateBottomNavActive(currentLang);
+        return;
+      }
+
       removeLegacyLayout();
 
       // placeholder가 없어도 자동 생성
@@ -338,16 +354,16 @@
     if (main.querySelector('a[href*="/top-up/"]') || main.querySelector('a[href*="lootbar.gg"],a[href*="lootbar.com"]')) return;
 
     const copy = {
-      ko: ["충전 옵션이 필요한가요?", "현재 타일서바이벌 충전 혜택과 리워드 조건을 확인하세요.", "충전 혜택 보기"],
-      en: ["Need more resources?", "Review current Tile Survive top-up options and reward conditions.", "View top-up options"],
-      ja: ["追加の資源が必要ですか？", "現在の Tiles Survive チャージ特典と報酬条件を確認できます。", "チャージ特典を見る"],
-      "zh-tw": ["需要更多資源嗎？", "查看目前的 Tiles Survive 儲值選項與獎勵條件。", "查看儲值選項"],
-      ru: ["Нужны дополнительные ресурсы?", "Проверьте текущие варианты пополнения Tiles Survive и условия наград.", "Посмотреть варианты пополнения"]
+      ko: ["충전 혜택을 확인해 보세요", "패키지별 할인과 월 2회 쿠폰 지급 조건을 결제 전에 비교할 수 있습니다.", "타일서바이벌 최대 22% 할인 충전 확인"],
+      en: ["Check current top-up benefits", "Compare package savings and twice-monthly coupon conditions before paying.", "Check Tile Survive Top-Up Savings"],
+      ja: ["チャージ特典を確認", "支払い前にパッケージ別の割引と月2回のクーポン条件を比較できます。", "Tiles Survive のチャージ特典を確認"],
+      "zh-tw": ["查看目前的儲值優惠", "付款前比較禮包折扣與每月兩次的優惠券發放條件。", "查看 Tiles Survive 儲值優惠"],
+      ru: ["Проверьте текущие бонусы пополнения", "Сравните скидки на наборы и условия выдачи купонов дважды в месяц до оплаты.", "Проверить выгоду пополнения Tile Survive"]
     };
     const text = copy[lang] || copy.en;
     const style = document.createElement("style");
     style.id = "infoAffiliateStyles";
-    style.textContent = ".info-affiliate-card{margin-top:24px;padding:18px 20px;border:1px solid #cbd5e1;border-left:4px solid #0f766e;border-radius:14px;background:#f8fafc}.info-affiliate-card h2{margin:0 0 5px;font-size:20px}.info-affiliate-card p{margin:0;color:#475569}.info-affiliate-card a{display:inline-flex;align-items:center;justify-content:center;min-height:42px;margin-top:13px;padding:0 14px;border:1px solid #cbd5e1;border-radius:10px;background:#fff;color:#0f172a;font-weight:800;text-decoration:none}";
+    style.textContent = ".info-affiliate-card{margin-top:24px;padding:18px 20px;border:1px solid #cbd5e1;border-left:4px solid #2f6e5d;border-radius:8px;background:#f8faf8}.info-affiliate-card h2{margin:0 0 5px;font-size:20px}.info-affiliate-card p{margin:0;color:#475569}.info-affiliate-card a{display:inline-flex;align-items:center;justify-content:center;min-height:42px;margin-top:13px;padding:0 14px;border:1px solid #17211b;border-radius:8px;background:#17211b;color:#fff;font-weight:800;text-decoration:none}.info-affiliate-card a:focus-visible{outline:3px solid #d4a83f;outline-offset:3px}";
     if (!document.getElementById(style.id)) document.head.appendChild(style);
 
     const card = document.createElement("section");
