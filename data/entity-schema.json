@@ -1,0 +1,55 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "TilesSurvive.net content entity",
+  "description": "Common provenance and relationship fields for future structured game data.",
+  "type": "object",
+  "required": ["id", "type", "slug", "names", "status", "sources"],
+  "properties": {
+    "id": { "type": "string", "minLength": 1 },
+    "type": {
+      "enum": ["hero", "season", "event", "building", "research", "gear", "item", "guide", "tool", "update"]
+    },
+    "slug": { "type": "string", "pattern": "^[a-z0-9]+(?:-[a-z0-9]+)*$" },
+    "names": {
+      "type": "object",
+      "properties": {
+        "en": { "type": "string" },
+        "ko": { "type": "string" },
+        "ja": { "type": "string" },
+        "zh-tw": { "type": "string" },
+        "ru": { "type": "string" }
+      },
+      "required": ["en"]
+    },
+    "status": { "enum": ["verified", "candidate", "conflict"] },
+    "lastVerified": { "type": ["string", "null"], "format": "date" },
+    "facts": { "type": "object", "additionalProperties": true },
+    "relationships": {
+      "type": "object",
+      "properties": {
+        "heroes": { "type": "array", "items": { "type": "string" } },
+        "seasons": { "type": "array", "items": { "type": "string" } },
+        "events": { "type": "array", "items": { "type": "string" } },
+        "gear": { "type": "array", "items": { "type": "string" } },
+        "items": { "type": "array", "items": { "type": "string" } },
+        "guides": { "type": "array", "items": { "type": "string" } },
+        "tools": { "type": "array", "items": { "type": "string" } }
+      },
+      "additionalProperties": false
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": ["url", "kind", "checkedAt"],
+        "properties": {
+          "url": { "type": "string", "format": "uri" },
+          "kind": { "enum": ["official", "in-game", "independent"] },
+          "checkedAt": { "type": "string", "format": "date" },
+          "note": { "type": "string" }
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}

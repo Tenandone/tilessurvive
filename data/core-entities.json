@@ -1,0 +1,63 @@
+{
+  "generatedAt": "2026-09-18",
+  "entities": [
+    {
+      "id": "season-4-blizzard-era",
+      "type": "season",
+      "slug": "season-4",
+      "names": { "en": "Season IV: Blizzard Era" },
+      "status": "verified",
+      "lastVerified": "2026-09-18",
+      "facts": {
+        "availability": "Rolls out according to each State's Season progress.",
+        "announcedFeatures": ["new monsters", "new environments", "new companions", "new gameplay"]
+      },
+      "relationships": { "heroes": [], "seasons": [], "events": [], "gear": [], "items": [], "guides": [], "tools": [] },
+      "sources": [{ "url": "https://tilesurvivegame.com/en/blog/1107", "kind": "official", "checkedAt": "2026-09-18", "note": "v2.5.900 Patch Notes" }]
+    },
+    {
+      "id": "system-gift-system",
+      "type": "event",
+      "slug": "gift-system",
+      "names": { "en": "Gift System" },
+      "status": "verified",
+      "lastVerified": "2026-09-18",
+      "facts": { "update": "v2.6.0", "features": ["direct and Chief Post gifting", "batch gifting for selected gifts", "cross-State gifting", "anonymous gifting", "Gift EXP"] },
+      "relationships": { "heroes": [], "seasons": [], "events": [], "gear": [], "items": [], "guides": [], "tools": [] },
+      "sources": [{ "url": "https://tilesurvivegame.com/en/blog/1121", "kind": "official", "checkedAt": "2026-09-18", "note": "v2.6.0 Patch Notes" }]
+    },
+    {
+      "id": "event-reservoir-glory-clash",
+      "type": "event",
+      "slug": "reservoir-glory-clash",
+      "names": { "en": "Reservoir: Glory Clash" },
+      "status": "verified",
+      "lastVerified": "2026-09-18",
+      "facts": { "features": ["tier system", "cross-State matching"] },
+      "relationships": { "heroes": [], "seasons": [], "events": ["reservoir-raid"], "gear": [], "items": [], "guides": ["reservoir-raid"], "tools": [] },
+      "sources": [{ "url": "https://tilesurvivegame.com/en/blog/1025", "kind": "official", "checkedAt": "2026-09-18", "note": "v2.4.500 Patch Notes" }]
+    },
+    {
+      "id": "system-might-of-the-ocean",
+      "type": "research",
+      "slug": "might-of-the-ocean",
+      "names": { "en": "Might of the Ocean" },
+      "status": "verified",
+      "lastVerified": "2026-09-18",
+      "facts": { "category": "Settlement Tech", "focus": "Mariner hero Power bonuses" },
+      "relationships": { "heroes": ["shark", "lagnar"], "seasons": [], "events": [], "gear": [], "items": [], "guides": [], "tools": [] },
+      "sources": [{ "url": "https://tilesurvivegame.com/en/blog/1032", "kind": "official", "checkedAt": "2026-09-18", "note": "v2.4.600 Patch Notes" }]
+    },
+    {
+      "id": "system-wall-of-honor",
+      "type": "hero",
+      "slug": "wall-of-honor",
+      "names": { "en": "Wall of Honor" },
+      "status": "verified",
+      "lastVerified": "2026-09-18",
+      "facts": { "unlock": "A Hero reaches 10 Stars", "location": "Hero Academy", "grouping": "Faction" },
+      "relationships": { "heroes": [], "seasons": [], "events": [], "gear": [], "items": ["hero-fragments", "hero-exp"], "guides": [], "tools": [] },
+      "sources": [{ "url": "https://tilesurvivegame.com/en/blog/1078", "kind": "official", "checkedAt": "2026-09-18", "note": "v2.5.700 Patch Notes" }]
+    }
+  ]
+}

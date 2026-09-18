@@ -1,0 +1,2771 @@
+{
+  "generatedAt": "2026-09-18T11:07:26.371Z",
+  "itemCount": 395,
+  "items": [
+    {
+      "language": "en",
+      "type": "about",
+      "title": "About TilesSurvive.net | TilesSurvive.net",
+      "description": "TilesSurvive.net is an independent multilingual data and guide hub for Tiles Survive players.",
+      "url": "/en/about/"
+    },
+    {
+      "language": "en",
+      "type": "affiliate-disclosure",
+      "title": "Affiliate Disclosure | TilesSurvive.net",
+      "description": "How TilesSurvive.net uses affiliate links and keeps editorial content independent.",
+      "url": "/en/affiliate-disclosure/"
+    },
+    {
+      "language": "en",
+      "type": "database",
+      "title": "Alliance Duel Guide Table | Tiles Survive Database | TilesSurvive.net",
+      "description": "This is the Tiles Survive Alliance Duel guide table. You can check participation requirements, event flow, recommended missions by stage, Battle timing, Turtle timing, and recommended King Buff timing at a glance.",
+      "url": "/en/database/alliance-duel/"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
+      "title": "Becca | Tiles Survive Hero | TilesSurvive.net",
+      "description": "Detailed Becca hero page for Tiles Survive. Check hero story, combat traits, max level and star stats, star bonus, skills, and signature weapon in one place.",
+      "url": "/en/heroes/beka/"
+    },
+    {
+      "language": "en",
+      "type": "database",
+      "title": "Behemoth Cell Cost Table | Tiles Survive Database | TilesSurvive.net",
+      "description": "This is the Tiles Survive Behemoth Cell star cost table. You can check the per-stage cost, subtotal, and cumulative total from 1 Star to 60 Stars at a glance.",
+      "url": "/en/database/behemoth-cell/"
+    },
+    {
+      "language": "en",
+      "type": "building",
+      "title": "Blessed Healing Stele | Tiles Survive Buildings | TilesSurvive.net",
+      "description": "Detailed page for the Blessed Healing Stele in Tiles Survive, including its overview, light wound conversion rate, and power by level.",
+      "url": "/en/buildings/blessed-healing-stele/"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
+      "title": "Candy | Tiles Survive Hero | TilesSurvive.net",
+      "description": "Candy hero detail page for Tiles Survive. This page summarizes the SSR hero overview, combat traits, max level and star stats, star bonus, skills, and signature weapon in one place.",
+      "url": "/en/heroes/candy/"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
+      "title": "Chef | Tiles Survive Hero | TilesSurvive.net",
+      "description": "Detailed Tiles Survive hero page for Chef. This page covers hero background, combat traits, max level and star stats, star bonus, and skills for this SR hero.",
+      "url": "/en/heroes/chef-ken/"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
+      "title": "Chiron | Tiles Survive Hero | TilesSurvive.net",
+      "description": "Chiron hero detail page for Tiles Survive. This page summarizes the SSR hero overview, combat traits, max level and star stats, star bonus, skills, and signature gear in one place.",
+      "url": "/en/heroes/kiron/"
+    },
+    {
+      "language": "en",
+      "type": "building",
+      "title": "Comms Outpost | Tiles Survive Buildings | TilesSurvive.net",
+      "description": "This is the detailed building page for the Comms Outpost in Tiles Survive. It organizes the building overview, feature guide, and help system summary.",
+      "url": "/en/buildings/comms-outpost/"
+    },
+    {
+      "language": "en",
+      "type": "contact",
+      "title": "Contact TilesSurvive.net | TilesSurvive.net",
+      "description": "Contact channels for corrections, source submissions, privacy questions, and partnership enquiries.",
+      "url": "/en/contact/"
+    },
+    {
+      "language": "en",
+      "type": "building",
+      "title": "Cursed Wound Stele | Tiles Survive Buildings | TilesSurvive.net",
+      "description": "Detailed building page for Cursed Wound Stele in Tiles Survive, including overview, enemy lightly wounded conversion rate, and power by level.",
+      "url": "/en/buildings/cursed-wound-stele/"
+    },
+    {
+      "language": "en",
+      "type": "building",
+      "title": "Enlistment Office | Tiles Survive Buildings | TilesSurvive.net",
+      "description": "Detailed building page for the Enlistment Office in Tiles Survive, covering Loyalty, recruitable troop count, capacity, and operating rules.",
+      "url": "/en/buildings/enlistment-office/"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
+      "title": "Eva | Tiles Survive Hero | TilesSurvive.net",
+      "description": "Detailed Eva hero page for Tiles Survive. Check hero story, faction, combat traits, max level and star stats, star bonus, and skills in one place.",
+      "url": "/en/heroes/eva/"
+    },
+    {
+      "language": "en",
+      "type": "event",
+      "title": "Events and Systems | TilesSurvive.net",
+      "description": "Verified Tiles Survive event and system changes from official patch notes.",
+      "url": "/en/events/"
+    },
+    {
+      "language": "en",
+      "type": "database",
+      "title": "Exclusive Gear Upgrade Table | Tiles Survive Database | TilesSurvive.net",
+      "description": "This is the Tiles Survive Exclusive Gear Upgrade Table. It organizes exclusive gear level-up costs and the final total required amount.",
+      "url": "/en/database/exclusive-gear/"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
+      "title": "Freja | Tiles Survive Hero | TilesSurvive.net",
+      "description": "Detailed Freja hero page for Tiles Survive. Check hero story, combat traits, max level and star stats, star bonus, and skills in one place.",
+      "url": "/en/heroes/freya/"
+    },
+    {
+      "language": "en",
+      "type": "building",
+      "title": "Garrison Station | Tiles Survive Buildings | TilesSurvive.net",
+      "description": "A detailed page for Tiles Survive Garrison Station, covering maximum troop capacity and troop management information.",
+      "url": "/en/buildings/garrison-station/"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
+      "title": "Ghost | Tiles Survive Hero | TilesSurvive.net",
+      "description": "Ghost hero page for Tiles Survive. This rare ranged hero guide covers hero story, faction, combat traits, max level and star stats, star bonus, and skills in one page.",
+      "url": "/en/heroes/ghost/"
+    },
+    {
+      "language": "en",
+      "type": "building",
+      "title": "Golden Aegis | Tiles Survive Buildings | TilesSurvive.net",
+      "description": "Tiles Survive building detail page for Golden Aegis. Check the building overview, Hero Defense bonus by level, and Power in one place.",
+      "url": "/en/buildings/aegis-monument/"
+    },
+    {
+      "language": "en",
+      "type": "building",
+      "title": "Guardian of Life | Tiles Survive Buildings | TilesSurvive.net",
+      "description": "This is the detailed building page for Guardian of Life in Tiles Survive. It organizes the building overview, Hero Health by level, and Power values at a glance.",
+      "url": "/en/buildings/guardian-of-life-monument/"
+    },
+    {
+      "language": "en",
+      "type": "building",
+      "title": "Hero Academy | Tiles Survive Buildings | TilesSurvive.net",
+      "description": "Detailed building page for Hero Academy in Tiles Survive, including building overview, hero skill book production per hour, and power by level.",
+      "url": "/en/buildings/hero-academy/"
+    },
+    {
+      "language": "en",
+      "type": "database",
+      "title": "Hero EXP | Tiles Survive Database | TilesSurvive.net",
+      "description": "This is the Tiles Survive Hero EXP data page. It organizes the total EXP required from hero level 1 to 150 and the key growth points.",
+      "url": "/en/database/hero-exp/"
+    },
+    {
+      "language": "en",
+      "type": "database",
+      "title": "Hero Legend Gear Star Upgrade Cost Chart | Tiles Survive Hero Data | TilesSurvive.net",
+      "description": "A complete overview of the Hero Legend Gear star upgrade cost chart and level bonus attributes for Tiles Survive.",
+      "url": "/en/database/legend-gear-star/"
+    },
+    {
+      "language": "en",
+      "type": "database",
+      "title": "Hero Star Chart | Tiles Survive Hero Data | TilesSurvive.net",
+      "description": "This page organizes the Tiles Survive SSR Hero Star Chart and Season Promotion Hero Star Chart at a glance.",
+      "url": "/en/database/hero-star/"
+    },
+    {
+      "language": "en",
+      "type": "building",
+      "title": "Hospital | Tiles Survive Buildings | TilesSurvive.net",
+      "description": "A detailed page for the Tiles Survive Hospital, covering capacity, free healing, healing rules, and key operation notes.",
+      "url": "/en/buildings/hospital/"
+    },
+    {
+      "language": "en",
+      "type": "guide",
+      "title": "How to Redeem Tiles Survive Gift Codes | Tiles Survive Guide | TilesSurvive.net",
+      "description": "A guide that explains how to redeem Tiles Survive gift codes and organizes current active codes, permanent codes, and expired codes in one place.",
+      "url": "/en/guides/gift-code-how-to-use/"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
+      "title": "Jacob | Tiles Survive Hero | TilesSurvive.net",
+      "description": "Detailed Tiles Survive hero page for Jacob. This page covers hero background, combat traits, max level and star stats, star bonus, skills, and signature gear for this SSR hero.",
+      "url": "/en/heroes/jacob/"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
+      "title": "Kiki | Tiles Survive Hero | TilesSurvive.net",
+      "description": "Detailed page for Kiki in Tiles Survive. View hero introduction, battle traits, max level and 10-star stats, star bonus, skills, and signature gear in one place.",
+      "url": "/en/heroes/kiki/"
+    },
+    {
+      "language": "en",
+      "type": "building",
+      "title": "Lab | Tiles Survive Buildings | TilesSurvive.net",
+      "description": "This is the Tiles Survive Lab building page. It organizes Development, Economy, Hero, Troop, Comm Outpost, Alliance Duel, Special Forces, Infected Elimination, and Doomsday Transport research categories at a glance.",
+      "url": "/en/buildings/lab/"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
+      "title": "Lagnar | SSR Sea Melee Hero | TilesSurvive.net",
+      "description": "A Tiles Survive Lagnar SSR hero guide covering Sea faction, melee role, max level attributes, star bonus, skills, and exclusive equipment.",
+      "url": "/en/heroes/lagnar/"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
+      "title": "Layla | Tiles Survive Hero | TilesSurvive.net",
+      "description": "Layla hero detail page for Tiles Survive. This page summarizes hero introduction, battle traits, max level and star stats, star bonus, skills, and signature weapon for this SSR hero.",
+      "url": "/en/heroes/laila/"
+    },
+    {
+      "language": "en",
+      "type": "behemoth",
+      "title": "Legendary Griffin | Tiles Survive Behemoth | TilesSurvive.net",
+      "description": "This is the detailed Tiles Survive behemoth page for Legendary Griffin. It organizes star rank upgrade effects, event boosts, appearance changes, featured talents, and the star rank chart.",
+      "url": "/en/behemoths/legend-griffin/"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
+      "title": "Lucky | Tiles Survive Hero | TilesSurvive.net",
+      "description": "Detailed page for Lucky in Tiles Survive. View hero introduction, ascended hero info, battle traits, max level and 10-star stats, star bonus, and skills in one place.",
+      "url": "/en/heroes/lucky/"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
+      "title": "Maddie | Tiles Survive Hero | TilesSurvive.net",
+      "description": "Detailed hero page for Maddie in Tiles Survive. This page covers hero story, battle traits, max level and star stats, star bonus, skills, and signature weapon for this SSR hero.",
+      "url": "/en/heroes/maddy/"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
+      "title": "Mike | Tiles Survive Hero | TilesSurvive.net",
+      "description": "Tiles Survive hero Mike detail page. View his story, battle traits, max level and 10-star stats, 10-star bonus, skills, and signature gear in one place.",
+      "url": "/en/heroes/mike/"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
+      "title": "Nikola | Tiles Survive Hero | TilesSurvive.net",
+      "description": "Detailed Tiles Survive hero page for Nikola. This page covers hero background, combat traits, max level and star stats, star bonus, skills, and signature gear for this SSR hero.",
+      "url": "/en/heroes/nikola/"
+    },
+    {
+      "language": "en",
+      "type": "building",
+      "title": "Power Plant | Tiles Survive Buildings | TilesSurvive.net",
+      "description": "A detailed page for Tiles Survive Power Plant upgrade costs, upgrade time, power, and skill information by level.",
+      "url": "/en/buildings/power-plant/"
+    },
+    {
+      "language": "en",
+      "type": "privacy",
+      "title": "Privacy | TilesSurvive.net",
+      "description": "Privacy information for TilesSurvive.net, including analytics, cookies, and external links.",
+      "url": "/en/privacy/"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
+      "title": "Ray | Tiles Survive Hero | TilesSurvive.net",
+      "description": "Ray hero detail page for Tiles Survive. This page summarizes the SSR hero overview, combat traits, max level and star stats, star bonus, skills, and signature weapon in one place.",
+      "url": "/en/heroes/ray/"
+    },
+    {
+      "language": "en",
+      "type": "guide",
+      "title": "Reservoir Raid Victory Guide | Tiles Survive Guide | TilesSurvive.net",
+      "description": "A complete Tiles Survive Reservoir Raid guide covering entry requirements, win conditions, key buildings, team roles, phase-based strategy, and extra tips.",
+      "url": "/en/guides/reservoir-raid/"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
+      "title": "Rosie | Tiles Survive Hero | TilesSurvive.net",
+      "description": "Rosie hero detail page for Tiles Survive. This page summarizes hero introduction, battle traits, max level and star stats, star bonus, skills, and signature weapon for this SSR hero.",
+      "url": "/en/heroes/rosie/"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
+      "title": "Rusty | Tiles Survive Hero | TilesSurvive.net",
+      "description": "Rusty hero detail page for Tiles Survive. Check hero story, faction, combat traits, max level and star stats, skills, and star bonus in one place.",
+      "url": "/en/heroes/rusty/"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
+      "title": "Sarge | Tiles Survive Hero | TilesSurvive.net",
+      "description": "Detailed page for Sarge in Tiles Survive. View hero introduction, ascended hero info, battle traits, max level and star stats, star bonus, and skills in one place.",
+      "url": "/en/heroes/sarge/"
+    },
+    {
+      "language": "en",
+      "type": "search",
+      "title": "Search TilesSurvive.net | TilesSurvive.net",
+      "description": "Search heroes, events, seasons, items, gear, guides, tools, and other Tiles Survive pages.",
+      "url": "/en/search/"
+    },
+    {
+      "language": "en",
+      "type": "season",
+      "title": "Season I: Turbulent Tides Guide | Tiles Survive Season Guide | TilesSurvive.net",
+      "description": "This is the Tiles Survive Season I Turbulent Tides guide. It covers ship choice, season goals, season pass, season weekly pass, monster extermination, fishing tournament, hero promotion, and KvK in one place.",
+      "url": "/en/seasons/season-1/"
+    },
+    {
+      "language": "en",
+      "type": "season",
+      "title": "Season II: Awakening of Dragons Guide | Tiles Survive Season Guide | TilesSurvive.net",
+      "description": "This is the Tiles Survive Season II Awakening of Dragons guide. It organizes season buildings, season rewards, season content, season reset, dragon genes, seasonal dragon clans, season skills, and season settlement in one place.",
+      "url": "/en/seasons/season-2/"
+    },
+    {
+      "language": "en",
+      "type": "season",
+      "title": "Season III Undecided Guide | Tiles Survive Season Guide | TilesSurvive.net",
+      "description": "This is the Tiles Survive Season III undecided guide. It organizes season goals, pass, weekly pass, events, hero promotion, and KvK in one place.",
+      "url": "/en/seasons/season-3/"
+    },
+    {
+      "language": "en",
+      "type": "season",
+      "title": "Season IV: Blizzard Era | TilesSurvive.net",
+      "description": "Officially announced Season IV information for Tiles Survive, including rollout and currently confirmed features.",
+      "url": "/en/seasons/season-4/"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
+      "title": "Shark | Sea SSR Melee Hero | TilesSurvive.net",
+      "description": "Shark is a Sea SSR melee hero in Tiles Survive. This guide summarizes Wave Crash, Shark Wave, Frontline Support, Deep Sea Invincible, and the Deep Sea Anchor exclusive equipment.",
+      "url": "/en/heroes/shark/"
+    },
+    {
+      "language": "en",
+      "type": "database",
+      "title": "Skill Book Cost Table | Tiles Survive Database | TilesSurvive.net",
+      "description": "This is the Tiles Survive Skill Book cost table. It organizes the Skill Book cost per level from Combat Skill level 1 to 40, along with the final total amount required.",
+      "url": "/en/database/skill-book/"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
+      "title": "Tara | Tiles Survive Hero | TilesSurvive.net",
+      "description": "Detailed hero page for Tara in Tiles Survive. This page covers hero story, battle traits, max level and star stats, star bonus, skills, and signature gear for this SSR hero.",
+      "url": "/en/heroes/tara/"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
+      "title": "Tarzan | Tiles Survive Hero | TilesSurvive.net",
+      "description": "Tarzan hero page for Tiles Survive. This SSR melee hero guide covers hero story, combat traits, max level and star stats, star bonus, skills, and signature gear in one page.",
+      "url": "/en/heroes/tazan/"
+    },
+    {
+      "language": "en",
+      "type": "term",
+      "title": "Terms of Use | TilesSurvive.net",
+      "description": "Terms for using the independent TilesSurvive.net information hub.",
+      "url": "/en/terms/"
+    },
+    {
+      "language": "en",
+      "type": "behemoth",
+      "title": "Tidal Drake | Tiles Survive Behemoth | TilesSurvive.net",
+      "description": "This is the detailed Tiles Survive behemoth page for Tidal Drake. It organizes level upgrade effects, event boosts, appearance changes, featured talents, and the star rank chart.",
+      "url": "/en/behemoths/marine-drake/"
+    },
+    {
+      "language": "en",
+      "type": "building",
+      "title": "Tiles Survive Barracks | Upgrade Costs and Troop Unlocks | TilesSurvive.net",
+      "description": "A detailed page for Tiles Survive Barracks upgrade costs, upgrade time, prerequisite buildings, and troop unlock levels.",
+      "url": "/en/buildings/barracks/"
+    },
+    {
+      "language": "en",
+      "type": "guide",
+      "title": "Tiles Survive Beginner Guide | Early Game Tips for New Players | TilesSurvive.net",
+      "description": "A beginner guide for Tiles Survive new players. Learn how to choose a new server, pick the right alliance, manage farm accounts, use speedups efficiently, plan your Power Plant growth, and build a solid early-game routine.",
+      "url": "/en/guides/beginner-guide/"
+    },
+    {
+      "language": "en",
+      "type": "behemoth",
+      "title": "Tiles Survive Behemoth List | TilesSurvive.net",
+      "description": "This is the Tiles Survive behemoth list page. It organizes the currently confirmed behemoths in one clear index page.",
+      "url": "/en/behemoths/"
+    },
+    {
+      "language": "en",
+      "type": "building",
+      "title": "Tiles Survive Building List | TilesSurvive.net",
+      "description": "Tiles Survive building list page. Browse Power Plant, Comms Outpost, Barracks, Lab, Hospital, Enlistment Office, Garrison, Hero Academy, Warbringer Monument, Guardian of Life Monument, Aegis Monument, Blessed Healing Stele, and Cursed Wound Stele in one place.",
+      "url": "/en/buildings/"
+    },
+    {
+      "language": "en",
+      "type": "home",
+      "title": "Tiles Survive Data Hub | Database Guides Seasons Codes | TilesSurvive.net",
+      "description": "A long-term Tiles Survive data hub that organizes database pages, guides, seasons, and gift codes in one place.",
+      "url": "/en/"
+    },
+    {
+      "language": "en",
+      "type": "database",
+      "title": "Tiles Survive Database List | TilesSurvive.net",
+      "description": "This is the Tiles Survive database list page. You can browse all currently published database pages at a glance.",
+      "url": "/en/database/"
+    },
+    {
+      "language": "en",
+      "type": "guide",
+      "title": "Tiles Survive Discount Top-Up Guide | Self Top-Up Steps, Requirements, 2FA, Coupon Info | TilesSurvive.net",
+      "description": "This guide explains everything you need to check before using self top-up for Tiles Survive, including account requirements, direct Google or Facebook login, 2FA setup, Google Play Games login not supported, the actual payment flow, and coupon usarge.",
+      "url": "/en/guides/discount-topup/"
+    },
+    {
+      "language": "en",
+      "type": "guide",
+      "title": "Tiles Survive Discount Top-Up Promotion Guide | Exclusive Link Benefits, Monthly Recharge Coupons, New User Code | TilesSurvive.net",
+      "description": "This is the Tiles Survive discount top-up promotion guide. If you join and top up through the exclusive link, extra coupons and monthly cumulative recharge benefits are tracked automatically. New users can also receive extra rewards with code #s4qU.",
+      "url": "/en/guides/discount-topup-promotion/"
+    },
+    {
+      "language": "en",
+      "type": "tool",
+      "title": "Tiles Survive Event Helper - Event Schedule and Resource Guide",
+      "description": "Use the Tiles Survive Event Helper to check event types, required resources, recommended actions, and resource spending decisions.",
+      "url": "/en/tools/event-helper/"
+    },
+    {
+      "language": "en",
+      "type": "event-helper",
+      "title": "Tiles Survive Event Helper - Event Schedule and Resource Guide",
+      "description": "Use the Tiles Survive Event Helper to check event types, required resources, recommended actions, and resource spending decisions.",
+      "url": "/en/event-helper/"
+    },
+    {
+      "language": "en",
+      "type": "code",
+      "title": "Tiles Survive Gift Codes | Active Codes, Permanent Codes, Expiry Countdown | TilesSurvive.net",
+      "description": "Check active Tiles Survive gift codes, permanent codes, and the next expiry countdown on one page. Includes Asia, Europe, and America expiry times, copy buttons, and FAQ.",
+      "url": "/en/codes/"
+    },
+    {
+      "language": "en",
+      "type": "guide",
+      "title": "Tiles Survive Guide List | TilesSurvive.net",
+      "description": "This is the Tiles Survive guide list page. You can quickly browse all currently published guides including beginner guides, growth tips, management tips, event guides, and discount top-up guides.",
+      "url": "/en/guides/"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
+      "title": "Tiles Survive Hero List | TilesSurvive.net",
+      "description": "Tiles Survive hero list page. View Mountain, Wasteland, and Sky heroes at a glance, grouped by SSR, SR, and R ranks.",
+      "url": "/en/heroes/"
+    },
+    {
+      "language": "en",
+      "type": "season",
+      "title": "Tiles Survive Season Monument List | TilesSurvive.net",
+      "description": "Browse the Tiles Survive season monument list. Season I, Season II, and Season III are organized in one clear index page.",
+      "url": "/en/seasons/"
+    },
+    {
+      "language": "en",
+      "type": "tool",
+      "title": "Tiles Survive Speedup Calculator | TilesSurvive.net",
+      "description": "A simple Tiles Survive speedup calculator that adds days, hours, and minutes into total minutes and hours.",
+      "url": "/en/tools/speedup-calculator/"
+    },
+    {
+      "language": "en",
+      "type": "tool",
+      "title": "Tiles Survive Tools Hub | Event Helper, Reward Finder, Calculators | TilesSurvive.net",
+      "description": "A Tiles Survive tools hub for the event helper, speedup calculator, reward finder, and useful database links.",
+      "url": "/en/tools/"
+    },
+    {
+      "language": "en",
+      "type": "top-up",
+      "title": "Tiles Survive Top-Up Guide | TilesSurvive.net",
+      "description": "A clear guide to preparing a Tiles Survive top-up, checking account details, and using the existing LootBar referral safely.",
+      "url": "/en/top-up/"
+    },
+    {
+      "language": "en",
+      "type": "update",
+      "title": "Tiles Survive Updates | TilesSurvive.net",
+      "description": "Track official Tiles Survive patch notes and developer feedback without copying full announcements.",
+      "url": "/en/updates/"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
+      "title": "Tony | Tiles Survive Hero | TilesSurvive.net",
+      "description": "Detailed page for Tony in Tiles Survive. View hero introduction, battle traits, max level and 10-star stats, star bonus, skills, and signature weapon in one place.",
+      "url": "/en/heroes/tony/"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
+      "title": "Travis | Tiles Survive Hero | TilesSurvive.net",
+      "description": "Tiles Survive hero Travis detail page. View his introduction, faction, battle traits, max level and star stats, star bonus, and skills in one place.",
+      "url": "/en/heroes/travis/"
+    },
+    {
+      "language": "en",
+      "type": "database",
+      "title": "Turtle Race | Tiles Survive Database | TilesSurvive.net",
+      "description": "This is the recommended Turtle Race chart for Tiles Survive Alliance Duel. You can check recommended mission phases, battle timing, turtle timing, and king buff timing at a glance.",
+      "url": "/en/database/turtle-race/"
+    },
+    {
+      "language": "en",
+      "type": "database",
+      "title": "VIP Points | Tiles Survive Database | TilesSurvive.net",
+      "description": "This is the Tiles Survive VIP Points page. It organizes the VIP level table, privilege shop, privilege roulette, daily purchase limits, and probability information at a glance.",
+      "url": "/en/database/vip-point/"
+    },
+    {
+      "language": "en",
+      "type": "building",
+      "title": "Warbringer Monument | Tiles Survive Buildings | TilesSurvive.net",
+      "description": "Tiles Survive building detail page for the Warbringer Monument. Check the building overview, Hero Attack bonus by level, and Power in one place.",
+      "url": "/en/buildings/warbringer-monument/"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
+      "title": "Wright | Tiles Survive Hero | TilesSurvive.net",
+      "description": "Wright hero detail page for Tiles Survive. This page summarizes hero introduction, battle traits, max level and star stats, star bonus, skills, and signature gear for this SSR hero.",
+      "url": "/en/heroes/light/"
+    },
+    {
+      "language": "ja",
+      "type": "building",
+      "title": "加護治療の碑 | タイルズサバイバル 建物 | TilesSurvive.net",
+      "description": "タイルズサバイバル 加護治療の碑の概要、軽傷転化率、戦闘力をレベル別に整理した詳細ページです。",
+      "url": "/ja/buildings/blessed-healing-stele/"
+    },
+    {
+      "language": "ja",
+      "type": "behemoth",
+      "title": "巨獣グリフォン | タイルズサバイバル ベヒーモス | TilesSurvive.net",
+      "description": "タイルズサバイバル ベヒーモス 巨獣グリフォンの詳細ページです。星ランク強化、イベント追加効果、外見変化、代表タレント、星ランク表をまとめました。",
+      "url": "/ja/behemoths/legend-griffin/"
+    },
+    {
+      "language": "ja",
+      "type": "database",
+      "title": "同盟対決おすすめ表 | Tiles Survive Database | TilesSurvive.net",
+      "description": "タイルズサバイバルの同盟対決おすすめ表です。参加条件、進行方式、段階別のおすすめミッションとバトル、カメ、および国王バフのおすすめ区間をひと目で確認できます。",
+      "url": "/ja/database/alliance-duel/"
+    },
+    {
+      "language": "ja",
+      "type": "building",
+      "title": "連絡所 | タイルズサバイバル 建物 | TilesSurvive.net",
+      "description": "タイルズサバイバル建物「連絡所」の詳細ページです。建物紹介、機能案内、支援システム要約を整理したページです。",
+      "url": "/ja/buildings/comms-outpost/"
+    },
+    {
+      "language": "ja",
+      "type": "term",
+      "title": "利用規約 | TilesSurvive.net",
+      "description": "独立情報サイト TilesSurvive.net の利用条件です。",
+      "url": "/ja/terms/"
+    },
+    {
+      "language": "ja",
+      "type": "building",
+      "title": "病院 | タイルズサバイバル 建物 | TilesSurvive.net",
+      "description": "タイルズサバイバルの病院の収容力、無料治療、治療ルールと運用時の注意点を整理した詳細ページです。",
+      "url": "/ja/buildings/hospital/"
+    },
+    {
+      "language": "ja",
+      "type": "building",
+      "title": "神盾の記念碑 | タイルズサバイバル 建物 | TilesSurvive.net",
+      "description": "タイルズサバイバル建物 神盾の記念碑 詳細ページです。建物紹介、レベル別英雄防御、戦闘力情報をひと目で整理しました。",
+      "url": "/ja/buildings/aegis-monument/"
+    },
+    {
+      "language": "ja",
+      "type": "database",
+      "title": "英雄星ランク表 | タイルサバイバル英雄データ | TilesSurvive.net",
+      "description": "タイルサバイバルSSR英雄星ランク表とシーズン昇格英雄星ランク表をひと目で確認できるページです。",
+      "url": "/ja/database/hero-star/"
+    },
+    {
+      "language": "ja",
+      "type": "building",
+      "title": "英雄学院 | タイルズサバイバル 建物 | TilesSurvive.net",
+      "description": "タイルズサバイバル 英雄学院の建物概要、英雄スキルブックの時間当たり生産量、戦闘力をレベル別に整理した詳細ページです。",
+      "url": "/ja/buildings/hero-academy/"
+    },
+    {
+      "language": "ja",
+      "type": "database",
+      "title": "英雄レジェンド装備星ランク消費表 | タイルサバイバル英雄データ | TilesSurvive.net",
+      "description": "タイルサバイバル英雄レジェンド装備の星ランク別消費量とレベル追加属性をひと目で確認できるページです。",
+      "url": "/ja/database/legend-gear-star/"
+    },
+    {
+      "language": "ja",
+      "type": "building",
+      "title": "勇士の記念碑 | タイルズサバイバル 建物 | TilesSurvive.net",
+      "description": "タイルズサバイバル建物 勇士の記念碑 詳細ページです。建物紹介、レベル別英雄HP、戦闘力情報をひと目で整理しました。",
+      "url": "/ja/buildings/guardian-of-life-monument/"
+    },
+    {
+      "language": "ja",
+      "type": "building",
+      "title": "入隊事務所 | タイルズサバイバル 建物 | TilesSurvive.net",
+      "description": "タイルズサバイバル 入隊事務所の忠誠値、徴兵可能数、収容力と運用ルールを整理した詳細ページです。",
+      "url": "/ja/buildings/enlistment-office/"
+    },
+    {
+      "language": "ja",
+      "type": "guide",
+      "title": "貯水池レイド 勝利ガイド | タイルサバイバル ガイド | TilesSurvive.net",
+      "description": "貯水池レイドの参加条件、勝利条件、主要建物の役割、チーム分担、フェーズ別運営、追加のコツまでまとめたタイルサバイバル実戦ガイドです。",
+      "url": "/ja/guides/reservoir-raid/"
+    },
+    {
+      "language": "ja",
+      "type": "building",
+      "title": "駐屯所 | タイルズサバイバル 建物 | TilesSurvive.net",
+      "description": "タイルズサバイバルの駐屯所の最大兵士数と兵士運用情報を整理した詳細ページです。",
+      "url": "/ja/buildings/garrison-station/"
+    },
+    {
+      "language": "ja",
+      "type": "building",
+      "title": "呪詛重傷の碑 | タイルズサバイバル 建物 | TilesSurvive.net",
+      "description": "タイルズサバイバルの呪詛重傷の碑の概要、敵軍軽傷転換率、戦闘力をレベル別に整理した詳細ページです。",
+      "url": "/ja/buildings/cursed-wound-stele/"
+    },
+    {
+      "language": "ja",
+      "type": "behemoth",
+      "title": "海洋亜竜 | タイルズサバイバル ベヒーモス | TilesSurvive.net",
+      "description": "タイルズサバイバルのベヒーモス 海洋亜竜 の詳細ページです。レベルアップ効果、イベント追加効果、外見変化、代表タレント、星ランク表をまとめています。",
+      "url": "/ja/behemoths/marine-drake/"
+    },
+    {
+      "language": "ja",
+      "type": "database",
+      "title": "専用装備強化表 | タイルズサバイバル データベース | TilesSurvive.net",
+      "description": "タイルズサバイバルの専用装備強化表です。専用装備のレベルアップ費用と最終必要数量をまとめました。",
+      "url": "/ja/database/exclusive-gear/"
+    },
+    {
+      "language": "ja",
+      "type": "building",
+      "title": "戦神の記念碑 | タイルズサバイバル 建物 | TilesSurvive.net",
+      "description": "タイルズサバイバル建物「戦神の記念碑」の詳細ページです。建物紹介、レベル別の英雄攻撃、戦闘力情報をひと目で整理しました。",
+      "url": "/ja/buildings/warbringer-monument/"
+    },
+    {
+      "language": "ja",
+      "type": "building",
+      "title": "発電所 | タイルズサバイバル 建物 | TilesSurvive.net",
+      "description": "タイルズサバイバル 発電所のアップグレード費用、時間、戦闘力とスキル情報をレベル別に整理した詳細ページです。",
+      "url": "/ja/buildings/power-plant/"
+    },
+    {
+      "language": "ja",
+      "type": "building",
+      "title": "研究所 | タイルズサバイバル 建物 | TilesSurvive.net",
+      "description": "タイルズサバイバル研究所インデックスページです。発展、経済、英雄、兵士、諜報前哨基地、同盟対決、特殊部隊、感染者討伐、終末輸送研究をひと目で整理しました。",
+      "url": "/ja/buildings/lab/"
+    },
+    {
+      "language": "ja",
+      "type": "tool",
+      "title": "Tiles Survive 加速計算機 | TilesSurvive.net",
+      "description": "Tiles Survive の加速アイテムの日数、時間、分を合算し、総分と総時間を確認できる簡単な計算機です。",
+      "url": "/ja/tools/speedup-calculator/"
+    },
+    {
+      "language": "ja",
+      "type": "update",
+      "title": "Tiles Survive アップデート | TilesSurvive.net",
+      "description": "公式パッチノートと開発者フィードバックの重要な変更を確認できます。",
+      "url": "/ja/updates/"
+    },
+    {
+      "language": "ja",
+      "type": "tool",
+      "title": "Tiles Survive イベントヘルパー - イベント日程と資源使用ガイド",
+      "description": "Tiles Survive イベントヘルパーで、イベントタイプ別の準備資源、おすすめ行動、資源使用の判断基準を確認できます。",
+      "url": "/ja/tools/event-helper/"
+    },
+    {
+      "language": "ja",
+      "type": "event-helper",
+      "title": "Tiles Survive イベントヘルパー - イベント日程と資源使用ガイド",
+      "description": "Tiles Survive イベントヘルパーで、イベントタイプ別の準備資源、おすすめ行動、資源使用の判断基準を確認できます。",
+      "url": "/ja/event-helper/"
+    },
+    {
+      "language": "ja",
+      "type": "top-up",
+      "title": "Tiles Survive チャージガイド | TilesSurvive.net",
+      "description": "アカウント、パッケージ価値、イベント時期、決済情報を確認するためのガイドです。",
+      "url": "/ja/top-up/"
+    },
+    {
+      "language": "ja",
+      "type": "tool",
+      "title": "Tiles Survive ツール集 | イベントヘルパー・報酬検索・計算機 | TilesSurvive.net",
+      "description": "Tiles Survive のイベントヘルパー、加速計算機、報酬検索、データベースリンクをまとめたツールハブです。",
+      "url": "/ja/tools/"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
+      "title": "Tiles Survive ヒーロー一覧 | TilesSurvive.net",
+      "description": "Tiles Survive のヒーロー一覧ページです。山岳、荒野、空のヒーローをSSR、SR、Rランク別に見やすく整理しました。",
+      "url": "/ja/heroes/"
+    },
+    {
+      "language": "ja",
+      "type": "search",
+      "title": "TilesSurvive.net 検索 | TilesSurvive.net",
+      "description": "英雄、イベント、シーズン、アイテム、装備、ガイド、ツールを検索できます。",
+      "url": "/ja/search/"
+    },
+    {
+      "language": "ja",
+      "type": "contact",
+      "title": "TilesSurvive.net お問い合わせ | TilesSurvive.net",
+      "description": "訂正、情報源の提供、プライバシー、提携に関する連絡先です。",
+      "url": "/ja/contact/"
+    },
+    {
+      "language": "ja",
+      "type": "about",
+      "title": "TilesSurvive.net について | TilesSurvive.net",
+      "description": "TilesSurvive.net は多言語対応の独立したデータ・攻略ハブです。",
+      "url": "/ja/about/"
+    },
+    {
+      "language": "ja",
+      "type": "database",
+      "title": "VIPポイント | タイルズサバイバル データベース | TilesSurvive.net",
+      "description": "タイルズサバイバルのVIPポイントページです。VIPレベル表、特権ショップ、特権ルーレット、1日購入制限と確率情報をひと目で整理しました。",
+      "url": "/ja/database/vip-point/"
+    },
+    {
+      "language": "ja",
+      "type": "affiliate-disclosure",
+      "title": "アフィリエイト開示 | TilesSurvive.net",
+      "description": "TilesSurvive.net のアフィリエイトリンクと編集方針について説明します。",
+      "url": "/ja/affiliate-disclosure/"
+    },
+    {
+      "language": "ja",
+      "type": "event",
+      "title": "イベントとシステム | TilesSurvive.net",
+      "description": "公式パッチノートで確認されたイベントとシステムの変更です。",
+      "url": "/ja/events/"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
+      "title": "エヴァ | タイルズサバイバル 英雄 | TilesSurvive.net",
+      "description": "タイルズサバイバルの英雄エヴァ詳細ページです。英雄紹介、英雄系統、戦闘特性、最大レベルおよび星ランクステータス、星ランクボーナス、スキルをひと目で確認できます。",
+      "url": "/ja/heroes/eva/"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
+      "title": "カイロン | タイルズサバイバル 英雄 | TilesSurvive.net",
+      "description": "タイルズサバイバルの英雄カイロン詳細ページです。SSR英雄基準で、英雄紹介、戦闘特性、最大レベルおよび星ランクステータス、星ランクボーナス、スキル、専用装備をひと目で確認できます。",
+      "url": "/ja/heroes/kiron/"
+    },
+    {
+      "language": "ja",
+      "type": "database",
+      "title": "カメレース | タイルサバイバル データベース | TilesSurvive.net",
+      "description": "タイルサバイバル 同盟対決 カメレースおすすめ表です。段階別おすすめミッション、バトル、カメ、国王バフおすすめ区間を一目で確認できます。",
+      "url": "/ja/database/turtle-race/"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
+      "title": "キキ | タイルサバイバル 英雄 | TilesSurvive.net",
+      "description": "タイルサバイバル英雄キキの詳細ページです。SSR英雄基準で、英雄紹介、戦闘特性、最大レベルと星ランクステータス、星ランク追加効果、スキル、専用装備をひと目で確認できます。",
+      "url": "/ja/heroes/kiki/"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
+      "title": "キャンディ | タイルサバイバル英雄 | TilesSurvive.net",
+      "description": "タイルサバイバル英雄キャンディの詳細ページです。SSR英雄基準で、英雄紹介、戦闘特性、最大レベル＆星ランクステータス、星ランクボーナス、スキル、専用装備をひと目で確認できます。",
+      "url": "/ja/heroes/candy/"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
+      "title": "ゴースト | タイルズサバイバル 英雄 | TilesSurvive.net",
+      "description": "タイルズサバイバルの英雄ゴースト詳細ページです。英雄紹介、英雄系統、戦闘特性、最大レベルおよび星ランクステータス、星ランクボーナス、スキルをひと目で確認できます。",
+      "url": "/ja/heroes/ghost/"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
+      "title": "サージ | タイルサバイバル 英雄 | TilesSurvive.net",
+      "description": "タイルサバイバルの英雄サージ詳細ページです。昇格英雄基準で、英雄紹介、戦闘特性、Lv MAXステータス、星ランクボーナス、スキルをひと目で確認できます。",
+      "url": "/ja/heroes/sarge/"
+    },
+    {
+      "language": "ja",
+      "type": "season",
+      "title": "シーズンⅠ 怒涛の海 指南 | タイルサバイバル シーズンガイド | TilesSurvive.net",
+      "description": "タイルサバイバル シーズンⅠ 怒涛の海の指南ページです。艦船選択、シーズン目標、シーズンパス、シーズン週間パス、怪物討伐、釣り大会、英雄昇格、KvKまでまとめて整理しました。",
+      "url": "/ja/seasons/season-1/"
+    },
+    {
+      "language": "ja",
+      "type": "season",
+      "title": "シーズンⅡ 万竜の覚醒 指南 | タイルサバイバル シーズンガイド | TilesSurvive.net",
+      "description": "タイルサバイバル シーズンⅡ 万竜の覚醒の指南ページです。シーズン建物、シーズン報酬、シーズンコンテンツ、シーズン初期化、ドラゴン遺伝子、シーズンドラゴン族、シーズンスキル、シーズン決算までまとめて整理しました。",
+      "url": "/ja/seasons/season-2/"
+    },
+    {
+      "language": "ja",
+      "type": "season",
+      "title": "シーズンⅢ 未定 指南 | タイルサバイバル シーズンガイド | TilesSurvive.net",
+      "description": "タイルサバイバル シーズンⅢ 未定の指南ページです。シーズン目標、シーズンパス、シーズン週間パス、イベント、英雄昇格、サーバー戦までまとめて整理しました。",
+      "url": "/ja/seasons/season-3/"
+    },
+    {
+      "language": "ja",
+      "type": "season",
+      "title": "シーズンIV: Blizzard Era | TilesSurvive.net",
+      "description": "公式発表で確認できるシーズンIVの公開方式と主要要素です。",
+      "url": "/ja/seasons/season-4/"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
+      "title": "シェフ ケン | タイルズサバイバル 英雄 | TilesSurvive.net",
+      "description": "タイルズサバイバルの英雄シェフ ケン詳細ページです。英雄紹介、戦闘特性、最大レベルおよび星ランクステータス、星ランクボーナス、スキルをひと目で確認できます。",
+      "url": "/ja/heroes/chef-ken/"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
+      "title": "シャーク | 海 SSR 近距離英雄 | TilesSurvive.net",
+      "description": "シャークは Tiles Survive の海系SSR近距離英雄です。ウェーブクラッシュ、シャークウェーブ、前線支援、深海無敵、専用装備「深海の錨」をまとめています。",
+      "url": "/ja/heroes/shark/"
+    },
+    {
+      "language": "ja",
+      "type": "database",
+      "title": "スキルブック消費表 | タイルズサバイバル データベース | TilesSurvive.net",
+      "description": "タイルズサバイバルのスキルブック消費表です。戦闘スキルレベル1から40までのスキルブック消費量と最終必要数量をまとめました。",
+      "url": "/ja/database/skill-book/"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
+      "title": "ターザン | タイルサバイバル 英雄 | TilesSurvive.net",
+      "description": "タイルサバイバルの英雄ターザン詳細ページです。SSR英雄基準で、英雄紹介、戦闘特性、Lv MAXステータス、星ランクボーナス、スキル、専用装備をひと目で確認できます。",
+      "url": "/ja/heroes/tarzan/"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
+      "title": "ターラ | タイルサバイバル 英雄 | TilesSurvive.net",
+      "description": "タイルサバイバルの英雄ターラ詳細ページです。SSR英雄基準で、英雄紹介、戦闘特性、Lv MAXステータス、星ランクボーナス、スキル、専用装備をひと目で確認できます。",
+      "url": "/ja/heroes/tara/"
+    },
+    {
+      "language": "ja",
+      "type": "guide",
+      "title": "タイルサバイバル 割引チャージガイド | セルフチャージ方法、利用条件、2段階認証、コード案内 | TilesSurvive.net",
+      "description": "タイルサバイバルのセルフチャージ前に必ず確認したい利用条件、GoogleまたはFacebookアカウント連携、2段階認証の確認方法、Google Play Games連携不可の案内、実際のチャージ手順、コード入力方法までまとめて確認できるガイドです。",
+      "url": "/ja/guides/discount-topup/"
+    },
+    {
+      "language": "ja",
+      "type": "guide",
+      "title": "タイルサバイバル 割引チャージプロモーションガイド | 専用リンク追加特典、月間累計チャージコード、新規登録コード案内 | TilesSurvive.net",
+      "description": "タイルサバイバルの割引チャージプロモーションガイドです。専用リンクからアクセスすると追加コードと月間累計チャージ特典が自動集計され、新規登録者はコード #s4qU の追加特典も受け取れます。",
+      "url": "/ja/guides/discount-topup-promotion/"
+    },
+    {
+      "language": "ja",
+      "type": "guide",
+      "title": "タイルサバイバル ガイド一覧 | TilesSurvive.net",
+      "description": "タイルサバイバルのガイド一覧ページです。序盤指南、成長のコツ、運営のコツ、イベントガイド、割引チャージガイドなど、現在公開中のガイドをひと目で確認できます。",
+      "url": "/ja/guides/"
+    },
+    {
+      "language": "ja",
+      "type": "guide",
+      "title": "タイルサバイバル ギフトコード入力方法 | タイルサバイバル ガイド | TilesSurvive.net",
+      "description": "タイルサバイバルのギフトコード入力方法と現在有効なコード、常設コード、期限切れコードをまとめて確認できるガイドです。",
+      "url": "/ja/guides/gift-code-how-to-use/"
+    },
+    {
+      "language": "ja",
+      "type": "season",
+      "title": "タイルサバイバル シーズン記念碑一覧 | TilesSurvive.net",
+      "description": "タイルサバイバルのシーズン記念碑一覧ページです。シーズンⅠ、シーズンⅡ、シーズンⅢを見やすく整理しました。",
+      "url": "/ja/seasons/"
+    },
+    {
+      "language": "ja",
+      "type": "home",
+      "title": "タイルサバイバル データハブ | データベース ガイド シーズン コード | TilesSurvive.net",
+      "description": "タイルサバイバルのデータベース、ガイド、シーズン、ギフトコードをひとつにまとめた長期運営型データハブです。",
+      "url": "/ja/"
+    },
+    {
+      "language": "ja",
+      "type": "guide",
+      "title": "タイルサバイバル序盤攻略 | 初心者向けプレイ方針まとめ | TilesSurvive.net",
+      "description": "タイルサバイバル初心者向けの序盤攻略ガイドです。新サーバー選び、同盟選び、ファームアカウント運用、加速アイテム管理、発電所の育成方針、微課金ユーザー向け運用基準までまとめました。",
+      "url": "/ja/guides/beginner-guide/"
+    },
+    {
+      "language": "ja",
+      "type": "building",
+      "title": "タイルズサバイバル 建物一覧 | TilesSurvive.net",
+      "description": "タイルズサバイバルの建物一覧ページです。発電所、入隊事務所、兵舎、実験室、病院、駐屯所、英雄学院、戦神の記念碑、勇士の記念碑、神盾の記念碑、呪詛重傷の碑、加護治療の碑などをひと目で整理しました。",
+      "url": "/ja/buildings/"
+    },
+    {
+      "language": "ja",
+      "type": "building",
+      "title": "タイルズサバイバル 兵営 | アップグレード費用と兵種解放 | TilesSurvive.net",
+      "description": "タイルズサバイバルの兵営アップグレード費用、時間、先行建物条件と兵種解放情報をひと目で整理した詳細ページです。",
+      "url": "/ja/buildings/barracks/"
+    },
+    {
+      "language": "ja",
+      "type": "code",
+      "title": "タイルズサバイバル ギフトコード | 有効コード・常設コード・期限カウントダウン | TilesSurvive.net",
+      "description": "タイルズサバイバルの有効ギフトコード、常設コード、次の期限カウントダウンを1ページで確認できます。アジア・ヨーロッパ・アメリカ基準の期限時間、コピー機能、FAQまでまとめました。",
+      "url": "/ja/codes/"
+    },
+    {
+      "language": "ja",
+      "type": "database",
+      "title": "タイルズサバイバル データベース一覧 | TilesSurvive.net",
+      "description": "タイルズサバイバルのデータベース一覧ページです。現在登録されているデータベースページをひと目で確認できます。",
+      "url": "/ja/database/"
+    },
+    {
+      "language": "ja",
+      "type": "behemoth",
+      "title": "タイルズサバイバル ベヒーモス一覧 | TilesSurvive.net",
+      "description": "タイルズサバイバルのベヒーモス一覧ページです。現在確認されているベヒーモスをひと目で見やすく整理しました。",
+      "url": "/ja/behemoths/"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
+      "title": "トニー | タイルサバイバル 英雄 | TilesSurvive.net",
+      "description": "タイルサバイバル英雄トニーの詳細ページです。SSR英雄基準で、英雄紹介、戦闘特性、最大レベルと星ランクステータス、星ランク追加効果、スキル、専用装備をひと目で確認できます。",
+      "url": "/ja/heroes/tony/"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
+      "title": "トラビス | タイルサバイバル ヒーロー | TilesSurvive.net",
+      "description": "タイルサバイバルのヒーロー、トラビスの詳細ページです。英雄紹介、陣営、戦闘特性、最大レベルと星ランクステータス、星ランクボーナス、スキルをひと目で確認できます。",
+      "url": "/ja/heroes/travis/"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
+      "title": "ニコラ | タイルサバイバル英雄 | TilesSurvive.net",
+      "description": "タイルサバイバル英雄ニコラの詳細ページです。SSR英雄基準で、英雄紹介、戦闘特性、最大レベル＆星ランクステータス、星ランクボーナス、スキル、専用装備をひと目で確認できます。",
+      "url": "/ja/heroes/nikola/"
+    },
+    {
+      "language": "ja",
+      "type": "database",
+      "title": "ヒーロー経験値 | TilesSurviveデータベース | TilesSurvive.net",
+      "description": "タイルズサバイバルのヒーロー経験値データページです。ヒーローレベル1から150までの総経験値消費量と育成の重要ポイントをまとめています。",
+      "url": "/ja/database/hero-exp/"
+    },
+    {
+      "language": "ja",
+      "type": "privacy",
+      "title": "プライバシー | TilesSurvive.net",
+      "description": "TilesSurvive.net のアクセス解析、Cookie、外部リンクに関する方針です。",
+      "url": "/ja/privacy/"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
+      "title": "フレヤ | タイルサバイバル英雄 | TilesSurvive.net",
+      "description": "タイルサバイバル英雄フレヤの詳細ページです。英雄紹介、戦闘特性、最大レベル＆星ランクステータス、星ランクボーナス、スキルをひと目で確認できます。",
+      "url": "/ja/heroes/freya/"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
+      "title": "ベッキー | タイルズサバイバル ヒーロー | TilesSurvive.net",
+      "description": "タイルズサバイバルのヒーロー、ベッキーの詳細ページです。SSRヒーロー基準で、ヒーロー紹介、戦闘特性、最大レベルと星ランクステータス、星ランクボーナス、スキル、専用装備をひと目で確認できます。",
+      "url": "/ja/heroes/beka/"
+    },
+    {
+      "language": "ja",
+      "type": "database",
+      "title": "ベヘモス細胞消費表 | タイルズサバイバル データベース | TilesSurvive.net",
+      "description": "タイルズサバイバルのベヘモス細胞スター強化消費表です。1星から60星まで、段階別消費量・合計・累計をひと目で確認できます。",
+      "url": "/ja/database/behemoth-cell/"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
+      "title": "マイク | タイルサバイバル 英雄 | TilesSurvive.net",
+      "description": "タイルサバイバル英雄マイクの詳細ページです。SSR英雄基準で、英雄紹介、戦闘特性、最大レベルと星ランクステータス、星ランク追加効果、スキル、専用装備をひと目で確認できます。",
+      "url": "/ja/heroes/mike/"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
+      "title": "マディ | タイルサバイバル 英雄 | TilesSurvive.net",
+      "description": "タイルサバイバルの英雄マディ詳細ページです。SSR英雄基準で、英雄紹介、戦闘特性、Lv MAXステータス、星ランクボーナス、スキル、専用装備をひと目で確認できます。",
+      "url": "/ja/heroes/maddy/"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
+      "title": "ヤーコブ | タイルサバイバル英雄 | TilesSurvive.net",
+      "description": "タイルサバイバル英雄ヤーコブの詳細ページです。SSR英雄基準で、英雄紹介、戦闘特性、最大レベル＆星ランクステータス、星ランクボーナス、スキル、専用装備をひと目で確認できます。",
+      "url": "/ja/heroes/jacob/"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
+      "title": "ライト | タイルサバイバル 英雄 | TilesSurvive.net",
+      "description": "タイルサバイバル英雄ライトの詳細ページです。SSR英雄基準で、英雄紹介、戦闘特性、最大レベルと星ランクステータス、星ランク追加効果、スキル、専用装備をひと目で確認できます。",
+      "url": "/ja/heroes/light/"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
+      "title": "ラグナ | SSR 海 近距離英雄 | TilesSurvive.net",
+      "description": "Tiles Survive のSSR英雄ラグナについて、海陣営、近距離運用、最大レベル属性、星ランクボーナス、スキル、専用装備をまとめた詳細ページです。",
+      "url": "/ja/heroes/lagnar/"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
+      "title": "ラスティ | タイルサバイバル 英雄 | TilesSurvive.net",
+      "description": "タイルサバイバルの英雄ラスティ詳細ページです。英雄紹介、系統、戦闘特性、Lv MAXステータス、スキル、星ランクボーナスをひと目で確認できます。",
+      "url": "/ja/heroes/rusty/"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
+      "title": "ラッキー | タイルサバイバル英雄 | TilesSurvive.net",
+      "description": "タイルサバイバル英雄ラッキーの詳細ページです。昇格英雄基準で、英雄紹介、戦闘特性、最大レベル＆星ランクステータス、星ランクボーナス、スキルをひと目で確認できます。",
+      "url": "/ja/heroes/lucky/"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
+      "title": "レイ | タイルサバイバル 英雄 | TilesSurvive.net",
+      "description": "タイルサバイバルの英雄レイ詳細ページです。SSR英雄基準で、英雄紹介、戦闘特性、Lv MAXステータス、星ランクボーナス、スキル、専用装備をひと目で確認できます。",
+      "url": "/ja/heroes/ray/"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
+      "title": "レイラ | タイルサバイバル英雄 | TilesSurvive.net",
+      "description": "タイルサバイバル英雄レイラの詳細ページです。SSR英雄基準で、英雄紹介、戦闘特性、最大レベル＆星ランクステータス、星ランクボーナス、スキル、専用装備をひと目で確認できます。",
+      "url": "/ja/heroes/laila/"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
+      "title": "ローズ | タイルサバイバル英雄 | TilesSurvive.net",
+      "description": "タイルサバイバル英雄ローズの詳細ページです。SSR英雄基準で、英雄紹介、戦闘特性、最大レベル＆星ランクステータス、星ランクボーナス、スキル、専用装備をひと目で確認できます。",
+      "url": "/ja/heroes/rosie/"
+    },
+    {
+      "language": "ko",
+      "type": "database",
+      "title": "거북이경주 | 타일서바이벌 데이터베이스 | TilesSurvive.net",
+      "description": "타일서바이벌 동맹대결 거북이경주 권장표입니다. 단계별 추천 미션과 배틀, 거북이, 국왕버프 추천 구간을 한눈에 확인할 수 있습니다.",
+      "url": "/ko/database/turtle-race/"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
+      "title": "고스트 | 타일서바이벌 영웅 | TilesSurvive.net",
+      "description": "타일서바이벌 영웅 고스트 상세 페이지입니다. 영웅 소개, 진영, 전투 특성, 최고 레벨 및 성급 속성, 성급 보너스, 스킬을 한눈에 정리했습니다.",
+      "url": "/ko/heroes/ghost/"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
+      "title": "니콜라 | 타일서바이벌 영웅 | TilesSurvive.net",
+      "description": "타일서바이벌 영웅 니콜라 상세 페이지입니다. SSR 영웅 기준으로 영웅 소개, 전투 특성, 최고 레벨 및 성급 속성, 성급 보너스, 스킬, 전용 장비를 한눈에 정리했습니다.",
+      "url": "/ko/heroes/nikola/"
+    },
+    {
+      "language": "ko",
+      "type": "database",
+      "title": "동맹대결 권장표 | 타일서바이벌 데이터베이스 | TilesSurvive.net",
+      "description": "타일서바이벌 동맹대결 권장표입니다. 참여 조건, 진행 방식, 단계별 추천 미션과 배틀, 거북이, 국왕버프 추천 구간을 한눈에 확인할 수 있습니다.",
+      "url": "/ko/database/alliance-duel/"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
+      "title": "라그나 | SSR 바다 근거리 영웅 | TilesSurvive.net",
+      "description": "라그나 SSR 영웅의 바다 진영, 근거리 운용, 최대 레벨 속성, 성급 보너스, 스킬, 전용 장비 정보를 정리한 상세 페이지입니다.",
+      "url": "/ko/heroes/lagnar/"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
+      "title": "라이트 | 타일서바이벌 영웅 | TilesSurvive.net",
+      "description": "타일서바이벌 영웅 라이트 상세 페이지입니다. SSR 영웅 기준으로 영웅 소개, 전투 특성, 최고 레벨 및 성급 속성, 성급 보너스, 스킬, 전용 장비를 한눈에 정리했습니다.",
+      "url": "/ko/heroes/light/"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
+      "title": "라일라 | 타일서바이벌 영웅 | TilesSurvive.net",
+      "description": "타일서바이벌 영웅 라일라 상세 페이지입니다. SSR 영웅 기준으로 영웅 소개, 전투 특성, 최고 레벨 및 성급 속성, 성급 보너스, 스킬, 전용 장비를 한눈에 정리했습니다.",
+      "url": "/ko/heroes/laila/"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
+      "title": "러스티 | 타일서바이벌 영웅 | TilesSurvive.net",
+      "description": "타일서바이벌 영웅 러스티 상세 페이지입니다. 영웅 소개, 진영, 전투 특성, 최고 레벨 및 성급 속성, 스킬, 성급 보너스를 한눈에 정리했습니다.",
+      "url": "/ko/heroes/rusty/"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
+      "title": "럭키 | 타일서바이벌 영웅 | TilesSurvive.net",
+      "description": "타일서바이벌 영웅 럭키 상세 페이지입니다. 진급 영웅 기준으로 영웅 소개, 전투 특성, 최고 레벨 및 성급 속성, 성급 보너스, 스킬을 한눈에 정리했습니다.",
+      "url": "/ko/heroes/lucky/"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
+      "title": "레이 | 타일서바이벌 영웅 | TilesSurvive.net",
+      "description": "타일서바이벌 영웅 레이 상세 페이지입니다. SSR 영웅 기준으로 영웅 소개, 전투 특성, 최고 레벨 및 성급 속성, 성급 보너스, 스킬, 전용 장비를 한눈에 정리했습니다.",
+      "url": "/ko/heroes/ray/"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
+      "title": "로지 | 타일서바이벌 영웅 | TilesSurvive.net",
+      "description": "타일서바이벌 영웅 로지 상세 페이지입니다. SSR 영웅 기준으로 영웅 소개, 전투 특성, 최고 레벨 및 성급 속성, 성급 보너스, 스킬, 전용 장비를 한눈에 정리했습니다.",
+      "url": "/ko/heroes/rosie/"
+    },
+    {
+      "language": "ko",
+      "type": "behemoth",
+      "title": "마린 드레이크 | 타일서바이벌 베헤모스 | TilesSurvive.net",
+      "description": "타일서바이벌 베헤모스 마린 드레이크 상세 페이지입니다. 레벨 업그레이드 효과, 이벤트 증폭, 외형 변화, 대표 재능, 성급표를 정리했습니다.",
+      "url": "/ko/behemoths/marine-drake/"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
+      "title": "마이크 | 타일서바이벌 영웅 | TilesSurvive.net",
+      "description": "타일서바이벌 영웅 마이크 상세 페이지입니다. SSR 영웅 기준으로 영웅 소개, 전투 특성, 최고 레벨 및 성급 속성, 성급 보너스, 스킬, 전용 장비를 한눈에 정리했습니다.",
+      "url": "/ko/heroes/mike/"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
+      "title": "매디 | 타일서바이벌 영웅 | TilesSurvive.net",
+      "description": "타일서바이벌 영웅 매디 상세 페이지입니다. SSR 영웅 기준으로 영웅 소개, 전투 특성, 최고 레벨 및 성급 속성, 성급 보너스, 스킬, 전용 장비를 한눈에 정리했습니다.",
+      "url": "/ko/heroes/maddy/"
+    },
+    {
+      "language": "ko",
+      "type": "building",
+      "title": "모병소 | 타일서바이벌 건물 | TilesSurvive.net",
+      "description": "타일서바이벌 모병소의 충성도, 징병 가능 수량, 수용력과 운영 규칙을 정리한 상세 페이지입니다.",
+      "url": "/ko/buildings/enlistment-office/"
+    },
+    {
+      "language": "ko",
+      "type": "building",
+      "title": "발전소 | 타일서바이벌 건물 | TilesSurvive.net",
+      "description": "타일서바이벌 발전소 업그레이드 비용, 시간, 전투력과 스킬 정보를 레벨별로 정리한 상세 페이지입니다.",
+      "url": "/ko/buildings/power-plant/"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
+      "title": "베카 | 타일서바이벌 영웅 | TilesSurvive.net",
+      "description": "타일서바이벌 영웅 베카 상세 페이지입니다. SSR 영웅 기준으로 영웅 소개, 전투 특성, 최고 레벨 및 성급 속성, 성급 보너스, 스킬, 전용 장비를 한눈에 정리했습니다.",
+      "url": "/ko/heroes/beka/"
+    },
+    {
+      "language": "ko",
+      "type": "database",
+      "title": "베헤모스세포 소모표 | 타일서바이벌 데이터베이스 | TilesSurvive.net",
+      "description": "타일서바이벌 베헤모스 세포 성급 소모표입니다. 1성부터 60성까지 단계별 소모량, 합계, 누적 수치를 한눈에 확인할 수 있습니다.",
+      "url": "/ko/database/behemoth-cell/"
+    },
+    {
+      "language": "ko",
+      "type": "building",
+      "title": "병원 | 타일서바이벌 건물 | TilesSurvive.net",
+      "description": "타일서바이벌 병원의 수용력, 무료 치료, 치료 규칙과 운영 주의사항을 정리한 상세 페이지입니다.",
+      "url": "/ko/buildings/hospital/"
+    },
+    {
+      "language": "ko",
+      "type": "building",
+      "title": "생명의 용사비 | 타일서바이벌 건물 | TilesSurvive.net",
+      "description": "타일서바이벌 건물 생명의 용사비 상세 페이지입니다. 건물 소개, 레벨별 영웅 체력, 전투력 정보를 한눈에 정리했습니다.",
+      "url": "/ko/buildings/guardian-of-life-monument/"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
+      "title": "샤크 | 바다 SSR 근거리 영웅 | TilesSurvive.net",
+      "description": "샤크는 Tiles Survive의 바다 계열 SSR 근거리 영웅입니다. 웨이브 크래시, 샤크 웨이브, 전방 지원, 심해 무적과 전용 장비 심해의 닻 정보를 정리했습니다.",
+      "url": "/ko/heroes/shark/"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
+      "title": "세이지 | 타일서바이벌 영웅 | TilesSurvive.net",
+      "description": "타일서바이벌 영웅 세이지 상세 페이지입니다. 진급 영웅 기준으로 영웅 소개, 전투 특성, 최고 레벨 및 성급 속성, 성급 보너스, 스킬을 한눈에 정리했습니다.",
+      "url": "/ko/heroes/sarge/"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
+      "title": "세프 켄 | 타일서바이벌 영웅 | TilesSurvive.net",
+      "description": "타일서바이벌 영웅 세프 켄 상세 페이지입니다. 영웅 소개, 전투 특성, 최고 레벨 및 성급 속성, 성급 보너스, 스킬을 한눈에 정리했습니다.",
+      "url": "/ko/heroes/chef-ken/"
+    },
+    {
+      "language": "ko",
+      "type": "about",
+      "title": "소개 | 타일서바이벌 데이터 허브 | TilesSurvive.net",
+      "description": "TilesSurvive.net은 타일서바이벌의 건물, 영웅, 베헤모스, 데이터베이스, 가이드, 시즌 정보를 정리하는 비공식 데이터 허브입니다.",
+      "url": "/ko/about/"
+    },
+    {
+      "language": "ko",
+      "type": "database",
+      "title": "스킬북 소모표 | 타일서바이벌 데이터베이스 | TilesSurvive.net",
+      "description": "타일서바이벌 스킬북 소모표입니다. 전투 스킬 레벨 1부터 40까지의 스킬북 소모량과 최종 필요 수량을 정리했습니다.",
+      "url": "/ko/database/skill-book/"
+    },
+    {
+      "language": "ko",
+      "type": "season",
+      "title": "시즌 1 분노의 파도 공략 | 타일서바이벌 시즌 가이드 | TilesSurvive.net",
+      "description": "타일서바이벌 시즌 1 분노의 파도 공략입니다. 함선 선택, 시즌 목표, 시즌 패스, 시즌 주간권, 괴물 섬멸, 낚시 대회, 영웅 진급, KvK까지 한 번에 정리했습니다.",
+      "url": "/ko/seasons/season-1/"
+    },
+    {
+      "language": "ko",
+      "type": "season",
+      "title": "시즌 2 만룡의 각성 공략 | 타일서바이벌 시즌 가이드 | TilesSurvive.net",
+      "description": "타일서바이벌 시즌 2 만룡의 각성 공략입니다. 시즌 건물, 시즌 보상, 시즌 콘텐츠, 시즌 초기화, 드래곤 유전자, 시즌 드래곤족, 시즌 스킬, 시즌 결산까지 한 번에 정리했습니다.",
+      "url": "/ko/seasons/season-2/"
+    },
+    {
+      "language": "ko",
+      "type": "season",
+      "title": "시즌 3 미정 공략 | 타일서바이벌 시즌 가이드 | TilesSurvive.net",
+      "description": "타일서바이벌 시즌 3 미정 공략입니다. 시즌 목표, 패스, 주간권, 이벤트, 영웅 진급, 서버전까지 한 번에 정리했습니다.",
+      "url": "/ko/seasons/season-3/"
+    },
+    {
+      "language": "ko",
+      "type": "season",
+      "title": "시즌 IV: Blizzard Era | TilesSurvive.net",
+      "description": "공식 발표로 확인된 타일서바이벌 시즌 IV의 공개 방식과 주요 특징입니다.",
+      "url": "/ko/seasons/season-4/"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
+      "title": "에바 | 타일서바이벌 영웅 | TilesSurvive.net",
+      "description": "타일서바이벌 영웅 에바 상세 페이지입니다. 영웅 소개, 진영, 전투 특성, 최고 레벨 및 성급 속성, 성급 보너스, 스킬을 한눈에 정리했습니다.",
+      "url": "/ko/heroes/eva/"
+    },
+    {
+      "language": "ko",
+      "type": "building",
+      "title": "연구소 | 타일서바이벌 건물 | TilesSurvive.net",
+      "description": "타일서바이벌 연구소 인덱스 페이지입니다. 발전, 경제, 영웅, 병사, 첩보 초소, 동맹 대결, 특수 부대, 감염자 토벌, 종말의 운송 연구를 한눈에 정리했습니다.",
+      "url": "/ko/buildings/lab/"
+    },
+    {
+      "language": "ko",
+      "type": "building",
+      "title": "연락소 | 타일서바이벌 건물 | TilesSurvive.net",
+      "description": "타일서바이벌 건물 연락소 상세 페이지입니다. 건물 소개, 기능 안내, 도움 시스템 요약을 정리한 페이지입니다.",
+      "url": "/ko/buildings/comms-outpost/"
+    },
+    {
+      "language": "ko",
+      "type": "database",
+      "title": "영웅 경험치 | TilesSurvive 데이터베이스 | TilesSurvive.net",
+      "description": "Tiles Survive 영웅 경험치 데이터 페이지입니다. 영웅 레벨 1부터 150까지의 총 경험치 소모량과 육성 시 참고할 핵심 포인트를 정리했습니다.",
+      "url": "/ko/database/hero-exp/"
+    },
+    {
+      "language": "ko",
+      "type": "database",
+      "title": "영웅 레전드 장비 성급 소모표 | 타일서바이벌 영웅 데이터 | TilesSurvive.net",
+      "description": "타일서바이벌 영웅 레전드 장비 성급 소모표와 레벨 추가 속성을 한눈에 정리한 페이지입니다.",
+      "url": "/ko/database/legend-gear-star/"
+    },
+    {
+      "language": "ko",
+      "type": "database",
+      "title": "영웅 성급표 | 타일서바이벌 영웅 데이터 | TilesSurvive.net",
+      "description": "타일서바이벌 SSR 영웅 성급표와 시즌 진급 영웅 성급표를 한눈에 정리한 페이지입니다.",
+      "url": "/ko/database/hero-star/"
+    },
+    {
+      "language": "ko",
+      "type": "building",
+      "title": "영웅 아카데미 | 타일서바이벌 건물 | TilesSurvive.net",
+      "description": "타일서바이벌 영웅 아카데미의 건물 개요, 영웅 스킬북 시간당 생산량, 전투력을 레벨별로 정리한 상세 페이지입니다.",
+      "url": "/ko/buildings/hero-academy/"
+    },
+    {
+      "language": "ko",
+      "type": "event",
+      "title": "이벤트와 시스템 | TilesSurvive.net",
+      "description": "공식 패치노트에서 확인된 타일서바이벌 이벤트·시스템 변경사항입니다.",
+      "url": "/ko/events/"
+    },
+    {
+      "language": "ko",
+      "type": "term",
+      "title": "이용약관 | TilesSurvive.net",
+      "description": "독립 정보 허브 TilesSurvive.net의 이용 조건입니다.",
+      "url": "/ko/terms/"
+    },
+    {
+      "language": "ko",
+      "type": "building",
+      "title": "이지스 수호비 | 타일서바이벌 건물 | TilesSurvive.net",
+      "description": "타일서바이벌 건물 이지스 수호비 상세 페이지입니다. 건물 소개, 레벨별 영웅 방어, 전투력 정보를 한눈에 정리했습니다.",
+      "url": "/ko/buildings/aegis-monument/"
+    },
+    {
+      "language": "ko",
+      "type": "guide",
+      "title": "저수지 레이드 승리 공략 | 타일서바이벌 가이드 | TilesSurvive.net",
+      "description": "저수지 레이드 참가 조건, 승리 방식, 주요 건물 역할, 팀 역할 분배, 페이즈 운영, 추가 팁까지 한 번에 정리한 타일서바이벌 실전 공략입니다.",
+      "url": "/ko/guides/reservoir-raid/"
+    },
+    {
+      "language": "ko",
+      "type": "building",
+      "title": "저주받은 상처 비석 | 타일서바이벌 건물 | TilesSurvive.net",
+      "description": "타일서바이벌 저주받은 상처 비석의 개요, 적군 경상 전환율, 전투력을 레벨별로 정리한 상세 페이지입니다.",
+      "url": "/ko/buildings/cursed-wound-stele/"
+    },
+    {
+      "language": "ko",
+      "type": "behemoth",
+      "title": "전설 그리핀 | 타일서바이벌 베헤모스 | TilesSurvive.net",
+      "description": "타일서바이벌 베헤모스 전설 그리핀 상세 페이지입니다. 성급 업그레이드, 이벤트 증폭, 외형 변화, 대표 재능, 성급표를 정리했습니다.",
+      "url": "/ko/behemoths/legend-griffin/"
+    },
+    {
+      "language": "ko",
+      "type": "database",
+      "title": "전용장비 강화표 | 타일서바이벌 데이터베이스 | TilesSurvive.net",
+      "description": "타일서바이벌 전용장비 강화표입니다. 전용장비 레벨업 비용과 최종 필요 수량을 정리했습니다.",
+      "url": "/ko/database/exclusive-gear/"
+    },
+    {
+      "language": "ko",
+      "type": "building",
+      "title": "전장의 신 기념비 | 타일서바이벌 건물 | TilesSurvive.net",
+      "description": "타일서바이벌 건물 전장의 신 기념비 상세 페이지입니다. 건물 소개, 레벨별 영웅 공격, 전투력 정보를 한눈에 정리했습니다.",
+      "url": "/ko/buildings/warbringer-monument/"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
+      "title": "제이콥 | 타일서바이벌 영웅 | TilesSurvive.net",
+      "description": "타일서바이벌 영웅 제이콥 상세 페이지입니다. SSR 영웅 기준으로 영웅 소개, 전투 특성, 최고 레벨 및 성급 속성, 성급 보너스, 스킬, 전용 장비를 한눈에 정리했습니다.",
+      "url": "/ko/heroes/jacob/"
+    },
+    {
+      "language": "ko",
+      "type": "affiliate-disclosure",
+      "title": "제휴 링크 안내 | TilesSurvive.net",
+      "description": "TilesSurvive.net의 제휴 링크 사용과 편집 독립성 안내입니다.",
+      "url": "/ko/affiliate-disclosure/"
+    },
+    {
+      "language": "ko",
+      "type": "building",
+      "title": "주둔소 | 타일서바이벌 건물 | TilesSurvive.net",
+      "description": "타일서바이벌 주둔소의 최대 병사 수량과 병사 운용 정보를 정리한 상세 페이지입니다.",
+      "url": "/ko/buildings/garrison-station/"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
+      "title": "채의진 | 타일서바이벌 영웅 | TilesSurvive.net",
+      "description": "타일서바이벌 영웅 채의진 상세 페이지입니다. SSR 영웅 기준으로 영웅 소개, 전투 특성, 최고 레벨 및 성급 속성, 성급 보너스, 스킬, 전용 장비를 한눈에 정리했습니다.",
+      "url": "/ko/heroes/candy/"
+    },
+    {
+      "language": "ko",
+      "type": "building",
+      "title": "축복받은 치유 비석 | 타일서바이벌 건물 | TilesSurvive.net",
+      "description": "타일서바이벌 축복받은 치유 비석의 개요, 경상 전환율, 전투력을 레벨별로 정리한 상세 페이지입니다.",
+      "url": "/ko/buildings/blessed-healing-stele/"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
+      "title": "키론 | 타일서바이벌 영웅 | TilesSurvive.net",
+      "description": "타일서바이벌 영웅 키론 상세 페이지입니다. SSR 영웅 기준으로 영웅 소개, 전투 특성, 최고 레벨 및 성급 속성, 성급 보너스, 스킬, 전용 장비를 한눈에 정리했습니다.",
+      "url": "/ko/heroes/kiron/"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
+      "title": "키키 | 타일서바이벌 영웅 | TilesSurvive.net",
+      "description": "타일서바이벌 영웅 키키 상세 페이지입니다. SSR 영웅 기준으로 영웅 소개, 전투 특성, 최고 레벨 및 성급 속성, 성급 보너스, 스킬, 전용 장비를 한눈에 정리했습니다.",
+      "url": "/ko/heroes/kiki/"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
+      "title": "타라 | 타일서바이벌 영웅 | TilesSurvive.net",
+      "description": "타일서바이벌 영웅 타라 상세 페이지입니다. SSR 영웅 기준으로 영웅 소개, 전투 특성, 최고 레벨 및 성급 속성, 성급 보너스, 스킬, 전용 장비를 한눈에 정리했습니다.",
+      "url": "/ko/heroes/tara/"
+    },
+    {
+      "language": "ko",
+      "type": "tool",
+      "title": "타일서바이벌 가속 계산기 | TilesSurvive.net",
+      "description": "타일서바이벌 가속 아이템의 일, 시간, 분을 합산해 총 분과 총 시간을 확인하는 간단한 계산기입니다.",
+      "url": "/ko/tools/speedup-calculator/"
+    },
+    {
+      "language": "ko",
+      "type": "guide",
+      "title": "타일서바이벌 가이드 목록 | TilesSurvive.net",
+      "description": "타일서바이벌 가이드 목록 페이지입니다. 초반 공략, 성장 팁, 운영 팁, 이벤트 가이드, 할인충전 가이드 등 현재 등록된 가이드를 한눈에 확인할 수 있습니다.",
+      "url": "/ko/guides/"
+    },
+    {
+      "language": "ko",
+      "type": "building",
+      "title": "타일서바이벌 건물 목록 | TilesSurvive.net",
+      "description": "타일서바이벌 건물 목록 페이지입니다. 발전소, 연락소, 병영, 실험실, 병원, 모병소, 주둔소, 영웅아카데미, 첩보초소, 탄광, 베헤모스연구실, 영웅지구, 주방, 온실, 제련공방, 정유공방, 목재공방, 전장의신기념비, 생명의용사비, 이지스수호비, 민가, 축복받은 치유 비석, 저주받은 상처 비석을 한눈에 정리했습니다.",
+      "url": "/ko/buildings/"
+    },
+    {
+      "language": "ko",
+      "type": "code",
+      "title": "타일서바이벌 기프트코드 | 활성 코드, 상시 코드, 만료 카운트다운 | TilesSurvive.net",
+      "description": "타일서바이벌 활성 기프트코드, 상시 코드, 다음 만료 카운트다운을 한 페이지에서 확인하세요. 아시아, 유럽, 아메리카 기준 만료 시간과 복사 버튼, FAQ까지 정리했습니다.",
+      "url": "/ko/codes/"
+    },
+    {
+      "language": "ko",
+      "type": "guide",
+      "title": "타일서바이벌 기프트코드 입력 방법 | 타일서바이벌 가이드 | TilesSurvive.net",
+      "description": "타일서바이벌 기프트코드 입력 방법과 현재 활성 코드, 무기한 코드, 만료 코드를 한 번에 정리한 가이드입니다.",
+      "url": "/ko/guides/gift-code-how-to-use/"
+    },
+    {
+      "language": "ko",
+      "type": "home",
+      "title": "타일서바이벌 데이터 허브 | 데이터베이스 가이드 시즌 코드 | TilesSurvive.net",
+      "description": "타일서바이벌 데이터베이스, 가이드, 시즌, 기프트코드를 한 곳에서 정리한 장기 운영형 데이터 허브입니다.",
+      "url": "/ko/"
+    },
+    {
+      "language": "ko",
+      "type": "database",
+      "title": "타일서바이벌 데이터베이스 목록 | TilesSurvive.net",
+      "description": "타일서바이벌 데이터베이스 목록 페이지입니다. 현재 등록된 데이터베이스 페이지를 한눈에 확인할 수 있습니다.",
+      "url": "/ko/database/"
+    },
+    {
+      "language": "ko",
+      "type": "tool",
+      "title": "타일서바이벌 도구 모음 | 이벤트 도우미, 보상 검색, 계산기 | TilesSurvive.net",
+      "description": "타일서바이벌 유저를 위한 도구 허브입니다. 이벤트 도우미, 가속 계산기, 보상 검색, 데이터베이스 링크를 한곳에서 확인하세요.",
+      "url": "/ko/tools/"
+    },
+    {
+      "language": "ko",
+      "type": "behemoth",
+      "title": "타일서바이벌 베헤모스 목록 | TilesSurvive.net",
+      "description": "타일서바이벌 베헤모스 목록 페이지입니다. 현재 확인된 베헤모스를 한눈에 보기 쉽게 정리했습니다.",
+      "url": "/ko/behemoths/"
+    },
+    {
+      "language": "ko",
+      "type": "building",
+      "title": "타일서바이벌 병영 | 업그레이드 비용 및 병종 해금 | TilesSurvive.net",
+      "description": "타일서바이벌 병영 업그레이드 비용, 시간, 선행 건물 조건과 병종 해금 정보를 한눈에 정리한 상세 페이지입니다.",
+      "url": "/ko/buildings/barracks/"
+    },
+    {
+      "language": "ko",
+      "type": "season",
+      "title": "타일서바이벌 시즌 기념비 목록 | TilesSurvive.net",
+      "description": "타일서바이벌 시즌 기념비 목록 페이지입니다. 현재 시즌1, 시즌2, 시즌3 기념비를 한눈에 보기 쉽게 정리했습니다.",
+      "url": "/ko/seasons/"
+    },
+    {
+      "language": "ko",
+      "type": "update",
+      "title": "타일서바이벌 업데이트 | TilesSurvive.net",
+      "description": "공식 타일서바이벌 패치노트와 개발자 피드백의 핵심 변경사항을 확인하세요.",
+      "url": "/ko/updates/"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
+      "title": "타일서바이벌 영웅 목록 | TilesSurvive.net",
+      "description": "타일서바이벌 영웅 목록 페이지입니다. 현재 업데이트된 산맥 영웅, 황야 영웅, 하늘 영웅을 SSR, SR, R 등급으로 구분해 한눈에 정리했습니다.",
+      "url": "/ko/heroes/"
+    },
+    {
+      "language": "ko",
+      "type": "guide",
+      "title": "타일서바이벌 초반 공략 | 초보 유저 기준 플레이 방향 정리 | TilesSurvive.net",
+      "description": "타일서바이벌 초보 유저를 위한 초반 공략 가이드입니다. 신서버 선택, 동맹 선택, 농장 계정 운영, 가속 관리, 발전소 성장 방향, 소과금 운영 기준까지 한 번에 정리했습니다.",
+      "url": "/ko/guides/beginner-guide/"
+    },
+    {
+      "language": "ko",
+      "type": "top-up",
+      "title": "타일서바이벌 충전 가이드 | TilesSurvive.net",
+      "description": "타일서바이벌 충전 전 계정, 패키지 효율, 이벤트 시점과 결제 정보를 확인하는 안내입니다.",
+      "url": "/ko/top-up/"
+    },
+    {
+      "language": "ko",
+      "type": "guide",
+      "title": "타일서바이벌 할인충전 가이드 | 셀프충전 방법, 이용 조건, 2차인증, 쿠폰 안내 | TilesSurvive.net",
+      "description": "타일서바이벌 셀프충전 전 꼭 확인해야 할 이용 조건, 구글 또는 페이스북 계정 연동, 2차인증 확인 방법, 구글플레이게임즈 연동 불가 안내, 실제 충전 순서, 쿠폰 입력 방법까지 한 번에 정리한 가이드입니다.",
+      "url": "/ko/guides/discount-topup/"
+    },
+    {
+      "language": "ko",
+      "type": "guide",
+      "title": "타일서바이벌 할인충전 프로모션 가이드 | 전용 링크 추가 혜택, 월 누적 충전 쿠폰, 신규가입 코드 안내 | TilesSurvive.net",
+      "description": "타일서바이벌 할인충전 프로모션 가이드입니다. 전용 링크로 접속하면 추가 쿠폰과 월 누적 충전 혜택이 자동 집계되며, 신규가입자는 코드 #s4qU 추가 혜택도 받을 수 있습니다.",
+      "url": "/ko/guides/discount-topup-promotion/"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
+      "title": "타잔 | 타일서바이벌 영웅 | TilesSurvive.net",
+      "description": "타일서바이벌 영웅 타잔 상세 페이지입니다. SSR 영웅 기준으로 영웅 소개, 전투 특성, 최고 레벨 및 성급 속성, 성급 보너스, 스킬, 전용 장비를 한눈에 정리했습니다.",
+      "url": "/ko/heroes/tarzan/"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
+      "title": "탄 토니 | 타일서바이벌 영웅 | TilesSurvive.net",
+      "description": "타일서바이벌 영웅 탄 토니 상세 페이지입니다. SSR 영웅 기준으로 영웅 소개, 전투 특성, 최고 레벨 및 성급 속성, 성급 보너스, 스킬, 전용 장비를 한눈에 정리했습니다.",
+      "url": "/ko/heroes/tony/"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
+      "title": "트래비스 | 타일서바이벌 영웅 | TilesSurvive.net",
+      "description": "타일서바이벌 영웅 트래비스 상세 페이지입니다. 영웅 소개, 진영, 전투 특성, 최고 레벨 및 성급 속성, 성급 보너스, 스킬을 한눈에 정리했습니다.",
+      "url": "/ko/heroes/travis/"
+    },
+    {
+      "language": "ko",
+      "type": "privacy",
+      "title": "프라이버시 | 타일서바이벌 데이터 허브 | TilesSurvive.net",
+      "description": "TilesSurvive.net의 프라이버시 안내 페이지입니다. 사이트 이용 시 수집될 수 있는 기본 정보와 외부 링크, 쿠키, 문의 채널 관련 내용을 확인할 수 있습니다.",
+      "url": "/ko/privacy/"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
+      "title": "프레이아 | 타일서바이벌 영웅 | TilesSurvive.net",
+      "description": "타일서바이벌 영웅 프레이아 상세 페이지입니다. 영웅 소개, 전투 특성, 최고 레벨 및 성급 속성, 성급 보너스, 스킬을 한눈에 정리했습니다.",
+      "url": "/ko/heroes/freya/"
+    },
+    {
+      "language": "ko",
+      "type": "tool",
+      "title": "Tiles Survival 이벤트 도우미 - 이벤트 일정과 자원 사용 가이드",
+      "description": "Tiles Survival 이벤트 도우미에서 이벤트 타입별 준비 자원, 추천 행동, 자원 사용 판단 기준을 확인하세요.",
+      "url": "/ko/tools/event-helper/"
+    },
+    {
+      "language": "ko",
+      "type": "event-helper",
+      "title": "Tiles Survival 이벤트 도우미 - 이벤트 일정과 자원 사용 가이드",
+      "description": "Tiles Survival 이벤트 도우미에서 이벤트 타입별 준비 자원, 추천 행동, 자원 사용 판단 기준을 확인하세요.",
+      "url": "/ko/event-helper/"
+    },
+    {
+      "language": "ko",
+      "type": "search",
+      "title": "TilesSurvive.net 검색 | TilesSurvive.net",
+      "description": "영웅, 이벤트, 시즌, 아이템, 장비, 가이드와 도구를 검색하세요.",
+      "url": "/ko/search/"
+    },
+    {
+      "language": "ko",
+      "type": "contact",
+      "title": "TilesSurvive.net 문의 | TilesSurvive.net",
+      "description": "정보 수정, 출처 제보, 개인정보 및 제휴 문의 채널 안내입니다.",
+      "url": "/ko/contact/"
+    },
+    {
+      "language": "ko",
+      "type": "database",
+      "title": "VIP포인트 | 타일서바이벌 데이터베이스 | TilesSurvive.net",
+      "description": "타일서바이벌 VIP 포인트 페이지입니다. VIP 레벨표, 특권상점, 특권 룰렛, 일일 구매 제한과 확률 정보를 한눈에 정리했습니다.",
+      "url": "/ko/database/vip-point/"
+    },
+    {
+      "language": "ru",
+      "type": "heroe",
+      "title": "Beka | Герой Tiles Survive | TilesSurvive.net",
+      "description": "Подробная страница героя Beka в Tiles Survive. Здесь по SSR-герою собраны описание героя, боевые особенности, характеристики на максимальном уровне и звёздности, бонус звёздности, навыки и эксклюзивное снаряжение.",
+      "url": "/ru/heroes/beka/"
+    },
+    {
+      "language": "ru",
+      "type": "heroe",
+      "title": "Candy | Герой Tiles Survive | TilesSurvive.net",
+      "description": "Подробная страница героя Candy в Tiles Survive. Здесь по SSR-герою собраны описание героя, боевые особенности, характеристики на максимальном уровне и звёздности, бонус звёздности, навыки и эксклюзивное снаряжение.",
+      "url": "/ru/heroes/candy/"
+    },
+    {
+      "language": "ru",
+      "type": "heroe",
+      "title": "Chef Ken | Герой Tiles Survive | TilesSurvive.net",
+      "description": "Подробная страница героя Chef Ken в Tiles Survive. Здесь в одном месте собраны описание героя, боевые особенности, характеристики на максимальном уровне и звёздности, бонус звёздности и навыки.",
+      "url": "/ru/heroes/chef-ken/"
+    },
+    {
+      "language": "ru",
+      "type": "heroe",
+      "title": "Eva | Герой Tiles Survive | TilesSurvive.net",
+      "description": "Подробная страница героя Eva в Tiles Survive. Здесь в одном месте собраны описание героя, фракция, боевые особенности, характеристики на максимальном уровне и звёздности, бонус звёздности и навыки.",
+      "url": "/ru/heroes/eva/"
+    },
+    {
+      "language": "ru",
+      "type": "heroe",
+      "title": "Freya | Герой Tiles Survive | TilesSurvive.net",
+      "description": "Подробная страница героя Freya в Tiles Survive. Здесь в одном месте собраны описание героя, боевые особенности, характеристики на максимальном уровне и звёздности, бонус звёздности и навыки.",
+      "url": "/ru/heroes/freya/"
+    },
+    {
+      "language": "ru",
+      "type": "heroe",
+      "title": "Ghost | Герой Tiles Survive | TilesSurvive.net",
+      "description": "Подробная страница героя Ghost в Tiles Survive. Здесь в одном месте собраны описание героя, фракция, боевые особенности, характеристики на максимальном уровне и звёздности, бонус звёздности и навыки.",
+      "url": "/ru/heroes/ghost/"
+    },
+    {
+      "language": "ru",
+      "type": "building",
+      "title": "Hospital | Здания Tiles Survive | TilesSurvive.net",
+      "description": "Подробная страница Hospital в Tiles Survive с данными о вместимости, бесплатном лечении, правилах лечения и важных примечаниях по использованию.",
+      "url": "/ru/buildings/hospital/"
+    },
+    {
+      "language": "ru",
+      "type": "heroe",
+      "title": "Jacob | Герой Tiles Survive | TilesSurvive.net",
+      "description": "Подробная страница героя Jacob в Tiles Survive. Здесь по SSR-герою собраны описание героя, боевые особенности, характеристики на максимальном уровне и звёздности, бонус звёздности, навыки и эксклюзивное снаряжение.",
+      "url": "/ru/heroes/jacob/"
+    },
+    {
+      "language": "ru",
+      "type": "heroe",
+      "title": "Kiki | Герой Tiles Survive | TilesSurvive.net",
+      "description": "Подробная страница героя Kiki в Tiles Survive. Здесь по SSR-герою собраны описание героя, боевые особенности, характеристики на максимальном уровне и звёздности, бонус звёздности, навыки и эксклюзивное снаряжение.",
+      "url": "/ru/heroes/kiki/"
+    },
+    {
+      "language": "ru",
+      "type": "heroe",
+      "title": "Kiron | Герой Tiles Survive | TilesSurvive.net",
+      "description": "Подробная страница героя Kiron в Tiles Survive. Здесь по SSR-герою собраны описание героя, боевые особенности, характеристики на максимальном уровне и звёздности, бонус звёздности, навыки и эксклюзивное снаряжение.",
+      "url": "/ru/heroes/kiron/"
+    },
+    {
+      "language": "ru",
+      "type": "building",
+      "title": "Lab | Здания Tiles Survive | TilesSurvive.net",
+      "description": "Индекс-страница Lab в Tiles Survive. Здесь в одном месте собраны исследования Development, Economy, Hero, Soldier, Intel Outpost, Alliance Duel, Special Forces, Infected Hunt и Doomsday Transport.",
+      "url": "/ru/buildings/lab/"
+    },
+    {
+      "language": "ru",
+      "type": "heroe",
+      "title": "Lagnar | SSR герой моря ближнего боя | TilesSurvive.net",
+      "description": "Страница героя Lagnar в Tiles Survive: фракция Sea, ближний бой, характеристики максимального уровня, звёздный бонус, навыки и эксклюзивное снаряжение.",
+      "url": "/ru/heroes/lagnar/"
+    },
+    {
+      "language": "ru",
+      "type": "heroe",
+      "title": "Laila | Герой Tiles Survive | TilesSurvive.net",
+      "description": "Подробная страница героя Laila в Tiles Survive. Здесь по SSR-герою собраны описание героя, боевые особенности, характеристики на максимальном уровне и звёздности, бонус звёздности, навыки и эксклюзивное снаряжение.",
+      "url": "/ru/heroes/laila/"
+    },
+    {
+      "language": "ru",
+      "type": "heroe",
+      "title": "Light | Герой Tiles Survive | TilesSurvive.net",
+      "description": "Подробная страница героя Light в Tiles Survive. Здесь по SSR-герою собраны описание, боевые особенности, характеристики на максимальном уровне и звёздности, бонус звёздности, навыки и эксклюзивное снаряжение.",
+      "url": "/ru/heroes/light/"
+    },
+    {
+      "language": "ru",
+      "type": "heroe",
+      "title": "Lucky | Герой Tiles Survive | TilesSurvive.net",
+      "description": "Подробная страница героя Lucky в Tiles Survive. Здесь по promoted hero собраны описание, promoted-информация, боевые особенности, характеристики на максимальном уровне и звёздности, бонус звёздности и навыки.",
+      "url": "/ru/heroes/lucky/"
+    },
+    {
+      "language": "ru",
+      "type": "heroe",
+      "title": "Maddy | Герой Tiles Survive | TilesSurvive.net",
+      "description": "Подробная страница героя Maddy в Tiles Survive. Здесь по SSR-герою собраны описание, боевые особенности, характеристики на максимальном уровне и звёздности, бонус звёздности, навыки и эксклюзивное снаряжение.",
+      "url": "/ru/heroes/maddy/"
+    },
+    {
+      "language": "ru",
+      "type": "heroe",
+      "title": "Mike | Герой Tiles Survive | TilesSurvive.net",
+      "description": "Подробная страница героя Mike в Tiles Survive. Здесь по SSR-герою собраны описание, боевые особенности, характеристики на максимальном уровне и звёздности, бонус звёздности, навыки и эксклюзивное снаряжение.",
+      "url": "/ru/heroes/mike/"
+    },
+    {
+      "language": "ru",
+      "type": "heroe",
+      "title": "Nikola | Герой Tiles Survive | TilesSurvive.net",
+      "description": "Подробная страница героя Nikola в Tiles Survive. Здесь по SSR-герою собраны описание, боевые особенности, характеристики на максимальном уровне и звёздности, бонус звёздности, навыки и эксклюзивное снаряжение.",
+      "url": "/ru/heroes/nikola/"
+    },
+    {
+      "language": "ru",
+      "type": "building",
+      "title": "Power Plant | Здания Tiles Survive | TilesSurvive.net",
+      "description": "Подробная страница Power Plant в Tiles Survive с затратами на улучшение, временем, боевой мощью и навыками по уровням.",
+      "url": "/ru/buildings/power-plant/"
+    },
+    {
+      "language": "ru",
+      "type": "heroe",
+      "title": "Ray | Герой Tiles Survive | TilesSurvive.net",
+      "description": "Подробная страница героя Ray в Tiles Survive. Здесь по SSR-герою собраны описание, боевые особенности, характеристики на максимальном уровне и звёздности, бонус звёздности, навыки и эксклюзивное снаряжение.",
+      "url": "/ru/heroes/ray/"
+    },
+    {
+      "language": "ru",
+      "type": "heroe",
+      "title": "Rosie | Герой Tiles Survive | TilesSurvive.net",
+      "description": "Подробная страница героя Rosie в Tiles Survive. Здесь по SSR-герою собраны описание, боевые особенности, характеристики на максимальном уровне и звёздности, бонус звёздности, навыки и эксклюзивное снаряжение.",
+      "url": "/ru/heroes/rosie/"
+    },
+    {
+      "language": "ru",
+      "type": "heroe",
+      "title": "Rusty | Герой Tiles Survive | TilesSurvive.net",
+      "description": "Подробная страница героя Rusty в Tiles Survive. Здесь в одном месте собраны описание героя, фракция, боевая роль, характеристики на максимальном уровне и звёздности, навыки и бонус звёздности.",
+      "url": "/ru/heroes/rusty/"
+    },
+    {
+      "language": "ru",
+      "type": "heroe",
+      "title": "Sarge | Герой Tiles Survive | TilesSurvive.net",
+      "description": "Подробная страница героя Sarge в Tiles Survive. Здесь по promoted hero собраны описание, боевая роль, характеристики на максимальном уровне и звёздности, бонус звёздности и навыки.",
+      "url": "/ru/heroes/sarge/"
+    },
+    {
+      "language": "ru",
+      "type": "heroe",
+      "title": "Shark | Sea SSR Melee Hero | TilesSurvive.net",
+      "description": "Shark — SSR герой фракции Sea ближнего боя в Tiles Survive. На странице собраны Wave Crash, Shark Wave, Frontline Support, Deep Sea Invincible и эксклюзивное снаряжение Deep Sea Anchor.",
+      "url": "/ru/heroes/shark/"
+    },
+    {
+      "language": "ru",
+      "type": "heroe",
+      "title": "Tara | Герой Tiles Survive | TilesSurvive.net",
+      "description": "Подробная страница героя Tara в Tiles Survive. Здесь по SSR-герою собраны описание, боевые особенности, характеристики на максимальном уровне и звёздности, бонус звёздности, навыки и эксклюзивное снаряжение.",
+      "url": "/ru/heroes/tara/"
+    },
+    {
+      "language": "ru",
+      "type": "heroe",
+      "title": "Tarzan | Герой Tiles Survive | TilesSurvive.net",
+      "description": "Подробная страница героя Tarzan в Tiles Survive. Здесь по SSR-герою собраны описание, боевые особенности, характеристики на максимальном уровне и звёздности, бонус звёздности, навыки и эксклюзивное снаряжение.",
+      "url": "/ru/heroes/tarzan/"
+    },
+    {
+      "language": "ru",
+      "type": "heroe",
+      "title": "Tony | Герой Tiles Survive | TilesSurvive.net",
+      "description": "Подробная страница героя Tony в Tiles Survive. Здесь по SSR-герою собраны описание, боевые особенности, характеристики на максимальном уровне и звёздности, бонус звёздности, навыки и эксклюзивное снаряжение.",
+      "url": "/ru/heroes/tony/"
+    },
+    {
+      "language": "ru",
+      "type": "heroe",
+      "title": "Travis | Герой Tiles Survive | TilesSurvive.net",
+      "description": "Подробная страница героя Travis в Tiles Survive. Здесь в одном месте собраны описание героя, фракция, боевая роль, характеристики на максимальном уровне и звёздности, бонус звёздности и навыки.",
+      "url": "/ru/heroes/travis/"
+    },
+    {
+      "language": "ru",
+      "type": "database",
+      "title": "VIP-очки | База данных Tiles Survive | TilesSurvive.net",
+      "description": "Страница VIP-очков Tiles Survive. Здесь в одном месте собраны таблица VIP-уровней, магазин привилегий VIP12, рулетка привилегий, ежедневный лимит покупки и информация о шансах.",
+      "url": "/ru/database/vip-point/"
+    },
+    {
+      "language": "ru",
+      "type": "building",
+      "title": "Академия героев | Здания Tiles Survive | TilesSurvive.net",
+      "description": "Подробная страница здания Академия героев в Tiles Survive: обзор, почасовое производство книг навыков героев и сила по уровням.",
+      "url": "/ru/buildings/hero-academy/"
+    },
+    {
+      "language": "ru",
+      "type": "building",
+      "title": "Благословенная стела исцеления | Здания Tiles Survive | TilesSurvive.net",
+      "description": "Подробная страница со сводкой по Благословенной стеле исцеления в Tiles Survive: обзор, коэффициент перевода тяжелораненых в легкораненых и мощь по уровням.",
+      "url": "/ru/buildings/blessed-healing-stele/"
+    },
+    {
+      "language": "ru",
+      "type": "season",
+      "title": "Гайд по Season 1 Wave of Fury | Гайд по сезонам Tiles Survive | TilesSurvive.net",
+      "description": "Гайд по Tiles Survive Season 1 Wave of Fury. Здесь собраны выбор корабля, цели сезона, сезонный пасс, недельный пропуск, уничтожение монстров, рыболовный турнир, повышение героев и KvK.",
+      "url": "/ru/seasons/season-1/"
+    },
+    {
+      "language": "ru",
+      "type": "season",
+      "title": "Гайд по Season 2 Awakening of Manryong | Гайд по сезонам Tiles Survive | TilesSurvive.net",
+      "description": "Гайд по Tiles Survive Season 2 Awakening of Manryong. Здесь в одном месте собраны сезонные здания, сезонные награды, сезонный контент, сезонный сброс, dragon genes, сезонные dragon tribes, сезонные навыки и итог сезона.",
+      "url": "/ru/seasons/season-2/"
+    },
+    {
+      "language": "ru",
+      "type": "season",
+      "title": "Гайд по Season 3 Undecided | Гайд по сезонам Tiles Survive | TilesSurvive.net",
+      "description": "Гайд по Tiles Survive Season 3 Undecided. Здесь в одном месте собраны цели сезона, пасс, недельный пропуск, события, повышение героев и серверная война.",
+      "url": "/ru/seasons/season-3/"
+    },
+    {
+      "language": "ru",
+      "type": "guide",
+      "title": "Гайд по победе в Рейде на водохранилище | Гайд Tiles Survive | TilesSurvive.net",
+      "description": "Полный гайд по Рейду на водохранилище в Tiles Survive: условия участия, условия победы, ключевые здания, роли команды, стратегия по фазам и дополнительные советы.",
+      "url": "/ru/guides/reservoir-raid/"
+    },
+    {
+      "language": "ru",
+      "type": "guide",
+      "title": "Гайд по промо скидочного пополнения Tiles Survive | Дополнительные бонусы по специальной ссылке, ежемесячные накопительные купоны и код для новых аккаунтов | TilesSurvive.net",
+      "description": "Гайд по промо скидочного пополнения Tiles Survive. Если заходить по специальной ссылке, дополнительные купоны и ежемесячные накопительные бонусы за пополнение учитываются автоматически. Для новых аккаунтов также доступен дополнительный бонус по коду #s4qU.",
+      "url": "/ru/guides/discount-topup-promotion/"
+    },
+    {
+      "language": "ru",
+      "type": "guide",
+      "title": "Гайд по скидочному пополнению Tiles Survive | Самостоятельное пополнение, условия использования, двухэтапная аутентификация и купоны | TilesSurvive.net",
+      "description": "Полный гайд по самостоятельному пополнению Tiles Survive. Здесь в одном месте собраны условия использования перед оплатой, привязка Google или Facebook, проверка двухэтапной аутентификации, ограничения для Google Play Games, реальный порядок пополнения и способ ввода купонов.",
+      "url": "/ru/guides/discount-topup/"
+    },
+    {
+      "language": "ru",
+      "type": "guide",
+      "title": "Гайд по старту в Tiles Survive | Направление игры для новичков | TilesSurvive.net",
+      "description": "Гайд для новичков в Tiles Survive. Разбираем выбор нового сервера, сильного альянса, ведение фермерских аккаунтов, управление ускорениями, цель по электростанции и базовую стратегию для умеренного доната.",
+      "url": "/ru/guides/beginner-guide/"
+    },
+    {
+      "language": "ru",
+      "type": "building",
+      "title": "Гарнизон | Здания Tiles Survive | TilesSurvive.net",
+      "description": "Подробная страница здания Гарнизон в Tiles Survive с максимальным количеством солдат и информацией по управлению войсками.",
+      "url": "/ru/buildings/garrison-station/"
+    },
+    {
+      "language": "ru",
+      "type": "home",
+      "title": "Дата-хаб Tiles Survive | База данных, гайды, сезоны, коды | TilesSurvive.net",
+      "description": "Долгосрочный дата-хаб по Tiles Survive, где в одном месте собраны база данных, гайды, сезоны и gift codes.",
+      "url": "/ru/"
+    },
+    {
+      "language": "ru",
+      "type": "tool",
+      "title": "Инструменты Tiles Survive | помощник событий, калькуляторы, поиск наград | TilesSurvive.net",
+      "description": "Хаб инструментов Tiles Survive: помощник событий, калькулятор ускорений, поиск наград и полезные ссылки на базу данных.",
+      "url": "/ru/tools/"
+    },
+    {
+      "language": "ru",
+      "type": "building",
+      "title": "Казармы | Стоимость улучшения и разблокировка войск | TilesSurvive.net",
+      "description": "Подробная страница по казармам в Tiles Survive: стоимость улучшения, время, требования к зданиям и уровни разблокировки войск.",
+      "url": "/ru/buildings/barracks/"
+    },
+    {
+      "language": "ru",
+      "type": "guide",
+      "title": "Как ввести gift code в Tiles Survive | Гайд Tiles Survive | TilesSurvive.net",
+      "description": "Гайд по вводу gift code в Tiles Survive, а также список активных кодов, бессрочных кодов и уже истёкших кодов в одном месте.",
+      "url": "/ru/guides/gift-code-how-to-use/"
+    },
+    {
+      "language": "ru",
+      "type": "tool",
+      "title": "Калькулятор ускорений Tiles Survive | TilesSurvive.net",
+      "description": "Простой калькулятор ускорений Tiles Survive для суммирования дней, часов и минут в общие минуты и часы.",
+      "url": "/ru/tools/speedup-calculator/"
+    },
+    {
+      "language": "ru",
+      "type": "privacy",
+      "title": "Конфиденциальность | Хаб данных Tiles Survive | TilesSurvive.net",
+      "description": "Страница с информацией о конфиденциальности TilesSurvive.net. Здесь можно ознакомиться с базовой информацией, которая может собираться при использовании сайта, а также с положениями о внешних ссылках, cookie и каналах связи.",
+      "url": "/ru/privacy/"
+    },
+    {
+      "language": "ru",
+      "type": "behemoth",
+      "title": "Легендарный грифон | Бегемоты Tiles Survive | TilesSurvive.net",
+      "description": "Подробная страница бегемота Легендарный грифон в Tiles Survive. Здесь собраны улучшение звёздного ранга, усиление событий, изменение внешнего вида, ключевые таланты и таблица звёзд.",
+      "url": "/ru/behemoths/legend-griffin/"
+    },
+    {
+      "language": "ru",
+      "type": "behemoth",
+      "title": "Марин Дрейк | Бегемоты Tiles Survive | TilesSurvive.net",
+      "description": "Подробная страница бегемота Марин Дрейк в Tiles Survive. Здесь собраны эффекты улучшения по уровням, усиление событий, изменение внешнего вида, ключевые таланты и таблица звёзд.",
+      "url": "/ru/behemoths/marine-drake/"
+    },
+    {
+      "language": "ru",
+      "type": "building",
+      "title": "Монумент Бога Войны | Здания Tiles Survive | TilesSurvive.net",
+      "description": "Подробная страница здания Монумент Бога Войны в Tiles Survive. Здесь собраны описание здания, атака героя по уровням и боевая мощь в удобном виде.",
+      "url": "/ru/buildings/warbringer-monument/"
+    },
+    {
+      "language": "ru",
+      "type": "building",
+      "title": "Монумент Хранителя Жизни | Здания Tiles Survive | TilesSurvive.net",
+      "description": "Подробная страница здания Монумент Хранителя Жизни в Tiles Survive. Здесь собраны описание здания, здоровье героев по уровням и мощь.",
+      "url": "/ru/buildings/guardian-of-life-monument/"
+    },
+    {
+      "language": "ru",
+      "type": "building",
+      "title": "Монумент Эгиды | Здания Tiles Survive | TilesSurvive.net",
+      "description": "Подробная страница здания Монумент Эгиды в Tiles Survive. Здесь собраны описание здания, защита героев по уровням и боевая мощь.",
+      "url": "/ru/buildings/aegis-monument/"
+    },
+    {
+      "language": "ru",
+      "type": "about",
+      "title": "О сайте | Хаб данных Tiles Survive | TilesSurvive.net",
+      "description": "TilesSurvive.net — это неофициальный хаб данных по Tiles Survive, где собраны здания, герои, бегемоты, база данных, гайды и сезонная информация.",
+      "url": "/ru/about/"
+    },
+    {
+      "language": "ru",
+      "type": "update",
+      "title": "Обновления Tiles Survive | TilesSurvive.net",
+      "description": "Основные изменения из официальных патчноутов и ответов разработчиков.",
+      "url": "/ru/updates/"
+    },
+    {
+      "language": "ru",
+      "type": "database",
+      "title": "Опыт героев | База данных Tiles Survive | TilesSurvive.net",
+      "description": "Страница базы данных по опыту героев в Tiles Survive. Здесь собраны общий расход опыта героя с 1 по 150 уровень и ключевые моменты, на которые стоит обратить внимание при прокачке.",
+      "url": "/ru/database/hero-exp/"
+    },
+    {
+      "language": "ru",
+      "type": "code",
+      "title": "Подарочные коды Tiles Survive | Активные коды, постоянные коды, обратный отсчёт до истечения | TilesSurvive.net",
+      "description": "Проверьте активные подарочные коды Tiles Survive, постоянные коды и обратный отсчёт до следующего истечения на одной странице. Время истечения для Азии, Европы и Америки, кнопки копирования и FAQ собраны в одном месте.",
+      "url": "/ru/codes/"
+    },
+    {
+      "language": "ru",
+      "type": "search",
+      "title": "Поиск по TilesSurvive.net | TilesSurvive.net",
+      "description": "Ищите героев, события, сезоны, предметы, снаряжение, руководства и инструменты.",
+      "url": "/ru/search/"
+    },
+    {
+      "language": "ru",
+      "type": "tool",
+      "title": "Помощник событий Tiles Survive - расписание и гайд по ресурсам",
+      "description": "В помощнике событий Tiles Survive смотрите ресурсы для подготовки, рекомендуемые действия и правила расхода ресурсов по типам событий.",
+      "url": "/ru/tools/event-helper/"
+    },
+    {
+      "language": "ru",
+      "type": "event-helper",
+      "title": "Помощник событий Tiles Survive - расписание и гайд по ресурсам",
+      "description": "В помощнике событий Tiles Survive смотрите ресурсы для подготовки, рекомендуемые действия и правила расхода ресурсов по типам событий.",
+      "url": "/ru/event-helper/"
+    },
+    {
+      "language": "ru",
+      "type": "building",
+      "title": "Проклятая стела ран | Здания Tiles Survive | TilesSurvive.net",
+      "description": "Подробная страница по Проклятой стеле ран в Tiles Survive: обзор, снижение коэффициента перевода тяжелораненых врагов в легкораненых и боевая мощь по уровням.",
+      "url": "/ru/buildings/cursed-wound-stele/"
+    },
+    {
+      "language": "ru",
+      "type": "building",
+      "title": "Пункт призыва | Здания Tiles Survive | TilesSurvive.net",
+      "description": "Подробная страница здания Пункт призыва в Tiles Survive: верность, количество доступных к призыву солдат, вместимость и правила работы.",
+      "url": "/ru/buildings/enlistment-office/"
+    },
+    {
+      "language": "ru",
+      "type": "affiliate-disclosure",
+      "title": "Раскрытие партнёрских ссылок | TilesSurvive.net",
+      "description": "Как TilesSurvive.net использует партнёрские ссылки и сохраняет редакционную независимость.",
+      "url": "/ru/affiliate-disclosure/"
+    },
+    {
+      "language": "ru",
+      "type": "database",
+      "title": "Рекомендуемая таблица Alliance Duel | База данных Tiles Survive | TilesSurvive.net",
+      "description": "Рекомендуемая таблица Alliance Duel в Tiles Survive. На одной странице собраны условия участия, формат события, рекомендуемые этапы для Battle, Turtle и усилений короля.",
+      "url": "/ru/database/alliance-duel/"
+    },
+    {
+      "language": "ru",
+      "type": "top-up",
+      "title": "Руководство по пополнению Tiles Survive | TilesSurvive.net",
+      "description": "Проверьте аккаунт, ценность набора, время события и платёжные данные перед пополнением.",
+      "url": "/ru/top-up/"
+    },
+    {
+      "language": "ru",
+      "type": "contact",
+      "title": "Связаться с TilesSurvive.net | TilesSurvive.net",
+      "description": "Каналы для исправлений, источников, вопросов о конфиденциальности и сотрудничестве.",
+      "url": "/ru/contact/"
+    },
+    {
+      "language": "ru",
+      "type": "season",
+      "title": "Сезон IV: Blizzard Era | TilesSurvive.net",
+      "description": "Официально подтверждённые сведения о запуске и особенностях сезона IV.",
+      "url": "/ru/seasons/season-4/"
+    },
+    {
+      "language": "ru",
+      "type": "event",
+      "title": "События и системы | TilesSurvive.net",
+      "description": "Подтверждённые изменения событий и систем из официальных патчноутов.",
+      "url": "/ru/events/"
+    },
+    {
+      "language": "ru",
+      "type": "database",
+      "title": "Список базы данных Tiles Survive | TilesSurvive.net",
+      "description": "Страница со списком базы данных Tiles Survive. Здесь можно сразу посмотреть все зарегистрированные страницы базы данных в одном месте.",
+      "url": "/ru/database/"
+    },
+    {
+      "language": "ru",
+      "type": "behemoth",
+      "title": "Список бегемотов Tiles Survive | TilesSurvive.net",
+      "description": "Страница со списком бегемотов Tiles Survive. Здесь в удобном виде собраны все подтверждённые на данный момент бегемоты.",
+      "url": "/ru/behemoths/"
+    },
+    {
+      "language": "ru",
+      "type": "guide",
+      "title": "Список гайдов Tiles Survive | TilesSurvive.net",
+      "description": "Страница со списком гайдов Tiles Survive. Здесь в одном месте собраны стартовые советы, советы по развитию, операционные подсказки, ивент-гайды и гайд по скидочному пополнению.",
+      "url": "/ru/guides/"
+    },
+    {
+      "language": "ru",
+      "type": "heroe",
+      "title": "Список героев Tiles Survive | TilesSurvive.net",
+      "description": "Страница со списком героев Tiles Survive. Здесь в удобном виде собраны актуальные герои Mountain, Wasteland и Sky, разделённые по редкости SSR, SR и R.",
+      "url": "/ru/heroes/"
+    },
+    {
+      "language": "ru",
+      "type": "building",
+      "title": "Список зданий Tiles Survive | TilesSurvive.net",
+      "description": "Страница со списком зданий Tiles Survive. Здесь собраны Power Plant, Comms Outpost, Barracks, Lab, Hospital, Enlistment Office, Garrison Station, Hero Academy, Warbringer Monument, Guardian of Life Monument, Aegis Monument, Blessed Healing Stele, Cursed Wound Stele и другие ключевые здания.",
+      "url": "/ru/buildings/"
+    },
+    {
+      "language": "ru",
+      "type": "season",
+      "title": "Список сезонов Tiles Survive | TilesSurvive.net",
+      "description": "Страница со списком сезонных монументов Tiles Survive. Здесь в удобном виде собраны Season 1, Season 2 и Season 3.",
+      "url": "/ru/seasons/"
+    },
+    {
+      "language": "ru",
+      "type": "database",
+      "title": "Таблица звёзд героев | Данные героев Tiles Survive | TilesSurvive.net",
+      "description": "Страница с таблицей звёзд SSR-героев и сезонных повышаемых героев в Tiles Survive. Здесь всё собрано так, чтобы можно было быстро проверить нужное количество фрагментов.",
+      "url": "/ru/database/hero-star/"
+    },
+    {
+      "language": "ru",
+      "type": "database",
+      "title": "Таблица расхода skill book | База данных Tiles Survive | TilesSurvive.net",
+      "description": "Таблица расхода skill book для Tiles Survive. Здесь собраны затраты skill book для battle skill с уровня 1 до 40 и итоговое общее количество.",
+      "url": "/ru/database/skill-book/"
+    },
+    {
+      "language": "ru",
+      "type": "database",
+      "title": "Таблица расхода звёзд легендарного снаряжения героя | Данные героя Tiles Survive | TilesSurvive.net",
+      "description": "Страница с таблицей расхода звёзд легендарного снаряжения героя в Tiles Survive и дополнительными характеристиками по уровням.",
+      "url": "/ru/database/legend-gear-star/"
+    },
+    {
+      "language": "ru",
+      "type": "database",
+      "title": "Таблица расхода клеток бегемота | База данных Tiles Survive | TilesSurvive.net",
+      "description": "Таблица расхода клеток бегемота в Tiles Survive. Здесь в одном месте можно посмотреть расход по звёздам с 1 до 60, сумму по каждому уровню и накопительный итог.",
+      "url": "/ru/database/behemoth-cell/"
+    },
+    {
+      "language": "ru",
+      "type": "database",
+      "title": "Таблица усиления эксклюзивного снаряжения | База данных Tiles Survive | TilesSurvive.net",
+      "description": "Таблица усиления эксклюзивного снаряжения в Tiles Survive. Здесь собраны стоимость повышения уровня эксклюзивного снаряжения и итоговое общее количество материалов.",
+      "url": "/ru/database/exclusive-gear/"
+    },
+    {
+      "language": "ru",
+      "type": "building",
+      "title": "Узел связи | Здания Tiles Survive | TilesSurvive.net",
+      "description": "Подробная страница здания Узел связи в Tiles Survive. Здесь собраны обзор здания, описание функций и краткая информация о системе помощи.",
+      "url": "/ru/buildings/comms-outpost/"
+    },
+    {
+      "language": "ru",
+      "type": "term",
+      "title": "Условия использования | TilesSurvive.net",
+      "description": "Условия использования независимого справочного сайта TilesSurvive.net.",
+      "url": "/ru/terms/"
+    },
+    {
+      "language": "ru",
+      "type": "database",
+      "title": "Черепашья гонка | База данных Tiles Survive | TilesSurvive.net",
+      "description": "Рекомендуемая таблица для черепашьей гонки в Tiles Survive Alliance Duel. Здесь можно быстро проверить рекомендуемые миссии по этапам, моменты для battle, turtle и королевских бафов.",
+      "url": "/ru/database/turtle-race/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "heroe",
+      "title": "凱隆 | Tiles Survive 英雄 | TilesSurvive.net",
+      "description": "Tiles Survive 英雄凱隆詳細頁面。以 SSR 英雄為基準，整理英雄介紹、戰鬥特性、最大等級與星級屬性、星級加成、技能與專屬裝備，方便一次查看。",
+      "url": "/zh-tw/heroes/kiron/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
+      "title": "巨獸細胞消耗表 | Tiles Survive 資料庫 | TilesSurvive.net",
+      "description": "Tiles Survive 的巨獸細胞星級強化消耗表。可一眼查看 1 星到 60 星的各階段消耗、合計與累計。",
+      "url": "/zh-tw/database/behemoth-cell/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "about",
+      "title": "關於 TilesSurvive.net | TilesSurvive.net",
+      "description": "TilesSurvive.net 是服務全球玩家的獨立多語資料與攻略中心。",
+      "url": "/zh-tw/about/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "behemoth",
+      "title": "橘光獅鷲獸 | Tiles Survive 巨獸 | TilesSurvive.net",
+      "description": "Tiles Survive 巨獸橘光獅鷲獸詳細頁面。整理了星級強化、活動增幅、造型變化、代表天賦與星級表。",
+      "url": "/zh-tw/behemoths/legend-griffin/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "heroe",
+      "title": "肯 | Tiles Survive 英雄 | TilesSurvive.net",
+      "description": "Tiles Survive 英雄肯詳細頁面。可一次查看英雄介紹、戰鬥特性、最大等級與星級屬性、星級加成與技能。",
+      "url": "/zh-tw/heroes/chef-ken/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "heroe",
+      "title": "奇奇 | Tiles Survive 英雄 | TilesSurvive.net",
+      "description": "Tiles Survive 英雄奇奇詳細頁面。以 SSR 英雄為基準，整理英雄介紹、戰鬥特性、最大等級與星級屬性、星級追加效果、技能與專屬裝備，方便一次查看。",
+      "url": "/zh-tw/heroes/kiki/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
+      "title": "技能書消耗表 | 點點木作戰 資料庫 | TilesSurvive.net",
+      "description": "點點木作戰的技能書消耗表。整理戰鬥技能從等級 1 到 40 的技能書消耗量與最終所需總數。",
+      "url": "/zh-tw/database/skill-book/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "heroe",
+      "title": "尼古拉 | Tiles Survive 英雄 | TilesSurvive.net",
+      "description": "Tiles Survive 英雄尼古拉詳細頁面。以 SSR 英雄為基準，整理英雄介紹、戰鬥特性、最大等級與星級屬性、星級加成、技能與專屬裝備，方便一頁查看。",
+      "url": "/zh-tw/heroes/nikola/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "heroe",
+      "title": "東尼 | Tiles Survive 英雄 | TilesSurvive.net",
+      "description": "Tiles Survive 英雄東尼詳細頁面。以 SSR 英雄為基準，整理英雄介紹、戰鬥特性、最大等級與星級屬性、星級追加效果、技能與專屬裝備，方便一次查看。",
+      "url": "/zh-tw/heroes/tony/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "heroe",
+      "title": "蘿絲 | 寒霜啟示錄英雄 | TilesSurvive.net",
+      "description": "寒霜啟示錄英雄蘿絲的詳細頁面。以SSR英雄為基準，可一眼查看英雄介紹、戰鬥特性、最大等級與星級屬性、星級加成、技能與專屬裝備。",
+      "url": "/zh-tw/heroes/rosie/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "heroe",
+      "title": "拉格納 | SSR 海洋近戰英雄 | TilesSurvive.net",
+      "description": "Tiles Survive SSR 英雄拉格納詳細頁，整理海洋陣營、近戰定位、最高等級屬性、星級加成、技能與專屬裝備資訊。",
+      "url": "/zh-tw/heroes/lagnar/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "heroe",
+      "title": "拉斯提 | Tiles Survive 英雄 | TilesSurvive.net",
+      "description": "Tiles Survive 英雄拉斯提詳細頁面。可一次查看英雄介紹、陣營、戰鬥特性、Lv MAX 屬性、技能與星級加成。",
+      "url": "/zh-tw/heroes/rusty/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "heroe",
+      "title": "萊拉 | 寒霜啟示錄英雄 | TilesSurvive.net",
+      "description": "寒霜啟示錄英雄萊拉的詳細頁面。以SSR英雄為基準，可一眼查看英雄介紹、戰鬥特性、最大等級與星級屬性、星級加成、技能與專屬裝備。",
+      "url": "/zh-tw/heroes/laila/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "heroe",
+      "title": "萊特 | Tiles Survive 英雄 | TilesSurvive.net",
+      "description": "Tiles Survive 英雄萊特詳細頁面。以 SSR 英雄為基準，整理英雄介紹、戰鬥特性、最大等級與星級屬性、星級追加效果、技能與專屬裝備，方便一頁查看。",
+      "url": "/zh-tw/heroes/light/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "contact",
+      "title": "聯絡 TilesSurvive.net | TilesSurvive.net",
+      "description": "資料更正、來源提供、隱私與合作詢問管道。",
+      "url": "/zh-tw/contact/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "building",
+      "title": "聯絡站 | Tiles Survive 建築 | TilesSurvive.net",
+      "description": "Tiles Survive 建築「聯絡站」詳細頁面。整理建築介紹、功能說明與支援系統摘要。",
+      "url": "/zh-tw/buildings/comms-outpost/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
+      "title": "聯盟對決推薦表 | Tiles Survive Database | TilesSurvive.net",
+      "description": "點點木作戰的聯盟對決推薦表。可一眼查看參加條件、進行方式、各階段推薦任務，以及戰鬥、烏龜與國王 Buff 的推薦區間。",
+      "url": "/zh-tw/database/alliance-duel/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "affiliate-disclosure",
+      "title": "聯盟行銷揭露 | TilesSurvive.net",
+      "description": "說明 TilesSurvive.net 如何使用聯盟連結並維持內容獨立。",
+      "url": "/zh-tw/affiliate-disclosure/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "heroe",
+      "title": "雷 | Tiles Survive 英雄 | TilesSurvive.net",
+      "description": "Tiles Survive 英雄雷詳細頁面。以 SSR 英雄為基準，整理英雄介紹、戰鬥特性、Lv MAX 屬性、星級加成、技能與專屬裝備，方便一次查看。",
+      "url": "/zh-tw/heroes/ray/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "heroe",
+      "title": "麥克 | Tiles Survive 英雄 | TilesSurvive.net",
+      "description": "Tiles Survive 英雄麥克詳細頁面。以 SSR 英雄為基準，整理英雄介紹、戰鬥特性、最大等級與星級屬性、星級追加效果、技能與專屬裝備，方便一頁查看。",
+      "url": "/zh-tw/heroes/mike/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "heroe",
+      "title": "麥蒂 | 寒霜啟示錄 英雄 | TilesSurvive.net",
+      "description": "寒霜啟示錄英雄麥蒂詳細頁面。以SSR英雄為基準，可一眼查看英雄介紹、戰鬥特性、Lv MAX屬性、星級加成、技能與專屬裝備。",
+      "url": "/zh-tw/heroes/maddy/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "building",
+      "title": "發電所 | 點點木作戰 建築 | TilesSurvive.net",
+      "description": "整理點點木作戰發電所升級費用、時間、戰鬥力與技能資訊的詳細頁面。",
+      "url": "/zh-tw/buildings/power-plant/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "heroe",
+      "title": "芙蕾雅 | Tiles Survive 英雄 | TilesSurvive.net",
+      "description": "Tiles Survive 英雄芙蕾雅詳細頁面。可一次查看英雄介紹、戰鬥特性、最大等級與星級屬性、星級加成與技能。",
+      "url": "/zh-tw/heroes/freya/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "heroe",
+      "title": "鯊克 | 海洋 SSR 近戰英雄 | TilesSurvive.net",
+      "description": "鯊克是 Tiles Survive 的海洋陣營 SSR 近戰英雄。本頁整理 Wave Crash、Shark Wave、Frontline Support、Deep Sea Invincible 與專屬裝備深海之錨。",
+      "url": "/zh-tw/heroes/shark/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "term",
+      "title": "使用條款 | TilesSurvive.net",
+      "description": "獨立資訊站 TilesSurvive.net 的使用條件。",
+      "url": "/zh-tw/terms/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "heroe",
+      "title": "薩格 | Tiles Survive 英雄 | TilesSurvive.net",
+      "description": "Tiles Survive 英雄薩格詳細頁面。以進階英雄為基準，整理英雄介紹、戰鬥特性、Lv MAX 屬性、星級加成與技能資訊，方便一頁查看。",
+      "url": "/zh-tw/heroes/sarge/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "season",
+      "title": "賽季Ⅰ 怒海狂潮 指南 | 點點大作戰 賽季指南 | TilesSurvive.net",
+      "description": "點點大作戰 賽季Ⅰ 怒海狂潮指南頁面。整理了艦船選擇、賽季目標、賽季通行證、賽季週通行證、怪物討伐、釣魚大賽、英雄晉升與 KvK 重點。",
+      "url": "/zh-tw/seasons/season-1/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "season",
+      "title": "賽季Ⅱ 萬龍覺醒 指南 | 點點大作戰 賽季指南 | TilesSurvive.net",
+      "description": "點點大作戰 賽季Ⅱ 萬龍覺醒指南頁面。整理了賽季建築、賽季獎勵、賽季內容、賽季重置、龍族基因、賽季龍族、賽季技能與賽季結算。",
+      "url": "/zh-tw/seasons/season-2/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "building",
+      "title": "生命勇士碑 | 點點木作戰 建築 | TilesSurvive.net",
+      "description": "點點木作戰建築 生命勇士碑 詳細頁面。整理建築介紹、各等級英雄生命值與戰鬥力資訊。",
+      "url": "/zh-tw/buildings/guardian-of-life-monument/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "guide",
+      "title": "水庫突襲 勝利攻略 | 點點大作戰 攻略 | TilesSurvive.net",
+      "description": "整理水庫突襲的參加條件、勝利方式、主要建築作用、隊伍分工、各階段運營與額外技巧的點點大作戰實戰攻略。",
+      "url": "/zh-tw/guides/reservoir-raid/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "search",
+      "title": "搜尋 TilesSurvive.net | TilesSurvive.net",
+      "description": "搜尋英雄、活動、賽季、道具、裝備、指南與工具。",
+      "url": "/zh-tw/search/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "building",
+      "title": "神盾紀念碑 | Tiles Survive 建築 | TilesSurvive.net",
+      "description": "Tiles Survive 建築 神盾紀念碑詳細頁面。可一眼查看建築介紹、各等級英雄防禦與戰力資訊。",
+      "url": "/zh-tw/buildings/aegis-monument/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "heroe",
+      "title": "雅各 | 寒霜啟示錄英雄 | TilesSurvive.net",
+      "description": "寒霜啟示錄英雄雅各的詳細頁面。以SSR英雄為基準，可一眼查看英雄介紹、戰鬥特性、最大等級與星級屬性、星級加成、技能與專屬裝備。",
+      "url": "/zh-tw/heroes/jacob/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
+      "title": "英雄經驗值 | TilesSurvive 資料庫 | TilesSurvive.net",
+      "description": "Tiles Survive 的英雄經驗值資料頁面。整理英雄從等級 1 到 150 的總經驗值消耗量，以及培養時需要注意的重點。",
+      "url": "/zh-tw/database/hero-exp/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
+      "title": "英雄星級表 | 點點木作戰 英雄資料 | TilesSurvive.net",
+      "description": "一頁整理查看點點木作戰 SSR 英雄星級表與賽季晉升英雄星級表。",
+      "url": "/zh-tw/database/hero-star/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
+      "title": "英雄傳說裝備星級消耗表 | Tiles Survive 英雄數據 | TilesSurvive.net",
+      "description": "一頁整理 Tiles Survive 英雄傳說裝備星級消耗表與等級追加屬性。",
+      "url": "/zh-tw/database/legend-gear-star/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "building",
+      "title": "英雄學院 | Tiles Survive 建築 | TilesSurvive.net",
+      "description": "整理 Tiles Survive 英雄學院的建築概要、英雄技能書每小時產量與戰力等級資訊的詳細頁面。",
+      "url": "/zh-tw/buildings/hero-academy/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
+      "title": "烏龜賽跑 | Tiles Survive 資料庫 | TilesSurvive.net",
+      "description": "Tiles Survive 聯盟對決 烏龜賽跑推薦表，可一眼查看各階段推薦任務、戰鬥、烏龜與國王增益推薦區間。",
+      "url": "/zh-tw/database/turtle-race/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "heroe",
+      "title": "幽靈 | Tiles Survive 英雄 | TilesSurvive.net",
+      "description": "Tiles Survive 英雄幽靈詳細頁面。可一頁查看英雄介紹、英雄陣營、戰鬥特性、最大等級與星級屬性、星級加成與技能資訊。",
+      "url": "/zh-tw/heroes/ghost/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "privacy",
+      "title": "隱私政策 | TilesSurvive.net",
+      "description": "TilesSurvive.net 的分析工具、Cookie 與外部連結隱私說明。",
+      "url": "/zh-tw/privacy/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "building",
+      "title": "醫院 | Tiles Survive 建築 | TilesSurvive.net",
+      "description": "Tiles Survive 醫院的收容量、免費治療、治療規則與運用注意事項整理頁面。",
+      "url": "/zh-tw/buildings/hospital/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "heroe",
+      "title": "伊娃 | 寒霜啟示錄 英雄 | TilesSurvive.net",
+      "description": "寒霜啟示錄英雄伊娃詳細頁面。可一眼查看英雄介紹、英雄陣營、戰鬥特性、最大等級與星級屬性、星級加成與技能資訊。",
+      "url": "/zh-tw/heroes/eva/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "building",
+      "title": "入伍辦公室 | Tiles Survive 建築 | TilesSurvive.net",
+      "description": "整理 Tiles Survive 入伍辦公室的忠誠值、可徵兵數量、收容容量與運作規則的詳細頁面。",
+      "url": "/zh-tw/buildings/enlistment-office/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "building",
+      "title": "戰神紀念碑 | Tiles Survive 建築 | TilesSurvive.net",
+      "description": "Tiles Survive 建築「戰神紀念碑」詳細頁面。可一眼查看建築介紹、各等級英雄攻擊與戰力資訊。",
+      "url": "/zh-tw/buildings/warbringer-monument/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
+      "title": "專用裝備強化表 | TilesSurvive 資料庫 | TilesSurvive.net",
+      "description": "Tiles Survive 專用裝備強化表。整理專用裝備升級成本與最終總需求數量。",
+      "url": "/zh-tw/database/exclusive-gear/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "behemoth",
+      "title": "點點大作戰 巨獸列表 | TilesSurvive.net",
+      "description": "Tiles Survive 的巨獸列表頁面。將目前已確認的巨獸整理成一目了然的索引頁。",
+      "url": "/zh-tw/behemoths/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "building",
+      "title": "點點大作戰 建築列表 | TilesSurvive.net",
+      "description": "點點大作戰 建築列表頁面。整理了發電廠、入伍辦公室、兵營、實驗室、醫院、駐屯所、英雄學院、戰神紀念碑、勇士紀念碑、神盾紀念碑、詛咒重傷碑、祝福治療碑等主要建築。",
+      "url": "/zh-tw/buildings/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "heroe",
+      "title": "點點大作戰 英雄列表 | TilesSurvive.net",
+      "description": "點點大作戰 英雄列表頁面。已整理目前更新的山脈、荒野、天空陣營英雄，並依 SSR、SR、R 稀有度分類，方便快速查看。",
+      "url": "/zh-tw/heroes/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
+      "title": "點點大作戰 資料庫列表 | TilesSurvive.net",
+      "description": "點點大作戰的資料庫列表頁面。可一目了然查看目前已整理完成的資料庫頁面。",
+      "url": "/zh-tw/database/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "home",
+      "title": "點點大作戰資料中心 | 資料庫 攻略 賽季 代碼 | TilesSurvive.net",
+      "description": "點點大作戰資料庫、攻略、賽季、禮包碼集中整理的長期營運型資料中心。",
+      "url": "/zh-tw/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "building",
+      "title": "點點木作戰 兵營 | 升級消耗與兵種解鎖 | TilesSurvive.net",
+      "description": "可一眼查看點點木作戰兵營升級消耗、時間、前置建築條件與兵種解鎖資訊的詳細頁面。",
+      "url": "/zh-tw/buildings/barracks/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "guide",
+      "title": "點點木作戰 折扣儲值活動指南 | 專屬連結額外福利、每月累積儲值優惠券、新註冊代碼說明 | TilesSurvive.net",
+      "description": "點點木作戰的折扣儲值活動指南。透過專屬連結進入即可自動統計額外優惠券與每月累積儲值獎勵，新註冊用戶還可獲得代碼 #s4qU 的額外福利。",
+      "url": "/zh-tw/guides/discount-topup-promotion/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "guide",
+      "title": "點點木作戰 指南列表 | TilesSurvive.net",
+      "description": "點點木作戰的指南列表頁面。可一眼查看新手指南、成長技巧、營運技巧、活動指南、折扣儲值指南等目前已公開的內容。",
+      "url": "/zh-tw/guides/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "building",
+      "title": "詛咒重傷石碑 | Tiles Survive 建築 | TilesSurvive.net",
+      "description": "整理 Tiles Survive 詛咒重傷石碑的概要、敵軍輕傷轉換率與戰力等級資訊的詳細頁面。",
+      "url": "/zh-tw/buildings/cursed-wound-stele/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "season",
+      "title": "第 3 季 未定攻略 | Tile Survive 賽季指南 | TilesSurvive.net",
+      "description": "Tile Survive 第 3 季未定攻略。已整理賽季目標、賽季通行證、週卡、活動、英雄晉升與伺服器戰整體流程。",
+      "url": "/zh-tw/seasons/season-3/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "season",
+      "title": "第 IV 賽季：Blizzard Era | TilesSurvive.net",
+      "description": "依官方公告整理的第 IV 賽季開放方式與已確認內容。",
+      "url": "/zh-tw/seasons/season-4/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "building",
+      "title": "駐屯所 | Tiles Survive 建築 | TilesSurvive.net",
+      "description": "Tiles Survive 駐屯所的最大兵力與士兵運用資訊整理頁面。",
+      "url": "/zh-tw/buildings/garrison-station/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "heroe",
+      "title": "蔡宜葵 | Tiles Survive 英雄 | TilesSurvive.net",
+      "description": "Tiles Survive 英雄蔡宜葵詳細頁面。以 SSR 英雄為基準，整理英雄介紹、戰鬥特性、最大等級與星級屬性、星級加成、技能與專屬裝備，方便一頁查看。",
+      "url": "/zh-tw/heroes/candy/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "building",
+      "title": "祝福治療碑 | Tiles Survive 建築 | TilesSurvive.net",
+      "description": "Tiles Survive 祝福治療碑的概要、輕傷轉化率與戰力資料頁面，依等級整理顯示。",
+      "url": "/zh-tw/buildings/blessed-healing-stele/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "heroe",
+      "title": "塔拉 | 寒霜啟示錄 英雄 | TilesSurvive.net",
+      "description": "寒霜啟示錄英雄塔拉詳細頁面。以SSR英雄為基準，可一眼查看英雄介紹、戰鬥特性、Lv MAX屬性、星級加成、技能與專屬裝備。",
+      "url": "/zh-tw/heroes/tara/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "heroe",
+      "title": "泰山 | Tiles Survive 英雄 | TilesSurvive.net",
+      "description": "Tiles Survive 英雄泰山詳細頁面。以 SSR 英雄為基準，整理英雄介紹、戰鬥特性、Lv MAX 屬性、星級加成、技能與專屬裝備，方便一頁查看。",
+      "url": "/zh-tw/heroes/tarzan/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "heroe",
+      "title": "特拉維斯 | 寒霜啟示錄 英雄 | TilesSurvive.net",
+      "description": "寒霜啟示錄英雄特拉維斯的詳細頁面。可一眼查看英雄介紹、陣營、戰鬥定位、滿級與滿星屬性、星級加成與技能資訊。",
+      "url": "/zh-tw/heroes/travis/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "heroe",
+      "title": "貝卡 | Tile Survive 英雄 | TilesSurvive.net",
+      "description": "Tile Survive 英雄貝卡的詳細頁面。以 SSR 英雄為基準，可一眼查看英雄介紹、戰鬥特性、最大等級與星級屬性、星級加成、技能與專屬裝備。",
+      "url": "/zh-tw/heroes/beka/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "season",
+      "title": "寒霜啟示錄賽季紀念碑列表 | TilesSurvive.net",
+      "description": "寒霜啟示錄賽季紀念碑列表頁面。目前已將賽季1、賽季2、賽季3紀念碑整理為一目了然的列表。",
+      "url": "/zh-tw/seasons/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "guide",
+      "title": "寒霜啟示錄新手前期攻略 | 新手玩家遊玩方向整理 | TilesSurvive.net",
+      "description": "寒霜啟示錄新手玩家前期攻略指南。整理新伺服器選擇、聯盟選擇、農場帳號經營、加速道具管理、發電廠成長方向，以及小課玩家的遊玩基準。",
+      "url": "/zh-tw/guides/beginner-guide/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "behemoth",
+      "title": "海洋亞龍 | 點點木作戰 巨獸 | TilesSurvive.net",
+      "description": "點點木作戰的巨獸 海洋亞龍 詳細頁面。整理升級效果、活動增幅、造型變化、代表天賦與星級表。",
+      "url": "/zh-tw/behemoths/marine-drake/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "heroe",
+      "title": "幸運小姐 | Tiles Survive 英雄 | TilesSurvive.net",
+      "description": "Tiles Survive 英雄幸運小姐詳細頁面。以晉升英雄為基準，整理英雄介紹、戰鬥特性、最大等級與星級屬性、星級加成與技能，方便一次查看。",
+      "url": "/zh-tw/heroes/lucky/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "event",
+      "title": "活動與系統 | TilesSurvive.net",
+      "description": "依官方更新公告確認的活動與系統變更。",
+      "url": "/zh-tw/events/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "building",
+      "title": "研究所 | Tiles Survive 建築 | TilesSurvive.net",
+      "description": "Tiles Survive 研究所索引頁面。可一眼查看發展、經濟、英雄、士兵、情報前哨基地、聯盟對決、特殊部隊、感染者討伐、末日運輸研究分類。",
+      "url": "/zh-tw/buildings/lab/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "tool",
+      "title": "Tiles Survive 加速計算器 | TilesSurvive.net",
+      "description": "簡單合計 Tiles Survive 加速道具的天、時、分，並轉換為總分鐘與總小時。",
+      "url": "/zh-tw/tools/speedup-calculator/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "update",
+      "title": "Tiles Survive 更新 | TilesSurvive.net",
+      "description": "追蹤官方更新公告與開發者回饋的重要變更。",
+      "url": "/zh-tw/updates/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "tool",
+      "title": "Tiles Survive 工具集合 | 活動助手、獎勵搜尋、計算器 | TilesSurvive.net",
+      "description": "整理 Tiles Survive 活動助手、加速計算器、獎勵搜尋與資料庫連結的工具集合頁。",
+      "url": "/zh-tw/tools/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "code",
+      "title": "Tiles Survive 禮包碼 | 有效代碼・常駐代碼・到期倒數 | TilesSurvive.net",
+      "description": "可在這一頁查看 Tiles Survive 的有效禮包碼、常駐代碼與下一個到期倒數。整理亞洲、歐洲、美洲基準時間、複製功能與 FAQ。",
+      "url": "/zh-tw/codes/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "guide",
+      "title": "Tiles Survive 禮包碼兌換方法 | Tiles Survive 指南 | TilesSurvive.net",
+      "description": "可一次查看 Tiles Survive 禮包碼兌換方法、目前有效代碼、常駐代碼與已過期代碼的指南頁面。",
+      "url": "/zh-tw/guides/gift-code-how-to-use/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "guide",
+      "title": "Tiles Survive 折扣儲值指南 | 自助儲值方式、使用條件、雙重驗證、優惠碼說明 | TilesSurvive.net",
+      "description": "整理 Tiles Survive 自助儲值前一定要先確認的使用條件、Google 或 Facebook 帳號綁定、雙重驗證確認方式、Google Play Games 無法使用的說明、實際儲值流程與優惠碼輸入方法的完整指南。",
+      "url": "/zh-tw/guides/discount-topup/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "top-up",
+      "title": "Tiles Survive 儲值指南 | TilesSurvive.net",
+      "description": "儲值前確認帳號、禮包價值、活動時間與付款資訊。",
+      "url": "/zh-tw/top-up/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "tool",
+      "title": "Tiles Survive 活動助手 - 活動時間與資源使用指南",
+      "description": "在 Tiles Survive 活動助手中查看各活動類型的準備資源、推薦行動與資源使用判斷標準。",
+      "url": "/zh-tw/tools/event-helper/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "event-helper",
+      "title": "Tiles Survive 活動助手 - 活動時間與資源使用指南",
+      "description": "在 Tiles Survive 活動助手中查看各活動類型的準備資源、推薦行動與資源使用判斷標準。",
+      "url": "/zh-tw/event-helper/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
+      "title": "VIP點數 | Tiles Survive 資料庫 | TilesSurvive.net",
+      "description": "Tiles Survive 的 VIP 點數頁面。整理 VIP 等級表、特權商店、特權輪盤、每日購買上限與機率資訊。",
+      "url": "/zh-tw/database/vip-point/"
+    }
+  ]
+}

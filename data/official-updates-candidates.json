@@ -1,0 +1,34 @@
+{
+  "source": "https://tilesurvivegame.com/en/list",
+  "generatedAt": "2026-09-18",
+  "verificationPolicy": "Official announcements are VERIFIED for the existence and wording of announced features. Server availability and live values still require in-game confirmation.",
+  "items": [
+    {
+      "id": "official-v2-6-100",
+      "type": "patch-note",
+      "title": "v2.6.100 Patch Notes",
+      "publishedAt": "2026-09-17",
+      "url": "https://tilesurvivegame.com/en/blog/1173",
+      "status": "verified",
+      "summary": "Introduces the Pet System and upgrades Chief Collections. Feature availability may depend on State progress."
+    },
+    {
+      "id": "official-feedback-2026-09-11",
+      "type": "developer-feedback",
+      "title": "Developer Feedback September 11",
+      "publishedAt": "2026-09-11",
+      "url": "https://tilesurvivegame.com/en/blog/1134",
+      "status": "verified",
+      "summary": "Details the planned Pet System, Command Station bulk item use, clearer faction counters, and Reservoir Raid visibility improvements."
+    },
+    {
+      "id": "official-v2-6-0",
+      "type": "patch-note",
+      "title": "v2.6.0 Patch Notes",
+      "publishedAt": "2026-09-03",
+      "url": "https://tilesurvivegame.com/en/blog/1121",
+      "status": "verified",
+      "summary": "Upgrades the Gift System, moves 3v3 Arena and Underground Goldmine entrances, changes selected Hero star bonuses, and adjusts faction synergy."
+    }
+  ]
+}

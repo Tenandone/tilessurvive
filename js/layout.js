@@ -316,11 +316,22 @@
     }
   }
 
+  function loadAffiliateTracking() {
+    if (document.querySelector('script[src="/js/affiliate-tracking.js"]')) return;
+    const script = document.createElement("script");
+    script.src = "/js/affiliate-tracking.js";
+    script.defer = true;
+    document.head.appendChild(script);
+  }
+
   window.TS_LANG = {
     normalize: normalizeLang,
     apply: applyLang,
     current: getCurrentLang,
   };
 
-  document.addEventListener("DOMContentLoaded", loadLayout);
+  document.addEventListener("DOMContentLoaded", function () {
+    loadAffiliateTracking();
+    loadLayout();
+  });
 })();

@@ -5,7 +5,17 @@
   "main": "index.js",
   "scripts": {
     "dev": "serve . -l 3000",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "audit": "node scripts/audit-site.js",
+    "audit:strict": "node scripts/audit-site.js --strict",
+    "build:hub": "node scripts/build-hub-pages.js && node scripts/build-search-index.js",
+    "build:search": "node scripts/build-search-index.js",
+    "build:home": "node scripts/add-home-entry-points.js",
+    "build:sitemap": "node scripts/sync-hub-sitemap.js",
+    "build:aliases": "node scripts/build-legacy-aliases.js",
+    "build:core": "node scripts/build-core-content.js && node scripts/link-season-four.js",
+    "fix:assets": "node scripts/fix-known-broken-assets.js",
+    "updates:check": "node scripts/check-official-updates.js",
+    "test": "node scripts/audit-site.js"
   },
   "keywords": [],
   "author": "",
