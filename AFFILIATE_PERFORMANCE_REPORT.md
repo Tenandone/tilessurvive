@@ -9,7 +9,12 @@ Last reviewed: 2026-09-18
 
 ## Measurement
 
-The lightweight click listener in `js/affiliate-tracking.js` emits a GA4 event named `affiliate_click` when a LootBar link is activated.
+The lightweight listener in `js/affiliate-tracking.js` emits the following GA4 funnel events:
+
+- `affiliate_impression` when a LootBar CTA becomes meaningfully visible
+- `affiliate_click` when a LootBar CTA is activated
+- `bookmark_cta_click` when the manual bookmark guidance is opened
+- `topup_guide_step` as each top-up step becomes meaningfully visible
 
 Parameters:
 
@@ -19,6 +24,8 @@ Parameters:
 - `placement`
 - `campaign`
 - `content_type`
+- `page_type`
+- `variant`
 
 No personal data is collected by this listener.
 
@@ -36,7 +43,7 @@ No personal data is collected by this listener.
 
 ## Baseline limitations
 
-GA4 account-level users, sessions, countries, traffic sources, revenue, and LootBar conversions are not available from the repository. They must not be inferred. After deployment, compare `affiliate_click` by page, language, placement, and content type. Revenue attribution remains dependent on LootBar reporting.
+GA4 account-level users, sessions, countries, traffic sources, revenue, and LootBar conversions are not available from the repository. They must not be inferred. After deployment, compare impressions and clicks by page, language, placement, variant, and content type. Revenue attribution remains dependent on LootBar reporting; the repository does not infer purchases from outbound clicks.
 
 ## A/B test candidates
 

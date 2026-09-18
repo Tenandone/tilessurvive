@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-09-18T11:07:26.371Z",
+  "generatedAt": "2026-09-18T11:38:57.353Z",
   "itemCount": 395,
   "items": [
     {
@@ -389,6 +389,13 @@
     },
     {
       "language": "en",
+      "type": "top-up",
+      "title": "Tile Survive Top-Up - Save Up to 22% | TilesSurvive.net",
+      "description": "Compare Tile Survive top-up discounts, twice-monthly rewards, cumulative coupons, and the LootBar partner process.",
+      "url": "/en/top-up/"
+    },
+    {
+      "language": "en",
       "type": "building",
       "title": "Tiles Survive Barracks | Upgrade Costs and Troop Unlocks | TilesSurvive.net",
       "description": "A detailed page for Tiles Survive Barracks upgrade costs, upgrade time, prerequisite buildings, and troop unlock levels.",
@@ -498,13 +505,6 @@
       "title": "Tiles Survive Tools Hub | Event Helper, Reward Finder, Calculators | TilesSurvive.net",
       "description": "A Tiles Survive tools hub for the event helper, speedup calculator, reward finder, and useful database links.",
       "url": "/en/tools/"
-    },
-    {
-      "language": "en",
-      "type": "top-up",
-      "title": "Tiles Survive Top-Up Guide | TilesSurvive.net",
-      "description": "A clear guide to preparing a Tiles Survive top-up, checking account details, and using the existing LootBar referral safely.",
-      "url": "/en/top-up/"
     },
     {
       "language": "en",
@@ -726,8 +726,8 @@
     {
       "language": "ja",
       "type": "top-up",
-      "title": "Tiles Survive チャージガイド | TilesSurvive.net",
-      "description": "アカウント、パッケージ価値、イベント時期、決済情報を確認するためのガイドです。",
+      "title": "Tiles Survive チャージ - 最大22%割引 | TilesSurvive.net",
+      "description": "Tiles Surviveのチャージ割引、月2回のリワード、累積クーポン、LootBarの提携手順を確認できます。",
       "url": "/ja/top-up/"
     },
     {
@@ -1573,8 +1573,8 @@
     {
       "language": "ko",
       "type": "top-up",
-      "title": "타일서바이벌 충전 가이드 | TilesSurvive.net",
-      "description": "타일서바이벌 충전 전 계정, 패키지 효율, 이벤트 시점과 결제 정보를 확인하는 안내입니다.",
+      "title": "타일서바이벌 충전 - 최대 22% 할인 | TilesSurvive.net",
+      "description": "타일서바이벌 충전 할인, 월 2회 리워드, 누적 쿠폰과 LootBar 제휴 충전 절차를 확인하세요.",
       "url": "/ko/top-up/"
     },
     {
@@ -2062,6 +2062,13 @@
     },
     {
       "language": "ru",
+      "type": "top-up",
+      "title": "Пополнение Tile Survive - скидка до 22% | TilesSurvive.net",
+      "description": "Сравните скидки на Tile Survive, награды дважды в месяц, накопительные купоны и процесс LootBar.",
+      "url": "/ru/top-up/"
+    },
+    {
+      "language": "ru",
       "type": "building",
       "title": "Проклятая стела ран | Здания Tiles Survive | TilesSurvive.net",
       "description": "Подробная страница по Проклятой стеле ран в Tiles Survive: обзор, снижение коэффициента перевода тяжелораненых врагов в легкораненых и боевая мощь по уровням.",
@@ -2087,13 +2094,6 @@
       "title": "Рекомендуемая таблица Alliance Duel | База данных Tiles Survive | TilesSurvive.net",
       "description": "Рекомендуемая таблица Alliance Duel в Tiles Survive. На одной странице собраны условия участия, формат события, рекомендуемые этапы для Battle, Turtle и усилений короля.",
       "url": "/ru/database/alliance-duel/"
-    },
-    {
-      "language": "ru",
-      "type": "top-up",
-      "title": "Руководство по пополнению Tiles Survive | TilesSurvive.net",
-      "description": "Проверьте аккаунт, ценность набора, время события и платёжные данные перед пополнением.",
-      "url": "/ru/top-up/"
     },
     {
       "language": "ru",
@@ -2742,8 +2742,8 @@
     {
       "language": "zh-tw",
       "type": "top-up",
-      "title": "Tiles Survive 儲值指南 | TilesSurvive.net",
-      "description": "儲值前確認帳號、禮包價值、活動時間與付款資訊。",
+      "title": "Tiles Survive 儲值 - 最高22%折扣 | TilesSurvive.net",
+      "description": "查看Tiles Survive儲值折扣、每月兩次獎勵、累積優惠券與LootBar合作流程。",
       "url": "/zh-tw/top-up/"
     },
     {

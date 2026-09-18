@@ -17,5 +17,6 @@ Last reviewed: 2026-09-18
 | Faction naming | Community sources use Mountain/Wasteland/Sky/Sea while official English patch notes use Stalwart/Aeronaut/Rover/Mariner. | Existing URLs and visible taxonomy remain stable. | Add an alias map before changing public labels. |
 | Event naming | Independent guides use variant spellings such as Ghoulion/Ghoulian. | No canonical entity created yet. | Confirm the current in-game English localization. |
 | Gear tiers and costs | Independent guides provide values that are not fully documented by official sources. | Treat as CANDIDATE; no new numeric claims published. | Verify with two independent captures or official documentation. |
+| LootBar reward thresholds and dates | The program brief identifies two monthly eligibility periods and possible coupon values of $4.9, $9.9, or $99, but does not provide stable cumulative-spend thresholds or exact distribution dates. | Publish the periods and possible values without inventing thresholds or payout dates. | Confirm current conditions on the partner page or with LootBar support. |
 
 No conflicted value should be promoted automatically to a public numeric fact.

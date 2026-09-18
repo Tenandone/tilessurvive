@@ -196,6 +196,7 @@
     body.classList.add("no-scroll");
     backdrop.hidden = false;
     drawer.setAttribute("aria-hidden", "false");
+    drawer.removeAttribute("inert");
 
     if (openButton) openButton.setAttribute("aria-expanded", "true");
   }
@@ -208,6 +209,7 @@
     body.classList.remove("no-scroll");
     backdrop.hidden = true;
     drawer.setAttribute("aria-hidden", "true");
+    drawer.setAttribute("inert", "");
 
     if (openButton) openButton.setAttribute("aria-expanded", "false");
   }
@@ -217,6 +219,7 @@
     const { drawer, backdrop, openButton, closeButton } = elements;
 
     if (!drawer) return;
+    drawer.setAttribute("inert", "");
 
     if (openButton) {
       openButton.addEventListener("click", function () {
