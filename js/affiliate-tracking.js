@@ -1,7 +1,7 @@
 (function () {
   "use strict";
 
-  const LOOTBAR_HOSTS = new Set(["lootbar.gg", "www.lootbar.com", "lootbar.com"]);
+  const LOOTBAR_HOSTS = new Set(["www.lootbar.com", "lootbar.com"]);
 
   function language() {
     const raw = (document.documentElement.getAttribute("lang") || "en").toLowerCase();
@@ -32,11 +32,11 @@
     if (link.dataset.affiliatePlacement) return link.dataset.affiliatePlacement;
     if (link.closest(".hero-card")) return "hero_primary";
     if (link.closest(".site-footer")) return "footer";
-    if (link.closest("[class*='equipment']")) return "contextual_inline_affiliate";
+    if (link.closest("[class*='equipment']")) return "contextual_primary";
     if (location.pathname.includes("top-up") || location.pathname.includes("discount-topup")) return "topup_primary";
-    if (location.pathname.includes("event")) return "contextual_inline_affiliate";
-    if (location.pathname.includes("season")) return "contextual_inline_affiliate";
-    if (location.pathname.includes("heroes")) return "contextual_inline_affiliate";
+    if (location.pathname.includes("event")) return "contextual_primary";
+    if (location.pathname.includes("season")) return "contextual_primary";
+    if (location.pathname.includes("heroes")) return "contextual_primary";
     return "content_inline";
   }
 

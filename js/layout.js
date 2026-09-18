@@ -343,7 +343,21 @@
     document.head.appendChild(script);
   }
 
-  function injectInformationAffiliate(lang) {
+  async function getAffiliateUrl() {
+    try {
+      const response = await fetch("/config/affiliate.json", { cache: "no-cache" });
+      if (!response.ok) return "";
+      const config = await response.json();
+      return config && config.tilesSurvive && typeof config.tilesSurvive.url === "string"
+        ? config.tilesSurvive.url
+        : "";
+    } catch (error) {
+      console.warn("Affiliate config unavailable:", error);
+      return "";
+    }
+  }
+
+  async function injectInformationAffiliate(lang) {
     const main = document.querySelector("main");
     if (!main || main.querySelector("[data-info-affiliate]")) return;
 
@@ -351,26 +365,29 @@
     const section = parts[1] || "";
     const eligible = new Set(["heroes", "buildings", "research", "items", "events", "seasons", "guides", "tools", "database", "behemoths", "codes"]);
     if (!eligible.has(section)) return;
-    if (main.querySelector('a[href*="/top-up/"]') || main.querySelector('a[href*="lootbar.gg"],a[href*="lootbar.com"]')) return;
+    if (main.querySelector('a[href*="/top-up/"]') || main.querySelector('a[href*="lootbar.com"]')) return;
+
+    const affiliateUrl = await getAffiliateUrl();
+    if (!affiliateUrl) return;
 
     const copy = {
-      ko: ["충전 혜택을 확인해 보세요", "패키지별 할인과 월 2회 쿠폰 지급 조건을 결제 전에 비교할 수 있습니다.", "타일서바이벌 최대 22% 할인 충전 확인"],
-      en: ["Check current top-up benefits", "Compare package savings and twice-monthly coupon conditions before paying.", "Check Tile Survive Top-Up Savings"],
-      ja: ["チャージ特典を確認", "支払い前にパッケージ別の割引と月2回のクーポン条件を比較できます。", "Tiles Survive のチャージ特典を確認"],
-      "zh-tw": ["查看目前的儲值優惠", "付款前比較禮包折扣與每月兩次的優惠券發放條件。", "查看 Tiles Survive 儲值優惠"],
-      ru: ["Проверьте текущие бонусы пополнения", "Сравните скидки на наборы и условия выдачи купонов дважды в месяц до оплаты.", "Проверить выгоду пополнения Tile Survive"]
+      ko: ["충전 혜택을 확인해 보세요", "패키지와 이벤트 일정을 확인한 뒤 현재 적용 가능한 할인 충전 혜택을 비교하세요.", "최대 22% 할인 충전 확인", "혜택 자세히 보기"],
+      en: ["Check current top-up benefits", "Review package value and event timing, then compare the currently available top-up savings.", "Check up to 22% top-up savings", "View benefit details"],
+      ja: ["チャージ特典を確認", "パッケージ内容とイベント日程を確認し、現在利用できるチャージ特典を比較しましょう。", "最大22%のチャージ特典を確認", "特典の詳細を見る"],
+      "zh-tw": ["查看目前的儲值優惠", "先確認禮包內容與活動時間，再比較目前可用的儲值優惠。", "查看最高22%儲值優惠", "查看優惠詳情"],
+      ru: ["Проверьте текущие бонусы пополнения", "Сначала проверьте наборы и расписание событий, затем сравните доступную выгоду пополнения.", "Проверить скидку до 22%", "Подробнее о выгоде"]
     };
     const text = copy[lang] || copy.en;
     const style = document.createElement("style");
     style.id = "infoAffiliateStyles";
-    style.textContent = ".info-affiliate-card{margin-top:24px;padding:18px 20px;border:1px solid #cbd5e1;border-left:4px solid #2f6e5d;border-radius:8px;background:#f8faf8}.info-affiliate-card h2{margin:0 0 5px;font-size:20px}.info-affiliate-card p{margin:0;color:#475569}.info-affiliate-card a{display:inline-flex;align-items:center;justify-content:center;min-height:42px;margin-top:13px;padding:0 14px;border:1px solid #17211b;border-radius:8px;background:#17211b;color:#fff;font-weight:800;text-decoration:none}.info-affiliate-card a:focus-visible{outline:3px solid #d4a83f;outline-offset:3px}";
+    style.textContent = ".info-affiliate-card{margin-top:24px;padding:18px 20px;border:1px solid #cbd5e1;border-left:4px solid #2f6e5d;border-radius:8px;background:#f8faf8}.info-affiliate-card h2{margin:0 0 5px;font-size:20px}.info-affiliate-card p{margin:0;color:#475569}.info-affiliate-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:13px}.info-affiliate-card a{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:0 14px;border:1px solid #17211b;border-radius:8px;background:#17211b;color:#fff;font-weight:800;text-decoration:none}.info-affiliate-card a.info-affiliate-details{background:transparent;color:#17211b}.info-affiliate-card a:focus-visible{outline:3px solid #d4a83f;outline-offset:3px}";
     if (!document.getElementById(style.id)) document.head.appendChild(style);
 
     const card = document.createElement("section");
     card.className = "info-affiliate-card";
     card.dataset.infoAffiliate = "";
     card.setAttribute("aria-labelledby", "infoAffiliateTitle");
-    card.innerHTML = `<h2 id="infoAffiliateTitle">${text[0]}</h2><p>${text[1]}</p><a href="/${lang}/top-up/" data-affiliate-placement="info_bottom_affiliate" data-affiliate-campaign="topup_hub" data-affiliate-variant="A">${text[2]}</a>`;
+    card.innerHTML = `<h2 id="infoAffiliateTitle">${text[0]}</h2><p>${text[1]}</p><div class="info-affiliate-actions"><a href="${affiliateUrl}" target="_blank" rel="nofollow sponsored noopener noreferrer" data-affiliate-placement="info_bottom_primary" data-affiliate-campaign="lootbar" data-affiliate-variant="A">${text[2]}</a><a class="info-affiliate-details" href="/${lang}/top-up/" data-affiliate-placement="info_bottom_details" data-affiliate-campaign="topup_hub" data-affiliate-variant="A">${text[3]}</a></div>`;
     main.appendChild(card);
   }
 

@@ -4,7 +4,7 @@ Last reviewed: 2026-09-18
 
 ## Referral destination
 
-- Current repository URL: `https://lootbar.gg/shop/ten/top-up/tiles-survive`
+- Current repository URL: `https://www.lootbar.com/ko/shop/ten/top-up/tiles-survive`
 - The existing referral path is preserved. No guessed referral parameters or UTM values were added.
 
 ## Measurement
