@@ -37,9 +37,26 @@ The repository is a five-language static site with 300+ sitemap URLs. It has her
 | Underground Goldmine | Missing dedicated page. | Official 2026 patches add Level 6 and move access to Event Checklist. | Add canonical event/system page. | VERIFIED | P0 |
 | Hero Fragment Exchange | Mentioned indirectly. | Official v2.5.700 confirms Recycling Center exchange use. | Add item flow and eligibility constraints after in-game validation. | VERIFIED need | P1 |
 | Might of the Ocean | Missing. | Official v2.4.600 confirms a Mariner-focused Settlement Tech tree. | Add research/system page and Sea hero relationships. | VERIFIED | P0 |
-| Pets | Missing. | Official v2.6.100 introduces the Pet System, State-progress gated. | Add update first; hold detailed values until live verification. | VERIFIED | P0 |
+| Pets | Five-language canonical Pet System page and structured entity added. | Official v2.6.100 introduces Pet Eggs, growth, appearances, Hero stat bonuses, and battle support; rollout is State-progress gated. | Numeric growth costs and Pet-specific skill values remain unavailable. | ALREADY COVERED | P0 |
 | Chief Collections | Partial references only. | Official v2.6.100 announces a full upgrade. | Capture current UI and create an entity after verification. | VERIFIED need | P1 |
+
+## 2026-09-18 research refresh
+
+| Classification | Data | Source | verifiedAt | Confidence | Handling |
+|---|---|---|---|---|---|
+| ALREADY COVERED | Pet System existence, Pet Eggs from Pet-related Intel Missions, growth, appearances, Hero-wide stats, battle support | [Official v2.6.100](https://tilesurvivegame.com/en/blog/1173), [Developer Feedback September 11](https://tilesurvivegame.com/en/blog/1134) | 2026-09-18 | official-verified | Added as `/database/pet-system/` in five languages. |
+| PARTIAL | Chief Collections upgrade, Collection Stats overview, Set Bonuses, Mythic Collection Sets | [Official v2.6.100](https://tilesurvivegame.com/en/blog/1173) | 2026-09-18 | official-system-level | Keep in Updates until collection names, set requirements, and values are captured. |
+| MISSING | Pet growth costs, Pet skill values, Pet roster, Pet Eggs drop quantities | Official patch does not publish values | 2026-09-18 | unknown | Do not publish numeric claims. |
+| CANDIDATE | Current formation meta, gear priorities, event scoring, and detailed upgrade economics | [MTurboGamer](https://mturbogamer.com/category/tiles-survive/) | 2026-09-18 | single-independent-source | Use for gap discovery only; requires official or second independent confirmation. |
+| CONFLICT | Faction names and hero role labels across official and community terminology | Official patches and independent guides | 2026-09-18 | mixed | Preserve current URLs and maintain the alias-map requirement. |
+| HIGH PRIORITY | Chief Collections entity and structured Pet/item relationships | Official v2.6.100 | 2026-09-18 | official-verified-at-system-level | Next capture pass should add current in-game values without extrapolation. |
+
+### Benchmark notes
+
+- The Tile Survive Field Guide endpoint was not reliably readable during this audit, so no claim from it was promoted into production.
+- TilesSurviveGuide and MTurboGamer were reviewed for coverage gaps. Their lineup, gear, scoring, and economy details remain candidate material unless another reliable source agrees.
+- The official update list now identifies v2.6.100 (2026-09-17) as the latest patch. No newer official patch was visible during this review.
 
 ## Immediate implementation boundary
 
-This phase adds a verified official-updates feed, update hub, top-up landing, affiliate disclosure, click analytics, automated static audit, and generator-based multilingual foundation. Numeric game data that lacks sufficient evidence remains out of production and is tracked in `DATA_CONFLICT_REPORT.md`.
+This phase adds a verified Pet System entity and five-language page, strengthens the home-to-Top-Up funnel, and preserves low-intent information pages by placing only one contextual CTA after the content. Numeric game data that lacks sufficient evidence remains out of production and is tracked in `DATA_CONFLICT_REPORT.md`.

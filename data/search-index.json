@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-09-18T11:38:57.353Z",
-  "itemCount": 395,
+  "generatedAt": "2026-09-18T12:16:58.077Z",
+  "itemCount": 400,
   "items": [
     {
       "language": "en",
@@ -260,6 +260,13 @@
       "title": "Nikola | Tiles Survive Hero | TilesSurvive.net",
       "description": "Detailed Tiles Survive hero page for Nikola. This page covers hero background, combat traits, max level and star stats, star bonus, skills, and signature gear for this SSR hero.",
       "url": "/en/heroes/nikola/"
+    },
+    {
+      "language": "en",
+      "type": "database",
+      "title": "Pet System | TilesSurvive.net",
+      "description": "Verified Tiles Survive Pet System facts from the official v2.6.100 patch notes.",
+      "url": "/en/database/pet-system/"
     },
     {
       "language": "en",
@@ -1034,6 +1041,13 @@
     {
       "language": "ja",
       "type": "database",
+      "title": "ペットシステム | TilesSurvive.net",
+      "description": "公式v2.6.100パッチノートで確認されたTiles Surviveのペットシステム情報です。",
+      "url": "/ja/database/pet-system/"
+    },
+    {
+      "language": "ja",
+      "type": "database",
       "title": "ベヘモス細胞消費表 | タイルズサバイバル データベース | TilesSurvive.net",
       "description": "タイルズサバイバルのベヘモス細胞スター強化消費表です。1星から60星まで、段階別消費量・合計・累計をひと目で確認できます。",
       "url": "/ja/database/behemoth-cell/"
@@ -1614,6 +1628,13 @@
     },
     {
       "language": "ko",
+      "type": "database",
+      "title": "펫 시스템 | TilesSurvive.net",
+      "description": "공식 v2.6.100 패치노트로 확인된 타일서바이벌 펫 시스템 정보입니다.",
+      "url": "/ko/database/pet-system/"
+    },
+    {
+      "language": "ko",
       "type": "privacy",
       "title": "프라이버시 | 타일서바이벌 데이터 허브 | TilesSurvive.net",
       "description": "TilesSurvive.net의 프라이버시 안내 페이지입니다. 사이트 이용 시 수집될 수 있는 기본 정보와 외부 링크, 쿠키, 문의 채널 관련 내용을 확인할 수 있습니다.",
@@ -2108,6 +2129,13 @@
       "title": "Сезон IV: Blizzard Era | TilesSurvive.net",
       "description": "Официально подтверждённые сведения о запуске и особенностях сезона IV.",
       "url": "/ru/seasons/season-4/"
+    },
+    {
+      "language": "ru",
+      "type": "database",
+      "title": "Система питомцев | TilesSurvive.net",
+      "description": "Подтверждённые сведения о системе питомцев Tiles Survive из официального патча v2.6.100.",
+      "url": "/ru/database/pet-system/"
     },
     {
       "language": "ru",
@@ -2619,6 +2647,13 @@
       "title": "蔡宜葵 | Tiles Survive 英雄 | TilesSurvive.net",
       "description": "Tiles Survive 英雄蔡宜葵詳細頁面。以 SSR 英雄為基準，整理英雄介紹、戰鬥特性、最大等級與星級屬性、星級加成、技能與專屬裝備，方便一頁查看。",
       "url": "/zh-tw/heroes/candy/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
+      "title": "寵物系統 | TilesSurvive.net",
+      "description": "依官方v2.6.100更新公告確認的Tiles Survive寵物系統資訊。",
+      "url": "/zh-tw/database/pet-system/"
     },
     {
       "language": "zh-tw",

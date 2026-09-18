@@ -5,7 +5,7 @@ const ROOT = path.resolve(__dirname, "..");
 const file = path.join(ROOT, "sitemap.xml");
 let xml = fs.readFileSync(file, "utf8");
 const langs = ["ko","en","ja","zh-tw","ru"];
-const slugs = ["updates","top-up","search","contact","terms","affiliate-disclosure","about","privacy","events","seasons/season-4"];
+const slugs = ["updates","top-up","search","contact","terms","affiliate-disclosure","about","privacy","events","seasons/season-4","database/pet-system"];
 const urls = langs.flatMap((lang) => slugs.map((slug) => `https://tilessurvive.net/${lang}/${slug}/`));
 
 for (const url of urls) {

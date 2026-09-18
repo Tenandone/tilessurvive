@@ -327,6 +327,37 @@
     document.head.appendChild(script);
   }
 
+  function injectInformationAffiliate(lang) {
+    const main = document.querySelector("main");
+    if (!main || main.querySelector("[data-info-affiliate]")) return;
+
+    const parts = location.pathname.split("/").filter(Boolean);
+    const section = parts[1] || "";
+    const eligible = new Set(["heroes", "buildings", "research", "items", "events", "seasons", "guides", "tools", "database", "behemoths", "codes"]);
+    if (!eligible.has(section)) return;
+    if (main.querySelector('a[href*="/top-up/"]') || main.querySelector('a[href*="lootbar.gg"],a[href*="lootbar.com"]')) return;
+
+    const copy = {
+      ko: ["충전 옵션이 필요한가요?", "현재 타일서바이벌 충전 혜택과 리워드 조건을 확인하세요.", "충전 혜택 보기"],
+      en: ["Need more resources?", "Review current Tile Survive top-up options and reward conditions.", "View top-up options"],
+      ja: ["追加の資源が必要ですか？", "現在の Tiles Survive チャージ特典と報酬条件を確認できます。", "チャージ特典を見る"],
+      "zh-tw": ["需要更多資源嗎？", "查看目前的 Tiles Survive 儲值選項與獎勵條件。", "查看儲值選項"],
+      ru: ["Нужны дополнительные ресурсы?", "Проверьте текущие варианты пополнения Tiles Survive и условия наград.", "Посмотреть варианты пополнения"]
+    };
+    const text = copy[lang] || copy.en;
+    const style = document.createElement("style");
+    style.id = "infoAffiliateStyles";
+    style.textContent = ".info-affiliate-card{margin-top:24px;padding:18px 20px;border:1px solid #cbd5e1;border-left:4px solid #0f766e;border-radius:14px;background:#f8fafc}.info-affiliate-card h2{margin:0 0 5px;font-size:20px}.info-affiliate-card p{margin:0;color:#475569}.info-affiliate-card a{display:inline-flex;align-items:center;justify-content:center;min-height:42px;margin-top:13px;padding:0 14px;border:1px solid #cbd5e1;border-radius:10px;background:#fff;color:#0f172a;font-weight:800;text-decoration:none}";
+    if (!document.getElementById(style.id)) document.head.appendChild(style);
+
+    const card = document.createElement("section");
+    card.className = "info-affiliate-card";
+    card.dataset.infoAffiliate = "";
+    card.setAttribute("aria-labelledby", "infoAffiliateTitle");
+    card.innerHTML = `<h2 id="infoAffiliateTitle">${text[0]}</h2><p>${text[1]}</p><a href="/${lang}/top-up/" data-affiliate-placement="info_bottom_affiliate" data-affiliate-campaign="topup_hub" data-affiliate-variant="A">${text[2]}</a>`;
+    main.appendChild(card);
+  }
+
   window.TS_LANG = {
     normalize: normalizeLang,
     apply: applyLang,
@@ -334,6 +365,7 @@
   };
 
   document.addEventListener("DOMContentLoaded", function () {
+    injectInformationAffiliate(getCurrentLang());
     loadAffiliateTracking();
     loadLayout();
   });
