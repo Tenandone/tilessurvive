@@ -29,6 +29,7 @@
 <url><loc>https://tilessurvive.net/ko/database/</loc></url>
 <url><loc>https://tilessurvive.net/ko/database/legend-gear-star/</loc></url>
 <url><loc>https://tilessurvive.net/ko/database/pet-system/</loc></url>
+<url><loc>https://tilessurvive.net/ko/database/pet-system/starhorn/</loc></url>
 <url><loc>https://tilessurvive.net/ko/database/skill-book/</loc></url>
 <url><loc>https://tilessurvive.net/ko/database/turtle-race/</loc></url>
 <url><loc>https://tilessurvive.net/ko/database/vip-point/</loc></url>
@@ -49,6 +50,7 @@
 <url><loc>https://tilessurvive.net/ko/heroes/jacob/</loc></url>
 <url><loc>https://tilessurvive.net/ko/heroes/kiki/</loc></url>
 <url><loc>https://tilessurvive.net/ko/heroes/kiron/</loc></url>
+<url><loc>https://tilessurvive.net/ko/heroes/knotty/</loc></url>
 <url><loc>https://tilessurvive.net/ko/heroes/lagnar/</loc></url>
 <url><loc>https://tilessurvive.net/ko/heroes/laila/</loc></url>
 <url><loc>https://tilessurvive.net/ko/heroes/light/</loc></url>
@@ -65,6 +67,7 @@
 <url><loc>https://tilessurvive.net/ko/heroes/tarzan/</loc></url>
 <url><loc>https://tilessurvive.net/ko/heroes/tony/</loc></url>
 <url><loc>https://tilessurvive.net/ko/heroes/travis/</loc></url>
+<url><loc>https://tilessurvive.net/ko/heroes/undine/</loc></url>
 <url><loc>https://tilessurvive.net/ko/</loc></url>
 <url><loc>https://tilessurvive.net/ko/privacy/</loc></url>
 <url><loc>https://tilessurvive.net/ko/search/</loc></url>
@@ -108,6 +111,7 @@
 <url><loc>https://tilessurvive.net/en/database/</loc></url>
 <url><loc>https://tilessurvive.net/en/database/legend-gear-star/</loc></url>
 <url><loc>https://tilessurvive.net/en/database/pet-system/</loc></url>
+<url><loc>https://tilessurvive.net/en/database/pet-system/starhorn/</loc></url>
 <url><loc>https://tilessurvive.net/en/database/skill-book/</loc></url>
 <url><loc>https://tilessurvive.net/en/database/turtle-race/</loc></url>
 <url><loc>https://tilessurvive.net/en/database/vip-point/</loc></url>
@@ -128,6 +132,7 @@
 <url><loc>https://tilessurvive.net/en/heroes/jacob/</loc></url>
 <url><loc>https://tilessurvive.net/en/heroes/kiki/</loc></url>
 <url><loc>https://tilessurvive.net/en/heroes/kiron/</loc></url>
+<url><loc>https://tilessurvive.net/en/heroes/knotty/</loc></url>
 <url><loc>https://tilessurvive.net/en/heroes/lagnar/</loc></url>
 <url><loc>https://tilessurvive.net/en/heroes/laila/</loc></url>
 <url><loc>https://tilessurvive.net/en/heroes/light/</loc></url>
@@ -144,6 +149,7 @@
 <url><loc>https://tilessurvive.net/en/heroes/tazan/</loc></url>
 <url><loc>https://tilessurvive.net/en/heroes/tony/</loc></url>
 <url><loc>https://tilessurvive.net/en/heroes/travis/</loc></url>
+<url><loc>https://tilessurvive.net/en/heroes/undine/</loc></url>
 <url><loc>https://tilessurvive.net/en/</loc></url>
 <url><loc>https://tilessurvive.net/en/privacy/</loc></url>
 <url><loc>https://tilessurvive.net/en/search/</loc></url>
@@ -187,6 +193,7 @@
 <url><loc>https://tilessurvive.net/ja/database/</loc></url>
 <url><loc>https://tilessurvive.net/ja/database/legend-gear-star/</loc></url>
 <url><loc>https://tilessurvive.net/ja/database/pet-system/</loc></url>
+<url><loc>https://tilessurvive.net/ja/database/pet-system/starhorn/</loc></url>
 <url><loc>https://tilessurvive.net/ja/database/skill-book/</loc></url>
 <url><loc>https://tilessurvive.net/ja/database/turtle-race/</loc></url>
 <url><loc>https://tilessurvive.net/ja/database/vip-point/</loc></url>
@@ -207,6 +214,7 @@
 <url><loc>https://tilessurvive.net/ja/heroes/jacob/</loc></url>
 <url><loc>https://tilessurvive.net/ja/heroes/kiki/</loc></url>
 <url><loc>https://tilessurvive.net/ja/heroes/kiron/</loc></url>
+<url><loc>https://tilessurvive.net/ja/heroes/knotty/</loc></url>
 <url><loc>https://tilessurvive.net/ja/heroes/lagnar/</loc></url>
 <url><loc>https://tilessurvive.net/ja/heroes/laila/</loc></url>
 <url><loc>https://tilessurvive.net/ja/heroes/light/</loc></url>
@@ -223,6 +231,7 @@
 <url><loc>https://tilessurvive.net/ja/heroes/tarzan/</loc></url>
 <url><loc>https://tilessurvive.net/ja/heroes/tony/</loc></url>
 <url><loc>https://tilessurvive.net/ja/heroes/travis/</loc></url>
+<url><loc>https://tilessurvive.net/ja/heroes/undine/</loc></url>
 <url><loc>https://tilessurvive.net/ja/</loc></url>
 <url><loc>https://tilessurvive.net/ja/privacy/</loc></url>
 <url><loc>https://tilessurvive.net/ja/search/</loc></url>
@@ -266,6 +275,7 @@
 <url><loc>https://tilessurvive.net/ru/database/</loc></url>
 <url><loc>https://tilessurvive.net/ru/database/legend-gear-star/</loc></url>
 <url><loc>https://tilessurvive.net/ru/database/pet-system/</loc></url>
+<url><loc>https://tilessurvive.net/ru/database/pet-system/starhorn/</loc></url>
 <url><loc>https://tilessurvive.net/ru/database/skill-book/</loc></url>
 <url><loc>https://tilessurvive.net/ru/database/turtle-race/</loc></url>
 <url><loc>https://tilessurvive.net/ru/database/vip-point/</loc></url>
@@ -286,6 +296,7 @@
 <url><loc>https://tilessurvive.net/ru/heroes/jacob/</loc></url>
 <url><loc>https://tilessurvive.net/ru/heroes/kiki/</loc></url>
 <url><loc>https://tilessurvive.net/ru/heroes/kiron/</loc></url>
+<url><loc>https://tilessurvive.net/ru/heroes/knotty/</loc></url>
 <url><loc>https://tilessurvive.net/ru/heroes/lagnar/</loc></url>
 <url><loc>https://tilessurvive.net/ru/heroes/laila/</loc></url>
 <url><loc>https://tilessurvive.net/ru/heroes/light/</loc></url>
@@ -302,6 +313,7 @@
 <url><loc>https://tilessurvive.net/ru/heroes/tarzan/</loc></url>
 <url><loc>https://tilessurvive.net/ru/heroes/tony/</loc></url>
 <url><loc>https://tilessurvive.net/ru/heroes/travis/</loc></url>
+<url><loc>https://tilessurvive.net/ru/heroes/undine/</loc></url>
 <url><loc>https://tilessurvive.net/ru/</loc></url>
 <url><loc>https://tilessurvive.net/ru/privacy/</loc></url>
 <url><loc>https://tilessurvive.net/ru/search/</loc></url>
@@ -345,6 +357,7 @@
 <url><loc>https://tilessurvive.net/zh-tw/database/</loc></url>
 <url><loc>https://tilessurvive.net/zh-tw/database/legend-gear-star/</loc></url>
 <url><loc>https://tilessurvive.net/zh-tw/database/pet-system/</loc></url>
+<url><loc>https://tilessurvive.net/zh-tw/database/pet-system/starhorn/</loc></url>
 <url><loc>https://tilessurvive.net/zh-tw/database/skill-book/</loc></url>
 <url><loc>https://tilessurvive.net/zh-tw/database/turtle-race/</loc></url>
 <url><loc>https://tilessurvive.net/zh-tw/database/vip-point/</loc></url>
@@ -365,6 +378,7 @@
 <url><loc>https://tilessurvive.net/zh-tw/heroes/jacob/</loc></url>
 <url><loc>https://tilessurvive.net/zh-tw/heroes/kiki/</loc></url>
 <url><loc>https://tilessurvive.net/zh-tw/heroes/kiron/</loc></url>
+<url><loc>https://tilessurvive.net/zh-tw/heroes/knotty/</loc></url>
 <url><loc>https://tilessurvive.net/zh-tw/heroes/lagnar/</loc></url>
 <url><loc>https://tilessurvive.net/zh-tw/heroes/laila/</loc></url>
 <url><loc>https://tilessurvive.net/zh-tw/heroes/light/</loc></url>
@@ -381,6 +395,7 @@
 <url><loc>https://tilessurvive.net/zh-tw/heroes/tarzan/</loc></url>
 <url><loc>https://tilessurvive.net/zh-tw/heroes/tony/</loc></url>
 <url><loc>https://tilessurvive.net/zh-tw/heroes/travis/</loc></url>
+<url><loc>https://tilessurvive.net/zh-tw/heroes/undine/</loc></url>
 <url><loc>https://tilessurvive.net/zh-tw/</loc></url>
 <url><loc>https://tilessurvive.net/zh-tw/privacy/</loc></url>
 <url><loc>https://tilessurvive.net/zh-tw/search/</loc></url>

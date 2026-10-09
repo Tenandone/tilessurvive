@@ -4,8 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "node scripts/build-platform.js && node scripts/build-search-index.js && node scripts/audit-site.js --strict",
+    "build": "node scripts/refine-content.js && node scripts/build-platform.js && node scripts/build-search-index.js && node scripts/audit-site.js --strict",
     "test:platform": "node scripts/test-platform.js",
+    "test:refinement": "node scripts/test-refinement.js",
     "dev": "serve . -l 3000",
     "audit": "node scripts/audit-site.js",
     "audit:strict": "node scripts/audit-site.js --strict",

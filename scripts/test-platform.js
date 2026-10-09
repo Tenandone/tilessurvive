@@ -5,7 +5,7 @@ const fs = require("fs"),
 const { parseHTML } = require("linkedom");
 const math = require("../js/platform-math");
 const root = path.resolve(__dirname, "..");
-let baseline = path.resolve(process.argv[2] || "../audit-source");
+let baseline = path.resolve(process.argv[2] || "../renewal");
 if (!fs.existsSync(baseline)) {
   const { execFileSync } = require("child_process");
   baseline = path.join(root, "test-results", "baseline");
@@ -17,7 +17,7 @@ if (!fs.existsSync(baseline)) {
       "archive",
       "--format=tar",
       "--output=" + archive,
-      "a4766e36c00c12932ea5d4aceb9e7d323668f77f",
+      "591c16693d67cfe8c2e02a41310ce511f35c6088",
       "ko",
       "en",
       "ja",
@@ -120,7 +120,11 @@ for (const l of langs)
       }
     }
     check(
-      JSON.stringify(tableData(old)) === JSON.stringify(tableData(d)),
+      JSON.stringify(tableData(old)) === JSON.stringify(tableData(d).filter((_,i) => {
+        // The pet directory adds one independently tested training table.
+        const table = d.querySelectorAll('main table')[i];
+        return !table.closest('#pet-growth');
+      })),
       "Table changed " + route,
     );
     tables += d.querySelectorAll("main table").length;
@@ -204,6 +208,9 @@ for (const e of languageEdges) {
 }
 const hash = (f) =>
   crypto.createHash("sha256").update(fs.readFileSync(f)).digest("hex");
+// Git for Windows may change checkout line endings. Ignore CRLF only; every
+// other character in original formulas, configuration and game JSON must match.
+const textHash = f => crypto.createHash('sha256').update(fs.readFileSync(f,'utf8').replace(/\r\n/g,'\n')).digest('hex');
 for (const f of walk(path.join(baseline, "img"))) {
   check(
     fs.existsSync(path.join(root, path.relative(baseline, f))) &&
@@ -215,17 +222,17 @@ for (const f of walk(path.join(baseline, "data")).filter(
   (f) => f.endsWith(".json") && !f.endsWith("search-index.json"),
 ))
   check(
-    hash(f) === hash(path.join(root, path.relative(baseline, f))),
+    textHash(f) === textHash(path.join(root, path.relative(baseline, f))),
     "Game JSON changed " + f,
   );
 check(
-  hash(path.join(root, "js/tools-speedup-calculator.js")) ===
-    hash(path.join(baseline, "js/tools-speedup-calculator.js")),
+  textHash(path.join(root, "js/tools-speedup-calculator.js")) ===
+    textHash(path.join(baseline, "js/tools-speedup-calculator.js")),
   "Existing speedup formula changed",
 );
 check(
-  hash(path.join(root, "config/affiliate.json")) ===
-    hash(path.join(baseline, "config/affiliate.json")),
+  textHash(path.join(root, "config/affiliate.json")) ===
+    textHash(path.join(baseline, "config/affiliate.json")),
   "Affiliate config changed",
 );
 check(

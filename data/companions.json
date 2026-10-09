@@ -1,0 +1,144 @@
+{
+  "checked": "2026-10-09",
+  "sources": {
+    "official": "https://tilesurvivegame.com/en/blog/1173",
+    "announcement": "https://x.com/TilesSurvive/status/2100886931487830442",
+    "announcementMirror": "https://mobile.twstalker.com/TilesSurvive/status/2100886931487830442",
+    "images": "https://www.ldshop.gg/blog/tiles-survive/tiles-survive-pet-system-guide.html",
+    "community": "https://tilesmania.com/ko/pets/",
+    "video": "https://youtu.be/9dr561ey7rw"
+  },
+  "pets": [
+    {
+      "id": "snowball",
+      "name": "Snowball",
+      "ko": "스노우볼",
+      "animal": "Baby seal",
+      "animalKo": "물범",
+      "role": "Support",
+      "rarity": null,
+      "rarityEvidence": null,
+      "skillKo": "공식 소개는 무작위 적에게 물 피해를 주는 효과를 설명합니다. 피해 계수는 미확인입니다.",
+      "skill": "The announcement describes water damage to a random enemy. The coefficient is not confirmed."
+    },
+    {
+      "id": "dodo",
+      "name": "Dodo",
+      "ko": "도도",
+      "animal": "Raccoon",
+      "animalKo": "너구리",
+      "role": "Attacker",
+      "rarity": "R",
+      "rarityEvidence": "community"
+    },
+    {
+      "id": "buckler",
+      "name": "Buckler",
+      "ko": "버클러",
+      "animal": "Turtle",
+      "animalKo": "거북",
+      "role": "Defender",
+      "rarity": null,
+      "rarityEvidence": null
+    },
+    {
+      "id": "fluffy",
+      "name": "Fluffy",
+      "ko": "솜솜",
+      "animal": "Sheep",
+      "animalKo": "양",
+      "role": "Support",
+      "rarity": null,
+      "rarityEvidence": null
+    },
+    {
+      "id": "hardhead",
+      "name": "Hardhead",
+      "alias": "Ironhead",
+      "ko": "철두",
+      "animal": "Wild boar",
+      "animalKo": "멧돼지",
+      "role": "Attacker",
+      "rarity": null,
+      "rarityEvidence": null
+    },
+    {
+      "id": "shadow",
+      "name": "Shadow",
+      "ko": "쉐도우",
+      "animal": "Shadow hound",
+      "animalKo": "늑대",
+      "role": "Attacker",
+      "rarity": null,
+      "rarityEvidence": null
+    },
+    {
+      "id": "starhorn",
+      "name": "Starhorn",
+      "ko": "별뿔이",
+      "animal": "Starlight deer",
+      "animalKo": "사슴",
+      "role": "Defender",
+      "rarity": "SSR",
+      "rarityEvidence": "game-screen",
+      "detail": true,
+      "level1": {
+        "level": 1,
+        "training": 0,
+        "attack": 157,
+        "defense": 31,
+        "health": 10310,
+        "power": 40819,
+        "bonusRate": 25,
+        "nextExp": 120
+      },
+      "feedExp": [
+        50,
+        100,
+        200,
+        500
+      ]
+    }
+  ],
+  "trainingObserved": [
+    {
+      "stage": 0,
+      "bonusRate": 25,
+      "marks": 0,
+      "evidence": "game-screen"
+    },
+    {
+      "stage": 1,
+      "bonusRate": 40,
+      "marks": 100,
+      "evidence": "community-game-screen-transcription"
+    },
+    {
+      "stage": 2,
+      "bonusRate": 55,
+      "marks": 200,
+      "evidence": "community-game-screen-transcription"
+    },
+    {
+      "stage": 3,
+      "bonusRate": 70,
+      "marks": 400,
+      "evidence": "community-game-screen-transcription"
+    }
+  ],
+  "additionalObserved": {
+    "nameKo": "백설",
+    "animal": "Polar bear",
+    "evidence": "community-game-screen-transcription",
+    "image": null,
+    "officialEnglishName": null,
+    "availability": null
+  },
+  "missing": [
+    "Official Korean names independently verified in Korean game UI",
+    "Complete level costs",
+    "Complete skills for all pets",
+    "Guaranteed server unlock day",
+    "Polar bear original image and official acquisition conditions"
+  ]
+}

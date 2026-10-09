@@ -78,6 +78,8 @@ for (const p of pages) {
   );
   d.documentElement.classList.add("ts-platform");
   d.documentElement.setAttribute("data-lang", p.lang);
+  d.documentElement.setAttribute('data-section', p.route.split('/')[2] || 'home');
+  if (/\/heroes\/(shark|lagnar|undine|knotty)\/$/.test(p.route)) d.documentElement.setAttribute('data-faction','sea');
   function make(s) {
     const e = d.createElement("template");
     e.innerHTML = s;
@@ -105,6 +107,18 @@ for (const p of pages) {
   const active = p.route.split("/")[2] || "";
   const header = `<a class="ts-skip" href="${p.route}#main">${t.choose}: ${d.querySelector("h1")?.textContent.trim() || "TilesSurvive"}</a><header class="ts-header"><div class="ts-header-inner"><a class="ts-brand" href="/${p.lang}/"><img src="/img/logo-tilessurvive.png" alt="" width="32" height="32">TilesSurvive<span aria-hidden="true">.</span></a><form class="ts-header-search" action="/${p.lang}/search/" role="search"><input name="q" type="search" aria-label="${t.search}" placeholder="${t.search}" autocomplete="off"><button>${t.search}</button></form><details><summary>${t.menu}</summary><nav class="ts-dropdown" aria-label="${t.menu}">${navKeys.map((k) => `<a href="/${p.lang}/${k}/">${t[k]}</a>`).join("")}<a href="/${p.lang}/top-up/">${t.topup}</a></nav></details><details><summary>${p.lang.toUpperCase()}</summary><nav class="ts-dropdown" aria-label="${t.language}">${langs.map((l) => `<a hreflang="${l}" lang="${l}" href="${routeFor(p.route, l)}" ${l === p.lang ? 'aria-current="page"' : ""}>${{ ko: "한국어", en: "English", ja: "日本語", ru: "Русский", "zh-tw": "繁體中文" }[l]}</a>`).join("")}</nav></details></div><nav class="ts-nav" aria-label="${t.menu}">${navKeys.map((k) => `<a href="/${p.lang}/${k}/" ${active === k ? 'aria-current="page"' : ""}>${t[k]}</a>`).join("")}</nav></header>`;
   d.body.insertBefore(make(header), d.body.firstChild);
+  d.querySelector('.ts-skip').textContent = {ko:'본문으로 건너뛰기',en:'Skip to content',ja:'本文へ移動',ru:'Перейти к содержимому','zh-tw':'跳至主要內容'}[p.lang];
+  for (const nav of d.querySelectorAll('.ts-header .ts-nav,.ts-header .ts-dropdown')) {
+    const heroLink=nav.querySelector(`a[href="/${p.lang}/heroes/"]`);
+    if (!heroLink) continue;
+    const pet=d.createElement('a');pet.href=`/${p.lang}/database/pet-system/`;
+    pet.textContent={ko:'펫',en:'Pets',ja:'ペット',ru:'Питомцы','zh-tw':'寵物'}[p.lang];
+    if(p.route.includes('/database/pet-system/')){
+      nav.querySelectorAll('[aria-current]').forEach(n=>n.removeAttribute('aria-current'));
+      pet.setAttribute('aria-current','page');
+    }
+    heroLink.after(pet);
+  }
   main.id = "main";
   // Keep source-backed permanent codes readable before JavaScript or on a
   // failed request. The original coupon application replaces these after load.
@@ -185,10 +199,10 @@ for (const p of pages) {
     a.setAttribute("href", p.route + a.getAttribute("href")),
   );
   d.querySelectorAll(
-    'script[src="/js/layout.js"],script[src="/js/site-search.js"],script[src="/js/affiliate-tracking.js"],link[href^="/css/platform.css"],script[data-platform]',
+    'script[src="/js/layout.js"],script[src="/js/site-search.js"],script[src="/js/affiliate-tracking.js"],link[href^="/css/platform.css"],link[href^="/css/refinement.css"],script[data-platform]',
   ).forEach((n) => n.remove());
   d.head.appendChild(
-    make('<link rel="stylesheet" href="/css/platform.css?v=4">'),
+    make('<link rel="stylesheet" href="/css/platform.css?v=5"><link rel="stylesheet" href="/css/refinement.css?v=1">'),
   );
   for (const style of [...d.querySelectorAll("style")]) {
     const css = style.textContent;
@@ -209,6 +223,7 @@ for (const p of pages) {
     "platform",
     "platform-search",
     "platform-affiliate",
+    "refinement",
   ])
     d.body.appendChild(
       make(`<script data-platform src="/js/${name}.js?v=${name === 'platform-math' ? 3 : 2}" defer></script>`),
@@ -269,7 +284,8 @@ for (const p of pages) {
       table.parentNode.insertBefore(wrap, table);
       wrap.appendChild(table);
     }
-    table.setAttribute("data-explore", "");
+    if(table.hasAttribute('data-static')) table.removeAttribute('data-explore');
+    else table.setAttribute("data-explore", "");
   }
   if (p.route.includes("/tools/speedup-calculator/"))
     main.setAttribute("data-speedup-calculator-page", "");

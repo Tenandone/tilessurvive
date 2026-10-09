@@ -1,0 +1,17 @@
+{
+  "checked":"2026-10-09",
+  "imageSource":"https://www.ldshop.gg/ru/blog/tiles-survive/all-marine-faction-heroes-ru.html",
+  "heroes":[
+    {"id":"undine","name":"Undine","role":"Gunners","roleKo":"후열 지원","rarity":"SSR","image":"/img/heroes/undine-game.webp","skillImage":"/img/heroes/undine-skills-source.webp","official":"https://tilesurvivegame.com/en/blog/975","guide":"https://tilessurviveguide.com/heroes/undine","skills":[
+      {"name":"Ripple Ricochet","ko":"첫 대상과 근처 2명에게 각각 공격력의 61.16% 피해.","en":"61.16% ATK damage to the first target and two nearby enemies.","evidence":"community; skill level unspecified"},
+      {"name":"Azure Anthem","ko":"범위 피해와 아군 일반 공격 피해 +15%, 6초 지속. 재사용 8초.","en":"Area damage and +15% allied auto-attack damage for 6 seconds. Cooldown: 8 seconds.","evidence":"game-screen","stages":[{"level":20,"value":434.35},{"level":21,"value":438}],"unit":"% ATK"},
+      {"name":"Wild Hunt","ko":"아군 후열 영웅의 공격력 증가.","en":"Increases the ATK of allied back-row heroes.","evidence":"game-screen","stages":[{"level":19,"value":7.08},{"level":20,"value":7.14}],"unit":"% ATK bonus"}
+    ]},
+    {"id":"knotty","name":"Knotty","role":"Marksmen","roleKo":"후열 광역 공격","rarity":"SSR","image":"/img/heroes/knotty-game.webp","skillImage":"/img/heroes/knotty-skills-source.webp","guide":"https://tilessurviveguide.com/heroes/knotty","skills":[
+      {"name":"Naughty Bomb","ko":"범위 안 적에게 공격력의 118.15% 피해. 재사용 1초.","en":"118.15% ATK damage to enemies in range. Cooldown: 1 second.","evidence":"community; skill level unspecified"},
+      {"name":"Party Time","ko":"Lv.1: 포탄 폭발 반경 +100%, 피해 +50%, 5초 지속. 재사용 11초.","en":"Lv.1: +100% shell explosion radius and +50% damage for 5 seconds. Cooldown: 11 seconds.","evidence":"game-screen"},
+      {"name":"Born Wild","ko":"자신의 공격력 증가.","en":"Increases own ATK.","evidence":"game-screen","stages":[{"level":1,"value":12},{"level":2,"value":12.12}],"unit":"% ATK bonus"}
+    ]}
+  ],
+  "missing":["Official Korean names","Full skill-level series","Complete exclusive gear level costs","Hero-specific star costs and unlock schedule","Verified Mariner research tree"]
+}

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-09T08:35:08.545Z",
-  "itemCount": 400,
+  "generatedAt": "2026-10-09T09:41:39.687Z",
+  "itemCount": 415,
   "items": [
     {
       "language": "en",
@@ -207,6 +207,13 @@
     },
     {
       "language": "en",
+      "type": "heroe",
+      "title": "Knotty | TilesSurvive.net",
+      "description": "Mariner heroes · SSR · Marksmen · Skills & effects",
+      "url": "/en/heroes/knotty/"
+    },
+    {
+      "language": "en",
       "type": "building",
       "title": "Lab | Tiles Survive Buildings | TilesSurvive.net",
       "description": "This is the Tiles Survive Lab building page. It organizes Development, Economy, Hero, Troop, Comm Outpost, Alliance Duel, Special Forces, Infected Elimination, and Doomsday Transport research categories at a glance.",
@@ -264,8 +271,8 @@
     {
       "language": "en",
       "type": "database",
-      "title": "Pet System | TilesSurvive.net",
-      "description": "Verified Tiles Survive Pet System facts from the official v2.6.100 patch notes.",
+      "title": "Pet directory · 7 | TilesSurvive.net",
+      "description": "Compare roles, then explore the available growth evidence. Eggs → Hatching → Feeding & training → Hero bonuses",
       "url": "/en/database/pet-system/"
     },
     {
@@ -365,6 +372,13 @@
       "title": "Skill Book Cost Table | Tiles Survive Database | TilesSurvive.net",
       "description": "This is the Tiles Survive Skill Book cost table. It organizes the Skill Book cost per level from Combat Skill level 1 to 40, along with the final total amount required.",
       "url": "/en/database/skill-book/"
+    },
+    {
+      "language": "en",
+      "type": "database",
+      "title": "Starhorn | TilesSurvive.net",
+      "description": "Lv.1 · Training 0 · Before transformation · Growth data",
+      "url": "/en/database/pet-system/starhorn/"
     },
     {
       "language": "en",
@@ -543,6 +557,13 @@
     },
     {
       "language": "en",
+      "type": "heroe",
+      "title": "Undine | TilesSurvive.net",
+      "description": "Mariner heroes · SSR · Gunners · Skills & effects",
+      "url": "/en/heroes/undine/"
+    },
+    {
+      "language": "en",
       "type": "database",
       "title": "VIP Points | Tiles Survive Database | TilesSurvive.net",
       "description": "This is the Tiles Survive VIP Points page. It organizes the VIP level table, privilege shop, privilege roulette, daily purchase limits, and probability information at a glance.",
@@ -704,6 +725,20 @@
     },
     {
       "language": "ja",
+      "type": "heroe",
+      "title": "Knotty | TilesSurvive.net",
+      "description": "海の英雄 · SSR · Marksmen · スキルと効果",
+      "url": "/ja/heroes/knotty/"
+    },
+    {
+      "language": "ja",
+      "type": "database",
+      "title": "Starhorn | TilesSurvive.net",
+      "description": "Lv.1・訓練0段階・変身前 · 育成データ",
+      "url": "/ja/database/pet-system/starhorn/"
+    },
+    {
+      "language": "ja",
       "type": "tool",
       "title": "Tiles Survive 加速計算機 | TilesSurvive.net",
       "description": "Tiles Survive の加速アイテムの日数、時間、分を合算し、総分と総時間を確認できる簡単な計算機です。",
@@ -764,6 +799,13 @@
       "title": "TilesSurvive.net について | TilesSurvive.net",
       "description": "TilesSurvive.net は多言語対応の独立したデータ・攻略ハブです。",
       "url": "/ja/about/"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
+      "title": "Undine | TilesSurvive.net",
+      "description": "海の英雄 · SSR · Gunners · スキルと効果",
+      "url": "/ja/heroes/undine/"
     },
     {
       "language": "ja",
@@ -1041,8 +1083,8 @@
     {
       "language": "ja",
       "type": "database",
-      "title": "ペットシステム | TilesSurvive.net",
-      "description": "公式v2.6.100パッチノートで確認されたTiles Surviveのペットシステム情報です。",
+      "title": "ペット図鑑 · 7 | TilesSurvive.net",
+      "description": "役割を比較し、確認できた育成資料を調べられます。 卵の獲得 → 孵化 → 給餌・訓練 → 英雄への支援",
       "url": "/ja/database/pet-system/"
     },
     {
@@ -1247,6 +1289,13 @@
       "title": "베헤모스세포 소모표 | 타일서바이벌 데이터베이스 | TilesSurvive.net",
       "description": "타일서바이벌 베헤모스 세포 성급 소모표입니다. 1성부터 60성까지 단계별 소모량, 합계, 누적 수치를 한눈에 확인할 수 있습니다.",
       "url": "/ko/database/behemoth-cell/"
+    },
+    {
+      "language": "ko",
+      "type": "database",
+      "title": "별뿔이 | TilesSurvive.net",
+      "description": "Lv.1 · 훈련 0단계 · 변신 전 · 육성 데이터",
+      "url": "/ko/database/pet-system/starhorn/"
     },
     {
       "language": "ko",
@@ -1629,8 +1678,8 @@
     {
       "language": "ko",
       "type": "database",
-      "title": "펫 시스템 | TilesSurvive.net",
-      "description": "공식 v2.6.100 패치노트로 확인된 타일서바이벌 펫 시스템 정보입니다.",
+      "title": "펫 도감 · 7 | TilesSurvive.net",
+      "description": "역할을 비교하고, 확인된 성장 자료까지 이어서 살펴보세요. 알 획득 → 부화 → 먹이·훈련 → 영웅 지원",
       "url": "/ko/database/pet-system/"
     },
     {
@@ -1646,6 +1695,13 @@
       "title": "프레이아 | 타일서바이벌 영웅 | TilesSurvive.net",
       "description": "타일서바이벌 영웅 프레이아 상세 페이지입니다. 영웅 소개, 전투 특성, 최고 레벨 및 성급 속성, 성급 보너스, 스킬을 한눈에 정리했습니다.",
       "url": "/ko/heroes/freya/"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
+      "title": "Knotty | TilesSurvive.net",
+      "description": "바다 영웅 · SSR · Marksmen · 스킬과 효과",
+      "url": "/ko/heroes/knotty/"
     },
     {
       "language": "ko",
@@ -1674,6 +1730,13 @@
       "title": "TilesSurvive.net 문의 | TilesSurvive.net",
       "description": "정보 수정, 출처 제보, 개인정보 및 제휴 문의 채널 안내입니다.",
       "url": "/ko/contact/"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
+      "title": "Undine | TilesSurvive.net",
+      "description": "바다 영웅 · SSR · Gunners · 스킬과 효과",
+      "url": "/ko/heroes/undine/"
     },
     {
       "language": "ko",
@@ -1751,6 +1814,13 @@
       "title": "Kiron | Герой Tiles Survive | TilesSurvive.net",
       "description": "Подробная страница героя Kiron в Tiles Survive. Здесь по SSR-герою собраны описание героя, боевые особенности, характеристики на максимальном уровне и звёздности, бонус звёздности, навыки и эксклюзивное снаряжение.",
       "url": "/ru/heroes/kiron/"
+    },
+    {
+      "language": "ru",
+      "type": "heroe",
+      "title": "Knotty | TilesSurvive.net",
+      "description": "Морские герои · SSR · Marksmen · Навыки и эффекты",
+      "url": "/ru/heroes/knotty/"
     },
     {
       "language": "ru",
@@ -1852,6 +1922,13 @@
     },
     {
       "language": "ru",
+      "type": "database",
+      "title": "Starhorn | TilesSurvive.net",
+      "description": "Ур.1 · Тренировка 0 · До превращения · Развитие",
+      "url": "/ru/database/pet-system/starhorn/"
+    },
+    {
+      "language": "ru",
       "type": "heroe",
       "title": "Tara | Герой Tiles Survive | TilesSurvive.net",
       "description": "Подробная страница героя Tara в Tiles Survive. Здесь по SSR-герою собраны описание, боевые особенности, характеристики на максимальном уровне и звёздности, бонус звёздности, навыки и эксклюзивное снаряжение.",
@@ -1877,6 +1954,13 @@
       "title": "Travis | Герой Tiles Survive | TilesSurvive.net",
       "description": "Подробная страница героя Travis в Tiles Survive. Здесь в одном месте собраны описание героя, фракция, боевая роль, характеристики на максимальном уровне и звёздности, бонус звёздности и навыки.",
       "url": "/ru/heroes/travis/"
+    },
+    {
+      "language": "ru",
+      "type": "heroe",
+      "title": "Undine | TilesSurvive.net",
+      "description": "Морские герои · SSR · Gunners · Навыки и эффекты",
+      "url": "/ru/heroes/undine/"
     },
     {
       "language": "ru",
@@ -1989,6 +2073,13 @@
       "title": "Калькулятор ускорений Tiles Survive | TilesSurvive.net",
       "description": "Простой калькулятор ускорений Tiles Survive для суммирования дней, часов и минут в общие минуты и часы.",
       "url": "/ru/tools/speedup-calculator/"
+    },
+    {
+      "language": "ru",
+      "type": "database",
+      "title": "Каталог питомцев · 7 | TilesSurvive.net",
+      "description": "Сравните роли и изучите доступные данные о развитии. Яйца → Вылупление → Кормление и тренировка → Бонусы героям",
+      "url": "/ru/database/pet-system/"
     },
     {
       "language": "ru",
@@ -2129,13 +2220,6 @@
       "title": "Сезон IV: Blizzard Era | TilesSurvive.net",
       "description": "Официально подтверждённые сведения о запуске и особенностях сезона IV.",
       "url": "/ru/seasons/season-4/"
-    },
-    {
-      "language": "ru",
-      "type": "database",
-      "title": "Система питомцев | TilesSurvive.net",
-      "description": "Подтверждённые сведения о системе питомцев Tiles Survive из официального патча v2.6.100.",
-      "url": "/ru/database/pet-system/"
     },
     {
       "language": "ru",
@@ -2658,8 +2742,8 @@
     {
       "language": "zh-tw",
       "type": "database",
-      "title": "寵物系統 | TilesSurvive.net",
-      "description": "依官方v2.6.100更新公告確認的Tiles Survive寵物系統資訊。",
+      "title": "寵物圖鑑 · 7 | TilesSurvive.net",
+      "description": "比較角色定位，並查閱已確認的成長資料。 取得蛋 → 孵化 → 餵食與訓練 → 英雄加成",
       "url": "/zh-tw/database/pet-system/"
     },
     {
@@ -2741,6 +2825,20 @@
     },
     {
       "language": "zh-tw",
+      "type": "heroe",
+      "title": "Knotty | TilesSurvive.net",
+      "description": "海洋英雄 · SSR · Marksmen · 技能與效果",
+      "url": "/zh-tw/heroes/knotty/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
+      "title": "Starhorn | TilesSurvive.net",
+      "description": "Lv.1 · 訓練階段0 · 變身前 · 成長資料",
+      "url": "/zh-tw/database/pet-system/starhorn/"
+    },
+    {
+      "language": "zh-tw",
       "type": "tool",
       "title": "Tiles Survive 加速計算器 | TilesSurvive.net",
       "description": "簡單合計 Tiles Survive 加速道具的天、時、分，並轉換為總分鐘與總小時。",
@@ -2794,6 +2892,13 @@
       "title": "Tiles Survive 活動助手 - 活動時間與資源使用指南",
       "description": "在 Tiles Survive 活動助手中查看各活動類型的準備資源、推薦行動與資源使用判斷標準。",
       "url": "/zh-tw/event-helper/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "heroe",
+      "title": "Undine | TilesSurvive.net",
+      "description": "海洋英雄 · SSR · Gunners · 技能與效果",
+      "url": "/zh-tw/heroes/undine/"
     },
     {
       "language": "zh-tw",
