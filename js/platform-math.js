@@ -15,7 +15,7 @@
     let total = 0,
       found = false;
     const re =
-      /(\d+)\s*(일|시간|분|days?|hours?|minutes?|mins?|d|h|m|天|小時|分鐘|日|時間|分|дн\.?|д\.?|ч\.?|мин\.?)/gi;
+      /(\d+)\s*(일|시간|분|days?|hours?|hrs?|minutes?|mins?|d|h|m|天|小時|分鐘|日|時間|分|дн\.?|д\.?|ч\.?|мин\.?)/gi;
     s = s.replace(re, (_, n, u) => {
       found = true;
       u = u.toLowerCase();
@@ -23,7 +23,7 @@
         Number(n) *
         (/^(일|days?|d|天|日|дн\.?|д\.?)$/.test(u)
           ? 1440
-          : /^(시간|hours?|h|小時|時間|ч\.?)$/.test(u)
+          : /^(시간|hours?|hrs?|h|小時|時間|ч\.?)$/.test(u)
             ? 60
             : 1);
       return "";

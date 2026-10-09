@@ -262,6 +262,22 @@ assert.deepEqual(math.sumRange(rows, 25, 25, [2, 3, 4, 5], 6), {
 assert.throws(() => math.sumRange(rows, 26, 25, [2, 3], 6));
 assert.throws(() => math.sumRange(rows, 1, 2, [2, 3], 6));
 checks += 9;
+for (const lang of langs) {
+  const d = documents.get(`/${lang}/buildings/power-plant/`);
+  const localizedRows = [...d.querySelectorAll('table:first-of-type tbody tr')]
+    .filter(r => r.children.length === 8)
+    .map(r => ({level: Number(r.children[0].textContent), cells: [...r.children].map(text)}));
+  assert.deepEqual(math.sumRange(localizedRows, 24, 25, [2, 3, 4, 5], 6), {
+    totals: [81000000, 81000000, 4000000, 16000000], time: 26422, levels: [25]
+  });
+  checks++;
+}
+for (const [route, d] of documents) if (route.includes('/buildings/')) {
+  for (const r of d.querySelectorAll('tbody tr')) if (r.children.length === 8) {
+    const value = text(r.children[6]);
+    if (value && value !== '-') check(math.minutes(value) !== null, 'Unsupported source time '+route+' '+value);
+  }
+}
 const sitemap = fs.readFileSync(path.join(root, "sitemap.xml"), "utf8");
 check(sitemap.includes("/en/heroes/tazan/"), "Missing canonical in sitemap");
 check(!sitemap.includes("/en/heroes/tarzan/"), "Noindex alias in sitemap");

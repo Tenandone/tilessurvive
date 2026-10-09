@@ -211,7 +211,7 @@ for (const p of pages) {
     "platform-affiliate",
   ])
     d.body.appendChild(
-      make(`<script data-platform src="/js/${name}.js?v=2" defer></script>`),
+      make(`<script data-platform src="/js/${name}.js?v=${name === 'platform-math' ? 3 : 2}" defer></script>`),
     );
   // Replace unavailable social image references with an existing page image.
   for (const meta of d.querySelectorAll(
