@@ -6398,11 +6398,11 @@
       "version": "2.5.200",
       "checked": "2026-10-09",
       "pages": [
-        "/ko/behemoths//",
-        "/en/behemoths//",
-        "/ja/behemoths//",
-        "/ru/behemoths//",
-        "/zh-tw/behemoths//"
+        "/ko/behemoths/",
+        "/en/behemoths/",
+        "/ja/behemoths/",
+        "/ru/behemoths/",
+        "/zh-tw/behemoths/"
       ],
       "status": "published",
       "sourceKind": "official"
