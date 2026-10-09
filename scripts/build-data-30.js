@@ -17,7 +17,8 @@ for(const lang of langs){
   d.querySelectorAll('[data-ui30-generated]').forEach(n=>n.remove());
   for(const host of [...d.querySelectorAll('.ts3-data-workbench')]){const wrap=host.querySelector('.ts-table-wrap');if(wrap)host.replaceWith(wrap);}
   for(const asset of d.querySelectorAll('[data-data30-asset]'))asset.remove();
-  d.head.append(element(d,'<link data-data30-asset rel="stylesheet" href="/css/data-workbench-30.css?v=1"><script data-data30-asset src="/js/data-workbench-30.js?v=1" defer></script>'));
+  const dataVersion=/\/buildings\/(power-plant|barracks)\/$/.test(route)?2:1;
+  d.head.append(element(d,`<link data-data30-asset rel="stylesheet" href="/css/data-workbench-30.css?v=1"><script data-data30-asset src="/js/data-workbench-30.js?v=${dataVersion}" defer></script>`));
   main.classList.add('ts3-data-page');
   const catalogType=route==='/'+lang+'/buildings/'?'buildings':route==='/'+lang+'/behemoths/'?'behemoths':route==='/'+lang+'/tools/'?'tools':null;
   if(catalogType){
@@ -125,6 +126,12 @@ for(const lang of langs){
    host.append(element(d,`<p class="ts3-table-note">${heads.length>3?t.scroll:''}${/[\d.]\s*[KMB]\b/i.test(table.textContent)?' '+t.units:''}</p>`));
    const timeColumn=route.includes('/buildings/power-plant/')&&heads.length===8?6:route.includes('/buildings/barracks/')&&heads.length===7?1:-1;
    if(timeColumn>=0&&rectangular&&rows.every(r=>/^\d+$/.test(r.children[0].textContent.trim()))){
+    const desktop=table.closest('.desktop-table');
+    if(desktop){
+     desktop.classList.add('ts3-table-visible');
+     const mobile=desktop.nextElementSibling;
+     if(mobile?.classList.contains('mobile-card-list'))mobile.classList.add('ts3-table-duplicate');
+    }
     const levels=rows.map(r=>Number(r.children[0].textContent));
     const opt=selected=>levels.map(n=>`<option value="${n}"${n===selected?' selected':''}>${n}</option>`).join('');
     const complete=rows.findIndex((r,i)=>i>0&&[2,3,4,5].every(c=>math.amount(r.children[c].textContent)!==null)&&math.minutes(r.children[timeColumn].textContent)!==null);

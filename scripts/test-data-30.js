@@ -70,6 +70,7 @@ for(const lang of languages){
   }
   for(const form of d.querySelectorAll('[data-building-planner]')){
    planners++;const table=d.getElementById(form.dataset.table);ok(table,rel+' building source table linked');
+   for(const parent of [form.closest('.desktop-table'),form.closest('.desktop-only')].filter(Boolean)){ok(parent.classList.contains('ts3-table-visible'),rel+' building calculator must remain available on mobile');}
    const rows=[...table.querySelectorAll('tbody tr')].map(r=>({level:+r.children[0].textContent,cells:[...r.children].map(c=>c.textContent.trim())}));
    const from=+form.querySelector('[name="from"]').dataset.default,to=+form.querySelector('[name="to"]').dataset.default;
    const result=math.sumRange(rows,from,to,[2,3,4,5],+form.dataset.timeColumn);ok(result.totals.every(Number.isFinite),rel+' complete default range');
