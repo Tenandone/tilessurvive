@@ -1,0 +1,1702 @@
+{
+  "schemaVersion": 1,
+  "heroes": [
+    {
+      "id": "beka",
+      "locales": {
+        "ko": {
+          "route": "/ko/heroes/beka/",
+          "name": "베카",
+          "skills": [
+            "바람 저항 저격",
+            "직선 관통",
+            "선견지명",
+            "철골의 집행자"
+          ]
+        },
+        "en": {
+          "route": "/en/heroes/beka/",
+          "name": "Becca",
+          "skills": [
+            "Storm Scope",
+            "Heartseeker",
+            "Foresight",
+            "Iron Enforcer"
+          ]
+        },
+        "ja": {
+          "route": "/ja/heroes/beka/",
+          "name": "ベッキー",
+          "skills": [
+            "風破りの狙撃",
+            "一撃必中",
+            "千里眼",
+            "鉄の執行者"
+          ]
+        },
+        "ru": {
+          "route": "/ru/heroes/beka/",
+          "name": "Beka",
+          "skills": [
+            "Wind Resistance Snipe",
+            "Linear Penetration",
+            "Foresight",
+            "Steel Enforcer"
+          ]
+        },
+        "zh-tw": {
+          "route": "/zh-tw/heroes/beka/",
+          "name": "貝卡",
+          "skills": [
+            "破風狙擊",
+            "一擊必中",
+            "千里眼",
+            "鋼鐵執行者"
+          ]
+        }
+      }
+    },
+    {
+      "id": "candy",
+      "locales": {
+        "ko": {
+          "route": "/ko/heroes/candy/",
+          "name": "채의진",
+          "skills": [
+            "달콤한 조준",
+            "달콤한 치유",
+            "달콤한 폭탄",
+            "청춘 무적"
+          ]
+        },
+        "en": {
+          "route": "/en/heroes/candy/",
+          "name": "Candy",
+          "skills": [
+            "Sugar Shot",
+            "Healing Smile",
+            "Dazzling Aura",
+            "Youthful Energy"
+          ]
+        },
+        "ja": {
+          "route": "/ja/heroes/candy/",
+          "name": "キャンディ",
+          "skills": [
+            "魅惑の一撃",
+            "甘い癒し",
+            "閃光のオーラ",
+            "元気はつらつ"
+          ]
+        },
+        "ru": {
+          "route": "/ru/heroes/candy/",
+          "name": "Candy",
+          "skills": [
+            "Sweet Aim",
+            "Sweet Healing",
+            "Sweet Bomb",
+            "Invincible Youth"
+          ]
+        },
+        "zh-tw": {
+          "route": "/zh-tw/heroes/candy/",
+          "name": "蔡宜葵",
+          "skills": [
+            "魅惑一擊",
+            "甜蜜療癒",
+            "閃光氣場",
+            "活力滿滿"
+          ]
+        }
+      }
+    },
+    {
+      "id": "chef-ken",
+      "locales": {
+        "ko": {
+          "route": "/ko/heroes/chef-ken/",
+          "name": "세프 켄",
+          "skills": [
+            "냄비 소탕",
+            "성찬의 유혹",
+            "화학 비료 기술",
+            "포식의 기쁨"
+          ]
+        },
+        "en": {
+          "route": "/en/heroes/chef-ken/",
+          "name": "Chef",
+          "skills": [
+            "Pot Sweep",
+            "Gourmet Temptation",
+            "Green Fingers",
+            "Hearty Delight"
+          ]
+        },
+        "ja": {
+          "route": "/ja/heroes/chef-ken/",
+          "name": "シェフ ケン",
+          "skills": [
+            "鍋払い",
+            "魅惑のグルメ",
+            "園芸のプロ",
+            "いただきます"
+          ]
+        },
+        "ru": {
+          "route": "/ru/heroes/chef-ken/",
+          "name": "Chef Ken",
+          "skills": [
+            "Pot Sweep",
+            "Feast Temptation",
+            "Chemical Fertilizer Technique",
+            "Joy of Gluttony"
+          ]
+        },
+        "zh-tw": {
+          "route": "/zh-tw/heroes/chef-ken/",
+          "name": "肯",
+          "skills": [
+            "平底鍋橫掃",
+            "魅惑美食",
+            "園藝專家",
+            "開動吧"
+          ]
+        }
+      }
+    },
+    {
+      "id": "dave",
+      "locales": {
+        "ko": {
+          "route": "/ko/heroes/dave/",
+          "name": "데이브 (Dave)",
+          "skills": [
+            "호스 분사",
+            "하이드로 물대포",
+            "완만한 물줄기",
+            "심해 잠수 보호"
+          ]
+        },
+        "en": {
+          "route": "/en/heroes/dave/",
+          "name": "Dave",
+          "skills": [
+            "Auto attack",
+            "Combat skill",
+            "Passive",
+            "Specialty"
+          ]
+        },
+        "ja": {
+          "route": "/ja/heroes/dave/",
+          "name": "Dave",
+          "skills": [
+            "通常攻撃",
+            "戦闘スキル",
+            "パッシブ",
+            "特技"
+          ]
+        },
+        "ru": {
+          "route": "/ru/heroes/dave/",
+          "name": "Dave",
+          "skills": [
+            "Автоатака",
+            "Боевой навык",
+            "Пассивный навык",
+            "Особый навык"
+          ]
+        },
+        "zh-tw": {
+          "route": "/zh-tw/heroes/dave/",
+          "name": "Dave",
+          "skills": [
+            "普通攻擊",
+            "戰鬥技能",
+            "被動技能",
+            "特技"
+          ]
+        }
+      }
+    },
+    {
+      "id": "eva",
+      "locales": {
+        "ko": {
+          "route": "/ko/heroes/eva/",
+          "name": "에바",
+          "skills": [
+            "탄막 섬멸",
+            "화력 폭발",
+            "빠른 채집",
+            "강철 육체"
+          ]
+        },
+        "en": {
+          "route": "/en/heroes/eva/",
+          "name": "Eva",
+          "skills": [
+            "Deluge",
+            "Lock & Load",
+            "Scavenger",
+            "Steel Frame"
+          ]
+        },
+        "ja": {
+          "route": "/ja/heroes/eva/",
+          "name": "エヴァ",
+          "skills": [
+            "弾幕の雨",
+            "火力全開",
+            "高速採集",
+            "鋼鉄の体"
+          ]
+        },
+        "ru": {
+          "route": "/ru/heroes/eva/",
+          "name": "Eva",
+          "skills": [
+            "Barrage Elimination",
+            "Firepower Burst",
+            "Fast Gathering",
+            "Steel Body"
+          ]
+        },
+        "zh-tw": {
+          "route": "/zh-tw/heroes/eva/",
+          "name": "伊娃",
+          "skills": [
+            "彈幕之雨",
+            "火力全開",
+            "高速採集",
+            "鋼鐵之軀"
+          ]
+        }
+      }
+    },
+    {
+      "id": "freya",
+      "locales": {
+        "ko": {
+          "route": "/ko/heroes/freya/",
+          "name": "프레이아",
+          "skills": [
+            "쌍칼 연참",
+            "파도 베기",
+            "원유 시추",
+            "수호의 검"
+          ]
+        },
+        "en": {
+          "route": "/en/heroes/freya/",
+          "name": "Freja",
+          "skills": [
+            "Dual Flurry",
+            "Wave Splitter",
+            "Deep Driller",
+            "Shadow Guard"
+          ]
+        },
+        "ja": {
+          "route": "/ja/heroes/freya/",
+          "name": "フレヤ",
+          "skills": [
+            "二刀連斬",
+            "海裂の一撃",
+            "採掘の勘",
+            "刃影の護衛"
+          ]
+        },
+        "ru": {
+          "route": "/ru/heroes/freya/",
+          "name": "Freya",
+          "skills": [
+            "Twin Blade Combo",
+            "Wave Slash",
+            "Oil Drilling",
+            "Guardian Blade"
+          ]
+        },
+        "zh-tw": {
+          "route": "/zh-tw/heroes/freya/",
+          "name": "芙蕾雅",
+          "skills": [
+            "雙刀連斬",
+            "裂海一擊",
+            "採掘直覺",
+            "刃影護衛"
+          ]
+        }
+      }
+    },
+    {
+      "id": "ghost",
+      "locales": {
+        "ko": {
+          "route": "/ko/heroes/ghost/",
+          "name": "고스트",
+          "skills": [
+            "뱅크시 연발",
+            "물감 속박",
+            "그래피티 마스터"
+          ]
+        },
+        "en": {
+          "route": "/en/heroes/ghost/",
+          "name": "Ghost",
+          "skills": [
+            "Spray 'n' Pray",
+            "Graffiti Zone",
+            "Graffiti Master"
+          ]
+        },
+        "ja": {
+          "route": "/ja/heroes/ghost/",
+          "name": "ゴースト",
+          "skills": [
+            "スプラッシュ",
+            "ぶち撒けろ",
+            "ヘルグラフティ"
+          ]
+        },
+        "ru": {
+          "route": "/ru/heroes/ghost/",
+          "name": "Ghost",
+          "skills": [
+            "Banksy Burst",
+            "Paint Snare",
+            "Graffiti Master"
+          ]
+        },
+        "zh-tw": {
+          "route": "/zh-tw/heroes/ghost/",
+          "name": "幽靈",
+          "skills": [
+            "噴濺塗鴉",
+            "盡情潑灑",
+            "地獄塗鴉"
+          ]
+        }
+      }
+    },
+    {
+      "id": "jacob",
+      "locales": {
+        "ko": {
+          "route": "/ko/heroes/jacob/",
+          "name": "제이콥",
+          "skills": [
+            "광기의 화염",
+            "폭탄 카니발",
+            "궁극적 장난",
+            "광란의 파티"
+          ]
+        },
+        "en": {
+          "route": "/en/heroes/jacob/",
+          "name": "Jacob",
+          "skills": [
+            "Raging Flames",
+            "Bomb Carnival",
+            "Ultimate Prank",
+            "Madcap Feast"
+          ]
+        },
+        "ja": {
+          "route": "/ja/heroes/jacob/",
+          "name": "ヤーコブ",
+          "skills": [
+            "狂気の火炎",
+            "爆弾祭り",
+            "究極のイタズラ",
+            "狂乱の宴"
+          ]
+        },
+        "ru": {
+          "route": "/ru/heroes/jacob/",
+          "name": "Jacob",
+          "skills": [
+            "Flame of Madness",
+            "Bomb Carnival",
+            "Ultimate Prank",
+            "Mad Party"
+          ]
+        },
+        "zh-tw": {
+          "route": "/zh-tw/heroes/jacob/",
+          "name": "雅各",
+          "skills": [
+            "狂亂火焰",
+            "炸彈盛宴",
+            "終極惡作劇",
+            "狂亂盛宴"
+          ]
+        }
+      }
+    },
+    {
+      "id": "kiki",
+      "locales": {
+        "ko": {
+          "route": "/ko/heroes/kiki/",
+          "name": "키키",
+          "skills": [
+            "하이퍼 레이저",
+            "에너지 분사",
+            "광양자 엄습",
+            "무기 천재"
+          ]
+        },
+        "en": {
+          "route": "/en/heroes/kiki/",
+          "name": "Kiki",
+          "skills": [
+            "Hyper Ray",
+            "Laser Discharge",
+            "Photon Surge",
+            "Weapon Smith"
+          ]
+        },
+        "ja": {
+          "route": "/ja/heroes/kiki/",
+          "name": "キキ",
+          "skills": [
+            "ハイパーレーザー",
+            "チャージスプラッシュ",
+            "光の脅威",
+            "武器の天才"
+          ]
+        },
+        "ru": {
+          "route": "/ru/heroes/kiki/",
+          "name": "Kiki",
+          "skills": [
+            "Hyper Laser",
+            "Energy Jet",
+            "Photon Rush",
+            "Weapon Genius"
+          ]
+        },
+        "zh-tw": {
+          "route": "/zh-tw/heroes/kiki/",
+          "name": "奇奇",
+          "skills": [
+            "超能雷射",
+            "充能爆裂",
+            "光能威懾",
+            "武器天才"
+          ]
+        }
+      }
+    },
+    {
+      "id": "kiron",
+      "locales": {
+        "ko": {
+          "route": "/ko/heroes/kiron/",
+          "name": "키론",
+          "skills": [
+            "죽음의 한발",
+            "화살 폭격",
+            "관통의 공진",
+            "탁월한 명중"
+          ]
+        },
+        "en": {
+          "route": "/en/heroes/kiron/",
+          "name": "Chiron",
+          "skills": [
+            "Deadshot",
+            "Arrowstorm",
+            "Piercing Resonance",
+            "Hawk-Eye, Iron-Arm"
+          ]
+        },
+        "ja": {
+          "route": "/ja/heroes/kiron/",
+          "name": "カイロン",
+          "skills": [
+            "一撃必殺の矢",
+            "ストームアロー",
+            "鋭気の共鳴",
+            "鷹の目鉄の腕"
+          ]
+        },
+        "ru": {
+          "route": "/ru/heroes/kiron/",
+          "name": "Kiron",
+          "skills": [
+            "Смертельный выстрел",
+            "Бомбардировка стрелами",
+            "Резонанс пронзания",
+            "Безупречное попадание"
+          ]
+        },
+        "zh-tw": {
+          "route": "/zh-tw/heroes/kiron/",
+          "name": "凱隆",
+          "skills": [
+            "一擊必殺之箭",
+            "風暴箭雨",
+            "銳氣共鳴",
+            "鷹眼鐵腕"
+          ]
+        }
+      }
+    },
+    {
+      "id": "knotty",
+      "locales": {
+        "ko": {
+          "route": "/ko/heroes/knotty/",
+          "name": "너티 · Knotty",
+          "skills": [
+            "Naughty Bomb",
+            "Party Time",
+            "Born Wild"
+          ]
+        },
+        "en": {
+          "route": "/en/heroes/knotty/",
+          "name": "Knotty",
+          "skills": [
+            "Naughty Bomb",
+            "Party Time",
+            "Born Wild"
+          ]
+        },
+        "ja": {
+          "route": "/ja/heroes/knotty/",
+          "name": "Knotty",
+          "skills": [
+            "Naughty Bomb",
+            "Party Time",
+            "Born Wild"
+          ]
+        },
+        "ru": {
+          "route": "/ru/heroes/knotty/",
+          "name": "Knotty",
+          "skills": [
+            "Naughty Bomb",
+            "Party Time",
+            "Born Wild"
+          ]
+        },
+        "zh-tw": {
+          "route": "/zh-tw/heroes/knotty/",
+          "name": "Knotty",
+          "skills": [
+            "Naughty Bomb",
+            "Party Time",
+            "Born Wild"
+          ]
+        }
+      }
+    },
+    {
+      "id": "lagnar",
+      "locales": {
+        "ko": {
+          "route": "/ko/heroes/lagnar/",
+          "name": "라그나",
+          "skills": [
+            "물의 칼날 공격",
+            "전함 지원",
+            "불패의 풍모",
+            "전쟁 특화체"
+          ]
+        },
+        "en": {
+          "route": "/en/heroes/lagnar/",
+          "name": "Lagnar",
+          "skills": [
+            "Water Blade Attack",
+            "Warship Support",
+            "Unyielding Bearing",
+            "War Specialist Body"
+          ]
+        },
+        "ja": {
+          "route": "/ja/heroes/lagnar/",
+          "name": "ラグナ",
+          "skills": [
+            "水の刃攻撃",
+            "戦艦支援",
+            "不敗の風格",
+            "戦争特化体"
+          ]
+        },
+        "ru": {
+          "route": "/ru/heroes/lagnar/",
+          "name": "Lagnar",
+          "skills": [
+            "Water Blade Attack",
+            "Warship Support",
+            "Unyielding Bearing",
+            "War Specialist Body"
+          ]
+        },
+        "zh-tw": {
+          "route": "/zh-tw/heroes/lagnar/",
+          "name": "拉格納",
+          "skills": [
+            "水之刃攻擊",
+            "戰艦支援",
+            "不敗風範",
+            "戰爭特化體"
+          ]
+        }
+      }
+    },
+    {
+      "id": "laila",
+      "locales": {
+        "ko": {
+          "route": "/ko/heroes/laila/",
+          "name": "라일라",
+          "skills": [
+            "징계의 채찍",
+            "생기 회복",
+            "샘솟는 생명력",
+            "끊임없는 생명"
+          ]
+        },
+        "en": {
+          "route": "/en/heroes/laila/",
+          "name": "Layla",
+          "skills": [
+            "Punishing Whip",
+            "Rejuvenate",
+            "Spring of Life",
+            "Eternal Vigor"
+          ]
+        },
+        "ja": {
+          "route": "/ja/heroes/laila/",
+          "name": "レイラ",
+          "skills": [
+            "懲戒の鞭",
+            "生命の息吹",
+            "命の泉",
+            "永遠の命"
+          ]
+        },
+        "ru": {
+          "route": "/ru/heroes/laila/",
+          "name": "Laila",
+          "skills": [
+            "Whip of Discipline",
+            "Vital Recovery",
+            "Overflowing Vitality",
+            "Endless Life"
+          ]
+        },
+        "zh-tw": {
+          "route": "/zh-tw/heroes/laila/",
+          "name": "萊拉",
+          "skills": [
+            "懲戒之鞭",
+            "生命氣息",
+            "生命之泉",
+            "永恆生命"
+          ]
+        }
+      }
+    },
+    {
+      "id": "light",
+      "locales": {
+        "ko": {
+          "route": "/ko/heroes/light/",
+          "name": "라이트",
+          "skills": [
+            "우레 공습",
+            "날개 연속 포화",
+            "하늘의 응원",
+            "하늘의 역장"
+          ]
+        },
+        "en": {
+          "route": "/en/heroes/light/",
+          "name": "Wright",
+          "skills": [
+            "Thunderstrike",
+            "Wing Barrage",
+            "Skyborne Support",
+            "Skyward Field"
+          ]
+        },
+        "ja": {
+          "route": "/ja/heroes/light/",
+          "name": "ライト",
+          "skills": [
+            "雷撃空襲",
+            "飛翔の弾幕",
+            "空からの支援",
+            "天空領域"
+          ]
+        },
+        "ru": {
+          "route": "/ru/heroes/light/",
+          "name": "Light",
+          "skills": [
+            "Thunder Air Raid",
+            "Wing Barrage",
+            "Cheer from the Sky",
+            "Sky Field"
+          ]
+        },
+        "zh-tw": {
+          "route": "/zh-tw/heroes/light/",
+          "name": "萊特",
+          "skills": [
+            "雷擊空襲",
+            "飛翔彈幕",
+            "空中支援",
+            "天空領域"
+          ]
+        }
+      }
+    },
+    {
+      "id": "lucky",
+      "locales": {
+        "ko": {
+          "route": "/ko/heroes/lucky/",
+          "name": "럭키",
+          "skills": [
+            "공포의 전기톱",
+            "곰인형의 분노",
+            "광기의 사냥",
+            "무적 행운"
+          ]
+        },
+        "en": {
+          "route": "/en/heroes/lucky/",
+          "name": "Lucky",
+          "skills": [
+            "Electric Shock",
+            "Overload Current",
+            "Wild Hunt",
+            "Unfailing Luck"
+          ]
+        },
+        "ja": {
+          "route": "/ja/heroes/lucky/",
+          "name": "ラッキー",
+          "skills": [
+            "電撃砲",
+            "電圧最大",
+            "狩猟の天才",
+            "運気上々"
+          ]
+        },
+        "ru": {
+          "route": "/ru/heroes/lucky/",
+          "name": "Lucky",
+          "skills": [
+            "Terrifying Chainsaw",
+            "Rage of the Teddy Bear",
+            "Mad Hunt",
+            "Invincible Fortune"
+          ]
+        },
+        "zh-tw": {
+          "route": "/zh-tw/heroes/lucky/",
+          "name": "幸運小姐",
+          "skills": [
+            "電擊砲",
+            "電壓全開",
+            "狩獵天才",
+            "好運加持"
+          ]
+        }
+      }
+    },
+    {
+      "id": "maddy",
+      "locales": {
+        "ko": {
+          "route": "/ko/heroes/maddy/",
+          "name": "매디",
+          "skills": [
+            "화살 추격",
+            "버즈 함정",
+            "전장의 천사",
+            "생존의 길"
+          ]
+        },
+        "en": {
+          "route": "/en/heroes/maddy/",
+          "name": "Maddie",
+          "skills": [
+            "Quickshot",
+            "Burning Wind",
+            "War Angel",
+            "Survival Tactics"
+          ]
+        },
+        "ja": {
+          "route": "/ja/heroes/maddy/",
+          "name": "マディ",
+          "skills": [
+            "シャドーショット",
+            "バズトラップ",
+            "戦場の天使",
+            "生存の道"
+          ]
+        },
+        "ru": {
+          "route": "/ru/heroes/maddy/",
+          "name": "Maddy",
+          "skills": [
+            "Arrow Pursuit",
+            "Buzz Trap",
+            "Angel of the Battlefield",
+            "Path of Survival"
+          ]
+        },
+        "zh-tw": {
+          "route": "/zh-tw/heroes/maddy/",
+          "name": "麥蒂",
+          "skills": [
+            "暗影射擊",
+            "爆裂陷阱",
+            "戰場天使",
+            "生存之道"
+          ]
+        }
+      }
+    },
+    {
+      "id": "mike",
+      "locales": {
+        "ko": {
+          "route": "/ko/heroes/mike/",
+          "name": "마이크",
+          "skills": [
+            "썬더 실드 어택",
+            "방폭 영역",
+            "방공 훈련",
+            "용감한 수호"
+          ]
+        },
+        "en": {
+          "route": "/en/heroes/mike/",
+          "name": "Mike",
+          "skills": [
+            "Thunder Bash",
+            "Suppression Zone",
+            "Defense Training",
+            "Dauntless Defense"
+          ]
+        },
+        "ja": {
+          "route": "/ja/heroes/mike/",
+          "name": "マイク",
+          "skills": [
+            "雷霆シールドバッシュ",
+            "防衛領域",
+            "防護訓練",
+            "不屈の守護"
+          ]
+        },
+        "ru": {
+          "route": "/ru/heroes/mike/",
+          "name": "Mike",
+          "skills": [
+            "Thunder Shield Attack",
+            "Blastproof Zone",
+            "Air Defense Training",
+            "Brave Guard"
+          ]
+        },
+        "zh-tw": {
+          "route": "/zh-tw/heroes/mike/",
+          "name": "麥克",
+          "skills": [
+            "雷霆盾擊",
+            "防衛領域",
+            "防護訓練",
+            "不屈守護"
+          ]
+        }
+      }
+    },
+    {
+      "id": "nikola",
+      "locales": {
+        "ko": {
+          "route": "/ko/heroes/nikola/",
+          "name": "니콜라",
+          "skills": [
+            "전류 파동",
+            "전기 실드 수호",
+            "불굴의 의지",
+            "번개 단련"
+          ]
+        },
+        "en": {
+          "route": "/en/heroes/nikola/",
+          "name": "Nikola",
+          "skills": [
+            "Electric Surge",
+            "Shock Shield",
+            "Resolute Stand",
+            "Thunderclad"
+          ]
+        },
+        "ja": {
+          "route": "/ja/heroes/nikola/",
+          "name": "ニコラ",
+          "skills": [
+            "電撃波動",
+            "電磁の盾",
+            "不屈の魂",
+            "雷電強化"
+          ]
+        },
+        "ru": {
+          "route": "/ru/heroes/nikola/",
+          "name": "Nikola",
+          "skills": [
+            "Current Wave",
+            "Electric Shield Guard",
+            "Unyielding Will",
+            "Lightning Tempering"
+          ]
+        },
+        "zh-tw": {
+          "route": "/zh-tw/heroes/nikola/",
+          "name": "尼古拉",
+          "skills": [
+            "電擊波動",
+            "電磁護盾",
+            "不屈之魂",
+            "雷電強化"
+          ]
+        }
+      }
+    },
+    {
+      "id": "ray",
+      "locales": {
+        "ko": {
+          "route": "/ko/heroes/ray/",
+          "name": "레이",
+          "skills": [
+            "포화의 광음",
+            "하늘의 화력",
+            "팔콘 돌격",
+            "완전무장"
+          ]
+        },
+        "en": {
+          "route": "/en/heroes/ray/",
+          "name": "Ray",
+          "skills": [
+            "Ballistic Anthem",
+            "Boomstick",
+            "Raptor Strike",
+            "Combat Ready"
+          ]
+        },
+        "ja": {
+          "route": "/ja/heroes/ray/",
+          "name": "レイ",
+          "skills": [
+            "砲火の轟音",
+            "火力の雨",
+            "ラプターストライク",
+            "完全武装"
+          ]
+        },
+        "ru": {
+          "route": "/ru/heroes/ray/",
+          "name": "Ray",
+          "skills": [
+            "Barrage Roar",
+            "Sky Firepower",
+            "Falcon Charge",
+            "Fully Armed"
+          ]
+        },
+        "zh-tw": {
+          "route": "/zh-tw/heroes/ray/",
+          "name": "雷",
+          "skills": [
+            "砲火轟鳴",
+            "火力之雨",
+            "猛禽突擊",
+            "全副武裝"
+          ]
+        }
+      }
+    },
+    {
+      "id": "rosie",
+      "locales": {
+        "ko": {
+          "route": "/ko/heroes/rosie/",
+          "name": "로지",
+          "skills": [
+            "음파 파동",
+            "현음 지진",
+            "피의 로큰롤",
+            "최고 헌터"
+          ]
+        },
+        "en": {
+          "route": "/en/heroes/rosie/",
+          "name": "Rosie",
+          "skills": [
+            "Sonic Wave",
+            "Rift Riff",
+            "Blood Beat",
+            "Champion Stalker"
+          ]
+        },
+        "ja": {
+          "route": "/ja/heroes/rosie/",
+          "name": "ローズ",
+          "skills": [
+            "音波衝撃",
+            "大地の弦",
+            "血染めロック",
+            "賞金稼ぎの掟"
+          ]
+        },
+        "ru": {
+          "route": "/ru/heroes/rosie/",
+          "name": "Rosie",
+          "skills": [
+            "Sonic Wave",
+            "Stringquake",
+            "Bloody Rock'n'Roll",
+            "Top Hunter"
+          ]
+        },
+        "zh-tw": {
+          "route": "/zh-tw/heroes/rosie/",
+          "name": "蘿絲",
+          "skills": [
+            "音波衝擊",
+            "震地琴弦",
+            "血色搖滾",
+            "賞金獵人法則"
+          ]
+        }
+      }
+    },
+    {
+      "id": "rusty",
+      "locales": {
+        "ko": {
+          "route": "/ko/heroes/rusty/",
+          "name": "러스티",
+          "skills": [
+            "야만의 돌진",
+            "폭뢰 공격",
+            "단단한 신체"
+          ]
+        },
+        "en": {
+          "route": "/en/heroes/rusty/",
+          "name": "Rusty",
+          "skills": [
+            "Brute Force",
+            "Depth Charge",
+            "Tough as Nails"
+          ]
+        },
+        "ja": {
+          "route": "/ja/heroes/rusty/",
+          "name": "ラスティ",
+          "skills": [
+            "野蛮な突撃",
+            "デスドロップ",
+            "屈強な肉体"
+          ]
+        },
+        "ru": {
+          "route": "/ru/heroes/rusty/",
+          "name": "Rusty",
+          "skills": [
+            "Savage Charge",
+            "Thunder Smash",
+            "Tough Body"
+          ]
+        },
+        "zh-tw": {
+          "route": "/zh-tw/heroes/rusty/",
+          "name": "拉斯提",
+          "skills": [
+            "野蠻衝撞",
+            "死亡重摔",
+            "強韌體魄"
+          ]
+        }
+      }
+    },
+    {
+      "id": "sarge",
+      "locales": {
+        "ko": {
+          "route": "/ko/heroes/sarge/",
+          "name": "세이지",
+          "skills": [
+            "탄알의 소나기",
+            "유탄 폭풍",
+            "광기의 사냥",
+            "전장의 경험"
+          ]
+        },
+        "en": {
+          "route": "/en/heroes/sarge/",
+          "name": "Sarge",
+          "skills": [
+            "Bullet Rain",
+            "Grenade Blitz",
+            "Wild Hunt",
+            "Veteran's Valor"
+          ]
+        },
+        "ja": {
+          "route": "/ja/heroes/sarge/",
+          "name": "サージ",
+          "skills": [
+            "弾幕掃射",
+            "破砲嵐",
+            "狩猟の天才",
+            "歴戦の古兵"
+          ]
+        },
+        "ru": {
+          "route": "/ru/heroes/sarge/",
+          "name": "Sarge",
+          "skills": [
+            "Bullet Rain",
+            "Grenade Storm",
+            "Mad Hunt",
+            "Battlefield Experience"
+          ]
+        },
+        "zh-tw": {
+          "route": "/zh-tw/heroes/sarge/",
+          "name": "薩格",
+          "skills": [
+            "彈幕掃射",
+            "破砲風暴",
+            "狩獵天才",
+            "老練戰兵"
+          ]
+        }
+      }
+    },
+    {
+      "id": "shark",
+      "locales": {
+        "ko": {
+          "route": "/ko/heroes/shark/",
+          "name": "샤크",
+          "skills": [
+            "웨이브 크래시",
+            "샤크 웨이브",
+            "전방 지원",
+            "심해 무적"
+          ]
+        },
+        "en": {
+          "route": "/en/heroes/shark/",
+          "name": "Shark",
+          "skills": [
+            "Wave Crash",
+            "Shark Wave",
+            "Frontline Support",
+            "Deep Sea Invincible"
+          ]
+        },
+        "ja": {
+          "route": "/ja/heroes/shark/",
+          "name": "シャーク",
+          "skills": [
+            "ウェーブクラッシュ",
+            "シャークウェーブ",
+            "前方支援",
+            "深海無敵"
+          ]
+        },
+        "ru": {
+          "route": "/ru/heroes/shark/",
+          "name": "Shark",
+          "skills": [
+            "Wave Crash",
+            "Shark Wave",
+            "Frontline Support",
+            "Deep Sea Invincible"
+          ]
+        },
+        "zh-tw": {
+          "route": "/zh-tw/heroes/shark/",
+          "name": "鯊克",
+          "skills": [
+            "波浪衝擊",
+            "鯊魚波浪",
+            "前線支援",
+            "深海無敵"
+          ]
+        }
+      }
+    },
+    {
+      "id": "tara",
+      "locales": {
+        "ko": {
+          "route": "/ko/heroes/tara/",
+          "name": "타라",
+          "skills": [
+            "별그림자 망치",
+            "늑대의 땅울림",
+            "늑대 망치의 수호",
+            "늑대의 독려"
+          ]
+        },
+        "en": {
+          "route": "/en/heroes/tara/",
+          "name": "Tara",
+          "skills": [
+            "Starhammer Gale",
+            "Wolfquake Slam",
+            "Ironfang Ward",
+            "Wolfdrum Roar"
+          ]
+        },
+        "ja": {
+          "route": "/ja/heroes/tara/",
+          "name": "ターラ",
+          "skills": [
+            "星砕きの烈風",
+            "狼の地鳴り",
+            "狼牙の加護",
+            "戦狼の雄叫び"
+          ]
+        },
+        "ru": {
+          "route": "/ru/heroes/tara/",
+          "name": "Tara",
+          "skills": [
+            "Starshadow Hammer",
+            "Wolf's Groundquake",
+            "Guard of the Wolf Hammer",
+            "Wolf's Encouragement"
+          ]
+        },
+        "zh-tw": {
+          "route": "/zh-tw/heroes/tara/",
+          "name": "塔拉",
+          "skills": [
+            "碎星烈風",
+            "狼嘯震地",
+            "狼牙庇護",
+            "戰狼咆哮"
+          ]
+        }
+      }
+    },
+    {
+      "id": "tarzan",
+      "locales": {
+        "ko": {
+          "route": "/ko/heroes/tarzan/",
+          "name": "타잔",
+          "skills": [
+            "아이언 피스트",
+            "스톰 블로우",
+            "블러드 스피릿",
+            "아이언 디펜스"
+          ]
+        },
+        "en": {
+          "route": "/en/heroes/tazan/",
+          "name": "Tarzan",
+          "skills": [
+            "Iron Fist Sweep",
+            "Crushing Blow",
+            "Ironblood Spirit",
+            "Iron Fortitude"
+          ]
+        },
+        "ja": {
+          "route": "/ja/heroes/tarzan/",
+          "name": "ターザン",
+          "skills": [
+            "鉄拳一掃",
+            "超破壊拳",
+            "鉄血の意志",
+            "鉄壁の守り"
+          ]
+        },
+        "ru": {
+          "route": "/ru/heroes/tarzan/",
+          "name": "Tarzan",
+          "skills": [
+            "Iron Fist",
+            "Storm Blow",
+            "Blood Spirit",
+            "Iron Defense"
+          ]
+        },
+        "zh-tw": {
+          "route": "/zh-tw/heroes/tarzan/",
+          "name": "泰山",
+          "skills": [
+            "鐵拳橫掃",
+            "超破壞拳",
+            "鋼鐵意志",
+            "鐵壁防守"
+          ]
+        }
+      }
+    },
+    {
+      "id": "tony",
+      "locales": {
+        "ko": {
+          "route": "/ko/heroes/tony/",
+          "name": "탄 토니",
+          "skills": [
+            "펄스 블라스트",
+            "화려한 공연",
+            "단결 수호",
+            "몸짱 아이돌"
+          ]
+        },
+        "en": {
+          "route": "/en/heroes/tony/",
+          "name": "Tony",
+          "skills": [
+            "Pulse Blast",
+            "Showtime",
+            "Shield of Unity",
+            "Peak Performance"
+          ]
+        },
+        "ja": {
+          "route": "/ja/heroes/tony/",
+          "name": "トニー",
+          "skills": [
+            "パルスブラスト",
+            "ショータイム",
+            "共同防衛",
+            "ベストコンディション"
+          ]
+        },
+        "ru": {
+          "route": "/ru/heroes/tony/",
+          "name": "Tony",
+          "skills": [
+            "Pulse Blast",
+            "Grand Show",
+            "Unity Guard",
+            "Muscle Idol"
+          ]
+        },
+        "zh-tw": {
+          "route": "/zh-tw/heroes/tony/",
+          "name": "東尼",
+          "skills": [
+            "脈衝爆破",
+            "Show Time",
+            "共同防衛",
+            "最佳狀態"
+          ]
+        }
+      }
+    },
+    {
+      "id": "travis",
+      "locales": {
+        "ko": {
+          "route": "/ko/heroes/travis/",
+          "name": "트래비스",
+          "skills": [
+            "정조준 명중",
+            "치명적 저격",
+            "불꽃 강타",
+            "수렵 본능"
+          ]
+        },
+        "en": {
+          "route": "/en/heroes/travis/",
+          "name": "Travis",
+          "skills": [
+            "Deadly Precision",
+            "Lethal Shot",
+            "Forge Master",
+            "Predator Instinct"
+          ]
+        },
+        "ja": {
+          "route": "/ja/heroes/travis/",
+          "name": "トラビス",
+          "skills": [
+            "百発百中",
+            "致命狙撃",
+            "鍛造の心得",
+            "ハンターの本能"
+          ]
+        },
+        "ru": {
+          "route": "/ru/heroes/travis/",
+          "name": "Travis",
+          "skills": [
+            "Steady Aim Hit",
+            "Deadly Snipe",
+            "Flame Strike",
+            "Hunter Instinct"
+          ]
+        },
+        "zh-tw": {
+          "route": "/zh-tw/heroes/travis/",
+          "name": "特拉維斯",
+          "skills": [
+            "百發百中",
+            "致命狙擊",
+            "鍛造心得",
+            "獵人本能"
+          ]
+        }
+      }
+    },
+    {
+      "id": "undine",
+      "locales": {
+        "ko": {
+          "route": "/ko/heroes/undine/",
+          "name": "운디네 (Undine)",
+          "skills": [
+            "Ripple Ricochet",
+            "Azure Anthem",
+            "Wild Hunt"
+          ]
+        },
+        "en": {
+          "route": "/en/heroes/undine/",
+          "name": "Undine",
+          "skills": [
+            "Ripple Ricochet",
+            "Azure Anthem",
+            "Wild Hunt"
+          ]
+        },
+        "ja": {
+          "route": "/ja/heroes/undine/",
+          "name": "Undine",
+          "skills": [
+            "Ripple Ricochet",
+            "Azure Anthem",
+            "Wild Hunt"
+          ]
+        },
+        "ru": {
+          "route": "/ru/heroes/undine/",
+          "name": "Undine",
+          "skills": [
+            "Ripple Ricochet",
+            "Azure Anthem",
+            "Wild Hunt"
+          ]
+        },
+        "zh-tw": {
+          "route": "/zh-tw/heroes/undine/",
+          "name": "Undine",
+          "skills": [
+            "Ripple Ricochet",
+            "Azure Anthem",
+            "Wild Hunt"
+          ]
+        }
+      }
+    }
+  ],
+  "pets": [
+    {
+      "id": "buckler",
+      "locales": {
+        "ko": {
+          "route": "/ko/database/pet-system/buckler/",
+          "name": "버클러"
+        },
+        "en": {
+          "route": "/en/database/pet-system/buckler/",
+          "name": "Buckler"
+        },
+        "ja": {
+          "route": "/ja/database/pet-system/buckler/",
+          "name": "Buckler"
+        },
+        "ru": {
+          "route": "/ru/database/pet-system/buckler/",
+          "name": "Buckler"
+        },
+        "zh-tw": {
+          "route": "/zh-tw/database/pet-system/buckler/",
+          "name": "Buckler"
+        }
+      }
+    },
+    {
+      "id": "dodo",
+      "locales": {
+        "ko": {
+          "route": "/ko/database/pet-system/dodo/",
+          "name": "도도"
+        },
+        "en": {
+          "route": "/en/database/pet-system/dodo/",
+          "name": "Dodo"
+        },
+        "ja": {
+          "route": "/ja/database/pet-system/dodo/",
+          "name": "Dodo"
+        },
+        "ru": {
+          "route": "/ru/database/pet-system/dodo/",
+          "name": "Dodo"
+        },
+        "zh-tw": {
+          "route": "/zh-tw/database/pet-system/dodo/",
+          "name": "Dodo"
+        }
+      }
+    },
+    {
+      "id": "fluffy",
+      "locales": {
+        "ko": {
+          "route": "/ko/database/pet-system/fluffy/",
+          "name": "솜솜"
+        },
+        "en": {
+          "route": "/en/database/pet-system/fluffy/",
+          "name": "Fluffy"
+        },
+        "ja": {
+          "route": "/ja/database/pet-system/fluffy/",
+          "name": "Fluffy"
+        },
+        "ru": {
+          "route": "/ru/database/pet-system/fluffy/",
+          "name": "Fluffy"
+        },
+        "zh-tw": {
+          "route": "/zh-tw/database/pet-system/fluffy/",
+          "name": "Fluffy"
+        }
+      }
+    },
+    {
+      "id": "hardhead",
+      "locales": {
+        "ko": {
+          "route": "/ko/database/pet-system/hardhead/",
+          "name": "철두"
+        },
+        "en": {
+          "route": "/en/database/pet-system/hardhead/",
+          "name": "Hardhead"
+        },
+        "ja": {
+          "route": "/ja/database/pet-system/hardhead/",
+          "name": "Hardhead"
+        },
+        "ru": {
+          "route": "/ru/database/pet-system/hardhead/",
+          "name": "Hardhead"
+        },
+        "zh-tw": {
+          "route": "/zh-tw/database/pet-system/hardhead/",
+          "name": "Hardhead"
+        }
+      }
+    },
+    {
+      "id": "shadow",
+      "locales": {
+        "ko": {
+          "route": "/ko/database/pet-system/shadow/",
+          "name": "쉐도우"
+        },
+        "en": {
+          "route": "/en/database/pet-system/shadow/",
+          "name": "Shadow"
+        },
+        "ja": {
+          "route": "/ja/database/pet-system/shadow/",
+          "name": "Shadow"
+        },
+        "ru": {
+          "route": "/ru/database/pet-system/shadow/",
+          "name": "Shadow"
+        },
+        "zh-tw": {
+          "route": "/zh-tw/database/pet-system/shadow/",
+          "name": "Shadow"
+        }
+      }
+    },
+    {
+      "id": "snowball",
+      "locales": {
+        "ko": {
+          "route": "/ko/database/pet-system/snowball/",
+          "name": "스노우볼"
+        },
+        "en": {
+          "route": "/en/database/pet-system/snowball/",
+          "name": "Snowball"
+        },
+        "ja": {
+          "route": "/ja/database/pet-system/snowball/",
+          "name": "Snowball"
+        },
+        "ru": {
+          "route": "/ru/database/pet-system/snowball/",
+          "name": "Snowball"
+        },
+        "zh-tw": {
+          "route": "/zh-tw/database/pet-system/snowball/",
+          "name": "Snowball"
+        }
+      }
+    },
+    {
+      "id": "starhorn",
+      "locales": {
+        "ko": {
+          "route": "/ko/database/pet-system/starhorn/",
+          "name": "별뿔이"
+        },
+        "en": {
+          "route": "/en/database/pet-system/starhorn/",
+          "name": "Starhorn"
+        },
+        "ja": {
+          "route": "/ja/database/pet-system/starhorn/",
+          "name": "Starhorn"
+        },
+        "ru": {
+          "route": "/ru/database/pet-system/starhorn/",
+          "name": "Starhorn"
+        },
+        "zh-tw": {
+          "route": "/zh-tw/database/pet-system/starhorn/",
+          "name": "Starhorn"
+        }
+      }
+    }
+  ]
+}

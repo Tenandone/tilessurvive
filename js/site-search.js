@@ -41,7 +41,7 @@
     if (!query) return render([], "");
     const terms = query.split(/\s+/).filter(Boolean);
     const matches = index.filter((item) => {
-      const haystack = normalize(`${item.title} ${item.description} ${item.type} ${item.url}`);
+      const haystack = normalize(`${item.title} ${item.description} ${item.aliases || ''} ${item.type} ${item.url}`);
       return terms.every((term) => haystack.includes(term));
     });
     render(matches, query);

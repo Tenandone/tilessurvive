@@ -1,5 +1,6 @@
 const fs=require('fs'),path=require('path'),assert=require('node:assert/strict'),{parseHTML}=require('linkedom'),{imageSize}=require('image-size');
 const root=path.resolve(__dirname,'..'),pets=require('../data/companions.json'),heroes=require('../data/mariner-expansion.json');
+const official=require('../data/foundation-40/official-character-locales.json'),delta=require('./foundation-40-test-allowances');
 let checks=0;function check(v,msg){checks++;assert.ok(v,msg);}
 const read=r=>parseHTML(fs.readFileSync(path.join(root,r,'index.html'),'utf8')).document;
 const langs=['ko','en','ja','ru','zh-tw'],newRoutes=[];
@@ -7,7 +8,7 @@ for(const lang of langs){
  const d=read(lang+'/database/pet-system');
  check(d.querySelectorAll('[data-pet-role]').length===7,lang+' roster count');
  check(d.querySelector('[data-pet-controls] input[type=search]'),lang+' pet search');
- for(const p of pets.pets){const row=d.getElementById('pet-'+p.id);check(row?.textContent.includes(p.name),lang+' '+p.name);check(row?.getAttribute('data-pet-role')===p.role,'role '+p.id);}
+ for(const p of pets.pets){const row=d.getElementById('pet-'+p.id);check(row?.textContent.includes(official.pets.find(pet=>pet.id===p.id).names[lang]),lang+' '+p.name);check(row?.getAttribute('data-pet-role')===p.role,'role '+p.id);}
  const rows=[...d.querySelectorAll('#pet-growth tbody tr')].map(r=>[...r.querySelectorAll('td')].map(x=>x.textContent));
  check(JSON.stringify(rows)===JSON.stringify([['0','25%','0','0'],['1','40%','100','100'],['2','55%','200','300'],['3','70%','400','700']]),lang+' observed training values');
  check(!d.querySelector('a[href$="/pets/polar-bear/"]'),'No speculative polar bear detail');
@@ -16,7 +17,7 @@ for(const lang of langs){
  for(const h of heroes.heroes){
   const route=lang+'/heroes/'+h.id,hd=read(route);newRoutes.push(route);
   check(directory.querySelectorAll('a.hero-item[href="/'+route+'/"]').length===1,route+' directory link exactly once');
-  for(const s of h.skills){check(hd.querySelector('main').textContent.includes(s.name),route+' skill '+s.name);for(const stage of s.stages||[])check(hd.querySelector('main').textContent.includes('Lv.'+stage.level+' · '+stage.value+s.unit),route+' snapshot '+stage.level);}
+  for(const s of h.skills){check(hd.querySelector('main').textContent.includes(delta.localized(s.name,route+'/index.html')),route+' skill '+s.name);for(const stage of s.stages||[])check(hd.querySelector('main').textContent.includes('Lv.'+stage.level+' · '+stage.value+s.unit),route+' snapshot '+stage.level);}
   check(hd.querySelectorAll('[data-stage-result]').length===(h.id==='undine'?4:2),route+' only observed levels');
  }
  const star=read(lang+'/database/pet-system/starhorn');newRoutes.push(lang+'/database/pet-system/starhorn');

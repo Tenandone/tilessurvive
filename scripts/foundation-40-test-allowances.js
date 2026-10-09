@@ -98,4 +98,56 @@ function quantity(q,file,d){
  if(q==='3'&&file===`${lang}/events/arcadian-conquest/index.html`)return main.includes(norm(arcadia[lang][1]))&&!!d.querySelector('a[data-official-source="blog-1055"][href="https://tilesurvivegame.com/en/blog/1055"]');
  return false;
 }
-module.exports={image,metadata,text,forms,expectedRows,source,quantity,deletedDrafts,petHub,growthSource,arcadia,petChanges};
+const officialLabels=require('./lib/official-locales-40');
+function identity(node,file){
+ const copy=node.cloneNode(true),lang=file.split('/')[0],match=file.match(/\/database\/pet-system\/([^/]+)\/index\.html$/),kicker=copy.querySelector('.ts3-character-kicker span');
+ if(match&&kicker){const id=match[1];if(id==='snowball')kicker.textContent=kicker.textContent.replace(roles[lang][1],roles[lang][0]);if(id==='dodo')kicker.textContent=kicker.textContent.replace(roles[lang][0],roles[lang][1]);const rarity=petChanges.find(c=>c[0]===id&&c[1]==='rarity');if(rarity&&!kicker.textContent.endsWith(' · '+rarity[3]))kicker.textContent+=' · '+rarity[3];}
+ const entry=officialLabels.entries(lang).find(e=>e.route==='/'+file.replace(/index\.html$/,''));
+ if(entry){
+  const visit=n=>{if(n.nodeType===3){n.textContent=officialLabels.replaceLabels(n.textContent,entry.pairs);return;}if(n.nodeType!==1||n.matches('.ts3-character-kicker'))return;n.normalize();for(const child of n.childNodes)visit(child);};visit(copy);
+  const h1=copy.querySelector('h1');if(h1)h1.textContent=entry.entity.names[lang];
+ }
+ return norm(copy.textContent);
+}
+const identityCache=new Map();
+function identitiesFromGit(values,file,release){
+ if(!values.length)return[];const key=release+':'+file;
+ if(!identityCache.has(key)){
+  const {execFileSync}=require('child_process'),path=require('path'),{parseHTML}=require('linkedom');
+  const d=parseHTML(execFileSync('git',['show',key],{cwd:path.resolve(__dirname,'..'),encoding:'utf8',maxBuffer:5e6})).document;
+  const nodes=[...d.querySelectorAll('main .ts3-character-identity')];assert.deepEqual(nodes.map(n=>norm(n.textContent)),values,'Identity snapshot must still match immutable Git HTML');identityCache.set(key,nodes.map(n=>identity(n,file)));
+ }
+ return identityCache.get(key);
+}
+function petExpScope(file){
+ const lang=file.split('/')[0],name=officialLabels.data.pets.find(p=>p.id==='starhorn').names[lang];
+ return {ko:`게임 2.6.200 · 1→100레벨. 기본 선택은 ${name}입니다. 선택한 펫의 경험치를 현재 레벨부터 목표 레벨까지 합산합니다. 아래 훈련 비용은 ${name} 전용입니다.`,en:`Game 2.6.200 · Levels 1→100. ${name} is selected by default. Adds the selected pet’s EXP from the current level to the target. Training costs below apply only to ${name}.`,ja:`ゲーム2.6.200・レベル1→100。初期選択は${name}です。選択したペットの現在レベルから目標レベルまでの経験値を合算します。下の訓練費用は${name}専用です。`,ru:`Версия игры 2.6.200 · Уровни 1→100. По умолчанию выбран ${name}. Сумма опыта выбранного питомца от текущего до целевого уровня. Стоимость тренировки ниже относится только к ${name}.`,'zh-tw':`遊戲2.6.200・1→100級。預設選擇${name}。加總所選寵物從目前等級到目標等級所需的經驗。下方訓練費用僅適用於${name}。`}[lang];
+}
+function petExpRows(file){if(!petHub(file))return[];const pets=require('../data/foundation-40/pet-exp-profiles.json').pets,groups=[];for(const pet of pets)if(!groups.some(g=>JSON.stringify(g.expRows)===JSON.stringify(pet.expRows)))groups.push(pet);assert.equal(groups.length,3);return Array.from({length:99},(_,i)=>[`${i+1} → ${i+2}`,...groups.map(g=>g.expRows[i].cost.toLocaleString('en-US'))]);}
+function localized(value,file,linked=false){
+ const lang=file.split('/')[0];
+ const pairs=[...officialLabels.pagePairs(file),...(linked?officialLabels.entries(lang).flatMap(e=>e.namePairs):[])];
+ if(typeof value==='string')return officialLabels.replaceLabels(value,pairs);
+ if(Array.isArray(value))return value.map(v=>localized(v,file,linked));
+ if(value&&typeof value==='object')return Object.fromEntries(Object.entries(value).map(([k,v])=>[k,localized(v,file,linked)]));
+ return value;
+}
+function reviewedRows(values,file,complete){
+ const rows=localized(expectedRows(values,file,complete),file);
+ if(!petHub(file))return rows;
+ // Only the seven linked pet names in the existing acquisition table are global labels.
+ // Unlinked names in unrelated prose (for example Season 1 promotion conditions) stay byte-exact.
+ const lang=file.split('/')[0],pairs=officialLabels.entries(lang).filter(e=>e.route.includes('/database/pet-system/')).flatMap(e=>e.namePairs);
+ return rows.map(row=>row.length===5?[officialLabels.replaceLabels(row[0],pairs),...row.slice(1)]:row);
+}
+function reviewedScript(file,baseline){
+ const edits={
+  'js/platform-search.js':['i.title + " " + i.description + " " + i.type + " " + i.url','i.title + " " + i.description + " " + (i.aliases || \'\') + " " + i.type + " " + i.url'],
+  'js/platform.js':['i.textContent.normalize("NFKC").toLocaleLowerCase(lang).includes(q)','(i.textContent + \' \' + (i.dataset.searchAliases || \'\')).normalize("NFKC").toLocaleLowerCase(lang).includes(q)'],
+  'js/site-search.js':['${item.title} ${item.description} ${item.type} ${item.url}','${item.title} ${item.description} ${item.aliases || \'\'} ${item.type} ${item.url}']
+ };
+ const pair=edits[file];if(!pair)return null;
+ assert.equal(baseline.split(pair[0]).length-1,1,'Exact immutable search expression: '+file);
+ return baseline.replace(...pair);
+}
+module.exports={image,metadata:(v,f)=>localized(metadata(v,f),f),text:(v,f,k)=>localized(text(v,f,k),f),forms,expectedRows:reviewedRows,source,quantity,deletedDrafts,petHub,growthSource,arcadia,petChanges,localized,identity,identitiesFromGit,petExpScope,petExpRows,reviewedScript};

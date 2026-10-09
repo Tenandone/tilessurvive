@@ -139,7 +139,14 @@
       "route": "database/skill-book/",
       "sources": [
         "arms-race-training"
-      ]
+      ],
+      "descriptions": {
+        "ko": "영웅 스킬 레벨업에 사용되는 아이템.",
+        "en": "Used to upgrade Hero skills.",
+        "ja": "英雄スキルLvアップに必要なアイテム",
+        "ru": "Используется для улучшения навыков героя.",
+        "zh-tw": "升級英雄技能所需的道具。"
+      }
     },
     {
       "id": "arms-medal",
@@ -148,7 +155,14 @@
       "use": "daily-goals",
       "sources": [
         "arms-race-training"
-      ]
+      ],
+      "descriptions": {
+        "ko": "일정한 수량의 메달 획득 시 일일 목표 보상 수령",
+        "en": "Collect medals to unlock daily milestone Rewards in the Power Play event.",
+        "ja": "一定数のメダルを獲得し、毎日目標報酬を受け取ろう",
+        "ru": "Собирайте медали, чтобы открыть ежедневные награды за вехи события «Игра по-крупному».",
+        "zh-tw": "獲得一定數量的獎章，領取每日目標獎勵"
+      }
     },
     {
       "id": "food-10k",
@@ -159,7 +173,14 @@
       "use": "resource-item",
       "sources": [
         "arms-race-training"
-      ]
+      ],
+      "descriptions": {
+        "ko": "사용 시 10k 식량 획득",
+        "en": "Grants your Settlement 10K Food.",
+        "ja": "使用すると、食料10Kを獲得する",
+        "ru": "Дает поселению 10К ед. еды.",
+        "zh-tw": "使用後獲得10k食物"
+      }
     },
     {
       "id": "wood-10k",
@@ -170,7 +191,14 @@
       "use": "resource-item",
       "sources": [
         "arms-race-training"
-      ]
+      ],
+      "descriptions": {
+        "ko": "사용 시 10k 목재 획득",
+        "en": "Grants your Settlement 10K Wood.",
+        "ja": "使用すると、木材10Kを獲得する",
+        "ru": "Дает поселению 10К ед. древесины.",
+        "zh-tw": "使用後獲得10k木材"
+      }
     },
     {
       "id": "metal-10k",
@@ -181,7 +209,14 @@
       "use": "resource-item",
       "sources": [
         "arms-race-training"
-      ]
+      ],
+      "descriptions": {
+        "ko": "사용 시 10k 금속 획득",
+        "en": "Grants your Settlement 10K Metal.",
+        "ja": "使用すると金属10Kを獲得する",
+        "ru": "Дает поселению 10К ед. металла.",
+        "zh-tw": "使用後獲得10k金屬"
+      }
     },
     {
       "id": "speedup-5m",
@@ -194,7 +229,14 @@
         "arms-race-training",
         "vip-speedup",
         "fiend-crate-speedup"
-      ]
+      ],
+      "descriptions": {
+        "ko": "사용 시 선택한 대기열 카운트다운 5분 감소",
+        "en": "Reduces any timer by five minutes.",
+        "ja": "使用すると選択したスロットの残り時間を5分短縮できる",
+        "ru": "Ускоряет любой таймер на пять минут.",
+        "zh-tw": "消耗時間減少5分鐘"
+      }
     },
     {
       "id": "food-100k",
@@ -205,7 +247,14 @@
       "use": "resource-item",
       "sources": [
         "vip-food"
-      ]
+      ],
+      "descriptions": {
+        "ko": "사용 시 100k 식량 획득",
+        "en": "Grants your Settlement 100K Food.",
+        "ja": "使用すると、食料100Kを獲得する",
+        "ru": "Дает поселению 100 000 ед. еды.",
+        "zh-tw": "使用後獲得100k食物"
+      }
     },
     {
       "id": "undine-gear-fragment",
@@ -215,7 +264,14 @@
       "route": "heroes/undine/",
       "sources": [
         "hero-equipment-shop"
-      ]
+      ],
+      "descriptions": {
+        "ko": "[운디네] 전용 장비-바다의 음성 강화에 사용할 수 있습니다.",
+        "en": "Used to enhance Undine's Signature Gear: Ocean Vox",
+        "ja": "ウンディーネ専用装備「マリンマイク」の強化素材",
+        "ru": "Используется для усиления особого снаряжения Ундины: Голос океана",
+        "zh-tw": "可用於強化【溫蒂妮】專屬裝備「海謠麥克」"
+      }
     },
     {
       "id": "pet-eggs",
@@ -234,7 +290,7 @@
     },
     {
       "id": "reforge-hammer",
-      "nameKo": "재련 망치",
+      "nameKo": "세련 망치",
       "nameOriginal": "Reforge Hammer",
       "sourceLocale": "en",
       "category": "growth",
@@ -245,11 +301,22 @@
       ],
       "useSourceIds": [
         "probability-en"
+      ],
+      "descriptions": {
+        "ko": "고품질 탄소강으로 제작된 망치. 장비 제련에 사용되며 사용 시 장비의 엔트리 속성을 바꿀 수 있다.",
+        "en": "A high-quality steel forged hammer, used for finely polishing gear.Used to change the special stats of the gear.",
+        "ja": "高品質の炭素鋼で鍛造されたハンマーを装備の修練に使うと、ステータスを変更できます",
+        "ru": "Высококачественный молот, кованый из стали, используется для тонкой полировки снаряжения. Используется для изменения специальных характеристик снаряжения.",
+        "zh-tw": "優質碳鋼鍛造的槌子，用於裝備洗鍊，使用後可改變裝備的詞綴屬性。"
+      },
+      "searchAliases": [
+        "재련 망치",
+        "제련 망치"
       ]
     },
     {
       "id": "advanced-recruitment-token",
-      "nameKo": "고급 모집 토큰",
+      "nameKo": "고급 모집 맵",
       "nameOriginal": "Advanced Recruitment Token",
       "sourceLocale": "en",
       "category": "growth",
@@ -260,6 +327,17 @@
       ],
       "useSourceIds": [
         "probability-en"
+      ],
+      "descriptions": {
+        "ko": "고급 영웅 1회 모집 가능",
+        "en": "Used to perform 1 Advanced Hero Recruitment.",
+        "ja": "高級英雄募集を1回実行可能",
+        "ru": "Используется для выполнения 1 продвинутого призыва героя.",
+        "zh-tw": "可進行1次高級英雄招募"
+      },
+      "searchAliases": [
+        "고급 모집 토큰",
+        "Advanced Recruitment Token"
       ]
     },
     {

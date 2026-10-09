@@ -9,6 +9,7 @@ const observation = require('../data/foundation-40/pet-observations.json');
 const copy = require('../data/foundation-40/pet-growth-copy');
 const hatch = require('../data/foundation-40/pet-hatching.json');
 const hatchCopy = require('../data/foundation-40/pet-hatching-copy');
+const delta = require('./foundation-40-test-allowances');
 const root = path.resolve(__dirname, '..'), languages = ['ko','en','ja','ru','zh-tw'];
 const legacyExp = [[41,2300],[42,2400],[43,2600],[44,2600],[45,2800],[46,2900],[47,3100],[48,3200],[49,3400],[50,3500],[51,3700],[52,3900],[53,4000],[54,4200],[55,4300],[56,4600],[57,4700],[58,4900],[59,5100],[60,5300],[61,5600],[62,5700],[63,6000],[64,6200],[65,6400],[66,6500],[67,6800],[68,7100],[69,7300],[70,7500],[71,7700],[72,8100],[73,8200],[74,8600],[75,8800],[76,9100],[77,9300],[78,9700],[79,9900],[80,10100],[81,10500],[82,10700],[83,11300],[84,11300],[85,11800],[87,12500],[88,12600],[89,13100],[90,13400],[91,13600],[92,14100],[93,14300],[94,15000],[95,15000]];
 const artIds = ['snowball','dodo','buckler','fluffy','hardhead','shadow','starhorn'];
@@ -72,15 +73,14 @@ test('All 17 displayed hatching percentages retain rounding, nulls and existing 
 if(!process.argv.includes('--source-only')) for(const lang of languages) test(`${lang}: static EXP/training, cumulative totals, accessible scope and seven original game portraits`, () => {
   const document=parseHTML(fs.readFileSync(path.join(root,lang,'database/pet-system/index.html'),'utf8')).document;
   const section=document.getElementById('pet-data-22');
-  assert.equal(text(document.getElementById('pet-exp-scope-40')),copy[lang].limits);
+  assert.equal(text(document.getElementById('pet-exp-scope-40')),delta.petExpScope(lang+'/database/pet-system/index.html'));
   for(const [key,model,total] of [['petExp',growth.expRows,513870],['petTraining',growth.trainingRows,2000]]) {
     const form=section.querySelector(`[data-growth-form="${key}"]`),config=JSON.parse(form.querySelector('script').textContent);
     assert.deepEqual(config.rows,model);
     assert.ok(form.getAttribute('aria-describedby').split(' ').includes('pet-exp-scope-40'));
     assert.equal(form.querySelector('[name="from"]').getAttribute('min'),String(model[0].from));
     assert.equal(form.querySelector('[name="to"]').getAttribute('max'),String(model.at(-1).to));
-    let following=form.nextElementSibling;while(following&&!following.querySelector('table'))following=following.nextElementSibling;
-    const table=following?.querySelector('table');assert.ok(table);const rows=[...table.querySelectorAll('tbody tr')];
+    const table=document.getElementById(form.dataset.growthTable);assert.ok(table);assert.equal(table.tagName,'TABLE');const rows=[...table.querySelectorAll('tbody tr')];
     assert.equal(rows.length,model.length);let sum=0;
     rows.forEach((row,i)=>{sum+=model[i].cost;assert.deepEqual([...row.children].map(text),[`${model[i].from} → ${model[i].to}`,model[i].cost.toLocaleString('en-US'),sum.toLocaleString('en-US')]);});
     assert.equal(sum,total);
@@ -95,11 +95,11 @@ if(!process.argv.includes('--source-only')) for(const lang of languages) test(`$
     assert.equal(detail.querySelectorAll('main img[src^="/img/pets/"]').length,id==='starhorn'?1:0);
     for(const image of detail.querySelectorAll('main img[src^="/img/game-40/pets/"]')) assert.equal(image.style.objectFit,'contain');
     if(id==='starhorn') {
-      assert.ok(text(detail.querySelector('main')).includes(copy[lang].trainingDetail));assert.ok(!text(detail.querySelector('main')).includes(copy[lang].obsolete));if(lang==='ko')assert.ok(text(detail.querySelector('main')).includes('별빛의 축복:'));
+      assert.ok(text(detail.querySelector('main')).includes(delta.localized(copy[lang].trainingDetail,lang+'/database/pet-system/starhorn/index.html')));assert.ok(!text(detail.querySelector('main')).includes(copy[lang].obsolete));if(lang==='ko')assert.ok(text(detail.querySelector('main')).includes('별빛의 축복:'));
       const mainArt=detail.querySelector('.ts3-pet-stage [data-pet-main-art-40="starhorn"]'),screen=detail.querySelector('[data-starhorn-screen-40]');
       assert.equal(mainArt.getAttribute('src'),'/img/game-40/pets/starhorn.webp');assert.equal(mainArt.getAttribute('width'),'360');assert.equal(mainArt.getAttribute('height'),'492');assert.equal(mainArt.getAttribute('loading'),'eager');
       assert.equal(detail.querySelectorAll('[data-starhorn-screen-40]').length,1);assert.equal(screen.hasAttribute('open'),false);assert.equal(text(screen.querySelector('summary')),copy[lang].screenshot);assert.equal(text(screen.querySelector('p')),copy[lang].screenshotScope);
-      const original=screen.querySelector('img');assert.equal(original.getAttribute('src'),'/img/pets/growth-source.webp');assert.equal(original.getAttribute('width'),'731');assert.equal(original.getAttribute('height'),'920');assert.equal(original.getAttribute('alt'),'Starhorn Lv.1 game screenshot');assert.equal(original.getAttribute('loading'),'lazy');
+      const original=screen.querySelector('img');assert.equal(original.getAttribute('src'),'/img/pets/growth-source.webp');assert.equal(original.getAttribute('width'),'731');assert.equal(original.getAttribute('height'),'920');assert.equal(original.getAttribute('alt'),delta.localized('Starhorn Lv.1 game screenshot',lang+'/database/pet-system/starhorn/index.html'));assert.equal(original.getAttribute('loading'),'lazy');
     }
     const hatchTable=[...detail.querySelectorAll('main table')].find(table=>[...table.querySelectorAll('tbody tr')].length===3);
     assert.deepEqual([...hatchTable.querySelectorAll('tbody tr')].map(r=>text(r.children[0])),hatchCopy[lang].eggs);

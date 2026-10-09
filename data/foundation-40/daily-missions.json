@@ -19,11 +19,11 @@
       "unit": "login",
       "points": 10,
       "names": {
-        "ko": "일일 로그인 1회",
-        "en": "Log in once",
-        "ja": "1回ログインする",
-        "ru": "Войти в игру 1 раз",
-        "zh-tw": "每日登入 1 次"
+        "ko": "일일 로그인 × 1",
+        "en": "Daily sign-in × 1",
+        "ja": "毎日ログイン × 1",
+        "ru": "Ежедневный вход × 1",
+        "zh-tw": "每日登入 × 1"
       },
       "paid": false
     },
@@ -34,10 +34,10 @@
       "points": 10,
       "names": {
         "ko": "탐색 중 탐색 상자 1회 수령",
-        "en": "Claim 1 exploration chest",
-        "ja": "探索の宝箱を1回受け取る",
-        "ru": "Забрать 1 сундук исследования",
-        "zh-tw": "領取探索寶箱 1 次"
+        "en": "Claim Exploration Chests 1 time(s) in Exploration",
+        "ja": "探索ボックスを1回受け取る",
+        "ru": "В ходе Приключения героев 1 р. получите ящики экспедиции.",
+        "zh-tw": "在探索中領取1次探索寶箱"
       },
       "paid": false
     },
@@ -47,11 +47,11 @@
       "unit": "claim",
       "points": 10,
       "names": {
-        "ko": "VIP 무료 패키지 1회 수령",
-        "en": "Claim the free VIP pack once",
-        "ja": "VIP無料パックを1回受け取る",
-        "ru": "Забрать бесплатный VIP-набор 1 раз",
-        "zh-tw": "領取 VIP 免費禮包 1 次"
+        "ko": "VIP 무료 패키지 수령 × 1",
+        "en": "Claim a free VIP bundle × 1",
+        "ja": "VIP無料パックを受け取る × 1",
+        "ru": "Получите бесплатный VIP-набор × 1",
+        "zh-tw": "領取VIP免費禮包 × 1"
       },
       "paid": false
     },
@@ -62,10 +62,10 @@
       "points": 10,
       "names": {
         "ko": "첩보 단서 3회 완료",
-        "en": "Complete 3 intel missions",
-        "ja": "情報ミッションを3回完了する",
-        "ru": "Выполнить 3 задания разведки",
-        "zh-tw": "完成 3 次情報任務"
+        "en": "Complete 3 Intel",
+        "ja": "情報任務を3回完了する",
+        "ru": "Выполните разведмиссий: 3",
+        "zh-tw": "完成3次情報任務線索"
       },
       "paid": false
     },
@@ -77,9 +77,9 @@
       "names": {
         "ko": "부상병 10명 치료",
         "en": "Heal 10 wounded troops",
-        "ja": "負傷兵を10人治療する",
-        "ru": "Вылечить 10 раненых бойцов",
-        "zh-tw": "治療 10 名傷兵"
+        "ja": "10人の負傷兵を治療",
+        "ru": "Вылечите раненые войска 10 р.",
+        "zh-tw": "治療10個傷兵"
       },
       "paid": false
     },
@@ -90,10 +90,10 @@
       "points": 30,
       "names": {
         "ko": "건물 1회 업그레이드",
-        "en": "Upgrade a building once",
-        "ja": "建物を1回アップグレードする",
-        "ru": "Улучшить здание 1 раз",
-        "zh-tw": "升級建築 1 次"
+        "en": "Upgrade buildings 1 time(s)",
+        "ja": "建物を1回Lvアップする",
+        "ru": "Улучшите здания 1 р.",
+        "zh-tw": "升級1次建築"
       },
       "paid": false
     },
@@ -104,10 +104,10 @@
       "points": 30,
       "names": {
         "ko": "기술 1회 연구",
-        "en": "Research a technology once",
-        "ja": "技術を1回研究する",
-        "ru": "Исследовать технологию 1 раз",
-        "zh-tw": "研究科技 1 次"
+        "en": "Research tech 1 time(s)",
+        "ja": "研究を1回行う",
+        "ru": "Исследуйте технологию 1 р.",
+        "zh-tw": "研究1次科技"
       },
       "paid": false
     },
@@ -118,10 +118,10 @@
       "points": 10,
       "names": {
         "ko": "동맹 기부 15회",
-        "en": "Make 15 alliance donations",
-        "ja": "同盟に15回寄付する",
-        "ru": "Сделать 15 пожертвований альянсу",
-        "zh-tw": "進行 15 次聯盟捐獻"
+        "en": "Make 15 Alliance Donation(s)",
+        "ja": "同盟寄付を15回行う",
+        "ru": "Сделайте пожертвование для союза 15 р.",
+        "zh-tw": "聯盟捐獻15次"
       },
       "paid": false
     },
@@ -132,10 +132,10 @@
       "points": 10,
       "names": {
         "ko": "영웅 모집 1회 완료",
-        "en": "Recruit a hero once",
+        "en": "Perform Hero Recruitment 1 time(s)",
         "ja": "英雄募集を1回行う",
-        "ru": "Провести вербовку героя 1 раз",
-        "zh-tw": "完成英雄招募 1 次"
+        "ru": "Выполните призыв героя 1 р.",
+        "zh-tw": "完成1次英雄招募"
       },
       "paid": false
     },
@@ -146,10 +146,10 @@
       "points": 20,
       "names": {
         "ko": "병사 50명 훈련",
-        "en": "Train 50 troops",
+        "en": "Train 50 soldiers",
         "ja": "兵士を50人訓練する",
-        "ru": "Обучить 50 бойцов",
-        "zh-tw": "訓練 50 名士兵"
+        "ru": "Обучите солдат (50)",
+        "zh-tw": "訓練50名士兵"
       },
       "paid": false
     },
@@ -160,10 +160,10 @@
       "points": 10,
       "names": {
         "ko": "가속 1회 사용",
-        "en": "Use a speedup once",
-        "ja": "加速を1回使う",
-        "ru": "Использовать ускорение 1 раз",
-        "zh-tw": "使用加速 1 次"
+        "en": "Use speedup items 1 time(s)",
+        "ja": "加速を1回使用する",
+        "ru": "Используйте ускорители 1 р.",
+        "zh-tw": "使用1次加速"
       },
       "paid": false
     },
@@ -174,10 +174,10 @@
       "points": 10,
       "names": {
         "ko": "타이머 도움 5회",
-        "en": "Provide timer help 5 times",
-        "ja": "タイマー短縮を5回支援する",
-        "ru": "Помочь сократить таймер 5 раз",
-        "zh-tw": "提供計時器協助 5 次"
+        "en": "Complete timer help 5 time(s)",
+        "ja": "同盟支援を5回行う",
+        "ru": "Помогите с таймером 5 р.",
+        "zh-tw": "聯盟互助5次"
       },
       "paid": false
     },
@@ -188,10 +188,10 @@
       "points": 10,
       "names": {
         "ko": "감염자 보스 1회 처치",
-        "en": "Defeat an infected boss once",
-        "ja": "感染者ボスを1回倒す",
-        "ru": "Победить заражённого босса 1 раз",
-        "zh-tw": "擊敗感染者首領 1 次"
+        "en": "Defeat 1 Infected Fiend(s)",
+        "ja": "メガゾンビを1回倒す",
+        "ru": "Победите нечестивых зараженных: 1",
+        "zh-tw": "擊敗喪屍首領1次"
       },
       "paid": false
     },
@@ -202,10 +202,10 @@
       "points": 10,
       "names": {
         "ko": "아레나 중 다른 유저에게 1회 도전",
-        "en": "Challenge another player in the arena once",
-        "ja": "アリーナで他のプレイヤーに1回挑戦する",
-        "ru": "Вызвать другого игрока на арене 1 раз",
-        "zh-tw": "在競技場挑戰其他玩家 1 次"
+        "en": "Challenge another player in Arena 1 time(s)",
+        "ja": "デュエルで他のプレイヤーに1回挑戦する",
+        "ru": "Сразитесь с другим игроком на арене 1 р.",
+        "zh-tw": "在競技中挑戰其他玩家1次"
       },
       "paid": false
     },
@@ -216,10 +216,10 @@
       "points": 50,
       "names": {
         "ko": "1회 결제",
-        "en": "Make 1 purchase",
-        "ja": "1回購入する",
-        "ru": "Совершить 1 покупку",
-        "zh-tw": "付費購買 1 次"
+        "en": "Make 1 purchase(s)",
+        "ja": "パックを1回購入する",
+        "ru": "Совершить покупок: 1",
+        "zh-tw": "任意付費1次"
       },
       "paid": true
     },
@@ -230,10 +230,10 @@
       "points": 20,
       "names": {
         "ko": "다른 플레이어의 파견 미션 1회 탈취",
-        "en": "Raid another player’s dispatch mission once",
-        "ja": "他のプレイヤーの派遣ミッションを1回襲撃する",
-        "ru": "Перехватить задание отправки другого игрока 1 раз",
-        "zh-tw": "搶奪其他玩家的派遣任務 1 次"
+        "en": "Raid 1 Dispatch task(s) from others.",
+        "ja": "派遣任務で1回強奪する",
+        "ru": "Устройте рейд на чужие отправки: 1.",
+        "zh-tw": "攔截其他玩家的派遣任務1次"
       },
       "paid": false
     },
@@ -244,10 +244,10 @@
       "points": 20,
       "names": {
         "ko": "다른 플레이어 종말의 운송 1회 약탈",
-        "en": "Plunder another player’s transport once",
-        "ja": "他のプレイヤーの輸送を1回略奪する",
-        "ru": "Ограбить транспорт другого игрока 1 раз",
-        "zh-tw": "掠奪其他玩家的運輸 1 次"
+        "en": "Loot 1 Doomsday Express task(s) from others.",
+        "ja": "終末エクスプレスで1回強奪する",
+        "ru": "Захватите трофеи чужого экспресса Судного дня: 1.",
+        "zh-tw": "攔截其他玩家的末日快遞1次"
       },
       "paid": false
     },
@@ -258,10 +258,10 @@
       "points": 30,
       "names": {
         "ko": "가속 누적 120분 사용",
-        "en": "Use a total of 120 minutes of speedups",
-        "ja": "加速を合計120分使う",
-        "ru": "Использовать ускорения на 120 минут суммарно",
-        "zh-tw": "累計使用 120 分鐘加速"
+        "en": "Use Speedups totaling 120 minutes.",
+        "ja": "累計120分の加速を使用",
+        "ru": "Используйте ускорители на 120 мин.",
+        "zh-tw": "累計使用120分鐘加速"
       },
       "paid": false
     }

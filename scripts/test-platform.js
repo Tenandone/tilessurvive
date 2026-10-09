@@ -5,6 +5,8 @@ const fs = require("fs"),
 const { parseHTML } = require("linkedom");
 const math = require("../js/platform-math");
 const {exactEditorialReplacement}=require('./ux-301-test-allowances');
+const reviewed=require('./foundation-40-test-allowances');
+const officialLabels=require('./lib/official-locales-40');
 const root = path.resolve(__dirname, "..");
 let baseline = path.resolve(process.argv[2] || "../renewal");
 if (!fs.existsSync(baseline)) {
@@ -156,9 +158,17 @@ for (const l of langs)
           check(d.querySelectorAll('[data-lootbar-slot="hero_detail"]').length===1&&banner?.querySelector('a[href]')?.href===heroCTA.querySelector('a[href]')?.href,'Legacy hero ad replaced with preserved referral '+route);
           continue;
         }
+        let expected=reviewed.localized(value,rel.replaceAll('\\','/'));
+        if (/\/heroes\/$/.test(route)&&node.localName==='h3') {
+          const card=node.closest('.hero-item'),link=node.closest('a[href]')||[...card?.querySelectorAll('a[href]')||[]].find(a=>a.closest('.hero-item')===card);
+          const href=link?.getAttribute('href');
+          let entity=officialLabels.entries(l).find(entry=>entry.route===href);
+          if(!entity&&href===`/${l}/heroes/cnay/`){const alias=parseHTML(fs.readFileSync(path.join(root,l,'heroes/cnay/index.html'),'utf8')).document;const canonical=new URL(alias.querySelector('link[rel=canonical]').href).pathname;check(canonical===`/${l}/heroes/candy/`,'Existing cnay alias still identifies Candy '+l);entity=officialLabels.entries(l).find(entry=>entry.route===canonical);}
+          if(entity)expected=officialLabels.replaceLabels(expected,entity.namePairs);
+        }
         if (value)
           check(
-            content.includes(value),
+            content.includes(expected),
             "Game text removed " + route + " " + value.slice(0, 100),
           );
       }
@@ -190,9 +200,11 @@ for (const l of langs)
       if(form){const cfg=JSON.parse(form.querySelector('script[type="application/json"]').textContent);check(cfg.rows.find(r=>r.to===30)?.cost===685,'Skill-book disputed original cost '+route);check(cfg.rows.reduce((sum,r)=>sum+r.cost,0)===23505,'Skill-book cumulative cost '+route);}
       check(text(d.querySelector('main')).includes('685')&&text(d.querySelector('main')).includes('735'),'Skill-book conflict disclosed '+route);
     }
-    const originalTables=tableData(old).map(rows=>rows.map(row=>row.map(cell=>route.endsWith('/database/skill-book/')&&cell==='19,850'?'23,505':cell)));
+    const originalTables=tableData(old).map(rows=>reviewed.expectedRows(rows.map(row=>row.map(cell=>route.endsWith('/database/skill-book/')&&cell==='19,850'?'23,505':cell)),rel.replaceAll('\\','/')));
     const currentTables=tableData(d).filter((_,i) => {
       const table=d.querySelectorAll('main table')[i];
+      // These exact four Lagnar additions are checked from pinned source models below.
+      if(route.endsWith('/heroes/lagnar/')&&table.closest('#skill-level-comparison-40,#sea-exclusive-gear-levels'))return false;
       // Newly sourced pet acquisition and growth tables have their own 2.2/3.0
       // source parity checks. The 2.0 pet hub had no table at all.
       return !table.closest('#pet-growth,.ts-database-22') && !(route.endsWith('/database/pet-system/')&&originalTables.length===0);
@@ -303,11 +315,14 @@ for (const f of walk(path.join(baseline, "img"))) {
 }
 for (const f of walk(path.join(baseline, "data")).filter(
   (f) => f.endsWith(".json") && !f.endsWith("search-index.json"),
-))
+)) {
+  const relative=path.relative(baseline,f).replaceAll('\\','/');
+  if(reviewed.deletedDrafts[relative]) {check(!fs.existsSync(path.join(root,relative))&&textHash(f)===reviewed.deletedDrafts[relative], 'Only exact hash-pinned unused draft removed '+relative);continue;}
   check(
     textHash(f) === textHash(path.join(root, path.relative(baseline, f))),
     "Game JSON changed " + f,
   );
+}
 check(
   textHash(path.join(root, "js/tools-speedup-calculator.js")) ===
     textHash(path.join(baseline, "js/tools-speedup-calculator.js")),
@@ -378,6 +393,10 @@ check(
   /@media\s*\(prefers-reduced-motion:\s*reduce\)/.test(css),
   "Reduced motion rule missing",
 );
+for(const lang of langs){const d=documents.get(`/${lang}/heroes/lagnar/`);check(d.querySelectorAll('#skill-level-comparison-40 table').length===2&&d.querySelectorAll('#sea-exclusive-gear-levels table').length===2,'Exactly four reviewed Lagnar comparison tables '+lang);}
+for(const script of ['test-hero-skill-levels-40.js','test-sea-hero-growth-40.js']){
+  try{require('child_process').execFileSync(process.execPath,[path.join(__dirname,script)],{cwd:root,stdio:'pipe'});check(true,'');}catch(error){check(false,'Exact source/HTML validation for approved Lagnar additions '+script+': '+String(error.stderr||error.message));}
+}
 const result = { checks, pages: urls.size, tables, errors };
 const out = process.env.TS_TEST_RESULT;
 if (out) fs.writeFileSync(out, JSON.stringify(result, null, 2));

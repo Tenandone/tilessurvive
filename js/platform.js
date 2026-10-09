@@ -88,7 +88,7 @@
       let shown = 0;
       items.forEach((i) => {
         const matches =
-          i.textContent.normalize("NFKC").toLocaleLowerCase(lang).includes(q) &&
+          (i.textContent + ' ' + (i.dataset.searchAliases || '')).normalize("NFKC").toLocaleLowerCase(lang).includes(q) &&
           (!filter.value ||
             [...i.querySelectorAll(".chip")].some(
               (c) => c.textContent.trim() === filter.value,

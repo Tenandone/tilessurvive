@@ -38,7 +38,7 @@
         (!filter.value || i.type === filter.value) &&
         terms.every((v) =>
           normalize(
-            i.title + " " + i.description + " " + i.type + " " + i.url,
+            i.title + " " + i.description + " " + (i.aliases || '') + " " + i.type + " " + i.url,
           ).includes(v),
         ),
     );

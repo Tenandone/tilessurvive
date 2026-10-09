@@ -19,14 +19,18 @@ check(()=>{
 });
 for(const lang of langs)check(()=>{
  const route=`/${lang}/heroes/dave/`,d=parseHTML(read(lang+'/heroes/dave/index.html')).document,t=C[lang];
- assert.equal(d.querySelector('h1').textContent,t.name);assert.equal(d.querySelectorAll('h1').length,1);
+ assert.equal(d.querySelector('h1').textContent,require('../data/foundation-40/official-character-locales.json').heroes.find(hero=>hero.id==='dave').names[lang]);assert.equal(d.querySelectorAll('h1').length,1);
  assert.equal(d.querySelector('link[rel=canonical]').href,'https://tilessurvive.net'+route);
  for(const l of langs){assert(d.querySelector(`link[hreflang="${l}"]`).href.endsWith(`/${l}/heroes/dave/`));assert.equal(d.querySelector(`.ts3-language a[hreflang="${l}"]`).href,`/${l}/heroes/dave/`);}
  const ids=[...d.querySelectorAll('[id]')].map(n=>n.id);assert.equal(new Set(ids).size,ids.length);
  const rows=[...d.querySelectorAll('[data-dave-skill]')].map(r=>[...r.querySelectorAll('td')].map(c=>c.textContent.replace(',','.')));
  assert.deepEqual(rows,[['109.0%','110.0%'],['1471.50% ATK','1485.0% ATK'],['2.18%','2.20%']]);
  assert.equal(d.querySelectorAll('.ts-skill').length,4);assert(d.querySelector('#dave-skill-specialty').textContent.includes(t.specialty));
- assert(d.querySelector('main').textContent.includes(t.combatNote));assert(d.querySelector('main').textContent.includes(t.condition));
+ assert(d.querySelector('main').textContent.includes(t.combatNote));
+ const capContext={ko:'예시 화면의 스킬 상한은 Lv.20입니다.',en:'The example screen has a Lv.20 skill cap.',ja:'参考画面のスキル上限はLv.20です。',ru:'На примере экрана предел навыка — ур.20.','zh-tw':'範例畫面的技能上限為Lv.20。'};
+ const skillBlock=d.querySelector('[data-sea-growth="skills"]'),condition=capContext[lang]+' '+require('../data/foundation-40/sea-hero-growth-copy')[lang].skillCondition;
+ assert(skillBlock);assert([...skillBlock.querySelectorAll('p')].some(p=>p.textContent===condition));
+ assert(![...d.querySelectorAll('main p')].some(p=>p.textContent===t.condition),'Only the obsolete Lv.10→11 preview paragraph is replaced by the scoped Lv.20 example and unlocked-level condition');
  const image=d.querySelector('.ts3-character-art img');assert.equal(image.src,D.image);assert.equal(image.getAttribute('loading'),'eager');
  for(const [i,panel]of [...d.querySelectorAll('.ts-skill')].entries()){assert.equal(panel.querySelector('summary').querySelectorAll('img').length,1);assert.equal(panel.querySelector('summary img').src,'/img/game-40/skills/dave-'+(i+1)+'.webp');}
  const banner=d.querySelector('.ts-lootbar-slot--hero'),source=parseHTML(read(lang+'/heroes/undine/index.html')).document.querySelector('.ts-lootbar-slot--hero');

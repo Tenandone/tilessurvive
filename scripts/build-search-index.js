@@ -4,6 +4,8 @@ const path = require("node:path");
 const ROOT = path.resolve(__dirname, "..");
 const LANGS = ["ko", "en", "ja", "ru", "zh-tw"];
 const items = [];
+const officialCharacters = require('./lib/official-locales-40');
+const characterRoutes = new Map(LANGS.flatMap(lang => officialCharacters.entries(lang).map(entry => [entry.route, entry])));
 
 function decode(value) {
   return String(value || "")
@@ -35,7 +37,12 @@ for (const language of LANGS) {
         const description = decode((html.match(/<meta\s+name=["']description["'][^>]+content=["']([^"']+)/i) || [])[1]);
         const relative = path.relative(ROOT, full).replace(/\\/g, "/").replace(/index\.html$/, "");
         const parts = relative.split("/").filter(Boolean);
-        if (title) items.push({ language, type: pageType(parts), title, description, url: `/${relative}` });
+        if (title) {
+          const item={ language, type: pageType(parts), title, description, url: `/${relative}` };
+          const entity=characterRoutes.get(item.url);
+          if(entity)item.aliases=[...new Set(entity.names)].join(' ');
+          items.push(item);
+        }
       }
     }
   }

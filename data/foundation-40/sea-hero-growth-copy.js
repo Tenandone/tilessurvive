@@ -1,0 +1,15 @@
+const out={};const add=(key,...values)=>['ko','en','ja','ru','zh-tw'].forEach((lang,i)=>(out[lang]??={})[key]=values[i]);
+add('from','비교할 첫 레벨','First level','比較元のレベル','Первый уровень','第一個比較等級');
+add('to','비교할 두 번째 레벨','Second level','比較先のレベル','Второй уровень','第二個比較等級');
+add('skillAll','전체 스킬 수치 (Lv.1–40)','All skill values (Lv.1–40)','全スキル数値（Lv.1–40）','Все значения навыков (ур.1–40)','完整技能數值（Lv.1–40）');
+add('level','레벨','Level','レベル','Уровень','等級');
+add('skillCondition','스킬 상한은 성장 상태에 따라 달라집니다. Lv.21–40은 해금된 경우에만 적용됩니다. 표는 스킬 설명의 계수이며 실전 피해량이 아닙니다.','Skill caps depend on progression. Lv.21–40 applies only after unlocking. These are description coefficients, not final battle damage.','スキル上限は育成状況で変わります。Lv.21–40は解放後のみ適用されます。表はスキル説明の係数で、実戦の最終ダメージではありません。','Предел навыка зависит от развития. Ур.21–40 доступны только после открытия. Это коэффициенты описания навыка, а не итоговый урон в бою.','技能上限取決於養成進度。Lv.21–40僅在解鎖後適用。表中為技能說明係數，並非實戰最終傷害。');
+add('gearTitle','전용 장비 효과 비교','Compare exclusive gear effects','専用装備の効果比較','Сравнение эффектов личного снаряжения','專屬裝備效果比較');
+add('gearAll','전체 장비 효과 (Lv.1–15)','All gear effects (Lv.1–15)','全装備効果（Lv.1–15）','Все эффекты снаряжения (ур.1–15)','完整裝備效果（Lv.1–15）');
+add('effect','장비 효과','Gear effect','装備効果','Эффект снаряжения','裝備效果');
+add('gearCondition','해당 장비 레벨에서 적용되는 효과입니다. 단계별 비용은 포함하지 않습니다.','Effects apply at the indicated gear level. Level costs are not included.','表示された装備レベルで適用される効果です。レベル別の費用は含みません。','Эффекты действуют на указанном уровне снаряжения. Стоимость уровней не включена.','效果適用於所示裝備等級，不含各等級費用。');
+add('unlock','추가 효과 해금','Additional effect unlocks','追加効果の解放','Открытие дополнительных эффектов','額外效果解鎖');
+add('gearNote','{name} · Lv.1. 단계별 비용은 아직 제공되지 않습니다.','{name} · Lv.1. Level costs are not yet available.','{name} · Lv.1。レベル別の費用は未掲載です。','{name} · Lv.1. Стоимость уровней пока не опубликована.','{name} · Lv.1。各等級費用尚未收錄。');
+add('updated','Lv.{from}과 Lv.{to} 수치를 표시합니다.','Showing Lv.{from} and Lv.{to}.','Lv.{from}とLv.{to}の数値を表示しています。','Показаны значения ур.{from} и ур.{to}.','目前顯示Lv.{from}與Lv.{to}的數值。');
+add('invalid','표에 있는 레벨을 선택하세요.','Choose a listed level.','表にあるレベルを選んでください。','Выберите уровень из таблицы.','請選擇表中列出的等級。');
+module.exports=out;

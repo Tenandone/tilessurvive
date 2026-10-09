@@ -281,10 +281,10 @@
       "entity": "hero-skill-book",
       "kind": "item",
       "src": "/img/game-40/items/hero-skill-book.webp",
-      "width": 141,
-      "height": 148,
-      "bytes": 5240,
-      "sha256": "aa388718173c448f1400e98d3e48659ab171ab2a70ff63a6a43b7435957261ce",
+      "width": 128,
+      "height": 128,
+      "bytes": 11236,
+      "sha256": "bb63428add424bbdfbf861a9572316fac16e50ca12c922fad299dbc9b118beb1",
       "version": "2.6.200"
     },
     {
@@ -292,10 +292,10 @@
       "entity": "food-10k",
       "kind": "item",
       "src": "/img/game-40/items/food-10k.webp",
-      "width": 141,
-      "height": 144,
-      "bytes": 5276,
-      "sha256": "e361a1d43d84275c3b8cbe411fb935d0e346702ce06974a852f0d84cf1d462c2",
+      "width": 128,
+      "height": 128,
+      "bytes": 16590,
+      "sha256": "88a382935f5f1d78a8af937dc1d87b395f3b17125f76e522664ceff3405ab591",
       "version": "2.6.200"
     },
     {
@@ -303,10 +303,10 @@
       "entity": "wood-10k",
       "kind": "item",
       "src": "/img/game-40/items/wood-10k.webp",
-      "width": 141,
-      "height": 142,
-      "bytes": 4384,
-      "sha256": "ffa32b04da2f16b850b1b4efbd75713c4c64a1a1a04e673c8c562996e8d0c467",
+      "width": 128,
+      "height": 128,
+      "bytes": 13204,
+      "sha256": "9ca5b6762c0daa417fe60a4034d0c8657af6b00b02106015c0aabb26a6bc6c4a",
       "version": "2.6.200"
     },
     {
@@ -314,10 +314,10 @@
       "entity": "metal-10k",
       "kind": "item",
       "src": "/img/game-40/items/metal-10k.webp",
-      "width": 141,
-      "height": 143,
-      "bytes": 4724,
-      "sha256": "6f2c814742c02325459ab61c4b987b6972d93aef29624d19911c8592b4aba2ce",
+      "width": 128,
+      "height": 128,
+      "bytes": 13212,
+      "sha256": "caf38b9f8c3392913dcf47022ee2ec91aaa16b8cb5bfeb3b24a15da9a8904e3d",
       "version": "2.6.200"
     },
     {
@@ -325,10 +325,10 @@
       "entity": "food-100k",
       "kind": "item",
       "src": "/img/game-40/items/food-100k.webp",
-      "width": 200,
-      "height": 205,
-      "bytes": 9620,
-      "sha256": "8528a1658011ab24e4ce846c2abe02f9fff99d161aad994b786ecb31a888ef06",
+      "width": 128,
+      "height": 128,
+      "bytes": 18134,
+      "sha256": "84cca8cfe82c711fb3da29515160b4b6ecde395dede8d5252fa3e2c6e6e1b1b8",
       "version": "2.6.200"
     }
   ]

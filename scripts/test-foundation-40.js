@@ -132,7 +132,7 @@ function verifyHeroAdditions(d, file) {
   if (!hero) { check(!skill && !gear, 'No unapproved hero comparison ' + file); return []; }
   const number = s => lang === 'ru' ? String(s).replace('.', ',') : String(s);
   const value = (row, key) => (row.unit === 'percent-bonus' ? '+' : '') + number(row[key]) + (row.unit === 'percent-atk' ? '% ATK' : '%');
-  const expected = hero.rows.map(r => [norm(r.name[lang]), value(r, 'current'), value(r, 'next')]);
+  const expected = delta.localized(hero.rows.map(r => [norm(r.name[lang]), value(r, 'current'), value(r, 'next')]),file);
   const rowTexts = node => [...node?.querySelectorAll('tbody tr') || []].map(r => [...r.children].map(text));
   check(same(rowTexts(skill?.querySelector('table')), expected), 'Exact original three scoped skill rows ' + file);
   const model=heroLevels.heroes.find(h=>h.id===hero.id), copy=heroCopy[lang];
@@ -141,7 +141,7 @@ function verifyHeroAdditions(d, file) {
   check(same(rowTexts(skill?.querySelector('[data-hero-levels-40="table"]')),levelRows),'Exactly forty explicit skill levels '+file);
   const selectors=[...skill.querySelectorAll('[data-skill-level-compare] select')];
   check(selectors.length===2&&selectors.every(s=>same([...s.querySelectorAll('option')].map(o=>Number(o.value)),Array.from({length:40},(_,i)=>i+1))),'Two forty-level selectors '+file);
-  check(same(JSON.parse(d.getElementById('hero-skill-levels-data')?.textContent||'{}'),{hero:model,copy}),'Exact curated level client payload '+file);
+  check(same(JSON.parse(d.getElementById('hero-skill-levels-data')?.textContent||'{}'),delta.localized({hero:model,copy},file)),'Exact curated level client payload with reviewed official labels '+file);
   expected.push(...levelRows);
   if (hero.gear) {
     const gearRows = hero.gear.rows.map(r => [norm(r.label[lang]), number(r.current), number(r.preview)]);
@@ -152,6 +152,11 @@ function verifyHeroAdditions(d, file) {
     const allGear=heroGear.levels.map(r=>[String(r.level),...['attack','defense','hp','power'].map(k=>gearNumber(r[k])),'+'+gearNumber(r.frontDefense)+'%','+'+gearNumber(r.backAttack)+'%']);
     check(same(rowTexts(gear.querySelector('[data-hero-levels-40="gear"]')),allGear),'Exactly fifteen explicit gear rows '+file);expected.push(...allGear);
   } else check(!gear, 'No unobserved equipment table ' + file);
+  if(hero.id==='lagnar'){
+    const gearModel=require('../data/foundation-40/sea-hero-growth.json').gears.find(g=>g.id==='lagnar'),math=require('../js/sea-hero-growth-40'),name=require('../data/foundation-40/official-character-locales.json').heroes.find(h=>h.id==='lagnar').gear.skillName[lang];
+    const added=[[name,math.format(gearModel.descriptionTemplate[lang],gearModel.levels[0].args),math.format(gearModel.descriptionTemplate[lang],gearModel.levels[14].args)],...gearModel.levels.map(r=>[String(r.level),math.format(gearModel.descriptionTemplate[lang],r.args)])].map(r=>r.map(norm));
+    check(same(rowTexts(d.querySelector('[data-sea-growth="gear"]')),added),'Exactly scoped 15 Lagnar gear levels plus one endpoint comparison '+file);expected.push(...added);
+  }
   return expected;
 }
 function verifyPage(file, old) {
@@ -179,7 +184,7 @@ function verifyPage(file, old) {
   }
   if (file === `${lang}/database/pet-system/index.html`) {
     const scope = d.getElementById('pet-exp-scope-40'), form = d.querySelector('[data-growth-form="petExp"]');
-    check(d.querySelectorAll('#pet-exp-scope-40').length === 1 && text(scope)===norm(require('../data/foundation-40/pet-growth-copy')[lang].limits), 'Exact Starhorn-only extended EXP scope survives build ' + route);
+    check(d.querySelectorAll('#pet-exp-scope-40').length === 1 && text(scope)===norm(delta.petExpScope(file)), 'Exact seven-pet EXP scope with default Starhorn and Starhorn-only training ' + route);
     check(form?.getAttribute('aria-describedby')?.split(/\s+/).includes('pet-exp-scope-40'), 'EXP scope associated with existing form ' + route);
   }
   const observedPet = dataPet.pets.find(p => file === `${lang}/database/pet-system/${p.id}/index.html`);
@@ -187,7 +192,7 @@ function verifyPage(file, old) {
     const points = [...d.querySelectorAll('[data-pet-exp-point-40]')], exp = observedPet.expObservation;
     check(points.length === 1 && points[0].getAttribute('data-pet-exp-point-40') === observedPet.id && text(points[0]) === `Lv.${exp.level} → ${exp.level + 1}: ${exp.threshold.toLocaleString('en-US')} EXP`, 'Exact single observed pet EXP point survives build ' + route);
   }
-  const allowedNewRows = verifyHeroAdditions(d, file);
+  const allowedNewRows = [...verifyHeroAdditions(d, file),...delta.petExpRows(file)];
   if (['events/index.html','tools/index.html'].includes(file.slice(lang.length + 1))) {
     const entries = [...d.querySelectorAll('[data-daily-missions-entry] a')];
     check(entries.length === 1 && entries[0].href === `/${lang}/events/daily-missions/` && text(entries[0]) === norm(dailyCopy[lang].title + ' →'), 'One localized daily-mission entry on existing hub ' + route);
@@ -214,11 +219,11 @@ function verifyPage(file, old) {
       check(expectedMeta.title === before && expectedMeta.ogTitle === before, 'Exact Undine name baseline');
       expectedMeta.title = after; expectedMeta.ogTitle = after;
       for (const page of expectedMeta.webPages) { check(page.name === before, 'Exact Undine WebPage name baseline'); page.name = after; }
-      check(text(d.querySelector('h1')) === '운디네 (Undine)', 'Observed Korean Undine H1');
+      check(text(d.querySelector('h1')) === require('../data/foundation-40/official-character-locales.json').heroes.find(h=>h.id==='undine').names.ko, 'Official Korean Undine H1');
       check(![...d.querySelectorAll('main p')].some(p => text(p) === '이름은 영문 게임 표기 기준입니다.'), 'Obsolete English-name-only warning removed');
       allowances.push({ file, fields: ['h1', 'title', 'og:title', 'WebPage.name'], from: 'Undine', to: '운디네 (Undine)', evidence: 'undine-korean-name-evidence.json; screenshots 010 and 014' });
     }
-    check(same(metadata(d), expectedMeta), 'Exact SEO metadata/canonical/hreflang ' + route);
+    check(same(metadata(d), delta.localized(expectedMeta,file)), 'Exact SEO metadata/canonical/hreflang with scoped official labels ' + route);
     const oldRows = delta.expectedRows(rows(old),file,true), currentRows = rows(d);
     const actual = new Map(); for (const row of currentRows) actual.set(JSON.stringify(row), (actual.get(JSON.stringify(row)) || 0) + 1);
     for (const row of [...oldRows, ...allowedNewRows]) {
@@ -231,7 +236,7 @@ function verifyPage(file, old) {
     check(same(forms(d), delta.forms(forms(old),file)), 'Exact existing calculator configs with only reviewed Starhorn rows ' + route); counts.growthForms += forms(old).length;
     for (const selector of ['main .ts-skill-body', '[data-stage-picker]', 'main .stat-card,main .equipment-stat,main .ts-data-strip', 'main .ts3-character-identity']) {
       const current = new Set([...d.querySelectorAll(selector)].map(text));
-      for (const n of old.querySelectorAll(selector)) check(current.has(selector.includes('identity') ? expectedIdentity(n, file) : delta.text(text(n),file,'skills')), 'Existing game block preserved ' + route + ' ' + text(n).slice(0, 100));
+      for (const n of old.querySelectorAll(selector)) check(current.has(selector.includes('identity') ? delta.identity(n, file) : delta.text(text(n),file,'skills')), 'Existing game block preserved ' + route + ' ' + text(n).slice(0, 100));
     }
     const imageList = [...d.querySelectorAll('main img')].map(n => n.getAttribute('src'));
     for (const n of old.querySelectorAll('main img')) { counts.legacyImages++; check(imageList.includes(delta.image(file,n.getAttribute('src'))), 'Original or exact approved game artwork destination ' + route + ' ' + n.getAttribute('src')); }
@@ -336,7 +341,7 @@ for (const file of protectedFiles) {
   if(delta.deletedDrafts[file]){check(!fs.existsSync(path.join(root,file))&&hash(fs.readFileSync(path.join(baseline,file)))===delta.deletedDrafts[file],'Exact privately backed-up unused draft deletion '+file);continue;}
   if (!check(fs.existsSync(path.join(root, file)), 'Protected file exists ' + file)) continue;
   if(['data/companions.json','data/expansion-22/database.json','data/expansion-22/ledger.json','data/expansion-22/manifest.json'].includes(file))check(require('util').isDeepStrictEqual(json(root,file),delta.source(file,json(baseline,file))),'Only exact approved source/provenance fields '+file);
-  else check(hash(fs.readFileSync(path.join(root, file))) === hash(fs.readFileSync(path.join(baseline, file))), 'Protected formula/data/artwork/style/config hash ' + file);
+  else {const reviewed=delta.reviewedScript(file,read(baseline,file));check(hash(fs.readFileSync(path.join(root, file))) === hash(reviewed===null?fs.readFileSync(path.join(baseline, file)):reviewed), reviewed===null?'Protected formula/data/artwork/style/config hash '+file:'Only exact alias haystack expression changed '+file);}
 }
 const expectedCopy = JSON.parse(JSON.stringify(require(path.join(baseline, 'data/expansion-22/copy.js'))));
 for (const lang of langs) expectedCopy[lang].arcadiaText = arcadiaText(expectedCopy[lang].arcadiaText, lang);
@@ -361,12 +366,12 @@ for (const lang of langs) for (const item of explorer.items) {
   check(!!load(path.join(root, lang, 'database/items/index.html')).getElementById(item.id), 'Item search anchor destination ' + url);
 }
 check(same(search.items.map(item => item.url).sort(), [...searchOld.items.map(item => item.url), ...addedPages.map(routeFor), ...langs.flatMap(lang => explorer.items.map(item => `/${lang}/database/items/#${item.id}`))].sort()), 'Search adds only fifteen pages and forty curated item anchors');
-for (const file of ['js/foundation-40.js', 'js/foundation-40-math.js', 'js/daily-missions-40.js']) {
+for (const file of ['js/foundation-40.js', 'js/foundation-40-math.js', 'js/daily-missions-40.js','js/pet-exp-profiles-40.js','js/sea-hero-growth-40.js']) {
   try { new vm.Script(read(root, file)); counts.scriptSyntax++; check(true, ''); } catch (e) { check(false, 'New JS syntax ' + file + ': ' + e.message); }
 }
 check(counts.baselinePages === 473 && counts.newPages === 20, '473 preserved language pages and twenty approved new pages');
 check(counts.heroBanners === 140, '135 preserved plus five approved Dave hero banner placements');
-for(const [script,args]of [['test-hero-skill-levels-40.js',[]],['test-dave-40.js',[]],['test-pet-growth-40.js',['--source-only']]]){
+for(const [script,args]of [['test-hero-skill-levels-40.js',[]],['test-dave-40.js',[]],['test-pet-growth-40.js',['--source-only']],['test-official-locales-40.js',[]],['test-pet-exp-profiles-40.js',[]],['test-sea-hero-growth-40.js',[]]]){
  try{execFileSync(process.execPath,[path.join(__dirname,script),...args],{cwd:root,encoding:'utf8'});check(true,'');}catch(e){check(false,'Exact reviewed model and component checks '+script+': '+String(e.stdout||e.message).slice(-1500));}
 }
 const result = { release, checkedAt: new Date().toISOString(), checks, counts, allowances, baselineCheckoutLineEndings, errors, passed: errors.length === 0, scope: 'Static and source regression against immutable 9ab98dc. Existing routes, exact canonical/hreflang, numerical rows, calculator configs and formula hashes, coupon logic, art and affiliate markup. New page JSON/search/sitemap/link/syntax validation. No browser/mobile/production/purchase claims.' };

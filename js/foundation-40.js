@@ -57,7 +57,7 @@
       const category = filters.elements.category.value;
       let count = 0;
       for (const entry of entries) {
-        const matches = (!query || entry.textContent.toLocaleLowerCase().includes(query)) && (!category || entry.dataset.category === category);
+        const matches = (!query || (entry.textContent + ' ' + (entry.dataset.searchAliases || '')).toLocaleLowerCase().includes(query)) && (!category || entry.dataset.category === category);
         entry.hidden = !matches; if (matches) count++;
       }
       document.querySelector('[data-item-count]').textContent = t.results.replace('{n}', fmt(count));
