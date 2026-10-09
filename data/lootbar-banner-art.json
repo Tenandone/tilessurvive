@@ -1,0 +1,19 @@
+{
+  "page": "https://tilesurvivegame.com/en",
+  "retrieved": "2026-10-09",
+  "treatment": "Original artwork, WebP encoding only. CSS composition and live HTML localization; no generated characters.",
+  "assets": [
+    {
+      "file": "img/banners/official-world.webp",
+      "source": "https://d15h26rducpaui.cloudfront.net/kg-face/dev/ss_d/declaration/74e80c5e78c4e2ddc4f87ba9abc82f05.jpg"
+    },
+    {
+      "file": "img/banners/official-hero.webp",
+      "source": "https://d15h26rducpaui.cloudfront.net/kg-face/dev/ss_d/hero/40eff3dabf93b3df82a60ec2c3341244.png"
+    },
+    {
+      "file": "img/banners/official-logo.webp",
+      "source": "https://kg-web-cdn.akamaized.net/prod/official-website/sd-official-website/dist/public/logo.png"
+    }
+  ]
+}
