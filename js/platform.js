@@ -149,6 +149,9 @@
       (c) => c.textContent.trim(),
     );
     if (!headers.length) return;
+    // Legacy building templates hide their entire table host on mobile.
+    // Enhanced controls and the selected-row view must remain available there.
+    table.closest('.desktop-only')?.classList.add('ts-enhanced-host');
     const wrap = table.parentElement,
       controls = make("div", "ts-controls"),
       select = make("select"),

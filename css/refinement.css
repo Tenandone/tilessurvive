@@ -74,6 +74,10 @@ html.ts-platform[data-section=home] .ts-quick{border-radius:0}
 html.ts-platform[data-section=guides] .section-card{max-width:920px}
 html.ts-platform[data-section=guides] .content-card{border:0;border-bottom:1px solid var(--ts-line);border-radius:0;padding:16px 0;background:transparent}
 html.ts-platform[data-section=buildings] .section-card{padding:0}
+html.ts-platform .table-wrap.ts-enhanced-host{display:block;overflow:visible}
+html.ts-platform .ts-enhanced-host~:is(.mobile-upgrade-list,.mobile-skill-levels){display:none}
+html.ts-platform[data-section=buildings] .hero-grid>.hero-thumb{order:2;width:100%;max-width:240px;justify-self:end}
+html.ts-platform[data-section=buildings] .hero-grid>div:not(.hero-thumb){order:1;min-width:0}
 html.ts-platform table{font-variant-numeric:tabular-nums}
 html.ts-platform .breadcrumb a{ text-decoration:underline; text-underline-offset:3px }
 html.ts-platform :is(.hero,.hero-card) h1{color:var(--ts-ink)}
@@ -88,6 +92,8 @@ html.ts-platform .hero-item .hero-thumb{background:#e8ece8}
 html.ts-platform .hero-item .hero-body{padding:12px}
 html.ts-platform .hero-item .hero-body h3{font-size:18px}
 @media(max-width:768px){
+ html.ts-platform[data-section=buildings] .hero .hero-grid{grid-template-columns:minmax(0,1fr);gap:20px}
+ html.ts-platform[data-section=buildings] .hero-grid>.hero-thumb{order:0;max-width:130px;justify-self:start}
  html.ts-platform .summary-grid{grid-template-columns:1fr 1fr}
  html.ts-platform .summary-card:first-child{grid-column:1/-1;border-left:0;border-bottom:1px solid var(--ts-line);padding-bottom:12px;margin-bottom:8px}
  html.ts-platform .hero .hero-grid{grid-template-columns:minmax(0,1fr) 150px;gap:20px}
@@ -100,6 +106,7 @@ html.ts-platform .hero-item .hero-body h3{font-size:18px}
  .ts-discovery{gap:16px}.ts-discovery>a{grid-template-columns:64px minmax(0,1fr);gap:12px}.ts-discovery img{width:64px;height:80px}.ts-discovery strong{font-size:17px}
 }
 @media(max-width:430px){
+ html.ts-platform[data-section=buildings] .hero .hero-grid{grid-template-columns:minmax(0,1fr)}
  html.ts-platform .hero .hero-grid,.ts-character-intro{grid-template-columns:minmax(0,1fr) 96px;gap:14px;align-items:start}
  html.ts-platform .hero-media{order:2;justify-self:end;max-width:96px;padding:4px}
  html.ts-platform .hero-copy{order:1}.ts-character-intro>img{width:96px;justify-self:end;max-height:170px}

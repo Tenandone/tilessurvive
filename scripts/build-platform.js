@@ -202,7 +202,7 @@ for (const p of pages) {
     'script[src="/js/layout.js"],script[src="/js/site-search.js"],script[src="/js/affiliate-tracking.js"],link[href^="/css/platform.css"],link[href^="/css/refinement.css"],script[data-platform]',
   ).forEach((n) => n.remove());
   d.head.appendChild(
-    make('<link rel="stylesheet" href="/css/platform.css?v=5"><link rel="stylesheet" href="/css/refinement.css?v=1">'),
+    make('<link rel="stylesheet" href="/css/platform.css?v=5"><link rel="stylesheet" href="/css/refinement.css?v=2">'),
   );
   for (const style of [...d.querySelectorAll("style")]) {
     const css = style.textContent;
@@ -226,7 +226,7 @@ for (const p of pages) {
     "refinement",
   ])
     d.body.appendChild(
-      make(`<script data-platform src="/js/${name}.js?v=${name === 'platform-math' ? 3 : 2}" defer></script>`),
+      make(`<script data-platform src="/js/${name}.js?v=${['platform-math', 'platform'].includes(name) ? 3 : 2}" defer></script>`),
     );
   // Replace unavailable social image references with an existing page image.
   for (const meta of d.querySelectorAll(
