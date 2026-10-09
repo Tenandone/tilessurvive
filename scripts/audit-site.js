@@ -39,7 +39,10 @@ function auditHtml(file) {
     if (!/<meta\s+name=["']description["'][^>]+content=["'][^"']+/i.test(text)) issues.push("missing description");
     if (!/<link\s+rel=["']canonical["'][^>]+href=/i.test(text)) issues.push("missing canonical");
     if (count(/<h1\b/gi, text) !== 1) issues.push(`h1 count ${count(/<h1\b/gi, text)}`);
-    if (!/hreflang=["']x-default["']/i.test(text)) issues.push("missing x-default hreflang");
+    const canonical = text.match(/<link\s+rel=["']canonical["'][^>]+href=["']([^"']+)/i)?.[1];
+    const ownUrl = 'https://tilessurvive.net/' + rel.replace(/index\.html$/, '');
+    // Alternate-canonical aliases do not belong in reciprocal language groups.
+    if (canonical === ownUrl && !/hreflang=["']x-default["']/i.test(text)) issues.push("missing x-default hreflang");
   }
 
   for (const block of text.matchAll(/<script[^>]+type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)) {

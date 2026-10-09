@@ -4,6 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "node scripts/build-platform.js && node scripts/build-search-index.js && node scripts/audit-site.js --strict",
+    "test:platform": "node scripts/test-platform.js",
     "dev": "serve . -l 3000",
     "audit": "node scripts/audit-site.js",
     "audit:strict": "node scripts/audit-site.js --strict",
@@ -23,6 +25,8 @@
   "license": "ISC",
   "type": "commonjs",
   "devDependencies": {
+    "image-size": "^2.0.4",
+    "linkedom": "^0.18.13",
     "serve": "^14.2.6"
   }
 }
