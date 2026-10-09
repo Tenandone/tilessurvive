@@ -2,6 +2,18 @@
   "use strict";
   const expected = "https://www.lootbar.com/ko/shop/ten/top-up/tiles-survive",
     lang = document.documentElement.dataset.lang || "en";
+  function pageType() {
+    const route = location.pathname.replace(/^\/(ko|en|ja|ru|zh-tw)(?=\/)/, "");
+    if (/^\/(?:index\.html)?$/.test(route)) return "home";
+    if (/^\/heroes\/[^/]+\//.test(route)) return "hero_detail";
+    if (/^\/database\/pet-system\/[^/]+\//.test(route)) return "pet_detail";
+    if (/^\/codes\//.test(route)) return "coupon";
+    if (document.querySelector('[data-growth-form], [data-building-planner]') ||
+        /^\/tools\/speedup-calculator\//.test(route)) return "calculator";
+    if (/^\/top-up\//.test(route)) return "topup";
+    if (/^\/guides\//.test(route)) return "guide";
+    return "content";
+  }
   function kind(a) {
     if (a.href === expected) return "external";
     if (
@@ -14,11 +26,15 @@
   function emit(event, a) {
     const payload = {
       page: location.pathname,
+      page_type: pageType(),
       language: lang,
       placement: a.dataset.affiliatePlacement || "content",
+      creative_type: a.classList.contains("ts-lootbar") ? "banner" : "text_link",
+      campaign: a.dataset.affiliateCampaign || "lootbar",
+      creative_variant: a.dataset.affiliateVariant || "text",
       destination_type: kind(a),
       destination: a.href,
-      measurement_version: "2",
+      measurement_version: "3.0.1",
     };
     document.dispatchEvent(
       new CustomEvent("ts-affiliate-event", { detail: { event, ...payload } }),

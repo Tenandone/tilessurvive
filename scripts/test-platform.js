@@ -4,6 +4,7 @@ const fs = require("fs"),
   crypto = require("crypto");
 const { parseHTML } = require("linkedom");
 const math = require("../js/platform-math");
+const {exactEditorialReplacement}=require('./ux-301-test-allowances');
 const root = path.resolve(__dirname, "..");
 let baseline = path.resolve(process.argv[2] || "../renewal");
 if (!fs.existsSync(baseline)) {
@@ -140,6 +141,21 @@ for (const l of langs)
         if (/\/buildings\/$/.test(route) && node.localName === 'p' && !node.closest('.building-card') && obsoleteBuildingWorkflow.has(value)) continue;
         if (route.endsWith('/buildings/lab/') && node.parentNode.classList.contains('section-head') && obsoleteLabWorkflow.has(value)) continue;
         if (route.endsWith('/database/skill-book/') && node.hasAttribute('data-data-warning')) continue;
+        // The 3.0.1 patch reviews exact route/text replacements only. It cannot
+        // exempt an arbitrary game paragraph or numerical table from preservation.
+        const replacement=exactEditorialReplacement(rel.replaceAll('\\','/'),value);
+        if(replacement.matched){
+          check(!replacement.value||content.normalize('NFKC').includes(replacement.value),'Reviewed editorial replacement missing '+route+' '+replacement.value);
+          continue;
+        }
+        // Shark and Lagnar's old text-only advertisements are replaced by one
+        // disclosed image banner, with the exact original outbound referral.
+        const heroCTA=node.closest('section[aria-labelledby="shark-lootbar-cta"],section[aria-labelledby="lagnar-lootbar-cta"]');
+        if(heroCTA&&/^\/(ko|en|ja|ru|zh-tw)\/heroes\/(shark|lagnar)\/$/.test(route)){
+          const banner=d.querySelector('[data-lootbar-slot="hero_detail"]');
+          check(d.querySelectorAll('[data-lootbar-slot="hero_detail"]').length===1&&banner?.querySelector('a[href]')?.href===heroCTA.querySelector('a[href]')?.href,'Legacy hero ad replaced with preserved referral '+route);
+          continue;
+        }
         if (value)
           check(
             content.includes(value),

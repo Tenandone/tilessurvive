@@ -288,3 +288,8 @@ html.ts3 .ts-footer small{font-size:12px}
 @media(max-width:359px){html.ts3 .ts3-home-intro{padding-inline:18px}html.ts3 .ts3-home-intro h1{font-size:27px!important}html.ts3 .ts3-hero-shortcuts{gap:0 12px}html.ts3 .ts3-home-pets{grid-template-columns:90px 1fr;gap:14px}html.ts3 .ts3-roster{grid-template-columns:repeat(5,128px)}html.ts3 .ts3-plan-links{gap:0 16px}html.ts3 .ts3-plan-links strong{font-size:13px}}
 @media(prefers-reduced-motion:no-preference){html.ts3 main{animation:ts3-enter 200ms ease-out both}html.ts3 .ts3-search-results:not([hidden]){animation:ts3-pop 140ms ease-out}html.ts3 .ts3-header details[open] .ts-dropdown{animation:ts3-pop 140ms ease-out}html.ts3 button:active{transform:translateY(1px)}@keyframes ts3-enter{from{transform:translateY(3px)}to{transform:none}}@keyframes ts3-pop{from{opacity:0;transform:translateY(-3px)}to{opacity:1;transform:none}}}
 @media(prefers-reduced-motion:reduce){html.ts3 *,html.ts3 *:before,html.ts3 *:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}html.ts3 .ts3-roster>a:hover img{transform:none}}
+html.ts3 main .ts301-references{max-width:none;margin:22px 0 8px;border-top:1px solid #d5ded1;font-size:13px;color:#52654f}
+html.ts3 main .ts301-references>summary{min-height:44px;padding:13px 0;cursor:pointer;font-weight:600}
+html.ts3 main .ts301-references>ul{margin:0;padding:0 0 12px 20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:5px 30px}
+html.ts3 main .ts301-references li{font-size:13px;line-height:1.7;overflow-wrap:anywhere}
+html.ts3 main .ts301-references a{text-decoration:underline;text-underline-offset:3px}

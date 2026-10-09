@@ -23,3 +23,31 @@ html .ts-lootbar:focus-visible{outline:3px solid #a97a24;outline-offset:4px}
 @media(max-width:900px) and (min-width:601px){html .ts-lootbar{padding:24px}.ts-lootbar-copy{width:60%}html .ts-lootbar-hero{right:-9%;height:380px;top:18px}html .ts-lootbar-title{font-size:28px}.ts-lootbar-art::after{background:linear-gradient(90deg,rgba(13,40,32,.97),rgba(13,40,32,.83) 40%,rgba(13,40,32,.12) 80%)}}
 @media(max-width:600px){html .ts-lootbar{height:340px;padding:20px;align-items:flex-end}.ts-lootbar-copy{width:100%;max-width:none}html .ts-lootbar-logo{position:absolute;left:0;bottom:205px;width:128px;margin:0}html .ts-lootbar-hero{height:268px;right:-28px;top:8px}html .ts-lootbar-world{object-position:38% center}.ts-lootbar-art::after{z-index:2;background:linear-gradient(0deg,rgba(13,40,32,.99) 0%,rgba(13,40,32,.95) 31%,rgba(13,40,32,.42) 56%,rgba(13,40,32,.02) 82%)}html .ts-lootbar-label{font-size:10px;margin-bottom:8px}html .ts-lootbar-title{font-size:25px;line-height:1.23}html .ts-lootbar-cta{margin-top:14px;font-size:14px;padding:10px 15px;gap:22px}.ts-lootbar-slot{margin:24px 0}}
 @media(prefers-reduced-motion:reduce){html .ts-lootbar *{transition:none!important;transform:none!important}}
+/* Hero details reuse the same official artwork and composition at a quieter size. */
+.ts-lootbar-slot--hero{margin:28px 0}
+html .ts-lootbar--hero{height:206px;padding:20px 28px}
+html.ts-platform .ts-lootbar--hero:hover{text-decoration:none}
+.ts-lootbar--hero .ts-lootbar-copy{width:65%;max-width:650px}
+html .ts-lootbar--hero .ts-lootbar-logo{position:static;width:112px;margin:0 0 6px}
+html .ts-lootbar--hero .ts-lootbar-label{font-size:11px;margin-bottom:6px}
+html .ts-lootbar--hero .ts-lootbar-title{font-size:clamp(21px,2.2vw,27px);line-height:1.25;text-wrap:balance}
+html .ts-lootbar--hero .ts-lootbar-cta{min-height:44px;margin-top:12px;padding:9px 15px;font-size:14px;gap:18px}
+html .ts-lootbar--hero .ts-lootbar-hero{top:-16px;right:3%;height:290px}
+.ts-lootbar-slot--hero .ts-lootbar-note{margin-top:7px}
+@media(max-width:900px) and (min-width:601px){
+  html .ts-lootbar--hero{height:216px;padding:20px 24px}
+  .ts-lootbar--hero .ts-lootbar-copy{width:70%}
+  html .ts-lootbar--hero .ts-lootbar-hero{right:-6%;height:286px;top:-8px}
+  html .ts-lootbar--hero .ts-lootbar-title{font-size:23px}
+}
+@media(max-width:600px){
+  .ts-lootbar-slot--hero{margin:22px 0}
+  html .ts-lootbar--hero{height:242px;padding:17px 18px;align-items:flex-end}
+  .ts-lootbar--hero .ts-lootbar-copy{width:100%;max-width:none}
+  html .ts-lootbar--hero .ts-lootbar-logo{position:absolute;left:0;bottom:157px;width:92px;margin:0}
+  html .ts-lootbar--hero .ts-lootbar-hero{height:198px;right:-8px;top:-7px}
+  html .ts-lootbar--hero .ts-lootbar-label{font-size:10px;margin-bottom:6px}
+  html .ts-lootbar--hero .ts-lootbar-title{max-width:300px;font-size:21px;line-height:1.25}
+  html .ts-lootbar--hero .ts-lootbar-cta{margin-top:11px;font-size:14px}
+  .ts-lootbar--hero .ts-lootbar-art::after{background:linear-gradient(0deg,rgba(13,40,32,.99) 0%,rgba(13,40,32,.95) 41%,rgba(13,40,32,.38) 72%,rgba(13,40,32,.02) 100%)}
+}

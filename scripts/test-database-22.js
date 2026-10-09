@@ -31,6 +31,9 @@ for(const route of manifest.changed){const d=parseHTML(fs.readFileSync(path.join
 }
 // Existing images, referral settings, calculator formulas and banners are byte-preserved.
 const protectedFiles=['config/affiliate.json','js/platform-math.js','js/tools-speedup-calculator.js','js/platform-affiliate.js','data/tilessurvive-coupons.json','CNAME',...fs.readdirSync(path.join(root,'img/banners')).map(f=>'img/banners/'+f)];
-for(const f of protectedFiles){const old=execFileSync('git',['show','ef10abd:'+f],{cwd:root,maxBuffer:16000000}),now=fs.readFileSync(path.join(root,f));check(crypto.createHash('sha256').update(old).digest('hex')===crypto.createHash('sha256').update(now).digest('hex'),'Protected bytes '+f);}
+for(const f of protectedFiles){
+ // Page-type measurement is the one authorized script change in 3.0.1.
+ if(f==='js/platform-affiliate.js'){const tracking=JSON.parse(execFileSync(process.execPath,[path.join(__dirname,'test-affiliate-301.js')],{cwd:root,encoding:'utf8'}));check(tracking.checks>=72&&tracking.errors.length===0,'Affiliate measurement contract');continue;}
+ const old=execFileSync('git',['show','ef10abd:'+f],{cwd:root,maxBuffer:16000000}),now=fs.readFileSync(path.join(root,f));check(crypto.createHash('sha256').update(old).digest('hex')===crypto.createHash('sha256').update(now).digest('hex'),'Protected bytes '+f);
+}
 const result={checks,changedPages:manifest.changed.length,newPages:manifest.newPages.length,ledgerEntries:ledger.entries.length,newCostRows:79+54+1,missingPetRows:1,errors:[]};console.log(JSON.stringify(result,null,2));if(process.env.TS_DATABASE_RESULT)fs.writeFileSync(process.env.TS_DATABASE_RESULT,JSON.stringify(result,null,2));
-

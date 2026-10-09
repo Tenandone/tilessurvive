@@ -226,7 +226,7 @@ for (const p of pages) {
     "refinement",
   ])
     d.body.appendChild(
-      make(`<script data-platform src="/js/${name}.js?v=${['platform-math', 'platform'].includes(name) ? 3 : 2}" defer></script>`),
+      make(`<script data-platform src="/js/${name}.js?v=${name === 'platform-affiliate' ? '301' : name === 'platform' ? 4 : name === 'platform-math' ? 3 : 2}" defer></script>`),
     );
   // Replace unavailable social image references with an existing page image.
   for (const meta of d.querySelectorAll(

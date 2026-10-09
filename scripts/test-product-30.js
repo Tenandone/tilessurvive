@@ -115,7 +115,12 @@ for(const [route,doc]of pageDocs){
   check(!metadata[key].has(value),'Duplicate canonical '+key+' '+route+' '+metadata[key].get(value));metadata[key].set(value,route);
  }
 }
-for(const [file,sha]of Object.entries(baseline.protectedFiles)){check(fs.existsSync(path.join(root,file)),'Protected asset removed '+file);if(fs.existsSync(path.join(root,file)))check(hash(fs.readFileSync(path.join(root,file)))===sha,'Protected data/artwork changed '+file);}
+for(const [file,sha]of Object.entries(baseline.protectedFiles)){check(fs.existsSync(path.join(root,file)),'Protected asset removed '+file);if(fs.existsSync(path.join(root,file))){
+ // 3.0.1 adds page/creative dimensions to the existing tracking contract.
+ // Exercise that actual module; referral config, formulas and artwork stay byte protected.
+ if(file==='js/platform-affiliate.js'){const tracking=JSON.parse(execFileSync(process.execPath,[path.join(__dirname,'test-affiliate-301.js')],{cwd:root,encoding:'utf8'}));check(tracking.checks>=72&&tracking.errors.length===0,'Affiliate measurement contract');}
+ else check(hash(fs.readFileSync(path.join(root,file)))===sha,'Protected data/artwork changed '+file);
+}}
 const sitemap=fs.readFileSync(path.join(root,'sitemap.xml'),'utf8');for(const url of baseline.sitemap)check(sitemap.includes('<loc>'+url+'</loc>'),'Sitemap removed '+url);
 // Differential math checks against the deployed implementation; UI code is allowed
 // to change, while outputs and failure guards must remain equivalent.

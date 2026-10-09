@@ -22,7 +22,11 @@ for(const [lang,c] of Object.entries(copy))for(const type of types){
  if(type==='top-up/')check(!d.querySelector('.topup-sticky'),'No fixed CTA');
  if(type==='guides/discount-topup-promotion/')check(!d.querySelector('#widget .widget-desktop,#widget .widget-mobile,#widget iframe,#widget [data-placeholder]'),'Legacy device wrappers and overlays removed');
 }
-for(const file of ['config/affiliate.json','data/tilessurvive-coupons.json','js/platform-affiliate.js','js/platform-math.js','robots.txt','CNAME'])check(fs.readFileSync(path.join(root,file),'utf8').replace(/\r\n/g,'\n')===execFileSync('git',['show','6f9e8cf:'+file],{cwd:root,encoding:'utf8',maxBuffer:2000000}).replace(/\r\n/g,'\n'),'Preserved '+file);
+for(const file of ['config/affiliate.json','data/tilessurvive-coupons.json','js/platform-affiliate.js','js/platform-math.js','robots.txt','CNAME']){
+ // Keep the referral untouched while permitting the requested analytics dimensions.
+ if(file==='js/platform-affiliate.js'){const tracking=JSON.parse(execFileSync(process.execPath,[path.join(__dirname,'test-affiliate-301.js')],{cwd:root,encoding:'utf8'}));check(tracking.checks>=72&&tracking.errors.length===0,'Affiliate measurement contract');continue;}
+ check(fs.readFileSync(path.join(root,file),'utf8').replace(/\r\n/g,'\n')===execFileSync('git',['show','6f9e8cf:'+file],{cwd:root,encoding:'utf8',maxBuffer:2000000}).replace(/\r\n/g,'\n'),'Preserved '+file);
+}
 // Content expansion adds URLs; every pre-existing sitemap URL must survive.
 const oldMap=execFileSync('git',['show','6f9e8cf:sitemap.xml'],{cwd:root,encoding:'utf8'}),newMap=fs.readFileSync(path.join(root,'sitemap.xml'),'utf8');
 for(const url of oldMap.match(/<loc>[^<]+<\/loc>/g))check(newMap.includes(url),'Preserved sitemap URL '+url);

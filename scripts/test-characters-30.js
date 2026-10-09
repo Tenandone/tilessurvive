@@ -1,5 +1,6 @@
 const fs=require('fs'),path=require('path'),{execFileSync}=require('child_process'),{parseHTML}=require('linkedom');
 const root=path.resolve(__dirname,'..'),languages=['ko','en','ja','ru','zh-tw'];
+const {expectedSkillText}=require('./ux-301-test-allowances');
 const petIds=require('../data/companions.json').pets.map(p=>p.id),data=require('../data/expansion-22/database.json');
 let checks=0;const errors=[];
 function check(value,message){checks++;if(!value)errors.push(message);}
@@ -25,7 +26,7 @@ for(const lang of languages){
   const currentRows=rows(d);
   for(const row of rows(old))check(currentRows.includes(row),route+': original table row '+row.slice(0,80));
   const skillText=[...main.querySelectorAll('.ts-skill-body')].map(n=>norm(n.textContent));
-  for(const body of old.querySelectorAll('main .ts-skill-body'))check(skillText.includes(norm(body.textContent)),route+': complete original skill content');
+  for(const body of old.querySelectorAll('main .ts-skill-body'))check(skillText.some(value=>value.normalize('NFKC')===expectedSkillText(body.textContent,route+'/index.html')),route+': complete original skill effects with reviewed status captions');
   for(const picker of old.querySelectorAll('[data-stage-picker]'))check([...main.querySelectorAll('[data-stage-picker]')].some(p=>norm(p.textContent)===norm(picker.textContent)),route+': observed stage options preserved');
   for(const stat of old.querySelectorAll('main .stat-card,main .equipment-stat,main .ts-data-strip'))check([...main.querySelectorAll('.stat-card,.equipment-stat,.ts-data-strip')].some(n=>norm(n.textContent)===norm(stat.textContent)),route+': observed stat block preserved');
   const currentImages=new Set([...main.querySelectorAll('img')].map(n=>n.getAttribute('src')));

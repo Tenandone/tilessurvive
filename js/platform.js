@@ -44,7 +44,7 @@
   const heads = [...main.querySelectorAll("h2")].filter(
     (h) => !h.closest(".visually-hidden-seo"),
   );
-  if (heads.length > 2 && !main.querySelector(".ts-toc")) {
+  if (heads.length > 2 && !main.querySelector(".ts-toc,.ts3-character-sections")) {
     const nav = make("nav", "ts-toc");
     nav.setAttribute("aria-label", t.related);
     heads.forEach((h, i) => {

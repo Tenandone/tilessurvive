@@ -1,0 +1,7 @@
+{
+  "ko": { "message": "할인 충전 가능 여부 확인" },
+  "en": { "message": "Check for top-up discounts" },
+  "ja": { "message": "チャージ割引の有無を確認" },
+  "ru": { "message": "Проверить скидки на пополнение" },
+  "zh-tw": { "message": "查看儲值優惠是否適用" }
+}

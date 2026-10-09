@@ -1,0 +1,3124 @@
+[
+  {
+    "route": "ko/behemoths/index.html",
+    "selector": "h2",
+    "before": "자료 적용 범위",
+    "after": "적용 조건",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ko/behemoths/index.html",
+    "selector": "p",
+    "before": "현재 확인된 베헤모스를 보기 쉽게 정리한 목록 페이지입니다.",
+    "after": "베헤모스의 유형과 효과를 비교하고 개별 성장 자료를 살펴보세요.",
+    "rule": "concise-directory-intro"
+  },
+  {
+    "route": "ko/behemoths/legend-griffin/index.html",
+    "selector": "h2",
+    "before": "자료 적용 범위",
+    "after": "적용 조건",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ko/behemoths/marine-drake/index.html",
+    "selector": "h2",
+    "before": "자료 적용 범위",
+    "after": "적용 조건",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ko/buildings/blessed-healing-stele/index.html",
+    "selector": "p",
+    "before": "현재 확인된 핵심 효과를 정리했습니다.",
+    "after": null,
+    "rule": "remove-empty-building-intro"
+  },
+  {
+    "route": "ko/buildings/enlistment-office/index.html",
+    "selector": "h2",
+    "before": "자료 적용 범위",
+    "after": "적용 조건",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ko/buildings/enlistment-office/index.html",
+    "selector": "p",
+    "before": "현재 화면에서 확인된 핵심 수치입니다.",
+    "after": null,
+    "rule": "remove-empty-building-intro"
+  },
+  {
+    "route": "ko/buildings/hero-academy/index.html",
+    "selector": "p",
+    "before": "건물 설명과 현재 확인된 핵심 효과를 정리했습니다.",
+    "after": null,
+    "rule": "remove-empty-building-intro"
+  },
+  {
+    "route": "ko/buildings/hospital/index.html",
+    "selector": "h2",
+    "before": "자료 적용 범위",
+    "after": "적용 조건",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ko/buildings/lab/index.html",
+    "selector": "h2",
+    "before": "자료 적용 범위",
+    "after": "적용 조건",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ko/buildings/power-plant/index.html",
+    "selector": "h2",
+    "before": "자료 적용 범위",
+    "after": "적용 조건",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ko/database/index.html",
+    "selector": "p",
+    "before": "공식 확인된 펫 알, 육성, 영웅 능력치와 전투 지원 정보입니다.",
+    "after": "펫 알 획득, 육성, 영웅 능력치 보너스와 전투 지원 정보입니다.",
+    "rule": "remove-verification-claim"
+  },
+  {
+    "route": "ko/database/pet-system/dodo/index.html",
+    "selector": "h2",
+    "before": "관측 능력치",
+    "after": "레벨별 능력치",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ko/database/pet-system/index.html",
+    "selector": "p",
+    "before": "확인일 2026-10-09 · 7",
+    "after": null,
+    "rule": "remove-internal-check-date"
+  },
+  {
+    "route": "ko/database/pet-system/index.html",
+    "selector": "p.ts-evidence-label",
+    "before": "펫 한국어 이름은 커뮤니티 표기를 병기했습니다. 한국어 게임 화면에서 독립적으로 확인한 공식 명칭은 아닙니다.",
+    "after": "한국어 이름은 커뮤니티 표기로, 게임 내 명칭과 다를 수 있습니다.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ko/database/pet-system/index.html",
+    "selector": "p",
+    "before": "0단계는 게임 화면, 1~3단계는 TilesMania의 게임 화면 판독 기록입니다. 후속 단계는 추정하지 않습니다.",
+    "after": "표는 훈련 0~3단계 기준입니다. 이후 단계의 값은 제공되지 않습니다.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ko/database/pet-system/index.html",
+    "selector": "h3",
+    "before": "추가 관측: 백설(북극곰)",
+    "after": "백설(북극곰)",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ko/database/pet-system/index.html",
+    "selector": "p",
+    "before": "TilesMania의 게임 화면 기록에 등장합니다. 원본 이미지와 공식 획득 조건이 확보되지 않아 완성된 개별 도감으로 등록하지 않았습니다.",
+    "after": "백설(북극곰)의 획득 조건과 상세 능력치는 제공되지 않습니다.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ko/database/pet-system/index.html",
+    "selector": "p",
+    "before": "게임 영상의 커뮤니티 판독 자료입니다. 86→87레벨 경험치가 없어 이 구간을 포함하면 계산하지 않습니다. 누적 합계는 41레벨 기준이며 누락 이후는 표시하지 않습니다. 펫별 차이는 미확인입니다. 훈련 4단계 보너스와 5단계 비용은 원문의 추정값이므로 제외했습니다.",
+    "after": "86→87레벨 경험치는 제공되지 않아 해당 구간을 포함한 계산은 지원하지 않습니다. 누적 합계는 41레벨 기준이며 누락 구간 이후는 표시하지 않습니다. 펫별 차이, 훈련 4단계 보너스·5단계 비용은 미확인입니다.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ko/database/pet-system/starhorn/index.html",
+    "selector": "p",
+    "before": "커뮤니티 게임 화면 판독: 별의 소원 — 전투 시작 시 전열 방어 +20%, 후열 공격 +8%, 10초. 스킬 레벨은 미확인입니다.",
+    "after": "별의 소원 — 전투 시작 시 전열 방어 +20%, 후열 공격 +8%, 10초. 스킬 레벨 미상.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ko/database/pet-system/starhorn/index.html",
+    "selector": "p",
+    "before": "공식 공지·게임 화면·커뮤니티 기록을 구분합니다. 미확인 수치는 계산에 사용하지 않습니다.",
+    "after": null,
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ko/database/pet-system/starhorn/index.html",
+    "selector": "p",
+    "before": "전체 레벨별 비용·성급 조건·해금 시점은 아직 확보하지 못했습니다. 아래 수치는 출처 화면의 특정 단계입니다.",
+    "after": "전체 레벨별 비용·성급 조건·해금 시점은 제공되지 않습니다. 수치는 표시된 단계 기준입니다.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ko/database/pet-system/starhorn/index.html",
+    "selector": "h2",
+    "before": "관측 능력치",
+    "after": "레벨별 능력치",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ko/events/index.html",
+    "selector": "p",
+    "before": "공식 확인된 시스템 변화와 게임 내 확인이 더 필요한 일정·수치를 분리해 정리합니다.",
+    "after": "이벤트 규칙과 시스템 변경 사항을 살펴보세요. 개방 일정은 서버 진행도에 따라 다릅니다.",
+    "rule": "concise-directory-intro"
+  },
+  {
+    "route": "ko/heroes/beka/index.html",
+    "selector": "p",
+    "before": "외부 영웅 상세 페이지에서 확인한 대기시간입니다. 원문 스킬명을 병기하며 스킬 레벨·변경 버전은 명시되지 않았습니다. 장비·연구에 따른 실전 감소량은 포함하지 않습니다.",
+    "after": "스킬 레벨·게임 버전 미상. 장비·연구에 따른 대기시간 감소는 포함하지 않습니다.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ko/heroes/candy/index.html",
+    "selector": "h2",
+    "before": "자료 적용 범위",
+    "after": "적용 조건",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ko/heroes/candy/index.html",
+    "selector": "p",
+    "before": "외부 영웅 상세 페이지에서 확인한 대기시간입니다. 원문 스킬명을 병기하며 스킬 레벨·변경 버전은 명시되지 않았습니다. 장비·연구에 따른 실전 감소량은 포함하지 않습니다.",
+    "after": "스킬 레벨·게임 버전 미상. 장비·연구에 따른 대기시간 감소는 포함하지 않습니다.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ko/heroes/chef-ken/index.html",
+    "selector": "p",
+    "before": "외부 영웅 상세 페이지에서 확인한 대기시간입니다. 원문 스킬명을 병기하며 스킬 레벨·변경 버전은 명시되지 않았습니다. 장비·연구에 따른 실전 감소량은 포함하지 않습니다.",
+    "after": "스킬 레벨·게임 버전 미상. 장비·연구에 따른 대기시간 감소는 포함하지 않습니다.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ko/heroes/eva/index.html",
+    "selector": "p",
+    "before": "외부 영웅 상세 페이지에서 확인한 대기시간입니다. 원문 스킬명을 병기하며 스킬 레벨·변경 버전은 명시되지 않았습니다. 장비·연구에 따른 실전 감소량은 포함하지 않습니다.",
+    "after": "스킬 레벨·게임 버전 미상. 장비·연구에 따른 대기시간 감소는 포함하지 않습니다.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ko/heroes/freya/index.html",
+    "selector": "p",
+    "before": "외부 영웅 상세 페이지에서 확인한 대기시간입니다. 원문 스킬명을 병기하며 스킬 레벨·변경 버전은 명시되지 않았습니다. 장비·연구에 따른 실전 감소량은 포함하지 않습니다.",
+    "after": "스킬 레벨·게임 버전 미상. 장비·연구에 따른 대기시간 감소는 포함하지 않습니다.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ko/heroes/ghost/index.html",
+    "selector": "p",
+    "before": "외부 영웅 상세 페이지에서 확인한 대기시간입니다. 원문 스킬명을 병기하며 스킬 레벨·변경 버전은 명시되지 않았습니다. 장비·연구에 따른 실전 감소량은 포함하지 않습니다.",
+    "after": "스킬 레벨·게임 버전 미상. 장비·연구에 따른 대기시간 감소는 포함하지 않습니다.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ko/heroes/jacob/index.html",
+    "selector": "p",
+    "before": "외부 영웅 상세 페이지에서 확인한 대기시간입니다. 원문 스킬명을 병기하며 스킬 레벨·변경 버전은 명시되지 않았습니다. 장비·연구에 따른 실전 감소량은 포함하지 않습니다.",
+    "after": "스킬 레벨·게임 버전 미상. 장비·연구에 따른 대기시간 감소는 포함하지 않습니다.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ko/heroes/kiki/index.html",
+    "selector": "h2",
+    "before": "자료 적용 범위",
+    "after": "적용 조건",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ko/heroes/kiki/index.html",
+    "selector": "p",
+    "before": "외부 영웅 상세 페이지에서 확인한 대기시간입니다. 원문 스킬명을 병기하며 스킬 레벨·변경 버전은 명시되지 않았습니다. 장비·연구에 따른 실전 감소량은 포함하지 않습니다.",
+    "after": "스킬 레벨·게임 버전 미상. 장비·연구에 따른 대기시간 감소는 포함하지 않습니다.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ko/heroes/kiron/index.html",
+    "selector": "p",
+    "before": "외부 영웅 상세 페이지에서 확인한 대기시간입니다. 원문 스킬명을 병기하며 스킬 레벨·변경 버전은 명시되지 않았습니다. 장비·연구에 따른 실전 감소량은 포함하지 않습니다.",
+    "after": "스킬 레벨·게임 버전 미상. 장비·연구에 따른 대기시간 감소는 포함하지 않습니다.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ko/heroes/knotty/index.html",
+    "selector": "p.ts-evidence-label",
+    "before": "한국어 게임 화면에서 공식 명칭 “너티”를 확인했습니다. 아래 수치는 해당 화면의 스킬 Lv.40, 패시브 Lv.4, 전용 장비 Lv.15 기준입니다. 기존 저레벨 관측값과 구분합니다.",
+    "after": null,
+    "rule": "remove-duplicate-stage-condition"
+  },
+  {
+    "route": "ko/heroes/knotty/index.html",
+    "selector": "p",
+    "before": "공식 공지·게임 화면·커뮤니티 기록을 구분합니다. 미확인 수치는 계산에 사용하지 않습니다.",
+    "after": null,
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ko/heroes/knotty/index.html",
+    "selector": "p.ts-evidence-label",
+    "before": "스킬 레벨이 명시되지 않은 커뮤니티 수치입니다. 최고 레벨 수치로 해석하지 마세요.",
+    "after": "스킬 레벨 미상 · 최고 레벨 수치가 아닐 수 있습니다.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ko/heroes/knotty/index.html",
+    "selector": "p.ts-evidence-label",
+    "before": "게임 화면",
+    "after": null,
+    "rule": "remove-repeated-evidence-label"
+  },
+  {
+    "route": "ko/heroes/knotty/index.html",
+    "selector": "summary",
+    "before": "게임 화면 · 출처 보기",
+    "after": "스킬 화면",
+    "rule": "reference-disclosure-label"
+  },
+  {
+    "route": "ko/heroes/knotty/index.html",
+    "selector": "p",
+    "before": "전체 레벨별 비용·성급 조건·해금 시점은 아직 확보하지 못했습니다. 아래 수치는 출처 화면의 특정 단계입니다.",
+    "after": "전체 레벨별 비용·성급 조건·해금 시점은 제공되지 않습니다. 수치는 표시된 단계 기준입니다.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ko/heroes/knotty/index.html",
+    "selector": "p",
+    "before": "전용 장비의 전체 레벨별 효과·비용은 미확인입니다.",
+    "after": "전용 장비의 전체 레벨별 효과·비용은 제공되지 않습니다.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ko/heroes/knotty/index.html",
+    "selector": "p",
+    "before": "확인일: 2026-10-09",
+    "after": null,
+    "rule": "remove-internal-check-date"
+  },
+  {
+    "route": "ko/heroes/knotty/index.html",
+    "selector": "h2",
+    "before": "자료 적용 범위",
+    "after": "적용 조건",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ko/heroes/knotty/index.html",
+    "selector": "p",
+    "before": "바다 영웅은 진영 시너지에서 모든 진영으로 계산되지만, 진영 상성·상성 피해에는 적용되지 않습니다. 아래 대기시간은 커뮤니티 상세 페이지 기준이며 스킬 레벨은 명시되지 않았습니다.",
+    "after": "바다 영웅은 진영 시너지에서 모든 진영으로 계산되지만 진영 상성·상성 피해에는 적용되지 않습니다. 대기시간의 스킬 레벨은 명시되지 않았습니다.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ko/heroes/knotty/index.html",
+    "selector": "h2",
+    "before": "관측 능력치",
+    "after": "레벨별 능력치",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ko/heroes/knotty/index.html",
+    "selector": "p",
+    "before": "한국어 게임 화면에서 공식 명칭 “너티”를 확인했습니다. 아래 수치는 해당 화면의 스킬 Lv.40, 패시브 Lv.4, 전용 장비 Lv.15 기준입니다. 기존 저레벨 관측값과 구분합니다.",
+    "after": "스킬 Lv.40 · 패시브 Lv.4 · 전용 장비 Lv.15 기준입니다. 위 스킬 패널의 저레벨 값과 구분하세요.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ko/heroes/knotty/index.html",
+    "selector": "summary",
+    "before": "출처·확인일",
+    "after": "스킬 화면",
+    "rule": "reference-disclosure-label"
+  },
+  {
+    "route": "ko/heroes/lagnar/index.html",
+    "selector": "p",
+    "before": "전체 레벨별 비용·성급 조건·해금 시점은 아직 확보하지 못했습니다. 아래 수치는 출처 화면의 특정 단계입니다.",
+    "after": "전체 레벨별 비용·성급 조건·해금 시점은 제공되지 않습니다. 수치는 표시된 단계 기준입니다.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ko/heroes/lagnar/index.html",
+    "selector": "h2",
+    "before": "자료 적용 범위",
+    "after": "적용 조건",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ko/heroes/lagnar/index.html",
+    "selector": "p",
+    "before": "바다 영웅은 진영 시너지에서 모든 진영으로 계산되지만, 진영 상성·상성 피해에는 적용되지 않습니다. 아래 대기시간은 커뮤니티 상세 페이지 기준이며 스킬 레벨은 명시되지 않았습니다.",
+    "after": "바다 영웅은 진영 시너지에서 모든 진영으로 계산되지만 진영 상성·상성 피해에는 적용되지 않습니다. 대기시간의 스킬 레벨은 명시되지 않았습니다.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ko/heroes/laila/index.html",
+    "selector": "p",
+    "before": "외부 영웅 상세 페이지에서 확인한 대기시간입니다. 원문 스킬명을 병기하며 스킬 레벨·변경 버전은 명시되지 않았습니다. 장비·연구에 따른 실전 감소량은 포함하지 않습니다.",
+    "after": "스킬 레벨·게임 버전 미상. 장비·연구에 따른 대기시간 감소는 포함하지 않습니다.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ko/heroes/light/index.html",
+    "selector": "p",
+    "before": "외부 영웅 상세 페이지에서 확인한 대기시간입니다. 원문 스킬명을 병기하며 스킬 레벨·변경 버전은 명시되지 않았습니다. 장비·연구에 따른 실전 감소량은 포함하지 않습니다.",
+    "after": "스킬 레벨·게임 버전 미상. 장비·연구에 따른 대기시간 감소는 포함하지 않습니다.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ko/heroes/lucky/index.html",
+    "selector": "p",
+    "before": "외부 영웅 상세 페이지에서 확인한 대기시간입니다. 원문 스킬명을 병기하며 스킬 레벨·변경 버전은 명시되지 않았습니다. 장비·연구에 따른 실전 감소량은 포함하지 않습니다.",
+    "after": "스킬 레벨·게임 버전 미상. 장비·연구에 따른 대기시간 감소는 포함하지 않습니다.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ko/heroes/maddy/index.html",
+    "selector": "p",
+    "before": "외부 영웅 상세 페이지에서 확인한 대기시간입니다. 원문 스킬명을 병기하며 스킬 레벨·변경 버전은 명시되지 않았습니다. 장비·연구에 따른 실전 감소량은 포함하지 않습니다.",
+    "after": "스킬 레벨·게임 버전 미상. 장비·연구에 따른 대기시간 감소는 포함하지 않습니다.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ko/heroes/mike/index.html",
+    "selector": "p",
+    "before": "외부 영웅 상세 페이지에서 확인한 대기시간입니다. 원문 스킬명을 병기하며 스킬 레벨·변경 버전은 명시되지 않았습니다. 장비·연구에 따른 실전 감소량은 포함하지 않습니다.",
+    "after": "스킬 레벨·게임 버전 미상. 장비·연구에 따른 대기시간 감소는 포함하지 않습니다.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ko/heroes/nikola/index.html",
+    "selector": "p",
+    "before": "외부 영웅 상세 페이지에서 확인한 대기시간입니다. 원문 스킬명을 병기하며 스킬 레벨·변경 버전은 명시되지 않았습니다. 장비·연구에 따른 실전 감소량은 포함하지 않습니다.",
+    "after": "스킬 레벨·게임 버전 미상. 장비·연구에 따른 대기시간 감소는 포함하지 않습니다.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ko/heroes/ray/index.html",
+    "selector": "p",
+    "before": "외부 영웅 상세 페이지에서 확인한 대기시간입니다. 원문 스킬명을 병기하며 스킬 레벨·변경 버전은 명시되지 않았습니다. 장비·연구에 따른 실전 감소량은 포함하지 않습니다.",
+    "after": "스킬 레벨·게임 버전 미상. 장비·연구에 따른 대기시간 감소는 포함하지 않습니다.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ko/heroes/rosie/index.html",
+    "selector": "p",
+    "before": "외부 영웅 상세 페이지에서 확인한 대기시간입니다. 원문 스킬명을 병기하며 스킬 레벨·변경 버전은 명시되지 않았습니다. 장비·연구에 따른 실전 감소량은 포함하지 않습니다.",
+    "after": "스킬 레벨·게임 버전 미상. 장비·연구에 따른 대기시간 감소는 포함하지 않습니다.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ko/heroes/rusty/index.html",
+    "selector": "p",
+    "before": "외부 영웅 상세 페이지에서 확인한 대기시간입니다. 원문 스킬명을 병기하며 스킬 레벨·변경 버전은 명시되지 않았습니다. 장비·연구에 따른 실전 감소량은 포함하지 않습니다.",
+    "after": "스킬 레벨·게임 버전 미상. 장비·연구에 따른 대기시간 감소는 포함하지 않습니다.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ko/heroes/sarge/index.html",
+    "selector": "p",
+    "before": "외부 영웅 상세 페이지에서 확인한 대기시간입니다. 원문 스킬명을 병기하며 스킬 레벨·변경 버전은 명시되지 않았습니다. 장비·연구에 따른 실전 감소량은 포함하지 않습니다.",
+    "after": "스킬 레벨·게임 버전 미상. 장비·연구에 따른 대기시간 감소는 포함하지 않습니다.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ko/heroes/shark/index.html",
+    "selector": "p",
+    "before": "전체 레벨별 비용·성급 조건·해금 시점은 아직 확보하지 못했습니다. 아래 수치는 출처 화면의 특정 단계입니다.",
+    "after": "전체 레벨별 비용·성급 조건·해금 시점은 제공되지 않습니다. 수치는 표시된 단계 기준입니다.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ko/heroes/shark/index.html",
+    "selector": "h2",
+    "before": "자료 적용 범위",
+    "after": "적용 조건",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ko/heroes/shark/index.html",
+    "selector": "p",
+    "before": "바다 영웅은 진영 시너지에서 모든 진영으로 계산되지만, 진영 상성·상성 피해에는 적용되지 않습니다. 아래 대기시간은 커뮤니티 상세 페이지 기준이며 스킬 레벨은 명시되지 않았습니다.",
+    "after": "바다 영웅은 진영 시너지에서 모든 진영으로 계산되지만 진영 상성·상성 피해에는 적용되지 않습니다. 대기시간의 스킬 레벨은 명시되지 않았습니다.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ko/heroes/shark/index.html",
+    "selector": "p.hero-sub",
+    "before": "샤크는 바다 계열 SSR 근거리 영웅입니다. 범위 피해와 전방 영웅 지원, 받는 피해 감소를 함께 갖춘 전투형 영웅입니다.",
+    "after": "범위 피해, 아군 전방 지원과 받는 피해 감소를 함께 갖춘 영웅입니다.",
+    "rule": "remove-repeated-hero-classification"
+  },
+  {
+    "route": "ko/heroes/shark/index.html",
+    "selector": "p.hero-sub",
+    "before": "스킬과 전용 장비 효과를 한눈에 비교할 수 있도록 핵심 수치와 역할을 정리했습니다.",
+    "after": null,
+    "rule": "remove-page-summary-filler"
+  },
+  {
+    "route": "ko/heroes/tara/index.html",
+    "selector": "p",
+    "before": "외부 영웅 상세 페이지에서 확인한 대기시간입니다. 원문 스킬명을 병기하며 스킬 레벨·변경 버전은 명시되지 않았습니다. 장비·연구에 따른 실전 감소량은 포함하지 않습니다.",
+    "after": "스킬 레벨·게임 버전 미상. 장비·연구에 따른 대기시간 감소는 포함하지 않습니다.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ko/heroes/tarzan/index.html",
+    "selector": "p",
+    "before": "외부 영웅 상세 페이지에서 확인한 대기시간입니다. 원문 스킬명을 병기하며 스킬 레벨·변경 버전은 명시되지 않았습니다. 장비·연구에 따른 실전 감소량은 포함하지 않습니다.",
+    "after": "스킬 레벨·게임 버전 미상. 장비·연구에 따른 대기시간 감소는 포함하지 않습니다.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ko/heroes/tony/index.html",
+    "selector": "p",
+    "before": "외부 영웅 상세 페이지에서 확인한 대기시간입니다. 원문 스킬명을 병기하며 스킬 레벨·변경 버전은 명시되지 않았습니다. 장비·연구에 따른 실전 감소량은 포함하지 않습니다.",
+    "after": "스킬 레벨·게임 버전 미상. 장비·연구에 따른 대기시간 감소는 포함하지 않습니다.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ko/heroes/travis/index.html",
+    "selector": "p",
+    "before": "외부 영웅 상세 페이지에서 확인한 대기시간입니다. 원문 스킬명을 병기하며 스킬 레벨·변경 버전은 명시되지 않았습니다. 장비·연구에 따른 실전 감소량은 포함하지 않습니다.",
+    "after": "스킬 레벨·게임 버전 미상. 장비·연구에 따른 대기시간 감소는 포함하지 않습니다.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ko/heroes/undine/index.html",
+    "selector": "p.ts-evidence-label",
+    "before": "한국어 공식 명칭을 확인하지 못해 영문 게임 화면 이름을 사용합니다.",
+    "after": "이름은 영문 게임 표기 기준입니다.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ko/heroes/undine/index.html",
+    "selector": "p",
+    "before": "공식 공지·게임 화면·커뮤니티 기록을 구분합니다. 미확인 수치는 계산에 사용하지 않습니다.",
+    "after": null,
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ko/heroes/undine/index.html",
+    "selector": "p.ts-evidence-label",
+    "before": "스킬 레벨이 명시되지 않은 커뮤니티 수치입니다. 최고 레벨 수치로 해석하지 마세요.",
+    "after": "스킬 레벨 미상 · 최고 레벨 수치가 아닐 수 있습니다.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ko/heroes/undine/index.html",
+    "selector": "p.ts-evidence-label",
+    "before": "게임 화면",
+    "after": null,
+    "rule": "remove-repeated-evidence-label"
+  },
+  {
+    "route": "ko/heroes/undine/index.html",
+    "selector": "summary",
+    "before": "게임 화면 · 출처 보기",
+    "after": "스킬 화면",
+    "rule": "reference-disclosure-label"
+  },
+  {
+    "route": "ko/heroes/undine/index.html",
+    "selector": "p",
+    "before": "전체 레벨별 비용·성급 조건·해금 시점은 아직 확보하지 못했습니다. 아래 수치는 출처 화면의 특정 단계입니다.",
+    "after": "전체 레벨별 비용·성급 조건·해금 시점은 제공되지 않습니다. 수치는 표시된 단계 기준입니다.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ko/heroes/undine/index.html",
+    "selector": "p",
+    "before": "확인일: 2026-10-09",
+    "after": null,
+    "rule": "remove-internal-check-date"
+  },
+  {
+    "route": "ko/heroes/undine/index.html",
+    "selector": "h2",
+    "before": "자료 적용 범위",
+    "after": "적용 조건",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ko/heroes/undine/index.html",
+    "selector": "p",
+    "before": "바다 영웅은 진영 시너지에서 모든 진영으로 계산되지만, 진영 상성·상성 피해에는 적용되지 않습니다. 아래 대기시간은 커뮤니티 상세 페이지 기준이며 스킬 레벨은 명시되지 않았습니다.",
+    "after": "바다 영웅은 진영 시너지에서 모든 진영으로 계산되지만 진영 상성·상성 피해에는 적용되지 않습니다. 대기시간의 스킬 레벨은 명시되지 않았습니다.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ko/seasons/index.html",
+    "selector": "p",
+    "before": "“진행 중 + 확인된 시즌 완전 정리 (최신 업데이트)”",
+    "after": "시즌별 목표, 성장 시스템과 주요 보상을 살펴보세요.",
+    "rule": "concise-directory-intro"
+  },
+  {
+    "route": "ko/seasons/season-2/index.html",
+    "selector": "h2",
+    "before": "자료 적용 범위",
+    "after": "적용 조건",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ko/seasons/season-4/index.html",
+    "selector": "h2",
+    "before": "자료 적용 범위",
+    "after": "적용 조건",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ko/updates/index.html",
+    "selector": "p",
+    "before": "현재 확인된 최신 공식 업데이트는 2026년 9월 17일 공개된 v2.6.100입니다. 서버 진행도에 따라 다른 내용은 분리해 표시합니다.",
+    "after": "버전별 변경 사항과 개발자 소식을 모았습니다. 기능 개방 시점은 서버 진행도에 따라 다를 수 있습니다.",
+    "rule": "concise-directory-intro"
+  },
+  {
+    "route": "en/behemoths/index.html",
+    "selector": "h2",
+    "before": "Data scope",
+    "after": "Applicable conditions",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "en/behemoths/index.html",
+    "selector": "p",
+    "before": "This index page organizes the currently confirmed behemoths in a clear and easy-to-browse format.",
+    "after": "Compare Behemoth types and effects, then explore their growth data.",
+    "rule": "concise-directory-intro"
+  },
+  {
+    "route": "en/behemoths/legend-griffin/index.html",
+    "selector": "h2",
+    "before": "Data scope",
+    "after": "Applicable conditions",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "en/behemoths/marine-drake/index.html",
+    "selector": "h2",
+    "before": "Data scope",
+    "after": "Applicable conditions",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "en/buildings/blessed-healing-stele/index.html",
+    "selector": "p",
+    "before": "This section summarizes the currently confirmed core effects.",
+    "after": null,
+    "rule": "remove-empty-building-intro"
+  },
+  {
+    "route": "en/buildings/comms-outpost/index.html",
+    "selector": "p",
+    "before": "The currently confirmed core functions are organized first.",
+    "after": null,
+    "rule": "remove-empty-building-intro"
+  },
+  {
+    "route": "en/buildings/cursed-wound-stele/index.html",
+    "selector": "p",
+    "before": "Based on the in-game description and confirmed effect data.",
+    "after": null,
+    "rule": "remove-empty-building-intro"
+  },
+  {
+    "route": "en/buildings/enlistment-office/index.html",
+    "selector": "h2",
+    "before": "Data scope",
+    "after": "Applicable conditions",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "en/buildings/enlistment-office/index.html",
+    "selector": "p",
+    "before": "These are the key values confirmed from the current screen.",
+    "after": null,
+    "rule": "remove-empty-building-intro"
+  },
+  {
+    "route": "en/buildings/hero-academy/index.html",
+    "selector": "p",
+    "before": "This section summarizes the building description and currently confirmed core effect.",
+    "after": null,
+    "rule": "remove-empty-building-intro"
+  },
+  {
+    "route": "en/buildings/hospital/index.html",
+    "selector": "h2",
+    "before": "Data scope",
+    "after": "Applicable conditions",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "en/buildings/lab/index.html",
+    "selector": "h2",
+    "before": "Data scope",
+    "after": "Applicable conditions",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "en/buildings/power-plant/index.html",
+    "selector": "h2",
+    "before": "Data scope",
+    "after": "Applicable conditions",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "en/database/index.html",
+    "selector": "p",
+    "before": "Officially verified Pet Eggs, growth, Hero stat bonuses, and battle support.",
+    "after": "Pet Eggs, growth, Hero stat bonuses and battle support.",
+    "rule": "remove-verification-claim"
+  },
+  {
+    "route": "en/database/pet-system/dodo/index.html",
+    "selector": "h2",
+    "before": "Observed stats",
+    "after": "Stats by level",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "en/database/pet-system/index.html",
+    "selector": "p",
+    "before": "Checked 2026-10-09 · 7",
+    "after": null,
+    "rule": "remove-internal-check-date"
+  },
+  {
+    "route": "en/database/pet-system/index.html",
+    "selector": "p.ts-evidence-label",
+    "before": "Korean names follow community usage; official Korean UI names have not been independently verified.",
+    "after": "Korean names follow community usage and may differ from in-game names.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "en/database/pet-system/index.html",
+    "selector": "p",
+    "before": "Stage 0 is visible in the screenshot; stages 1–3 follow TilesMania’s game-screen transcription. Later stages are not extrapolated.",
+    "after": "The table covers training stages 0–3. Later-stage values are unavailable.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "en/database/pet-system/index.html",
+    "selector": "h3",
+    "before": "Additional observation: polar bear (백설)",
+    "after": "Polar bear (백설)",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "en/database/pet-system/index.html",
+    "selector": "p",
+    "before": "Appears in TilesMania’s game-screen records. Its original image and official acquisition rules remain unverified, so no individual directory page is published.",
+    "after": "Acquisition conditions and detailed stats for the polar bear (백설) are unavailable.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "en/database/pet-system/index.html",
+    "selector": "p",
+    "before": "Community transcription of game footage. EXP for 86→87 is missing, so ranges crossing it are blocked. Cumulative values start at level 41 and stop at the gap. Differences between pets are unconfirmed. Extrapolated training stage 4 bonus and stage 5 cost are excluded.",
+    "after": "EXP for 86→87 is unavailable, so calculations cannot cross that gap. Cumulative values start at level 41 and stop at the gap. Differences between pets, the training stage 4 bonus and stage 5 cost are unknown.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "en/database/pet-system/starhorn/index.html",
+    "selector": "p",
+    "before": "Community game-screen transcription: Star Wish grants front-row DEF +20% and back-row ATK +8% for 10 seconds at battle start. Skill level unconfirmed.",
+    "after": "Star Wish grants front-row DEF +20% and back-row ATK +8% for 10 seconds at battle start. Skill level unknown.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "en/database/pet-system/starhorn/index.html",
+    "selector": "p",
+    "before": "Official notices, game screenshots and community records are labelled separately. Unconfirmed values are not used in calculations.",
+    "after": null,
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "en/database/pet-system/starhorn/index.html",
+    "selector": "p",
+    "before": "Full level costs, star requirements and unlock timing are not yet verified. Values below are specific observed stages.",
+    "after": "Full level costs, star requirements and unlock timing are unavailable. Values apply to the stages shown.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "en/database/pet-system/starhorn/index.html",
+    "selector": "h2",
+    "before": "Observed stats",
+    "after": "Stats by level",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "en/events/index.html",
+    "selector": "p",
+    "before": "This hub separates officially confirmed system changes from schedules and values that still require live in-game checks.",
+    "after": "Explore event rules and system changes. Unlock schedules depend on State progression.",
+    "rule": "concise-directory-intro"
+  },
+  {
+    "route": "en/heroes/beka/index.html",
+    "selector": "p",
+    "before": "Cooldowns were checked on the external hero detail page. Original skill names are retained; skill levels and change versions are unspecified. Gear and research reductions are not included.",
+    "after": "Skill levels and game version are unspecified. Cooldown reductions from gear and research are excluded.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "en/heroes/candy/index.html",
+    "selector": "h2",
+    "before": "Data scope",
+    "after": "Applicable conditions",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "en/heroes/candy/index.html",
+    "selector": "p",
+    "before": "Cooldowns were checked on the external hero detail page. Original skill names are retained; skill levels and change versions are unspecified. Gear and research reductions are not included.",
+    "after": "Skill levels and game version are unspecified. Cooldown reductions from gear and research are excluded.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "en/heroes/chef-ken/index.html",
+    "selector": "p",
+    "before": "Cooldowns were checked on the external hero detail page. Original skill names are retained; skill levels and change versions are unspecified. Gear and research reductions are not included.",
+    "after": "Skill levels and game version are unspecified. Cooldown reductions from gear and research are excluded.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "en/heroes/eva/index.html",
+    "selector": "p",
+    "before": "Cooldowns were checked on the external hero detail page. Original skill names are retained; skill levels and change versions are unspecified. Gear and research reductions are not included.",
+    "after": "Skill levels and game version are unspecified. Cooldown reductions from gear and research are excluded.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "en/heroes/freya/index.html",
+    "selector": "p",
+    "before": "Cooldowns were checked on the external hero detail page. Original skill names are retained; skill levels and change versions are unspecified. Gear and research reductions are not included.",
+    "after": "Skill levels and game version are unspecified. Cooldown reductions from gear and research are excluded.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "en/heroes/ghost/index.html",
+    "selector": "p",
+    "before": "Cooldowns were checked on the external hero detail page. Original skill names are retained; skill levels and change versions are unspecified. Gear and research reductions are not included.",
+    "after": "Skill levels and game version are unspecified. Cooldown reductions from gear and research are excluded.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "en/heroes/jacob/index.html",
+    "selector": "p",
+    "before": "Cooldowns were checked on the external hero detail page. Original skill names are retained; skill levels and change versions are unspecified. Gear and research reductions are not included.",
+    "after": "Skill levels and game version are unspecified. Cooldown reductions from gear and research are excluded.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "en/heroes/kiki/index.html",
+    "selector": "h2",
+    "before": "Data scope",
+    "after": "Applicable conditions",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "en/heroes/kiki/index.html",
+    "selector": "p",
+    "before": "Cooldowns were checked on the external hero detail page. Original skill names are retained; skill levels and change versions are unspecified. Gear and research reductions are not included.",
+    "after": "Skill levels and game version are unspecified. Cooldown reductions from gear and research are excluded.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "en/heroes/kiron/index.html",
+    "selector": "p",
+    "before": "Cooldowns were checked on the external hero detail page. Original skill names are retained; skill levels and change versions are unspecified. Gear and research reductions are not included.",
+    "after": "Skill levels and game version are unspecified. Cooldown reductions from gear and research are excluded.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "en/heroes/knotty/index.html",
+    "selector": "p.ts-evidence-label",
+    "before": "The English in-game names are retained until localized official names can be verified.",
+    "after": "Names follow the English game version.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "en/heroes/knotty/index.html",
+    "selector": "p",
+    "before": "Official notices, game screenshots and community records are labelled separately. Unconfirmed values are not used in calculations.",
+    "after": null,
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "en/heroes/knotty/index.html",
+    "selector": "p.ts-evidence-label",
+    "before": "The community source does not specify the skill level. This is not a verified maximum-level value.",
+    "after": "Skill level unknown; values may not be for the maximum level.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "en/heroes/knotty/index.html",
+    "selector": "p.ts-evidence-label",
+    "before": "Game screenshot",
+    "after": null,
+    "rule": "remove-repeated-evidence-label"
+  },
+  {
+    "route": "en/heroes/knotty/index.html",
+    "selector": "summary",
+    "before": "Game screenshot · View source",
+    "after": "Skill screenshots",
+    "rule": "reference-disclosure-label"
+  },
+  {
+    "route": "en/heroes/knotty/index.html",
+    "selector": "p",
+    "before": "Full level costs, star requirements and unlock timing are not yet verified. Values below are specific observed stages.",
+    "after": "Full level costs, star requirements and unlock timing are unavailable. Values apply to the stages shown.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "en/heroes/knotty/index.html",
+    "selector": "p",
+    "before": "Complete exclusive-gear effects and costs by level are not verified.",
+    "after": "Full exclusive-gear effects and costs by level are unavailable.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "en/heroes/knotty/index.html",
+    "selector": "p",
+    "before": "Checked: 2026-10-09",
+    "after": null,
+    "rule": "remove-internal-check-date"
+  },
+  {
+    "route": "en/heroes/knotty/index.html",
+    "selector": "h2",
+    "before": "Data scope",
+    "after": "Applicable conditions",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "en/heroes/knotty/index.html",
+    "selector": "p",
+    "before": "Mariners count as any faction for synergy, but not for faction counters or counter damage. Cooldowns below come from community hero pages; skill levels are unspecified.",
+    "after": "Mariner heroes count as every faction for faction synergy, but not for faction advantage or its damage bonus. Skill levels for the cooldowns are unspecified.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "en/heroes/knotty/index.html",
+    "selector": "h2",
+    "before": "Observed stats",
+    "after": "Stats by level",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "en/heroes/knotty/index.html",
+    "selector": "p",
+    "before": "The Korean game screen confirms the name 너티. Values below are shown at skill Lv.40, passive Lv.4 and exclusive gear Lv.15, separately from earlier low-level observations.",
+    "after": "Skill Lv.40 · passive Lv.4 · exclusive gear Lv.15. Keep these separate from the lower-level values in the skill panels above.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "en/heroes/knotty/index.html",
+    "selector": "summary",
+    "before": "Source & check date",
+    "after": "Skill screenshots",
+    "rule": "reference-disclosure-label"
+  },
+  {
+    "route": "en/heroes/lagnar/index.html",
+    "selector": "p",
+    "before": "Full level costs, star requirements and unlock timing are not yet verified. Values below are specific observed stages.",
+    "after": "Full level costs, star requirements and unlock timing are unavailable. Values apply to the stages shown.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "en/heroes/lagnar/index.html",
+    "selector": "h2",
+    "before": "Data scope",
+    "after": "Applicable conditions",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "en/heroes/lagnar/index.html",
+    "selector": "p",
+    "before": "Mariners count as any faction for synergy, but not for faction counters or counter damage. Cooldowns below come from community hero pages; skill levels are unspecified.",
+    "after": "Mariner heroes count as every faction for faction synergy, but not for faction advantage or its damage bonus. Skill levels for the cooldowns are unspecified.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "en/heroes/laila/index.html",
+    "selector": "p",
+    "before": "Cooldowns were checked on the external hero detail page. Original skill names are retained; skill levels and change versions are unspecified. Gear and research reductions are not included.",
+    "after": "Skill levels and game version are unspecified. Cooldown reductions from gear and research are excluded.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "en/heroes/light/index.html",
+    "selector": "p",
+    "before": "Cooldowns were checked on the external hero detail page. Original skill names are retained; skill levels and change versions are unspecified. Gear and research reductions are not included.",
+    "after": "Skill levels and game version are unspecified. Cooldown reductions from gear and research are excluded.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "en/heroes/lucky/index.html",
+    "selector": "p",
+    "before": "Cooldowns were checked on the external hero detail page. Original skill names are retained; skill levels and change versions are unspecified. Gear and research reductions are not included.",
+    "after": "Skill levels and game version are unspecified. Cooldown reductions from gear and research are excluded.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "en/heroes/maddy/index.html",
+    "selector": "p",
+    "before": "Cooldowns were checked on the external hero detail page. Original skill names are retained; skill levels and change versions are unspecified. Gear and research reductions are not included.",
+    "after": "Skill levels and game version are unspecified. Cooldown reductions from gear and research are excluded.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "en/heroes/mike/index.html",
+    "selector": "p",
+    "before": "Cooldowns were checked on the external hero detail page. Original skill names are retained; skill levels and change versions are unspecified. Gear and research reductions are not included.",
+    "after": "Skill levels and game version are unspecified. Cooldown reductions from gear and research are excluded.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "en/heroes/nikola/index.html",
+    "selector": "p",
+    "before": "Cooldowns were checked on the external hero detail page. Original skill names are retained; skill levels and change versions are unspecified. Gear and research reductions are not included.",
+    "after": "Skill levels and game version are unspecified. Cooldown reductions from gear and research are excluded.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "en/heroes/ray/index.html",
+    "selector": "p",
+    "before": "Cooldowns were checked on the external hero detail page. Original skill names are retained; skill levels and change versions are unspecified. Gear and research reductions are not included.",
+    "after": "Skill levels and game version are unspecified. Cooldown reductions from gear and research are excluded.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "en/heroes/rosie/index.html",
+    "selector": "p",
+    "before": "Cooldowns were checked on the external hero detail page. Original skill names are retained; skill levels and change versions are unspecified. Gear and research reductions are not included.",
+    "after": "Skill levels and game version are unspecified. Cooldown reductions from gear and research are excluded.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "en/heroes/rusty/index.html",
+    "selector": "p",
+    "before": "Cooldowns were checked on the external hero detail page. Original skill names are retained; skill levels and change versions are unspecified. Gear and research reductions are not included.",
+    "after": "Skill levels and game version are unspecified. Cooldown reductions from gear and research are excluded.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "en/heroes/sarge/index.html",
+    "selector": "p",
+    "before": "Cooldowns were checked on the external hero detail page. Original skill names are retained; skill levels and change versions are unspecified. Gear and research reductions are not included.",
+    "after": "Skill levels and game version are unspecified. Cooldown reductions from gear and research are excluded.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "en/heroes/shark/index.html",
+    "selector": "p",
+    "before": "Full level costs, star requirements and unlock timing are not yet verified. Values below are specific observed stages.",
+    "after": "Full level costs, star requirements and unlock timing are unavailable. Values apply to the stages shown.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "en/heroes/shark/index.html",
+    "selector": "h2",
+    "before": "Data scope",
+    "after": "Applicable conditions",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "en/heroes/shark/index.html",
+    "selector": "p",
+    "before": "Mariners count as any faction for synergy, but not for faction counters or counter damage. Cooldowns below come from community hero pages; skill levels are unspecified.",
+    "after": "Mariner heroes count as every faction for faction synergy, but not for faction advantage or its damage bonus. Skill levels for the cooldowns are unspecified.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "en/heroes/shark/index.html",
+    "selector": "p.hero-sub",
+    "before": "Shark is a Sea SSR melee hero with area damage, frontline support, and damage reduction tools.",
+    "after": "An area-damage hero with frontline support and damage reduction.",
+    "rule": "remove-repeated-hero-classification"
+  },
+  {
+    "route": "en/heroes/shark/index.html",
+    "selector": "p.hero-sub",
+    "before": "Use this page to review Shark’s core skill values, star bonus, attributes, and exclusive equipment effects.",
+    "after": null,
+    "rule": "remove-page-summary-filler"
+  },
+  {
+    "route": "en/heroes/tara/index.html",
+    "selector": "p",
+    "before": "Cooldowns were checked on the external hero detail page. Original skill names are retained; skill levels and change versions are unspecified. Gear and research reductions are not included.",
+    "after": "Skill levels and game version are unspecified. Cooldown reductions from gear and research are excluded.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "en/heroes/tazan/index.html",
+    "selector": "p",
+    "before": "Cooldowns were checked on the external hero detail page. Original skill names are retained; skill levels and change versions are unspecified. Gear and research reductions are not included.",
+    "after": "Skill levels and game version are unspecified. Cooldown reductions from gear and research are excluded.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "en/heroes/tony/index.html",
+    "selector": "p",
+    "before": "Cooldowns were checked on the external hero detail page. Original skill names are retained; skill levels and change versions are unspecified. Gear and research reductions are not included.",
+    "after": "Skill levels and game version are unspecified. Cooldown reductions from gear and research are excluded.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "en/heroes/travis/index.html",
+    "selector": "p",
+    "before": "Cooldowns were checked on the external hero detail page. Original skill names are retained; skill levels and change versions are unspecified. Gear and research reductions are not included.",
+    "after": "Skill levels and game version are unspecified. Cooldown reductions from gear and research are excluded.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "en/heroes/undine/index.html",
+    "selector": "p.ts-evidence-label",
+    "before": "The English in-game names are retained until localized official names can be verified.",
+    "after": "Names follow the English game version.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "en/heroes/undine/index.html",
+    "selector": "p",
+    "before": "Official notices, game screenshots and community records are labelled separately. Unconfirmed values are not used in calculations.",
+    "after": null,
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "en/heroes/undine/index.html",
+    "selector": "p.ts-evidence-label",
+    "before": "The community source does not specify the skill level. This is not a verified maximum-level value.",
+    "after": "Skill level unknown; values may not be for the maximum level.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "en/heroes/undine/index.html",
+    "selector": "p.ts-evidence-label",
+    "before": "Game screenshot",
+    "after": null,
+    "rule": "remove-repeated-evidence-label"
+  },
+  {
+    "route": "en/heroes/undine/index.html",
+    "selector": "summary",
+    "before": "Game screenshot · View source",
+    "after": "Skill screenshots",
+    "rule": "reference-disclosure-label"
+  },
+  {
+    "route": "en/heroes/undine/index.html",
+    "selector": "p",
+    "before": "Full level costs, star requirements and unlock timing are not yet verified. Values below are specific observed stages.",
+    "after": "Full level costs, star requirements and unlock timing are unavailable. Values apply to the stages shown.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "en/heroes/undine/index.html",
+    "selector": "p",
+    "before": "Checked: 2026-10-09",
+    "after": null,
+    "rule": "remove-internal-check-date"
+  },
+  {
+    "route": "en/heroes/undine/index.html",
+    "selector": "h2",
+    "before": "Data scope",
+    "after": "Applicable conditions",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "en/heroes/undine/index.html",
+    "selector": "p",
+    "before": "Mariners count as any faction for synergy, but not for faction counters or counter damage. Cooldowns below come from community hero pages; skill levels are unspecified.",
+    "after": "Mariner heroes count as every faction for faction synergy, but not for faction advantage or its damage bonus. Skill levels for the cooldowns are unspecified.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "en/seasons/index.html",
+    "selector": "p",
+    "before": "A complete list of active and confirmed seasons, updated with the latest verified information.",
+    "after": "Explore each season’s goals, growth systems and main rewards.",
+    "rule": "concise-directory-intro"
+  },
+  {
+    "route": "en/seasons/season-2/index.html",
+    "selector": "h2",
+    "before": "Data scope",
+    "after": "Applicable conditions",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "en/seasons/season-4/index.html",
+    "selector": "h2",
+    "before": "Data scope",
+    "after": "Applicable conditions",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "en/updates/index.html",
+    "selector": "p",
+    "before": "The latest official update is v2.6.100, published September 17, 2026. This hub records verified update signals and keeps server-dependent details clearly separated.",
+    "after": "Browse version changes and developer news. Features may unlock at different stages of State progression.",
+    "rule": "concise-directory-intro"
+  },
+  {
+    "route": "ja/behemoths/index.html",
+    "selector": "h2",
+    "before": "データの適用範囲",
+    "after": "適用条件",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ja/behemoths/index.html",
+    "selector": "p",
+    "before": "現在確認されているベヒーモスを見やすく整理した一覧ページです。",
+    "after": "ベヒーモスの種類と効果を比較し、個別の育成データを確認できます。",
+    "rule": "concise-directory-intro"
+  },
+  {
+    "route": "ja/behemoths/legend-griffin/index.html",
+    "selector": "h2",
+    "before": "データの適用範囲",
+    "after": "適用条件",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ja/behemoths/marine-drake/index.html",
+    "selector": "h2",
+    "before": "データの適用範囲",
+    "after": "適用条件",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ja/buildings/enlistment-office/index.html",
+    "selector": "h2",
+    "before": "データの適用範囲",
+    "after": "適用条件",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ja/buildings/hospital/index.html",
+    "selector": "h2",
+    "before": "データの適用範囲",
+    "after": "適用条件",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ja/buildings/lab/index.html",
+    "selector": "h2",
+    "before": "データの適用範囲",
+    "after": "適用条件",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ja/buildings/power-plant/index.html",
+    "selector": "h2",
+    "before": "データの適用範囲",
+    "after": "適用条件",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ja/database/index.html",
+    "selector": "p",
+    "before": "公式確認済みのペットの卵、育成、英雄能力値、戦闘支援情報。",
+    "after": "ペットの卵、育成、英雄能力ボーナスと戦闘支援の情報です。",
+    "rule": "remove-verification-claim"
+  },
+  {
+    "route": "ja/database/pet-system/dodo/index.html",
+    "selector": "h2",
+    "before": "観測ステータス",
+    "after": "レベル別能力値",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ja/database/pet-system/index.html",
+    "selector": "p",
+    "before": "確認日 2026-10-09 · 7",
+    "after": null,
+    "rule": "remove-internal-check-date"
+  },
+  {
+    "route": "ja/database/pet-system/index.html",
+    "selector": "p.ts-evidence-label",
+    "before": "韓国語名はコミュニティでの表記です。韓国語版ゲーム内の正式名称は独立検証できていません。",
+    "after": "韓国語名はコミュニティの表記で、ゲーム内の名称と異なる場合があります。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ja/database/pet-system/index.html",
+    "selector": "p",
+    "before": "段階0はゲーム画面、段階1〜3はTilesManiaの画面読取記録に基づきます。以降の段階は推測しません。",
+    "after": "表は訓練0〜3段階に対応しています。以降の段階の値は未掲載です。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ja/database/pet-system/index.html",
+    "selector": "h3",
+    "before": "追加観測：ホッキョクグマ（백설）",
+    "after": "白雪（ホッキョクグマ）",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ja/database/pet-system/index.html",
+    "selector": "p",
+    "before": "TilesManiaのゲーム画面記録に登場します。元画像と公式入手条件が未確認のため、個別ページは公開していません。",
+    "after": "白雪（ホッキョクグマ）の入手条件と詳細な能力値は未掲載です。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ja/database/pet-system/index.html",
+    "selector": "p",
+    "before": "ゲーム映像のコミュニティ記録です。86→87の経験値は未確認のため、この区間を含む計算はできません。累計は41基準で欠落以降は非表示です。ペット間の差は未確認。推測された訓練4段階の加成と5段階の費用は除外しました。",
+    "after": "86→87レベルの経験値が未掲載のため、この区間を含む計算はできません。累計は41レベルを起点とし、欠損区間以降は表示しません。ペット間の差、訓練4段階のボーナスと5段階の費用は不明です。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ja/database/pet-system/starhorn/index.html",
+    "selector": "p",
+    "before": "コミュニティのゲーム画面記録：Star Wishは戦闘開始時に前列の防御+20%、後列の攻撃+8%を10秒間付与します。スキルレベルは未確認です。",
+    "after": "Star Wish：戦闘開始時に前列の防御+20%、後列の攻撃+8%を10秒間付与します。スキルレベルは不明です。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ja/database/pet-system/starhorn/index.html",
+    "selector": "p",
+    "before": "公式告知・ゲーム画面・コミュニティ記録を区別します。未確認の数値は計算に使用しません。",
+    "after": null,
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ja/database/pet-system/starhorn/index.html",
+    "selector": "p",
+    "before": "全レベルの費用・星ランク条件・解放時期は未確認です。掲載値は特定段階の観測値です。",
+    "after": "全レベルの費用・星ランク条件・解放時期は未掲載です。数値は表示された段階に適用されます。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ja/database/pet-system/starhorn/index.html",
+    "selector": "h2",
+    "before": "観測ステータス",
+    "after": "レベル別能力値",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ja/events/index.html",
+    "selector": "p",
+    "before": "公式に確認された変更と、ゲーム内で追加確認が必要な日程・数値を分けて整理します。",
+    "after": "イベントのルールとシステムの変更を確認できます。解放日程はサーバーの進度によって異なります。",
+    "rule": "concise-directory-intro"
+  },
+  {
+    "route": "ja/heroes/beka/index.html",
+    "selector": "p",
+    "before": "外部の英雄詳細ページで確認した待機時間です。原文スキル名を併記し、レベル・変更バージョンは未記載。装備や研究による短縮は含みません。",
+    "after": "スキルレベルとゲームのバージョンは不明です。装備・研究によるクールダウン短縮は含みません。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ja/heroes/candy/index.html",
+    "selector": "h2",
+    "before": "データの適用範囲",
+    "after": "適用条件",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ja/heroes/candy/index.html",
+    "selector": "p",
+    "before": "外部の英雄詳細ページで確認した待機時間です。原文スキル名を併記し、レベル・変更バージョンは未記載。装備や研究による短縮は含みません。",
+    "after": "スキルレベルとゲームのバージョンは不明です。装備・研究によるクールダウン短縮は含みません。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ja/heroes/chef-ken/index.html",
+    "selector": "p",
+    "before": "外部の英雄詳細ページで確認した待機時間です。原文スキル名を併記し、レベル・変更バージョンは未記載。装備や研究による短縮は含みません。",
+    "after": "スキルレベルとゲームのバージョンは不明です。装備・研究によるクールダウン短縮は含みません。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ja/heroes/eva/index.html",
+    "selector": "p",
+    "before": "外部の英雄詳細ページで確認した待機時間です。原文スキル名を併記し、レベル・変更バージョンは未記載。装備や研究による短縮は含みません。",
+    "after": "スキルレベルとゲームのバージョンは不明です。装備・研究によるクールダウン短縮は含みません。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ja/heroes/freya/index.html",
+    "selector": "p",
+    "before": "外部の英雄詳細ページで確認した待機時間です。原文スキル名を併記し、レベル・変更バージョンは未記載。装備や研究による短縮は含みません。",
+    "after": "スキルレベルとゲームのバージョンは不明です。装備・研究によるクールダウン短縮は含みません。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ja/heroes/ghost/index.html",
+    "selector": "p",
+    "before": "外部の英雄詳細ページで確認した待機時間です。原文スキル名を併記し、レベル・変更バージョンは未記載。装備や研究による短縮は含みません。",
+    "after": "スキルレベルとゲームのバージョンは不明です。装備・研究によるクールダウン短縮は含みません。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ja/heroes/jacob/index.html",
+    "selector": "p",
+    "before": "外部の英雄詳細ページで確認した待機時間です。原文スキル名を併記し、レベル・変更バージョンは未記載。装備や研究による短縮は含みません。",
+    "after": "スキルレベルとゲームのバージョンは不明です。装備・研究によるクールダウン短縮は含みません。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ja/heroes/kiki/index.html",
+    "selector": "h2",
+    "before": "データの適用範囲",
+    "after": "適用条件",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ja/heroes/kiki/index.html",
+    "selector": "p",
+    "before": "外部の英雄詳細ページで確認した待機時間です。原文スキル名を併記し、レベル・変更バージョンは未記載。装備や研究による短縮は含みません。",
+    "after": "スキルレベルとゲームのバージョンは不明です。装備・研究によるクールダウン短縮は含みません。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ja/heroes/kiron/index.html",
+    "selector": "p",
+    "before": "外部の英雄詳細ページで確認した待機時間です。原文スキル名を併記し、レベル・変更バージョンは未記載。装備や研究による短縮は含みません。",
+    "after": "スキルレベルとゲームのバージョンは不明です。装備・研究によるクールダウン短縮は含みません。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ja/heroes/knotty/index.html",
+    "selector": "p.ts-evidence-label",
+    "before": "公式の翻訳名を確認できていないため、英語版ゲーム画面の名前を使用しています。",
+    "after": "名前は英語版ゲームの表記です。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ja/heroes/knotty/index.html",
+    "selector": "p",
+    "before": "公式告知・ゲーム画面・コミュニティ記録を区別します。未確認の数値は計算に使用しません。",
+    "after": null,
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ja/heroes/knotty/index.html",
+    "selector": "p.ts-evidence-label",
+    "before": "コミュニティ資料にはスキルレベルの記載がありません。最大レベルの値とは限りません。",
+    "after": "スキルレベル不明。最大レベルの値とは限りません。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ja/heroes/knotty/index.html",
+    "selector": "p.ts-evidence-label",
+    "before": "ゲーム画面",
+    "after": null,
+    "rule": "remove-repeated-evidence-label"
+  },
+  {
+    "route": "ja/heroes/knotty/index.html",
+    "selector": "summary",
+    "before": "ゲーム画面 · 出典を見る",
+    "after": "スキル画面",
+    "rule": "reference-disclosure-label"
+  },
+  {
+    "route": "ja/heroes/knotty/index.html",
+    "selector": "p",
+    "before": "全レベルの費用・星ランク条件・解放時期は未確認です。掲載値は特定段階の観測値です。",
+    "after": "全レベルの費用・星ランク条件・解放時期は未掲載です。数値は表示された段階に適用されます。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ja/heroes/knotty/index.html",
+    "selector": "p",
+    "before": "専用装備の全レベルの効果と費用は未確認です。",
+    "after": "専用装備の全レベルの効果と費用は未掲載です。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ja/heroes/knotty/index.html",
+    "selector": "p",
+    "before": "確認日: 2026-10-09",
+    "after": null,
+    "rule": "remove-internal-check-date"
+  },
+  {
+    "route": "ja/heroes/knotty/index.html",
+    "selector": "h2",
+    "before": "データの適用範囲",
+    "after": "適用条件",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ja/heroes/knotty/index.html",
+    "selector": "p",
+    "before": "海の英雄は陣営シナジーでは全陣営として数えられますが、相性・相性ダメージには適用されません。以下の待機時間はコミュニティ資料で、スキルレベルは未記載です。",
+    "after": "海の英雄は陣営シナジーでは全陣営として扱われますが、陣営相性と相性ダメージには適用されません。クールダウンのスキルレベルは不明です。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ja/heroes/knotty/index.html",
+    "selector": "h2",
+    "before": "観測ステータス",
+    "after": "レベル別能力値",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ja/heroes/knotty/index.html",
+    "selector": "p",
+    "before": "韓国語ゲーム画面で名前「너티」を確認。以下はスキルLv.40、パッシブLv.4、専用装備Lv.15の値で、既存の低レベル観測値とは別です。",
+    "after": "スキルLv.40・パッシブLv.4・専用装備Lv.15の値です。上のスキルパネルにある低レベルの値とは区別してください。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ja/heroes/knotty/index.html",
+    "selector": "summary",
+    "before": "出典・確認日",
+    "after": "スキル画面",
+    "rule": "reference-disclosure-label"
+  },
+  {
+    "route": "ja/heroes/lagnar/index.html",
+    "selector": "p",
+    "before": "全レベルの費用・星ランク条件・解放時期は未確認です。掲載値は特定段階の観測値です。",
+    "after": "全レベルの費用・星ランク条件・解放時期は未掲載です。数値は表示された段階に適用されます。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ja/heroes/lagnar/index.html",
+    "selector": "h2",
+    "before": "データの適用範囲",
+    "after": "適用条件",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ja/heroes/lagnar/index.html",
+    "selector": "p",
+    "before": "海の英雄は陣営シナジーでは全陣営として数えられますが、相性・相性ダメージには適用されません。以下の待機時間はコミュニティ資料で、スキルレベルは未記載です。",
+    "after": "海の英雄は陣営シナジーでは全陣営として扱われますが、陣営相性と相性ダメージには適用されません。クールダウンのスキルレベルは不明です。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ja/heroes/laila/index.html",
+    "selector": "p",
+    "before": "外部の英雄詳細ページで確認した待機時間です。原文スキル名を併記し、レベル・変更バージョンは未記載。装備や研究による短縮は含みません。",
+    "after": "スキルレベルとゲームのバージョンは不明です。装備・研究によるクールダウン短縮は含みません。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ja/heroes/light/index.html",
+    "selector": "p",
+    "before": "外部の英雄詳細ページで確認した待機時間です。原文スキル名を併記し、レベル・変更バージョンは未記載。装備や研究による短縮は含みません。",
+    "after": "スキルレベルとゲームのバージョンは不明です。装備・研究によるクールダウン短縮は含みません。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ja/heroes/lucky/index.html",
+    "selector": "p",
+    "before": "外部の英雄詳細ページで確認した待機時間です。原文スキル名を併記し、レベル・変更バージョンは未記載。装備や研究による短縮は含みません。",
+    "after": "スキルレベルとゲームのバージョンは不明です。装備・研究によるクールダウン短縮は含みません。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ja/heroes/maddy/index.html",
+    "selector": "p",
+    "before": "外部の英雄詳細ページで確認した待機時間です。原文スキル名を併記し、レベル・変更バージョンは未記載。装備や研究による短縮は含みません。",
+    "after": "スキルレベルとゲームのバージョンは不明です。装備・研究によるクールダウン短縮は含みません。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ja/heroes/mike/index.html",
+    "selector": "p",
+    "before": "外部の英雄詳細ページで確認した待機時間です。原文スキル名を併記し、レベル・変更バージョンは未記載。装備や研究による短縮は含みません。",
+    "after": "スキルレベルとゲームのバージョンは不明です。装備・研究によるクールダウン短縮は含みません。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ja/heroes/nikola/index.html",
+    "selector": "p",
+    "before": "外部の英雄詳細ページで確認した待機時間です。原文スキル名を併記し、レベル・変更バージョンは未記載。装備や研究による短縮は含みません。",
+    "after": "スキルレベルとゲームのバージョンは不明です。装備・研究によるクールダウン短縮は含みません。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ja/heroes/ray/index.html",
+    "selector": "p",
+    "before": "外部の英雄詳細ページで確認した待機時間です。原文スキル名を併記し、レベル・変更バージョンは未記載。装備や研究による短縮は含みません。",
+    "after": "スキルレベルとゲームのバージョンは不明です。装備・研究によるクールダウン短縮は含みません。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ja/heroes/rosie/index.html",
+    "selector": "p",
+    "before": "外部の英雄詳細ページで確認した待機時間です。原文スキル名を併記し、レベル・変更バージョンは未記載。装備や研究による短縮は含みません。",
+    "after": "スキルレベルとゲームのバージョンは不明です。装備・研究によるクールダウン短縮は含みません。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ja/heroes/rusty/index.html",
+    "selector": "p",
+    "before": "外部の英雄詳細ページで確認した待機時間です。原文スキル名を併記し、レベル・変更バージョンは未記載。装備や研究による短縮は含みません。",
+    "after": "スキルレベルとゲームのバージョンは不明です。装備・研究によるクールダウン短縮は含みません。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ja/heroes/sarge/index.html",
+    "selector": "p",
+    "before": "外部の英雄詳細ページで確認した待機時間です。原文スキル名を併記し、レベル・変更バージョンは未記載。装備や研究による短縮は含みません。",
+    "after": "スキルレベルとゲームのバージョンは不明です。装備・研究によるクールダウン短縮は含みません。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ja/heroes/shark/index.html",
+    "selector": "p",
+    "before": "全レベルの費用・星ランク条件・解放時期は未確認です。掲載値は特定段階の観測値です。",
+    "after": "全レベルの費用・星ランク条件・解放時期は未掲載です。数値は表示された段階に適用されます。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ja/heroes/shark/index.html",
+    "selector": "h2",
+    "before": "データの適用範囲",
+    "after": "適用条件",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ja/heroes/shark/index.html",
+    "selector": "p",
+    "before": "海の英雄は陣営シナジーでは全陣営として数えられますが、相性・相性ダメージには適用されません。以下の待機時間はコミュニティ資料で、スキルレベルは未記載です。",
+    "after": "海の英雄は陣営シナジーでは全陣営として扱われますが、陣営相性と相性ダメージには適用されません。クールダウンのスキルレベルは不明です。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ja/heroes/shark/index.html",
+    "selector": "p.hero-sub",
+    "before": "シャークは、範囲ダメージ、前線支援、被ダメージ軽減を備えた海系SSR近距離英雄です。",
+    "after": "範囲ダメージ、前列支援、被ダメージ軽減を備えた英雄です。",
+    "rule": "remove-repeated-hero-classification"
+  },
+  {
+    "route": "ja/heroes/shark/index.html",
+    "selector": "p.hero-sub",
+    "before": "スキル、星ランクボーナス、属性、専用装備効果を確認しやすい形で整理しています。",
+    "after": null,
+    "rule": "remove-page-summary-filler"
+  },
+  {
+    "route": "ja/heroes/tara/index.html",
+    "selector": "p",
+    "before": "外部の英雄詳細ページで確認した待機時間です。原文スキル名を併記し、レベル・変更バージョンは未記載。装備や研究による短縮は含みません。",
+    "after": "スキルレベルとゲームのバージョンは不明です。装備・研究によるクールダウン短縮は含みません。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ja/heroes/tarzan/index.html",
+    "selector": "p",
+    "before": "外部の英雄詳細ページで確認した待機時間です。原文スキル名を併記し、レベル・変更バージョンは未記載。装備や研究による短縮は含みません。",
+    "after": "スキルレベルとゲームのバージョンは不明です。装備・研究によるクールダウン短縮は含みません。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ja/heroes/tony/index.html",
+    "selector": "p",
+    "before": "外部の英雄詳細ページで確認した待機時間です。原文スキル名を併記し、レベル・変更バージョンは未記載。装備や研究による短縮は含みません。",
+    "after": "スキルレベルとゲームのバージョンは不明です。装備・研究によるクールダウン短縮は含みません。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ja/heroes/travis/index.html",
+    "selector": "p",
+    "before": "外部の英雄詳細ページで確認した待機時間です。原文スキル名を併記し、レベル・変更バージョンは未記載。装備や研究による短縮は含みません。",
+    "after": "スキルレベルとゲームのバージョンは不明です。装備・研究によるクールダウン短縮は含みません。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ja/heroes/undine/index.html",
+    "selector": "p.ts-evidence-label",
+    "before": "公式の翻訳名を確認できていないため、英語版ゲーム画面の名前を使用しています。",
+    "after": "名前は英語版ゲームの表記です。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ja/heroes/undine/index.html",
+    "selector": "p",
+    "before": "公式告知・ゲーム画面・コミュニティ記録を区別します。未確認の数値は計算に使用しません。",
+    "after": null,
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ja/heroes/undine/index.html",
+    "selector": "p.ts-evidence-label",
+    "before": "コミュニティ資料にはスキルレベルの記載がありません。最大レベルの値とは限りません。",
+    "after": "スキルレベル不明。最大レベルの値とは限りません。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ja/heroes/undine/index.html",
+    "selector": "p.ts-evidence-label",
+    "before": "ゲーム画面",
+    "after": null,
+    "rule": "remove-repeated-evidence-label"
+  },
+  {
+    "route": "ja/heroes/undine/index.html",
+    "selector": "summary",
+    "before": "ゲーム画面 · 出典を見る",
+    "after": "スキル画面",
+    "rule": "reference-disclosure-label"
+  },
+  {
+    "route": "ja/heroes/undine/index.html",
+    "selector": "p",
+    "before": "全レベルの費用・星ランク条件・解放時期は未確認です。掲載値は特定段階の観測値です。",
+    "after": "全レベルの費用・星ランク条件・解放時期は未掲載です。数値は表示された段階に適用されます。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ja/heroes/undine/index.html",
+    "selector": "p",
+    "before": "確認日: 2026-10-09",
+    "after": null,
+    "rule": "remove-internal-check-date"
+  },
+  {
+    "route": "ja/heroes/undine/index.html",
+    "selector": "h2",
+    "before": "データの適用範囲",
+    "after": "適用条件",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ja/heroes/undine/index.html",
+    "selector": "p",
+    "before": "海の英雄は陣営シナジーでは全陣営として数えられますが、相性・相性ダメージには適用されません。以下の待機時間はコミュニティ資料で、スキルレベルは未記載です。",
+    "after": "海の英雄は陣営シナジーでは全陣営として扱われますが、陣営相性と相性ダメージには適用されません。クールダウンのスキルレベルは不明です。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ja/seasons/index.html",
+    "selector": "p",
+    "before": "進行済みシーズンと確認済みシーズン記念碑を見やすく整理した一覧ページです。",
+    "after": "各シーズンの目標、育成システムと主な報酬を確認できます。",
+    "rule": "concise-directory-intro"
+  },
+  {
+    "route": "ja/seasons/season-2/index.html",
+    "selector": "h2",
+    "before": "データの適用範囲",
+    "after": "適用条件",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ja/seasons/season-4/index.html",
+    "selector": "h2",
+    "before": "データの適用範囲",
+    "after": "適用条件",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ja/updates/index.html",
+    "selector": "p",
+    "before": "現在確認できる最新の公式アップデートは、2026年9月17日公開の v2.6.100 です。サーバー進行状況に依存する内容は区別して扱います。",
+    "after": "バージョンごとの変更と開発者ニュースを掲載しています。機能の解放時期はサーバーの進度によって異なります。",
+    "rule": "concise-directory-intro"
+  },
+  {
+    "route": "ru/behemoths/index.html",
+    "selector": "h2",
+    "before": "Применимость данных",
+    "after": "Условия применения",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ru/behemoths/index.html",
+    "selector": "p",
+    "before": "Страница со списком подтверждённых на данный момент бегемотов, собранных в удобном для просмотра виде.",
+    "after": "Сравните типы и эффекты Бегемотов и изучите данные их развития.",
+    "rule": "concise-directory-intro"
+  },
+  {
+    "route": "ru/behemoths/legend-griffin/index.html",
+    "selector": "h2",
+    "before": "Применимость данных",
+    "after": "Условия применения",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ru/behemoths/marine-drake/index.html",
+    "selector": "h2",
+    "before": "Применимость данных",
+    "after": "Условия применения",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ru/buildings/enlistment-office/index.html",
+    "selector": "h2",
+    "before": "Применимость данных",
+    "after": "Условия применения",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ru/buildings/hospital/index.html",
+    "selector": "h2",
+    "before": "Применимость данных",
+    "after": "Условия применения",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ru/buildings/lab/index.html",
+    "selector": "h2",
+    "before": "Применимость данных",
+    "after": "Условия применения",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ru/buildings/power-plant/index.html",
+    "selector": "h2",
+    "before": "Применимость данных",
+    "after": "Условия применения",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ru/database/pet-system/dodo/index.html",
+    "selector": "h2",
+    "before": "Зафиксированные характеристики",
+    "after": "Характеристики по уровням",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ru/database/pet-system/index.html",
+    "selector": "p",
+    "before": "Проверено 2026-10-09 · 7",
+    "after": null,
+    "rule": "remove-internal-check-date"
+  },
+  {
+    "route": "ru/database/pet-system/index.html",
+    "selector": "p.ts-evidence-label",
+    "before": "Корейские имена приведены по сообществу; их соответствие официальному корейскому интерфейсу независимо не проверено.",
+    "after": "Корейские имена приведены по сообществу и могут отличаться от игровых.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ru/database/pet-system/index.html",
+    "selector": "p",
+    "before": "Этап 0 виден на игровом снимке; этапы 1–3 взяты из расшифровки игровых кадров TilesMania. Следующие этапы не экстраполируются.",
+    "after": "Таблица охватывает этапы тренировки 0–3. Значения последующих этапов недоступны.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ru/database/pet-system/index.html",
+    "selector": "h3",
+    "before": "Дополнительное наблюдение: белый медведь (백설)",
+    "after": "Белый медведь (백설)",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ru/database/pet-system/index.html",
+    "selector": "p",
+    "before": "Есть в записях игровых кадров TilesMania. Исходное изображение и официальные условия получения не проверены, поэтому отдельная страница пока не опубликована.",
+    "after": "Условия получения и подробные характеристики белого медведя (백설) недоступны.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ru/database/pet-system/index.html",
+    "selector": "p",
+    "before": "Данные расшифрованы сообществом из игрового видео. Опыт 86→87 неизвестен: расчёт через этот этап заблокирован. Накопление начинается с 41 и прекращается на пропуске. Различия между питомцами не подтверждены. Предположения о бонусе этапа 4 и стоимости этапа 5 исключены.",
+    "after": "Опыт для 86→87 недоступен, поэтому расчёты через этот промежуток невозможны. Накопительный итог начинается с уровня 41 и обрывается перед пропуском. Различия между питомцами, бонус этапа тренировки 4 и стоимость этапа 5 неизвестны.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ru/database/pet-system/starhorn/index.html",
+    "selector": "p",
+    "before": "Расшифровка игрового экрана сообществом: Star Wish в начале боя даёт переднему ряду +20% защиты, заднему +8% атаки на 10 секунд. Уровень навыка не подтверждён.",
+    "after": "Star Wish в начале боя даёт переднему ряду +20% защиты, заднему +8% атаки на 10 секунд. Уровень навыка неизвестен.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ru/database/pet-system/starhorn/index.html",
+    "selector": "p",
+    "before": "Официальные объявления, игровые снимки и записи сообщества помечены отдельно. Непроверенные значения не участвуют в расчётах.",
+    "after": null,
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ru/database/pet-system/starhorn/index.html",
+    "selector": "p",
+    "before": "Полные затраты по уровням, условия звёзд и сроки открытия пока не проверены. Ниже приведены отдельные наблюдаемые этапы.",
+    "after": "Полные затраты по уровням, условия звёзд и сроки открытия недоступны. Значения относятся к указанным этапам.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ru/database/pet-system/starhorn/index.html",
+    "selector": "h2",
+    "before": "Зафиксированные характеристики",
+    "after": "Характеристики по уровням",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ru/events/index.html",
+    "selector": "p",
+    "before": "Подтверждённые изменения отделены от расписаний и значений, которые ещё нужно проверить в игре.",
+    "after": "Правила событий и изменения игровых систем. Сроки открытия зависят от прогресса сервера.",
+    "rule": "concise-directory-intro"
+  },
+  {
+    "route": "ru/heroes/beka/index.html",
+    "selector": "p",
+    "before": "Перезарядки проверены на внешней странице героя. Сохранены исходные названия навыков; уровни и версии изменений не указаны. Сокращения от снаряжения и исследований не учитываются.",
+    "after": "Уровни навыков и версия игры не указаны. Сокращение перезарядки от снаряжения и исследований не учитывается.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ru/heroes/candy/index.html",
+    "selector": "h2",
+    "before": "Применимость данных",
+    "after": "Условия применения",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ru/heroes/candy/index.html",
+    "selector": "p",
+    "before": "Перезарядки проверены на внешней странице героя. Сохранены исходные названия навыков; уровни и версии изменений не указаны. Сокращения от снаряжения и исследований не учитываются.",
+    "after": "Уровни навыков и версия игры не указаны. Сокращение перезарядки от снаряжения и исследований не учитывается.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ru/heroes/chef-ken/index.html",
+    "selector": "p",
+    "before": "Перезарядки проверены на внешней странице героя. Сохранены исходные названия навыков; уровни и версии изменений не указаны. Сокращения от снаряжения и исследований не учитываются.",
+    "after": "Уровни навыков и версия игры не указаны. Сокращение перезарядки от снаряжения и исследований не учитывается.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ru/heroes/eva/index.html",
+    "selector": "p",
+    "before": "Перезарядки проверены на внешней странице героя. Сохранены исходные названия навыков; уровни и версии изменений не указаны. Сокращения от снаряжения и исследований не учитываются.",
+    "after": "Уровни навыков и версия игры не указаны. Сокращение перезарядки от снаряжения и исследований не учитывается.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ru/heroes/freya/index.html",
+    "selector": "p",
+    "before": "Перезарядки проверены на внешней странице героя. Сохранены исходные названия навыков; уровни и версии изменений не указаны. Сокращения от снаряжения и исследований не учитываются.",
+    "after": "Уровни навыков и версия игры не указаны. Сокращение перезарядки от снаряжения и исследований не учитывается.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ru/heroes/ghost/index.html",
+    "selector": "p",
+    "before": "Перезарядки проверены на внешней странице героя. Сохранены исходные названия навыков; уровни и версии изменений не указаны. Сокращения от снаряжения и исследований не учитываются.",
+    "after": "Уровни навыков и версия игры не указаны. Сокращение перезарядки от снаряжения и исследований не учитывается.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ru/heroes/jacob/index.html",
+    "selector": "p",
+    "before": "Перезарядки проверены на внешней странице героя. Сохранены исходные названия навыков; уровни и версии изменений не указаны. Сокращения от снаряжения и исследований не учитываются.",
+    "after": "Уровни навыков и версия игры не указаны. Сокращение перезарядки от снаряжения и исследований не учитывается.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ru/heroes/kiki/index.html",
+    "selector": "h2",
+    "before": "Применимость данных",
+    "after": "Условия применения",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ru/heroes/kiki/index.html",
+    "selector": "p",
+    "before": "Перезарядки проверены на внешней странице героя. Сохранены исходные названия навыков; уровни и версии изменений не указаны. Сокращения от снаряжения и исследований не учитываются.",
+    "after": "Уровни навыков и версия игры не указаны. Сокращение перезарядки от снаряжения и исследований не учитывается.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ru/heroes/kiron/index.html",
+    "selector": "p",
+    "before": "Перезарядки проверены на внешней странице героя. Сохранены исходные названия навыков; уровни и версии изменений не указаны. Сокращения от снаряжения и исследований не учитываются.",
+    "after": "Уровни навыков и версия игры не указаны. Сокращение перезарядки от снаряжения и исследований не учитывается.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ru/heroes/knotty/index.html",
+    "selector": "p.ts-evidence-label",
+    "before": "До проверки официальных локализованных имён используются имена с английского игрового экрана.",
+    "after": "Имена соответствуют английской версии игры.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ru/heroes/knotty/index.html",
+    "selector": "p",
+    "before": "Официальные объявления, игровые снимки и записи сообщества помечены отдельно. Непроверенные значения не участвуют в расчётах.",
+    "after": null,
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ru/heroes/knotty/index.html",
+    "selector": "p.ts-evidence-label",
+    "before": "Источник сообщества не указывает уровень навыка. Это не подтверждённое значение максимального уровня.",
+    "after": "Уровень навыка неизвестен; значения могут не соответствовать максимальному уровню.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ru/heroes/knotty/index.html",
+    "selector": "p.ts-evidence-label",
+    "before": "Игровой снимок",
+    "after": null,
+    "rule": "remove-repeated-evidence-label"
+  },
+  {
+    "route": "ru/heroes/knotty/index.html",
+    "selector": "summary",
+    "before": "Игровой снимок · Открыть источник",
+    "after": "Снимки навыков",
+    "rule": "reference-disclosure-label"
+  },
+  {
+    "route": "ru/heroes/knotty/index.html",
+    "selector": "p",
+    "before": "Полные затраты по уровням, условия звёзд и сроки открытия пока не проверены. Ниже приведены отдельные наблюдаемые этапы.",
+    "after": "Полные затраты по уровням, условия звёзд и сроки открытия недоступны. Значения относятся к указанным этапам.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ru/heroes/knotty/index.html",
+    "selector": "p",
+    "before": "Полные эффекты и затраты эксклюзивного снаряжения по уровням не проверены.",
+    "after": "Полные эффекты и затраты особого снаряжения по уровням недоступны.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ru/heroes/knotty/index.html",
+    "selector": "p",
+    "before": "Проверено: 2026-10-09",
+    "after": null,
+    "rule": "remove-internal-check-date"
+  },
+  {
+    "route": "ru/heroes/knotty/index.html",
+    "selector": "h2",
+    "before": "Применимость данных",
+    "after": "Условия применения",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ru/heroes/knotty/index.html",
+    "selector": "p",
+    "before": "Морские герои учитываются как любая фракция для синергии, но не для контрфракций и соответствующего урона. Перезарядки ниже взяты из страниц сообщества; уровни навыков не указаны.",
+    "after": "Морские герои считаются представителями всех фракций для синергии, но не для преимущества фракций и его бонуса к урону. Уровни навыков для перезарядок не указаны.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ru/heroes/knotty/index.html",
+    "selector": "h2",
+    "before": "Зафиксированные характеристики",
+    "after": "Характеристики по уровням",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ru/heroes/knotty/index.html",
+    "selector": "p",
+    "before": "Имя 너티 подтверждено корейским интерфейсом. Ниже значения навыков ур.40, пассивного ур.4 и снаряжения ур.15; они отделены от прежних наблюдений низких уровней.",
+    "after": "Навыки ур.40 · пассивный навык ур.4 · особое снаряжение ур.15. Эти значения отличаются от значений низких уровней в панелях навыков выше.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ru/heroes/knotty/index.html",
+    "selector": "summary",
+    "before": "Источник и дата проверки",
+    "after": "Снимки навыков",
+    "rule": "reference-disclosure-label"
+  },
+  {
+    "route": "ru/heroes/lagnar/index.html",
+    "selector": "p",
+    "before": "Полные затраты по уровням, условия звёзд и сроки открытия пока не проверены. Ниже приведены отдельные наблюдаемые этапы.",
+    "after": "Полные затраты по уровням, условия звёзд и сроки открытия недоступны. Значения относятся к указанным этапам.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ru/heroes/lagnar/index.html",
+    "selector": "h2",
+    "before": "Применимость данных",
+    "after": "Условия применения",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ru/heroes/lagnar/index.html",
+    "selector": "p",
+    "before": "Морские герои учитываются как любая фракция для синергии, но не для контрфракций и соответствующего урона. Перезарядки ниже взяты из страниц сообщества; уровни навыков не указаны.",
+    "after": "Морские герои считаются представителями всех фракций для синергии, но не для преимущества фракций и его бонуса к урону. Уровни навыков для перезарядок не указаны.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ru/heroes/laila/index.html",
+    "selector": "p",
+    "before": "Перезарядки проверены на внешней странице героя. Сохранены исходные названия навыков; уровни и версии изменений не указаны. Сокращения от снаряжения и исследований не учитываются.",
+    "after": "Уровни навыков и версия игры не указаны. Сокращение перезарядки от снаряжения и исследований не учитывается.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ru/heroes/light/index.html",
+    "selector": "p",
+    "before": "Перезарядки проверены на внешней странице героя. Сохранены исходные названия навыков; уровни и версии изменений не указаны. Сокращения от снаряжения и исследований не учитываются.",
+    "after": "Уровни навыков и версия игры не указаны. Сокращение перезарядки от снаряжения и исследований не учитывается.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ru/heroes/lucky/index.html",
+    "selector": "p",
+    "before": "Перезарядки проверены на внешней странице героя. Сохранены исходные названия навыков; уровни и версии изменений не указаны. Сокращения от снаряжения и исследований не учитываются.",
+    "after": "Уровни навыков и версия игры не указаны. Сокращение перезарядки от снаряжения и исследований не учитывается.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ru/heroes/maddy/index.html",
+    "selector": "p",
+    "before": "Перезарядки проверены на внешней странице героя. Сохранены исходные названия навыков; уровни и версии изменений не указаны. Сокращения от снаряжения и исследований не учитываются.",
+    "after": "Уровни навыков и версия игры не указаны. Сокращение перезарядки от снаряжения и исследований не учитывается.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ru/heroes/mike/index.html",
+    "selector": "p",
+    "before": "Перезарядки проверены на внешней странице героя. Сохранены исходные названия навыков; уровни и версии изменений не указаны. Сокращения от снаряжения и исследований не учитываются.",
+    "after": "Уровни навыков и версия игры не указаны. Сокращение перезарядки от снаряжения и исследований не учитывается.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ru/heroes/nikola/index.html",
+    "selector": "p",
+    "before": "Перезарядки проверены на внешней странице героя. Сохранены исходные названия навыков; уровни и версии изменений не указаны. Сокращения от снаряжения и исследований не учитываются.",
+    "after": "Уровни навыков и версия игры не указаны. Сокращение перезарядки от снаряжения и исследований не учитывается.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ru/heroes/ray/index.html",
+    "selector": "p",
+    "before": "Перезарядки проверены на внешней странице героя. Сохранены исходные названия навыков; уровни и версии изменений не указаны. Сокращения от снаряжения и исследований не учитываются.",
+    "after": "Уровни навыков и версия игры не указаны. Сокращение перезарядки от снаряжения и исследований не учитывается.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ru/heroes/rosie/index.html",
+    "selector": "p",
+    "before": "Перезарядки проверены на внешней странице героя. Сохранены исходные названия навыков; уровни и версии изменений не указаны. Сокращения от снаряжения и исследований не учитываются.",
+    "after": "Уровни навыков и версия игры не указаны. Сокращение перезарядки от снаряжения и исследований не учитывается.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ru/heroes/rusty/index.html",
+    "selector": "p",
+    "before": "Перезарядки проверены на внешней странице героя. Сохранены исходные названия навыков; уровни и версии изменений не указаны. Сокращения от снаряжения и исследований не учитываются.",
+    "after": "Уровни навыков и версия игры не указаны. Сокращение перезарядки от снаряжения и исследований не учитывается.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ru/heroes/sarge/index.html",
+    "selector": "p",
+    "before": "Перезарядки проверены на внешней странице героя. Сохранены исходные названия навыков; уровни и версии изменений не указаны. Сокращения от снаряжения и исследований не учитываются.",
+    "after": "Уровни навыков и версия игры не указаны. Сокращение перезарядки от снаряжения и исследований не учитывается.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ru/heroes/shark/index.html",
+    "selector": "p",
+    "before": "Полные затраты по уровням, условия звёзд и сроки открытия пока не проверены. Ниже приведены отдельные наблюдаемые этапы.",
+    "after": "Полные затраты по уровням, условия звёзд и сроки открытия недоступны. Значения относятся к указанным этапам.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ru/heroes/shark/index.html",
+    "selector": "h2",
+    "before": "Применимость данных",
+    "after": "Условия применения",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ru/heroes/shark/index.html",
+    "selector": "p",
+    "before": "Морские герои учитываются как любая фракция для синергии, но не для контрфракций и соответствующего урона. Перезарядки ниже взяты из страниц сообщества; уровни навыков не указаны.",
+    "after": "Морские герои считаются представителями всех фракций для синергии, но не для преимущества фракций и его бонуса к урону. Уровни навыков для перезарядок не указаны.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ru/heroes/shark/index.html",
+    "selector": "p.hero-sub",
+    "before": "Shark — SSR герой Sea ближнего боя с уроном по области, поддержкой передней линии и снижением входящего урона.",
+    "after": "Герой с уроном по области, поддержкой переднего ряда и снижением входящего урона.",
+    "rule": "remove-repeated-hero-classification"
+  },
+  {
+    "route": "ru/heroes/shark/index.html",
+    "selector": "p.hero-sub",
+    "before": "На странице собраны ключевые значения навыков, звёздный бонус, характеристики и эффекты эксклюзивного снаряжения.",
+    "after": null,
+    "rule": "remove-page-summary-filler"
+  },
+  {
+    "route": "ru/heroes/tara/index.html",
+    "selector": "p",
+    "before": "Перезарядки проверены на внешней странице героя. Сохранены исходные названия навыков; уровни и версии изменений не указаны. Сокращения от снаряжения и исследований не учитываются.",
+    "after": "Уровни навыков и версия игры не указаны. Сокращение перезарядки от снаряжения и исследований не учитывается.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ru/heroes/tarzan/index.html",
+    "selector": "p",
+    "before": "Перезарядки проверены на внешней странице героя. Сохранены исходные названия навыков; уровни и версии изменений не указаны. Сокращения от снаряжения и исследований не учитываются.",
+    "after": "Уровни навыков и версия игры не указаны. Сокращение перезарядки от снаряжения и исследований не учитывается.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ru/heroes/tony/index.html",
+    "selector": "p",
+    "before": "Перезарядки проверены на внешней странице героя. Сохранены исходные названия навыков; уровни и версии изменений не указаны. Сокращения от снаряжения и исследований не учитываются.",
+    "after": "Уровни навыков и версия игры не указаны. Сокращение перезарядки от снаряжения и исследований не учитывается.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ru/heroes/travis/index.html",
+    "selector": "p",
+    "before": "Перезарядки проверены на внешней странице героя. Сохранены исходные названия навыков; уровни и версии изменений не указаны. Сокращения от снаряжения и исследований не учитываются.",
+    "after": "Уровни навыков и версия игры не указаны. Сокращение перезарядки от снаряжения и исследований не учитывается.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ru/heroes/undine/index.html",
+    "selector": "p.ts-evidence-label",
+    "before": "До проверки официальных локализованных имён используются имена с английского игрового экрана.",
+    "after": "Имена соответствуют английской версии игры.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ru/heroes/undine/index.html",
+    "selector": "p",
+    "before": "Официальные объявления, игровые снимки и записи сообщества помечены отдельно. Непроверенные значения не участвуют в расчётах.",
+    "after": null,
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ru/heroes/undine/index.html",
+    "selector": "p.ts-evidence-label",
+    "before": "Источник сообщества не указывает уровень навыка. Это не подтверждённое значение максимального уровня.",
+    "after": "Уровень навыка неизвестен; значения могут не соответствовать максимальному уровню.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ru/heroes/undine/index.html",
+    "selector": "p.ts-evidence-label",
+    "before": "Игровой снимок",
+    "after": null,
+    "rule": "remove-repeated-evidence-label"
+  },
+  {
+    "route": "ru/heroes/undine/index.html",
+    "selector": "summary",
+    "before": "Игровой снимок · Открыть источник",
+    "after": "Снимки навыков",
+    "rule": "reference-disclosure-label"
+  },
+  {
+    "route": "ru/heroes/undine/index.html",
+    "selector": "p",
+    "before": "Полные затраты по уровням, условия звёзд и сроки открытия пока не проверены. Ниже приведены отдельные наблюдаемые этапы.",
+    "after": "Полные затраты по уровням, условия звёзд и сроки открытия недоступны. Значения относятся к указанным этапам.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ru/heroes/undine/index.html",
+    "selector": "p",
+    "before": "Проверено: 2026-10-09",
+    "after": null,
+    "rule": "remove-internal-check-date"
+  },
+  {
+    "route": "ru/heroes/undine/index.html",
+    "selector": "h2",
+    "before": "Применимость данных",
+    "after": "Условия применения",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ru/heroes/undine/index.html",
+    "selector": "p",
+    "before": "Морские герои учитываются как любая фракция для синергии, но не для контрфракций и соответствующего урона. Перезарядки ниже взяты из страниц сообщества; уровни навыков не указаны.",
+    "after": "Морские герои считаются представителями всех фракций для синергии, но не для преимущества фракций и его бонуса к урону. Уровни навыков для перезарядок не указаны.",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ru/seasons/index.html",
+    "selector": "p",
+    "before": "Полная сводка текущих и подтверждённых сезонов",
+    "after": "Цели, системы развития и основные награды каждого сезона.",
+    "rule": "concise-directory-intro"
+  },
+  {
+    "route": "ru/seasons/season-2/index.html",
+    "selector": "h2",
+    "before": "Применимость данных",
+    "after": "Условия применения",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ru/seasons/season-4/index.html",
+    "selector": "h2",
+    "before": "Применимость данных",
+    "after": "Условия применения",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "ru/updates/index.html",
+    "selector": "p",
+    "before": "Последнее подтверждённое официальное обновление — v2.6.100 от 17 сентября 2026 года. Функции, зависящие от прогресса State, отмечаются отдельно.",
+    "after": "Изменения версий и новости разработчиков. Сроки открытия функций могут зависеть от прогресса сервера.",
+    "rule": "concise-directory-intro"
+  },
+  {
+    "route": "zh-tw/behemoths/index.html",
+    "selector": "h2",
+    "before": "資料適用範圍",
+    "after": "適用條件",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "zh-tw/behemoths/index.html",
+    "selector": "p",
+    "before": "這是一頁整理目前已確認巨獸的列表頁，方便快速查看與後續擴充。",
+    "after": "比較巨獸的種類與效果，並查看各巨獸的成長資料。",
+    "rule": "concise-directory-intro"
+  },
+  {
+    "route": "zh-tw/behemoths/legend-griffin/index.html",
+    "selector": "h2",
+    "before": "資料適用範圍",
+    "after": "適用條件",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "zh-tw/behemoths/marine-drake/index.html",
+    "selector": "h2",
+    "before": "資料適用範圍",
+    "after": "適用條件",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "zh-tw/buildings/blessed-healing-stele/index.html",
+    "selector": "p",
+    "before": "整理目前已確認的核心效果。",
+    "after": null,
+    "rule": "remove-empty-building-intro"
+  },
+  {
+    "route": "zh-tw/buildings/comms-outpost/index.html",
+    "selector": "p",
+    "before": "先整理目前已確認的基本功能。",
+    "after": null,
+    "rule": "remove-empty-building-intro"
+  },
+  {
+    "route": "zh-tw/buildings/enlistment-office/index.html",
+    "selector": "h2",
+    "before": "資料適用範圍",
+    "after": "適用條件",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "zh-tw/buildings/hospital/index.html",
+    "selector": "h2",
+    "before": "資料適用範圍",
+    "after": "適用條件",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "zh-tw/buildings/lab/index.html",
+    "selector": "h2",
+    "before": "資料適用範圍",
+    "after": "適用條件",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "zh-tw/buildings/power-plant/index.html",
+    "selector": "h2",
+    "before": "資料適用範圍",
+    "after": "適用條件",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "zh-tw/database/pet-system/dodo/index.html",
+    "selector": "h2",
+    "before": "觀測屬性",
+    "after": "各等級能力值",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "zh-tw/database/pet-system/index.html",
+    "selector": "p",
+    "before": "確認日期 2026-10-09 · 7",
+    "after": null,
+    "rule": "remove-internal-check-date"
+  },
+  {
+    "route": "zh-tw/database/pet-system/index.html",
+    "selector": "p.ts-evidence-label",
+    "before": "韓文名稱採用社群用法，尚未獨立核實韓文遊戲介面的官方名稱。",
+    "after": "韓文名稱採用社群用法，可能與遊戲內名稱不同。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "zh-tw/database/pet-system/index.html",
+    "selector": "p",
+    "before": "階段0可在遊戲畫面中確認；階段1至3來自TilesMania的遊戲畫面判讀。未推算後續階段。",
+    "after": "表格涵蓋訓練階段0至3，後續階段數值尚未提供。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "zh-tw/database/pet-system/index.html",
+    "selector": "h3",
+    "before": "額外觀測：北極熊（백설）",
+    "after": "白雪（北極熊）",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "zh-tw/database/pet-system/index.html",
+    "selector": "p",
+    "before": "出現在TilesMania的遊戲畫面記錄中。原始圖片及官方取得條件尚未確認，因此未建立獨立圖鑑頁面。",
+    "after": "白雪（北極熊）的取得條件與詳細能力值尚未提供。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "zh-tw/database/pet-system/index.html",
+    "selector": "p",
+    "before": "資料來自社群對遊戲影片的判讀。86→87級經驗缺漏，包含此區間時無法計算。累計由41級起算，缺漏之後不顯示。寵物間差異待確認。原文推算的訓練4階加成與5階費用已排除。",
+    "after": "未提供86→87級經驗，因此不支援包含此區間的計算。累計從41級開始，缺漏區間之後不顯示。各寵物的差異、訓練階段4加成與階段5費用均不明。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "zh-tw/database/pet-system/starhorn/index.html",
+    "selector": "p",
+    "before": "社群遊戲畫面記錄：Star Wish於戰鬥開始時，使前排防禦+20%、後排攻擊+8%，持續10秒。技能等級未確認。",
+    "after": "Star Wish：戰鬥開始時，前排防禦+20%、後排攻擊+8%，持續10秒。技能等級不明。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "zh-tw/database/pet-system/starhorn/index.html",
+    "selector": "p",
+    "before": "官方公告、遊戲畫面及社群記錄分別標示。未確認的數值不參與計算。",
+    "after": null,
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "zh-tw/database/pet-system/starhorn/index.html",
+    "selector": "p",
+    "before": "完整等級費用、升星條件與解鎖時間尚未確認。以下數值僅代表已觀測的特定階段。",
+    "after": "未提供完整等級費用、升星條件與解鎖時間。數值僅適用於所標示的階段。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "zh-tw/database/pet-system/starhorn/index.html",
+    "selector": "h2",
+    "before": "觀測屬性",
+    "after": "各等級能力值",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "zh-tw/events/index.html",
+    "selector": "p",
+    "before": "本站會分開標示官方確認的變更，以及仍需在遊戲內確認的時間與數值。",
+    "after": "查看活動規則與系統變更。開放時程依伺服器進度而定。",
+    "rule": "concise-directory-intro"
+  },
+  {
+    "route": "zh-tw/heroes/beka/index.html",
+    "selector": "p",
+    "before": "冷卻時間已核對外部英雄詳細頁，保留原文技能名稱；未標示技能等級與變更版本，不包含裝備或研究帶來的冷卻縮減。",
+    "after": "技能等級與遊戲版本不明，不包含裝備或研究帶來的冷卻縮減。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "zh-tw/heroes/candy/index.html",
+    "selector": "h2",
+    "before": "資料適用範圍",
+    "after": "適用條件",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "zh-tw/heroes/candy/index.html",
+    "selector": "p",
+    "before": "冷卻時間已核對外部英雄詳細頁，保留原文技能名稱；未標示技能等級與變更版本，不包含裝備或研究帶來的冷卻縮減。",
+    "after": "技能等級與遊戲版本不明，不包含裝備或研究帶來的冷卻縮減。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "zh-tw/heroes/chef-ken/index.html",
+    "selector": "p",
+    "before": "冷卻時間已核對外部英雄詳細頁，保留原文技能名稱；未標示技能等級與變更版本，不包含裝備或研究帶來的冷卻縮減。",
+    "after": "技能等級與遊戲版本不明，不包含裝備或研究帶來的冷卻縮減。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "zh-tw/heroes/eva/index.html",
+    "selector": "p",
+    "before": "冷卻時間已核對外部英雄詳細頁，保留原文技能名稱；未標示技能等級與變更版本，不包含裝備或研究帶來的冷卻縮減。",
+    "after": "技能等級與遊戲版本不明，不包含裝備或研究帶來的冷卻縮減。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "zh-tw/heroes/freya/index.html",
+    "selector": "p",
+    "before": "冷卻時間已核對外部英雄詳細頁，保留原文技能名稱；未標示技能等級與變更版本，不包含裝備或研究帶來的冷卻縮減。",
+    "after": "技能等級與遊戲版本不明，不包含裝備或研究帶來的冷卻縮減。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "zh-tw/heroes/ghost/index.html",
+    "selector": "p",
+    "before": "冷卻時間已核對外部英雄詳細頁，保留原文技能名稱；未標示技能等級與變更版本，不包含裝備或研究帶來的冷卻縮減。",
+    "after": "技能等級與遊戲版本不明，不包含裝備或研究帶來的冷卻縮減。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "zh-tw/heroes/jacob/index.html",
+    "selector": "p",
+    "before": "冷卻時間已核對外部英雄詳細頁，保留原文技能名稱；未標示技能等級與變更版本，不包含裝備或研究帶來的冷卻縮減。",
+    "after": "技能等級與遊戲版本不明，不包含裝備或研究帶來的冷卻縮減。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "zh-tw/heroes/kiki/index.html",
+    "selector": "h2",
+    "before": "資料適用範圍",
+    "after": "適用條件",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "zh-tw/heroes/kiki/index.html",
+    "selector": "p",
+    "before": "冷卻時間已核對外部英雄詳細頁，保留原文技能名稱；未標示技能等級與變更版本，不包含裝備或研究帶來的冷卻縮減。",
+    "after": "技能等級與遊戲版本不明，不包含裝備或研究帶來的冷卻縮減。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "zh-tw/heroes/kiron/index.html",
+    "selector": "p",
+    "before": "冷卻時間已核對外部英雄詳細頁，保留原文技能名稱；未標示技能等級與變更版本，不包含裝備或研究帶來的冷卻縮減。",
+    "after": "技能等級與遊戲版本不明，不包含裝備或研究帶來的冷卻縮減。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "zh-tw/heroes/knotty/index.html",
+    "selector": "p.ts-evidence-label",
+    "before": "尚未確認官方本地化名稱，因此保留英文遊戲畫面中的名稱。",
+    "after": "名稱採用英文版遊戲的表記。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "zh-tw/heroes/knotty/index.html",
+    "selector": "p",
+    "before": "官方公告、遊戲畫面及社群記錄分別標示。未確認的數值不參與計算。",
+    "after": null,
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "zh-tw/heroes/knotty/index.html",
+    "selector": "p.ts-evidence-label",
+    "before": "社群來源未標示技能等級，不能視為已確認的滿級數值。",
+    "after": "技能等級不明，數值不一定適用於滿級。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "zh-tw/heroes/knotty/index.html",
+    "selector": "p.ts-evidence-label",
+    "before": "遊戲畫面",
+    "after": null,
+    "rule": "remove-repeated-evidence-label"
+  },
+  {
+    "route": "zh-tw/heroes/knotty/index.html",
+    "selector": "summary",
+    "before": "遊戲畫面 · 查看來源",
+    "after": "技能畫面",
+    "rule": "reference-disclosure-label"
+  },
+  {
+    "route": "zh-tw/heroes/knotty/index.html",
+    "selector": "p",
+    "before": "完整等級費用、升星條件與解鎖時間尚未確認。以下數值僅代表已觀測的特定階段。",
+    "after": "未提供完整等級費用、升星條件與解鎖時間。數值僅適用於所標示的階段。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "zh-tw/heroes/knotty/index.html",
+    "selector": "p",
+    "before": "專屬裝備的完整等級效果與費用尚未確認。",
+    "after": "尚未提供專屬裝備各等級的完整效果與費用。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "zh-tw/heroes/knotty/index.html",
+    "selector": "p",
+    "before": "確認日期: 2026-10-09",
+    "after": null,
+    "rule": "remove-internal-check-date"
+  },
+  {
+    "route": "zh-tw/heroes/knotty/index.html",
+    "selector": "h2",
+    "before": "資料適用範圍",
+    "after": "適用條件",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "zh-tw/heroes/knotty/index.html",
+    "selector": "p",
+    "before": "海洋英雄在陣營協同中可視為任何陣營，但不適用於陣營克制及克制傷害。下列冷卻時間來自社群英雄頁面，未標示技能等級。",
+    "after": "海洋英雄在陣營協同中視為所有陣營，但不適用於陣營剋制及其傷害加成。冷卻時間的技能等級未標示。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "zh-tw/heroes/knotty/index.html",
+    "selector": "h2",
+    "before": "觀測屬性",
+    "after": "各等級能力值",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "zh-tw/heroes/knotty/index.html",
+    "selector": "p",
+    "before": "韓文遊戲畫面確認名稱為「너티」。下列數值為技能Lv.40、被動Lv.4及專屬裝備Lv.15，與既有低等級觀測值分開列示。",
+    "after": "技能Lv.40、被動Lv.4、專屬裝備Lv.15的數值。請與上方技能面板的低等級數值分開參考。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "zh-tw/heroes/knotty/index.html",
+    "selector": "summary",
+    "before": "來源與確認日期",
+    "after": "技能畫面",
+    "rule": "reference-disclosure-label"
+  },
+  {
+    "route": "zh-tw/heroes/lagnar/index.html",
+    "selector": "p",
+    "before": "完整等級費用、升星條件與解鎖時間尚未確認。以下數值僅代表已觀測的特定階段。",
+    "after": "未提供完整等級費用、升星條件與解鎖時間。數值僅適用於所標示的階段。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "zh-tw/heroes/lagnar/index.html",
+    "selector": "h2",
+    "before": "資料適用範圍",
+    "after": "適用條件",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "zh-tw/heroes/lagnar/index.html",
+    "selector": "p",
+    "before": "海洋英雄在陣營協同中可視為任何陣營，但不適用於陣營克制及克制傷害。下列冷卻時間來自社群英雄頁面，未標示技能等級。",
+    "after": "海洋英雄在陣營協同中視為所有陣營，但不適用於陣營剋制及其傷害加成。冷卻時間的技能等級未標示。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "zh-tw/heroes/laila/index.html",
+    "selector": "p",
+    "before": "冷卻時間已核對外部英雄詳細頁，保留原文技能名稱；未標示技能等級與變更版本，不包含裝備或研究帶來的冷卻縮減。",
+    "after": "技能等級與遊戲版本不明，不包含裝備或研究帶來的冷卻縮減。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "zh-tw/heroes/light/index.html",
+    "selector": "p",
+    "before": "冷卻時間已核對外部英雄詳細頁，保留原文技能名稱；未標示技能等級與變更版本，不包含裝備或研究帶來的冷卻縮減。",
+    "after": "技能等級與遊戲版本不明，不包含裝備或研究帶來的冷卻縮減。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "zh-tw/heroes/lucky/index.html",
+    "selector": "p",
+    "before": "冷卻時間已核對外部英雄詳細頁，保留原文技能名稱；未標示技能等級與變更版本，不包含裝備或研究帶來的冷卻縮減。",
+    "after": "技能等級與遊戲版本不明，不包含裝備或研究帶來的冷卻縮減。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "zh-tw/heroes/maddy/index.html",
+    "selector": "p",
+    "before": "冷卻時間已核對外部英雄詳細頁，保留原文技能名稱；未標示技能等級與變更版本，不包含裝備或研究帶來的冷卻縮減。",
+    "after": "技能等級與遊戲版本不明，不包含裝備或研究帶來的冷卻縮減。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "zh-tw/heroes/mike/index.html",
+    "selector": "p",
+    "before": "冷卻時間已核對外部英雄詳細頁，保留原文技能名稱；未標示技能等級與變更版本，不包含裝備或研究帶來的冷卻縮減。",
+    "after": "技能等級與遊戲版本不明，不包含裝備或研究帶來的冷卻縮減。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "zh-tw/heroes/nikola/index.html",
+    "selector": "p",
+    "before": "冷卻時間已核對外部英雄詳細頁，保留原文技能名稱；未標示技能等級與變更版本，不包含裝備或研究帶來的冷卻縮減。",
+    "after": "技能等級與遊戲版本不明，不包含裝備或研究帶來的冷卻縮減。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "zh-tw/heroes/ray/index.html",
+    "selector": "p",
+    "before": "冷卻時間已核對外部英雄詳細頁，保留原文技能名稱；未標示技能等級與變更版本，不包含裝備或研究帶來的冷卻縮減。",
+    "after": "技能等級與遊戲版本不明，不包含裝備或研究帶來的冷卻縮減。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "zh-tw/heroes/rosie/index.html",
+    "selector": "p",
+    "before": "冷卻時間已核對外部英雄詳細頁，保留原文技能名稱；未標示技能等級與變更版本，不包含裝備或研究帶來的冷卻縮減。",
+    "after": "技能等級與遊戲版本不明，不包含裝備或研究帶來的冷卻縮減。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "zh-tw/heroes/rusty/index.html",
+    "selector": "p",
+    "before": "冷卻時間已核對外部英雄詳細頁，保留原文技能名稱；未標示技能等級與變更版本，不包含裝備或研究帶來的冷卻縮減。",
+    "after": "技能等級與遊戲版本不明，不包含裝備或研究帶來的冷卻縮減。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "zh-tw/heroes/sarge/index.html",
+    "selector": "p",
+    "before": "冷卻時間已核對外部英雄詳細頁，保留原文技能名稱；未標示技能等級與變更版本，不包含裝備或研究帶來的冷卻縮減。",
+    "after": "技能等級與遊戲版本不明，不包含裝備或研究帶來的冷卻縮減。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "zh-tw/heroes/shark/index.html",
+    "selector": "p",
+    "before": "完整等級費用、升星條件與解鎖時間尚未確認。以下數值僅代表已觀測的特定階段。",
+    "after": "未提供完整等級費用、升星條件與解鎖時間。數值僅適用於所標示的階段。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "zh-tw/heroes/shark/index.html",
+    "selector": "h2",
+    "before": "資料適用範圍",
+    "after": "適用條件",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "zh-tw/heroes/shark/index.html",
+    "selector": "p",
+    "before": "海洋英雄在陣營協同中可視為任何陣營，但不適用於陣營克制及克制傷害。下列冷卻時間來自社群英雄頁面，未標示技能等級。",
+    "after": "海洋英雄在陣營協同中視為所有陣營，但不適用於陣營剋制及其傷害加成。冷卻時間的技能等級未標示。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "zh-tw/heroes/shark/index.html",
+    "selector": "p.hero-sub",
+    "before": "鯊克是具備範圍傷害、前排支援與減傷能力的海洋陣營 SSR 近戰英雄。",
+    "after": "兼具範圍傷害、前排支援與減傷能力的英雄。",
+    "rule": "remove-repeated-hero-classification"
+  },
+  {
+    "route": "zh-tw/heroes/shark/index.html",
+    "selector": "p.hero-sub",
+    "before": "本頁整理鯊克的技能數值、星級加成、屬性與專屬裝備效果。",
+    "after": null,
+    "rule": "remove-page-summary-filler"
+  },
+  {
+    "route": "zh-tw/heroes/tara/index.html",
+    "selector": "p",
+    "before": "冷卻時間已核對外部英雄詳細頁，保留原文技能名稱；未標示技能等級與變更版本，不包含裝備或研究帶來的冷卻縮減。",
+    "after": "技能等級與遊戲版本不明，不包含裝備或研究帶來的冷卻縮減。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "zh-tw/heroes/tarzan/index.html",
+    "selector": "p",
+    "before": "冷卻時間已核對外部英雄詳細頁，保留原文技能名稱；未標示技能等級與變更版本，不包含裝備或研究帶來的冷卻縮減。",
+    "after": "技能等級與遊戲版本不明，不包含裝備或研究帶來的冷卻縮減。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "zh-tw/heroes/tony/index.html",
+    "selector": "p",
+    "before": "冷卻時間已核對外部英雄詳細頁，保留原文技能名稱；未標示技能等級與變更版本，不包含裝備或研究帶來的冷卻縮減。",
+    "after": "技能等級與遊戲版本不明，不包含裝備或研究帶來的冷卻縮減。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "zh-tw/heroes/travis/index.html",
+    "selector": "p",
+    "before": "冷卻時間已核對外部英雄詳細頁，保留原文技能名稱；未標示技能等級與變更版本，不包含裝備或研究帶來的冷卻縮減。",
+    "after": "技能等級與遊戲版本不明，不包含裝備或研究帶來的冷卻縮減。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "zh-tw/heroes/undine/index.html",
+    "selector": "p.ts-evidence-label",
+    "before": "尚未確認官方本地化名稱，因此保留英文遊戲畫面中的名稱。",
+    "after": "名稱採用英文版遊戲的表記。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "zh-tw/heroes/undine/index.html",
+    "selector": "p",
+    "before": "官方公告、遊戲畫面及社群記錄分別標示。未確認的數值不參與計算。",
+    "after": null,
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "zh-tw/heroes/undine/index.html",
+    "selector": "p.ts-evidence-label",
+    "before": "社群來源未標示技能等級，不能視為已確認的滿級數值。",
+    "after": "技能等級不明，數值不一定適用於滿級。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "zh-tw/heroes/undine/index.html",
+    "selector": "p.ts-evidence-label",
+    "before": "遊戲畫面",
+    "after": null,
+    "rule": "remove-repeated-evidence-label"
+  },
+  {
+    "route": "zh-tw/heroes/undine/index.html",
+    "selector": "summary",
+    "before": "遊戲畫面 · 查看來源",
+    "after": "技能畫面",
+    "rule": "reference-disclosure-label"
+  },
+  {
+    "route": "zh-tw/heroes/undine/index.html",
+    "selector": "p",
+    "before": "完整等級費用、升星條件與解鎖時間尚未確認。以下數值僅代表已觀測的特定階段。",
+    "after": "未提供完整等級費用、升星條件與解鎖時間。數值僅適用於所標示的階段。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "zh-tw/heroes/undine/index.html",
+    "selector": "p",
+    "before": "確認日期: 2026-10-09",
+    "after": null,
+    "rule": "remove-internal-check-date"
+  },
+  {
+    "route": "zh-tw/heroes/undine/index.html",
+    "selector": "h2",
+    "before": "資料適用範圍",
+    "after": "適用條件",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "zh-tw/heroes/undine/index.html",
+    "selector": "p",
+    "before": "海洋英雄在陣營協同中可視為任何陣營，但不適用於陣營克制及克制傷害。下列冷卻時間來自社群英雄頁面，未標示技能等級。",
+    "after": "海洋英雄在陣營協同中視為所有陣營，但不適用於陣營剋制及其傷害加成。冷卻時間的技能等級未標示。",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "zh-tw/seasons/index.html",
+    "selector": "p",
+    "before": "已進行中與已確認的賽季完整整理（最新更新）",
+    "after": "查看各賽季目標、成長系統與主要獎勵。",
+    "rule": "concise-directory-intro"
+  },
+  {
+    "route": "zh-tw/seasons/season-2/index.html",
+    "selector": "h2",
+    "before": "資料適用範圍",
+    "after": "適用條件",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "zh-tw/seasons/season-4/index.html",
+    "selector": "h2",
+    "before": "資料適用範圍",
+    "after": "適用條件",
+    "rule": "concise-player-condition"
+  },
+  {
+    "route": "zh-tw/updates/index.html",
+    "selector": "p",
+    "before": "目前確認的最新官方更新為 2026 年 9 月 17 日發布的 v2.6.100。依伺服器進度開放的內容會分開標示。",
+    "after": "查看各版本變更與開發者消息。功能解鎖時間可能依伺服器進度而異。",
+    "rule": "concise-directory-intro"
+  },
+  {
+    "route": "ko/buildings/comms-outpost/index.html",
+    "selector": "p",
+    "before": "현재 확인 가능한 기본 기능을 먼저 정리했습니다.",
+    "after": null,
+    "rule": "remove-empty-building-intro"
+  },
+  {
+    "route": "ko/buildings/cursed-wound-stele/index.html",
+    "selector": "p",
+    "before": "게임 내 캡처 기준 내용을 정리했습니다.",
+    "after": null,
+    "rule": "remove-empty-building-intro"
+  },
+  {
+    "route": "ko/buildings/garrison-station/index.html",
+    "selector": "p",
+    "before": "주둔소의 핵심 역할과 시즌 운영 포인트를 정리했습니다.",
+    "after": null,
+    "rule": "remove-empty-building-intro"
+  },
+  {
+    "route": "ko/buildings/enlistment-office/index.html",
+    "selector": "p",
+    "before": "모병소 운영 시 확인해야 하는 핵심 규칙입니다.",
+    "after": null,
+    "rule": "remove-empty-building-intro"
+  },
+  {
+    "route": "ko/buildings/enlistment-office/index.html",
+    "selector": "p",
+    "before": "모병소에서 사용하는 핵심 자원입니다.",
+    "after": null,
+    "rule": "remove-empty-building-intro"
+  },
+  {
+    "route": "en/buildings/garrison-station/index.html",
+    "selector": "p",
+    "before": "This section summarizes the main role of the Garrison Station and key season operation points.",
+    "after": null,
+    "rule": "remove-empty-building-intro"
+  },
+  {
+    "route": "en/buildings/enlistment-office/index.html",
+    "selector": "p",
+    "before": "These are the core rules you should know when managing the Enlistment Office.",
+    "after": null,
+    "rule": "remove-empty-building-intro"
+  },
+  {
+    "route": "en/buildings/enlistment-office/index.html",
+    "selector": "p",
+    "before": "This is the core resource used in the Enlistment Office.",
+    "after": null,
+    "rule": "remove-empty-building-intro"
+  },
+  {
+    "route": "ja/buildings/comms-outpost/index.html",
+    "selector": "p",
+    "before": "現在確認できる基本機能を先に整理しました。",
+    "after": null,
+    "rule": "remove-empty-building-intro"
+  },
+  {
+    "route": "ja/buildings/cursed-wound-stele/index.html",
+    "selector": "p",
+    "before": "ゲーム内キャプチャ基準の内容を整理しました。",
+    "after": null,
+    "rule": "remove-empty-building-intro"
+  },
+  {
+    "route": "ja/buildings/garrison-station/index.html",
+    "selector": "p",
+    "before": "駐屯所の主要な役割とシーズン運用ポイントを整理しました。",
+    "after": null,
+    "rule": "remove-empty-building-intro"
+  },
+  {
+    "route": "ja/buildings/blessed-healing-stele/index.html",
+    "selector": "p",
+    "before": "現在確認されている主要効果を整理しました。",
+    "after": null,
+    "rule": "remove-empty-building-intro"
+  },
+  {
+    "route": "ja/buildings/hero-academy/index.html",
+    "selector": "p",
+    "before": "建物説明と現在確認できている主要効果を整理しました。",
+    "after": null,
+    "rule": "remove-empty-building-intro"
+  },
+  {
+    "route": "ja/buildings/enlistment-office/index.html",
+    "selector": "p",
+    "before": "現在画面で確認できる主要数値です。",
+    "after": null,
+    "rule": "remove-empty-building-intro"
+  },
+  {
+    "route": "ja/buildings/enlistment-office/index.html",
+    "selector": "p",
+    "before": "入隊事務所運用時に確認すべき主要ルールです。",
+    "after": null,
+    "rule": "remove-empty-building-intro"
+  },
+  {
+    "route": "ja/buildings/enlistment-office/index.html",
+    "selector": "p",
+    "before": "入隊事務所で使用する中核資源です。",
+    "after": null,
+    "rule": "remove-empty-building-intro"
+  },
+  {
+    "route": "ru/buildings/comms-outpost/index.html",
+    "selector": "p",
+    "before": "Сначала собраны основные функции, которые можно подтвердить на данный момент.",
+    "after": null,
+    "rule": "remove-empty-building-intro"
+  },
+  {
+    "route": "ru/buildings/cursed-wound-stele/index.html",
+    "selector": "p",
+    "before": "Сводка составлена по игровым скриншотам.",
+    "after": null,
+    "rule": "remove-empty-building-intro"
+  },
+  {
+    "route": "ru/buildings/garrison-station/index.html",
+    "selector": "p",
+    "before": "Здесь собраны ключевая роль гарнизона и важные моменты сезонного управления.",
+    "after": null,
+    "rule": "remove-empty-building-intro"
+  },
+  {
+    "route": "ru/buildings/blessed-healing-stele/index.html",
+    "selector": "p",
+    "before": "Ниже собраны ключевые подтверждённые эффекты.",
+    "after": null,
+    "rule": "remove-empty-building-intro"
+  },
+  {
+    "route": "ru/buildings/hero-academy/index.html",
+    "selector": "p",
+    "before": "Здесь собраны описание здания и подтвержденные ключевые эффекты.",
+    "after": null,
+    "rule": "remove-empty-building-intro"
+  },
+  {
+    "route": "ru/buildings/enlistment-office/index.html",
+    "selector": "p",
+    "before": "Основные показатели, подтверждённые на текущем экране.",
+    "after": null,
+    "rule": "remove-empty-building-intro"
+  },
+  {
+    "route": "ru/buildings/enlistment-office/index.html",
+    "selector": "p",
+    "before": "Ключевые правила, которые нужно знать при использовании Пункта призыва.",
+    "after": null,
+    "rule": "remove-empty-building-intro"
+  },
+  {
+    "route": "ru/buildings/enlistment-office/index.html",
+    "selector": "p",
+    "before": "Ключевой ресурс, используемый в Пункте призыва.",
+    "after": null,
+    "rule": "remove-empty-building-intro"
+  },
+  {
+    "route": "zh-tw/buildings/cursed-wound-stele/index.html",
+    "selector": "p",
+    "before": "依照遊戲內截圖整理內容。",
+    "after": null,
+    "rule": "remove-empty-building-intro"
+  },
+  {
+    "route": "zh-tw/buildings/garrison-station/index.html",
+    "selector": "p",
+    "before": "整理駐屯所的核心用途與賽季運用重點。",
+    "after": null,
+    "rule": "remove-empty-building-intro"
+  },
+  {
+    "route": "zh-tw/buildings/hero-academy/index.html",
+    "selector": "p",
+    "before": "整理建築說明與目前可確認的主要效果。",
+    "after": null,
+    "rule": "remove-empty-building-intro"
+  },
+  {
+    "route": "zh-tw/buildings/enlistment-office/index.html",
+    "selector": "p",
+    "before": "以下為目前畫面中可確認的主要數值。",
+    "after": null,
+    "rule": "remove-empty-building-intro"
+  },
+  {
+    "route": "zh-tw/buildings/enlistment-office/index.html",
+    "selector": "p",
+    "before": "使用入伍辦公室時建議先確認的主要規則。",
+    "after": null,
+    "rule": "remove-empty-building-intro"
+  },
+  {
+    "route": "zh-tw/buildings/enlistment-office/index.html",
+    "selector": "p",
+    "before": "這是入伍辦公室運作時使用的核心資源。",
+    "after": null,
+    "rule": "remove-empty-building-intro"
+  },
+  {
+    "route": "zh-tw/heroes/eva/index.html",
+    "selector": "p.hero-sub",
+    "before": "寒霜啟示錄的SR近距離英雄。隸屬於荒野陣營，擅長連續高火力攻擊，同時也具備提升採集速度與強化基礎屬性的能力，是偏進攻型的實用英雄。",
+    "after": "Tiles Survive的SR近距離英雄。隸屬於荒野陣營，擅長連續高火力攻擊，同時也具備提升採集速度與強化基礎屬性的能力，是偏進攻型的實用英雄。",
+    "rule": "correct-game-name"
+  },
+  {
+    "route": "zh-tw/heroes/jacob/index.html",
+    "selector": "p.hero-sub",
+    "before": "寒霜啟示錄的SSR英雄。所屬陣營為荒野，定位為近距離干擾型英雄，擅長持續燃燒傷害、範圍炸彈攻擊、削弱全體敵軍攻防，並強化自身能力。",
+    "after": "Tiles Survive的SSR英雄。所屬陣營為荒野，定位為近距離干擾型英雄，擅長持續燃燒傷害、範圍炸彈攻擊、削弱全體敵軍攻防，並強化自身能力。",
+    "rule": "correct-game-name"
+  },
+  {
+    "route": "zh-tw/heroes/laila/index.html",
+    "selector": "p.hero-sub",
+    "before": "寒霜啟示錄的SSR英雄。所屬陣營為荒野，定位為中距離支援型英雄，兼具範圍攻擊、全體治療與最大生命值強化能力。",
+    "after": "Tiles Survive的SSR英雄。所屬陣營為荒野，定位為中距離支援型英雄，兼具範圍攻擊、全體治療與最大生命值強化能力。",
+    "rule": "correct-game-name"
+  },
+  {
+    "route": "zh-tw/heroes/maddy/index.html",
+    "selector": "p.hero-sub",
+    "before": "寒霜啟示錄的SSR英雄。所屬陣營為天空，定位為遠距離英雄，擅長單體弩箭輸出、範圍火焰箭攻擊、隊友治療支援，以及自身屬性強化。",
+    "after": "Tiles Survive的SSR英雄。所屬陣營為天空，定位為遠距離英雄，擅長單體弩箭輸出、範圍火焰箭攻擊、隊友治療支援，以及自身屬性強化。",
+    "rule": "correct-game-name"
+  },
+  {
+    "route": "zh-tw/heroes/rosie/index.html",
+    "selector": "p.hero-sub",
+    "before": "寒霜啟示錄的SSR英雄。所屬陣營為山脈，定位為近距離前排英雄，兼具音波攻擊、範圍傷害、自我回復與持續站場能力。",
+    "after": "Tiles Survive的SSR英雄。所屬陣營為山脈，定位為近距離前排英雄，兼具音波攻擊、範圍傷害、自我回復與持續站場能力。",
+    "rule": "correct-game-name"
+  },
+  {
+    "route": "zh-tw/heroes/tara/index.html",
+    "selector": "p.hero-sub",
+    "before": "寒霜啟示錄中的SSR英雄。所屬陣營為山脈，定位為中距離英雄，兼具範圍傷害、廣域輸出與全體防禦強化，是能在前線穩定支援隊伍的守護型英雄。",
+    "after": "Tiles Survive中的SSR英雄。所屬陣營為山脈，定位為中距離英雄，兼具範圍傷害、廣域輸出與全體防禦強化，是能在前線穩定支援隊伍的守護型英雄。",
+    "rule": "correct-game-name"
+  },
+  {
+    "route": "zh-tw/heroes/travis/index.html",
+    "selector": "p.hero-sub",
+    "before": "寒霜啟示錄中的SR英雄。所屬陣營為荒野，定位為中距離英雄，擅長單體高傷害與削弱目標防禦，同時也具備提升精煉廠生產速度的內政效果。",
+    "after": "Tiles Survive中的SR英雄。所屬陣營為荒野，定位為中距離英雄，擅長單體高傷害與削弱目標防禦，同時也具備提升精煉廠生產速度的內政效果。",
+    "rule": "correct-game-name"
+  },
+  {
+    "route": "ko/heroes/knotty/index.html",
+    "selector": ".ts3-character-stage p.ts-evidence-label",
+    "before": "스킬 Lv.40 · 패시브 Lv.4 · 전용 장비 Lv.15 기준입니다. 위 스킬 패널의 저레벨 값과 구분하세요.",
+    "after": null,
+    "rule": "remove-duplicate-stage-condition"
+  }
+]
