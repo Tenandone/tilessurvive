@@ -8,7 +8,17 @@ const gear=require('../data/foundation-40/hero-gear-levels-41.json'),pets=requir
 const langs=['ko','en','ja','ru','zh-tw'],heroIds=['beka','candy','jacob','kiki','kiron','laila','light','maddy','mike','nikola','ray','rosie','shark','tara','tarzan','tony','undine'];
 let groups=0;
 assert.equal(old.items.length,545);assert.equal(index.itemCount,635);assert.equal(index.items.length,635);assert.equal(new Set(index.items.map(i=>i.url)).size,635);
-for(const prior of old.items)assert.equal(JSON.stringify(index.items.find(i=>i.url===prior.url)),JSON.stringify(prior),'Original search fields changed: '+prior.url);
+const correctedDuration={ko:'선택한 대기열의 남은 시간을 20시간 줄입니다.',en:'Reduces the selected queue countdown by 20 hours.',ja:'選択した待ち時間を20時間短縮。',ru:'Сокращает выбранную очередь на 20 часов.','zh-tw':'縮短所選佇列的倒數時間20小時。'};
+let corrected=0;
+for(const prior of old.items){
+ const expected={...prior};
+ if(prior.url===`/${prior.language}/database/items/#speedup-20h`){
+  expected.description=`20시간 일반 가속 · ${correctedDuration[prior.language]} · ${prior.description.split(' · ').at(-1)}`;corrected++;
+ }
+ assert.equal(JSON.stringify(index.items.find(i=>i.url===prior.url)),JSON.stringify(expected),'Original search fields changed outside the reviewed duration correction: '+prior.url);
+}
+assert.equal(corrected,5);
+assert(!/\{(?:hours|minutes)\}/.test(JSON.stringify(index.items)),'Search descriptions must contain rendered durations');
 groups++;
 assert.deepEqual(gear.gears.map(g=>g.id).sort(),heroIds.slice().sort());
 const oldURLs=new Set(old.items.map(i=>i.url)),added=index.items.filter(i=>!oldURLs.has(i.url));
@@ -47,4 +57,4 @@ function run(missing){
 run();groups++;
 assert.throws(()=>run({route:'/ko/heroes/beka/',anchor:'hero-primary-gear-levels-41'}),/Missing reviewed search anchor/);groups++;
 assert.throws(()=>run({route:'/ko/database/pet-system/',anchor:'pet-training-scope-41'}),/Missing reviewed search anchor/);groups++;
-console.log(JSON.stringify({passed:true,groups,oldEntriesPreserved:545,addedGearAnchors:85,addedPetAnchors:5,totalEntries:635,scope:'Immutable baseline objects, exact reviewed additions, localized labels and material aliases, existing visible anchors, source-field boundary, actual builder no-op and rejection paths'}));
+console.log(JSON.stringify({passed:true,groups,oldEntriesPreserved:540,reviewedDurationCorrections:5,addedGearAnchors:85,addedPetAnchors:5,totalEntries:635,scope:'Baseline objects with five exact duration corrections, exact reviewed additions, localized labels and material aliases, existing visible anchors, source-field boundary, actual builder no-op and rejection paths'}));

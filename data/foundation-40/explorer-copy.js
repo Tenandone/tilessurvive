@@ -49,7 +49,8 @@ add('equipmentShop','영웅 장비 상점','Hero Equipment Shop','英雄装備�
 add('hero-skill','영웅 스킬 레벨 상승에 사용합니다.','Used to raise hero skill levels.','英雄のスキルレベルアップに使用。','Повышает уровни навыков героев.','用於提升英雄技能等級。');
 add('daily-goals','군비 경쟁의 오늘 목표 보상에 연결됩니다.','Counts toward the event’s daily goal rewards.','このイベントの日次目標報酬に関係します。','Связан с ежедневными целями события.','用於此活動的每日目標獎勵。');
 add('resource-item','사용 시 표기된 양의 자원을 얻습니다.','Use to obtain the stated resource amount.','使用すると表示量の資源を獲得。','При использовании даёт указанное количество ресурса.','使用後獲得標示數量的資源。');
-add('queue-time','선택한 대기열의 남은 시간을 5분 줄입니다.','Reduces the selected queue countdown by 5 minutes.','選択した待ち時間を5分短縮。','Сокращает выбранную очередь на 5 минут.','縮短所選佇列的倒數時間5分鐘。');
+add('queue-time','선택한 대기열의 남은 시간을 {minutes}분 줄입니다.','Reduces the selected queue countdown by {minutes} minutes.','選択した待ち時間を{minutes}分短縮。','Сокращает выбранную очередь на {minutes} минут.','縮短所選佇列的倒數時間{minutes}分鐘。');
+add('queue-time-hours','선택한 대기열의 남은 시간을 {hours}시간 줄입니다.','Reduces the selected queue countdown by {hours} hours.','選択した待ち時間を{hours}時間短縮。','Сокращает выбранную очередь на {hours} часов.','縮短所選佇列的倒數時間{hours}小時。');
 add('undine-gear','운디네 전용 장비 바다의 음성 강화에 사용합니다.','Used to upgrade Undine’s exclusive gear.','Undineの専用装備強化に使用。','Для улучшения эксклюзивного снаряжения Undine.','用於強化Undine的專屬裝備。');
 add('related','연결된 데이터','Related data','関連データ','Связанные данные','相關資料');
 add('rules','라운드와 보상 조건','Rounds & reward conditions','ラウンドと報酬条件','Раунды и условия наград','回合與獎勵條件');

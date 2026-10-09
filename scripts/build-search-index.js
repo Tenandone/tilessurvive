@@ -51,6 +51,7 @@ for (const language of LANGS) {
 // Index curated item anchors as well as pages; never index the private extraction corpus.
 const explorer = require('../data/foundation-40/explorer.json');
 const explorerCopy = require('../data/foundation-40/explorer-copy.js');
+const itemUseText = require('./lib/item-use-text-40');
 for (const language of LANGS) {
   const page = path.join(ROOT, language, 'database/items/index.html');
   if (!fs.existsSync(page)) continue;
@@ -58,7 +59,7 @@ for (const language of LANGS) {
   for (const item of explorer.items) {
     if (!html.includes(`id="${item.id}"`)) throw new Error(`Missing item anchor: ${language}/${item.id}`);
     const t = explorerCopy[language];
-    items.push({language, type: 'database', title: t[item.id], description: `${item.nameKo} · ${t[item.use]} · ${t.itemTitle}`, url: `/${language}/database/items/#${item.id}`});
+    items.push({language, type: 'database', title: t[item.id], description: `${item.nameKo} · ${itemUseText(item,language)} · ${t.itemTitle}`, url: `/${language}/database/items/#${item.id}`});
   }
 }
 // Add exact, visible comparison destinations; keep every existing entry unchanged.

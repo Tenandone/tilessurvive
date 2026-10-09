@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T18:30:30.239Z",
+  "generatedAt": "2026-10-09T19:03:52.516Z",
   "itemCount": 635,
   "items": [
     {
@@ -34,7 +34,7 @@
       "language": "en",
       "type": "database",
       "title": "20-hour universal Speedup",
-      "description": "20시간 일반 가속 · Reduces the selected queue countdown by 5 minutes. · Item sources & uses",
+      "description": "20시간 일반 가속 · Reduces the selected queue countdown by 20 hours. · Item sources & uses",
       "url": "/en/database/items/#speedup-20h"
     },
     {
@@ -948,7 +948,7 @@
       "language": "ja",
       "type": "database",
       "title": "20時間の共通加速",
-      "description": "20시간 일반 가속 · 選択した待ち時間を5分短縮。 · アイテムの入手先・用途",
+      "description": "20시간 일반 가속 · 選択した待ち時間を20時間短縮。 · アイテムの入手先・用途",
       "url": "/ja/database/items/#speedup-20h"
     },
     {
@@ -1918,7 +1918,7 @@
       "language": "ko",
       "type": "database",
       "title": "20시간 일반 가속",
-      "description": "20시간 일반 가속 · 선택한 대기열의 남은 시간을 5분 줄입니다. · 아이템 획득처·사용처",
+      "description": "20시간 일반 가속 · 선택한 대기열의 남은 시간을 20시간 줄입니다. · 아이템 획득처·사용처",
       "url": "/ko/database/items/#speedup-20h"
     },
     {
@@ -3715,7 +3715,7 @@
       "language": "ru",
       "type": "database",
       "title": "Универсальное ускорение на 20 ч.",
-      "description": "20시간 일반 가속 · Сокращает выбранную очередь на 5 минут. · Где получить и использовать предметы",
+      "description": "20시간 일반 가속 · Сокращает выбранную очередь на 20 часов. · Где получить и использовать предметы",
       "url": "/ru/database/items/#speedup-20h"
     },
     {
@@ -3802,7 +3802,7 @@
       "language": "zh-tw",
       "type": "database",
       "title": "20小時通用加速",
-      "description": "20시간 일반 가속 · 縮短所選佇列的倒數時間5分鐘。 · 道具取得途徑與用途",
+      "description": "20시간 일반 가속 · 縮短所選佇列的倒數時間20小時。 · 道具取得途徑與用途",
       "url": "/zh-tw/database/items/#speedup-20h"
     },
     {

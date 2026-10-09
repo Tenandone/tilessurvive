@@ -7,6 +7,18 @@ const langs=['ko','en','ja','ru','zh-tw'];
 const oldIds=['hero-skill-book','arms-medal','food-10k','wood-10k','metal-10k','speedup-5m','food-100k','undine-gear-fragment'];
 const newIds=['pet-eggs','reforge-hammer','advanced-recruitment-token','speedup-20h'];
 const docs=langs.map(lang=>({lang,document:parseHTML(fs.readFileSync(path.join(root,lang,'database/items/index.html'),'utf8')).document}));
+
+test('speedup uses preserve the exact five-minute description and render the twenty-hour model duration in all locales',()=>{
+  const short=D.items.find(i=>i.id==='speedup-5m'),long=D.items.find(i=>i.id==='speedup-20h');
+  assert.equal(short.minutes,5);assert.equal(long.minutes,1200);
+  const expected={ko:'선택한 대기열의 남은 시간을 20시간 줄입니다.',en:'Reduces the selected queue countdown by 20 hours.',ja:'選択した待ち時間を20時間短縮。',ru:'Сокращает выбранную очередь на 20 часов.','zh-tw':'縮短所選佇列的倒數時間20小時。'};
+  for(const {lang,document:d}of docs){
+    const paragraphs=id=>[...d.getElementById(id).querySelectorAll('.ts40-item-body > div:last-child > p')].map(p=>p.textContent.trim());
+    assert.deepEqual(paragraphs('speedup-5m'),[short.descriptions[lang]],lang+' original five-minute description');
+    assert.deepEqual(paragraphs('speedup-20h'),[expected[lang]],lang+' twenty-hour duration');
+    assert(!/\{(?:minutes|hours)\}/.test(d.querySelector('main').textContent),lang+' unresolved duration');
+  }
+});
 test('twelve curated items preserve the eight existing stable anchors and valid localized routes',()=>{
   assert.deepEqual(D.items.map(i=>i.id),[...oldIds,...newIds]);
   assert.equal(new Set(D.items.map(i=>i.id)).size,12);

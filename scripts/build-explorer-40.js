@@ -11,6 +11,7 @@ const assert=(v,m)=>{if(!v)throw Error(m)};
 assert(itemIcons.size===approvedItemIcons.size,'Missing approved item icon');
 for(const [id,asset]of itemIcons)assert(asset.id==='item:'+id&&asset.src==='/img/game-40/items/'+id+'.webp'&&Number.isInteger(asset.width)&&asset.width>0&&Number.isInteger(asset.height)&&asset.height>0&&fs.existsSync(path.join(root,asset.src)),'Invalid approved item icon '+id);
 const itemIcon=id=>{const asset=itemIcons.get(id);return asset?`<img class="ts40-item-icon" src="${asset.src}" width="${asset.width}" height="${asset.height}" alt="" aria-hidden="true" loading="lazy" decoding="async">`:'';};
+const itemUseText=require('./lib/item-use-text-40');
 assert(D.items.length===new Set(D.items.map(i=>i.id)).size,'Duplicate items');
 const ids=new Set(D.items.map(i=>i.id));
 const officialById=new Map(D.officialSources.map(source=>[source.id,source]));
@@ -77,7 +78,7 @@ function itemContent(lang){
    return `<li>${t.vip} · ${num(offer.cost)} ${t.diamonds} / ${num(offer.quantity)}<p class="ts40-source">${t.shopCondition}</p></li>`;
  }).join('');
  return `<section class="hero-card ts40-intro"><span class="eyebrow">TILES SURVIVE · ITEMS</span><h1>${t.itemTitle}</h1><p>${t.itemIntro}</p></section><form data-item-filter class="ts40-filters" hidden role="search"><label>${t.search}<input name="query" type="search" autocomplete="off"></label><label>${t.category}<select name="category"><option value="">${t.all}</option>${['growth','resource','speedup','event'].map(v=>`<option value="${v}">${t[v]}</option>`).join('')}</select></label></form><p data-item-count role="status" aria-live="polite"></p><p class="ts40-empty" data-item-empty hidden>${t.empty}</p>
- <h2 id="items-heading">${t.itemList}</h2>${D.items.map(item=>`<details class="ts40-item" data-item-entry data-search-aliases="${esc((item.searchAliases||[]).join(' '))}" data-category="${item.category}" id="${item.id}"><summary><span class="ts40-item-label">${itemIcon(item.id)}<span>${esc(t[item.id])}${item.nameOriginal?(lang===item.sourceLocale?'':`<br><span lang="${item.sourceLocale}" class="ts40-original">${esc(item.nameOriginal)}</span>`):(lang==='ko'?'':`<br><span lang="ko" class="ts40-original">${esc(item.nameKo)}</span>`)}</span></span></summary><div class="ts40-item-body"><div><h3>${t.sources}</h3><ul>${source(item)}</ul></div><div><h3>${t.uses}</h3>${item.descriptions?.[lang]?`<p>${esc(item.descriptions[lang])}</p>`:''}${!item.descriptions?.[lang]||item.useSourceIds?`<p>${t[item.use]} ${item.useSourceIds?citation(item.useSourceIds,lang):''}</p>`:''}${item.route?`<a href="/${lang}/${item.route}">${t.open} →</a>`:''}</div></div></details>`).join('')}
+ <h2 id="items-heading">${t.itemList}</h2>${D.items.map(item=>`<details class="ts40-item" data-item-entry data-search-aliases="${esc((item.searchAliases||[]).join(' '))}" data-category="${item.category}" id="${item.id}"><summary><span class="ts40-item-label">${itemIcon(item.id)}<span>${esc(t[item.id])}${item.nameOriginal?(lang===item.sourceLocale?'':`<br><span lang="${item.sourceLocale}" class="ts40-original">${esc(item.nameOriginal)}</span>`):(lang==='ko'?'':`<br><span lang="ko" class="ts40-original">${esc(item.nameKo)}</span>`)}</span></span></summary><div class="ts40-item-body"><div><h3>${t.sources}</h3><ul>${source(item)}</ul></div><div><h3>${t.uses}</h3>${item.descriptions?.[lang]?`<p>${esc(item.descriptions[lang])}</p>`:''}${!item.descriptions?.[lang]||item.useSourceIds?`<p>${esc(itemUseText(item,lang))} ${item.useSourceIds?citation(item.useSourceIds,lang):''}</p>`:''}${item.route?`<a href="/${lang}/${item.route}">${t.open} →</a>`:''}</div></div></details>`).join('')}
  <p class="ts40-context">${t.itemRewardScope} ${t.condition}</p><p data-gear-crate-tip>${t.gearCrateTip} ${citation(D.itemRules.gearCrate.sourceIds,lang)}</p>${packageContent(lang)}<nav class="ts40-links" aria-label="${t.related}"><a href="/${lang}/events/arms-race/">${t.eventTitle} →</a><a href="/${lang}/database/pet-system/">${C[lang].growth} →</a></nav>`;
 }
 function page(lang,slug,title,description,content){
@@ -98,8 +99,10 @@ function page(lang,slug,title,description,content){
  d.body.append(node(d,`<script type="application/json" id="foundation-data">${JSON.stringify({event:D.event,copy:C[lang],packages:slug==='database/items'?D.packages:undefined}).replaceAll('<','\\u003c')}</script><script src="/js/foundation-40-math.js?v=1" defer></script><script src="/js/foundation-40.js?v=2" defer></script>`));
  save(path.join(root,lang,slug,'index.html'),'<!DOCTYPE html>\n'+d.documentElement.outerHTML+'\n');
 }
+const itemsOnly=process.argv.includes('--items-only');
 for(const lang of langs){
- const t=C[lang];page(lang,'events/arms-race',t.eventTitle,t.eventIntro,eventContent(lang));page(lang,'database/items',t.itemTitle,t.itemIntro,itemContent(lang));
+ const t=C[lang];if(!itemsOnly)page(lang,'events/arms-race',t.eventTitle,t.eventIntro,eventContent(lang));page(lang,'database/items',t.itemTitle,t.itemIntro,itemContent(lang));
+ if(itemsOnly)continue;
  // Existing URL and menu structures remain intact; contextual links are local to their hubs.
  for(const section of ['events','database','tools']){
    const file=path.join(root,lang,section,'index.html'),d=parseHTML(fs.readFileSync(file,'utf8')).document;
@@ -129,4 +132,4 @@ for(const lang of langs){
 const sitemapFile=path.join(root,'sitemap.xml');let xml=fs.readFileSync(sitemapFile,'utf8');
 for(const lang of langs)for(const slug of ['events/arms-race','database/items']){const url='https://tilessurvive.net/'+lang+'/'+slug+'/';if(!xml.includes('<loc>'+url+'</loc>'))xml=xml.replace('</urlset>',`  <url><loc>${url}</loc></url>\n</urlset>`);}
 save(sitemapFile,xml);
-console.log(JSON.stringify({foundationPages:10,items:D.items.length,packages:D.packages.length,trainingPointRows:11,rewardRows:6,changes}));
+console.log(JSON.stringify({foundationPages:itemsOnly?5:10,items:D.items.length,packages:D.packages.length,trainingPointRows:11,rewardRows:6,changes}));
