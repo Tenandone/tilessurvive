@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "hero": "undine",
+  "gameVersion": "2.6.200",
+  "levels": [
+    {
+      "level": 1,
+      "attack": 3600,
+      "defense": 720,
+      "hp": 240000,
+      "power": 98880,
+      "frontDefense": 10,
+      "backAttack": 10
+    },
+    {
+      "level": 2,
+      "attack": 5040,
+      "defense": 1010,
+      "hp": 336000,
+      "power": 138473,
+      "frontDefense": 12,
+      "backAttack": 12
+    },
+    {
+      "level": 3,
+      "attack": 6480,
+      "defense": 1295,
+      "hp": 432000,
+      "power": 177963,
+      "frontDefense": 14,
+      "backAttack": 14
+    },
+    {
+      "level": 4,
+      "attack": 7920,
+      "defense": 1585,
+      "hp": 528000,
+      "power": 217557,
+      "frontDefense": 16,
+      "backAttack": 16
+    },
+    {
+      "level": 5,
+      "attack": 9360,
+      "defense": 1870,
+      "hp": 624000,
+      "power": 257047,
+      "frontDefense": 18,
+      "backAttack": 18
+    },
+    {
+      "level": 6,
+      "attack": 10800,
+      "defense": 2160,
+      "hp": 720000,
+      "power": 296640,
+      "frontDefense": 20,
+      "backAttack": 20
+    },
+    {
+      "level": 7,
+      "attack": 12240,
+      "defense": 2450,
+      "hp": 816000,
+      "power": 336233,
+      "frontDefense": 22,
+      "backAttack": 22
+    },
+    {
+      "level": 8,
+      "attack": 13680,
+      "defense": 2735,
+      "hp": 912000,
+      "power": 375723,
+      "frontDefense": 23,
+      "backAttack": 23
+    },
+    {
+      "level": 9,
+      "attack": 15120,
+      "defense": 3025,
+      "hp": 1008000,
+      "power": 415317,
+      "frontDefense": 24,
+      "backAttack": 24
+    },
+    {
+      "level": 10,
+      "attack": 16560,
+      "defense": 3310,
+      "hp": 1104000,
+      "power": 477547,
+      "frontDefense": 25,
+      "backAttack": 25
+    },
+    {
+      "level": 11,
+      "attack": 18000,
+      "defense": 3600,
+      "hp": 1200000,
+      "power": 519120,
+      "frontDefense": 26,
+      "backAttack": 26
+    },
+    {
+      "level": 12,
+      "attack": 19440,
+      "defense": 3890,
+      "hp": 1296000,
+      "power": 560693,
+      "frontDefense": 27,
+      "backAttack": 27
+    },
+    {
+      "level": 13,
+      "attack": 20880,
+      "defense": 4175,
+      "hp": 1392000,
+      "power": 602158,
+      "frontDefense": 28,
+      "backAttack": 28
+    },
+    {
+      "level": 14,
+      "attack": 22320,
+      "defense": 4465,
+      "hp": 1488000,
+      "power": 643730,
+      "frontDefense": 29,
+      "backAttack": 29
+    },
+    {
+      "level": 15,
+      "attack": 23760,
+      "defense": 4750,
+      "hp": 1584000,
+      "power": 750452,
+      "frontDefense": 30,
+      "backAttack": 30
+    }
+  ],
+  "scope": "exclusive-gear-contribution-and-effect;unlocked-levels-only"
+}

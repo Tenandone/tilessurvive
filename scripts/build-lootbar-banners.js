@@ -81,5 +81,7 @@ for(const lang of Object.keys(copy)){
   fs.writeFileSync(path.join(folder,lang+'-mobile.html'),`<!doctype html><html lang="${lang}"><head><meta charset="utf-8"><meta name="robots" content="noindex"><title>LootBar mobile export · ${lang}</title><style>html,body{margin:0;width:1080px;height:1020px;overflow:hidden}iframe{width:360px;height:340px;border:0;transform:scale(3);transform-origin:0 0}</style></head><body><iframe src="${lang}.html" title="LootBar ${lang}"></iframe></body></html>`);
   buildHeroBanners(lang);
 }
-if(heroCount!==135)throw new Error('Expected 135 canonical hero details, got '+heroCount);
+const davePages=Object.keys(copy).filter(lang=>fs.existsSync(path.join(root,lang,'heroes/dave/index.html'))).length;
+if(davePages!==0&&davePages!==5)throw new Error('Dave must have all five localized pages');
+if(heroCount!==135+davePages)throw new Error('Expected '+(135+davePages)+' canonical hero details, got '+heroCount);
 console.log(`Localized LootBar banners: 5 languages, 25 existing placements, ${heroCount} hero placements.`);

@@ -1,13 +1,62 @@
 {
-  "generatedAt": "2026-10-09T12:58:16.561Z",
-  "itemCount": 465,
+  "generatedAt": "2026-10-09T16:02:43.219Z",
+  "itemCount": 545,
   "items": [
+    {
+      "language": "en",
+      "type": "database",
+      "title": "10,000 food",
+      "description": "10k 식량 · Use to obtain the stated resource amount. · Item sources & uses",
+      "url": "/en/database/items/#food-10k"
+    },
+    {
+      "language": "en",
+      "type": "database",
+      "title": "10,000 metal",
+      "description": "10k 금속 · Use to obtain the stated resource amount. · Item sources & uses",
+      "url": "/en/database/items/#metal-10k"
+    },
+    {
+      "language": "en",
+      "type": "database",
+      "title": "10,000 wood",
+      "description": "10k 목재 · Use to obtain the stated resource amount. · Item sources & uses",
+      "url": "/en/database/items/#wood-10k"
+    },
+    {
+      "language": "en",
+      "type": "database",
+      "title": "100,000 food",
+      "description": "100k 식량 · Use to obtain the stated resource amount. · Item sources & uses",
+      "url": "/en/database/items/#food-100k"
+    },
+    {
+      "language": "en",
+      "type": "database",
+      "title": "20-hour universal Speedup",
+      "description": "20시간 일반 가속 · Reduces the selected queue countdown by 5 minutes. · Item sources & uses",
+      "url": "/en/database/items/#speedup-20h"
+    },
+    {
+      "language": "en",
+      "type": "database",
+      "title": "5-minute general speedup",
+      "description": "5분 일반 가속 · Reduces the selected queue countdown by 5 minutes. · Item sources & uses",
+      "url": "/en/database/items/#speedup-5m"
+    },
     {
       "language": "en",
       "type": "about",
       "title": "About TilesSurvive.net | TilesSurvive.net",
       "description": "TilesSurvive.net is an independent multilingual data and guide hub for Tiles Survive players.",
       "url": "/en/about/"
+    },
+    {
+      "language": "en",
+      "type": "database",
+      "title": "Advanced Recruitment Token",
+      "description": "고급 모집 토큰 · An Advanced Recruitment item. The official disclosure lists the recruitment rewards and probabilities. · Item sources & uses",
+      "url": "/en/database/items/#advanced-recruitment-token"
     },
     {
       "language": "en",
@@ -27,7 +76,7 @@
       "language": "en",
       "type": "event",
       "title": "Arcadian Conquest · occupation rules | TilesSurvive.net",
-      "description": "The siege lasts 3 hours. Victory requires 90 minutes of cumulative occupation or the longest total occupation. Four towers remove 2% of garrison troops per strike; intervals decrease from 4 to 1 minute as occupation continues. Arcadia or tower occupation gives 10,000 points per 60 seconds. Rallies support 5 allied teams. Alert-zone settlements relocate 60 minutes before start; relocation is free and Peace Flares disabled from 50 minutes before start to the end. Each Chief receives at most one Governor Pack per event. Troop-tier casualty/kill points and reward quantities are unconfirmed.",
+      "description": "The contest lasts 2 hours from v2.5.600. The following occupation and reward values are from the guide dated 2026-01-07: Victory requires 90 minutes of cumulative occupation or the longest total occupation. Four towers remove 2% of garrison troops per strike; intervals decrease from 4 to 1 minute as occupation continues. Arcadia or tower occupation gives 10,000 points per 60 seconds. Rallies support 5 allied teams. Alert-zone settlements relocate 60 minutes before start; relocation is free and Peace Flares disabled from 50 minutes before start to the end. Each Chief receives at most one Governor Pack per event. Troop-tier casualty/kill points and reward quantities are unconfirmed.",
       "url": "/en/events/arcadian-conquest/"
     },
     {
@@ -102,9 +151,23 @@
     },
     {
       "language": "en",
+      "type": "event",
+      "title": "Daily mission point planner | TilesSurvive.net",
+      "description": "Choose missions to plan the points needed for your target chest.",
+      "url": "/en/events/daily-missions/"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
+      "title": "Dave · Skills and unlock conditions | TilesSurvive.net",
+      "description": "A sea SSR ranged hero with water-bomb attacks and enemy ATK and DEF reduction.",
+      "url": "/en/heroes/dave/"
+    },
+    {
+      "language": "en",
       "type": "database",
       "title": "Dodo · Pet Acquisition, Stats & Growth | TilesSurvive.net",
-      "description": "Dodo — Role: Attacker · Acquisition probability · Observed stats",
+      "description": "Dodo — Role: Support · Acquisition probability · Observed stats",
       "url": "/en/database/pet-system/dodo/"
     },
     {
@@ -127,6 +190,13 @@
       "title": "Eva · Skills, Stats & Growth | TilesSurvive.net",
       "description": "Detailed Eva hero page for Tiles Survive. Check hero story, faction, combat traits, max level and star stats, star bonus, and skills in one place.",
       "url": "/en/heroes/eva/"
+    },
+    {
+      "language": "en",
+      "type": "database",
+      "title": "Event medals",
+      "description": "군비 메달 · Counts toward the event’s daily goal rewards. · Item sources & uses",
+      "url": "/en/database/items/#arms-medal"
     },
     {
       "language": "en",
@@ -229,6 +299,13 @@
     {
       "language": "en",
       "type": "database",
+      "title": "Hero skill books",
+      "description": "영웅 스킬북 · Used to raise hero skill levels. · Item sources & uses",
+      "url": "/en/database/items/#hero-skill-book"
+    },
+    {
+      "language": "en",
+      "type": "database",
       "title": "Hero Star Chart | Tiles Survive Hero Data | TilesSurvive.net",
       "description": "This page organizes the Tiles Survive SSR Hero Star Chart and Season Promotion Hero Star Chart at a glance.",
       "url": "/en/database/hero-star/"
@@ -246,6 +323,13 @@
       "title": "How to Redeem Tiles Survive Gift Codes | Tiles Survive Guide | TilesSurvive.net",
       "description": "A guide that explains how to redeem Tiles Survive gift codes and organizes current active codes, permanent codes, and expired codes in one place.",
       "url": "/en/guides/gift-code-how-to-use/"
+    },
+    {
+      "language": "en",
+      "type": "database",
+      "title": "Item sources & uses | TilesSurvive.net",
+      "description": "Choose a material to explore linked rewards, shops and growth information.",
+      "url": "/en/database/items/"
     },
     {
       "language": "en",
@@ -333,6 +417,13 @@
     },
     {
       "language": "en",
+      "type": "database",
+      "title": "Pet Eggs",
+      "description": "펫 알 · Hatch eggs to obtain and raise pets. · Item sources & uses",
+      "url": "/en/database/items/#pet-eggs"
+    },
+    {
+      "language": "en",
       "type": "building",
       "title": "Power Plant | Tiles Survive Buildings | TilesSurvive.net",
       "description": "A detailed page for Tiles Survive Power Plant upgrade costs, upgrade time, power, and skill information by level.",
@@ -351,6 +442,13 @@
       "title": "Ray · Skills, Stats & Growth | TilesSurvive.net",
       "description": "Ray hero detail page for Tiles Survive. This page summarizes the SSR hero overview, combat traits, max level and star stats, star bonus, skills, and signature weapon in one place.",
       "url": "/en/heroes/ray/"
+    },
+    {
+      "language": "en",
+      "type": "database",
+      "title": "Reforge Hammer",
+      "description": "재련 망치 · Basic Reforge costs 1 hammer; Advanced Reforge costs 25. Advanced unlocks after more than 200 reforges accumulated across all gear. · Item sources & uses",
+      "url": "/en/database/items/#reforge-hammer"
     },
     {
       "language": "en",
@@ -440,7 +538,7 @@
       "language": "en",
       "type": "database",
       "title": "Snowball · Pet Acquisition, Stats & Growth | TilesSurvive.net",
-      "description": "Snowball — Role: Support · Acquisition probability · Observed stats",
+      "description": "Snowball — Role: Attacker · Acquisition probability · Observed stats",
       "url": "/en/database/pet-system/snowball/"
     },
     {
@@ -620,6 +718,13 @@
     },
     {
       "language": "en",
+      "type": "event",
+      "title": "Troop training points & rewards | TilesSurvive.net",
+      "description": "Plan training, promotions and speedups toward the next reward.",
+      "url": "/en/events/arms-race/"
+    },
+    {
+      "language": "en",
       "type": "database",
       "title": "Turtle Race | Tiles Survive Database | TilesSurvive.net",
       "description": "This is the recommended Turtle Race chart for Tiles Survive Alliance Duel. You can check recommended mission phases, battle timing, turtle timing, and king buff timing at a glance.",
@@ -631,6 +736,13 @@
       "title": "Undine · Skills, Stats & Growth | TilesSurvive.net",
       "description": "Mariner heroes · SSR · Gunners · Skills & effects",
       "url": "/en/heroes/undine/"
+    },
+    {
+      "language": "en",
+      "type": "database",
+      "title": "Undine exclusive gear fragment",
+      "description": "바다의 음성 (조각) · Used to upgrade Undine’s exclusive gear. · Item sources & uses",
+      "url": "/en/database/items/#undine-gear-fragment"
     },
     {
       "language": "en",
@@ -655,6 +767,20 @@
     },
     {
       "language": "ja",
+      "type": "database",
+      "title": "20時間の共通加速",
+      "description": "20시간 일반 가속 · 選択した待ち時間を5分短縮。 · アイテムの入手先・用途",
+      "url": "/ja/database/items/#speedup-20h"
+    },
+    {
+      "language": "ja",
+      "type": "database",
+      "title": "5分の共通加速",
+      "description": "5분 일반 가속 · 選択した待ち時間を5分短縮。 · アイテムの入手先・用途",
+      "url": "/ja/database/items/#speedup-5m"
+    },
+    {
+      "language": "ja",
       "type": "building",
       "title": "加護治療の碑 | タイルズサバイバル 建物 | TilesSurvive.net",
       "description": "タイルズサバイバル 加護治療の碑の概要、軽傷転化率、戦闘力をレベル別に整理した詳細ページです。",
@@ -666,6 +792,13 @@
       "title": "巨獣グリフォン | タイルズサバイバル ベヒーモス | TilesSurvive.net",
       "description": "タイルズサバイバル ベヒーモス 巨獣グリフォンの詳細ページです。星ランク強化、イベント追加効果、外見変化、代表タレント、星ランク表をまとめました。",
       "url": "/ja/behemoths/legend-griffin/"
+    },
+    {
+      "language": "ja",
+      "type": "database",
+      "title": "金属10,000",
+      "description": "10k 금속 · 使用すると表示量の資源を獲得。 · アイテムの入手先・用途",
+      "url": "/ja/database/items/#metal-10k"
     },
     {
       "language": "ja",
@@ -690,10 +823,45 @@
     },
     {
       "language": "ja",
+      "type": "database",
+      "title": "木材10,000",
+      "description": "10k 목재 · 使用すると表示量の資源を獲得。 · アイテムの入手先・用途",
+      "url": "/ja/database/items/#wood-10k"
+    },
+    {
+      "language": "ja",
+      "type": "event",
+      "title": "兵士育成のポイントと報酬 | TilesSurvive.net",
+      "description": "訓練・昇格・加速で得るポイントと目標報酬までの必要量を計算します。",
+      "url": "/ja/events/arms-race/"
+    },
+    {
+      "language": "ja",
       "type": "building",
       "title": "病院 | タイルズサバイバル 建物 | TilesSurvive.net",
       "description": "タイルズサバイバルの病院の収容力、無料治療、治療ルールと運用時の注意点を整理した詳細ページです。",
       "url": "/ja/buildings/hospital/"
+    },
+    {
+      "language": "ja",
+      "type": "database",
+      "title": "上級募集トークン",
+      "description": "고급 모집 토큰 · 上級募集の関連アイテムです。募集報酬と確率は公式の確率案内を確認してください。 · アイテムの入手先・用途",
+      "url": "/ja/database/items/#advanced-recruitment-token"
+    },
+    {
+      "language": "ja",
+      "type": "database",
+      "title": "食料10,000",
+      "description": "10k 식량 · 使用すると表示量の資源を獲得。 · アイテムの入手先・用途",
+      "url": "/ja/database/items/#food-10k"
+    },
+    {
+      "language": "ja",
+      "type": "database",
+      "title": "食料100,000",
+      "description": "100k 식량 · 使用すると表示量の資源を獲得。 · アイテムの入手先・用途",
+      "url": "/ja/database/items/#food-100k"
     },
     {
       "language": "ja",
@@ -715,6 +883,13 @@
       "title": "英雄学院 | タイルズサバイバル 建物 | TilesSurvive.net",
       "description": "タイルズサバイバル 英雄学院の建物概要、英雄スキルブックの時間当たり生産量、戦闘力をレベル別に整理した詳細ページです。",
       "url": "/ja/buildings/hero-academy/"
+    },
+    {
+      "language": "ja",
+      "type": "database",
+      "title": "英雄スキルブック",
+      "description": "영웅 스킬북 · 英雄のスキルレベルアップに使用。 · アイテムの入手先・用途",
+      "url": "/ja/database/items/#hero-skill-book"
     },
     {
       "language": "ja",
@@ -757,6 +932,13 @@
       "title": "装備強化経験値 | TilesSurvive.net",
       "description": "1→80の必要経験値は1,585,500です。青・紫・金の素材は100・400・2,000 EXP。所持数には換算後の合計EXPを入力してください。他の強化システムとは合算しません。",
       "url": "/ja/database/gear-exp/"
+    },
+    {
+      "language": "ja",
+      "type": "database",
+      "title": "再鍛造ハンマー",
+      "description": "재련 망치 · 基本再鍛造はハンマー1個、上級は25個を消費します。全装備の累計再鍛造が200回を超えると上級が開放されます。 · アイテムの入手先・用途",
+      "url": "/ja/database/items/#reforge-hammer"
     },
     {
       "language": "ja",
@@ -818,7 +1000,7 @@
       "language": "ja",
       "type": "event",
       "title": "Arcadian Conquest・占領ルール | TilesSurvive.net",
-      "description": "攻城は3時間。累計90分の占領達成、または最長累計占領の同盟が勝利。4つの塔は攻撃ごとに守備兵の2%を減らし、継続占領で間隔が4分から1分に短縮。城または塔の占領60秒ごとに10,000点。集結は味方5チームまで。開始60分前に警戒区域から強制移転、50分前から終了までは区域内移転無料・平和シールド不可。総督パックは1人につき各回1個まで。兵士等級別の撃破・損失点と報酬数量は未確認です。",
+      "description": "攻城期間はv2.5.600から2時間です。以下の占領・報酬の数値は2026-01-07のガイドに基づきます。累計90分の占領達成、または最長累計占領の同盟が勝利。4つの塔は攻撃ごとに守備兵の2%を減らし、継続占領で間隔が4分から1分に短縮。城または塔の占領60秒ごとに10,000点。集結は味方5チームまで。開始60分前に警戒区域から強制移転、50分前から終了までは区域内移転無料・平和シールド不可。総督パックは1人につき各回1個まで。兵士等級別の撃破・損失点と報酬数量は未確認です。",
       "url": "/ja/events/arcadian-conquest/"
     },
     {
@@ -830,9 +1012,16 @@
     },
     {
       "language": "ja",
+      "type": "heroe",
+      "title": "Dave · スキルと解放条件 | TilesSurvive.net",
+      "description": "水弾による攻撃と敵の攻撃力・防御力低下を持つ、海のSSR遠距離英雄。",
+      "url": "/ja/heroes/dave/"
+    },
+    {
+      "language": "ja",
       "type": "database",
       "title": "Dodo · ペットの入手・能力・育成 | TilesSurvive.net",
-      "description": "Dodo — 役割: 攻撃 · 入手確率 · 観測ステータス",
+      "description": "Dodo — 役割: 支援 · 入手確率 · 観測ステータス",
       "url": "/ja/database/pet-system/dodo/"
     },
     {
@@ -867,7 +1056,7 @@
       "language": "ja",
       "type": "database",
       "title": "Snowball · ペットの入手・能力・育成 | TilesSurvive.net",
-      "description": "Snowball — 役割: 支援 · 入手確率 · 観測ステータス",
+      "description": "Snowball — 役割: 攻撃 · 入手確率 · 観測ステータス",
       "url": "/ja/database/pet-system/snowball/"
     },
     {
@@ -957,9 +1146,23 @@
     {
       "language": "ja",
       "type": "database",
+      "title": "Undine専用装備の欠片",
+      "description": "바다의 음성 (조각) · Undineの専用装備強化に使用。 · アイテムの入手先・用途",
+      "url": "/ja/database/items/#undine-gear-fragment"
+    },
+    {
+      "language": "ja",
+      "type": "database",
       "title": "VIPポイント | タイルズサバイバル データベース | TilesSurvive.net",
       "description": "タイルズサバイバルのVIPポイントページです。VIPレベル表、特権ショップ、特権ルーレット、1日購入制限と確率情報をひと目で整理しました。",
       "url": "/ja/database/vip-point/"
+    },
+    {
+      "language": "ja",
+      "type": "database",
+      "title": "アイテムの入手先・用途 | TilesSurvive.net",
+      "description": "素材を選び、関連する報酬・ショップ・育成情報を確認できます。",
+      "url": "/ja/database/items/"
     },
     {
       "language": "ja",
@@ -974,6 +1177,13 @@
       "title": "イベントとシステム | TilesSurvive.net",
       "description": "公式パッチノートで確認されたイベントとシステムの変更です。",
       "url": "/ja/events/"
+    },
+    {
+      "language": "ja",
+      "type": "database",
+      "title": "イベントメダル",
+      "description": "군비 메달 · このイベントの日次目標報酬に関係します。 · アイテムの入手先・用途",
+      "url": "/ja/database/items/#arms-medal"
     },
     {
       "language": "ja",
@@ -1173,6 +1383,13 @@
     },
     {
       "language": "ja",
+      "type": "event",
+      "title": "デイリーミッションのポイント計画 | TilesSurvive.net",
+      "description": "取り組むミッションを選び、目標の宝箱までに必要なポイントを計算します。",
+      "url": "/ja/events/daily-missions/"
+    },
+    {
+      "language": "ja",
       "type": "heroe",
       "title": "トニー · スキル・ステータス・育成 | TilesSurvive.net",
       "description": "タイルサバイバル英雄トニーの詳細ページです。SSR英雄基準で、英雄紹介、戦闘特性、最大レベルと星ランクステータス、星ランク追加効果、スキル、専用装備をひと目で確認できます。",
@@ -1226,6 +1443,13 @@
       "title": "ペット図鑑 · 7 | TilesSurvive.net",
       "description": "役割を比較し、確認できた育成資料を調べられます。 卵の獲得 → 孵化 → 給餌・訓練 → 英雄への支援",
       "url": "/ja/database/pet-system/"
+    },
+    {
+      "language": "ja",
+      "type": "database",
+      "title": "ペットの卵",
+      "description": "펫 알 · 卵を孵化させてペットを獲得・育成します。 · アイテムの入手先・用途",
+      "url": "/ja/database/items/#pet-eggs"
     },
     {
       "language": "ja",
@@ -1307,9 +1531,58 @@
     {
       "language": "ko",
       "type": "database",
+      "title": "100k 식량",
+      "description": "100k 식량 · 사용 시 표기된 양의 자원을 얻습니다. · 아이템 획득처·사용처",
+      "url": "/ko/database/items/#food-100k"
+    },
+    {
+      "language": "ko",
+      "type": "database",
+      "title": "10k 금속",
+      "description": "10k 금속 · 사용 시 표기된 양의 자원을 얻습니다. · 아이템 획득처·사용처",
+      "url": "/ko/database/items/#metal-10k"
+    },
+    {
+      "language": "ko",
+      "type": "database",
+      "title": "10k 목재",
+      "description": "10k 목재 · 사용 시 표기된 양의 자원을 얻습니다. · 아이템 획득처·사용처",
+      "url": "/ko/database/items/#wood-10k"
+    },
+    {
+      "language": "ko",
+      "type": "database",
+      "title": "10k 식량",
+      "description": "10k 식량 · 사용 시 표기된 양의 자원을 얻습니다. · 아이템 획득처·사용처",
+      "url": "/ko/database/items/#food-10k"
+    },
+    {
+      "language": "ko",
+      "type": "database",
+      "title": "20시간 일반 가속",
+      "description": "20시간 일반 가속 · 선택한 대기열의 남은 시간을 5분 줄입니다. · 아이템 획득처·사용처",
+      "url": "/ko/database/items/#speedup-20h"
+    },
+    {
+      "language": "ko",
+      "type": "database",
+      "title": "5분 일반 가속",
+      "description": "5분 일반 가속 · 선택한 대기열의 남은 시간을 5분 줄입니다. · 아이템 획득처·사용처",
+      "url": "/ko/database/items/#speedup-5m"
+    },
+    {
+      "language": "ko",
+      "type": "database",
       "title": "거북이경주 | 타일서바이벌 데이터베이스 | TilesSurvive.net",
       "description": "타일서바이벌 동맹대결 거북이경주 권장표입니다. 단계별 추천 미션과 배틀, 거북이, 국왕버프 추천 구간을 한눈에 확인할 수 있습니다.",
       "url": "/ko/database/turtle-race/"
+    },
+    {
+      "language": "ko",
+      "type": "database",
+      "title": "고급 모집 토큰",
+      "description": "고급 모집 토큰 · 고급 모집 관련 아이템입니다. 모집 보상과 확률은 공식 확률 안내에서 확인할 수 있습니다. · 아이템 획득처·사용처",
+      "url": "/ko/database/items/#advanced-recruitment-token"
     },
     {
       "language": "ko",
@@ -1317,6 +1590,13 @@
       "title": "고스트 · 스킬·능력치·성장 | TilesSurvive.net",
       "description": "타일서바이벌 영웅 고스트 상세 페이지입니다. 영웅 소개, 진영, 전투 특성, 최고 레벨 및 성급 속성, 성급 보너스, 스킬을 한눈에 정리했습니다.",
       "url": "/ko/heroes/ghost/"
+    },
+    {
+      "language": "ko",
+      "type": "database",
+      "title": "군비 메달",
+      "description": "군비 메달 · 군비 경쟁의 오늘 목표 보상에 연결됩니다. · 아이템 획득처·사용처",
+      "url": "/ko/database/items/#arms-medal"
     },
     {
       "language": "ko",
@@ -1334,9 +1614,16 @@
     },
     {
       "language": "ko",
+      "type": "heroe",
+      "title": "데이브 (Dave) · 스킬과 성장 조건 | TilesSurvive.net",
+      "description": "물폭탄 공격과 적군 공격력·방어력 감소 효과를 지닌 바다 SSR 원거리 영웅.",
+      "url": "/ko/heroes/dave/"
+    },
+    {
+      "language": "ko",
       "type": "database",
       "title": "도도 · 펫 획득·능력치·육성 | TilesSurvive.net",
-      "description": "도도 — 역할: 공격 · 획득 확률 · 관측 능력치",
+      "description": "도도 — 역할: 지원 · 획득 확률 · 관측 능력치",
       "url": "/ko/database/pet-system/dodo/"
     },
     {
@@ -1425,6 +1712,13 @@
     },
     {
       "language": "ko",
+      "type": "database",
+      "title": "바다의 음성 (조각)",
+      "description": "바다의 음성 (조각) · 운디네 전용 장비 바다의 음성 강화에 사용합니다. · 아이템 획득처·사용처",
+      "url": "/ko/database/items/#undine-gear-fragment"
+    },
+    {
+      "language": "ko",
       "type": "building",
       "title": "발전소 | 타일서바이벌 건물 | TilesSurvive.net",
       "description": "타일서바이벌 발전소 업그레이드 비용, 시간, 전투력과 스킬 정보를 레벨별로 정리한 상세 페이지입니다.",
@@ -1457,6 +1751,13 @@
       "title": "별뿔이 · 펫 획득·능력치·육성 | TilesSurvive.net",
       "description": "별뿔이 — Lv.1 · 훈련 0단계 · 변신 전 · 육성 데이터",
       "url": "/ko/database/pet-system/starhorn/"
+    },
+    {
+      "language": "ko",
+      "type": "event",
+      "title": "병사 육성 점수·보상 계산 | TilesSurvive.net",
+      "description": "훈련·승급·가속으로 얻을 점수와 목표 보상까지 필요한 양을 계산하세요.",
+      "url": "/ko/events/arms-race/"
     },
     {
       "language": "ko",
@@ -1525,7 +1826,7 @@
       "language": "ko",
       "type": "database",
       "title": "스노우볼 · 펫 획득·능력치·육성 | TilesSurvive.net",
-      "description": "스노우볼 — 역할: 지원 · 획득 확률 · 관측 능력치",
+      "description": "스노우볼 — 역할: 공격 · 획득 확률 · 관측 능력치",
       "url": "/ko/database/pet-system/snowball/"
     },
     {
@@ -1562,6 +1863,13 @@
       "title": "시즌 IV: Blizzard Era | TilesSurvive.net",
       "description": "공식 발표로 확인된 타일서바이벌 시즌 IV의 공개 방식과 주요 특징입니다.",
       "url": "/ko/seasons/season-4/"
+    },
+    {
+      "language": "ko",
+      "type": "database",
+      "title": "아이템 획득처·사용처 | TilesSurvive.net",
+      "description": "재료를 선택해 연결된 보상, 상점과 성장 정보를 찾아보세요.",
+      "url": "/ko/database/items/"
     },
     {
       "language": "ko",
@@ -1607,10 +1915,24 @@
     },
     {
       "language": "ko",
+      "type": "database",
+      "title": "영웅 스킬북",
+      "description": "영웅 스킬북 · 영웅 스킬 레벨 상승에 사용합니다. · 아이템 획득처·사용처",
+      "url": "/ko/database/items/#hero-skill-book"
+    },
+    {
+      "language": "ko",
       "type": "building",
       "title": "영웅 아카데미 | 타일서바이벌 건물 | TilesSurvive.net",
       "description": "타일서바이벌 영웅 아카데미의 건물 개요, 영웅 스킬북 시간당 생산량, 전투력을 레벨별로 정리한 상세 페이지입니다.",
       "url": "/ko/buildings/hero-academy/"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
+      "title": "운디네 (Undine) · 스킬·능력치·성장 | TilesSurvive.net",
+      "description": "바다 영웅 · SSR · Gunners · 스킬과 효과",
+      "url": "/ko/heroes/undine/"
     },
     {
       "language": "ko",
@@ -1635,6 +1957,13 @@
     },
     {
       "language": "ko",
+      "type": "event",
+      "title": "일일 미션 점수 계획 | TilesSurvive.net",
+      "description": "완료할 임무를 선택해 목표 상자까지 필요한 점수를 계산하세요.",
+      "url": "/ko/events/daily-missions/"
+    },
+    {
+      "language": "ko",
       "type": "database",
       "title": "장비 강화 경험치 | TilesSurvive.net",
       "description": "1→80레벨 경험치 합계는 1,585,500입니다. 파랑·보라·금색 스크랩은 각각 100·400·2,000 EXP입니다. 보유량에는 환산한 총 EXP를 입력하세요. 다른 강화 시스템의 비용과 합산하지 않습니다.",
@@ -1646,6 +1975,13 @@
       "title": "장비 제련 확률 | TilesSurvive.net",
       "description": "제련 횟수는 모든 장비에서 누적됩니다. 일반 제련은 망치 1개, 고급은 25개이며 200회 이후 해금됩니다. 아래는 공식 확률 페이지의 2026-10-09 확인값입니다.",
       "url": "/ko/database/gear-reforging/"
+    },
+    {
+      "language": "ko",
+      "type": "database",
+      "title": "재련 망치",
+      "description": "재련 망치 · 기본 재련은 망치 1개, 고급 재련은 25개를 사용합니다. 모든 장비의 누적 재련이 200회를 초과하면 고급 재련이 열립니다. · 아이템 획득처·사용처",
+      "url": "/ko/database/items/#reforge-hammer"
     },
     {
       "language": "ko",
@@ -1714,7 +2050,7 @@
       "language": "ko",
       "type": "event",
       "title": "천궁의 성 · 점령 규칙 | TilesSurvive.net",
-      "description": "공성 시간 3시간 · 누적 점령 90분 달성 또는 최장 누적 점령 연맹 승리. 탑 4개는 공격마다 수비 병력 2%를 줄이며 간격은 점령 지속에 따라 4분에서 1분으로 단축됩니다. 천궁 또는 탑 점령 60초마다 10,000점. 집결은 아군 5개 팀까지 참가합니다. 시작 60분 전 경계 구역 강제 이전, 50분 전부터 종료까지 구역 내 이전 무료·평화 방패 사용 불가. 총독 선물은 이벤트마다 1인 1개까지만 받을 수 있습니다. 병력 등급별 사상·처치 점수와 보상 수량표는 미확인입니다.",
+      "description": "공성은 v2.5.600부터 2시간입니다. 다음 점령·보상 수치는 2026-01-07 가이드 기준입니다: 누적 점령 90분 달성 또는 최장 누적 점령 연맹 승리. 탑 4개는 공격마다 수비 병력 2%를 줄이며 간격은 점령 지속에 따라 4분에서 1분으로 단축됩니다. 천궁 또는 탑 점령 60초마다 10,000점. 집결은 아군 5개 팀까지 참가합니다. 시작 60분 전 경계 구역 강제 이전, 50분 전부터 종료까지 구역 내 이전 무료·평화 방패 사용 불가. 총독 선물은 이벤트마다 1인 1개까지만 받을 수 있습니다. 병력 등급별 사상·처치 점수와 보상 수량표는 미확인입니다.",
       "url": "/ko/events/arcadian-conquest/"
     },
     {
@@ -1901,6 +2237,13 @@
     },
     {
       "language": "ko",
+      "type": "database",
+      "title": "펫 알",
+      "description": "펫 알 · 알을 부화해 펫을 얻고 육성합니다. · 아이템 획득처·사용처",
+      "url": "/ko/database/items/#pet-eggs"
+    },
+    {
+      "language": "ko",
       "type": "privacy",
       "title": "프라이버시 | 타일서바이벌 데이터 허브 | TilesSurvive.net",
       "description": "TilesSurvive.net의 프라이버시 안내 페이지입니다. 사이트 이용 시 수집될 수 있는 기본 정보와 외부 링크, 쿠키, 문의 채널 관련 내용을 확인할 수 있습니다.",
@@ -1943,13 +2286,6 @@
     },
     {
       "language": "ko",
-      "type": "heroe",
-      "title": "Undine · 스킬·능력치·성장 | TilesSurvive.net",
-      "description": "바다 영웅 · SSR · Gunners · 스킬과 효과",
-      "url": "/ko/heroes/undine/"
-    },
-    {
-      "language": "ko",
       "type": "database",
       "title": "VIP포인트 | 타일서바이벌 데이터베이스 | TilesSurvive.net",
       "description": "타일서바이벌 VIP 포인트 페이지입니다. VIP 레벨표, 특권상점, 특권 룰렛, 일일 구매 제한과 확률 정보를 한눈에 정리했습니다.",
@@ -1957,9 +2293,37 @@
     },
     {
       "language": "ru",
+      "type": "database",
+      "title": "10 000 древесины",
+      "description": "10k 목재 · При использовании даёт указанное количество ресурса. · Где получить и использовать предметы",
+      "url": "/ru/database/items/#wood-10k"
+    },
+    {
+      "language": "ru",
+      "type": "database",
+      "title": "10 000 металла",
+      "description": "10k 금속 · При использовании даёт указанное количество ресурса. · Где получить и использовать предметы",
+      "url": "/ru/database/items/#metal-10k"
+    },
+    {
+      "language": "ru",
+      "type": "database",
+      "title": "10 000 пищи",
+      "description": "10k 식량 · При использовании даёт указанное количество ресурса. · Где получить и использовать предметы",
+      "url": "/ru/database/items/#food-10k"
+    },
+    {
+      "language": "ru",
+      "type": "database",
+      "title": "100 000 пищи",
+      "description": "100k 식량 · При использовании даёт указанное количество ресурса. · Где получить и использовать предметы",
+      "url": "/ru/database/items/#food-100k"
+    },
+    {
+      "language": "ru",
       "type": "event",
       "title": "Arcadian Conquest: правила захвата | TilesSurvive.net",
-      "description": "Осада длится 3 часа. Побеждает альянс с 90 минутами суммарного удержания либо самым долгим удержанием. Четыре башни снимают 2% гарнизона за удар; интервал при удержании сокращается с 4 до 1 минуты. Каждые 60 секунд удержания крепости или башни дают 10 000 очков. В сборе участвуют до 5 союзных команд. За 60 минут поселения принудительно перемещаются из зоны; с отметки −50 минут до конца перемещение в зоне бесплатно, щиты отключены. Пакет губернатора — максимум один на игрока за событие. Очки потерь/убийств по рангам войск и количества наград не подтверждены.",
+      "description": "Начиная с v2.5.600 осада длится 2 часа. Следующие значения удержания и наград приведены по руководству от 2026-01-07: Побеждает альянс с 90 минутами суммарного удержания либо самым долгим удержанием. Четыре башни снимают 2% гарнизона за удар; интервал при удержании сокращается с 4 до 1 минуты. Каждые 60 секунд удержания крепости или башни дают 10 000 очков. В сборе участвуют до 5 союзных команд. За 60 минут поселения принудительно перемещаются из зоны; с отметки −50 минут до конца перемещение в зоне бесплатно, щиты отключены. Пакет губернатора — максимум один на игрока за событие. Очки потерь/убийств по рангам войск и количества наград не подтверждены.",
       "url": "/ru/events/arcadian-conquest/"
     },
     {
@@ -1992,9 +2356,16 @@
     },
     {
       "language": "ru",
+      "type": "heroe",
+      "title": "Dave — Навыки и условия открытия | TilesSurvive.net",
+      "description": "Морской герой SSR дальнего боя: атакует водяными бомбами и снижает атаку и защиту врагов.",
+      "url": "/ru/heroes/dave/"
+    },
+    {
+      "language": "ru",
       "type": "database",
       "title": "Dodo · Получение, характеристики и развитие питомца | TilesSurvive.net",
-      "description": "Dodo — Роль: Атака · Вероятность получения · Зафиксированные характеристики",
+      "description": "Dodo — Роль: Поддержка · Вероятность получения · Зафиксированные характеристики",
       "url": "/ru/database/pet-system/dodo/"
     },
     {
@@ -2176,7 +2547,7 @@
       "language": "ru",
       "type": "database",
       "title": "Snowball · Получение, характеристики и развитие питомца | TilesSurvive.net",
-      "description": "Snowball — Роль: Поддержка · Вероятность получения · Зафиксированные характеристики",
+      "description": "Snowball — Роль: Атака · Вероятность получения · Зафиксированные характеристики",
       "url": "/ru/database/pet-system/snowball/"
     },
     {
@@ -2307,6 +2678,20 @@
     },
     {
       "language": "ru",
+      "type": "database",
+      "title": "Где получить и использовать предметы | TilesSurvive.net",
+      "description": "Выберите материал, чтобы найти связанные награды, магазины и развитие.",
+      "url": "/ru/database/items/"
+    },
+    {
+      "language": "ru",
+      "type": "database",
+      "title": "Жетон продвинутого найма",
+      "description": "고급 모집 토큰 · Предмет продвинутого найма. Награды и вероятности найма приведены в официальной публикации. · Где получить и использовать предметы",
+      "url": "/ru/database/items/#advanced-recruitment-token"
+    },
+    {
+      "language": "ru",
       "type": "tool",
       "title": "Инструменты Tiles Survive | помощник событий, калькуляторы, поиск наград | TilesSurvive.net",
       "description": "Хаб инструментов Tiles Survive: помощник событий, калькулятор ускорений, поиск наград и полезные ссылки на базу данных.",
@@ -2342,6 +2727,13 @@
     },
     {
       "language": "ru",
+      "type": "database",
+      "title": "Книги навыков героев",
+      "description": "영웅 스킬북 · Повышает уровни навыков героев. · Где получить и использовать предметы",
+      "url": "/ru/database/items/#hero-skill-book"
+    },
+    {
+      "language": "ru",
       "type": "privacy",
       "title": "Конфиденциальность | Хаб данных Tiles Survive | TilesSurvive.net",
       "description": "Страница с информацией о конфиденциальности TilesSurvive.net. Здесь можно ознакомиться с базовой информацией, которая может собираться при использовании сайта, а также с положениями о внешних ссылках, cookie и каналах связи.",
@@ -2367,6 +2759,20 @@
       "title": "Материалы развития и их применение | TilesSurvive.net",
       "description": "Корм даёт 50, 100, 200 или 500 опыта. Повторное вылупление даёт метки; универсальные метки обмениваются 1:1. В этапе тренировки 20 шагов; этапы 1–4 стоят 100, 200, 400 и 600 меток. Материалы дают опыт снаряжению, молоты меняют свойства.",
       "url": "/ru/database/growth-materials/"
+    },
+    {
+      "language": "ru",
+      "type": "database",
+      "title": "Медали события",
+      "description": "군비 메달 · Связан с ежедневными целями события. · Где получить и использовать предметы",
+      "url": "/ru/database/items/#arms-medal"
+    },
+    {
+      "language": "ru",
+      "type": "database",
+      "title": "Молот перековки",
+      "description": "재련 망치 · Обычная перековка требует 1 молот, продвинутая — 25. Продвинутая открывается после более 200 перековок суммарно по всему снаряжению. · Где получить и использовать предметы",
+      "url": "/ru/database/items/#reforge-hammer"
     },
     {
       "language": "ru",
@@ -2416,6 +2822,20 @@
       "title": "Опыт улучшения снаряжения | TilesSurvive.net",
       "description": "Для 1→80 нужно 1 585 500 опыта. Синие, фиолетовые и золотые материалы дают 100, 400 и 2 000 опыта. Введите пересчитанный опыт в поле наличия. Стоимость других систем сюда не входит.",
       "url": "/ru/database/gear-exp/"
+    },
+    {
+      "language": "ru",
+      "type": "event",
+      "title": "Очки обучения войск и награды | TilesSurvive.net",
+      "description": "Рассчитайте очки обучения, повышения ранга и ускорений до нужной награды.",
+      "url": "/ru/events/arms-race/"
+    },
+    {
+      "language": "ru",
+      "type": "event",
+      "title": "План очков ежедневных заданий | TilesSurvive.net",
+      "description": "Выберите задания и рассчитайте очки до нужного сундука.",
+      "url": "/ru/events/daily-missions/"
     },
     {
       "language": "ru",
@@ -2594,6 +3014,20 @@
     },
     {
       "language": "ru",
+      "type": "database",
+      "title": "Универсальное ускорение на 20 ч.",
+      "description": "20시간 일반 가속 · Сокращает выбранную очередь на 5 минут. · Где получить и использовать предметы",
+      "url": "/ru/database/items/#speedup-20h"
+    },
+    {
+      "language": "ru",
+      "type": "database",
+      "title": "Универсальное ускорение на 5 мин.",
+      "description": "5분 일반 가속 · Сокращает выбранную очередь на 5 минут. · Где получить и использовать предметы",
+      "url": "/ru/database/items/#speedup-5m"
+    },
+    {
+      "language": "ru",
       "type": "term",
       "title": "Условия использования | TilesSurvive.net",
       "description": "Условия использования независимого справочного сайта TilesSurvive.net.",
@@ -2602,9 +3036,65 @@
     {
       "language": "ru",
       "type": "database",
+      "title": "Фрагмент эксклюзивного снаряжения Undine",
+      "description": "바다의 음성 (조각) · Для улучшения эксклюзивного снаряжения Undine. · Где получить и использовать предметы",
+      "url": "/ru/database/items/#undine-gear-fragment"
+    },
+    {
+      "language": "ru",
+      "type": "database",
       "title": "Черепашья гонка | База данных Tiles Survive | TilesSurvive.net",
       "description": "Рекомендуемая таблица для черепашьей гонки в Tiles Survive Alliance Duel. Здесь можно быстро проверить рекомендуемые миссии по этапам, моменты для battle, turtle и королевских бафов.",
       "url": "/ru/database/turtle-race/"
+    },
+    {
+      "language": "ru",
+      "type": "database",
+      "title": "Яйца питомцев",
+      "description": "펫 알 · Вылупляйте и развивайте питомцев. · Где получить и использовать предметы",
+      "url": "/ru/database/items/#pet-eggs"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
+      "title": "10,000金屬",
+      "description": "10k 금속 · 使用後獲得標示數量的資源。 · 道具取得途徑與用途",
+      "url": "/zh-tw/database/items/#metal-10k"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
+      "title": "10,000木材",
+      "description": "10k 목재 · 使用後獲得標示數量的資源。 · 道具取得途徑與用途",
+      "url": "/zh-tw/database/items/#wood-10k"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
+      "title": "10,000食物",
+      "description": "10k 식량 · 使用後獲得標示數量的資源。 · 道具取得途徑與用途",
+      "url": "/zh-tw/database/items/#food-10k"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
+      "title": "100,000食物",
+      "description": "100k 식량 · 使用後獲得標示數量的資源。 · 道具取得途徑與用途",
+      "url": "/zh-tw/database/items/#food-100k"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
+      "title": "20小時通用加速",
+      "description": "20시간 일반 가속 · 縮短所選佇列的倒數時間5分鐘。 · 道具取得途徑與用途",
+      "url": "/zh-tw/database/items/#speedup-20h"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
+      "title": "5分鐘通用加速",
+      "description": "5분 일반 가속 · 縮短所選佇列的倒數時間5分鐘。 · 道具取得途徑與用途",
+      "url": "/zh-tw/database/items/#speedup-5m"
     },
     {
       "language": "zh-tw",
@@ -2619,6 +3109,13 @@
       "title": "巨獸細胞消耗表 | Tiles Survive 資料庫 | TilesSurvive.net",
       "description": "Tiles Survive 的巨獸細胞星級強化消耗表。可一眼查看 1 星到 60 星的各階段消耗、合計與累計。",
       "url": "/zh-tw/database/behemoth-cell/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
+      "title": "高級招募代幣",
+      "description": "고급 모집 토큰 · 高級招募相關道具。招募獎勵與機率可查看官方機率說明。 · 道具取得途徑與用途",
+      "url": "/zh-tw/database/items/#advanced-recruitment-token"
     },
     {
       "language": "zh-tw",
@@ -2661,6 +3158,13 @@
       "title": "尼古拉 · 技能、屬性與養成 | TilesSurvive.net",
       "description": "Tiles Survive 英雄尼古拉詳細頁面。以 SSR 英雄為基準，整理英雄介紹、戰鬥特性、最大等級與星級屬性、星級加成、技能與專屬裝備，方便一頁查看。",
       "url": "/zh-tw/heroes/nikola/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
+      "title": "道具取得途徑與用途 | TilesSurvive.net",
+      "description": "選擇材料，查看相關獎勵、商店及成長資料。",
+      "url": "/zh-tw/database/items/"
     },
     {
       "language": "zh-tw",
@@ -2741,6 +3245,13 @@
     },
     {
       "language": "zh-tw",
+      "type": "event",
+      "title": "每日任務積分規劃 | TilesSurvive.net",
+      "description": "勾選預計完成的任務，計算距離目標寶箱尚缺的積分。",
+      "url": "/zh-tw/events/daily-missions/"
+    },
+    {
+      "language": "zh-tw",
       "type": "heroe",
       "title": "麥克 · 技能、屬性與養成 | TilesSurvive.net",
       "description": "Tiles Survive 英雄麥克詳細頁面。以 SSR 英雄為基準，整理英雄介紹、戰鬥特性、最大等級與星級屬性、星級追加效果、技能與專屬裝備，方便一頁查看。",
@@ -2773,6 +3284,13 @@
       "title": "鯊克 · 技能、屬性與養成 | TilesSurvive.net",
       "description": "鯊克是 Tiles Survive 的海洋陣營 SSR 近戰英雄。本頁整理 Wave Crash、Shark Wave、Frontline Support、Deep Sea Invincible 與專屬裝備深海之錨。",
       "url": "/zh-tw/heroes/shark/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "event",
+      "title": "士兵培養積分與獎勵 | TilesSurvive.net",
+      "description": "計算訓練、晉升與加速的積分，以及達到目標獎勵所需的數量。",
+      "url": "/zh-tw/events/arms-race/"
     },
     {
       "language": "zh-tw",
@@ -2850,6 +3368,13 @@
       "title": "英雄經驗值 | TilesSurvive 資料庫 | TilesSurvive.net",
       "description": "Tiles Survive 的英雄經驗值資料頁面。整理英雄從等級 1 到 150 的總經驗值消耗量，以及培養時需要注意的重點。",
       "url": "/zh-tw/database/hero-exp/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
+      "title": "英雄技能書",
+      "description": "영웅 스킬북 · 用於提升英雄技能等級。 · 道具取得途徑與用途",
+      "url": "/zh-tw/database/items/#hero-skill-book"
     },
     {
       "language": "zh-tw",
@@ -3028,10 +3553,24 @@
     },
     {
       "language": "zh-tw",
+      "type": "database",
+      "title": "重鑄錘",
+      "description": "재련 망치 · 普通重鑄消耗1個錘，高級重鑄消耗25個。所有裝備累計重鑄超過200次後開放高級重鑄。 · 道具取得途徑與用途",
+      "url": "/zh-tw/database/items/#reforge-hammer"
+    },
+    {
+      "language": "zh-tw",
       "type": "heroe",
       "title": "蔡宜葵 · 技能、屬性與養成 | TilesSurvive.net",
       "description": "Tiles Survive 英雄蔡宜葵詳細頁面。以 SSR 英雄為基準，整理英雄介紹、戰鬥特性、最大等級與星級屬性、星級加成、技能與專屬裝備，方便一頁查看。",
       "url": "/zh-tw/heroes/candy/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
+      "title": "寵物蛋",
+      "description": "펫 알 · 孵化寵物蛋以取得並培養寵物。 · 道具取得途徑與用途",
+      "url": "/zh-tw/database/items/#pet-eggs"
     },
     {
       "language": "zh-tw",
@@ -3112,6 +3651,13 @@
     },
     {
       "language": "zh-tw",
+      "type": "database",
+      "title": "活動勳章",
+      "description": "군비 메달 · 用於此活動的每日目標獎勵。 · 道具取得途徑與用途",
+      "url": "/zh-tw/database/items/#arms-medal"
+    },
+    {
+      "language": "zh-tw",
       "type": "building",
       "title": "研究所 | Tiles Survive 建築 | TilesSurvive.net",
       "description": "Tiles Survive 研究所索引頁面。可一眼查看發展、經濟、英雄、士兵、情報前哨基地、聯盟對決、特殊部隊、感染者討伐、末日運輸研究分類。",
@@ -3121,7 +3667,7 @@
       "language": "zh-tw",
       "type": "event",
       "title": "Arcadian Conquest・佔領規則 | TilesSurvive.net",
-      "description": "攻城持續3小時；累計佔領90分鐘或累計佔領最久的聯盟獲勝。4座塔每次攻擊削減守軍2%，持續佔領使間隔由4分鐘縮至1分鐘。城或塔每佔領60秒得10,000分，集結最多5支友軍隊伍。開始前60分鐘強制遷移警戒區聚落；前50分鐘起至結束，區內遷移免費且無法使用和平護盾。每人每次活動最多領取1個總督禮包。各兵階傷亡／擊殺分數及獎勵數量待確認。",
+      "description": "攻城時間自v2.5.600起為2小時。以下佔領與獎勵數值依據2026-01-07指南：累計佔領90分鐘或累計佔領最久的聯盟獲勝。4座塔每次攻擊削減守軍2%，持續佔領使間隔由4分鐘縮至1分鐘。城或塔每佔領60秒得10,000分，集結最多5支友軍隊伍。開始前60分鐘強制遷移警戒區聚落；前50分鐘起至結束，區內遷移免費且無法使用和平護盾。每人每次活動最多領取1個總督禮包。各兵階傷亡／擊殺分數及獎勵數量待確認。",
       "url": "/zh-tw/events/arcadian-conquest/"
     },
     {
@@ -3133,9 +3679,16 @@
     },
     {
       "language": "zh-tw",
+      "type": "heroe",
+      "title": "Dave · 技能與解鎖條件 | TilesSurvive.net",
+      "description": "以水彈攻擊並降低敵方攻擊力、防禦力的海洋SSR遠程英雄。",
+      "url": "/zh-tw/heroes/dave/"
+    },
+    {
+      "language": "zh-tw",
       "type": "database",
       "title": "Dodo · 寵物取得、屬性與培養 | TilesSurvive.net",
-      "description": "Dodo — 定位: 攻擊 · 取得機率 · 觀測屬性",
+      "description": "Dodo — 定位: 支援 · 取得機率 · 觀測屬性",
       "url": "/zh-tw/database/pet-system/dodo/"
     },
     {
@@ -3170,7 +3723,7 @@
       "language": "zh-tw",
       "type": "database",
       "title": "Snowball · 寵物取得、屬性與培養 | TilesSurvive.net",
-      "description": "Snowball — 定位: 支援 · 取得機率 · 觀測屬性",
+      "description": "Snowball — 定位: 攻擊 · 取得機率 · 觀測屬性",
       "url": "/zh-tw/database/pet-system/snowball/"
     },
     {
@@ -3249,6 +3802,13 @@
       "title": "Undine · 技能、屬性與養成 | TilesSurvive.net",
       "description": "海洋英雄 · SSR · Gunners · 技能與效果",
       "url": "/zh-tw/heroes/undine/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
+      "title": "Undine專屬裝備碎片",
+      "description": "바다의 음성 (조각) · 用於強化Undine的專屬裝備。 · 道具取得途徑與用途",
+      "url": "/zh-tw/database/items/#undine-gear-fragment"
     },
     {
       "language": "zh-tw",

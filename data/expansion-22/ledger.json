@@ -1740,16 +1740,16 @@
       "sourceKind": "community-table"
     },
     {
-      "id": "petExp-42",
+      "id": "petExp-2",
       "category": "petExp",
       "gameName": "petExp",
       "originalName": "petExp",
-      "value": 2300,
+      "value": 120,
       "unit": "EXP",
-      "level": "41 → 42",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
+      "level": "1 → 2",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
       "checked": "2026-10-09",
       "pages": [
         "/ko/database/pet-system/",
@@ -1759,7 +1759,887 @@
         "/zh-tw/database/pet-system/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-resource-field-validated"
+    },
+    {
+      "id": "petExp-3",
+      "category": "petExp",
+      "gameName": "petExp",
+      "originalName": "petExp",
+      "value": 130,
+      "unit": "EXP",
+      "level": "2 → 3",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
+      "checked": "2026-10-09",
+      "pages": [
+        "/ko/database/pet-system/",
+        "/en/database/pet-system/",
+        "/ja/database/pet-system/",
+        "/ru/database/pet-system/",
+        "/zh-tw/database/pet-system/"
+      ],
+      "status": "published",
+      "sourceKind": "game-resource-field-validated"
+    },
+    {
+      "id": "petExp-4",
+      "category": "petExp",
+      "gameName": "petExp",
+      "originalName": "petExp",
+      "value": 140,
+      "unit": "EXP",
+      "level": "3 → 4",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
+      "checked": "2026-10-09",
+      "pages": [
+        "/ko/database/pet-system/",
+        "/en/database/pet-system/",
+        "/ja/database/pet-system/",
+        "/ru/database/pet-system/",
+        "/zh-tw/database/pet-system/"
+      ],
+      "status": "published",
+      "sourceKind": "game-resource-field-validated"
+    },
+    {
+      "id": "petExp-5",
+      "category": "petExp",
+      "gameName": "petExp",
+      "originalName": "petExp",
+      "value": 150,
+      "unit": "EXP",
+      "level": "4 → 5",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
+      "checked": "2026-10-09",
+      "pages": [
+        "/ko/database/pet-system/",
+        "/en/database/pet-system/",
+        "/ja/database/pet-system/",
+        "/ru/database/pet-system/",
+        "/zh-tw/database/pet-system/"
+      ],
+      "status": "published",
+      "sourceKind": "game-resource-field-validated"
+    },
+    {
+      "id": "petExp-6",
+      "category": "petExp",
+      "gameName": "petExp",
+      "originalName": "petExp",
+      "value": 160,
+      "unit": "EXP",
+      "level": "5 → 6",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
+      "checked": "2026-10-09",
+      "pages": [
+        "/ko/database/pet-system/",
+        "/en/database/pet-system/",
+        "/ja/database/pet-system/",
+        "/ru/database/pet-system/",
+        "/zh-tw/database/pet-system/"
+      ],
+      "status": "published",
+      "sourceKind": "game-resource-field-validated"
+    },
+    {
+      "id": "petExp-7",
+      "category": "petExp",
+      "gameName": "petExp",
+      "originalName": "petExp",
+      "value": 170,
+      "unit": "EXP",
+      "level": "6 → 7",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
+      "checked": "2026-10-09",
+      "pages": [
+        "/ko/database/pet-system/",
+        "/en/database/pet-system/",
+        "/ja/database/pet-system/",
+        "/ru/database/pet-system/",
+        "/zh-tw/database/pet-system/"
+      ],
+      "status": "published",
+      "sourceKind": "game-resource-field-validated"
+    },
+    {
+      "id": "petExp-8",
+      "category": "petExp",
+      "gameName": "petExp",
+      "originalName": "petExp",
+      "value": 180,
+      "unit": "EXP",
+      "level": "7 → 8",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
+      "checked": "2026-10-09",
+      "pages": [
+        "/ko/database/pet-system/",
+        "/en/database/pet-system/",
+        "/ja/database/pet-system/",
+        "/ru/database/pet-system/",
+        "/zh-tw/database/pet-system/"
+      ],
+      "status": "published",
+      "sourceKind": "game-resource-field-validated"
+    },
+    {
+      "id": "petExp-9",
+      "category": "petExp",
+      "gameName": "petExp",
+      "originalName": "petExp",
+      "value": 190,
+      "unit": "EXP",
+      "level": "8 → 9",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
+      "checked": "2026-10-09",
+      "pages": [
+        "/ko/database/pet-system/",
+        "/en/database/pet-system/",
+        "/ja/database/pet-system/",
+        "/ru/database/pet-system/",
+        "/zh-tw/database/pet-system/"
+      ],
+      "status": "published",
+      "sourceKind": "game-resource-field-validated"
+    },
+    {
+      "id": "petExp-10",
+      "category": "petExp",
+      "gameName": "petExp",
+      "originalName": "petExp",
+      "value": 200,
+      "unit": "EXP",
+      "level": "9 → 10",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
+      "checked": "2026-10-09",
+      "pages": [
+        "/ko/database/pet-system/",
+        "/en/database/pet-system/",
+        "/ja/database/pet-system/",
+        "/ru/database/pet-system/",
+        "/zh-tw/database/pet-system/"
+      ],
+      "status": "published",
+      "sourceKind": "game-resource-field-validated"
+    },
+    {
+      "id": "petExp-11",
+      "category": "petExp",
+      "gameName": "petExp",
+      "originalName": "petExp",
+      "value": 210,
+      "unit": "EXP",
+      "level": "10 → 11",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
+      "checked": "2026-10-09",
+      "pages": [
+        "/ko/database/pet-system/",
+        "/en/database/pet-system/",
+        "/ja/database/pet-system/",
+        "/ru/database/pet-system/",
+        "/zh-tw/database/pet-system/"
+      ],
+      "status": "published",
+      "sourceKind": "game-resource-field-validated"
+    },
+    {
+      "id": "petExp-12",
+      "category": "petExp",
+      "gameName": "petExp",
+      "originalName": "petExp",
+      "value": 220,
+      "unit": "EXP",
+      "level": "11 → 12",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
+      "checked": "2026-10-09",
+      "pages": [
+        "/ko/database/pet-system/",
+        "/en/database/pet-system/",
+        "/ja/database/pet-system/",
+        "/ru/database/pet-system/",
+        "/zh-tw/database/pet-system/"
+      ],
+      "status": "published",
+      "sourceKind": "game-resource-field-validated"
+    },
+    {
+      "id": "petExp-13",
+      "category": "petExp",
+      "gameName": "petExp",
+      "originalName": "petExp",
+      "value": 240,
+      "unit": "EXP",
+      "level": "12 → 13",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
+      "checked": "2026-10-09",
+      "pages": [
+        "/ko/database/pet-system/",
+        "/en/database/pet-system/",
+        "/ja/database/pet-system/",
+        "/ru/database/pet-system/",
+        "/zh-tw/database/pet-system/"
+      ],
+      "status": "published",
+      "sourceKind": "game-resource-field-validated"
+    },
+    {
+      "id": "petExp-14",
+      "category": "petExp",
+      "gameName": "petExp",
+      "originalName": "petExp",
+      "value": 260,
+      "unit": "EXP",
+      "level": "13 → 14",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
+      "checked": "2026-10-09",
+      "pages": [
+        "/ko/database/pet-system/",
+        "/en/database/pet-system/",
+        "/ja/database/pet-system/",
+        "/ru/database/pet-system/",
+        "/zh-tw/database/pet-system/"
+      ],
+      "status": "published",
+      "sourceKind": "game-resource-field-validated"
+    },
+    {
+      "id": "petExp-15",
+      "category": "petExp",
+      "gameName": "petExp",
+      "originalName": "petExp",
+      "value": 290,
+      "unit": "EXP",
+      "level": "14 → 15",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
+      "checked": "2026-10-09",
+      "pages": [
+        "/ko/database/pet-system/",
+        "/en/database/pet-system/",
+        "/ja/database/pet-system/",
+        "/ru/database/pet-system/",
+        "/zh-tw/database/pet-system/"
+      ],
+      "status": "published",
+      "sourceKind": "game-resource-field-validated"
+    },
+    {
+      "id": "petExp-16",
+      "category": "petExp",
+      "gameName": "petExp",
+      "originalName": "petExp",
+      "value": 320,
+      "unit": "EXP",
+      "level": "15 → 16",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
+      "checked": "2026-10-09",
+      "pages": [
+        "/ko/database/pet-system/",
+        "/en/database/pet-system/",
+        "/ja/database/pet-system/",
+        "/ru/database/pet-system/",
+        "/zh-tw/database/pet-system/"
+      ],
+      "status": "published",
+      "sourceKind": "game-resource-field-validated"
+    },
+    {
+      "id": "petExp-17",
+      "category": "petExp",
+      "gameName": "petExp",
+      "originalName": "petExp",
+      "value": 360,
+      "unit": "EXP",
+      "level": "16 → 17",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
+      "checked": "2026-10-09",
+      "pages": [
+        "/ko/database/pet-system/",
+        "/en/database/pet-system/",
+        "/ja/database/pet-system/",
+        "/ru/database/pet-system/",
+        "/zh-tw/database/pet-system/"
+      ],
+      "status": "published",
+      "sourceKind": "game-resource-field-validated"
+    },
+    {
+      "id": "petExp-18",
+      "category": "petExp",
+      "gameName": "petExp",
+      "originalName": "petExp",
+      "value": 390,
+      "unit": "EXP",
+      "level": "17 → 18",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
+      "checked": "2026-10-09",
+      "pages": [
+        "/ko/database/pet-system/",
+        "/en/database/pet-system/",
+        "/ja/database/pet-system/",
+        "/ru/database/pet-system/",
+        "/zh-tw/database/pet-system/"
+      ],
+      "status": "published",
+      "sourceKind": "game-resource-field-validated"
+    },
+    {
+      "id": "petExp-19",
+      "category": "petExp",
+      "gameName": "petExp",
+      "originalName": "petExp",
+      "value": 430,
+      "unit": "EXP",
+      "level": "18 → 19",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
+      "checked": "2026-10-09",
+      "pages": [
+        "/ko/database/pet-system/",
+        "/en/database/pet-system/",
+        "/ja/database/pet-system/",
+        "/ru/database/pet-system/",
+        "/zh-tw/database/pet-system/"
+      ],
+      "status": "published",
+      "sourceKind": "game-resource-field-validated"
+    },
+    {
+      "id": "petExp-20",
+      "category": "petExp",
+      "gameName": "petExp",
+      "originalName": "petExp",
+      "value": 470,
+      "unit": "EXP",
+      "level": "19 → 20",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
+      "checked": "2026-10-09",
+      "pages": [
+        "/ko/database/pet-system/",
+        "/en/database/pet-system/",
+        "/ja/database/pet-system/",
+        "/ru/database/pet-system/",
+        "/zh-tw/database/pet-system/"
+      ],
+      "status": "published",
+      "sourceKind": "game-resource-field-validated"
+    },
+    {
+      "id": "petExp-21",
+      "category": "petExp",
+      "gameName": "petExp",
+      "originalName": "petExp",
+      "value": 520,
+      "unit": "EXP",
+      "level": "20 → 21",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
+      "checked": "2026-10-09",
+      "pages": [
+        "/ko/database/pet-system/",
+        "/en/database/pet-system/",
+        "/ja/database/pet-system/",
+        "/ru/database/pet-system/",
+        "/zh-tw/database/pet-system/"
+      ],
+      "status": "published",
+      "sourceKind": "game-resource-field-validated"
+    },
+    {
+      "id": "petExp-22",
+      "category": "petExp",
+      "gameName": "petExp",
+      "originalName": "petExp",
+      "value": 570,
+      "unit": "EXP",
+      "level": "21 → 22",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
+      "checked": "2026-10-09",
+      "pages": [
+        "/ko/database/pet-system/",
+        "/en/database/pet-system/",
+        "/ja/database/pet-system/",
+        "/ru/database/pet-system/",
+        "/zh-tw/database/pet-system/"
+      ],
+      "status": "published",
+      "sourceKind": "game-resource-field-validated"
+    },
+    {
+      "id": "petExp-23",
+      "category": "petExp",
+      "gameName": "petExp",
+      "originalName": "petExp",
+      "value": 610,
+      "unit": "EXP",
+      "level": "22 → 23",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
+      "checked": "2026-10-09",
+      "pages": [
+        "/ko/database/pet-system/",
+        "/en/database/pet-system/",
+        "/ja/database/pet-system/",
+        "/ru/database/pet-system/",
+        "/zh-tw/database/pet-system/"
+      ],
+      "status": "published",
+      "sourceKind": "game-resource-field-validated"
+    },
+    {
+      "id": "petExp-24",
+      "category": "petExp",
+      "gameName": "petExp",
+      "originalName": "petExp",
+      "value": 680,
+      "unit": "EXP",
+      "level": "23 → 24",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
+      "checked": "2026-10-09",
+      "pages": [
+        "/ko/database/pet-system/",
+        "/en/database/pet-system/",
+        "/ja/database/pet-system/",
+        "/ru/database/pet-system/",
+        "/zh-tw/database/pet-system/"
+      ],
+      "status": "published",
+      "sourceKind": "game-resource-field-validated"
+    },
+    {
+      "id": "petExp-25",
+      "category": "petExp",
+      "gameName": "petExp",
+      "originalName": "petExp",
+      "value": 730,
+      "unit": "EXP",
+      "level": "24 → 25",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
+      "checked": "2026-10-09",
+      "pages": [
+        "/ko/database/pet-system/",
+        "/en/database/pet-system/",
+        "/ja/database/pet-system/",
+        "/ru/database/pet-system/",
+        "/zh-tw/database/pet-system/"
+      ],
+      "status": "published",
+      "sourceKind": "game-resource-field-validated"
+    },
+    {
+      "id": "petExp-26",
+      "category": "petExp",
+      "gameName": "petExp",
+      "originalName": "petExp",
+      "value": 800,
+      "unit": "EXP",
+      "level": "25 → 26",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
+      "checked": "2026-10-09",
+      "pages": [
+        "/ko/database/pet-system/",
+        "/en/database/pet-system/",
+        "/ja/database/pet-system/",
+        "/ru/database/pet-system/",
+        "/zh-tw/database/pet-system/"
+      ],
+      "status": "published",
+      "sourceKind": "game-resource-field-validated"
+    },
+    {
+      "id": "petExp-27",
+      "category": "petExp",
+      "gameName": "petExp",
+      "originalName": "petExp",
+      "value": 850,
+      "unit": "EXP",
+      "level": "26 → 27",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
+      "checked": "2026-10-09",
+      "pages": [
+        "/ko/database/pet-system/",
+        "/en/database/pet-system/",
+        "/ja/database/pet-system/",
+        "/ru/database/pet-system/",
+        "/zh-tw/database/pet-system/"
+      ],
+      "status": "published",
+      "sourceKind": "game-resource-field-validated"
+    },
+    {
+      "id": "petExp-28",
+      "category": "petExp",
+      "gameName": "petExp",
+      "originalName": "petExp",
+      "value": 940,
+      "unit": "EXP",
+      "level": "27 → 28",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
+      "checked": "2026-10-09",
+      "pages": [
+        "/ko/database/pet-system/",
+        "/en/database/pet-system/",
+        "/ja/database/pet-system/",
+        "/ru/database/pet-system/",
+        "/zh-tw/database/pet-system/"
+      ],
+      "status": "published",
+      "sourceKind": "game-resource-field-validated"
+    },
+    {
+      "id": "petExp-29",
+      "category": "petExp",
+      "gameName": "petExp",
+      "originalName": "petExp",
+      "value": 990,
+      "unit": "EXP",
+      "level": "28 → 29",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
+      "checked": "2026-10-09",
+      "pages": [
+        "/ko/database/pet-system/",
+        "/en/database/pet-system/",
+        "/ja/database/pet-system/",
+        "/ru/database/pet-system/",
+        "/zh-tw/database/pet-system/"
+      ],
+      "status": "published",
+      "sourceKind": "game-resource-field-validated"
+    },
+    {
+      "id": "petExp-30",
+      "category": "petExp",
+      "gameName": "petExp",
+      "originalName": "petExp",
+      "value": 1080,
+      "unit": "EXP",
+      "level": "29 → 30",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
+      "checked": "2026-10-09",
+      "pages": [
+        "/ko/database/pet-system/",
+        "/en/database/pet-system/",
+        "/ja/database/pet-system/",
+        "/ru/database/pet-system/",
+        "/zh-tw/database/pet-system/"
+      ],
+      "status": "published",
+      "sourceKind": "game-resource-field-validated"
+    },
+    {
+      "id": "petExp-31",
+      "category": "petExp",
+      "gameName": "petExp",
+      "originalName": "petExp",
+      "value": 1140,
+      "unit": "EXP",
+      "level": "30 → 31",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
+      "checked": "2026-10-09",
+      "pages": [
+        "/ko/database/pet-system/",
+        "/en/database/pet-system/",
+        "/ja/database/pet-system/",
+        "/ru/database/pet-system/",
+        "/zh-tw/database/pet-system/"
+      ],
+      "status": "published",
+      "sourceKind": "game-resource-field-validated"
+    },
+    {
+      "id": "petExp-32",
+      "category": "petExp",
+      "gameName": "petExp",
+      "originalName": "petExp",
+      "value": 1230,
+      "unit": "EXP",
+      "level": "31 → 32",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
+      "checked": "2026-10-09",
+      "pages": [
+        "/ko/database/pet-system/",
+        "/en/database/pet-system/",
+        "/ja/database/pet-system/",
+        "/ru/database/pet-system/",
+        "/zh-tw/database/pet-system/"
+      ],
+      "status": "published",
+      "sourceKind": "game-resource-field-validated"
+    },
+    {
+      "id": "petExp-33",
+      "category": "petExp",
+      "gameName": "petExp",
+      "originalName": "petExp",
+      "value": 1400,
+      "unit": "EXP",
+      "level": "32 → 33",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
+      "checked": "2026-10-09",
+      "pages": [
+        "/ko/database/pet-system/",
+        "/en/database/pet-system/",
+        "/ja/database/pet-system/",
+        "/ru/database/pet-system/",
+        "/zh-tw/database/pet-system/"
+      ],
+      "status": "published",
+      "sourceKind": "game-resource-field-validated"
+    },
+    {
+      "id": "petExp-34",
+      "category": "petExp",
+      "gameName": "petExp",
+      "originalName": "petExp",
+      "value": 1400,
+      "unit": "EXP",
+      "level": "33 → 34",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
+      "checked": "2026-10-09",
+      "pages": [
+        "/ko/database/pet-system/",
+        "/en/database/pet-system/",
+        "/ja/database/pet-system/",
+        "/ru/database/pet-system/",
+        "/zh-tw/database/pet-system/"
+      ],
+      "status": "published",
+      "sourceKind": "game-resource-field-validated"
+    },
+    {
+      "id": "petExp-35",
+      "category": "petExp",
+      "gameName": "petExp",
+      "originalName": "petExp",
+      "value": 1500,
+      "unit": "EXP",
+      "level": "34 → 35",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
+      "checked": "2026-10-09",
+      "pages": [
+        "/ko/database/pet-system/",
+        "/en/database/pet-system/",
+        "/ja/database/pet-system/",
+        "/ru/database/pet-system/",
+        "/zh-tw/database/pet-system/"
+      ],
+      "status": "published",
+      "sourceKind": "game-resource-field-validated"
+    },
+    {
+      "id": "petExp-36",
+      "category": "petExp",
+      "gameName": "petExp",
+      "originalName": "petExp",
+      "value": 1600,
+      "unit": "EXP",
+      "level": "35 → 36",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
+      "checked": "2026-10-09",
+      "pages": [
+        "/ko/database/pet-system/",
+        "/en/database/pet-system/",
+        "/ja/database/pet-system/",
+        "/ru/database/pet-system/",
+        "/zh-tw/database/pet-system/"
+      ],
+      "status": "published",
+      "sourceKind": "game-resource-field-validated"
+    },
+    {
+      "id": "petExp-37",
+      "category": "petExp",
+      "gameName": "petExp",
+      "originalName": "petExp",
+      "value": 1700,
+      "unit": "EXP",
+      "level": "36 → 37",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
+      "checked": "2026-10-09",
+      "pages": [
+        "/ko/database/pet-system/",
+        "/en/database/pet-system/",
+        "/ja/database/pet-system/",
+        "/ru/database/pet-system/",
+        "/zh-tw/database/pet-system/"
+      ],
+      "status": "published",
+      "sourceKind": "game-resource-field-validated"
+    },
+    {
+      "id": "petExp-38",
+      "category": "petExp",
+      "gameName": "petExp",
+      "originalName": "petExp",
+      "value": 1800,
+      "unit": "EXP",
+      "level": "37 → 38",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
+      "checked": "2026-10-09",
+      "pages": [
+        "/ko/database/pet-system/",
+        "/en/database/pet-system/",
+        "/ja/database/pet-system/",
+        "/ru/database/pet-system/",
+        "/zh-tw/database/pet-system/"
+      ],
+      "status": "published",
+      "sourceKind": "game-resource-field-validated"
+    },
+    {
+      "id": "petExp-39",
+      "category": "petExp",
+      "gameName": "petExp",
+      "originalName": "petExp",
+      "value": 2000,
+      "unit": "EXP",
+      "level": "38 → 39",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
+      "checked": "2026-10-09",
+      "pages": [
+        "/ko/database/pet-system/",
+        "/en/database/pet-system/",
+        "/ja/database/pet-system/",
+        "/ru/database/pet-system/",
+        "/zh-tw/database/pet-system/"
+      ],
+      "status": "published",
+      "sourceKind": "game-resource-field-validated"
+    },
+    {
+      "id": "petExp-40",
+      "category": "petExp",
+      "gameName": "petExp",
+      "originalName": "petExp",
+      "value": 2000,
+      "unit": "EXP",
+      "level": "39 → 40",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
+      "checked": "2026-10-09",
+      "pages": [
+        "/ko/database/pet-system/",
+        "/en/database/pet-system/",
+        "/ja/database/pet-system/",
+        "/ru/database/pet-system/",
+        "/zh-tw/database/pet-system/"
+      ],
+      "status": "published",
+      "sourceKind": "game-resource-field-validated"
+    },
+    {
+      "id": "petExp-41",
+      "category": "petExp",
+      "gameName": "petExp",
+      "originalName": "petExp",
+      "value": 2200,
+      "unit": "EXP",
+      "level": "40 → 41",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
+      "checked": "2026-10-09",
+      "pages": [
+        "/ko/database/pet-system/",
+        "/en/database/pet-system/",
+        "/ja/database/pet-system/",
+        "/ru/database/pet-system/",
+        "/zh-tw/database/pet-system/"
+      ],
+      "status": "published",
+      "sourceKind": "game-resource-field-validated"
+    },
+    {
+      "id": "petExp-42",
+      "category": "petExp",
+      "gameName": "petExp",
+      "originalName": "petExp",
+      "value": 2300,
+      "unit": "EXP",
+      "level": "41 → 42",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
+      "checked": "2026-10-09",
+      "pages": [
+        "/ko/database/pet-system/",
+        "/en/database/pet-system/",
+        "/ja/database/pet-system/",
+        "/ru/database/pet-system/",
+        "/zh-tw/database/pet-system/"
+      ],
+      "status": "published",
+      "sourceKind": "game-resource-field-validated"
     },
     {
       "id": "petExp-43",
@@ -1769,9 +2649,9 @@
       "value": 2400,
       "unit": "EXP",
       "level": "42 → 43",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
       "checked": "2026-10-09",
       "pages": [
         "/ko/database/pet-system/",
@@ -1781,7 +2661,7 @@
         "/zh-tw/database/pet-system/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-resource-field-validated"
     },
     {
       "id": "petExp-44",
@@ -1791,9 +2671,9 @@
       "value": 2600,
       "unit": "EXP",
       "level": "43 → 44",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
       "checked": "2026-10-09",
       "pages": [
         "/ko/database/pet-system/",
@@ -1803,7 +2683,7 @@
         "/zh-tw/database/pet-system/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-resource-field-validated"
     },
     {
       "id": "petExp-45",
@@ -1813,9 +2693,9 @@
       "value": 2600,
       "unit": "EXP",
       "level": "44 → 45",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
       "checked": "2026-10-09",
       "pages": [
         "/ko/database/pet-system/",
@@ -1825,7 +2705,7 @@
         "/zh-tw/database/pet-system/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-resource-field-validated"
     },
     {
       "id": "petExp-46",
@@ -1835,9 +2715,9 @@
       "value": 2800,
       "unit": "EXP",
       "level": "45 → 46",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
       "checked": "2026-10-09",
       "pages": [
         "/ko/database/pet-system/",
@@ -1847,7 +2727,7 @@
         "/zh-tw/database/pet-system/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-resource-field-validated"
     },
     {
       "id": "petExp-47",
@@ -1857,9 +2737,9 @@
       "value": 2900,
       "unit": "EXP",
       "level": "46 → 47",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
       "checked": "2026-10-09",
       "pages": [
         "/ko/database/pet-system/",
@@ -1869,7 +2749,7 @@
         "/zh-tw/database/pet-system/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-resource-field-validated"
     },
     {
       "id": "petExp-48",
@@ -1879,9 +2759,9 @@
       "value": 3100,
       "unit": "EXP",
       "level": "47 → 48",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
       "checked": "2026-10-09",
       "pages": [
         "/ko/database/pet-system/",
@@ -1891,7 +2771,7 @@
         "/zh-tw/database/pet-system/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-resource-field-validated"
     },
     {
       "id": "petExp-49",
@@ -1901,9 +2781,9 @@
       "value": 3200,
       "unit": "EXP",
       "level": "48 → 49",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
       "checked": "2026-10-09",
       "pages": [
         "/ko/database/pet-system/",
@@ -1913,7 +2793,7 @@
         "/zh-tw/database/pet-system/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-resource-field-validated"
     },
     {
       "id": "petExp-50",
@@ -1923,9 +2803,9 @@
       "value": 3400,
       "unit": "EXP",
       "level": "49 → 50",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
       "checked": "2026-10-09",
       "pages": [
         "/ko/database/pet-system/",
@@ -1935,7 +2815,7 @@
         "/zh-tw/database/pet-system/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-resource-field-validated"
     },
     {
       "id": "petExp-51",
@@ -1945,9 +2825,9 @@
       "value": 3500,
       "unit": "EXP",
       "level": "50 → 51",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
       "checked": "2026-10-09",
       "pages": [
         "/ko/database/pet-system/",
@@ -1957,7 +2837,7 @@
         "/zh-tw/database/pet-system/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-resource-field-validated"
     },
     {
       "id": "petExp-52",
@@ -1967,9 +2847,9 @@
       "value": 3700,
       "unit": "EXP",
       "level": "51 → 52",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
       "checked": "2026-10-09",
       "pages": [
         "/ko/database/pet-system/",
@@ -1979,7 +2859,7 @@
         "/zh-tw/database/pet-system/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-resource-field-validated"
     },
     {
       "id": "petExp-53",
@@ -1989,9 +2869,9 @@
       "value": 3900,
       "unit": "EXP",
       "level": "52 → 53",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
       "checked": "2026-10-09",
       "pages": [
         "/ko/database/pet-system/",
@@ -2001,7 +2881,7 @@
         "/zh-tw/database/pet-system/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-resource-field-validated"
     },
     {
       "id": "petExp-54",
@@ -2011,9 +2891,9 @@
       "value": 4000,
       "unit": "EXP",
       "level": "53 → 54",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
       "checked": "2026-10-09",
       "pages": [
         "/ko/database/pet-system/",
@@ -2023,7 +2903,7 @@
         "/zh-tw/database/pet-system/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-resource-field-validated"
     },
     {
       "id": "petExp-55",
@@ -2033,9 +2913,9 @@
       "value": 4200,
       "unit": "EXP",
       "level": "54 → 55",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
       "checked": "2026-10-09",
       "pages": [
         "/ko/database/pet-system/",
@@ -2045,7 +2925,7 @@
         "/zh-tw/database/pet-system/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-resource-field-validated"
     },
     {
       "id": "petExp-56",
@@ -2055,9 +2935,9 @@
       "value": 4300,
       "unit": "EXP",
       "level": "55 → 56",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
       "checked": "2026-10-09",
       "pages": [
         "/ko/database/pet-system/",
@@ -2067,7 +2947,7 @@
         "/zh-tw/database/pet-system/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-resource-field-validated"
     },
     {
       "id": "petExp-57",
@@ -2077,9 +2957,9 @@
       "value": 4600,
       "unit": "EXP",
       "level": "56 → 57",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
       "checked": "2026-10-09",
       "pages": [
         "/ko/database/pet-system/",
@@ -2089,7 +2969,7 @@
         "/zh-tw/database/pet-system/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-resource-field-validated"
     },
     {
       "id": "petExp-58",
@@ -2099,9 +2979,9 @@
       "value": 4700,
       "unit": "EXP",
       "level": "57 → 58",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
       "checked": "2026-10-09",
       "pages": [
         "/ko/database/pet-system/",
@@ -2111,7 +2991,7 @@
         "/zh-tw/database/pet-system/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-resource-field-validated"
     },
     {
       "id": "petExp-59",
@@ -2121,9 +3001,9 @@
       "value": 4900,
       "unit": "EXP",
       "level": "58 → 59",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
       "checked": "2026-10-09",
       "pages": [
         "/ko/database/pet-system/",
@@ -2133,7 +3013,7 @@
         "/zh-tw/database/pet-system/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-resource-field-validated"
     },
     {
       "id": "petExp-60",
@@ -2143,9 +3023,9 @@
       "value": 5100,
       "unit": "EXP",
       "level": "59 → 60",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
       "checked": "2026-10-09",
       "pages": [
         "/ko/database/pet-system/",
@@ -2155,7 +3035,7 @@
         "/zh-tw/database/pet-system/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-resource-field-validated"
     },
     {
       "id": "petExp-61",
@@ -2165,9 +3045,9 @@
       "value": 5300,
       "unit": "EXP",
       "level": "60 → 61",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
       "checked": "2026-10-09",
       "pages": [
         "/ko/database/pet-system/",
@@ -2177,7 +3057,7 @@
         "/zh-tw/database/pet-system/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-resource-field-validated"
     },
     {
       "id": "petExp-62",
@@ -2187,9 +3067,9 @@
       "value": 5600,
       "unit": "EXP",
       "level": "61 → 62",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
       "checked": "2026-10-09",
       "pages": [
         "/ko/database/pet-system/",
@@ -2199,7 +3079,7 @@
         "/zh-tw/database/pet-system/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-resource-field-validated"
     },
     {
       "id": "petExp-63",
@@ -2209,9 +3089,9 @@
       "value": 5700,
       "unit": "EXP",
       "level": "62 → 63",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
       "checked": "2026-10-09",
       "pages": [
         "/ko/database/pet-system/",
@@ -2221,7 +3101,7 @@
         "/zh-tw/database/pet-system/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-resource-field-validated"
     },
     {
       "id": "petExp-64",
@@ -2231,9 +3111,9 @@
       "value": 6000,
       "unit": "EXP",
       "level": "63 → 64",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
       "checked": "2026-10-09",
       "pages": [
         "/ko/database/pet-system/",
@@ -2243,7 +3123,7 @@
         "/zh-tw/database/pet-system/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-resource-field-validated"
     },
     {
       "id": "petExp-65",
@@ -2253,9 +3133,9 @@
       "value": 6200,
       "unit": "EXP",
       "level": "64 → 65",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
       "checked": "2026-10-09",
       "pages": [
         "/ko/database/pet-system/",
@@ -2265,7 +3145,7 @@
         "/zh-tw/database/pet-system/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-resource-field-validated"
     },
     {
       "id": "petExp-66",
@@ -2275,9 +3155,9 @@
       "value": 6400,
       "unit": "EXP",
       "level": "65 → 66",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
       "checked": "2026-10-09",
       "pages": [
         "/ko/database/pet-system/",
@@ -2287,7 +3167,7 @@
         "/zh-tw/database/pet-system/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-resource-field-validated"
     },
     {
       "id": "petExp-67",
@@ -2297,9 +3177,9 @@
       "value": 6500,
       "unit": "EXP",
       "level": "66 → 67",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
       "checked": "2026-10-09",
       "pages": [
         "/ko/database/pet-system/",
@@ -2309,7 +3189,7 @@
         "/zh-tw/database/pet-system/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-resource-field-validated"
     },
     {
       "id": "petExp-68",
@@ -2319,9 +3199,9 @@
       "value": 6800,
       "unit": "EXP",
       "level": "67 → 68",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
       "checked": "2026-10-09",
       "pages": [
         "/ko/database/pet-system/",
@@ -2331,7 +3211,7 @@
         "/zh-tw/database/pet-system/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-resource-field-validated"
     },
     {
       "id": "petExp-69",
@@ -2341,9 +3221,9 @@
       "value": 7100,
       "unit": "EXP",
       "level": "68 → 69",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
       "checked": "2026-10-09",
       "pages": [
         "/ko/database/pet-system/",
@@ -2353,7 +3233,7 @@
         "/zh-tw/database/pet-system/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-resource-field-validated"
     },
     {
       "id": "petExp-70",
@@ -2363,9 +3243,9 @@
       "value": 7300,
       "unit": "EXP",
       "level": "69 → 70",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
       "checked": "2026-10-09",
       "pages": [
         "/ko/database/pet-system/",
@@ -2375,7 +3255,7 @@
         "/zh-tw/database/pet-system/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-resource-field-validated"
     },
     {
       "id": "petExp-71",
@@ -2385,9 +3265,9 @@
       "value": 7500,
       "unit": "EXP",
       "level": "70 → 71",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
       "checked": "2026-10-09",
       "pages": [
         "/ko/database/pet-system/",
@@ -2397,7 +3277,7 @@
         "/zh-tw/database/pet-system/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-resource-field-validated"
     },
     {
       "id": "petExp-72",
@@ -2407,9 +3287,9 @@
       "value": 7700,
       "unit": "EXP",
       "level": "71 → 72",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
       "checked": "2026-10-09",
       "pages": [
         "/ko/database/pet-system/",
@@ -2419,7 +3299,7 @@
         "/zh-tw/database/pet-system/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-resource-field-validated"
     },
     {
       "id": "petExp-73",
@@ -2429,9 +3309,9 @@
       "value": 8100,
       "unit": "EXP",
       "level": "72 → 73",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
       "checked": "2026-10-09",
       "pages": [
         "/ko/database/pet-system/",
@@ -2441,7 +3321,7 @@
         "/zh-tw/database/pet-system/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-resource-field-validated"
     },
     {
       "id": "petExp-74",
@@ -2451,9 +3331,9 @@
       "value": 8200,
       "unit": "EXP",
       "level": "73 → 74",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
       "checked": "2026-10-09",
       "pages": [
         "/ko/database/pet-system/",
@@ -2463,7 +3343,7 @@
         "/zh-tw/database/pet-system/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-resource-field-validated"
     },
     {
       "id": "petExp-75",
@@ -2473,9 +3353,9 @@
       "value": 8600,
       "unit": "EXP",
       "level": "74 → 75",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
       "checked": "2026-10-09",
       "pages": [
         "/ko/database/pet-system/",
@@ -2485,7 +3365,7 @@
         "/zh-tw/database/pet-system/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-resource-field-validated"
     },
     {
       "id": "petExp-76",
@@ -2495,9 +3375,9 @@
       "value": 8800,
       "unit": "EXP",
       "level": "75 → 76",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
       "checked": "2026-10-09",
       "pages": [
         "/ko/database/pet-system/",
@@ -2507,7 +3387,7 @@
         "/zh-tw/database/pet-system/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-resource-field-validated"
     },
     {
       "id": "petExp-77",
@@ -2517,9 +3397,9 @@
       "value": 9100,
       "unit": "EXP",
       "level": "76 → 77",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
       "checked": "2026-10-09",
       "pages": [
         "/ko/database/pet-system/",
@@ -2529,7 +3409,7 @@
         "/zh-tw/database/pet-system/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-resource-field-validated"
     },
     {
       "id": "petExp-78",
@@ -2539,9 +3419,9 @@
       "value": 9300,
       "unit": "EXP",
       "level": "77 → 78",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
       "checked": "2026-10-09",
       "pages": [
         "/ko/database/pet-system/",
@@ -2551,7 +3431,7 @@
         "/zh-tw/database/pet-system/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-resource-field-validated"
     },
     {
       "id": "petExp-79",
@@ -2561,9 +3441,9 @@
       "value": 9700,
       "unit": "EXP",
       "level": "78 → 79",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
       "checked": "2026-10-09",
       "pages": [
         "/ko/database/pet-system/",
@@ -2573,7 +3453,7 @@
         "/zh-tw/database/pet-system/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-resource-field-validated"
     },
     {
       "id": "petExp-80",
@@ -2583,9 +3463,9 @@
       "value": 9900,
       "unit": "EXP",
       "level": "79 → 80",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
       "checked": "2026-10-09",
       "pages": [
         "/ko/database/pet-system/",
@@ -2595,7 +3475,7 @@
         "/zh-tw/database/pet-system/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-resource-field-validated"
     },
     {
       "id": "petExp-81",
@@ -2605,9 +3485,9 @@
       "value": 10100,
       "unit": "EXP",
       "level": "80 → 81",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
       "checked": "2026-10-09",
       "pages": [
         "/ko/database/pet-system/",
@@ -2617,7 +3497,7 @@
         "/zh-tw/database/pet-system/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-resource-field-validated"
     },
     {
       "id": "petExp-82",
@@ -2627,9 +3507,9 @@
       "value": 10500,
       "unit": "EXP",
       "level": "81 → 82",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
       "checked": "2026-10-09",
       "pages": [
         "/ko/database/pet-system/",
@@ -2639,7 +3519,7 @@
         "/zh-tw/database/pet-system/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-resource-field-validated"
     },
     {
       "id": "petExp-83",
@@ -2649,9 +3529,9 @@
       "value": 10700,
       "unit": "EXP",
       "level": "82 → 83",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
       "checked": "2026-10-09",
       "pages": [
         "/ko/database/pet-system/",
@@ -2661,7 +3541,7 @@
         "/zh-tw/database/pet-system/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-resource-field-validated"
     },
     {
       "id": "petExp-84",
@@ -2671,9 +3551,9 @@
       "value": 11300,
       "unit": "EXP",
       "level": "83 → 84",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
       "checked": "2026-10-09",
       "pages": [
         "/ko/database/pet-system/",
@@ -2683,7 +3563,7 @@
         "/zh-tw/database/pet-system/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-resource-field-validated"
     },
     {
       "id": "petExp-85",
@@ -2693,9 +3573,9 @@
       "value": 11300,
       "unit": "EXP",
       "level": "84 → 85",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
       "checked": "2026-10-09",
       "pages": [
         "/ko/database/pet-system/",
@@ -2705,7 +3585,7 @@
         "/zh-tw/database/pet-system/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-resource-field-validated"
     },
     {
       "id": "petExp-86",
@@ -2715,9 +3595,9 @@
       "value": 11800,
       "unit": "EXP",
       "level": "85 → 86",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
       "checked": "2026-10-09",
       "pages": [
         "/ko/database/pet-system/",
@@ -2727,19 +3607,19 @@
         "/zh-tw/database/pet-system/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-resource-field-validated"
     },
     {
       "id": "petExp-87",
       "category": "petExp",
       "gameName": "petExp",
       "originalName": "petExp",
-      "value": null,
+      "value": 11900,
       "unit": "EXP",
       "level": "86 → 87",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
       "checked": "2026-10-09",
       "pages": [
         "/ko/database/pet-system/",
@@ -2748,8 +3628,8 @@
         "/ru/database/pet-system/",
         "/zh-tw/database/pet-system/"
       ],
-      "status": "missing",
-      "sourceKind": "community-video-transcription"
+      "status": "published",
+      "sourceKind": "game-resource-field-validated"
     },
     {
       "id": "petExp-88",
@@ -2759,9 +3639,9 @@
       "value": 12500,
       "unit": "EXP",
       "level": "87 → 88",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
       "checked": "2026-10-09",
       "pages": [
         "/ko/database/pet-system/",
@@ -2771,7 +3651,7 @@
         "/zh-tw/database/pet-system/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-resource-field-validated"
     },
     {
       "id": "petExp-89",
@@ -2781,9 +3661,9 @@
       "value": 12600,
       "unit": "EXP",
       "level": "88 → 89",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
       "checked": "2026-10-09",
       "pages": [
         "/ko/database/pet-system/",
@@ -2793,7 +3673,7 @@
         "/zh-tw/database/pet-system/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-resource-field-validated"
     },
     {
       "id": "petExp-90",
@@ -2803,9 +3683,9 @@
       "value": 13100,
       "unit": "EXP",
       "level": "89 → 90",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
       "checked": "2026-10-09",
       "pages": [
         "/ko/database/pet-system/",
@@ -2815,7 +3695,7 @@
         "/zh-tw/database/pet-system/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-resource-field-validated"
     },
     {
       "id": "petExp-91",
@@ -2825,9 +3705,9 @@
       "value": 13400,
       "unit": "EXP",
       "level": "90 → 91",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
       "checked": "2026-10-09",
       "pages": [
         "/ko/database/pet-system/",
@@ -2837,7 +3717,7 @@
         "/zh-tw/database/pet-system/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-resource-field-validated"
     },
     {
       "id": "petExp-92",
@@ -2847,9 +3727,9 @@
       "value": 13600,
       "unit": "EXP",
       "level": "91 → 92",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
       "checked": "2026-10-09",
       "pages": [
         "/ko/database/pet-system/",
@@ -2859,7 +3739,7 @@
         "/zh-tw/database/pet-system/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-resource-field-validated"
     },
     {
       "id": "petExp-93",
@@ -2869,9 +3749,9 @@
       "value": 14100,
       "unit": "EXP",
       "level": "92 → 93",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
       "checked": "2026-10-09",
       "pages": [
         "/ko/database/pet-system/",
@@ -2881,7 +3761,7 @@
         "/zh-tw/database/pet-system/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-resource-field-validated"
     },
     {
       "id": "petExp-94",
@@ -2891,9 +3771,9 @@
       "value": 14300,
       "unit": "EXP",
       "level": "93 → 94",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
       "checked": "2026-10-09",
       "pages": [
         "/ko/database/pet-system/",
@@ -2903,7 +3783,7 @@
         "/zh-tw/database/pet-system/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-resource-field-validated"
     },
     {
       "id": "petExp-95",
@@ -2913,9 +3793,9 @@
       "value": 15000,
       "unit": "EXP",
       "level": "94 → 95",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
       "checked": "2026-10-09",
       "pages": [
         "/ko/database/pet-system/",
@@ -2925,7 +3805,7 @@
         "/zh-tw/database/pet-system/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-resource-field-validated"
     },
     {
       "id": "petExp-96",
@@ -2935,9 +3815,9 @@
       "value": 15000,
       "unit": "EXP",
       "level": "95 → 96",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
       "checked": "2026-10-09",
       "pages": [
         "/ko/database/pet-system/",
@@ -2947,7 +3827,95 @@
         "/zh-tw/database/pet-system/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-resource-field-validated"
+    },
+    {
+      "id": "petExp-97",
+      "category": "petExp",
+      "gameName": "petExp",
+      "originalName": "petExp",
+      "value": 15600,
+      "unit": "EXP",
+      "level": "96 → 97",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
+      "checked": "2026-10-09",
+      "pages": [
+        "/ko/database/pet-system/",
+        "/en/database/pet-system/",
+        "/ja/database/pet-system/",
+        "/ru/database/pet-system/",
+        "/zh-tw/database/pet-system/"
+      ],
+      "status": "published",
+      "sourceKind": "game-resource-field-validated"
+    },
+    {
+      "id": "petExp-98",
+      "category": "petExp",
+      "gameName": "petExp",
+      "originalName": "petExp",
+      "value": 15700,
+      "unit": "EXP",
+      "level": "97 → 98",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
+      "checked": "2026-10-09",
+      "pages": [
+        "/ko/database/pet-system/",
+        "/en/database/pet-system/",
+        "/ja/database/pet-system/",
+        "/ru/database/pet-system/",
+        "/zh-tw/database/pet-system/"
+      ],
+      "status": "published",
+      "sourceKind": "game-resource-field-validated"
+    },
+    {
+      "id": "petExp-99",
+      "category": "petExp",
+      "gameName": "petExp",
+      "originalName": "petExp",
+      "value": 16500,
+      "unit": "EXP",
+      "level": "98 → 99",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
+      "checked": "2026-10-09",
+      "pages": [
+        "/ko/database/pet-system/",
+        "/en/database/pet-system/",
+        "/ja/database/pet-system/",
+        "/ru/database/pet-system/",
+        "/zh-tw/database/pet-system/"
+      ],
+      "status": "published",
+      "sourceKind": "game-resource-field-validated"
+    },
+    {
+      "id": "petExp-100",
+      "category": "petExp",
+      "gameName": "petExp",
+      "originalName": "petExp",
+      "value": 16500,
+      "unit": "EXP",
+      "level": "99 → 100",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
+      "checked": "2026-10-09",
+      "pages": [
+        "/ko/database/pet-system/",
+        "/en/database/pet-system/",
+        "/ja/database/pet-system/",
+        "/ru/database/pet-system/",
+        "/zh-tw/database/pet-system/"
+      ],
+      "status": "published",
+      "sourceKind": "game-resource-field-validated"
     },
     {
       "id": "petTraining-1",
@@ -2957,9 +3925,9 @@
       "value": 100,
       "unit": "marks",
       "level": "0 → 1",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
       "checked": "2026-10-09",
       "pages": [
         "/ko/database/pet-system/",
@@ -2969,7 +3937,7 @@
         "/zh-tw/database/pet-system/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-resource-field-validated"
     },
     {
       "id": "petTraining-2",
@@ -2979,9 +3947,9 @@
       "value": 200,
       "unit": "marks",
       "level": "1 → 2",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
       "checked": "2026-10-09",
       "pages": [
         "/ko/database/pet-system/",
@@ -2991,7 +3959,7 @@
         "/zh-tw/database/pet-system/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-resource-field-validated"
     },
     {
       "id": "petTraining-3",
@@ -3001,9 +3969,9 @@
       "value": 400,
       "unit": "marks",
       "level": "2 → 3",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
       "checked": "2026-10-09",
       "pages": [
         "/ko/database/pet-system/",
@@ -3013,7 +3981,7 @@
         "/zh-tw/database/pet-system/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-resource-field-validated"
     },
     {
       "id": "petTraining-4",
@@ -3023,9 +3991,9 @@
       "value": 600,
       "unit": "marks",
       "level": "3 → 4",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
       "checked": "2026-10-09",
       "pages": [
         "/ko/database/pet-system/",
@@ -3035,7 +4003,29 @@
         "/zh-tw/database/pet-system/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-resource-field-validated"
+    },
+    {
+      "id": "petTraining-5",
+      "category": "petTraining",
+      "gameName": "petTraining",
+      "originalName": "petTraining",
+      "value": 700,
+      "unit": "marks",
+      "level": "4 → 5",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
+      "checked": "2026-10-09",
+      "pages": [
+        "/ko/database/pet-system/",
+        "/en/database/pet-system/",
+        "/ja/database/pet-system/",
+        "/ru/database/pet-system/",
+        "/zh-tw/database/pet-system/"
+      ],
+      "status": "published",
+      "sourceKind": "game-resource-field-validated"
     },
     {
       "id": "skillBook-2",
@@ -4215,10 +5205,10 @@
       },
       "unit": "%",
       "level": null,
-      "conditions": "Community egg table; missing entries are not confirmed zero",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
-      "checked": "2026-10-09",
+      "conditions": "Displayed egg probabilities; legacy rare/epic/legendary keys mean normal/rare/precious eggs; null means unlisted, not confirmed zero; preserve display rounding",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/pet-hatching.json",
+      "version": "Tiles Survive 2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/pet-system/snowball/",
         "/en/database/pet-system/snowball/",
@@ -4227,7 +5217,7 @@
         "/zh-tw/database/pet-system/snowball/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-screen"
     },
     {
       "id": "pet-eggs-dodo",
@@ -4241,10 +5231,10 @@
       },
       "unit": "%",
       "level": null,
-      "conditions": "Community egg table; missing entries are not confirmed zero",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
-      "checked": "2026-10-09",
+      "conditions": "Displayed egg probabilities; legacy rare/epic/legendary keys mean normal/rare/precious eggs; null means unlisted, not confirmed zero; preserve display rounding",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/pet-hatching.json",
+      "version": "Tiles Survive 2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/pet-system/dodo/",
         "/en/database/pet-system/dodo/",
@@ -4253,7 +5243,7 @@
         "/zh-tw/database/pet-system/dodo/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-screen"
     },
     {
       "id": "pet-stats-dodo-40",
@@ -4297,10 +5287,10 @@
       },
       "unit": "%",
       "level": null,
-      "conditions": "Community egg table; missing entries are not confirmed zero",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
-      "checked": "2026-10-09",
+      "conditions": "Displayed egg probabilities; legacy rare/epic/legendary keys mean normal/rare/precious eggs; null means unlisted, not confirmed zero; preserve display rounding",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/pet-hatching.json",
+      "version": "Tiles Survive 2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/pet-system/buckler/",
         "/en/database/pet-system/buckler/",
@@ -4309,7 +5299,7 @@
         "/zh-tw/database/pet-system/buckler/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-screen"
     },
     {
       "id": "pet-eggs-fluffy",
@@ -4323,10 +5313,10 @@
       },
       "unit": "%",
       "level": null,
-      "conditions": "Community egg table; missing entries are not confirmed zero",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
-      "checked": "2026-10-09",
+      "conditions": "Displayed egg probabilities; legacy rare/epic/legendary keys mean normal/rare/precious eggs; null means unlisted, not confirmed zero; preserve display rounding",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/pet-hatching.json",
+      "version": "Tiles Survive 2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/pet-system/fluffy/",
         "/en/database/pet-system/fluffy/",
@@ -4335,7 +5325,7 @@
         "/zh-tw/database/pet-system/fluffy/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-screen"
     },
     {
       "id": "pet-eggs-hardhead",
@@ -4349,10 +5339,10 @@
       },
       "unit": "%",
       "level": null,
-      "conditions": "Community egg table; missing entries are not confirmed zero",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
-      "checked": "2026-10-09",
+      "conditions": "Displayed egg probabilities; legacy rare/epic/legendary keys mean normal/rare/precious eggs; null means unlisted, not confirmed zero; preserve display rounding",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/pet-hatching.json",
+      "version": "Tiles Survive 2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/pet-system/hardhead/",
         "/en/database/pet-system/hardhead/",
@@ -4361,7 +5351,7 @@
         "/zh-tw/database/pet-system/hardhead/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-screen"
     },
     {
       "id": "pet-eggs-shadow",
@@ -4375,10 +5365,10 @@
       },
       "unit": "%",
       "level": null,
-      "conditions": "Community egg table; missing entries are not confirmed zero",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
-      "checked": "2026-10-09",
+      "conditions": "Displayed egg probabilities; legacy rare/epic/legendary keys mean normal/rare/precious eggs; null means unlisted, not confirmed zero; preserve display rounding",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/pet-hatching.json",
+      "version": "Tiles Survive 2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/pet-system/shadow/",
         "/en/database/pet-system/shadow/",
@@ -4387,7 +5377,7 @@
         "/zh-tw/database/pet-system/shadow/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-screen"
     },
     {
       "id": "pet-eggs-starhorn",
@@ -4401,10 +5391,10 @@
       },
       "unit": "%",
       "level": null,
-      "conditions": "Community egg table; missing entries are not confirmed zero",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
-      "checked": "2026-10-09",
+      "conditions": "Displayed egg probabilities; legacy rare/epic/legendary keys mean normal/rare/precious eggs; null means unlisted, not confirmed zero; preserve display rounding",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/pet-hatching.json",
+      "version": "Tiles Survive 2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/pet-system/starhorn/",
         "/en/database/pet-system/starhorn/",
@@ -4413,7 +5403,7 @@
         "/zh-tw/database/pet-system/starhorn/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-screen"
     },
     {
       "id": "pet-stats-starhorn-41",
@@ -6148,7 +7138,7 @@
       },
       "unit": "%",
       "level": null,
-      "conditions": "HP unlock unknown; pet stats at training stage 5; costs unknown",
+      "conditions": "HP unlock unknown; pet stats at training stage 5; training costs scoped separately to Starhorn in game 2.6.200",
       "sourceURL": "https://tilesmania.com/ko/pets/",
       "version": "2026-09-21 observation",
       "checked": "2026-10-09",
@@ -6190,14 +7180,20 @@
           "stage": 4,
           "steps": 20,
           "costPerStep": 30,
-          "bonus": null
+          "bonus": 85
+        },
+        {
+          "stage": 5,
+          "steps": 20,
+          "costPerStep": 35,
+          "bonus": 100
         }
       ],
       "unit": "marks and %",
       "level": null,
-      "conditions": "Stage 4 bonus unknown; no extrapolation",
-      "sourceURL": "https://tilesmania.com/ko/pets/",
-      "version": "2026-09-21 observation",
+      "conditions": "Starhorn only; game 2.6.200 explicit rows; field alignment and legacy anchors; no interpolation or cross-pet reuse",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
       "checked": "2026-10-09",
       "pages": [
         "/ko/database/pet-system/",
@@ -6207,7 +7203,7 @@
         "/zh-tw/database/pet-system/"
       ],
       "status": "published",
-      "sourceKind": "community-video-transcription"
+      "sourceKind": "game-resource-field-validated"
     },
     {
       "id": "mariner-faction-rule",
@@ -6456,12 +7452,12 @@
       "category": "events",
       "gameName": "Arcadian Conquest",
       "originalName": "Arcadian Conquest",
-      "value": "공성 시간 3시간 · 누적 점령 90분 달성 또는 최장 누적 점령 연맹 승리. 탑 4개는 공격마다 수비 병력 2%를 줄이며 간격은 점령 지속에 따라 4분에서 1분으로 단축됩니다. 천궁 또는 탑 점령 60초마다 10,000점. 집결은 아군 5개 팀까지 참가합니다. 시작 60분 전 경계 구역 강제 이전, 50분 전부터 종료까지 구역 내 이전 무료·평화 방패 사용 불가. 총독 선물은 이벤트마다 1인 1개까지만 받을 수 있습니다. 병력 등급별 사상·처치 점수와 보상 수량표는 미확인입니다.",
+      "value": "공성은 v2.5.600부터 2시간입니다. 다음 점령·보상 수치는 2026-01-07 가이드 기준입니다: 누적 점령 90분 달성 또는 최장 누적 점령 연맹 승리. 탑 4개는 공격마다 수비 병력 2%를 줄이며 간격은 점령 지속에 따라 4분에서 1분으로 단축됩니다. 천궁 또는 탑 점령 60초마다 10,000점. 집결은 아군 5개 팀까지 참가합니다. 시작 60분 전 경계 구역 강제 이전, 50분 전부터 종료까지 구역 내 이전 무료·평화 방패 사용 불가. 총독 선물은 이벤트마다 1인 1개까지만 받을 수 있습니다. 병력 등급별 사상·처치 점수와 보상 수량표는 미확인입니다.",
       "unit": "mixed",
       "level": null,
-      "conditions": "Official guide; server schedule must be checked in game",
-      "sourceURL": "https://tilesurvivegame.com/en/blog/828",
-      "version": "2026-01-07",
+      "conditions": "Contest duration: 2 hours from v2.5.600. Other occupation/scoring/reward quantities are historical values from the 2026-01-07 guide; the later patch does not reconfirm them. Check the current in-game event rules.",
+      "sourceURL": "https://tilesurvivegame.com/en/blog/1055",
+      "version": "2.5.600",
       "checked": "2026-10-09",
       "pages": [
         "/ko/events/arcadian-conquest/",
@@ -6471,7 +7467,23 @@
         "/zh-tw/events/arcadian-conquest/"
       ],
       "status": "published",
-      "sourceKind": "official"
+      "sourceKind": "official",
+      "factIds": [
+        "arcadia-contest-duration-250600"
+      ],
+      "sources": [
+        {
+          "url": "https://tilesurvivegame.com/en/blog/1055",
+          "version": "2.5.600",
+          "scope": "2-hour contest duration"
+        },
+        {
+          "url": "https://tilesurvivegame.com/en/blog/828",
+          "publishedDate": "2026-01-07",
+          "version": null,
+          "scope": "Historical occupation, scoring and reward rules; current applicability unconfirmed"
+        }
+      ]
     },
     {
       "id": "alliance-duel-pets",

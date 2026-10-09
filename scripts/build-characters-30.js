@@ -35,7 +35,9 @@ function readRoster(lang) {
     const anchor=item.matches('a[href]')?item:item.querySelector('a[href]');
     const href=anchor.getAttribute('href'),id=href.split('/').filter(Boolean).pop().replace(/^tazan$/,'tarzan').replace(/^cnay$/,'candy');
     return {id, href:canonicalHero(lang,id), name:clean(item.querySelector('h3,h5')?.textContent||id), image:item.querySelector('img')?.getAttribute('src'), faction:item.closest('.faction-block')?.id||'heroes-sea', tags:[...item.querySelectorAll('.chip')].map(n=>clean(n.textContent)), description:clean(item.querySelector('.hero-body p')?.textContent||'')};
-  }).filter((n,i,arr)=>arr.findIndex(a=>a.id===n.id)===i);
+  }).filter((n,i,arr)=>arr.findIndex(a=>a.id===n.id)===i)
+    // The 4.0 builder owns Dave's source model and adds its card after this pass.
+    .filter(n=>n.id!=='dave');
 }
 function sectionNav(d,stage,t,route){
   const scopeCopy=require('../data/expansion-22/copy')[route.split('/')[0]];

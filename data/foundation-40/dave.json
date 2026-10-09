@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "id": "dave",
+  "nameKo": "데이브",
+  "alias": "Dave",
+  "rarity": "SSR",
+  "faction": "sea",
+  "role": "ranged",
+  "gameVersion": "2.6.200",
+  "observedAt": "2026-10-09",
+  "image": "/img/game-40/heroes/dave.webp",
+  "imageWidth": 682,
+  "imageHeight": 712,
+  "comparison": { "from": 10, "to": 11, "nextIsPreview": true, "displayedCap": 20 },
+  "skills": [
+    { "id": "auto", "nameKo": "호스 분사", "current": "109.0", "next": "110.0", "unit": "percent-damage", "cooldownSeconds": 1 },
+    { "id": "combat", "nameKo": "하이드로 물대포", "current": "1471.50", "next": "1485.0", "unit": "percent-atk", "cooldownSeconds": 9, "projectiles": 3, "chancePercent": 50, "targetATKReductionPercent": 3, "targetDEFReductionPercent": 3, "durationSeconds": 3, "stackable": true },
+    { "id": "passive", "nameKo": "완만한 물줄기", "current": "2.18", "next": "2.20", "unit": "percent-reduction", "target": "all-enemies-atk-def" },
+    { "id": "specialty", "nameKo": "심해 잠수 보호", "unlockStars": 8, "allSelfAttributesBonusPercent": 20, "lockedPreview": true }
+  ],
+  "exclusiveGear": { "nameKo": "고압 호스", "displayedLevel": 1 }
+}

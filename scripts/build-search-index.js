@@ -41,7 +41,27 @@ for (const language of LANGS) {
   }
 }
 
+// Index curated item anchors as well as pages; never index the private extraction corpus.
+const explorer = require('../data/foundation-40/explorer.json');
+const explorerCopy = require('../data/foundation-40/explorer-copy.js');
+for (const language of LANGS) {
+  const page = path.join(ROOT, language, 'database/items/index.html');
+  if (!fs.existsSync(page)) continue;
+  const html = fs.readFileSync(page, 'utf8');
+  for (const item of explorer.items) {
+    if (!html.includes(`id="${item.id}"`)) throw new Error(`Missing item anchor: ${language}/${item.id}`);
+    const t = explorerCopy[language];
+    items.push({language, type: 'database', title: t[item.id], description: `${item.nameKo} · ${t[item.use]} · ${t.itemTitle}`, url: `/${language}/database/items/#${item.id}`});
+  }
+}
 items.sort((a, b) => a.language.localeCompare(b.language) || a.title.localeCompare(b.title));
 const output = { generatedAt: new Date().toISOString(), itemCount: items.length, items };
-fs.writeFileSync(path.join(ROOT, "data", "search-index.json"), `${JSON.stringify(output, null, 2)}\n`, "utf8");
+const target = path.join(ROOT, "data", "search-index.json");
+if (fs.existsSync(target)) {
+  const previous = JSON.parse(fs.readFileSync(target, "utf8"));
+  // generatedAt is the content update time, not the time of a no-op rebuild.
+  if (typeof previous.generatedAt === "string" && Number.isFinite(Date.parse(previous.generatedAt)) && previous.itemCount === output.itemCount && JSON.stringify(previous.items) === JSON.stringify(items)) output.generatedAt = previous.generatedAt;
+}
+const serialized = `${JSON.stringify(output, null, 2)}\n`;
+if (!fs.existsSync(target) || fs.readFileSync(target, "utf8") !== serialized) fs.writeFileSync(target, serialized, "utf8");
 console.log(`Built search index with ${items.length} pages.`);

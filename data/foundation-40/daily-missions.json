@@ -1,0 +1,269 @@
+{
+  "schemaVersion": 1,
+  "gameVersion": "2.6.200",
+  "observedAt": "2026-10-09",
+  "scope": "observed-targets-only",
+  "milestones": [
+    25,
+    60,
+    100,
+    140,
+    180,
+    235,
+    290
+  ],
+  "missions": [
+    {
+      "id": "login",
+      "target": 1,
+      "unit": "login",
+      "points": 10,
+      "names": {
+        "ko": "일일 로그인 1회",
+        "en": "Log in once",
+        "ja": "1回ログインする",
+        "ru": "Войти в игру 1 раз",
+        "zh-tw": "每日登入 1 次"
+      },
+      "paid": false
+    },
+    {
+      "id": "exploration-chest",
+      "target": 1,
+      "unit": "chest",
+      "points": 10,
+      "names": {
+        "ko": "탐색 중 탐색 상자 1회 수령",
+        "en": "Claim 1 exploration chest",
+        "ja": "探索の宝箱を1回受け取る",
+        "ru": "Забрать 1 сундук исследования",
+        "zh-tw": "領取探索寶箱 1 次"
+      },
+      "paid": false
+    },
+    {
+      "id": "vip-free-package",
+      "target": 1,
+      "unit": "claim",
+      "points": 10,
+      "names": {
+        "ko": "VIP 무료 패키지 1회 수령",
+        "en": "Claim the free VIP pack once",
+        "ja": "VIP無料パックを1回受け取る",
+        "ru": "Забрать бесплатный VIP-набор 1 раз",
+        "zh-tw": "領取 VIP 免費禮包 1 次"
+      },
+      "paid": false
+    },
+    {
+      "id": "intel",
+      "target": 3,
+      "unit": "missions",
+      "points": 10,
+      "names": {
+        "ko": "첩보 단서 3회 완료",
+        "en": "Complete 3 intel missions",
+        "ja": "情報ミッションを3回完了する",
+        "ru": "Выполнить 3 задания разведки",
+        "zh-tw": "完成 3 次情報任務"
+      },
+      "paid": false
+    },
+    {
+      "id": "heal",
+      "target": 10,
+      "unit": "troops",
+      "points": 10,
+      "names": {
+        "ko": "부상병 10명 치료",
+        "en": "Heal 10 wounded troops",
+        "ja": "負傷兵を10人治療する",
+        "ru": "Вылечить 10 раненых бойцов",
+        "zh-tw": "治療 10 名傷兵"
+      },
+      "paid": false
+    },
+    {
+      "id": "building",
+      "target": 1,
+      "unit": "upgrade",
+      "points": 30,
+      "names": {
+        "ko": "건물 1회 업그레이드",
+        "en": "Upgrade a building once",
+        "ja": "建物を1回アップグレードする",
+        "ru": "Улучшить здание 1 раз",
+        "zh-tw": "升級建築 1 次"
+      },
+      "paid": false
+    },
+    {
+      "id": "research",
+      "target": 1,
+      "unit": "research",
+      "points": 30,
+      "names": {
+        "ko": "기술 1회 연구",
+        "en": "Research a technology once",
+        "ja": "技術を1回研究する",
+        "ru": "Исследовать технологию 1 раз",
+        "zh-tw": "研究科技 1 次"
+      },
+      "paid": false
+    },
+    {
+      "id": "alliance-donation",
+      "target": 15,
+      "unit": "donations",
+      "points": 10,
+      "names": {
+        "ko": "동맹 기부 15회",
+        "en": "Make 15 alliance donations",
+        "ja": "同盟に15回寄付する",
+        "ru": "Сделать 15 пожертвований альянсу",
+        "zh-tw": "進行 15 次聯盟捐獻"
+      },
+      "paid": false
+    },
+    {
+      "id": "hero-recruit",
+      "target": 1,
+      "unit": "recruit",
+      "points": 10,
+      "names": {
+        "ko": "영웅 모집 1회 완료",
+        "en": "Recruit a hero once",
+        "ja": "英雄募集を1回行う",
+        "ru": "Провести вербовку героя 1 раз",
+        "zh-tw": "完成英雄招募 1 次"
+      },
+      "paid": false
+    },
+    {
+      "id": "troop-training",
+      "target": 50,
+      "unit": "troops",
+      "points": 20,
+      "names": {
+        "ko": "병사 50명 훈련",
+        "en": "Train 50 troops",
+        "ja": "兵士を50人訓練する",
+        "ru": "Обучить 50 бойцов",
+        "zh-tw": "訓練 50 名士兵"
+      },
+      "paid": false
+    },
+    {
+      "id": "speedup-use",
+      "target": 1,
+      "unit": "use",
+      "points": 10,
+      "names": {
+        "ko": "가속 1회 사용",
+        "en": "Use a speedup once",
+        "ja": "加速を1回使う",
+        "ru": "Использовать ускорение 1 раз",
+        "zh-tw": "使用加速 1 次"
+      },
+      "paid": false
+    },
+    {
+      "id": "timer-help",
+      "target": 5,
+      "unit": "helps",
+      "points": 10,
+      "names": {
+        "ko": "타이머 도움 5회",
+        "en": "Provide timer help 5 times",
+        "ja": "タイマー短縮を5回支援する",
+        "ru": "Помочь сократить таймер 5 раз",
+        "zh-tw": "提供計時器協助 5 次"
+      },
+      "paid": false
+    },
+    {
+      "id": "infected-boss",
+      "target": 1,
+      "unit": "boss",
+      "points": 10,
+      "names": {
+        "ko": "감염자 보스 1회 처치",
+        "en": "Defeat an infected boss once",
+        "ja": "感染者ボスを1回倒す",
+        "ru": "Победить заражённого босса 1 раз",
+        "zh-tw": "擊敗感染者首領 1 次"
+      },
+      "paid": false
+    },
+    {
+      "id": "arena-challenge",
+      "target": 1,
+      "unit": "challenge",
+      "points": 10,
+      "names": {
+        "ko": "아레나 중 다른 유저에게 1회 도전",
+        "en": "Challenge another player in the arena once",
+        "ja": "アリーナで他のプレイヤーに1回挑戦する",
+        "ru": "Вызвать другого игрока на арене 1 раз",
+        "zh-tw": "在競技場挑戰其他玩家 1 次"
+      },
+      "paid": false
+    },
+    {
+      "id": "payment",
+      "target": 1,
+      "unit": "payment",
+      "points": 50,
+      "names": {
+        "ko": "1회 결제",
+        "en": "Make 1 purchase",
+        "ja": "1回購入する",
+        "ru": "Совершить 1 покупку",
+        "zh-tw": "付費購買 1 次"
+      },
+      "paid": true
+    },
+    {
+      "id": "dispatch-raid",
+      "target": 1,
+      "unit": "raid",
+      "points": 20,
+      "names": {
+        "ko": "다른 플레이어의 파견 미션 1회 탈취",
+        "en": "Raid another player’s dispatch mission once",
+        "ja": "他のプレイヤーの派遣ミッションを1回襲撃する",
+        "ru": "Перехватить задание отправки другого игрока 1 раз",
+        "zh-tw": "搶奪其他玩家的派遣任務 1 次"
+      },
+      "paid": false
+    },
+    {
+      "id": "transport-raid",
+      "target": 1,
+      "unit": "raid",
+      "points": 20,
+      "names": {
+        "ko": "다른 플레이어 종말의 운송 1회 약탈",
+        "en": "Plunder another player’s transport once",
+        "ja": "他のプレイヤーの輸送を1回略奪する",
+        "ru": "Ограбить транспорт другого игрока 1 раз",
+        "zh-tw": "掠奪其他玩家的運輸 1 次"
+      },
+      "paid": false
+    },
+    {
+      "id": "speedup-minutes",
+      "target": 120,
+      "unit": "minutes",
+      "points": 30,
+      "names": {
+        "ko": "가속 누적 120분 사용",
+        "en": "Use a total of 120 minutes of speedups",
+        "ja": "加速を合計120分使う",
+        "ru": "Использовать ускорения на 120 минут суммарно",
+        "zh-tw": "累計使用 120 分鐘加速"
+      },
+      "paid": false
+    }
+  ]
+}

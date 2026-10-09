@@ -369,6 +369,16 @@
       "version": "existing data; game version unknown",
       "kind": "preserved"
     },
+    "starhornGrowth": {
+      "url": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/starhorn-growth.json",
+      "version": "Tiles Survive 2.6.200",
+      "kind": "game-resource-field-validated"
+    },
+    "petHatching": {
+      "url": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/pet-hatching.json",
+      "version": "Tiles Survive 2.6.200",
+      "kind": "game-screen"
+    },
     "behemoth": {
       "url": "https://tilesurvivegame.com/fr/blog/978",
       "version": "2.5.200",

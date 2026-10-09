@@ -3,6 +3,7 @@
  * Capture is explicit and reads an archive of the fixed Git commit, never HEAD. */
 const fs=require('fs'),path=require('path'),crypto=require('crypto'),{execFileSync}=require('child_process');
 const {parseHTML}=require('linkedom');
+const delta=require('./foundation-40-test-allowances');
 const root=path.resolve(__dirname,'..'),langs=['ko','en','ja','ru','zh-tw'];
 const release='247d48164aa35df74d5a7baffbac5aa8f0feb995';
 const baselineFile=path.join(root,'data/product-30-baseline.json');
@@ -77,16 +78,17 @@ for(const old of baseline.pages){
  check(text(doc.querySelector('title')).length>0,'Title '+old.route);
  check(old.noindex||!!doc.querySelector('meta[name=description]')?.content,'Description '+old.route);
  const nowRows=tableRows(doc),nowKeys=new Set(nowRows.map(r=>JSON.stringify(r.cells))),transposed=new Set(transposedRows(doc).map(r=>JSON.stringify(r)));
- for(const row of old.tableRows){counts.numericRows++;counts.tableCells+=row.cells.length;check(nowKeys.has(JSON.stringify(row.cells))||transposed.has(JSON.stringify(row.cells)),'Data row/context changed '+old.route+' table '+row.table+' '+JSON.stringify(row.cells).slice(0,220));}
+ const reviewedRows=/\/database\/pet-system\//.test('/'+old.relative)?delta.expectedRows([...parseHTML(execFileSync('git',['show',release+':'+old.relative],{cwd:root,encoding:'utf8'})).document.querySelectorAll('main table tr')].filter(r=>r.querySelector('td')&&/\d/.test(text(r))).map(r=>[...r.children].filter(c=>/^(TD|TH)$/.test(c.tagName)).map(text)),old.relative).map(cells=>({table:'reviewed-pet-fields',cells:cells.map(value=>signature({textContent:value}))})):old.tableRows;
+ for(const row of reviewedRows){counts.numericRows++;counts.tableCells+=row.cells.length;check(nowKeys.has(JSON.stringify(row.cells))||transposed.has(JSON.stringify(row.cells)),'Data row/context changed '+old.route+' table '+row.table+' '+JSON.stringify(row.cells).slice(0,220));}
  // This extra check catches lost skill coefficients/stat amounts outside tables.
  // It intentionally does not claim to prove prose relationships or game meaning.
  const mainCopy=doc.querySelector('main')?.cloneNode(true);mainCopy?.querySelectorAll('script,style').forEach(n=>n.remove());const currentQuantities=new Set([...mainCopy?.querySelectorAll('*')||[]].flatMap(n=>quantities(text(n))));
- for(const value of old.quantitativeProse||[])check(currentQuantities.has(value),'Quantitative prose value removed '+old.route+' '+value);
+ for(const value of old.quantitativeProse||[])check(currentQuantities.has(value)||delta.quantity(value,old.relative,doc),'Quantitative prose value removed '+old.route+' '+value);
  for(const b of old.banners){counts.banners++;const slot=[...doc.querySelectorAll('[data-lootbar-slot]')].find(n=>n.getAttribute('data-lootbar-slot')===b.slot);check(!!slot,'Banner placement '+old.route);if(!slot)continue;
   check(slot.querySelector('a[href]')?.href===b.link,'Banner referral '+old.route);
   check(JSON.stringify([...slot.querySelectorAll('img,source')].map(i=>i.getAttribute('src')||i.getAttribute('srcset')))===JSON.stringify(b.images),'Banner imagery '+old.route);
  }
- for(const form of old.growthForms){counts.growthForms++;const now=[...doc.querySelectorAll('[data-growth-form]')].find(n=>n.getAttribute('data-growth-form')===form.key);check(!!now,'Growth calculator removed '+old.route+' '+form.key);if(now){try{check(JSON.stringify(JSON.parse(now.querySelector('script[type="application/json"]').textContent).rows)===JSON.stringify(form.rows),'Calculator rows '+old.route+' '+form.key);}catch{check(false,'Invalid calculator JSON '+old.route);}}}
+ for(const form of delta.forms(old.growthForms,old.relative)){counts.growthForms++;const now=[...doc.querySelectorAll('[data-growth-form]')].find(n=>n.getAttribute('data-growth-form')===form.key);check(!!now,'Growth calculator removed '+old.route+' '+form.key);if(now){try{check(JSON.stringify(JSON.parse(now.querySelector('script[type="application/json"]').textContent).rows)===JSON.stringify(form.rows),'Calculator rows '+old.route+' '+form.key);}catch{check(false,'Invalid calculator JSON '+old.route);}}}
  if(old.couponApp)check(hash(doc.querySelector('script[data-coupon-app]')?.textContent||'')===old.couponApp,'Coupon application changed '+old.route);
  for(const n of doc.querySelectorAll('img[src],script[src],link[rel=stylesheet][href],source[srcset]')){
   const attribute=n.getAttribute('src')||n.getAttribute('href')||n.getAttribute('srcset');
@@ -119,6 +121,7 @@ for(const [file,sha]of Object.entries(baseline.protectedFiles)){check(fs.existsS
  // 3.0.1 adds page/creative dimensions to the existing tracking contract.
  // Exercise that actual module; referral config, formulas and artwork stay byte protected.
  if(file==='js/platform-affiliate.js'){const tracking=JSON.parse(execFileSync(process.execPath,[path.join(__dirname,'test-affiliate-301.js')],{cwd:root,encoding:'utf8'}));check(tracking.checks>=72&&tracking.errors.length===0,'Affiliate measurement contract');}
+ else if(file==='data/expansion-22/database.json'){const before=JSON.parse(execFileSync('git',['show',release+':'+file],{cwd:root,encoding:'utf8'}));check(JSON.stringify(JSON.parse(fs.readFileSync(path.join(root,file),'utf8')))===JSON.stringify(delta.source(file,before)),'Exact approved pet fields and Starhorn source/model only');}
  else check(hash(fs.readFileSync(path.join(root,file)))===sha,'Protected data/artwork changed '+file);
 }}
 const sitemap=fs.readFileSync(path.join(root,'sitemap.xml'),'utf8');for(const url of baseline.sitemap)check(sitemap.includes('<loc>'+url+'</loc>'),'Sitemap removed '+url);

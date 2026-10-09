@@ -1,0 +1,1058 @@
+{
+  "schemaVersion": 1,
+  "gameVersion": "2.6.200",
+  "observedAt": "2026-10-09",
+  "levelScope": "explicit-level-rows-conditional-on-unlock",
+  "heroes": [
+    {
+      "id": "undine",
+      "observedCap": 15,
+      "skills": [
+        {
+          "id": "undine-ripple-initial-10-11",
+          "name": {
+            "ko": "잔물결의 선율 · 첫 대상",
+            "en": "Ripple Ricochet · first target",
+            "ja": "Ripple Ricochet・最初の対象",
+            "ru": "Ripple Ricochet · первая цель",
+            "zh-tw": "Ripple Ricochet・首個目標"
+          },
+          "unit": "percent-atk",
+          "values": [
+            {
+              "level": 1,
+              "value": "44.00"
+            },
+            {
+              "level": 2,
+              "value": "44.44"
+            },
+            {
+              "level": 3,
+              "value": "44.88"
+            },
+            {
+              "level": 4,
+              "value": "45.32"
+            },
+            {
+              "level": 5,
+              "value": "45.76"
+            },
+            {
+              "level": 6,
+              "value": "46.20"
+            },
+            {
+              "level": 7,
+              "value": "46.64"
+            },
+            {
+              "level": 8,
+              "value": "47.08"
+            },
+            {
+              "level": 9,
+              "value": "47.52"
+            },
+            {
+              "level": 10,
+              "value": "47.96"
+            },
+            {
+              "level": 11,
+              "value": "48.40"
+            },
+            {
+              "level": 12,
+              "value": "48.84"
+            },
+            {
+              "level": 13,
+              "value": "49.28"
+            },
+            {
+              "level": 14,
+              "value": "49.72"
+            },
+            {
+              "level": 15,
+              "value": "50.16"
+            },
+            {
+              "level": 16,
+              "value": "50.60"
+            },
+            {
+              "level": 17,
+              "value": "51.04"
+            },
+            {
+              "level": 18,
+              "value": "51.48"
+            },
+            {
+              "level": 19,
+              "value": "51.92"
+            },
+            {
+              "level": 20,
+              "value": "52.36"
+            },
+            {
+              "level": 21,
+              "value": "52.80"
+            },
+            {
+              "level": 22,
+              "value": "53.24"
+            },
+            {
+              "level": 23,
+              "value": "53.68"
+            },
+            {
+              "level": 24,
+              "value": "54.12"
+            },
+            {
+              "level": 25,
+              "value": "54.56"
+            },
+            {
+              "level": 26,
+              "value": "55.00"
+            },
+            {
+              "level": 27,
+              "value": "55.44"
+            },
+            {
+              "level": 28,
+              "value": "55.88"
+            },
+            {
+              "level": 29,
+              "value": "56.32"
+            },
+            {
+              "level": 30,
+              "value": "56.76"
+            },
+            {
+              "level": 31,
+              "value": "57.20"
+            },
+            {
+              "level": 32,
+              "value": "57.64"
+            },
+            {
+              "level": 33,
+              "value": "58.08"
+            },
+            {
+              "level": 34,
+              "value": "58.52"
+            },
+            {
+              "level": 35,
+              "value": "58.96"
+            },
+            {
+              "level": 36,
+              "value": "59.40"
+            },
+            {
+              "level": 37,
+              "value": "59.84"
+            },
+            {
+              "level": 38,
+              "value": "60.28"
+            },
+            {
+              "level": 39,
+              "value": "60.72"
+            },
+            {
+              "level": 40,
+              "value": "61.16"
+            }
+          ]
+        },
+        {
+          "id": "undine-azure-damage-10-11",
+          "name": {
+            "ko": "바다의 송가 · 범위 피해",
+            "en": "Azure Anthem · area damage",
+            "ja": "Azure Anthem・範囲ダメージ",
+            "ru": "Azure Anthem · урон по области",
+            "zh-tw": "Azure Anthem・範圍傷害"
+          },
+          "unit": "percent-atk",
+          "values": [
+            {
+              "level": 1,
+              "value": "365.00"
+            },
+            {
+              "level": 2,
+              "value": "368.65"
+            },
+            {
+              "level": 3,
+              "value": "372.30"
+            },
+            {
+              "level": 4,
+              "value": "375.95"
+            },
+            {
+              "level": 5,
+              "value": "379.60"
+            },
+            {
+              "level": 6,
+              "value": "383.25"
+            },
+            {
+              "level": 7,
+              "value": "386.90"
+            },
+            {
+              "level": 8,
+              "value": "390.55"
+            },
+            {
+              "level": 9,
+              "value": "394.20"
+            },
+            {
+              "level": 10,
+              "value": "397.85"
+            },
+            {
+              "level": 11,
+              "value": "401.50"
+            },
+            {
+              "level": 12,
+              "value": "405.15"
+            },
+            {
+              "level": 13,
+              "value": "408.80"
+            },
+            {
+              "level": 14,
+              "value": "412.45"
+            },
+            {
+              "level": 15,
+              "value": "416.10"
+            },
+            {
+              "level": 16,
+              "value": "419.75"
+            },
+            {
+              "level": 17,
+              "value": "423.40"
+            },
+            {
+              "level": 18,
+              "value": "427.05"
+            },
+            {
+              "level": 19,
+              "value": "430.70"
+            },
+            {
+              "level": 20,
+              "value": "434.35"
+            },
+            {
+              "level": 21,
+              "value": "438.00"
+            },
+            {
+              "level": 22,
+              "value": "441.65"
+            },
+            {
+              "level": 23,
+              "value": "445.30"
+            },
+            {
+              "level": 24,
+              "value": "448.95"
+            },
+            {
+              "level": 25,
+              "value": "452.60"
+            },
+            {
+              "level": 26,
+              "value": "456.25"
+            },
+            {
+              "level": 27,
+              "value": "459.90"
+            },
+            {
+              "level": 28,
+              "value": "463.55"
+            },
+            {
+              "level": 29,
+              "value": "467.20"
+            },
+            {
+              "level": 30,
+              "value": "470.85"
+            },
+            {
+              "level": 31,
+              "value": "474.50"
+            },
+            {
+              "level": 32,
+              "value": "478.15"
+            },
+            {
+              "level": 33,
+              "value": "481.80"
+            },
+            {
+              "level": 34,
+              "value": "485.45"
+            },
+            {
+              "level": 35,
+              "value": "489.10"
+            },
+            {
+              "level": 36,
+              "value": "492.75"
+            },
+            {
+              "level": 37,
+              "value": "496.40"
+            },
+            {
+              "level": 38,
+              "value": "500.05"
+            },
+            {
+              "level": 39,
+              "value": "503.70"
+            },
+            {
+              "level": 40,
+              "value": "507.35"
+            }
+          ]
+        },
+        {
+          "id": "undine-wild-hunt-10-11",
+          "name": {
+            "ko": "광기의 사냥 · 아군 후방 공격력",
+            "en": "Wild Hunt · allied back-row ATK",
+            "ja": "Wild Hunt・味方後列の攻撃力",
+            "ru": "Wild Hunt · ATK заднего ряда союзников",
+            "zh-tw": "Wild Hunt・友軍後排攻擊"
+          },
+          "unit": "percent-bonus",
+          "values": [
+            {
+              "level": 1,
+              "value": "6.00"
+            },
+            {
+              "level": 2,
+              "value": "6.06"
+            },
+            {
+              "level": 3,
+              "value": "6.12"
+            },
+            {
+              "level": 4,
+              "value": "6.18"
+            },
+            {
+              "level": 5,
+              "value": "6.24"
+            },
+            {
+              "level": 6,
+              "value": "6.30"
+            },
+            {
+              "level": 7,
+              "value": "6.36"
+            },
+            {
+              "level": 8,
+              "value": "6.42"
+            },
+            {
+              "level": 9,
+              "value": "6.48"
+            },
+            {
+              "level": 10,
+              "value": "6.54"
+            },
+            {
+              "level": 11,
+              "value": "6.60"
+            },
+            {
+              "level": 12,
+              "value": "6.66"
+            },
+            {
+              "level": 13,
+              "value": "6.72"
+            },
+            {
+              "level": 14,
+              "value": "6.78"
+            },
+            {
+              "level": 15,
+              "value": "6.84"
+            },
+            {
+              "level": 16,
+              "value": "6.90"
+            },
+            {
+              "level": 17,
+              "value": "6.96"
+            },
+            {
+              "level": 18,
+              "value": "7.02"
+            },
+            {
+              "level": 19,
+              "value": "7.08"
+            },
+            {
+              "level": 20,
+              "value": "7.14"
+            },
+            {
+              "level": 21,
+              "value": "7.20"
+            },
+            {
+              "level": 22,
+              "value": "7.26"
+            },
+            {
+              "level": 23,
+              "value": "7.32"
+            },
+            {
+              "level": 24,
+              "value": "7.38"
+            },
+            {
+              "level": 25,
+              "value": "7.44"
+            },
+            {
+              "level": 26,
+              "value": "7.50"
+            },
+            {
+              "level": 27,
+              "value": "7.56"
+            },
+            {
+              "level": 28,
+              "value": "7.62"
+            },
+            {
+              "level": 29,
+              "value": "7.68"
+            },
+            {
+              "level": 30,
+              "value": "7.74"
+            },
+            {
+              "level": 31,
+              "value": "7.80"
+            },
+            {
+              "level": 32,
+              "value": "7.86"
+            },
+            {
+              "level": 33,
+              "value": "7.92"
+            },
+            {
+              "level": 34,
+              "value": "7.98"
+            },
+            {
+              "level": 35,
+              "value": "8.04"
+            },
+            {
+              "level": 36,
+              "value": "8.10"
+            },
+            {
+              "level": 37,
+              "value": "8.16"
+            },
+            {
+              "level": 38,
+              "value": "8.22"
+            },
+            {
+              "level": 39,
+              "value": "8.28"
+            },
+            {
+              "level": 40,
+              "value": "8.34"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "lagnar",
+      "observedCap": 20,
+      "skills": [
+        {
+          "id": "lagnar-water-blade-10-11",
+          "name": {
+            "ko": "물의 칼날 공격 · 피해",
+            "en": "Water Blade Attack · damage",
+            "ja": "水の刃攻撃・ダメージ",
+            "ru": "Water Blade Attack · урон",
+            "zh-tw": "水之刃攻擊・傷害"
+          },
+          "unit": "percent-damage",
+          "values": [
+            {
+              "level": 1,
+              "value": "90.00"
+            },
+            {
+              "level": 2,
+              "value": "90.90"
+            },
+            {
+              "level": 3,
+              "value": "91.80"
+            },
+            {
+              "level": 4,
+              "value": "92.70"
+            },
+            {
+              "level": 5,
+              "value": "93.60"
+            },
+            {
+              "level": 6,
+              "value": "94.50"
+            },
+            {
+              "level": 7,
+              "value": "95.40"
+            },
+            {
+              "level": 8,
+              "value": "96.30"
+            },
+            {
+              "level": 9,
+              "value": "97.20"
+            },
+            {
+              "level": 10,
+              "value": "98.10"
+            },
+            {
+              "level": 11,
+              "value": "99.00"
+            },
+            {
+              "level": 12,
+              "value": "99.90"
+            },
+            {
+              "level": 13,
+              "value": "100.80"
+            },
+            {
+              "level": 14,
+              "value": "101.70"
+            },
+            {
+              "level": 15,
+              "value": "102.60"
+            },
+            {
+              "level": 16,
+              "value": "103.50"
+            },
+            {
+              "level": 17,
+              "value": "104.40"
+            },
+            {
+              "level": 18,
+              "value": "105.30"
+            },
+            {
+              "level": 19,
+              "value": "106.20"
+            },
+            {
+              "level": 20,
+              "value": "107.10"
+            },
+            {
+              "level": 21,
+              "value": "108.00"
+            },
+            {
+              "level": 22,
+              "value": "108.90"
+            },
+            {
+              "level": 23,
+              "value": "109.80"
+            },
+            {
+              "level": 24,
+              "value": "110.70"
+            },
+            {
+              "level": 25,
+              "value": "111.60"
+            },
+            {
+              "level": 26,
+              "value": "112.50"
+            },
+            {
+              "level": 27,
+              "value": "113.40"
+            },
+            {
+              "level": 28,
+              "value": "114.30"
+            },
+            {
+              "level": 29,
+              "value": "115.20"
+            },
+            {
+              "level": 30,
+              "value": "116.10"
+            },
+            {
+              "level": 31,
+              "value": "117.00"
+            },
+            {
+              "level": 32,
+              "value": "117.90"
+            },
+            {
+              "level": 33,
+              "value": "118.80"
+            },
+            {
+              "level": 34,
+              "value": "119.70"
+            },
+            {
+              "level": 35,
+              "value": "120.60"
+            },
+            {
+              "level": 36,
+              "value": "121.50"
+            },
+            {
+              "level": 37,
+              "value": "122.40"
+            },
+            {
+              "level": 38,
+              "value": "123.30"
+            },
+            {
+              "level": 39,
+              "value": "124.20"
+            },
+            {
+              "level": 40,
+              "value": "125.10"
+            }
+          ]
+        },
+        {
+          "id": "lagnar-warship-10-11",
+          "name": {
+            "ko": "전함 지원 · 피해",
+            "en": "Warship Support · damage",
+            "ja": "戦艦支援・ダメージ",
+            "ru": "Warship Support · урон",
+            "zh-tw": "戰艦支援・傷害"
+          },
+          "unit": "percent-damage",
+          "values": [
+            {
+              "level": 1,
+              "value": "400.00"
+            },
+            {
+              "level": 2,
+              "value": "404.00"
+            },
+            {
+              "level": 3,
+              "value": "408.00"
+            },
+            {
+              "level": 4,
+              "value": "412.00"
+            },
+            {
+              "level": 5,
+              "value": "416.00"
+            },
+            {
+              "level": 6,
+              "value": "420.00"
+            },
+            {
+              "level": 7,
+              "value": "424.00"
+            },
+            {
+              "level": 8,
+              "value": "428.00"
+            },
+            {
+              "level": 9,
+              "value": "432.00"
+            },
+            {
+              "level": 10,
+              "value": "436.00"
+            },
+            {
+              "level": 11,
+              "value": "440.00"
+            },
+            {
+              "level": 12,
+              "value": "444.00"
+            },
+            {
+              "level": 13,
+              "value": "448.00"
+            },
+            {
+              "level": 14,
+              "value": "452.00"
+            },
+            {
+              "level": 15,
+              "value": "456.00"
+            },
+            {
+              "level": 16,
+              "value": "460.00"
+            },
+            {
+              "level": 17,
+              "value": "464.00"
+            },
+            {
+              "level": 18,
+              "value": "468.00"
+            },
+            {
+              "level": 19,
+              "value": "472.00"
+            },
+            {
+              "level": 20,
+              "value": "476.00"
+            },
+            {
+              "level": 21,
+              "value": "480.00"
+            },
+            {
+              "level": 22,
+              "value": "484.00"
+            },
+            {
+              "level": 23,
+              "value": "488.00"
+            },
+            {
+              "level": 24,
+              "value": "492.00"
+            },
+            {
+              "level": 25,
+              "value": "496.00"
+            },
+            {
+              "level": 26,
+              "value": "500.00"
+            },
+            {
+              "level": 27,
+              "value": "504.00"
+            },
+            {
+              "level": 28,
+              "value": "508.00"
+            },
+            {
+              "level": 29,
+              "value": "512.00"
+            },
+            {
+              "level": 30,
+              "value": "516.00"
+            },
+            {
+              "level": 31,
+              "value": "520.00"
+            },
+            {
+              "level": 32,
+              "value": "524.00"
+            },
+            {
+              "level": 33,
+              "value": "528.00"
+            },
+            {
+              "level": 34,
+              "value": "532.00"
+            },
+            {
+              "level": 35,
+              "value": "536.00"
+            },
+            {
+              "level": 36,
+              "value": "540.00"
+            },
+            {
+              "level": 37,
+              "value": "544.00"
+            },
+            {
+              "level": 38,
+              "value": "548.00"
+            },
+            {
+              "level": 39,
+              "value": "552.00"
+            },
+            {
+              "level": 40,
+              "value": "556.00"
+            }
+          ]
+        },
+        {
+          "id": "lagnar-unyielding-10-11",
+          "name": {
+            "ko": "불패의 풍모 · 자신의 공격·방어",
+            "en": "Unyielding Bearing · own ATK/DEF",
+            "ja": "不敗の風格・自身の攻撃／防御",
+            "ru": "Unyielding Bearing · свои ATK/DEF",
+            "zh-tw": "不敗風範・自身攻擊／防禦"
+          },
+          "unit": "percent-bonus",
+          "values": [
+            {
+              "level": 1,
+              "value": "10.00"
+            },
+            {
+              "level": 2,
+              "value": "10.10"
+            },
+            {
+              "level": 3,
+              "value": "10.20"
+            },
+            {
+              "level": 4,
+              "value": "10.30"
+            },
+            {
+              "level": 5,
+              "value": "10.40"
+            },
+            {
+              "level": 6,
+              "value": "10.50"
+            },
+            {
+              "level": 7,
+              "value": "10.60"
+            },
+            {
+              "level": 8,
+              "value": "10.70"
+            },
+            {
+              "level": 9,
+              "value": "10.80"
+            },
+            {
+              "level": 10,
+              "value": "10.90"
+            },
+            {
+              "level": 11,
+              "value": "11.00"
+            },
+            {
+              "level": 12,
+              "value": "11.10"
+            },
+            {
+              "level": 13,
+              "value": "11.20"
+            },
+            {
+              "level": 14,
+              "value": "11.30"
+            },
+            {
+              "level": 15,
+              "value": "11.40"
+            },
+            {
+              "level": 16,
+              "value": "11.50"
+            },
+            {
+              "level": 17,
+              "value": "11.60"
+            },
+            {
+              "level": 18,
+              "value": "11.70"
+            },
+            {
+              "level": 19,
+              "value": "11.80"
+            },
+            {
+              "level": 20,
+              "value": "11.90"
+            },
+            {
+              "level": 21,
+              "value": "12.00"
+            },
+            {
+              "level": 22,
+              "value": "12.10"
+            },
+            {
+              "level": 23,
+              "value": "12.20"
+            },
+            {
+              "level": 24,
+              "value": "12.30"
+            },
+            {
+              "level": 25,
+              "value": "12.40"
+            },
+            {
+              "level": 26,
+              "value": "12.50"
+            },
+            {
+              "level": 27,
+              "value": "12.60"
+            },
+            {
+              "level": 28,
+              "value": "12.70"
+            },
+            {
+              "level": 29,
+              "value": "12.80"
+            },
+            {
+              "level": 30,
+              "value": "12.90"
+            },
+            {
+              "level": 31,
+              "value": "13.00"
+            },
+            {
+              "level": 32,
+              "value": "13.10"
+            },
+            {
+              "level": 33,
+              "value": "13.20"
+            },
+            {
+              "level": 34,
+              "value": "13.30"
+            },
+            {
+              "level": 35,
+              "value": "13.40"
+            },
+            {
+              "level": 36,
+              "value": "13.50"
+            },
+            {
+              "level": 37,
+              "value": "13.60"
+            },
+            {
+              "level": 38,
+              "value": "13.70"
+            },
+            {
+              "level": 39,
+              "value": "13.80"
+            },
+            {
+              "level": 40,
+              "value": "13.90"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

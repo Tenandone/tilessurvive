@@ -1,0 +1,553 @@
+{
+  "schemaVersion": 1,
+  "petId": "starhorn",
+  "gameVersion": "2.6.200",
+  "build": 1512,
+  "snapshotDate": "2026-10-09",
+  "scope": "starhorn-only-versioned-explicit-rows",
+  "validation": "field-alignment-and-legacy-anchors",
+  "minimumLevel": 1,
+  "maximumLevel": 100,
+  "maximumTrainingStage": 5,
+  "trainingResource": {
+    "ko": "별뿔이 전용 각인",
+    "en": "Starhorn exclusive imprint",
+    "ja": "Starhorn専用刻印",
+    "ru": "Особый отпечаток Starhorn",
+    "zh-tw": "Starhorn專屬刻印"
+  },
+  "expRows": [
+    {
+      "from": 1,
+      "to": 2,
+      "cost": 120
+    },
+    {
+      "from": 2,
+      "to": 3,
+      "cost": 130
+    },
+    {
+      "from": 3,
+      "to": 4,
+      "cost": 140
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "cost": 150
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "cost": 160
+    },
+    {
+      "from": 6,
+      "to": 7,
+      "cost": 170
+    },
+    {
+      "from": 7,
+      "to": 8,
+      "cost": 180
+    },
+    {
+      "from": 8,
+      "to": 9,
+      "cost": 190
+    },
+    {
+      "from": 9,
+      "to": 10,
+      "cost": 200
+    },
+    {
+      "from": 10,
+      "to": 11,
+      "cost": 210
+    },
+    {
+      "from": 11,
+      "to": 12,
+      "cost": 220
+    },
+    {
+      "from": 12,
+      "to": 13,
+      "cost": 240
+    },
+    {
+      "from": 13,
+      "to": 14,
+      "cost": 260
+    },
+    {
+      "from": 14,
+      "to": 15,
+      "cost": 290
+    },
+    {
+      "from": 15,
+      "to": 16,
+      "cost": 320
+    },
+    {
+      "from": 16,
+      "to": 17,
+      "cost": 360
+    },
+    {
+      "from": 17,
+      "to": 18,
+      "cost": 390
+    },
+    {
+      "from": 18,
+      "to": 19,
+      "cost": 430
+    },
+    {
+      "from": 19,
+      "to": 20,
+      "cost": 470
+    },
+    {
+      "from": 20,
+      "to": 21,
+      "cost": 520
+    },
+    {
+      "from": 21,
+      "to": 22,
+      "cost": 570
+    },
+    {
+      "from": 22,
+      "to": 23,
+      "cost": 610
+    },
+    {
+      "from": 23,
+      "to": 24,
+      "cost": 680
+    },
+    {
+      "from": 24,
+      "to": 25,
+      "cost": 730
+    },
+    {
+      "from": 25,
+      "to": 26,
+      "cost": 800
+    },
+    {
+      "from": 26,
+      "to": 27,
+      "cost": 850
+    },
+    {
+      "from": 27,
+      "to": 28,
+      "cost": 940
+    },
+    {
+      "from": 28,
+      "to": 29,
+      "cost": 990
+    },
+    {
+      "from": 29,
+      "to": 30,
+      "cost": 1080
+    },
+    {
+      "from": 30,
+      "to": 31,
+      "cost": 1140
+    },
+    {
+      "from": 31,
+      "to": 32,
+      "cost": 1230
+    },
+    {
+      "from": 32,
+      "to": 33,
+      "cost": 1400
+    },
+    {
+      "from": 33,
+      "to": 34,
+      "cost": 1400
+    },
+    {
+      "from": 34,
+      "to": 35,
+      "cost": 1500
+    },
+    {
+      "from": 35,
+      "to": 36,
+      "cost": 1600
+    },
+    {
+      "from": 36,
+      "to": 37,
+      "cost": 1700
+    },
+    {
+      "from": 37,
+      "to": 38,
+      "cost": 1800
+    },
+    {
+      "from": 38,
+      "to": 39,
+      "cost": 2000
+    },
+    {
+      "from": 39,
+      "to": 40,
+      "cost": 2000
+    },
+    {
+      "from": 40,
+      "to": 41,
+      "cost": 2200
+    },
+    {
+      "from": 41,
+      "to": 42,
+      "cost": 2300
+    },
+    {
+      "from": 42,
+      "to": 43,
+      "cost": 2400
+    },
+    {
+      "from": 43,
+      "to": 44,
+      "cost": 2600
+    },
+    {
+      "from": 44,
+      "to": 45,
+      "cost": 2600
+    },
+    {
+      "from": 45,
+      "to": 46,
+      "cost": 2800
+    },
+    {
+      "from": 46,
+      "to": 47,
+      "cost": 2900
+    },
+    {
+      "from": 47,
+      "to": 48,
+      "cost": 3100
+    },
+    {
+      "from": 48,
+      "to": 49,
+      "cost": 3200
+    },
+    {
+      "from": 49,
+      "to": 50,
+      "cost": 3400
+    },
+    {
+      "from": 50,
+      "to": 51,
+      "cost": 3500
+    },
+    {
+      "from": 51,
+      "to": 52,
+      "cost": 3700
+    },
+    {
+      "from": 52,
+      "to": 53,
+      "cost": 3900
+    },
+    {
+      "from": 53,
+      "to": 54,
+      "cost": 4000
+    },
+    {
+      "from": 54,
+      "to": 55,
+      "cost": 4200
+    },
+    {
+      "from": 55,
+      "to": 56,
+      "cost": 4300
+    },
+    {
+      "from": 56,
+      "to": 57,
+      "cost": 4600
+    },
+    {
+      "from": 57,
+      "to": 58,
+      "cost": 4700
+    },
+    {
+      "from": 58,
+      "to": 59,
+      "cost": 4900
+    },
+    {
+      "from": 59,
+      "to": 60,
+      "cost": 5100
+    },
+    {
+      "from": 60,
+      "to": 61,
+      "cost": 5300
+    },
+    {
+      "from": 61,
+      "to": 62,
+      "cost": 5600
+    },
+    {
+      "from": 62,
+      "to": 63,
+      "cost": 5700
+    },
+    {
+      "from": 63,
+      "to": 64,
+      "cost": 6000
+    },
+    {
+      "from": 64,
+      "to": 65,
+      "cost": 6200
+    },
+    {
+      "from": 65,
+      "to": 66,
+      "cost": 6400
+    },
+    {
+      "from": 66,
+      "to": 67,
+      "cost": 6500
+    },
+    {
+      "from": 67,
+      "to": 68,
+      "cost": 6800
+    },
+    {
+      "from": 68,
+      "to": 69,
+      "cost": 7100
+    },
+    {
+      "from": 69,
+      "to": 70,
+      "cost": 7300
+    },
+    {
+      "from": 70,
+      "to": 71,
+      "cost": 7500
+    },
+    {
+      "from": 71,
+      "to": 72,
+      "cost": 7700
+    },
+    {
+      "from": 72,
+      "to": 73,
+      "cost": 8100
+    },
+    {
+      "from": 73,
+      "to": 74,
+      "cost": 8200
+    },
+    {
+      "from": 74,
+      "to": 75,
+      "cost": 8600
+    },
+    {
+      "from": 75,
+      "to": 76,
+      "cost": 8800
+    },
+    {
+      "from": 76,
+      "to": 77,
+      "cost": 9100
+    },
+    {
+      "from": 77,
+      "to": 78,
+      "cost": 9300
+    },
+    {
+      "from": 78,
+      "to": 79,
+      "cost": 9700
+    },
+    {
+      "from": 79,
+      "to": 80,
+      "cost": 9900
+    },
+    {
+      "from": 80,
+      "to": 81,
+      "cost": 10100
+    },
+    {
+      "from": 81,
+      "to": 82,
+      "cost": 10500
+    },
+    {
+      "from": 82,
+      "to": 83,
+      "cost": 10700
+    },
+    {
+      "from": 83,
+      "to": 84,
+      "cost": 11300
+    },
+    {
+      "from": 84,
+      "to": 85,
+      "cost": 11300
+    },
+    {
+      "from": 85,
+      "to": 86,
+      "cost": 11800
+    },
+    {
+      "from": 86,
+      "to": 87,
+      "cost": 11900
+    },
+    {
+      "from": 87,
+      "to": 88,
+      "cost": 12500
+    },
+    {
+      "from": 88,
+      "to": 89,
+      "cost": 12600
+    },
+    {
+      "from": 89,
+      "to": 90,
+      "cost": 13100
+    },
+    {
+      "from": 90,
+      "to": 91,
+      "cost": 13400
+    },
+    {
+      "from": 91,
+      "to": 92,
+      "cost": 13600
+    },
+    {
+      "from": 92,
+      "to": 93,
+      "cost": 14100
+    },
+    {
+      "from": 93,
+      "to": 94,
+      "cost": 14300
+    },
+    {
+      "from": 94,
+      "to": 95,
+      "cost": 15000
+    },
+    {
+      "from": 95,
+      "to": 96,
+      "cost": 15000
+    },
+    {
+      "from": 96,
+      "to": 97,
+      "cost": 15600
+    },
+    {
+      "from": 97,
+      "to": 98,
+      "cost": 15700
+    },
+    {
+      "from": 98,
+      "to": 99,
+      "cost": 16500
+    },
+    {
+      "from": 99,
+      "to": 100,
+      "cost": 16500
+    }
+  ],
+  "trainingRows": [
+    {
+      "from": 0,
+      "to": 1,
+      "cost": 100,
+      "stepCost": 5,
+      "bonus": 40
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "cost": 200,
+      "stepCost": 10,
+      "bonus": 55
+    },
+    {
+      "from": 2,
+      "to": 3,
+      "cost": 400,
+      "stepCost": 20,
+      "bonus": 70
+    },
+    {
+      "from": 3,
+      "to": 4,
+      "cost": 600,
+      "stepCost": 30,
+      "bonus": 85
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "cost": 700,
+      "stepCost": 35,
+      "bonus": 100
+    }
+  ]
+}

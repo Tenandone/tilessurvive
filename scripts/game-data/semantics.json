@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 1,
+  "description": "Structural condition extraction and explicit publication allowlist. Unlisted fields remain private STRUCTURED data. No numeric unit or activation is inferred from a field name.",
+  "conditionFields": ["Level", "SkillLevel", "GearLevel", "HeroLevel", "Star", "Rank", "Stage", "Step", "Quality", "ServerOpenDays", "ServerOpenWeeks", "ClientVersion", "MinLevel", "MaxLevel", "MinBuyLevel", "MaxBuyLevel", "Season", "SeasonId", "Dan", "Day"],
+  "allowedFields": [],
+  "allowedLocales": ["ko", "en", "ja", "ru", "zh-tw"],
+  "statuses": {
+    "STRUCTURED": "Binary shape and identities checked; gameplay semantics not confirmed",
+    "CONFIRMED": "Exact value and condition tuple supported by supplied independent evidence",
+    "UNKNOWN": "Not established; never default to active or zero"
+  }
+}

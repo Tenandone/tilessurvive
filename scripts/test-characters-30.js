@@ -1,36 +1,39 @@
 const fs=require('fs'),path=require('path'),{execFileSync}=require('child_process'),{parseHTML}=require('linkedom');
 const root=path.resolve(__dirname,'..'),languages=['ko','en','ja','ru','zh-tw'];
 const {expectedSkillText}=require('./ux-301-test-allowances');
+const delta=require('./foundation-40-test-allowances');
+const release='9ab98dc28ac8cd8e8bb8dbf94b61385be8f8e9e1';
 const petIds=require('../data/companions.json').pets.map(p=>p.id),data=require('../data/expansion-22/database.json');
 let checks=0;const errors=[];
 function check(value,message){checks++;if(!value)errors.push(message);}
 const norm=s=>s.trim().replace(/\s+/g,' ');
 const parse=s=>parseHTML(s).document;
 const load=route=>parse(fs.readFileSync(path.join(root,route,'index.html'),'utf8'));
-function rows(d){return [...d.querySelectorAll('main table tr')].map(n=>[...n.querySelectorAll('th,td')].map(c=>norm(c.textContent)).join('|'));}
+function rows(d,file){const a=[...d.querySelectorAll('main table tr')].map(n=>[...n.querySelectorAll('th,td')].map(c=>norm(c.textContent)));return (file?delta.expectedRows(a,file):a).map(c=>c.join('|'));}
 for(const lang of languages){
  const directory=load(lang+'/heroes');
  const cards=[...directory.querySelectorAll('.ts3-roster-card')];
- check(cards.length===27,lang+': 27 hero cards');
- check(new Set(cards.map(c=>c.dataset.characterId)).size===27,lang+': unique heroes');
- const routes=cards.map(c=>(c.matches('a')?c:c.querySelector('a[href]')).getAttribute('href').slice(1,-1));
+ check(cards.length===28,lang+': 27 original heroes plus Dave');
+ check(new Set(cards.map(c=>c.dataset.characterId)).size===28,lang+': unique heroes');
+ check(cards.filter(c=>c.dataset.characterId==='dave').length===1,lang+': one approved Dave card');
+ const routes=cards.filter(c=>c.dataset.characterId!=='dave').map(c=>(c.matches('a')?c:c.querySelector('a[href]')).getAttribute('href').slice(1,-1));
  routes.push(...petIds.map(id=>lang+'/database/pet-system/'+id));
  for(const route of routes){
   const d=load(route),main=d.querySelector('main');
-  const old=parse(execFileSync('git',['show','HEAD:'+route+'/index.html'],{cwd:root,encoding:'utf8',maxBuffer:5e6}));
+  const old=parse(execFileSync('git',['show',release+':'+route+'/index.html'],{cwd:root,encoding:'utf8',maxBuffer:5e6}));
   check(!!main.querySelector('.ts3-character-stage'),route+': stage');
   check(d.querySelectorAll('main h1').length===1,route+': single h1');
   check(d.querySelectorAll('link[href="/css/characters-30.css"]').length===1,route+': one stylesheet');
   check(d.querySelectorAll('script[src="/js/characters-30.js"]').length===1,route+': one enhancement');
   check(d.querySelector('link[rel=canonical]')?.href===old.querySelector('link[rel=canonical]')?.href,route+': canonical preserved');
   const currentRows=rows(d);
-  for(const row of rows(old))check(currentRows.includes(row),route+': original table row '+row.slice(0,80));
+  for(const row of rows(old,route+'/index.html'))check(currentRows.includes(row),route+': original table row with exact reviewed label correction '+row.slice(0,80));
   const skillText=[...main.querySelectorAll('.ts-skill-body')].map(n=>norm(n.textContent));
-  for(const body of old.querySelectorAll('main .ts-skill-body'))check(skillText.some(value=>value.normalize('NFKC')===expectedSkillText(body.textContent,route+'/index.html')),route+': complete original skill effects with reviewed status captions');
+  for(const body of old.querySelectorAll('main .ts-skill-body'))check(skillText.some(value=>value.normalize('NFKC')===delta.text(expectedSkillText(body.textContent,route+'/index.html'),route+'/index.html')),route+': complete original skill effects with reviewed status captions');
   for(const picker of old.querySelectorAll('[data-stage-picker]'))check([...main.querySelectorAll('[data-stage-picker]')].some(p=>norm(p.textContent)===norm(picker.textContent)),route+': observed stage options preserved');
   for(const stat of old.querySelectorAll('main .stat-card,main .equipment-stat,main .ts-data-strip'))check([...main.querySelectorAll('.stat-card,.equipment-stat,.ts-data-strip')].some(n=>norm(n.textContent)===norm(stat.textContent)),route+': observed stat block preserved');
   const currentImages=new Set([...main.querySelectorAll('img')].map(n=>n.getAttribute('src')));
-  for(const img of old.querySelectorAll('main img'))check(currentImages.has(img.getAttribute('src')),route+': source art preserved');
+  for(const img of old.querySelectorAll('main img'))check(currentImages.has(delta.image(route+'/index.html',img.getAttribute('src'))),route+': source art preserved or replaced by exact approved game asset');
   const currentExternal=new Set([...main.querySelectorAll('a[href^="http"]')].map(n=>n.getAttribute('href')));
   for(const a of old.querySelectorAll('main a[href^="http"]'))check(currentExternal.has(a.getAttribute('href')),route+': original external/evidence link retained');
   for(const a of main.querySelectorAll('[data-characters-generated] a[href]')){

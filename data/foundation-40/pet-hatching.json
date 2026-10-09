@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "gameVersion": "2.6.200",
+  "observedAt": "2026-10-10",
+  "scope": "displayed-hatching-probabilities",
+  "eggNamesKo": {"normal": "일반 펫에그", "rare": "희귀 펫에그", "precious": "진귀 펫에그"},
+  "legacyColumnMapping": {"normal": "rare", "rare": "epic", "precious": "legendary"},
+  "pets": [
+    {"id": "snowball", "nameKo": "스노우볼", "normal": 22.22, "rare": 10, "precious": null},
+    {"id": "dodo", "nameKo": "도도", "normal": 22.22, "rare": 10, "precious": null},
+    {"id": "buckler", "nameKo": "버클러", "normal": 22.22, "rare": 10, "precious": null},
+    {"id": "fluffy", "nameKo": "솜솜", "normal": 11.11, "rare": 20, "precious": 16.67},
+    {"id": "hardhead", "nameKo": "철두", "normal": 11.11, "rare": 20, "precious": 16.67},
+    {"id": "shadow", "nameKo": "쉐도우", "normal": 11.11, "rare": 20, "precious": 16.67},
+    {"id": "starhorn", "nameKo": "별뿔이", "normal": null, "rare": 10, "precious": 50}
+  ],
+  "displayedTotals": {"normal": 99.99, "rare": 100, "precious": 100.01},
+  "nullMeaning": "not-listed-not-confirmed-zero"
+}

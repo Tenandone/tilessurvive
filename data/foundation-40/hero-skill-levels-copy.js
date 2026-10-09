@@ -1,0 +1,14 @@
+const copy={};const add=(key,...values)=>['ko','en','ja','ru','zh-tw'].forEach((lang,i)=>(copy[lang]??={})[key]=values[i]);
+add('from','비교할 첫 레벨','First level','比較元のレベル','Первый уровень','第一個比較等級');
+add('to','비교할 두 번째 레벨','Second level','比較先のレベル','Второй уровень','第二個比較等級');
+add('all','전체 레벨 수치 (Lv.1–40)','All level values (Lv.1–40)','全レベルの数値（Lv.1–40）','Значения всех уровней (1–40)','完整等級數值（Lv.1–40）');
+add('level','스킬 레벨','Skill level','スキルレベル','Уровень навыка','技能等級');
+add('condition','스킬 상한은 영웅 성장 상태에 따라 달라집니다. Lv.10→11 비교 당시 상한은 {cap}였으며, 그보다 높은 레벨은 해금된 경우에만 적용됩니다. 표는 스킬 계수이며 실전 피해량이 아닙니다.','Skill caps depend on hero progression. The Lv.10→11 preview showed a cap of {cap}; higher levels apply only when unlocked. These are skill coefficients, not final battle damage.','スキル上限は英雄の育成状況で変わります。Lv.10→11の比較時の上限は{cap}でした。それより高いレベルは解放済みの場合のみ適用されます。数値はスキル係数で、実戦の最終ダメージではありません。','Предел навыка зависит от развития героя. При просмотре ур.10→11 предел составлял {cap}; более высокие уровни применяются только после открытия. В таблице коэффициенты навыков, а не итоговый урон в бою.','技能上限取決於英雄培養進度。Lv.10→11 預覽時的上限為 {cap}，更高等級僅在解鎖後適用。表中為技能係數，並非實戰最終傷害。');
+add('updated','Lv.{from}과 Lv.{to} 수치를 표시합니다.','Showing Lv.{from} and Lv.{to}.','Lv.{from}とLv.{to}の数値を表示しています。','Показаны значения ур.{from} и ур.{to}.','目前顯示 Lv.{from} 與 Lv.{to} 的數值。');
+add('invalid','표에 있는 스킬 레벨을 선택하세요.','Choose a listed skill level.','表にあるスキルレベルを選んでください。','Выберите уровень навыка из таблицы.','請選擇表中列出的技能等級。');
+add('gearAll','전용 장비 레벨별 능력치 (Lv.1–15)','Exclusive gear stats by level (Lv.1–15)','専用装備のレベル別能力値（Lv.1–15）','Характеристики личного снаряжения по уровням (1–15)','專屬裝備各等級能力值（Lv.1–15）');
+add('gearLevel','장비 레벨','Gear level','装備レベル','Уровень снаряжения','裝備等級');
+add('power','전투력','Power','戦力','Мощь','戰力');
+add('frontDefense','아군 전방 DEF','Allied front-row DEF','味方前列DEF','DEF переднего ряда союзников','友軍前排 DEF');
+add('backAttack','아군 후방 ATK','Allied back-row ATK','味方後列ATK','ATK заднего ряда союзников','友軍後排 ATK');
+module.exports=copy;

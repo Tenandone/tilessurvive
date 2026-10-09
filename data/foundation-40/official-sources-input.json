@@ -1,0 +1,569 @@
+{
+  "schemaVersion": "1.0",
+  "checkedAt": "2026-10-09",
+  "localizationKind": "Editorial translations of official facts; source titles and URLs remain original.",
+  "sources": [
+    {
+      "id": "blog-1188",
+      "url": "https://tilesurvivegame.com/en/blog/1188",
+      "sha256": "c301fcb69aba04d896f53ec3bac8cc1bfd2b0c5a9f793dd84724cf6ef96754be",
+      "title": "v2.6.200 Patch Notes",
+      "kind": "official-patch-note",
+      "publisher": "FunPlus / Tiles Survive",
+      "publishedAtLocal": "2026-09-28 07:33:28",
+      "publishedTimezone": null,
+      "gameVersion": "2.6.200",
+      "gameBuild": null
+    },
+    {
+      "id": "blog-1055",
+      "url": "https://tilesurvivegame.com/en/blog/1055",
+      "sha256": "0322d9e29ad9c05bd764a292e16ee1e65b648613cccd54f37556438425626d44",
+      "title": "v2.5.600 Patch Notes",
+      "kind": "official-patch-note",
+      "publisher": "FunPlus / Tiles Survive",
+      "publishedAtLocal": "2026-07-09 11:03:57",
+      "publishedTimezone": null,
+      "gameVersion": "2.5.600",
+      "gameBuild": null
+    },
+    {
+      "id": "blog-1047",
+      "url": "https://tilesurvivegame.com/en/blog/1047",
+      "sha256": "cee55f064c90a8c18a559c0b6e2f82e362b613b62bbe3fd69fdf13762714a273",
+      "title": "v2.5.500 Patch Notes",
+      "kind": "official-patch-note",
+      "publisher": "FunPlus / Tiles Survive",
+      "publishedAtLocal": "2026-06-26 06:27:17",
+      "publishedTimezone": null,
+      "gameVersion": "2.5.500",
+      "gameBuild": null
+    },
+    {
+      "id": "blog-968",
+      "url": "https://tilesurvivegame.com/en/blog/968",
+      "sha256": "ce958f402a9e60b68dd141666b8ee0d0859113415cfac4b8ce45533553128168",
+      "title": "v2.5.100 Patch Notes",
+      "kind": "official-patch-note",
+      "publisher": "FunPlus / Tiles Survive",
+      "publishedAtLocal": "2026-04-29 10:35:22",
+      "publishedTimezone": null,
+      "gameVersion": "2.5.100",
+      "gameBuild": null
+    },
+    {
+      "id": "blog-849",
+      "url": "https://tilesurvivegame.com/en/blog/849",
+      "sha256": "993aec293909e20c7473ec76599c9c9b207399b6f2fdedd9dbcb3ce12326c11e",
+      "title": "v2.4.500 Patch Notes",
+      "kind": "official-patch-note",
+      "publisher": "FunPlus / Tiles Survive",
+      "publishedAtLocal": "2026-01-22 06:38:45",
+      "publishedTimezone": null,
+      "gameVersion": "2.4.500",
+      "gameBuild": null
+    },
+    {
+      "id": "blog-814",
+      "url": "https://tilesurvivegame.com/en/blog/814",
+      "sha256": "c88b9f7df4e5a5887761144a07077151751f4215edb2146f2ac6da20d4f4bd95",
+      "title": "v2.4.100 Patch Notes",
+      "kind": "official-patch-note",
+      "publisher": "FunPlus / Tiles Survive",
+      "publishedAtLocal": "2026-01-06 02:56:29",
+      "publishedTimezone": null,
+      "gameVersion": "2.4.100",
+      "gameBuild": null
+    }
+  ],
+  "facts": [
+    {
+      "id": "arcadia-contest-duration-250600",
+      "domain": "events",
+      "subject": "event:arcadian-conquest",
+      "predicate": "contestDuration",
+      "value": 2,
+      "unit": "hours",
+      "sourceId": "blog-1055",
+      "sourceURL": "https://tilesurvivegame.com/en/blog/1055",
+      "sourceTitle": "v2.5.600 Patch Notes",
+      "sourcePublishedAt": "2026-07-09 11:03:57",
+      "sourcePublishedTimezone": null,
+      "gameVersion": "2.5.600",
+      "gameBuild": null,
+      "checkedAt": "2026-10-09",
+      "status": "CONFIRMED",
+      "currentActive": null,
+      "conditions": [],
+      "uncertainty": [
+        "The patch changes duration, but does not restate the occupation-victory threshold."
+      ],
+      "supersedes": [
+        "arcadia-contest-duration-guide-20260107"
+      ]
+    },
+    {
+      "id": "vip-store-refresh",
+      "domain": "shops",
+      "subject": "shop:vip",
+      "predicate": "weeklyReset",
+      "value": {
+        "weekday": "Monday",
+        "time": "00:00",
+        "timezone": "UTC"
+      },
+      "unit": "weekly schedule",
+      "sourceId": "blog-968",
+      "sourceURL": "https://tilesurvivegame.com/en/blog/968",
+      "sourceTitle": "v2.5.100 Patch Notes",
+      "sourcePublishedAt": "2026-04-29 10:35:22",
+      "sourcePublishedTimezone": null,
+      "gameVersion": "2.5.100",
+      "gameBuild": null,
+      "checkedAt": "2026-10-09",
+      "status": "CONFIRMED",
+      "currentActive": null,
+      "conditions": [],
+      "uncertainty": [],
+      "previousValue": {
+        "weekday": "Sunday",
+        "time": "00:00",
+        "timezone": "UTC"
+      }
+    },
+    {
+      "id": "vip-stamina-weekly-limit",
+      "domain": "shops",
+      "subject": "item:chief-stamina",
+      "predicate": "weeklyPurchaseLimit",
+      "value": 50,
+      "unit": "units",
+      "sourceId": "blog-849",
+      "sourceURL": "https://tilesurvivegame.com/en/blog/849",
+      "sourceTitle": "v2.4.500 Patch Notes",
+      "sourcePublishedAt": "2026-01-22 06:38:45",
+      "sourcePublishedTimezone": null,
+      "gameVersion": "2.4.500",
+      "gameBuild": null,
+      "checkedAt": "2026-10-09",
+      "status": "CONFIRMED",
+      "currentActive": null,
+      "conditions": [
+        "VIP Store; moved from Gem Store."
+      ],
+      "uncertainty": [
+        "Stamina per unit, cash equivalent, and current account price are not provided."
+      ]
+    },
+    {
+      "id": "vip-arena-ticket-eligibility",
+      "domain": "shops",
+      "subject": "item:arena-challenge-ticket",
+      "predicate": "purchasable",
+      "value": false,
+      "unit": "boolean",
+      "sourceId": "blog-1055",
+      "sourceURL": "https://tilesurvivegame.com/en/blog/1055",
+      "sourceTitle": "v2.5.600 Patch Notes",
+      "sourcePublishedAt": "2026-07-09 11:03:57",
+      "sourcePublishedTimezone": null,
+      "gameVersion": "2.5.600",
+      "gameBuild": null,
+      "checkedAt": "2026-10-09",
+      "status": "CONFIRMED",
+      "currentActive": null,
+      "conditions": [
+        "When neither Arena nor 3v3 Arena is available."
+      ],
+      "uncertainty": [
+        "Cost and purchase limit are not listed."
+      ]
+    },
+    {
+      "id": "gear-store-signature-fragment-limit",
+      "domain": "shops",
+      "subject": "item:signature-weapon-fragment",
+      "predicate": "redemptionLimitPerWeapon",
+      "value": 390,
+      "unit": "fragments",
+      "sourceId": "blog-814",
+      "sourceURL": "https://tilesurvivegame.com/en/blog/814",
+      "sourceTitle": "v2.4.100 Patch Notes",
+      "sourcePublishedAt": "2026-01-06 02:56:29",
+      "sourcePublishedTimezone": null,
+      "gameVersion": "2.4.100",
+      "gameBuild": null,
+      "checkedAt": "2026-10-09",
+      "status": "CONFIRMED",
+      "currentActive": null,
+      "conditions": [
+        "Remaining quantity accounts for the Chief’s previous redemptions."
+      ],
+      "uncertainty": [
+        "The notice does not identify the payment currency, exchange price or reset period."
+      ]
+    },
+    {
+      "id": "alliance-duel-pet-day",
+      "domain": "missions",
+      "subject": "event:alliance-duel",
+      "predicate": "petDevelopmentTaskDay",
+      "value": 2,
+      "unit": "event day",
+      "sourceId": "blog-1188",
+      "sourceURL": "https://tilesurvivegame.com/en/blog/1188",
+      "sourceTitle": "v2.6.200 Patch Notes",
+      "sourcePublishedAt": "2026-09-28 07:33:28",
+      "sourcePublishedTimezone": null,
+      "gameVersion": "2.6.200",
+      "gameBuild": null,
+      "checkedAt": "2026-10-09",
+      "status": "CONFIRMED",
+      "currentActive": null,
+      "conditions": [
+        "Only States where Pets are unlocked."
+      ],
+      "uncertainty": [
+        "Task IDs, target quantities and point rates are not listed."
+      ]
+    },
+    {
+      "id": "arcadia-battle-speedup",
+      "domain": "events",
+      "subject": "event:arcadian-conquest",
+      "predicate": "soloProgressRewardIncludes",
+      "value": 20,
+      "unit": "hours universal Speedup",
+      "sourceId": "blog-1047",
+      "sourceURL": "https://tilesurvivegame.com/en/blog/1047",
+      "sourceTitle": "v2.5.500 Patch Notes",
+      "sourcePublishedAt": "2026-06-26 06:27:17",
+      "sourcePublishedTimezone": null,
+      "gameVersion": "2.5.500",
+      "gameBuild": null,
+      "checkedAt": "2026-10-09",
+      "status": "CONFIRMED",
+      "currentActive": null,
+      "conditions": [
+        "Battle phase."
+      ],
+      "uncertainty": [
+        "Tier threshold and number of 20h items are not listed."
+      ]
+    },
+    {
+      "id": "state-clash-battle-speedup",
+      "domain": "events",
+      "subject": "event:state-clash",
+      "predicate": "soloProgressRewardIncludes",
+      "value": 20,
+      "unit": "hours universal Speedup",
+      "sourceId": "blog-1047",
+      "sourceURL": "https://tilesurvivegame.com/en/blog/1047",
+      "sourceTitle": "v2.5.500 Patch Notes",
+      "sourcePublishedAt": "2026-06-26 06:27:17",
+      "sourcePublishedTimezone": null,
+      "gameVersion": "2.5.500",
+      "gameBuild": null,
+      "checkedAt": "2026-10-09",
+      "status": "CONFIRMED",
+      "currentActive": null,
+      "conditions": [
+        "Battle phase."
+      ],
+      "uncertainty": [
+        "Tier threshold and number of 20h items are not listed."
+      ]
+    },
+    {
+      "id": "fiend-aid-crate-guaranteed",
+      "domain": "items",
+      "subject": "item:infected-fiend-aid-crate",
+      "predicate": "guaranteedReward",
+      "value": 5,
+      "unit": "minutes universal Speedup",
+      "sourceId": "blog-1047",
+      "sourceURL": "https://tilesurvivegame.com/en/blog/1047",
+      "sourceTitle": "v2.5.500 Patch Notes",
+      "sourcePublishedAt": "2026-06-26 06:27:17",
+      "sourcePublishedTimezone": null,
+      "gameVersion": "2.5.500",
+      "gameBuild": null,
+      "checkedAt": "2026-10-09",
+      "status": "CONFIRMED",
+      "currentActive": null,
+      "conditions": [
+        "Epic-quality crate."
+      ],
+      "uncertainty": [
+        "Number of 5m items per crate is not stated."
+      ]
+    },
+    {
+      "id": "fiend-aid-crate-optional-speedup",
+      "domain": "items",
+      "subject": "item:infected-fiend-aid-crate",
+      "predicate": "chanceReward",
+      "value": 15,
+      "unit": "minutes Speedup",
+      "sourceId": "blog-1047",
+      "sourceURL": "https://tilesurvivegame.com/en/blog/1047",
+      "sourceTitle": "v2.5.500 Patch Notes",
+      "sourcePublishedAt": "2026-06-26 06:27:17",
+      "sourcePublishedTimezone": null,
+      "gameVersion": "2.5.500",
+      "gameBuild": null,
+      "checkedAt": "2026-10-09",
+      "status": "CONFIRMED",
+      "currentActive": null,
+      "conditions": [],
+      "uncertainty": [
+        "Chance and item count are not stated; the article does not specify this reward’s Speedup subtype."
+      ]
+    },
+    {
+      "id": "fiend-aid-crate-optional-token",
+      "domain": "items",
+      "subject": "item:infected-fiend-aid-crate",
+      "predicate": "chanceReward",
+      "value": "Advanced Recruitment Token",
+      "unit": "item",
+      "sourceId": "blog-1047",
+      "sourceURL": "https://tilesurvivegame.com/en/blog/1047",
+      "sourceTitle": "v2.5.500 Patch Notes",
+      "sourcePublishedAt": "2026-06-26 06:27:17",
+      "sourcePublishedTimezone": null,
+      "gameVersion": "2.5.500",
+      "gameBuild": null,
+      "checkedAt": "2026-10-09",
+      "status": "CONFIRMED",
+      "currentActive": null,
+      "conditions": [],
+      "uncertainty": [
+        "Chance and quantity are not stated."
+      ]
+    },
+    {
+      "id": "fiend-tech-benefit-scope",
+      "domain": "research",
+      "subject": "research:infected-fiend-conquest",
+      "predicate": "bonusRecipient",
+      "value": "successful Rally leader only",
+      "unit": "eligibility",
+      "sourceId": "blog-1047",
+      "sourceURL": "https://tilesurvivegame.com/en/blog/1047",
+      "sourceTitle": "v2.5.500 Patch Notes",
+      "sourcePublishedAt": "2026-06-26 06:27:17",
+      "sourcePublishedTimezone": null,
+      "gameVersion": "2.5.500",
+      "gameBuild": null,
+      "checkedAt": "2026-10-09",
+      "status": "CONFIRMED",
+      "currentActive": null,
+      "conditions": [
+        "EXP Bonus and Speedup Items techs."
+      ],
+      "uncertainty": [
+        "Rally participants do not receive these bonuses."
+      ]
+    }
+  ],
+  "blocks": [
+    {
+      "id": "vip-reset",
+      "factIds": [
+        "vip-store-refresh"
+      ],
+      "text": {
+        "ko": "VIP 상점은 매주 월요일 00:00 UTC에 초기화됩니다. 한국 시간으로 월요일 오전 9시입니다.",
+        "en": "The VIP Store resets every Monday at 00:00 UTC.",
+        "ja": "VIPストアは毎週月曜日00:00 UTC（日本時間09:00）にリセットされます。",
+        "ru": "VIP-магазин обновляется каждый понедельник в 00:00 UTC.",
+        "zh-tw": "VIP商店每週一00:00 UTC重設，即台灣時間週一08:00。"
+      }
+    },
+    {
+      "id": "vip-stamina",
+      "factIds": [
+        "vip-stamina-weekly-limit"
+      ],
+      "text": {
+        "ko": "대장 체력은 VIP 상점에서 주당 최대 50개까지 구매할 수 있습니다.",
+        "en": "Chief Stamina has a weekly purchase limit of 50 in the VIP Store.",
+        "ja": "VIPストアのChief Staminaは週50個まで購入できます。",
+        "ru": "Лимит покупки выносливости шефа в VIP-магазине — 50 единиц в неделю.",
+        "zh-tw": "VIP商店的首領體力每週最多可購買50個。"
+      }
+    },
+    {
+      "id": "vip-arena-ticket",
+      "factIds": [
+        "vip-arena-ticket-eligibility"
+      ],
+      "text": {
+        "ko": "아레나와 3대3 아레나가 모두 열리지 않은 동안에는 VIP 상점의 아레나 도전권을 구매할 수 없습니다.",
+        "en": "Arena Challenge Tickets cannot be purchased in the VIP Store while both Arena and 3v3 Arena are unavailable.",
+        "ja": "アリーナと3対3アリーナがどちらも利用できない間、VIPストアのアリーナ挑戦券は購入できません。",
+        "ru": "Билеты вызова на арену нельзя купить в VIP-магазине, когда недоступны и арена, и арена 3 на 3.",
+        "zh-tw": "競技場與3對3競技場皆未開放時，無法在VIP商店購買競技場挑戰券。"
+      }
+    },
+    {
+      "id": "signature-fragment-redemption",
+      "factIds": [
+        "gear-store-signature-fragment-limit"
+      ],
+      "text": {
+        "ko": "장비 상점의 전용 무기 조각 교환 상한은 무기별 390개입니다. 남은 수량에는 이미 교환한 조각이 반영됩니다. 교환 재화·가격·초기화 주기는 이 공지에 제시되지 않았습니다.",
+        "en": "The Gear Store redemption limit is 390 fragments per Signature Weapon. Remaining stock accounts for previous redemptions. The notice does not state the currency, price or reset period.",
+        "ja": "装備ストアの専用武器の欠片は、武器ごとに390個まで交換できます。残数には交換済みの個数が反映されます。交換通貨・価格・リセット周期は告知に記載されていません。",
+        "ru": "Лимит обмена осколков особого оружия в магазине снаряжения — 390 для каждого оружия. Остаток учитывает прежние обмены. Валюта, цена и период сброса в объявлении не указаны.",
+        "zh-tw": "裝備商店的專屬武器碎片每種武器最多可兌換390個，剩餘數量會扣除已兌換部分。公告未列出兌換貨幣、價格與重設週期。"
+      }
+    },
+    {
+      "id": "alliance-duel-pet-tasks",
+      "factIds": [
+        "alliance-duel-pet-day"
+      ],
+      "text": {
+        "ko": "펫 시스템이 열린 서버에서는 연맹 대결 2일차에 펫 성장 임무로 점수를 얻을 수 있습니다. 행동별 점수는 해당 이벤트 화면에서 확인하세요.",
+        "en": "In States with Pets unlocked, pet-development tasks award Alliance Duel points on Day 2. Check the event screen for points per action.",
+        "ja": "ペットが解放されたサーバーでは、同盟対決2日目のペット育成任務でポイントを獲得できます。行動ごとの点数はイベント画面を確認してください。",
+        "ru": "На серверах с открытыми питомцами задания их развития дают очки на 2-й день дуэли альянсов. Очки за каждое действие указаны на экране события.",
+        "zh-tw": "已解鎖寵物系統的伺服器，可在聯盟對決第2天透過寵物成長任務獲得積分。各行動的分數請查看活動畫面。"
+      }
+    },
+    {
+      "id": "battle-speedup-rewards",
+      "factIds": [
+        "arcadia-battle-speedup",
+        "state-clash-battle-speedup"
+      ],
+      "text": {
+        "ko": "천궁의 성과 서버 대결 전투 단계의 개인 진행 보상에는 20시간 공용 가속이 포함됩니다. 보상 단계와 지급 개수는 이벤트 화면을 기준으로 확인하세요.",
+        "en": "Solo Progress Rewards in the battle phases of Arcadian Conquest and State Clash include 20-hour universal Speedups. Check the event screen for reward tiers and item counts.",
+        "ja": "Arcadian ConquestとState Clashの戦闘段階の個人進行報酬には、20時間の汎用加速が含まれます。報酬段階と個数はイベント画面を確認してください。",
+        "ru": "В личные награды за прогресс боевых этапов Arcadian Conquest и State Clash входят универсальные ускорения на 20 часов. Этапы наград и количество предметов смотрите в событии.",
+        "zh-tw": "Arcadian Conquest與State Clash戰鬥階段的個人進度獎勵包含20小時通用加速。獎勵門檻與道具數量請查看活動畫面。"
+      }
+    },
+    {
+      "id": "fiend-aid-crate-rewards",
+      "factIds": [
+        "fiend-aid-crate-guaranteed",
+        "fiend-aid-crate-optional-speedup",
+        "fiend-aid-crate-optional-token"
+      ],
+      "text": {
+        "ko": "에픽 감염자 보스 지원 상자는 5분 공용 가속을 보장하며, 확률적으로 15분 가속 또는 고급 모집권을 얻을 수 있습니다. 지급 개수와 확률은 이 공지에 제시되지 않았습니다.",
+        "en": "Epic Infected Fiend Aid Crates guarantee 5-minute universal Speedups and may also yield a 15-minute Speedup or Advanced Recruitment Token. Item counts and chances are not listed in the notice.",
+        "ja": "エピックのInfected Fiend Aid Crateでは5分の汎用加速を必ず入手でき、15分加速または高級募集券が出る場合もあります。個数と確率は告知に記載されていません。",
+        "ru": "Эпические ящики помощи за заражённого босса гарантируют универсальное ускорение на 5 минут; также возможны ускорение на 15 минут или жетон продвинутого призыва. Количество и вероятности в объявлении не указаны.",
+        "zh-tw": "史詩感染者頭目支援箱保證提供5分鐘通用加速，也有機會獲得15分鐘加速或高級招募券。公告未列出道具數量與機率。"
+      }
+    },
+    {
+      "id": "fiend-research-leader-scope",
+      "factIds": [
+        "fiend-tech-benefit-scope"
+      ],
+      "text": {
+        "ko": "감염자 보스 토벌의 경험치·가속 아이템 보너스 연구는 토벌에 성공한 집결장에게만 적용됩니다. 집결 참가자에게는 적용되지 않습니다.",
+        "en": "Infected Fiend Conquest EXP Bonus and Speedup Items research bonuses apply only to the Rally leader after a successful defeat, not to Rally participants.",
+        "ja": "Infected Fiend Conquestの経験値・加速アイテム研究ボーナスは、討伐に成功した集結リーダーにのみ適用され、参加者には適用されません。",
+        "ru": "Бонусы исследований опыта и ускорений за заражённого босса действуют только для лидера успешного сбора, а не для участников.",
+        "zh-tw": "感染者頭目討伐的經驗與加速道具研究加成，僅適用於成功討伐的集結發起者，不適用於集結參加者。"
+      }
+    }
+  ],
+  "pages": [
+    {
+      "route": "database/vip-point",
+      "sectionTitle": {
+        "ko": "VIP 상점 이용 조건",
+        "en": "VIP Store conditions",
+        "ja": "VIPストアの利用条件",
+        "ru": "Условия VIP-магазина",
+        "zh-tw": "VIP商店使用條件"
+      },
+      "blockIds": [
+        "vip-reset",
+        "vip-stamina",
+        "vip-arena-ticket"
+      ]
+    },
+    {
+      "route": "database/exclusive-gear",
+      "sectionTitle": {
+        "ko": "장비 상점에서 조각 교환",
+        "en": "Fragment redemption in the Gear Store",
+        "ja": "装備ストアで欠片を交換",
+        "ru": "Обмен осколков в магазине снаряжения",
+        "zh-tw": "裝備商店碎片兌換"
+      },
+      "blockIds": [
+        "signature-fragment-redemption"
+      ]
+    },
+    {
+      "route": "database/pet-system",
+      "sectionTitle": {
+        "ko": "연맹 대결에서 펫 성장",
+        "en": "Pet development in Alliance Duel",
+        "ja": "同盟対決のペット育成",
+        "ru": "Развитие питомцев в дуэли альянсов",
+        "zh-tw": "聯盟對決寵物成長"
+      },
+      "blockIds": [
+        "alliance-duel-pet-tasks"
+      ]
+    },
+    {
+      "route": "database/alliance-duel",
+      "sectionTitle": {
+        "ko": "2일차 펫 성장 임무",
+        "en": "Day 2 pet-development tasks",
+        "ja": "2日目のペット育成任務",
+        "ru": "Задания питомцев на 2-й день",
+        "zh-tw": "第2天寵物成長任務"
+      },
+      "blockIds": [
+        "alliance-duel-pet-tasks"
+      ]
+    },
+    {
+      "route": "events",
+      "sectionTitle": {
+        "ko": "가속·모집권 보상",
+        "en": "Speedup and recruitment rewards",
+        "ja": "加速・募集券の報酬",
+        "ru": "Награды ускорениями и жетонами призыва",
+        "zh-tw": "加速與招募券獎勵"
+      },
+      "blockIds": [
+        "battle-speedup-rewards",
+        "fiend-aid-crate-rewards"
+      ]
+    },
+    {
+      "route": "buildings/lab",
+      "sectionTitle": {
+        "ko": "감염자 보스 집결 보상 조건",
+        "en": "Infected Fiend Rally reward conditions",
+        "ja": "感染者ボスの集結報酬条件",
+        "ru": "Условия наград за сбор на заражённого босса",
+        "zh-tw": "感染者頭目集結獎勵條件"
+      },
+      "blockIds": [
+        "fiend-research-leader-scope"
+      ]
+    }
+  ],
+  "arcadia": {
+    "route": "events/arcadian-conquest",
+    "durationFactId": "arcadia-contest-duration-250600",
+    "historicalGuideURL": "https://tilesurvivegame.com/en/blog/828",
+    "historicalGuideDate": "2026-01-07"
+  }
+}

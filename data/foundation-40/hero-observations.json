@@ -1,0 +1,317 @@
+{
+  "schemaVersion": 1,
+  "context": {
+    "gameVersion": "2.6.200",
+    "gameBuild": "1512",
+    "observedDate": "2026-10-09",
+    "sourceLocale": "ko",
+    "currentSkillLevel": 10,
+    "nextSkillLevel": 11,
+    "nextLevelIsPreview": true
+  },
+  "heroes": [
+    {
+      "id": "undine",
+      "displayedSkillCap": 15,
+      "rows": [
+        {
+          "id": "undine-ripple-initial-10-11",
+          "name": {
+            "ko": "잔물결의 선율 · 첫 대상",
+            "en": "Ripple Ricochet · first target",
+            "ja": "Ripple Ricochet・最初の対象",
+            "ru": "Ripple Ricochet · первая цель",
+            "zh-tw": "Ripple Ricochet・首個目標"
+          },
+          "measure": "initial-target-damage",
+          "current": "47.96",
+          "next": "48.40",
+          "unit": "percent-atk"
+        },
+        {
+          "id": "undine-azure-damage-10-11",
+          "name": {
+            "ko": "바다의 송가 · 범위 피해",
+            "en": "Azure Anthem · area damage",
+            "ja": "Azure Anthem・範囲ダメージ",
+            "ru": "Azure Anthem · урон по области",
+            "zh-tw": "Azure Anthem・範圍傷害"
+          },
+          "measure": "area-damage",
+          "current": "397.85",
+          "next": "401.50",
+          "unit": "percent-atk"
+        },
+        {
+          "id": "undine-wild-hunt-10-11",
+          "name": {
+            "ko": "광기의 사냥 · 아군 후방 공격력",
+            "en": "Wild Hunt · allied back-row ATK",
+            "ja": "Wild Hunt・味方後列の攻撃力",
+            "ru": "Wild Hunt · ATK заднего ряда союзников",
+            "zh-tw": "Wild Hunt・友軍後排攻擊"
+          },
+          "measure": "allied-back-row-atk-bonus",
+          "current": "6.54",
+          "next": "6.60",
+          "unit": "percent-bonus"
+        }
+      ],
+      "additionalFacts": [
+        {
+          "id": "undine-ripple-bounce-level10",
+          "skillLevel": 10,
+          "value": "47.96",
+          "unit": "percent-atk",
+          "targets": 2,
+          "nextLevelValue": null
+        },
+        {
+          "id": "undine-azure-auto-bonus-10-11",
+          "skillLevels": [
+            10,
+            11
+          ],
+          "values": [
+            "15",
+            "15"
+          ],
+          "unit": "percent-bonus",
+          "target": "all-allies-auto-attack-damage",
+          "durationSeconds": 6
+        }
+      ],
+      "gear": {
+        "id": "undine-ocean-vox-level1-preview15",
+        "nameKo": "바다의 음성",
+        "existingEnglishIdentity": "Ocean Vox",
+        "equippedLevel": 1,
+        "previewLevel": 15,
+        "rows": [
+          {
+            "key": "heroATK",
+            "label": {
+              "ko": "영웅 공격",
+              "en": "Hero ATK",
+              "ja": "英雄攻撃",
+              "ru": "ATK героя",
+              "zh-tw": "英雄攻擊"
+            },
+            "current": "3.60K",
+            "preview": "23.76K"
+          },
+          {
+            "key": "heroDEF",
+            "label": {
+              "ko": "영웅 방어",
+              "en": "Hero DEF",
+              "ja": "英雄防御",
+              "ru": "DEF героя",
+              "zh-tw": "英雄防禦"
+            },
+            "current": "720",
+            "preview": "4.75K"
+          },
+          {
+            "key": "heroHP",
+            "label": {
+              "ko": "영웅 체력",
+              "en": "Hero HP",
+              "ja": "英雄体力",
+              "ru": "HP героя",
+              "zh-tw": "英雄生命"
+            },
+            "current": "240.0K",
+            "preview": "1.58M"
+          },
+          {
+            "key": "power",
+            "label": {
+              "ko": "전투력",
+              "en": "Power",
+              "ja": "戦力",
+              "ru": "Мощь",
+              "zh-tw": "戰力"
+            },
+            "current": "98.88K",
+            "preview": "750.45K"
+          }
+        ],
+        "effects": [
+          {
+            "level": 1,
+            "alliedFrontDEFBonusPercent": 10,
+            "alliedBackATKBonusPercent": 10
+          },
+          {
+            "level": 15,
+            "preview": true,
+            "alliedFrontDEFBonusPercent": 30,
+            "alliedBackATKBonusPercent": 30
+          },
+          {
+            "unlockEquipmentLevel": 10,
+            "trigger": "combat-skill-cast",
+            "allAlliesATKBonusPercent": 7.5,
+            "duration": "same-as-combat-skill-effect",
+            "preview": true
+          },
+          {
+            "unlockEquipmentLevel": 15,
+            "autoAttackSpeedBonusPercent": 10,
+            "autoAttackDamageBonusPercent": 10,
+            "preview": true
+          }
+        ],
+        "bonusesSeparated": false
+      }
+    },
+    {
+      "id": "lagnar",
+      "displayedSkillCap": 20,
+      "rows": [
+        {
+          "id": "lagnar-water-blade-10-11",
+          "name": {
+            "ko": "물의 칼날 공격 · 피해",
+            "en": "Water Blade Attack · damage",
+            "ja": "水の刃攻撃・ダメージ",
+            "ru": "Water Blade Attack · урон",
+            "zh-tw": "水之刃攻擊・傷害"
+          },
+          "measure": "target-damage",
+          "current": "98.10",
+          "next": "99.0",
+          "unit": "percent-damage"
+        },
+        {
+          "id": "lagnar-warship-10-11",
+          "name": {
+            "ko": "전함 지원 · 피해",
+            "en": "Warship Support · damage",
+            "ja": "戦艦支援・ダメージ",
+            "ru": "Warship Support · урон",
+            "zh-tw": "戰艦支援・傷害"
+          },
+          "measure": "path-damage",
+          "current": "436.0",
+          "next": "440.0",
+          "unit": "percent-damage"
+        },
+        {
+          "id": "lagnar-unyielding-10-11",
+          "name": {
+            "ko": "불패의 풍모 · 자신의 공격·방어",
+            "en": "Unyielding Bearing · own ATK/DEF",
+            "ja": "不敗の風格・自身の攻撃／防御",
+            "ru": "Unyielding Bearing · свои ATK/DEF",
+            "zh-tw": "不敗風範・自身攻擊／防禦"
+          },
+          "measure": "self-atk-def-bonus",
+          "current": "10.90",
+          "next": "11",
+          "unit": "percent-bonus"
+        }
+      ],
+      "additionalFacts": []
+    }
+  ],
+  "copy": {
+    "title": {
+      "ko": "스킬 Lv.10 → 11",
+      "en": "Skill Lv.10 → 11",
+      "ja": "スキルLv.10 → 11",
+      "ru": "Навыки: ур. 10 → 11",
+      "zh-tw": "技能Lv.10 → 11"
+    },
+    "headers": {
+      "ko": [
+        "스킬 · 효과",
+        "Lv.10",
+        "Lv.11 미리보기"
+      ],
+      "en": [
+        "Skill · effect",
+        "Lv.10",
+        "Lv.11 preview"
+      ],
+      "ja": [
+        "スキル・効果",
+        "Lv.10",
+        "Lv.11プレビュー"
+      ],
+      "ru": [
+        "Навык · эффект",
+        "Ур. 10",
+        "Предпросмотр ур. 11"
+      ],
+      "zh-tw": [
+        "技能・效果",
+        "Lv.10",
+        "Lv.11預覽"
+      ]
+    },
+    "condition": {
+      "ko": "Lv.11은 다음 레벨 미리보기입니다. 표시 상한 {cap}은 해당 성장 상태 기준이며 영웅의 전체 최대 스킬 레벨을 뜻하지 않습니다.",
+      "en": "Lv.11 values are next-level previews. The displayed cap of {cap} applies to that growth state, not the hero’s overall maximum skill level.",
+      "ja": "Lv.11は次のレベルのプレビューです。表示上限{cap}はその育成状態での値であり、英雄全体の最大スキルレベルではありません。",
+      "ru": "Значения ур. 11 — предпросмотр следующего уровня. Показанный предел {cap} относится к этому состоянию развития, а не к максимальному уровню навыков героя.",
+      "zh-tw": "Lv.11為下一級預覽。顯示上限{cap}僅適用於該成長狀態，並非英雄技能的最高等級。"
+    },
+    "undineCondition": {
+      "ko": "잔물결의 추가 2대상 피해는 Lv.10에서 각각 47.96% ATK이며 다음 레벨 값은 표시되지 않았습니다. 바다의 송가의 아군 전체 일반 공격 피해 증가는 두 레벨 모두 +15%, 6초입니다.",
+      "en": "Ripple Ricochet deals 47.96% ATK to each of 2 additional targets at Lv.10; their next-level coefficient is not displayed. Azure Anthem grants all allies +15% auto-attack damage for 6 seconds at both levels.",
+      "ja": "Ripple Ricochetの追加2体へのダメージはLv.10で各47.96% ATK。次のレベルの倍率は未表示です。Azure Anthemの味方全体への通常攻撃ダメージ増加は、両レベルとも+15%、6秒間です。",
+      "ru": "Ripple Ricochet на ур. 10 наносит каждой из 2 дополнительных целей 47,96% ATK; их коэффициент следующего уровня не показан. Azure Anthem на обоих уровнях даёт всем союзникам +15% урона автоатак на 6 секунд.",
+      "zh-tw": "Ripple Ricochet在Lv.10對額外2個目標各造成47.96% ATK傷害，未顯示下一級倍率。Azure Anthem在兩個等級均使全體友軍普攻傷害+15%，持續6秒。"
+    },
+    "gearTitle": {
+      "ko": "바다의 음성 · Lv.1 / Lv.15 미리보기",
+      "en": "Ocean Vox · Lv.1 / Lv.15 preview",
+      "ja": "Ocean Vox · Lv.1 / Lv.15プレビュー",
+      "ru": "Ocean Vox · ур. 1 / предпросмотр ур. 15",
+      "zh-tw": "Ocean Vox · Lv.1 / Lv.15預覽"
+    },
+    "gearHeaders": {
+      "ko": [
+        "장비 속성",
+        "Lv.1",
+        "Lv.15 미리보기"
+      ],
+      "en": [
+        "Equipment stat",
+        "Lv.1",
+        "Lv.15 preview"
+      ],
+      "ja": [
+        "装備属性",
+        "Lv.1",
+        "Lv.15プレビュー"
+      ],
+      "ru": [
+        "Характеристика снаряжения",
+        "Ур. 1",
+        "Предпросмотр ур. 15"
+      ],
+      "zh-tw": [
+        "裝備屬性",
+        "Lv.1",
+        "Lv.15預覽"
+      ]
+    },
+    "gearCondition": {
+      "ko": "장비 패널의 표시값입니다. Lv.15는 최고 레벨 미리보기이며, 영웅 총능력치가 아닙니다. 추가 보너스 적용 여부는 구분되지 않습니다.",
+      "en": "These are equipment-panel values. Lv.15 is the maximum-level preview, not the hero’s total stats. The panel does not separate any additional bonuses.",
+      "ja": "装備パネルの表示値です。Lv.15は最高レベルのプレビューで、英雄の総能力値ではありません。追加ボーナスの適用分は分離されていません。",
+      "ru": "Это значения панели снаряжения. Ур. 15 — предпросмотр максимального уровня, а не общие характеристики героя. Дополнительные бонусы отдельно не выделены.",
+      "zh-tw": "此處為裝備面板顯示值。Lv.15是最高等級預覽，並非英雄總屬性；面板未分開列出額外加成。"
+    },
+    "gearEffect": {
+      "ko": "바다의 찬가: Lv.1은 아군 전방 방어력·후방 공격력 각각 +10%, Lv.15 미리보기는 각각 +30%. Lv.10부터 전투 스킬 사용 시 아군 전체 공격력 +7.5%가 전투 스킬 효과와 같은 시간 동안 적용됩니다. Lv.15에서는 자동 공격 속도·피해가 각각 +10% 증가합니다.",
+      "en": "The exclusive skill grants allied front-row DEF and back-row ATK +10% each at Lv.1, or +30% each in the Lv.15 preview. From Lv.10, casting the combat skill gives all allies +7.5% ATK for the combat skill’s effect duration. Lv.15 adds +10% auto-attack speed and +10% auto-attack damage.",
+      "ja": "専用スキルはLv.1で味方前列の防御力と後列の攻撃力を各+10%、Lv.15プレビューでは各+30%。Lv.10から戦闘スキル使用時に味方全体の攻撃力が+7.5%となり、戦闘スキル効果と同じ時間持続します。Lv.15では通常攻撃速度・ダメージが各+10%上昇します。",
+      "ru": "Особый навык даёт переднему ряду союзников +10% DEF и заднему +10% ATK на ур. 1; в предпросмотре ур. 15 — по +30%. С ур. 10 применение боевого навыка даёт всем союзникам +7,5% ATK на время его эффекта. Ур. 15 добавляет +10% скорости автоатак и +10% их урона.",
+      "zh-tw": "專屬技能在Lv.1使友軍前排防禦、後排攻擊各+10%，Lv.15預覽則各+30%。Lv.10起施放戰鬥技能時，全體友軍攻擊+7.5%，持續時間與戰鬥技能效果相同。Lv.15再使普攻速度、普攻傷害各+10%。"
+    }
+  }
+}

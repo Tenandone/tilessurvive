@@ -15,7 +15,8 @@ check(calculate(db.datasets.gear.rows,1,80).total===1585500,'Gear full sum');
 let sourceSum=0;for(const row of db.datasets.gear.rows){sourceSum+=row.cost;check(sourceSum===row.sourceTotal,'Gear source cumulative '+row.to);}
 check(calculate(db.datasets.skillBook.rows,1,40).total===23505,'Preserved books sum');
 check(db.datasets.skillBook.rows.find(r=>r.to===30).cost===685,'Preserved disputed row');
-check(calculate(db.datasets.petExp.rows,85,87).error==='missing','Pet missing guard');
+check(calculate(db.datasets.petExp.rows,85,87).total===23700,'Starhorn confirmed 85 to 87 EXP');
+check(calculate(db.datasets.petExp.rows.map(r=>r.from===86?{...r,cost:null}:r),85,87).error==='missing','Missing-value guard remains active for incomplete input');
 check(calculate(db.datasets.petTraining.rows,0,4).total===1300,'Training total');
 check(calculate(db.datasets.exclusive.rows,1,15).total===360,'Exclusive total');
 db.reforge.forEach((r,i)=>check(Math.abs(r.values.reduce((a,b)=>a+b,0)-100)<1e-8,'Reforge distribution '+i));
@@ -36,4 +37,4 @@ for(const f of protectedFiles){
  if(f==='js/platform-affiliate.js'){const tracking=JSON.parse(execFileSync(process.execPath,[path.join(__dirname,'test-affiliate-301.js')],{cwd:root,encoding:'utf8'}));check(tracking.checks>=72&&tracking.errors.length===0,'Affiliate measurement contract');continue;}
  const old=execFileSync('git',['show','ef10abd:'+f],{cwd:root,maxBuffer:16000000}),now=fs.readFileSync(path.join(root,f));check(crypto.createHash('sha256').update(old).digest('hex')===crypto.createHash('sha256').update(now).digest('hex'),'Protected bytes '+f);
 }
-const result={checks,changedPages:manifest.changed.length,newPages:manifest.newPages.length,ledgerEntries:ledger.entries.length,newCostRows:79+54+1,missingPetRows:1,errors:[]};console.log(JSON.stringify(result,null,2));if(process.env.TS_DATABASE_RESULT)fs.writeFileSync(process.env.TS_DATABASE_RESULT,JSON.stringify(result,null,2));
+const result={checks,changedPages:manifest.changed.length,newPages:manifest.newPages.length,ledgerEntries:ledger.entries.length,petExpRows:db.datasets.petExp.rows.length,missingPetRows:db.datasets.petExp.rows.filter(r=>r.cost===null).length,errors:[]};console.log(JSON.stringify(result,null,2));if(process.env.TS_DATABASE_RESULT)fs.writeFileSync(process.env.TS_DATABASE_RESULT,JSON.stringify(result,null,2));

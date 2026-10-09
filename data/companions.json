@@ -15,8 +15,8 @@
       "ko": "스노우볼",
       "animal": "Baby seal",
       "animalKo": "물범",
-      "role": "Support",
-      "rarity": null,
+      "role": "Attacker",
+      "rarity": "R",
       "rarityEvidence": null,
       "skillKo": "공식 소개는 무작위 적에게 물 피해를 주는 효과를 설명합니다. 피해 계수는 미확인입니다.",
       "skill": "The announcement describes water damage to a random enemy. The coefficient is not confirmed."
@@ -27,7 +27,7 @@
       "ko": "도도",
       "animal": "Raccoon",
       "animalKo": "너구리",
-      "role": "Attacker",
+      "role": "Support",
       "rarity": "R",
       "rarityEvidence": "community"
     },
@@ -38,7 +38,7 @@
       "animal": "Turtle",
       "animalKo": "거북",
       "role": "Defender",
-      "rarity": null,
+      "rarity": "R",
       "rarityEvidence": null
     },
     {
@@ -59,7 +59,7 @@
       "animal": "Wild boar",
       "animalKo": "멧돼지",
       "role": "Attacker",
-      "rarity": null,
+      "rarity": "SR",
       "rarityEvidence": null
     },
     {
@@ -69,7 +69,7 @@
       "animal": "Shadow hound",
       "animalKo": "늑대",
       "role": "Attacker",
-      "rarity": null,
+      "rarity": "SR",
       "rarityEvidence": null
     },
     {

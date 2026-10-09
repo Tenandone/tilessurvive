@@ -5,6 +5,7 @@
 const fs=require('fs'),path=require('path'),os=require('os'),crypto=require('crypto'),{execFileSync}=require('child_process');
 const {parseHTML}=require('linkedom');
 const {expectedSkillText}=require('./ux-301-test-allowances');
+const delta=require('./foundation-40-test-allowances');
 const root=path.resolve(__dirname,'..'),languages=['ko','en','ja','ru','zh-tw'];
 const release='453953c6f6723c6332d19cc4d095995b31993527';
 const heroMessages={ko:'할인 충전 가능 여부 확인',en:'Check for top-up discounts',ja:'チャージ割引の有無を確認',ru:'Проверить скидки на пополнение','zh-tw':'查看儲值優惠是否適用'};
@@ -58,15 +59,15 @@ const docs=new Map(),load=file=>{if(!docs.has(file))docs.set(file,parse(fs.readF
 for(const old of baseline.pages){
  const file=path.join(root,old.relative);check(fs.existsSync(file),'URL removed '+old.route);if(!fs.existsSync(file))continue;counts.pages++;
  const d=load(file),baseURL=new URL(d.querySelector('base[href]')?.getAttribute('href')||old.route,'https://tilessurvive.net');
- check(JSON.stringify(metadata(d))===JSON.stringify(old.metadata),'SEO metadata changed '+old.route);
+ check(JSON.stringify(metadata(d))===JSON.stringify(delta.metadata(old.metadata,old.relative)),'SEO metadata changed beyond reviewed fields '+old.route);
  check(d.querySelectorAll('h1').length===1,'One H1 '+old.route);
  const ids=[...d.querySelectorAll('[id]')].map(n=>n.id);check(ids.length===new Set(ids).size,'Duplicate IDs '+old.route);
- const currentRows=new Set(rows(d).map(JSON.stringify));for(const row of old.numericRows){counts.numericRows++;counts.tableCells+=row.length;check(currentRows.has(JSON.stringify(row)),'Numeric row or unit changed '+old.route+' '+JSON.stringify(row).slice(0,200));}
- for(const [key,selector]of [['skills','main .ts-skill-body'],['stages','[data-stage-picker]'],['stats','main .stat-card,main .equipment-stat,main .ts-data-strip'],['identities','main .ts3-character-identity']]){const values=new Set([...d.querySelectorAll(selector)].map(txt));for(const value of old[key]){if(key==='skills')counts.skills++;const expected=key==='skills'?expectedSkillText(value,old.relative):value;check(values.has(expected),'Game '+key+' block changed '+old.route+' '+value.slice(0,140));}}
- const main=d.querySelector('main')?.cloneNode(true);main?.querySelectorAll('script,style').forEach(n=>n.remove());const currentQuantities=new Set([...main?.querySelectorAll('*')||[]].flatMap(n=>quantities(txt(n))));for(const q of old.quantities)check(currentQuantities.has(q),'Quantitative prose removed '+old.route+' '+q);
- const currentImages=new Set([...d.querySelectorAll('main img')].map(n=>n.getAttribute('src')));for(const src of old.images)check(currentImages.has(src),'Original game image removed '+old.route+' '+src);
+ const currentRows=new Set(rows(d).map(JSON.stringify));for(const row of delta.expectedRows(old.numericRows,old.relative)){counts.numericRows++;counts.tableCells+=row.length;check(currentRows.has(JSON.stringify(row)),'Numeric row or unit changed '+old.route+' '+JSON.stringify(row).slice(0,200));}
+ for(const [key,selector]of [['skills','main .ts-skill-body'],['stages','[data-stage-picker]'],['stats','main .stat-card,main .equipment-stat,main .ts-data-strip'],['identities','main .ts3-character-identity']]){const values=new Set([...d.querySelectorAll(selector)].map(txt));for(const value of old[key]){if(key==='skills')counts.skills++;const expected=delta.text(key==='skills'?expectedSkillText(value,old.relative):value,old.relative,key);check(values.has(expected),'Game '+key+' block changed '+old.route+' '+value.slice(0,140));}}
+ const main=d.querySelector('main')?.cloneNode(true);main?.querySelectorAll('script,style').forEach(n=>n.remove());const currentQuantities=new Set([...main?.querySelectorAll('*')||[]].flatMap(n=>quantities(txt(n))));for(const q of old.quantities)check(currentQuantities.has(q)||delta.quantity(q,old.relative,d),'Quantitative prose removed '+old.route+' '+q);
+ const currentImages=new Set([...d.querySelectorAll('main img')].map(n=>n.getAttribute('src')));for(const src of old.images)check(currentImages.has(delta.image(old.relative,src)),'Original or exact approved game image missing '+old.route+' '+src);
  const currentMainLinks=new Set([...d.querySelectorAll('main a[href]')].map(n=>n.getAttribute('href')));for(const href of old.mainLinks)check(currentMainLinks.has(href),'Original unique content destination removed '+old.route+' '+href);
- check(JSON.stringify(forms(d))===JSON.stringify(old.growthForms),'Calculator data changed '+old.route);counts.growthForms+=old.growthForms.length;
+ check(JSON.stringify(forms(d))===JSON.stringify(delta.forms(old.growthForms,old.relative)),'Calculator data changed beyond reviewed Starhorn rows '+old.route);counts.growthForms+=old.growthForms.length;
  if(old.couponApp)check(hash(d.querySelector('script[data-coupon-app]')?.textContent||'')===old.couponApp,'Coupon logic changed '+old.route);
  const banners=[...d.querySelectorAll('[data-lootbar-slot]')];counts.banners+=banners.length;
  for(const b of old.banners){counts.legacyBanners++;const n=banners.find(n=>n.getAttribute('data-lootbar-slot')===b.slot);check(n&&JSON.stringify(bannerInfo(n))===JSON.stringify(b),'Existing banner changed '+old.route+' '+b.slot);}
@@ -97,11 +98,15 @@ for(const old of baseline.pages){
  }
  for(const s of d.querySelectorAll('script[type="application/ld+json"]')){try{JSON.parse(s.textContent);check(true,'');}catch{check(false,'Invalid JSON-LD '+old.route);}}
 }
-for(const [relative,expected]of Object.entries(baseline.protectedFiles)){const file=path.join(root,relative);check(fs.existsSync(file),'Protected file removed '+relative);if(fs.existsSync(file)){
+for(const [relative,expected]of Object.entries(baseline.protectedFiles)){const file=path.join(root,relative);
+ if(delta.deletedDrafts[relative]){check(!fs.existsSync(file)&&expected===delta.deletedDrafts[relative],'Only exact backed-up draft removed '+relative);continue;}
+ check(fs.existsSync(file),'Protected file removed '+relative);if(fs.existsSync(file)){
  const bytes=fs.readFileSync(file);
  // New hero-only rules are appended after the complete original stylesheet.
  // Existing banner CSS, not merely selected declarations, remains protected.
- check(hash(relative==='css/lootbar-banner.css'?bytes.subarray(0,baseline.originalBannerStyleBytes):bytes)===expected,'Protected data/formula/artwork/export changed '+relative);
+ if(['data/companions.json','data/expansion-22/database.json','data/expansion-22/ledger.json','data/expansion-22/manifest.json'].includes(relative)){const before=JSON.parse(execFileSync('git',['show',release+':'+relative],{cwd:root,encoding:'utf8'}));check(require('util').isDeepStrictEqual(JSON.parse(bytes),delta.source(relative,before)),'Exact approved data/provenance fields '+relative);}
+ else if(relative==='sitemap.xml'){const before=execFileSync('git',['show',release+':sitemap.xml'],{cwd:root,encoding:'utf8'}),nodes=s=>s.match(/<url>[\s\S]*?<\/url>/g)||[],oldNodes=nodes(before),current=nodes(bytes.toString());for(const node of oldNodes)check(current.filter(n=>n===node).length===1,'Exact old sitemap node');const extras=current.filter(n=>!oldNodes.includes(n)).map(n=>n.match(/<loc>(.*?)<\/loc>/)[1]).sort(),approved=languages.flatMap(l=>['database/items','events/arms-race','events/daily-missions','heroes/dave'].map(r=>'https://tilessurvive.net/'+l+'/'+r+'/')).sort();check(JSON.stringify(extras)===JSON.stringify(approved),'Only twenty approved sitemap additions');}
+ else check(hash(relative==='css/lootbar-banner.css'?bytes.subarray(0,baseline.originalBannerStyleBytes):bytes)===expected,'Protected data/formula/artwork/export changed '+relative);
 }}
 check(counts.pages===473,'473 preserved language pages');check(counts.heroes===135,'135 tested canonical heroes');check(counts.legacyBanners===25,'25 original banner placements');check(counts.banners===160,'160 total contextual banner placements');
 const result={release,checks,counts,errors,scope:'Static fixed-release regression. Exact SEO, numerical table rows/cell units, skill and stat text, growth calculator rows, formula file hashes, artwork and old banner exports. All page resources, local links/fragments, duplicate IDs. Canonical hero banner count/order/referral/disclosure. Rendering, interaction timing and purchase attribution require separate evidence.'};

@@ -1,0 +1,596 @@
+{
+  "schemaVersion": 1,
+  "gameVersion": "2.6.200",
+  "build": 1512,
+  "observedAt": "2026-10-09",
+  "event": {
+    "id": "arms-race-training-level30",
+    "originalNameKo": "군비 경쟁 · 병사 육성",
+    "conditions": {
+      "competitionBracketMin": 30,
+      "competitionBracketMax": 30,
+      "server": null,
+      "region": null,
+      "activation": "observed-session-only"
+    },
+    "troopPoints": [
+      4,
+      7,
+      12,
+      15,
+      18,
+      22,
+      25,
+      30,
+      35,
+      40
+    ],
+    "pointsPerSpeedupMinute": 42,
+    "promotion": "difference-between-tiers",
+    "roundHours": 4,
+    "matchingHourUTC": 0,
+    "matchingGroupSize": 12,
+    "stages": [
+      {
+        "points": 50000,
+        "rewards": [
+          {
+            "item": "hero-skill-book",
+            "quantity": 10
+          },
+          {
+            "item": "arms-medal",
+            "quantity": 1
+          },
+          {
+            "item": "food-10k",
+            "quantity": 10
+          },
+          {
+            "item": "wood-10k",
+            "quantity": 10
+          },
+          {
+            "item": "metal-10k",
+            "quantity": 10
+          },
+          {
+            "item": "speedup-5m",
+            "quantity": 5
+          }
+        ]
+      },
+      {
+        "points": 150000,
+        "rewards": [
+          {
+            "item": "hero-skill-book",
+            "quantity": 10
+          },
+          {
+            "item": "arms-medal",
+            "quantity": 2
+          },
+          {
+            "item": "food-10k",
+            "quantity": 20
+          },
+          {
+            "item": "wood-10k",
+            "quantity": 20
+          },
+          {
+            "item": "metal-10k",
+            "quantity": 20
+          },
+          {
+            "item": "speedup-5m",
+            "quantity": 15
+          }
+        ]
+      },
+      {
+        "points": 300000,
+        "rewards": [
+          {
+            "item": "hero-skill-book",
+            "quantity": 20
+          },
+          {
+            "item": "arms-medal",
+            "quantity": 3
+          },
+          {
+            "item": "food-10k",
+            "quantity": 30
+          },
+          {
+            "item": "wood-10k",
+            "quantity": 30
+          },
+          {
+            "item": "metal-10k",
+            "quantity": 30
+          },
+          {
+            "item": "speedup-5m",
+            "quantity": 30
+          }
+        ]
+      }
+    ],
+    "evidenceIds": [
+      "ui-029",
+      "ui-031",
+      "ui-032",
+      "ui-034",
+      "ui-035",
+      "ui-036",
+      "ui-037",
+      "ui-054"
+    ]
+  },
+  "items": [
+    {
+      "id": "hero-skill-book",
+      "nameKo": "영웅 스킬북",
+      "category": "growth",
+      "use": "hero-skill",
+      "route": "database/skill-book/",
+      "sources": [
+        "arms-race-training"
+      ]
+    },
+    {
+      "id": "arms-medal",
+      "nameKo": "군비 메달",
+      "category": "event",
+      "use": "daily-goals",
+      "sources": [
+        "arms-race-training"
+      ]
+    },
+    {
+      "id": "food-10k",
+      "nameKo": "10k 식량",
+      "category": "resource",
+      "resource": "food",
+      "resourceAmount": 10000,
+      "use": "resource-item",
+      "sources": [
+        "arms-race-training"
+      ]
+    },
+    {
+      "id": "wood-10k",
+      "nameKo": "10k 목재",
+      "category": "resource",
+      "resource": "wood",
+      "resourceAmount": 10000,
+      "use": "resource-item",
+      "sources": [
+        "arms-race-training"
+      ]
+    },
+    {
+      "id": "metal-10k",
+      "nameKo": "10k 금속",
+      "category": "resource",
+      "resource": "metal",
+      "resourceAmount": 10000,
+      "use": "resource-item",
+      "sources": [
+        "arms-race-training"
+      ]
+    },
+    {
+      "id": "speedup-5m",
+      "nameKo": "5분 일반 가속",
+      "category": "speedup",
+      "minutes": 5,
+      "use": "queue-time",
+      "route": "tools/speedup-calculator/",
+      "sources": [
+        "arms-race-training",
+        "vip-speedup",
+        "fiend-crate-speedup"
+      ]
+    },
+    {
+      "id": "food-100k",
+      "nameKo": "100k 식량",
+      "category": "resource",
+      "resource": "food",
+      "resourceAmount": 100000,
+      "use": "resource-item",
+      "sources": [
+        "vip-food"
+      ]
+    },
+    {
+      "id": "undine-gear-fragment",
+      "nameKo": "바다의 음성 (조각)",
+      "category": "growth",
+      "use": "undine-gear",
+      "route": "heroes/undine/",
+      "sources": [
+        "hero-equipment-shop"
+      ]
+    },
+    {
+      "id": "pet-eggs",
+      "nameKo": "펫 알",
+      "nameOriginal": "Pet Eggs",
+      "sourceLocale": "en",
+      "category": "growth",
+      "use": "pet-hatch",
+      "route": "database/pet-system/",
+      "sources": [
+        "pet-intel-eggs"
+      ],
+      "useSourceIds": [
+        "blog-1173"
+      ]
+    },
+    {
+      "id": "reforge-hammer",
+      "nameKo": "재련 망치",
+      "nameOriginal": "Reforge Hammer",
+      "sourceLocale": "en",
+      "category": "growth",
+      "use": "gear-reforge",
+      "route": "database/gear-reforging/",
+      "sources": [
+        "fragment-recycling"
+      ],
+      "useSourceIds": [
+        "probability-en"
+      ]
+    },
+    {
+      "id": "advanced-recruitment-token",
+      "nameKo": "고급 모집 토큰",
+      "nameOriginal": "Advanced Recruitment Token",
+      "sourceLocale": "en",
+      "category": "growth",
+      "use": "advanced-recruitment",
+      "route": "heroes/",
+      "sources": [
+        "fiend-crate-token"
+      ],
+      "useSourceIds": [
+        "probability-en"
+      ]
+    },
+    {
+      "id": "speedup-20h",
+      "nameKo": "20시간 일반 가속",
+      "nameOriginal": "20h universal Speedup",
+      "sourceLocale": "en",
+      "category": "speedup",
+      "minutes": 1200,
+      "use": "queue-time",
+      "route": "tools/speedup-calculator/",
+      "sources": [
+        "battle-solo-speedup"
+      ]
+    }
+  ],
+  "offers": [
+    {
+      "id": "vip-food",
+      "shop": "vip",
+      "item": "food-100k",
+      "quantity": 1,
+      "cost": 20,
+      "currency": "diamonds",
+      "conditions": {
+        "accountLimit": null
+      },
+      "evidenceIds": [
+        "ui-023",
+        "ui-024"
+      ]
+    },
+    {
+      "id": "vip-speedup",
+      "shop": "vip",
+      "item": "speedup-5m",
+      "quantity": 1,
+      "cost": 60,
+      "currency": "diamonds",
+      "conditions": {
+        "accountLimit": null
+      },
+      "evidenceIds": [
+        "ui-023",
+        "ui-025"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "id": "ui-023",
+      "sha256": "d139817da8e2231eb45eb98f1b8c449dcf2e2312623c720083f4fafd99a86441",
+      "kind": "game-screen",
+      "scope": "VIP shop observed account only"
+    },
+    {
+      "id": "ui-024",
+      "sha256": "13927395ab5613680f43a78b772d52f85feb2c25245420a5a83f8c2b05b69f04",
+      "kind": "game-screen",
+      "scope": "100k food tooltip"
+    },
+    {
+      "id": "ui-025",
+      "sha256": "480c619d01abd236d94f39a395d69540e53f5ed645028bb5f2f363b6d00b4673",
+      "kind": "game-screen",
+      "scope": "5 minute general speedup tooltip"
+    },
+    {
+      "id": "ui-027",
+      "sha256": "393958200e7abcedd2e06ea39d4e119aa7caa5417fc56013465ebf4426c843cb",
+      "kind": "game-screen",
+      "scope": "Undine exclusive gear fragment source and use"
+    },
+    {
+      "id": "ui-029",
+      "sha256": "677449d60a584c59236c5ab3861248837eca9880b0db33621dd28f5fa278f858",
+      "kind": "game-screen",
+      "scope": "Training competition bracket level30"
+    },
+    {
+      "id": "ui-031",
+      "sha256": "1647974f36410fe163a1b0be58f81afb30a94eb53aff75d9e57a03d294c7860a",
+      "kind": "game-screen",
+      "scope": "Round duration and daily UTC matching"
+    },
+    {
+      "id": "ui-035",
+      "sha256": "9924a3b1a503a3696061e313bb66cb12390eb45a3dc613bdf7e79a50837d6286",
+      "kind": "game-screen",
+      "scope": "50000-point stage rewards"
+    },
+    {
+      "id": "ui-036",
+      "sha256": "869889450c8c22e876ba0cb12370a9da8ecbaa681210b050ffd698b51ebdd693",
+      "kind": "game-screen",
+      "scope": "150000-point stage rewards"
+    },
+    {
+      "id": "ui-037",
+      "sha256": "ef8986718d23c387f3e861720a21693c5fb026446b4c231cf4312a22b2b4ca50",
+      "kind": "game-screen",
+      "scope": "300000-point stage rewards"
+    },
+    {
+      "id": "ui-032",
+      "sha256": "409eabb3222cacde861100b8154eae5b5abab98acd01cac4396077c329d0a5df",
+      "kind": "game-screen",
+      "scope": "Unclaimed theme and daily-goal rewards"
+    },
+    {
+      "id": "ui-034",
+      "sha256": "0ba1de6fa4a410507ee97a60b1be3fb2fb58c3c7a86b5818ead42cb2f65d46a8",
+      "kind": "game-screen",
+      "scope": "Daily ranking reward condition"
+    },
+    {
+      "id": "ui-054",
+      "sha256": "88b327d251bf5d47f563bb3b0521d6b978bf5d4c5782dfc8fca5fcd9a915bace",
+      "kind": "game-screen",
+      "scope": "Tier1-10 training points and promotion difference rule"
+    },
+    {
+      "id": "ui-056",
+      "sha256": "7e05426f44c317cdae73dd5f59a0f00e9acf981f7b8f9c223ab62f34c2502119",
+      "kind": "game-screen",
+      "scope": "Diamond catalog upper offers and exploration coin shop label"
+    },
+    {
+      "id": "ui-057",
+      "sha256": "b1a76bb4a6eca8abc5d5cf247dbdfbc1fd83d2679fd2c6c8fee67a3094724c82",
+      "kind": "game-screen",
+      "scope": "Six displayed diamond offers, exploration coin costs and one-time purchase labels"
+    }
+  ],
+  "packageScope": {
+    "gameVersion": "2.6.200",
+    "build": 1512,
+    "observedAt": "2026-10-09",
+    "activation": "observed-account-only",
+    "currency": "exploration-coin",
+    "currencyNameKo": "탐색 코인",
+    "region": null,
+    "reset": null
+  },
+  "packages": [
+    {
+      "id": "diamonds-500",
+      "baseDiamonds": 500,
+      "bonusDiamonds": 0,
+      "bonusDisplay": "not-shown",
+      "coinCost": 99,
+      "currency": "exploration-coin",
+      "condition": "not-shown",
+      "evidenceIds": [
+        "ui-056",
+        "ui-057"
+      ]
+    },
+    {
+      "id": "diamonds-2500",
+      "baseDiamonds": 2500,
+      "bonusDiamonds": 0,
+      "bonusDisplay": "not-shown",
+      "coinCost": 499,
+      "currency": "exploration-coin",
+      "condition": "not-shown",
+      "evidenceIds": [
+        "ui-056",
+        "ui-057"
+      ]
+    },
+    {
+      "id": "diamonds-5000",
+      "baseDiamonds": 5000,
+      "bonusDiamonds": 0,
+      "bonusDisplay": "not-shown",
+      "coinCost": 999,
+      "currency": "exploration-coin",
+      "condition": "not-shown",
+      "evidenceIds": [
+        "ui-057"
+      ]
+    },
+    {
+      "id": "diamonds-10000",
+      "baseDiamonds": 10000,
+      "bonusDiamonds": 10000,
+      "bonusDisplay": "shown",
+      "coinCost": 1999,
+      "currency": "exploration-coin",
+      "condition": "one-time-purchase",
+      "evidenceIds": [
+        "ui-056",
+        "ui-057"
+      ]
+    },
+    {
+      "id": "diamonds-25000",
+      "baseDiamonds": 25000,
+      "bonusDiamonds": 25000,
+      "bonusDisplay": "shown",
+      "coinCost": 4999,
+      "currency": "exploration-coin",
+      "condition": "one-time-purchase",
+      "evidenceIds": [
+        "ui-056",
+        "ui-057"
+      ]
+    },
+    {
+      "id": "diamonds-50000",
+      "baseDiamonds": 50000,
+      "bonusDiamonds": 50000,
+      "bonusDisplay": "shown",
+      "coinCost": 9999,
+      "currency": "exploration-coin",
+      "condition": "one-time-purchase",
+      "evidenceIds": [
+        "ui-057"
+      ]
+    }
+  ],
+  "officialSources": [
+    {
+      "id": "blog-1173",
+      "url": "https://tilesurvivegame.com/en/blog/1173",
+      "title": "v2.6.100 Patch Notes",
+      "sha256": "cc26b4cc3c0b9be4dde509d6aed507dddf26d3eb9d600ee6a2eeb07b3f70f0e1",
+      "gameVersion": "2.6.100",
+      "checkedAt": "2026-10-10"
+    },
+    {
+      "id": "blog-1078",
+      "url": "https://tilesurvivegame.com/en/blog/1078",
+      "title": "v2.5.700 Patch Notes",
+      "sha256": "9fb33240c2dd55351d07dc4ec5d0bb2bc96c4b790f4175046b779505479dfcac",
+      "gameVersion": "2.5.700",
+      "checkedAt": "2026-10-10"
+    },
+    {
+      "id": "blog-1047",
+      "url": "https://tilesurvivegame.com/en/blog/1047",
+      "title": "v2.5.500 Patch Notes",
+      "sha256": "cee55f064c90a8c18a559c0b6e2f82e362b613b62bbe3fd69fdf13762714a273",
+      "gameVersion": "2.5.500",
+      "checkedAt": "2026-10-10"
+    },
+    {
+      "id": "blog-947",
+      "url": "https://tilesurvivegame.com/en/blog/947",
+      "title": "v2.4.900 Patch Notes",
+      "sha256": "4ab56930c70673fedf972301f91126613ad9a05344c4c3c4813fb457e3553c54",
+      "gameVersion": "2.4.900",
+      "checkedAt": "2026-10-10"
+    },
+    {
+      "id": "probability-en",
+      "url": "https://funplus.com/draw-probability-publicity/tiles-survive-en/",
+      "title": "In-Game Probability Disclosure",
+      "sha256": "39b0037832bb423303c72969e43353e791e4826a65a3a6b2d3067d219a4d8a2d",
+      "gameVersion": null,
+      "checkedAt": "2026-10-10"
+    }
+  ],
+  "itemSources": [
+    {
+      "id": "pet-intel-eggs",
+      "copyKey": "pet-intel-source",
+      "sourceIds": [
+        "blog-1173"
+      ]
+    },
+    {
+      "id": "fragment-recycling",
+      "copyKey": "recycling-source",
+      "sourceIds": [
+        "blog-1078"
+      ]
+    },
+    {
+      "id": "fiend-crate-token",
+      "copyKey": "fiend-token-source",
+      "sourceIds": [
+        "blog-1047"
+      ]
+    },
+    {
+      "id": "fiend-crate-speedup",
+      "copyKey": "fiend-speedup-source",
+      "sourceIds": [
+        "blog-1047"
+      ]
+    },
+    {
+      "id": "battle-solo-speedup",
+      "copyKey": "battle-speedup-source",
+      "sourceIds": [
+        "blog-1047"
+      ]
+    }
+  ],
+  "itemRules": {
+    "reforge": {
+      "basicCost": 1,
+      "advancedCost": 25,
+      "currencyItemId": "reforge-hammer",
+      "advancedUnlockAfterTotalReforges": 200,
+      "countScope": "all-gear",
+      "sourceIds": [
+        "probability-en"
+      ]
+    },
+    "gearCrate": {
+      "sameQualityRequired": true,
+      "openingRequired": false,
+      "sourceIds": [
+        "blog-947"
+      ]
+    }
+  },
+  "packageBenefits": [
+    {
+      "id": "monthly-pass-free-heal",
+      "copyKey": "monthly-pass-benefit",
+      "requires": "monthly-pass-active",
+      "dailyFreeHealLimitMultiplier": 3,
+      "baseLimit": null,
+      "price": null,
+      "sourceIds": [
+        "blog-1173"
+      ]
+    }
+  ]
+}

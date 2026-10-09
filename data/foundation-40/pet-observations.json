@@ -1,0 +1,351 @@
+{
+  "schemaVersion": 1,
+  "checked": "2026-10-09",
+  "gameVersion": "2.6.200",
+  "build": 1512,
+  "sources": [
+    {
+      "id": "pet-ui-039",
+      "kind": "game-screen",
+      "capture": "039-starhorn-level44-exp.png",
+      "sha256": "319fd374d7304d5925cbd7d4dac6505c111db00536aa8d1c9b007777ed3ecb20",
+      "gameVersion": "2.6.200",
+      "build": 1512,
+      "locale": "ko",
+      "condition": "pet-feeding"
+    },
+    {
+      "id": "pet-ui-040",
+      "kind": "game-screen",
+      "capture": "040-starhorn-training-start.png",
+      "sha256": "7d72b1155e57fe3fb8380aa565c14c54fd2588d35007a008d8935961773c9538",
+      "gameVersion": "2.6.200",
+      "build": 1512,
+      "locale": "ko",
+      "condition": "pet-training"
+    },
+    {
+      "id": "pet-ui-041",
+      "kind": "game-screen",
+      "capture": "041-starhorn-stage5-skill.png",
+      "sha256": "3c356313d97de09cce55dd123c63214056cb737852e961ebbf22294c45598cdc",
+      "gameVersion": "2.6.200",
+      "build": 1512,
+      "locale": "ko",
+      "condition": "locked-skill-tooltip"
+    },
+    {
+      "id": "pet-ui-042",
+      "kind": "game-screen",
+      "capture": "042-starhorn-buff-transfer.png",
+      "sha256": "e323dd41ed0b0bfb1e8a5d43604da3f5fb664386c0cd81d2f613211b0a649621",
+      "gameVersion": "2.6.200",
+      "build": 1512,
+      "locale": "ko",
+      "condition": "pet-buff-tooltip"
+    },
+    {
+      "id": "pet-ui-043",
+      "kind": "game-screen",
+      "capture": "043-shadow-level1-exp.png",
+      "sha256": "9f544b324b7240f959ddcfb5e4a4f494d573509e8e15454e15368770abd6da26",
+      "gameVersion": "2.6.200",
+      "build": 1512,
+      "locale": "ko",
+      "condition": "pet-feeding"
+    },
+    {
+      "id": "pet-ui-044",
+      "kind": "game-screen",
+      "capture": "044-hardhead-level1-exp.png",
+      "sha256": "aebb148487c405689034a1c6de0570ca5e895da72c73640f2e37db0904c4a7fe",
+      "gameVersion": "2.6.200",
+      "build": 1512,
+      "locale": "ko",
+      "condition": "pet-feeding"
+    },
+    {
+      "id": "pet-ui-045",
+      "kind": "game-screen",
+      "capture": "045-buckler-level1-exp.png",
+      "sha256": "12dae2247479a68461e5b766728d612192b48f4043399c8dc38cf58b95d0131b",
+      "gameVersion": "2.6.200",
+      "build": 1512,
+      "locale": "ko",
+      "condition": "pet-feeding"
+    },
+    {
+      "id": "pet-ui-046",
+      "kind": "game-screen",
+      "capture": "046-dodo-level1-exp.png",
+      "sha256": "ce39927a446b9d16133703aae8b01c5a91569967d6dfcb91f3a35c2e974287e4",
+      "gameVersion": "2.6.200",
+      "build": 1512,
+      "locale": "ko",
+      "condition": "pet-feeding"
+    },
+    {
+      "id": "pet-ui-047",
+      "kind": "game-screen",
+      "capture": "047-snowball-level1-exp.png",
+      "sha256": "09d41f01cc1daed012ad641ca13cf89d3ac1fdfaca4486de29fdf703cfdbd900",
+      "gameVersion": "2.6.200",
+      "build": 1512,
+      "locale": "ko",
+      "condition": "pet-feeding"
+    },
+    {
+      "id": "pet-ui-048",
+      "kind": "game-screen",
+      "capture": "048-snowball-role.png",
+      "sha256": "0c26c31ee1ef234d07a3842b79cea1a968ca5b4e83a0b863567466586068a1b4",
+      "gameVersion": "2.6.200",
+      "build": 1512,
+      "locale": "ko",
+      "condition": "role-tooltip"
+    },
+    {
+      "id": "pet-ui-049",
+      "kind": "game-screen",
+      "capture": "049-dodo-role.png",
+      "sha256": "6c050b43bea3ebb3428d4c3b472f82a31655418e1c4670c7fa7e6ea366f5a390",
+      "gameVersion": "2.6.200",
+      "build": 1512,
+      "locale": "ko",
+      "condition": "role-tooltip"
+    }
+  ],
+  "pets": [
+    {
+      "id": "starhorn",
+      "nameKo": "별뿔이",
+      "rarity": "SSR",
+      "status": "CONFIRMED",
+      "evidenceIds": [
+        "pet-ui-039"
+      ],
+      "role": null,
+      "roleStatus": "PRESERVE_EXISTING",
+      "expObservation": {
+        "level": 44,
+        "threshold": 2600,
+        "unit": "EXP",
+        "status": "CONFIRMED",
+        "scope": "Displayed threshold at this level; not every level of the curve",
+        "evidenceId": "pet-ui-039"
+      }
+    },
+    {
+      "id": "shadow",
+      "nameKo": "쉐도우",
+      "rarity": "SR",
+      "status": "CONFIRMED",
+      "evidenceIds": [
+        "pet-ui-043"
+      ],
+      "role": null,
+      "roleStatus": "PRESERVE_EXISTING",
+      "expObservation": {
+        "level": 1,
+        "threshold": 110,
+        "unit": "EXP",
+        "status": "CONFIRMED",
+        "scope": "Displayed threshold at this level; not every level of the curve",
+        "evidenceId": "pet-ui-043"
+      }
+    },
+    {
+      "id": "hardhead",
+      "nameKo": "철두",
+      "rarity": "SR",
+      "status": "CONFIRMED",
+      "evidenceIds": [
+        "pet-ui-044"
+      ],
+      "role": null,
+      "roleStatus": "PRESERVE_EXISTING",
+      "expObservation": {
+        "level": 1,
+        "threshold": 110,
+        "unit": "EXP",
+        "status": "CONFIRMED",
+        "scope": "Displayed threshold at this level; not every level of the curve",
+        "evidenceId": "pet-ui-044"
+      }
+    },
+    {
+      "id": "buckler",
+      "nameKo": "버클러",
+      "rarity": "R",
+      "status": "CONFIRMED",
+      "evidenceIds": [
+        "pet-ui-045"
+      ],
+      "role": null,
+      "roleStatus": "PRESERVE_EXISTING",
+      "expObservation": {
+        "level": 1,
+        "threshold": 110,
+        "unit": "EXP",
+        "status": "CONFIRMED",
+        "scope": "Displayed threshold at this level; not every level of the curve",
+        "evidenceId": "pet-ui-045"
+      }
+    },
+    {
+      "id": "dodo",
+      "nameKo": "도도",
+      "rarity": "R",
+      "status": "CONFIRMED",
+      "evidenceIds": [
+        "pet-ui-046",
+        "pet-ui-049"
+      ],
+      "role": "Support",
+      "roleStatus": "CONFIRMED",
+      "expObservation": {
+        "level": 1,
+        "threshold": 110,
+        "unit": "EXP",
+        "status": "CONFIRMED",
+        "scope": "Displayed threshold at this level; not every level of the curve",
+        "evidenceId": "pet-ui-046"
+      }
+    },
+    {
+      "id": "snowball",
+      "nameKo": "스노우볼",
+      "rarity": "R",
+      "status": "CONFIRMED",
+      "evidenceIds": [
+        "pet-ui-047",
+        "pet-ui-048"
+      ],
+      "role": "Attacker",
+      "roleStatus": "CONFIRMED",
+      "expObservation": {
+        "level": 1,
+        "threshold": 110,
+        "unit": "EXP",
+        "status": "CONFIRMED",
+        "scope": "Displayed threshold at this level; not every level of the curve",
+        "evidenceId": "pet-ui-047"
+      }
+    }
+  ],
+  "corrections": [
+    {
+      "id": "snowball",
+      "field": "role",
+      "from": "Support",
+      "to": "Attacker",
+      "status": "CONFIRMED",
+      "evidenceIds": [
+        "pet-ui-048"
+      ]
+    },
+    {
+      "id": "dodo",
+      "field": "role",
+      "from": "Attacker",
+      "to": "Support",
+      "status": "CONFIRMED",
+      "evidenceIds": [
+        "pet-ui-049"
+      ]
+    }
+  ],
+  "feeding": {
+    "expValues": [
+      50,
+      100,
+      200,
+      500
+    ],
+    "status": "CONFIRMED",
+    "scope": "Displayed food EXP labels; no consumption, overflow or bonus behavior inferred",
+    "evidenceIds": [
+      "pet-ui-039"
+    ]
+  },
+  "training": {
+    "observedPetId": "starhorn",
+    "fromStage": 0,
+    "toStage": 1,
+    "fragmentCostPerAction": 5,
+    "progressPercentPerAction": 5,
+    "actionsFromZeroProgress": 20,
+    "totalFragmentsFromZeroProgress": 100,
+    "currentBuffPercent": 25,
+    "targetBuffPercent": 40,
+    "status": "CONFIRMED",
+    "evidenceIds": [
+      "pet-ui-040"
+    ]
+  },
+  "starhornSkill": {
+    "nameKo": "별빛의 축복",
+    "effectPercent": 10,
+    "effect": "pet_attributes",
+    "unlocksAtTrainingStage": 5,
+    "status": "CONFIRMED",
+    "scope": "Locked skill tooltip; does not assert currently active effect",
+    "evidenceIds": [
+      "pet-ui-041"
+    ]
+  },
+  "buffTransfer": {
+    "targets": "all_heroes",
+    "observedPercent": 25,
+    "status": "CONFIRMED",
+    "scope": "Observed Starhorn state; no multi-pet aggregation or rounding formula inferred",
+    "evidenceIds": [
+      "pet-ui-042"
+    ]
+  },
+  "existingExpDataset": {
+    "id": "petExp",
+    "confirmedDisplayedPoint": {
+      "petId": "starhorn",
+      "level": 44,
+      "threshold": 2600
+    },
+    "publicScopePetIds": [
+      "starhorn"
+    ],
+    "newCurveRowsApproved": true,
+    "preserveAllExistingNonNullCosts": true
+  },
+  "calculatorPolicy": {
+    "modifyExistingFormulas": false,
+    "addUnconfirmedCosts": false,
+    "enableOtherPetCurves": false
+  },
+  "localizedScope": {
+    "ko": "현재 경험치 표는 별뿔이의 성장 구간에 해당합니다. 다른 등급의 펫에는 적용하지 마세요.",
+    "en": "The current EXP table covers Starhorn growth. Do not apply it to pets of other rarities.",
+    "ja": "現在の経験値表はStarhornの成長区間に対応しています。他のレアリティのペットには適用しないでください。",
+    "ru": "Текущая таблица опыта относится к развитию Starhorn. Не применяйте её к питомцам другой редкости.",
+    "zh-tw": "目前經驗表適用於Starhorn的成長區間，請勿套用至其他稀有度的寵物。"
+  },
+  "skillNameCorrections": [
+    {
+      "petId": "starhorn",
+      "locale": "ko",
+      "from": "별의 축복",
+      "to": "별빛의 축복",
+      "status": "CONFIRMED",
+      "evidenceId": "pet-ui-041"
+    }
+  ],
+  "teamRule": {
+    "sourceURL": "https://tilesurvivegame.com/en/blog/1134",
+    "text": {
+      "ko": "한 부대에는 영웅 자리를 대체하지 않고 펫 1마리를 편성할 수 있습니다.",
+      "en": "Each team can bring one pet without replacing a hero.",
+      "ja": "各部隊には、英雄の枠を使わずにペットを1匹編成できます。",
+      "ru": "В каждый отряд можно взять одного питомца, не заменяя им героя.",
+      "zh-tw": "每支部隊可編入1隻寵物，不會取代英雄的位置。"
+    }
+  }
+}
