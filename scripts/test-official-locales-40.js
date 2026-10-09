@@ -4,6 +4,7 @@ const {execFileSync}=require('child_process'),{parseHTML}=require('linkedom');
 const {entries,replaceLabels}=require('./lib/official-locales-40');
 const root=path.resolve(__dirname,'..'),release='9a931a56a557686f84953d8854a9af2a41adf75d';
 const langs=['ko','en','ja','ru','zh-tw'];
+const vm=require('node:vm');
 test('official labels cover existing 28 heroes and 7 pets in five locales',()=>{
  for(const lang of langs)for(const e of entries(lang)){
   const file=e.route.slice(1)+'index.html',d=parseHTML(fs.readFileSync(path.join(root,file),'utf8')).document;
@@ -44,4 +45,33 @@ test('short labels never replace substrings or repeatedly expand names',()=>{
  assert.equal(replaceLabels('Roy Royal Roy42 (Roy)',[['Roy','ロイ']]),'ロイ Royal Roy42 (ロイ)');
  const pairs=[['Undine','ウンディーネ']];assert.equal(replaceLabels(replaceLabels('Undine',pairs),pairs),'ウンディーネ');
  assert.equal(replaceLabels('100.25% ATK',pairs),'100.25% ATK');
+});
+test('every generated changed client uses a new cache version across all five locales',()=>{
+ const versions={'/js/platform.js':'5','/js/platform-search.js':'3','/js/product-30.js':'2','/js/foundation-40.js':'2'},counts=Object.fromEntries(Object.keys(versions).map(k=>[k,0]));
+ const walk=dir=>fs.readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(path.join(dir,e.name)):[path.join(dir,e.name)]);
+ for(const lang of langs)for(const file of walk(path.join(root,lang)).filter(f=>f.endsWith('.html'))){const d=parseHTML(fs.readFileSync(file,'utf8')).document;for(const script of d.querySelectorAll('script[src]')){const url=new URL(script.getAttribute('src'),'https://tilessurvive.net');if(versions[url.pathname]){assert.equal(url.searchParams.get('v'),versions[url.pathname],file+' '+url.pathname);counts[url.pathname]++;}}}
+ for(const [file,count] of Object.entries(counts))assert.ok(count>=5,file+' used in all locales');
+});
+async function runSearchClient(kind,lang,items,query){
+ const header=kind==='header',markup=header?'<form class="ts3-search-form"><input name="q"></form><script id="ts3-copy" type="application/json">{"allResults":"All results"}</script>':'<input id="siteSearchInput"><div id="siteSearchCount"></div><div id="siteSearchResults"></div>';
+ const {document,window}=parseHTML(`<html data-lang="${lang}"><head></head><body>${markup}</body></html>`),requests=[];
+ window.TS_COPY={[lang]:{results:'results',loading:'loading',noResults:'no results',error:'error',filter:'filter',sort:'sort',all:'all',original:'original',name:'name'}};
+ const input=document.querySelector('input');
+ vm.runInNewContext(fs.readFileSync(path.join(root,'js',header?'product-30.js':'platform-search.js'),'utf8'),{document,window,URL,URLSearchParams,location:{search:'?q='+encodeURIComponent(query)},setTimeout,clearTimeout,addEventListener:()=>{},fetch:async(url,options)=>{requests.push({url,cache:options?.cache});return{ok:true,json:async()=>({items})};}});
+ if(header){input.value=query;input.dispatchEvent(new window.Event('focus'));}
+ await new Promise(resolve=>setImmediate(resolve));
+ const links=()=>[...document.querySelectorAll(header?'.ts3-search-results a:not(.ts3-search-all)':'#siteSearchResults a')].map(a=>a.getAttribute('href'));
+ assert.deepEqual(requests,[{url:'/data/search-index.json',cache:'no-cache'}],kind+' revalidates index');
+ return {document,window,input,links,requests};
+}
+for(const kind of ['header','page'])test(kind+' search executes alias-only matching, language filtering and empty-state recovery',async()=>{
+ for(const lang of langs){
+  const query='old-name-'+lang,route='/'+lang+'/heroes/freya/';
+  const items=[{language:lang,title:'Current official name',description:'Current description',type:'heroes',url:route,aliases:query},{language:lang==='ko'?'en':'ko',title:'Other language',description:'',type:'heroes',url:'/other/',aliases:query}];
+  const state=await runSearchClient(kind,lang,items,query);assert.deepEqual(state.links(),[route],kind+' alias-only '+lang);
+  state.input.value='unmatched-search-term';state.input.dispatchEvent(new state.window.Event(kind==='header'?'focus':'input'));await new Promise(resolve=>setImmediate(resolve));assert.deepEqual(state.links(),[]);
+  state.input.value=query;state.input.dispatchEvent(new state.window.Event(kind==='header'?'focus':'input'));await new Promise(resolve=>setImmediate(resolve));assert.deepEqual(state.links(),[route]);assert.equal(state.requests.length,1,'One revalidated index per document');
+ }
+ const actual=JSON.parse(fs.readFileSync(path.join(root,'data/search-index.json'))).items;
+ const korean=await runSearchClient(kind,'ko',actual,'프레이아');assert.deepEqual(korean.links(),['/ko/heroes/freya/'],'Actual returning-user Korean alias');
 });

@@ -60,7 +60,7 @@ for(const p of pages){const{d,lang,route}=p,c=C[lang],t=I[lang],main=d.querySele
  // Real page identity only; no fabricated ratings, prices, or review schema.
  if(!/noindex/.test(d.querySelector('meta[name=robots]')?.content||'')){const canonical=d.querySelector('link[rel=canonical]')?.href;const schema={'@context':'https://schema.org','@type':'WebPage','@id':canonical+'#webpage',url:canonical,name:d.querySelector('title')?.textContent,inLanguage:lang,description:d.querySelector('meta[name=description]')?.content,isPartOf:{'@type':'WebSite',name:'TilesSurvive.net',url:'https://tilessurvive.net/'}};d.head.append(node(d,`<script type="application/ld+json" data-product-30>${JSON.stringify(schema).replaceAll('<','\\u003c')}</script>`));}
  d.head.append(node(d,'<link data-product-30 rel="stylesheet" href="/css/product-30.css?v=301">'));
- d.body.append(node(d,`<script data-product-30 type="application/json" id="ts3-copy">${JSON.stringify({allResults:c.allResults,searchHint:c.searchHint,backTop:c.backTop}).replaceAll('<','\\u003c')}</script><script data-product-30 src="/js/product-30.js?v=1" defer></script>`));
+ d.body.append(node(d,`<script data-product-30 type="application/json" id="ts3-copy">${JSON.stringify({allResults:c.allResults,searchHint:c.searchHint,backTop:c.backTop}).replaceAll('<','\\u003c')}</script><script data-product-30 src="/js/product-30.js?v=2" defer></script>`));
  fs.writeFileSync(p.file,('<!DOCTYPE html>\n'+d.documentElement.outerHTML+'\n').replace(/[ \t]+$/gm,''));
 }
 console.log('Product 3.0: shared shell, home, editorial navigation, search and inactive ad inventory on '+pages.length+' pages.');

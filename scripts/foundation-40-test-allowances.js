@@ -142,12 +142,13 @@ function reviewedRows(values,file,complete){
 }
 function reviewedScript(file,baseline){
  const edits={
-  'js/platform-search.js':['i.title + " " + i.description + " " + i.type + " " + i.url','i.title + " " + i.description + " " + (i.aliases || \'\') + " " + i.type + " " + i.url'],
-  'js/platform.js':['i.textContent.normalize("NFKC").toLocaleLowerCase(lang).includes(q)','(i.textContent + \' \' + (i.dataset.searchAliases || \'\')).normalize("NFKC").toLocaleLowerCase(lang).includes(q)'],
-  'js/site-search.js':['${item.title} ${item.description} ${item.type} ${item.url}','${item.title} ${item.description} ${item.aliases || \'\'} ${item.type} ${item.url}']
+  'js/platform-search.js':[['i.title + " " + i.description + " " + i.type + " " + i.url','i.title + " " + i.description + " " + (i.aliases || \'\') + " " + i.type + " " + i.url'],['fetch("/data/search-index.json")','fetch("/data/search-index.json", { cache: "no-cache" })']],
+  'js/platform.js':[['i.textContent.normalize("NFKC").toLocaleLowerCase(lang).includes(q)','(i.textContent + \' \' + (i.dataset.searchAliases || \'\')).normalize("NFKC").toLocaleLowerCase(lang).includes(q)']],
+  'js/site-search.js':[['${item.title} ${item.description} ${item.type} ${item.url}','${item.title} ${item.description} ${item.aliases || \'\'} ${item.type} ${item.url}']],
+  'js/product-30.js':[["fetch('/data/search-index.json')","fetch('/data/search-index.json',{cache:'no-cache'})"],["i.title+' '+i.description+' '+i.url","i.title+' '+i.description+' '+(i.aliases||'')+' '+i.url"]]
  };
- const pair=edits[file];if(!pair)return null;
- assert.equal(baseline.split(pair[0]).length-1,1,'Exact immutable search expression: '+file);
- return baseline.replace(...pair);
+ const pairs=edits[file];if(!pairs)return null;
+ for(const pair of pairs){assert.equal(baseline.split(pair[0]).length-1,1,'Exact immutable search expression: '+file);baseline=baseline.replace(...pair);}
+ return baseline;
 }
 module.exports={image,metadata:(v,f)=>localized(metadata(v,f),f),text:(v,f,k)=>localized(text(v,f,k),f),forms,expectedRows:reviewedRows,source,quantity,deletedDrafts,petHub,growthSource,arcadia,petChanges,localized,identity,identitiesFromGit,petExpScope,petExpRows,reviewedScript};

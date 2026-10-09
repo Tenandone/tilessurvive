@@ -95,7 +95,7 @@ function page(lang,slug,title,description,content){
  const main=d.querySelector('main');main.className='container page-main ts3-data-page ts3-editorial ts40-page';main.innerHTML=content;
  d.querySelectorAll('script[type="application/ld+json"]').forEach(n=>n.remove());
  d.head.append(node(d,`<script type="application/ld+json">${JSON.stringify({'@context':'https://schema.org','@type':'WebPage',name:title,url,inLanguage:lang,description,isPartOf:{'@type':'WebSite',name:'TilesSurvive.net',url:'https://tilessurvive.net/'}}).replaceAll('<','\\u003c')}</script><link rel="stylesheet" href="/css/foundation-40.css?v=1">`));
- d.body.append(node(d,`<script type="application/json" id="foundation-data">${JSON.stringify({event:D.event,copy:C[lang],packages:slug==='database/items'?D.packages:undefined}).replaceAll('<','\\u003c')}</script><script src="/js/foundation-40-math.js?v=1" defer></script><script src="/js/foundation-40.js?v=1" defer></script>`));
+ d.body.append(node(d,`<script type="application/json" id="foundation-data">${JSON.stringify({event:D.event,copy:C[lang],packages:slug==='database/items'?D.packages:undefined}).replaceAll('<','\\u003c')}</script><script src="/js/foundation-40-math.js?v=1" defer></script><script src="/js/foundation-40.js?v=2" defer></script>`));
  save(path.join(root,lang,slug,'index.html'),'<!DOCTYPE html>\n'+d.documentElement.outerHTML+'\n');
 }
 for(const lang of langs){

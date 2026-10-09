@@ -77,7 +77,7 @@
   async function load() {
     if (count) count.textContent = t.loading;
     try {
-      const r = await fetch("/data/search-index.json");
+      const r = await fetch("/data/search-index.json", { cache: "no-cache" });
       if (!r.ok) throw Error("index");
       const data = await r.json();
       index = (data.items || [])
