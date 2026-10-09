@@ -966,3 +966,6 @@ html.ts-platform main span[aria-current="page"] {
 html.ts-platform #aLineK {
   color: #536660;
 }
+
+html.ts-platform .ts-skill .ability-card__thumb { display: none; }
+html.ts-platform .ability-grid { align-items: start; }

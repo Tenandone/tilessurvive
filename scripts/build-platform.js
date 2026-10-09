@@ -157,7 +157,7 @@ for (const p of pages) {
     'script[src="/js/layout.js"],script[src="/js/site-search.js"],script[src="/js/affiliate-tracking.js"],link[href^="/css/platform.css"],script[data-platform]',
   ).forEach((n) => n.remove());
   d.head.appendChild(
-    make('<link rel="stylesheet" href="/css/platform.css?v=2">'),
+    make('<link rel="stylesheet" href="/css/platform.css?v=3">'),
   );
   for (const style of [...d.querySelectorAll("style")]) {
     const css = style.textContent;
