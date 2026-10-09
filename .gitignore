@@ -1,6 +1,2 @@
 blue/
 data/official-updates-detected.json
-node_modules/
-.env
-.env.*
-test-results/

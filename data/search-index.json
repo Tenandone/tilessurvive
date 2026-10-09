@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T08:06:59.535Z",
+  "generatedAt": "2026-09-18T12:16:58.077Z",
   "itemCount": 400,
   "items": [
     {
@@ -396,6 +396,13 @@
     },
     {
       "language": "en",
+      "type": "top-up",
+      "title": "Tile Survive Top-Up - Save Up to 22% | TilesSurvive.net",
+      "description": "Compare Tile Survive top-up discounts, twice-monthly rewards, cumulative coupons, and the LootBar partner process.",
+      "url": "/en/top-up/"
+    },
+    {
+      "language": "en",
       "type": "building",
       "title": "Tiles Survive Barracks | Upgrade Costs and Troop Unlocks | TilesSurvive.net",
       "description": "A detailed page for Tiles Survive Barracks upgrade costs, upgrade time, prerequisite buildings, and troop unlock levels.",
@@ -440,14 +447,14 @@
       "language": "en",
       "type": "guide",
       "title": "Tiles Survive Discount Top-Up Guide | Self Top-Up Steps, Requirements, 2FA, Coupon Info | TilesSurvive.net",
-      "description": "Check applicable product, region and currency conditions on LootBar.",
+      "description": "This guide explains everything you need to check before using self top-up for Tiles Survive, including account requirements, direct Google or Facebook login, 2FA setup, Google Play Games login not supported, the actual payment flow, and coupon usarge.",
       "url": "/en/guides/discount-topup/"
     },
     {
       "language": "en",
       "type": "guide",
       "title": "Tiles Survive Discount Top-Up Promotion Guide | Exclusive Link Benefits, Monthly Recharge Coupons, New User Code | TilesSurvive.net",
-      "description": "Check applicable product, region and currency conditions on LootBar.",
+      "description": "This is the Tiles Survive discount top-up promotion guide. If you join and top up through the exclusive link, extra coupons and monthly cumulative recharge benefits are tracked automatically. New users can also receive extra rewards with code #s4qU.",
       "url": "/en/guides/discount-topup-promotion/"
     },
     {
@@ -519,13 +526,6 @@
       "title": "Tony | Tiles Survive Hero | TilesSurvive.net",
       "description": "Detailed page for Tony in Tiles Survive. View hero introduction, battle traits, max level and 10-star stats, star bonus, skills, and signature weapon in one place.",
       "url": "/en/heroes/tony/"
-    },
-    {
-      "language": "en",
-      "type": "top-up",
-      "title": "Top-up guide | TilesSurvive.net",
-      "description": "Check applicable product, region and currency conditions on LootBar.",
-      "url": "/en/top-up/"
     },
     {
       "language": "en",
@@ -732,6 +732,13 @@
     },
     {
       "language": "ja",
+      "type": "top-up",
+      "title": "Tiles Survive チャージ - 最大22%割引 | TilesSurvive.net",
+      "description": "Tiles Surviveのチャージ割引、月2回のリワード、累積クーポン、LootBarの提携手順を確認できます。",
+      "url": "/ja/top-up/"
+    },
+    {
+      "language": "ja",
       "type": "tool",
       "title": "Tiles Survive ツール集 | イベントヘルパー・報酬検索・計算機 | TilesSurvive.net",
       "description": "Tiles Survive のイベントヘルパー、加速計算機、報酬検索、データベースリンクをまとめたツールハブです。",
@@ -902,14 +909,14 @@
       "language": "ja",
       "type": "guide",
       "title": "タイルサバイバル 割引チャージガイド | セルフチャージ方法、利用条件、2段階認証、コード案内 | TilesSurvive.net",
-      "description": "商品・地域・通貨の適用条件はLootBarで確認してください。",
+      "description": "タイルサバイバルのセルフチャージ前に必ず確認したい利用条件、GoogleまたはFacebookアカウント連携、2段階認証の確認方法、Google Play Games連携不可の案内、実際のチャージ手順、コード入力方法までまとめて確認できるガイドです。",
       "url": "/ja/guides/discount-topup/"
     },
     {
       "language": "ja",
       "type": "guide",
       "title": "タイルサバイバル 割引チャージプロモーションガイド | 専用リンク追加特典、月間累計チャージコード、新規登録コード案内 | TilesSurvive.net",
-      "description": "商品・地域・通貨の適用条件はLootBarで確認してください。",
+      "description": "タイルサバイバルの割引チャージプロモーションガイドです。専用リンクからアクセスすると追加コードと月間累計チャージ特典が自動集計され、新規登録者はコード #s4qU の追加特典も受け取れます。",
       "url": "/ja/guides/discount-topup-promotion/"
     },
     {
@@ -981,13 +988,6 @@
       "title": "タイルズサバイバル ベヒーモス一覧 | TilesSurvive.net",
       "description": "タイルズサバイバルのベヒーモス一覧ページです。現在確認されているベヒーモスをひと目で見やすく整理しました。",
       "url": "/ja/behemoths/"
-    },
-    {
-      "language": "ja",
-      "type": "top-up",
-      "title": "チャージ案内 | TilesSurvive.net",
-      "description": "商品・地域・通貨の適用条件はLootBarで確認してください。",
-      "url": "/ja/top-up/"
     },
     {
       "language": "ja",
@@ -1467,13 +1467,6 @@
     },
     {
       "language": "ko",
-      "type": "top-up",
-      "title": "충전 안내 | TilesSurvive.net",
-      "description": "상품·지역·통화별 적용 조건을 LootBar에서 확인하세요.",
-      "url": "/ko/top-up/"
-    },
-    {
-      "language": "ko",
       "type": "heroe",
       "title": "키론 | 타일서바이벌 영웅 | TilesSurvive.net",
       "description": "타일서바이벌 영웅 키론 상세 페이지입니다. SSR 영웅 기준으로 영웅 소개, 전투 특성, 최고 레벨 및 성급 속성, 성급 보너스, 스킬, 전용 장비를 한눈에 정리했습니다.",
@@ -1593,16 +1586,23 @@
     },
     {
       "language": "ko",
+      "type": "top-up",
+      "title": "타일서바이벌 충전 - 최대 22% 할인 | TilesSurvive.net",
+      "description": "타일서바이벌 충전 할인, 월 2회 리워드, 누적 쿠폰과 LootBar 제휴 충전 절차를 확인하세요.",
+      "url": "/ko/top-up/"
+    },
+    {
+      "language": "ko",
       "type": "guide",
       "title": "타일서바이벌 할인충전 가이드 | 셀프충전 방법, 이용 조건, 2차인증, 쿠폰 안내 | TilesSurvive.net",
-      "description": "상품·지역·통화별 적용 조건을 LootBar에서 확인하세요.",
+      "description": "타일서바이벌 셀프충전 전 꼭 확인해야 할 이용 조건, 구글 또는 페이스북 계정 연동, 2차인증 확인 방법, 구글플레이게임즈 연동 불가 안내, 실제 충전 순서, 쿠폰 입력 방법까지 한 번에 정리한 가이드입니다.",
       "url": "/ko/guides/discount-topup/"
     },
     {
       "language": "ko",
       "type": "guide",
       "title": "타일서바이벌 할인충전 프로모션 가이드 | 전용 링크 추가 혜택, 월 누적 충전 쿠폰, 신규가입 코드 안내 | TilesSurvive.net",
-      "description": "상품·지역·통화별 적용 조건을 LootBar에서 확인하세요.",
+      "description": "타일서바이벌 할인충전 프로모션 가이드입니다. 전용 링크로 접속하면 추가 쿠폰과 월 누적 충전 혜택이 자동 집계되며, 신규가입자는 코드 #s4qU 추가 혜택도 받을 수 있습니다.",
       "url": "/ko/guides/discount-topup-promotion/"
     },
     {
@@ -1931,14 +1931,14 @@
       "language": "ru",
       "type": "guide",
       "title": "Гайд по промо скидочного пополнения Tiles Survive | Дополнительные бонусы по специальной ссылке, ежемесячные накопительные купоны и код для новых аккаунтов | TilesSurvive.net",
-      "description": "Проверьте условия товара, региона и валюты на LootBar.",
+      "description": "Гайд по промо скидочного пополнения Tiles Survive. Если заходить по специальной ссылке, дополнительные купоны и ежемесячные накопительные бонусы за пополнение учитываются автоматически. Для новых аккаунтов также доступен дополнительный бонус по коду #s4qU.",
       "url": "/ru/guides/discount-topup-promotion/"
     },
     {
       "language": "ru",
       "type": "guide",
       "title": "Гайд по скидочному пополнению Tiles Survive | Самостоятельное пополнение, условия использования, двухэтапная аутентификация и купоны | TilesSurvive.net",
-      "description": "Проверьте условия товара, региона и валюты на LootBar.",
+      "description": "Полный гайд по самостоятельному пополнению Tiles Survive. Здесь в одном месте собраны условия использования перед оплатой, привязка Google или Facebook, проверка двухэтапной аутентификации, ограничения для Google Play Games, реальный порядок пополнения и способ ввода купонов.",
       "url": "/ru/guides/discount-topup/"
     },
     {
@@ -2084,8 +2084,8 @@
     {
       "language": "ru",
       "type": "top-up",
-      "title": "Пополнение | TilesSurvive.net",
-      "description": "Проверьте условия товара, региона и валюты на LootBar.",
+      "title": "Пополнение Tile Survive - скидка до 22% | TilesSurvive.net",
+      "description": "Сравните скидки на Tile Survive, награды дважды в месяц, накопительные купоны и процесс LootBar.",
       "url": "/ru/top-up/"
     },
     {
@@ -2603,7 +2603,7 @@
       "language": "zh-tw",
       "type": "guide",
       "title": "點點木作戰 折扣儲值活動指南 | 專屬連結額外福利、每月累積儲值優惠券、新註冊代碼說明 | TilesSurvive.net",
-      "description": "請在LootBar確認商品、地區及貨幣的適用條件。",
+      "description": "點點木作戰的折扣儲值活動指南。透過專屬連結進入即可自動統計額外優惠券與每月累積儲值獎勵，新註冊用戶還可獲得代碼 #s4qU 的額外福利。",
       "url": "/zh-tw/guides/discount-topup-promotion/"
     },
     {
@@ -2612,13 +2612,6 @@
       "title": "點點木作戰 指南列表 | TilesSurvive.net",
       "description": "點點木作戰的指南列表頁面。可一眼查看新手指南、成長技巧、營運技巧、活動指南、折扣儲值指南等目前已公開的內容。",
       "url": "/zh-tw/guides/"
-    },
-    {
-      "language": "zh-tw",
-      "type": "top-up",
-      "title": "儲值說明 | TilesSurvive.net",
-      "description": "請在LootBar確認商品、地區及貨幣的適用條件。",
-      "url": "/zh-tw/top-up/"
     },
     {
       "language": "zh-tw",
@@ -2778,8 +2771,15 @@
       "language": "zh-tw",
       "type": "guide",
       "title": "Tiles Survive 折扣儲值指南 | 自助儲值方式、使用條件、雙重驗證、優惠碼說明 | TilesSurvive.net",
-      "description": "請在LootBar確認商品、地區及貨幣的適用條件。",
+      "description": "整理 Tiles Survive 自助儲值前一定要先確認的使用條件、Google 或 Facebook 帳號綁定、雙重驗證確認方式、Google Play Games 無法使用的說明、實際儲值流程與優惠碼輸入方法的完整指南。",
       "url": "/zh-tw/guides/discount-topup/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "top-up",
+      "title": "Tiles Survive 儲值 - 最高22%折扣 | TilesSurvive.net",
+      "description": "查看Tiles Survive儲值折扣、每月兩次獎勵、累積優惠券與LootBar合作流程。",
+      "url": "/zh-tw/top-up/"
     },
     {
       "language": "zh-tw",
