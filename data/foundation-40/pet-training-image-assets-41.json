@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "assets": [
+    {
+      "id": "pet-imprint:snowball",
+      "entity": "snowball",
+      "kind": "pet-imprint",
+      "src": "/img/game-41/pet-imprints/snowball.webp",
+      "width": 128,
+      "height": 128,
+      "bytes": 13472,
+      "sha256": "aa379594e16ebfd3f03151fd6fd7af1fccf90a80c5ecd58f0178d60fe82a38bf",
+      "version": "2.6.200"
+    },
+    {
+      "id": "pet-imprint:dodo",
+      "entity": "dodo",
+      "kind": "pet-imprint",
+      "src": "/img/game-41/pet-imprints/dodo.webp",
+      "width": 128,
+      "height": 128,
+      "bytes": 14004,
+      "sha256": "8eed557aa6b133f74543f1b4e75694027120590a7f82182fa1c5d891f7d7671e",
+      "version": "2.6.200"
+    },
+    {
+      "id": "pet-imprint:buckler",
+      "entity": "buckler",
+      "kind": "pet-imprint",
+      "src": "/img/game-41/pet-imprints/buckler.webp",
+      "width": 128,
+      "height": 128,
+      "bytes": 13740,
+      "sha256": "a516eb82eb66952afcfbb415a9a6b256ca2da4434159e1527d6cc20be27796d0",
+      "version": "2.6.200"
+    },
+    {
+      "id": "pet-imprint:fluffy",
+      "entity": "fluffy",
+      "kind": "pet-imprint",
+      "src": "/img/game-41/pet-imprints/fluffy.webp",
+      "width": 128,
+      "height": 128,
+      "bytes": 13252,
+      "sha256": "fcb49b94912113576195cc0274ebcad90f933ee69dd7738bedb8ce5c68a517d4",
+      "version": "2.6.200"
+    },
+    {
+      "id": "pet-imprint:hardhead",
+      "entity": "hardhead",
+      "kind": "pet-imprint",
+      "src": "/img/game-41/pet-imprints/hardhead.webp",
+      "width": 128,
+      "height": 128,
+      "bytes": 13796,
+      "sha256": "46b3e43edaf0397f907aae2d98baa07478e8eb431b04867424f04f8310ad2f0d",
+      "version": "2.6.200"
+    },
+    {
+      "id": "pet-imprint:shadow",
+      "entity": "shadow",
+      "kind": "pet-imprint",
+      "src": "/img/game-41/pet-imprints/shadow.webp",
+      "width": 128,
+      "height": 128,
+      "bytes": 13642,
+      "sha256": "54d1391d7a708370a62ed4967dafe9d0da6ce299445128a1ce946b669102834b",
+      "version": "2.6.200"
+    },
+    {
+      "id": "pet-imprint:starhorn",
+      "entity": "starhorn",
+      "kind": "pet-imprint",
+      "src": "/img/game-41/pet-imprints/starhorn.webp",
+      "width": 128,
+      "height": 128,
+      "bytes": 13588,
+      "sha256": "b019bbb67e73e3d254b64461c69a2928db17b7dcd69649a85010dbbb0156246c",
+      "version": "2.6.200"
+    }
+  ]
+}

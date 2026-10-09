@@ -1,0 +1,431 @@
+{
+  "schemaVersion": 1,
+  "gameVersion": "2.6.200",
+  "stageRange": [
+    0,
+    5
+  ],
+  "calculationScope": "completed-stage-boundaries",
+  "pets": [
+    {
+      "id": "snowball",
+      "names": {
+        "ko": "스노우볼",
+        "en": "Snowball",
+        "ja": "ユキマル",
+        "ru": "Белек",
+        "zh-tw": "冰團"
+      },
+      "resourceNames": {
+        "ko": "스노우볼 (각인)",
+        "en": "Mark (Snowball)",
+        "ja": "ユキマルの印",
+        "ru": "Отметка: Снежок",
+        "zh-tw": "冰團（印記）"
+      },
+      "maxStage": 5,
+      "trainingRows": [
+        {
+          "from": 0,
+          "to": 1,
+          "cost": 100,
+          "stepCost": 5,
+          "steps": 20,
+          "bonus": 40
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "cost": 200,
+          "stepCost": 10,
+          "steps": 20,
+          "bonus": 55
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "cost": 400,
+          "stepCost": 20,
+          "steps": 20,
+          "bonus": 70
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "cost": 600,
+          "stepCost": 30,
+          "steps": 20,
+          "bonus": 85
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "cost": 700,
+          "stepCost": 35,
+          "steps": 20,
+          "bonus": 100
+        }
+      ]
+    },
+    {
+      "id": "dodo",
+      "names": {
+        "ko": "도도",
+        "en": "Dodo",
+        "ja": "ドド",
+        "ru": "Додо",
+        "zh-tw": "阿兜"
+      },
+      "resourceNames": {
+        "ko": "도도 (각인)",
+        "en": "Mark (Dodo)",
+        "ja": "ドドの印",
+        "ru": "Отметка: Додо",
+        "zh-tw": "阿兜（印記）"
+      },
+      "maxStage": 5,
+      "trainingRows": [
+        {
+          "from": 0,
+          "to": 1,
+          "cost": 100,
+          "stepCost": 5,
+          "steps": 20,
+          "bonus": 40
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "cost": 200,
+          "stepCost": 10,
+          "steps": 20,
+          "bonus": 55
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "cost": 400,
+          "stepCost": 20,
+          "steps": 20,
+          "bonus": 70
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "cost": 600,
+          "stepCost": 30,
+          "steps": 20,
+          "bonus": 85
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "cost": 700,
+          "stepCost": 35,
+          "steps": 20,
+          "bonus": 100
+        }
+      ]
+    },
+    {
+      "id": "buckler",
+      "names": {
+        "ko": "버클러",
+        "en": "Buckler",
+        "ja": "タテマル",
+        "ru": "Торпеда",
+        "zh-tw": "小盾"
+      },
+      "resourceNames": {
+        "ko": "버클러 (각인)",
+        "en": "Mark (Buckler)",
+        "ja": "タテマルの印",
+        "ru": "Отметка: Торпеда",
+        "zh-tw": "小盾（印記）"
+      },
+      "maxStage": 5,
+      "trainingRows": [
+        {
+          "from": 0,
+          "to": 1,
+          "cost": 100,
+          "stepCost": 5,
+          "steps": 20,
+          "bonus": 40
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "cost": 200,
+          "stepCost": 10,
+          "steps": 20,
+          "bonus": 55
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "cost": 400,
+          "stepCost": 20,
+          "steps": 20,
+          "bonus": 70
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "cost": 600,
+          "stepCost": 30,
+          "steps": 20,
+          "bonus": 85
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "cost": 700,
+          "stepCost": 35,
+          "steps": 20,
+          "bonus": 100
+        }
+      ]
+    },
+    {
+      "id": "fluffy",
+      "names": {
+        "ko": "솜솜",
+        "en": "Fluffy",
+        "ja": "モコ",
+        "ru": "Пушок",
+        "zh-tw": "棉花"
+      },
+      "resourceNames": {
+        "ko": "솜솜 (각인)",
+        "en": "Mark (Fluffy)",
+        "ja": "モコの印",
+        "ru": "Отметка: Пушок",
+        "zh-tw": "棉花（印記）"
+      },
+      "maxStage": 5,
+      "trainingRows": [
+        {
+          "from": 0,
+          "to": 1,
+          "cost": 100,
+          "stepCost": 5,
+          "steps": 20,
+          "bonus": 40
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "cost": 200,
+          "stepCost": 10,
+          "steps": 20,
+          "bonus": 55
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "cost": 400,
+          "stepCost": 20,
+          "steps": 20,
+          "bonus": 70
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "cost": 600,
+          "stepCost": 30,
+          "steps": 20,
+          "bonus": 85
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "cost": 700,
+          "stepCost": 35,
+          "steps": 20,
+          "bonus": 100
+        }
+      ]
+    },
+    {
+      "id": "hardhead",
+      "names": {
+        "ko": "철두",
+        "en": "Ironhead",
+        "ja": "アイアン",
+        "ru": "Крепыш",
+        "zh-tw": "鐵頭"
+      },
+      "resourceNames": {
+        "ko": "철두 (각인)",
+        "en": "Mark (Ironhead)",
+        "ja": "アイアンの印",
+        "ru": "Отметка: Крепыш",
+        "zh-tw": "鐵頭（印記）"
+      },
+      "maxStage": 5,
+      "trainingRows": [
+        {
+          "from": 0,
+          "to": 1,
+          "cost": 100,
+          "stepCost": 5,
+          "steps": 20,
+          "bonus": 40
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "cost": 200,
+          "stepCost": 10,
+          "steps": 20,
+          "bonus": 55
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "cost": 400,
+          "stepCost": 20,
+          "steps": 20,
+          "bonus": 70
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "cost": 600,
+          "stepCost": 30,
+          "steps": 20,
+          "bonus": 85
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "cost": 700,
+          "stepCost": 35,
+          "steps": 20,
+          "bonus": 100
+        }
+      ]
+    },
+    {
+      "id": "shadow",
+      "names": {
+        "ko": "쉐도우",
+        "en": "Shadow",
+        "ja": "シャドウ",
+        "ru": "Дымок",
+        "zh-tw": "小影"
+      },
+      "resourceNames": {
+        "ko": "쉐도우 (각인)",
+        "en": "Mark (Shadow)",
+        "ja": "シャドウの印",
+        "ru": "Отметка: Дымок",
+        "zh-tw": "小影（印記）"
+      },
+      "maxStage": 5,
+      "trainingRows": [
+        {
+          "from": 0,
+          "to": 1,
+          "cost": 100,
+          "stepCost": 5,
+          "steps": 20,
+          "bonus": 40
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "cost": 200,
+          "stepCost": 10,
+          "steps": 20,
+          "bonus": 55
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "cost": 400,
+          "stepCost": 20,
+          "steps": 20,
+          "bonus": 70
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "cost": 600,
+          "stepCost": 30,
+          "steps": 20,
+          "bonus": 85
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "cost": 700,
+          "stepCost": 35,
+          "steps": 20,
+          "bonus": 100
+        }
+      ]
+    },
+    {
+      "id": "starhorn",
+      "names": {
+        "ko": "별뿔이",
+        "en": "Starhorn",
+        "ja": "スターホーン",
+        "ru": "Астра",
+        "zh-tw": "星角"
+      },
+      "resourceNames": {
+        "ko": "별뿔이 (각인)",
+        "en": "Mark (Starhorn)",
+        "ja": "スターホーンの印",
+        "ru": "Отметка: Астра",
+        "zh-tw": "星角（印記）"
+      },
+      "maxStage": 5,
+      "trainingRows": [
+        {
+          "from": 0,
+          "to": 1,
+          "cost": 100,
+          "stepCost": 5,
+          "steps": 20,
+          "bonus": 40
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "cost": 200,
+          "stepCost": 10,
+          "steps": 20,
+          "bonus": 55
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "cost": 400,
+          "stepCost": 20,
+          "steps": 20,
+          "bonus": 70
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "cost": 600,
+          "stepCost": 30,
+          "steps": 20,
+          "bonus": 85
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "cost": 700,
+          "stepCost": 35,
+          "steps": 20,
+          "bonus": 100
+        }
+      ]
+    }
+  ]
+}

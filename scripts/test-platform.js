@@ -6,6 +6,7 @@ const { parseHTML } = require("linkedom");
 const math = require("../js/platform-math");
 const {exactEditorialReplacement}=require('./ux-301-test-allowances');
 const reviewed=require('./foundation-40-test-allowances');
+const patch41=require('./integration-41-test-allowances');
 const officialLabels=require('./lib/official-locales-40');
 const root = path.resolve(__dirname, "..");
 let baseline = path.resolve(process.argv[2] || "../renewal");
@@ -201,8 +202,12 @@ for (const l of langs)
       check(text(d.querySelector('main')).includes('685')&&text(d.querySelector('main')).includes('735'),'Skill-book conflict disclosed '+route);
     }
     const originalTables=tableData(old).map(rows=>reviewed.expectedRows(rows.map(row=>row.map(cell=>route.endsWith('/database/skill-book/')&&cell==='19,850'?'23,505':cell)),rel.replaceAll('\\','/')));
+    // Only these exact, pinned additions are removed from baseline comparison.
+    // The helper checks both complete new tables; every old table still compares unchanged.
+    const additions41=patch41.reviewedGearTables(d,l,route);
     const currentTables=tableData(d).filter((_,i) => {
       const table=d.querySelectorAll('main table')[i];
+      if(additions41.has(table))return false;
       // These exact four Lagnar additions are checked from pinned source models below.
       if(route.endsWith('/heroes/lagnar/')&&table.closest('#skill-level-comparison-40,#sea-exclusive-gear-levels'))return false;
       // Newly sourced pet acquisition and growth tables have their own 2.2/3.0

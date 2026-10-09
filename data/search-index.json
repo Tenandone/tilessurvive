@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-09T16:58:35.337Z",
-  "itemCount": 545,
+  "generatedAt": "2026-10-09T18:30:30.239Z",
+  "itemCount": 635,
   "items": [
     {
       "language": "en",
@@ -82,6 +82,14 @@
     {
       "language": "en",
       "type": "heroe",
+      "title": "Becca · Exclusive gear level comparison",
+      "description": "Horizon Hunter · Gale Edge · Primary effects at Lv.1–15",
+      "url": "/en/heroes/beka/#hero-primary-gear-levels-41",
+      "aliases": "Becca"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
       "title": "Becca · Skills, Stats & Growth | TilesSurvive.net",
       "description": "Detailed Becca hero page for Tiles Survive. Check hero story, combat traits, max level and star stats, star bonus, skills, and signature weapon in one place.",
       "url": "/en/heroes/beka/",
@@ -112,6 +120,14 @@
     {
       "language": "en",
       "type": "heroe",
+      "title": "Candy · Exclusive gear level comparison",
+      "description": "Ripple · Aqua Fang · Primary effects at Lv.1–15",
+      "url": "/en/heroes/candy/#hero-primary-gear-levels-41",
+      "aliases": "Candy"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
       "title": "Candy · Skills, Stats & Growth | TilesSurvive.net",
       "description": "Candy hero detail page for Tiles Survive. This page summarizes the SSR hero overview, combat traits, max level and star stats, star bonus, skills, and signature weapon in one place.",
       "url": "/en/heroes/candy/",
@@ -124,6 +140,14 @@
       "description": "Detailed Tiles Survive hero page for Chef. This page covers hero background, combat traits, max level and star stats, star bonus, and skills for this SR hero.",
       "url": "/en/heroes/chef-ken/",
       "aliases": "Chef"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
+      "title": "Chiron · Exclusive gear level comparison",
+      "description": "Godpiercer · Whistling Volley · Primary effects at Lv.1–15",
+      "url": "/en/heroes/kiron/#hero-primary-gear-levels-41",
+      "aliases": "Chiron"
     },
     {
       "language": "en",
@@ -339,10 +363,26 @@
     {
       "language": "en",
       "type": "heroe",
+      "title": "Jacob · Exclusive gear level comparison",
+      "description": "Laughing Madgun · Maniacal Storm · Primary effects at Lv.1–15",
+      "url": "/en/heroes/jacob/#hero-primary-gear-levels-41",
+      "aliases": "Jacob"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
       "title": "Jacob · Skills, Stats & Growth | TilesSurvive.net",
       "description": "Detailed Tiles Survive hero page for Jacob. This page covers hero background, combat traits, max level and star stats, star bonus, skills, and signature gear for this SSR hero.",
       "url": "/en/heroes/jacob/",
       "aliases": "Jacob"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
+      "title": "Kiki · Exclusive gear level comparison",
+      "description": "Sharkbite Blaster · Nova Shot · Primary effects at Lv.1–15",
+      "url": "/en/heroes/kiki/#hero-primary-gear-levels-41",
+      "aliases": "Kiki"
     },
     {
       "language": "en",
@@ -370,6 +410,14 @@
     {
       "language": "en",
       "type": "heroe",
+      "title": "Layla · Exclusive gear level comparison",
+      "description": "Whip of Revival · Dance of Grace · Primary effects at Lv.1–15",
+      "url": "/en/heroes/laila/#hero-primary-gear-levels-41",
+      "aliases": "Layla"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
       "title": "Layla · Skills, Stats & Growth | TilesSurvive.net",
       "description": "Layla hero detail page for Tiles Survive. This page summarizes hero introduction, battle traits, max level and star stats, star bonus, skills, and signature weapon for this SSR hero.",
       "url": "/en/heroes/laila/",
@@ -393,6 +441,14 @@
     {
       "language": "en",
       "type": "heroe",
+      "title": "Maddie · Exclusive gear level comparison",
+      "description": "Tempest Crossbow · Rapidfire Crossbow · Primary effects at Lv.1–15",
+      "url": "/en/heroes/maddy/#hero-primary-gear-levels-41",
+      "aliases": "Maddie"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
       "title": "Maddie · Skills, Stats & Growth | TilesSurvive.net",
       "description": "Detailed hero page for Maddie in Tiles Survive. This page covers hero story, battle traits, max level and star stats, star bonus, skills, and signature weapon for this SSR hero.",
       "url": "/en/heroes/maddy/",
@@ -401,10 +457,26 @@
     {
       "language": "en",
       "type": "heroe",
+      "title": "Mike · Exclusive gear level comparison",
+      "description": "Aegis of Thunder · Thunder's Might · Primary effects at Lv.1–15",
+      "url": "/en/heroes/mike/#hero-primary-gear-levels-41",
+      "aliases": "Mike"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
       "title": "Mike · Skills, Stats & Growth | TilesSurvive.net",
       "description": "Tiles Survive hero Mike detail page. View his story, battle traits, max level and 10-star stats, 10-star bonus, skills, and signature gear in one place.",
       "url": "/en/heroes/mike/",
       "aliases": "Mike"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
+      "title": "Nikola · Exclusive gear level comparison",
+      "description": "Voltstorm · Magnetic Burst · Primary effects at Lv.1–15",
+      "url": "/en/heroes/nikola/#hero-primary-gear-levels-41",
+      "aliases": "Nikola"
     },
     {
       "language": "en",
@@ -434,6 +506,14 @@
       "title": "Pet Eggs",
       "description": "펫 알 · Hatch eggs to obtain and raise pets. · Item sources & uses",
       "url": "/en/database/items/#pet-eggs"
+    },
+    {
+      "language": "en",
+      "type": "database",
+      "title": "Pet training costs and imprints",
+      "description": "Training costs and dedicated imprints for seven pets, stages 0→5. Counts from the start of each stage; partial progress is not deducted.",
+      "url": "/en/database/pet-system/#pet-training-scope-41",
+      "aliases": "Snowball Mark (Snowball) Dodo Mark (Dodo) Buckler Mark (Buckler) Fluffy Mark (Fluffy) Ironhead Mark (Ironhead) Shadow Mark (Shadow) Starhorn Mark (Starhorn)"
     },
     {
       "language": "en",
@@ -467,6 +547,14 @@
     {
       "language": "en",
       "type": "heroe",
+      "title": "Ray · Exclusive gear level comparison",
+      "description": "Obsidian Grenade · Doomsday Blast · Primary effects at Lv.1–15",
+      "url": "/en/heroes/ray/#hero-primary-gear-levels-41",
+      "aliases": "Ray"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
       "title": "Ray · Skills, Stats & Growth | TilesSurvive.net",
       "description": "Ray hero detail page for Tiles Survive. This page summarizes the SSR hero overview, combat traits, max level and star stats, star bonus, skills, and signature weapon in one place.",
       "url": "/en/heroes/ray/",
@@ -485,6 +573,14 @@
       "title": "Reservoir Raid Victory Guide | Tiles Survive Guide | TilesSurvive.net",
       "description": "A complete Tiles Survive Reservoir Raid guide covering entry requirements, win conditions, key buildings, team roles, phase-based strategy, and extra tips.",
       "url": "/en/guides/reservoir-raid/"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
+      "title": "Rosie · Exclusive gear level comparison",
+      "description": "Apocalypse Guitar · Note of Weeping Blood · Primary effects at Lv.1–15",
+      "url": "/en/heroes/rosie/#hero-primary-gear-levels-41",
+      "aliases": "Rosie"
     },
     {
       "language": "en",
@@ -556,6 +652,14 @@
     {
       "language": "en",
       "type": "heroe",
+      "title": "Shark · Exclusive gear level comparison",
+      "description": "Abyssal Anchor · Anchor Defense · Primary effects at Lv.1–15",
+      "url": "/en/heroes/shark/#hero-primary-gear-levels-41",
+      "aliases": "Shark"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
       "title": "Shark · Skills, Stats & Growth | TilesSurvive.net",
       "description": "Shark is a Sea SSR melee hero in Tiles Survive. This guide summarizes Crashing Wave, Shark Surge, Vanguard Support, Ocean",
       "url": "/en/heroes/shark/",
@@ -587,10 +691,26 @@
     {
       "language": "en",
       "type": "heroe",
+      "title": "Tara · Exclusive gear level comparison",
+      "description": "Fenrir Hammer · Wolfstar Rend · Primary effects at Lv.1–15",
+      "url": "/en/heroes/tara/#hero-primary-gear-levels-41",
+      "aliases": "Tara"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
       "title": "Tara · Skills, Stats & Growth | TilesSurvive.net",
       "description": "Detailed hero page for Tara in Tiles Survive. This page covers hero story, battle traits, max level and star stats, star bonus, skills, and signature gear for this SSR hero.",
       "url": "/en/heroes/tara/",
       "aliases": "Tara"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
+      "title": "Tarzan · Exclusive gear level comparison",
+      "description": "Thunderfist · Indomitable · Primary effects at Lv.1–15",
+      "url": "/en/heroes/tazan/#hero-primary-gear-levels-41",
+      "aliases": "Tarzan"
     },
     {
       "language": "en",
@@ -736,6 +856,14 @@
     {
       "language": "en",
       "type": "heroe",
+      "title": "Tony · Exclusive gear level comparison",
+      "description": "Starfire · Photon Barrage · Primary effects at Lv.1–15",
+      "url": "/en/heroes/tony/#hero-primary-gear-levels-41",
+      "aliases": "Tony"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
       "title": "Tony · Skills, Stats & Growth | TilesSurvive.net",
       "description": "Detailed page for Tony in Tiles Survive. View hero introduction, battle traits, max level and 10-star stats, star bonus, skills, and signature weapon in one place.",
       "url": "/en/heroes/tony/",
@@ -773,6 +901,14 @@
     {
       "language": "en",
       "type": "heroe",
+      "title": "Undine · Exclusive gear level comparison",
+      "description": "Ocean Vox · Oceanic Psalm · Primary effects at Lv.1–15",
+      "url": "/en/heroes/undine/#hero-primary-gear-levels-41",
+      "aliases": "Undine"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
       "title": "Undine · Skills, Stats & Growth | TilesSurvive.net",
       "description": "Mariner heroes · SSR · Gunners · Skills & effects",
       "url": "/en/heroes/undine/",
@@ -791,6 +927,14 @@
       "title": "Warbringer Monument | Tiles Survive Buildings | TilesSurvive.net",
       "description": "Tiles Survive building detail page for the Warbringer Monument. Check the building overview, Hero Attack bonus by level, and Power in one place.",
       "url": "/en/buildings/warbringer-monument/"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
+      "title": "Wright · Exclusive gear level comparison",
+      "description": "Stormpiercer · Skyfire Line · Primary effects at Lv.1–15",
+      "url": "/en/heroes/light/#hero-primary-gear-levels-41",
+      "aliases": "Wright"
     },
     {
       "language": "en",
@@ -1154,6 +1298,14 @@
     {
       "language": "ja",
       "type": "heroe",
+      "title": "イージェン · 専用装備レベル比較",
+      "description": "リプル · 水流串刺し · Lv.1–15の基本効果",
+      "url": "/ja/heroes/candy/#hero-primary-gear-levels-41",
+      "aliases": "キャンディ Candy"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
       "title": "イージェン · スキル・ステータス・育成 | TilesSurvive.net",
       "description": "タイルサバイバル英雄キャンディの詳細ページです。SSR英雄基準で、英雄紹介、戦闘特性、最大レベル＆星ランクステータス、星ランクボーナス、スキル、専用装備をひと目で確認できます。",
       "url": "/ja/heroes/candy/",
@@ -1165,6 +1317,14 @@
       "title": "イベントとシステム | TilesSurvive.net",
       "description": "公式パッチノートで確認されたイベントとシステムの変更です。",
       "url": "/ja/events/"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
+      "title": "ウンディーネ · 専用装備レベル比較",
+      "description": "海洋のマイク · 海洋の賛歌 · Lv.1–15の基本効果",
+      "url": "/ja/heroes/undine/#hero-primary-gear-levels-41",
+      "aliases": "Undine"
     },
     {
       "language": "ja",
@@ -1185,6 +1345,14 @@
     {
       "language": "ja",
       "type": "heroe",
+      "title": "カイロン · 専用装備レベル比較",
+      "description": "神の長弓 · 風切り連射 · Lv.1–15の基本効果",
+      "url": "/ja/heroes/kiron/#hero-primary-gear-levels-41",
+      "aliases": "カイロン Chiron"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
       "title": "カイロン · スキル・ステータス・育成 | TilesSurvive.net",
       "description": "タイルズサバイバルの英雄カイロン詳細ページです。SSR英雄基準で、英雄紹介、戦闘特性、最大レベルおよび星ランクステータス、星ランクボーナス、スキル、専用装備をひと目で確認できます。",
       "url": "/ja/heroes/kiron/",
@@ -1196,6 +1364,14 @@
       "title": "カメレース | タイルサバイバル データベース | TilesSurvive.net",
       "description": "タイルサバイバル 同盟対決 カメレースおすすめ表です。段階別おすすめミッション、バトル、カメ、国王バフおすすめ区間を一目で確認できます。",
       "url": "/ja/database/turtle-race/"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
+      "title": "キキ · 専用装備レベル比較",
+      "description": "シャークキャノン · ノヴァショット · Lv.1–15の基本効果",
+      "url": "/ja/heroes/kiki/#hero-primary-gear-levels-41",
+      "aliases": "キキ Kiki"
     },
     {
       "language": "ja",
@@ -1260,6 +1436,14 @@
     {
       "language": "ja",
       "type": "heroe",
+      "title": "シャーク · 専用装備レベル比較",
+      "description": "メガアンカー · 鋼鉄のアンカー · Lv.1–15の基本効果",
+      "url": "/ja/heroes/shark/#hero-primary-gear-levels-41",
+      "aliases": "シャーク Shark"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
       "title": "シャーク · スキル・ステータス・育成 | TilesSurvive.net",
       "description": "シャークは Tiles Survive の海系SSR近距離英雄です。怒涛の衝撃、押寄せる鮫、前線支援、深海の剛体、専用装備「深海の錨」をまとめています。",
       "url": "/ja/heroes/shark/",
@@ -1291,10 +1475,26 @@
     {
       "language": "ja",
       "type": "heroe",
+      "title": "ターザン · 専用装備レベル比較",
+      "description": "雷霆の鉄拳 · 不屈の魂 · Lv.1–15の基本効果",
+      "url": "/ja/heroes/tarzan/#hero-primary-gear-levels-41",
+      "aliases": "ターザン Tarzan"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
       "title": "ターザン · スキル・ステータス・育成 | TilesSurvive.net",
       "description": "タイルサバイバルの英雄ターザン詳細ページです。SSR英雄基準で、英雄紹介、戦闘特性、Lv MAXステータス、星ランクボーナス、スキル、専用装備をひと目で確認できます。",
       "url": "/ja/heroes/tarzan/",
       "aliases": "ターザン Tarzan"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
+      "title": "ターラ · 専用装備レベル比較",
+      "description": "狼の戦鎚 · 裂空の狼星 · Lv.1–15の基本効果",
+      "url": "/ja/heroes/tara/#hero-primary-gear-levels-41",
+      "aliases": "ターラ Tara"
     },
     {
       "language": "ja",
@@ -1422,6 +1622,14 @@
     {
       "language": "ja",
       "type": "heroe",
+      "title": "トニー · 専用装備レベル比較",
+      "description": "閃光の射手 · レーザー嵐 · Lv.1–15の基本効果",
+      "url": "/ja/heroes/tony/#hero-primary-gear-levels-41",
+      "aliases": "トニー Tony"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
       "title": "トニー · スキル・ステータス・育成 | TilesSurvive.net",
       "description": "タイルサバイバル英雄トニーの詳細ページです。SSR英雄基準で、英雄紹介、戦闘特性、最大レベルと星ランクステータス、星ランク追加効果、スキル、専用装備をひと目で確認できます。",
       "url": "/ja/heroes/tony/",
@@ -1434,6 +1642,14 @@
       "description": "タイルサバイバルのヒーロー、トラビスの詳細ページです。英雄紹介、陣営、戦闘特性、最大レベルと星ランクステータス、星ランクボーナス、スキルをひと目で確認できます。",
       "url": "/ja/heroes/travis/",
       "aliases": "トラビス Travis"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
+      "title": "ニコラ · 専用装備レベル比較",
+      "description": "超電磁砲 · 核磁気爆発 · Lv.1–15の基本効果",
+      "url": "/ja/heroes/nikola/#hero-primary-gear-levels-41",
+      "aliases": "ニコラ Nikola"
     },
     {
       "language": "ja",
@@ -1476,10 +1692,26 @@
     {
       "language": "ja",
       "type": "heroe",
+      "title": "ベッキー · 専用装備レベル比較",
+      "description": "ホライゾンアロー · 疾風の刃 · Lv.1–15の基本効果",
+      "url": "/ja/heroes/beka/#hero-primary-gear-levels-41",
+      "aliases": "ベッキー Becca"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
       "title": "ベッキー · スキル・ステータス・育成 | TilesSurvive.net",
       "description": "タイルズサバイバルのヒーロー、ベッキーの詳細ページです。SSRヒーロー基準で、ヒーロー紹介、戦闘特性、最大レベルと星ランクステータス、星ランクボーナス、スキル、専用装備をひと目で確認できます。",
       "url": "/ja/heroes/beka/",
       "aliases": "ベッキー Becca"
+    },
+    {
+      "language": "ja",
+      "type": "database",
+      "title": "ペット訓練費用と専用素材",
+      "description": "7種のペットの0→5段階の訓練費用と専用素材。各段階の開始から合算し、途中の進捗は差し引きません。",
+      "url": "/ja/database/pet-system/#pet-training-scope-41",
+      "aliases": "ユキマル ユキマルの印 ドド ドドの印 タテマル タテマルの印 モコ モコの印 アイアン アイアンの印 シャドウ シャドウの印 スターホーン スターホーンの印"
     },
     {
       "language": "ja",
@@ -1505,10 +1737,26 @@
     {
       "language": "ja",
       "type": "heroe",
+      "title": "マイク · 専用装備レベル比較",
+      "description": "雷霆の巨盾 · 雷霆の力 · Lv.1–15の基本効果",
+      "url": "/ja/heroes/mike/#hero-primary-gear-levels-41",
+      "aliases": "マイク Mike"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
       "title": "マイク · スキル・ステータス・育成 | TilesSurvive.net",
       "description": "タイルサバイバル英雄マイクの詳細ページです。SSR英雄基準で、英雄紹介、戦闘特性、最大レベルと星ランクステータス、星ランク追加効果、スキル、専用装備をひと目で確認できます。",
       "url": "/ja/heroes/mike/",
       "aliases": "マイク Mike"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
+      "title": "マディ · 専用装備レベル比較",
+      "description": "嵐の大弓 · 怒涛の連射 · Lv.1–15の基本効果",
+      "url": "/ja/heroes/maddy/#hero-primary-gear-levels-41",
+      "aliases": "マディ Maddie"
     },
     {
       "language": "ja",
@@ -1529,6 +1777,14 @@
     {
       "language": "ja",
       "type": "heroe",
+      "title": "ヤーコブ · 専用装備レベル比較",
+      "description": "笑うマッドガン · 高笑いの嵐 · Lv.1–15の基本効果",
+      "url": "/ja/heroes/jacob/#hero-primary-gear-levels-41",
+      "aliases": "ヤーコブ Jacob"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
       "title": "ヤーコブ · スキル・ステータス・育成 | TilesSurvive.net",
       "description": "タイルサバイバル英雄ヤーコブの詳細ページです。SSR英雄基準で、英雄紹介、戦闘特性、最大レベル＆星ランクステータス、星ランクボーナス、スキル、専用装備をひと目で確認できます。",
       "url": "/ja/heroes/jacob/",
@@ -1541,6 +1797,14 @@
       "description": "ユキマル — 役割: 攻撃 · 入手確率 · 観測ステータス",
       "url": "/ja/database/pet-system/snowball/",
       "aliases": "Snowball"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
+      "title": "ライト · 専用装備レベル比較",
+      "description": "飛翔の拳銃 · 空中戦線 · Lv.1–15の基本効果",
+      "url": "/ja/heroes/light/#hero-primary-gear-levels-41",
+      "aliases": "ライト Wright"
     },
     {
       "language": "ja",
@@ -1577,6 +1841,14 @@
     {
       "language": "ja",
       "type": "heroe",
+      "title": "レイ · 専用装備レベル比較",
+      "description": "暗黒ランチャー · 終末の爆破 · Lv.1–15の基本効果",
+      "url": "/ja/heroes/ray/#hero-primary-gear-levels-41",
+      "aliases": "レイ Ray"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
       "title": "レイ · スキル・ステータス・育成 | TilesSurvive.net",
       "description": "タイルサバイバルの英雄レイ詳細ページです。SSR英雄基準で、英雄紹介、戦闘特性、Lv MAXステータス、星ランクボーナス、スキル、専用装備をひと目で確認できます。",
       "url": "/ja/heroes/ray/",
@@ -1585,10 +1857,26 @@
     {
       "language": "ja",
       "type": "heroe",
+      "title": "レイラ · 専用装備レベル比較",
+      "description": "復活の鞭 · 妖艶な舞撃 · Lv.1–15の基本効果",
+      "url": "/ja/heroes/laila/#hero-primary-gear-levels-41",
+      "aliases": "レイラ Layla"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
       "title": "レイラ · スキル・ステータス・育成 | TilesSurvive.net",
       "description": "タイルサバイバル英雄レイラの詳細ページです。SSR英雄基準で、英雄紹介、戦闘特性、最大レベル＆星ランクステータス、星ランクボーナス、スキル、専用装備をひと目で確認できます。",
       "url": "/ja/heroes/laila/",
       "aliases": "レイラ Layla"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
+      "title": "ローズ · 専用装備レベル比較",
+      "description": "終末ギター · 血涙の音符 · Lv.1–15の基本効果",
+      "url": "/ja/heroes/rosie/#hero-primary-gear-levels-41",
+      "aliases": "ローズ Rosie"
     },
     {
       "language": "ja",
@@ -1688,6 +1976,14 @@
     {
       "language": "ko",
       "type": "heroe",
+      "title": "니콜라 · 전용 장비 레벨 비교",
+      "description": "초전자포 · 마그네틱 폭발 · Lv.1–15 주요 효과",
+      "url": "/ko/heroes/nikola/#hero-primary-gear-levels-41",
+      "aliases": "니콜라 Nikola"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
       "title": "데이브 · 스킬과 성장 조건 | TilesSurvive.net",
       "description": "물폭탄 공격과 적군 공격력·방어력 감소 효과를 지닌 바다 SSR 원거리 영웅.",
       "url": "/ko/heroes/dave/",
@@ -1727,9 +2023,25 @@
     {
       "language": "ko",
       "type": "heroe",
+      "title": "라이트 · 전용 장비 레벨 비교",
+      "description": "클라우드 피어싱 · 구름의 도화선 · Lv.1–15 주요 효과",
+      "url": "/ko/heroes/light/#hero-primary-gear-levels-41",
+      "aliases": "라이트 Wright"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
       "title": "라일라 · 스킬·능력치·성장 | TilesSurvive.net",
       "description": "타일서바이벌 영웅 라일라 상세 페이지입니다. SSR 영웅 기준으로 영웅 소개, 전투 특성, 최고 레벨 및 성급 속성, 성급 보너스, 스킬, 전용 장비를 한눈에 정리했습니다.",
       "url": "/ko/heroes/laila/",
+      "aliases": "라일라 Layla"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
+      "title": "라일라 · 전용 장비 레벨 비교",
+      "description": "부활의 채찍 · 아름다운 자태 · Lv.1–15 주요 효과",
+      "url": "/ko/heroes/laila/#hero-primary-gear-levels-41",
       "aliases": "라일라 Layla"
     },
     {
@@ -1759,9 +2071,25 @@
     {
       "language": "ko",
       "type": "heroe",
+      "title": "레이 · 전용 장비 레벨 비교",
+      "description": "암흑 수류탄 · 종말의 폭발 · Lv.1–15 주요 효과",
+      "url": "/ko/heroes/ray/#hero-primary-gear-levels-41",
+      "aliases": "레이 Ray"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
       "title": "로지 · 스킬·능력치·성장 | TilesSurvive.net",
       "description": "타일서바이벌 영웅 로지 상세 페이지입니다. SSR 영웅 기준으로 영웅 소개, 전투 특성, 최고 레벨 및 성급 속성, 성급 보너스, 스킬, 전용 장비를 한눈에 정리했습니다.",
       "url": "/ko/heroes/rosie/",
+      "aliases": "로지 Rosie"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
+      "title": "로지 · 전용 장비 레벨 비교",
+      "description": "종말의 기타 · 핏빛 음표 · Lv.1–15 주요 효과",
+      "url": "/ko/heroes/rosie/#hero-primary-gear-levels-41",
       "aliases": "로지 Rosie"
     },
     {
@@ -1782,9 +2110,25 @@
     {
       "language": "ko",
       "type": "heroe",
+      "title": "마이크 · 전용 장비 레벨 비교",
+      "description": "썬더 실드 · 썬더 파워 · Lv.1–15 주요 효과",
+      "url": "/ko/heroes/mike/#hero-primary-gear-levels-41",
+      "aliases": "마이크 Mike"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
       "title": "매디 · 스킬·능력치·성장 | TilesSurvive.net",
       "description": "타일서바이벌 영웅 매디 상세 페이지입니다. SSR 영웅 기준으로 영웅 소개, 전투 특성, 최고 레벨 및 성급 속성, 성급 보너스, 스킬, 전용 장비를 한눈에 정리했습니다.",
       "url": "/ko/heroes/maddy/",
+      "aliases": "매디 Maddie"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
+      "title": "매디 · 전용 장비 레벨 비교",
+      "description": "폭풍의 활 · 분노의 연사 · Lv.1–15 주요 효과",
+      "url": "/ko/heroes/maddy/#hero-primary-gear-levels-41",
       "aliases": "매디 Maddie"
     },
     {
@@ -1822,6 +2166,14 @@
       "title": "베카 · 스킬·능력치·성장 | TilesSurvive.net",
       "description": "타일서바이벌 영웅 베카 상세 페이지입니다. SSR 영웅 기준으로 영웅 소개, 전투 특성, 최고 레벨 및 성급 속성, 성급 보너스, 스킬, 전용 장비를 한눈에 정리했습니다.",
       "url": "/ko/heroes/beka/",
+      "aliases": "베카 Becca"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
+      "title": "베카 · 전용 장비 레벨 비교",
+      "description": "관통 저격총 · 예리한 바람 · Lv.1–15 주요 효과",
+      "url": "/ko/heroes/beka/#hero-primary-gear-levels-41",
       "aliases": "베카 Becca"
     },
     {
@@ -1866,6 +2218,14 @@
       "title": "샤크 · 스킬·능력치·성장 | TilesSurvive.net",
       "description": "샤크는 Tiles Survive의 바다 계열 SSR 근거리 영웅입니다. 웨이브 크래시, 샤크 웨이브, 전방 지원, 심해 무적과 전용 장비 심해의 닻 정보를 정리했습니다.",
       "url": "/ko/heroes/shark/",
+      "aliases": "샤크 Shark"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
+      "title": "샤크 · 전용 장비 레벨 비교",
+      "description": "심해의 닻 · 쇠닻 방어 · Lv.1–15 주요 효과",
+      "url": "/ko/heroes/shark/#hero-primary-gear-levels-41",
       "aliases": "샤크 Shark"
     },
     {
@@ -2038,6 +2398,14 @@
     },
     {
       "language": "ko",
+      "type": "heroe",
+      "title": "운디네 · 전용 장비 레벨 비교",
+      "description": "바다의 음성 · 바다의 찬가 · Lv.1–15 주요 효과",
+      "url": "/ko/heroes/undine/#hero-primary-gear-levels-41",
+      "aliases": "운디네 (Undine) Undine"
+    },
+    {
+      "language": "ko",
       "type": "event",
       "title": "이벤트와 시스템 | TilesSurvive.net",
       "description": "공식 패치노트에서 확인된 타일서바이벌 이벤트·시스템 변경사항입니다.",
@@ -2123,6 +2491,14 @@
     },
     {
       "language": "ko",
+      "type": "heroe",
+      "title": "제이콥 · 전용 장비 레벨 비교",
+      "description": "스마일링 매드건 · 매드니스 스톰 · Lv.1–15 주요 효과",
+      "url": "/ko/heroes/jacob/#hero-primary-gear-levels-41",
+      "aliases": "제이콥 Jacob"
+    },
+    {
+      "language": "ko",
       "type": "affiliate-disclosure",
       "title": "제휴 링크 안내 | TilesSurvive.net",
       "description": "TilesSurvive.net의 제휴 링크 사용과 편집 독립성 안내입니다.",
@@ -2141,6 +2517,14 @@
       "title": "채의진 · 스킬·능력치·성장 | TilesSurvive.net",
       "description": "타일서바이벌 영웅 채의진 상세 페이지입니다. SSR 영웅 기준으로 영웅 소개, 전투 특성, 최고 레벨 및 성급 속성, 성급 보너스, 스킬, 전용 장비를 한눈에 정리했습니다.",
       "url": "/ko/heroes/candy/",
+      "aliases": "채의진 Candy"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
+      "title": "채의진 · 전용 장비 레벨 비교",
+      "description": "그림자 물총 · 물결 관통 · Lv.1–15 주요 효과",
+      "url": "/ko/heroes/candy/#hero-primary-gear-levels-41",
       "aliases": "채의진 Candy"
     },
     {
@@ -2183,6 +2567,14 @@
     {
       "language": "ko",
       "type": "heroe",
+      "title": "키론 · 전용 장비 레벨 비교",
+      "description": "신이 내린 궁수 · 화살의 비명 · Lv.1–15 주요 효과",
+      "url": "/ko/heroes/kiron/#hero-primary-gear-levels-41",
+      "aliases": "키론 Chiron"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
       "title": "키키 · 스킬·능력치·성장 | TilesSurvive.net",
       "description": "타일서바이벌 영웅 키키 상세 페이지입니다. SSR 영웅 기준으로 영웅 소개, 전투 특성, 최고 레벨 및 성급 속성, 성급 보너스, 스킬, 전용 장비를 한눈에 정리했습니다.",
       "url": "/ko/heroes/kiki/",
@@ -2191,9 +2583,25 @@
     {
       "language": "ko",
       "type": "heroe",
+      "title": "키키 · 전용 장비 레벨 비교",
+      "description": "샤크 레이저 캐논 · 노바 캐논샷 · Lv.1–15 주요 효과",
+      "url": "/ko/heroes/kiki/#hero-primary-gear-levels-41",
+      "aliases": "키키 Kiki"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
       "title": "타라 · 스킬·능력치·성장 | TilesSurvive.net",
       "description": "타일서바이벌 영웅 타라 상세 페이지입니다. SSR 영웅 기준으로 영웅 소개, 전투 특성, 최고 레벨 및 성급 속성, 성급 보너스, 스킬, 전용 장비를 한눈에 정리했습니다.",
       "url": "/ko/heroes/tara/",
+      "aliases": "타라 Tara"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
+      "title": "타라 · 전용 장비 레벨 비교",
+      "description": "펜리르 망치 · 늑대성의 하늘찢기 · Lv.1–15 주요 효과",
+      "url": "/ko/heroes/tara/#hero-primary-gear-levels-41",
       "aliases": "타라 Tara"
     },
     {
@@ -2319,9 +2727,25 @@
     {
       "language": "ko",
       "type": "heroe",
+      "title": "타잔 · 전용 장비 레벨 비교",
+      "description": "썬더 피스트 · 아다만틴 바디 · Lv.1–15 주요 효과",
+      "url": "/ko/heroes/tarzan/#hero-primary-gear-levels-41",
+      "aliases": "타잔 Tarzan"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
       "title": "탄 토니 · 스킬·능력치·성장 | TilesSurvive.net",
       "description": "타일서바이벌 영웅 탄 토니 상세 페이지입니다. SSR 영웅 기준으로 영웅 소개, 전투 특성, 최고 레벨 및 성급 속성, 성급 보너스, 스킬, 전용 장비를 한눈에 정리했습니다.",
       "url": "/ko/heroes/tony/",
+      "aliases": "탄 토니 Tony"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
+      "title": "탄 토니 · 전용 장비 레벨 비교",
+      "description": "스타 레이저총 · 레이저 스톰 · Lv.1–15 주요 효과",
+      "url": "/ko/heroes/tony/#hero-primary-gear-levels-41",
       "aliases": "탄 토니 Tony"
     },
     {
@@ -2345,6 +2769,14 @@
       "title": "펫 알",
       "description": "펫 알 · 알을 부화해 펫을 얻고 육성합니다. · 아이템 획득처·사용처",
       "url": "/ko/database/items/#pet-eggs"
+    },
+    {
+      "language": "ko",
+      "type": "database",
+      "title": "펫 훈련 비용 · 전용 각인",
+      "description": "7종 펫의 0→5단계 훈련 비용과 전용 각인. 단계 시작부터 합산하며 진행 중인 훈련은 차감하지 않습니다.",
+      "url": "/ko/database/pet-system/#pet-training-scope-41",
+      "aliases": "스노우볼 스노우볼 (각인) 도도 도도 (각인) 버클러 버클러 (각인) 솜솜 솜솜 (각인) 철두 철두 (각인) 쉐도우 쉐도우 (각인) 별뿔이 별뿔이 (각인)"
     },
     {
       "language": "ko",
@@ -2483,6 +2915,14 @@
     },
     {
       "language": "ru",
+      "type": "heroe",
+      "title": "Акула · Сравнение уровней особого снаряжения",
+      "description": "Якорь бездны · Оборонительный якорь · Основные эффекты на ур. 1–15",
+      "url": "/ru/heroes/shark/#hero-primary-gear-levels-41",
+      "aliases": "Shark"
+    },
+    {
+      "language": "ru",
       "type": "database",
       "title": "Астра · Получение, характеристики и развитие питомца | TilesSurvive.net",
       "description": "Астра — Ур.1 · Тренировка 0 · До превращения · Развитие",
@@ -2510,6 +2950,14 @@
       "title": "Бэкка — Навыки, характеристики и развитие | TilesSurvive.net",
       "description": "Подробная страница героя Бэкка в Tiles Survive. Здесь по SSR-герою собраны описание героя, боевые особенности, характеристики на максимальном уровне и звёздности, бонус звёздности, навыки и эксклюзивное снаряжение.",
       "url": "/ru/heroes/beka/",
+      "aliases": "Beka Becca"
+    },
+    {
+      "language": "ru",
+      "type": "heroe",
+      "title": "Бэкка · Сравнение уровней особого снаряжения",
+      "description": "Охотник на горизонт · Штормовой рубеж · Основные эффекты на ур. 1–15",
+      "url": "/ru/heroes/beka/#hero-primary-gear-levels-41",
       "aliases": "Beka Becca"
     },
     {
@@ -2600,6 +3048,14 @@
     },
     {
       "language": "ru",
+      "type": "heroe",
+      "title": "Джейкоб · Сравнение уровней особого снаряжения",
+      "description": "Психострел-хохотун · Маниакальная буря · Основные эффекты на ур. 1–15",
+      "url": "/ru/heroes/jacob/#hero-primary-gear-levels-41",
+      "aliases": "Jacob"
+    },
+    {
+      "language": "ru",
       "type": "database",
       "title": "Додо · Получение, характеристики и развитие питомца | TilesSurvive.net",
       "description": "Додо — Роль: Поддержка · Вероятность получения · Зафиксированные характеристики",
@@ -2674,6 +3130,14 @@
     },
     {
       "language": "ru",
+      "type": "heroe",
+      "title": "Кики · Сравнение уровней особого снаряжения",
+      "description": "Акулья пушка · Вспышка сверхновой · Основные эффекты на ур. 1–15",
+      "url": "/ru/heroes/kiki/#hero-primary-gear-levels-41",
+      "aliases": "Kiki"
+    },
+    {
+      "language": "ru",
       "type": "privacy",
       "title": "Конфиденциальность | Хаб данных Tiles Survive | TilesSurvive.net",
       "description": "Страница с информацией о конфиденциальности TilesSurvive.net. Здесь можно ознакомиться с базовой информацией, которая может собираться при использовании сайта, а также с положениями о внешних ссылках, cookie и каналах связи.",
@@ -2698,9 +3162,25 @@
     {
       "language": "ru",
       "type": "heroe",
+      "title": "Кэнди · Сравнение уровней особого снаряжения",
+      "description": "Волна · Акваклык · Основные эффекты на ур. 1–15",
+      "url": "/ru/heroes/candy/#hero-primary-gear-levels-41",
+      "aliases": "Candy"
+    },
+    {
+      "language": "ru",
+      "type": "heroe",
       "title": "Лайла — Навыки, характеристики и развитие | TilesSurvive.net",
       "description": "Подробная страница героя Лайла в Tiles Survive. Здесь по SSR-герою собраны описание героя, боевые особенности, характеристики на максимальном уровне и звёздности, бонус звёздности, навыки и эксклюзивное снаряжение.",
       "url": "/ru/heroes/laila/",
+      "aliases": "Laila Layla"
+    },
+    {
+      "language": "ru",
+      "type": "heroe",
+      "title": "Лайла · Сравнение уровней особого снаряжения",
+      "description": "Кнут возрождения · Грациозный танец · Основные эффекты на ур. 1–15",
+      "url": "/ru/heroes/laila/#hero-primary-gear-levels-41",
       "aliases": "Laila Layla"
     },
     {
@@ -2724,6 +3204,14 @@
       "title": "Майк — Навыки, характеристики и развитие | TilesSurvive.net",
       "description": "Подробная страница героя Майк в Tiles Survive. Здесь по SSR-герою собраны описание, боевые особенности, характеристики на максимальном уровне и звёздности, бонус звёздности, навыки и эксклюзивное снаряжение.",
       "url": "/ru/heroes/mike/",
+      "aliases": "Mike"
+    },
+    {
+      "language": "ru",
+      "type": "heroe",
+      "title": "Майк · Сравнение уровней особого снаряжения",
+      "description": "Громовой щит · Мощь грома · Основные эффекты на ур. 1–15",
+      "url": "/ru/heroes/mike/#hero-primary-gear-levels-41",
       "aliases": "Mike"
     },
     {
@@ -2786,9 +3274,25 @@
     {
       "language": "ru",
       "type": "heroe",
+      "title": "Мэдди · Сравнение уровней особого снаряжения",
+      "description": "Грозовой арбалет · Молниеносная стрельба · Основные эффекты на ур. 1–15",
+      "url": "/ru/heroes/maddy/#hero-primary-gear-levels-41",
+      "aliases": "Maddy Maddie"
+    },
+    {
+      "language": "ru",
+      "type": "heroe",
       "title": "Никола — Навыки, характеристики и развитие | TilesSurvive.net",
       "description": "Подробная страница героя Никола в Tiles Survive. Здесь по SSR-герою собраны описание, боевые особенности, характеристики на максимальном уровне и звёздности, бонус звёздности, навыки и эксклюзивное снаряжение.",
       "url": "/ru/heroes/nikola/",
+      "aliases": "Nikola"
+    },
+    {
+      "language": "ru",
+      "type": "heroe",
+      "title": "Никола · Сравнение уровней особого снаряжения",
+      "description": "Вольтшторм · Магнитный взрыв · Основные эффекты на ур. 1–15",
+      "url": "/ru/heroes/nikola/#hero-primary-gear-levels-41",
       "aliases": "Nikola"
     },
     {
@@ -2939,6 +3443,14 @@
     },
     {
       "language": "ru",
+      "type": "heroe",
+      "title": "Райт · Сравнение уровней особого снаряжения",
+      "description": "Бурепроходец · Линия небесного огня · Основные эффекты на ур. 1–15",
+      "url": "/ru/heroes/light/#hero-primary-gear-levels-41",
+      "aliases": "Light Wright"
+    },
+    {
+      "language": "ru",
       "type": "affiliate-disclosure",
       "title": "Раскрытие партнёрских ссылок | TilesSurvive.net",
       "description": "Как TilesSurvive.net использует партнёрские ссылки и сохраняет редакционную независимость.",
@@ -2969,6 +3481,14 @@
     },
     {
       "language": "ru",
+      "type": "heroe",
+      "title": "Рози · Сравнение уровней особого снаряжения",
+      "description": "Гитара апокалипсиса · Реквием · Основные эффекты на ур. 1–15",
+      "url": "/ru/heroes/rosie/#hero-primary-gear-levels-41",
+      "aliases": "Rosie"
+    },
+    {
+      "language": "ru",
       "type": "database",
       "title": "Руководство навыков героя",
       "description": "영웅 스킬북 · Повышает уровни навыков героев. · Где получить и использовать предметы",
@@ -2980,6 +3500,14 @@
       "title": "Рэй — Навыки, характеристики и развитие | TilesSurvive.net",
       "description": "Подробная страница героя Рэй в Tiles Survive. Здесь по SSR-герою собраны описание, боевые особенности, характеристики на максимальном уровне и звёздности, бонус звёздности, навыки и эксклюзивное снаряжение.",
       "url": "/ru/heroes/ray/",
+      "aliases": "Ray"
+    },
+    {
+      "language": "ru",
+      "type": "heroe",
+      "title": "Рэй · Сравнение уровней особого снаряжения",
+      "description": "Обсидиановая граната · Взрыв Судного дня · Основные эффекты на ур. 1–15",
+      "url": "/ru/heroes/ray/#hero-primary-gear-levels-41",
       "aliases": "Ray"
     },
     {
@@ -3056,6 +3584,14 @@
     {
       "language": "ru",
       "type": "database",
+      "title": "Стоимость тренировки питомцев и материалы",
+      "description": "Стоимость тренировки и личные материалы семи питомцев, этапы 0→5. Расчёт с начала этапа; частичный прогресс не вычитается.",
+      "url": "/ru/database/pet-system/#pet-training-scope-41",
+      "aliases": "Белек Отметка: Снежок Додо Отметка: Додо Торпеда Отметка: Торпеда Пушок Отметка: Пушок Крепыш Отметка: Крепыш Дымок Отметка: Дымок Астра Отметка: Астра"
+    },
+    {
+      "language": "ru",
+      "type": "database",
       "title": "Таблица звёзд героев | Данные героев Tiles Survive | TilesSurvive.net",
       "description": "Страница с таблицей звёзд SSR-героев и сезонных повышаемых героев в Tiles Survive. Здесь всё собрано так, чтобы можно было быстро проверить нужное количество фрагментов.",
       "url": "/ru/database/hero-star/"
@@ -3099,6 +3635,14 @@
     {
       "language": "ru",
       "type": "heroe",
+      "title": "Тара · Сравнение уровней особого снаряжения",
+      "description": "Молот Фенрира · Волчья звезда-крушитель · Основные эффекты на ур. 1–15",
+      "url": "/ru/heroes/tara/#hero-primary-gear-levels-41",
+      "aliases": "Tara"
+    },
+    {
+      "language": "ru",
+      "type": "heroe",
       "title": "Тарзан — Навыки, характеристики и развитие | TilesSurvive.net",
       "description": "Подробная страница героя Тарзан в Tiles Survive. Здесь по SSR-герою собраны описание, боевые особенности, характеристики на максимальном уровне и звёздности, бонус звёздности, навыки и эксклюзивное снаряжение.",
       "url": "/ru/heroes/tarzan/",
@@ -3107,9 +3651,25 @@
     {
       "language": "ru",
       "type": "heroe",
+      "title": "Тарзан · Сравнение уровней особого снаряжения",
+      "description": "Громовой кулак · Несокрушимость · Основные эффекты на ур. 1–15",
+      "url": "/ru/heroes/tarzan/#hero-primary-gear-levels-41",
+      "aliases": "Tarzan"
+    },
+    {
+      "language": "ru",
+      "type": "heroe",
       "title": "Тони — Навыки, характеристики и развитие | TilesSurvive.net",
       "description": "Подробная страница героя Тони в Tiles Survive. Здесь по SSR-герою собраны описание, боевые особенности, характеристики на максимальном уровне и звёздности, бонус звёздности, навыки и эксклюзивное снаряжение.",
       "url": "/ru/heroes/tony/",
+      "aliases": "Tony"
+    },
+    {
+      "language": "ru",
+      "type": "heroe",
+      "title": "Тони · Сравнение уровней особого снаряжения",
+      "description": "Звездный огонь · Фотонный барьер · Основные эффекты на ур. 1–15",
+      "url": "/ru/heroes/tony/#hero-primary-gear-levels-41",
       "aliases": "Tony"
     },
     {
@@ -3141,6 +3701,14 @@
       "title": "Ундина — Навыки, характеристики и развитие | TilesSurvive.net",
       "description": "Морские герои · SSR · Gunners · Навыки и эффекты",
       "url": "/ru/heroes/undine/",
+      "aliases": "Undine"
+    },
+    {
+      "language": "ru",
+      "type": "heroe",
+      "title": "Ундина · Сравнение уровней особого снаряжения",
+      "description": "Голос океана · Псалом океана · Основные эффекты на ур. 1–15",
+      "url": "/ru/heroes/undine/#hero-primary-gear-levels-41",
       "aliases": "Undine"
     },
     {
@@ -3178,6 +3746,14 @@
       "title": "Хирон — Навыки, характеристики и развитие | TilesSurvive.net",
       "description": "Подробная страница героя Хирон в Tiles Survive. Здесь по SSR-герою собраны описание героя, боевые особенности, характеристики на максимальном уровне и звёздности, бонус звёздности, навыки и эксклюзивное снаряжение.",
       "url": "/ru/heroes/kiron/",
+      "aliases": "Kiron Chiron"
+    },
+    {
+      "language": "ru",
+      "type": "heroe",
+      "title": "Хирон · Сравнение уровней особого снаряжения",
+      "description": "Губитель богов · Свистящий залп · Основные эффекты на ур. 1–15",
+      "url": "/ru/heroes/kiron/#hero-primary-gear-levels-41",
       "aliases": "Kiron Chiron"
     },
     {
@@ -3246,6 +3822,14 @@
     },
     {
       "language": "zh-tw",
+      "type": "heroe",
+      "title": "凱隆 · 專屬裝備等級比較",
+      "description": "神鋒長弓 · 箭鳴長嘯 · Lv.1–15主要效果",
+      "url": "/zh-tw/heroes/kiron/#hero-primary-gear-levels-41",
+      "aliases": "凱隆 Chiron"
+    },
+    {
+      "language": "zh-tw",
       "type": "database",
       "title": "巨獸細胞消耗表 | Tiles Survive 資料庫 | TilesSurvive.net",
       "description": "Tiles Survive 的巨獸細胞星級強化消耗表。可一眼查看 1 星到 60 星的各階段消耗、合計與累計。",
@@ -3305,9 +3889,25 @@
     {
       "language": "zh-tw",
       "type": "heroe",
+      "title": "尼古拉 · 專屬裝備等級比較",
+      "description": "超電磁砲 · 磁核爆轟 · Lv.1–15主要效果",
+      "url": "/zh-tw/heroes/nikola/#hero-primary-gear-levels-41",
+      "aliases": "尼古拉 Nikola"
+    },
+    {
+      "language": "zh-tw",
+      "type": "heroe",
       "title": "譚托尼 · 技能、屬性與養成 | TilesSurvive.net",
       "description": "Tiles Survive 英雄東尼詳細頁面。以 SSR 英雄為基準，整理英雄介紹、戰鬥特性、最大等級與星級屬性、星級追加效果、技能與專屬裝備，方便一次查看。",
       "url": "/zh-tw/heroes/tony/",
+      "aliases": "東尼 Tony"
+    },
+    {
+      "language": "zh-tw",
+      "type": "heroe",
+      "title": "譚托尼 · 專屬裝備等級比較",
+      "description": "星耀雷射槍 · 雷射風暴 · Lv.1–15主要效果",
+      "url": "/zh-tw/heroes/tony/#hero-primary-gear-levels-41",
       "aliases": "東尼 Tony"
     },
     {
@@ -3336,6 +3936,14 @@
     {
       "language": "zh-tw",
       "type": "heroe",
+      "title": "蘿絲 · 專屬裝備等級比較",
+      "description": "末日吉他 · 泣血音符 · Lv.1–15主要效果",
+      "url": "/zh-tw/heroes/rosie/#hero-primary-gear-levels-41",
+      "aliases": "蘿絲 Rosie"
+    },
+    {
+      "language": "zh-tw",
+      "type": "heroe",
       "title": "萊拉 · 技能、屬性與養成 | TilesSurvive.net",
       "description": "寒霜啟示錄英雄萊拉的詳細頁面。以SSR英雄為基準，可一眼查看英雄介紹、戰鬥特性、最大等級與星級屬性、星級加成、技能與專屬裝備。",
       "url": "/zh-tw/heroes/laila/",
@@ -3344,9 +3952,25 @@
     {
       "language": "zh-tw",
       "type": "heroe",
+      "title": "萊拉 · 專屬裝備等級比較",
+      "description": "復甦長鞭 · 曼妙舞姿 · Lv.1–15主要效果",
+      "url": "/zh-tw/heroes/laila/#hero-primary-gear-levels-41",
+      "aliases": "萊拉 Layla"
+    },
+    {
+      "language": "zh-tw",
+      "type": "heroe",
       "title": "萊特 · 技能、屬性與養成 | TilesSurvive.net",
       "description": "Tiles Survive 英雄萊特詳細頁面。以 SSR 英雄為基準，整理英雄介紹、戰鬥特性、最大等級與星級屬性、星級追加效果、技能與專屬裝備，方便一頁查看。",
       "url": "/zh-tw/heroes/light/",
+      "aliases": "萊特 Wright"
+    },
+    {
+      "language": "zh-tw",
+      "type": "heroe",
+      "title": "萊特 · 專屬裝備等級比較",
+      "description": "飛雲手槍 · 雲翔火線 · Lv.1–15主要效果",
+      "url": "/zh-tw/heroes/light/#hero-primary-gear-levels-41",
       "aliases": "萊特 Wright"
     },
     {
@@ -3388,6 +4012,14 @@
     {
       "language": "zh-tw",
       "type": "heroe",
+      "title": "雷 · 專屬裝備等級比較",
+      "description": "黑暗榴彈 · 末日爆炸 · Lv.1–15主要效果",
+      "url": "/zh-tw/heroes/ray/#hero-primary-gear-levels-41",
+      "aliases": "雷 Ray"
+    },
+    {
+      "language": "zh-tw",
+      "type": "heroe",
       "title": "雷格納 · 技能、屬性與養成 | TilesSurvive.net",
       "description": "Tiles Survive SSR 英雄拉格納詳細頁，整理海洋陣營、近戰定位、最高等級屬性、星級加成、技能與專屬裝備資訊。",
       "url": "/zh-tw/heroes/lagnar/",
@@ -3411,9 +4043,25 @@
     {
       "language": "zh-tw",
       "type": "heroe",
+      "title": "麥克 · 專屬裝備等級比較",
+      "description": "雷霆巨盾 · 雷霆之力 · Lv.1–15主要效果",
+      "url": "/zh-tw/heroes/mike/#hero-primary-gear-levels-41",
+      "aliases": "麥克 Mike"
+    },
+    {
+      "language": "zh-tw",
+      "type": "heroe",
       "title": "麥蒂 · 技能、屬性與養成 | TilesSurvive.net",
       "description": "寒霜啟示錄英雄麥蒂詳細頁面。以SSR英雄為基準，可一眼查看英雄介紹、戰鬥特性、Lv MAX屬性、星級加成、技能與專屬裝備。",
       "url": "/zh-tw/heroes/maddy/",
+      "aliases": "麥蒂 Maddie"
+    },
+    {
+      "language": "zh-tw",
+      "type": "heroe",
+      "title": "麥蒂 · 專屬裝備等級比較",
+      "description": "風暴狂弩 · 狂弩連射 · Lv.1–15主要效果",
+      "url": "/zh-tw/heroes/maddy/#hero-primary-gear-levels-41",
       "aliases": "麥蒂 Maddie"
     },
     {
@@ -3453,6 +4101,14 @@
       "title": "沙克 · 技能、屬性與養成 | TilesSurvive.net",
       "description": "鯊克是 Tiles Survive 的海洋陣營 SSR 近戰英雄。本頁整理 Wave Crash、沙克 Wave、Frontline Support、Deep Sea Invincible 與專屬裝備深海之錨。",
       "url": "/zh-tw/heroes/shark/",
+      "aliases": "鯊克 Shark"
+    },
+    {
+      "language": "zh-tw",
+      "type": "heroe",
+      "title": "沙克 · 專屬裝備等級比較",
+      "description": "深海巨錨 · 鐵錨防禦 · Lv.1–15主要效果",
+      "url": "/zh-tw/heroes/shark/#hero-primary-gear-levels-41",
       "aliases": "鯊克 Shark"
     },
     {
@@ -3568,6 +4224,14 @@
     {
       "language": "zh-tw",
       "type": "heroe",
+      "title": "雅各 · 專屬裝備等級比較",
+      "description": "笑面狂槍 · 狂笑風暴 · Lv.1–15主要效果",
+      "url": "/zh-tw/heroes/jacob/#hero-primary-gear-levels-41",
+      "aliases": "雅各 Jacob"
+    },
+    {
+      "language": "zh-tw",
+      "type": "heroe",
       "title": "阿結 · 技能、屬性與養成 | TilesSurvive.net",
       "description": "海洋英雄 · SSR · Marksmen · 技能與效果",
       "url": "/zh-tw/heroes/knotty/",
@@ -3629,6 +4293,14 @@
       "title": "溫蒂妮 · 技能、屬性與養成 | TilesSurvive.net",
       "description": "海洋英雄 · SSR · Gunners · 技能與效果",
       "url": "/zh-tw/heroes/undine/",
+      "aliases": "Undine"
+    },
+    {
+      "language": "zh-tw",
+      "type": "heroe",
+      "title": "溫蒂妮 · 專屬裝備等級比較",
+      "description": "海謠麥克 · 瀚海頌章 · Lv.1–15主要效果",
+      "url": "/zh-tw/heroes/undine/#hero-primary-gear-levels-41",
       "aliases": "Undine"
     },
     {
@@ -3783,6 +4455,14 @@
     },
     {
       "language": "zh-tw",
+      "type": "heroe",
+      "title": "緹緹 · 專屬裝備等級比較",
+      "description": "魔鯊雷射砲 · 炙熱之光 · Lv.1–15主要效果",
+      "url": "/zh-tw/heroes/kiki/#hero-primary-gear-levels-41",
+      "aliases": "奇奇 Kiki"
+    },
+    {
+      "language": "zh-tw",
       "type": "building",
       "title": "駐屯所 | Tiles Survive 建築 | TilesSurvive.net",
       "description": "Tiles Survive 駐屯所的最大兵力與士兵運用資訊整理頁面。",
@@ -3794,6 +4474,14 @@
       "title": "蔡宜蓁 · 技能、屬性與養成 | TilesSurvive.net",
       "description": "Tiles Survive 英雄蔡宜葵詳細頁面。以 SSR 英雄為基準，整理英雄介紹、戰鬥特性、最大等級與星級屬性、星級加成、技能與專屬裝備，方便一頁查看。",
       "url": "/zh-tw/heroes/candy/",
+      "aliases": "蔡宜葵 Candy"
+    },
+    {
+      "language": "zh-tw",
+      "type": "heroe",
+      "title": "蔡宜蓁 · 專屬裝備等級比較",
+      "description": "流影水彈槍 · 水影穿刺 · Lv.1–15主要效果",
+      "url": "/zh-tw/heroes/candy/#hero-primary-gear-levels-41",
       "aliases": "蔡宜葵 Candy"
     },
     {
@@ -3817,6 +4505,14 @@
       "title": "寵物圖鑑 · 7 | TilesSurvive.net",
       "description": "比較角色定位，並查閱已確認的成長資料。 取得蛋 → 孵化 → 餵食與訓練 → 英雄加成",
       "url": "/zh-tw/database/pet-system/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
+      "title": "寵物訓練費用與專用材料",
+      "description": "7種寵物0→5階段的訓練費用與專用材料。從每個階段起點加總，不扣除進行中的訓練進度。",
+      "url": "/zh-tw/database/pet-system/#pet-training-scope-41",
+      "aliases": "冰團 冰團（印記） 阿兜 阿兜（印記） 小盾 小盾（印記） 棉花 棉花（印記） 鐵頭 鐵頭（印記） 小影 小影（印記） 星角 星角（印記）"
     },
     {
       "language": "zh-tw",
@@ -3844,6 +4540,14 @@
     {
       "language": "zh-tw",
       "type": "heroe",
+      "title": "塔拉 · 專屬裝備等級比較",
+      "description": "天狼流星錘 · 狼星裂空 · Lv.1–15主要效果",
+      "url": "/zh-tw/heroes/tara/#hero-primary-gear-levels-41",
+      "aliases": "塔拉 Tara"
+    },
+    {
+      "language": "zh-tw",
+      "type": "heroe",
       "title": "泰山 · 技能、屬性與養成 | TilesSurvive.net",
       "description": "Tiles Survive 英雄泰山詳細頁面。以 SSR 英雄為基準，整理英雄介紹、戰鬥特性、Lv MAX 屬性、星級加成、技能與專屬裝備，方便一頁查看。",
       "url": "/zh-tw/heroes/tarzan/",
@@ -3852,9 +4556,25 @@
     {
       "language": "zh-tw",
       "type": "heroe",
+      "title": "泰山 · 專屬裝備等級比較",
+      "description": "雷霆鐵拳 · 金剛不壞 · Lv.1–15主要效果",
+      "url": "/zh-tw/heroes/tarzan/#hero-primary-gear-levels-41",
+      "aliases": "泰山 Tarzan"
+    },
+    {
+      "language": "zh-tw",
+      "type": "heroe",
       "title": "貝卡 · 技能、屬性與養成 | TilesSurvive.net",
       "description": "Tile Survive 英雄貝卡的詳細頁面。以 SSR 英雄為基準，可一眼查看英雄介紹、戰鬥特性、最大等級與星級屬性、星級加成、技能與專屬裝備。",
       "url": "/zh-tw/heroes/beka/",
+      "aliases": "貝卡 Becca"
+    },
+    {
+      "language": "zh-tw",
+      "type": "heroe",
+      "title": "貝卡 · 專屬裝備等級比較",
+      "description": "穿雲狙擊槍 · 銳風穿甲 · Lv.1–15主要效果",
+      "url": "/zh-tw/heroes/beka/#hero-primary-gear-levels-41",
       "aliases": "貝卡 Becca"
     },
     {

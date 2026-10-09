@@ -61,6 +61,13 @@ for (const language of LANGS) {
     items.push({language, type: 'database', title: t[item.id], description: `${item.nameKo} · ${t[item.use]} · ${t.itemTitle}`, url: `/${language}/database/items/#${item.id}`});
   }
 }
+// Add exact, visible comparison destinations; keep every existing entry unchanged.
+for (const item of require('./lib/search-additions-41').entries()) {
+  const [route, anchor] = item.url.split('#');
+  const page = path.join(ROOT, route, 'index.html');
+  if (!fs.existsSync(page) || !fs.readFileSync(page, 'utf8').includes(`id="${anchor}"`)) throw new Error(`Missing reviewed search anchor: ${item.url}`);
+  items.push(item);
+}
 items.sort((a, b) => a.language.localeCompare(b.language) || a.title.localeCompare(b.title));
 const output = { generatedAt: new Date().toISOString(), itemCount: items.length, items };
 const target = path.join(ROOT, "data", "search-index.json");

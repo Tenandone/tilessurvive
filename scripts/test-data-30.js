@@ -1,6 +1,7 @@
 const fs=require('fs'),path=require('path'),assert=require('node:assert/strict'),crypto=require('crypto'),{execFileSync}=require('node:child_process'),{parseHTML}=require('linkedom');
 const root=path.resolve(__dirname,'..'),release='9ab98dc28ac8cd8e8bb8dbf94b61385be8f8e9e1',languages=['ko','en','ja','ru','zh-tw'];
 const allowances=require('./foundation-40-test-allowances'),starhorn=require('../data/foundation-40/starhorn-growth.json'),hatchingCopy=require('../data/foundation-40/pet-hatching-copy');
+const patch41=require('./integration-41-test-allowances');
 // Read immutable Git blobs in one batch. A mutable adjacent checkout cannot weaken this baseline.
 const tree=execFileSync('git',['ls-tree','-r','-z',release,'--',...languages,'js/platform-math.js','js/database-22.js','js/tools-speedup-calculator.js','data/expansion-22/database.json'],{cwd:root,encoding:'utf8'}).split('\0').filter(Boolean).map(line=>{const [meta,file]=line.split('\t');return{file,sha:meta.split(' ')[2]};}).filter(entry=>entry.file.endsWith('.html')||entry.file.startsWith('js/')||entry.file==='data/expansion-22/database.json');
 const blobs=execFileSync('git',['cat-file','--batch'],{cwd:root,input:tree.map(entry=>entry.sha).join('\n')+'\n',maxBuffer:64*1024*1024});
@@ -24,7 +25,8 @@ function reviewedTableRows(table,relative){
  const model=table.id==='ts3-data-table-2'?starhorn.expRows:table.id==='ts3-data-table-3'?starhorn.trainingRows:null;
  if(model){
   // expectedRows first verifies every old non-null cost. The full table then includes only explicit source rows.
-  let total=0;return[originalRows[0],...model.map(row=>{total+=row.cost;return[`${row.from} → ${row.to}`,row.cost.toLocaleString('en-US'),total.toLocaleString('en-US')];})];
+  const headings=table.id==='ts3-data-table-3'?patch41.trainingHeadings[lang]:originalRows[0];
+  let total=0;return[headings,...model.map(row=>{total+=row.cost;return[`${row.from} → ${row.to}`,row.cost.toLocaleString('en-US'),total.toLocaleString('en-US')];})];
  }
  if(table.id==='ts3-data-table-4')return[...expected,['5','100%']];
  return expected;
@@ -36,6 +38,7 @@ for(const lang of languages){
  for(const file of walk(path.join(root,lang)).filter(f=>f.endsWith('.html'))){
   const d=read(file);if(!d.querySelector('.ts3-data-page'))continue;
   const rel=path.relative(root,file).replaceAll('\\','/');const hasOriginal=baselineFiles.has(rel);
+  if(allowances.petHub(rel))patch41.assertPetSelection(d,lang);
   ok(d.querySelector('script[src^="/js/data-workbench-30.js"]'),rel+' data script');
   ok(d.querySelector('link[href^="/css/data-workbench-30.css"]'),rel+' data CSS');
   if(hasOriginal){

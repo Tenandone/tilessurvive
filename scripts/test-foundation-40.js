@@ -6,6 +6,7 @@ const fs = require('fs'), path = require('path'), crypto = require('crypto'), vm
 const { execFileSync } = require('child_process');
 const { parseHTML } = require('linkedom');
 const delta=require('./foundation-40-test-allowances');
+const patch41=require('./integration-41-test-allowances');
 const root = path.resolve(__dirname, '..'), langs = ['ko', 'en', 'ja', 'ru', 'zh-tw'];
 const release = '9ab98dc28ac8cd8e8bb8dbf94b61385be8f8e9e1';
 const out = path.resolve(process.env.TS_FOUNDATION_AUDIT_DIR || path.join(root, '../audit-results/game-observations-20261009/foundation-40/site-tests'));
@@ -184,15 +185,21 @@ function verifyPage(file, old) {
   }
   if (file === `${lang}/database/pet-system/index.html`) {
     const scope = d.getElementById('pet-exp-scope-40'), form = d.querySelector('[data-growth-form="petExp"]');
-    check(d.querySelectorAll('#pet-exp-scope-40').length === 1 && text(scope)===norm(delta.petExpScope(file)), 'Exact seven-pet EXP scope with default Starhorn and Starhorn-only training ' + route);
+    check(d.querySelectorAll('#pet-exp-scope-40').length === 1 && text(scope)===norm(patch41.expScope[lang]), 'Exact seven-pet shared EXP and training scope with default Starhorn ' + route);
     check(form?.getAttribute('aria-describedby')?.split(/\s+/).includes('pet-exp-scope-40'), 'EXP scope associated with existing form ' + route);
+    patch41.assertPetSelection(d,lang);
+    check(d.querySelector('[data-growth-form="petTraining"]')?.getAttribute('aria-describedby')?.split(/\s+/).includes('pet-training-scope-41'), 'Seven-pet training scope associated with existing form ' + route);
   }
   const observedPet = dataPet.pets.find(p => file === `${lang}/database/pet-system/${p.id}/index.html`);
   if (observedPet) {
     const points = [...d.querySelectorAll('[data-pet-exp-point-40]')], exp = observedPet.expObservation;
     check(points.length === 1 && points[0].getAttribute('data-pet-exp-point-40') === observedPet.id && text(points[0]) === `Lv.${exp.level} → ${exp.level + 1}: ${exp.threshold.toLocaleString('en-US')} EXP`, 'Exact single observed pet EXP point survives build ' + route);
   }
-  const allowedNewRows = [...verifyHeroAdditions(d, file),...delta.petExpRows(file)];
+  // Validate both complete new tables against the pinned, reviewed model before
+  // admitting their rows. Every pre-existing row still enters the multiset below.
+  const approvedGearTables41=patch41.reviewedGearTables(d,lang,route);
+  const approvedGearRows41=[...approvedGearTables41].flatMap(table=>[...table.querySelectorAll('tr')].filter(r=>r.querySelector('td')&&/\d/.test(text(r))).map(r=>[...r.children].filter(c=>/^(TD|TH)$/.test(c.tagName)).map(text)));
+  const allowedNewRows = [...verifyHeroAdditions(d, file),...delta.petExpRows(file),...approvedGearRows41];
   if (['events/index.html','tools/index.html'].includes(file.slice(lang.length + 1))) {
     const entries = [...d.querySelectorAll('[data-daily-missions-entry] a')];
     check(entries.length === 1 && entries[0].href === `/${lang}/events/daily-missions/` && text(entries[0]) === norm(dailyCopy[lang].title + ' →'), 'One localized daily-mission entry on existing hub ' + route);
@@ -365,13 +372,13 @@ for (const lang of langs) for (const item of explorer.items) {
   check(indexed?.language === lang && indexed.title === localized[lang][item.id], 'Localized item search entry ' + url);
   check(!!load(path.join(root, lang, 'database/items/index.html')).getElementById(item.id), 'Item search anchor destination ' + url);
 }
-check(same(search.items.map(item => item.url).sort(), [...searchOld.items.map(item => item.url), ...addedPages.map(routeFor), ...langs.flatMap(lang => explorer.items.map(item => `/${lang}/database/items/#${item.id}`))].sort()), 'Search adds only fifteen pages and forty curated item anchors');
+check(same(search.items.map(item => item.url).sort(), [...searchOld.items.map(item => item.url), ...addedPages.map(routeFor), ...langs.flatMap(lang => explorer.items.map(item => `/${lang}/database/items/#${item.id}`)), ...require('./lib/search-additions-41').entries().map(item=>item.url)].sort()), 'Exact approved page, item, gear-comparison and pet-training search destinations');
 for (const file of ['js/foundation-40.js', 'js/foundation-40-math.js', 'js/daily-missions-40.js','js/pet-exp-profiles-40.js','js/sea-hero-growth-40.js']) {
   try { new vm.Script(read(root, file)); counts.scriptSyntax++; check(true, ''); } catch (e) { check(false, 'New JS syntax ' + file + ': ' + e.message); }
 }
 check(counts.baselinePages === 473 && counts.newPages === 20, '473 preserved language pages and twenty approved new pages');
 check(counts.heroBanners === 140, '135 preserved plus five approved Dave hero banner placements');
-for(const [script,args]of [['test-hero-skill-levels-40.js',[]],['test-dave-40.js',[]],['test-pet-growth-40.js',['--source-only']],['test-official-locales-40.js',[]],['test-pet-exp-profiles-40.js',[]],['test-sea-hero-growth-40.js',[]]]){
+for(const [script,args]of [['test-hero-skill-levels-40.js',[]],['test-dave-40.js',[]],['test-pet-growth-40.js',['--source-only']],['test-official-locales-40.js',[]],['test-pet-exp-profiles-40.js',[]],['test-sea-hero-growth-40.js',[]],['test-search-additions-41.js',[]]]){
  try{execFileSync(process.execPath,[path.join(__dirname,script),...args],{cwd:root,encoding:'utf8'});check(true,'');}catch(e){check(false,'Exact reviewed model and component checks '+script+': '+String(e.stdout||e.message).slice(-1500));}
 }
 const result = { release, checkedAt: new Date().toISOString(), checks, counts, allowances, baselineCheckoutLineEndings, errors, passed: errors.length === 0, scope: 'Static and source regression against immutable 9ab98dc. Existing routes, exact canonical/hreflang, numerical rows, calculator configs and formula hashes, coupon logic, art and affiliate markup. New page JSON/search/sitemap/link/syntax validation. No browser/mobile/production/purchase claims.' };

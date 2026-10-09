@@ -10,6 +10,7 @@ const copy = require('../data/foundation-40/pet-growth-copy');
 const hatch = require('../data/foundation-40/pet-hatching.json');
 const hatchCopy = require('../data/foundation-40/pet-hatching-copy');
 const delta = require('./foundation-40-test-allowances');
+const patch41 = require('./integration-41-test-allowances');
 const root = path.resolve(__dirname, '..'), languages = ['ko','en','ja','ru','zh-tw'];
 const legacyExp = [[41,2300],[42,2400],[43,2600],[44,2600],[45,2800],[46,2900],[47,3100],[48,3200],[49,3400],[50,3500],[51,3700],[52,3900],[53,4000],[54,4200],[55,4300],[56,4600],[57,4700],[58,4900],[59,5100],[60,5300],[61,5600],[62,5700],[63,6000],[64,6200],[65,6400],[66,6500],[67,6800],[68,7100],[69,7300],[70,7500],[71,7700],[72,8100],[73,8200],[74,8600],[75,8800],[76,9100],[77,9300],[78,9700],[79,9900],[80,10100],[81,10500],[82,10700],[83,11300],[84,11300],[85,11800],[87,12500],[88,12600],[89,13100],[90,13400],[91,13600],[92,14100],[93,14300],[94,15000],[95,15000]];
 const artIds = ['snowball','dodo','buckler','fluffy','hardhead','shadow','starhorn'];
@@ -73,11 +74,12 @@ test('All 17 displayed hatching percentages retain rounding, nulls and existing 
 if(!process.argv.includes('--source-only')) for(const lang of languages) test(`${lang}: static EXP/training, cumulative totals, accessible scope and seven original game portraits`, () => {
   const document=parseHTML(fs.readFileSync(path.join(root,lang,'database/pet-system/index.html'),'utf8')).document;
   const section=document.getElementById('pet-data-22');
-  assert.equal(text(document.getElementById('pet-exp-scope-40')),delta.petExpScope(lang+'/database/pet-system/index.html'));
+  assert.equal(text(document.getElementById('pet-exp-scope-40')),patch41.expScope[lang]);
+  patch41.assertPetSelection(document,lang);
   for(const [key,model,total] of [['petExp',growth.expRows,513870],['petTraining',growth.trainingRows,2000]]) {
     const form=section.querySelector(`[data-growth-form="${key}"]`),config=JSON.parse(form.querySelector('script').textContent);
     assert.deepEqual(config.rows,model);
-    assert.ok(form.getAttribute('aria-describedby').split(' ').includes('pet-exp-scope-40'));
+    assert.ok(form.getAttribute('aria-describedby').split(' ').includes(key==='petExp'?'pet-exp-scope-40':'pet-training-scope-41'));
     assert.equal(form.querySelector('[name="from"]').getAttribute('min'),String(model[0].from));
     assert.equal(form.querySelector('[name="to"]').getAttribute('max'),String(model.at(-1).to));
     const table=document.getElementById(form.dataset.growthTable);assert.ok(table);assert.equal(table.tagName,'TABLE');const rows=[...table.querySelectorAll('tbody tr')];
