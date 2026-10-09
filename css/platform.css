@@ -967,5 +967,19 @@ html.ts-platform #aLineK {
   color: #536660;
 }
 
-html.ts-platform .ts-skill .ability-card__thumb { display: none; }
-html.ts-platform .ability-grid { align-items: start; }
+html.ts-platform .ts-skill .ability-card__thumb {
+  display: none;
+}
+html.ts-platform .ability-grid {
+  align-items: start;
+}
+html.ts-platform main li {
+  overflow-wrap: anywhere;
+}
+html.ts-platform .lab,
+html.ts-platform .metaLine {
+  color: #536660 !important;
+}
+html.ts-platform .metaLine * {
+  color: inherit !important;
+}

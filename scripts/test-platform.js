@@ -74,6 +74,38 @@ for (const l of langs)
     if (!fs.existsSync(file)) continue;
     const old = parseHTML(fs.readFileSync(original, "utf8")).document,
       d = parseHTML(fs.readFileSync(file, "utf8")).document;
+    const compact = (value) => value.replace(/\s+/g, "").trim();
+    const currentScripts = [...d.querySelectorAll("script:not([src])")].map(
+      (s) => compact(s.textContent),
+    );
+    for (const script of old.querySelectorAll("script:not([src])")) {
+      if (script.type === "application/ld+json") continue;
+      if (
+        /function openDrawer|function updateBottomNavActive|var LANGS\s*=|const LANGS\s*=/.test(
+          script.textContent,
+        )
+      )
+        continue;
+      check(
+        currentScripts.includes(compact(script.textContent)),
+        "Inline feature script removed " + route,
+      );
+    }
+    if (/\/(codes|guides\/gift-code-how-to-use)\/$/.test(route)) {
+      const app = d.querySelector("script[data-coupon-app]")?.textContent || "";
+      check(
+        app.includes("loadCoupons") &&
+          app.includes("tilessurvive-coupons.json") &&
+          app.length > 5000,
+        "Coupon application missing " + route,
+      );
+      try {
+        new (require("node:vm").Script)(app);
+        check(true, "");
+      } catch {
+        check(false, "Coupon script syntax " + route);
+      }
+    }
     if (/\/(heroes|buildings|database|behemoths)\//.test(route)) {
       const content = text(d.querySelector("main"));
       for (const node of old.querySelectorAll(
