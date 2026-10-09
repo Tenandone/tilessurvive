@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T11:14:13.555Z",
+  "generatedAt": "2026-10-09T11:19:54.856Z",
   "itemCount": 465,
   "items": [
     {
@@ -55,7 +55,7 @@
       "language": "en",
       "type": "database",
       "title": "Buckler · Pet growth & acquisition | TilesSurvive.net",
-      "description": "Rounding can make totals differ slightly from 100%. — means absent from the source, not a confirmed 0%. Eggs come from Intel Missions; unlocks depend on State progression. Complete skill sets, resonance combinations and full stat growth remain unconfirmed.",
+      "description": "Role: Defender · Acquisition probability · Observed stats",
       "url": "/en/database/pet-system/buckler/"
     },
     {
@@ -104,7 +104,7 @@
       "language": "en",
       "type": "database",
       "title": "Dodo · Pet growth & acquisition | TilesSurvive.net",
-      "description": "Rounding can make totals differ slightly from 100%. — means absent from the source, not a confirmed 0%. Eggs come from Intel Missions; unlocks depend on State progression. Complete skill sets, resonance combinations and full stat growth remain unconfirmed.",
+      "description": "Role: Attacker · Acquisition probability · Observed stats",
       "url": "/en/database/pet-system/dodo/"
     },
     {
@@ -146,7 +146,7 @@
       "language": "en",
       "type": "database",
       "title": "Fluffy · Pet growth & acquisition | TilesSurvive.net",
-      "description": "Rounding can make totals differ slightly from 100%. — means absent from the source, not a confirmed 0%. Eggs come from Intel Missions; unlocks depend on State progression. Complete skill sets, resonance combinations and full stat growth remain unconfirmed.",
+      "description": "Role: Support · Acquisition probability · Observed stats",
       "url": "/en/database/pet-system/fluffy/"
     },
     {
@@ -202,7 +202,7 @@
       "language": "en",
       "type": "database",
       "title": "Hardhead · Pet growth & acquisition | TilesSurvive.net",
-      "description": "Rounding can make totals differ slightly from 100%. — means absent from the source, not a confirmed 0%. Eggs come from Intel Missions; unlocks depend on State progression. Complete skill sets, resonance combinations and full stat growth remain unconfirmed.",
+      "description": "Role: Attacker · Acquisition probability · Observed stats",
       "url": "/en/database/pet-system/hardhead/"
     },
     {
@@ -419,7 +419,7 @@
       "language": "en",
       "type": "database",
       "title": "Shadow · Pet growth & acquisition | TilesSurvive.net",
-      "description": "Rounding can make totals differ slightly from 100%. — means absent from the source, not a confirmed 0%. Eggs come from Intel Missions; unlocks depend on State progression. Complete skill sets, resonance combinations and full stat growth remain unconfirmed.",
+      "description": "Role: Attacker · Acquisition probability · Observed stats",
       "url": "/en/database/pet-system/shadow/"
     },
     {
@@ -440,7 +440,7 @@
       "language": "en",
       "type": "database",
       "title": "Snowball · Pet growth & acquisition | TilesSurvive.net",
-      "description": "Rounding can make totals differ slightly from 100%. — means absent from the source, not a confirmed 0%. Eggs come from Intel Missions; unlocks depend on State progression. Complete skill sets, resonance combinations and full stat growth remain unconfirmed.",
+      "description": "Role: Support · Acquisition probability · Observed stats",
       "url": "/en/database/pet-system/snowball/"
     },
     {
@@ -825,28 +825,28 @@
       "language": "ja",
       "type": "database",
       "title": "Buckler · ペットの成長・入手 | TilesSurvive.net",
-      "description": "丸めにより合計が100%とわずかに異なる場合があります。—は出典に記載なしを示し、0%確定ではありません。卵は情報任務で入手し、解放は州の進行状況によります。全スキル表・共鳴の組合せ・全成長能力値は未確認です。",
+      "description": "役割: 防御 · 入手確率 · 観測ステータス",
       "url": "/ja/database/pet-system/buckler/"
     },
     {
       "language": "ja",
       "type": "database",
       "title": "Dodo · ペットの成長・入手 | TilesSurvive.net",
-      "description": "丸めにより合計が100%とわずかに異なる場合があります。—は出典に記載なしを示し、0%確定ではありません。卵は情報任務で入手し、解放は州の進行状況によります。全スキル表・共鳴の組合せ・全成長能力値は未確認です。",
+      "description": "役割: 攻撃 · 入手確率 · 観測ステータス",
       "url": "/ja/database/pet-system/dodo/"
     },
     {
       "language": "ja",
       "type": "database",
       "title": "Fluffy · ペットの成長・入手 | TilesSurvive.net",
-      "description": "丸めにより合計が100%とわずかに異なる場合があります。—は出典に記載なしを示し、0%確定ではありません。卵は情報任務で入手し、解放は州の進行状況によります。全スキル表・共鳴の組合せ・全成長能力値は未確認です。",
+      "description": "役割: 支援 · 入手確率 · 観測ステータス",
       "url": "/ja/database/pet-system/fluffy/"
     },
     {
       "language": "ja",
       "type": "database",
       "title": "Hardhead · ペットの成長・入手 | TilesSurvive.net",
-      "description": "丸めにより合計が100%とわずかに異なる場合があります。—は出典に記載なしを示し、0%確定ではありません。卵は情報任務で入手し、解放は州の進行状況によります。全スキル表・共鳴の組合せ・全成長能力値は未確認です。",
+      "description": "役割: 攻撃 · 入手確率 · 観測ステータス",
       "url": "/ja/database/pet-system/hardhead/"
     },
     {
@@ -860,14 +860,14 @@
       "language": "ja",
       "type": "database",
       "title": "Shadow · ペットの成長・入手 | TilesSurvive.net",
-      "description": "丸めにより合計が100%とわずかに異なる場合があります。—は出典に記載なしを示し、0%確定ではありません。卵は情報任務で入手し、解放は州の進行状況によります。全スキル表・共鳴の組合せ・全成長能力値は未確認です。",
+      "description": "役割: 攻撃 · 入手確率 · 観測ステータス",
       "url": "/ja/database/pet-system/shadow/"
     },
     {
       "language": "ja",
       "type": "database",
       "title": "Snowball · ペットの成長・入手 | TilesSurvive.net",
-      "description": "丸めにより合計が100%とわずかに異なる場合があります。—は出典に記載なしを示し、0%確定ではありません。卵は情報任務で入手し、解放は州の進行状況によります。全スキル表・共鳴の組合せ・全成長能力値は未確認です。",
+      "description": "役割: 支援 · 入手確率 · 観測ステータス",
       "url": "/ja/database/pet-system/snowball/"
     },
     {
@@ -1336,7 +1336,7 @@
       "language": "ko",
       "type": "database",
       "title": "도도 · Dodo · 펫 성장·획득 데이터 | TilesSurvive.net",
-      "description": "소수점 반올림으로 합계가 100%와 약간 다를 수 있습니다. —는 출처에 없는 항목이며 0% 확정값이 아닙니다. 알은 정보 임무에서 획득하며 해금은 서버 진행도에 따릅니다. 전체 스킬표·공명 조합·전체 성장 능력치는 미확인입니다.",
+      "description": "역할: 공격 · 획득 확률 · 관측 능력치",
       "url": "/ko/database/pet-system/dodo/"
     },
     {
@@ -1434,7 +1434,7 @@
       "language": "ko",
       "type": "database",
       "title": "버클러 · Buckler · 펫 성장·획득 데이터 | TilesSurvive.net",
-      "description": "소수점 반올림으로 합계가 100%와 약간 다를 수 있습니다. —는 출처에 없는 항목이며 0% 확정값이 아닙니다. 알은 정보 임무에서 획득하며 해금은 서버 진행도에 따릅니다. 전체 스킬표·공명 조합·전체 성장 능력치는 미확인입니다.",
+      "description": "역할: 방어 · 획득 확률 · 관측 능력치",
       "url": "/ko/database/pet-system/buckler/"
     },
     {
@@ -1511,21 +1511,21 @@
       "language": "ko",
       "type": "database",
       "title": "솜솜 · Fluffy · 펫 성장·획득 데이터 | TilesSurvive.net",
-      "description": "소수점 반올림으로 합계가 100%와 약간 다를 수 있습니다. —는 출처에 없는 항목이며 0% 확정값이 아닙니다. 알은 정보 임무에서 획득하며 해금은 서버 진행도에 따릅니다. 전체 스킬표·공명 조합·전체 성장 능력치는 미확인입니다.",
+      "description": "역할: 지원 · 획득 확률 · 관측 능력치",
       "url": "/ko/database/pet-system/fluffy/"
     },
     {
       "language": "ko",
       "type": "database",
       "title": "쉐도우 · Shadow · 펫 성장·획득 데이터 | TilesSurvive.net",
-      "description": "소수점 반올림으로 합계가 100%와 약간 다를 수 있습니다. —는 출처에 없는 항목이며 0% 확정값이 아닙니다. 알은 정보 임무에서 획득하며 해금은 서버 진행도에 따릅니다. 전체 스킬표·공명 조합·전체 성장 능력치는 미확인입니다.",
+      "description": "역할: 공격 · 획득 확률 · 관측 능력치",
       "url": "/ko/database/pet-system/shadow/"
     },
     {
       "language": "ko",
       "type": "database",
       "title": "스노우볼 · Snowball · 펫 성장·획득 데이터 | TilesSurvive.net",
-      "description": "소수점 반올림으로 합계가 100%와 약간 다를 수 있습니다. —는 출처에 없는 항목이며 0% 확정값이 아닙니다. 알은 정보 임무에서 획득하며 해금은 서버 진행도에 따릅니다. 전체 스킬표·공명 조합·전체 성장 능력치는 미확인입니다.",
+      "description": "역할: 지원 · 획득 확률 · 관측 능력치",
       "url": "/ko/database/pet-system/snowball/"
     },
     {
@@ -1721,7 +1721,7 @@
       "language": "ko",
       "type": "database",
       "title": "철두 · Hardhead · 펫 성장·획득 데이터 | TilesSurvive.net",
-      "description": "소수점 반올림으로 합계가 100%와 약간 다를 수 있습니다. —는 출처에 없는 항목이며 0% 확정값이 아닙니다. 알은 정보 임무에서 획득하며 해금은 서버 진행도에 따릅니다. 전체 스킬표·공명 조합·전체 성장 능력치는 미확인입니다.",
+      "description": "역할: 공격 · 획득 확률 · 관측 능력치",
       "url": "/ko/database/pet-system/hardhead/"
     },
     {
@@ -1973,7 +1973,7 @@
       "language": "ru",
       "type": "database",
       "title": "Buckler · Развитие и получение питомцев | TilesSurvive.net",
-      "description": "Из-за округления сумма может немного отличаться от 100%. — означает отсутствие данных, а не подтверждённые 0%. Яйца дают разведзадания; доступ зависит от прогресса штата. Полные наборы навыков, сочетания резонанса и полный рост характеристик не подтверждены.",
+      "description": "Роль: Защита · Вероятность получения · Зафиксированные характеристики",
       "url": "/ru/database/pet-system/buckler/"
     },
     {
@@ -1994,7 +1994,7 @@
       "language": "ru",
       "type": "database",
       "title": "Dodo · Развитие и получение питомцев | TilesSurvive.net",
-      "description": "Из-за округления сумма может немного отличаться от 100%. — означает отсутствие данных, а не подтверждённые 0%. Яйца дают разведзадания; доступ зависит от прогресса штата. Полные наборы навыков, сочетания резонанса и полный рост характеристик не подтверждены.",
+      "description": "Роль: Атака · Вероятность получения · Зафиксированные характеристики",
       "url": "/ru/database/pet-system/dodo/"
     },
     {
@@ -2008,7 +2008,7 @@
       "language": "ru",
       "type": "database",
       "title": "Fluffy · Развитие и получение питомцев | TilesSurvive.net",
-      "description": "Из-за округления сумма может немного отличаться от 100%. — означает отсутствие данных, а не подтверждённые 0%. Яйца дают разведзадания; доступ зависит от прогресса штата. Полные наборы навыков, сочетания резонанса и полный рост характеристик не подтверждены.",
+      "description": "Роль: Поддержка · Вероятность получения · Зафиксированные характеристики",
       "url": "/ru/database/pet-system/fluffy/"
     },
     {
@@ -2029,7 +2029,7 @@
       "language": "ru",
       "type": "database",
       "title": "Hardhead · Развитие и получение питомцев | TilesSurvive.net",
-      "description": "Из-за округления сумма может немного отличаться от 100%. — означает отсутствие данных, а не подтверждённые 0%. Яйца дают разведзадания; доступ зависит от прогресса штата. Полные наборы навыков, сочетания резонанса и полный рост характеристик не подтверждены.",
+      "description": "Роль: Атака · Вероятность получения · Зафиксированные характеристики",
       "url": "/ru/database/pet-system/hardhead/"
     },
     {
@@ -2162,7 +2162,7 @@
       "language": "ru",
       "type": "database",
       "title": "Shadow · Развитие и получение питомцев | TilesSurvive.net",
-      "description": "Из-за округления сумма может немного отличаться от 100%. — означает отсутствие данных, а не подтверждённые 0%. Яйца дают разведзадания; доступ зависит от прогресса штата. Полные наборы навыков, сочетания резонанса и полный рост характеристик не подтверждены.",
+      "description": "Роль: Атака · Вероятность получения · Зафиксированные характеристики",
       "url": "/ru/database/pet-system/shadow/"
     },
     {
@@ -2176,7 +2176,7 @@
       "language": "ru",
       "type": "database",
       "title": "Snowball · Развитие и получение питомцев | TilesSurvive.net",
-      "description": "Из-за округления сумма может немного отличаться от 100%. — означает отсутствие данных, а не подтверждённые 0%. Яйца дают разведзадания; доступ зависит от прогресса штата. Полные наборы навыков, сочетания резонанса и полный рост характеристик не подтверждены.",
+      "description": "Роль: Поддержка · Вероятность получения · Зафиксированные характеристики",
       "url": "/ru/database/pet-system/snowball/"
     },
     {
@@ -3135,28 +3135,28 @@
       "language": "zh-tw",
       "type": "database",
       "title": "Buckler · 寵物成長與取得 | TilesSurvive.net",
-      "description": "四捨五入可能使總和略偏離100%。—表示來源未列出，並非確認為0%。蛋由情報任務取得，解鎖依伺服器進度而定。完整技能表、共鳴組合與完整成長屬性仍待確認。",
+      "description": "定位: 防禦 · 取得機率 · 觀測屬性",
       "url": "/zh-tw/database/pet-system/buckler/"
     },
     {
       "language": "zh-tw",
       "type": "database",
       "title": "Dodo · 寵物成長與取得 | TilesSurvive.net",
-      "description": "四捨五入可能使總和略偏離100%。—表示來源未列出，並非確認為0%。蛋由情報任務取得，解鎖依伺服器進度而定。完整技能表、共鳴組合與完整成長屬性仍待確認。",
+      "description": "定位: 攻擊 · 取得機率 · 觀測屬性",
       "url": "/zh-tw/database/pet-system/dodo/"
     },
     {
       "language": "zh-tw",
       "type": "database",
       "title": "Fluffy · 寵物成長與取得 | TilesSurvive.net",
-      "description": "四捨五入可能使總和略偏離100%。—表示來源未列出，並非確認為0%。蛋由情報任務取得，解鎖依伺服器進度而定。完整技能表、共鳴組合與完整成長屬性仍待確認。",
+      "description": "定位: 支援 · 取得機率 · 觀測屬性",
       "url": "/zh-tw/database/pet-system/fluffy/"
     },
     {
       "language": "zh-tw",
       "type": "database",
       "title": "Hardhead · 寵物成長與取得 | TilesSurvive.net",
-      "description": "四捨五入可能使總和略偏離100%。—表示來源未列出，並非確認為0%。蛋由情報任務取得，解鎖依伺服器進度而定。完整技能表、共鳴組合與完整成長屬性仍待確認。",
+      "description": "定位: 攻擊 · 取得機率 · 觀測屬性",
       "url": "/zh-tw/database/pet-system/hardhead/"
     },
     {
@@ -3170,14 +3170,14 @@
       "language": "zh-tw",
       "type": "database",
       "title": "Shadow · 寵物成長與取得 | TilesSurvive.net",
-      "description": "四捨五入可能使總和略偏離100%。—表示來源未列出，並非確認為0%。蛋由情報任務取得，解鎖依伺服器進度而定。完整技能表、共鳴組合與完整成長屬性仍待確認。",
+      "description": "定位: 攻擊 · 取得機率 · 觀測屬性",
       "url": "/zh-tw/database/pet-system/shadow/"
     },
     {
       "language": "zh-tw",
       "type": "database",
       "title": "Snowball · 寵物成長與取得 | TilesSurvive.net",
-      "description": "四捨五入可能使總和略偏離100%。—表示來源未列出，並非確認為0%。蛋由情報任務取得，解鎖依伺服器進度而定。完整技能表、共鳴組合與完整成長屬性仍待確認。",
+      "description": "定位: 支援 · 取得機率 · 觀測屬性",
       "url": "/zh-tw/database/pet-system/snowball/"
     },
     {
