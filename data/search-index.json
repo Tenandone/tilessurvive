@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-09T10:37:50.594Z",
-  "itemCount": 415,
+  "generatedAt": "2026-10-09T11:14:13.555Z",
+  "itemCount": 465,
   "items": [
     {
       "language": "en",
@@ -25,6 +25,13 @@
     },
     {
       "language": "en",
+      "type": "event",
+      "title": "Arcadian Conquest · occupation rules | TilesSurvive.net",
+      "description": "The siege lasts 3 hours. Victory requires 90 minutes of cumulative occupation or the longest total occupation. Four towers remove 2% of garrison troops per strike; intervals decrease from 4 to 1 minute as occupation continues. Arcadia or tower occupation gives 10,000 points per 60 seconds. Rallies support 5 allied teams. Alert-zone settlements relocate 60 minutes before start; relocation is free and Peace Flares disabled from 50 minutes before start to the end. Each Chief receives at most one Governor Pack per event. Troop-tier casualty/kill points and reward quantities are unconfirmed.",
+      "url": "/en/events/arcadian-conquest/"
+    },
+    {
+      "language": "en",
       "type": "heroe",
       "title": "Becca | Tiles Survive Hero | TilesSurvive.net",
       "description": "Detailed Becca hero page for Tiles Survive. Check hero story, combat traits, max level and star stats, star bonus, skills, and signature weapon in one place.",
@@ -43,6 +50,13 @@
       "title": "Blessed Healing Stele | Tiles Survive Buildings | TilesSurvive.net",
       "description": "Detailed page for the Blessed Healing Stele in Tiles Survive, including its overview, light wound conversion rate, and power by level.",
       "url": "/en/buildings/blessed-healing-stele/"
+    },
+    {
+      "language": "en",
+      "type": "database",
+      "title": "Buckler · Pet growth & acquisition | TilesSurvive.net",
+      "description": "Rounding can make totals differ slightly from 100%. — means absent from the source, not a confirmed 0%. Eggs come from Intel Missions; unlocks depend on State progression. Complete skill sets, resonance combinations and full stat growth remain unconfirmed.",
+      "url": "/en/database/pet-system/buckler/"
     },
     {
       "language": "en",
@@ -88,10 +102,24 @@
     },
     {
       "language": "en",
+      "type": "database",
+      "title": "Dodo · Pet growth & acquisition | TilesSurvive.net",
+      "description": "Rounding can make totals differ slightly from 100%. — means absent from the source, not a confirmed 0%. Eggs come from Intel Missions; unlocks depend on State progression. Complete skill sets, resonance combinations and full stat growth remain unconfirmed.",
+      "url": "/en/database/pet-system/dodo/"
+    },
+    {
+      "language": "en",
       "type": "building",
       "title": "Enlistment Office | Tiles Survive Buildings | TilesSurvive.net",
       "description": "Detailed building page for the Enlistment Office in Tiles Survive, covering Loyalty, recruitable troop count, capacity, and operating rules.",
       "url": "/en/buildings/enlistment-office/"
+    },
+    {
+      "language": "en",
+      "type": "database",
+      "title": "Equipment upgrade EXP | TilesSurvive.net",
+      "description": "Level 1→80 requires 1,585,500 EXP. Blue, purple and gold scraps give 100, 400 and 2,000 EXP. Enter your converted EXP as the owned amount. This table does not cover other upgrade systems.",
+      "url": "/en/database/gear-exp/"
     },
     {
       "language": "en",
@@ -116,6 +144,13 @@
     },
     {
       "language": "en",
+      "type": "database",
+      "title": "Fluffy · Pet growth & acquisition | TilesSurvive.net",
+      "description": "Rounding can make totals differ slightly from 100%. — means absent from the source, not a confirmed 0%. Eggs come from Intel Missions; unlocks depend on State progression. Complete skill sets, resonance combinations and full stat growth remain unconfirmed.",
+      "url": "/en/database/pet-system/fluffy/"
+    },
+    {
+      "language": "en",
       "type": "heroe",
       "title": "Freja | Tiles Survive Hero | TilesSurvive.net",
       "description": "Detailed Freja hero page for Tiles Survive. Check hero story, combat traits, max level and star stats, star bonus, and skills in one place.",
@@ -127,6 +162,13 @@
       "title": "Garrison Station | Tiles Survive Buildings | TilesSurvive.net",
       "description": "A detailed page for Tiles Survive Garrison Station, covering maximum troop capacity and troop management information.",
       "url": "/en/buildings/garrison-station/"
+    },
+    {
+      "language": "en",
+      "type": "database",
+      "title": "Gear reforging probabilities | TilesSurvive.net",
+      "description": "Attempts accumulate across all gear. Basic reforging uses 1 hammer; advanced uses 25 and unlocks after 200 attempts. Values were checked on the official probability page on 2026-10-09.",
+      "url": "/en/database/gear-reforging/"
     },
     {
       "language": "en",
@@ -144,10 +186,24 @@
     },
     {
       "language": "en",
+      "type": "database",
+      "title": "Growth materials & uses | TilesSurvive.net",
+      "description": "Feed units grant 50, 100, 200 or 500 EXP. Duplicate hatches supply pet marks; universal marks exchange 1:1. Each training stage has 20 steps, costing 100, 200, 400 and 600 marks in stages 1–4. Scraps grant equipment EXP; hammers reroll attributes.",
+      "url": "/en/database/growth-materials/"
+    },
+    {
+      "language": "en",
       "type": "building",
       "title": "Guardian of Life | Tiles Survive Buildings | TilesSurvive.net",
       "description": "This is the detailed building page for Guardian of Life in Tiles Survive. It organizes the building overview, Hero Health by level, and Power values at a glance.",
       "url": "/en/buildings/guardian-of-life-monument/"
+    },
+    {
+      "language": "en",
+      "type": "database",
+      "title": "Hardhead · Pet growth & acquisition | TilesSurvive.net",
+      "description": "Rounding can make totals differ slightly from 100%. — means absent from the source, not a confirmed 0%. Eggs come from Intel Missions; unlocks depend on State progression. Complete skill sets, resonance combinations and full stat growth remain unconfirmed.",
+      "url": "/en/database/pet-system/hardhead/"
     },
     {
       "language": "en",
@@ -361,6 +417,13 @@
     },
     {
       "language": "en",
+      "type": "database",
+      "title": "Shadow · Pet growth & acquisition | TilesSurvive.net",
+      "description": "Rounding can make totals differ slightly from 100%. — means absent from the source, not a confirmed 0%. Eggs come from Intel Missions; unlocks depend on State progression. Complete skill sets, resonance combinations and full stat growth remain unconfirmed.",
+      "url": "/en/database/pet-system/shadow/"
+    },
+    {
+      "language": "en",
       "type": "heroe",
       "title": "Shark | Sea SSR Melee Hero | TilesSurvive.net",
       "description": "Shark is a Sea SSR melee hero in Tiles Survive. This guide summarizes Wave Crash, Shark Wave, Frontline Support, Deep Sea Invincible, and the Deep Sea Anchor exclusive equipment.",
@@ -372,6 +435,13 @@
       "title": "Skill Book Cost Table | Tiles Survive Database | TilesSurvive.net",
       "description": "This is the Tiles Survive Skill Book cost table. It organizes the Skill Book cost per level from Combat Skill level 1 to 40, along with the final total amount required.",
       "url": "/en/database/skill-book/"
+    },
+    {
+      "language": "en",
+      "type": "database",
+      "title": "Snowball · Pet growth & acquisition | TilesSurvive.net",
+      "description": "Rounding can make totals differ slightly from 100%. — means absent from the source, not a confirmed 0%. Eggs come from Intel Missions; unlocks depend on State progression. Complete skill sets, resonance combinations and full stat growth remain unconfirmed.",
+      "url": "/en/database/pet-system/snowball/"
     },
     {
       "language": "en",
@@ -662,10 +732,31 @@
     },
     {
       "language": "ja",
+      "type": "database",
+      "title": "育成素材と用途 | TilesSurvive.net",
+      "description": "餌は50・100・200・500 EXP。重複孵化でマークを獲得し、共通マークは1:1交換。訓練は各段階20回、1～4段階の費用は100・200・400・600個。装備素材は経験値、ハンマーは属性変更に使います。",
+      "url": "/ja/database/growth-materials/"
+    },
+    {
+      "language": "ja",
       "type": "building",
       "title": "入隊事務所 | タイルズサバイバル 建物 | TilesSurvive.net",
       "description": "タイルズサバイバル 入隊事務所の忠誠値、徴兵可能数、収容力と運用ルールを整理した詳細ページです。",
       "url": "/ja/buildings/enlistment-office/"
+    },
+    {
+      "language": "ja",
+      "type": "database",
+      "title": "装備精錬の確率 | TilesSurvive.net",
+      "description": "回数は全装備で累計されます。通常はハンマー1個、高級は25個で200回後に解放。公式確率ページを2026-10-09に確認しました。",
+      "url": "/ja/database/gear-reforging/"
+    },
+    {
+      "language": "ja",
+      "type": "database",
+      "title": "装備強化経験値 | TilesSurvive.net",
+      "description": "1→80の必要経験値は1,585,500です。青・紫・金の素材は100・400・2,000 EXP。所持数には換算後の合計EXPを入力してください。他の強化システムとは合算しません。",
+      "url": "/ja/database/gear-exp/"
     },
     {
       "language": "ja",
@@ -725,10 +816,59 @@
     },
     {
       "language": "ja",
+      "type": "event",
+      "title": "Arcadian Conquest・占領ルール | TilesSurvive.net",
+      "description": "攻城は3時間。累計90分の占領達成、または最長累計占領の同盟が勝利。4つの塔は攻撃ごとに守備兵の2%を減らし、継続占領で間隔が4分から1分に短縮。城または塔の占領60秒ごとに10,000点。集結は味方5チームまで。開始60分前に警戒区域から強制移転、50分前から終了までは区域内移転無料・平和シールド不可。総督パックは1人につき各回1個まで。兵士等級別の撃破・損失点と報酬数量は未確認です。",
+      "url": "/ja/events/arcadian-conquest/"
+    },
+    {
+      "language": "ja",
+      "type": "database",
+      "title": "Buckler · ペットの成長・入手 | TilesSurvive.net",
+      "description": "丸めにより合計が100%とわずかに異なる場合があります。—は出典に記載なしを示し、0%確定ではありません。卵は情報任務で入手し、解放は州の進行状況によります。全スキル表・共鳴の組合せ・全成長能力値は未確認です。",
+      "url": "/ja/database/pet-system/buckler/"
+    },
+    {
+      "language": "ja",
+      "type": "database",
+      "title": "Dodo · ペットの成長・入手 | TilesSurvive.net",
+      "description": "丸めにより合計が100%とわずかに異なる場合があります。—は出典に記載なしを示し、0%確定ではありません。卵は情報任務で入手し、解放は州の進行状況によります。全スキル表・共鳴の組合せ・全成長能力値は未確認です。",
+      "url": "/ja/database/pet-system/dodo/"
+    },
+    {
+      "language": "ja",
+      "type": "database",
+      "title": "Fluffy · ペットの成長・入手 | TilesSurvive.net",
+      "description": "丸めにより合計が100%とわずかに異なる場合があります。—は出典に記載なしを示し、0%確定ではありません。卵は情報任務で入手し、解放は州の進行状況によります。全スキル表・共鳴の組合せ・全成長能力値は未確認です。",
+      "url": "/ja/database/pet-system/fluffy/"
+    },
+    {
+      "language": "ja",
+      "type": "database",
+      "title": "Hardhead · ペットの成長・入手 | TilesSurvive.net",
+      "description": "丸めにより合計が100%とわずかに異なる場合があります。—は出典に記載なしを示し、0%確定ではありません。卵は情報任務で入手し、解放は州の進行状況によります。全スキル表・共鳴の組合せ・全成長能力値は未確認です。",
+      "url": "/ja/database/pet-system/hardhead/"
+    },
+    {
+      "language": "ja",
       "type": "heroe",
       "title": "Knotty | TilesSurvive.net",
       "description": "海の英雄 · SSR · Marksmen · スキルと効果",
       "url": "/ja/heroes/knotty/"
+    },
+    {
+      "language": "ja",
+      "type": "database",
+      "title": "Shadow · ペットの成長・入手 | TilesSurvive.net",
+      "description": "丸めにより合計が100%とわずかに異なる場合があります。—は出典に記載なしを示し、0%確定ではありません。卵は情報任務で入手し、解放は州の進行状況によります。全スキル表・共鳴の組合せ・全成長能力値は未確認です。",
+      "url": "/ja/database/pet-system/shadow/"
+    },
+    {
+      "language": "ja",
+      "type": "database",
+      "title": "Snowball · ペットの成長・入手 | TilesSurvive.net",
+      "description": "丸めにより合計が100%とわずかに異なる場合があります。—は出典に記載なしを示し、0%確定ではありません。卵は情報任務で入手し、解放は州の進行状況によります。全スキル表・共鳴の組合せ・全成長能力値は未確認です。",
+      "url": "/ja/database/pet-system/snowball/"
     },
     {
       "language": "ja",
@@ -1181,9 +1321,23 @@
     {
       "language": "ko",
       "type": "heroe",
+      "title": "너티 · Knotty 스킬·전용 장비 | TilesSurvive.net",
+      "description": "바다 영웅 · SSR · Marksmen · 스킬과 효과",
+      "url": "/ko/heroes/knotty/"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
       "title": "니콜라 | 타일서바이벌 영웅 | TilesSurvive.net",
       "description": "타일서바이벌 영웅 니콜라 상세 페이지입니다. SSR 영웅 기준으로 영웅 소개, 전투 특성, 최고 레벨 및 성급 속성, 성급 보너스, 스킬, 전용 장비를 한눈에 정리했습니다.",
       "url": "/ko/heroes/nikola/"
+    },
+    {
+      "language": "ko",
+      "type": "database",
+      "title": "도도 · Dodo · 펫 성장·획득 데이터 | TilesSurvive.net",
+      "description": "소수점 반올림으로 합계가 100%와 약간 다를 수 있습니다. —는 출처에 없는 항목이며 0% 확정값이 아닙니다. 알은 정보 임무에서 획득하며 해금은 서버 진행도에 따릅니다. 전체 스킬표·공명 조합·전체 성장 능력치는 미확인입니다.",
+      "url": "/ko/database/pet-system/dodo/"
     },
     {
       "language": "ko",
@@ -1278,6 +1432,13 @@
     },
     {
       "language": "ko",
+      "type": "database",
+      "title": "버클러 · Buckler · 펫 성장·획득 데이터 | TilesSurvive.net",
+      "description": "소수점 반올림으로 합계가 100%와 약간 다를 수 있습니다. —는 출처에 없는 항목이며 0% 확정값이 아닙니다. 알은 정보 임무에서 획득하며 해금은 서버 진행도에 따릅니다. 전체 스킬표·공명 조합·전체 성장 능력치는 미확인입니다.",
+      "url": "/ko/database/pet-system/buckler/"
+    },
+    {
+      "language": "ko",
       "type": "heroe",
       "title": "베카 | 타일서바이벌 영웅 | TilesSurvive.net",
       "description": "타일서바이벌 영웅 베카 상세 페이지입니다. SSR 영웅 기준으로 영웅 소개, 전투 특성, 최고 레벨 및 성급 속성, 성급 보너스, 스킬, 전용 장비를 한눈에 정리했습니다.",
@@ -1320,6 +1481,13 @@
     },
     {
       "language": "ko",
+      "type": "database",
+      "title": "성장 재료·사용처 | TilesSurvive.net",
+      "description": "먹이는 50·100·200·500 EXP 단위입니다. 펫 표식은 중복 부화에서 얻고 일반 표식은 1:1로 교환합니다. 훈련은 단계마다 20회를 완료하며 1~4단계 총비용은 100·200·400·600개입니다. 장비 스크랩은 강화 경험치, 제련 망치는 옵션 변경에 사용합니다.",
+      "url": "/ko/database/growth-materials/"
+    },
+    {
+      "language": "ko",
       "type": "heroe",
       "title": "세이지 | 타일서바이벌 영웅 | TilesSurvive.net",
       "description": "타일서바이벌 영웅 세이지 상세 페이지입니다. 진급 영웅 기준으로 영웅 소개, 전투 특성, 최고 레벨 및 성급 속성, 성급 보너스, 스킬을 한눈에 정리했습니다.",
@@ -1338,6 +1506,27 @@
       "title": "소개 | 타일서바이벌 데이터 허브 | TilesSurvive.net",
       "description": "TilesSurvive.net은 타일서바이벌의 건물, 영웅, 베헤모스, 데이터베이스, 가이드, 시즌 정보를 정리하는 비공식 데이터 허브입니다.",
       "url": "/ko/about/"
+    },
+    {
+      "language": "ko",
+      "type": "database",
+      "title": "솜솜 · Fluffy · 펫 성장·획득 데이터 | TilesSurvive.net",
+      "description": "소수점 반올림으로 합계가 100%와 약간 다를 수 있습니다. —는 출처에 없는 항목이며 0% 확정값이 아닙니다. 알은 정보 임무에서 획득하며 해금은 서버 진행도에 따릅니다. 전체 스킬표·공명 조합·전체 성장 능력치는 미확인입니다.",
+      "url": "/ko/database/pet-system/fluffy/"
+    },
+    {
+      "language": "ko",
+      "type": "database",
+      "title": "쉐도우 · Shadow · 펫 성장·획득 데이터 | TilesSurvive.net",
+      "description": "소수점 반올림으로 합계가 100%와 약간 다를 수 있습니다. —는 출처에 없는 항목이며 0% 확정값이 아닙니다. 알은 정보 임무에서 획득하며 해금은 서버 진행도에 따릅니다. 전체 스킬표·공명 조합·전체 성장 능력치는 미확인입니다.",
+      "url": "/ko/database/pet-system/shadow/"
+    },
+    {
+      "language": "ko",
+      "type": "database",
+      "title": "스노우볼 · Snowball · 펫 성장·획득 데이터 | TilesSurvive.net",
+      "description": "소수점 반올림으로 합계가 100%와 약간 다를 수 있습니다. —는 출처에 없는 항목이며 0% 확정값이 아닙니다. 알은 정보 임무에서 획득하며 해금은 서버 진행도에 따릅니다. 전체 스킬표·공명 조합·전체 성장 능력치는 미확인입니다.",
+      "url": "/ko/database/pet-system/snowball/"
     },
     {
       "language": "ko",
@@ -1446,6 +1635,20 @@
     },
     {
       "language": "ko",
+      "type": "database",
+      "title": "장비 강화 경험치 | TilesSurvive.net",
+      "description": "1→80레벨 경험치 합계는 1,585,500입니다. 파랑·보라·금색 스크랩은 각각 100·400·2,000 EXP입니다. 보유량에는 환산한 총 EXP를 입력하세요. 다른 강화 시스템의 비용과 합산하지 않습니다.",
+      "url": "/ko/database/gear-exp/"
+    },
+    {
+      "language": "ko",
+      "type": "database",
+      "title": "장비 제련 확률 | TilesSurvive.net",
+      "description": "제련 횟수는 모든 장비에서 누적됩니다. 일반 제련은 망치 1개, 고급은 25개이며 200회 이후 해금됩니다. 아래는 공식 확률 페이지의 2026-10-09 확인값입니다.",
+      "url": "/ko/database/gear-reforging/"
+    },
+    {
+      "language": "ko",
       "type": "guide",
       "title": "저수지 레이드 승리 공략 | 타일서바이벌 가이드 | TilesSurvive.net",
       "description": "저수지 레이드 참가 조건, 승리 방식, 주요 건물 역할, 팀 역할 분배, 페이즈 운영, 추가 팁까지 한 번에 정리한 타일서바이벌 실전 공략입니다.",
@@ -1506,6 +1709,20 @@
       "title": "채의진 | 타일서바이벌 영웅 | TilesSurvive.net",
       "description": "타일서바이벌 영웅 채의진 상세 페이지입니다. SSR 영웅 기준으로 영웅 소개, 전투 특성, 최고 레벨 및 성급 속성, 성급 보너스, 스킬, 전용 장비를 한눈에 정리했습니다.",
       "url": "/ko/heroes/candy/"
+    },
+    {
+      "language": "ko",
+      "type": "event",
+      "title": "천궁의 성 · 점령 규칙 | TilesSurvive.net",
+      "description": "공성 시간 3시간 · 누적 점령 90분 달성 또는 최장 누적 점령 연맹 승리. 탑 4개는 공격마다 수비 병력 2%를 줄이며 간격은 점령 지속에 따라 4분에서 1분으로 단축됩니다. 천궁 또는 탑 점령 60초마다 10,000점. 집결은 아군 5개 팀까지 참가합니다. 시작 60분 전 경계 구역 강제 이전, 50분 전부터 종료까지 구역 내 이전 무료·평화 방패 사용 불가. 총독 선물은 이벤트마다 1인 1개까지만 받을 수 있습니다. 병력 등급별 사상·처치 점수와 보상 수량표는 미확인입니다.",
+      "url": "/ko/events/arcadian-conquest/"
+    },
+    {
+      "language": "ko",
+      "type": "database",
+      "title": "철두 · Hardhead · 펫 성장·획득 데이터 | TilesSurvive.net",
+      "description": "소수점 반올림으로 합계가 100%와 약간 다를 수 있습니다. —는 출처에 없는 항목이며 0% 확정값이 아닙니다. 알은 정보 임무에서 획득하며 해금은 서버 진행도에 따릅니다. 전체 스킬표·공명 조합·전체 성장 능력치는 미확인입니다.",
+      "url": "/ko/database/pet-system/hardhead/"
     },
     {
       "language": "ko",
@@ -1698,13 +1915,6 @@
     },
     {
       "language": "ko",
-      "type": "heroe",
-      "title": "Knotty | TilesSurvive.net",
-      "description": "바다 영웅 · SSR · Marksmen · 스킬과 효과",
-      "url": "/ko/heroes/knotty/"
-    },
-    {
-      "language": "ko",
       "type": "tool",
       "title": "Tiles Survival 이벤트 도우미 - 이벤트 일정과 자원 사용 가이드",
       "description": "Tiles Survival 이벤트 도우미에서 이벤트 타입별 준비 자원, 추천 행동, 자원 사용 판단 기준을 확인하세요.",
@@ -1747,10 +1957,24 @@
     },
     {
       "language": "ru",
+      "type": "event",
+      "title": "Arcadian Conquest: правила захвата | TilesSurvive.net",
+      "description": "Осада длится 3 часа. Побеждает альянс с 90 минутами суммарного удержания либо самым долгим удержанием. Четыре башни снимают 2% гарнизона за удар; интервал при удержании сокращается с 4 до 1 минуты. Каждые 60 секунд удержания крепости или башни дают 10 000 очков. В сборе участвуют до 5 союзных команд. За 60 минут поселения принудительно перемещаются из зоны; с отметки −50 минут до конца перемещение в зоне бесплатно, щиты отключены. Пакет губернатора — максимум один на игрока за событие. Очки потерь/убийств по рангам войск и количества наград не подтверждены.",
+      "url": "/ru/events/arcadian-conquest/"
+    },
+    {
+      "language": "ru",
       "type": "heroe",
       "title": "Beka | Герой Tiles Survive | TilesSurvive.net",
       "description": "Подробная страница героя Beka в Tiles Survive. Здесь по SSR-герою собраны описание героя, боевые особенности, характеристики на максимальном уровне и звёздности, бонус звёздности, навыки и эксклюзивное снаряжение.",
       "url": "/ru/heroes/beka/"
+    },
+    {
+      "language": "ru",
+      "type": "database",
+      "title": "Buckler · Развитие и получение питомцев | TilesSurvive.net",
+      "description": "Из-за округления сумма может немного отличаться от 100%. — означает отсутствие данных, а не подтверждённые 0%. Яйца дают разведзадания; доступ зависит от прогресса штата. Полные наборы навыков, сочетания резонанса и полный рост характеристик не подтверждены.",
+      "url": "/ru/database/pet-system/buckler/"
     },
     {
       "language": "ru",
@@ -1768,10 +1992,24 @@
     },
     {
       "language": "ru",
+      "type": "database",
+      "title": "Dodo · Развитие и получение питомцев | TilesSurvive.net",
+      "description": "Из-за округления сумма может немного отличаться от 100%. — означает отсутствие данных, а не подтверждённые 0%. Яйца дают разведзадания; доступ зависит от прогресса штата. Полные наборы навыков, сочетания резонанса и полный рост характеристик не подтверждены.",
+      "url": "/ru/database/pet-system/dodo/"
+    },
+    {
+      "language": "ru",
       "type": "heroe",
       "title": "Eva | Герой Tiles Survive | TilesSurvive.net",
       "description": "Подробная страница героя Eva в Tiles Survive. Здесь в одном месте собраны описание героя, фракция, боевые особенности, характеристики на максимальном уровне и звёздности, бонус звёздности и навыки.",
       "url": "/ru/heroes/eva/"
+    },
+    {
+      "language": "ru",
+      "type": "database",
+      "title": "Fluffy · Развитие и получение питомцев | TilesSurvive.net",
+      "description": "Из-за округления сумма может немного отличаться от 100%. — означает отсутствие данных, а не подтверждённые 0%. Яйца дают разведзадания; доступ зависит от прогресса штата. Полные наборы навыков, сочетания резонанса и полный рост характеристик не подтверждены.",
+      "url": "/ru/database/pet-system/fluffy/"
     },
     {
       "language": "ru",
@@ -1786,6 +2024,13 @@
       "title": "Ghost | Герой Tiles Survive | TilesSurvive.net",
       "description": "Подробная страница героя Ghost в Tiles Survive. Здесь в одном месте собраны описание героя, фракция, боевые особенности, характеристики на максимальном уровне и звёздности, бонус звёздности и навыки.",
       "url": "/ru/heroes/ghost/"
+    },
+    {
+      "language": "ru",
+      "type": "database",
+      "title": "Hardhead · Развитие и получение питомцев | TilesSurvive.net",
+      "description": "Из-за округления сумма может немного отличаться от 100%. — означает отсутствие данных, а не подтверждённые 0%. Яйца дают разведзадания; доступ зависит от прогресса штата. Полные наборы навыков, сочетания резонанса и полный рост характеристик не подтверждены.",
+      "url": "/ru/database/pet-system/hardhead/"
     },
     {
       "language": "ru",
@@ -1915,10 +2160,24 @@
     },
     {
       "language": "ru",
+      "type": "database",
+      "title": "Shadow · Развитие и получение питомцев | TilesSurvive.net",
+      "description": "Из-за округления сумма может немного отличаться от 100%. — означает отсутствие данных, а не подтверждённые 0%. Яйца дают разведзадания; доступ зависит от прогресса штата. Полные наборы навыков, сочетания резонанса и полный рост характеристик не подтверждены.",
+      "url": "/ru/database/pet-system/shadow/"
+    },
+    {
+      "language": "ru",
       "type": "heroe",
       "title": "Shark | Sea SSR Melee Hero | TilesSurvive.net",
       "description": "Shark — SSR герой фракции Sea ближнего боя в Tiles Survive. На странице собраны Wave Crash, Shark Wave, Frontline Support, Deep Sea Invincible и эксклюзивное снаряжение Deep Sea Anchor.",
       "url": "/ru/heroes/shark/"
+    },
+    {
+      "language": "ru",
+      "type": "database",
+      "title": "Snowball · Развитие и получение питомцев | TilesSurvive.net",
+      "description": "Из-за округления сумма может немного отличаться от 100%. — означает отсутствие данных, а не подтверждённые 0%. Яйца дают разведзадания; доступ зависит от прогресса штата. Полные наборы навыков, сочетания резонанса и полный рост характеристик не подтверждены.",
+      "url": "/ru/database/pet-system/snowball/"
     },
     {
       "language": "ru",
@@ -1982,6 +2241,13 @@
       "title": "Благословенная стела исцеления | Здания Tiles Survive | TilesSurvive.net",
       "description": "Подробная страница со сводкой по Благословенной стеле исцеления в Tiles Survive: обзор, коэффициент перевода тяжелораненых в легкораненых и мощь по уровням.",
       "url": "/ru/buildings/blessed-healing-stele/"
+    },
+    {
+      "language": "ru",
+      "type": "database",
+      "title": "Вероятности перековки | TilesSurvive.net",
+      "description": "Попытки суммируются по всему снаряжению. Обычная перековка требует 1 молот, улучшенная — 25 и открывается после 200 попыток. Официальные вероятности проверены 2026-10-09.",
+      "url": "/ru/database/gear-reforging/"
     },
     {
       "language": "ru",
@@ -2104,6 +2370,13 @@
     },
     {
       "language": "ru",
+      "type": "database",
+      "title": "Материалы развития и их применение | TilesSurvive.net",
+      "description": "Корм даёт 50, 100, 200 или 500 опыта. Повторное вылупление даёт метки; универсальные метки обмениваются 1:1. В этапе тренировки 20 шагов; этапы 1–4 стоят 100, 200, 400 и 600 меток. Материалы дают опыт снаряжению, молоты меняют свойства.",
+      "url": "/ru/database/growth-materials/"
+    },
+    {
+      "language": "ru",
       "type": "building",
       "title": "Монумент Бога Войны | Здания Tiles Survive | TilesSurvive.net",
       "description": "Подробная страница здания Монумент Бога Войны в Tiles Survive. Здесь собраны описание здания, атака героя по уровням и боевая мощь в удобном виде.",
@@ -2143,6 +2416,13 @@
       "title": "Опыт героев | База данных Tiles Survive | TilesSurvive.net",
       "description": "Страница базы данных по опыту героев в Tiles Survive. Здесь собраны общий расход опыта героя с 1 по 150 уровень и ключевые моменты, на которые стоит обратить внимание при прокачке.",
       "url": "/ru/database/hero-exp/"
+    },
+    {
+      "language": "ru",
+      "type": "database",
+      "title": "Опыт улучшения снаряжения | TilesSurvive.net",
+      "description": "Для 1→80 нужно 1 585 500 опыта. Синие, фиолетовые и золотые материалы дают 100, 400 и 2 000 опыта. Введите пересчитанный опыт в поле наличия. Стоимость других систем сюда не входит.",
+      "url": "/ru/database/gear-exp/"
     },
     {
       "language": "ru",
@@ -2531,6 +2811,13 @@
     },
     {
       "language": "zh-tw",
+      "type": "database",
+      "title": "成長材料與用途 | TilesSurvive.net",
+      "description": "飼料提供50、100、200、500 EXP。重複孵化取得印記，通用印記按1:1兌換。每階訓練20次，1～4階共需100、200、400、600個印記。裝備材料提供經驗，精煉錘用於更換屬性。",
+      "url": "/zh-tw/database/growth-materials/"
+    },
+    {
+      "language": "zh-tw",
       "type": "guide",
       "title": "水庫突襲 勝利攻略 | 點點大作戰 攻略 | TilesSurvive.net",
       "description": "整理水庫突襲的參加條件、勝利方式、主要建築作用、隊伍分工、各階段運營與額外技巧的點點大作戰實戰攻略。",
@@ -2626,6 +2913,20 @@
       "title": "入伍辦公室 | Tiles Survive 建築 | TilesSurvive.net",
       "description": "整理 Tiles Survive 入伍辦公室的忠誠值、可徵兵數量、收容容量與運作規則的詳細頁面。",
       "url": "/zh-tw/buildings/enlistment-office/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
+      "title": "裝備精煉機率 | TilesSurvive.net",
+      "description": "次數跨所有裝備累計。一般精煉消耗1個錘子，高級消耗25個，於200次後解鎖。下表為2026-10-09核對的官方機率。",
+      "url": "/zh-tw/database/gear-reforging/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
+      "title": "裝備強化經驗 | TilesSurvive.net",
+      "description": "1→80級共需1,585,500經驗。藍、紫、金色材料分別提供100、400、2,000 EXP。持有量請填入換算後的總EXP，不與其他強化系統混算。",
+      "url": "/zh-tw/database/gear-exp/"
     },
     {
       "language": "zh-tw",
@@ -2825,10 +3126,59 @@
     },
     {
       "language": "zh-tw",
+      "type": "event",
+      "title": "Arcadian Conquest・佔領規則 | TilesSurvive.net",
+      "description": "攻城持續3小時；累計佔領90分鐘或累計佔領最久的聯盟獲勝。4座塔每次攻擊削減守軍2%，持續佔領使間隔由4分鐘縮至1分鐘。城或塔每佔領60秒得10,000分，集結最多5支友軍隊伍。開始前60分鐘強制遷移警戒區聚落；前50分鐘起至結束，區內遷移免費且無法使用和平護盾。每人每次活動最多領取1個總督禮包。各兵階傷亡／擊殺分數及獎勵數量待確認。",
+      "url": "/zh-tw/events/arcadian-conquest/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
+      "title": "Buckler · 寵物成長與取得 | TilesSurvive.net",
+      "description": "四捨五入可能使總和略偏離100%。—表示來源未列出，並非確認為0%。蛋由情報任務取得，解鎖依伺服器進度而定。完整技能表、共鳴組合與完整成長屬性仍待確認。",
+      "url": "/zh-tw/database/pet-system/buckler/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
+      "title": "Dodo · 寵物成長與取得 | TilesSurvive.net",
+      "description": "四捨五入可能使總和略偏離100%。—表示來源未列出，並非確認為0%。蛋由情報任務取得，解鎖依伺服器進度而定。完整技能表、共鳴組合與完整成長屬性仍待確認。",
+      "url": "/zh-tw/database/pet-system/dodo/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
+      "title": "Fluffy · 寵物成長與取得 | TilesSurvive.net",
+      "description": "四捨五入可能使總和略偏離100%。—表示來源未列出，並非確認為0%。蛋由情報任務取得，解鎖依伺服器進度而定。完整技能表、共鳴組合與完整成長屬性仍待確認。",
+      "url": "/zh-tw/database/pet-system/fluffy/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
+      "title": "Hardhead · 寵物成長與取得 | TilesSurvive.net",
+      "description": "四捨五入可能使總和略偏離100%。—表示來源未列出，並非確認為0%。蛋由情報任務取得，解鎖依伺服器進度而定。完整技能表、共鳴組合與完整成長屬性仍待確認。",
+      "url": "/zh-tw/database/pet-system/hardhead/"
+    },
+    {
+      "language": "zh-tw",
       "type": "heroe",
       "title": "Knotty | TilesSurvive.net",
       "description": "海洋英雄 · SSR · Marksmen · 技能與效果",
       "url": "/zh-tw/heroes/knotty/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
+      "title": "Shadow · 寵物成長與取得 | TilesSurvive.net",
+      "description": "四捨五入可能使總和略偏離100%。—表示來源未列出，並非確認為0%。蛋由情報任務取得，解鎖依伺服器進度而定。完整技能表、共鳴組合與完整成長屬性仍待確認。",
+      "url": "/zh-tw/database/pet-system/shadow/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
+      "title": "Snowball · 寵物成長與取得 | TilesSurvive.net",
+      "description": "四捨五入可能使總和略偏離100%。—表示來源未列出，並非確認為0%。蛋由情報任務取得，解鎖依伺服器進度而定。完整技能表、共鳴組合與完整成長屬性仍待確認。",
+      "url": "/zh-tw/database/pet-system/snowball/"
     },
     {
       "language": "zh-tw",

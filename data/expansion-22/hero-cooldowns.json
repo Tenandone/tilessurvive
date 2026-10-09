@@ -1,0 +1,677 @@
+[
+  {
+    "id": "beka",
+    "source": "https://tilessurviveguide.com/heroes/becca",
+    "checked": "2026-10-09",
+    "skills": [
+      {
+        "name": "Storm Scope",
+        "type": "Auto Attack",
+        "cooldownSeconds": 1,
+        "level": null
+      },
+      {
+        "name": "Heartseeker",
+        "type": "Combat Skill",
+        "cooldownSeconds": 10,
+        "level": null
+      },
+      {
+        "name": "Foresight",
+        "type": "Passive Skill",
+        "cooldownSeconds": null,
+        "level": null
+      }
+    ]
+  },
+  {
+    "id": "candy",
+    "source": "https://tilessurviveguide.com/heroes/candy",
+    "checked": "2026-10-09",
+    "skills": [
+      {
+        "name": "Sugar Shot",
+        "type": "Auto Attack",
+        "cooldownSeconds": 1,
+        "level": null
+      },
+      {
+        "name": "Healing Smile",
+        "type": "Combat Skill",
+        "cooldownSeconds": 10,
+        "level": null
+      },
+      {
+        "name": "Dazzling Aura",
+        "type": "Passive Skill",
+        "cooldownSeconds": null,
+        "level": null
+      }
+    ]
+  },
+  {
+    "id": "chef-ken",
+    "source": "https://tilessurviveguide.com/heroes/chef",
+    "checked": "2026-10-09",
+    "skills": [
+      {
+        "name": "Pot Sweep",
+        "type": "Auto Attack",
+        "cooldownSeconds": 1,
+        "level": null
+      },
+      {
+        "name": "Gourmet Temptation",
+        "type": "Combat Skill",
+        "cooldownSeconds": 10,
+        "level": null
+      },
+      {
+        "name": "Green Fingers",
+        "type": "Passive Skill",
+        "cooldownSeconds": null,
+        "level": null
+      }
+    ]
+  },
+  {
+    "id": "kiron",
+    "source": "https://tilessurviveguide.com/heroes/chiron",
+    "checked": "2026-10-09",
+    "skills": [
+      {
+        "name": "Deadshot",
+        "type": "Auto Attack",
+        "cooldownSeconds": 1,
+        "level": null
+      },
+      {
+        "name": "Arrowstorm",
+        "type": "Combat Skill",
+        "cooldownSeconds": 9,
+        "level": null
+      },
+      {
+        "name": "Piercing Resonance",
+        "type": "Passive Skill",
+        "cooldownSeconds": null,
+        "level": null
+      }
+    ]
+  },
+  {
+    "id": "eva",
+    "source": "https://tilessurviveguide.com/heroes/eva",
+    "checked": "2026-10-09",
+    "skills": [
+      {
+        "name": "Deluge",
+        "type": "Auto Attack",
+        "cooldownSeconds": 1,
+        "level": null
+      },
+      {
+        "name": "Lock & Load",
+        "type": "Combat Skill",
+        "cooldownSeconds": 10,
+        "level": null
+      },
+      {
+        "name": "Scavenger",
+        "type": "Passive Skill",
+        "cooldownSeconds": null,
+        "level": null
+      }
+    ]
+  },
+  {
+    "id": "freya",
+    "source": "https://tilessurviveguide.com/heroes/freja",
+    "checked": "2026-10-09",
+    "skills": [
+      {
+        "name": "Dual Flurry",
+        "type": "Auto Attack",
+        "cooldownSeconds": 1,
+        "level": null
+      },
+      {
+        "name": "Wave Splitter",
+        "type": "Combat Skill",
+        "cooldownSeconds": 10,
+        "level": null
+      },
+      {
+        "name": "Deep Driller",
+        "type": "Passive Skill",
+        "cooldownSeconds": null,
+        "level": null
+      }
+    ]
+  },
+  {
+    "id": "ghost",
+    "source": "https://tilessurviveguide.com/heroes/ghost",
+    "checked": "2026-10-09",
+    "skills": [
+      {
+        "name": "Spray ‘n’ Pray",
+        "type": "Auto Attack",
+        "cooldownSeconds": 1,
+        "level": null
+      },
+      {
+        "name": "Graffiti Zone",
+        "type": "Combat Skill",
+        "cooldownSeconds": 10,
+        "level": null
+      },
+      {
+        "name": "Graffiti Master",
+        "type": "Passive Skill",
+        "cooldownSeconds": null,
+        "level": null
+      }
+    ]
+  },
+  {
+    "id": "jacob",
+    "source": "https://tilessurviveguide.com/heroes/jacob",
+    "checked": "2026-10-09",
+    "skills": [
+      {
+        "name": "Raging Flames",
+        "type": "Auto Attack",
+        "cooldownSeconds": 1,
+        "level": null
+      },
+      {
+        "name": "Bomb Carnival",
+        "type": "Combat Skill",
+        "cooldownSeconds": 8,
+        "level": null
+      },
+      {
+        "name": "Ultimate Prank",
+        "type": "Passive Skill",
+        "cooldownSeconds": null,
+        "level": null
+      }
+    ]
+  },
+  {
+    "id": "kiki",
+    "source": "https://tilessurviveguide.com/heroes/kiki",
+    "checked": "2026-10-09",
+    "skills": [
+      {
+        "name": "Hyper Ray",
+        "type": "Auto Attack",
+        "cooldownSeconds": 1,
+        "level": null
+      },
+      {
+        "name": "Laser Discharge",
+        "type": "Combat Skill",
+        "cooldownSeconds": 9,
+        "level": null
+      },
+      {
+        "name": "Photon Surge",
+        "type": "Passive Skill",
+        "cooldownSeconds": null,
+        "level": null
+      }
+    ]
+  },
+  {
+    "id": "knotty",
+    "source": "https://tilessurviveguide.com/heroes/knotty",
+    "checked": "2026-10-09",
+    "skills": [
+      {
+        "name": "Naughty Bomb",
+        "type": "Auto Attack",
+        "cooldownSeconds": 1,
+        "level": null
+      },
+      {
+        "name": "Party Time",
+        "type": "Combat Skill",
+        "cooldownSeconds": 11,
+        "level": null
+      },
+      {
+        "name": "Born Wild",
+        "type": "Passive Skill",
+        "cooldownSeconds": null,
+        "level": null
+      }
+    ]
+  },
+  {
+    "id": "laila",
+    "source": "https://tilessurviveguide.com/heroes/layla",
+    "checked": "2026-10-09",
+    "skills": [
+      {
+        "name": "Punishing Whip",
+        "type": "Auto Attack",
+        "cooldownSeconds": 1,
+        "level": null
+      },
+      {
+        "name": "Rejuvenate",
+        "type": "Combat Skill",
+        "cooldownSeconds": 10,
+        "level": null
+      },
+      {
+        "name": "Spring of Life",
+        "type": "Passive Skill",
+        "cooldownSeconds": null,
+        "level": null
+      }
+    ]
+  },
+  {
+    "id": "lucky",
+    "source": "https://tilessurviveguide.com/heroes/lucky",
+    "checked": "2026-10-09",
+    "skills": [
+      {
+        "name": "Electric Shock",
+        "type": "Auto Attack",
+        "cooldownSeconds": 1,
+        "level": null
+      },
+      {
+        "name": "Overload Current",
+        "type": "Combat Skill",
+        "cooldownSeconds": 10,
+        "level": null
+      },
+      {
+        "name": "Wild Hunt",
+        "type": "Passive Skill",
+        "cooldownSeconds": null,
+        "level": null
+      }
+    ]
+  },
+  {
+    "id": "maddy",
+    "source": "https://tilessurviveguide.com/heroes/maddie",
+    "checked": "2026-10-09",
+    "skills": [
+      {
+        "name": "Quickshot",
+        "type": "Auto Attack",
+        "cooldownSeconds": 1,
+        "level": null
+      },
+      {
+        "name": "Burning Wind",
+        "type": "Combat Skill",
+        "cooldownSeconds": 10,
+        "level": null
+      },
+      {
+        "name": "War Angel",
+        "type": "Passive Skill",
+        "cooldownSeconds": null,
+        "level": null
+      }
+    ]
+  },
+  {
+    "id": "mike",
+    "source": "https://tilessurviveguide.com/heroes/mike",
+    "checked": "2026-10-09",
+    "skills": [
+      {
+        "name": "Thunder Bash",
+        "type": "Auto Attack",
+        "cooldownSeconds": 1,
+        "level": null
+      },
+      {
+        "name": "Suppression Zone",
+        "type": "Combat Skill",
+        "cooldownSeconds": 10,
+        "level": null
+      },
+      {
+        "name": "Defense Training",
+        "type": "Passive Skill",
+        "cooldownSeconds": null,
+        "level": null
+      }
+    ]
+  },
+  {
+    "id": "nikola",
+    "source": "https://tilessurviveguide.com/heroes/nikola",
+    "checked": "2026-10-09",
+    "skills": [
+      {
+        "name": "Electric Surge",
+        "type": "Auto Attack",
+        "cooldownSeconds": 1,
+        "level": null
+      },
+      {
+        "name": "Shock Shield",
+        "type": "Combat Skill",
+        "cooldownSeconds": 7,
+        "level": null
+      },
+      {
+        "name": "Resolute Stand",
+        "type": "Passive Skill",
+        "cooldownSeconds": null,
+        "level": null
+      }
+    ]
+  },
+  {
+    "id": "lagnar",
+    "source": "https://tilessurviveguide.com/heroes/ragnar",
+    "checked": "2026-10-09",
+    "skills": [
+      {
+        "name": "Water Blade Strike",
+        "type": "Auto Attack",
+        "cooldownSeconds": 1,
+        "level": null
+      },
+      {
+        "name": "Support Warship",
+        "type": "Combat Skill",
+        "cooldownSeconds": 10,
+        "level": null
+      },
+      {
+        "name": "Unyielding Spirit",
+        "type": "Passive Skill",
+        "cooldownSeconds": null,
+        "level": null
+      }
+    ]
+  },
+  {
+    "id": "ray",
+    "source": "https://tilessurviveguide.com/heroes/ray",
+    "checked": "2026-10-09",
+    "skills": [
+      {
+        "name": "Ballistic Anthem",
+        "type": "Auto Attack",
+        "cooldownSeconds": 1,
+        "level": null
+      },
+      {
+        "name": "Boomstick",
+        "type": "Combat Skill",
+        "cooldownSeconds": 9,
+        "level": null
+      },
+      {
+        "name": "Raptor Strike",
+        "type": "Passive Skill",
+        "cooldownSeconds": null,
+        "level": null
+      }
+    ]
+  },
+  {
+    "id": "rosie",
+    "source": "https://tilessurviveguide.com/heroes/rosie",
+    "checked": "2026-10-09",
+    "skills": [
+      {
+        "name": "Sonic Wave",
+        "type": "Auto Attack",
+        "cooldownSeconds": 1,
+        "level": null
+      },
+      {
+        "name": "Rift Riff",
+        "type": "Combat Skill",
+        "cooldownSeconds": 8,
+        "level": null
+      },
+      {
+        "name": "Blood Beat",
+        "type": "Passive Skill",
+        "cooldownSeconds": null,
+        "level": null
+      }
+    ]
+  },
+  {
+    "id": "rusty",
+    "source": "https://tilessurviveguide.com/heroes/rusty",
+    "checked": "2026-10-09",
+    "skills": [
+      {
+        "name": "Brute Force",
+        "type": "Auto Attack",
+        "cooldownSeconds": 1,
+        "level": null
+      },
+      {
+        "name": "Depth Charge",
+        "type": "Combat Skill",
+        "cooldownSeconds": 10,
+        "level": null
+      },
+      {
+        "name": "Tough as Nails",
+        "type": "Passive Skill",
+        "cooldownSeconds": null,
+        "level": null
+      }
+    ]
+  },
+  {
+    "id": "sarge",
+    "source": "https://tilessurviveguide.com/heroes/sarge",
+    "checked": "2026-10-09",
+    "skills": [
+      {
+        "name": "Bullet Rain",
+        "type": "Auto Attack",
+        "cooldownSeconds": 1,
+        "level": null
+      },
+      {
+        "name": "Grenade Blitz",
+        "type": "Combat Skill",
+        "cooldownSeconds": 10,
+        "level": null
+      },
+      {
+        "name": "Timber Expert",
+        "type": "Passive Skill",
+        "cooldownSeconds": null,
+        "level": null
+      }
+    ]
+  },
+  {
+    "id": "shark",
+    "source": "https://tilessurviveguide.com/heroes/shark",
+    "checked": "2026-10-09",
+    "skills": [
+      {
+        "name": "Crashing Wave",
+        "type": "Auto Attack",
+        "cooldownSeconds": 1,
+        "level": null
+      },
+      {
+        "name": "Shark Surge",
+        "type": "Combat Skill",
+        "cooldownSeconds": 10,
+        "level": null
+      },
+      {
+        "name": "Vanguard Support",
+        "type": "Passive Skill",
+        "cooldownSeconds": null,
+        "level": null
+      }
+    ]
+  },
+  {
+    "id": "tara",
+    "source": "https://tilessurviveguide.com/heroes/tara",
+    "checked": "2026-10-09",
+    "skills": [
+      {
+        "name": "Starhammer Gale",
+        "type": "Auto Attack",
+        "cooldownSeconds": 1,
+        "level": null
+      },
+      {
+        "name": "Wolfquake Slam",
+        "type": "Combat Skill",
+        "cooldownSeconds": 8,
+        "level": null
+      },
+      {
+        "name": "Ironfang Ward",
+        "type": "Passive Skill",
+        "cooldownSeconds": null,
+        "level": null
+      }
+    ]
+  },
+  {
+    "id": "tarzan",
+    "source": "https://tilessurviveguide.com/heroes/tarzan",
+    "checked": "2026-10-09",
+    "skills": [
+      {
+        "name": "Iron Fist Sweep",
+        "type": "Auto Attack",
+        "cooldownSeconds": 1,
+        "level": null
+      },
+      {
+        "name": "Crushing Blow",
+        "type": "Combat Skill",
+        "cooldownSeconds": 6,
+        "level": null
+      },
+      {
+        "name": "Ironblood Spirit",
+        "type": "Passive Skill",
+        "cooldownSeconds": null,
+        "level": null
+      }
+    ]
+  },
+  {
+    "id": "tony",
+    "source": "https://tilessurviveguide.com/heroes/tony",
+    "checked": "2026-10-09",
+    "skills": [
+      {
+        "name": "Pulse Blast",
+        "type": "Auto Attack",
+        "cooldownSeconds": 1,
+        "level": null
+      },
+      {
+        "name": "Showtime",
+        "type": "Combat Skill",
+        "cooldownSeconds": 8,
+        "level": null
+      },
+      {
+        "name": "Shield of Unity",
+        "type": "Passive Skill",
+        "cooldownSeconds": null,
+        "level": null
+      }
+    ]
+  },
+  {
+    "id": "travis",
+    "source": "https://tilessurviveguide.com/heroes/travis",
+    "checked": "2026-10-09",
+    "skills": [
+      {
+        "name": "Deadly Precision",
+        "type": "Auto Attack",
+        "cooldownSeconds": 1,
+        "level": null
+      },
+      {
+        "name": "Lethal Shot",
+        "type": "Combat Skill",
+        "cooldownSeconds": 10,
+        "level": null
+      },
+      {
+        "name": "Forge Master",
+        "type": "Passive Skill",
+        "cooldownSeconds": null,
+        "level": null
+      }
+    ]
+  },
+  {
+    "id": "undine",
+    "source": "https://tilessurviveguide.com/heroes/undine",
+    "checked": "2026-10-09",
+    "skills": [
+      {
+        "name": "Ripple Ricochet",
+        "type": "Auto Attack",
+        "cooldownSeconds": 1,
+        "level": null
+      },
+      {
+        "name": "Azure Anthem",
+        "type": "Combat Skill",
+        "cooldownSeconds": 8,
+        "level": null
+      },
+      {
+        "name": "Wild Hunt",
+        "type": "Passive Skill",
+        "cooldownSeconds": null,
+        "level": null
+      }
+    ]
+  },
+  {
+    "id": "light",
+    "source": "https://tilessurviveguide.com/heroes/wright",
+    "checked": "2026-10-09",
+    "skills": [
+      {
+        "name": "Thunderstrike",
+        "type": "Auto Attack",
+        "cooldownSeconds": 1,
+        "level": null
+      },
+      {
+        "name": "Wing Barrage",
+        "type": "Combat Skill",
+        "cooldownSeconds": 9,
+        "level": null
+      },
+      {
+        "name": "Skyborne Support",
+        "type": "Passive Skill",
+        "cooldownSeconds": null,
+        "level": null
+      }
+    ]
+  }
+]

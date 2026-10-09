@@ -1,0 +1,41 @@
+{
+  "checked": "2026-10-09",
+  "baseline": "ef10abdc2b2bbcd98b2f5574faa0683769f94024",
+  "counts": {
+    "heroRosterBefore": 27,
+    "externalHeroDetailsInspected": 27,
+    "heroRosterAfter": 27,
+    "marinerHeroesEnriched": 4,
+    "otherHeroesWithOfficialChangeNotes": 2,
+    "heroesWithCooldownData": 27,
+    "petRosterBeforeAndAfter": 7,
+    "petDetailPagesBeforePerLanguage": 1,
+    "petDetailPagesAfterPerLanguage": 7,
+    "newEquipmentExpTransitions": 79,
+    "newKnownPetExpTransitions": 54,
+    "newPetExpUnknownPlaceholder": 1,
+    "newTrainingCostStage": 1,
+    "reforgeProbabilityBands": 6,
+    "newLogicalPages": 10,
+    "newLocalizedPages": 50,
+    "existingLocalizedPagesEnriched": 220,
+    "newScreenshotEncodings": 7
+  },
+  "gaps": [
+    {"category":"heroes","status":"partial","missing":"Complete level/star skill arrays, base stat conditions, acquisition requirements and all exclusive gear stages. Korean name Knotty verified as 너티; other new localized official names not inferred."},
+    {"category":"pets","status":"partial","missing":"EXP 86→87; complete levels 1–41; maximum level; per-pet skill sets except observed Starhorn; resonance combinations; training stage 4 bonus and stage 5 costs. No speculative new polar-bear detail."},
+    {"category":"skillBooks","status":"conflict","missing":"29→30: existing 685 versus TilesGuide 735. Existing row retained. Display total corrected arithmetically to 23,505; source total 23,555 kept distinct."},
+    {"category":"buildings","status":"partial","missing":"Exact new hospital free capacity and affected Power Plant prerequisite levels. Existing resource/time rows preserved with official version notes."},
+    {"category":"research","status":"missing","missing":"Verified node-by-node maximum levels, costs, times and prerequisite tree. Research Lab construction data is not substituted for research node data."},
+    {"category":"behemoths","status":"partial","missing":"New exclusive species full stats, serum/talent cost curves. Existing two species and 60-star tables retained; official deployment rules added."},
+    {"category":"events","status":"partial","missing":"Alliance Duel pet-task scores and Arcadian troop-tier kill/casualty point tables, numeric reward tiers."},
+    {"category":"coupons","status":"unchanged","missing":"No newly verified coupon; existing coupon data and app retained."}
+  ],
+  "sourceLimits": [
+    {"url":"https://tiles-survive-codex.fandom.com/wiki/Tiles_Survive_Codex_Wiki","status":"HTTP 403; no bypass attempted"},
+    {"url":"https://tilesmania.com/ko/","status":"Building/research restoration pages contain no verified full numeric tree to import"},
+    {"url":"https://www.tilesguide.com/","status":"Full gear EXP and skill book tables inspected; building/research advice does not provide a complete numeric tree"},
+    {"url":"https://funplus.com/draw-probability-publicity/tiles-survive-ko/","status":"Fresh direct HTML six-band probabilities used; cached search version was stale and rejected"}
+  ],
+  "preservation": ["Existing URL paths", "Existing numerical rows except documented skill-book footer arithmetic correction", "Existing calculator formulas", "27 existing heroes", "7 pet identities", "10 LootBar PNG exports and official artwork", "25 LootBar insertion slots", "Exact affiliate URL", "GitHub Pages and domain"]
+}

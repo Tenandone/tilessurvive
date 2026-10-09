@@ -1,0 +1,1569 @@
+{
+  "checked": "2026-10-09",
+  "sources": {
+    "gear": {
+      "url": "https://www.tilesguide.com/guides/gear-scraps",
+      "version": null,
+      "kind": "community-table"
+    },
+    "manuals": {
+      "url": "https://www.tilesguide.com/guides/hero-skill-manuals",
+      "version": null,
+      "kind": "community-table"
+    },
+    "pets": {
+      "url": "https://tilesmania.com/ko/pets/",
+      "version": "2026-09-21 observation",
+      "kind": "community-video-transcription"
+    },
+    "official": {
+      "url": "https://tilesurvivegame.com/en/blog/1173",
+      "version": "2.6.100",
+      "kind": "official"
+    },
+    "patch": {
+      "url": "https://tilesurvivegame.com/ko/blog/1193",
+      "version": "2.6.200",
+      "kind": "official"
+    },
+    "rules": {
+      "url": "https://tilesurvivegame.com/en/blog/1121",
+      "version": "2.6.0",
+      "kind": "official"
+    },
+    "reforge": {
+      "url": "https://funplus.com/draw-probability-publicity/tiles-survive-ko/",
+      "version": null,
+      "kind": "official"
+    },
+    "arcadia": {
+      "url": "https://tilesurvivegame.com/en/blog/828",
+      "version": "2026-01-07",
+      "kind": "official"
+    },
+    "baseline": {
+      "url": "https://github.com/Tenandone/tilessurvive/tree/ef10abdc2b2bbcd98b2f5574faa0683769f94024",
+      "version": "existing data; game version unknown",
+      "kind": "preserved"
+    }
+  },
+  "datasets": {
+    "gear": {
+      "source": "gear",
+      "unit": "EXP",
+      "min": 1,
+      "max": 80,
+      "rows": [
+        {
+          "from": 1,
+          "to": 2,
+          "cost": 400,
+          "sourceTotal": 400
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "cost": 600,
+          "sourceTotal": 1000
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "cost": 800,
+          "sourceTotal": 1800
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "cost": 1000,
+          "sourceTotal": 2800
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "cost": 1200,
+          "sourceTotal": 4000
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "cost": 1400,
+          "sourceTotal": 5400
+        },
+        {
+          "from": 7,
+          "to": 8,
+          "cost": 1600,
+          "sourceTotal": 7000
+        },
+        {
+          "from": 8,
+          "to": 9,
+          "cost": 1800,
+          "sourceTotal": 8800
+        },
+        {
+          "from": 9,
+          "to": 10,
+          "cost": 2100,
+          "sourceTotal": 10900
+        },
+        {
+          "from": 10,
+          "to": 11,
+          "cost": 2400,
+          "sourceTotal": 13300
+        },
+        {
+          "from": 11,
+          "to": 12,
+          "cost": 2700,
+          "sourceTotal": 16000
+        },
+        {
+          "from": 12,
+          "to": 13,
+          "cost": 3000,
+          "sourceTotal": 19000
+        },
+        {
+          "from": 13,
+          "to": 14,
+          "cost": 3300,
+          "sourceTotal": 22300
+        },
+        {
+          "from": 14,
+          "to": 15,
+          "cost": 3600,
+          "sourceTotal": 25900
+        },
+        {
+          "from": 15,
+          "to": 16,
+          "cost": 3900,
+          "sourceTotal": 29800
+        },
+        {
+          "from": 16,
+          "to": 17,
+          "cost": 4200,
+          "sourceTotal": 34000
+        },
+        {
+          "from": 17,
+          "to": 18,
+          "cost": 4500,
+          "sourceTotal": 38500
+        },
+        {
+          "from": 18,
+          "to": 19,
+          "cost": 4800,
+          "sourceTotal": 43300
+        },
+        {
+          "from": 19,
+          "to": 20,
+          "cost": 5200,
+          "sourceTotal": 48500
+        },
+        {
+          "from": 20,
+          "to": 21,
+          "cost": 5600,
+          "sourceTotal": 54100
+        },
+        {
+          "from": 21,
+          "to": 22,
+          "cost": 6000,
+          "sourceTotal": 60100
+        },
+        {
+          "from": 22,
+          "to": 23,
+          "cost": 6400,
+          "sourceTotal": 66500
+        },
+        {
+          "from": 23,
+          "to": 24,
+          "cost": 6800,
+          "sourceTotal": 73300
+        },
+        {
+          "from": 24,
+          "to": 25,
+          "cost": 7200,
+          "sourceTotal": 80500
+        },
+        {
+          "from": 25,
+          "to": 26,
+          "cost": 7600,
+          "sourceTotal": 88100
+        },
+        {
+          "from": 26,
+          "to": 27,
+          "cost": 8000,
+          "sourceTotal": 96100
+        },
+        {
+          "from": 27,
+          "to": 28,
+          "cost": 8400,
+          "sourceTotal": 104500
+        },
+        {
+          "from": 28,
+          "to": 29,
+          "cost": 8800,
+          "sourceTotal": 113300
+        },
+        {
+          "from": 29,
+          "to": 30,
+          "cost": 9300,
+          "sourceTotal": 122600
+        },
+        {
+          "from": 30,
+          "to": 31,
+          "cost": 9800,
+          "sourceTotal": 132400
+        },
+        {
+          "from": 31,
+          "to": 32,
+          "cost": 10300,
+          "sourceTotal": 142700
+        },
+        {
+          "from": 32,
+          "to": 33,
+          "cost": 10800,
+          "sourceTotal": 153500
+        },
+        {
+          "from": 33,
+          "to": 34,
+          "cost": 11300,
+          "sourceTotal": 164800
+        },
+        {
+          "from": 34,
+          "to": 35,
+          "cost": 11800,
+          "sourceTotal": 176600
+        },
+        {
+          "from": 35,
+          "to": 36,
+          "cost": 12300,
+          "sourceTotal": 188900
+        },
+        {
+          "from": 36,
+          "to": 37,
+          "cost": 12800,
+          "sourceTotal": 201700
+        },
+        {
+          "from": 37,
+          "to": 38,
+          "cost": 13300,
+          "sourceTotal": 215000
+        },
+        {
+          "from": 38,
+          "to": 39,
+          "cost": 13800,
+          "sourceTotal": 228800
+        },
+        {
+          "from": 39,
+          "to": 40,
+          "cost": 14400,
+          "sourceTotal": 243200
+        },
+        {
+          "from": 40,
+          "to": 41,
+          "cost": 15000,
+          "sourceTotal": 258200
+        },
+        {
+          "from": 41,
+          "to": 42,
+          "cost": 15600,
+          "sourceTotal": 273800
+        },
+        {
+          "from": 42,
+          "to": 43,
+          "cost": 16200,
+          "sourceTotal": 290000
+        },
+        {
+          "from": 43,
+          "to": 44,
+          "cost": 16800,
+          "sourceTotal": 306800
+        },
+        {
+          "from": 44,
+          "to": 45,
+          "cost": 17400,
+          "sourceTotal": 324200
+        },
+        {
+          "from": 45,
+          "to": 46,
+          "cost": 18000,
+          "sourceTotal": 342200
+        },
+        {
+          "from": 46,
+          "to": 47,
+          "cost": 18600,
+          "sourceTotal": 360800
+        },
+        {
+          "from": 47,
+          "to": 48,
+          "cost": 19200,
+          "sourceTotal": 380000
+        },
+        {
+          "from": 48,
+          "to": 49,
+          "cost": 19800,
+          "sourceTotal": 399800
+        },
+        {
+          "from": 49,
+          "to": 50,
+          "cost": 20500,
+          "sourceTotal": 420300
+        },
+        {
+          "from": 50,
+          "to": 51,
+          "cost": 22600,
+          "sourceTotal": 442900
+        },
+        {
+          "from": 51,
+          "to": 52,
+          "cost": 23500,
+          "sourceTotal": 466400
+        },
+        {
+          "from": 52,
+          "to": 53,
+          "cost": 24400,
+          "sourceTotal": 490800
+        },
+        {
+          "from": 53,
+          "to": 54,
+          "cost": 25300,
+          "sourceTotal": 516100
+        },
+        {
+          "from": 54,
+          "to": 55,
+          "cost": 26200,
+          "sourceTotal": 542300
+        },
+        {
+          "from": 55,
+          "to": 56,
+          "cost": 27100,
+          "sourceTotal": 569400
+        },
+        {
+          "from": 56,
+          "to": 57,
+          "cost": 28000,
+          "sourceTotal": 597400
+        },
+        {
+          "from": 57,
+          "to": 58,
+          "cost": 28900,
+          "sourceTotal": 626300
+        },
+        {
+          "from": 58,
+          "to": 59,
+          "cost": 29800,
+          "sourceTotal": 656100
+        },
+        {
+          "from": 59,
+          "to": 60,
+          "cost": 31000,
+          "sourceTotal": 687100
+        },
+        {
+          "from": 60,
+          "to": 61,
+          "cost": 32200,
+          "sourceTotal": 719300
+        },
+        {
+          "from": 61,
+          "to": 62,
+          "cost": 33400,
+          "sourceTotal": 752700
+        },
+        {
+          "from": 62,
+          "to": 63,
+          "cost": 34600,
+          "sourceTotal": 787300
+        },
+        {
+          "from": 63,
+          "to": 64,
+          "cost": 35800,
+          "sourceTotal": 823100
+        },
+        {
+          "from": 64,
+          "to": 65,
+          "cost": 37000,
+          "sourceTotal": 860100
+        },
+        {
+          "from": 65,
+          "to": 66,
+          "cost": 38200,
+          "sourceTotal": 898300
+        },
+        {
+          "from": 66,
+          "to": 67,
+          "cost": 39400,
+          "sourceTotal": 937700
+        },
+        {
+          "from": 67,
+          "to": 68,
+          "cost": 40600,
+          "sourceTotal": 978300
+        },
+        {
+          "from": 68,
+          "to": 69,
+          "cost": 41800,
+          "sourceTotal": 1020100
+        },
+        {
+          "from": 69,
+          "to": 70,
+          "cost": 43400,
+          "sourceTotal": 1063500
+        },
+        {
+          "from": 70,
+          "to": 71,
+          "cost": 45000,
+          "sourceTotal": 1108500
+        },
+        {
+          "from": 71,
+          "to": 72,
+          "cost": 46600,
+          "sourceTotal": 1155100
+        },
+        {
+          "from": 72,
+          "to": 73,
+          "cost": 48200,
+          "sourceTotal": 1203300
+        },
+        {
+          "from": 73,
+          "to": 74,
+          "cost": 49800,
+          "sourceTotal": 1253100
+        },
+        {
+          "from": 74,
+          "to": 75,
+          "cost": 51400,
+          "sourceTotal": 1304500
+        },
+        {
+          "from": 75,
+          "to": 76,
+          "cost": 53000,
+          "sourceTotal": 1357500
+        },
+        {
+          "from": 76,
+          "to": 77,
+          "cost": 54600,
+          "sourceTotal": 1412100
+        },
+        {
+          "from": 77,
+          "to": 78,
+          "cost": 56200,
+          "sourceTotal": 1468300
+        },
+        {
+          "from": 78,
+          "to": 79,
+          "cost": 57800,
+          "sourceTotal": 1526100
+        },
+        {
+          "from": 79,
+          "to": 80,
+          "cost": 59400,
+          "sourceTotal": 1585500
+        }
+      ]
+    },
+    "petExp": {
+      "source": "pets",
+      "unit": "EXP",
+      "min": 41,
+      "max": 96,
+      "rows": [
+        {
+          "from": 41,
+          "to": 42,
+          "cost": 2300
+        },
+        {
+          "from": 42,
+          "to": 43,
+          "cost": 2400
+        },
+        {
+          "from": 43,
+          "to": 44,
+          "cost": 2600
+        },
+        {
+          "from": 44,
+          "to": 45,
+          "cost": 2600
+        },
+        {
+          "from": 45,
+          "to": 46,
+          "cost": 2800
+        },
+        {
+          "from": 46,
+          "to": 47,
+          "cost": 2900
+        },
+        {
+          "from": 47,
+          "to": 48,
+          "cost": 3100
+        },
+        {
+          "from": 48,
+          "to": 49,
+          "cost": 3200
+        },
+        {
+          "from": 49,
+          "to": 50,
+          "cost": 3400
+        },
+        {
+          "from": 50,
+          "to": 51,
+          "cost": 3500
+        },
+        {
+          "from": 51,
+          "to": 52,
+          "cost": 3700
+        },
+        {
+          "from": 52,
+          "to": 53,
+          "cost": 3900
+        },
+        {
+          "from": 53,
+          "to": 54,
+          "cost": 4000
+        },
+        {
+          "from": 54,
+          "to": 55,
+          "cost": 4200
+        },
+        {
+          "from": 55,
+          "to": 56,
+          "cost": 4300
+        },
+        {
+          "from": 56,
+          "to": 57,
+          "cost": 4600
+        },
+        {
+          "from": 57,
+          "to": 58,
+          "cost": 4700
+        },
+        {
+          "from": 58,
+          "to": 59,
+          "cost": 4900
+        },
+        {
+          "from": 59,
+          "to": 60,
+          "cost": 5100
+        },
+        {
+          "from": 60,
+          "to": 61,
+          "cost": 5300
+        },
+        {
+          "from": 61,
+          "to": 62,
+          "cost": 5600
+        },
+        {
+          "from": 62,
+          "to": 63,
+          "cost": 5700
+        },
+        {
+          "from": 63,
+          "to": 64,
+          "cost": 6000
+        },
+        {
+          "from": 64,
+          "to": 65,
+          "cost": 6200
+        },
+        {
+          "from": 65,
+          "to": 66,
+          "cost": 6400
+        },
+        {
+          "from": 66,
+          "to": 67,
+          "cost": 6500
+        },
+        {
+          "from": 67,
+          "to": 68,
+          "cost": 6800
+        },
+        {
+          "from": 68,
+          "to": 69,
+          "cost": 7100
+        },
+        {
+          "from": 69,
+          "to": 70,
+          "cost": 7300
+        },
+        {
+          "from": 70,
+          "to": 71,
+          "cost": 7500
+        },
+        {
+          "from": 71,
+          "to": 72,
+          "cost": 7700
+        },
+        {
+          "from": 72,
+          "to": 73,
+          "cost": 8100
+        },
+        {
+          "from": 73,
+          "to": 74,
+          "cost": 8200
+        },
+        {
+          "from": 74,
+          "to": 75,
+          "cost": 8600
+        },
+        {
+          "from": 75,
+          "to": 76,
+          "cost": 8800
+        },
+        {
+          "from": 76,
+          "to": 77,
+          "cost": 9100
+        },
+        {
+          "from": 77,
+          "to": 78,
+          "cost": 9300
+        },
+        {
+          "from": 78,
+          "to": 79,
+          "cost": 9700
+        },
+        {
+          "from": 79,
+          "to": 80,
+          "cost": 9900
+        },
+        {
+          "from": 80,
+          "to": 81,
+          "cost": 10100
+        },
+        {
+          "from": 81,
+          "to": 82,
+          "cost": 10500
+        },
+        {
+          "from": 82,
+          "to": 83,
+          "cost": 10700
+        },
+        {
+          "from": 83,
+          "to": 84,
+          "cost": 11300
+        },
+        {
+          "from": 84,
+          "to": 85,
+          "cost": 11300
+        },
+        {
+          "from": 85,
+          "to": 86,
+          "cost": 11800
+        },
+        {
+          "from": 86,
+          "to": 87,
+          "cost": null
+        },
+        {
+          "from": 87,
+          "to": 88,
+          "cost": 12500
+        },
+        {
+          "from": 88,
+          "to": 89,
+          "cost": 12600
+        },
+        {
+          "from": 89,
+          "to": 90,
+          "cost": 13100
+        },
+        {
+          "from": 90,
+          "to": 91,
+          "cost": 13400
+        },
+        {
+          "from": 91,
+          "to": 92,
+          "cost": 13600
+        },
+        {
+          "from": 92,
+          "to": 93,
+          "cost": 14100
+        },
+        {
+          "from": 93,
+          "to": 94,
+          "cost": 14300
+        },
+        {
+          "from": 94,
+          "to": 95,
+          "cost": 15000
+        },
+        {
+          "from": 95,
+          "to": 96,
+          "cost": 15000
+        }
+      ]
+    },
+    "petTraining": {
+      "source": "pets",
+      "unit": "marks",
+      "min": 0,
+      "max": 4,
+      "rows": [
+        {
+          "from": 0,
+          "to": 1,
+          "cost": 100,
+          "stepCost": 5,
+          "bonus": 40
+        },
+        {
+          "from": 1,
+          "to": 2,
+          "cost": 200,
+          "stepCost": 10,
+          "bonus": 55
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "cost": 400,
+          "stepCost": 20,
+          "bonus": 70
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "cost": 600,
+          "stepCost": 30,
+          "bonus": null
+        }
+      ]
+    },
+    "skillBook": {
+      "source": "baseline",
+      "unit": "books",
+      "min": 1,
+      "max": 40,
+      "rows": [
+        {
+          "from": 1,
+          "to": 2,
+          "cost": 1
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "cost": 3
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "cost": 6
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "cost": 10
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "cost": 20
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "cost": 30
+        },
+        {
+          "from": 7,
+          "to": 8,
+          "cost": 40
+        },
+        {
+          "from": 8,
+          "to": 9,
+          "cost": 50
+        },
+        {
+          "from": 9,
+          "to": 10,
+          "cost": 70
+        },
+        {
+          "from": 10,
+          "to": 11,
+          "cost": 90
+        },
+        {
+          "from": 11,
+          "to": 12,
+          "cost": 110
+        },
+        {
+          "from": 12,
+          "to": 13,
+          "cost": 130
+        },
+        {
+          "from": 13,
+          "to": 14,
+          "cost": 150
+        },
+        {
+          "from": 14,
+          "to": 15,
+          "cost": 180
+        },
+        {
+          "from": 15,
+          "to": 16,
+          "cost": 210
+        },
+        {
+          "from": 16,
+          "to": 17,
+          "cost": 240
+        },
+        {
+          "from": 17,
+          "to": 18,
+          "cost": 270
+        },
+        {
+          "from": 18,
+          "to": 19,
+          "cost": 300
+        },
+        {
+          "from": 19,
+          "to": 20,
+          "cost": 335
+        },
+        {
+          "from": 20,
+          "to": 21,
+          "cost": 370
+        },
+        {
+          "from": 21,
+          "to": 22,
+          "cost": 405
+        },
+        {
+          "from": 22,
+          "to": 23,
+          "cost": 440
+        },
+        {
+          "from": 23,
+          "to": 24,
+          "cost": 475
+        },
+        {
+          "from": 24,
+          "to": 25,
+          "cost": 510
+        },
+        {
+          "from": 25,
+          "to": 26,
+          "cost": 545
+        },
+        {
+          "from": 26,
+          "to": 27,
+          "cost": 580
+        },
+        {
+          "from": 27,
+          "to": 28,
+          "cost": 615
+        },
+        {
+          "from": 28,
+          "to": 29,
+          "cost": 650
+        },
+        {
+          "from": 29,
+          "to": 30,
+          "cost": 685
+        },
+        {
+          "from": 30,
+          "to": 31,
+          "cost": 850
+        },
+        {
+          "from": 31,
+          "to": 32,
+          "cost": 990
+        },
+        {
+          "from": 32,
+          "to": 33,
+          "cost": 1140
+        },
+        {
+          "from": 33,
+          "to": 34,
+          "cost": 1300
+        },
+        {
+          "from": 34,
+          "to": 35,
+          "cost": 1470
+        },
+        {
+          "from": 35,
+          "to": 36,
+          "cost": 1650
+        },
+        {
+          "from": 36,
+          "to": 37,
+          "cost": 1840
+        },
+        {
+          "from": 37,
+          "to": 38,
+          "cost": 2040
+        },
+        {
+          "from": 38,
+          "to": 39,
+          "cost": 2245
+        },
+        {
+          "from": 39,
+          "to": 40,
+          "cost": 2460
+        }
+      ],
+      "comparison": [
+        {
+          "to": 2,
+          "cost": 1,
+          "total": 1
+        },
+        {
+          "to": 3,
+          "cost": 3,
+          "total": 4
+        },
+        {
+          "to": 4,
+          "cost": 6,
+          "total": 10
+        },
+        {
+          "to": 5,
+          "cost": 10,
+          "total": 20
+        },
+        {
+          "to": 6,
+          "cost": 20,
+          "total": 40
+        },
+        {
+          "to": 7,
+          "cost": 30,
+          "total": 70
+        },
+        {
+          "to": 8,
+          "cost": 40,
+          "total": 110
+        },
+        {
+          "to": 9,
+          "cost": 50,
+          "total": 160
+        },
+        {
+          "to": 10,
+          "cost": 70,
+          "total": 230
+        },
+        {
+          "to": 11,
+          "cost": 90,
+          "total": 320
+        },
+        {
+          "to": 12,
+          "cost": 110,
+          "total": 430
+        },
+        {
+          "to": 13,
+          "cost": 130,
+          "total": 560
+        },
+        {
+          "to": 14,
+          "cost": 150,
+          "total": 710
+        },
+        {
+          "to": 15,
+          "cost": 180,
+          "total": 890
+        },
+        {
+          "to": 16,
+          "cost": 210,
+          "total": 1100
+        },
+        {
+          "to": 17,
+          "cost": 240,
+          "total": 1340
+        },
+        {
+          "to": 18,
+          "cost": 270,
+          "total": 1610
+        },
+        {
+          "to": 19,
+          "cost": 300,
+          "total": 1910
+        },
+        {
+          "to": 20,
+          "cost": 335,
+          "total": 2245
+        },
+        {
+          "to": 21,
+          "cost": 370,
+          "total": 2615
+        },
+        {
+          "to": 22,
+          "cost": 405,
+          "total": 3020
+        },
+        {
+          "to": 23,
+          "cost": 440,
+          "total": 3460
+        },
+        {
+          "to": 24,
+          "cost": 475,
+          "total": 3935
+        },
+        {
+          "to": 25,
+          "cost": 510,
+          "total": 4445
+        },
+        {
+          "to": 26,
+          "cost": 545,
+          "total": 4990
+        },
+        {
+          "to": 27,
+          "cost": 580,
+          "total": 5570
+        },
+        {
+          "to": 28,
+          "cost": 615,
+          "total": 6185
+        },
+        {
+          "to": 29,
+          "cost": 650,
+          "total": 6835
+        },
+        {
+          "to": 30,
+          "cost": 735,
+          "total": 7570
+        },
+        {
+          "to": 31,
+          "cost": 850,
+          "total": 8420
+        },
+        {
+          "to": 32,
+          "cost": 990,
+          "total": 9410
+        },
+        {
+          "to": 33,
+          "cost": 1140,
+          "total": 10550
+        },
+        {
+          "to": 34,
+          "cost": 1300,
+          "total": 11850
+        },
+        {
+          "to": 35,
+          "cost": 1470,
+          "total": 13320
+        },
+        {
+          "to": 36,
+          "cost": 1650,
+          "total": 14970
+        },
+        {
+          "to": 37,
+          "cost": 1840,
+          "total": 16810
+        },
+        {
+          "to": 38,
+          "cost": 2040,
+          "total": 18850
+        },
+        {
+          "to": 39,
+          "cost": 2245,
+          "total": 21095
+        },
+        {
+          "to": 40,
+          "cost": 2460,
+          "total": 23555
+        }
+      ]
+    },
+    "exclusive": {
+      "source": "baseline",
+      "unit": "parts",
+      "min": 1,
+      "max": 15,
+      "rows": [
+        {
+          "from": 1,
+          "to": 2,
+          "cost": 5
+        },
+        {
+          "from": 2,
+          "to": 3,
+          "cost": 10
+        },
+        {
+          "from": 3,
+          "to": 4,
+          "cost": 20
+        },
+        {
+          "from": 4,
+          "to": 5,
+          "cost": 25
+        },
+        {
+          "from": 5,
+          "to": 6,
+          "cost": 30
+        },
+        {
+          "from": 6,
+          "to": 7,
+          "cost": 30
+        },
+        {
+          "from": 7,
+          "to": 8,
+          "cost": 30
+        },
+        {
+          "from": 8,
+          "to": 9,
+          "cost": 30
+        },
+        {
+          "from": 9,
+          "to": 10,
+          "cost": 30
+        },
+        {
+          "from": 10,
+          "to": 11,
+          "cost": 30
+        },
+        {
+          "from": 11,
+          "to": 12,
+          "cost": 30
+        },
+        {
+          "from": 12,
+          "to": 13,
+          "cost": 30
+        },
+        {
+          "from": 13,
+          "to": 14,
+          "cost": 30
+        },
+        {
+          "from": 14,
+          "to": 15,
+          "cost": 30
+        }
+      ]
+    }
+  },
+  "pets": [
+    {
+      "id": "snowball",
+      "name": "Snowball",
+      "ko": "스노우볼",
+      "role": "Support",
+      "rarity": null,
+      "eggs": {
+        "rare": 22.22,
+        "epic": 10,
+        "legendary": null
+      },
+      "stats": []
+    },
+    {
+      "id": "dodo",
+      "name": "Dodo",
+      "ko": "도도",
+      "role": "Attacker",
+      "rarity": "R",
+      "eggs": {
+        "rare": 22.22,
+        "epic": 10,
+        "legendary": null
+      },
+      "stats": [
+        {
+          "level": 40,
+          "training": 0,
+          "radiant": false,
+          "atk": "378",
+          "def": "76",
+          "hp": "23.24K",
+          "power": "51,465"
+        }
+      ]
+    },
+    {
+      "id": "buckler",
+      "name": "Buckler",
+      "ko": "버클러",
+      "role": "Defender",
+      "rarity": null,
+      "eggs": {
+        "rare": 22.22,
+        "epic": 10,
+        "legendary": null
+      },
+      "stats": []
+    },
+    {
+      "id": "fluffy",
+      "name": "Fluffy",
+      "ko": "솜솜",
+      "role": "Support",
+      "rarity": null,
+      "eggs": {
+        "rare": 11.11,
+        "epic": 20,
+        "legendary": 16.67
+      },
+      "stats": []
+    },
+    {
+      "id": "hardhead",
+      "name": "Hardhead",
+      "ko": "철두",
+      "role": "Attacker",
+      "rarity": null,
+      "eggs": {
+        "rare": 11.11,
+        "epic": 20,
+        "legendary": 16.67
+      },
+      "stats": []
+    },
+    {
+      "id": "shadow",
+      "name": "Shadow",
+      "ko": "쉐도우",
+      "role": "Attacker",
+      "rarity": null,
+      "eggs": {
+        "rare": 11.11,
+        "epic": 20,
+        "legendary": 16.67
+      },
+      "stats": []
+    },
+    {
+      "id": "starhorn",
+      "name": "Starhorn",
+      "ko": "별뿔이",
+      "role": "Defender",
+      "rarity": "SSR",
+      "eggs": {
+        "rare": null,
+        "epic": 10,
+        "legendary": 50
+      },
+      "stats": [
+        {
+          "level": 41,
+          "training": 2,
+          "radiant": false,
+          "atk": "3.06K",
+          "def": "613",
+          "hp": "202.50K",
+          "power": "497,915"
+        },
+        {
+          "level": 87,
+          "training": 3,
+          "radiant": true,
+          "atk": "6.68K",
+          "def": "1.33K",
+          "hp": "443.72K",
+          "power": "940,363"
+        },
+        {
+          "level": 95,
+          "training": 3,
+          "radiant": true,
+          "atk": "7.14K",
+          "def": "1.42K",
+          "hp": "474.27K",
+          "power": "1,001,555"
+        }
+      ]
+    }
+  ],
+  "feed": [
+    50,
+    100,
+    200,
+    500
+  ],
+  "scraps": [
+    100,
+    400,
+    2000
+  ],
+  "reforge": [
+    {
+      "band": "1~30",
+      "values": [
+        90,
+        10,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "band": "31~60",
+      "values": [
+        50,
+        45,
+        5,
+        0,
+        0,
+        0
+      ]
+    },
+    {
+      "band": "61~100",
+      "values": [
+        26,
+        60,
+        10,
+        0,
+        4,
+        0
+      ]
+    },
+    {
+      "band": "101~200",
+      "values": [
+        0,
+        65,
+        20,
+        10,
+        4.5,
+        0.5
+      ]
+    },
+    {
+      "band": "≥201\n일반 제련",
+      "values": [
+        0,
+        0,
+        20,
+        74.95,
+        4.53,
+        0.52
+      ]
+    },
+    {
+      "band": "≥201\n고급 제련",
+      "values": [
+        0,
+        0,
+        15,
+        73.5,
+        5.4,
+        6.1
+      ]
+    }
+  ],
+  "conflicts": [
+    {
+      "id": "skill-book-30",
+      "existing": 685,
+      "external": 735,
+      "status": "unresolved; preserve existing value"
+    },
+    {
+      "id": "pet-exp-86",
+      "value": null,
+      "status": "missing; block affected ranges"
+    },
+    {
+      "id": "pet-training-bonus-4",
+      "value": null,
+      "status": "source extrapolation; excluded"
+    },
+    {
+      "id": "pet-training-5",
+      "value": null,
+      "status": "source extrapolation; excluded"
+    }
+  ],
+  "reforgeCosts": {
+    "basic": 1,
+    "advanced": 25,
+    "unlockAfter": 200
+  }
+}

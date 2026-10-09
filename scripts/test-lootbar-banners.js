@@ -16,6 +16,9 @@ for(const [lang,c] of Object.entries(copy))for(const type of types){
  if(type==='top-up/')check(!d.querySelector('.topup-sticky'),'No fixed CTA');
  if(type==='guides/discount-topup-promotion/')check(!d.querySelector('#widget .widget-desktop,#widget .widget-mobile,#widget iframe,#widget [data-placeholder]'),'Legacy device wrappers and overlays removed');
 }
-for(const file of ['config/affiliate.json','data/tilessurvive-coupons.json','js/platform-affiliate.js','js/platform-math.js','sitemap.xml','robots.txt','CNAME'])check(fs.readFileSync(path.join(root,file),'utf8').replace(/\r\n/g,'\n')===execFileSync('git',['show','6f9e8cf:'+file],{cwd:root,encoding:'utf8',maxBuffer:2000000}).replace(/\r\n/g,'\n'),'Preserved '+file);
+for(const file of ['config/affiliate.json','data/tilessurvive-coupons.json','js/platform-affiliate.js','js/platform-math.js','robots.txt','CNAME'])check(fs.readFileSync(path.join(root,file),'utf8').replace(/\r\n/g,'\n')===execFileSync('git',['show','6f9e8cf:'+file],{cwd:root,encoding:'utf8',maxBuffer:2000000}).replace(/\r\n/g,'\n'),'Preserved '+file);
+// Content expansion adds URLs; every pre-existing sitemap URL must survive.
+const oldMap=execFileSync('git',['show','6f9e8cf:sitemap.xml'],{cwd:root,encoding:'utf8'}),newMap=fs.readFileSync(path.join(root,'sitemap.xml'),'utf8');
+for(const url of oldMap.match(/<loc>[^<]+<\/loc>/g))check(newMap.includes(url),'Preserved sitemap URL '+url);
 for(const lang of Object.keys(copy))for(const type of types){const relative=lang+'/'+type+'index.html';const now=parseHTML(fs.readFileSync(path.join(root,relative),'utf8')).document;const before=parseHTML(execFileSync('git',['show','e46a3fe:'+relative],{cwd:root,encoding:'utf8',maxBuffer:2000000})).document;for(const d of [now,before]){d.querySelector('[data-lootbar-slot]').innerHTML='';d.querySelector('link[data-lootbar-style]').remove();}check(now.documentElement.outerHTML===before.documentElement.outerHTML,'Only banner content changed '+relative);}
 console.log(JSON.stringify({checks,pages:25,languages:5,errors:[]},null,2));

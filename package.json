@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "node scripts/refine-content.js && node scripts/build-platform.js && node scripts/build-lootbar-banners.js && node scripts/build-search-index.js && node scripts/audit-site.js --strict",
+    "build": "node scripts/refine-content.js && node scripts/expand-database.js && node scripts/build-platform.js && node scripts/build-lootbar-banners.js && node scripts/build-search-index.js && node scripts/audit-site.js --strict",
     "build:banners": "node scripts/build-lootbar-banners.js",
     "test:banners": "node scripts/test-lootbar-banners.js",
     "test:platform": "node scripts/test-platform.js",
@@ -21,7 +21,8 @@
     "build:core": "node scripts/build-core-content.js && node scripts/link-season-four.js",
     "fix:assets": "node scripts/fix-known-broken-assets.js",
     "updates:check": "node scripts/check-official-updates.js",
-    "test": "node scripts/audit-site.js"
+    "test": "node scripts/audit-site.js",
+    "test:database": "node scripts/test-database-22.js"
   },
   "keywords": [],
   "author": "",

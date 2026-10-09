@@ -1,0 +1,12 @@
+.ts-database-22{margin-block:2rem;padding-block:1rem;border-top:1px solid var(--line,#d8e0dc)}
+.ts-database-22 h2{margin:0 0 1rem}.ts-database-22 p{max-width:85ch;line-height:1.7}
+.ts-database-22 table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums}
+.ts-database-22 th,.ts-database-22 td{padding:.7rem .8rem;border-bottom:1px solid #d8e0dc;text-align:start;vertical-align:top}
+.ts-database-22 th{font-weight:700}.ts-database-22 .ts-table-wrap{max-width:100%;overflow:auto}
+.ts-growth-form{display:flex;flex-wrap:wrap;align-items:end;gap:1rem;background:#edf3ed;padding:1rem;border-radius:8px;margin-block:1rem;color:#22332b}
+.ts-growth-form label{display:grid;gap:.4rem;flex:1 1 130px;min-width:0}
+.ts-growth-form input{width:100%;min-width:0;box-sizing:border-box;padding:.6rem;font:inherit;color:inherit;background:#fff;border:1px solid #738778;border-radius:4px}
+.ts-growth-form output{flex:1 0 100%;font-weight:700;line-height:1.6;overflow-wrap:anywhere}
+.ts-source-note{font-size:.875rem;color:#526457}.ts-evidence-22 img{max-width:100%;height:auto;max-height:680px;object-fit:contain}
+html.ts-platform main .ts-database-22 a{text-decoration:underline;text-underline-offset:.2em}
+@media(max-width:480px){.ts-database-22 th,.ts-database-22 td{padding:.6rem}.ts-growth-form{gap:.75rem}.ts-database-22{margin-block:1.5rem}}
