@@ -447,6 +447,15 @@ const canonicalPages = pages.filter(
       p.document.querySelector("meta[name=robots]")?.content || "",
     ) && canonical(p) === origin + p.route,
 );
+// Preserve existing indexable entry points outside the five language trees.
+// These pages are not part of the visual migration and keep their URLs/content.
+for (const route of ['/', '/tiktok-live-match/']) {
+  const document = parseHTML(fs.readFileSync(path.join(root, route, 'index.html'), 'utf8')).document;
+  if (!/noindex/.test(document.querySelector('meta[name=robots]')?.content || '') &&
+      document.querySelector('link[rel=canonical]')?.href === origin + route) {
+    canonicalPages.push({route, document});
+  }
+}
 fs.writeFileSync(
   path.join(root, "sitemap.xml"),
   '<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n' +

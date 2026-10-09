@@ -265,6 +265,8 @@ checks += 9;
 const sitemap = fs.readFileSync(path.join(root, "sitemap.xml"), "utf8");
 check(sitemap.includes("/en/heroes/tazan/"), "Missing canonical in sitemap");
 check(!sitemap.includes("/en/heroes/tarzan/"), "Noindex alias in sitemap");
+check(sitemap.includes('<loc>https://tilessurvive.net/</loc>'), 'Root entry missing from sitemap');
+check(sitemap.includes('/tiktok-live-match/'), 'Existing non-language page missing from sitemap');
 const css = fs.readFileSync(path.join(root, "css/platform.css"), "utf8");
 check(
   /@media\s*\(prefers-reduced-motion:\s*reduce\)/.test(css),
