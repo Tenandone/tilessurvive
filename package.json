@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "node scripts/refine-content.js && node scripts/build-platform.js && node scripts/build-search-index.js && node scripts/audit-site.js --strict",
+    "build": "node scripts/refine-content.js && node scripts/build-platform.js && node scripts/build-lootbar-banners.js && node scripts/build-search-index.js && node scripts/audit-site.js --strict",
+    "build:banners": "node scripts/build-lootbar-banners.js",
+    "test:banners": "node scripts/test-lootbar-banners.js",
     "test:platform": "node scripts/test-platform.js",
     "test:refinement": "node scripts/test-refinement.js",
     "dev": "serve . -l 3000",

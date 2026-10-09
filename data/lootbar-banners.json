@@ -1,0 +1,7 @@
+{
+  "ko": {"label":"제휴 링크 · LootBar","title":"타일서바이벌","message":"충전도, 계획적으로.","cta":"할인 충전 바로가기","note":"최종 가격과 이용 조건은 LootBar에서 확인하세요.","newTab":"새 탭에서 열기"},
+  "en": {"label":"Affiliate link · LootBar","title":"Tiles Survive","message":"Make your next top-up count.","cta":"Explore top-up offers","note":"Check final prices and availability on LootBar.","newTab":"Opens in a new tab"},
+  "ja": {"label":"アフィリエイトリンク · LootBar","title":"Tiles Survive","message":"次のチャージを、賢く。","cta":"お得なチャージはこちら","note":"最終価格と利用条件はLootBarでご確認ください。","newTab":"新しいタブで開きます"},
+  "ru": {"label":"Партнёрская ссылка · LootBar","title":"Tiles Survive","message":"Пополняйте с умом.","cta":"Предложения на пополнение","note":"Итоговую цену и условия уточняйте на LootBar.","newTab":"Откроется в новой вкладке"},
+  "zh-tw": {"label":"聯盟連結 · LootBar","title":"Tiles Survive","message":"每次儲值，都有規劃。","cta":"查看儲值優惠","note":"最終價格與適用條件請以LootBar頁面為準。","newTab":"在新分頁開啟"}
+}
