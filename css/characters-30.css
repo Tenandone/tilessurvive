@@ -1,0 +1,169 @@
+/* Character views share the product palette. Original game images are never synthesized. */
+html.ts-platform.ts3-characters { --character-ink:var(--ts3-ink,#17362c); --character-green:var(--ts3-green,#245c49); --character-paper:var(--ts3-paper,#f6f4ee); --character-line:var(--ts3-line,#d9ded5); }
+html.ts-platform.ts3-characters main { min-width:0; }
+html.ts-platform.ts3-characters main > .container { padding-inline:0; max-width:none; width:100%; }
+html.ts-platform.ts3-characters :is(.ts3-character-stage,.ts3-directory-intro) { background:var(--character-ink); color:#f6f4ee; border:0; border-radius:8px; padding:34px; margin:18px 0 0; box-shadow:0 12px 28px #143d2510; overflow:hidden; }
+html.ts-platform.ts3-characters .ts3-character-stage .hero-grid,
+html.ts-platform.ts3-characters .ts3-character-stage.ts-character-intro { display:grid; grid-template-columns:minmax(0,1fr) minmax(160px,260px); gap:36px; align-items:center; }
+html.ts-platform.ts3-characters .ts3-character-stage .ts3-character-copy { order:0; min-width:0; }
+html.ts-platform.ts3-characters .ts3-character-stage :is(h1,h2,h3,.hero-sub,.hero-summary,.ts-overline,.eyebrow,.ts-evidence-label,p,.value,.label) { color:inherit; }
+html.ts-platform.ts3-characters .ts3-character-stage h1 { font-size:clamp(2rem,4.2vw,3.6rem); line-height:1.12; letter-spacing:-.04em; margin:12px 0 20px; }
+html.ts-platform.ts3-characters .ts3-character-stage :is(.hero-sub,.hero-summary) { font-size:14px; line-height:1.8; max-width:67ch; opacity:.92; }
+html.ts-platform.ts3-characters .ts3-character-stage :is(.hero-summary,.summary-grid) { border-color:#b2c1b638; }
+html.ts-platform.ts3-characters .ts3-character-stage .summary-grid { padding:14px 0 0; margin:20px 0 0; border-bottom:0; }
+html.ts-platform.ts3-characters .ts3-character-stage .summary-card { border-color:#b2c1b638; color:#f6f4ee; padding:0 14px; }
+html.ts-platform.ts3-characters .ts3-character-stage .summary-card:first-child { padding-left:0; }
+html.ts-platform.ts3-characters .ts3-character-stage .summary-card .label { font-size:12px; opacity:.7; }
+html.ts-platform.ts3-characters .ts3-character-stage .summary-card .value { font-size:19px; }
+html.ts-platform.ts3-characters .ts3-character-stage :is(.rarity-badge,.role-badge) { border:1px solid #aebcaa50; background:#f6f4ee0c; color:#f3e3bf; border-radius:3px; padding:5px 10px; font-size:12px; }
+html.ts-platform.ts3-characters .ts3-character-stage .ts3-character-art { order:2; position:relative; justify-self:end; align-self:center; display:block; width:100%; max-width:260px; margin:0; padding:0; border-radius:5px; background:#142d24; border:1px solid #eee7d032; box-shadow:0 14px 30px #091e2250; overflow:hidden; }
+html.ts-platform.ts3-characters .ts3-character-art img { display:block; width:100%; height:auto; max-height:360px; object-fit:contain; object-position:center; border:0; border-radius:0; animation:ts3-character-enter 360ms cubic-bezier(.2,.7,.3,1) both; }
+html.ts-platform.ts3-characters .ts3-character-art::before { display:none; }
+html.ts-platform.ts3-characters .ts3-character-stage .ts3-character-kicker { display:flex; gap:8px; flex-wrap:wrap; align-items:center; margin:0 0 10px; font-size:12px; letter-spacing:.03em; color:#e0d4b5; }
+html.ts-platform.ts3-characters .ts3-character-kicker a { color:inherit; text-decoration:none; border-bottom:1px solid #e0d4b550; padding-block:4px; }
+html.ts-platform.ts3-characters .ts3-character-actions { display:flex; flex-wrap:wrap; gap:9px; margin-top:20px; }
+html.ts-platform.ts3-characters .ts3-character-actions a { min-height:44px; padding:9px 13px; border:1px solid #b7c6b94a; border-radius:3px; display:flex; justify-content:space-between; align-items:center; gap:20px; color:#f5efdf; font-size:13px; text-decoration:none; background:#ffffff07; transition:background 160ms,border-color 160ms; }
+html.ts-platform.ts3-characters .ts3-character-actions a:hover { background:#ffffff14; border-color:#cfbc8f; }
+html.ts-platform.ts3-characters .ts3-character-stage .ts-context-links a { color:#eee7d0; border-color:#b2c1b638; }
+html.ts-platform.ts3-characters .ts3-character-sections { display:flex; align-items:center; gap:0 20px; padding:4px 0; margin:0 0 24px; border-bottom:1px solid var(--character-line); overflow-x:auto; scrollbar-width:thin; white-space:nowrap; }
+html.ts-platform.ts3-characters .ts3-character-sections a { flex:0 0 auto; display:flex; align-items:center; min-height:49px; padding:10px 1px; border-bottom:2px solid transparent; text-decoration:none; color:var(--character-ink); font-size:13px; font-weight:600; }
+html.ts-platform.ts3-characters .ts3-character-sections a:hover,
+html.ts-platform.ts3-characters .ts3-character-sections a[aria-current=true] { border-bottom-color:var(--character-green); }
+html.ts-platform.ts3-characters .ts3-character-section { border:0; border-top:1px solid var(--character-line); background:transparent; border-radius:0; box-shadow:none; margin:28px 0 0; padding:28px 0 0; }
+html.ts-platform.ts3-characters .ts3-character-section > h2,
+html.ts-platform.ts3-characters .ts3-character-section > .section-head h2 { margin:0 0 18px; color:var(--character-ink); font-size:22px; }
+html.ts-platform.ts3-characters .ts3-character-section .section-head,
+html.ts-platform.ts3-characters .ts3-character-section .section-head :is(h2,p) { text-align:left; justify-content:flex-start; margin-inline:0; }
+html.ts-platform.ts3-characters .ts3-character-section .section-head > p,
+html.ts-platform.ts3-characters .stat-card > .k,
+html.ts-platform.ts3-characters main .breadcrumb span { color:#52654f; }
+html.ts-platform.ts3-characters .ts3-character-section p { max-width:84ch; }
+html.ts-platform.ts3-characters main h2[id] { scroll-margin-top:160px; }
+html.ts-platform.ts3-characters .ts3-skill-workspace { display:block; border:1px solid var(--character-line); border-radius:5px; background:#fffdf9; margin:18px 0; padding:0; overflow:hidden; }
+html.ts-platform.ts3-characters .ts3-skill-workspace .ts-skill { border:0; background:transparent; border-radius:0; padding:0 24px; box-shadow:none; }
+html.ts-platform.ts3-characters .ts3-skill-workspace .ts-skill summary { min-height:70px; padding:18px 0; }
+html.ts-platform.ts3-characters .ts3-skill-workspace .ts-skill summary img { width:44px; height:44px; object-fit:cover; }
+html.ts-platform.ts3-characters .ts3-skill-workspace .ts-skill-body { max-width:none; padding:0 0 24px; line-height:1.85; }
+html.ts-platform.ts3-characters .ts3-skill-workspace .ts-evidence-label { color:#52654f; }
+html.ts-platform.ts3-characters .ts3-skill-selector { display:flex; gap:0; background:#edeFE8; border-bottom:1px solid var(--character-line); overflow-x:auto; scrollbar-width:thin; padding:0; }
+html.ts-platform.ts3-characters .ts3-skill-selector[hidden] { display:none; }
+html.ts-platform.ts3-characters .ts3-skill-selector button { display:flex; flex:1 0 160px; min-width:0; min-height:84px; gap:11px; align-items:center; text-align:left; padding:14px 18px; border:0; border-right:1px solid var(--character-line); border-bottom:3px solid transparent; border-radius:0; color:var(--character-ink); background:transparent; font:inherit; font-size:13px; font-weight:650; cursor:pointer; box-shadow:none; transition:background 150ms,border-color 150ms; }
+html.ts-platform.ts3-characters .ts3-skill-selector button:last-child { border-right:0; }
+html.ts-platform.ts3-characters .ts3-skill-selector button:hover { background:#e2e8db; }
+html.ts-platform.ts3-characters .ts3-skill-selector button[aria-selected=true] { background:#fffdf9; border-bottom-color:var(--character-green); }
+html.ts-platform.ts3-characters .ts3-skill-selector img { flex:0 0 44px; width:44px; height:44px; border-radius:4px; object-fit:cover; }
+html.ts-platform.ts3-characters .ts3-skill-selector small { display:block; margin-top:4px; font-size:11px; font-weight:500; color:#627061; }
+html.ts-platform.ts3-characters .ts3-skill-number { display:grid; place-items:center; width:40px; height:40px; flex:0 0 40px; border:1px solid #c0ccbd; border-radius:4px; font-variant-numeric:tabular-nums; color:#40573b; }
+html.ts-platform.ts3-characters .ts3-skills-ready .ts-skill[hidden] { display:none; }
+html.ts-platform.ts3-characters .ts3-skills-ready .ts-skill summary { list-style:none; pointer-events:none; }
+html.ts-platform.ts3-characters .ts3-skills-ready .ts-skill summary::after,
+html.ts-platform.ts3-characters .ts3-skills-ready .ts-skill summary::marker { display:none; content:''; }
+html.ts-platform.ts3-characters .ts3-skill-panel-enter { animation:ts3-skill-enter 170ms ease-out; }
+html.ts-platform.ts3-characters .ts3-roster-neighbors { margin:42px 0; padding-top:28px; border-top:1px solid var(--character-line); }
+html.ts-platform.ts3-characters .ts3-character-heading { display:flex; flex-wrap:wrap; gap:10px 22px; align-items:center; justify-content:space-between; margin-bottom:18px; }
+html.ts-platform.ts3-characters .ts3-character-heading h2 { margin:0; font-size:22px; }
+html.ts-platform.ts3-characters .ts3-character-heading > a { min-height:44px; display:flex; align-items:center; color:var(--character-green); font-size:13px; }
+html.ts-platform.ts3-characters .ts3-neighbor-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:12px; }
+html.ts-platform.ts3-characters .ts3-neighbor-grid > a { display:flex; align-items:center; gap:13px; min-width:0; padding:10px; border:1px solid var(--character-line); border-radius:4px; text-decoration:none; color:var(--character-ink); background:#fffdf9; transition:background 160ms,transform 160ms; }
+html.ts-platform.ts3-characters .ts3-neighbor-grid > a:hover { transform:translateY(-2px); background:#eef2e8; }
+html.ts-platform.ts3-characters .ts3-neighbor-grid img { width:54px; height:62px; object-fit:cover; border-radius:3px; flex:0 0 54px; }
+html.ts-platform.ts3-characters .ts3-neighbor-grid strong { display:block; font-size:14px; }
+html.ts-platform.ts3-characters .ts3-neighbor-grid small { display:block; margin-top:6px; font-size:11px; line-height:1.5; color:#52634b; }
+html.ts-platform.ts3-characters .ts3-neighbor-grid span { min-width:0; overflow-wrap:anywhere; }
+html.ts-platform.ts3-characters .ts3-pet-neighbors img { width:54px; height:54px; object-fit:contain; }
+html.ts-platform.ts3-characters .ts3-directory-intro h1 { margin:0 0 14px; color:#f6f4ee; font-size:clamp(1.9rem,3.6vw,2.8rem); }
+html.ts-platform.ts3-characters .ts3-directory-intro p { color:#dce3d6; max-width:75ch; font-size:14px; }
+html.ts-platform.ts3-characters .ts3-directory-intro .chip { color:#e3d5b4; background:#ffffff0b; border-color:#ffffff20; }
+html.ts-platform.ts3-characters .ts3-directory-stats { display:flex; flex-wrap:wrap; gap:16px 28px; padding-top:18px; margin-top:20px; border-top:1px solid #ffffff26; font-size:13px; color:#cddacb; }
+html.ts-platform.ts3-characters .ts3-directory-stats strong { font-size:26px; font-weight:650; color:#f4e5c5; margin-right:7px; font-variant-numeric:tabular-nums; }
+html.ts-platform.ts3-characters .faction-block { padding:24px 0; margin:0; border-top:1px solid var(--character-line); }
+html.ts-platform.ts3-characters .faction-title h3 { color:var(--character-ink); font-size:22px; }
+html.ts-platform.ts3-characters .faction-title { margin-bottom:22px; }
+html.ts-platform.ts3-characters .subsection { margin-top:18px; }
+html.ts-platform.ts3-characters .subsection > h4 { color:#52654f; font-size:12px; letter-spacing:.08em; margin:0 0 12px; }
+html.ts-platform.ts3-characters .faction-block .hero-grid { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:16px; }
+html.ts-platform.ts3-characters .ts3-roster-card { display:flex; flex-direction:column; position:relative; min-width:0; background:#fffdf9; border:1px solid var(--character-line); border-radius:5px; overflow:hidden; padding:0; color:var(--character-ink); text-decoration:none; box-shadow:none; transition:transform 180ms,border-color 180ms,box-shadow 180ms; }
+html.ts-platform.ts3-characters .ts3-roster-card:hover { transform:translateY(-3px); border-color:#8da486; box-shadow:0 8px 20px #20483012; }
+html.ts-platform.ts3-characters .ts3-roster-card .hero-thumb { display:block; width:100%; height:auto; aspect-ratio:1.1; margin:0; padding:0; background:#dfe6da; border:0; border-radius:0; max-width:none; overflow:hidden; }
+html.ts-platform.ts3-characters .ts3-roster-card .hero-thumb img { display:block; width:100%; height:100%; max-height:none; max-width:none; object-fit:cover; object-position:50% 18%; border-radius:0; transition:transform 220ms; }
+html.ts-platform.ts3-characters .ts3-roster-card:hover .hero-thumb img { transform:scale(1.025); }
+html.ts-platform.ts3-characters .ts3-roster-card .hero-body { padding:16px; min-width:0; }
+html.ts-platform.ts3-characters .ts3-roster-card .hero-body h3 { font-size:19px; margin:0 0 8px; }
+html.ts-platform.ts3-characters .ts3-roster-card .hero-body p { font-size:12px; color:#5f705e; margin:0 0 12px; }
+html.ts-platform.ts3-characters .ts3-roster-card .hero-link { margin:12px 0 0; display:inline-flex; align-items:center; min-height:30px; font-size:12px; border:0; background:transparent; padding:0; color:var(--character-green); }
+html.ts-platform.ts3-characters .ts3-roster-card .chip { padding:3px 6px; border:0; border-radius:2px; font-size:10px; background:#e9eee3; color:#3e5937; }
+html.ts-platform.ts3-characters .ts3-roster-card .hero-meta-row { gap:5px; }
+html.ts-platform.ts3-characters .ts3-directory-empty { padding:36px 20px; background:#e9eee3; text-align:center; border-radius:5px; }
+html.ts-platform.ts3-characters .ts3-pet-gallery { display:grid; grid-template-columns:repeat(4,minmax(0,1fr)); gap:14px; border:0; }
+html.ts-platform.ts3-characters .ts3-pet-tile { display:flex; flex-direction:column; align-items:flex-start; gap:11px; min-width:0; background:#fffdf9; border:1px solid var(--character-line); padding:20px; border-radius:5px; }
+html.ts-platform.ts3-characters .ts3-pet-tile > img { width:72px; height:72px; object-fit:contain; margin:0 0 4px; border-radius:5px; }
+html.ts-platform.ts3-characters .ts3-pet-tile h3 { margin:0; font-size:19px; }
+html.ts-platform.ts3-characters .ts3-pet-tile h3 a { text-decoration:none; color:inherit; }
+html.ts-platform.ts3-characters .ts3-pet-tile p { font-size:12px; }
+html.ts-platform.ts3-characters .ts3-pet-tile > a { margin-top:auto; font-size:12px; }
+html.ts-platform.ts3-characters .ts3-pet-tile details { font-size:12px; }
+html.ts-platform.ts3-characters .ts3-pet-stage { display:grid; grid-template-columns:minmax(0,1fr) 120px; gap:28px; }
+html.ts-platform.ts3-characters .ts3-pet-stage h1 { font-size:clamp(1.8rem,3.5vw,2.8rem); }
+html.ts-platform.ts3-characters .ts3-pet-portrait { display:grid; place-items:center; margin:0; width:120px; height:120px; background:#e7e5d9; border-radius:5px; order:2; }
+html.ts-platform.ts3-characters .ts3-pet-portrait img { display:block; width:72px; height:72px; max-height:none; object-fit:contain; }
+html.ts-platform.ts3-characters .ts3-pet-observation { margin:0; order:2; width:200px; justify-self:end; }
+html.ts-platform.ts3-characters .ts3-pet-observation img { display:block; width:100%; height:auto; max-height:280px; object-fit:contain; }
+html.ts-platform.ts3-characters .ts3-source-caption { font-size:12px; color:#627061; }
+html.ts-platform.ts3-characters [hidden] { display:none!important; }
+html.ts-platform.ts3-characters :is(button,a,select,input):focus-visible { outline:3px solid #c5a56a; outline-offset:3px; }
+@keyframes ts3-character-enter { from { opacity:.6; transform:translateY(7px); } to { opacity:1; transform:translateY(0); } }
+@keyframes ts3-skill-enter { from { opacity:.7; transform:translateY(4px); } to { opacity:1; transform:translateY(0); } }
+@media(min-width:1200px) { html.ts-platform.ts3-characters .faction-block .hero-grid { grid-template-columns:repeat(5,minmax(0,1fr)); } }
+@media(max-width:900px) {
+ html.ts-platform.ts3-characters .ts3-character-stage { padding:26px; }
+ html.ts-platform.ts3-characters .ts3-character-stage .hero-grid,html.ts-platform.ts3-characters .ts3-character-stage.ts-character-intro { grid-template-columns:minmax(0,1fr) 190px; gap:24px; }
+ html.ts-platform.ts3-characters .ts3-neighbor-grid { grid-template-columns:repeat(3,minmax(0,1fr)); }
+ html.ts-platform.ts3-characters .faction-block .hero-grid,html.ts-platform.ts3-characters .ts3-pet-gallery { grid-template-columns:repeat(3,minmax(0,1fr)); }
+}
+@media(max-width:600px) {
+ html.ts-platform.ts3-characters :is(.ts3-character-stage,.ts3-directory-intro) { padding:22px 18px; border-radius:5px; }
+ html.ts-platform.ts3-characters .ts3-character-stage .hero-grid,html.ts-platform.ts3-characters .ts3-character-stage.ts-character-intro,html.ts-platform.ts3-characters .ts3-character-stage.ts3-pet-stage { grid-template-columns:100px minmax(0,1fr); gap:14px 16px; align-items:start; }
+ html.ts-platform.ts3-characters .ts3-character-stage .ts3-character-copy { display:contents; }
+ html.ts-platform.ts3-characters .ts3-character-stage .ts3-character-copy > * { grid-column:1/-1; min-width:0; margin-block:0; }
+ html.ts-platform.ts3-characters .ts3-character-stage .ts3-character-copy > .ts3-character-identity { grid-column:2; grid-row:1; min-width:0; align-self:center; }
+ html.ts-platform.ts3-characters .ts3-character-stage :is(.ts3-character-art,.ts3-pet-portrait,.ts3-pet-observation) { grid-column:1; grid-row:1; order:0; justify-self:start; align-self:center; width:100px; max-width:100px; }
+ html.ts-platform.ts3-characters .ts3-character-stage h1 { font-size:clamp(24px,6.7vw,32px); line-height:1.15; margin:8px 0 10px; width:100%; }
+ html.ts-platform.ts3-characters .ts3-character-stage .hero-title-row { display:flex; flex-direction:row; flex-wrap:wrap; align-items:center; justify-content:flex-start; gap:5px; }
+ html.ts-platform.ts3-characters .ts3-character-stage .hero-title-row h1 { flex-basis:100%; }
+ html.ts-platform.ts3-characters .ts3-character-stage .hero-title-row :is(.rarity-badge,.role-badge) { display:inline-flex; width:auto; margin:0; padding:4px 7px; font-size:10px; line-height:1.4; }
+ html.ts-platform.ts3-characters .ts3-character-stage .ts3-character-kicker { display:block; font-size:10px; line-height:1.5; margin:0; }
+ html.ts-platform.ts3-characters .ts3-character-stage .ts3-character-kicker span { display:block; margin-top:3px; }
+ html.ts-platform.ts3-characters .ts3-character-stage .ts3-character-identity :is(.ts-overline,.eyebrow) { font-size:10px; line-height:1.5; margin:7px 0 0; }
+ html.ts-platform.ts3-characters .ts3-character-stage .hero-summary { font-size:12px; }
+ html.ts-platform.ts3-characters .ts3-character-stage .summary-grid { grid-template-columns:repeat(3,minmax(0,1fr)); }
+ html.ts-platform.ts3-characters .ts3-character-stage .summary-card:first-child { grid-column:auto; border:0; padding:0; margin:0; }
+ html.ts-platform.ts3-characters .ts3-character-stage .summary-card .value { font-size:15px; }
+ html.ts-platform.ts3-characters .ts3-character-actions { gap:8px; }
+ html.ts-platform.ts3-characters .ts3-character-actions a { padding:9px 10px; font-size:12px; }
+ html.ts-platform.ts3-characters .ts3-character-sections { margin-bottom:18px; }
+ html.ts-platform.ts3-characters .ts3-character-section { margin-top:22px; padding-top:22px; }
+ html.ts-platform.ts3-characters .ts3-skill-selector button { flex-basis:150px; min-height:76px; padding:11px 12px; }
+ html.ts-platform.ts3-characters .ts3-skill-workspace .ts-skill { padding:0 18px; }
+ html.ts-platform.ts3-characters .ts3-neighbor-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:9px; }
+ html.ts-platform.ts3-characters .ts3-neighbor-grid > a { gap:9px; padding:8px; }
+ html.ts-platform.ts3-characters .ts3-neighbor-grid img { width:40px; height:48px; flex-basis:40px; }
+ html.ts-platform.ts3-characters .ts3-neighbor-grid strong { font-size:12px; }
+ html.ts-platform.ts3-characters .ts3-neighbor-grid small { font-size:10px; }
+ html.ts-platform.ts3-characters .faction-block .hero-grid,html.ts-platform.ts3-characters .ts3-pet-gallery { grid-template-columns:repeat(2,minmax(0,1fr)); gap:11px; }
+ html.ts-platform.ts3-characters .ts3-roster-card .hero-body { padding:12px; }
+ html.ts-platform.ts3-characters .ts3-roster-card .hero-body h3 { font-size:17px; }
+ html.ts-platform.ts3-characters .ts3-roster-card .hero-body p { font-size:11px; }
+ html.ts-platform.ts3-characters .ts3-roster-card .hero-thumb { aspect-ratio:.98; }
+ html.ts-platform.ts3-characters .ts3-pet-tile { padding:14px; }
+ html.ts-platform.ts3-characters .ts3-pet-tile h3 { font-size:17px; }
+ html.ts-platform.ts3-characters .ts3-pet-portrait { height:100px; }
+}
+@media(max-width:360px) {
+ html.ts-platform.ts3-characters .ts3-character-stage .hero-grid,html.ts-platform.ts3-characters .ts3-character-stage.ts-character-intro,html.ts-platform.ts3-characters .ts3-character-stage.ts3-pet-stage { grid-template-columns:88px minmax(0,1fr); gap:13px 12px; }
+ html.ts-platform.ts3-characters .ts3-character-stage :is(.ts3-character-art,.ts3-pet-portrait,.ts3-pet-observation) { width:88px; max-width:88px; }
+ html.ts-platform.ts3-characters .ts3-pet-portrait { height:88px; }
+}
+@media(prefers-reduced-motion:reduce) {
+ html.ts-platform.ts3-characters *,html.ts-platform.ts3-characters *::before,html.ts-platform.ts3-characters *::after { animation:none!important; transition:none!important; scroll-behavior:auto!important; }
+ html.ts-platform.ts3-characters .ts3-roster-card:hover,html.ts-platform.ts3-characters .ts3-roster-card:hover img,html.ts-platform.ts3-characters .ts3-neighbor-grid > a:hover { transform:none; }
+}

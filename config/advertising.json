@@ -1,0 +1,7 @@
+{
+  "enabled": false,
+  "publisherId": null,
+  "slots": {
+    "article-end": { "enabled": false, "desktopMinHeight": 280, "mobileMinHeight": 300 }
+  }
+}

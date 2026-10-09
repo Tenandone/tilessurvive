@@ -51,6 +51,27 @@ const walk = (d) =>
           : [path.join(d, e.name)],
     );
 const text = (n) => n.textContent.replace(/\s+/g, " ").trim();
+// Exact legacy directory-only workflow copy intentionally replaced in 3.0.
+// Building names, descriptions, art, and routes are asserted independently below.
+const obsoleteBuildingWorkflow = new Set([
+  "타일서바이벌의 주요 건물을 보기 쉽게 정리한 목록 페이지입니다. 현재 확정된 건물명 기준으로 먼저 구성했으며, 각 상세 페이지는 순차적으로 확장하는 구조입니다.",
+  "주방, 제련공방, 정유공방, 목재공방은 요청한 기준대로 마지막 순서에 배치했습니다.",
+  "This is a list page that organizes the main buildings of Tiles Survive in a clean and easy-to-browse format. It is currently structured around confirmed building names first, with each detail page expanding step by step.",
+  "Following the requested order, Kitchen, Smelter Workshop, Refinery Workshop, and Lumber Workshop are placed at the end.",
+  "タイルズサバイバルの主要建物を見やすく整理した一覧ページです。 現在確認できている建物名を基準に先に構成し、各詳細ページは順次拡張していく構造です。",
+  "確認済みの日本語名称を基準に、一覧名のみ反映しています。",
+  "Это страница со списком ключевых зданий Tiles Survive, собранных в удобном виде. Сначала структура построена на подтверждённых названиях зданий, а подробные страницы будут расширяться поэтапно.",
+  "Kitchen, Smelting Workshop, Oil Refinery Workshop и Lumber Workshop размещены в конце списка в соответствии с выбранным порядком.",
+  "這是一頁整理 Tiles Survive 主要建築的索引頁面。 目前先以已確認的建築名稱建立結構，詳細頁面會再逐步補齊與擴充。",
+  "目前先依照截圖中確認到的日文名稱完成列表名稱對應。",
+]);
+const obsoleteLabWorkflow = new Set([
+  "업그레이드 시트 안내", "현재 확보된 화면 기준으로 핵심 항목만 먼저 정리했습니다.",
+  "Upgrade Sheet Notice", "Only the key items confirmed from currently secured screenshots are listed first.",
+  "アップグレードシート案内", "現在確保できている画面基準で主要項目のみ先に整理しました。",
+  "Информация о таблице улучшения", "Пока собраны только ключевые подтверждённые данные с доступных экранов.",
+  "升級表說明", "目前依照已保留的畫面內容，先整理可確認的主要項目。",
+]);
 const tableData = (d) =>
   [...d.querySelectorAll("main table")].map((t) =>
     [...t.querySelectorAll("tr")].map((r) =>
@@ -112,6 +133,13 @@ for (const l of langs)
         "main p,main li,main h2,main h3",
       )) {
         const value = text(node);
+        // 3.0 removes hidden keyword lists and a superseded 2.0 warning. They
+        // are editorial scaffolding, not game facts; test their replacement
+        // navigation and real calculator below instead of requiring stale prose.
+        if (/\/buildings\/$/.test(route) && node.closest('.visually-hidden-seo')) continue;
+        if (/\/buildings\/$/.test(route) && node.localName === 'p' && !node.closest('.building-card') && obsoleteBuildingWorkflow.has(value)) continue;
+        if (route.endsWith('/buildings/lab/') && node.parentNode.classList.contains('section-head') && obsoleteLabWorkflow.has(value)) continue;
+        if (route.endsWith('/database/skill-book/') && node.hasAttribute('data-data-warning')) continue;
         if (value)
           check(
             content.includes(value),
@@ -119,14 +147,53 @@ for (const l of langs)
           );
       }
     }
+    if (/\/buildings\/$/.test(route)) {
+      const linked=new Set([...d.querySelectorAll('main a[href]')].map(a=>a.getAttribute('href')));
+      for(const a of old.querySelectorAll('main a[href]'))if(new RegExp('^/'+l+'/buildings/[^/]+/$').test(a.getAttribute('href')))check(linked.has(a.getAttribute('href')),'Building detail navigation removed '+route+' '+a.getAttribute('href'));
+      const entries = [...d.querySelectorAll('main [data-catalog-entry],main .building-card')];
+      for (const card of old.querySelectorAll('main .building-card')) {
+        const name = text(card.querySelector('h3'));
+        const match = entries.find(entry => entry.querySelector('h3') && text(entry.querySelector('h3')) === name);
+        check(!!match, 'Building catalog name removed ' + route + ' ' + name);
+        if (!match) continue;
+        for (const p of card.querySelectorAll('p'))
+          check(text(match).includes(text(p)), 'Building catalog description removed ' + route + ' ' + name);
+        for (const img of card.querySelectorAll('img[src]'))
+          check([...match.querySelectorAll('img[src]')].some(current => current.getAttribute('src') === img.getAttribute('src')), 'Building catalog image changed ' + route + ' ' + name);
+        for (const a of card.querySelectorAll('a[href]'))
+          check([...match.querySelectorAll('a[href]')].some(current => current.getAttribute('href') === a.getAttribute('href')), 'Building card detail link changed ' + route + ' ' + name);
+      }
+    }
+    if (route.endsWith('/buildings/lab/')) {
+      const currentFacts = [...d.querySelectorAll('.info-card p,.priority-card p')].map(text);
+      for (const p of old.querySelectorAll('.info-card p,.priority-card p'))
+        check(currentFacts.includes(text(p)), 'Lab effect, level, power, or priority paragraph removed ' + route + ' ' + text(p));
+    }
+    if (route.endsWith('/database/skill-book/')) {
+      const form=d.querySelector('[data-growth-form="skillBook"]');check(!!form,'Skill-book calculator replaces obsolete warning '+route);
+      if(form){const cfg=JSON.parse(form.querySelector('script[type="application/json"]').textContent);check(cfg.rows.find(r=>r.to===30)?.cost===685,'Skill-book disputed original cost '+route);check(cfg.rows.reduce((sum,r)=>sum+r.cost,0)===23505,'Skill-book cumulative cost '+route);}
+      check(text(d.querySelector('main')).includes('685')&&text(d.querySelector('main')).includes('735'),'Skill-book conflict disclosed '+route);
+    }
+    const originalTables=tableData(old).map(rows=>rows.map(row=>row.map(cell=>route.endsWith('/database/skill-book/')&&cell==='19,850'?'23,505':cell)));
+    const currentTables=tableData(d).filter((_,i) => {
+      const table=d.querySelectorAll('main table')[i];
+      // Newly sourced pet acquisition and growth tables have their own 2.2/3.0
+      // source parity checks. The 2.0 pet hub had no table at all.
+      return !table.closest('#pet-growth,.ts-database-22') && !(route.endsWith('/database/pet-system/')&&originalTables.length===0);
+    });
+    // Season III's second legacy table contained only repeated unknown values.
+    // Preserve its real price table exactly; keep a concise limitation instead.
+    const comparable=rows=>route.endsWith('/seasons/season-3/')?rows.filter(t=>t.slice(1).some(r=>r.some(c=>/\d/.test(c)))):rows;
     check(
-      JSON.stringify(tableData(old).map(rows=>rows.map(row=>row.map(cell=>route.endsWith('/database/skill-book/')&&cell==='19,850'?'23,505':cell)))) === JSON.stringify(tableData(d).filter((_,i) => {
-        // The pet directory adds one independently tested training table.
-        const table = d.querySelectorAll('main table')[i];
-        return !table.closest('#pet-growth,.ts-database-22');
-      })),
+      JSON.stringify(comparable(originalTables)) === JSON.stringify(comparable(currentTables)),
       "Table changed " + route,
     );
+    if(route.endsWith('/seasons/season-3/'))check(!!d.getElementById('promotionTitle')&&!!d.getElementById('rules-22'),'Season limits and official rules retained '+route);
+    if(route.endsWith('/database/pet-system/')){
+      const db=require('../data/expansion-22/database.json');
+      for(const pet of db.pets)check(!!d.querySelector('a[href="/'+l+'/database/pet-system/'+pet.id+'/"]'),'Pet detail navigation '+route+' '+pet.id);
+      check(!!d.querySelector('[data-growth-form="petExp"]')&&!!d.querySelector('[data-growth-form="petTraining"]'),'Pet growth calculators '+route);
+    }
     tables += d.querySelectorAll("main table").length;
     documents.set(route, d);
     for (const a of d.querySelectorAll("link[rel=alternate][hreflang]"))

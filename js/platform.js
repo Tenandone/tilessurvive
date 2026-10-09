@@ -141,6 +141,7 @@
   }
   // Every data table remains intact. Selected-row summaries make wide tables usable on phones.
   main.querySelectorAll("table[data-explore]").forEach((table, index) => {
+    if (table.hasAttribute('data-workbench')) return;
     const rows = [...table.querySelectorAll("tbody tr")].filter(
       (r) => r.querySelectorAll("td").length >= 2,
     );

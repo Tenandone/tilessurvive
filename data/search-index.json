@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-09T11:19:54.856Z",
+  "generatedAt": "2026-10-09T12:23:24.577Z",
   "itemCount": 465,
   "items": [
     {
@@ -33,7 +33,7 @@
     {
       "language": "en",
       "type": "heroe",
-      "title": "Becca | Tiles Survive Hero | TilesSurvive.net",
+      "title": "Becca · Skills, Stats & Growth | TilesSurvive.net",
       "description": "Detailed Becca hero page for Tiles Survive. Check hero story, combat traits, max level and star stats, star bonus, skills, and signature weapon in one place.",
       "url": "/en/heroes/beka/"
     },
@@ -54,28 +54,28 @@
     {
       "language": "en",
       "type": "database",
-      "title": "Buckler · Pet growth & acquisition | TilesSurvive.net",
-      "description": "Role: Defender · Acquisition probability · Observed stats",
+      "title": "Buckler · Pet Acquisition, Stats & Growth | TilesSurvive.net",
+      "description": "Buckler — Role: Defender · Acquisition probability · Observed stats",
       "url": "/en/database/pet-system/buckler/"
     },
     {
       "language": "en",
       "type": "heroe",
-      "title": "Candy | Tiles Survive Hero | TilesSurvive.net",
+      "title": "Candy · Skills, Stats & Growth | TilesSurvive.net",
       "description": "Candy hero detail page for Tiles Survive. This page summarizes the SSR hero overview, combat traits, max level and star stats, star bonus, skills, and signature weapon in one place.",
       "url": "/en/heroes/candy/"
     },
     {
       "language": "en",
       "type": "heroe",
-      "title": "Chef | Tiles Survive Hero | TilesSurvive.net",
+      "title": "Chef · Skills, Stats & Growth | TilesSurvive.net",
       "description": "Detailed Tiles Survive hero page for Chef. This page covers hero background, combat traits, max level and star stats, star bonus, and skills for this SR hero.",
       "url": "/en/heroes/chef-ken/"
     },
     {
       "language": "en",
       "type": "heroe",
-      "title": "Chiron | Tiles Survive Hero | TilesSurvive.net",
+      "title": "Chiron · Skills, Stats & Growth | TilesSurvive.net",
       "description": "Chiron hero detail page for Tiles Survive. This page summarizes the SSR hero overview, combat traits, max level and star stats, star bonus, skills, and signature gear in one place.",
       "url": "/en/heroes/kiron/"
     },
@@ -103,8 +103,8 @@
     {
       "language": "en",
       "type": "database",
-      "title": "Dodo · Pet growth & acquisition | TilesSurvive.net",
-      "description": "Role: Attacker · Acquisition probability · Observed stats",
+      "title": "Dodo · Pet Acquisition, Stats & Growth | TilesSurvive.net",
+      "description": "Dodo — Role: Attacker · Acquisition probability · Observed stats",
       "url": "/en/database/pet-system/dodo/"
     },
     {
@@ -124,7 +124,7 @@
     {
       "language": "en",
       "type": "heroe",
-      "title": "Eva | Tiles Survive Hero | TilesSurvive.net",
+      "title": "Eva · Skills, Stats & Growth | TilesSurvive.net",
       "description": "Detailed Eva hero page for Tiles Survive. Check hero story, faction, combat traits, max level and star stats, star bonus, and skills in one place.",
       "url": "/en/heroes/eva/"
     },
@@ -145,14 +145,14 @@
     {
       "language": "en",
       "type": "database",
-      "title": "Fluffy · Pet growth & acquisition | TilesSurvive.net",
-      "description": "Role: Support · Acquisition probability · Observed stats",
+      "title": "Fluffy · Pet Acquisition, Stats & Growth | TilesSurvive.net",
+      "description": "Fluffy — Role: Support · Acquisition probability · Observed stats",
       "url": "/en/database/pet-system/fluffy/"
     },
     {
       "language": "en",
       "type": "heroe",
-      "title": "Freja | Tiles Survive Hero | TilesSurvive.net",
+      "title": "Freja · Skills, Stats & Growth | TilesSurvive.net",
       "description": "Detailed Freja hero page for Tiles Survive. Check hero story, combat traits, max level and star stats, star bonus, and skills in one place.",
       "url": "/en/heroes/freya/"
     },
@@ -173,7 +173,7 @@
     {
       "language": "en",
       "type": "heroe",
-      "title": "Ghost | Tiles Survive Hero | TilesSurvive.net",
+      "title": "Ghost · Skills, Stats & Growth | TilesSurvive.net",
       "description": "Ghost hero page for Tiles Survive. This rare ranged hero guide covers hero story, faction, combat traits, max level and star stats, star bonus, and skills in one page.",
       "url": "/en/heroes/ghost/"
     },
@@ -201,8 +201,8 @@
     {
       "language": "en",
       "type": "database",
-      "title": "Hardhead · Pet growth & acquisition | TilesSurvive.net",
-      "description": "Role: Attacker · Acquisition probability · Observed stats",
+      "title": "Hardhead · Pet Acquisition, Stats & Growth | TilesSurvive.net",
+      "description": "Hardhead — Role: Attacker · Acquisition probability · Observed stats",
       "url": "/en/database/pet-system/hardhead/"
     },
     {
@@ -250,21 +250,21 @@
     {
       "language": "en",
       "type": "heroe",
-      "title": "Jacob | Tiles Survive Hero | TilesSurvive.net",
+      "title": "Jacob · Skills, Stats & Growth | TilesSurvive.net",
       "description": "Detailed Tiles Survive hero page for Jacob. This page covers hero background, combat traits, max level and star stats, star bonus, skills, and signature gear for this SSR hero.",
       "url": "/en/heroes/jacob/"
     },
     {
       "language": "en",
       "type": "heroe",
-      "title": "Kiki | Tiles Survive Hero | TilesSurvive.net",
+      "title": "Kiki · Skills, Stats & Growth | TilesSurvive.net",
       "description": "Detailed page for Kiki in Tiles Survive. View hero introduction, battle traits, max level and 10-star stats, star bonus, skills, and signature gear in one place.",
       "url": "/en/heroes/kiki/"
     },
     {
       "language": "en",
       "type": "heroe",
-      "title": "Knotty | TilesSurvive.net",
+      "title": "Knotty · Skills, Stats & Growth | TilesSurvive.net",
       "description": "Mariner heroes · SSR · Marksmen · Skills & effects",
       "url": "/en/heroes/knotty/"
     },
@@ -278,14 +278,14 @@
     {
       "language": "en",
       "type": "heroe",
-      "title": "Lagnar | SSR Sea Melee Hero | TilesSurvive.net",
+      "title": "Lagnar · Skills, Stats & Growth | TilesSurvive.net",
       "description": "A Tiles Survive Lagnar SSR hero guide covering Sea faction, melee role, max level attributes, star bonus, skills, and exclusive equipment.",
       "url": "/en/heroes/lagnar/"
     },
     {
       "language": "en",
       "type": "heroe",
-      "title": "Layla | Tiles Survive Hero | TilesSurvive.net",
+      "title": "Layla · Skills, Stats & Growth | TilesSurvive.net",
       "description": "Layla hero detail page for Tiles Survive. This page summarizes hero introduction, battle traits, max level and star stats, star bonus, skills, and signature weapon for this SSR hero.",
       "url": "/en/heroes/laila/"
     },
@@ -299,28 +299,28 @@
     {
       "language": "en",
       "type": "heroe",
-      "title": "Lucky | Tiles Survive Hero | TilesSurvive.net",
+      "title": "Lucky · Skills, Stats & Growth | TilesSurvive.net",
       "description": "Detailed page for Lucky in Tiles Survive. View hero introduction, ascended hero info, battle traits, max level and 10-star stats, star bonus, and skills in one place.",
       "url": "/en/heroes/lucky/"
     },
     {
       "language": "en",
       "type": "heroe",
-      "title": "Maddie | Tiles Survive Hero | TilesSurvive.net",
+      "title": "Maddie · Skills, Stats & Growth | TilesSurvive.net",
       "description": "Detailed hero page for Maddie in Tiles Survive. This page covers hero story, battle traits, max level and star stats, star bonus, skills, and signature weapon for this SSR hero.",
       "url": "/en/heroes/maddy/"
     },
     {
       "language": "en",
       "type": "heroe",
-      "title": "Mike | Tiles Survive Hero | TilesSurvive.net",
+      "title": "Mike · Skills, Stats & Growth | TilesSurvive.net",
       "description": "Tiles Survive hero Mike detail page. View his story, battle traits, max level and 10-star stats, 10-star bonus, skills, and signature gear in one place.",
       "url": "/en/heroes/mike/"
     },
     {
       "language": "en",
       "type": "heroe",
-      "title": "Nikola | Tiles Survive Hero | TilesSurvive.net",
+      "title": "Nikola · Skills, Stats & Growth | TilesSurvive.net",
       "description": "Detailed Tiles Survive hero page for Nikola. This page covers hero background, combat traits, max level and star stats, star bonus, skills, and signature gear for this SSR hero.",
       "url": "/en/heroes/nikola/"
     },
@@ -348,7 +348,7 @@
     {
       "language": "en",
       "type": "heroe",
-      "title": "Ray | Tiles Survive Hero | TilesSurvive.net",
+      "title": "Ray · Skills, Stats & Growth | TilesSurvive.net",
       "description": "Ray hero detail page for Tiles Survive. This page summarizes the SSR hero overview, combat traits, max level and star stats, star bonus, skills, and signature weapon in one place.",
       "url": "/en/heroes/ray/"
     },
@@ -362,21 +362,21 @@
     {
       "language": "en",
       "type": "heroe",
-      "title": "Rosie | Tiles Survive Hero | TilesSurvive.net",
+      "title": "Rosie · Skills, Stats & Growth | TilesSurvive.net",
       "description": "Rosie hero detail page for Tiles Survive. This page summarizes hero introduction, battle traits, max level and star stats, star bonus, skills, and signature weapon for this SSR hero.",
       "url": "/en/heroes/rosie/"
     },
     {
       "language": "en",
       "type": "heroe",
-      "title": "Rusty | Tiles Survive Hero | TilesSurvive.net",
+      "title": "Rusty · Skills, Stats & Growth | TilesSurvive.net",
       "description": "Rusty hero detail page for Tiles Survive. Check hero story, faction, combat traits, max level and star stats, skills, and star bonus in one place.",
       "url": "/en/heroes/rusty/"
     },
     {
       "language": "en",
       "type": "heroe",
-      "title": "Sarge | Tiles Survive Hero | TilesSurvive.net",
+      "title": "Sarge · Skills, Stats & Growth | TilesSurvive.net",
       "description": "Detailed page for Sarge in Tiles Survive. View hero introduction, ascended hero info, battle traits, max level and star stats, star bonus, and skills in one place.",
       "url": "/en/heroes/sarge/"
     },
@@ -404,8 +404,8 @@
     {
       "language": "en",
       "type": "season",
-      "title": "Season III Undecided Guide | Tiles Survive Season Guide | TilesSurvive.net",
-      "description": "This is the Tiles Survive Season III undecided guide. It organizes season goals, pass, weekly pass, events, hero promotion, and KvK in one place.",
+      "title": "Season III Planning Guide | TilesSurvive.net",
+      "description": "Review season goals, growth resources, passes and KvK preparation in one place. Keep a planning sequence separate from your state’s actual unlock schedule.",
       "url": "/en/seasons/season-3/"
     },
     {
@@ -418,14 +418,14 @@
     {
       "language": "en",
       "type": "database",
-      "title": "Shadow · Pet growth & acquisition | TilesSurvive.net",
-      "description": "Role: Attacker · Acquisition probability · Observed stats",
+      "title": "Shadow · Pet Acquisition, Stats & Growth | TilesSurvive.net",
+      "description": "Shadow — Role: Attacker · Acquisition probability · Observed stats",
       "url": "/en/database/pet-system/shadow/"
     },
     {
       "language": "en",
       "type": "heroe",
-      "title": "Shark | Sea SSR Melee Hero | TilesSurvive.net",
+      "title": "Shark · Skills, Stats & Growth | TilesSurvive.net",
       "description": "Shark is a Sea SSR melee hero in Tiles Survive. This guide summarizes Wave Crash, Shark Wave, Frontline Support, Deep Sea Invincible, and the Deep Sea Anchor exclusive equipment.",
       "url": "/en/heroes/shark/"
     },
@@ -439,28 +439,28 @@
     {
       "language": "en",
       "type": "database",
-      "title": "Snowball · Pet growth & acquisition | TilesSurvive.net",
-      "description": "Role: Support · Acquisition probability · Observed stats",
+      "title": "Snowball · Pet Acquisition, Stats & Growth | TilesSurvive.net",
+      "description": "Snowball — Role: Support · Acquisition probability · Observed stats",
       "url": "/en/database/pet-system/snowball/"
     },
     {
       "language": "en",
       "type": "database",
-      "title": "Starhorn | TilesSurvive.net",
-      "description": "Lv.1 · Training 0 · Before transformation · Growth data",
+      "title": "Starhorn · Pet Acquisition, Stats & Growth | TilesSurvive.net",
+      "description": "Starhorn — Lv.1 · Training 0 · Before transformation · Growth data",
       "url": "/en/database/pet-system/starhorn/"
     },
     {
       "language": "en",
       "type": "heroe",
-      "title": "Tara | Tiles Survive Hero | TilesSurvive.net",
+      "title": "Tara · Skills, Stats & Growth | TilesSurvive.net",
       "description": "Detailed hero page for Tara in Tiles Survive. This page covers hero story, battle traits, max level and star stats, star bonus, skills, and signature gear for this SSR hero.",
       "url": "/en/heroes/tara/"
     },
     {
       "language": "en",
       "type": "heroe",
-      "title": "Tarzan | Tiles Survive Hero | TilesSurvive.net",
+      "title": "Tarzan · Skills, Stats & Growth | TilesSurvive.net",
       "description": "Tarzan hero page for Tiles Survive. This SSR melee hero guide covers hero story, combat traits, max level and star stats, star bonus, skills, and signature gear in one page.",
       "url": "/en/heroes/tazan/"
     },
@@ -509,8 +509,8 @@
     {
       "language": "en",
       "type": "home",
-      "title": "Tiles Survive Data Hub | Database Guides Seasons Codes | TilesSurvive.net",
-      "description": "A long-term Tiles Survive data hub that organizes database pages, guides, seasons, and gift codes in one place.",
+      "title": "Tiles Survive Database & Guides | Heroes, Pets & Calculators",
+      "description": "From hero skills to the resources for your next level. Find the game data you need and calculate the cost of growing your team.",
       "url": "/en/"
     },
     {
@@ -524,14 +524,14 @@
       "language": "en",
       "type": "guide",
       "title": "Tiles Survive Discount Top-Up Guide | Self Top-Up Steps, Requirements, 2FA, Coupon Info | TilesSurvive.net",
-      "description": "Check applicable product, region and currency conditions on LootBar.",
+      "description": "Follow the Tiles Survive self-service top-up steps, including account linking, two-factor authentication and preparation before using LootBar.",
       "url": "/en/guides/discount-topup/"
     },
     {
       "language": "en",
       "type": "guide",
       "title": "Tiles Survive Discount Top-Up Promotion Guide | Exclusive Link Benefits, Monthly Recharge Coupons, New User Code | TilesSurvive.net",
-      "description": "Check applicable product, region and currency conditions on LootBar.",
+      "description": "Check how the dedicated Tiles Survive link works and the promotion participation and reward conditions. Confirm applicable product, region and payment benefits on LootBar.",
       "url": "/en/guides/discount-topup-promotion/"
     },
     {
@@ -600,7 +600,7 @@
     {
       "language": "en",
       "type": "heroe",
-      "title": "Tony | Tiles Survive Hero | TilesSurvive.net",
+      "title": "Tony · Skills, Stats & Growth | TilesSurvive.net",
       "description": "Detailed page for Tony in Tiles Survive. View hero introduction, battle traits, max level and 10-star stats, star bonus, skills, and signature weapon in one place.",
       "url": "/en/heroes/tony/"
     },
@@ -608,13 +608,13 @@
       "language": "en",
       "type": "top-up",
       "title": "Top-up guide | TilesSurvive.net",
-      "description": "Check applicable product, region and currency conditions on LootBar.",
+      "description": "Review Tiles Survive top-up options, account requirements and conditions, then continue through the dedicated LootBar link.",
       "url": "/en/top-up/"
     },
     {
       "language": "en",
       "type": "heroe",
-      "title": "Travis | Tiles Survive Hero | TilesSurvive.net",
+      "title": "Travis · Skills, Stats & Growth | TilesSurvive.net",
       "description": "Tiles Survive hero Travis detail page. View his introduction, faction, battle traits, max level and star stats, star bonus, and skills in one place.",
       "url": "/en/heroes/travis/"
     },
@@ -628,7 +628,7 @@
     {
       "language": "en",
       "type": "heroe",
-      "title": "Undine | TilesSurvive.net",
+      "title": "Undine · Skills, Stats & Growth | TilesSurvive.net",
       "description": "Mariner heroes · SSR · Gunners · Skills & effects",
       "url": "/en/heroes/undine/"
     },
@@ -649,7 +649,7 @@
     {
       "language": "en",
       "type": "heroe",
-      "title": "Wright | Tiles Survive Hero | TilesSurvive.net",
+      "title": "Wright · Skills, Stats & Growth | TilesSurvive.net",
       "description": "Wright hero detail page for Tiles Survive. This page summarizes hero introduction, battle traits, max level and star stats, star bonus, skills, and signature gear for this SSR hero.",
       "url": "/en/heroes/light/"
     },
@@ -824,57 +824,57 @@
     {
       "language": "ja",
       "type": "database",
-      "title": "Buckler · ペットの成長・入手 | TilesSurvive.net",
-      "description": "役割: 防御 · 入手確率 · 観測ステータス",
+      "title": "Buckler · ペットの入手・能力・育成 | TilesSurvive.net",
+      "description": "Buckler — 役割: 防御 · 入手確率 · 観測ステータス",
       "url": "/ja/database/pet-system/buckler/"
     },
     {
       "language": "ja",
       "type": "database",
-      "title": "Dodo · ペットの成長・入手 | TilesSurvive.net",
-      "description": "役割: 攻撃 · 入手確率 · 観測ステータス",
+      "title": "Dodo · ペットの入手・能力・育成 | TilesSurvive.net",
+      "description": "Dodo — 役割: 攻撃 · 入手確率 · 観測ステータス",
       "url": "/ja/database/pet-system/dodo/"
     },
     {
       "language": "ja",
       "type": "database",
-      "title": "Fluffy · ペットの成長・入手 | TilesSurvive.net",
-      "description": "役割: 支援 · 入手確率 · 観測ステータス",
+      "title": "Fluffy · ペットの入手・能力・育成 | TilesSurvive.net",
+      "description": "Fluffy — 役割: 支援 · 入手確率 · 観測ステータス",
       "url": "/ja/database/pet-system/fluffy/"
     },
     {
       "language": "ja",
       "type": "database",
-      "title": "Hardhead · ペットの成長・入手 | TilesSurvive.net",
-      "description": "役割: 攻撃 · 入手確率 · 観測ステータス",
+      "title": "Hardhead · ペットの入手・能力・育成 | TilesSurvive.net",
+      "description": "Hardhead — 役割: 攻撃 · 入手確率 · 観測ステータス",
       "url": "/ja/database/pet-system/hardhead/"
     },
     {
       "language": "ja",
       "type": "heroe",
-      "title": "Knotty | TilesSurvive.net",
+      "title": "Knotty · スキル・ステータス・育成 | TilesSurvive.net",
       "description": "海の英雄 · SSR · Marksmen · スキルと効果",
       "url": "/ja/heroes/knotty/"
     },
     {
       "language": "ja",
       "type": "database",
-      "title": "Shadow · ペットの成長・入手 | TilesSurvive.net",
-      "description": "役割: 攻撃 · 入手確率 · 観測ステータス",
+      "title": "Shadow · ペットの入手・能力・育成 | TilesSurvive.net",
+      "description": "Shadow — 役割: 攻撃 · 入手確率 · 観測ステータス",
       "url": "/ja/database/pet-system/shadow/"
     },
     {
       "language": "ja",
       "type": "database",
-      "title": "Snowball · ペットの成長・入手 | TilesSurvive.net",
-      "description": "役割: 支援 · 入手確率 · 観測ステータス",
+      "title": "Snowball · ペットの入手・能力・育成 | TilesSurvive.net",
+      "description": "Snowball — 役割: 支援 · 入手確率 · 観測ステータス",
       "url": "/ja/database/pet-system/snowball/"
     },
     {
       "language": "ja",
       "type": "database",
-      "title": "Starhorn | TilesSurvive.net",
-      "description": "Lv.1・訓練0段階・変身前 · 育成データ",
+      "title": "Starhorn · ペットの入手・能力・育成 | TilesSurvive.net",
+      "description": "Starhorn — Lv.1・訓練0段階・変身前 · 育成データ",
       "url": "/ja/database/pet-system/starhorn/"
     },
     {
@@ -914,6 +914,13 @@
     },
     {
       "language": "ja",
+      "type": "home",
+      "title": "Tiles Survive データ・攻略 | 英雄・ペット・育成計算機",
+      "description": "英雄のスキルから目標レベルに必要な資源まで。ゲーム情報を探し、育成コストを計算できます。",
+      "url": "/ja/"
+    },
+    {
+      "language": "ja",
       "type": "heroe",
       "title": "Tiles Survive ヒーロー一覧 | TilesSurvive.net",
       "description": "Tiles Survive のヒーロー一覧ページです。山岳、荒野、空のヒーローをSSR、SR、Rランク別に見やすく整理しました。",
@@ -943,7 +950,7 @@
     {
       "language": "ja",
       "type": "heroe",
-      "title": "Undine | TilesSurvive.net",
+      "title": "Undine · スキル・ステータス・育成 | TilesSurvive.net",
       "description": "海の英雄 · SSR · Gunners · スキルと効果",
       "url": "/ja/heroes/undine/"
     },
@@ -971,14 +978,14 @@
     {
       "language": "ja",
       "type": "heroe",
-      "title": "エヴァ | タイルズサバイバル 英雄 | TilesSurvive.net",
+      "title": "エヴァ · スキル・ステータス・育成 | TilesSurvive.net",
       "description": "タイルズサバイバルの英雄エヴァ詳細ページです。英雄紹介、英雄系統、戦闘特性、最大レベルおよび星ランクステータス、星ランクボーナス、スキルをひと目で確認できます。",
       "url": "/ja/heroes/eva/"
     },
     {
       "language": "ja",
       "type": "heroe",
-      "title": "カイロン | タイルズサバイバル 英雄 | TilesSurvive.net",
+      "title": "カイロン · スキル・ステータス・育成 | TilesSurvive.net",
       "description": "タイルズサバイバルの英雄カイロン詳細ページです。SSR英雄基準で、英雄紹介、戦闘特性、最大レベルおよび星ランクステータス、星ランクボーナス、スキル、専用装備をひと目で確認できます。",
       "url": "/ja/heroes/kiron/"
     },
@@ -992,28 +999,28 @@
     {
       "language": "ja",
       "type": "heroe",
-      "title": "キキ | タイルサバイバル 英雄 | TilesSurvive.net",
+      "title": "キキ · スキル・ステータス・育成 | TilesSurvive.net",
       "description": "タイルサバイバル英雄キキの詳細ページです。SSR英雄基準で、英雄紹介、戦闘特性、最大レベルと星ランクステータス、星ランク追加効果、スキル、専用装備をひと目で確認できます。",
       "url": "/ja/heroes/kiki/"
     },
     {
       "language": "ja",
       "type": "heroe",
-      "title": "キャンディ | タイルサバイバル英雄 | TilesSurvive.net",
+      "title": "キャンディ · スキル・ステータス・育成 | TilesSurvive.net",
       "description": "タイルサバイバル英雄キャンディの詳細ページです。SSR英雄基準で、英雄紹介、戦闘特性、最大レベル＆星ランクステータス、星ランクボーナス、スキル、専用装備をひと目で確認できます。",
       "url": "/ja/heroes/candy/"
     },
     {
       "language": "ja",
       "type": "heroe",
-      "title": "ゴースト | タイルズサバイバル 英雄 | TilesSurvive.net",
+      "title": "ゴースト · スキル・ステータス・育成 | TilesSurvive.net",
       "description": "タイルズサバイバルの英雄ゴースト詳細ページです。英雄紹介、英雄系統、戦闘特性、最大レベルおよび星ランクステータス、星ランクボーナス、スキルをひと目で確認できます。",
       "url": "/ja/heroes/ghost/"
     },
     {
       "language": "ja",
       "type": "heroe",
-      "title": "サージ | タイルサバイバル 英雄 | TilesSurvive.net",
+      "title": "サージ · スキル・ステータス・育成 | TilesSurvive.net",
       "description": "タイルサバイバルの英雄サージ詳細ページです。昇格英雄基準で、英雄紹介、戦闘特性、Lv MAXステータス、星ランクボーナス、スキルをひと目で確認できます。",
       "url": "/ja/heroes/sarge/"
     },
@@ -1034,8 +1041,8 @@
     {
       "language": "ja",
       "type": "season",
-      "title": "シーズンⅢ 未定 指南 | タイルサバイバル シーズンガイド | TilesSurvive.net",
-      "description": "タイルサバイバル シーズンⅢ 未定の指南ページです。シーズン目標、シーズンパス、シーズン週間パス、イベント、英雄昇格、サーバー戦までまとめて整理しました。",
+      "title": "シーズンIII 運用ガイド | TilesSurvive.net",
+      "description": "シーズン目標、育成資源、パス、サーバー戦の準備をまとめて確認できます。運用計画とサーバーの実際の解放日程は分けて考えてください。",
       "url": "/ja/seasons/season-3/"
     },
     {
@@ -1048,14 +1055,14 @@
     {
       "language": "ja",
       "type": "heroe",
-      "title": "シェフ ケン | タイルズサバイバル 英雄 | TilesSurvive.net",
+      "title": "シェフ ケン · スキル・ステータス・育成 | TilesSurvive.net",
       "description": "タイルズサバイバルの英雄シェフ ケン詳細ページです。英雄紹介、戦闘特性、最大レベルおよび星ランクステータス、星ランクボーナス、スキルをひと目で確認できます。",
       "url": "/ja/heroes/chef-ken/"
     },
     {
       "language": "ja",
       "type": "heroe",
-      "title": "シャーク | 海 SSR 近距離英雄 | TilesSurvive.net",
+      "title": "シャーク · スキル・ステータス・育成 | TilesSurvive.net",
       "description": "シャークは Tiles Survive の海系SSR近距離英雄です。ウェーブクラッシュ、シャークウェーブ、前線支援、深海無敵、専用装備「深海の錨」をまとめています。",
       "url": "/ja/heroes/shark/"
     },
@@ -1069,14 +1076,14 @@
     {
       "language": "ja",
       "type": "heroe",
-      "title": "ターザン | タイルサバイバル 英雄 | TilesSurvive.net",
+      "title": "ターザン · スキル・ステータス・育成 | TilesSurvive.net",
       "description": "タイルサバイバルの英雄ターザン詳細ページです。SSR英雄基準で、英雄紹介、戦闘特性、Lv MAXステータス、星ランクボーナス、スキル、専用装備をひと目で確認できます。",
       "url": "/ja/heroes/tarzan/"
     },
     {
       "language": "ja",
       "type": "heroe",
-      "title": "ターラ | タイルサバイバル 英雄 | TilesSurvive.net",
+      "title": "ターラ · スキル・ステータス・育成 | TilesSurvive.net",
       "description": "タイルサバイバルの英雄ターラ詳細ページです。SSR英雄基準で、英雄紹介、戦闘特性、Lv MAXステータス、星ランクボーナス、スキル、専用装備をひと目で確認できます。",
       "url": "/ja/heroes/tara/"
     },
@@ -1084,14 +1091,14 @@
       "language": "ja",
       "type": "guide",
       "title": "タイルサバイバル 割引チャージガイド | セルフチャージ方法、利用条件、2段階認証、コード案内 | TilesSurvive.net",
-      "description": "商品・地域・通貨の適用条件はLootBarで確認してください。",
+      "description": "Tiles Surviveのアカウント連携、二段階認証、セルフチャージの手順を確認できます。LootBar利用前の準備と問い合わせ案内を掲載しています。",
       "url": "/ja/guides/discount-topup/"
     },
     {
       "language": "ja",
       "type": "guide",
       "title": "タイルサバイバル 割引チャージプロモーションガイド | 専用リンク追加特典、月間累計チャージコード、新規登録コード案内 | TilesSurvive.net",
-      "description": "商品・地域・通貨の適用条件はLootBarで確認してください。",
+      "description": "Tiles Survive専用リンクの利用方法とプロモーションの参加・配布条件を確認できます。商品・地域・決済条件ごとの特典はLootBarで確認してください。",
       "url": "/ja/guides/discount-topup-promotion/"
     },
     {
@@ -1114,13 +1121,6 @@
       "title": "タイルサバイバル シーズン記念碑一覧 | TilesSurvive.net",
       "description": "タイルサバイバルのシーズン記念碑一覧ページです。シーズンⅠ、シーズンⅡ、シーズンⅢを見やすく整理しました。",
       "url": "/ja/seasons/"
-    },
-    {
-      "language": "ja",
-      "type": "home",
-      "title": "タイルサバイバル データハブ | データベース ガイド シーズン コード | TilesSurvive.net",
-      "description": "タイルサバイバルのデータベース、ガイド、シーズン、ギフトコードをひとつにまとめた長期運営型データハブです。",
-      "url": "/ja/"
     },
     {
       "language": "ja",
@@ -1168,27 +1168,27 @@
       "language": "ja",
       "type": "top-up",
       "title": "チャージ案内 | TilesSurvive.net",
-      "description": "商品・地域・通貨の適用条件はLootBarで確認してください。",
+      "description": "Tiles Surviveのチャージ方法、利用条件、アカウントの確認事項を調べて、LootBar専用リンクへ進めます。",
       "url": "/ja/top-up/"
     },
     {
       "language": "ja",
       "type": "heroe",
-      "title": "トニー | タイルサバイバル 英雄 | TilesSurvive.net",
+      "title": "トニー · スキル・ステータス・育成 | TilesSurvive.net",
       "description": "タイルサバイバル英雄トニーの詳細ページです。SSR英雄基準で、英雄紹介、戦闘特性、最大レベルと星ランクステータス、星ランク追加効果、スキル、専用装備をひと目で確認できます。",
       "url": "/ja/heroes/tony/"
     },
     {
       "language": "ja",
       "type": "heroe",
-      "title": "トラビス | タイルサバイバル ヒーロー | TilesSurvive.net",
+      "title": "トラビス · スキル・ステータス・育成 | TilesSurvive.net",
       "description": "タイルサバイバルのヒーロー、トラビスの詳細ページです。英雄紹介、陣営、戦闘特性、最大レベルと星ランクステータス、星ランクボーナス、スキルをひと目で確認できます。",
       "url": "/ja/heroes/travis/"
     },
     {
       "language": "ja",
       "type": "heroe",
-      "title": "ニコラ | タイルサバイバル英雄 | TilesSurvive.net",
+      "title": "ニコラ · スキル・ステータス・育成 | TilesSurvive.net",
       "description": "タイルサバイバル英雄ニコラの詳細ページです。SSR英雄基準で、英雄紹介、戦闘特性、最大レベル＆星ランクステータス、星ランクボーナス、スキル、専用装備をひと目で確認できます。",
       "url": "/ja/heroes/nikola/"
     },
@@ -1209,14 +1209,14 @@
     {
       "language": "ja",
       "type": "heroe",
-      "title": "フレヤ | タイルサバイバル英雄 | TilesSurvive.net",
+      "title": "フレヤ · スキル・ステータス・育成 | TilesSurvive.net",
       "description": "タイルサバイバル英雄フレヤの詳細ページです。英雄紹介、戦闘特性、最大レベル＆星ランクステータス、星ランクボーナス、スキルをひと目で確認できます。",
       "url": "/ja/heroes/freya/"
     },
     {
       "language": "ja",
       "type": "heroe",
-      "title": "ベッキー | タイルズサバイバル ヒーロー | TilesSurvive.net",
+      "title": "ベッキー · スキル・ステータス・育成 | TilesSurvive.net",
       "description": "タイルズサバイバルのヒーロー、ベッキーの詳細ページです。SSRヒーロー基準で、ヒーロー紹介、戦闘特性、最大レベルと星ランクステータス、星ランクボーナス、スキル、専用装備をひと目で確認できます。",
       "url": "/ja/heroes/beka/"
     },
@@ -1237,70 +1237,70 @@
     {
       "language": "ja",
       "type": "heroe",
-      "title": "マイク | タイルサバイバル 英雄 | TilesSurvive.net",
+      "title": "マイク · スキル・ステータス・育成 | TilesSurvive.net",
       "description": "タイルサバイバル英雄マイクの詳細ページです。SSR英雄基準で、英雄紹介、戦闘特性、最大レベルと星ランクステータス、星ランク追加効果、スキル、専用装備をひと目で確認できます。",
       "url": "/ja/heroes/mike/"
     },
     {
       "language": "ja",
       "type": "heroe",
-      "title": "マディ | タイルサバイバル 英雄 | TilesSurvive.net",
+      "title": "マディ · スキル・ステータス・育成 | TilesSurvive.net",
       "description": "タイルサバイバルの英雄マディ詳細ページです。SSR英雄基準で、英雄紹介、戦闘特性、Lv MAXステータス、星ランクボーナス、スキル、専用装備をひと目で確認できます。",
       "url": "/ja/heroes/maddy/"
     },
     {
       "language": "ja",
       "type": "heroe",
-      "title": "ヤーコブ | タイルサバイバル英雄 | TilesSurvive.net",
+      "title": "ヤーコブ · スキル・ステータス・育成 | TilesSurvive.net",
       "description": "タイルサバイバル英雄ヤーコブの詳細ページです。SSR英雄基準で、英雄紹介、戦闘特性、最大レベル＆星ランクステータス、星ランクボーナス、スキル、専用装備をひと目で確認できます。",
       "url": "/ja/heroes/jacob/"
     },
     {
       "language": "ja",
       "type": "heroe",
-      "title": "ライト | タイルサバイバル 英雄 | TilesSurvive.net",
+      "title": "ライト · スキル・ステータス・育成 | TilesSurvive.net",
       "description": "タイルサバイバル英雄ライトの詳細ページです。SSR英雄基準で、英雄紹介、戦闘特性、最大レベルと星ランクステータス、星ランク追加効果、スキル、専用装備をひと目で確認できます。",
       "url": "/ja/heroes/light/"
     },
     {
       "language": "ja",
       "type": "heroe",
-      "title": "ラグナ | SSR 海 近距離英雄 | TilesSurvive.net",
+      "title": "ラグナ · スキル・ステータス・育成 | TilesSurvive.net",
       "description": "Tiles Survive のSSR英雄ラグナについて、海陣営、近距離運用、最大レベル属性、星ランクボーナス、スキル、専用装備をまとめた詳細ページです。",
       "url": "/ja/heroes/lagnar/"
     },
     {
       "language": "ja",
       "type": "heroe",
-      "title": "ラスティ | タイルサバイバル 英雄 | TilesSurvive.net",
+      "title": "ラスティ · スキル・ステータス・育成 | TilesSurvive.net",
       "description": "タイルサバイバルの英雄ラスティ詳細ページです。英雄紹介、系統、戦闘特性、Lv MAXステータス、スキル、星ランクボーナスをひと目で確認できます。",
       "url": "/ja/heroes/rusty/"
     },
     {
       "language": "ja",
       "type": "heroe",
-      "title": "ラッキー | タイルサバイバル英雄 | TilesSurvive.net",
+      "title": "ラッキー · スキル・ステータス・育成 | TilesSurvive.net",
       "description": "タイルサバイバル英雄ラッキーの詳細ページです。昇格英雄基準で、英雄紹介、戦闘特性、最大レベル＆星ランクステータス、星ランクボーナス、スキルをひと目で確認できます。",
       "url": "/ja/heroes/lucky/"
     },
     {
       "language": "ja",
       "type": "heroe",
-      "title": "レイ | タイルサバイバル 英雄 | TilesSurvive.net",
+      "title": "レイ · スキル・ステータス・育成 | TilesSurvive.net",
       "description": "タイルサバイバルの英雄レイ詳細ページです。SSR英雄基準で、英雄紹介、戦闘特性、Lv MAXステータス、星ランクボーナス、スキル、専用装備をひと目で確認できます。",
       "url": "/ja/heroes/ray/"
     },
     {
       "language": "ja",
       "type": "heroe",
-      "title": "レイラ | タイルサバイバル英雄 | TilesSurvive.net",
+      "title": "レイラ · スキル・ステータス・育成 | TilesSurvive.net",
       "description": "タイルサバイバル英雄レイラの詳細ページです。SSR英雄基準で、英雄紹介、戦闘特性、最大レベル＆星ランクステータス、星ランクボーナス、スキル、専用装備をひと目で確認できます。",
       "url": "/ja/heroes/laila/"
     },
     {
       "language": "ja",
       "type": "heroe",
-      "title": "ローズ | タイルサバイバル英雄 | TilesSurvive.net",
+      "title": "ローズ · スキル・ステータス・育成 | TilesSurvive.net",
       "description": "タイルサバイバル英雄ローズの詳細ページです。SSR英雄基準で、英雄紹介、戦闘特性、最大レベル＆星ランクステータス、星ランクボーナス、スキル、専用装備をひと目で確認できます。",
       "url": "/ja/heroes/rosie/"
     },
@@ -1314,29 +1314,29 @@
     {
       "language": "ko",
       "type": "heroe",
-      "title": "고스트 | 타일서바이벌 영웅 | TilesSurvive.net",
+      "title": "고스트 · 스킬·능력치·성장 | TilesSurvive.net",
       "description": "타일서바이벌 영웅 고스트 상세 페이지입니다. 영웅 소개, 진영, 전투 특성, 최고 레벨 및 성급 속성, 성급 보너스, 스킬을 한눈에 정리했습니다.",
       "url": "/ko/heroes/ghost/"
     },
     {
       "language": "ko",
       "type": "heroe",
-      "title": "너티 · Knotty 스킬·전용 장비 | TilesSurvive.net",
+      "title": "너티 · Knotty · 스킬·능력치·성장 | TilesSurvive.net",
       "description": "바다 영웅 · SSR · Marksmen · 스킬과 효과",
       "url": "/ko/heroes/knotty/"
     },
     {
       "language": "ko",
       "type": "heroe",
-      "title": "니콜라 | 타일서바이벌 영웅 | TilesSurvive.net",
+      "title": "니콜라 · 스킬·능력치·성장 | TilesSurvive.net",
       "description": "타일서바이벌 영웅 니콜라 상세 페이지입니다. SSR 영웅 기준으로 영웅 소개, 전투 특성, 최고 레벨 및 성급 속성, 성급 보너스, 스킬, 전용 장비를 한눈에 정리했습니다.",
       "url": "/ko/heroes/nikola/"
     },
     {
       "language": "ko",
       "type": "database",
-      "title": "도도 · Dodo · 펫 성장·획득 데이터 | TilesSurvive.net",
-      "description": "역할: 공격 · 획득 확률 · 관측 능력치",
+      "title": "도도 · 펫 획득·능력치·육성 | TilesSurvive.net",
+      "description": "도도 — 역할: 공격 · 획득 확률 · 관측 능력치",
       "url": "/ko/database/pet-system/dodo/"
     },
     {
@@ -1349,49 +1349,49 @@
     {
       "language": "ko",
       "type": "heroe",
-      "title": "라그나 | SSR 바다 근거리 영웅 | TilesSurvive.net",
+      "title": "라그나 · 스킬·능력치·성장 | TilesSurvive.net",
       "description": "라그나 SSR 영웅의 바다 진영, 근거리 운용, 최대 레벨 속성, 성급 보너스, 스킬, 전용 장비 정보를 정리한 상세 페이지입니다.",
       "url": "/ko/heroes/lagnar/"
     },
     {
       "language": "ko",
       "type": "heroe",
-      "title": "라이트 | 타일서바이벌 영웅 | TilesSurvive.net",
+      "title": "라이트 · 스킬·능력치·성장 | TilesSurvive.net",
       "description": "타일서바이벌 영웅 라이트 상세 페이지입니다. SSR 영웅 기준으로 영웅 소개, 전투 특성, 최고 레벨 및 성급 속성, 성급 보너스, 스킬, 전용 장비를 한눈에 정리했습니다.",
       "url": "/ko/heroes/light/"
     },
     {
       "language": "ko",
       "type": "heroe",
-      "title": "라일라 | 타일서바이벌 영웅 | TilesSurvive.net",
+      "title": "라일라 · 스킬·능력치·성장 | TilesSurvive.net",
       "description": "타일서바이벌 영웅 라일라 상세 페이지입니다. SSR 영웅 기준으로 영웅 소개, 전투 특성, 최고 레벨 및 성급 속성, 성급 보너스, 스킬, 전용 장비를 한눈에 정리했습니다.",
       "url": "/ko/heroes/laila/"
     },
     {
       "language": "ko",
       "type": "heroe",
-      "title": "러스티 | 타일서바이벌 영웅 | TilesSurvive.net",
+      "title": "러스티 · 스킬·능력치·성장 | TilesSurvive.net",
       "description": "타일서바이벌 영웅 러스티 상세 페이지입니다. 영웅 소개, 진영, 전투 특성, 최고 레벨 및 성급 속성, 스킬, 성급 보너스를 한눈에 정리했습니다.",
       "url": "/ko/heroes/rusty/"
     },
     {
       "language": "ko",
       "type": "heroe",
-      "title": "럭키 | 타일서바이벌 영웅 | TilesSurvive.net",
+      "title": "럭키 · 스킬·능력치·성장 | TilesSurvive.net",
       "description": "타일서바이벌 영웅 럭키 상세 페이지입니다. 진급 영웅 기준으로 영웅 소개, 전투 특성, 최고 레벨 및 성급 속성, 성급 보너스, 스킬을 한눈에 정리했습니다.",
       "url": "/ko/heroes/lucky/"
     },
     {
       "language": "ko",
       "type": "heroe",
-      "title": "레이 | 타일서바이벌 영웅 | TilesSurvive.net",
+      "title": "레이 · 스킬·능력치·성장 | TilesSurvive.net",
       "description": "타일서바이벌 영웅 레이 상세 페이지입니다. SSR 영웅 기준으로 영웅 소개, 전투 특성, 최고 레벨 및 성급 속성, 성급 보너스, 스킬, 전용 장비를 한눈에 정리했습니다.",
       "url": "/ko/heroes/ray/"
     },
     {
       "language": "ko",
       "type": "heroe",
-      "title": "로지 | 타일서바이벌 영웅 | TilesSurvive.net",
+      "title": "로지 · 스킬·능력치·성장 | TilesSurvive.net",
       "description": "타일서바이벌 영웅 로지 상세 페이지입니다. SSR 영웅 기준으로 영웅 소개, 전투 특성, 최고 레벨 및 성급 속성, 성급 보너스, 스킬, 전용 장비를 한눈에 정리했습니다.",
       "url": "/ko/heroes/rosie/"
     },
@@ -1405,14 +1405,14 @@
     {
       "language": "ko",
       "type": "heroe",
-      "title": "마이크 | 타일서바이벌 영웅 | TilesSurvive.net",
+      "title": "마이크 · 스킬·능력치·성장 | TilesSurvive.net",
       "description": "타일서바이벌 영웅 마이크 상세 페이지입니다. SSR 영웅 기준으로 영웅 소개, 전투 특성, 최고 레벨 및 성급 속성, 성급 보너스, 스킬, 전용 장비를 한눈에 정리했습니다.",
       "url": "/ko/heroes/mike/"
     },
     {
       "language": "ko",
       "type": "heroe",
-      "title": "매디 | 타일서바이벌 영웅 | TilesSurvive.net",
+      "title": "매디 · 스킬·능력치·성장 | TilesSurvive.net",
       "description": "타일서바이벌 영웅 매디 상세 페이지입니다. SSR 영웅 기준으로 영웅 소개, 전투 특성, 최고 레벨 및 성급 속성, 성급 보너스, 스킬, 전용 장비를 한눈에 정리했습니다.",
       "url": "/ko/heroes/maddy/"
     },
@@ -1433,14 +1433,14 @@
     {
       "language": "ko",
       "type": "database",
-      "title": "버클러 · Buckler · 펫 성장·획득 데이터 | TilesSurvive.net",
-      "description": "역할: 방어 · 획득 확률 · 관측 능력치",
+      "title": "버클러 · 펫 획득·능력치·육성 | TilesSurvive.net",
+      "description": "버클러 — 역할: 방어 · 획득 확률 · 관측 능력치",
       "url": "/ko/database/pet-system/buckler/"
     },
     {
       "language": "ko",
       "type": "heroe",
-      "title": "베카 | 타일서바이벌 영웅 | TilesSurvive.net",
+      "title": "베카 · 스킬·능력치·성장 | TilesSurvive.net",
       "description": "타일서바이벌 영웅 베카 상세 페이지입니다. SSR 영웅 기준으로 영웅 소개, 전투 특성, 최고 레벨 및 성급 속성, 성급 보너스, 스킬, 전용 장비를 한눈에 정리했습니다.",
       "url": "/ko/heroes/beka/"
     },
@@ -1454,8 +1454,8 @@
     {
       "language": "ko",
       "type": "database",
-      "title": "별뿔이 | TilesSurvive.net",
-      "description": "Lv.1 · 훈련 0단계 · 변신 전 · 육성 데이터",
+      "title": "별뿔이 · 펫 획득·능력치·육성 | TilesSurvive.net",
+      "description": "별뿔이 — Lv.1 · 훈련 0단계 · 변신 전 · 육성 데이터",
       "url": "/ko/database/pet-system/starhorn/"
     },
     {
@@ -1475,7 +1475,7 @@
     {
       "language": "ko",
       "type": "heroe",
-      "title": "샤크 | 바다 SSR 근거리 영웅 | TilesSurvive.net",
+      "title": "샤크 · 스킬·능력치·성장 | TilesSurvive.net",
       "description": "샤크는 Tiles Survive의 바다 계열 SSR 근거리 영웅입니다. 웨이브 크래시, 샤크 웨이브, 전방 지원, 심해 무적과 전용 장비 심해의 닻 정보를 정리했습니다.",
       "url": "/ko/heroes/shark/"
     },
@@ -1489,14 +1489,14 @@
     {
       "language": "ko",
       "type": "heroe",
-      "title": "세이지 | 타일서바이벌 영웅 | TilesSurvive.net",
+      "title": "세이지 · 스킬·능력치·성장 | TilesSurvive.net",
       "description": "타일서바이벌 영웅 세이지 상세 페이지입니다. 진급 영웅 기준으로 영웅 소개, 전투 특성, 최고 레벨 및 성급 속성, 성급 보너스, 스킬을 한눈에 정리했습니다.",
       "url": "/ko/heroes/sarge/"
     },
     {
       "language": "ko",
       "type": "heroe",
-      "title": "세프 켄 | 타일서바이벌 영웅 | TilesSurvive.net",
+      "title": "세프 켄 · 스킬·능력치·성장 | TilesSurvive.net",
       "description": "타일서바이벌 영웅 세프 켄 상세 페이지입니다. 영웅 소개, 전투 특성, 최고 레벨 및 성급 속성, 성급 보너스, 스킬을 한눈에 정리했습니다.",
       "url": "/ko/heroes/chef-ken/"
     },
@@ -1510,22 +1510,22 @@
     {
       "language": "ko",
       "type": "database",
-      "title": "솜솜 · Fluffy · 펫 성장·획득 데이터 | TilesSurvive.net",
-      "description": "역할: 지원 · 획득 확률 · 관측 능력치",
+      "title": "솜솜 · 펫 획득·능력치·육성 | TilesSurvive.net",
+      "description": "솜솜 — 역할: 지원 · 획득 확률 · 관측 능력치",
       "url": "/ko/database/pet-system/fluffy/"
     },
     {
       "language": "ko",
       "type": "database",
-      "title": "쉐도우 · Shadow · 펫 성장·획득 데이터 | TilesSurvive.net",
-      "description": "역할: 공격 · 획득 확률 · 관측 능력치",
+      "title": "쉐도우 · 펫 획득·능력치·육성 | TilesSurvive.net",
+      "description": "쉐도우 — 역할: 공격 · 획득 확률 · 관측 능력치",
       "url": "/ko/database/pet-system/shadow/"
     },
     {
       "language": "ko",
       "type": "database",
-      "title": "스노우볼 · Snowball · 펫 성장·획득 데이터 | TilesSurvive.net",
-      "description": "역할: 지원 · 획득 확률 · 관측 능력치",
+      "title": "스노우볼 · 펫 획득·능력치·육성 | TilesSurvive.net",
+      "description": "스노우볼 — 역할: 지원 · 획득 확률 · 관측 능력치",
       "url": "/ko/database/pet-system/snowball/"
     },
     {
@@ -1552,8 +1552,8 @@
     {
       "language": "ko",
       "type": "season",
-      "title": "시즌 3 미정 공략 | 타일서바이벌 시즌 가이드 | TilesSurvive.net",
-      "description": "타일서바이벌 시즌 3 미정 공략입니다. 시즌 목표, 패스, 주간권, 이벤트, 영웅 진급, 서버전까지 한 번에 정리했습니다.",
+      "title": "시즌 3 운영 가이드 | TilesSurvive.net",
+      "description": "시즌 목표, 성장 자원, 패스와 서버전 준비를 한곳에서 살펴보세요. 주차별 계획과 서버의 실제 개방 일정은 구분해서 확인해야 합니다.",
       "url": "/ko/seasons/season-3/"
     },
     {
@@ -1566,7 +1566,7 @@
     {
       "language": "ko",
       "type": "heroe",
-      "title": "에바 | 타일서바이벌 영웅 | TilesSurvive.net",
+      "title": "에바 · 스킬·능력치·성장 | TilesSurvive.net",
       "description": "타일서바이벌 영웅 에바 상세 페이지입니다. 영웅 소개, 진영, 전투 특성, 최고 레벨 및 성급 속성, 성급 보너스, 스킬을 한눈에 정리했습니다.",
       "url": "/ko/heroes/eva/"
     },
@@ -1685,7 +1685,7 @@
     {
       "language": "ko",
       "type": "heroe",
-      "title": "제이콥 | 타일서바이벌 영웅 | TilesSurvive.net",
+      "title": "제이콥 · 스킬·능력치·성장 | TilesSurvive.net",
       "description": "타일서바이벌 영웅 제이콥 상세 페이지입니다. SSR 영웅 기준으로 영웅 소개, 전투 특성, 최고 레벨 및 성급 속성, 성급 보너스, 스킬, 전용 장비를 한눈에 정리했습니다.",
       "url": "/ko/heroes/jacob/"
     },
@@ -1706,7 +1706,7 @@
     {
       "language": "ko",
       "type": "heroe",
-      "title": "채의진 | 타일서바이벌 영웅 | TilesSurvive.net",
+      "title": "채의진 · 스킬·능력치·성장 | TilesSurvive.net",
       "description": "타일서바이벌 영웅 채의진 상세 페이지입니다. SSR 영웅 기준으로 영웅 소개, 전투 특성, 최고 레벨 및 성급 속성, 성급 보너스, 스킬, 전용 장비를 한눈에 정리했습니다.",
       "url": "/ko/heroes/candy/"
     },
@@ -1720,8 +1720,8 @@
     {
       "language": "ko",
       "type": "database",
-      "title": "철두 · Hardhead · 펫 성장·획득 데이터 | TilesSurvive.net",
-      "description": "역할: 공격 · 획득 확률 · 관측 능력치",
+      "title": "철두 · 펫 획득·능력치·육성 | TilesSurvive.net",
+      "description": "철두 — 역할: 공격 · 획득 확률 · 관측 능력치",
       "url": "/ko/database/pet-system/hardhead/"
     },
     {
@@ -1735,27 +1735,27 @@
       "language": "ko",
       "type": "top-up",
       "title": "충전 안내 | TilesSurvive.net",
-      "description": "상품·지역·통화별 적용 조건을 LootBar에서 확인하세요.",
+      "description": "타일서바이벌 충전 방법과 이용 조건, 계정 확인 사항을 살펴보고 LootBar 전용 링크로 이동하세요.",
       "url": "/ko/top-up/"
     },
     {
       "language": "ko",
       "type": "heroe",
-      "title": "키론 | 타일서바이벌 영웅 | TilesSurvive.net",
+      "title": "키론 · 스킬·능력치·성장 | TilesSurvive.net",
       "description": "타일서바이벌 영웅 키론 상세 페이지입니다. SSR 영웅 기준으로 영웅 소개, 전투 특성, 최고 레벨 및 성급 속성, 성급 보너스, 스킬, 전용 장비를 한눈에 정리했습니다.",
       "url": "/ko/heroes/kiron/"
     },
     {
       "language": "ko",
       "type": "heroe",
-      "title": "키키 | 타일서바이벌 영웅 | TilesSurvive.net",
+      "title": "키키 · 스킬·능력치·성장 | TilesSurvive.net",
       "description": "타일서바이벌 영웅 키키 상세 페이지입니다. SSR 영웅 기준으로 영웅 소개, 전투 특성, 최고 레벨 및 성급 속성, 성급 보너스, 스킬, 전용 장비를 한눈에 정리했습니다.",
       "url": "/ko/heroes/kiki/"
     },
     {
       "language": "ko",
       "type": "heroe",
-      "title": "타라 | 타일서바이벌 영웅 | TilesSurvive.net",
+      "title": "타라 · 스킬·능력치·성장 | TilesSurvive.net",
       "description": "타일서바이벌 영웅 타라 상세 페이지입니다. SSR 영웅 기준으로 영웅 소개, 전투 특성, 최고 레벨 및 성급 속성, 성급 보너스, 스킬, 전용 장비를 한눈에 정리했습니다.",
       "url": "/ko/heroes/tara/"
     },
@@ -1797,8 +1797,8 @@
     {
       "language": "ko",
       "type": "home",
-      "title": "타일서바이벌 데이터 허브 | 데이터베이스 가이드 시즌 코드 | TilesSurvive.net",
-      "description": "타일서바이벌 데이터베이스, 가이드, 시즌, 기프트코드를 한 곳에서 정리한 장기 운영형 데이터 허브입니다.",
+      "title": "타일서바이벌 데이터·공략 | 영웅·펫·성장 계산기 | TilesSurvive.net",
+      "description": "영웅의 스킬부터 목표 레벨의 자원까지. 필요한 게임 정보를 찾고, 성장에 필요한 비용을 계산하세요.",
       "url": "/ko/"
     },
     {
@@ -1861,34 +1861,34 @@
       "language": "ko",
       "type": "guide",
       "title": "타일서바이벌 할인충전 가이드 | 셀프충전 방법, 이용 조건, 2차인증, 쿠폰 안내 | TilesSurvive.net",
-      "description": "상품·지역·통화별 적용 조건을 LootBar에서 확인하세요.",
+      "description": "타일서바이벌 계정 연동, 2차 인증과 단계별 셀프 충전 절차를 확인하세요. LootBar 이용 전 준비 사항과 문의 안내를 제공합니다.",
       "url": "/ko/guides/discount-topup/"
     },
     {
       "language": "ko",
       "type": "guide",
       "title": "타일서바이벌 할인충전 프로모션 가이드 | 전용 링크 추가 혜택, 월 누적 충전 쿠폰, 신규가입 코드 안내 | TilesSurvive.net",
-      "description": "상품·지역·통화별 적용 조건을 LootBar에서 확인하세요.",
+      "description": "타일서바이벌 전용 링크 이용 방법과 프로모션 참여·지급 조건을 확인하세요. 적용 혜택은 상품·지역·결제 조건에 따라 LootBar에서 확인할 수 있습니다.",
       "url": "/ko/guides/discount-topup-promotion/"
     },
     {
       "language": "ko",
       "type": "heroe",
-      "title": "타잔 | 타일서바이벌 영웅 | TilesSurvive.net",
+      "title": "타잔 · 스킬·능력치·성장 | TilesSurvive.net",
       "description": "타일서바이벌 영웅 타잔 상세 페이지입니다. SSR 영웅 기준으로 영웅 소개, 전투 특성, 최고 레벨 및 성급 속성, 성급 보너스, 스킬, 전용 장비를 한눈에 정리했습니다.",
       "url": "/ko/heroes/tarzan/"
     },
     {
       "language": "ko",
       "type": "heroe",
-      "title": "탄 토니 | 타일서바이벌 영웅 | TilesSurvive.net",
+      "title": "탄 토니 · 스킬·능력치·성장 | TilesSurvive.net",
       "description": "타일서바이벌 영웅 탄 토니 상세 페이지입니다. SSR 영웅 기준으로 영웅 소개, 전투 특성, 최고 레벨 및 성급 속성, 성급 보너스, 스킬, 전용 장비를 한눈에 정리했습니다.",
       "url": "/ko/heroes/tony/"
     },
     {
       "language": "ko",
       "type": "heroe",
-      "title": "트래비스 | 타일서바이벌 영웅 | TilesSurvive.net",
+      "title": "트래비스 · 스킬·능력치·성장 | TilesSurvive.net",
       "description": "타일서바이벌 영웅 트래비스 상세 페이지입니다. 영웅 소개, 진영, 전투 특성, 최고 레벨 및 성급 속성, 성급 보너스, 스킬을 한눈에 정리했습니다.",
       "url": "/ko/heroes/travis/"
     },
@@ -1909,7 +1909,7 @@
     {
       "language": "ko",
       "type": "heroe",
-      "title": "프레이아 | 타일서바이벌 영웅 | TilesSurvive.net",
+      "title": "프레이아 · 스킬·능력치·성장 | TilesSurvive.net",
       "description": "타일서바이벌 영웅 프레이아 상세 페이지입니다. 영웅 소개, 전투 특성, 최고 레벨 및 성급 속성, 성급 보너스, 스킬을 한눈에 정리했습니다.",
       "url": "/ko/heroes/freya/"
     },
@@ -1944,7 +1944,7 @@
     {
       "language": "ko",
       "type": "heroe",
-      "title": "Undine | TilesSurvive.net",
+      "title": "Undine · 스킬·능력치·성장 | TilesSurvive.net",
       "description": "바다 영웅 · SSR · Gunners · 스킬과 효과",
       "url": "/ko/heroes/undine/"
     },
@@ -1965,71 +1965,71 @@
     {
       "language": "ru",
       "type": "heroe",
-      "title": "Beka | Герой Tiles Survive | TilesSurvive.net",
+      "title": "Beka — Навыки, характеристики и развитие | TilesSurvive.net",
       "description": "Подробная страница героя Beka в Tiles Survive. Здесь по SSR-герою собраны описание героя, боевые особенности, характеристики на максимальном уровне и звёздности, бонус звёздности, навыки и эксклюзивное снаряжение.",
       "url": "/ru/heroes/beka/"
     },
     {
       "language": "ru",
       "type": "database",
-      "title": "Buckler · Развитие и получение питомцев | TilesSurvive.net",
-      "description": "Роль: Защита · Вероятность получения · Зафиксированные характеристики",
+      "title": "Buckler · Получение, характеристики и развитие питомца | TilesSurvive.net",
+      "description": "Buckler — Роль: Защита · Вероятность получения · Зафиксированные характеристики",
       "url": "/ru/database/pet-system/buckler/"
     },
     {
       "language": "ru",
       "type": "heroe",
-      "title": "Candy | Герой Tiles Survive | TilesSurvive.net",
+      "title": "Candy — Навыки, характеристики и развитие | TilesSurvive.net",
       "description": "Подробная страница героя Candy в Tiles Survive. Здесь по SSR-герою собраны описание героя, боевые особенности, характеристики на максимальном уровне и звёздности, бонус звёздности, навыки и эксклюзивное снаряжение.",
       "url": "/ru/heroes/candy/"
     },
     {
       "language": "ru",
       "type": "heroe",
-      "title": "Chef Ken | Герой Tiles Survive | TilesSurvive.net",
+      "title": "Chef Ken — Навыки, характеристики и развитие | TilesSurvive.net",
       "description": "Подробная страница героя Chef Ken в Tiles Survive. Здесь в одном месте собраны описание героя, боевые особенности, характеристики на максимальном уровне и звёздности, бонус звёздности и навыки.",
       "url": "/ru/heroes/chef-ken/"
     },
     {
       "language": "ru",
       "type": "database",
-      "title": "Dodo · Развитие и получение питомцев | TilesSurvive.net",
-      "description": "Роль: Атака · Вероятность получения · Зафиксированные характеристики",
+      "title": "Dodo · Получение, характеристики и развитие питомца | TilesSurvive.net",
+      "description": "Dodo — Роль: Атака · Вероятность получения · Зафиксированные характеристики",
       "url": "/ru/database/pet-system/dodo/"
     },
     {
       "language": "ru",
       "type": "heroe",
-      "title": "Eva | Герой Tiles Survive | TilesSurvive.net",
+      "title": "Eva — Навыки, характеристики и развитие | TilesSurvive.net",
       "description": "Подробная страница героя Eva в Tiles Survive. Здесь в одном месте собраны описание героя, фракция, боевые особенности, характеристики на максимальном уровне и звёздности, бонус звёздности и навыки.",
       "url": "/ru/heroes/eva/"
     },
     {
       "language": "ru",
       "type": "database",
-      "title": "Fluffy · Развитие и получение питомцев | TilesSurvive.net",
-      "description": "Роль: Поддержка · Вероятность получения · Зафиксированные характеристики",
+      "title": "Fluffy · Получение, характеристики и развитие питомца | TilesSurvive.net",
+      "description": "Fluffy — Роль: Поддержка · Вероятность получения · Зафиксированные характеристики",
       "url": "/ru/database/pet-system/fluffy/"
     },
     {
       "language": "ru",
       "type": "heroe",
-      "title": "Freya | Герой Tiles Survive | TilesSurvive.net",
+      "title": "Freya — Навыки, характеристики и развитие | TilesSurvive.net",
       "description": "Подробная страница героя Freya в Tiles Survive. Здесь в одном месте собраны описание героя, боевые особенности, характеристики на максимальном уровне и звёздности, бонус звёздности и навыки.",
       "url": "/ru/heroes/freya/"
     },
     {
       "language": "ru",
       "type": "heroe",
-      "title": "Ghost | Герой Tiles Survive | TilesSurvive.net",
+      "title": "Ghost — Навыки, характеристики и развитие | TilesSurvive.net",
       "description": "Подробная страница героя Ghost в Tiles Survive. Здесь в одном месте собраны описание героя, фракция, боевые особенности, характеристики на максимальном уровне и звёздности, бонус звёздности и навыки.",
       "url": "/ru/heroes/ghost/"
     },
     {
       "language": "ru",
       "type": "database",
-      "title": "Hardhead · Развитие и получение питомцев | TilesSurvive.net",
-      "description": "Роль: Атака · Вероятность получения · Зафиксированные характеристики",
+      "title": "Hardhead · Получение, характеристики и развитие питомца | TilesSurvive.net",
+      "description": "Hardhead — Роль: Атака · Вероятность получения · Зафиксированные характеристики",
       "url": "/ru/database/pet-system/hardhead/"
     },
     {
@@ -2042,28 +2042,28 @@
     {
       "language": "ru",
       "type": "heroe",
-      "title": "Jacob | Герой Tiles Survive | TilesSurvive.net",
+      "title": "Jacob — Навыки, характеристики и развитие | TilesSurvive.net",
       "description": "Подробная страница героя Jacob в Tiles Survive. Здесь по SSR-герою собраны описание героя, боевые особенности, характеристики на максимальном уровне и звёздности, бонус звёздности, навыки и эксклюзивное снаряжение.",
       "url": "/ru/heroes/jacob/"
     },
     {
       "language": "ru",
       "type": "heroe",
-      "title": "Kiki | Герой Tiles Survive | TilesSurvive.net",
+      "title": "Kiki — Навыки, характеристики и развитие | TilesSurvive.net",
       "description": "Подробная страница героя Kiki в Tiles Survive. Здесь по SSR-герою собраны описание героя, боевые особенности, характеристики на максимальном уровне и звёздности, бонус звёздности, навыки и эксклюзивное снаряжение.",
       "url": "/ru/heroes/kiki/"
     },
     {
       "language": "ru",
       "type": "heroe",
-      "title": "Kiron | Герой Tiles Survive | TilesSurvive.net",
+      "title": "Kiron — Навыки, характеристики и развитие | TilesSurvive.net",
       "description": "Подробная страница героя Kiron в Tiles Survive. Здесь по SSR-герою собраны описание героя, боевые особенности, характеристики на максимальном уровне и звёздности, бонус звёздности, навыки и эксклюзивное снаряжение.",
       "url": "/ru/heroes/kiron/"
     },
     {
       "language": "ru",
       "type": "heroe",
-      "title": "Knotty | TilesSurvive.net",
+      "title": "Knotty — Навыки, характеристики и развитие | TilesSurvive.net",
       "description": "Морские герои · SSR · Marksmen · Навыки и эффекты",
       "url": "/ru/heroes/knotty/"
     },
@@ -2077,49 +2077,49 @@
     {
       "language": "ru",
       "type": "heroe",
-      "title": "Lagnar | SSR герой моря ближнего боя | TilesSurvive.net",
+      "title": "Lagnar — Навыки, характеристики и развитие | TilesSurvive.net",
       "description": "Страница героя Lagnar в Tiles Survive: фракция Sea, ближний бой, характеристики максимального уровня, звёздный бонус, навыки и эксклюзивное снаряжение.",
       "url": "/ru/heroes/lagnar/"
     },
     {
       "language": "ru",
       "type": "heroe",
-      "title": "Laila | Герой Tiles Survive | TilesSurvive.net",
+      "title": "Laila — Навыки, характеристики и развитие | TilesSurvive.net",
       "description": "Подробная страница героя Laila в Tiles Survive. Здесь по SSR-герою собраны описание героя, боевые особенности, характеристики на максимальном уровне и звёздности, бонус звёздности, навыки и эксклюзивное снаряжение.",
       "url": "/ru/heroes/laila/"
     },
     {
       "language": "ru",
       "type": "heroe",
-      "title": "Light | Герой Tiles Survive | TilesSurvive.net",
+      "title": "Light — Навыки, характеристики и развитие | TilesSurvive.net",
       "description": "Подробная страница героя Light в Tiles Survive. Здесь по SSR-герою собраны описание, боевые особенности, характеристики на максимальном уровне и звёздности, бонус звёздности, навыки и эксклюзивное снаряжение.",
       "url": "/ru/heroes/light/"
     },
     {
       "language": "ru",
       "type": "heroe",
-      "title": "Lucky | Герой Tiles Survive | TilesSurvive.net",
+      "title": "Lucky — Навыки, характеристики и развитие | TilesSurvive.net",
       "description": "Подробная страница героя Lucky в Tiles Survive. Здесь по promoted hero собраны описание, promoted-информация, боевые особенности, характеристики на максимальном уровне и звёздности, бонус звёздности и навыки.",
       "url": "/ru/heroes/lucky/"
     },
     {
       "language": "ru",
       "type": "heroe",
-      "title": "Maddy | Герой Tiles Survive | TilesSurvive.net",
+      "title": "Maddy — Навыки, характеристики и развитие | TilesSurvive.net",
       "description": "Подробная страница героя Maddy в Tiles Survive. Здесь по SSR-герою собраны описание, боевые особенности, характеристики на максимальном уровне и звёздности, бонус звёздности, навыки и эксклюзивное снаряжение.",
       "url": "/ru/heroes/maddy/"
     },
     {
       "language": "ru",
       "type": "heroe",
-      "title": "Mike | Герой Tiles Survive | TilesSurvive.net",
+      "title": "Mike — Навыки, характеристики и развитие | TilesSurvive.net",
       "description": "Подробная страница героя Mike в Tiles Survive. Здесь по SSR-герою собраны описание, боевые особенности, характеристики на максимальном уровне и звёздности, бонус звёздности, навыки и эксклюзивное снаряжение.",
       "url": "/ru/heroes/mike/"
     },
     {
       "language": "ru",
       "type": "heroe",
-      "title": "Nikola | Герой Tiles Survive | TilesSurvive.net",
+      "title": "Nikola — Навыки, характеристики и развитие | TilesSurvive.net",
       "description": "Подробная страница героя Nikola в Tiles Survive. Здесь по SSR-герою собраны описание, боевые особенности, характеристики на максимальном уровне и звёздности, бонус звёздности, навыки и эксклюзивное снаряжение.",
       "url": "/ru/heroes/nikola/"
     },
@@ -2133,91 +2133,98 @@
     {
       "language": "ru",
       "type": "heroe",
-      "title": "Ray | Герой Tiles Survive | TilesSurvive.net",
+      "title": "Ray — Навыки, характеристики и развитие | TilesSurvive.net",
       "description": "Подробная страница героя Ray в Tiles Survive. Здесь по SSR-герою собраны описание, боевые особенности, характеристики на максимальном уровне и звёздности, бонус звёздности, навыки и эксклюзивное снаряжение.",
       "url": "/ru/heroes/ray/"
     },
     {
       "language": "ru",
       "type": "heroe",
-      "title": "Rosie | Герой Tiles Survive | TilesSurvive.net",
+      "title": "Rosie — Навыки, характеристики и развитие | TilesSurvive.net",
       "description": "Подробная страница героя Rosie в Tiles Survive. Здесь по SSR-герою собраны описание, боевые особенности, характеристики на максимальном уровне и звёздности, бонус звёздности, навыки и эксклюзивное снаряжение.",
       "url": "/ru/heroes/rosie/"
     },
     {
       "language": "ru",
       "type": "heroe",
-      "title": "Rusty | Герой Tiles Survive | TilesSurvive.net",
+      "title": "Rusty — Навыки, характеристики и развитие | TilesSurvive.net",
       "description": "Подробная страница героя Rusty в Tiles Survive. Здесь в одном месте собраны описание героя, фракция, боевая роль, характеристики на максимальном уровне и звёздности, навыки и бонус звёздности.",
       "url": "/ru/heroes/rusty/"
     },
     {
       "language": "ru",
       "type": "heroe",
-      "title": "Sarge | Герой Tiles Survive | TilesSurvive.net",
+      "title": "Sarge — Навыки, характеристики и развитие | TilesSurvive.net",
       "description": "Подробная страница героя Sarge в Tiles Survive. Здесь по promoted hero собраны описание, боевая роль, характеристики на максимальном уровне и звёздности, бонус звёздности и навыки.",
       "url": "/ru/heroes/sarge/"
     },
     {
       "language": "ru",
       "type": "database",
-      "title": "Shadow · Развитие и получение питомцев | TilesSurvive.net",
-      "description": "Роль: Атака · Вероятность получения · Зафиксированные характеристики",
+      "title": "Shadow · Получение, характеристики и развитие питомца | TilesSurvive.net",
+      "description": "Shadow — Роль: Атака · Вероятность получения · Зафиксированные характеристики",
       "url": "/ru/database/pet-system/shadow/"
     },
     {
       "language": "ru",
       "type": "heroe",
-      "title": "Shark | Sea SSR Melee Hero | TilesSurvive.net",
+      "title": "Shark — Навыки, характеристики и развитие | TilesSurvive.net",
       "description": "Shark — SSR герой фракции Sea ближнего боя в Tiles Survive. На странице собраны Wave Crash, Shark Wave, Frontline Support, Deep Sea Invincible и эксклюзивное снаряжение Deep Sea Anchor.",
       "url": "/ru/heroes/shark/"
     },
     {
       "language": "ru",
       "type": "database",
-      "title": "Snowball · Развитие и получение питомцев | TilesSurvive.net",
-      "description": "Роль: Поддержка · Вероятность получения · Зафиксированные характеристики",
+      "title": "Snowball · Получение, характеристики и развитие питомца | TilesSurvive.net",
+      "description": "Snowball — Роль: Поддержка · Вероятность получения · Зафиксированные характеристики",
       "url": "/ru/database/pet-system/snowball/"
     },
     {
       "language": "ru",
       "type": "database",
-      "title": "Starhorn | TilesSurvive.net",
-      "description": "Ур.1 · Тренировка 0 · До превращения · Развитие",
+      "title": "Starhorn · Получение, характеристики и развитие питомца | TilesSurvive.net",
+      "description": "Starhorn — Ур.1 · Тренировка 0 · До превращения · Развитие",
       "url": "/ru/database/pet-system/starhorn/"
     },
     {
       "language": "ru",
       "type": "heroe",
-      "title": "Tara | Герой Tiles Survive | TilesSurvive.net",
+      "title": "Tara — Навыки, характеристики и развитие | TilesSurvive.net",
       "description": "Подробная страница героя Tara в Tiles Survive. Здесь по SSR-герою собраны описание, боевые особенности, характеристики на максимальном уровне и звёздности, бонус звёздности, навыки и эксклюзивное снаряжение.",
       "url": "/ru/heroes/tara/"
     },
     {
       "language": "ru",
       "type": "heroe",
-      "title": "Tarzan | Герой Tiles Survive | TilesSurvive.net",
+      "title": "Tarzan — Навыки, характеристики и развитие | TilesSurvive.net",
       "description": "Подробная страница героя Tarzan в Tiles Survive. Здесь по SSR-герою собраны описание, боевые особенности, характеристики на максимальном уровне и звёздности, бонус звёздности, навыки и эксклюзивное снаряжение.",
       "url": "/ru/heroes/tarzan/"
     },
     {
       "language": "ru",
+      "type": "home",
+      "title": "Tiles Survive: база данных и гайды | Герои, питомцы, расчёты",
+      "description": "От навыков героев до ресурсов для следующего уровня. Найдите нужные данные и рассчитайте стоимость развития команды.",
+      "url": "/ru/"
+    },
+    {
+      "language": "ru",
       "type": "heroe",
-      "title": "Tony | Герой Tiles Survive | TilesSurvive.net",
+      "title": "Tony — Навыки, характеристики и развитие | TilesSurvive.net",
       "description": "Подробная страница героя Tony в Tiles Survive. Здесь по SSR-герою собраны описание, боевые особенности, характеристики на максимальном уровне и звёздности, бонус звёздности, навыки и эксклюзивное снаряжение.",
       "url": "/ru/heroes/tony/"
     },
     {
       "language": "ru",
       "type": "heroe",
-      "title": "Travis | Герой Tiles Survive | TilesSurvive.net",
+      "title": "Travis — Навыки, характеристики и развитие | TilesSurvive.net",
       "description": "Подробная страница героя Travis в Tiles Survive. Здесь в одном месте собраны описание героя, фракция, боевая роль, характеристики на максимальном уровне и звёздности, бонус звёздности и навыки.",
       "url": "/ru/heroes/travis/"
     },
     {
       "language": "ru",
       "type": "heroe",
-      "title": "Undine | TilesSurvive.net",
+      "title": "Undine — Навыки, характеристики и развитие | TilesSurvive.net",
       "description": "Морские герои · SSR · Gunners · Навыки и эффекты",
       "url": "/ru/heroes/undine/"
     },
@@ -2265,13 +2272,6 @@
     },
     {
       "language": "ru",
-      "type": "season",
-      "title": "Гайд по Season 3 Undecided | Гайд по сезонам Tiles Survive | TilesSurvive.net",
-      "description": "Гайд по Tiles Survive Season 3 Undecided. Здесь в одном месте собраны цели сезона, пасс, недельный пропуск, события, повышение героев и серверная война.",
-      "url": "/ru/seasons/season-3/"
-    },
-    {
-      "language": "ru",
       "type": "guide",
       "title": "Гайд по победе в Рейде на водохранилище | Гайд Tiles Survive | TilesSurvive.net",
       "description": "Полный гайд по Рейду на водохранилище в Tiles Survive: условия участия, условия победы, ключевые здания, роли команды, стратегия по фазам и дополнительные советы.",
@@ -2281,14 +2281,14 @@
       "language": "ru",
       "type": "guide",
       "title": "Гайд по промо скидочного пополнения Tiles Survive | Дополнительные бонусы по специальной ссылке, ежемесячные накопительные купоны и код для новых аккаунтов | TilesSurvive.net",
-      "description": "Проверьте условия товара, региона и валюты на LootBar.",
+      "description": "Узнайте, как использовать специальную ссылку Tiles Survive, участвовать в акции и получать награды. Условия для товара, региона и оплаты проверяйте на LootBar.",
       "url": "/ru/guides/discount-topup-promotion/"
     },
     {
       "language": "ru",
       "type": "guide",
       "title": "Гайд по скидочному пополнению Tiles Survive | Самостоятельное пополнение, условия использования, двухэтапная аутентификация и купоны | TilesSurvive.net",
-      "description": "Проверьте условия товара, региона и валюты на LootBar.",
+      "description": "Пошаговая инструкция самостоятельного пополнения Tiles Survive: привязка аккаунта, двухфакторная аутентификация и подготовка перед использованием LootBar.",
       "url": "/ru/guides/discount-topup/"
     },
     {
@@ -2304,13 +2304,6 @@
       "title": "Гарнизон | Здания Tiles Survive | TilesSurvive.net",
       "description": "Подробная страница здания Гарнизон в Tiles Survive с максимальным количеством солдат и информацией по управлению войсками.",
       "url": "/ru/buildings/garrison-station/"
-    },
-    {
-      "language": "ru",
-      "type": "home",
-      "title": "Дата-хаб Tiles Survive | База данных, гайды, сезоны, коды | TilesSurvive.net",
-      "description": "Долгосрочный дата-хаб по Tiles Survive, где в одном месте собраны база данных, гайды, сезоны и gift codes.",
-      "url": "/ru/"
     },
     {
       "language": "ru",
@@ -2426,6 +2419,13 @@
     },
     {
       "language": "ru",
+      "type": "season",
+      "title": "Планирование сезона III | TilesSurvive.net",
+      "description": "Цели сезона, ресурсы развития, пропуски и подготовка к войне серверов. План действий следует отличать от фактического расписания открытия контента на вашем сервере.",
+      "url": "/ru/seasons/season-3/"
+    },
+    {
+      "language": "ru",
       "type": "code",
       "title": "Подарочные коды Tiles Survive | Активные коды, постоянные коды, обратный отсчёт до истечения | TilesSurvive.net",
       "description": "Проверьте активные подарочные коды Tiles Survive, постоянные коды и обратный отсчёт до следующего истечения на одной странице. Время истечения для Азии, Европы и Америки, кнопки копирования и FAQ собраны в одном месте.",
@@ -2456,7 +2456,7 @@
       "language": "ru",
       "type": "top-up",
       "title": "Пополнение | TilesSurvive.net",
-      "description": "Проверьте условия товара, региона и валюты на LootBar.",
+      "description": "Изучите способы пополнения Tiles Survive, требования к аккаунту и условия использования, затем перейдите по специальной ссылке LootBar.",
       "url": "/ru/top-up/"
     },
     {
@@ -2609,7 +2609,7 @@
     {
       "language": "zh-tw",
       "type": "heroe",
-      "title": "凱隆 | Tiles Survive 英雄 | TilesSurvive.net",
+      "title": "凱隆 · 技能、屬性與養成 | TilesSurvive.net",
       "description": "Tiles Survive 英雄凱隆詳細頁面。以 SSR 英雄為基準，整理英雄介紹、戰鬥特性、最大等級與星級屬性、星級加成、技能與專屬裝備，方便一次查看。",
       "url": "/zh-tw/heroes/kiron/"
     },
@@ -2637,14 +2637,14 @@
     {
       "language": "zh-tw",
       "type": "heroe",
-      "title": "肯 | Tiles Survive 英雄 | TilesSurvive.net",
+      "title": "肯 · 技能、屬性與養成 | TilesSurvive.net",
       "description": "Tiles Survive 英雄肯詳細頁面。可一次查看英雄介紹、戰鬥特性、最大等級與星級屬性、星級加成與技能。",
       "url": "/zh-tw/heroes/chef-ken/"
     },
     {
       "language": "zh-tw",
       "type": "heroe",
-      "title": "奇奇 | Tiles Survive 英雄 | TilesSurvive.net",
+      "title": "奇奇 · 技能、屬性與養成 | TilesSurvive.net",
       "description": "Tiles Survive 英雄奇奇詳細頁面。以 SSR 英雄為基準，整理英雄介紹、戰鬥特性、最大等級與星級屬性、星級追加效果、技能與專屬裝備，方便一次查看。",
       "url": "/zh-tw/heroes/kiki/"
     },
@@ -2658,49 +2658,49 @@
     {
       "language": "zh-tw",
       "type": "heroe",
-      "title": "尼古拉 | Tiles Survive 英雄 | TilesSurvive.net",
+      "title": "尼古拉 · 技能、屬性與養成 | TilesSurvive.net",
       "description": "Tiles Survive 英雄尼古拉詳細頁面。以 SSR 英雄為基準，整理英雄介紹、戰鬥特性、最大等級與星級屬性、星級加成、技能與專屬裝備，方便一頁查看。",
       "url": "/zh-tw/heroes/nikola/"
     },
     {
       "language": "zh-tw",
       "type": "heroe",
-      "title": "東尼 | Tiles Survive 英雄 | TilesSurvive.net",
+      "title": "東尼 · 技能、屬性與養成 | TilesSurvive.net",
       "description": "Tiles Survive 英雄東尼詳細頁面。以 SSR 英雄為基準，整理英雄介紹、戰鬥特性、最大等級與星級屬性、星級追加效果、技能與專屬裝備，方便一次查看。",
       "url": "/zh-tw/heroes/tony/"
     },
     {
       "language": "zh-tw",
       "type": "heroe",
-      "title": "蘿絲 | 寒霜啟示錄英雄 | TilesSurvive.net",
+      "title": "蘿絲 · 技能、屬性與養成 | TilesSurvive.net",
       "description": "寒霜啟示錄英雄蘿絲的詳細頁面。以SSR英雄為基準，可一眼查看英雄介紹、戰鬥特性、最大等級與星級屬性、星級加成、技能與專屬裝備。",
       "url": "/zh-tw/heroes/rosie/"
     },
     {
       "language": "zh-tw",
       "type": "heroe",
-      "title": "拉格納 | SSR 海洋近戰英雄 | TilesSurvive.net",
+      "title": "拉格納 · 技能、屬性與養成 | TilesSurvive.net",
       "description": "Tiles Survive SSR 英雄拉格納詳細頁，整理海洋陣營、近戰定位、最高等級屬性、星級加成、技能與專屬裝備資訊。",
       "url": "/zh-tw/heroes/lagnar/"
     },
     {
       "language": "zh-tw",
       "type": "heroe",
-      "title": "拉斯提 | Tiles Survive 英雄 | TilesSurvive.net",
+      "title": "拉斯提 · 技能、屬性與養成 | TilesSurvive.net",
       "description": "Tiles Survive 英雄拉斯提詳細頁面。可一次查看英雄介紹、陣營、戰鬥特性、Lv MAX 屬性、技能與星級加成。",
       "url": "/zh-tw/heroes/rusty/"
     },
     {
       "language": "zh-tw",
       "type": "heroe",
-      "title": "萊拉 | 寒霜啟示錄英雄 | TilesSurvive.net",
+      "title": "萊拉 · 技能、屬性與養成 | TilesSurvive.net",
       "description": "寒霜啟示錄英雄萊拉的詳細頁面。以SSR英雄為基準，可一眼查看英雄介紹、戰鬥特性、最大等級與星級屬性、星級加成、技能與專屬裝備。",
       "url": "/zh-tw/heroes/laila/"
     },
     {
       "language": "zh-tw",
       "type": "heroe",
-      "title": "萊特 | Tiles Survive 英雄 | TilesSurvive.net",
+      "title": "萊特 · 技能、屬性與養成 | TilesSurvive.net",
       "description": "Tiles Survive 英雄萊特詳細頁面。以 SSR 英雄為基準，整理英雄介紹、戰鬥特性、最大等級與星級屬性、星級追加效果、技能與專屬裝備，方便一頁查看。",
       "url": "/zh-tw/heroes/light/"
     },
@@ -2735,21 +2735,21 @@
     {
       "language": "zh-tw",
       "type": "heroe",
-      "title": "雷 | Tiles Survive 英雄 | TilesSurvive.net",
+      "title": "雷 · 技能、屬性與養成 | TilesSurvive.net",
       "description": "Tiles Survive 英雄雷詳細頁面。以 SSR 英雄為基準，整理英雄介紹、戰鬥特性、Lv MAX 屬性、星級加成、技能與專屬裝備，方便一次查看。",
       "url": "/zh-tw/heroes/ray/"
     },
     {
       "language": "zh-tw",
       "type": "heroe",
-      "title": "麥克 | Tiles Survive 英雄 | TilesSurvive.net",
+      "title": "麥克 · 技能、屬性與養成 | TilesSurvive.net",
       "description": "Tiles Survive 英雄麥克詳細頁面。以 SSR 英雄為基準，整理英雄介紹、戰鬥特性、最大等級與星級屬性、星級追加效果、技能與專屬裝備，方便一頁查看。",
       "url": "/zh-tw/heroes/mike/"
     },
     {
       "language": "zh-tw",
       "type": "heroe",
-      "title": "麥蒂 | 寒霜啟示錄 英雄 | TilesSurvive.net",
+      "title": "麥蒂 · 技能、屬性與養成 | TilesSurvive.net",
       "description": "寒霜啟示錄英雄麥蒂詳細頁面。以SSR英雄為基準，可一眼查看英雄介紹、戰鬥特性、Lv MAX屬性、星級加成、技能與專屬裝備。",
       "url": "/zh-tw/heroes/maddy/"
     },
@@ -2763,14 +2763,14 @@
     {
       "language": "zh-tw",
       "type": "heroe",
-      "title": "芙蕾雅 | Tiles Survive 英雄 | TilesSurvive.net",
+      "title": "芙蕾雅 · 技能、屬性與養成 | TilesSurvive.net",
       "description": "Tiles Survive 英雄芙蕾雅詳細頁面。可一次查看英雄介紹、戰鬥特性、最大等級與星級屬性、星級加成與技能。",
       "url": "/zh-tw/heroes/freya/"
     },
     {
       "language": "zh-tw",
       "type": "heroe",
-      "title": "鯊克 | 海洋 SSR 近戰英雄 | TilesSurvive.net",
+      "title": "鯊克 · 技能、屬性與養成 | TilesSurvive.net",
       "description": "鯊克是 Tiles Survive 的海洋陣營 SSR 近戰英雄。本頁整理 Wave Crash、Shark Wave、Frontline Support、Deep Sea Invincible 與專屬裝備深海之錨。",
       "url": "/zh-tw/heroes/shark/"
     },
@@ -2784,7 +2784,7 @@
     {
       "language": "zh-tw",
       "type": "heroe",
-      "title": "薩格 | Tiles Survive 英雄 | TilesSurvive.net",
+      "title": "薩格 · 技能、屬性與養成 | TilesSurvive.net",
       "description": "Tiles Survive 英雄薩格詳細頁面。以進階英雄為基準，整理英雄介紹、戰鬥特性、Lv MAX 屬性、星級加成與技能資訊，方便一頁查看。",
       "url": "/zh-tw/heroes/sarge/"
     },
@@ -2840,7 +2840,7 @@
     {
       "language": "zh-tw",
       "type": "heroe",
-      "title": "雅各 | 寒霜啟示錄英雄 | TilesSurvive.net",
+      "title": "雅各 · 技能、屬性與養成 | TilesSurvive.net",
       "description": "寒霜啟示錄英雄雅各的詳細頁面。以SSR英雄為基準，可一眼查看英雄介紹、戰鬥特性、最大等級與星級屬性、星級加成、技能與專屬裝備。",
       "url": "/zh-tw/heroes/jacob/"
     },
@@ -2882,7 +2882,7 @@
     {
       "language": "zh-tw",
       "type": "heroe",
-      "title": "幽靈 | Tiles Survive 英雄 | TilesSurvive.net",
+      "title": "幽靈 · 技能、屬性與養成 | TilesSurvive.net",
       "description": "Tiles Survive 英雄幽靈詳細頁面。可一頁查看英雄介紹、英雄陣營、戰鬥特性、最大等級與星級屬性、星級加成與技能資訊。",
       "url": "/zh-tw/heroes/ghost/"
     },
@@ -2903,7 +2903,7 @@
     {
       "language": "zh-tw",
       "type": "heroe",
-      "title": "伊娃 | 寒霜啟示錄 英雄 | TilesSurvive.net",
+      "title": "伊娃 · 技能、屬性與養成 | TilesSurvive.net",
       "description": "寒霜啟示錄英雄伊娃詳細頁面。可一眼查看英雄介紹、英雄陣營、戰鬥特性、最大等級與星級屬性、星級加成與技能資訊。",
       "url": "/zh-tw/heroes/eva/"
     },
@@ -2972,13 +2972,6 @@
     },
     {
       "language": "zh-tw",
-      "type": "home",
-      "title": "點點大作戰資料中心 | 資料庫 攻略 賽季 代碼 | TilesSurvive.net",
-      "description": "點點大作戰資料庫、攻略、賽季、禮包碼集中整理的長期營運型資料中心。",
-      "url": "/zh-tw/"
-    },
-    {
-      "language": "zh-tw",
       "type": "building",
       "title": "點點木作戰 兵營 | 升級消耗與兵種解鎖 | TilesSurvive.net",
       "description": "可一眼查看點點木作戰兵營升級消耗、時間、前置建築條件與兵種解鎖資訊的詳細頁面。",
@@ -2988,7 +2981,7 @@
       "language": "zh-tw",
       "type": "guide",
       "title": "點點木作戰 折扣儲值活動指南 | 專屬連結額外福利、每月累積儲值優惠券、新註冊代碼說明 | TilesSurvive.net",
-      "description": "請在LootBar確認商品、地區及貨幣的適用條件。",
+      "description": "了解Tiles Survive專屬連結的使用方式、活動參加與發放條件。商品、地區及付款條件適用的優惠請在LootBar確認。",
       "url": "/zh-tw/guides/discount-topup-promotion/"
     },
     {
@@ -3002,7 +2995,7 @@
       "language": "zh-tw",
       "type": "top-up",
       "title": "儲值說明 | TilesSurvive.net",
-      "description": "請在LootBar確認商品、地區及貨幣的適用條件。",
+      "description": "查看Tiles Survive儲值方式、使用條件與帳號確認事項，再透過LootBar專屬連結前往儲值。",
       "url": "/zh-tw/top-up/"
     },
     {
@@ -3015,16 +3008,16 @@
     {
       "language": "zh-tw",
       "type": "season",
-      "title": "第 3 季 未定攻略 | Tile Survive 賽季指南 | TilesSurvive.net",
-      "description": "Tile Survive 第 3 季未定攻略。已整理賽季目標、賽季通行證、週卡、活動、英雄晉升與伺服器戰整體流程。",
-      "url": "/zh-tw/seasons/season-3/"
+      "title": "第 IV 賽季：Blizzard Era | TilesSurvive.net",
+      "description": "依官方公告整理的第 IV 賽季開放方式與已確認內容。",
+      "url": "/zh-tw/seasons/season-4/"
     },
     {
       "language": "zh-tw",
       "type": "season",
-      "title": "第 IV 賽季：Blizzard Era | TilesSurvive.net",
-      "description": "依官方公告整理的第 IV 賽季開放方式與已確認內容。",
-      "url": "/zh-tw/seasons/season-4/"
+      "title": "第3季運營指南 | TilesSurvive.net",
+      "description": "集中查看賽季目標、成長資源、通行證與伺服器戰準備。請將運營計畫與所在伺服器的實際開放日期分開理解。",
+      "url": "/zh-tw/seasons/season-3/"
     },
     {
       "language": "zh-tw",
@@ -3036,7 +3029,7 @@
     {
       "language": "zh-tw",
       "type": "heroe",
-      "title": "蔡宜葵 | Tiles Survive 英雄 | TilesSurvive.net",
+      "title": "蔡宜葵 · 技能、屬性與養成 | TilesSurvive.net",
       "description": "Tiles Survive 英雄蔡宜葵詳細頁面。以 SSR 英雄為基準，整理英雄介紹、戰鬥特性、最大等級與星級屬性、星級加成、技能與專屬裝備，方便一頁查看。",
       "url": "/zh-tw/heroes/candy/"
     },
@@ -3057,28 +3050,28 @@
     {
       "language": "zh-tw",
       "type": "heroe",
-      "title": "塔拉 | 寒霜啟示錄 英雄 | TilesSurvive.net",
+      "title": "塔拉 · 技能、屬性與養成 | TilesSurvive.net",
       "description": "寒霜啟示錄英雄塔拉詳細頁面。以SSR英雄為基準，可一眼查看英雄介紹、戰鬥特性、Lv MAX屬性、星級加成、技能與專屬裝備。",
       "url": "/zh-tw/heroes/tara/"
     },
     {
       "language": "zh-tw",
       "type": "heroe",
-      "title": "泰山 | Tiles Survive 英雄 | TilesSurvive.net",
+      "title": "泰山 · 技能、屬性與養成 | TilesSurvive.net",
       "description": "Tiles Survive 英雄泰山詳細頁面。以 SSR 英雄為基準，整理英雄介紹、戰鬥特性、Lv MAX 屬性、星級加成、技能與專屬裝備，方便一頁查看。",
       "url": "/zh-tw/heroes/tarzan/"
     },
     {
       "language": "zh-tw",
       "type": "heroe",
-      "title": "特拉維斯 | 寒霜啟示錄 英雄 | TilesSurvive.net",
+      "title": "特拉維斯 · 技能、屬性與養成 | TilesSurvive.net",
       "description": "寒霜啟示錄英雄特拉維斯的詳細頁面。可一眼查看英雄介紹、陣營、戰鬥定位、滿級與滿星屬性、星級加成與技能資訊。",
       "url": "/zh-tw/heroes/travis/"
     },
     {
       "language": "zh-tw",
       "type": "heroe",
-      "title": "貝卡 | Tile Survive 英雄 | TilesSurvive.net",
+      "title": "貝卡 · 技能、屬性與養成 | TilesSurvive.net",
       "description": "Tile Survive 英雄貝卡的詳細頁面。以 SSR 英雄為基準，可一眼查看英雄介紹、戰鬥特性、最大等級與星級屬性、星級加成、技能與專屬裝備。",
       "url": "/zh-tw/heroes/beka/"
     },
@@ -3106,7 +3099,7 @@
     {
       "language": "zh-tw",
       "type": "heroe",
-      "title": "幸運小姐 | Tiles Survive 英雄 | TilesSurvive.net",
+      "title": "幸運小姐 · 技能、屬性與養成 | TilesSurvive.net",
       "description": "Tiles Survive 英雄幸運小姐詳細頁面。以晉升英雄為基準，整理英雄介紹、戰鬥特性、最大等級與星級屬性、星級加成與技能，方便一次查看。",
       "url": "/zh-tw/heroes/lucky/"
     },
@@ -3134,57 +3127,57 @@
     {
       "language": "zh-tw",
       "type": "database",
-      "title": "Buckler · 寵物成長與取得 | TilesSurvive.net",
-      "description": "定位: 防禦 · 取得機率 · 觀測屬性",
+      "title": "Buckler · 寵物取得、屬性與培養 | TilesSurvive.net",
+      "description": "Buckler — 定位: 防禦 · 取得機率 · 觀測屬性",
       "url": "/zh-tw/database/pet-system/buckler/"
     },
     {
       "language": "zh-tw",
       "type": "database",
-      "title": "Dodo · 寵物成長與取得 | TilesSurvive.net",
-      "description": "定位: 攻擊 · 取得機率 · 觀測屬性",
+      "title": "Dodo · 寵物取得、屬性與培養 | TilesSurvive.net",
+      "description": "Dodo — 定位: 攻擊 · 取得機率 · 觀測屬性",
       "url": "/zh-tw/database/pet-system/dodo/"
     },
     {
       "language": "zh-tw",
       "type": "database",
-      "title": "Fluffy · 寵物成長與取得 | TilesSurvive.net",
-      "description": "定位: 支援 · 取得機率 · 觀測屬性",
+      "title": "Fluffy · 寵物取得、屬性與培養 | TilesSurvive.net",
+      "description": "Fluffy — 定位: 支援 · 取得機率 · 觀測屬性",
       "url": "/zh-tw/database/pet-system/fluffy/"
     },
     {
       "language": "zh-tw",
       "type": "database",
-      "title": "Hardhead · 寵物成長與取得 | TilesSurvive.net",
-      "description": "定位: 攻擊 · 取得機率 · 觀測屬性",
+      "title": "Hardhead · 寵物取得、屬性與培養 | TilesSurvive.net",
+      "description": "Hardhead — 定位: 攻擊 · 取得機率 · 觀測屬性",
       "url": "/zh-tw/database/pet-system/hardhead/"
     },
     {
       "language": "zh-tw",
       "type": "heroe",
-      "title": "Knotty | TilesSurvive.net",
+      "title": "Knotty · 技能、屬性與養成 | TilesSurvive.net",
       "description": "海洋英雄 · SSR · Marksmen · 技能與效果",
       "url": "/zh-tw/heroes/knotty/"
     },
     {
       "language": "zh-tw",
       "type": "database",
-      "title": "Shadow · 寵物成長與取得 | TilesSurvive.net",
-      "description": "定位: 攻擊 · 取得機率 · 觀測屬性",
+      "title": "Shadow · 寵物取得、屬性與培養 | TilesSurvive.net",
+      "description": "Shadow — 定位: 攻擊 · 取得機率 · 觀測屬性",
       "url": "/zh-tw/database/pet-system/shadow/"
     },
     {
       "language": "zh-tw",
       "type": "database",
-      "title": "Snowball · 寵物成長與取得 | TilesSurvive.net",
-      "description": "定位: 支援 · 取得機率 · 觀測屬性",
+      "title": "Snowball · 寵物取得、屬性與培養 | TilesSurvive.net",
+      "description": "Snowball — 定位: 支援 · 取得機率 · 觀測屬性",
       "url": "/zh-tw/database/pet-system/snowball/"
     },
     {
       "language": "zh-tw",
       "type": "database",
-      "title": "Starhorn | TilesSurvive.net",
-      "description": "Lv.1 · 訓練階段0 · 變身前 · 成長資料",
+      "title": "Starhorn · 寵物取得、屬性與培養 | TilesSurvive.net",
+      "description": "Starhorn — Lv.1 · 訓練階段0 · 變身前 · 成長資料",
       "url": "/zh-tw/database/pet-system/starhorn/"
     },
     {
@@ -3224,9 +3217,16 @@
     },
     {
       "language": "zh-tw",
+      "type": "home",
+      "title": "Tiles Survive 資料與攻略 | 英雄、寵物、成長計算機",
+      "description": "從英雄技能到目標等級所需資源，查找遊戲資料，計算隊伍成長成本。",
+      "url": "/zh-tw/"
+    },
+    {
+      "language": "zh-tw",
       "type": "guide",
       "title": "Tiles Survive 折扣儲值指南 | 自助儲值方式、使用條件、雙重驗證、優惠碼說明 | TilesSurvive.net",
-      "description": "請在LootBar確認商品、地區及貨幣的適用條件。",
+      "description": "查看Tiles Survive帳號連結、雙重驗證與自助儲值的詳細步驟，了解使用LootBar前的準備事項及聯絡方式。",
       "url": "/zh-tw/guides/discount-topup/"
     },
     {
@@ -3246,7 +3246,7 @@
     {
       "language": "zh-tw",
       "type": "heroe",
-      "title": "Undine | TilesSurvive.net",
+      "title": "Undine · 技能、屬性與養成 | TilesSurvive.net",
       "description": "海洋英雄 · SSR · Gunners · 技能與效果",
       "url": "/zh-tw/heroes/undine/"
     },
