@@ -38,7 +38,7 @@ const parse = html => parseHTML(html).document;
 const same = (a, b) => JSON.stringify(a) === JSON.stringify(b);
 const relative = file => path.relative(baseline, file).replaceAll('\\', '/');
 const allBaseline = walk(baseline).map(relative), oldPages = allBaseline.filter(p => /^(ko|en|ja|ru|zh-tw)\/.*\.html$/.test(p));
-const addedPages = langs.flatMap(lang => ['database/items', 'events/arms-race', 'events/daily-missions', 'heroes/dave'].map(route => `${lang}/${route}/index.html`));
+const addedPages = langs.flatMap(lang => ['database/items', 'events/arms-race', 'events/daily-missions', 'heroes/dave', 'events/calendar'].map(route => `${lang}/${route}/index.html`));
 const routeFor = file => '/' + file.replace(/index\.html$/, '');
 const dataPet = json(root, 'data/foundation-40/pet-observations.json');
 const official = json(root, 'data/foundation-40/official-sources-input.json');
@@ -384,7 +384,7 @@ approved50(()=>require('./lib/item-chest-regression-41').assertSearchExtension(s
 for (const file of ['js/foundation-40.js', 'js/foundation-40-math.js', 'js/daily-missions-40.js','js/pet-exp-profiles-40.js','js/sea-hero-growth-40.js']) {
   try { new vm.Script(read(root, file)); counts.scriptSyntax++; check(true, ''); } catch (e) { check(false, 'New JS syntax ' + file + ': ' + e.message); }
 }
-check(counts.baselinePages === 473 && counts.newPages === 20, '473 preserved language pages and twenty approved new pages');
+check(counts.baselinePages === 473 && counts.newPages === 25, '473 preserved language pages, twenty prior additions and five calendar locales (German tested separately)');
 check(counts.heroBanners === 140, '135 preserved plus five approved Dave hero banner placements');
 for(const [script,args]of [['test-hero-skill-levels-40.js',[]],['test-dave-40.js',[]],['test-pet-growth-40.js',['--source-only']],['test-official-locales-40.js',[]],['test-pet-exp-profiles-40.js',[]],['test-sea-hero-growth-40.js',[]],['test-search-additions-41.js',[]]]){
  try{execFileSync(process.execPath,[path.join(__dirname,script),...args],{cwd:root,encoding:'utf8'});check(true,'');}catch(e){check(false,'Exact reviewed model and component checks '+script+': '+String(e.stdout||e.message).slice(-1500));}

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-10T09:47:48.099Z",
-  "itemCount": 2304,
+  "generatedAt": "2026-10-10T11:08:36.989Z",
+  "itemCount": 2329,
   "items": [
     {
       "language": "de",
@@ -109,6 +109,13 @@
     },
     {
       "language": "de",
+      "type": "event",
+      "title": "Alle Muster und Punktetabellen ansehen",
+      "description": "Gemeinsame Folge aus 42 Vierstundenblöcken. Kein Startwochentag ist festgelegt.",
+      "url": "/de/events/calendar/#calendar-reference"
+    },
+    {
+      "language": "de",
       "type": "database",
       "title": "Alliance Duel Guide Table | Tiles Survive Datenbank | TilesSurvive.net",
       "description": "Dies ist der Tiles Survive Alliance Duel Guide Table. Sie können die Teilnahmeanforderungen, den Ereignisfluss, die empfohlenen Missionen nach Bühne, das Battle-Timing, das Turtle-Timing und das empfohlene King Buff-Timing auf einen Blick überprüfen.",
@@ -120,6 +127,13 @@
       "title": "Allianzduell",
       "description": "Plane anhand der Wochenthemen. Auf Servern mit Haustieren gibt es an Tag 2 Entwicklungsaufgaben; Punkte pro Aktion stehen in den Tagesregeln.",
       "url": "/de/events/#archive-alliance-duel"
+    },
+    {
+      "language": "de",
+      "type": "event",
+      "title": "Allianzkampf",
+      "description": "Themenfolge von Saison 1. Keine Anfangs- oder Endzeiten je Phase. Punkte nur für die aufgeführten Aufgaben.",
+      "url": "/de/events/calendar/#calendar-reference-2"
     },
     {
       "language": "de",
@@ -652,6 +666,13 @@
       "title": "Eventarchiv | TilesSurvive.net",
       "description": "Verfolge Aufgaben über Punkte und Belohnungen bis zur Verwendung der Gegenstände. Dies ist eine Übersicht veröffentlichter Regeln, kein Livekalender aller Server.",
       "url": "/de/events/"
+    },
+    {
+      "language": "de",
+      "type": "event",
+      "title": "Eventkalender | TilesSurvive.net",
+      "description": "Vergleiche Wochenmuster, Aufgaben, Punkte und Belohnungen für Rüstungswettlauf, Allianzkampf und Turbo-Schildkröte. Erstelle einen persönlichen Referenzplan auf UTC-Basis.",
+      "url": "/de/events/calendar/"
     },
     {
       "language": "de",
@@ -1481,6 +1502,13 @@
     },
     {
       "language": "de",
+      "type": "event",
+      "title": "Rüstungswettlauf",
+      "description": "Gemeinsame Folge aus 42 Vierstundenblöcken. Kein Startwochentag ist festgelegt.",
+      "url": "/de/events/calendar/#calendar-reference-1"
+    },
+    {
+      "language": "de",
       "type": "database",
       "title": "Rüstungswettlauf-Medaille군비 메달",
       "description": "Sammle Medaillen, um tägliche Meilenstein-Belohnungen im Event „Rüstungswettlauf“ freizuschalten.",
@@ -1975,6 +2003,13 @@
       "title": "Truppentrainingspunkte & Belohnungen | TilesSurvive.net",
       "description": "Ausbildung, Beförderungen und Beschleunigungen für die nächste Belohnung planen.",
       "url": "/de/events/arms-race/"
+    },
+    {
+      "language": "de",
+      "type": "event",
+      "title": "Turbo-Schildkröte",
+      "description": "Der erste Durchlauf umfasst acht aufeinanderfolgende Phasen. Keine Zusammenlegung mit Wiederholungen oder Kürzung auf sieben Tage. Zeiten, Punkte und Belohnungen sind nicht zugeordnet.",
+      "url": "/de/events/calendar/#calendar-reference-3"
     },
     {
       "language": "de",
@@ -2535,6 +2570,13 @@
       "title": "Align personal spending with alliance goals | TilesSurvive.net",
       "description": "Coordinate roles, points and troop recovery with your alliance",
       "url": "/en/guides/alliance-event-plan/"
+    },
+    {
+      "language": "en",
+      "type": "event",
+      "title": "Alliance Duel",
+      "description": "Season 1 theme order. Phase start/end times are not assigned. Points cover only the listed missions.",
+      "url": "/en/events/calendar/#calendar-reference-2"
     },
     {
       "language": "en",
@@ -3246,6 +3288,13 @@
       "title": "Event archive | TilesSurvive.net",
       "description": "Follow missions through points, rewards and item uses. These categories describe published rules, not a live calendar for every server.",
       "url": "/en/events/"
+    },
+    {
+      "language": "en",
+      "type": "event",
+      "title": "Event calendar | TilesSurvive.net",
+      "description": "Compare weekly Power Play, Alliance Duel and Turbo Turtle patterns, mission points and rewards, and build a personal reference schedule in UTC.",
+      "url": "/en/events/calendar/"
     },
     {
       "language": "en",
@@ -4021,6 +4070,13 @@
       "title": "Power Plant | Tiles Survive Buildings | TilesSurvive.net",
       "description": "A detailed page for Tiles Survive Power Plant upgrade costs, upgrade time, power, and skill information by level.",
       "url": "/en/buildings/power-plant/"
+    },
+    {
+      "language": "en",
+      "type": "event",
+      "title": "Power Play",
+      "description": "Shared 42-slot sequence · four-hour slots. No start weekday is assigned.",
+      "url": "/en/events/calendar/#calendar-reference-1"
     },
     {
       "language": "en",
@@ -4974,6 +5030,13 @@
     },
     {
       "language": "en",
+      "type": "event",
+      "title": "Turbo Turtle",
+      "description": "The first cycle has eight ordered phases. It is not merged with repeat cycles or compressed into seven days. No phase times, points or rewards are attached.",
+      "url": "/en/events/calendar/#calendar-reference-3"
+    },
+    {
+      "language": "en",
       "type": "database",
       "title": "Turtle Race | Tiles Survive Database | TilesSurvive.net",
       "description": "This is the recommended Turtle Race chart for Tiles Survive Alliance Duel. You can check recommended mission phases, battle timing, turtle timing, and king buff timing at a glance.",
@@ -5463,6 +5526,13 @@
       "language": "ja",
       "type": "event",
       "title": "軍備競争",
+      "description": "共通42枠・各4時間。週の開始曜日は未設定です。",
+      "url": "/ja/events/calendar/#calendar-reference-1"
+    },
+    {
+      "language": "ja",
+      "type": "event",
+      "title": "軍備競争",
       "description": "競争Lv.30～30の兵士育成と英雄強化を別々に比較。訓練計算・3段階報酬・メダル用途につながります。",
       "url": "/ja/events/#archive-arms-race"
     },
@@ -5556,6 +5626,13 @@
       "title": "同盟支援を5回行う",
       "description": "任務からポイント、報酬、アイテムの用途まで確認できます。公開ルールの分類であり、全サーバーの開催予定表ではありません。",
       "url": "/ja/events/#daily-task-timer-help"
+    },
+    {
+      "language": "ja",
+      "type": "event",
+      "title": "同盟対決",
+      "description": "シーズン1のテーマ順。各段階の開始・終了時刻は未設定。点数は表示した一部の任務のみです。",
+      "url": "/ja/events/calendar/#calendar-reference-2"
     },
     {
       "language": "ja",
@@ -6249,6 +6326,13 @@
       "title": "呪詛重傷の碑 | タイルズサバイバル 建物 | TilesSurvive.net",
       "description": "タイルズサバイバルの呪詛重傷の碑の概要、敵軍軽傷転換率、戦闘力をレベル別に整理した詳細ページです。",
       "url": "/ja/buildings/cursed-wound-stele/"
+    },
+    {
+      "language": "ja",
+      "type": "event",
+      "title": "走るカメさん",
+      "description": "初回の8段階の順序です。繰り返し回と統合したり7日間に圧縮したりしません。時刻・点数・報酬は未設定です。",
+      "url": "/ja/events/calendar/#calendar-reference-3"
     },
     {
       "language": "ja",
@@ -7022,6 +7106,13 @@
       "title": "イベント資料室 | TilesSurvive.net",
       "description": "任務からポイント、報酬、アイテムの用途まで確認できます。公開ルールの分類であり、全サーバーの開催予定表ではありません。",
       "url": "/ja/events/"
+    },
+    {
+      "language": "ja",
+      "type": "event",
+      "title": "イベントカレンダー | TilesSurvive.net",
+      "description": "軍備競争・同盟対決・走るカメさんの週間パターン、ミッションのポイントと報酬を比較し、UTC基準の参考スケジュールを設定できます。",
+      "url": "/ja/events/calendar/"
     },
     {
       "language": "ja",
@@ -8153,6 +8244,13 @@
     },
     {
       "language": "ko",
+      "type": "event",
+      "title": "거북이 경주",
+      "description": "첫 회차의 8단계 순서입니다. 반복 회차와 합치거나 7일로 압축하지 않습니다. 단계별 시간·점수·보상은 이 프로필에 연결하지 않습니다.",
+      "url": "/ko/events/calendar/#calendar-reference-3"
+    },
+    {
+      "language": "ko",
       "type": "database",
       "title": "거북이경주 | 타일서바이벌 데이터베이스 | TilesSurvive.net",
       "description": "타일서바이벌 동맹대결 거북이경주 권장표입니다. 단계별 추천 미션과 배틀, 거북이, 국왕버프 추천 구간을 한눈에 확인할 수 있습니다.",
@@ -8401,6 +8499,13 @@
       "language": "ko",
       "type": "event",
       "title": "군비 경쟁",
+      "description": "공통 42슬롯 순서 · 4시간 간격. 주간 시작 요일은 지정되지 않았습니다.",
+      "url": "/ko/events/calendar/#calendar-reference-1"
+    },
+    {
+      "language": "ko",
+      "type": "event",
+      "title": "군비 경쟁",
       "description": "경쟁 레벨 30~30의 병사 육성과 영웅 강화 규칙을 각각 비교하세요. 훈련 계산기·3단계 보상·군비 메달 사용처를 연결합니다.",
       "url": "/ko/events/#archive-arms-race"
     },
@@ -8618,6 +8723,13 @@
       "title": "동맹 기부 15회",
       "description": "미션에서 점수와 보상, 아이템 사용처까지 이어서 확인하세요. 아래 분류는 공개된 규칙의 범위이며 모든 서버의 현재 일정표가 아닙니다.",
       "url": "/ko/events/#daily-task-alliance-donation"
+    },
+    {
+      "language": "ko",
+      "type": "event",
+      "title": "동맹 대결",
+      "description": "시즌 1 테마 순서. 단계별 시작·종료 시각은 연결하지 않습니다. 점수는 표시된 일부 미션만 해당합니다.",
+      "url": "/ko/events/calendar/#calendar-reference-2"
     },
     {
       "language": "ko",
@@ -9627,6 +9739,13 @@
       "title": "이벤트 자료실 | TilesSurvive.net",
       "description": "미션에서 점수와 보상, 아이템 사용처까지 이어서 확인하세요. 아래 분류는 공개된 규칙의 범위이며 모든 서버의 현재 일정표가 아닙니다.",
       "url": "/ko/events/"
+    },
+    {
+      "language": "ko",
+      "type": "event",
+      "title": "이벤트 캘린더 | TilesSurvive.net",
+      "description": "군비 경쟁·동맹 대결·거북이 경주의 반복 패턴, 미션 점수와 보상을 비교하고 UTC 기준 개인 참고 일정을 만드세요.",
+      "url": "/ko/events/calendar/"
     },
     {
       "language": "ko",
@@ -11590,6 +11709,13 @@
     },
     {
       "language": "ru",
+      "type": "event",
+      "title": "Дуэль союза",
+      "description": "Порядок тем сезона 1. Время этапов не задано. Очки приведены только для перечисленных заданий.",
+      "url": "/ru/events/calendar/#calendar-reference-2"
+    },
+    {
+      "language": "ru",
       "type": "database",
       "title": "Дымок · Безумная охота",
       "description": "Lv.1 · Когда задействованные герои атакуют цели, чье здоровье меньше 35%, их атака увеличивается на 7.5%.",
@@ -11725,6 +11851,13 @@
     },
     {
       "language": "ru",
+      "type": "event",
+      "title": "Игра по-крупному",
+      "description": "Общая последовательность из 42 слотов по 4 часа. День начала недели не задан.",
+      "url": "/ru/events/calendar/#calendar-reference-1"
+    },
+    {
+      "language": "ru",
       "type": "heroe",
       "title": "Инстинкт хищника",
       "description": "Все характеристики героя увеличиваются на 20%.",
@@ -11792,6 +11925,13 @@
       "title": "Как ввести gift code в Tiles Survive | Гайд Tiles Survive | TilesSurvive.net",
       "description": "Гайд по вводу gift code в Tiles Survive, а также список активных кодов, бессрочных кодов и уже истёкших кодов в одном месте.",
       "url": "/ru/guides/gift-code-how-to-use/"
+    },
+    {
+      "language": "ru",
+      "type": "event",
+      "title": "Календарь событий | TilesSurvive.net",
+      "description": "Сравнивайте недельные схемы Игры по-крупному, Дуэли союза и Турбочерепашки, задания, очки и награды. Настройте личное справочное расписание по UTC.",
+      "url": "/ru/events/calendar/"
     },
     {
       "language": "ru",
@@ -13308,6 +13448,13 @@
     },
     {
       "language": "ru",
+      "type": "event",
+      "title": "Турбочерепашка",
+      "description": "Первый цикл содержит 8 последовательных этапов. Он не объединён с повторным и не сжат до 7 дней. Время, очки и награды не привязаны.",
+      "url": "/ru/events/calendar/#calendar-reference-3"
+    },
+    {
+      "language": "ru",
       "type": "heroe",
       "title": "Удар водным клинком",
       "description": "Рагнар взмахивает водяным клинком и наносит цели 125.1% урона. После каждых 2 атак следующая атака высвобождает силу Водный клинок и наносит более высокий урон по области. Также атака цели снижается на 15% на 5 секунд.",
@@ -13954,6 +14101,13 @@
       "language": "zh-tw",
       "type": "event",
       "title": "軍備競賽",
+      "description": "共通42時段，每段4小時。尚未指定每週起始星期。",
+      "url": "/zh-tw/events/calendar/#calendar-reference-1"
+    },
+    {
+      "language": "zh-tw",
+      "type": "event",
+      "title": "軍備競賽",
       "description": "分開比較競賽等級30～30的士兵培育及英雄強化；連結訓練計算器、3階獎勵與軍備勳章用途。",
       "url": "/zh-tw/events/#archive-arms-race"
     },
@@ -14276,6 +14430,13 @@
       "title": "聯絡站 | Tiles Survive 建築 | TilesSurvive.net",
       "description": "Tiles Survive 建築「聯絡站」詳細頁面。整理建築介紹、功能說明與支援系統摘要。",
       "url": "/zh-tw/buildings/comms-outpost/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "event",
+      "title": "聯盟對決",
+      "description": "賽季1主題順序，尚未連接各階段起訖時間；積分僅適用所列任務。",
+      "url": "/zh-tw/events/calendar/#calendar-reference-2"
     },
     {
       "language": "zh-tw",
@@ -14934,6 +15095,13 @@
       "title": "洗鍊錘",
       "description": "세련 망치 · 普通重鑄消耗1個錘，高級重鑄消耗25個。所有裝備累計重鑄超過200次後開放高級重鑄。 · 道具取得途徑與用途",
       "url": "/zh-tw/database/items/#reforge-hammer"
+    },
+    {
+      "language": "zh-tw",
+      "type": "event",
+      "title": "小龜快跑",
+      "description": "首輪為8個階段順序，不與重複輪次合併或壓縮為7天；尚未連接時間、積分或獎勵。",
+      "url": "/zh-tw/events/calendar/#calendar-reference-3"
     },
     {
       "language": "zh-tw",
@@ -16253,6 +16421,13 @@
       "title": "活動資料庫 | TilesSurvive.net",
       "description": "從任務連結到積分、獎勵與道具用途。以下依公開規則分類，並非所有伺服器的即時日程。",
       "url": "/zh-tw/events/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "event",
+      "title": "活動行事曆 | TilesSurvive.net",
+      "description": "比較軍備競賽、聯盟對決與小龜快跑的每週模式、任務積分及獎勵，並以UTC設定個人參考日程。",
+      "url": "/zh-tw/events/calendar/"
     },
     {
       "language": "zh-tw",

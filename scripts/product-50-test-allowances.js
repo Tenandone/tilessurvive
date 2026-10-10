@@ -32,7 +32,8 @@ function expectedSitemapURLs(){
  const before=cp.execFileSync('git',['show',baseline+':sitemap.xml'],{cwd:root,encoding:'utf8'}),urls=[...before.matchAll(/<loc>(.*?)<\/loc>/g)].map(m=>m[1]);
  const de=urls.filter(u=>u.startsWith('https://tilessurvive.net/en/')).map(u=>u.replace('/en/','/de/'));
  const guides=require('./build-editorial-50').guides.flatMap(g=>['ko','en','ja','ru','zh-tw','de'].map(l=>`https://tilessurvive.net/${l}/guides/${g.id}/`));
- return [...new Set([...urls,...de,...guides])].sort();
+ const calendars=['ko','en','ja','ru','zh-tw','de'].map(l=>`https://tilessurvive.net/${l}/events/calendar/`);
+ return [...new Set([...urls,...de,...guides,...calendars])].sort();
 }
 function reviewedTables(doc,lang,route){
  const G=require('./build-growth-50'),model=require('../data/product-50/growth-gear.json'),set=new Set();

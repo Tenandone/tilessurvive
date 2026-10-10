@@ -37,6 +37,12 @@ for(const lang of langs){
     ok(d.querySelectorAll('#topup-benefits .guide-card').length===2,'Benefits separated');
    }else{
     const owned=d.querySelector(`[data-editorial-50="${type}"]`);ok(owned,'Missing overlay');owned.remove();
+    if(type==='events'){
+     const calendar=d.querySelectorAll('[data-event-calendar-entry]');
+     ok(calendar.length===1,'Exactly one calendar entry');
+     ok(calendar[0].querySelectorAll('a').length===1&&calendar[0].querySelector('a').getAttribute('href')===`/${lang}/events/calendar/`,'Calendar entry preserves localized route');
+     calendar[0].remove();
+    }
     for(const doc of [d,old])doc.querySelectorAll('main nav.ts3-contents[data-product-30]').forEach(n=>n.remove());
     ok(d.querySelector('main').outerHTML===old.querySelector('main').outerHTML,`Inherited ${type} content preserved`);
    }
