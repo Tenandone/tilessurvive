@@ -43,10 +43,21 @@ test('actual unchanged client makes every page comparison interactive with corre
   vm.runInNewContext(fs.readFileSync(path.join(root,'js/sea-hero-growth-40.js'),'utf8'),{window,globalThis:window});assert(!form.hidden);handlers.change();const table=d.getElementById('sea-gear-live-table'),cells=table.querySelectorAll('tbody td'),value=M.compareGear(g,l,2,14);assert.deepEqual([...cells].map(n=>n.textContent),[value.from,value.to]);assert.equal(table.querySelectorAll('thead th')[1].textContent,'Lv.2');assert.equal(table.querySelectorAll('thead th')[2].textContent,'Lv.14');assert(form.querySelector('[role=status]').textContent.includes('14'));from='0';handlers.change();assert.equal(form.querySelector('[role=status]').textContent,JSON.parse(d.getElementById('sea-hero-growth-data').textContent).copy.invalid);assert.deepEqual([...cells].map(n=>n.textContent),[value.from,value.to]);let stopped=false;handlers.submit({preventDefault(){stopped=true}});assert(stopped);
  }
 });
-test('source/style and other hero content remain byte-identical apart from the reviewed Knotty portrait',()=>{
+test('source/style and other hero content retain the baseline apart from reviewed Knotty image overlays',()=>{
  for(const f of ['js/sea-hero-growth-40.js','css/sea-hero-growth-40.css','data/foundation-40/sea-hero-growth.json',...langs.flatMap(l=>['knotty','dave','lagnar'].map(id=>l+'/heroes/'+id+'/index.html'))]){
   let expected=execFileSync('git',['show',base+':'+f],{cwd:root,encoding:'utf8',maxBuffer:4e6}).replaceAll('\r\n','\n');
-  if(f.includes('/heroes/knotty/')){const d=parseHTML(expected).document,img=d.querySelector('.ts3-character-art img'),oldImage=img.outerHTML;reviewedPortrait(d,'knotty');assert.equal(expected.split(oldImage).length,2);expected=expected.replace(oldImage,img.outerHTML);}
+  if(f.includes('/heroes/knotty/')){
+   const old=parseHTML(expected).document,d=parseHTML(fs.readFileSync(path.join(root,f),'utf8')).document;reviewedPortrait(old,'knotty');
+   const icons=[...d.querySelectorAll('[data-game-41-skill-icon]')],fallbacks=[...old.querySelectorAll('[data-skill-target] .ts3-skill-number')];
+   assert.equal(icons.length,6);assert.equal(fallbacks.length,3);
+   for(let i=0;i<3;i++){
+    const id=`character-skill-0-${i}`,label=old.querySelector('#'+id+' summary').textContent.trim();
+    const iconPair=icons.filter(n=>n.getAttribute('data-game-41-skill-icon')===`skill:knotty-${i+1}`);assert.equal(iconPair.length,2);
+    for(const img of iconPair){assert.equal(img.getAttribute('src'),`/img/game-41/skills/knotty-${i+1}.webp`);assert(img.parentElement.matches(`[data-skill-target="${id}"],#${id} summary`));img.remove();}
+    const fallback=old.querySelector(`[data-skill-target="${id}"] .ts3-skill-number`);assert.equal(fallback.getAttribute('aria-hidden'),'true');assert.equal(fallback.textContent.trim(),label);fallback.remove();
+   }
+   assert.equal(d.documentElement.outerHTML,old.documentElement.outerHTML,f);continue;
+  }
   assert.equal(sha(fs.readFileSync(path.join(root,f),'utf8').replaceAll('\r\n','\n')),sha(expected),f);
  }
 });

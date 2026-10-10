@@ -1,0 +1,41 @@
+{
+  "version": 1,
+  "assets": [
+    {
+      "id": "skill:knotty-1",
+      "entity": "knotty",
+      "kind": "skill-icon",
+      "version": "2.6.200",
+      "panelId": "character-skill-0-0",
+      "src": "/img/game-41/skills/knotty-1.webp",
+      "width": 128,
+      "height": 128,
+      "bytes": 21720,
+      "sha256": "95044ad82cc4b7068897985cf2faedcceb954a78d8dee400dd35d1ca928c5fe0"
+    },
+    {
+      "id": "skill:knotty-2",
+      "entity": "knotty",
+      "kind": "skill-icon",
+      "version": "2.6.200",
+      "panelId": "character-skill-0-1",
+      "src": "/img/game-41/skills/knotty-2.webp",
+      "width": 128,
+      "height": 128,
+      "bytes": 21644,
+      "sha256": "415ebfb64e227215d83fbb0f2f3f51b5cee36db7c299c678b76501690a7318a7"
+    },
+    {
+      "id": "skill:knotty-3",
+      "entity": "knotty",
+      "kind": "skill-icon",
+      "version": "2.6.200",
+      "panelId": "character-skill-0-2",
+      "src": "/img/game-41/skills/knotty-3.webp",
+      "width": 128,
+      "height": 128,
+      "bytes": 14980,
+      "sha256": "32c82ed77817f461e27351aed50b16b786eb6624b84c8b76e1abf90582dfd146"
+    }
+  ]
+}
