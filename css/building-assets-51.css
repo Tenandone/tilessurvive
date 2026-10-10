@@ -28,8 +28,13 @@ html.ts3 main.ts3-data-page > .container > .hero [data-building-frame-51="detail
   width: 160px;
   max-width: 160px;
   height: 180px;
+  min-height: 0;
   padding: 6px;
   clip-path: none;
+}
+html.ts3 main.ts3-data-page > .container > .hero [data-building-frame-51="detail"] > img[data-building-art-51] {
+  width: 100%;
+  height: 100%;
 }
 @media (max-width: 700px) {
   html.ts3 main .ts3-catalog-entry [data-building-frame-51="catalog"] {
