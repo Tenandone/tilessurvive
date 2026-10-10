@@ -31,7 +31,7 @@
     "test:foundation": "node scripts/test-explorer-math-40.js && node scripts/test-explorer-content-40.js && node scripts/test-daily-missions-40.js && node scripts/test-hero-skill-levels-40.js && node scripts/test-dave-40.js && node scripts/test-pet-growth-40.js && node scripts/test-publication-assets-40.js && node scripts/test-foundation-40.js",
     "test:pipeline": "node --test scripts/game-data/test.cjs",
     "test:authorized-data": "node scripts/test-official-locales-40.js && node scripts/test-pet-exp-profiles-40.js && node scripts/test-sea-hero-growth-40.js",
-    "test:integration-41": "node scripts/test-pet-training-profiles-41.js && node --test scripts/test-hero-gear-levels-41.js && node --test scripts/test-hero-portraits-41.js && node --test scripts/test-item-links-41.js && node --test scripts/test-knotty-skill-icons-41.js && node --test scripts/test-pet-skills-41.js && node --test scripts/test-hero-skill-assets-41.js && node --test scripts/test-item-icon-assets-41.js && node --test scripts/test-behemoth-assets-41.js"
+    "test:integration-41": "node scripts/test-pet-training-profiles-41.js && node --test scripts/test-hero-gear-levels-41.js && node --test scripts/test-hero-portraits-41.js && node --test scripts/test-item-links-41.js && node --test scripts/test-knotty-skill-icons-41.js && node --test scripts/test-pet-skills-41.js && node --test scripts/test-hero-skill-assets-41.js && node --test scripts/test-item-icon-assets-41.js && node --test scripts/test-behemoth-assets-41.js && node --test scripts/test-arms-race-hero-rules-41.js"
   },
   "keywords": [],
   "author": "",

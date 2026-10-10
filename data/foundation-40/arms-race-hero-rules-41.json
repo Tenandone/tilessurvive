@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "gameVersion": "2.6.200",
+  "observedAt": "2026-10-10",
+  "competitionBracket": {
+    "min": 30,
+    "max": 30
+  },
+  "rules": [
+    {
+      "id": "legendary-fragment",
+      "points": 9000,
+      "action": {
+        "ko": "전설 영웅 조각 1개 소모",
+        "en": "Use a Legendary Hero Fragment",
+        "ja": "レジェンド英雄の欠片を1個消費する",
+        "ru": "Потратить 1 фрагмент легендарного героя",
+        "zh-tw": "消耗1個橘色英雄碎片"
+      }
+    },
+    {
+      "id": "epic-fragment",
+      "points": 1000,
+      "action": {
+        "ko": "에픽 영웅 조각 1개 소모",
+        "en": "Use an Epic Hero Fragment",
+        "ja": "エピック英雄の欠片を1個消費する",
+        "ru": "Потратить 1 фрагмент эпического героя",
+        "zh-tw": "消耗1個紫色英雄碎片"
+      }
+    },
+    {
+      "id": "rare-fragment",
+      "points": 150,
+      "action": {
+        "ko": "레어 영웅 조각 1개 소모",
+        "en": "Use a Rare Hero Fragment",
+        "ja": "レア英雄の欠片を1個消費する",
+        "ru": "Потратить 1 фрагмент редкого героя",
+        "zh-tw": "消耗1個藍色英雄碎片"
+      }
+    },
+    {
+      "id": "skill-manual",
+      "points": 857,
+      "action": {
+        "ko": "영웅 스킬 업그레이드 시 영웅 스킬북 1개 소모",
+        "en": "Use 1 Hero Skill Manual to upgrade a hero skill",
+        "ja": "英雄スキルの強化に英雄スキルブックを1個消費する",
+        "ru": "Потратить 1 руководство навыков для улучшения навыка героя",
+        "zh-tw": "升級英雄技能消耗1個英雄技能書"
+      }
+    },
+    {
+      "id": "package-diamonds",
+      "points": 60,
+      "action": {
+        "ko": "패키지 구매 시 다이아 1개 획득",
+        "en": "Obtain 1 Diamond from a bundle purchase",
+        "ja": "パック購入でダイヤを1個入手する",
+        "ru": "Получить 1 алмаз при покупке набора",
+        "zh-tw": "透過購買禮包獲得1個鑽石"
+      }
+    }
+  ]
+}

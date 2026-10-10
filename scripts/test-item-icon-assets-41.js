@@ -50,7 +50,7 @@ test('five full documents differ only by forty decorative images beside unchange
 });
 
 test('all other HTML, data, search, client scripts, styles and SEO files remain unchanged',()=>{
- for(const [file,bytes]of original){if(pages.includes(file))continue;const beast=require('./build-behemoth-assets-41'),art=require('../data/foundation-40/behemoth-assets-41.json');const expected=beast.langs.some(l=>beast.routes.some(r=>file===l+'/'+r))?beast.render(lf(bytes),art):lf(bytes);assert.equal(lf(read(file)),expected,file);}
+ for(const [file,bytes]of original){if(pages.includes(file))continue;const beast=require('./build-behemoth-assets-41'),art=require('../data/foundation-40/behemoth-assets-41.json');let expected=beast.langs.some(l=>beast.routes.some(r=>file===l+'/'+r))?beast.render(lf(bytes),art):lf(bytes);const heroRules=require('./build-arms-race-hero-rules-41');if(heroRules.langs.some(l=>file===`${l}/events/arms-race/index.html`))expected=heroRules.apply(expected,file.split('/')[0]);assert.equal(lf(read(file)),expected,file);}
  const oldImages=require('../data/foundation-40/image-assets.json').assets.filter(a=>a.kind==='item');assert.equal(oldImages.length,8);
  for(const a of oldImages){const before=execFileSync('git',['show',baseline+':'+a.src.slice(1)],{cwd:root});assert.deepEqual(read(a.src),before,a.src);}
 });

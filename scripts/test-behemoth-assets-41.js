@@ -35,7 +35,7 @@ test('twenty complete documents preserve every non-image byte and 55 existing im
 });
 
 test('all existing unrelated pages, game data, scripts, styles, SEO and original images remain intact',()=>{
- for(const [f,b]of original){if(pages.includes(f))continue;if(f.startsWith('img/'))assert.equal(sha(read(f)),sha(b),f);else assert.equal(lf(read(f)),lf(b),f);}
+ for(const [f,b]of original){if(pages.includes(f))continue;if(f.startsWith('img/'))assert.equal(sha(read(f)),sha(b),f);else {let expected=lf(b);const heroRules=require('./build-arms-race-hero-rules-41');if(heroRules.langs.some(l=>f===`${l}/events/arms-race/index.html`))expected=heroRules.apply(expected,f.split('/')[0]);assert.equal(lf(read(f)),expected,f);}}
  for(const a of m.assets)assert.equal(sha(read(a.previousSrc)),sha(original.get(a.previousSrc.slice(1))));
 });
 

@@ -14,6 +14,7 @@ const {validateItemIcons}=require('./lib/item-icon-assets-41');
 for(const [id,asset]of validateItemIcons(require('../data/foundation-40/item-icons-41.json'))){assert(!itemIcons.has(id),'Duplicate item icon '+id);itemIcons.set(id,asset);}
 const itemIcon=id=>{const asset=itemIcons.get(id);return asset?`<img class="ts40-item-icon" src="${asset.src}" width="${asset.width}" height="${asset.height}" alt="" aria-hidden="true" loading="lazy" decoding="async">`:'';};
 const itemUseText=require('./lib/item-use-text-40');
+const heroRules=require('./build-arms-race-hero-rules-41');
 assert(D.items.length===new Set(D.items.map(i=>i.id)).size,'Duplicate items');
 const ids=new Set(D.items.map(i=>i.id));
 const officialById=new Map(D.officialSources.map(source=>[source.id,source]));
@@ -59,7 +60,7 @@ function eventContent(lang){
  <section class="ts40-panel" aria-labelledby="plan-heading"><h2 id="plan-heading">${t.planner}</h2><form data-training-plan class="ts40-controls" hidden><label>${t.from}<select name="from">${startOptions}</select></label><label>${t.tier}<select name="tier">${options}</select></label>${field('amount',0)}${field('minutes',0)}${field('current',0)}<label>${t.target}<select name="target">${D.event.stages.map(s=>`<option value="${s.points}">${num(s.points)}</option>`).join('')}</select></label></form><div class="ts40-result" data-plan-result role="status" aria-live="polite" aria-atomic="true"></div><p>${t.alternatives}</p></section>
  <section class="ts40-panel" aria-labelledby="points-heading"><h2 id="points-heading">${t.points}</h2>${table([t.action,t.score],rows)}</section>
  <section class="ts40-panel" aria-labelledby="rewards-heading"><h2 id="rewards-heading">${t.rewards}</h2>${table([t.item,...D.event.stages.map(s=>num(s.points)),t.cumulative],rewardRows,'ts40-rewards')}</section>
- <section class="ts40-panel" aria-labelledby="rules-heading"><h2 id="rules-heading">${t.rules}</h2><p>${t.rulesText}</p><p>${t.claimRule}</p></section><nav class="ts40-links" aria-label="${t.related}"><a href="/${lang}/database/items/">${t.itemTitle} →</a><a href="/${lang}/database/skill-book/">${t['hero-skill-book']} →</a></nav>`;
+ ${heroRules.section(lang)}<section class="ts40-panel" aria-labelledby="rules-heading"><h2 id="rules-heading">${t.rules}</h2><p>${t.rulesText}</p><p>${t.claimRule}</p></section><nav class="ts40-links" aria-label="${t.related}"><a href="/${lang}/database/items/">${t.itemTitle} →</a><a href="/${lang}/database/skill-book/">${t['hero-skill-book']} →</a></nav>`;
 }
 function packageContent(lang){
  const t=C[lang],num=n=>new Intl.NumberFormat(lang).format(n);
