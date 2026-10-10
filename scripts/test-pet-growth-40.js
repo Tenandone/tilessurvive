@@ -100,7 +100,8 @@ if(!process.argv.includes('--source-only')) for(const lang of languages) test(`$
       assert.ok(text(detail.querySelector('main')).includes(delta.localized(copy[lang].trainingDetail,lang+'/database/pet-system/starhorn/index.html')));assert.ok(!text(detail.querySelector('main')).includes(copy[lang].obsolete));
       if(lang==='ko') {
         const skill=detail.querySelector('[data-pet-skills-41="starhorn"] [data-pet-skill-slot="4"]');
-        assert.equal(text(skill.querySelector('h3')),'별빛의 축복Lv.1');
+        assert.equal(text(skill.querySelector('h3')),'별빛의 축복');
+        assert.ok(text(skill).includes('최대 스킬 레벨 · Lv.1'));
         assert.equal(text(skill.querySelector('.ts3-pet-skill-description')),'펫 속성이 10% 증가합니다.');
         assert.equal(text(skill.querySelector('.ts3-pet-skill-unlock')),'훈련 5단계에서 해금');
       }

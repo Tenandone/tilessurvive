@@ -47,7 +47,10 @@ function applyPetRoster(document,lang){
   const href=`/${lang}/database/pet-system/${pet}/#pet-skills-heading-41`,label=copy[lang].title+' · Lv.1';
   const owned=[...card.children].filter(n=>n.hasAttribute('data-pet-skill-roster-41'));
   assert(owned.length<=1,'Duplicate roster skill link');
-  if(owned.length){const a=owned[0];assert.equal(a.tagName,'A');assert.equal(a.getAttribute('data-pet-skill-roster-41'),pet);assert.equal(a.getAttribute('href'),href);assert.equal(a.textContent,label);assert.equal([...card.children].filter(n=>n.tagName==='DETAILS'||n.matches('span.ts-evidence-label')).length,0,'Old roster uncertainty duplicates the skill link');continue;}
+  if(owned.length){const a=owned[0];assert.equal(a.tagName,'A');assert.equal(a.getAttribute('data-pet-skill-roster-41'),pet);assert.equal(a.getAttribute('href'),href);
+   // The late six-language skill-level owner regenerates this link after legacy builds.
+   if(a.hasAttribute('data-pet-skill-roster-levels')){a.removeAttribute('data-pet-skill-roster-levels');a.textContent=label;}
+   assert.equal(a.textContent,label);assert.equal([...card.children].filter(n=>n.tagName==='DETAILS'||n.matches('span.ts-evidence-label')).length,0,'Old roster uncertainty duplicates the skill link');continue;}
   const old=[...card.children].filter(n=>pet==='snowball'?n.tagName==='DETAILS':n.matches('span.ts-evidence-label'));
   assert.equal(old.length,1,'Expected one reviewed roster uncertainty');
   const expected=pet==='snowball'?`<details><summary>${esc(copy[lang].title)}</summary><p>${esc(snowballCopy)}</p></details>`:`<span class="ts-evidence-label">${esc(copy[lang].title+' · '+unconfirmed[lang])}</span>`;

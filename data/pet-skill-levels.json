@@ -1,0 +1,1699 @@
+{
+  "schemaVersion": 1,
+  "gameVersion": "2.6.200",
+  "build": 1512,
+  "pets": [
+    {
+      "id": "snowball",
+      "names": {
+        "ko": "스노우볼",
+        "en": "Snowball",
+        "ja": "ユキマル",
+        "ru": "Белек",
+        "zh-tw": "冰團",
+        "de": "Schneeball"
+      },
+      "skills": [
+        {
+          "id": "snowball-1",
+          "slot": 1,
+          "names": {
+            "ko": "파도 강타",
+            "en": "Striking Tide",
+            "ja": "波しぶきアタック",
+            "ru": "Сокрушительная волна",
+            "zh-tw": "浪花拍擊",
+            "de": "Schmetternde Flut"
+          },
+          "src": "/img/game-41/pet-skills/snowball-1.webp",
+          "unlockStage": 0,
+          "maxLevel": 6,
+          "highestVerifiedLevel": 6,
+          "status": "verified-max",
+          "levels": [
+            {
+              "level": 1,
+              "description": {
+                "ko": "아기 물범이 파도를 일으켜 적을 기습합니다. 전투 시작 시 랜덤으로 적군 영웅 1명에게 펫 공격력의 500%만큼 물보라 대미지를 입힙니다.",
+                "en": "The Baby Seal kicks up a wave and launches a surprise attack. At the start of battle, deals Water Damage equal to 500% of Pet Attack to 1 random enemy Hero.",
+                "ja": "ちびアザラシが波しぶきを巻き上げ、敵に奇襲を仕掛けます。戦闘開始時、ランダムな敵英雄1名にペット攻撃力の500%に相当する水しぶきダメージを与えます",
+                "ru": "Малыш тюлень поднимает волну и внезапно атакует. В начале боя наносит 1 случайному вражескому герою водный урон, равный 500% от атаки питомца.",
+                "zh-tw": "小海豹拍起浪花，向敵人發起突襲。戰鬥開始時，對隨機1名敵方英雄造成寵物攻擊力500%的水花傷害。",
+                "de": "Das Robbenbaby schlägt eine Welle auf und startet einen Überraschungsangriff. Fügt zu Beginn des Kampfes 1 zufälligen feindlichen Helden Wasserschaden in Höhe von 500% des Haustierangriffs zu."
+              },
+              "trainingStage": 0,
+              "arguments": [
+                "500%"
+              ]
+            },
+            {
+              "level": 2,
+              "description": {
+                "ko": "아기 물범이 파도를 일으켜 적을 기습합니다. 전투 시작 시 랜덤으로 적군 영웅 1명에게 펫 공격력의 500%만큼 물보라 대미지를 입힙니다.",
+                "en": "The Baby Seal kicks up a wave and launches a surprise attack. At the start of battle, deals Water Damage equal to 500% of Pet Attack to 1 random enemy Hero.",
+                "ja": "ちびアザラシが波しぶきを巻き上げ、敵に奇襲を仕掛けます。戦闘開始時、ランダムな敵英雄1名にペット攻撃力の500%に相当する水しぶきダメージを与えます",
+                "ru": "Малыш тюлень поднимает волну и внезапно атакует. В начале боя наносит 1 случайному вражескому герою водный урон, равный 500% от атаки питомца.",
+                "zh-tw": "小海豹拍起浪花，向敵人發起突襲。戰鬥開始時，對隨機1名敵方英雄造成寵物攻擊力500%的水花傷害。",
+                "de": "Das Robbenbaby schlägt eine Welle auf und startet einen Überraschungsangriff. Fügt zu Beginn des Kampfes 1 zufälligen feindlichen Helden Wasserschaden in Höhe von 500% des Haustierangriffs zu."
+              },
+              "trainingStage": 1,
+              "arguments": [
+                "500%"
+              ]
+            },
+            {
+              "level": 3,
+              "description": {
+                "ko": "아기 물범이 파도를 일으켜 적을 기습합니다. 전투 시작 시 랜덤으로 적군 영웅 1명에게 펫 공격력의 500%만큼 물보라 대미지를 입힙니다.",
+                "en": "The Baby Seal kicks up a wave and launches a surprise attack. At the start of battle, deals Water Damage equal to 500% of Pet Attack to 1 random enemy Hero.",
+                "ja": "ちびアザラシが波しぶきを巻き上げ、敵に奇襲を仕掛けます。戦闘開始時、ランダムな敵英雄1名にペット攻撃力の500%に相当する水しぶきダメージを与えます",
+                "ru": "Малыш тюлень поднимает волну и внезапно атакует. В начале боя наносит 1 случайному вражескому герою водный урон, равный 500% от атаки питомца.",
+                "zh-tw": "小海豹拍起浪花，向敵人發起突襲。戰鬥開始時，對隨機1名敵方英雄造成寵物攻擊力500%的水花傷害。",
+                "de": "Das Robbenbaby schlägt eine Welle auf und startet einen Überraschungsangriff. Fügt zu Beginn des Kampfes 1 zufälligen feindlichen Helden Wasserschaden in Höhe von 500% des Haustierangriffs zu."
+              },
+              "trainingStage": 2,
+              "arguments": [
+                "500%"
+              ]
+            },
+            {
+              "level": 4,
+              "description": {
+                "ko": "아기 물범이 파도를 일으켜 적을 기습합니다. 전투 시작 시 랜덤으로 적군 영웅 1명에게 펫 공격력의 500%만큼 물보라 대미지를 입힙니다.",
+                "en": "The Baby Seal kicks up a wave and launches a surprise attack. At the start of battle, deals Water Damage equal to 500% of Pet Attack to 1 random enemy Hero.",
+                "ja": "ちびアザラシが波しぶきを巻き上げ、敵に奇襲を仕掛けます。戦闘開始時、ランダムな敵英雄1名にペット攻撃力の500%に相当する水しぶきダメージを与えます",
+                "ru": "Малыш тюлень поднимает волну и внезапно атакует. В начале боя наносит 1 случайному вражескому герою водный урон, равный 500% от атаки питомца.",
+                "zh-tw": "小海豹拍起浪花，向敵人發起突襲。戰鬥開始時，對隨機1名敵方英雄造成寵物攻擊力500%的水花傷害。",
+                "de": "Das Robbenbaby schlägt eine Welle auf und startet einen Überraschungsangriff. Fügt zu Beginn des Kampfes 1 zufälligen feindlichen Helden Wasserschaden in Höhe von 500% des Haustierangriffs zu."
+              },
+              "trainingStage": 3,
+              "arguments": [
+                "500%"
+              ]
+            },
+            {
+              "level": 5,
+              "description": {
+                "ko": "아기 물범이 파도를 일으켜 적을 기습합니다. 전투 시작 시 랜덤으로 적군 영웅 1명에게 펫 공격력의 500%만큼 물보라 대미지를 입힙니다.",
+                "en": "The Baby Seal kicks up a wave and launches a surprise attack. At the start of battle, deals Water Damage equal to 500% of Pet Attack to 1 random enemy Hero.",
+                "ja": "ちびアザラシが波しぶきを巻き上げ、敵に奇襲を仕掛けます。戦闘開始時、ランダムな敵英雄1名にペット攻撃力の500%に相当する水しぶきダメージを与えます",
+                "ru": "Малыш тюлень поднимает волну и внезапно атакует. В начале боя наносит 1 случайному вражескому герою водный урон, равный 500% от атаки питомца.",
+                "zh-tw": "小海豹拍起浪花，向敵人發起突襲。戰鬥開始時，對隨機1名敵方英雄造成寵物攻擊力500%的水花傷害。",
+                "de": "Das Robbenbaby schlägt eine Welle auf und startet einen Überraschungsangriff. Fügt zu Beginn des Kampfes 1 zufälligen feindlichen Helden Wasserschaden in Höhe von 500% des Haustierangriffs zu."
+              },
+              "trainingStage": 4,
+              "arguments": [
+                "500%"
+              ]
+            },
+            {
+              "level": 6,
+              "description": {
+                "ko": "아기 물범이 파도를 일으켜 적을 기습합니다. 전투 시작 시 랜덤으로 적군 영웅 1명에게 펫 공격력의 500%만큼 물보라 대미지를 입힙니다.",
+                "en": "The Baby Seal kicks up a wave and launches a surprise attack. At the start of battle, deals Water Damage equal to 500% of Pet Attack to 1 random enemy Hero.",
+                "ja": "ちびアザラシが波しぶきを巻き上げ、敵に奇襲を仕掛けます。戦闘開始時、ランダムな敵英雄1名にペット攻撃力の500%に相当する水しぶきダメージを与えます",
+                "ru": "Малыш тюлень поднимает волну и внезапно атакует. В начале боя наносит 1 случайному вражескому герою водный урон, равный 500% от атаки питомца.",
+                "zh-tw": "小海豹拍起浪花，向敵人發起突襲。戰鬥開始時，對隨機1名敵方英雄造成寵物攻擊力500%的水花傷害。",
+                "de": "Das Robbenbaby schlägt eine Welle auf und startet einen Überraschungsangriff. Fügt zu Beginn des Kampfes 1 zufälligen feindlichen Helden Wasserschaden in Höhe von 500% des Haustierangriffs zu."
+              },
+              "trainingStage": 5,
+              "arguments": [
+                "500%"
+              ]
+            }
+          ],
+          "additionalLimit": {
+            "ko": "레벨이 달라도 이 스킬의 설명 수치는 동일합니다.",
+            "en": "The values in this skill description are the same at every skill level.",
+            "ja": "このスキルの説明中の数値は、スキルレベルによらず同じです。",
+            "ru": "Числа в описании этого навыка одинаковы на всех его уровнях.",
+            "zh-tw": "此技能說明中的數值在各技能等級皆相同。",
+            "de": "Die Werte in dieser Fertigkeitsbeschreibung sind auf allen Fertigkeitsstufen gleich."
+          }
+        },
+        {
+          "id": "snowball-2",
+          "slot": 2,
+          "names": {
+            "ko": "파도 랠리",
+            "en": "Tidal Rally",
+            "ja": "潮風エール",
+            "ru": "Приливной рейд",
+            "zh-tw": "潮汐鼓舞",
+            "de": "Flutraid"
+          },
+          "src": "/img/game-41/pet-skills/snowball-2.webp",
+          "unlockStage": 2,
+          "maxLevel": 1,
+          "highestVerifiedLevel": 1,
+          "status": "verified-max",
+          "levels": [
+            {
+              "level": 1,
+              "description": {
+                "ko": "진형 영웅의 공격력이 1% 증가합니다.",
+                "en": "Increases deployed Heroes' Attack by 1%.",
+                "ja": "編成中の英雄の攻撃力が1%上昇します",
+                "ru": "Атака задействованных героев увеличивается на 1%.",
+                "zh-tw": "編隊英雄攻擊提升1%。",
+                "de": "Erhöht den Angriff von eingesetzten Helden um 1%."
+              },
+              "trainingStage": 2,
+              "arguments": [
+                "1%"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "snowball-3",
+          "slot": 3,
+          "names": {
+            "ko": "파도의 춤",
+            "en": "Flowing Dance",
+            "ja": "波乗り追撃",
+            "ru": "Танец потока",
+            "zh-tw": "逐浪追擊",
+            "de": "Tanz im Fluss"
+          },
+          "src": "/img/game-41/pet-skills/snowball-3.webp",
+          "unlockStage": 4,
+          "maxLevel": 1,
+          "highestVerifiedLevel": 1,
+          "status": "verified-max",
+          "levels": [
+            {
+              "level": 1,
+              "description": {
+                "ko": "진형 영웅이 체력이 25% 미만인 목표를 공격할 때 공격력이 5% 증가합니다.",
+                "en": "When deployed Heroes attack targets below 25% Health, their Attack increases by 5%.",
+                "ja": "編成中の英雄がHP25%未満の対象を攻撃する時、攻撃力が5%上昇します",
+                "ru": "Когда задействованные герои атакуют цели, чье здоровье меньше 25%, их атака увеличивается на 5%.",
+                "zh-tw": "編隊英雄攻擊生命低於25%的目標時，攻擊提升5%。",
+                "de": "Wenn eingesetzte Helden Ziele mit weniger als 25 % Zustand angreifen, erhöht sich ihr Angriff um 5%."
+              },
+              "trainingStage": 4,
+              "arguments": [
+                "5%"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "snowball-4",
+          "slot": 4,
+          "names": {
+            "ko": "바다의 가호",
+            "en": "Ocean's Blessing",
+            "ja": "海の加護",
+            "ru": "Благословение океана",
+            "zh-tw": "海靈滋養",
+            "de": "Segen des Ozeans"
+          },
+          "src": "/img/game-41/pet-skills/snowball-4.webp",
+          "unlockStage": 5,
+          "maxLevel": 1,
+          "highestVerifiedLevel": 1,
+          "status": "verified-max",
+          "levels": [
+            {
+              "level": 1,
+              "description": {
+                "ko": "펫 속성이 5% 증가합니다.",
+                "en": "Increases Pet Stats by 5%.",
+                "ja": "ペットのステータスが5%上昇します",
+                "ru": "Характеристики питомца увеличиваются на 5%.",
+                "zh-tw": "寵物屬性提升5%。",
+                "de": "Erhöht Haustierwerte um 5%."
+              },
+              "trainingStage": 5,
+              "arguments": [
+                "5%"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dodo",
+      "names": {
+        "ko": "도도",
+        "en": "Dodo",
+        "ja": "ドド",
+        "ru": "Додо",
+        "zh-tw": "阿兜",
+        "de": "Dodo"
+      },
+      "skills": [
+        {
+          "id": "dodo-1",
+          "slot": 1,
+          "names": {
+            "ko": "격려의 환호",
+            "en": "Cheer On",
+            "ja": "全力エール",
+            "ru": "Шумная поддержка",
+            "zh-tw": "加油歡呼",
+            "de": "Anfeuern"
+          },
+          "src": "/img/game-41/pet-skills/dodo-1.webp",
+          "unlockStage": 0,
+          "maxLevel": 6,
+          "highestVerifiedLevel": 6,
+          "status": "verified-max",
+          "levels": [
+            {
+              "level": 1,
+              "description": {
+                "ko": "라쿤이 작은 손을 흔들며 동료를 응원합니다. 전투 시작 시 랜덤으로 영웅 2명의 공격력을 10% 증가시키며, 10초간 지속됩니다.",
+                "en": "The Raccoon waves its little paws to cheer on the team. At the start of battle, increases the Attack of 2 random Heroes by 10% for 10s.",
+                "ja": "アライグマが小さな手を振り、仲間に声援を送ります。戦闘開始時、ランダムな味方英雄2名の攻撃力を10%上昇させます。効果は10秒間持続します",
+                "ru": "Енот машет лапками, подбадривая команду. В начале боя повышает атаку 2 случайных героев на 10% в течение 10 сек.",
+                "zh-tw": "浣熊揮舞小手為夥伴加油。戰鬥開始時，使隨機2名英雄攻擊提高10%，持續10秒",
+                "de": "Der Waschbär winkt mit seinen kleinen Pfötchen und feuert das Team an. Erhöht zu Beginn des Kampfes den Angriff von 2 zufälligen Helden für 10 Sek. um 10%."
+              },
+              "trainingStage": 0,
+              "arguments": [
+                "10%",
+                "10"
+              ]
+            },
+            {
+              "level": 2,
+              "description": {
+                "ko": "라쿤이 작은 손을 흔들며 동료를 응원합니다. 전투 시작 시 랜덤으로 영웅 2명의 공격력을 10% 증가시키며, 10초간 지속됩니다.",
+                "en": "The Raccoon waves its little paws to cheer on the team. At the start of battle, increases the Attack of 2 random Heroes by 10% for 10s.",
+                "ja": "アライグマが小さな手を振り、仲間に声援を送ります。戦闘開始時、ランダムな味方英雄2名の攻撃力を10%上昇させます。効果は10秒間持続します",
+                "ru": "Енот машет лапками, подбадривая команду. В начале боя повышает атаку 2 случайных героев на 10% в течение 10 сек.",
+                "zh-tw": "浣熊揮舞小手為夥伴加油。戰鬥開始時，使隨機2名英雄攻擊提高10%，持續10秒",
+                "de": "Der Waschbär winkt mit seinen kleinen Pfötchen und feuert das Team an. Erhöht zu Beginn des Kampfes den Angriff von 2 zufälligen Helden für 10 Sek. um 10%."
+              },
+              "trainingStage": 1,
+              "arguments": [
+                "10%",
+                "10"
+              ]
+            },
+            {
+              "level": 3,
+              "description": {
+                "ko": "라쿤이 작은 손을 흔들며 동료를 응원합니다. 전투 시작 시 랜덤으로 영웅 2명의 공격력을 10% 증가시키며, 10초간 지속됩니다.",
+                "en": "The Raccoon waves its little paws to cheer on the team. At the start of battle, increases the Attack of 2 random Heroes by 10% for 10s.",
+                "ja": "アライグマが小さな手を振り、仲間に声援を送ります。戦闘開始時、ランダムな味方英雄2名の攻撃力を10%上昇させます。効果は10秒間持続します",
+                "ru": "Енот машет лапками, подбадривая команду. В начале боя повышает атаку 2 случайных героев на 10% в течение 10 сек.",
+                "zh-tw": "浣熊揮舞小手為夥伴加油。戰鬥開始時，使隨機2名英雄攻擊提高10%，持續10秒",
+                "de": "Der Waschbär winkt mit seinen kleinen Pfötchen und feuert das Team an. Erhöht zu Beginn des Kampfes den Angriff von 2 zufälligen Helden für 10 Sek. um 10%."
+              },
+              "trainingStage": 2,
+              "arguments": [
+                "10%",
+                "10"
+              ]
+            },
+            {
+              "level": 4,
+              "description": {
+                "ko": "라쿤이 작은 손을 흔들며 동료를 응원합니다. 전투 시작 시 랜덤으로 영웅 2명의 공격력을 10% 증가시키며, 10초간 지속됩니다.",
+                "en": "The Raccoon waves its little paws to cheer on the team. At the start of battle, increases the Attack of 2 random Heroes by 10% for 10s.",
+                "ja": "アライグマが小さな手を振り、仲間に声援を送ります。戦闘開始時、ランダムな味方英雄2名の攻撃力を10%上昇させます。効果は10秒間持続します",
+                "ru": "Енот машет лапками, подбадривая команду. В начале боя повышает атаку 2 случайных героев на 10% в течение 10 сек.",
+                "zh-tw": "浣熊揮舞小手為夥伴加油。戰鬥開始時，使隨機2名英雄攻擊提高10%，持續10秒",
+                "de": "Der Waschbär winkt mit seinen kleinen Pfötchen und feuert das Team an. Erhöht zu Beginn des Kampfes den Angriff von 2 zufälligen Helden für 10 Sek. um 10%."
+              },
+              "trainingStage": 3,
+              "arguments": [
+                "10%",
+                "10"
+              ]
+            },
+            {
+              "level": 5,
+              "description": {
+                "ko": "라쿤이 작은 손을 흔들며 동료를 응원합니다. 전투 시작 시 랜덤으로 영웅 2명의 공격력을 10% 증가시키며, 10초간 지속됩니다.",
+                "en": "The Raccoon waves its little paws to cheer on the team. At the start of battle, increases the Attack of 2 random Heroes by 10% for 10s.",
+                "ja": "アライグマが小さな手を振り、仲間に声援を送ります。戦闘開始時、ランダムな味方英雄2名の攻撃力を10%上昇させます。効果は10秒間持続します",
+                "ru": "Енот машет лапками, подбадривая команду. В начале боя повышает атаку 2 случайных героев на 10% в течение 10 сек.",
+                "zh-tw": "浣熊揮舞小手為夥伴加油。戰鬥開始時，使隨機2名英雄攻擊提高10%，持續10秒",
+                "de": "Der Waschbär winkt mit seinen kleinen Pfötchen und feuert das Team an. Erhöht zu Beginn des Kampfes den Angriff von 2 zufälligen Helden für 10 Sek. um 10%."
+              },
+              "trainingStage": 4,
+              "arguments": [
+                "10%",
+                "10"
+              ]
+            },
+            {
+              "level": 6,
+              "description": {
+                "ko": "라쿤이 작은 손을 흔들며 동료를 응원합니다. 전투 시작 시 랜덤으로 영웅 2명의 공격력을 10% 증가시키며, 10초간 지속됩니다.",
+                "en": "The Raccoon waves its little paws to cheer on the team. At the start of battle, increases the Attack of 2 random Heroes by 10% for 10s.",
+                "ja": "アライグマが小さな手を振り、仲間に声援を送ります。戦闘開始時、ランダムな味方英雄2名の攻撃力を10%上昇させます。効果は10秒間持続します",
+                "ru": "Енот машет лапками, подбадривая команду. В начале боя повышает атаку 2 случайных героев на 10% в течение 10 сек.",
+                "zh-tw": "浣熊揮舞小手為夥伴加油。戰鬥開始時，使隨機2名英雄攻擊提高10%，持續10秒",
+                "de": "Der Waschbär winkt mit seinen kleinen Pfötchen und feuert das Team an. Erhöht zu Beginn des Kampfes den Angriff von 2 zufälligen Helden für 10 Sek. um 10%."
+              },
+              "trainingStage": 5,
+              "arguments": [
+                "10%",
+                "10"
+              ]
+            }
+          ],
+          "additionalLimit": {
+            "ko": "레벨이 달라도 이 스킬의 설명 수치는 동일합니다.",
+            "en": "The values in this skill description are the same at every skill level.",
+            "ja": "このスキルの説明中の数値は、スキルレベルによらず同じです。",
+            "ru": "Числа в описании этого навыка одинаковы на всех его уровнях.",
+            "zh-tw": "此技能說明中的數值在各技能等級皆相同。",
+            "de": "Die Werte in dieser Fertigkeitsbeschreibung sind auf allen Fertigkeitsstufen gleich."
+          }
+        },
+        {
+          "id": "dodo-2",
+          "slot": 2,
+          "names": {
+            "ko": "예리한 탐색",
+            "en": "Keen Search",
+            "ja": "ひらめきサーチ",
+            "ru": "Умелый поиск",
+            "zh-tw": "靈敏搜尋",
+            "de": "Eifrige Suche"
+          },
+          "src": "/img/game-41/pet-skills/dodo-2.webp",
+          "unlockStage": 2,
+          "maxLevel": 1,
+          "highestVerifiedLevel": 1,
+          "status": "verified-max",
+          "levels": [
+            {
+              "level": 1,
+              "description": {
+                "ko": "먹이를 줄 때 펫이 획득하는 경험치가 2% 증가합니다.",
+                "en": "Increases Pet EXP gained from feeding by 2%.",
+                "ja": "エサやりで獲得するペットEXPが2%増加します",
+                "ru": "Количество опыта питомца при кормлении увеличивается на 2%.",
+                "zh-tw": "餵食時，寵物獲得的經驗提升2%。",
+                "de": "Erhöht die durch Füttern erhaltene Haustier-EP um 2%."
+              },
+              "trainingStage": 2,
+              "arguments": [
+                "2%"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "dodo-3",
+          "slot": 3,
+          "names": {
+            "ko": "행운의 발견",
+            "en": "Lucky Find",
+            "ja": "幸運の予感",
+            "ru": "Удачная находка",
+            "zh-tw": "好運尋珍",
+            "de": "Glücksfund"
+          },
+          "src": "/img/game-41/pet-skills/dodo-3.webp",
+          "unlockStage": 4,
+          "maxLevel": 1,
+          "highestVerifiedLevel": 1,
+          "status": "verified-max",
+          "levels": [
+            {
+              "level": 1,
+              "description": {
+                "ko": "펫에그에서 전설 펫이 부화할 확률이 5% 증가합니다.",
+                "en": "Increases the chance to hatch a Legendary Pet by 5%.",
+                "ja": "ペットのタマゴからレジェンド品質のペットが孵化する確率が5%上昇します",
+                "ru": "Шанс вылупления легендарного питомца увеличивается на 5%.",
+                "zh-tw": "寵物蛋孵出傳說品質寵物機率提升5%。",
+                "de": "Erhöht die Chance, ein legendäres Haustier auszubrüten, um 5%."
+              },
+              "trainingStage": 4,
+              "arguments": [
+                "5%"
+              ]
+            }
+          ],
+          "additionalLimit": {
+            "ko": "5% 증가의 적용 방식은 확인되지 않아 최종 부화 확률을 계산하지 않습니다.",
+            "en": "The application of the 5% increase is unconfirmed; final hatch odds are not calculated.",
+            "ja": "5%増加の適用方式は未確認のため、最終的な孵化確率は算出しません。",
+            "ru": "Способ применения прибавки 5% не подтверждён; итоговый шанс вылупления не рассчитывается.",
+            "zh-tw": "尚未確認5%增幅的計算方式，因此不計算最終孵化機率。",
+            "de": "Wie die Erhöhung um 5 % angewendet wird, ist nicht bestätigt; die endgültige Schlupfwahrscheinlichkeit wird nicht berechnet."
+          }
+        },
+        {
+          "id": "dodo-4",
+          "slot": 4,
+          "names": {
+            "ko": "기민한 본능",
+            "en": "Natural Instinct",
+            "ja": "機敏な才覚",
+            "ru": "Природный инстинкт",
+            "zh-tw": "機敏天成",
+            "de": "Natürlicher Instinkt"
+          },
+          "src": "/img/game-41/pet-skills/dodo-4.webp",
+          "unlockStage": 5,
+          "maxLevel": 1,
+          "highestVerifiedLevel": 1,
+          "status": "verified-max",
+          "levels": [
+            {
+              "level": 1,
+              "description": {
+                "ko": "펫 속성이 5% 증가합니다.",
+                "en": "Increases Pet Stats by 5%.",
+                "ja": "ペットのステータスが5%上昇します",
+                "ru": "Характеристики питомца увеличиваются на 5%.",
+                "zh-tw": "寵物屬性提升5%。",
+                "de": "Erhöht Haustierwerte um 5%."
+              },
+              "trainingStage": 5,
+              "arguments": [
+                "5%"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "buckler",
+      "names": {
+        "ko": "버클러",
+        "en": "Buckler",
+        "ja": "タテマル",
+        "ru": "Торпеда",
+        "zh-tw": "小盾",
+        "de": "Buckler"
+      },
+      "skills": [
+        {
+          "id": "buckler-1",
+          "slot": 1,
+          "names": {
+            "ko": "등껍질 가드",
+            "en": "Shell Guard",
+            "ja": "甲羅バリア",
+            "ru": "Крепкий панцирь",
+            "zh-tw": "龜殼守護",
+            "de": "Panzerwache"
+          },
+          "src": "/img/game-41/pet-skills/buckler-1.webp",
+          "unlockStage": 0,
+          "maxLevel": 6,
+          "highestVerifiedLevel": 6,
+          "status": "verified-max",
+          "levels": [
+            {
+              "level": 1,
+              "description": {
+                "ko": "거북이가 단단한 등껍질을 들어서 아군을 보호합니다. 전투 시작 시 가장 가까운 아군 영웅 1명에게 수호 효과를 부여하여 방어력을 25% 증가시키고, 일반 공격으로 받는 대미지를 10% 감소시키며, 10초간 지속됩니다.",
+                "en": "The Turtle raises its sturdy shell to protect an ally. At the start of battle, grants protection to the nearest ally Hero, increasing their Defense by 25% and reducing Normal Attack Damage taken by 10% for 10s.",
+                "ja": "コガメが硬い甲羅で味方を守ります。戦闘開始時、最も近くにいる味方英雄1名に守護効果を付与し、防御力を25%上昇させ、通常攻撃で受けるダメージを10%軽減します。効果は10秒間持続します",
+                "ru": "Черепаха защищает союзника своим прочным панцирем. В начале боя дает защиту ближайшему союзному герою, увеличивая его защиту на 25% и снижая полученный урон от обычных атак на 10% в течение 10 сек.",
+                "zh-tw": "小龜撐起堅硬的龜殼。戰鬥開始時，為己方最近的1名英雄附加守護，使其防禦提高25%，受到普通攻擊傷害降低10%，持續10秒。",
+                "de": "Die Schildkröte schützt einen Verbündeten mit ihrem robusten Panzer. Gewährt dem am nächsten stehenden verbündeten Helden zu Beginn des Kampfes Schutz und erhöht dessen Verteidigung um 25% sowie reduziert seinen erlittenen Schaden durch normale Angriffe für 10 Sek. um 10%."
+              },
+              "trainingStage": 0,
+              "arguments": [
+                "25%",
+                "10%",
+                "10"
+              ]
+            },
+            {
+              "level": 2,
+              "description": {
+                "ko": "거북이가 단단한 등껍질을 들어서 아군을 보호합니다. 전투 시작 시 가장 가까운 아군 영웅 1명에게 수호 효과를 부여하여 방어력을 25% 증가시키고, 일반 공격으로 받는 대미지를 10% 감소시키며, 10초간 지속됩니다.",
+                "en": "The Turtle raises its sturdy shell to protect an ally. At the start of battle, grants protection to the nearest ally Hero, increasing their Defense by 25% and reducing Normal Attack Damage taken by 10% for 10s.",
+                "ja": "コガメが硬い甲羅で味方を守ります。戦闘開始時、最も近くにいる味方英雄1名に守護効果を付与し、防御力を25%上昇させ、通常攻撃で受けるダメージを10%軽減します。効果は10秒間持続します",
+                "ru": "Черепаха защищает союзника своим прочным панцирем. В начале боя дает защиту ближайшему союзному герою, увеличивая его защиту на 25% и снижая полученный урон от обычных атак на 10% в течение 10 сек.",
+                "zh-tw": "小龜撐起堅硬的龜殼。戰鬥開始時，為己方最近的1名英雄附加守護，使其防禦提高25%，受到普通攻擊傷害降低10%，持續10秒。",
+                "de": "Die Schildkröte schützt einen Verbündeten mit ihrem robusten Panzer. Gewährt dem am nächsten stehenden verbündeten Helden zu Beginn des Kampfes Schutz und erhöht dessen Verteidigung um 25% sowie reduziert seinen erlittenen Schaden durch normale Angriffe für 10 Sek. um 10%."
+              },
+              "trainingStage": 1,
+              "arguments": [
+                "25%",
+                "10%",
+                "10"
+              ]
+            },
+            {
+              "level": 3,
+              "description": {
+                "ko": "거북이가 단단한 등껍질을 들어서 아군을 보호합니다. 전투 시작 시 가장 가까운 아군 영웅 1명에게 수호 효과를 부여하여 방어력을 25% 증가시키고, 일반 공격으로 받는 대미지를 10% 감소시키며, 10초간 지속됩니다.",
+                "en": "The Turtle raises its sturdy shell to protect an ally. At the start of battle, grants protection to the nearest ally Hero, increasing their Defense by 25% and reducing Normal Attack Damage taken by 10% for 10s.",
+                "ja": "コガメが硬い甲羅で味方を守ります。戦闘開始時、最も近くにいる味方英雄1名に守護効果を付与し、防御力を25%上昇させ、通常攻撃で受けるダメージを10%軽減します。効果は10秒間持続します",
+                "ru": "Черепаха защищает союзника своим прочным панцирем. В начале боя дает защиту ближайшему союзному герою, увеличивая его защиту на 25% и снижая полученный урон от обычных атак на 10% в течение 10 сек.",
+                "zh-tw": "小龜撐起堅硬的龜殼。戰鬥開始時，為己方最近的1名英雄附加守護，使其防禦提高25%，受到普通攻擊傷害降低10%，持續10秒。",
+                "de": "Die Schildkröte schützt einen Verbündeten mit ihrem robusten Panzer. Gewährt dem am nächsten stehenden verbündeten Helden zu Beginn des Kampfes Schutz und erhöht dessen Verteidigung um 25% sowie reduziert seinen erlittenen Schaden durch normale Angriffe für 10 Sek. um 10%."
+              },
+              "trainingStage": 2,
+              "arguments": [
+                "25%",
+                "10%",
+                "10"
+              ]
+            },
+            {
+              "level": 4,
+              "description": {
+                "ko": "거북이가 단단한 등껍질을 들어서 아군을 보호합니다. 전투 시작 시 가장 가까운 아군 영웅 1명에게 수호 효과를 부여하여 방어력을 25% 증가시키고, 일반 공격으로 받는 대미지를 10% 감소시키며, 10초간 지속됩니다.",
+                "en": "The Turtle raises its sturdy shell to protect an ally. At the start of battle, grants protection to the nearest ally Hero, increasing their Defense by 25% and reducing Normal Attack Damage taken by 10% for 10s.",
+                "ja": "コガメが硬い甲羅で味方を守ります。戦闘開始時、最も近くにいる味方英雄1名に守護効果を付与し、防御力を25%上昇させ、通常攻撃で受けるダメージを10%軽減します。効果は10秒間持続します",
+                "ru": "Черепаха защищает союзника своим прочным панцирем. В начале боя дает защиту ближайшему союзному герою, увеличивая его защиту на 25% и снижая полученный урон от обычных атак на 10% в течение 10 сек.",
+                "zh-tw": "小龜撐起堅硬的龜殼。戰鬥開始時，為己方最近的1名英雄附加守護，使其防禦提高25%，受到普通攻擊傷害降低10%，持續10秒。",
+                "de": "Die Schildkröte schützt einen Verbündeten mit ihrem robusten Panzer. Gewährt dem am nächsten stehenden verbündeten Helden zu Beginn des Kampfes Schutz und erhöht dessen Verteidigung um 25% sowie reduziert seinen erlittenen Schaden durch normale Angriffe für 10 Sek. um 10%."
+              },
+              "trainingStage": 3,
+              "arguments": [
+                "25%",
+                "10%",
+                "10"
+              ]
+            },
+            {
+              "level": 5,
+              "description": {
+                "ko": "거북이가 단단한 등껍질을 들어서 아군을 보호합니다. 전투 시작 시 가장 가까운 아군 영웅 1명에게 수호 효과를 부여하여 방어력을 25% 증가시키고, 일반 공격으로 받는 대미지를 10% 감소시키며, 10초간 지속됩니다.",
+                "en": "The Turtle raises its sturdy shell to protect an ally. At the start of battle, grants protection to the nearest ally Hero, increasing their Defense by 25% and reducing Normal Attack Damage taken by 10% for 10s.",
+                "ja": "コガメが硬い甲羅で味方を守ります。戦闘開始時、最も近くにいる味方英雄1名に守護効果を付与し、防御力を25%上昇させ、通常攻撃で受けるダメージを10%軽減します。効果は10秒間持続します",
+                "ru": "Черепаха защищает союзника своим прочным панцирем. В начале боя дает защиту ближайшему союзному герою, увеличивая его защиту на 25% и снижая полученный урон от обычных атак на 10% в течение 10 сек.",
+                "zh-tw": "小龜撐起堅硬的龜殼。戰鬥開始時，為己方最近的1名英雄附加守護，使其防禦提高25%，受到普通攻擊傷害降低10%，持續10秒。",
+                "de": "Die Schildkröte schützt einen Verbündeten mit ihrem robusten Panzer. Gewährt dem am nächsten stehenden verbündeten Helden zu Beginn des Kampfes Schutz und erhöht dessen Verteidigung um 25% sowie reduziert seinen erlittenen Schaden durch normale Angriffe für 10 Sek. um 10%."
+              },
+              "trainingStage": 4,
+              "arguments": [
+                "25%",
+                "10%",
+                "10"
+              ]
+            },
+            {
+              "level": 6,
+              "description": {
+                "ko": "거북이가 단단한 등껍질을 들어서 아군을 보호합니다. 전투 시작 시 가장 가까운 아군 영웅 1명에게 수호 효과를 부여하여 방어력을 25% 증가시키고, 일반 공격으로 받는 대미지를 10% 감소시키며, 10초간 지속됩니다.",
+                "en": "The Turtle raises its sturdy shell to protect an ally. At the start of battle, grants protection to the nearest ally Hero, increasing their Defense by 25% and reducing Normal Attack Damage taken by 10% for 10s.",
+                "ja": "コガメが硬い甲羅で味方を守ります。戦闘開始時、最も近くにいる味方英雄1名に守護効果を付与し、防御力を25%上昇させ、通常攻撃で受けるダメージを10%軽減します。効果は10秒間持続します",
+                "ru": "Черепаха защищает союзника своим прочным панцирем. В начале боя дает защиту ближайшему союзному герою, увеличивая его защиту на 25% и снижая полученный урон от обычных атак на 10% в течение 10 сек.",
+                "zh-tw": "小龜撐起堅硬的龜殼。戰鬥開始時，為己方最近的1名英雄附加守護，使其防禦提高25%，受到普通攻擊傷害降低10%，持續10秒。",
+                "de": "Die Schildkröte schützt einen Verbündeten mit ihrem robusten Panzer. Gewährt dem am nächsten stehenden verbündeten Helden zu Beginn des Kampfes Schutz und erhöht dessen Verteidigung um 25% sowie reduziert seinen erlittenen Schaden durch normale Angriffe für 10 Sek. um 10%."
+              },
+              "trainingStage": 5,
+              "arguments": [
+                "25%",
+                "10%",
+                "10"
+              ]
+            }
+          ],
+          "additionalLimit": {
+            "ko": "레벨이 달라도 이 스킬의 설명 수치는 동일합니다.",
+            "en": "The values in this skill description are the same at every skill level.",
+            "ja": "このスキルの説明中の数値は、スキルレベルによらず同じです。",
+            "ru": "Числа в описании этого навыка одинаковы на всех его уровнях.",
+            "zh-tw": "此技能說明中的數值在各技能等級皆相同。",
+            "de": "Die Werte in dieser Fertigkeitsbeschreibung sind auf allen Fertigkeitsstufen gleich."
+          }
+        },
+        {
+          "id": "buckler-2",
+          "slot": 2,
+          "names": {
+            "ko": "따스한 등껍질",
+            "en": "Warm Shell",
+            "ja": "ぬくもりの甲羅",
+            "ru": "Уютный панцирь",
+            "zh-tw": "暖殼孵育",
+            "de": "Warmer Panzer"
+          },
+          "src": "/img/game-41/pet-skills/dodo-2.webp",
+          "unlockStage": 2,
+          "maxLevel": 1,
+          "highestVerifiedLevel": 1,
+          "status": "verified-max",
+          "levels": [
+            {
+              "level": 1,
+              "description": {
+                "ko": "먹이를 줄 때 펫이 획득하는 경험치가 2% 증가합니다.",
+                "en": "Increases Pet EXP gained from feeding by 2%.",
+                "ja": "エサやりで獲得するペットEXPが2%増加します",
+                "ru": "Количество опыта питомца при кормлении увеличивается на 2%.",
+                "zh-tw": "餵食時，寵物獲得的經驗提升2%。",
+                "de": "Erhöht die durch Füttern erhaltene Haustier-EP um 2%."
+              },
+              "trainingStage": 2,
+              "arguments": [
+                "2%"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "buckler-3",
+          "slot": 3,
+          "names": {
+            "ko": "등껍질 전환",
+            "en": "Shell Renewal",
+            "ja": "孵化の息吹",
+            "ru": "Трансформация панциря",
+            "zh-tw": "靈殼轉化",
+            "de": "Panzererneuerung"
+          },
+          "src": "/img/game-41/pet-skills/buckler-3.webp",
+          "unlockStage": 4,
+          "maxLevel": 1,
+          "highestVerifiedLevel": 1,
+          "status": "verified-max",
+          "levels": [
+            {
+              "level": 1,
+              "description": {
+                "ko": "부화 시간이 5% 단축됩니다.",
+                "en": "Reduces Hatching Time by 5%.",
+                "ja": "孵化時間が5%短縮されます",
+                "ru": "Время вылупления снижается на 5%.",
+                "zh-tw": "孵化時間縮短5%。",
+                "de": "Reduziert die Brützeit um 5%."
+              },
+              "trainingStage": 4,
+              "arguments": [
+                "5%"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "buckler-4",
+          "slot": 4,
+          "names": {
+            "ko": "견고한 본능",
+            "en": "Natural Armor",
+            "ja": "不屈の甲殻",
+            "ru": "Природная броня",
+            "zh-tw": "堅甲天成",
+            "de": "Natürliche Rüstung"
+          },
+          "src": "/img/game-41/pet-skills/buckler-4.webp",
+          "unlockStage": 5,
+          "maxLevel": 1,
+          "highestVerifiedLevel": 1,
+          "status": "verified-max",
+          "levels": [
+            {
+              "level": 1,
+              "description": {
+                "ko": "펫 속성이 5% 증가합니다.",
+                "en": "Increases Pet Stats by 5%.",
+                "ja": "ペットのステータスが5%上昇します",
+                "ru": "Характеристики питомца увеличиваются на 5%.",
+                "zh-tw": "寵物屬性提升5%。",
+                "de": "Erhöht Haustierwerte um 5%."
+              },
+              "trainingStage": 5,
+              "arguments": [
+                "5%"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "fluffy",
+      "names": {
+        "ko": "솜솜",
+        "en": "Fluffy",
+        "ja": "モコ",
+        "ru": "Пушок",
+        "zh-tw": "棉花",
+        "de": "Fluffi"
+      },
+      "skills": [
+        {
+          "id": "fluffy-1",
+          "slot": 1,
+          "names": {
+            "ko": "몽실몽실 구름",
+            "en": "Fluffy Cloud",
+            "ja": "ふわもこ雲",
+            "ru": "Пушистое облако",
+            "zh-tw": "暖絨雲團",
+            "de": "Flauschige Wolke"
+          },
+          "src": null,
+          "unlockStage": 0,
+          "maxLevel": 6,
+          "highestVerifiedLevel": 6,
+          "status": "verified-max",
+          "levels": [
+            {
+              "level": 1,
+              "description": {
+                "ko": "양이 폭신한 구름을 불러옵니다. 전투 시작 시 아군 전방 영웅이 2초마다 펫 공격력의 100%만큼 체력을 회복하며, 10초간 지속됩니다.",
+                "en": "The Sheep summons a soft cloud. At the start of battle, restores Health equal to 100% of Pet Attack to front-row ally Heroes every 2s for 10s.",
+                "ja": "ヒツジが柔らかな雲を呼び出します。戦闘開始時、味方前列の英雄のHPを2秒ごとにペット攻撃力の100%分回復します。効果は10秒間持続します",
+                "ru": "Овечка призывает мягкое облако. В начале боя восстанавливает здоровье союзных героев переднего ряда, равное 100% от атаки питомца, кажд. 2 сек. в течение 10 сек.",
+                "zh-tw": "綿羊喚來柔軟雲團。戰鬥開始時，使我方前排英雄每2秒恢復寵物攻擊力100%的生命，持續10秒",
+                "de": "Das Schaf beschwört eine weiche Wolke. Stellt zu Beginn des Kampfes alle 2 Sek. für 10 Sek. bei verbündeten Helden in der ersten Reihe Zustand in Höhe von 100% des Haustierangriffs wieder her."
+              },
+              "trainingStage": 0,
+              "arguments": [
+                "2",
+                "100%",
+                "10"
+              ]
+            },
+            {
+              "level": 2,
+              "description": {
+                "ko": "양이 폭신한 구름을 불러옵니다. 전투 시작 시 아군 전방 영웅이 2초마다 펫 공격력의 100%만큼 체력을 회복하며, 10초간 지속됩니다.",
+                "en": "The Sheep summons a soft cloud. At the start of battle, restores Health equal to 100% of Pet Attack to front-row ally Heroes every 2s for 10s.",
+                "ja": "ヒツジが柔らかな雲を呼び出します。戦闘開始時、味方前列の英雄のHPを2秒ごとにペット攻撃力の100%分回復します。効果は10秒間持続します",
+                "ru": "Овечка призывает мягкое облако. В начале боя восстанавливает здоровье союзных героев переднего ряда, равное 100% от атаки питомца, кажд. 2 сек. в течение 10 сек.",
+                "zh-tw": "綿羊喚來柔軟雲團。戰鬥開始時，使我方前排英雄每2秒恢復寵物攻擊力100%的生命，持續10秒",
+                "de": "Das Schaf beschwört eine weiche Wolke. Stellt zu Beginn des Kampfes alle 2 Sek. für 10 Sek. bei verbündeten Helden in der ersten Reihe Zustand in Höhe von 100% des Haustierangriffs wieder her."
+              },
+              "trainingStage": 1,
+              "arguments": [
+                "2",
+                "100%",
+                "10"
+              ]
+            },
+            {
+              "level": 3,
+              "description": {
+                "ko": "양이 폭신한 구름을 불러옵니다. 전투 시작 시 아군 전방 영웅이 2초마다 펫 공격력의 100%만큼 체력을 회복하며, 10초간 지속됩니다.",
+                "en": "The Sheep summons a soft cloud. At the start of battle, restores Health equal to 100% of Pet Attack to front-row ally Heroes every 2s for 10s.",
+                "ja": "ヒツジが柔らかな雲を呼び出します。戦闘開始時、味方前列の英雄のHPを2秒ごとにペット攻撃力の100%分回復します。効果は10秒間持続します",
+                "ru": "Овечка призывает мягкое облако. В начале боя восстанавливает здоровье союзных героев переднего ряда, равное 100% от атаки питомца, кажд. 2 сек. в течение 10 сек.",
+                "zh-tw": "綿羊喚來柔軟雲團。戰鬥開始時，使我方前排英雄每2秒恢復寵物攻擊力100%的生命，持續10秒",
+                "de": "Das Schaf beschwört eine weiche Wolke. Stellt zu Beginn des Kampfes alle 2 Sek. für 10 Sek. bei verbündeten Helden in der ersten Reihe Zustand in Höhe von 100% des Haustierangriffs wieder her."
+              },
+              "trainingStage": 2,
+              "arguments": [
+                "2",
+                "100%",
+                "10"
+              ]
+            },
+            {
+              "level": 4,
+              "description": {
+                "ko": "양이 폭신한 구름을 불러옵니다. 전투 시작 시 아군 전방 영웅이 2초마다 펫 공격력의 100%만큼 체력을 회복하며, 10초간 지속됩니다.",
+                "en": "The Sheep summons a soft cloud. At the start of battle, restores Health equal to 100% of Pet Attack to front-row ally Heroes every 2s for 10s.",
+                "ja": "ヒツジが柔らかな雲を呼び出します。戦闘開始時、味方前列の英雄のHPを2秒ごとにペット攻撃力の100%分回復します。効果は10秒間持続します",
+                "ru": "Овечка призывает мягкое облако. В начале боя восстанавливает здоровье союзных героев переднего ряда, равное 100% от атаки питомца, кажд. 2 сек. в течение 10 сек.",
+                "zh-tw": "綿羊喚來柔軟雲團。戰鬥開始時，使我方前排英雄每2秒恢復寵物攻擊力100%的生命，持續10秒",
+                "de": "Das Schaf beschwört eine weiche Wolke. Stellt zu Beginn des Kampfes alle 2 Sek. für 10 Sek. bei verbündeten Helden in der ersten Reihe Zustand in Höhe von 100% des Haustierangriffs wieder her."
+              },
+              "trainingStage": 3,
+              "arguments": [
+                "2",
+                "100%",
+                "10"
+              ]
+            },
+            {
+              "level": 5,
+              "description": {
+                "ko": "양이 폭신한 구름을 불러옵니다. 전투 시작 시 아군 전방 영웅이 2초마다 펫 공격력의 100%만큼 체력을 회복하며, 10초간 지속됩니다.",
+                "en": "The Sheep summons a soft cloud. At the start of battle, restores Health equal to 100% of Pet Attack to front-row ally Heroes every 2s for 10s.",
+                "ja": "ヒツジが柔らかな雲を呼び出します。戦闘開始時、味方前列の英雄のHPを2秒ごとにペット攻撃力の100%分回復します。効果は10秒間持続します",
+                "ru": "Овечка призывает мягкое облако. В начале боя восстанавливает здоровье союзных героев переднего ряда, равное 100% от атаки питомца, кажд. 2 сек. в течение 10 сек.",
+                "zh-tw": "綿羊喚來柔軟雲團。戰鬥開始時，使我方前排英雄每2秒恢復寵物攻擊力100%的生命，持續10秒",
+                "de": "Das Schaf beschwört eine weiche Wolke. Stellt zu Beginn des Kampfes alle 2 Sek. für 10 Sek. bei verbündeten Helden in der ersten Reihe Zustand in Höhe von 100% des Haustierangriffs wieder her."
+              },
+              "trainingStage": 4,
+              "arguments": [
+                "2",
+                "100%",
+                "10"
+              ]
+            },
+            {
+              "level": 6,
+              "description": {
+                "ko": "양이 폭신한 구름을 불러옵니다. 전투 시작 시 아군 전방 영웅이 2초마다 펫 공격력의 100%만큼 체력을 회복하며, 10초간 지속됩니다.",
+                "en": "The Sheep summons a soft cloud. At the start of battle, restores Health equal to 100% of Pet Attack to front-row ally Heroes every 2s for 10s.",
+                "ja": "ヒツジが柔らかな雲を呼び出します。戦闘開始時、味方前列の英雄のHPを2秒ごとにペット攻撃力の100%分回復します。効果は10秒間持続します",
+                "ru": "Овечка призывает мягкое облако. В начале боя восстанавливает здоровье союзных героев переднего ряда, равное 100% от атаки питомца, кажд. 2 сек. в течение 10 сек.",
+                "zh-tw": "綿羊喚來柔軟雲團。戰鬥開始時，使我方前排英雄每2秒恢復寵物攻擊力100%的生命，持續10秒",
+                "de": "Das Schaf beschwört eine weiche Wolke. Stellt zu Beginn des Kampfes alle 2 Sek. für 10 Sek. bei verbündeten Helden in der ersten Reihe Zustand in Höhe von 100% des Haustierangriffs wieder her."
+              },
+              "trainingStage": 5,
+              "arguments": [
+                "2",
+                "100%",
+                "10"
+              ]
+            }
+          ],
+          "additionalLimit": {
+            "ko": "레벨이 달라도 이 스킬의 설명 수치는 동일합니다.",
+            "en": "The values in this skill description are the same at every skill level.",
+            "ja": "このスキルの説明中の数値は、スキルレベルによらず同じです。",
+            "ru": "Числа в описании этого навыка одинаковы на всех его уровнях.",
+            "zh-tw": "此技能說明中的數值在各技能等級皆相同。",
+            "de": "Die Werte in dieser Fertigkeitsbeschreibung sind auf allen Fertigkeitsstufen gleich."
+          }
+        },
+        {
+          "id": "fluffy-2",
+          "slot": 2,
+          "names": {
+            "ko": "구름의 포옹",
+            "en": "Cloud's Embrace",
+            "ja": "綿雲の癒やし",
+            "ru": "Объятие облака",
+            "zh-tw": "絨雲療癒",
+            "de": "Umarmung der Wolke"
+          },
+          "src": null,
+          "unlockStage": 2,
+          "maxLevel": 1,
+          "highestVerifiedLevel": 1,
+          "status": "verified-max",
+          "levels": [
+            {
+              "level": 1,
+              "description": {
+                "ko": "진형 영웅의 체력이 2.5% 증가합니다.",
+                "en": "Increases deployed Heroes' Health by 2.5%.",
+                "ja": "編成中の英雄のHPが2.5%上昇します",
+                "ru": "Здоровье задействованных героев увеличивается на 2.5%.",
+                "zh-tw": "編隊英雄生命提升2.5%。",
+                "de": "Erhöht den Zustand von eingesetzten Helden um 2.5%."
+              },
+              "trainingStage": 2,
+              "arguments": [
+                "2.5%"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "fluffy-3",
+          "slot": 3,
+          "names": {
+            "ko": "몽실몽실 가호",
+            "en": "Fluffy Shelter",
+            "ja": "綿雲の庇護",
+            "ru": "Пушистая защита",
+            "zh-tw": "暖絨庇護",
+            "de": "Flauschige Unterkunft"
+          },
+          "src": null,
+          "unlockStage": 4,
+          "maxLevel": 1,
+          "highestVerifiedLevel": 1,
+          "status": "verified-max",
+          "levels": [
+            {
+              "level": 1,
+              "description": {
+                "ko": "진형 영웅의 치료 효과가 3% 증가합니다.",
+                "en": "Increases deployed Heroes' Healing Effect by 3%.",
+                "ja": "編成中の英雄の治療効果が3%上昇します",
+                "ru": "Эффект лечения задействованных героев увеличивается на 3%.",
+                "zh-tw": "編隊英雄治療效果提升3%。",
+                "de": "Erhöht den Heileffekt von eingesetzten Helden um 3%."
+              },
+              "trainingStage": 4,
+              "arguments": [
+                "3%"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "fluffy-4",
+          "slot": 4,
+          "names": {
+            "ko": "포근한 온기",
+            "en": "Gentle Warmth",
+            "ja": "ぬくぬくパワー",
+            "ru": "Мягкое тепло",
+            "zh-tw": "柔絨滋養",
+            "de": "Sanfte Wärme"
+          },
+          "src": null,
+          "unlockStage": 5,
+          "maxLevel": 1,
+          "highestVerifiedLevel": 1,
+          "status": "verified-max",
+          "levels": [
+            {
+              "level": 1,
+              "description": {
+                "ko": "펫 속성이 7.5% 증가합니다.",
+                "en": "Increases Pet Stats by 7.5%.",
+                "ja": "ペットのステータスが7.5%上昇します",
+                "ru": "Характеристики питомца увеличиваются на 7.5%.",
+                "zh-tw": "寵物屬性提升7.5%。",
+                "de": "Erhöht Haustierwerte um 7.5%."
+              },
+              "trainingStage": 5,
+              "arguments": [
+                "7.5%"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "hardhead",
+      "names": {
+        "ko": "철두",
+        "en": "Ironhead",
+        "ja": "アイアン",
+        "ru": "Крепыш",
+        "zh-tw": "鐵頭",
+        "de": "Sturrkopf"
+      },
+      "skills": [
+        {
+          "id": "hardhead-1",
+          "slot": 1,
+          "names": {
+            "ko": "철갑 돌진",
+            "en": "Ironclad Charge",
+            "ja": "重甲突撃",
+            "ru": "Бронированный заряд",
+            "zh-tw": "厚甲頂陣",
+            "de": "Eiserner Ansturm"
+          },
+          "src": "/img/game-41/pet-skills/hardhead-1.webp",
+          "unlockStage": 0,
+          "maxLevel": 6,
+          "highestVerifiedLevel": 6,
+          "status": "verified-max",
+          "levels": [
+            {
+              "level": 1,
+              "description": {
+                "ko": "멧돼지가 맹렬하게 돌진합니다. 전투 시작 시 가장 가까운 적에게 돌진하여 펫 공격력의 600%만큼 대미지를 입히고, 방어력을 25% 감소시키며, 10초간 지속됩니다.",
+                "en": "The Wild Boar launches a fierce charge. At the start of battle, rams the nearest enemy, dealing damage equal to 600% of Pet Attack and reducing their Defense by 25% for 10s.",
+                "ja": "イノシシが猛烈な突進を仕掛けます。戦闘開始時、最も近い敵に体当たりし、ペット攻撃力の600%に相当するダメージを与え、防御力を25%低下させます。効果は10秒間持続します",
+                "ru": "Дикий кабан бросается в яростную атаку. В начале боя таранит ближайшего врага, нанося урон, равный 600% от атаки питомца и снижая его защиту на 25% в течение 10 сек.",
+                "zh-tw": "野豬發起兇猛衝鋒。戰鬥開始時，衝撞最近的敵人，造成寵物攻擊力600%的傷害，並使其防禦降低25%，持續10秒。",
+                "de": "Das Wildschwein stürmt wild drauflos und rammt zu Beginn des Kampfes den am nächsten stehenden Feind und verursacht Schaden in Höhe von 600% des Haustierangriffs und reduziert seine Verteidigung für 10 Sek. um 25%."
+              },
+              "trainingStage": 0,
+              "arguments": [
+                "600%",
+                "25%",
+                "10"
+              ]
+            },
+            {
+              "level": 2,
+              "description": {
+                "ko": "멧돼지가 맹렬하게 돌진합니다. 전투 시작 시 가장 가까운 적에게 돌진하여 펫 공격력의 600%만큼 대미지를 입히고, 방어력을 25% 감소시키며, 10초간 지속됩니다.",
+                "en": "The Wild Boar launches a fierce charge. At the start of battle, rams the nearest enemy, dealing damage equal to 600% of Pet Attack and reducing their Defense by 25% for 10s.",
+                "ja": "イノシシが猛烈な突進を仕掛けます。戦闘開始時、最も近い敵に体当たりし、ペット攻撃力の600%に相当するダメージを与え、防御力を25%低下させます。効果は10秒間持続します",
+                "ru": "Дикий кабан бросается в яростную атаку. В начале боя таранит ближайшего врага, нанося урон, равный 600% от атаки питомца и снижая его защиту на 25% в течение 10 сек.",
+                "zh-tw": "野豬發起兇猛衝鋒。戰鬥開始時，衝撞最近的敵人，造成寵物攻擊力600%的傷害，並使其防禦降低25%，持續10秒。",
+                "de": "Das Wildschwein stürmt wild drauflos und rammt zu Beginn des Kampfes den am nächsten stehenden Feind und verursacht Schaden in Höhe von 600% des Haustierangriffs und reduziert seine Verteidigung für 10 Sek. um 25%."
+              },
+              "trainingStage": 1,
+              "arguments": [
+                "600%",
+                "25%",
+                "10"
+              ]
+            },
+            {
+              "level": 3,
+              "description": {
+                "ko": "멧돼지가 맹렬하게 돌진합니다. 전투 시작 시 가장 가까운 적에게 돌진하여 펫 공격력의 600%만큼 대미지를 입히고, 방어력을 25% 감소시키며, 10초간 지속됩니다.",
+                "en": "The Wild Boar launches a fierce charge. At the start of battle, rams the nearest enemy, dealing damage equal to 600% of Pet Attack and reducing their Defense by 25% for 10s.",
+                "ja": "イノシシが猛烈な突進を仕掛けます。戦闘開始時、最も近い敵に体当たりし、ペット攻撃力の600%に相当するダメージを与え、防御力を25%低下させます。効果は10秒間持続します",
+                "ru": "Дикий кабан бросается в яростную атаку. В начале боя таранит ближайшего врага, нанося урон, равный 600% от атаки питомца и снижая его защиту на 25% в течение 10 сек.",
+                "zh-tw": "野豬發起兇猛衝鋒。戰鬥開始時，衝撞最近的敵人，造成寵物攻擊力600%的傷害，並使其防禦降低25%，持續10秒。",
+                "de": "Das Wildschwein stürmt wild drauflos und rammt zu Beginn des Kampfes den am nächsten stehenden Feind und verursacht Schaden in Höhe von 600% des Haustierangriffs und reduziert seine Verteidigung für 10 Sek. um 25%."
+              },
+              "trainingStage": 2,
+              "arguments": [
+                "600%",
+                "25%",
+                "10"
+              ]
+            },
+            {
+              "level": 4,
+              "description": {
+                "ko": "멧돼지가 맹렬하게 돌진합니다. 전투 시작 시 가장 가까운 적에게 돌진하여 펫 공격력의 600%만큼 대미지를 입히고, 방어력을 25% 감소시키며, 10초간 지속됩니다.",
+                "en": "The Wild Boar launches a fierce charge. At the start of battle, rams the nearest enemy, dealing damage equal to 600% of Pet Attack and reducing their Defense by 25% for 10s.",
+                "ja": "イノシシが猛烈な突進を仕掛けます。戦闘開始時、最も近い敵に体当たりし、ペット攻撃力の600%に相当するダメージを与え、防御力を25%低下させます。効果は10秒間持続します",
+                "ru": "Дикий кабан бросается в яростную атаку. В начале боя таранит ближайшего врага, нанося урон, равный 600% от атаки питомца и снижая его защиту на 25% в течение 10 сек.",
+                "zh-tw": "野豬發起兇猛衝鋒。戰鬥開始時，衝撞最近的敵人，造成寵物攻擊力600%的傷害，並使其防禦降低25%，持續10秒。",
+                "de": "Das Wildschwein stürmt wild drauflos und rammt zu Beginn des Kampfes den am nächsten stehenden Feind und verursacht Schaden in Höhe von 600% des Haustierangriffs und reduziert seine Verteidigung für 10 Sek. um 25%."
+              },
+              "trainingStage": 3,
+              "arguments": [
+                "600%",
+                "25%",
+                "10"
+              ]
+            },
+            {
+              "level": 5,
+              "description": {
+                "ko": "멧돼지가 맹렬하게 돌진합니다. 전투 시작 시 가장 가까운 적에게 돌진하여 펫 공격력의 600%만큼 대미지를 입히고, 방어력을 25% 감소시키며, 10초간 지속됩니다.",
+                "en": "The Wild Boar launches a fierce charge. At the start of battle, rams the nearest enemy, dealing damage equal to 600% of Pet Attack and reducing their Defense by 25% for 10s.",
+                "ja": "イノシシが猛烈な突進を仕掛けます。戦闘開始時、最も近い敵に体当たりし、ペット攻撃力の600%に相当するダメージを与え、防御力を25%低下させます。効果は10秒間持続します",
+                "ru": "Дикий кабан бросается в яростную атаку. В начале боя таранит ближайшего врага, нанося урон, равный 600% от атаки питомца и снижая его защиту на 25% в течение 10 сек.",
+                "zh-tw": "野豬發起兇猛衝鋒。戰鬥開始時，衝撞最近的敵人，造成寵物攻擊力600%的傷害，並使其防禦降低25%，持續10秒。",
+                "de": "Das Wildschwein stürmt wild drauflos und rammt zu Beginn des Kampfes den am nächsten stehenden Feind und verursacht Schaden in Höhe von 600% des Haustierangriffs und reduziert seine Verteidigung für 10 Sek. um 25%."
+              },
+              "trainingStage": 4,
+              "arguments": [
+                "600%",
+                "25%",
+                "10"
+              ]
+            },
+            {
+              "level": 6,
+              "description": {
+                "ko": "멧돼지가 맹렬하게 돌진합니다. 전투 시작 시 가장 가까운 적에게 돌진하여 펫 공격력의 600%만큼 대미지를 입히고, 방어력을 25% 감소시키며, 10초간 지속됩니다.",
+                "en": "The Wild Boar launches a fierce charge. At the start of battle, rams the nearest enemy, dealing damage equal to 600% of Pet Attack and reducing their Defense by 25% for 10s.",
+                "ja": "イノシシが猛烈な突進を仕掛けます。戦闘開始時、最も近い敵に体当たりし、ペット攻撃力の600%に相当するダメージを与え、防御力を25%低下させます。効果は10秒間持続します",
+                "ru": "Дикий кабан бросается в яростную атаку. В начале боя таранит ближайшего врага, нанося урон, равный 600% от атаки питомца и снижая его защиту на 25% в течение 10 сек.",
+                "zh-tw": "野豬發起兇猛衝鋒。戰鬥開始時，衝撞最近的敵人，造成寵物攻擊力600%的傷害，並使其防禦降低25%，持續10秒。",
+                "de": "Das Wildschwein stürmt wild drauflos und rammt zu Beginn des Kampfes den am nächsten stehenden Feind und verursacht Schaden in Höhe von 600% des Haustierangriffs und reduziert seine Verteidigung für 10 Sek. um 25%."
+              },
+              "trainingStage": 5,
+              "arguments": [
+                "600%",
+                "25%",
+                "10"
+              ]
+            }
+          ],
+          "additionalLimit": {
+            "ko": "레벨이 달라도 이 스킬의 설명 수치는 동일합니다.",
+            "en": "The values in this skill description are the same at every skill level.",
+            "ja": "このスキルの説明中の数値は、スキルレベルによらず同じです。",
+            "ru": "Числа в описании этого навыка одинаковы на всех его уровнях.",
+            "zh-tw": "此技能說明中的數值在各技能等級皆相同。",
+            "de": "Die Werte in dieser Fertigkeitsbeschreibung sind auf allen Fertigkeitsstufen gleich."
+          }
+        },
+        {
+          "id": "hardhead-2",
+          "slot": 2,
+          "names": {
+            "ko": "돌진의 기세",
+            "en": "Charging Spirit",
+            "ja": "猛進の鼓舞",
+            "ru": "Заряжающий дух",
+            "zh-tw": "猛進鼓舞",
+            "de": "Stürmischer Geist"
+          },
+          "src": "/img/game-41/pet-skills/hardhead-2.webp",
+          "unlockStage": 2,
+          "maxLevel": 1,
+          "highestVerifiedLevel": 1,
+          "status": "verified-max",
+          "levels": [
+            {
+              "level": 1,
+              "description": {
+                "ko": "진형 전방 영웅의 공격력이 3.5% 증가합니다.",
+                "en": "Increases deployed front-row Heroes' Attack by 3.5%.",
+                "ja": "編成中の前列英雄の攻撃力が3.5%上昇します",
+                "ru": "Атака задействованных героев переднего ряда увеличивается на 3.5%.",
+                "zh-tw": "編隊前排英雄攻擊提升3.5%。",
+                "de": "Erhöht den Angriff der eingesetzten Helden in der ersten Reihe um 3.5%."
+              },
+              "trainingStage": 2,
+              "arguments": [
+                "3.5%"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "hardhead-3",
+          "slot": 3,
+          "names": {
+            "ko": "전방 습격",
+            "en": "Linebreaker",
+            "ja": "陣形破り",
+            "ru": "Прорыв строя",
+            "zh-tw": "破陣強襲",
+            "de": "Linienbrecher"
+          },
+          "src": "/img/game-41/pet-skills/hardhead-3.webp",
+          "unlockStage": 4,
+          "maxLevel": 1,
+          "highestVerifiedLevel": 1,
+          "status": "verified-max",
+          "levels": [
+            {
+              "level": 1,
+              "description": {
+                "ko": "적군 전방 영웅이 받는 대미지가 3.5% 증가합니다.",
+                "en": "Increases damage taken by front-row enemy Heroes by 3.5%.",
+                "ja": "敵前列の英雄が受けるダメージが3.5%増加します",
+                "ru": "Урон, полученный вражескими героями переднего ряда, увеличивается на 3.5%.",
+                "zh-tw": "敵方前排英雄受到的傷害提升3.5%。",
+                "de": "Erhöht den von feindlichen Helden in der ersten Reihe erlittenen Schaden um 3.5%."
+              },
+              "trainingStage": 4,
+              "arguments": [
+                "3.5%"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "hardhead-4",
+          "slot": 4,
+          "names": {
+            "ko": "튼튼한 본능",
+            "en": "Natural Plating",
+            "ja": "不屈の重甲",
+            "ru": "Естественная защита",
+            "zh-tw": "厚甲天成",
+            "de": "Natürlicher Panzer"
+          },
+          "src": "/img/game-41/pet-skills/hardhead-4.webp",
+          "unlockStage": 5,
+          "maxLevel": 1,
+          "highestVerifiedLevel": 1,
+          "status": "verified-max",
+          "levels": [
+            {
+              "level": 1,
+              "description": {
+                "ko": "펫 속성이 7.5% 증가합니다.",
+                "en": "Increases Pet Stats by 7.5%.",
+                "ja": "ペットのステータスが7.5%上昇します",
+                "ru": "Характеристики питомца увеличиваются на 7.5%.",
+                "zh-tw": "寵物屬性提升7.5%。",
+                "de": "Erhöht Haustierwerte um 7.5%."
+              },
+              "trainingStage": 5,
+              "arguments": [
+                "7.5%"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "shadow",
+      "names": {
+        "ko": "쉐도우",
+        "en": "Shadow",
+        "ja": "シャドウ",
+        "ru": "Дымок",
+        "zh-tw": "小影",
+        "de": "Schatten"
+      },
+      "skills": [
+        {
+          "id": "shadow-1",
+          "slot": 1,
+          "names": {
+            "ko": "섀도우 헌터",
+            "en": "Shadow Hunt",
+            "ja": "影の追跡者",
+            "ru": "Теневая охота",
+            "zh-tw": "影襲獵痕",
+            "de": "Schattenjagd"
+          },
+          "src": "/img/game-41/pet-skills/shadow-1.webp",
+          "unlockStage": 0,
+          "maxLevel": 6,
+          "highestVerifiedLevel": 6,
+          "status": "verified-max",
+          "levels": [
+            {
+              "level": 1,
+              "description": {
+                "ko": "그림자 늑대가 목표를 포착합니다. 전투 시작 시 랜덤으로 적군 영웅 1명에게 표식을 남겨 목표가 받는 대미지를 20% 증가시키며, 10초간 지속됩니다.",
+                "en": "The Shadow Hound locks onto its prey. At the start of battle, marks 1 random enemy Hero, increasing damage taken by the target by 20% for 10s.",
+                "ja": "シャドウハウンドが獲物を狙い定めます。戦闘開始時、ランダムな敵英雄1名をマークし、その対象が受けるダメージを20%増加させます。効果は10秒間持続します",
+                "ru": "Теневая гончая берет след цели. В начале боя отмечает 1 случайного вражеского героя, увеличивая получаемый целью урон на 20% в течение 10.",
+                "zh-tw": "影狼鎖定目標。戰鬥開始時，標記隨機1名敵方英雄，使目標受到的傷害提高20%，持續10秒。",
+                "de": "Der Schattenhund visiert seine Beute an. Markiert zu Beginn des Kampfes 1 zufälligen feindlichen Helden und erhöht den vom Ziel erlittenen Schaden für 10 Sek. um 20%."
+              },
+              "trainingStage": 0,
+              "arguments": [
+                "20%",
+                "10"
+              ]
+            },
+            {
+              "level": 2,
+              "description": {
+                "ko": "그림자 늑대가 목표를 포착합니다. 전투 시작 시 랜덤으로 적군 영웅 1명에게 표식을 남겨 목표가 받는 대미지를 20% 증가시키며, 10초간 지속됩니다.",
+                "en": "The Shadow Hound locks onto its prey. At the start of battle, marks 1 random enemy Hero, increasing damage taken by the target by 20% for 10s.",
+                "ja": "シャドウハウンドが獲物を狙い定めます。戦闘開始時、ランダムな敵英雄1名をマークし、その対象が受けるダメージを20%増加させます。効果は10秒間持続します",
+                "ru": "Теневая гончая берет след цели. В начале боя отмечает 1 случайного вражеского героя, увеличивая получаемый целью урон на 20% в течение 10.",
+                "zh-tw": "影狼鎖定目標。戰鬥開始時，標記隨機1名敵方英雄，使目標受到的傷害提高20%，持續10秒。",
+                "de": "Der Schattenhund visiert seine Beute an. Markiert zu Beginn des Kampfes 1 zufälligen feindlichen Helden und erhöht den vom Ziel erlittenen Schaden für 10 Sek. um 20%."
+              },
+              "trainingStage": 1,
+              "arguments": [
+                "20%",
+                "10"
+              ]
+            },
+            {
+              "level": 3,
+              "description": {
+                "ko": "그림자 늑대가 목표를 포착합니다. 전투 시작 시 랜덤으로 적군 영웅 1명에게 표식을 남겨 목표가 받는 대미지를 20% 증가시키며, 10초간 지속됩니다.",
+                "en": "The Shadow Hound locks onto its prey. At the start of battle, marks 1 random enemy Hero, increasing damage taken by the target by 20% for 10s.",
+                "ja": "シャドウハウンドが獲物を狙い定めます。戦闘開始時、ランダムな敵英雄1名をマークし、その対象が受けるダメージを20%増加させます。効果は10秒間持続します",
+                "ru": "Теневая гончая берет след цели. В начале боя отмечает 1 случайного вражеского героя, увеличивая получаемый целью урон на 20% в течение 10.",
+                "zh-tw": "影狼鎖定目標。戰鬥開始時，標記隨機1名敵方英雄，使目標受到的傷害提高20%，持續10秒。",
+                "de": "Der Schattenhund visiert seine Beute an. Markiert zu Beginn des Kampfes 1 zufälligen feindlichen Helden und erhöht den vom Ziel erlittenen Schaden für 10 Sek. um 20%."
+              },
+              "trainingStage": 2,
+              "arguments": [
+                "20%",
+                "10"
+              ]
+            },
+            {
+              "level": 4,
+              "description": {
+                "ko": "그림자 늑대가 목표를 포착합니다. 전투 시작 시 랜덤으로 적군 영웅 1명에게 표식을 남겨 목표가 받는 대미지를 20% 증가시키며, 10초간 지속됩니다.",
+                "en": "The Shadow Hound locks onto its prey. At the start of battle, marks 1 random enemy Hero, increasing damage taken by the target by 20% for 10s.",
+                "ja": "シャドウハウンドが獲物を狙い定めます。戦闘開始時、ランダムな敵英雄1名をマークし、その対象が受けるダメージを20%増加させます。効果は10秒間持続します",
+                "ru": "Теневая гончая берет след цели. В начале боя отмечает 1 случайного вражеского героя, увеличивая получаемый целью урон на 20% в течение 10.",
+                "zh-tw": "影狼鎖定目標。戰鬥開始時，標記隨機1名敵方英雄，使目標受到的傷害提高20%，持續10秒。",
+                "de": "Der Schattenhund visiert seine Beute an. Markiert zu Beginn des Kampfes 1 zufälligen feindlichen Helden und erhöht den vom Ziel erlittenen Schaden für 10 Sek. um 20%."
+              },
+              "trainingStage": 3,
+              "arguments": [
+                "20%",
+                "10"
+              ]
+            },
+            {
+              "level": 5,
+              "description": {
+                "ko": "그림자 늑대가 목표를 포착합니다. 전투 시작 시 랜덤으로 적군 영웅 1명에게 표식을 남겨 목표가 받는 대미지를 20% 증가시키며, 10초간 지속됩니다.",
+                "en": "The Shadow Hound locks onto its prey. At the start of battle, marks 1 random enemy Hero, increasing damage taken by the target by 20% for 10s.",
+                "ja": "シャドウハウンドが獲物を狙い定めます。戦闘開始時、ランダムな敵英雄1名をマークし、その対象が受けるダメージを20%増加させます。効果は10秒間持続します",
+                "ru": "Теневая гончая берет след цели. В начале боя отмечает 1 случайного вражеского героя, увеличивая получаемый целью урон на 20% в течение 10.",
+                "zh-tw": "影狼鎖定目標。戰鬥開始時，標記隨機1名敵方英雄，使目標受到的傷害提高20%，持續10秒。",
+                "de": "Der Schattenhund visiert seine Beute an. Markiert zu Beginn des Kampfes 1 zufälligen feindlichen Helden und erhöht den vom Ziel erlittenen Schaden für 10 Sek. um 20%."
+              },
+              "trainingStage": 4,
+              "arguments": [
+                "20%",
+                "10"
+              ]
+            },
+            {
+              "level": 6,
+              "description": {
+                "ko": "그림자 늑대가 목표를 포착합니다. 전투 시작 시 랜덤으로 적군 영웅 1명에게 표식을 남겨 목표가 받는 대미지를 20% 증가시키며, 10초간 지속됩니다.",
+                "en": "The Shadow Hound locks onto its prey. At the start of battle, marks 1 random enemy Hero, increasing damage taken by the target by 20% for 10s.",
+                "ja": "シャドウハウンドが獲物を狙い定めます。戦闘開始時、ランダムな敵英雄1名をマークし、その対象が受けるダメージを20%増加させます。効果は10秒間持続します",
+                "ru": "Теневая гончая берет след цели. В начале боя отмечает 1 случайного вражеского героя, увеличивая получаемый целью урон на 20% в течение 10.",
+                "zh-tw": "影狼鎖定目標。戰鬥開始時，標記隨機1名敵方英雄，使目標受到的傷害提高20%，持續10秒。",
+                "de": "Der Schattenhund visiert seine Beute an. Markiert zu Beginn des Kampfes 1 zufälligen feindlichen Helden und erhöht den vom Ziel erlittenen Schaden für 10 Sek. um 20%."
+              },
+              "trainingStage": 5,
+              "arguments": [
+                "20%",
+                "10"
+              ]
+            }
+          ],
+          "additionalLimit": {
+            "ko": "레벨이 달라도 이 스킬의 설명 수치는 동일합니다.",
+            "en": "The values in this skill description are the same at every skill level.",
+            "ja": "このスキルの説明中の数値は、スキルレベルによらず同じです。",
+            "ru": "Числа в описании этого навыка одинаковы на всех его уровнях.",
+            "zh-tw": "此技能說明中的數值在各技能等級皆相同。",
+            "de": "Die Werte in dieser Fertigkeitsbeschreibung sind auf allen Fertigkeitsstufen gleich."
+          }
+        },
+        {
+          "id": "shadow-2",
+          "slot": 2,
+          "names": {
+            "ko": "핏빛 흔적",
+            "en": "Blood Trail",
+            "ja": "鮮血の軌跡",
+            "ru": "Кровавый след",
+            "zh-tw": "血跡追獵",
+            "de": "Blutspur"
+          },
+          "src": "/img/game-41/pet-skills/shadow-2.webp",
+          "unlockStage": 2,
+          "maxLevel": 1,
+          "highestVerifiedLevel": 1,
+          "status": "verified-max",
+          "levels": [
+            {
+              "level": 1,
+              "description": {
+                "ko": "진형 영웅의 공격력이 1.5% 증가합니다.",
+                "en": "Increases deployed Heroes' Attack by 1.5%.",
+                "ja": "編成中の英雄の攻撃力が1.5%上昇します",
+                "ru": "Атака задействованных героев увеличивается на 1.5%.",
+                "zh-tw": "編隊英雄攻擊提升1.5%。",
+                "de": "Erhöht den Angriff von eingesetzten Helden um 1.5%."
+              },
+              "trainingStage": 2,
+              "arguments": [
+                "1.5%"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "shadow-3",
+          "slot": 3,
+          "names": {
+            "ko": "사냥의 광기",
+            "en": "Hunting Frenzy",
+            "ja": "狩猟の熱狂",
+            "ru": "Безумная охота",
+            "zh-tw": "狩獵狂熱",
+            "de": "Jagdrausch"
+          },
+          "src": "/img/game-41/pet-skills/shadow-3.webp",
+          "unlockStage": 4,
+          "maxLevel": 1,
+          "highestVerifiedLevel": 1,
+          "status": "verified-max",
+          "levels": [
+            {
+              "level": 1,
+              "description": {
+                "ko": "진형 영웅이 체력이 35% 미만인 목표를 공격할 때 공격력이 7.5% 증가합니다.",
+                "en": "When deployed Heroes attack targets below 35% Health, their Attack increases by 7.5%.",
+                "ja": "編成中の英雄がHP35%未満の対象を攻撃する時、攻撃力が7.5%上昇します",
+                "ru": "Когда задействованные герои атакуют цели, чье здоровье меньше 35%, их атака увеличивается на 7.5%.",
+                "zh-tw": "編隊英雄攻擊生命低於35%的目標時，攻擊提升7.5%。",
+                "de": "Wenn eingesetzte Helden Ziele unter 35 % Zustand angreifen, wird ihr Angriff um 7.5% erhöht."
+              },
+              "trainingStage": 4,
+              "arguments": [
+                "7.5%"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "shadow-4",
+          "slot": 4,
+          "names": {
+            "ko": "포식자의 각성",
+            "en": "Predator's Instinct",
+            "ja": "狩猟本能",
+            "ru": "Инстинкт хищника",
+            "zh-tw": "獵性覺醒",
+            "de": "Raubtierinstinkt"
+          },
+          "src": "/img/game-41/pet-skills/shadow-4.webp",
+          "unlockStage": 5,
+          "maxLevel": 1,
+          "highestVerifiedLevel": 1,
+          "status": "verified-max",
+          "levels": [
+            {
+              "level": 1,
+              "description": {
+                "ko": "펫 속성이 7.5% 증가합니다.",
+                "en": "Increases Pet Stats by 7.5%.",
+                "ja": "ペットのステータスが7.5%上昇します",
+                "ru": "Характеристики питомца увеличиваются на 7.5%.",
+                "zh-tw": "寵物屬性提升7.5%。",
+                "de": "Erhöht Haustierwerte um 7.5%."
+              },
+              "trainingStage": 5,
+              "arguments": [
+                "7.5%"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "starhorn",
+      "names": {
+        "ko": "별뿔이",
+        "en": "Starhorn",
+        "ja": "スターホーン",
+        "ru": "Астра",
+        "zh-tw": "星角",
+        "de": "Sternhorn"
+      },
+      "skills": [
+        {
+          "id": "starhorn-1",
+          "slot": 1,
+          "names": {
+            "ko": "별빛 소원",
+            "en": "Starlit Wish",
+            "ja": "星明りの秘奥",
+            "ru": "Звездное пожелание",
+            "zh-tw": "星輝祝願",
+            "de": "Sternenwunsch"
+          },
+          "src": "/img/game-41/pet-skills/starhorn-1.webp",
+          "unlockStage": 0,
+          "maxLevel": 6,
+          "highestVerifiedLevel": 6,
+          "status": "verified-max",
+          "levels": [
+            {
+              "level": 1,
+              "description": {
+                "ko": "별빛 사슴이 별빛을 뿌려 아군을 격려합니다. 전투 시작 시 아군 전방 영웅의 방어력을 20%, 후방 영웅의 공격력을 8% 증가시키며, 10초간 지속됩니다.",
+                "en": "The Starlight Deer showers the team in starlight. At the start of battle, increases front-row ally Heroes' Defense by 20% and back-row ally Heroes' Attack by 8% for 10s.",
+                "ja": "ステラディアが星の光を降り注がせ、部隊を鼓舞します。戦闘開始時、味方前列の英雄の防御力を20%、味方後列の英雄の攻撃力を8%上昇させます。効果は10秒間持続します",
+                "ru": "Звездный олень озаряет команду звездным светом. В начале боя повышает защиту союзных героев переднего ряда на 20% и атаку союзных героев заднего ряда на 8% в течение 10 сек.",
+                "zh-tw": "星光鹿灑下星輝鼓舞隊伍。戰鬥開始時，使己方前排英雄防禦提升20%，後排英雄攻擊提升8%，持續10秒。",
+                "de": "Der Sternenlicht-Hirsch überschüttet das Team mit Sternenlicht. Erhöht zu Beginn des Kampfes die Verteidigung von verbündeten Helden in der ersten Reihe um 20% und den Angriff von verbündeten Helden in der hinteren Reihe für 10 Sek. um 8%."
+              },
+              "trainingStage": 0,
+              "arguments": [
+                "20%",
+                "8%",
+                "10"
+              ]
+            },
+            {
+              "level": 2,
+              "description": {
+                "ko": "별빛 사슴이 별빛을 뿌려 아군을 격려합니다. 전투 시작 시 아군 전방 영웅의 방어력을 20%, 후방 영웅의 공격력을 8% 증가시키며, 10초간 지속됩니다.",
+                "en": "The Starlight Deer showers the team in starlight. At the start of battle, increases front-row ally Heroes' Defense by 20% and back-row ally Heroes' Attack by 8% for 10s.",
+                "ja": "ステラディアが星の光を降り注がせ、部隊を鼓舞します。戦闘開始時、味方前列の英雄の防御力を20%、味方後列の英雄の攻撃力を8%上昇させます。効果は10秒間持続します",
+                "ru": "Звездный олень озаряет команду звездным светом. В начале боя повышает защиту союзных героев переднего ряда на 20% и атаку союзных героев заднего ряда на 8% в течение 10 сек.",
+                "zh-tw": "星光鹿灑下星輝鼓舞隊伍。戰鬥開始時，使己方前排英雄防禦提升20%，後排英雄攻擊提升8%，持續10秒。",
+                "de": "Der Sternenlicht-Hirsch überschüttet das Team mit Sternenlicht. Erhöht zu Beginn des Kampfes die Verteidigung von verbündeten Helden in der ersten Reihe um 20% und den Angriff von verbündeten Helden in der hinteren Reihe für 10 Sek. um 8%."
+              },
+              "trainingStage": 1,
+              "arguments": [
+                "20%",
+                "8%",
+                "10"
+              ]
+            },
+            {
+              "level": 3,
+              "description": {
+                "ko": "별빛 사슴이 별빛을 뿌려 아군을 격려합니다. 전투 시작 시 아군 전방 영웅의 방어력을 20%, 후방 영웅의 공격력을 8% 증가시키며, 10초간 지속됩니다.",
+                "en": "The Starlight Deer showers the team in starlight. At the start of battle, increases front-row ally Heroes' Defense by 20% and back-row ally Heroes' Attack by 8% for 10s.",
+                "ja": "ステラディアが星の光を降り注がせ、部隊を鼓舞します。戦闘開始時、味方前列の英雄の防御力を20%、味方後列の英雄の攻撃力を8%上昇させます。効果は10秒間持続します",
+                "ru": "Звездный олень озаряет команду звездным светом. В начале боя повышает защиту союзных героев переднего ряда на 20% и атаку союзных героев заднего ряда на 8% в течение 10 сек.",
+                "zh-tw": "星光鹿灑下星輝鼓舞隊伍。戰鬥開始時，使己方前排英雄防禦提升20%，後排英雄攻擊提升8%，持續10秒。",
+                "de": "Der Sternenlicht-Hirsch überschüttet das Team mit Sternenlicht. Erhöht zu Beginn des Kampfes die Verteidigung von verbündeten Helden in der ersten Reihe um 20% und den Angriff von verbündeten Helden in der hinteren Reihe für 10 Sek. um 8%."
+              },
+              "trainingStage": 2,
+              "arguments": [
+                "20%",
+                "8%",
+                "10"
+              ]
+            },
+            {
+              "level": 4,
+              "description": {
+                "ko": "별빛 사슴이 별빛을 뿌려 아군을 격려합니다. 전투 시작 시 아군 전방 영웅의 방어력을 20%, 후방 영웅의 공격력을 8% 증가시키며, 10초간 지속됩니다.",
+                "en": "The Starlight Deer showers the team in starlight. At the start of battle, increases front-row ally Heroes' Defense by 20% and back-row ally Heroes' Attack by 8% for 10s.",
+                "ja": "ステラディアが星の光を降り注がせ、部隊を鼓舞します。戦闘開始時、味方前列の英雄の防御力を20%、味方後列の英雄の攻撃力を8%上昇させます。効果は10秒間持続します",
+                "ru": "Звездный олень озаряет команду звездным светом. В начале боя повышает защиту союзных героев переднего ряда на 20% и атаку союзных героев заднего ряда на 8% в течение 10 сек.",
+                "zh-tw": "星光鹿灑下星輝鼓舞隊伍。戰鬥開始時，使己方前排英雄防禦提升20%，後排英雄攻擊提升8%，持續10秒。",
+                "de": "Der Sternenlicht-Hirsch überschüttet das Team mit Sternenlicht. Erhöht zu Beginn des Kampfes die Verteidigung von verbündeten Helden in der ersten Reihe um 20% und den Angriff von verbündeten Helden in der hinteren Reihe für 10 Sek. um 8%."
+              },
+              "trainingStage": 3,
+              "arguments": [
+                "20%",
+                "8%",
+                "10"
+              ]
+            },
+            {
+              "level": 5,
+              "description": {
+                "ko": "별빛 사슴이 별빛을 뿌려 아군을 격려합니다. 전투 시작 시 아군 전방 영웅의 방어력을 20%, 후방 영웅의 공격력을 8% 증가시키며, 10초간 지속됩니다.",
+                "en": "The Starlight Deer showers the team in starlight. At the start of battle, increases front-row ally Heroes' Defense by 20% and back-row ally Heroes' Attack by 8% for 10s.",
+                "ja": "ステラディアが星の光を降り注がせ、部隊を鼓舞します。戦闘開始時、味方前列の英雄の防御力を20%、味方後列の英雄の攻撃力を8%上昇させます。効果は10秒間持続します",
+                "ru": "Звездный олень озаряет команду звездным светом. В начале боя повышает защиту союзных героев переднего ряда на 20% и атаку союзных героев заднего ряда на 8% в течение 10 сек.",
+                "zh-tw": "星光鹿灑下星輝鼓舞隊伍。戰鬥開始時，使己方前排英雄防禦提升20%，後排英雄攻擊提升8%，持續10秒。",
+                "de": "Der Sternenlicht-Hirsch überschüttet das Team mit Sternenlicht. Erhöht zu Beginn des Kampfes die Verteidigung von verbündeten Helden in der ersten Reihe um 20% und den Angriff von verbündeten Helden in der hinteren Reihe für 10 Sek. um 8%."
+              },
+              "trainingStage": 4,
+              "arguments": [
+                "20%",
+                "8%",
+                "10"
+              ]
+            },
+            {
+              "level": 6,
+              "description": {
+                "ko": "별빛 사슴이 별빛을 뿌려 아군을 격려합니다. 전투 시작 시 아군 전방 영웅의 방어력을 20%, 후방 영웅의 공격력을 8% 증가시키며, 10초간 지속됩니다.",
+                "en": "The Starlight Deer showers the team in starlight. At the start of battle, increases front-row ally Heroes' Defense by 20% and back-row ally Heroes' Attack by 8% for 10s.",
+                "ja": "ステラディアが星の光を降り注がせ、部隊を鼓舞します。戦闘開始時、味方前列の英雄の防御力を20%、味方後列の英雄の攻撃力を8%上昇させます。効果は10秒間持続します",
+                "ru": "Звездный олень озаряет команду звездным светом. В начале боя повышает защиту союзных героев переднего ряда на 20% и атаку союзных героев заднего ряда на 8% в течение 10 сек.",
+                "zh-tw": "星光鹿灑下星輝鼓舞隊伍。戰鬥開始時，使己方前排英雄防禦提升20%，後排英雄攻擊提升8%，持續10秒。",
+                "de": "Der Sternenlicht-Hirsch überschüttet das Team mit Sternenlicht. Erhöht zu Beginn des Kampfes die Verteidigung von verbündeten Helden in der ersten Reihe um 20% und den Angriff von verbündeten Helden in der hinteren Reihe für 10 Sek. um 8%."
+              },
+              "trainingStage": 5,
+              "arguments": [
+                "20%",
+                "8%",
+                "10"
+              ]
+            }
+          ],
+          "additionalLimit": {
+            "ko": "레벨이 달라도 이 스킬의 설명 수치는 동일합니다.",
+            "en": "The values in this skill description are the same at every skill level.",
+            "ja": "このスキルの説明中の数値は、スキルレベルによらず同じです。",
+            "ru": "Числа в описании этого навыка одинаковы на всех его уровнях.",
+            "zh-tw": "此技能說明中的數值在各技能等級皆相同。",
+            "de": "Die Werte in dieser Fertigkeitsbeschreibung sind auf allen Fertigkeitsstufen gleich."
+          }
+        },
+        {
+          "id": "starhorn-2",
+          "slot": 2,
+          "names": {
+            "ko": "별빛의 가호",
+            "en": "Starlit Aegis",
+            "ja": "星幕の加護",
+            "ru": "Звездный покров",
+            "zh-tw": "星幕庇護",
+            "de": "Sternenlicht-Aegis"
+          },
+          "src": "/img/game-41/pet-skills/starhorn-2.webp",
+          "unlockStage": 2,
+          "maxLevel": 1,
+          "highestVerifiedLevel": 1,
+          "status": "verified-max",
+          "levels": [
+            {
+              "level": 1,
+              "description": {
+                "ko": "진형 영웅의 체력이 3% 증가합니다.",
+                "en": "Increases deployed Heroes' Health by 3%.",
+                "ja": "編成中の英雄のHPが3%上昇します",
+                "ru": "Здоровье задействованных героев увеличивается на 3%.",
+                "zh-tw": "編隊英雄生命提升3%。",
+                "de": "Erhöht den Zustand von eingesetzten Helden um 3%."
+              },
+              "trainingStage": 2,
+              "arguments": [
+                "3%"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "starhorn-3",
+          "slot": 3,
+          "names": {
+            "ko": "별빛의 은총",
+            "en": "Starlight Grace",
+            "ja": "星明りの恩寵",
+            "ru": "Изящество звезд",
+            "zh-tw": "星輝潤澤",
+            "de": "Sternenlichtanmut"
+          },
+          "src": "/img/game-41/pet-skills/starhorn-3.webp",
+          "unlockStage": 4,
+          "maxLevel": 1,
+          "highestVerifiedLevel": 1,
+          "status": "verified-max",
+          "levels": [
+            {
+              "level": 1,
+              "description": {
+                "ko": "진형 영웅이 받는 스킬 대미지가 2.5% 감소합니다.",
+                "en": "Reduces Skill Damage taken by deployed Heroes by 2.5%.",
+                "ja": "編成中の英雄が受けるスキルダメージを2.5%軽減します",
+                "ru": "Полученный урон от навыка задействованных героев уменьшается на 2.5%.",
+                "zh-tw": "編隊英雄受到技能傷害降低2.5%。",
+                "de": "Reduziert den von eingesetzten Helden erlittenen Fähigkeitenschaden um 2.5%."
+              },
+              "trainingStage": 4,
+              "arguments": [
+                "2.5%"
+              ]
+            }
+          ]
+        },
+        {
+          "id": "starhorn-4",
+          "slot": 4,
+          "names": {
+            "ko": "별빛의 축복",
+            "en": "Astral Blessing",
+            "ja": "星霊の祝福",
+            "ru": "Звездное благословение",
+            "zh-tw": "星靈祝福",
+            "de": "Astraler Segen"
+          },
+          "src": "/img/game-41/pet-skills/starhorn-4.webp",
+          "unlockStage": 5,
+          "maxLevel": 1,
+          "highestVerifiedLevel": 1,
+          "status": "verified-max",
+          "levels": [
+            {
+              "level": 1,
+              "description": {
+                "ko": "펫 속성이 10% 증가합니다.",
+                "en": "Increases Pet Stats by 10%.",
+                "ja": "ペットのステータスが10%上昇します",
+                "ru": "Характеристики питомца увеличиваются на 10%.",
+                "zh-tw": "寵物屬性提升10%。",
+                "de": "Erhöht Haustierwerte um 10%."
+              },
+              "trainingStage": 5,
+              "arguments": [
+                "10%"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

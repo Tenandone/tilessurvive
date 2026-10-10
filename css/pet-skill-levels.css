@@ -1,0 +1,32 @@
+/* Scoped pet skill controls share the established green, ink and paper palette. */
+[data-pet-skill-levels]{--skill-ink:#17362c;--skill-muted:#52654f;--skill-line:#d9ded5;--skill-green:#245c49}
+[data-pet-skill-levels] [hidden]{display:none!important}
+[data-pet-skill-levels] .pet-skill-scope{color:var(--skill-muted);font-size:14px;line-height:1.7;margin:0 0 8px}
+[data-pet-skill-levels] .pet-skill-list{display:grid;grid-template-columns:1fr;gap:0}
+[data-pet-skill-levels] .pet-level-skill{min-width:0;padding:24px 0;border-bottom:1px solid var(--skill-line)}
+[data-pet-skill-levels] .pet-skill-heading{display:flex;gap:16px;align-items:center;min-width:0;margin-bottom:14px}
+[data-pet-skill-levels] .pet-skill-heading img{width:56px;height:56px;object-fit:contain;flex-shrink:0;border:0;border-radius:0}
+[data-pet-skill-levels] .pet-skill-heading>div{min-width:0}
+[data-pet-skill-levels] h3{font-size:19px;line-height:1.4;margin:0 0 4px;color:var(--skill-ink);overflow-wrap:anywhere}
+[data-pet-skill-levels] .ts3-pet-skill-unlock{font-size:13px;font-weight:600;line-height:1.6;color:var(--skill-green);margin:0}
+[data-pet-skill-levels] .pet-skill-range{color:var(--skill-muted);font-size:13px;line-height:1.6;margin:0 0 12px}
+[data-pet-skill-levels] .pet-skill-controls{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:end;margin-bottom:16px}
+[data-pet-skill-levels] .pet-skill-select-label{display:grid;gap:5px;min-width:140px;max-width:100%;font-size:13px;font-weight:600;color:var(--skill-ink)}
+[data-pet-skill-levels] select{min-width:0;width:100%;min-height:44px;padding:9px 32px 9px 10px;border:1px solid #a9b9aa;border-radius:6px;background:#fff;color:var(--skill-ink);font:inherit;font-size:14px}
+[data-pet-skill-levels] .pet-skill-compare-toggle{display:flex;gap:8px;align-items:center;min-height:44px;font-size:14px;cursor:pointer;line-height:1.5}
+[data-pet-skill-levels] input[type=checkbox]{width:18px;height:18px;margin:0;accent-color:var(--skill-green);flex-shrink:0}
+[data-pet-skill-levels] .pet-skill-effects{display:grid;grid-template-columns:1fr;gap:16px}
+[data-pet-skill-levels] .pet-skill-effects.is-comparing{grid-template-columns:repeat(2,minmax(0,1fr))}
+[data-pet-skill-levels] .pet-skill-effect-panel{min-width:0;border-left:3px solid #8fa58d;padding:4px 0 4px 13px}
+[data-pet-skill-levels] .pet-skill-effect-label{font-size:13px;color:var(--skill-green);font-weight:650;line-height:1.6;margin:0 0 6px}
+[data-pet-skill-levels] .ts3-pet-skill-description,[data-pet-skill-levels] [data-skill-comparison-effect]{font-size:15px;line-height:1.85;margin:0;overflow-wrap:anywhere;white-space:pre-line}
+[data-pet-skill-levels] .pet-skill-training,[data-pet-skill-levels] .ts3-pet-skill-limit{font-size:13px;line-height:1.7;margin:10px 0 0;color:var(--skill-muted)}
+[data-pet-skill-levels] .pet-skill-reference{margin-top:14px}
+[data-pet-skill-levels] .pet-skill-reference summary{cursor:pointer;min-height:44px;display:list-item;align-content:center;color:var(--skill-green);font-size:14px;font-weight:600;padding:10px 0}
+[data-pet-skill-levels] .pet-skill-table-wrap{overflow-x:auto;max-width:100%}
+[data-pet-skill-levels] table{width:100%;border-collapse:collapse;font-size:14px}
+[data-pet-skill-levels] th,[data-pet-skill-levels] td{padding:10px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--skill-line);line-height:1.75;overflow-wrap:anywhere;white-space:pre-line}
+[data-pet-skill-levels] th:first-child{min-width:56px;white-space:nowrap}
+[data-pet-skill-levels] :is(input,select,summary,a):focus-visible{outline:3px solid #a47b2e;outline-offset:3px}
+@media(max-width:680px){[data-pet-skill-levels] .pet-skill-effects.is-comparing{grid-template-columns:1fr}[data-pet-skill-levels] .pet-skill-heading{gap:12px}[data-pet-skill-levels] .pet-skill-heading img{width:48px;height:48px}[data-pet-skill-levels] h3{font-size:18px}[data-pet-skill-levels] .pet-skill-controls{gap:8px 14px}[data-pet-skill-levels] .pet-skill-select-label{flex:1 1 120px}[data-pet-skill-levels] .pet-skill-compare-toggle{flex:1 1 100%}[data-pet-skill-levels] th,[data-pet-skill-levels] td{padding:8px 6px;font-size:13px}}
+@media(prefers-reduced-motion:reduce){[data-pet-skill-levels] *,[data-pet-skill-levels] *::before,[data-pet-skill-levels] *::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}

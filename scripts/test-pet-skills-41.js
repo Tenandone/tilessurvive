@@ -5,7 +5,10 @@ const {parseHTML}=require('linkedom'),{imageSize}=require('image-size');
 const {applyPetSkills,applyPetRoster}=require('./build-pet-skills-41'),data=require('../data/foundation-40/pet-skills-41.json'),copy=require('../data/foundation-40/pet-skills-copy-41'),legacy=require('./lib/pet-skills-legacy-41.json');
 const root=path.resolve(__dirname,'..'),base='7cff5de8f7fd4be6c77f2f017e43e19143c802ef';
 const langs=['ko','en','ja','ru','zh-tw'],pets=['snowball','dodo','buckler','hardhead','shadow','starhorn'];
-const sha=b=>crypto.createHash('sha256').update(b).digest('hex'),read=f=>fs.readFileSync(path.join(root,f),'utf8'),doc=s=>parseHTML(s).document;
+// Retain tests for the legacy builder/model consumed during full builds. The
+// current six-language level selector is tested in test-pet-skill-levels.js.
+const sha=b=>crypto.createHash('sha256').update(b).digest('hex'),doc=s=>parseHTML(s).document;
+const read=f=>{const s=fs.readFileSync(path.join(root,f),'utf8');return f.endsWith('.html')?'<!DOCTYPE html>\n'+require('./pet-skill-levels-test-allowances').restoreLegacyDocument(doc(s),f).documentElement.outerHTML+'\n':s;};
 const stable=v=>v&&typeof v==='object'?(Array.isArray(v)?v.map(stable):Object.fromEntries(Object.keys(v).sort().map(k=>[k,stable(v[k])]))):v;
 const modelHash=v=>sha(JSON.stringify(stable(v)));
 // Pins cover only the reviewed public projection and derivatives, never private game source data.
@@ -171,7 +174,7 @@ test('roster overlays are byte-idempotent and reject missing, altered or duplica
  const badHref=fresh();applyPetRoster(badHref,'ko');badHref.querySelector('[data-pet-skill-roster-41]').setAttribute('href','/ko/');assert.throws(()=>applyPetRoster(badHref,'ko'));
 });
 
-test('120 skill search anchors add exact visible names and Lv.1 descriptions while all 665 prior entries stay intact',()=>{
+test('120 original skill search anchors retain their identities and show the current highest verified descriptions',()=>{
  const old=JSON.parse(execFileSync('git',['show',base+':data/search-index.json'],{cwd:root,encoding:'utf8',maxBuffer:4e6})),current=require('./lib/item-chest-regression-41').withoutChestSearch(JSON.parse(read('data/search-index.json')));
  assert.equal(old.itemCount,665);assert.equal(current.itemCount,current.items.length);
  const key=x=>x.language+'|'+x.url,oldByKey=new Map(old.items.map(x=>[key(x),x])),nowByKey=new Map(current.items.map(x=>[key(x),x]));
@@ -181,9 +184,10 @@ test('120 skill search anchors add exact visible names and Lv.1 descriptions whi
  let additions=0;
  for(const lang of langs)for(const s of data.skills){
   const route=`/${lang}/database/pet-system/${s.pet}/`,anchor=`pet-skill-${s.slot}-41`,url=route+'#'+anchor,pet=names.find(p=>p.id===s.pet);
-  const expected={language:lang,type:'database',title:`${pet.names[lang]} · ${s.names[lang]}`,description:`Lv.1 · ${s.description[lang]}`,url};
+  const currentPet=require('../data/pet-skill-levels.json').pets.find(p=>p.id===s.pet),skill=currentPet.skills.find(x=>x.slot===s.slot),highest=skill.levels.find(x=>x.level===skill.highestVerifiedLevel);
+  const expected={language:lang,type:'database',title:`${currentPet.names[lang]} · ${skill.names[lang]}`,description:`Lv.${highest.level} · ${highest.description[lang]}`,url};
   assert.equal(oldByKey.has(key(expected)),false);assert.deepEqual(nowByKey.get(key(expected)),expected);
-  const card=doc(read(page(lang,s.pet))).getElementById(anchor);assert.ok(card);assert.equal(card.querySelector('.ts3-pet-skill-description').textContent,s.description[lang]);additions++;
+  const card=doc(fs.readFileSync(path.join(root,page(lang,s.pet)),'utf8')).getElementById(anchor);assert.ok(card);assert.equal(card.querySelector('.ts3-pet-skill-description').textContent,highest.description[lang]);additions++;
  }
  assert.equal(additions,120);assert.equal(data.skills.length*langs.length,120);
 });

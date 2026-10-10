@@ -38,6 +38,10 @@ function expectedSitemapURLs(){
 function reviewedTables(doc,lang,route){
  const G=require('./build-growth-50'),model=require('../data/product-50/growth-gear.json'),set=new Set();
  function exact(selector,expected){const nodes=[...doc.querySelectorAll(selector)];assert.equal(nodes.length,1,route+' exact new block count');const e=parseHTML(expected).document.querySelector(selector);assert(e);assert.equal(nodes[0].outerHTML,e.outerHTML,route+' exact added block');nodes[0].querySelectorAll('table').forEach(t=>set.add(t));}
+ if(doc.querySelector('[data-pet-skill-levels]')){
+  const data=require('../data/pet-skill-levels.json'),pet=data.pets.find(p=>route===`/${lang}/database/pet-system/${p.id}/`);assert(pet,'Unapproved pet skill table route');
+  exact('[data-pet-skill-levels]',require('./build-pet-skill-levels').renderSection(pet,lang,data));
+ }
  if(doc.querySelector('[data-growth-50]')){const hero=model.heroes.find(h=>'/'+G.heroRoute(lang,h.id).replace(/index\.html$/,'')===route);assert(hero||route===`/${lang}/database/exclusive-gear/`,'Unapproved growth route');exact('[data-growth-50]',G.render(lang,hero));}
  if(doc.querySelector('[data-growth-research-50]')){assert.equal(route,`/${lang}/buildings/lab/`);exact('[data-growth-research-50]',G.renderResearch(lang));}
  if(doc.querySelector('[data-editorial-50="events"]')){

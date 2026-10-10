@@ -45,7 +45,8 @@ for(const lang of langs){
   }else if(/^pet-skill-[1-4]-41$/.test(anchor)){
    const s=petSkills.find(s=>route===`/${lang}/database/pet-system/${s.pet}/`&&anchor===`pet-skill-${s.slot}-41`);assert(s);
    const pet=pets.pets.find(p=>p.id===s.pet);assert.equal(item.title,`${pet.names[lang]} · ${s.names[lang]}`);assert.equal(item.type,'database');
-   assert.equal(item.description,`Lv.1 · ${s.description[lang]}`);assert.equal(document.getElementById(anchor).querySelector('.ts3-pet-skill-description').textContent,s.description[lang]);
+   const skill=require('../data/pet-skill-levels.json').pets.find(p=>p.id===s.pet).skills.find(x=>x.slot===s.slot),highest=skill.levels.find(x=>x.level===skill.highestVerifiedLevel);
+   assert.equal(item.description,`Lv.${highest.level} · ${highest.description[lang]}`);assert.equal(document.getElementById(anchor).querySelector('.ts3-pet-skill-description').textContent,highest.description[lang]);
   }else{
    reviewed.assertPetSelection(document,lang);
    assert.equal(item.aliases,pets.pets.flatMap(p=>[p.names[lang],p.resourceNames[lang]]).join(' '));

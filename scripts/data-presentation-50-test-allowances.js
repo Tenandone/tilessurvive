@@ -7,6 +7,7 @@ const offerCopy={ko:['LootBar 할인 충전 가능 여부 확인','제휴 링크
 const runtime=new Set(['platform-i18n.js','layout.js','platform-affiliate.js','platform.js','platform-search.js','site-search.js','product-30.js','data-workbench-30.js','event-helper.js','tools-speedup-calculator.js','hero-skill-levels-40.js','sea-hero-growth-40.js','database-22.js','foundation-40.js','daily-missions-40.js','pet-growth-40.js']);
 function clean(s){return s.replace(/\s+/g,' ').trim();}
 function normalizeDocument(d,file=''){
+ require('./pet-skill-levels-test-allowances').restoreLegacyDocument(d,file);
  const canonical=d.querySelector('link[rel=canonical]')?.href,route=canonical?new URL(canonical).pathname:'/';
  const lang=(file.split('/')[0]||route.split('/')[1]||d.documentElement.lang).toLowerCase();
  const growth=d.querySelector('[data-growth-50],[data-growth-research-50]');
@@ -18,6 +19,10 @@ function normalizeDocument(d,file=''){
  for(const n of d.querySelectorAll('.ts3-catalog-data')){const a=n.querySelector('a');if(a?.getAttribute('href')===`/${lang}/buildings/lab/#ts3-data-table-0`){assert.equal(route,`/${lang}/buildings/`);assert.equal(n.querySelector('span')?.textContent,{ko:'5 행',en:'5 rows',ja:'5 行',ru:'5 строк','zh-tw':'5 列'}[lang]);assert.equal(n.children.length,2);n.remove();}}
  for(const n of d.querySelectorAll('link[href="/css/product-50.css"]')){assert.equal(n.rel,'stylesheet');n.remove();}
  for(const n of d.querySelectorAll('script[src]')){const u=new URL(n.getAttribute('src'),origin);if(u.origin===origin&&runtime.has(path.posix.basename(u.pathname))){u.searchParams.delete('v');n.setAttribute('src',u.pathname+u.search);}}
+ // The pre-skill-level 5.0 pet hub already includes this identical runtime twice.
+ // Keep the old one-script fixture comparable; the new preservation test pins
+ // the complete current production DOM independently.
+ if(route===`/${lang}/database/pet-system/`){const scripts=[...d.head.querySelectorAll('script[src="/js/database-22.js"]')];assert(scripts.length<=2);if(scripts.length===2){assert.equal(scripts[0].outerHTML,scripts[1].outerHTML);scripts[1].remove();}}
  for(const b of d.querySelectorAll('.ts-header .ts-brand,header.site-header a.brand'))b.textContent='TilesSurvive';
  for(const n of d.querySelectorAll('main img')){
   if(n.hasAttribute('data-image-role-50')){const expected=n.closest('.ts3-character-art,.ts3-pet-portrait')?'portrait':n.closest('.ts3-skill-selector,.ts-skill summary')?'skill':n.closest('table')&&Number(n.getAttribute('width'))<=256?'table-icon':null;assert.equal(n.getAttribute('data-image-role-50'),expected);n.removeAttribute('data-image-role-50');}
