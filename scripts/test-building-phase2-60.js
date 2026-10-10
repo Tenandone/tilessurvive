@@ -35,5 +35,5 @@ test('all six category controls expose the new option; actual catalog runtime fi
  }
 });
 test('phase1 original detail pages and all three public building data files remain unchanged',()=>{
- for(const lang of B.langs)for(const a of require('../data/building-assets-51.json').assets){const file=`${lang}/buildings/${a.slug}/index.html`;assert.equal(read(file).replaceAll('\r\n','\n'),old(file).replaceAll('\r\n','\n'));}for(const file of ['data/content-60/buildings.json','data/client-buildings-52.json','data/building-refinement-51.json'])assert.deepEqual(JSON.parse(read(file)),JSON.parse(old(file)));
+ for(const lang of B.langs)for(const a of require('../data/building-assets-51.json').assets){const file=`${lang}/buildings/${a.slug}/index.html`;const d=doc(read(file)),phase3=require('./content-phase3-test-allowances');if(d.querySelector('[data-research-phase3-entry]')){phase3.verify(d,file);assert.equal(phase3.original(file).replaceAll('\r\n','\n'),old(file).replaceAll('\r\n','\n'));}else assert.equal(read(file).replaceAll('\r\n','\n'),old(file).replaceAll('\r\n','\n'));}for(const file of ['data/content-60/buildings.json','data/client-buildings-52.json','data/building-refinement-51.json'])assert.deepEqual(JSON.parse(read(file)),JSON.parse(old(file)));
 });

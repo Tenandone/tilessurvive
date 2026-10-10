@@ -14,8 +14,10 @@ function protectedText(file){
  const buildings=['greenhouse','smelter','lumberyard','refinery','lookout-tower','kitchen','houses','artifact-workshop','lab-2'];
  const additions=langs.flatMap(lang=>[...buildings.map(id=>`https://tilessurvive.net/${lang}/buildings/${id}/`),...['hopper','snowy','chompy'].map(id=>`https://tilessurvive.net/${lang}/database/pet-system/${id}/`)]);
  assert.equal(additions.length,72);assert(additions.every(url=>!urls.includes(url)));
- const expected='<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+[...urls,...additions].sort().map(url=>'<url><loc>'+url+'</loc></url>').join('\n')+'\n</urlset>\n';
- assert.equal(normalize(text),expected,'Exact original sitemap plus72 approved Phase2 canonical routes');
+ const research=langs.map(lang=>`https://tilessurvive.net/${lang}/database/research/`);
+ assert.equal(research.length,6);assert(research.every(url=>!urls.includes(url)&&!additions.includes(url)));
+ const expected='<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+[...urls,...additions,...research].sort().map(url=>'<url><loc>'+url+'</loc></url>').join('\n')+'\n</urlset>\n';
+ assert.equal(normalize(text),expected,'Exact original sitemap plus72 Phase2 and six research explorer canonical routes');
  return old;
 }
 function semantic(n){

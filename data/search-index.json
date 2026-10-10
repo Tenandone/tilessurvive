@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-10T23:14:16.690Z",
-  "itemCount": 2659,
+  "generatedAt": "2026-10-10T23:30:44.774Z",
+  "itemCount": 2665,
   "items": [
     {
       "language": "de",
@@ -1044,6 +1044,13 @@
       "title": "Forschung nach Voraussetzungen ordnen | TilesSurvive.net",
       "description": "Voraussetzungen und Zeit bis zur Zielforschung trennen",
       "url": "/de/guides/research-priority/"
+    },
+    {
+      "language": "de",
+      "type": "database",
+      "title": "Forschungsexplorer · 2.6.200 | TilesSurvive.net",
+      "description": "Offizielle Forschungsnamen, Machtbeiträge je abgeschlossenem Level und in der Konfiguration vermerkte Verweise. Konfigurationsreferenz für Spielversion 2.6.200. Die tatsächliche Anwendung auf Staat, Saison und Profil sowie die Verfügbarkeit für ein Konto sind nicht bestätigt.",
+      "url": "/de/database/research/"
     },
     {
       "language": "de",
@@ -5434,6 +5441,13 @@
     },
     {
       "language": "en",
+      "type": "database",
+      "title": "Research explorer · 2.6.200 | TilesSurvive.net",
+      "description": "Browse official research names, power contribution by completed level and references recorded in the configuration. Game 2.6.200 configuration reference. Actual State, season and profile applicability, and account availability, are unconfirmed.",
+      "url": "/en/database/research/"
+    },
+    {
+      "language": "en",
       "type": "event",
       "title": "Research tech 1 time(s)",
       "description": "Follow missions through points, rewards and item uses. These categories describe published rules, not a live calendar for every server.",
@@ -8132,6 +8146,13 @@
       "title": "研究所 | タイルズサバイバル 建物 | TilesSurvive.net",
       "description": "タイルズサバイバル研究所インデックスページです。発展、経済、英雄、兵士、諜報前哨基地、同盟対決、特殊部隊、感染者討伐、終末輸送研究をひと目で整理しました。",
       "url": "/ja/buildings/lab/"
+    },
+    {
+      "language": "ja",
+      "type": "database",
+      "title": "研究エクスプローラー · 2.6.200 | TilesSurvive.net",
+      "description": "公式研究名、完了レベルごとの戦闘力寄与、設定に記録された参照関係を確認できます。 ゲーム2.6.200の設定資料です。実際のサーバー・シーズン・プロファイルへの適用と、アカウントでの利用可否は未確認です。",
+      "url": "/ja/database/research/"
     },
     {
       "language": "ja",
@@ -11081,6 +11102,13 @@
       "title": "에픽 영웅 조각",
       "description": "에픽 영웅 조각 · 보유한 에픽 영웅의 조각으로 교환할 수 있다. · 아이템 획득처·사용처",
       "url": "/ko/database/items/#epic-hero-fragment"
+    },
+    {
+      "language": "ko",
+      "type": "database",
+      "title": "연구 탐색기 · 2.6.200 | TilesSurvive.net",
+      "description": "공식 연구 이름과 레벨별 전투력 기여, 설정에 기록된 참조 관계를 함께 확인합니다. 게임 2.6.200 설정 자료입니다. 실제 서버·시즌·프로필 적용과 계정의 이용 가능 여부는 확인되지 않았습니다.",
+      "url": "/ko/database/research/"
     },
     {
       "language": "ko",
@@ -14257,6 +14285,13 @@
       "title": "Обновления Tiles Survive | TilesSurvive.net",
       "description": "Основные изменения из официальных патчноутов и ответов разработчиков.",
       "url": "/ru/updates/"
+    },
+    {
+      "language": "ru",
+      "type": "database",
+      "title": "Обозреватель исследований · 2.6.200 | TilesSurvive.net",
+      "description": "Официальные названия исследований, вклад в боевую мощь на завершённом уровне и ссылки из настроек. Справочник настроек игры 2.6.200. Применимость к штату, сезону и профилю, а также доступность аккаунту не подтверждены.",
+      "url": "/ru/database/research/"
     },
     {
       "language": "ru",
@@ -18780,6 +18815,13 @@
       "title": "研究1次科技",
       "description": "從任務連結到積分、獎勵與道具用途。以下依公開規則分類，並非所有伺服器的即時日程。",
       "url": "/zh-tw/events/#daily-task-research"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
+      "title": "研究瀏覽器 · 2.6.200 | TilesSurvive.net",
+      "description": "查閱官方研究名稱、各完成等級的戰力貢獻，以及設定中記錄的參照關係。 遊戲2.6.200的設定資料。實際適用州、賽季、配置及帳號使用資格尚未確認。",
+      "url": "/zh-tw/database/research/"
     },
     {
       "language": "zh-tw",

@@ -6,6 +6,7 @@ const root=path.resolve(__dirname,'..'),baseline='fc54f4b18e1196e5a5ad2facb0a224
 function original(file){if(!cache.has(file))cache.set(file,cp.execFileSync('git',['show',baseline+':'+file],{cwd:root,encoding:'utf8',maxBuffer:12e6}));return cache.get(file);}
 function signature(n){if(n.nodeType===3)return n.textContent.trim()?['text',n.textContent.trim()]:null;if(n.nodeType!==1)return null;const children=[];let text='';const flush=()=>{if(text.trim())children.push(['text',text.trim()]);text='';};for(const child of n.childNodes){if(child.nodeType===3)text+=child.textContent;else{flush();const value=signature(child);if(value)children.push(value);}}flush();return[n.tagName,[...n.attributes].map(a=>[a.name,a.value]).sort(([a],[b])=>a.localeCompare(b)),children];}
 function restore(document,file=''){
+ require('./content-phase3-test-allowances').restore(document,file);
  require('./content-phase2-test-allowances').restore(document,file);
  require('./asset-cache-test-allowances').restore(document);
  require('./content-combat-60-test-allowances').restore(document,file);

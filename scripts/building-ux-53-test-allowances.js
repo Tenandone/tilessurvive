@@ -11,6 +11,7 @@ function approvedContent60Projection(file){
  return ux.catalog(before,lang,entries);
 }
 function restore(d,file){if(!d.documentElement.hasAttribute('data-building-ux-53'))return d;
+ require('./content-phase3-test-allowances').restore(d,file);
  require('./content-phase2-test-allowances').restore(d,file);
  require('./asset-cache-test-allowances').restore(d);
  if(!file)file=new URL(d.querySelector('link[rel=canonical]').href).pathname.slice(1)+'index.html';if(path.isAbsolute(file))file=path.relative(root,file).replaceAll('\\','/');
