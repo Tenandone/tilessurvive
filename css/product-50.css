@@ -1,0 +1,19 @@
+/* Shared image roles keep original artwork, aspect ratios and source quality. */
+html .ts-header .ts-brand { white-space:nowrap; letter-spacing:-.045em; }
+main img[data-image-role-50="portrait"] { object-fit:contain; object-position:center; height:auto; }
+main img[data-image-role-50="skill"] { object-fit:contain; object-position:center; flex-shrink:0; }
+html.ts-platform.ts3-characters .ts3-skill-selector img[data-image-role-50="skill"] { object-fit:contain; }
+main img[data-image-role-50="table-icon"] { object-fit:contain; vertical-align:middle; }
+main table { font-variant-numeric:tabular-nums; }
+main :is(.ts50-scroll,.table-scroll,.table-wrap) { overflow-x:auto; overscroll-behavior-x:contain; }
+main .ts50-scroll { border:1px solid #d9ded5; border-radius:6px; }
+main .ts50-scroll table { margin:0; }
+main .ts50-scroll thead th { position:sticky; top:0; z-index:1; background:#eff2ed; }
+main .ts50-number { text-align:right; white-space:nowrap; }
+main .ts50-controls { display:flex; gap:12px; flex-wrap:wrap; align-items:end; margin-block:18px; }
+main .ts50-controls :is(select,input,button) { min-height:44px; max-width:100%; font:inherit; }
+main .ts50-package-offer { border-top:1px solid var(--line,#d9ded5); padding-top:12px; margin-top:20px; }
+main .ts50-package-offer a { display:inline-flex; align-items:center; min-height:44px; font-weight:700; text-decoration:underline; text-underline-offset:4px; }
+main .ts50-package-offer small { display:block; color:var(--muted,#56624f); }
+@media(max-width:560px) { html .ts-header .ts-brand { font-size:19px; } main .ts50-controls>* { flex:1 1 140px; min-width:0; } }
+@media(prefers-reduced-motion:reduce) { main [data-image-role-50] { animation:none!important; transition:none!important; } }

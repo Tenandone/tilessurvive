@@ -1,3 +1,4 @@
+const P50=require('./data-presentation-50-test-allowances');
 'use strict';
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('fs'),path=require('path'),crypto=require('crypto'),vm=require('node:vm'),{execFileSync}=require('node:child_process');
 const {parseHTML}=require('linkedom'),{imageSize}=require('image-size');
@@ -41,13 +42,13 @@ test('120 complete page DOMs differ only in 940 approved image attribute sets',(
    const before=pairs(old,a),after=pairs(d,a);
    for(let i=0;i<2;i++){
     assert(before[i]&&after[i]);assert.equal(before[i].getAttribute('src'),a.previousSrc);
-    const attrs={...attributes(before[i]),src:a.src,width:'128',height:'128',loading:'lazy',decoding:'async',[B.marker]:a.id};
+    const attrs={...attributes(before[i]),src:a.src,width:'128',height:'128',loading:'lazy',decoding:'async','data-image-role-50':'skill',[B.marker]:a.id};
     assert.deepEqual(attributes(after[i]),attrs,file+' '+a.id);
     // Restore only the precisely allowed image node and compare every remaining node.
     after[i].replaceWith(before[i].cloneNode(true));count++;
    }
   }
-  assert.equal(d.documentElement.outerHTML,old.documentElement.outerHTML,file+' complete DOM, including values, SEO, URLs, forms, banner and detail state');
+  assert.equal(P50.html(d.documentElement.outerHTML,file),P50.html(old.documentElement.outerHTML,file),file+' complete DOM, including values, SEO, URLs, forms, banner and detail state');
  }
  assert.equal(count,940);assert(B.pages.includes('en/heroes/tazan/index.html'));assert(!B.pages.includes('en/heroes/tarzan/index.html'));
 });
@@ -67,10 +68,10 @@ test('unrelated HTML and retained skills stay exact, with only eight approved it
     assert.deepEqual(attributes(image),{class:'ts40-item-icon',src:a.src,width:String(a.width),height:String(a.height),alt:'','aria-hidden':'true',loading:'lazy',decoding:'async'});
     image.remove();
    }
-   assert.equal(current.documentElement.outerHTML,old.documentElement.outerHTML,file+' every other catalog node remains exact');
+   assert.equal(P50.html(current.documentElement.outerHTML,file),P50.html(old.documentElement.outerHTML,file),file+' every other catalog node remains exact');
    continue;
   }
-  const beast=require('./build-behemoth-assets-41'),art=require('../data/foundation-40/behemoth-assets-41.json');let expected=beast.langs.some(l=>beast.routes.some(r=>file===l+'/'+r))?beast.render(lf(baseline),art):lf(baseline);const heroRules=require('./build-arms-race-hero-rules-41');if(heroRules.langs.some(l=>file===`${l}/events/arms-race/index.html`))expected=heroRules.apply(expected,file.split('/')[0]);assert.equal(lf(read(file)),expected,file);
+  const beast=require('./build-behemoth-assets-41'),art=require('../data/foundation-40/behemoth-assets-41.json');let expected=beast.langs.some(l=>beast.routes.some(r=>file===l+'/'+r))?beast.render(lf(baseline),art):lf(baseline);const heroRules=require('./build-arms-race-hero-rules-41');if(heroRules.langs.some(l=>file===`${l}/events/arms-race/index.html`))expected=heroRules.apply(expected,file.split('/')[0]);P50.equal(lf(read(file)),expected,file);
   if(/^ko\/heroes\/(dave|lagnar|undine|knotty)\/index.html$/.test(file))retained+=doc(read(file)).querySelectorAll('[data-character-skills] .ts-skill').length;
  }
  assert.equal(retained,14);
@@ -79,7 +80,7 @@ test('unrelated HTML and retained skills stay exact, with only eight approved it
 test('the scoped builder is idempotent, accepts regenerated tabs and rejects mismatched targets atomically',()=>{
  for(const file of B.pages){
   const d=doc(original.get(file));B.applyHeroSkillImages(d,file);const once=d.documentElement.outerHTML;
-  B.applyHeroSkillImages(d,file);assert.equal(d.documentElement.outerHTML,once);assert.equal(doc(read(file)).documentElement.outerHTML,once);
+  B.applyHeroSkillImages(d,file);assert.equal(d.documentElement.outerHTML,once);P50.equal(doc(read(file)).documentElement.outerHTML,once,file);
   // The early character builder copies the current source into fresh, unmarked tabs.
   for(const img of d.querySelectorAll('.ts3-skill-selector img')){img.removeAttribute(B.marker);img.removeAttribute('decoding');img.setAttribute('width','44');img.setAttribute('height','44');}
   B.applyHeroSkillImages(d,file);assert.equal(d.documentElement.outerHTML,once);
@@ -121,7 +122,7 @@ test('the unchanged character client preserves image clicks, keyboard control an
 });
 
 test('the one overlay runs after existing hero writers and before search without new client code',()=>{
- const p=JSON.parse(read('package.json')),steps=p.scripts.build.split(' && '),step='node scripts/build-hero-skill-assets-41.js';
+ const p=JSON.parse(read('package.json')),steps=p.scripts['build:legacy'].split(' && '),step='node scripts/build-hero-skill-assets-41.js';
  assert.equal(steps.filter(s=>s===step).length,1);
  for(const before of ['build-characters-30','build-official-locales-40','build-hero-portraits-41','build-knotty-skill-icons-41'])assert(steps.indexOf(step)>steps.indexOf(`node scripts/${before}.js`));
  assert(steps.indexOf(step)<steps.indexOf('node scripts/build-search-index.js'));assert(p.scripts['test:integration-41'].includes('node --test scripts/test-hero-skill-assets-41.js'));

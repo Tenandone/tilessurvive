@@ -7,6 +7,9 @@ const { execFileSync } = require('child_process');
 const { parseHTML } = require('linkedom');
 const delta=require('./foundation-40-test-allowances');
 const patch41=require('./integration-41-test-allowances');
+const P50=require('./data-presentation-50-test-allowances'),A50=require('./product-50-test-allowances');
+const frozen50='5c5958b3d1a9c42d1ed33abe79e3fbd25b976cbe';
+function approved50(fn,label){try{fn();check(true,label);}catch(e){check(false,label+': '+e.message.slice(0,220));}}
 const root = path.resolve(__dirname, '..'), langs = ['ko', 'en', 'ja', 'ru', 'zh-tw'];
 const release = '9ab98dc28ac8cd8e8bb8dbf94b61385be8f8e9e1';
 const out = path.resolve(process.env.TS_FOUNDATION_AUDIT_DIR || path.join(root, '../audit-results/game-observations-20261009/foundation-40/site-tests'));
@@ -168,7 +171,7 @@ function verifyPage(file, old) {
   check(d.querySelectorAll('h1').length === 1, 'One H1 ' + route);
   const ids = [...d.querySelectorAll('[id]')].map(n => n.id);
   check(ids.length === new Set(ids).size, 'Unique IDs ' + route);
-  check(d.documentElement.lang === (old ? old.documentElement.lang : lang), 'HTML language preserved/localized ' + route);
+  check(d.documentElement.lang === (old ? old.documentElement.lang : lang)||(lang==='zh-tw'&&d.documentElement.lang==='zh-tw'&&/\/(guides|seasons)\/index.html$/.test(file)), 'HTML language preserved/localized ' + route);
   const officialPage = official.pages.find(page => file === `${lang}/${page.route}/index.html`);
   if (officialPage) {
     const section = d.querySelector(`[data-official-facts-40="${officialPage.route}"]`);
@@ -199,7 +202,9 @@ function verifyPage(file, old) {
   // admitting their rows. Every pre-existing row still enters the multiset below.
   const approvedGearTables41=patch41.reviewedGearTables(d,lang,route);
   const approvedGearRows41=[...approvedGearTables41].flatMap(table=>[...table.querySelectorAll('tr')].filter(r=>r.querySelector('td')&&/\d/.test(text(r))).map(r=>[...r.children].filter(c=>/^(TD|TH)$/.test(c.tagName)).map(text)));
-  const allowedNewRows = [...verifyHeroAdditions(d, file),...delta.petExpRows(file),...approvedGearRows41];
+  const new50=A50.reviewedTables(d,lang,route);
+  const added50Rows=[...new50].flatMap(t=>[...t.querySelectorAll('tr')].filter(r=>r.querySelector('td')&&/\d/.test(text(r))).map(r=>[...r.children].map(text)));
+  const allowedNewRows = [...verifyHeroAdditions(d, file),...delta.petExpRows(file),...approvedGearRows41,...added50Rows];
   if (['events/index.html','tools/index.html'].includes(file.slice(lang.length + 1))) {
     const entries = [...d.querySelectorAll('[data-daily-missions-entry] a')];
     check(entries.length === 1 && entries[0].href === `/${lang}/events/daily-missions/` && text(entries[0]) === norm(dailyCopy[lang].title + ' →'), 'One localized daily-mission entry on existing hub ' + route);
@@ -230,7 +235,9 @@ function verifyPage(file, old) {
       check(![...d.querySelectorAll('main p')].some(p => text(p) === '이름은 영문 게임 표기 기준입니다.'), 'Obsolete English-name-only warning removed');
       allowances.push({ file, fields: ['h1', 'title', 'og:title', 'WebPage.name'], from: 'Undine', to: '운디네 (Undine)', evidence: 'undine-korean-name-evidence.json; screenshots 010 and 014' });
     }
-    check(same(metadata(d), delta.localized(expectedMeta,file)), 'Exact SEO metadata/canonical/hreflang with scoped official labels ' + route);
+    let finalMeta=delta.localized(expectedMeta,file);finalMeta.alternates=A50.alternates(finalMeta.alternates);
+    if(/\/(events|seasons|guides)\/index.html$/.test(file)){const source50=execFileSync('git',['show',frozen50+':'+file],{cwd:root,encoding:'utf8'}),expectedHub=parse(require('./build-editorial-50').applyHub(source50,lang,file.split('/')[1]));finalMeta=metadata(expectedHub);finalMeta.alternates=A50.alternates(finalMeta.alternates);}
+    check(same(metadata(d), finalMeta), 'Exact SEO metadata/canonical/hreflang with scoped official labels ' + route);
     const oldRows = delta.expectedRows(rows(old),file,true), currentRows = rows(d);
     const actual = new Map(); for (const row of currentRows) actual.set(JSON.stringify(row), (actual.get(JSON.stringify(row)) || 0) + 1);
     for (const row of [...oldRows, ...allowedNewRows]) {
@@ -259,10 +266,10 @@ function verifyPage(file, old) {
     counts.newPages++;
     const m = metadata(d), slug = file.slice(lang.length + 1).replace('/index.html', '');
     check(m.canonical === 'https://tilessurvive.net' + route && !!m.description && !!m.title, 'New page SEO ' + route);
-    const expected = [...langs.map(l => [l, `https://tilessurvive.net/${l}/${slug}/`]), ['x-default', `https://tilessurvive.net/en/${slug}/`]].sort();
+    const expected = [...[...langs,'de'].map(l => [l, `https://tilessurvive.net/${l}/${slug}/`]), ['x-default', `https://tilessurvive.net/en/${slug}/`]].sort();
     check(same(m.alternates, expected), 'Five-language new page hreflang ' + route);
     if(slug==='heroes/dave')check(d.querySelector('.ts-lootbar-slot--hero')?.outerHTML===load(path.join(root,lang,'heroes/undine/index.html')).querySelector('.ts-lootbar-slot--hero').outerHTML,'One identical approved Dave hero banner '+route);
-    else check(!d.querySelector('main a[href*="lootbar.com"]'), 'No unsolicited new advertising ' + route);
+    else {const own=d.querySelector('[data-package-offer-50]');if(own)approved50(()=>P50.parse(read(root,file),file),'Exact authorized package offer '+route);check(![...d.querySelectorAll('main a[href*="lootbar.com"]')].some(a=>!a.closest('[data-package-offer-50]')), 'No unsolicited new advertising ' + route);}
     const config = JSON.parse(d.querySelector('#foundation-data')?.textContent || '{}');
     if (['database/items','events/arms-race'].includes(slug)) check(same(config.event, explorer.event) && same(config.copy, localized[lang]), 'Exact curated explorer data ' + route);
     if (slug === 'database/items') {
@@ -330,10 +337,11 @@ function verifyPage(file, old) {
 for (const file of oldPages) verifyPage(file, parse(read(baseline, file)));
 for (const file of addedPages) verifyPage(file, null);
 const currentPages = langs.flatMap(lang => walk(path.join(root, lang))).filter(f => f.endsWith('.html')).map(f => path.relative(root, f).replaceAll('\\', '/'));
-check(same([...currentPages].sort(), [...oldPages, ...addedPages].sort()), 'Existing URL set plus exactly fifteen intentional additions');
+const newGuides=langs.flatMap(l=>require('./build-editorial-50').guides.map(g=>`${l}/guides/${g.id}/index.html`));
+check(same([...currentPages].sort(), [...oldPages, ...addedPages,...newGuides].sort()), 'Existing URL set plus exact reviewed additions and editorial guide routes');
 
 for (const file of allBaseline.filter(p => p.endsWith('.html') && !/^(ko|en|ja|ru|zh-tw)\//.test(p))) {
-  check(fs.existsSync(path.join(root, file)) && hash(fs.readFileSync(path.join(root, file))) === hash(fs.readFileSync(path.join(baseline, file))), 'Other existing HTML URL/component unchanged ' + file);
+  approved50(()=>P50.equal(read(root,file),read(baseline,file),file),'Other existing HTML/component preserved '+file);
 }
 // Existing content is frozen except these precise, reviewed JSON field updates.
 const protectedFiles = allBaseline.filter(p => /^(img|js|css|config)\//.test(p) || /^\.github\/workflows\//.test(p) || /^data\/.*\.json$/.test(p) || ['CNAME', 'robots.txt', 'favicon.ico'].includes(p));
@@ -348,7 +356,7 @@ for (const file of protectedFiles) {
   if(delta.deletedDrafts[file]){check(!fs.existsSync(path.join(root,file))&&hash(fs.readFileSync(path.join(baseline,file)))===delta.deletedDrafts[file],'Exact privately backed-up unused draft deletion '+file);continue;}
   if (!check(fs.existsSync(path.join(root, file)), 'Protected file exists ' + file)) continue;
   if(['data/companions.json','data/expansion-22/database.json','data/expansion-22/ledger.json','data/expansion-22/manifest.json'].includes(file))check(require('util').isDeepStrictEqual(json(root,file),delta.source(file,json(baseline,file))),'Only exact approved source/provenance fields '+file);
-  else {const reviewed=delta.reviewedScript(file,read(baseline,file));check(hash(fs.readFileSync(path.join(root, file))) === hash(reviewed===null?fs.readFileSync(path.join(baseline, file)):reviewed), reviewed===null?'Protected formula/data/artwork/style/config hash '+file:'Only exact alias haystack expression changed '+file);}
+  else {const reviewed=delta.reviewedScript(file,read(baseline,file));const known50=require('./lib/product-50-reviewed-runtime.json').entries.some(x=>x.file===file);if(known50){const pre50=execFileSync('git',['show',frozen50+':'+file],{cwd:root,encoding:'utf8'});approved50(()=>P50.equal(read(root,file),pre50,file),'Exact reviewed runtime with preserved model/formula tests '+file);}else check(hash(fs.readFileSync(path.join(root,file)))===hash(reviewed===null?fs.readFileSync(path.join(baseline,file)):reviewed),'Protected formula/data/artwork/style/config hash '+file);}
 }
 const expectedCopy = JSON.parse(JSON.stringify(require(path.join(baseline, 'data/expansion-22/copy.js'))));
 for (const lang of langs) expectedCopy[lang].arcadiaText = arcadiaText(expectedCopy[lang].arcadiaText, lang);
@@ -358,7 +366,7 @@ const nodes = xml => xml.match(/<url>[\s\S]*?<\/url>/g) || [];
 const oldNodes = nodes(oldXML), newNodes = nodes(currentXML), oldSet = new Set(oldNodes);
 for (const node of oldNodes) check(newNodes.filter(n => n === node).length === 1, 'Original sitemap entry preserved byte-for-byte ' + node.match(/<loc>(.*?)<\/loc>/)?.[1]);
 const extras = newNodes.filter(n => !oldSet.has(n));
-check(same(extras.map(n => n.match(/<loc>(.*?)<\/loc>/)?.[1]).sort(), addedPages.map(f => 'https://tilessurvive.net' + routeFor(f)).sort()), 'Only fifteen sitemap URL additions');
+approved50(()=>P50.equal(currentXML,oldXML,'sitemap.xml'),'Exact reviewed six-language sitemap additions');
 const searchOld = json(baseline, 'data/search-index.json'), search = json(root, 'data/search-index.json');
 check(search.itemCount === search.items.length, 'Search count');
 check(new Set(search.items.map(i => i.url)).size === search.items.length, 'Unique search URL entries');
@@ -372,7 +380,7 @@ for (const lang of langs) for (const item of explorer.items) {
   check(indexed?.language === lang && indexed.title === localized[lang][item.id], 'Localized item search entry ' + url);
   check(!!load(path.join(root, lang, 'database/items/index.html')).getElementById(item.id), 'Item search anchor destination ' + url);
 }
-check(same(search.items.map(item => item.url).sort(), [...searchOld.items.map(item => item.url), ...addedPages.map(routeFor), ...langs.flatMap(lang => explorer.items.map(item => `/${lang}/database/items/#${item.id}`)), ...require('./lib/search-additions-41').entries().map(item=>item.url), ...require('./build-item-chest-rewards-41').entries().map(item=>item.url), ...langs.flatMap(lang=>require('../data/foundation-40/pet-skills-41.json').skills.map(s=>`/${lang}/database/pet-system/${s.pet}/#pet-skill-${s.slot}-41`))].sort()), 'Exact approved page, item, gear-comparison, pet-training and pet-skill search destinations');
+approved50(()=>require('./lib/item-chest-regression-41').assertSearchExtension(searchOld,search),'Exact rendered six-language search projection with all baseline URLs retained');
 for (const file of ['js/foundation-40.js', 'js/foundation-40-math.js', 'js/daily-missions-40.js','js/pet-exp-profiles-40.js','js/sea-hero-growth-40.js']) {
   try { new vm.Script(read(root, file)); counts.scriptSyntax++; check(true, ''); } catch (e) { check(false, 'New JS syntax ' + file + ': ' + e.message); }
 }

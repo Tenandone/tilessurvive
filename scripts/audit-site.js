@@ -2,7 +2,7 @@ const fs = require("node:fs");
 const path = require("node:path");
 
 const ROOT = path.resolve(__dirname, "..");
-const LANGS = new Set(["ko", "en", "ja", "ru", "zh-tw"]);
+const LANGS = new Set(["ko", "en", "ja", "ru", "zh-tw", "de"]);
 const SKIP_DIRS = new Set([".git", "node_modules", "test-results", "_sources", "blue", "makeup"]);
 
 function walk(dir, files = []) {

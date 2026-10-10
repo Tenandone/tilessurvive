@@ -21,7 +21,7 @@ for(const lang of langs)check(()=>{
  const route=`/${lang}/heroes/dave/`,d=parseHTML(read(lang+'/heroes/dave/index.html')).document,t=C[lang];
  assert.equal(d.querySelector('h1').textContent,require('../data/foundation-40/official-character-locales.json').heroes.find(hero=>hero.id==='dave').names[lang]);assert.equal(d.querySelectorAll('h1').length,1);
  assert.equal(d.querySelector('link[rel=canonical]').href,'https://tilessurvive.net'+route);
- for(const l of langs){assert(d.querySelector(`link[hreflang="${l}"]`).href.endsWith(`/${l}/heroes/dave/`));assert.equal(d.querySelector(`.ts3-language a[hreflang="${l}"]`).href,`/${l}/heroes/dave/`);}
+ for(const l of [...langs,'de']){assert(d.querySelector(`link[hreflang="${l}"]`).href.endsWith(`/${l}/heroes/dave/`));assert.equal(d.querySelector(`.ts3-language a[lang="${l}"]`).href,`/${l}/heroes/dave/`);}
  const ids=[...d.querySelectorAll('[id]')].map(n=>n.id);assert.equal(new Set(ids).size,ids.length);
  const rows=[...d.querySelectorAll('[data-dave-skill]')].map(r=>[...r.querySelectorAll('td')].map(c=>c.textContent.replace(',','.')));
  assert.deepEqual(rows,[['109.0%','110.0%'],['1471.50% ATK','1485.0% ATK'],['2.18%','2.20%']]);

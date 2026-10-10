@@ -1,3 +1,4 @@
+const P50=require('./data-presentation-50-test-allowances');
 'use strict';
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');
 const {execFileSync}=require('node:child_process'),{parseHTML}=require('linkedom');
@@ -23,7 +24,7 @@ test('all five documents preserve every baseline byte outside the new section',(
  for(const [index,file]of pages.entries()){
   const before=lf(old(file)),after=lf(read(file)),d=parseHTML(after).document;
   const owned=d.querySelectorAll('[data-arms-hero-rules-41]');assert.equal(owned.length,1);const section=owned[0];
-  assert.equal(strip(after),before,file+' complete baseline preservation: formulas, embedded data, links, SEO and existing tables');
+  assert.equal(P50.html(strip(after),file),P50.html(before,file),file+' complete baseline preservation: formulas, embedded data, links, SEO and existing tables');
   assert.equal(section.previousElementSibling.getAttribute('aria-labelledby'),'rewards-heading');
   assert.equal(section.nextElementSibling.getAttribute('aria-labelledby'),'rules-heading');
   assert.equal(section.querySelector('h2').id,'hero-growth-points-heading');assert.equal(d.querySelectorAll('#hero-growth-points-heading').length,1);
@@ -37,7 +38,7 @@ test('all five documents preserve every baseline byte outside the new section',(
 test('all preexisting public data, scripts, styles, search, sitemap and other routes remain unchanged',()=>{
  const files=execFileSync('git',['ls-tree','-r','--name-only',baseline],{cwd:root,encoding:'utf8'}).trim().split('\n').filter(f=>f.endsWith('.html')||/^(data|js|css)\//.test(f)||['sitemap.xml','robots.txt'].includes(f));
  const batch=execFileSync('git',['cat-file','--batch'],{cwd:root,input:files.map(f=>baseline+':'+f).join('\n')+'\n',maxBuffer:200e6});let cursor=0;
- for(const file of files){const end=batch.indexOf(10,cursor),header=batch.subarray(cursor,end).toString();assert.match(header,/^[a-f0-9]{40} blob \d+$/);const size=Number(header.split(' ')[2]);cursor=end+1;const bytes=batch.subarray(cursor,cursor+size);cursor+=size+1;if(!pages.includes(file)){if(file==='data/search-index.json')require('./lib/item-chest-regression-41').assertSearchExtension(bytes,read(file));else {const chests=require('./build-item-chest-rewards-41');const expected=chests.langs.some(l=>file===`${l}/database/items/index.html`)?chests.apply(lf(bytes),file.split('/')[0]):lf(bytes);assert.equal(lf(read(file)),expected,file);}}}
+ for(const file of files){const end=batch.indexOf(10,cursor),header=batch.subarray(cursor,end).toString();assert.match(header,/^[a-f0-9]{40} blob \d+$/);const size=Number(header.split(' ')[2]);cursor=end+1;const bytes=batch.subarray(cursor,cursor+size);cursor+=size+1;if(!pages.includes(file)){if(file==='data/search-index.json')require('./lib/item-chest-regression-41').assertSearchExtension(bytes,read(file));else {const chests=require('./build-item-chest-rewards-41');const expected=chests.langs.some(l=>file===`${l}/database/items/index.html`)?chests.apply(lf(bytes),file.split('/')[0]):lf(bytes);P50.equal(lf(read(file)),expected,file);}}}
  assert.equal(cursor,batch.length);
 });
 test('the builder is idempotent and rejects wrong routes, damaged insertion boundaries and expanded scope',()=>{

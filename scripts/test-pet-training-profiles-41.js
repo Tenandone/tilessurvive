@@ -1,6 +1,7 @@
 'use strict';
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('fs'),path=require('path'),crypto=require('crypto'),vm=require('vm'),{execFileSync}=require('node:child_process'),{parseHTML}=require('linkedom');
 const root=path.resolve(__dirname,'..'),D=require('../data/foundation-40/pet-training-profiles-41.json'),G=require('../data/foundation-40/starhorn-growth.json'),N=require('../data/foundation-40/official-character-locales.json'),M=require('../js/pet-training-profiles-41'),legacy=require('../js/database-22');
+const P50=require('./data-presentation-50-test-allowances');
 const langs=['ko','en','ja','ru','zh-tw'],ids=['snowball','dodo','buckler','fluffy','hardhead','shadow','starhorn'],base='ebe0cd9f738e1c4e497ad17934139618a40c43f6',sha=x=>crypto.createHash('sha256').update(x).digest('hex');
 const imageManifest=require('../data/foundation-40/pet-training-image-assets-41.json'),{imageSize}=require('image-size');
 const page=l=>parseHTML(fs.readFileSync(path.join(root,l,'database/pet-system/index.html'),'utf8')).document;
@@ -16,7 +17,7 @@ test('invalid, duplicate and missing transitions never produce a plausible total
  const p=D.pets[0];for(const args of [[-1,1],[0,6],[4,3],[0.5,1],[NaN,1],[0,1,-1],[0,1,0.5],[0,1,Number.MAX_SAFE_INTEGER+1],[0,1,Infinity]])assert.equal(M.calculate(p,...args).error,'invalid');assert.equal(M.calculate(null,0,5).error,'invalid');assert.equal(M.calculate({...p,trainingRows:p.trainingRows.slice(1)},0,5).error,'missing');assert.equal(M.calculate({...p,trainingRows:[...p.trainingRows,p.trainingRows[0]]},0,1).error,'missing');
 });
 test('five pages retain exact original calculator payloads, numeric rows, SEO, images and affiliate links',()=>{
- for(const l of langs){const file=l+'/database/pet-system/index.html',old=parseHTML(execFileSync('git',['show',base+':'+file],{cwd:root,encoding:'utf8',maxBuffer:4e6})).document,d=page(l);
+ for(const l of langs){const file=l+'/database/pet-system/index.html',old=parseHTML(execFileSync('git',['show',base+':'+file],{cwd:root,encoding:'utf8',maxBuffer:4e6})).document,d=page(l);P50.normalizeDocument(old,file);P50.normalizeDocument(d,file);
   for(const kind of ['petExp','petTraining']){const sel=`[data-growth-form="${kind}"]`;assert.equal(d.querySelector(sel+' script').textContent,old.querySelector(sel+' script').textContent);for(const name of ['from','to','held'])for(const attr of ['min','max','step','value'])assert.equal(d.querySelector(sel+` [name="${name}"]`).getAttribute(attr),old.querySelector(sel+` [name="${name}"]`).getAttribute(attr));}
   const extract=(doc,sel,attrs)=>[...doc.querySelectorAll(sel)].map(n=>attrs.map(a=>n.getAttribute(a)));assert.deepEqual(extract(d,'link[rel="canonical"],link[rel="alternate"]',['rel','href','hreflang']),extract(old,'link[rel="canonical"],link[rel="alternate"]',['rel','href','hreflang']));assert.deepEqual(extract(d,'main img:not([data-pet-imprint-41])',['src','alt','width','height']),extract(old,'main img',['src','alt','width','height']));assert.equal(d.querySelectorAll('main img').length,old.querySelectorAll('main img').length+7);assert.deepEqual(extract(d,'a[href*="lootbar"]',['href','rel']),extract(old,'a[href*="lootbar"]',['href','rel']));
   const f=d.querySelector('[data-growth-form="petTraining"]'),table=d.getElementById(f.dataset.growthTable);assert.deepEqual([...table.querySelectorAll('tbody tr')].map(x=>x.textContent),[...old.getElementById(f.dataset.growthTable).querySelectorAll('tbody tr')].map(x=>x.textContent));assert.equal(d.querySelectorAll('[data-pet-exp-selector-40]').length,1);assert.equal(d.querySelectorAll('#pet-training-items-41 tbody tr').length,7);assert.equal(d.querySelector('#pet-training-items-41').parentElement.closest('.ts-table-wrap'),null,'Material details must not nest inside the training table scroll region');assert.equal(d.querySelectorAll('script[src="/js/pet-training-profiles-41.js?v=1"]').length,1);assert.equal(d.querySelectorAll('[id]').length,new Set([...d.querySelectorAll('[id]')].map(x=>x.id)).size);
@@ -35,7 +36,7 @@ test('exactly seven approved lossless imprint images have safe metadata, real ha
    require('./build-pet-skills-41').applyPetSkills(original,'starhorn',file.split('/')[0]);
    expected='<!DOCTYPE html>\n'+original.documentElement.outerHTML+'\n';
   }
-  assert.equal(sha(fs.readFileSync(path.join(root,file),'utf8').replaceAll('\r\n','\n')),sha(expected),file);
+  P50.equal(fs.readFileSync(path.join(root,file),'utf8'),expected,file);
  }
 });
 test('actual client keeps shared pet selection, inventory labels and reset behavior synchronized',()=>{
@@ -52,5 +53,5 @@ test('actual client keeps shared pet selection, inventory labels and reset behav
  }
 });
 test('public payload has only curated stage data and original calculation modules stay intact',()=>{
- assert(!/C:\\|audit-results|tscfg:|sourceRecord|sourceSha256|Itemlist|PetTrainStep|NameKey/.test(JSON.stringify(D)));for(const file of ['js/database-22.js','js/platform-math.js','js/pet-exp-profiles-40.js','data/foundation-40/pet-exp-profiles.json'])assert.equal(sha(fs.readFileSync(path.join(root,file),'utf8').replaceAll('\r\n','\n')),sha(execFileSync('git',['show',base+':'+file],{cwd:root,encoding:'utf8'}).replaceAll('\r\n','\n')),file);
+ assert(!/C:\\|audit-results|tscfg:|sourceRecord|sourceSha256|Itemlist|PetTrainStep|NameKey/.test(JSON.stringify(D)));for(const file of ['js/database-22.js','js/platform-math.js','js/pet-exp-profiles-40.js','data/foundation-40/pet-exp-profiles.json'])P50.equal(fs.readFileSync(path.join(root,file),'utf8'),execFileSync('git',['show',base+':'+file],{cwd:root,encoding:'utf8'}),file);
 });

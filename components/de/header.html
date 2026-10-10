@@ -1,0 +1,69 @@
+<!-- /components/en/header.html -->
+<header data-lang="de" lang="de" class="site-header" role="banner">
+  <div class="container nav-bar">
+    <div class="nav-left">
+      <a class="brand" href="/de/" aria-label="TilesSurvive.net nach Hause">TilesSurvive</a>
+
+      <nav class="nav" id="primaryNav" role="navigation" aria-label="Hauptmenü">
+        <a href="/de/buildings/">Buildings</a>
+        <a href="/de/heroes/">Heroes</a>
+        <a href="/de/behemoths/">Behemoths</a>
+        <a href="/de/database/">Database</a>
+        <a href="/de/guides/">Guides</a>
+        <a href="/de/seasons/">Seasons</a>
+      </nav>
+    </div>
+
+    <button class="hamburger" id="menuToggle" aria-label="Menü öffnen" aria-controls="mobileDrawer" aria-expanded="false">☰</button>
+
+    <div class="nav-right">
+      <div id="langDropdownHeader" class="lang-pills" aria-label="Sprachauswahl"></div>
+    </div>
+  </div>
+</header>
+
+<section class="countdown-bar-wrap" aria-label="Coupon Countdown">
+  <div class="container countdown-bar">
+    <div class="countdown-bar__left">
+      <span class="countdown-badge">Geschenkcodes</span>
+      <div class="countdown-copy">
+        <strong>Tiles Survive Coupon Countdown</strong>
+      </div>
+    </div>
+    <div class="countdown-bar__actions">
+      <a class="countdown-link" href="/de/codes/">Letzte Codes</a>
+      <a class="countdown-link" href="/de/guides/gift-code-how-to-use/">So werden Codes eingelöst</a>
+    </div>
+  </div>
+</section>
+
+<div class="backdrop" id="backdrop" hidden></div>
+
+<aside class="drawer" id="mobileDrawer" aria-hidden="true" aria-label="Mobiles Menü">
+  <header>
+    <strong>Menü</strong>
+    <button id="btnClose" aria-label="Schließen" style="background:none;border:0;font-size:20px;cursor:pointer">✕</button>
+  </header>
+
+  <div class="section">
+    <div id="langDropdownDrawer" class="lang-pills lang-pills--drawer" aria-label="Sprachauswahl"></div>
+  </div>
+
+  <div class="drawer-dotrule" aria-hidden="true"></div>
+
+  <div class="section">
+    <div class="nav-list" role="navigation" aria-label="Mobile Menüliste">
+      <a href="/de/buildings/">Gebäude</a>
+      <a href="/de/heroes/">Helden</a>
+      <a href="/de/behemoths/">Behemoths</a>
+      <a href="/de/database/">Datenbank</a>
+      <a href="/de/guides/">Leitfäden</a>
+      <a href="/de/seasons/">Saisons</a>
+    </div>
+
+    <div class="drawer-quick-stack">
+      <a class="drawer-quick-pill js-drawer-close" href="https://discord.gg/sUqbBskd" target="_blank" rel="noopener noreferrer">Discord</a>
+      <a class="drawer-quick-pill js-drawer-close" href="/de/codes/">Geschenkcodes</a>
+    </div>
+  </div>
+</aside>

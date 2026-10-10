@@ -16,7 +16,8 @@
    const number=name=>{const v=form.elements.namedItem(name).value;return v.trim()===''?NaN:Number(v);};
    const result=calculate(cfg.rows,number('from'),number('to'),number('held'));
    const out=form.querySelector('output');
-   out.textContent=result.error?cfg[result.error]+(result.missing?' '+result.missing.map(x=>x+' → '+(x+1)).join(', '):''):cfg.total+': '+result.total.toLocaleString()+' '+cfg.unit+' · '+cfg.shortage+': '+result.shortage.toLocaleString()+' '+cfg.unit;
+   const displayLocale=document.documentElement.lang==='de'?'de':undefined;
+   out.textContent=result.error?cfg[result.error]+(result.missing?' '+result.missing.map(x=>x+' → '+(x+1)).join(', '):''):cfg.total+': '+result.total.toLocaleString(displayLocale)+' '+cfg.unit+' · '+cfg.shortage+': '+result.shortage.toLocaleString(displayLocale)+' '+cfg.unit;
    out.dataset.result=result.error||String(result.total);out.dataset.shortage=result.shortage??'';
   }
   form.addEventListener('input',update);form.addEventListener('change',update);form.addEventListener('submit',e=>e.preventDefault());update();

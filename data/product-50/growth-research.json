@@ -1,0 +1,171 @@
+{
+  "schemaVersion": 1,
+  "gameVersion": "2.6.200",
+  "scope": "completed-research-level",
+  "profiles": [
+    {
+      "key": "infected-i",
+      "name": {
+        "ko": "감염자 토벌-가속 아이템 I",
+        "en": "Infected Conquest - Speedup Items I",
+        "ja": "ゾンビ討伐：加速アイテム I",
+        "ru": "Завоевание зараженных — предметы для ускорения I",
+        "zh-tw": "喪屍討伐-加速道具 I",
+        "de": "Infizierteneroberung – Beschleunigungsgegenstände I"
+      },
+      "description": {
+        "ko": "감염자 처치 시 스피드업 아이템 획득",
+        "en": "Get Speedup items when killing Infected",
+        "ja": "ゾンビ撃破で加速アイテムが獲得可能",
+        "ru": "Получайте предметы для ускорения при убийстве зараженных",
+        "zh-tw": "擊殺喪屍時獲得加速道具",
+        "de": "Erhalte Beschleunigungsgegenstände beim Töten von Infizierten."
+      },
+      "levels": [
+        {
+          "level": 1,
+          "power": 22200
+        },
+        {
+          "level": 2,
+          "power": 47040
+        },
+        {
+          "level": 3,
+          "power": 72320
+        },
+        {
+          "level": 4,
+          "power": 98040
+        },
+        {
+          "level": 5,
+          "power": 131100
+        }
+      ]
+    },
+    {
+      "key": "fiend-i",
+      "name": {
+        "ko": "보스 토벌-가속 아이템 I",
+        "en": "Infected Fiend Conquest - Speedup Items I",
+        "ja": "メガゾンビ討伐：加速アイテム I",
+        "ru": "Завоевание нечестивых зараженных — предметы для ускорения I",
+        "zh-tw": "首領討伐-加速道具 I",
+        "de": "Infizierte Fanatiker-Eroberung – Beschleunigungsgegenstände I"
+      },
+      "description": {
+        "ko": "감염자 보스 처치 시 랠리 리더는 스피드업 아이템을 획득합니다.",
+        "en": "Rally Leader gets Speedup items when killing Infected Fiends",
+        "ja": "集結隊長がメガゾンビを撃破すると、加速アイテムを獲得できます",
+        "ru": "Лидер рейда получает предметы для ускорения при убийстве нечестивых зараженных",
+        "zh-tw": "集結隊長擊殺喪屍首領時獲得加速道具",
+        "de": "Der Rally-Anführer erhält Beschleunigungsgegenstände beim Töten von Infizierten Fanatikern."
+      },
+      "levels": [
+        {
+          "level": 1,
+          "power": 38760
+        },
+        {
+          "level": 2,
+          "power": 112520
+        },
+        {
+          "level": 3,
+          "power": 187390
+        },
+        {
+          "level": 4,
+          "power": 267350
+        },
+        {
+          "level": 5,
+          "power": 348340
+        }
+      ]
+    },
+    {
+      "key": "infected-ii",
+      "name": {
+        "ko": "감염자 토벌-가속 아이템 II",
+        "en": "Infected Conquest - Speedup Items II",
+        "ja": "ゾンビ討伐：加速アイテム II",
+        "ru": "Завоевание зараженных — предметы для ускорения II",
+        "zh-tw": "喪屍討伐-加速道具 II",
+        "de": "Infizierteneroberung – Beschleunigungsgegenstände II"
+      },
+      "description": {
+        "ko": "감염자 처치 시 스피드업 아이템 획득",
+        "en": "Get Speedup items when killing Infected",
+        "ja": "ゾンビ撃破で加速アイテムが獲得可能",
+        "ru": "Получайте предметы для ускорения при убийстве зараженных",
+        "zh-tw": "擊殺喪屍時獲得加速道具",
+        "de": "Erhalte Beschleunigungsgegenstände beim Töten von Infizierten."
+      },
+      "levels": [
+        {
+          "level": 1,
+          "power": 85410
+        },
+        {
+          "level": 2,
+          "power": 179360
+        },
+        {
+          "level": 3,
+          "power": 274890
+        },
+        {
+          "level": 4,
+          "power": 372000
+        },
+        {
+          "level": 5,
+          "power": 485560
+        }
+      ]
+    },
+    {
+      "key": "fiend-ii",
+      "name": {
+        "ko": "보스 토벌-가속 아이템 II",
+        "en": "Infected Fiend Conquest - Speedup Items II",
+        "ja": "メガゾンビ討伐：加速アイテム II",
+        "ru": "Завоевание нечестивых зараженных — предметы для ускорения II",
+        "zh-tw": "首領討伐-加速道具 II",
+        "de": "Infizierte Fanatiker-Eroberung – Beschleunigungsgegenstände II"
+      },
+      "description": {
+        "ko": "감염자 보스 처치 시 랠리 리더는 스피드업 아이템을 획득합니다.",
+        "en": "Rally Leader gets Speedup items when killing Infected Fiends",
+        "ja": "集結隊長がメガゾンビを撃破すると、加速アイテムを獲得できます",
+        "ru": "Лидер рейда получает предметы для ускорения при убийстве нечестивых зараженных",
+        "zh-tw": "集結隊長擊殺喪屍首領時獲得加速道具",
+        "de": "Der Rally-Anführer erhält Beschleunigungsgegenstände beim Töten von Infizierten Fanatikern."
+      },
+      "levels": [
+        {
+          "level": 1,
+          "power": 99960
+        },
+        {
+          "level": 2,
+          "power": 202780
+        },
+        {
+          "level": 3,
+          "power": 310800
+        },
+        {
+          "level": 4,
+          "power": 424560
+        },
+        {
+          "level": 5,
+          "power": 543120
+        }
+      ]
+    }
+  ]
+}

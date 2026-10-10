@@ -1,0 +1,26 @@
+{
+  "scope": "Bounded independent reading of home, Shark, Power Plant, Lab, speedup calculator, Dodo and Starhorn. Editorial corrections preserve numbers and gameplay conditions.",
+  "exact": {
+    "Reduces the research time of the technology currently being researched by 240 minutes.": "Verkürzt die verbleibende Forschungszeit der aktuell erforschten Technologie um 240 Minuten.",
+    "When taking damage, 25% chance to gain DEF +5% for 5 seconds. Can stack.": "Bei erlittenem Schaden besteht eine Chance von 25%, für 5 Sekunden DEF +5% zu erhalten. Der Effekt ist stapelbar.",
+    "A passive-style effect that increases Shark’s own stats. The Lv.4 effect is all stats +50%.": "Ein passiver Effekt, der Sharks eigene Werte erhöht. Auf Lv.4 gilt: alle Werte +50%.",
+    "Mariner heroes count as every faction for faction synergy, but not for faction advantage or its damage bonus. Skill levels for the cooldowns are unspecified.": "Mariner-Helden zählen für die Fraktionssynergie als jede Fraktion, jedoch nicht für den Fraktionsvorteil oder dessen Schadensbonus. Die zu den Abklingzeiten gehörenden Fähigkeitsstufen sind nicht angegeben.",
+    "Melee troop condition": "Bedingung: Nahkampftruppen",
+    "This research improves efficiency for rewards earned from defeating regular infected and infected bosses. It is worth prioritizing early because the gain in daily farming and speed-up items is noticeable.": "Diese Forschung verbessert die Belohnungen für das Besiegen normaler Infizierter und infizierter Bosse. Sie früh zu priorisieren lohnt sich, weil sich zusätzliche Belohnungen und Beschleunigungsgegenstände beim täglichen Spielen bemerkbar machen.",
+    "An extra random crate can drop from defeating regular infected, and the effect currently shows up to 100 obtainable per day.": "Beim Besiegen normaler Infizierter kann eine zusätzliche Zufallskiste erscheinen. Der angezeigte Effekt nennt bis zu 100 Kisten pro Tag.",
+    "Infected Elimination research is worth placing high in the early priority order because the daily farming reward impact is felt quickly.": "Die Forschung zum Besiegen Infizierter eignet sich als frühe Priorität, weil sich die zusätzlichen täglichen Belohnungen schnell bemerkbar machen.",
+    "Infected Fiend Conquest EXP Bonus and Speedup Items research bonuses apply only to the Rally leader after a successful defeat, not to Rally participants.": "Die Forschungsboni für EXP und Beschleunigungsgegenstände beim Bezwingen Infizierter Fanatiker gelten nach erfolgreichem Besiegen des Gegners nur für den Anführer des Sammelangriffs, nicht für die übrigen Teilnehmer.",
+    "Game 2.6.200 · Each skill at Lv.1. Skill level and the training stage needed to unlock it are separate.": "Spielversion 2.6.200 · Alle Fähigkeiten sind auf Lv.1 dargestellt. Die Fähigkeitsstufe ist von der zur Freischaltung erforderlichen Trainingsstufe zu unterscheiden.",
+    "The application of the 5% increase is unconfirmed; final hatch odds are not calculated.": "Wie die Erhöhung um 5% angewendet wird, ist nicht geklärt. Daraus wird keine endgültige Schlüpfwahrscheinlichkeit berechnet.",
+    "Increases deployed Heroes' Health by 3%.": "Erhöht die HP der eingesetzten Helden um 3%.",
+    "Increases Pet Stats by 5%.": "Erhöht die Haustierwerte um 5%.",
+    "Increases Pet Stats by 10%.": "Erhöht die Haustierwerte um 10%.",
+    "Hatching probabilities for game version 2.6.200. Rounded display values may total 99.99% or 100.01%. — means the pet is not listed for that egg, not a confirmed 0%.": "Schlüpfwahrscheinlichkeiten für Spielversion 2.6.200. Gerundete Anzeigewerte können sich zu 99.99% oder 100.01% summieren. — bedeutet, dass das Haustier für dieses Ei nicht aufgeführt ist; es bedeutet nicht bestätigte 0%.",
+    "Add speedup item days, hours, and minutes before spending them during an event.": "Addiere die Tage, Stunden und Minuten deiner Beschleunigungsgegenstände, bevor du sie bei einem Event einsetzt.",
+    "Check the in-game event score rules before spending large speedups.": "Prüfe die Punkteregeln des Events im Spiel, bevor du größere Mengen an Beschleunigungen einsetzt.",
+    "It adds speedup item days, hours, and minutes into total minutes, total hours, and a day-hour-minute breakdown.": "Der Rechner addiert Tage, Stunden und Minuten deiner Beschleunigungsgegenstände. Er zeigt Gesamtminuten, Gesamtstunden und eine Aufteilung in Tage, Stunden und Minuten an.",
+    "This calculator is for time totals and unit conversion. It does not calculate event score formulas.": "Dieser Rechner summiert Zeit und rechnet Zeiteinheiten um. Er berechnet keine Eventpunkte."
+  },
+  "officialTerminologyNote": "The installed official German text uses Zustand for the selected Health field. HP is an editorial clarification of that same field, not a newly inferred effect.",
+  "publicWritesByReviewer": 0
+}

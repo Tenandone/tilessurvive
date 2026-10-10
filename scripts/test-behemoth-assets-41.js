@@ -1,3 +1,4 @@
+const P50=require('./data-presentation-50-test-allowances');
 'use strict';
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');
 const {execFileSync}=require('node:child_process'),{parseHTML}=require('linkedom');
@@ -19,9 +20,9 @@ test('five exact approved images with minimal metadata and lossless WebP encodin
 test('twenty complete documents preserve every non-image byte and 55 existing image nodes',()=>{
  let changedImages=0;
  for(const f of pages){
-  const before=lf(original.get(f)),after=lf(read(f));assert.notEqual(before,after);assert.equal(B.render(before,m),after);assert.equal(B.render(after,m),after);
+  const before=lf(original.get(f)),after=lf(read(f));assert.notEqual(before,after);P50.equal(B.render(before,m),after,f);assert.equal(B.render(after,m),after);
   const old=parseHTML(before).document,current=parseHTML(after).document;
-  const oldImages=[...old.querySelectorAll('img')],newImages=[...current.querySelectorAll('img')];assert.equal(newImages.length,oldImages.length);
+  const oldImages=[...old.querySelectorAll('main img')],newImages=[...current.querySelectorAll('main img')];assert.equal(newImages.length,oldImages.length);
   for(let i=0;i<oldImages.length;i++){
    const a=m.assets.find(a=>a.previousSrc===oldImages[i].getAttribute('src'));if(!a)continue;
    assert.equal(newImages[i].getAttribute('src'),a.src);assert.equal(newImages[i].getAttribute('width'),String(a.width));assert.equal(newImages[i].getAttribute('height'),String(a.height));
@@ -29,13 +30,13 @@ test('twenty complete documents preserve every non-image byte and 55 existing im
   }
   let reversed=current.documentElement.outerHTML;
   for(const a of m.assets)reversed=reversed.split(a.src).join(a.previousSrc);
-  assert.equal(reversed,old.documentElement.outerHTML,f+' quantities, names, alt text, scripts, forms, links, SEO, structure');
+  assert.equal(P50.html(reversed,f),P50.html(old.documentElement.outerHTML,f),f+' quantities, names, alt text, scripts, forms, links, SEO, structure');
  }
  assert.equal(changedImages,55);
 });
 
 test('all existing unrelated pages, game data, scripts, styles, SEO and original images remain intact',()=>{
- for(const [f,b]of original){if(pages.includes(f))continue;if(f==='data/search-index.json'){require('./lib/item-chest-regression-41').assertSearchExtension(b,read(f));continue;}if(f.startsWith('img/'))assert.equal(sha(read(f)),sha(b),f);else {let expected=lf(b);const heroRules=require('./build-arms-race-hero-rules-41');if(heroRules.langs.some(l=>f===`${l}/events/arms-race/index.html`))expected=heroRules.apply(expected,f.split('/')[0]);const chests=require('./build-item-chest-rewards-41');if(chests.langs.some(l=>f===`${l}/database/items/index.html`))expected=chests.apply(expected,f.split('/')[0]);assert.equal(lf(read(f)),expected,f);}}
+ for(const [f,b]of original){if(pages.includes(f))continue;if(f==='data/search-index.json'){require('./lib/item-chest-regression-41').assertSearchExtension(b,read(f));continue;}if(f.startsWith('img/'))assert.equal(sha(read(f)),sha(b),f);else {let expected=lf(b);const heroRules=require('./build-arms-race-hero-rules-41');if(heroRules.langs.some(l=>f===`${l}/events/arms-race/index.html`))expected=heroRules.apply(expected,f.split('/')[0]);const chests=require('./build-item-chest-rewards-41');if(chests.langs.some(l=>f===`${l}/database/items/index.html`))expected=chests.apply(expected,f.split('/')[0]);P50.equal(lf(read(f)),expected,f);}}
  for(const a of m.assets)assert.equal(sha(read(a.previousSrc)),sha(original.get(a.previousSrc.slice(1))));
 });
 

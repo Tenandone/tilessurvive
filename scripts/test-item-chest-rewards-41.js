@@ -1,3 +1,4 @@
+const P50=require('./data-presentation-50-test-allowances');
 'use strict';
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto'),{execFileSync}=require('node:child_process'),{parseHTML}=require('linkedom');
 const B=require('./build-item-chest-rewards-41'),D=require('../data/foundation-40/item-chest-rewards-41.json'),C=require('../data/foundation-40/item-chest-rewards-copy'),{assertSearchExtension}=require('./lib/item-chest-regression-41');
@@ -14,7 +15,7 @@ test('five complete pages add exactly three accessible detail entries and otherw
  let rows=0,images=0;
  for(const lang of B.langs){
   const file=lang+'/database/items/index.html',before=lf(old(file)),after=lf(read(file)),d=parseHTML(after).document;
-  assert.equal(B.strip(after,lang),before,'Exact remainder including all18 items, quantities, conditions, SEO, links, calculators and runtime payload');assert.equal(B.apply(before,lang),after);assert.equal(B.apply(after,lang),after);
+  assert.equal(P50.html(B.strip(after,lang),file),P50.html(before,file),'Exact remainder including all18 items, quantities, conditions, SEO, links, calculators and runtime payload');P50.equal(B.apply(before,lang),after,file);assert.equal(B.apply(after,lang),after);
   assert.equal(d.querySelectorAll('[data-item-entry]').length,21);assert.deepEqual([...d.querySelectorAll('main h2')].map(n=>n.id),['items-heading','vip-offers-heading','packages-heading']);
   assert.equal(new Set([...d.querySelectorAll('[id]')].map(n=>n.id)).size,d.querySelectorAll('[id]').length);
   for(const c of [...D.choices,D.festival]){const entry=d.getElementById(c.id);assert(entry.matches('details[data-item-entry][data-chest-rewards-41]'));assert.equal(entry.dataset.category,c.category);assert.equal(entry.querySelector('summary').textContent,c.names[lang]);assert.equal(entry.querySelector('.ts40-item-body > div > p').textContent,c.descriptions[lang]);assert.equal(entry.querySelectorAll('h3').length,2);assert.equal(entry.querySelectorAll('h2').length,0);for(const image of entry.querySelectorAll('img')){const a=D.assets.find(a=>a.src===image.getAttribute('src'));assert(a);for(const [k,v]of Object.entries({alt:'','aria-hidden':'true',width:'128',height:'128',loading:'lazy',decoding:'async'}))assert.equal(image.getAttribute(k),v);images++;}}
@@ -24,7 +25,7 @@ test('five complete pages add exactly three accessible detail entries and otherw
  assert.equal(rows,55);assert.equal(images,20);
 });
 test('all existing data, formulas, styles, SEO and item images stay exact; only fifteen searchable destinations are added',()=>{
- for(const f of ['data/foundation-40/explorer.json','data/foundation-40/explorer-copy.js','js/foundation-40.js','js/foundation-40-math.js','css/foundation-40.css','sitemap.xml','robots.txt'])assert.equal(lf(read(f)),lf(old(f)),f);
+ for(const f of ['data/foundation-40/explorer.json','data/foundation-40/explorer-copy.js','js/foundation-40.js','js/foundation-40-math.js','css/foundation-40.css','sitemap.xml','robots.txt'])P50.equal(lf(read(f)),lf(old(f)),f);
  for(const manifest of ['data/foundation-40/image-assets.json','data/foundation-40/item-icons-41.json']){assert.equal(lf(read(manifest)),lf(old(manifest)));const m=JSON.parse(read(manifest));for(const a of m.assets.filter(a=>a.kind==='item'||a.id.startsWith('item:')))assert.deepEqual(read(a.src),old(a.src.slice(1)),a.src);}
  assertSearchExtension(old('data/search-index.json'),read('data/search-index.json'));
  for(const entry of B.entries()){const [route,id]=entry.url.split('#'),d=parseHTML(read(route+'index.html').toString()).document;assert.equal(d.getElementById(id).querySelector('summary').textContent,entry.title);}

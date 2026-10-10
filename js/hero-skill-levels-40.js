@@ -16,7 +16,8 @@
   if (!form) return;
   const block = d.getElementById('skill-level-comparison-40'), table = block.querySelector('[data-level-comparison-table]');
   const status = form.querySelector('[data-level-status]');
-  const format = (value, unit) => (unit === 'percent-bonus' ? '+' : '') + (d.documentElement.lang === 'ru' ? value.replace('.', ',') : value) + (unit === 'percent-atk' ? '% ATK' : '%');
+  const displayNumber = value => d.documentElement.lang === 'de' ? value.split('.').map((part,i)=>i?part:part.replace(/\B(?=(\d{3})+(?!\d))/g,'.')).join(',') : d.documentElement.lang === 'ru' ? value.replace('.', ',') : value;
+  const format = (value, unit) => (unit === 'percent-bonus' ? '+' : '') + displayNumber(value) + (unit === 'percent-atk' ? '% ATK' : '%');
   const update = () => {
     try {
       const from = Number(form.querySelector('[name="from"]').value), to = Number(form.querySelector('[name="to"]').value);

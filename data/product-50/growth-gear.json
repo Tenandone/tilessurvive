@@ -1,0 +1,466 @@
+{
+  "schemaVersion": 1,
+  "gameVersion": "2.6.200",
+  "levelRange": [
+    1,
+    15
+  ],
+  "stats": {
+    "attack": {
+      "ko": "영웅 공격",
+      "en": "Hero Attack",
+      "ja": "英雄攻撃力",
+      "ru": "Атака героя",
+      "zh-tw": "英雄攻擊",
+      "de": "Helden-Angriffskraft"
+    },
+    "defense": {
+      "ko": "영웅 방어",
+      "en": "Hero Defense",
+      "ja": "英雄防御力",
+      "ru": "Оборона героя",
+      "zh-tw": "英雄防禦",
+      "de": "Helden-Verteidigung"
+    },
+    "hp": {
+      "ko": "영웅 체력",
+      "en": "Hero Health",
+      "ja": "英雄HP",
+      "ru": "Здоровье героя",
+      "zh-tw": "英雄生命",
+      "de": "Heldenzustand"
+    }
+  },
+  "curve": [
+    {
+      "level": 1,
+      "attack": 3600,
+      "defense": 720,
+      "hp": 240000,
+      "power": 98880
+    },
+    {
+      "level": 2,
+      "attack": 5040,
+      "defense": 1010,
+      "hp": 336000,
+      "power": 138473
+    },
+    {
+      "level": 3,
+      "attack": 6480,
+      "defense": 1295,
+      "hp": 432000,
+      "power": 177963
+    },
+    {
+      "level": 4,
+      "attack": 7920,
+      "defense": 1585,
+      "hp": 528000,
+      "power": 217557
+    },
+    {
+      "level": 5,
+      "attack": 9360,
+      "defense": 1870,
+      "hp": 624000,
+      "power": 257047
+    },
+    {
+      "level": 6,
+      "attack": 10800,
+      "defense": 2160,
+      "hp": 720000,
+      "power": 296640
+    },
+    {
+      "level": 7,
+      "attack": 12240,
+      "defense": 2450,
+      "hp": 816000,
+      "power": 336233
+    },
+    {
+      "level": 8,
+      "attack": 13680,
+      "defense": 2735,
+      "hp": 912000,
+      "power": 375723
+    },
+    {
+      "level": 9,
+      "attack": 15120,
+      "defense": 3025,
+      "hp": 1008000,
+      "power": 415317
+    },
+    {
+      "level": 10,
+      "attack": 16560,
+      "defense": 3310,
+      "hp": 1104000,
+      "power": 477547
+    },
+    {
+      "level": 11,
+      "attack": 18000,
+      "defense": 3600,
+      "hp": 1200000,
+      "power": 519120
+    },
+    {
+      "level": 12,
+      "attack": 19440,
+      "defense": 3890,
+      "hp": 1296000,
+      "power": 560693
+    },
+    {
+      "level": 13,
+      "attack": 20880,
+      "defense": 4175,
+      "hp": 1392000,
+      "power": 602158
+    },
+    {
+      "level": 14,
+      "attack": 22320,
+      "defense": 4465,
+      "hp": 1488000,
+      "power": 643730
+    },
+    {
+      "level": 15,
+      "attack": 23760,
+      "defense": 4750,
+      "hp": 1584000,
+      "power": 750452
+    }
+  ],
+  "heroes": [
+    {
+      "id": "beka",
+      "name": {
+        "ko": "베카",
+        "en": "Becca",
+        "ja": "ベッキー",
+        "ru": "Бэкка",
+        "zh-tw": "貝卡",
+        "de": "Becca"
+      },
+      "gearName": {
+        "ko": "관통 저격총",
+        "en": "Horizon Hunter",
+        "ja": "ホライゾンアロー",
+        "ru": "Охотник на горизонт",
+        "zh-tw": "穿雲狙擊槍",
+        "de": "Horizontjäger"
+      }
+    },
+    {
+      "id": "candy",
+      "name": {
+        "ko": "채의진",
+        "en": "Candy",
+        "ja": "イージェン",
+        "ru": "Кэнди",
+        "zh-tw": "蔡宜蓁",
+        "de": "Candy"
+      },
+      "gearName": {
+        "ko": "그림자 물총",
+        "en": "Ripple",
+        "ja": "リプル",
+        "ru": "Волна",
+        "zh-tw": "流影水彈槍",
+        "de": "Schnellfeuer-Wasserpistole"
+      }
+    },
+    {
+      "id": "jacob",
+      "name": {
+        "ko": "제이콥",
+        "en": "Jacob",
+        "ja": "ヤーコブ",
+        "ru": "Джейкоб",
+        "zh-tw": "雅各",
+        "de": "Jacob"
+      },
+      "gearName": {
+        "ko": "스마일링 매드건",
+        "en": "Laughing Madgun",
+        "ja": "笑うマッドガン",
+        "ru": "Психострел-хохотун",
+        "zh-tw": "笑面狂槍",
+        "de": "Lachende Pistole"
+      }
+    },
+    {
+      "id": "kiki",
+      "name": {
+        "ko": "키키",
+        "en": "Kiki",
+        "ja": "キキ",
+        "ru": "Кики",
+        "zh-tw": "緹緹",
+        "de": "Kiki"
+      },
+      "gearName": {
+        "ko": "샤크 레이저 캐논",
+        "en": "Sharkbite Blaster",
+        "ja": "シャークキャノン",
+        "ru": "Акулья пушка",
+        "zh-tw": "魔鯊雷射砲",
+        "de": "Haibiss-Blaster"
+      }
+    },
+    {
+      "id": "kiron",
+      "name": {
+        "ko": "키론",
+        "en": "Chiron",
+        "ja": "カイロン",
+        "ru": "Хирон",
+        "zh-tw": "凱隆",
+        "de": "Chiron"
+      },
+      "gearName": {
+        "ko": "신이 내린 궁수",
+        "en": "Godpiercer",
+        "ja": "神の長弓",
+        "ru": "Губитель богов",
+        "zh-tw": "神鋒長弓",
+        "de": "Götterdurchbohrer"
+      }
+    },
+    {
+      "id": "laila",
+      "name": {
+        "ko": "라일라",
+        "en": "Layla",
+        "ja": "レイラ",
+        "ru": "Лайла",
+        "zh-tw": "萊拉",
+        "de": "Layla"
+      },
+      "gearName": {
+        "ko": "부활의 채찍",
+        "en": "Whip of Revival",
+        "ja": "復活の鞭",
+        "ru": "Кнут возрождения",
+        "zh-tw": "復甦長鞭",
+        "de": "Peitsche der Wiederbelebung"
+      }
+    },
+    {
+      "id": "light",
+      "name": {
+        "ko": "라이트",
+        "en": "Wright",
+        "ja": "ライト",
+        "ru": "Райт",
+        "zh-tw": "萊特",
+        "de": "Wright"
+      },
+      "gearName": {
+        "ko": "클라우드 피어싱",
+        "en": "Stormpiercer",
+        "ja": "飛翔の拳銃",
+        "ru": "Бурепроходец",
+        "zh-tw": "飛雲手槍",
+        "de": "Sturmbrecher"
+      }
+    },
+    {
+      "id": "maddy",
+      "name": {
+        "ko": "매디",
+        "en": "Maddie",
+        "ja": "マディ",
+        "ru": "Мэдди",
+        "zh-tw": "麥蒂",
+        "de": "Maddie"
+      },
+      "gearName": {
+        "ko": "폭풍의 활",
+        "en": "Tempest Crossbow",
+        "ja": "嵐の大弓",
+        "ru": "Грозовой арбалет",
+        "zh-tw": "風暴狂弩",
+        "de": "Sturm-Armbrust"
+      }
+    },
+    {
+      "id": "mike",
+      "name": {
+        "ko": "마이크",
+        "en": "Mike",
+        "ja": "マイク",
+        "ru": "Майк",
+        "zh-tw": "麥克",
+        "de": "Mike"
+      },
+      "gearName": {
+        "ko": "썬더 실드",
+        "en": "Aegis of Thunder",
+        "ja": "雷霆の巨盾",
+        "ru": "Громовой щит",
+        "zh-tw": "雷霆巨盾",
+        "de": "Donner-Aegis"
+      }
+    },
+    {
+      "id": "nikola",
+      "name": {
+        "ko": "니콜라",
+        "en": "Nikola",
+        "ja": "ニコラ",
+        "ru": "Никола",
+        "zh-tw": "尼古拉",
+        "de": "Nikola"
+      },
+      "gearName": {
+        "ko": "초전자포",
+        "en": "Voltstorm",
+        "ja": "超電磁砲",
+        "ru": "Вольтшторм",
+        "zh-tw": "超電磁砲",
+        "de": "Voltsturm"
+      }
+    },
+    {
+      "id": "ray",
+      "name": {
+        "ko": "레이",
+        "en": "Ray",
+        "ja": "レイ",
+        "ru": "Рэй",
+        "zh-tw": "雷",
+        "de": "Ray"
+      },
+      "gearName": {
+        "ko": "암흑 수류탄",
+        "en": "Obsidian Grenade",
+        "ja": "暗黒ランチャー",
+        "ru": "Обсидиановая граната",
+        "zh-tw": "黑暗榴彈",
+        "de": "Obsidian-Granate"
+      }
+    },
+    {
+      "id": "rosie",
+      "name": {
+        "ko": "로지",
+        "en": "Rosie",
+        "ja": "ローズ",
+        "ru": "Рози",
+        "zh-tw": "蘿絲",
+        "de": "Rosie"
+      },
+      "gearName": {
+        "ko": "종말의 기타",
+        "en": "Apocalypse Guitar",
+        "ja": "終末ギター",
+        "ru": "Гитара апокалипсиса",
+        "zh-tw": "末日吉他",
+        "de": "Apokalypse-Gitarre"
+      }
+    },
+    {
+      "id": "shark",
+      "name": {
+        "ko": "샤크",
+        "en": "Shark",
+        "ja": "シャーク",
+        "ru": "Акула",
+        "zh-tw": "沙克",
+        "de": "Shark"
+      },
+      "gearName": {
+        "ko": "심해의 닻",
+        "en": "Abyssal Anchor",
+        "ja": "メガアンカー",
+        "ru": "Якорь бездны",
+        "zh-tw": "深海巨錨",
+        "de": "Abgrundanker"
+      }
+    },
+    {
+      "id": "tara",
+      "name": {
+        "ko": "타라",
+        "en": "Tara",
+        "ja": "ターラ",
+        "ru": "Тара",
+        "zh-tw": "塔拉",
+        "de": "Tara"
+      },
+      "gearName": {
+        "ko": "펜리르 망치",
+        "en": "Fenrir Hammer",
+        "ja": "狼の戦鎚",
+        "ru": "Молот Фенрира",
+        "zh-tw": "天狼流星錘",
+        "de": "Fenris-Hammer"
+      }
+    },
+    {
+      "id": "tarzan",
+      "name": {
+        "ko": "타잔",
+        "en": "Tarzan",
+        "ja": "ターザン",
+        "ru": "Тарзан",
+        "zh-tw": "泰山",
+        "de": "Tarzan"
+      },
+      "gearName": {
+        "ko": "썬더 피스트",
+        "en": "Thunderfist",
+        "ja": "雷霆の鉄拳",
+        "ru": "Громовой кулак",
+        "zh-tw": "雷霆鐵拳",
+        "de": "Donnerfaust"
+      }
+    },
+    {
+      "id": "tony",
+      "name": {
+        "ko": "탄 토니",
+        "en": "Tony",
+        "ja": "トニー",
+        "ru": "Тони",
+        "zh-tw": "譚托尼",
+        "de": "Tony Tan"
+      },
+      "gearName": {
+        "ko": "스타 레이저총",
+        "en": "Starfire",
+        "ja": "閃光の射手",
+        "ru": "Звездный огонь",
+        "zh-tw": "星耀雷射槍",
+        "de": "Sternenfeuer"
+      }
+    },
+    {
+      "id": "undine",
+      "name": {
+        "ko": "운디네",
+        "en": "Undine",
+        "ja": "ウンディーネ",
+        "ru": "Ундина",
+        "zh-tw": "溫蒂妮",
+        "de": "Undine"
+      },
+      "gearName": {
+        "ko": "바다의 음성",
+        "en": "Ocean Vox",
+        "ja": "海洋のマイク",
+        "ru": "Голос океана",
+        "zh-tw": "海謠麥克",
+        "de": "Stimme des Ozeans"
+      }
+    }
+  ]
+}

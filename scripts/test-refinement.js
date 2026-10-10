@@ -26,8 +26,8 @@ for(const lang of langs){
 const sitemap=fs.readFileSync(path.join(root,'sitemap.xml'),'utf8'),index=JSON.parse(fs.readFileSync(path.join(root,'data/search-index.json'),'utf8'));
 for(const route of newRoutes){const d=read(route),url='https://tilessurvive.net/'+route+'/';
  check(d.querySelectorAll('h1').length===1,route+' H1');check(d.querySelector('link[rel=canonical]').href===url,route+' canonical');
- check(d.querySelectorAll('link[hreflang]').length===6,route+' hreflang');
- for(const lang of langs){const target=route.replace(/^[^/]+/,lang);check(d.querySelector(`link[hreflang="${lang}"]`).href==='https://tilessurvive.net/'+target+'/',route+' language target');}
+ check(d.querySelectorAll('link[hreflang]').length===7,route+' hreflang');
+ for(const lang of [...langs,'de']){const target=route.replace(/^[^/]+/,lang);check(d.querySelector(`link[hreflang="${lang}"]`).href==='https://tilessurvive.net/'+target+'/',route+' language target');}
  check(sitemap.includes('<loc>'+url+'</loc>'),route+' sitemap');check(JSON.stringify(index).includes('/'+route+'/'),route+' search index');
  for(const img of d.querySelectorAll('img')){const src=img.getAttribute('src');if(src.startsWith('/')){const size=imageSize(fs.readFileSync(path.join(root,src)));check(size.width>0,src);check(+img.getAttribute('width')>0&&+img.getAttribute('height')>0,'image dimensions '+src);}}
  check(d.querySelectorAll('link[href^="/css/refinement.css"]').length===1,route+' one stylesheet');

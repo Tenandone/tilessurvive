@@ -284,6 +284,24 @@
       Object.fromEntries(keys.map((k, i) => [k, v[i]])),
     ]),
   );
+  dictionary.de = {
+    search: 'Suchen', menu: 'Menü', heroes: 'Helden', buildings: 'Gebäude',
+    database: 'Wachstum und Ausrüstung', tools: 'Rechner', guides: 'Ratgeber',
+    seasons: 'Saisons', codes: 'Codes', events: 'Ereignisse', topup: 'Aufladen',
+    all: 'Alle', sort: 'Sortieren', name: 'Name', original: 'Standardreihenfolge',
+    filter: 'Filtern', reset: 'Zurücksetzen', results: 'Ergebnisse',
+    current: 'Aktuelle Stufe', target: 'Zielstufe', calculate: 'Berechnen', total: 'Gesamtbedarf',
+    copy: 'Kopieren', copied: 'Kopiert', copyError: 'Kopieren nicht möglich. Bitte den Text auswählen.',
+    row: 'Ausgewählte Stufe', table: 'Vollständige Tabelle', range: 'Bereich',
+    source: 'Berechnung anhand der Tabellenwerte. Summen gerundeter Werte sind Näherungen.',
+    conflict: 'Zusammenfassung und Tabellenwerte weichen voneinander ab. Die Werte bleiben erhalten; eine Summenberechnung ist nicht verfügbar.',
+    unknown: 'Für diesen Bereich fehlen Werte. Eine Summe lässt sich nicht berechnen.',
+    close: 'Schließen', language: 'Sprache', related: 'Verwandte Informationen',
+    research: 'Forschungsvoraussetzungen', condition: 'Voraussetzungen',
+    affiliate: 'Partnerlink', offer: 'Bedingungen für Produkt, Region und Währung bei LootBar prüfen.',
+    loading: 'Wird geladen', error: 'Laden fehlgeschlagen.', retry: 'Erneut versuchen',
+    noResults: 'Keine Ergebnisse.', choose: 'Auswählen', time: 'Grunddauer'
+  };
   if (typeof module === "object") module.exports = dictionary;
   else root.TS_COPY = dictionary;
 })(typeof window === "object" ? window : globalThis);

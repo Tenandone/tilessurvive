@@ -1,7 +1,7 @@
 // /js/layout.js
 
 (function () {
-  const SUPPORTED_LANGS = ["ko", "en", "ja", "ru", "zh-tw"];
+  const SUPPORTED_LANGS = ["ko", "en", "ja", "ru", "zh-tw", "de"];
 
   const LANG_LABELS = {
     ko: "KO",
@@ -9,6 +9,7 @@
     ja: "JA",
     ru: "RU",
     "zh-tw": "TW",
+    de: "DE",
   };
 
   function getCurrentLang() {
@@ -31,7 +32,7 @@
 
   function getPathWithoutLang() {
     const pathname = window.location.pathname || "/";
-    const stripped = pathname.replace(/^\/(ko|en|ja|ru|zh-tw)(\/|$)/i, "/");
+    const stripped = pathname.replace(/^\/(ko|en|ja|ru|zh-tw|de)(\/|$)/i, "/");
     return stripped || "/";
   }
 
@@ -371,12 +372,13 @@
     if (!affiliateUrl) return;
 
     const copy = {
-      ko: ["충전 혜택을 확인해 보세요", "패키지와 이벤트 일정을 확인한 뒤 현재 적용 가능한 할인 충전 혜택을 비교하세요.", "최대 22% 할인 충전 확인", "혜택 자세히 보기"],
-      en: ["Check current top-up benefits", "Review package value and event timing, then compare the currently available top-up savings.", "Check up to 22% top-up savings", "View benefit details"],
-      ja: ["チャージ特典を確認", "パッケージ内容とイベント日程を確認し、現在利用できるチャージ特典を比較しましょう。", "最大22%のチャージ特典を確認", "特典の詳細を見る"],
-      "zh-tw": ["查看目前的儲值優惠", "先確認禮包內容與活動時間，再比較目前可用的儲值優惠。", "查看最高22%儲值優惠", "查看優惠詳情"],
-      ru: ["Проверьте текущие бонусы пополнения", "Сначала проверьте наборы и расписание событий, затем сравните доступную выгоду пополнения.", "Проверить скидку до 22%", "Подробнее о выгоде"]
+      ko: ["충전 혜택을 확인해 보세요", "패키지와 이벤트 일정을 확인한 뒤 현재 적용 가능한 할인 충전 혜택을 비교하세요.", "할인 충전 가능 여부 확인", "혜택 자세히 보기"],
+      en: ["Check current top-up benefits", "Review package value and event timing, then compare the currently available top-up savings.", "Check available top-up savings", "View benefit details"],
+      ja: ["チャージ特典を確認", "パッケージ内容とイベント日程を確認し、現在利用できるチャージ特典を比較しましょう。", "チャージ割引の適用条件を確認", "特典の詳細を見る"],
+      "zh-tw": ["查看目前的儲值優惠", "先確認禮包內容與活動時間，再比較目前可用的儲值優惠。", "查看適用的儲值優惠", "查看優惠詳情"],
+      ru: ["Проверьте текущие бонусы пополнения", "Сначала проверьте наборы и расписание событий, затем сравните доступную выгоду пополнения.", "Проверить доступную скидку", "Подробнее о выгоде"]
     };
+    copy.de = ["Verfügbare Aufladeangebote prüfen", "Paketinhalt und Ereignisbedingungen prüfen und anschließend verfügbare Aufladeangebote vergleichen.", "Verfügbare Aufladeangebote prüfen", "Bedingungen ansehen"];
     const text = copy[lang] || copy.en;
     const style = document.createElement("style");
     style.id = "infoAffiliateStyles";

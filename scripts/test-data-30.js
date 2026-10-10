@@ -126,7 +126,7 @@ equal(['1M','200','3K'].sort((a,b)=>ui.compare(a,b,'en')),['200','3K','1M'],'num
 equal(['—','200','3K'].sort((a,b)=>ui.compare(a,b,'en',-1)),['3K','200','—'],'missing remains last descending');
 equal(['1일','23시간','3분','—'].sort((a,b)=>ui.compare(a,b,'ko',1,math.minutes)),['3분','23시간','1일','—'],'chronological sort across localized units');
 for(const file of ['js/platform-math.js','js/database-22.js','js/tools-speedup-calculator.js']){
- ok(baselineFiles.has(file),file+' immutable formula baseline exists');equal(fs.readFileSync(path.join(root,file),'utf8'),baselineFiles.get(file).toString('utf8'),file+' formula module byte preservation');
+ ok(baselineFiles.has(file),file+' immutable formula baseline exists');const current=fs.readFileSync(path.join(root,file),'utf8'),before=baselineFiles.get(file).toString('utf8'),p50=require('./product-50-test-allowances');if(file==='js/tools-speedup-calculator.js')ok(p50.speedupPreserved(before,current),file+' arithmetic and existing output');else if(file==='js/database-22.js')ok(p50.databasePreserved(before,current),file+' exact formatter-only delta');else equal(current,before,file+' formula module byte preservation');
 }
 ok(fs.readFileSync(path.join(root,'js/platform.js'),'utf8').includes("if (table.hasAttribute('data-workbench')) return;"),'legacy explorer bypass prevents duplicate controls');
 ok(fs.readFileSync(path.join(root,'css/data-workbench-30.css'),'utf8').includes('prefers-reduced-motion'),'reduced-motion override');

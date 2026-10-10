@@ -72,7 +72,7 @@ for(const old of baseline.pages){
  const file=path.join(root,old.relative);check(fs.existsSync(file),'URL removed '+old.route);if(!fs.existsSync(file))continue;
  counts.pages++;const doc=parseHTML(fs.readFileSync(file,'utf8')).document;pageDocs.set(old.route,doc);const baseURL=new URL(doc.querySelector('base[href]')?.getAttribute('href')||old.route,'https://tilessurvive.net');
  check(doc.querySelector('link[rel=canonical]')?.href===old.canonical,'Canonical changed '+old.route);
- check(JSON.stringify([...doc.querySelectorAll('link[hreflang]')].map(n=>[n.getAttribute('hreflang'),n.href]).sort())===JSON.stringify(old.alternates),'Hreflang changed '+old.route);
+ check(JSON.stringify([...doc.querySelectorAll('link[hreflang]')].map(n=>[n.getAttribute('hreflang'),n.href]).sort())===JSON.stringify(require('./product-50-test-allowances').alternates(old.alternates)),'Hreflang changed '+old.route);
  check(/noindex/.test(doc.querySelector('meta[name=robots]')?.content||'')===old.noindex,'Indexability changed '+old.route);
  check(doc.querySelectorAll('h1').length===1,'One H1 '+old.route);
  check(text(doc.querySelector('title')).length>0,'Title '+old.route);
@@ -141,7 +141,7 @@ for(const [name,data]of Object.entries(database.datasets)){
  for(const [from,to,held]of [[data.min-1,data.max,0],[data.min,data.max+1,0],[2,1,0],[1.5,3,0],[NaN,3,0],[data.min,data.max,-1],[data.min,data.max,Infinity]])check(JSON.stringify(currentGrowth(data.rows,from,to,held))===JSON.stringify(oldGrowth(data.rows,from,to,held)),'Growth error guard '+name);
 }
 const formulaChanges=Object.entries(baseline.formulaSources).filter(([f,sha])=>hash(fs.readFileSync(path.join(root,f)))!==sha).map(([f])=>f);
-check(hash(fs.readFileSync(path.join(root,'js/tools-speedup-calculator.js')))===baseline.formulaSources['js/tools-speedup-calculator.js'],'Legacy speedup formula bytes');
+check(require('./product-50-test-allowances').speedupPreserved(execFileSync('git',['show',release+':js/tools-speedup-calculator.js'],{cwd:root,encoding:'utf8'}),fs.readFileSync(path.join(root,'js/tools-speedup-calculator.js'),'utf8')),'Legacy speedup arithmetic and original-language output');
 const result={baseline:release,checks,counts,rangeCases,formulaChanges,errors,scope:'Static URLs, canonical/hreflang/indexability, numeric table rows with units and row context, local assets/links, fixed artwork/data, banner placement/referral, calculator input rows and exhaustive growth math. Browser rendering/interactions, performance and prose completeness are separate checks.'};
 if(process.env.TS_PRODUCT_RESULT)fs.writeFileSync(process.env.TS_PRODUCT_RESULT,JSON.stringify(result,null,2));
 console.log(JSON.stringify({...result,errors:errors.slice(0,60),totalErrors:errors.length},null,2));if(errors.length)process.exitCode=1;

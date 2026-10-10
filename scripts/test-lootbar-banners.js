@@ -17,7 +17,7 @@ for(const [lang,c] of Object.entries(copy))for(const type of types){
  check(d.querySelector('meta[name=description]')?.content.trim().length>0,'Description present '+relative);
  check(d.querySelector('link[rel=canonical]')?.href===old.querySelector('link[rel=canonical]')?.href,'Canonical preserved '+relative);
  const alternates=doc=>[...doc.querySelectorAll('link[hreflang]')].map(x=>[x.getAttribute('hreflang'),x.href]).sort();
- check(JSON.stringify(alternates(d))===JSON.stringify(alternates(old)),'Hreflang preserved '+relative);
+ check(JSON.stringify(alternates(d))===JSON.stringify(require('./product-50-test-allowances').alternates(alternates(old))),'Hreflang preserved '+relative);
  if(type==='codes/'){check(!d.querySelector('.sponsorPill,#midDiscountLink,iframe[src*=lootbar]'),'Old coupon ads replaced');check(d.querySelector('#codesGrid'),'Coupon list kept');check(d.querySelector('script[data-coupon-app]').textContent===old.querySelector('script[data-coupon-app]').textContent,'Coupon script unchanged');}
  if(type==='top-up/')check(!d.querySelector('.topup-sticky'),'No fixed CTA');
  if(type==='guides/discount-topup-promotion/')check(!d.querySelector('#widget .widget-desktop,#widget .widget-mobile,#widget iframe,#widget [data-placeholder]'),'Legacy device wrappers and overlays removed');

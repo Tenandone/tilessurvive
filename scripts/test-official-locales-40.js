@@ -19,7 +19,8 @@ test('same production routes, canonical, hreflang and hero banners survive namin
   const file=e.route.slice(1)+'index.html';
   const old=parseHTML(execFileSync('git',['show',release+':'+file],{cwd:root,encoding:'utf8',maxBuffer:5e6})).document;
   const current=parseHTML(fs.readFileSync(path.join(root,file),'utf8')).document;
-  for(const selector of ['link[rel=canonical]','link[hreflang]','.ts-lootbar-slot'])assert.deepEqual([...current.querySelectorAll(selector)].map(n=>n.outerHTML),[...old.querySelectorAll(selector)].map(n=>n.outerHTML),file+' '+selector);
+  for(const selector of ['link[rel=canonical]','.ts-lootbar-slot'])assert.deepEqual([...current.querySelectorAll(selector)].map(n=>n.outerHTML),[...old.querySelectorAll(selector)].map(n=>n.outerHTML),file+' '+selector);
+  const oldAlternates=[...old.querySelectorAll('link[hreflang]')].map(n=>[n.hreflang,n.href]); const deRoute=e.entity.id==='tarzan'?e.route.replace('/'+lang+'/','/de/').replace('/tarzan/','/tazan/'):e.route.replace('/'+lang+'/','/de/');assert.deepEqual([...current.querySelectorAll('link[hreflang]')].map(n=>[n.hreflang,n.href]).sort(),[...oldAlternates,['de','https://tilessurvive.net'+deRoute]].sort(),file+' preserved old alternates plus exact German counterpart');
   const oldBodies=[...old.querySelectorAll('.ts-skill-body')],bodies=[...current.querySelectorAll('.ts-skill-body')];
   assert.equal(bodies.length,oldBodies.length,file+' complete skill panels');
   // Human-reviewed labels may change; every original displayed quantity must remain.
@@ -47,9 +48,9 @@ test('short labels never replace substrings or repeatedly expand names',()=>{
  assert.equal(replaceLabels('100.25% ATK',pairs),'100.25% ATK');
 });
 test('every generated changed client uses a new cache version across all five locales',()=>{
- const versions={'/js/platform.js':'5','/js/platform-search.js':'3','/js/product-30.js':'2','/js/foundation-40.js':'3'},counts=Object.fromEntries(Object.keys(versions).map(k=>[k,0]));
+ const versions=Object.fromEntries(['/js/platform.js','/js/platform-search.js','/js/product-30.js','/js/foundation-40.js'].map(f=>[f,require('crypto').createHash('sha256').update(fs.readFileSync(path.join(root,f))).digest('hex').slice(0,12)])),counts=Object.fromEntries(Object.keys(versions).map(k=>[k,0]));
  const walk=dir=>fs.readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(path.join(dir,e.name)):[path.join(dir,e.name)]);
- for(const lang of langs)for(const file of walk(path.join(root,lang)).filter(f=>f.endsWith('.html'))){const d=parseHTML(fs.readFileSync(file,'utf8')).document;for(const script of d.querySelectorAll('script[src]')){const url=new URL(script.getAttribute('src'),'https://tilessurvive.net');if(versions[url.pathname]){assert.equal(url.searchParams.get('v'),versions[url.pathname],file+' '+url.pathname);counts[url.pathname]++;}}}
+ for(const lang of [...langs,'de'])for(const file of walk(path.join(root,lang)).filter(f=>f.endsWith('.html'))){const d=parseHTML(fs.readFileSync(file,'utf8')).document;for(const script of d.querySelectorAll('script[src]')){const url=new URL(script.getAttribute('src'),'https://tilessurvive.net');if(versions[url.pathname]){assert.equal(url.searchParams.get('v'),versions[url.pathname],file+' '+url.pathname);counts[url.pathname]++;}}}
  for(const [file,count] of Object.entries(counts))assert.ok(count>=5,file+' used in all locales');
 });
 async function runSearchClient(kind,lang,items,query){
@@ -61,11 +62,11 @@ async function runSearchClient(kind,lang,items,query){
  if(header){input.value=query;input.dispatchEvent(new window.Event('focus'));}
  await new Promise(resolve=>setImmediate(resolve));
  const links=()=>[...document.querySelectorAll(header?'.ts3-search-results a:not(.ts3-search-all)':'#siteSearchResults a')].map(a=>a.getAttribute('href'));
- assert.deepEqual(requests,[{url:'/data/search-index.json',cache:'no-cache'}],kind+' revalidates index');
+ assert.deepEqual(requests,[{url:'/data/search/'+lang+'.json',cache:'no-cache'}],kind+' revalidates index');
  return {document,window,input,links,requests};
 }
 for(const kind of ['header','page'])test(kind+' search executes alias-only matching, language filtering and empty-state recovery',async()=>{
- for(const lang of langs){
+ for(const lang of [...langs,'de']){
   const query='old-name-'+lang,route='/'+lang+'/heroes/freya/';
   const items=[{language:lang,title:'Current official name',description:'Current description',type:'heroes',url:route,aliases:query},{language:lang==='ko'?'en':'ko',title:'Other language',description:'',type:'heroes',url:'/other/',aliases:query}];
   const state=await runSearchClient(kind,lang,items,query);assert.deepEqual(state.links(),[route],kind+' alias-only '+lang);

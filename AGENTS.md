@@ -30,6 +30,7 @@ The site provides heroes, buildings, behemoths, seasons, database pages, guides,
   - /ja/
   - /ru/
   - /zh-tw/
+  - /de/
 - Keep slug names consistent across languages unless the user explicitly requests otherwise.
 - Main content pages should use the folder/index.html structure.
 - Do not casually change menu order, menu count, or shared UI structure.

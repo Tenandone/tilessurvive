@@ -16,4 +16,7 @@ for(const [route,expected,planner]of [['/ko/','home'],['/en/heroes/shark/','hero
 }
 const a=setup('/ko/heroes/shark/',{hostname:'tilessurvive.net'});a.view(.59);eq(a.pending(),0);a.view(.6);eq(a.events.length,0);eq(a.pending(),1);a.doc.hidden=true;a.visibility();eq(a.pending(),0);a.flush();eq(a.events.length,0);a.doc.hidden=false;a.visibility();a.flush();eq(a.events.length,1);eq(a.events[0].event,'affiliate_viewable');eq(a.events[0].measurement_version,'3.0.1');a.view(1);a.flush();eq(a.events.length,1);a.click();eq(a.events.length,2);eq(a.analytics.length,2);eq(a.analytics[0][0],'event');eq(a.analytics[0][1],'affiliate_viewable');eq(a.analytics[1][1],'lootbar_outbound_click');eq(a.analytics.some(e=>e[1]==='purchase'),false);
 const b=setup('/ko/top-up/',{banner:false});b.click();eq(b.events[0].creative_type,'text_link');
+for(const [route,expected]of [['/de/','home'],['/de/heroes/shark/','hero_detail'],['/de/database/pet-system/starhorn/','pet_detail'],['/de/database/items/','item_shop'],['/de/events/arms-race/','event'],['/de/tools/speedup-calculator/','calculator']]){
+ const localized=setup(route);localized.click();eq(localized.events[0].page_type,expected);eq(localized.events[0].destination,localized.anchor.href);eq(localized.analytics.length,0);
+}
 console.log(JSON.stringify({checks,errors:[],scope:'Actual tracking module: page categories, banner/text dimension, viewable60%+1second, hidden-tab cancellation, one view per document, click separation, production-only GA dispatch, no invented purchase event.'},null,2));

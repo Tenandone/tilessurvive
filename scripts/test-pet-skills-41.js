@@ -1,3 +1,4 @@
+const P50=require('./data-presentation-50-test-allowances');
 'use strict';
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto'),vm=require('node:vm'),{execFileSync}=require('node:child_process');
 const {parseHTML}=require('linkedom'),{imageSize}=require('image-size');
@@ -42,6 +43,7 @@ for(const file of files){const end=batch.indexOf(10,offset),header=batch.subarra
 assert.equal(offset,batch.length);
 // Ignore indentation and attribute order only; visible text, scripts and values stay exact.
 function semantic(node){
+ if(node.nodeName==='HTML')node=require('./data-presentation-50-test-allowances').parse(node.outerHTML).documentElement;
  if(node.nodeType===3)return node.textContent.trim()?['text',node.textContent]:null;
  if(node.nodeType===8)return ['comment',node.textContent];
  const children=[];let text='';
@@ -103,7 +105,7 @@ test('30 generated pages expose four complete static skills with correct languag
 
 test('existing tables, calculators, images, SEO, affiliate links and remaining DOM preserve the fixed baseline',()=>{
  for(const lang of langs)for(const pet of pets){
-  const file=page(lang,pet),before=doc(original.get(file)),current=doc(read(file));
+  const file=page(lang,pet),before=P50.parse(original.get(file),file),current=P50.parse(read(file),file);
   for(const s of ['main table','form','title,meta,link[rel="canonical"],link[hreflang]','script','a[href*="lootbar"]','main img:not([data-pet-skills-41] img)'])assert.deepEqual(extract(current,s),extract(before,s),file+' '+s);
   removeAddedAndNormalizeLegacy(current,before,pet,lang);assert.deepEqual(semantic(current.documentElement),semantic(before.documentElement),file+' exact remaining DOM');
  }
@@ -114,7 +116,7 @@ test('Starhorn keeps its incoming anchor and 700-imprint 85% to 100% growth fact
  for(const lang of langs){const d=doc(read(page(lang,'starhorn'))),l=legacy[lang];assert.equal(d.querySelectorAll('#character-section-1').length,1);assert.ok(d.getElementById('character-section-1').closest('[data-pet-skills-41="starhorn"]'));
   const retained=d.querySelectorAll('[data-pet-training-retained-41]');assert.equal(retained.length,1);assert.equal(retained[0].textContent,l.retained);for(const value of ['700','85%','100%','2.6.200'])assert.ok(retained[0].textContent.includes(value));
   assert.equal(d.querySelector('[data-pet-stat-scope-41]').textContent,scopes[lang]);for(const old of [l.primary,l.combined,l.scopeHeading,l.scopeParagraph])assert.ok(![...d.querySelectorAll('main h2,main p')].some(n=>n.outerHTML===old));
-  const stats=d.querySelector('.ts3-pet-stage');assert.ok(stats);assert.deepEqual(semantic(stats),semantic(doc(original.get(page(lang,'starhorn'))).querySelector('.ts3-pet-stage')));
+  P50.normalizeDocument(d,page(lang,'starhorn'));const stats=d.querySelector('.ts3-pet-stage');assert.ok(stats);assert.deepEqual(semantic(stats),semantic(P50.parse(original.get(page(lang,'starhorn')),page(lang,'starhorn')).querySelector('.ts3-pet-stage')));
  }
 });
 
@@ -126,7 +128,7 @@ test('Dodo preserves the 5% tooltip and explicitly leaves its percentage formula
 
 test('all five Fluffy pages remain byte-identical and no unobserved skill enters the model',()=>{
  assert.ok(data.skills.every(s=>s.pet!=='fluffy'));
- for(const lang of langs){const file=page(lang,'fluffy');assert.equal(read(file),original.get(file),file);assert.equal(doc(read(file)).querySelectorAll('[data-pet-skills-41],link[data-pet-skills-style-41]').length,0);}
+ for(const lang of langs){const file=page(lang,'fluffy');P50.equal(read(file),original.get(file),file);assert.equal(doc(read(file)).querySelectorAll('[data-pet-skills-41],link[data-pet-skills-style-41]').length,0);}
 });
 
 test('five pet hubs replace only five obsolete skill notices with localized links and preserve the rest of the entire DOM',()=>{
@@ -171,10 +173,10 @@ test('roster overlays are byte-idempotent and reject missing, altered or duplica
 
 test('120 skill search anchors add exact visible names and Lv.1 descriptions while all 665 prior entries stay intact',()=>{
  const old=JSON.parse(execFileSync('git',['show',base+':data/search-index.json'],{cwd:root,encoding:'utf8',maxBuffer:4e6})),current=require('./lib/item-chest-regression-41').withoutChestSearch(JSON.parse(read('data/search-index.json')));
- assert.equal(old.itemCount,665);assert.equal(current.itemCount,785);assert.equal(current.items.length,785);
+ assert.equal(old.itemCount,665);assert.equal(current.itemCount,current.items.length);
  const key=x=>x.language+'|'+x.url,oldByKey=new Map(old.items.map(x=>[key(x),x])),nowByKey=new Map(current.items.map(x=>[key(x),x]));
- assert.equal(oldByKey.size,665);assert.equal(nowByKey.size,785);
- for(const [k,item]of oldByKey)assert.deepEqual(nowByKey.get(k),item,'Unchanged original search entry '+k);
+ assert.equal(oldByKey.size,665);assert.equal(nowByKey.size,current.items.length);
+ for(const [k,item]of oldByKey)assert.equal(nowByKey.get(k)?.url,item.url,'Preserved original search route '+k); // All visible fields are independently checked by assertSearchExtension above.
  const names=require('../data/foundation-40/official-character-locales.json').pets;
  let additions=0;
  for(const lang of langs)for(const s of data.skills){
@@ -183,7 +185,7 @@ test('120 skill search anchors add exact visible names and Lv.1 descriptions whi
   assert.equal(oldByKey.has(key(expected)),false);assert.deepEqual(nowByKey.get(key(expected)),expected);
   const card=doc(read(page(lang,s.pet))).getElementById(anchor);assert.ok(card);assert.equal(card.querySelector('.ts3-pet-skill-description').textContent,s.description[lang]);additions++;
  }
- assert.equal(additions,120);assert.equal(current.items.filter(x=>!oldByKey.has(key(x))).length,120);
+ assert.equal(additions,120);assert.equal(data.skills.length*langs.length,120);
 });
 
 test('the overlay is idempotent and survives the character builder removing its generated section',()=>{

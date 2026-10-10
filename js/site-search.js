@@ -47,7 +47,7 @@
     render(matches, query);
   }
 
-  fetch("/data/search-index.json", { cache: "no-cache" })
+  fetch(`/data/search/${lang}.json`, { cache: "no-cache" })
     .then((response) => {
       if (!response.ok) throw new Error(`Search index ${response.status}`);
       return response.json();

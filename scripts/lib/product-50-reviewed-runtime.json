@@ -1,0 +1,96 @@
+{
+  "scope": "Exact manually reviewed 5.0 runtime diff pins, combined with existing arithmetic and invalid-input suites; not an exemption for future changes",
+  "entries": [
+    {
+      "file": "js/data-workbench-30.js",
+      "baseline": "5c5958b3d1a9c42d1ed33abe79e3fbd25b976cbe",
+      "before": "0f02d4604bd14dcd716d9d87642d73975d45def8707ffc8eb808b66a9c30fb87",
+      "after": "276fad329c15273703372f80cb93a82556bafd2b3b4829f92d8277ba16c9cd0a",
+      "scope": "German text plus original source-cell lexeme access; formulas retained"
+    },
+    {
+      "file": "js/database-22.js",
+      "baseline": "5c5958b3d1a9c42d1ed33abe79e3fbd25b976cbe",
+      "before": "8980e440fa570c8054eb3a60bdf841a69f0dd467da4f9f01617d226fe577fd6c",
+      "after": "001925f5ee966a2a57cd1ae6e33daee28782d6017484b5a3353b8aa095b28276",
+      "scope": "German display number formatting; existing locale arithmetic and model tests retained"
+    },
+    {
+      "file": "js/event-helper.js",
+      "baseline": "5c5958b3d1a9c42d1ed33abe79e3fbd25b976cbe",
+      "before": "e045840f604019d6874396615603f41d49d0bd5d4f4a20c3413f527df208f1f1",
+      "after": "f15d5ded604ca650a5447dc782b83b7f94506b491d1e2863f2fa70fa8832cc83",
+      "scope": "German UI/copy/path support; no game-data edits"
+    },
+    {
+      "file": "js/hero-skill-levels-40.js",
+      "baseline": "5c5958b3d1a9c42d1ed33abe79e3fbd25b976cbe",
+      "before": "e87761391e52a1317473bb2d7ce2923679c253588cdbedda4343b1af385c420e",
+      "after": "f09d715fc3260f72c72753a6a23eef6a5c289330620d0e921af4f0d3164c3634",
+      "scope": "German display number formatting; existing locale arithmetic and model tests retained"
+    },
+    {
+      "file": "js/layout.js",
+      "baseline": "5c5958b3d1a9c42d1ed33abe79e3fbd25b976cbe",
+      "before": "70af7c60810fd76b0cbba3597ca729032554b8e5c47edac8dc3c2a519760ae27",
+      "after": "727d5c87479a7ff97abdb2226c5ca1fa4a57ab0ea3edc344daa793090a8b9765",
+      "scope": "German UI/copy/path support; no game-data edits"
+    },
+    {
+      "file": "js/platform-affiliate.js",
+      "baseline": "5c5958b3d1a9c42d1ed33abe79e3fbd25b976cbe",
+      "before": "be3324cb2d3b35da7dfeff4a0f22ab658d4dace8a04d0b7fbaf6249fe1689330",
+      "after": "d4e99ad345dbb603de2125827fc80c73079032caabdd7e36f8e3fd7b5b3f8528",
+      "scope": "German UI/copy/path support; no game-data edits"
+    },
+    {
+      "file": "js/platform-i18n.js",
+      "baseline": "5c5958b3d1a9c42d1ed33abe79e3fbd25b976cbe",
+      "before": "e3b3cb10cf3db3c95d7cd779d23e3413063aed3a523b330dc31582b1e7742a4b",
+      "after": "02d9222c9f3a70fc191a51bb461273daf6839470b4ada7bd41381f65bb0e4603",
+      "scope": "German UI/copy/path support; no game-data edits"
+    },
+    {
+      "file": "js/platform-search.js",
+      "baseline": "5c5958b3d1a9c42d1ed33abe79e3fbd25b976cbe",
+      "before": "68586f7d56eda7118b67bc21edeca7002289db0ca06f8ef74ce0a98e734b903d",
+      "after": "7d541fefeade5cc72f932f69123c9f9325279e96d789bcd612e174cf34547ae6",
+      "scope": "Language-scoped search path; same alias/filter logic"
+    },
+    {
+      "file": "js/platform.js",
+      "baseline": "5c5958b3d1a9c42d1ed33abe79e3fbd25b976cbe",
+      "before": "21a019d56de15a6b0590baf132d166c541ec0b31d7feda5eb5824f43e57aafa9",
+      "after": "2d33a661dfe2c4e80c1fde3a111f0322108ef80888eb7501cb9821a8cf62ee95",
+      "scope": "German text plus original source-cell lexeme access; formulas retained"
+    },
+    {
+      "file": "js/product-30.js",
+      "baseline": "5c5958b3d1a9c42d1ed33abe79e3fbd25b976cbe",
+      "before": "3266bba400fd1c04eda6d744f1e706b59bd46604d6d55a4192513ccbec81798a",
+      "after": "5cfe8be3c13b02c325bbde4c13d71ffb2852813360878732b59aaa9e31835731",
+      "scope": "Language-scoped search path; same alias/filter logic"
+    },
+    {
+      "file": "js/sea-hero-growth-40.js",
+      "baseline": "5c5958b3d1a9c42d1ed33abe79e3fbd25b976cbe",
+      "before": "2c908ca407255bb908552f06f32a88f8a8a1ef80bae8c9494f637ea7a3e31359",
+      "after": "fb138994233f9e8f234094e71af03db42f52d7ac0ff40cc991547c9bee8b2f96",
+      "scope": "German display number formatting; existing locale arithmetic and model tests retained"
+    },
+    {
+      "file": "js/site-search.js",
+      "baseline": "5c5958b3d1a9c42d1ed33abe79e3fbd25b976cbe",
+      "before": "4233d7b7870b0a8f1269f70271da7e2fb72e8d4f52a479f33b3df51e7dd6f8e8",
+      "after": "29b740899cdd815829f06bcede8c19e25eec4f9ed07ca42d3e84202f073eab7e",
+      "scope": "Language-scoped search path; same alias/filter logic"
+    },
+    {
+      "file": "js/tools-speedup-calculator.js",
+      "baseline": "5c5958b3d1a9c42d1ed33abe79e3fbd25b976cbe",
+      "before": "ad31c77ca1310eef67eecb68f58f3a5b7b982b5b8e29cce087d90eabb4363aef",
+      "after": "eee965a943ca12d48a553ec1883262d676669d3689592467b84b17b20fb58df2",
+      "scope": "German display number formatting; existing locale arithmetic and model tests retained"
+    }
+  ]
+}

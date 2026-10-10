@@ -2,7 +2,7 @@
  const lang=document.documentElement.dataset.lang||'en',t=window.TS_COPY[lang]||window.TS_COPY.en,c=JSON.parse(document.getElementById('ts3-copy')?.textContent||'{}');
  let indexPromise;
  const normalize=s=>String(s||'').normalize('NFKC').toLocaleLowerCase(lang);
- function loadIndex(){if(!indexPromise)indexPromise=fetch('/data/search-index.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw Error('search');return r.json();}).then(data=>(data.items||[]).filter(i=>i.language===lang)).catch(e=>{indexPromise=null;throw e;});return indexPromise;}
+ function loadIndex(){if(!indexPromise)indexPromise=fetch('/data/search/'+lang+'.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw Error('search');return r.json();}).then(data=>(data.items||[]).filter(i=>i.language===lang)).catch(e=>{indexPromise=null;throw e;});return indexPromise;}
  document.querySelectorAll('.ts3-search-form').forEach((form,number)=>{
   const input=form.querySelector('input[name=q]');if(!input)return;
   const box=document.createElement('div');box.className='ts3-search-results';box.id='ts3-suggestions-'+number;box.hidden=true;box.setAttribute('role','listbox');box.setAttribute('aria-label',t.results);form.append(box);

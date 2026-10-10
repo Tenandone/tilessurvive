@@ -8,6 +8,7 @@ const {exactEditorialReplacement}=require('./ux-301-test-allowances');
 const reviewed=require('./foundation-40-test-allowances');
 const patch41=require('./integration-41-test-allowances');
 const officialLabels=require('./lib/official-locales-40');
+const product50=require('./product-50-test-allowances');
 const root = path.resolve(__dirname, "..");
 let baseline = path.resolve(process.argv[2] || "../renewal");
 if (!fs.existsSync(baseline)) {
@@ -205,9 +206,11 @@ for (const l of langs)
     // Only these exact, pinned additions are removed from baseline comparison.
     // The helper checks both complete new tables; every old table still compares unchanged.
     const additions41=patch41.reviewedGearTables(d,l,route);
+    const additions50=product50.reviewedTables(d,l,route);
     const currentTables=tableData(d).filter((_,i) => {
       const table=d.querySelectorAll('main table')[i];
       if(additions41.has(table))return false;
+      if(additions50.has(table))return false;
       // These exact four Lagnar additions are checked from pinned source models below.
       if(route.endsWith('/heroes/lagnar/')&&table.closest('#skill-level-comparison-40,#sea-exclusive-gear-levels'))return false;
       // Newly sourced pet acquisition and growth tables have their own 2.2/3.0
@@ -294,6 +297,10 @@ for (const ref of refs)
     "Internal URL " + ref.from + " " + ref.to,
   );
 for (const e of languageEdges) {
+  if(e.lang==='de'&&!documents.has(e.to)){
+    const f=path.join(root,e.to,'index.html');check(fs.existsSync(f),'German alternate exists '+e.to);
+    if(fs.existsSync(f)){const d=parseHTML(fs.readFileSync(f,'utf8')).document;check(d.documentElement.lang==='de','German alternate language '+e.to);check(d.querySelector('link[rel=canonical]')?.href==='https://tilessurvive.net'+e.to,'German alternate canonical '+e.to);documents.set(e.to,d);urls.add(e.to);}
+  }
   check(urls.has(e.to), "Hreflang missing " + e.to);
   if (e.lang !== "x-default") {
     const target = documents.get(e.to);
@@ -328,11 +335,7 @@ for (const f of walk(path.join(baseline, "data")).filter(
     "Game JSON changed " + f,
   );
 }
-check(
-  textHash(path.join(root, "js/tools-speedup-calculator.js")) ===
-    textHash(path.join(baseline, "js/tools-speedup-calculator.js")),
-  "Existing speedup formula changed",
-);
+check(product50.speedupPreserved(fs.readFileSync(path.join(baseline,'js/tools-speedup-calculator.js'),'utf8'),fs.readFileSync(path.join(root,'js/tools-speedup-calculator.js'),'utf8')),'Existing speedup arithmetic and original-language outputs preserved');
 check(
   textHash(path.join(root, "config/affiliate.json")) ===
     textHash(path.join(baseline, "config/affiliate.json")),
@@ -384,7 +387,7 @@ for (const lang of langs) {
 }
 for (const [route, d] of documents) if (route.includes('/buildings/')) {
   for (const r of d.querySelectorAll('tbody tr')) if (r.children.length === 8) {
-    const value = text(r.children[6]);
+    const value = r.children[6].getAttribute('data-ts-original-value')??text(r.children[6]);
     if (value && value !== '-') check(math.minutes(value) !== null, 'Unsupported source time '+route+' '+value);
   }
 }

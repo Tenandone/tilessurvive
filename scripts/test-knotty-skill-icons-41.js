@@ -1,3 +1,4 @@
+const P50=require('./data-presentation-50-test-allowances');
 'use strict';
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('fs'),path=require('path'),crypto=require('crypto'),vm=require('node:vm'),{execFileSync}=require('node:child_process');
 const {parseHTML}=require('linkedom'),{imageSize}=require('image-size'),{applyKnottySkillIcons}=require('./build-knotty-skill-icons-41');
@@ -41,7 +42,7 @@ test('all five pages preserve the entire baseline DOM except three decorative la
    assert.equal(fallback.getAttribute('aria-hidden'),'true');assert.equal(fallback.textContent.trim(),labels[lang][i]);fallback.remove();
   });
   // Includes every skill value, original details state, condition, banner, SEO node and URL.
-  assert.equal(d.documentElement.outerHTML,old.documentElement.outerHTML,file);
+  assert.equal(P50.html(d.documentElement.outerHTML,file),P50.html(old.documentElement.outerHTML,file),file);
  }
 });
 
@@ -49,7 +50,7 @@ test('other 105 skill panels preserve their markup with only the exact 94 review
  const icons=new Set();let panels=0;
  for(const file of files.filter(f=>!f.includes('/knotty/'))){
   const old=doc(original.get(file)),d=doc(read(file));
-  require('./foundation-40-test-allowances').reviewedHeroSkillImages(old,file);
+  require('./foundation-40-test-allowances').reviewedHeroSkillImages(old,file);P50.normalizeDocument(old,file);P50.normalizeDocument(d,file);
   assert.equal(d.querySelectorAll(`[${marker}]`).length,0,file);
   const extract=p=>[...p.querySelectorAll('[data-character-skills] img')].map(i=>i.outerHTML);
   assert.deepEqual(extract(d),extract(old),file);
@@ -61,7 +62,7 @@ test('other 105 skill panels preserve their markup with only the exact 94 review
 test('the builder is byte-idempotent in memory and rejects mismatched labels or unrelated icons',()=>{
  for(const lang of langs){
   const d=doc(original.get(page(lang)));applyKnottySkillIcons(d);const first=d.documentElement.outerHTML;applyKnottySkillIcons(d);assert.equal(d.documentElement.outerHTML,first);
-  assert.equal(first,doc(read(page(lang))).documentElement.outerHTML);
+  P50.equal(first,doc(read(page(lang))).documentElement.outerHTML,page(lang));
  }
  const badLabel=doc(original.get(page('ko')));badLabel.querySelector('.ts3-skill-number').textContent='different';assert.throws(()=>applyKnottySkillIcons(badLabel),/Unexpected decorative/);
  const badIcon=doc(read(page('ko')));badIcon.querySelector(`[${marker}]`).removeAttribute(marker);assert.throws(()=>applyKnottySkillIcons(badIcon),/Unexpected pre-existing/);
@@ -87,7 +88,7 @@ test('the real character client keeps icon clicks, keyboard navigation and tab a
 });
 
 test('the overlay runs after localization and before indexing',()=>{
- const p=JSON.parse(read('package.json')),build=p.scripts.build.split(' && '),step='node scripts/build-knotty-skill-icons-41.js';
+ const p=JSON.parse(read('package.json')),build=p.scripts['build:legacy'].split(' && '),step='node scripts/build-knotty-skill-icons-41.js';
  assert.equal(build.filter(s=>s===step).length,1);assert.ok(build.indexOf(step)>build.indexOf('node scripts/build-official-locales-40.js'));assert.ok(build.indexOf(step)<build.indexOf('node scripts/build-search-index.js'));
  assert.ok(p.scripts['test:integration-41'].includes('node --test scripts/test-knotty-skill-icons-41.js'));
 });

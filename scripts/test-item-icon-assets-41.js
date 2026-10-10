@@ -1,3 +1,4 @@
+const P50=require('./data-presentation-50-test-allowances');
 'use strict';
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');
 const {execFileSync}=require('node:child_process'),{parseHTML}=require('linkedom'),{imageSize}=require('image-size');
@@ -43,14 +44,14 @@ test('five full documents differ only by forty decorative images beside unchange
    assert.equal(image.nextElementSibling.tagName,'SPAN');assert(image.nextElementSibling.textContent.trim());
    image.remove();inserted++;
   }
-  assert.equal(after.documentElement.outerHTML,before.documentElement.outerHTML,file+' exact remaining DOM: text, quantities, conditions, SEO, links, forms and existing images');
+  assert.equal(P50.html(after.documentElement.outerHTML,file),P50.html(before.documentElement.outerHTML,file),file+' exact remaining DOM: text, quantities, conditions, SEO, links, forms and existing images');
   for(const id of ['pet-eggs','speedup-20h'])assert.equal(after.getElementById(id).querySelectorAll('img').length,0,'Unbound or broad item stays image-free');
  }
  assert.equal(inserted,40);
 });
 
 test('all other HTML, data, search, client scripts, styles and SEO files remain unchanged',()=>{
- for(const [file,bytes]of original){if(pages.includes(file))continue;if(file==='data/search-index.json'){require('./lib/item-chest-regression-41').assertSearchExtension(bytes,read(file));continue;}const beast=require('./build-behemoth-assets-41'),art=require('../data/foundation-40/behemoth-assets-41.json');let expected=beast.langs.some(l=>beast.routes.some(r=>file===l+'/'+r))?beast.render(lf(bytes),art):lf(bytes);const heroRules=require('./build-arms-race-hero-rules-41');if(heroRules.langs.some(l=>file===`${l}/events/arms-race/index.html`))expected=heroRules.apply(expected,file.split('/')[0]);assert.equal(lf(read(file)),expected,file);}
+ for(const [file,bytes]of original){if(pages.includes(file))continue;if(file==='data/search-index.json'){require('./lib/item-chest-regression-41').assertSearchExtension(bytes,read(file));continue;}const beast=require('./build-behemoth-assets-41'),art=require('../data/foundation-40/behemoth-assets-41.json');let expected=beast.langs.some(l=>beast.routes.some(r=>file===l+'/'+r))?beast.render(lf(bytes),art):lf(bytes);const heroRules=require('./build-arms-race-hero-rules-41');if(heroRules.langs.some(l=>file===`${l}/events/arms-race/index.html`))expected=heroRules.apply(expected,file.split('/')[0]);P50.equal(lf(read(file)),expected,file);}
  const oldImages=require('../data/foundation-40/image-assets.json').assets.filter(a=>a.kind==='item');assert.equal(oldImages.length,8);
  for(const a of oldImages){const before=execFileSync('git',['show',baseline+':'+a.src.slice(1)],{cwd:root});assert.deepEqual(read(a.src),before,a.src);}
 });

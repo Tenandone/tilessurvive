@@ -1,6 +1,7 @@
 'use strict';
 const test=require('node:test'),assert=require('assert/strict'),fs=require('fs'),path=require('path'),crypto=require('crypto'),vm=require('vm'),{execFileSync}=require('child_process'),{parseHTML}=require('linkedom');
 const root=path.resolve(__dirname,'..'),D=require('../data/foundation-40/hero-gear-levels-41.json'),M=require('../js/sea-hero-growth-40'),N=require('../data/foundation-40/official-character-locales.json'),B=require('./build-hero-gear-levels-41');
+const P50=require('./data-presentation-50-test-allowances');
 const langs=['ko','en','ja','ru','zh-tw'],ids=['beka','candy','jacob','kiki','kiron','laila','light','maddy','mike','nikola','ray','rosie','shark','tara','tarzan','tony','undine'],base='ebe0cd9f738e1c4e497ad17934139618a40c43f6',sha=x=>crypto.createHash('sha256').update(x).digest('hex');
 const load=(l,id)=>parseHTML(fs.readFileSync(path.join(root,B.route(l,id)),'utf8')).document;
 const text=s=>s.replace(/\s+/g,' ').trim();
@@ -22,8 +23,10 @@ test('all 19,125 localized level pairs equal explicit formatter rows, including 
 });
 test('85 existing pages retain every original skill, table, gear paragraph, image, SEO and one middle banner',()=>{
  for(const g of D.gears)for(const l of langs){const route=B.route(l,g.id),old=parseHTML(execFileSync('git',['show',base+':'+route],{cwd:root,encoding:'utf8',maxBuffer:4e6})).document,d=load(l,g.id),block=d.querySelector('[data-hero-gear-levels-41]');assert(block,route);
+  const growth=d.querySelector('[data-growth-50]');
+  if(growth){const growthBuilder=require('./build-growth-50'),hero=require('../data/product-50/growth-gear.json').heroes.find(h=>h.id===g.id);assert(hero);assert.equal(d.querySelectorAll('[data-growth-50]').length,1);const expected=parseHTML(growthBuilder.render(l,hero)).document.querySelector('[data-growth-50]');assert.equal(growth.outerHTML,expected.outerHTML,route+' exact reviewed growth50 addition');growth.remove();}
   reviewedPortrait(old,g.id);
-  require('./foundation-40-test-allowances').reviewedHeroSkillImages(old,route);
+  require('./foundation-40-test-allowances').reviewedHeroSkillImages(old,route);P50.normalizeDocument(old,route);P50.normalizeDocument(d,route);
   const extract=(doc,selector)=>[...doc.querySelectorAll(selector)].map(n=>text(n.outerHTML));
   for(const sel of ['title,meta[name=description],link[rel=canonical],link[hreflang]','.ts-skill-body','main img','.ts-lootbar-slot--hero'])assert.deepEqual(extract(d,sel),extract(old,sel),route+' '+sel);
   const section=doc=>g.id==='undine'?doc.querySelector('[data-hero-observations-40="equipment"]').closest('section'):doc.querySelector('.equipment-grid').closest('section');
@@ -57,8 +60,8 @@ test('source/style and other hero content retain the baseline apart from reviewe
     for(const img of iconPair){assert.equal(img.getAttribute('src'),`/img/game-41/skills/knotty-${i+1}.webp`);assert(img.parentElement.matches(`[data-skill-target="${id}"],#${id} summary`));img.remove();}
     const fallback=old.querySelector(`[data-skill-target="${id}"] .ts3-skill-number`);assert.equal(fallback.getAttribute('aria-hidden'),'true');assert.equal(fallback.textContent.trim(),label);fallback.remove();
    }
-   assert.equal(d.documentElement.outerHTML,old.documentElement.outerHTML,f);continue;
+   assert.equal(P50.html(d.documentElement.outerHTML,f),P50.html(old.documentElement.outerHTML,f),f);continue;
   }
-  assert.equal(sha(fs.readFileSync(path.join(root,f),'utf8').replaceAll('\r\n','\n')),sha(expected),f);
+  P50.equal(fs.readFileSync(path.join(root,f),'utf8'),expected,f);
  }
 });

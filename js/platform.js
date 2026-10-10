@@ -4,6 +4,8 @@
     t = window.TS_COPY[lang] || window.TS_COPY.en,
     main = document.querySelector("main");
   if (!main) return;
+  // Localised table labels must not change inputs to the shared numeric formulas.
+  const sourceCell = (cell) => cell.dataset.tsOriginalValue ?? cell.textContent.trim();
   const make = (tag, cls, text) => {
     const n = document.createElement(tag);
     if (cls) n.className = cls;
@@ -44,7 +46,7 @@
   const heads = [...main.querySelectorAll("h2")].filter(
     (h) => !h.closest(".visually-hidden-seo"),
   );
-  if (heads.length > 2 && !main.querySelector(".ts-toc,.ts3-character-sections")) {
+  if (heads.length > 2 && !main.querySelector(".ts-toc,.ts3-character-sections,.ts3-contents")) {
     const nav = make("nav", "ts-toc");
     nav.setAttribute("aria-label", t.related);
     heads.forEach((h, i) => {
@@ -54,7 +56,7 @@
       nav.append(a);
     });
     const hero = main.querySelector(".hero,.hero-card,.home-world-hero");
-    if (hero && !location.pathname.match(/^\/(ko|en|ja|ru|zh-tw)\/$/))
+    if (hero && !location.pathname.match(/^\/(ko|en|ja|ru|zh-tw|de)\/$/))
       hero.after(nav);
   }
   // Hero directory: derive filters from actual visible metadata, never guessed classifications.
@@ -176,15 +178,13 @@
     ) {
       const steps = rows
         .map((r) => {
-          const cells = [...r.querySelectorAll("td")].map((c) =>
-              c.textContent.trim(),
-            ),
+          const cells = [...r.querySelectorAll("td")].map(sourceCell),
             m = cells[0].match(/(?:Lv\.?\s*)?(\d+)\s*→\s*(\d+)/i);
           return m ? { level: +m[2], from: +m[1], cells } : null;
         })
         .filter(Boolean);
       const sourceTotal = window.TS_MATH.amount(
-        rows[rows.length - 1].children[1].textContent,
+        sourceCell(rows[rows.length - 1].children[1]),
       );
       const sum = steps.reduce(
         (n, r) => n + (window.TS_MATH.amount(r.cells[1]) ?? NaN),
@@ -342,8 +342,8 @@
             : [...rows].sort((a, b) => {
                 const x = a.children[i].textContent.trim(),
                   y = b.children[i].textContent.trim(),
-                  nx = window.TS_MATH.amount(x),
-                  ny = window.TS_MATH.amount(y);
+                  nx = window.TS_MATH.amount(sourceCell(a.children[i])),
+                  ny = window.TS_MATH.amount(sourceCell(b.children[i]));
                 return (
                   direction *
                   (nx !== null && ny !== null
@@ -371,11 +371,11 @@
       index === 0 &&
       location.pathname.includes("/buildings/") &&
       headers.length === 8 &&
-      rows.every((r) => /^\d+$/.test(r.querySelector("td").textContent.trim()))
+      rows.every((r) => /^\d+$/.test(sourceCell(r.querySelector("td"))))
     ) {
       const data = rows.map((r) => ({
-        level: +r.children[0].textContent,
-        cells: [...r.children].map((c) => c.textContent.trim()),
+        level: +sourceCell(r.children[0]),
+        cells: [...r.children].map(sourceCell),
       }));
       const form = make("form", "ts-controls"),
         from = make("select"),
@@ -429,8 +429,8 @@
           rows.forEach((r) =>
             r.classList.toggle(
               "ts-selected",
-              +r.children[0].textContent > +from.value &&
-                +r.children[0].textContent <= +to.value,
+              +sourceCell(r.children[0]) > +from.value &&
+                +sourceCell(r.children[0]) <= +to.value,
             ),
           );
         } catch {
@@ -481,7 +481,7 @@
   // Copy existing gift codes without altering code values or expiry claims.
   if (
     location.pathname.includes("/codes/") ||
-    location.pathname.match(/^\/(ko|en|ja|ru|zh-tw)\/$/)
+    location.pathname.match(/^\/(ko|en|ja|ru|zh-tw|de)\/$/)
   )
     main.querySelectorAll("code").forEach((code) => {
       if (
