@@ -7,7 +7,7 @@ const langs=['ko','en','ja','ru','zh-tw'];
 const oldIds=['hero-skill-book','arms-medal','food-10k','wood-10k','metal-10k','speedup-5m','food-100k','undine-gear-fragment'];
 const newIds=['pet-eggs','reforge-hammer','advanced-recruitment-token','speedup-20h'];
 const vipIds=['stamina-10','arena-ticket','normal-recruitment-coin','wood-100k','epic-hero-fragment','hero-exp-10k'];
-const docs=langs.map(lang=>({lang,document:parseHTML(fs.readFileSync(path.join(root,lang,'database/items/index.html'),'utf8')).document}));
+const docs=langs.map(lang=>({lang,document:parseHTML(require('./build-item-chest-rewards-41').strip(fs.readFileSync(path.join(root,lang,'database/items/index.html'),'utf8'),lang)).document}));
 
 test('speedup uses preserve the exact five-minute description and render the twenty-hour model duration in all locales',()=>{
   const short=D.items.find(i=>i.id==='speedup-5m'),long=D.items.find(i=>i.id==='speedup-20h');

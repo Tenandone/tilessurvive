@@ -37,7 +37,7 @@ test('all five documents preserve every baseline byte outside the new section',(
 test('all preexisting public data, scripts, styles, search, sitemap and other routes remain unchanged',()=>{
  const files=execFileSync('git',['ls-tree','-r','--name-only',baseline],{cwd:root,encoding:'utf8'}).trim().split('\n').filter(f=>f.endsWith('.html')||/^(data|js|css)\//.test(f)||['sitemap.xml','robots.txt'].includes(f));
  const batch=execFileSync('git',['cat-file','--batch'],{cwd:root,input:files.map(f=>baseline+':'+f).join('\n')+'\n',maxBuffer:200e6});let cursor=0;
- for(const file of files){const end=batch.indexOf(10,cursor),header=batch.subarray(cursor,end).toString();assert.match(header,/^[a-f0-9]{40} blob \d+$/);const size=Number(header.split(' ')[2]);cursor=end+1;const bytes=batch.subarray(cursor,cursor+size);cursor+=size+1;if(!pages.includes(file))assert.equal(lf(read(file)),lf(bytes),file);}
+ for(const file of files){const end=batch.indexOf(10,cursor),header=batch.subarray(cursor,end).toString();assert.match(header,/^[a-f0-9]{40} blob \d+$/);const size=Number(header.split(' ')[2]);cursor=end+1;const bytes=batch.subarray(cursor,cursor+size);cursor+=size+1;if(!pages.includes(file)){if(file==='data/search-index.json')require('./lib/item-chest-regression-41').assertSearchExtension(bytes,read(file));else {const chests=require('./build-item-chest-rewards-41');const expected=chests.langs.some(l=>file===`${l}/database/items/index.html`)?chests.apply(lf(bytes),file.split('/')[0]):lf(bytes);assert.equal(lf(read(file)),expected,file);}}}
  assert.equal(cursor,batch.length);
 });
 test('the builder is idempotent and rejects wrong routes, damaged insertion boundaries and expanded scope',()=>{

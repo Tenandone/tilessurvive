@@ -55,9 +55,9 @@ test('120 complete page DOMs differ only in 940 approved image attribute sets',(
 test('unrelated HTML and retained skills stay exact, with only eight approved item images on five catalog pages',()=>{
  let retained=0;
  for(const [file,baseline] of original){
-  if(B.pages.includes(file))continue;
+  if(B.pages.includes(file))continue;if(file==='data/search-index.json'){require('./lib/item-chest-regression-41').assertSearchExtension(baseline,read(file));continue;}
   if(/^(ko|en|ja|ru|zh-tw)\/database\/items\/index\.html$/.test(file)){
-   const old=doc(baseline),current=doc(read(file)),items=require('../data/foundation-40/item-icons-41.json');
+   const old=doc(baseline),current=doc(require('./build-item-chest-rewards-41').strip(read(file).toString(),file.split('/')[0])),items=require('../data/foundation-40/item-icons-41.json');
    assert.equal(sha(lf(read('data/foundation-40/item-icons-41.json'))),'0b4129ea5bb68127ccb21a753843227efb95e54ed66b265644a183f23ff73808');
    assert.equal(items.assets.length,8);
    for(const a of items.assets){

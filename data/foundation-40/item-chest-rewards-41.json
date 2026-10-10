@@ -1,0 +1,149 @@
+{
+  "schemaVersion": 1,
+  "observedAt": "2026-10-10",
+  "assets": [
+    {
+      "id": "resource-choice",
+      "src": "/img/game-41/item-chests/resource-choice.webp",
+      "width": 128,
+      "height": 128,
+      "bytes": 14810,
+      "sha256": "c001fd523c6c44cf5ed600c9fb063ae71e533cbf8cd68f25e9505812941ac3e1"
+    },
+    {
+      "id": "festive-chest",
+      "src": "/img/game-41/item-chests/festive-chest.webp",
+      "width": 128,
+      "height": 128,
+      "bytes": 14508,
+      "sha256": "5c3612cd1458d0b656849b4ecf4cb7e9c689f03c2aad58541cb05e206681ec83"
+    },
+    {
+      "id": "party-cake",
+      "src": "/img/game-41/item-chests/party-cake.webp",
+      "width": 128,
+      "height": 128,
+      "bytes": 10900,
+      "sha256": "1a2fc393fc955f14479b48e33e7cc4468bbd63fe05622f3e3b13f30c4bd72333"
+    }
+  ],
+  "choices": [
+    {
+      "id": "resource-choice-level-1",
+      "category": "resource",
+      "level": 1,
+      "names": {
+        "ko": "1레벨 자원 선택 상자",
+        "en": "Lv. 1 Resources Custom Crate",
+        "ja": "Lv.1資源自選ボックス",
+        "ru": "Ящик с ресурсами на выбор 1 ур.",
+        "zh-tw": "1級資源自選箱"
+      },
+      "descriptions": {
+        "ko": "사용 시 10K 식량, 10K 목재, 2K 금속, 500 연료 중 1개를 선택할 수 있습니다.",
+        "en": "Choose from 10k Food, 10k Wood, 2k Metal, or 500 Gas as a Reward.",
+        "ja": "使用すると、食料10K、木材10K、金属2K、燃料500から一つを選択できる",
+        "ru": "Вы можете выбрать, что хотите получить в награду: 10 000 еды, 10 000 древесины, 2000 металла или 500 топлива.",
+        "zh-tw": "使用後，可從10k食物、10k木材、2k金屬、500汽油中選擇一種。"
+      },
+      "icon": "resource-choice",
+      "options": [
+        {
+          "resource": "food",
+          "amount": 10000
+        },
+        {
+          "resource": "wood",
+          "amount": 10000
+        },
+        {
+          "resource": "metal",
+          "amount": 2000
+        },
+        {
+          "resource": "fuel",
+          "amount": 500
+        }
+      ]
+    },
+    {
+      "id": "resource-choice-level-2",
+      "category": "resource",
+      "level": 2,
+      "names": {
+        "ko": "2레벨 자원 선택 상자",
+        "en": "Lv. 2 Resources Custom Crate",
+        "ja": "Lv.2資源自選ボックス",
+        "ru": "Ящик с ресурсами на выбор 2 ур.",
+        "zh-tw": "2級資源自選箱"
+      },
+      "descriptions": {
+        "ko": "사용 시 100K 식량, 100K 목재, 20K 금속, 5K 연료 중 1개를 선택할 수 있습니다.",
+        "en": "Choose from 100k Food, 100k Wood, 20k Metal, or 5k Gas as a Reward.",
+        "ja": "使用すると、食料100K、木材100K、金属20K、燃料5Kから一つを選択できる",
+        "ru": "Вы можете выбрать, что хотите получить в награду: 100 000 еды, 100 000 древесины, 20 000 металла или 5000 топлива.",
+        "zh-tw": "使用後，可從100k食物、100k木材、20k金屬、5k汽油中選擇一種。"
+      },
+      "icon": "resource-choice",
+      "options": [
+        {
+          "resource": "food",
+          "amount": 100000
+        },
+        {
+          "resource": "wood",
+          "amount": 100000
+        },
+        {
+          "resource": "metal",
+          "amount": 20000
+        },
+        {
+          "resource": "fuel",
+          "amount": 5000
+        }
+      ]
+    }
+  ],
+  "festival": {
+    "id": "festive-chest-party-cake",
+    "category": "event",
+    "names": {
+      "ko": "축제 상자",
+      "en": "Festive Chest",
+      "ja": "祝祭宝箱",
+      "ru": "Праздничный сундук",
+      "zh-tw": "慶典寶箱"
+    },
+    "descriptions": {
+      "ko": "축제 보물찾기 이벤트에서 드랍되는 상자, 오픈 시 깜짝 보상을 획득합니다.",
+      "en": "Chests dropped during the Festive Hunt event. Open them to find surprise rewards!",
+      "ja": "祝祭トレジャーハントで入手できる宝箱です。開封すると、豪華報酬を獲得できます",
+      "ru": "Сундуки, выпадающие в событии «Праздничная охота». Откройте их, чтобы забрать ценные награды!",
+      "zh-tw": "慶典尋寶活動掉落的寶箱，打開寶箱可獲得驚喜獎勵"
+    },
+    "icon": "festive-chest",
+    "rewardNames": {
+      "ko": "파티 기념떡",
+      "en": "Party Cake",
+      "ja": "パーティーケーキ",
+      "ru": "Праздничный торт",
+      "zh-tw": "派對蛋糕"
+    },
+    "rewardIcon": "party-cake",
+    "outcomes": [
+      {
+        "quantity": 10,
+        "displayPercent": "10.00"
+      },
+      {
+        "quantity": 3,
+        "displayPercent": "30.00"
+      },
+      {
+        "quantity": 1,
+        "displayPercent": "60.00"
+      }
+    ]
+  }
+}

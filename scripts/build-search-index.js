@@ -62,6 +62,13 @@ for (const language of LANGS) {
     items.push({language, type: 'database', title: t[item.id], description: `${item.nameKo} · ${itemUseText(item,language)} · ${t.itemTitle}`, url: `/${language}/database/items/#${item.id}`});
   }
 }
+// Add the three reviewed chest previews without changing existing item entries.
+for (const item of require('./build-item-chest-rewards-41').entries()) {
+  const [route, anchor] = item.url.split('#');
+  const html = fs.readFileSync(path.join(ROOT, route, 'index.html'), 'utf8');
+  if (!html.includes(`id="${anchor}"`)) throw new Error(`Missing chest anchor: ${item.url}`);
+  items.push(item);
+}
 // Add exact, visible comparison destinations; keep every existing entry unchanged.
 for (const item of require('./lib/search-additions-41').entries()) {
   const [route, anchor] = item.url.split('#');

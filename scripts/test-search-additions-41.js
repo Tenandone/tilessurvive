@@ -3,7 +3,7 @@ const fs=require('node:fs'),path=require('node:path'),vm=require('node:vm'),asse
 const {execFileSync}=require('node:child_process'),{createRequire}=require('node:module'),{parseHTML}=require('linkedom');
 const root=path.resolve(__dirname,'..'),baseline='ebe0cd9f738e1c4e497ad17934139618a40c43f6';
 const old=JSON.parse(execFileSync('git',['show',`${baseline}:data/search-index.json`],{cwd:root,encoding:'utf8',maxBuffer:4*1024*1024}));
-const index=JSON.parse(fs.readFileSync(path.join(root,'data/search-index.json'),'utf8'));
+const index=require('./lib/item-chest-regression-41').withoutChestSearch(JSON.parse(fs.readFileSync(path.join(root,'data/search-index.json'),'utf8')));
 const gear=require('../data/foundation-40/hero-gear-levels-41.json'),pets=require('../data/foundation-40/pet-training-profiles-41.json'),official=require('./lib/official-locales-40'),reviewed=require('./integration-41-test-allowances');
 const langs=['ko','en','ja','ru','zh-tw'],heroIds=['beka','candy','jacob','kiki','kiron','laila','light','maddy','mike','nikola','ray','rosie','shark','tara','tarzan','tony','undine'];
 const vipIds=['stamina-10','arena-ticket','normal-recruitment-coin','wood-100k','epic-hero-fragment','hero-exp-10k'];
@@ -68,4 +68,4 @@ run();groups++;
 assert.throws(()=>run({route:'/ko/heroes/beka/',anchor:'hero-primary-gear-levels-41'}),/Missing reviewed search anchor/);groups++;
 assert.throws(()=>run({route:'/ko/database/pet-system/',anchor:'pet-training-scope-41'}),/Missing reviewed search anchor/);groups++;
 assert.throws(()=>run({route:'/ko/database/pet-system/dodo/',anchor:'pet-skill-3-41'}),/Missing pet skill anchor/);groups++;
-console.log(JSON.stringify({passed:true,groups,oldEntriesPreserved:540,reviewedDurationCorrections:5,addedGearAnchors:85,addedPetAnchors:5,addedItemAnchors:30,addedPetSkillAnchors:120,totalEntries:785,scope:'Baseline objects with five exact duration corrections, exact reviewed additions, localized labels and material aliases, existing visible anchors, source-field boundary, actual builder no-op and rejection paths'}));
+console.log(JSON.stringify({passed:true,groups,oldEntriesPreserved:540,reviewedDurationCorrections:5,addedGearAnchors:85,addedPetAnchors:5,addedItemAnchors:30,addedPetSkillAnchors:120,legacyScopedEntries:785,addedChestAnchors:15,totalEntries:800,scope:'Baseline objects with five exact duration corrections, exact reviewed additions, localized labels and material aliases, existing visible anchors, source-field boundary, actual builder no-op and rejection paths'}));

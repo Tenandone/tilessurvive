@@ -170,7 +170,7 @@ test('roster overlays are byte-idempotent and reject missing, altered or duplica
 });
 
 test('120 skill search anchors add exact visible names and Lv.1 descriptions while all 665 prior entries stay intact',()=>{
- const old=JSON.parse(execFileSync('git',['show',base+':data/search-index.json'],{cwd:root,encoding:'utf8',maxBuffer:4e6})),current=JSON.parse(read('data/search-index.json'));
+ const old=JSON.parse(execFileSync('git',['show',base+':data/search-index.json'],{cwd:root,encoding:'utf8',maxBuffer:4e6})),current=require('./lib/item-chest-regression-41').withoutChestSearch(JSON.parse(read('data/search-index.json')));
  assert.equal(old.itemCount,665);assert.equal(current.itemCount,785);assert.equal(current.items.length,785);
  const key=x=>x.language+'|'+x.url,oldByKey=new Map(old.items.map(x=>[key(x),x])),nowByKey=new Map(current.items.map(x=>[key(x),x]));
  assert.equal(oldByKey.size,665);assert.equal(nowByKey.size,785);

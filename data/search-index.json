@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-10T01:51:54.783Z",
-  "itemCount": 785,
+  "generatedAt": "2026-10-10T07:38:00.197Z",
+  "itemCount": 800,
   "items": [
     {
       "language": "en",
@@ -324,6 +324,13 @@
     {
       "language": "en",
       "type": "database",
+      "title": "Festive Chest",
+      "description": "Chests dropped during the Festive Hunt event. Open them to find surprise rewards! Reward preview as of 2026-10-10. Applies to Festive Chests containing Party Cake.",
+      "url": "/en/database/items/#festive-chest-party-cake"
+    },
+    {
+      "language": "en",
+      "type": "database",
       "title": "Fluffy · Pet Acquisition, Stats & Growth | TilesSurvive.net",
       "description": "Fluffy — Role: Support · Acquisition probability · Observed stats",
       "url": "/en/database/pet-system/fluffy/",
@@ -549,6 +556,20 @@
       "description": "Detailed page for Lucky in Tiles Survive. View hero introduction, ascended hero info, battle traits, max level and 10-star stats, star bonus, and skills in one place.",
       "url": "/en/heroes/lucky/",
       "aliases": "Lucky"
+    },
+    {
+      "language": "en",
+      "type": "database",
+      "title": "Lv. 1 Resources Custom Crate",
+      "description": "Choose from 10k Food, 10k Wood, 2k Metal, or 500 Gas as a Reward.",
+      "url": "/en/database/items/#resource-choice-level-1"
+    },
+    {
+      "language": "en",
+      "type": "database",
+      "title": "Lv. 2 Resources Custom Crate",
+      "description": "Choose from 100k Food, 100k Wood, 20k Metal, or 5k Gas as a Reward.",
+      "url": "/en/database/items/#resource-choice-level-2"
     },
     {
       "language": "en",
@@ -1387,6 +1408,13 @@
     },
     {
       "language": "ja",
+      "type": "database",
+      "title": "祝祭宝箱",
+      "description": "祝祭トレジャーハントで入手できる宝箱です。開封すると、豪華報酬を獲得できます 2026-10-10表示時点。パーティーケーキが報酬の祝祭宝箱に表示されるプレビュー確率です。",
+      "url": "/ja/database/items/#festive-chest-party-cake"
+    },
+    {
+      "language": "ja",
       "type": "behemoth",
       "title": "海洋亜竜 | タイルズサバイバル ベヒーモス | TilesSurvive.net",
       "description": "タイルズサバイバルのベヒーモス 海洋亜竜 の詳細ページです。レベルアップ効果、イベント追加効果、外見変化、代表タレント、星ランク表をまとめています。",
@@ -1433,6 +1461,20 @@
       "title": "Arcadian Conquest・占領ルール | TilesSurvive.net",
       "description": "攻城期間はv2.5.600から2時間です。以下の占領・報酬の数値は2026-01-07のガイドに基づきます。累計90分の占領達成、または最長累計占領の同盟が勝利。4つの塔は攻撃ごとに守備兵の2%を減らし、継続占領で間隔が4分から1分に短縮。城または塔の占領60秒ごとに10,000点。集結は味方5チームまで。開始60分前に警戒区域から強制移転、50分前から終了までは区域内移転無料・平和シールド不可。総督パックは1人につき各回1個まで。兵士等級別の撃破・損失点と報酬数量は未確認です。",
       "url": "/ja/events/arcadian-conquest/"
+    },
+    {
+      "language": "ja",
+      "type": "database",
+      "title": "Lv.1資源自選ボックス",
+      "description": "使用すると、食料10K、木材10K、金属2K、燃料500から一つを選択できる",
+      "url": "/ja/database/items/#resource-choice-level-1"
+    },
+    {
+      "language": "ja",
+      "type": "database",
+      "title": "Lv.2資源自選ボックス",
+      "description": "使用すると、食料100K、木材100K、金属20K、燃料5Kから一つを選択できる",
+      "url": "/ja/database/items/#resource-choice-level-2"
     },
     {
       "language": "ja",
@@ -2351,9 +2393,23 @@
     {
       "language": "ko",
       "type": "database",
+      "title": "1레벨 자원 선택 상자",
+      "description": "사용 시 10K 식량, 10K 목재, 2K 금속, 500 연료 중 1개를 선택할 수 있습니다.",
+      "url": "/ko/database/items/#resource-choice-level-1"
+    },
+    {
+      "language": "ko",
+      "type": "database",
       "title": "20시간 일반 가속",
       "description": "20시간 일반 가속 · 선택한 대기열의 남은 시간을 20시간 줄입니다. · 아이템 획득처·사용처",
       "url": "/ko/database/items/#speedup-20h"
+    },
+    {
+      "language": "ko",
+      "type": "database",
+      "title": "2레벨 자원 선택 상자",
+      "description": "사용 시 100K 식량, 100K 목재, 20K 금속, 5K 연료 중 1개를 선택할 수 있습니다.",
+      "url": "/ko/database/items/#resource-choice-level-2"
     },
     {
       "language": "ko",
@@ -3178,6 +3234,13 @@
       "title": "축복받은 치유 비석 | 타일서바이벌 건물 | TilesSurvive.net",
       "description": "타일서바이벌 축복받은 치유 비석의 개요, 경상 전환율, 전투력을 레벨별로 정리한 상세 페이지입니다.",
       "url": "/ko/buildings/blessed-healing-stele/"
+    },
+    {
+      "language": "ko",
+      "type": "database",
+      "title": "축제 상자",
+      "description": "축제 보물찾기 이벤트에서 드랍되는 상자, 오픈 시 깜짝 보상을 획득합니다. 2026-10-10 표시 기준. 파티 기념떡 보상이 있는 축제 상자의 미리보기 확률입니다.",
+      "url": "/ko/database/items/#festive-chest-party-cake"
     },
     {
       "language": "ko",
@@ -4202,6 +4265,13 @@
     },
     {
       "language": "ru",
+      "type": "database",
+      "title": "Праздничный сундук",
+      "description": "Сундуки, выпадающие в событии «Праздничная охота». Откройте их, чтобы забрать ценные награды! Предпросмотр наград на 2026-10-10. Для праздничных сундуков с праздничным тортом.",
+      "url": "/ru/database/items/#festive-chest-party-cake"
+    },
+    {
+      "language": "ru",
       "type": "heroe",
       "title": "Призрак — Навыки, характеристики и развитие | TilesSurvive.net",
       "description": "Подробная страница героя Призрак в Tiles Survive. Здесь в одном месте собраны описание героя, фракция, боевые особенности, характеристики на максимальном уровне и звёздности, бонус звёздности и навыки.",
@@ -4611,6 +4681,20 @@
       "url": "/ru/database/items/#pet-eggs"
     },
     {
+      "language": "ru",
+      "type": "database",
+      "title": "Ящик с ресурсами на выбор 1 ур.",
+      "description": "Вы можете выбрать, что хотите получить в награду: 10 000 еды, 10 000 древесины, 2000 металла или 500 топлива.",
+      "url": "/ru/database/items/#resource-choice-level-1"
+    },
+    {
+      "language": "ru",
+      "type": "database",
+      "title": "Ящик с ресурсами на выбор 2 ур.",
+      "description": "Вы можете выбрать, что хотите получить в награду: 100 000 еды, 100 000 древесины, 20 000 металла или 5000 топлива.",
+      "url": "/ru/database/items/#resource-choice-level-2"
+    },
+    {
       "language": "zh-tw",
       "type": "database",
       "title": "10000點英雄經驗",
@@ -4662,9 +4746,23 @@
     {
       "language": "zh-tw",
       "type": "database",
+      "title": "1級資源自選箱",
+      "description": "使用後，可從10k食物、10k木材、2k金屬、500汽油中選擇一種。",
+      "url": "/zh-tw/database/items/#resource-choice-level-1"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
       "title": "20小時通用加速",
       "description": "20시간 일반 가속 · 縮短所選佇列的倒數時間20小時。 · 道具取得途徑與用途",
       "url": "/zh-tw/database/items/#speedup-20h"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
+      "title": "2級資源自選箱",
+      "description": "使用後，可從100k食物、100k木材、20k金屬、5k汽油中選擇一種。",
+      "url": "/zh-tw/database/items/#resource-choice-level-2"
     },
     {
       "language": "zh-tw",
@@ -4702,6 +4800,13 @@
       "title": "競技挑戰券",
       "description": "아레나 도전권 · 增加競技挑戰次數，賽季更新時，系統會清除超過上限的挑戰次數 · 道具取得途徑與用途",
       "url": "/zh-tw/database/items/#arena-ticket"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
+      "title": "慶典寶箱",
+      "description": "慶典尋寶活動掉落的寶箱，打開寶箱可獲得驚喜獎勵 2026-10-10顯示內容。以下為派對蛋糕獎勵的慶典寶箱預覽機率。",
+      "url": "/zh-tw/database/items/#festive-chest-party-cake"
     },
     {
       "language": "zh-tw",
