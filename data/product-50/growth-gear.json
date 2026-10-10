@@ -461,6 +461,44 @@
         "zh-tw": "海謠麥克",
         "de": "Stimme des Ozeans"
       }
+    },
+    {
+      "id": "lagnar",
+      "name": {
+        "ko": "라그나",
+        "en": "Ragnar",
+        "ja": "ラグナー",
+        "ru": "Рагнар",
+        "zh-tw": "雷格納",
+        "de": "Ragnar"
+      },
+      "gearName": {
+        "ko": "물의 칼날",
+        "en": "Water Blade",
+        "ja": "水の刃",
+        "ru": "Водный клинок",
+        "zh-tw": "水之刃",
+        "de": "Wasserklinge"
+      }
+    },
+    {
+      "id": "dave",
+      "name": {
+        "ko": "데이브",
+        "en": "Dave",
+        "ja": "デイブ",
+        "ru": "Дейв",
+        "zh-tw": "戴夫",
+        "de": "Dave"
+      },
+      "gearName": {
+        "ko": "고압 호스",
+        "en": "Pressure Washer",
+        "ja": "高圧水銃",
+        "ru": "Водяная пушка",
+        "zh-tw": "高壓水槍",
+        "de": "Hochdruckreiniger"
+      }
     }
   ]
 }

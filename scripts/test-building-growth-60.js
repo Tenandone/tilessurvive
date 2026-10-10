@@ -1,0 +1,40 @@
+'use strict';
+const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),{execFileSync}=require('node:child_process'),{parseHTML}=require('linkedom');
+const B=require('./build-building-growth-60'),root=path.resolve(__dirname,'..'),base='927a28668ea8a0d4afa3c7d55b7611b06790c82f';
+const read=file=>fs.readFileSync(path.join(root,file),'utf8'),doc=html=>parseHTML(html).document;
+const allRows=B.model.buildings.flatMap(b=>b.profiles.flatMap(p=>p.rows));
+function keys(object,expected){assert.deepEqual(Object.keys(object).sort(),expected.sort());}
+test('public dataset matches the approved source-reconciled projection with canonical line endings',()=>{
+ // Public-file digest, not a retained binary/source digest. A data change must
+ // be reconciled against retained records before this reviewed pin is updated.
+ const digest=require('node:crypto').createHash('sha256').update(fs.readFileSync(path.join(root,'data/content-60/buildings.json'),'utf8').replaceAll('\r\n','\n')).digest('hex');
+ assert.equal(digest,'1d54f14e6173f00ded0a769bafa091cf319dd972f5a04a6165084d11a3ba06e9');
+});
+test('allowlisted 10-building payload retains714 numeric+6 unknown rows, profiles, ranks and eight item references',()=>{
+ keys(B.model,['schemaVersion','gameVersion','resources','buildings']);assert.equal(B.model.gameVersion,'2.6.200');assert.equal(B.model.buildings.length,10);assert.equal(allRows.length,720);assert.equal(allRows.filter(r=>r.resources!==null).length,714);assert.equal(allRows.filter(r=>r.resources===null).length,6);assert.equal(allRows.filter(r=>r.constructionItems.length).length,8);assert.equal(allRows.filter(r=>r.constructionItems.length&&r.resources!==null).length,2);
+ assert.deepEqual([...new Set(B.model.resources.map(r=>r.id))],[1200005,1200004,1200003,1200002]);
+ for(const b of B.model.buildings){keys(b,['id','slug','name','minLevel','maxLevel','effectsFragment','profiles']);assert.equal(b.profiles.length,2);assert.deepEqual(b.profiles.map(p=>p.id),['Original','D']);assert(B.langs.every(l=>b.name[l]));for(const p of b.profiles){keys(p,['id','rows']);assert.equal(p.rows.length,b.maxLevel);assert.deepEqual(p.rows.map(r=>r.level),Array.from({length:b.maxLevel},(_,i)=>i+1));for(const r of p.rows){keys(r,['level','rank','resources','seconds','requirements','constructionItems']);assert(r.rank===0||b.id===800010&&r.level===30&&r.rank===1);if(r.resources===null)assert.equal(r.level,1);else{assert.equal(r.resources.length,4);assert(r.resources.every(n=>Number.isSafeInteger(n)&&n>=0));}assert(Number.isSafeInteger(r.seconds)&&r.seconds>=0);for(const q of r.requirements){keys(q,['buildingId','name','level','rank','slug']);assert(B.langs.every(l=>q.name[l]));}for(const item of r.constructionItems){keys(item,['id','name','quantity']);assert.equal(r.level,1);assert.equal(item.quantity,1);assert(B.langs.every(l=>item.name[l]));}}}}
+ assert.equal(allRows.filter(r=>r.rank===1).length,2);assert.equal(B.model.buildings.filter(b=>b.maxLevel===60).length,2);
+ const text=JSON.stringify(B.model);for(const pattern of [/tscfg:/i,/sourceSha/i,/valuesSha/i,/rawValues/i,/audit-results/i,/client\.sqlite/i,/C:\\/i,/privateGrade/i,/recordKey/i])assert(!pattern.test(text),String(pattern));
+});
+test('all720 rows render exactly in six languages, null stays unknown, profile selector and existing-effect links are accessible',()=>{
+ let rendered=0;
+ for(const file of B.pages){const [lang,,slug]=file.split('/'),b=B.model.buildings.find(b=>b.slug===slug),d=doc(read(file)),host=d.querySelector('[data-building-growth-60]');assert(host,file);assert.equal(d.querySelectorAll('#upgrade-sheet').length,1);assert.equal(d.getElementById('upgrade-sheet').closest('[data-building-growth-60]'),host);assert.equal(host.querySelector('[data-c60-building-select]').querySelectorAll('option').length,3);assert(host.querySelector('label[for]'));assert.equal(host.querySelectorAll('caption').length,2);
+  for(const p of b.profiles){const box=host.querySelector(`[data-c60-building-profile="${p.id}"]`),rows=[...box.querySelectorAll('tbody tr')];assert.equal(rows.length,p.rows.length);for(let i=0;i<rows.length;i++){const tr=rows[i],r=p.rows[i];assert.equal(tr.outerHTML,doc('<table><tbody>'+B.rowHTML(r,lang)+'</tbody></table>').querySelector('tr').outerHTML);if(r.resources===null)assert.equal(tr.querySelectorAll('[aria-label="'+B.copy[lang].unknown+'"]').length,4);rendered++;}}
+  if(b.effectsFragment)assert(d.getElementById(b.effectsFragment)&&host.querySelector('a[href="#'+b.effectsFragment+'"]'));assert.equal(host.querySelectorAll('form').length,0,'No legacy calculator reused');assert.equal(d.querySelectorAll('[data-content-60-style]').length,1);assert.equal(d.querySelectorAll('[data-building-growth-60-asset]').length,1);assert(!d.querySelector('main').textContent.includes(require('./build-building-ux-53').copy[lang].missing));
+ }
+ assert.equal(rendered,4320);
+});
+test('all60 pages preserve existing tables, SEO, official artwork, old anchors and affiliate destinations',()=>{
+ const tableValues=d=>[...d.querySelectorAll('main table')].filter(t=>!t.closest('[data-building-growth-60]')).map(t=>t.outerHTML);
+ const seo=d=>[...d.head.querySelectorAll('title,meta,link[rel="canonical"],link[rel="alternate"],script[type="application/ld+json"]')].map(x=>x.outerHTML);
+ for(const file of B.pages){const current=doc(read(file)),prior=doc(execFileSync('git',['show',base+':'+file],{cwd:root,encoding:'utf8',maxBuffer:15e6}));assert.deepEqual(tableValues(current),tableValues(prior),file+' original tables');assert.deepEqual(seo(current),seo(prior),file+' SEO');assert.deepEqual([...current.querySelectorAll('[data-building-art-51]')].map(n=>n.outerHTML),[...prior.querySelectorAll('[data-building-art-51]')].map(n=>n.outerHTML));assert.deepEqual([...current.querySelectorAll('a[href*="lootbar"]')].map(n=>n.href),[...prior.querySelectorAll('a[href*="lootbar"]')].map(n=>n.href));for(const n of prior.querySelectorAll('[id]'))assert(current.getElementById(n.id),file+' #'+n.id);}
+});
+test('building-only builder and legacy UX projection are idempotent; catalogs stay table-free and accurately point to the new sheet',()=>{
+ for(const file of B.pages){const html=read(file),[lang,,slug]=file.split('/');assert.equal(B.project(html,file),html);assert.equal(require('./build-building-ux-53').detail(html,lang,slug).html,html);}
+ for(const lang of B.langs){const d=doc(read(`${lang}/buildings/index.html`));assert.equal(d.querySelectorAll('.building-card').length,13);assert.equal(d.querySelectorAll('main table,[data-building-growth-60]').length,0);for(const b of B.model.buildings){const link=d.querySelector(`a[href="/${lang}/buildings/${b.slug}/#upgrade-sheet"]`);assert(link);const range=link.closest('.building-card').querySelector('.building-range-53').textContent,target=doc(read(`${lang}/buildings/${b.slug}/index.html`)).querySelector('[data-building-growth-60] .building-range-53').textContent;assert.equal(range,target);}}
+});
+test('interactive configuration selection shows exactly one profile and does not modify values',()=>{
+ const d=doc(B.render(B.model.buildings[0],'en')),host=d.querySelector('[data-building-growth-60]'),select=host.querySelector('select');let selected='';Object.defineProperty(select,'value',{get:()=>selected});Object.defineProperty(select,'selectedIndex',{get:()=>selected==='Original'?1:selected==='D'?2:0});const before=[...host.querySelectorAll('tbody')].map(x=>x.innerHTML);require('../js/building-growth-60').init(d);
+ assert([...host.querySelectorAll('details')].every(p=>!p.hidden&&!p.open));for(const id of ['Original','D','']){selected=id;select.dispatchEvent(new d.defaultView.Event('change'));for(const p of host.querySelectorAll('details')){assert.equal(p.hidden,!!id&&p.dataset.c60BuildingProfile!==id);assert.equal(p.open,!!id&&p.dataset.c60BuildingProfile===id);}}assert.deepEqual([...host.querySelectorAll('tbody')].map(x=>x.innerHTML),before);require('../js/building-growth-60').init(d);assert.equal(host.querySelectorAll('select').length,1);
+});

@@ -6,7 +6,6 @@ const G=require('./build-german-50'),W=require('../js/data-workbench-30'),M=requ
 const cat=JSON.parse(fs.readFileSync(path.join(R,'data/product-50/german.json'),'utf8'));
 for(const name of ['core','hero','calculator','growth','editorial','building','client52']){const p=path.join(R,'data/product-50/german-'+name+'-review.json');if(fs.existsSync(p))Object.assign(cat.exact,JSON.parse(fs.readFileSync(p,'utf8')).exact);}
 Object.assign(cat.exact,JSON.parse(fs.readFileSync(path.join(R,'data/product-50/german-root-overrides.json'),'utf8')).exact);
-G.addBuildingCopy(cat);
 const {translate,missing}=G.createTranslator(cat);
 let checks=0,numericLeaves=0,cells=0,forms=0,ranges=0;
 function eq(a,b,msg){assert.deepEqual(a,b,msg);checks++;}
@@ -14,7 +13,7 @@ function typed(value,out={},prefix='') {if(value&&typeof value==='object'){for(c
 const strip=d=>{require('./strip-refinement-51').strip(d);require('./build-pet-skill-levels').stripOwnedSections(d,'en');d.querySelectorAll('[data-growth-50],[data-growth-research-50],[data-growth50-asset],[data-package-offer-50]').forEach(n=>n.remove());};
 for(const route of JSON.parse(fs.readFileSync(path.join(R,'data/product-50/german-routes.json'),'utf8'))){
  const source=fs.readFileSync(path.join(R,'en',route),'utf8');
- const en=parseHTML(source).document,de=parseHTML(G.render(source,translate,route)).document;strip(en);
+ const en=parseHTML(source).document,de=parseHTML(G.render(source,translate,route)).document;require('./content-60-owned').strip(en);strip(en);
  eq(de.documentElement.lang,'de',route+' language');
  const ec=[...en.querySelectorAll('td')],dc=[...de.querySelectorAll('td')];eq(ec.length,dc.length,route+' cells');
  ec.forEach((e,i)=>{eq(W.sourceValue(dc[i]),e.textContent.trim(),route+' raw cell '+i);cells++;
@@ -39,5 +38,9 @@ const raw=parseHTML('<td data-ts-original-value="1,234.5">1.234,5</td>').documen
 eq(W.compare(W.sourceValue(raw),'20','de',1)>0,true,'numeric order unaffected by German display');
 eq(G.germanNumbers('2,500','2.500'),'2.500','already-localized override preserved');
 const unknown=G.createTranslator({exact:{}});unknown.translate('Never silently inherit this English sentence','fixture');eq(unknown.missing.size,1,'unknown strings held');
+const detailFixture='<html lang="en"><head></head><body><main><p>Details</p></main></body></html>';
+eq(parseHTML(G.render(detailFixture,translate,'heroes/lagnar/index.html')).document.querySelector('main p').textContent,'Einzelheiten','generic hero wording is preserved');
+eq(parseHTML(G.render(detailFixture,translate,'seasons/season-1/index.html')).document.querySelector('main p').textContent,'Einzelheiten','generic season wording is preserved');
+eq(parseHTML(G.render(detailFixture,translate,'buildings/index.html')).document.querySelector('main p').textContent,'Details','building control wording remains scoped');
 eq(missing.size,0,'all inherited strings have catalog coverage');
 console.log(JSON.stringify({status:'PASS',checks,routes:100,cells,numericLeaves,controls:forms,rangeComparisons:ranges,scope:'Inherited German projection; late six-language owners are tested separately. Numeric model and original calculation lexemes preserved.'}));

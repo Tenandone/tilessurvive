@@ -3,9 +3,9 @@ const test=require('node:test'),assert=require('node:assert/strict'),fs=require(
 const D=require('../data/product-50/growth-gear.json'),C=require('../data/product-50/growth-copy'),M=require('../js/growth-50'),B=require('./build-growth-50');
 const root=path.resolve(__dirname,'..');
 const RD=require('../data/product-50/growth-research.json');
-test('explicit shared gear curve,17 existing identities and six complete locales',()=>{
- assert.equal(D.heroes.length,17);assert.equal(new Set(D.heroes.map(h=>h.id)).size,17);assert.equal(D.curve.length,15);
- const old=require('../data/foundation-40/hero-gear-levels-41.json');assert.deepEqual(D.heroes.map(h=>h.id),old.gears.map(h=>h.id));
+test('explicit shared gear curve preserves17 identities and adds only Ragnar/Dave in six locales',()=>{
+ assert.equal(D.heroes.length,19);assert.equal(new Set(D.heroes.map(h=>h.id)).size,19);assert.equal(D.curve.length,15);
+ const old=require('../data/foundation-40/hero-gear-levels-41.json');assert.deepEqual(D.heroes.slice(0,17).map(h=>h.id),old.gears.map(h=>h.id));assert.deepEqual(D.heroes.slice(17).map(h=>h.id),['lagnar','dave']);
  const anchor=require('../data/foundation-40/hero-gear-levels.json');for(let i=0;i<15;i++)for(const k of ['level',...M.metrics])assert.equal(D.curve[i][k],anchor.levels[i][k]);
  for(const l of B.langs){assert(C[l]?.condition);for(const h of D.heroes){assert(h.name[l]);assert(h.gearName[l]);}for(const k of ['attack','defense','hp'])assert(D.stats[k][l]);}
  const text=JSON.stringify(D);for(const forbidden of ['sourceRecord','rawType','InternalId','sourceSha256','C:\\','PlayerPrefs'])assert(!text.includes(forbidden));
@@ -26,7 +26,7 @@ test('rendered6locale forms, headings, labels and names are self-contained',()=>
   assert(d.querySelector('#gear-stats-50[data-search-entry]'));if(lang==='de')assert.equal(d.querySelector('[data-growth-metric=hp] th').textContent,D.stats.hp.de+' (HP)');assert.equal(d.querySelectorAll('select').length,2);assert.equal(d.querySelectorAll('select option').length,30);assert.equal(d.querySelectorAll('[data-growth-metric]').length,4);
   assert.equal(d.querySelectorAll('[data-growth-all] tbody tr').length,15);assert(d.querySelector('form').hasAttribute('hidden'));
   assert(!d.body.textContent.includes('undefined'));assert.equal(JSON.parse(d.querySelector('[data-growth-config]').textContent).language,lang);
-  const a=parseHTML(B.render(lang)).document;assert.equal(a.querySelectorAll('.ts-growth50-links a').length,17);
+  const a=parseHTML(B.render(lang)).document;assert.equal(a.querySelectorAll('.ts-growth50-links a').length,19);
  }
 });
 test('actual browser client updates all metrics and recovers from invalid input',()=>{
@@ -44,7 +44,7 @@ test('generated pages contain exactly one additive block and keep existing gear/
  for(const lang of B.langs)for(const h of [...D.heroes,null]){
   const file=path.join(root,h?B.heroRoute(lang,h.id):`${lang}/database/exclusive-gear/index.html`);if(!fs.existsSync(file))continue;
   const d=parseHTML(fs.readFileSync(file,'utf8')).document;assert.equal(d.querySelectorAll('[data-growth-50]').length,1,file);assert.equal(d.querySelectorAll('script[data-growth50-asset]').length,1);
-  if(h){assert(d.querySelector('.ts-lootbar-slot--hero'));assert(d.querySelector('[data-hero-gear-levels-41]'));assert(d.querySelector('.ts-skill-body'));}
+  if(h){assert(d.querySelector('.ts-lootbar-slot--hero'));if(['lagnar','dave'].includes(h.id)){assert(d.querySelector('[data-sea-growth="gear"]'));assert(d.querySelector('#gear-costs-51'));}else{assert(d.querySelector('[data-hero-gear-levels-41]'));assert(d.querySelector('.ts-skill-body'));}}
   else assert(d.querySelector('form[data-growth-form]'),'Existing cost calculator must remain');
   assert(d.querySelector('link[rel=canonical]'));assert.equal(d.querySelectorAll('[data-growth-config]').length,1);pages++;
  }

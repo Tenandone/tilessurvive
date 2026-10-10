@@ -1,0 +1,182 @@
+{
+  "schemaVersion": 1,
+  "gameVersion": "2.6.200",
+  "quantityBasis": "per-synthesis",
+  "recipes": [
+    {
+      "slug": "obsidian-gear-crate",
+      "input": {
+        "quantity": 100,
+        "names": {
+          "ko": "다크골드 장비 선택 상자 합성물",
+          "en": "Custom Obsidian Gear Crate Fragment",
+          "ja": "暗金装備自選ボックスの合成素材",
+          "ru": "Фрагмент ящика обсидианового снаряжения на выбор",
+          "zh-tw": "暗金裝備自選箱合成物",
+          "de": "Fragment für individuelle Obsidian-Ausrüstungskiste"
+        }
+      },
+      "output": {
+        "quantity": 1,
+        "names": {
+          "ko": "다크골드 장비 선택 상자",
+          "en": "Custom Obsidian Gear Crate",
+          "ja": "暗金装備自選ボックス",
+          "ru": "Ящик обсидианового снаряжения на выбор",
+          "zh-tw": "暗金裝備自選箱",
+          "de": "Individuelle Obsidian-Ausrüstungskiste"
+        }
+      }
+    },
+    {
+      "slug": "alloy-gear-crate",
+      "input": {
+        "quantity": 20,
+        "names": {
+          "ko": "합금 장비 조각",
+          "en": "Alloy Gear Fragment",
+          "ja": "合金装備の欠片",
+          "ru": "Фрагмент снаряжения из сплава",
+          "zh-tw": "合金裝備碎片",
+          "de": "Legierte-Ausrüstung-Fragment"
+        }
+      },
+      "output": {
+        "quantity": 1,
+        "names": {
+          "ko": "합금 장비 선택 상자",
+          "en": "Custom Alloy Gear Crate",
+          "ja": "合金装備自選ボックス",
+          "ru": "Ящик снаряжения из сплава на выбор",
+          "zh-tw": "合金裝備自選箱",
+          "de": "Individuelle Legierte Ausrüstung-Kiste"
+        }
+      }
+    },
+    {
+      "slug": "turbo-turtle-decoration",
+      "input": {
+        "quantity": 10,
+        "names": {
+          "ko": "거북이 경주 조각",
+          "en": "Turbo Turtle Fragment",
+          "ja": "走るカメさんの欠片",
+          "ru": "Турбочерепашка (фрагмент)",
+          "zh-tw": "小龜快跑碎片",
+          "de": "Turbo-Schildkröten-Fragment"
+        }
+      },
+      "output": {
+        "quantity": 1,
+        "names": {
+          "ko": "거북이 경주",
+          "en": "Turbo Turtle",
+          "ja": "走るカメさん",
+          "ru": "Турбочерепашка",
+          "zh-tw": "小龜快跑",
+          "de": "Turbo-Schildkröte"
+        }
+      }
+    },
+    {
+      "slug": "lil-blazer-decoration",
+      "input": {
+        "quantity": 10,
+        "names": {
+          "ko": "여행 거북이 조각",
+          "en": "Lil' Blazer Fragment",
+          "ja": "のんびりカメさんの欠片",
+          "ru": "Малыш-путешественник (фрагмент)",
+          "zh-tw": "漫遊小龜碎片",
+          "de": "Kleiner-Blazer-Fragment"
+        }
+      },
+      "output": {
+        "quantity": 1,
+        "names": {
+          "ko": "여행 거북이",
+          "en": "Lil' Blazer",
+          "ja": "のんびりカメさん",
+          "ru": "Малыш-путешественник",
+          "zh-tw": "漫遊小龜",
+          "de": "Kleiner Blazer"
+        }
+      }
+    },
+    {
+      "slug": "evolution-core",
+      "input": {
+        "quantity": 100,
+        "names": {
+          "ko": "진화 코어 조각",
+          "en": "Evolution Core Fragment",
+          "ja": "進化コアの欠片",
+          "ru": "Фрагмент ядра эволюции",
+          "zh-tw": "進化核心碎片",
+          "de": "„Evolutionskern“-Fragment"
+        }
+      },
+      "output": {
+        "quantity": 1,
+        "names": {
+          "ko": "진화 코어",
+          "en": "Evolution Core",
+          "ja": "進化コア",
+          "ru": "Ядро эволюции",
+          "zh-tw": "進化核心",
+          "de": "Evolutionskern"
+        }
+      }
+    },
+    {
+      "slug": "astral-expanse-unbuilt",
+      "input": {
+        "quantity": 500,
+        "names": {
+          "ko": "영역 - 시공의 은하수 조각",
+          "en": "Domain: Astral Expanse (Fragment)",
+          "ja": "領域・星屑の海の欠片",
+          "ru": "Владения: астральное пространство (фрагмент)",
+          "zh-tw": "領域-時空星海碎片",
+          "de": "Domäne: Astrale Weiten (Fragment)"
+        }
+      },
+      "output": {
+        "quantity": 1,
+        "names": {
+          "ko": "영역 - 시공의 은하수 (건설 대기)",
+          "en": "Domain: Astral Expanse (Unbuilt)",
+          "ja": "領域・星屑の海（未建設）",
+          "ru": "Владения: астральное пространство (не построено)",
+          "zh-tw": "領域-時空星海（待建造）",
+          "de": "Domäne: Astrale Weiten (nicht gebaut)"
+        }
+      }
+    },
+    {
+      "slug": "signature-gear-tokens",
+      "input": {
+        "quantity": 5,
+        "names": {
+          "ko": "전용 장비 교환 코인 조각",
+          "en": "Signature Gear Token Fragment",
+          "ja": "専用装備交換コインの欠片",
+          "ru": "Фрагмент жетона на особое снаряжение",
+          "zh-tw": "專屬裝備兌換幣碎片",
+          "de": "Prestige-Ausrüstung-Markenfragment"
+        }
+      },
+      "output": {
+        "quantity": 10,
+        "names": {
+          "ko": "전용 장비 교환 코인",
+          "en": "Signature Gear Token",
+          "ja": "専用装備交換コイン",
+          "ru": "Жетон на особое снаряжение",
+          "zh-tw": "專屬裝備兌換幣",
+          "de": "Prestige-Ausrüstung-Marke"
+        }
+      }
+    }
+  ]
+}

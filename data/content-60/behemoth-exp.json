@@ -1,0 +1,1528 @@
+{
+  "schemaVersion": 1,
+  "gameVersion": "2.6.200",
+  "unit": "EXP",
+  "scope": "base-level-transition",
+  "displayedLevelRange": [
+    1,
+    150
+  ],
+  "profiles": [
+    {
+      "id": "legend-griffin",
+      "name": {
+        "ko": "전설 그리핀",
+        "en": "Legendary Griffin",
+        "ja": "巨獣グリフォン",
+        "ru": "Легендарный грифон",
+        "zh-tw": "橘光獅鷲獸",
+        "de": "Legendärer Greif"
+      },
+      "levels": [
+        {
+          "fromLevel": 1,
+          "toLevel": 2,
+          "baseExp": 1000
+        },
+        {
+          "fromLevel": 2,
+          "toLevel": 3,
+          "baseExp": 1000
+        },
+        {
+          "fromLevel": 3,
+          "toLevel": 4,
+          "baseExp": 1000
+        },
+        {
+          "fromLevel": 4,
+          "toLevel": 5,
+          "baseExp": 1000
+        },
+        {
+          "fromLevel": 5,
+          "toLevel": 6,
+          "baseExp": 1500
+        },
+        {
+          "fromLevel": 6,
+          "toLevel": 7,
+          "baseExp": 1500
+        },
+        {
+          "fromLevel": 7,
+          "toLevel": 8,
+          "baseExp": 1500
+        },
+        {
+          "fromLevel": 8,
+          "toLevel": 9,
+          "baseExp": 1500
+        },
+        {
+          "fromLevel": 9,
+          "toLevel": 10,
+          "baseExp": 1500
+        },
+        {
+          "fromLevel": 10,
+          "toLevel": 11,
+          "baseExp": 2000
+        },
+        {
+          "fromLevel": 11,
+          "toLevel": 12,
+          "baseExp": 2000
+        },
+        {
+          "fromLevel": 12,
+          "toLevel": 13,
+          "baseExp": 2000
+        },
+        {
+          "fromLevel": 13,
+          "toLevel": 14,
+          "baseExp": 2000
+        },
+        {
+          "fromLevel": 14,
+          "toLevel": 15,
+          "baseExp": 2000
+        },
+        {
+          "fromLevel": 15,
+          "toLevel": 16,
+          "baseExp": 2500
+        },
+        {
+          "fromLevel": 16,
+          "toLevel": 17,
+          "baseExp": 2500
+        },
+        {
+          "fromLevel": 17,
+          "toLevel": 18,
+          "baseExp": 2500
+        },
+        {
+          "fromLevel": 18,
+          "toLevel": 19,
+          "baseExp": 2500
+        },
+        {
+          "fromLevel": 19,
+          "toLevel": 20,
+          "baseExp": 2500
+        },
+        {
+          "fromLevel": 20,
+          "toLevel": 21,
+          "baseExp": 3000
+        },
+        {
+          "fromLevel": 21,
+          "toLevel": 22,
+          "baseExp": 3000
+        },
+        {
+          "fromLevel": 22,
+          "toLevel": 23,
+          "baseExp": 3000
+        },
+        {
+          "fromLevel": 23,
+          "toLevel": 24,
+          "baseExp": 3000
+        },
+        {
+          "fromLevel": 24,
+          "toLevel": 25,
+          "baseExp": 3000
+        },
+        {
+          "fromLevel": 25,
+          "toLevel": 26,
+          "baseExp": 4000
+        },
+        {
+          "fromLevel": 26,
+          "toLevel": 27,
+          "baseExp": 4000
+        },
+        {
+          "fromLevel": 27,
+          "toLevel": 28,
+          "baseExp": 4000
+        },
+        {
+          "fromLevel": 28,
+          "toLevel": 29,
+          "baseExp": 4000
+        },
+        {
+          "fromLevel": 29,
+          "toLevel": 30,
+          "baseExp": 4000
+        },
+        {
+          "fromLevel": 30,
+          "toLevel": 31,
+          "baseExp": 5000
+        },
+        {
+          "fromLevel": 31,
+          "toLevel": 32,
+          "baseExp": 5000
+        },
+        {
+          "fromLevel": 32,
+          "toLevel": 33,
+          "baseExp": 5000
+        },
+        {
+          "fromLevel": 33,
+          "toLevel": 34,
+          "baseExp": 5000
+        },
+        {
+          "fromLevel": 34,
+          "toLevel": 35,
+          "baseExp": 5000
+        },
+        {
+          "fromLevel": 35,
+          "toLevel": 36,
+          "baseExp": 6000
+        },
+        {
+          "fromLevel": 36,
+          "toLevel": 37,
+          "baseExp": 6000
+        },
+        {
+          "fromLevel": 37,
+          "toLevel": 38,
+          "baseExp": 6000
+        },
+        {
+          "fromLevel": 38,
+          "toLevel": 39,
+          "baseExp": 6000
+        },
+        {
+          "fromLevel": 39,
+          "toLevel": 40,
+          "baseExp": 6000
+        },
+        {
+          "fromLevel": 40,
+          "toLevel": 41,
+          "baseExp": 7000
+        },
+        {
+          "fromLevel": 41,
+          "toLevel": 42,
+          "baseExp": 7000
+        },
+        {
+          "fromLevel": 42,
+          "toLevel": 43,
+          "baseExp": 7000
+        },
+        {
+          "fromLevel": 43,
+          "toLevel": 44,
+          "baseExp": 7000
+        },
+        {
+          "fromLevel": 44,
+          "toLevel": 45,
+          "baseExp": 7000
+        },
+        {
+          "fromLevel": 45,
+          "toLevel": 46,
+          "baseExp": 8000
+        },
+        {
+          "fromLevel": 46,
+          "toLevel": 47,
+          "baseExp": 8000
+        },
+        {
+          "fromLevel": 47,
+          "toLevel": 48,
+          "baseExp": 8000
+        },
+        {
+          "fromLevel": 48,
+          "toLevel": 49,
+          "baseExp": 8000
+        },
+        {
+          "fromLevel": 49,
+          "toLevel": 50,
+          "baseExp": 8000
+        },
+        {
+          "fromLevel": 50,
+          "toLevel": 51,
+          "baseExp": 9000
+        },
+        {
+          "fromLevel": 51,
+          "toLevel": 52,
+          "baseExp": 9000
+        },
+        {
+          "fromLevel": 52,
+          "toLevel": 53,
+          "baseExp": 9000
+        },
+        {
+          "fromLevel": 53,
+          "toLevel": 54,
+          "baseExp": 9000
+        },
+        {
+          "fromLevel": 54,
+          "toLevel": 55,
+          "baseExp": 9000
+        },
+        {
+          "fromLevel": 55,
+          "toLevel": 56,
+          "baseExp": 10000
+        },
+        {
+          "fromLevel": 56,
+          "toLevel": 57,
+          "baseExp": 10000
+        },
+        {
+          "fromLevel": 57,
+          "toLevel": 58,
+          "baseExp": 10000
+        },
+        {
+          "fromLevel": 58,
+          "toLevel": 59,
+          "baseExp": 10000
+        },
+        {
+          "fromLevel": 59,
+          "toLevel": 60,
+          "baseExp": 10000
+        },
+        {
+          "fromLevel": 60,
+          "toLevel": 61,
+          "baseExp": 12000
+        },
+        {
+          "fromLevel": 61,
+          "toLevel": 62,
+          "baseExp": 12000
+        },
+        {
+          "fromLevel": 62,
+          "toLevel": 63,
+          "baseExp": 12000
+        },
+        {
+          "fromLevel": 63,
+          "toLevel": 64,
+          "baseExp": 12000
+        },
+        {
+          "fromLevel": 64,
+          "toLevel": 65,
+          "baseExp": 12000
+        },
+        {
+          "fromLevel": 65,
+          "toLevel": 66,
+          "baseExp": 13000
+        },
+        {
+          "fromLevel": 66,
+          "toLevel": 67,
+          "baseExp": 13000
+        },
+        {
+          "fromLevel": 67,
+          "toLevel": 68,
+          "baseExp": 13000
+        },
+        {
+          "fromLevel": 68,
+          "toLevel": 69,
+          "baseExp": 13000
+        },
+        {
+          "fromLevel": 69,
+          "toLevel": 70,
+          "baseExp": 13000
+        },
+        {
+          "fromLevel": 70,
+          "toLevel": 71,
+          "baseExp": 14000
+        },
+        {
+          "fromLevel": 71,
+          "toLevel": 72,
+          "baseExp": 14000
+        },
+        {
+          "fromLevel": 72,
+          "toLevel": 73,
+          "baseExp": 14000
+        },
+        {
+          "fromLevel": 73,
+          "toLevel": 74,
+          "baseExp": 14000
+        },
+        {
+          "fromLevel": 74,
+          "toLevel": 75,
+          "baseExp": 14000
+        },
+        {
+          "fromLevel": 75,
+          "toLevel": 76,
+          "baseExp": 16000
+        },
+        {
+          "fromLevel": 76,
+          "toLevel": 77,
+          "baseExp": 16000
+        },
+        {
+          "fromLevel": 77,
+          "toLevel": 78,
+          "baseExp": 16000
+        },
+        {
+          "fromLevel": 78,
+          "toLevel": 79,
+          "baseExp": 16000
+        },
+        {
+          "fromLevel": 79,
+          "toLevel": 80,
+          "baseExp": 16000
+        },
+        {
+          "fromLevel": 80,
+          "toLevel": 81,
+          "baseExp": 18000
+        },
+        {
+          "fromLevel": 81,
+          "toLevel": 82,
+          "baseExp": 18000
+        },
+        {
+          "fromLevel": 82,
+          "toLevel": 83,
+          "baseExp": 18000
+        },
+        {
+          "fromLevel": 83,
+          "toLevel": 84,
+          "baseExp": 18000
+        },
+        {
+          "fromLevel": 84,
+          "toLevel": 85,
+          "baseExp": 18000
+        },
+        {
+          "fromLevel": 85,
+          "toLevel": 86,
+          "baseExp": 20000
+        },
+        {
+          "fromLevel": 86,
+          "toLevel": 87,
+          "baseExp": 20000
+        },
+        {
+          "fromLevel": 87,
+          "toLevel": 88,
+          "baseExp": 20000
+        },
+        {
+          "fromLevel": 88,
+          "toLevel": 89,
+          "baseExp": 20000
+        },
+        {
+          "fromLevel": 89,
+          "toLevel": 90,
+          "baseExp": 20000
+        },
+        {
+          "fromLevel": 90,
+          "toLevel": 91,
+          "baseExp": 21000
+        },
+        {
+          "fromLevel": 91,
+          "toLevel": 92,
+          "baseExp": 21000
+        },
+        {
+          "fromLevel": 92,
+          "toLevel": 93,
+          "baseExp": 21000
+        },
+        {
+          "fromLevel": 93,
+          "toLevel": 94,
+          "baseExp": 21000
+        },
+        {
+          "fromLevel": 94,
+          "toLevel": 95,
+          "baseExp": 21000
+        },
+        {
+          "fromLevel": 95,
+          "toLevel": 96,
+          "baseExp": 23000
+        },
+        {
+          "fromLevel": 96,
+          "toLevel": 97,
+          "baseExp": 23000
+        },
+        {
+          "fromLevel": 97,
+          "toLevel": 98,
+          "baseExp": 23000
+        },
+        {
+          "fromLevel": 98,
+          "toLevel": 99,
+          "baseExp": 23000
+        },
+        {
+          "fromLevel": 99,
+          "toLevel": 100,
+          "baseExp": 23000
+        },
+        {
+          "fromLevel": 100,
+          "toLevel": 101,
+          "baseExp": 26000
+        },
+        {
+          "fromLevel": 101,
+          "toLevel": 102,
+          "baseExp": 26000
+        },
+        {
+          "fromLevel": 102,
+          "toLevel": 103,
+          "baseExp": 26000
+        },
+        {
+          "fromLevel": 103,
+          "toLevel": 104,
+          "baseExp": 26000
+        },
+        {
+          "fromLevel": 104,
+          "toLevel": 105,
+          "baseExp": 26000
+        },
+        {
+          "fromLevel": 105,
+          "toLevel": 106,
+          "baseExp": 28000
+        },
+        {
+          "fromLevel": 106,
+          "toLevel": 107,
+          "baseExp": 28000
+        },
+        {
+          "fromLevel": 107,
+          "toLevel": 108,
+          "baseExp": 28000
+        },
+        {
+          "fromLevel": 108,
+          "toLevel": 109,
+          "baseExp": 28000
+        },
+        {
+          "fromLevel": 109,
+          "toLevel": 110,
+          "baseExp": 28000
+        },
+        {
+          "fromLevel": 110,
+          "toLevel": 111,
+          "baseExp": 31000
+        },
+        {
+          "fromLevel": 111,
+          "toLevel": 112,
+          "baseExp": 31000
+        },
+        {
+          "fromLevel": 112,
+          "toLevel": 113,
+          "baseExp": 31000
+        },
+        {
+          "fromLevel": 113,
+          "toLevel": 114,
+          "baseExp": 31000
+        },
+        {
+          "fromLevel": 114,
+          "toLevel": 115,
+          "baseExp": 31000
+        },
+        {
+          "fromLevel": 115,
+          "toLevel": 116,
+          "baseExp": 33000
+        },
+        {
+          "fromLevel": 116,
+          "toLevel": 117,
+          "baseExp": 33000
+        },
+        {
+          "fromLevel": 117,
+          "toLevel": 118,
+          "baseExp": 33000
+        },
+        {
+          "fromLevel": 118,
+          "toLevel": 119,
+          "baseExp": 33000
+        },
+        {
+          "fromLevel": 119,
+          "toLevel": 120,
+          "baseExp": 33000
+        },
+        {
+          "fromLevel": 120,
+          "toLevel": 121,
+          "baseExp": 36000
+        },
+        {
+          "fromLevel": 121,
+          "toLevel": 122,
+          "baseExp": 36000
+        },
+        {
+          "fromLevel": 122,
+          "toLevel": 123,
+          "baseExp": 36000
+        },
+        {
+          "fromLevel": 123,
+          "toLevel": 124,
+          "baseExp": 36000
+        },
+        {
+          "fromLevel": 124,
+          "toLevel": 125,
+          "baseExp": 36000
+        },
+        {
+          "fromLevel": 125,
+          "toLevel": 126,
+          "baseExp": 39000
+        },
+        {
+          "fromLevel": 126,
+          "toLevel": 127,
+          "baseExp": 39000
+        },
+        {
+          "fromLevel": 127,
+          "toLevel": 128,
+          "baseExp": 39000
+        },
+        {
+          "fromLevel": 128,
+          "toLevel": 129,
+          "baseExp": 39000
+        },
+        {
+          "fromLevel": 129,
+          "toLevel": 130,
+          "baseExp": 39000
+        },
+        {
+          "fromLevel": 130,
+          "toLevel": 131,
+          "baseExp": 42000
+        },
+        {
+          "fromLevel": 131,
+          "toLevel": 132,
+          "baseExp": 42000
+        },
+        {
+          "fromLevel": 132,
+          "toLevel": 133,
+          "baseExp": 42000
+        },
+        {
+          "fromLevel": 133,
+          "toLevel": 134,
+          "baseExp": 42000
+        },
+        {
+          "fromLevel": 134,
+          "toLevel": 135,
+          "baseExp": 42000
+        },
+        {
+          "fromLevel": 135,
+          "toLevel": 136,
+          "baseExp": 45000
+        },
+        {
+          "fromLevel": 136,
+          "toLevel": 137,
+          "baseExp": 45000
+        },
+        {
+          "fromLevel": 137,
+          "toLevel": 138,
+          "baseExp": 45000
+        },
+        {
+          "fromLevel": 138,
+          "toLevel": 139,
+          "baseExp": 45000
+        },
+        {
+          "fromLevel": 139,
+          "toLevel": 140,
+          "baseExp": 45000
+        },
+        {
+          "fromLevel": 140,
+          "toLevel": 141,
+          "baseExp": 48000
+        },
+        {
+          "fromLevel": 141,
+          "toLevel": 142,
+          "baseExp": 48000
+        },
+        {
+          "fromLevel": 142,
+          "toLevel": 143,
+          "baseExp": 48000
+        },
+        {
+          "fromLevel": 143,
+          "toLevel": 144,
+          "baseExp": 48000
+        },
+        {
+          "fromLevel": 144,
+          "toLevel": 145,
+          "baseExp": 48000
+        },
+        {
+          "fromLevel": 145,
+          "toLevel": 146,
+          "baseExp": 52000
+        },
+        {
+          "fromLevel": 146,
+          "toLevel": 147,
+          "baseExp": 52000
+        },
+        {
+          "fromLevel": 147,
+          "toLevel": 148,
+          "baseExp": 52000
+        },
+        {
+          "fromLevel": 148,
+          "toLevel": 149,
+          "baseExp": 52000
+        },
+        {
+          "fromLevel": 149,
+          "toLevel": 150,
+          "baseExp": 52000
+        }
+      ]
+    },
+    {
+      "id": "marine-drake",
+      "name": {
+        "ko": "마린 드레이크",
+        "en": "Tidal Drake",
+        "ja": "海のドレイク",
+        "ru": "Морской дракон",
+        "zh-tw": "海洋亞龍",
+        "de": "Gezeiten-Drache"
+      },
+      "levels": [
+        {
+          "fromLevel": 1,
+          "toLevel": 2,
+          "baseExp": 1000
+        },
+        {
+          "fromLevel": 2,
+          "toLevel": 3,
+          "baseExp": 1000
+        },
+        {
+          "fromLevel": 3,
+          "toLevel": 4,
+          "baseExp": 1000
+        },
+        {
+          "fromLevel": 4,
+          "toLevel": 5,
+          "baseExp": 1000
+        },
+        {
+          "fromLevel": 5,
+          "toLevel": 6,
+          "baseExp": 1500
+        },
+        {
+          "fromLevel": 6,
+          "toLevel": 7,
+          "baseExp": 1500
+        },
+        {
+          "fromLevel": 7,
+          "toLevel": 8,
+          "baseExp": 1500
+        },
+        {
+          "fromLevel": 8,
+          "toLevel": 9,
+          "baseExp": 1500
+        },
+        {
+          "fromLevel": 9,
+          "toLevel": 10,
+          "baseExp": 1500
+        },
+        {
+          "fromLevel": 10,
+          "toLevel": 11,
+          "baseExp": 2000
+        },
+        {
+          "fromLevel": 11,
+          "toLevel": 12,
+          "baseExp": 2000
+        },
+        {
+          "fromLevel": 12,
+          "toLevel": 13,
+          "baseExp": 2000
+        },
+        {
+          "fromLevel": 13,
+          "toLevel": 14,
+          "baseExp": 2000
+        },
+        {
+          "fromLevel": 14,
+          "toLevel": 15,
+          "baseExp": 2000
+        },
+        {
+          "fromLevel": 15,
+          "toLevel": 16,
+          "baseExp": 2500
+        },
+        {
+          "fromLevel": 16,
+          "toLevel": 17,
+          "baseExp": 2500
+        },
+        {
+          "fromLevel": 17,
+          "toLevel": 18,
+          "baseExp": 2500
+        },
+        {
+          "fromLevel": 18,
+          "toLevel": 19,
+          "baseExp": 2500
+        },
+        {
+          "fromLevel": 19,
+          "toLevel": 20,
+          "baseExp": 2500
+        },
+        {
+          "fromLevel": 20,
+          "toLevel": 21,
+          "baseExp": 3000
+        },
+        {
+          "fromLevel": 21,
+          "toLevel": 22,
+          "baseExp": 3000
+        },
+        {
+          "fromLevel": 22,
+          "toLevel": 23,
+          "baseExp": 3000
+        },
+        {
+          "fromLevel": 23,
+          "toLevel": 24,
+          "baseExp": 3000
+        },
+        {
+          "fromLevel": 24,
+          "toLevel": 25,
+          "baseExp": 3000
+        },
+        {
+          "fromLevel": 25,
+          "toLevel": 26,
+          "baseExp": 4000
+        },
+        {
+          "fromLevel": 26,
+          "toLevel": 27,
+          "baseExp": 4000
+        },
+        {
+          "fromLevel": 27,
+          "toLevel": 28,
+          "baseExp": 4000
+        },
+        {
+          "fromLevel": 28,
+          "toLevel": 29,
+          "baseExp": 4000
+        },
+        {
+          "fromLevel": 29,
+          "toLevel": 30,
+          "baseExp": 4000
+        },
+        {
+          "fromLevel": 30,
+          "toLevel": 31,
+          "baseExp": 5000
+        },
+        {
+          "fromLevel": 31,
+          "toLevel": 32,
+          "baseExp": 5000
+        },
+        {
+          "fromLevel": 32,
+          "toLevel": 33,
+          "baseExp": 5000
+        },
+        {
+          "fromLevel": 33,
+          "toLevel": 34,
+          "baseExp": 5000
+        },
+        {
+          "fromLevel": 34,
+          "toLevel": 35,
+          "baseExp": 5000
+        },
+        {
+          "fromLevel": 35,
+          "toLevel": 36,
+          "baseExp": 6000
+        },
+        {
+          "fromLevel": 36,
+          "toLevel": 37,
+          "baseExp": 6000
+        },
+        {
+          "fromLevel": 37,
+          "toLevel": 38,
+          "baseExp": 6000
+        },
+        {
+          "fromLevel": 38,
+          "toLevel": 39,
+          "baseExp": 6000
+        },
+        {
+          "fromLevel": 39,
+          "toLevel": 40,
+          "baseExp": 6000
+        },
+        {
+          "fromLevel": 40,
+          "toLevel": 41,
+          "baseExp": 7000
+        },
+        {
+          "fromLevel": 41,
+          "toLevel": 42,
+          "baseExp": 7000
+        },
+        {
+          "fromLevel": 42,
+          "toLevel": 43,
+          "baseExp": 7000
+        },
+        {
+          "fromLevel": 43,
+          "toLevel": 44,
+          "baseExp": 7000
+        },
+        {
+          "fromLevel": 44,
+          "toLevel": 45,
+          "baseExp": 7000
+        },
+        {
+          "fromLevel": 45,
+          "toLevel": 46,
+          "baseExp": 8000
+        },
+        {
+          "fromLevel": 46,
+          "toLevel": 47,
+          "baseExp": 8000
+        },
+        {
+          "fromLevel": 47,
+          "toLevel": 48,
+          "baseExp": 8000
+        },
+        {
+          "fromLevel": 48,
+          "toLevel": 49,
+          "baseExp": 8000
+        },
+        {
+          "fromLevel": 49,
+          "toLevel": 50,
+          "baseExp": 8000
+        },
+        {
+          "fromLevel": 50,
+          "toLevel": 51,
+          "baseExp": 9000
+        },
+        {
+          "fromLevel": 51,
+          "toLevel": 52,
+          "baseExp": 9000
+        },
+        {
+          "fromLevel": 52,
+          "toLevel": 53,
+          "baseExp": 9000
+        },
+        {
+          "fromLevel": 53,
+          "toLevel": 54,
+          "baseExp": 9000
+        },
+        {
+          "fromLevel": 54,
+          "toLevel": 55,
+          "baseExp": 9000
+        },
+        {
+          "fromLevel": 55,
+          "toLevel": 56,
+          "baseExp": 10000
+        },
+        {
+          "fromLevel": 56,
+          "toLevel": 57,
+          "baseExp": 10000
+        },
+        {
+          "fromLevel": 57,
+          "toLevel": 58,
+          "baseExp": 10000
+        },
+        {
+          "fromLevel": 58,
+          "toLevel": 59,
+          "baseExp": 10000
+        },
+        {
+          "fromLevel": 59,
+          "toLevel": 60,
+          "baseExp": 10000
+        },
+        {
+          "fromLevel": 60,
+          "toLevel": 61,
+          "baseExp": 12000
+        },
+        {
+          "fromLevel": 61,
+          "toLevel": 62,
+          "baseExp": 12000
+        },
+        {
+          "fromLevel": 62,
+          "toLevel": 63,
+          "baseExp": 12000
+        },
+        {
+          "fromLevel": 63,
+          "toLevel": 64,
+          "baseExp": 12000
+        },
+        {
+          "fromLevel": 64,
+          "toLevel": 65,
+          "baseExp": 12000
+        },
+        {
+          "fromLevel": 65,
+          "toLevel": 66,
+          "baseExp": 13000
+        },
+        {
+          "fromLevel": 66,
+          "toLevel": 67,
+          "baseExp": 13000
+        },
+        {
+          "fromLevel": 67,
+          "toLevel": 68,
+          "baseExp": 13000
+        },
+        {
+          "fromLevel": 68,
+          "toLevel": 69,
+          "baseExp": 13000
+        },
+        {
+          "fromLevel": 69,
+          "toLevel": 70,
+          "baseExp": 13000
+        },
+        {
+          "fromLevel": 70,
+          "toLevel": 71,
+          "baseExp": 14000
+        },
+        {
+          "fromLevel": 71,
+          "toLevel": 72,
+          "baseExp": 14000
+        },
+        {
+          "fromLevel": 72,
+          "toLevel": 73,
+          "baseExp": 14000
+        },
+        {
+          "fromLevel": 73,
+          "toLevel": 74,
+          "baseExp": 14000
+        },
+        {
+          "fromLevel": 74,
+          "toLevel": 75,
+          "baseExp": 14000
+        },
+        {
+          "fromLevel": 75,
+          "toLevel": 76,
+          "baseExp": 16000
+        },
+        {
+          "fromLevel": 76,
+          "toLevel": 77,
+          "baseExp": 16000
+        },
+        {
+          "fromLevel": 77,
+          "toLevel": 78,
+          "baseExp": 16000
+        },
+        {
+          "fromLevel": 78,
+          "toLevel": 79,
+          "baseExp": 16000
+        },
+        {
+          "fromLevel": 79,
+          "toLevel": 80,
+          "baseExp": 16000
+        },
+        {
+          "fromLevel": 80,
+          "toLevel": 81,
+          "baseExp": 18000
+        },
+        {
+          "fromLevel": 81,
+          "toLevel": 82,
+          "baseExp": 18000
+        },
+        {
+          "fromLevel": 82,
+          "toLevel": 83,
+          "baseExp": 18000
+        },
+        {
+          "fromLevel": 83,
+          "toLevel": 84,
+          "baseExp": 18000
+        },
+        {
+          "fromLevel": 84,
+          "toLevel": 85,
+          "baseExp": 18000
+        },
+        {
+          "fromLevel": 85,
+          "toLevel": 86,
+          "baseExp": 20000
+        },
+        {
+          "fromLevel": 86,
+          "toLevel": 87,
+          "baseExp": 20000
+        },
+        {
+          "fromLevel": 87,
+          "toLevel": 88,
+          "baseExp": 20000
+        },
+        {
+          "fromLevel": 88,
+          "toLevel": 89,
+          "baseExp": 20000
+        },
+        {
+          "fromLevel": 89,
+          "toLevel": 90,
+          "baseExp": 20000
+        },
+        {
+          "fromLevel": 90,
+          "toLevel": 91,
+          "baseExp": 21000
+        },
+        {
+          "fromLevel": 91,
+          "toLevel": 92,
+          "baseExp": 21000
+        },
+        {
+          "fromLevel": 92,
+          "toLevel": 93,
+          "baseExp": 21000
+        },
+        {
+          "fromLevel": 93,
+          "toLevel": 94,
+          "baseExp": 21000
+        },
+        {
+          "fromLevel": 94,
+          "toLevel": 95,
+          "baseExp": 21000
+        },
+        {
+          "fromLevel": 95,
+          "toLevel": 96,
+          "baseExp": 23000
+        },
+        {
+          "fromLevel": 96,
+          "toLevel": 97,
+          "baseExp": 23000
+        },
+        {
+          "fromLevel": 97,
+          "toLevel": 98,
+          "baseExp": 23000
+        },
+        {
+          "fromLevel": 98,
+          "toLevel": 99,
+          "baseExp": 23000
+        },
+        {
+          "fromLevel": 99,
+          "toLevel": 100,
+          "baseExp": 23000
+        },
+        {
+          "fromLevel": 100,
+          "toLevel": 101,
+          "baseExp": 26000
+        },
+        {
+          "fromLevel": 101,
+          "toLevel": 102,
+          "baseExp": 26000
+        },
+        {
+          "fromLevel": 102,
+          "toLevel": 103,
+          "baseExp": 26000
+        },
+        {
+          "fromLevel": 103,
+          "toLevel": 104,
+          "baseExp": 26000
+        },
+        {
+          "fromLevel": 104,
+          "toLevel": 105,
+          "baseExp": 26000
+        },
+        {
+          "fromLevel": 105,
+          "toLevel": 106,
+          "baseExp": 28000
+        },
+        {
+          "fromLevel": 106,
+          "toLevel": 107,
+          "baseExp": 28000
+        },
+        {
+          "fromLevel": 107,
+          "toLevel": 108,
+          "baseExp": 28000
+        },
+        {
+          "fromLevel": 108,
+          "toLevel": 109,
+          "baseExp": 28000
+        },
+        {
+          "fromLevel": 109,
+          "toLevel": 110,
+          "baseExp": 28000
+        },
+        {
+          "fromLevel": 110,
+          "toLevel": 111,
+          "baseExp": 31000
+        },
+        {
+          "fromLevel": 111,
+          "toLevel": 112,
+          "baseExp": 31000
+        },
+        {
+          "fromLevel": 112,
+          "toLevel": 113,
+          "baseExp": 31000
+        },
+        {
+          "fromLevel": 113,
+          "toLevel": 114,
+          "baseExp": 31000
+        },
+        {
+          "fromLevel": 114,
+          "toLevel": 115,
+          "baseExp": 31000
+        },
+        {
+          "fromLevel": 115,
+          "toLevel": 116,
+          "baseExp": 33000
+        },
+        {
+          "fromLevel": 116,
+          "toLevel": 117,
+          "baseExp": 33000
+        },
+        {
+          "fromLevel": 117,
+          "toLevel": 118,
+          "baseExp": 33000
+        },
+        {
+          "fromLevel": 118,
+          "toLevel": 119,
+          "baseExp": 33000
+        },
+        {
+          "fromLevel": 119,
+          "toLevel": 120,
+          "baseExp": 33000
+        },
+        {
+          "fromLevel": 120,
+          "toLevel": 121,
+          "baseExp": 36000
+        },
+        {
+          "fromLevel": 121,
+          "toLevel": 122,
+          "baseExp": 36000
+        },
+        {
+          "fromLevel": 122,
+          "toLevel": 123,
+          "baseExp": 36000
+        },
+        {
+          "fromLevel": 123,
+          "toLevel": 124,
+          "baseExp": 36000
+        },
+        {
+          "fromLevel": 124,
+          "toLevel": 125,
+          "baseExp": 36000
+        },
+        {
+          "fromLevel": 125,
+          "toLevel": 126,
+          "baseExp": 39000
+        },
+        {
+          "fromLevel": 126,
+          "toLevel": 127,
+          "baseExp": 39000
+        },
+        {
+          "fromLevel": 127,
+          "toLevel": 128,
+          "baseExp": 39000
+        },
+        {
+          "fromLevel": 128,
+          "toLevel": 129,
+          "baseExp": 39000
+        },
+        {
+          "fromLevel": 129,
+          "toLevel": 130,
+          "baseExp": 39000
+        },
+        {
+          "fromLevel": 130,
+          "toLevel": 131,
+          "baseExp": 42000
+        },
+        {
+          "fromLevel": 131,
+          "toLevel": 132,
+          "baseExp": 42000
+        },
+        {
+          "fromLevel": 132,
+          "toLevel": 133,
+          "baseExp": 42000
+        },
+        {
+          "fromLevel": 133,
+          "toLevel": 134,
+          "baseExp": 42000
+        },
+        {
+          "fromLevel": 134,
+          "toLevel": 135,
+          "baseExp": 42000
+        },
+        {
+          "fromLevel": 135,
+          "toLevel": 136,
+          "baseExp": 45000
+        },
+        {
+          "fromLevel": 136,
+          "toLevel": 137,
+          "baseExp": 45000
+        },
+        {
+          "fromLevel": 137,
+          "toLevel": 138,
+          "baseExp": 45000
+        },
+        {
+          "fromLevel": 138,
+          "toLevel": 139,
+          "baseExp": 45000
+        },
+        {
+          "fromLevel": 139,
+          "toLevel": 140,
+          "baseExp": 45000
+        },
+        {
+          "fromLevel": 140,
+          "toLevel": 141,
+          "baseExp": 48000
+        },
+        {
+          "fromLevel": 141,
+          "toLevel": 142,
+          "baseExp": 48000
+        },
+        {
+          "fromLevel": 142,
+          "toLevel": 143,
+          "baseExp": 48000
+        },
+        {
+          "fromLevel": 143,
+          "toLevel": 144,
+          "baseExp": 48000
+        },
+        {
+          "fromLevel": 144,
+          "toLevel": 145,
+          "baseExp": 48000
+        },
+        {
+          "fromLevel": 145,
+          "toLevel": 146,
+          "baseExp": 52000
+        },
+        {
+          "fromLevel": 146,
+          "toLevel": 147,
+          "baseExp": 52000
+        },
+        {
+          "fromLevel": 147,
+          "toLevel": 148,
+          "baseExp": 52000
+        },
+        {
+          "fromLevel": 148,
+          "toLevel": 149,
+          "baseExp": 52000
+        },
+        {
+          "fromLevel": 149,
+          "toLevel": 150,
+          "baseExp": 52000
+        }
+      ]
+    }
+  ]
+}

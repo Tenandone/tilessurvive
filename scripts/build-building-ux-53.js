@@ -13,6 +13,8 @@ de:{detail:'Details',sheet:'Zur Ausbautabelle',title:'Ausbautabelle',known:'Best
 };
 const esc=s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('"','&quot;');
 function coverage(slug,d){
+ const expanded=d.querySelector('[data-building-growth-60]');
+ if(expanded){const b=require('../data/content-60/buildings.json').buildings.find(x=>x.slug===slug);if(!b)throw Error('Unknown expanded building '+slug);return {kind:'cost',range:`Lv.${b.minLevel}–${b.maxLevel}`};}
  const client=costs.buildings.filter(b=>b.slug===slug),effect=effects.profiles.find(p=>p.slug===slug);
  let levels=client.flatMap(b=>b.profiles.flatMap(p=>p.levels.map(r=>r.level)));
  if(!levels.length&&effect)levels=effect.levels.map(r=>r.level);
@@ -25,6 +27,8 @@ function asset(d,file,detail){
  d.documentElement.setAttribute('data-building-ux-53',detail?'detail':'catalog');
 }
 function detail(html,lang,slug){const d=parseHTML(html).document,t=copy[lang],c=coverage(slug,d);
+ // Keep the independently scoped profile/rank sheet when the legacy UX build is rerun.
+ if(d.querySelector('[data-building-growth-60]'))return {html:require('./build-building-growth-60').project(html,`${lang}/buildings/${slug}/index.html`),coverage:c};
  for(const n of d.querySelectorAll('[data-building-ux-53-anchor]')){n.removeAttribute('id');n.removeAttribute('tabindex');n.removeAttribute('data-building-ux-53-anchor');}
  d.querySelectorAll('[data-building-ux-53-generated]').forEach(n=>n.remove());
  d.querySelectorAll('[data-building-table-53]').forEach(n=>n.removeAttribute('data-building-table-53'));

@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-10T12:47:35.294Z",
-  "itemCount": 2515,
+  "generatedAt": "2026-10-10T22:43:13.310Z",
+  "itemCount": 2559,
   "items": [
     {
       "language": "de",
@@ -137,6 +137,76 @@
     },
     {
       "language": "de",
+      "type": "building",
+      "title": "Andere Einstellung (D) · Lv.1–30",
+      "description": "Stufe 2 vergleichen: Holz: 810.000 · Nahrung: 647.000 · Metall: 194.300 · Benzin: 97.100 · Grundzeit: 1 Min",
+      "url": "/de/buildings/aegis-monument/#c60-building-800148-D"
+    },
+    {
+      "language": "de",
+      "type": "building",
+      "title": "Andere Einstellung (D) · Lv.1–30",
+      "description": "Stufe 2 vergleichen: Holz: 4.000 · Nahrung: 0 · Metall: 0 · Benzin: 0 · Grundzeit: 3 Sek",
+      "url": "/de/buildings/comms-outpost/#c60-building-800016-D"
+    },
+    {
+      "language": "de",
+      "type": "building",
+      "title": "Andere Einstellung (D) · Lv.1–30",
+      "description": "Stufe 2 vergleichen: Holz: 3.300 · Nahrung: 3.300 · Metall: 0 · Benzin: 0 · Grundzeit: 3 Sek",
+      "url": "/de/buildings/garrison-station/#c60-building-800152-D"
+    },
+    {
+      "language": "de",
+      "type": "building",
+      "title": "Andere Einstellung (D) · Lv.1–30",
+      "description": "Stufe 2 vergleichen: Holz: 971.000 · Nahrung: 810.000 · Metall: 129.500 · Benzin: 97.100 · Grundzeit: 1 Min",
+      "url": "/de/buildings/guardian-of-life-monument/#c60-building-800149-D"
+    },
+    {
+      "language": "de",
+      "type": "building",
+      "title": "Andere Einstellung (D) · Lv.1–30",
+      "description": "Stufe 2 vergleichen: Holz: 1.457.000 · Nahrung: 1.457.000 · Metall: 161.900 · Benzin: 0 · Grundzeit: 1 Min",
+      "url": "/de/buildings/hero-academy/#c60-building-800142-D"
+    },
+    {
+      "language": "de",
+      "type": "building",
+      "title": "Andere Einstellung (D) · Lv.1–30",
+      "description": "Stufe 2 vergleichen: Holz: 2.000 · Nahrung: 0 · Metall: 0 · Benzin: 0 · Grundzeit: 3 Sek",
+      "url": "/de/buildings/hospital/#c60-building-800010-D"
+    },
+    {
+      "language": "de",
+      "type": "building",
+      "title": "Andere Einstellung (D) · Lv.1–30",
+      "description": "Stufe 2 vergleichen: Holz: 2.000 · Nahrung: 0 · Metall: 0 · Benzin: 0 · Grundzeit: 3 Sek",
+      "url": "/de/buildings/lab/#c60-building-800012-D"
+    },
+    {
+      "language": "de",
+      "type": "building",
+      "title": "Andere Einstellung (D) · Lv.1–30",
+      "description": "Stufe 2 vergleichen: Holz: 810.000 · Nahrung: 971.000 · Metall: 129.500 · Benzin: 97.100 · Grundzeit: 1 Min",
+      "url": "/de/buildings/warbringer-monument/#c60-building-800147-D"
+    },
+    {
+      "language": "de",
+      "type": "building",
+      "title": "Andere Einstellung (D) · Lv.1–60",
+      "description": "Stufe 2 vergleichen: Holz: 45.785.900 · Nahrung: 45.785.900 · Metall: 13.735.900 · Benzin: 1.442.600 · Grundzeit: 5 T 6 Std 58 Min 20 Sek",
+      "url": "/de/buildings/blessed-healing-stele/#c60-building-800217-D"
+    },
+    {
+      "language": "de",
+      "type": "building",
+      "title": "Andere Einstellung (D) · Lv.1–60",
+      "description": "Stufe 2 vergleichen: Holz: 50.365.000 · Nahrung: 50.365.000 · Metall: 15.110.000 · Benzin: 1.587.000 · Grundzeit: 5 T 6 Std 58 Min 20 Sek",
+      "url": "/de/buildings/cursed-wound-stele/#c60-building-800216-D"
+    },
+    {
+      "language": "de",
       "type": "event",
       "title": "Arcadian Conquest",
       "description": "Die Kampfphase dauert laut v2.5.600 zwei Stunden. Prüfe Besetzung, Sammelangriffe und den universellen 20-Stunden-Beschleuniger in den persönlichen Kampfbelohnungen.",
@@ -197,6 +267,20 @@
       "title": "Ballistik-Hymne",
       "description": "Ray feuert eine Granate ab, die an Feinden in Reichweite Schaden in Höhe von 83,4% des Angriffs verursacht.",
       "url": "/de/heroes/ray/#character-skill-0-0"
+    },
+    {
+      "language": "de",
+      "type": "behemoth",
+      "title": "Basis-EP je Stufe",
+      "description": "Legendärer Greif · Basis-EP für jeden Aufstieg zur nächsten Stufe.",
+      "url": "/de/behemoths/legend-griffin/#behemoth-exp-60"
+    },
+    {
+      "language": "de",
+      "type": "behemoth",
+      "title": "Basis-EP je Stufe",
+      "description": "Gezeiten-Drache · Basis-EP für jeden Aufstieg zur nächsten Stufe.",
+      "url": "/de/behemoths/marine-drake/#behemoth-exp-60"
     },
     {
       "language": "de",
@@ -1030,6 +1114,76 @@
       "title": "Grundeffekte nach Stufe",
       "description": "Spielversion 2.6.200 · Grundeffekte dieses Gebäudes ohne zusätzliche Boni durch Forschung, Helden, Saison oder andere Quellen.",
       "url": "/de/buildings/lab/#building-effects-51"
+    },
+    {
+      "language": "de",
+      "type": "building",
+      "title": "Grundeinstellung (Original) · Lv.1–30",
+      "description": "Stufe 2 vergleichen: Holz: 3.300 · Nahrung: 3.300 · Metall: 0 · Benzin: 0 · Grundzeit: 3 Min 10 Sek",
+      "url": "/de/buildings/aegis-monument/#c60-building-800148-Original"
+    },
+    {
+      "language": "de",
+      "type": "building",
+      "title": "Grundeinstellung (Original) · Lv.1–30",
+      "description": "Stufe 2 vergleichen: Holz: 3.300 · Nahrung: 3.300 · Metall: 0 · Benzin: 0 · Grundzeit: 3 Min 10 Sek",
+      "url": "/de/buildings/comms-outpost/#c60-building-800016-Original"
+    },
+    {
+      "language": "de",
+      "type": "building",
+      "title": "Grundeinstellung (Original) · Lv.1–30",
+      "description": "Stufe 2 vergleichen: Holz: 1.250 · Nahrung: 1.250 · Metall: 0 · Benzin: 0 · Grundzeit: 2 Min 40 Sek",
+      "url": "/de/buildings/garrison-station/#c60-building-800152-Original"
+    },
+    {
+      "language": "de",
+      "type": "building",
+      "title": "Grundeinstellung (Original) · Lv.1–30",
+      "description": "Stufe 2 vergleichen: Holz: 3.300 · Nahrung: 3.300 · Metall: 0 · Benzin: 0 · Grundzeit: 3 Min 10 Sek",
+      "url": "/de/buildings/guardian-of-life-monument/#c60-building-800149-Original"
+    },
+    {
+      "language": "de",
+      "type": "building",
+      "title": "Grundeinstellung (Original) · Lv.1–30",
+      "description": "Stufe 2 vergleichen: Holz: 3.300 · Nahrung: 3.300 · Metall: 0 · Benzin: 0 · Grundzeit: 45 Min 47 Sek",
+      "url": "/de/buildings/hero-academy/#c60-building-800142-Original"
+    },
+    {
+      "language": "de",
+      "type": "building",
+      "title": "Grundeinstellung (Original) · Lv.1–30",
+      "description": "Stufe 2 vergleichen: Holz: 2.500 · Nahrung: 2.500 · Metall: 0 · Benzin: 0 · Grundzeit: 2 Min 30 Sek",
+      "url": "/de/buildings/hospital/#c60-building-800010-Original"
+    },
+    {
+      "language": "de",
+      "type": "building",
+      "title": "Grundeinstellung (Original) · Lv.1–30",
+      "description": "Stufe 2 vergleichen: Holz: 3.300 · Nahrung: 3.300 · Metall: 0 · Benzin: 0 · Grundzeit: 3 Min 10 Sek",
+      "url": "/de/buildings/lab/#c60-building-800012-Original"
+    },
+    {
+      "language": "de",
+      "type": "building",
+      "title": "Grundeinstellung (Original) · Lv.1–30",
+      "description": "Stufe 2 vergleichen: Holz: 3.300 · Nahrung: 3.300 · Metall: 0 · Benzin: 0 · Grundzeit: 3 Min 10 Sek",
+      "url": "/de/buildings/warbringer-monument/#c60-building-800147-Original"
+    },
+    {
+      "language": "de",
+      "type": "building",
+      "title": "Grundeinstellung (Original) · Lv.1–60",
+      "description": "Stufe 2 vergleichen: Holz: 3.300 · Nahrung: 3.300 · Metall: 0 · Benzin: 0 · Grundzeit: 5 T 6 Std 58 Min 20 Sek",
+      "url": "/de/buildings/blessed-healing-stele/#c60-building-800217-Original"
+    },
+    {
+      "language": "de",
+      "type": "building",
+      "title": "Grundeinstellung (Original) · Lv.1–60",
+      "description": "Stufe 2 vergleichen: Holz: 3.300 · Nahrung: 3.300 · Metall: 0 · Benzin: 0 · Grundzeit: 5 T 6 Std 58 Min 20 Sek",
+      "url": "/de/buildings/cursed-wound-stele/#c60-building-800216-Original"
     },
     {
       "language": "de",
@@ -2589,6 +2743,13 @@
       "language": "de",
       "type": "heroe",
       "title": "Werte exklusiver Ausrüstung vergleichen",
+      "description": "Dave · Hochdruckreiniger",
+      "url": "/de/heroes/dave/#gear-stats-50"
+    },
+    {
+      "language": "de",
+      "type": "heroe",
+      "title": "Werte exklusiver Ausrüstung vergleichen",
       "description": "Jacob · Lachende Pistole",
       "url": "/de/heroes/jacob/#gear-stats-50"
     },
@@ -2605,6 +2766,13 @@
       "title": "Werte exklusiver Ausrüstung vergleichen",
       "description": "Chiron · Götterdurchbohrer",
       "url": "/de/heroes/kiron/#gear-stats-50"
+    },
+    {
+      "language": "de",
+      "type": "heroe",
+      "title": "Werte exklusiver Ausrüstung vergleichen",
+      "description": "Ragnar · Wasserklinge",
+      "url": "/de/heroes/lagnar/#gear-stats-50"
     },
     {
       "language": "de",
@@ -3014,6 +3182,20 @@
     },
     {
       "language": "en",
+      "type": "behemoth",
+      "title": "Base EXP by level",
+      "description": "Legendary Griffin · Base EXP for each transition to the next level.",
+      "url": "/en/behemoths/legend-griffin/#behemoth-exp-60"
+    },
+    {
+      "language": "en",
+      "type": "behemoth",
+      "title": "Base EXP by level",
+      "description": "Tidal Drake · Base EXP for each transition to the next level.",
+      "url": "/en/behemoths/marine-drake/#behemoth-exp-60"
+    },
+    {
+      "language": "en",
       "type": "heroe",
       "title": "Becca · Exclusive gear level comparison",
       "description": "Horizon Hunter · Gale Edge · Primary effects at Lv.1–15",
@@ -3304,6 +3486,13 @@
       "language": "en",
       "type": "heroe",
       "title": "Compare exclusive gear stats",
+      "description": "Dave · Pressure Washer",
+      "url": "/en/heroes/dave/#gear-stats-50"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
+      "title": "Compare exclusive gear stats",
       "description": "Jacob · Laughing Madgun",
       "url": "/en/heroes/jacob/#gear-stats-50"
     },
@@ -3320,6 +3509,13 @@
       "title": "Compare exclusive gear stats",
       "description": "Chiron · Godpiercer",
       "url": "/en/heroes/kiron/#gear-stats-50"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
+      "title": "Compare exclusive gear stats",
+      "description": "Ragnar · Water Blade",
+      "url": "/en/heroes/lagnar/#gear-stats-50"
     },
     {
       "language": "en",
@@ -7304,6 +7500,13 @@
       "language": "ja",
       "type": "heroe",
       "title": "専用装備のステータス比較",
+      "description": "デイブ · 高圧水銃",
+      "url": "/ja/heroes/dave/#gear-stats-50"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
+      "title": "専用装備のステータス比較",
       "description": "ヤーコブ · 笑うマッドガン",
       "url": "/ja/heroes/jacob/#gear-stats-50"
     },
@@ -7320,6 +7523,13 @@
       "title": "専用装備のステータス比較",
       "description": "カイロン · 神の長弓",
       "url": "/ja/heroes/kiron/#gear-stats-50"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
+      "title": "専用装備のステータス比較",
+      "description": "ラグナー · 水の刃",
+      "url": "/ja/heroes/lagnar/#gear-stats-50"
     },
     {
       "language": "ja",
@@ -8837,6 +9047,20 @@
     },
     {
       "language": "ja",
+      "type": "behemoth",
+      "title": "レベル別の基本経験値",
+      "description": "巨獣グリフォン · 各レベルから次のレベルへ成長する際の基本EXPです。",
+      "url": "/ja/behemoths/legend-griffin/#behemoth-exp-60"
+    },
+    {
+      "language": "ja",
+      "type": "behemoth",
+      "title": "レベル別の基本経験値",
+      "description": "海のドレイク · 各レベルから次のレベルへ成長する際の基本EXPです。",
+      "url": "/ja/behemoths/marine-drake/#behemoth-exp-60"
+    },
+    {
+      "language": "ja",
       "type": "heroe",
       "title": "ローズ · 専用装備レベル比較",
       "description": "終末ギター · 血涙の音符 · Lv.1–15の基本効果",
@@ -9535,6 +9759,20 @@
       "description": "타일서바이벌 영웅 럭키 상세 페이지입니다. 진급 영웅 기준으로 영웅 소개, 전투 특성, 최고 레벨 및 성급 속성, 성급 보너스, 스킬을 한눈에 정리했습니다.",
       "url": "/ko/heroes/lucky/",
       "aliases": "럭키 Lucky"
+    },
+    {
+      "language": "ko",
+      "type": "behemoth",
+      "title": "레벨별 기본 경험치",
+      "description": "전설 그리핀 · 각 레벨에서 다음 레벨로 성장할 때의 기본 EXP입니다.",
+      "url": "/ko/behemoths/legend-griffin/#behemoth-exp-60"
+    },
+    {
+      "language": "ko",
+      "type": "behemoth",
+      "title": "레벨별 기본 경험치",
+      "description": "마린 드레이크 · 각 레벨에서 다음 레벨로 성장할 때의 기본 EXP입니다.",
+      "url": "/ko/behemoths/marine-drake/#behemoth-exp-60"
     },
     {
       "language": "ko",
@@ -10892,6 +11130,13 @@
       "language": "ko",
       "type": "heroe",
       "title": "전용 장비 능력치 비교",
+      "description": "데이브 · 고압 호스",
+      "url": "/ko/heroes/dave/#gear-stats-50"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
+      "title": "전용 장비 능력치 비교",
       "description": "제이콥 · 스마일링 매드건",
       "url": "/ko/heroes/jacob/#gear-stats-50"
     },
@@ -10908,6 +11153,13 @@
       "title": "전용 장비 능력치 비교",
       "description": "키론 · 신이 내린 궁수",
       "url": "/ko/heroes/kiron/#gear-stats-50"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
+      "title": "전용 장비 능력치 비교",
+      "description": "라그나 · 물의 칼날",
+      "url": "/ko/heroes/lagnar/#gear-stats-50"
     },
     {
       "language": "ko",
@@ -12042,6 +12294,20 @@
       "title": "Базовые эффекты по уровням",
       "description": "Версия 2.6.200. Базовые эффекты здания без дополнительных бонусов исследований, героев, сезона и других источников.",
       "url": "/ru/buildings/lab/#building-effects-51"
+    },
+    {
+      "language": "ru",
+      "type": "behemoth",
+      "title": "Базовый опыт по уровням",
+      "description": "Легендарный грифон · Базовый опыт для каждого перехода на следующий уровень.",
+      "url": "/ru/behemoths/legend-griffin/#behemoth-exp-60"
+    },
+    {
+      "language": "ru",
+      "type": "behemoth",
+      "title": "Базовый опыт по уровням",
+      "description": "Морской дракон · Базовый опыт для каждого перехода на следующий уровень.",
+      "url": "/ru/behemoths/marine-drake/#behemoth-exp-60"
     },
     {
       "language": "ru",
@@ -14260,6 +14526,13 @@
       "language": "ru",
       "type": "heroe",
       "title": "Сравнение характеристик эксклюзивного снаряжения",
+      "description": "Дейв · Водяная пушка",
+      "url": "/ru/heroes/dave/#gear-stats-50"
+    },
+    {
+      "language": "ru",
+      "type": "heroe",
+      "title": "Сравнение характеристик эксклюзивного снаряжения",
       "description": "Джейкоб · Психострел-хохотун",
       "url": "/ru/heroes/jacob/#gear-stats-50"
     },
@@ -14276,6 +14549,13 @@
       "title": "Сравнение характеристик эксклюзивного снаряжения",
       "description": "Хирон · Губитель богов",
       "url": "/ru/heroes/kiron/#gear-stats-50"
+    },
+    {
+      "language": "ru",
+      "type": "heroe",
+      "title": "Сравнение характеристик эксклюзивного снаряжения",
+      "description": "Рагнар · Водный клинок",
+      "url": "/ru/heroes/lagnar/#gear-stats-50"
     },
     {
       "language": "ru",
@@ -14955,6 +15235,20 @@
       "title": "各等級基本效果",
       "description": "遊戲2.6.200。建築本身的基本效果，不含研究、英雄、賽季等額外加成。",
       "url": "/zh-tw/buildings/lab/#building-effects-51"
+    },
+    {
+      "language": "zh-tw",
+      "type": "behemoth",
+      "title": "各等級基礎經驗",
+      "description": "橘光獅鷲獸 · 從各等級成長至下一級所需的基礎EXP。",
+      "url": "/zh-tw/behemoths/legend-griffin/#behemoth-exp-60"
+    },
+    {
+      "language": "zh-tw",
+      "type": "behemoth",
+      "title": "各等級基礎經驗",
+      "description": "海洋亞龍 · 從各等級成長至下一級所需的基礎EXP。",
+      "url": "/zh-tw/behemoths/marine-drake/#behemoth-exp-60"
     },
     {
       "language": "zh-tw",
@@ -16951,6 +17245,13 @@
       "language": "zh-tw",
       "type": "heroe",
       "title": "專屬裝備屬性比較",
+      "description": "戴夫 · 高壓水槍",
+      "url": "/zh-tw/heroes/dave/#gear-stats-50"
+    },
+    {
+      "language": "zh-tw",
+      "type": "heroe",
+      "title": "專屬裝備屬性比較",
       "description": "雅各 · 笑面狂槍",
       "url": "/zh-tw/heroes/jacob/#gear-stats-50"
     },
@@ -16967,6 +17268,13 @@
       "title": "專屬裝備屬性比較",
       "description": "凱隆 · 神鋒長弓",
       "url": "/zh-tw/heroes/kiron/#gear-stats-50"
+    },
+    {
+      "language": "zh-tw",
+      "type": "heroe",
+      "title": "專屬裝備屬性比較",
+      "description": "雷格納 · 水之刃",
+      "url": "/zh-tw/heroes/lagnar/#gear-stats-50"
     },
     {
       "language": "zh-tw",
