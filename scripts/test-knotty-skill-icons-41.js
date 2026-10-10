@@ -45,10 +45,11 @@ test('all five pages preserve the entire baseline DOM except three decorative la
  }
 });
 
-test('other 105 released hero skill icons and their existing button/summary markup remain unchanged',()=>{
+test('other 105 skill panels preserve their markup with only the exact 94 reviewed icon replacements',()=>{
  const icons=new Set();let panels=0;
  for(const file of files.filter(f=>!f.includes('/knotty/'))){
   const old=doc(original.get(file)),d=doc(read(file));
+  require('./foundation-40-test-allowances').reviewedHeroSkillImages(old,file);
   assert.equal(d.querySelectorAll(`[${marker}]`).length,0,file);
   const extract=p=>[...p.querySelectorAll('[data-character-skills] img')].map(i=>i.outerHTML);
   assert.deepEqual(extract(d),extract(old),file);

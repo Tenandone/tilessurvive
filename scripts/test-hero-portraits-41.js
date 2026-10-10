@@ -13,6 +13,7 @@ test('125 hero pages change the stage portrait while preserving all game data, S
  for(const a of M.assets)for(const l of langs){
   const slug=l==='en'&&a.entity==='tarzan'?'tazan':a.entity,file=`${l}/heroes/${slug}/index.html`;
   const d=parseHTML(fs.readFileSync(path.join(root,file),'utf8')).document,old=parseHTML(execFileSync('git',['show',base+':'+file],{cwd:root,encoding:'utf8',maxBuffer:8e6})).document;
+  require('./foundation-40-test-allowances').reviewedHeroSkillImages(old,file);
   const img=d.querySelector('.ts3-character-art img');assert.equal(d.querySelectorAll('[data-game-41-portrait]').length,1);assert.equal(img.getAttribute('src'),a.src);assert.equal(img.getAttribute('width'),String(a.width));assert.equal(img.getAttribute('height'),String(a.height));assert.equal(img.getAttribute('loading'),'eager');assert.equal(img.getAttribute('fetchpriority'),'high');assert.equal(img.getAttribute('alt'),d.querySelector('main h1').textContent.trim());
   const preservedImages=a.entity==='knotty'?'main img:not(.ts3-character-art img):not([data-game-41-skill-icon])':'main img:not(.ts3-character-art img)';
   for(const selector of ['title,meta[name="description"],link[rel="canonical"],link[hreflang]','main table,.ts-skill-body,[data-growth-form]',preservedImages,'.ts-lootbar-slot--hero'])assert.deepEqual(extract(d,selector),extract(old,selector),file+' '+selector);

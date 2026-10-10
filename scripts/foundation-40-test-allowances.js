@@ -15,7 +15,20 @@ const growthSource={url:'https://github.com/Tenandone/tilessurvive/blob/main/dat
 const hatchSource={url:'https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/pet-hatching.json',version:'Tiles Survive 2.6.200',kind:'game-screen'};
 const clone=v=>JSON.parse(JSON.stringify(v)),norm=s=>String(s).normalize('NFKC').replace(/\s+/g,' ').trim();
 const petHub=file=>/^(ko|en|ja|ru|zh-tw)\/database\/pet-system\/index\.html$/.test(file);
+const heroSkillAssets=require('../data/foundation-40/hero-skill-assets-41.json').assets;
+const heroSkillRoute=(file,a)=>['ko','en','ja','ru','zh-tw'].some(l=>file===`${l}/heroes/${l==='en'&&a.entity==='tarzan'?'tazan':a.entity}/index.html`);
+function reviewedHeroSkillImages(document,file){
+ for(const a of heroSkillAssets.filter(a=>heroSkillRoute(file,a))){
+  for(const selector of [`#${a.panelId} summary > img`,`[data-skill-target="${a.panelId}"] > img`]){
+   const nodes=document.querySelectorAll(selector);assert.equal(nodes.length,1,'Exact reviewed skill image target');const img=nodes[0];
+   assert.equal(img.getAttribute('src'),a.previousSrc,'Immutable pre-overlay skill source');
+   for(const [k,v]of Object.entries({src:a.src,width:'128',height:'128',loading:'lazy',decoding:'async','data-game-41-skill-art':a.id}))img.setAttribute(k,v);
+  }
+ }
+ return document;
+}
 function image(file,src){
+ const skill=heroSkillAssets.find(a=>heroSkillRoute(file,a)&&a.previousSrc===src);if(skill)return skill.src;
  const portrait=require('../data/foundation-40/hero-portrait-assets-41.json').assets.find(a=>new RegExp('/heroes/'+(file.startsWith('en/')&&a.entity==='tarzan'?'tazan':a.entity)+'/index\\.html$').test(file));
  if(portrait&&src===(portrait.entity==='knotty'?'/img/heroes/knotty-game.webp':'/img/heroes/'+portrait.entity+'.webp'))return portrait.src;
  const pet=src.match(/^\/img\/pets\/(snowball|dodo|buckler|fluffy|hardhead|shadow|starhorn)\.webp$/);
@@ -161,4 +174,4 @@ function reviewedScript(file,baseline){
  for(const pair of pairs){assert.equal(baseline.split(pair[0]).length-1,1,'Exact immutable search expression: '+file);baseline=baseline.replace(...pair);}
  return baseline;
 }
-module.exports={image,metadata:(v,f)=>localized(metadata(v,f),f),text:(v,f,k)=>localized(text(v,f,k),f),forms,expectedRows:reviewedRows,source,quantity,deletedDrafts,petHub,growthSource,arcadia,petChanges,localized,identity,identitiesFromGit,petExpScope,petExpRows,reviewedScript};
+module.exports={image,reviewedHeroSkillImages,metadata:(v,f)=>localized(metadata(v,f),f),text:(v,f,k)=>localized(text(v,f,k),f),forms,expectedRows:reviewedRows,source,quantity,deletedDrafts,petHub,growthSource,arcadia,petChanges,localized,identity,identitiesFromGit,petExpScope,petExpRows,reviewedScript};

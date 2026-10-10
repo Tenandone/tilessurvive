@@ -23,6 +23,7 @@ test('all 19,125 localized level pairs equal explicit formatter rows, including 
 test('85 existing pages retain every original skill, table, gear paragraph, image, SEO and one middle banner',()=>{
  for(const g of D.gears)for(const l of langs){const route=B.route(l,g.id),old=parseHTML(execFileSync('git',['show',base+':'+route],{cwd:root,encoding:'utf8',maxBuffer:4e6})).document,d=load(l,g.id),block=d.querySelector('[data-hero-gear-levels-41]');assert(block,route);
   reviewedPortrait(old,g.id);
+  require('./foundation-40-test-allowances').reviewedHeroSkillImages(old,route);
   const extract=(doc,selector)=>[...doc.querySelectorAll(selector)].map(n=>text(n.outerHTML));
   for(const sel of ['title,meta[name=description],link[rel=canonical],link[hreflang]','.ts-skill-body','main img','.ts-lootbar-slot--hero'])assert.deepEqual(extract(d,sel),extract(old,sel),route+' '+sel);
   const section=doc=>g.id==='undine'?doc.querySelector('[data-hero-observations-40="equipment"]').closest('section'):doc.querySelector('.equipment-grid').closest('section');
