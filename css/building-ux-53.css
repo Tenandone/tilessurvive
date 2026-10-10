@@ -1,0 +1,35 @@
+/* Scoped to building routes; artwork and unrelated layouts keep their owners. */
+html.ts3[data-building-ux-53] main{min-width:0}
+#upgrade-sheet{display:block;scroll-margin-top:110px;outline-offset:6px}
+html.ts3[data-building-ux-53] main .building-range-53{font-size:.82rem;line-height:1.5;color:#526355;margin:.4rem 0}
+html.ts3[data-building-ux-53=catalog] main .ts3-data-catalog{display:grid;grid-template-columns:repeat(2,minmax(0,1fr))!important;column-gap:2rem!important}
+html.ts3[data-building-ux-53=catalog] main .building-body{display:flex;flex-direction:column;align-items:flex-start;min-width:0;gap:.35rem}
+html.ts3[data-building-ux-53=catalog] main .building-card-actions-53{display:flex;flex-wrap:wrap;align-items:center;gap:.5rem .9rem;margin-top:.35rem}
+html.ts3[data-building-ux-53=catalog] main .building-card-actions-53 a{display:inline-flex;align-items:center;min-height:44px;font-size:.86rem;line-height:1.4}
+.building-sheet-link-53{color:#245c49;text-decoration:underline;text-underline-offset:3px}
+.building-detail-nav-53{display:flex;flex-wrap:wrap;gap:.6rem 1.2rem;margin:1rem 0 1.7rem}
+.building-detail-nav-53 a{display:inline-flex;align-items:center;min-height:44px;color:#245c49;font-weight:600}
+.building-sheet-intro-53{margin-block:0 1rem}
+html.ts3[data-building-ux-53=detail] main [data-building-table-53]{max-width:100%;max-height:65vh;overflow:auto;overscroll-behavior-inline:contain;border:1px solid #d9ded5;border-radius:5px;background:#fff}
+html.ts3[data-building-ux-53=detail] main [data-building-table-53] table{border-collapse:separate;border-spacing:0;width:100%;font-size:.9rem;line-height:1.5;font-variant-numeric:tabular-nums}
+html.ts3[data-building-ux-53=detail] main [data-building-table-53] :is(td,th){padding:.75rem .9rem;vertical-align:top;border-bottom:1px solid #e5e8e1;color:#17362c}
+html.ts3[data-building-ux-53=detail] main [data-building-table-53] thead th{position:sticky;top:0;z-index:2;background:#eaf0e8;white-space:nowrap}
+html.ts3[data-building-ux-53=detail] main [data-building-table-53] tr>:first-child{position:sticky;left:0;z-index:1;background:#f4f7f2;min-width:3.4rem}
+html.ts3[data-building-ux-53=detail] main [data-building-table-53] thead tr>:first-child{z-index:3;background:#eaf0e8}
+html.ts3[data-building-ux-53=detail] main [data-client-cost-table]{min-width:900px}
+html.ts3[data-building-ux-53=detail] main [data-client-cost-table] td:nth-child(7){min-width:180px;white-space:normal}
+html.ts3[data-building-ux-53=detail] main [data-client-cost-table] td:nth-child(n+2):nth-child(-n+6){white-space:nowrap}
+.building-scroll-note-53{font-size:.8rem;color:#526355;margin:.6rem 0}
+.building-level-view-53{display:none}
+@media(max-width:900px){html.ts3[data-building-ux-53=catalog] main .ts3-data-catalog{grid-template-columns:minmax(0,1fr)!important}}
+@media(max-width:700px){
+ .building-level-view-53{display:grid;gap:.5rem;margin:1rem 0;min-width:0}
+ .building-level-view-53>label{font-weight:600;color:#17362c}
+ .building-level-view-53>select{width:100%;min-height:44px;font:inherit;font-size:16px;padding:.65rem;border:1px solid #c6d1c4;border-radius:5px;background:#fff;color:#17362c}
+ .building-level-view-53 dl{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.7rem;margin:0;padding:1rem;background:#f4f7f2;border:1px solid #d9ded5;border-radius:5px}
+ .building-level-view-53 dl>div{min-width:0;overflow-wrap:anywhere}
+ .building-level-view-53 dt{font-size:.78rem;color:#526355}
+ .building-level-view-53 dd{margin:.25rem 0 0;font-weight:600;font-variant-numeric:tabular-nums;color:#17362c;line-height:1.5}
+ html.ts3[data-building-ux-53=detail] main [data-building-table-53] :is(td,th){padding:.65rem .7rem;font-size:.85rem}
+ html.ts3[data-building-ux-53=detail] main .client-building-52 [data-client-inputs] button{min-height:44px}
+}

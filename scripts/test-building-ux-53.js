@@ -1,0 +1,22 @@
+'use strict';
+const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),{execFileSync}=require('node:child_process'),{parseHTML}=require('linkedom');
+const builder=require('./build-building-ux-53'),art=require('../data/building-assets-51.json'),root=path.resolve(__dirname,'..');
+const read=file=>parseHTML(fs.readFileSync(path.join(root,file),'utf8')).document;
+const baseline=file=>parseHTML(execFileSync('git',['show','9883229:'+file],{cwd:root,encoding:'utf8',maxBuffer:8e6})).document;
+const tables=d=>[...d.querySelectorAll('main table')].map(n=>({id:n.id,heads:n.querySelector('thead')?.textContent,rows:[...n.querySelectorAll('tbody tr')].map(r=>[...r.children].map(c=>[c.textContent,c.getAttribute('data-ts-original-value')]))}));
+const seo=d=>[...d.head.querySelectorAll('title,meta,link[rel=canonical],link[rel=alternate],script[type="application/ld+json"]')].map(n=>n.outerHTML);
+test('all 78 shortcuts resolve to actual detail sheets; catalogs contain no upgrade table, disclosure or calculator',()=>{
+ for(const lang of art.languages){const d=read(`${lang}/buildings/index.html`);assert.equal(d.querySelectorAll('.building-card').length,13);assert.equal(d.querySelectorAll('main table,main details,[data-client-building-model],[data-building-planner]').length,0);
+ for(const card of d.querySelectorAll('.building-card')){const links=card.querySelectorAll('.building-card-actions-53 a');assert.equal(links.length,2);assert.equal(links[0].textContent,builder.copy[lang].detail);assert.equal(links[1].getAttribute('href'),links[0].getAttribute('href')+'#upgrade-sheet');const detail=read(links[0].getAttribute('href').slice(1)+'index.html');assert.equal(detail.querySelectorAll('#upgrade-sheet').length,1);const host=detail.getElementById('upgrade-sheet').closest('[data-building-upgrade-sheet]');assert(host);const slug=links[0].getAttribute('href').split('/').filter(Boolean).at(-1),c=builder.coverage(slug,detail);if(c.kind!=='unknown')assert(host.querySelector('table'),'anchor must be in the real table section');assert.equal(card.querySelector('.building-range-53').textContent,host.querySelector('.building-range-53').textContent);}
+ }
+});
+test('all original numerical rows, profiles, SEO, artwork, affiliate links and old fragment IDs survive',()=>{
+ for(const lang of art.languages)for(const slug of ['',...art.assets.map(a=>a.slug)]){const file=`${lang}/buildings/${slug?slug+'/':''}index.html`,a=baseline(file),d=read(file);assert.deepEqual(tables(d),tables(a),file+' values');assert.deepEqual(seo(d),seo(a),file+' SEO');assert.deepEqual([...d.querySelectorAll('[data-building-art-51]')].map(n=>n.outerHTML),[...a.querySelectorAll('[data-building-art-51]')].map(n=>n.outerHTML));assert.deepEqual([...d.querySelectorAll('a[href*="lootbar"]')].map(n=>n.getAttribute('href')),[...a.querySelectorAll('a[href*="lootbar"]')].map(n=>n.getAttribute('href')));assert.deepEqual([...d.querySelectorAll('[data-client-building-model]')].map(n=>JSON.parse(n.textContent)),[...a.querySelectorAll('[data-client-building-model]')].map(n=>JSON.parse(n.textContent)));for(const n of a.querySelectorAll('[id]'))assert(d.getElementById(n.id),file+' #'+n.id);}
+});
+test('unknown coverage remains explicit, and every locale rebuild is idempotent',()=>{
+ for(const lang of art.languages){const entries={};for(const a of art.assets){const file=`${lang}/buildings/${a.slug}/index.html`,html=fs.readFileSync(path.join(root,file),'utf8'),result=builder.detail(html,lang,a.slug);assert.equal(result.html,html);entries[a.slug]=result.coverage;if(['hospital','enlistment-office','garrison-station'].includes(a.slug))assert.equal(result.coverage.kind,'unknown');}const file=`${lang}/buildings/index.html`,html=fs.readFileSync(path.join(root,file),'utf8');assert.equal(builder.catalog(html,lang,entries),html);}
+});
+test('historical UI adapter rejects numeric, fragment and SEO tampering',()=>{
+ const adapter=require('./building-ux-53-test-allowances'),file='ko/buildings/power-plant/index.html';assert.doesNotThrow(()=>adapter.restore(read(file),file));
+ for(const mutate of [d=>d.querySelector('[data-client-cost-table] tbody td:nth-child(2)').textContent='999',d=>d.querySelector('#upgrade-sheet').id='wrong-target',d=>d.querySelector('link[rel=canonical]').href='https://example.invalid/']){const d=read(file);mutate(d);assert.throws(()=>adapter.restore(d,file),/Exact building UI projection/);}
+});

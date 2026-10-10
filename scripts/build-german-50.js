@@ -100,8 +100,17 @@ function render(source, translate, route) {
   for(const item of document.querySelectorAll('[data-pet-name]')){const n=item.querySelector('h3')?.textContent;if(n)item.dataset.petName+=' '+n;}
   return document.toString();
 }
+function addBuildingCopy(catalog){
+  // Building UI is owned by the six-language 5.3 renderer; reuse its reviewed copy.
+  const buildingCopy=require('./build-building-ux-53').copy;
+  for(const key of Object.keys(buildingCopy.en))catalog.exact[buildingCopy.en[key]]=buildingCopy.de[key];
+  catalog.exact['← '+buildingCopy.en.back]='← '+buildingCopy.de.back;
+  for(const range of ['Lv.1–30','Lv.1–60'])for(const kind of ['cost','effect'])catalog.exact[buildingCopy.en.known+' · '+range+' · '+buildingCopy.en[kind]]=buildingCopy.de.known+' · '+range+' · '+buildingCopy.de[kind];
+  catalog.exact[buildingCopy.en.known+' · '+buildingCopy.en.unknown]=buildingCopy.de.known+' · '+buildingCopy.de.unknown;
+}
 function build({inventoryPath}={}) {
   const catalog=fs.existsSync(DATA)?JSON.parse(fs.readFileSync(DATA,'utf8')):{exact:{}};
+  addBuildingCopy(catalog);
   for(const name of ['german-core-review.json','german-hero-review.json','german-calculator-review.json','german-growth-review.json','german-editorial-review.json','german-root-overrides.json','german-building-review.json','german-client52-review.json']){const file=path.join(ROOT,'data/product-50',name);if(fs.existsSync(file))Object.assign(catalog.exact,JSON.parse(fs.readFileSync(file,'utf8')).exact);}
   const {translate,missing}=createTranslator(catalog,!!inventoryPath);
   const outputs=[];
@@ -126,5 +135,5 @@ function build({inventoryPath}={}) {
   let changed=0;for(const o of outputs){fs.mkdirSync(path.dirname(o.path),{recursive:true});if(!fs.existsSync(o.path)||fs.readFileSync(o.path,'utf8')!==o.content){fs.writeFileSync(o.path,o.content);changed++;}}
   return {routes:outputs.filter(o=>!o.route.startsWith('components/')&&!o.route.startsWith('data/')).length,components:2,dataFiles:2,changed,missing:0};
 }
-module.exports={build,render,localizeJSON,createTranslator,localizeProgram,germanNumbers};
+module.exports={addBuildingCopy,build,render,localizeJSON,createTranslator,localizeProgram,germanNumbers};
 if(require.main===module){const i=process.argv.indexOf('--inventory');console.log(JSON.stringify(build({inventoryPath:i>=0?path.resolve(process.argv[i+1]):null})));}
