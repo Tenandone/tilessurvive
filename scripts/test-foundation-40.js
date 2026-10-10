@@ -64,7 +64,7 @@ for (const file of allBaseline.filter(file => file !== '.source-commit')) {
   check(gitBlob === tree.get(file) || checkoutEOL, 'Baseline archive matches fixed Git blob (including exact checkout EOL conversion) ' + file);
 }
 const docs = new Map();
-const load = file => { if (!docs.has(file)) docs.set(file, parse(fs.readFileSync(file, 'utf8'))); return docs.get(file); };
+const load = file => { if (!docs.has(file)) docs.set(file, require('./refinement-51-test-allowances').restore(parse(fs.readFileSync(file, 'utf8')))); return docs.get(file); };
 const rows = d => [...d.querySelectorAll('main table tr')].filter(r => r.querySelector('td') && /\d/.test(text(r))).map(r => [...r.children].filter(c => /^(TD|TH)$/.test(c.tagName)).map(text));
 const forms = d => [...d.querySelectorAll('[data-growth-form]')].map(n => ({ key: n.getAttribute('data-growth-form'), config: JSON.parse(n.querySelector('script[type="application/json"]').textContent) }));
 const webPages = d => {

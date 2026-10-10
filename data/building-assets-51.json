@@ -1,0 +1,404 @@
+{
+  "schemaVersion": 1,
+  "gameVersion": "2.6.200",
+  "languages": [
+    "ko",
+    "en",
+    "ja",
+    "ru",
+    "zh-tw",
+    "de"
+  ],
+  "assets": [
+    {
+      "slug": "power-plant",
+      "buildingId": "stronghold",
+      "names": {
+        "ko": "발전소",
+        "en": "Power Plant",
+        "ja": "発電所",
+        "ru": "Электростанция",
+        "zh-tw": "發電廠",
+        "de": "Das Kraftwerk"
+      },
+      "imageRole": "representative",
+      "stageLevel": null,
+      "catalog": {
+        "src": "/img/buildings/refined-51/power-plant-icon.webp",
+        "width": 240,
+        "height": 240,
+        "sha256": "e168ae6c119dbd1059a017167c32bf2a93820e3d8776210b2886d09acb91c3b1",
+        "bytes": 51570,
+        "previousSrc": "/img/buildings/power-plant.png"
+      },
+      "detail": {
+        "src": "/img/buildings/refined-51/power-plant-detail.webp",
+        "width": 780,
+        "height": 809,
+        "sha256": "9232695e7d4127745e0b88f00f9bf490b1479b1183c196784737a72b63dfaa5a",
+        "bytes": 273162,
+        "previousSrc": "/img/buildings/power-plant.png"
+      }
+    },
+    {
+      "slug": "comms-outpost",
+      "buildingId": "embassy",
+      "names": {
+        "ko": "연락소",
+        "en": "Comms Outpost",
+        "ja": "集会所",
+        "ru": "Станция связи",
+        "zh-tw": "聯絡站",
+        "de": "Außenposten"
+      },
+      "imageRole": "representative",
+      "stageLevel": null,
+      "catalog": {
+        "src": "/img/buildings/refined-51/comms-outpost-icon.webp",
+        "width": 240,
+        "height": 240,
+        "sha256": "b12cc9500a350b8b0ab73cd947fbab997622f1434c2de45b243717977aa4f71b",
+        "bytes": 51534,
+        "previousSrc": "/img/buildings/comms-outpost.png"
+      },
+      "detail": {
+        "src": "/img/buildings/comms-outpost.webp",
+        "width": 416,
+        "height": 424,
+        "sha256": "dfdbba59439bc24364db9e2de947b2303fe936af6c2a86e6b5b6fe2dd919ccb1",
+        "bytes": 117877,
+        "previousSrc": "/img/buildings/comms-outpost.webp"
+      }
+    },
+    {
+      "slug": "barracks",
+      "buildingId": "barracks",
+      "names": {
+        "ko": "1호 병영",
+        "en": "Barracks 1",
+        "ja": "兵舎1",
+        "ru": "Казарма 1",
+        "zh-tw": "1號兵營",
+        "de": "Kaserne 1"
+      },
+      "imageRole": "representative",
+      "stageLevel": null,
+      "catalog": {
+        "src": "/img/buildings/refined-51/barracks-icon.webp",
+        "width": 240,
+        "height": 240,
+        "sha256": "119c51d7f92b88e382fce270f9a35475002618e601680b8f82693ffb99d685b0",
+        "bytes": 47990,
+        "previousSrc": "/img/buildings/barracks.png"
+      },
+      "detail": {
+        "src": "/img/buildings/refined-51/barracks-detail.webp",
+        "width": 412,
+        "height": 455,
+        "sha256": "94f8aff445bc8a8500cd44c6e4b233f5f5ee2d5f6139330e9074bca1aa97ddb2",
+        "bytes": 92748,
+        "previousSrc": "/img/buildings/barracks.png"
+      }
+    },
+    {
+      "slug": "lab",
+      "buildingId": "university",
+      "names": {
+        "ko": "1번 실험실",
+        "en": "Lab 1",
+        "ja": "実験室1",
+        "ru": "Лаборатория 1",
+        "zh-tw": "1號實驗室",
+        "de": "Labor 1"
+      },
+      "imageRole": "representative",
+      "stageLevel": null,
+      "catalog": {
+        "src": "/img/buildings/refined-51/lab-icon.webp",
+        "width": 240,
+        "height": 240,
+        "sha256": "a7c9a9e7eb609458fbd273c80a12ce40ab41dee40f8dc81834041088fbebf6fd",
+        "bytes": 47224,
+        "previousSrc": "/img/buildings/lab.png"
+      },
+      "detail": {
+        "src": "/img/buildings/lab-cover.webp",
+        "width": 432,
+        "height": 508,
+        "sha256": "67c6d2f1175d6b4464b01e5c1d8b0c62aac4910c602a3d01e8bfd01d785d8494",
+        "bytes": 149259,
+        "previousSrc": "/img/buildings/lab-cover.webp"
+      }
+    },
+    {
+      "slug": "hospital",
+      "buildingId": "hospital",
+      "names": {
+        "ko": "병원",
+        "en": "Hospital",
+        "ja": "病院",
+        "ru": "Госпиталь",
+        "zh-tw": "醫院",
+        "de": "Krankenhaus"
+      },
+      "imageRole": "representative",
+      "stageLevel": null,
+      "catalog": {
+        "src": "/img/buildings/refined-51/hospital-icon.webp",
+        "width": 240,
+        "height": 240,
+        "sha256": "780aa89dd43f631a5c757807e1ac815533814da3e956c11c626a9e7b2ad672eb",
+        "bytes": 52398,
+        "previousSrc": "/img/buildings/hospital.png"
+      },
+      "detail": {
+        "src": "/img/buildings/refined-51/hospital-detail.webp",
+        "width": 406,
+        "height": 430,
+        "sha256": "149cdde642f29aa8b8050e33f88c0ddcb58beacefd068a1f5247d71e2e96b83e",
+        "bytes": 86532,
+        "previousSrc": "/img/buildings/hospital.png"
+      }
+    },
+    {
+      "slug": "enlistment-office",
+      "buildingId": "conscription",
+      "names": {
+        "ko": "모병소",
+        "en": "Enlistment Office",
+        "ja": "入隊事務所",
+        "ru": "Призывной пункт",
+        "zh-tw": "募兵處",
+        "de": "Musterungsbüro"
+      },
+      "imageRole": "representative",
+      "stageLevel": null,
+      "catalog": {
+        "src": "/img/buildings/refined-51/enlistment-office-icon.webp",
+        "width": 240,
+        "height": 240,
+        "sha256": "7da10538292be5c03dac92c894b9593435c31cb65db060c0917b88fcefbca662",
+        "bytes": 47214,
+        "previousSrc": "/img/buildings/enlistment-office.png"
+      },
+      "detail": {
+        "src": "/img/buildings/refined-51/enlistment-office-detail.webp",
+        "width": 392,
+        "height": 416,
+        "sha256": "7153bb6e3bbece4aa32a4a9d96e4d02c5f66c936305d5a79e6c5fbbf8d37d080",
+        "bytes": 73478,
+        "previousSrc": "/img/buildings/enlistment-office.png"
+      }
+    },
+    {
+      "slug": "garrison-station",
+      "buildingId": "garrison",
+      "names": {
+        "ko": "주둔소",
+        "en": "Garrison",
+        "ja": "駐屯所",
+        "ru": "Гарнизон",
+        "zh-tw": "駐兵所",
+        "de": "Garnison"
+      },
+      "imageRole": "representative",
+      "stageLevel": null,
+      "catalog": {
+        "src": "/img/buildings/refined-51/garrison-station-icon.webp",
+        "width": 240,
+        "height": 240,
+        "sha256": "f72c2f9d20804ca7873d2b4f987cca6a3e84a7d71762f269b4d91927ec8704e5",
+        "bytes": 38596,
+        "previousSrc": "/img/buildings/garrison.png"
+      },
+      "detail": {
+        "src": "/img/buildings/refined-51/garrison-station-detail.webp",
+        "width": 550,
+        "height": 516,
+        "sha256": "59601a7cb51a252681dbca14ce6b425a1da578d24cc37b7447607fd3e11ca1b8",
+        "bytes": 87316,
+        "previousSrc": "/img/buildings/garrison-station.png"
+      }
+    },
+    {
+      "slug": "hero-academy",
+      "buildingId": "hero_skill_book",
+      "names": {
+        "ko": "영웅 아카데미",
+        "en": "Hero Academy",
+        "ja": "英雄学院",
+        "ru": "Академия героев",
+        "zh-tw": "英雄學院",
+        "de": "Heldenakademie"
+      },
+      "imageRole": "representative",
+      "stageLevel": null,
+      "catalog": {
+        "src": "/img/buildings/refined-51/hero-academy-icon.webp",
+        "width": 240,
+        "height": 240,
+        "sha256": "9196d165ae128658b14b08a1e604e931ae23da796a031dfe22b1c01c29948c5a",
+        "bytes": 48710,
+        "previousSrc": "/img/buildings/hero-academy.png"
+      },
+      "detail": {
+        "src": "/img/buildings/refined-51/hero-academy-detail.webp",
+        "width": 364,
+        "height": 413,
+        "sha256": "e4261ef9d32fa9540fcf376f1befa38de6f8ae91c42374b9024f494ef5c9be23",
+        "bytes": 70648,
+        "previousSrc": "/img/buildings/hero-academy.png"
+      }
+    },
+    {
+      "slug": "warbringer-monument",
+      "buildingId": "hero_buff_attack",
+      "names": {
+        "ko": "전장의 신 기념비",
+        "en": "Warbringer",
+        "ja": "戦神の記念碑",
+        "ru": "Вестник войны",
+        "zh-tw": "戰神紀念碑",
+        "de": "Kriegsbringer"
+      },
+      "imageRole": "representative",
+      "stageLevel": null,
+      "catalog": {
+        "src": "/img/buildings/refined-51/warbringer-monument-icon.webp",
+        "width": 240,
+        "height": 240,
+        "sha256": "144a3c917e43a66bcee66fd4464975f213cc39ff8a8d4c51d083592b6a353b84",
+        "bytes": 47776,
+        "previousSrc": "/img/buildings/warbringer-monument.png"
+      },
+      "detail": {
+        "src": "/img/buildings/warbringer-monument.webp",
+        "width": 260,
+        "height": 303,
+        "sha256": "6c7ed310a2d0b346045cc5b40c1e966c8aaaa8b189960abc47412e8241416927",
+        "bytes": 50623,
+        "previousSrc": "/img/buildings/warbringer-monument.webp"
+      }
+    },
+    {
+      "slug": "guardian-of-life-monument",
+      "buildingId": "hero_buff_hp",
+      "names": {
+        "ko": "생명의 용사비",
+        "en": "Guardian of Life",
+        "ja": "勇士の記念碑",
+        "ru": "Хранитель жизни",
+        "zh-tw": "生命勇士碑",
+        "de": "Wächter des Lebens"
+      },
+      "imageRole": "representative",
+      "stageLevel": null,
+      "catalog": {
+        "src": "/img/buildings/refined-51/guardian-of-life-monument-icon.webp",
+        "width": 240,
+        "height": 240,
+        "sha256": "e3c096bf21e52e4c65c9f474e26945d96e9033bd975f9f5cd3a8814134a6825a",
+        "bytes": 50882,
+        "previousSrc": "/img/buildings/guardian-of-life-monument.png"
+      },
+      "detail": {
+        "src": "/img/buildings/guardian-of-life-monument.webp",
+        "width": 260,
+        "height": 303,
+        "sha256": "135e2213ae284fac96dada6a55a55b19577659440b069921b58612ca8a2a3a13",
+        "bytes": 53998,
+        "previousSrc": "/img/buildings/guardian-of-life-monument.webp"
+      }
+    },
+    {
+      "slug": "aegis-monument",
+      "buildingId": "hero_buff_defence",
+      "names": {
+        "ko": "이지스 수호비",
+        "en": "Golden Aegis",
+        "ja": "神盾の記念碑",
+        "ru": "Золотая защита",
+        "zh-tw": "神盾守護碑",
+        "de": "Goldene Ägis"
+      },
+      "imageRole": "representative",
+      "stageLevel": null,
+      "catalog": {
+        "src": "/img/buildings/refined-51/aegis-monument-icon.webp",
+        "width": 240,
+        "height": 240,
+        "sha256": "0274e8b692f91a65ce29c15769ea43f2ca38c96199ff5cd4be8ce9e9cb941e5f",
+        "bytes": 47168,
+        "previousSrc": "/img/buildings/aegis-monument.png"
+      },
+      "detail": {
+        "src": "/img/buildings/aegis-monument.webp",
+        "width": 260,
+        "height": 303,
+        "sha256": "62d97e225a549832fcba5ab018f1c9f5608d5620fda965de22ed2c1b7e0c610e",
+        "bytes": 49125,
+        "previousSrc": "/img/buildings/aegis-monument.webp"
+      }
+    },
+    {
+      "slug": "blessed-healing-stele",
+      "buildingId": "pvp_buff_wounded",
+      "names": {
+        "ko": "축복받은 치유 비석",
+        "en": "Blessed Healing Stele",
+        "ja": "加護治療の碑",
+        "ru": "Стела благословенного исцеления",
+        "zh-tw": "庇佑療傷碑",
+        "de": "Stele des heilenden Segens"
+      },
+      "imageRole": "representative",
+      "stageLevel": null,
+      "catalog": {
+        "src": "/img/buildings/refined-51/blessed-healing-stele-icon.webp",
+        "width": 240,
+        "height": 240,
+        "sha256": "8aa0cf50eb348372eca038749b973a1d90d320c8b69c14f255b764533f9a4b14",
+        "bytes": 46060,
+        "previousSrc": "/img/buildings/blessed-healing-stele.png"
+      },
+      "detail": {
+        "src": "/img/buildings/refined-51/blessed-healing-stele-detail.webp",
+        "width": 255,
+        "height": 349,
+        "sha256": "81c1f4d1d69df6b3f82b25c81f9981dd5acd34377e6ba58661f6809bec123f0c",
+        "bytes": 37294,
+        "previousSrc": "/img/buildings/blessed-healing-stele.png"
+      }
+    },
+    {
+      "slug": "cursed-wound-stele",
+      "buildingId": "pvp_debuff_wounded",
+      "names": {
+        "ko": "저주받은 상처 비석",
+        "en": "Cursed Wound Stele",
+        "ja": "呪詛重傷の碑",
+        "ru": "Стела проклятой раны",
+        "zh-tw": "詛咒重傷碑",
+        "de": "Stele der verfluchten Wunde"
+      },
+      "imageRole": "representative",
+      "stageLevel": null,
+      "catalog": {
+        "src": "/img/buildings/refined-51/cursed-wound-stele-icon.webp",
+        "width": 240,
+        "height": 240,
+        "sha256": "2dd21647938fc5366434eb7e9bf616837bd8300238d4247768167f04c3158cf0",
+        "bytes": 46088,
+        "previousSrc": "/img/buildings/cursed-wound-stele.png"
+      },
+      "detail": {
+        "src": "/img/buildings/refined-51/cursed-wound-stele-detail.webp",
+        "width": 255,
+        "height": 349,
+        "sha256": "0273a4c1d97c1c0a30476aac0205202bafb67aa48e7629d16e3e0095a7b714bb",
+        "bytes": 34584,
+        "previousSrc": "/img/buildings/cursed-wound-stele.png"
+      }
+    }
+  ]
+}

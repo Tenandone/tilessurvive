@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-10T11:31:51.258Z",
-  "itemCount": 2377,
+  "generatedAt": "2026-10-10T11:58:56.997Z",
+  "itemCount": 2515,
   "items": [
     {
       "language": "de",
@@ -705,6 +705,13 @@
     {
       "language": "de",
       "type": "database",
+      "title": "EP der Verbesserungsmaterialien",
+      "description": "Für Stufe 1→80 werden 1.585.500 EXP benötigt. Blaue, violette und goldene Ausrüstungsschrottteile liefern 100, 400 bzw. 2.000 EXP. Gib ihren in EXP umgerechneten Wert als vorhandene Menge ein. Diese Tabelle gilt nicht für andere Aufwertungssysteme.",
+      "url": "/de/database/gear-exp/#gear-material-exp-51"
+    },
+    {
+      "language": "de",
+      "type": "database",
       "title": "Episches Heldenfragment에픽 영웅 조각",
       "description": "Angezeigte Preise vom 09.10.2026, Version 2.6.200. Prüfe aktuelle Preise und Verfügbarkeit im Spiel.",
       "url": "/de/database/items/#epic-hero-fragment"
@@ -1009,6 +1016,20 @@
       "title": "Granatenblitz",
       "description": "Sarge feuert eine Granate ab, die beim Aufprall explodiert und Schaden in Höhe von 804,11% des Angriffswerts verursacht.",
       "url": "/de/heroes/sarge/#character-skill-0-1"
+    },
+    {
+      "language": "de",
+      "type": "building",
+      "title": "Grundeffekte nach Stufe",
+      "description": "Spielversion 2.6.200 · Grundeffekte dieses Gebäudes ohne zusätzliche Boni durch Forschung, Helden, Saison oder andere Quellen.",
+      "url": "/de/buildings/comms-outpost/#building-effects-51"
+    },
+    {
+      "language": "de",
+      "type": "building",
+      "title": "Grundeffekte nach Stufe",
+      "description": "Spielversion 2.6.200 · Grundeffekte dieses Gebäudes ohne zusätzliche Boni durch Forschung, Helden, Saison oder andere Quellen.",
+      "url": "/de/buildings/lab/#building-effects-51"
     },
     {
       "language": "de",
@@ -1359,6 +1380,146 @@
       "title": "Maddie · Fähigkeiten, Werte & Wachstum | TilesSurvive.net",
       "description": "Detaillierte Heldenseite für Maddie in Tiles Survive. Diese Seite behandelt Heldengeschichte, Kampfeigenschaften, Höchststufe und Sternwerte, Sternbonus, Fähigkeiten und exklusive Waffe für diesen SSR-Helden.",
       "url": "/de/heroes/maddy/"
+    },
+    {
+      "language": "de",
+      "type": "database",
+      "title": "Materialien für exklusive Ausrüstung",
+      "description": "Spielversion 2.6.200 · Benötigte Fragmente zum Erreichen der jeweiligen Zielstufe. Die erste Aktivierung wird getrennt von Aufwertungen nach Stufe 1 angezeigt. Verfügbare Stufen hängen von der Freischaltung der Ausrüstung ab.",
+      "url": "/de/database/exclusive-gear/#gear-materials-51"
+    },
+    {
+      "language": "de",
+      "type": "heroe",
+      "title": "Materialien für exklusive Ausrüstung",
+      "description": "Horizontjäger · Aufwertungsmaterial: Horizon Hunter (Fragment)",
+      "url": "/de/heroes/beka/#gear-costs-51"
+    },
+    {
+      "language": "de",
+      "type": "heroe",
+      "title": "Materialien für exklusive Ausrüstung",
+      "description": "Schnellfeuer-Wasserpistole · Aufwertungsmaterial: Ripple (Fragment)",
+      "url": "/de/heroes/candy/#gear-costs-51"
+    },
+    {
+      "language": "de",
+      "type": "heroe",
+      "title": "Materialien für exklusive Ausrüstung",
+      "description": "Hochdruckreiniger · Aufwertungsmaterial: Hochdruckreiniger (Fragment)",
+      "url": "/de/heroes/dave/#gear-costs-51"
+    },
+    {
+      "language": "de",
+      "type": "heroe",
+      "title": "Materialien für exklusive Ausrüstung",
+      "description": "Lachende Pistole · Aufwertungsmaterial: Lachende-Pistole-Fragment",
+      "url": "/de/heroes/jacob/#gear-costs-51"
+    },
+    {
+      "language": "de",
+      "type": "heroe",
+      "title": "Materialien für exklusive Ausrüstung",
+      "description": "Haibiss-Blaster · Aufwertungsmaterial: Haibiss-Blaster-Fragment",
+      "url": "/de/heroes/kiki/#gear-costs-51"
+    },
+    {
+      "language": "de",
+      "type": "heroe",
+      "title": "Materialien für exklusive Ausrüstung",
+      "description": "Götterdurchbohrer · Aufwertungsmaterial: Götterdurchbohrer-Fragment",
+      "url": "/de/heroes/kiron/#gear-costs-51"
+    },
+    {
+      "language": "de",
+      "type": "heroe",
+      "title": "Materialien für exklusive Ausrüstung",
+      "description": "Wasserklinge · Aufwertungsmaterial: Wasserklingen-Fragment",
+      "url": "/de/heroes/lagnar/#gear-costs-51"
+    },
+    {
+      "language": "de",
+      "type": "heroe",
+      "title": "Materialien für exklusive Ausrüstung",
+      "description": "Peitsche der Wiederbelebung · Aufwertungsmaterial: Fragmente: Peitsche der Wiederbelebung",
+      "url": "/de/heroes/laila/#gear-costs-51"
+    },
+    {
+      "language": "de",
+      "type": "heroe",
+      "title": "Materialien für exklusive Ausrüstung",
+      "description": "Sturmbrecher · Aufwertungsmaterial: Sturmbrecher-Fragment",
+      "url": "/de/heroes/light/#gear-costs-51"
+    },
+    {
+      "language": "de",
+      "type": "heroe",
+      "title": "Materialien für exklusive Ausrüstung",
+      "description": "Sturm-Armbrust · Aufwertungsmaterial: Sturm-Armbrust-Fragmente",
+      "url": "/de/heroes/maddy/#gear-costs-51"
+    },
+    {
+      "language": "de",
+      "type": "heroe",
+      "title": "Materialien für exklusive Ausrüstung",
+      "description": "Donner-Aegis · Aufwertungsmaterial: Donner-Aegis-Fragment",
+      "url": "/de/heroes/mike/#gear-costs-51"
+    },
+    {
+      "language": "de",
+      "type": "heroe",
+      "title": "Materialien für exklusive Ausrüstung",
+      "description": "Voltsturm · Aufwertungsmaterial: Voltsturm (Fragment)",
+      "url": "/de/heroes/nikola/#gear-costs-51"
+    },
+    {
+      "language": "de",
+      "type": "heroe",
+      "title": "Materialien für exklusive Ausrüstung",
+      "description": "Obsidian-Granate · Aufwertungsmaterial: Obsidian-Granate-Fragmente",
+      "url": "/de/heroes/ray/#gear-costs-51"
+    },
+    {
+      "language": "de",
+      "type": "heroe",
+      "title": "Materialien für exklusive Ausrüstung",
+      "description": "Apokalypse-Gitarre · Aufwertungsmaterial: Apokalypse-Gitarre-Fragmente",
+      "url": "/de/heroes/rosie/#gear-costs-51"
+    },
+    {
+      "language": "de",
+      "type": "heroe",
+      "title": "Materialien für exklusive Ausrüstung",
+      "description": "Abgrundanker · Aufwertungsmaterial: Abgrundanker-Fragment",
+      "url": "/de/heroes/shark/#gear-costs-51"
+    },
+    {
+      "language": "de",
+      "type": "heroe",
+      "title": "Materialien für exklusive Ausrüstung",
+      "description": "Fenris-Hammer · Aufwertungsmaterial: Fenris-Hammer-Fragment",
+      "url": "/de/heroes/tara/#gear-costs-51"
+    },
+    {
+      "language": "de",
+      "type": "heroe",
+      "title": "Materialien für exklusive Ausrüstung",
+      "description": "Donnerfaust · Aufwertungsmaterial: Donnerfaust-Fragment",
+      "url": "/de/heroes/tazan/#gear-costs-51"
+    },
+    {
+      "language": "de",
+      "type": "heroe",
+      "title": "Materialien für exklusive Ausrüstung",
+      "description": "Sternenfeuer · Aufwertungsmaterial: Sternenfeuer (Fragment)",
+      "url": "/de/heroes/tony/#gear-costs-51"
+    },
+    {
+      "language": "de",
+      "type": "heroe",
+      "title": "Materialien für exklusive Ausrüstung",
+      "description": "Stimme des Ozeans · Aufwertungsmaterial: Stimme des Ozeans (Fragment)",
+      "url": "/de/heroes/undine/#gear-costs-51"
     },
     {
       "language": "de",
@@ -2839,6 +3000,20 @@
     },
     {
       "language": "en",
+      "type": "building",
+      "title": "Base effects by level",
+      "description": "Game 2.6.200 · Base effects of this building, excluding research, hero, season and other bonuses.",
+      "url": "/en/buildings/comms-outpost/#building-effects-51"
+    },
+    {
+      "language": "en",
+      "type": "building",
+      "title": "Base effects by level",
+      "description": "Game 2.6.200 · Base effects of this building, excluding research, hero, season and other bonuses.",
+      "url": "/en/buildings/lab/#building-effects-51"
+    },
+    {
+      "language": "en",
       "type": "heroe",
       "title": "Becca · Exclusive gear level comparison",
       "description": "Horizon Hunter · Gale Edge · Primary effects at Lv.1–15",
@@ -3495,9 +3670,156 @@
     {
       "language": "en",
       "type": "database",
+      "title": "Exclusive gear upgrade materials",
+      "description": "Game 2.6.200 · Fragments required to reach each destination level. Initial activation is separate from upgrades after Lv.1. Available levels depend on gear unlock progress.",
+      "url": "/en/database/exclusive-gear/#gear-materials-51"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
+      "title": "Exclusive gear upgrade materials",
+      "description": "Horizon Hunter · Upgrade material: Horizon Hunter (Fragment)",
+      "url": "/en/heroes/beka/#gear-costs-51"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
+      "title": "Exclusive gear upgrade materials",
+      "description": "Ripple · Upgrade material: Ripple (Fragment)",
+      "url": "/en/heroes/candy/#gear-costs-51"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
+      "title": "Exclusive gear upgrade materials",
+      "description": "Pressure Washer · Upgrade material: Pressure Washer (Fragment)",
+      "url": "/en/heroes/dave/#gear-costs-51"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
+      "title": "Exclusive gear upgrade materials",
+      "description": "Laughing Madgun · Upgrade material: Laughing Madgun Fragment",
+      "url": "/en/heroes/jacob/#gear-costs-51"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
+      "title": "Exclusive gear upgrade materials",
+      "description": "Sharkbite Blaster · Upgrade material: Sharkbite Blaster Fragment",
+      "url": "/en/heroes/kiki/#gear-costs-51"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
+      "title": "Exclusive gear upgrade materials",
+      "description": "Godpiercer · Upgrade material: Godpiercer Fragment",
+      "url": "/en/heroes/kiron/#gear-costs-51"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
+      "title": "Exclusive gear upgrade materials",
+      "description": "Water Blade · Upgrade material: Water Blade Fragment",
+      "url": "/en/heroes/lagnar/#gear-costs-51"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
+      "title": "Exclusive gear upgrade materials",
+      "description": "Whip of Revival · Upgrade material: Whip of Revival Fragments",
+      "url": "/en/heroes/laila/#gear-costs-51"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
+      "title": "Exclusive gear upgrade materials",
+      "description": "Stormpiercer · Upgrade material: Stormpiercer Fragment",
+      "url": "/en/heroes/light/#gear-costs-51"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
+      "title": "Exclusive gear upgrade materials",
+      "description": "Tempest Crossbow · Upgrade material: Tempest Crossbow Fragments",
+      "url": "/en/heroes/maddy/#gear-costs-51"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
+      "title": "Exclusive gear upgrade materials",
+      "description": "Aegis of Thunder · Upgrade material: Aegis of Thunder Fragment",
+      "url": "/en/heroes/mike/#gear-costs-51"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
+      "title": "Exclusive gear upgrade materials",
+      "description": "Voltstorm · Upgrade material: Voltstorm (Fragment)",
+      "url": "/en/heroes/nikola/#gear-costs-51"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
+      "title": "Exclusive gear upgrade materials",
+      "description": "Obsidian Grenade · Upgrade material: Obsidian Grenade Fragments",
+      "url": "/en/heroes/ray/#gear-costs-51"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
+      "title": "Exclusive gear upgrade materials",
+      "description": "Apocalypse Guitar · Upgrade material: Apocalypse Guitar Fragments",
+      "url": "/en/heroes/rosie/#gear-costs-51"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
+      "title": "Exclusive gear upgrade materials",
+      "description": "Abyssal Anchor · Upgrade material: Abyssal Anchor Fragment",
+      "url": "/en/heroes/shark/#gear-costs-51"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
+      "title": "Exclusive gear upgrade materials",
+      "description": "Fenrir Hammer · Upgrade material: Fenrir Hammer Fragment",
+      "url": "/en/heroes/tara/#gear-costs-51"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
+      "title": "Exclusive gear upgrade materials",
+      "description": "Thunderfist · Upgrade material: Thunderfist Fragment",
+      "url": "/en/heroes/tazan/#gear-costs-51"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
+      "title": "Exclusive gear upgrade materials",
+      "description": "Starfire · Upgrade material: Starfire (Fragment)",
+      "url": "/en/heroes/tony/#gear-costs-51"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
+      "title": "Exclusive gear upgrade materials",
+      "description": "Ocean Vox · Upgrade material: Ocean Vox (Fragment)",
+      "url": "/en/heroes/undine/#gear-costs-51"
+    },
+    {
+      "language": "en",
+      "type": "database",
       "title": "Exclusive Gear Upgrade Table | Tiles Survive Database | TilesSurvive.net",
       "description": "This is the Tiles Survive Exclusive Gear Upgrade Table. It organizes exclusive gear level-up costs and the final total required amount.",
       "url": "/en/database/exclusive-gear/"
+    },
+    {
+      "language": "en",
+      "type": "database",
+      "title": "EXP by enhancement material",
+      "description": "Level 1→80 requires 1,585,500 EXP. Blue, purple and gold scraps give 100, 400 and 2,000 EXP. Enter your converted EXP as the owned amount. This table does not cover other upgrade systems.",
+      "url": "/en/database/gear-exp/#gear-material-exp-51"
     },
     {
       "language": "en",
@@ -6820,6 +7142,146 @@
     {
       "language": "ja",
       "type": "database",
+      "title": "専用装備の強化素材",
+      "description": "ゲーム2.6.200。各目標レベルに到達するために必要な欠片数です。初回の有効化とLv.1以降の強化を分けて表示します。使用できるレベルは装備の解放状況によって異なります。",
+      "url": "/ja/database/exclusive-gear/#gear-materials-51"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
+      "title": "専用装備の強化素材",
+      "description": "ホライゾンアロー · 強化素材: ホライゾンアロー（欠片）",
+      "url": "/ja/heroes/beka/#gear-costs-51"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
+      "title": "専用装備の強化素材",
+      "description": "リプル · 強化素材: リプル（欠片）",
+      "url": "/ja/heroes/candy/#gear-costs-51"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
+      "title": "専用装備の強化素材",
+      "description": "高圧水銃 · 強化素材: 高圧水銃（欠片）",
+      "url": "/ja/heroes/dave/#gear-costs-51"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
+      "title": "専用装備の強化素材",
+      "description": "笑うマッドガン · 強化素材: 笑うマッドガン（欠片）",
+      "url": "/ja/heroes/jacob/#gear-costs-51"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
+      "title": "専用装備の強化素材",
+      "description": "シャークキャノン · 強化素材: シャークキャノンの欠片",
+      "url": "/ja/heroes/kiki/#gear-costs-51"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
+      "title": "専用装備の強化素材",
+      "description": "神の長弓 · 強化素材: 神の長弓（欠片）",
+      "url": "/ja/heroes/kiron/#gear-costs-51"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
+      "title": "専用装備の強化素材",
+      "description": "水の刃 · 強化素材: 水の刃の欠片",
+      "url": "/ja/heroes/lagnar/#gear-costs-51"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
+      "title": "専用装備の強化素材",
+      "description": "復活の鞭 · 強化素材: 復活の鞭の欠片",
+      "url": "/ja/heroes/laila/#gear-costs-51"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
+      "title": "専用装備の強化素材",
+      "description": "飛翔の拳銃 · 強化素材: 飛翔の拳銃（欠片）",
+      "url": "/ja/heroes/light/#gear-costs-51"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
+      "title": "専用装備の強化素材",
+      "description": "嵐の大弓 · 強化素材: 嵐の大弓の欠片",
+      "url": "/ja/heroes/maddy/#gear-costs-51"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
+      "title": "専用装備の強化素材",
+      "description": "雷霆の巨盾 · 強化素材: 雷霆の巨盾（欠片）",
+      "url": "/ja/heroes/mike/#gear-costs-51"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
+      "title": "専用装備の強化素材",
+      "description": "超電磁砲 · 強化素材: 超電磁砲（欠片）",
+      "url": "/ja/heroes/nikola/#gear-costs-51"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
+      "title": "専用装備の強化素材",
+      "description": "暗黒ランチャー · 強化素材: 暗黒ランチャーの欠片",
+      "url": "/ja/heroes/ray/#gear-costs-51"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
+      "title": "専用装備の強化素材",
+      "description": "終末ギター · 強化素材: 終末ギターの欠片",
+      "url": "/ja/heroes/rosie/#gear-costs-51"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
+      "title": "専用装備の強化素材",
+      "description": "メガアンカー · 強化素材: メガアンカーの欠片",
+      "url": "/ja/heroes/shark/#gear-costs-51"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
+      "title": "専用装備の強化素材",
+      "description": "狼の戦鎚 · 強化素材: 狼の戦鎚（欠片）",
+      "url": "/ja/heroes/tara/#gear-costs-51"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
+      "title": "専用装備の強化素材",
+      "description": "雷霆の鉄拳 · 強化素材: 雷霆の鉄拳（欠片）",
+      "url": "/ja/heroes/tarzan/#gear-costs-51"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
+      "title": "専用装備の強化素材",
+      "description": "閃光の射手 · 強化素材: 閃光の射手（欠片）",
+      "url": "/ja/heroes/tony/#gear-costs-51"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
+      "title": "専用装備の強化素材",
+      "description": "海洋のマイク · 強化素材: 海洋のマイク（欠片）",
+      "url": "/ja/heroes/undine/#gear-costs-51"
+    },
+    {
+      "language": "ja",
+      "type": "database",
       "title": "専用装備のステータス比較",
       "description": "レベルを選び、装備によるステータスと戦力の増加を比較できます。",
       "url": "/ja/database/exclusive-gear/#gear-stats-50"
@@ -6956,6 +7418,13 @@
       "title": "強化目的ごとに素材を分ける | TilesSurvive.net",
       "description": "通常装備・再鋳造・専用武器のコストを混同せず準備",
       "url": "/ja/guides/equipment-material-plan/"
+    },
+    {
+      "language": "ja",
+      "type": "database",
+      "title": "強化素材ごとのEXP",
+      "description": "1→80の必要経験値は1,585,500です。青・紫・金の素材は100・400・2,000 EXP。所持数には換算後の合計EXPを入力してください。他の強化システムとは合算しません。",
+      "url": "/ja/database/gear-exp/#gear-material-exp-51"
     },
     {
       "language": "ja",
@@ -8354,6 +8823,20 @@
     },
     {
       "language": "ja",
+      "type": "building",
+      "title": "レベル別の基本効果",
+      "description": "ゲーム2.6.200。建物自体の基本効果です。研究・ヒーロー・シーズンなどの追加ボーナスは含みません。",
+      "url": "/ja/buildings/comms-outpost/#building-effects-51"
+    },
+    {
+      "language": "ja",
+      "type": "building",
+      "title": "レベル別の基本効果",
+      "description": "ゲーム2.6.200。建物自体の基本効果です。研究・ヒーロー・シーズンなどの追加ボーナスは含みません。",
+      "url": "/ja/buildings/lab/#building-effects-51"
+    },
+    {
+      "language": "ja",
       "type": "heroe",
       "title": "ローズ · 専用装備レベル比較",
       "description": "終末ギター · 血涙の音符 · Lv.1–15の基本効果",
@@ -8493,6 +8976,13 @@
       "title": "강화 재료를 목적별로 나누기 | TilesSurvive.net",
       "description": "일반 장비·재련·전용 무기 비용을 혼동하지 않고 준비하기",
       "url": "/ko/guides/equipment-material-plan/"
+    },
+    {
+      "language": "ko",
+      "type": "database",
+      "title": "강화 재료별 경험치",
+      "description": "1→80레벨 경험치 합계는 1,585,500입니다. 파랑·보라·금색 스크랩은 각각 100·400·2,000 EXP입니다. 보유량에는 환산한 총 EXP를 입력하세요. 다른 강화 시스템의 비용과 합산하지 않습니다.",
+      "url": "/ko/database/gear-exp/#gear-material-exp-51"
     },
     {
       "language": "ko",
@@ -9045,6 +9535,20 @@
       "description": "타일서바이벌 영웅 럭키 상세 페이지입니다. 진급 영웅 기준으로 영웅 소개, 전투 특성, 최고 레벨 및 성급 속성, 성급 보너스, 스킬을 한눈에 정리했습니다.",
       "url": "/ko/heroes/lucky/",
       "aliases": "럭키 Lucky"
+    },
+    {
+      "language": "ko",
+      "type": "building",
+      "title": "레벨별 기본 효과",
+      "description": "게임 2.6.200 · 건물 자체의 기본 효과입니다. 연구·영웅·시즌 등 추가 보너스는 포함하지 않습니다.",
+      "url": "/ko/buildings/comms-outpost/#building-effects-51"
+    },
+    {
+      "language": "ko",
+      "type": "building",
+      "title": "레벨별 기본 효과",
+      "description": "게임 2.6.200 · 건물 자체의 기본 효과입니다. 연구·영웅·시즌 등 추가 보너스는 포함하지 않습니다.",
+      "url": "/ko/buildings/lab/#building-effects-51"
     },
     {
       "language": "ko",
@@ -10226,6 +10730,146 @@
     {
       "language": "ko",
       "type": "database",
+      "title": "전용 장비 강화 재료",
+      "description": "게임 2.6.200 · 각 목표 레벨에 도달할 때 필요한 조각 수입니다. 최초 활성화와 Lv.1 이후 강화를 구분합니다. 실제 사용 가능한 레벨은 장비 해금 상태에 따라 다릅니다.",
+      "url": "/ko/database/exclusive-gear/#gear-materials-51"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
+      "title": "전용 장비 강화 재료",
+      "description": "관통 저격총 · 강화 재료: 관통 저격총 조각",
+      "url": "/ko/heroes/beka/#gear-costs-51"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
+      "title": "전용 장비 강화 재료",
+      "description": "그림자 물총 · 강화 재료: 그림자 물총 조각",
+      "url": "/ko/heroes/candy/#gear-costs-51"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
+      "title": "전용 장비 강화 재료",
+      "description": "고압 호스 · 강화 재료: 고압 호스 조각",
+      "url": "/ko/heroes/dave/#gear-costs-51"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
+      "title": "전용 장비 강화 재료",
+      "description": "스마일링 매드건 · 강화 재료: 스마일링 매드건 조각",
+      "url": "/ko/heroes/jacob/#gear-costs-51"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
+      "title": "전용 장비 강화 재료",
+      "description": "샤크 레이저 캐논 · 강화 재료: 샤크 레이저 캐논 조각",
+      "url": "/ko/heroes/kiki/#gear-costs-51"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
+      "title": "전용 장비 강화 재료",
+      "description": "신이 내린 궁수 · 강화 재료: 신이 내린 궁수 조각",
+      "url": "/ko/heroes/kiron/#gear-costs-51"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
+      "title": "전용 장비 강화 재료",
+      "description": "물의 칼날 · 강화 재료: 물의 칼날 조각",
+      "url": "/ko/heroes/lagnar/#gear-costs-51"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
+      "title": "전용 장비 강화 재료",
+      "description": "부활의 채찍 · 강화 재료: 부활의 채찍 조각",
+      "url": "/ko/heroes/laila/#gear-costs-51"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
+      "title": "전용 장비 강화 재료",
+      "description": "클라우드 피어싱 · 강화 재료: 클라우드 피어싱 조각",
+      "url": "/ko/heroes/light/#gear-costs-51"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
+      "title": "전용 장비 강화 재료",
+      "description": "폭풍의 활 · 강화 재료: 폭풍의 활 조각",
+      "url": "/ko/heroes/maddy/#gear-costs-51"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
+      "title": "전용 장비 강화 재료",
+      "description": "썬더 실드 · 강화 재료: 썬더 실드 조각",
+      "url": "/ko/heroes/mike/#gear-costs-51"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
+      "title": "전용 장비 강화 재료",
+      "description": "초전자포 · 강화 재료: 초전자포 조각",
+      "url": "/ko/heroes/nikola/#gear-costs-51"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
+      "title": "전용 장비 강화 재료",
+      "description": "암흑 수류탄 · 강화 재료: 암흑 수류탄 조각",
+      "url": "/ko/heroes/ray/#gear-costs-51"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
+      "title": "전용 장비 강화 재료",
+      "description": "종말의 기타 · 강화 재료: 종말의 기타 조각",
+      "url": "/ko/heroes/rosie/#gear-costs-51"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
+      "title": "전용 장비 강화 재료",
+      "description": "심해의 닻 · 강화 재료: 심해의 닻 조각",
+      "url": "/ko/heroes/shark/#gear-costs-51"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
+      "title": "전용 장비 강화 재료",
+      "description": "펜리르 망치 · 강화 재료: 펜리르 망치 조각",
+      "url": "/ko/heroes/tara/#gear-costs-51"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
+      "title": "전용 장비 강화 재료",
+      "description": "썬더 피스트 · 강화 재료: 썬더 피스트 조각",
+      "url": "/ko/heroes/tarzan/#gear-costs-51"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
+      "title": "전용 장비 강화 재료",
+      "description": "스타 레이저총 · 강화 재료: 스타 레이저총 조각",
+      "url": "/ko/heroes/tony/#gear-costs-51"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
+      "title": "전용 장비 강화 재료",
+      "description": "바다의 음성 · 강화 재료: 바다의 음성 (조각)",
+      "url": "/ko/heroes/undine/#gear-costs-51"
+    },
+    {
+      "language": "ko",
+      "type": "database",
       "title": "전용 장비 능력치 비교",
       "description": "레벨을 선택해 장비가 더하는 능력치와 전투력 차이를 비교하세요.",
       "url": "/ko/database/exclusive-gear/#gear-stats-50"
@@ -11387,6 +12031,20 @@
     },
     {
       "language": "ru",
+      "type": "building",
+      "title": "Базовые эффекты по уровням",
+      "description": "Версия 2.6.200. Базовые эффекты здания без дополнительных бонусов исследований, героев, сезона и других источников.",
+      "url": "/ru/buildings/comms-outpost/#building-effects-51"
+    },
+    {
+      "language": "ru",
+      "type": "building",
+      "title": "Базовые эффекты по уровням",
+      "description": "Версия 2.6.200. Базовые эффекты здания без дополнительных бонусов исследований, героев, сезона и других источников.",
+      "url": "/ru/buildings/lab/#building-effects-51"
+    },
+    {
+      "language": "ru",
       "type": "database",
       "title": "Белек · Благословение океана",
       "description": "Lv.1 · Характеристики питомца увеличиваются на 5%.",
@@ -12449,6 +13107,146 @@
     },
     {
       "language": "ru",
+      "type": "database",
+      "title": "Материалы улучшения особого снаряжения",
+      "description": "Версия 2.6.200. Фрагменты, необходимые для достижения каждого целевого уровня. Первая активация указана отдельно от улучшений после ур.1. Доступные уровни зависят от прогресса разблокировки снаряжения.",
+      "url": "/ru/database/exclusive-gear/#gear-materials-51"
+    },
+    {
+      "language": "ru",
+      "type": "heroe",
+      "title": "Материалы улучшения особого снаряжения",
+      "description": "Охотник на горизонт · Материал улучшения: Охотник на горизонты (Фрагмент)",
+      "url": "/ru/heroes/beka/#gear-costs-51"
+    },
+    {
+      "language": "ru",
+      "type": "heroe",
+      "title": "Материалы улучшения особого снаряжения",
+      "description": "Волна · Материал улучшения: Риппл (Фрагмент)",
+      "url": "/ru/heroes/candy/#gear-costs-51"
+    },
+    {
+      "language": "ru",
+      "type": "heroe",
+      "title": "Материалы улучшения особого снаряжения",
+      "description": "Водяная пушка · Материал улучшения: Водяная пушка (фрагмент)",
+      "url": "/ru/heroes/dave/#gear-costs-51"
+    },
+    {
+      "language": "ru",
+      "type": "heroe",
+      "title": "Материалы улучшения особого снаряжения",
+      "description": "Психострел-хохотун · Материал улучшения: Психострел-хохотун (фрагмент)",
+      "url": "/ru/heroes/jacob/#gear-costs-51"
+    },
+    {
+      "language": "ru",
+      "type": "heroe",
+      "title": "Материалы улучшения особого снаряжения",
+      "description": "Акулья пушка · Материал улучшения: Фрагмент Акульей пушки",
+      "url": "/ru/heroes/kiki/#gear-costs-51"
+    },
+    {
+      "language": "ru",
+      "type": "heroe",
+      "title": "Материалы улучшения особого снаряжения",
+      "description": "Губитель богов · Материал улучшения: Губитель богов (фрагмент)",
+      "url": "/ru/heroes/kiron/#gear-costs-51"
+    },
+    {
+      "language": "ru",
+      "type": "heroe",
+      "title": "Материалы улучшения особого снаряжения",
+      "description": "Водный клинок · Материал улучшения: Водный клинок (фрагмент)",
+      "url": "/ru/heroes/lagnar/#gear-costs-51"
+    },
+    {
+      "language": "ru",
+      "type": "heroe",
+      "title": "Материалы улучшения особого снаряжения",
+      "description": "Кнут возрождения · Материал улучшения: Фрагменты Кнута возрождения",
+      "url": "/ru/heroes/laila/#gear-costs-51"
+    },
+    {
+      "language": "ru",
+      "type": "heroe",
+      "title": "Материалы улучшения особого снаряжения",
+      "description": "Бурепроходец · Материал улучшения: Бурепроходец (фрагмент)",
+      "url": "/ru/heroes/light/#gear-costs-51"
+    },
+    {
+      "language": "ru",
+      "type": "heroe",
+      "title": "Материалы улучшения особого снаряжения",
+      "description": "Грозовой арбалет · Материал улучшения: Фрагменты Грозового арбалета",
+      "url": "/ru/heroes/maddy/#gear-costs-51"
+    },
+    {
+      "language": "ru",
+      "type": "heroe",
+      "title": "Материалы улучшения особого снаряжения",
+      "description": "Громовой щит · Материал улучшения: Громовой щит (фрагмент)",
+      "url": "/ru/heroes/mike/#gear-costs-51"
+    },
+    {
+      "language": "ru",
+      "type": "heroe",
+      "title": "Материалы улучшения особого снаряжения",
+      "description": "Вольтшторм · Материал улучшения: Вольтшторм (Фрагмент)",
+      "url": "/ru/heroes/nikola/#gear-costs-51"
+    },
+    {
+      "language": "ru",
+      "type": "heroe",
+      "title": "Материалы улучшения особого снаряжения",
+      "description": "Обсидиановая граната · Материал улучшения: Фрагменты Обсидиановой гранаты",
+      "url": "/ru/heroes/ray/#gear-costs-51"
+    },
+    {
+      "language": "ru",
+      "type": "heroe",
+      "title": "Материалы улучшения особого снаряжения",
+      "description": "Гитара апокалипсиса · Материал улучшения: Фрагменты Гитары апокалипсиса",
+      "url": "/ru/heroes/rosie/#gear-costs-51"
+    },
+    {
+      "language": "ru",
+      "type": "heroe",
+      "title": "Материалы улучшения особого снаряжения",
+      "description": "Якорь бездны · Материал улучшения: Якорь бездны (фрагмент)",
+      "url": "/ru/heroes/shark/#gear-costs-51"
+    },
+    {
+      "language": "ru",
+      "type": "heroe",
+      "title": "Материалы улучшения особого снаряжения",
+      "description": "Молот Фенрира · Материал улучшения: Молот Фенрира (фрагмент)",
+      "url": "/ru/heroes/tara/#gear-costs-51"
+    },
+    {
+      "language": "ru",
+      "type": "heroe",
+      "title": "Материалы улучшения особого снаряжения",
+      "description": "Громовой кулак · Материал улучшения: Громовой кулак (фрагмент)",
+      "url": "/ru/heroes/tarzan/#gear-costs-51"
+    },
+    {
+      "language": "ru",
+      "type": "heroe",
+      "title": "Материалы улучшения особого снаряжения",
+      "description": "Звездный огонь · Материал улучшения: Звездный Огонь (Фрагмент)",
+      "url": "/ru/heroes/tony/#gear-costs-51"
+    },
+    {
+      "language": "ru",
+      "type": "heroe",
+      "title": "Материалы улучшения особого снаряжения",
+      "description": "Голос океана · Материал улучшения: Голос океана (фрагмент)",
+      "url": "/ru/heroes/undine/#gear-costs-51"
+    },
+    {
+      "language": "ru",
       "type": "heroe",
       "title": "Мегапранк",
       "description": "Снижает ATK всей вражеской команды на 2.78% и DEF всей вражеской команды на 2.78%.",
@@ -12654,6 +13452,13 @@
       "title": "Опыт героев | База данных Tiles Survive | TilesSurvive.net",
       "description": "Страница базы данных по опыту героев в Tiles Survive. Здесь собраны общий расход опыта героя с 1 по 150 уровень и ключевые моменты, на которые стоит обратить внимание при прокачке.",
       "url": "/ru/database/hero-exp/"
+    },
+    {
+      "language": "ru",
+      "type": "database",
+      "title": "Опыт от материалов улучшения",
+      "description": "Для 1→80 нужно 1 585 500 опыта. Синие, фиолетовые и золотые материалы дают 100, 400 и 2 000 опыта. Введите пересчитанный опыт в поле наличия. Стоимость других систем сюда не входит.",
+      "url": "/ru/database/gear-exp/#gear-material-exp-51"
     },
     {
       "language": "ru",
@@ -14136,6 +14941,20 @@
       "title": "5分鐘通用加速",
       "description": "5분 일반 가속 · 縮短所選佇列的倒數時間5分鐘。 · 道具取得途徑與用途",
       "url": "/zh-tw/database/items/#speedup-5m"
+    },
+    {
+      "language": "zh-tw",
+      "type": "building",
+      "title": "各等級基本效果",
+      "description": "遊戲2.6.200。建築本身的基本效果，不含研究、英雄、賽季等額外加成。",
+      "url": "/zh-tw/buildings/comms-outpost/#building-effects-51"
+    },
+    {
+      "language": "zh-tw",
+      "type": "building",
+      "title": "各等級基本效果",
+      "description": "遊戲2.6.200。建築本身的基本效果，不含研究、英雄、賽季等額外加成。",
+      "url": "/zh-tw/buildings/lab/#building-effects-51"
     },
     {
       "language": "zh-tw",
@@ -16235,6 +17054,146 @@
     },
     {
       "language": "zh-tw",
+      "type": "database",
+      "title": "專屬裝備強化材料",
+      "description": "遊戲2.6.200。各目標等級所需的碎片數；首次啟用與Lv.1之後的強化分開顯示。可使用的等級依裝備解鎖進度而定。",
+      "url": "/zh-tw/database/exclusive-gear/#gear-materials-51"
+    },
+    {
+      "language": "zh-tw",
+      "type": "heroe",
+      "title": "專屬裝備強化材料",
+      "description": "穿雲狙擊槍 · 強化材料: 穿雲狙擊槍碎片",
+      "url": "/zh-tw/heroes/beka/#gear-costs-51"
+    },
+    {
+      "language": "zh-tw",
+      "type": "heroe",
+      "title": "專屬裝備強化材料",
+      "description": "流影水彈槍 · 強化材料: 流影水彈槍碎片",
+      "url": "/zh-tw/heroes/candy/#gear-costs-51"
+    },
+    {
+      "language": "zh-tw",
+      "type": "heroe",
+      "title": "專屬裝備強化材料",
+      "description": "高壓水槍 · 強化材料: 高壓水槍碎片",
+      "url": "/zh-tw/heroes/dave/#gear-costs-51"
+    },
+    {
+      "language": "zh-tw",
+      "type": "heroe",
+      "title": "專屬裝備強化材料",
+      "description": "笑面狂槍 · 強化材料: 笑面狂槍碎片",
+      "url": "/zh-tw/heroes/jacob/#gear-costs-51"
+    },
+    {
+      "language": "zh-tw",
+      "type": "heroe",
+      "title": "專屬裝備強化材料",
+      "description": "魔鯊雷射砲 · 強化材料: 魔鯊雷射砲碎片",
+      "url": "/zh-tw/heroes/kiki/#gear-costs-51"
+    },
+    {
+      "language": "zh-tw",
+      "type": "heroe",
+      "title": "專屬裝備強化材料",
+      "description": "神鋒長弓 · 強化材料: 神鋒長弓碎片",
+      "url": "/zh-tw/heroes/kiron/#gear-costs-51"
+    },
+    {
+      "language": "zh-tw",
+      "type": "heroe",
+      "title": "專屬裝備強化材料",
+      "description": "水之刃 · 強化材料: 水之刃碎片",
+      "url": "/zh-tw/heroes/lagnar/#gear-costs-51"
+    },
+    {
+      "language": "zh-tw",
+      "type": "heroe",
+      "title": "專屬裝備強化材料",
+      "description": "復甦長鞭 · 強化材料: 復甦長鞭碎片",
+      "url": "/zh-tw/heroes/laila/#gear-costs-51"
+    },
+    {
+      "language": "zh-tw",
+      "type": "heroe",
+      "title": "專屬裝備強化材料",
+      "description": "飛雲手槍 · 強化材料: 飛雲手槍碎片",
+      "url": "/zh-tw/heroes/light/#gear-costs-51"
+    },
+    {
+      "language": "zh-tw",
+      "type": "heroe",
+      "title": "專屬裝備強化材料",
+      "description": "風暴狂弩 · 強化材料: 風暴狂弩碎片",
+      "url": "/zh-tw/heroes/maddy/#gear-costs-51"
+    },
+    {
+      "language": "zh-tw",
+      "type": "heroe",
+      "title": "專屬裝備強化材料",
+      "description": "雷霆巨盾 · 強化材料: 雷霆巨盾碎片",
+      "url": "/zh-tw/heroes/mike/#gear-costs-51"
+    },
+    {
+      "language": "zh-tw",
+      "type": "heroe",
+      "title": "專屬裝備強化材料",
+      "description": "超電磁砲 · 強化材料: 超電磁砲碎片",
+      "url": "/zh-tw/heroes/nikola/#gear-costs-51"
+    },
+    {
+      "language": "zh-tw",
+      "type": "heroe",
+      "title": "專屬裝備強化材料",
+      "description": "黑暗榴彈 · 強化材料: 黑暗榴彈碎片",
+      "url": "/zh-tw/heroes/ray/#gear-costs-51"
+    },
+    {
+      "language": "zh-tw",
+      "type": "heroe",
+      "title": "專屬裝備強化材料",
+      "description": "末日吉他 · 強化材料: 末日吉他碎片",
+      "url": "/zh-tw/heroes/rosie/#gear-costs-51"
+    },
+    {
+      "language": "zh-tw",
+      "type": "heroe",
+      "title": "專屬裝備強化材料",
+      "description": "深海巨錨 · 強化材料: 深海巨錨碎片",
+      "url": "/zh-tw/heroes/shark/#gear-costs-51"
+    },
+    {
+      "language": "zh-tw",
+      "type": "heroe",
+      "title": "專屬裝備強化材料",
+      "description": "天狼流星錘 · 強化材料: 天狼流星錘碎片",
+      "url": "/zh-tw/heroes/tara/#gear-costs-51"
+    },
+    {
+      "language": "zh-tw",
+      "type": "heroe",
+      "title": "專屬裝備強化材料",
+      "description": "雷霆鐵拳 · 強化材料: 雷霆鐵拳碎片",
+      "url": "/zh-tw/heroes/tarzan/#gear-costs-51"
+    },
+    {
+      "language": "zh-tw",
+      "type": "heroe",
+      "title": "專屬裝備強化材料",
+      "description": "星耀雷射槍 · 強化材料: 星耀雷射槍碎片",
+      "url": "/zh-tw/heroes/tony/#gear-costs-51"
+    },
+    {
+      "language": "zh-tw",
+      "type": "heroe",
+      "title": "專屬裝備強化材料",
+      "description": "海謠麥克 · 強化材料: 海謠麥克（碎片）",
+      "url": "/zh-tw/heroes/undine/#gear-costs-51"
+    },
+    {
+      "language": "zh-tw",
       "type": "heroe",
       "title": "電盾守護",
       "description": "展開電能護盾，持續 10 秒，可吸收相當於自身攻擊力 1,668% 的傷害。護盾持續期間，普攻造成的傷害提高 20%。",
@@ -16785,6 +17744,13 @@
       "title": "強運無敵",
       "description": "英雄追加效果提升 40%。",
       "url": "/zh-tw/heroes/lucky/#character-skill-0-3"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
+      "title": "強化材料經驗值",
+      "description": "1→80級共需1,585,500經驗。藍、紫、金色材料分別提供100、400、2,000 EXP。持有量請填入換算後的總EXP，不與其他強化系統混算。",
+      "url": "/zh-tw/database/gear-exp/#gear-material-exp-51"
     },
     {
       "language": "zh-tw",

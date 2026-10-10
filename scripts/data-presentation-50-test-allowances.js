@@ -7,6 +7,7 @@ const offerCopy={ko:['LootBar 할인 충전 가능 여부 확인','제휴 링크
 const runtime=new Set(['platform-i18n.js','layout.js','platform-affiliate.js','platform.js','platform-search.js','site-search.js','product-30.js','data-workbench-30.js','event-helper.js','tools-speedup-calculator.js','hero-skill-levels-40.js','sea-hero-growth-40.js','database-22.js','foundation-40.js','daily-missions-40.js','pet-growth-40.js']);
 function clean(s){return s.replace(/\s+/g,' ').trim();}
 function normalizeDocument(d,file=''){
+ require('./refinement-51-test-allowances').restore(d,file);
  require('./pet-skill-levels-test-allowances').restoreLegacyDocument(d,file);
  const canonical=d.querySelector('link[rel=canonical]')?.href,route=canonical?new URL(canonical).pathname:'/';
  const lang=(file.split('/')[0]||route.split('/')[1]||d.documentElement.lang).toLowerCase();

@@ -1,0 +1,2079 @@
+{
+  "schemaVersion": 1,
+  "gameVersion": "2.6.200",
+  "scope": "exclusive-gear-display-costs",
+  "costBasis": "destination-level",
+  "gears": [
+    {
+      "id": "beka",
+      "heroId": 25300041,
+      "name": {
+        "ko": "베카",
+        "en": "Becca",
+        "ja": "ベッキー",
+        "ru": "Бэкка",
+        "zh-tw": "貝卡",
+        "de": "Becca"
+      },
+      "gearId": 59600006,
+      "gearName": {
+        "ko": "관통 저격총",
+        "en": "Horizon Hunter",
+        "ja": "ホライゾンアロー",
+        "ru": "Охотник на горизонт",
+        "zh-tw": "穿雲狙擊槍",
+        "de": "Horizontjäger"
+      },
+      "material": {
+        "id": 208371,
+        "name": {
+          "ko": "관통 저격총 조각",
+          "en": "Horizon Hunter (Fragment)",
+          "ja": "ホライゾンアロー（欠片）",
+          "ru": "Охотник на горизонты (Фрагмент)",
+          "zh-tw": "穿雲狙擊槍碎片",
+          "de": "Horizon Hunter (Fragment)"
+        }
+      },
+      "costs": [
+        {
+          "fromLevel": 0,
+          "toLevel": 1,
+          "quantity": 10
+        },
+        {
+          "fromLevel": 1,
+          "toLevel": 2,
+          "quantity": 5
+        },
+        {
+          "fromLevel": 2,
+          "toLevel": 3,
+          "quantity": 10
+        },
+        {
+          "fromLevel": 3,
+          "toLevel": 4,
+          "quantity": 20
+        },
+        {
+          "fromLevel": 4,
+          "toLevel": 5,
+          "quantity": 25
+        },
+        {
+          "fromLevel": 5,
+          "toLevel": 6,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 6,
+          "toLevel": 7,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 7,
+          "toLevel": 8,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 8,
+          "toLevel": 9,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 9,
+          "toLevel": 10,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 10,
+          "toLevel": 11,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 11,
+          "toLevel": 12,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 12,
+          "toLevel": 13,
+          "quantity": 40
+        },
+        {
+          "fromLevel": 13,
+          "toLevel": 14,
+          "quantity": 40
+        },
+        {
+          "fromLevel": 14,
+          "toLevel": 15,
+          "quantity": 40
+        }
+      ]
+    },
+    {
+      "id": "candy",
+      "heroId": 25300038,
+      "name": {
+        "ko": "채의진",
+        "en": "Candy",
+        "ja": "イージェン",
+        "ru": "Кэнди",
+        "zh-tw": "蔡宜蓁",
+        "de": "Candy"
+      },
+      "gearId": 59600009,
+      "gearName": {
+        "ko": "그림자 물총",
+        "en": "Ripple",
+        "ja": "リプル",
+        "ru": "Волна",
+        "zh-tw": "流影水彈槍",
+        "de": "Schnellfeuer-Wasserpistole"
+      },
+      "material": {
+        "id": 208374,
+        "name": {
+          "ko": "그림자 물총 조각",
+          "en": "Ripple (Fragment)",
+          "ja": "リプル（欠片）",
+          "ru": "Риппл (Фрагмент)",
+          "zh-tw": "流影水彈槍碎片",
+          "de": "Ripple (Fragment)"
+        }
+      },
+      "costs": [
+        {
+          "fromLevel": 0,
+          "toLevel": 1,
+          "quantity": 10
+        },
+        {
+          "fromLevel": 1,
+          "toLevel": 2,
+          "quantity": 5
+        },
+        {
+          "fromLevel": 2,
+          "toLevel": 3,
+          "quantity": 10
+        },
+        {
+          "fromLevel": 3,
+          "toLevel": 4,
+          "quantity": 20
+        },
+        {
+          "fromLevel": 4,
+          "toLevel": 5,
+          "quantity": 25
+        },
+        {
+          "fromLevel": 5,
+          "toLevel": 6,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 6,
+          "toLevel": 7,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 7,
+          "toLevel": 8,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 8,
+          "toLevel": 9,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 9,
+          "toLevel": 10,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 10,
+          "toLevel": 11,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 11,
+          "toLevel": 12,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 12,
+          "toLevel": 13,
+          "quantity": 40
+        },
+        {
+          "fromLevel": 13,
+          "toLevel": 14,
+          "quantity": 40
+        },
+        {
+          "fromLevel": 14,
+          "toLevel": 15,
+          "quantity": 40
+        }
+      ]
+    },
+    {
+      "id": "jacob",
+      "heroId": 25300223,
+      "name": {
+        "ko": "제이콥",
+        "en": "Jacob",
+        "ja": "ヤーコブ",
+        "ru": "Джейкоб",
+        "zh-tw": "雅各",
+        "de": "Jacob"
+      },
+      "gearId": 59600014,
+      "gearName": {
+        "ko": "스마일링 매드건",
+        "en": "Laughing Madgun",
+        "ja": "笑うマッドガン",
+        "ru": "Психострел-хохотун",
+        "zh-tw": "笑面狂槍",
+        "de": "Lachende Pistole"
+      },
+      "material": {
+        "id": 208876,
+        "name": {
+          "ko": "스마일링 매드건 조각",
+          "en": "Laughing Madgun Fragment",
+          "ja": "笑うマッドガン（欠片）",
+          "ru": "Психострел-хохотун (фрагмент)",
+          "zh-tw": "笑面狂槍碎片",
+          "de": "Lachende-Pistole-Fragment"
+        }
+      },
+      "costs": [
+        {
+          "fromLevel": 0,
+          "toLevel": 1,
+          "quantity": 10
+        },
+        {
+          "fromLevel": 1,
+          "toLevel": 2,
+          "quantity": 5
+        },
+        {
+          "fromLevel": 2,
+          "toLevel": 3,
+          "quantity": 10
+        },
+        {
+          "fromLevel": 3,
+          "toLevel": 4,
+          "quantity": 20
+        },
+        {
+          "fromLevel": 4,
+          "toLevel": 5,
+          "quantity": 25
+        },
+        {
+          "fromLevel": 5,
+          "toLevel": 6,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 6,
+          "toLevel": 7,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 7,
+          "toLevel": 8,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 8,
+          "toLevel": 9,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 9,
+          "toLevel": 10,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 10,
+          "toLevel": 11,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 11,
+          "toLevel": 12,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 12,
+          "toLevel": 13,
+          "quantity": 40
+        },
+        {
+          "fromLevel": 13,
+          "toLevel": 14,
+          "quantity": 40
+        },
+        {
+          "fromLevel": 14,
+          "toLevel": 15,
+          "quantity": 40
+        }
+      ]
+    },
+    {
+      "id": "kiki",
+      "heroId": 25300221,
+      "name": {
+        "ko": "키키",
+        "en": "Kiki",
+        "ja": "キキ",
+        "ru": "Кики",
+        "zh-tw": "緹緹",
+        "de": "Kiki"
+      },
+      "gearId": 59600012,
+      "gearName": {
+        "ko": "샤크 레이저 캐논",
+        "en": "Sharkbite Blaster",
+        "ja": "シャークキャノン",
+        "ru": "Акулья пушка",
+        "zh-tw": "魔鯊雷射砲",
+        "de": "Haibiss-Blaster"
+      },
+      "material": {
+        "id": 208874,
+        "name": {
+          "ko": "샤크 레이저 캐논 조각",
+          "en": "Sharkbite Blaster Fragment",
+          "ja": "シャークキャノンの欠片",
+          "ru": "Фрагмент Акульей пушки",
+          "zh-tw": "魔鯊雷射砲碎片",
+          "de": "Haibiss-Blaster-Fragment"
+        }
+      },
+      "costs": [
+        {
+          "fromLevel": 0,
+          "toLevel": 1,
+          "quantity": 10
+        },
+        {
+          "fromLevel": 1,
+          "toLevel": 2,
+          "quantity": 5
+        },
+        {
+          "fromLevel": 2,
+          "toLevel": 3,
+          "quantity": 10
+        },
+        {
+          "fromLevel": 3,
+          "toLevel": 4,
+          "quantity": 20
+        },
+        {
+          "fromLevel": 4,
+          "toLevel": 5,
+          "quantity": 25
+        },
+        {
+          "fromLevel": 5,
+          "toLevel": 6,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 6,
+          "toLevel": 7,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 7,
+          "toLevel": 8,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 8,
+          "toLevel": 9,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 9,
+          "toLevel": 10,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 10,
+          "toLevel": 11,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 11,
+          "toLevel": 12,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 12,
+          "toLevel": 13,
+          "quantity": 40
+        },
+        {
+          "fromLevel": 13,
+          "toLevel": 14,
+          "quantity": 40
+        },
+        {
+          "fromLevel": 14,
+          "toLevel": 15,
+          "quantity": 40
+        }
+      ]
+    },
+    {
+      "id": "kiron",
+      "heroId": 25300225,
+      "name": {
+        "ko": "키론",
+        "en": "Chiron",
+        "ja": "カイロン",
+        "ru": "Хирон",
+        "zh-tw": "凱隆",
+        "de": "Chiron"
+      },
+      "gearId": 59600016,
+      "gearName": {
+        "ko": "신이 내린 궁수",
+        "en": "Godpiercer",
+        "ja": "神の長弓",
+        "ru": "Губитель богов",
+        "zh-tw": "神鋒長弓",
+        "de": "Götterdurchbohrer"
+      },
+      "material": {
+        "id": 208922,
+        "name": {
+          "ko": "신이 내린 궁수 조각",
+          "en": "Godpiercer Fragment",
+          "ja": "神の長弓（欠片）",
+          "ru": "Губитель богов (фрагмент)",
+          "zh-tw": "神鋒長弓碎片",
+          "de": "Götterdurchbohrer-Fragment"
+        }
+      },
+      "costs": [
+        {
+          "fromLevel": 0,
+          "toLevel": 1,
+          "quantity": 10
+        },
+        {
+          "fromLevel": 1,
+          "toLevel": 2,
+          "quantity": 5
+        },
+        {
+          "fromLevel": 2,
+          "toLevel": 3,
+          "quantity": 10
+        },
+        {
+          "fromLevel": 3,
+          "toLevel": 4,
+          "quantity": 20
+        },
+        {
+          "fromLevel": 4,
+          "toLevel": 5,
+          "quantity": 25
+        },
+        {
+          "fromLevel": 5,
+          "toLevel": 6,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 6,
+          "toLevel": 7,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 7,
+          "toLevel": 8,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 8,
+          "toLevel": 9,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 9,
+          "toLevel": 10,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 10,
+          "toLevel": 11,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 11,
+          "toLevel": 12,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 12,
+          "toLevel": 13,
+          "quantity": 40
+        },
+        {
+          "fromLevel": 13,
+          "toLevel": 14,
+          "quantity": 40
+        },
+        {
+          "fromLevel": 14,
+          "toLevel": 15,
+          "quantity": 40
+        }
+      ]
+    },
+    {
+      "id": "laila",
+      "heroId": 25300137,
+      "name": {
+        "ko": "라일라",
+        "en": "Layla",
+        "ja": "レイラ",
+        "ru": "Лайла",
+        "zh-tw": "萊拉",
+        "de": "Layla"
+      },
+      "gearId": 59600004,
+      "gearName": {
+        "ko": "부활의 채찍",
+        "en": "Whip of Revival",
+        "ja": "復活の鞭",
+        "ru": "Кнут возрождения",
+        "zh-tw": "復甦長鞭",
+        "de": "Peitsche der Wiederbelebung"
+      },
+      "material": {
+        "id": 208348,
+        "name": {
+          "ko": "부활의 채찍 조각",
+          "en": "Whip of Revival Fragments",
+          "ja": "復活の鞭の欠片",
+          "ru": "Фрагменты Кнута возрождения",
+          "zh-tw": "復甦長鞭碎片",
+          "de": "Fragmente: Peitsche der Wiederbelebung"
+        }
+      },
+      "costs": [
+        {
+          "fromLevel": 0,
+          "toLevel": 1,
+          "quantity": 10
+        },
+        {
+          "fromLevel": 1,
+          "toLevel": 2,
+          "quantity": 5
+        },
+        {
+          "fromLevel": 2,
+          "toLevel": 3,
+          "quantity": 10
+        },
+        {
+          "fromLevel": 3,
+          "toLevel": 4,
+          "quantity": 20
+        },
+        {
+          "fromLevel": 4,
+          "toLevel": 5,
+          "quantity": 25
+        },
+        {
+          "fromLevel": 5,
+          "toLevel": 6,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 6,
+          "toLevel": 7,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 7,
+          "toLevel": 8,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 8,
+          "toLevel": 9,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 9,
+          "toLevel": 10,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 10,
+          "toLevel": 11,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 11,
+          "toLevel": 12,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 12,
+          "toLevel": 13,
+          "quantity": 40
+        },
+        {
+          "fromLevel": 13,
+          "toLevel": 14,
+          "quantity": 40
+        },
+        {
+          "fromLevel": 14,
+          "toLevel": 15,
+          "quantity": 40
+        }
+      ]
+    },
+    {
+      "id": "light",
+      "heroId": 25300220,
+      "name": {
+        "ko": "라이트",
+        "en": "Wright",
+        "ja": "ライト",
+        "ru": "Райт",
+        "zh-tw": "萊特",
+        "de": "Wright"
+      },
+      "gearId": 59600011,
+      "gearName": {
+        "ko": "클라우드 피어싱",
+        "en": "Stormpiercer",
+        "ja": "飛翔の拳銃",
+        "ru": "Бурепроходец",
+        "zh-tw": "飛雲手槍",
+        "de": "Sturmbrecher"
+      },
+      "material": {
+        "id": 208873,
+        "name": {
+          "ko": "클라우드 피어싱 조각",
+          "en": "Stormpiercer Fragment",
+          "ja": "飛翔の拳銃（欠片）",
+          "ru": "Бурепроходец (фрагмент)",
+          "zh-tw": "飛雲手槍碎片",
+          "de": "Sturmbrecher-Fragment"
+        }
+      },
+      "costs": [
+        {
+          "fromLevel": 0,
+          "toLevel": 1,
+          "quantity": 10
+        },
+        {
+          "fromLevel": 1,
+          "toLevel": 2,
+          "quantity": 5
+        },
+        {
+          "fromLevel": 2,
+          "toLevel": 3,
+          "quantity": 10
+        },
+        {
+          "fromLevel": 3,
+          "toLevel": 4,
+          "quantity": 20
+        },
+        {
+          "fromLevel": 4,
+          "toLevel": 5,
+          "quantity": 25
+        },
+        {
+          "fromLevel": 5,
+          "toLevel": 6,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 6,
+          "toLevel": 7,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 7,
+          "toLevel": 8,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 8,
+          "toLevel": 9,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 9,
+          "toLevel": 10,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 10,
+          "toLevel": 11,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 11,
+          "toLevel": 12,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 12,
+          "toLevel": 13,
+          "quantity": 40
+        },
+        {
+          "fromLevel": 13,
+          "toLevel": 14,
+          "quantity": 40
+        },
+        {
+          "fromLevel": 14,
+          "toLevel": 15,
+          "quantity": 40
+        }
+      ]
+    },
+    {
+      "id": "maddy",
+      "heroId": 25300015,
+      "name": {
+        "ko": "매디",
+        "en": "Maddie",
+        "ja": "マディ",
+        "ru": "Мэдди",
+        "zh-tw": "麥蒂",
+        "de": "Maddie"
+      },
+      "gearId": 59600002,
+      "gearName": {
+        "ko": "폭풍의 활",
+        "en": "Tempest Crossbow",
+        "ja": "嵐の大弓",
+        "ru": "Грозовой арбалет",
+        "zh-tw": "風暴狂弩",
+        "de": "Sturm-Armbrust"
+      },
+      "material": {
+        "id": 208346,
+        "name": {
+          "ko": "폭풍의 활 조각",
+          "en": "Tempest Crossbow Fragments",
+          "ja": "嵐の大弓の欠片",
+          "ru": "Фрагменты Грозового арбалета",
+          "zh-tw": "風暴狂弩碎片",
+          "de": "Sturm-Armbrust-Fragmente"
+        }
+      },
+      "costs": [
+        {
+          "fromLevel": 0,
+          "toLevel": 1,
+          "quantity": 10
+        },
+        {
+          "fromLevel": 1,
+          "toLevel": 2,
+          "quantity": 5
+        },
+        {
+          "fromLevel": 2,
+          "toLevel": 3,
+          "quantity": 10
+        },
+        {
+          "fromLevel": 3,
+          "toLevel": 4,
+          "quantity": 20
+        },
+        {
+          "fromLevel": 4,
+          "toLevel": 5,
+          "quantity": 25
+        },
+        {
+          "fromLevel": 5,
+          "toLevel": 6,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 6,
+          "toLevel": 7,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 7,
+          "toLevel": 8,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 8,
+          "toLevel": 9,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 9,
+          "toLevel": 10,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 10,
+          "toLevel": 11,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 11,
+          "toLevel": 12,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 12,
+          "toLevel": 13,
+          "quantity": 40
+        },
+        {
+          "fromLevel": 13,
+          "toLevel": 14,
+          "quantity": 40
+        },
+        {
+          "fromLevel": 14,
+          "toLevel": 15,
+          "quantity": 40
+        }
+      ]
+    },
+    {
+      "id": "mike",
+      "heroId": 25300013,
+      "name": {
+        "ko": "마이크",
+        "en": "Mike",
+        "ja": "マイク",
+        "ru": "Майк",
+        "zh-tw": "麥克",
+        "de": "Mike"
+      },
+      "gearId": 59600008,
+      "gearName": {
+        "ko": "썬더 실드",
+        "en": "Aegis of Thunder",
+        "ja": "雷霆の巨盾",
+        "ru": "Громовой щит",
+        "zh-tw": "雷霆巨盾",
+        "de": "Donner-Aegis"
+      },
+      "material": {
+        "id": 208373,
+        "name": {
+          "ko": "썬더 실드 조각",
+          "en": "Aegis of Thunder Fragment",
+          "ja": "雷霆の巨盾（欠片）",
+          "ru": "Громовой щит (фрагмент)",
+          "zh-tw": "雷霆巨盾碎片",
+          "de": "Donner-Aegis-Fragment"
+        }
+      },
+      "costs": [
+        {
+          "fromLevel": 0,
+          "toLevel": 1,
+          "quantity": 10
+        },
+        {
+          "fromLevel": 1,
+          "toLevel": 2,
+          "quantity": 5
+        },
+        {
+          "fromLevel": 2,
+          "toLevel": 3,
+          "quantity": 10
+        },
+        {
+          "fromLevel": 3,
+          "toLevel": 4,
+          "quantity": 20
+        },
+        {
+          "fromLevel": 4,
+          "toLevel": 5,
+          "quantity": 25
+        },
+        {
+          "fromLevel": 5,
+          "toLevel": 6,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 6,
+          "toLevel": 7,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 7,
+          "toLevel": 8,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 8,
+          "toLevel": 9,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 9,
+          "toLevel": 10,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 10,
+          "toLevel": 11,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 11,
+          "toLevel": 12,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 12,
+          "toLevel": 13,
+          "quantity": 40
+        },
+        {
+          "fromLevel": 13,
+          "toLevel": 14,
+          "quantity": 40
+        },
+        {
+          "fromLevel": 14,
+          "toLevel": 15,
+          "quantity": 40
+        }
+      ]
+    },
+    {
+      "id": "nikola",
+      "heroId": 25300009,
+      "name": {
+        "ko": "니콜라",
+        "en": "Nikola",
+        "ja": "ニコラ",
+        "ru": "Никола",
+        "zh-tw": "尼古拉",
+        "de": "Nikola"
+      },
+      "gearId": 59600005,
+      "gearName": {
+        "ko": "초전자포",
+        "en": "Voltstorm",
+        "ja": "超電磁砲",
+        "ru": "Вольтшторм",
+        "zh-tw": "超電磁砲",
+        "de": "Voltsturm"
+      },
+      "material": {
+        "id": 208370,
+        "name": {
+          "ko": "초전자포 조각",
+          "en": "Voltstorm (Fragment)",
+          "ja": "超電磁砲（欠片）",
+          "ru": "Вольтшторм (Фрагмент)",
+          "zh-tw": "超電磁砲碎片",
+          "de": "Voltsturm (Fragment)"
+        }
+      },
+      "costs": [
+        {
+          "fromLevel": 0,
+          "toLevel": 1,
+          "quantity": 10
+        },
+        {
+          "fromLevel": 1,
+          "toLevel": 2,
+          "quantity": 5
+        },
+        {
+          "fromLevel": 2,
+          "toLevel": 3,
+          "quantity": 10
+        },
+        {
+          "fromLevel": 3,
+          "toLevel": 4,
+          "quantity": 20
+        },
+        {
+          "fromLevel": 4,
+          "toLevel": 5,
+          "quantity": 25
+        },
+        {
+          "fromLevel": 5,
+          "toLevel": 6,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 6,
+          "toLevel": 7,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 7,
+          "toLevel": 8,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 8,
+          "toLevel": 9,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 9,
+          "toLevel": 10,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 10,
+          "toLevel": 11,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 11,
+          "toLevel": 12,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 12,
+          "toLevel": 13,
+          "quantity": 40
+        },
+        {
+          "fromLevel": 13,
+          "toLevel": 14,
+          "quantity": 40
+        },
+        {
+          "fromLevel": 14,
+          "toLevel": 15,
+          "quantity": 40
+        }
+      ]
+    },
+    {
+      "id": "ray",
+      "heroId": 25300008,
+      "name": {
+        "ko": "레이",
+        "en": "Ray",
+        "ja": "レイ",
+        "ru": "Рэй",
+        "zh-tw": "雷",
+        "de": "Ray"
+      },
+      "gearId": 59600003,
+      "gearName": {
+        "ko": "암흑 수류탄",
+        "en": "Obsidian Grenade",
+        "ja": "暗黒ランチャー",
+        "ru": "Обсидиановая граната",
+        "zh-tw": "黑暗榴彈",
+        "de": "Obsidian-Granate"
+      },
+      "material": {
+        "id": 208347,
+        "name": {
+          "ko": "암흑 수류탄 조각",
+          "en": "Obsidian Grenade Fragments",
+          "ja": "暗黒ランチャーの欠片",
+          "ru": "Фрагменты Обсидиановой гранаты",
+          "zh-tw": "黑暗榴彈碎片",
+          "de": "Obsidian-Granate-Fragmente"
+        }
+      },
+      "costs": [
+        {
+          "fromLevel": 0,
+          "toLevel": 1,
+          "quantity": 10
+        },
+        {
+          "fromLevel": 1,
+          "toLevel": 2,
+          "quantity": 5
+        },
+        {
+          "fromLevel": 2,
+          "toLevel": 3,
+          "quantity": 10
+        },
+        {
+          "fromLevel": 3,
+          "toLevel": 4,
+          "quantity": 20
+        },
+        {
+          "fromLevel": 4,
+          "toLevel": 5,
+          "quantity": 25
+        },
+        {
+          "fromLevel": 5,
+          "toLevel": 6,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 6,
+          "toLevel": 7,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 7,
+          "toLevel": 8,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 8,
+          "toLevel": 9,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 9,
+          "toLevel": 10,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 10,
+          "toLevel": 11,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 11,
+          "toLevel": 12,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 12,
+          "toLevel": 13,
+          "quantity": 40
+        },
+        {
+          "fromLevel": 13,
+          "toLevel": 14,
+          "quantity": 40
+        },
+        {
+          "fromLevel": 14,
+          "toLevel": 15,
+          "quantity": 40
+        }
+      ]
+    },
+    {
+      "id": "rosie",
+      "heroId": 25300138,
+      "name": {
+        "ko": "로지",
+        "en": "Rosie",
+        "ja": "ローズ",
+        "ru": "Рози",
+        "zh-tw": "蘿絲",
+        "de": "Rosie"
+      },
+      "gearId": 59600001,
+      "gearName": {
+        "ko": "종말의 기타",
+        "en": "Apocalypse Guitar",
+        "ja": "終末ギター",
+        "ru": "Гитара апокалипсиса",
+        "zh-tw": "末日吉他",
+        "de": "Apokalypse-Gitarre"
+      },
+      "material": {
+        "id": 208345,
+        "name": {
+          "ko": "종말의 기타 조각",
+          "en": "Apocalypse Guitar Fragments",
+          "ja": "終末ギターの欠片",
+          "ru": "Фрагменты Гитары апокалипсиса",
+          "zh-tw": "末日吉他碎片",
+          "de": "Apokalypse-Gitarre-Fragmente"
+        }
+      },
+      "costs": [
+        {
+          "fromLevel": 0,
+          "toLevel": 1,
+          "quantity": 10
+        },
+        {
+          "fromLevel": 1,
+          "toLevel": 2,
+          "quantity": 5
+        },
+        {
+          "fromLevel": 2,
+          "toLevel": 3,
+          "quantity": 10
+        },
+        {
+          "fromLevel": 3,
+          "toLevel": 4,
+          "quantity": 20
+        },
+        {
+          "fromLevel": 4,
+          "toLevel": 5,
+          "quantity": 25
+        },
+        {
+          "fromLevel": 5,
+          "toLevel": 6,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 6,
+          "toLevel": 7,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 7,
+          "toLevel": 8,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 8,
+          "toLevel": 9,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 9,
+          "toLevel": 10,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 10,
+          "toLevel": 11,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 11,
+          "toLevel": 12,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 12,
+          "toLevel": 13,
+          "quantity": 40
+        },
+        {
+          "fromLevel": 13,
+          "toLevel": 14,
+          "quantity": 40
+        },
+        {
+          "fromLevel": 14,
+          "toLevel": 15,
+          "quantity": 40
+        }
+      ]
+    },
+    {
+      "id": "shark",
+      "heroId": 25300237,
+      "name": {
+        "ko": "샤크",
+        "en": "Shark",
+        "ja": "シャーク",
+        "ru": "Акула",
+        "zh-tw": "沙克",
+        "de": "Shark"
+      },
+      "gearId": 59600017,
+      "gearName": {
+        "ko": "심해의 닻",
+        "en": "Abyssal Anchor",
+        "ja": "メガアンカー",
+        "ru": "Якорь бездны",
+        "zh-tw": "深海巨錨",
+        "de": "Abgrundanker"
+      },
+      "material": {
+        "id": 209132,
+        "name": {
+          "ko": "심해의 닻 조각",
+          "en": "Abyssal Anchor Fragment",
+          "ja": "メガアンカーの欠片",
+          "ru": "Якорь бездны (фрагмент)",
+          "zh-tw": "深海巨錨碎片",
+          "de": "Abgrundanker-Fragment"
+        }
+      },
+      "costs": [
+        {
+          "fromLevel": 0,
+          "toLevel": 1,
+          "quantity": 10
+        },
+        {
+          "fromLevel": 1,
+          "toLevel": 2,
+          "quantity": 5
+        },
+        {
+          "fromLevel": 2,
+          "toLevel": 3,
+          "quantity": 10
+        },
+        {
+          "fromLevel": 3,
+          "toLevel": 4,
+          "quantity": 20
+        },
+        {
+          "fromLevel": 4,
+          "toLevel": 5,
+          "quantity": 25
+        },
+        {
+          "fromLevel": 5,
+          "toLevel": 6,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 6,
+          "toLevel": 7,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 7,
+          "toLevel": 8,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 8,
+          "toLevel": 9,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 9,
+          "toLevel": 10,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 10,
+          "toLevel": 11,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 11,
+          "toLevel": 12,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 12,
+          "toLevel": 13,
+          "quantity": 40
+        },
+        {
+          "fromLevel": 13,
+          "toLevel": 14,
+          "quantity": 40
+        },
+        {
+          "fromLevel": 14,
+          "toLevel": 15,
+          "quantity": 40
+        }
+      ]
+    },
+    {
+      "id": "tara",
+      "heroId": 25300222,
+      "name": {
+        "ko": "타라",
+        "en": "Tara",
+        "ja": "ターラ",
+        "ru": "Тара",
+        "zh-tw": "塔拉",
+        "de": "Tara"
+      },
+      "gearId": 59600013,
+      "gearName": {
+        "ko": "펜리르 망치",
+        "en": "Fenrir Hammer",
+        "ja": "狼の戦鎚",
+        "ru": "Молот Фенрира",
+        "zh-tw": "天狼流星錘",
+        "de": "Fenris-Hammer"
+      },
+      "material": {
+        "id": 208875,
+        "name": {
+          "ko": "펜리르 망치 조각",
+          "en": "Fenrir Hammer Fragment",
+          "ja": "狼の戦鎚（欠片）",
+          "ru": "Молот Фенрира (фрагмент)",
+          "zh-tw": "天狼流星錘碎片",
+          "de": "Fenris-Hammer-Fragment"
+        }
+      },
+      "costs": [
+        {
+          "fromLevel": 0,
+          "toLevel": 1,
+          "quantity": 10
+        },
+        {
+          "fromLevel": 1,
+          "toLevel": 2,
+          "quantity": 5
+        },
+        {
+          "fromLevel": 2,
+          "toLevel": 3,
+          "quantity": 10
+        },
+        {
+          "fromLevel": 3,
+          "toLevel": 4,
+          "quantity": 20
+        },
+        {
+          "fromLevel": 4,
+          "toLevel": 5,
+          "quantity": 25
+        },
+        {
+          "fromLevel": 5,
+          "toLevel": 6,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 6,
+          "toLevel": 7,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 7,
+          "toLevel": 8,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 8,
+          "toLevel": 9,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 9,
+          "toLevel": 10,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 10,
+          "toLevel": 11,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 11,
+          "toLevel": 12,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 12,
+          "toLevel": 13,
+          "quantity": 40
+        },
+        {
+          "fromLevel": 13,
+          "toLevel": 14,
+          "quantity": 40
+        },
+        {
+          "fromLevel": 14,
+          "toLevel": 15,
+          "quantity": 40
+        }
+      ]
+    },
+    {
+      "id": "tarzan",
+      "heroId": 25300224,
+      "name": {
+        "ko": "타잔",
+        "en": "Tarzan",
+        "ja": "ターザン",
+        "ru": "Тарзан",
+        "zh-tw": "泰山",
+        "de": "Tarzan"
+      },
+      "gearId": 59600015,
+      "gearName": {
+        "ko": "썬더 피스트",
+        "en": "Thunderfist",
+        "ja": "雷霆の鉄拳",
+        "ru": "Громовой кулак",
+        "zh-tw": "雷霆鐵拳",
+        "de": "Donnerfaust"
+      },
+      "material": {
+        "id": 208921,
+        "name": {
+          "ko": "썬더 피스트 조각",
+          "en": "Thunderfist Fragment",
+          "ja": "雷霆の鉄拳（欠片）",
+          "ru": "Громовой кулак (фрагмент)",
+          "zh-tw": "雷霆鐵拳碎片",
+          "de": "Donnerfaust-Fragment"
+        }
+      },
+      "costs": [
+        {
+          "fromLevel": 0,
+          "toLevel": 1,
+          "quantity": 10
+        },
+        {
+          "fromLevel": 1,
+          "toLevel": 2,
+          "quantity": 5
+        },
+        {
+          "fromLevel": 2,
+          "toLevel": 3,
+          "quantity": 10
+        },
+        {
+          "fromLevel": 3,
+          "toLevel": 4,
+          "quantity": 20
+        },
+        {
+          "fromLevel": 4,
+          "toLevel": 5,
+          "quantity": 25
+        },
+        {
+          "fromLevel": 5,
+          "toLevel": 6,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 6,
+          "toLevel": 7,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 7,
+          "toLevel": 8,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 8,
+          "toLevel": 9,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 9,
+          "toLevel": 10,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 10,
+          "toLevel": 11,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 11,
+          "toLevel": 12,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 12,
+          "toLevel": 13,
+          "quantity": 40
+        },
+        {
+          "fromLevel": 13,
+          "toLevel": 14,
+          "quantity": 40
+        },
+        {
+          "fromLevel": 14,
+          "toLevel": 15,
+          "quantity": 40
+        }
+      ]
+    },
+    {
+      "id": "tony",
+      "heroId": 25300027,
+      "name": {
+        "ko": "탄 토니",
+        "en": "Tony",
+        "ja": "トニー",
+        "ru": "Тони",
+        "zh-tw": "譚托尼",
+        "de": "Tony Tan"
+      },
+      "gearId": 59600007,
+      "gearName": {
+        "ko": "스타 레이저총",
+        "en": "Starfire",
+        "ja": "閃光の射手",
+        "ru": "Звездный огонь",
+        "zh-tw": "星耀雷射槍",
+        "de": "Sternenfeuer"
+      },
+      "material": {
+        "id": 208372,
+        "name": {
+          "ko": "스타 레이저총 조각",
+          "en": "Starfire (Fragment)",
+          "ja": "閃光の射手（欠片）",
+          "ru": "Звездный Огонь (Фрагмент)",
+          "zh-tw": "星耀雷射槍碎片",
+          "de": "Sternenfeuer (Fragment)"
+        }
+      },
+      "costs": [
+        {
+          "fromLevel": 0,
+          "toLevel": 1,
+          "quantity": 10
+        },
+        {
+          "fromLevel": 1,
+          "toLevel": 2,
+          "quantity": 5
+        },
+        {
+          "fromLevel": 2,
+          "toLevel": 3,
+          "quantity": 10
+        },
+        {
+          "fromLevel": 3,
+          "toLevel": 4,
+          "quantity": 20
+        },
+        {
+          "fromLevel": 4,
+          "toLevel": 5,
+          "quantity": 25
+        },
+        {
+          "fromLevel": 5,
+          "toLevel": 6,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 6,
+          "toLevel": 7,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 7,
+          "toLevel": 8,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 8,
+          "toLevel": 9,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 9,
+          "toLevel": 10,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 10,
+          "toLevel": 11,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 11,
+          "toLevel": 12,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 12,
+          "toLevel": 13,
+          "quantity": 40
+        },
+        {
+          "fromLevel": 13,
+          "toLevel": 14,
+          "quantity": 40
+        },
+        {
+          "fromLevel": 14,
+          "toLevel": 15,
+          "quantity": 40
+        }
+      ]
+    },
+    {
+      "id": "undine",
+      "heroId": 25300240,
+      "name": {
+        "ko": "운디네",
+        "en": "Undine",
+        "ja": "ウンディーネ",
+        "ru": "Ундина",
+        "zh-tw": "溫蒂妮",
+        "de": "Undine"
+      },
+      "gearId": 59600020,
+      "gearName": {
+        "ko": "바다의 음성",
+        "en": "Ocean Vox",
+        "ja": "海洋のマイク",
+        "ru": "Голос океана",
+        "zh-tw": "海謠麥克",
+        "de": "Stimme des Ozeans"
+      },
+      "material": {
+        "id": 209453,
+        "name": {
+          "ko": "바다의 음성 (조각)",
+          "en": "Ocean Vox (Fragment)",
+          "ja": "海洋のマイク（欠片）",
+          "ru": "Голос океана (фрагмент)",
+          "zh-tw": "海謠麥克（碎片）",
+          "de": "Stimme des Ozeans (Fragment)"
+        }
+      },
+      "costs": [
+        {
+          "fromLevel": 0,
+          "toLevel": 1,
+          "quantity": 10
+        },
+        {
+          "fromLevel": 1,
+          "toLevel": 2,
+          "quantity": 5
+        },
+        {
+          "fromLevel": 2,
+          "toLevel": 3,
+          "quantity": 10
+        },
+        {
+          "fromLevel": 3,
+          "toLevel": 4,
+          "quantity": 20
+        },
+        {
+          "fromLevel": 4,
+          "toLevel": 5,
+          "quantity": 25
+        },
+        {
+          "fromLevel": 5,
+          "toLevel": 6,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 6,
+          "toLevel": 7,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 7,
+          "toLevel": 8,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 8,
+          "toLevel": 9,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 9,
+          "toLevel": 10,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 10,
+          "toLevel": 11,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 11,
+          "toLevel": 12,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 12,
+          "toLevel": 13,
+          "quantity": 40
+        },
+        {
+          "fromLevel": 13,
+          "toLevel": 14,
+          "quantity": 40
+        },
+        {
+          "fromLevel": 14,
+          "toLevel": 15,
+          "quantity": 40
+        }
+      ]
+    },
+    {
+      "id": "lagnar",
+      "heroId": 25300238,
+      "name": {
+        "ko": "라그나",
+        "en": "Ragnar",
+        "ja": "ラグナー",
+        "ru": "Рагнар",
+        "zh-tw": "雷格納",
+        "de": "Ragnar"
+      },
+      "gearId": 59600018,
+      "gearName": {
+        "ko": "물의 칼날",
+        "en": "Water Blade",
+        "ja": "水の刃",
+        "ru": "Водный клинок",
+        "zh-tw": "水之刃",
+        "de": "Wasserklinge"
+      },
+      "material": {
+        "id": 209232,
+        "name": {
+          "ko": "물의 칼날 조각",
+          "en": "Water Blade Fragment",
+          "ja": "水の刃の欠片",
+          "ru": "Водный клинок (фрагмент)",
+          "zh-tw": "水之刃碎片",
+          "de": "Wasserklingen-Fragment"
+        }
+      },
+      "costs": [
+        {
+          "fromLevel": 0,
+          "toLevel": 1,
+          "quantity": 10
+        },
+        {
+          "fromLevel": 1,
+          "toLevel": 2,
+          "quantity": 5
+        },
+        {
+          "fromLevel": 2,
+          "toLevel": 3,
+          "quantity": 10
+        },
+        {
+          "fromLevel": 3,
+          "toLevel": 4,
+          "quantity": 20
+        },
+        {
+          "fromLevel": 4,
+          "toLevel": 5,
+          "quantity": 25
+        },
+        {
+          "fromLevel": 5,
+          "toLevel": 6,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 6,
+          "toLevel": 7,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 7,
+          "toLevel": 8,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 8,
+          "toLevel": 9,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 9,
+          "toLevel": 10,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 10,
+          "toLevel": 11,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 11,
+          "toLevel": 12,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 12,
+          "toLevel": 13,
+          "quantity": 40
+        },
+        {
+          "fromLevel": 13,
+          "toLevel": 14,
+          "quantity": 40
+        },
+        {
+          "fromLevel": 14,
+          "toLevel": 15,
+          "quantity": 40
+        }
+      ]
+    },
+    {
+      "id": "dave",
+      "heroId": 25300241,
+      "name": {
+        "ko": "데이브",
+        "en": "Dave",
+        "ja": "デイブ",
+        "ru": "Дейв",
+        "zh-tw": "戴夫",
+        "de": "Dave"
+      },
+      "gearId": 59600021,
+      "gearName": {
+        "ko": "고압 호스",
+        "en": "Pressure Washer",
+        "ja": "高圧水銃",
+        "ru": "Водяная пушка",
+        "zh-tw": "高壓水槍",
+        "de": "Hochdruckreiniger"
+      },
+      "material": {
+        "id": 209863,
+        "name": {
+          "ko": "고압 호스 조각",
+          "en": "Pressure Washer (Fragment)",
+          "ja": "高圧水銃（欠片）",
+          "ru": "Водяная пушка (фрагмент)",
+          "zh-tw": "高壓水槍碎片",
+          "de": "Hochdruckreiniger (Fragment)"
+        }
+      },
+      "costs": [
+        {
+          "fromLevel": 0,
+          "toLevel": 1,
+          "quantity": 10
+        },
+        {
+          "fromLevel": 1,
+          "toLevel": 2,
+          "quantity": 5
+        },
+        {
+          "fromLevel": 2,
+          "toLevel": 3,
+          "quantity": 10
+        },
+        {
+          "fromLevel": 3,
+          "toLevel": 4,
+          "quantity": 20
+        },
+        {
+          "fromLevel": 4,
+          "toLevel": 5,
+          "quantity": 25
+        },
+        {
+          "fromLevel": 5,
+          "toLevel": 6,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 6,
+          "toLevel": 7,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 7,
+          "toLevel": 8,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 8,
+          "toLevel": 9,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 9,
+          "toLevel": 10,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 10,
+          "toLevel": 11,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 11,
+          "toLevel": 12,
+          "quantity": 30
+        },
+        {
+          "fromLevel": 12,
+          "toLevel": 13,
+          "quantity": 40
+        },
+        {
+          "fromLevel": 13,
+          "toLevel": 14,
+          "quantity": 40
+        },
+        {
+          "fromLevel": 14,
+          "toLevel": 15,
+          "quantity": 40
+        }
+      ]
+    }
+  ]
+}

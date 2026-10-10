@@ -10,7 +10,7 @@ const {translate,missing}=G.createTranslator(cat);
 let checks=0,numericLeaves=0,cells=0,forms=0,ranges=0;
 function eq(a,b,msg){assert.deepEqual(a,b,msg);checks++;}
 function typed(value,out={},prefix='') {if(value&&typeof value==='object'){for(const [k,v]of Object.entries(value)){if(k!=='de')typed(v,out,prefix+'/'+k);}}else if(typeof value!=='string')out[prefix]=value;return out;}
-const strip=d=>{require('./build-pet-skill-levels').stripOwnedSections(d,'en');d.querySelectorAll('[data-growth-50],[data-growth-research-50],[data-growth50-asset],[data-package-offer-50]').forEach(n=>n.remove());};
+const strip=d=>{require('./strip-refinement-51').strip(d);require('./build-pet-skill-levels').stripOwnedSections(d,'en');d.querySelectorAll('[data-growth-50],[data-growth-research-50],[data-growth50-asset],[data-package-offer-50]').forEach(n=>n.remove());};
 for(const route of JSON.parse(fs.readFileSync(path.join(R,'data/product-50/german-routes.json'),'utf8'))){
  const source=fs.readFileSync(path.join(R,'en',route),'utf8');
  const en=parseHTML(source).document,de=parseHTML(G.render(source,translate,route)).document;strip(en);

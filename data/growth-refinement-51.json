@@ -1,0 +1,119 @@
+{
+  "schemaVersion": 1,
+  "gameVersion": "2.6.200",
+  "materials": [
+    {
+      "id": 208012,
+      "system": "hero-gear",
+      "name": {
+        "ko": "남은 장비 재료",
+        "en": "Gear Scraps",
+        "ja": "装備余剰",
+        "ru": "Обломки снаряжения",
+        "zh-tw": "裝備餘料",
+        "de": "Ausrüstungsfetzen"
+      },
+      "description": {
+        "ko": "영웅 장비 강화에 사용될 경우 경험치 100 증가",
+        "en": "Adds 100 EXP when enhancing Hero Gear.",
+        "ja": "英雄装備強化に使うと、EXP+100Pt",
+        "ru": "Добавляет 100 опыта при улучшении снаряжения героя.",
+        "zh-tw": "用於英雄裝備強化時，增加100點經驗值",
+        "de": "Erhöht die EP um 100, wenn du Heldenausrüstung verbesserst."
+      },
+      "expPerItem": 100
+    },
+    {
+      "id": 208013,
+      "system": "hero-gear",
+      "name": {
+        "ko": "남은 장비 재료",
+        "en": "Gear Scraps",
+        "ja": "装備余剰",
+        "ru": "Обломки снаряжения",
+        "zh-tw": "裝備餘料",
+        "de": "Ausrüstungsfetzen"
+      },
+      "description": {
+        "ko": "영웅 장비 강화에 사용될 경우 경험치 400 증가",
+        "en": "Adds 400 EXP when enhancing Hero Gear.",
+        "ja": "英雄装備強化に使うと、EXP+400Pt",
+        "ru": "Добавляет 400 опыта при улучшении снаряжения героя.",
+        "zh-tw": "用於英雄裝備強化時，增加400點經驗值",
+        "de": "Erhöht die EP um 400, wenn du Heldenausrüstung verbesserst."
+      },
+      "expPerItem": 400
+    },
+    {
+      "id": 208014,
+      "system": "hero-gear",
+      "name": {
+        "ko": "남은 장비 재료",
+        "en": "Gear Scraps",
+        "ja": "装備余剰",
+        "ru": "Обломки снаряжения",
+        "zh-tw": "裝備餘料",
+        "de": "Ausrüstungsfetzen"
+      },
+      "description": {
+        "ko": "영웅 장비 강화에 사용될 경우 경험치 2000 증가",
+        "en": "Adds 2000 EXP when enhancing Hero Gear.",
+        "ja": "英雄装備強化に使うと、EXP+2,000Pt",
+        "ru": "Добавляет 2000 опыта при улучшении снаряжения героя.",
+        "zh-tw": "英雄裝備強化時，可增加2000點經驗值",
+        "de": "Erhöht die EP um 2000, wenn du Heldenausrüstung verbesserst."
+      },
+      "expPerItem": 2000
+    },
+    {
+      "id": 206113,
+      "system": "behemoth",
+      "name": {
+        "ko": "베헤모스·소량 혈청",
+        "en": "Behemoth - Serum (Small)",
+        "ja": "巨獣 微量の血清",
+        "ru": "Бегемот - Сыворотка (Маленькая)",
+        "zh-tw": "巨獸·少量血清",
+        "de": "Behemoth - Serum (Klein)"
+      },
+      "description": {
+        "ko": "고생물의 사체에서 추출한 소량의 혈청. 소량의 힘을 강화할 수 있다. 사용 시 베헤모스 경험치 100 증가.",
+        "en": "Extracted from the remains of ancient creatures. Adds 100 Behemoth EXP.",
+        "ja": "古の生物遺体から抽出した微量の血清。力をわずかに強化できる。使用すると巨獣のEXP+100Pt",
+        "ru": "Добывается из останков древних существ. Дает 100 очков опыта титана.",
+        "zh-tw": "自古生物遺體提取的少量血清，能增強少許力量，使用後可增加巨獸100點經驗值",
+        "de": "Gewonnen aus den Überbleibseln uralter Kreaturen. Fügt 100 Ungeheuer-EP hinzu."
+      },
+      "expPerItem": 100
+    },
+    {
+      "id": 206114,
+      "system": "behemoth",
+      "name": {
+        "ko": "베헤모스·일부 혈청",
+        "en": "Behemoth - Serum (Medium)",
+        "ja": "巨獣 少量の血清",
+        "ru": "Бегемот - Сыворотка (Средняя)",
+        "zh-tw": "巨獸·部分血清",
+        "de": "Behemoth - Serum (Mittel)"
+      },
+      "description": {
+        "ko": "고생물의 사체에서 추출한 일부 혈청. 일부의 힘을 강화할 수 있다. 사용 시 베헤모스 경험치 1000 증가.",
+        "en": "Extracted from the remains of ancient creatures. Adds 1,000 Behemoth EXP.",
+        "ja": "古の生物遺体から抽出した少量の血清。力を少し強化できる。使用すると巨獣のEXP+1,000Pt",
+        "ru": "Добывается из останков древних существ. Дает 1000 очков опыта титана.",
+        "zh-tw": "自古生物遺體提取的部分血清，能增強部分力量，使用後可增加巨獸1000點經驗值",
+        "de": "Gewonnen aus den Überbleibseln uralter Kreaturen. Fügt 1.000 Ungeheuer-EP hinzu."
+      },
+      "expPerItem": 1000
+    }
+  ],
+  "behemothTargets": [
+    "legend-griffin",
+    "marine-drake"
+  ],
+  "behemothMaterialImages": {
+    "206113": "/img/behemoths/behemoth-serum-small.png",
+    "206114": "/img/game-41/behemoths/behemoth-serum-partial.webp"
+  }
+}
