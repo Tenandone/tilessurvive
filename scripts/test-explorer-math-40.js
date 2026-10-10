@@ -60,8 +60,16 @@ test('three screenshot reward bundles add quantities, without multiplying item q
   assert.equal(totals['speedup-5m'] * items.find(item => item.id === 'speedup-5m').minutes, 250);
 });
 test('VIP exchange offers retain unit quantities and do not treat remaining purchases as bundle quantity', () => {
-  assert.deepEqual(offers.map(o => [o.item, o.quantity, o.cost, o.currency]), [['food-100k', 1, 20, 'diamonds'], ['speedup-5m', 1, 60, 'diamonds']]);
+  assert.deepEqual(offers.map(o => [o.item, o.quantity, o.cost, o.currency]), [
+    ['food-100k', 1, 20, 'diamonds'], ['speedup-5m', 1, 60, 'diamonds'],
+    ['stamina-10', null, 0, 'diamonds'], ['arena-ticket', null, 250, 'diamonds'],
+    ['stamina-10', null, 240, 'diamonds'], ['normal-recruitment-coin', null, 250, 'diamonds'],
+    ['wood-100k', null, 20, 'diamonds'], ['epic-hero-fragment', null, 225, 'diamonds'],
+    ['hero-exp-10k', null, 30, 'diamonds']
+  ]);
   assert.equal(items.find(item => item.id === 'food-100k').resourceAmount, 100000);
+  assert.equal(items.find(item => item.id === 'wood-100k').resourceAmount, 100000);
+  assert(offers.every(o => o.conditions.accountLimit === null));
 });
 test('calculation does not mutate the source event or input', () => {
   const before = JSON.stringify(event), original = input({ amount: 5, minutes: 7, current: 9 }), text = JSON.stringify(original);

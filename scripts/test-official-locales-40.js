@@ -47,7 +47,7 @@ test('short labels never replace substrings or repeatedly expand names',()=>{
  assert.equal(replaceLabels('100.25% ATK',pairs),'100.25% ATK');
 });
 test('every generated changed client uses a new cache version across all five locales',()=>{
- const versions={'/js/platform.js':'5','/js/platform-search.js':'3','/js/product-30.js':'2','/js/foundation-40.js':'2'},counts=Object.fromEntries(Object.keys(versions).map(k=>[k,0]));
+ const versions={'/js/platform.js':'5','/js/platform-search.js':'3','/js/product-30.js':'2','/js/foundation-40.js':'3'},counts=Object.fromEntries(Object.keys(versions).map(k=>[k,0]));
  const walk=dir=>fs.readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(path.join(dir,e.name)):[path.join(dir,e.name)]);
  for(const lang of langs)for(const file of walk(path.join(root,lang)).filter(f=>f.endsWith('.html'))){const d=parseHTML(fs.readFileSync(file,'utf8')).document;for(const script of d.querySelectorAll('script[src]')){const url=new URL(script.getAttribute('src'),'https://tilessurvive.net');if(versions[url.pathname]){assert.equal(url.searchParams.get('v'),versions[url.pathname],file+' '+url.pathname);counts[url.pathname]++;}}}
  for(const [file,count] of Object.entries(counts))assert.ok(count>=5,file+' used in all locales');

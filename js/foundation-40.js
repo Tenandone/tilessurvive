@@ -66,9 +66,21 @@
     filters.addEventListener('input', update); filters.addEventListener('change', update); update();
     const initial = new URLSearchParams(location.search).get('q');
     if (initial) { filters.elements.query.value = initial; update(); }
-    let anchor = location.hash.slice(1);
-    try { anchor = decodeURIComponent(anchor); } catch { /* Ignore malformed inbound anchors. */ }
-    const target = document.getElementById(anchor);
-    if (target?.matches('[data-item-entry]')) target.open = true;
+    const revealItem = (anchor, scroll) => {
+      try { anchor = decodeURIComponent(anchor); } catch { return; }
+      const target = document.getElementById(anchor);
+      if (!target?.matches('[data-item-entry]')) return;
+      if (target.hidden) {
+        filters.elements.query.value = ''; filters.elements.category.value = ''; update();
+      }
+      target.open = true;
+      if (scroll) target.scrollIntoView({ block: 'start' });
+    };
+    revealItem(location.hash.slice(1), false);
+    window.addEventListener('hashchange', () => revealItem(location.hash.slice(1), true));
+    document.addEventListener('click', event => {
+      const link = event.target.closest?.('a[href^="#"]');
+      if (link) revealItem(link.getAttribute('href').slice(1), true);
+    });
   }
 })();

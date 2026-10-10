@@ -27,6 +27,8 @@ const rewardTotals=M.rewardsAt(D.event.stages,300000);
 assert(Array.isArray(D.packages)&&D.packages.length===6,'Expected six screen-scoped diamond offers');
 assert(D.packages.length===new Set(D.packages.map(p=>p.id)).size,'Duplicate package IDs');
 for(const offer of D.packages){M.packageSummary(offer);assert(offer.currency===D.packageScope.currency&&['one-time-purchase','not-shown'].includes(offer.condition),'Unknown package currency or condition');}
+for(const offer of D.offers)assert(ids.has(offer.item)&&Number.isSafeInteger(offer.cost)&&offer.cost>=0&&offer.currency==='diamonds'&&(offer.quantity===null||(Number.isSafeInteger(offer.quantity)&&offer.quantity>0)),'Invalid observed VIP offer');
+if(D.vipCatalog){assert(D.vipCatalog.offerIds.length===new Set(D.vipCatalog.offerIds).size,'Duplicate observed VIP offer');for(const id of D.vipCatalog.offerIds)assert(D.offers.some(o=>o.id===id),'Unknown VIP catalog offer');}
 let changes=0;
 function save(file,text){if(fs.existsSync(file)&&fs.readFileSync(file,'utf8')===text)return;fs.mkdirSync(path.dirname(file),{recursive:true});fs.writeFileSync(file,text);changes++;}
 function stabilizeEventHubAnchor(d,lang){
@@ -67,6 +69,12 @@ function packageContent(lang){
  const benefits=D.packageBenefits.map(benefit=>`<div data-package-benefit="${esc(benefit.id)}"><h3>${t.monthlyPassTitle}</h3><p>${esc(t[benefit.copyKey].replace('{multiplier}',benefit.dailyFreeHealLimitMultiplier))} ${citation(benefit.sourceIds,lang)}</p></div>`).join('');
  return `<section class="ts40-panel" aria-labelledby="packages-heading"><h2 id="packages-heading">${t.packageTitle}</h2><p>${t.packageIntro}</p><p class="ts40-context">${esc(scope)}</p>${table([t.packageOffer,t.packageBase,t.packageBonus,t.packageTotal,esc(t.packageCost),t.packageCondition],rows,'ts40-rewards')}<p class="ts40-source">${t.packageUnits}</p><h3 id="package-compare-heading">${t.packageCompare}</h3><form data-package-compare class="ts40-controls ts40-item-body" aria-labelledby="package-compare-heading" hidden><label>${t.packageFirst}<select name="first">${options(D.packages[0].id)}</select></label><label>${t.packageSecond}<select name="second">${options(D.packages[3].id)}</select></label></form><p>${t.packageRatio}</p><div data-package-result class="ts40-result ts40-item-body" role="status" aria-live="polite" aria-atomic="true"></div><p class="ts40-source">${t.packageCompareNote}</p>${benefits}</section>`;
 }
+function vipContent(lang){
+ if(!D.vipCatalog)return '';
+ const t=C[lang],num=n=>new Intl.NumberFormat(lang).format(n);
+ const rows=D.vipCatalog.offerIds.map(id=>{const offer=D.offers.find(o=>o.id===id);return [`<a href="#${esc(offer.item)}">${esc(t[offer.item])}</a>`,offer.cost===0?esc(t.vipFree):`${num(offer.cost)} ${esc(t.diamonds)}`];});
+ return `<section class="ts40-panel" aria-labelledby="vip-offers-heading"><h2 id="vip-offers-heading">${esc(t.vipCatalogTitle)}</h2><p class="ts40-context">${esc(t.shopCondition)}</p>${table([t.item,t.vipDisplayedPrice],rows)}</section>`;
+}
 function itemContent(lang){
  const t=C[lang],num=n=>new Intl.NumberFormat(lang).format(n);
  const source=item=>item.sources.map(id=>{
@@ -75,11 +83,12 @@ function itemContent(lang){
    const relation=D.itemSources.find(source=>source.id===id);
    if(relation)return `<li>${esc(t[relation.copyKey])} ${citation(relation.sourceIds,lang)}</li>`;
    const offer=D.offers.find(o=>o.id===id);assert(offer,'Unknown source '+id);
-   return `<li>${t.vip} · ${num(offer.cost)} ${t.diamonds} / ${num(offer.quantity)}<p class="ts40-source">${t.shopCondition}</p></li>`;
+   const price=offer.cost===0?esc(t.vipFree):`${num(offer.cost)} ${t.diamonds}`;
+   return `<li>${t.vip} · ${price}${offer.quantity===null?'':' / '+num(offer.quantity)}<p class="ts40-source">${t.shopCondition}</p></li>`;
  }).join('');
  return `<section class="hero-card ts40-intro"><span class="eyebrow">TILES SURVIVE · ITEMS</span><h1>${t.itemTitle}</h1><p>${t.itemIntro}</p></section><form data-item-filter class="ts40-filters" hidden role="search"><label>${t.search}<input name="query" type="search" autocomplete="off"></label><label>${t.category}<select name="category"><option value="">${t.all}</option>${['growth','resource','speedup','event'].map(v=>`<option value="${v}">${t[v]}</option>`).join('')}</select></label></form><p data-item-count role="status" aria-live="polite"></p><p class="ts40-empty" data-item-empty hidden>${t.empty}</p>
  <h2 id="items-heading">${t.itemList}</h2>${D.items.map(item=>`<details class="ts40-item" data-item-entry data-search-aliases="${esc((item.searchAliases||[]).join(' '))}" data-category="${item.category}" id="${item.id}"><summary><span class="ts40-item-label">${itemIcon(item.id)}<span>${esc(t[item.id])}${item.nameOriginal?(lang===item.sourceLocale?'':`<br><span lang="${item.sourceLocale}" class="ts40-original">${esc(item.nameOriginal)}</span>`):(lang==='ko'?'':`<br><span lang="ko" class="ts40-original">${esc(item.nameKo)}</span>`)}</span></span></summary><div class="ts40-item-body"><div><h3>${t.sources}</h3><ul>${source(item)}</ul></div><div><h3>${t.uses}</h3>${item.descriptions?.[lang]?`<p>${esc(item.descriptions[lang])}</p>`:''}${!item.descriptions?.[lang]||item.useSourceIds?`<p>${esc(itemUseText(item,lang))} ${item.useSourceIds?citation(item.useSourceIds,lang):''}</p>`:''}${item.route?`<a href="/${lang}/${item.route}">${t.open} →</a>`:''}</div></div></details>`).join('')}
- <p class="ts40-context">${t.itemRewardScope} ${t.condition}</p><p data-gear-crate-tip>${t.gearCrateTip} ${citation(D.itemRules.gearCrate.sourceIds,lang)}</p>${packageContent(lang)}<nav class="ts40-links" aria-label="${t.related}"><a href="/${lang}/events/arms-race/">${t.eventTitle} →</a><a href="/${lang}/database/pet-system/">${C[lang].growth} →</a></nav>`;
+ <p class="ts40-context">${t.itemRewardScope} ${t.condition}</p><p data-gear-crate-tip>${t.gearCrateTip} ${citation(D.itemRules.gearCrate.sourceIds,lang)}</p>${vipContent(lang)}${packageContent(lang)}<nav class="ts40-links" aria-label="${t.related}"><a href="/${lang}/events/arms-race/">${t.eventTitle} →</a><a href="/${lang}/database/pet-system/">${C[lang].growth} →</a></nav>`;
 }
 function page(lang,slug,title,description,content){
  const d=parseHTML(fs.readFileSync(path.join(root,lang,'events/index.html'),'utf8')).document;
@@ -96,7 +105,7 @@ function page(lang,slug,title,description,content){
  const main=d.querySelector('main');main.className='container page-main ts3-data-page ts3-editorial ts40-page';main.innerHTML=content;
  d.querySelectorAll('script[type="application/ld+json"]').forEach(n=>n.remove());
  d.head.append(node(d,`<script type="application/ld+json">${JSON.stringify({'@context':'https://schema.org','@type':'WebPage',name:title,url,inLanguage:lang,description,isPartOf:{'@type':'WebSite',name:'TilesSurvive.net',url:'https://tilessurvive.net/'}}).replaceAll('<','\\u003c')}</script><link rel="stylesheet" href="/css/foundation-40.css?v=1">`));
- d.body.append(node(d,`<script type="application/json" id="foundation-data">${JSON.stringify({event:D.event,copy:C[lang],packages:slug==='database/items'?D.packages:undefined}).replaceAll('<','\\u003c')}</script><script src="/js/foundation-40-math.js?v=1" defer></script><script src="/js/foundation-40.js?v=2" defer></script>`));
+ d.body.append(node(d,`<script type="application/json" id="foundation-data">${JSON.stringify({event:D.event,copy:C[lang],packages:slug==='database/items'?D.packages:undefined}).replaceAll('<','\\u003c')}</script><script src="/js/foundation-40-math.js?v=1" defer></script><script src="/js/foundation-40.js?v=3" defer></script>`));
  save(path.join(root,lang,slug,'index.html'),'<!DOCTYPE html>\n'+d.documentElement.outerHTML+'\n');
 }
 const itemsOnly=process.argv.includes('--items-only');

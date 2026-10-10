@@ -16,6 +16,8 @@ const hatchSource={url:'https://github.com/Tenandone/tilessurvive/blob/main/data
 const clone=v=>JSON.parse(JSON.stringify(v)),norm=s=>String(s).normalize('NFKC').replace(/\s+/g,' ').trim();
 const petHub=file=>/^(ko|en|ja|ru|zh-tw)\/database\/pet-system\/index\.html$/.test(file);
 function image(file,src){
+ const portrait=require('../data/foundation-40/hero-portrait-assets-41.json').assets.find(a=>new RegExp('/heroes/'+(file.startsWith('en/')&&a.entity==='tarzan'?'tazan':a.entity)+'/index\\.html$').test(file));
+ if(portrait&&src===(portrait.entity==='knotty'?'/img/heroes/knotty-game.webp':'/img/heroes/'+portrait.entity+'.webp'))return portrait.src;
  const pet=src.match(/^\/img\/pets\/(snowball|dodo|buckler|fluffy|hardhead|shadow|starhorn)\.webp$/);
  if(pet&&/^(ko|en|ja|ru|zh-tw)\/database\/pet-system\//.test(file))return '/img/game-40/pets/'+pet[1]+'.webp';
  if(/\/heroes\/undine\/index\.html$/.test(file)&&src==='/img/heroes/undine-game.webp')return '/img/game-40/heroes/undine.webp';
@@ -141,6 +143,14 @@ function reviewedRows(values,file,complete){
  return rows.map(row=>row.length===5?[officialLabels.replaceLabels(row[0],pairs),...row.slice(1)]:row);
 }
 function reviewedScript(file,baseline){
+ if(file==='js/data-workbench-30.js'){
+  // The deployed table-condition patch changed only the localized copy prefix.
+  const fixed=require('child_process').execFileSync('git',['show','eff8b08fcc9d111f7ce6beae4de488156111ca6f:'+file],{cwd:require('path').resolve(__dirname,'..'),encoding:'utf8'});
+  const start='  function numeric(raw) {';
+  assert(baseline.includes(start)&&fixed.includes(start),'Immutable calculator boundary');
+  assert.equal(fixed.slice(fixed.indexOf(start)),baseline.slice(baseline.indexOf(start)),'All original calculator logic is unchanged');
+  return fixed;
+ }
  const edits={
   'js/platform-search.js':[['i.title + " " + i.description + " " + i.type + " " + i.url','i.title + " " + i.description + " " + (i.aliases || \'\') + " " + i.type + " " + i.url'],['fetch("/data/search-index.json")','fetch("/data/search-index.json", { cache: "no-cache" })']],
   'js/platform.js':[['i.textContent.normalize("NFKC").toLocaleLowerCase(lang).includes(q)','(i.textContent + \' \' + (i.dataset.searchAliases || \'\')).normalize("NFKC").toLocaleLowerCase(lang).includes(q)']],

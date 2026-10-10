@@ -1,0 +1,280 @@
+{
+  "version": 1,
+  "assets": [
+    {
+      "id": "hero-portrait:beka",
+      "entity": "beka",
+      "kind": "hero-portrait",
+      "src": "/img/game-41/heroes/beka.webp",
+      "width": 388,
+      "height": 712,
+      "bytes": 170492,
+      "sha256": "9145f4293e011505bebaf7626c751a0e20957130184f55bb1e3d3fb82cf09fc3",
+      "version": "2.6.200"
+    },
+    {
+      "id": "hero-portrait:candy",
+      "entity": "candy",
+      "kind": "hero-portrait",
+      "src": "/img/game-41/heroes/candy.webp",
+      "width": 388,
+      "height": 712,
+      "bytes": 158726,
+      "sha256": "ff25554ee9ad0203c7cbd2a844c4c0e293594ee4a659a9891c9df834564b051c",
+      "version": "2.6.200"
+    },
+    {
+      "id": "hero-portrait:chef-ken",
+      "entity": "chef-ken",
+      "kind": "hero-portrait",
+      "src": "/img/game-41/heroes/chef-ken.webp",
+      "width": 596,
+      "height": 712,
+      "bytes": 222878,
+      "sha256": "6777b5fc67f6ba2e6422e9964bde9422b6a31be5184909520ed1c0f71e7812a2",
+      "version": "2.6.200"
+    },
+    {
+      "id": "hero-portrait:eva",
+      "entity": "eva",
+      "kind": "hero-portrait",
+      "src": "/img/game-41/heroes/eva.webp",
+      "width": 388,
+      "height": 712,
+      "bytes": 133906,
+      "sha256": "47476f2d3c956be19fd3abaabbf2f06cbc3533d5f92146d824c1a02201cc29a5",
+      "version": "2.6.200"
+    },
+    {
+      "id": "hero-portrait:freya",
+      "entity": "freya",
+      "kind": "hero-portrait",
+      "src": "/img/game-41/heroes/freya.webp",
+      "width": 596,
+      "height": 712,
+      "bytes": 179902,
+      "sha256": "34a6ab58d7c1c4f8ca33f53cea39a98f8446c8b13577a2d17314ea8c59e5bfcb",
+      "version": "2.6.200"
+    },
+    {
+      "id": "hero-portrait:ghost",
+      "entity": "ghost",
+      "kind": "hero-portrait",
+      "src": "/img/game-41/heroes/ghost.webp",
+      "width": 596,
+      "height": 712,
+      "bytes": 170092,
+      "sha256": "5dcf9e5ed112ab8158071dc147f1d0d13ed263098180a838ccdd5324637dec0d",
+      "version": "2.6.200"
+    },
+    {
+      "id": "hero-portrait:jacob",
+      "entity": "jacob",
+      "kind": "hero-portrait",
+      "src": "/img/game-41/heroes/jacob.webp",
+      "width": 452,
+      "height": 712,
+      "bytes": 181350,
+      "sha256": "9688436a36379bea32c683b481b4464e6ac6912b5b98b2470356a8bd7bde5c3e",
+      "version": "2.6.200"
+    },
+    {
+      "id": "hero-portrait:kiki",
+      "entity": "kiki",
+      "kind": "hero-portrait",
+      "src": "/img/game-41/heroes/kiki.webp",
+      "width": 488,
+      "height": 712,
+      "bytes": 213726,
+      "sha256": "056f6046a72f7e0bf45f457a67b7732c97a86de29078b6935e41dc777e44c4c8",
+      "version": "2.6.200"
+    },
+    {
+      "id": "hero-portrait:kiron",
+      "entity": "kiron",
+      "kind": "hero-portrait",
+      "src": "/img/game-41/heroes/kiron.webp",
+      "width": 752,
+      "height": 712,
+      "bytes": 222468,
+      "sha256": "c52b284e1dff6873170ff6c0ee9ff9668631f04fc6429ff8c7779b51d003c97d",
+      "version": "2.6.200"
+    },
+    {
+      "id": "hero-portrait:knotty",
+      "entity": "knotty",
+      "kind": "hero-portrait",
+      "src": "/img/game-41/heroes/knotty.webp",
+      "width": 596,
+      "height": 712,
+      "bytes": 194826,
+      "sha256": "62146c61d7f40538969d1cfdb12856a16de379094271df88d060b189a9f8b498",
+      "version": "2.6.200"
+    },
+    {
+      "id": "hero-portrait:laila",
+      "entity": "laila",
+      "kind": "hero-portrait",
+      "src": "/img/game-41/heroes/laila.webp",
+      "width": 596,
+      "height": 712,
+      "bytes": 186588,
+      "sha256": "ed13920670d248292d34730ffabfadb42c8be3093c67eea98277b75bf375e9ff",
+      "version": "2.6.200"
+    },
+    {
+      "id": "hero-portrait:light",
+      "entity": "light",
+      "kind": "hero-portrait",
+      "src": "/img/game-41/heroes/light.webp",
+      "width": 644,
+      "height": 712,
+      "bytes": 268048,
+      "sha256": "164bab64f9ee1cb044a233c7673391d01024a7aa9109843e68c778860ffc6de6",
+      "version": "2.6.200"
+    },
+    {
+      "id": "hero-portrait:lucky",
+      "entity": "lucky",
+      "kind": "hero-portrait",
+      "src": "/img/game-41/heroes/lucky.webp",
+      "width": 388,
+      "height": 712,
+      "bytes": 157286,
+      "sha256": "f8b8bdfb44294e42d4314cc034b407daccea8ab3d13b5e63dcc9a4003ea0b00e",
+      "version": "2.6.200"
+    },
+    {
+      "id": "hero-portrait:maddy",
+      "entity": "maddy",
+      "kind": "hero-portrait",
+      "src": "/img/game-41/heroes/maddy.webp",
+      "width": 388,
+      "height": 712,
+      "bytes": 185870,
+      "sha256": "12ee081a8e8bb827cc530a4a88e5ea3328ae51e7de30effc3b2766a366f5b78d",
+      "version": "2.6.200"
+    },
+    {
+      "id": "hero-portrait:mike",
+      "entity": "mike",
+      "kind": "hero-portrait",
+      "src": "/img/game-41/heroes/mike.webp",
+      "width": 596,
+      "height": 712,
+      "bytes": 308076,
+      "sha256": "20e2fe90ff66aaf42fd56dd48409c0ac4c0ef6bb9d2da2617c59b3324feb1544",
+      "version": "2.6.200"
+    },
+    {
+      "id": "hero-portrait:nikola",
+      "entity": "nikola",
+      "kind": "hero-portrait",
+      "src": "/img/game-41/heroes/nikola.webp",
+      "width": 596,
+      "height": 712,
+      "bytes": 183524,
+      "sha256": "0f5d7f0247e033f424dbc935c0c1278c272f72a389da612c57f5171bb8a9682f",
+      "version": "2.6.200"
+    },
+    {
+      "id": "hero-portrait:ray",
+      "entity": "ray",
+      "kind": "hero-portrait",
+      "src": "/img/game-41/heroes/ray.webp",
+      "width": 596,
+      "height": 712,
+      "bytes": 199762,
+      "sha256": "e1de94ee5d69de91cf4b4a5d328d7191d5dcbeaa001469dbfcff813e550dadfb",
+      "version": "2.6.200"
+    },
+    {
+      "id": "hero-portrait:rosie",
+      "entity": "rosie",
+      "kind": "hero-portrait",
+      "src": "/img/game-41/heroes/rosie.webp",
+      "width": 596,
+      "height": 712,
+      "bytes": 171672,
+      "sha256": "c8809937d46909882e97a9071f75daa659a47d43a9c7d010c2f5b533b4480e85",
+      "version": "2.6.200"
+    },
+    {
+      "id": "hero-portrait:rusty",
+      "entity": "rusty",
+      "kind": "hero-portrait",
+      "src": "/img/game-41/heroes/rusty.webp",
+      "width": 596,
+      "height": 712,
+      "bytes": 271308,
+      "sha256": "6ac2c0cd85f655ecf6db20c45542071170888062f52fdcd4437d9bd0fc1eb38d",
+      "version": "2.6.200"
+    },
+    {
+      "id": "hero-portrait:sarge",
+      "entity": "sarge",
+      "kind": "hero-portrait",
+      "src": "/img/game-41/heroes/sarge.webp",
+      "width": 388,
+      "height": 712,
+      "bytes": 199936,
+      "sha256": "a9a8d83ee4d0ac6a04a152f8bdd69227080d70ba4400082699aa762c6ba25cdc",
+      "version": "2.6.200"
+    },
+    {
+      "id": "hero-portrait:shark",
+      "entity": "shark",
+      "kind": "hero-portrait",
+      "src": "/img/game-41/heroes/shark.webp",
+      "width": 640,
+      "height": 712,
+      "bytes": 300148,
+      "sha256": "e08c8094830b125c754b673747094a9b159c60052f6b77cd1a1ee01659462b20",
+      "version": "2.6.200"
+    },
+    {
+      "id": "hero-portrait:tara",
+      "entity": "tara",
+      "kind": "hero-portrait",
+      "src": "/img/game-41/heroes/tara.webp",
+      "width": 560,
+      "height": 712,
+      "bytes": 225044,
+      "sha256": "cf7c5ba7fe4d1c8743448a538030a28640ee2f407e0baf3cb0a141b28efd31ea",
+      "version": "2.6.200"
+    },
+    {
+      "id": "hero-portrait:tarzan",
+      "entity": "tarzan",
+      "kind": "hero-portrait",
+      "src": "/img/game-41/heroes/tarzan.webp",
+      "width": 520,
+      "height": 712,
+      "bytes": 273466,
+      "sha256": "3952144aa8f8905dc6e1a344d778112a00ed65c8ba840135136880df0ed41b9d",
+      "version": "2.6.200"
+    },
+    {
+      "id": "hero-portrait:tony",
+      "entity": "tony",
+      "kind": "hero-portrait",
+      "src": "/img/game-41/heroes/tony.webp",
+      "width": 388,
+      "height": 712,
+      "bytes": 150706,
+      "sha256": "bc0d1cd61c915e11cc50fca96cfbc37e784866226150099c573f4bd3c9a01798",
+      "version": "2.6.200"
+    },
+    {
+      "id": "hero-portrait:travis",
+      "entity": "travis",
+      "kind": "hero-portrait",
+      "src": "/img/game-41/heroes/travis.webp",
+      "width": 388,
+      "height": 712,
+      "bytes": 180660,
+      "sha256": "c7fdf0a831edfd124c3a61f86047a265e5ea878694e396d81af8848b2e6efff1",
+      "version": "2.6.200"
+    }
+  ]
+}

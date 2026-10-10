@@ -6,8 +6,10 @@ const old=JSON.parse(execFileSync('git',['show',`${baseline}:data/search-index.j
 const index=JSON.parse(fs.readFileSync(path.join(root,'data/search-index.json'),'utf8'));
 const gear=require('../data/foundation-40/hero-gear-levels-41.json'),pets=require('../data/foundation-40/pet-training-profiles-41.json'),official=require('./lib/official-locales-40'),reviewed=require('./integration-41-test-allowances');
 const langs=['ko','en','ja','ru','zh-tw'],heroIds=['beka','candy','jacob','kiki','kiron','laila','light','maddy','mike','nikola','ray','rosie','shark','tara','tarzan','tony','undine'];
+const vipIds=['stamina-10','arena-ticket','normal-recruitment-coin','wood-100k','epic-hero-fragment','hero-exp-10k'];
+const explorer=require('../data/foundation-40/explorer.json'),itemCopy=require('../data/foundation-40/explorer-copy');
 let groups=0;
-assert.equal(old.items.length,545);assert.equal(index.itemCount,635);assert.equal(index.items.length,635);assert.equal(new Set(index.items.map(i=>i.url)).size,635);
+assert.equal(old.items.length,545);assert.equal(index.itemCount,665);assert.equal(index.items.length,665);assert.equal(new Set(index.items.map(i=>i.url)).size,665);
 const correctedDuration={ko:'선택한 대기열의 남은 시간을 20시간 줄입니다.',en:'Reduces the selected queue countdown by 20 hours.',ja:'選択した待ち時間を20時間短縮。',ru:'Сокращает выбранную очередь на 20 часов.','zh-tw':'縮短所選佇列的倒數時間20小時。'};
 let corrected=0;
 for(const prior of old.items){
@@ -22,20 +24,23 @@ assert(!/\{(?:hours|minutes)\}/.test(JSON.stringify(index.items)),'Search descri
 groups++;
 assert.deepEqual(gear.gears.map(g=>g.id).sort(),heroIds.slice().sort());
 const oldURLs=new Set(old.items.map(i=>i.url)),added=index.items.filter(i=>!oldURLs.has(i.url));
-const expectedURLs=langs.flatMap(lang=>[...heroIds.map(id=>official.entries(lang).find(h=>h.type==='heroes'&&h.entity.id===id).route+'#hero-primary-gear-levels-41'),`/${lang}/database/pet-system/#pet-training-scope-41`]);
+const expectedURLs=langs.flatMap(lang=>[...heroIds.map(id=>official.entries(lang).find(h=>h.type==='heroes'&&h.entity.id===id).route+'#hero-primary-gear-levels-41'),`/${lang}/database/pet-system/#pet-training-scope-41`,...vipIds.map(id=>`/${lang}/database/items/#${id}`)]);
 assert.deepEqual(added.map(i=>i.url).sort(),expectedURLs.sort());groups++;
 for(const lang of langs){
- const local=added.filter(i=>i.language===lang);assert.equal(local.length,18);
+ const local=added.filter(i=>i.language===lang);assert.equal(local.length,24);
  for(const item of local){
   const [route,anchor]=item.url.split('#'),document=parseHTML(fs.readFileSync(path.join(root,route,'index.html'),'utf8')).document;
   assert(document.getElementById(anchor),'Destination anchor must exist');assert((lang==='zh-tw'?['zh-tw','zh-Hant']:[lang]).includes(document.documentElement.lang),'Destination uses the expected language');
-  assert.deepEqual(Object.keys(item),['language','type','title','description','url','aliases']);
+  assert.deepEqual(Object.keys(item),vipIds.includes(anchor)?['language','type','title','description','url']:['language','type','title','description','url','aliases']);
   assert(!JSON.stringify(item).match(/(?:[A-Za-z]:\\|snapshotPath|sourceSha256|InternalId|STRUCTURED|\.bin\b|\.lua\b)/));
   if(anchor==='hero-primary-gear-levels-41'){
    assert.equal(item.type,old.items.find(i=>i.url===route).type,'Use the existing localized hero filter category');
    const entry=official.entries(lang).find(h=>h.route===route);assert(item.title.startsWith(entry.entity.names[lang]+' · '));
    assert(item.description.startsWith(entry.entity.gear.name[lang]+' · '+entry.entity.gear.skillName[lang]+' · '));
    assert.equal(reviewed.reviewedGearTables(document,lang,route).size,2);
+  }else if(vipIds.includes(anchor)){
+   const source=explorer.items.find(i=>i.id===anchor);assert(source);assert.equal(item.type,'database');assert.equal(item.title,itemCopy[lang][anchor]);if(lang==='ko')assert.equal(item.title,source.nameKo);
+   assert(document.getElementById(anchor).textContent.includes(source.descriptions[lang]));
   }else{
    reviewed.assertPetSelection(document,lang);
    assert.equal(item.aliases,pets.pets.flatMap(p=>[p.names[lang],p.resourceNames[lang]]).join(' '));
@@ -57,4 +62,4 @@ function run(missing){
 run();groups++;
 assert.throws(()=>run({route:'/ko/heroes/beka/',anchor:'hero-primary-gear-levels-41'}),/Missing reviewed search anchor/);groups++;
 assert.throws(()=>run({route:'/ko/database/pet-system/',anchor:'pet-training-scope-41'}),/Missing reviewed search anchor/);groups++;
-console.log(JSON.stringify({passed:true,groups,oldEntriesPreserved:540,reviewedDurationCorrections:5,addedGearAnchors:85,addedPetAnchors:5,totalEntries:635,scope:'Baseline objects with five exact duration corrections, exact reviewed additions, localized labels and material aliases, existing visible anchors, source-field boundary, actual builder no-op and rejection paths'}));
+console.log(JSON.stringify({passed:true,groups,oldEntriesPreserved:540,reviewedDurationCorrections:5,addedGearAnchors:85,addedPetAnchors:5,addedItemAnchors:30,totalEntries:665,scope:'Baseline objects with five exact duration corrections, exact reviewed additions, localized labels and material aliases, existing visible anchors, source-field boundary, actual builder no-op and rejection paths'}));

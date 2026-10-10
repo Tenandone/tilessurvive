@@ -1,13 +1,27 @@
 {
-  "generatedAt": "2026-10-09T19:03:52.516Z",
-  "itemCount": 635,
+  "generatedAt": "2026-10-09T23:58:46.539Z",
+  "itemCount": 665,
   "items": [
+    {
+      "language": "en",
+      "type": "database",
+      "title": "10,000 Hero EXP",
+      "description": "10000 영웅 경험치 · Grants 10,000 Hero Exp. · Item sources & uses",
+      "url": "/en/database/items/#hero-exp-10k"
+    },
     {
       "language": "en",
       "type": "database",
       "title": "100K Food",
       "description": "100k 식량 · Use to obtain the stated resource amount. · Item sources & uses",
       "url": "/en/database/items/#food-100k"
+    },
+    {
+      "language": "en",
+      "type": "database",
+      "title": "100K Wood",
+      "description": "100k 목재 · Use to obtain the stated resource amount. · Item sources & uses",
+      "url": "/en/database/items/#wood-100k"
     },
     {
       "language": "en",
@@ -78,6 +92,13 @@
       "title": "Arcadian Conquest · occupation rules | TilesSurvive.net",
       "description": "The contest lasts 2 hours from v2.5.600. The following occupation and reward values are from the guide dated 2026-01-07: Victory requires 90 minutes of cumulative occupation or the longest total occupation. Four towers remove 2% of garrison troops per strike; intervals decrease from 4 to 1 minute as occupation continues. Arcadia or tower occupation gives 10,000 points per 60 seconds. Rallies support 5 allied teams. Alert-zone settlements relocate 60 minutes before start; relocation is free and Peace Flares disabled from 50 minutes before start to the end. Each Chief receives at most one Governor Pack per event. Troop-tier casualty/kill points and reward quantities are unconfirmed.",
       "url": "/en/events/arcadian-conquest/"
+    },
+    {
+      "language": "en",
+      "type": "database",
+      "title": "Arena Challenge Ticket",
+      "description": "아레나 도전권 · Adds more Arena Challenge attempts. Extra attempts beyond the limit are cleared when the season updates. · Item sources & uses",
+      "url": "/en/database/items/#arena-ticket"
     },
     {
       "language": "en",
@@ -207,6 +228,13 @@
       "title": "Enlistment Office | Tiles Survive Buildings | TilesSurvive.net",
       "description": "Detailed building page for the Enlistment Office in Tiles Survive, covering Loyalty, recruitable troop count, capacity, and operating rules.",
       "url": "/en/buildings/enlistment-office/"
+    },
+    {
+      "language": "en",
+      "type": "database",
+      "title": "Epic Hero Fragment",
+      "description": "에픽 영웅 조각 · Can be exchanged for a Fragment of any Epic Hero you currently own. · Item sources & uses",
+      "url": "/en/database/items/#epic-hero-fragment"
     },
     {
       "language": "en",
@@ -675,10 +703,24 @@
     {
       "language": "en",
       "type": "database",
+      "title": "Small Chief Stamina",
+      "description": "지휘관 기력 10 · Increases your Chief Stamina by 10. · Item sources & uses",
+      "url": "/en/database/items/#stamina-10"
+    },
+    {
+      "language": "en",
+      "type": "database",
       "title": "Snowball · Pet Acquisition, Stats & Growth | TilesSurvive.net",
       "description": "Snowball — Role: Attacker · Acquisition probability · Observed stats",
       "url": "/en/database/pet-system/snowball/",
       "aliases": "Snowball"
+    },
+    {
+      "language": "en",
+      "type": "database",
+      "title": "Standard Recruitment Token",
+      "description": "일반 모집 코인 · Used for Standard Hero Recruitments. · Item sources & uses",
+      "url": "/en/database/items/#normal-recruitment-coin"
     },
     {
       "language": "en",
@@ -1017,6 +1059,13 @@
     {
       "language": "ja",
       "type": "database",
+      "title": "木材100K",
+      "description": "100k 목재 · 使用すると表示量の資源を獲得。 · アイテムの入手先・用途",
+      "url": "/ja/database/items/#wood-100k"
+    },
+    {
+      "language": "ja",
+      "type": "database",
       "title": "木材10K",
       "description": "10k 목재 · 使用すると表示量の資源を獲得。 · アイテムの入手先・用途",
       "url": "/ja/database/items/#wood-10k"
@@ -1073,6 +1122,13 @@
     {
       "language": "ja",
       "type": "database",
+      "title": "英雄EXP10,000Pt",
+      "description": "10000 영웅 경험치 · 獲得すると自動で英雄EXP+10,000Pt · アイテムの入手先・用途",
+      "url": "/ja/database/items/#hero-exp-10k"
+    },
+    {
+      "language": "ja",
+      "type": "database",
       "title": "英雄スキルブック",
       "description": "영웅 스킬북 · 英雄のスキルレベルアップに使用。 · アイテムの入手先・用途",
       "url": "/ja/database/items/#hero-skill-book"
@@ -1097,6 +1153,13 @@
       "title": "育成素材と用途 | TilesSurvive.net",
       "description": "餌は50・100・200・500 EXP。重複孵化でマークを獲得し、共通マークは1:1交換。訓練は各段階20回、1～4段階の費用は100・200・400・600個。装備素材は経験値、ハンマーは属性変更に使います。",
       "url": "/ja/database/growth-materials/"
+    },
+    {
+      "language": "ja",
+      "type": "database",
+      "title": "一般募集カード",
+      "description": "일반 모집 코인 · 一般英雄募集用アイテム · アイテムの入手先・用途",
+      "url": "/ja/database/items/#normal-recruitment-coin"
     },
     {
       "language": "ja",
@@ -1146,6 +1209,13 @@
       "title": "呪詛重傷の碑 | タイルズサバイバル 建物 | TilesSurvive.net",
       "description": "タイルズサバイバルの呪詛重傷の碑の概要、敵軍軽傷転換率、戦闘力をレベル別に整理した詳細ページです。",
       "url": "/ja/buildings/cursed-wound-stele/"
+    },
+    {
+      "language": "ja",
+      "type": "database",
+      "title": "指揮官スタミナ10",
+      "description": "지휘관 기력 10 · 指揮官スタミナを10Pt回復する · アイテムの入手先・用途",
+      "url": "/ja/database/items/#stamina-10"
     },
     {
       "language": "ja",
@@ -1341,6 +1411,13 @@
       "description": "タイルズサバイバルの英雄エヴァ詳細ページです。英雄紹介、英雄系統、戦闘特性、最大レベルおよび星ランクステータス、星ランクボーナス、スキルをひと目で確認できます。",
       "url": "/ja/heroes/eva/",
       "aliases": "エヴァ Eva"
+    },
+    {
+      "language": "ja",
+      "type": "database",
+      "title": "エピック英雄の欠片",
+      "description": "에픽 영웅 조각 · 所有するエピック英雄の欠片と交換できる · アイテムの入手先・用途",
+      "url": "/ja/database/items/#epic-hero-fragment"
     },
     {
       "language": "ja",
@@ -1610,6 +1687,13 @@
       "title": "デイリーミッションのポイント計画 | TilesSurvive.net",
       "description": "取り組むミッションを選び、目標の宝箱までに必要なポイントを計算します。",
       "url": "/ja/events/daily-missions/"
+    },
+    {
+      "language": "ja",
+      "type": "database",
+      "title": "デュエル挑戦券",
+      "description": "아레나 도전권 · デュエル挑戦回数を増やす。挑戦上限を超えた回数はデュエルのシーズン更新時にリセットされる · アイテムの入手先・用途",
+      "url": "/ja/database/items/#arena-ticket"
     },
     {
       "language": "ja",
@@ -1885,6 +1969,20 @@
       "description": "タイルサバイバル英雄ローズの詳細ページです。SSR英雄基準で、英雄紹介、戦闘特性、最大レベル＆星ランクステータス、星ランクボーナス、スキル、専用装備をひと目で確認できます。",
       "url": "/ja/heroes/rosie/",
       "aliases": "ローズ Rosie"
+    },
+    {
+      "language": "ko",
+      "type": "database",
+      "title": "10000 영웅 경험치",
+      "description": "10000 영웅 경험치 · 획득 시 영웅 경험치 10000 자동 증가 · 아이템 획득처·사용처",
+      "url": "/ko/database/items/#hero-exp-10k"
+    },
+    {
+      "language": "ko",
+      "type": "database",
+      "title": "100k 목재",
+      "description": "100k 목재 · 사용 시 표기된 양의 자원을 얻습니다. · 아이템 획득처·사용처",
+      "url": "/ko/database/items/#wood-100k"
     },
     {
       "language": "ko",
@@ -2327,6 +2425,13 @@
     {
       "language": "ko",
       "type": "database",
+      "title": "아레나 도전권",
+      "description": "아레나 도전권 · 아레나 도전 횟수가 증가하며, 도전 상한을 초과하는 횟수는 아레나의 시즌 업데이트 시 초기화됩니다. · 아이템 획득처·사용처",
+      "url": "/ko/database/items/#arena-ticket"
+    },
+    {
+      "language": "ko",
+      "type": "database",
       "title": "아이템 획득처·사용처 | TilesSurvive.net",
       "description": "재료를 선택해 연결된 보상, 상점과 성장 정보를 찾아보세요.",
       "url": "/ko/database/items/"
@@ -2338,6 +2443,13 @@
       "description": "타일서바이벌 영웅 에바 상세 페이지입니다. 영웅 소개, 진영, 전투 특성, 최고 레벨 및 성급 속성, 성급 보너스, 스킬을 한눈에 정리했습니다.",
       "url": "/ko/heroes/eva/",
       "aliases": "에바 Eva"
+    },
+    {
+      "language": "ko",
+      "type": "database",
+      "title": "에픽 영웅 조각",
+      "description": "에픽 영웅 조각 · 보유한 에픽 영웅의 조각으로 교환할 수 있다. · 아이템 획득처·사용처",
+      "url": "/ko/database/items/#epic-hero-fragment"
     },
     {
       "language": "ko",
@@ -2427,6 +2539,13 @@
     },
     {
       "language": "ko",
+      "type": "database",
+      "title": "일반 모집 코인",
+      "description": "일반 모집 코인 · 일반 영웅 모집 시 소모 아이템 · 아이템 획득처·사용처",
+      "url": "/ko/database/items/#normal-recruitment-coin"
+    },
+    {
+      "language": "ko",
       "type": "event",
       "title": "일일 미션 점수 계획 | TilesSurvive.net",
       "description": "완료할 임무를 선택해 목표 상자까지 필요한 점수를 계산하세요.",
@@ -2510,6 +2629,13 @@
       "title": "주둔소 | 타일서바이벌 건물 | TilesSurvive.net",
       "description": "타일서바이벌 주둔소의 최대 병사 수량과 병사 운용 정보를 정리한 상세 페이지입니다.",
       "url": "/ko/buildings/garrison-station/"
+    },
+    {
+      "language": "ko",
+      "type": "database",
+      "title": "지휘관 기력 10",
+      "description": "지휘관 기력 10 · 지휘관 기력 10 회복 · 아이템 획득처·사용처",
+      "url": "/ko/database/items/#stamina-10"
     },
     {
       "language": "ko",
@@ -2831,6 +2957,20 @@
     {
       "language": "ru",
       "type": "database",
+      "title": "10 000 ед. опыта героя",
+      "description": "10000 영웅 경험치 · Дает 10 000 опыта героя. · Где получить и использовать предметы",
+      "url": "/ru/database/items/#hero-exp-10k"
+    },
+    {
+      "language": "ru",
+      "type": "database",
+      "title": "100K ед. древесины",
+      "description": "100k 목재 · При использовании даёт указанное количество ресурса. · Где получить и использовать предметы",
+      "url": "/ru/database/items/#wood-100k"
+    },
+    {
+      "language": "ru",
+      "type": "database",
       "title": "100K ед. еды.",
       "description": "100k 식량 · При использовании даёт указанное количество ресурса. · Где получить и использовать предметы",
       "url": "/ru/database/items/#food-100k"
@@ -2936,6 +3076,13 @@
       "description": "Белек — Роль: Атака · Вероятность получения · Зафиксированные характеристики",
       "url": "/ru/database/pet-system/snowball/",
       "aliases": "Snowball"
+    },
+    {
+      "language": "ru",
+      "type": "database",
+      "title": "Билет сражения на Арене героев",
+      "description": "아레나 도전권 · Добавляет больше попыток сражения на арене. Дополнительные попытки сверх лимита сбрасываются при смене сезона. · Где получить и использовать предметы",
+      "url": "/ru/database/items/#arena-ticket"
     },
     {
       "language": "ru",
@@ -3080,6 +3227,13 @@
     },
     {
       "language": "ru",
+      "type": "database",
+      "title": "Жетон стандартного призыва",
+      "description": "일반 모집 코인 · Используется для стандартного призыва героев. · Где получить и использовать предметы",
+      "url": "/ru/database/items/#normal-recruitment-coin"
+    },
+    {
+      "language": "ru",
       "type": "tool",
       "title": "Инструменты Tiles Survive | помощник событий, калькуляторы, поиск наград | TilesSurvive.net",
       "description": "Хаб инструментов Tiles Survive: помощник событий, калькулятор ускорений, поиск наград и полезные ссылки на базу данных.",
@@ -3213,6 +3367,13 @@
       "description": "Громовой щит · Мощь грома · Основные эффекты на ур. 1–15",
       "url": "/ru/heroes/mike/#hero-primary-gear-levels-41",
       "aliases": "Mike"
+    },
+    {
+      "language": "ru",
+      "type": "database",
+      "title": "Малая выносливость шефа",
+      "description": "지휘관 기력 10 · Повышает вашу выносливость шефа на 10. · Где получить и использовать предметы",
+      "url": "/ru/database/items/#stamina-10"
     },
     {
       "language": "ru",
@@ -3734,6 +3895,13 @@
     },
     {
       "language": "ru",
+      "type": "database",
+      "title": "Фрагмент эпического героя",
+      "description": "에픽 영웅 조각 · Можно обменять на фрагмент любого имеющегося у вас эпического героя. · Где получить и использовать предметы",
+      "url": "/ru/database/items/#epic-hero-fragment"
+    },
+    {
+      "language": "ru",
       "type": "heroe",
       "title": "Фрейя — Навыки, характеристики и развитие | TilesSurvive.net",
       "description": "Подробная страница героя Фрейя в Tiles Survive. Здесь в одном месте собраны описание героя, боевые особенности, характеристики на максимальном уровне и звёздности, бонус звёздности и навыки.",
@@ -3773,9 +3941,30 @@
     {
       "language": "zh-tw",
       "type": "database",
+      "title": "10000點英雄經驗",
+      "description": "10000 영웅 경험치 · 獲得後自動增加10000點英雄經驗值 · 道具取得途徑與用途",
+      "url": "/zh-tw/database/items/#hero-exp-10k"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
+      "title": "100k木材",
+      "description": "100k 목재 · 使用後獲得標示數量的資源。 · 道具取得途徑與用途",
+      "url": "/zh-tw/database/items/#wood-100k"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
       "title": "100k食物",
       "description": "100k 식량 · 使用後獲得標示數量的資源。 · 道具取得途徑與用途",
       "url": "/zh-tw/database/items/#food-100k"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
+      "title": "10點指揮官體力",
+      "description": "지휘관 기력 10 · 恢復10點指揮官體力 · 道具取得途徑與用途",
+      "url": "/zh-tw/database/items/#stamina-10"
     },
     {
       "language": "zh-tw",
@@ -3834,6 +4023,13 @@
       "title": "巨獸細胞消耗表 | Tiles Survive 資料庫 | TilesSurvive.net",
       "description": "Tiles Survive 的巨獸細胞星級強化消耗表。可一眼查看 1 星到 60 星的各階段消耗、合計與累計。",
       "url": "/zh-tw/database/behemoth-cell/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
+      "title": "競技挑戰券",
+      "description": "아레나 도전권 · 增加競技挑戰次數，賽季更新時，系統會清除超過上限的挑戰次數 · 道具取得途徑與用途",
+      "url": "/zh-tw/database/items/#arena-ticket"
     },
     {
       "language": "zh-tw",
@@ -4078,6 +4274,13 @@
       "title": "發電所 | 點點木作戰 建築 | TilesSurvive.net",
       "description": "整理點點木作戰發電所升級費用、時間、戰鬥力與技能資訊的詳細頁面。",
       "url": "/zh-tw/buildings/power-plant/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
+      "title": "普通招募幣",
+      "description": "일반 모집 코인 · 普通英雄招募消耗道具 · 道具取得途徑與用途",
+      "url": "/zh-tw/database/items/#normal-recruitment-coin"
     },
     {
       "language": "zh-tw",
@@ -4339,6 +4542,13 @@
       "title": "入伍辦公室 | Tiles Survive 建築 | TilesSurvive.net",
       "description": "整理 Tiles Survive 入伍辦公室的忠誠值、可徵兵數量、收容容量與運作規則的詳細頁面。",
       "url": "/zh-tw/buildings/enlistment-office/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
+      "title": "紫色英雄碎片",
+      "description": "에픽 영웅 조각 · 可兌換已擁有的紫色英雄碎片 · 道具取得途徑與用途",
+      "url": "/zh-tw/database/items/#epic-hero-fragment"
     },
     {
       "language": "zh-tw",

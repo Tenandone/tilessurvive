@@ -352,6 +352,105 @@
       "sources": [
         "battle-solo-speedup"
       ]
+    },
+    {
+      "id": "stamina-10",
+      "nameKo": "지휘관 기력 10",
+      "category": "growth",
+      "use": "stamina-recovery",
+      "sources": [
+        "vip-stamina-free",
+        "vip-stamina-paid"
+      ],
+      "descriptions": {
+        "ko": "지휘관 기력 10 회복",
+        "en": "Increases your Chief Stamina by 10.",
+        "ja": "指揮官スタミナを10Pt回復する",
+        "ru": "Повышает вашу выносливость шефа на 10.",
+        "zh-tw": "恢復10點指揮官體力"
+      }
+    },
+    {
+      "id": "arena-ticket",
+      "nameKo": "아레나 도전권",
+      "category": "event",
+      "use": "arena-challenge",
+      "sources": [
+        "vip-arena-ticket"
+      ],
+      "descriptions": {
+        "ko": "아레나 도전 횟수가 증가하며, 도전 상한을 초과하는 횟수는 아레나의 시즌 업데이트 시 초기화됩니다.",
+        "en": "Adds more Arena Challenge attempts. Extra attempts beyond the limit are cleared when the season updates.",
+        "ja": "デュエル挑戦回数を増やす。挑戦上限を超えた回数はデュエルのシーズン更新時にリセットされる",
+        "ru": "Добавляет больше попыток сражения на арене. Дополнительные попытки сверх лимита сбрасываются при смене сезона.",
+        "zh-tw": "增加競技挑戰次數，賽季更新時，系統會清除超過上限的挑戰次數"
+      }
+    },
+    {
+      "id": "normal-recruitment-coin",
+      "nameKo": "일반 모집 코인",
+      "category": "growth",
+      "use": "normal-recruitment",
+      "sources": [
+        "vip-normal-recruit"
+      ],
+      "descriptions": {
+        "ko": "일반 영웅 모집 시 소모 아이템",
+        "en": "Used for Standard Hero Recruitments.",
+        "ja": "一般英雄募集用アイテム",
+        "ru": "Используется для стандартного призыва героев.",
+        "zh-tw": "普通英雄招募消耗道具"
+      }
+    },
+    {
+      "id": "wood-100k",
+      "nameKo": "100k 목재",
+      "category": "resource",
+      "use": "resource-item",
+      "sources": [
+        "vip-wood"
+      ],
+      "descriptions": {
+        "ko": "사용 시 100k 목재 획득",
+        "en": "Grants your Settlement 100K Wood.",
+        "ja": "使用すると、木材100Kを獲得する",
+        "ru": "Дает поселению 100K ед. древесины.",
+        "zh-tw": "使用後獲得100k木材"
+      },
+      "resource": "wood",
+      "resourceAmount": 100000
+    },
+    {
+      "id": "epic-hero-fragment",
+      "nameKo": "에픽 영웅 조각",
+      "category": "growth",
+      "use": "epic-hero-exchange",
+      "sources": [
+        "vip-epic-fragment"
+      ],
+      "descriptions": {
+        "ko": "보유한 에픽 영웅의 조각으로 교환할 수 있다.",
+        "en": "Can be exchanged for a Fragment of any Epic Hero you currently own.",
+        "ja": "所有するエピック英雄の欠片と交換できる",
+        "ru": "Можно обменять на фрагмент любого имеющегося у вас эпического героя.",
+        "zh-tw": "可兌換已擁有的紫色英雄碎片"
+      }
+    },
+    {
+      "id": "hero-exp-10k",
+      "nameKo": "10000 영웅 경험치",
+      "category": "growth",
+      "use": "hero-exp",
+      "sources": [
+        "vip-hero-exp"
+      ],
+      "descriptions": {
+        "ko": "획득 시 영웅 경험치 10000 자동 증가",
+        "en": "Grants 10,000 Hero Exp.",
+        "ja": "獲得すると自動で英雄EXP+10,000Pt",
+        "ru": "Дает 10 000 опыта героя.",
+        "zh-tw": "獲得後自動增加10000點英雄經驗值"
+      }
     }
   ],
   "offers": [
@@ -383,6 +482,104 @@
       "evidenceIds": [
         "ui-023",
         "ui-025"
+      ]
+    },
+    {
+      "id": "vip-stamina-free",
+      "shop": "vip",
+      "item": "stamina-10",
+      "quantity": null,
+      "cost": 0,
+      "currency": "diamonds",
+      "conditions": {
+        "accountLimit": null
+      },
+      "evidenceIds": [
+        "ui-023"
+      ]
+    },
+    {
+      "id": "vip-arena-ticket",
+      "shop": "vip",
+      "item": "arena-ticket",
+      "quantity": null,
+      "cost": 250,
+      "currency": "diamonds",
+      "conditions": {
+        "accountLimit": null
+      },
+      "evidenceIds": [
+        "ui-023"
+      ]
+    },
+    {
+      "id": "vip-stamina-paid",
+      "shop": "vip",
+      "item": "stamina-10",
+      "quantity": null,
+      "cost": 240,
+      "currency": "diamonds",
+      "conditions": {
+        "accountLimit": null
+      },
+      "evidenceIds": [
+        "ui-023"
+      ]
+    },
+    {
+      "id": "vip-normal-recruit",
+      "shop": "vip",
+      "item": "normal-recruitment-coin",
+      "quantity": null,
+      "cost": 250,
+      "currency": "diamonds",
+      "conditions": {
+        "accountLimit": null
+      },
+      "evidenceIds": [
+        "ui-023"
+      ]
+    },
+    {
+      "id": "vip-wood",
+      "shop": "vip",
+      "item": "wood-100k",
+      "quantity": null,
+      "cost": 20,
+      "currency": "diamonds",
+      "conditions": {
+        "accountLimit": null
+      },
+      "evidenceIds": [
+        "ui-023"
+      ]
+    },
+    {
+      "id": "vip-epic-fragment",
+      "shop": "vip",
+      "item": "epic-hero-fragment",
+      "quantity": null,
+      "cost": 225,
+      "currency": "diamonds",
+      "conditions": {
+        "accountLimit": null
+      },
+      "evidenceIds": [
+        "ui-023"
+      ]
+    },
+    {
+      "id": "vip-hero-exp",
+      "shop": "vip",
+      "item": "hero-exp-10k",
+      "quantity": null,
+      "cost": 30,
+      "currency": "diamonds",
+      "conditions": {
+        "accountLimit": null
+      },
+      "evidenceIds": [
+        "ui-023"
       ]
     }
   ],
@@ -670,5 +867,21 @@
         "blog-1173"
       ]
     }
-  ]
+  ],
+  "vipCatalog": {
+    "offerIds": [
+      "vip-stamina-free",
+      "vip-arena-ticket",
+      "vip-stamina-paid",
+      "vip-normal-recruit",
+      "vip-food",
+      "vip-speedup",
+      "vip-wood",
+      "vip-epic-fragment",
+      "vip-hero-exp"
+    ],
+    "gameVersion": "2.6.200",
+    "observedAt": "2026-10-09",
+    "scope": "observed-session-only"
+  }
 }

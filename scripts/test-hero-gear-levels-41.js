@@ -4,6 +4,13 @@ const root=path.resolve(__dirname,'..'),D=require('../data/foundation-40/hero-ge
 const langs=['ko','en','ja','ru','zh-tw'],ids=['beka','candy','jacob','kiki','kiron','laila','light','maddy','mike','nikola','ray','rosie','shark','tara','tarzan','tony','undine'],base='ebe0cd9f738e1c4e497ad17934139618a40c43f6',sha=x=>crypto.createHash('sha256').update(x).digest('hex');
 const load=(l,id)=>parseHTML(fs.readFileSync(path.join(root,B.route(l,id)),'utf8')).document;
 const text=s=>s.replace(/\s+/g,' ').trim();
+function reviewedPortrait(d,id){
+ const a=require('../data/foundation-40/hero-portrait-assets-41.json').assets.find(a=>a.entity===id);if(!a)return;
+ const image=d.querySelector('.ts3-character-art img');assert(image);
+ assert.equal(image.getAttribute('src'),id==='knotty'?'/img/heroes/knotty-game.webp':'/img/heroes/'+id+'.webp');
+ for(const key of ['src','width','height'])image.setAttribute(key,String(a[key]));
+ image.setAttribute('alt',d.querySelector('main h1').textContent.trim());image.setAttribute('data-game-41-portrait',id);
+}
 test('17 anchored primary-effect profiles pin 255 explicit level rows without unlock/cost fields',()=>{
  assert.equal(sha(JSON.stringify(D)),'c45eb15c9e7647879e9318473dcbd4cf00b8bdaa5bbd8ae1535dc540a5870028');assert.deepEqual(D.gears.map(g=>g.id),ids);assert.equal(D.effectScope,'primary-display-effect');assert.equal(D.gameVersion,'2.6.200');
  for(const g of D.gears){assert.deepEqual(Object.keys(g).sort(),['descriptionTemplate','id','levels']);assert.deepEqual(g.levels.map(r=>r.level),Array.from({length:15},(_,i)=>i+1));assert.deepEqual(Object.keys(g.descriptionTemplate).sort(),langs.slice().sort());for(const l of langs){assert(!/<|>/.test(g.descriptionTemplate[l]));for(const row of g.levels){assert.deepEqual(Object.keys(row).sort(),['args','level']);assert(row.args.every(x=>typeof x==='string'));assert(!/\{\d+\}/.test(M.format(g.descriptionTemplate[l],row.args)));}}}
@@ -15,6 +22,7 @@ test('all 19,125 localized level pairs equal explicit formatter rows, including 
 });
 test('85 existing pages retain every original skill, table, gear paragraph, image, SEO and one middle banner',()=>{
  for(const g of D.gears)for(const l of langs){const route=B.route(l,g.id),old=parseHTML(execFileSync('git',['show',base+':'+route],{cwd:root,encoding:'utf8',maxBuffer:4e6})).document,d=load(l,g.id),block=d.querySelector('[data-hero-gear-levels-41]');assert(block,route);
+  reviewedPortrait(old,g.id);
   const extract=(doc,selector)=>[...doc.querySelectorAll(selector)].map(n=>text(n.outerHTML));
   for(const sel of ['title,meta[name=description],link[rel=canonical],link[hreflang]','.ts-skill-body','main img','.ts-lootbar-slot--hero'])assert.deepEqual(extract(d,sel),extract(old,sel),route+' '+sel);
   const section=doc=>g.id==='undine'?doc.querySelector('[data-hero-observations-40="equipment"]').closest('section'):doc.querySelector('.equipment-grid').closest('section');
@@ -35,6 +43,10 @@ test('actual unchanged client makes every page comparison interactive with corre
   vm.runInNewContext(fs.readFileSync(path.join(root,'js/sea-hero-growth-40.js'),'utf8'),{window,globalThis:window});assert(!form.hidden);handlers.change();const table=d.getElementById('sea-gear-live-table'),cells=table.querySelectorAll('tbody td'),value=M.compareGear(g,l,2,14);assert.deepEqual([...cells].map(n=>n.textContent),[value.from,value.to]);assert.equal(table.querySelectorAll('thead th')[1].textContent,'Lv.2');assert.equal(table.querySelectorAll('thead th')[2].textContent,'Lv.14');assert(form.querySelector('[role=status]').textContent.includes('14'));from='0';handlers.change();assert.equal(form.querySelector('[role=status]').textContent,JSON.parse(d.getElementById('sea-hero-growth-data').textContent).copy.invalid);assert.deepEqual([...cells].map(n=>n.textContent),[value.from,value.to]);let stopped=false;handlers.submit({preventDefault(){stopped=true}});assert(stopped);
  }
 });
-test('source/style reuse and unrelated heroes remain byte-identical to the release baseline',()=>{
- for(const f of ['js/sea-hero-growth-40.js','css/sea-hero-growth-40.css','data/foundation-40/sea-hero-growth.json',...langs.flatMap(l=>['knotty','dave','lagnar'].map(id=>l+'/heroes/'+id+'/index.html'))])assert.equal(sha(fs.readFileSync(path.join(root,f),'utf8').replaceAll('\r\n','\n')),sha(execFileSync('git',['show',base+':'+f],{cwd:root,encoding:'utf8',maxBuffer:4e6}).replaceAll('\r\n','\n')),f);
+test('source/style and other hero content remain byte-identical apart from the reviewed Knotty portrait',()=>{
+ for(const f of ['js/sea-hero-growth-40.js','css/sea-hero-growth-40.css','data/foundation-40/sea-hero-growth.json',...langs.flatMap(l=>['knotty','dave','lagnar'].map(id=>l+'/heroes/'+id+'/index.html'))]){
+  let expected=execFileSync('git',['show',base+':'+f],{cwd:root,encoding:'utf8',maxBuffer:4e6}).replaceAll('\r\n','\n');
+  if(f.includes('/heroes/knotty/')){const d=parseHTML(expected).document,img=d.querySelector('.ts3-character-art img'),oldImage=img.outerHTML;reviewedPortrait(d,'knotty');assert.equal(expected.split(oldImage).length,2);expected=expected.replace(oldImage,img.outerHTML);}
+  assert.equal(sha(fs.readFileSync(path.join(root,f),'utf8').replaceAll('\r\n','\n')),sha(expected),f);
+ }
 });

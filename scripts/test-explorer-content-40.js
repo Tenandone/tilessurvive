@@ -6,6 +6,7 @@ const root=path.resolve(__dirname,'..'),D=require('../data/foundation-40/explore
 const langs=['ko','en','ja','ru','zh-tw'];
 const oldIds=['hero-skill-book','arms-medal','food-10k','wood-10k','metal-10k','speedup-5m','food-100k','undine-gear-fragment'];
 const newIds=['pet-eggs','reforge-hammer','advanced-recruitment-token','speedup-20h'];
+const vipIds=['stamina-10','arena-ticket','normal-recruitment-coin','wood-100k','epic-hero-fragment','hero-exp-10k'];
 const docs=langs.map(lang=>({lang,document:parseHTML(fs.readFileSync(path.join(root,lang,'database/items/index.html'),'utf8')).document}));
 
 test('speedup uses preserve the exact five-minute description and render the twenty-hour model duration in all locales',()=>{
@@ -19,9 +20,9 @@ test('speedup uses preserve the exact five-minute description and render the twe
     assert(!/\{(?:minutes|hours)\}/.test(d.querySelector('main').textContent),lang+' unresolved duration');
   }
 });
-test('twelve curated items preserve the eight existing stable anchors and valid localized routes',()=>{
-  assert.deepEqual(D.items.map(i=>i.id),[...oldIds,...newIds]);
-  assert.equal(new Set(D.items.map(i=>i.id)).size,12);
+test('eighteen curated items preserve the twelve existing stable anchors and valid localized routes',()=>{
+  assert.deepEqual(D.items.map(i=>i.id),[...oldIds,...newIds,...vipIds]);
+  assert.equal(new Set(D.items.map(i=>i.id)).size,18);
   for(const item of D.items){assert(['growth','resource','speedup','event'].includes(item.category));for(const lang of langs){assert(C[lang][item.id]);assert(C[lang][item.use]);if(item.route)assert(fs.existsSync(path.join(root,lang,item.route,'index.html')));}}
 });
 test('new source relations carry primary citations and retain unknown quantities instead of zero assumptions',()=>{
@@ -37,20 +38,39 @@ test('reforge and pass figures keep their documented units and conditions withou
   const benefit=D.packageBenefits[0];assert.equal(D.packageBenefits.length,1);assert.equal(benefit.dailyFreeHealLimitMultiplier,3);assert.equal(benefit.requires,'monthly-pass-active');assert.equal(benefit.baseLimit,null);assert.equal(benefit.price,null);
   assert.equal(D.packages.length,6);assert(D.packages.every(p=>p.currency==='exploration-coin'));
 });
-test('five rendered pages expose sixty unique item targets and retain compact headings and six-offer comparison',()=>{
+test('five rendered pages expose ninety unique item targets and retain compact headings and six-offer comparison',()=>{
   let anchors=0;
   for(const {lang,document:d}of docs){
-    assert.deepEqual([...d.querySelectorAll('[data-item-entry]')].map(n=>n.id),[...oldIds,...newIds]);anchors+=d.querySelectorAll('[data-item-entry]').length;
+    assert.deepEqual([...d.querySelectorAll('[data-item-entry]')].map(n=>n.id),[...oldIds,...newIds,...vipIds]);anchors+=d.querySelectorAll('[data-item-entry]').length;
     const all=[...d.querySelectorAll('[id]')].map(n=>n.id);assert.equal(new Set(all).size,all.length,lang+' duplicate ID');
-    assert.deepEqual([...d.querySelectorAll('main h2')].map(n=>n.id),['items-heading','packages-heading']);
-    assert.equal(d.querySelectorAll('[data-item-entry] h2').length,0);assert.equal(d.querySelectorAll('[data-item-entry] h3').length,24);
+    assert.deepEqual([...d.querySelectorAll('main h2')].map(n=>n.id),['items-heading','vip-offers-heading','packages-heading']);
+    assert.equal(d.querySelectorAll('[data-item-entry] h2').length,0);assert.equal(d.querySelectorAll('[data-item-entry] h3').length,36);
     assert.equal(d.querySelectorAll('[aria-labelledby="packages-heading"] tbody tr').length,6);
     assert.equal(d.querySelectorAll('[data-package-compare] option').length,12);
     assert.equal(d.querySelectorAll('[data-package-benefit="monthly-pass-free-heal"]').length,1);
     assert.equal(d.querySelectorAll('[data-gear-crate-tip]').length,1);
     assert(!/\{(?:basic|advanced|unlock|multiplier)\}|undefined|NaN/.test(d.querySelector('main').textContent));
   }
-  assert.equal(anchors,60);
+  assert.equal(anchors,90);
+});
+
+test('VIP catalog preserves nine observed price pairs, both old offers, and unknown purchase conditions',()=>{
+  const expected=[['vip-stamina-free','stamina-10',0],['vip-arena-ticket','arena-ticket',250],['vip-stamina-paid','stamina-10',240],['vip-normal-recruit','normal-recruitment-coin',250],['vip-food','food-100k',20],['vip-speedup','speedup-5m',60],['vip-wood','wood-100k',20],['vip-epic-fragment','epic-hero-fragment',225],['vip-hero-exp','hero-exp-10k',30]];
+  assert.deepEqual(D.vipCatalog,{offerIds:expected.map(x=>x[0]),gameVersion:'2.6.200',observedAt:'2026-10-09',scope:'observed-session-only'});
+  assert.equal(D.offers.length,9);
+  assert.deepEqual(D.offers.slice(0,2),[
+    {id:'vip-food',shop:'vip',item:'food-100k',quantity:1,cost:20,currency:'diamonds',conditions:{accountLimit:null},evidenceIds:['ui-023','ui-024']},
+    {id:'vip-speedup',shop:'vip',item:'speedup-5m',quantity:1,cost:60,currency:'diamonds',conditions:{accountLimit:null},evidenceIds:['ui-023','ui-025']}
+  ]);
+  for(const [id,item,price]of expected){const offer=D.offers.find(o=>o.id===id);assert.equal(offer.item,item);assert.equal(offer.cost,price);assert.equal(offer.currency,'diamonds');assert.deepEqual(offer.conditions,{accountLimit:null});assert(offer.evidenceIds.includes('ui-023'));}
+  for(const offer of D.offers.slice(2)){assert.equal(offer.quantity,null);for(const key of ['remaining','reset','minimumVipLevel','discount','sourceCandidateRecordKeys','sourceItemInternalId'])assert(!Object.hasOwn(offer,key));}
+  for(const {lang,document:d}of docs){
+    const rows=[...d.querySelectorAll('[aria-labelledby="vip-offers-heading"] tbody tr')];assert.equal(rows.length,9);
+    expected.forEach(([,item,price],i)=>{const a=rows[i].querySelector('a');assert.equal(a.getAttribute('href'),'#'+item);assert.equal(a.textContent,C[lang][item]);assert.equal(rows[i].querySelector('td').textContent,price===0?C[lang].vipFree:new Intl.NumberFormat(lang).format(price)+' '+C[lang].diamonds);});
+    assert.equal(d.querySelector('[aria-labelledby="vip-offers-heading"] .ts40-context').textContent,C[lang].shopCondition);
+    assert(C[lang].shopCondition.includes('2026-10-09'));assert(C[lang].shopCondition.includes('2.6.200'));
+    for(const id of vipIds){const item=D.items.find(i=>i.id===id),entry=d.getElementById(id);assert.equal(entry.querySelector('.ts40-item-body > div:last-child > p').textContent,item.descriptions[lang]);assert(!/\/ (?:0|null|undefined)\b/.test(entry.textContent));}
+  }
 });
 test('translated item labels retain English source identity and source/use links resolve',()=>{
   for(const {lang,document:d}of docs){
