@@ -11,6 +11,7 @@ function approvedContent60Projection(file){
  return ux.catalog(before,lang,entries);
 }
 function restore(d,file){if(!d.documentElement.hasAttribute('data-building-ux-53'))return d;
+ require('./content-phase2-test-allowances').restore(d,file);
  require('./asset-cache-test-allowances').restore(d);
  if(!file)file=new URL(d.querySelector('link[rel=canonical]').href).pathname.slice(1)+'index.html';if(path.isAbsolute(file))file=path.relative(root,file).replaceAll('\\','/');
  const parts=file.split('/'),lang=parts[0],slug=parts.length===4?parts[2]:'';assert(require('../data/building-assets-51.json').languages.includes(lang)&&parts[1]==='buildings','Unapproved building UI route');const before=original(file);let after;

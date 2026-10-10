@@ -8,6 +8,16 @@ const read=f=>fs.readFileSync(path.join(root,f),'utf8'),page=(l,p)=>`${l}/databa
 const baseline=new Map();
 const original=file=>{if(!baseline.has(file))baseline.set(file,cp.execFileSync('git',['show',base+':'+file],{cwd:root,encoding:'utf8',maxBuffer:5e6}));return baseline.get(file);};
 const normalize=s=>s.replace(/\r\n/g,'\n');
+function protectedText(file){
+ const text=read(file);if(file!=='sitemap.xml')return text;
+ const old=normalize(original(file)),urls=[...old.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1]);
+ const buildings=['greenhouse','smelter','lumberyard','refinery','lookout-tower','kitchen','houses','artifact-workshop','lab-2'];
+ const additions=langs.flatMap(lang=>[...buildings.map(id=>`https://tilessurvive.net/${lang}/buildings/${id}/`),...['hopper','snowy','chompy'].map(id=>`https://tilessurvive.net/${lang}/database/pet-system/${id}/`)]);
+ assert.equal(additions.length,72);assert(additions.every(url=>!urls.includes(url)));
+ const expected='<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+[...urls,...additions].sort().map(url=>'<url><loc>'+url+'</loc></url>').join('\n')+'\n</urlset>\n';
+ assert.equal(normalize(text),expected,'Exact original sitemap plus72 approved Phase2 canonical routes');
+ return old;
+}
 function semantic(n){
  if(n.nodeType===3)return n.textContent.trim()?n.textContent:null;
  if(n.nodeType===8)return['comment',n.textContent];
@@ -85,11 +95,15 @@ test('42 static detail pages default to their highest verified effect and expose
 });
 
 test('existing tables, growth forms, official portraits, affiliate URLs and SEO remain unchanged on 48 pages',()=>{
- for(const lang of langs)for(const pet of [...pets,'']){const file=page(lang,pet),before=doc(original(file)),after=doc(read(file));stripOwned(before,lang,pet);stripOwned(after,lang,pet);
+ for(const lang of langs)for(const pet of [...pets,'']){const file=page(lang,pet),before=doc(original(file)),after=doc(read(file));
+  // Validate the entire latest hub first, then compare the historical skill UI.
+  require('./content-phase2-test-allowances').restore(after,file);
+  require('./asset-cache-test-allowances').restore(after);
+  stripOwned(before,lang,pet);stripOwned(after,lang,pet);
   for(const selector of['title,meta,link[rel="canonical"],link[hreflang],script[type="application/ld+json"]','main table','form','main img','a[href*="lootbar"]','script[type="application/json"]'])assert.deepEqual(extract(after,selector),extract(before,selector),`${file}: ${selector}`);
   assert.deepEqual(semantic(after.documentElement),semantic(before.documentElement),file+' complete DOM outside owned skill UI');
  }
- for(const file of['js/database-22.js','js/platform-math.js','js/platform-affiliate.js','js/pet-exp-profiles-40.js','js/pet-training-profiles-41.js','data/foundation-40/pet-exp-profiles.json','data/foundation-40/pet-training-profiles-41.json','data/foundation-40/starhorn-growth.json','data/companions.json','data/expansion-22/database.json','sitemap.xml','robots.txt']){if(file==='data/expansion-22/database.json')require('./client-truth-52-test-allowances').assertSource(JSON.parse(read(file)),JSON.parse(original(file)),file);else assert.equal(normalize(read(file)),normalize(original(file)),file+' unchanged protected file');}
+ for(const file of['js/database-22.js','js/platform-math.js','js/platform-affiliate.js','js/pet-exp-profiles-40.js','js/pet-training-profiles-41.js','data/foundation-40/pet-exp-profiles.json','data/foundation-40/pet-training-profiles-41.json','data/foundation-40/starhorn-growth.json','data/companions.json','data/expansion-22/database.json','sitemap.xml','robots.txt']){if(file==='data/expansion-22/database.json')require('./client-truth-52-test-allowances').assertSource(JSON.parse(read(file)),JSON.parse(original(file)),file);else assert.equal(normalize(protectedText(file)),normalize(original(file)),file+' unchanged protected file');}
 });
 
 test('the builder is byte-idempotent and all roster links retain the existing per-skill anchor scheme',()=>{

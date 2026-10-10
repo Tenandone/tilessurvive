@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-10T22:43:13.310Z",
-  "itemCount": 2559,
+  "generatedAt": "2026-10-10T23:14:16.690Z",
+  "itemCount": 2659,
   "items": [
     {
       "language": "de",
@@ -138,9 +138,65 @@
     {
       "language": "de",
       "type": "building",
+      "title": "Andere Einstellung (D) · Lv.1–10",
+      "description": "Stufe 2 vergleichen: Holz: 200 · Nahrung: 0 · Metall: 0 · Benzin: 0 · Grundzeit: 3 Sek",
+      "url": "/de/buildings/houses/#c60-building-800110-D"
+    },
+    {
+      "language": "de",
+      "type": "building",
+      "title": "Andere Einstellung (D) · Lv.1–10",
+      "description": "Stufe 2 vergleichen: Holz: 200 · Nahrung: 0 · Metall: 0 · Benzin: 0 · Grundzeit: 3 Sek",
+      "url": "/de/buildings/houses/#c60-building-800111-D"
+    },
+    {
+      "language": "de",
+      "type": "building",
+      "title": "Andere Einstellung (D) · Lv.1–10",
+      "description": "Stufe 2 vergleichen: Holz: 300 · Nahrung: 0 · Metall: 0 · Benzin: 0 · Grundzeit: 3 Sek",
+      "url": "/de/buildings/houses/#c60-building-800112-D"
+    },
+    {
+      "language": "de",
+      "type": "building",
+      "title": "Andere Einstellung (D) · Lv.1–10",
+      "description": "Stufe 2 vergleichen: Holz: 300 · Nahrung: 0 · Metall: 0 · Benzin: 0 · Grundzeit: 3 Sek",
+      "url": "/de/buildings/houses/#c60-building-800113-D"
+    },
+    {
+      "language": "de",
+      "type": "building",
+      "title": "Andere Einstellung (D) · Lv.1–10",
+      "description": "Stufe 2 vergleichen: Holz: 300 · Nahrung: 0 · Metall: 0 · Benzin: 0 · Grundzeit: 3 Sek",
+      "url": "/de/buildings/houses/#c60-building-800114-D"
+    },
+    {
+      "language": "de",
+      "type": "building",
+      "title": "Andere Einstellung (D) · Lv.1–10",
+      "description": "Stufe 2 vergleichen: Holz: 300 · Nahrung: 0 · Metall: 0 · Benzin: 0 · Grundzeit: 3 Sek",
+      "url": "/de/buildings/houses/#c60-building-800115-D"
+    },
+    {
+      "language": "de",
+      "type": "building",
+      "title": "Andere Einstellung (D) · Lv.1–10",
+      "description": "Stufe 2 vergleichen: Holz: 200 · Nahrung: 0 · Metall: 0 · Benzin: 0 · Grundzeit: 3 Sek",
+      "url": "/de/buildings/kitchen/#c60-building-800106-D"
+    },
+    {
+      "language": "de",
+      "type": "building",
       "title": "Andere Einstellung (D) · Lv.1–30",
       "description": "Stufe 2 vergleichen: Holz: 810.000 · Nahrung: 647.000 · Metall: 194.300 · Benzin: 97.100 · Grundzeit: 1 Min",
       "url": "/de/buildings/aegis-monument/#c60-building-800148-D"
+    },
+    {
+      "language": "de",
+      "type": "building",
+      "title": "Andere Einstellung (D) · Lv.1–30",
+      "description": "Stufe 2 vergleichen: Holz: 500 · Nahrung: 500 · Metall: 0 · Benzin: 0 · Grundzeit: 3 Sek",
+      "url": "/de/buildings/artifact-workshop/#c60-building-800150-D"
     },
     {
       "language": "de",
@@ -155,6 +211,13 @@
       "title": "Andere Einstellung (D) · Lv.1–30",
       "description": "Stufe 2 vergleichen: Holz: 3.300 · Nahrung: 3.300 · Metall: 0 · Benzin: 0 · Grundzeit: 3 Sek",
       "url": "/de/buildings/garrison-station/#c60-building-800152-D"
+    },
+    {
+      "language": "de",
+      "type": "building",
+      "title": "Andere Einstellung (D) · Lv.1–30",
+      "description": "Stufe 2 vergleichen: Holz: 200 · Nahrung: 0 · Metall: 0 · Benzin: 0 · Grundzeit: 3 Sek",
+      "url": "/de/buildings/greenhouse/#c60-building-800001-D"
     },
     {
       "language": "de",
@@ -183,6 +246,41 @@
       "title": "Andere Einstellung (D) · Lv.1–30",
       "description": "Stufe 2 vergleichen: Holz: 2.000 · Nahrung: 0 · Metall: 0 · Benzin: 0 · Grundzeit: 3 Sek",
       "url": "/de/buildings/lab/#c60-building-800012-D"
+    },
+    {
+      "language": "de",
+      "type": "building",
+      "title": "Andere Einstellung (D) · Lv.1–30",
+      "description": "Stufe 2 vergleichen: Holz: 2.000 · Nahrung: 0 · Metall: 0 · Benzin: 0 · Grundzeit: 3 Sek",
+      "url": "/de/buildings/lab-2/#c60-building-800168-D"
+    },
+    {
+      "language": "de",
+      "type": "building",
+      "title": "Andere Einstellung (D) · Lv.1–30",
+      "description": "Stufe 2 vergleichen: Holz: 2.500 · Nahrung: 2.500 · Metall: 0 · Benzin: 0 · Grundzeit: 6 Sek",
+      "url": "/de/buildings/lookout-tower/#c60-building-800014-D"
+    },
+    {
+      "language": "de",
+      "type": "building",
+      "title": "Andere Einstellung (D) · Lv.1–30",
+      "description": "Stufe 2 vergleichen: Holz: 300 · Nahrung: 0 · Metall: 0 · Benzin: 0 · Grundzeit: 3 Sek",
+      "url": "/de/buildings/lumberyard/#c60-building-800003-D"
+    },
+    {
+      "language": "de",
+      "type": "building",
+      "title": "Andere Einstellung (D) · Lv.1–30",
+      "description": "Stufe 2 vergleichen: Holz: 300 · Nahrung: 0 · Metall: 200 · Benzin: 0 · Grundzeit: 3 Sek",
+      "url": "/de/buildings/refinery/#c60-building-800004-D"
+    },
+    {
+      "language": "de",
+      "type": "building",
+      "title": "Andere Einstellung (D) · Lv.1–30",
+      "description": "Stufe 2 vergleichen: Holz: 300 · Nahrung: 0 · Metall: 250 · Benzin: 0 · Grundzeit: 3 Sek",
+      "url": "/de/buildings/smelter/#c60-building-800002-D"
     },
     {
       "language": "de",
@@ -218,6 +316,13 @@
       "title": "Arkadische Eroberung · Besatzungsregeln | TilesSurvive.net",
       "description": "Seit v2.5.600 dauert der Wettbewerb 2 Stunden. Die folgenden Besetzungs- und Belohnungsregeln stammen aus dem Leitfaden vom 2026-01-07: Für den Sieg sind 90 Minuten Gesamtbesetzungszeit oder die längste Gesamtbesetzung erforderlich. Vier Türme entfernen pro Angriff 2% der Garnisonstruppen; bei anhaltender Besetzung sinkt das Intervall von 4 auf 1 Minute. Die Besetzung von Arcadia oder einem Turm bringt alle 60 Sekunden 10.000 Punkte. Sammelangriffe unterstützen 5 verbündete Teams. Siedlungen in der Warnzone werden 60 Minuten vor Beginn verlegt. Von 50 Minuten vor Beginn bis zum Ende sind Verlegungen kostenlos und Friedensfackeln deaktiviert. Jeder Anführer erhält höchstens ein Gouverneurspaket pro Event. Punkte für Verluste und besiegte Truppen nach Rang sowie Belohnungsmengen sind nicht bestätigt.",
       "url": "/de/events/arcadian-conquest/"
+    },
+    {
+      "language": "de",
+      "type": "building",
+      "title": "Artefaktwerkstatt | Gebäude | TilesSurvive.net",
+      "description": "Artefaktwerkstatt · Grundressourcen, Zeit, Baugegenstände und benötigte Gebäude nach Stufe und Einstellung.",
+      "url": "/de/buildings/artifact-workshop/"
     },
     {
       "language": "de",
@@ -295,6 +400,20 @@
       "title": "Behemoth Cell Kostentabelle | Tiles Survive Datenbank | TilesSurvive.net",
       "description": "Dies ist die Tiles Survive Behemoth Cell Stern Kostentabelle. Sie können die Kosten pro Stufe, die Zwischensumme und die kumulative Gesamtsumme von 1 Star zu 60 Stars auf einen Blick überprüfen.",
       "url": "/de/database/behemoth-cell/"
+    },
+    {
+      "language": "de",
+      "type": "database",
+      "title": "Beißer · Referenz zur Haustierkonfiguration · 2.6.200 | TilesSurvive.net",
+      "description": "Beißer — Konfigurationsdaten für Spielversion 2.6.200. Die aktuelle Veröffentlichung und Verfügbarkeit für einzelne Staaten oder Konten sind nicht bestätigt.",
+      "url": "/de/database/pet-system/chompy/"
+    },
+    {
+      "language": "de",
+      "type": "building",
+      "title": "Benzintank | Gebäude | TilesSurvive.net",
+      "description": "Benzintank · Grundressourcen, Zeit, Baugegenstände und benötigte Gebäude nach Stufe und Einstellung.",
+      "url": "/de/buildings/refinery/"
     },
     {
       "language": "de",
@@ -1054,6 +1173,13 @@
     },
     {
       "language": "de",
+      "type": "building",
+      "title": "Gewächshaus | Gebäude | TilesSurvive.net",
+      "description": "Gewächshaus · Grundressourcen, Zeit, Baugegenstände und benötigte Gebäude nach Stufe und Einstellung.",
+      "url": "/de/buildings/greenhouse/"
+    },
+    {
+      "language": "de",
       "type": "behemoth",
       "title": "Gezeiten-Drache | Tiles Survive Behemoth | TilesSurvive.net",
       "description": "Dies ist die detaillierte Tiles Survive-Behemoth-Seite für Gezeiten-Drache. Es organisiert Level-Upgrade-Effekte, Event-Boosts, Aussehensänderungen, vorgestellte Talente und das Star-Rank-Chart.",
@@ -1118,9 +1244,65 @@
     {
       "language": "de",
       "type": "building",
+      "title": "Grundeinstellung (Original) · Lv.1–10",
+      "description": "Stufe 2 vergleichen: Holz: 2.500 · Nahrung: 2.500 · Metall: 0 · Benzin: 0 · Grundzeit: 0 Sek",
+      "url": "/de/buildings/houses/#c60-building-800110-Original"
+    },
+    {
+      "language": "de",
+      "type": "building",
+      "title": "Grundeinstellung (Original) · Lv.1–10",
+      "description": "Stufe 2 vergleichen: Holz: 2.500 · Nahrung: 2.500 · Metall: 0 · Benzin: 0 · Grundzeit: 0 Sek",
+      "url": "/de/buildings/houses/#c60-building-800111-Original"
+    },
+    {
+      "language": "de",
+      "type": "building",
+      "title": "Grundeinstellung (Original) · Lv.1–10",
+      "description": "Stufe 2 vergleichen: Holz: 2.500 · Nahrung: 2.500 · Metall: 0 · Benzin: 0 · Grundzeit: 0 Sek",
+      "url": "/de/buildings/houses/#c60-building-800112-Original"
+    },
+    {
+      "language": "de",
+      "type": "building",
+      "title": "Grundeinstellung (Original) · Lv.1–10",
+      "description": "Stufe 2 vergleichen: Holz: 2.500 · Nahrung: 2.500 · Metall: 0 · Benzin: 0 · Grundzeit: 2 Min 30 Sek",
+      "url": "/de/buildings/houses/#c60-building-800113-Original"
+    },
+    {
+      "language": "de",
+      "type": "building",
+      "title": "Grundeinstellung (Original) · Lv.1–10",
+      "description": "Stufe 2 vergleichen: Holz: 2.500 · Nahrung: 2.500 · Metall: 0 · Benzin: 0 · Grundzeit: 2 Min 30 Sek",
+      "url": "/de/buildings/houses/#c60-building-800114-Original"
+    },
+    {
+      "language": "de",
+      "type": "building",
+      "title": "Grundeinstellung (Original) · Lv.1–10",
+      "description": "Stufe 2 vergleichen: Holz: 2.500 · Nahrung: 2.500 · Metall: 0 · Benzin: 0 · Grundzeit: 2 Min 30 Sek",
+      "url": "/de/buildings/houses/#c60-building-800115-Original"
+    },
+    {
+      "language": "de",
+      "type": "building",
+      "title": "Grundeinstellung (Original) · Lv.1–10",
+      "description": "Stufe 2 vergleichen: Holz: 2.500 · Nahrung: 2.500 · Metall: 0 · Benzin: 0 · Grundzeit: 0 Sek",
+      "url": "/de/buildings/kitchen/#c60-building-800106-Original"
+    },
+    {
+      "language": "de",
+      "type": "building",
       "title": "Grundeinstellung (Original) · Lv.1–30",
       "description": "Stufe 2 vergleichen: Holz: 3.300 · Nahrung: 3.300 · Metall: 0 · Benzin: 0 · Grundzeit: 3 Min 10 Sek",
       "url": "/de/buildings/aegis-monument/#c60-building-800148-Original"
+    },
+    {
+      "language": "de",
+      "type": "building",
+      "title": "Grundeinstellung (Original) · Lv.1–30",
+      "description": "Stufe 2 vergleichen: Holz: 3.300 · Nahrung: 3.300 · Metall: 0 · Benzin: 0 · Grundzeit: 3 Min 10 Sek",
+      "url": "/de/buildings/artifact-workshop/#c60-building-800150-Original"
     },
     {
       "language": "de",
@@ -1135,6 +1317,13 @@
       "title": "Grundeinstellung (Original) · Lv.1–30",
       "description": "Stufe 2 vergleichen: Holz: 1.250 · Nahrung: 1.250 · Metall: 0 · Benzin: 0 · Grundzeit: 2 Min 40 Sek",
       "url": "/de/buildings/garrison-station/#c60-building-800152-Original"
+    },
+    {
+      "language": "de",
+      "type": "building",
+      "title": "Grundeinstellung (Original) · Lv.1–30",
+      "description": "Stufe 2 vergleichen: Holz: 210 · Nahrung: 210 · Metall: 0 · Benzin: 0 · Grundzeit: 0 Sek",
+      "url": "/de/buildings/greenhouse/#c60-building-800001-Original"
     },
     {
       "language": "de",
@@ -1163,6 +1352,41 @@
       "title": "Grundeinstellung (Original) · Lv.1–30",
       "description": "Stufe 2 vergleichen: Holz: 3.300 · Nahrung: 3.300 · Metall: 0 · Benzin: 0 · Grundzeit: 3 Min 10 Sek",
       "url": "/de/buildings/lab/#c60-building-800012-Original"
+    },
+    {
+      "language": "de",
+      "type": "building",
+      "title": "Grundeinstellung (Original) · Lv.1–30",
+      "description": "Stufe 2 vergleichen: Holz: 3.300 · Nahrung: 3.300 · Metall: 0 · Benzin: 0 · Grundzeit: 3 Min 10 Sek",
+      "url": "/de/buildings/lab-2/#c60-building-800168-Original"
+    },
+    {
+      "language": "de",
+      "type": "building",
+      "title": "Grundeinstellung (Original) · Lv.1–30",
+      "description": "Stufe 2 vergleichen: Holz: 2.500 · Nahrung: 2.500 · Metall: 0 · Benzin: 0 · Grundzeit: 2 Min 30 Sek",
+      "url": "/de/buildings/lookout-tower/#c60-building-800014-Original"
+    },
+    {
+      "language": "de",
+      "type": "building",
+      "title": "Grundeinstellung (Original) · Lv.1–30",
+      "description": "Stufe 2 vergleichen: Holz: 210 · Nahrung: 210 · Metall: 0 · Benzin: 0 · Grundzeit: 0 Sek",
+      "url": "/de/buildings/lumberyard/#c60-building-800003-Original"
+    },
+    {
+      "language": "de",
+      "type": "building",
+      "title": "Grundeinstellung (Original) · Lv.1–30",
+      "description": "Stufe 2 vergleichen: Holz: 210 · Nahrung: 210 · Metall: 0 · Benzin: 0 · Grundzeit: 0 Sek",
+      "url": "/de/buildings/refinery/#c60-building-800004-Original"
+    },
+    {
+      "language": "de",
+      "type": "building",
+      "title": "Grundeinstellung (Original) · Lv.1–30",
+      "description": "Stufe 2 vergleichen: Holz: 210 · Nahrung: 210 · Metall: 0 · Benzin: 0 · Grundzeit: 0 Sek",
+      "url": "/de/buildings/smelter/#c60-building-800002-Original"
     },
     {
       "language": "de",
@@ -1205,6 +1429,13 @@
       "title": "Haifischwelle",
       "description": "Aktiviert die Haiform, verringert erlittenen Schaden um 15% und erzeugt unter Shark ein Wasserfeld. Dieses verursacht 4 Sekunden lang jede Sekunde Flächenschaden in Höhe von 115,37% des Angriffs.",
       "url": "/de/heroes/shark/#character-skill-0-1"
+    },
+    {
+      "language": "de",
+      "type": "building",
+      "title": "Häuser | Gebäude | TilesSurvive.net",
+      "description": "Häuser · Grundressourcen, Zeit, Baugegenstände und benötigte Gebäude nach Stufe und Einstellung.",
+      "url": "/de/buildings/houses/"
     },
     {
       "language": "de",
@@ -1296,6 +1527,20 @@
       "title": "Himmlisches Feld",
       "description": "Verbessert alle Werte des Helden um 50%.",
       "url": "/de/heroes/light/#character-skill-0-3"
+    },
+    {
+      "language": "de",
+      "type": "building",
+      "title": "Holzlager | Gebäude | TilesSurvive.net",
+      "description": "Holzlager · Grundressourcen, Zeit, Baugegenstände und benötigte Gebäude nach Stufe und Einstellung.",
+      "url": "/de/buildings/lumberyard/"
+    },
+    {
+      "language": "de",
+      "type": "database",
+      "title": "Hopser · Referenz zur Haustierkonfiguration · 2.6.200 | TilesSurvive.net",
+      "description": "Hopser — Konfigurationsdaten für Spielversion 2.6.200. Die aktuelle Veröffentlichung und Verfügbarkeit für einzelne Staaten oder Konten sind nicht bestätigt.",
+      "url": "/de/database/pet-system/hopper/"
     },
     {
       "language": "de",
@@ -1467,6 +1712,13 @@
     },
     {
       "language": "de",
+      "type": "building",
+      "title": "Küche | Gebäude | TilesSurvive.net",
+      "description": "Küche · Grundressourcen, Zeit, Baugegenstände und benötigte Gebäude nach Stufe und Einstellung.",
+      "url": "/de/buildings/kitchen/"
+    },
+    {
+      "language": "de",
       "type": "heroe",
       "title": "Kühlwasser",
       "description": "Koreanischer In-Game Name: 완만한 물줄기",
@@ -1478,6 +1730,13 @@
       "title": "Lab | Tiles Survive Gebäude | TilesSurvive.net",
       "description": "Dies ist die Tiles Survive Lab-Bauseite. Es organisiert Development, Economy, Held, Troop, Comm Outpost, Alliance Duel, Special Forces, Infected Elimination und Doomsday Transport Forschungskategorien auf einen Blick.",
       "url": "/de/buildings/lab/"
+    },
+    {
+      "language": "de",
+      "type": "building",
+      "title": "Labor 2 | Gebäude | TilesSurvive.net",
+      "description": "Labor 2 · Grundressourcen, Zeit, Baugegenstände und benötigte Gebäude nach Stufe und Einstellung.",
+      "url": "/de/buildings/lab-2/"
     },
     {
       "language": "de",
@@ -1709,6 +1968,13 @@
       "title": "Nutzungsbedingungen | TilesSurvive.net",
       "description": "Bedingungen für die Nutzung des unabhängigen TilesSurvive.net-Informationshubs.",
       "url": "/de/terms/"
+    },
+    {
+      "language": "de",
+      "type": "building",
+      "title": "Ofen | Gebäude | TilesSurvive.net",
+      "description": "Ofen · Grundressourcen, Zeit, Baugegenstände und benötigte Gebäude nach Stufe und Einstellung.",
+      "url": "/de/buildings/smelter/"
     },
     {
       "language": "de",
@@ -2094,6 +2360,13 @@
       "title": "Schneeball · Tanz im Fluss",
       "description": "Lv.1 · Wenn eingesetzte Helden Ziele mit weniger als 25 % Zustand angreifen, erhöht sich ihr Angriff um 5%.",
       "url": "/de/database/pet-system/snowball/#pet-skill-3-41"
+    },
+    {
+      "language": "de",
+      "type": "database",
+      "title": "Schneeweiß · Referenz zur Haustierkonfiguration · 2.6.200 | TilesSurvive.net",
+      "description": "Schneeweiß — Konfigurationsdaten für Spielversion 2.6.200. Die aktuelle Veröffentlichung und Verfügbarkeit für einzelne Staaten oder Konten sind nicht bestätigt.",
+      "url": "/de/database/pet-system/snowy/"
     },
     {
       "language": "de",
@@ -2678,6 +2951,13 @@
     },
     {
       "language": "de",
+      "type": "building",
+      "title": "Wachturm | Gebäude | TilesSurvive.net",
+      "description": "Wachturm · Grundressourcen, Zeit, Baugegenstände und benötigte Gebäude nach Stufe und Einstellung.",
+      "url": "/de/buildings/lookout-tower/"
+    },
+    {
+      "language": "de",
       "type": "heroe",
       "title": "Waffenschmied",
       "description": "Verbessert alle Werte des Helden um 50%.",
@@ -3154,6 +3434,13 @@
     },
     {
       "language": "en",
+      "type": "building",
+      "title": "Artifact Workshop | Buildings | TilesSurvive.net",
+      "description": "Artifact Workshop · Explore base resources, time, construction items and required buildings by level and configuration.",
+      "url": "/en/buildings/artifact-workshop/"
+    },
+    {
+      "language": "en",
       "type": "heroe",
       "title": "Azure Anthem",
       "description": "Area damage and +15% allied auto-attack damage for 6 seconds. Cooldown: 8 seconds.",
@@ -3418,6 +3705,13 @@
       "description": "Chiron hero detail page for Tiles Survive. This page summarizes the SSR hero overview, combat traits, max level and star stats, star bonus, skills, and signature gear in one place.",
       "url": "/en/heroes/kiron/",
       "aliases": "Chiron"
+    },
+    {
+      "language": "en",
+      "type": "database",
+      "title": "Chompy · Pet configuration reference · 2.6.200 | TilesSurvive.net",
+      "description": "Chompy — Configuration reference for game 2.6.200. Current release and availability for individual States or accounts are unconfirmed.",
+      "url": "/en/database/pet-system/chompy/"
     },
     {
       "language": "en",
@@ -4218,6 +4512,13 @@
     },
     {
       "language": "en",
+      "type": "building",
+      "title": "Greenhouse | Buildings | TilesSurvive.net",
+      "description": "Greenhouse · Explore base resources, time, construction items and required buildings by level and configuration.",
+      "url": "/en/buildings/greenhouse/"
+    },
+    {
+      "language": "en",
       "type": "heroe",
       "title": "Grenade Blitz",
       "description": "Sarge fires a grenade that explodes on impact, dealing damage equal to 804.11% of Attack.",
@@ -4309,10 +4610,24 @@
     },
     {
       "language": "en",
+      "type": "database",
+      "title": "Hopper · Pet configuration reference · 2.6.200 | TilesSurvive.net",
+      "description": "Hopper — Configuration reference for game 2.6.200. Current release and availability for individual States or accounts are unconfirmed.",
+      "url": "/en/database/pet-system/hopper/"
+    },
+    {
+      "language": "en",
       "type": "building",
       "title": "Hospital | Tiles Survive Buildings | TilesSurvive.net",
       "description": "A detailed page for the Tiles Survive Hospital, covering capacity, free healing, healing rules, and key operation notes.",
       "url": "/en/buildings/hospital/"
+    },
+    {
+      "language": "en",
+      "type": "building",
+      "title": "Houses | Buildings | TilesSurvive.net",
+      "description": "Houses · Explore base resources, time, construction items and required buildings by level and configuration.",
+      "url": "/en/buildings/houses/"
     },
     {
       "language": "en",
@@ -4461,6 +4776,13 @@
     },
     {
       "language": "en",
+      "type": "building",
+      "title": "Kitchen | Buildings | TilesSurvive.net",
+      "description": "Kitchen · Explore base resources, time, construction items and required buildings by level and configuration.",
+      "url": "/en/buildings/kitchen/"
+    },
+    {
+      "language": "en",
       "type": "heroe",
       "title": "Knotty · Skills, Stats & Growth | TilesSurvive.net",
       "description": "Mariner heroes · SSR · Marksmen · Skills & effects",
@@ -4473,6 +4795,13 @@
       "title": "Lab | Tiles Survive Buildings | TilesSurvive.net",
       "description": "This is the Tiles Survive Lab building page. It organizes Development, Economy, Hero, Troop, Comm Outpost, Alliance Duel, Special Forces, Infected Elimination, and Doomsday Transport research categories at a glance.",
       "url": "/en/buildings/lab/"
+    },
+    {
+      "language": "en",
+      "type": "building",
+      "title": "Lab 2 | Buildings | TilesSurvive.net",
+      "description": "Lab 2 · Explore base resources, time, construction items and required buildings by level and configuration.",
+      "url": "/en/buildings/lab-2/"
     },
     {
       "language": "en",
@@ -4520,6 +4849,13 @@
     },
     {
       "language": "en",
+      "type": "building",
+      "title": "Lookout Tower | Buildings | TilesSurvive.net",
+      "description": "Lookout Tower · Explore base resources, time, construction items and required buildings by level and configuration.",
+      "url": "/en/buildings/lookout-tower/"
+    },
+    {
+      "language": "en",
       "type": "event",
       "title": "Loot 1 Doomsday Express task(s) from others.",
       "description": "Follow missions through points, rewards and item uses. These categories describe published rules, not a live calendar for every server.",
@@ -4532,6 +4868,13 @@
       "description": "Detailed page for Lucky in Tiles Survive. View hero introduction, ascended hero info, battle traits, max level and 10-star stats, star bonus, and skills in one place.",
       "url": "/en/heroes/lucky/",
       "aliases": "Lucky"
+    },
+    {
+      "language": "en",
+      "type": "building",
+      "title": "Lumberyard | Buildings | TilesSurvive.net",
+      "description": "Lumberyard · Explore base resources, time, construction items and required buildings by level and configuration.",
+      "url": "/en/buildings/lumberyard/"
     },
     {
       "language": "en",
@@ -5000,6 +5343,13 @@
     },
     {
       "language": "en",
+      "type": "building",
+      "title": "Refinery | Buildings | TilesSurvive.net",
+      "description": "Refinery · Explore base resources, time, construction items and required buildings by level and configuration.",
+      "url": "/en/buildings/refinery/"
+    },
+    {
+      "language": "en",
       "type": "database",
       "title": "Reforge Hammer",
       "description": "세련 망치 · Basic Reforge costs 1 hammer; Advanced Reforge costs 25. Advanced unlocks after more than 200 reforges accumulated across all gear. · Item sources & uses",
@@ -5385,6 +5735,13 @@
     },
     {
       "language": "en",
+      "type": "building",
+      "title": "Smelter | Buildings | TilesSurvive.net",
+      "description": "Smelter · Explore base resources, time, construction items and required buildings by level and configuration.",
+      "url": "/en/buildings/smelter/"
+    },
+    {
+      "language": "en",
       "type": "database",
       "title": "Snowball · Flowing Dance",
       "description": "Lv.1 · When deployed Heroes attack targets below 25% Health, their Attack increases by 5%.",
@@ -5418,6 +5775,13 @@
       "title": "Snowball · Tidal Rally",
       "description": "Lv.1 · Increases deployed Heroes' Attack by 1%.",
       "url": "/en/database/pet-system/snowball/#pet-skill-2-41"
+    },
+    {
+      "language": "en",
+      "type": "database",
+      "title": "Snowy · Pet configuration reference · 2.6.200 | TilesSurvive.net",
+      "description": "Snowy — Configuration reference for game 2.6.200. Current release and availability for individual States or accounts are unconfirmed.",
+      "url": "/en/database/pet-system/snowy/"
     },
     {
       "language": "en",
@@ -6077,6 +6441,13 @@
     },
     {
       "language": "ja",
+      "type": "building",
+      "title": "監視塔 | 建物 | TilesSurvive.net",
+      "description": "監視塔 · レベルと設定ごとに基本資源・時間、建設アイテム、必要建物を確認できます。",
+      "url": "/ja/buildings/lookout-tower/"
+    },
+    {
+      "language": "ja",
       "type": "event",
       "title": "感染者ボス支援報酬",
       "description": "エピック支援箱は5分共通加速を確定、15分加速・高級募集券を確率報酬として記載。個数と確率は未記載です。",
@@ -6504,6 +6875,13 @@
     },
     {
       "language": "ja",
+      "type": "building",
+      "title": "木材所 | 建物 | TilesSurvive.net",
+      "description": "木材所 · レベルと設定ごとに基本資源・時間、建設アイテム、必要建物を確認できます。",
+      "url": "/ja/buildings/lumberyard/"
+    },
+    {
+      "language": "ja",
       "type": "guide",
       "title": "目的別の実践ガイド | TilesSurvive.net",
       "description": "目標を選び、数値と素材を確認してから行動順を決めましょう。ゲームの仕様と運用上の提案を分けて説明します。",
@@ -6518,6 +6896,13 @@
     },
     {
       "language": "ja",
+      "type": "building",
+      "title": "民家 | 建物 | TilesSurvive.net",
+      "description": "民家 · レベルと設定ごとに基本資源・時間、建設アイテム、必要建物を確認できます。",
+      "url": "/ja/buildings/houses/"
+    },
+    {
+      "language": "ja",
       "type": "heroe",
       "title": "防衛領域",
       "description": "ここが安全地帯だ。シールドを地面に叩きつけ、防衛領域を展開する。領域内の味方全英雄の被ダメージが20.85%軽減し、同時に敵の攻撃速度が20.85%減少する。マイクが領域内にいる時、毎秒攻撃力83.4%のHPを回復する。",
@@ -6529,6 +6914,13 @@
       "title": "防護訓練",
       "description": "マイクは不屈の信念を持ち、HPが6.95%上昇し、クリティカル耐性が20.85%上昇する。",
       "url": "/ja/heroes/mike/#character-skill-0-2"
+    },
+    {
+      "language": "ja",
+      "type": "building",
+      "title": "配電設備 | 建物 | TilesSurvive.net",
+      "description": "配電設備 · レベルと設定ごとに基本資源・時間、建設アイテム、必要建物を確認できます。",
+      "url": "/ja/buildings/artifact-workshop/"
     },
     {
       "language": "ja",
@@ -7050,6 +7442,20 @@
     },
     {
       "language": "ja",
+      "type": "building",
+      "title": "製錬所 | 建物 | TilesSurvive.net",
+      "description": "製錬所 · レベルと設定ごとに基本資源・時間、建設アイテム、必要建物を確認できます。",
+      "url": "/ja/buildings/smelter/"
+    },
+    {
+      "language": "ja",
+      "type": "building",
+      "title": "製油所 | 建物 | TilesSurvive.net",
+      "description": "製油所 · レベルと設定ごとに基本資源・時間、建設アイテム、必要建物を確認できます。",
+      "url": "/ja/buildings/refinery/"
+    },
+    {
+      "language": "ja",
       "type": "event",
       "title": "終末エクスプレスで1回強奪する",
       "description": "任務からポイント、報酬、アイテムの用途まで確認できます。公開ルールの分類であり、全サーバーの開催予定表ではありません。",
@@ -7327,6 +7733,20 @@
       "title": "確認するゲームデータ",
       "description": "シーズンIVはサーバー進行に応じて順次公開。v2.6.100では同盟脱退後48時間、Dragon Isle・Light & Night・Frost & Fireに参加制限があります。",
       "url": "/ja/guides/season-preparation/#guide-facts"
+    },
+    {
+      "language": "ja",
+      "type": "building",
+      "title": "厨房 | 建物 | TilesSurvive.net",
+      "description": "厨房 · レベルと設定ごとに基本資源・時間、建設アイテム、必要建物を確認できます。",
+      "url": "/ja/buildings/kitchen/"
+    },
+    {
+      "language": "ja",
+      "type": "building",
+      "title": "実験室2 | 建物 | TilesSurvive.net",
+      "description": "実験室2 · レベルと設定ごとに基本資源・時間、建設アイテム、必要建物を確認できます。",
+      "url": "/ja/buildings/lab-2/"
     },
     {
       "language": "ja",
@@ -7691,6 +8111,13 @@
       "title": "毎日ログイン × 1",
       "description": "任務からポイント、報酬、アイテムの用途まで確認できます。公開ルールの分類であり、全サーバーの開催予定表ではありません。",
       "url": "/ja/events/#daily-task-login"
+    },
+    {
+      "language": "ja",
+      "type": "building",
+      "title": "温室 | 建物 | TilesSurvive.net",
+      "description": "温室 · レベルと設定ごとに基本資源・時間、建設アイテム、必要建物を確認できます。",
+      "url": "/ja/buildings/greenhouse/"
     },
     {
       "language": "ja",
@@ -8334,6 +8761,13 @@
     {
       "language": "ja",
       "type": "database",
+      "title": "シロ · ペット設定資料 · 2.6.200 | TilesSurvive.net",
+      "description": "シロ — ゲーム2.6.200の設定資料です。現在の実装状況とサーバー・アカウントごとの利用可否は未確認です。",
+      "url": "/ja/database/pet-system/snowy/"
+    },
+    {
+      "language": "ja",
+      "type": "database",
       "title": "スキルブック消費表 | タイルズサバイバル データベース | TilesSurvive.net",
       "description": "タイルズサバイバルのスキルブック消費表です。戦闘スキルレベル1から40までのスキルブック消費量と最終必要数量をまとめました。",
       "url": "/ja/database/skill-book/"
@@ -8704,6 +9138,13 @@
     },
     {
       "language": "ja",
+      "type": "database",
+      "title": "パックン · ペット設定資料 · 2.6.200 | TilesSurvive.net",
+      "description": "パックン — ゲーム2.6.200の設定資料です。現在の実装状況とサーバー・アカウントごとの利用可否は未確認です。",
+      "url": "/ja/database/pet-system/chompy/"
+    },
+    {
+      "language": "ja",
       "type": "heroe",
       "title": "パルスブラスト",
       "description": "素早く引き金を引き、二丁拳銃からエネルギーパルスを連射。敵に141.78%のダメージを与える。",
@@ -8817,6 +9258,13 @@
       "title": "ヘルグラフティ",
       "description": "英雄の追加効果が10%増加する。",
       "url": "/ja/heroes/ghost/#character-skill-0-2"
+    },
+    {
+      "language": "ja",
+      "type": "database",
+      "title": "ホッパー · ペット設定資料 · 2.6.200 | TilesSurvive.net",
+      "description": "ホッパー — ゲーム2.6.200の設定資料です。現在の実装状況とサーバー・アカウントごとの利用可否は未確認です。",
+      "url": "/ja/database/pet-system/hopper/"
     },
     {
       "language": "ja",
@@ -9147,6 +9595,13 @@
     },
     {
       "language": "ko",
+      "type": "building",
+      "title": "2번 실험실 | 건물 | TilesSurvive.net",
+      "description": "2번 실험실 · 레벨별 기본 자원·시간, 건설 아이템과 선행 건물 정보를 설정별로 확인하세요.",
+      "url": "/ko/buildings/lab-2/"
+    },
+    {
+      "language": "ko",
       "type": "database",
       "title": "5분 일반 가속",
       "description": "5분 일반 가속 · 선택한 대기열의 남은 시간을 5분 줄입니다. · 아이템 획득처·사용처",
@@ -9165,6 +9620,13 @@
       "title": "가속 누적 120분 사용",
       "description": "미션에서 점수와 보상, 아이템 사용처까지 이어서 확인하세요. 아래 분류는 공개된 규칙의 범위이며 모든 서버의 현재 일정표가 아닙니다.",
       "url": "/ko/events/#daily-task-speedup-minutes"
+    },
+    {
+      "language": "ko",
+      "type": "building",
+      "title": "감시탑 | 건물 | TilesSurvive.net",
+      "description": "감시탑 · 레벨별 기본 자원·시간, 건설 아이템과 선행 건물 정보를 설정별로 확인하세요.",
+      "url": "/ko/buildings/lookout-tower/"
     },
     {
       "language": "ko",
@@ -9649,6 +10111,13 @@
     },
     {
       "language": "ko",
+      "type": "building",
+      "title": "도구 공방 | 건물 | TilesSurvive.net",
+      "description": "도구 공방 · 레벨별 기본 자원·시간, 건설 아이템과 선행 건물 정보를 설정별로 확인하세요.",
+      "url": "/ko/buildings/artifact-workshop/"
+    },
+    {
+      "language": "ko",
       "type": "database",
       "title": "도도 · 격려의 환호",
       "description": "Lv.6 · 라쿤이 작은 손을 흔들며 동료를 응원합니다. 전투 시작 시 랜덤으로 영웅 2명의 공격력을 10% 증가시키며, 10초간 지속됩니다.",
@@ -9868,6 +10337,13 @@
     },
     {
       "language": "ko",
+      "type": "building",
+      "title": "목재 공방 | 건물 | TilesSurvive.net",
+      "description": "목재 공방 · 레벨별 기본 자원·시간, 건설 아이템과 선행 건물 정보를 설정별로 확인하세요.",
+      "url": "/ko/buildings/lumberyard/"
+    },
+    {
+      "language": "ko",
       "type": "guide",
       "title": "목표별 실전 공략 | TilesSurvive.net",
       "description": "오늘 달성할 목표를 고르고, 필요한 수치와 재료를 확인한 뒤 행동 순서를 정하세요. 게임 규칙과 운영 추천을 나누어 설명합니다.",
@@ -9910,6 +10386,13 @@
     },
     {
       "language": "ko",
+      "type": "building",
+      "title": "민가 | 건물 | TilesSurvive.net",
+      "description": "민가 · 레벨별 기본 자원·시간, 건설 아이템과 선행 건물 정보를 설정별로 확인하세요.",
+      "url": "/ko/buildings/houses/"
+    },
+    {
+      "language": "ko",
       "type": "heroe",
       "title": "바다의 송가",
       "description": "범위 피해와 아군 일반 공격 피해 +15%, 6초 지속. 재사용 8초.",
@@ -9949,6 +10432,13 @@
       "title": "방폭 영역",
       "description": "방패를 지면에 내리쳐 방폭 영역을 전개합니다. 영역 내 아군의 받는 대미지와 적의 공격 속도를 감소시키고, 마이크가 영역 내에 있을 때 체력을 회복합니다.",
       "url": "/ko/heroes/mike/#character-skill-0-1"
+    },
+    {
+      "language": "ko",
+      "type": "database",
+      "title": "백설 · 펫 설정 자료 · 2.6.200 | TilesSurvive.net",
+      "description": "백설 — 게임 2.6.200의 설정 자료입니다. 현재 출시 여부와 서버·계정별 이용 가능 여부는 확인되지 않았습니다.",
+      "url": "/ko/database/pet-system/snowy/"
     },
     {
       "language": "ko",
@@ -10685,6 +11175,13 @@
     },
     {
       "language": "ko",
+      "type": "building",
+      "title": "온실 | 건물 | TilesSurvive.net",
+      "description": "온실 · 레벨별 기본 자원·시간, 건설 아이템과 선행 건물 정보를 설정별로 확인하세요.",
+      "url": "/ko/buildings/greenhouse/"
+    },
+    {
+      "language": "ko",
       "type": "heroe",
       "title": "완만한 물줄기",
       "description": "적군 전체의 공격력과 방어력을 감소시킵니다.",
@@ -11289,10 +11786,24 @@
     },
     {
       "language": "ko",
+      "type": "building",
+      "title": "정유 공방 | 건물 | TilesSurvive.net",
+      "description": "정유 공방 · 레벨별 기본 자원·시간, 건설 아이템과 선행 건물 정보를 설정별로 확인하세요.",
+      "url": "/ko/buildings/refinery/"
+    },
+    {
+      "language": "ko",
       "type": "heroe",
       "title": "정조준 명중",
       "description": "저격측으로 적군 목표를 조준하고 안정적으로 발포하여 공격력 139%의 대미지를 줍니다.",
       "url": "/ko/heroes/travis/#character-skill-0-0"
+    },
+    {
+      "language": "ko",
+      "type": "building",
+      "title": "제련 공방 | 건물 | TilesSurvive.net",
+      "description": "제련 공방 · 레벨별 기본 자원·시간, 건설 아이템과 선행 건물 정보를 설정별로 확인하세요.",
+      "url": "/ko/buildings/smelter/"
     },
     {
       "language": "ko",
@@ -11323,6 +11834,13 @@
       "title": "주둔소 | 타일서바이벌 건물 | TilesSurvive.net",
       "description": "타일서바이벌 주둔소의 최대 병사 수량과 병사 운용 정보를 정리한 상세 페이지입니다.",
       "url": "/ko/buildings/garrison-station/"
+    },
+    {
+      "language": "ko",
+      "type": "building",
+      "title": "주방 | 건물 | TilesSurvive.net",
+      "description": "주방 · 레벨별 기본 자원·시간, 건설 아이템과 선행 건물 정보를 설정별로 확인하세요.",
+      "url": "/ko/buildings/kitchen/"
     },
     {
       "language": "ko",
@@ -11438,6 +11956,13 @@
       "title": "청춘 무적",
       "description": "영웅의 각 속성이 50% 증가합니다.",
       "url": "/ko/heroes/candy/#character-skill-0-3"
+    },
+    {
+      "language": "ko",
+      "type": "database",
+      "title": "촘피 · 펫 설정 자료 · 2.6.200 | TilesSurvive.net",
+      "description": "촘피 — 게임 2.6.200의 설정 자료입니다. 현재 출시 여부와 서버·계정별 이용 가능 여부는 확인되지 않았습니다.",
+      "url": "/ko/database/pet-system/chompy/"
     },
     {
       "language": "ko",
@@ -11962,6 +12487,13 @@
       "title": "호스 분사",
       "description": "물줄기로 목표를 공격합니다. 표시된 피해 계수의 기준 능력치는 명시되지 않습니다.",
       "url": "/ko/heroes/dave/#dave-skill-auto"
+    },
+    {
+      "language": "ko",
+      "type": "database",
+      "title": "호퍼 · 펫 설정 자료 · 2.6.200 | TilesSurvive.net",
+      "description": "호퍼 — 게임 2.6.200의 설정 자료입니다. 현재 출시 여부와 서버·계정별 이용 가능 여부는 확인되지 않았습니다.",
+      "url": "/ko/database/pet-system/hopper/"
     },
     {
       "language": "ko",
@@ -12899,6 +13431,13 @@
     },
     {
       "language": "ru",
+      "type": "building",
+      "title": "Дома | Здания | TilesSurvive.net",
+      "description": "Дома · Базовые ресурсы, время, строительные предметы и необходимые здания по уровням и настройкам.",
+      "url": "/ru/buildings/houses/"
+    },
+    {
+      "language": "ru",
       "type": "heroe",
       "title": "Дух стальной крови",
       "description": "Нападает как тигр и защищается как стена, увеличивая личные ATK и DEF на 8.34%.",
@@ -13010,6 +13549,13 @@
       "title": "Жетон стандартного призыва",
       "description": "일반 모집 코인 · Используется для стандартного призыва героев. · Где получить и использовать предметы",
       "url": "/ru/database/items/#normal-recruitment-coin"
+    },
+    {
+      "language": "ru",
+      "type": "building",
+      "title": "Завод | Здания | TilesSurvive.net",
+      "description": "Завод · Базовые ресурсы, время, строительные предметы и необходимые здания по уровням и настройкам.",
+      "url": "/ru/buildings/refinery/"
     },
     {
       "language": "ru",
@@ -13247,10 +13793,24 @@
     },
     {
       "language": "ru",
+      "type": "database",
+      "title": "Кусь-кусь · Справочник настроек питомца · 2.6.200 | TilesSurvive.net",
+      "description": "Кусь-кусь — Настройки версии игры 2.6.200. Текущий выпуск и доступность для отдельных штатов или аккаунтов не подтверждены.",
+      "url": "/ru/database/pet-system/chompy/"
+    },
+    {
+      "language": "ru",
       "type": "heroe",
       "title": "Кутеж",
       "description": "Ур.1: радиус взрыва +100%, урон +50% на 5 секунд. Перезарядка: 11 секунд.",
       "url": "/ru/heroes/knotty/#character-skill-0-1"
+    },
+    {
+      "language": "ru",
+      "type": "building",
+      "title": "Кухня | Здания | TilesSurvive.net",
+      "description": "Кухня · Базовые ресурсы, время, строительные предметы и необходимые здания по уровням и настройкам.",
+      "url": "/ru/buildings/kitchen/"
     },
     {
       "language": "ru",
@@ -13267,6 +13827,13 @@
       "description": "Волна · Акваклык · Основные эффекты на ур. 1–15",
       "url": "/ru/heroes/candy/#hero-primary-gear-levels-41",
       "aliases": "Candy"
+    },
+    {
+      "language": "ru",
+      "type": "building",
+      "title": "Лаборатория 2 | Здания | TilesSurvive.net",
+      "description": "Лаборатория 2 · Базовые ресурсы, время, строительные предметы и необходимые здания по уровням и настройкам.",
+      "url": "/ru/buildings/lab-2/"
     },
     {
       "language": "ru",
@@ -13312,6 +13879,13 @@
       "title": "Легендарный грифон | Бегемоты Tiles Survive | TilesSurvive.net",
       "description": "Подробная страница бегемота Легендарный грифон в Tiles Survive. Здесь собраны улучшение звёздного ранга, усиление событий, изменение внешнего вида, ключевые таланты и таблица звёзд.",
       "url": "/ru/behemoths/legend-griffin/"
+    },
+    {
+      "language": "ru",
+      "type": "building",
+      "title": "Лесопилка | Здания | TilesSurvive.net",
+      "description": "Лесопилка · Базовые ресурсы, время, строительные предметы и необходимые здания по уровням и настройкам.",
+      "url": "/ru/buildings/lumberyard/"
     },
     {
       "language": "ru",
@@ -13363,6 +13937,13 @@
       "title": "Мастер-кузнец",
       "description": "Это глобальный эффект. Улучшенные ремесленные навыки увеличивают скорость производства на Iron Mine в базе на 100%.",
       "url": "/ru/heroes/travis/#character-skill-0-2"
+    },
+    {
+      "language": "ru",
+      "type": "building",
+      "title": "Мастерская артефактов | Здания | TilesSurvive.net",
+      "description": "Мастерская артефактов · Базовые ресурсы, время, строительные предметы и необходимые здания по уровням и настройкам.",
+      "url": "/ru/buildings/artifact-workshop/"
     },
     {
       "language": "ru",
@@ -13798,6 +14379,13 @@
     },
     {
       "language": "ru",
+      "type": "building",
+      "title": "Плавильня | Здания | TilesSurvive.net",
+      "description": "Плавильня · Базовые ресурсы, время, строительные предметы и необходимые здания по уровням и настройкам.",
+      "url": "/ru/buildings/smelter/"
+    },
+    {
+      "language": "ru",
       "type": "guide",
       "title": "План ежедневных заданий и очков",
       "description": "Дойти до следующего сундука доступными заданиями",
@@ -14070,6 +14658,13 @@
       "title": "Прохладная вода",
       "description": "Название в корейской версии: 완만한 물줄기",
       "url": "/ru/heroes/dave/#dave-skill-passive"
+    },
+    {
+      "language": "ru",
+      "type": "database",
+      "title": "Прыг-прыг · Справочник настроек питомца · 2.6.200 | TilesSurvive.net",
+      "description": "Прыг-прыг — Настройки версии игры 2.6.200. Текущий выпуск и доступность для отдельных штатов или аккаунтов не подтверждены.",
+      "url": "/ru/database/pet-system/hopper/"
     },
     {
       "language": "ru",
@@ -14447,6 +15042,20 @@
     },
     {
       "language": "ru",
+      "type": "building",
+      "title": "Смотровая вышка | Здания | TilesSurvive.net",
+      "description": "Смотровая вышка · Базовые ресурсы, время, строительные предметы и необходимые здания по уровням и настройкам.",
+      "url": "/ru/buildings/lookout-tower/"
+    },
+    {
+      "language": "ru",
+      "type": "database",
+      "title": "Снежок · Справочник настроек питомца · 2.6.200 | TilesSurvive.net",
+      "description": "Снежок — Настройки версии игры 2.6.200. Текущий выпуск и доступность для отдельных штатов или аккаунтов не подтверждены.",
+      "url": "/ru/database/pet-system/snowy/"
+    },
+    {
+      "language": "ru",
       "type": "event",
       "title": "Совершить покупок: 1",
       "description": "Переходите от заданий к очкам, наградам и использованию предметов. Это опубликованные правила, а не расписание всех серверов.",
@@ -14778,6 +15387,13 @@
       "title": "Тело из стали",
       "description": "Все характеристики героя увеличиваются на 20%.",
       "url": "/ru/heroes/eva/#character-skill-0-3"
+    },
+    {
+      "language": "ru",
+      "type": "building",
+      "title": "Теплица | Здания | TilesSurvive.net",
+      "description": "Теплица · Базовые ресурсы, время, строительные предметы и необходимые здания по уровням и настройкам.",
+      "url": "/ru/buildings/greenhouse/"
     },
     {
       "language": "ru",
@@ -15217,6 +15833,13 @@
     },
     {
       "language": "zh-tw",
+      "type": "building",
+      "title": "2號實驗室 | 建築 | TilesSurvive.net",
+      "description": "2號實驗室 · 依等級與設定查看基本資源、時間、建造道具及前置建築。",
+      "url": "/zh-tw/buildings/lab-2/"
+    },
+    {
+      "language": "zh-tw",
       "type": "database",
       "title": "5分鐘通用加速",
       "description": "5분 일반 가속 · 縮短所選佇列的倒數時間5分鐘。 · 道具取得途徑與用途",
@@ -15633,6 +16256,13 @@
     },
     {
       "language": "zh-tw",
+      "type": "building",
+      "title": "器具工坊 | 建築 | TilesSurvive.net",
+      "description": "器具工坊 · 依等級與設定查看基本資源、時間、建造道具及前置建築。",
+      "url": "/zh-tw/buildings/artifact-workshop/"
+    },
+    {
+      "language": "zh-tw",
       "type": "database",
       "title": "技能書消耗表 | 點點木作戰 資料庫 | TilesSurvive.net",
       "description": "點點木作戰的技能書消耗表。整理戰鬥技能從等級 1 到 40 的技能書消耗量與最終所需總數。",
@@ -15700,6 +16330,13 @@
     },
     {
       "language": "zh-tw",
+      "type": "database",
+      "title": "大白 · 寵物設定資料 · 2.6.200 | TilesSurvive.net",
+      "description": "大白 — 遊戲2.6.200的設定資料。目前是否推出，以及各州或帳號能否使用，仍未確認。",
+      "url": "/zh-tw/database/pet-system/snowy/"
+    },
+    {
+      "language": "zh-tw",
       "type": "heroe",
       "title": "戴夫 · 技能與解鎖條件 | TilesSurvive.net",
       "description": "以水彈攻擊並降低敵方攻擊力、防禦力的海洋SSR遠程英雄。",
@@ -15733,6 +16370,13 @@
       "title": "淘氣爆彈",
       "description": "對範圍內敵人造成118.15%攻擊力傷害。冷卻1秒。",
       "url": "/zh-tw/heroes/knotty/#character-skill-0-0"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
+      "title": "跳跳 · 寵物設定資料 · 2.6.200 | TilesSurvive.net",
+      "description": "跳跳 — 遊戲2.6.200的設定資料。目前是否推出，以及各州或帳號能否使用，仍未確認。",
+      "url": "/zh-tw/database/pet-system/hopper/"
     },
     {
       "language": "zh-tw",
@@ -15896,6 +16540,13 @@
     },
     {
       "language": "zh-tw",
+      "type": "building",
+      "title": "煉油廠 | 建築 | TilesSurvive.net",
+      "description": "煉油廠 · 依等級與設定查看基本資源、時間、建造道具及前置建築。",
+      "url": "/zh-tw/buildings/refinery/"
+    },
+    {
+      "language": "zh-tw",
       "type": "heroe",
       "title": "連環水砲",
       "description": "韓文遊戲名稱: 하이드로 물대포",
@@ -15952,6 +16603,13 @@
       "title": "雷霆盾擊",
       "description": "揮動防爆盾猛擊前方敵人，造成攻擊力 139% 的傷害。",
       "url": "/zh-tw/heroes/mike/#character-skill-0-0"
+    },
+    {
+      "language": "zh-tw",
+      "type": "building",
+      "title": "瞭望塔 | 建築 | TilesSurvive.net",
+      "description": "瞭望塔 · 依等級與設定查看基本資源、時間、建造道具及前置建築。",
+      "url": "/zh-tw/buildings/lookout-tower/"
     },
     {
       "language": "zh-tw",
@@ -16072,6 +16730,13 @@
     },
     {
       "language": "zh-tw",
+      "type": "building",
+      "title": "木材廠 | 建築 | TilesSurvive.net",
+      "description": "木材廠 · 依等級與設定查看基本資源、時間、建造道具及前置建築。",
+      "url": "/zh-tw/buildings/lumberyard/"
+    },
+    {
+      "language": "zh-tw",
       "type": "heroe",
       "title": "武器天才",
       "description": "英雄追加效果提升 50%。",
@@ -16083,6 +16748,13 @@
       "title": "無畏守護",
       "description": "自身全屬性提高 50%。",
       "url": "/zh-tw/heroes/mike/#character-skill-0-3"
+    },
+    {
+      "language": "zh-tw",
+      "type": "building",
+      "title": "民房 | 建築 | TilesSurvive.net",
+      "description": "民房 · 依等級與設定查看基本資源、時間、建造道具及前置建築。",
+      "url": "/zh-tw/buildings/houses/"
     },
     {
       "language": "zh-tw",
@@ -16812,6 +17484,13 @@
     },
     {
       "language": "zh-tw",
+      "type": "building",
+      "title": "冶煉廠 | 建築 | TilesSurvive.net",
+      "description": "冶煉廠 · 依等級與設定查看基本資源、時間、建造道具及前置建築。",
+      "url": "/zh-tw/buildings/smelter/"
+    },
+    {
+      "language": "zh-tw",
       "type": "heroe",
       "title": "野蠻衝撞",
       "description": "朝前方小範圍敵人猛烈衝撞，造成攻擊力 139% 傷害。",
@@ -16858,6 +17537,13 @@
       "title": "烏龜賽跑 | Tiles Survive 資料庫 | TilesSurvive.net",
       "description": "Tiles Survive 聯盟對決 烏龜賽跑推薦表，可一眼查看各階段推薦任務、戰鬥、烏龜與國王增益推薦區間。",
       "url": "/zh-tw/database/turtle-race/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "building",
+      "title": "溫室 | 建築 | TilesSurvive.net",
+      "description": "溫室 · 依等級與設定查看基本資源、時間、建造道具及前置建築。",
+      "url": "/zh-tw/buildings/greenhouse/"
     },
     {
       "language": "zh-tw",
@@ -17644,6 +18330,13 @@
     },
     {
       "language": "zh-tw",
+      "type": "building",
+      "title": "廚房 | 建築 | TilesSurvive.net",
+      "description": "廚房 · 依等級與設定查看基本資源、時間、建造道具及前置建築。",
+      "url": "/zh-tw/buildings/kitchen/"
+    },
+    {
+      "language": "zh-tw",
       "type": "event",
       "title": "州際對決",
       "description": "v2.5.500列出戰鬥階段個人進度獎勵含20小時通用加速，未提供各階門檻、數量或目前日程。",
@@ -18038,6 +18731,13 @@
       "title": "訓練50名士兵",
       "description": "從任務連結到積分、獎勵與道具用途。以下依公開規則分類，並非所有伺服器的即時日程。",
       "url": "/zh-tw/events/#daily-task-troop-training"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
+      "title": "吞吞 · 寵物設定資料 · 2.6.200 | TilesSurvive.net",
+      "description": "吞吞 — 遊戲2.6.200的設定資料。目前是否推出，以及各州或帳號能否使用，仍未確認。",
+      "url": "/zh-tw/database/pet-system/chompy/"
     },
     {
       "language": "zh-tw",

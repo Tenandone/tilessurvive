@@ -8,7 +8,10 @@ const langs=['ko','en','ja','ru','zh-tw'],pets=['snowball','dodo','buckler','har
 // Retain tests for the legacy builder/model consumed during full builds. The
 // current six-language level selector is tested in test-pet-skill-levels.js.
 const sha=b=>crypto.createHash('sha256').update(b).digest('hex'),doc=s=>parseHTML(s).document;
-const read=f=>{const s=fs.readFileSync(path.join(root,f),'utf8');return f.endsWith('.html')?'<!DOCTYPE html>\n'+require('./pet-skill-levels-test-allowances').restoreLegacyDocument(doc(s),f).documentElement.outerHTML+'\n':s;};
+const read=f=>{const s=fs.readFileSync(path.join(root,f),'utf8');if(!f.endsWith('.html'))return s;
+ // Verify the complete current projection before legacy tests mutate skill links.
+ const d=require('./content-phase2-test-allowances').restore(doc(s),f);
+ return '<!DOCTYPE html>\n'+require('./pet-skill-levels-test-allowances').restoreLegacyDocument(d,f).documentElement.outerHTML+'\n';};
 const stable=v=>v&&typeof v==='object'?(Array.isArray(v)?v.map(stable):Object.fromEntries(Object.keys(v).sort().map(k=>[k,stable(v[k])]))):v;
 const modelHash=v=>sha(JSON.stringify(stable(v)));
 // Pins cover only the reviewed public projection and derivatives, never private game source data.

@@ -1,0 +1,2305 @@
+{
+  "schemaVersion": 1,
+  "gameVersion": "2.6.200",
+  "scope": "configured-reference",
+  "availability": "unknown",
+  "pets": [
+    {
+      "id": "hopper",
+      "names": {
+        "ko": "호퍼",
+        "en": "Hopper",
+        "ja": "ホッパー",
+        "ru": "Прыг-прыг",
+        "zh-tw": "跳跳",
+        "de": "Hopser"
+      },
+      "role": {
+        "ko": "보조형",
+        "en": "Support",
+        "ja": "支援型",
+        "ru": "Поддержка",
+        "zh-tw": "輔助型",
+        "de": "Unterstützung"
+      },
+      "portrait": "/img/content-60/pets/hopper.png",
+      "configuredClientVersion": "2.6.200",
+      "availability": "unknown",
+      "levelRange": [
+        1,
+        100
+      ],
+      "expUnit": "EXP",
+      "expRows": [
+        {
+          "fromLevel": 1,
+          "toLevel": 2,
+          "exp": 120
+        },
+        {
+          "fromLevel": 2,
+          "toLevel": 3,
+          "exp": 130
+        },
+        {
+          "fromLevel": 3,
+          "toLevel": 4,
+          "exp": 140
+        },
+        {
+          "fromLevel": 4,
+          "toLevel": 5,
+          "exp": 150
+        },
+        {
+          "fromLevel": 5,
+          "toLevel": 6,
+          "exp": 160
+        },
+        {
+          "fromLevel": 6,
+          "toLevel": 7,
+          "exp": 170
+        },
+        {
+          "fromLevel": 7,
+          "toLevel": 8,
+          "exp": 180
+        },
+        {
+          "fromLevel": 8,
+          "toLevel": 9,
+          "exp": 190
+        },
+        {
+          "fromLevel": 9,
+          "toLevel": 10,
+          "exp": 200
+        },
+        {
+          "fromLevel": 10,
+          "toLevel": 11,
+          "exp": 210
+        },
+        {
+          "fromLevel": 11,
+          "toLevel": 12,
+          "exp": 220
+        },
+        {
+          "fromLevel": 12,
+          "toLevel": 13,
+          "exp": 240
+        },
+        {
+          "fromLevel": 13,
+          "toLevel": 14,
+          "exp": 260
+        },
+        {
+          "fromLevel": 14,
+          "toLevel": 15,
+          "exp": 290
+        },
+        {
+          "fromLevel": 15,
+          "toLevel": 16,
+          "exp": 320
+        },
+        {
+          "fromLevel": 16,
+          "toLevel": 17,
+          "exp": 360
+        },
+        {
+          "fromLevel": 17,
+          "toLevel": 18,
+          "exp": 390
+        },
+        {
+          "fromLevel": 18,
+          "toLevel": 19,
+          "exp": 430
+        },
+        {
+          "fromLevel": 19,
+          "toLevel": 20,
+          "exp": 470
+        },
+        {
+          "fromLevel": 20,
+          "toLevel": 21,
+          "exp": 520
+        },
+        {
+          "fromLevel": 21,
+          "toLevel": 22,
+          "exp": 570
+        },
+        {
+          "fromLevel": 22,
+          "toLevel": 23,
+          "exp": 610
+        },
+        {
+          "fromLevel": 23,
+          "toLevel": 24,
+          "exp": 680
+        },
+        {
+          "fromLevel": 24,
+          "toLevel": 25,
+          "exp": 730
+        },
+        {
+          "fromLevel": 25,
+          "toLevel": 26,
+          "exp": 800
+        },
+        {
+          "fromLevel": 26,
+          "toLevel": 27,
+          "exp": 850
+        },
+        {
+          "fromLevel": 27,
+          "toLevel": 28,
+          "exp": 940
+        },
+        {
+          "fromLevel": 28,
+          "toLevel": 29,
+          "exp": 990
+        },
+        {
+          "fromLevel": 29,
+          "toLevel": 30,
+          "exp": 1080
+        },
+        {
+          "fromLevel": 30,
+          "toLevel": 31,
+          "exp": 1140
+        },
+        {
+          "fromLevel": 31,
+          "toLevel": 32,
+          "exp": 1230
+        },
+        {
+          "fromLevel": 32,
+          "toLevel": 33,
+          "exp": 1400
+        },
+        {
+          "fromLevel": 33,
+          "toLevel": 34,
+          "exp": 1400
+        },
+        {
+          "fromLevel": 34,
+          "toLevel": 35,
+          "exp": 1500
+        },
+        {
+          "fromLevel": 35,
+          "toLevel": 36,
+          "exp": 1600
+        },
+        {
+          "fromLevel": 36,
+          "toLevel": 37,
+          "exp": 1700
+        },
+        {
+          "fromLevel": 37,
+          "toLevel": 38,
+          "exp": 1800
+        },
+        {
+          "fromLevel": 38,
+          "toLevel": 39,
+          "exp": 2000
+        },
+        {
+          "fromLevel": 39,
+          "toLevel": 40,
+          "exp": 2000
+        },
+        {
+          "fromLevel": 40,
+          "toLevel": 41,
+          "exp": 2200
+        },
+        {
+          "fromLevel": 41,
+          "toLevel": 42,
+          "exp": 2300
+        },
+        {
+          "fromLevel": 42,
+          "toLevel": 43,
+          "exp": 2400
+        },
+        {
+          "fromLevel": 43,
+          "toLevel": 44,
+          "exp": 2600
+        },
+        {
+          "fromLevel": 44,
+          "toLevel": 45,
+          "exp": 2600
+        },
+        {
+          "fromLevel": 45,
+          "toLevel": 46,
+          "exp": 2800
+        },
+        {
+          "fromLevel": 46,
+          "toLevel": 47,
+          "exp": 2900
+        },
+        {
+          "fromLevel": 47,
+          "toLevel": 48,
+          "exp": 3100
+        },
+        {
+          "fromLevel": 48,
+          "toLevel": 49,
+          "exp": 3200
+        },
+        {
+          "fromLevel": 49,
+          "toLevel": 50,
+          "exp": 3400
+        },
+        {
+          "fromLevel": 50,
+          "toLevel": 51,
+          "exp": 3500
+        },
+        {
+          "fromLevel": 51,
+          "toLevel": 52,
+          "exp": 3700
+        },
+        {
+          "fromLevel": 52,
+          "toLevel": 53,
+          "exp": 3900
+        },
+        {
+          "fromLevel": 53,
+          "toLevel": 54,
+          "exp": 4000
+        },
+        {
+          "fromLevel": 54,
+          "toLevel": 55,
+          "exp": 4200
+        },
+        {
+          "fromLevel": 55,
+          "toLevel": 56,
+          "exp": 4300
+        },
+        {
+          "fromLevel": 56,
+          "toLevel": 57,
+          "exp": 4600
+        },
+        {
+          "fromLevel": 57,
+          "toLevel": 58,
+          "exp": 4700
+        },
+        {
+          "fromLevel": 58,
+          "toLevel": 59,
+          "exp": 4900
+        },
+        {
+          "fromLevel": 59,
+          "toLevel": 60,
+          "exp": 5100
+        },
+        {
+          "fromLevel": 60,
+          "toLevel": 61,
+          "exp": 5300
+        },
+        {
+          "fromLevel": 61,
+          "toLevel": 62,
+          "exp": 5600
+        },
+        {
+          "fromLevel": 62,
+          "toLevel": 63,
+          "exp": 5700
+        },
+        {
+          "fromLevel": 63,
+          "toLevel": 64,
+          "exp": 6000
+        },
+        {
+          "fromLevel": 64,
+          "toLevel": 65,
+          "exp": 6200
+        },
+        {
+          "fromLevel": 65,
+          "toLevel": 66,
+          "exp": 6400
+        },
+        {
+          "fromLevel": 66,
+          "toLevel": 67,
+          "exp": 6500
+        },
+        {
+          "fromLevel": 67,
+          "toLevel": 68,
+          "exp": 6800
+        },
+        {
+          "fromLevel": 68,
+          "toLevel": 69,
+          "exp": 7100
+        },
+        {
+          "fromLevel": 69,
+          "toLevel": 70,
+          "exp": 7300
+        },
+        {
+          "fromLevel": 70,
+          "toLevel": 71,
+          "exp": 7500
+        },
+        {
+          "fromLevel": 71,
+          "toLevel": 72,
+          "exp": 7700
+        },
+        {
+          "fromLevel": 72,
+          "toLevel": 73,
+          "exp": 8100
+        },
+        {
+          "fromLevel": 73,
+          "toLevel": 74,
+          "exp": 8200
+        },
+        {
+          "fromLevel": 74,
+          "toLevel": 75,
+          "exp": 8600
+        },
+        {
+          "fromLevel": 75,
+          "toLevel": 76,
+          "exp": 8800
+        },
+        {
+          "fromLevel": 76,
+          "toLevel": 77,
+          "exp": 9100
+        },
+        {
+          "fromLevel": 77,
+          "toLevel": 78,
+          "exp": 9300
+        },
+        {
+          "fromLevel": 78,
+          "toLevel": 79,
+          "exp": 9700
+        },
+        {
+          "fromLevel": 79,
+          "toLevel": 80,
+          "exp": 9900
+        },
+        {
+          "fromLevel": 80,
+          "toLevel": 81,
+          "exp": 10100
+        },
+        {
+          "fromLevel": 81,
+          "toLevel": 82,
+          "exp": 10500
+        },
+        {
+          "fromLevel": 82,
+          "toLevel": 83,
+          "exp": 10700
+        },
+        {
+          "fromLevel": 83,
+          "toLevel": 84,
+          "exp": 11300
+        },
+        {
+          "fromLevel": 84,
+          "toLevel": 85,
+          "exp": 11300
+        },
+        {
+          "fromLevel": 85,
+          "toLevel": 86,
+          "exp": 11800
+        },
+        {
+          "fromLevel": 86,
+          "toLevel": 87,
+          "exp": 11900
+        },
+        {
+          "fromLevel": 87,
+          "toLevel": 88,
+          "exp": 12500
+        },
+        {
+          "fromLevel": 88,
+          "toLevel": 89,
+          "exp": 12600
+        },
+        {
+          "fromLevel": 89,
+          "toLevel": 90,
+          "exp": 13100
+        },
+        {
+          "fromLevel": 90,
+          "toLevel": 91,
+          "exp": 13400
+        },
+        {
+          "fromLevel": 91,
+          "toLevel": 92,
+          "exp": 13600
+        },
+        {
+          "fromLevel": 92,
+          "toLevel": 93,
+          "exp": 14100
+        },
+        {
+          "fromLevel": 93,
+          "toLevel": 94,
+          "exp": 14300
+        },
+        {
+          "fromLevel": 94,
+          "toLevel": 95,
+          "exp": 15000
+        },
+        {
+          "fromLevel": 95,
+          "toLevel": 96,
+          "exp": 15000
+        },
+        {
+          "fromLevel": 96,
+          "toLevel": 97,
+          "exp": 15600
+        },
+        {
+          "fromLevel": 97,
+          "toLevel": 98,
+          "exp": 15700
+        },
+        {
+          "fromLevel": 98,
+          "toLevel": 99,
+          "exp": 16500
+        },
+        {
+          "fromLevel": 99,
+          "toLevel": 100,
+          "exp": 16500
+        }
+      ],
+      "trainingUnit": "quantity",
+      "trainingRows": [
+        {
+          "fromStage": 0,
+          "toStage": 1,
+          "quantity": 100,
+          "material": {
+            "ko": "호퍼 (각인)",
+            "en": "Mark (Hopper)",
+            "ja": "ホッパーの印",
+            "ru": "Отметка: Прыг-прыг",
+            "zh-tw": "跳跳（印記）",
+            "de": "Mark (Hopser)"
+          }
+        },
+        {
+          "fromStage": 1,
+          "toStage": 2,
+          "quantity": 200,
+          "material": {
+            "ko": "호퍼 (각인)",
+            "en": "Mark (Hopper)",
+            "ja": "ホッパーの印",
+            "ru": "Отметка: Прыг-прыг",
+            "zh-tw": "跳跳（印記）",
+            "de": "Mark (Hopser)"
+          }
+        },
+        {
+          "fromStage": 2,
+          "toStage": 3,
+          "quantity": 400,
+          "material": {
+            "ko": "호퍼 (각인)",
+            "en": "Mark (Hopper)",
+            "ja": "ホッパーの印",
+            "ru": "Отметка: Прыг-прыг",
+            "zh-tw": "跳跳（印記）",
+            "de": "Mark (Hopser)"
+          }
+        },
+        {
+          "fromStage": 3,
+          "toStage": 4,
+          "quantity": 600,
+          "material": {
+            "ko": "호퍼 (각인)",
+            "en": "Mark (Hopper)",
+            "ja": "ホッパーの印",
+            "ru": "Отметка: Прыг-прыг",
+            "zh-tw": "跳跳（印記）",
+            "de": "Mark (Hopser)"
+          }
+        },
+        {
+          "fromStage": 4,
+          "toStage": 5,
+          "quantity": 700,
+          "material": {
+            "ko": "호퍼 (각인)",
+            "en": "Mark (Hopper)",
+            "ja": "ホッパーの印",
+            "ru": "Отметка: Прыг-прыг",
+            "zh-tw": "跳跳（印記）",
+            "de": "Mark (Hopser)"
+          }
+        }
+      ],
+      "skills": [
+        {
+          "slot": 1,
+          "names": {
+            "ko": "질풍 습격",
+            "en": "Swift Pounce",
+            "ja": "疾風の急襲",
+            "ru": "Стремительный бросок",
+            "zh-tw": "疾風突襲",
+            "de": "Schneller Sprung"
+          },
+          "image": "/img/content-60/pets/hopper-skill-1.png",
+          "unlockStage": 0,
+          "configuredMaxLevel": 6,
+          "status": "verified-tooltip",
+          "levels": [
+            {
+              "level": 1,
+              "trainingStage": 0,
+              "description": {
+                "ko": "호퍼가 재빠르게 뛰쳐나가 아군 곁으로 도약합니다. 전투 시작 시 랜덤으로 아군 영웅 2명의 공격력이 8%, 회피율이 8% 증가하며, 10초간 지속됩니다.",
+                "en": "Hopper darts into action and leaps to an ally's side. At the start of battle, increases the Attack of 2 random friendly Heroes by 8% and their Dodge Rate by 8% for 10 second(s).",
+                "ja": "ホッパーが風のように駆け出し、仲間のもとへ軽やかに跳びます。戦闘開始時、味方英雄からランダムに2名を選び、攻撃力を8%、回避率を8%上昇させます。効果は10秒間持続します",
+                "ru": "Прыг-прыг стремительно бросается вперед и прыгает к союзнику. В начале боя повышает атаку 2 случайных союзных героев на 8%, а их шанс уклонения — на 8% на 10 сек.",
+                "zh-tw": "跳跳疾掠而出，躍至隊友身旁。戰鬥開始時，使隨機2名我方英雄的攻擊提高8%、閃避率提高8%，持續10秒。",
+                "de": "Hopser stürzt in den Kampf und springt an die Seite eines Verbündeten. Zu Beginn des Kampfes erhöht er den Angriff von 2 zufälligen verbündeten Helden um 8%  und ihre Ausweichquote um 8%  für 10 Sekunden."
+              }
+            },
+            {
+              "level": 2,
+              "trainingStage": 1,
+              "description": {
+                "ko": "호퍼가 재빠르게 뛰쳐나가 아군 곁으로 도약합니다. 전투 시작 시 랜덤으로 아군 영웅 2명의 공격력이 8%, 회피율이 8% 증가하며, 10초간 지속됩니다.",
+                "en": "Hopper darts into action and leaps to an ally's side. At the start of battle, increases the Attack of 2 random friendly Heroes by 8% and their Dodge Rate by 8% for 10 second(s).",
+                "ja": "ホッパーが風のように駆け出し、仲間のもとへ軽やかに跳びます。戦闘開始時、味方英雄からランダムに2名を選び、攻撃力を8%、回避率を8%上昇させます。効果は10秒間持続します",
+                "ru": "Прыг-прыг стремительно бросается вперед и прыгает к союзнику. В начале боя повышает атаку 2 случайных союзных героев на 8%, а их шанс уклонения — на 8% на 10 сек.",
+                "zh-tw": "跳跳疾掠而出，躍至隊友身旁。戰鬥開始時，使隨機2名我方英雄的攻擊提高8%、閃避率提高8%，持續10秒。",
+                "de": "Hopser stürzt in den Kampf und springt an die Seite eines Verbündeten. Zu Beginn des Kampfes erhöht er den Angriff von 2 zufälligen verbündeten Helden um 8%  und ihre Ausweichquote um 8%  für 10 Sekunden."
+              }
+            },
+            {
+              "level": 3,
+              "trainingStage": 2,
+              "description": {
+                "ko": "호퍼가 재빠르게 뛰쳐나가 아군 곁으로 도약합니다. 전투 시작 시 랜덤으로 아군 영웅 2명의 공격력이 8%, 회피율이 8% 증가하며, 10초간 지속됩니다.",
+                "en": "Hopper darts into action and leaps to an ally's side. At the start of battle, increases the Attack of 2 random friendly Heroes by 8% and their Dodge Rate by 8% for 10 second(s).",
+                "ja": "ホッパーが風のように駆け出し、仲間のもとへ軽やかに跳びます。戦闘開始時、味方英雄からランダムに2名を選び、攻撃力を8%、回避率を8%上昇させます。効果は10秒間持続します",
+                "ru": "Прыг-прыг стремительно бросается вперед и прыгает к союзнику. В начале боя повышает атаку 2 случайных союзных героев на 8%, а их шанс уклонения — на 8% на 10 сек.",
+                "zh-tw": "跳跳疾掠而出，躍至隊友身旁。戰鬥開始時，使隨機2名我方英雄的攻擊提高8%、閃避率提高8%，持續10秒。",
+                "de": "Hopser stürzt in den Kampf und springt an die Seite eines Verbündeten. Zu Beginn des Kampfes erhöht er den Angriff von 2 zufälligen verbündeten Helden um 8%  und ihre Ausweichquote um 8%  für 10 Sekunden."
+              }
+            },
+            {
+              "level": 4,
+              "trainingStage": 3,
+              "description": {
+                "ko": "호퍼가 재빠르게 뛰쳐나가 아군 곁으로 도약합니다. 전투 시작 시 랜덤으로 아군 영웅 2명의 공격력이 8%, 회피율이 8% 증가하며, 10초간 지속됩니다.",
+                "en": "Hopper darts into action and leaps to an ally's side. At the start of battle, increases the Attack of 2 random friendly Heroes by 8% and their Dodge Rate by 8% for 10 second(s).",
+                "ja": "ホッパーが風のように駆け出し、仲間のもとへ軽やかに跳びます。戦闘開始時、味方英雄からランダムに2名を選び、攻撃力を8%、回避率を8%上昇させます。効果は10秒間持続します",
+                "ru": "Прыг-прыг стремительно бросается вперед и прыгает к союзнику. В начале боя повышает атаку 2 случайных союзных героев на 8%, а их шанс уклонения — на 8% на 10 сек.",
+                "zh-tw": "跳跳疾掠而出，躍至隊友身旁。戰鬥開始時，使隨機2名我方英雄的攻擊提高8%、閃避率提高8%，持續10秒。",
+                "de": "Hopser stürzt in den Kampf und springt an die Seite eines Verbündeten. Zu Beginn des Kampfes erhöht er den Angriff von 2 zufälligen verbündeten Helden um 8%  und ihre Ausweichquote um 8%  für 10 Sekunden."
+              }
+            },
+            {
+              "level": 5,
+              "trainingStage": 4,
+              "description": {
+                "ko": "호퍼가 재빠르게 뛰쳐나가 아군 곁으로 도약합니다. 전투 시작 시 랜덤으로 아군 영웅 2명의 공격력이 8%, 회피율이 8% 증가하며, 10초간 지속됩니다.",
+                "en": "Hopper darts into action and leaps to an ally's side. At the start of battle, increases the Attack of 2 random friendly Heroes by 8% and their Dodge Rate by 8% for 10 second(s).",
+                "ja": "ホッパーが風のように駆け出し、仲間のもとへ軽やかに跳びます。戦闘開始時、味方英雄からランダムに2名を選び、攻撃力を8%、回避率を8%上昇させます。効果は10秒間持続します",
+                "ru": "Прыг-прыг стремительно бросается вперед и прыгает к союзнику. В начале боя повышает атаку 2 случайных союзных героев на 8%, а их шанс уклонения — на 8% на 10 сек.",
+                "zh-tw": "跳跳疾掠而出，躍至隊友身旁。戰鬥開始時，使隨機2名我方英雄的攻擊提高8%、閃避率提高8%，持續10秒。",
+                "de": "Hopser stürzt in den Kampf und springt an die Seite eines Verbündeten. Zu Beginn des Kampfes erhöht er den Angriff von 2 zufälligen verbündeten Helden um 8%  und ihre Ausweichquote um 8%  für 10 Sekunden."
+              }
+            },
+            {
+              "level": 6,
+              "trainingStage": 5,
+              "description": {
+                "ko": "호퍼가 재빠르게 뛰쳐나가 아군 곁으로 도약합니다. 전투 시작 시 랜덤으로 아군 영웅 2명의 공격력이 8%, 회피율이 8% 증가하며, 10초간 지속됩니다.",
+                "en": "Hopper darts into action and leaps to an ally's side. At the start of battle, increases the Attack of 2 random friendly Heroes by 8% and their Dodge Rate by 8% for 10 second(s).",
+                "ja": "ホッパーが風のように駆け出し、仲間のもとへ軽やかに跳びます。戦闘開始時、味方英雄からランダムに2名を選び、攻撃力を8%、回避率を8%上昇させます。効果は10秒間持続します",
+                "ru": "Прыг-прыг стремительно бросается вперед и прыгает к союзнику. В начале боя повышает атаку 2 случайных союзных героев на 8%, а их шанс уклонения — на 8% на 10 сек.",
+                "zh-tw": "跳跳疾掠而出，躍至隊友身旁。戰鬥開始時，使隨機2名我方英雄的攻擊提高8%、閃避率提高8%，持續10秒。",
+                "de": "Hopser stürzt in den Kampf und springt an die Seite eines Verbündeten. Zu Beginn des Kampfes erhöht er den Angriff von 2 zufälligen verbündeten Helden um 8%  und ihre Ausweichquote um 8%  für 10 Sekunden."
+              }
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "names": {
+            "ko": "질풍의 투지",
+            "en": "Fighting Spirit",
+            "ja": "疾風の闘志",
+            "ru": "Боевой дух",
+            "zh-tw": "疾風戰意",
+            "de": "Kampfgeist"
+          },
+          "image": "/img/content-60/pets/hopper-skill-2.png",
+          "unlockStage": 2,
+          "configuredMaxLevel": 1,
+          "status": "verified-tooltip",
+          "levels": [
+            {
+              "level": 1,
+              "trainingStage": 2,
+              "description": {
+                "ko": "진형 영웅의 공격력이 2% 증가합니다.",
+                "en": "Increases deployed Heroes' Attack by 2%.",
+                "ja": "編成中の英雄の攻撃力が2%上昇します",
+                "ru": "Атака задействованных героев увеличивается на 2%.",
+                "zh-tw": "編隊英雄攻擊提升2%。",
+                "de": "Erhöht den Angriff von eingesetzten Helden um 2% ."
+              }
+            }
+          ]
+        },
+        {
+          "slot": 3,
+          "names": {
+            "ko": "그림자 수호",
+            "en": "Shadow Guard",
+            "ja": "影走りの加護",
+            "ru": "Страж из теней",
+            "zh-tw": "影遁守護",
+            "de": "Schattenwächter"
+          },
+          "image": "/img/content-60/pets/hopper-skill-3.png",
+          "unlockStage": 4,
+          "configuredMaxLevel": 1,
+          "status": "verified-tooltip",
+          "levels": [
+            {
+              "level": 1,
+              "trainingStage": 4,
+              "description": {
+                "ko": "진형 영웅의 체력이 50% 미만 시 받는 일반 공격 대미지가 5% 감소합니다.",
+                "en": "When deployed Heroes are below 50% Health, Normal Attack Damage taken is reduced by 5%.",
+                "ja": "編成中の英雄は、HPが50%未満のとき、受ける通常攻撃ダメージが5%軽減されます",
+                "ru": "Когда уровень здоровья задействованных героев опускается ниже 50%, получаемый ими урон от обычных атак снижается на 5%.",
+                "zh-tw": "編隊英雄血量低於50%時，受到的普通攻擊傷害降低5%。",
+                "de": "Wenn eingesetzte Helden unter 50 % Zustand sind, wird der erlittene Schaden durch normale Angriffe um 5%  reduziert."
+              }
+            }
+          ]
+        },
+        {
+          "slot": 4,
+          "names": {
+            "ko": "여우 영혼의 각성",
+            "en": "Fox Spirit Awakening",
+            "ja": "妖狐覚醒",
+            "ru": "Пробуждение духа лисицы",
+            "zh-tw": "靈狐覺醒",
+            "de": "Fuchsgeisterwachen"
+          },
+          "image": "/img/content-60/pets/hopper-skill-4.png",
+          "unlockStage": 5,
+          "configuredMaxLevel": 1,
+          "status": "verified-tooltip",
+          "levels": [
+            {
+              "level": 1,
+              "trainingStage": 5,
+              "description": {
+                "ko": "펫 속성이 10% 증가합니다.",
+                "en": "Increases Pet Stats by 10%.",
+                "ja": "ペットのステータスが10%上昇します",
+                "ru": "Характеристики питомца увеличиваются на 10%.",
+                "zh-tw": "寵物屬性提升10%。",
+                "de": "Erhöht Haustierwerte um 10% "
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "snowy",
+      "names": {
+        "ko": "백설",
+        "en": "Snowy",
+        "ja": "シロ",
+        "ru": "Снежок",
+        "zh-tw": "大白",
+        "de": "Schneeweiß"
+      },
+      "role": {
+        "ko": "공격형",
+        "en": "Attacker",
+        "ja": "攻撃型",
+        "ru": "Атакующий",
+        "zh-tw": "進攻型",
+        "de": "Angreifer"
+      },
+      "portrait": "/img/content-60/pets/snowy.png",
+      "configuredClientVersion": "2.6.100",
+      "availability": "unknown",
+      "levelRange": [
+        1,
+        100
+      ],
+      "expUnit": "EXP",
+      "expRows": [
+        {
+          "fromLevel": 1,
+          "toLevel": 2,
+          "exp": 120
+        },
+        {
+          "fromLevel": 2,
+          "toLevel": 3,
+          "exp": 130
+        },
+        {
+          "fromLevel": 3,
+          "toLevel": 4,
+          "exp": 140
+        },
+        {
+          "fromLevel": 4,
+          "toLevel": 5,
+          "exp": 150
+        },
+        {
+          "fromLevel": 5,
+          "toLevel": 6,
+          "exp": 160
+        },
+        {
+          "fromLevel": 6,
+          "toLevel": 7,
+          "exp": 170
+        },
+        {
+          "fromLevel": 7,
+          "toLevel": 8,
+          "exp": 180
+        },
+        {
+          "fromLevel": 8,
+          "toLevel": 9,
+          "exp": 190
+        },
+        {
+          "fromLevel": 9,
+          "toLevel": 10,
+          "exp": 200
+        },
+        {
+          "fromLevel": 10,
+          "toLevel": 11,
+          "exp": 210
+        },
+        {
+          "fromLevel": 11,
+          "toLevel": 12,
+          "exp": 220
+        },
+        {
+          "fromLevel": 12,
+          "toLevel": 13,
+          "exp": 240
+        },
+        {
+          "fromLevel": 13,
+          "toLevel": 14,
+          "exp": 260
+        },
+        {
+          "fromLevel": 14,
+          "toLevel": 15,
+          "exp": 290
+        },
+        {
+          "fromLevel": 15,
+          "toLevel": 16,
+          "exp": 320
+        },
+        {
+          "fromLevel": 16,
+          "toLevel": 17,
+          "exp": 360
+        },
+        {
+          "fromLevel": 17,
+          "toLevel": 18,
+          "exp": 390
+        },
+        {
+          "fromLevel": 18,
+          "toLevel": 19,
+          "exp": 430
+        },
+        {
+          "fromLevel": 19,
+          "toLevel": 20,
+          "exp": 470
+        },
+        {
+          "fromLevel": 20,
+          "toLevel": 21,
+          "exp": 520
+        },
+        {
+          "fromLevel": 21,
+          "toLevel": 22,
+          "exp": 570
+        },
+        {
+          "fromLevel": 22,
+          "toLevel": 23,
+          "exp": 610
+        },
+        {
+          "fromLevel": 23,
+          "toLevel": 24,
+          "exp": 680
+        },
+        {
+          "fromLevel": 24,
+          "toLevel": 25,
+          "exp": 730
+        },
+        {
+          "fromLevel": 25,
+          "toLevel": 26,
+          "exp": 800
+        },
+        {
+          "fromLevel": 26,
+          "toLevel": 27,
+          "exp": 850
+        },
+        {
+          "fromLevel": 27,
+          "toLevel": 28,
+          "exp": 940
+        },
+        {
+          "fromLevel": 28,
+          "toLevel": 29,
+          "exp": 990
+        },
+        {
+          "fromLevel": 29,
+          "toLevel": 30,
+          "exp": 1080
+        },
+        {
+          "fromLevel": 30,
+          "toLevel": 31,
+          "exp": 1140
+        },
+        {
+          "fromLevel": 31,
+          "toLevel": 32,
+          "exp": 1230
+        },
+        {
+          "fromLevel": 32,
+          "toLevel": 33,
+          "exp": 1400
+        },
+        {
+          "fromLevel": 33,
+          "toLevel": 34,
+          "exp": 1400
+        },
+        {
+          "fromLevel": 34,
+          "toLevel": 35,
+          "exp": 1500
+        },
+        {
+          "fromLevel": 35,
+          "toLevel": 36,
+          "exp": 1600
+        },
+        {
+          "fromLevel": 36,
+          "toLevel": 37,
+          "exp": 1700
+        },
+        {
+          "fromLevel": 37,
+          "toLevel": 38,
+          "exp": 1800
+        },
+        {
+          "fromLevel": 38,
+          "toLevel": 39,
+          "exp": 2000
+        },
+        {
+          "fromLevel": 39,
+          "toLevel": 40,
+          "exp": 2000
+        },
+        {
+          "fromLevel": 40,
+          "toLevel": 41,
+          "exp": 2200
+        },
+        {
+          "fromLevel": 41,
+          "toLevel": 42,
+          "exp": 2300
+        },
+        {
+          "fromLevel": 42,
+          "toLevel": 43,
+          "exp": 2400
+        },
+        {
+          "fromLevel": 43,
+          "toLevel": 44,
+          "exp": 2600
+        },
+        {
+          "fromLevel": 44,
+          "toLevel": 45,
+          "exp": 2600
+        },
+        {
+          "fromLevel": 45,
+          "toLevel": 46,
+          "exp": 2800
+        },
+        {
+          "fromLevel": 46,
+          "toLevel": 47,
+          "exp": 2900
+        },
+        {
+          "fromLevel": 47,
+          "toLevel": 48,
+          "exp": 3100
+        },
+        {
+          "fromLevel": 48,
+          "toLevel": 49,
+          "exp": 3200
+        },
+        {
+          "fromLevel": 49,
+          "toLevel": 50,
+          "exp": 3400
+        },
+        {
+          "fromLevel": 50,
+          "toLevel": 51,
+          "exp": 3500
+        },
+        {
+          "fromLevel": 51,
+          "toLevel": 52,
+          "exp": 3700
+        },
+        {
+          "fromLevel": 52,
+          "toLevel": 53,
+          "exp": 3900
+        },
+        {
+          "fromLevel": 53,
+          "toLevel": 54,
+          "exp": 4000
+        },
+        {
+          "fromLevel": 54,
+          "toLevel": 55,
+          "exp": 4200
+        },
+        {
+          "fromLevel": 55,
+          "toLevel": 56,
+          "exp": 4300
+        },
+        {
+          "fromLevel": 56,
+          "toLevel": 57,
+          "exp": 4600
+        },
+        {
+          "fromLevel": 57,
+          "toLevel": 58,
+          "exp": 4700
+        },
+        {
+          "fromLevel": 58,
+          "toLevel": 59,
+          "exp": 4900
+        },
+        {
+          "fromLevel": 59,
+          "toLevel": 60,
+          "exp": 5100
+        },
+        {
+          "fromLevel": 60,
+          "toLevel": 61,
+          "exp": 5300
+        },
+        {
+          "fromLevel": 61,
+          "toLevel": 62,
+          "exp": 5600
+        },
+        {
+          "fromLevel": 62,
+          "toLevel": 63,
+          "exp": 5700
+        },
+        {
+          "fromLevel": 63,
+          "toLevel": 64,
+          "exp": 6000
+        },
+        {
+          "fromLevel": 64,
+          "toLevel": 65,
+          "exp": 6200
+        },
+        {
+          "fromLevel": 65,
+          "toLevel": 66,
+          "exp": 6400
+        },
+        {
+          "fromLevel": 66,
+          "toLevel": 67,
+          "exp": 6500
+        },
+        {
+          "fromLevel": 67,
+          "toLevel": 68,
+          "exp": 6800
+        },
+        {
+          "fromLevel": 68,
+          "toLevel": 69,
+          "exp": 7100
+        },
+        {
+          "fromLevel": 69,
+          "toLevel": 70,
+          "exp": 7300
+        },
+        {
+          "fromLevel": 70,
+          "toLevel": 71,
+          "exp": 7500
+        },
+        {
+          "fromLevel": 71,
+          "toLevel": 72,
+          "exp": 7700
+        },
+        {
+          "fromLevel": 72,
+          "toLevel": 73,
+          "exp": 8100
+        },
+        {
+          "fromLevel": 73,
+          "toLevel": 74,
+          "exp": 8200
+        },
+        {
+          "fromLevel": 74,
+          "toLevel": 75,
+          "exp": 8600
+        },
+        {
+          "fromLevel": 75,
+          "toLevel": 76,
+          "exp": 8800
+        },
+        {
+          "fromLevel": 76,
+          "toLevel": 77,
+          "exp": 9100
+        },
+        {
+          "fromLevel": 77,
+          "toLevel": 78,
+          "exp": 9300
+        },
+        {
+          "fromLevel": 78,
+          "toLevel": 79,
+          "exp": 9700
+        },
+        {
+          "fromLevel": 79,
+          "toLevel": 80,
+          "exp": 9900
+        },
+        {
+          "fromLevel": 80,
+          "toLevel": 81,
+          "exp": 10100
+        },
+        {
+          "fromLevel": 81,
+          "toLevel": 82,
+          "exp": 10500
+        },
+        {
+          "fromLevel": 82,
+          "toLevel": 83,
+          "exp": 10700
+        },
+        {
+          "fromLevel": 83,
+          "toLevel": 84,
+          "exp": 11300
+        },
+        {
+          "fromLevel": 84,
+          "toLevel": 85,
+          "exp": 11300
+        },
+        {
+          "fromLevel": 85,
+          "toLevel": 86,
+          "exp": 11800
+        },
+        {
+          "fromLevel": 86,
+          "toLevel": 87,
+          "exp": 11900
+        },
+        {
+          "fromLevel": 87,
+          "toLevel": 88,
+          "exp": 12500
+        },
+        {
+          "fromLevel": 88,
+          "toLevel": 89,
+          "exp": 12600
+        },
+        {
+          "fromLevel": 89,
+          "toLevel": 90,
+          "exp": 13100
+        },
+        {
+          "fromLevel": 90,
+          "toLevel": 91,
+          "exp": 13400
+        },
+        {
+          "fromLevel": 91,
+          "toLevel": 92,
+          "exp": 13600
+        },
+        {
+          "fromLevel": 92,
+          "toLevel": 93,
+          "exp": 14100
+        },
+        {
+          "fromLevel": 93,
+          "toLevel": 94,
+          "exp": 14300
+        },
+        {
+          "fromLevel": 94,
+          "toLevel": 95,
+          "exp": 15000
+        },
+        {
+          "fromLevel": 95,
+          "toLevel": 96,
+          "exp": 15000
+        },
+        {
+          "fromLevel": 96,
+          "toLevel": 97,
+          "exp": 15600
+        },
+        {
+          "fromLevel": 97,
+          "toLevel": 98,
+          "exp": 15700
+        },
+        {
+          "fromLevel": 98,
+          "toLevel": 99,
+          "exp": 16500
+        },
+        {
+          "fromLevel": 99,
+          "toLevel": 100,
+          "exp": 16500
+        }
+      ],
+      "trainingUnit": "quantity",
+      "trainingRows": [
+        {
+          "fromStage": 0,
+          "toStage": 1,
+          "quantity": 100,
+          "material": {
+            "ko": "백설 (각인)",
+            "en": "Mark (Snowy)",
+            "ja": "シロの印",
+            "ru": "Отметка: Снежок",
+            "zh-tw": "大白（印記）",
+            "de": "Abzeichen: Schneeweiß"
+          }
+        },
+        {
+          "fromStage": 1,
+          "toStage": 2,
+          "quantity": 200,
+          "material": {
+            "ko": "백설 (각인)",
+            "en": "Mark (Snowy)",
+            "ja": "シロの印",
+            "ru": "Отметка: Снежок",
+            "zh-tw": "大白（印記）",
+            "de": "Abzeichen: Schneeweiß"
+          }
+        },
+        {
+          "fromStage": 2,
+          "toStage": 3,
+          "quantity": 400,
+          "material": {
+            "ko": "백설 (각인)",
+            "en": "Mark (Snowy)",
+            "ja": "シロの印",
+            "ru": "Отметка: Снежок",
+            "zh-tw": "大白（印記）",
+            "de": "Abzeichen: Schneeweiß"
+          }
+        },
+        {
+          "fromStage": 3,
+          "toStage": 4,
+          "quantity": 600,
+          "material": {
+            "ko": "백설 (각인)",
+            "en": "Mark (Snowy)",
+            "ja": "シロの印",
+            "ru": "Отметка: Снежок",
+            "zh-tw": "大白（印記）",
+            "de": "Abzeichen: Schneeweiß"
+          }
+        },
+        {
+          "fromStage": 4,
+          "toStage": 5,
+          "quantity": 700,
+          "material": {
+            "ko": "백설 (각인)",
+            "en": "Mark (Snowy)",
+            "ja": "シロの印",
+            "ru": "Отметка: Снежок",
+            "zh-tw": "大白（印記）",
+            "de": "Abzeichen: Schneeweiß"
+          }
+        }
+      ],
+      "skills": [
+        {
+          "slot": 1,
+          "names": {
+            "ko": "설원의 포효",
+            "en": "Tundra Roar",
+            "ja": "氷原の雄叫び",
+            "ru": "Ледяной рев",
+            "zh-tw": "冰原怒吼",
+            "de": "Tundragebrüll"
+          },
+          "image": "/img/content-60/pets/snowy-skill-1.png",
+          "unlockStage": 0,
+          "configuredMaxLevel": 6,
+          "status": "verified-tooltip",
+          "levels": [
+            {
+              "level": 1,
+              "trainingStage": 0,
+              "description": {
+                "ko": "북극곰이 포효하며 설원에 한기를 일으킵니다. 전투 시작 시 전방의 적에게 포효하여 펫 공격력의 1000%만큼 대미지를 입히고, 공격력과 공격 속도를 10% 감소시키며, 10초간 지속됩니다.",
+                "en": "The Polar Bear unleashes a chilling roar. At the start of battle, roars at enemies ahead, dealing damage equal to 1000% of Pet Attack and reducing their Attack and Attack Speed by 10% for 10s.",
+                "ja": "シロクマが凍てつく咆哮を放ちます。戦闘開始時、前方の敵にペット攻撃力の1000%に相当するダメージを与え、攻撃力と攻撃速度を10%低下させます。効果は10秒間持続します",
+                "ru": "Белый медведь издает леденящий кровь рык. В начале боя рычит на врагов впереди, нанося им урон, равный 1000% от атаки питомца, и снижая их атаку и скорость атаки на 10% в течение 10 сек.",
+                "zh-tw": "白熊咆哮掀起冰原寒意。戰鬥開始時，向前方敵人怒吼，造成寵物攻擊力1000%的傷害，並使其攻擊和攻擊速度降低10%，持續10秒。",
+                "de": "Der Eisbär stößt ein markerschütterndes Brüllen aus. Brüllt zu Beginn des Kampfes Feinde vor ihm an und verursacht Schaden in Höhe von 1000% des Haustierangriffs und reduziert ihren Angriff und ihr Angriffstempo für 10 Sek. um 10%."
+              }
+            },
+            {
+              "level": 2,
+              "trainingStage": 1,
+              "description": {
+                "ko": "북극곰이 포효하며 설원에 한기를 일으킵니다. 전투 시작 시 전방의 적에게 포효하여 펫 공격력의 1000%만큼 대미지를 입히고, 공격력과 공격 속도를 10% 감소시키며, 10초간 지속됩니다.",
+                "en": "The Polar Bear unleashes a chilling roar. At the start of battle, roars at enemies ahead, dealing damage equal to 1000% of Pet Attack and reducing their Attack and Attack Speed by 10% for 10s.",
+                "ja": "シロクマが凍てつく咆哮を放ちます。戦闘開始時、前方の敵にペット攻撃力の1000%に相当するダメージを与え、攻撃力と攻撃速度を10%低下させます。効果は10秒間持続します",
+                "ru": "Белый медведь издает леденящий кровь рык. В начале боя рычит на врагов впереди, нанося им урон, равный 1000% от атаки питомца, и снижая их атаку и скорость атаки на 10% в течение 10 сек.",
+                "zh-tw": "白熊咆哮掀起冰原寒意。戰鬥開始時，向前方敵人怒吼，造成寵物攻擊力1000%的傷害，並使其攻擊和攻擊速度降低10%，持續10秒。",
+                "de": "Der Eisbär stößt ein markerschütterndes Brüllen aus. Brüllt zu Beginn des Kampfes Feinde vor ihm an und verursacht Schaden in Höhe von 1000% des Haustierangriffs und reduziert ihren Angriff und ihr Angriffstempo für 10 Sek. um 10%."
+              }
+            },
+            {
+              "level": 3,
+              "trainingStage": 2,
+              "description": {
+                "ko": "북극곰이 포효하며 설원에 한기를 일으킵니다. 전투 시작 시 전방의 적에게 포효하여 펫 공격력의 1000%만큼 대미지를 입히고, 공격력과 공격 속도를 10% 감소시키며, 10초간 지속됩니다.",
+                "en": "The Polar Bear unleashes a chilling roar. At the start of battle, roars at enemies ahead, dealing damage equal to 1000% of Pet Attack and reducing their Attack and Attack Speed by 10% for 10s.",
+                "ja": "シロクマが凍てつく咆哮を放ちます。戦闘開始時、前方の敵にペット攻撃力の1000%に相当するダメージを与え、攻撃力と攻撃速度を10%低下させます。効果は10秒間持続します",
+                "ru": "Белый медведь издает леденящий кровь рык. В начале боя рычит на врагов впереди, нанося им урон, равный 1000% от атаки питомца, и снижая их атаку и скорость атаки на 10% в течение 10 сек.",
+                "zh-tw": "白熊咆哮掀起冰原寒意。戰鬥開始時，向前方敵人怒吼，造成寵物攻擊力1000%的傷害，並使其攻擊和攻擊速度降低10%，持續10秒。",
+                "de": "Der Eisbär stößt ein markerschütterndes Brüllen aus. Brüllt zu Beginn des Kampfes Feinde vor ihm an und verursacht Schaden in Höhe von 1000% des Haustierangriffs und reduziert ihren Angriff und ihr Angriffstempo für 10 Sek. um 10%."
+              }
+            },
+            {
+              "level": 4,
+              "trainingStage": 3,
+              "description": {
+                "ko": "북극곰이 포효하며 설원에 한기를 일으킵니다. 전투 시작 시 전방의 적에게 포효하여 펫 공격력의 1000%만큼 대미지를 입히고, 공격력과 공격 속도를 10% 감소시키며, 10초간 지속됩니다.",
+                "en": "The Polar Bear unleashes a chilling roar. At the start of battle, roars at enemies ahead, dealing damage equal to 1000% of Pet Attack and reducing their Attack and Attack Speed by 10% for 10s.",
+                "ja": "シロクマが凍てつく咆哮を放ちます。戦闘開始時、前方の敵にペット攻撃力の1000%に相当するダメージを与え、攻撃力と攻撃速度を10%低下させます。効果は10秒間持続します",
+                "ru": "Белый медведь издает леденящий кровь рык. В начале боя рычит на врагов впереди, нанося им урон, равный 1000% от атаки питомца, и снижая их атаку и скорость атаки на 10% в течение 10 сек.",
+                "zh-tw": "白熊咆哮掀起冰原寒意。戰鬥開始時，向前方敵人怒吼，造成寵物攻擊力1000%的傷害，並使其攻擊和攻擊速度降低10%，持續10秒。",
+                "de": "Der Eisbär stößt ein markerschütterndes Brüllen aus. Brüllt zu Beginn des Kampfes Feinde vor ihm an und verursacht Schaden in Höhe von 1000% des Haustierangriffs und reduziert ihren Angriff und ihr Angriffstempo für 10 Sek. um 10%."
+              }
+            },
+            {
+              "level": 5,
+              "trainingStage": 4,
+              "description": {
+                "ko": "북극곰이 포효하며 설원에 한기를 일으킵니다. 전투 시작 시 전방의 적에게 포효하여 펫 공격력의 1000%만큼 대미지를 입히고, 공격력과 공격 속도를 10% 감소시키며, 10초간 지속됩니다.",
+                "en": "The Polar Bear unleashes a chilling roar. At the start of battle, roars at enemies ahead, dealing damage equal to 1000% of Pet Attack and reducing their Attack and Attack Speed by 10% for 10s.",
+                "ja": "シロクマが凍てつく咆哮を放ちます。戦闘開始時、前方の敵にペット攻撃力の1000%に相当するダメージを与え、攻撃力と攻撃速度を10%低下させます。効果は10秒間持続します",
+                "ru": "Белый медведь издает леденящий кровь рык. В начале боя рычит на врагов впереди, нанося им урон, равный 1000% от атаки питомца, и снижая их атаку и скорость атаки на 10% в течение 10 сек.",
+                "zh-tw": "白熊咆哮掀起冰原寒意。戰鬥開始時，向前方敵人怒吼，造成寵物攻擊力1000%的傷害，並使其攻擊和攻擊速度降低10%，持續10秒。",
+                "de": "Der Eisbär stößt ein markerschütterndes Brüllen aus. Brüllt zu Beginn des Kampfes Feinde vor ihm an und verursacht Schaden in Höhe von 1000% des Haustierangriffs und reduziert ihren Angriff und ihr Angriffstempo für 10 Sek. um 10%."
+              }
+            },
+            {
+              "level": 6,
+              "trainingStage": 5,
+              "description": {
+                "ko": "북극곰이 포효하며 설원에 한기를 일으킵니다. 전투 시작 시 전방의 적에게 포효하여 펫 공격력의 1000%만큼 대미지를 입히고, 공격력과 공격 속도를 10% 감소시키며, 10초간 지속됩니다.",
+                "en": "The Polar Bear unleashes a chilling roar. At the start of battle, roars at enemies ahead, dealing damage equal to 1000% of Pet Attack and reducing their Attack and Attack Speed by 10% for 10s.",
+                "ja": "シロクマが凍てつく咆哮を放ちます。戦闘開始時、前方の敵にペット攻撃力の1000%に相当するダメージを与え、攻撃力と攻撃速度を10%低下させます。効果は10秒間持続します",
+                "ru": "Белый медведь издает леденящий кровь рык. В начале боя рычит на врагов впереди, нанося им урон, равный 1000% от атаки питомца, и снижая их атаку и скорость атаки на 10% в течение 10 сек.",
+                "zh-tw": "白熊咆哮掀起冰原寒意。戰鬥開始時，向前方敵人怒吼，造成寵物攻擊力1000%的傷害，並使其攻擊和攻擊速度降低10%，持續10秒。",
+                "de": "Der Eisbär stößt ein markerschütterndes Brüllen aus. Brüllt zu Beginn des Kampfes Feinde vor ihm an und verursacht Schaden in Höhe von 1000% des Haustierangriffs und reduziert ihren Angriff und ihr Angriffstempo für 10 Sek. um 10%."
+              }
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "names": {
+            "ko": "설원의 투지",
+            "en": "Tundra Valor",
+            "ja": "氷原の闘志",
+            "ru": "Доблесть льдов",
+            "zh-tw": "冰原戰意",
+            "de": "Tundramut"
+          },
+          "image": "/img/content-60/pets/snowy-skill-2.png",
+          "unlockStage": 2,
+          "configuredMaxLevel": 1,
+          "status": "verified-tooltip",
+          "levels": [
+            {
+              "level": 1,
+              "trainingStage": 2,
+              "description": {
+                "ko": "진형 영웅의 공격력이 2% 증가합니다.",
+                "en": "Increases deployed Heroes' Attack by 2%.",
+                "ja": "編成中の英雄の攻撃力が2%上昇します",
+                "ru": "Атака задействованных героев увеличивается на 2%.",
+                "zh-tw": "編隊英雄攻擊提升2%。",
+                "de": "Erhöht den Angriff von eingesetzten Helden um 2%."
+              }
+            }
+          ]
+        },
+        {
+          "slot": 3,
+          "names": {
+            "ko": "얼어붙은 땅의 가호",
+            "en": "Frozen Guard",
+            "ja": "凍土の守護",
+            "ru": "Снежный страж",
+            "zh-tw": "凍土守護",
+            "de": "Eisiger Wächter"
+          },
+          "image": "/img/content-60/pets/snowy-skill-3.png",
+          "unlockStage": 4,
+          "configuredMaxLevel": 1,
+          "status": "verified-tooltip",
+          "levels": [
+            {
+              "level": 1,
+              "trainingStage": 4,
+              "description": {
+                "ko": "진형 영웅이 적을 처치한 후 공격력과 방어력이 3.5% 증가합니다.",
+                "en": "After a deployed Hero defeats an enemy, their Attack and Defense increase by 3.5%.",
+                "ja": "編成中の英雄が敵を撃破すると、撃破した英雄の攻撃力と防御力が3.5%上昇します",
+                "ru": "Когда задействованный герой побеждает врага, его атака и защита увеличиваются на 3.5%.",
+                "zh-tw": "編隊英雄擊敗敵人後，攻擊和防禦提升3.5%。",
+                "de": "Nachdem ein eingesetzter Held einen Feind besiegt, werden sein Angriff und seine Verteidigung um 3.5% erhöht."
+              }
+            }
+          ]
+        },
+        {
+          "slot": 4,
+          "names": {
+            "ko": "서리의 각성",
+            "en": "Frostborn Might",
+            "ja": "氷原の覇気",
+            "ru": "Мощь мороза",
+            "zh-tw": "霜威覺醒",
+            "de": "Frostgeborene Macht"
+          },
+          "image": "/img/content-60/pets/snowy-skill-4.png",
+          "unlockStage": 5,
+          "configuredMaxLevel": 1,
+          "status": "verified-tooltip",
+          "levels": [
+            {
+              "level": 1,
+              "trainingStage": 5,
+              "description": {
+                "ko": "펫 속성이 10% 증가합니다.",
+                "en": "Increases Pet Stats by 10%.",
+                "ja": "ペットのステータスが10%上昇します",
+                "ru": "Характеристики питомца увеличиваются на 10%.",
+                "zh-tw": "寵物屬性提升10%。",
+                "de": "Erhöht Haustierwerte um 10%."
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "chompy",
+      "names": {
+        "ko": "촘피",
+        "en": "Chompy",
+        "ja": "パックン",
+        "ru": "Кусь-кусь",
+        "zh-tw": "吞吞",
+        "de": "Beißer"
+      },
+      "role": {
+        "ko": "공격형",
+        "en": "Attacker",
+        "ja": "攻撃型",
+        "ru": "Атакующий",
+        "zh-tw": "進攻型",
+        "de": "Angreifer"
+      },
+      "portrait": "/img/content-60/pets/chompy.png",
+      "configuredClientVersion": "2.6.200",
+      "availability": "unknown",
+      "levelRange": [
+        1,
+        100
+      ],
+      "expUnit": "EXP",
+      "expRows": [
+        {
+          "fromLevel": 1,
+          "toLevel": 2,
+          "exp": 120
+        },
+        {
+          "fromLevel": 2,
+          "toLevel": 3,
+          "exp": 130
+        },
+        {
+          "fromLevel": 3,
+          "toLevel": 4,
+          "exp": 140
+        },
+        {
+          "fromLevel": 4,
+          "toLevel": 5,
+          "exp": 150
+        },
+        {
+          "fromLevel": 5,
+          "toLevel": 6,
+          "exp": 160
+        },
+        {
+          "fromLevel": 6,
+          "toLevel": 7,
+          "exp": 170
+        },
+        {
+          "fromLevel": 7,
+          "toLevel": 8,
+          "exp": 180
+        },
+        {
+          "fromLevel": 8,
+          "toLevel": 9,
+          "exp": 190
+        },
+        {
+          "fromLevel": 9,
+          "toLevel": 10,
+          "exp": 200
+        },
+        {
+          "fromLevel": 10,
+          "toLevel": 11,
+          "exp": 210
+        },
+        {
+          "fromLevel": 11,
+          "toLevel": 12,
+          "exp": 220
+        },
+        {
+          "fromLevel": 12,
+          "toLevel": 13,
+          "exp": 240
+        },
+        {
+          "fromLevel": 13,
+          "toLevel": 14,
+          "exp": 260
+        },
+        {
+          "fromLevel": 14,
+          "toLevel": 15,
+          "exp": 290
+        },
+        {
+          "fromLevel": 15,
+          "toLevel": 16,
+          "exp": 320
+        },
+        {
+          "fromLevel": 16,
+          "toLevel": 17,
+          "exp": 360
+        },
+        {
+          "fromLevel": 17,
+          "toLevel": 18,
+          "exp": 390
+        },
+        {
+          "fromLevel": 18,
+          "toLevel": 19,
+          "exp": 430
+        },
+        {
+          "fromLevel": 19,
+          "toLevel": 20,
+          "exp": 470
+        },
+        {
+          "fromLevel": 20,
+          "toLevel": 21,
+          "exp": 520
+        },
+        {
+          "fromLevel": 21,
+          "toLevel": 22,
+          "exp": 570
+        },
+        {
+          "fromLevel": 22,
+          "toLevel": 23,
+          "exp": 610
+        },
+        {
+          "fromLevel": 23,
+          "toLevel": 24,
+          "exp": 680
+        },
+        {
+          "fromLevel": 24,
+          "toLevel": 25,
+          "exp": 730
+        },
+        {
+          "fromLevel": 25,
+          "toLevel": 26,
+          "exp": 800
+        },
+        {
+          "fromLevel": 26,
+          "toLevel": 27,
+          "exp": 850
+        },
+        {
+          "fromLevel": 27,
+          "toLevel": 28,
+          "exp": 940
+        },
+        {
+          "fromLevel": 28,
+          "toLevel": 29,
+          "exp": 990
+        },
+        {
+          "fromLevel": 29,
+          "toLevel": 30,
+          "exp": 1080
+        },
+        {
+          "fromLevel": 30,
+          "toLevel": 31,
+          "exp": 1140
+        },
+        {
+          "fromLevel": 31,
+          "toLevel": 32,
+          "exp": 1230
+        },
+        {
+          "fromLevel": 32,
+          "toLevel": 33,
+          "exp": 1400
+        },
+        {
+          "fromLevel": 33,
+          "toLevel": 34,
+          "exp": 1400
+        },
+        {
+          "fromLevel": 34,
+          "toLevel": 35,
+          "exp": 1500
+        },
+        {
+          "fromLevel": 35,
+          "toLevel": 36,
+          "exp": 1600
+        },
+        {
+          "fromLevel": 36,
+          "toLevel": 37,
+          "exp": 1700
+        },
+        {
+          "fromLevel": 37,
+          "toLevel": 38,
+          "exp": 1800
+        },
+        {
+          "fromLevel": 38,
+          "toLevel": 39,
+          "exp": 2000
+        },
+        {
+          "fromLevel": 39,
+          "toLevel": 40,
+          "exp": 2000
+        },
+        {
+          "fromLevel": 40,
+          "toLevel": 41,
+          "exp": 2200
+        },
+        {
+          "fromLevel": 41,
+          "toLevel": 42,
+          "exp": 2300
+        },
+        {
+          "fromLevel": 42,
+          "toLevel": 43,
+          "exp": 2400
+        },
+        {
+          "fromLevel": 43,
+          "toLevel": 44,
+          "exp": 2600
+        },
+        {
+          "fromLevel": 44,
+          "toLevel": 45,
+          "exp": 2600
+        },
+        {
+          "fromLevel": 45,
+          "toLevel": 46,
+          "exp": 2800
+        },
+        {
+          "fromLevel": 46,
+          "toLevel": 47,
+          "exp": 2900
+        },
+        {
+          "fromLevel": 47,
+          "toLevel": 48,
+          "exp": 3100
+        },
+        {
+          "fromLevel": 48,
+          "toLevel": 49,
+          "exp": 3200
+        },
+        {
+          "fromLevel": 49,
+          "toLevel": 50,
+          "exp": 3400
+        },
+        {
+          "fromLevel": 50,
+          "toLevel": 51,
+          "exp": 3500
+        },
+        {
+          "fromLevel": 51,
+          "toLevel": 52,
+          "exp": 3700
+        },
+        {
+          "fromLevel": 52,
+          "toLevel": 53,
+          "exp": 3900
+        },
+        {
+          "fromLevel": 53,
+          "toLevel": 54,
+          "exp": 4000
+        },
+        {
+          "fromLevel": 54,
+          "toLevel": 55,
+          "exp": 4200
+        },
+        {
+          "fromLevel": 55,
+          "toLevel": 56,
+          "exp": 4300
+        },
+        {
+          "fromLevel": 56,
+          "toLevel": 57,
+          "exp": 4600
+        },
+        {
+          "fromLevel": 57,
+          "toLevel": 58,
+          "exp": 4700
+        },
+        {
+          "fromLevel": 58,
+          "toLevel": 59,
+          "exp": 4900
+        },
+        {
+          "fromLevel": 59,
+          "toLevel": 60,
+          "exp": 5100
+        },
+        {
+          "fromLevel": 60,
+          "toLevel": 61,
+          "exp": 5300
+        },
+        {
+          "fromLevel": 61,
+          "toLevel": 62,
+          "exp": 5600
+        },
+        {
+          "fromLevel": 62,
+          "toLevel": 63,
+          "exp": 5700
+        },
+        {
+          "fromLevel": 63,
+          "toLevel": 64,
+          "exp": 6000
+        },
+        {
+          "fromLevel": 64,
+          "toLevel": 65,
+          "exp": 6200
+        },
+        {
+          "fromLevel": 65,
+          "toLevel": 66,
+          "exp": 6400
+        },
+        {
+          "fromLevel": 66,
+          "toLevel": 67,
+          "exp": 6500
+        },
+        {
+          "fromLevel": 67,
+          "toLevel": 68,
+          "exp": 6800
+        },
+        {
+          "fromLevel": 68,
+          "toLevel": 69,
+          "exp": 7100
+        },
+        {
+          "fromLevel": 69,
+          "toLevel": 70,
+          "exp": 7300
+        },
+        {
+          "fromLevel": 70,
+          "toLevel": 71,
+          "exp": 7500
+        },
+        {
+          "fromLevel": 71,
+          "toLevel": 72,
+          "exp": 7700
+        },
+        {
+          "fromLevel": 72,
+          "toLevel": 73,
+          "exp": 8100
+        },
+        {
+          "fromLevel": 73,
+          "toLevel": 74,
+          "exp": 8200
+        },
+        {
+          "fromLevel": 74,
+          "toLevel": 75,
+          "exp": 8600
+        },
+        {
+          "fromLevel": 75,
+          "toLevel": 76,
+          "exp": 8800
+        },
+        {
+          "fromLevel": 76,
+          "toLevel": 77,
+          "exp": 9100
+        },
+        {
+          "fromLevel": 77,
+          "toLevel": 78,
+          "exp": 9300
+        },
+        {
+          "fromLevel": 78,
+          "toLevel": 79,
+          "exp": 9700
+        },
+        {
+          "fromLevel": 79,
+          "toLevel": 80,
+          "exp": 9900
+        },
+        {
+          "fromLevel": 80,
+          "toLevel": 81,
+          "exp": 10100
+        },
+        {
+          "fromLevel": 81,
+          "toLevel": 82,
+          "exp": 10500
+        },
+        {
+          "fromLevel": 82,
+          "toLevel": 83,
+          "exp": 10700
+        },
+        {
+          "fromLevel": 83,
+          "toLevel": 84,
+          "exp": 11300
+        },
+        {
+          "fromLevel": 84,
+          "toLevel": 85,
+          "exp": 11300
+        },
+        {
+          "fromLevel": 85,
+          "toLevel": 86,
+          "exp": 11800
+        },
+        {
+          "fromLevel": 86,
+          "toLevel": 87,
+          "exp": 11900
+        },
+        {
+          "fromLevel": 87,
+          "toLevel": 88,
+          "exp": 12500
+        },
+        {
+          "fromLevel": 88,
+          "toLevel": 89,
+          "exp": 12600
+        },
+        {
+          "fromLevel": 89,
+          "toLevel": 90,
+          "exp": 13100
+        },
+        {
+          "fromLevel": 90,
+          "toLevel": 91,
+          "exp": 13400
+        },
+        {
+          "fromLevel": 91,
+          "toLevel": 92,
+          "exp": 13600
+        },
+        {
+          "fromLevel": 92,
+          "toLevel": 93,
+          "exp": 14100
+        },
+        {
+          "fromLevel": 93,
+          "toLevel": 94,
+          "exp": 14300
+        },
+        {
+          "fromLevel": 94,
+          "toLevel": 95,
+          "exp": 15000
+        },
+        {
+          "fromLevel": 95,
+          "toLevel": 96,
+          "exp": 15000
+        },
+        {
+          "fromLevel": 96,
+          "toLevel": 97,
+          "exp": 15600
+        },
+        {
+          "fromLevel": 97,
+          "toLevel": 98,
+          "exp": 15700
+        },
+        {
+          "fromLevel": 98,
+          "toLevel": 99,
+          "exp": 16500
+        },
+        {
+          "fromLevel": 99,
+          "toLevel": 100,
+          "exp": 16500
+        }
+      ],
+      "trainingUnit": "quantity",
+      "trainingRows": [
+        {
+          "fromStage": 0,
+          "toStage": 1,
+          "quantity": 100,
+          "material": {
+            "ko": "촘피 (각인)",
+            "en": "Mark (Chompy)",
+            "ja": "パックンの印",
+            "ru": "Отметка: Кусь-кусь",
+            "zh-tw": "吞吞（印記）",
+            "de": "Mark (Beißer)"
+          }
+        },
+        {
+          "fromStage": 1,
+          "toStage": 2,
+          "quantity": 200,
+          "material": {
+            "ko": "촘피 (각인)",
+            "en": "Mark (Chompy)",
+            "ja": "パックンの印",
+            "ru": "Отметка: Кусь-кусь",
+            "zh-tw": "吞吞（印記）",
+            "de": "Mark (Beißer)"
+          }
+        },
+        {
+          "fromStage": 2,
+          "toStage": 3,
+          "quantity": 400,
+          "material": {
+            "ko": "촘피 (각인)",
+            "en": "Mark (Chompy)",
+            "ja": "パックンの印",
+            "ru": "Отметка: Кусь-кусь",
+            "zh-tw": "吞吞（印記）",
+            "de": "Mark (Beißer)"
+          }
+        },
+        {
+          "fromStage": 3,
+          "toStage": 4,
+          "quantity": 600,
+          "material": {
+            "ko": "촘피 (각인)",
+            "en": "Mark (Chompy)",
+            "ja": "パックンの印",
+            "ru": "Отметка: Кусь-кусь",
+            "zh-tw": "吞吞（印記）",
+            "de": "Mark (Beißer)"
+          }
+        },
+        {
+          "fromStage": 4,
+          "toStage": 5,
+          "quantity": 700,
+          "material": {
+            "ko": "촘피 (각인)",
+            "en": "Mark (Chompy)",
+            "ja": "パックンの印",
+            "ru": "Отметка: Кусь-кусь",
+            "zh-tw": "吞吞（印記）",
+            "de": "Mark (Beißer)"
+          }
+        }
+      ],
+      "skills": [
+        {
+          "slot": 1,
+          "names": {
+            "ko": "심연의 이빨",
+            "en": "Abyssal Bite",
+            "ja": "深淵の牙",
+            "ru": "Глубоководный укус",
+            "zh-tw": "深淵撕咬",
+            "de": "Abgrundbiss"
+          },
+          "image": "/img/content-60/pets/chompy-skill-1.png",
+          "unlockStage": 0,
+          "configuredMaxLevel": 6,
+          "status": "verified-tooltip",
+          "levels": [
+            {
+              "level": 1,
+              "trainingStage": 0,
+              "description": {
+                "ko": "촘피가 물속에 숨어 있다가 갑자기 튀어나와 물어뜯습니다. 전투 시작 시 적군 중 체력이 가장 낮은 영웅 1명에게 달려들어 펫 공격력 2000%만큼 막대한 대미지를 입히고, 목표가 받는 대미지를 20% 증가시키며, 10초간 지속됩니다.",
+                "en": "Chompy lurks beneath the water before lunging out with a vicious bite. At the start of battle, pounces on the enemy Hero with the lowest Health, dealing massive damage equal to 2000% of Pet Attack and increasing their damage taken by 20% for 10 second(s).",
+                "ja": "パックンは水中に身を潜め、獲物めがけて突如飛び出し、鋭い牙で噛みつく。戦闘開始時、HPが最も低い敵英雄1名に飛びかかり、ペット攻撃力の2000%に相当する大ダメージを与え、対象が受けるダメージを20%増加させます。効果は10秒間持続します",
+                "ru": "Кусь-кусь прячется под водой, а затем резко выныривает и впивается в противника. В начале боя он набрасывается на вражеского героя с наименьшим уровнем здоровья, нанося огромный урон в размере 2000% от атаки питомца и увеличивая получаемый им урон на 20% на 10 сек.",
+                "zh-tw": "吞吞潛伏水中，驟然暴起撕咬。戰鬥開始時，撲向敵方生命最低的1名英雄，造成寵物攻擊力2000%的巨額傷害，並使其受到傷害提高20%，持續10秒。",
+                "de": "Beißer lauert unter Wasser und springt dann mit einem gefährlichen Biss hervor. Zu Beginn des Kampfes springt er auf den gegnerischen Helden mit dem niedrigsten Zustand, fügt massiven Schaden im Wert von 2000%  des Haustierangriffs zu und erhöht den von ihm erlittenen Schaden um 20% für 10 Sekunden."
+              }
+            },
+            {
+              "level": 2,
+              "trainingStage": 1,
+              "description": {
+                "ko": "촘피가 물속에 숨어 있다가 갑자기 튀어나와 물어뜯습니다. 전투 시작 시 적군 중 체력이 가장 낮은 영웅 1명에게 달려들어 펫 공격력 2000%만큼 막대한 대미지를 입히고, 목표가 받는 대미지를 20% 증가시키며, 10초간 지속됩니다.",
+                "en": "Chompy lurks beneath the water before lunging out with a vicious bite. At the start of battle, pounces on the enemy Hero with the lowest Health, dealing massive damage equal to 2000% of Pet Attack and increasing their damage taken by 20% for 10 second(s).",
+                "ja": "パックンは水中に身を潜め、獲物めがけて突如飛び出し、鋭い牙で噛みつく。戦闘開始時、HPが最も低い敵英雄1名に飛びかかり、ペット攻撃力の2000%に相当する大ダメージを与え、対象が受けるダメージを20%増加させます。効果は10秒間持続します",
+                "ru": "Кусь-кусь прячется под водой, а затем резко выныривает и впивается в противника. В начале боя он набрасывается на вражеского героя с наименьшим уровнем здоровья, нанося огромный урон в размере 2000% от атаки питомца и увеличивая получаемый им урон на 20% на 10 сек.",
+                "zh-tw": "吞吞潛伏水中，驟然暴起撕咬。戰鬥開始時，撲向敵方生命最低的1名英雄，造成寵物攻擊力2000%的巨額傷害，並使其受到傷害提高20%，持續10秒。",
+                "de": "Beißer lauert unter Wasser und springt dann mit einem gefährlichen Biss hervor. Zu Beginn des Kampfes springt er auf den gegnerischen Helden mit dem niedrigsten Zustand, fügt massiven Schaden im Wert von 2000%  des Haustierangriffs zu und erhöht den von ihm erlittenen Schaden um 20% für 10 Sekunden."
+              }
+            },
+            {
+              "level": 3,
+              "trainingStage": 2,
+              "description": {
+                "ko": "촘피가 물속에 숨어 있다가 갑자기 튀어나와 물어뜯습니다. 전투 시작 시 적군 중 체력이 가장 낮은 영웅 1명에게 달려들어 펫 공격력 2000%만큼 막대한 대미지를 입히고, 목표가 받는 대미지를 20% 증가시키며, 10초간 지속됩니다.",
+                "en": "Chompy lurks beneath the water before lunging out with a vicious bite. At the start of battle, pounces on the enemy Hero with the lowest Health, dealing massive damage equal to 2000% of Pet Attack and increasing their damage taken by 20% for 10 second(s).",
+                "ja": "パックンは水中に身を潜め、獲物めがけて突如飛び出し、鋭い牙で噛みつく。戦闘開始時、HPが最も低い敵英雄1名に飛びかかり、ペット攻撃力の2000%に相当する大ダメージを与え、対象が受けるダメージを20%増加させます。効果は10秒間持続します",
+                "ru": "Кусь-кусь прячется под водой, а затем резко выныривает и впивается в противника. В начале боя он набрасывается на вражеского героя с наименьшим уровнем здоровья, нанося огромный урон в размере 2000% от атаки питомца и увеличивая получаемый им урон на 20% на 10 сек.",
+                "zh-tw": "吞吞潛伏水中，驟然暴起撕咬。戰鬥開始時，撲向敵方生命最低的1名英雄，造成寵物攻擊力2000%的巨額傷害，並使其受到傷害提高20%，持續10秒。",
+                "de": "Beißer lauert unter Wasser und springt dann mit einem gefährlichen Biss hervor. Zu Beginn des Kampfes springt er auf den gegnerischen Helden mit dem niedrigsten Zustand, fügt massiven Schaden im Wert von 2000%  des Haustierangriffs zu und erhöht den von ihm erlittenen Schaden um 20% für 10 Sekunden."
+              }
+            },
+            {
+              "level": 4,
+              "trainingStage": 3,
+              "description": {
+                "ko": "촘피가 물속에 숨어 있다가 갑자기 튀어나와 물어뜯습니다. 전투 시작 시 적군 중 체력이 가장 낮은 영웅 1명에게 달려들어 펫 공격력 2000%만큼 막대한 대미지를 입히고, 목표가 받는 대미지를 20% 증가시키며, 10초간 지속됩니다.",
+                "en": "Chompy lurks beneath the water before lunging out with a vicious bite. At the start of battle, pounces on the enemy Hero with the lowest Health, dealing massive damage equal to 2000% of Pet Attack and increasing their damage taken by 20% for 10 second(s).",
+                "ja": "パックンは水中に身を潜め、獲物めがけて突如飛び出し、鋭い牙で噛みつく。戦闘開始時、HPが最も低い敵英雄1名に飛びかかり、ペット攻撃力の2000%に相当する大ダメージを与え、対象が受けるダメージを20%増加させます。効果は10秒間持続します",
+                "ru": "Кусь-кусь прячется под водой, а затем резко выныривает и впивается в противника. В начале боя он набрасывается на вражеского героя с наименьшим уровнем здоровья, нанося огромный урон в размере 2000% от атаки питомца и увеличивая получаемый им урон на 20% на 10 сек.",
+                "zh-tw": "吞吞潛伏水中，驟然暴起撕咬。戰鬥開始時，撲向敵方生命最低的1名英雄，造成寵物攻擊力2000%的巨額傷害，並使其受到傷害提高20%，持續10秒。",
+                "de": "Beißer lauert unter Wasser und springt dann mit einem gefährlichen Biss hervor. Zu Beginn des Kampfes springt er auf den gegnerischen Helden mit dem niedrigsten Zustand, fügt massiven Schaden im Wert von 2000%  des Haustierangriffs zu und erhöht den von ihm erlittenen Schaden um 20% für 10 Sekunden."
+              }
+            },
+            {
+              "level": 5,
+              "trainingStage": 4,
+              "description": {
+                "ko": "촘피가 물속에 숨어 있다가 갑자기 튀어나와 물어뜯습니다. 전투 시작 시 적군 중 체력이 가장 낮은 영웅 1명에게 달려들어 펫 공격력 2000%만큼 막대한 대미지를 입히고, 목표가 받는 대미지를 20% 증가시키며, 10초간 지속됩니다.",
+                "en": "Chompy lurks beneath the water before lunging out with a vicious bite. At the start of battle, pounces on the enemy Hero with the lowest Health, dealing massive damage equal to 2000% of Pet Attack and increasing their damage taken by 20% for 10 second(s).",
+                "ja": "パックンは水中に身を潜め、獲物めがけて突如飛び出し、鋭い牙で噛みつく。戦闘開始時、HPが最も低い敵英雄1名に飛びかかり、ペット攻撃力の2000%に相当する大ダメージを与え、対象が受けるダメージを20%増加させます。効果は10秒間持続します",
+                "ru": "Кусь-кусь прячется под водой, а затем резко выныривает и впивается в противника. В начале боя он набрасывается на вражеского героя с наименьшим уровнем здоровья, нанося огромный урон в размере 2000% от атаки питомца и увеличивая получаемый им урон на 20% на 10 сек.",
+                "zh-tw": "吞吞潛伏水中，驟然暴起撕咬。戰鬥開始時，撲向敵方生命最低的1名英雄，造成寵物攻擊力2000%的巨額傷害，並使其受到傷害提高20%，持續10秒。",
+                "de": "Beißer lauert unter Wasser und springt dann mit einem gefährlichen Biss hervor. Zu Beginn des Kampfes springt er auf den gegnerischen Helden mit dem niedrigsten Zustand, fügt massiven Schaden im Wert von 2000%  des Haustierangriffs zu und erhöht den von ihm erlittenen Schaden um 20% für 10 Sekunden."
+              }
+            },
+            {
+              "level": 6,
+              "trainingStage": 5,
+              "description": {
+                "ko": "촘피가 물속에 숨어 있다가 갑자기 튀어나와 물어뜯습니다. 전투 시작 시 적군 중 체력이 가장 낮은 영웅 1명에게 달려들어 펫 공격력 2000%만큼 막대한 대미지를 입히고, 목표가 받는 대미지를 20% 증가시키며, 10초간 지속됩니다.",
+                "en": "Chompy lurks beneath the water before lunging out with a vicious bite. At the start of battle, pounces on the enemy Hero with the lowest Health, dealing massive damage equal to 2000% of Pet Attack and increasing their damage taken by 20% for 10 second(s).",
+                "ja": "パックンは水中に身を潜め、獲物めがけて突如飛び出し、鋭い牙で噛みつく。戦闘開始時、HPが最も低い敵英雄1名に飛びかかり、ペット攻撃力の2000%に相当する大ダメージを与え、対象が受けるダメージを20%増加させます。効果は10秒間持続します",
+                "ru": "Кусь-кусь прячется под водой, а затем резко выныривает и впивается в противника. В начале боя он набрасывается на вражеского героя с наименьшим уровнем здоровья, нанося огромный урон в размере 2000% от атаки питомца и увеличивая получаемый им урон на 20% на 10 сек.",
+                "zh-tw": "吞吞潛伏水中，驟然暴起撕咬。戰鬥開始時，撲向敵方生命最低的1名英雄，造成寵物攻擊力2000%的巨額傷害，並使其受到傷害提高20%，持續10秒。",
+                "de": "Beißer lauert unter Wasser und springt dann mit einem gefährlichen Biss hervor. Zu Beginn des Kampfes springt er auf den gegnerischen Helden mit dem niedrigsten Zustand, fügt massiven Schaden im Wert von 2000%  des Haustierangriffs zu und erhöht den von ihm erlittenen Schaden um 20% für 10 Sekunden."
+              }
+            }
+          ]
+        },
+        {
+          "slot": 2,
+          "names": {
+            "ko": "악어의 전의",
+            "en": "Savage Instinct",
+            "ja": "荒ぶる戦意",
+            "ru": "Дикий инстинкт",
+            "zh-tw": "蠻鱷戰意",
+            "de": "Wildinstinkt"
+          },
+          "image": "/img/content-60/pets/chompy-skill-2.png",
+          "unlockStage": 2,
+          "configuredMaxLevel": 1,
+          "status": "verified-tooltip",
+          "levels": [
+            {
+              "level": 1,
+              "trainingStage": 2,
+              "description": {
+                "ko": "진형 영웅의 공격력이 2% 증가합니다.",
+                "en": "Increases deployed Heroes' Attack by 2%.",
+                "ja": "編成中の英雄の攻撃力が2%上昇します",
+                "ru": "Атака задействованных героев увеличивается на 2%.",
+                "zh-tw": "編隊英雄攻擊提升2%。",
+                "de": "Erhöht den Angriff von eingesetzten Helden um 2% ."
+              }
+            }
+          ]
+        },
+        {
+          "slot": 3,
+          "names": {
+            "ko": "해골 파괴자",
+            "en": "Bonecrusher",
+            "ja": "砕骨の一撃",
+            "ru": "Костолом",
+            "zh-tw": "碎骨暴擊",
+            "de": "Knochenzermalmer"
+          },
+          "image": "/img/content-60/pets/chompy-skill-3.png",
+          "unlockStage": 4,
+          "configuredMaxLevel": 1,
+          "status": "numeric-description-held",
+          "levels": []
+        },
+        {
+          "slot": 4,
+          "names": {
+            "ko": "철갑의 각성",
+            "en": "Ironhide Awakening",
+            "ja": "堅鱗覚醒",
+            "ru": "Пробуждение брони",
+            "zh-tw": "堅甲覺醒",
+            "de": "Eisenhauterwachen"
+          },
+          "image": "/img/content-60/pets/chompy-skill-4.png",
+          "unlockStage": 5,
+          "configuredMaxLevel": 1,
+          "status": "verified-tooltip",
+          "levels": [
+            {
+              "level": 1,
+              "trainingStage": 5,
+              "description": {
+                "ko": "펫 속성이 10% 증가합니다.",
+                "en": "Increases Pet Stats by 10%.",
+                "ja": "ペットのステータスが10%上昇します",
+                "ru": "Характеристики питомца увеличиваются на 10%.",
+                "zh-tw": "寵物屬性提升10%。",
+                "de": "Erhöht Haustierwerte um 10%."
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

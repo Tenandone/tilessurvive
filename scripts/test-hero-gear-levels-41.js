@@ -24,7 +24,9 @@ test('all 19,125 localized level pairs equal explicit formatter rows, including 
 test('85 existing pages retain every original skill, table, gear paragraph, image, SEO and one middle banner',()=>{
  for(const g of D.gears)for(const l of langs){const route=B.route(l,g.id),old=parseHTML(execFileSync('git',['show',base+':'+route],{cwd:root,encoding:'utf8',maxBuffer:4e6})).document,d=load(l,g.id),block=d.querySelector('[data-hero-gear-levels-41]');assert(block,route);
   const growth=d.querySelector('[data-growth-50]');
-  if(growth){const growthBuilder=require('./build-growth-50'),hero=require('../data/product-50/growth-gear.json').heroes.find(h=>h.id===g.id);assert(hero);assert.equal(d.querySelectorAll('[data-growth-50]').length,1);const expected=parseHTML(growthBuilder.render(l,hero)).document.querySelector('[data-growth-50]');assert.equal(growth.outerHTML,expected.outerHTML,route+' exact reviewed growth50 addition');growth.remove();}
+  // Validate the current complete projection before normalization removes any
+  // reviewed addition. Client-source checks require the still-intact DOM.
+  if(growth){const growthBuilder=require('./build-growth-50'),hero=require('../data/product-50/growth-gear.json').heroes.find(h=>h.id===g.id);assert(hero);assert.equal(d.querySelectorAll('[data-growth-50]').length,1);const expected=parseHTML(growthBuilder.render(l,hero)).document.querySelector('[data-growth-50]');assert.equal(growth.outerHTML,expected.outerHTML,route+' exact reviewed growth50 addition');}
   reviewedPortrait(old,g.id);
   require('./foundation-40-test-allowances').reviewedHeroSkillImages(old,route);P50.normalizeDocument(old,route);P50.normalizeDocument(d,route);
   const extract=(doc,selector)=>[...doc.querySelectorAll(selector)].map(n=>text(n.outerHTML));
@@ -47,8 +49,19 @@ test('actual unchanged client makes every page comparison interactive with corre
   vm.runInNewContext(fs.readFileSync(path.join(root,'js/sea-hero-growth-40.js'),'utf8'),{window,globalThis:window});assert(!form.hidden);handlers.change();const table=d.getElementById('sea-gear-live-table'),cells=table.querySelectorAll('tbody td'),value=M.compareGear(g,l,2,14);assert.deepEqual([...cells].map(n=>n.textContent),[value.from,value.to]);assert.equal(table.querySelectorAll('thead th')[1].textContent,'Lv.2');assert.equal(table.querySelectorAll('thead th')[2].textContent,'Lv.14');assert(form.querySelector('[role=status]').textContent.includes('14'));from='0';handlers.change();assert.equal(form.querySelector('[role=status]').textContent,JSON.parse(d.getElementById('sea-hero-growth-data').textContent).copy.invalid);assert.deepEqual([...cells].map(n=>n.textContent),[value.from,value.to]);let stopped=false;handlers.submit({preventDefault(){stopped=true}});assert(stopped);
  }
 });
-test('source/style and other hero content retain the baseline apart from reviewed Knotty image overlays',()=>{
+test('source/style and other hero content retain exact baselines plus reviewed image and Phase1 additions',()=>{
  for(const f of ['js/sea-hero-growth-40.js','css/sea-hero-growth-40.css','data/foundation-40/sea-hero-growth.json',...langs.flatMap(l=>['knotty','dave','lagnar'].map(id=>l+'/heroes/'+id+'/index.html'))]){
+  if(/\/heroes\/(dave|lagnar)\//.test(f)){
+   // These two pages gained a precisely bounded Phase1 stat table. Validate
+   // their entire current DOM against that fixed reviewed projection once,
+   // then assert the restored DOM equals its immutable pre-Phase1 baseline.
+   // Running the newest projection validator on the much older 4.1 fixture
+   // would incorrectly demand future sections on a historical input.
+   const combat=require('./content-combat-60-test-allowances'),signature=require('./client-truth-52-test-allowances').signature;
+   const current=parseHTML(fs.readFileSync(path.join(root,f),'utf8')).document;
+   combat.restore(current,f);
+   assert.deepEqual(signature(current.documentElement),signature(parseHTML(combat.original(f)).document.documentElement),f+' exact restored pre-Phase1 DOM');continue;
+  }
   let expected=execFileSync('git',['show',base+':'+f],{cwd:root,encoding:'utf8',maxBuffer:4e6}).replaceAll('\r\n','\n');
   if(f.includes('/heroes/knotty/')){
    const old=parseHTML(expected).document,d=parseHTML(fs.readFileSync(path.join(root,f),'utf8')).document;reviewedPortrait(old,'knotty');

@@ -1,0 +1,6 @@
+(function(root){'use strict';
+function init(d,win=root){d.querySelectorAll('[data-building-phase2-60]').forEach(host=>{const select=host.querySelector('[data-c60-house-select]');if(!select||select.hasAttribute('data-ready'))return;select.setAttribute('data-ready','');const sections=[...host.querySelectorAll('[data-c60-house]')];function update(){for(const section of sections)section.hidden=section.dataset.c60House!==select.value;}
+ function revealHash(){let id;try{id=decodeURIComponent((win.location?.hash||'').slice(1));}catch{return;}const target=d.getElementById(id),section=target?.closest('[data-c60-house]');if(!section||!sections.includes(section))return;select.value=section.dataset.c60House;update();const scroll=()=>target.scrollIntoView?.({block:'start'});if(win.requestAnimationFrame)win.requestAnimationFrame(scroll);else scroll();}
+ select.addEventListener('change',update);win.addEventListener?.('hashchange',revealHash);update();revealHash();});}
+if(typeof module==='object')module.exports={init};if(root.document){if(root.document.readyState==='loading')root.document.addEventListener('DOMContentLoaded',()=>init(root.document));else init(root.document);}
+})(typeof window==='object'?window:globalThis);

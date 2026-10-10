@@ -47,7 +47,7 @@ function detail(html,lang,slug){const d=parseHTML(html).document,t=copy[lang],c=
  d.documentElement.setAttribute('data-building-level-label-53',t.level);asset(d,'',true);return {html:'<!DOCTYPE html>\n'+d.documentElement.outerHTML+'\n',coverage:c};
 }
 function catalog(html,lang,entries){const d=parseHTML(html).document,t=copy[lang];
- for(const card of d.querySelectorAll('.building-card')){const body=card.querySelector('.building-body'),link=body.querySelector('.building-link'),href=link.getAttribute('href'),slug=href.split('/').filter(Boolean).at(-1),c=entries[slug];if(!c)throw Error('Missing detail coverage '+slug);
+ for(const card of d.querySelectorAll('.building-card')){if(card.hasAttribute('data-building-phase2-card'))continue;const body=card.querySelector('.building-body'),link=body.querySelector('.building-link'),href=link.getAttribute('href'),slug=href.split('/').filter(Boolean).at(-1),c=entries[slug];if(!c)throw Error('Missing detail coverage '+slug);
  body.append(link);body.querySelectorAll('.ts3-catalog-data,[data-building-ux-53-generated]').forEach(n=>n.remove());
  link.textContent=t.detail;const range=d.createElement('p');range.className='building-range-53';range.setAttribute('data-building-ux-53-generated','');range.textContent=t.known+' · '+(c.range?c.range+' · '+t[c.kind]:t.unknown);body.insertBefore(range,link);
  const actions=d.createElement('div');actions.className='building-card-actions-53';actions.setAttribute('data-building-ux-53-generated','');link.before(actions);actions.append(link);const shortcut=d.createElement('a');shortcut.href=href+'#upgrade-sheet';shortcut.textContent=t.sheet;shortcut.className='building-sheet-link-53';actions.append(shortcut);

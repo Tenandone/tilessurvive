@@ -1,0 +1,11 @@
+/* Scoped to the three configuration-reference pages; existing pet UI is intact. */
+[data-pets-phase2-page] .p60-identity{display:flex;gap:1.5rem;align-items:center;justify-content:space-between}
+[data-pets-phase2-page] .p60-identity>div{min-width:0}
+[data-pets-phase2-page] .p60-portrait{object-fit:contain;width:180px;height:246px;flex-shrink:0}
+[data-pets-phase2-page] .p60-skill{margin-top:1.5rem;padding-top:1rem;border-top:1px solid #d9ded5}
+[data-pets-phase2-page] .p60-skill-heading{display:flex;align-items:center;gap:1rem;margin-bottom:1rem}
+[data-pets-phase2-page] .p60-skill-heading img{flex-shrink:0;border-radius:12px}
+[data-pets-phase2-page] .c60-controls input{width:5.5rem;max-width:100%;min-height:44px;padding:.6rem;border:1px solid #8b9f92;border-radius:8px;font:inherit;color:#17362c;background:white}
+[data-pets-phase2-page] .c60-controls button{min-height:44px;padding:.65rem 1rem;border:0;border-radius:8px;background:#245c49;color:white;font:inherit;cursor:pointer}
+[data-pets-phase2-page] .c60-controls input:focus-visible,[data-pets-phase2-page] .c60-controls button:focus-visible{outline:3px solid #357851;outline-offset:3px}
+@media(max-width:540px){[data-pets-phase2-page] .p60-identity{flex-direction:column-reverse;align-items:flex-start}[data-pets-phase2-page] .p60-portrait{align-self:center;width:150px;height:205px}[data-pets-phase2-page] .p60-skill-heading img{width:72px;height:72px}[data-pets-phase2-page] .c60-controls input{width:100%}}
