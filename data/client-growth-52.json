@@ -1,0 +1,1962 @@
+{
+  "schemaVersion": 1,
+  "gameVersion": "2.6.200",
+  "gear": {
+    "unit": "EXP",
+    "min": 1,
+    "max": 80,
+    "profiles": [
+      {
+        "id": 176500055,
+        "quality": 1,
+        "part": 1,
+        "declaredMaxLevel": 80
+      },
+      {
+        "id": 176500056,
+        "quality": 1,
+        "part": 2,
+        "declaredMaxLevel": 80
+      },
+      {
+        "id": 176500057,
+        "quality": 1,
+        "part": 3,
+        "declaredMaxLevel": 80
+      },
+      {
+        "id": 176500058,
+        "quality": 2,
+        "part": 1,
+        "declaredMaxLevel": 80
+      },
+      {
+        "id": 176500059,
+        "quality": 2,
+        "part": 2,
+        "declaredMaxLevel": 80
+      },
+      {
+        "id": 176500060,
+        "quality": 2,
+        "part": 3,
+        "declaredMaxLevel": 80
+      },
+      {
+        "id": 176500061,
+        "quality": 3,
+        "part": 1,
+        "declaredMaxLevel": 80
+      },
+      {
+        "id": 176500062,
+        "quality": 3,
+        "part": 2,
+        "declaredMaxLevel": 80
+      },
+      {
+        "id": 176500063,
+        "quality": 3,
+        "part": 3,
+        "declaredMaxLevel": 80
+      },
+      {
+        "id": 176500064,
+        "quality": 4,
+        "part": 1,
+        "declaredMaxLevel": 80
+      },
+      {
+        "id": 176500065,
+        "quality": 4,
+        "part": 2,
+        "declaredMaxLevel": 80
+      },
+      {
+        "id": 176500066,
+        "quality": 4,
+        "part": 3,
+        "declaredMaxLevel": 80
+      },
+      {
+        "id": 176500067,
+        "quality": 5,
+        "part": 1,
+        "declaredMaxLevel": 80
+      },
+      {
+        "id": 176500068,
+        "quality": 5,
+        "part": 2,
+        "declaredMaxLevel": 80
+      },
+      {
+        "id": 176500069,
+        "quality": 5,
+        "part": 3,
+        "declaredMaxLevel": 80
+      },
+      {
+        "id": 176500070,
+        "quality": 6,
+        "part": 1,
+        "declaredMaxLevel": 200
+      },
+      {
+        "id": 176500071,
+        "quality": 6,
+        "part": 2,
+        "declaredMaxLevel": 200
+      },
+      {
+        "id": 176500072,
+        "quality": 6,
+        "part": 3,
+        "declaredMaxLevel": 200
+      }
+    ],
+    "costBoundary": "current-level-to-next-level",
+    "materials": [
+      {
+        "id": 208012,
+        "name": {
+          "ko": "남은 장비 재료",
+          "en": "Gear Scraps",
+          "ja": "装備余剰",
+          "ru": "Обломки снаряжения",
+          "zh-tw": "裝備餘料",
+          "de": "Ausrüstungsfetzen"
+        },
+        "description": {
+          "ko": "영웅 장비 강화에 사용될 경우 경험치 100 증가",
+          "en": "Adds 100 EXP when enhancing Hero Gear.",
+          "ja": "英雄装備強化に使うと、EXP+100Pt",
+          "ru": "Добавляет 100 опыта при улучшении снаряжения героя.",
+          "zh-tw": "用於英雄裝備強化時，增加100點經驗值",
+          "de": "Erhöht die EP um 100, wenn du Heldenausrüstung verbesserst."
+        },
+        "expPerItem": 100,
+        "source": {
+          "gameVersion": "2.6.200",
+          "table": "itemlist",
+          "recordId": 208012,
+          "field": "Para1"
+        }
+      },
+      {
+        "id": 208013,
+        "name": {
+          "ko": "남은 장비 재료",
+          "en": "Gear Scraps",
+          "ja": "装備余剰",
+          "ru": "Обломки снаряжения",
+          "zh-tw": "裝備餘料",
+          "de": "Ausrüstungsfetzen"
+        },
+        "description": {
+          "ko": "영웅 장비 강화에 사용될 경우 경험치 400 증가",
+          "en": "Adds 400 EXP when enhancing Hero Gear.",
+          "ja": "英雄装備強化に使うと、EXP+400Pt",
+          "ru": "Добавляет 400 опыта при улучшении снаряжения героя.",
+          "zh-tw": "用於英雄裝備強化時，增加400點經驗值",
+          "de": "Erhöht die EP um 400, wenn du Heldenausrüstung verbesserst."
+        },
+        "expPerItem": 400,
+        "source": {
+          "gameVersion": "2.6.200",
+          "table": "itemlist",
+          "recordId": 208013,
+          "field": "Para1"
+        }
+      },
+      {
+        "id": 208014,
+        "name": {
+          "ko": "남은 장비 재료",
+          "en": "Gear Scraps",
+          "ja": "装備余剰",
+          "ru": "Обломки снаряжения",
+          "zh-tw": "裝備餘料",
+          "de": "Ausrüstungsfetzen"
+        },
+        "description": {
+          "ko": "영웅 장비 강화에 사용될 경우 경험치 2000 증가",
+          "en": "Adds 2000 EXP when enhancing Hero Gear.",
+          "ja": "英雄装備強化に使うと、EXP+2,000Pt",
+          "ru": "Добавляет 2000 опыта при улучшении снаряжения героя.",
+          "zh-tw": "英雄裝備強化時，可增加2000點經驗值",
+          "de": "Erhöht die EP um 2000, wenn du Heldenausrüstung verbesserst."
+        },
+        "expPerItem": 2000,
+        "source": {
+          "gameVersion": "2.6.200",
+          "table": "itemlist",
+          "recordId": 208014,
+          "field": "Para1"
+        }
+      }
+    ],
+    "rows": [
+      {
+        "from": 1,
+        "to": 2,
+        "cost": 400,
+        "sourceTotal": 400
+      },
+      {
+        "from": 2,
+        "to": 3,
+        "cost": 600,
+        "sourceTotal": 1000
+      },
+      {
+        "from": 3,
+        "to": 4,
+        "cost": 800,
+        "sourceTotal": 1800
+      },
+      {
+        "from": 4,
+        "to": 5,
+        "cost": 1000,
+        "sourceTotal": 2800
+      },
+      {
+        "from": 5,
+        "to": 6,
+        "cost": 1200,
+        "sourceTotal": 4000
+      },
+      {
+        "from": 6,
+        "to": 7,
+        "cost": 1400,
+        "sourceTotal": 5400
+      },
+      {
+        "from": 7,
+        "to": 8,
+        "cost": 1600,
+        "sourceTotal": 7000
+      },
+      {
+        "from": 8,
+        "to": 9,
+        "cost": 1800,
+        "sourceTotal": 8800
+      },
+      {
+        "from": 9,
+        "to": 10,
+        "cost": 2100,
+        "sourceTotal": 10900
+      },
+      {
+        "from": 10,
+        "to": 11,
+        "cost": 2400,
+        "sourceTotal": 13300
+      },
+      {
+        "from": 11,
+        "to": 12,
+        "cost": 2700,
+        "sourceTotal": 16000
+      },
+      {
+        "from": 12,
+        "to": 13,
+        "cost": 3000,
+        "sourceTotal": 19000
+      },
+      {
+        "from": 13,
+        "to": 14,
+        "cost": 3300,
+        "sourceTotal": 22300
+      },
+      {
+        "from": 14,
+        "to": 15,
+        "cost": 3600,
+        "sourceTotal": 25900
+      },
+      {
+        "from": 15,
+        "to": 16,
+        "cost": 3900,
+        "sourceTotal": 29800
+      },
+      {
+        "from": 16,
+        "to": 17,
+        "cost": 4200,
+        "sourceTotal": 34000
+      },
+      {
+        "from": 17,
+        "to": 18,
+        "cost": 4500,
+        "sourceTotal": 38500
+      },
+      {
+        "from": 18,
+        "to": 19,
+        "cost": 4800,
+        "sourceTotal": 43300
+      },
+      {
+        "from": 19,
+        "to": 20,
+        "cost": 5200,
+        "sourceTotal": 48500
+      },
+      {
+        "from": 20,
+        "to": 21,
+        "cost": 5600,
+        "sourceTotal": 54100
+      },
+      {
+        "from": 21,
+        "to": 22,
+        "cost": 6000,
+        "sourceTotal": 60100
+      },
+      {
+        "from": 22,
+        "to": 23,
+        "cost": 6400,
+        "sourceTotal": 66500
+      },
+      {
+        "from": 23,
+        "to": 24,
+        "cost": 6800,
+        "sourceTotal": 73300
+      },
+      {
+        "from": 24,
+        "to": 25,
+        "cost": 7200,
+        "sourceTotal": 80500
+      },
+      {
+        "from": 25,
+        "to": 26,
+        "cost": 7600,
+        "sourceTotal": 88100
+      },
+      {
+        "from": 26,
+        "to": 27,
+        "cost": 8000,
+        "sourceTotal": 96100
+      },
+      {
+        "from": 27,
+        "to": 28,
+        "cost": 8400,
+        "sourceTotal": 104500
+      },
+      {
+        "from": 28,
+        "to": 29,
+        "cost": 8800,
+        "sourceTotal": 113300
+      },
+      {
+        "from": 29,
+        "to": 30,
+        "cost": 9300,
+        "sourceTotal": 122600
+      },
+      {
+        "from": 30,
+        "to": 31,
+        "cost": 9800,
+        "sourceTotal": 132400
+      },
+      {
+        "from": 31,
+        "to": 32,
+        "cost": 10300,
+        "sourceTotal": 142700
+      },
+      {
+        "from": 32,
+        "to": 33,
+        "cost": 10800,
+        "sourceTotal": 153500
+      },
+      {
+        "from": 33,
+        "to": 34,
+        "cost": 11300,
+        "sourceTotal": 164800
+      },
+      {
+        "from": 34,
+        "to": 35,
+        "cost": 11800,
+        "sourceTotal": 176600
+      },
+      {
+        "from": 35,
+        "to": 36,
+        "cost": 12300,
+        "sourceTotal": 188900
+      },
+      {
+        "from": 36,
+        "to": 37,
+        "cost": 12800,
+        "sourceTotal": 201700
+      },
+      {
+        "from": 37,
+        "to": 38,
+        "cost": 13300,
+        "sourceTotal": 215000
+      },
+      {
+        "from": 38,
+        "to": 39,
+        "cost": 13800,
+        "sourceTotal": 228800
+      },
+      {
+        "from": 39,
+        "to": 40,
+        "cost": 14500,
+        "sourceTotal": 243300
+      },
+      {
+        "from": 40,
+        "to": 41,
+        "cost": 15200,
+        "sourceTotal": 258500
+      },
+      {
+        "from": 41,
+        "to": 42,
+        "cost": 15900,
+        "sourceTotal": 274400
+      },
+      {
+        "from": 42,
+        "to": 43,
+        "cost": 16600,
+        "sourceTotal": 291000
+      },
+      {
+        "from": 43,
+        "to": 44,
+        "cost": 17300,
+        "sourceTotal": 308300
+      },
+      {
+        "from": 44,
+        "to": 45,
+        "cost": 18000,
+        "sourceTotal": 326300
+      },
+      {
+        "from": 45,
+        "to": 46,
+        "cost": 18700,
+        "sourceTotal": 345000
+      },
+      {
+        "from": 46,
+        "to": 47,
+        "cost": 19400,
+        "sourceTotal": 364400
+      },
+      {
+        "from": 47,
+        "to": 48,
+        "cost": 20100,
+        "sourceTotal": 384500
+      },
+      {
+        "from": 48,
+        "to": 49,
+        "cost": 20800,
+        "sourceTotal": 405300
+      },
+      {
+        "from": 49,
+        "to": 50,
+        "cost": 21700,
+        "sourceTotal": 427000
+      },
+      {
+        "from": 50,
+        "to": 51,
+        "cost": 22600,
+        "sourceTotal": 449600
+      },
+      {
+        "from": 51,
+        "to": 52,
+        "cost": 23500,
+        "sourceTotal": 473100
+      },
+      {
+        "from": 52,
+        "to": 53,
+        "cost": 24400,
+        "sourceTotal": 497500
+      },
+      {
+        "from": 53,
+        "to": 54,
+        "cost": 25300,
+        "sourceTotal": 522800
+      },
+      {
+        "from": 54,
+        "to": 55,
+        "cost": 26200,
+        "sourceTotal": 549000
+      },
+      {
+        "from": 55,
+        "to": 56,
+        "cost": 27100,
+        "sourceTotal": 576100
+      },
+      {
+        "from": 56,
+        "to": 57,
+        "cost": 28000,
+        "sourceTotal": 604100
+      },
+      {
+        "from": 57,
+        "to": 58,
+        "cost": 28900,
+        "sourceTotal": 633000
+      },
+      {
+        "from": 58,
+        "to": 59,
+        "cost": 29800,
+        "sourceTotal": 662800
+      },
+      {
+        "from": 59,
+        "to": 60,
+        "cost": 31000,
+        "sourceTotal": 693800
+      },
+      {
+        "from": 60,
+        "to": 61,
+        "cost": 32200,
+        "sourceTotal": 726000
+      },
+      {
+        "from": 61,
+        "to": 62,
+        "cost": 33400,
+        "sourceTotal": 759400
+      },
+      {
+        "from": 62,
+        "to": 63,
+        "cost": 34600,
+        "sourceTotal": 794000
+      },
+      {
+        "from": 63,
+        "to": 64,
+        "cost": 35800,
+        "sourceTotal": 829800
+      },
+      {
+        "from": 64,
+        "to": 65,
+        "cost": 37000,
+        "sourceTotal": 866800
+      },
+      {
+        "from": 65,
+        "to": 66,
+        "cost": 38200,
+        "sourceTotal": 905000
+      },
+      {
+        "from": 66,
+        "to": 67,
+        "cost": 39400,
+        "sourceTotal": 944400
+      },
+      {
+        "from": 67,
+        "to": 68,
+        "cost": 40600,
+        "sourceTotal": 985000
+      },
+      {
+        "from": 68,
+        "to": 69,
+        "cost": 41800,
+        "sourceTotal": 1026800
+      },
+      {
+        "from": 69,
+        "to": 70,
+        "cost": 43400,
+        "sourceTotal": 1070200
+      },
+      {
+        "from": 70,
+        "to": 71,
+        "cost": 45000,
+        "sourceTotal": 1115200
+      },
+      {
+        "from": 71,
+        "to": 72,
+        "cost": 46600,
+        "sourceTotal": 1161800
+      },
+      {
+        "from": 72,
+        "to": 73,
+        "cost": 48200,
+        "sourceTotal": 1210000
+      },
+      {
+        "from": 73,
+        "to": 74,
+        "cost": 49800,
+        "sourceTotal": 1259800
+      },
+      {
+        "from": 74,
+        "to": 75,
+        "cost": 51400,
+        "sourceTotal": 1311200
+      },
+      {
+        "from": 75,
+        "to": 76,
+        "cost": 53000,
+        "sourceTotal": 1364200
+      },
+      {
+        "from": 76,
+        "to": 77,
+        "cost": 54600,
+        "sourceTotal": 1418800
+      },
+      {
+        "from": 77,
+        "to": 78,
+        "cost": 56200,
+        "sourceTotal": 1475000
+      },
+      {
+        "from": 78,
+        "to": 79,
+        "cost": 57800,
+        "sourceTotal": 1532800
+      },
+      {
+        "from": 79,
+        "to": 80,
+        "cost": 59400,
+        "sourceTotal": 1592200
+      }
+    ]
+  },
+  "behemoth": {
+    "unit": "items",
+    "itemId": 206386,
+    "stagesPerStar": 6,
+    "profiles": [
+      {
+        "id": 126000006,
+        "slug": "legend-griffin",
+        "declaredMaxTotalStages": 900
+      },
+      {
+        "id": 126000008,
+        "slug": "marine-drake",
+        "declaredMaxTotalStages": 900
+      }
+    ],
+    "costBoundary": "next-target-stage",
+    "publishedStarRange": [
+      1,
+      60
+    ],
+    "cumulativeAnchorTotalStage": 6,
+    "initialAcquisitionCost": null,
+    "rows": [
+      {
+        "star": 1,
+        "targetTotalStages": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6
+        ],
+        "steps": [
+          null,
+          4,
+          4,
+          4,
+          4,
+          6
+        ],
+        "total": null,
+        "cumulativeFromCompleteOneStar": null
+      },
+      {
+        "star": 2,
+        "targetTotalStages": [
+          7,
+          8,
+          9,
+          10,
+          11,
+          12
+        ],
+        "steps": [
+          6,
+          6,
+          6,
+          6,
+          6,
+          8
+        ],
+        "total": 38,
+        "cumulativeFromCompleteOneStar": 38
+      },
+      {
+        "star": 3,
+        "targetTotalStages": [
+          13,
+          14,
+          15,
+          16,
+          17,
+          18
+        ],
+        "steps": [
+          8,
+          8,
+          8,
+          8,
+          8,
+          10
+        ],
+        "total": 50,
+        "cumulativeFromCompleteOneStar": 88
+      },
+      {
+        "star": 4,
+        "targetTotalStages": [
+          19,
+          20,
+          21,
+          22,
+          23,
+          24
+        ],
+        "steps": [
+          10,
+          10,
+          10,
+          10,
+          10,
+          12
+        ],
+        "total": 62,
+        "cumulativeFromCompleteOneStar": 150
+      },
+      {
+        "star": 5,
+        "targetTotalStages": [
+          25,
+          26,
+          27,
+          28,
+          29,
+          30
+        ],
+        "steps": [
+          12,
+          12,
+          12,
+          12,
+          12,
+          14
+        ],
+        "total": 74,
+        "cumulativeFromCompleteOneStar": 224
+      },
+      {
+        "star": 6,
+        "targetTotalStages": [
+          31,
+          32,
+          33,
+          34,
+          35,
+          36
+        ],
+        "steps": [
+          14,
+          14,
+          14,
+          14,
+          14,
+          16
+        ],
+        "total": 86,
+        "cumulativeFromCompleteOneStar": 310
+      },
+      {
+        "star": 7,
+        "targetTotalStages": [
+          37,
+          38,
+          39,
+          40,
+          41,
+          42
+        ],
+        "steps": [
+          16,
+          16,
+          16,
+          16,
+          16,
+          18
+        ],
+        "total": 98,
+        "cumulativeFromCompleteOneStar": 408
+      },
+      {
+        "star": 8,
+        "targetTotalStages": [
+          43,
+          44,
+          45,
+          46,
+          47,
+          48
+        ],
+        "steps": [
+          18,
+          18,
+          18,
+          18,
+          18,
+          20
+        ],
+        "total": 110,
+        "cumulativeFromCompleteOneStar": 518
+      },
+      {
+        "star": 9,
+        "targetTotalStages": [
+          49,
+          50,
+          51,
+          52,
+          53,
+          54
+        ],
+        "steps": [
+          20,
+          20,
+          20,
+          20,
+          20,
+          22
+        ],
+        "total": 122,
+        "cumulativeFromCompleteOneStar": 640
+      },
+      {
+        "star": 10,
+        "targetTotalStages": [
+          55,
+          56,
+          57,
+          58,
+          59,
+          60
+        ],
+        "steps": [
+          22,
+          22,
+          22,
+          22,
+          22,
+          24
+        ],
+        "total": 134,
+        "cumulativeFromCompleteOneStar": 774
+      },
+      {
+        "star": 11,
+        "targetTotalStages": [
+          61,
+          62,
+          63,
+          64,
+          65,
+          66
+        ],
+        "steps": [
+          24,
+          24,
+          24,
+          24,
+          24,
+          26
+        ],
+        "total": 146,
+        "cumulativeFromCompleteOneStar": 920
+      },
+      {
+        "star": 12,
+        "targetTotalStages": [
+          67,
+          68,
+          69,
+          70,
+          71,
+          72
+        ],
+        "steps": [
+          26,
+          26,
+          26,
+          26,
+          26,
+          28
+        ],
+        "total": 158,
+        "cumulativeFromCompleteOneStar": 1078
+      },
+      {
+        "star": 13,
+        "targetTotalStages": [
+          73,
+          74,
+          75,
+          76,
+          77,
+          78
+        ],
+        "steps": [
+          28,
+          28,
+          28,
+          28,
+          28,
+          30
+        ],
+        "total": 170,
+        "cumulativeFromCompleteOneStar": 1248
+      },
+      {
+        "star": 14,
+        "targetTotalStages": [
+          79,
+          80,
+          81,
+          82,
+          83,
+          84
+        ],
+        "steps": [
+          30,
+          30,
+          30,
+          30,
+          30,
+          32
+        ],
+        "total": 182,
+        "cumulativeFromCompleteOneStar": 1430
+      },
+      {
+        "star": 15,
+        "targetTotalStages": [
+          85,
+          86,
+          87,
+          88,
+          89,
+          90
+        ],
+        "steps": [
+          32,
+          32,
+          32,
+          32,
+          32,
+          34
+        ],
+        "total": 194,
+        "cumulativeFromCompleteOneStar": 1624
+      },
+      {
+        "star": 16,
+        "targetTotalStages": [
+          91,
+          92,
+          93,
+          94,
+          95,
+          96
+        ],
+        "steps": [
+          34,
+          34,
+          34,
+          34,
+          34,
+          36
+        ],
+        "total": 206,
+        "cumulativeFromCompleteOneStar": 1830
+      },
+      {
+        "star": 17,
+        "targetTotalStages": [
+          97,
+          98,
+          99,
+          100,
+          101,
+          102
+        ],
+        "steps": [
+          36,
+          36,
+          36,
+          36,
+          36,
+          38
+        ],
+        "total": 218,
+        "cumulativeFromCompleteOneStar": 2048
+      },
+      {
+        "star": 18,
+        "targetTotalStages": [
+          103,
+          104,
+          105,
+          106,
+          107,
+          108
+        ],
+        "steps": [
+          38,
+          38,
+          38,
+          38,
+          38,
+          40
+        ],
+        "total": 230,
+        "cumulativeFromCompleteOneStar": 2278
+      },
+      {
+        "star": 19,
+        "targetTotalStages": [
+          109,
+          110,
+          111,
+          112,
+          113,
+          114
+        ],
+        "steps": [
+          40,
+          40,
+          40,
+          40,
+          40,
+          42
+        ],
+        "total": 242,
+        "cumulativeFromCompleteOneStar": 2520
+      },
+      {
+        "star": 20,
+        "targetTotalStages": [
+          115,
+          116,
+          117,
+          118,
+          119,
+          120
+        ],
+        "steps": [
+          42,
+          42,
+          42,
+          42,
+          42,
+          44
+        ],
+        "total": 254,
+        "cumulativeFromCompleteOneStar": 2774
+      },
+      {
+        "star": 21,
+        "targetTotalStages": [
+          121,
+          122,
+          123,
+          124,
+          125,
+          126
+        ],
+        "steps": [
+          44,
+          44,
+          44,
+          44,
+          44,
+          46
+        ],
+        "total": 266,
+        "cumulativeFromCompleteOneStar": 3040
+      },
+      {
+        "star": 22,
+        "targetTotalStages": [
+          127,
+          128,
+          129,
+          130,
+          131,
+          132
+        ],
+        "steps": [
+          46,
+          46,
+          46,
+          46,
+          46,
+          48
+        ],
+        "total": 278,
+        "cumulativeFromCompleteOneStar": 3318
+      },
+      {
+        "star": 23,
+        "targetTotalStages": [
+          133,
+          134,
+          135,
+          136,
+          137,
+          138
+        ],
+        "steps": [
+          48,
+          48,
+          48,
+          48,
+          48,
+          50
+        ],
+        "total": 290,
+        "cumulativeFromCompleteOneStar": 3608
+      },
+      {
+        "star": 24,
+        "targetTotalStages": [
+          139,
+          140,
+          141,
+          142,
+          143,
+          144
+        ],
+        "steps": [
+          50,
+          50,
+          50,
+          50,
+          50,
+          52
+        ],
+        "total": 302,
+        "cumulativeFromCompleteOneStar": 3910
+      },
+      {
+        "star": 25,
+        "targetTotalStages": [
+          145,
+          146,
+          147,
+          148,
+          149,
+          150
+        ],
+        "steps": [
+          52,
+          52,
+          52,
+          52,
+          52,
+          56
+        ],
+        "total": 316,
+        "cumulativeFromCompleteOneStar": 4226
+      },
+      {
+        "star": 26,
+        "targetTotalStages": [
+          151,
+          152,
+          153,
+          154,
+          155,
+          156
+        ],
+        "steps": [
+          56,
+          56,
+          56,
+          56,
+          56,
+          60
+        ],
+        "total": 340,
+        "cumulativeFromCompleteOneStar": 4566
+      },
+      {
+        "star": 27,
+        "targetTotalStages": [
+          157,
+          158,
+          159,
+          160,
+          161,
+          162
+        ],
+        "steps": [
+          60,
+          60,
+          60,
+          60,
+          60,
+          64
+        ],
+        "total": 364,
+        "cumulativeFromCompleteOneStar": 4930
+      },
+      {
+        "star": 28,
+        "targetTotalStages": [
+          163,
+          164,
+          165,
+          166,
+          167,
+          168
+        ],
+        "steps": [
+          64,
+          64,
+          64,
+          64,
+          64,
+          68
+        ],
+        "total": 388,
+        "cumulativeFromCompleteOneStar": 5318
+      },
+      {
+        "star": 29,
+        "targetTotalStages": [
+          169,
+          170,
+          171,
+          172,
+          173,
+          174
+        ],
+        "steps": [
+          68,
+          68,
+          68,
+          68,
+          68,
+          72
+        ],
+        "total": 412,
+        "cumulativeFromCompleteOneStar": 5730
+      },
+      {
+        "star": 30,
+        "targetTotalStages": [
+          175,
+          176,
+          177,
+          178,
+          179,
+          180
+        ],
+        "steps": [
+          72,
+          72,
+          72,
+          72,
+          72,
+          76
+        ],
+        "total": 436,
+        "cumulativeFromCompleteOneStar": 6166
+      },
+      {
+        "star": 31,
+        "targetTotalStages": [
+          181,
+          182,
+          183,
+          184,
+          185,
+          186
+        ],
+        "steps": [
+          76,
+          76,
+          76,
+          76,
+          76,
+          80
+        ],
+        "total": 460,
+        "cumulativeFromCompleteOneStar": 6626
+      },
+      {
+        "star": 32,
+        "targetTotalStages": [
+          187,
+          188,
+          189,
+          190,
+          191,
+          192
+        ],
+        "steps": [
+          80,
+          80,
+          80,
+          80,
+          80,
+          84
+        ],
+        "total": 484,
+        "cumulativeFromCompleteOneStar": 7110
+      },
+      {
+        "star": 33,
+        "targetTotalStages": [
+          193,
+          194,
+          195,
+          196,
+          197,
+          198
+        ],
+        "steps": [
+          84,
+          84,
+          84,
+          84,
+          84,
+          88
+        ],
+        "total": 508,
+        "cumulativeFromCompleteOneStar": 7618
+      },
+      {
+        "star": 34,
+        "targetTotalStages": [
+          199,
+          200,
+          201,
+          202,
+          203,
+          204
+        ],
+        "steps": [
+          88,
+          88,
+          88,
+          88,
+          88,
+          92
+        ],
+        "total": 532,
+        "cumulativeFromCompleteOneStar": 8150
+      },
+      {
+        "star": 35,
+        "targetTotalStages": [
+          205,
+          206,
+          207,
+          208,
+          209,
+          210
+        ],
+        "steps": [
+          92,
+          92,
+          92,
+          92,
+          92,
+          96
+        ],
+        "total": 556,
+        "cumulativeFromCompleteOneStar": 8706
+      },
+      {
+        "star": 36,
+        "targetTotalStages": [
+          211,
+          212,
+          213,
+          214,
+          215,
+          216
+        ],
+        "steps": [
+          96,
+          96,
+          96,
+          96,
+          96,
+          100
+        ],
+        "total": 580,
+        "cumulativeFromCompleteOneStar": 9286
+      },
+      {
+        "star": 37,
+        "targetTotalStages": [
+          217,
+          218,
+          219,
+          220,
+          221,
+          222
+        ],
+        "steps": [
+          100,
+          100,
+          100,
+          100,
+          100,
+          104
+        ],
+        "total": 604,
+        "cumulativeFromCompleteOneStar": 9890
+      },
+      {
+        "star": 38,
+        "targetTotalStages": [
+          223,
+          224,
+          225,
+          226,
+          227,
+          228
+        ],
+        "steps": [
+          104,
+          104,
+          104,
+          104,
+          104,
+          108
+        ],
+        "total": 628,
+        "cumulativeFromCompleteOneStar": 10518
+      },
+      {
+        "star": 39,
+        "targetTotalStages": [
+          229,
+          230,
+          231,
+          232,
+          233,
+          234
+        ],
+        "steps": [
+          108,
+          108,
+          108,
+          108,
+          108,
+          112
+        ],
+        "total": 652,
+        "cumulativeFromCompleteOneStar": 11170
+      },
+      {
+        "star": 40,
+        "targetTotalStages": [
+          235,
+          236,
+          237,
+          238,
+          239,
+          240
+        ],
+        "steps": [
+          112,
+          112,
+          112,
+          112,
+          112,
+          116
+        ],
+        "total": 676,
+        "cumulativeFromCompleteOneStar": 11846
+      },
+      {
+        "star": 41,
+        "targetTotalStages": [
+          241,
+          242,
+          243,
+          244,
+          245,
+          246
+        ],
+        "steps": [
+          116,
+          116,
+          116,
+          116,
+          116,
+          120
+        ],
+        "total": 700,
+        "cumulativeFromCompleteOneStar": 12546
+      },
+      {
+        "star": 42,
+        "targetTotalStages": [
+          247,
+          248,
+          249,
+          250,
+          251,
+          252
+        ],
+        "steps": [
+          120,
+          120,
+          120,
+          120,
+          120,
+          124
+        ],
+        "total": 724,
+        "cumulativeFromCompleteOneStar": 13270
+      },
+      {
+        "star": 43,
+        "targetTotalStages": [
+          253,
+          254,
+          255,
+          256,
+          257,
+          258
+        ],
+        "steps": [
+          124,
+          124,
+          124,
+          124,
+          124,
+          128
+        ],
+        "total": 748,
+        "cumulativeFromCompleteOneStar": 14018
+      },
+      {
+        "star": 44,
+        "targetTotalStages": [
+          259,
+          260,
+          261,
+          262,
+          263,
+          264
+        ],
+        "steps": [
+          128,
+          128,
+          128,
+          128,
+          128,
+          132
+        ],
+        "total": 772,
+        "cumulativeFromCompleteOneStar": 14790
+      },
+      {
+        "star": 45,
+        "targetTotalStages": [
+          265,
+          266,
+          267,
+          268,
+          269,
+          270
+        ],
+        "steps": [
+          132,
+          132,
+          132,
+          132,
+          132,
+          136
+        ],
+        "total": 796,
+        "cumulativeFromCompleteOneStar": 15586
+      },
+      {
+        "star": 46,
+        "targetTotalStages": [
+          271,
+          272,
+          273,
+          274,
+          275,
+          276
+        ],
+        "steps": [
+          136,
+          136,
+          136,
+          136,
+          136,
+          140
+        ],
+        "total": 820,
+        "cumulativeFromCompleteOneStar": 16406
+      },
+      {
+        "star": 47,
+        "targetTotalStages": [
+          277,
+          278,
+          279,
+          280,
+          281,
+          282
+        ],
+        "steps": [
+          140,
+          140,
+          140,
+          140,
+          140,
+          144
+        ],
+        "total": 844,
+        "cumulativeFromCompleteOneStar": 17250
+      },
+      {
+        "star": 48,
+        "targetTotalStages": [
+          283,
+          284,
+          285,
+          286,
+          287,
+          288
+        ],
+        "steps": [
+          144,
+          144,
+          144,
+          144,
+          144,
+          148
+        ],
+        "total": 868,
+        "cumulativeFromCompleteOneStar": 18118
+      },
+      {
+        "star": 49,
+        "targetTotalStages": [
+          289,
+          290,
+          291,
+          292,
+          293,
+          294
+        ],
+        "steps": [
+          148,
+          148,
+          148,
+          148,
+          148,
+          152
+        ],
+        "total": 892,
+        "cumulativeFromCompleteOneStar": 19010
+      },
+      {
+        "star": 50,
+        "targetTotalStages": [
+          295,
+          296,
+          297,
+          298,
+          299,
+          300
+        ],
+        "steps": [
+          152,
+          152,
+          152,
+          152,
+          152,
+          156
+        ],
+        "total": 916,
+        "cumulativeFromCompleteOneStar": 19926
+      },
+      {
+        "star": 51,
+        "targetTotalStages": [
+          301,
+          302,
+          303,
+          304,
+          305,
+          306
+        ],
+        "steps": [
+          156,
+          156,
+          156,
+          156,
+          156,
+          160
+        ],
+        "total": 940,
+        "cumulativeFromCompleteOneStar": 20866
+      },
+      {
+        "star": 52,
+        "targetTotalStages": [
+          307,
+          308,
+          309,
+          310,
+          311,
+          312
+        ],
+        "steps": [
+          160,
+          160,
+          160,
+          160,
+          160,
+          164
+        ],
+        "total": 964,
+        "cumulativeFromCompleteOneStar": 21830
+      },
+      {
+        "star": 53,
+        "targetTotalStages": [
+          313,
+          314,
+          315,
+          316,
+          317,
+          318
+        ],
+        "steps": [
+          164,
+          164,
+          164,
+          164,
+          164,
+          168
+        ],
+        "total": 988,
+        "cumulativeFromCompleteOneStar": 22818
+      },
+      {
+        "star": 54,
+        "targetTotalStages": [
+          319,
+          320,
+          321,
+          322,
+          323,
+          324
+        ],
+        "steps": [
+          168,
+          168,
+          168,
+          168,
+          168,
+          172
+        ],
+        "total": 1012,
+        "cumulativeFromCompleteOneStar": 23830
+      },
+      {
+        "star": 55,
+        "targetTotalStages": [
+          325,
+          326,
+          327,
+          328,
+          329,
+          330
+        ],
+        "steps": [
+          172,
+          172,
+          172,
+          172,
+          172,
+          176
+        ],
+        "total": 1036,
+        "cumulativeFromCompleteOneStar": 24866
+      },
+      {
+        "star": 56,
+        "targetTotalStages": [
+          331,
+          332,
+          333,
+          334,
+          335,
+          336
+        ],
+        "steps": [
+          176,
+          176,
+          176,
+          176,
+          176,
+          180
+        ],
+        "total": 1060,
+        "cumulativeFromCompleteOneStar": 25926
+      },
+      {
+        "star": 57,
+        "targetTotalStages": [
+          337,
+          338,
+          339,
+          340,
+          341,
+          342
+        ],
+        "steps": [
+          180,
+          180,
+          180,
+          180,
+          180,
+          184
+        ],
+        "total": 1084,
+        "cumulativeFromCompleteOneStar": 27010
+      },
+      {
+        "star": 58,
+        "targetTotalStages": [
+          343,
+          344,
+          345,
+          346,
+          347,
+          348
+        ],
+        "steps": [
+          184,
+          184,
+          184,
+          184,
+          184,
+          188
+        ],
+        "total": 1108,
+        "cumulativeFromCompleteOneStar": 28118
+      },
+      {
+        "star": 59,
+        "targetTotalStages": [
+          349,
+          350,
+          351,
+          352,
+          353,
+          354
+        ],
+        "steps": [
+          188,
+          188,
+          188,
+          188,
+          188,
+          192
+        ],
+        "total": 1132,
+        "cumulativeFromCompleteOneStar": 29250
+      },
+      {
+        "star": 60,
+        "targetTotalStages": [
+          355,
+          356,
+          357,
+          358,
+          359,
+          360
+        ],
+        "steps": [
+          192,
+          192,
+          192,
+          192,
+          192,
+          200
+        ],
+        "total": 1160,
+        "cumulativeFromCompleteOneStar": 30410
+      }
+    ]
+  }
+}

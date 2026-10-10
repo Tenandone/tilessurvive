@@ -9,19 +9,20 @@
       "value": 400,
       "unit": "EXP",
       "level": "1 → 2",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-3",
@@ -31,19 +32,20 @@
       "value": 600,
       "unit": "EXP",
       "level": "2 → 3",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-4",
@@ -53,19 +55,20 @@
       "value": 800,
       "unit": "EXP",
       "level": "3 → 4",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-5",
@@ -75,19 +78,20 @@
       "value": 1000,
       "unit": "EXP",
       "level": "4 → 5",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-6",
@@ -97,19 +101,20 @@
       "value": 1200,
       "unit": "EXP",
       "level": "5 → 6",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-7",
@@ -119,19 +124,20 @@
       "value": 1400,
       "unit": "EXP",
       "level": "6 → 7",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-8",
@@ -141,19 +147,20 @@
       "value": 1600,
       "unit": "EXP",
       "level": "7 → 8",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-9",
@@ -163,19 +170,20 @@
       "value": 1800,
       "unit": "EXP",
       "level": "8 → 9",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-10",
@@ -185,19 +193,20 @@
       "value": 2100,
       "unit": "EXP",
       "level": "9 → 10",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-11",
@@ -207,19 +216,20 @@
       "value": 2400,
       "unit": "EXP",
       "level": "10 → 11",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-12",
@@ -229,19 +239,20 @@
       "value": 2700,
       "unit": "EXP",
       "level": "11 → 12",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-13",
@@ -251,19 +262,20 @@
       "value": 3000,
       "unit": "EXP",
       "level": "12 → 13",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-14",
@@ -273,19 +285,20 @@
       "value": 3300,
       "unit": "EXP",
       "level": "13 → 14",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-15",
@@ -295,19 +308,20 @@
       "value": 3600,
       "unit": "EXP",
       "level": "14 → 15",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-16",
@@ -317,19 +331,20 @@
       "value": 3900,
       "unit": "EXP",
       "level": "15 → 16",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-17",
@@ -339,19 +354,20 @@
       "value": 4200,
       "unit": "EXP",
       "level": "16 → 17",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-18",
@@ -361,19 +377,20 @@
       "value": 4500,
       "unit": "EXP",
       "level": "17 → 18",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-19",
@@ -383,19 +400,20 @@
       "value": 4800,
       "unit": "EXP",
       "level": "18 → 19",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-20",
@@ -405,19 +423,20 @@
       "value": 5200,
       "unit": "EXP",
       "level": "19 → 20",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-21",
@@ -427,19 +446,20 @@
       "value": 5600,
       "unit": "EXP",
       "level": "20 → 21",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-22",
@@ -449,19 +469,20 @@
       "value": 6000,
       "unit": "EXP",
       "level": "21 → 22",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-23",
@@ -471,19 +492,20 @@
       "value": 6400,
       "unit": "EXP",
       "level": "22 → 23",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-24",
@@ -493,19 +515,20 @@
       "value": 6800,
       "unit": "EXP",
       "level": "23 → 24",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-25",
@@ -515,19 +538,20 @@
       "value": 7200,
       "unit": "EXP",
       "level": "24 → 25",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-26",
@@ -537,19 +561,20 @@
       "value": 7600,
       "unit": "EXP",
       "level": "25 → 26",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-27",
@@ -559,19 +584,20 @@
       "value": 8000,
       "unit": "EXP",
       "level": "26 → 27",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-28",
@@ -581,19 +607,20 @@
       "value": 8400,
       "unit": "EXP",
       "level": "27 → 28",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-29",
@@ -603,19 +630,20 @@
       "value": 8800,
       "unit": "EXP",
       "level": "28 → 29",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-30",
@@ -625,19 +653,20 @@
       "value": 9300,
       "unit": "EXP",
       "level": "29 → 30",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-31",
@@ -647,19 +676,20 @@
       "value": 9800,
       "unit": "EXP",
       "level": "30 → 31",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-32",
@@ -669,19 +699,20 @@
       "value": 10300,
       "unit": "EXP",
       "level": "31 → 32",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-33",
@@ -691,19 +722,20 @@
       "value": 10800,
       "unit": "EXP",
       "level": "32 → 33",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-34",
@@ -713,19 +745,20 @@
       "value": 11300,
       "unit": "EXP",
       "level": "33 → 34",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-35",
@@ -735,19 +768,20 @@
       "value": 11800,
       "unit": "EXP",
       "level": "34 → 35",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-36",
@@ -757,19 +791,20 @@
       "value": 12300,
       "unit": "EXP",
       "level": "35 → 36",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-37",
@@ -779,19 +814,20 @@
       "value": 12800,
       "unit": "EXP",
       "level": "36 → 37",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-38",
@@ -801,19 +837,20 @@
       "value": 13300,
       "unit": "EXP",
       "level": "37 → 38",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-39",
@@ -823,261 +860,273 @@
       "value": 13800,
       "unit": "EXP",
       "level": "38 → 39",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-40",
       "category": "gear",
       "gameName": "gear",
       "originalName": "gear",
-      "value": 14400,
+      "value": 14500,
       "unit": "EXP",
       "level": "39 → 40",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-41",
       "category": "gear",
       "gameName": "gear",
       "originalName": "gear",
-      "value": 15000,
+      "value": 15200,
       "unit": "EXP",
       "level": "40 → 41",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-42",
       "category": "gear",
       "gameName": "gear",
       "originalName": "gear",
-      "value": 15600,
+      "value": 15900,
       "unit": "EXP",
       "level": "41 → 42",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-43",
       "category": "gear",
       "gameName": "gear",
       "originalName": "gear",
-      "value": 16200,
+      "value": 16600,
       "unit": "EXP",
       "level": "42 → 43",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-44",
       "category": "gear",
       "gameName": "gear",
       "originalName": "gear",
-      "value": 16800,
+      "value": 17300,
       "unit": "EXP",
       "level": "43 → 44",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-45",
       "category": "gear",
       "gameName": "gear",
       "originalName": "gear",
-      "value": 17400,
+      "value": 18000,
       "unit": "EXP",
       "level": "44 → 45",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-46",
       "category": "gear",
       "gameName": "gear",
       "originalName": "gear",
-      "value": 18000,
+      "value": 18700,
       "unit": "EXP",
       "level": "45 → 46",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-47",
       "category": "gear",
       "gameName": "gear",
       "originalName": "gear",
-      "value": 18600,
+      "value": 19400,
       "unit": "EXP",
       "level": "46 → 47",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-48",
       "category": "gear",
       "gameName": "gear",
       "originalName": "gear",
-      "value": 19200,
+      "value": 20100,
       "unit": "EXP",
       "level": "47 → 48",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-49",
       "category": "gear",
       "gameName": "gear",
       "originalName": "gear",
-      "value": 19800,
+      "value": 20800,
       "unit": "EXP",
       "level": "48 → 49",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-50",
       "category": "gear",
       "gameName": "gear",
       "originalName": "gear",
-      "value": 20500,
+      "value": 21700,
       "unit": "EXP",
       "level": "49 → 50",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-51",
@@ -1087,19 +1136,20 @@
       "value": 22600,
       "unit": "EXP",
       "level": "50 → 51",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-52",
@@ -1109,19 +1159,20 @@
       "value": 23500,
       "unit": "EXP",
       "level": "51 → 52",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-53",
@@ -1131,19 +1182,20 @@
       "value": 24400,
       "unit": "EXP",
       "level": "52 → 53",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-54",
@@ -1153,19 +1205,20 @@
       "value": 25300,
       "unit": "EXP",
       "level": "53 → 54",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-55",
@@ -1175,19 +1228,20 @@
       "value": 26200,
       "unit": "EXP",
       "level": "54 → 55",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-56",
@@ -1197,19 +1251,20 @@
       "value": 27100,
       "unit": "EXP",
       "level": "55 → 56",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-57",
@@ -1219,19 +1274,20 @@
       "value": 28000,
       "unit": "EXP",
       "level": "56 → 57",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-58",
@@ -1241,19 +1297,20 @@
       "value": 28900,
       "unit": "EXP",
       "level": "57 → 58",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-59",
@@ -1263,19 +1320,20 @@
       "value": 29800,
       "unit": "EXP",
       "level": "58 → 59",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-60",
@@ -1285,19 +1343,20 @@
       "value": 31000,
       "unit": "EXP",
       "level": "59 → 60",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-61",
@@ -1307,19 +1366,20 @@
       "value": 32200,
       "unit": "EXP",
       "level": "60 → 61",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-62",
@@ -1329,19 +1389,20 @@
       "value": 33400,
       "unit": "EXP",
       "level": "61 → 62",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-63",
@@ -1351,19 +1412,20 @@
       "value": 34600,
       "unit": "EXP",
       "level": "62 → 63",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-64",
@@ -1373,19 +1435,20 @@
       "value": 35800,
       "unit": "EXP",
       "level": "63 → 64",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-65",
@@ -1395,19 +1458,20 @@
       "value": 37000,
       "unit": "EXP",
       "level": "64 → 65",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-66",
@@ -1417,19 +1481,20 @@
       "value": 38200,
       "unit": "EXP",
       "level": "65 → 66",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-67",
@@ -1439,19 +1504,20 @@
       "value": 39400,
       "unit": "EXP",
       "level": "66 → 67",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-68",
@@ -1461,19 +1527,20 @@
       "value": 40600,
       "unit": "EXP",
       "level": "67 → 68",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-69",
@@ -1483,19 +1550,20 @@
       "value": 41800,
       "unit": "EXP",
       "level": "68 → 69",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-70",
@@ -1505,19 +1573,20 @@
       "value": 43400,
       "unit": "EXP",
       "level": "69 → 70",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-71",
@@ -1527,19 +1596,20 @@
       "value": 45000,
       "unit": "EXP",
       "level": "70 → 71",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-72",
@@ -1549,19 +1619,20 @@
       "value": 46600,
       "unit": "EXP",
       "level": "71 → 72",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-73",
@@ -1571,19 +1642,20 @@
       "value": 48200,
       "unit": "EXP",
       "level": "72 → 73",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-74",
@@ -1593,19 +1665,20 @@
       "value": 49800,
       "unit": "EXP",
       "level": "73 → 74",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-75",
@@ -1615,19 +1688,20 @@
       "value": 51400,
       "unit": "EXP",
       "level": "74 → 75",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-76",
@@ -1637,19 +1711,20 @@
       "value": 53000,
       "unit": "EXP",
       "level": "75 → 76",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-77",
@@ -1659,19 +1734,20 @@
       "value": 54600,
       "unit": "EXP",
       "level": "76 → 77",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-78",
@@ -1681,19 +1757,20 @@
       "value": 56200,
       "unit": "EXP",
       "level": "77 → 78",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-79",
@@ -1703,19 +1780,20 @@
       "value": 57800,
       "unit": "EXP",
       "level": "78 → 79",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "gear-80",
@@ -1725,19 +1803,20 @@
       "value": 59400,
       "unit": "EXP",
       "level": "79 → 80",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200; current-level EXP for the next level; 18 retained equipment profiles share this curve; Lv.1–80.",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/gear-exp/",
         "/en/database/gear-exp/",
         "/ja/database/gear-exp/",
         "/ru/database/gear-exp/",
-        "/zh-tw/database/gear-exp/"
+        "/zh-tw/database/gear-exp/",
+        "/de/database/gear-exp/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "petExp-2",
@@ -4035,19 +4114,20 @@
       "value": 1,
       "unit": "books",
       "level": "1 → 2",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://github.com/Tenandone/tilessurvive/tree/ef10abdc2b2bbcd98b2f5574faa0683769f94024",
-      "version": "existing data; game version unknown",
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200 / build1512; destination-level skill-book cost; 82 identified published hero skill profiles; Lv.1–40; item201725.",
+      "sourceURL": "https://tilessurvive.net/data/client-heroes-52.json",
+      "version": "2.6.200 / 1512",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/skill-book/",
         "/en/database/skill-book/",
         "/ja/database/skill-book/",
         "/ru/database/skill-book/",
-        "/zh-tw/database/skill-book/"
+        "/zh-tw/database/skill-book/",
+        "/de/database/skill-book/"
       ],
       "status": "published",
-      "sourceKind": "preserved"
+      "sourceKind": "client-configuration"
     },
     {
       "id": "skillBook-3",
@@ -4057,19 +4137,20 @@
       "value": 3,
       "unit": "books",
       "level": "2 → 3",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://github.com/Tenandone/tilessurvive/tree/ef10abdc2b2bbcd98b2f5574faa0683769f94024",
-      "version": "existing data; game version unknown",
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200 / build1512; destination-level skill-book cost; 82 identified published hero skill profiles; Lv.1–40; item201725.",
+      "sourceURL": "https://tilessurvive.net/data/client-heroes-52.json",
+      "version": "2.6.200 / 1512",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/skill-book/",
         "/en/database/skill-book/",
         "/ja/database/skill-book/",
         "/ru/database/skill-book/",
-        "/zh-tw/database/skill-book/"
+        "/zh-tw/database/skill-book/",
+        "/de/database/skill-book/"
       ],
       "status": "published",
-      "sourceKind": "preserved"
+      "sourceKind": "client-configuration"
     },
     {
       "id": "skillBook-4",
@@ -4079,19 +4160,20 @@
       "value": 6,
       "unit": "books",
       "level": "3 → 4",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://github.com/Tenandone/tilessurvive/tree/ef10abdc2b2bbcd98b2f5574faa0683769f94024",
-      "version": "existing data; game version unknown",
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200 / build1512; destination-level skill-book cost; 82 identified published hero skill profiles; Lv.1–40; item201725.",
+      "sourceURL": "https://tilessurvive.net/data/client-heroes-52.json",
+      "version": "2.6.200 / 1512",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/skill-book/",
         "/en/database/skill-book/",
         "/ja/database/skill-book/",
         "/ru/database/skill-book/",
-        "/zh-tw/database/skill-book/"
+        "/zh-tw/database/skill-book/",
+        "/de/database/skill-book/"
       ],
       "status": "published",
-      "sourceKind": "preserved"
+      "sourceKind": "client-configuration"
     },
     {
       "id": "skillBook-5",
@@ -4101,19 +4183,20 @@
       "value": 10,
       "unit": "books",
       "level": "4 → 5",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://github.com/Tenandone/tilessurvive/tree/ef10abdc2b2bbcd98b2f5574faa0683769f94024",
-      "version": "existing data; game version unknown",
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200 / build1512; destination-level skill-book cost; 82 identified published hero skill profiles; Lv.1–40; item201725.",
+      "sourceURL": "https://tilessurvive.net/data/client-heroes-52.json",
+      "version": "2.6.200 / 1512",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/skill-book/",
         "/en/database/skill-book/",
         "/ja/database/skill-book/",
         "/ru/database/skill-book/",
-        "/zh-tw/database/skill-book/"
+        "/zh-tw/database/skill-book/",
+        "/de/database/skill-book/"
       ],
       "status": "published",
-      "sourceKind": "preserved"
+      "sourceKind": "client-configuration"
     },
     {
       "id": "skillBook-6",
@@ -4123,19 +4206,20 @@
       "value": 20,
       "unit": "books",
       "level": "5 → 6",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://github.com/Tenandone/tilessurvive/tree/ef10abdc2b2bbcd98b2f5574faa0683769f94024",
-      "version": "existing data; game version unknown",
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200 / build1512; destination-level skill-book cost; 82 identified published hero skill profiles; Lv.1–40; item201725.",
+      "sourceURL": "https://tilessurvive.net/data/client-heroes-52.json",
+      "version": "2.6.200 / 1512",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/skill-book/",
         "/en/database/skill-book/",
         "/ja/database/skill-book/",
         "/ru/database/skill-book/",
-        "/zh-tw/database/skill-book/"
+        "/zh-tw/database/skill-book/",
+        "/de/database/skill-book/"
       ],
       "status": "published",
-      "sourceKind": "preserved"
+      "sourceKind": "client-configuration"
     },
     {
       "id": "skillBook-7",
@@ -4145,19 +4229,20 @@
       "value": 30,
       "unit": "books",
       "level": "6 → 7",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://github.com/Tenandone/tilessurvive/tree/ef10abdc2b2bbcd98b2f5574faa0683769f94024",
-      "version": "existing data; game version unknown",
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200 / build1512; destination-level skill-book cost; 82 identified published hero skill profiles; Lv.1–40; item201725.",
+      "sourceURL": "https://tilessurvive.net/data/client-heroes-52.json",
+      "version": "2.6.200 / 1512",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/skill-book/",
         "/en/database/skill-book/",
         "/ja/database/skill-book/",
         "/ru/database/skill-book/",
-        "/zh-tw/database/skill-book/"
+        "/zh-tw/database/skill-book/",
+        "/de/database/skill-book/"
       ],
       "status": "published",
-      "sourceKind": "preserved"
+      "sourceKind": "client-configuration"
     },
     {
       "id": "skillBook-8",
@@ -4167,19 +4252,20 @@
       "value": 40,
       "unit": "books",
       "level": "7 → 8",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://github.com/Tenandone/tilessurvive/tree/ef10abdc2b2bbcd98b2f5574faa0683769f94024",
-      "version": "existing data; game version unknown",
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200 / build1512; destination-level skill-book cost; 82 identified published hero skill profiles; Lv.1–40; item201725.",
+      "sourceURL": "https://tilessurvive.net/data/client-heroes-52.json",
+      "version": "2.6.200 / 1512",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/skill-book/",
         "/en/database/skill-book/",
         "/ja/database/skill-book/",
         "/ru/database/skill-book/",
-        "/zh-tw/database/skill-book/"
+        "/zh-tw/database/skill-book/",
+        "/de/database/skill-book/"
       ],
       "status": "published",
-      "sourceKind": "preserved"
+      "sourceKind": "client-configuration"
     },
     {
       "id": "skillBook-9",
@@ -4189,19 +4275,20 @@
       "value": 50,
       "unit": "books",
       "level": "8 → 9",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://github.com/Tenandone/tilessurvive/tree/ef10abdc2b2bbcd98b2f5574faa0683769f94024",
-      "version": "existing data; game version unknown",
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200 / build1512; destination-level skill-book cost; 82 identified published hero skill profiles; Lv.1–40; item201725.",
+      "sourceURL": "https://tilessurvive.net/data/client-heroes-52.json",
+      "version": "2.6.200 / 1512",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/skill-book/",
         "/en/database/skill-book/",
         "/ja/database/skill-book/",
         "/ru/database/skill-book/",
-        "/zh-tw/database/skill-book/"
+        "/zh-tw/database/skill-book/",
+        "/de/database/skill-book/"
       ],
       "status": "published",
-      "sourceKind": "preserved"
+      "sourceKind": "client-configuration"
     },
     {
       "id": "skillBook-10",
@@ -4211,19 +4298,20 @@
       "value": 70,
       "unit": "books",
       "level": "9 → 10",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://github.com/Tenandone/tilessurvive/tree/ef10abdc2b2bbcd98b2f5574faa0683769f94024",
-      "version": "existing data; game version unknown",
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200 / build1512; destination-level skill-book cost; 82 identified published hero skill profiles; Lv.1–40; item201725.",
+      "sourceURL": "https://tilessurvive.net/data/client-heroes-52.json",
+      "version": "2.6.200 / 1512",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/skill-book/",
         "/en/database/skill-book/",
         "/ja/database/skill-book/",
         "/ru/database/skill-book/",
-        "/zh-tw/database/skill-book/"
+        "/zh-tw/database/skill-book/",
+        "/de/database/skill-book/"
       ],
       "status": "published",
-      "sourceKind": "preserved"
+      "sourceKind": "client-configuration"
     },
     {
       "id": "skillBook-11",
@@ -4233,19 +4321,20 @@
       "value": 90,
       "unit": "books",
       "level": "10 → 11",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://github.com/Tenandone/tilessurvive/tree/ef10abdc2b2bbcd98b2f5574faa0683769f94024",
-      "version": "existing data; game version unknown",
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200 / build1512; destination-level skill-book cost; 82 identified published hero skill profiles; Lv.1–40; item201725.",
+      "sourceURL": "https://tilessurvive.net/data/client-heroes-52.json",
+      "version": "2.6.200 / 1512",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/skill-book/",
         "/en/database/skill-book/",
         "/ja/database/skill-book/",
         "/ru/database/skill-book/",
-        "/zh-tw/database/skill-book/"
+        "/zh-tw/database/skill-book/",
+        "/de/database/skill-book/"
       ],
       "status": "published",
-      "sourceKind": "preserved"
+      "sourceKind": "client-configuration"
     },
     {
       "id": "skillBook-12",
@@ -4255,19 +4344,20 @@
       "value": 110,
       "unit": "books",
       "level": "11 → 12",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://github.com/Tenandone/tilessurvive/tree/ef10abdc2b2bbcd98b2f5574faa0683769f94024",
-      "version": "existing data; game version unknown",
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200 / build1512; destination-level skill-book cost; 82 identified published hero skill profiles; Lv.1–40; item201725.",
+      "sourceURL": "https://tilessurvive.net/data/client-heroes-52.json",
+      "version": "2.6.200 / 1512",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/skill-book/",
         "/en/database/skill-book/",
         "/ja/database/skill-book/",
         "/ru/database/skill-book/",
-        "/zh-tw/database/skill-book/"
+        "/zh-tw/database/skill-book/",
+        "/de/database/skill-book/"
       ],
       "status": "published",
-      "sourceKind": "preserved"
+      "sourceKind": "client-configuration"
     },
     {
       "id": "skillBook-13",
@@ -4277,19 +4367,20 @@
       "value": 130,
       "unit": "books",
       "level": "12 → 13",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://github.com/Tenandone/tilessurvive/tree/ef10abdc2b2bbcd98b2f5574faa0683769f94024",
-      "version": "existing data; game version unknown",
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200 / build1512; destination-level skill-book cost; 82 identified published hero skill profiles; Lv.1–40; item201725.",
+      "sourceURL": "https://tilessurvive.net/data/client-heroes-52.json",
+      "version": "2.6.200 / 1512",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/skill-book/",
         "/en/database/skill-book/",
         "/ja/database/skill-book/",
         "/ru/database/skill-book/",
-        "/zh-tw/database/skill-book/"
+        "/zh-tw/database/skill-book/",
+        "/de/database/skill-book/"
       ],
       "status": "published",
-      "sourceKind": "preserved"
+      "sourceKind": "client-configuration"
     },
     {
       "id": "skillBook-14",
@@ -4299,19 +4390,20 @@
       "value": 150,
       "unit": "books",
       "level": "13 → 14",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://github.com/Tenandone/tilessurvive/tree/ef10abdc2b2bbcd98b2f5574faa0683769f94024",
-      "version": "existing data; game version unknown",
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200 / build1512; destination-level skill-book cost; 82 identified published hero skill profiles; Lv.1–40; item201725.",
+      "sourceURL": "https://tilessurvive.net/data/client-heroes-52.json",
+      "version": "2.6.200 / 1512",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/skill-book/",
         "/en/database/skill-book/",
         "/ja/database/skill-book/",
         "/ru/database/skill-book/",
-        "/zh-tw/database/skill-book/"
+        "/zh-tw/database/skill-book/",
+        "/de/database/skill-book/"
       ],
       "status": "published",
-      "sourceKind": "preserved"
+      "sourceKind": "client-configuration"
     },
     {
       "id": "skillBook-15",
@@ -4321,19 +4413,20 @@
       "value": 180,
       "unit": "books",
       "level": "14 → 15",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://github.com/Tenandone/tilessurvive/tree/ef10abdc2b2bbcd98b2f5574faa0683769f94024",
-      "version": "existing data; game version unknown",
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200 / build1512; destination-level skill-book cost; 82 identified published hero skill profiles; Lv.1–40; item201725.",
+      "sourceURL": "https://tilessurvive.net/data/client-heroes-52.json",
+      "version": "2.6.200 / 1512",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/skill-book/",
         "/en/database/skill-book/",
         "/ja/database/skill-book/",
         "/ru/database/skill-book/",
-        "/zh-tw/database/skill-book/"
+        "/zh-tw/database/skill-book/",
+        "/de/database/skill-book/"
       ],
       "status": "published",
-      "sourceKind": "preserved"
+      "sourceKind": "client-configuration"
     },
     {
       "id": "skillBook-16",
@@ -4343,19 +4436,20 @@
       "value": 210,
       "unit": "books",
       "level": "15 → 16",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://github.com/Tenandone/tilessurvive/tree/ef10abdc2b2bbcd98b2f5574faa0683769f94024",
-      "version": "existing data; game version unknown",
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200 / build1512; destination-level skill-book cost; 82 identified published hero skill profiles; Lv.1–40; item201725.",
+      "sourceURL": "https://tilessurvive.net/data/client-heroes-52.json",
+      "version": "2.6.200 / 1512",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/skill-book/",
         "/en/database/skill-book/",
         "/ja/database/skill-book/",
         "/ru/database/skill-book/",
-        "/zh-tw/database/skill-book/"
+        "/zh-tw/database/skill-book/",
+        "/de/database/skill-book/"
       ],
       "status": "published",
-      "sourceKind": "preserved"
+      "sourceKind": "client-configuration"
     },
     {
       "id": "skillBook-17",
@@ -4365,19 +4459,20 @@
       "value": 240,
       "unit": "books",
       "level": "16 → 17",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://github.com/Tenandone/tilessurvive/tree/ef10abdc2b2bbcd98b2f5574faa0683769f94024",
-      "version": "existing data; game version unknown",
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200 / build1512; destination-level skill-book cost; 82 identified published hero skill profiles; Lv.1–40; item201725.",
+      "sourceURL": "https://tilessurvive.net/data/client-heroes-52.json",
+      "version": "2.6.200 / 1512",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/skill-book/",
         "/en/database/skill-book/",
         "/ja/database/skill-book/",
         "/ru/database/skill-book/",
-        "/zh-tw/database/skill-book/"
+        "/zh-tw/database/skill-book/",
+        "/de/database/skill-book/"
       ],
       "status": "published",
-      "sourceKind": "preserved"
+      "sourceKind": "client-configuration"
     },
     {
       "id": "skillBook-18",
@@ -4387,19 +4482,20 @@
       "value": 270,
       "unit": "books",
       "level": "17 → 18",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://github.com/Tenandone/tilessurvive/tree/ef10abdc2b2bbcd98b2f5574faa0683769f94024",
-      "version": "existing data; game version unknown",
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200 / build1512; destination-level skill-book cost; 82 identified published hero skill profiles; Lv.1–40; item201725.",
+      "sourceURL": "https://tilessurvive.net/data/client-heroes-52.json",
+      "version": "2.6.200 / 1512",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/skill-book/",
         "/en/database/skill-book/",
         "/ja/database/skill-book/",
         "/ru/database/skill-book/",
-        "/zh-tw/database/skill-book/"
+        "/zh-tw/database/skill-book/",
+        "/de/database/skill-book/"
       ],
       "status": "published",
-      "sourceKind": "preserved"
+      "sourceKind": "client-configuration"
     },
     {
       "id": "skillBook-19",
@@ -4409,19 +4505,20 @@
       "value": 300,
       "unit": "books",
       "level": "18 → 19",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://github.com/Tenandone/tilessurvive/tree/ef10abdc2b2bbcd98b2f5574faa0683769f94024",
-      "version": "existing data; game version unknown",
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200 / build1512; destination-level skill-book cost; 82 identified published hero skill profiles; Lv.1–40; item201725.",
+      "sourceURL": "https://tilessurvive.net/data/client-heroes-52.json",
+      "version": "2.6.200 / 1512",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/skill-book/",
         "/en/database/skill-book/",
         "/ja/database/skill-book/",
         "/ru/database/skill-book/",
-        "/zh-tw/database/skill-book/"
+        "/zh-tw/database/skill-book/",
+        "/de/database/skill-book/"
       ],
       "status": "published",
-      "sourceKind": "preserved"
+      "sourceKind": "client-configuration"
     },
     {
       "id": "skillBook-20",
@@ -4431,19 +4528,20 @@
       "value": 335,
       "unit": "books",
       "level": "19 → 20",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://github.com/Tenandone/tilessurvive/tree/ef10abdc2b2bbcd98b2f5574faa0683769f94024",
-      "version": "existing data; game version unknown",
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200 / build1512; destination-level skill-book cost; 82 identified published hero skill profiles; Lv.1–40; item201725.",
+      "sourceURL": "https://tilessurvive.net/data/client-heroes-52.json",
+      "version": "2.6.200 / 1512",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/skill-book/",
         "/en/database/skill-book/",
         "/ja/database/skill-book/",
         "/ru/database/skill-book/",
-        "/zh-tw/database/skill-book/"
+        "/zh-tw/database/skill-book/",
+        "/de/database/skill-book/"
       ],
       "status": "published",
-      "sourceKind": "preserved"
+      "sourceKind": "client-configuration"
     },
     {
       "id": "skillBook-21",
@@ -4453,19 +4551,20 @@
       "value": 370,
       "unit": "books",
       "level": "20 → 21",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://github.com/Tenandone/tilessurvive/tree/ef10abdc2b2bbcd98b2f5574faa0683769f94024",
-      "version": "existing data; game version unknown",
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200 / build1512; destination-level skill-book cost; 82 identified published hero skill profiles; Lv.1–40; item201725.",
+      "sourceURL": "https://tilessurvive.net/data/client-heroes-52.json",
+      "version": "2.6.200 / 1512",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/skill-book/",
         "/en/database/skill-book/",
         "/ja/database/skill-book/",
         "/ru/database/skill-book/",
-        "/zh-tw/database/skill-book/"
+        "/zh-tw/database/skill-book/",
+        "/de/database/skill-book/"
       ],
       "status": "published",
-      "sourceKind": "preserved"
+      "sourceKind": "client-configuration"
     },
     {
       "id": "skillBook-22",
@@ -4475,19 +4574,20 @@
       "value": 405,
       "unit": "books",
       "level": "21 → 22",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://github.com/Tenandone/tilessurvive/tree/ef10abdc2b2bbcd98b2f5574faa0683769f94024",
-      "version": "existing data; game version unknown",
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200 / build1512; destination-level skill-book cost; 82 identified published hero skill profiles; Lv.1–40; item201725.",
+      "sourceURL": "https://tilessurvive.net/data/client-heroes-52.json",
+      "version": "2.6.200 / 1512",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/skill-book/",
         "/en/database/skill-book/",
         "/ja/database/skill-book/",
         "/ru/database/skill-book/",
-        "/zh-tw/database/skill-book/"
+        "/zh-tw/database/skill-book/",
+        "/de/database/skill-book/"
       ],
       "status": "published",
-      "sourceKind": "preserved"
+      "sourceKind": "client-configuration"
     },
     {
       "id": "skillBook-23",
@@ -4497,19 +4597,20 @@
       "value": 440,
       "unit": "books",
       "level": "22 → 23",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://github.com/Tenandone/tilessurvive/tree/ef10abdc2b2bbcd98b2f5574faa0683769f94024",
-      "version": "existing data; game version unknown",
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200 / build1512; destination-level skill-book cost; 82 identified published hero skill profiles; Lv.1–40; item201725.",
+      "sourceURL": "https://tilessurvive.net/data/client-heroes-52.json",
+      "version": "2.6.200 / 1512",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/skill-book/",
         "/en/database/skill-book/",
         "/ja/database/skill-book/",
         "/ru/database/skill-book/",
-        "/zh-tw/database/skill-book/"
+        "/zh-tw/database/skill-book/",
+        "/de/database/skill-book/"
       ],
       "status": "published",
-      "sourceKind": "preserved"
+      "sourceKind": "client-configuration"
     },
     {
       "id": "skillBook-24",
@@ -4519,19 +4620,20 @@
       "value": 475,
       "unit": "books",
       "level": "23 → 24",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://github.com/Tenandone/tilessurvive/tree/ef10abdc2b2bbcd98b2f5574faa0683769f94024",
-      "version": "existing data; game version unknown",
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200 / build1512; destination-level skill-book cost; 82 identified published hero skill profiles; Lv.1–40; item201725.",
+      "sourceURL": "https://tilessurvive.net/data/client-heroes-52.json",
+      "version": "2.6.200 / 1512",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/skill-book/",
         "/en/database/skill-book/",
         "/ja/database/skill-book/",
         "/ru/database/skill-book/",
-        "/zh-tw/database/skill-book/"
+        "/zh-tw/database/skill-book/",
+        "/de/database/skill-book/"
       ],
       "status": "published",
-      "sourceKind": "preserved"
+      "sourceKind": "client-configuration"
     },
     {
       "id": "skillBook-25",
@@ -4541,19 +4643,20 @@
       "value": 510,
       "unit": "books",
       "level": "24 → 25",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://github.com/Tenandone/tilessurvive/tree/ef10abdc2b2bbcd98b2f5574faa0683769f94024",
-      "version": "existing data; game version unknown",
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200 / build1512; destination-level skill-book cost; 82 identified published hero skill profiles; Lv.1–40; item201725.",
+      "sourceURL": "https://tilessurvive.net/data/client-heroes-52.json",
+      "version": "2.6.200 / 1512",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/skill-book/",
         "/en/database/skill-book/",
         "/ja/database/skill-book/",
         "/ru/database/skill-book/",
-        "/zh-tw/database/skill-book/"
+        "/zh-tw/database/skill-book/",
+        "/de/database/skill-book/"
       ],
       "status": "published",
-      "sourceKind": "preserved"
+      "sourceKind": "client-configuration"
     },
     {
       "id": "skillBook-26",
@@ -4563,19 +4666,20 @@
       "value": 545,
       "unit": "books",
       "level": "25 → 26",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://github.com/Tenandone/tilessurvive/tree/ef10abdc2b2bbcd98b2f5574faa0683769f94024",
-      "version": "existing data; game version unknown",
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200 / build1512; destination-level skill-book cost; 82 identified published hero skill profiles; Lv.1–40; item201725.",
+      "sourceURL": "https://tilessurvive.net/data/client-heroes-52.json",
+      "version": "2.6.200 / 1512",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/skill-book/",
         "/en/database/skill-book/",
         "/ja/database/skill-book/",
         "/ru/database/skill-book/",
-        "/zh-tw/database/skill-book/"
+        "/zh-tw/database/skill-book/",
+        "/de/database/skill-book/"
       ],
       "status": "published",
-      "sourceKind": "preserved"
+      "sourceKind": "client-configuration"
     },
     {
       "id": "skillBook-27",
@@ -4585,19 +4689,20 @@
       "value": 580,
       "unit": "books",
       "level": "26 → 27",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://github.com/Tenandone/tilessurvive/tree/ef10abdc2b2bbcd98b2f5574faa0683769f94024",
-      "version": "existing data; game version unknown",
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200 / build1512; destination-level skill-book cost; 82 identified published hero skill profiles; Lv.1–40; item201725.",
+      "sourceURL": "https://tilessurvive.net/data/client-heroes-52.json",
+      "version": "2.6.200 / 1512",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/skill-book/",
         "/en/database/skill-book/",
         "/ja/database/skill-book/",
         "/ru/database/skill-book/",
-        "/zh-tw/database/skill-book/"
+        "/zh-tw/database/skill-book/",
+        "/de/database/skill-book/"
       ],
       "status": "published",
-      "sourceKind": "preserved"
+      "sourceKind": "client-configuration"
     },
     {
       "id": "skillBook-28",
@@ -4607,19 +4712,20 @@
       "value": 615,
       "unit": "books",
       "level": "27 → 28",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://github.com/Tenandone/tilessurvive/tree/ef10abdc2b2bbcd98b2f5574faa0683769f94024",
-      "version": "existing data; game version unknown",
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200 / build1512; destination-level skill-book cost; 82 identified published hero skill profiles; Lv.1–40; item201725.",
+      "sourceURL": "https://tilessurvive.net/data/client-heroes-52.json",
+      "version": "2.6.200 / 1512",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/skill-book/",
         "/en/database/skill-book/",
         "/ja/database/skill-book/",
         "/ru/database/skill-book/",
-        "/zh-tw/database/skill-book/"
+        "/zh-tw/database/skill-book/",
+        "/de/database/skill-book/"
       ],
       "status": "published",
-      "sourceKind": "preserved"
+      "sourceKind": "client-configuration"
     },
     {
       "id": "skillBook-29",
@@ -4629,41 +4735,43 @@
       "value": 650,
       "unit": "books",
       "level": "28 → 29",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://github.com/Tenandone/tilessurvive/tree/ef10abdc2b2bbcd98b2f5574faa0683769f94024",
-      "version": "existing data; game version unknown",
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200 / build1512; destination-level skill-book cost; 82 identified published hero skill profiles; Lv.1–40; item201725.",
+      "sourceURL": "https://tilessurvive.net/data/client-heroes-52.json",
+      "version": "2.6.200 / 1512",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/skill-book/",
         "/en/database/skill-book/",
         "/ja/database/skill-book/",
         "/ru/database/skill-book/",
-        "/zh-tw/database/skill-book/"
+        "/zh-tw/database/skill-book/",
+        "/de/database/skill-book/"
       ],
       "status": "published",
-      "sourceKind": "preserved"
+      "sourceKind": "client-configuration"
     },
     {
       "id": "skillBook-30",
       "category": "skillBook",
       "gameName": "skillBook",
       "originalName": "skillBook",
-      "value": 685,
+      "value": 735,
       "unit": "books",
       "level": "29 → 30",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://github.com/Tenandone/tilessurvive/tree/ef10abdc2b2bbcd98b2f5574faa0683769f94024",
-      "version": "existing data; game version unknown",
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200 / build1512; destination-level skill-book cost; 82 identified published hero skill profiles; Lv.1–40; item201725.",
+      "sourceURL": "https://tilessurvive.net/data/client-heroes-52.json",
+      "version": "2.6.200 / 1512",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/skill-book/",
         "/en/database/skill-book/",
         "/ja/database/skill-book/",
         "/ru/database/skill-book/",
-        "/zh-tw/database/skill-book/"
+        "/zh-tw/database/skill-book/",
+        "/de/database/skill-book/"
       ],
       "status": "published",
-      "sourceKind": "preserved"
+      "sourceKind": "client-configuration"
     },
     {
       "id": "skillBook-31",
@@ -4673,19 +4781,20 @@
       "value": 850,
       "unit": "books",
       "level": "30 → 31",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://github.com/Tenandone/tilessurvive/tree/ef10abdc2b2bbcd98b2f5574faa0683769f94024",
-      "version": "existing data; game version unknown",
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200 / build1512; destination-level skill-book cost; 82 identified published hero skill profiles; Lv.1–40; item201725.",
+      "sourceURL": "https://tilessurvive.net/data/client-heroes-52.json",
+      "version": "2.6.200 / 1512",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/skill-book/",
         "/en/database/skill-book/",
         "/ja/database/skill-book/",
         "/ru/database/skill-book/",
-        "/zh-tw/database/skill-book/"
+        "/zh-tw/database/skill-book/",
+        "/de/database/skill-book/"
       ],
       "status": "published",
-      "sourceKind": "preserved"
+      "sourceKind": "client-configuration"
     },
     {
       "id": "skillBook-32",
@@ -4695,19 +4804,20 @@
       "value": 990,
       "unit": "books",
       "level": "31 → 32",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://github.com/Tenandone/tilessurvive/tree/ef10abdc2b2bbcd98b2f5574faa0683769f94024",
-      "version": "existing data; game version unknown",
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200 / build1512; destination-level skill-book cost; 82 identified published hero skill profiles; Lv.1–40; item201725.",
+      "sourceURL": "https://tilessurvive.net/data/client-heroes-52.json",
+      "version": "2.6.200 / 1512",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/skill-book/",
         "/en/database/skill-book/",
         "/ja/database/skill-book/",
         "/ru/database/skill-book/",
-        "/zh-tw/database/skill-book/"
+        "/zh-tw/database/skill-book/",
+        "/de/database/skill-book/"
       ],
       "status": "published",
-      "sourceKind": "preserved"
+      "sourceKind": "client-configuration"
     },
     {
       "id": "skillBook-33",
@@ -4717,19 +4827,20 @@
       "value": 1140,
       "unit": "books",
       "level": "32 → 33",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://github.com/Tenandone/tilessurvive/tree/ef10abdc2b2bbcd98b2f5574faa0683769f94024",
-      "version": "existing data; game version unknown",
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200 / build1512; destination-level skill-book cost; 82 identified published hero skill profiles; Lv.1–40; item201725.",
+      "sourceURL": "https://tilessurvive.net/data/client-heroes-52.json",
+      "version": "2.6.200 / 1512",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/skill-book/",
         "/en/database/skill-book/",
         "/ja/database/skill-book/",
         "/ru/database/skill-book/",
-        "/zh-tw/database/skill-book/"
+        "/zh-tw/database/skill-book/",
+        "/de/database/skill-book/"
       ],
       "status": "published",
-      "sourceKind": "preserved"
+      "sourceKind": "client-configuration"
     },
     {
       "id": "skillBook-34",
@@ -4739,19 +4850,20 @@
       "value": 1300,
       "unit": "books",
       "level": "33 → 34",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://github.com/Tenandone/tilessurvive/tree/ef10abdc2b2bbcd98b2f5574faa0683769f94024",
-      "version": "existing data; game version unknown",
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200 / build1512; destination-level skill-book cost; 82 identified published hero skill profiles; Lv.1–40; item201725.",
+      "sourceURL": "https://tilessurvive.net/data/client-heroes-52.json",
+      "version": "2.6.200 / 1512",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/skill-book/",
         "/en/database/skill-book/",
         "/ja/database/skill-book/",
         "/ru/database/skill-book/",
-        "/zh-tw/database/skill-book/"
+        "/zh-tw/database/skill-book/",
+        "/de/database/skill-book/"
       ],
       "status": "published",
-      "sourceKind": "preserved"
+      "sourceKind": "client-configuration"
     },
     {
       "id": "skillBook-35",
@@ -4761,19 +4873,20 @@
       "value": 1470,
       "unit": "books",
       "level": "34 → 35",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://github.com/Tenandone/tilessurvive/tree/ef10abdc2b2bbcd98b2f5574faa0683769f94024",
-      "version": "existing data; game version unknown",
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200 / build1512; destination-level skill-book cost; 82 identified published hero skill profiles; Lv.1–40; item201725.",
+      "sourceURL": "https://tilessurvive.net/data/client-heroes-52.json",
+      "version": "2.6.200 / 1512",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/skill-book/",
         "/en/database/skill-book/",
         "/ja/database/skill-book/",
         "/ru/database/skill-book/",
-        "/zh-tw/database/skill-book/"
+        "/zh-tw/database/skill-book/",
+        "/de/database/skill-book/"
       ],
       "status": "published",
-      "sourceKind": "preserved"
+      "sourceKind": "client-configuration"
     },
     {
       "id": "skillBook-36",
@@ -4783,19 +4896,20 @@
       "value": 1650,
       "unit": "books",
       "level": "35 → 36",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://github.com/Tenandone/tilessurvive/tree/ef10abdc2b2bbcd98b2f5574faa0683769f94024",
-      "version": "existing data; game version unknown",
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200 / build1512; destination-level skill-book cost; 82 identified published hero skill profiles; Lv.1–40; item201725.",
+      "sourceURL": "https://tilessurvive.net/data/client-heroes-52.json",
+      "version": "2.6.200 / 1512",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/skill-book/",
         "/en/database/skill-book/",
         "/ja/database/skill-book/",
         "/ru/database/skill-book/",
-        "/zh-tw/database/skill-book/"
+        "/zh-tw/database/skill-book/",
+        "/de/database/skill-book/"
       ],
       "status": "published",
-      "sourceKind": "preserved"
+      "sourceKind": "client-configuration"
     },
     {
       "id": "skillBook-37",
@@ -4805,19 +4919,20 @@
       "value": 1840,
       "unit": "books",
       "level": "36 → 37",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://github.com/Tenandone/tilessurvive/tree/ef10abdc2b2bbcd98b2f5574faa0683769f94024",
-      "version": "existing data; game version unknown",
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200 / build1512; destination-level skill-book cost; 82 identified published hero skill profiles; Lv.1–40; item201725.",
+      "sourceURL": "https://tilessurvive.net/data/client-heroes-52.json",
+      "version": "2.6.200 / 1512",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/skill-book/",
         "/en/database/skill-book/",
         "/ja/database/skill-book/",
         "/ru/database/skill-book/",
-        "/zh-tw/database/skill-book/"
+        "/zh-tw/database/skill-book/",
+        "/de/database/skill-book/"
       ],
       "status": "published",
-      "sourceKind": "preserved"
+      "sourceKind": "client-configuration"
     },
     {
       "id": "skillBook-38",
@@ -4827,19 +4942,20 @@
       "value": 2040,
       "unit": "books",
       "level": "37 → 38",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://github.com/Tenandone/tilessurvive/tree/ef10abdc2b2bbcd98b2f5574faa0683769f94024",
-      "version": "existing data; game version unknown",
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200 / build1512; destination-level skill-book cost; 82 identified published hero skill profiles; Lv.1–40; item201725.",
+      "sourceURL": "https://tilessurvive.net/data/client-heroes-52.json",
+      "version": "2.6.200 / 1512",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/skill-book/",
         "/en/database/skill-book/",
         "/ja/database/skill-book/",
         "/ru/database/skill-book/",
-        "/zh-tw/database/skill-book/"
+        "/zh-tw/database/skill-book/",
+        "/de/database/skill-book/"
       ],
       "status": "published",
-      "sourceKind": "preserved"
+      "sourceKind": "client-configuration"
     },
     {
       "id": "skillBook-39",
@@ -4849,19 +4965,20 @@
       "value": 2245,
       "unit": "books",
       "level": "38 → 39",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://github.com/Tenandone/tilessurvive/tree/ef10abdc2b2bbcd98b2f5574faa0683769f94024",
-      "version": "existing data; game version unknown",
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200 / build1512; destination-level skill-book cost; 82 identified published hero skill profiles; Lv.1–40; item201725.",
+      "sourceURL": "https://tilessurvive.net/data/client-heroes-52.json",
+      "version": "2.6.200 / 1512",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/skill-book/",
         "/en/database/skill-book/",
         "/ja/database/skill-book/",
         "/ru/database/skill-book/",
-        "/zh-tw/database/skill-book/"
+        "/zh-tw/database/skill-book/",
+        "/de/database/skill-book/"
       ],
       "status": "published",
-      "sourceKind": "preserved"
+      "sourceKind": "client-configuration"
     },
     {
       "id": "skillBook-40",
@@ -4871,19 +4988,20 @@
       "value": 2460,
       "unit": "books",
       "level": "39 → 40",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://github.com/Tenandone/tilessurvive/tree/ef10abdc2b2bbcd98b2f5574faa0683769f94024",
-      "version": "existing data; game version unknown",
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200 / build1512; destination-level skill-book cost; 82 identified published hero skill profiles; Lv.1–40; item201725.",
+      "sourceURL": "https://tilessurvive.net/data/client-heroes-52.json",
+      "version": "2.6.200 / 1512",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/skill-book/",
         "/en/database/skill-book/",
         "/ja/database/skill-book/",
         "/ru/database/skill-book/",
-        "/zh-tw/database/skill-book/"
+        "/zh-tw/database/skill-book/",
+        "/de/database/skill-book/"
       ],
       "status": "published",
-      "sourceKind": "preserved"
+      "sourceKind": "client-configuration"
     },
     {
       "id": "exclusive-2",
@@ -4893,19 +5011,20 @@
       "value": 5,
       "unit": "parts",
       "level": "1 → 2",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://github.com/Tenandone/tilessurvive/tree/ef10abdc2b2bbcd98b2f5574faa0683769f94024",
-      "version": "existing data; game version unknown",
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200 / build1512; destination-level fragment cost; 19 identified exclusive gears; Lv.1–15; activation10 is separate.",
+      "sourceURL": "https://tilessurvive.net/data/client-heroes-52.json",
+      "version": "2.6.200 / 1512",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/exclusive-gear/",
         "/en/database/exclusive-gear/",
         "/ja/database/exclusive-gear/",
         "/ru/database/exclusive-gear/",
-        "/zh-tw/database/exclusive-gear/"
+        "/zh-tw/database/exclusive-gear/",
+        "/de/database/exclusive-gear/"
       ],
       "status": "published",
-      "sourceKind": "preserved"
+      "sourceKind": "client-configuration"
     },
     {
       "id": "exclusive-3",
@@ -4915,19 +5034,20 @@
       "value": 10,
       "unit": "parts",
       "level": "2 → 3",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://github.com/Tenandone/tilessurvive/tree/ef10abdc2b2bbcd98b2f5574faa0683769f94024",
-      "version": "existing data; game version unknown",
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200 / build1512; destination-level fragment cost; 19 identified exclusive gears; Lv.1–15; activation10 is separate.",
+      "sourceURL": "https://tilessurvive.net/data/client-heroes-52.json",
+      "version": "2.6.200 / 1512",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/exclusive-gear/",
         "/en/database/exclusive-gear/",
         "/ja/database/exclusive-gear/",
         "/ru/database/exclusive-gear/",
-        "/zh-tw/database/exclusive-gear/"
+        "/zh-tw/database/exclusive-gear/",
+        "/de/database/exclusive-gear/"
       ],
       "status": "published",
-      "sourceKind": "preserved"
+      "sourceKind": "client-configuration"
     },
     {
       "id": "exclusive-4",
@@ -4937,19 +5057,20 @@
       "value": 20,
       "unit": "parts",
       "level": "3 → 4",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://github.com/Tenandone/tilessurvive/tree/ef10abdc2b2bbcd98b2f5574faa0683769f94024",
-      "version": "existing data; game version unknown",
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200 / build1512; destination-level fragment cost; 19 identified exclusive gears; Lv.1–15; activation10 is separate.",
+      "sourceURL": "https://tilessurvive.net/data/client-heroes-52.json",
+      "version": "2.6.200 / 1512",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/exclusive-gear/",
         "/en/database/exclusive-gear/",
         "/ja/database/exclusive-gear/",
         "/ru/database/exclusive-gear/",
-        "/zh-tw/database/exclusive-gear/"
+        "/zh-tw/database/exclusive-gear/",
+        "/de/database/exclusive-gear/"
       ],
       "status": "published",
-      "sourceKind": "preserved"
+      "sourceKind": "client-configuration"
     },
     {
       "id": "exclusive-5",
@@ -4959,19 +5080,20 @@
       "value": 25,
       "unit": "parts",
       "level": "4 → 5",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://github.com/Tenandone/tilessurvive/tree/ef10abdc2b2bbcd98b2f5574faa0683769f94024",
-      "version": "existing data; game version unknown",
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200 / build1512; destination-level fragment cost; 19 identified exclusive gears; Lv.1–15; activation10 is separate.",
+      "sourceURL": "https://tilessurvive.net/data/client-heroes-52.json",
+      "version": "2.6.200 / 1512",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/exclusive-gear/",
         "/en/database/exclusive-gear/",
         "/ja/database/exclusive-gear/",
         "/ru/database/exclusive-gear/",
-        "/zh-tw/database/exclusive-gear/"
+        "/zh-tw/database/exclusive-gear/",
+        "/de/database/exclusive-gear/"
       ],
       "status": "published",
-      "sourceKind": "preserved"
+      "sourceKind": "client-configuration"
     },
     {
       "id": "exclusive-6",
@@ -4981,19 +5103,20 @@
       "value": 30,
       "unit": "parts",
       "level": "5 → 6",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://github.com/Tenandone/tilessurvive/tree/ef10abdc2b2bbcd98b2f5574faa0683769f94024",
-      "version": "existing data; game version unknown",
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200 / build1512; destination-level fragment cost; 19 identified exclusive gears; Lv.1–15; activation10 is separate.",
+      "sourceURL": "https://tilessurvive.net/data/client-heroes-52.json",
+      "version": "2.6.200 / 1512",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/exclusive-gear/",
         "/en/database/exclusive-gear/",
         "/ja/database/exclusive-gear/",
         "/ru/database/exclusive-gear/",
-        "/zh-tw/database/exclusive-gear/"
+        "/zh-tw/database/exclusive-gear/",
+        "/de/database/exclusive-gear/"
       ],
       "status": "published",
-      "sourceKind": "preserved"
+      "sourceKind": "client-configuration"
     },
     {
       "id": "exclusive-7",
@@ -5003,19 +5126,20 @@
       "value": 30,
       "unit": "parts",
       "level": "6 → 7",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://github.com/Tenandone/tilessurvive/tree/ef10abdc2b2bbcd98b2f5574faa0683769f94024",
-      "version": "existing data; game version unknown",
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200 / build1512; destination-level fragment cost; 19 identified exclusive gears; Lv.1–15; activation10 is separate.",
+      "sourceURL": "https://tilessurvive.net/data/client-heroes-52.json",
+      "version": "2.6.200 / 1512",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/exclusive-gear/",
         "/en/database/exclusive-gear/",
         "/ja/database/exclusive-gear/",
         "/ru/database/exclusive-gear/",
-        "/zh-tw/database/exclusive-gear/"
+        "/zh-tw/database/exclusive-gear/",
+        "/de/database/exclusive-gear/"
       ],
       "status": "published",
-      "sourceKind": "preserved"
+      "sourceKind": "client-configuration"
     },
     {
       "id": "exclusive-8",
@@ -5025,19 +5149,20 @@
       "value": 30,
       "unit": "parts",
       "level": "7 → 8",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://github.com/Tenandone/tilessurvive/tree/ef10abdc2b2bbcd98b2f5574faa0683769f94024",
-      "version": "existing data; game version unknown",
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200 / build1512; destination-level fragment cost; 19 identified exclusive gears; Lv.1–15; activation10 is separate.",
+      "sourceURL": "https://tilessurvive.net/data/client-heroes-52.json",
+      "version": "2.6.200 / 1512",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/exclusive-gear/",
         "/en/database/exclusive-gear/",
         "/ja/database/exclusive-gear/",
         "/ru/database/exclusive-gear/",
-        "/zh-tw/database/exclusive-gear/"
+        "/zh-tw/database/exclusive-gear/",
+        "/de/database/exclusive-gear/"
       ],
       "status": "published",
-      "sourceKind": "preserved"
+      "sourceKind": "client-configuration"
     },
     {
       "id": "exclusive-9",
@@ -5047,19 +5172,20 @@
       "value": 30,
       "unit": "parts",
       "level": "8 → 9",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://github.com/Tenandone/tilessurvive/tree/ef10abdc2b2bbcd98b2f5574faa0683769f94024",
-      "version": "existing data; game version unknown",
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200 / build1512; destination-level fragment cost; 19 identified exclusive gears; Lv.1–15; activation10 is separate.",
+      "sourceURL": "https://tilessurvive.net/data/client-heroes-52.json",
+      "version": "2.6.200 / 1512",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/exclusive-gear/",
         "/en/database/exclusive-gear/",
         "/ja/database/exclusive-gear/",
         "/ru/database/exclusive-gear/",
-        "/zh-tw/database/exclusive-gear/"
+        "/zh-tw/database/exclusive-gear/",
+        "/de/database/exclusive-gear/"
       ],
       "status": "published",
-      "sourceKind": "preserved"
+      "sourceKind": "client-configuration"
     },
     {
       "id": "exclusive-10",
@@ -5069,19 +5195,20 @@
       "value": 30,
       "unit": "parts",
       "level": "9 → 10",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://github.com/Tenandone/tilessurvive/tree/ef10abdc2b2bbcd98b2f5574faa0683769f94024",
-      "version": "existing data; game version unknown",
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200 / build1512; destination-level fragment cost; 19 identified exclusive gears; Lv.1–15; activation10 is separate.",
+      "sourceURL": "https://tilessurvive.net/data/client-heroes-52.json",
+      "version": "2.6.200 / 1512",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/exclusive-gear/",
         "/en/database/exclusive-gear/",
         "/ja/database/exclusive-gear/",
         "/ru/database/exclusive-gear/",
-        "/zh-tw/database/exclusive-gear/"
+        "/zh-tw/database/exclusive-gear/",
+        "/de/database/exclusive-gear/"
       ],
       "status": "published",
-      "sourceKind": "preserved"
+      "sourceKind": "client-configuration"
     },
     {
       "id": "exclusive-11",
@@ -5091,19 +5218,20 @@
       "value": 30,
       "unit": "parts",
       "level": "10 → 11",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://github.com/Tenandone/tilessurvive/tree/ef10abdc2b2bbcd98b2f5574faa0683769f94024",
-      "version": "existing data; game version unknown",
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200 / build1512; destination-level fragment cost; 19 identified exclusive gears; Lv.1–15; activation10 is separate.",
+      "sourceURL": "https://tilessurvive.net/data/client-heroes-52.json",
+      "version": "2.6.200 / 1512",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/exclusive-gear/",
         "/en/database/exclusive-gear/",
         "/ja/database/exclusive-gear/",
         "/ru/database/exclusive-gear/",
-        "/zh-tw/database/exclusive-gear/"
+        "/zh-tw/database/exclusive-gear/",
+        "/de/database/exclusive-gear/"
       ],
       "status": "published",
-      "sourceKind": "preserved"
+      "sourceKind": "client-configuration"
     },
     {
       "id": "exclusive-12",
@@ -5113,85 +5241,89 @@
       "value": 30,
       "unit": "parts",
       "level": "11 → 12",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://github.com/Tenandone/tilessurvive/tree/ef10abdc2b2bbcd98b2f5574faa0683769f94024",
-      "version": "existing data; game version unknown",
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200 / build1512; destination-level fragment cost; 19 identified exclusive gears; Lv.1–15; activation10 is separate.",
+      "sourceURL": "https://tilessurvive.net/data/client-heroes-52.json",
+      "version": "2.6.200 / 1512",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/exclusive-gear/",
         "/en/database/exclusive-gear/",
         "/ja/database/exclusive-gear/",
         "/ru/database/exclusive-gear/",
-        "/zh-tw/database/exclusive-gear/"
+        "/zh-tw/database/exclusive-gear/",
+        "/de/database/exclusive-gear/"
       ],
       "status": "published",
-      "sourceKind": "preserved"
+      "sourceKind": "client-configuration"
     },
     {
       "id": "exclusive-13",
       "category": "exclusive",
       "gameName": "exclusive",
       "originalName": "exclusive",
-      "value": 30,
+      "value": 40,
       "unit": "parts",
       "level": "12 → 13",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://github.com/Tenandone/tilessurvive/tree/ef10abdc2b2bbcd98b2f5574faa0683769f94024",
-      "version": "existing data; game version unknown",
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200 / build1512; destination-level fragment cost; 19 identified exclusive gears; Lv.1–15; activation10 is separate.",
+      "sourceURL": "https://tilessurvive.net/data/client-heroes-52.json",
+      "version": "2.6.200 / 1512",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/exclusive-gear/",
         "/en/database/exclusive-gear/",
         "/ja/database/exclusive-gear/",
         "/ru/database/exclusive-gear/",
-        "/zh-tw/database/exclusive-gear/"
+        "/zh-tw/database/exclusive-gear/",
+        "/de/database/exclusive-gear/"
       ],
       "status": "published",
-      "sourceKind": "preserved"
+      "sourceKind": "client-configuration"
     },
     {
       "id": "exclusive-14",
       "category": "exclusive",
       "gameName": "exclusive",
       "originalName": "exclusive",
-      "value": 30,
+      "value": 40,
       "unit": "parts",
       "level": "13 → 14",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://github.com/Tenandone/tilessurvive/tree/ef10abdc2b2bbcd98b2f5574faa0683769f94024",
-      "version": "existing data; game version unknown",
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200 / build1512; destination-level fragment cost; 19 identified exclusive gears; Lv.1–15; activation10 is separate.",
+      "sourceURL": "https://tilessurvive.net/data/client-heroes-52.json",
+      "version": "2.6.200 / 1512",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/exclusive-gear/",
         "/en/database/exclusive-gear/",
         "/ja/database/exclusive-gear/",
         "/ru/database/exclusive-gear/",
-        "/zh-tw/database/exclusive-gear/"
+        "/zh-tw/database/exclusive-gear/",
+        "/de/database/exclusive-gear/"
       ],
       "status": "published",
-      "sourceKind": "preserved"
+      "sourceKind": "client-configuration"
     },
     {
       "id": "exclusive-15",
       "category": "exclusive",
       "gameName": "exclusive",
       "originalName": "exclusive",
-      "value": 30,
+      "value": 40,
       "unit": "parts",
       "level": "14 → 15",
-      "conditions": "Contiguous transitions only; no extrapolation",
-      "sourceURL": "https://github.com/Tenandone/tilessurvive/tree/ef10abdc2b2bbcd98b2f5574faa0683769f94024",
-      "version": "existing data; game version unknown",
-      "checked": "2026-10-09",
+      "conditions": "Client 2.6.200 / build1512; destination-level fragment cost; 19 identified exclusive gears; Lv.1–15; activation10 is separate.",
+      "sourceURL": "https://tilessurvive.net/data/client-heroes-52.json",
+      "version": "2.6.200 / 1512",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/exclusive-gear/",
         "/en/database/exclusive-gear/",
         "/ja/database/exclusive-gear/",
         "/ru/database/exclusive-gear/",
-        "/zh-tw/database/exclusive-gear/"
+        "/zh-tw/database/exclusive-gear/",
+        "/de/database/exclusive-gear/"
       ],
       "status": "published",
-      "sourceKind": "preserved"
+      "sourceKind": "client-configuration"
     },
     {
       "id": "pet-eggs-snowball",
@@ -5735,18 +5867,19 @@
       "unit": "EXP",
       "level": null,
       "conditions": "Blue, purple, gold",
-      "sourceURL": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "checked": "2026-10-09",
+      "sourceURL": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "checked": "2026-10-10",
       "pages": [
         "/ko/database/growth-materials/",
         "/en/database/growth-materials/",
         "/ja/database/growth-materials/",
         "/ru/database/growth-materials/",
-        "/zh-tw/database/growth-materials/"
+        "/zh-tw/database/growth-materials/",
+        "/de/database/growth-materials/"
       ],
       "status": "published",
-      "sourceKind": "community-table"
+      "sourceKind": "game-client-version-scoped"
     },
     {
       "id": "knotty-screen-0",
@@ -7533,24 +7666,39 @@
   "conflicts": [
     {
       "id": "skill-book-30",
-      "existing": 685,
-      "external": 735,
-      "status": "unresolved; preserve existing value"
+      "status": "resolved-client-2.6.200",
+      "value": 735,
+      "from": 29,
+      "to": 30,
+      "unit": "books",
+      "source": "client-skill-book-52"
     },
     {
       "id": "pet-exp-86",
-      "value": null,
-      "status": "missing; block affected ranges"
+      "status": "resolved-client-2.6.200",
+      "value": 11800,
+      "from": 85,
+      "to": 86,
+      "unit": "EXP",
+      "profile": "starhorn",
+      "source": "data/foundation-40/pet-exp-profiles.json"
     },
     {
       "id": "pet-training-bonus-4",
-      "value": null,
-      "status": "source extrapolation; excluded"
+      "status": "resolved-client-2.6.200",
+      "value": 85,
+      "stage": 4,
+      "unit": "percent",
+      "source": "data/foundation-40/pet-training-profiles-41.json"
     },
     {
       "id": "pet-training-5",
-      "value": null,
-      "status": "source extrapolation; excluded"
+      "status": "resolved-client-2.6.200",
+      "value": 700,
+      "from": 4,
+      "to": 5,
+      "unit": "species-marks",
+      "source": "data/foundation-40/pet-training-profiles-41.json"
     }
   ]
 }

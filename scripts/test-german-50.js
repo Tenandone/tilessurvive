@@ -4,7 +4,7 @@ const {parseHTML}=require('linkedom');
 const R=path.resolve(__dirname,'..');
 const G=require('./build-german-50'),W=require('../js/data-workbench-30'),M=require('../js/platform-math');
 const cat=JSON.parse(fs.readFileSync(path.join(R,'data/product-50/german.json'),'utf8'));
-for(const name of ['core','hero','calculator','growth','editorial','building']){const p=path.join(R,'data/product-50/german-'+name+'-review.json');if(fs.existsSync(p))Object.assign(cat.exact,JSON.parse(fs.readFileSync(p,'utf8')).exact);}
+for(const name of ['core','hero','calculator','growth','editorial','building','client52']){const p=path.join(R,'data/product-50/german-'+name+'-review.json');if(fs.existsSync(p))Object.assign(cat.exact,JSON.parse(fs.readFileSync(p,'utf8')).exact);}
 Object.assign(cat.exact,JSON.parse(fs.readFileSync(path.join(R,'data/product-50/german-root-overrides.json'),'utf8')).exact);
 const {translate,missing}=G.createTranslator(cat);
 let checks=0,numericLeaves=0,cells=0,forms=0,ranges=0;

@@ -69,7 +69,7 @@ for(const lang of langs){
     if(href?.startsWith('/'+lang+'/')&&!href.includes('#')){
      const targetPath=path.join(root,href,'index.html');
      if(fs.existsSync(targetPath)){
-      const target=parseHTML(fs.readFileSync(targetPath,'utf8')).document,table=target.querySelector('main table'),calc=target.querySelector('[data-growth-form]');
+      const target=parseHTML(fs.readFileSync(targetPath,'utf8')).document,table=[...target.querySelectorAll('main table')].find(t=>t.querySelector('tbody tr')),calc=target.querySelector('[data-growth-form]');
       if(table){const rows=table.querySelectorAll('tbody tr').length,anchor=table.id||'ts3-data-table-0';entry.querySelector('.building-body,.behemoth-body,.tool-body')?.append(element(d,`<p class="ts3-catalog-data" data-ui30-generated><a href="${href}#${anchor}">${catalog.data}</a><span>${rows} ${catalog.rows}</span></p>`));}
       if(calc&&catalogType==='tools'){const a=entry.querySelector('.tool-link');if(a){a.href=href+'#'+(calc.id||'ts3-growth-0');a.textContent=catalog.calculate;}}
      }
@@ -100,6 +100,7 @@ for(const lang of langs){
   }
   let tableIndex=0;
   for(const table of main.querySelectorAll('table')){
+   const clientBuilding=table.closest('[data-client-building-52]');if(clientBuilding){tableIndex=Math.max(tableIndex,Number(clientBuilding.getAttribute('data-client-building-52'))+1);continue;}
    const heads=[...table.querySelectorAll('thead tr:first-child th')],rows=[...table.querySelectorAll('tbody tr')];
    if(!heads.length||!rows.length)continue;
    table.setAttribute('data-workbench','');table.removeAttribute('data-explore');if(!table.id||table.id.startsWith('ts3-data-table-'))table.id='ts3-data-table-'+tableIndex;

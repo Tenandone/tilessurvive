@@ -2,9 +2,9 @@
   "checked": "2026-10-09",
   "sources": {
     "gear": {
-      "url": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "kind": "community-table"
+      "url": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "kind": "game-client-version-scoped"
     },
     "manuals": {
       "url": "https://www.tilesguide.com/guides/hero-skill-manuals",
@@ -55,6 +55,16 @@
       "url": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/pet-hatching.json",
       "version": "Tiles Survive 2.6.200",
       "kind": "game-screen"
+    },
+    "client-exclusive-52": {
+      "url": "https://tilessurvive.net/data/client-heroes-52.json",
+      "version": "2.6.200 / 1512",
+      "kind": "client-configuration"
+    },
+    "client-skill-book-52": {
+      "url": "https://tilessurvive.net/data/client-heroes-52.json",
+      "version": "2.6.200 / 1512",
+      "kind": "client-configuration"
     }
   },
   "datasets": {
@@ -295,248 +305,248 @@
         {
           "from": 39,
           "to": 40,
-          "cost": 14400,
-          "sourceTotal": 243200
+          "cost": 14500,
+          "sourceTotal": 243300
         },
         {
           "from": 40,
           "to": 41,
-          "cost": 15000,
-          "sourceTotal": 258200
+          "cost": 15200,
+          "sourceTotal": 258500
         },
         {
           "from": 41,
           "to": 42,
-          "cost": 15600,
-          "sourceTotal": 273800
+          "cost": 15900,
+          "sourceTotal": 274400
         },
         {
           "from": 42,
           "to": 43,
-          "cost": 16200,
-          "sourceTotal": 290000
+          "cost": 16600,
+          "sourceTotal": 291000
         },
         {
           "from": 43,
           "to": 44,
-          "cost": 16800,
-          "sourceTotal": 306800
+          "cost": 17300,
+          "sourceTotal": 308300
         },
         {
           "from": 44,
           "to": 45,
-          "cost": 17400,
-          "sourceTotal": 324200
+          "cost": 18000,
+          "sourceTotal": 326300
         },
         {
           "from": 45,
           "to": 46,
-          "cost": 18000,
-          "sourceTotal": 342200
+          "cost": 18700,
+          "sourceTotal": 345000
         },
         {
           "from": 46,
           "to": 47,
-          "cost": 18600,
-          "sourceTotal": 360800
+          "cost": 19400,
+          "sourceTotal": 364400
         },
         {
           "from": 47,
           "to": 48,
-          "cost": 19200,
-          "sourceTotal": 380000
+          "cost": 20100,
+          "sourceTotal": 384500
         },
         {
           "from": 48,
           "to": 49,
-          "cost": 19800,
-          "sourceTotal": 399800
+          "cost": 20800,
+          "sourceTotal": 405300
         },
         {
           "from": 49,
           "to": 50,
-          "cost": 20500,
-          "sourceTotal": 420300
+          "cost": 21700,
+          "sourceTotal": 427000
         },
         {
           "from": 50,
           "to": 51,
           "cost": 22600,
-          "sourceTotal": 442900
+          "sourceTotal": 449600
         },
         {
           "from": 51,
           "to": 52,
           "cost": 23500,
-          "sourceTotal": 466400
+          "sourceTotal": 473100
         },
         {
           "from": 52,
           "to": 53,
           "cost": 24400,
-          "sourceTotal": 490800
+          "sourceTotal": 497500
         },
         {
           "from": 53,
           "to": 54,
           "cost": 25300,
-          "sourceTotal": 516100
+          "sourceTotal": 522800
         },
         {
           "from": 54,
           "to": 55,
           "cost": 26200,
-          "sourceTotal": 542300
+          "sourceTotal": 549000
         },
         {
           "from": 55,
           "to": 56,
           "cost": 27100,
-          "sourceTotal": 569400
+          "sourceTotal": 576100
         },
         {
           "from": 56,
           "to": 57,
           "cost": 28000,
-          "sourceTotal": 597400
+          "sourceTotal": 604100
         },
         {
           "from": 57,
           "to": 58,
           "cost": 28900,
-          "sourceTotal": 626300
+          "sourceTotal": 633000
         },
         {
           "from": 58,
           "to": 59,
           "cost": 29800,
-          "sourceTotal": 656100
+          "sourceTotal": 662800
         },
         {
           "from": 59,
           "to": 60,
           "cost": 31000,
-          "sourceTotal": 687100
+          "sourceTotal": 693800
         },
         {
           "from": 60,
           "to": 61,
           "cost": 32200,
-          "sourceTotal": 719300
+          "sourceTotal": 726000
         },
         {
           "from": 61,
           "to": 62,
           "cost": 33400,
-          "sourceTotal": 752700
+          "sourceTotal": 759400
         },
         {
           "from": 62,
           "to": 63,
           "cost": 34600,
-          "sourceTotal": 787300
+          "sourceTotal": 794000
         },
         {
           "from": 63,
           "to": 64,
           "cost": 35800,
-          "sourceTotal": 823100
+          "sourceTotal": 829800
         },
         {
           "from": 64,
           "to": 65,
           "cost": 37000,
-          "sourceTotal": 860100
+          "sourceTotal": 866800
         },
         {
           "from": 65,
           "to": 66,
           "cost": 38200,
-          "sourceTotal": 898300
+          "sourceTotal": 905000
         },
         {
           "from": 66,
           "to": 67,
           "cost": 39400,
-          "sourceTotal": 937700
+          "sourceTotal": 944400
         },
         {
           "from": 67,
           "to": 68,
           "cost": 40600,
-          "sourceTotal": 978300
+          "sourceTotal": 985000
         },
         {
           "from": 68,
           "to": 69,
           "cost": 41800,
-          "sourceTotal": 1020100
+          "sourceTotal": 1026800
         },
         {
           "from": 69,
           "to": 70,
           "cost": 43400,
-          "sourceTotal": 1063500
+          "sourceTotal": 1070200
         },
         {
           "from": 70,
           "to": 71,
           "cost": 45000,
-          "sourceTotal": 1108500
+          "sourceTotal": 1115200
         },
         {
           "from": 71,
           "to": 72,
           "cost": 46600,
-          "sourceTotal": 1155100
+          "sourceTotal": 1161800
         },
         {
           "from": 72,
           "to": 73,
           "cost": 48200,
-          "sourceTotal": 1203300
+          "sourceTotal": 1210000
         },
         {
           "from": 73,
           "to": 74,
           "cost": 49800,
-          "sourceTotal": 1253100
+          "sourceTotal": 1259800
         },
         {
           "from": 74,
           "to": 75,
           "cost": 51400,
-          "sourceTotal": 1304500
+          "sourceTotal": 1311200
         },
         {
           "from": 75,
           "to": 76,
           "cost": 53000,
-          "sourceTotal": 1357500
+          "sourceTotal": 1364200
         },
         {
           "from": 76,
           "to": 77,
           "cost": 54600,
-          "sourceTotal": 1412100
+          "sourceTotal": 1418800
         },
         {
           "from": 77,
           "to": 78,
           "cost": 56200,
-          "sourceTotal": 1468300
+          "sourceTotal": 1475000
         },
         {
           "from": 78,
           "to": 79,
           "cost": 57800,
-          "sourceTotal": 1526100
+          "sourceTotal": 1532800
         },
         {
           "from": 79,
           "to": 80,
           "cost": 59400,
-          "sourceTotal": 1585500
+          "sourceTotal": 1592200
         }
       ]
     },
@@ -1087,7 +1097,7 @@
       ]
     },
     "skillBook": {
-      "source": "baseline",
+      "source": "client-skill-book-52",
       "unit": "books",
       "min": 1,
       "max": 40,
@@ -1235,7 +1245,7 @@
         {
           "from": 29,
           "to": 30,
-          "cost": 685
+          "cost": 735
         },
         {
           "from": 30,
@@ -1287,207 +1297,10 @@
           "to": 40,
           "cost": 2460
         }
-      ],
-      "comparison": [
-        {
-          "to": 2,
-          "cost": 1,
-          "total": 1
-        },
-        {
-          "to": 3,
-          "cost": 3,
-          "total": 4
-        },
-        {
-          "to": 4,
-          "cost": 6,
-          "total": 10
-        },
-        {
-          "to": 5,
-          "cost": 10,
-          "total": 20
-        },
-        {
-          "to": 6,
-          "cost": 20,
-          "total": 40
-        },
-        {
-          "to": 7,
-          "cost": 30,
-          "total": 70
-        },
-        {
-          "to": 8,
-          "cost": 40,
-          "total": 110
-        },
-        {
-          "to": 9,
-          "cost": 50,
-          "total": 160
-        },
-        {
-          "to": 10,
-          "cost": 70,
-          "total": 230
-        },
-        {
-          "to": 11,
-          "cost": 90,
-          "total": 320
-        },
-        {
-          "to": 12,
-          "cost": 110,
-          "total": 430
-        },
-        {
-          "to": 13,
-          "cost": 130,
-          "total": 560
-        },
-        {
-          "to": 14,
-          "cost": 150,
-          "total": 710
-        },
-        {
-          "to": 15,
-          "cost": 180,
-          "total": 890
-        },
-        {
-          "to": 16,
-          "cost": 210,
-          "total": 1100
-        },
-        {
-          "to": 17,
-          "cost": 240,
-          "total": 1340
-        },
-        {
-          "to": 18,
-          "cost": 270,
-          "total": 1610
-        },
-        {
-          "to": 19,
-          "cost": 300,
-          "total": 1910
-        },
-        {
-          "to": 20,
-          "cost": 335,
-          "total": 2245
-        },
-        {
-          "to": 21,
-          "cost": 370,
-          "total": 2615
-        },
-        {
-          "to": 22,
-          "cost": 405,
-          "total": 3020
-        },
-        {
-          "to": 23,
-          "cost": 440,
-          "total": 3460
-        },
-        {
-          "to": 24,
-          "cost": 475,
-          "total": 3935
-        },
-        {
-          "to": 25,
-          "cost": 510,
-          "total": 4445
-        },
-        {
-          "to": 26,
-          "cost": 545,
-          "total": 4990
-        },
-        {
-          "to": 27,
-          "cost": 580,
-          "total": 5570
-        },
-        {
-          "to": 28,
-          "cost": 615,
-          "total": 6185
-        },
-        {
-          "to": 29,
-          "cost": 650,
-          "total": 6835
-        },
-        {
-          "to": 30,
-          "cost": 735,
-          "total": 7570
-        },
-        {
-          "to": 31,
-          "cost": 850,
-          "total": 8420
-        },
-        {
-          "to": 32,
-          "cost": 990,
-          "total": 9410
-        },
-        {
-          "to": 33,
-          "cost": 1140,
-          "total": 10550
-        },
-        {
-          "to": 34,
-          "cost": 1300,
-          "total": 11850
-        },
-        {
-          "to": 35,
-          "cost": 1470,
-          "total": 13320
-        },
-        {
-          "to": 36,
-          "cost": 1650,
-          "total": 14970
-        },
-        {
-          "to": 37,
-          "cost": 1840,
-          "total": 16810
-        },
-        {
-          "to": 38,
-          "cost": 2040,
-          "total": 18850
-        },
-        {
-          "to": 39,
-          "cost": 2245,
-          "total": 21095
-        },
-        {
-          "to": 40,
-          "cost": 2460,
-          "total": 23555
-        }
       ]
     },
     "exclusive": {
-      "source": "baseline",
+      "source": "client-exclusive-52",
       "unit": "parts",
       "min": 1,
       "max": 15,
@@ -1550,17 +1363,17 @@
         {
           "from": 12,
           "to": 13,
-          "cost": 30
+          "cost": 40
         },
         {
           "from": 13,
           "to": 14,
-          "cost": 30
+          "cost": 40
         },
         {
           "from": 14,
           "to": 15,
-          "cost": 30
+          "cost": 40
         }
       ]
     }
@@ -1778,24 +1591,39 @@
   "conflicts": [
     {
       "id": "skill-book-30",
-      "existing": 685,
-      "external": 735,
-      "status": "unresolved; preserve existing value"
+      "status": "resolved-client-2.6.200",
+      "value": 735,
+      "from": 29,
+      "to": 30,
+      "unit": "books",
+      "source": "client-skill-book-52"
     },
     {
       "id": "pet-exp-86",
-      "value": null,
-      "status": "missing; block affected ranges"
+      "status": "resolved-client-2.6.200",
+      "value": 11800,
+      "from": 85,
+      "to": 86,
+      "unit": "EXP",
+      "profile": "starhorn",
+      "source": "data/foundation-40/pet-exp-profiles.json"
     },
     {
       "id": "pet-training-bonus-4",
-      "value": null,
-      "status": "source extrapolation; excluded"
+      "status": "resolved-client-2.6.200",
+      "value": 85,
+      "stage": 4,
+      "unit": "percent",
+      "source": "data/foundation-40/pet-training-profiles-41.json"
     },
     {
       "id": "pet-training-5",
-      "value": null,
-      "status": "source extrapolation; excluded"
+      "status": "resolved-client-2.6.200",
+      "value": 700,
+      "from": 4,
+      "to": 5,
+      "unit": "species-marks",
+      "source": "data/foundation-40/pet-training-profiles-41.json"
     }
   ],
   "reforgeCosts": {

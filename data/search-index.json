@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-10T11:58:56.997Z",
+  "generatedAt": "2026-10-10T12:47:35.294Z",
   "itemCount": 2515,
   "items": [
     {
@@ -167,7 +167,7 @@
       "language": "de",
       "type": "database",
       "title": "Ausrüstungsupgrade EXP | TilesSurvive.net",
-      "description": "Für Stufe 1→80 werden 1.585.500 EXP benötigt. Blaue, violette und goldene Ausrüstungsschrottteile liefern 100, 400 bzw. 2.000 EXP. Gib ihren in EXP umgerechneten Wert als vorhandene Menge ein. Diese Tabelle gilt nicht für andere Aufwertungssysteme.",
+      "description": "Für Stufe 1→80 werden 1.592.200 EXP benötigt. Blaue, violette und goldene Ausrüstungsschrottteile liefern 100, 400 bzw. 2.000 EXP. Gib ihren in EXP umgerechneten Wert als vorhandene Menge ein. Diese Tabelle gilt nicht für andere Aufwertungssysteme.",
       "url": "/de/database/gear-exp/"
     },
     {
@@ -706,7 +706,7 @@
       "language": "de",
       "type": "database",
       "title": "EP der Verbesserungsmaterialien",
-      "description": "Für Stufe 1→80 werden 1.585.500 EXP benötigt. Blaue, violette und goldene Ausrüstungsschrottteile liefern 100, 400 bzw. 2.000 EXP. Gib ihren in EXP umgerechneten Wert als vorhandene Menge ein. Diese Tabelle gilt nicht für andere Aufwertungssysteme.",
+      "description": "Für Stufe 1→80 werden 1.592.200 EXP benötigt. Blaue, violette und goldene Ausrüstungsschrottteile liefern 100, 400 bzw. 2.000 EXP. Gib ihren in EXP umgerechneten Wert als vorhandene Menge ein. Diese Tabelle gilt nicht für andere Aufwertungssysteme.",
       "url": "/de/database/gear-exp/#gear-material-exp-51"
     },
     {
@@ -3635,7 +3635,7 @@
       "language": "en",
       "type": "database",
       "title": "Equipment upgrade EXP | TilesSurvive.net",
-      "description": "Level 1→80 requires 1,585,500 EXP. Blue, purple and gold scraps give 100, 400 and 2,000 EXP. Enter your converted EXP as the owned amount. This table does not cover other upgrade systems.",
+      "description": "Level 1→80 requires 1,592,200 EXP. Blue, purple and gold scraps give 100, 400 and 2,000 EXP. Enter your converted EXP as the owned amount. This table does not cover other upgrade systems.",
       "url": "/en/database/gear-exp/"
     },
     {
@@ -3818,7 +3818,7 @@
       "language": "en",
       "type": "database",
       "title": "EXP by enhancement material",
-      "description": "Level 1→80 requires 1,585,500 EXP. Blue, purple and gold scraps give 100, 400 and 2,000 EXP. Enter your converted EXP as the owned amount. This table does not cover other upgrade systems.",
+      "description": "Level 1→80 requires 1,592,200 EXP. Blue, purple and gold scraps give 100, 400 and 2,000 EXP. Enter your converted EXP as the owned amount. This table does not cover other upgrade systems.",
       "url": "/en/database/gear-exp/#gear-material-exp-51"
     },
     {
@@ -6702,7 +6702,7 @@
       "language": "ja",
       "type": "database",
       "title": "装備強化経験値 | TilesSurvive.net",
-      "description": "1→80の必要経験値は1,585,500です。青・紫・金の素材は100・400・2,000 EXP。所持数には換算後の合計EXPを入力してください。他の強化システムとは合算しません。",
+      "description": "1→80の必要経験値は1,592,200です。青・紫・金の素材は100・400・2,000 EXP。所持数には換算後の合計EXPを入力してください。他の強化システムとは合算しません。",
       "url": "/ja/database/gear-exp/"
     },
     {
@@ -7423,7 +7423,7 @@
       "language": "ja",
       "type": "database",
       "title": "強化素材ごとのEXP",
-      "description": "1→80の必要経験値は1,585,500です。青・紫・金の素材は100・400・2,000 EXP。所持数には換算後の合計EXPを入力してください。他の強化システムとは合算しません。",
+      "description": "1→80の必要経験値は1,592,200です。青・紫・金の素材は100・400・2,000 EXP。所持数には換算後の合計EXPを入力してください。他の強化システムとは合算しません。",
       "url": "/ja/database/gear-exp/#gear-material-exp-51"
     },
     {
@@ -8981,7 +8981,7 @@
       "language": "ko",
       "type": "database",
       "title": "강화 재료별 경험치",
-      "description": "1→80레벨 경험치 합계는 1,585,500입니다. 파랑·보라·금색 스크랩은 각각 100·400·2,000 EXP입니다. 보유량에는 환산한 총 EXP를 입력하세요. 다른 강화 시스템의 비용과 합산하지 않습니다.",
+      "description": "1→80레벨 경험치 합계는 1,592,200입니다. 파랑·보라·금색 스크랩은 각각 100·400·2,000 EXP입니다. 보유량에는 환산한 총 EXP를 입력하세요. 다른 강화 시스템의 비용과 합산하지 않습니다.",
       "url": "/ko/database/gear-exp/#gear-material-exp-51"
     },
     {
@@ -10598,7 +10598,7 @@
       "language": "ko",
       "type": "database",
       "title": "장비 강화 경험치 | TilesSurvive.net",
-      "description": "1→80레벨 경험치 합계는 1,585,500입니다. 파랑·보라·금색 스크랩은 각각 100·400·2,000 EXP입니다. 보유량에는 환산한 총 EXP를 입력하세요. 다른 강화 시스템의 비용과 합산하지 않습니다.",
+      "description": "1→80레벨 경험치 합계는 1,592,200입니다. 파랑·보라·금색 스크랩은 각각 100·400·2,000 EXP입니다. 보유량에는 환산한 총 EXP를 입력하세요. 다른 강화 시스템의 비용과 합산하지 않습니다.",
       "url": "/ko/database/gear-exp/"
     },
     {
@@ -13457,14 +13457,14 @@
       "language": "ru",
       "type": "database",
       "title": "Опыт от материалов улучшения",
-      "description": "Для 1→80 нужно 1 585 500 опыта. Синие, фиолетовые и золотые материалы дают 100, 400 и 2 000 опыта. Введите пересчитанный опыт в поле наличия. Стоимость других систем сюда не входит.",
+      "description": "Для 1→80 нужно 1 592 200 опыта. Синие, фиолетовые и золотые материалы дают 100, 400 и 2 000 опыта. Введите пересчитанный опыт в поле наличия. Стоимость других систем сюда не входит.",
       "url": "/ru/database/gear-exp/#gear-material-exp-51"
     },
     {
       "language": "ru",
       "type": "database",
       "title": "Опыт улучшения снаряжения | TilesSurvive.net",
-      "description": "Для 1→80 нужно 1 585 500 опыта. Синие, фиолетовые и золотые материалы дают 100, 400 и 2 000 опыта. Введите пересчитанный опыт в поле наличия. Стоимость других систем сюда не входит.",
+      "description": "Для 1→80 нужно 1 592 200 опыта. Синие, фиолетовые и золотые материалы дают 100, 400 и 2 000 опыта. Введите пересчитанный опыт в поле наличия. Стоимость других систем сюда не входит.",
       "url": "/ru/database/gear-exp/"
     },
     {
@@ -16811,7 +16811,7 @@
       "language": "zh-tw",
       "type": "database",
       "title": "裝備強化經驗 | TilesSurvive.net",
-      "description": "1→80級共需1,585,500經驗。藍、紫、金色材料分別提供100、400、2,000 EXP。持有量請填入換算後的總EXP，不與其他強化系統混算。",
+      "description": "1→80級共需1,592,200經驗。藍、紫、金色材料分別提供100、400、2,000 EXP。持有量請填入換算後的總EXP，不與其他強化系統混算。",
       "url": "/zh-tw/database/gear-exp/"
     },
     {
@@ -17749,7 +17749,7 @@
       "language": "zh-tw",
       "type": "database",
       "title": "強化材料經驗值",
-      "description": "1→80級共需1,585,500經驗。藍、紫、金色材料分別提供100、400、2,000 EXP。持有量請填入換算後的總EXP，不與其他強化系統混算。",
+      "description": "1→80級共需1,592,200經驗。藍、紫、金色材料分別提供100、400、2,000 EXP。持有量請填入換算後的總EXP，不與其他強化系統混算。",
       "url": "/zh-tw/database/gear-exp/#gear-material-exp-51"
     },
     {

@@ -105,7 +105,7 @@ function source(file,old){
   }
  }
  else return null;
- return expected;
+ return require('./build-client-truth-52').sourceProjection(file,expected);
 }
 function quantity(q,file,d){
  const lang=file.split('/')[0],main=norm(d.querySelector('main')?.textContent||'');

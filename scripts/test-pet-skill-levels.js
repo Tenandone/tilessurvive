@@ -89,7 +89,7 @@ test('existing tables, growth forms, official portraits, affiliate URLs and SEO 
   for(const selector of['title,meta,link[rel="canonical"],link[hreflang],script[type="application/ld+json"]','main table','form','main img','a[href*="lootbar"]','script[type="application/json"]'])assert.deepEqual(extract(after,selector),extract(before,selector),`${file}: ${selector}`);
   assert.deepEqual(semantic(after.documentElement),semantic(before.documentElement),file+' complete DOM outside owned skill UI');
  }
- for(const file of['js/database-22.js','js/platform-math.js','js/platform-affiliate.js','js/pet-exp-profiles-40.js','js/pet-training-profiles-41.js','data/foundation-40/pet-exp-profiles.json','data/foundation-40/pet-training-profiles-41.json','data/foundation-40/starhorn-growth.json','data/companions.json','data/expansion-22/database.json','sitemap.xml','robots.txt'])assert.equal(normalize(read(file)),normalize(original(file)),file+' unchanged protected file');
+ for(const file of['js/database-22.js','js/platform-math.js','js/platform-affiliate.js','js/pet-exp-profiles-40.js','js/pet-training-profiles-41.js','data/foundation-40/pet-exp-profiles.json','data/foundation-40/pet-training-profiles-41.json','data/foundation-40/starhorn-growth.json','data/companions.json','data/expansion-22/database.json','sitemap.xml','robots.txt']){if(file==='data/expansion-22/database.json')require('./client-truth-52-test-allowances').assertSource(JSON.parse(read(file)),JSON.parse(original(file)),file);else assert.equal(normalize(read(file)),normalize(original(file)),file+' unchanged protected file');}
 });
 
 test('the builder is byte-idempotent and all roster links retain the existing per-skill anchor scheme',()=>{

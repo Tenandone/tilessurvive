@@ -11,14 +11,14 @@ for(const [key,data]of Object.entries(db.datasets)){
  }
  for(const [a,b,h]of [[data.min-1,data.max,0],[data.min,data.max+1,0],[2,1,0],[1.5,2,0],[data.min,data.max,-1],[NaN,2,0]])check(calculate(data.rows,a,b,h).error==='invalid',key+' invalid input');
 }
-check(calculate(db.datasets.gear.rows,1,80).total===1585500,'Gear full sum');
+check(calculate(db.datasets.gear.rows,1,80).total===1592200,'Client gear full sum');
 let sourceSum=0;for(const row of db.datasets.gear.rows){sourceSum+=row.cost;check(sourceSum===row.sourceTotal,'Gear source cumulative '+row.to);}
-check(calculate(db.datasets.skillBook.rows,1,40).total===23505,'Preserved books sum');
-check(db.datasets.skillBook.rows.find(r=>r.to===30).cost===685,'Preserved disputed row');
+check(calculate(db.datasets.skillBook.rows,1,40).total===23555,'Client books sum');
+check(db.datasets.skillBook.rows.find(r=>r.to===30).cost===735,'Client target Lv.30 cost');
 check(calculate(db.datasets.petExp.rows,85,87).total===23700,'Starhorn confirmed 85 to 87 EXP');
 check(calculate(db.datasets.petExp.rows.map(r=>r.from===86?{...r,cost:null}:r),85,87).error==='missing','Missing-value guard remains active for incomplete input');
 check(calculate(db.datasets.petTraining.rows,0,4).total===1300,'Training total');
-check(calculate(db.datasets.exclusive.rows,1,15).total===360,'Exclusive total');
+check(calculate(db.datasets.exclusive.rows,1,15).total===390,'Client exclusive total');
 db.reforge.forEach((r,i)=>check(Math.abs(r.values.reduce((a,b)=>a+b,0)-100)<1e-8,'Reforge distribution '+i));
 for(const egg of ['rare','epic','legendary'])check(Math.abs(db.pets.reduce((a,p)=>a+(p.eggs[egg]||0),0)-100)<.02,'Egg rounding '+egg);
 check(new Set(ledger.entries.map(e=>e.id)).size===ledger.entries.length,'Ledger IDs unique');

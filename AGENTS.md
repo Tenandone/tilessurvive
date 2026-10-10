@@ -43,6 +43,9 @@ External community links are language-specific:
 This is treated as link-value replacement only, not a structural change.
 
 ## Editing Guidelines
+- Current, retained game client DB values are the primary source of truth. When manual or external-guide values conflict, match game version, internal ID, level/transition, stage, profile and unit, then replace them with the verified client values. Historical preservation alone is not a reason to retain an incorrect value.
+- Keep genuinely distinct client/server or variant profiles separate and state their applicable version/conditions. Never select an unresolved variant arbitrarily or turn a missing value into zero.
+- Back up replaced values and keep the old/new values, units, game version, IDs, profiles, reason and evidence in the private change ledger outside this public repository. Regenerate connected tables, calculators, cumulative values and all six languages; preserve URLs, SEO and affiliate links.
 - Prefer minimal, safe edits for normal page updates.
 - Do not modify unrelated files unless required by the requested task.
 - Preserve existing class names and section structure when possible.

@@ -102,7 +102,7 @@ function render(source, translate, route) {
 }
 function build({inventoryPath}={}) {
   const catalog=fs.existsSync(DATA)?JSON.parse(fs.readFileSync(DATA,'utf8')):{exact:{}};
-  for(const name of ['german-core-review.json','german-hero-review.json','german-calculator-review.json','german-growth-review.json','german-editorial-review.json','german-root-overrides.json','german-building-review.json']){const file=path.join(ROOT,'data/product-50',name);if(fs.existsSync(file))Object.assign(catalog.exact,JSON.parse(fs.readFileSync(file,'utf8')).exact);}
+  for(const name of ['german-core-review.json','german-hero-review.json','german-calculator-review.json','german-growth-review.json','german-editorial-review.json','german-root-overrides.json','german-building-review.json','german-client52-review.json']){const file=path.join(ROOT,'data/product-50',name);if(fs.existsSync(file))Object.assign(catalog.exact,JSON.parse(fs.readFileSync(file,'utf8')).exact);}
   const {translate,missing}=createTranslator(catalog,!!inventoryPath);
   const outputs=[];
   const inheritedRoutes=JSON.parse(fs.readFileSync(path.join(ROOT,'data/product-50/german-routes.json'),'utf8'));

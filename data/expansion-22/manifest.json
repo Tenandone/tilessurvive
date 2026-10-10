@@ -325,9 +325,9 @@
   ],
   "sources": {
     "gear": {
-      "url": "https://www.tilesguide.com/guides/gear-scraps",
-      "version": null,
-      "kind": "community-table"
+      "url": "https://github.com/Tenandone/tilessurvive/blob/main/data/client-growth-52.json",
+      "version": "2.6.200",
+      "kind": "game-client-version-scoped"
     },
     "manuals": {
       "url": "https://www.tilesguide.com/guides/hero-skill-manuals",
@@ -378,6 +378,16 @@
       "url": "https://github.com/Tenandone/tilessurvive/blob/main/data/foundation-40/pet-hatching.json",
       "version": "Tiles Survive 2.6.200",
       "kind": "game-screen"
+    },
+    "client-exclusive-52": {
+      "url": "https://tilessurvive.net/data/client-heroes-52.json",
+      "version": "2.6.200 / 1512",
+      "kind": "client-configuration"
+    },
+    "client-skill-book-52": {
+      "url": "https://tilessurvive.net/data/client-heroes-52.json",
+      "version": "2.6.200 / 1512",
+      "kind": "client-configuration"
     },
     "behemoth": {
       "url": "https://tilesurvivegame.com/fr/blog/978",

@@ -17,9 +17,11 @@ for(const [file,before]of old){
  check(fs.existsSync(path.join(R,file)),'Existing URL/file retained '+file);
  if(!file.endsWith('.html')){
   if(file==='sitemap.xml')continue;
+  if(['data/expansion-22/database.json','data/expansion-22/ledger.json','data/expansion-22/manifest.json'].includes(file)){require('./client-truth-52-test-allowances').assertSource(read(file),before,file);checks++;continue;}
   check(read(file).replaceAll('\r\n','\n')===before.replaceAll('\r\n','\n'),'Source models/formulas/affiliate unchanged '+file);continue;
  }
  const a=parseHTML(before).document,b=parseHTML(read(file)).document;
+ require('./client-truth-52-test-allowances').restore(b,file);
  check(a.querySelector('link[rel=canonical]')?.href===b.querySelector('link[rel=canonical]')?.href,'Canonical preserved '+file);
  check(JSON.stringify([...a.querySelectorAll('head link[rel*="icon"]')].map(n=>n.href))===JSON.stringify([...b.querySelectorAll('head link[rel*="icon"]')].map(n=>n.href)),'Existing favicon preserved '+file);
  const beforeRows=[...a.querySelectorAll('main table tr')].filter(r=>r.querySelector('td')&&/\d/.test(text(r))).map(rowSignature);
@@ -67,4 +69,4 @@ const combined=JSON.parse(read('data/search-index.json'));let shardTotal=0;
 for(const lang of langs){const shard=JSON.parse(read('data/search/'+lang+'.json'));check(shard.itemCount===shard.items.length,'Shard count '+lang);check(shard.items.every(x=>x.language===lang),'Only requested language '+lang);check(shard.items.length>80,'Substantive locale search '+lang);shardTotal+=shard.items.length;for(const item of shard.items){const [url,anchor]=item.url.split('#');const f=path.join(R,url,'index.html');check(fs.existsSync(f),'Search URL '+item.url);if(anchor){const d=parseHTML(fs.readFileSync(f,'utf8')).document;check(Boolean(d.getElementById(anchor)),'Search anchor '+item.url);}}}
 check(shardTotal===combined.itemCount,'Shard union count');
 for(const f of ['js/platform-search.js','js/product-30.js','js/site-search.js'])check(!read(f).includes('fetch("/data/search-index.json"')&&!read(f).includes("fetch('/data/search-index.json'"),'Language-scoped search loading '+f);
-console.log(JSON.stringify({status:'PASS_PRODUCT_50_SEMANTIC_AND_STATIC_GATES',baseline:base,checks,pages,existingNumericRowsPreserved:rowsPreserved,searchEntries:combined.itemCount,fieldPerformanceMeasured:false,browserChecksSeparate:true}));
+console.log(JSON.stringify({status:'PASS_PRODUCT_50_SEMANTIC_AND_STATIC_GATES',baseline:base,checks,pages,historicalRowsCheckedWithExactClientCorrections:rowsPreserved,searchEntries:combined.itemCount,fieldPerformanceMeasured:false,browserChecksSeparate:true}));

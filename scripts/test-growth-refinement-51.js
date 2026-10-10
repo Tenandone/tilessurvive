@@ -42,6 +42,7 @@ test('all 18 pages keep complete previous DOM except the isolated added material
     const route = `${lang}/${suffix}/index.html`;
     const old = parseHTML(execFileSync('git', ['show', `${baseline}:${route}`], { cwd: root, encoding: 'utf8', maxBuffer: 2e6 })).document;
     const current = documentAt(route);
+    require('./client-truth-52-test-allowances').restore(current,route);
     const expected = suffix === 'database/gear-exp' ? 1 : 2;
     assert.equal(current.querySelectorAll('[data-growth-refinement-51]').length, expected, route);
     builder.strip(current);
@@ -62,11 +63,11 @@ test('behemoth EXP stays attached to the existing correct serum image; star cost
   }
 });
 
-test('general gear dataset remains byte-identical to production baseline', () => {
+test('general gear dataset contains only the scoped client source corrections', () => {
   for (const file of ['data/expansion-22/database.json']) {
-    assert.equal(fs.readFileSync(path.join(root, file), 'utf8').replace(/\r\n/g, '\n'), execFileSync('git', ['show', `${baseline}:${file}`], { cwd: root, encoding: 'utf8' }).replace(/\r\n/g, '\n'), file);
+    require('./client-truth-52-test-allowances').assertSource(JSON.parse(fs.readFileSync(path.join(root,file),'utf8')),JSON.parse(execFileSync('git',['show',`${baseline}:${file}`],{cwd:root,encoding:'utf8'})),file);
   }
   const rows = require('../data/expansion-22/database.json').datasets.gear.rows;
   assert.equal(rows.length, 79);
-  assert.equal(rows.reduce((sum, row) => sum + row.cost, 0), 1585500);
+  assert.equal(rows.reduce((sum, row) => sum + row.cost, 0), 1592200);
 });

@@ -1,0 +1,427 @@
+{
+  "schemaVersion": 1,
+  "gameVersion": "2.6.200",
+  "gameBuild": 1512,
+  "unit": "exclusive-gear-fragment",
+  "costBasis": "destination-level",
+  "activation": {
+    "from": 0,
+    "to": 1,
+    "cost": 10
+  },
+  "transitions": [
+    {
+      "from": 1,
+      "to": 2,
+      "cost": 5
+    },
+    {
+      "from": 2,
+      "to": 3,
+      "cost": 10
+    },
+    {
+      "from": 3,
+      "to": 4,
+      "cost": 20
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "cost": 25
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "cost": 30
+    },
+    {
+      "from": 6,
+      "to": 7,
+      "cost": 30
+    },
+    {
+      "from": 7,
+      "to": 8,
+      "cost": 30
+    },
+    {
+      "from": 8,
+      "to": 9,
+      "cost": 30
+    },
+    {
+      "from": 9,
+      "to": 10,
+      "cost": 30
+    },
+    {
+      "from": 10,
+      "to": 11,
+      "cost": 30
+    },
+    {
+      "from": 11,
+      "to": 12,
+      "cost": 30
+    },
+    {
+      "from": 12,
+      "to": 13,
+      "cost": 40
+    },
+    {
+      "from": 13,
+      "to": 14,
+      "cost": 40
+    },
+    {
+      "from": 14,
+      "to": 15,
+      "cost": 40
+    }
+  ],
+  "profiles": [
+    {
+      "id": "beka",
+      "heroId": 25300041,
+      "gearId": 59600006,
+      "materialId": 208371
+    },
+    {
+      "id": "candy",
+      "heroId": 25300038,
+      "gearId": 59600009,
+      "materialId": 208374
+    },
+    {
+      "id": "jacob",
+      "heroId": 25300223,
+      "gearId": 59600014,
+      "materialId": 208876
+    },
+    {
+      "id": "kiki",
+      "heroId": 25300221,
+      "gearId": 59600012,
+      "materialId": 208874
+    },
+    {
+      "id": "kiron",
+      "heroId": 25300225,
+      "gearId": 59600016,
+      "materialId": 208922
+    },
+    {
+      "id": "laila",
+      "heroId": 25300137,
+      "gearId": 59600004,
+      "materialId": 208348
+    },
+    {
+      "id": "light",
+      "heroId": 25300220,
+      "gearId": 59600011,
+      "materialId": 208873
+    },
+    {
+      "id": "maddy",
+      "heroId": 25300015,
+      "gearId": 59600002,
+      "materialId": 208346
+    },
+    {
+      "id": "mike",
+      "heroId": 25300013,
+      "gearId": 59600008,
+      "materialId": 208373
+    },
+    {
+      "id": "nikola",
+      "heroId": 25300009,
+      "gearId": 59600005,
+      "materialId": 208370
+    },
+    {
+      "id": "ray",
+      "heroId": 25300008,
+      "gearId": 59600003,
+      "materialId": 208347
+    },
+    {
+      "id": "rosie",
+      "heroId": 25300138,
+      "gearId": 59600001,
+      "materialId": 208345
+    },
+    {
+      "id": "shark",
+      "heroId": 25300237,
+      "gearId": 59600017,
+      "materialId": 209132
+    },
+    {
+      "id": "tara",
+      "heroId": 25300222,
+      "gearId": 59600013,
+      "materialId": 208875
+    },
+    {
+      "id": "tarzan",
+      "heroId": 25300224,
+      "gearId": 59600015,
+      "materialId": 208921
+    },
+    {
+      "id": "tony",
+      "heroId": 25300027,
+      "gearId": 59600007,
+      "materialId": 208372
+    },
+    {
+      "id": "undine",
+      "heroId": 25300240,
+      "gearId": 59600020,
+      "materialId": 209453
+    },
+    {
+      "id": "lagnar",
+      "heroId": 25300238,
+      "gearId": 59600018,
+      "materialId": 209232
+    },
+    {
+      "id": "dave",
+      "heroId": 25300241,
+      "gearId": 59600021,
+      "materialId": 209863
+    }
+  ],
+  "unlockDescriptions": [
+    {
+      "id": "maddy",
+      "level": 10,
+      "descriptions": {
+        "ko": "전투 스킬 시전 시 아군 전체 영웅의 공격력이 7.5% 증가하며, 지속 시간은 전투 스킬 효과와 동일합니다.",
+        "en": "When using an Active Skill, increases all allies' Attack by +7.5% for the same duration as the Active Skill effect.",
+        "ja": "アクティブ発動時、味方全英雄の攻撃力+7.5% 。持続時間はアクティブ効果と同じです",
+        "ru": "При использовании боевого навыка увеличивает атаку всех союзников на 7.5% на время действия боевого навыка.",
+        "zh-tw": "施放戰技時，我方全體英雄攻擊+7.5%，持續時間和戰技效果相同。",
+        "de": "Beim Einsatz einer aktiven Fähigkeit erhöht sich der Angriff aller Verbündeten um +7.5 % für die gleiche Dauer wie der Effekt der aktiven Fähigkeit."
+      }
+    },
+    {
+      "id": "mike",
+      "level": 15,
+      "descriptions": {
+        "ko": "체력이 5% 증가하고 체력이 매번 10% 감소하며, 1%의 전투 스킬 대미지 감소를 획득합니다.",
+        "en": "Health +5%. Gain 1% Active Skill Damage Reduction for every 10% of Health lost.",
+        "ja": "HPが5%増加する。HPが10%減少するたびに1%のアクティブスキル被ダメージ軽減を獲得する",
+        "ru": "+5% к здоровью. Кажд. 10% потерянного здоровья снижают урон при использ. активного навыка на 1%.",
+        "zh-tw": "生命值+5%，血量每降低10%，獲得1%的戰技傷害減免",
+        "de": "Zustand +5 %. Erhalte 1 % Schadensreduzierung von aktiven Fähigkeiten für jede 10 % verlorenen Zustands."
+      }
+    }
+  ],
+  "skillBook": {
+    "itemId": 201725,
+    "costBasis": "destination-level",
+    "rows": [
+      {
+        "from": 1,
+        "to": 2,
+        "cost": 1
+      },
+      {
+        "from": 2,
+        "to": 3,
+        "cost": 3
+      },
+      {
+        "from": 3,
+        "to": 4,
+        "cost": 6
+      },
+      {
+        "from": 4,
+        "to": 5,
+        "cost": 10
+      },
+      {
+        "from": 5,
+        "to": 6,
+        "cost": 20
+      },
+      {
+        "from": 6,
+        "to": 7,
+        "cost": 30
+      },
+      {
+        "from": 7,
+        "to": 8,
+        "cost": 40
+      },
+      {
+        "from": 8,
+        "to": 9,
+        "cost": 50
+      },
+      {
+        "from": 9,
+        "to": 10,
+        "cost": 70
+      },
+      {
+        "from": 10,
+        "to": 11,
+        "cost": 90
+      },
+      {
+        "from": 11,
+        "to": 12,
+        "cost": 110
+      },
+      {
+        "from": 12,
+        "to": 13,
+        "cost": 130
+      },
+      {
+        "from": 13,
+        "to": 14,
+        "cost": 150
+      },
+      {
+        "from": 14,
+        "to": 15,
+        "cost": 180
+      },
+      {
+        "from": 15,
+        "to": 16,
+        "cost": 210
+      },
+      {
+        "from": 16,
+        "to": 17,
+        "cost": 240
+      },
+      {
+        "from": 17,
+        "to": 18,
+        "cost": 270
+      },
+      {
+        "from": 18,
+        "to": 19,
+        "cost": 300
+      },
+      {
+        "from": 19,
+        "to": 20,
+        "cost": 335
+      },
+      {
+        "from": 20,
+        "to": 21,
+        "cost": 370
+      },
+      {
+        "from": 21,
+        "to": 22,
+        "cost": 405
+      },
+      {
+        "from": 22,
+        "to": 23,
+        "cost": 440
+      },
+      {
+        "from": 23,
+        "to": 24,
+        "cost": 475
+      },
+      {
+        "from": 24,
+        "to": 25,
+        "cost": 510
+      },
+      {
+        "from": 25,
+        "to": 26,
+        "cost": 545
+      },
+      {
+        "from": 26,
+        "to": 27,
+        "cost": 580
+      },
+      {
+        "from": 27,
+        "to": 28,
+        "cost": 615
+      },
+      {
+        "from": 28,
+        "to": 29,
+        "cost": 650
+      },
+      {
+        "from": 29,
+        "to": 30,
+        "cost": 735
+      },
+      {
+        "from": 30,
+        "to": 31,
+        "cost": 850
+      },
+      {
+        "from": 31,
+        "to": 32,
+        "cost": 990
+      },
+      {
+        "from": 32,
+        "to": 33,
+        "cost": 1140
+      },
+      {
+        "from": 33,
+        "to": 34,
+        "cost": 1300
+      },
+      {
+        "from": 34,
+        "to": 35,
+        "cost": 1470
+      },
+      {
+        "from": 35,
+        "to": 36,
+        "cost": 1650
+      },
+      {
+        "from": 36,
+        "to": 37,
+        "cost": 1840
+      },
+      {
+        "from": 37,
+        "to": 38,
+        "cost": 2040
+      },
+      {
+        "from": 38,
+        "to": 39,
+        "cost": 2245
+      },
+      {
+        "from": 39,
+        "to": 40,
+        "cost": 2460
+      }
+    ]
+  }
+}

@@ -6,6 +6,7 @@ const root=path.resolve(__dirname,'..'),base='296cd9e6b61f444f54ed6b10d128ae8d4b
 function original(file){if(!cache.has(file))cache.set(file,cp.execFileSync('git',['show',base+':'+file],{cwd:root,encoding:'utf8',maxBuffer:8e6}));return parseHTML(cache.get(file)).document;}
 function sig(n){if(n.nodeType===3)return n.textContent.trim()?['text',n.textContent.trim()]:null;if(n.nodeType!==1)return null;const children=[];let text='';const flush=()=>{if(text.trim())children.push(['text',text.trim()]);text='';};for(const child of n.childNodes){if(child.nodeType===3)text+=child.textContent;else{flush();const v=sig(child);if(v)children.push(v);}}flush();return[n.tagName,[...n.attributes].map(a=>[a.name,a.value]).sort(([a],[b])=>a.localeCompare(b)),children];}
 function restore(d,file=''){
+ require('./client-truth-52-test-allowances').restore(d,file);
  if(!d.querySelector('[data-building-art-51],[data-building-refinement-51],[data-building-plan-steps-51],[data-hero-refinement-51],[data-growth-refinement-51]'))return d;
  if(!file)file=new URL(d.querySelector('link[rel=canonical]').href).pathname.slice(1)+'index.html';
  const lang=file.split('/')[0],route='/'+file.replace(/index\.html$/,'');assert(['ko','en','ja','ru','zh-tw','de'].includes(lang));

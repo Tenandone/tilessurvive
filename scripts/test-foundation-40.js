@@ -360,7 +360,8 @@ for (const file of protectedFiles) {
 }
 const expectedCopy = JSON.parse(JSON.stringify(require(path.join(baseline, 'data/expansion-22/copy.js'))));
 for (const lang of langs) expectedCopy[lang].arcadiaText = arcadiaText(expectedCopy[lang].arcadiaText, lang);
-check(same(require('../data/expansion-22/copy'), expectedCopy), 'Only exact dated Arcadia copy values changed in five locales');
+for (const lang of langs) expectedCopy[lang].gearNote = expectedCopy[lang].gearNote.replaceAll('1,585,500','1,592,200').replaceAll('1 585 500','1 592 200');
+check(same(require('../data/expansion-22/copy'), expectedCopy), 'Only exact dated Arcadia copy and client gear total changed in five locales');
 const oldXML = read(baseline, 'sitemap.xml'), currentXML = read(root, 'sitemap.xml');
 const nodes = xml => xml.match(/<url>[\s\S]*?<\/url>/g) || [];
 const oldNodes = nodes(oldXML), newNodes = nodes(currentXML), oldSet = new Set(oldNodes);

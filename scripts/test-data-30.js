@@ -42,7 +42,8 @@ for(const lang of languages){
   ok(d.querySelector('script[src^="/js/data-workbench-30.js"]'),rel+' data script');
   ok(d.querySelector('link[href^="/css/data-workbench-30.css"]'),rel+' data CSS');
   if(hasOriginal){
-   const before=beforeDocument(rel),current=[...d.querySelectorAll('main table')].map(values);
+   const historical=d.cloneNode(true);require('./client-truth-52-test-allowances').restore(historical,rel);
+   const before=beforeDocument(rel),current=[...historical.querySelectorAll('main table')].map(values);
    for(const table of before.querySelectorAll('main table')){
     const originalRows=values(table),placeholder=originalRows.length>1&&originalRows.slice(1).every(row=>row.length===2&&/^(미정|未定|Undecided)$/.test(row[1]));
     // Entirely empty season-3 scaffolding carries no game facts; product cleanup may remove it.
@@ -51,7 +52,7 @@ for(const lang of languages){
     ok(current.some(v=>JSON.stringify(v)===JSON.stringify(expected)),rel+' original table cells preserved with exact reviewed deltas '+table.id);
    }
    const config=n=>[...n.querySelectorAll('[data-growth-form]')].map(form=>({key:form.getAttribute('data-growth-form'),config:JSON.parse(form.querySelector('script[type="application/json"]').textContent)}));
-   equal(config(d),allowances.forms(config(before),rel),rel+' calculator input data preserved with exact Starhorn rows');
+   equal(config(historical),allowances.forms(config(before),rel),rel+' historical calculator inputs outside scoped client corrections');
   }
   const ids=[...d.querySelectorAll('[id]')].map(n=>n.id);equal(new Set(ids).size,ids.length,rel+' unique IDs');
   for(const table of d.querySelectorAll('[data-workbench]')){
@@ -82,9 +83,11 @@ for(const lang of languages){
    if(entries.length>=5)ok(d.querySelector('[data-catalog-controls]'),rel+' searchable catalog controls');
    if(hasOriginal){
     const before=beforeDocument(rel);
+    const reviewedCatalog=d.cloneNode(true);require('./refinement-51-test-allowances').restore(reviewedCatalog,rel);
+    const reviewedEntries=[...reviewedCatalog.querySelectorAll('[data-catalog-entry]')];
     for(const card of before.querySelectorAll('.building-card,.behemoth-card,.tool-card.is-linked')){
      const name=card.querySelector('h3')?.textContent,match=entries.find(n=>n.querySelector('h3')?.textContent===name);ok(match,rel+' original catalog name '+name);
-     if(match){for(const p of card.querySelectorAll('p'))ok(match.textContent.includes(p.textContent),rel+' original item description preserved');const src=card.querySelector('img')?.getAttribute('src');if(src){const reviewed=require('./foundation-40-test-allowances').image(rel,src);ok(match.querySelector(`img[src="${reviewed}"]`),rel+' original or exactly reviewed item image preserved');}}
+     if(match){const reviewedMatch=reviewedEntries.find(n=>n.querySelector('h3')?.textContent===name);ok(reviewedMatch,rel+' exact historical catalog entry');for(const p of card.querySelectorAll('p'))ok(reviewedMatch.textContent.includes(p.textContent),rel+' original item description preserved after exact source corrections');const src=card.querySelector('img')?.getAttribute('src');if(src){const reviewed=require('./foundation-40-test-allowances').image(rel,src);ok(reviewedMatch.querySelector(`img[src="${reviewed}"]`),rel+' original or exactly reviewed item image preserved');}}
     }
    }
    for(const link of d.querySelectorAll('.ts3-catalog-data a')){
@@ -105,10 +108,10 @@ for(const lang of languages){
   }
  }
 }
-equal(growth.calculate(db.datasets.gear.rows,1,80,1000),{total:1585500,held:1000,shortage:1584500},'full equipment range + inventory');
-equal(growth.calculate(db.datasets.skillBook.rows,29,30,100),{total:685,held:100,shortage:585},'disputed level retains 685');
-equal(growth.calculate(db.datasets.skillBook.rows,1,40),{total:23505,held:0,shortage:23505},'preserved full skill book sum');
-equal(growth.calculate(db.datasets.exclusive.rows,1,15,400),{total:360,held:400,shortage:0},'excess inventory never negative shortage');
+equal(growth.calculate(db.datasets.gear.rows,1,80,1000),{total:1592200,held:1000,shortage:1591200},'client equipment range + inventory');
+equal(growth.calculate(db.datasets.skillBook.rows,29,30,100),{total:735,held:100,shortage:635},'client target Lv.30 costs 735 books');
+equal(growth.calculate(db.datasets.skillBook.rows,1,40),{total:23555,held:0,shortage:23555},'client full skill book sum');
+equal(growth.calculate(db.datasets.exclusive.rows,1,15,400),{total:390,held:400,shortage:0},'excess inventory never negative shortage');
 equal(growth.calculate(baselineDb.datasets.petExp.rows,85,87),{error:'missing',missing:[86]},'historical missing pet transition remains blocked');
 equal(db,allowances.source('data/expansion-22/database.json',baselineDb),'entire database has only the exact approved field and growth changes');
 equal(baselineDb.datasets.petExp.rows.filter(row=>row.cost!==null).length,54,'all 54 legacy non-null EXP costs remain covered');
