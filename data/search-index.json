@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-09T23:58:46.539Z",
-  "itemCount": 665,
+  "generatedAt": "2026-10-10T01:51:54.783Z",
+  "itemCount": 785,
   "items": [
     {
       "language": "en",
@@ -133,10 +133,38 @@
     {
       "language": "en",
       "type": "database",
+      "title": "Buckler · Natural Armor",
+      "description": "Lv.1 · Increases Pet Stats by 5%.",
+      "url": "/en/database/pet-system/buckler/#pet-skill-4-41"
+    },
+    {
+      "language": "en",
+      "type": "database",
       "title": "Buckler · Pet Acquisition, Stats & Growth | TilesSurvive.net",
       "description": "Buckler — Role: Defender · Acquisition probability · Observed stats",
       "url": "/en/database/pet-system/buckler/",
       "aliases": "Buckler"
+    },
+    {
+      "language": "en",
+      "type": "database",
+      "title": "Buckler · Shell Guard",
+      "description": "Lv.1 · The Turtle raises its sturdy shell to protect an ally. At the start of battle, grants protection to the nearest ally Hero, increasing their Defense by 25% and reducing Normal Attack Damage taken by 10% for 10s.",
+      "url": "/en/database/pet-system/buckler/#pet-skill-1-41"
+    },
+    {
+      "language": "en",
+      "type": "database",
+      "title": "Buckler · Shell Renewal",
+      "description": "Lv.1 · Reduces Hatching Time by 5%.",
+      "url": "/en/database/pet-system/buckler/#pet-skill-3-41"
+    },
+    {
+      "language": "en",
+      "type": "database",
+      "title": "Buckler · Warm Shell",
+      "description": "Lv.1 · Increases Pet EXP gained from feeding by 2%.",
+      "url": "/en/database/pet-system/buckler/#pet-skill-2-41"
     },
     {
       "language": "en",
@@ -213,6 +241,34 @@
       "description": "A sea SSR ranged hero with water-bomb attacks and enemy ATK and DEF reduction.",
       "url": "/en/heroes/dave/",
       "aliases": "Dave"
+    },
+    {
+      "language": "en",
+      "type": "database",
+      "title": "Dodo · Cheer On",
+      "description": "Lv.1 · The Raccoon waves its little paws to cheer on the team. At the start of battle, increases the Attack of 2 random Heroes by 10% for 10s.",
+      "url": "/en/database/pet-system/dodo/#pet-skill-1-41"
+    },
+    {
+      "language": "en",
+      "type": "database",
+      "title": "Dodo · Keen Search",
+      "description": "Lv.1 · Increases Pet EXP gained from feeding by 2%.",
+      "url": "/en/database/pet-system/dodo/#pet-skill-2-41"
+    },
+    {
+      "language": "en",
+      "type": "database",
+      "title": "Dodo · Lucky Find",
+      "description": "Lv.1 · Increases the chance to hatch a Legendary Pet by 5%.",
+      "url": "/en/database/pet-system/dodo/#pet-skill-3-41"
+    },
+    {
+      "language": "en",
+      "type": "database",
+      "title": "Dodo · Natural Instinct",
+      "description": "Lv.1 · Increases Pet Stats by 5%.",
+      "url": "/en/database/pet-system/dodo/#pet-skill-4-41"
     },
     {
       "language": "en",
@@ -372,6 +428,34 @@
       "title": "How to Redeem Tiles Survive Gift Codes | Tiles Survive Guide | TilesSurvive.net",
       "description": "A guide that explains how to redeem Tiles Survive gift codes and organizes current active codes, permanent codes, and expired codes in one place.",
       "url": "/en/guides/gift-code-how-to-use/"
+    },
+    {
+      "language": "en",
+      "type": "database",
+      "title": "Ironhead · Charging Spirit",
+      "description": "Lv.1 · Increases deployed front-row Heroes' Attack by 3.5%.",
+      "url": "/en/database/pet-system/hardhead/#pet-skill-2-41"
+    },
+    {
+      "language": "en",
+      "type": "database",
+      "title": "Ironhead · Ironclad Charge",
+      "description": "Lv.1 · The Wild Boar launches a fierce charge. At the start of battle, rams the nearest enemy, dealing damage equal to 600% of Pet Attack and reducing their Defense by 25% for 10s.",
+      "url": "/en/database/pet-system/hardhead/#pet-skill-1-41"
+    },
+    {
+      "language": "en",
+      "type": "database",
+      "title": "Ironhead · Linebreaker",
+      "description": "Lv.1 · Increases damage taken by front-row enemy Heroes by 3.5%.",
+      "url": "/en/database/pet-system/hardhead/#pet-skill-3-41"
+    },
+    {
+      "language": "en",
+      "type": "database",
+      "title": "Ironhead · Natural Plating",
+      "description": "Lv.1 · Increases Pet Stats by 7.5%.",
+      "url": "/en/database/pet-system/hardhead/#pet-skill-4-41"
     },
     {
       "language": "en",
@@ -672,10 +756,38 @@
     {
       "language": "en",
       "type": "database",
+      "title": "Shadow · Blood Trail",
+      "description": "Lv.1 · Increases deployed Heroes' Attack by 1.5%.",
+      "url": "/en/database/pet-system/shadow/#pet-skill-2-41"
+    },
+    {
+      "language": "en",
+      "type": "database",
+      "title": "Shadow · Hunting Frenzy",
+      "description": "Lv.1 · When deployed Heroes attack targets below 35% Health, their Attack increases by 7.5%.",
+      "url": "/en/database/pet-system/shadow/#pet-skill-3-41"
+    },
+    {
+      "language": "en",
+      "type": "database",
       "title": "Shadow · Pet Acquisition, Stats & Growth | TilesSurvive.net",
       "description": "Shadow — Role: Attacker · Acquisition probability · Observed stats",
       "url": "/en/database/pet-system/shadow/",
       "aliases": "Shadow"
+    },
+    {
+      "language": "en",
+      "type": "database",
+      "title": "Shadow · Predator's Instinct",
+      "description": "Lv.1 · Increases Pet Stats by 7.5%.",
+      "url": "/en/database/pet-system/shadow/#pet-skill-4-41"
+    },
+    {
+      "language": "en",
+      "type": "database",
+      "title": "Shadow · Shadow Hunt",
+      "description": "Lv.1 · The Shadow Hound locks onto its prey. At the start of battle, marks 1 random enemy Hero, increasing damage taken by the target by 20% for 10s.",
+      "url": "/en/database/pet-system/shadow/#pet-skill-1-41"
     },
     {
       "language": "en",
@@ -710,10 +822,38 @@
     {
       "language": "en",
       "type": "database",
+      "title": "Snowball · Flowing Dance",
+      "description": "Lv.1 · When deployed Heroes attack targets below 25% Health, their Attack increases by 5%.",
+      "url": "/en/database/pet-system/snowball/#pet-skill-3-41"
+    },
+    {
+      "language": "en",
+      "type": "database",
+      "title": "Snowball · Ocean's Blessing",
+      "description": "Lv.1 · Increases Pet Stats by 5%.",
+      "url": "/en/database/pet-system/snowball/#pet-skill-4-41"
+    },
+    {
+      "language": "en",
+      "type": "database",
       "title": "Snowball · Pet Acquisition, Stats & Growth | TilesSurvive.net",
       "description": "Snowball — Role: Attacker · Acquisition probability · Observed stats",
       "url": "/en/database/pet-system/snowball/",
       "aliases": "Snowball"
+    },
+    {
+      "language": "en",
+      "type": "database",
+      "title": "Snowball · Striking Tide",
+      "description": "Lv.1 · The Baby Seal kicks up a wave and launches a surprise attack. At the start of battle, deals Water Damage equal to 500% of Pet Attack to 1 random enemy Hero.",
+      "url": "/en/database/pet-system/snowball/#pet-skill-1-41"
+    },
+    {
+      "language": "en",
+      "type": "database",
+      "title": "Snowball · Tidal Rally",
+      "description": "Lv.1 · Increases deployed Heroes' Attack by 1%.",
+      "url": "/en/database/pet-system/snowball/#pet-skill-2-41"
     },
     {
       "language": "en",
@@ -725,10 +865,38 @@
     {
       "language": "en",
       "type": "database",
+      "title": "Starhorn · Astral Blessing",
+      "description": "Lv.1 · Increases Pet Stats by 10%.",
+      "url": "/en/database/pet-system/starhorn/#pet-skill-4-41"
+    },
+    {
+      "language": "en",
+      "type": "database",
       "title": "Starhorn · Pet Acquisition, Stats & Growth | TilesSurvive.net",
       "description": "Starhorn — Lv.1 · Training 0 · Before transformation · Growth data",
       "url": "/en/database/pet-system/starhorn/",
       "aliases": "Starhorn"
+    },
+    {
+      "language": "en",
+      "type": "database",
+      "title": "Starhorn · Starlight Grace",
+      "description": "Lv.1 · Reduces Skill Damage taken by deployed Heroes by 2.5%.",
+      "url": "/en/database/pet-system/starhorn/#pet-skill-3-41"
+    },
+    {
+      "language": "en",
+      "type": "database",
+      "title": "Starhorn · Starlit Aegis",
+      "description": "Lv.1 · Increases deployed Heroes' Health by 3%.",
+      "url": "/en/database/pet-system/starhorn/#pet-skill-2-41"
+    },
+    {
+      "language": "en",
+      "type": "database",
+      "title": "Starhorn · Starlit Wish",
+      "description": "Lv.1 · The Starlight Deer showers the team in starlight. At the start of battle, increases front-row ally Heroes' Defense by 20% and back-row ally Heroes' Attack by 8% for 10s.",
+      "url": "/en/database/pet-system/starhorn/#pet-skill-1-41"
     },
     {
       "language": "en",
@@ -1346,6 +1514,34 @@
     {
       "language": "ja",
       "type": "database",
+      "title": "アイアン · 猛進の鼓舞",
+      "description": "Lv.1 · 編成中の前列英雄の攻撃力が3.5%上昇します",
+      "url": "/ja/database/pet-system/hardhead/#pet-skill-2-41"
+    },
+    {
+      "language": "ja",
+      "type": "database",
+      "title": "アイアン · 不屈の重甲",
+      "description": "Lv.1 · ペットのステータスが7.5%上昇します",
+      "url": "/ja/database/pet-system/hardhead/#pet-skill-4-41"
+    },
+    {
+      "language": "ja",
+      "type": "database",
+      "title": "アイアン · 重甲突撃",
+      "description": "Lv.1 · イノシシが猛烈な突進を仕掛けます。戦闘開始時、最も近い敵に体当たりし、ペット攻撃力の600%に相当するダメージを与え、防御力を25%低下させます。効果は10秒間持続します",
+      "url": "/ja/database/pet-system/hardhead/#pet-skill-1-41"
+    },
+    {
+      "language": "ja",
+      "type": "database",
+      "title": "アイアン · 陣形破り",
+      "description": "Lv.1 · 敵前列の英雄が受けるダメージが3.5%増加します",
+      "url": "/ja/database/pet-system/hardhead/#pet-skill-3-41"
+    },
+    {
+      "language": "ja",
+      "type": "database",
       "title": "アイアン · ペットの入手・能力・育成 | TilesSurvive.net",
       "description": "アイアン — 役割: 攻撃 · 入手確率 · 観測ステータス",
       "url": "/ja/database/pet-system/hardhead/",
@@ -1529,6 +1725,34 @@
     {
       "language": "ja",
       "type": "database",
+      "title": "シャドウ · 鮮血の軌跡",
+      "description": "Lv.1 · 編成中の英雄の攻撃力が1.5%上昇します",
+      "url": "/ja/database/pet-system/shadow/#pet-skill-2-41"
+    },
+    {
+      "language": "ja",
+      "type": "database",
+      "title": "シャドウ · 狩猟本能",
+      "description": "Lv.1 · ペットのステータスが7.5%上昇します",
+      "url": "/ja/database/pet-system/shadow/#pet-skill-4-41"
+    },
+    {
+      "language": "ja",
+      "type": "database",
+      "title": "シャドウ · 狩猟の熱狂",
+      "description": "Lv.1 · 編成中の英雄がHP35%未満の対象を攻撃する時、攻撃力が7.5%上昇します",
+      "url": "/ja/database/pet-system/shadow/#pet-skill-3-41"
+    },
+    {
+      "language": "ja",
+      "type": "database",
+      "title": "シャドウ · 影の追跡者",
+      "description": "Lv.1 · シャドウハウンドが獲物を狙い定めます。戦闘開始時、ランダムな敵英雄1名をマークし、その対象が受けるダメージを20%増加させます。効果は10秒間持続します",
+      "url": "/ja/database/pet-system/shadow/#pet-skill-1-41"
+    },
+    {
+      "language": "ja",
+      "type": "database",
       "title": "シャドウ · ペットの入手・能力・育成 | TilesSurvive.net",
       "description": "シャドウ — 役割: 攻撃 · 入手確率 · 観測ステータス",
       "url": "/ja/database/pet-system/shadow/",
@@ -1540,6 +1764,34 @@
       "title": "スキルブック消費表 | タイルズサバイバル データベース | TilesSurvive.net",
       "description": "タイルズサバイバルのスキルブック消費表です。戦闘スキルレベル1から40までのスキルブック消費量と最終必要数量をまとめました。",
       "url": "/ja/database/skill-book/"
+    },
+    {
+      "language": "ja",
+      "type": "database",
+      "title": "スターホーン · 星幕の加護",
+      "description": "Lv.1 · 編成中の英雄のHPが3%上昇します",
+      "url": "/ja/database/pet-system/starhorn/#pet-skill-2-41"
+    },
+    {
+      "language": "ja",
+      "type": "database",
+      "title": "スターホーン · 星明りの秘奥",
+      "description": "Lv.1 · ステラディアが星の光を降り注がせ、部隊を鼓舞します。戦闘開始時、味方前列の英雄の防御力を20%、味方後列の英雄の攻撃力を8%上昇させます。効果は10秒間持続します",
+      "url": "/ja/database/pet-system/starhorn/#pet-skill-1-41"
+    },
+    {
+      "language": "ja",
+      "type": "database",
+      "title": "スターホーン · 星明りの恩寵",
+      "description": "Lv.1 · 編成中の英雄が受けるスキルダメージを2.5%軽減します",
+      "url": "/ja/database/pet-system/starhorn/#pet-skill-3-41"
+    },
+    {
+      "language": "ja",
+      "type": "database",
+      "title": "スターホーン · 星霊の祝福",
+      "description": "Lv.1 · ペットのステータスが10%上昇します",
+      "url": "/ja/database/pet-system/starhorn/#pet-skill-4-41"
     },
     {
       "language": "ja",
@@ -1661,6 +1913,34 @@
     {
       "language": "ja",
       "type": "database",
+      "title": "タテマル · 甲羅バリア",
+      "description": "Lv.1 · コガメが硬い甲羅で味方を守ります。戦闘開始時、最も近くにいる味方英雄1名に守護効果を付与し、防御力を25%上昇させ、通常攻撃で受けるダメージを10%軽減します。効果は10秒間持続します",
+      "url": "/ja/database/pet-system/buckler/#pet-skill-1-41"
+    },
+    {
+      "language": "ja",
+      "type": "database",
+      "title": "タテマル · 不屈の甲殻",
+      "description": "Lv.1 · ペットのステータスが5%上昇します",
+      "url": "/ja/database/pet-system/buckler/#pet-skill-4-41"
+    },
+    {
+      "language": "ja",
+      "type": "database",
+      "title": "タテマル · 孵化の息吹",
+      "description": "Lv.1 · 孵化時間が5%短縮されます",
+      "url": "/ja/database/pet-system/buckler/#pet-skill-3-41"
+    },
+    {
+      "language": "ja",
+      "type": "database",
+      "title": "タテマル · ぬくもりの甲羅",
+      "description": "Lv.1 · エサやりで獲得するペットEXPが2%増加します",
+      "url": "/ja/database/pet-system/buckler/#pet-skill-2-41"
+    },
+    {
+      "language": "ja",
+      "type": "database",
       "title": "タテマル · ペットの入手・能力・育成 | TilesSurvive.net",
       "description": "タテマル — 役割: 防御 · 入手確率 · 観測ステータス",
       "url": "/ja/database/pet-system/buckler/",
@@ -1694,6 +1974,34 @@
       "title": "デュエル挑戦券",
       "description": "아레나 도전권 · デュエル挑戦回数を増やす。挑戦上限を超えた回数はデュエルのシーズン更新時にリセットされる · アイテムの入手先・用途",
       "url": "/ja/database/items/#arena-ticket"
+    },
+    {
+      "language": "ja",
+      "type": "database",
+      "title": "ドド · 機敏な才覚",
+      "description": "Lv.1 · ペットのステータスが5%上昇します",
+      "url": "/ja/database/pet-system/dodo/#pet-skill-4-41"
+    },
+    {
+      "language": "ja",
+      "type": "database",
+      "title": "ドド · 全力エール",
+      "description": "Lv.1 · アライグマが小さな手を振り、仲間に声援を送ります。戦闘開始時、ランダムな味方英雄2名の攻撃力を10%上昇させます。効果は10秒間持続します",
+      "url": "/ja/database/pet-system/dodo/#pet-skill-1-41"
+    },
+    {
+      "language": "ja",
+      "type": "database",
+      "title": "ドド · 幸運の予感",
+      "description": "Lv.1 · ペットのタマゴからレジェンド品質のペットが孵化する確率が5%上昇します",
+      "url": "/ja/database/pet-system/dodo/#pet-skill-3-41"
+    },
+    {
+      "language": "ja",
+      "type": "database",
+      "title": "ドド · ひらめきサーチ",
+      "description": "Lv.1 · エサやりで獲得するペットEXPが2%増加します",
+      "url": "/ja/database/pet-system/dodo/#pet-skill-2-41"
     },
     {
       "language": "ja",
@@ -1873,6 +2181,34 @@
       "description": "タイルサバイバル英雄ヤーコブの詳細ページです。SSR英雄基準で、英雄紹介、戦闘特性、最大レベル＆星ランクステータス、星ランクボーナス、スキル、専用装備をひと目で確認できます。",
       "url": "/ja/heroes/jacob/",
       "aliases": "ヤーコブ Jacob"
+    },
+    {
+      "language": "ja",
+      "type": "database",
+      "title": "ユキマル · 潮風エール",
+      "description": "Lv.1 · 編成中の英雄の攻撃力が1%上昇します",
+      "url": "/ja/database/pet-system/snowball/#pet-skill-2-41"
+    },
+    {
+      "language": "ja",
+      "type": "database",
+      "title": "ユキマル · 波乗り追撃",
+      "description": "Lv.1 · 編成中の英雄がHP25%未満の対象を攻撃する時、攻撃力が5%上昇します",
+      "url": "/ja/database/pet-system/snowball/#pet-skill-3-41"
+    },
+    {
+      "language": "ja",
+      "type": "database",
+      "title": "ユキマル · 波しぶきアタック",
+      "description": "Lv.1 · ちびアザラシが波しぶきを巻き上げ、敵に奇襲を仕掛けます。戦闘開始時、ランダムな敵英雄1名にペット攻撃力の500%に相当する水しぶきダメージを与えます",
+      "url": "/ja/database/pet-system/snowball/#pet-skill-1-41"
+    },
+    {
+      "language": "ja",
+      "type": "database",
+      "title": "ユキマル · 海の加護",
+      "description": "Lv.1 · ペットのステータスが5%上昇します",
+      "url": "/ja/database/pet-system/snowball/#pet-skill-4-41"
     },
     {
       "language": "ja",
@@ -2090,10 +2426,38 @@
     {
       "language": "ko",
       "type": "database",
+      "title": "도도 · 격려의 환호",
+      "description": "Lv.1 · 라쿤이 작은 손을 흔들며 동료를 응원합니다. 전투 시작 시 랜덤으로 영웅 2명의 공격력을 10% 증가시키며, 10초간 지속됩니다.",
+      "url": "/ko/database/pet-system/dodo/#pet-skill-1-41"
+    },
+    {
+      "language": "ko",
+      "type": "database",
+      "title": "도도 · 기민한 본능",
+      "description": "Lv.1 · 펫 속성이 5% 증가합니다.",
+      "url": "/ko/database/pet-system/dodo/#pet-skill-4-41"
+    },
+    {
+      "language": "ko",
+      "type": "database",
+      "title": "도도 · 예리한 탐색",
+      "description": "Lv.1 · 먹이를 줄 때 펫이 획득하는 경험치가 2% 증가합니다.",
+      "url": "/ko/database/pet-system/dodo/#pet-skill-2-41"
+    },
+    {
+      "language": "ko",
+      "type": "database",
       "title": "도도 · 펫 획득·능력치·육성 | TilesSurvive.net",
       "description": "도도 — 역할: 지원 · 획득 확률 · 관측 능력치",
       "url": "/ko/database/pet-system/dodo/",
       "aliases": "도도 Dodo"
+    },
+    {
+      "language": "ko",
+      "type": "database",
+      "title": "도도 · 행운의 발견",
+      "description": "Lv.1 · 펫에그에서 전설 펫이 부화할 확률이 5% 증가합니다.",
+      "url": "/ko/database/pet-system/dodo/#pet-skill-3-41"
     },
     {
       "language": "ko",
@@ -2253,6 +2617,34 @@
     {
       "language": "ko",
       "type": "database",
+      "title": "버클러 · 견고한 본능",
+      "description": "Lv.1 · 펫 속성이 5% 증가합니다.",
+      "url": "/ko/database/pet-system/buckler/#pet-skill-4-41"
+    },
+    {
+      "language": "ko",
+      "type": "database",
+      "title": "버클러 · 등껍질 가드",
+      "description": "Lv.1 · 거북이가 단단한 등껍질을 들어서 아군을 보호합니다. 전투 시작 시 가장 가까운 아군 영웅 1명에게 수호 효과를 부여하여 방어력을 25% 증가시키고, 일반 공격으로 받는 대미지를 10% 감소시키며, 10초간 지속됩니다.",
+      "url": "/ko/database/pet-system/buckler/#pet-skill-1-41"
+    },
+    {
+      "language": "ko",
+      "type": "database",
+      "title": "버클러 · 등껍질 전환",
+      "description": "Lv.1 · 부화 시간이 5% 단축됩니다.",
+      "url": "/ko/database/pet-system/buckler/#pet-skill-3-41"
+    },
+    {
+      "language": "ko",
+      "type": "database",
+      "title": "버클러 · 따스한 등껍질",
+      "description": "Lv.1 · 먹이를 줄 때 펫이 획득하는 경험치가 2% 증가합니다.",
+      "url": "/ko/database/pet-system/buckler/#pet-skill-2-41"
+    },
+    {
+      "language": "ko",
+      "type": "database",
       "title": "버클러 · 펫 획득·능력치·육성 | TilesSurvive.net",
       "description": "버클러 — 역할: 방어 · 획득 확률 · 관측 능력치",
       "url": "/ko/database/pet-system/buckler/",
@@ -2280,6 +2672,34 @@
       "title": "베헤모스세포 소모표 | 타일서바이벌 데이터베이스 | TilesSurvive.net",
       "description": "타일서바이벌 베헤모스 세포 성급 소모표입니다. 1성부터 60성까지 단계별 소모량, 합계, 누적 수치를 한눈에 확인할 수 있습니다.",
       "url": "/ko/database/behemoth-cell/"
+    },
+    {
+      "language": "ko",
+      "type": "database",
+      "title": "별뿔이 · 별빛 소원",
+      "description": "Lv.1 · 별빛 사슴이 별빛을 뿌려 아군을 격려합니다. 전투 시작 시 아군 전방 영웅의 방어력을 20%, 후방 영웅의 공격력을 8% 증가시키며, 10초간 지속됩니다.",
+      "url": "/ko/database/pet-system/starhorn/#pet-skill-1-41"
+    },
+    {
+      "language": "ko",
+      "type": "database",
+      "title": "별뿔이 · 별빛의 가호",
+      "description": "Lv.1 · 진형 영웅의 체력이 3% 증가합니다.",
+      "url": "/ko/database/pet-system/starhorn/#pet-skill-2-41"
+    },
+    {
+      "language": "ko",
+      "type": "database",
+      "title": "별뿔이 · 별빛의 은총",
+      "description": "Lv.1 · 진형 영웅이 받는 스킬 대미지가 2.5% 감소합니다.",
+      "url": "/ko/database/pet-system/starhorn/#pet-skill-3-41"
+    },
+    {
+      "language": "ko",
+      "type": "database",
+      "title": "별뿔이 · 별빛의 축복",
+      "description": "Lv.1 · 펫 속성이 10% 증가합니다.",
+      "url": "/ko/database/pet-system/starhorn/#pet-skill-4-41"
     },
     {
       "language": "ko",
@@ -2374,10 +2794,66 @@
     {
       "language": "ko",
       "type": "database",
+      "title": "쉐도우 · 사냥의 광기",
+      "description": "Lv.1 · 진형 영웅이 체력이 35% 미만인 목표를 공격할 때 공격력이 7.5% 증가합니다.",
+      "url": "/ko/database/pet-system/shadow/#pet-skill-3-41"
+    },
+    {
+      "language": "ko",
+      "type": "database",
+      "title": "쉐도우 · 섀도우 헌터",
+      "description": "Lv.1 · 그림자 늑대가 목표를 포착합니다. 전투 시작 시 랜덤으로 적군 영웅 1명에게 표식을 남겨 목표가 받는 대미지를 20% 증가시키며, 10초간 지속됩니다.",
+      "url": "/ko/database/pet-system/shadow/#pet-skill-1-41"
+    },
+    {
+      "language": "ko",
+      "type": "database",
       "title": "쉐도우 · 펫 획득·능력치·육성 | TilesSurvive.net",
       "description": "쉐도우 — 역할: 공격 · 획득 확률 · 관측 능력치",
       "url": "/ko/database/pet-system/shadow/",
       "aliases": "쉐도우 Shadow"
+    },
+    {
+      "language": "ko",
+      "type": "database",
+      "title": "쉐도우 · 포식자의 각성",
+      "description": "Lv.1 · 펫 속성이 7.5% 증가합니다.",
+      "url": "/ko/database/pet-system/shadow/#pet-skill-4-41"
+    },
+    {
+      "language": "ko",
+      "type": "database",
+      "title": "쉐도우 · 핏빛 흔적",
+      "description": "Lv.1 · 진형 영웅의 공격력이 1.5% 증가합니다.",
+      "url": "/ko/database/pet-system/shadow/#pet-skill-2-41"
+    },
+    {
+      "language": "ko",
+      "type": "database",
+      "title": "스노우볼 · 바다의 가호",
+      "description": "Lv.1 · 펫 속성이 5% 증가합니다.",
+      "url": "/ko/database/pet-system/snowball/#pet-skill-4-41"
+    },
+    {
+      "language": "ko",
+      "type": "database",
+      "title": "스노우볼 · 파도 강타",
+      "description": "Lv.1 · 아기 물범이 파도를 일으켜 적을 기습합니다. 전투 시작 시 랜덤으로 적군 영웅 1명에게 펫 공격력의 500%만큼 물보라 대미지를 입힙니다.",
+      "url": "/ko/database/pet-system/snowball/#pet-skill-1-41"
+    },
+    {
+      "language": "ko",
+      "type": "database",
+      "title": "스노우볼 · 파도 랠리",
+      "description": "Lv.1 · 진형 영웅의 공격력이 1% 증가합니다.",
+      "url": "/ko/database/pet-system/snowball/#pet-skill-2-41"
+    },
+    {
+      "language": "ko",
+      "type": "database",
+      "title": "스노우볼 · 파도의 춤",
+      "description": "Lv.1 · 진형 영웅이 체력이 25% 미만인 목표를 공격할 때 공격력이 5% 증가합니다.",
+      "url": "/ko/database/pet-system/snowball/#pet-skill-3-41"
     },
     {
       "language": "ko",
@@ -2659,6 +3135,34 @@
       "title": "천궁의 성 · 점령 규칙 | TilesSurvive.net",
       "description": "공성은 v2.5.600부터 2시간입니다. 다음 점령·보상 수치는 2026-01-07 가이드 기준입니다: 누적 점령 90분 달성 또는 최장 누적 점령 연맹 승리. 탑 4개는 공격마다 수비 병력 2%를 줄이며 간격은 점령 지속에 따라 4분에서 1분으로 단축됩니다. 천궁 또는 탑 점령 60초마다 10,000점. 집결은 아군 5개 팀까지 참가합니다. 시작 60분 전 경계 구역 강제 이전, 50분 전부터 종료까지 구역 내 이전 무료·평화 방패 사용 불가. 총독 선물은 이벤트마다 1인 1개까지만 받을 수 있습니다. 병력 등급별 사상·처치 점수와 보상 수량표는 미확인입니다.",
       "url": "/ko/events/arcadian-conquest/"
+    },
+    {
+      "language": "ko",
+      "type": "database",
+      "title": "철두 · 돌진의 기세",
+      "description": "Lv.1 · 진형 전방 영웅의 공격력이 3.5% 증가합니다.",
+      "url": "/ko/database/pet-system/hardhead/#pet-skill-2-41"
+    },
+    {
+      "language": "ko",
+      "type": "database",
+      "title": "철두 · 전방 습격",
+      "description": "Lv.1 · 적군 전방 영웅이 받는 대미지가 3.5% 증가합니다.",
+      "url": "/ko/database/pet-system/hardhead/#pet-skill-3-41"
+    },
+    {
+      "language": "ko",
+      "type": "database",
+      "title": "철두 · 철갑 돌진",
+      "description": "Lv.1 · 멧돼지가 맹렬하게 돌진합니다. 전투 시작 시 가장 가까운 적에게 돌진하여 펫 공격력의 600%만큼 대미지를 입히고, 방어력을 25% 감소시키며, 10초간 지속됩니다.",
+      "url": "/ko/database/pet-system/hardhead/#pet-skill-1-41"
+    },
+    {
+      "language": "ko",
+      "type": "database",
+      "title": "철두 · 튼튼한 본능",
+      "description": "Lv.1 · 펫 속성이 7.5% 증가합니다.",
+      "url": "/ko/database/pet-system/hardhead/#pet-skill-4-41"
     },
     {
       "language": "ko",
@@ -3064,6 +3568,34 @@
     {
       "language": "ru",
       "type": "database",
+      "title": "Астра · Звездное благословение",
+      "description": "Lv.1 · Характеристики питомца увеличиваются на 10%.",
+      "url": "/ru/database/pet-system/starhorn/#pet-skill-4-41"
+    },
+    {
+      "language": "ru",
+      "type": "database",
+      "title": "Астра · Звездное пожелание",
+      "description": "Lv.1 · Звездный олень озаряет команду звездным светом. В начале боя повышает защиту союзных героев переднего ряда на 20% и атаку союзных героев заднего ряда на 8% в течение 10 сек.",
+      "url": "/ru/database/pet-system/starhorn/#pet-skill-1-41"
+    },
+    {
+      "language": "ru",
+      "type": "database",
+      "title": "Астра · Звездный покров",
+      "description": "Lv.1 · Здоровье задействованных героев увеличивается на 3%.",
+      "url": "/ru/database/pet-system/starhorn/#pet-skill-2-41"
+    },
+    {
+      "language": "ru",
+      "type": "database",
+      "title": "Астра · Изящество звезд",
+      "description": "Lv.1 · Полученный урон от навыка задействованных героев уменьшается на 2.5%.",
+      "url": "/ru/database/pet-system/starhorn/#pet-skill-3-41"
+    },
+    {
+      "language": "ru",
+      "type": "database",
       "title": "Астра · Получение, характеристики и развитие питомца | TilesSurvive.net",
       "description": "Астра — Ур.1 · Тренировка 0 · До превращения · Развитие",
       "url": "/ru/database/pet-system/starhorn/",
@@ -3072,10 +3604,38 @@
     {
       "language": "ru",
       "type": "database",
+      "title": "Белек · Благословение океана",
+      "description": "Lv.1 · Характеристики питомца увеличиваются на 5%.",
+      "url": "/ru/database/pet-system/snowball/#pet-skill-4-41"
+    },
+    {
+      "language": "ru",
+      "type": "database",
       "title": "Белек · Получение, характеристики и развитие питомца | TilesSurvive.net",
       "description": "Белек — Роль: Атака · Вероятность получения · Зафиксированные характеристики",
       "url": "/ru/database/pet-system/snowball/",
       "aliases": "Snowball"
+    },
+    {
+      "language": "ru",
+      "type": "database",
+      "title": "Белек · Приливной рейд",
+      "description": "Lv.1 · Атака задействованных героев увеличивается на 1%.",
+      "url": "/ru/database/pet-system/snowball/#pet-skill-2-41"
+    },
+    {
+      "language": "ru",
+      "type": "database",
+      "title": "Белек · Сокрушительная волна",
+      "description": "Lv.1 · Малыш тюлень поднимает волну и внезапно атакует. В начале боя наносит 1 случайному вражескому герою водный урон, равный 500% от атаки питомца.",
+      "url": "/ru/database/pet-system/snowball/#pet-skill-1-41"
+    },
+    {
+      "language": "ru",
+      "type": "database",
+      "title": "Белек · Танец потока",
+      "description": "Lv.1 · Когда задействованные герои атакуют цели, чье здоровье меньше 25%, их атака увеличивается на 5%.",
+      "url": "/ru/database/pet-system/snowball/#pet-skill-3-41"
     },
     {
       "language": "ru",
@@ -3212,10 +3772,66 @@
     {
       "language": "ru",
       "type": "database",
+      "title": "Додо · Природный инстинкт",
+      "description": "Lv.1 · Характеристики питомца увеличиваются на 5%.",
+      "url": "/ru/database/pet-system/dodo/#pet-skill-4-41"
+    },
+    {
+      "language": "ru",
+      "type": "database",
+      "title": "Додо · Удачная находка",
+      "description": "Lv.1 · Шанс вылупления легендарного питомца увеличивается на 5%.",
+      "url": "/ru/database/pet-system/dodo/#pet-skill-3-41"
+    },
+    {
+      "language": "ru",
+      "type": "database",
+      "title": "Додо · Умелый поиск",
+      "description": "Lv.1 · Количество опыта питомца при кормлении увеличивается на 2%.",
+      "url": "/ru/database/pet-system/dodo/#pet-skill-2-41"
+    },
+    {
+      "language": "ru",
+      "type": "database",
+      "title": "Додо · Шумная поддержка",
+      "description": "Lv.1 · Енот машет лапками, подбадривая команду. В начале боя повышает атаку 2 случайных героев на 10% в течение 10 сек.",
+      "url": "/ru/database/pet-system/dodo/#pet-skill-1-41"
+    },
+    {
+      "language": "ru",
+      "type": "database",
+      "title": "Дымок · Безумная охота",
+      "description": "Lv.1 · Когда задействованные герои атакуют цели, чье здоровье меньше 35%, их атака увеличивается на 7.5%.",
+      "url": "/ru/database/pet-system/shadow/#pet-skill-3-41"
+    },
+    {
+      "language": "ru",
+      "type": "database",
+      "title": "Дымок · Инстинкт хищника",
+      "description": "Lv.1 · Характеристики питомца увеличиваются на 7.5%.",
+      "url": "/ru/database/pet-system/shadow/#pet-skill-4-41"
+    },
+    {
+      "language": "ru",
+      "type": "database",
+      "title": "Дымок · Кровавый след",
+      "description": "Lv.1 · Атака задействованных героев увеличивается на 1.5%.",
+      "url": "/ru/database/pet-system/shadow/#pet-skill-2-41"
+    },
+    {
+      "language": "ru",
+      "type": "database",
       "title": "Дымок · Получение, характеристики и развитие питомца | TilesSurvive.net",
       "description": "Дымок — Роль: Атака · Вероятность получения · Зафиксированные характеристики",
       "url": "/ru/database/pet-system/shadow/",
       "aliases": "Shadow"
+    },
+    {
+      "language": "ru",
+      "type": "database",
+      "title": "Дымок · Теневая охота",
+      "description": "Lv.1 · Теневая гончая берет след цели. В начале боя отмечает 1 случайного вражеского героя, увеличивая получаемый целью урон на 20% в течение 10.",
+      "url": "/ru/database/pet-system/shadow/#pet-skill-1-41"
     },
     {
       "language": "ru",
@@ -3300,10 +3916,38 @@
     {
       "language": "ru",
       "type": "database",
+      "title": "Крепыш · Бронированный заряд",
+      "description": "Lv.1 · Дикий кабан бросается в яростную атаку. В начале боя таранит ближайшего врага, нанося урон, равный 600% от атаки питомца и снижая его защиту на 25% в течение 10 сек.",
+      "url": "/ru/database/pet-system/hardhead/#pet-skill-1-41"
+    },
+    {
+      "language": "ru",
+      "type": "database",
+      "title": "Крепыш · Естественная защита",
+      "description": "Lv.1 · Характеристики питомца увеличиваются на 7.5%.",
+      "url": "/ru/database/pet-system/hardhead/#pet-skill-4-41"
+    },
+    {
+      "language": "ru",
+      "type": "database",
+      "title": "Крепыш · Заряжающий дух",
+      "description": "Lv.1 · Атака задействованных героев переднего ряда увеличивается на 3.5%.",
+      "url": "/ru/database/pet-system/hardhead/#pet-skill-2-41"
+    },
+    {
+      "language": "ru",
+      "type": "database",
       "title": "Крепыш · Получение, характеристики и развитие питомца | TilesSurvive.net",
       "description": "Крепыш — Роль: Атака · Вероятность получения · Зафиксированные характеристики",
       "url": "/ru/database/pet-system/hardhead/",
       "aliases": "Hardhead Ironhead"
+    },
+    {
+      "language": "ru",
+      "type": "database",
+      "title": "Крепыш · Прорыв строя",
+      "description": "Lv.1 · Урон, полученный вражескими героями переднего ряда, увеличивается на 3.5%.",
+      "url": "/ru/database/pet-system/hardhead/#pet-skill-3-41"
     },
     {
       "language": "ru",
@@ -3836,10 +4480,38 @@
     {
       "language": "ru",
       "type": "database",
+      "title": "Торпеда · Крепкий панцирь",
+      "description": "Lv.1 · Черепаха защищает союзника своим прочным панцирем. В начале боя дает защиту ближайшему союзному герою, увеличивая его защиту на 25% и снижая полученный урон от обычных атак на 10% в течение 10 сек.",
+      "url": "/ru/database/pet-system/buckler/#pet-skill-1-41"
+    },
+    {
+      "language": "ru",
+      "type": "database",
       "title": "Торпеда · Получение, характеристики и развитие питомца | TilesSurvive.net",
       "description": "Торпеда — Роль: Защита · Вероятность получения · Зафиксированные характеристики",
       "url": "/ru/database/pet-system/buckler/",
       "aliases": "Buckler"
+    },
+    {
+      "language": "ru",
+      "type": "database",
+      "title": "Торпеда · Природная броня",
+      "description": "Lv.1 · Характеристики питомца увеличиваются на 5%.",
+      "url": "/ru/database/pet-system/buckler/#pet-skill-4-41"
+    },
+    {
+      "language": "ru",
+      "type": "database",
+      "title": "Торпеда · Трансформация панциря",
+      "description": "Lv.1 · Время вылупления снижается на 5%.",
+      "url": "/ru/database/pet-system/buckler/#pet-skill-3-41"
+    },
+    {
+      "language": "ru",
+      "type": "database",
+      "title": "Торпеда · Уютный панцирь",
+      "description": "Lv.1 · Количество опыта питомца при кормлении увеличивается на 2%.",
+      "url": "/ru/database/pet-system/buckler/#pet-skill-2-41"
     },
     {
       "language": "ru",
@@ -4293,10 +4965,38 @@
     {
       "language": "zh-tw",
       "type": "database",
+      "title": "冰團 · 浪花拍擊",
+      "description": "Lv.1 · 小海豹拍起浪花，向敵人發起突襲。戰鬥開始時，對隨機1名敵方英雄造成寵物攻擊力500%的水花傷害。",
+      "url": "/zh-tw/database/pet-system/snowball/#pet-skill-1-41"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
+      "title": "冰團 · 潮汐鼓舞",
+      "description": "Lv.1 · 編隊英雄攻擊提升1%。",
+      "url": "/zh-tw/database/pet-system/snowball/#pet-skill-2-41"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
       "title": "冰團 · 寵物取得、屬性與培養 | TilesSurvive.net",
       "description": "冰團 — 定位: 攻擊 · 取得機率 · 觀測屬性",
       "url": "/zh-tw/database/pet-system/snowball/",
       "aliases": "Snowball"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
+      "title": "冰團 · 逐浪追擊",
+      "description": "Lv.1 · 編隊英雄攻擊生命低於25%的目標時，攻擊提升5%。",
+      "url": "/zh-tw/database/pet-system/snowball/#pet-skill-3-41"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
+      "title": "冰團 · 海靈滋養",
+      "description": "Lv.1 · 寵物屬性提升5%。",
+      "url": "/zh-tw/database/pet-system/snowball/#pet-skill-4-41"
     },
     {
       "language": "zh-tw",
@@ -4360,6 +5060,34 @@
     {
       "language": "zh-tw",
       "type": "database",
+      "title": "星角 · 星靈祝福",
+      "description": "Lv.1 · 寵物屬性提升10%。",
+      "url": "/zh-tw/database/pet-system/starhorn/#pet-skill-4-41"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
+      "title": "星角 · 星幕庇護",
+      "description": "Lv.1 · 編隊英雄生命提升3%。",
+      "url": "/zh-tw/database/pet-system/starhorn/#pet-skill-2-41"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
+      "title": "星角 · 星輝潤澤",
+      "description": "Lv.1 · 編隊英雄受到技能傷害降低2.5%。",
+      "url": "/zh-tw/database/pet-system/starhorn/#pet-skill-3-41"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
+      "title": "星角 · 星輝祝願",
+      "description": "Lv.1 · 星光鹿灑下星輝鼓舞隊伍。戰鬥開始時，使己方前排英雄防禦提升20%，後排英雄攻擊提升8%，持續10秒。",
+      "url": "/zh-tw/database/pet-system/starhorn/#pet-skill-1-41"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
       "title": "星角 · 寵物取得、屬性與培養 | TilesSurvive.net",
       "description": "星角 — Lv.1 · 訓練階段0 · 變身前 · 成長資料",
       "url": "/zh-tw/database/pet-system/starhorn/",
@@ -4382,6 +5110,34 @@
     {
       "language": "zh-tw",
       "type": "database",
+      "title": "小盾 · 堅甲天成",
+      "description": "Lv.1 · 寵物屬性提升5%。",
+      "url": "/zh-tw/database/pet-system/buckler/#pet-skill-4-41"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
+      "title": "小盾 · 龜殼守護",
+      "description": "Lv.1 · 小龜撐起堅硬的龜殼。戰鬥開始時，為己方最近的1名英雄附加守護，使其防禦提高25%，受到普通攻擊傷害降低10%，持續10秒。",
+      "url": "/zh-tw/database/pet-system/buckler/#pet-skill-1-41"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
+      "title": "小盾 · 暖殼孵育",
+      "description": "Lv.1 · 餵食時，寵物獲得的經驗提升2%。",
+      "url": "/zh-tw/database/pet-system/buckler/#pet-skill-2-41"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
+      "title": "小盾 · 靈殼轉化",
+      "description": "Lv.1 · 孵化時間縮短5%。",
+      "url": "/zh-tw/database/pet-system/buckler/#pet-skill-3-41"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
       "title": "小盾 · 寵物取得、屬性與培養 | TilesSurvive.net",
       "description": "小盾 — 定位: 防禦 · 取得機率 · 觀測屬性",
       "url": "/zh-tw/database/pet-system/buckler/",
@@ -4390,10 +5146,38 @@
     {
       "language": "zh-tw",
       "type": "database",
+      "title": "小影 · 獵性覺醒",
+      "description": "Lv.1 · 寵物屬性提升7.5%。",
+      "url": "/zh-tw/database/pet-system/shadow/#pet-skill-4-41"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
+      "title": "小影 · 狩獵狂熱",
+      "description": "Lv.1 · 編隊英雄攻擊生命低於35%的目標時，攻擊提升7.5%。",
+      "url": "/zh-tw/database/pet-system/shadow/#pet-skill-3-41"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
+      "title": "小影 · 影襲獵痕",
+      "description": "Lv.1 · 影狼鎖定目標。戰鬥開始時，標記隨機1名敵方英雄，使目標受到的傷害提高20%，持續10秒。",
+      "url": "/zh-tw/database/pet-system/shadow/#pet-skill-1-41"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
       "title": "小影 · 寵物取得、屬性與培養 | TilesSurvive.net",
       "description": "小影 — 定位: 攻擊 · 取得機率 · 觀測屬性",
       "url": "/zh-tw/database/pet-system/shadow/",
       "aliases": "Shadow"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
+      "title": "小影 · 血跡追獵",
+      "description": "Lv.1 · 編隊英雄攻擊提升1.5%。",
+      "url": "/zh-tw/database/pet-system/shadow/#pet-skill-2-41"
     },
     {
       "language": "zh-tw",
@@ -4443,10 +5227,38 @@
     {
       "language": "zh-tw",
       "type": "database",
+      "title": "阿兜 · 加油歡呼",
+      "description": "Lv.1 · 浣熊揮舞小手為夥伴加油。戰鬥開始時，使隨機2名英雄攻擊提高10%，持續10秒",
+      "url": "/zh-tw/database/pet-system/dodo/#pet-skill-1-41"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
+      "title": "阿兜 · 機敏天成",
+      "description": "Lv.1 · 寵物屬性提升5%。",
+      "url": "/zh-tw/database/pet-system/dodo/#pet-skill-4-41"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
+      "title": "阿兜 · 靈敏搜尋",
+      "description": "Lv.1 · 餵食時，寵物獲得的經驗提升2%。",
+      "url": "/zh-tw/database/pet-system/dodo/#pet-skill-2-41"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
       "title": "阿兜 · 寵物取得、屬性與培養 | TilesSurvive.net",
       "description": "阿兜 — 定位: 支援 · 取得機率 · 觀測屬性",
       "url": "/zh-tw/database/pet-system/dodo/",
       "aliases": "Dodo"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
+      "title": "阿兜 · 好運尋珍",
+      "description": "Lv.1 · 寵物蛋孵出傳說品質寵物機率提升5%。",
+      "url": "/zh-tw/database/pet-system/dodo/#pet-skill-3-41"
     },
     {
       "language": "zh-tw",
@@ -4697,10 +5509,38 @@
     {
       "language": "zh-tw",
       "type": "database",
+      "title": "鐵頭 · 猛進鼓舞",
+      "description": "Lv.1 · 編隊前排英雄攻擊提升3.5%。",
+      "url": "/zh-tw/database/pet-system/hardhead/#pet-skill-2-41"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
       "title": "鐵頭 · 寵物取得、屬性與培養 | TilesSurvive.net",
       "description": "鐵頭 — 定位: 攻擊 · 取得機率 · 觀測屬性",
       "url": "/zh-tw/database/pet-system/hardhead/",
       "aliases": "Hardhead Ironhead"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
+      "title": "鐵頭 · 破陣強襲",
+      "description": "Lv.1 · 敵方前排英雄受到的傷害提升3.5%。",
+      "url": "/zh-tw/database/pet-system/hardhead/#pet-skill-3-41"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
+      "title": "鐵頭 · 厚甲頂陣",
+      "description": "Lv.1 · 野豬發起兇猛衝鋒。戰鬥開始時，衝撞最近的敵人，造成寵物攻擊力600%的傷害，並使其防禦降低25%，持續10秒。",
+      "url": "/zh-tw/database/pet-system/hardhead/#pet-skill-1-41"
+    },
+    {
+      "language": "zh-tw",
+      "type": "database",
+      "title": "鐵頭 · 厚甲天成",
+      "description": "Lv.1 · 寵物屬性提升7.5%。",
+      "url": "/zh-tw/database/pet-system/hardhead/#pet-skill-4-41"
     },
     {
       "language": "zh-tw",

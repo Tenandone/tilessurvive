@@ -97,7 +97,13 @@ if(!process.argv.includes('--source-only')) for(const lang of languages) test(`$
     assert.equal(detail.querySelectorAll('main img[src^="/img/pets/"]').length,id==='starhorn'?1:0);
     for(const image of detail.querySelectorAll('main img[src^="/img/game-40/pets/"]')) assert.equal(image.style.objectFit,'contain');
     if(id==='starhorn') {
-      assert.ok(text(detail.querySelector('main')).includes(delta.localized(copy[lang].trainingDetail,lang+'/database/pet-system/starhorn/index.html')));assert.ok(!text(detail.querySelector('main')).includes(copy[lang].obsolete));if(lang==='ko')assert.ok(text(detail.querySelector('main')).includes('별빛의 축복:'));
+      assert.ok(text(detail.querySelector('main')).includes(delta.localized(copy[lang].trainingDetail,lang+'/database/pet-system/starhorn/index.html')));assert.ok(!text(detail.querySelector('main')).includes(copy[lang].obsolete));
+      if(lang==='ko') {
+        const skill=detail.querySelector('[data-pet-skills-41="starhorn"] [data-pet-skill-slot="4"]');
+        assert.equal(text(skill.querySelector('h3')),'별빛의 축복Lv.1');
+        assert.equal(text(skill.querySelector('.ts3-pet-skill-description')),'펫 속성이 10% 증가합니다.');
+        assert.equal(text(skill.querySelector('.ts3-pet-skill-unlock')),'훈련 5단계에서 해금');
+      }
       const mainArt=detail.querySelector('.ts3-pet-stage [data-pet-main-art-40="starhorn"]'),screen=detail.querySelector('[data-starhorn-screen-40]');
       assert.equal(mainArt.getAttribute('src'),'/img/game-40/pets/starhorn.webp');assert.equal(mainArt.getAttribute('width'),'360');assert.equal(mainArt.getAttribute('height'),'492');assert.equal(mainArt.getAttribute('loading'),'eager');
       assert.equal(detail.querySelectorAll('[data-starhorn-screen-40]').length,1);assert.equal(screen.hasAttribute('open'),false);assert.equal(text(screen.querySelector('summary')),copy[lang].screenshot);assert.equal(text(screen.querySelector('p')),copy[lang].screenshotScope);

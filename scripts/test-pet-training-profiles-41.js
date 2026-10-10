@@ -28,7 +28,15 @@ test('exactly seven approved lossless imprint images have safe metadata, real ha
  assert.deepEqual(fs.readdirSync(path.join(root,'img/game-41/pet-imprints')).sort(),ids.map(id=>id+'.webp').sort());
  for(const a of imageManifest.assets){assert.deepEqual(Object.keys(a).sort(),['bytes','entity','height','id','kind','sha256','src','version','width']);assert.equal(a.id,'pet-imprint:'+a.entity);assert.equal(a.kind,'pet-imprint');assert.equal(a.src,`/img/game-41/pet-imprints/${a.entity}.webp`);assert.equal(a.version,'2.6.200');const raw=fs.readFileSync(path.join(root,a.src)),size=imageSize(raw);assert.equal(raw.length,a.bytes);assert.equal(sha(raw),a.sha256);assert.equal(size.type,'webp');assert.deepEqual([size.width,size.height,a.width,a.height],[128,128,128,128]);}
  for(const lang of langs){const d=page(lang),images=[...d.querySelectorAll('main img[data-pet-imprint-41]')];assert.equal(images.length,7);for(const [i,img] of images.entries()){assert.equal(img.getAttribute('data-pet-imprint-41'),ids[i]);assert.equal(img.src,imageManifest.assets[i].src);assert.equal(img.getAttribute('width'),'32');assert.equal(img.getAttribute('height'),'32');assert.equal(img.getAttribute('alt'),'');assert.equal(img.getAttribute('loading'),'lazy');assert(img.closest('#pet-training-items-41'));assert.equal(img.parentElement.textContent,D.pets[i].resourceNames[lang]);}}
- for(const file of ['data/foundation-40/image-assets.json',...langs.map(l=>`${l}/database/pet-system/starhorn/index.html`)])assert.equal(sha(fs.readFileSync(path.join(root,file),'utf8').replaceAll('\r\n','\n')),sha(execFileSync('git',['show',base+':'+file],{cwd:root,encoding:'utf8'}).replaceAll('\r\n','\n')),file);
+ for(const file of ['data/foundation-40/image-assets.json',...langs.map(l=>`${l}/database/pet-system/starhorn/index.html`)]) {
+  let expected=execFileSync('git',['show',base+':'+file],{cwd:root,encoding:'utf8'}).replaceAll('\r\n','\n');
+  if(file.endsWith('/starhorn/index.html')) {
+   const original=parseHTML(expected).document;
+   require('./build-pet-skills-41').applyPetSkills(original,'starhorn',file.split('/')[0]);
+   expected='<!DOCTYPE html>\n'+original.documentElement.outerHTML+'\n';
+  }
+  assert.equal(sha(fs.readFileSync(path.join(root,file),'utf8').replaceAll('\r\n','\n')),sha(expected),file);
+ }
 });
 test('actual client keeps shared pet selection, inventory labels and reset behavior synchronized',()=>{
  for(const l of langs){const {document:d,window}=parseHTML(fs.readFileSync(path.join(root,l,'database/pet-system/index.html'),'utf8')),form=d.querySelector('[data-growth-form="petTraining"]'),exp=d.querySelector('[data-growth-form="petExp"]'),select=exp.querySelector('[name="pet"]'),trainingSelect=form.querySelector('[name="pet"]'),formListeners=[],docListeners=[],resetListeners=[],expListeners=[],expResetListeners=[];let selected='starhorn',trainingSelected='starhorn',dispatches=0;

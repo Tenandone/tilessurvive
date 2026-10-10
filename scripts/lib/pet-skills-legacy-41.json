@@ -1,0 +1,42 @@
+{
+  "ko": {
+    "heading": "<h2 id=\"character-section-1\">스킬과 효과</h2>",
+    "primary": "<p>별의 소원 — 전투 시작 시 전열 방어 +20%, 후열 공격 +8%, 10초. 스킬 레벨 미상.</p>",
+    "scopeHeading": "<h2>자료와 확인 범위</h2>",
+    "scopeParagraph": "<p>전체 레벨별 비용·성급 조건·해금 시점은 제공되지 않습니다. 수치는 표시된 단계 기준입니다.</p>",
+    "combined": "<p>별의 장막: 출전 영웅 HP +3% (해금 단계 미확인). 별빛의 축복: 훈련 5단계에서 펫 능력치 +10%. 훈련 4→5단계에는 별뿔이 전용 각인 700개가 필요하며, 능력치 전달 비율은 85%에서 100%가 됩니다. 게임 2.6.200 기준입니다.</p>",
+    "retained": "훈련 4→5단계에는 별뿔이 전용 각인 700개가 필요하며, 능력치 전달 비율은 85%에서 100%가 됩니다. 게임 2.6.200 기준입니다."
+  },
+  "en": {
+    "heading": "<h2 id=\"character-section-1\">Skills &amp; effects</h2>",
+    "primary": "<p>Star Wish grants front-row DEF +20% and back-row ATK +8% for 10 seconds at battle start. Skill level unknown.</p>",
+    "scopeHeading": "<h2>Sources &amp; coverage</h2>",
+    "scopeParagraph": "<p>Full level costs, star requirements and unlock timing are unavailable. Values apply to the stages shown.</p>",
+    "combined": "<p>Star Veil: deployed hero HP +3% (unlock stage unknown). Star Blessing: pet stats +10% at training stage 5. Training from stage 4 to 5 requires 700 Starhorn exclusive imprints and raises the stat transfer rate from 85% to 100%. Applies to game version 2.6.200.</p>",
+    "retained": "Training from stage 4 to 5 requires 700 Starhorn exclusive imprints and raises the stat transfer rate from 85% to 100%. Applies to game version 2.6.200."
+  },
+  "ja": {
+    "heading": "<h2 id=\"character-section-1\">スキルと効果</h2>",
+    "primary": "<p>Star Wish：戦闘開始時に前列の防御+20%、後列の攻撃+8%を10秒間付与します。スキルレベルは不明です。</p>",
+    "scopeHeading": "<h2>出典と確認範囲</h2>",
+    "scopeParagraph": "<p>全レベルの費用・星ランク条件・解放時期は未掲載です。数値は表示された段階に適用されます。</p>",
+    "combined": "<p>星の幕：出撃英雄HP+3%（解放段階未確認）。星の祝福：訓練5段階でペット能力+10%。訓練4→5段階にはStarhornの専用刻印700個が必要で、能力値の引き継ぎ率は85%から100%になります。ゲーム2.6.200時点。</p>",
+    "retained": "訓練4→5段階にはStarhornの専用刻印700個が必要で、能力値の引き継ぎ率は85%から100%になります。ゲーム2.6.200時点。"
+  },
+  "ru": {
+    "heading": "<h2 id=\"character-section-1\">Навыки и эффекты</h2>",
+    "primary": "<p>Star Wish в начале боя даёт переднему ряду +20% защиты, заднему +8% атаки на 10 секунд. Уровень навыка неизвестен.</p>",
+    "scopeHeading": "<h2>Источники и полнота данных</h2>",
+    "scopeParagraph": "<p>Полные затраты по уровням, условия звёзд и сроки открытия недоступны. Значения относятся к указанным этапам.</p>",
+    "combined": "<p>Звёздная завеса: здоровье назначенных героев +3% (этап открытия неизвестен). Звёздное благословение: характеристики питомца +10% на этапе тренировки 5. Переход с этапа тренировки 4 на 5 требует 700 особых отпечатков Астра и повышает долю передаваемых характеристик с 85% до 100%. Для версии игры 2.6.200.</p>",
+    "retained": "Переход с этапа тренировки 4 на 5 требует 700 особых отпечатков Астра и повышает долю передаваемых характеристик с 85% до 100%. Для версии игры 2.6.200."
+  },
+  "zh-tw": {
+    "heading": "<h2 id=\"character-section-1\">技能與效果</h2>",
+    "primary": "<p>Star Wish：戰鬥開始時，前排防禦+20%、後排攻擊+8%，持續10秒。技能等級不明。</p>",
+    "scopeHeading": "<h2>來源與確認範圍</h2>",
+    "scopeParagraph": "<p>未提供完整等級費用、升星條件與解鎖時間。數值僅適用於所標示的階段。</p>",
+    "combined": "<p>星之帷幕：出戰英雄HP+3%（解鎖階段待確認）。星之祝福：訓練5階寵物屬性+10%。訓練4→5階需要700個Starhorn專屬刻印，屬性傳遞比例由85%提升至100%。適用於遊戲2.6.200。</p>",
+    "retained": "訓練4→5階需要700個Starhorn專屬刻印，屬性傳遞比例由85%提升至100%。適用於遊戲2.6.200。"
+  }
+}

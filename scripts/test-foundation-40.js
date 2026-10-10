@@ -372,7 +372,7 @@ for (const lang of langs) for (const item of explorer.items) {
   check(indexed?.language === lang && indexed.title === localized[lang][item.id], 'Localized item search entry ' + url);
   check(!!load(path.join(root, lang, 'database/items/index.html')).getElementById(item.id), 'Item search anchor destination ' + url);
 }
-check(same(search.items.map(item => item.url).sort(), [...searchOld.items.map(item => item.url), ...addedPages.map(routeFor), ...langs.flatMap(lang => explorer.items.map(item => `/${lang}/database/items/#${item.id}`)), ...require('./lib/search-additions-41').entries().map(item=>item.url)].sort()), 'Exact approved page, item, gear-comparison and pet-training search destinations');
+check(same(search.items.map(item => item.url).sort(), [...searchOld.items.map(item => item.url), ...addedPages.map(routeFor), ...langs.flatMap(lang => explorer.items.map(item => `/${lang}/database/items/#${item.id}`)), ...require('./lib/search-additions-41').entries().map(item=>item.url), ...langs.flatMap(lang=>require('../data/foundation-40/pet-skills-41.json').skills.map(s=>`/${lang}/database/pet-system/${s.pet}/#pet-skill-${s.slot}-41`))].sort()), 'Exact approved page, item, gear-comparison, pet-training and pet-skill search destinations');
 for (const file of ['js/foundation-40.js', 'js/foundation-40-math.js', 'js/daily-missions-40.js','js/pet-exp-profiles-40.js','js/sea-hero-growth-40.js']) {
   try { new vm.Script(read(root, file)); counts.scriptSyntax++; check(true, ''); } catch (e) { check(false, 'New JS syntax ' + file + ': ' + e.message); }
 }

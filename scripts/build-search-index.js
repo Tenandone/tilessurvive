@@ -69,6 +69,19 @@ for (const item of require('./lib/search-additions-41').entries()) {
   if (!fs.existsSync(page) || !fs.readFileSync(page, 'utf8').includes(`id="${anchor}"`)) throw new Error(`Missing reviewed search anchor: ${item.url}`);
   items.push(item);
 }
+// These descriptions are already visible on the six reviewed pet detail pages.
+const petSkills = require('../data/foundation-40/pet-skills-41.json');
+const petNames = require('../data/foundation-40/official-character-locales.json').pets;
+for (const language of LANGS) for (const skill of petSkills.skills) {
+  const route = `/${language}/database/pet-system/${skill.pet}/`;
+  const anchor = `pet-skill-${skill.slot}-41`;
+  const html = fs.readFileSync(path.join(ROOT, route, 'index.html'), 'utf8');
+  if (!html.includes(`id="${anchor}"`)) throw new Error(`Missing pet skill anchor: ${route}#${anchor}`);
+  const pet = petNames.find(p => p.id === skill.pet);
+  if (!pet || skill.level !== 1) throw new Error('Unreviewed pet skill search record');
+  items.push({ language, type: 'database', title: `${pet.names[language]} · ${skill.names[language]}`,
+    description: `Lv.1 · ${skill.description[language]}`, url: `${route}#${anchor}` });
+}
 items.sort((a, b) => a.language.localeCompare(b.language) || a.title.localeCompare(b.title));
 const output = { generatedAt: new Date().toISOString(), itemCount: items.length, items };
 const target = path.join(ROOT, "data", "search-index.json");
