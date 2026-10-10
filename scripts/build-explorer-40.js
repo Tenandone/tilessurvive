@@ -10,6 +10,8 @@ const node=(d,s)=>{const t=d.createElement('template');t.innerHTML=s;return t.co
 const assert=(v,m)=>{if(!v)throw Error(m)};
 assert(itemIcons.size===approvedItemIcons.size,'Missing approved item icon');
 for(const [id,asset]of itemIcons)assert(asset.id==='item:'+id&&asset.src==='/img/game-40/items/'+id+'.webp'&&Number.isInteger(asset.width)&&asset.width>0&&Number.isInteger(asset.height)&&asset.height>0&&fs.existsSync(path.join(root,asset.src)),'Invalid approved item icon '+id);
+const {validateItemIcons}=require('./lib/item-icon-assets-41');
+for(const [id,asset]of validateItemIcons(require('../data/foundation-40/item-icons-41.json'))){assert(!itemIcons.has(id),'Duplicate item icon '+id);itemIcons.set(id,asset);}
 const itemIcon=id=>{const asset=itemIcons.get(id);return asset?`<img class="ts40-item-icon" src="${asset.src}" width="${asset.width}" height="${asset.height}" alt="" aria-hidden="true" loading="lazy" decoding="async">`:'';};
 const itemUseText=require('./lib/item-use-text-40');
 assert(D.items.length===new Set(D.items.map(i=>i.id)).size,'Duplicate items');

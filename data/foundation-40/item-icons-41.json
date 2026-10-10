@@ -1,0 +1,93 @@
+{
+  "version": 1,
+  "assets": [
+    {
+      "id": "item:reforge-hammer",
+      "kind": "item",
+      "entity": "reforge-hammer",
+      "src": "/img/game-41/items/reforge-hammer.webp",
+      "version": "2.6.200",
+      "width": 128,
+      "height": 128,
+      "bytes": 10876,
+      "sha256": "af7f972364924bbb165d2a69936bbe4b3402f6ae645834d920b656e651c08f6f"
+    },
+    {
+      "id": "item:advanced-recruitment-token",
+      "kind": "item",
+      "entity": "advanced-recruitment-token",
+      "src": "/img/game-41/items/advanced-recruitment-token.webp",
+      "version": "2.6.200",
+      "width": 128,
+      "height": 128,
+      "bytes": 15214,
+      "sha256": "7b0be36ec88b18663e44e4962a37041c29d060ab6bfcb6b3c2488452703ffcfa"
+    },
+    {
+      "id": "item:stamina-10",
+      "kind": "item",
+      "entity": "stamina-10",
+      "src": "/img/game-41/items/stamina-10.webp",
+      "version": "2.6.200",
+      "width": 128,
+      "height": 128,
+      "bytes": 11858,
+      "sha256": "0dc95782e7902c5a65cce966c31b25425e9c23fdf0a9dbb447f35c9247de27f2"
+    },
+    {
+      "id": "item:arena-ticket",
+      "kind": "item",
+      "entity": "arena-ticket",
+      "src": "/img/game-41/items/arena-ticket.webp",
+      "version": "2.6.200",
+      "width": 128,
+      "height": 128,
+      "bytes": 14142,
+      "sha256": "f37492d56d380855f6e98720f19bda865c582b1d74dc10de7deeccd5eecd1888"
+    },
+    {
+      "id": "item:normal-recruitment-coin",
+      "kind": "item",
+      "entity": "normal-recruitment-coin",
+      "src": "/img/game-41/items/normal-recruitment-coin.webp",
+      "version": "2.6.200",
+      "width": 128,
+      "height": 128,
+      "bytes": 11054,
+      "sha256": "e629fb02264903626b524ac1f5be03ce8f1edb397d9d82b53627172168b2bc43"
+    },
+    {
+      "id": "item:wood-100k",
+      "kind": "item",
+      "entity": "wood-100k",
+      "src": "/img/game-41/items/wood-100k.webp",
+      "version": "2.6.200",
+      "width": 128,
+      "height": 128,
+      "bytes": 14490,
+      "sha256": "ef9af51030f55eab54a26c04a8fb3279db65abbe7f1b9cc30bb7c2201f16fc09"
+    },
+    {
+      "id": "item:epic-hero-fragment",
+      "kind": "item",
+      "entity": "epic-hero-fragment",
+      "src": "/img/game-41/items/epic-hero-fragment.webp",
+      "version": "2.6.200",
+      "width": 256,
+      "height": 256,
+      "bytes": 40170,
+      "sha256": "506632d6ee4c85f2951f3c1beabb1f230a0993f878fbd90816c22f7712e14ee2"
+    },
+    {
+      "id": "item:hero-exp-10k",
+      "kind": "item",
+      "entity": "hero-exp-10k",
+      "src": "/img/game-41/items/hero-exp-10k.webp",
+      "version": "2.6.200",
+      "width": 128,
+      "height": 128,
+      "bytes": 11626,
+      "sha256": "bebd82031a2c61c2c0d3fb7a091aab4f7662362684d47f1719e440d4a40622a3"
+    }
+  ]
+}

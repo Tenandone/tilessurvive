@@ -79,14 +79,16 @@ test('translated item labels retain English source identity and source/use links
     for(const link of d.querySelectorAll('[data-item-entry] a[href^="/"]')){const target=new URL(link.getAttribute('href'),'https://tilessurvive.net');assert(target.pathname.startsWith('/'+lang+'/'));assert(fs.existsSync(path.join(root,target.pathname,'index.html')));}
   }
 });
-test('eight approved item images are rendered with exact asset dimensions, hashes and accessible adjacent labels',()=>{
-  const expected=oldIds;
-  const manifest=require('../data/foundation-40/image-assets.json');
+test('sixteen approved item images preserve all eight original assets and leave both unbound entries image-free',()=>{
+  const added=require('../data/foundation-40/item-icons-41.json').assets;
+  const expected=[...oldIds,...added.map(a=>a.entity)];
+  assert.deepEqual(added.map(a=>a.entity),['reforge-hammer','advanced-recruitment-token','stamina-10','arena-ticket','normal-recruitment-coin','wood-100k','epic-hero-fragment','hero-exp-10k']);
+  const manifest={assets:[...require('../data/foundation-40/image-assets.json').assets,...added]};
   for(const id of expected){
     const asset=manifest.assets.find(a=>a.id==='item:'+id),bytes=fs.readFileSync(path.join(root,asset.src)),size=imageSize(bytes);
     assert.equal(bytes.length,asset.bytes);assert.equal(crypto.createHash('sha256').update(bytes).digest('hex'),asset.sha256);
     assert.equal(size.width,asset.width);assert.equal(size.height,asset.height);assert.equal(size.type,'webp');
     for(const {lang,document:d}of docs){const item=d.getElementById(id),image=item.querySelector('summary img');assert(image);assert.equal(image.getAttribute('src'),asset.src);assert.equal(Number(image.getAttribute('width')),asset.width);assert.equal(Number(image.getAttribute('height')),asset.height);assert.equal(image.getAttribute('alt'),'');assert.equal(image.getAttribute('loading'),'lazy');assert(item.querySelector('summary').textContent.includes(C[lang][id]));}
   }
-  for(const {document:d}of docs){assert.equal(d.querySelectorAll('[data-item-entry] img').length,8);for(const item of D.items.filter(i=>!expected.includes(i.id)))assert.equal(d.getElementById(item.id).querySelectorAll('img').length,0);}
+  for(const {document:d}of docs){assert.equal(d.querySelectorAll('[data-item-entry] img').length,16);for(const item of D.items.filter(i=>!expected.includes(i.id)))assert.equal(d.getElementById(item.id).querySelectorAll('img').length,0);}
 });

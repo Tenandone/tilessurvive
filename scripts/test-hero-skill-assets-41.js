@@ -52,10 +52,24 @@ test('120 complete page DOMs differ only in 940 approved image attribute sets',(
  assert.equal(count,940);assert(B.pages.includes('en/heroes/tazan/index.html'));assert(!B.pages.includes('en/heroes/tarzan/index.html'));
 });
 
-test('all unrelated HTML, all fourteen retained skills, runtime styles and search remain byte-exact',()=>{
+test('unrelated HTML and retained skills stay exact, with only eight approved item images on five catalog pages',()=>{
  let retained=0;
  for(const [file,baseline] of original){
   if(B.pages.includes(file))continue;
+  if(/^(ko|en|ja|ru|zh-tw)\/database\/items\/index\.html$/.test(file)){
+   const old=doc(baseline),current=doc(read(file)),items=require('../data/foundation-40/item-icons-41.json');
+   assert.equal(sha(lf(read('data/foundation-40/item-icons-41.json'))),'0b4129ea5bb68127ccb21a753843227efb95e54ed66b265644a183f23ff73808');
+   assert.equal(items.assets.length,8);
+   for(const a of items.assets){
+    const previous=old.getElementById(a.entity),entry=current.getElementById(a.entity);assert(previous&&entry);assert.equal(previous.querySelectorAll('img').length,0);
+    const images=entry.querySelectorAll('img');assert.equal(images.length,1);const image=images[0];
+    assert.equal(image.parentElement.className,'ts40-item-label');assert.equal(image.parentElement.parentElement.tagName,'SUMMARY');
+    assert.deepEqual(attributes(image),{class:'ts40-item-icon',src:a.src,width:String(a.width),height:String(a.height),alt:'','aria-hidden':'true',loading:'lazy',decoding:'async'});
+    image.remove();
+   }
+   assert.equal(current.documentElement.outerHTML,old.documentElement.outerHTML,file+' every other catalog node remains exact');
+   continue;
+  }
   assert.equal(lf(read(file)),lf(baseline),file);
   if(/^ko\/heroes\/(dave|lagnar|undine|knotty)\/index.html$/.test(file))retained+=doc(read(file)).querySelectorAll('[data-character-skills] .ts-skill').length;
  }
