@@ -70,7 +70,7 @@ test('unrelated HTML and retained skills stay exact, with only eight approved it
    assert.equal(current.documentElement.outerHTML,old.documentElement.outerHTML,file+' every other catalog node remains exact');
    continue;
   }
-  assert.equal(lf(read(file)),lf(baseline),file);
+  const beast=require('./build-behemoth-assets-41'),art=require('../data/foundation-40/behemoth-assets-41.json');const expected=beast.langs.some(l=>beast.routes.some(r=>file===l+'/'+r))?beast.render(lf(baseline),art):lf(baseline);assert.equal(lf(read(file)),expected,file);
   if(/^ko\/heroes\/(dave|lagnar|undine|knotty)\/index.html$/.test(file))retained+=doc(read(file)).querySelectorAll('[data-character-skills] .ts-skill').length;
  }
  assert.equal(retained,14);

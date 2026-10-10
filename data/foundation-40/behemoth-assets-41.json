@@ -1,0 +1,65 @@
+{
+  "version": 1,
+  "assets": [
+    {
+      "id": "behemoth:legend-griffin",
+      "entity": "legend-griffin",
+      "kind": "behemoth-portrait",
+      "version": "2.6.200",
+      "previousSrc": "/img/behemoths/legend-griffin.png",
+      "src": "/img/game-41/behemoths/legend-griffin.webp",
+      "width": 512,
+      "height": 512,
+      "bytes": 225438,
+      "sha256": "e3d32e2d877af89aed161c20807538d93353e83d2d3b65c47d7bfa8a539352e3"
+    },
+    {
+      "id": "behemoth:marine-drake",
+      "entity": "marine-drake",
+      "kind": "behemoth-portrait",
+      "version": "2.6.200",
+      "previousSrc": "/img/behemoths/marine-drake.png",
+      "src": "/img/game-41/behemoths/marine-drake.webp",
+      "width": 512,
+      "height": 512,
+      "bytes": 227104,
+      "sha256": "1b4e850e47fac5f6b70611abfe41a5254ea576201030ecb9ea4d949c84d19066"
+    },
+    {
+      "id": "behemoth:behemoth-cell",
+      "entity": "behemoth-cell",
+      "kind": "behemoth-material",
+      "version": "2.6.200",
+      "previousSrc": "/img/behemoths/behemoth-cell.png",
+      "src": "/img/game-41/behemoths/behemoth-cell.webp",
+      "width": 128,
+      "height": 128,
+      "bytes": 12228,
+      "sha256": "c5281df59493644b59ec3c204cf9591e0406f09ec57be4814d4d39c9d1f50356"
+    },
+    {
+      "id": "behemoth:behemoth-serum-partial",
+      "entity": "behemoth-serum-partial",
+      "kind": "behemoth-material",
+      "version": "2.6.200",
+      "previousSrc": "/img/behemoths/behemoth-serum-partial.png",
+      "src": "/img/game-41/behemoths/behemoth-serum-partial.webp",
+      "width": 128,
+      "height": 128,
+      "bytes": 9122,
+      "sha256": "425b56d487316be66a7ad512d6032f5b2c7ae3c6666571e2af90f7af879d5c38"
+    },
+    {
+      "id": "behemoth:active-protein",
+      "entity": "active-protein",
+      "kind": "behemoth-material",
+      "version": "2.6.200",
+      "previousSrc": "/img/behemoths/active-protein.png",
+      "src": "/img/game-41/behemoths/active-protein.webp",
+      "width": 128,
+      "height": 128,
+      "bytes": 12032,
+      "sha256": "fb78a70261d61b54d4f3e5a8f8bdbd3df203e99578805f50e4bcb8c6a7fd6bbd"
+    }
+  ]
+}

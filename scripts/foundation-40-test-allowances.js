@@ -28,6 +28,8 @@ function reviewedHeroSkillImages(document,file){
  return document;
 }
 function image(file,src){
+ const behemoth=require('./build-behemoth-assets-41'),art=require('../data/foundation-40/behemoth-assets-41.json');
+ if(behemoth.langs.some(l=>behemoth.routes.some(r=>file===l+'/'+r))){const a=art.assets.find(a=>a.previousSrc===src);if(a)return a.src;}
  const skill=heroSkillAssets.find(a=>heroSkillRoute(file,a)&&a.previousSrc===src);if(skill)return skill.src;
  const portrait=require('../data/foundation-40/hero-portrait-assets-41.json').assets.find(a=>new RegExp('/heroes/'+(file.startsWith('en/')&&a.entity==='tarzan'?'tazan':a.entity)+'/index\\.html$').test(file));
  if(portrait&&src===(portrait.entity==='knotty'?'/img/heroes/knotty-game.webp':'/img/heroes/'+portrait.entity+'.webp'))return portrait.src;

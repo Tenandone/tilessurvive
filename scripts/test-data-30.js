@@ -84,7 +84,7 @@ for(const lang of languages){
     const before=beforeDocument(rel);
     for(const card of before.querySelectorAll('.building-card,.behemoth-card,.tool-card.is-linked')){
      const name=card.querySelector('h3')?.textContent,match=entries.find(n=>n.querySelector('h3')?.textContent===name);ok(match,rel+' original catalog name '+name);
-     if(match){for(const p of card.querySelectorAll('p'))ok(match.textContent.includes(p.textContent),rel+' original item description preserved');const src=card.querySelector('img')?.getAttribute('src');if(src)ok(match.querySelector(`img[src="${src}"]`),rel+' original item image preserved');}
+     if(match){for(const p of card.querySelectorAll('p'))ok(match.textContent.includes(p.textContent),rel+' original item description preserved');const src=card.querySelector('img')?.getAttribute('src');if(src){const reviewed=require('./foundation-40-test-allowances').image(rel,src);ok(match.querySelector(`img[src="${reviewed}"]`),rel+' original or exactly reviewed item image preserved');}}
     }
    }
    for(const link of d.querySelectorAll('.ts3-catalog-data a')){
