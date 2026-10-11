@@ -72,6 +72,10 @@ function render(source, translate, route) {
     translate=(raw,context)=>{const text=clean(raw),value=scoped.exact[text];return typeof value==='string'?raw.replace(raw.trim(),germanNumbers(text,value)):inherited(raw,context);};
   }
   const {document} = parseHTML(source);
+  // The Power Plant section has reviewed copy in all six languages. Do not
+  // feed its localized number buttons or inline model through the EN catalog.
+  const powerPlantOwned=route==='buildings/power-plant/index.html'&&document.querySelector('[data-power-plant-original]');
+  if(powerPlantOwned){const slot=document.createElement('section');slot.setAttribute('data-power-plant-original','');powerPlantOwned.replaceWith(slot);}
   require('./content-60-owned').strip(document);
   require('./build-pet-skill-levels').stripOwnedSections(document, 'en');
   require('./strip-refinement-51').strip(document);
@@ -106,7 +110,8 @@ function render(source, translate, route) {
   const langNav=document.querySelector('.ts3-language nav');
   if(langNav){for(const a of langNav.querySelectorAll('a')){if(a.lang==='de')a.remove();else a.removeAttribute('aria-current');}const a=document.createElement('a');a.href='/de/'+route.replace(/index\.html$/,'');a.lang='de';a.setAttribute('hreflang','de');a.textContent='Deutsch';a.setAttribute('aria-current','page');langNav.append(a);document.querySelector('.ts3-language summary').textContent='DE';}
   for(const item of document.querySelectorAll('[data-pet-name]')){const n=item.querySelector('h3')?.textContent;if(n)item.dataset.petName+=' '+n;}
-  return document.toString();
+  const output=document.toString();
+  return powerPlantOwned?require('./build-power-plant-original').project(output,'de/'+route):output;
 }
 function addBuildingCopy(catalog){
   // Building UI is owned by the six-language 5.3 renderer; reuse its reviewed copy.

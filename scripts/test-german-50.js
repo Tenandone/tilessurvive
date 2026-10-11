@@ -14,6 +14,13 @@ const strip=d=>{require('./strip-refinement-51').strip(d);require('./build-pet-s
 for(const route of JSON.parse(fs.readFileSync(path.join(R,'data/product-50/german-routes.json'),'utf8'))){
  const source=fs.readFileSync(path.join(R,'en',route),'utf8');
  const en=parseHTML(source).document,de=parseHTML(G.render(source,translate,route)).document;require('./content-60-owned').strip(en);strip(en);
+ // This six-language owner has an independent exact-copy contract. Verify its
+ // complete EN and DE sections before excluding it from the generic translator
+ // lexeme test; all other cells and all other routes retain the existing tests.
+ if(route==='buildings/power-plant/index.html'){
+  const power=require('./build-power-plant-original'),signature=require('./client-truth-52-test-allowances').signature;
+  for(const [lang,d] of [['en',en],['de',de]]){const owned=d.querySelector('[data-power-plant-original]');assert(owned,'Power Plant owned section '+lang);eq(signature(owned),signature(parseHTML(power.render(lang)).document.querySelector('[data-power-plant-original]')),'exact owned Power Plant '+lang);const payload=JSON.parse(owned.querySelector('[data-power-plant-model]').textContent);eq(payload.model,power.model,'same single baseline '+lang);owned.remove();}
+ }
  eq(de.documentElement.lang,'de',route+' language');
  const ec=[...en.querySelectorAll('td')],dc=[...de.querySelectorAll('td')];eq(ec.length,dc.length,route+' cells');
  ec.forEach((e,i)=>{eq(W.sourceValue(dc[i]),e.textContent.trim(),route+' raw cell '+i);cells++;

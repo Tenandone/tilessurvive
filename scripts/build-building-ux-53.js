@@ -26,7 +26,15 @@ function asset(d,file,detail){
  for(const asset of ['css/building-ux-53.css',...(detail?['js/building-ux-53.js']:[])]){const n=d.createElement(asset.endsWith('.css')?'link':'script');n.setAttribute('data-building-ux-53-asset','');const url='/'+asset+'?v='+crypto.createHash('sha256').update(fs.readFileSync(path.join(root,asset))).digest('hex').slice(0,12);if(n.tagName==='LINK'){n.rel='stylesheet';n.href=url;}else{n.src=url;n.defer=true;}d.head.append(n);}
  d.documentElement.setAttribute('data-building-ux-53',detail?'detail':'catalog');
 }
+function detailShell(d,lang){const t=copy[lang];
+ d.querySelectorAll('.building-detail-nav-53[data-building-ux-53-generated],.building-scroll-note-53[data-building-ux-53-generated]').forEach(n=>n.remove());
+ const nav=d.createElement('nav');nav.className='building-detail-nav-53';nav.setAttribute('data-building-ux-53-generated','');nav.setAttribute('aria-label',t.detail);nav.innerHTML=`<a href="/${lang}/buildings/">← ${esc(t.back)}</a><a href="#upgrade-sheet">${esc(t.sheet)}</a>`;
+ const hero=d.querySelector('main .hero');if(hero)hero.after(nav);
+ for(const wrap of d.querySelectorAll('main .ts-table-wrap')){const table=wrap.querySelector('table');if(!table||!table.querySelector('tbody tr')||table.closest('.ts3-table-duplicate,[data-growth-research-50]'))continue;wrap.setAttribute('data-building-table-53','');const note=d.createElement('p');note.className='building-scroll-note-53';note.setAttribute('data-building-ux-53-generated','');note.textContent=t.scroll;wrap.before(note);}
+ d.documentElement.setAttribute('data-building-level-label-53',t.level);asset(d,'',true);
+}
 function detail(html,lang,slug){const d=parseHTML(html).document,t=copy[lang],c=coverage(slug,d);
+ if(slug==='power-plant')return {html:require('./build-power-plant-original').project(html,`${lang}/buildings/${slug}/index.html`),coverage:c};
  // Keep the independently scoped profile/rank sheet when the legacy UX build is rerun.
  if(d.querySelector('[data-building-growth-60]'))return {html:require('./build-building-growth-60').project(html,`${lang}/buildings/${slug}/index.html`),coverage:c};
  for(const n of d.querySelectorAll('[data-building-ux-53-anchor]')){n.removeAttribute('id');n.removeAttribute('tabindex');n.removeAttribute('data-building-ux-53-anchor');}
@@ -41,10 +49,7 @@ function detail(html,lang,slug){const d=parseHTML(html).document,t=copy[lang],c=
  intro.innerHTML=`${c.kind==='cost'?'':`<h2 id="upgrade-sheet" tabindex="-1">${esc(t.title)}</h2>`}<p class="building-range-53">${esc(t.known)} · ${esc(c.range?c.range+' · '+t[c.kind]:t.unknown)}</p>${c.kind==='cost'?'':`<p>${esc(c.kind==='unknown'?t.missing:t.notice)}</p>`}`;
  if(c.kind==='cost'){const heading=target.querySelector('h2');heading.id='upgrade-sheet';heading.setAttribute('tabindex','-1');heading.setAttribute('data-building-ux-53-anchor','');}
  target.prepend(intro);
- const nav=d.createElement('nav');nav.className='building-detail-nav-53';nav.setAttribute('data-building-ux-53-generated','');nav.setAttribute('aria-label',t.detail);nav.innerHTML=`<a href="/${lang}/buildings/">← ${esc(t.back)}</a><a href="#upgrade-sheet">${esc(t.sheet)}</a>`;
- const hero=d.querySelector('main .hero');if(hero)hero.after(nav);
- for(const wrap of d.querySelectorAll('main .ts-table-wrap')){const table=wrap.querySelector('table');if(!table||!table.querySelector('tbody tr')||table.closest('.ts3-table-duplicate,[data-growth-research-50]'))continue;wrap.setAttribute('data-building-table-53','');const note=d.createElement('p');note.className='building-scroll-note-53';note.setAttribute('data-building-ux-53-generated','');note.textContent=t.scroll;wrap.before(note);}
- d.documentElement.setAttribute('data-building-level-label-53',t.level);asset(d,'',true);return {html:'<!DOCTYPE html>\n'+d.documentElement.outerHTML+'\n',coverage:c};
+ detailShell(d,lang);return {html:'<!DOCTYPE html>\n'+d.documentElement.outerHTML+'\n',coverage:c};
 }
 function catalog(html,lang,entries){const d=parseHTML(html).document,t=copy[lang];
  for(const card of d.querySelectorAll('.building-card')){if(card.hasAttribute('data-building-phase2-card'))continue;const body=card.querySelector('.building-body'),link=body.querySelector('.building-link'),href=link.getAttribute('href'),slug=href.split('/').filter(Boolean).at(-1),c=entries[slug];if(!c)throw Error('Missing detail coverage '+slug);
@@ -58,4 +63,4 @@ function build(){let changed=0;for(const lang of art.languages){const entries={}
  const file=path.join(root,lang,'buildings/index.html'),before=fs.readFileSync(file,'utf8'),after=catalog(before,lang,entries);if(before!==after){fs.writeFileSync(file,after);changed++;}}
  console.log(JSON.stringify({buildingUX:'5.3',pages:84,changed}));return changed;
 }
-module.exports={build,coverage,detail,catalog,copy};if(require.main===module)build();
+module.exports={build,coverage,detail,detailShell,catalog,copy};if(require.main===module)build();

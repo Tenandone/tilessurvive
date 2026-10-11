@@ -1,0 +1,488 @@
+{
+  "schemaVersion": 1,
+  "defaultLanguage": "ko",
+  "supportedLanguages": [
+    "ko",
+    "en",
+    "ja",
+    "ru",
+    "zh-tw",
+    "de"
+  ],
+  "locales": {
+    "ko": {
+      "htmlLang": "ko",
+      "numberLocale": "ko",
+      "languageName": "한국어",
+      "buildingName": "발전소",
+      "resources": [
+        "목재",
+        "식량",
+        "금속",
+        "연료"
+      ],
+      "buildingNames": {
+        "800003": "목재 공방",
+        "800007": "1호 병영",
+        "800008": "2호 병영",
+        "800009": "3호 병영"
+      },
+      "labels": {
+        "pageTitle": "발전소 업그레이드 | TilesSurvive.net",
+        "guide": "건물 가이드",
+        "skip": "요구량으로 이동",
+        "buildings": "건물",
+        "language": "언어",
+        "heading": "발전소 업그레이드",
+        "subtitle": "자원과 선행 건물을 레벨별로 확인하세요.",
+        "requirements": "레벨별 요구량",
+        "level": "레벨",
+        "allLevels": "전체 · Lv.1–30",
+        "levelDetail": "Lv.30 · 상세 확인",
+        "exactValues": "정확한 값 표시",
+        "capture": "캡처용",
+        "levelHeader": "레벨",
+        "conditions": "선행 건물",
+        "time": "기본 시간",
+        "newConstruction": "신규 건설",
+        "stage": "단계",
+        "none": "없음",
+        "unknown": "미확인",
+        "exactValue": "정확한 값",
+        "showExactValue": "정확한 값 보기",
+        "close": "닫기",
+        "done": "확인",
+        "totals": "선택 구간의 합계 보기",
+        "source": "출처와 기준 보기",
+        "sourceLink": "TilesSurvive.net 발전소",
+        "resourceUnit": "자원 단위: 개",
+        "footer": "TilesSurvive.net · 발전소 가이드",
+        "levelPrefix": "Lv.",
+        "power": "전투력"
+      },
+      "messages": {
+        "variation": "건설 자원과 시간은 버프가 적용되지 않은 기본 데이터 기준입니다. 실제 게임에서는 발전도, 연구 및 각종 효과에 따라 달라질 수 있습니다.",
+        "numberHint": "숫자를 누르면 정확한 값을 볼 수 있어요.",
+        "numberLegend": "K=천 · M=백만 · 0=없음 · 미확인=자료 없음",
+        "loading": "자료를 불러오는 중입니다.",
+        "loadError": "자료를 불러오지 못했습니다. 페이지를 새로고침해 주세요.",
+        "totalsNote": "선택한 목표 레벨을 모두 합산합니다(Lv.1 포함). 선행 건물 자체 비용은 제외하며 개인 효과는 적용하지 않습니다.",
+        "emptyTotals": "선택한 레벨이 없습니다.",
+        "constructionNote": "Lv.1은 신규 건설입니다. 표의 0초는 실제 신규 건설 대기시간을 확인한 값이라는 뜻은 아닙니다.",
+        "unitNote": "자원은 개수, 시간은 초, 전투력은 정수를 기준으로 표시합니다. 축약된 숫자를 누르면 정확한 값을 확인할 수 있습니다.",
+        "verificationScope": "표시 범위: 발전소 Lv.1–30의 자원·시간·전투력·선행 건물"
+      },
+      "units": {
+        "resourceSuffix": "개",
+        "seconds": "초",
+        "duration": [
+          "일",
+          "시간",
+          "분",
+          "초"
+        ]
+      },
+      "source": {
+        "versionTemplate": "게임 {version} / build {build}",
+        "scope": "발전소 · Lv.1–30",
+        "baseline": "사용자 확인에 따라 사이트의 기본 데이터를 선정했습니다.",
+        "clientScopeNote": "실제 계정·서버의 적용 설정을 검증한 결과는 아닙니다."
+      }
+    },
+    "en": {
+      "htmlLang": "en",
+      "numberLocale": "en",
+      "languageName": "English",
+      "buildingName": "Power Plant",
+      "resources": [
+        "Wood",
+        "Food",
+        "Metal",
+        "Gas"
+      ],
+      "buildingNames": {
+        "800003": "Lumberyard",
+        "800007": "Barracks 1",
+        "800008": "Barracks 2",
+        "800009": "Barracks 3"
+      },
+      "labels": {
+        "pageTitle": "Power Plant Upgrades | TilesSurvive.net",
+        "guide": "Building guide",
+        "skip": "Skip to requirements",
+        "buildings": "Buildings",
+        "language": "Language",
+        "heading": "Power Plant upgrades",
+        "subtitle": "Check resources and required buildings at each level.",
+        "requirements": "Requirements by level",
+        "level": "Level",
+        "allLevels": "All · Lv.1–30",
+        "levelDetail": "Lv.30 · Details",
+        "exactValues": "Show exact values",
+        "capture": "Capture view",
+        "levelHeader": "Level",
+        "conditions": "Required buildings",
+        "time": "Base time",
+        "newConstruction": "Initial construction",
+        "stage": "Stage",
+        "none": "None",
+        "unknown": "Unknown",
+        "exactValue": "Exact value",
+        "showExactValue": "View exact value",
+        "close": "Close",
+        "done": "Done",
+        "totals": "View totals for selected levels",
+        "source": "Sources and basis",
+        "sourceLink": "TilesSurvive.net Power Plant",
+        "resourceUnit": "Resource quantities: units",
+        "footer": "TilesSurvive.net · Power Plant guide",
+        "levelPrefix": "Lv.",
+        "power": "Power"
+      },
+      "messages": {
+        "variation": "The construction resource and time requirements shown are base values without buffs. Actual values in the game may vary depending on development progress, research, and various effects.",
+        "numberHint": "Tap a number to see its exact value.",
+        "numberLegend": "K=thousand · M=million · 0=none · Unknown=no data",
+        "loading": "Loading data…",
+        "loadError": "Could not load the data. Please refresh the page.",
+        "totalsNote": "Totals include every selected target level, including Lv.1. The costs of prerequisite buildings are excluded, and personal effects are not applied.",
+        "emptyTotals": "No levels selected.",
+        "constructionNote": "Lv.1 is initial construction. A value of 0 seconds in the table does not confirm the actual initial construction waiting time.",
+        "unitNote": "Resources are counted in units, time is based on seconds, and power is an integer. Tap an abbreviated number to see its exact value.",
+        "verificationScope": "Coverage: resources, time, power, and required buildings for Power Plant Lv.1–30"
+      },
+      "units": {
+        "resourceSuffix": "",
+        "seconds": " s",
+        "duration": [
+          "d",
+          "h",
+          "m",
+          "s"
+        ]
+      },
+      "source": {
+        "versionTemplate": "Game {version} / build {build}",
+        "scope": "Power Plant · Lv.1–30",
+        "baseline": "The base data for this site was selected with user approval.",
+        "clientScopeNote": "The settings applied to actual accounts and servers have not been verified."
+      }
+    },
+    "ja": {
+      "htmlLang": "ja",
+      "numberLocale": "ja",
+      "languageName": "日本語",
+      "buildingName": "発電所",
+      "resources": [
+        "木材",
+        "食料",
+        "金属",
+        "燃料"
+      ],
+      "buildingNames": {
+        "800003": "木材所",
+        "800007": "兵舎1",
+        "800008": "兵舎2",
+        "800009": "兵舎3"
+      },
+      "labels": {
+        "pageTitle": "発電所のアップグレード | TilesSurvive.net",
+        "guide": "建物ガイド",
+        "skip": "必要量へ移動",
+        "buildings": "建物",
+        "language": "言語",
+        "heading": "発電所のアップグレード",
+        "subtitle": "レベルごとに必要な資源と建物を確認できます。",
+        "requirements": "レベル別の必要量",
+        "level": "レベル",
+        "allLevels": "すべて · Lv.1–30",
+        "levelDetail": "Lv.30 · 詳細",
+        "exactValues": "正確な数値を表示",
+        "capture": "キャプチャ用",
+        "levelHeader": "レベル",
+        "conditions": "必要な建物",
+        "time": "基本時間",
+        "newConstruction": "初回建設",
+        "stage": "段階",
+        "none": "なし",
+        "unknown": "未確認",
+        "exactValue": "正確な数値",
+        "showExactValue": "正確な数値を見る",
+        "close": "閉じる",
+        "done": "確認",
+        "totals": "選択範囲の合計を見る",
+        "source": "出典と基準",
+        "sourceLink": "TilesSurvive.net 発電所",
+        "resourceUnit": "資源の単位：個",
+        "footer": "TilesSurvive.net · 発電所ガイド",
+        "levelPrefix": "Lv.",
+        "power": "戦力"
+      },
+      "messages": {
+        "variation": "建設に必要な資源と時間は、バフが適用されていない基本データに基づいています。実際のゲームでは、発展度、研究、各種効果によって変わる場合があります。",
+        "numberHint": "数値を押すと正確な値を確認できます。",
+        "numberLegend": "K=千 · M=百万 · 0=なし · 未確認=データなし",
+        "loading": "データを読み込んでいます。",
+        "loadError": "データを読み込めませんでした。ページを再読み込みしてください。",
+        "totalsNote": "選択した目標レベルをすべて合算します（Lv.1を含む）。必要な建物自体の費用は含めず、個人の効果は適用しません。",
+        "emptyTotals": "レベルが選択されていません。",
+        "constructionNote": "Lv.1は初回建設です。表の0秒は、実際の初回建設の待ち時間を確認した値ではありません。",
+        "unitNote": "資源は個数、時間は秒、戦力は整数を基準に表示します。省略された数値を押すと正確な値を確認できます。",
+        "verificationScope": "表示範囲：発電所Lv.1–30の資源・時間・戦力・必要な建物"
+      },
+      "units": {
+        "resourceSuffix": "個",
+        "seconds": "秒",
+        "duration": [
+          "日",
+          "時間",
+          "分",
+          "秒"
+        ]
+      },
+      "source": {
+        "versionTemplate": "ゲーム {version} / build {build}",
+        "scope": "発電所 · Lv.1–30",
+        "baseline": "ユーザーの確認を経て、このサイトの基準データを選定しています。",
+        "clientScopeNote": "実際のアカウントやサーバーに適用される設定を検証したものではありません。"
+      }
+    },
+    "ru": {
+      "htmlLang": "ru",
+      "numberLocale": "ru",
+      "languageName": "Русский",
+      "buildingName": "Электростанция",
+      "resources": [
+        "Древесина",
+        "Еда",
+        "Металл",
+        "Топливо"
+      ],
+      "buildingNames": {
+        "800003": "Лесопилка",
+        "800007": "Казарма 1",
+        "800008": "Казарма 2",
+        "800009": "Казарма 3"
+      },
+      "labels": {
+        "pageTitle": "Улучшение электростанции | TilesSurvive.net",
+        "guide": "Справочник зданий",
+        "skip": "Перейти к требованиям",
+        "buildings": "Здания",
+        "language": "Язык",
+        "heading": "Улучшение электростанции",
+        "subtitle": "Проверьте ресурсы и необходимые здания для каждого уровня.",
+        "requirements": "Требования по уровням",
+        "level": "Уровень",
+        "allLevels": "Все · Ур.1–30",
+        "levelDetail": "Ур.30 · Подробнее",
+        "exactValues": "Показать точные значения",
+        "capture": "Для снимка экрана",
+        "levelHeader": "Уровень",
+        "conditions": "Необходимые здания",
+        "time": "Базовое время",
+        "newConstruction": "Первоначальное строительство",
+        "stage": "Этап",
+        "none": "Нет",
+        "unknown": "Неизвестно",
+        "exactValue": "Точное значение",
+        "showExactValue": "Посмотреть точное значение",
+        "close": "Закрыть",
+        "done": "Готово",
+        "totals": "Итоги для выбранных уровней",
+        "source": "Источники и основа данных",
+        "sourceLink": "Электростанция на TilesSurvive.net",
+        "resourceUnit": "Количество ресурсов: единицы",
+        "footer": "TilesSurvive.net · Справочник электростанции",
+        "levelPrefix": "Ур.",
+        "power": "Мощь"
+      },
+      "messages": {
+        "variation": "Расход ресурсов и время строительства указаны по базовым данным без учёта усилений. В игре они могут отличаться в зависимости от уровня развития, исследований и различных эффектов.",
+        "numberHint": "Нажмите на число, чтобы увидеть точное значение.",
+        "numberLegend": "K=тысяча · M=миллион · 0=нет · Неизвестно=нет данных",
+        "loading": "Загрузка данных…",
+        "loadError": "Не удалось загрузить данные. Обновите страницу.",
+        "totalsNote": "Суммируются все выбранные целевые уровни, включая ур.1. Затраты на необходимые здания не учитываются; индивидуальные эффекты не применяются.",
+        "emptyTotals": "Уровни не выбраны.",
+        "constructionNote": "Ур.1 — первоначальное строительство. Значение 0 секунд в таблице не подтверждает фактическое время ожидания при первоначальном строительстве.",
+        "unitNote": "Ресурсы указаны в единицах, время — на основе секунд, мощь — целым числом. Нажмите на сокращённое число, чтобы увидеть точное значение.",
+        "verificationScope": "Охват: ресурсы, время, мощь и необходимые здания для электростанции ур.1–30"
+      },
+      "units": {
+        "resourceSuffix": "",
+        "seconds": " с",
+        "duration": [
+          "д",
+          "ч",
+          "мин",
+          "с"
+        ]
+      },
+      "source": {
+        "versionTemplate": "Игра {version} / build {build}",
+        "scope": "Электростанция · Ур.1–30",
+        "baseline": "Базовые данные сайта выбраны с одобрения пользователя.",
+        "clientScopeNote": "Настройки, применяемые к реальным аккаунтам и серверам, не проверены."
+      }
+    },
+    "zh-tw": {
+      "htmlLang": "zh-Hant",
+      "numberLocale": "zh-TW",
+      "languageName": "繁體中文",
+      "buildingName": "發電廠",
+      "resources": [
+        "木材",
+        "食物",
+        "金屬",
+        "汽油"
+      ],
+      "buildingNames": {
+        "800003": "木材廠",
+        "800007": "1號兵營",
+        "800008": "2號兵營",
+        "800009": "3號兵營"
+      },
+      "labels": {
+        "pageTitle": "發電廠升級 | TilesSurvive.net",
+        "guide": "建築指南",
+        "skip": "前往需求表",
+        "buildings": "建築",
+        "language": "語言",
+        "heading": "發電廠升級",
+        "subtitle": "查看各等級所需的資源與前置建築。",
+        "requirements": "各等級需求",
+        "level": "等級",
+        "allLevels": "全部 · Lv.1–30",
+        "levelDetail": "Lv.30 · 詳細資料",
+        "exactValues": "顯示精確數值",
+        "capture": "截圖用",
+        "levelHeader": "等級",
+        "conditions": "前置建築",
+        "time": "基本時間",
+        "newConstruction": "初次建造",
+        "stage": "階段",
+        "none": "無",
+        "unknown": "未確認",
+        "exactValue": "精確數值",
+        "showExactValue": "查看精確數值",
+        "close": "關閉",
+        "done": "確認",
+        "totals": "查看所選範圍總計",
+        "source": "來源與基準",
+        "sourceLink": "TilesSurvive.net 發電廠",
+        "resourceUnit": "資源單位：個",
+        "footer": "TilesSurvive.net · 發電廠指南",
+        "levelPrefix": "Lv.",
+        "power": "戰力"
+      },
+      "messages": {
+        "variation": "建造所需的資源與時間以未套用增益效果的基本資料為準。實際遊戲中，數值可能因發展程度、研究及各種效果而有所不同。",
+        "numberHint": "點選數字即可查看精確數值。",
+        "numberLegend": "K=千 · M=百萬 · 0=無 · 未確認=無資料",
+        "loading": "正在載入資料。",
+        "loadError": "無法載入資料，請重新整理頁面。",
+        "totalsNote": "加總所有選取的目標等級（包含Lv.1）。不含前置建築本身的費用，且不套用個人效果。",
+        "emptyTotals": "尚未選取等級。",
+        "constructionNote": "Lv.1為初次建造。表中的0秒不代表已確認實際初次建造的等待時間。",
+        "unitNote": "資源以個數、時間以秒、戰力以整數為基準顯示。點選縮寫數字即可查看精確數值。",
+        "verificationScope": "顯示範圍：發電廠Lv.1–30的資源、時間、戰力與前置建築"
+      },
+      "units": {
+        "resourceSuffix": "個",
+        "seconds": "秒",
+        "duration": [
+          "天",
+          "小時",
+          "分鐘",
+          "秒"
+        ]
+      },
+      "source": {
+        "versionTemplate": "遊戲 {version} / build {build}",
+        "scope": "發電廠 · Lv.1–30",
+        "baseline": "本站的基準資料經使用者確認後選定。",
+        "clientScopeNote": "尚未驗證實際帳號與伺服器套用的設定。"
+      }
+    },
+    "de": {
+      "htmlLang": "de",
+      "numberLocale": "de",
+      "languageName": "Deutsch",
+      "buildingName": "Das Kraftwerk",
+      "resources": [
+        "Holz",
+        "Nahrung",
+        "Metall",
+        "Benzin"
+      ],
+      "buildingNames": {
+        "800003": "Holzlager",
+        "800007": "Kaserne 1",
+        "800008": "Kaserne 2",
+        "800009": "Kaserne 3"
+      },
+      "labels": {
+        "pageTitle": "Kraftwerk ausbauen | TilesSurvive.net",
+        "guide": "Gebäudeguide",
+        "skip": "Zu den Anforderungen",
+        "buildings": "Gebäude",
+        "language": "Sprache",
+        "heading": "Kraftwerk ausbauen",
+        "subtitle": "Prüfe Ressourcen und vorausgesetzte Gebäude für jede Stufe.",
+        "requirements": "Anforderungen je Stufe",
+        "level": "Stufe",
+        "allLevels": "Alle · St.1–30",
+        "levelDetail": "St.30 · Details",
+        "exactValues": "Genaue Werte anzeigen",
+        "capture": "Screenshot-Ansicht",
+        "levelHeader": "Stufe",
+        "conditions": "Vorausgesetzte Gebäude",
+        "time": "Grundzeit",
+        "newConstruction": "Erstmaliger Bau",
+        "stage": "Phase",
+        "none": "Keine",
+        "unknown": "Unbekannt",
+        "exactValue": "Genauer Wert",
+        "showExactValue": "Genauen Wert anzeigen",
+        "close": "Schließen",
+        "done": "Fertig",
+        "totals": "Summe für gewählte Stufen anzeigen",
+        "source": "Quellen und Datengrundlage",
+        "sourceLink": "Kraftwerk auf TilesSurvive.net",
+        "resourceUnit": "Ressourcenmenge: Einheiten",
+        "footer": "TilesSurvive.net · Kraftwerk-Guide",
+        "levelPrefix": "St.",
+        "power": "Stärke"
+      },
+      "messages": {
+        "variation": "Die Ressourcen- und Zeitangaben für den Bau basieren auf Grundwerten ohne Buffs. Die tatsächlichen Werte im Spiel können je nach Entwicklungsstand, Forschung und verschiedenen Effekten abweichen.",
+        "numberHint": "Tippe auf eine Zahl, um den genauen Wert zu sehen.",
+        "numberLegend": "K=Tausend · M=Million · 0=keine · Unbekannt=keine Daten",
+        "loading": "Daten werden geladen…",
+        "loadError": "Die Daten konnten nicht geladen werden. Bitte lade die Seite neu.",
+        "totalsNote": "Alle gewählten Zielstufen werden addiert, einschließlich St.1. Die Kosten der vorausgesetzten Gebäude sind ausgeschlossen; persönliche Effekte werden nicht angewendet.",
+        "emptyTotals": "Keine Stufen ausgewählt.",
+        "constructionNote": "St.1 ist der erstmalige Bau. Ein Wert von 0 Sekunden in der Tabelle bestätigt nicht die tatsächliche Wartezeit beim erstmaligen Bau.",
+        "unitNote": "Ressourcen werden in Einheiten, Zeit auf Basis von Sekunden und Stärke als ganze Zahl angegeben. Tippe auf eine abgekürzte Zahl, um den genauen Wert zu sehen.",
+        "verificationScope": "Umfang: Ressourcen, Zeit, Stärke und vorausgesetzte Gebäude für Kraftwerk St.1–30"
+      },
+      "units": {
+        "resourceSuffix": "",
+        "seconds": " Sek.",
+        "duration": [
+          "T",
+          "Std.",
+          "Min.",
+          "Sek."
+        ]
+      },
+      "source": {
+        "versionTemplate": "Spiel {version} / build {build}",
+        "scope": "Kraftwerk · St.1–30",
+        "baseline": "Die Basisdaten der Website wurden mit Zustimmung des Nutzers ausgewählt.",
+        "clientScopeNote": "Die auf tatsächliche Konten und Server angewendeten Einstellungen wurden nicht überprüft."
+      }
+    }
+  }
+}

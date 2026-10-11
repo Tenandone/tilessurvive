@@ -46,6 +46,7 @@
     "test:client-truth": "node --test scripts/test-client-growth-52.js scripts/test-client-heroes-52.js scripts/test-client-buildings-52.js scripts/test-client-preservation-52.js",
     "build:53": "node scripts/build-building-ux-53.js",
     "test:building-ux-53": "node --test scripts/test-building-ux-53.js",
+    "test:power-plant": "node --test scripts/test-power-plant-original.js scripts/test-power-plant-original-runtime.js",
     "build:60": "node scripts/build-building-growth-60.js && node scripts/build-item-synthesis-60.js && node scripts/build-behemoth-exp-60.js && node scripts/build-growth-50.js --heroes=lagnar,dave --require-all-languages",
     "test:content-60": "node --test scripts/test-building-growth-60.js scripts/test-item-synthesis-60.js scripts/test-behemoth-exp-60.js scripts/test-exclusive-gear-60.js scripts/test-asset-cache-60.js",
     "build:phase2": "node scripts/build-building-phase2-60.js && node scripts/build-pets-phase2.js && node scripts/sync-sitemap-60.js",

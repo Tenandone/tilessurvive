@@ -100,6 +100,7 @@ for(const lang of langs){
   }
   let tableIndex=0;
   for(const table of main.querySelectorAll('table')){
+   if(table.closest('[data-power-plant-original]')){tableIndex=Math.max(tableIndex,1);continue;}
    const clientBuilding=table.closest('[data-client-building-52]');if(clientBuilding){tableIndex=Math.max(tableIndex,Number(clientBuilding.getAttribute('data-client-building-52'))+1);continue;}
    const heads=[...table.querySelectorAll('thead tr:first-child th')],rows=[...table.querySelectorAll('tbody tr')];
    if(!heads.length||!rows.length)continue;

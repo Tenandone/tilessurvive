@@ -10,7 +10,7 @@ function approvedContent60Projection(file){
  const entries={};for(const a of require('../data/building-assets-51.json').assets){const route=`${lang}/buildings/${a.slug}/index.html`,source=original(route,phase60Base),html=growth.model.buildings.some(b=>b.slug===a.slug)?growth.project(source,route):source;entries[a.slug]=ux.coverage(a.slug,parseHTML(html).document);}
  return ux.catalog(before,lang,entries);
 }
-function restore(d,file){if(!d.documentElement.hasAttribute('data-building-ux-53'))return d;
+function restore(d,file){require('./power-plant-original-test-allowances').restore(d,file);if(!d.documentElement.hasAttribute('data-building-ux-53'))return d;
  require('./content-phase3-test-allowances').restore(d,file);
  require('./content-phase2-test-allowances').restore(d,file);
  require('./asset-cache-test-allowances').restore(d);

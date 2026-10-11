@@ -6,6 +6,7 @@ const root=path.resolve(__dirname,'..'),baseline='fc54f4b18e1196e5a5ad2facb0a224
 function original(file){if(!cache.has(file))cache.set(file,cp.execFileSync('git',['show',baseline+':'+file],{cwd:root,encoding:'utf8',maxBuffer:12e6}));return cache.get(file);}
 function signature(n){if(n.nodeType===3)return n.textContent.trim()?['text',n.textContent.trim()]:null;if(n.nodeType!==1)return null;const children=[];let text='';const flush=()=>{if(text.trim())children.push(['text',text.trim()]);text='';};for(const child of n.childNodes){if(child.nodeType===3)text+=child.textContent;else{flush();const value=signature(child);if(value)children.push(value);}}flush();return[n.tagName,[...n.attributes].map(a=>[a.name,a.value]).sort(([a],[b])=>a.localeCompare(b)),children];}
 function restore(document,file=''){
+ require('./power-plant-original-test-allowances').restore(document,file);
  require('./content-phase3-test-allowances').restore(document,file);
  require('./content-phase2-test-allowances').restore(document,file);
  require('./asset-cache-test-allowances').restore(document);
@@ -15,7 +16,10 @@ function restore(document,file=''){
  if(!file)file=new URL(document.querySelector('link[rel=canonical]').href).pathname.slice(1)+'index.html';
  if(path.isAbsolute(file))file=path.relative(root,file).replaceAll('\\','/');
  const builder=require('./build-client-truth-52');assert(builder.pages().includes(file),'Unapproved client-correction route '+file);
- const before=original(file),expected=parseHTML(builder.project(before,file)).document;
+ // The newer Power Plant display was verified and restored before this stage.
+ // Its historical correction expectation remains the immutable pre-phase53
+ // document, not the newer presentation now dispatched by the live builder.
+ const before=original(file),expected=parseHTML(/^(ko|en|ja|ru|zh-tw|de)\/buildings\/power-plant\/index\.html$/.test(file)?require('./power-plant-original-test-allowances').clientCorrectionOriginal(file):builder.project(before,file)).document;
  const actualSignature=JSON.stringify(signature(document.documentElement)),expectedSignature=JSON.stringify(signature(expected.documentElement));if(actualSignature!==expectedSignature){let at=0;while(actualSignature[at]===expectedSignature[at])at++;throw new Error('Exact client-source correction '+file+' differs at '+at+'; expected '+expectedSignature.slice(Math.max(0,at-90),at+220)+'; actual '+actualSignature.slice(Math.max(0,at-90),at+220));}
  const old=parseHTML(before).document;document.replaceChild(old.documentElement.cloneNode(true),document.documentElement);return document;
 }
