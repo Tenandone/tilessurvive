@@ -1,0 +1,293 @@
+/* Shared building sheet, retaining the established Power Plant presentation. */
+.building-system[data-building-system]{--ink:#193b31;--muted:#5d7065;--line:#d8e3d7;--green:#176442;--bg:#f4f6f0}
+.building-system[data-building-system] *{box-sizing:border-box}
+.building-system[data-building-system]{margin:0;background:var(--bg);color:var(--ink);font:14px/1.5 "Segoe UI","Malgun Gothic",sans-serif}
+.building-system[data-building-system] a{color:var(--green);text-underline-offset:3px}
+.building-system[data-building-system] button,.building-system[data-building-system] input,.building-system[data-building-system] select{font:inherit}
+.building-system[data-building-system] button,.building-system[data-building-system] a,.building-system[data-building-system] input,.building-system[data-building-system] select,.building-system[data-building-system] summary{outline-offset:3px}
+.building-system[data-building-system] button:focus-visible,.building-system[data-building-system] a:focus-visible,.building-system[data-building-system] summary:focus-visible{outline:2px solid #278058}
+.building-system[data-building-system] .skip{position:absolute;top:-100px}
+.building-system[data-building-system] .skip:focus{top:0;z-index:9;background:#fff;padding:10px}
+.building-system[data-building-system] .site-head{border-bottom:1px solid var(--line);background:white}
+.building-system[data-building-system] .site-head>div{max-width:1280px;margin:auto;padding:17px 28px;display:flex;justify-content:space-between;align-items:center}
+.building-system[data-building-system] .brand{font-size:23px;font-weight:750;letter-spacing:-1px;text-decoration:none;line-height:1.1}
+.building-system[data-building-system] .brand span{display:block;font-size:9px;letter-spacing:2px;margin-top:6px}
+.building-system[data-building-system] .v1-link{font-size:12px}
+.building-system[data-building-system] main{max-width:1280px;padding:0 28px;margin:auto}
+.building-system[data-building-system] .breadcrumb{display:flex;gap:12px;font-size:12px;color:var(--muted);padding-top:22px}
+.building-system[data-building-system] .hero{display:flex;align-items:center;justify-content:space-between;padding:18px 24px 26px 0}
+.building-system[data-building-system] .hero img{width:145px;height:150px;object-fit:contain}
+.building-system[data-building-system] .eyebrow{font-size:10px;letter-spacing:1.6px;font-weight:700;color:var(--green);margin:0 0 8px}
+.building-system[data-building-system] h1{font-size:32px;letter-spacing:-1.2px;margin:0 0 10px;line-height:1.3}
+.building-system[data-building-system] .hero p:last-child{color:var(--muted);margin:0}
+.building-system[data-building-system] .sheet-heading{display:flex;gap:14px;align-items:baseline}
+.building-system[data-building-system] .sheet-heading h2{font-size:23px;margin:0}
+.building-system[data-building-system] .sheet-heading span{color:var(--muted);font-size:12px}
+.building-system[data-building-system] .review-note{background:#faf2df;border:1px solid #e6d6b6;border-radius:8px;padding:11px 15px;color:#6e531e;font-size:13px;margin:16px 0 8px}
+.building-system[data-building-system] .variation{color:var(--muted);font-size:12px;margin:7px 0 18px}
+.building-system[data-building-system] .toolbar{display:flex;align-items:center;gap:24px;border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:11px 0}
+.building-system[data-building-system] .toolbar label{display:flex;align-items:center;gap:9px;font-size:12px;font-weight:600}
+.building-system[data-building-system] .toolbar select{min-height:40px;background:#fff;border:1px solid #b6c8b8;border-radius:6px;padding:7px 24px 7px 10px;color:var(--ink)}
+.building-system[data-building-system] .toolbar input{width:16px;height:16px;accent-color:var(--green)}
+.building-system[data-building-system] .toolbar>a{margin-left:auto;font-size:12px}
+.building-system[data-building-system] .number-hint{font-size:12px;color:var(--muted);display:flex;justify-content:space-between;gap:12px;margin:12px 0 17px}
+.building-system[data-building-system] .number-hint span{font-size:11px}
+.building-system[data-building-system] .requirements-block{background:#fff;border:1px solid var(--line);border-radius:9px;overflow:hidden;margin-bottom:22px}
+.building-system[data-building-system] .requirements-title{padding:13px 18px;display:flex;align-items:center;justify-content:space-between;background:#eaf1e7;border-bottom:1px solid var(--line);gap:16px}
+.building-system[data-building-system] .requirements-title h3{font-size:16px;margin:0;letter-spacing:-.3px}
+.building-system[data-building-system] .requirements-title p{font-size:11px;margin:3px 0 0;color:var(--muted)}
+.building-system[data-building-system] .level-range{font-size:12px;font-weight:700;white-space:nowrap}
+.building-system[data-building-system] .desktop-table{width:100%}
+.building-system[data-building-system] .data-table{table-layout:fixed;border-collapse:collapse;width:100%;font-variant-numeric:tabular-nums;font-size:14px}
+.building-system[data-building-system] .data-table th,.building-system[data-building-system] .data-table td{padding:7px 10px;text-align:right;border-bottom:1px solid #e1e9df;vertical-align:middle}
+.building-system[data-building-system] .data-table th{background:#f8faf5;color:#465e4d;font-size:12px;font-weight:600;white-space:nowrap;padding-top:10px;padding-bottom:10px}
+.building-system[data-building-system] .data-table tbody tr:nth-child(even){background:#f8faf6}
+.building-system[data-building-system] .data-table tbody tr:hover{background:#edf5e9}
+.building-system[data-building-system] .data-table tbody tr:last-child td{border-bottom:0}
+.building-system[data-building-system] .data-table th:first-child,.building-system[data-building-system] .data-table td:first-child{text-align:center}
+.building-system[data-building-system] .data-table th.condition,.building-system[data-building-system] .data-table td.condition{text-align:left}
+.building-system[data-building-system] .level{font-weight:750;font-size:14px}
+.building-system[data-building-system] .level small{display:block;font-weight:400;color:var(--muted);font-size:10px}
+.building-system[data-building-system] .requirements{list-style:none;margin:0;padding:0;display:grid;gap:3px}
+.building-system[data-building-system] .requirements li{font-size:12px;line-height:1.45;word-break:keep-all;overflow-wrap:anywhere}
+.building-system[data-building-system] .requirements a{text-decoration:none;border-bottom:1px solid #a2b9a0}
+.building-system[data-building-system] .requirements span{white-space:nowrap;color:var(--muted);margin-left:5px}
+.building-system[data-building-system] .requirements .no-req{color:var(--muted)}
+.building-system[data-building-system] .number{border:0;border-bottom:1px dotted #92ab97;padding:3px 0 2px;background:none;color:var(--ink);cursor:pointer;font-weight:650;font-size:14px;line-height:1.4;font-variant-numeric:tabular-nums;white-space:nowrap}
+.building-system[data-building-system] .number:hover{color:#187341;border-bottom-color:#187341}
+.building-system[data-building-system] .number.zero{font-weight:400;color:#65796a}
+.building-system[data-building-system] .number.time-number{font-size:12px;font-weight:500;white-space:normal;word-break:keep-all;border-bottom-color:transparent}
+.building-system[data-building-system] .missing{color:#8b651e;font-size:12px}
+.building-system[data-building-system] .resource-head{display:flex;align-items:center;justify-content:flex-end;gap:6px}
+.building-system[data-building-system] .resource-icon{width:26px;height:26px;object-fit:contain;vertical-align:middle}
+.building-system[data-building-system] .requirements-foot{padding:8px 18px;border-top:1px solid var(--line);background:#fbfcf9;display:flex;justify-content:space-between;gap:12px;font-size:11px;color:var(--muted)}
+.building-system[data-building-system] .mobile-cards{display:none}
+.building-system[data-building-system] .totals-details,.building-system[data-building-system] .source-details{margin:22px 0;background:#fff;border:1px solid var(--line);border-radius:8px;padding:15px 18px}
+.building-system[data-building-system] .totals-details summary,.building-system[data-building-system] .source-details summary{cursor:pointer;font-weight:600;font-size:13px}
+.building-system[data-building-system] .totals-details p,.building-system[data-building-system] .source-details p{font-size:12px;color:var(--muted)}
+.building-system[data-building-system] .source-details code{font-family:Consolas,monospace;overflow-wrap:anywhere}
+.building-system[data-building-system] .totals-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.building-system[data-building-system] .total-row{padding:14px;background:#f5f8f1;border-radius:7px}
+.building-system[data-building-system] .total-row h3{font-size:13px;margin:0 0 10px}
+.building-system[data-building-system] .total-values{display:flex;flex-wrap:wrap;gap:10px 22px;font-size:12px;font-variant-numeric:tabular-nums}
+.building-system[data-building-system] .total-values strong{display:block}
+.building-system[data-building-system] footer{max-width:1280px;padding:18px 28px;margin:auto;font-size:11px;color:var(--muted)}
+.building-system[data-building-system] dialog{border:1px solid #cbdacb;border-radius:14px;max-width:calc(100% - 32px);width:380px;padding:27px;color:var(--ink);box-shadow:0 20px 80px #0d2a3340}
+.building-system[data-building-system] dialog::backdrop{background:#102b255c}
+.building-system[data-building-system] dialog h2{font-size:17px;margin:0}
+.building-system[data-building-system] .dialog-close{position:absolute;right:12px;top:8px;border:0;background:none;font-size:27px;color:#64786a;cursor:pointer;width:36px;height:36px}
+.building-system[data-building-system] #detail-value{font-variant-numeric:tabular-nums;font-size:29px;font-weight:750;line-height:1.4;margin:18px 0 9px;word-break:keep-all;overflow-wrap:normal}
+.building-system[data-building-system] #detail-context{font-size:12px;color:var(--muted)}
+.building-system[data-building-system] .dialog-done{width:100%;border:0;padding:11px;background:var(--green);border-radius:7px;color:#fff;margin-top:15px;cursor:pointer}
+.building-system[data-building-system].capture-mode .hero,.building-system[data-building-system].capture-mode .breadcrumb{display:none}
+.building-system[data-building-system].capture-mode #upgrade-sheet{padding-top:24px}
+.building-system[data-building-system].capture-mode .totals-details,.building-system[data-building-system].capture-mode .source-details,.building-system[data-building-system].capture-mode footer{display:none}
+.building-system[data-building-system].capture-mode .site-head{display:none}
+.building-system[data-building-system].exact-mode .number{font-size:13px}
+.building-system[data-building-system].exact-mode .time-number{font-size:12px}
+@media(min-width:1000px){
+.building-system[data-building-system] .data-table col:nth-child(1){width:5%}
+.building-system[data-building-system] .data-table col:nth-child(2){width:25%}
+.building-system[data-building-system] .data-table col:nth-child(n+3):nth-child(-n+6){width:9.5%}
+.building-system[data-building-system] .data-table col:nth-child(7){width:19%}
+.building-system[data-building-system] .data-table col:nth-child(8){width:13%}
+}
+@media(max-width:999px){
+.building-system[data-building-system] .desktop-table{display:none}
+.building-system[data-building-system] .mobile-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;padding:12px;background:#f5f8f1}
+.building-system[data-building-system] .level-card{background:#fff;border:1px solid var(--line);border-radius:7px;padding:12px 14px}
+.building-system[data-building-system] .card-head{display:flex;align-items:center;justify-content:space-between;gap:10px;border-bottom:1px solid #e0e8dc;padding-bottom:8px;margin-bottom:9px}
+.building-system[data-building-system] .card-head h4{font-size:17px;line-height:1.3;margin:0}
+.building-system[data-building-system] .card-head .power{display:flex;gap:7px;align-items:center;font-size:11px;color:var(--muted)}
+.building-system[data-building-system] .card-head .power .number{font-size:13px;padding:0}
+.building-system[data-building-system] .card-head small{font-size:10px;font-weight:400;color:var(--muted);margin-left:6px}
+.building-system[data-building-system] .resource-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px 16px}
+.building-system[data-building-system] .resource-cell{display:flex;align-items:center;gap:7px;min-width:0}
+.building-system[data-building-system] .resource-cell>div{min-width:0;display:flex;flex-direction:column;align-items:flex-start}
+.building-system[data-building-system] .resource-name{font-size:10px;color:var(--muted);line-height:1.1}
+.building-system[data-building-system] .resource-cell .resource-icon{width:31px;height:31px;flex:0 0 31px}
+.building-system[data-building-system] .resource-cell .number{font-size:17px;padding:2px 0 0;line-height:1.25}
+.building-system[data-building-system] .card-time{display:flex;align-items:baseline;justify-content:space-between;gap:10px;padding:9px 0 7px;margin-top:9px;border-top:1px solid #e0e8dc}
+.building-system[data-building-system] .card-time>span{font-size:11px;color:var(--muted);flex-shrink:0}
+.building-system[data-building-system] .card-time .time-number{font-size:12px;text-align:right;padding:0}
+.building-system[data-building-system] .card-conditions{display:flex;gap:10px;font-size:11px}
+.building-system[data-building-system] .card-conditions>span{flex:0 0 47px;color:var(--muted)}
+.building-system[data-building-system] .card-conditions .requirements{flex:1;gap:3px}
+.building-system[data-building-system] .card-conditions .requirements li{font-size:12px}
+.building-system[data-building-system] .card-conditions .requirements li a{white-space:normal}
+.building-system[data-building-system].exact-mode .resource-cell .number{font-size:14px}
+.building-system[data-building-system].exact-mode .card-head .power .number{font-size:12px}
+.building-system[data-building-system] .totals-grid{grid-template-columns:1fr}
+}
+@media(max-width:600px){
+.building-system[data-building-system] main{padding:0 14px}
+.building-system[data-building-system] .site-head>div{padding:15px 16px}
+.building-system[data-building-system] .brand{font-size:21px}
+.building-system[data-building-system] .v1-link{font-size:11px}
+.building-system[data-building-system] .breadcrumb{padding-top:18px;font-size:11px}
+.building-system[data-building-system] .hero{padding:17px 0 20px;gap:12px}
+.building-system[data-building-system] .hero img{width:86px;height:110px;flex:0 0 86px}
+.building-system[data-building-system] h1{font-size:25px;letter-spacing:-1px}
+.building-system[data-building-system] .hero p:last-child{font-size:12px}
+.building-system[data-building-system] .eyebrow{font-size:9px}
+.building-system[data-building-system] .sheet-heading h2{font-size:21px}
+.building-system[data-building-system] .review-note{font-size:12px;padding:10px 12px;line-height:1.6}
+.building-system[data-building-system] .variation{font-size:11px;line-height:1.6}
+.building-system[data-building-system] .toolbar{gap:12px;flex-wrap:wrap;justify-content:space-between;padding:10px 0}
+.building-system[data-building-system] .toolbar label{font-size:11px;gap:7px}
+.building-system[data-building-system] .toolbar select{max-width:157px;padding-right:12px}
+.building-system[data-building-system] .toolbar>a{font-size:11px}
+.building-system[data-building-system] .number-hint{display:block;font-size:11px;line-height:1.7;margin:10px 0 13px}
+.building-system[data-building-system] .number-hint span{display:block;font-size:10px}
+.building-system[data-building-system] .requirements-title{padding:12px 13px;gap:10px}
+.building-system[data-building-system] .requirements-title h3{font-size:15px}
+.building-system[data-building-system] .requirements-title p{font-size:10px;line-height:1.5;max-width:235px}
+.building-system[data-building-system] .level-range{font-size:11px}
+.building-system[data-building-system] .mobile-cards{grid-template-columns:1fr;padding:9px;gap:9px}
+.building-system[data-building-system] .requirements-block{margin-bottom:17px}
+.building-system[data-building-system] .requirements-foot{padding:8px 13px;font-size:10px;line-height:1.5;flex-wrap:wrap;gap:2px}
+.building-system[data-building-system] .requirements-foot span:last-child{margin-left:auto}
+.building-system[data-building-system] .totals-details,.building-system[data-building-system] .source-details{padding:13px 14px;margin:17px 0}
+.building-system[data-building-system].capture-mode #upgrade-sheet{padding-top:15px}
+.building-system[data-building-system].capture-mode .review-note{margin-top:11px}
+.building-system[data-building-system] footer{padding:15px 14px}
+.building-system[data-building-system] .card-time .time-number{font-size:12px}
+}
+@media print{
+.building-system[data-building-system] .toolbar,.building-system[data-building-system] .number-hint,.building-system[data-building-system] .site-head,.building-system[data-building-system] .hero,.building-system[data-building-system] .source-details,.building-system[data-building-system] .totals-details{display:none}
+.building-system[data-building-system] .number{border-bottom:0}
+.building-system[data-building-system] .requirements-block{break-inside:avoid}
+.building-system[data-building-system] .review-note{background:#fff}
+.building-system[data-building-system].capture-mode .source-details{display:none}
+}
+.building-system[data-building-system] .language-choice{display:flex;align-items:center;gap:8px;font-size:12px}
+.building-system[data-building-system] .language-choice select{max-width:170px;min-height:38px;border:1px solid #b6c8b8;border-radius:6px;padding:6px;color:var(--ink);background:#fff}
+.building-system[data-building-system] .variation{font-size:13px;line-height:1.65;background:#eaf1e7;border:1px solid var(--line);border-radius:8px;padding:13px 16px;margin:16px 0}
+.building-system[data-building-system] .requirements-title p{max-width:none}
+.building-system[data-building-system] .capture-basis{font-size:11px;color:var(--muted);line-height:1.65;margin:10px 0 20px;overflow-wrap:anywhere}
+.building-system[data-building-system] .totals-grid{grid-template-columns:1fr}
+.building-system[data-building-system] .total-values{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.building-system[data-building-system] .total-values strong{margin-top:4px}
+.building-system[data-building-system] .source-details p{line-height:1.7}
+.building-system[data-building-system] .toolbar>button{margin-left:auto;background:none;border:0;color:var(--green);text-decoration:underline;text-underline-offset:3px;cursor:pointer;font-size:12px}
+.building-system[data-building-system] .card-head{justify-content:space-between}
+.building-system[data-building-system] .card-head h4{display:flex;align-items:baseline;gap:5px}
+.building-system[data-building-system] .requirements-title h3{font-size:16px}
+.building-system[data-building-system] .requirements-block{margin-bottom:10px}
+.building-system[data-building-system] .requirements-title p,.building-system[data-building-system] .requirements-foot,.building-system[data-building-system] .card-conditions,.building-system[data-building-system] .hero p,.building-system[data-building-system] .source-details,.building-system[data-building-system] .number-hint{overflow-wrap:anywhere}
+.building-system[data-building-system] .missing{font-style:normal}
+.building-system[data-building-system] .data-table th{white-space:normal}
+.building-system[data-building-system] .resource-head{flex-wrap:wrap}
+.building-system[data-building-system] .number-hint{line-height:1.7}
+.building-system[data-building-system].capture-mode .toolbar,.building-system[data-building-system].capture-mode .number-hint{display:none}
+.building-system[data-building-system].capture-mode .variation{margin-top:12px}
+.building-system[data-building-system].capture-mode .capture-basis{display:block}
+.building-system[data-building-system].capture-mode .requirements-block{margin-bottom:8px}
+.building-system[data-building-system].capture-mode .requirements-title{background:#eaf1e7}
+.building-system[data-building-system].capture-mode .requirements-title p{display:block}
+.building-system[data-building-system].exact-mode .number{font-size:13px}
+@media(min-width:1000px){
+.building-system[data-building-system] .data-table col:nth-child(1){width:5%}
+.building-system[data-building-system] .data-table col:nth-child(2){width:25%}
+.building-system[data-building-system] .data-table col:nth-child(n+3):nth-child(-n+6){width:9.5%}
+.building-system[data-building-system] .data-table col:nth-child(7){width:19%}
+.building-system[data-building-system] .data-table col:nth-child(8){width:13%}
+.building-system[data-building-system] .data-table th,.building-system[data-building-system] .data-table td{padding-top:8px;padding-bottom:8px}
+}
+@media(max-width:999px){
+.building-system[data-building-system].exact-mode .resource-cell .number{font-size:14px}
+.building-system[data-building-system] .card-conditions>span{flex:0 0 68px;overflow-wrap:anywhere}
+.building-system[data-building-system] .card-head{padding-bottom:8px}
+.building-system[data-building-system] .total-values{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media(max-width:600px){
+.building-system[data-building-system] .site-head>div{gap:15px}
+.building-system[data-building-system] .language-choice{font-size:0}
+.building-system[data-building-system] .language-choice select{max-width:126px;font-size:12px}
+.building-system[data-building-system] .hero{align-items:center}
+.building-system[data-building-system] .hero h1{font-size:25px;word-break:keep-all;overflow-wrap:anywhere}
+.building-system[data-building-system] .variation{font-size:12px;padding:11px 12px}
+.building-system[data-building-system] .toolbar{gap:8px 12px}
+.building-system[data-building-system] .toolbar select{max-width:165px}
+.building-system[data-building-system] .toolbar>button{font-size:11px;margin-left:0}
+.building-system[data-building-system] .toolbar label{flex-wrap:wrap}
+.building-system[data-building-system] .number-hint span{font-size:11px}
+.building-system[data-building-system] .requirements-title h3{font-size:14px}
+.building-system[data-building-system] .requirements-title p{font-size:10px}
+.building-system[data-building-system] .capture-basis{font-size:10px}
+.building-system[data-building-system] .requirements-foot span:last-child{margin-left:0}
+.building-system[data-building-system].exact-mode .resource-cell .number{font-size:13px}
+.building-system[data-building-system] .resource-cell>div{max-width:100%}
+.building-system[data-building-system] .card-time>span{flex:0 1 auto}
+.building-system[data-building-system] .total-values{gap:12px 8px}
+.building-system[data-building-system] .total-values strong{font-size:12px;overflow-wrap:anywhere}
+.building-system[data-building-system] .requirements-title{align-items:flex-start}
+}
+@media print{
+.building-system[data-building-system]{background:#fff}
+.building-system[data-building-system] .mobile-cards{display:none}
+.building-system[data-building-system] .desktop-table{display:block}
+.building-system[data-building-system] .requirements-block{break-inside:auto}
+.building-system[data-building-system] .data-table tr{break-inside:avoid}
+.building-system[data-building-system] .data-table thead{display:table-header-group}
+.building-system[data-building-system] .variation,.building-system[data-building-system] .capture-basis{display:block!important}
+.building-system[data-building-system] .capture-basis{font-size:10px}
+.building-system[data-building-system] .requirements-title{break-after:avoid}
+}
+.building-system[data-building-system] .level small{overflow-wrap:anywhere;word-break:normal}
+@media(min-width:1000px){
+.building-system[data-building-system] .data-table col:nth-child(1){width:8%}
+.building-system[data-building-system] .data-table col:nth-child(8){width:10%}
+}
+@media(max-width:600px){
+html[data-lang="ru"] .building-system[data-building-system] .card-conditions,html[data-lang="de"] .building-system[data-building-system] .card-conditions{display:block}
+html[data-lang="ru"] .building-system[data-building-system] .card-conditions>span,html[data-lang="de"] .building-system[data-building-system] .card-conditions>span{display:block;margin-bottom:4px;overflow-wrap:normal;word-break:normal}
+}
+.building-system[data-building-system]{box-sizing:border-box;min-width:0;margin-block:1.5rem}
+
+/* Keep the approved sheet presentation independent of the shared page shell. */
+.building-system[data-building-system] button.number{min-height:0;min-width:0;max-width:none;border-radius:0;box-shadow:none;transition:none;transform:none}
+.building-system[data-building-system] button.number:hover{background:none}
+.building-system[data-building-system] button.number:active:not(:disabled){transform:none}
+.building-system[data-building-system] p{max-width:none}
+.building-system[data-building-system] .data-table td,.building-system[data-building-system] .data-table .level small{white-space:normal}
+
+html[data-building-system-page] .building-detail-nav-53{display:flex;flex-wrap:wrap;gap:.6rem 1.25rem;margin:1rem 0}
+.building-system[data-building-system]{padding:1.25rem;border:1px solid #d8e3d7;border-radius:12px}
+.building-system[data-building-system] [hidden]{display:none!important}
+.building-system[data-building-system] .bs-controls{display:none}
+.building-system[data-building-system].bs-enhanced .toolbar{display:flex;flex-wrap:wrap}
+.building-system[data-building-system].bs-enhanced .bs-calculator{display:block}
+.building-system[data-building-system] .toolbar label{min-width:0;max-width:100%;flex-wrap:wrap}
+.building-system[data-building-system] .toolbar select{max-width:100%;width:auto;min-width:0;white-space:normal}
+.building-system[data-building-system] .bs-profile{margin:1.2rem 0}
+.building-system[data-building-system] .bs-profile>summary{padding:12px 14px;background:#eaf1e7;border-radius:8px;color:#193b31;font-weight:700;cursor:pointer;overflow-wrap:anywhere}
+.building-system[data-building-system] .bs-profile>.variation{margin:10px 0}
+.building-system[data-building-system] .data-table{table-layout:auto;font-size:13px}
+.building-system[data-building-system] .data-table th{white-space:normal}
+.building-system[data-building-system] .data-table td{overflow-wrap:anywhere}
+.building-system[data-building-system] .data-table td.condition{min-width:125px;max-width:220px}
+.building-system[data-building-system] .data-table th.level{background:transparent;font-weight:700}
+.building-system[data-building-system] .bs-table caption{padding:10px;font-weight:600;text-align:left}
+.building-system[data-building-system] .totals-details{margin-bottom:1rem}
+.building-system[data-building-system] .total-values{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:14px}
+.building-system[data-building-system] .total-values strong,.building-system[data-building-system] .total-values small{display:block;overflow-wrap:anywhere}
+.building-system[data-building-system] .bs-total{padding:14px;background:white;border:1px solid #d8e3d7;border-radius:8px;margin:10px 0}
+.building-system[data-building-system] .bs-total h3{font-size:15px}
+.building-system[data-building-system] .bs-fields{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.building-system[data-building-system] .bs-fields label{display:grid;gap:6px;font-size:13px}
+.building-system[data-building-system] .bs-fields input{width:100%;min-width:0;background:white;border:1px solid #b6c8b8;border-radius:6px;padding:9px;color:#193b31}
+.building-system[data-building-system] fieldset{border:1px solid #d8e3d7;border-radius:8px;min-width:0}
+.building-system[data-building-system] output{display:block;margin-top:12px}
+.building-system[data-building-system] dialog{max-width:calc(100vw - 32px);border:1px solid #a2b9a0;border-radius:12px;padding:24px;color:#193b31;background:white}
+.building-system[data-building-system] dialog::backdrop{background:#132e2580}
+.building-system[data-building-system] .bs-building>h3{margin-top:1.5rem}
+html[data-building-system-page] .bs-effect-table{width:100%;border-collapse:collapse}
+html[data-building-system-page] .bs-effect-table th,html[data-building-system-page] .bs-effect-table td{padding:.65rem;border-bottom:1px solid #d8e3d7;text-align:left}
+html[data-building-system-page] .bs-effect-profile{margin:1rem 0}
+html[data-building-system-page] .bs-effect-profile>summary{font-weight:700;cursor:pointer}
+@media(max-width:999px){.building-system[data-building-system] .desktop-table{display:none}.building-system[data-building-system] .mobile-cards{display:grid;gap:12px}.building-system[data-building-system] .bs-fields{grid-template-columns:repeat(2,minmax(0,1fr))}.building-system[data-building-system] .total-values{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:600px){.building-system[data-building-system]{padding:12px}.building-system[data-building-system] .sheet-heading{flex-wrap:wrap;gap:6px}.building-system[data-building-system] .toolbar select{max-width:100%}.building-system[data-building-system] .toolbar label:first-child{width:100%}.building-system[data-building-system] .bs-fields{grid-template-columns:1fr}.building-system[data-building-system] .card-conditions{display:block}.building-system[data-building-system] .card-conditions>span{display:block;margin-bottom:6px}.building-system[data-building-system] .bs-total{padding:10px}.building-system[data-building-system] .total-values{gap:10px 6px}html[data-building-system-page] .bs-effect-table thead{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}html[data-building-system-page] .bs-effect-table,html[data-building-system-page] .bs-effect-table tbody,html[data-building-system-page] .bs-effect-table tr,html[data-building-system-page] .bs-effect-table td,html[data-building-system-page] .bs-effect-table th{display:block;width:auto;min-width:0}html[data-building-system-page] .bs-effect-table tr{margin:12px 0;padding:10px;background:#f4f6f0;border:1px solid #d8e3d7;border-radius:8px}html[data-building-system-page] .bs-effect-table td::before,html[data-building-system-page] .bs-effect-table tbody th::before{content:attr(data-bs-label);display:block;font-size:12px;font-weight:400;color:#5d7065}html[data-building-system-page] .ts-table-wrap{min-width:0;overflow:visible}html[data-building-system-page] .bs-effect-table td{white-space:normal}}
+
+html[data-building-capture] body>header,html[data-building-capture] body>footer,html[data-building-capture] .ts-header,html[data-building-capture] .ts-footer,html[data-building-capture] main>.container>:not([data-building-system]){display:none!important}
+html[data-building-capture] [data-building-system] .toolbar,html[data-building-capture] [data-building-system] .bs-calculator,html[data-building-capture] [data-building-system] .source-details,html[data-building-capture] [data-building-system] .totals-details{display:none!important}

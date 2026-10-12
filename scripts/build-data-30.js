@@ -12,6 +12,8 @@ for(const lang of langs){
  const files=['buildings','database','behemoths','tools','event-helper','events','seasons'].flatMap(section=>walk(path.join(root,lang,section))).filter(f=>f.endsWith('index.html')&&!/[\\/]pet-system[\\/][^\\/]+[\\/]index.html$/.test(f));
  for(const file of files){
   const d=parseHTML(fs.readFileSync(file,'utf8')).document,main=d.querySelector('main');if(!main)continue;
+  // The common building owner supplies controls and preserves legacy table anchors.
+  if(d.querySelector('[data-building-system]'))continue;
   const route='/'+path.relative(root,file).replaceAll('\\','/').replace(/index\.html$/,'');
   // Repeated builds retain source sections and regenerate only this enhancement's nodes.
   d.querySelectorAll('[data-ui30-generated]').forEach(n=>n.remove());

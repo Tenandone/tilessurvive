@@ -35,6 +35,8 @@ function project(html,file){
   file=file.replaceAll('\\','/').replace(root.replaceAll('\\','/')+'/','');
   if(!pages.includes(file))return html;
   const lang=file.split('/')[0],d=parseHTML(html).document;
+  // The common owner replaces the legacy cost wrapper; keep it authoritative on rebuild.
+  if(d.querySelector('[data-building-system]'))return require('./build-building-system').project(html,lang,'power-plant');
   const prior=d.querySelector('[data-power-plant-original]');
   const old=d.querySelector('[data-client-building-52]')||d.getElementById('ts3-data-table-0');
   const target=prior||old?.closest('section.section');

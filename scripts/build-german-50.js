@@ -64,6 +64,12 @@ function localizeProgram(source,translate,route) {
   return code;
 }
 function render(source, translate, route) {
+  // Building pages now have an independent, reviewed six-language owner.
+  // Keep the German shell rather than retranslating its rendered source model.
+  if(route.startsWith('buildings/')&&source.includes('data-building-system')){
+    const current=fs.readFileSync(path.join(ROOT,'de',route),'utf8'),owner=require('./build-building-system');
+    return route==='buildings/index.html'?owner.catalog(current,'de'):owner.project(current,'de',route.split('/')[1]);
+  }
   // Building controls have their own reviewed wording. Keep those overrides
   // local to building routes so a shared word such as "Details" does not
   // overwrite the established translation in hero or season content.

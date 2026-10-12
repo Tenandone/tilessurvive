@@ -1,0 +1,1471 @@
+{
+  "schemaVersion": 1,
+  "auditedAt": "2026-10-13",
+  "baseline": "735307fd",
+  "scope": {
+    "gameVersion": "2.6.200",
+    "gameBuild": 1512,
+    "retainedDefinitions": 320,
+    "registeredBuildingIds": 29,
+    "detailPages": 22,
+    "languages": [
+      "ko",
+      "en",
+      "ja",
+      "ru",
+      "zh-tw",
+      "de"
+    ],
+    "localizedDetailPages": 132,
+    "unregisteredDefinitions": 291,
+    "unregisteredDefinitionPolicy": "Configuration-only definitions include legacy, seasonal, decorative and unreleased candidates. They are not counted as missing playable buildings and no new page is generated without verified applicability."
+  },
+  "classificationBasis": {
+    "complete": "Complete within the explicitly documented profile and level range: exact cost/time/prerequisite sheet and previously verified effect curve. Does not assert all-server availability or future levels.",
+    "partial": "A detail page exists but at least one original field, effect meaning/unit, initial condition, or wider progression condition is unresolved.",
+    "numericSheet": "Cost vector and base seconds present for every published profile row; separate from overall content completeness."
+  },
+  "summary": {
+    "completeWithinDeclaredScope": 6,
+    "partial": 16,
+    "listOnly": 0,
+    "missingDetailPages": 0,
+    "duplicatePages": 0,
+    "numericSheetsBefore": {
+      "complete": 11,
+      "partial": 10,
+      "missing": 1
+    },
+    "numericSheetsAfterVerifiedSupplement": {
+      "complete": 11,
+      "partial": 11,
+      "missing": 0
+    },
+    "validatedExistingProfileRows": 1520,
+    "existingNonNullValueConflicts": 0,
+    "recoveredFields": 5,
+    "newConstructionProfileRows": 2,
+    "addedPowerRows": 641,
+    "addedEffectProfileRows": 480,
+    "verifiedEffectProfileRows": 780
+  },
+  "catalog": {
+    "registeredSlugs": [
+      "aegis-monument",
+      "artifact-workshop",
+      "barracks",
+      "blessed-healing-stele",
+      "comms-outpost",
+      "cursed-wound-stele",
+      "enlistment-office",
+      "garrison-station",
+      "greenhouse",
+      "guardian-of-life-monument",
+      "hero-academy",
+      "hospital",
+      "houses",
+      "kitchen",
+      "lab",
+      "lab-2",
+      "lookout-tower",
+      "lumberyard",
+      "power-plant",
+      "refinery",
+      "smelter",
+      "warbringer-monument"
+    ],
+    "missingTargets": [],
+    "uncatalogedDetails": []
+  },
+  "pages": [
+    {
+      "slug": "aegis-monument",
+      "buildingIds": [
+        800148
+      ],
+      "pageStatus": "complete_within_declared_scope",
+      "pageExists": true,
+      "listOnly": false,
+      "duplicatePage": false,
+      "baseline": {
+        "costProfiles": 2,
+        "numericSheetStatus": "complete",
+        "headings": [
+          "업그레이드 비용·시간",
+          "건물 개요",
+          "최대 레벨 효과",
+          "레벨별 효과",
+          "관련 링크"
+        ],
+        "tables": 3
+      },
+      "afterVerifiedSupplement": {
+        "costProfiles": 2,
+        "numericSheetStatus": "complete",
+        "profileRows": 60
+      },
+      "ranges": [
+        {
+          "id": 800148,
+          "minLevel": 1,
+          "maxLevel": 30,
+          "retainedRows": 31,
+          "retainedMaxLevel": 30,
+          "profileRanges": [
+            {
+              "profile": "Original",
+              "rows": 30,
+              "unknownResources": [],
+              "unknownTime": []
+            },
+            {
+              "profile": "D",
+              "rows": 30,
+              "unknownResources": [],
+              "unknownTime": []
+            }
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "slug": "artifact-workshop",
+      "buildingIds": [
+        800150
+      ],
+      "pageStatus": "partial",
+      "pageExists": true,
+      "listOnly": false,
+      "duplicatePage": false,
+      "baseline": {
+        "costProfiles": 2,
+        "numericSheetStatus": "partial",
+        "headings": [
+          "업그레이드 시트",
+          "도구 공방 · 업그레이드 비용·시간"
+        ],
+        "tables": 2
+      },
+      "afterVerifiedSupplement": {
+        "costProfiles": 2,
+        "numericSheetStatus": "partial",
+        "profileRows": 60
+      },
+      "ranges": [
+        {
+          "id": 800150,
+          "minLevel": 1,
+          "maxLevel": 30,
+          "retainedRows": 31,
+          "retainedMaxLevel": 30,
+          "profileRanges": [
+            {
+              "profile": "Original",
+              "rows": 30,
+              "unknownResources": [],
+              "unknownTime": []
+            },
+            {
+              "profile": "D",
+              "rows": 30,
+              "unknownResources": [
+                {
+                  "level": 1,
+                  "rank": 0
+                }
+              ],
+              "unknownTime": []
+            }
+          ]
+        }
+      ],
+      "issues": [
+        "Some initial construction resource maps are absent in the retained client and remain unknown.",
+        "Some effect labels, units, display consumers or applicability remain unverified; raw effect fields are not promoted to gameplay claims."
+      ]
+    },
+    {
+      "slug": "barracks",
+      "buildingIds": [
+        800007,
+        800008,
+        800009
+      ],
+      "pageStatus": "partial",
+      "pageExists": true,
+      "listOnly": false,
+      "duplicatePage": false,
+      "baseline": {
+        "costProfiles": 6,
+        "numericSheetStatus": "partial",
+        "headings": [
+          "병영 업그레이드",
+          "병종 해금"
+        ],
+        "tables": 9
+      },
+      "afterVerifiedSupplement": {
+        "costProfiles": 6,
+        "numericSheetStatus": "partial",
+        "profileRows": 180
+      },
+      "ranges": [
+        {
+          "id": 800007,
+          "minLevel": 1,
+          "maxLevel": 30,
+          "retainedRows": 81,
+          "retainedMaxLevel": 40,
+          "profileRanges": [
+            {
+              "profile": "Original",
+              "rows": 30,
+              "unknownResources": [
+                {
+                  "level": 1,
+                  "rank": 0
+                }
+              ],
+              "unknownTime": []
+            },
+            {
+              "profile": "D",
+              "rows": 30,
+              "unknownResources": [
+                {
+                  "level": 1,
+                  "rank": 0
+                }
+              ],
+              "unknownTime": []
+            }
+          ]
+        },
+        {
+          "id": 800008,
+          "minLevel": 1,
+          "maxLevel": 30,
+          "retainedRows": 81,
+          "retainedMaxLevel": 40,
+          "profileRanges": [
+            {
+              "profile": "Original",
+              "rows": 30,
+              "unknownResources": [
+                {
+                  "level": 1,
+                  "rank": 0
+                }
+              ],
+              "unknownTime": []
+            },
+            {
+              "profile": "D",
+              "rows": 30,
+              "unknownResources": [
+                {
+                  "level": 1,
+                  "rank": 0
+                }
+              ],
+              "unknownTime": []
+            }
+          ]
+        },
+        {
+          "id": 800009,
+          "minLevel": 1,
+          "maxLevel": 30,
+          "retainedRows": 81,
+          "retainedMaxLevel": 40,
+          "profileRanges": [
+            {
+              "profile": "Original",
+              "rows": 30,
+              "unknownResources": [
+                {
+                  "level": 1,
+                  "rank": 0
+                }
+              ],
+              "unknownTime": []
+            },
+            {
+              "profile": "D",
+              "rows": 30,
+              "unknownResources": [
+                {
+                  "level": 1,
+                  "rank": 0
+                }
+              ],
+              "unknownTime": []
+            }
+          ]
+        }
+      ],
+      "issues": [
+        "Some initial construction resource maps are absent in the retained client and remain unknown.",
+        "Higher retained levels/ranks are excluded until their progression and server conditions are established."
+      ]
+    },
+    {
+      "slug": "blessed-healing-stele",
+      "buildingIds": [
+        800217
+      ],
+      "pageStatus": "complete_within_declared_scope",
+      "pageExists": true,
+      "listOnly": false,
+      "duplicatePage": false,
+      "baseline": {
+        "costProfiles": 2,
+        "numericSheetStatus": "complete",
+        "headings": [
+          "업그레이드 비용·시간",
+          "개요 및 효과",
+          "레벨별 효과"
+        ],
+        "tables": 3
+      },
+      "afterVerifiedSupplement": {
+        "costProfiles": 2,
+        "numericSheetStatus": "complete",
+        "profileRows": 120
+      },
+      "ranges": [
+        {
+          "id": 800217,
+          "minLevel": 1,
+          "maxLevel": 60,
+          "retainedRows": 61,
+          "retainedMaxLevel": 60,
+          "profileRanges": [
+            {
+              "profile": "Original",
+              "rows": 60,
+              "unknownResources": [],
+              "unknownTime": []
+            },
+            {
+              "profile": "D",
+              "rows": 60,
+              "unknownResources": [],
+              "unknownTime": []
+            }
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "slug": "comms-outpost",
+      "buildingIds": [
+        800016
+      ],
+      "pageStatus": "partial",
+      "pageExists": true,
+      "listOnly": false,
+      "duplicatePage": false,
+      "baseline": {
+        "costProfiles": 2,
+        "numericSheetStatus": "partial",
+        "headings": [
+          "업그레이드 비용·시간",
+          "건물 개요",
+          "핵심 기능 요약",
+          "도움 시스템 안내",
+          "관련 링크",
+          "레벨별 기본 효과"
+        ],
+        "tables": 3
+      },
+      "afterVerifiedSupplement": {
+        "costProfiles": 2,
+        "numericSheetStatus": "partial",
+        "profileRows": 60
+      },
+      "ranges": [
+        {
+          "id": 800016,
+          "minLevel": 1,
+          "maxLevel": 30,
+          "retainedRows": 31,
+          "retainedMaxLevel": 30,
+          "profileRanges": [
+            {
+              "profile": "Original",
+              "rows": 30,
+              "unknownResources": [
+                {
+                  "level": 1,
+                  "rank": 0
+                }
+              ],
+              "unknownTime": []
+            },
+            {
+              "profile": "D",
+              "rows": 30,
+              "unknownResources": [
+                {
+                  "level": 1,
+                  "rank": 0
+                }
+              ],
+              "unknownTime": []
+            }
+          ]
+        }
+      ],
+      "issues": [
+        "Some initial construction resource maps are absent in the retained client and remain unknown."
+      ]
+    },
+    {
+      "slug": "cursed-wound-stele",
+      "buildingIds": [
+        800216
+      ],
+      "pageStatus": "complete_within_declared_scope",
+      "pageExists": true,
+      "listOnly": false,
+      "duplicatePage": false,
+      "baseline": {
+        "costProfiles": 2,
+        "numericSheetStatus": "complete",
+        "headings": [
+          "업그레이드 비용·시간",
+          "개요 및 효과",
+          "레벨별 효과"
+        ],
+        "tables": 3
+      },
+      "afterVerifiedSupplement": {
+        "costProfiles": 2,
+        "numericSheetStatus": "complete",
+        "profileRows": 120
+      },
+      "ranges": [
+        {
+          "id": 800216,
+          "minLevel": 1,
+          "maxLevel": 60,
+          "retainedRows": 61,
+          "retainedMaxLevel": 60,
+          "profileRanges": [
+            {
+              "profile": "Original",
+              "rows": 60,
+              "unknownResources": [],
+              "unknownTime": []
+            },
+            {
+              "profile": "D",
+              "rows": 60,
+              "unknownResources": [],
+              "unknownTime": []
+            }
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "slug": "enlistment-office",
+      "buildingIds": [
+        800032
+      ],
+      "pageStatus": "partial",
+      "pageExists": true,
+      "listOnly": false,
+      "duplicatePage": false,
+      "baseline": {
+        "costProfiles": 0,
+        "numericSheetStatus": "missing",
+        "headings": [
+          "업그레이드 시트",
+          "적용 조건",
+          "모병소 상태",
+          "모병소 규칙",
+          "충성도 설명"
+        ],
+        "tables": 0
+      },
+      "afterVerifiedSupplement": {
+        "costProfiles": 2,
+        "numericSheetStatus": "partial",
+        "profileRows": 2
+      },
+      "ranges": [
+        {
+          "id": 800032,
+          "minLevel": 1,
+          "maxLevel": 1,
+          "retainedRows": 2,
+          "retainedMaxLevel": 1,
+          "profileRanges": [
+            {
+              "profile": "Original",
+              "rows": 1,
+              "unknownResources": [],
+              "unknownTime": []
+            },
+            {
+              "profile": "D",
+              "rows": 1,
+              "unknownResources": [
+                {
+                  "level": 1,
+                  "rank": 0
+                }
+              ],
+              "unknownTime": []
+            }
+          ]
+        }
+      ],
+      "issues": [
+        "Some initial construction resource maps are absent in the retained client and remain unknown.",
+        "Some effect labels, units, display consumers or applicability remain unverified; raw effect fields are not promoted to gameplay claims.",
+        "Only Lv.1 construction is present; no multi-level growth is invented."
+      ]
+    },
+    {
+      "slug": "garrison-station",
+      "buildingIds": [
+        800152
+      ],
+      "pageStatus": "partial",
+      "pageExists": true,
+      "listOnly": false,
+      "duplicatePage": false,
+      "baseline": {
+        "costProfiles": 2,
+        "numericSheetStatus": "partial",
+        "headings": [
+          "업그레이드 비용·시간",
+          "개요 및 운영 방식",
+          "병사 현황 구역"
+        ],
+        "tables": 2
+      },
+      "afterVerifiedSupplement": {
+        "costProfiles": 2,
+        "numericSheetStatus": "partial",
+        "profileRows": 60
+      },
+      "ranges": [
+        {
+          "id": 800152,
+          "minLevel": 1,
+          "maxLevel": 30,
+          "retainedRows": 31,
+          "retainedMaxLevel": 30,
+          "profileRanges": [
+            {
+              "profile": "Original",
+              "rows": 30,
+              "unknownResources": [],
+              "unknownTime": []
+            },
+            {
+              "profile": "D",
+              "rows": 30,
+              "unknownResources": [
+                {
+                  "level": 1,
+                  "rank": 0
+                }
+              ],
+              "unknownTime": []
+            }
+          ]
+        }
+      ],
+      "issues": [
+        "Some initial construction resource maps are absent in the retained client and remain unknown."
+      ]
+    },
+    {
+      "slug": "greenhouse",
+      "buildingIds": [
+        800001
+      ],
+      "pageStatus": "partial",
+      "pageExists": true,
+      "listOnly": false,
+      "duplicatePage": false,
+      "baseline": {
+        "costProfiles": 2,
+        "numericSheetStatus": "partial",
+        "headings": [
+          "업그레이드 시트",
+          "온실 · 업그레이드 비용·시간"
+        ],
+        "tables": 2
+      },
+      "afterVerifiedSupplement": {
+        "costProfiles": 2,
+        "numericSheetStatus": "partial",
+        "profileRows": 60
+      },
+      "ranges": [
+        {
+          "id": 800001,
+          "minLevel": 1,
+          "maxLevel": 30,
+          "retainedRows": 41,
+          "retainedMaxLevel": 40,
+          "profileRanges": [
+            {
+              "profile": "Original",
+              "rows": 30,
+              "unknownResources": [
+                {
+                  "level": 1,
+                  "rank": 0
+                }
+              ],
+              "unknownTime": []
+            },
+            {
+              "profile": "D",
+              "rows": 30,
+              "unknownResources": [],
+              "unknownTime": []
+            }
+          ]
+        }
+      ],
+      "issues": [
+        "Some initial construction resource maps are absent in the retained client and remain unknown.",
+        "Some effect labels, units, display consumers or applicability remain unverified; raw effect fields are not promoted to gameplay claims.",
+        "Higher retained levels/ranks are excluded until their progression and server conditions are established."
+      ]
+    },
+    {
+      "slug": "guardian-of-life-monument",
+      "buildingIds": [
+        800149
+      ],
+      "pageStatus": "complete_within_declared_scope",
+      "pageExists": true,
+      "listOnly": false,
+      "duplicatePage": false,
+      "baseline": {
+        "costProfiles": 2,
+        "numericSheetStatus": "complete",
+        "headings": [
+          "업그레이드 비용·시간",
+          "건물 개요",
+          "최대 레벨 효과",
+          "레벨별 효과",
+          "관련 링크"
+        ],
+        "tables": 3
+      },
+      "afterVerifiedSupplement": {
+        "costProfiles": 2,
+        "numericSheetStatus": "complete",
+        "profileRows": 60
+      },
+      "ranges": [
+        {
+          "id": 800149,
+          "minLevel": 1,
+          "maxLevel": 30,
+          "retainedRows": 31,
+          "retainedMaxLevel": 30,
+          "profileRanges": [
+            {
+              "profile": "Original",
+              "rows": 30,
+              "unknownResources": [],
+              "unknownTime": []
+            },
+            {
+              "profile": "D",
+              "rows": 30,
+              "unknownResources": [],
+              "unknownTime": []
+            }
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "slug": "hero-academy",
+      "buildingIds": [
+        800142
+      ],
+      "pageStatus": "complete_within_declared_scope",
+      "pageExists": true,
+      "listOnly": false,
+      "duplicatePage": false,
+      "baseline": {
+        "costProfiles": 2,
+        "numericSheetStatus": "complete",
+        "headings": [
+          "업그레이드 비용·시간",
+          "개요 및 효과",
+          "레벨별 효과"
+        ],
+        "tables": 3
+      },
+      "afterVerifiedSupplement": {
+        "costProfiles": 2,
+        "numericSheetStatus": "complete",
+        "profileRows": 60
+      },
+      "ranges": [
+        {
+          "id": 800142,
+          "minLevel": 1,
+          "maxLevel": 30,
+          "retainedRows": 31,
+          "retainedMaxLevel": 30,
+          "profileRanges": [
+            {
+              "profile": "Original",
+              "rows": 30,
+              "unknownResources": [],
+              "unknownTime": []
+            },
+            {
+              "profile": "D",
+              "rows": 30,
+              "unknownResources": [],
+              "unknownTime": []
+            }
+          ]
+        }
+      ],
+      "issues": []
+    },
+    {
+      "slug": "hospital",
+      "buildingIds": [
+        800010
+      ],
+      "pageStatus": "partial",
+      "pageExists": true,
+      "listOnly": false,
+      "duplicatePage": false,
+      "baseline": {
+        "costProfiles": 2,
+        "numericSheetStatus": "partial",
+        "headings": [
+          "업그레이드 비용·시간",
+          "적용 조건",
+          "병원 상태",
+          "병원 규칙"
+        ],
+        "tables": 2
+      },
+      "afterVerifiedSupplement": {
+        "costProfiles": 2,
+        "numericSheetStatus": "partial",
+        "profileRows": 60
+      },
+      "ranges": [
+        {
+          "id": 800010,
+          "minLevel": 1,
+          "maxLevel": 30,
+          "retainedRows": 81,
+          "retainedMaxLevel": 40,
+          "profileRanges": [
+            {
+              "profile": "Original",
+              "rows": 30,
+              "unknownResources": [],
+              "unknownTime": []
+            },
+            {
+              "profile": "D",
+              "rows": 30,
+              "unknownResources": [
+                {
+                  "level": 1,
+                  "rank": 0
+                }
+              ],
+              "unknownTime": []
+            }
+          ]
+        }
+      ],
+      "issues": [
+        "Some initial construction resource maps are absent in the retained client and remain unknown.",
+        "Higher retained levels/ranks are excluded until their progression and server conditions are established."
+      ]
+    },
+    {
+      "slug": "houses",
+      "buildingIds": [
+        800110,
+        800111,
+        800112,
+        800113,
+        800114,
+        800115
+      ],
+      "pageStatus": "partial",
+      "pageExists": true,
+      "listOnly": false,
+      "duplicatePage": false,
+      "baseline": {
+        "costProfiles": 12,
+        "numericSheetStatus": "complete",
+        "headings": [
+          "업그레이드 시트",
+          "민가-1 · 업그레이드 비용·시간",
+          "민가-2 · 업그레이드 비용·시간",
+          "민가-3 · 업그레이드 비용·시간",
+          "민가-4 · 업그레이드 비용·시간",
+          "민가-5 · 업그레이드 비용·시간",
+          "민가-6 · 업그레이드 비용·시간"
+        ],
+        "tables": 12
+      },
+      "afterVerifiedSupplement": {
+        "costProfiles": 12,
+        "numericSheetStatus": "complete",
+        "profileRows": 120
+      },
+      "ranges": [
+        {
+          "id": 800110,
+          "minLevel": 1,
+          "maxLevel": 10,
+          "retainedRows": 11,
+          "retainedMaxLevel": 10,
+          "profileRanges": [
+            {
+              "profile": "Original",
+              "rows": 10,
+              "unknownResources": [],
+              "unknownTime": []
+            },
+            {
+              "profile": "D",
+              "rows": 10,
+              "unknownResources": [],
+              "unknownTime": []
+            }
+          ]
+        },
+        {
+          "id": 800111,
+          "minLevel": 1,
+          "maxLevel": 10,
+          "retainedRows": 11,
+          "retainedMaxLevel": 10,
+          "profileRanges": [
+            {
+              "profile": "Original",
+              "rows": 10,
+              "unknownResources": [],
+              "unknownTime": []
+            },
+            {
+              "profile": "D",
+              "rows": 10,
+              "unknownResources": [],
+              "unknownTime": []
+            }
+          ]
+        },
+        {
+          "id": 800112,
+          "minLevel": 1,
+          "maxLevel": 10,
+          "retainedRows": 11,
+          "retainedMaxLevel": 10,
+          "profileRanges": [
+            {
+              "profile": "Original",
+              "rows": 10,
+              "unknownResources": [],
+              "unknownTime": []
+            },
+            {
+              "profile": "D",
+              "rows": 10,
+              "unknownResources": [],
+              "unknownTime": []
+            }
+          ]
+        },
+        {
+          "id": 800113,
+          "minLevel": 1,
+          "maxLevel": 10,
+          "retainedRows": 11,
+          "retainedMaxLevel": 10,
+          "profileRanges": [
+            {
+              "profile": "Original",
+              "rows": 10,
+              "unknownResources": [],
+              "unknownTime": []
+            },
+            {
+              "profile": "D",
+              "rows": 10,
+              "unknownResources": [],
+              "unknownTime": []
+            }
+          ]
+        },
+        {
+          "id": 800114,
+          "minLevel": 1,
+          "maxLevel": 10,
+          "retainedRows": 11,
+          "retainedMaxLevel": 10,
+          "profileRanges": [
+            {
+              "profile": "Original",
+              "rows": 10,
+              "unknownResources": [],
+              "unknownTime": []
+            },
+            {
+              "profile": "D",
+              "rows": 10,
+              "unknownResources": [],
+              "unknownTime": []
+            }
+          ]
+        },
+        {
+          "id": 800115,
+          "minLevel": 1,
+          "maxLevel": 10,
+          "retainedRows": 11,
+          "retainedMaxLevel": 10,
+          "profileRanges": [
+            {
+              "profile": "Original",
+              "rows": 10,
+              "unknownResources": [],
+              "unknownTime": []
+            },
+            {
+              "profile": "D",
+              "rows": 10,
+              "unknownResources": [],
+              "unknownTime": []
+            }
+          ]
+        }
+      ],
+      "issues": [
+        "Some effect labels, units, display consumers or applicability remain unverified; raw effect fields are not promoted to gameplay claims."
+      ]
+    },
+    {
+      "slug": "kitchen",
+      "buildingIds": [
+        800106
+      ],
+      "pageStatus": "partial",
+      "pageExists": true,
+      "listOnly": false,
+      "duplicatePage": false,
+      "baseline": {
+        "costProfiles": 2,
+        "numericSheetStatus": "complete",
+        "headings": [
+          "업그레이드 시트",
+          "주방 · 업그레이드 비용·시간"
+        ],
+        "tables": 2
+      },
+      "afterVerifiedSupplement": {
+        "costProfiles": 2,
+        "numericSheetStatus": "complete",
+        "profileRows": 20
+      },
+      "ranges": [
+        {
+          "id": 800106,
+          "minLevel": 1,
+          "maxLevel": 10,
+          "retainedRows": 11,
+          "retainedMaxLevel": 10,
+          "profileRanges": [
+            {
+              "profile": "Original",
+              "rows": 10,
+              "unknownResources": [],
+              "unknownTime": []
+            },
+            {
+              "profile": "D",
+              "rows": 10,
+              "unknownResources": [],
+              "unknownTime": []
+            }
+          ]
+        }
+      ],
+      "issues": [
+        "Some effect labels, units, display consumers or applicability remain unverified; raw effect fields are not promoted to gameplay claims."
+      ]
+    },
+    {
+      "slug": "lab",
+      "buildingIds": [
+        800012
+      ],
+      "pageStatus": "partial",
+      "pageExists": true,
+      "listOnly": false,
+      "duplicatePage": false,
+      "baseline": {
+        "costProfiles": 2,
+        "numericSheetStatus": "partial",
+        "headings": [
+          "업그레이드 비용·시간",
+          "레벨별 기본 효과",
+          "적용 조건",
+          "연구 중요도",
+          "연구 비용과 조건",
+          "감염자 토벌 참고 데이터",
+          "감염자 보스 집결 보상 조건",
+          "연구 탐색기",
+          "토벌 연구 레벨별 전투력"
+        ],
+        "tables": 7
+      },
+      "afterVerifiedSupplement": {
+        "costProfiles": 2,
+        "numericSheetStatus": "partial",
+        "profileRows": 60
+      },
+      "ranges": [
+        {
+          "id": 800012,
+          "minLevel": 1,
+          "maxLevel": 30,
+          "retainedRows": 31,
+          "retainedMaxLevel": 30,
+          "profileRanges": [
+            {
+              "profile": "Original",
+              "rows": 30,
+              "unknownResources": [
+                {
+                  "level": 1,
+                  "rank": 0
+                }
+              ],
+              "unknownTime": []
+            },
+            {
+              "profile": "D",
+              "rows": 30,
+              "unknownResources": [
+                {
+                  "level": 1,
+                  "rank": 0
+                }
+              ],
+              "unknownTime": []
+            }
+          ]
+        }
+      ],
+      "issues": [
+        "Some initial construction resource maps are absent in the retained client and remain unknown."
+      ]
+    },
+    {
+      "slug": "lab-2",
+      "buildingIds": [
+        800168
+      ],
+      "pageStatus": "partial",
+      "pageExists": true,
+      "listOnly": false,
+      "duplicatePage": false,
+      "baseline": {
+        "costProfiles": 2,
+        "numericSheetStatus": "partial",
+        "headings": [
+          "업그레이드 시트",
+          "2번 실험실 · 업그레이드 비용·시간"
+        ],
+        "tables": 2
+      },
+      "afterVerifiedSupplement": {
+        "costProfiles": 2,
+        "numericSheetStatus": "partial",
+        "profileRows": 60
+      },
+      "ranges": [
+        {
+          "id": 800168,
+          "minLevel": 1,
+          "maxLevel": 30,
+          "retainedRows": 31,
+          "retainedMaxLevel": 30,
+          "profileRanges": [
+            {
+              "profile": "Original",
+              "rows": 30,
+              "unknownResources": [
+                {
+                  "level": 1,
+                  "rank": 0
+                }
+              ],
+              "unknownTime": []
+            },
+            {
+              "profile": "D",
+              "rows": 30,
+              "unknownResources": [
+                {
+                  "level": 1,
+                  "rank": 0
+                }
+              ],
+              "unknownTime": []
+            }
+          ]
+        }
+      ],
+      "issues": [
+        "Some initial construction resource maps are absent in the retained client and remain unknown.",
+        "Initial construction conditions remain unconfirmed despite recovered numeric fields."
+      ]
+    },
+    {
+      "slug": "lookout-tower",
+      "buildingIds": [
+        800014
+      ],
+      "pageStatus": "partial",
+      "pageExists": true,
+      "listOnly": false,
+      "duplicatePage": false,
+      "baseline": {
+        "costProfiles": 2,
+        "numericSheetStatus": "complete",
+        "headings": [
+          "업그레이드 시트",
+          "감시탑 · 업그레이드 비용·시간"
+        ],
+        "tables": 2
+      },
+      "afterVerifiedSupplement": {
+        "costProfiles": 2,
+        "numericSheetStatus": "complete",
+        "profileRows": 60
+      },
+      "ranges": [
+        {
+          "id": 800014,
+          "minLevel": 1,
+          "maxLevel": 30,
+          "retainedRows": 31,
+          "retainedMaxLevel": 30,
+          "profileRanges": [
+            {
+              "profile": "Original",
+              "rows": 30,
+              "unknownResources": [],
+              "unknownTime": []
+            },
+            {
+              "profile": "D",
+              "rows": 30,
+              "unknownResources": [],
+              "unknownTime": []
+            }
+          ]
+        }
+      ],
+      "issues": [
+        "Some effect labels, units, display consumers or applicability remain unverified; raw effect fields are not promoted to gameplay claims."
+      ]
+    },
+    {
+      "slug": "lumberyard",
+      "buildingIds": [
+        800003
+      ],
+      "pageStatus": "partial",
+      "pageExists": true,
+      "listOnly": false,
+      "duplicatePage": false,
+      "baseline": {
+        "costProfiles": 2,
+        "numericSheetStatus": "partial",
+        "headings": [
+          "업그레이드 시트",
+          "목재 공방 · 업그레이드 비용·시간"
+        ],
+        "tables": 2
+      },
+      "afterVerifiedSupplement": {
+        "costProfiles": 2,
+        "numericSheetStatus": "partial",
+        "profileRows": 60
+      },
+      "ranges": [
+        {
+          "id": 800003,
+          "minLevel": 1,
+          "maxLevel": 30,
+          "retainedRows": 41,
+          "retainedMaxLevel": 40,
+          "profileRanges": [
+            {
+              "profile": "Original",
+              "rows": 30,
+              "unknownResources": [
+                {
+                  "level": 1,
+                  "rank": 0
+                }
+              ],
+              "unknownTime": []
+            },
+            {
+              "profile": "D",
+              "rows": 30,
+              "unknownResources": [],
+              "unknownTime": []
+            }
+          ]
+        }
+      ],
+      "issues": [
+        "Some initial construction resource maps are absent in the retained client and remain unknown.",
+        "Some effect labels, units, display consumers or applicability remain unverified; raw effect fields are not promoted to gameplay claims.",
+        "Higher retained levels/ranks are excluded until their progression and server conditions are established."
+      ]
+    },
+    {
+      "slug": "power-plant",
+      "buildingIds": [
+        800005
+      ],
+      "pageStatus": "partial",
+      "pageExists": true,
+      "listOnly": false,
+      "duplicatePage": false,
+      "baseline": {
+        "costProfiles": 2,
+        "numericSheetStatus": "complete",
+        "headings": [
+          "적용 조건",
+          "레벨별 요구량",
+          "",
+          "발전소 스킬"
+        ],
+        "tables": 2
+      },
+      "afterVerifiedSupplement": {
+        "costProfiles": 2,
+        "numericSheetStatus": "complete",
+        "profileRows": 60
+      },
+      "ranges": [
+        {
+          "id": 800005,
+          "minLevel": 1,
+          "maxLevel": 30,
+          "retainedRows": 81,
+          "retainedMaxLevel": 40,
+          "profileRanges": [
+            {
+              "profile": "Original",
+              "rows": 30,
+              "unknownResources": [],
+              "unknownTime": []
+            },
+            {
+              "profile": "D",
+              "rows": 30,
+              "unknownResources": [],
+              "unknownTime": []
+            }
+          ]
+        }
+      ],
+      "issues": [
+        "Some effect labels, units, display consumers or applicability remain unverified; raw effect fields are not promoted to gameplay claims.",
+        "The retained coal/effect-time table cannot yet be linked to an equivalent client field/unit; preserve it without deriving new values.",
+        "Higher retained levels/ranks are excluded until their progression and server conditions are established."
+      ]
+    },
+    {
+      "slug": "refinery",
+      "buildingIds": [
+        800004
+      ],
+      "pageStatus": "partial",
+      "pageExists": true,
+      "listOnly": false,
+      "duplicatePage": false,
+      "baseline": {
+        "costProfiles": 2,
+        "numericSheetStatus": "partial",
+        "headings": [
+          "업그레이드 시트",
+          "정유 공방 · 업그레이드 비용·시간"
+        ],
+        "tables": 2
+      },
+      "afterVerifiedSupplement": {
+        "costProfiles": 2,
+        "numericSheetStatus": "partial",
+        "profileRows": 60
+      },
+      "ranges": [
+        {
+          "id": 800004,
+          "minLevel": 1,
+          "maxLevel": 30,
+          "retainedRows": 41,
+          "retainedMaxLevel": 40,
+          "profileRanges": [
+            {
+              "profile": "Original",
+              "rows": 30,
+              "unknownResources": [
+                {
+                  "level": 1,
+                  "rank": 0
+                }
+              ],
+              "unknownTime": []
+            },
+            {
+              "profile": "D",
+              "rows": 30,
+              "unknownResources": [],
+              "unknownTime": []
+            }
+          ]
+        }
+      ],
+      "issues": [
+        "Some initial construction resource maps are absent in the retained client and remain unknown.",
+        "Some effect labels, units, display consumers or applicability remain unverified; raw effect fields are not promoted to gameplay claims.",
+        "Initial construction conditions remain unconfirmed despite recovered numeric fields.",
+        "Higher retained levels/ranks are excluded until their progression and server conditions are established."
+      ]
+    },
+    {
+      "slug": "smelter",
+      "buildingIds": [
+        800002
+      ],
+      "pageStatus": "partial",
+      "pageExists": true,
+      "listOnly": false,
+      "duplicatePage": false,
+      "baseline": {
+        "costProfiles": 2,
+        "numericSheetStatus": "complete",
+        "headings": [
+          "업그레이드 시트",
+          "제련 공방 · 업그레이드 비용·시간"
+        ],
+        "tables": 2
+      },
+      "afterVerifiedSupplement": {
+        "costProfiles": 2,
+        "numericSheetStatus": "complete",
+        "profileRows": 60
+      },
+      "ranges": [
+        {
+          "id": 800002,
+          "minLevel": 1,
+          "maxLevel": 30,
+          "retainedRows": 41,
+          "retainedMaxLevel": 40,
+          "profileRanges": [
+            {
+              "profile": "Original",
+              "rows": 30,
+              "unknownResources": [],
+              "unknownTime": []
+            },
+            {
+              "profile": "D",
+              "rows": 30,
+              "unknownResources": [],
+              "unknownTime": []
+            }
+          ]
+        }
+      ],
+      "issues": [
+        "Some effect labels, units, display consumers or applicability remain unverified; raw effect fields are not promoted to gameplay claims.",
+        "Higher retained levels/ranks are excluded until their progression and server conditions are established."
+      ]
+    },
+    {
+      "slug": "warbringer-monument",
+      "buildingIds": [
+        800147
+      ],
+      "pageStatus": "complete_within_declared_scope",
+      "pageExists": true,
+      "listOnly": false,
+      "duplicatePage": false,
+      "baseline": {
+        "costProfiles": 2,
+        "numericSheetStatus": "complete",
+        "headings": [
+          "업그레이드 비용·시간",
+          "건물 개요",
+          "최대 레벨 효과",
+          "레벨별 효과",
+          "관련 링크"
+        ],
+        "tables": 3
+      },
+      "afterVerifiedSupplement": {
+        "costProfiles": 2,
+        "numericSheetStatus": "complete",
+        "profileRows": 60
+      },
+      "ranges": [
+        {
+          "id": 800147,
+          "minLevel": 1,
+          "maxLevel": 30,
+          "retainedRows": 31,
+          "retainedMaxLevel": 30,
+          "profileRanges": [
+            {
+              "profile": "Original",
+              "rows": 30,
+              "unknownResources": [],
+              "unknownTime": []
+            },
+            {
+              "profile": "D",
+              "rows": 30,
+              "unknownResources": [],
+              "unknownTime": []
+            }
+          ]
+        }
+      ],
+      "issues": []
+    }
+  ]
+}

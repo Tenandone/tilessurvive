@@ -13,6 +13,7 @@ de:{detail:'Details',sheet:'Zur Ausbautabelle',title:'Ausbautabelle',known:'Best
 };
 const esc=s=>String(s).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('"','&quot;');
 function coverage(slug,d){
+ if(d.querySelector('[data-building-system]')){const buildings=require('./build-building-system').model.buildings.filter(b=>b.slug===slug),levels=buildings.flatMap(b=>b.profiles.flatMap(p=>p.rows.map(r=>r.level)));if(!levels.length)throw Error('Unknown common building '+slug);return {kind:'cost',range:`Lv.${Math.min(...levels)}–${Math.max(...levels)}`};}
  const expanded=d.querySelector('[data-building-growth-60]');
  if(expanded){const b=require('../data/content-60/buildings.json').buildings.find(x=>x.slug===slug);if(!b)throw Error('Unknown expanded building '+slug);return {kind:'cost',range:`Lv.${b.minLevel}–${b.maxLevel}`};}
  const client=costs.buildings.filter(b=>b.slug===slug),effect=effects.profiles.find(p=>p.slug===slug);
@@ -34,6 +35,7 @@ function detailShell(d,lang){const t=copy[lang];
  d.documentElement.setAttribute('data-building-level-label-53',t.level);asset(d,'',true);
 }
 function detail(html,lang,slug){const d=parseHTML(html).document,t=copy[lang],c=coverage(slug,d);
+ if(d.querySelector('[data-building-system]'))return {html:require('./build-building-system').project(html,lang,slug),coverage:c};
  if(slug==='power-plant')return {html:require('./build-power-plant-original').project(html,`${lang}/buildings/${slug}/index.html`),coverage:c};
  // Keep the independently scoped profile/rank sheet when the legacy UX build is rerun.
  if(d.querySelector('[data-building-growth-60]'))return {html:require('./build-building-growth-60').project(html,`${lang}/buildings/${slug}/index.html`),coverage:c};

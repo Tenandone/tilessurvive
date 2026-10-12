@@ -1,6 +1,6 @@
 {
-  "generatedAt": "2026-10-10T23:30:44.774Z",
-  "itemCount": 2665,
+  "generatedAt": "2026-10-12T23:29:54.825Z",
+  "itemCount": 2605,
   "items": [
     {
       "language": "de",
@@ -137,174 +137,6 @@
     },
     {
       "language": "de",
-      "type": "building",
-      "title": "Andere Einstellung (D) · Lv.1–10",
-      "description": "Stufe 2 vergleichen: Holz: 200 · Nahrung: 0 · Metall: 0 · Benzin: 0 · Grundzeit: 3 Sek",
-      "url": "/de/buildings/houses/#c60-building-800110-D"
-    },
-    {
-      "language": "de",
-      "type": "building",
-      "title": "Andere Einstellung (D) · Lv.1–10",
-      "description": "Stufe 2 vergleichen: Holz: 200 · Nahrung: 0 · Metall: 0 · Benzin: 0 · Grundzeit: 3 Sek",
-      "url": "/de/buildings/houses/#c60-building-800111-D"
-    },
-    {
-      "language": "de",
-      "type": "building",
-      "title": "Andere Einstellung (D) · Lv.1–10",
-      "description": "Stufe 2 vergleichen: Holz: 300 · Nahrung: 0 · Metall: 0 · Benzin: 0 · Grundzeit: 3 Sek",
-      "url": "/de/buildings/houses/#c60-building-800112-D"
-    },
-    {
-      "language": "de",
-      "type": "building",
-      "title": "Andere Einstellung (D) · Lv.1–10",
-      "description": "Stufe 2 vergleichen: Holz: 300 · Nahrung: 0 · Metall: 0 · Benzin: 0 · Grundzeit: 3 Sek",
-      "url": "/de/buildings/houses/#c60-building-800113-D"
-    },
-    {
-      "language": "de",
-      "type": "building",
-      "title": "Andere Einstellung (D) · Lv.1–10",
-      "description": "Stufe 2 vergleichen: Holz: 300 · Nahrung: 0 · Metall: 0 · Benzin: 0 · Grundzeit: 3 Sek",
-      "url": "/de/buildings/houses/#c60-building-800114-D"
-    },
-    {
-      "language": "de",
-      "type": "building",
-      "title": "Andere Einstellung (D) · Lv.1–10",
-      "description": "Stufe 2 vergleichen: Holz: 300 · Nahrung: 0 · Metall: 0 · Benzin: 0 · Grundzeit: 3 Sek",
-      "url": "/de/buildings/houses/#c60-building-800115-D"
-    },
-    {
-      "language": "de",
-      "type": "building",
-      "title": "Andere Einstellung (D) · Lv.1–10",
-      "description": "Stufe 2 vergleichen: Holz: 200 · Nahrung: 0 · Metall: 0 · Benzin: 0 · Grundzeit: 3 Sek",
-      "url": "/de/buildings/kitchen/#c60-building-800106-D"
-    },
-    {
-      "language": "de",
-      "type": "building",
-      "title": "Andere Einstellung (D) · Lv.1–30",
-      "description": "Stufe 2 vergleichen: Holz: 810.000 · Nahrung: 647.000 · Metall: 194.300 · Benzin: 97.100 · Grundzeit: 1 Min",
-      "url": "/de/buildings/aegis-monument/#c60-building-800148-D"
-    },
-    {
-      "language": "de",
-      "type": "building",
-      "title": "Andere Einstellung (D) · Lv.1–30",
-      "description": "Stufe 2 vergleichen: Holz: 500 · Nahrung: 500 · Metall: 0 · Benzin: 0 · Grundzeit: 3 Sek",
-      "url": "/de/buildings/artifact-workshop/#c60-building-800150-D"
-    },
-    {
-      "language": "de",
-      "type": "building",
-      "title": "Andere Einstellung (D) · Lv.1–30",
-      "description": "Stufe 2 vergleichen: Holz: 4.000 · Nahrung: 0 · Metall: 0 · Benzin: 0 · Grundzeit: 3 Sek",
-      "url": "/de/buildings/comms-outpost/#c60-building-800016-D"
-    },
-    {
-      "language": "de",
-      "type": "building",
-      "title": "Andere Einstellung (D) · Lv.1–30",
-      "description": "Stufe 2 vergleichen: Holz: 3.300 · Nahrung: 3.300 · Metall: 0 · Benzin: 0 · Grundzeit: 3 Sek",
-      "url": "/de/buildings/garrison-station/#c60-building-800152-D"
-    },
-    {
-      "language": "de",
-      "type": "building",
-      "title": "Andere Einstellung (D) · Lv.1–30",
-      "description": "Stufe 2 vergleichen: Holz: 200 · Nahrung: 0 · Metall: 0 · Benzin: 0 · Grundzeit: 3 Sek",
-      "url": "/de/buildings/greenhouse/#c60-building-800001-D"
-    },
-    {
-      "language": "de",
-      "type": "building",
-      "title": "Andere Einstellung (D) · Lv.1–30",
-      "description": "Stufe 2 vergleichen: Holz: 971.000 · Nahrung: 810.000 · Metall: 129.500 · Benzin: 97.100 · Grundzeit: 1 Min",
-      "url": "/de/buildings/guardian-of-life-monument/#c60-building-800149-D"
-    },
-    {
-      "language": "de",
-      "type": "building",
-      "title": "Andere Einstellung (D) · Lv.1–30",
-      "description": "Stufe 2 vergleichen: Holz: 1.457.000 · Nahrung: 1.457.000 · Metall: 161.900 · Benzin: 0 · Grundzeit: 1 Min",
-      "url": "/de/buildings/hero-academy/#c60-building-800142-D"
-    },
-    {
-      "language": "de",
-      "type": "building",
-      "title": "Andere Einstellung (D) · Lv.1–30",
-      "description": "Stufe 2 vergleichen: Holz: 2.000 · Nahrung: 0 · Metall: 0 · Benzin: 0 · Grundzeit: 3 Sek",
-      "url": "/de/buildings/hospital/#c60-building-800010-D"
-    },
-    {
-      "language": "de",
-      "type": "building",
-      "title": "Andere Einstellung (D) · Lv.1–30",
-      "description": "Stufe 2 vergleichen: Holz: 2.000 · Nahrung: 0 · Metall: 0 · Benzin: 0 · Grundzeit: 3 Sek",
-      "url": "/de/buildings/lab/#c60-building-800012-D"
-    },
-    {
-      "language": "de",
-      "type": "building",
-      "title": "Andere Einstellung (D) · Lv.1–30",
-      "description": "Stufe 2 vergleichen: Holz: 2.000 · Nahrung: 0 · Metall: 0 · Benzin: 0 · Grundzeit: 3 Sek",
-      "url": "/de/buildings/lab-2/#c60-building-800168-D"
-    },
-    {
-      "language": "de",
-      "type": "building",
-      "title": "Andere Einstellung (D) · Lv.1–30",
-      "description": "Stufe 2 vergleichen: Holz: 2.500 · Nahrung: 2.500 · Metall: 0 · Benzin: 0 · Grundzeit: 6 Sek",
-      "url": "/de/buildings/lookout-tower/#c60-building-800014-D"
-    },
-    {
-      "language": "de",
-      "type": "building",
-      "title": "Andere Einstellung (D) · Lv.1–30",
-      "description": "Stufe 2 vergleichen: Holz: 300 · Nahrung: 0 · Metall: 0 · Benzin: 0 · Grundzeit: 3 Sek",
-      "url": "/de/buildings/lumberyard/#c60-building-800003-D"
-    },
-    {
-      "language": "de",
-      "type": "building",
-      "title": "Andere Einstellung (D) · Lv.1–30",
-      "description": "Stufe 2 vergleichen: Holz: 300 · Nahrung: 0 · Metall: 200 · Benzin: 0 · Grundzeit: 3 Sek",
-      "url": "/de/buildings/refinery/#c60-building-800004-D"
-    },
-    {
-      "language": "de",
-      "type": "building",
-      "title": "Andere Einstellung (D) · Lv.1–30",
-      "description": "Stufe 2 vergleichen: Holz: 300 · Nahrung: 0 · Metall: 250 · Benzin: 0 · Grundzeit: 3 Sek",
-      "url": "/de/buildings/smelter/#c60-building-800002-D"
-    },
-    {
-      "language": "de",
-      "type": "building",
-      "title": "Andere Einstellung (D) · Lv.1–30",
-      "description": "Stufe 2 vergleichen: Holz: 810.000 · Nahrung: 971.000 · Metall: 129.500 · Benzin: 97.100 · Grundzeit: 1 Min",
-      "url": "/de/buildings/warbringer-monument/#c60-building-800147-D"
-    },
-    {
-      "language": "de",
-      "type": "building",
-      "title": "Andere Einstellung (D) · Lv.1–60",
-      "description": "Stufe 2 vergleichen: Holz: 45.785.900 · Nahrung: 45.785.900 · Metall: 13.735.900 · Benzin: 1.442.600 · Grundzeit: 5 T 6 Std 58 Min 20 Sek",
-      "url": "/de/buildings/blessed-healing-stele/#c60-building-800217-D"
-    },
-    {
-      "language": "de",
-      "type": "building",
-      "title": "Andere Einstellung (D) · Lv.1–60",
-      "description": "Stufe 2 vergleichen: Holz: 50.365.000 · Nahrung: 50.365.000 · Metall: 15.110.000 · Benzin: 1.587.000 · Grundzeit: 5 T 6 Std 58 Min 20 Sek",
-      "url": "/de/buildings/cursed-wound-stele/#c60-building-800216-D"
-    },
-    {
-      "language": "de",
       "type": "event",
       "title": "Arcadian Conquest",
       "description": "Die Kampfphase dauert laut v2.5.600 zwei Stunden. Prüfe Besetzung, Sammelangriffe und den universellen 20-Stunden-Beschleuniger in den persönlichen Kampfbelohnungen.",
@@ -321,7 +153,7 @@
       "language": "de",
       "type": "building",
       "title": "Artefaktwerkstatt | Gebäude | TilesSurvive.net",
-      "description": "Artefaktwerkstatt · Grundressourcen, Zeit, Baugegenstände und benötigte Gebäude nach Stufe und Einstellung.",
+      "description": "Artefaktwerkstatt · Die Artefaktwerkstatt nutzt Transformatoren als Teil des Stromnetzes. Laut Spielbeschreibung verbessert sie die Effizienz und beschleunigt den Bau. Prüfe bei mehreren geplanten Bauten den Werkstatteffekt im Spiel. Hier vergleichst du die eigenen Grundkosten und Zeiten des Gebäudes.",
       "url": "/de/buildings/artifact-workshop/"
     },
     {
@@ -344,6 +176,13 @@
       "title": "Ausrüstungsupgrade EXP | TilesSurvive.net",
       "description": "Für Stufe 1→80 werden 1.592.200 EXP benötigt. Blaue, violette und goldene Ausrüstungsschrottteile liefern 100, 400 bzw. 2.000 EXP. Gib ihren in EXP umgerechneten Wert als vorhandene Menge ein. Diese Tabelle gilt nicht für andere Aufwertungssysteme.",
       "url": "/de/database/gear-exp/"
+    },
+    {
+      "language": "de",
+      "type": "building",
+      "title": "Außenposten | Gebäude | TilesSurvive.net",
+      "description": "Außenposten · Am Außenposten tauschst du Verstärkungen und Zeithilfe mit Allianz und Freunden aus. Die bestätigte Stufentabelle enthält derzeit die Anzahl der Zeithilfen. Wenn du bei Bau oder Forschung Allianzhilfe nutzt, vergleiche die Zeithilfen der nächsten Stufe für deine Ausbauplanung.",
+      "url": "/de/buildings/comms-outpost/"
     },
     {
       "language": "de",
@@ -412,7 +251,7 @@
       "language": "de",
       "type": "building",
       "title": "Benzintank | Gebäude | TilesSurvive.net",
-      "description": "Benzintank · Grundressourcen, Zeit, Baugegenstände und benötigte Gebäude nach Stufe und Einstellung.",
+      "description": "Benzintank · Der Benzintank produziert Benzin. Der Ausbau erhöht die Produktionsgeschwindigkeit. Prüfe den Benzinbedarf deiner Bauziele vor dem Produktionsausbau. Führe Benzin getrennt von der Metallproduktion.",
       "url": "/de/buildings/refinery/"
     },
     {
@@ -421,13 +260,6 @@
       "title": "Bestleistung",
       "description": "Verbessert alle Werte des Helden um 50%.",
       "url": "/de/heroes/tony/#character-skill-0-3"
-    },
-    {
-      "language": "de",
-      "type": "building",
-      "title": "Blessed Healing Stele | Tiles Survive Gebäude | TilesSurvive.net",
-      "description": "Detaillierte Seite für die Blessed Healing Stele in Tiles Survive, einschließlich der Übersicht, der leichten Wundkonversionsrate und der Leistung nach Level.",
-      "url": "/de/buildings/blessed-healing-stele/"
     },
     {
       "language": "de",
@@ -509,9 +341,9 @@
     {
       "language": "de",
       "type": "building",
-      "title": "Comms Outpost | Tiles Survive Gebäude | TilesSurvive.net",
-      "description": "Dies ist die detaillierte Bauseite für den Comms Outpost in Tiles Survive. Es organisiert die Gebäudeübersicht, Feature Guide und Hilfe Systemzusammenfassung.",
-      "url": "/de/buildings/comms-outpost/"
+      "title": "Das Kraftwerk | Gebäude | TilesSurvive.net",
+      "description": "Das Kraftwerk · Das Kraftwerk ist das Zentrum deiner Siedlung und die Grundlage des Gebäudeausbaus. Verbesserungen schalten neue Gebäude und Ausbauten frei. Prüfe zuerst die benötigte Kraftwerkstufe für dein nächstes Bauziel. Plane die Kosten der dazugehörigen Gebäude gesondert ein.",
+      "url": "/de/buildings/power-plant/"
     },
     {
       "language": "de",
@@ -715,13 +547,6 @@
       "title": "Ein kostenloses VIP-Paket abholen",
       "description": "Verfolge Aufgaben über Punkte und Belohnungen bis zur Verwendung der Gegenstände. Dies ist eine Übersicht veröffentlichter Regeln, kein Livekalender aller Server.",
       "url": "/de/events/#daily-task-vip-free-package"
-    },
-    {
-      "language": "de",
-      "type": "building",
-      "title": "Einberufungsbüro | Tiles Survive Gebäude | TilesSurvive.net",
-      "description": "Detaillierte Bauseite für das Enlistment Office in Tiles Survive, die Loyalität, rekrutierbare Truppenanzahl, Kapazität und Betriebsregeln abdeckt.",
-      "url": "/de/buildings/enlistment-office/"
     },
     {
       "language": "de",
@@ -1083,8 +908,8 @@
     {
       "language": "de",
       "type": "building",
-      "title": "Garnison Station | Tiles Survive Gebäude | TilesSurvive.net",
-      "description": "Eine detaillierte Seite zur Tiles Survive Garnison Station, die maximale Truppenkapazität und Informationen zum Truppenmanagement enthält.",
+      "title": "Garnison | Gebäude | TilesSurvive.net",
+      "description": "Garnison · In der Garnison sind die in Kasernen ausgebildeten Truppen stationiert. Der Ausbau erhöht die Truppenkapazität. Prüfe vor zusätzlicher Ausbildung den freien Platz in der Garnison. Für Kämpfe solltest du den Platz für Verwundete im Krankenhaus gesondert prüfen.",
       "url": "/de/buildings/garrison-station/"
     },
     {
@@ -1182,7 +1007,7 @@
       "language": "de",
       "type": "building",
       "title": "Gewächshaus | Gebäude | TilesSurvive.net",
-      "description": "Gewächshaus · Grundressourcen, Zeit, Baugegenstände und benötigte Gebäude nach Stufe und Einstellung.",
+      "description": "Gewächshaus · Das Gewächshaus produziert Nahrung. Der Ausbau erhöht die Produktionsgeschwindigkeit. Berücksichtige den Nahrungsbedarf kommender Bauten beim Produktionsausbau. Nahrungsproduktion und Sättigung durch die Küche erfüllen verschiedene Zwecke.",
       "url": "/de/buildings/greenhouse/"
     },
     {
@@ -1202,8 +1027,8 @@
     {
       "language": "de",
       "type": "building",
-      "title": "Goldene Ägis | Tiles Survive Gebäude | TilesSurvive.net",
-      "description": "Tiles Survive Gebäudedetailseite für Golden Aegis. Überprüfen Sie die Gebäudeübersicht, den Heldenverteidigungsbonus nach Level und die Macht an einem Ort.",
+      "title": "Goldene Ägis | Gebäude | TilesSurvive.net",
+      "description": "Goldene Ägis · Die Goldene Ägis erhöht die Heldenverteidigung. Ihr Effekt unterscheidet sich von Monumenten für Angriff oder Gesundheit. Prüfe bei defensiven Ausbauten den Verteidigungsbonus der nächsten Stufe. Vergleiche Verteidigung und Gesundheit beim Wächter des Lebens als getrennte Werte.",
       "url": "/de/buildings/aegis-monument/"
     },
     {
@@ -1236,188 +1061,6 @@
     },
     {
       "language": "de",
-      "type": "building",
-      "title": "Grundeffekte nach Stufe",
-      "description": "Spielversion 2.6.200 · Grundeffekte dieses Gebäudes ohne zusätzliche Boni durch Forschung, Helden, Saison oder andere Quellen.",
-      "url": "/de/buildings/comms-outpost/#building-effects-51"
-    },
-    {
-      "language": "de",
-      "type": "building",
-      "title": "Grundeffekte nach Stufe",
-      "description": "Spielversion 2.6.200 · Grundeffekte dieses Gebäudes ohne zusätzliche Boni durch Forschung, Helden, Saison oder andere Quellen.",
-      "url": "/de/buildings/lab/#building-effects-51"
-    },
-    {
-      "language": "de",
-      "type": "building",
-      "title": "Grundeinstellung (Original) · Lv.1–10",
-      "description": "Stufe 2 vergleichen: Holz: 2.500 · Nahrung: 2.500 · Metall: 0 · Benzin: 0 · Grundzeit: 0 Sek",
-      "url": "/de/buildings/houses/#c60-building-800110-Original"
-    },
-    {
-      "language": "de",
-      "type": "building",
-      "title": "Grundeinstellung (Original) · Lv.1–10",
-      "description": "Stufe 2 vergleichen: Holz: 2.500 · Nahrung: 2.500 · Metall: 0 · Benzin: 0 · Grundzeit: 0 Sek",
-      "url": "/de/buildings/houses/#c60-building-800111-Original"
-    },
-    {
-      "language": "de",
-      "type": "building",
-      "title": "Grundeinstellung (Original) · Lv.1–10",
-      "description": "Stufe 2 vergleichen: Holz: 2.500 · Nahrung: 2.500 · Metall: 0 · Benzin: 0 · Grundzeit: 0 Sek",
-      "url": "/de/buildings/houses/#c60-building-800112-Original"
-    },
-    {
-      "language": "de",
-      "type": "building",
-      "title": "Grundeinstellung (Original) · Lv.1–10",
-      "description": "Stufe 2 vergleichen: Holz: 2.500 · Nahrung: 2.500 · Metall: 0 · Benzin: 0 · Grundzeit: 2 Min 30 Sek",
-      "url": "/de/buildings/houses/#c60-building-800113-Original"
-    },
-    {
-      "language": "de",
-      "type": "building",
-      "title": "Grundeinstellung (Original) · Lv.1–10",
-      "description": "Stufe 2 vergleichen: Holz: 2.500 · Nahrung: 2.500 · Metall: 0 · Benzin: 0 · Grundzeit: 2 Min 30 Sek",
-      "url": "/de/buildings/houses/#c60-building-800114-Original"
-    },
-    {
-      "language": "de",
-      "type": "building",
-      "title": "Grundeinstellung (Original) · Lv.1–10",
-      "description": "Stufe 2 vergleichen: Holz: 2.500 · Nahrung: 2.500 · Metall: 0 · Benzin: 0 · Grundzeit: 2 Min 30 Sek",
-      "url": "/de/buildings/houses/#c60-building-800115-Original"
-    },
-    {
-      "language": "de",
-      "type": "building",
-      "title": "Grundeinstellung (Original) · Lv.1–10",
-      "description": "Stufe 2 vergleichen: Holz: 2.500 · Nahrung: 2.500 · Metall: 0 · Benzin: 0 · Grundzeit: 0 Sek",
-      "url": "/de/buildings/kitchen/#c60-building-800106-Original"
-    },
-    {
-      "language": "de",
-      "type": "building",
-      "title": "Grundeinstellung (Original) · Lv.1–30",
-      "description": "Stufe 2 vergleichen: Holz: 3.300 · Nahrung: 3.300 · Metall: 0 · Benzin: 0 · Grundzeit: 3 Min 10 Sek",
-      "url": "/de/buildings/aegis-monument/#c60-building-800148-Original"
-    },
-    {
-      "language": "de",
-      "type": "building",
-      "title": "Grundeinstellung (Original) · Lv.1–30",
-      "description": "Stufe 2 vergleichen: Holz: 3.300 · Nahrung: 3.300 · Metall: 0 · Benzin: 0 · Grundzeit: 3 Min 10 Sek",
-      "url": "/de/buildings/artifact-workshop/#c60-building-800150-Original"
-    },
-    {
-      "language": "de",
-      "type": "building",
-      "title": "Grundeinstellung (Original) · Lv.1–30",
-      "description": "Stufe 2 vergleichen: Holz: 3.300 · Nahrung: 3.300 · Metall: 0 · Benzin: 0 · Grundzeit: 3 Min 10 Sek",
-      "url": "/de/buildings/comms-outpost/#c60-building-800016-Original"
-    },
-    {
-      "language": "de",
-      "type": "building",
-      "title": "Grundeinstellung (Original) · Lv.1–30",
-      "description": "Stufe 2 vergleichen: Holz: 1.250 · Nahrung: 1.250 · Metall: 0 · Benzin: 0 · Grundzeit: 2 Min 40 Sek",
-      "url": "/de/buildings/garrison-station/#c60-building-800152-Original"
-    },
-    {
-      "language": "de",
-      "type": "building",
-      "title": "Grundeinstellung (Original) · Lv.1–30",
-      "description": "Stufe 2 vergleichen: Holz: 210 · Nahrung: 210 · Metall: 0 · Benzin: 0 · Grundzeit: 0 Sek",
-      "url": "/de/buildings/greenhouse/#c60-building-800001-Original"
-    },
-    {
-      "language": "de",
-      "type": "building",
-      "title": "Grundeinstellung (Original) · Lv.1–30",
-      "description": "Stufe 2 vergleichen: Holz: 3.300 · Nahrung: 3.300 · Metall: 0 · Benzin: 0 · Grundzeit: 3 Min 10 Sek",
-      "url": "/de/buildings/guardian-of-life-monument/#c60-building-800149-Original"
-    },
-    {
-      "language": "de",
-      "type": "building",
-      "title": "Grundeinstellung (Original) · Lv.1–30",
-      "description": "Stufe 2 vergleichen: Holz: 3.300 · Nahrung: 3.300 · Metall: 0 · Benzin: 0 · Grundzeit: 45 Min 47 Sek",
-      "url": "/de/buildings/hero-academy/#c60-building-800142-Original"
-    },
-    {
-      "language": "de",
-      "type": "building",
-      "title": "Grundeinstellung (Original) · Lv.1–30",
-      "description": "Stufe 2 vergleichen: Holz: 2.500 · Nahrung: 2.500 · Metall: 0 · Benzin: 0 · Grundzeit: 2 Min 30 Sek",
-      "url": "/de/buildings/hospital/#c60-building-800010-Original"
-    },
-    {
-      "language": "de",
-      "type": "building",
-      "title": "Grundeinstellung (Original) · Lv.1–30",
-      "description": "Stufe 2 vergleichen: Holz: 3.300 · Nahrung: 3.300 · Metall: 0 · Benzin: 0 · Grundzeit: 3 Min 10 Sek",
-      "url": "/de/buildings/lab/#c60-building-800012-Original"
-    },
-    {
-      "language": "de",
-      "type": "building",
-      "title": "Grundeinstellung (Original) · Lv.1–30",
-      "description": "Stufe 2 vergleichen: Holz: 3.300 · Nahrung: 3.300 · Metall: 0 · Benzin: 0 · Grundzeit: 3 Min 10 Sek",
-      "url": "/de/buildings/lab-2/#c60-building-800168-Original"
-    },
-    {
-      "language": "de",
-      "type": "building",
-      "title": "Grundeinstellung (Original) · Lv.1–30",
-      "description": "Stufe 2 vergleichen: Holz: 2.500 · Nahrung: 2.500 · Metall: 0 · Benzin: 0 · Grundzeit: 2 Min 30 Sek",
-      "url": "/de/buildings/lookout-tower/#c60-building-800014-Original"
-    },
-    {
-      "language": "de",
-      "type": "building",
-      "title": "Grundeinstellung (Original) · Lv.1–30",
-      "description": "Stufe 2 vergleichen: Holz: 210 · Nahrung: 210 · Metall: 0 · Benzin: 0 · Grundzeit: 0 Sek",
-      "url": "/de/buildings/lumberyard/#c60-building-800003-Original"
-    },
-    {
-      "language": "de",
-      "type": "building",
-      "title": "Grundeinstellung (Original) · Lv.1–30",
-      "description": "Stufe 2 vergleichen: Holz: 210 · Nahrung: 210 · Metall: 0 · Benzin: 0 · Grundzeit: 0 Sek",
-      "url": "/de/buildings/refinery/#c60-building-800004-Original"
-    },
-    {
-      "language": "de",
-      "type": "building",
-      "title": "Grundeinstellung (Original) · Lv.1–30",
-      "description": "Stufe 2 vergleichen: Holz: 210 · Nahrung: 210 · Metall: 0 · Benzin: 0 · Grundzeit: 0 Sek",
-      "url": "/de/buildings/smelter/#c60-building-800002-Original"
-    },
-    {
-      "language": "de",
-      "type": "building",
-      "title": "Grundeinstellung (Original) · Lv.1–30",
-      "description": "Stufe 2 vergleichen: Holz: 3.300 · Nahrung: 3.300 · Metall: 0 · Benzin: 0 · Grundzeit: 3 Min 10 Sek",
-      "url": "/de/buildings/warbringer-monument/#c60-building-800147-Original"
-    },
-    {
-      "language": "de",
-      "type": "building",
-      "title": "Grundeinstellung (Original) · Lv.1–60",
-      "description": "Stufe 2 vergleichen: Holz: 3.300 · Nahrung: 3.300 · Metall: 0 · Benzin: 0 · Grundzeit: 5 T 6 Std 58 Min 20 Sek",
-      "url": "/de/buildings/blessed-healing-stele/#c60-building-800217-Original"
-    },
-    {
-      "language": "de",
-      "type": "building",
-      "title": "Grundeinstellung (Original) · Lv.1–60",
-      "description": "Stufe 2 vergleichen: Holz: 3.300 · Nahrung: 3.300 · Metall: 0 · Benzin: 0 · Grundzeit: 5 T 6 Std 58 Min 20 Sek",
-      "url": "/de/buildings/cursed-wound-stele/#c60-building-800216-Original"
-    },
-    {
-      "language": "de",
       "type": "heroe",
       "title": "Grüne Finger",
       "description": "Globaler Effekt. Erhöht die Produktionsgeschwindigkeit des Gewächshauses um 100%.",
@@ -1441,7 +1084,7 @@
       "language": "de",
       "type": "building",
       "title": "Häuser | Gebäude | TilesSurvive.net",
-      "description": "Häuser · Grundressourcen, Zeit, Baugegenstände und benötigte Gebäude nach Stufe und Einstellung.",
+      "description": "Häuser · Verbesserte Hauseinrichtungen erhöhen Schlafqualität und Energie der Überlebenden. Häuser 1–6 haben getrennte Kostentabellen. Prüfe Schlafbedarf und Hausnummer. Wähle das betreffende Haus, statt die Kosten eines anderen Hauses derselben Stufe zu übernehmen.",
       "url": "/de/buildings/houses/"
     },
     {
@@ -1489,8 +1132,8 @@
     {
       "language": "de",
       "type": "building",
-      "title": "Heldenakademie | Tiles Survive Gebäude | TilesSurvive.net",
-      "description": "Detaillierte Bauseite für Held Academy in Tiles Survive, einschließlich Bauübersicht, Heldenfertigkeitsbuchproduktion pro Stunde und Leistung nach Level.",
+      "title": "Heldenakademie | Gebäude | TilesSurvive.net",
+      "description": "Heldenakademie · Die Heldenakademie produziert Helden-Fertigkeitsbücher. Vergleiche die stündliche Produktion je Stufe mit den Ausbaukosten. Prüfe den Bücherbedarf für die nächsten Fertigkeitsverbesserungen deiner Haupthelden und plane die Akademieproduktion ein.",
       "url": "/de/buildings/hero-academy/"
     },
     {
@@ -1539,7 +1182,7 @@
       "language": "de",
       "type": "building",
       "title": "Holzlager | Gebäude | TilesSurvive.net",
-      "description": "Holzlager · Grundressourcen, Zeit, Baugegenstände und benötigte Gebäude nach Stufe und Einstellung.",
+      "description": "Holzlager · Das Holzlager produziert Holz. Der Ausbau erhöht die Produktionsgeschwindigkeit. Prüfe bei mehreren geplanten Ausbauten den Holzbedarf des Zielbereichs. Rechne auch die Kosten der Produktionsgebäude selbst ein.",
       "url": "/de/buildings/lumberyard/"
     },
     {
@@ -1548,13 +1191,6 @@
       "title": "Hopser · Referenz zur Haustierkonfiguration · 2.6.200 | TilesSurvive.net",
       "description": "Hopser — Konfigurationsdaten für Spielversion 2.6.200. Die aktuelle Veröffentlichung und Verfügbarkeit für einzelne Staaten oder Konten sind nicht bestätigt.",
       "url": "/de/database/pet-system/hopper/"
-    },
-    {
-      "language": "de",
-      "type": "building",
-      "title": "Hüter des Lebens | Tiles Survive Gebäude | TilesSurvive.net",
-      "description": "Dies ist die detaillierte Bauseite für Guardian of Life in Tiles Survive. Es organisiert die Gebäudeübersicht, Helden-HP nach Level und Power-Werte auf einen Blick.",
-      "url": "/de/buildings/guardian-of-life-monument/"
     },
     {
       "language": "de",
@@ -1635,6 +1271,13 @@
     },
     {
       "language": "de",
+      "type": "building",
+      "title": "Kasernen | Gebäude | TilesSurvive.net",
+      "description": "Kasernen · In Kasernen bildest du Truppen aus. Betrachte den Gebäudeausbau zusammen mit den Freischaltungen der Truppenstufen. Prüfe die Voraussetzungen der gewünschten Truppenstufe. Berücksichtige bei mehr Ausbildung auch Garnison und Krankenhaus.",
+      "url": "/de/buildings/barracks/"
+    },
+    {
+      "language": "de",
       "type": "heroe",
       "title": "Kiki · Fähigkeiten, Werte & Wachstum | TilesSurvive.net",
       "description": "Detaillierte Seite für Kiki in Tiles Survive. Sehen Sie HeldenEinführung, Kampfeigenschaften, Höchststufe und 10-Sterne-Werte, Sternbonus, Fähigkeiten und exklusive Ausrüstung an einem Ort.",
@@ -1678,15 +1321,8 @@
     {
       "language": "de",
       "type": "building",
-      "title": "Kraftwerk | Tiles Survive Gebäude | TilesSurvive.net",
-      "description": "Eine detaillierte Seite für Tiles Survive Power Plant Upgrade-Kosten, Upgrade-Zeit, Strom und Fertigkeit Informationen nach Level.",
-      "url": "/de/buildings/power-plant/"
-    },
-    {
-      "language": "de",
-      "type": "building",
-      "title": "Krankenhaus | Tiles Survive Gebäude | TilesSurvive.net",
-      "description": "Eine detaillierte Seite für das Tiles Survive-Krankenhaus, die Kapazitäten, kostenlose Heilung, Heilungsregeln und wichtige Operationshinweise abdeckt.",
+      "title": "Krankenhaus | Gebäude | TilesSurvive.net",
+      "description": "Krankenhaus · Das Krankenhaus nimmt verwundete Soldaten auf und behandelt sie. Der Ausbau erhöht seine Kapazität für Verwundete. Prüfe vor Kämpfen die Verwundeten und freien Plätze. Plane auch Krankenhausstufen ein, die dein Kraftwerk benötigt.",
       "url": "/de/buildings/hospital/"
     },
     {
@@ -1695,6 +1331,13 @@
       "title": "Kräuselnder Abpraller",
       "description": "61,16% ATK Schaden am ersten Ziel und zwei in der Nähe Feinde.",
       "url": "/de/heroes/undine/#character-skill-0-0"
+    },
+    {
+      "language": "de",
+      "type": "building",
+      "title": "Kriegsbringer | Gebäude | TilesSurvive.net",
+      "description": "Kriegsbringer · Der Kriegsbringer erhöht den Heldenangriff. Angriffseffekt und Stärke werden je Stufe getrennt angezeigt. Vergleiche für mehr Heldenangriff den Effekt der nächsten Stufe mit ihren Ressourcenkosten. Plane Fertigkeitsverbesserungen gesondert.",
+      "url": "/de/buildings/warbringer-monument/"
     },
     {
       "language": "de",
@@ -1721,7 +1364,7 @@
       "language": "de",
       "type": "building",
       "title": "Küche | Gebäude | TilesSurvive.net",
-      "description": "Küche · Grundressourcen, Zeit, Baugegenstände und benötigte Gebäude nach Stufe und Einstellung.",
+      "description": "Küche · Der Ausbau der Kücheneinrichtungen verbessert die Essensqualität und erhöht die Sättigung der Überlebenden. Plane die Küche nach der Sättigung der Überlebenden. Häuser verbessern den Schlaf, das Gewächshaus produziert Nahrung; prüfe jeden Bedarf separat.",
       "url": "/de/buildings/kitchen/"
     },
     {
@@ -1734,15 +1377,15 @@
     {
       "language": "de",
       "type": "building",
-      "title": "Lab | Tiles Survive Gebäude | TilesSurvive.net",
-      "description": "Dies ist die Tiles Survive Lab-Bauseite. Es organisiert Development, Economy, Held, Troop, Comm Outpost, Alliance Duel, Special Forces, Infected Elimination und Doomsday Transport Forschungskategorien auf einen Blick.",
+      "title": "Labor 1 | Gebäude | TilesSurvive.net",
+      "description": "Labor 1 · In Labor 1 erforschst du Technologien für Kampf und Entwicklung. Verbesserungen können fortschrittlichere Technologien freischalten. Ermittle die Laborstufe für deine nächste Technologie. Gewünschte Entwicklungs-, Wirtschafts- oder Kampfforschung gibt dem Ausbau ein klares Ziel.",
       "url": "/de/buildings/lab/"
     },
     {
       "language": "de",
       "type": "building",
       "title": "Labor 2 | Gebäude | TilesSurvive.net",
-      "description": "Labor 2 · Grundressourcen, Zeit, Baugegenstände und benötigte Gebäude nach Stufe und Einstellung.",
+      "description": "Labor 2 · Labor 2 ist ein separates Forschungsgebäude für höhere Forschungseffizienz. Gebäudedaten und Freischaltbedingungen sind von Labor 1 getrennt. Prüfe vor zusätzlicher Forschungsplanung, ob dein Konto Labor 2 freischalten kann. Plane Technologie- und Gebäudekosten getrennt.",
       "url": "/de/buildings/lab-2/"
     },
     {
@@ -1964,6 +1607,13 @@
     },
     {
       "language": "de",
+      "type": "building",
+      "title": "Musterungsbüro | Gebäude | TilesSurvive.net",
+      "description": "Musterungsbüro · Das Musterungsbüro hilft beim Truppenersatz, wenn Verwundete die Krankenhauskapazität übersteigen. Version 2.6.200 ersetzte Loyalität durch Rekrutierungszertifikate. Prüfe nach Kämpfen wartende Truppen und die kostenlose Rekrutierungsmenge im Spiel. Alte Loyalitätswerte sagen heutige Wiederherstellungsmengen nicht voraus.",
+      "url": "/de/buildings/enlistment-office/"
+    },
+    {
+      "language": "de",
       "type": "heroe",
       "title": "Nikola · Fähigkeiten, Werte & Wachstum | TilesSurvive.net",
       "description": "Detaillierte Tiles Survive Heldenseite für Nikola. Diese Seite behandelt Heldenhintergrund, Kampfeigenschaften, höchste Stufe und Sternwerte, Sternbonus, Fähigkeiten und exklusive Ausrüstung für diesen SSR-Helden.",
@@ -1980,7 +1630,7 @@
       "language": "de",
       "type": "building",
       "title": "Ofen | Gebäude | TilesSurvive.net",
-      "description": "Ofen · Grundressourcen, Zeit, Baugegenstände und benötigte Gebäude nach Stufe und Einstellung.",
+      "description": "Ofen · Der Ofen produziert Metall. Der Ausbau erhöht die Produktionsgeschwindigkeit. Plane die Produktion nach dem Metallbedarf deiner Bauziele. Vergleiche vorhandenes Metall mit den verfügbaren Ressourcentruhen.",
       "url": "/de/buildings/smelter/"
     },
     {
@@ -2468,6 +2118,20 @@
     },
     {
       "language": "de",
+      "type": "building",
+      "title": "Stele der verfluchten Wunde | Gebäude | TilesSurvive.net",
+      "description": "Stele der verfluchten Wunde · Die Stele der verfluchten Wunde senkt die Chance, dass schwere Wunden feindlicher Truppen zu leichten werden. Sie wirkt auf Gegner. Prüfe für Kampfpläne den Effekt auf leichte Verwundungen des Gegners. Für die eigene Erholung betrachte die heilende Stele und das Krankenhaus gesondert.",
+      "url": "/de/buildings/cursed-wound-stele/"
+    },
+    {
+      "language": "de",
+      "type": "building",
+      "title": "Stele des heilenden Segens | Gebäude | TilesSurvive.net",
+      "description": "Stele des heilenden Segens · Die Stele des heilenden Segens erhöht die Chance, dass schwere Wunden verbündeter Truppen zu leichten werden. Dieser Effekt ist von der Krankenhauskapazität getrennt. Vergleiche für mehrere Kämpfe den Umwandlungseffekt und die Kosten der nächsten Stufe. Plane die Behandlung bereits Verwundeter separat im Krankenhaus.",
+      "url": "/de/buildings/blessed-healing-stele/"
+    },
+    {
+      "language": "de",
       "type": "heroe",
       "title": "Sternhammer-Sturm",
       "description": "Schwingt ihren Hammer mit der Geschwindigkeit eines Kometen und fügt den Gegnern in Reichweite 83,4% Angriffsschaden zu.",
@@ -2640,13 +2304,6 @@
       "title": "Tiles Survive Anfängerhandbuch | Frühe Spieltipps für neue Spieler | TilesSurvive.net",
       "description": "Ein Anfängerhandbuch für Tiles Survive neue Spieler. Erfahren Sie, wie Sie einen neuen Server auswählen, die richtige Allianz auswählen, Farmkonten verwalten, Speedups effizient nutzen, Ihr Kraftwerkswachstum planen und eine solide Early-Game-Routine aufbauen.",
       "url": "/de/guides/beginner-guide/"
-    },
-    {
-      "language": "de",
-      "type": "building",
-      "title": "Tiles Survive Barracks | Upgrade Kosten und Truppenentsperrungen | TilesSurvive.net",
-      "description": "Eine detaillierte Seite für Tiles Survive Barracks Upgrade-Kosten, Upgrade-Zeit, Voraussetzung Gebäude und Truppenentsperrung Ebenen.",
-      "url": "/de/buildings/barracks/"
     },
     {
       "language": "de",
@@ -2881,13 +2538,6 @@
     },
     {
       "language": "de",
-      "type": "building",
-      "title": "Verfluchte Wunde Stele | Tiles Survive Gebäude | TilesSurvive.net",
-      "description": "Detaillierte Aufbauseite für die verfluchte Wundenstele in Tiles Survive, einschließlich Übersicht, Konversionsrate des Gegners mit leichten Verwundungen und Leistung nach Level.",
-      "url": "/de/buildings/cursed-wound-stele/"
-    },
-    {
-      "language": "de",
       "type": "heroe",
       "title": "Verjüngung",
       "description": "Stellt bei allen verbündeten Einheiten HP in Höhe von 478,16% von Laylas Angriffswert wieder her. Stellt zusätzlich 5 Sekunden lang pro Sekunde HP in Höhe von 13,9% von Laylas Angriffswert wieder her und fügt allen gegnerischen Zielen Schaden in derselben Höhe zu. Solange die Heilung anhält, ist Laylas Verteidigung um 20% erhöht.",
@@ -2959,8 +2609,15 @@
     {
       "language": "de",
       "type": "building",
+      "title": "Wächter des Lebens | Gebäude | TilesSurvive.net",
+      "description": "Wächter des Lebens · Der Wächter des Lebens erhöht die Heldengesundheit. Stufeneffekte auf die Gesundheit und Gebäudestärke werden getrennt dargestellt. Vergleiche Gesundheitszuwachs und Kosten für widerstandsfähigere Helden. Prüfe die Goldene Ägis, wenn du auch Verteidigung ausbauen willst.",
+      "url": "/de/buildings/guardian-of-life-monument/"
+    },
+    {
+      "language": "de",
+      "type": "building",
       "title": "Wachturm | Gebäude | TilesSurvive.net",
-      "description": "Wachturm · Grundressourcen, Zeit, Baugegenstände und benötigte Gebäude nach Stufe und Einstellung.",
+      "description": "Wachturm · Für den Wachturm sind Stufenkosten, Zeiten und verknüpfte Voraussetzungen erfasst. Seine genaue Funktion und Stufeneffekte sind noch unbestätigt. Falls dein Bauziel den Wachturm voraussetzt, prüfe die Kosten bis zur benötigten Stufe. Für funktionsbezogene Ausbauten lies zuerst die Beschreibung im Spiel.",
       "url": "/de/buildings/lookout-tower/"
     },
     {
@@ -2969,13 +2626,6 @@
       "title": "Waffenschmied",
       "description": "Verbessert alle Werte des Helden um 50%.",
       "url": "/de/heroes/kiki/#character-skill-0-3"
-    },
-    {
-      "language": "de",
-      "type": "building",
-      "title": "Warbringer Monument | Tiles Survive Gebäude | TilesSurvive.net",
-      "description": "Tiles Survive-Gebäudedetailseite für das Warbringer Monument. Überprüfen Sie die Gebäudeübersicht, den Heldenangriffsbonus nach Level und die Macht an einem Ort.",
-      "url": "/de/buildings/warbringer-monument/"
     },
     {
       "language": "de",
@@ -3443,7 +3093,7 @@
       "language": "en",
       "type": "building",
       "title": "Artifact Workshop | Buildings | TilesSurvive.net",
-      "description": "Artifact Workshop · Explore base resources, time, construction items and required buildings by level and configuration.",
+      "description": "Artifact Workshop · The Artifact Workshop uses transformers as part of the power grid. The game describes improved efficiency and faster construction. When planning several construction projects, check the Workshop’s effect in the game. This page compares the building’s own base costs and time.",
       "url": "/en/buildings/artifact-workshop/"
     },
     {
@@ -3463,16 +3113,9 @@
     {
       "language": "en",
       "type": "building",
-      "title": "Base effects by level",
-      "description": "Game 2.6.200 · Base effects of this building, excluding research, hero, season and other bonuses.",
-      "url": "/en/buildings/comms-outpost/#building-effects-51"
-    },
-    {
-      "language": "en",
-      "type": "building",
-      "title": "Base effects by level",
-      "description": "Game 2.6.200 · Base effects of this building, excluding research, hero, season and other bonuses.",
-      "url": "/en/buildings/lab/#building-effects-51"
+      "title": "Barracks | Buildings | TilesSurvive.net",
+      "description": "Barracks · Barracks train troops. Review building growth alongside troop-tier unlock information. Start with the requirements of the troop tier you want to train. Review Garrison and Hospital capacity when planning more training.",
+      "url": "/en/buildings/barracks/"
     },
     {
       "language": "en",
@@ -3514,8 +3157,8 @@
     {
       "language": "en",
       "type": "building",
-      "title": "Blessed Healing Stele | Tiles Survive Buildings | TilesSurvive.net",
-      "description": "Detailed page for the Blessed Healing Stele in Tiles Survive, including its overview, light wound conversion rate, and power by level.",
+      "title": "Blessed Healing Stele | Buildings | TilesSurvive.net",
+      "description": "Blessed Healing Stele · Blessed Healing Stele increases the chance that allied troops’ severe wounds become light wounds. This combat effect is separate from Hospital capacity. For repeated combat, compare the next level’s light-wound conversion effect and cost. Plan treatment of existing wounded troops separately in the Hospital.",
       "url": "/en/buildings/blessed-healing-stele/"
     },
     {
@@ -3758,8 +3401,8 @@
     {
       "language": "en",
       "type": "building",
-      "title": "Comms Outpost | Tiles Survive Buildings | TilesSurvive.net",
-      "description": "This is the detailed building page for the Comms Outpost in Tiles Survive. It organizes the building overview, feature guide, and help system summary.",
+      "title": "Comms Outpost | Buildings | TilesSurvive.net",
+      "description": "Comms Outpost · The Comms Outpost lets you exchange reinforcements and timer help with your alliance and friends. The verified level table currently lists timer-help counts. When alliance help is part of your construction or research plan, compare the next level’s timer helps before deciding the upgrade order.",
       "url": "/en/buildings/comms-outpost/"
     },
     {
@@ -3947,8 +3590,8 @@
     {
       "language": "en",
       "type": "building",
-      "title": "Cursed Wound Stele | Tiles Survive Buildings | TilesSurvive.net",
-      "description": "Detailed building page for Cursed Wound Stele in Tiles Survive, including overview, enemy lightly wounded conversion rate, and power by level.",
+      "title": "Cursed Wound Stele | Buildings | TilesSurvive.net",
+      "description": "Cursed Wound Stele · Cursed Wound Stele reduces the chance that enemy troops’ severe wounds become light wounds. It targets enemies, unlike Blessed Healing Stele. For combat planning, review the effect on enemy light-wound conversion. For your own recovery, assess Blessed Healing Stele and the Hospital separately.",
       "url": "/en/buildings/cursed-wound-stele/"
     },
     {
@@ -4117,8 +3760,8 @@
     {
       "language": "en",
       "type": "building",
-      "title": "Enlistment Office | Tiles Survive Buildings | TilesSurvive.net",
-      "description": "Detailed building page for the Enlistment Office in Tiles Survive, covering Loyalty, recruitable troop count, capacity, and operating rules.",
+      "title": "Enlistment Office | Buildings | TilesSurvive.net",
+      "description": "Enlistment Office · The Enlistment Office helps replenish troops when wounded troops exceed Hospital capacity. Version 2.6.200 replaced Loyalty with Recruitment Certificates. After combat, check waiting troops and the free recruitment amount in the game. Historical Loyalty values do not predict current recovery amounts.",
       "url": "/en/buildings/enlistment-office/"
     },
     {
@@ -4463,8 +4106,8 @@
     {
       "language": "en",
       "type": "building",
-      "title": "Garrison Station | Tiles Survive Buildings | TilesSurvive.net",
-      "description": "A detailed page for Tiles Survive Garrison Station, covering maximum troop capacity and troop management information.",
+      "title": "Garrison | Buildings | TilesSurvive.net",
+      "description": "Garrison · Troops trained in the Barracks are stationed in the Garrison. Upgrading the Garrison increases troop capacity. Before increasing training in the Barracks, review available Garrison space. Check Hospital space separately when preparing for combat.",
       "url": "/en/buildings/garrison-station/"
     },
     {
@@ -4485,8 +4128,8 @@
     {
       "language": "en",
       "type": "building",
-      "title": "Golden Aegis | Tiles Survive Buildings | TilesSurvive.net",
-      "description": "Tiles Survive building detail page for Golden Aegis. Check the building overview, Hero Defense bonus by level, and Power in one place.",
+      "title": "Golden Aegis | Buildings | TilesSurvive.net",
+      "description": "Golden Aegis · Golden Aegis provides a hero defense buff. Its effect differs from monuments that increase attack or health. Review the next level’s defense bonus when planning durability upgrades. Compare defense and health as separate metrics when considering Guardian of Life.",
       "url": "/en/buildings/aegis-monument/"
     },
     {
@@ -4521,7 +4164,7 @@
       "language": "en",
       "type": "building",
       "title": "Greenhouse | Buildings | TilesSurvive.net",
-      "description": "Greenhouse · Explore base resources, time, construction items and required buildings by level and configuration.",
+      "description": "Greenhouse · The Greenhouse produces Food. Upgrading increases Food production speed. Review Food needed for upcoming construction when planning production upgrades. Food production and the Kitchen’s survivor Satiety serve different purposes.",
       "url": "/en/buildings/greenhouse/"
     },
     {
@@ -4541,8 +4184,8 @@
     {
       "language": "en",
       "type": "building",
-      "title": "Guardian of Life | Tiles Survive Buildings | TilesSurvive.net",
-      "description": "This is the detailed building page for Guardian of Life in Tiles Survive. It organizes the building overview, Hero Health by level, and Power values at a glance.",
+      "title": "Guardian of Life | Buildings | TilesSurvive.net",
+      "description": "Guardian of Life · Guardian of Life provides a hero health buff. Its level table separates health effects from building power. Compare the health increase and cost when improving hero durability. Review Golden Aegis as well when defense is part of your plan.",
       "url": "/en/buildings/guardian-of-life-monument/"
     },
     {
@@ -4583,8 +4226,8 @@
     {
       "language": "en",
       "type": "building",
-      "title": "Hero Academy | Tiles Survive Buildings | TilesSurvive.net",
-      "description": "Detailed building page for Hero Academy in Tiles Survive, including building overview, hero skill book production per hour, and power by level.",
+      "title": "Hero Academy | Buildings | TilesSurvive.net",
+      "description": "Hero Academy · The Hero Academy produces hero skill books. Compare hourly production by level with the cost of building upgrades. Check the skill books needed for your main heroes’ next skill upgrades, then include Academy production in your plan.",
       "url": "/en/buildings/hero-academy/"
     },
     {
@@ -4625,15 +4268,15 @@
     {
       "language": "en",
       "type": "building",
-      "title": "Hospital | Tiles Survive Buildings | TilesSurvive.net",
-      "description": "A detailed page for the Tiles Survive Hospital, covering capacity, free healing, healing rules, and key operation notes.",
+      "title": "Hospital | Buildings | TilesSurvive.net",
+      "description": "Hospital · The Hospital houses and heals wounded troops. Upgrading increases its capacity for wounded troops. Before combat, review current wounded troops and remaining capacity. Also plan any Hospital upgrades required by your Power Plant target.",
       "url": "/en/buildings/hospital/"
     },
     {
       "language": "en",
       "type": "building",
       "title": "Houses | Buildings | TilesSurvive.net",
-      "description": "Houses · Explore base resources, time, construction items and required buildings by level and configuration.",
+      "description": "Houses · Upgrading House facilities improves sleep quality and survivors’ Energy. Houses 1–6 have separate cost tables. Check survivors’ sleep needs and the house number you plan to improve. Select that house rather than borrowing the costs of another house at the same level.",
       "url": "/en/buildings/houses/"
     },
     {
@@ -4785,7 +4428,7 @@
       "language": "en",
       "type": "building",
       "title": "Kitchen | Buildings | TilesSurvive.net",
-      "description": "Kitchen · Explore base resources, time, construction items and required buildings by level and configuration.",
+      "description": "Kitchen · Upgrading Kitchen facilities improves food quality and increases survivors’ Satiety. Plan Kitchen facilities around survivor Satiety. Houses address sleep quality, while the Greenhouse produces Food; review each need separately.",
       "url": "/en/buildings/kitchen/"
     },
     {
@@ -4799,15 +4442,15 @@
     {
       "language": "en",
       "type": "building",
-      "title": "Lab | Tiles Survive Buildings | TilesSurvive.net",
-      "description": "This is the Tiles Survive Lab building page. It organizes Development, Economy, Hero, Troop, Comm Outpost, Alliance Duel, Special Forces, Infected Elimination, and Doomsday Transport research categories at a glance.",
+      "title": "Lab 1 | Buildings | TilesSurvive.net",
+      "description": "Lab 1 · Lab 1 researches technologies for combat and development. Upgrading can unlock more advanced technologies. Find the lab level required by your next technology. Choosing the development, economy or combat research you need gives the building a clear upgrade target.",
       "url": "/en/buildings/lab/"
     },
     {
       "language": "en",
       "type": "building",
       "title": "Lab 2 | Buildings | TilesSurvive.net",
-      "description": "Lab 2 · Explore base resources, time, construction items and required buildings by level and configuration.",
+      "description": "Lab 2 · Lab 2 is a separate research building intended to improve research efficiency. Its building data and unlock conditions are distinct from Lab 1. Before planning additional research, check whether your account can unlock Lab 2. Budget technology costs separately from building costs.",
       "url": "/en/buildings/lab-2/"
     },
     {
@@ -4858,7 +4501,7 @@
       "language": "en",
       "type": "building",
       "title": "Lookout Tower | Buildings | TilesSurvive.net",
-      "description": "Lookout Tower · Explore base resources, time, construction items and required buildings by level and configuration.",
+      "description": "Lookout Tower · The Lookout Tower has recorded level costs, time and linked prerequisites. Its detailed role and level effects remain unconfirmed. If a target building lists the Lookout Tower, review the costs to reach that level. For a feature-based upgrade decision, check the game’s description first.",
       "url": "/en/buildings/lookout-tower/"
     },
     {
@@ -4880,7 +4523,7 @@
       "language": "en",
       "type": "building",
       "title": "Lumberyard | Buildings | TilesSurvive.net",
-      "description": "Lumberyard · Explore base resources, time, construction items and required buildings by level and configuration.",
+      "description": "Lumberyard · The Lumberyard produces Wood. Upgrading increases Wood production speed. For a sequence of building upgrades, check the Wood total across the target range. Include the cost of upgrading production facilities themselves.",
       "url": "/en/buildings/lumberyard/"
     },
     {
@@ -5159,8 +4802,8 @@
     {
       "language": "en",
       "type": "building",
-      "title": "Power Plant | Tiles Survive Buildings | TilesSurvive.net",
-      "description": "A detailed page for Tiles Survive Power Plant upgrade costs, upgrade time, power, and skill information by level.",
+      "title": "Power Plant | Buildings | TilesSurvive.net",
+      "description": "Power Plant · The Power Plant is the center of your Settlement and the foundation of building growth. Upgrading unlocks new buildings and upgrades. Check the Power Plant level required by your next building goal. Budget for the linked buildings separately as well as the Power Plant itself.",
       "url": "/en/buildings/power-plant/"
     },
     {
@@ -5352,7 +4995,7 @@
       "language": "en",
       "type": "building",
       "title": "Refinery | Buildings | TilesSurvive.net",
-      "description": "Refinery · Explore base resources, time, construction items and required buildings by level and configuration.",
+      "description": "Refinery · The Refinery produces Gas. Upgrading increases Gas production speed. Check Gas requirements for your target buildings before planning production upgrades. Track Gas separately from Metal production.",
       "url": "/en/buildings/refinery/"
     },
     {
@@ -5751,7 +5394,7 @@
       "language": "en",
       "type": "building",
       "title": "Smelter | Buildings | TilesSurvive.net",
-      "description": "Smelter · Explore base resources, time, construction items and required buildings by level and configuration.",
+      "description": "Smelter · The Smelter produces Metal. Upgrading increases Metal production speed. Use the Metal requirements of your target buildings to plan production. Compare existing Metal with what your resource chests can provide.",
       "url": "/en/buildings/smelter/"
     },
     {
@@ -5983,13 +5626,6 @@
       "title": "Tidal Drake | Tiles Survive Behemoth | TilesSurvive.net",
       "description": "This is the detailed Tiles Survive behemoth page for Tidal Drake. It organizes level upgrade effects, event boosts, appearance changes, featured talents, and the star rank chart.",
       "url": "/en/behemoths/marine-drake/"
-    },
-    {
-      "language": "en",
-      "type": "building",
-      "title": "Tiles Survive Barracks | Upgrade Costs and Troop Unlocks | TilesSurvive.net",
-      "description": "A detailed page for Tiles Survive Barracks upgrade costs, upgrade time, prerequisite buildings, and troop unlock levels.",
-      "url": "/en/buildings/barracks/"
     },
     {
       "language": "en",
@@ -6251,8 +5887,8 @@
     {
       "language": "en",
       "type": "building",
-      "title": "Warbringer Monument | Tiles Survive Buildings | TilesSurvive.net",
-      "description": "Tiles Survive building detail page for the Warbringer Monument. Check the building overview, Hero Attack bonus by level, and Power in one place.",
+      "title": "Warbringer | Buildings | TilesSurvive.net",
+      "description": "Warbringer · Warbringer provides a hero attack buff. Attack effects and power are shown separately by level. For more hero attack, compare the next level’s effect with its resource cost. Plan this separately from hero skill upgrades.",
       "url": "/en/buildings/warbringer-monument/"
     },
     {
@@ -6449,15 +6085,15 @@
     {
       "language": "ja",
       "type": "building",
-      "title": "加護治療の碑 | タイルズサバイバル 建物 | TilesSurvive.net",
-      "description": "タイルズサバイバル 加護治療の碑の概要、軽傷転化率、戦闘力をレベル別に整理した詳細ページです。",
+      "title": "加護治療の碑 | 建物 | TilesSurvive.net",
+      "description": "加護治療の碑 · 加護治療の碑は味方兵士の重傷が軽傷に変わる確率を上げます。病院の収容力とは別の戦闘効果です。 連戦に備える際は次のレベルの軽傷転換率と費用を比較しましょう。すでに負傷した兵士の治療計画は病院で別に確認してください。",
       "url": "/ja/buildings/blessed-healing-stele/"
     },
     {
       "language": "ja",
       "type": "building",
       "title": "監視塔 | 建物 | TilesSurvive.net",
-      "description": "監視塔 · レベルと設定ごとに基本資源・時間、建設アイテム、必要建物を確認できます。",
+      "description": "監視塔 · 監視塔のレベル別費用・時間と関連する前提条件を確認できます。詳しい機能説明と各レベルの効果は未確認です。 目標建物の条件に監視塔がある場合は必要レベルまでの費用を確認しましょう。機能を目的に育成する場合はゲームの説明を先に確認してください。",
       "url": "/ja/buildings/lookout-tower/"
     },
     {
@@ -6805,13 +6441,6 @@
     },
     {
       "language": "ja",
-      "type": "building",
-      "title": "連絡所 | タイルズサバイバル 建物 | TilesSurvive.net",
-      "description": "タイルズサバイバル建物「連絡所」の詳細ページです。建物紹介、機能案内、支援システム要約を整理したページです。",
-      "url": "/ja/buildings/comms-outpost/"
-    },
-    {
-      "language": "ja",
       "type": "heroe",
       "title": "連射水弾",
       "description": "韓国語のゲーム内名称: 하이드로 물대포",
@@ -6891,7 +6520,7 @@
       "language": "ja",
       "type": "building",
       "title": "木材所 | 建物 | TilesSurvive.net",
-      "description": "木材所 · レベルと設定ごとに基本資源・時間、建設アイテム、必要建物を確認できます。",
+      "description": "木材所 · 木材所は木材を生産し、レベルアップで木材の生産速度が上がります。 複数の建物を続けて強化する場合は目標区間の木材合計を確認しましょう。生産施設自体の強化費用も計画に含めてください。",
       "url": "/ja/buildings/lumberyard/"
     },
     {
@@ -6912,7 +6541,7 @@
       "language": "ja",
       "type": "building",
       "title": "民家 | 建物 | TilesSurvive.net",
-      "description": "民家 · レベルと設定ごとに基本資源・時間、建設アイテム、必要建物を確認できます。",
+      "description": "民家 · 住居の設備を強化すると睡眠の質が向上し、生存者の睡眠値が増えます。住居1～6の費用表は分かれています。 生存者の睡眠状態と強化する住居番号を確認しましょう。同じレベルでも別の住居の費用を使わず、該当する住居を選んでください。",
       "url": "/ja/buildings/houses/"
     },
     {
@@ -6933,7 +6562,7 @@
       "language": "ja",
       "type": "building",
       "title": "配電設備 | 建物 | TilesSurvive.net",
-      "description": "配電設備 · レベルと設定ごとに基本資源・時間、建設アイテム、必要建物を確認できます。",
+      "description": "配電設備 · 配電設備は変圧器で電圧を調整する施設です。ゲームでは作業効率と建築速度を高める役割が案内されています。 複数の建設を予定する際は配電設備の効果をゲーム内で確認しましょう。このページでは設備自体の基本費用と時間を比較できます。",
       "url": "/ja/buildings/artifact-workshop/"
     },
     {
@@ -6974,9 +6603,16 @@
     {
       "language": "ja",
       "type": "building",
-      "title": "病院 | タイルズサバイバル 建物 | TilesSurvive.net",
-      "description": "タイルズサバイバルの病院の収容力、無料治療、治療ルールと運用時の注意点を整理した詳細ページです。",
+      "title": "病院 | 建物 | TilesSurvive.net",
+      "description": "病院 · 病院は負傷した兵士を収容して治療します。強化するとより多くの負傷兵を収容できます。 戦闘前に現在の負傷兵と収容枠の残りを確認しましょう。発電所の条件となる病院レベルも合わせて準備してください。",
       "url": "/ja/buildings/hospital/"
+    },
+    {
+      "language": "ja",
+      "type": "building",
+      "title": "兵舎 | 建物 | TilesSurvive.net",
+      "description": "兵舎 · 兵舎は兵士を訓練する軍事施設です。建物の成長と兵種の解放情報を合わせて確認できます。 訓練したい兵種の条件を確認して兵舎を育成しましょう。訓練を増やす際は駐屯所と病院の収容力も確認してください。",
+      "url": "/ja/buildings/barracks/"
     },
     {
       "language": "ja",
@@ -7114,8 +6750,8 @@
     {
       "language": "ja",
       "type": "building",
-      "title": "神盾の記念碑 | タイルズサバイバル 建物 | TilesSurvive.net",
-      "description": "タイルズサバイバル建物 神盾の記念碑 詳細ページです。建物紹介、レベル別英雄防御、戦闘力情報をひと目で整理しました。",
+      "title": "神盾の記念碑 | 建物 | TilesSurvive.net",
+      "description": "神盾の記念碑 · 神盾の記念碑は英雄の防御力を強化します。攻撃や体力を上げる記念碑とは効果が異なります。 防御を補強する場合は次のレベルのボーナスを確認しましょう。勇士の記念碑と比べる際は防御と体力を別の指標として見てください。",
       "url": "/ja/buildings/aegis-monument/"
     },
     {
@@ -7156,8 +6792,8 @@
     {
       "language": "ja",
       "type": "building",
-      "title": "英雄学院 | タイルズサバイバル 建物 | TilesSurvive.net",
-      "description": "タイルズサバイバル 英雄学院の建物概要、英雄スキルブックの時間当たり生産量、戦闘力をレベル別に整理した詳細ページです。",
+      "title": "英雄学院 | 建物 | TilesSurvive.net",
+      "description": "英雄学院 · 英雄学院は英雄のスキルブック生産に関わります。レベル別の毎時生産量と強化費用を比較できます。 主力英雄の次のスキル強化に必要なスキルブックを確認し、学院の生産量を育成計画に組み込みましょう。",
       "url": "/ja/buildings/hero-academy/"
     },
     {
@@ -7198,8 +6834,8 @@
     {
       "language": "ja",
       "type": "building",
-      "title": "勇士の記念碑 | タイルズサバイバル 建物 | TilesSurvive.net",
-      "description": "タイルズサバイバル建物 勇士の記念碑 詳細ページです。建物紹介、レベル別英雄HP、戦闘力情報をひと目で整理しました。",
+      "title": "勇士の記念碑 | 建物 | TilesSurvive.net",
+      "description": "勇士の記念碑 · 勇士の記念碑は英雄の体力を強化します。レベル別の体力効果と建物の戦力を確認できます。 英雄の生存力を補強する際は体力増加量と費用を比較しましょう。防御も必要なら神盾の記念碑を合わせて確認してください。",
       "url": "/ja/buildings/guardian-of-life-monument/"
     },
     {
@@ -7282,8 +6918,8 @@
     {
       "language": "ja",
       "type": "building",
-      "title": "入隊事務所 | タイルズサバイバル 建物 | TilesSurvive.net",
-      "description": "タイルズサバイバル 入隊事務所の忠誠値、徴兵可能数、収容力と運用ルールを整理した詳細ページです。",
+      "title": "入隊事務所 | 建物 | TilesSurvive.net",
+      "description": "入隊事務所 · 入隊事務所は負傷兵が病院の収容力を超えたときの兵力補充を助けます。v2.6.200では忠誠度が募集証書に置き換わりました。 戦闘後はゲーム内で募集待ちの兵士と無料募集数を確認してください。過去の忠誠度の数値では現在の回復量を予測できません。",
       "url": "/ja/buildings/enlistment-office/"
     },
     {
@@ -7458,14 +7094,14 @@
       "language": "ja",
       "type": "building",
       "title": "製錬所 | 建物 | TilesSurvive.net",
-      "description": "製錬所 · レベルと設定ごとに基本資源・時間、建設アイテム、必要建物を確認できます。",
+      "description": "製錬所 · 製錬所は金属を生産し、レベルアップで金属の生産速度が上がります。 目標建物の金属必要量を見て生産強化を計画しましょう。所持金属と資源箱で確保できる量も比較してください。",
       "url": "/ja/buildings/smelter/"
     },
     {
       "language": "ja",
       "type": "building",
       "title": "製油所 | 建物 | TilesSurvive.net",
-      "description": "製油所 · レベルと設定ごとに基本資源・時間、建設アイテム、必要建物を確認できます。",
+      "description": "製油所 · 製油所は燃料を生産し、レベルアップで燃料の生産速度が上がります。 目標建物に必要な燃料を確認して生産強化を計画しましょう。金属生産とは別の資源として管理してください。",
       "url": "/ja/buildings/refinery/"
     },
     {
@@ -7478,15 +7114,15 @@
     {
       "language": "ja",
       "type": "building",
-      "title": "駐屯所 | タイルズサバイバル 建物 | TilesSurvive.net",
-      "description": "タイルズサバイバルの駐屯所の最大兵士数と兵士運用情報を整理した詳細ページです。",
+      "title": "駐屯所 | 建物 | TilesSurvive.net",
+      "description": "駐屯所 · 駐屯所には兵舎で訓練した兵士が駐屯します。強化すると兵士の収容力が増えます。 兵舎の訓練を増やす前に駐屯所の余裕を確認しましょう。戦闘準備では病院の負傷兵収容枠も別に確認してください。",
       "url": "/ja/buildings/garrison-station/"
     },
     {
       "language": "ja",
       "type": "building",
-      "title": "呪詛重傷の碑 | タイルズサバイバル 建物 | TilesSurvive.net",
-      "description": "タイルズサバイバルの呪詛重傷の碑の概要、敵軍軽傷転換率、戦闘力をレベル別に整理した詳細ページです。",
+      "title": "呪詛重傷の碑 | 建物 | TilesSurvive.net",
+      "description": "呪詛重傷の碑 · 呪詛重傷の碑は敵兵の重傷が軽傷に変わる確率を下げます。味方を対象とする加護治療の碑とは異なります。 戦闘向けの育成では敵の軽傷転換率への効果を確認しましょう。味方の回復が目的なら加護治療の碑と病院を別に検討してください。",
       "url": "/ja/buildings/cursed-wound-stele/"
     },
     {
@@ -7502,6 +7138,13 @@
       "title": "指揮官スタミナ10",
       "description": "지휘관 기력 10 · 指揮官スタミナを10Pt回復する · アイテムの入手先・用途",
       "url": "/ja/database/items/#stamina-10"
+    },
+    {
+      "language": "ja",
+      "type": "building",
+      "title": "集会所 | 建物 | TilesSurvive.net",
+      "description": "集会所 · 集会所では同盟・友達の支援や援軍をやり取りします。現在確認済みのレベル別効果表では同盟支援回数を掲載しています。 建設や研究で同盟支援を利用する場合は、次のレベルの支援回数を比較して育成順を決めましょう。",
+      "url": "/ja/buildings/comms-outpost/"
     },
     {
       "language": "ja",
@@ -7752,14 +7395,21 @@
       "language": "ja",
       "type": "building",
       "title": "厨房 | 建物 | TilesSurvive.net",
-      "description": "厨房 · レベルと設定ごとに基本資源・時間、建設アイテム、必要建物を確認できます。",
+      "description": "厨房 · 厨房の設備をレベルアップすると食事の質が向上し、生存者の満腹度が上がります。 生存者の満腹度を見て厨房設備の育成を計画しましょう。住居は睡眠の質、温室は食料生産を担うため、目的を分けて管理してください。",
       "url": "/ja/buildings/kitchen/"
     },
     {
       "language": "ja",
       "type": "building",
+      "title": "実験室1 | 建物 | TilesSurvive.net",
+      "description": "実験室1 · 実験室1では戦闘と発展を支える技術を研究します。強化するとさらに高度な技術を解放できます。 次の研究が必要とする実験室レベルを確認しましょう。発展・経済・戦闘など必要な研究を選ぶと建物の目標も定まります。",
+      "url": "/ja/buildings/lab/"
+    },
+    {
+      "language": "ja",
+      "type": "building",
       "title": "実験室2 | 建物 | TilesSurvive.net",
-      "description": "実験室2 · レベルと設定ごとに基本資源・時間、建設アイテム、必要建物を確認できます。",
+      "description": "実験室2 · 実験室2は研究効率を高めるための別の研究施設です。実験室1と区別した建物データと解放条件を使います。 追加の研究を計画する前に実験室2をアカウントで解放できるか確認しましょう。技術の費用と建物の費用は別に準備してください。",
       "url": "/ja/buildings/lab-2/"
     },
     {
@@ -8094,8 +7744,8 @@
     {
       "language": "ja",
       "type": "building",
-      "title": "戦神の記念碑 | タイルズサバイバル 建物 | TilesSurvive.net",
-      "description": "タイルズサバイバル建物「戦神の記念碑」の詳細ページです。建物紹介、レベル別の英雄攻撃、戦闘力情報をひと目で整理しました。",
+      "title": "戦神の記念碑 | 建物 | TilesSurvive.net",
+      "description": "戦神の記念碑 · 戦神の記念碑は英雄の攻撃力を強化します。攻撃効果と戦力はレベルごとに区別して表示します。 英雄の攻撃を補強したい場合は、次のレベルの効果と資源費用を比較しましょう。スキル強化とは目的を分けて計画してください。",
       "url": "/ja/buildings/warbringer-monument/"
     },
     {
@@ -8130,22 +7780,15 @@
       "language": "ja",
       "type": "building",
       "title": "温室 | 建物 | TilesSurvive.net",
-      "description": "温室 · レベルと設定ごとに基本資源・時間、建設アイテム、必要建物を確認できます。",
+      "description": "温室 · 温室は食料を生産し、レベルアップで食料の生産速度が上がります。 次の建設に必要な食料を確認して生産基盤を強化しましょう。食料生産と厨房による生存者の満腹度は目的が異なります。",
       "url": "/ja/buildings/greenhouse/"
     },
     {
       "language": "ja",
       "type": "building",
-      "title": "発電所 | タイルズサバイバル 建物 | TilesSurvive.net",
-      "description": "タイルズサバイバル 発電所のアップグレード費用、時間、戦闘力とスキル情報をレベル別に整理した詳細ページです。",
+      "title": "発電所 | 建物 | TilesSurvive.net",
+      "description": "発電所 · 発電所は基地の中心的な建物で、他の建物の成長の基盤です。強化すると新しい建物や強化段階を解放できます。 次に育成する建物が必要とする発電所レベルを確認し、発電所と関連建物の費用を別々に準備しましょう。",
       "url": "/ja/buildings/power-plant/"
-    },
-    {
-      "language": "ja",
-      "type": "building",
-      "title": "研究所 | タイルズサバイバル 建物 | TilesSurvive.net",
-      "description": "タイルズサバイバル研究所インデックスページです。発展、経済、英雄、兵士、諜報前哨基地、同盟対決、特殊部隊、感染者討伐、終末輸送研究をひと目で整理しました。",
-      "url": "/ja/buildings/lab/"
     },
     {
       "language": "ja",
@@ -8919,13 +8562,6 @@
     },
     {
       "language": "ja",
-      "type": "building",
-      "title": "タイルズサバイバル 兵営 | アップグレード費用と兵種解放 | TilesSurvive.net",
-      "description": "タイルズサバイバルの兵営アップグレード費用、時間、先行建物条件と兵種解放情報をひと目で整理した詳細ページです。",
-      "url": "/ja/buildings/barracks/"
-    },
-    {
-      "language": "ja",
       "type": "code",
       "title": "タイルズサバイバル ギフトコード | 有効コード・常設コード・期限カウントダウン | TilesSurvive.net",
       "description": "タイルズサバイバルの有効ギフトコード、常設コード、次の期限カウントダウンを1ページで確認できます。アジア・ヨーロッパ・アメリカ基準の期限時間、コピー機能、FAQまでまとめました。",
@@ -9502,20 +9138,6 @@
     },
     {
       "language": "ja",
-      "type": "building",
-      "title": "レベル別の基本効果",
-      "description": "ゲーム2.6.200。建物自体の基本効果です。研究・ヒーロー・シーズンなどの追加ボーナスは含みません。",
-      "url": "/ja/buildings/comms-outpost/#building-effects-51"
-    },
-    {
-      "language": "ja",
-      "type": "building",
-      "title": "レベル別の基本効果",
-      "description": "ゲーム2.6.200。建物自体の基本効果です。研究・ヒーロー・シーズンなどの追加ボーナスは含みません。",
-      "url": "/ja/buildings/lab/#building-effects-51"
-    },
-    {
-      "language": "ja",
       "type": "behemoth",
       "title": "レベル別の基本経験値",
       "description": "巨獣グリフォン · 各レベルから次のレベルへ成長する際の基本EXPです。",
@@ -9595,6 +9217,13 @@
     },
     {
       "language": "ko",
+      "type": "building",
+      "title": "1번 실험실 | 건물 | TilesSurvive.net",
+      "description": "1번 실험실 · 1번 실험실에서는 전투와 발전을 돕는 기술을 연구합니다. 업그레이드하면 더 발전된 기술을 해금할 수 있습니다. 다음 연구가 요구하는 실험실 레벨을 먼저 찾으세요. 발전·경제·전투 등 필요한 연구 분야를 정하면 건물 성장 목표도 정하기 쉽습니다.",
+      "url": "/ko/buildings/lab/"
+    },
+    {
+      "language": "ko",
       "type": "event",
       "title": "1회 결제",
       "description": "미션에서 점수와 보상, 아이템 사용처까지 이어서 확인하세요. 아래 분류는 공개된 규칙의 범위이며 모든 서버의 현재 일정표가 아닙니다.",
@@ -9618,7 +9247,7 @@
       "language": "ko",
       "type": "building",
       "title": "2번 실험실 | 건물 | TilesSurvive.net",
-      "description": "2번 실험실 · 레벨별 기본 자원·시간, 건설 아이템과 선행 건물 정보를 설정별로 확인하세요.",
+      "description": "2번 실험실 · 2번 실험실은 연구 효율을 위한 별도 연구 건물입니다. 1번 실험실과 구분된 건물 데이터와 해금 조건을 사용합니다. 추가 연구 운영을 계획하기 전에 계정에서 2번 실험실을 해금할 수 있는지 확인하세요. 연구할 기술의 비용과 건물 비용을 따로 준비하세요.",
       "url": "/ko/buildings/lab-2/"
     },
     {
@@ -9646,7 +9275,7 @@
       "language": "ko",
       "type": "building",
       "title": "감시탑 | 건물 | TilesSurvive.net",
-      "description": "감시탑 · 레벨별 기본 자원·시간, 건설 아이템과 선행 건물 정보를 설정별로 확인하세요.",
+      "description": "감시탑 · 감시탑의 레벨별 비용·시간과 연결된 선행 조건을 확인할 수 있습니다. 구체적인 기능 설명과 레벨별 효과는 아직 확인되지 않았습니다. 다른 목표 건물의 조건에 감시탑이 표시되면 해당 레벨까지의 비용을 확인하세요. 기능을 목적으로 성장시킬 때는 게임의 설명을 먼저 확인하세요.",
       "url": "/ko/buildings/lookout-tower/"
     },
     {
@@ -10134,7 +9763,7 @@
       "language": "ko",
       "type": "building",
       "title": "도구 공방 | 건물 | TilesSurvive.net",
-      "description": "도구 공방 · 레벨별 기본 자원·시간, 건설 아이템과 선행 건물 정보를 설정별로 확인하세요.",
+      "description": "도구 공방 · 도구 공방은 변압기를 이용하는 배전 시설입니다. 게임 설명에서는 작업 효율과 건설 속도를 높이는 역할로 안내합니다. 여러 건설을 계획할 때 도구 공방의 효과를 게임에서 확인하세요. 이 페이지에서는 건물 자체의 기본 비용과 시간을 비교할 수 있습니다.",
       "url": "/ko/buildings/artifact-workshop/"
     },
     {
@@ -10266,20 +9895,6 @@
     },
     {
       "language": "ko",
-      "type": "building",
-      "title": "레벨별 기본 효과",
-      "description": "게임 2.6.200 · 건물 자체의 기본 효과입니다. 연구·영웅·시즌 등 추가 보너스는 포함하지 않습니다.",
-      "url": "/ko/buildings/comms-outpost/#building-effects-51"
-    },
-    {
-      "language": "ko",
-      "type": "building",
-      "title": "레벨별 기본 효과",
-      "description": "게임 2.6.200 · 건물 자체의 기본 효과입니다. 연구·영웅·시즌 등 추가 보너스는 포함하지 않습니다.",
-      "url": "/ko/buildings/lab/#building-effects-51"
-    },
-    {
-      "language": "ko",
       "type": "heroe",
       "title": "레이 · 스킬·능력치·성장 | TilesSurvive.net",
       "description": "타일서바이벌 영웅 레이 상세 페이지입니다. SSR 영웅 기준으로 영웅 소개, 전투 특성, 최고 레벨 및 성급 속성, 성급 보너스, 스킬, 전용 장비를 한눈에 정리했습니다.",
@@ -10352,15 +9967,15 @@
     {
       "language": "ko",
       "type": "building",
-      "title": "모병소 | 타일서바이벌 건물 | TilesSurvive.net",
-      "description": "타일서바이벌 모병소의 충성도, 징병 가능 수량, 수용력과 운영 규칙을 정리한 상세 페이지입니다.",
+      "title": "모병소 | 건물 | TilesSurvive.net",
+      "description": "모병소 · 모병소는 부상병이 병원 수용력을 초과할 때 병력 보충을 돕습니다. v2.6.200에서는 충성도 대신 모병 증서를 사용하도록 변경됐습니다. 전투 후 모병 대기 병력과 무료 모병량을 게임에서 확인하세요. 기존 충성도 수치로 현재 복구량을 예측하지 마세요.",
       "url": "/ko/buildings/enlistment-office/"
     },
     {
       "language": "ko",
       "type": "building",
       "title": "목재 공방 | 건물 | TilesSurvive.net",
-      "description": "목재 공방 · 레벨별 기본 자원·시간, 건설 아이템과 선행 건물 정보를 설정별로 확인하세요.",
+      "description": "목재 공방 · 목재 공방은 목재를 생산하며 업그레이드하면 목재 생산 속도가 높아집니다. 여러 건물을 이어서 올릴 계획이라면 목표 구간의 목재 합계를 먼저 확인하세요. 생산 시설의 성장 비용도 계획에 포함하세요.",
       "url": "/ko/buildings/lumberyard/"
     },
     {
@@ -10409,7 +10024,7 @@
       "language": "ko",
       "type": "building",
       "title": "민가 | 건물 | TilesSurvive.net",
-      "description": "민가 · 레벨별 기본 자원·시간, 건설 아이템과 선행 건물 정보를 설정별로 확인하세요.",
+      "description": "민가 · 민가 시설을 업그레이드하면 수면 품질이 향상되고 생존자의 수면도가 증가합니다. 민가 1~6은 비용표를 각각 구분합니다. 생존자의 수면 상태와 개선할 민가 번호를 확인하세요. 같은 레벨이어도 다른 민가의 비용으로 계산하지 말고 해당 민가를 선택하세요.",
       "url": "/ko/buildings/houses/"
     },
     {
@@ -10436,8 +10051,8 @@
     {
       "language": "ko",
       "type": "building",
-      "title": "발전소 | 타일서바이벌 건물 | TilesSurvive.net",
-      "description": "타일서바이벌 발전소 업그레이드 비용, 시간, 전투력과 스킬 정보를 레벨별로 정리한 상세 페이지입니다.",
+      "title": "발전소 | 건물 | TilesSurvive.net",
+      "description": "발전소 · 발전소는 기지의 핵심 건물이자 다른 건물 성장의 기반입니다. 업그레이드하면 새로운 건물과 성장 단계를 해금할 수 있습니다. 다음에 성장시킬 건물의 발전소 요구 레벨부터 확인하세요. 발전소만 올리는 계획보다 연결된 건물의 비용도 따로 준비하는 계획이 유용합니다.",
       "url": "/ko/buildings/power-plant/"
     },
     {
@@ -10608,8 +10223,15 @@
     {
       "language": "ko",
       "type": "building",
-      "title": "병원 | 타일서바이벌 건물 | TilesSurvive.net",
-      "description": "타일서바이벌 병원의 수용력, 무료 치료, 치료 규칙과 운영 주의사항을 정리한 상세 페이지입니다.",
+      "title": "병영 | 건물 | TilesSurvive.net",
+      "description": "병영 · 병영은 병사를 훈련하는 군사 건물입니다. 건물 성장과 병종 해금 정보를 함께 확인하세요. 훈련하려는 병종의 조건을 먼저 확인하고 필요한 병영을 성장시키세요. 훈련을 늘릴 때는 주둔소와 병원도 함께 점검하세요.",
+      "url": "/ko/buildings/barracks/"
+    },
+    {
+      "language": "ko",
+      "type": "building",
+      "title": "병원 | 건물 | TilesSurvive.net",
+      "description": "병원 · 병원은 부상한 병사를 수용하고 치료하는 건물입니다. 업그레이드하면 더 많은 부상병을 수용할 수 있습니다. 전투를 준비할 때 현재 부상병과 남은 수용 공간을 확인하세요. 발전소의 선행 조건으로 병원이 표시되는 구간도 함께 준비하세요.",
       "url": "/ko/buildings/hospital/"
     },
     {
@@ -10671,8 +10293,8 @@
     {
       "language": "ko",
       "type": "building",
-      "title": "생명의 용사비 | 타일서바이벌 건물 | TilesSurvive.net",
-      "description": "타일서바이벌 건물 생명의 용사비 상세 페이지입니다. 건물 소개, 레벨별 영웅 체력, 전투력 정보를 한눈에 정리했습니다.",
+      "title": "생명의 용사비 | 건물 | TilesSurvive.net",
+      "description": "생명의 용사비 · 생명의 용사비는 영웅 체력 버프를 제공합니다. 레벨별 체력 효과와 건물 전투력을 확인할 수 있습니다. 영웅의 생존력을 보강할 때 체력 증가량과 비용을 비교하세요. 방어 보강이 필요하면 이지스 수호비의 효과도 함께 살펴보세요.",
       "url": "/ko/buildings/guardian-of-life-monument/"
     },
     {
@@ -11113,15 +10735,8 @@
     {
       "language": "ko",
       "type": "building",
-      "title": "연구소 | 타일서바이벌 건물 | TilesSurvive.net",
-      "description": "타일서바이벌 연구소 인덱스 페이지입니다. 발전, 경제, 영웅, 병사, 첩보 초소, 동맹 대결, 특수 부대, 감염자 토벌, 종말의 운송 연구를 한눈에 정리했습니다.",
-      "url": "/ko/buildings/lab/"
-    },
-    {
-      "language": "ko",
-      "type": "building",
-      "title": "연락소 | 타일서바이벌 건물 | TilesSurvive.net",
-      "description": "타일서바이벌 건물 연락소 상세 페이지입니다. 건물 소개, 기능 안내, 도움 시스템 요약을 정리한 페이지입니다.",
+      "title": "연락소 | 건물 | TilesSurvive.net",
+      "description": "연락소 · 연락소에서는 동맹·친구의 도움과 지원군을 주고받습니다. 현재 확인된 레벨별 효과표는 타이머 도움 횟수를 제공합니다. 건설·연구 계획에서 동맹 도움을 활용한다면 다음 레벨의 도움 횟수를 비교해 성장 순서를 정하세요.",
       "url": "/ko/buildings/comms-outpost/"
     },
     {
@@ -11183,8 +10798,8 @@
     {
       "language": "ko",
       "type": "building",
-      "title": "영웅 아카데미 | 타일서바이벌 건물 | TilesSurvive.net",
-      "description": "타일서바이벌 영웅 아카데미의 건물 개요, 영웅 스킬북 시간당 생산량, 전투력을 레벨별로 정리한 상세 페이지입니다.",
+      "title": "영웅 아카데미 | 건물 | TilesSurvive.net",
+      "description": "영웅 아카데미 · 영웅 아카데미는 영웅 스킬북 생산과 연결됩니다. 레벨별 시간당 생산량과 건물 비용을 함께 비교할 수 있습니다. 주력 영웅의 다음 스킬 강화에 필요한 스킬북을 확인한 뒤 아카데미 생산량을 성장 계획에 반영하세요.",
       "url": "/ko/buildings/hero-academy/"
     },
     {
@@ -11205,7 +10820,7 @@
       "language": "ko",
       "type": "building",
       "title": "온실 | 건물 | TilesSurvive.net",
-      "description": "온실 · 레벨별 기본 자원·시간, 건설 아이템과 선행 건물 정보를 설정별로 확인하세요.",
+      "description": "온실 · 온실은 식량을 생산하며 업그레이드하면 식량 생산 속도가 높아집니다. 다음 건설에 필요한 식량을 확인하고 생산 기반을 보강할지 결정하세요. 식량 생산과 생존자의 포만감을 위한 주방은 목적이 다릅니다.",
       "url": "/ko/buildings/greenhouse/"
     },
     {
@@ -11304,8 +10919,8 @@
     {
       "language": "ko",
       "type": "building",
-      "title": "이지스 수호비 | 타일서바이벌 건물 | TilesSurvive.net",
-      "description": "타일서바이벌 건물 이지스 수호비 상세 페이지입니다. 건물 소개, 레벨별 영웅 방어, 전투력 정보를 한눈에 정리했습니다.",
+      "title": "이지스 수호비 | 건물 | TilesSurvive.net",
+      "description": "이지스 수호비 · 이지스 수호비는 영웅 방어력 버프를 제공합니다. 공격·체력을 올리는 다른 기념비와 효과가 다릅니다. 방어력을 보강할 때 다음 레벨의 방어 보너스를 확인하세요. 생명의 용사비와 비교할 때는 방어와 체력을 별도 지표로 보세요.",
       "url": "/ko/buildings/aegis-monument/"
     },
     {
@@ -11388,8 +11003,8 @@
     {
       "language": "ko",
       "type": "building",
-      "title": "저주받은 상처 비석 | 타일서바이벌 건물 | TilesSurvive.net",
-      "description": "타일서바이벌 저주받은 상처 비석의 개요, 적군 경상 전환율, 전투력을 레벨별로 정리한 상세 페이지입니다.",
+      "title": "저주받은 상처 비석 | 건물 | TilesSurvive.net",
+      "description": "저주받은 상처 비석 · 저주받은 상처 비석은 적군 병사의 중상이 경상으로 전환될 확률을 낮춥니다. 아군을 위한 치유 비석과 적용 대상이 다릅니다. 전투 관련 성장 계획에서는 적군 경상 전환율 효과를 확인하세요. 아군 피해 복구가 목적이라면 치유 비석과 병원을 별도로 살펴보세요.",
       "url": "/ko/buildings/cursed-wound-stele/"
     },
     {
@@ -11787,8 +11402,8 @@
     {
       "language": "ko",
       "type": "building",
-      "title": "전장의 신 기념비 | 타일서바이벌 건물 | TilesSurvive.net",
-      "description": "타일서바이벌 건물 전장의 신 기념비 상세 페이지입니다. 건물 소개, 레벨별 영웅 공격, 전투력 정보를 한눈에 정리했습니다.",
+      "title": "전장의 신 기념비 | 건물 | TilesSurvive.net",
+      "description": "전장의 신 기념비 · 전장의 신 기념비는 영웅 공격력 버프를 제공합니다. 레벨별 공격 효과와 전투력은 구분하여 표시합니다. 영웅 공격력을 보강하려면 다음 레벨의 효과와 필요한 자원을 비교하세요. 영웅 스킬 강화와도 목적을 나누어 계획하세요.",
       "url": "/ko/buildings/warbringer-monument/"
     },
     {
@@ -11816,7 +11431,7 @@
       "language": "ko",
       "type": "building",
       "title": "정유 공방 | 건물 | TilesSurvive.net",
-      "description": "정유 공방 · 레벨별 기본 자원·시간, 건설 아이템과 선행 건물 정보를 설정별로 확인하세요.",
+      "description": "정유 공방 · 정유 공방은 연료를 생산하며 업그레이드하면 연료 생산 속도가 높아집니다. 목표 건물에서 연료가 얼마나 필요한지 확인한 뒤 생산 보강을 계획하세요. 금속 생산과는 별도의 자원 흐름으로 관리하세요.",
       "url": "/ko/buildings/refinery/"
     },
     {
@@ -11830,7 +11445,7 @@
       "language": "ko",
       "type": "building",
       "title": "제련 공방 | 건물 | TilesSurvive.net",
-      "description": "제련 공방 · 레벨별 기본 자원·시간, 건설 아이템과 선행 건물 정보를 설정별로 확인하세요.",
+      "description": "제련 공방 · 제련 공방은 금속을 생산하며 업그레이드하면 금속 생산 속도가 높아집니다. 목표 건물의 금속 요구량을 살펴보고 생산 보강을 계획하세요. 보유 금속과 자원 상자로 확보할 수 있는 금속도 함께 비교하세요.",
       "url": "/ko/buildings/smelter/"
     },
     {
@@ -11859,15 +11474,15 @@
     {
       "language": "ko",
       "type": "building",
-      "title": "주둔소 | 타일서바이벌 건물 | TilesSurvive.net",
-      "description": "타일서바이벌 주둔소의 최대 병사 수량과 병사 운용 정보를 정리한 상세 페이지입니다.",
+      "title": "주둔소 | 건물 | TilesSurvive.net",
+      "description": "주둔소 · 주둔소에는 병영에서 훈련한 병사가 주둔합니다. 주둔소를 업그레이드하면 병사 수용력이 증가합니다. 병영에서 훈련량을 늘리기 전에 주둔소의 여유를 살펴보세요. 전투 준비라면 병원의 부상병 수용 공간도 따로 확인하세요.",
       "url": "/ko/buildings/garrison-station/"
     },
     {
       "language": "ko",
       "type": "building",
       "title": "주방 | 건물 | TilesSurvive.net",
-      "description": "주방 · 레벨별 기본 자원·시간, 건설 아이템과 선행 건물 정보를 설정별로 확인하세요.",
+      "description": "주방 · 주방 시설을 업그레이드하면 식량 품질이 향상되고 생존자의 포만감이 증가합니다. 생존자의 포만감을 살펴보고 주방 시설 성장을 계획하세요. 민가는 수면 품질을, 온실은 식량 생산을 담당하므로 목적을 나누어 관리하세요.",
       "url": "/ko/buildings/kitchen/"
     },
     {
@@ -12072,8 +11687,8 @@
     {
       "language": "ko",
       "type": "building",
-      "title": "축복받은 치유 비석 | 타일서바이벌 건물 | TilesSurvive.net",
-      "description": "타일서바이벌 축복받은 치유 비석의 개요, 경상 전환율, 전투력을 레벨별로 정리한 상세 페이지입니다.",
+      "title": "축복받은 치유 비석 | 건물 | TilesSurvive.net",
+      "description": "축복받은 치유 비석 · 축복받은 치유 비석은 아군 병사의 중상이 경상으로 전환될 확률을 높입니다. 병원의 수용력과는 다른 전투 효과입니다. 반복 전투를 준비할 때 다음 레벨의 경상 전환율과 비용을 비교하세요. 이미 발생한 부상병의 치료 계획은 병원에서 별도로 확인하세요.",
       "url": "/ko/buildings/blessed-healing-stele/"
     },
     {
@@ -12242,13 +11857,6 @@
       "title": "타일서바이벌 베헤모스 목록 | TilesSurvive.net",
       "description": "타일서바이벌 베헤모스 목록 페이지입니다. 현재 확인된 베헤모스를 한눈에 보기 쉽게 정리했습니다.",
       "url": "/ko/behemoths/"
-    },
-    {
-      "language": "ko",
-      "type": "building",
-      "title": "타일서바이벌 병영 | 업그레이드 비용 및 병종 해금 | TilesSurvive.net",
-      "description": "타일서바이벌 병영 업그레이드 비용, 시간, 선행 건물 조건과 병종 해금 정보를 한눈에 정리한 상세 페이지입니다.",
-      "url": "/ko/buildings/barracks/"
     },
     {
       "language": "ko",
@@ -12721,27 +12329,6 @@
     },
     {
       "language": "ru",
-      "type": "building",
-      "title": "Hospital | Здания Tiles Survive | TilesSurvive.net",
-      "description": "Подробная страница Hospital в Tiles Survive с данными о вместимости, бесплатном лечении, правилах лечения и важных примечаниях по использованию.",
-      "url": "/ru/buildings/hospital/"
-    },
-    {
-      "language": "ru",
-      "type": "building",
-      "title": "Lab | Здания Tiles Survive | TilesSurvive.net",
-      "description": "Индекс-страница Lab в Tiles Survive. Здесь в одном месте собраны исследования Development, Economy, Hero, Soldier, Intel Outpost, Alliance Duel, Special Forces, Infected Hunt и Doomsday Transport.",
-      "url": "/ru/buildings/lab/"
-    },
-    {
-      "language": "ru",
-      "type": "building",
-      "title": "Power Plant | Здания Tiles Survive | TilesSurvive.net",
-      "description": "Подробная страница Power Plant в Tiles Survive с затратами на улучшение, временем, боевой мощью и навыками по уровням.",
-      "url": "/ru/buildings/power-plant/"
-    },
-    {
-      "language": "ru",
       "type": "home",
       "title": "Tiles Survive: база данных и гайды | Герои, питомцы, расчёты",
       "description": "От навыков героев до ресурсов для следующего уровня. Найдите нужные данные и рассчитайте стоимость развития команды.",
@@ -12764,8 +12351,8 @@
     {
       "language": "ru",
       "type": "building",
-      "title": "Академия героев | Здания Tiles Survive | TilesSurvive.net",
-      "description": "Подробная страница здания Академия героев в Tiles Survive: обзор, почасовое производство книг навыков героев и сила по уровням.",
+      "title": "Академия героев | Здания | TilesSurvive.net",
+      "description": "Академия героев · Академия героев производит книги навыков героев. Сравнивайте почасовое производство по уровням со стоимостью улучшений. Узнайте, сколько книг нужно для следующих улучшений навыков основных героев, и учтите производство академии.",
       "url": "/ru/buildings/hero-academy/"
     },
     {
@@ -12843,20 +12430,6 @@
     },
     {
       "language": "ru",
-      "type": "building",
-      "title": "Базовые эффекты по уровням",
-      "description": "Версия 2.6.200. Базовые эффекты здания без дополнительных бонусов исследований, героев, сезона и других источников.",
-      "url": "/ru/buildings/comms-outpost/#building-effects-51"
-    },
-    {
-      "language": "ru",
-      "type": "building",
-      "title": "Базовые эффекты по уровням",
-      "description": "Версия 2.6.200. Базовые эффекты здания без дополнительных бонусов исследований, героев, сезона и других источников.",
-      "url": "/ru/buildings/lab/#building-effects-51"
-    },
-    {
-      "language": "ru",
       "type": "behemoth",
       "title": "Базовый опыт по уровням",
       "description": "Легендарный грифон · Базовый опыт для каждого перехода на следующий уровень.",
@@ -12918,13 +12491,6 @@
       "title": "Билет сражения на Арене героев",
       "description": "아레나 도전권 · Добавляет больше попыток сражения на арене. Дополнительные попытки сверх лимита сбрасываются при смене сезона. · Где получить и использовать предметы",
       "url": "/ru/database/items/#arena-ticket"
-    },
-    {
-      "language": "ru",
-      "type": "building",
-      "title": "Благословенная стела исцеления | Здания Tiles Survive | TilesSurvive.net",
-      "description": "Подробная страница со сводкой по Благословенной стеле исцеления в Tiles Survive: обзор, коэффициент перевода тяжелораненых в легкораненых и мощь по уровням.",
-      "url": "/ru/buildings/blessed-healing-stele/"
     },
     {
       "language": "ru",
@@ -12997,6 +12563,13 @@
       "title": "Вероятности перековки | TilesSurvive.net",
       "description": "Попытки суммируются по всему снаряжению. Обычная перековка требует 1 молот, улучшенная — 25 и открывается после 200 попыток. Официальные вероятности проверены 2026-10-09.",
       "url": "/ru/database/gear-reforging/"
+    },
+    {
+      "language": "ru",
+      "type": "building",
+      "title": "Вестник войны | Здания | TilesSurvive.net",
+      "description": "Вестник войны · Вестник войны усиливает атаку героев. Эффект атаки и мощь указаны отдельно по уровням. Для усиления атаки сравните эффект следующего уровня с расходом ресурсов. Планируйте это отдельно от навыков героев.",
+      "url": "/ru/buildings/warbringer-monument/"
     },
     {
       "language": "ru",
@@ -13134,8 +12707,8 @@
     {
       "language": "ru",
       "type": "building",
-      "title": "Гарнизон | Здания Tiles Survive | TilesSurvive.net",
-      "description": "Подробная страница здания Гарнизон в Tiles Survive с максимальным количеством солдат и информацией по управлению войсками.",
+      "title": "Гарнизон | Здания | TilesSurvive.net",
+      "description": "Гарнизон · В гарнизоне размещаются войска, обученные в казармах. Улучшение гарнизона увеличивает вместимость для солдат. Перед увеличением обучения в казармах проверьте свободные места в гарнизоне. Для боя отдельно оцените место для раненых в госпитале.",
       "url": "/ru/buildings/garrison-station/"
     },
     {
@@ -13193,6 +12766,13 @@
       "title": "Гонка вооружений",
       "description": "Отдельно сравнивайте обучение войск и усиление героев для уровня 30–30: калькулятор, три награды и применение медалей.",
       "url": "/ru/events/#archive-arms-race"
+    },
+    {
+      "language": "ru",
+      "type": "building",
+      "title": "Госпиталь | Здания | TilesSurvive.net",
+      "description": "Госпиталь · Госпиталь принимает и лечит раненых солдат. Улучшения увеличивают его вместимость для раненых. Перед боем проверьте число раненых и свободные места. Учтите также улучшения госпиталя, нужные для целевого уровня электростанции.",
+      "url": "/ru/buildings/hospital/"
     },
     {
       "language": "ru",
@@ -13461,7 +13041,7 @@
       "language": "ru",
       "type": "building",
       "title": "Дома | Здания | TilesSurvive.net",
-      "description": "Дома · Базовые ресурсы, время, строительные предметы и необходимые здания по уровням и настройкам.",
+      "description": "Дома · Улучшение домов повышает качество сна и бодрость выживших. Для домов 1–6 приведены отдельные таблицы затрат. Проверьте потребность выживших во сне и номер нужного дома. Даже на одинаковом уровне используйте затраты выбранного дома, а не другого.",
       "url": "/ru/buildings/houses/"
     },
     {
@@ -13582,7 +13162,7 @@
       "language": "ru",
       "type": "building",
       "title": "Завод | Здания | TilesSurvive.net",
-      "description": "Завод · Базовые ресурсы, время, строительные предметы и необходимые здания по уровням и настройкам.",
+      "description": "Завод · Завод производит топливо. Улучшение повышает скорость производства топлива. До улучшения производства узнайте потребность целевых зданий в топливе. Учитывайте топливо отдельно от металла.",
       "url": "/ru/buildings/refinery/"
     },
     {
@@ -13605,6 +13185,13 @@
       "title": "Звуковая волна",
       "description": "Дважды бьёт по струнам гитары и дважды атакует цель. Каждое попадание наносит ближайшей вражеской цели урон в размере 139% от ATK.",
       "url": "/ru/heroes/rosie/#character-skill-0-0"
+    },
+    {
+      "language": "ru",
+      "type": "building",
+      "title": "Золотая защита | Здания | TilesSurvive.net",
+      "description": "Золотая защита · Золотая защита усиливает защиту героев. Её эффект отличается от памятников атаки и здоровья. При усилении выживаемости изучите бонус защиты следующего уровня. Сравнивая с Хранителем жизни, рассматривайте защиту и здоровье отдельно.",
+      "url": "/ru/buildings/aegis-monument/"
     },
     {
       "language": "ru",
@@ -13693,8 +13280,8 @@
     {
       "language": "ru",
       "type": "building",
-      "title": "Казармы | Стоимость улучшения и разблокировка войск | TilesSurvive.net",
-      "description": "Подробная страница по казармам в Tiles Survive: стоимость улучшения, время, требования к зданиям и уровни разблокировки войск.",
+      "title": "Казармы | Здания | TilesSurvive.net",
+      "description": "Казармы · Казармы предназначены для обучения войск. Сопоставляйте развитие здания с открытием уровней войск. Начните с требований нужного уровня войск. При увеличении обучения учитывайте вместимость гарнизона и госпиталя.",
       "url": "/ru/buildings/barracks/"
     },
     {
@@ -13837,7 +13424,7 @@
       "language": "ru",
       "type": "building",
       "title": "Кухня | Здания | TilesSurvive.net",
-      "description": "Кухня · Базовые ресурсы, время, строительные предметы и необходимые здания по уровням и настройкам.",
+      "description": "Кухня · Улучшение кухни повышает качество еды и сытость выживших. Планируйте кухню по сытости выживших. Дома отвечают за сон, теплица — за производство еды; оценивайте эти потребности отдельно.",
       "url": "/ru/buildings/kitchen/"
     },
     {
@@ -13859,8 +13446,15 @@
     {
       "language": "ru",
       "type": "building",
+      "title": "Лаборатория 1 | Здания | TilesSurvive.net",
+      "description": "Лаборатория 1 · В лаборатории 1 исследуют технологии для боя и развития. Улучшения открывают более совершенные технологии. Узнайте уровень лаборатории для следующей технологии. Выбор нужных исследований развития, экономики или боя помогает определить цель улучшения.",
+      "url": "/ru/buildings/lab/"
+    },
+    {
+      "language": "ru",
+      "type": "building",
       "title": "Лаборатория 2 | Здания | TilesSurvive.net",
-      "description": "Лаборатория 2 · Базовые ресурсы, время, строительные предметы и необходимые здания по уровням и настройкам.",
+      "description": "Лаборатория 2 · Лаборатория 2 — отдельное исследовательское здание для повышения эффективности исследований. Её данные и условия открытия отделены от лаборатории 1. Перед планированием дополнительных исследований проверьте доступность лаборатории 2 для аккаунта. Отдельно предусмотрите расходы на технологии и здание.",
       "url": "/ru/buildings/lab-2/"
     },
     {
@@ -13912,7 +13506,7 @@
       "language": "ru",
       "type": "building",
       "title": "Лесопилка | Здания | TilesSurvive.net",
-      "description": "Лесопилка · Базовые ресурсы, время, строительные предметы и необходимые здания по уровням и настройкам.",
+      "description": "Лесопилка · Лесопилка производит древесину. Улучшение повышает скорость производства древесины. Для последовательных улучшений проверьте суммарную древесину целевого диапазона. Включите и расходы на сами производственные здания.",
       "url": "/ru/buildings/lumberyard/"
     },
     {
@@ -13970,7 +13564,7 @@
       "language": "ru",
       "type": "building",
       "title": "Мастерская артефактов | Здания | TilesSurvive.net",
-      "description": "Мастерская артефактов · Базовые ресурсы, время, строительные предметы и необходимые здания по уровням и настройкам.",
+      "description": "Мастерская артефактов · Мастерская артефактов использует трансформаторы как часть энергосети. По описанию игры она повышает эффективность и ускоряет строительство. Планируя несколько строек, проверьте эффект мастерской в игре. Здесь можно сравнить базовые затраты и время самого здания.",
       "url": "/ru/buildings/artifact-workshop/"
     },
     {
@@ -14147,27 +13741,6 @@
       "title": "Молот перековки",
       "description": "세련 망치 · Обычная перековка требует 1 молот, продвинутая — 25. Продвинутая открывается после более 200 перековок суммарно по всему снаряжению. · Где получить и использовать предметы",
       "url": "/ru/database/items/#reforge-hammer"
-    },
-    {
-      "language": "ru",
-      "type": "building",
-      "title": "Монумент Бога Войны | Здания Tiles Survive | TilesSurvive.net",
-      "description": "Подробная страница здания Монумент Бога Войны в Tiles Survive. Здесь собраны описание здания, атака героя по уровням и боевая мощь в удобном виде.",
-      "url": "/ru/buildings/warbringer-monument/"
-    },
-    {
-      "language": "ru",
-      "type": "building",
-      "title": "Монумент Хранителя Жизни | Здания Tiles Survive | TilesSurvive.net",
-      "description": "Подробная страница здания Монумент Хранителя Жизни в Tiles Survive. Здесь собраны описание здания, здоровье героев по уровням и мощь.",
-      "url": "/ru/buildings/guardian-of-life-monument/"
-    },
-    {
-      "language": "ru",
-      "type": "building",
-      "title": "Монумент Эгиды | Здания Tiles Survive | TilesSurvive.net",
-      "description": "Подробная страница здания Монумент Эгиды в Tiles Survive. Здесь собраны описание здания, защита героев по уровням и боевая мощь.",
-      "url": "/ru/buildings/aegis-monument/"
     },
     {
       "language": "ru",
@@ -14416,7 +13989,7 @@
       "language": "ru",
       "type": "building",
       "title": "Плавильня | Здания | TilesSurvive.net",
-      "description": "Плавильня · Базовые ресурсы, время, строительные предметы и необходимые здания по уровням и настройкам.",
+      "description": "Плавильня · Плавильня производит металл. Улучшение повышает скорость производства металла. Планируйте производство по потребности целевых зданий в металле. Сравните запасы с металлом, доступным из ресурсных сундуков.",
       "url": "/ru/buildings/smelter/"
     },
     {
@@ -14605,6 +14178,13 @@
     },
     {
       "language": "ru",
+      "type": "building",
+      "title": "Призывной пункт | Здания | TilesSurvive.net",
+      "description": "Призывной пункт · Призывной пункт помогает пополнять войска, когда раненых больше, чем мест в госпитале. В версии 2.6.200 верность заменена сертификатами найма. После боя проверьте ожидающие войска и бесплатный набор в игре. Старые значения верности не определяют нынешнее восстановление.",
+      "url": "/ru/buildings/enlistment-office/"
+    },
+    {
+      "language": "ru",
       "type": "guide",
       "title": "Пример планирования",
       "description": "Тренировка на 2-й день — рекомендация. Очки за одну печать в объявлении не указаны; проверьте их в игре до расчёта нужной тренировки.",
@@ -14675,13 +14255,6 @@
     },
     {
       "language": "ru",
-      "type": "building",
-      "title": "Проклятая стела ран | Здания Tiles Survive | TilesSurvive.net",
-      "description": "Подробная страница по Проклятой стеле ран в Tiles Survive: обзор, снижение коэффициента перевода тяжелораненых врагов в легкораненых и боевая мощь по уровням.",
-      "url": "/ru/buildings/cursed-wound-stele/"
-    },
-    {
-      "language": "ru",
       "type": "heroe",
       "title": "Пронизывающий резонанс",
       "description": "Черпает силу из звучащей тетивы и увеличивает ATK всех союзников на 2.78%, а DEF всех союзников на 2.78%.",
@@ -14714,13 +14287,6 @@
       "title": "Пульсирующий прорыв",
       "description": "Быстро нажимает на спуск, и из двух пистолетов вырывается поток энергетических импульсов, нанося цели урон в размере 141.78% от ATK.",
       "url": "/ru/heroes/tony/#character-skill-0-0"
-    },
-    {
-      "language": "ru",
-      "type": "building",
-      "title": "Пункт призыва | Здания Tiles Survive | TilesSurvive.net",
-      "description": "Подробная страница здания Пункт призыва в Tiles Survive: верность, количество доступных к призыву солдат, вместимость и правила работы.",
-      "url": "/ru/buildings/enlistment-office/"
     },
     {
       "language": "ru",
@@ -15079,7 +14645,7 @@
       "language": "ru",
       "type": "building",
       "title": "Смотровая вышка | Здания | TilesSurvive.net",
-      "description": "Смотровая вышка · Базовые ресурсы, время, строительные предметы и необходимые здания по уровням и настройкам.",
+      "description": "Смотровая вышка · Для смотровой вышки записаны затраты, время и связанные условия уровней. Подробное назначение и эффекты уровней ещё не подтверждены. Если целевому зданию нужна смотровая вышка, проверьте расходы до нужного уровня. При выборе ради функции сначала прочитайте её описание в игре.",
       "url": "/ru/buildings/lookout-tower/"
     },
     {
@@ -15294,6 +14860,27 @@
     },
     {
       "language": "ru",
+      "type": "building",
+      "title": "Станция связи | Здания | TilesSurvive.net",
+      "description": "Станция связи · На станции связи обмениваются подкреплениями и помощью с таймерами с союзом и друзьями. Подтверждённая таблица уровней сейчас содержит число помощей. Если вы рассчитываете на помощь союза при строительстве или исследованиях, сравните число помощей на следующем уровне.",
+      "url": "/ru/buildings/comms-outpost/"
+    },
+    {
+      "language": "ru",
+      "type": "building",
+      "title": "Стела благословенного исцеления | Здания | TilesSurvive.net",
+      "description": "Стела благословенного исцеления · Стела благословенного исцеления повышает вероятность превращения тяжёлых ран союзных войск в лёгкие. Это отдельный от вместимости госпиталя эффект. Перед серией боёв сравните эффект превращения ран и стоимость следующего уровня. Лечение уже раненых солдат планируйте отдельно в госпитале.",
+      "url": "/ru/buildings/blessed-healing-stele/"
+    },
+    {
+      "language": "ru",
+      "type": "building",
+      "title": "Стела проклятой раны | Здания | TilesSurvive.net",
+      "description": "Стела проклятой раны · Стела проклятой раны снижает вероятность превращения тяжёлых ран в лёгкие у противника. В отличие от лечащей стелы, она действует на врагов. Для боевого развития оцените влияние на лёгкие ранения противника. Для собственного восстановления отдельно рассмотрите лечащую стелу и госпиталь.",
+      "url": "/ru/buildings/cursed-wound-stele/"
+    },
+    {
+      "language": "ru",
       "type": "database",
       "title": "Стоимость тренировки питомцев и материалы",
       "description": "Стоимость тренировки и личные материалы семи питомцев, этапы 0→5. Расчёт с начала этапа; частичный прогресс не вычитается.",
@@ -15427,7 +15014,7 @@
       "language": "ru",
       "type": "building",
       "title": "Теплица | Здания | TilesSurvive.net",
-      "description": "Теплица · Базовые ресурсы, время, строительные предметы и необходимые здания по уровням и настройкам.",
+      "description": "Теплица · Теплица производит еду. Улучшение повышает скорость производства еды. При планировании производства учитывайте еду для следующего строительства. Производство еды и сытость выживших на кухне — разные задачи.",
       "url": "/ru/buildings/greenhouse/"
     },
     {
@@ -15524,13 +15111,6 @@
       "title": "Удар молнии",
       "description": "Поднимается в воздух и ведёт непрерывную прицельную стрельбу из пистолета, нанося вражеской цели урон в размере 139% от ATK.",
       "url": "/ru/heroes/light/#character-skill-0-0"
-    },
-    {
-      "language": "ru",
-      "type": "building",
-      "title": "Узел связи | Здания Tiles Survive | TilesSurvive.net",
-      "description": "Подробная страница здания Узел связи в Tiles Survive. Здесь собраны обзор здания, описание функций и краткая информация о системе помощи.",
-      "url": "/ru/buildings/comms-outpost/"
     },
     {
       "language": "ru",
@@ -15707,6 +15287,13 @@
     },
     {
       "language": "ru",
+      "type": "building",
+      "title": "Хранитель жизни | Здания | TilesSurvive.net",
+      "description": "Хранитель жизни · Хранитель жизни увеличивает здоровье героев. По уровням отдельно указаны эффект здоровья и мощь здания. Для выживаемости героев сравните прирост здоровья и стоимость. Если нужна защита, также изучите Золотую защиту.",
+      "url": "/ru/buildings/guardian-of-life-monument/"
+    },
+    {
+      "language": "ru",
       "type": "heroe",
       "title": "Целебная улыбка",
       "description": "Показывает исцеляющую сладкую улыбку, восстанавливая всей союзной команде каждую секунду HP в размере 93.13% от собственного ATK в течение 5 секунд. Во время действия эффекта один союзник с самым высоким ATK получает дополнительно +27.8 к критическому показателю.",
@@ -15753,6 +15340,13 @@
       "title": "Электроволна",
       "description": "Использует электрическое оружие и выпускает мощную electromagnetic energy, нанося урон в размере 139% от ATK.",
       "url": "/ru/heroes/nikola/#character-skill-0-0"
+    },
+    {
+      "language": "ru",
+      "type": "building",
+      "title": "Электростанция | Здания | TilesSurvive.net",
+      "description": "Электростанция · Электростанция — центр поселения и основа развития зданий. Её улучшение открывает новые здания и улучшения. Сначала проверьте уровень электростанции для следующего нужного здания. Отдельно предусмотрите расходы на связанные здания.",
+      "url": "/ru/buildings/power-plant/"
     },
     {
       "language": "ru",
@@ -15854,6 +15448,13 @@
     },
     {
       "language": "zh-tw",
+      "type": "building",
+      "title": "1號實驗室 | 建築 | TilesSurvive.net",
+      "description": "1號實驗室 · 1號實驗室研究支援戰鬥與發展的科技，升級可解鎖更先進的科技。 先找出下一項研究要求的實驗室等級。確定發展、經濟或戰鬥等研究需求後，就能訂出建築成長目標。",
+      "url": "/zh-tw/buildings/lab/"
+    },
+    {
+      "language": "zh-tw",
       "type": "database",
       "title": "20小時通用加速",
       "description": "20시간 일반 가속 · 縮短所選佇列的倒數時間20小時。 · 道具取得途徑與用途",
@@ -15870,7 +15471,7 @@
       "language": "zh-tw",
       "type": "building",
       "title": "2號實驗室 | 建築 | TilesSurvive.net",
-      "description": "2號實驗室 · 依等級與設定查看基本資源、時間、建造道具及前置建築。",
+      "description": "2號實驗室 · 2號實驗室是提高研究效率的獨立研究建築，建築資料與解鎖條件須與1號實驗室分開。 安排額外研究前，先確認帳號能否解鎖2號實驗室，並分別準備科技與建築費用。",
       "url": "/zh-tw/buildings/lab-2/"
     },
     {
@@ -15879,20 +15480,6 @@
       "title": "5分鐘通用加速",
       "description": "5분 일반 가속 · 縮短所選佇列的倒數時間5分鐘。 · 道具取得途徑與用途",
       "url": "/zh-tw/database/items/#speedup-5m"
-    },
-    {
-      "language": "zh-tw",
-      "type": "building",
-      "title": "各等級基本效果",
-      "description": "遊戲2.6.200。建築本身的基本效果，不含研究、英雄、賽季等額外加成。",
-      "url": "/zh-tw/buildings/comms-outpost/#building-effects-51"
-    },
-    {
-      "language": "zh-tw",
-      "type": "building",
-      "title": "各等級基本效果",
-      "description": "遊戲2.6.200。建築本身的基本效果，不含研究、英雄、賽季等額外加成。",
-      "url": "/zh-tw/buildings/lab/#building-effects-51"
     },
     {
       "language": "zh-tw",
@@ -16293,7 +15880,7 @@
       "language": "zh-tw",
       "type": "building",
       "title": "器具工坊 | 建築 | TilesSurvive.net",
-      "description": "器具工坊 · 依等級與設定查看基本資源、時間、建造道具及前置建築。",
+      "description": "器具工坊 · 器具工坊是利用變壓器的配電設施，遊戲說明指出可提高工作效率並加速建築修建。 規劃多項建造時，可在遊戲內查看工坊效果；本頁可比較工坊本身的基本費用與時間。",
       "url": "/zh-tw/buildings/artifact-workshop/"
     },
     {
@@ -16527,8 +16114,8 @@
     {
       "language": "zh-tw",
       "type": "building",
-      "title": "聯絡站 | Tiles Survive 建築 | TilesSurvive.net",
-      "description": "Tiles Survive 建築「聯絡站」詳細頁面。整理建築介紹、功能說明與支援系統摘要。",
+      "title": "聯絡站 | 建築 | TilesSurvive.net",
+      "description": "聯絡站 · 聯絡站用於傳送及接收聯盟、好友幫助與援軍，目前已確認的各級效果表列出聯盟幫助次數。 若建造與研究計畫會使用聯盟幫助，可先比較下一級的幫助次數，再安排升級順序。",
       "url": "/zh-tw/buildings/comms-outpost/"
     },
     {
@@ -16577,7 +16164,7 @@
       "language": "zh-tw",
       "type": "building",
       "title": "煉油廠 | 建築 | TilesSurvive.net",
-      "description": "煉油廠 · 依等級與設定查看基本資源、時間、建造道具及前置建築。",
+      "description": "煉油廠 · 煉油廠生產汽油，升級可提高汽油生產速度。 先確認目標建築需要多少汽油，再規劃生產升級；汽油與金屬應分別管理。",
       "url": "/zh-tw/buildings/refinery/"
     },
     {
@@ -16643,7 +16230,7 @@
       "language": "zh-tw",
       "type": "building",
       "title": "瞭望塔 | 建築 | TilesSurvive.net",
-      "description": "瞭望塔 · 依等級與設定查看基本資源、時間、建造道具及前置建築。",
+      "description": "瞭望塔 · 瞭望塔已有各級費用、時間及相連前置條件；具體功能說明與各級效果尚未確認。 若目標建築條件列出瞭望塔，可查看升至要求等級的費用；若為特定功能而升級，應先閱讀遊戲內說明。",
       "url": "/zh-tw/buildings/lookout-tower/"
     },
     {
@@ -16766,8 +16353,15 @@
     {
       "language": "zh-tw",
       "type": "building",
+      "title": "募兵處 | 建築 | TilesSurvive.net",
+      "description": "募兵處 · 募兵處在傷兵超過醫院容量時協助補充兵力，v2.6.200已由忠誠度改為使用招募憑證。 戰鬥後請在遊戲中確認待招募兵力與免費招募量，勿用舊有忠誠度數值推算目前恢復量。",
+      "url": "/zh-tw/buildings/enlistment-office/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "building",
       "title": "木材廠 | 建築 | TilesSurvive.net",
-      "description": "木材廠 · 依等級與設定查看基本資源、時間、建造道具及前置建築。",
+      "description": "木材廠 · 木材廠生產木材，升級可提高木材生產速度。 若計畫連續升級多座建築，先查看目標區間的木材合計，並納入生產設施本身的升級費用。",
       "url": "/zh-tw/buildings/lumberyard/"
     },
     {
@@ -16788,7 +16382,7 @@
       "language": "zh-tw",
       "type": "building",
       "title": "民房 | 建築 | TilesSurvive.net",
-      "description": "民房 · 依等級與設定查看基本資源、時間、建造道具及前置建築。",
+      "description": "民房 · 升級民居設施可改善睡眠品質並提高倖存者睡眠值，民居1～6的費用表各自獨立。 先確認倖存者睡眠狀態與欲改善的民居編號；即使等級相同，也應選擇該民居的費用，勿套用其他民居。",
       "url": "/zh-tw/buildings/houses/"
     },
     {
@@ -16801,8 +16395,8 @@
     {
       "language": "zh-tw",
       "type": "building",
-      "title": "發電所 | 點點木作戰 建築 | TilesSurvive.net",
-      "description": "整理點點木作戰發電所升級費用、時間、戰鬥力與技能資訊的詳細頁面。",
+      "title": "發電廠 | 建築 | TilesSurvive.net",
+      "description": "發電廠 · 發電廠是基地的核心建築，也是其他建築成長的基礎；升級可解鎖新建築與升級階段。 先確認下一個成長目標要求的發電廠等級，並分別準備發電廠與相關建築的費用。",
       "url": "/zh-tw/buildings/power-plant/"
     },
     {
@@ -16863,6 +16457,13 @@
     },
     {
       "language": "zh-tw",
+      "type": "building",
+      "title": "兵營 | 建築 | TilesSurvive.net",
+      "description": "兵營 · 兵營用於訓練士兵，可一併查看建築成長與兵種解鎖資訊。 先確認想訓練兵種的條件，再升級所需兵營。增加訓練量時，也應檢查駐兵所與醫院容量。",
+      "url": "/zh-tw/buildings/barracks/"
+    },
+    {
+      "language": "zh-tw",
       "type": "database",
       "title": "普通招募幣",
       "description": "일반 모집 코인 · 普通英雄招募消耗道具 · 道具取得途徑與用途",
@@ -16903,6 +16504,13 @@
       "title": "分別規劃寵物經驗與訓練印記 | TilesSurvive.net",
       "description": "計算到所需技能解鎖階段的印記缺口",
       "url": "/zh-tw/guides/pet-training-plan/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "building",
+      "title": "庇佑療傷碑 | 建築 | TilesSurvive.net",
+      "description": "庇佑療傷碑 · 庇佑療傷碑提高己方士兵重傷轉為輕傷的機率，與醫院容量是不同的戰鬥效果。 準備連續戰鬥時，可比較下一級輕傷轉換率與費用；已受傷士兵的治療計畫則在醫院另行確認。",
+      "url": "/zh-tw/buildings/blessed-healing-stele/"
     },
     {
       "language": "zh-tw",
@@ -17156,8 +16764,8 @@
     {
       "language": "zh-tw",
       "type": "building",
-      "title": "生命勇士碑 | 點點木作戰 建築 | TilesSurvive.net",
-      "description": "點點木作戰建築 生命勇士碑 詳細頁面。整理建築介紹、各等級英雄生命值與戰鬥力資訊。",
+      "title": "生命勇士碑 | 建築 | TilesSurvive.net",
+      "description": "生命勇士碑 · 生命勇士碑提供英雄生命加成，可查看各級生命效果及建築戰力。 強化英雄生存能力時，可比較生命增幅與費用；若也需要防禦，請一併查看神盾守護碑。",
       "url": "/zh-tw/buildings/guardian-of-life-monument/"
     },
     {
@@ -17411,8 +17019,8 @@
     {
       "language": "zh-tw",
       "type": "building",
-      "title": "神盾紀念碑 | Tiles Survive 建築 | TilesSurvive.net",
-      "description": "Tiles Survive 建築 神盾紀念碑詳細頁面。可一眼查看建築介紹、各等級英雄防禦與戰力資訊。",
+      "title": "神盾守護碑 | 建築 | TilesSurvive.net",
+      "description": "神盾守護碑 · 神盾守護碑提供英雄防禦加成，效果不同於提高攻擊或生命的紀念碑。 補強防禦時請查看下一級加成；與生命勇士碑比較時，防禦與生命應視為不同指標。",
       "url": "/zh-tw/buildings/aegis-monument/"
     },
     {
@@ -17521,7 +17129,7 @@
       "language": "zh-tw",
       "type": "building",
       "title": "冶煉廠 | 建築 | TilesSurvive.net",
-      "description": "冶煉廠 · 依等級與設定查看基本資源、時間、建造道具及前置建築。",
+      "description": "冶煉廠 · 冶煉廠生產金屬，升級可提高金屬生產速度。 依目標建築的金屬需求規劃生產，並比較現有金屬與資源箱可提供的數量。",
       "url": "/zh-tw/buildings/smelter/"
     },
     {
@@ -17562,8 +17170,8 @@
     {
       "language": "zh-tw",
       "type": "building",
-      "title": "英雄學院 | Tiles Survive 建築 | TilesSurvive.net",
-      "description": "整理 Tiles Survive 英雄學院的建築概要、英雄技能書每小時產量與戰力等級資訊的詳細頁面。",
+      "title": "英雄學院 | 建築 | TilesSurvive.net",
+      "description": "英雄學院 · 英雄學院與英雄技能書生產相關，可比較各級每小時產量與建築升級費用。 先確認主力英雄下次技能升級所需的技能書，再將學院產量納入成長規劃。",
       "url": "/zh-tw/buildings/hero-academy/"
     },
     {
@@ -17577,7 +17185,7 @@
       "language": "zh-tw",
       "type": "building",
       "title": "溫室 | 建築 | TilesSurvive.net",
-      "description": "溫室 · 依等級與設定查看基本資源、時間、建造道具及前置建築。",
+      "description": "溫室 · 溫室生產食物，升級可提高食物生產速度。 可依下一次建造所需食物評估生產升級；食物生產與廚房改善倖存者飽腹值的用途不同。",
       "url": "/zh-tw/buildings/greenhouse/"
     },
     {
@@ -17726,8 +17334,8 @@
     {
       "language": "zh-tw",
       "type": "building",
-      "title": "醫院 | Tiles Survive 建築 | TilesSurvive.net",
-      "description": "Tiles Survive 醫院的收容量、免費治療、治療規則與運用注意事項整理頁面。",
+      "title": "醫院 | 建築 | TilesSurvive.net",
+      "description": "醫院 · 醫院可收容並治療受傷士兵，升級後能容納更多傷兵。 作戰前先檢查傷兵數與剩餘容量，並準備發電廠目標等級所要求的醫院條件。",
       "url": "/zh-tw/buildings/hospital/"
     },
     {
@@ -17793,13 +17401,6 @@
       "title": "任意付費1次",
       "description": "從任務連結到積分、獎勵與道具用途。以下依公開規則分類，並非所有伺服器的即時日程。",
       "url": "/zh-tw/events/#daily-task-payment"
-    },
-    {
-      "language": "zh-tw",
-      "type": "building",
-      "title": "入伍辦公室 | Tiles Survive 建築 | TilesSurvive.net",
-      "description": "整理 Tiles Survive 入伍辦公室的忠誠值、可徵兵數量、收容容量與運作規則的詳細頁面。",
-      "url": "/zh-tw/buildings/enlistment-office/"
     },
     {
       "language": "zh-tw",
@@ -18231,8 +17832,8 @@
     {
       "language": "zh-tw",
       "type": "building",
-      "title": "戰神紀念碑 | Tiles Survive 建築 | TilesSurvive.net",
-      "description": "Tiles Survive 建築「戰神紀念碑」詳細頁面。可一眼查看建築介紹、各等級英雄攻擊與戰力資訊。",
+      "title": "戰神紀念碑 | 建築 | TilesSurvive.net",
+      "description": "戰神紀念碑 · 戰神紀念碑提供英雄攻擊加成，各級攻擊效果與戰力分開顯示。 若要補強英雄攻擊，可比較下一級效果與資源需求，並與英雄技能升級分別規劃。",
       "url": "/zh-tw/buildings/warbringer-monument/"
     },
     {
@@ -18286,13 +17887,6 @@
     },
     {
       "language": "zh-tw",
-      "type": "building",
-      "title": "點點木作戰 兵營 | 升級消耗與兵種解鎖 | TilesSurvive.net",
-      "description": "可一眼查看點點木作戰兵營升級消耗、時間、前置建築條件與兵種解鎖資訊的詳細頁面。",
-      "url": "/zh-tw/buildings/barracks/"
-    },
-    {
-      "language": "zh-tw",
       "type": "guide",
       "title": "點點木作戰 折扣儲值活動指南 | 專屬連結額外福利、每月累積儲值優惠券、新註冊代碼說明 | TilesSurvive.net",
       "description": "了解Tiles Survive專屬連結的使用方式、活動參加與發放條件。商品、地區及付款條件適用的優惠請在LootBar確認。",
@@ -18315,8 +17909,8 @@
     {
       "language": "zh-tw",
       "type": "building",
-      "title": "詛咒重傷石碑 | Tiles Survive 建築 | TilesSurvive.net",
-      "description": "整理 Tiles Survive 詛咒重傷石碑的概要、敵軍輕傷轉換率與戰力等級資訊的詳細頁面。",
+      "title": "詛咒重傷碑 | 建築 | TilesSurvive.net",
+      "description": "詛咒重傷碑 · 詛咒重傷碑降低敵軍士兵重傷轉為輕傷的機率，適用對象與庇佑療傷碑不同。 戰鬥成長規劃可查看敵軍輕傷轉換率效果；若目標是己方恢復，則另行評估庇佑療傷碑與醫院。",
       "url": "/zh-tw/buildings/cursed-wound-stele/"
     },
     {
@@ -18359,16 +17953,16 @@
     {
       "language": "zh-tw",
       "type": "building",
-      "title": "駐屯所 | Tiles Survive 建築 | TilesSurvive.net",
-      "description": "Tiles Survive 駐屯所的最大兵力與士兵運用資訊整理頁面。",
-      "url": "/zh-tw/buildings/garrison-station/"
+      "title": "廚房 | 建築 | TilesSurvive.net",
+      "description": "廚房 · 升級廚房設施可提高食物品質，增加倖存者的飽腹值。 可依倖存者飽腹值規劃廚房設施成長；民居改善睡眠品質，溫室生產食物，應分別管理需求。",
+      "url": "/zh-tw/buildings/kitchen/"
     },
     {
       "language": "zh-tw",
       "type": "building",
-      "title": "廚房 | 建築 | TilesSurvive.net",
-      "description": "廚房 · 依等級與設定查看基本資源、時間、建造道具及前置建築。",
-      "url": "/zh-tw/buildings/kitchen/"
+      "title": "駐兵所 | 建築 | TilesSurvive.net",
+      "description": "駐兵所 · 兵營訓練的士兵會在駐兵所駐紮，升級可增加士兵容量。 增加兵營訓練量前先查看駐兵所餘裕；備戰時另須檢查醫院的傷兵收容空間。",
+      "url": "/zh-tw/buildings/garrison-station/"
     },
     {
       "language": "zh-tw",
@@ -18556,13 +18150,6 @@
       "title": "蓄能噴射",
       "description": "進入蓄能狀態後，自身造成的傷害提高 15%。接著向前方發射 3 道集束雷射，對路徑上的敵人造成攻擊力 1,390% 的高額傷害。",
       "url": "/zh-tw/heroes/kiki/#character-skill-0-1"
-    },
-    {
-      "language": "zh-tw",
-      "type": "building",
-      "title": "祝福治療碑 | Tiles Survive 建築 | TilesSurvive.net",
-      "description": "Tiles Survive 祝福治療碑的概要、輕傷轉化率與戰力資料頁面，依等級整理顯示。",
-      "url": "/zh-tw/buildings/blessed-healing-stele/"
     },
     {
       "language": "zh-tw",
@@ -18822,13 +18409,6 @@
       "title": "研究瀏覽器 · 2.6.200 | TilesSurvive.net",
       "description": "查閱官方研究名稱、各完成等級的戰力貢獻，以及設定中記錄的參照關係。 遊戲2.6.200的設定資料。實際適用州、賽季、配置及帳號使用資格尚未確認。",
       "url": "/zh-tw/database/research/"
-    },
-    {
-      "language": "zh-tw",
-      "type": "building",
-      "title": "研究所 | Tiles Survive 建築 | TilesSurvive.net",
-      "description": "Tiles Survive 研究所索引頁面。可一眼查看發展、經濟、英雄、士兵、情報前哨基地、聯盟對決、特殊部隊、感染者討伐、末日運輸研究分類。",
-      "url": "/zh-tw/buildings/lab/"
     },
     {
       "language": "zh-tw",
