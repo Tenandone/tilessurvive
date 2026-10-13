@@ -1,0 +1,19 @@
+# Build inputs remain in version control but are not part of the public website.
+exclude:
+  - node_modules
+  - package.json
+  - package-lock.json
+  - scripts
+  - data/client-buildings-52.json
+  - data/content-60/buildings.json
+  - data/content-60/buildings-phase2.json
+  - data/content-60/buildings-copy.js
+  - data/content-60/buildings-phase2-copy.js
+  - data/building-system-evidence.json
+  - data/building-system-audit.json
+  - data/building-system-copy.js
+  - data/building-system-labels.js
+  - data/power-plant-copy.json
+  - data/building-refinement-51.json
+  - data/building-assets-51.json
+  - data/product-50/german-building-review.json

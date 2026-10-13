@@ -11,6 +11,33 @@ const old=new Map();let pos=0;
 for(const f of selected){let end=batch.indexOf(10,pos);const [sha,type,size]=batch.subarray(pos,end).toString().split(' ');assert.equal(type,'blob');pos=end+1;old.set(f,batch.subarray(pos,pos+Number(size)).toString('utf8'));pos+=Number(size)+1;}
 assert.equal(pos,batch.length);
 let checks=0,rowsPreserved=0,pages=0;const check=(value,msg)=>{assert.ok(value,msg);checks++;};
+const buildings=require('./build-building-system'),buildingBase='7a82e23b3d2184673ed60dc6898813f74b4d9b79';
+const buildingFiles=langs.flatMap(lang=>['',...buildings.slugs].map(slug=>lang+'/buildings/'+(slug?slug+'/':'')+'index.html'));
+const buildingBatch=execFileSync('git',['cat-file','--batch'],{cwd:R,input:buildingFiles.map(f=>buildingBase+':'+f).join('\n')+'\n',maxBuffer:100e6});
+const buildingOld=new Map();let buildingPos=0;
+for(const file of buildingFiles){const end=buildingBatch.indexOf(10,buildingPos),header=buildingBatch.subarray(buildingPos,end).toString().split(' ');assert.equal(header[1],'blob');buildingPos=end+1;buildingOld.set(file,buildingBatch.subarray(buildingPos,buildingPos+Number(header[2])).toString('utf8'));buildingPos+=Number(header[2])+1;}
+assert.equal(buildingPos,buildingBatch.length);
+const numericBuildingModel=cfg=>cfg.buildings.map(b=>({id:b.id,slug:b.slug,profiles:b.profiles.map(p=>({id:p.id,rows:p.rows.map(r=>({level:r.level,rank:r.rank,resources:r.resources,seconds:r.seconds,battlePower:r.battlePower,requirements:r.requirements.map(q=>({buildingId:q.buildingId,level:q.level,rank:q.rank})),constructionItems:r.constructionItems.map(q=>({id:q.id??q.key,quantity:q.quantity??q.value}))}))}))}));
+const numericBuildingCells=d=>[...d.querySelectorAll('main [data-level],main [data-effect-level],main [data-total-resource],main [data-total-seconds]')].map(n=>[n.tagName,n.closest('[data-bs-profile]')?.getAttribute('data-bs-profile'),n.closest('[data-bs-effect-profile]')?.getAttribute('data-bs-effect-profile'),...[n,...n.querySelectorAll('[data-raw],[data-seconds],[data-power],[data-effect-id],[data-value],[data-building-id]')].map(c=>['data-level','data-rank','data-effect-level','data-effect-rank','data-total-resource','data-total-seconds','data-resource','data-raw','data-seconds','data-power','data-effect-id','data-effect-value','data-value','data-kind','data-building-id','data-required-level'].map(a=>[a,c.getAttribute(a)]))]);
+function verifyCurrentBuilding(d,file){
+ const prior=parseHTML(buildingOld.get(file)).document,lang=file.split('/')[0],slug=file.split('/')[2],html='<!DOCTYPE html>\n'+d.documentElement.outerHTML+'\n';
+ // The common owner replaces obsolete tables, but verified game numbers and
+ // existing analytics remain tied to the fixed deployed baseline.
+ const analytics=document=>[...document.querySelectorAll('script')].filter(n=>/googletagmanager|gtag\(|consent|__tcfapi|fundingchoices/i.test(n.outerHTML)).map(n=>n.outerHTML);
+ assert.deepEqual(analytics(d),analytics(prior),'Existing analytics/consent remain exact '+file);checks++;
+ const seo=document=>[...document.querySelectorAll('link[rel="canonical"],link[rel="alternate"],meta[property="og:url"]')].map(n=>[n.tagName,...[...n.attributes].map(a=>[a.name,a.value]).sort()]);
+ assert.deepEqual(seo(d),seo(prior),'Existing building SEO URLs '+file);checks++;
+ if(slug==='index.html'){
+  assert.deepEqual([...d.querySelectorAll('.building-link')].map(n=>n.href).sort(),[...prior.querySelectorAll('.building-link')].map(n=>n.href).sort(),'Existing building catalog destinations '+file);checks++;
+  assert.equal(buildings.catalog(html,lang),html,'Current building catalog projection '+file);checks++;return;
+ }
+ const payload=document=>JSON.parse(document.querySelector('[data-building-system-model]').textContent);
+ assert.deepEqual(numericBuildingModel(payload(d)),numericBuildingModel(payload(prior)),'Fixed building resources, times, requirements and effects '+file);checks++;
+ assert.deepEqual(numericBuildingCells(d),numericBuildingCells(prior),'Fixed static numeric building attributes '+file);checks++;
+ const legacy=document=>[...document.querySelectorAll('main table')].filter(n=>!n.closest('[data-building-system],[data-bs-effects]')).map(n=>[n.id,[...n.querySelectorAll('tbody tr')].map(r=>[...r.children].map(c=>c.textContent.match(/-?\d+(?:[.,]\d+)*/g)||[]))]);
+ assert.deepEqual(legacy(d),legacy(prior),'Existing research, production and troop numeric cells '+file);checks++;
+ assert.equal(buildings.project(html,lang,slug),html,'Current owned building projection '+file);checks++;
+}
 const rowSignature=row=>[...row.querySelectorAll(':scope > th,:scope > td')].map(text).join('\u001f');
 const counted=arr=>{const m=new Map();for(const x of arr)m.set(x,(m.get(x)||0)+1);return m;};
 for(const [file,before]of old){
@@ -21,9 +48,19 @@ for(const [file,before]of old){
   check(read(file).replaceAll('\r\n','\n')===before.replaceAll('\r\n','\n'),'Source models/formulas/affiliate unchanged '+file);continue;
  }
  const a=parseHTML(before).document,b=parseHTML(read(file)).document;
- require('./client-truth-52-test-allowances').restore(b,file);
+ // Validate the one new head loader before removing only it from the historical
+ // comparison DOM. Existing body, analytics and consent markup stay untouched.
+ const adsense=require('./install-adsense');
+ check(adsense.inspect(read(file),file).installed,'Official AdSense head loader '+file);
+ const loader=b.head.querySelector('script[src="'+adsense.SRC+'"]');
+ check(Boolean(loader),'Exact official AdSense loader URL '+file);loader.remove();
+ if(!buildingOld.has(file))require('./client-truth-52-test-allowances').restore(b,file);
  check(a.querySelector('link[rel=canonical]')?.href===b.querySelector('link[rel=canonical]')?.href,'Canonical preserved '+file);
  check(JSON.stringify([...a.querySelectorAll('head link[rel*="icon"]')].map(n=>n.href))===JSON.stringify([...b.querySelectorAll('head link[rel*="icon"]')].map(n=>n.href)),'Existing favicon preserved '+file);
+ // All current building routes are independently checked against their fixed
+ // deployed numeric fixture and current owner below. Non-building history keeps
+ // the original exact restoration and row-preservation contract.
+ if(buildingOld.has(file))continue;
  const beforeRows=[...a.querySelectorAll('main table tr')].filter(r=>r.querySelector('td')&&/\d/.test(text(r))).map(rowSignature);
  const current=counted([...b.querySelectorAll('main table tr')].map(rowSignature));
  for(const [sig,n]of counted(beforeRows)){check((current.get(sig)||0)>=n,'Existing numeric data row preserved '+file+' '+sig.slice(0,140));rowsPreserved+=n;}
@@ -37,6 +74,7 @@ for(const match of old.get('sitemap.xml').matchAll(/<loc>(.*?)<\/loc>/g))check(s
 for(const lang of langs)for(const file of walk(path.join(R,lang))){
  const rel=path.relative(R,file).replaceAll('\\','/'),d=parseHTML(fs.readFileSync(file,'utf8')).document,url='https://tilessurvive.net/'+rel.replace(/index\.html$/,'');
  pages++;
+ if(buildingOld.has(rel))verifyCurrentBuilding(d,rel);
  if(/noindex/.test(d.querySelector('meta[name=robots]')?.content||'')||d.querySelector('link[rel=canonical]')?.href!==url)continue;
  check(d.documentElement.getAttribute('data-lang')===lang,'Page locale '+rel);
  check(d.querySelectorAll('h1').length===1,'One H1 '+rel);
@@ -54,7 +92,7 @@ for(const lang of langs)for(const file of walk(path.join(R,lang))){
   check(fs.existsSync(path.join(R,src.split('?')[0])),'Image exists '+src);
   check(Number(img.getAttribute('width'))>0&&Number(img.getAttribute('height'))>0,'Image reserves dimensions '+rel+' '+src);
  }
- const html=fs.readFileSync(file,'utf8');check(!/adsbygoogle\.js/.test(html),'AdSense remains off '+rel);
+ const html=fs.readFileSync(file,'utf8');check(require('./install-adsense').inspect(html,rel).installed,'Exactly one official AdSense publisher loader in head '+rel);
  if(rel===lang+'/database/items/index.html'){
   check(d.querySelectorAll('[data-package-offer-50]').length===1,'One package comparison referral '+lang);
   const a=d.querySelector('[data-package-offer-50] a');

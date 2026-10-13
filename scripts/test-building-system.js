@@ -381,7 +381,9 @@ test('unconfirmed initial gates remain explicit in desktop and mobile rows even 
       assert(card.textContent.includes(cfg.copy.initial));
       if (!source.requirements.length) assert.equal(row.querySelector('.condition').textContent.trim(), cfg.locale.labels.unknown, 'unknown gate must not display no requirements');
       else assert.deepEqual([...row.querySelectorAll('[data-building-id]')].map(n => Number(n.dataset.buildingId)), source.requirements.map(q => q.buildingId), 'individually verified prerequisites remain visible');
-      assert.equal(profile.querySelector('[data-bs-total-status]').getAttribute('data-bs-total-status'), 'missing', 'construction-inclusive total remains unavailable');
+      assert.throws(()=>runtime.sumRange(sourceProfile.rows,0,sourceProfile.rows.at(-1).level), /missing/, 'construction-inclusive range remains excluded');
+      assert(!profile.querySelector('[data-bs-total-status="missing"]'), 'static totals omit unavailable ranges instead of repeating missing-data notices');
+      assert([...profile.querySelectorAll('[data-bs-total-status]')].every(n=>n.getAttribute('data-bs-total-status')==='complete'), 'remaining published totals are calculable');
     }
   }
 });

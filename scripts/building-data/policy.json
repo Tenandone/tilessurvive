@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "registryVersion": "2026-10-13.1",
+  "baseline": "7a82e23b3d2184673ed60dc6898813f74b4d9b79",
+  "verifiedAt": "2026-10-13",
+  "sourcePolicy": {
+    "kind": "retained-game-client",
+    "recordIdentity": ["buildingId", "profile", "level", "rank"],
+    "knownValues": "Preserve existing non-null values. A reviewed correction may fill only an explicitly null field. Conflicting known values fail the build and require a separately reviewed reconciliation.",
+    "resourceMapping": "ResourceCost for Original; ResourceCostD for D. The vector follows the registry resource IDs. A missing resource key inside a present map is zero; a missing map remains unknown.",
+    "timeMapping": "BuildTime for Original; BuildTimeD for D. Retained native consumers interpret the validated integer values as base seconds.",
+    "prerequisiteMapping": "ReqBuilding for Original; ReqBuildingD for D. Resolve the referenced row to its exact building type, level and rank.",
+    "constructionItemMapping": "ReqItemSoc remains separate from the four ordinary resources. Item names come from the retained official language dictionaries.",
+    "powerMapping": "BattlePower is shared by the retained configurations and joined by building ID, level and rank. It is not a functional building effect.",
+    "effectMapping": "BenefitId for Original; BenefitIdD for D. Integer metrics are unchanged. Percent metrics are multiplied by 100 once during evidence preparation; registry values are already display percentages. Profile-specific metric definitions take precedence over building defaults."
+  },
+  "variants": [
+    {
+      "id": "original",
+      "sourceLabel": "Original",
+      "publicLabelKey": "original",
+      "publicChoice": "A",
+      "costField": "ResourceCost",
+      "timeField": "BuildTime",
+      "requirementsField": "ReqBuilding",
+      "effectsField": "BenefitId"
+    },
+    {
+      "id": "d",
+      "sourceLabel": "D",
+      "publicLabelKey": "d",
+      "publicChoice": "B",
+      "costField": "ResourceCostD",
+      "timeField": "BuildTimeD",
+      "requirementsField": "ReqBuildingD",
+      "effectsField": "BenefitIdD"
+    }
+  ],
+  "applicability": {
+    "accountVariant": "unconfirmed",
+    "automaticDetection": false,
+    "choiceRequiredForCalculation": true,
+    "choiceGuidance": "Compare the displayed costs, base times and prerequisites with the game, then choose the matching requirement table.",
+    "distinctVariants": "Labels A and B are presentation aliases only. Never merge, interpolate or substitute profiles, even where individual values happen to match.",
+    "levelScope": "Publish only the explicitly retained level/rank rows. Higher configuration records do not establish available progression or account eligibility.",
+    "bonuses": "Base values exclude research, heroes, alliance effects and other account bonuses."
+  },
+  "units": {
+    "resources": "whole item counts in registry resource order",
+    "seconds": "base seconds, stored without display rounding",
+    "requirements": "target building level plus separate rank",
+    "constructionItems": "whole item counts, separate from ordinary resources",
+    "battlePower": "integer power points, not a functional effect or percentage",
+    "effectInteger": "metric-specific integer counts or points; a per-hour metric is identified by its metric name",
+    "effectPercent": "percentage points already scaled for display; do not multiply by 100 again"
+  },
+  "calculation": {
+    "owner": "js/building-system.js#sumRange",
+    "range": "currentLevel < row.level <= targetLevel",
+    "initialConstruction": "Current level 0 includes the level-1 construction row. Current level 1 excludes it.",
+    "profile": "Exactly one building ID and one profile per calculation.",
+    "rank": "Keep rank in every source join. The current level-based calculator requires exactly one row for each selected target level and rejects ambiguous or missing levels.",
+    "resourceTotal": "Sum each selected unrounded resource-vector component independently.",
+    "timeTotal": "Sum selected unrounded base seconds.",
+    "inventory": "shortage[i] = max(0, totalResources[i] - held[i]); inventory is applied once after summing.",
+    "items": "Sum construction item quantities by item ID independently of ordinary resources.",
+    "excluded": ["prerequisite building upgrade costs", "research bonuses", "hero bonuses", "alliance bonuses", "other account-specific speed or cost modifiers"],
+    "invalid": "Reject negative, fractional or unsafe inputs and unsafe sums; preserve the existing runtime behavior.",
+    "unknown": "Do not total a selected row with unknown resources, time or construction items, or availability initial_conditions_unconfirmed. Never coerce unknown values to zero."
+  },
+  "verification": {
+    "status": "reviewed-with-explicit-gaps",
+    "numericBaseline": "1,520 existing profile rows reviewed; five null fields supplemented; two verified Enlistment Office construction rows added. Existing non-null values were preserved.",
+    "privateEvidence": "Detailed source record IDs, original old/new values and extraction proof are retained outside the public repository in the building-system audit ledger.",
+    "referenceTables": [
+      {
+        "slug": "power-plant",
+        "fragment": "ts3-data-table-1",
+        "status": "retained-reference",
+        "reason": "The coal and effect-duration table has not been reconciled to an equivalent retained client field and unit. Preserve existing values, identify it briefly as a reference table and exclude it from construction totals."
+      }
+    ]
+  },
+  "displayPolicy": {
+    "managementData": "Build-only. Do not serialize governance, original source files, audit reasons, old guidance, hashes or extraction history into public HTML, JSON, structured data or metadata.",
+    "publicProjection": "Use an explicit field allowlist. Keep only values, names, navigation identifiers and essential calculation state needed by the user-facing table and calculator. The renderer configuration retains original availability states internally. HTML serialization removes every availability field, emits calculationBlocked: true only for initial_conditions_unconfirmed, and runtime initialization restores that guard before using the unchanged sumRange function.",
+    "profiles": "Retain original/d URL and calculation IDs. Display neutral requirement-table choices and concise game-matching guidance.",
+    "unknownValues": "Keep null and the calculation guard. Use a short unavailable value marker; do not repeat internal explanations or create empty sections.",
+    "knownRanges": "Keep the actual supported level range visible. Do not imply absent levels or uncertain account assignment are verified.",
+    "effects": "Display only reviewed functional metrics and their own units. Do not substitute battle power or another building's effect.",
+    "priorGuidance": "legacy-guidance-7a82e23b.json preserves previous internal explanations without exporting them to page payloads."
+  },
+  "changeHistory": [
+    {
+      "date": "2026-10-13",
+      "kind": "reviewed-supplement",
+      "description": "Baseline evidence records preserve five null-field corrections, separate Enlistment Office construction rows, building power and profile-specific effects. Exact changes are available in governance.corrections and the private ledger."
+    },
+    {
+      "date": "2026-10-13",
+      "kind": "management-centralization",
+      "baseline": "7a82e23b3d2184673ed60dc6898813f74b4d9b79",
+      "description": "Move the existing model assembly into one build-only registry; archive prior internal guidance; preserve every model value and the cumulative calculation implementation."
+    }
+  ],
+  "errors": {
+    "knownValueConflictsAtBaseline": 0,
+    "policy": "Duplicate identities, conflicting power, non-null corrections, version mismatches and invalid public keys fail the registry build. Do not silently select a winner."
+  }
+}

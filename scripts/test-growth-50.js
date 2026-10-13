@@ -64,7 +64,20 @@ test('six research projections preserve all20 source rows, official descriptions
  }
 });
 test('generated laboratory pages retain four original reference cards alongside exact new model',()=>{
- let count=0;for(const lang of B.langs){const p=path.join(root,lang,'buildings/lab/index.html');if(!fs.existsSync(p))continue;const d=parseHTML(fs.readFileSync(p,'utf8')).document,block=d.querySelector('[data-growth-research-50]');assert(block);assert.equal(d.querySelectorAll('[data-growth-research-50]').length,1);assert.equal(block.outerHTML,parseHTML(B.renderResearch(lang)).document.querySelector('[data-growth-research-50]').outerHTML);assert(d.querySelector('#official-conditions-40'));const cards=[...d.querySelectorAll('.info-card')];assert(cards.length>=4);for(const value of ['131100','348340','485560','543120'])assert(cards.some(c=>lang==='de'?c.textContent.includes(new Intl.NumberFormat('de-DE').format(Number(value))):c.textContent.replace(/[,\s]/g,'').includes(value)));count++;}assert(count>=5);
+ const common=require('./build-building-system');
+ const values=block=>[...block.querySelectorAll('tbody tr')].map(row=>[...row.children].map(cell=>Number(cell.textContent.replace(/[^0-9]/g,''))));
+ const expectedValues=RD.profiles.flatMap(profile=>profile.levels.map(row=>[row.level,row.power]));
+ let count=0;for(const lang of B.langs){const p=path.join(root,lang,'buildings/lab/index.html');if(!fs.existsSync(p))continue;const d=parseHTML(fs.readFileSync(p,'utf8')).document,block=d.querySelector('[data-growth-research-50]');assert(block);assert.equal(d.querySelectorAll('[data-growth-research-50]').length,1);
+  // The common owner only simplifies the introduction and adds responsive table
+  // labels. Compare the complete result of that owner, not its older input HTML.
+  const fixture='<!DOCTYPE html><html><head><title>Lab</title></head><body><main><div class="container"><section class="hero"><h1>Lab</h1><p></p></section>'+B.renderResearch(lang)+'</div></main></body></html>';
+  const expected=parseHTML(common.project(fixture,lang,'lab')).document.querySelector('[data-growth-research-50]');
+  assert.equal(block.outerHTML,expected.outerHTML,lang+' exact current research projection');
+  assert.equal(block.querySelectorAll('tbody tr').length,20,lang+' original research row count');
+  assert.deepEqual(values(block),expectedValues,lang+' every original level/power value');
+  const damaged=block.cloneNode(true);damaged.querySelector('tbody td').textContent=String(expectedValues[0][1]+1);
+  assert.throws(()=>assert.deepEqual(values(damaged),expectedValues),assert.AssertionError,lang+' original power mutation must be detected');
+  assert(d.querySelector('#official-conditions-40'));const cards=[...d.querySelectorAll('.info-card')];assert(cards.length>=4);for(const value of ['131100','348340','485560','543120'])assert(cards.some(c=>lang==='de'?c.textContent.includes(new Intl.NumberFormat('de-DE').format(Number(value))):c.textContent.replace(/[,\s]/g,'').includes(value)));count++;}assert(count>=5);
 });
 test('client version scope appears before the existing calculator with exact client rows',()=>{
  const current=require('./build-client-growth-52');let count=0;for(const lang of B.langs){const file=path.join(root,lang,'database/gear-exp/index.html');if(!fs.existsSync(file))continue;const d=parseHTML(fs.readFileSync(file,'utf8')).document,notes=d.querySelectorAll('[data-growth-exp-condition-50]');assert.equal(notes.length,1);assert.equal(notes[0].textContent,current.copy[lang].gear);assert(notes[0].nextElementSibling.matches('form[data-growth-form="gear"]'));assert.equal(d.querySelectorAll('form[data-growth-form="gear"]').length,1);count++;}assert.equal(count,6);

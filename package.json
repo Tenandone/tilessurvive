@@ -5,6 +5,10 @@
   "main": "index.js",
   "scripts": {
     "build": "npm run build:legacy && npm run build:50",
+    "postbuild": "node scripts/install-adsense.js --apply",
+    "postbuild:50": "node scripts/install-adsense.js --apply",
+    "postbuild:building-system": "node scripts/install-adsense.js --apply",
+    "test:building-publication": "node --test scripts/test-building-data-registry.js scripts/test-building-publication.js && node scripts/install-adsense.js --check",
     "build:banners": "node scripts/build-lootbar-banners.js",
     "test:banners": "node scripts/test-lootbar-banners.js",
     "test:platform": "node scripts/test-platform.js",

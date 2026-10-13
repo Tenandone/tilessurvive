@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-10-12T23:29:54.825Z",
+  "generatedAt": "2026-10-13T02:01:26.393Z",
   "itemCount": 2605,
   "items": [
     {
@@ -153,7 +153,7 @@
       "language": "de",
       "type": "building",
       "title": "Artefaktwerkstatt | Gebäude | TilesSurvive.net",
-      "description": "Artefaktwerkstatt · Die Artefaktwerkstatt nutzt Transformatoren als Teil des Stromnetzes. Laut Spielbeschreibung verbessert sie die Effizienz und beschleunigt den Bau. Prüfe bei mehreren geplanten Bauten den Werkstatteffekt im Spiel. Hier vergleichst du die eigenen Grundkosten und Zeiten des Gebäudes.",
+      "description": "Artefaktwerkstatt · Die Artefaktwerkstatt regelt mit Transformatoren die Spannung im Stromnetz. Sie verbessert die Arbeitseffizienz und gewährt einen Baugeschwindigkeitsbonus. Berücksichtige bei mehreren geplanten Gebäudeausbauten auch den Baugeschwindigkeitsbonus der Werkstatt. Vergleiche Ressourcen und Zeit für ihren eigenen Ausbau mit deinen übrigen Bauvorhaben.",
       "url": "/de/buildings/artifact-workshop/"
     },
     {
@@ -181,7 +181,7 @@
       "language": "de",
       "type": "building",
       "title": "Außenposten | Gebäude | TilesSurvive.net",
-      "description": "Außenposten · Am Außenposten tauschst du Verstärkungen und Zeithilfe mit Allianz und Freunden aus. Die bestätigte Stufentabelle enthält derzeit die Anzahl der Zeithilfen. Wenn du bei Bau oder Forschung Allianzhilfe nutzt, vergleiche die Zeithilfen der nächsten Stufe für deine Ausbauplanung.",
+      "description": "Außenposten · Am Außenposten tauschst du Hilfe und Verstärkungen mit Allianz und Freunden aus. Ausbauten erhöhen die Verstärkungskapazität, die Anzahl empfangbarer Hilfen und die dadurch mögliche Zeitersparnis. Wenn du bei Bau oder Forschung Allianzhilfe nutzt, vergleiche die Zeithilfen der nächsten Stufe für deine Ausbauplanung.",
       "url": "/de/buildings/comms-outpost/"
     },
     {
@@ -1084,7 +1084,7 @@
       "language": "de",
       "type": "building",
       "title": "Häuser | Gebäude | TilesSurvive.net",
-      "description": "Häuser · Verbesserte Hauseinrichtungen erhöhen Schlafqualität und Energie der Überlebenden. Häuser 1–6 haben getrennte Kostentabellen. Prüfe Schlafbedarf und Hausnummer. Wähle das betreffende Haus, statt die Kosten eines anderen Hauses derselben Stufe zu übernehmen.",
+      "description": "Häuser · Häuser bieten Überlebenden einen Platz zum Ausruhen. Verbesserte Einrichtungen erhöhen ihre Schlafqualität und Energie. Prüfe Schlafbedarf und Hausnummer. Wähle das betreffende Haus, statt die Kosten eines anderen Hauses derselben Stufe zu übernehmen.",
       "url": "/de/buildings/houses/"
     },
     {
@@ -1133,7 +1133,7 @@
       "language": "de",
       "type": "building",
       "title": "Heldenakademie | Gebäude | TilesSurvive.net",
-      "description": "Heldenakademie · Die Heldenakademie produziert Helden-Fertigkeitsbücher. Vergleiche die stündliche Produktion je Stufe mit den Ausbaukosten. Prüfe den Bücherbedarf für die nächsten Fertigkeitsverbesserungen deiner Haupthelden und plane die Akademieproduktion ein.",
+      "description": "Heldenakademie · Die Heldenakademie produziert Fertigkeitsbücher für die Verbesserung von Heldenfertigkeiten. Als Ort des Wissens und der Strategie unterstützt sie die Entwicklung deiner wichtigsten Helden. Prüfe den Bücherbedarf für die nächsten Fertigkeitsverbesserungen deiner Haupthelden und plane die Akademieproduktion ein.",
       "url": "/de/buildings/hero-academy/"
     },
     {
@@ -1273,7 +1273,7 @@
       "language": "de",
       "type": "building",
       "title": "Kasernen | Gebäude | TilesSurvive.net",
-      "description": "Kasernen · In Kasernen bildest du Truppen aus. Betrachte den Gebäudeausbau zusammen mit den Freischaltungen der Truppenstufen. Prüfe die Voraussetzungen der gewünschten Truppenstufe. Berücksichtige bei mehr Ausbildung auch Garnison und Krankenhaus.",
+      "description": "Kasernen · In Kasernen bildest du die Soldaten deiner Armee aus. Durch Ausbauten schaltest du stärkere Truppen frei. Prüfe die Voraussetzungen der gewünschten Truppenstufe. Berücksichtige bei mehr Ausbildung auch Garnison und Krankenhaus.",
       "url": "/de/buildings/barracks/"
     },
     {
@@ -1336,7 +1336,7 @@
       "language": "de",
       "type": "building",
       "title": "Kriegsbringer | Gebäude | TilesSurvive.net",
-      "description": "Kriegsbringer · Der Kriegsbringer erhöht den Heldenangriff. Angriffseffekt und Stärke werden je Stufe getrennt angezeigt. Vergleiche für mehr Heldenangriff den Effekt der nächsten Stufe mit ihren Ressourcenkosten. Plane Fertigkeitsverbesserungen gesondert.",
+      "description": "Kriegsbringer · Das Kriegsbringer-Monument gewährt Helden einen Angriffsbonus. Seine goldene Gewehrstatue steht für Stärke und Kampfgeist. Vergleiche für mehr Heldenangriff den Effekt der nächsten Stufe mit ihren Ressourcenkosten. Plane Fertigkeitsverbesserungen gesondert.",
       "url": "/de/buildings/warbringer-monument/"
     },
     {
@@ -1385,7 +1385,7 @@
       "language": "de",
       "type": "building",
       "title": "Labor 2 | Gebäude | TilesSurvive.net",
-      "description": "Labor 2 · Labor 2 ist ein separates Forschungsgebäude für höhere Forschungseffizienz. Gebäudedaten und Freischaltbedingungen sind von Labor 1 getrennt. Prüfe vor zusätzlicher Forschungsplanung, ob dein Konto Labor 2 freischalten kann. Plane Technologie- und Gebäudekosten getrennt.",
+      "description": "Labor 2 · Labor 2 ist eine zusätzliche Forschungseinrichtung, die die Forschungseffizienz erhöht und die technologische Entwicklung deiner Siedlung unterstützt. Prüfe vor zusätzlicher Forschungsplanung, ob dein Konto Labor 2 freischalten kann. Plane Technologie- und Gebäudekosten getrennt.",
       "url": "/de/buildings/lab-2/"
     },
     {
@@ -1609,7 +1609,7 @@
       "language": "de",
       "type": "building",
       "title": "Musterungsbüro | Gebäude | TilesSurvive.net",
-      "description": "Musterungsbüro · Das Musterungsbüro hilft beim Truppenersatz, wenn Verwundete die Krankenhauskapazität übersteigen. Version 2.6.200 ersetzte Loyalität durch Rekrutierungszertifikate. Prüfe nach Kämpfen wartende Truppen und die kostenlose Rekrutierungsmenge im Spiel. Alte Loyalitätswerte sagen heutige Wiederherstellungsmengen nicht voraus.",
+      "description": "Musterungsbüro · Übersteigt die Zahl verwundeter Truppen die Krankenhauskapazität, rekrutiert das Musterungsbüro Überlebende aus deiner Siedlung, um die Armee aufzufüllen. Prüfe nach einer Schlacht die wartenden Truppen und die kostenlose Rekrutierungsmenge. Plane Rekrutierung und Krankenhausbehandlung gemeinsam für den nächsten Kampf.",
       "url": "/de/buildings/enlistment-office/"
     },
     {
@@ -2113,7 +2113,7 @@
       "language": "de",
       "type": "building",
       "title": "Stärke der Eroberungsforschung nach Stufe",
-      "description": "Spielversion 2.6.200. Stärke der abgeschlossenen Forschungsstufe. Die nächste Stufe wirkt erst nach Abschluss der Forschung. Addiere die Werte verschiedener Stufen nicht.",
+      "description": "Stärke der abgeschlossenen Forschungsstufe. Die nächste Stufe gilt nach Forschungsabschluss; Stufenwerte werden nicht addiert.",
       "url": "/de/buildings/lab/#research-effects-50"
     },
     {
@@ -2610,14 +2610,14 @@
       "language": "de",
       "type": "building",
       "title": "Wächter des Lebens | Gebäude | TilesSurvive.net",
-      "description": "Wächter des Lebens · Der Wächter des Lebens erhöht die Heldengesundheit. Stufeneffekte auf die Gesundheit und Gebäudestärke werden getrennt dargestellt. Vergleiche Gesundheitszuwachs und Kosten für widerstandsfähigere Helden. Prüfe die Goldene Ägis, wenn du auch Verteidigung ausbauen willst.",
+      "description": "Wächter des Lebens · Das Monument Wächter des Lebens gewährt Helden einen Gesundheitsbonus. Seine goldene Soldatenstatue verkörpert unerschütterliche Lebenskraft. Vergleiche Gesundheitszuwachs und Kosten für widerstandsfähigere Helden. Prüfe die Goldene Ägis, wenn du auch Verteidigung ausbauen willst.",
       "url": "/de/buildings/guardian-of-life-monument/"
     },
     {
       "language": "de",
       "type": "building",
       "title": "Wachturm | Gebäude | TilesSurvive.net",
-      "description": "Wachturm · Für den Wachturm sind Stufenkosten, Zeiten und verknüpfte Voraussetzungen erfasst. Seine genaue Funktion und Stufeneffekte sind noch unbestätigt. Falls dein Bauziel den Wachturm voraussetzt, prüfe die Kosten bis zur benötigten Stufe. Für funktionsbezogene Ausbauten lies zuerst die Beschreibung im Spiel.",
+      "description": "Wachturm · Plane den Wachturm als Teil deiner Siedlung. Prüfe für Bau und Ausbau sowohl den Ressourcenbedarf als auch die Anforderungen an das Kraftwerk. Wähle aktuelle Stufe und Zielstufe, um Ressourcen und Zeit für den Wachturm zu berechnen. Vergleiche den Bedarf mit anderen Bauzielen und lege die Reihenfolge fest.",
       "url": "/de/buildings/lookout-tower/"
     },
     {
@@ -3093,7 +3093,7 @@
       "language": "en",
       "type": "building",
       "title": "Artifact Workshop | Buildings | TilesSurvive.net",
-      "description": "Artifact Workshop · The Artifact Workshop uses transformers as part of the power grid. The game describes improved efficiency and faster construction. When planning several construction projects, check the Workshop’s effect in the game. This page compares the building’s own base costs and time.",
+      "description": "Artifact Workshop · The Artifact Workshop uses transformers to regulate voltage in the power grid. It improves work efficiency and provides a construction-speed buff. If you plan several building upgrades, review the Workshop’s construction-speed effect. Compare the resources and time for its own upgrade with your other building plans.",
       "url": "/en/buildings/artifact-workshop/"
     },
     {
@@ -3114,7 +3114,7 @@
       "language": "en",
       "type": "building",
       "title": "Barracks | Buildings | TilesSurvive.net",
-      "description": "Barracks · Barracks train troops. Review building growth alongside troop-tier unlock information. Start with the requirements of the troop tier you want to train. Review Garrison and Hospital capacity when planning more training.",
+      "description": "Barracks · Barracks train the troops that make up your army. Upgrade them to unlock more powerful troops. Start with the requirements of the troop tier you want to train. Review Garrison and Hospital capacity when planning more training.",
       "url": "/en/buildings/barracks/"
     },
     {
@@ -3402,7 +3402,7 @@
       "language": "en",
       "type": "building",
       "title": "Comms Outpost | Buildings | TilesSurvive.net",
-      "description": "Comms Outpost · The Comms Outpost lets you exchange reinforcements and timer help with your alliance and friends. The verified level table currently lists timer-help counts. When alliance help is part of your construction or research plan, compare the next level’s timer helps before deciding the upgrade order.",
+      "description": "Comms Outpost · The Comms Outpost connects you with help and reinforcements from your alliance and friends. Upgrades increase reinforcement capacity, the number of helps you can receive, and the time those helps can save. When alliance help is part of your construction or research plan, compare the next level’s timer helps before deciding the upgrade order.",
       "url": "/en/buildings/comms-outpost/"
     },
     {
@@ -3563,7 +3563,7 @@
       "language": "en",
       "type": "building",
       "title": "Conquest research power by level",
-      "description": "Game 2.6.200 · Power contributed by the completed research level. The next level takes effect after research finishes. Do not add the values across levels.",
+      "description": "Power for the completed research level. The next level applies after research finishes; do not add the level values together.",
       "url": "/en/buildings/lab/#research-effects-50"
     },
     {
@@ -3761,7 +3761,7 @@
       "language": "en",
       "type": "building",
       "title": "Enlistment Office | Buildings | TilesSurvive.net",
-      "description": "Enlistment Office · The Enlistment Office helps replenish troops when wounded troops exceed Hospital capacity. Version 2.6.200 replaced Loyalty with Recruitment Certificates. After combat, check waiting troops and the free recruitment amount in the game. Historical Loyalty values do not predict current recovery amounts.",
+      "description": "Enlistment Office · When wounded troops exceed Hospital capacity, the Enlistment Office recruits survivors from your Settlement to help replenish your army. After a battle, check waiting troops and the amount available for free enlistment. Plan Hospital healing alongside enlistment when preparing for your next battle.",
       "url": "/en/buildings/enlistment-office/"
     },
     {
@@ -4185,7 +4185,7 @@
       "language": "en",
       "type": "building",
       "title": "Guardian of Life | Buildings | TilesSurvive.net",
-      "description": "Guardian of Life · Guardian of Life provides a hero health buff. Its level table separates health effects from building power. Compare the health increase and cost when improving hero durability. Review Golden Aegis as well when defense is part of your plan.",
+      "description": "Guardian of Life · The Guardian of Life Monument grants a health buff to heroes. Its golden soldier statue symbolizes enduring vitality. Compare the health increase and cost when improving hero durability. Review Golden Aegis as well when defense is part of your plan.",
       "url": "/en/buildings/guardian-of-life-monument/"
     },
     {
@@ -4227,7 +4227,7 @@
       "language": "en",
       "type": "building",
       "title": "Hero Academy | Buildings | TilesSurvive.net",
-      "description": "Hero Academy · The Hero Academy produces hero skill books. Compare hourly production by level with the cost of building upgrades. Check the skill books needed for your main heroes’ next skill upgrades, then include Academy production in your plan.",
+      "description": "Hero Academy · The Hero Academy produces Skill Books for upgrading hero skills. This home of knowledge and strategy supports the growth of your main heroes. Check the skill books needed for your main heroes’ next skill upgrades, then include Academy production in your plan.",
       "url": "/en/buildings/hero-academy/"
     },
     {
@@ -4276,7 +4276,7 @@
       "language": "en",
       "type": "building",
       "title": "Houses | Buildings | TilesSurvive.net",
-      "description": "Houses · Upgrading House facilities improves sleep quality and survivors’ Energy. Houses 1–6 have separate cost tables. Check survivors’ sleep needs and the house number you plan to improve. Select that house rather than borrowing the costs of another house at the same level.",
+      "description": "Houses · Houses give survivors a place to rest. Improving their facilities raises sleep quality and survivors’ Energy. Check survivors’ sleep needs and the house number you plan to improve. Select that house rather than borrowing the costs of another house at the same level.",
       "url": "/en/buildings/houses/"
     },
     {
@@ -4450,7 +4450,7 @@
       "language": "en",
       "type": "building",
       "title": "Lab 2 | Buildings | TilesSurvive.net",
-      "description": "Lab 2 · Lab 2 is a separate research building intended to improve research efficiency. Its building data and unlock conditions are distinct from Lab 1. Before planning additional research, check whether your account can unlock Lab 2. Budget technology costs separately from building costs.",
+      "description": "Lab 2 · Lab 2 is an additional research facility that improves research efficiency and supports your Settlement’s technological growth. Before planning additional research, check whether your account can unlock Lab 2. Budget technology costs separately from building costs.",
       "url": "/en/buildings/lab-2/"
     },
     {
@@ -4501,7 +4501,7 @@
       "language": "en",
       "type": "building",
       "title": "Lookout Tower | Buildings | TilesSurvive.net",
-      "description": "Lookout Tower · The Lookout Tower has recorded level costs, time and linked prerequisites. Its detailed role and level effects remain unconfirmed. If a target building lists the Lookout Tower, review the costs to reach that level. For a feature-based upgrade decision, check the game’s description first.",
+      "description": "Lookout Tower · Plan the Lookout Tower as part of your Settlement. Review its resource needs and Power Plant requirements when preparing construction or upgrades. Choose your current and target levels to calculate the Lookout Tower’s resource and time needs. Compare them with other building goals to plan the construction order.",
       "url": "/en/buildings/lookout-tower/"
     },
     {
@@ -5888,7 +5888,7 @@
       "language": "en",
       "type": "building",
       "title": "Warbringer | Buildings | TilesSurvive.net",
-      "description": "Warbringer · Warbringer provides a hero attack buff. Attack effects and power are shown separately by level. For more hero attack, compare the next level’s effect with its resource cost. Plan this separately from hero skill upgrades.",
+      "description": "Warbringer · The Warbringer Monument grants an attack buff to heroes. Its golden rifle statue symbolizes strength and the will to fight. For more hero attack, compare the next level’s effect with its resource cost. Plan this separately from hero skill upgrades.",
       "url": "/en/buildings/warbringer-monument/"
     },
     {
@@ -6093,7 +6093,7 @@
       "language": "ja",
       "type": "building",
       "title": "監視塔 | 建物 | TilesSurvive.net",
-      "description": "監視塔 · 監視塔のレベル別費用・時間と関連する前提条件を確認できます。詳しい機能説明と各レベルの効果は未確認です。 目標建物の条件に監視塔がある場合は必要レベルまでの費用を確認しましょう。機能を目的に育成する場合はゲームの説明を先に確認してください。",
+      "description": "監視塔 · 基地に建てる監視塔です。建設や強化を準備するときは、必要な資源と発電所の条件を合わせて確認しましょう。 現在と目標のレベルを選び、監視塔に必要な資源と時間を計算しましょう。他の建物の育成計画と比べると、建設順を決めやすくなります。",
       "url": "/ja/buildings/lookout-tower/"
     },
     {
@@ -6541,7 +6541,7 @@
       "language": "ja",
       "type": "building",
       "title": "民家 | 建物 | TilesSurvive.net",
-      "description": "民家 · 住居の設備を強化すると睡眠の質が向上し、生存者の睡眠値が増えます。住居1～6の費用表は分かれています。 生存者の睡眠状態と強化する住居番号を確認しましょう。同じレベルでも別の住居の費用を使わず、該当する住居を選んでください。",
+      "description": "民家 · 住居は生存者が休むための場所です。設備を強化すると睡眠の質が向上し、生存者の睡眠値が増えます。 生存者の睡眠状態と強化する住居番号を確認しましょう。同じレベルでも別の住居の費用を使わず、該当する住居を選んでください。",
       "url": "/ja/buildings/houses/"
     },
     {
@@ -6562,7 +6562,7 @@
       "language": "ja",
       "type": "building",
       "title": "配電設備 | 建物 | TilesSurvive.net",
-      "description": "配電設備 · 配電設備は変圧器で電圧を調整する施設です。ゲームでは作業効率と建築速度を高める役割が案内されています。 複数の建設を予定する際は配電設備の効果をゲーム内で確認しましょう。このページでは設備自体の基本費用と時間を比較できます。",
+      "description": "配電設備 · 配電設備は変圧器で電圧を調整する施設です。基地の作業効率を高め、建築速度を上げるバフを与えます。 複数の建物を続けて強化するなら、配電設備の建築速度効果も確認しましょう。設備自体の強化に使う資源と時間を、他の建設予定と合わせて比較してください。",
       "url": "/ja/buildings/artifact-workshop/"
     },
     {
@@ -6611,7 +6611,7 @@
       "language": "ja",
       "type": "building",
       "title": "兵舎 | 建物 | TilesSurvive.net",
-      "description": "兵舎 · 兵舎は兵士を訓練する軍事施設です。建物の成長と兵種の解放情報を合わせて確認できます。 訓練したい兵種の条件を確認して兵舎を育成しましょう。訓練を増やす際は駐屯所と病院の収容力も確認してください。",
+      "description": "兵舎 · 兵舎は部隊を支える兵士を訓練する軍事施設です。強化すると、より強力な兵士を訓練できます。 訓練したい兵種の条件を確認して兵舎を育成しましょう。訓練を増やす際は駐屯所と病院の収容力も確認してください。",
       "url": "/ja/buildings/barracks/"
     },
     {
@@ -6793,7 +6793,7 @@
       "language": "ja",
       "type": "building",
       "title": "英雄学院 | 建物 | TilesSurvive.net",
-      "description": "英雄学院 · 英雄学院は英雄のスキルブック生産に関わります。レベル別の毎時生産量と強化費用を比較できます。 主力英雄の次のスキル強化に必要なスキルブックを確認し、学院の生産量を育成計画に組み込みましょう。",
+      "description": "英雄学院 · 英雄学院は英雄スキルの強化に使うスキルブックを生産します。知識と戦略を蓄え、主力英雄の成長を支える施設です。 主力英雄の次のスキル強化に必要なスキルブックを確認し、学院の生産量を育成計画に組み込みましょう。",
       "url": "/ja/buildings/hero-academy/"
     },
     {
@@ -6835,7 +6835,7 @@
       "language": "ja",
       "type": "building",
       "title": "勇士の記念碑 | 建物 | TilesSurvive.net",
-      "description": "勇士の記念碑 · 勇士の記念碑は英雄の体力を強化します。レベル別の体力効果と建物の戦力を確認できます。 英雄の生存力を補強する際は体力増加量と費用を比較しましょう。防御も必要なら神盾の記念碑を合わせて確認してください。",
+      "description": "勇士の記念碑 · 勇士の記念碑は英雄に体力バフを与えます。金色の兵士像は不屈の生命力を象徴します。 英雄の生存力を補強する際は体力増加量と費用を比較しましょう。防御も必要なら神盾の記念碑を合わせて確認してください。",
       "url": "/ja/buildings/guardian-of-life-monument/"
     },
     {
@@ -6919,7 +6919,7 @@
       "language": "ja",
       "type": "building",
       "title": "入隊事務所 | 建物 | TilesSurvive.net",
-      "description": "入隊事務所 · 入隊事務所は負傷兵が病院の収容力を超えたときの兵力補充を助けます。v2.6.200では忠誠度が募集証書に置き換わりました。 戦闘後はゲーム内で募集待ちの兵士と無料募集数を確認してください。過去の忠誠度の数値では現在の回復量を予測できません。",
+      "description": "入隊事務所 · 入隊事務所は負傷兵が病院容量を超えた際に、基地の生存者を募集して部隊の補充を支えます。 戦闘後は募集待ちの兵士と無料募集できる人数を確認しましょう。病院での治療と入隊事務所での補充を合わせて計画すると、次の戦闘に備えやすくなります。",
       "url": "/ja/buildings/enlistment-office/"
     },
     {
@@ -7143,7 +7143,7 @@
       "language": "ja",
       "type": "building",
       "title": "集会所 | 建物 | TilesSurvive.net",
-      "description": "集会所 · 集会所では同盟・友達の支援や援軍をやり取りします。現在確認済みのレベル別効果表では同盟支援回数を掲載しています。 建設や研究で同盟支援を利用する場合は、次のレベルの支援回数を比較して育成順を決めましょう。",
+      "description": "集会所 · 集会所では同盟・友達の支援や援軍をやり取りします。強化すると援軍の収容力、受けられる支援の回数、短縮できる作業時間が増えます。 建設や研究で同盟支援を利用する場合は、次のレベルの支援回数を比較して育成順を決めましょう。",
       "url": "/ja/buildings/comms-outpost/"
     },
     {
@@ -7241,7 +7241,7 @@
       "language": "ja",
       "type": "building",
       "title": "討伐研究のレベル別戦力",
-      "description": "ゲーム2.6.200。完了した研究レベルによる戦力です。研究中の次のレベルは完了後に適用されます。各レベルの数値を合算しないでください。",
+      "description": "完了した研究レベルの戦力です。次のレベルは研究完了後に適用され、レベル別の数値は合算しません。",
       "url": "/ja/buildings/lab/#research-effects-50"
     },
     {
@@ -7409,7 +7409,7 @@
       "language": "ja",
       "type": "building",
       "title": "実験室2 | 建物 | TilesSurvive.net",
-      "description": "実験室2 · 実験室2は研究効率を高めるための別の研究施設です。実験室1と区別した建物データと解放条件を使います。 追加の研究を計画する前に実験室2をアカウントで解放できるか確認しましょう。技術の費用と建物の費用は別に準備してください。",
+      "description": "実験室2 · 実験室2は研究効率を高め、基地の技術発展を支える追加の研究施設です。 追加の研究を計画する前に実験室2をアカウントで解放できるか確認しましょう。技術の費用と建物の費用は別に準備してください。",
       "url": "/ja/buildings/lab-2/"
     },
     {
@@ -7745,7 +7745,7 @@
       "language": "ja",
       "type": "building",
       "title": "戦神の記念碑 | 建物 | TilesSurvive.net",
-      "description": "戦神の記念碑 · 戦神の記念碑は英雄の攻撃力を強化します。攻撃効果と戦力はレベルごとに区別して表示します。 英雄の攻撃を補強したい場合は、次のレベルの効果と資源費用を比較しましょう。スキル強化とは目的を分けて計画してください。",
+      "description": "戦神の記念碑 · 戦神の記念碑は英雄に攻撃力バフを与えます。金色のライフル像は力と戦う意志の象徴です。 英雄の攻撃を補強したい場合は、次のレベルの効果と資源費用を比較しましょう。スキル強化とは目的を分けて計画してください。",
       "url": "/ja/buildings/warbringer-monument/"
     },
     {
@@ -9247,7 +9247,7 @@
       "language": "ko",
       "type": "building",
       "title": "2번 실험실 | 건물 | TilesSurvive.net",
-      "description": "2번 실험실 · 2번 실험실은 연구 효율을 위한 별도 연구 건물입니다. 1번 실험실과 구분된 건물 데이터와 해금 조건을 사용합니다. 추가 연구 운영을 계획하기 전에 계정에서 2번 실험실을 해금할 수 있는지 확인하세요. 연구할 기술의 비용과 건물 비용을 따로 준비하세요.",
+      "description": "2번 실험실 · 2번 실험실은 연구 효율을 높여 기지의 기술 발전을 돕는 추가 연구 시설입니다. 추가 연구 운영을 계획하기 전에 계정에서 2번 실험실을 해금할 수 있는지 확인하세요. 연구할 기술의 비용과 건물 비용을 따로 준비하세요.",
       "url": "/ko/buildings/lab-2/"
     },
     {
@@ -9275,7 +9275,7 @@
       "language": "ko",
       "type": "building",
       "title": "감시탑 | 건물 | TilesSurvive.net",
-      "description": "감시탑 · 감시탑의 레벨별 비용·시간과 연결된 선행 조건을 확인할 수 있습니다. 구체적인 기능 설명과 레벨별 효과는 아직 확인되지 않았습니다. 다른 목표 건물의 조건에 감시탑이 표시되면 해당 레벨까지의 비용을 확인하세요. 기능을 목적으로 성장시킬 때는 게임의 설명을 먼저 확인하세요.",
+      "description": "감시탑 · 기지에 세우는 감시탑입니다. 건설과 업그레이드를 준비할 때 필요한 자원과 발전소 조건을 함께 살펴보세요. 현재 레벨과 목표 레벨을 선택해 감시탑에 필요한 자원과 시간을 계산하세요. 다른 건물의 성장 계획과 나란히 비교하면 건설 순서를 정하기 쉽습니다.",
       "url": "/ko/buildings/lookout-tower/"
     },
     {
@@ -9763,7 +9763,7 @@
       "language": "ko",
       "type": "building",
       "title": "도구 공방 | 건물 | TilesSurvive.net",
-      "description": "도구 공방 · 도구 공방은 변압기를 이용하는 배전 시설입니다. 게임 설명에서는 작업 효율과 건설 속도를 높이는 역할로 안내합니다. 여러 건설을 계획할 때 도구 공방의 효과를 게임에서 확인하세요. 이 페이지에서는 건물 자체의 기본 비용과 시간을 비교할 수 있습니다.",
+      "description": "도구 공방 · 도구 공방은 변압기로 전압을 조절하는 배전 시설입니다. 기지의 작업 효율을 높이고 건설 속도를 높이는 버프를 제공합니다. 여러 건물을 연달아 성장시킬 계획이라면 도구 공방의 건설 속도 효과도 살펴보세요. 공방을 올리는 데 드는 자원과 시간을 다른 건설 일정과 함께 비교하세요.",
       "url": "/ko/buildings/artifact-workshop/"
     },
     {
@@ -9968,7 +9968,7 @@
       "language": "ko",
       "type": "building",
       "title": "모병소 | 건물 | TilesSurvive.net",
-      "description": "모병소 · 모병소는 부상병이 병원 수용력을 초과할 때 병력 보충을 돕습니다. v2.6.200에서는 충성도 대신 모병 증서를 사용하도록 변경됐습니다. 전투 후 모병 대기 병력과 무료 모병량을 게임에서 확인하세요. 기존 충성도 수치로 현재 복구량을 예측하지 마세요.",
+      "description": "모병소 · 모병소는 부상병이 병원 수용력을 초과했을 때 기지의 생존자를 모집하여 병력 보충을 돕습니다. 전투 후에는 모병 대기 병력과 무료 모병량을 살펴보세요. 병원의 치료와 모병소의 병력 보충을 함께 계획하면 다음 전투 준비에 도움이 됩니다.",
       "url": "/ko/buildings/enlistment-office/"
     },
     {
@@ -10024,7 +10024,7 @@
       "language": "ko",
       "type": "building",
       "title": "민가 | 건물 | TilesSurvive.net",
-      "description": "민가 · 민가 시설을 업그레이드하면 수면 품질이 향상되고 생존자의 수면도가 증가합니다. 민가 1~6은 비용표를 각각 구분합니다. 생존자의 수면 상태와 개선할 민가 번호를 확인하세요. 같은 레벨이어도 다른 민가의 비용으로 계산하지 말고 해당 민가를 선택하세요.",
+      "description": "민가 · 민가는 생존자의 휴식 공간입니다. 시설을 업그레이드하면 수면 품질이 향상되고 생존자의 수면도가 증가합니다. 생존자의 수면 상태와 개선할 민가 번호를 확인하세요. 같은 레벨이어도 다른 민가의 비용으로 계산하지 말고 해당 민가를 선택하세요.",
       "url": "/ko/buildings/houses/"
     },
     {
@@ -10224,7 +10224,7 @@
       "language": "ko",
       "type": "building",
       "title": "병영 | 건물 | TilesSurvive.net",
-      "description": "병영 · 병영은 병사를 훈련하는 군사 건물입니다. 건물 성장과 병종 해금 정보를 함께 확인하세요. 훈련하려는 병종의 조건을 먼저 확인하고 필요한 병영을 성장시키세요. 훈련을 늘릴 때는 주둔소와 병원도 함께 점검하세요.",
+      "description": "병영 · 병영은 병사를 훈련하는 군사 건물입니다. 업그레이드하면 더 강력한 병사를 훈련할 수 있습니다. 훈련하려는 병종의 조건을 먼저 확인하고 필요한 병영을 성장시키세요. 훈련을 늘릴 때는 주둔소와 병원도 함께 점검하세요.",
       "url": "/ko/buildings/barracks/"
     },
     {
@@ -10294,7 +10294,7 @@
       "language": "ko",
       "type": "building",
       "title": "생명의 용사비 | 건물 | TilesSurvive.net",
-      "description": "생명의 용사비 · 생명의 용사비는 영웅 체력 버프를 제공합니다. 레벨별 체력 효과와 건물 전투력을 확인할 수 있습니다. 영웅의 생존력을 보강할 때 체력 증가량과 비용을 비교하세요. 방어 보강이 필요하면 이지스 수호비의 효과도 함께 살펴보세요.",
+      "description": "생명의 용사비 · 생명의 용사비는 영웅에게 체력 버프를 제공합니다. 금빛 병사 조각상은 꺾이지 않는 생명력을 상징합니다. 영웅의 생존력을 보강할 때 체력 증가량과 비용을 비교하세요. 방어 보강이 필요하면 이지스 수호비의 효과도 함께 살펴보세요.",
       "url": "/ko/buildings/guardian-of-life-monument/"
     },
     {
@@ -10736,7 +10736,7 @@
       "language": "ko",
       "type": "building",
       "title": "연락소 | 건물 | TilesSurvive.net",
-      "description": "연락소 · 연락소에서는 동맹·친구의 도움과 지원군을 주고받습니다. 현재 확인된 레벨별 효과표는 타이머 도움 횟수를 제공합니다. 건설·연구 계획에서 동맹 도움을 활용한다면 다음 레벨의 도움 횟수를 비교해 성장 순서를 정하세요.",
+      "description": "연락소 · 연락소에서는 동맹·친구의 도움과 지원군을 주고받습니다. 업그레이드하면 지원군 수용력과 도움을 받을 수 있는 횟수, 단축 가능한 작업 시간이 늘어납니다. 건설·연구 계획에서 동맹 도움을 활용한다면 다음 레벨의 도움 횟수를 비교해 성장 순서를 정하세요.",
       "url": "/ko/buildings/comms-outpost/"
     },
     {
@@ -10799,7 +10799,7 @@
       "language": "ko",
       "type": "building",
       "title": "영웅 아카데미 | 건물 | TilesSurvive.net",
-      "description": "영웅 아카데미 · 영웅 아카데미는 영웅 스킬북 생산과 연결됩니다. 레벨별 시간당 생산량과 건물 비용을 함께 비교할 수 있습니다. 주력 영웅의 다음 스킬 강화에 필요한 스킬북을 확인한 뒤 아카데미 생산량을 성장 계획에 반영하세요.",
+      "description": "영웅 아카데미 · 영웅 아카데미는 영웅 스킬 강화에 쓰이는 스킬북을 생산합니다. 주력 영웅의 성장을 뒷받침하는 지식과 전략의 공간입니다. 주력 영웅의 다음 스킬 강화에 필요한 스킬북을 확인한 뒤 아카데미 생산량을 성장 계획에 반영하세요.",
       "url": "/ko/buildings/hero-academy/"
     },
     {
@@ -11403,7 +11403,7 @@
       "language": "ko",
       "type": "building",
       "title": "전장의 신 기념비 | 건물 | TilesSurvive.net",
-      "description": "전장의 신 기념비 · 전장의 신 기념비는 영웅 공격력 버프를 제공합니다. 레벨별 공격 효과와 전투력은 구분하여 표시합니다. 영웅 공격력을 보강하려면 다음 레벨의 효과와 필요한 자원을 비교하세요. 영웅 스킬 강화와도 목적을 나누어 계획하세요.",
+      "description": "전장의 신 기념비 · 전장의 신 기념비는 영웅에게 공격력 버프를 제공합니다. 금빛 소총 조각상은 강한 힘과 전투 의지를 상징합니다. 영웅 공격력을 보강하려면 다음 레벨의 효과와 필요한 자원을 비교하세요. 영웅 스킬 강화와도 목적을 나누어 계획하세요.",
       "url": "/ko/buildings/warbringer-monument/"
     },
     {
@@ -11957,7 +11957,7 @@
       "language": "ko",
       "type": "building",
       "title": "토벌 연구 레벨별 전투력",
-      "description": "게임 2.6.200 · 완료한 연구 레벨이 제공하는 전투력입니다. 연구 중인 다음 레벨은 완료 후 적용됩니다. 레벨별 수치를 합산하지 마세요.",
+      "description": "완료한 연구 레벨의 전투력입니다. 다음 레벨은 연구 완료 후 적용되며, 레벨별 수치를 합산하지 않습니다.",
       "url": "/ko/buildings/lab/#research-effects-50"
     },
     {
@@ -12352,7 +12352,7 @@
       "language": "ru",
       "type": "building",
       "title": "Академия героев | Здания | TilesSurvive.net",
-      "description": "Академия героев · Академия героев производит книги навыков героев. Сравнивайте почасовое производство по уровням со стоимостью улучшений. Узнайте, сколько книг нужно для следующих улучшений навыков основных героев, и учтите производство академии.",
+      "description": "Академия героев · Академия героев производит книги для улучшения навыков героев. Этот центр знаний и стратегии помогает развивать ваших основных героев. Узнайте, сколько книг нужно для следующих улучшений навыков основных героев, и учтите производство академии.",
       "url": "/ru/buildings/hero-academy/"
     },
     {
@@ -12568,7 +12568,7 @@
       "language": "ru",
       "type": "building",
       "title": "Вестник войны | Здания | TilesSurvive.net",
-      "description": "Вестник войны · Вестник войны усиливает атаку героев. Эффект атаки и мощь указаны отдельно по уровням. Для усиления атаки сравните эффект следующего уровня с расходом ресурсов. Планируйте это отдельно от навыков героев.",
+      "description": "Вестник войны · Монумент Вестника войны даёт героям бонус к атаке. Золотая винтовка символизирует силу и боевой дух. Для усиления атаки сравните эффект следующего уровня с расходом ресурсов. Планируйте это отдельно от навыков героев.",
       "url": "/ru/buildings/warbringer-monument/"
     },
     {
@@ -13041,7 +13041,7 @@
       "language": "ru",
       "type": "building",
       "title": "Дома | Здания | TilesSurvive.net",
-      "description": "Дома · Улучшение домов повышает качество сна и бодрость выживших. Для домов 1–6 приведены отдельные таблицы затрат. Проверьте потребность выживших во сне и номер нужного дома. Даже на одинаковом уровне используйте затраты выбранного дома, а не другого.",
+      "description": "Дома · Дома дают выжившим место для отдыха. Улучшение их удобств повышает качество сна и бодрость выживших. Проверьте потребность выживших во сне и номер нужного дома. Даже на одинаковом уровне используйте затраты выбранного дома, а не другого.",
       "url": "/ru/buildings/houses/"
     },
     {
@@ -13281,7 +13281,7 @@
       "language": "ru",
       "type": "building",
       "title": "Казармы | Здания | TilesSurvive.net",
-      "description": "Казармы · Казармы предназначены для обучения войск. Сопоставляйте развитие здания с открытием уровней войск. Начните с требований нужного уровня войск. При увеличении обучения учитывайте вместимость гарнизона и госпиталя.",
+      "description": "Казармы · В казармах обучают солдат для вашей армии. Улучшайте их, чтобы получить доступ к более сильным войскам. Начните с требований нужного уровня войск. При увеличении обучения учитывайте вместимость гарнизона и госпиталя.",
       "url": "/ru/buildings/barracks/"
     },
     {
@@ -13454,7 +13454,7 @@
       "language": "ru",
       "type": "building",
       "title": "Лаборатория 2 | Здания | TilesSurvive.net",
-      "description": "Лаборатория 2 · Лаборатория 2 — отдельное исследовательское здание для повышения эффективности исследований. Её данные и условия открытия отделены от лаборатории 1. Перед планированием дополнительных исследований проверьте доступность лаборатории 2 для аккаунта. Отдельно предусмотрите расходы на технологии и здание.",
+      "description": "Лаборатория 2 · Лаборатория 2 — дополнительный исследовательский центр, повышающий эффективность исследований и помогающий технологическому развитию поселения. Перед планированием дополнительных исследований проверьте доступность лаборатории 2 для аккаунта. Отдельно предусмотрите расходы на технологии и здание.",
       "url": "/ru/buildings/lab-2/"
     },
     {
@@ -13564,7 +13564,7 @@
       "language": "ru",
       "type": "building",
       "title": "Мастерская артефактов | Здания | TilesSurvive.net",
-      "description": "Мастерская артефактов · Мастерская артефактов использует трансформаторы как часть энергосети. По описанию игры она повышает эффективность и ускоряет строительство. Планируя несколько строек, проверьте эффект мастерской в игре. Здесь можно сравнить базовые затраты и время самого здания.",
+      "description": "Мастерская артефактов · Мастерская артефактов регулирует напряжение в энергосети с помощью трансформаторов. Она повышает эффективность работы и даёт бонус к скорости строительства. Если планируете несколько улучшений подряд, учтите бонус мастерской к скорости строительства. Сравните ресурсы и время на её развитие с остальными строительными планами.",
       "url": "/ru/buildings/artifact-workshop/"
     },
     {
@@ -13753,7 +13753,7 @@
       "language": "ru",
       "type": "building",
       "title": "Мощь исследований завоевания по уровням",
-      "description": "Версия 2.6.200. Мощь завершённого уровня исследования. Следующий уровень действует после завершения исследования. Не складывайте значения разных уровней.",
+      "description": "Мощь завершённого уровня исследования. Следующий уровень действует после завершения исследования; значения уровней не складываются.",
       "url": "/ru/buildings/lab/#research-effects-50"
     },
     {
@@ -14180,7 +14180,7 @@
       "language": "ru",
       "type": "building",
       "title": "Призывной пункт | Здания | TilesSurvive.net",
-      "description": "Призывной пункт · Призывной пункт помогает пополнять войска, когда раненых больше, чем мест в госпитале. В версии 2.6.200 верность заменена сертификатами найма. После боя проверьте ожидающие войска и бесплатный набор в игре. Старые значения верности не определяют нынешнее восстановление.",
+      "description": "Призывной пункт · Когда число раненых превышает вместимость госпиталя, призывной пункт набирает выживших из поселения для пополнения армии. После боя проверьте ожидающие пополнения войска и доступный бесплатный призыв. Готовясь к следующему бою, планируйте призыв вместе с лечением в госпитале.",
       "url": "/ru/buildings/enlistment-office/"
     },
     {
@@ -14645,7 +14645,7 @@
       "language": "ru",
       "type": "building",
       "title": "Смотровая вышка | Здания | TilesSurvive.net",
-      "description": "Смотровая вышка · Для смотровой вышки записаны затраты, время и связанные условия уровней. Подробное назначение и эффекты уровней ещё не подтверждены. Если целевому зданию нужна смотровая вышка, проверьте расходы до нужного уровня. При выборе ради функции сначала прочитайте её описание в игре.",
+      "description": "Смотровая вышка · Планируйте строительство смотровой вышки вместе с развитием поселения. Перед постройкой или улучшением проверьте ресурсы и требования к электростанции. Выберите текущий и целевой уровни, чтобы рассчитать ресурсы и время для вышки. Сравните их с другими строительными целями и определите порядок работ.",
       "url": "/ru/buildings/lookout-tower/"
     },
     {
@@ -14862,7 +14862,7 @@
       "language": "ru",
       "type": "building",
       "title": "Станция связи | Здания | TilesSurvive.net",
-      "description": "Станция связи · На станции связи обмениваются подкреплениями и помощью с таймерами с союзом и друзьями. Подтверждённая таблица уровней сейчас содержит число помощей. Если вы рассчитываете на помощь союза при строительстве или исследованиях, сравните число помощей на следующем уровне.",
+      "description": "Станция связи · Станция связи позволяет обмениваться помощью и подкреплениями с союзом и друзьями. Улучшения увеличивают вместимость подкреплений, число получаемых помощей и время, которое они могут сэкономить. Если вы рассчитываете на помощь союза при строительстве или исследованиях, сравните число помощей на следующем уровне.",
       "url": "/ru/buildings/comms-outpost/"
     },
     {
@@ -15289,7 +15289,7 @@
       "language": "ru",
       "type": "building",
       "title": "Хранитель жизни | Здания | TilesSurvive.net",
-      "description": "Хранитель жизни · Хранитель жизни увеличивает здоровье героев. По уровням отдельно указаны эффект здоровья и мощь здания. Для выживаемости героев сравните прирост здоровья и стоимость. Если нужна защита, также изучите Золотую защиту.",
+      "description": "Хранитель жизни · Монумент Хранителя жизни даёт героям бонус к здоровью. Золотая статуя солдата символизирует несокрушимую жизненную силу. Для выживаемости героев сравните прирост здоровья и стоимость. Если нужна защита, также изучите Золотую защиту.",
       "url": "/ru/buildings/guardian-of-life-monument/"
     },
     {
@@ -15471,7 +15471,7 @@
       "language": "zh-tw",
       "type": "building",
       "title": "2號實驗室 | 建築 | TilesSurvive.net",
-      "description": "2號實驗室 · 2號實驗室是提高研究效率的獨立研究建築，建築資料與解鎖條件須與1號實驗室分開。 安排額外研究前，先確認帳號能否解鎖2號實驗室，並分別準備科技與建築費用。",
+      "description": "2號實驗室 · 2號實驗室是額外的研究設施，能提升研究效率，協助基地發展科技。 安排額外研究前，先確認帳號能否解鎖2號實驗室，並分別準備科技與建築費用。",
       "url": "/zh-tw/buildings/lab-2/"
     },
     {
@@ -15880,7 +15880,7 @@
       "language": "zh-tw",
       "type": "building",
       "title": "器具工坊 | 建築 | TilesSurvive.net",
-      "description": "器具工坊 · 器具工坊是利用變壓器的配電設施，遊戲說明指出可提高工作效率並加速建築修建。 規劃多項建造時，可在遊戲內查看工坊效果；本頁可比較工坊本身的基本費用與時間。",
+      "description": "器具工坊 · 器具工坊利用變壓器調整電壓，是基地的配電設施；能提升工作效率，並提供建造速度增益。 若打算接連升級多座建築，可一併考慮工坊的建造速度效果，並比較升級工坊本身所需的資源、時間與其他建造安排。",
       "url": "/zh-tw/buildings/artifact-workshop/"
     },
     {
@@ -16115,7 +16115,7 @@
       "language": "zh-tw",
       "type": "building",
       "title": "聯絡站 | 建築 | TilesSurvive.net",
-      "description": "聯絡站 · 聯絡站用於傳送及接收聯盟、好友幫助與援軍，目前已確認的各級效果表列出聯盟幫助次數。 若建造與研究計畫會使用聯盟幫助，可先比較下一級的幫助次數，再安排升級順序。",
+      "description": "聯絡站 · 聯絡站讓你與聯盟、好友互相提供幫助及援軍。升級可增加援軍容量、可接受的幫助次數，以及能縮短的工作時間。 若建造與研究計畫會使用聯盟幫助，可先比較下一級的幫助次數，再安排升級順序。",
       "url": "/zh-tw/buildings/comms-outpost/"
     },
     {
@@ -16230,7 +16230,7 @@
       "language": "zh-tw",
       "type": "building",
       "title": "瞭望塔 | 建築 | TilesSurvive.net",
-      "description": "瞭望塔 · 瞭望塔已有各級費用、時間及相連前置條件；具體功能說明與各級效果尚未確認。 若目標建築條件列出瞭望塔，可查看升至要求等級的費用；若為特定功能而升級，應先閱讀遊戲內說明。",
+      "description": "瞭望塔 · 瞭望塔是基地中的建築；準備建造或升級時，可一併查看所需資源與發電廠條件。 選擇目前與目標等級，計算瞭望塔所需的資源和時間；與其他建築的成長計畫比較後，再安排建造順序。",
       "url": "/zh-tw/buildings/lookout-tower/"
     },
     {
@@ -16354,7 +16354,7 @@
       "language": "zh-tw",
       "type": "building",
       "title": "募兵處 | 建築 | TilesSurvive.net",
-      "description": "募兵處 · 募兵處在傷兵超過醫院容量時協助補充兵力，v2.6.200已由忠誠度改為使用招募憑證。 戰鬥後請在遊戲中確認待招募兵力與免費招募量，勿用舊有忠誠度數值推算目前恢復量。",
+      "description": "募兵處 · 當傷兵超過醫院容量時，募兵處會招募基地裡的倖存者，協助補充部隊。 戰鬥後可查看待募集兵力與免費募集數量，並一併安排醫院治療和募兵補充，為下一場戰鬥做準備。",
       "url": "/zh-tw/buildings/enlistment-office/"
     },
     {
@@ -16382,7 +16382,7 @@
       "language": "zh-tw",
       "type": "building",
       "title": "民房 | 建築 | TilesSurvive.net",
-      "description": "民房 · 升級民居設施可改善睡眠品質並提高倖存者睡眠值，民居1～6的費用表各自獨立。 先確認倖存者睡眠狀態與欲改善的民居編號；即使等級相同，也應選擇該民居的費用，勿套用其他民居。",
+      "description": "民房 · 民居是倖存者休息的地方。升級設施能改善睡眠品質，並提高倖存者的睡眠值。 先確認倖存者睡眠狀態與欲改善的民居編號；即使等級相同，也應選擇該民居的費用，勿套用其他民居。",
       "url": "/zh-tw/buildings/houses/"
     },
     {
@@ -16459,7 +16459,7 @@
       "language": "zh-tw",
       "type": "building",
       "title": "兵營 | 建築 | TilesSurvive.net",
-      "description": "兵營 · 兵營用於訓練士兵，可一併查看建築成長與兵種解鎖資訊。 先確認想訓練兵種的條件，再升級所需兵營。增加訓練量時，也應檢查駐兵所與醫院容量。",
+      "description": "兵營 · 兵營是訓練部隊士兵的軍事建築，升級後可訓練更強大的士兵。 先確認想訓練兵種的條件，再升級所需兵營。增加訓練量時，也應檢查駐兵所與醫院容量。",
       "url": "/zh-tw/buildings/barracks/"
     },
     {
@@ -16765,7 +16765,7 @@
       "language": "zh-tw",
       "type": "building",
       "title": "生命勇士碑 | 建築 | TilesSurvive.net",
-      "description": "生命勇士碑 · 生命勇士碑提供英雄生命加成，可查看各級生命效果及建築戰力。 強化英雄生存能力時，可比較生命增幅與費用；若也需要防禦，請一併查看神盾守護碑。",
+      "description": "生命勇士碑 · 生命勇士碑為英雄提供生命值增益，金色士兵雕像象徵不屈的生命力。 強化英雄生存能力時，可比較生命增幅與費用；若也需要防禦，請一併查看神盾守護碑。",
       "url": "/zh-tw/buildings/guardian-of-life-monument/"
     },
     {
@@ -17171,7 +17171,7 @@
       "language": "zh-tw",
       "type": "building",
       "title": "英雄學院 | 建築 | TilesSurvive.net",
-      "description": "英雄學院 · 英雄學院與英雄技能書生產相關，可比較各級每小時產量與建築升級費用。 先確認主力英雄下次技能升級所需的技能書，再將學院產量納入成長規劃。",
+      "description": "英雄學院 · 英雄學院生產強化英雄技能所需的技能書，是累積知識與策略、支持主力英雄成長的場所。 先確認主力英雄下次技能升級所需的技能書，再將學院產量納入成長規劃。",
       "url": "/zh-tw/buildings/hero-academy/"
     },
     {
@@ -17833,7 +17833,7 @@
       "language": "zh-tw",
       "type": "building",
       "title": "戰神紀念碑 | 建築 | TilesSurvive.net",
-      "description": "戰神紀念碑 · 戰神紀念碑提供英雄攻擊加成，各級攻擊效果與戰力分開顯示。 若要補強英雄攻擊，可比較下一級效果與資源需求，並與英雄技能升級分別規劃。",
+      "description": "戰神紀念碑 · 戰神紀念碑為英雄提供攻擊力增益，金色步槍雕像象徵力量與戰鬥意志。 若要補強英雄攻擊，可比較下一級效果與資源需求，並與英雄技能升級分別規劃。",
       "url": "/zh-tw/buildings/warbringer-monument/"
     },
     {
@@ -18215,7 +18215,7 @@
       "language": "zh-tw",
       "type": "building",
       "title": "討伐研究各等級戰力",
-      "description": "遊戲2.6.200。顯示已完成研究等級提供的戰力。正在研究的下一級須完成後才生效，請勿加總各等級數值。",
+      "description": "已完成研究等級提供的戰力。下一級於研究完成後套用，各級數值不相加。",
       "url": "/zh-tw/buildings/lab/#research-effects-50"
     },
     {
