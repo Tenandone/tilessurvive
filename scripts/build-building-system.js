@@ -11,6 +11,7 @@ function config(lang,slug){
  const copy={...require('./build-client-buildings-52').copy[lang],...require('../data/content-60/buildings-copy')[lang],...player};
  const buildings=publicBuildings(slug);
  if(!buildings.every(building=>building.profiles.every(profile=>profile.rows.some(row=>row.level===2))))copy.profileHint=player.profileHintInitial;
+ if(slug==='power-plant'){copy.profileHint=player.powerProfileHint;copy.powerCondition=player.powerDependencyCondition;}
  const labels=pick(old.labels,['requirements','level','exactValues','capture','levelHeader','conditions','time','newConstruction','stage','none','exactValue','close','totals','levelPrefix','power']);
  labels.unknown='—';
  labels.totals={ko:'전체 성장 합계',en:'Full progression totals',ja:'全成長の合計',ru:'Итоги полного развития','zh-tw':'完整成長合計',de:'Summen der gesamten Entwicklung'}[lang];
@@ -82,7 +83,7 @@ function project(html,lang,slug){
  }
  if(lang==='ru')for(const link of d.querySelectorAll('main nav[data-platform-related] a[href="/ru/buildings/lab/"]'))if(link.textContent.trim()==='Lab')link.textContent=pageName('lab',lang);
  for(const node of d.querySelectorAll('main [aria-label]'))if(replacements[node.getAttribute('aria-label')])node.setAttribute('aria-label',replacements[node.getAttribute('aria-label')]);
- const rule=d.querySelector('#rules-22 p'),conditionKey={'power-plant':'powerCondition',lab:'labCondition',hospital:'hospitalCondition','enlistment-office':'enlistmentCondition'}[slug];
+ const rule=d.querySelector('#rules-22 p'),conditionKey={'power-plant':'powerDependencyCondition',lab:'labCondition',hospital:'hospitalCondition','enlistment-office':'enlistmentCondition'}[slug];
  if(rule&&conditionKey)rule.textContent=player[conditionKey];
  if(slug==='lab'){
    const researchNote=d.querySelector('#research-effects-50 > p');if(researchNote)researchNote.textContent=player.researchPower;

@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "registryVersion": "2026-10-13.1",
+  "registryVersion": "2026-10-13.2",
   "baseline": "7a82e23b3d2184673ed60dc6898813f74b4d9b79",
   "verifiedAt": "2026-10-13",
   "sourcePolicy": {
@@ -70,6 +70,15 @@
   },
   "verification": {
     "status": "reviewed-with-explicit-gaps",
+    "dependencyAudit": {
+      "record": "scripts/building-data/dependencies-2026-10-13.json",
+      "verifiedAt": "2026-10-13",
+      "scope": "22 routes, 29 building IDs, 58 independent profiles, 1,522 rows and 1,562 prerequisite edges match the retained client arrays in full and in order.",
+      "semantics": "Each prerequisite building type must meet its required level. Multiple types are conjunctive; multiple instances of one type use the client's AnyBuildingsReachedLevel check. Resolve record IDs before comparing levels and preserve rank separately.",
+      "profileSelection": "The retained native RequireBuildings getter chooses the entire ReqBuilding array when GetFunctionAB(building) equals 1, otherwise the entire ReqBuildingD array. The visitor's live account flag remains unknown.",
+      "separateGates": "Building prerequisites do not replace construction items, map/build-slot availability, mission/tutorial gates or server/account eligibility. Keep those conditions separate and do not turn an empty prerequisite array into a claim that every unlock gate is satisfied.",
+      "numericCorrections": 0
+    },
     "numericBaseline": "1,520 existing profile rows reviewed; five null fields supplemented; two verified Enlistment Office construction rows added. Existing non-null values were preserved.",
     "privateEvidence": "Detailed source record IDs, original old/new values and extraction proof are retained outside the public repository in the building-system audit ledger.",
     "referenceTables": [
@@ -91,6 +100,12 @@
     "priorGuidance": "legacy-guidance-7a82e23b.json preserves previous internal explanations without exporting them to page payloads."
   },
   "changeHistory": [
+    {
+      "date": "2026-10-13",
+      "kind": "dependency-verification",
+      "baseline": "8cfeef4c7b2349bf80a3185c4dbe93cbc7b7c923",
+      "description": "Verified all prerequisite arrays against retained client records and native consumers. No dependency values changed. Clarified the Power Plant A/B choice and added six-language desktop/mobile/payload regression checks for complete conditions and links."
+    },
     {
       "date": "2026-10-13",
       "kind": "reviewed-supplement",

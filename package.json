@@ -58,7 +58,8 @@
     "build:phase3": "node scripts/build-research-phase3.js && node scripts/build-research-navigation-60.js && node scripts/sync-sitemap-60.js",
     "test:phase3": "node --test scripts/test-research-phase3.js scripts/test-research-navigation-60.js",
     "build:building-system": "node scripts/build-building-system.js && node scripts/build-search-index.js && node scripts/build-search-50.js",
-    "test:building-system": "node --test scripts/test-building-system.js",
+    "test:building-system": "node --test scripts/test-building-system.js scripts/test-building-dependencies.js",
+    "test:building-dependencies": "node --test scripts/test-building-dependencies.js",
     "test:building-legacy-math": "node --test --test-name-pattern=\"^(four exact IDs|seconds and unrounded|all ranges are additive|barracks 2 and 3|localized times)\" scripts/test-client-buildings-52.js && node --test --test-name-pattern=\"^(the single Power Plant|compact display|six locales preserve|all 465|ko:|en:|ja:|ru:|zh-tw:|de:|selected ranges|unknown values|display and inclusive|localized literal)\" scripts/test-power-plant-original-runtime.js"
   },
   "keywords": [],

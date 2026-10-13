@@ -88,7 +88,9 @@ test('embedded locale and UI copy use explicit public keys without old source an
     assert.equal(config.copy.original, player[lang].original);
     assert.equal(config.copy.d, player[lang].d);
     assert.notEqual(config.copy.original, config.copy.d, file + ' requirements choices must remain distinct');
-    assert.equal(config.copy.profileHint, slug === 'enlistment-office' ? player[lang].profileHintInitial : player[lang].profileHint);
+    const hintKey = slug === 'power-plant' ? 'powerProfileHint' : slug === 'enlistment-office' ? 'profileHintInitial' : 'profileHint';
+    assert.equal(config.copy.profileHint, player[lang][hintKey]);
+    assert.equal(config.copy.powerCondition, player[lang][slug === 'power-plant' ? 'powerDependencyCondition' : 'powerCondition']);
     if (slug === 'enlistment-office') assert(config.buildings.every(building => building.profiles.every(profile => profile.rows.every(row => row.level === 1))), file + ' construction-only guidance must match the published scope');
     assert(Object.values(config.copy).every(value => typeof value === 'string'), file + ' missing public copy');
   }

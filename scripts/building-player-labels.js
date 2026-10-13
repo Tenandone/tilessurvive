@@ -27,6 +27,33 @@ const profileHintInitial = {
   de: 'Wähle die Tabelle, die dem Grundbedarf in deinem Spiel entspricht.'
 };
 for (const lang of Object.keys(profileHintInitial)) module.exports[lang].profileHintInitial = profileHintInitial[lang];
+const powerRequirements = {
+  ko: {
+    powerProfileHint: '요구량 A와 B는 자원·시간뿐 아니라 선행 건물도 다릅니다. 게임의 업그레이드 화면과 일치하는 표를 선택하세요.',
+    powerDependencyCondition: '요구량 B는 레벨에 따라 병원 등 여러 선행 건물을 요구합니다. 선택한 표에 표시된 건물과 레벨 조건을 모두 확인하세요.'
+  },
+  en: {
+    powerProfileHint: 'Tables A and B differ in prerequisite buildings as well as resources and time. Choose the table that matches your in-game upgrade screen.',
+    powerDependencyCondition: 'Depending on the level, table B requires several buildings, including the Hospital. Check every building and level requirement in the selected table.'
+  },
+  ja: {
+    powerProfileHint: '必要量AとBは資源・時間だけでなく、前提建物も異なります。ゲーム内の強化画面と一致する表を選んでください。',
+    powerDependencyCondition: '必要量Bでは、レベルに応じて病院など複数の前提建物が必要です。選択した表の建物と必要レベルをすべて確認してください。'
+  },
+  ru: {
+    powerProfileHint: 'Таблицы A и B различаются не только ресурсами и временем, но и требованиями к зданиям. Выберите таблицу, соответствующую экрану улучшения в вашей игре.',
+    powerDependencyCondition: 'В таблице B на некоторых уровнях требуются несколько зданий, в том числе госпиталь. Проверьте все здания и их требуемые уровни в выбранной таблице.'
+  },
+  'zh-tw': {
+    powerProfileHint: '需求A與B不僅資源、時間不同，前置建築也有差異。請選擇與遊戲內升級畫面相符的表格。',
+    powerDependencyCondition: '需求B會依等級要求醫院等多個前置建築。請確認所選表格中的所有建築與等級條件。'
+  },
+  de: {
+    powerProfileHint: 'Die Tabellen A und B unterscheiden sich bei Ressourcen, Zeit und vorausgesetzten Gebäuden. Wähle die Tabelle, die dem Aufwertungsfenster in deinem Spiel entspricht.',
+    powerDependencyCondition: 'Tabelle B verlangt je nach Stufe mehrere Gebäude, darunter das Krankenhaus. Prüfe alle Gebäude und ihre erforderlichen Stufen in der gewählten Tabelle.'
+  }
+};
+for (const lang of Object.keys(powerRequirements)) Object.assign(module.exports[lang], powerRequirements[lang]);
 module.exports.ru.labCondition='Улучшение здания и исследования оплачиваются отдельно. Время указано без ускорений и бонусов.';
 
 module.exports.ru.legacyLabCopy = {

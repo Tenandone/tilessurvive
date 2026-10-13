@@ -1,0 +1,2850 @@
+{
+  "schemaVersion": 1,
+  "auditDate": "2026-10-13",
+  "baselineCommit": "8cfeef4c7b2349bf80a3185c4dbe93cbc7b7c923",
+  "visibility": "build-only; excluded from published site",
+  "sourceScope": {
+    "gameVersion": "2.6.200",
+    "gameBuild": 1512,
+    "kind": "retained client configuration and native/Lua consumer cohort",
+    "liveAccountOrServerAssignmentVerified": false,
+    "futureHotfixesCovered": false
+  },
+  "result": {
+    "registeredRoutes": 22,
+    "distinctBuildingIds": 29,
+    "profiles": 58,
+    "sourceRecords": 761,
+    "profileRows": 1522,
+    "requirementEdges": 1562,
+    "multiplePrerequisiteRows": 36,
+    "sourceArrayMismatches": 0,
+    "nameMismatches": 0,
+    "physicalShardRecordsCompared": 761,
+    "powerPlant": {
+      "rows": 60,
+      "sourceRecords": 30,
+      "mismatches": 0,
+      "perProfile": {
+        "original": {
+          "rows": 30,
+          "multiplePrerequisiteRows": 0,
+          "edgeCount": 26
+        },
+        "d": {
+          "rows": 30,
+          "multiplePrerequisiteRows": 25,
+          "edgeCount": 63
+        }
+      }
+    }
+  },
+  "changes": {
+    "originalSourceValues": 0,
+    "normalizedRequirements": 0,
+    "requirementNames": 0,
+    "resources": 0,
+    "times": 0,
+    "effects": 0,
+    "calculationFormula": 0
+  },
+  "orderedRequirementsHash": {
+    "algorithm": "SHA-256",
+    "encoding": "UTF-8",
+    "serialization": "JSON.stringify(profile.rows.map(r => [r.level, r.rank, (r.requirements || []).map(q => [q.buildingId, q.level, q.rank])]))",
+    "ordering": "Preserve profile row order and every source prerequisite array entry in its original order. No whitespace, BOM, or trailing newline in hash input.",
+    "sourceFieldByProfile": {
+      "original": "ReqBuilding",
+      "d": "ReqBuildingD"
+    }
+  },
+  "sourcePins": [
+    {
+      "table": "buildings",
+      "rawSha256": "715e2defa5531f9e834e9f9226a703e1a27b0a472fe2fd0a915202774845be33",
+      "normalizedSha256": "00c26e22af6b53bcb41f3abce23d2badb3dab309e5d863fa30f55de6bbdd3ccd",
+      "records": 5957
+    },
+    {
+      "table": "building_type",
+      "rawSha256": "e566fefd3c5dd8f501b2ec49b75c6861e7bf29b8ecd30c1ab1e1935662950f1b",
+      "normalizedSha256": "5f46a48ae69cc9634e3e741ab1dc9f6311919562edcd2a5805da57110006ef7c",
+      "records": 320
+    },
+    {
+      "table": "buildings_grade",
+      "rawSha256": "a95f7d110c1c4e3e00d820531cb919070c1b5fd3eb7746f0c85852f043b83515",
+      "normalizedSha256": "7e1bdd50f00f817712f010bfce3a6b99da583df04bdc374046bc31cc16e00272",
+      "records": 2
+    },
+    {
+      "table": "building_furniture_type",
+      "rawSha256": "26d55956477edaef2fcb4475d5f18b876dc8eccb3e9c718b95a0d6a1bedbcd49",
+      "normalizedSha256": "3996dd00c0e6e42dce2d1802f8ac4c8c64a9e5aede120c0eea68bbff2293baad",
+      "records": 80
+    },
+    {
+      "table": "building_furnitures",
+      "rawSha256": "be54a6585e3c1a95e812bd329a4797f5a8c32b50bb80789e65789533270593f9",
+      "normalizedSha256": "be8cd59af5dd89bc50071cee3296b5b7075adbb3ea610f13e50f61f21a1bfd25",
+      "records": 988
+    },
+    {
+      "table": "function_open",
+      "rawSha256": "1ff56e5c2bca4eb96eae92c160f288f817e0b463df7128adf2ddc5e679a1cd14",
+      "normalizedSha256": "0416bcd6e406f1b125a8b8b01d12a2de71fc2b1317b8d1836871c23bab086197",
+      "records": 713
+    },
+    {
+      "table": "rural_slot_group_soc",
+      "rawSha256": "e45a6441813f4203d3e9b1de894c6366ea7e26fa451b99fd223d52affc706c66",
+      "normalizedSha256": "cd27e3189261364c96598f158a04e915112746f6700c121182a62ce9f06af091",
+      "records": 81
+    }
+  ],
+  "localizationPins": [
+    {
+      "language": "ko",
+      "sha256": "96a2d2735462646d8e85842320aa9256aa0c3b3d42f84224895dd97d0fdff286"
+    },
+    {
+      "language": "en",
+      "sha256": "a469fc698e0b031cdae6f824b5bd4f38e6d04a04b3df7235c305700908ce1e6e"
+    },
+    {
+      "language": "ja",
+      "sha256": "70df0aceef8d75b26afd07aba081268ce0646f1896d15cbc57f786c90329227c"
+    },
+    {
+      "language": "ru",
+      "sha256": "f91a9942e30896d9a05d5b5364dbe6be35b4b6923b602bf10eada6e83223f907"
+    },
+    {
+      "language": "zh-tw",
+      "sha256": "6c1d31a2f1f2f489fc2818c4d0c8f90e84dcc247f658e1437741e3590d56a625"
+    },
+    {
+      "language": "de",
+      "sha256": "516ea20886c914df24013300ce3f2ebb25af51921e29fc097099289b0ed0ff59"
+    }
+  ],
+  "binaryValidation": {
+    "completeBuildingsRecordsRedecoded": 5957,
+    "completeBuildingTypeRecordsRedecoded": 320,
+    "allRawFieldsEqual": true,
+    "selectedArraysIndependentlyDecodedAtByteOffsets": 2283,
+    "arrayFields": [
+      "ReqBuilding",
+      "ReqBuildingB",
+      "ReqBuildingD"
+    ],
+    "allCountAndElementComparisonsMatch": true,
+    "parserSha256": "8fce574b717ba89b73dcdf7e8a4cbdb3469016b616330453314debc1335bc6b1"
+  },
+  "profiles": [
+    {
+      "buildingId": 800005,
+      "slug": "power-plant",
+      "profile": "original",
+      "rowCount": 30,
+      "requirementCount": 26,
+      "orderedRequirementsSha256": "48f6d752904e78fe0534fb8819db5e144a09af94cd7668c52fead0828644c65f"
+    },
+    {
+      "buildingId": 800005,
+      "slug": "power-plant",
+      "profile": "d",
+      "rowCount": 30,
+      "requirementCount": 63,
+      "orderedRequirementsSha256": "d2bb18e207b611acd26eb61a7999afd67177d7a60d8e6f0cc88f38e9f4a48940"
+    },
+    {
+      "buildingId": 800007,
+      "slug": "barracks",
+      "profile": "original",
+      "rowCount": 30,
+      "requirementCount": 30,
+      "orderedRequirementsSha256": "722347044fc52a40a1e371121c06cfdd68caa87ec06a133441f105ef456218aa"
+    },
+    {
+      "buildingId": 800007,
+      "slug": "barracks",
+      "profile": "d",
+      "rowCount": 30,
+      "requirementCount": 30,
+      "orderedRequirementsSha256": "722347044fc52a40a1e371121c06cfdd68caa87ec06a133441f105ef456218aa"
+    },
+    {
+      "buildingId": 800008,
+      "slug": "barracks",
+      "profile": "original",
+      "rowCount": 30,
+      "requirementCount": 30,
+      "orderedRequirementsSha256": "722347044fc52a40a1e371121c06cfdd68caa87ec06a133441f105ef456218aa"
+    },
+    {
+      "buildingId": 800008,
+      "slug": "barracks",
+      "profile": "d",
+      "rowCount": 30,
+      "requirementCount": 30,
+      "orderedRequirementsSha256": "1bc48feac1ee09940ce42d940eadba6139d5ff3c2f618cd5587975f887c8b2cf"
+    },
+    {
+      "buildingId": 800009,
+      "slug": "barracks",
+      "profile": "original",
+      "rowCount": 30,
+      "requirementCount": 30,
+      "orderedRequirementsSha256": "5b4705c762e9e27ba50ceb999170b194333bbe81d2d29e83cc0a1255d384d759"
+    },
+    {
+      "buildingId": 800009,
+      "slug": "barracks",
+      "profile": "d",
+      "rowCount": 30,
+      "requirementCount": 30,
+      "orderedRequirementsSha256": "1bc48feac1ee09940ce42d940eadba6139d5ff3c2f618cd5587975f887c8b2cf"
+    },
+    {
+      "buildingId": 800142,
+      "slug": "hero-academy",
+      "profile": "original",
+      "rowCount": 30,
+      "requirementCount": 30,
+      "orderedRequirementsSha256": "e378792810a1f219059cfa170777a5c549911a7e36ccc5e88428e022d136f262"
+    },
+    {
+      "buildingId": 800142,
+      "slug": "hero-academy",
+      "profile": "d",
+      "rowCount": 30,
+      "requirementCount": 30,
+      "orderedRequirementsSha256": "0ccec51373b04cf4f462043be4440a7857a7121d72c9d810e828a045edf1385c"
+    },
+    {
+      "buildingId": 800147,
+      "slug": "warbringer-monument",
+      "profile": "original",
+      "rowCount": 30,
+      "requirementCount": 30,
+      "orderedRequirementsSha256": "b1c89dfadd6eb994e1d1ea6a5b42626df2ee13bade76d0aee7f1110937fdda92"
+    },
+    {
+      "buildingId": 800147,
+      "slug": "warbringer-monument",
+      "profile": "d",
+      "rowCount": 30,
+      "requirementCount": 30,
+      "orderedRequirementsSha256": "d22d7fbef5fcfe1b303f061d8791336eb993b08f95dfa271c53e8695d013d11f"
+    },
+    {
+      "buildingId": 800148,
+      "slug": "aegis-monument",
+      "profile": "original",
+      "rowCount": 30,
+      "requirementCount": 30,
+      "orderedRequirementsSha256": "b1c89dfadd6eb994e1d1ea6a5b42626df2ee13bade76d0aee7f1110937fdda92"
+    },
+    {
+      "buildingId": 800148,
+      "slug": "aegis-monument",
+      "profile": "d",
+      "rowCount": 30,
+      "requirementCount": 31,
+      "orderedRequirementsSha256": "77140b1f8fe1c3d0afc36e4e3af969b88b4bf7f690e4c1e6693b0709111eb541"
+    },
+    {
+      "buildingId": 800149,
+      "slug": "guardian-of-life-monument",
+      "profile": "original",
+      "rowCount": 30,
+      "requirementCount": 30,
+      "orderedRequirementsSha256": "b1c89dfadd6eb994e1d1ea6a5b42626df2ee13bade76d0aee7f1110937fdda92"
+    },
+    {
+      "buildingId": 800149,
+      "slug": "guardian-of-life-monument",
+      "profile": "d",
+      "rowCount": 30,
+      "requirementCount": 30,
+      "orderedRequirementsSha256": "89f836645d3fa4a1e9529ab88be966de50624017dec45e74cf3802139f84497c"
+    },
+    {
+      "buildingId": 800216,
+      "slug": "cursed-wound-stele",
+      "profile": "original",
+      "rowCount": 60,
+      "requirementCount": 61,
+      "orderedRequirementsSha256": "ee8522de3e7af7263a3a524f086701ddf1e35a5730e9121b08f4e306635ea572"
+    },
+    {
+      "buildingId": 800216,
+      "slug": "cursed-wound-stele",
+      "profile": "d",
+      "rowCount": 60,
+      "requirementCount": 62,
+      "orderedRequirementsSha256": "076719358322b41dd2099a65287b709bb2ad500c0736b9d75cc2ae337c5281e0"
+    },
+    {
+      "buildingId": 800217,
+      "slug": "blessed-healing-stele",
+      "profile": "original",
+      "rowCount": 60,
+      "requirementCount": 61,
+      "orderedRequirementsSha256": "08aefa63570f43f0837eea0648f703869c356141d16ec4973908d2143cd7e7de"
+    },
+    {
+      "buildingId": 800217,
+      "slug": "blessed-healing-stele",
+      "profile": "d",
+      "rowCount": 60,
+      "requirementCount": 62,
+      "orderedRequirementsSha256": "7e3d0c86f466aebb6b90238bf44c23369973668dbab8de1506bea12a520b91ff"
+    },
+    {
+      "buildingId": 800010,
+      "slug": "hospital",
+      "profile": "original",
+      "rowCount": 30,
+      "requirementCount": 30,
+      "orderedRequirementsSha256": "5db7990f215a4d3649bafefc47f2d6dff74891fe086bb8ee7d7449d16ccb2161"
+    },
+    {
+      "buildingId": 800010,
+      "slug": "hospital",
+      "profile": "d",
+      "rowCount": 30,
+      "requirementCount": 30,
+      "orderedRequirementsSha256": "d035a9a557081aea044ece1c272179564556e4dd8e6ad68e50eade0a0dbda8f8"
+    },
+    {
+      "buildingId": 800012,
+      "slug": "lab",
+      "profile": "original",
+      "rowCount": 30,
+      "requirementCount": 30,
+      "orderedRequirementsSha256": "657be6fcad43545acfcf42b2220130be12a2b615047d9ff0eff942f595954891"
+    },
+    {
+      "buildingId": 800012,
+      "slug": "lab",
+      "profile": "d",
+      "rowCount": 30,
+      "requirementCount": 30,
+      "orderedRequirementsSha256": "3abe601b76705ef49fc83c085a9e92f3fcf57a17dc8c07c392db90eacf5f94f5"
+    },
+    {
+      "buildingId": 800016,
+      "slug": "comms-outpost",
+      "profile": "original",
+      "rowCount": 30,
+      "requirementCount": 30,
+      "orderedRequirementsSha256": "40408bf02c2d7f42e367129b024d1f728b36974fd5de61ed948a140a05af5c79"
+    },
+    {
+      "buildingId": 800016,
+      "slug": "comms-outpost",
+      "profile": "d",
+      "rowCount": 30,
+      "requirementCount": 30,
+      "orderedRequirementsSha256": "b1c89dfadd6eb994e1d1ea6a5b42626df2ee13bade76d0aee7f1110937fdda92"
+    },
+    {
+      "buildingId": 800152,
+      "slug": "garrison-station",
+      "profile": "original",
+      "rowCount": 30,
+      "requirementCount": 30,
+      "orderedRequirementsSha256": "2e09fe49b69b0bddbc91175f00e2b9cf44afe6f41458911074ab563a70510279"
+    },
+    {
+      "buildingId": 800152,
+      "slug": "garrison-station",
+      "profile": "d",
+      "rowCount": 30,
+      "requirementCount": 30,
+      "orderedRequirementsSha256": "df285209a1be277b0e093b92e7f0a6fb8f7817a3fa8645040fce2c518d1a2875"
+    },
+    {
+      "buildingId": 800001,
+      "slug": "greenhouse",
+      "profile": "original",
+      "rowCount": 30,
+      "requirementCount": 30,
+      "orderedRequirementsSha256": "b1c89dfadd6eb994e1d1ea6a5b42626df2ee13bade76d0aee7f1110937fdda92"
+    },
+    {
+      "buildingId": 800001,
+      "slug": "greenhouse",
+      "profile": "d",
+      "rowCount": 30,
+      "requirementCount": 31,
+      "orderedRequirementsSha256": "2ffa48222ef1c35ed87977ec48eeea5d4bf1659f69436115d13eaccc044bb629"
+    },
+    {
+      "buildingId": 800002,
+      "slug": "smelter",
+      "profile": "original",
+      "rowCount": 30,
+      "requirementCount": 30,
+      "orderedRequirementsSha256": "c2164ed7763b9a8284b96a6f5dc301dbfdba34fdd4976e6164e44376cc77e11c"
+    },
+    {
+      "buildingId": 800002,
+      "slug": "smelter",
+      "profile": "d",
+      "rowCount": 30,
+      "requirementCount": 30,
+      "orderedRequirementsSha256": "b1c89dfadd6eb994e1d1ea6a5b42626df2ee13bade76d0aee7f1110937fdda92"
+    },
+    {
+      "buildingId": 800003,
+      "slug": "lumberyard",
+      "profile": "original",
+      "rowCount": 30,
+      "requirementCount": 30,
+      "orderedRequirementsSha256": "b1c89dfadd6eb994e1d1ea6a5b42626df2ee13bade76d0aee7f1110937fdda92"
+    },
+    {
+      "buildingId": 800003,
+      "slug": "lumberyard",
+      "profile": "d",
+      "rowCount": 30,
+      "requirementCount": 30,
+      "orderedRequirementsSha256": "b1c89dfadd6eb994e1d1ea6a5b42626df2ee13bade76d0aee7f1110937fdda92"
+    },
+    {
+      "buildingId": 800004,
+      "slug": "refinery",
+      "profile": "original",
+      "rowCount": 30,
+      "requirementCount": 30,
+      "orderedRequirementsSha256": "9cc26471856b16f01418cdf046a3a30348f31b890ffab9163bdb61ac88299859"
+    },
+    {
+      "buildingId": 800004,
+      "slug": "refinery",
+      "profile": "d",
+      "rowCount": 30,
+      "requirementCount": 30,
+      "orderedRequirementsSha256": "5357828f8b0acb3cfe3037c22c532fe56b57886eeccb714b6580979b09049f2a"
+    },
+    {
+      "buildingId": 800014,
+      "slug": "lookout-tower",
+      "profile": "original",
+      "rowCount": 30,
+      "requirementCount": 30,
+      "orderedRequirementsSha256": "b1c89dfadd6eb994e1d1ea6a5b42626df2ee13bade76d0aee7f1110937fdda92"
+    },
+    {
+      "buildingId": 800014,
+      "slug": "lookout-tower",
+      "profile": "d",
+      "rowCount": 30,
+      "requirementCount": 30,
+      "orderedRequirementsSha256": "8518795aa2fab0ad70f2021e3b35013be6ae83c5984d557e20199c2a40022435"
+    },
+    {
+      "buildingId": 800106,
+      "slug": "kitchen",
+      "profile": "original",
+      "rowCount": 10,
+      "requirementCount": 10,
+      "orderedRequirementsSha256": "4675e7094626fcd19e49cc1b96b4c37bf583dbf143fe8244e390d27965ee44b9"
+    },
+    {
+      "buildingId": 800106,
+      "slug": "kitchen",
+      "profile": "d",
+      "rowCount": 10,
+      "requirementCount": 11,
+      "orderedRequirementsSha256": "523a78d2d2f883c2ced8ee52f0bea43b138ea5f00e33c74f5dea6248cc625bdf"
+    },
+    {
+      "buildingId": 800110,
+      "slug": "houses",
+      "profile": "original",
+      "rowCount": 10,
+      "requirementCount": 10,
+      "orderedRequirementsSha256": "4675e7094626fcd19e49cc1b96b4c37bf583dbf143fe8244e390d27965ee44b9"
+    },
+    {
+      "buildingId": 800110,
+      "slug": "houses",
+      "profile": "d",
+      "rowCount": 10,
+      "requirementCount": 11,
+      "orderedRequirementsSha256": "7f8c8b7f90d826cfbb402f8eff0e90537b37f6dcee27e6c0904fc236c9af2e39"
+    },
+    {
+      "buildingId": 800111,
+      "slug": "houses",
+      "profile": "original",
+      "rowCount": 10,
+      "requirementCount": 10,
+      "orderedRequirementsSha256": "4675e7094626fcd19e49cc1b96b4c37bf583dbf143fe8244e390d27965ee44b9"
+    },
+    {
+      "buildingId": 800111,
+      "slug": "houses",
+      "profile": "d",
+      "rowCount": 10,
+      "requirementCount": 11,
+      "orderedRequirementsSha256": "7f8c8b7f90d826cfbb402f8eff0e90537b37f6dcee27e6c0904fc236c9af2e39"
+    },
+    {
+      "buildingId": 800112,
+      "slug": "houses",
+      "profile": "original",
+      "rowCount": 10,
+      "requirementCount": 10,
+      "orderedRequirementsSha256": "4675e7094626fcd19e49cc1b96b4c37bf583dbf143fe8244e390d27965ee44b9"
+    },
+    {
+      "buildingId": 800112,
+      "slug": "houses",
+      "profile": "d",
+      "rowCount": 10,
+      "requirementCount": 10,
+      "orderedRequirementsSha256": "4675e7094626fcd19e49cc1b96b4c37bf583dbf143fe8244e390d27965ee44b9"
+    },
+    {
+      "buildingId": 800113,
+      "slug": "houses",
+      "profile": "original",
+      "rowCount": 10,
+      "requirementCount": 10,
+      "orderedRequirementsSha256": "4675e7094626fcd19e49cc1b96b4c37bf583dbf143fe8244e390d27965ee44b9"
+    },
+    {
+      "buildingId": 800113,
+      "slug": "houses",
+      "profile": "d",
+      "rowCount": 10,
+      "requirementCount": 10,
+      "orderedRequirementsSha256": "4675e7094626fcd19e49cc1b96b4c37bf583dbf143fe8244e390d27965ee44b9"
+    },
+    {
+      "buildingId": 800114,
+      "slug": "houses",
+      "profile": "original",
+      "rowCount": 10,
+      "requirementCount": 10,
+      "orderedRequirementsSha256": "4675e7094626fcd19e49cc1b96b4c37bf583dbf143fe8244e390d27965ee44b9"
+    },
+    {
+      "buildingId": 800114,
+      "slug": "houses",
+      "profile": "d",
+      "rowCount": 10,
+      "requirementCount": 10,
+      "orderedRequirementsSha256": "4675e7094626fcd19e49cc1b96b4c37bf583dbf143fe8244e390d27965ee44b9"
+    },
+    {
+      "buildingId": 800115,
+      "slug": "houses",
+      "profile": "original",
+      "rowCount": 10,
+      "requirementCount": 10,
+      "orderedRequirementsSha256": "4675e7094626fcd19e49cc1b96b4c37bf583dbf143fe8244e390d27965ee44b9"
+    },
+    {
+      "buildingId": 800115,
+      "slug": "houses",
+      "profile": "d",
+      "rowCount": 10,
+      "requirementCount": 10,
+      "orderedRequirementsSha256": "4675e7094626fcd19e49cc1b96b4c37bf583dbf143fe8244e390d27965ee44b9"
+    },
+    {
+      "buildingId": 800150,
+      "slug": "artifact-workshop",
+      "profile": "original",
+      "rowCount": 30,
+      "requirementCount": 30,
+      "orderedRequirementsSha256": "b1c89dfadd6eb994e1d1ea6a5b42626df2ee13bade76d0aee7f1110937fdda92"
+    },
+    {
+      "buildingId": 800150,
+      "slug": "artifact-workshop",
+      "profile": "d",
+      "rowCount": 30,
+      "requirementCount": 30,
+      "orderedRequirementsSha256": "b1c89dfadd6eb994e1d1ea6a5b42626df2ee13bade76d0aee7f1110937fdda92"
+    },
+    {
+      "buildingId": 800168,
+      "slug": "lab-2",
+      "profile": "original",
+      "rowCount": 30,
+      "requirementCount": 30,
+      "orderedRequirementsSha256": "657be6fcad43545acfcf42b2220130be12a2b615047d9ff0eff942f595954891"
+    },
+    {
+      "buildingId": 800168,
+      "slug": "lab-2",
+      "profile": "d",
+      "rowCount": 30,
+      "requirementCount": 30,
+      "orderedRequirementsSha256": "3abe601b76705ef49fc83c085a9e92f3fcf57a17dc8c07c392db90eacf5f94f5"
+    },
+    {
+      "buildingId": 800032,
+      "slug": "enlistment-office",
+      "profile": "original",
+      "rowCount": 1,
+      "requirementCount": 1,
+      "orderedRequirementsSha256": "81d66f8756852f0038f48b89380f6ebaa2397c122aa912145d13338edb70d8d3"
+    },
+    {
+      "buildingId": 800032,
+      "slug": "enlistment-office",
+      "profile": "d",
+      "rowCount": 1,
+      "requirementCount": 1,
+      "orderedRequirementsSha256": "81d66f8756852f0038f48b89380f6ebaa2397c122aa912145d13338edb70d8d3"
+    }
+  ],
+  "powerPlantProfiles": [
+    {
+      "profile": "original",
+      "rows": [
+        {
+          "level": 1,
+          "rank": 0,
+          "sourceRecordId": 500207,
+          "requiredSourceRecordIds": [],
+          "requirements": []
+        },
+        {
+          "level": 2,
+          "rank": 0,
+          "sourceRecordId": 500208,
+          "requiredSourceRecordIds": [],
+          "requirements": []
+        },
+        {
+          "level": 3,
+          "rank": 0,
+          "sourceRecordId": 500209,
+          "requiredSourceRecordIds": [
+            500869
+          ],
+          "requirements": [
+            [
+              800003,
+              1,
+              0
+            ]
+          ]
+        },
+        {
+          "level": 4,
+          "rank": 0,
+          "sourceRecordId": 500210,
+          "requiredSourceRecordIds": [],
+          "requirements": []
+        },
+        {
+          "level": 5,
+          "rank": 0,
+          "sourceRecordId": 500211,
+          "requiredSourceRecordIds": [],
+          "requirements": []
+        },
+        {
+          "level": 6,
+          "rank": 0,
+          "sourceRecordId": 500212,
+          "requiredSourceRecordIds": [
+            500790
+          ],
+          "requirements": [
+            [
+              800007,
+              5,
+              0
+            ]
+          ]
+        },
+        {
+          "level": 7,
+          "rank": 0,
+          "sourceRecordId": 500213,
+          "requiredSourceRecordIds": [
+            500294
+          ],
+          "requirements": [
+            [
+              800009,
+              6,
+              0
+            ]
+          ]
+        },
+        {
+          "level": 8,
+          "rank": 0,
+          "sourceRecordId": 500214,
+          "requiredSourceRecordIds": [
+            500336
+          ],
+          "requirements": [
+            [
+              800008,
+              7,
+              0
+            ]
+          ]
+        },
+        {
+          "level": 9,
+          "rank": 0,
+          "sourceRecordId": 500215,
+          "requiredSourceRecordIds": [
+            500793
+          ],
+          "requirements": [
+            [
+              800007,
+              8,
+              0
+            ]
+          ]
+        },
+        {
+          "level": 10,
+          "rank": 0,
+          "sourceRecordId": 500216,
+          "requiredSourceRecordIds": [
+            500297
+          ],
+          "requirements": [
+            [
+              800009,
+              9,
+              0
+            ]
+          ]
+        },
+        {
+          "level": 11,
+          "rank": 0,
+          "sourceRecordId": 500217,
+          "requiredSourceRecordIds": [
+            500339
+          ],
+          "requirements": [
+            [
+              800008,
+              10,
+              0
+            ]
+          ]
+        },
+        {
+          "level": 12,
+          "rank": 0,
+          "sourceRecordId": 500218,
+          "requiredSourceRecordIds": [
+            500796
+          ],
+          "requirements": [
+            [
+              800007,
+              11,
+              0
+            ]
+          ]
+        },
+        {
+          "level": 13,
+          "rank": 0,
+          "sourceRecordId": 500219,
+          "requiredSourceRecordIds": [
+            500300
+          ],
+          "requirements": [
+            [
+              800009,
+              12,
+              0
+            ]
+          ]
+        },
+        {
+          "level": 14,
+          "rank": 0,
+          "sourceRecordId": 500220,
+          "requiredSourceRecordIds": [
+            500342
+          ],
+          "requirements": [
+            [
+              800008,
+              13,
+              0
+            ]
+          ]
+        },
+        {
+          "level": 15,
+          "rank": 0,
+          "sourceRecordId": 500221,
+          "requiredSourceRecordIds": [
+            500799
+          ],
+          "requirements": [
+            [
+              800007,
+              14,
+              0
+            ]
+          ]
+        },
+        {
+          "level": 16,
+          "rank": 0,
+          "sourceRecordId": 500222,
+          "requiredSourceRecordIds": [
+            500303
+          ],
+          "requirements": [
+            [
+              800009,
+              15,
+              0
+            ]
+          ]
+        },
+        {
+          "level": 17,
+          "rank": 0,
+          "sourceRecordId": 500223,
+          "requiredSourceRecordIds": [
+            500345
+          ],
+          "requirements": [
+            [
+              800008,
+              16,
+              0
+            ]
+          ]
+        },
+        {
+          "level": 18,
+          "rank": 0,
+          "sourceRecordId": 500224,
+          "requiredSourceRecordIds": [
+            500802
+          ],
+          "requirements": [
+            [
+              800007,
+              17,
+              0
+            ]
+          ]
+        },
+        {
+          "level": 19,
+          "rank": 0,
+          "sourceRecordId": 500225,
+          "requiredSourceRecordIds": [
+            500306
+          ],
+          "requirements": [
+            [
+              800009,
+              18,
+              0
+            ]
+          ]
+        },
+        {
+          "level": 20,
+          "rank": 0,
+          "sourceRecordId": 500226,
+          "requiredSourceRecordIds": [
+            500348
+          ],
+          "requirements": [
+            [
+              800008,
+              19,
+              0
+            ]
+          ]
+        },
+        {
+          "level": 21,
+          "rank": 0,
+          "sourceRecordId": 500227,
+          "requiredSourceRecordIds": [
+            500805
+          ],
+          "requirements": [
+            [
+              800007,
+              20,
+              0
+            ]
+          ]
+        },
+        {
+          "level": 22,
+          "rank": 0,
+          "sourceRecordId": 500228,
+          "requiredSourceRecordIds": [
+            500309
+          ],
+          "requirements": [
+            [
+              800009,
+              21,
+              0
+            ]
+          ]
+        },
+        {
+          "level": 23,
+          "rank": 0,
+          "sourceRecordId": 500229,
+          "requiredSourceRecordIds": [
+            500351
+          ],
+          "requirements": [
+            [
+              800008,
+              22,
+              0
+            ]
+          ]
+        },
+        {
+          "level": 24,
+          "rank": 0,
+          "sourceRecordId": 500230,
+          "requiredSourceRecordIds": [
+            500808
+          ],
+          "requirements": [
+            [
+              800007,
+              23,
+              0
+            ]
+          ]
+        },
+        {
+          "level": 25,
+          "rank": 0,
+          "sourceRecordId": 500231,
+          "requiredSourceRecordIds": [
+            500312
+          ],
+          "requirements": [
+            [
+              800009,
+              24,
+              0
+            ]
+          ]
+        },
+        {
+          "level": 26,
+          "rank": 0,
+          "sourceRecordId": 500232,
+          "requiredSourceRecordIds": [
+            500354
+          ],
+          "requirements": [
+            [
+              800008,
+              25,
+              0
+            ]
+          ]
+        },
+        {
+          "level": 27,
+          "rank": 0,
+          "sourceRecordId": 500233,
+          "requiredSourceRecordIds": [
+            500811
+          ],
+          "requirements": [
+            [
+              800007,
+              26,
+              0
+            ]
+          ]
+        },
+        {
+          "level": 28,
+          "rank": 0,
+          "sourceRecordId": 500234,
+          "requiredSourceRecordIds": [
+            500315
+          ],
+          "requirements": [
+            [
+              800009,
+              27,
+              0
+            ]
+          ]
+        },
+        {
+          "level": 29,
+          "rank": 0,
+          "sourceRecordId": 500235,
+          "requiredSourceRecordIds": [
+            500357
+          ],
+          "requirements": [
+            [
+              800008,
+              28,
+              0
+            ]
+          ]
+        },
+        {
+          "level": 30,
+          "rank": 1,
+          "sourceRecordId": 500236,
+          "requiredSourceRecordIds": [
+            500814
+          ],
+          "requirements": [
+            [
+              800007,
+              29,
+              0
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "profile": "d",
+      "rows": [
+        {
+          "level": 1,
+          "rank": 0,
+          "sourceRecordId": 500207,
+          "requiredSourceRecordIds": [],
+          "requirements": []
+        },
+        {
+          "level": 2,
+          "rank": 0,
+          "sourceRecordId": 500208,
+          "requiredSourceRecordIds": [
+            502070
+          ],
+          "requirements": [
+            [
+              800110,
+              1,
+              0
+            ]
+          ]
+        },
+        {
+          "level": 3,
+          "rank": 0,
+          "sourceRecordId": 500209,
+          "requiredSourceRecordIds": [
+            500870
+          ],
+          "requirements": [
+            [
+              800003,
+              2,
+              0
+            ]
+          ]
+        },
+        {
+          "level": 4,
+          "rank": 0,
+          "sourceRecordId": 500210,
+          "requiredSourceRecordIds": [
+            500415,
+            500912
+          ],
+          "requirements": [
+            [
+              800001,
+              3,
+              0
+            ],
+            [
+              800030,
+              1,
+              0
+            ]
+          ]
+        },
+        {
+          "level": 5,
+          "rank": 0,
+          "sourceRecordId": 500211,
+          "requiredSourceRecordIds": [
+            500622,
+            502304
+          ],
+          "requirements": [
+            [
+              800002,
+              3,
+              0
+            ],
+            [
+              800150,
+              2,
+              0
+            ]
+          ]
+        },
+        {
+          "level": 6,
+          "rank": 0,
+          "sourceRecordId": 500212,
+          "requiredSourceRecordIds": [
+            500873,
+            502305
+          ],
+          "requirements": [
+            [
+              800003,
+              5,
+              0
+            ],
+            [
+              800150,
+              3,
+              0
+            ]
+          ]
+        },
+        {
+          "level": 7,
+          "rank": 0,
+          "sourceRecordId": 500213,
+          "requiredSourceRecordIds": [
+            500417,
+            500953
+          ],
+          "requirements": [
+            [
+              800001,
+              5,
+              0
+            ],
+            [
+              800031,
+              1,
+              0
+            ]
+          ]
+        },
+        {
+          "level": 8,
+          "rank": 0,
+          "sourceRecordId": 500214,
+          "requiredSourceRecordIds": [
+            502307,
+            500786
+          ],
+          "requirements": [
+            [
+              800150,
+              5,
+              0
+            ],
+            [
+              800007,
+              1,
+              0
+            ]
+          ]
+        },
+        {
+          "level": 9,
+          "rank": 0,
+          "sourceRecordId": 500215,
+          "requiredSourceRecordIds": [
+            502068
+          ],
+          "requirements": [
+            [
+              800109,
+              1,
+              0
+            ]
+          ]
+        },
+        {
+          "level": 10,
+          "rank": 0,
+          "sourceRecordId": 500216,
+          "requiredSourceRecordIds": [
+            500577
+          ],
+          "requirements": [
+            [
+              800010,
+              1,
+              0
+            ]
+          ]
+        },
+        {
+          "level": 11,
+          "rank": 0,
+          "sourceRecordId": 500217,
+          "requiredSourceRecordIds": [
+            500129,
+            500788
+          ],
+          "requirements": [
+            [
+              800012,
+              5,
+              0
+            ],
+            [
+              800007,
+              3,
+              0
+            ]
+          ]
+        },
+        {
+          "level": 12,
+          "rank": 0,
+          "sourceRecordId": 500218,
+          "requiredSourceRecordIds": [
+            500665,
+            500790
+          ],
+          "requirements": [
+            [
+              800016,
+              5,
+              0
+            ],
+            [
+              800007,
+              5,
+              0
+            ]
+          ]
+        },
+        {
+          "level": 13,
+          "rank": 0,
+          "sourceRecordId": 500219,
+          "requiredSourceRecordIds": [
+            500668,
+            500791
+          ],
+          "requirements": [
+            [
+              800016,
+              8,
+              0
+            ],
+            [
+              800007,
+              6,
+              0
+            ]
+          ]
+        },
+        {
+          "level": 14,
+          "rank": 0,
+          "sourceRecordId": 500220,
+          "requiredSourceRecordIds": [
+            500132,
+            500795
+          ],
+          "requirements": [
+            [
+              800012,
+              8,
+              0
+            ],
+            [
+              800007,
+              10,
+              0
+            ]
+          ]
+        },
+        {
+          "level": 15,
+          "rank": 0,
+          "sourceRecordId": 500221,
+          "requiredSourceRecordIds": [
+            500673,
+            500799,
+            500581
+          ],
+          "requirements": [
+            [
+              800016,
+              13,
+              0
+            ],
+            [
+              800007,
+              14,
+              0
+            ],
+            [
+              800010,
+              5,
+              0
+            ]
+          ]
+        },
+        {
+          "level": 16,
+          "rank": 0,
+          "sourceRecordId": 500222,
+          "requiredSourceRecordIds": [
+            500137,
+            500800
+          ],
+          "requirements": [
+            [
+              800012,
+              13,
+              0
+            ],
+            [
+              800007,
+              15,
+              0
+            ]
+          ]
+        },
+        {
+          "level": 17,
+          "rank": 0,
+          "sourceRecordId": 500223,
+          "requiredSourceRecordIds": [
+            500676,
+            500801,
+            500584
+          ],
+          "requirements": [
+            [
+              800016,
+              16,
+              0
+            ],
+            [
+              800007,
+              16,
+              0
+            ],
+            [
+              800010,
+              8,
+              0
+            ]
+          ]
+        },
+        {
+          "level": 18,
+          "rank": 0,
+          "sourceRecordId": 500224,
+          "requiredSourceRecordIds": [
+            500141,
+            502350
+          ],
+          "requirements": [
+            [
+              800012,
+              17,
+              0
+            ],
+            [
+              800152,
+              13,
+              0
+            ]
+          ]
+        },
+        {
+          "level": 19,
+          "rank": 0,
+          "sourceRecordId": 500225,
+          "requiredSourceRecordIds": [
+            500678,
+            500803,
+            500588
+          ],
+          "requirements": [
+            [
+              800016,
+              18,
+              0
+            ],
+            [
+              800007,
+              18,
+              0
+            ],
+            [
+              800010,
+              12,
+              0
+            ]
+          ]
+        },
+        {
+          "level": 20,
+          "rank": 0,
+          "sourceRecordId": 500226,
+          "requiredSourceRecordIds": [
+            500143,
+            502353
+          ],
+          "requirements": [
+            [
+              800012,
+              19,
+              0
+            ],
+            [
+              800152,
+              16,
+              0
+            ]
+          ]
+        },
+        {
+          "level": 21,
+          "rank": 0,
+          "sourceRecordId": 500227,
+          "requiredSourceRecordIds": [
+            500680,
+            500805,
+            500591
+          ],
+          "requirements": [
+            [
+              800016,
+              20,
+              0
+            ],
+            [
+              800007,
+              20,
+              0
+            ],
+            [
+              800010,
+              15,
+              0
+            ]
+          ]
+        },
+        {
+          "level": 22,
+          "rank": 0,
+          "sourceRecordId": 500228,
+          "requiredSourceRecordIds": [
+            500145,
+            502223
+          ],
+          "requirements": [
+            [
+              800012,
+              21,
+              0
+            ],
+            [
+              800147,
+              14,
+              0
+            ]
+          ]
+        },
+        {
+          "level": 23,
+          "rank": 0,
+          "sourceRecordId": 500229,
+          "requiredSourceRecordIds": [
+            500682,
+            500807,
+            500594
+          ],
+          "requirements": [
+            [
+              800016,
+              22,
+              0
+            ],
+            [
+              800007,
+              22,
+              0
+            ],
+            [
+              800010,
+              18,
+              0
+            ]
+          ]
+        },
+        {
+          "level": 24,
+          "rank": 0,
+          "sourceRecordId": 500230,
+          "requiredSourceRecordIds": [
+            500147,
+            502193
+          ],
+          "requirements": [
+            [
+              800012,
+              23,
+              0
+            ],
+            [
+              800142,
+              18,
+              0
+            ]
+          ]
+        },
+        {
+          "level": 25,
+          "rank": 0,
+          "sourceRecordId": 500231,
+          "requiredSourceRecordIds": [
+            500684,
+            500809,
+            500596
+          ],
+          "requirements": [
+            [
+              800016,
+              24,
+              0
+            ],
+            [
+              800007,
+              24,
+              0
+            ],
+            [
+              800010,
+              20,
+              0
+            ]
+          ]
+        },
+        {
+          "level": 26,
+          "rank": 0,
+          "sourceRecordId": 500232,
+          "requiredSourceRecordIds": [
+            500149,
+            502260
+          ],
+          "requirements": [
+            [
+              800012,
+              25,
+              0
+            ],
+            [
+              800148,
+              20,
+              0
+            ]
+          ]
+        },
+        {
+          "level": 27,
+          "rank": 0,
+          "sourceRecordId": 500233,
+          "requiredSourceRecordIds": [
+            500686,
+            500811,
+            500598
+          ],
+          "requirements": [
+            [
+              800016,
+              26,
+              0
+            ],
+            [
+              800007,
+              26,
+              0
+            ],
+            [
+              800010,
+              22,
+              0
+            ]
+          ]
+        },
+        {
+          "level": 28,
+          "rank": 0,
+          "sourceRecordId": 500234,
+          "requiredSourceRecordIds": [
+            500151,
+            502294
+          ],
+          "requirements": [
+            [
+              800012,
+              27,
+              0
+            ],
+            [
+              800149,
+              23,
+              0
+            ]
+          ]
+        },
+        {
+          "level": 29,
+          "rank": 0,
+          "sourceRecordId": 500235,
+          "requiredSourceRecordIds": [
+            500688,
+            500813,
+            502264
+          ],
+          "requirements": [
+            [
+              800016,
+              28,
+              0
+            ],
+            [
+              800007,
+              28,
+              0
+            ],
+            [
+              800148,
+              24,
+              0
+            ]
+          ]
+        },
+        {
+          "level": 30,
+          "rank": 1,
+          "sourceRecordId": 500236,
+          "requiredSourceRecordIds": [
+            500153,
+            500814,
+            502235
+          ],
+          "requirements": [
+            [
+              800012,
+              29,
+              0
+            ],
+            [
+              800007,
+              29,
+              0
+            ],
+            [
+              800147,
+              26,
+              0
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "nativeConsumer": {
+    "sourcePins": [
+      {
+        "role": "validated inflated native payload",
+        "sha256": "2fcc416180a33b465b030ac0b4517a6279f6206cf7938782d9cee48042a1a8bf"
+      },
+      {
+        "role": "native descriptor payload",
+        "sha256": "f30fbc1f966a1b39723f0adce76d236c7272437b99ea562e260d438abcc80ccd"
+      },
+      {
+        "role": "IL2CPP metadata",
+        "sha256": "f67be9691056ab38415f2f7f9752f8023d5021bf99747bff854c4f60b6b8f11b"
+      }
+    ],
+    "methods": [
+      {
+        "methodIndex": 25687,
+        "class": "BuildingsModule",
+        "method": "AnyBuildingsReachedLevel",
+        "address": "0x6bb8a78",
+        "nativeWindowSha256": "268d7897a6d07304df0b15587b20c1d9e01c14d7b8edfc2ee40b3453ca1b23e8",
+        "windowSizeUpperBound": 404
+      },
+      {
+        "methodIndex": 25689,
+        "class": "BuildingsModule",
+        "method": "IsBuildingUnlock",
+        "address": "0x6bb8d4c",
+        "nativeWindowSha256": "bbd0a0b6b6371c5fa8443579a24a2e8d2714d944584b21920179bb2fa886819e",
+        "windowSizeUpperBound": 228
+      },
+      {
+        "methodIndex": 25690,
+        "class": "BuildingsModule",
+        "method": "UpGradeAllConditionEnough",
+        "address": "0x6bb8f68",
+        "nativeWindowSha256": "83dc393fab8c7d05787ba7e4e6c571ef941b692f39d49d68352ae863e4b0775a",
+        "windowSizeUpperBound": 420
+      },
+      {
+        "methodIndex": 25691,
+        "class": "BuildingsModule",
+        "method": "UpGradePreConditionsEnough",
+        "address": "0x6bb8e30",
+        "nativeWindowSha256": "7f9d06b6e142f86666f7b52d05dbc4172d0243a7b67cac91161d0308616772f9",
+        "windowSizeUpperBound": 312
+      },
+      {
+        "methodIndex": 25692,
+        "class": "BuildingsModule",
+        "method": "UpGradeReqBuildingEnough",
+        "address": "0x6bb9770",
+        "nativeWindowSha256": "c1762dc5ddb9d13fe970bd6e4f31266e6211269bb62f467b1f84063a94816f97",
+        "windowSizeUpperBound": 560
+      },
+      {
+        "methodIndex": 25693,
+        "class": "BuildingsModule",
+        "method": "UpGradeResearchesEnough",
+        "address": "0x6bb910c",
+        "nativeWindowSha256": "88635f852635f91d4eca020fa3864863248bd8e6b2027e2ba67c261bcbbd4ee1",
+        "windowSizeUpperBound": 444
+      },
+      {
+        "methodIndex": 25694,
+        "class": "BuildingsModule",
+        "method": "UpGradeIapItemsEnough",
+        "address": "0x6bb92c8",
+        "nativeWindowSha256": "0f42ca24386d88ffd69ee8f841a28a98d8454574d8fd31f52093aee997cd71fc",
+        "windowSizeUpperBound": 468
+      },
+      {
+        "methodIndex": 25695,
+        "class": "BuildingsModule",
+        "method": "UpGradeShopItemsEnough",
+        "address": "0x6bb949c",
+        "nativeWindowSha256": "0a188d2ae7155d4e53114aceb174cebce043518898825c77b87741dde9e770ec",
+        "windowSizeUpperBound": 596
+      },
+      {
+        "methodIndex": 25697,
+        "class": "BuildingsModule",
+        "method": "UpGradeProsperityEnough",
+        "address": "0x6bb96f0",
+        "nativeWindowSha256": "2045110c7c2daf453f2dc7cd701c9c3020d4b11604bb4ed9e16296d69c7b14d1",
+        "windowSizeUpperBound": 128
+      },
+      {
+        "methodIndex": 25761,
+        "class": "BuildingsModule",
+        "method": "IsBuildingReachLevel",
+        "address": "0x6bc30a8",
+        "nativeWindowSha256": "71ebaac30a7518299c010ff9c3eafb53ce7807f4db84f1585146fa32dd7c38bc",
+        "windowSizeUpperBound": 360
+      },
+      {
+        "methodIndex": 25762,
+        "class": "BuildingsModule",
+        "method": "IsBuildingReachLevel",
+        "address": "0x6bc32a4",
+        "nativeWindowSha256": "3f7822a02a482ca61c889478dfb39c2b104d75e142b4fe831711024511015afa",
+        "windowSizeUpperBound": 220
+      },
+      {
+        "methodIndex": 25763,
+        "class": "BuildingsModule",
+        "method": "IsBuildingReachLevel",
+        "address": "0x6bc3210",
+        "nativeWindowSha256": "21afc5adbec3956e8d4a0d89e631d9401ed611fdfdb18e8f10316396f3e97fff",
+        "windowSizeUpperBound": 148
+      },
+      {
+        "methodIndex": 25770,
+        "class": "BuildingsModule",
+        "method": "IsBuildingCanShow",
+        "address": "0x6bc5140",
+        "nativeWindowSha256": "8db6cf06d1fd24aa2bfad381cb36aa28268899dfc7d5646081c05cb82b178223",
+        "windowSizeUpperBound": 924
+      },
+      {
+        "methodIndex": 25771,
+        "class": "BuildingsModule",
+        "method": "IsBuildingCanShow",
+        "address": "0x6bc54dc",
+        "nativeWindowSha256": "cedfd002d961f37af709301a291a3a61ea69f3ca47706805b166f2a67f4db9d3",
+        "windowSizeUpperBound": 532
+      },
+      {
+        "methodIndex": 25772,
+        "class": "BuildingsModule",
+        "method": "GetBuildingShowCondition",
+        "address": "0x6bc0ec8",
+        "nativeWindowSha256": "b9007b213ff38128eeba8d30071b6b5dcbfd483ba13687034ef61131f0627771",
+        "windowSizeUpperBound": 2056
+      },
+      {
+        "methodIndex": 25783,
+        "class": "BuildingsModule",
+        "method": "GetBuildingUnlockFurnitures",
+        "address": "0x6bc7d70",
+        "nativeWindowSha256": "d70c4aa636f4e30428d18577182adb14c99fdb352dd0b0326723807e7177defb",
+        "windowSizeUpperBound": 956
+      },
+      {
+        "methodIndex": 25815,
+        "class": "<>c__DisplayClass26_0",
+        "method": "<AnyBuildingsReachedLevel>b__0",
+        "address": "0x6bc9810",
+        "nativeWindowSha256": "691021863ab790a2420a15a1ee719f803ecf8fe503912a4eb9f9041bad743af7",
+        "windowSizeUpperBound": 36
+      },
+      {
+        "methodIndex": 31739,
+        "class": "GuideBuildingElement",
+        "method": "HasUpgradeAllBuildingConditionFurnitures",
+        "address": "0x41297b4",
+        "nativeWindowSha256": "d976b660a247c664e48f1a5d56acfcdac406d3c40281e46b1912daa3455d5672",
+        "windowSizeUpperBound": 480
+      },
+      {
+        "methodIndex": 58736,
+        "class": "Building3DSelectUIMediator",
+        "method": "CheckCondition",
+        "address": "0x498bc24",
+        "nativeWindowSha256": "b47d0ae24579027572c7fcb474cd190e80748afa81c7f29862d9e429e82a1d76",
+        "windowSizeUpperBound": 360
+      },
+      {
+        "methodIndex": 75277,
+        "class": "BuildingsConfig",
+        "method": "GetBuildSlotSoc",
+        "address": "0x4dcc8cc",
+        "nativeWindowSha256": "cffe61521cca0af224f62780039ec35d3ca78f227b6ade0b6823468b9953c1ee",
+        "windowSizeUpperBound": 564
+      },
+      {
+        "methodIndex": 75308,
+        "class": "BuildingsConfigCell",
+        "method": "get_RequireBuildings",
+        "address": "0x4dce3b8",
+        "nativeWindowSha256": "64995ff1502e5f5ab3a01f64a90b6010a96e7461480a95d1ab3f2fb8eadf3a65",
+        "windowSizeUpperBound": 164
+      },
+      {
+        "methodIndex": 75309,
+        "class": "BuildingsConfigCell",
+        "method": "get_RequireResearchs",
+        "address": "0x4dce370",
+        "nativeWindowSha256": "3beea5361404fb403b40fee003966a70f474347ebbf7efc9011d71f45aefe9f5",
+        "windowSizeUpperBound": 72
+      },
+      {
+        "methodIndex": 75310,
+        "class": "BuildingsConfigCell",
+        "method": "get_RequireShopItems",
+        "address": "0x4dce45c",
+        "nativeWindowSha256": "13c6051bb2d8605630b766cd2d6a393eaa1137cedcd263eaf1abdbb445cd1ea1",
+        "windowSizeUpperBound": 72
+      },
+      {
+        "methodIndex": 75311,
+        "class": "BuildingsConfigCell",
+        "method": "get_RequireItemsAll",
+        "address": "0x4dce4a4",
+        "nativeWindowSha256": "fc72eea1a7b601b4e42cffdfd3ee756ff7c058f4e526eadcc191891bccb3b5c9",
+        "windowSizeUpperBound": 228
+      },
+      {
+        "methodIndex": 75312,
+        "class": "BuildingsConfigCell",
+        "method": "get_RequireItems",
+        "address": "0x4dce588",
+        "nativeWindowSha256": "1ba0c748b1c0f2a025d1c5ee1e602264d05e59addd713be68d8c6da7a16af71b",
+        "windowSizeUpperBound": 72
+      },
+      {
+        "methodIndex": 75323,
+        "class": "BuildingsConfigCell",
+        "method": "get_StrongHoldLockLevel",
+        "address": "0x4dcee58",
+        "nativeWindowSha256": "b9720c7907ac21bb80336750cc23e90dd8ae3526b92b5720f8ae98f0e7704df8",
+        "windowSizeUpperBound": 600
+      },
+      {
+        "methodIndex": 75331,
+        "class": "BuildingsConfigCell",
+        "method": "get_CheckBuildingConditions",
+        "address": "0x4dcfd14",
+        "nativeWindowSha256": "44b56e689683da74977a59c8ead6f0ef9feaec5a39799c1d5a263ee808677452",
+        "windowSizeUpperBound": 372
+      },
+      {
+        "methodIndex": 75336,
+        "class": "BuildingsConfigCell",
+        "method": "CheckReqComponentsConditions",
+        "address": "0x4dd0514",
+        "nativeWindowSha256": "0ddfde1020d0a0118b07b2ab1ffc870017a9410cdd3727c11591627d3acc8d9a",
+        "windowSizeUpperBound": 380
+      },
+      {
+        "methodIndex": 75478,
+        "class": "BuildingTypeConfigCell",
+        "method": "get_BuildingGroundUnlockConditionReal",
+        "address": "0x4dd8a38",
+        "nativeWindowSha256": "e219f17bf5fd4d27388183cb837ec7fb1866094846984f3571a9191c885cc109",
+        "windowSizeUpperBound": 236
+      }
+    ],
+    "instructionAssertions": [
+      {
+        "methodIndex": 75308,
+        "address": "0x4dce438",
+        "mnemonic": "cmp",
+        "operands": "w0, #1"
+      },
+      {
+        "methodIndex": 75308,
+        "address": "0x4dce440",
+        "mnemonic": "ldr",
+        "operands": "x0, [x19, #0x30]"
+      },
+      {
+        "methodIndex": 75308,
+        "address": "0x4dce448",
+        "mnemonic": "ldr",
+        "operands": "x0, [x19, #0x158]"
+      },
+      {
+        "methodIndex": 75331,
+        "address": "0x4dcfe58",
+        "mnemonic": "and",
+        "operands": "w22, w22, w0"
+      },
+      {
+        "methodIndex": 75331,
+        "address": "0x4dcfe5c",
+        "mnemonic": "b.ne",
+        "operands": "#0x4dcfdec"
+      },
+      {
+        "methodIndex": 25692,
+        "address": "0x6bb98b4",
+        "mnemonic": "tbnz",
+        "operands": "w0, #0, #0x6bb9864"
+      },
+      {
+        "methodIndex": 25692,
+        "address": "0x6bb98e4",
+        "mnemonic": "cset",
+        "operands": "w0, ne"
+      },
+      {
+        "methodIndex": 25815,
+        "address": "0x6bc9824",
+        "mnemonic": "cset",
+        "operands": "w0, ge"
+      }
+    ],
+    "decodedSelectorLiterals": [
+      {
+        "pointerAddress": "0x99c7390",
+        "value": "building"
+      },
+      {
+        "pointerAddress": "0x99d72a8",
+        "value": "new_user_experience"
+      },
+      {
+        "pointerAddress": "0x99c6e18",
+        "value": "a"
+      },
+      {
+        "pointerAddress": "0x99c6e20",
+        "value": "b"
+      }
+    ],
+    "semantics": {
+      "profileSelector": "PlayerModule.GetFunctionAB(\"building\") == 1 selects full ReqBuilding list; all other values select full ReqBuildingD list. ReqBuildingB is not selected by this consumer.",
+      "combination": "AND across all selected list entries, demonstrated both by boolean accumulator in get_CheckBuildingConditions and fail-fast full-list enumeration in UpGradeReqBuildingEnough.",
+      "threshold": "Each entry is resolved to Building Type and Level. Any retained city-tile instance for that type with current level >= target level satisfies that individual entry.",
+      "rank": "Target record rank is preserved in the audit/model identity; reviewed native predicate passes Type and Level, not rank as a separate argument.",
+      "nullList": "UpGradePreConditionsEnough and UpGradeReqBuildingEnough return true for null prerequisite list; this does not bypass distinct feature/mission/item/visibility gates.",
+      "liveScope": "Static retained client cohort only. No current server/account assignment, future hotfix, or full live unlock eligibility is established."
+    },
+    "retainedPatchLedgersChecked": 63,
+    "matchingRetainedPatches": [],
+    "targetCodeExecuted": false
+  },
+  "nameIdentityAudit": {
+    "buildingTypeNameField": "BuildingName",
+    "registeredIds": 29,
+    "unlinkedReferencedIds": 4,
+    "languages": [
+      "ko",
+      "en",
+      "ja",
+      "ru",
+      "zh-tw",
+      "de"
+    ],
+    "edgeOccurrencesCompared": 1562,
+    "mismatches": 0,
+    "unlinkedIdentities": [
+      {
+        "buildingId": 800030,
+        "nameKey": "building_hero_center",
+        "names": {
+          "ko": "영웅 지구",
+          "en": "Hero Precinct",
+          "ja": "英雄管区",
+          "ru": "База героев",
+          "zh-tw": "英雄中心",
+          "de": "Heldenbereich"
+        }
+      },
+      {
+        "buildingId": 800031,
+        "nameKey": "building_intel_post",
+        "names": {
+          "ko": "첩보 초소",
+          "en": "Intel Post",
+          "ja": "偵察所",
+          "ru": "Пост разведки",
+          "zh-tw": "情報站",
+          "de": "Spionageposten"
+        }
+      },
+      {
+        "buildingId": 800052,
+        "nameKey": "building_behemoth_title",
+        "names": {
+          "ko": "베헤모스 연구실",
+          "en": "Behemoth Institute",
+          "ja": "巨獣研究室",
+          "ru": "Институт титана",
+          "zh-tw": "巨獸研究室",
+          "de": "Ungeheuer-Institut"
+        }
+      },
+      {
+        "buildingId": 800109,
+        "nameKey": "coal_mine_name",
+        "names": {
+          "ko": "탄광",
+          "en": "Coal Mine",
+          "ja": "炭鉱",
+          "ru": "Угольная шахта",
+          "zh-tw": "煤礦",
+          "de": "Steinkohlemine"
+        }
+      }
+    ]
+  },
+  "separateConditions": {
+    "reviewedSelectedRecordCount": 761,
+    "zeroOrNullFields": [
+      "City40TimeLimit",
+      "CustomUpgrade",
+      "ProfessionConfig",
+      "ProsperityReq",
+      "ReqBuildingDescription",
+      "ReqComponentId",
+      "ReqDungeon",
+      "ReqItem",
+      "ReqResearch",
+      "ReqShop",
+      "ReqVip",
+      "ServerEventOpenTime",
+      "UnlockBuildingsStar"
+    ],
+    "constructionItems": {
+      "field": "ReqItemSoc",
+      "sourceRows": 10,
+      "kind": "item quantities, not additional building references",
+      "rows": [
+        {
+          "buildingId": 800007,
+          "level": 1,
+          "sourceRecordId": 500786,
+          "items": [
+            {
+              "key": 208846,
+              "value": 1
+            }
+          ]
+        },
+        {
+          "buildingId": 800008,
+          "level": 1,
+          "sourceRecordId": 500330,
+          "items": [
+            {
+              "key": 208847,
+              "value": 1
+            }
+          ]
+        },
+        {
+          "buildingId": 800009,
+          "level": 1,
+          "sourceRecordId": 500289,
+          "items": [
+            {
+              "key": 208848,
+              "value": 1
+            }
+          ]
+        },
+        {
+          "buildingId": 800010,
+          "level": 1,
+          "sourceRecordId": 500577,
+          "items": [
+            {
+              "key": 208821,
+              "value": 1
+            }
+          ]
+        },
+        {
+          "buildingId": 800012,
+          "level": 1,
+          "sourceRecordId": 500125,
+          "items": [
+            {
+              "key": 208822,
+              "value": 1
+            }
+          ]
+        },
+        {
+          "buildingId": 800016,
+          "level": 1,
+          "sourceRecordId": 500661,
+          "items": [
+            {
+              "key": 208823,
+              "value": 1
+            }
+          ]
+        },
+        {
+          "buildingId": 800152,
+          "level": 1,
+          "sourceRecordId": 502336,
+          "items": [
+            {
+              "key": 208824,
+              "value": 1
+            }
+          ]
+        },
+        {
+          "buildingId": 800150,
+          "level": 1,
+          "sourceRecordId": 502303,
+          "items": [
+            {
+              "key": 208817,
+              "value": 1
+            }
+          ]
+        },
+        {
+          "buildingId": 800168,
+          "level": 1,
+          "sourceRecordId": 502388,
+          "items": [
+            {
+              "key": 208590,
+              "value": 1
+            }
+          ]
+        },
+        {
+          "buildingId": 800032,
+          "level": 1,
+          "sourceRecordId": 500995,
+          "items": [
+            {
+              "key": 208826,
+              "value": 1
+            }
+          ]
+        }
+      ]
+    },
+    "populationSlots": {
+      "field": "BuildSlotSoc",
+      "sourceRows": 130,
+      "kind": "population/work-slot capacity consumed by population allocation and restaurant modules; not a Buildings reference"
+    },
+    "featureGates": {
+      "field": "FunctionOpen",
+      "sourceRows": 2,
+      "kind": "separate initial feature availability, not a Buildings prerequisite",
+      "rows": [
+        {
+          "buildingId": 800004,
+          "level": 1,
+          "sourceRecordId": 500536,
+          "value": "build_sandbox_mode_unlock_b"
+        },
+        {
+          "buildingId": 800168,
+          "level": 1,
+          "sourceRecordId": 502388,
+          "value": "extra_research_queue"
+        }
+      ]
+    },
+    "groundUnlockAndVisibility": {
+      "selector": "BuildingGroundUnlockConditionReal uses independent new_user_experience a/b assignment, not GetFunctionAB(\"building\").",
+      "powerPlantGroundUnlockCondition": null,
+      "rows": [
+        {
+          "buildingId": 800007,
+          "slug": "barracks",
+          "values": {
+            "BuildingGroundUnlockCondition": "pre_mission|26520023",
+            "BuildingGroundUnlockConditionA": "pre_mission|26520023",
+            "BuildingGroundUnlockConditionB": "pre_mission|26520023"
+          }
+        },
+        {
+          "buildingId": 800008,
+          "slug": "barracks",
+          "values": {
+            "BuildingGroundUnlockCondition": "pre_mission|26520029",
+            "BuildingGroundUnlockConditionA": "pre_mission|26520029",
+            "BuildingGroundUnlockConditionB": "pre_mission|26520029",
+            "BubbleRequireMission": {
+              "internalId": 130602900,
+              "referenceClass": "NewPeriodMission",
+              "referenceTag": 0
+            }
+          }
+        },
+        {
+          "buildingId": 800009,
+          "slug": "barracks",
+          "values": {
+            "BuildingGroundUnlockCondition": "pre_mission|26520029",
+            "BuildingGroundUnlockConditionA": "pre_mission|26520029",
+            "BuildingGroundUnlockConditionB": "pre_mission|26520029",
+            "BubbleRequireMission": {
+              "internalId": 130602904,
+              "referenceClass": "NewPeriodMission",
+              "referenceTag": 0
+            }
+          }
+        },
+        {
+          "buildingId": 800142,
+          "slug": "hero-academy",
+          "values": {
+            "BuildingGroundUnlockCondition": "building_level|stronghold|20",
+            "BuildingGroundUnlockConditionA": "building_level|stronghold|20",
+            "BuildingGroundUnlockConditionB": "building_level|stronghold|20"
+          }
+        },
+        {
+          "buildingId": 800147,
+          "slug": "warbringer-monument",
+          "values": {
+            "BuildingGroundUnlockCondition": "building_level|stronghold|14",
+            "BuildingGroundUnlockConditionA": "building_level|stronghold|14",
+            "BuildingGroundUnlockConditionB": "building_level|stronghold|14"
+          }
+        },
+        {
+          "buildingId": 800148,
+          "slug": "aegis-monument",
+          "values": {
+            "BuildingGroundUnlockCondition": "building_level|stronghold|17",
+            "BuildingGroundUnlockConditionA": "building_level|stronghold|17",
+            "BuildingGroundUnlockConditionB": "building_level|stronghold|17"
+          }
+        },
+        {
+          "buildingId": 800149,
+          "slug": "guardian-of-life-monument",
+          "values": {
+            "BuildingGroundUnlockCondition": "building_level|stronghold|18",
+            "BuildingGroundUnlockConditionA": "building_level|stronghold|18",
+            "BuildingGroundUnlockConditionB": "building_level|stronghold|18"
+          }
+        },
+        {
+          "buildingId": 800216,
+          "slug": "cursed-wound-stele",
+          "values": {
+            "BuildingGroundUnlockCondition": "building_level|stronghold|30",
+            "BuildingGroundUnlockConditionA": "building_level|stronghold|30",
+            "BuildingGroundUnlockConditionB": "building_level|stronghold|30"
+          }
+        },
+        {
+          "buildingId": 800217,
+          "slug": "blessed-healing-stele",
+          "values": {
+            "BuildingGroundUnlockCondition": "building_level|stronghold|30",
+            "BuildingGroundUnlockConditionA": "building_level|stronghold|30",
+            "BuildingGroundUnlockConditionB": "building_level|stronghold|30"
+          }
+        },
+        {
+          "buildingId": 800010,
+          "slug": "hospital",
+          "values": {
+            "BuildingGroundUnlockCondition": "pre_mission|26520022",
+            "BuildingGroundUnlockConditionA": "pre_mission|26520022",
+            "BuildingGroundUnlockConditionB": "pre_mission|26520022"
+          }
+        },
+        {
+          "buildingId": 800012,
+          "slug": "lab",
+          "values": {
+            "BuildingGroundUnlockCondition": "pre_mission|26520031",
+            "BuildingGroundUnlockConditionA": "pre_mission|26520031",
+            "BuildingGroundUnlockConditionB": "pre_mission|26520031"
+          }
+        },
+        {
+          "buildingId": 800016,
+          "slug": "comms-outpost",
+          "values": {
+            "BuildingGroundUnlockCondition": "pre_mission|26520030",
+            "BuildingGroundUnlockConditionA": "pre_mission|26520030",
+            "BuildingGroundUnlockConditionB": "pre_mission|26520030"
+          }
+        },
+        {
+          "buildingId": 800152,
+          "slug": "garrison-station",
+          "values": {
+            "BuildingGroundUnlockCondition": "pre_mission|26520029",
+            "BuildingGroundUnlockConditionA": "pre_mission|26520029",
+            "BuildingGroundUnlockConditionB": "pre_mission|26520029",
+            "BubbleRequireMission": {
+              "internalId": 130602893,
+              "referenceClass": "NewPeriodMission",
+              "referenceTag": 0
+            }
+          }
+        },
+        {
+          "buildingId": 800001,
+          "slug": "greenhouse",
+          "values": {
+            "BuildingGroundUnlockCondition": "pre_mission|31000290",
+            "BuildingGroundUnlockConditionA": "pre_mission|36000150",
+            "BuildingGroundUnlockConditionB": "pre_mission|25501055",
+            "BubbleRequireMission": {
+              "internalId": 130603139,
+              "referenceClass": "NewPeriodMission",
+              "referenceTag": 0
+            }
+          }
+        },
+        {
+          "buildingId": 800002,
+          "slug": "smelter",
+          "values": {
+            "BuildingGroundUnlockCondition": "pre_mission|26520008",
+            "BuildingGroundUnlockConditionA": "pre_mission|26520008",
+            "BuildingGroundUnlockConditionB": "pre_mission|26520008"
+          }
+        },
+        {
+          "buildingId": 800003,
+          "slug": "lumberyard",
+          "values": {
+            "BuildingGroundUnlockCondition": "pre_mission|26520001",
+            "BuildingGroundUnlockConditionA": "pre_mission|26520001",
+            "BuildingGroundUnlockConditionB": "pre_mission|26520001",
+            "BubbleRequireMission": {
+              "internalId": 130602803,
+              "referenceClass": "NewPeriodMission",
+              "referenceTag": 0
+            }
+          }
+        },
+        {
+          "buildingId": 800004,
+          "slug": "refinery",
+          "values": {
+            "BuildingGroundUnlockCondition": "building_level|stronghold|11",
+            "BuildingGroundUnlockConditionA": "building_level|stronghold|11",
+            "BuildingGroundUnlockConditionB": "building_level|stronghold|11"
+          }
+        },
+        {
+          "buildingId": 800106,
+          "slug": "kitchen",
+          "values": {
+            "BuildingGroundUnlockCondition": "building_level|stronghold|1",
+            "BuildingGroundUnlockConditionA": "building_level|stronghold|1",
+            "BuildingGroundUnlockConditionB": "building_level|stronghold|1"
+          }
+        },
+        {
+          "buildingId": 800110,
+          "slug": "houses",
+          "values": {
+            "BuildingGroundUnlockCondition": "pre_mission|26500010",
+            "BuildingGroundUnlockConditionA": "building_level|stronghold|1",
+            "BuildingGroundUnlockConditionB": "building_level|stronghold|1",
+            "BubbleRequireMission": {
+              "internalId": 130603127,
+              "referenceClass": "NewPeriodMission",
+              "referenceTag": 0
+            }
+          }
+        },
+        {
+          "buildingId": 800111,
+          "slug": "houses",
+          "values": {
+            "BuildingGroundUnlockCondition": "pre_mission|31000290",
+            "BuildingGroundUnlockConditionA": "pre_mission|36000150",
+            "BuildingGroundUnlockConditionB": "pre_mission|25501060"
+          }
+        },
+        {
+          "buildingId": 800112,
+          "slug": "houses",
+          "values": {
+            "BuildingGroundUnlockCondition": "pre_mission|26504000",
+            "BuildingGroundUnlockConditionA": "pre_mission|26504000",
+            "BuildingGroundUnlockConditionB": "pre_mission|25504000"
+          }
+        },
+        {
+          "buildingId": 800113,
+          "slug": "houses",
+          "values": {
+            "BuildingGroundUnlockCondition": "pre_mission|26505170",
+            "BuildingGroundUnlockConditionA": "pre_mission|26505170",
+            "BuildingGroundUnlockConditionB": "pre_mission|25505130"
+          }
+        },
+        {
+          "buildingId": 800114,
+          "slug": "houses",
+          "values": {
+            "BuildingGroundUnlockCondition": "pre_mission|26506090",
+            "BuildingGroundUnlockConditionA": "pre_mission|26506090",
+            "BuildingGroundUnlockConditionB": "pre_mission|25506170"
+          }
+        },
+        {
+          "buildingId": 800115,
+          "slug": "houses",
+          "values": {
+            "BuildingGroundUnlockCondition": "pre_mission|26507050",
+            "BuildingGroundUnlockConditionA": "pre_mission|26507050",
+            "BuildingGroundUnlockConditionB": "pre_mission|25507090"
+          }
+        },
+        {
+          "buildingId": 800150,
+          "slug": "artifact-workshop",
+          "values": {
+            "BuildingGroundUnlockCondition": "pre_mission|26520015",
+            "BuildingGroundUnlockConditionA": "pre_mission|26520015",
+            "BuildingGroundUnlockConditionB": "pre_mission|26520015"
+          }
+        },
+        {
+          "buildingId": 800168,
+          "slug": "lab-2",
+          "values": {
+            "BuildingGroundUnlockCondition": "building_level|stronghold|15,server_opendays|15",
+            "BuildingGroundUnlockConditionA": "building_level|stronghold|15,server_opendays|15",
+            "BuildingGroundUnlockConditionB": "building_level|stronghold|15,server_opendays|15",
+            "InitialLevelFunctionOpen": 1
+          }
+        },
+        {
+          "buildingId": 800032,
+          "slug": "enlistment-office",
+          "values": {
+            "BuildingGroundUnlockCondition": "pre_mission|26520029",
+            "BuildingGroundUnlockConditionA": "pre_mission|26520029",
+            "BuildingGroundUnlockConditionB": "pre_mission|26520029",
+            "BubbleRequireMission": {
+              "internalId": 130602902,
+              "referenceClass": "NewPeriodMission",
+              "referenceTag": 0
+            }
+          }
+        }
+      ]
+    },
+    "initialGradePath": {
+      "table": "BuildingsGrade",
+      "sourceRecordIds": [
+        177800001,
+        177800004
+      ],
+      "matchedBuildingsRecordIds": [
+        500206,
+        500207
+      ],
+      "kind": "separate Power Plant grade/initial level-0-to-1 path; its ReqBuildingD references BuildingsGrade, not Buildings. Not appended to normal level upgrade requirements."
+    },
+    "furnitureProgress": {
+      "table": "BuildingFurnitureType",
+      "field": "BuildingUpCondition",
+      "kind": "separate furniture progression helper; marked furniture levels feed GetBuildingFurnitureProgress and HasUpgradeAllBuildingConditionFurnitures. Not additional named-building references. Full live upgrade gating applicability is not established.",
+      "types": [
+        {
+          "sourceRecordId": 152800001,
+          "buildingId": 800001,
+          "id": "material_plant_work_1"
+        },
+        {
+          "sourceRecordId": 152800006,
+          "buildingId": 800001,
+          "id": "material_plant_decoration_1"
+        },
+        {
+          "sourceRecordId": 152800002,
+          "buildingId": 800001,
+          "id": "material_plant_work_2"
+        },
+        {
+          "sourceRecordId": 152800007,
+          "buildingId": 800001,
+          "id": "material_plant_decoration_2"
+        },
+        {
+          "sourceRecordId": 152800003,
+          "buildingId": 800001,
+          "id": "material_plant_work_3"
+        },
+        {
+          "sourceRecordId": 152800004,
+          "buildingId": 800001,
+          "id": "material_plant_work_4"
+        },
+        {
+          "sourceRecordId": 152800012,
+          "buildingId": 800002,
+          "id": "energy_plant_work_1"
+        },
+        {
+          "sourceRecordId": 152800017,
+          "buildingId": 800002,
+          "id": "energy_plant_decoration_1"
+        },
+        {
+          "sourceRecordId": 152800013,
+          "buildingId": 800002,
+          "id": "energy_plant_work_2"
+        },
+        {
+          "sourceRecordId": 152800018,
+          "buildingId": 800002,
+          "id": "energy_plant_decoration_2"
+        },
+        {
+          "sourceRecordId": 152800014,
+          "buildingId": 800002,
+          "id": "energy_plant_work_3"
+        },
+        {
+          "sourceRecordId": 152800015,
+          "buildingId": 800002,
+          "id": "energy_plant_work_4"
+        },
+        {
+          "sourceRecordId": 152800023,
+          "buildingId": 800003,
+          "id": "ammo_plant_work_1"
+        },
+        {
+          "sourceRecordId": 152800028,
+          "buildingId": 800003,
+          "id": "ammo_plant_decoration_1"
+        },
+        {
+          "sourceRecordId": 152800024,
+          "buildingId": 800003,
+          "id": "ammo_plant_work_2"
+        },
+        {
+          "sourceRecordId": 152800029,
+          "buildingId": 800003,
+          "id": "ammo_plant_decoration_2"
+        },
+        {
+          "sourceRecordId": 152800025,
+          "buildingId": 800003,
+          "id": "ammo_plant_work_3"
+        },
+        {
+          "sourceRecordId": 152800026,
+          "buildingId": 800003,
+          "id": "ammo_plant_work_4"
+        },
+        {
+          "sourceRecordId": 152800034,
+          "buildingId": 800004,
+          "id": "house_work_1"
+        },
+        {
+          "sourceRecordId": 152800039,
+          "buildingId": 800004,
+          "id": "house_decoration_1"
+        },
+        {
+          "sourceRecordId": 152800035,
+          "buildingId": 800004,
+          "id": "house_work_2"
+        },
+        {
+          "sourceRecordId": 152800040,
+          "buildingId": 800004,
+          "id": "house_decoration_2"
+        },
+        {
+          "sourceRecordId": 152800036,
+          "buildingId": 800004,
+          "id": "house_work_3"
+        },
+        {
+          "sourceRecordId": 152800037,
+          "buildingId": 800004,
+          "id": "house_work_4"
+        },
+        {
+          "sourceRecordId": 152800069,
+          "buildingId": 800106,
+          "id": "restaurant_cooking_station_1"
+        },
+        {
+          "sourceRecordId": 152800045,
+          "buildingId": 800106,
+          "id": "restaurant_seat_1"
+        },
+        {
+          "sourceRecordId": 152800070,
+          "buildingId": 800106,
+          "id": "restaurant_cooking_station_2"
+        },
+        {
+          "sourceRecordId": 152800055,
+          "buildingId": 800106,
+          "id": "restaurant_decoration_1"
+        },
+        {
+          "sourceRecordId": 152800056,
+          "buildingId": 800106,
+          "id": "restaurant_decoration_2"
+        },
+        {
+          "sourceRecordId": 152800046,
+          "buildingId": 800106,
+          "id": "restaurant_seat_2"
+        },
+        {
+          "sourceRecordId": 152800071,
+          "buildingId": 800110,
+          "id": "human_house_1_bed_1"
+        },
+        {
+          "sourceRecordId": 152800075,
+          "buildingId": 800110,
+          "id": "human_house_1_decoration_1"
+        },
+        {
+          "sourceRecordId": 152800072,
+          "buildingId": 800110,
+          "id": "human_house_1_bed_2"
+        },
+        {
+          "sourceRecordId": 152800076,
+          "buildingId": 800110,
+          "id": "human_house_1_decoration_2"
+        },
+        {
+          "sourceRecordId": 152800079,
+          "buildingId": 800111,
+          "id": "human_house_2_bed_1"
+        },
+        {
+          "sourceRecordId": 152800083,
+          "buildingId": 800111,
+          "id": "human_house_2_decoration_1"
+        },
+        {
+          "sourceRecordId": 152800080,
+          "buildingId": 800111,
+          "id": "human_house_2_bed_2"
+        },
+        {
+          "sourceRecordId": 152800084,
+          "buildingId": 800111,
+          "id": "human_house_2_decoration_2"
+        },
+        {
+          "sourceRecordId": 152800087,
+          "buildingId": 800112,
+          "id": "human_house_3_bed_1"
+        },
+        {
+          "sourceRecordId": 152800091,
+          "buildingId": 800112,
+          "id": "human_house_3_decoration_1"
+        },
+        {
+          "sourceRecordId": 152800088,
+          "buildingId": 800112,
+          "id": "human_house_3_bed_2"
+        },
+        {
+          "sourceRecordId": 152800092,
+          "buildingId": 800112,
+          "id": "human_house_3_decoration_2"
+        },
+        {
+          "sourceRecordId": 152800095,
+          "buildingId": 800113,
+          "id": "human_house_4_bed_1"
+        },
+        {
+          "sourceRecordId": 152800099,
+          "buildingId": 800113,
+          "id": "human_house_4_decoration_1"
+        },
+        {
+          "sourceRecordId": 152800096,
+          "buildingId": 800113,
+          "id": "human_house_4_bed_2"
+        },
+        {
+          "sourceRecordId": 152800100,
+          "buildingId": 800113,
+          "id": "human_house_4_decoration_2"
+        },
+        {
+          "sourceRecordId": 152800103,
+          "buildingId": 800114,
+          "id": "human_house_5_bed_1"
+        },
+        {
+          "sourceRecordId": 152800107,
+          "buildingId": 800114,
+          "id": "human_house_5_decoration_1"
+        },
+        {
+          "sourceRecordId": 152800104,
+          "buildingId": 800114,
+          "id": "human_house_5_bed_2"
+        },
+        {
+          "sourceRecordId": 152800108,
+          "buildingId": 800114,
+          "id": "human_house_5_decoration_2"
+        },
+        {
+          "sourceRecordId": 152800111,
+          "buildingId": 800115,
+          "id": "human_house_6_bed_1"
+        },
+        {
+          "sourceRecordId": 152800115,
+          "buildingId": 800115,
+          "id": "human_house_6_decoration_1"
+        },
+        {
+          "sourceRecordId": 152800112,
+          "buildingId": 800115,
+          "id": "human_house_6_bed_2"
+        },
+        {
+          "sourceRecordId": 152800116,
+          "buildingId": 800115,
+          "id": "human_house_6_decoration_2"
+        }
+      ]
+    },
+    "luaConsumerPins": [
+      {
+        "role": "FurniturePeopleModule furniture progress and condition helper",
+        "sha256": "161cc9595cb9914d915e716012a3a245fe314826d8d2a563752d46279cf6a279",
+        "lineBounds": [
+          592,
+          604,
+          625,
+          659
+        ]
+      },
+      {
+        "role": "Population allocation slots; BuildSlotSoc is a slot count",
+        "sha256": "b8f8d8826ecb1f8136fc5f0f185476242f1f8b9b84e1e6e42142379bf022afb6",
+        "lineBounds": [
+          139,
+          157
+        ]
+      },
+      {
+        "role": "PopulationRestaurantData work-slot count",
+        "sha256": "a692d044b7d5e81599bd34bb160ff3afa4e21c8e202818a7b0ae0000f47da7a7",
+        "lineBounds": [
+          25,
+          41
+        ]
+      }
+    ]
+  },
+  "unconfirmedScope": [
+    "The user account/server assignment to Original or D is unknown; public labels A/B are presentation labels and do not establish assignment.",
+    "Live mission, ground/foundation, feature, item-ownership, furniture and initial-grade eligibility is not inferred from a configured building prerequisite list.",
+    "Refinery level 1 and Laboratory 2 level 1 retain their pre-existing incomplete-initial-condition calculation guards; empty ReqBuilding arrays do not establish free construction.",
+    "The separate BuildingGroundUnlockCondition new_user_experience variants are not combined with the building cost/requirement profile selector.",
+    "ReqBuildingB is retained and independently decoded but is not selected by the reviewed get_RequireBuildings consumer.",
+    "Star/rank branches, higher-level records, server age, season activation and future patches outside the existing 22-route/29-ID/1,522-row projection are not added or declared live.",
+    "The reviewed native per-entry predicate compares building Type and Level; record rank is preserved for identity but is not passed as a separate predicate argument."
+  ]
+}
