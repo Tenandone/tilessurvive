@@ -291,3 +291,26 @@ html[data-building-system-page] .bs-effect-profile>summary{font-weight:700;curso
 
 html[data-building-capture] body>header,html[data-building-capture] body>footer,html[data-building-capture] .ts-header,html[data-building-capture] .ts-footer,html[data-building-capture] main>.container>:not([data-building-system]){display:none!important}
 html[data-building-capture] [data-building-system] .toolbar,html[data-building-capture] [data-building-system] .bs-calculator,html[data-building-capture] [data-building-system] .source-details,html[data-building-capture] [data-building-system] .totals-details{display:none!important}
+
+/* The page shell's generic div rule must not put artwork in the copy column. */
+html.ts-platform[data-section="buildings"][data-building-system-page] .hero-grid>:is(.hero-media,.hero-thumb){order:2}
+
+/* Long localized words must wrap inside the existing summary cards. */
+html.ts3[data-building-system-page] main.ts3-data-page>.container>.hero .summary-card{overflow-wrap:anywhere}
+@media(max-width:767px){
+html.ts3[data-building-system-page] main.ts3-data-page>.container>.hero .summary-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+
+/* Exact numbers can exceed a narrow desktop table: retain access to every column. */
+.building-system[data-building-system] .desktop-table{overflow-x:auto}
+
+/* Mobile effect rows are blocks; captions must use the same available width. */
+@media(max-width:600px){
+html[data-building-system-page] .bs-effect-table caption{display:block;width:auto}
+}
+
+/* Older page styles inherit Korean keep-all rules into Japanese and Chinese prose. */
+html:is([lang="ja"],[lang="zh-Hant"])[data-building-system-page] main{word-break:normal}
+
+/* Initial-construction notices must wrap without squeezing the level into a column. */
+.building-system[data-building-system] .card-head h4{flex-wrap:wrap}
