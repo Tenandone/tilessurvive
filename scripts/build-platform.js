@@ -3,6 +3,7 @@ const fs = require("fs"),
   path = require("path");
 const { parseHTML } = require("linkedom");
 const I = require("../js/platform-i18n.js");
+const { supportDiscordUrl } = require("../config/community.json");
 const root = path.resolve(__dirname, ".."),
   // Legacy content builders run for the original five locales. The complete
   // German export and reciprocal six-language pass run later in build:50.
@@ -181,19 +182,11 @@ for (const p of pages) {
   const community =
     p.lang === "ko"
       ? ["https://open.kakao.com/o/gako89Wh", "KakaoTalk"]
-      : ["https://discord.gg/tiles-survive", "Discord"];
-  // Preserve the actual community destination from the existing language component.
-  const footerSource = fs.readFileSync(
-    path.join(root, "components", p.lang, "footer.html"),
-    "utf8",
-  );
-  const oldDiscord = footerSource.match(
-    /https:\/\/(?:discord\.gg|discord\.com)[^"'\s<]+/,
-  );
-  if (oldDiscord) community[0] = oldDiscord[0];
+      : [supportDiscordUrl, "Discord"];
+  const communityAttributes = p.lang === "ko" ? "" : ' data-support-discord target="_blank"';
   d.body.appendChild(
     make(
-      `<footer class="ts-footer"><div class="ts-footer-inner"><strong>TilesSurvive.net</strong><a href="/${p.lang}/search/">${t.search}</a><a href="/${p.lang}/codes/">${t.codes}</a><a href="/${p.lang}/top-up/">${t.topup}</a><a href="${community[0]}" rel="noopener noreferrer">${community[1]}</a>${["about", "contact", "privacy", "terms", "affiliate-disclosure"].map((k, i) => `<a href="/${p.lang}/${k}/">${footerLabels[p.lang][i]}</a>`).join("")}</div><small>© 2026 TilesSurvive.net · ${t.affiliate}: LootBar</small></footer>`,
+      `<footer class="ts-footer"><div class="ts-footer-inner"><strong>TilesSurvive.net</strong><a href="/${p.lang}/search/">${t.search}</a><a href="/${p.lang}/codes/">${t.codes}</a><a href="/${p.lang}/top-up/">${t.topup}</a><a href="${community[0]}"${communityAttributes} rel="noopener noreferrer">${community[1]}</a>${["about", "contact", "privacy", "terms", "affiliate-disclosure"].map((k, i) => `<a href="/${p.lang}/${k}/">${footerLabels[p.lang][i]}</a>`).join("")}</div><small>© 2026 TilesSurvive.net · ${t.affiliate}: LootBar</small></footer>`,
     ),
   );
   // Explicit page fragments coexist with the legacy base element.
