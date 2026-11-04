@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "statuses": ["observed", "official", "retained", "analysis", "unverified"],
+  "gameVersion": "2.6.200",
+  "confirmedSchedules": [],
+  "profiles": {
+    "arms-race/common-pattern": {"status": "retained", "version": "2.6.200", "verifiedAt": null, "liveScheduleStatus": "unverified"},
+    "arms-race/training-lv30": {"status": "observed", "version": "2.6.200", "verifiedAt": null, "liveScheduleStatus": "unverified"},
+    "arms-race/hero-lv30": {"status": "observed", "version": "2.6.200", "verifiedAt": "2026-10-10", "liveScheduleStatus": "unverified"},
+    "alliance-duel/season-1": {"status": "retained", "version": "2.6.200", "verifiedAt": null, "liveScheduleStatus": "unverified"},
+    "alliance-duel/season-2-cross": {"status": "retained", "version": "2.6.200", "verifiedAt": null, "liveScheduleStatus": "unverified"},
+    "turtle-race/first-cycle": {"status": "retained", "version": "2.6.200", "verifiedAt": null, "liveScheduleStatus": "unverified"},
+    "turtle-race/repeat-cycle": {"status": "retained", "version": "2.6.200", "verifiedAt": null, "liveScheduleStatus": "unverified"}
+  }
+}

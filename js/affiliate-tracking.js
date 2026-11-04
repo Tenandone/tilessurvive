@@ -1,5 +1,10 @@
 (function () {
   "use strict";
+  // Do not count the same interaction again after V3 takes ownership.
+  if (document.documentElement.hasAttribute?.("data-v3-affiliate")) return;
+  try {
+    if (window.localStorage?.getItem("tiles.v3.analyticsConsent") === "denied") return;
+  } catch (_) { return; }
 
   const LOOTBAR_HOSTS = new Set(["www.lootbar.com", "lootbar.com"]);
 

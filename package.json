@@ -5,9 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "npm run build:legacy && npm run build:50",
-    "postbuild": "node scripts/install-adsense.js --apply && npm run build:community",
+    "postbuild": "node scripts/install-adsense.js --apply && npm run build:community && npm run build:v3",
     "postbuild:50": "node scripts/install-adsense.js --apply && npm run build:community",
-    "postbuild:building-system": "node scripts/install-adsense.js --apply && npm run build:community",
+    "postbuild:building-system": "node scripts/install-adsense.js --apply && npm run build:community && npm run build:v3",
     "build:community": "node scripts/sync-community-links.js --apply && node scripts/sync-community-links.js --check",
     "test:community": "node --test scripts/test-community-links.js",
     "test:building-publication": "node --test scripts/test-building-data-registry.js scripts/test-building-publication.js && node scripts/install-adsense.js --check",
@@ -69,7 +69,10 @@
     "build:global:release": "node scripts/build-global-release.js --apply",
     "build:power-plant:unified": "node scripts/build-power-plant-unified.js",
     "test:power-plant:unified": "node --test scripts/test-power-plant-unified.js",
-    "test:power-plant:global": "node --test scripts/test-power-plant-global-rebuild.js"
+    "test:power-plant:global": "node --test scripts/test-power-plant-global-rebuild.js",
+    "build:v3": "node scripts/build-v3-search.js && node scripts/build-v3-platform.js",
+    "test:v3": "node --test scripts/test-v3-*.js",
+    "postbuild:global:release": "npm run build:v3"
   },
   "keywords": [],
   "author": "",

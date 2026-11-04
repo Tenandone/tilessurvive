@@ -54,14 +54,18 @@ test('renderer ownership rejects extra prose and leaves missing model labels vis
   assert(translate(source,'fr',wrongRoute).t.missing.has('Power Plant · Unified requirements'),'the DOM selector alone must not enable this route-specific owner');
 });
 
-test('all other 119 English routes retain byte-identical localization output across the same 14 locales',()=>{
+test('all other 119 frozen pre-V3 English routes retain byte-identical localization output across the same 14 locales',()=>{
   const filename=path.join(root,'scripts','baseline-global-locales-readonly.js');
   const baseline=new Module(filename,module);baseline.filename=filename;baseline.paths=Module._nodeModulePaths(path.dirname(filename));
   baseline._compile(execFileSync('git',['show','f487f7317ac12fdcfc3a8d8179b4ea4a6cb0e198:scripts/build-global-locales.js'],{cwd:root,encoding:'utf8'}),filename);
   const others=groups.filter(g=>g.id!==group.id);assert.equal(others.length,119);
+  // New V3 renderer-owned features are verified separately in test-v3-platform.
+  // This invariant keeps the same c1d9151 input in both engines, so authorized
+  // new features cannot weaken the older content/translation regression gate.
+  const frozen=require('./test-v3-platform').batch(others.map(route=>route.file));
   let compared=0;
   for(const route of others){
-    const input=fs.readFileSync(path.join(root,route.file),'utf8');
+    const input=frozen.get(route.file);
     for(const locale of targets){
       const before=translate(input,locale,route,baseline.exports),after=translate(input,locale,route);
       assert.equal(after.document.toString(),before.document.toString(),locale+' '+route.id+' changed outside Power Plant');

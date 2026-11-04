@@ -1,5 +1,10 @@
 (function () {
   "use strict";
+  // V3 has one consent-gated measurement owner. Other pages retain this module.
+  if (document.documentElement.hasAttribute?.("data-v3-affiliate")) return;
+  try {
+    if (window.localStorage?.getItem("tiles.v3.analyticsConsent") === "denied") return;
+  } catch (_) { return; }
   const expected = "https://www.lootbar.com/ko/shop/ten/top-up/tiles-survive",
     lang = window.TS_LOCALES ? window.TS_LOCALES.current() : document.documentElement.dataset.lang || "en";
   function pageType() {

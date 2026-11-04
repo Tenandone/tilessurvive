@@ -115,7 +115,10 @@ test('Russian article, navigation and accessible video text are Russian with loc
 });
 
 test('Russian translation preserves each article block numeric value, structure, anchors and video', () => {
-  const old = doc(prior(RU)), current = doc(read(RU));
+  // V3 adds separately verified privacy controls outside the original article.
+  // Compare the inherited article, preserving every original structural check.
+  const strip=require('./build-v3-platform').strip;
+  const old = doc(strip(prior(RU))), current = doc(strip(read(RU)));
   const numericBlocks = d => [...d.querySelectorAll('main article h2,main article h3,main article li,main article p,main article .phase-label')].map(n => text(n).match(/[+−-]?\d+(?:[.,]\d+)?%?/g) || []);
   assert.deepEqual(numericBlocks(current), numericBlocks(old), 'same values in the same semantic blocks, including 30+10/R4/50%/+15%/phase numbers');
   const topology = d => [...d.querySelectorAll('main *')].map(n => [n.tagName, n.id, n.className]);
@@ -128,9 +131,10 @@ test('Russian translation preserves each article block numeric value, structure,
 });
 
 test('all 26 owned pages preserve existing advertisement/analytics/consent scripts and numeric source tables', () => {
+  const strip=require('./build-v3-platform').strip, migrate=require('./v3-affiliate-content').transformAnalytics;
   for (const file of [RU, ...DE_SCHEMA, ...ALIASES.map(a => a[0])]) {
-    const old = doc(prior(file)), current = doc(read(file));
-    assert.deepEqual(protectedScripts(current), protectedScripts(old), 'protected scripts unchanged: ' + file);
+    const old = doc(migrate(strip(prior(file)))), current = doc(migrate(strip(read(file))));
+    assert.deepEqual(protectedScripts(current), protectedScripts(old), 'protected scripts unchanged except exact known GA consent migration: ' + file);
     const numericTables = d => [...d.querySelectorAll('main table tr')].map(n => text(n).match(/[+−-]?\d+(?:[.,]\d+)?%?/g) || []);
     assert.deepEqual(numericTables(current), numericTables(old), 'existing numeric tables unchanged: ' + file);
     const payloads = d => [...d.querySelectorAll('script[type="application/json"]')].filter(n=>!['ts-global-ui','ts-locale-routes'].includes(n.id)).map(n => n.textContent);

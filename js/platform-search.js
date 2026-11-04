@@ -7,6 +7,8 @@
   const lang = window.TS_LOCALES ? window.TS_LOCALES.current() : document.documentElement.dataset.lang || "en",
     t = window.TS_I18N ? window.TS_I18N.require(lang) : window.TS_COPY[lang];
   if (!t) throw new Error("Missing search translation for " + lang);
+  const searchCore = window.TS_V3_SEARCH;
+  const initialState = searchCore ? searchCore.readState(location) : {q:new URLSearchParams(location.search).get("q")||"",category:"",sort:""};
   let index = [],
     loaded = false;
   const controls = document.createElement("div");
@@ -34,7 +36,7 @@
     if (!loaded) return;
     const q = normalize(input.value).trim(),
       terms = q.split(/\s+/).filter(Boolean);
-    let matches = index.filter(
+    let matches = searchCore ? searchCore.rank(index,input.value,{category:filter.value,sort:sort.value,locale:lang}) : index.filter(
       (i) =>
         (!filter.value || i.type === filter.value) &&
         terms.every((v) =>
@@ -44,7 +46,7 @@
         ),
     );
     if (!q && !filter.value) matches = [];
-    matches.sort((a, b) =>
+    if(!searchCore)matches.sort((a, b) =>
       sort.value === "name"
         ? a.title.localeCompare(b.title, lang)
         : Number(normalize(b.title).includes(q)) -
@@ -78,7 +80,7 @@
   async function load() {
     if (count) count.textContent = t.loading;
     try {
-      const r = await fetch(`/data/search/${lang}.json`, { cache: "no-cache" });
+      const r = await fetch(`/data/${searchCore?'v3-search':'search'}/${lang}.json`, { cache: "no-cache" });
       if (!r.ok) throw Error("index");
       const data = await r.json();
       index = (data.items || [])
@@ -137,6 +139,7 @@
           ),
         );
       loaded = true;
+      if(searchCore){filter.value=[...filter.options].some(o=>o.value===initialState.category)?initialState.category:"";sort.value=initialState.sort;}
       search();
     } catch {
       if (count) count.textContent = t.error;
@@ -150,9 +153,15 @@
       results.append(retry);
     }
   }
-  input.value = new URLSearchParams(location.search).get("q") || "";
-  input.addEventListener("input", search);
-  filter.addEventListener("change", search);
-  sort.addEventListener("change", search);
+  function remember(){if(!searchCore)return;const next=searchCore.stateUrl(location,{q:input.value,category:filter.value,sort:sort.value});window.history?.replaceState(null,"",next);searchCore.syncLanguageLinks(document,location,window.TS_LOCALES);}
+  function changed(){search();remember();}
+  input.value = initialState.q;
+  input.addEventListener("input", changed);
+  filter.addEventListener("change", changed);
+  sort.addEventListener("change", changed);
+  if(searchCore){
+    document.addEventListener('DOMContentLoaded',()=>searchCore.syncLanguageLinks(document,location,window.TS_LOCALES),{once:true});
+    window.addEventListener('popstate',()=>{const state=searchCore.readState(location);input.value=state.q;filter.value=state.category;sort.value=state.sort;search();searchCore.syncLanguageLinks(document,location,window.TS_LOCALES);});
+  }
   load();
 })();

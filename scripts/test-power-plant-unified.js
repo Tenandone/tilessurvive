@@ -26,6 +26,11 @@ const registry = require('./building-data-registry');
 const builder = require('./build-building-system');
 const runtime = require('../js/building-system');
 const locales = require('../data/i18n/locales.json').locales;
+// V3 adds reviewed, independently checked feature blocks and replaces the
+// known GA bootstrap with explicit consent. Game models remain immutable.
+const v3Preservation = require('./test-v3-platform');
+const v3Publisher = require('./build-v3-platform');
+const v3Affiliate = require('./v3-affiliate-content');
 const tuple = q => [q.buildingId, q.level, q.rank];
 const numeric = row => ({level:row.level,rank:row.rank,resources:row.resources,seconds:row.seconds,battlePower:row.battlePower,constructionItems:row.constructionItems.map(i=>({id:i.id??i.key??i.itemId,quantity:i.quantity??i.value})),requirements:row.requirements.map(q=>({buildingId:q.buildingId,level:q.level,rank:q.rank}))});
 const expectedRows = aRows.map(a => ({...numeric(a), requirements:pins.find(p=>p.level===a.level&&p.rank===a.rank).requirements.map(([buildingId,level,rank])=>({buildingId,level,rank}))}));
@@ -206,18 +211,19 @@ test('all 21 published Power Plant JSON payloads, desktop rows and mobile cards 
     for(const selector of ['title','meta[name="description"]','meta[name="robots"]','link[rel="canonical"]','meta[property="og:url"]','meta[property="og:title"]'])assert.equal(d.querySelector(selector)?.outerHTML,old.querySelector(selector)?.outerHTML,file+' unchanged SEO '+selector);
     assert.deepEqual([...d.querySelectorAll('script[type="application/ld+json"]')].map(n=>JSON.parse(n.textContent)),[...old.querySelectorAll('script[type="application/ld+json"]')].map(n=>JSON.parse(n.textContent)),file+' unchanged structured data');
     const protectedScripts=x=>[...x.querySelectorAll('script')].filter(n=>/adsbygoogle|googletagmanager|gtag\(|consent|fundingchoices|__tcfapi/i.test(n.outerHTML)).map(n=>n.outerHTML);
-    assert.deepEqual(protectedScripts(d),protectedScripts(old),file+' protected scripts');
+    const migrated=x=>doc(v3Affiliate.transformAnalytics(v3Publisher.strip(x.toString())));
+    assert.deepEqual(protectedScripts(migrated(d)),protectedScripts(migrated(old)),file+' protected scripts with only the reviewed GA consent migration');
     const adSlots=x=>[...x.querySelectorAll('[data-ad-client],[data-ad-slot]')].map(n=>n.outerHTML);assert.deepEqual(adSlots(d),adSlots(old),file+' unchanged ad slots');
-    const affiliate=x=>[...x.querySelectorAll('a[href]')].map(n=>n.getAttribute('href')).filter(h=>/lootbar|affiliate/i.test(h));assert.deepEqual(affiliate(d),affiliate(old),file+' affiliate destinations');
+    const affiliate=x=>[...doc(v3Publisher.strip(x.toString())).querySelectorAll('a[href]')].map(n=>n.getAttribute('href')).filter(h=>/lootbar|affiliate/i.test(h));assert.deepEqual(affiliate(d),affiliate(old),file+' original affiliate destinations');
     assert.equal(d.getElementById('ts3-data-table-1').textContent,old.getElementById('ts3-data-table-1').textContent,file+' unrelated coal table');
   }
   assert.equal(signatures.size,1);assert.equal(rows,630);assert.equal(conditions,1323);
 });
 
-test('every other building page changes only its shared runtime cache key in all 21 languages', () => {
+test('every other building page retains its exact model and original content outside reviewed V3 blocks and GA migration', () => {
   let checked=0;
-  const withoutCache=html=>html.replaceAll('\r\n','\n').replace(/(\/js\/building-system\.js)\?v=[a-f0-9]+/g,'$1?v=RUNTIME_HASH');
+  const withoutCache=v3Preservation.inherited;
   for(const locale of locales){const files=registry.slugs.filter(s=>s!=='power-plant').map(s=>locale.code+'/buildings/'+s+'/index.html'),old=baselineBatch(files);
-    for(const file of files){const current=read(file),baseline=old.get(file);assert.deepEqual(payload(current),payload(baseline),file+' other-building model must be unchanged');assert.equal(withoutCache(current),withoutCache(baseline),file+' only shared runtime cache key may change');checked++;}}
+    for(const file of files){const current=read(file),baseline=old.get(file);assert.deepEqual(payload(current),payload(baseline),file+' other-building model must be unchanged');assert.equal(hash(withoutCache(current)),hash(withoutCache(baseline)),file+' original content preserved after exact known GA migration and five reviewed runtime cache keys');checked++;}}
   assert.equal(checked,441);
 });

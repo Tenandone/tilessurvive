@@ -389,13 +389,20 @@ test('unconfirmed initial gates remain explicit in desktop and mobile rows even 
 });
 
 test('analytics, affiliate destinations, image sources and meaningful existing table fragments survive', () => {
-  const analytics = d => [...d.querySelectorAll('script')].filter(node => /googletagmanager|gtag\(/.test(node.outerHTML)).map(node => node.outerHTML);
-  const affiliate = d => [...d.querySelectorAll('a[href*="lootbar"]')].map(node => node.href).sort();
+  const publisher=require('./build-v3-platform'),consent=require('./v3-affiliate-content');
+  const inherited=d=>documentOf(consent.transformAnalytics(publisher.strip(d.toString())));
+  const analytics = d => [...inherited(d).querySelectorAll('script')].filter(node => /googletagmanager|gtag\(/.test(node.outerHTML)).map(node => node.outerHTML);
+  const affiliate = d => [...documentOf(publisher.strip(d.toString())).querySelectorAll('a[href*="lootbar"]')].map(node => node.href).sort();
+  // The original numeric fixture predates the approved AdSense installation.
+  // Preserve GA behavior against that fixture, and ad/CMP bytes against the
+  // actual deployed pre-V3 release, rather than requiring removal of AdSense.
+  const v3Checks=require('./test-v3-platform'),deployed=v3Checks.batch(langs.flatMap(lang=>slugs.map(slug=>`${lang}/buildings/${slug}/index.html`)));
   for (const lang of langs) for (const slug of slugs) {
     const file = `${lang}/buildings/${slug}/index.html`;
     const old = documentOf(previous(file));
     const current = documentOf(read(file));
-    assert.deepEqual(analytics(current), analytics(old), file + ' analytics');
+    assert.deepEqual(analytics(current), analytics(old), file + ' exact known GA consent migration; all existing ads/CMP unchanged');
+    assert.deepEqual(v3Checks.ads(read(file)),v3Checks.ads(deployed.get(file)),file+' exact deployed AdSense/CMP scripts');
     assert.deepEqual(affiliate(current), affiliate(old), file + ' affiliate');
     for (const anchor of old.querySelectorAll('[id^="ts3-data-table-"]')) assert(current.getElementById(anchor.id), file + ' existing #' + anchor.id);
     const values = table => [...table.querySelectorAll('tbody tr')].map(row => [...row.children].map(cell => cell.getAttribute('data-ts-original-value') || cell.textContent.replace(/\s+/g, ' ').trim()));

@@ -1,0 +1,1213 @@
+{
+  "schemaVersion": 1,
+  "reviewedOn": "2026-11-04",
+  "tenUrl": "https://www.lootbar.com/ko/shop/ten/top-up/tiles-survive",
+  "provenance": {
+    "method": "independently authored summaries and translations",
+    "nativeSpeakerReview": false,
+    "providerClaimsNotIndependentlyGuaranteed": true,
+    "sources": [
+      "https://www.lootbar.com/top-up/tiles-survive",
+      "https://static.lootbar.gg/static/user_agreement.html"
+    ]
+  },
+  "locales": {
+    "en": {
+      "title": "LootBar: check before you top up",
+      "lead": "Compare the offer with the in-game store. Spending is optional.",
+      "faq": [
+        [
+          "What is LootBar?",
+          "An external marketplace for game top-ups. TilesSurvive.net is an independent guide and does not process orders."
+        ],
+        [
+          "How is it different from buying in the game?",
+          "The price, payment and delivery follow LootBar's offer. Compare the same pack and the final payable amount."
+        ],
+        [
+          "What is Self-TopUp?",
+          "LootBar describes a flow where you sign in to the game through its interface and redeem your purchased pack."
+        ],
+        [
+          "What are the steps?",
+          "Check the pack and eligibility, pay on LootBar, follow Self-TopUp, then verify delivery in the game."
+        ],
+        [
+          "Which countries and payments work?",
+          "Check your region and server at checkout. LootBar lists Visa, debit cards and digital wallets; availability varies."
+        ],
+        [
+          "What account information is needed?",
+          "LootBar's current process may require a LootBar account and a game login. Follow LootBar's current login instructions. This site never asks for your game password, verification code or payment details."
+        ],
+        [
+          "Who handles a problem?",
+          "Contact LootBar support with the order number and an error screenshot. Never send a password or verification code to support."
+        ],
+        [
+          "What does the TEN link offer?",
+          "Eligible purchases may support this site. No exclusive buyer benefit is confirmed here; check the current offer before paying."
+        ]
+      ],
+      "choicesTitle": "Choose your next step",
+      "freeTitle": "Keep progressing for free",
+      "freeText": "Review daily tasks, event rewards and your saved resources before deciding to spend.",
+      "freeCta": "View daily tasks",
+      "paidTitle": "Optional paid route",
+      "paidText": "Compare the final price and pack contents using the top-up guide.",
+      "guideCta": "Read the top-up guide",
+      "outbound": "View LootBar through TEN",
+      "noEquivalence": "A calculated resource shortage is not a product recommendation or a purchase requirement.",
+      "disclosure": "Affiliate link: eligible purchases may earn this site a commission. Buying is optional.",
+      "evidence": "Provider information checked",
+      "providerGuide": "LootBar product instructions",
+      "providerTerms": "LootBar terms",
+      "privacyTitle": "Optional usage analytics",
+      "privacyText": "If you allow analytics, GA4 measures guide views and link interactions using page, language and feature categories. Our events exclude form values, query strings and full referrers. Your choice is saved in this browser; the tools work either way.",
+      "allow": "Allow analytics",
+      "deny": "Decline analytics",
+      "statusAllowed": "Analytics allowed. You can decline at any time.",
+      "statusDenied": "Analytics off. You can allow it at any time."
+    },
+    "ko": {
+      "title": "LootBar 충전 전 확인 가이드",
+      "lead": "게임 내 상점과 조건을 비교하세요. 구매는 선택입니다.",
+      "faq": [
+        [
+          "LootBar는 어떤 서비스인가요?",
+          "게임 충전을 취급하는 외부 마켓플레이스입니다. TilesSurvive.net은 독립 안내 사이트이며 주문을 처리하지 않습니다."
+        ],
+        [
+          "게임 내 결제와 무엇이 다른가요?",
+          "가격·결제·지급은 LootBar의 판매 조건을 따릅니다. 같은 패키지와 최종 결제액을 비교하세요."
+        ],
+        [
+          "Self-TopUp은 무엇인가요?",
+          "LootBar가 안내하는 방식으로, 해당 인터페이스에서 게임에 로그인하여 구매한 패키지를 수령합니다."
+        ],
+        [
+          "어떤 순서로 진행하나요?",
+          "상품과 이용 조건 확인 → LootBar에서 결제 → Self-TopUp 안내 진행 → 게임에서 지급 확인 순서입니다."
+        ],
+        [
+          "어느 국가와 결제수단을 지원하나요?",
+          "결제 화면에서 지역과 서버를 확인하세요. LootBar는 Visa·직불카드·전자지갑을 안내하지만 실제 이용 가능 여부는 다릅니다."
+        ],
+        [
+          "어떤 계정 정보가 필요한가요?",
+          "LootBar의 현재 절차에는 LootBar 계정과 게임 로그인이 필요할 수 있습니다. LootBar의 현재 로그인 안내를 따르세요. 이 사이트는 게임 비밀번호·인증코드·결제정보를 요구하지 않습니다."
+        ],
+        [
+          "문제가 생기면 어디에 문의하나요?",
+          "주문번호와 오류 화면을 준비해 LootBar 고객지원에 문의하세요. 비밀번호나 인증코드를 상담원에게 보내지 마세요."
+        ],
+        [
+          "TEN 링크에 어떤 혜택이 있나요?",
+          "조건을 충족한 구매는 이 사이트 운영에 도움이 될 수 있습니다. 확인된 구매자 전용 추가 혜택은 없으므로 결제 전 현재 조건을 확인하세요."
+        ]
+      ],
+      "choicesTitle": "다음 진행 방법 선택",
+      "freeTitle": "무료 성장 이어가기",
+      "freeText": "구매를 결정하기 전에 일일 임무·이벤트 보상·보유 자원을 확인하세요.",
+      "freeCta": "일일 임무 보기",
+      "paidTitle": "선택형 유료 경로",
+      "paidText": "충전 가이드에서 패키지 구성과 최종 가격을 비교하세요.",
+      "guideCta": "충전 가이드 읽기",
+      "outbound": "TEN 링크로 LootBar 보기",
+      "noEquivalence": "계산된 자원 부족분은 특정 상품 추천이나 구매 의무를 의미하지 않습니다.",
+      "disclosure": "제휴 링크: 조건을 충족한 구매 시 이 사이트가 수수료를 받을 수 있습니다. 구매는 선택입니다.",
+      "evidence": "판매자 안내 확인일",
+      "providerGuide": "LootBar 상품 이용 안내",
+      "providerTerms": "LootBar 이용약관",
+      "privacyTitle": "선택적 이용 통계",
+      "privacyText": "허용하면 GA4로 가이드 조회와 링크 이용을 페이지·언어·기능 분류로 측정합니다. 자체 이벤트에는 입력값·쿼리 문자열·전체 유입 URL을 보내지 않습니다. 선택은 이 브라우저에 저장되며 허용 여부와 관계없이 도구를 이용할 수 있습니다.",
+      "allow": "분석 허용",
+      "deny": "분석 거절",
+      "statusAllowed": "분석 허용 상태입니다. 언제든 거절할 수 있습니다.",
+      "statusDenied": "분석이 꺼져 있습니다. 언제든 허용할 수 있습니다."
+    },
+    "ja": {
+      "title": "LootBar：チャージ前の確認ガイド",
+      "lead": "ゲーム内ストアの条件と比較しましょう。購入は任意です。",
+      "faq": [
+        [
+          "LootBarとは？",
+          "ゲームのチャージを扱う外部マーケットプレイスです。TilesSurvive.netは独立した案内サイトで、注文を処理しません。"
+        ],
+        [
+          "ゲーム内購入との違いは？",
+          "価格・支払い・受け取りはLootBarの販売条件に従います。同じパックと最終支払額を比較してください。"
+        ],
+        [
+          "Self-TopUpとは？",
+          "LootBarの説明では、その画面からゲームにログインして購入したパックを受け取る方式です。"
+        ],
+        [
+          "利用の手順は？",
+          "パックと利用条件を確認し、LootBarで支払い、Self-TopUpの案内に従い、ゲームで受け取りを確認します。"
+        ],
+        [
+          "利用できる国や支払方法は？",
+          "決済画面で地域とサーバーを確認してください。LootBarはVisa・デビットカード・電子財布を案内していますが、利用可否は異なります。"
+        ],
+        [
+          "必要なアカウント情報は？",
+          "LootBarの現在の手順では、LootBarアカウントとゲームへのログインが必要になる場合があります。 LootBarの現在のログイン案内に従ってください。このサイトではゲームのパスワード・認証コード・決済情報を求めません。"
+        ],
+        [
+          "問題が起きたら？",
+          "注文番号とエラー画面を添えてLootBarサポートに問い合わせてください。パスワードや認証コードは送らないでください。"
+        ],
+        [
+          "TENリンクの特典は？",
+          "対象の購入はこのサイトの運営支援になる場合があります。購入者限定の追加特典は確認できていないため、支払い前に現在の条件をご確認ください。"
+        ]
+      ],
+      "choicesTitle": "次の進め方を選ぶ",
+      "freeTitle": "無料で育成を続ける",
+      "freeText": "購入を決める前に、デイリーミッション・イベント報酬・手持ちの資源を確認しましょう。",
+      "freeCta": "デイリーミッションを見る",
+      "paidTitle": "任意の有料ルート",
+      "paidText": "チャージガイドでパック内容と最終価格を比較できます。",
+      "guideCta": "チャージガイドを読む",
+      "outbound": "TENリンクでLootBarを見る",
+      "noEquivalence": "計算上の資源不足は、特定商品の推奨や購入の必要性を意味しません。",
+      "disclosure": "アフィリエイトリンク：対象の購入により、このサイトが手数料を受け取る場合があります。購入は任意です。",
+      "evidence": "販売元の案内確認日",
+      "providerGuide": "LootBarの商品案内",
+      "providerTerms": "LootBar利用規約",
+      "privacyTitle": "任意の利用状況分析",
+      "privacyText": "許可すると、GA4でガイド閲覧とリンク操作をページ・言語・機能別に測定します。独自イベントには入力値・クエリ文字列・参照元の完全なURLを含めません。選択はこのブラウザに保存され、ツールはどちらの設定でも利用できます。",
+      "allow": "分析を許可",
+      "deny": "分析を拒否",
+      "statusAllowed": "分析は許可されています。いつでも拒否できます。",
+      "statusDenied": "分析はオフです。いつでも許可できます。"
+    },
+    "zh-tw": {
+      "title": "LootBar：儲值前確認指南",
+      "lead": "請與遊戲內商店比較條件。購買完全自願。",
+      "faq": [
+        [
+          "LootBar 是什麼？",
+          "提供遊戲儲值的外部交易平台。TilesSurvive.net 是獨立指南網站，不處理訂單。"
+        ],
+        [
+          "與遊戲內購買有何不同？",
+          "價格、付款及發放依 LootBar 的銷售條件而定。請比較相同禮包與最終應付金額。"
+        ],
+        [
+          "什麼是 Self-TopUp？",
+          "依 LootBar 的說明，您透過其介面登入遊戲，再領取已購買的禮包。"
+        ],
+        [
+          "操作順序為何？",
+          "確認禮包及適用條件，在 LootBar 付款，依 Self-TopUp 指示操作，再於遊戲中確認到帳。"
+        ],
+        [
+          "支援哪些國家和付款方式？",
+          "請在結帳時確認地區與伺服器。LootBar 列有 Visa、簽帳金融卡及電子錢包，但實際可用方式因情況而異。"
+        ],
+        [
+          "需要哪些帳號資訊？",
+          "LootBar 目前的流程可能需要 LootBar 帳號及遊戲登入。 請依 LootBar 目前的登入指示操作。本網站不會索取遊戲密碼、驗證碼或付款資料。"
+        ],
+        [
+          "遇到問題怎麼辦？",
+          "請準備訂單編號與錯誤截圖，聯絡 LootBar 客服。切勿向客服提供密碼或驗證碼。"
+        ],
+        [
+          "TEN 連結有什麼優惠？",
+          "符合條件的購買可能支持本網站營運。目前未確認買家專屬額外優惠，請在付款前查看當前條件。"
+        ]
+      ],
+      "choicesTitle": "選擇下一步",
+      "freeTitle": "繼續免費成長",
+      "freeText": "決定消費前，先查看每日任務、活動獎勵與已有資源。",
+      "freeCta": "查看每日任務",
+      "paidTitle": "自願選擇付費途徑",
+      "paidText": "透過儲值指南比較禮包內容與最終價格。",
+      "guideCta": "閱讀儲值指南",
+      "outbound": "透過 TEN 連結查看 LootBar",
+      "noEquivalence": "計算出的資源缺口不代表商品推薦或購買要求。",
+      "disclosure": "聯盟行銷連結：符合條件的購買可能使本網站獲得佣金。購買完全自願。",
+      "evidence": "供應商資訊確認日期",
+      "providerGuide": "LootBar 商品說明",
+      "providerTerms": "LootBar 使用條款",
+      "privacyTitle": "自選使用情況分析",
+      "privacyText": "若您同意，GA4 會按頁面、語言與功能類別衡量指南瀏覽及連結互動。我們的事件不包含表單值、查詢字串或完整來源網址。選擇會儲存在此瀏覽器，無論是否同意都能使用工具。",
+      "allow": "允許分析",
+      "deny": "拒絕分析",
+      "statusAllowed": "分析已允許，可隨時拒絕。",
+      "statusDenied": "分析已關閉，可隨時允許。"
+    },
+    "zh-cn": {
+      "title": "LootBar：充值前确认指南",
+      "lead": "请与游戏内商店比较条件。购买完全自愿。",
+      "faq": [
+        [
+          "LootBar 是什么？",
+          "提供游戏充值的外部交易平台。TilesSurvive.net 是独立指南网站，不处理订单。"
+        ],
+        [
+          "与游戏内购买有何不同？",
+          "价格、付款及发放依 LootBar 的销售条件而定。请比较相同礼包与最终应付金额。"
+        ],
+        [
+          "什么是 Self-TopUp？",
+          "依 LootBar 的说明，您通过其界面登录游戏，再领取已购买的礼包。"
+        ],
+        [
+          "操作顺序是什么？",
+          "确认礼包及适用条件，在 LootBar 付款，按 Self-TopUp 指示操作，再在游戏中确认到账。"
+        ],
+        [
+          "支持哪些国家和付款方式？",
+          "请在结账时确认地区与服务器。LootBar 列有 Visa、借记卡及电子钱包，但实际可用方式因情况而异。"
+        ],
+        [
+          "需要哪些账号信息？",
+          "LootBar 目前的流程可能需要 LootBar 账号及游戏登录。 请按 LootBar 目前的登录指示操作。本网站不会索取游戏密码、验证码或付款资料。"
+        ],
+        [
+          "遇到问题怎么办？",
+          "请准备订单编号与错误截图，联系 LootBar 客服。切勿向客服提供密码或验证码。"
+        ],
+        [
+          "TEN 链接有什么优惠？",
+          "符合条件的购买可能支持本网站运营。目前未确认买家专属额外优惠，请在付款前查看当前条件。"
+        ]
+      ],
+      "choicesTitle": "选择下一步",
+      "freeTitle": "继续免费成长",
+      "freeText": "决定消费前，先查看每日任务、活动奖励与已有资源。",
+      "freeCta": "查看每日任务",
+      "paidTitle": "自愿选择付费途径",
+      "paidText": "通过充值指南比较礼包内容与最终价格。",
+      "guideCta": "阅读充值指南",
+      "outbound": "通过 TEN 链接查看 LootBar",
+      "noEquivalence": "计算出的资源缺口不代表商品推荐或购买要求。",
+      "disclosure": "推广链接：符合条件的购买可能使本网站获得佣金。购买完全自愿。",
+      "evidence": "供应商信息确认日期",
+      "providerGuide": "LootBar 商品说明",
+      "providerTerms": "LootBar 使用条款",
+      "privacyTitle": "可选使用情况分析",
+      "privacyText": "若您同意，GA4 会按页面、语言与功能类别衡量指南浏览及链接互动。我们的事件不包含表单值、查询字符串或完整来源网址。选择会保存在此浏览器，无论是否同意都能使用工具。",
+      "allow": "允许分析",
+      "deny": "拒绝分析",
+      "statusAllowed": "分析已允许，可随时拒绝。",
+      "statusDenied": "分析已关闭，可随时允许。"
+    },
+    "de": {
+      "title": "LootBar: vor dem Aufladen prüfen",
+      "lead": "Vergleiche das Angebot mit dem Shop im Spiel. Ein Kauf ist freiwillig.",
+      "faq": [
+        [
+          "Was ist LootBar?",
+          "Ein externer Marktplatz für Spielaufladungen. TilesSurvive.net ist ein unabhängiger Ratgeber und bearbeitet keine Bestellungen."
+        ],
+        [
+          "Was unterscheidet es vom Kauf im Spiel?",
+          "Preis, Zahlung und Lieferung richten sich nach LootBars Angebot. Vergleiche dasselbe Paket und den endgültigen Zahlbetrag."
+        ],
+        [
+          "Was ist Self-TopUp?",
+          "Laut LootBar meldest du dich über dessen Oberfläche im Spiel an und löst das gekaufte Paket ein."
+        ],
+        [
+          "Wie läuft es ab?",
+          "Prüfe Paket und Voraussetzungen, bezahle bei LootBar, folge Self-TopUp und kontrolliere den Erhalt im Spiel."
+        ],
+        [
+          "Welche Länder und Zahlarten werden unterstützt?",
+          "Prüfe Region und Server beim Bezahlen. LootBar nennt Visa, Debitkarten und digitale Geldbörsen; die Verfügbarkeit variiert."
+        ],
+        [
+          "Welche Kontodaten werden benötigt?",
+          "LootBars aktueller Ablauf kann ein LootBar-Konto und eine Spielanmeldung erfordern. Befolge LootBars aktuelle Anmeldehinweise. Diese Website fragt niemals nach Spielpasswort, Bestätigungscode oder Zahlungsdaten."
+        ],
+        [
+          "Wer hilft bei Problemen?",
+          "Kontaktiere LootBars Support mit Bestellnummer und Fehlerbildschirm. Schicke dem Support niemals ein Passwort oder einen Bestätigungscode."
+        ],
+        [
+          "Was bietet der TEN-Link?",
+          "Berechtigte Käufe können diese Website unterstützen. Ein exklusiver Käufervorteil ist hier nicht bestätigt; prüfe das aktuelle Angebot vor der Zahlung."
+        ]
+      ],
+      "choicesTitle": "Wähle deinen nächsten Schritt",
+      "freeTitle": "Kostenlos weiterkommen",
+      "freeText": "Prüfe tägliche Aufgaben, Eventbelohnungen und vorhandene Ressourcen, bevor du Geld ausgibst.",
+      "freeCta": "Tägliche Aufgaben ansehen",
+      "paidTitle": "Freiwillige Kaufoption",
+      "paidText": "Vergleiche Endpreis und Paketinhalt mithilfe des Aufladeleitfadens.",
+      "guideCta": "Aufladeleitfaden lesen",
+      "outbound": "LootBar über TEN ansehen",
+      "noEquivalence": "Ein berechneter Ressourcenmangel ist weder eine Produktempfehlung noch eine Kaufpflicht.",
+      "disclosure": "Affiliate-Link: Bei berechtigten Käufen kann diese Website eine Provision erhalten. Ein Kauf ist freiwillig.",
+      "evidence": "Anbieterinformationen geprüft am",
+      "providerGuide": "LootBar-Produktanleitung",
+      "providerTerms": "LootBar-Nutzungsbedingungen",
+      "privacyTitle": "Freiwillige Nutzungsanalyse",
+      "privacyText": "Mit deiner Zustimmung misst GA4 Leitfadenaufrufe und Linkinteraktionen nach Seite, Sprache und Funktion. Unsere Ereignisse enthalten keine Formularwerte, URL-Abfragen oder vollständigen Verweisadressen. Deine Wahl wird in diesem Browser gespeichert; die Werkzeuge funktionieren unabhängig davon.",
+      "allow": "Analyse erlauben",
+      "deny": "Analyse ablehnen",
+      "statusAllowed": "Analyse erlaubt. Du kannst sie jederzeit ablehnen.",
+      "statusDenied": "Analyse ausgeschaltet. Du kannst sie jederzeit erlauben."
+    },
+    "ru": {
+      "title": "LootBar: что проверить перед пополнением",
+      "lead": "Сравните предложение с магазином в игре. Покупка добровольна.",
+      "faq": [
+        [
+          "Что такое LootBar?",
+          "Внешняя площадка для пополнения игр. TilesSurvive.net — независимый справочник, который не обрабатывает заказы."
+        ],
+        [
+          "Чем это отличается от покупки в игре?",
+          "Цена, оплата и получение зависят от условий LootBar. Сравнивайте одинаковый набор и итоговую сумму."
+        ],
+        [
+          "Что такое Self-TopUp?",
+          "По описанию LootBar, вы входите в игру через его интерфейс и получаете купленный набор."
+        ],
+        [
+          "Каков порядок действий?",
+          "Проверьте набор и условия, оплатите на LootBar, следуйте инструкциям Self-TopUp, затем проверьте получение в игре."
+        ],
+        [
+          "Какие страны и способы оплаты доступны?",
+          "Проверьте регион и сервер при оформлении. LootBar указывает Visa, дебетовые карты и электронные кошельки; доступность различается."
+        ],
+        [
+          "Какие данные аккаунта нужны?",
+          "Текущая процедура LootBar может потребовать аккаунт LootBar и вход в игру. Следуйте актуальным инструкциям входа на LootBar. Этот сайт никогда не запрашивает пароль игры, код подтверждения или платёжные данные."
+        ],
+        [
+          "Куда обратиться при проблеме?",
+          "Передайте поддержке LootBar номер заказа и снимок ошибки. Никогда не отправляйте поддержке пароль или код подтверждения."
+        ],
+        [
+          "Что даёт ссылка TEN?",
+          "Подходящие покупки могут поддержать этот сайт. Особая выгода для покупателя здесь не подтверждена; проверьте актуальное предложение перед оплатой."
+        ]
+      ],
+      "choicesTitle": "Выберите следующий шаг",
+      "freeTitle": "Продолжить развитие бесплатно",
+      "freeText": "Перед покупкой проверьте ежедневные задания, награды событий и накопленные ресурсы.",
+      "freeCta": "Посмотреть ежедневные задания",
+      "paidTitle": "Необязательный платный вариант",
+      "paidText": "Сравните итоговую цену и состав набора с помощью руководства по пополнению.",
+      "guideCta": "Читать руководство по пополнению",
+      "outbound": "Открыть LootBar по ссылке TEN",
+      "noEquivalence": "Расчётный дефицит ресурсов не означает рекомендацию товара или необходимость покупки.",
+      "disclosure": "Партнёрская ссылка: подходящие покупки могут принести сайту комиссию. Покупка добровольна.",
+      "evidence": "Информация продавца проверена",
+      "providerGuide": "Инструкция LootBar",
+      "providerTerms": "Условия LootBar",
+      "privacyTitle": "Необязательная аналитика использования",
+      "privacyText": "С вашего согласия GA4 измеряет просмотры руководств и переходы по ссылкам по категориям страниц, языков и функций. Наши события не содержат значений форм, строк запроса или полного адреса источника перехода. Выбор сохраняется в этом браузере; инструменты работают в любом случае.",
+      "allow": "Разрешить аналитику",
+      "deny": "Отказаться от аналитики",
+      "statusAllowed": "Аналитика разрешена. От неё можно отказаться в любое время.",
+      "statusDenied": "Аналитика отключена. Её можно разрешить в любое время."
+    },
+    "fr": {
+      "title": "LootBar : à vérifier avant de recharger",
+      "lead": "Comparez l'offre avec la boutique du jeu. L'achat reste facultatif.",
+      "faq": [
+        [
+          "Qu'est-ce que LootBar ?",
+          "Une place de marché externe pour les recharges de jeux. TilesSurvive.net est un guide indépendant et ne traite aucune commande."
+        ],
+        [
+          "Quelle différence avec un achat dans le jeu ?",
+          "Le prix, le paiement et la livraison dépendent de l'offre de LootBar. Comparez le même pack et le montant final à payer."
+        ],
+        [
+          "Qu'est-ce que Self-TopUp ?",
+          "Selon LootBar, cette procédure permet de se connecter au jeu via son interface et de récupérer le pack acheté."
+        ],
+        [
+          "Quelles sont les étapes ?",
+          "Vérifiez le pack et les conditions, payez sur LootBar, suivez Self-TopUp, puis vérifiez la réception dans le jeu."
+        ],
+        [
+          "Quels pays et paiements sont pris en charge ?",
+          "Vérifiez votre région et votre serveur lors du paiement. LootBar cite Visa, les cartes de débit et les portefeuilles numériques ; leur disponibilité varie."
+        ],
+        [
+          "Quelles informations de compte faut-il fournir ?",
+          "La procédure actuelle de LootBar peut nécessiter un compte LootBar et une connexion au jeu. Suivez les consignes de connexion actuelles de LootBar. Ce site ne demande jamais votre mot de passe du jeu, votre code de vérification ni vos coordonnées de paiement."
+        ],
+        [
+          "Qui contacter en cas de problème ?",
+          "Contactez l'assistance LootBar avec le numéro de commande et une capture de l'erreur. Ne transmettez jamais de mot de passe ni de code de vérification à l'assistance."
+        ],
+        [
+          "Que propose le lien TEN ?",
+          "Les achats admissibles peuvent soutenir ce site. Aucun avantage exclusif pour l'acheteur n'est confirmé ici ; vérifiez l'offre actuelle avant de payer."
+        ]
+      ],
+      "choicesTitle": "Choisissez la suite",
+      "freeTitle": "Continuer à progresser gratuitement",
+      "freeText": "Consultez les missions quotidiennes, les récompenses d'événements et vos ressources avant de dépenser.",
+      "freeCta": "Voir les missions quotidiennes",
+      "paidTitle": "Option payante facultative",
+      "paidText": "Comparez le prix final et le contenu du pack à l'aide du guide de recharge.",
+      "guideCta": "Lire le guide de recharge",
+      "outbound": "Voir LootBar via TEN",
+      "noEquivalence": "Un manque de ressources calculé n'est ni une recommandation de produit ni une obligation d'achat.",
+      "disclosure": "Lien d'affiliation : les achats admissibles peuvent rapporter une commission à ce site. L'achat reste facultatif.",
+      "evidence": "Informations du fournisseur vérifiées le",
+      "providerGuide": "Instructions du produit LootBar",
+      "providerTerms": "Conditions de LootBar",
+      "privacyTitle": "Analyse d'utilisation facultative",
+      "privacyText": "Avec votre accord, GA4 mesure les consultations des guides et les interactions avec les liens par page, langue et fonction. Nos événements excluent les valeurs des formulaires, les paramètres d'URL et l'adresse complète de provenance. Votre choix est enregistré dans ce navigateur ; les outils fonctionnent dans les deux cas.",
+      "allow": "Autoriser l'analyse",
+      "deny": "Refuser l'analyse",
+      "statusAllowed": "Analyse autorisée. Vous pouvez la refuser à tout moment.",
+      "statusDenied": "Analyse désactivée. Vous pouvez l'autoriser à tout moment."
+    },
+    "it": {
+      "title": "LootBar: cosa controllare prima di ricaricare",
+      "lead": "Confronta l'offerta con il negozio del gioco. L'acquisto è facoltativo.",
+      "faq": [
+        [
+          "Che cos'è LootBar?",
+          "Un mercato esterno per le ricariche dei giochi. TilesSurvive.net è una guida indipendente e non gestisce gli ordini."
+        ],
+        [
+          "Che differenza c'è rispetto all'acquisto nel gioco?",
+          "Prezzo, pagamento e consegna seguono l'offerta di LootBar. Confronta lo stesso pacchetto e l'importo finale da pagare."
+        ],
+        [
+          "Che cos'è Self-TopUp?",
+          "Secondo LootBar, puoi accedere al gioco tramite la sua interfaccia e riscattare il pacchetto acquistato."
+        ],
+        [
+          "Quali sono i passaggi?",
+          "Controlla pacchetto e requisiti, paga su LootBar, segui Self-TopUp e verifica la consegna nel gioco."
+        ],
+        [
+          "Quali paesi e pagamenti sono supportati?",
+          "Controlla regione e server al pagamento. LootBar indica Visa, carte di debito e portafogli digitali; la disponibilità varia."
+        ],
+        [
+          "Quali dati dell'account servono?",
+          "La procedura attuale di LootBar può richiedere un account LootBar e l'accesso al gioco. Segui le attuali istruzioni di accesso di LootBar. Questo sito non chiede mai password del gioco, codici di verifica o dati di pagamento."
+        ],
+        [
+          "Chi contattare in caso di problemi?",
+          "Contatta l'assistenza LootBar con il numero d'ordine e un'immagine dell'errore. Non inviare mai password o codici di verifica all'assistenza."
+        ],
+        [
+          "Che cosa offre il link TEN?",
+          "Gli acquisti idonei possono sostenere questo sito. Non è confermato alcun vantaggio esclusivo per l'acquirente; controlla l'offerta attuale prima di pagare."
+        ]
+      ],
+      "choicesTitle": "Scegli il prossimo passo",
+      "freeTitle": "Continua a crescere gratis",
+      "freeText": "Controlla missioni giornaliere, ricompense degli eventi e risorse disponibili prima di spendere.",
+      "freeCta": "Vedi le missioni giornaliere",
+      "paidTitle": "Opzione a pagamento facoltativa",
+      "paidText": "Confronta il prezzo finale e il contenuto del pacchetto con la guida alla ricarica.",
+      "guideCta": "Leggi la guida alla ricarica",
+      "outbound": "Visita LootBar tramite TEN",
+      "noEquivalence": "Una carenza di risorse calcolata non è un consiglio d'acquisto né un obbligo di comprare.",
+      "disclosure": "Link affiliato: gli acquisti idonei possono generare una commissione per questo sito. L'acquisto è facoltativo.",
+      "evidence": "Informazioni del fornitore verificate il",
+      "providerGuide": "Istruzioni del prodotto LootBar",
+      "providerTerms": "Condizioni di LootBar",
+      "privacyTitle": "Analisi d'uso facoltativa",
+      "privacyText": "Se acconsenti, GA4 misura le visite alle guide e le interazioni con i link per pagina, lingua e funzione. I nostri eventi escludono valori dei moduli, parametri URL e indirizzi completi di provenienza. La scelta viene salvata in questo browser; gli strumenti funzionano in entrambi i casi.",
+      "allow": "Consenti l'analisi",
+      "deny": "Rifiuta l'analisi",
+      "statusAllowed": "Analisi consentita. Puoi rifiutarla in qualsiasi momento.",
+      "statusDenied": "Analisi disattivata. Puoi consentirla in qualsiasi momento."
+    },
+    "nl": {
+      "title": "LootBar: controleer dit voordat je opwaardeert",
+      "lead": "Vergelijk het aanbod met de winkel in het spel. Kopen is vrijwillig.",
+      "faq": [
+        [
+          "Wat is LootBar?",
+          "Een externe marktplaats voor het opwaarderen van spellen. TilesSurvive.net is een onafhankelijke gids en verwerkt geen bestellingen."
+        ],
+        [
+          "Wat is het verschil met kopen in het spel?",
+          "Prijs, betaling en levering volgen het aanbod van LootBar. Vergelijk hetzelfde pakket en het uiteindelijke betaalbedrag."
+        ],
+        [
+          "Wat is Self-TopUp?",
+          "Volgens LootBar log je via hun interface in op het spel en wissel je het gekochte pakket in."
+        ],
+        [
+          "Wat zijn de stappen?",
+          "Controleer pakket en voorwaarden, betaal op LootBar, volg Self-TopUp en controleer de ontvangst in het spel."
+        ],
+        [
+          "Welke landen en betaalmethoden worden ondersteund?",
+          "Controleer je regio en server bij het afrekenen. LootBar noemt Visa, betaalpassen en digitale portemonnees; beschikbaarheid verschilt."
+        ],
+        [
+          "Welke accountgegevens zijn nodig?",
+          "De huidige procedure van LootBar kan een LootBar-account en aanmelding bij het spel vereisen. Volg de actuele aanmeldinstructies van LootBar. Deze site vraagt nooit om je spelwachtwoord, verificatiecode of betaalgegevens."
+        ],
+        [
+          "Wie helpt bij een probleem?",
+          "Neem contact op met LootBar-ondersteuning met het bestelnummer en een schermafbeelding van de fout. Stuur nooit een wachtwoord of verificatiecode naar de ondersteuning."
+        ],
+        [
+          "Wat biedt de TEN-link?",
+          "In aanmerking komende aankopen kunnen deze site steunen. Een exclusief kopersvoordeel is hier niet bevestigd; controleer het actuele aanbod voordat je betaalt."
+        ]
+      ],
+      "choicesTitle": "Kies je volgende stap",
+      "freeTitle": "Gratis verder groeien",
+      "freeText": "Bekijk dagelijkse taken, evenementbeloningen en je beschikbare grondstoffen voordat je geld uitgeeft.",
+      "freeCta": "Dagelijkse taken bekijken",
+      "paidTitle": "Vrijwillige betaalde optie",
+      "paidText": "Vergelijk de eindprijs en pakketinhoud met behulp van de opwaardeergids.",
+      "guideCta": "De opwaardeergids lezen",
+      "outbound": "LootBar via TEN bekijken",
+      "noEquivalence": "Een berekend grondstoffentekort is geen productaanbeveling of koopverplichting.",
+      "disclosure": "Affiliatelink: bij in aanmerking komende aankopen kan deze site commissie ontvangen. Kopen is vrijwillig.",
+      "evidence": "Informatie van aanbieder gecontroleerd op",
+      "providerGuide": "LootBar-productinstructies",
+      "providerTerms": "LootBar-voorwaarden",
+      "privacyTitle": "Optionele gebruiksanalyse",
+      "privacyText": "Met jouw toestemming meet GA4 gidsweergaven en linkinteracties per pagina, taal en functie. Onze gebeurtenissen bevatten geen formulierwaarden, URL-query's of volledige verwijzende adressen. Je keuze wordt in deze browser opgeslagen; de hulpmiddelen werken in beide gevallen.",
+      "allow": "Analyse toestaan",
+      "deny": "Analyse weigeren",
+      "statusAllowed": "Analyse toegestaan. Je kunt dit op elk moment weigeren.",
+      "statusDenied": "Analyse uitgeschakeld. Je kunt dit op elk moment toestaan."
+    },
+    "es": {
+      "title": "LootBar: qué revisar antes de recargar",
+      "lead": "Compara la oferta con la tienda del juego. Comprar es opcional.",
+      "faq": [
+        [
+          "¿Qué es LootBar?",
+          "Un mercado externo de recargas para juegos. TilesSurvive.net es una guía independiente y no tramita pedidos."
+        ],
+        [
+          "¿En qué se diferencia de comprar dentro del juego?",
+          "El precio, el pago y la entrega dependen de la oferta de LootBar. Compara el mismo paquete y el importe final a pagar."
+        ],
+        [
+          "¿Qué es Self-TopUp?",
+          "Según LootBar, accedes al juego a través de su interfaz y canjeas el paquete comprado."
+        ],
+        [
+          "¿Cuáles son los pasos?",
+          "Revisa el paquete y los requisitos, paga en LootBar, sigue Self-TopUp y comprueba la entrega en el juego."
+        ],
+        [
+          "¿Qué países y pagos se admiten?",
+          "Comprueba tu región y servidor al pagar. LootBar menciona Visa, tarjetas de débito y monederos digitales; la disponibilidad varía."
+        ],
+        [
+          "¿Qué datos de cuenta se necesitan?",
+          "El proceso actual de LootBar puede requerir una cuenta de LootBar y el acceso al juego. Sigue las instrucciones de acceso actuales de LootBar. Este sitio nunca solicita tu contraseña del juego, código de verificación ni datos de pago."
+        ],
+        [
+          "¿Quién resuelve los problemas?",
+          "Contacta con el soporte de LootBar con el número de pedido y una captura del error. Nunca envíes contraseñas ni códigos de verificación al soporte."
+        ],
+        [
+          "¿Qué ofrece el enlace TEN?",
+          "Las compras que cumplan las condiciones pueden apoyar este sitio. No se ha confirmado aquí una ventaja exclusiva para el comprador; revisa la oferta actual antes de pagar."
+        ]
+      ],
+      "choicesTitle": "Elige tu siguiente paso",
+      "freeTitle": "Sigue progresando gratis",
+      "freeText": "Revisa las misiones diarias, las recompensas de eventos y tus recursos antes de gastar.",
+      "freeCta": "Ver misiones diarias",
+      "paidTitle": "Opción de pago voluntaria",
+      "paidText": "Compara el precio final y el contenido del paquete con la guía de recarga.",
+      "guideCta": "Leer la guía de recarga",
+      "outbound": "Ver LootBar mediante TEN",
+      "noEquivalence": "Un déficit de recursos calculado no es una recomendación de producto ni una obligación de compra.",
+      "disclosure": "Enlace de afiliado: las compras que cumplan las condiciones pueden generar una comisión para este sitio. Comprar es opcional.",
+      "evidence": "Información del proveedor revisada el",
+      "providerGuide": "Instrucciones del producto LootBar",
+      "providerTerms": "Condiciones de LootBar",
+      "privacyTitle": "Análisis de uso opcional",
+      "privacyText": "Si lo permites, GA4 mide las visitas a guías y las interacciones con enlaces por página, idioma y función. Nuestros eventos excluyen valores de formularios, parámetros de URL y direcciones completas de procedencia. Tu elección se guarda en este navegador; las herramientas funcionan en ambos casos.",
+      "allow": "Permitir análisis",
+      "deny": "Rechazar análisis",
+      "statusAllowed": "Análisis permitido. Puedes rechazarlo en cualquier momento.",
+      "statusDenied": "Análisis desactivado. Puedes permitirlo en cualquier momento."
+    },
+    "pt": {
+      "title": "LootBar: confira antes de recarregar",
+      "lead": "Compare a oferta com a loja do jogo. A compra é opcional.",
+      "faq": [
+        [
+          "O que é LootBar?",
+          "Um mercado externo de recargas para jogos. TilesSurvive.net é um guia independente e não processa pedidos."
+        ],
+        [
+          "Qual é a diferença em relação à compra no jogo?",
+          "Preço, pagamento e entrega seguem a oferta da LootBar. Compare o mesmo pacote e o valor final a pagar."
+        ],
+        [
+          "O que é Self-TopUp?",
+          "Segundo a LootBar, você entra no jogo pela interface dela e resgata o pacote comprado."
+        ],
+        [
+          "Quais são as etapas?",
+          "Confira o pacote e os requisitos, pague na LootBar, siga o Self-TopUp e verifique o recebimento no jogo."
+        ],
+        [
+          "Quais países e pagamentos são aceitos?",
+          "Confira sua região e servidor ao pagar. A LootBar cita Visa, cartões de débito e carteiras digitais; a disponibilidade varia."
+        ],
+        [
+          "Quais dados da conta são necessários?",
+          "O processo atual da LootBar pode exigir uma conta LootBar e o acesso ao jogo. Siga as instruções de acesso atuais da LootBar. Este site nunca pede sua senha do jogo, código de verificação ou dados de pagamento."
+        ],
+        [
+          "Quem resolve problemas?",
+          "Entre em contato com o suporte da LootBar com o número do pedido e uma captura do erro. Nunca envie senha ou código de verificação ao suporte."
+        ],
+        [
+          "O que o link TEN oferece?",
+          "Compras elegíveis podem apoiar este site. Nenhum benefício exclusivo para o comprador foi confirmado aqui; confira a oferta atual antes de pagar."
+        ]
+      ],
+      "choicesTitle": "Escolha seu próximo passo",
+      "freeTitle": "Continue evoluindo de graça",
+      "freeText": "Confira missões diárias, recompensas de eventos e seus recursos antes de gastar.",
+      "freeCta": "Ver missões diárias",
+      "paidTitle": "Opção paga voluntária",
+      "paidText": "Compare o preço final e o conteúdo do pacote com o guia de recarga.",
+      "guideCta": "Ler o guia de recarga",
+      "outbound": "Ver LootBar pelo link TEN",
+      "noEquivalence": "Uma falta de recursos calculada não é recomendação de produto nem exigência de compra.",
+      "disclosure": "Link de afiliado: compras elegíveis podem gerar comissão para este site. A compra é opcional.",
+      "evidence": "Informações do fornecedor verificadas em",
+      "providerGuide": "Instruções do produto LootBar",
+      "providerTerms": "Termos da LootBar",
+      "privacyTitle": "Análise de uso opcional",
+      "privacyText": "Se você permitir, o GA4 mede visualizações de guias e interações com links por página, idioma e função. Nossos eventos excluem valores de formulários, parâmetros de URL e endereços completos de origem. Sua escolha fica salva neste navegador; as ferramentas funcionam de qualquer forma.",
+      "allow": "Permitir análise",
+      "deny": "Recusar análise",
+      "statusAllowed": "Análise permitida. Você pode recusá-la a qualquer momento.",
+      "statusDenied": "Análise desativada. Você pode permiti-la a qualquer momento."
+    },
+    "pl": {
+      "title": "LootBar: sprawdź przed doładowaniem",
+      "lead": "Porównaj ofertę ze sklepem w grze. Zakup jest dobrowolny.",
+      "faq": [
+        [
+          "Czym jest LootBar?",
+          "Zewnętrzną platformą doładowań do gier. TilesSurvive.net to niezależny poradnik, który nie obsługuje zamówień."
+        ],
+        [
+          "Czym różni się to od zakupu w grze?",
+          "Cena, płatność i dostawa zależą od oferty LootBar. Porównaj ten sam pakiet i końcową kwotę do zapłaty."
+        ],
+        [
+          "Czym jest Self-TopUp?",
+          "Według LootBar logujesz się do gry przez jego interfejs i odbierasz zakupiony pakiet."
+        ],
+        [
+          "Jakie są kolejne kroki?",
+          "Sprawdź pakiet i warunki, zapłać w LootBar, wykonaj instrukcje Self-TopUp i sprawdź odbiór w grze."
+        ],
+        [
+          "Jakie kraje i płatności są obsługiwane?",
+          "Sprawdź region i serwer przy płatności. LootBar wymienia Visa, karty debetowe i portfele cyfrowe; dostępność jest różna."
+        ],
+        [
+          "Jakie dane konta są potrzebne?",
+          "Aktualna procedura LootBar może wymagać konta LootBar i zalogowania do gry. Postępuj zgodnie z aktualnymi instrukcjami logowania LootBar. Ta witryna nigdy nie prosi o hasło do gry, kod weryfikacyjny ani dane płatnicze."
+        ],
+        [
+          "Kto pomaga w razie problemu?",
+          "Skontaktuj się z pomocą LootBar, podając numer zamówienia i zrzut błędu. Nigdy nie wysyłaj pomocy hasła ani kodu weryfikacyjnego."
+        ],
+        [
+          "Co daje link TEN?",
+          "Kwalifikujące się zakupy mogą wspierać tę witrynę. Nie potwierdzono tu wyjątkowej korzyści dla kupującego; sprawdź bieżącą ofertę przed zapłatą."
+        ]
+      ],
+      "choicesTitle": "Wybierz następny krok",
+      "freeTitle": "Rozwijaj się dalej za darmo",
+      "freeText": "Przed wydaniem pieniędzy sprawdź codzienne zadania, nagrody wydarzeń i posiadane zasoby.",
+      "freeCta": "Zobacz codzienne zadania",
+      "paidTitle": "Dobrowolna płatna opcja",
+      "paidText": "Porównaj końcową cenę i zawartość pakietu z poradnikiem doładowania.",
+      "guideCta": "Przeczytaj poradnik doładowania",
+      "outbound": "Zobacz LootBar przez TEN",
+      "noEquivalence": "Obliczony niedobór zasobów nie stanowi rekomendacji produktu ani wymogu zakupu.",
+      "disclosure": "Link partnerski: kwalifikujące się zakupy mogą przynieść tej witrynie prowizję. Zakup jest dobrowolny.",
+      "evidence": "Informacje dostawcy sprawdzono",
+      "providerGuide": "Instrukcje produktu LootBar",
+      "providerTerms": "Warunki LootBar",
+      "privacyTitle": "Opcjonalna analiza korzystania",
+      "privacyText": "Za twoją zgodą GA4 mierzy odsłony poradników i użycie linków według strony, języka i funkcji. Nasze zdarzenia nie zawierają wartości formularzy, parametrów URL ani pełnych adresów odsyłających. Wybór jest zapisywany w tej przeglądarce; narzędzia działają w obu przypadkach.",
+      "allow": "Zezwól na analizę",
+      "deny": "Odmów analizy",
+      "statusAllowed": "Analiza włączona. Możesz ją odrzucić w dowolnym momencie.",
+      "statusDenied": "Analiza wyłączona. Możesz ją włączyć w dowolnym momencie."
+    },
+    "sv": {
+      "title": "LootBar: kontrollera före påfyllning",
+      "lead": "Jämför erbjudandet med butiken i spelet. Köp är frivilliga.",
+      "faq": [
+        [
+          "Vad är LootBar?",
+          "En extern marknadsplats för spelpåfyllningar. TilesSurvive.net är en oberoende guide och hanterar inga beställningar."
+        ],
+        [
+          "Hur skiljer det sig från köp i spelet?",
+          "Pris, betalning och leverans följer LootBars erbjudande. Jämför samma paket och det slutliga beloppet att betala."
+        ],
+        [
+          "Vad är Self-TopUp?",
+          "Enligt LootBar loggar du in i spelet via deras gränssnitt och löser in det köpta paketet."
+        ],
+        [
+          "Vilka är stegen?",
+          "Kontrollera paket och villkor, betala hos LootBar, följ Self-TopUp och kontrollera mottagandet i spelet."
+        ],
+        [
+          "Vilka länder och betalningar stöds?",
+          "Kontrollera region och server i kassan. LootBar nämner Visa, betalkort och digitala plånböcker; tillgängligheten varierar."
+        ],
+        [
+          "Vilka kontouppgifter behövs?",
+          "LootBars aktuella flöde kan kräva ett LootBar-konto och inloggning i spelet. Följ LootBars aktuella inloggningsanvisningar. Den här webbplatsen frågar aldrig efter spellösenord, verifieringskod eller betalningsuppgifter."
+        ],
+        [
+          "Vem hjälper vid problem?",
+          "Kontakta LootBars support med ordernummer och en bild av felet. Skicka aldrig lösenord eller verifieringskoder till supporten."
+        ],
+        [
+          "Vad ger TEN-länken?",
+          "Kvalificerade köp kan stödja webbplatsen. Ingen exklusiv köparförmån är bekräftad här; kontrollera det aktuella erbjudandet före betalning."
+        ]
+      ],
+      "choicesTitle": "Välj nästa steg",
+      "freeTitle": "Fortsätt utvecklas gratis",
+      "freeText": "Kontrollera dagliga uppdrag, evenemangsbelöningar och sparade resurser innan du spenderar pengar.",
+      "freeCta": "Visa dagliga uppdrag",
+      "paidTitle": "Frivilligt betalalternativ",
+      "paidText": "Jämför slutpris och paketinnehåll med hjälp av påfyllningsguiden.",
+      "guideCta": "Läs påfyllningsguiden",
+      "outbound": "Visa LootBar via TEN",
+      "noEquivalence": "En beräknad resursbrist är ingen produktrekommendation eller något köpkrav.",
+      "disclosure": "Affiliatelänk: kvalificerade köp kan ge webbplatsen provision. Köp är frivilliga.",
+      "evidence": "Leverantörsinformation kontrollerad",
+      "providerGuide": "LootBars produktanvisningar",
+      "providerTerms": "LootBars villkor",
+      "privacyTitle": "Valfri användningsanalys",
+      "privacyText": "Om du tillåter det mäter GA4 guidevisningar och länkinteraktioner efter sida, språk och funktion. Våra händelser innehåller inte formulärvärden, URL-parametrar eller fullständiga hänvisningsadresser. Ditt val sparas i webbläsaren; verktygen fungerar oavsett.",
+      "allow": "Tillåt analys",
+      "deny": "Avböj analys",
+      "statusAllowed": "Analys tillåten. Du kan avböja när som helst.",
+      "statusDenied": "Analys avstängd. Du kan tillåta den när som helst."
+    },
+    "nb": {
+      "title": "LootBar: sjekk før du fyller på",
+      "lead": "Sammenlign tilbudet med butikken i spillet. Kjøp er frivillig.",
+      "faq": [
+        [
+          "Hva er LootBar?",
+          "En ekstern markedsplass for spillpåfylling. TilesSurvive.net er en uavhengig veiledning og behandler ikke bestillinger."
+        ],
+        [
+          "Hva er forskjellen fra kjøp i spillet?",
+          "Pris, betaling og levering følger LootBars tilbud. Sammenlign samme pakke og det endelige beløpet å betale."
+        ],
+        [
+          "Hva er Self-TopUp?",
+          "Ifølge LootBar logger du inn i spillet gjennom deres grensesnitt og løser inn pakken du har kjøpt."
+        ],
+        [
+          "Hva er fremgangsmåten?",
+          "Sjekk pakke og vilkår, betal hos LootBar, følg Self-TopUp og kontroller mottaket i spillet."
+        ],
+        [
+          "Hvilke land og betalingsmåter støttes?",
+          "Sjekk region og server i kassen. LootBar nevner Visa, debetkort og digitale lommebøker; tilgjengeligheten varierer."
+        ],
+        [
+          "Hvilke kontoopplysninger trengs?",
+          "LootBars gjeldende fremgangsmåte kan kreve en LootBar-konto og innlogging i spillet. Følg LootBars gjeldende innloggingsveiledning. Dette nettstedet ber aldri om spillpassord, bekreftelseskoder eller betalingsopplysninger."
+        ],
+        [
+          "Hvem hjelper ved problemer?",
+          "Kontakt LootBars kundestøtte med ordrenummer og et bilde av feilen. Send aldri passord eller bekreftelseskoder til kundestøtten."
+        ],
+        [
+          "Hva gir TEN-lenken?",
+          "Kvalifiserende kjøp kan støtte nettstedet. Ingen eksklusiv kjøperfordel er bekreftet her; sjekk det gjeldende tilbudet før betaling."
+        ]
+      ],
+      "choicesTitle": "Velg neste steg",
+      "freeTitle": "Fortsett utviklingen gratis",
+      "freeText": "Sjekk daglige oppdrag, arrangementsbelønninger og oppsparte ressurser før du bruker penger.",
+      "freeCta": "Se daglige oppdrag",
+      "paidTitle": "Frivillig betalt alternativ",
+      "paidText": "Sammenlign sluttpris og pakkeinnhold med påfyllingsguiden.",
+      "guideCta": "Les påfyllingsguiden",
+      "outbound": "Se LootBar via TEN",
+      "noEquivalence": "En beregnet ressursmangel er ikke en produktanbefaling eller et kjøpskrav.",
+      "disclosure": "Partnerlenke: kvalifiserende kjøp kan gi nettstedet provisjon. Kjøp er frivillig.",
+      "evidence": "Leverandørinformasjon kontrollert",
+      "providerGuide": "LootBars produktveiledning",
+      "providerTerms": "LootBars vilkår",
+      "privacyTitle": "Valgfri bruksanalyse",
+      "privacyText": "Med ditt samtykke måler GA4 guidevisninger og lenkebruk etter side, språk og funksjon. Våre hendelser inneholder ikke skjemaverdier, URL-parametere eller fullstendige henvisningsadresser. Valget lagres i denne nettleseren; verktøyene fungerer uansett.",
+      "allow": "Tillat analyse",
+      "deny": "Avslå analyse",
+      "statusAllowed": "Analyse er tillatt. Du kan avslå når som helst.",
+      "statusDenied": "Analyse er slått av. Du kan tillate den når som helst."
+    },
+    "id": {
+      "title": "LootBar: periksa sebelum isi ulang",
+      "lead": "Bandingkan penawaran dengan toko dalam game. Pembelian bersifat opsional.",
+      "faq": [
+        [
+          "Apa itu LootBar?",
+          "Lokapasar eksternal untuk isi ulang game. TilesSurvive.net adalah panduan independen dan tidak memproses pesanan."
+        ],
+        [
+          "Apa bedanya dengan membeli di dalam game?",
+          "Harga, pembayaran, dan pengiriman mengikuti penawaran LootBar. Bandingkan paket yang sama dan jumlah akhir yang harus dibayar."
+        ],
+        [
+          "Apa itu Self-TopUp?",
+          "Menurut LootBar, Anda masuk ke game melalui antarmukanya lalu menukarkan paket yang dibeli."
+        ],
+        [
+          "Bagaimana urutannya?",
+          "Periksa paket dan persyaratan, bayar di LootBar, ikuti Self-TopUp, lalu pastikan paket diterima dalam game."
+        ],
+        [
+          "Negara dan pembayaran apa yang didukung?",
+          "Periksa wilayah dan server saat membayar. LootBar menyebut Visa, kartu debit, dan dompet digital; ketersediaannya berbeda-beda."
+        ],
+        [
+          "Informasi akun apa yang diperlukan?",
+          "Proses LootBar saat ini mungkin memerlukan akun LootBar dan akses masuk ke game. Ikuti petunjuk masuk terbaru dari LootBar. Situs ini tidak pernah meminta kata sandi game, kode verifikasi, atau data pembayaran Anda."
+        ],
+        [
+          "Siapa yang menangani masalah?",
+          "Hubungi dukungan LootBar dengan nomor pesanan dan tangkapan layar kesalahan. Jangan pernah mengirim kata sandi atau kode verifikasi kepada dukungan."
+        ],
+        [
+          "Apa manfaat tautan TEN?",
+          "Pembelian yang memenuhi syarat dapat mendukung situs ini. Belum ada manfaat eksklusif pembeli yang dikonfirmasi di sini; periksa penawaran terkini sebelum membayar."
+        ]
+      ],
+      "choicesTitle": "Pilih langkah berikutnya",
+      "freeTitle": "Terus berkembang secara gratis",
+      "freeText": "Periksa misi harian, hadiah acara, dan sumber daya yang tersimpan sebelum membelanjakan uang.",
+      "freeCta": "Lihat misi harian",
+      "paidTitle": "Pilihan berbayar opsional",
+      "paidText": "Bandingkan harga akhir dan isi paket melalui panduan isi ulang.",
+      "guideCta": "Baca panduan isi ulang",
+      "outbound": "Lihat LootBar melalui TEN",
+      "noEquivalence": "Kekurangan sumber daya hasil perhitungan bukan rekomendasi produk atau kewajiban membeli.",
+      "disclosure": "Tautan afiliasi: pembelian yang memenuhi syarat dapat memberi situs ini komisi. Pembelian bersifat opsional.",
+      "evidence": "Informasi penyedia diperiksa pada",
+      "providerGuide": "Petunjuk produk LootBar",
+      "providerTerms": "Ketentuan LootBar",
+      "privacyTitle": "Analisis penggunaan opsional",
+      "privacyText": "Jika Anda mengizinkan, GA4 mengukur kunjungan panduan dan interaksi tautan menurut halaman, bahasa, dan fitur. Peristiwa kami tidak memuat nilai formulir, parameter URL, atau alamat perujuk lengkap. Pilihan disimpan di browser ini; alat tetap dapat digunakan dalam kedua pilihan.",
+      "allow": "Izinkan analisis",
+      "deny": "Tolak analisis",
+      "statusAllowed": "Analisis diizinkan. Anda dapat menolaknya kapan saja.",
+      "statusDenied": "Analisis nonaktif. Anda dapat mengizinkannya kapan saja."
+    },
+    "ms": {
+      "title": "LootBar: semak sebelum tambah nilai",
+      "lead": "Bandingkan tawaran dengan kedai dalam permainan. Pembelian adalah pilihan.",
+      "faq": [
+        [
+          "Apakah LootBar?",
+          "Pasaran luar untuk tambah nilai permainan. TilesSurvive.net ialah panduan bebas dan tidak memproses pesanan."
+        ],
+        [
+          "Apakah bezanya dengan membeli dalam permainan?",
+          "Harga, pembayaran dan penghantaran mengikut tawaran LootBar. Bandingkan pakej yang sama dan jumlah akhir yang perlu dibayar."
+        ],
+        [
+          "Apakah Self-TopUp?",
+          "Menurut LootBar, anda log masuk ke permainan melalui antara mukanya dan menebus pakej yang dibeli."
+        ],
+        [
+          "Apakah langkahnya?",
+          "Semak pakej dan syarat, bayar di LootBar, ikuti Self-TopUp, kemudian sahkan penerimaan dalam permainan."
+        ],
+        [
+          "Negara dan pembayaran manakah yang disokong?",
+          "Semak wilayah dan pelayan ketika pembayaran. LootBar menyenaraikan Visa, kad debit dan dompet digital; ketersediaan berbeza-beza."
+        ],
+        [
+          "Maklumat akaun apakah yang diperlukan?",
+          "Proses semasa LootBar mungkin memerlukan akaun LootBar dan log masuk permainan. Ikuti arahan log masuk semasa LootBar. Laman ini tidak pernah meminta kata laluan permainan, kod pengesahan atau butiran pembayaran anda."
+        ],
+        [
+          "Siapakah yang mengendalikan masalah?",
+          "Hubungi sokongan LootBar dengan nombor pesanan dan tangkap layar ralat. Jangan hantar kata laluan atau kod pengesahan kepada sokongan."
+        ],
+        [
+          "Apakah manfaat pautan TEN?",
+          "Pembelian yang layak boleh menyokong laman ini. Tiada manfaat pembeli eksklusif disahkan di sini; semak tawaran semasa sebelum membayar."
+        ]
+      ],
+      "choicesTitle": "Pilih langkah seterusnya",
+      "freeTitle": "Terus berkembang secara percuma",
+      "freeText": "Semak misi harian, ganjaran acara dan sumber yang disimpan sebelum berbelanja.",
+      "freeCta": "Lihat misi harian",
+      "paidTitle": "Pilihan berbayar secara sukarela",
+      "paidText": "Bandingkan harga akhir dan kandungan pakej melalui panduan tambah nilai.",
+      "guideCta": "Baca panduan tambah nilai",
+      "outbound": "Lihat LootBar melalui TEN",
+      "noEquivalence": "Kekurangan sumber yang dikira bukan cadangan produk atau kewajipan membeli.",
+      "disclosure": "Pautan afiliasi: pembelian yang layak boleh memberikan komisen kepada laman ini. Pembelian adalah pilihan.",
+      "evidence": "Maklumat penyedia disemak pada",
+      "providerGuide": "Arahan produk LootBar",
+      "providerTerms": "Terma LootBar",
+      "privacyTitle": "Analisis penggunaan pilihan",
+      "privacyText": "Jika anda membenarkan, GA4 mengukur paparan panduan dan interaksi pautan mengikut halaman, bahasa dan fungsi. Peristiwa kami tidak mengandungi nilai borang, parameter URL atau alamat perujuk penuh. Pilihan disimpan dalam pelayar ini; alat tetap berfungsi bagi kedua-dua pilihan.",
+      "allow": "Benarkan analisis",
+      "deny": "Tolak analisis",
+      "statusAllowed": "Analisis dibenarkan. Anda boleh menolaknya pada bila-bila masa.",
+      "statusDenied": "Analisis dimatikan. Anda boleh membenarkannya pada bila-bila masa."
+    },
+    "vi": {
+      "title": "LootBar: kiểm tra trước khi nạp",
+      "lead": "So sánh ưu đãi với cửa hàng trong trò chơi. Việc mua là tùy chọn.",
+      "faq": [
+        [
+          "LootBar là gì?",
+          "Một nền tảng bên ngoài cung cấp dịch vụ nạp trò chơi. TilesSurvive.net là trang hướng dẫn độc lập và không xử lý đơn hàng."
+        ],
+        [
+          "Khác gì với mua trong trò chơi?",
+          "Giá, thanh toán và giao hàng tuân theo ưu đãi của LootBar. Hãy so sánh cùng một gói và tổng số tiền phải trả."
+        ],
+        [
+          "Self-TopUp là gì?",
+          "Theo LootBar, bạn đăng nhập trò chơi qua giao diện của họ rồi nhận gói đã mua."
+        ],
+        [
+          "Các bước thực hiện là gì?",
+          "Kiểm tra gói và điều kiện, thanh toán trên LootBar, làm theo Self-TopUp rồi kiểm tra việc nhận hàng trong trò chơi."
+        ],
+        [
+          "Hỗ trợ quốc gia và phương thức thanh toán nào?",
+          "Kiểm tra khu vực và máy chủ khi thanh toán. LootBar liệt kê Visa, thẻ ghi nợ và ví điện tử; khả năng sử dụng có thể khác nhau."
+        ],
+        [
+          "Cần thông tin tài khoản nào?",
+          "Quy trình hiện tại của LootBar có thể yêu cầu tài khoản LootBar và đăng nhập trò chơi. Làm theo hướng dẫn đăng nhập hiện tại của LootBar. Trang này không bao giờ yêu cầu mật khẩu trò chơi, mã xác minh hay thông tin thanh toán của bạn."
+        ],
+        [
+          "Ai xử lý khi có vấn đề?",
+          "Liên hệ hỗ trợ LootBar kèm mã đơn hàng và ảnh chụp lỗi. Không gửi mật khẩu hoặc mã xác minh cho bộ phận hỗ trợ."
+        ],
+        [
+          "Liên kết TEN có lợi ích gì?",
+          "Giao dịch đủ điều kiện có thể hỗ trợ trang này. Chưa xác nhận lợi ích riêng cho người mua tại đây; hãy kiểm tra ưu đãi hiện tại trước khi trả tiền."
+        ]
+      ],
+      "choicesTitle": "Chọn bước tiếp theo",
+      "freeTitle": "Tiếp tục phát triển miễn phí",
+      "freeText": "Kiểm tra nhiệm vụ hằng ngày, phần thưởng sự kiện và tài nguyên hiện có trước khi chi tiền.",
+      "freeCta": "Xem nhiệm vụ hằng ngày",
+      "paidTitle": "Lựa chọn trả phí tự nguyện",
+      "paidText": "So sánh giá cuối cùng và nội dung gói qua hướng dẫn nạp.",
+      "guideCta": "Đọc hướng dẫn nạp",
+      "outbound": "Xem LootBar qua TEN",
+      "noEquivalence": "Lượng tài nguyên thiếu được tính không phải là đề xuất sản phẩm hay yêu cầu mua hàng.",
+      "disclosure": "Liên kết tiếp thị: giao dịch đủ điều kiện có thể mang lại hoa hồng cho trang này. Việc mua là tùy chọn.",
+      "evidence": "Thông tin nhà cung cấp được kiểm tra ngày",
+      "providerGuide": "Hướng dẫn sản phẩm LootBar",
+      "providerTerms": "Điều khoản LootBar",
+      "privacyTitle": "Phân tích sử dụng tùy chọn",
+      "privacyText": "Nếu bạn cho phép, GA4 đo lượt xem hướng dẫn và tương tác liên kết theo trang, ngôn ngữ và chức năng. Sự kiện của chúng tôi không chứa giá trị biểu mẫu, tham số URL hay địa chỉ giới thiệu đầy đủ. Lựa chọn được lưu trong trình duyệt này; công cụ vẫn hoạt động dù bạn chọn cách nào.",
+      "allow": "Cho phép phân tích",
+      "deny": "Từ chối phân tích",
+      "statusAllowed": "Đã cho phép phân tích. Bạn có thể từ chối bất cứ lúc nào.",
+      "statusDenied": "Phân tích đang tắt. Bạn có thể cho phép bất cứ lúc nào."
+    },
+    "tr": {
+      "title": "LootBar: yükleme öncesi kontrol rehberi",
+      "lead": "Teklifi oyun içi mağazayla karşılaştırın. Satın alma isteğe bağlıdır.",
+      "faq": [
+        [
+          "LootBar nedir?",
+          "Oyun yüklemeleri sunan harici bir pazaryeridir. TilesSurvive.net bağımsız bir rehberdir ve sipariş işlemez."
+        ],
+        [
+          "Oyun içi satın almadan farkı nedir?",
+          "Fiyat, ödeme ve teslimat LootBar teklifine bağlıdır. Aynı paketi ve ödenecek son tutarı karşılaştırın."
+        ],
+        [
+          "Self-TopUp nedir?",
+          "LootBar'ın açıklamasına göre, arayüzü üzerinden oyuna giriş yapıp satın aldığınız paketi alırsınız."
+        ],
+        [
+          "Adımlar nelerdir?",
+          "Paketi ve koşulları kontrol edin, LootBar'da ödeme yapın, Self-TopUp talimatlarını izleyin ve teslimatı oyunda doğrulayın."
+        ],
+        [
+          "Hangi ülkeler ve ödemeler destekleniyor?",
+          "Ödeme sırasında bölgenizi ve sunucunuzu kontrol edin. LootBar Visa, banka kartları ve dijital cüzdanları listeler; kullanılabilirlik değişir."
+        ],
+        [
+          "Hangi hesap bilgileri gerekir?",
+          "LootBar'ın güncel süreci bir LootBar hesabı ve oyuna giriş gerektirebilir. LootBar'ın güncel giriş talimatlarını izleyin. Bu site oyun şifrenizi, doğrulama kodunuzu veya ödeme bilgilerinizi asla istemez."
+        ],
+        [
+          "Sorunları kim çözer?",
+          "Sipariş numarası ve hata ekran görüntüsüyle LootBar desteğine başvurun. Desteğe asla şifre veya doğrulama kodu göndermeyin."
+        ],
+        [
+          "TEN bağlantısı ne sunar?",
+          "Uygun satın almalar bu siteyi destekleyebilir. Burada alıcıya özel bir avantaj doğrulanmamıştır; ödeme öncesi güncel teklifi kontrol edin."
+        ]
+      ],
+      "choicesTitle": "Sonraki adımınızı seçin",
+      "freeTitle": "Ücretsiz gelişmeye devam edin",
+      "freeText": "Harcama yapmadan önce günlük görevleri, etkinlik ödüllerini ve birikmiş kaynaklarınızı inceleyin.",
+      "freeCta": "Günlük görevleri görüntüle",
+      "paidTitle": "İsteğe bağlı ücretli seçenek",
+      "paidText": "Yükleme rehberiyle son fiyatı ve paket içeriğini karşılaştırın.",
+      "guideCta": "Yükleme rehberini oku",
+      "outbound": "TEN üzerinden LootBar'ı görüntüle",
+      "noEquivalence": "Hesaplanan kaynak eksikliği, ürün önerisi veya satın alma zorunluluğu değildir.",
+      "disclosure": "Satış ortaklığı bağlantısı: uygun satın almalarda bu site komisyon alabilir. Satın alma isteğe bağlıdır.",
+      "evidence": "Sağlayıcı bilgileri kontrol tarihi",
+      "providerGuide": "LootBar ürün talimatları",
+      "providerTerms": "LootBar koşulları",
+      "privacyTitle": "İsteğe bağlı kullanım analizi",
+      "privacyText": "İzin verirseniz GA4, rehber görüntülemelerini ve bağlantı etkileşimlerini sayfa, dil ve işlev kategorilerine göre ölçer. Etkinliklerimiz form değerlerini, URL sorgularını veya tam yönlendiren adreslerini içermez. Seçiminiz bu tarayıcıda saklanır; araçlar her iki durumda da çalışır.",
+      "allow": "Analize izin ver",
+      "deny": "Analizi reddet",
+      "statusAllowed": "Analize izin verildi. İstediğiniz zaman reddedebilirsiniz.",
+      "statusDenied": "Analiz kapalı. İstediğiniz zaman izin verebilirsiniz."
+    },
+    "th": {
+      "title": "LootBar: ตรวจสอบก่อนเติมเงิน",
+      "lead": "เปรียบเทียบข้อเสนอกับร้านค้าในเกม การซื้อเป็นทางเลือกของคุณ",
+      "faq": [
+        [
+          "LootBar คืออะไร?",
+          "ตลาดภายนอกที่ให้บริการเติมเงินเกม TilesSurvive.net เป็นเว็บไซต์แนะนำอิสระและไม่ได้ดำเนินการคำสั่งซื้อ"
+        ],
+        [
+          "ต่างจากการซื้อในเกมอย่างไร?",
+          "ราคา การชำระเงิน และการส่งมอบเป็นไปตามข้อเสนอของ LootBar ควรเปรียบเทียบแพ็กเดียวกันและยอดชำระสุดท้าย"
+        ],
+        [
+          "Self-TopUp คืออะไร?",
+          "ตามคำอธิบายของ LootBar คุณจะเข้าสู่เกมผ่านหน้าจอของผู้ให้บริการแล้วรับแพ็กที่ซื้อไว้"
+        ],
+        [
+          "มีขั้นตอนอย่างไร?",
+          "ตรวจสอบแพ็กและเงื่อนไข ชำระเงินบน LootBar ทำตามขั้นตอน Self-TopUp แล้วตรวจสอบการได้รับของในเกม"
+        ],
+        [
+          "รองรับประเทศและการชำระเงินใดบ้าง?",
+          "ตรวจสอบภูมิภาคและเซิร์ฟเวอร์ในหน้าชำระเงิน LootBar ระบุ Visa บัตรเดบิต และกระเป๋าเงินดิจิทัล แต่ความพร้อมใช้งานแตกต่างกัน"
+        ],
+        [
+          "ต้องใช้ข้อมูลบัญชีใด?",
+          "ขั้นตอนปัจจุบันของ LootBar อาจต้องใช้บัญชี LootBar และการเข้าสู่ระบบเกม ทำตามคำแนะนำการเข้าสู่ระบบปัจจุบันของ LootBar เว็บไซต์นี้ไม่ขอรหัสผ่านเกม รหัสยืนยัน หรือข้อมูลชำระเงินของคุณ"
+        ],
+        [
+          "หากเกิดปัญหาต้องติดต่อใคร?",
+          "ติดต่อฝ่ายสนับสนุนของ LootBar พร้อมหมายเลขคำสั่งซื้อและภาพหน้าจอข้อผิดพลาด ห้ามส่งรหัสผ่านหรือรหัสยืนยันให้ฝ่ายสนับสนุน"
+        ],
+        [
+          "ลิงก์ TEN มีสิทธิประโยชน์อะไร?",
+          "การซื้อที่เข้าเงื่อนไขอาจช่วยสนับสนุนเว็บไซต์นี้ ยังไม่มีการยืนยันสิทธิพิเศษเฉพาะผู้ซื้อในที่นี้ โปรดตรวจสอบข้อเสนอปัจจุบันก่อนชำระเงิน"
+        ]
+      ],
+      "choicesTitle": "เลือกขั้นตอนถัดไป",
+      "freeTitle": "พัฒนาต่อได้ฟรี",
+      "freeText": "ตรวจสอบภารกิจรายวัน รางวัลกิจกรรม และทรัพยากรที่มี ก่อนตัดสินใจใช้เงิน",
+      "freeCta": "ดูภารกิจรายวัน",
+      "paidTitle": "ทางเลือกแบบชำระเงินตามสมัครใจ",
+      "paidText": "ใช้คู่มือเติมเงินเพื่อเปรียบเทียบราคาสุดท้ายและของในแพ็ก",
+      "guideCta": "อ่านคู่มือเติมเงิน",
+      "outbound": "ดู LootBar ผ่าน TEN",
+      "noEquivalence": "ทรัพยากรที่คำนวณว่าขาดไม่ได้หมายถึงการแนะนำสินค้า หรือข้อบังคับให้ซื้อ",
+      "disclosure": "ลิงก์พันธมิตร: การซื้อที่เข้าเงื่อนไขอาจทำให้เว็บไซต์นี้ได้รับค่าคอมมิชชัน การซื้อเป็นทางเลือกของคุณ",
+      "evidence": "วันที่ตรวจสอบข้อมูลผู้ให้บริการ",
+      "providerGuide": "คำแนะนำสินค้าของ LootBar",
+      "providerTerms": "ข้อกำหนดของ LootBar",
+      "privacyTitle": "การวิเคราะห์การใช้งานแบบเลือกได้",
+      "privacyText": "หากคุณอนุญาต GA4 จะวัดการดูคู่มือและการใช้ลิงก์ตามหน้า ภาษา และฟังก์ชัน เหตุการณ์ของเราไม่ส่งค่าจากแบบฟอร์ม พารามิเตอร์ URL หรือที่อยู่ผู้แนะนำแบบเต็ม ตัวเลือกจะบันทึกในเบราว์เซอร์นี้ และคุณใช้เครื่องมือได้ไม่ว่าจะเลือกแบบใด",
+      "allow": "อนุญาตการวิเคราะห์",
+      "deny": "ปฏิเสธการวิเคราะห์",
+      "statusAllowed": "อนุญาตการวิเคราะห์แล้ว คุณปฏิเสธได้ทุกเมื่อ",
+      "statusDenied": "ปิดการวิเคราะห์อยู่ คุณอนุญาตได้ทุกเมื่อ"
+    },
+    "ar": {
+      "title": "LootBar: ما يجب التحقق منه قبل الشحن",
+      "lead": "قارن العرض بمتجر اللعبة. الشراء اختياري.",
+      "faq": [
+        [
+          "ما هي LootBar؟",
+          "منصة خارجية لشحن الألعاب. موقع TilesSurvive.net دليل مستقل ولا يعالج الطلبات."
+        ],
+        [
+          "ما الفرق عن الشراء داخل اللعبة؟",
+          "يعتمد السعر والدفع والتسليم على عرض LootBar. قارن الحزمة نفسها والمبلغ النهائي المطلوب دفعه."
+        ],
+        [
+          "ما هو Self-TopUp؟",
+          "توضح LootBar أنك تسجل الدخول إلى اللعبة عبر واجهتها ثم تستلم الحزمة التي اشتريتها."
+        ],
+        [
+          "ما هي الخطوات؟",
+          "تحقق من الحزمة وشروط الأهلية، وادفع عبر LootBar، واتبع تعليمات Self-TopUp، ثم تحقق من الاستلام داخل اللعبة."
+        ],
+        [
+          "ما البلدان وطرق الدفع المدعومة؟",
+          "تحقق من منطقتك وخادمك عند الدفع. تذكر LootBar بطاقات Visa وبطاقات الخصم والمحافظ الرقمية؛ وقد يختلف توفرها."
+        ],
+        [
+          "ما معلومات الحساب المطلوبة؟",
+          "قد تتطلب إجراءات LootBar الحالية حسابًا على LootBar وتسجيل الدخول إلى اللعبة. اتبع تعليمات تسجيل الدخول الحالية لدى LootBar. لا يطلب هذا الموقع كلمة مرور اللعبة أو رمز التحقق أو بيانات الدفع مطلقًا."
+        ],
+        [
+          "من يعالج المشكلات؟",
+          "تواصل مع دعم LootBar وأرفق رقم الطلب وصورة للخطأ. لا ترسل كلمة مرور أو رمز تحقق إلى الدعم أبدًا."
+        ],
+        [
+          "ما مزايا رابط TEN؟",
+          "قد تدعم المشتريات المؤهلة هذا الموقع. لم يتم تأكيد ميزة حصرية للمشتري هنا؛ تحقق من العرض الحالي قبل الدفع."
+        ]
+      ],
+      "choicesTitle": "اختر خطوتك التالية",
+      "freeTitle": "واصل التقدم مجانًا",
+      "freeText": "راجع المهام اليومية ومكافآت الفعاليات ومواردك المتاحة قبل أن تقرر الإنفاق.",
+      "freeCta": "عرض المهام اليومية",
+      "paidTitle": "خيار مدفوع اختياري",
+      "paidText": "قارن السعر النهائي ومحتويات الحزمة باستخدام دليل الشحن.",
+      "guideCta": "اقرأ دليل الشحن",
+      "outbound": "عرض LootBar عبر TEN",
+      "noEquivalence": "نقص الموارد المحسوب ليس توصية بمنتج ولا إلزامًا بالشراء.",
+      "disclosure": "رابط تسويق بالعمولة: قد يحصل هذا الموقع على عمولة من المشتريات المؤهلة. الشراء اختياري.",
+      "evidence": "تاريخ التحقق من معلومات المزود",
+      "providerGuide": "تعليمات منتج LootBar",
+      "providerTerms": "شروط LootBar",
+      "privacyTitle": "تحليل استخدام اختياري",
+      "privacyText": "إذا وافقت، يقيس GA4 مشاهدات الأدلة والتفاعل مع الروابط حسب الصفحة واللغة والوظيفة. لا تتضمن أحداثنا قيم النماذج أو معاملات عنوان URL أو عنوان الإحالة الكامل. يُحفظ اختيارك في هذا المتصفح، وتعمل الأدوات في الحالتين.",
+      "allow": "السماح بالتحليل",
+      "deny": "رفض التحليل",
+      "statusAllowed": "التحليل مسموح. يمكنك رفضه في أي وقت.",
+      "statusDenied": "التحليل متوقف. يمكنك السماح به في أي وقت."
+    }
+  }
+}

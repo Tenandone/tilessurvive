@@ -101,7 +101,70 @@ function projectGlobalUI(value) {
   }
   return {...value,locale:'de',copy:project(value.copy,english.copy,german.copy,'copy'),affiliate:project(value.affiliate,english.affiliate,german.affiliate,'affiliate'),featureCopies};
 }
+function prepareV3Source(source, locale, route) {
+  const document=parseHTML(source).document;
+  const actual=[...document.querySelectorAll('[data-v3-owned]')];
+  if(!actual.length)return {source,owned:false};
+  const owner=require('./build-v3-platform'),publicRoute='/'+locale+'/'+route.replace(/index\.html$/,'');
+  const approved=new Set(['analytics','assets','navigation','trust','planner','affiliate','privacy','events','topup-step']);
+  for(const node of actual)if(!approved.has(node.getAttribute('data-v3-owned')))throw new Error('Unknown V3 owner in German source: '+route);
+  // Older editorial builders decorate all headings, including managed UI, and
+  // the affiliate normalizer replaces this one CTA label. Accept only those
+  // known transformations; every word, value and link still needs its owner.
+  function fingerprint(node) {
+    const clone=node.cloneNode(true);
+    for(const element of [clone,...clone.querySelectorAll('*')]) {
+      if(/^(?:article|character)-section-\d+$/.test(element.id))element.removeAttribute('id');
+      if(element.classList.contains('ts3-character-section')) {
+        element.classList.remove('ts3-character-section');
+        if(!element.className)element.removeAttribute('class');
+      }
+      if(element.matches('a[data-v3-cta="outbound"]')&&element.textContent==='LootBar →')element.textContent=require('../data/v3-affiliate-copy.json').locales[locale].outbound;
+      if(element.getAttribute('data-v3-owned')==='assets')for(const attr of ['src','href'])if(element.hasAttribute(attr))element.setAttribute(attr,element.getAttribute(attr).replace(/([?&]v=)[a-f0-9]{12}(?=&|$)/,'$1content-hash'));
+    }
+    return clone.outerHTML;
+  }
+  function withoutOwned(html) {
+    const template=parseHTML(owner.strip(html)).document;
+    for(const node of template.querySelectorAll('[data-v3-owned]')) {
+      if(node.matches('script[data-v3-ga-bootstrap][data-v3-owned="analytics"]'))continue;
+      else if(route==='top-up/index.html'&&node.matches('[data-topup-step="2"] p[data-v3-owned="topup-step"]')){node.removeAttribute('data-v3-owned');node.textContent='';}
+      else node.remove();
+    }
+    return template.toString();
+  }
+  const expected=parseHTML(owner.project(withoutOwned(source),locale,publicRoute)).document;
+  const remaining=[...expected.querySelectorAll('[data-v3-owned]')].filter(node=>node.getAttribute('data-v3-owned')!=='assets').map(fingerprint);
+  for(const node of actual) {
+    if(node.getAttribute('data-v3-owned')==='assets') {
+      // Legacy page templates can carry registered V3 assets to another route.
+      // Validate the complete tag shape and allowlist, then drop/rebuild assets.
+      const script=node.tagName==='SCRIPT',names=[...node.attributes].map(a=>a.name).sort();
+      const allowedNames=script?['data-v3-owned','defer','src']:['data-v3-owned','href','rel'];
+      const target=node.getAttribute(script?'src':'href')||'';
+      if(JSON.stringify(names)!==JSON.stringify(allowedNames)||(!script&&(node.tagName!=='LINK'||node.getAttribute('rel')!=='stylesheet'))||!/^\/(?:css\/v3-(?:platform|events)\.css|js\/v3-(?:search-core|affiliate|planner|events)\.js)\?v=[a-f0-9]{12}$/.test(target))throw new Error('Unreviewed V3 asset in German source: '+route);
+      continue;
+    }
+    const index=remaining.indexOf(fingerprint(node));
+    if(index<0)throw new Error('Unreviewed V3 content in German source: '+route+' ('+node.getAttribute('data-v3-owned')+')');
+    remaining.splice(index,1);
+  }
+  // The legacy editorial pass also indexes managed headings in its own TOC.
+  // Remove only exact links to validated owned headings: the fresh renderer
+  // does not retain legacy-generated heading IDs, so these links would be stale.
+  const ownedHeadings=new Map([...document.querySelectorAll('[data-v3-owned] h2[id],[data-v3-owned] h3[id]')].map(node=>[node.id,node.textContent]));
+  let tocChanged=false;
+  for(const link of document.querySelectorAll('.ts3-contents[data-product-30] a[href],.ts3-character-sections[data-characters-generated] a[href]')) {
+    const target=new URL(link.getAttribute('href'),'https://tilessurvive.net'+publicRoute);
+    if(target.origin==='https://tilessurvive.net'&&target.pathname===publicRoute&&ownedHeadings.get(target.hash.slice(1))===link.textContent){link.remove();tocChanged=true;}
+  }
+  // A legacy builder may omit a whole managed block. Recreate it from the DE
+  // owner at the end rather than borrowing English text or expanding a catalog.
+  return {source:withoutOwned(tocChanged?document.toString():source),owned:true};
+}
 function render(source, translate, route) {
+  const v3=prepareV3Source(source,'en',route);source=v3.source;
+  const finishV3=html=>v3.owned?require('./build-v3-platform').project(html,'de','/de/'+route.replace(/index\.html$/,'')):html;
   // The retained Undine skill_2 key supersedes this page's old editorial name.
   // Accept the corrected EN source on subsequent builds without teaching the
   // global dictionary that Travis's distinct Wild Hunt is the same skill.
@@ -119,7 +182,7 @@ function render(source, translate, route) {
   // Keep the German shell rather than retranslating its rendered source model.
   if(route.startsWith('buildings/')&&source.includes('data-building-system')){
     const current=fs.readFileSync(path.join(ROOT,'de',route),'utf8'),owner=require('./build-building-system');
-    return route==='buildings/index.html'?owner.catalog(current,'de'):owner.project(current,'de',route.split('/')[1]);
+    return finishV3(route==='buildings/index.html'?owner.catalog(current,'de'):owner.project(current,'de',route.split('/')[1]));
   }
   // Building controls have their own reviewed wording. Keep those overrides
   // local to building routes so a shared word such as "Details" does not
@@ -142,11 +205,13 @@ function render(source, translate, route) {
   // Display-localized cells retain their source lexemes for existing numeric readers.
   for(const cell of document.querySelectorAll('td')) cell.setAttribute('data-ts-original-value',cell.textContent.trim());
   function visit(node) {
+    if(node.nodeType===1&&node.hasAttribute('data-v3-owned'))return;
     if (node.nodeType===3 && !['SCRIPT','STYLE'].includes(node.parentNode?.tagName) && !node.parentElement?.closest('[lang]:not([lang="en"]):not(html),.ts3-language nav,.language-switcher')) node.textContent=translate(node.textContent,route+':text');
     for (const child of [...(node.childNodes||[])]) visit(child);
   }
   visit(document);
   for (const el of document.querySelectorAll('*')) {
+    if(el.closest('[data-v3-owned]'))continue;
     for (const attr of ['alt','title','aria-label','placeholder','data-idle','data-results','data-error']) if(el.hasAttribute(attr)) el.setAttribute(attr,translate(el.getAttribute(attr),route+':'+attr));
     for (const attr of ['href','action','data-search-url']) if(el.hasAttribute(attr)) {
       if(el.matches('link[rel="alternate"],a[hreflang],.ts3-language a[lang]')) continue;
@@ -163,6 +228,7 @@ function render(source, translate, route) {
     }
   }
   for (const script of document.querySelectorAll('script[type="application/json"],script[type="application/ld+json"]')) {
+    if(script.closest('[data-v3-owned]'))continue;
     // This is the complete equivalent-route map, not an EN-language content
     // dictionary. Every locale, including DE's own exact slug, must survive.
     if(script.id==='ts-locale-routes')continue;
@@ -172,13 +238,13 @@ function render(source, translate, route) {
     }
     script.textContent=JSON.stringify(localizeJSON(JSON.parse(script.textContent),translate,route+':json','',script.id==='ts3-copy'));
   }
-  for(const script of document.querySelectorAll('script:not([src])'))if(!script.type?.includes('json'))script.textContent=localizeProgram(script.textContent,translate,route);
+  for(const script of document.querySelectorAll('script:not([src])'))if(!script.type?.includes('json')&&!script.closest('[data-v3-owned]'))script.textContent=localizeProgram(script.textContent,translate,route);
   // The canonical language routes are completed by the shared six-language finalizer.
   const langNav=document.querySelector('.ts3-language nav');
   if(langNav){for(const a of langNav.querySelectorAll('a')){if(a.lang==='de')a.remove();else a.removeAttribute('aria-current');}const a=document.createElement('a');a.href='/de/'+route.replace(/index\.html$/,'');a.lang='de';a.setAttribute('hreflang','de');a.textContent='Deutsch';a.setAttribute('aria-current','page');langNav.append(a);document.querySelector('.ts3-language summary').textContent='DE';}
   for(const item of document.querySelectorAll('[data-pet-name]')){const n=item.querySelector('h3')?.textContent;if(n)item.dataset.petName+=' '+n;}
   const output=document.toString();
-  return powerPlantOwned?require('./build-power-plant-original').project(output,'de/'+route):output;
+  return finishV3(powerPlantOwned?require('./build-power-plant-original').project(output,'de/'+route):output);
 }
 function addBuildingCopy(catalog){
   // Building UI is owned by the six-language 5.3 renderer; reuse its reviewed copy.
@@ -214,5 +280,5 @@ function build({inventoryPath}={}) {
   let changed=0;for(const o of outputs){fs.mkdirSync(path.dirname(o.path),{recursive:true});if(!fs.existsSync(o.path)||fs.readFileSync(o.path,'utf8')!==o.content){fs.writeFileSync(o.path,o.content);changed++;}}
   return {routes:outputs.filter(o=>!o.route.startsWith('components/')&&!o.route.startsWith('data/')).length,components:2,dataFiles:2,changed,missing:0};
 }
-module.exports={addBuildingCopy,build,render,localizeJSON,createTranslator,localizeProgram,projectGlobalUI,germanNumbers};
+module.exports={addBuildingCopy,build,render,localizeJSON,createTranslator,localizeProgram,projectGlobalUI,germanNumbers,prepareV3Source};
 if(require.main===module){const i=process.argv.indexOf('--inventory');console.log(JSON.stringify(build({inventoryPath:i>=0?path.resolve(process.argv[i+1]):null})));}
