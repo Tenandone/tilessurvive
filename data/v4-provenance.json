@@ -1,0 +1,73 @@
+{
+  "schemaVersion": 1,
+  "reviewedOn": "2026-11-05",
+  "retainedClient": {
+    "package": "com.funplus.ts.global",
+    "gameVersion": "2.6.200",
+    "build": 1512,
+    "cohort": "retained-apk-and-captured-configs",
+    "originalAuditStatus": "STRUCTURAL_REPARSE_PASS",
+    "selectedConfigTables": 1997,
+    "uniqueClassIdRecords": 665080,
+    "releaseInferenceFromRecordPresence": false
+  },
+  "latestObservedOfficialAnnouncement": {
+    "version": "2.6.300",
+    "publishedAt": "2026-10-22T10:27:28",
+    "publishedTimeZone": "not specified on source page",
+    "url": "https://tilesurvivegame.com/en/blog/1206",
+    "evidenceType": "official announcement, not locally acquired client"
+  },
+  "newerClientAcquired": false,
+  "realCrossVersionDiffExecuted": false,
+  "versionDiffTool": {
+    "script": "scripts/client-audit/v4-compare.cjs",
+    "syntheticTestsPassed": 16,
+    "retainedCohortSelfComparison": "NO_CONTENT_CHANGE",
+    "automaticPublicationAllowed": false,
+    "scopes": [
+      "tables",
+      "class-ID records",
+      "skill numeric and encoded-parameter fingerprints",
+      "typed relationships",
+      "separate relationship candidates",
+      "language keys",
+      "scoped image fingerprints"
+    ]
+  },
+  "releaseCautions": [
+    {
+      "id": "furiosa",
+      "retainedStatus": "localized IAP title found; no matching core Survivor row in selected retained cohort",
+      "announcement": "https://tilesurvivegame.com/en/blog/1206",
+      "status": "core data unavailable; announcement is not numerical validation"
+    },
+    {
+      "id": "alita",
+      "retainedStatus": "no matching core Survivor row in selected retained cohort",
+      "announcement": "https://tilesurvivegame.com/en/blog/1213",
+      "announcementDate": "2026-10-30",
+      "status": "officially described as in development on that date; no current server attestation"
+    }
+  ],
+  "imageReview": {
+    "sourceFieldReferences": 643,
+    "scopedUniqueResourceNames": 389,
+    "foundInRetainedDecodedObjectIndex": 343,
+    "notFoundInThatIndex": 46,
+    "existingPublishedManifestAssetsHashChecked": 38,
+    "hashMismatches": 0,
+    "newImageAssetsAdded": 0,
+    "lavaOriginalDecodeRetained": true,
+    "scope": "35 hero forms, 10 PetBase rows and referenced PetShape, 178 related skill IDs, 21 exclusive gear records; retained decoded object indexes only",
+    "rightsStatus": "separate redistribution license not verified",
+    "absenceCaution": "Not found in this index does not establish absence from every original bundle or a broken public image."
+  },
+  "verificationLevels": [
+    "retained-source-verified",
+    "official-announcement",
+    "source-derived-analysis",
+    "unverified-live-server"
+  ],
+  "currentServerVerification": false
+}

@@ -40,7 +40,7 @@ function validateDocument(html,{locale,route,routes,registry}){
  for(const menu of menus){const links=[...parseHTML(menu).document.querySelectorAll('a[hreflang]')];assert.equal(links.length,registry.length,route+' language menu count');for(const other of registry)assert(links.some(a=>a.getAttribute('href')===routes[other.code]),route+' language menu destination '+other.code);}
  // Later owners supply their own navigation. Legacy TOCs must not copy their
  // headings into unowned text which the global translator cannot classify.
- for(const nav of [...html.matchAll(/<nav\b[^>]*class=["'][^"']*ts3-contents[^"']*["'][^>]*>[\s\S]*?<\/nav>/gi)])assert(!/href=["'][^"']*#(?:v3-|growth-plan|hero-atlas|hero-pet)/.test(nav[0]),route+' legacy TOC captured a managed owner');
+ for(const nav of [...html.matchAll(/<nav\b[^>]*class=["'][^"']*ts3-contents[^"']*["'][^>]*>[\s\S]*?<\/nav>/gi)])assert(!/href=["'][^"']*#(?:v3-|v4-|growth-plan|hero-atlas|hero-pet)/.test(nav[0]),route+' legacy TOC captured a managed owner');
  return true;
 }
 function preservedContent(html){
@@ -56,7 +56,7 @@ function preservedContent(html){
  const ten=[...html.matchAll(/<a\b[^>]*href=["']([^"']*lootbar[^"']*)["'][^>]*>/gi)].map(m=>m[1]);
  return {programs,models,tables,ads,ten};
 }
-function verifyPreserved(before,after,file){const a=preservedContent(before),b=preservedContent(after);for(const key of ['programs','models','ads','ten'])assert.deepEqual(b[key],a[key],file+' protected '+key);let at=0;for(const value of a.tables){at=b.tables.indexOf(value,at);assert(at>=0,file+' original numeric table removed or changed');at++;}}
+function verifyPreserved(before,after,file){const V4=require('./v4-workbench-content'),route='/'+file.replace(/index\.html$/,''),locale=file.split('/')[0];if(V4.kindFor(route)){V4.validateOwnership(after,locale,route);before=V4.strip(before);after=V4.strip(after);}const a=preservedContent(before),b=preservedContent(after);for(const key of ['programs','models','ads','ten'])assert.deepEqual(b[key],a[key],file+' protected '+key);let at=0;for(const value of a.tables){at=b.tables.indexOf(value,at);assert(at>=0,file+' original numeric table removed or changed');at++;}}
 function hook(root=ROOT){const script='scripts/build-hero-pet-pages.js',data='data/hero-pet-relations.json',hasScript=fs.existsSync(path.join(root,script)),hasData=fs.existsSync(path.join(root,data));assert.equal(hasScript,hasData,'Hero/pet renderer and validated data must enter the release together');if(!hasScript)return null;const owner=require(path.join(root,script));assert.equal(typeof owner.validate,'function','Hero/pet model validator is required');assert.equal(typeof owner.project,'function','Hero/pet pure projection is required');owner.validate(json(root,data));return script;}
 function validate(root=ROOT,{before,backup}={}){
  const registry=json(root,'data/i18n/locales.json').locales;assert.equal(registry.length,21,'The published locale set must not shrink');

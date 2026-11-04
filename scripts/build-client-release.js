@@ -3,7 +3,7 @@
 // invoked here. All writes are backed up outside the public repository.
 const fs=require('node:fs'),path=require('node:path'),cp=require('node:child_process'),assert=require('node:assert/strict');
 const G=require('./client-release-gate');
-function steps(root=G.ROOT){return ['scripts/build-v3-platform.js','scripts/build-hero-atlas.js',...(G.hook(root)?[G.hook(root)]:[]),'scripts/build-hero-atlas-search.js','scripts/build-v3-search.js'];}
+function steps(root=G.ROOT){return ['scripts/build-v3-platform.js','scripts/build-hero-atlas.js',...(G.hook(root)?[G.hook(root)]:[]),'scripts/v4-workbench-content.js','scripts/build-hero-atlas-search.js','scripts/build-v4-search.js','scripts/build-v3-search.js'];}
 function build({root=G.ROOT,apply=false,artifactRoot}={}){
  const plan=steps(root);G.validate(root);
  if(!apply){const result={mode:'check',validated:true,steps:plan,deployed:false};console.log(JSON.stringify(result));return result;}
@@ -12,7 +12,7 @@ function build({root=G.ROOT,apply=false,artifactRoot}={}){
  const backup=path.join(artifacts,'backup'),before=G.snapshot(root,backup),result={mode:'apply',startedAt:new Date().toISOString(),baseline:G.BASELINE,steps:[],deployed:false};fs.writeFileSync(path.join(artifacts,'before.json'),JSON.stringify(before,null,2)+'\n');
  try{
   for(const file of plan){const run=cp.spawnSync(process.execPath,[path.join(root,file)],{cwd:root,encoding:'utf8',maxBuffer:30e6});fs.writeFileSync(path.join(artifacts,path.basename(file)+'.log'),(run.stdout||'')+(run.stderr||''));result.steps.push({file,exitCode:run.status});assert.equal(run.status,0,'Release owner failed: '+file);}
-  result.validation=G.validate(root,{before,backup});const after=G.snapshot(root);result.changed=Object.keys(after.files).filter(f=>after.files[f]!==before.files[f]);result.status='PASS';
+  result.validation=G.validate(root,{before,backup});result.v4Validation=require('./v4-release-gate').validate(root);const after=G.snapshot(root);result.changed=Object.keys(after.files).filter(f=>after.files[f]!==before.files[f]);result.status='PASS';
  }catch(error){
   // Restore only files captured by this invocation. Never remove unrelated files.
   for(const file of Object.keys(before.files)){const target=path.join(root,file);fs.mkdirSync(path.dirname(target),{recursive:true});fs.copyFileSync(path.join(backup,file),target);}

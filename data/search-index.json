@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-11-04T08:55:46.238Z",
-  "itemCount": 9238,
+  "itemCount": 9301,
   "items": [
     {
       "language": "ar",
@@ -65463,6 +65463,447 @@
       "title": "Utviklingskrav",
       "description": "Talentnivå 1 låser permanent opp bonuser for angrep og ferdighetsskade. X-SSR-helter trenger flere heltefragmenter; den vanlige SSR-kostnadstabellen skal ikke brukes for Lava.",
       "url": "/nb/heroes/lava/#lava-growth"
+    },
+    {
+      "language": "en",
+      "type": "tool",
+      "title": "Squad analysis · Strategy workspace",
+      "description": "Compare your squad, saved materials and growth goals using supported rules.",
+      "url": "/en/tools/#v4-formation"
+    },
+    {
+      "language": "en",
+      "type": "tool",
+      "title": "VS stockpile · Strategy workspace",
+      "description": "Compare your squad, saved materials and growth goals using supported rules.",
+      "url": "/en/tools/#v4-vs"
+    },
+    {
+      "language": "en",
+      "type": "tool",
+      "title": "Growth & resources · Strategy workspace",
+      "description": "Compare your squad, saved materials and growth goals using supported rules.",
+      "url": "/en/tools/#v4-growth"
+    },
+    {
+      "language": "ko",
+      "type": "tool",
+      "title": "편성 분석 · 전략 작업실",
+      "description": "확인된 규칙으로 영웅 편성, 비축 재료, 성장 목표를 비교하세요.",
+      "url": "/ko/tools/#v4-formation"
+    },
+    {
+      "language": "ko",
+      "type": "tool",
+      "title": "VS 비축 · 전략 작업실",
+      "description": "확인된 규칙으로 영웅 편성, 비축 재료, 성장 목표를 비교하세요.",
+      "url": "/ko/tools/#v4-vs"
+    },
+    {
+      "language": "ko",
+      "type": "tool",
+      "title": "성장·재화 · 전략 작업실",
+      "description": "확인된 규칙으로 영웅 편성, 비축 재료, 성장 목표를 비교하세요.",
+      "url": "/ko/tools/#v4-growth"
+    },
+    {
+      "language": "ja",
+      "type": "tool",
+      "title": "編成分析 · 戦略ワークスペース",
+      "description": "確認済みのルールで編成、備蓄素材、育成目標を比較しましょう。",
+      "url": "/ja/tools/#v4-formation"
+    },
+    {
+      "language": "ja",
+      "type": "tool",
+      "title": "VS備蓄 · 戦略ワークスペース",
+      "description": "確認済みのルールで編成、備蓄素材、育成目標を比較しましょう。",
+      "url": "/ja/tools/#v4-vs"
+    },
+    {
+      "language": "ja",
+      "type": "tool",
+      "title": "育成・資源 · 戦略ワークスペース",
+      "description": "確認済みのルールで編成、備蓄素材、育成目標を比較しましょう。",
+      "url": "/ja/tools/#v4-growth"
+    },
+    {
+      "language": "zh-tw",
+      "type": "tool",
+      "title": "陣容分析 · 策略工作台",
+      "description": "依據已確認的規則，比較陣容、儲備材料與成長目標。",
+      "url": "/zh-tw/tools/#v4-formation"
+    },
+    {
+      "language": "zh-tw",
+      "type": "tool",
+      "title": "VS儲備 · 策略工作台",
+      "description": "依據已確認的規則，比較陣容、儲備材料與成長目標。",
+      "url": "/zh-tw/tools/#v4-vs"
+    },
+    {
+      "language": "zh-tw",
+      "type": "tool",
+      "title": "成長與資源 · 策略工作台",
+      "description": "依據已確認的規則，比較陣容、儲備材料與成長目標。",
+      "url": "/zh-tw/tools/#v4-growth"
+    },
+    {
+      "language": "de",
+      "type": "tool",
+      "title": "Teamanalyse · Strategie-Werkstatt",
+      "description": "Vergleiche dein Team, Vorräte und Ausbauziele anhand belegter Regeln.",
+      "url": "/de/tools/#v4-formation"
+    },
+    {
+      "language": "de",
+      "type": "tool",
+      "title": "VS-Vorräte · Strategie-Werkstatt",
+      "description": "Vergleiche dein Team, Vorräte und Ausbauziele anhand belegter Regeln.",
+      "url": "/de/tools/#v4-vs"
+    },
+    {
+      "language": "de",
+      "type": "tool",
+      "title": "Ausbau & Ressourcen · Strategie-Werkstatt",
+      "description": "Vergleiche dein Team, Vorräte und Ausbauziele anhand belegter Regeln.",
+      "url": "/de/tools/#v4-growth"
+    },
+    {
+      "language": "ru",
+      "type": "tool",
+      "title": "Анализ отряда · Стратегическая мастерская",
+      "description": "Сравните состав отряда, запасы и цели развития по проверенным правилам.",
+      "url": "/ru/tools/#v4-formation"
+    },
+    {
+      "language": "ru",
+      "type": "tool",
+      "title": "Запасы VS · Стратегическая мастерская",
+      "description": "Сравните состав отряда, запасы и цели развития по проверенным правилам.",
+      "url": "/ru/tools/#v4-vs"
+    },
+    {
+      "language": "ru",
+      "type": "tool",
+      "title": "Развитие и ресурсы · Стратегическая мастерская",
+      "description": "Сравните состав отряда, запасы и цели развития по проверенным правилам.",
+      "url": "/ru/tools/#v4-growth"
+    },
+    {
+      "language": "zh-cn",
+      "type": "tool",
+      "title": "阵容分析 · 策略工作台",
+      "description": "依据已确认的规则，比较阵容、储备材料与成长目标。",
+      "url": "/zh-cn/tools/#v4-formation"
+    },
+    {
+      "language": "zh-cn",
+      "type": "tool",
+      "title": "VS储备 · 策略工作台",
+      "description": "依据已确认的规则，比较阵容、储备材料与成长目标。",
+      "url": "/zh-cn/tools/#v4-vs"
+    },
+    {
+      "language": "zh-cn",
+      "type": "tool",
+      "title": "成长与资源 · 策略工作台",
+      "description": "依据已确认的规则，比较阵容、储备材料与成长目标。",
+      "url": "/zh-cn/tools/#v4-growth"
+    },
+    {
+      "language": "ar",
+      "type": "tool",
+      "title": "تحليل التشكيلة · مساحة الاستراتيجية",
+      "description": "قارن تشكيلتك والمواد المخزنة وأهداف التطوير وفق القواعد المتحقق منها.",
+      "url": "/ar/tools/#v4-formation"
+    },
+    {
+      "language": "ar",
+      "type": "tool",
+      "title": "مخزون VS · مساحة الاستراتيجية",
+      "description": "قارن تشكيلتك والمواد المخزنة وأهداف التطوير وفق القواعد المتحقق منها.",
+      "url": "/ar/tools/#v4-vs"
+    },
+    {
+      "language": "ar",
+      "type": "tool",
+      "title": "التطوير والموارد · مساحة الاستراتيجية",
+      "description": "قارن تشكيلتك والمواد المخزنة وأهداف التطوير وفق القواعد المتحقق منها.",
+      "url": "/ar/tools/#v4-growth"
+    },
+    {
+      "language": "nl",
+      "type": "tool",
+      "title": "Teamanalyse · Strategiewerkplaats",
+      "description": "Vergelijk je team, voorraden en groeidoelen met gecontroleerde regels.",
+      "url": "/nl/tools/#v4-formation"
+    },
+    {
+      "language": "nl",
+      "type": "tool",
+      "title": "VS-voorraad · Strategiewerkplaats",
+      "description": "Vergelijk je team, voorraden en groeidoelen met gecontroleerde regels.",
+      "url": "/nl/tools/#v4-vs"
+    },
+    {
+      "language": "nl",
+      "type": "tool",
+      "title": "Groei en grondstoffen · Strategiewerkplaats",
+      "description": "Vergelijk je team, voorraden en groeidoelen met gecontroleerde regels.",
+      "url": "/nl/tools/#v4-growth"
+    },
+    {
+      "language": "fr",
+      "type": "tool",
+      "title": "Analyse d’équipe · Atelier stratégique",
+      "description": "Comparez votre équipe, vos réserves et vos objectifs de progression selon les règles vérifiées.",
+      "url": "/fr/tools/#v4-formation"
+    },
+    {
+      "language": "fr",
+      "type": "tool",
+      "title": "Réserves VS · Atelier stratégique",
+      "description": "Comparez votre équipe, vos réserves et vos objectifs de progression selon les règles vérifiées.",
+      "url": "/fr/tools/#v4-vs"
+    },
+    {
+      "language": "fr",
+      "type": "tool",
+      "title": "Progression et ressources · Atelier stratégique",
+      "description": "Comparez votre équipe, vos réserves et vos objectifs de progression selon les règles vérifiées.",
+      "url": "/fr/tools/#v4-growth"
+    },
+    {
+      "language": "id",
+      "type": "tool",
+      "title": "Analisis regu · Ruang strategi",
+      "description": "Bandingkan regu, persediaan bahan, dan target perkembangan dengan aturan yang terverifikasi.",
+      "url": "/id/tools/#v4-formation"
+    },
+    {
+      "language": "id",
+      "type": "tool",
+      "title": "Persediaan VS · Ruang strategi",
+      "description": "Bandingkan regu, persediaan bahan, dan target perkembangan dengan aturan yang terverifikasi.",
+      "url": "/id/tools/#v4-vs"
+    },
+    {
+      "language": "id",
+      "type": "tool",
+      "title": "Perkembangan dan sumber daya · Ruang strategi",
+      "description": "Bandingkan regu, persediaan bahan, dan target perkembangan dengan aturan yang terverifikasi.",
+      "url": "/id/tools/#v4-growth"
+    },
+    {
+      "language": "it",
+      "type": "tool",
+      "title": "Analisi squadra · Laboratorio strategico",
+      "description": "Confronta squadra, scorte e obiettivi di crescita usando regole verificate.",
+      "url": "/it/tools/#v4-formation"
+    },
+    {
+      "language": "it",
+      "type": "tool",
+      "title": "Scorte VS · Laboratorio strategico",
+      "description": "Confronta squadra, scorte e obiettivi di crescita usando regole verificate.",
+      "url": "/it/tools/#v4-vs"
+    },
+    {
+      "language": "it",
+      "type": "tool",
+      "title": "Crescita e risorse · Laboratorio strategico",
+      "description": "Confronta squadra, scorte e obiettivi di crescita usando regole verificate.",
+      "url": "/it/tools/#v4-growth"
+    },
+    {
+      "language": "pl",
+      "type": "tool",
+      "title": "Analiza drużyny · Warsztat strategii",
+      "description": "Porównaj drużynę, zapasy i cele rozwoju według zweryfikowanych zasad.",
+      "url": "/pl/tools/#v4-formation"
+    },
+    {
+      "language": "pl",
+      "type": "tool",
+      "title": "Zapasy VS · Warsztat strategii",
+      "description": "Porównaj drużynę, zapasy i cele rozwoju według zweryfikowanych zasad.",
+      "url": "/pl/tools/#v4-vs"
+    },
+    {
+      "language": "pl",
+      "type": "tool",
+      "title": "Rozwój i zasoby · Warsztat strategii",
+      "description": "Porównaj drużynę, zapasy i cele rozwoju według zweryfikowanych zasad.",
+      "url": "/pl/tools/#v4-growth"
+    },
+    {
+      "language": "pt",
+      "type": "tool",
+      "title": "Análise da equipe · Oficina de estratégia",
+      "description": "Compare sua equipe, reservas e metas de evolução com regras verificadas.",
+      "url": "/pt/tools/#v4-formation"
+    },
+    {
+      "language": "pt",
+      "type": "tool",
+      "title": "Reservas VS · Oficina de estratégia",
+      "description": "Compare sua equipe, reservas e metas de evolução com regras verificadas.",
+      "url": "/pt/tools/#v4-vs"
+    },
+    {
+      "language": "pt",
+      "type": "tool",
+      "title": "Evolução e recursos · Oficina de estratégia",
+      "description": "Compare sua equipe, reservas e metas de evolução com regras verificadas.",
+      "url": "/pt/tools/#v4-growth"
+    },
+    {
+      "language": "es",
+      "type": "tool",
+      "title": "Análisis de equipo · Taller de estrategia",
+      "description": "Compara tu equipo, reservas y objetivos de progreso con reglas verificadas.",
+      "url": "/es/tools/#v4-formation"
+    },
+    {
+      "language": "es",
+      "type": "tool",
+      "title": "Reservas VS · Taller de estrategia",
+      "description": "Compara tu equipo, reservas y objetivos de progreso con reglas verificadas.",
+      "url": "/es/tools/#v4-vs"
+    },
+    {
+      "language": "es",
+      "type": "tool",
+      "title": "Progreso y recursos · Taller de estrategia",
+      "description": "Compara tu equipo, reservas y objetivos de progreso con reglas verificadas.",
+      "url": "/es/tools/#v4-growth"
+    },
+    {
+      "language": "sv",
+      "type": "tool",
+      "title": "Laganalys · Strategiverkstad",
+      "description": "Jämför ditt lag, dina förråd och utvecklingsmål med verifierade regler.",
+      "url": "/sv/tools/#v4-formation"
+    },
+    {
+      "language": "sv",
+      "type": "tool",
+      "title": "VS-förråd · Strategiverkstad",
+      "description": "Jämför ditt lag, dina förråd och utvecklingsmål med verifierade regler.",
+      "url": "/sv/tools/#v4-vs"
+    },
+    {
+      "language": "sv",
+      "type": "tool",
+      "title": "Utveckling och resurser · Strategiverkstad",
+      "description": "Jämför ditt lag, dina förråd och utvecklingsmål med verifierade regler.",
+      "url": "/sv/tools/#v4-growth"
+    },
+    {
+      "language": "th",
+      "type": "tool",
+      "title": "วิเคราะห์ทีม · พื้นที่วางกลยุทธ์",
+      "description": "เปรียบเทียบทีม วัสดุสะสม และเป้าหมายการพัฒนาด้วยกติกาที่ตรวจสอบแล้ว",
+      "url": "/th/tools/#v4-formation"
+    },
+    {
+      "language": "th",
+      "type": "tool",
+      "title": "คลังสำรอง VS · พื้นที่วางกลยุทธ์",
+      "description": "เปรียบเทียบทีม วัสดุสะสม และเป้าหมายการพัฒนาด้วยกติกาที่ตรวจสอบแล้ว",
+      "url": "/th/tools/#v4-vs"
+    },
+    {
+      "language": "th",
+      "type": "tool",
+      "title": "การพัฒนาและทรัพยากร · พื้นที่วางกลยุทธ์",
+      "description": "เปรียบเทียบทีม วัสดุสะสม และเป้าหมายการพัฒนาด้วยกติกาที่ตรวจสอบแล้ว",
+      "url": "/th/tools/#v4-growth"
+    },
+    {
+      "language": "tr",
+      "type": "tool",
+      "title": "Ekip analizi · Strateji atölyesi",
+      "description": "Ekibini, birikmiş malzemelerini ve gelişim hedeflerini doğrulanmış kurallarla karşılaştır.",
+      "url": "/tr/tools/#v4-formation"
+    },
+    {
+      "language": "tr",
+      "type": "tool",
+      "title": "VS stoku · Strateji atölyesi",
+      "description": "Ekibini, birikmiş malzemelerini ve gelişim hedeflerini doğrulanmış kurallarla karşılaştır.",
+      "url": "/tr/tools/#v4-vs"
+    },
+    {
+      "language": "tr",
+      "type": "tool",
+      "title": "Gelişim ve kaynaklar · Strateji atölyesi",
+      "description": "Ekibini, birikmiş malzemelerini ve gelişim hedeflerini doğrulanmış kurallarla karşılaştır.",
+      "url": "/tr/tools/#v4-growth"
+    },
+    {
+      "language": "vi",
+      "type": "tool",
+      "title": "Phân tích đội hình · Không gian chiến lược",
+      "description": "So sánh đội hình, vật liệu dự trữ và mục tiêu phát triển theo quy tắc đã xác minh.",
+      "url": "/vi/tools/#v4-formation"
+    },
+    {
+      "language": "vi",
+      "type": "tool",
+      "title": "Dự trữ VS · Không gian chiến lược",
+      "description": "So sánh đội hình, vật liệu dự trữ và mục tiêu phát triển theo quy tắc đã xác minh.",
+      "url": "/vi/tools/#v4-vs"
+    },
+    {
+      "language": "vi",
+      "type": "tool",
+      "title": "Phát triển và tài nguyên · Không gian chiến lược",
+      "description": "So sánh đội hình, vật liệu dự trữ và mục tiêu phát triển theo quy tắc đã xác minh.",
+      "url": "/vi/tools/#v4-growth"
+    },
+    {
+      "language": "ms",
+      "type": "tool",
+      "title": "Analisis skuad · Ruang strategi",
+      "description": "Bandingkan skuad, simpanan bahan dan sasaran pembangunan dengan peraturan yang disahkan.",
+      "url": "/ms/tools/#v4-formation"
+    },
+    {
+      "language": "ms",
+      "type": "tool",
+      "title": "Simpanan VS · Ruang strategi",
+      "description": "Bandingkan skuad, simpanan bahan dan sasaran pembangunan dengan peraturan yang disahkan.",
+      "url": "/ms/tools/#v4-vs"
+    },
+    {
+      "language": "ms",
+      "type": "tool",
+      "title": "Pembangunan dan sumber · Ruang strategi",
+      "description": "Bandingkan skuad, simpanan bahan dan sasaran pembangunan dengan peraturan yang disahkan.",
+      "url": "/ms/tools/#v4-growth"
+    },
+    {
+      "language": "nb",
+      "type": "tool",
+      "title": "Laganalyse · Strategiverksted",
+      "description": "Sammenlign laget, beholdningen og utviklingsmålene dine med bekreftede regler.",
+      "url": "/nb/tools/#v4-formation"
+    },
+    {
+      "language": "nb",
+      "type": "tool",
+      "title": "VS-beholdning · Strategiverksted",
+      "description": "Sammenlign laget, beholdningen og utviklingsmålene dine med bekreftede regler.",
+      "url": "/nb/tools/#v4-vs"
+    },
+    {
+      "language": "nb",
+      "type": "tool",
+      "title": "Utvikling og ressurser · Strategiverksted",
+      "description": "Sammenlign laget, beholdningen og utviklingsmålene dine med bekreftede regler.",
+      "url": "/nb/tools/#v4-growth"
     }
   ]
 }

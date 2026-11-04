@@ -7,6 +7,7 @@ const ROOT=path.resolve(__dirname,'..'),BASE='c1d9151593f621249338409c6fcbc8972f
 const P=require('./build-v3-platform'),A=require('./v3-affiliate-content'),registry=require('../data/i18n/locales.json'),codes=registry.locales.map(l=>l.code);
 const Atlas=require('./build-hero-atlas');
 const HeroPet=require('./build-hero-pet-pages');
+const V4=require('./v4-workbench-content');
 const petRoutes=new Set(codes.flatMap(locale=>[null,...require('../data/hero-pet-relations.json').pets.map(p=>p.id)].map(id=>`/${locale}/database/pet-system/${id?id+'/':''}`)));
 const read=file=>fs.readFileSync(path.join(ROOT,file),'utf8'),lf=value=>value.replaceAll('\r\n','\n'),sha=value=>crypto.createHash('sha256').update(value).digest('hex');
 const git=(args,options={})=>execFileSync('git',args,{cwd:ROOT,maxBuffer:150e6,...options});
@@ -50,7 +51,7 @@ function ads(html){return [...html.matchAll(/<script\b[^>]*>[\s\S]*?<\/script>/g
 function numericModels(d){
   const out={};
   for(const script of d.querySelectorAll('script[type="application/json"]')){
-    if(script.closest('[data-v3-owned]')||['ts-global-ui','ts-locale-routes'].includes(script.id))continue;
+    if(script.closest('[data-v3-owned],[data-v4-owned]')||['ts-global-ui','ts-locale-routes'].includes(script.id))continue;
     const key=script.id||[...script.attributes].filter(a=>a.name.startsWith('data-')).map(a=>a.name).sort().join('|'),values=[];
     function visit(value,p){if(typeof value==='number'||typeof value==='string'&&/^-?\d+(?:\.\d+)?$/.test(value))values.push([p,value]);else if(Array.isArray(value))value.forEach((v,i)=>visit(v,p+'.'+i));else if(value&&typeof value==='object')for(const k of Object.keys(value).sort())visit(value[k],p+'.'+k);}
     visit(JSON.parse(script.textContent),'$');if(values.length)out[key]=values;
@@ -67,6 +68,7 @@ function sameContent(before,after,file,locale){
   // Applying that owner to the pinned historical page retains the full-content
   // comparison, including every original table, program, anchor and sentence.
   if(petRoutes.has(route)){before=HeroPet.project(before,locale);HeroPet.validateOwnership(after,locale);}
+  if(V4.kindFor(route)){before=V4.project(before,locale,route);V4.validateOwnership(after,locale,route);}
   const expected=inherited(before),actual=inherited(after);
   let i=0;if(expected!==actual)while(i<expected.length&&expected[i]===actual[i])i++;
   assert.equal(sha(actual),sha(expected),file+' original content differs at '+i+'; expected '+JSON.stringify(expected.slice(i,i+100))+'; actual '+JSON.stringify(actual.slice(i,i+100)));
@@ -109,6 +111,7 @@ function verifyManifest(d,locale,route,file){
   if(atlas||petPage){assert.equal(petCSS[0].getAttribute('href'),HeroPet.asset().match(/href="([^"]+)"/)[1],file+' current hero/pet stylesheet');assert(petCSS[0].hasAttribute(atlas?'data-hero-atlas-owned':'data-hero-pet-owned'));}
   assert.equal(d.querySelectorAll('[data-hero-pet-owned="pets"]').length,+petPage,file+' exact pet panel scope');
   if(petPage)HeroPet.validateOwnership(d.toString(),locale);
+  if(V4.kindFor(route))V4.validateOwnership(d.toString(),locale,route);
   const originalIds=[...d.querySelectorAll('[id]')].map(n=>n.id),counts=new Map();originalIds.forEach(id=>counts.set(id,(counts.get(id)||0)+1));for(const [id,n]of counts)if(id.startsWith('v3-')||id==='growth-plan')assert.equal(n,1,file+' unique V3 anchor '+id);
 }
 
@@ -163,19 +166,19 @@ if(require.main===module){
         if(mainHeroRoutes.has(item.url)){const {title,description,...remaining}=current,{title:oldTitle,description:oldDescription,...oldRemaining}=item;assert.deepEqual(remaining,oldRemaining,item.url+' hero search changes only reviewed metadata');const doc=parseHTML(read(item.url.slice(1)+'index.html')).document;assert.equal(title,doc.querySelector('title').textContent.trim().replace(/\s+/g,' '));assert.equal(description,doc.querySelector('meta[name="description"]').getAttribute('content').trim().replace(/\s+/g,' '));}
         else assert.deepEqual(current,item,item.url+' non-main-hero search record unchanged');
       }
-      assert.deepEqual(original.items.slice(baseline.length).map(item=>item.url).sort(),['/'+locale+'/heroes/lava/','/'+locale+'/heroes/lava/#lava-skills','/'+locale+'/heroes/lava/#lava-growth'].sort(),locale+' exactly three approved additions');
+      assert.deepEqual(original.items.slice(baseline.length).map(item=>item.url).sort(),['/'+locale+'/heroes/lava/','/'+locale+'/heroes/lava/#lava-skills','/'+locale+'/heroes/lava/#lava-growth',...require('./build-v4-search').records(locale).map(r=>r.url)].sort(),locale+' exactly six reviewed additions');
       for(const item of derived.items){const u=new URL(item.url,'https://tilessurvive.net');assert.equal(u.origin,'https://tilessurvive.net');assert(u.pathname.startsWith('/'+locale+'/'));const file=u.pathname.slice(1)+'index.html';if(!pages.has(file))pages.set(file,read(file));if(u.hash){const id=decodeURIComponent(u.hash.slice(1));assert(new RegExp('\\bid=["\\\']'+id.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'["\\\']').test(pages.get(file)),item.url+' real fragment');}
         for(const a of item.search.aliases){assert(codes.includes(a.language));assert.equal(typeof a.value,'string');assert(['site-label','site-alias','retained-client','retained-english-fallback'].includes(a.source));if(['ar','vi','nb'].includes(a.language))assert.notEqual(a.source,'retained-client');
           if(a.source==='retained-english-fallback'){assert(['ar','vi','nb'].includes(a.language));assert(item.search.hero,'Fallback is tied to an explicit client hero');const hero=require('../data/hero-atlas-client.json').heroes.find(h=>h.id===item.search.hero.formId);assert(hero);assert.equal(a.termKey,hero.nameKey);assert.equal(hero.names[a.language].status,'english-fallback');assert.equal(a.value,hero.names.en.value,'English fallback never claims a verified local client name');}
         }count++;
       }
     }
-    assert.equal(retainedCount,9175);assert.equal(count,9238);
+    assert.equal(retainedCount,9175);assert.equal(count,9301);
   });
   test('future global regeneration keeps 14 locales times 3 V3 feature routes fully translated and owned',()=>{
     const L=require('./lib/global-localization'),G=require('./build-global-locales'),groups=L.routeGroups(),targets=codes.filter(c=>!L.existing.has(c)&&c!=='zh-cn');assert.equal(targets.length,14);let count=0;
     for(const id of ['buildings/power-plant/','events/calendar/','top-up/']){const group=groups.find(g=>g.id===id),source=read(group.file),originalNumbers=numericModels(parseHTML(source).document);
-      for(const locale of targets){const t=L.createTranslator(locale,G.catalogFor(locale)),d=G.localizePage(source,locale,group,groups,t);assert.deepEqual([...t.missing],[],locale+' '+id+' missing');assert.deepEqual(t.errors,[],locale+' '+id+' errors');const html=G.enhance(d,locale,group,codes,require('../data/i18n/ui/'+locale+'.json'),{preview:false}),out=parseHTML(html).document;verifyManifest(out,locale,group.routes[locale],locale+'/'+id);assert.deepEqual(numericModels(out),originalNumbers,locale+' '+id+' every original numeric/numeric-string model leaf');assert.deepEqual(ads(html),ads(source));assert.equal(out.querySelector('link[rel="canonical"]').href,'https://tilessurvive.net'+group.routes[locale]);P.validateOwnership(html,locale,group.routes[locale]);assert.equal(P.project(html,locale,group.routes[locale]),html,locale+' '+id+' V3 idempotence');count++;}
+      for(const locale of targets){const t=L.createTranslator(locale,G.catalogFor(locale)),d=G.localizePage(source,locale,group,groups,t);assert.deepEqual([...t.missing],[],locale+' '+id+' missing');assert.deepEqual(t.errors,[],locale+' '+id+' errors');const html=G.enhance(d,locale,group,codes,require('../data/i18n/ui/'+locale+'.json'),{preview:false}),out=parseHTML(html).document;verifyManifest(out,locale,group.routes[locale],locale+'/'+id);assert.deepEqual(numericModels(out),originalNumbers,locale+' '+id+' every original numeric/numeric-string model leaf');assert.deepEqual(ads(html),ads(source));assert.equal(out.querySelector('link[rel="canonical"]').href,'https://tilessurvive.net'+group.routes[locale]);P.validateOwnership(html,locale,group.routes[locale]);assert.equal(V4.project(P.project(html,locale,group.routes[locale]),locale,group.routes[locale]),html,locale+' '+id+' V3→V4 lifecycle idempotence');count++;}
     }assert.equal(count,42);
   });
 }

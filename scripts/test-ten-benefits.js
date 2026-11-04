@@ -203,21 +203,22 @@ test('21 pages preserve all remaining DOM outside the explicitly reviewed guide,
   for(const r of rows)assert.equal(retained(r.after), retained(r.before), r.locale);
 });
 
-test('all baseline HTML except the 21 top-up pages remains unchanged; no new HTML is added', () => {
-  const unchanged = tracked.filter(publicHtml).filter(f=>!isTopup(f));
-  assert.ok(unchanged.length >= 2500, 'whole-site comparison, not only sampled routes');
-  assert.deepEqual(changed.filter(publicHtml).filter(f=>!isTopup(f)), []);
-  assert.deepEqual(newPaths.filter(publicHtml), []);
-  assert.deepEqual(changed.filter(publicHtml).sort(), locales.map(l=>l.code+'/top-up/index.html').sort());
+test('current release changes only exact reviewed Atlas/V4 HTML; all 21 TEN pages remain byte-identical', () => {
+  const pin='fe4d8d394b5f4e0624ac8e8be15864e5de5e00b8',V4=require('./v4-workbench-content'),Atlas=require('./build-hero-atlas'),T=require('./test-v3-platform');
+  const names=git(['diff','--name-only',pin,'--','*.html']).trim().split('\n').filter(Boolean),old=T.batch(names,pin);
+  for(const file of names){const locale=file.split('/')[0],route='/'+file.replace(/index\.html$/,''),allowed=Atlas.isOwnedRoute(route)||V4.kindFor(route);assert(allowed,'Unrelated page '+file);let expected=old.get(file);if(Atlas.isOwnedRoute(route))expected=Atlas.project(expected,locale,route);if(V4.kindFor(route)){expected=V4.project(expected,locale,route);V4.validateOwnership(read(file),locale,route);}assert.equal(read(file),expected,file+' exact reviewed projection');}
+  const topups=locales.map(l=>l.code+'/top-up/index.html'),before=T.batch(topups,pin);for(const file of topups)assert.equal(read(file),before.get(file),file+' unchanged');
+  const original=new Set(git(['ls-tree','-r','--name-only',pin]).trim().split('\n'));assert.deepEqual([...new Set([...currentTracked,...added])].filter(f=>publicHtml(f)&&!original.has(f)),[],'V4 adds no public page URLs');
 });
 
-test('all original game/data models, shared runtimes, components, existing styles and discovery files remain unchanged', () => {
-  const exceptions=new Set(['data/v3-affiliate-copy.json','data/ten-benefits-policy.json','css/ten-benefits.css']);
-  const protectedFile=f=>/^(?:data|js|components|css|assets)\//.test(f)&&!exceptions.has(f)||['robots.txt','sitemap.xml','_config.yml'].includes(f);
-  assert.deepEqual(changed.filter(protectedFile), []);
-  for(const f of tracked.filter(protectedFile))assert.ok(fs.existsSync(path.join(ROOT,f)), f);
-  assert.deepEqual(newPaths.filter(f=>f.startsWith('data/')).sort(), ['data/ten-benefits-policy.json']);
-  assert.deepEqual(newPaths.filter(f=>f.startsWith('js/')||f.startsWith('components/')), []);
+test('every current pre-V4 public model/runtime/style is unchanged except reviewed search projections', () => {
+  const pin='fe4d8d394b5f4e0624ac8e8be15864e5de5e00b8';
+  const originals=new Set(git(['ls-tree','-r','--name-only',pin]).trim().split('\n'));
+  const files=git(['diff','--name-only',pin]).trim().split('\n').filter(Boolean),protectedFile=f=>/^(?:data|js|components|css|assets)\//.test(f)||['robots.txt','sitemap.xml','_config.yml'].includes(f);
+  assert.deepEqual(files.filter(f=>originals.has(f)&&protectedFile(f)&&!/^data\/(?:search\/|v3-search\/|search-index\.json$)/.test(f)),[],'Existing protected input changed');
+  for(const f of [...originals].filter(protectedFile))assert(fs.existsSync(path.join(ROOT,f)),f+' preserved');
+  const reviewed=new Set(['data/v4-formation.json','data/v4-formation-copy.json','data/v4-economy.json','data/v4-economy-copy.json','data/v4-workbench-copy.json','data/v4-provenance.json','js/v4-state.js','js/v4-workbench.js','js/v4-formation-math.js','js/v4-formation-ui.js','js/v4-economy-math.js','js/v4-economy-ui.js','css/v4-workbench.css']);
+  assert.deepEqual([...new Set([...currentTracked,...added])].filter(f=>protectedFile(f)&&!originals.has(f)&&!reviewed.has(f)),[],'Unreviewed new public input');
 });
 
 test('the narrow publisher projects the 21 finished pages identically on repeated read-only application', () => {

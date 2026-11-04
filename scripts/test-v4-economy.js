@@ -1,0 +1,38 @@
+'use strict';
+const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),vm=require('node:vm'),crypto=require('node:crypto');
+const M=require('../data/v4-economy.json'),F=require('../js/v4-economy-math'),B=require('./building-data-registry');
+const goal=(uid,from,to)=>({uid,kind:'building',id:800005,profile:'unified',from,to});
+test('the new projection retains all existing 29 building profiles and exact public numeric fields',()=>{
+ assert.equal(M.buildings.length,29);for(const b of B.slugs.flatMap(B.publicBuildings)){const actual=M.buildings.find(x=>x.id===b.id);assert(actual);assert.deepEqual(actual.profiles.map(p=>p.id),b.profiles.map(p=>p.id));for(const p of b.profiles){const rows=actual.profiles.find(x=>x.id===p.id).rows;assert.equal(rows.length,p.rows.length);for(let i=0;i<rows.length;i++)for(const k of ['level','rank','resources','seconds','battlePower'])assert.deepEqual(rows[i][k],p.rows[i][k]??null,b.id+':'+p.id+':'+i+':'+k);}}
+ assert.deepEqual(M.buildings.find(x=>x.id===800005).profiles.map(x=>x.id),['unified']);
+});
+test('all 496 Power Plant ranges use independent integer sums and endpoint power, not a sum of level totals',()=>{
+ const source=require('../data/client-buildings-52.json').buildings.find(b=>b.buildingId===800005).profiles.find(p=>p.id==='original').levels;
+ for(let from=0;from<=30;from++)for(let to=from;to<=30;to++){const q=F.quoteGoal(M,goal('p',from,to)),selected=source.filter(r=>r.level>from&&r.level<=to);assert.deepEqual(M.resources.map(r=>q.resources[r.id]),[0,1,2,3].map(i=>Number(selected.reduce((sum,r)=>sum+BigInt(r.resources[i]),0n))));assert.equal(q.seconds,Number(selected.reduce((n,r)=>n+BigInt(r.seconds),0n)));assert.equal(q.powerDelta,to===from?0:source[to-1].battlePower-(from?source[from-1].battlePower:0));}
+ const q=F.quoteGoal(M,goal('p',1,3));assert.deepEqual(q.resources,{'1200005':37400,'1200004':37400,'1200003':0,'1200002':0});assert.equal(q.seconds,7);assert.equal(q.powerDelta,10787);
+});
+test('shared inventory and typed/universal speedups are reserved once in explicit goal order',()=>{
+ const input={goals:[goal('a',1,2),goal('b',2,3)],held:{1200005:20000,1200004:20000},speedupSeconds:{construction:2,universal:4}},before=structuredClone(input),r=F.plan(M,input);assert.deepEqual(input,before);assert.equal(r.goals[0].allocated[1200005],14800);assert.equal(r.goals[1].allocated[1200005],5200);assert.equal(r.knownShortage[1200005],17400);assert.equal(r.remainingHeld[1200005],0);assert.equal(r.remainingSeconds,1);assert.deepEqual(r.goals.map(x=>x.usedSpeedupSeconds),[3,3]);assert.equal(r.powerDelta,10787);
+ const reverse=F.plan(M,{...input,goals:[input.goals[1],input.goals[0]]});assert.equal(reverse.goals[0].allocated[1200005],20000);assert.equal(reverse.goals[1].allocated[1200005],0);assert.deepEqual(reverse.resources,r.resources);assert.deepEqual(reverse.shortage,r.shortage);
+});
+test('unknown research costs/times stay null while known subtotals, valid levels and prerequisites remain usable',()=>{
+ const id=M.research[0].id,input={goals:[goal('b',1,2),{uid:'r',kind:'research',id,from:0,to:1}],held:{1200005:14800,1200004:14800},speedupSeconds:{research:60}},r=F.plan(M,input);assert.equal(r.resources,null);assert.equal(r.shortage,null);assert.equal(r.seconds,null);assert.equal(r.knownResources[1200005],14800);assert.equal(r.knownSeconds,3);assert.equal(r.unusedSpeedupSeconds.research,60);assert.equal(r.goals[1].resources,null);assert.equal(r.goals[1].canFund,null);assert(r.goals[1].requirements.length);assert(r.goals[1].reasonCodes.includes('researchCostEncoding'));assert.throws(()=>F.quoteGoal(M,{kind:'research',id,from:0,to:99}));
+});
+test('ten selected player troop tiers preserve exact costs; ambiguous time units are never invented',()=>{
+ const one=F.quoteGoal(M,{kind:'training',id:1300001,quantity:10});assert.deepEqual(one.resources,{'1200004':200});assert.equal(one.seconds,null);assert.equal(one.powerDelta,30);const healing=F.quoteGoal(M,{kind:'healing',id:1300001,quantity:10});assert.deepEqual(healing.resources,{'1200004':20});assert.equal(healing.seconds,null);assert.equal(healing.powerDelta,null);assert.deepEqual(one.requirements[0].buildingAlternatives,[800007,800008,800009]);assert.equal(one.requirements[0].buildingLevel,1);assert.equal(M.troops.find(t=>t.tier===10).requirements.functionOpen,'research_ten_level_soldier_unlock');assert.throws(()=>F.quoteGoal(M,{kind:'training',id:1300037,quantity:1}));
+});
+test('VS hand fixtures preserve day-specific material scores and never multiply the same stockpile across alternatives',()=>{
+ const input={eventId:'alliance-duel',profileId:'season-1',day:4,quantities:{survivor_chip_5:10,'item-201725':20,use_build_speedup:120},currentPoints:1000,targetStage:182600011};const copy=structuredClone(input),r=F.scoreEvent(M,input);assert.deepEqual(input,copy);assert.equal(r.basePoints,202000);assert.equal(r.totalPoints,203000);assert.equal(r.target.points,150000);assert.equal(r.target.pointShortage,0);assert.equal(r.perDay.find(x=>x.day===2).basePoints,30000);assert.equal(r.perDay.find(x=>x.day===5).basePoints,30000);assert.equal(r.perDay.find(x=>x.day===6).basePoints,30000);assert.deepEqual(r.excludedMaterials,['use_build_speedup']);assert.equal(M.events[0].weekdayMapping,null);assert.equal(M.events[0].liveScheduleVerified,false);
+});
+test('point thresholds and unlocked chest groups are independent; an unknown unlock never becomes guaranteed eligibility',()=>{
+ const input={eventId:'alliance-duel',profileId:'season-1',day:4,quantities:{survivor_chip_5:10000},currentPoints:0},r=F.scoreEvent(M,input);assert.equal(r.stages.filter(s=>s.pointsMet).length,9);assert.equal(r.stages.filter(s=>s.unlockConfirmed).length,3);assert.equal(r.eligibleStages.length,3);const groups=[...new Set(r.stages.map(s=>s.groupId))];assert.equal(F.scoreEvent(M,{...input,unlockedBoxGroups:groups}).eligibleStages.length,9);assert.throws(()=>F.scoreEvent(M,{...input,unlockedBoxGroups:[123]}));assert(r.reasonCodes.includes('eventBaseOnly'));
+});
+test('invalid, overlapping, malformed and overflowing requests fail without modifying input or models',()=>{
+ const before=JSON.stringify(M);for(const n of [-1,0.5,NaN,Infinity,'1',null])assert.throws(()=>F.quoteGoal(M,{kind:'training',id:1300001,quantity:n}));assert.throws(()=>F.quoteGoal(M,{kind:'training',id:1300010,quantity:Number.MAX_SAFE_INTEGER}));assert.throws(()=>F.plan(M,{goals:[goal('a',1,3),goal('b',2,4)]}));assert.throws(()=>F.plan(M,{goals:[goal('a',1,2),goal('a',2,3)]}));assert.throws(()=>F.plan(M,{goals:[],held:{unknown:1}}));assert.throws(()=>F.scoreEvent(M,{eventId:'alliance-duel',profileId:'season-1',day:0}));assert.throws(()=>F.scoreEvent(M,{eventId:'alliance-duel',profileId:'season-1',day:4,quantities:{survivor_chip_5:Number.MAX_SAFE_INTEGER}}));assert.equal(JSON.stringify(M),before);
+});
+test('browser UMD and CommonJS calculate exactly the same results without DOM or storage dependencies',()=>{
+ const sandbox={BUILDING_SYSTEM:require('../js/building-system')};vm.createContext(sandbox);vm.runInContext(fs.readFileSync(path.join(__dirname,'../js/v4-economy-math.js'),'utf8'),sandbox);const input={goals:[goal('x',29,30)],held:{},speedupSeconds:{universal:100}};assert.equal(JSON.stringify(sandbox.TS_V4_ECONOMY.plan(M,input)),JSON.stringify(F.plan(M,input)));
+});
+test('pinned reused model hashes still match and public payload contains no private filesystem paths',()=>{
+ for(const s of M.sourceEvidence.models)assert.equal(crypto.createHash('sha256').update(fs.readFileSync(path.join(__dirname,'..',s.file))).digest('hex'),s.sha256);assert(!/[A-Z]:\\|New project|foundation-40\/raw|\\Users\\/.test(JSON.stringify(M)));
+});
