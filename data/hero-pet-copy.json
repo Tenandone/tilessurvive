@@ -38,7 +38,7 @@
         "low-health-survival": "The hero has a low-Health effect and the pet reduces Normal Attack damage in a matching low-Health window."
       },
       "conditions": {
-        "same-target": "The hero must attack the target affected by the pet.",
+        "same-target": "The low-health conditions of both the hero skill and pet skill must apply to the same attack target.",
         "defense-reduction-active": "The pet Defense reduction must still be active.",
         "pet-skill-unlocked": "The cited pet skill must be unlocked.",
         "hero-skill-unlocked": "The cited hero skill must be unlocked.",
@@ -94,7 +94,7 @@
         "low-health-survival": "영웅의 낮은 체력 조건과 펫의 일반 공격 피해 감소 조건이 겹칠 수 있습니다."
       },
       "conditions": {
-        "same-target": "영웅이 펫 효과를 받은 같은 대상을 공격해야 합니다.",
+        "same-target": "영웅 스킬과 펫 스킬의 저체력 조건은 같은 공격 대상에 적용되어야 합니다.",
         "defense-reduction-active": "펫의 방어력 감소 효과가 유지되어야 합니다.",
         "pet-skill-unlocked": "표시된 펫 스킬을 해금해야 합니다.",
         "hero-skill-unlocked": "표시된 영웅 스킬을 해금해야 합니다.",
@@ -150,7 +150,7 @@
         "low-health-survival": "英雄の低HP効果と、ペットの通常攻撃ダメージ軽減の発動範囲が重なる可能性があります。"
       },
       "conditions": {
-        "same-target": "英雄はペットの効果を受けた同じ対象を攻撃する必要があります。",
+        "same-target": "英雄スキルとペットスキルの低HP条件は、同じ攻撃対象に適用される必要があります。",
         "defense-reduction-active": "ペットの防御力低下が継続している必要があります。",
         "pet-skill-unlocked": "記載のペットスキルを解放する必要があります。",
         "hero-skill-unlocked": "記載の英雄スキルを解放する必要があります。",
@@ -206,7 +206,7 @@
         "low-health-survival": "英雄的低生命值效果可能与宠物降低普通攻击伤害的生效区间重合。"
       },
       "conditions": {
-        "same-target": "英雄必须攻击受到宠物效果影响的同一目标。",
+        "same-target": "英雄技能和宠物技能的低生命值条件必须针对同一个攻击目标。",
         "defense-reduction-active": "宠物的防御降低效果必须仍在生效。",
         "pet-skill-unlocked": "必须解锁所列宠物技能。",
         "hero-skill-unlocked": "必须解锁所列英雄技能。",
@@ -262,7 +262,7 @@
         "low-health-survival": "英雄的低生命值效果可能與寵物降低普通攻擊傷害的生效區間重合。"
       },
       "conditions": {
-        "same-target": "英雄必須攻擊受到寵物效果影響的同一目標。",
+        "same-target": "英雄技能與寵物技能的低生命值條件必須針對同一個攻擊目標。",
         "defense-reduction-active": "寵物的防禦降低效果必須仍在生效。",
         "pet-skill-unlocked": "必須解鎖所列寵物技能。",
         "hero-skill-unlocked": "必須解鎖所列英雄技能。",
@@ -318,7 +318,7 @@
         "low-health-survival": "Efek hero saat HP rendah dapat bertepatan dengan pengurangan damage Serangan Normal dari pet."
       },
       "conditions": {
-        "same-target": "Hero harus menyerang target yang sama yang terkena efek pet.",
+        "same-target": "Syarat HP rendah pada skill hero dan skill pet harus berlaku untuk target serangan yang sama.",
         "defense-reduction-active": "Efek penurunan Pertahanan pet harus masih aktif.",
         "pet-skill-unlocked": "Skill pet yang disebutkan harus sudah terbuka.",
         "hero-skill-unlocked": "Skill hero yang disebutkan harus sudah terbuka.",
@@ -374,7 +374,7 @@
         "low-health-survival": "Kesan wira pada HP rendah mungkin bertindih dengan pengurangan kerosakan Serangan Biasa oleh haiwan."
       },
       "conditions": {
-        "same-target": "Wira mesti menyerang sasaran sama yang terkena kesan haiwan.",
+        "same-target": "Syarat HP rendah bagi kemahiran wira dan kemahiran haiwan mesti terpakai pada sasaran serangan yang sama.",
         "defense-reduction-active": "Pengurangan Pertahanan oleh haiwan mesti masih aktif.",
         "pet-skill-unlocked": "Kemahiran haiwan yang dinyatakan mesti dibuka.",
         "hero-skill-unlocked": "Kemahiran wira yang dinyatakan mesti dibuka.",
@@ -430,7 +430,7 @@
         "low-health-survival": "Điều kiện HP thấp của anh hùng có thể trùng với khoảng giảm sát thương Đánh thường của thú cưng."
       },
       "conditions": {
-        "same-target": "Anh hùng phải tấn công cùng mục tiêu đang chịu hiệu ứng thú cưng.",
+        "same-target": "Điều kiện máu thấp của kỹ năng anh hùng và kỹ năng thú cưng phải áp dụng cho cùng một mục tiêu tấn công.",
         "defense-reduction-active": "Hiệu ứng giảm Phòng thủ của thú cưng phải còn hiệu lực.",
         "pet-skill-unlocked": "Phải mở khóa kỹ năng thú cưng được nêu.",
         "hero-skill-unlocked": "Phải mở khóa kỹ năng anh hùng được nêu.",
@@ -486,7 +486,7 @@
         "low-health-survival": "เอฟเฟกต์เมื่อ HP ต่ำของฮีโร่อาจตรงกับช่วงลดความเสียหายจากการโจมตีปกติของสัตว์เลี้ยง"
       },
       "conditions": {
-        "same-target": "ฮีโร่ต้องโจมตีเป้าหมายเดียวกับที่ได้รับเอฟเฟกต์สัตว์เลี้ยง",
+        "same-target": "เงื่อนไขพลังชีวิตต่ำของสกิลฮีโร่และสกิลสัตว์เลี้ยงต้องใช้กับเป้าหมายการโจมตีเดียวกัน",
         "defense-reduction-active": "เอฟเฟกต์ลดพลังป้องกันของสัตว์เลี้ยงต้องยังทำงานอยู่",
         "pet-skill-unlocked": "ต้องปลดล็อกสกิลสัตว์เลี้ยงที่ระบุ",
         "hero-skill-unlocked": "ต้องปลดล็อกสกิลฮีโร่ที่ระบุ",
@@ -542,7 +542,7 @@
         "low-health-survival": "قد يتزامن تأثير البطل عند انخفاض الصحة مع نطاق تقليل ضرر الهجمات العادية للحيوان الأليف."
       },
       "conditions": {
-        "same-target": "يجب أن يهاجم البطل الهدف نفسه المتأثر بالحيوان الأليف.",
+        "same-target": "يجب أن تنطبق شروط انخفاض الصحة في مهارة البطل ومهارة الحيوان الأليف على هدف الهجوم نفسه.",
         "defense-reduction-active": "يجب أن يظل خفض دفاع الحيوان الأليف فعالاً.",
         "pet-skill-unlocked": "يجب فتح مهارة الحيوان الأليف المذكورة.",
         "hero-skill-unlocked": "يجب فتح مهارة البطل المذكورة.",
@@ -598,7 +598,7 @@
         "low-health-survival": "Der Held hat einen Effekt bei wenigen Lebenspunkten, und der Begleiter verringert den Schaden durch normale Angriffe in einem passenden Bereich mit wenigen Lebenspunkten."
       },
       "conditions": {
-        "same-target": "Der Held muss das vom Begleiter beeinflusste Ziel angreifen.",
+        "same-target": "Die Bedingungen für niedrige Lebenspunkte der Helden- und Begleiterfähigkeit müssen für dasselbe Angriffsziel gelten.",
         "defense-reduction-active": "Die Verteidigungssenkung des Begleiters muss noch aktiv sein.",
         "pet-skill-unlocked": "Die angegebene Begleiterfähigkeit muss freigeschaltet sein.",
         "hero-skill-unlocked": "Die angegebene Heldenfähigkeit muss freigeschaltet sein.",
@@ -654,7 +654,7 @@
         "low-health-survival": "Le héros possède un effet lié à des PV faibles, et le familier réduit les dégâts des attaques normales dans une plage correspondante de PV faibles."
       },
       "conditions": {
-        "same-target": "Le héros doit attaquer la cible affectée par le familier.",
+        "same-target": "Les conditions de PV faibles de la compétence du héros et de celle du familier doivent s’appliquer à la même cible d’attaque.",
         "defense-reduction-active": "La réduction de Défense du familier doit encore être active.",
         "pet-skill-unlocked": "La compétence du familier citée doit être débloquée.",
         "hero-skill-unlocked": "La compétence du héros citée doit être débloquée.",
@@ -710,7 +710,7 @@
         "low-health-survival": "L’eroe ha un effetto a Salute bassa e il famiglio riduce i danni degli attacchi normali in una fascia corrispondente di Salute bassa."
       },
       "conditions": {
-        "same-target": "L’eroe deve attaccare il bersaglio influenzato dal famiglio.",
+        "same-target": "Le condizioni di salute bassa dell’abilità dell’eroe e di quella del famiglio devono riferirsi allo stesso bersaglio dell’attacco.",
         "defense-reduction-active": "La riduzione della Difesa del famiglio deve essere ancora attiva.",
         "pet-skill-unlocked": "L’abilità del famiglio citata deve essere sbloccata.",
         "hero-skill-unlocked": "L’abilità dell’eroe citata deve essere sbloccata.",
@@ -766,7 +766,7 @@
         "low-health-survival": "El héroe tiene un efecto con Salud baja y la mascota reduce el daño de ataques normales en un intervalo correspondiente de Salud baja."
       },
       "conditions": {
-        "same-target": "El héroe debe atacar al objetivo afectado por la mascota.",
+        "same-target": "Las condiciones de poca salud de la habilidad del héroe y de la habilidad de la mascota deben aplicarse al mismo objetivo del ataque.",
         "defense-reduction-active": "La reducción de Defensa de la mascota debe seguir activa.",
         "pet-skill-unlocked": "La habilidad citada de la mascota debe estar desbloqueada.",
         "hero-skill-unlocked": "La habilidad citada del héroe debe estar desbloqueada.",
@@ -822,7 +822,7 @@
         "low-health-survival": "O herói tem um efeito com Vida baixa, e o mascote reduz o dano de ataques normais em uma faixa correspondente de Vida baixa."
       },
       "conditions": {
-        "same-target": "O herói deve atacar o alvo afetado pelo mascote.",
+        "same-target": "As condições de vida baixa da habilidade do herói e da habilidade do mascote devem se aplicar ao mesmo alvo do ataque.",
         "defense-reduction-active": "A redução de Defesa do mascote deve continuar ativa.",
         "pet-skill-unlocked": "A habilidade citada do mascote deve estar desbloqueada.",
         "hero-skill-unlocked": "A habilidade citada do herói deve estar desbloqueada.",
@@ -878,7 +878,7 @@
         "low-health-survival": "De held heeft een effect bij weinig gezondheid en het huisdier vermindert schade door normale aanvallen in een overeenkomstig bereik van weinig gezondheid."
       },
       "conditions": {
-        "same-target": "De held moet het doel aanvallen dat door het huisdier wordt beïnvloed.",
+        "same-target": "De voorwaarden voor lage gezondheid van de heldenvaardigheid en de huisdiervaardigheid moeten op hetzelfde aanvalsdoel van toepassing zijn.",
         "defense-reduction-active": "De verdedigingsverlaging van het huisdier moet nog actief zijn.",
         "pet-skill-unlocked": "De genoemde huisdiervaardigheid moet ontgrendeld zijn.",
         "hero-skill-unlocked": "De genoemde heldenvaardigheid moet ontgrendeld zijn.",
@@ -934,7 +934,7 @@
         "low-health-survival": "Bohater ma efekt przy niskim Zdrowiu, a zwierzak ogranicza obrażenia od zwykłych ataków w odpowiadającym mu przedziale niskiego Zdrowia."
       },
       "conditions": {
-        "same-target": "Bohater musi atakować cel objęty działaniem zwierzaka.",
+        "same-target": "Warunki niskiego poziomu zdrowia w umiejętności bohatera i umiejętności zwierzaka muszą dotyczyć tego samego celu ataku.",
         "defense-reduction-active": "Obniżenie Obrony przez zwierzaka musi nadal działać.",
         "pet-skill-unlocked": "Wskazana umiejętność zwierzaka musi być odblokowana.",
         "hero-skill-unlocked": "Wskazana umiejętność bohatera musi być odblokowana.",
@@ -990,7 +990,7 @@
         "low-health-survival": "У героя есть эффект при низком Здоровье, а питомец снижает урон обычных атак в соответствующем диапазоне низкого Здоровья."
       },
       "conditions": {
-        "same-target": "Герой должен атаковать цель, на которую действует питомец.",
+        "same-target": "Условия низкого здоровья в навыке героя и навыке питомца должны относиться к одной и той же цели атаки.",
         "defense-reduction-active": "Снижение Защиты питомцем должно оставаться активным.",
         "pet-skill-unlocked": "Указанный навык питомца должен быть открыт.",
         "hero-skill-unlocked": "Указанный навык героя должен быть открыт.",
@@ -1046,7 +1046,7 @@
         "low-health-survival": "Kahramanın düşük Sağlıkta çalışan bir etkisi vardır ve evcil hayvan, buna karşılık gelen düşük Sağlık aralığında Normal Saldırı hasarını azaltır."
       },
       "conditions": {
-        "same-target": "Kahraman, evcil hayvanın etkilediği hedefe saldırmalıdır.",
+        "same-target": "Kahramanın becerisindeki ve evcil hayvanın becerisindeki düşük sağlık koşulları aynı saldırı hedefi için geçerli olmalıdır.",
         "defense-reduction-active": "Evcil hayvanın Savunma azaltması hâlâ etkin olmalıdır.",
         "pet-skill-unlocked": "Belirtilen evcil hayvan becerisi açılmış olmalıdır.",
         "hero-skill-unlocked": "Belirtilen kahraman becerisi açılmış olmalıdır.",
@@ -1102,7 +1102,7 @@
         "low-health-survival": "Hjälten har en effekt vid låg hälsa, och husdjuret minskar skadan från normala attacker inom ett motsvarande intervall med låg hälsa."
       },
       "conditions": {
-        "same-target": "Hjälten måste attackera målet som påverkas av husdjuret.",
+        "same-target": "Villkoren för låg hälsa i hjältens och husdjurets färdigheter måste gälla samma attackmål.",
         "defense-reduction-active": "Husdjurets försvarssänkning måste fortfarande vara aktiv.",
         "pet-skill-unlocked": "Den angivna husdjursfärdigheten måste vara upplåst.",
         "hero-skill-unlocked": "Den angivna hjältefärdigheten måste vara upplåst.",
@@ -1158,7 +1158,7 @@
         "low-health-survival": "Helten har en effekt ved lav helse, og kjæledyret reduserer skade fra normale angrep i et tilsvarende intervall med lav helse."
       },
       "conditions": {
-        "same-target": "Helten må angripe målet som påvirkes av kjæledyret.",
+        "same-target": "Vilkårene for lav helse i heltens og kjæledyrets ferdigheter må gjelde det samme angrepsmålet.",
         "defense-reduction-active": "Kjæledyrets forsvarsreduksjon må fortsatt være aktiv.",
         "pet-skill-unlocked": "Den angitte kjæledyrferdigheten må være låst opp.",
         "hero-skill-unlocked": "Den angitte helteferdigheten må være låst opp.",
