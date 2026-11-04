@@ -158,6 +158,16 @@ function localizePage(source, locale, group, groups, translator) {
   if(source.includes('data-v3-platform'))require('./build-v3-platform').validateOwnership(source,'en',group.routes.en);
   const {document}=parseHTML(source), info=L.byCode.get(locale), t=contextualTranslator(locale,group,translator);
   const powerOwner=unifiedPowerPlantOwner(document,group);
+  // These inherited top-up links remain in place when the TEN owner is
+  // regenerated. Validate the English owner above, then localize only their
+  // route and the retained affiliate-policy link label. Benefit prose stays
+  // excluded from generic translation and is restored by the locale owner.
+  if(group.id==='top-up/'&&document.documentElement.hasAttribute('data-v3-platform')){
+    for(const link of document.querySelectorAll('a[data-v3-owned="topup-bookmark-link"],p[data-v3-owned="topup-policy-disclosure"] a')){
+      link.setAttribute('href',L.routeURL(link.getAttribute('href'),locale,groups));
+      if(link.closest('[data-v3-owned="topup-policy-disclosure"]'))link.textContent=t(link.textContent,group.file+':ten-inherited-policy-link');
+    }
+  }
   document.documentElement.setAttribute('lang',info.htmlLang);
   document.documentElement.setAttribute('data-lang',locale);
   document.documentElement.setAttribute('dir',info.dir);

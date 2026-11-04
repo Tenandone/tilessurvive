@@ -19,7 +19,23 @@ function inherited(html){return normalizeCache(lf(A.transformAnalytics(P.strip(h
 function knownTopupCorrection(html,locale){
   const d=parseHTML(html).document,p=d.querySelector('[data-topup-step="2"] p');if(!p)return html;
   const before=p.outerHTML;p.textContent=require('../data/v3-affiliate-copy.json').locales[locale].faq[3][1];p.setAttribute('data-v3-owned','topup-step');
-  assert(html.includes(before),'Exact legacy topup paragraph must be replaceable '+locale);return html.replace(before,p.outerHTML);
+  assert(html.includes(before),'Exact legacy topup paragraph must be replaceable '+locale);html=html.replace(before,p.outerHTML);
+  // The TEN policy update authorizes replacing this one inherited bookmark
+  // section and its same-page TOC labels. Compare the exact renderer result;
+  // do not strip arbitrary content or permit changes to neighboring sections.
+  const section=d.querySelector('[data-bookmark-cta]')?.closest('section');assert(section,locale+' inherited bookmark section');
+  const id=section.querySelector('h2')?.id;assert(id,locale+' inherited bookmark anchor');
+  const candidates=[section,...d.querySelectorAll('a[href]')].filter(node=>{
+    if(node===section)return true;
+    const u=new URL(node.getAttribute('href'),'https://tilessurvive.net/'+locale+'/top-up/');
+    return u.origin==='https://tilessurvive.net'&&u.pathname==='/'+locale+'/top-up/'&&u.hash==='#'+id;
+  });
+  const legacyFaq=d.querySelector('.topup-faq > details'),legacyDisclosure=d.querySelector('p.topup-disclosure');
+  assert(legacyFaq&&legacyDisclosure,locale+' exact legacy benefit-copy targets');candidates.push(legacyFaq,legacyDisclosure);
+  const previous=candidates.map(node=>({node,html:node.outerHTML}));
+  const benefits=require('./ten-benefits-content');benefits.projectBookmark(d,locale);benefits.projectLegacyBenefitCopy(d,locale);
+  for(const old of previous)if(old.html!==old.node.outerHTML){assert(html.includes(old.html),'Exact authorized bookmark node must exist '+locale);html=html.replace(old.html,old.node.outerHTML);}
+  return html;
 }
 function metadata(html){
   const head=parseHTML(html.match(/<head\b[^>]*>[\s\S]*?<\/head>/i)?.[0]||'<head></head>').document;
@@ -47,7 +63,7 @@ function verifyManifest(d,locale,route,file){
   const rel=route.slice(locale.length+2),power=rel==='buildings/power-plant/',event=['events/','events/calendar/','tools/event-helper/'].includes(rel),topup=rel==='top-up/';
   const nav=['','tools/','events/','tools/event-helper/','buildings/power-plant/','events/calendar/','top-up/'].includes(rel);
   const trust=Boolean(d.querySelector('[data-building-system]'))||rel==='database/research/';
-  for(const [selector,count]of [['[data-v3-owned="planner"]',+power],['[data-v3-owned="events"]',event?2:0],['[data-v3-owned="affiliate"]',+topup],['[data-v3-owned="navigation"]',+nav],['[data-v3-owned="trust"]',+trust],['[data-v3-owned="privacy"]',1],['[data-v3-owned="topup-step"]',+topup]])assert.equal(d.querySelectorAll(selector).length,count,file+' exact feature manifest '+selector);
+  for(const [selector,count]of [['[data-v3-owned="planner"]',+power],['[data-v3-owned="events"]',event?2:0],['[data-v3-owned="affiliate"]',+topup],['[data-v3-owned="navigation"]',+nav],['[data-v3-owned="trust"]',+trust],['[data-v3-owned="privacy"]',1],['[data-v3-owned="topup-step"]',+topup],['[data-v3-owned="topup-bookmark"]',+topup],['[data-v3-owned="topup-bookmark-faq"]',+topup],['[data-v3-owned="topup-policy-disclosure"]',+topup]])assert.equal(d.querySelectorAll(selector).length,count,file+' exact feature manifest '+selector);
   assert(d.documentElement.hasAttribute('data-v3-platform'));assert(d.documentElement.hasAttribute('data-v3-affiliate'));
   assert.equal(d.querySelectorAll('[data-v3-ga-bootstrap]').length,1,file+' consent bootstrap');
   const bootstrap=d.querySelector('[data-v3-ga-bootstrap]').textContent;assert(bootstrap.includes("analytics_storage:'denied'"));assert(!/gtag\(['"]config/.test(bootstrap));
@@ -61,7 +77,17 @@ function verifyManifest(d,locale,route,file){
   for(const n of scripts){const src=n.getAttribute('src');const m=src.match(/^\/js\/((?:v3-[a-z-]+|building-system|platform-search|product-30|platform-affiliate|affiliate-tracking)\.js)\?v=([a-f0-9]+)$/);if(m)assert.equal(m[2],sha(fs.readFileSync(path.join(ROOT,'js',m[1]))).slice(0,12),file+' latest runtime '+m[1]);}
   if(power){const c=JSON.parse(d.querySelector('[data-v3-planner-copy]').textContent);assert.deepEqual(c,require('../data/v3-planner-copy').locales[locale]);const m=JSON.parse(d.querySelector('[data-building-system-model]').textContent);assert.deepEqual(m.buildings[0].profiles.map(p=>p.id),['unified']);assert.equal(m.buildings[0].profiles[0].rows.length,30);assert.equal(d.querySelectorAll('#growth-plan').length,1);}
   if(event){const c=JSON.parse(d.getElementById('v3-events-data').textContent);assert.equal(c.locale,locale);assert.deepEqual(c.copy,require('../data/v3-events-copy.json').copy[locale]);assert.equal(c.events.length,3);assert.equal(c.events.flatMap(e=>e.profiles).length,7);assert.deepEqual(c.confirmedSchedules,[]);}
-  if(topup){const a=d.querySelector('#v3-topup-guide [data-v3-cta="outbound"]');assert.equal(a.getAttribute('href'),A.TEN_URL);assert(a.rel.includes('sponsored'));assert.equal(d.querySelector('[data-topup-step="2"] p').textContent,require('../data/v3-affiliate-copy.json').locales[locale].faq[3][1]);assert.equal(d.querySelectorAll('.v3-topup-question').length,8);}
+  if(topup){
+    const a=d.querySelector('#v3-topup-guide [data-v3-cta="outbound"]');assert.equal(a.getAttribute('href'),A.TEN_URL);assert(a.rel.includes('sponsored'));
+    assert.equal(d.querySelector('[data-topup-step="2"] p').textContent,require('../data/v3-affiliate-copy.json').locales[locale].faq[3][1]);assert.equal(d.querySelectorAll('.v3-topup-question').length,8);
+    const bookmark=d.querySelector('[data-v3-owned="topup-bookmark"]'),heading=bookmark.querySelector('h2[id]'),values=require('./ten-benefits-content').get(locale).values;
+    assert.equal(bookmark.querySelectorAll('[data-bookmark-cta]').length,1);assert.equal(d.querySelectorAll('[data-bookmark-hint]').length,1);assert(heading);assert.equal(heading.textContent,values.bookmarkTitle);
+    assert.equal(d.querySelectorAll('#ten-bookmark').length,1);assert.equal(d.querySelector('.ten-bookmark-jump').getAttribute('href'),'/'+locale+'/top-up/#ten-bookmark');
+    const toc=[...d.querySelectorAll('[data-v3-owned="topup-bookmark-link"]')];assert(toc.length>0,file+' retained bookmark contents link');
+    for(const link of toc){assert.equal(link.textContent,heading.textContent);assert.equal(new URL(link.getAttribute('href'),'https://tilessurvive.net'+route).href,'https://tilessurvive.net/'+locale+'/top-up/#'+heading.id,file+' localized inherited bookmark URL');}
+    const disclosure=d.querySelector('[data-v3-owned="topup-policy-disclosure"]');assert.equal(disclosure.querySelector('a').getAttribute('href'),'/'+locale+'/affiliate-disclosure/',file+' localized inherited policy link');
+  }
+  const benefitAssets=[...d.querySelectorAll('link[rel="stylesheet"]')].filter(n=>n.getAttribute('href').split('?')[0]==='/css/ten-benefits.css');assert.equal(benefitAssets.length,+topup,file+' TEN styles only on top-up pages');if(topup)assert.equal(benefitAssets[0].getAttribute('href'),'/css/ten-benefits.css?v='+sha(fs.readFileSync(path.join(ROOT,'css/ten-benefits.css'))).slice(0,12));
   const originalIds=[...d.querySelectorAll('[id]')].map(n=>n.id),counts=new Map();originalIds.forEach(id=>counts.set(id,(counts.get(id)||0)+1));for(const [id,n]of counts)if(id.startsWith('v3-')||id==='growth-plan')assert.equal(n,1,file+' unique V3 anchor '+id);
 }
 

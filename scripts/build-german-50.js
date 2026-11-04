@@ -106,7 +106,7 @@ function prepareV3Source(source, locale, route) {
   const actual=[...document.querySelectorAll('[data-v3-owned]')];
   if(!actual.length)return {source,owned:false};
   const owner=require('./build-v3-platform'),publicRoute='/'+locale+'/'+route.replace(/index\.html$/,'');
-  const approved=new Set(['analytics','assets','navigation','trust','planner','affiliate','privacy','events','topup-step']);
+  const approved=new Set(['analytics','assets','navigation','trust','planner','affiliate','privacy','events','topup-step','topup-bookmark','topup-bookmark-link','topup-bookmark-faq','topup-policy-disclosure']);
   for(const node of actual)if(!approved.has(node.getAttribute('data-v3-owned')))throw new Error('Unknown V3 owner in German source: '+route);
   // Older editorial builders decorate all headings, including managed UI, and
   // the affiliate normalizer replaces this one CTA label. Accept only those
@@ -119,7 +119,7 @@ function prepareV3Source(source, locale, route) {
         element.classList.remove('ts3-character-section');
         if(!element.className)element.removeAttribute('class');
       }
-      if(element.matches('a[data-v3-cta="outbound"]')&&element.textContent==='LootBar →')element.textContent=require('../data/v3-affiliate-copy.json').locales[locale].outbound;
+      if(element.matches('a[data-v3-cta="outbound"]')&&element.textContent==='LootBar →')element.textContent=element.classList.contains('ten-link')?require('./ten-benefits-content').get(locale).values.bookmarkCta:require('../data/v3-affiliate-copy.json').locales[locale].outbound;
       if(element.getAttribute('data-v3-owned')==='assets')for(const attr of ['src','href'])if(element.hasAttribute(attr))element.setAttribute(attr,element.getAttribute(attr).replace(/([?&]v=)[a-f0-9]{12}(?=&|$)/,'$1content-hash'));
     }
     return clone.outerHTML;
@@ -129,6 +129,24 @@ function prepareV3Source(source, locale, route) {
     for(const node of template.querySelectorAll('[data-v3-owned]')) {
       if(node.matches('script[data-v3-ga-bootstrap][data-v3-owned="analytics"]'))continue;
       else if(route==='top-up/index.html'&&node.matches('[data-topup-step="2"] p[data-v3-owned="topup-step"]')){node.removeAttribute('data-v3-owned');node.textContent='';}
+      else if(route==='top-up/index.html'&&node.matches('section[data-v3-owned="topup-bookmark"]')){
+        // Keep the original anchor and the renderer's trigger. The DE owner
+        // restores the reviewed destination-specific instructions after generic
+        // translation; it must not delete the inherited section or TOC target.
+        const heading=node.querySelector('h2'),button=node.querySelector('[data-bookmark-cta]');
+        if(!heading||!button)throw new Error('Incomplete V3 topup bookmark structure: '+route);
+        const title=heading.cloneNode(false),trigger=button.cloneNode(false);
+        node.removeAttribute('data-v3-owned');node.replaceChildren(title,trigger);
+      }
+      else if(route==='top-up/index.html'&&node.matches('a[data-v3-owned="topup-bookmark-link"]')){node.removeAttribute('data-v3-owned');node.textContent='';}
+      else if(route==='top-up/index.html'&&node.matches('.topup-faq > details[data-v3-owned="topup-bookmark-faq"]')){
+        node.removeAttribute('data-v3-owned');node.replaceChildren(template.createElement('summary'),template.createElement('p'));
+      }
+      else if(route==='top-up/index.html'&&node.matches('p.topup-disclosure[data-v3-owned="topup-policy-disclosure"]')){
+        const links=[...node.querySelectorAll('a')];
+        if(links.length!==1||links[0].getAttribute('href')!=='/'+locale+'/affiliate-disclosure/'||links[0].attributes.length!==1)throw new Error('Unreviewed V3 topup disclosure link: '+route);
+        const link=links[0].cloneNode(true);node.removeAttribute('data-v3-owned');node.replaceChildren(link);
+      }
       else node.remove();
     }
     return template.toString();
@@ -142,7 +160,9 @@ function prepareV3Source(source, locale, route) {
       const script=node.tagName==='SCRIPT',names=[...node.attributes].map(a=>a.name).sort();
       const allowedNames=script?['data-v3-owned','defer','src']:['data-v3-owned','href','rel'];
       const target=node.getAttribute(script?'src':'href')||'';
-      if(JSON.stringify(names)!==JSON.stringify(allowedNames)||(!script&&(node.tagName!=='LINK'||node.getAttribute('rel')!=='stylesheet'))||!/^\/(?:css\/v3-(?:platform|events)\.css|js\/v3-(?:search-core|affiliate|planner|events)\.js)\?v=[a-f0-9]{12}$/.test(target))throw new Error('Unreviewed V3 asset in German source: '+route);
+      const knownAsset=/^\/(?:css\/v3-(?:platform|events)\.css|js\/v3-(?:search-core|affiliate|planner|events)\.js)\?v=[a-f0-9]{12}$/.test(target);
+      const topupAsset=route==='top-up/index.html'&&/^\/css\/ten-benefits\.css\?v=[a-f0-9]{12}$/.test(target);
+      if(JSON.stringify(names)!==JSON.stringify(allowedNames)||(!script&&(node.tagName!=='LINK'||node.getAttribute('rel')!=='stylesheet'))||!(knownAsset||topupAsset))throw new Error('Unreviewed V3 asset in German source: '+route);
       continue;
     }
     const index=remaining.indexOf(fingerprint(node));
@@ -155,6 +175,9 @@ function prepareV3Source(source, locale, route) {
   const ownedHeadings=new Map([...document.querySelectorAll('[data-v3-owned] h2[id],[data-v3-owned] h3[id]')].map(node=>[node.id,node.textContent]));
   let tocChanged=false;
   for(const link of document.querySelectorAll('.ts3-contents[data-product-30] a[href],.ts3-character-sections[data-characters-generated] a[href]')) {
+    // Unlike generated managed headings, this inherited bookmark heading keeps
+    // its stable ID and its validated owner must restore the localized link.
+    if(link.getAttribute('data-v3-owned')==='topup-bookmark-link')continue;
     const target=new URL(link.getAttribute('href'),'https://tilessurvive.net'+publicRoute);
     if(target.origin==='https://tilessurvive.net'&&target.pathname===publicRoute&&ownedHeadings.get(target.hash.slice(1))===link.textContent){link.remove();tocChanged=true;}
   }

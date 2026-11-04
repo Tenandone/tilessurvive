@@ -9,7 +9,13 @@
     "sources": [
       "https://www.lootbar.com/top-up/tiles-survive",
       "https://static.lootbar.gg/static/user_agreement.html"
-    ]
+    ],
+    "operatorBenefits": {
+      "source": "TilesSurvive.net operator-provided policy",
+      "confirmedOn": "2026-11-04",
+      "sharedPolicy": "data/ten-benefits-policy.json",
+      "independentPayoutEvidenceReviewed": false
+    }
   },
   "locales": {
     "en": {
@@ -45,8 +51,8 @@
           "Contact LootBar support with the order number and an error screenshot. Never send a password or verification code to support."
         ],
         [
-          "What does the TEN link offer?",
-          "Eligible purchases may support this site. No exclusive buyer benefit is confirmed here; check the current offer before paying."
+          "What benefits can I get through the TEN link?",
+          "Bookmark and use the TEN LootBar top-up link listed on TilesSurvive.net. Qualifying top-ups through this link may make you eligible for monthly discount coupons and free-package prize draws under the operating policy. The operator checks qualifying top-up records, so no separate event application is needed. Coupons go to users who meet the conditions, while free packages go to draw winners. Benefits may vary with the schedule and affiliate terms."
         ]
       ],
       "choicesTitle": "Choose your next step",
@@ -67,7 +73,29 @@
       "allow": "Allow analytics",
       "deny": "Decline analytics",
       "statusAllowed": "Analytics allowed. You can decline at any time.",
-      "statusDenied": "Analytics off. You can allow it at any time."
+      "statusDenied": "Analytics off. You can allow it at any time.",
+      "tenCouponTitle": "Monthly discount coupons",
+      "tenCouponText": "Coupons are issued to users who meet the conditions after qualifying top-ups through TEN are checked. Eligibility and discount rates follow the operating policy.",
+      "tenDrawTitle": "Monthly free-package draw",
+      "tenDrawText": "Qualifying top-up users are included under the operating rules without a separate application. Free packages go to draw winners and are not guaranteed for every participant.",
+      "tenFlow1": "Bookmark TEN",
+      "tenFlow2": "Top up through TEN",
+      "tenFlow3": "Qualifying top-ups checked",
+      "tenFlow4": "Coupons issued · free-package draw",
+      "tenEligibility": "The operator checks qualifying top-up records and recipients. No separate event application is needed. Bookmarking alone does not establish eligibility.",
+      "tenVariation": "Benefits may vary with the operating schedule and affiliate terms.",
+      "tenHistoryTitle": "Past payouts",
+      "tenHistoryMonth": "{month} · paid",
+      "tenHistoryIntro": "Free-package payout record supplied by the TilesSurvive.net operator.",
+      "tenPackageLabel": "Package",
+      "tenRecipientsLabel": "Recipients",
+      "tenHistoryTotal": "{count} recipients received packages",
+      "tenHistoryCaveat": "This is a past payout record. Future monthly packages and winner counts may differ. Non-winners are not guaranteed a free package.",
+      "tenBookmarkTitle": "Bookmark the TEN top-up link",
+      "tenBookmarkText": "Open the TEN link below and bookmark the LootBar destination in your browser. Use the same TEN link for later top-ups.",
+      "tenBookmarkButton": "How to bookmark the TEN link",
+      "tenBookmarkHint": "Open the TEN link, then add it using your browser's bookmark menu. This button only shows instructions; it does not add a bookmark automatically.",
+      "tenBookmarkCta": "Open the TEN top-up link"
     },
     "ko": {
       "title": "LootBar 충전 전 확인 가이드",
@@ -102,8 +130,8 @@
           "주문번호와 오류 화면을 준비해 LootBar 고객지원에 문의하세요. 비밀번호나 인증코드를 상담원에게 보내지 마세요."
         ],
         [
-          "TEN 링크에 어떤 혜택이 있나요?",
-          "조건을 충족한 구매는 이 사이트 운영에 도움이 될 수 있습니다. 확인된 구매자 전용 추가 혜택은 없으므로 결제 전 현재 조건을 확인하세요."
+          "TEN 링크를 이용하면 어떤 혜택이 있나요?",
+          "TilesSurvive.net에 안내된 TEN LootBar 충전 링크를 즐겨찾기에 등록하고 이용해 보세요. 해당 링크를 통해 충전한 이용자는 운영 기준에 따라 매월 할인쿠폰 지급 및 무료 패키지 추첨 대상에 포함될 수 있습니다. 운영자가 적격 충전 내역을 확인하므로 별도의 이벤트 신청은 필요하지 않습니다. 할인쿠폰은 지급 조건을 충족한 이용자에게, 무료 패키지는 추첨 당첨자에게 지급됩니다. 혜택은 운영 일정 및 제휴 조건에 따라 달라질 수 있습니다."
         ]
       ],
       "choicesTitle": "다음 진행 방법 선택",
@@ -124,7 +152,29 @@
       "allow": "분석 허용",
       "deny": "분석 거절",
       "statusAllowed": "분석 허용 상태입니다. 언제든 거절할 수 있습니다.",
-      "statusDenied": "분석이 꺼져 있습니다. 언제든 허용할 수 있습니다."
+      "statusDenied": "분석이 꺼져 있습니다. 언제든 허용할 수 있습니다.",
+      "tenCouponTitle": "매월 할인쿠폰",
+      "tenCouponText": "TEN 링크를 통한 적격 충전 내역을 확인해 지급 조건을 충족한 이용자에게 제공합니다. 지급 조건과 할인율은 운영 정책에 따릅니다.",
+      "tenDrawTitle": "매월 무료 패키지 추첨",
+      "tenDrawText": "적격 충전 이용자는 별도 신청 없이 운영 기준에 따라 추첨 대상에 포함됩니다. 무료 패키지는 당첨자에게 지급되며, 모든 참여자에게 보장되지 않습니다.",
+      "tenFlow1": "TEN 링크 즐겨찾기",
+      "tenFlow2": "TEN 링크로 충전",
+      "tenFlow3": "적격 충전 내역 확인",
+      "tenFlow4": "쿠폰 지급 · 무료 패키지 추첨",
+      "tenEligibility": "운영자가 적격 충전 내역과 지급 대상을 확인합니다. 별도의 이벤트 신청은 필요하지 않으며, 즐겨찾기만으로 혜택이 확정되지는 않습니다.",
+      "tenVariation": "혜택은 운영 일정 및 제휴 조건에 따라 달라질 수 있습니다.",
+      "tenHistoryTitle": "과거 지급 실적",
+      "tenHistoryMonth": "{month} · 지급 완료",
+      "tenHistoryIntro": "TilesSurvive.net 운영자가 제공한 무료 패키지 지급 기록입니다.",
+      "tenPackageLabel": "패키지",
+      "tenRecipientsLabel": "지급 인원",
+      "tenHistoryTotal": "총 {count}명 지급 완료",
+      "tenHistoryCaveat": "과거 지급 사례이며, 향후 매월 같은 패키지 구성과 당첨 인원을 보장하지 않습니다. 미당첨자에게 무료 패키지가 지급되는 것은 아닙니다.",
+      "tenBookmarkTitle": "TEN 충전 링크 즐겨찾기",
+      "tenBookmarkText": "아래 TEN 링크를 연 뒤, 이동한 LootBar 페이지를 브라우저 즐겨찾기에 등록하세요. 이후 충전할 때도 같은 TEN 링크를 이용하세요.",
+      "tenBookmarkButton": "TEN 링크 즐겨찾기 방법",
+      "tenBookmarkHint": "TEN 링크를 열고 브라우저 메뉴에서 즐겨찾기 추가를 선택하세요. 이 버튼은 방법만 안내하며 즐겨찾기를 자동으로 등록하지 않습니다.",
+      "tenBookmarkCta": "TEN 충전 링크 열기"
     },
     "ja": {
       "title": "LootBar：チャージ前の確認ガイド",
@@ -159,8 +209,8 @@
           "注文番号とエラー画面を添えてLootBarサポートに問い合わせてください。パスワードや認証コードは送らないでください。"
         ],
         [
-          "TENリンクの特典は？",
-          "対象の購入はこのサイトの運営支援になる場合があります。購入者限定の追加特典は確認できていないため、支払い前に現在の条件をご確認ください。"
+          "TENリンク経由の特典は？",
+          "TENリンクをブックマークし、次回以降のチャージにも同じリンクをご利用ください。運営者がこのリンク経由の対象チャージと確認した利用者には、運営方針に基づき毎月クーポンを配付します。対象者は毎月の無料パッケージ抽選に自動で参加するため別途申請は不要ですが、パッケージを受け取れるのは当選者だけです。クーポンの割引内容や対象条件、今後の賞品と当選人数は運営方針によって異なる場合があります。"
         ]
       ],
       "choicesTitle": "次の進め方を選ぶ",
@@ -181,7 +231,29 @@
       "allow": "分析を許可",
       "deny": "分析を拒否",
       "statusAllowed": "分析は許可されています。いつでも拒否できます。",
-      "statusDenied": "分析はオフです。いつでも許可できます。"
+      "statusDenied": "分析はオフです。いつでも許可できます。",
+      "tenCouponTitle": "対象者向けの毎月のクーポン",
+      "tenCouponText": "運営者がTENリンク経由の対象チャージを確認した利用者に、毎月クーポンを配付します。割引内容と対象条件は運営方針に従います。",
+      "tenDrawTitle": "毎月の無料パッケージ抽選",
+      "tenDrawText": "対象者は自動で抽選に参加し、別途申請する必要はありません。無料パッケージの配付は当選者のみで、参加者全員への特典ではありません。",
+      "tenFlow1": "TENリンクを開いてブックマークする",
+      "tenFlow2": "次回以降も同じTENリンクからチャージする",
+      "tenFlow3": "運営者がリンク経由の対象チャージを確認する",
+      "tenFlow4": "対象者に毎月クーポンを配付し、抽選には自動で参加する",
+      "tenEligibility": "運営者がTENリンク経由の対象チャージと確認した利用者が対象です。",
+      "tenVariation": "クーポンの割引内容と対象条件、今後の各月の賞品と当選人数は運営方針によって異なる場合があります。",
+      "tenHistoryTitle": "過去の配付実績",
+      "tenHistoryMonth": "{month} · 配付完了",
+      "tenHistoryIntro": "TilesSurvive.net運営者によるパッケージ配付記録です。",
+      "tenPackageLabel": "パッケージ",
+      "tenRecipientsLabel": "受取人数",
+      "tenHistoryTotal": "{count}名にパッケージを配付しました",
+      "tenHistoryCaveat": "これは過去の配付記録です。今後の月の賞品や当選人数は異なる場合があり、当選者以外へのパッケージ配付は保証されません。",
+      "tenBookmarkTitle": "TENチャージリンクをブックマーク",
+      "tenBookmarkText": "下のTENリンクを開き、リンク先をブラウザーのブックマークに追加してください。次回以降のチャージにも同じリンクをご利用ください。",
+      "tenBookmarkButton": "TENリンクをブックマークする方法",
+      "tenBookmarkHint": "TENリンクを開き、ブラウザーのブックマークメニューから追加してください。このボタンは手順を表示するだけで、自動でブックマークを追加するものではありません。",
+      "tenBookmarkCta": "TENリンクを開く"
     },
     "zh-tw": {
       "title": "LootBar：儲值前確認指南",
@@ -216,8 +288,8 @@
           "請準備訂單編號與錯誤截圖，聯絡 LootBar 客服。切勿向客服提供密碼或驗證碼。"
         ],
         [
-          "TEN 連結有什麼優惠？",
-          "符合條件的購買可能支持本網站營運。目前未確認買家專屬額外優惠，請在付款前查看當前條件。"
+          "透過TEN連結有什麼福利？",
+          "請將TEN連結加入書籤，並在之後儲值時繼續使用同一連結。營運者確認使用者透過此連結完成符合資格的儲值後，會依營運政策向符合資格者每月發放優惠券。符合資格者會自動參加每月免費禮包抽獎，無須另行申請，但只有中獎者可獲得禮包。優惠券折扣、資格條件，以及未來的獎品與中獎人數可能依營運政策而有所不同。"
         ]
       ],
       "choicesTitle": "選擇下一步",
@@ -238,7 +310,29 @@
       "allow": "允許分析",
       "deny": "拒絕分析",
       "statusAllowed": "分析已允許，可隨時拒絕。",
-      "statusDenied": "分析已關閉，可隨時允許。"
+      "statusDenied": "分析已關閉，可隨時允許。",
+      "tenCouponTitle": "符合資格者的每月優惠券",
+      "tenCouponText": "營運者確認使用者透過TEN連結完成符合資格的儲值後，會向符合資格者每月發放優惠券。折扣內容與資格條件依營運政策而定。",
+      "tenDrawTitle": "每月免費禮包抽獎",
+      "tenDrawText": "符合資格者會自動參加抽獎，無須另行申請。免費禮包僅發給中獎者，並非所有參加者都能獲得。",
+      "tenFlow1": "開啟TEN連結並加入書籤",
+      "tenFlow2": "之後儲值時繼續使用同一TEN連結",
+      "tenFlow3": "由營運者確認連結歸屬及儲值資格",
+      "tenFlow4": "符合資格者每月獲發優惠券，並自動參加抽獎",
+      "tenEligibility": "須經營運者確認儲值符合資格，且可歸屬於TEN連結。",
+      "tenVariation": "優惠券折扣、資格條件，以及未來各月的獎品與中獎人數可能依營運政策而有所不同。",
+      "tenHistoryTitle": "過往發放紀錄",
+      "tenHistoryMonth": "{month} · 已完成發放",
+      "tenHistoryIntro": "TilesSurvive.net營運者的禮包發放紀錄。",
+      "tenPackageLabel": "禮包",
+      "tenRecipientsLabel": "領取人數",
+      "tenHistoryTotal": "已向{count}名使用者發放禮包",
+      "tenHistoryCaveat": "此為過往紀錄；未來每月的獎品與中獎人數可能不同，未中獎者不保證獲得禮包。",
+      "tenBookmarkTitle": "將TEN儲值連結加入書籤",
+      "tenBookmarkText": "開啟下方TEN連結，將開啟的目的地頁面加入瀏覽器書籤。之後儲值時請繼續使用同一連結。",
+      "tenBookmarkButton": "如何將TEN連結加入書籤",
+      "tenBookmarkHint": "先開啟TEN連結，再使用瀏覽器的書籤選單加入書籤。此按鈕只顯示操作說明，不會自動新增書籤。",
+      "tenBookmarkCta": "開啟TEN連結"
     },
     "zh-cn": {
       "title": "LootBar：充值前确认指南",
@@ -273,8 +367,8 @@
           "请准备订单编号与错误截图，联系 LootBar 客服。切勿向客服提供密码或验证码。"
         ],
         [
-          "TEN 链接有什么优惠？",
-          "符合条件的购买可能支持本网站运营。目前未确认买家专属额外优惠，请在付款前查看当前条件。"
+          "通过TEN链接有什么福利？",
+          "请将TEN链接加入书签，并在之后充值时继续使用同一链接。运营者确认用户通过此链接完成符合资格的充值后，会按运营政策向符合资格者每月发放优惠券。符合资格者会自动参加每月免费礼包抽奖，无须另行申请，但只有中奖者可获得礼包。优惠券折扣、资格条件，以及未来的奖品与中奖人数可能按运营政策而有所不同。"
         ]
       ],
       "choicesTitle": "选择下一步",
@@ -295,7 +389,29 @@
       "allow": "允许分析",
       "deny": "拒绝分析",
       "statusAllowed": "分析已允许，可随时拒绝。",
-      "statusDenied": "分析已关闭，可随时允许。"
+      "statusDenied": "分析已关闭，可随时允许。",
+      "tenCouponTitle": "符合资格者的每月优惠券",
+      "tenCouponText": "运营者确认用户通过TEN链接完成符合资格的充值后，会向符合资格者每月发放优惠券。折扣内容与资格条件按运营政策确定。",
+      "tenDrawTitle": "每月免费礼包抽奖",
+      "tenDrawText": "符合资格者会自动参加抽奖，无须另行申请。免费礼包仅发给中奖者，并非所有参加者都能获得。",
+      "tenFlow1": "打开TEN链接并加入书签",
+      "tenFlow2": "之后充值时继续使用同一TEN链接",
+      "tenFlow3": "由运营者确认链接归属及充值资格",
+      "tenFlow4": "符合资格者每月获发优惠券，并自动参加抽奖",
+      "tenEligibility": "须经运营者确认充值符合资格，且可归属于TEN链接。",
+      "tenVariation": "优惠券折扣、资格条件，以及未来各月的奖品与中奖人数可能按运营政策而有所不同。",
+      "tenHistoryTitle": "历史发放记录",
+      "tenHistoryMonth": "{month} · 已完成发放",
+      "tenHistoryIntro": "TilesSurvive.net运营者的礼包发放记录。",
+      "tenPackageLabel": "礼包",
+      "tenRecipientsLabel": "领取人数",
+      "tenHistoryTotal": "已向{count}名用户发放礼包",
+      "tenHistoryCaveat": "此为历史记录；未来每月的奖品与中奖人数可能不同，未中奖者不保证获得礼包。",
+      "tenBookmarkTitle": "将TEN充值链接加入书签",
+      "tenBookmarkText": "打开下方TEN链接，将打开的目标页面加入浏览器书签。之后充值时请继续使用同一链接。",
+      "tenBookmarkButton": "如何将TEN链接加入书签",
+      "tenBookmarkHint": "先打开TEN链接，再使用浏览器的书签菜单加入书签。此按钮只显示操作说明，不会自动添加书签。",
+      "tenBookmarkCta": "打开TEN链接"
     },
     "de": {
       "title": "LootBar: vor dem Aufladen prüfen",
@@ -330,8 +446,8 @@
           "Kontaktiere LootBars Support mit Bestellnummer und Fehlerbildschirm. Schicke dem Support niemals ein Passwort oder einen Bestätigungscode."
         ],
         [
-          "Was bietet der TEN-Link?",
-          "Berechtigte Käufe können diese Website unterstützen. Ein exklusiver Käufervorteil ist hier nicht bestätigt; prüfe das aktuelle Angebot vor der Zahlung."
+          "Welche Vorteile bietet der TEN-Link?",
+          "Speichere den TEN-Link als Lesezeichen und nutze ihn auch für spätere Aufladungen. Der Betreiber prüft die über diesen Link zugeordneten Aufladungen und die Teilnahmeberechtigung. Berechtigte Nutzer erhalten monatliche Gutscheine und nehmen ohne gesonderte Anmeldung automatisch an der monatlichen Verlosung kostenloser Pakete teil. Rabatthöhe und Teilnahmebedingungen richten sich nach den jeweils geltenden Regeln des Betreibers; die verlosten Pakete erhalten nur die Gewinner."
         ]
       ],
       "choicesTitle": "Wähle deinen nächsten Schritt",
@@ -352,7 +468,29 @@
       "allow": "Analyse erlauben",
       "deny": "Analyse ablehnen",
       "statusAllowed": "Analyse erlaubt. Du kannst sie jederzeit ablehnen.",
-      "statusDenied": "Analyse ausgeschaltet. Du kannst sie jederzeit erlauben."
+      "statusDenied": "Analyse ausgeschaltet. Du kannst sie jederzeit erlauben.",
+      "tenCouponTitle": "Monatliche Gutscheine",
+      "tenCouponText": "Berechtigte Nutzer erhalten nach Prüfung durch den Betreiber monatliche Gutscheine. Rabatthöhe und Voraussetzungen richten sich nach den jeweils geltenden Regeln des Betreibers.",
+      "tenDrawTitle": "Monatliche Verlosung kostenloser Pakete",
+      "tenDrawText": "Berechtigte Nutzer nehmen automatisch an der monatlichen Verlosung teil; eine gesonderte Anmeldung ist nicht erforderlich. Kostenlose Pakete werden nur an die Gewinner vergeben.",
+      "tenFlow1": "TEN-Link öffnen und als Lesezeichen speichern.",
+      "tenFlow2": "Aufladungen über den TEN-Link abschließen und den Link auch später wiederverwenden.",
+      "tenFlow3": "Der Betreiber prüft die zugeordneten Aufladungen und die Berechtigung für monatliche Gutscheine.",
+      "tenFlow4": "Berechtigte Nutzer nehmen automatisch an der monatlichen Verlosung teil; die Gewinner erhalten Pakete.",
+      "tenEligibility": "Der Betreiber prüft, welche über den TEN-Link zugeordneten Aufladungen die geltenden Voraussetzungen erfüllen.",
+      "tenVariation": "Rabatthöhe, Teilnahmebedingungen sowie Art und Anzahl der monatlichen Gewinne können sich nach den Regeln des Betreibers ändern.",
+      "tenHistoryTitle": "Bisherige Paketvergaben",
+      "tenHistoryMonth": "{month} · abgeschlossen",
+      "tenHistoryIntro": "Vergabeprotokoll des Betreibers von TilesSurvive.net.",
+      "tenPackageLabel": "Paket",
+      "tenRecipientsLabel": "Empfänger",
+      "tenHistoryTotal": "{count} Empfänger haben Pakete erhalten",
+      "tenHistoryCaveat": "Dies ist eine vergangene Vergabe. Art und Anzahl künftiger monatlicher Gewinne können abweichen; wer nicht gewinnt, hat keine garantierte Paketzuteilung.",
+      "tenBookmarkTitle": "TEN-Aufladelink als Lesezeichen speichern",
+      "tenBookmarkText": "Öffne den TEN-Link unten und speichere die Zielseite in den Lesezeichen deines Browsers. Verwende sie auch für spätere Aufladungen.",
+      "tenBookmarkButton": "So speicherst du den TEN-Link als Lesezeichen",
+      "tenBookmarkHint": "Öffne den TEN-Link und verwende dann das Lesezeichenmenü deines Browsers. Diese Schaltfläche zeigt nur eine Anleitung und legt kein Lesezeichen automatisch an.",
+      "tenBookmarkCta": "TEN-Link öffnen"
     },
     "ru": {
       "title": "LootBar: что проверить перед пополнением",
@@ -387,8 +525,8 @@
           "Передайте поддержке LootBar номер заказа и снимок ошибки. Никогда не отправляйте поддержке пароль или код подтверждения."
         ],
         [
-          "Что даёт ссылка TEN?",
-          "Подходящие покупки могут поддержать этот сайт. Особая выгода для покупателя здесь не подтверждена; проверьте актуальное предложение перед оплатой."
+          "Какие преимущества даёт ссылка TEN?",
+          "Сохраните ссылку TEN в закладках и используйте эту же ссылку для следующих пополнений. Пользователи, чьи пополнения оператор подтвердил как соответствующие условиям и совершённые по этой ссылке, получают ежемесячные купоны согласно правилам оператора. Они автоматически участвуют в ежемесячном розыгрыше бесплатных наборов без отдельной заявки, но наборы получают только победители. Размер скидки по купону, условия участия, будущие призы и число победителей могут различаться в зависимости от правил оператора."
         ]
       ],
       "choicesTitle": "Выберите следующий шаг",
@@ -409,7 +547,29 @@
       "allow": "Разрешить аналитику",
       "deny": "Отказаться от аналитики",
       "statusAllowed": "Аналитика разрешена. От неё можно отказаться в любое время.",
-      "statusDenied": "Аналитика отключена. Её можно разрешить в любое время."
+      "statusDenied": "Аналитика отключена. Её можно разрешить в любое время.",
+      "tenCouponTitle": "Ежемесячные купоны для пользователей, выполнивших условия",
+      "tenCouponText": "Оператор проверяет, что пополнения соответствуют условиям и совершены по ссылке TEN, и ежемесячно выдаёт купоны пользователям, выполнившим условия. Скидки и критерии определяются правилами оператора.",
+      "tenDrawTitle": "Ежемесячный розыгрыш бесплатных наборов",
+      "tenDrawText": "Пользователи, соответствующие условиям, участвуют автоматически — отдельная заявка не нужна. Бесплатные наборы получают только победители, а не все участники.",
+      "tenFlow1": "Откройте ссылку TEN и сохраните её в закладках",
+      "tenFlow2": "Используйте ту же ссылку TEN для следующих пополнений",
+      "tenFlow3": "Оператор проверяет условия и отнесение пополнений к ссылке",
+      "tenFlow4": "Пользователи, соответствующие условиям, получают ежемесячные купоны и автоматически участвуют в розыгрыше",
+      "tenEligibility": "Оператор должен подтвердить, что пополнение соответствует условиям и совершено по ссылке TEN.",
+      "tenVariation": "Скидки по купонам, критерии участия, будущие ежемесячные призы и число победителей могут различаться согласно правилам оператора.",
+      "tenHistoryTitle": "Прошлые выдачи",
+      "tenHistoryMonth": "{month} · выдача завершена",
+      "tenHistoryIntro": "Отчёт оператора TilesSurvive.net о выдаче наборов.",
+      "tenPackageLabel": "Набор",
+      "tenRecipientsLabel": "Получатели",
+      "tenHistoryTotal": "Наборы выданы. Число получателей: {count}",
+      "tenHistoryCaveat": "Это прошлый результат: будущие ежемесячные призы и число победителей могут измениться. Получение набора теми, кто не выиграл, не гарантируется.",
+      "tenBookmarkTitle": "Сохраните ссылку TEN для пополнения в закладках",
+      "tenBookmarkText": "Откройте ссылку TEN ниже и добавьте открывшуюся страницу в закладки браузера. Используйте эту же ссылку для следующих пополнений.",
+      "tenBookmarkButton": "Как сохранить ссылку TEN в закладках",
+      "tenBookmarkHint": "Откройте ссылку TEN, затем воспользуйтесь меню закладок браузера. Эта кнопка только показывает инструкцию и не добавляет закладку автоматически.",
+      "tenBookmarkCta": "Открыть ссылку TEN"
     },
     "fr": {
       "title": "LootBar : à vérifier avant de recharger",
@@ -444,8 +604,8 @@
           "Contactez l'assistance LootBar avec le numéro de commande et une capture de l'erreur. Ne transmettez jamais de mot de passe ni de code de vérification à l'assistance."
         ],
         [
-          "Que propose le lien TEN ?",
-          "Les achats admissibles peuvent soutenir ce site. Aucun avantage exclusif pour l'acheteur n'est confirmé ici ; vérifiez l'offre actuelle avant de payer."
+          "Quels avantages offre le lien TEN ?",
+          "Ajoutez le lien TEN à vos favoris et réutilisez-le pour vos prochaines recharges. L’exploitant vérifie les recharges attribuées à ce lien et leur admissibilité. Les utilisateurs admissibles reçoivent des coupons mensuels et participent automatiquement au tirage au sort mensuel de packs gratuits, sans inscription supplémentaire. Le taux de réduction et les conditions dépendent des règles en vigueur de l’exploitant ; seuls les gagnants reçoivent les packs mis en jeu."
         ]
       ],
       "choicesTitle": "Choisissez la suite",
@@ -466,7 +626,29 @@
       "allow": "Autoriser l'analyse",
       "deny": "Refuser l'analyse",
       "statusAllowed": "Analyse autorisée. Vous pouvez la refuser à tout moment.",
-      "statusDenied": "Analyse désactivée. Vous pouvez l'autoriser à tout moment."
+      "statusDenied": "Analyse désactivée. Vous pouvez l'autoriser à tout moment.",
+      "tenCouponTitle": "Coupons mensuels",
+      "tenCouponText": "Les utilisateurs admissibles reçoivent des coupons mensuels après vérification par l’exploitant. Le taux de réduction et les critères dépendent des règles en vigueur de l’exploitant.",
+      "tenDrawTitle": "Tirage au sort mensuel de packs gratuits",
+      "tenDrawText": "Les utilisateurs admissibles participent automatiquement au tirage au sort mensuel, sans inscription supplémentaire. Seuls les gagnants reçoivent les packs gratuits.",
+      "tenFlow1": "Ouvrez le lien TEN et ajoutez-le à vos favoris.",
+      "tenFlow2": "Effectuez vos recharges via le lien TEN et réutilisez-le pour les suivantes.",
+      "tenFlow3": "L’exploitant vérifie les recharges attribuées au lien et l’admissibilité aux coupons mensuels.",
+      "tenFlow4": "Les utilisateurs admissibles participent automatiquement au tirage au sort mensuel ; les gagnants reçoivent des packs.",
+      "tenEligibility": "L’exploitant vérifie quelles recharges attribuées au lien TEN remplissent les conditions en vigueur.",
+      "tenVariation": "Le taux de réduction, les conditions de participation ainsi que la nature et le nombre des lots mensuels peuvent varier selon les règles de l’exploitant.",
+      "tenHistoryTitle": "Lots déjà distribués",
+      "tenHistoryMonth": "{month} · terminé",
+      "tenHistoryIntro": "Registre de distribution de l’exploitant de TilesSurvive.net.",
+      "tenPackageLabel": "Pack",
+      "tenRecipientsLabel": "Bénéficiaires",
+      "tenHistoryTotal": "{count} bénéficiaires ont reçu des packs",
+      "tenHistoryCaveat": "Il s’agit d’une distribution passée. La nature et le nombre des lots des prochains mois peuvent varier ; aucun pack n’est garanti aux participants non gagnants.",
+      "tenBookmarkTitle": "Ajoutez le lien de recharge TEN à vos favoris",
+      "tenBookmarkText": "Ouvrez le lien TEN ci-dessous et ajoutez la page de destination aux favoris de votre navigateur. Réutilisez-la pour vos prochaines recharges.",
+      "tenBookmarkButton": "Comment ajouter le lien TEN aux favoris",
+      "tenBookmarkHint": "Ouvrez le lien TEN, puis utilisez le menu des favoris de votre navigateur. Ce bouton affiche uniquement les instructions et n’ajoute pas automatiquement de favori.",
+      "tenBookmarkCta": "Ouvrir le lien TEN"
     },
     "it": {
       "title": "LootBar: cosa controllare prima di ricaricare",
@@ -501,8 +683,8 @@
           "Contatta l'assistenza LootBar con il numero d'ordine e un'immagine dell'errore. Non inviare mai password o codici di verifica all'assistenza."
         ],
         [
-          "Che cosa offre il link TEN?",
-          "Gli acquisti idonei possono sostenere questo sito. Non è confermato alcun vantaggio esclusivo per l'acquirente; controlla l'offerta attuale prima di pagare."
+          "Quali vantaggi offre il link TEN?",
+          "Salva il link TEN nei preferiti e riutilizzalo per le ricariche successive. Il gestore verifica le ricariche attribuite a questo link e il rispetto dei requisiti. Gli utenti idonei ricevono coupon mensili e partecipano automaticamente all’estrazione mensile di pacchetti gratuiti, senza una richiesta separata. La percentuale di sconto e i requisiti dipendono dalle regole vigenti del gestore; solo i vincitori ricevono i pacchetti messi in palio."
         ]
       ],
       "choicesTitle": "Scegli il prossimo passo",
@@ -523,7 +705,29 @@
       "allow": "Consenti l'analisi",
       "deny": "Rifiuta l'analisi",
       "statusAllowed": "Analisi consentita. Puoi rifiutarla in qualsiasi momento.",
-      "statusDenied": "Analisi disattivata. Puoi consentirla in qualsiasi momento."
+      "statusDenied": "Analisi disattivata. Puoi consentirla in qualsiasi momento.",
+      "tenCouponTitle": "Coupon mensili",
+      "tenCouponText": "Gli utenti idonei ricevono coupon mensili dopo la verifica del gestore. La percentuale di sconto e i requisiti dipendono dalle regole vigenti del gestore.",
+      "tenDrawTitle": "Estrazione mensile di pacchetti gratuiti",
+      "tenDrawText": "Gli utenti idonei partecipano automaticamente all’estrazione mensile, senza presentare una richiesta separata. Solo i vincitori ricevono i pacchetti gratuiti.",
+      "tenFlow1": "Apri il link TEN e salvalo nei preferiti.",
+      "tenFlow2": "Completa le ricariche tramite il link TEN e riutilizzalo per quelle successive.",
+      "tenFlow3": "Il gestore verifica le ricariche attribuite al link e l’idoneità ai coupon mensili.",
+      "tenFlow4": "Gli utenti idonei partecipano automaticamente all’estrazione mensile; i vincitori ricevono i pacchetti.",
+      "tenEligibility": "Il gestore verifica quali ricariche attribuite al link TEN soddisfano i requisiti vigenti.",
+      "tenVariation": "La percentuale di sconto, i requisiti di partecipazione e il tipo e il numero dei premi mensili possono cambiare secondo le regole del gestore.",
+      "tenHistoryTitle": "Premi già consegnati",
+      "tenHistoryMonth": "{month} · completato",
+      "tenHistoryIntro": "Registro delle consegne del gestore di TilesSurvive.net.",
+      "tenPackageLabel": "Pacchetto",
+      "tenRecipientsLabel": "Destinatari",
+      "tenHistoryTotal": "{count} destinatari hanno ricevuto pacchetti",
+      "tenHistoryCaveat": "Si tratta di una distribuzione passata. Il tipo e il numero dei premi dei mesi successivi possono variare; chi non vince non ha un pacchetto garantito.",
+      "tenBookmarkTitle": "Salva il link di ricarica TEN nei preferiti",
+      "tenBookmarkText": "Apri il link TEN qui sotto e aggiungi la pagina di destinazione ai preferiti del browser. Riutilizzala per le ricariche successive.",
+      "tenBookmarkButton": "Come salvare il link TEN nei preferiti",
+      "tenBookmarkHint": "Apri il link TEN, poi usa il menu dei preferiti del browser. Questo pulsante mostra solo le istruzioni e non aggiunge automaticamente un preferito.",
+      "tenBookmarkCta": "Apri il link TEN"
     },
     "nl": {
       "title": "LootBar: controleer dit voordat je opwaardeert",
@@ -558,8 +762,8 @@
           "Neem contact op met LootBar-ondersteuning met het bestelnummer en een schermafbeelding van de fout. Stuur nooit een wachtwoord of verificatiecode naar de ondersteuning."
         ],
         [
-          "Wat biedt de TEN-link?",
-          "In aanmerking komende aankopen kunnen deze site steunen. Een exclusief kopersvoordeel is hier niet bevestigd; controleer het actuele aanbod voordat je betaalt."
+          "Welke voordelen biedt de TEN-link?",
+          "Sla de TEN-link op als bladwijzer en gebruik deze opnieuw voor latere opwaarderingen. De beheerder controleert welke opwaarderingen aan deze link zijn toegeschreven en of ze aan de voorwaarden voldoen. Gebruikers die in aanmerking komen, ontvangen maandelijkse kortingsbonnen en doen zonder aparte aanmelding automatisch mee aan de maandelijkse verloting van gratis pakketten. De korting en deelnamevoorwaarden volgen het geldende beleid van de beheerder; alleen winnaars ontvangen de pakketten uit de verloting."
         ]
       ],
       "choicesTitle": "Kies je volgende stap",
@@ -580,7 +784,29 @@
       "allow": "Analyse toestaan",
       "deny": "Analyse weigeren",
       "statusAllowed": "Analyse toegestaan. Je kunt dit op elk moment weigeren.",
-      "statusDenied": "Analyse uitgeschakeld. Je kunt dit op elk moment toestaan."
+      "statusDenied": "Analyse uitgeschakeld. Je kunt dit op elk moment toestaan.",
+      "tenCouponTitle": "Maandelijkse kortingsbonnen",
+      "tenCouponText": "Gebruikers die in aanmerking komen, ontvangen na controle door de beheerder maandelijkse kortingsbonnen. De korting en voorwaarden worden bepaald door het geldende beleid van de beheerder.",
+      "tenDrawTitle": "Maandelijkse verloting van gratis pakketten",
+      "tenDrawText": "Gebruikers die in aanmerking komen, doen automatisch mee aan de maandelijkse verloting, zonder aparte aanmelding. Alleen winnaars ontvangen gratis pakketten.",
+      "tenFlow1": "Open de TEN-link en sla deze op als bladwijzer.",
+      "tenFlow2": "Voltooi opwaarderingen via de TEN-link en gebruik deze ook voor latere opwaarderingen.",
+      "tenFlow3": "De beheerder controleert de toegeschreven opwaarderingen en het recht op maandelijkse kortingsbonnen.",
+      "tenFlow4": "Gebruikers die in aanmerking komen, doen automatisch mee aan de maandelijkse verloting; winnaars ontvangen pakketten.",
+      "tenEligibility": "De beheerder controleert welke aan de TEN-link toegeschreven opwaarderingen aan de geldende voorwaarden voldoen.",
+      "tenVariation": "De korting, deelnamevoorwaarden en het soort en aantal maandelijkse prijzen kunnen veranderen volgens het beleid van de beheerder.",
+      "tenHistoryTitle": "Eerder uitgereikte pakketten",
+      "tenHistoryMonth": "{month} · afgerond",
+      "tenHistoryIntro": "Uitgifteregistratie van de beheerder van TilesSurvive.net.",
+      "tenPackageLabel": "Pakket",
+      "tenRecipientsLabel": "Ontvangers",
+      "tenHistoryTotal": "{count} ontvangers hebben pakketten ontvangen",
+      "tenHistoryCaveat": "Dit is een eerdere uitgifte. Het soort en aantal prijzen in toekomstige maanden kunnen verschillen; wie niet wint, krijgt niet gegarandeerd een pakket.",
+      "tenBookmarkTitle": "Sla de TEN-opwaardeerlink op als bladwijzer",
+      "tenBookmarkText": "Open de TEN-link hieronder en voeg de bestemmingspagina toe aan de bladwijzers van je browser. Gebruik deze opnieuw voor latere opwaarderingen.",
+      "tenBookmarkButton": "De TEN-link als bladwijzer opslaan",
+      "tenBookmarkHint": "Open de TEN-link en gebruik vervolgens het bladwijzermenu van je browser. Deze knop toont alleen instructies en voegt niet automatisch een bladwijzer toe.",
+      "tenBookmarkCta": "TEN-link openen"
     },
     "es": {
       "title": "LootBar: qué revisar antes de recargar",
@@ -615,8 +841,8 @@
           "Contacta con el soporte de LootBar con el número de pedido y una captura del error. Nunca envíes contraseñas ni códigos de verificación al soporte."
         ],
         [
-          "¿Qué ofrece el enlace TEN?",
-          "Las compras que cumplan las condiciones pueden apoyar este sitio. No se ha confirmado aquí una ventaja exclusiva para el comprador; revisa la oferta actual antes de pagar."
+          "¿Qué ventajas ofrece el enlace TEN?",
+          "Guarda el enlace TEN en tus favoritos y vuelve a utilizarlo para las próximas recargas. El operador comprueba las recargas atribuidas a este enlace y si cumplen los requisitos. Los usuarios que cumplen los requisitos reciben cupones mensuales y participan automáticamente en el sorteo mensual de paquetes gratuitos, sin solicitud adicional. El porcentaje de descuento y los requisitos dependen de las normas vigentes del operador; solo los ganadores reciben los paquetes sorteados."
         ]
       ],
       "choicesTitle": "Elige tu siguiente paso",
@@ -637,7 +863,29 @@
       "allow": "Permitir análisis",
       "deny": "Rechazar análisis",
       "statusAllowed": "Análisis permitido. Puedes rechazarlo en cualquier momento.",
-      "statusDenied": "Análisis desactivado. Puedes permitirlo en cualquier momento."
+      "statusDenied": "Análisis desactivado. Puedes permitirlo en cualquier momento.",
+      "tenCouponTitle": "Cupones mensuales",
+      "tenCouponText": "Los usuarios que cumplen los requisitos reciben cupones mensuales tras la comprobación del operador. El porcentaje de descuento y los criterios dependen de las normas vigentes del operador.",
+      "tenDrawTitle": "Sorteo mensual de paquetes gratuitos",
+      "tenDrawText": "Los usuarios que cumplen los requisitos participan automáticamente en el sorteo mensual, sin solicitud adicional. Solo los ganadores reciben los paquetes gratuitos.",
+      "tenFlow1": "Abre el enlace TEN y guárdalo en tus favoritos.",
+      "tenFlow2": "Completa las recargas a través del enlace TEN y vuelve a utilizarlo para las siguientes.",
+      "tenFlow3": "El operador comprueba las recargas atribuidas al enlace y el cumplimiento de los requisitos para los cupones mensuales.",
+      "tenFlow4": "Los usuarios que cumplen los requisitos participan automáticamente en el sorteo mensual; los ganadores reciben paquetes.",
+      "tenEligibility": "El operador comprueba qué recargas atribuidas al enlace TEN cumplen los requisitos vigentes.",
+      "tenVariation": "El porcentaje de descuento, los requisitos de participación y el tipo y la cantidad de premios mensuales pueden cambiar según las normas del operador.",
+      "tenHistoryTitle": "Premios ya entregados",
+      "tenHistoryMonth": "{month} · completado",
+      "tenHistoryIntro": "Registro de entregas del operador de TilesSurvive.net.",
+      "tenPackageLabel": "Paquete",
+      "tenRecipientsLabel": "Destinatarios",
+      "tenHistoryTotal": "{count} destinatarios recibieron paquetes",
+      "tenHistoryCaveat": "Este es un registro de entregas pasadas. El tipo y la cantidad de premios de los próximos meses pueden variar; quienes no ganen no tienen un paquete garantizado.",
+      "tenBookmarkTitle": "Guarda el enlace de recarga TEN en tus favoritos",
+      "tenBookmarkText": "Abre el enlace TEN de abajo y añade la página de destino a los favoritos del navegador. Vuelve a utilizarla para las próximas recargas.",
+      "tenBookmarkButton": "Cómo guardar el enlace TEN en favoritos",
+      "tenBookmarkHint": "Abre el enlace TEN y utiliza el menú de favoritos del navegador. Este botón solo muestra las instrucciones y no añade ningún favorito automáticamente.",
+      "tenBookmarkCta": "Abrir enlace TEN"
     },
     "pt": {
       "title": "LootBar: confira antes de recarregar",
@@ -672,8 +920,8 @@
           "Entre em contato com o suporte da LootBar com o número do pedido e uma captura do erro. Nunca envie senha ou código de verificação ao suporte."
         ],
         [
-          "O que o link TEN oferece?",
-          "Compras elegíveis podem apoiar este site. Nenhum benefício exclusivo para o comprador foi confirmado aqui; confira a oferta atual antes de pagar."
+          "Quais são os benefícios do link TEN?",
+          "Salve o link TEN nos favoritos e use-o novamente nas próximas recargas. O operador verifica as recargas atribuídas a esse link e o cumprimento dos critérios. Os usuários elegíveis recebem cupons mensais e participam automaticamente do sorteio mensal de pacotes gratuitos, sem inscrição adicional. O percentual de desconto e os critérios seguem as regras vigentes do operador; apenas os ganhadores recebem os pacotes sorteados."
         ]
       ],
       "choicesTitle": "Escolha seu próximo passo",
@@ -694,7 +942,29 @@
       "allow": "Permitir análise",
       "deny": "Recusar análise",
       "statusAllowed": "Análise permitida. Você pode recusá-la a qualquer momento.",
-      "statusDenied": "Análise desativada. Você pode permiti-la a qualquer momento."
+      "statusDenied": "Análise desativada. Você pode permiti-la a qualquer momento.",
+      "tenCouponTitle": "Cupons mensais",
+      "tenCouponText": "Os usuários elegíveis recebem cupons mensais após a verificação do operador. O percentual de desconto e os critérios seguem as regras vigentes do operador.",
+      "tenDrawTitle": "Sorteio mensal de pacotes gratuitos",
+      "tenDrawText": "Os usuários elegíveis participam automaticamente do sorteio mensal, sem inscrição adicional. Apenas os ganhadores recebem os pacotes gratuitos.",
+      "tenFlow1": "Abra o link TEN e salve-o nos favoritos.",
+      "tenFlow2": "Conclua as recargas pelo link TEN e use-o novamente nas próximas recargas.",
+      "tenFlow3": "O operador verifica as recargas atribuídas ao link e a elegibilidade para os cupons mensais.",
+      "tenFlow4": "Os usuários elegíveis participam automaticamente do sorteio mensal; os ganhadores recebem os pacotes.",
+      "tenEligibility": "O operador verifica quais recargas atribuídas ao link TEN atendem aos critérios vigentes.",
+      "tenVariation": "O percentual de desconto, os critérios de participação e o tipo e a quantidade de prêmios mensais podem mudar conforme as regras do operador.",
+      "tenHistoryTitle": "Prêmios já entregues",
+      "tenHistoryMonth": "{month} · concluído",
+      "tenHistoryIntro": "Registro de entregas do operador do TilesSurvive.net.",
+      "tenPackageLabel": "Pacote",
+      "tenRecipientsLabel": "Destinatários",
+      "tenHistoryTotal": "{count} destinatários receberam pacotes",
+      "tenHistoryCaveat": "Este é um registro de entregas anteriores. O tipo e a quantidade de prêmios nos próximos meses podem variar; quem não ganhar não tem um pacote garantido.",
+      "tenBookmarkTitle": "Salve o link de recarga TEN nos favoritos",
+      "tenBookmarkText": "Abra o link TEN abaixo e adicione a página de destino aos favoritos do navegador. Use-a novamente nas próximas recargas.",
+      "tenBookmarkButton": "Como salvar o link TEN nos favoritos",
+      "tenBookmarkHint": "Abra o link TEN e use o menu de favoritos do navegador. Este botão apenas mostra as instruções e não adiciona um favorito automaticamente.",
+      "tenBookmarkCta": "Abrir link TEN"
     },
     "pl": {
       "title": "LootBar: sprawdź przed doładowaniem",
@@ -729,8 +999,8 @@
           "Skontaktuj się z pomocą LootBar, podając numer zamówienia i zrzut błędu. Nigdy nie wysyłaj pomocy hasła ani kodu weryfikacyjnego."
         ],
         [
-          "Co daje link TEN?",
-          "Kwalifikujące się zakupy mogą wspierać tę witrynę. Nie potwierdzono tu wyjątkowej korzyści dla kupującego; sprawdź bieżącą ofertę przed zapłatą."
+          "Jakie korzyści daje link TEN?",
+          "Zapisz link TEN w zakładkach i korzystaj z niego przy kolejnych doładowaniach. Operator sprawdza doładowania przypisane do tego linku i spełnienie warunków. Uprawnieni użytkownicy otrzymują comiesięczne kupony i automatycznie biorą udział w comiesięcznym losowaniu darmowych pakietów, bez osobnego zgłoszenia. Wysokość rabatu i warunki zależą od aktualnych zasad operatora; pakiety z losowania otrzymują tylko zwycięzcy."
         ]
       ],
       "choicesTitle": "Wybierz następny krok",
@@ -751,7 +1021,29 @@
       "allow": "Zezwól na analizę",
       "deny": "Odmów analizy",
       "statusAllowed": "Analiza włączona. Możesz ją odrzucić w dowolnym momencie.",
-      "statusDenied": "Analiza wyłączona. Możesz ją włączyć w dowolnym momencie."
+      "statusDenied": "Analiza wyłączona. Możesz ją włączyć w dowolnym momencie.",
+      "tenCouponTitle": "Comiesięczne kupony",
+      "tenCouponText": "Uprawnieni użytkownicy otrzymują comiesięczne kupony po weryfikacji przez operatora. Wysokość rabatu i wymagania zależą od aktualnych zasad operatora.",
+      "tenDrawTitle": "Comiesięczne losowanie darmowych pakietów",
+      "tenDrawText": "Uprawnieni użytkownicy biorą udział w comiesięcznym losowaniu automatycznie, bez osobnego zgłoszenia. Darmowe pakiety otrzymują tylko zwycięzcy.",
+      "tenFlow1": "Otwórz link TEN i zapisz go w zakładkach.",
+      "tenFlow2": "Dokonuj doładowań przez link TEN i korzystaj z niego ponownie przy kolejnych doładowaniach.",
+      "tenFlow3": "Operator weryfikuje przypisane doładowania i uprawnienia do comiesięcznych kuponów.",
+      "tenFlow4": "Uprawnieni użytkownicy automatycznie biorą udział w comiesięcznym losowaniu; zwycięzcy otrzymują pakiety.",
+      "tenEligibility": "Operator sprawdza, które doładowania przypisane do linku TEN spełniają aktualne warunki.",
+      "tenVariation": "Wysokość rabatu, warunki udziału oraz rodzaj i liczba comiesięcznych nagród mogą się zmieniać zgodnie z zasadami operatora.",
+      "tenHistoryTitle": "Dotychczas przekazane nagrody",
+      "tenHistoryMonth": "{month} · zakończono",
+      "tenHistoryIntro": "Rejestr nagród przekazanych przez operatora TilesSurvive.net.",
+      "tenPackageLabel": "Pakiet",
+      "tenRecipientsLabel": "Odbiorcy",
+      "tenHistoryTotal": "Liczba osób, które otrzymały pakiety: {count}",
+      "tenHistoryCaveat": "To zapis wcześniejszej dystrybucji nagród. Rodzaj i liczba nagród w kolejnych miesiącach mogą się różnić; osoby, które nie wygrają, nie mają zagwarantowanego pakietu.",
+      "tenBookmarkTitle": "Zapisz link doładowania TEN w zakładkach",
+      "tenBookmarkText": "Otwórz link TEN poniżej i dodaj stronę docelową do zakładek przeglądarki. Korzystaj z niej ponownie przy kolejnych doładowaniach.",
+      "tenBookmarkButton": "Jak zapisać link TEN w zakładkach",
+      "tenBookmarkHint": "Otwórz link TEN, a następnie skorzystaj z menu zakładek przeglądarki. Ten przycisk wyświetla tylko instrukcję i nie dodaje zakładki automatycznie.",
+      "tenBookmarkCta": "Otwórz link TEN"
     },
     "sv": {
       "title": "LootBar: kontrollera före påfyllning",
@@ -786,8 +1078,8 @@
           "Kontakta LootBars support med ordernummer och en bild av felet. Skicka aldrig lösenord eller verifieringskoder till supporten."
         ],
         [
-          "Vad ger TEN-länken?",
-          "Kvalificerade köp kan stödja webbplatsen. Ingen exklusiv köparförmån är bekräftad här; kontrollera det aktuella erbjudandet före betalning."
+          "Vilka förmåner ger TEN-länken?",
+          "Spara TEN-länken som bokmärke och använd den igen vid framtida påfyllningar. Operatören kontrollerar vilka påfyllningar som har tillskrivits länken och om de uppfyller villkoren. Berättigade användare får månatliga kuponger och deltar automatiskt i den månatliga utlottningen av gratispaket, utan separat anmälan. Rabattnivån och villkoren följer operatörens aktuella regler; endast vinnarna får de utlottade paketen."
         ]
       ],
       "choicesTitle": "Välj nästa steg",
@@ -808,7 +1100,29 @@
       "allow": "Tillåt analys",
       "deny": "Avböj analys",
       "statusAllowed": "Analys tillåten. Du kan avböja när som helst.",
-      "statusDenied": "Analys avstängd. Du kan tillåta den när som helst."
+      "statusDenied": "Analys avstängd. Du kan tillåta den när som helst.",
+      "tenCouponTitle": "Månatliga kuponger",
+      "tenCouponText": "Berättigade användare får månatliga kuponger efter operatörens kontroll. Rabattnivån och kraven följer operatörens aktuella regler.",
+      "tenDrawTitle": "Månatlig utlottning av gratispaket",
+      "tenDrawText": "Berättigade användare deltar automatiskt i den månatliga utlottningen, utan separat anmälan. Endast vinnarna får gratispaketen.",
+      "tenFlow1": "Öppna TEN-länken och spara den som bokmärke.",
+      "tenFlow2": "Slutför påfyllningar via TEN-länken och använd den igen vid senare påfyllningar.",
+      "tenFlow3": "Operatören kontrollerar de tillskrivna påfyllningarna och rätten till månatliga kuponger.",
+      "tenFlow4": "Berättigade användare deltar automatiskt i den månatliga utlottningen; vinnarna får paket.",
+      "tenEligibility": "Operatören kontrollerar vilka påfyllningar som tillskrivits TEN-länken och uppfyller de aktuella villkoren.",
+      "tenVariation": "Rabattnivå, deltagarvillkor samt typ och antal månatliga priser kan ändras enligt operatörens regler.",
+      "tenHistoryTitle": "Tidigare utdelningar",
+      "tenHistoryMonth": "{month} · slutfört",
+      "tenHistoryIntro": "Utdelningsregister från operatören för TilesSurvive.net.",
+      "tenPackageLabel": "Paket",
+      "tenRecipientsLabel": "Mottagare",
+      "tenHistoryTotal": "{count} mottagare har fått paket",
+      "tenHistoryCaveat": "Detta är en tidigare utdelning. Typ och antal priser under kommande månader kan skilja sig; deltagare som inte vinner är inte garanterade något paket.",
+      "tenBookmarkTitle": "Spara TEN-länken för påfyllning som bokmärke",
+      "tenBookmarkText": "Öppna TEN-länken nedan och lägg till målsidan bland webbläsarens bokmärken. Använd den igen vid framtida påfyllningar.",
+      "tenBookmarkButton": "Så sparar du TEN-länken som bokmärke",
+      "tenBookmarkHint": "Öppna TEN-länken och använd sedan webbläsarens bokmärkesmeny. Knappen visar bara instruktioner och lägger inte till något bokmärke automatiskt.",
+      "tenBookmarkCta": "Öppna TEN-länken"
     },
     "nb": {
       "title": "LootBar: sjekk før du fyller på",
@@ -843,8 +1157,8 @@
           "Kontakt LootBars kundestøtte med ordrenummer og et bilde av feilen. Send aldri passord eller bekreftelseskoder til kundestøtten."
         ],
         [
-          "Hva gir TEN-lenken?",
-          "Kvalifiserende kjøp kan støtte nettstedet. Ingen eksklusiv kjøperfordel er bekreftet her; sjekk det gjeldende tilbudet før betaling."
+          "Hvilke fordeler gir TEN-lenken?",
+          "Lagre TEN-lenken som bokmerke og bruk den igjen ved senere påfyllinger. Operatøren kontrollerer påfyllingene som er tilskrevet lenken, og om vilkårene er oppfylt. Kvalifiserte brukere får månedlige kuponger og deltar automatisk i den månedlige trekningen av gratispakker, uten egen påmelding. Rabattnivået og vilkårene følger operatørens gjeldende regler; bare vinnerne mottar premiepakkene."
         ]
       ],
       "choicesTitle": "Velg neste steg",
@@ -865,7 +1179,29 @@
       "allow": "Tillat analyse",
       "deny": "Avslå analyse",
       "statusAllowed": "Analyse er tillatt. Du kan avslå når som helst.",
-      "statusDenied": "Analyse er slått av. Du kan tillate den når som helst."
+      "statusDenied": "Analyse er slått av. Du kan tillate den når som helst.",
+      "tenCouponTitle": "Månedlige kuponger",
+      "tenCouponText": "Kvalifiserte brukere får månedlige kuponger etter operatørens kontroll. Rabattnivået og kravene følger operatørens gjeldende regler.",
+      "tenDrawTitle": "Månedlig trekning av gratispakker",
+      "tenDrawText": "Kvalifiserte brukere deltar automatisk i den månedlige trekningen, uten egen påmelding. Bare vinnerne mottar gratispakkene.",
+      "tenFlow1": "Åpne TEN-lenken og lagre den som bokmerke.",
+      "tenFlow2": "Fullfør påfyllinger via TEN-lenken og bruk den igjen ved senere påfyllinger.",
+      "tenFlow3": "Operatøren kontrollerer de tilskrevne påfyllingene og retten til månedlige kuponger.",
+      "tenFlow4": "Kvalifiserte brukere deltar automatisk i den månedlige trekningen; vinnerne mottar pakker.",
+      "tenEligibility": "Operatøren kontrollerer hvilke påfyllinger tilskrevet TEN-lenken som oppfyller de gjeldende vilkårene.",
+      "tenVariation": "Rabattnivå, deltakervilkår samt type og antall månedlige premier kan endres i henhold til operatørens regler.",
+      "tenHistoryTitle": "Tidligere utdelinger",
+      "tenHistoryMonth": "{month} · fullført",
+      "tenHistoryIntro": "Utdelingsoversikt fra operatøren av TilesSurvive.net.",
+      "tenPackageLabel": "Pakke",
+      "tenRecipientsLabel": "Mottakere",
+      "tenHistoryTotal": "{count} mottakere har fått pakker",
+      "tenHistoryCaveat": "Dette er en tidligere utdeling. Type og antall premier i kommende måneder kan variere; deltakere som ikke vinner, er ikke garantert noen pakke.",
+      "tenBookmarkTitle": "Lagre TEN-lenken for påfylling som bokmerke",
+      "tenBookmarkText": "Åpne TEN-lenken nedenfor og legg til målsiden i nettleserens bokmerker. Bruk den igjen ved senere påfyllinger.",
+      "tenBookmarkButton": "Slik lagrer du TEN-lenken som bokmerke",
+      "tenBookmarkHint": "Åpne TEN-lenken og bruk deretter bokmerkemenyen i nettleseren. Denne knappen viser bare instruksjoner og legger ikke til et bokmerke automatisk.",
+      "tenBookmarkCta": "Åpne TEN-lenken"
     },
     "id": {
       "title": "LootBar: periksa sebelum isi ulang",
@@ -900,8 +1236,8 @@
           "Hubungi dukungan LootBar dengan nomor pesanan dan tangkapan layar kesalahan. Jangan pernah mengirim kata sandi atau kode verifikasi kepada dukungan."
         ],
         [
-          "Apa manfaat tautan TEN?",
-          "Pembelian yang memenuhi syarat dapat mendukung situs ini. Belum ada manfaat eksklusif pembeli yang dikonfirmasi di sini; periksa penawaran terkini sebelum membayar."
+          "Apa manfaat menggunakan tautan TEN?",
+          "Simpan tautan TEN sebagai bookmark dan gunakan tautan yang sama untuk top-up berikutnya. Pengguna yang top-up-nya memenuhi syarat dan dikonfirmasi oleh pengelola sebagai berasal dari tautan ini akan menerima kupon bulanan sesuai kebijakan pengelola. Pengguna yang memenuhi syarat otomatis ikut undian paket gratis bulanan tanpa perlu mendaftar secara terpisah, tetapi hanya pemenang yang menerima paket. Diskon kupon, kriteria kelayakan, hadiah mendatang, dan jumlah pemenang dapat berbeda sesuai kebijakan pengelola."
         ]
       ],
       "choicesTitle": "Pilih langkah berikutnya",
@@ -922,7 +1258,29 @@
       "allow": "Izinkan analisis",
       "deny": "Tolak analisis",
       "statusAllowed": "Analisis diizinkan. Anda dapat menolaknya kapan saja.",
-      "statusDenied": "Analisis nonaktif. Anda dapat mengizinkannya kapan saja."
+      "statusDenied": "Analisis nonaktif. Anda dapat mengizinkannya kapan saja.",
+      "tenCouponTitle": "Kupon bulanan untuk pengguna yang memenuhi syarat",
+      "tenCouponText": "Pengelola memeriksa kelayakan top-up dan kaitannya dengan tautan TEN, lalu memberikan kupon bulanan kepada pengguna yang memenuhi syarat. Diskon dan kriteria ditentukan oleh kebijakan pengelola.",
+      "tenDrawTitle": "Undian paket gratis bulanan",
+      "tenDrawText": "Pengguna yang memenuhi syarat otomatis ikut undian tanpa pendaftaran terpisah. Paket gratis hanya diberikan kepada pemenang, bukan kepada semua peserta.",
+      "tenFlow1": "Buka tautan TEN dan simpan sebagai bookmark",
+      "tenFlow2": "Gunakan tautan TEN yang sama untuk top-up berikutnya",
+      "tenFlow3": "Pengelola memeriksa kelayakan dan asal top-up dari tautan",
+      "tenFlow4": "Pengguna yang memenuhi syarat menerima kupon bulanan dan otomatis ikut undian",
+      "tenEligibility": "Pengelola harus mengonfirmasi bahwa top-up memenuhi syarat dan berasal dari tautan TEN.",
+      "tenVariation": "Diskon kupon, kriteria kelayakan, hadiah bulanan mendatang, dan jumlah pemenang dapat berbeda sesuai kebijakan pengelola.",
+      "tenHistoryTitle": "Riwayat pembagian paket",
+      "tenHistoryMonth": "{month} · Selesai dibagikan",
+      "tenHistoryIntro": "Catatan pembagian paket oleh pengelola TilesSurvive.net.",
+      "tenPackageLabel": "Paket",
+      "tenRecipientsLabel": "Penerima",
+      "tenHistoryTotal": "Paket telah diterima oleh {count} penerima",
+      "tenHistoryCaveat": "Ini adalah catatan sebelumnya; hadiah bulanan dan jumlah pemenang pada masa mendatang dapat berbeda. Peserta yang tidak menang tidak dijamin menerima paket.",
+      "tenBookmarkTitle": "Simpan tautan top-up TEN sebagai bookmark",
+      "tenBookmarkText": "Buka tautan TEN di bawah lalu tambahkan halaman tujuannya ke bookmark browser. Gunakan kembali tautan yang sama untuk top-up berikutnya.",
+      "tenBookmarkButton": "Cara menyimpan tautan TEN sebagai bookmark",
+      "tenBookmarkHint": "Buka tautan TEN, lalu gunakan menu bookmark browser. Tombol ini hanya menampilkan petunjuk dan tidak menambahkan bookmark secara otomatis.",
+      "tenBookmarkCta": "Buka tautan TEN"
     },
     "ms": {
       "title": "LootBar: semak sebelum tambah nilai",
@@ -957,8 +1315,8 @@
           "Hubungi sokongan LootBar dengan nombor pesanan dan tangkap layar ralat. Jangan hantar kata laluan atau kod pengesahan kepada sokongan."
         ],
         [
-          "Apakah manfaat pautan TEN?",
-          "Pembelian yang layak boleh menyokong laman ini. Tiada manfaat pembeli eksklusif disahkan di sini; semak tawaran semasa sebelum membayar."
+          "Apakah manfaat menggunakan pautan TEN?",
+          "Simpan pautan TEN sebagai penanda halaman dan gunakan pautan yang sama untuk tambah nilai seterusnya. Pengguna yang transaksi tambah nilainya memenuhi syarat dan disahkan oleh pengendali sebagai melalui pautan ini akan menerima kupon bulanan mengikut dasar pengendali. Pengguna yang layak menyertai cabutan pakej percuma bulanan secara automatik tanpa perlu memohon secara berasingan, tetapi hanya pemenang menerima pakej. Diskaun kupon, kriteria kelayakan, hadiah akan datang dan bilangan pemenang mungkin berbeza mengikut dasar pengendali."
         ]
       ],
       "choicesTitle": "Pilih langkah seterusnya",
@@ -979,7 +1337,29 @@
       "allow": "Benarkan analisis",
       "deny": "Tolak analisis",
       "statusAllowed": "Analisis dibenarkan. Anda boleh menolaknya pada bila-bila masa.",
-      "statusDenied": "Analisis dimatikan. Anda boleh membenarkannya pada bila-bila masa."
+      "statusDenied": "Analisis dimatikan. Anda boleh membenarkannya pada bila-bila masa.",
+      "tenCouponTitle": "Kupon bulanan untuk pengguna yang layak",
+      "tenCouponText": "Pengendali menyemak kelayakan transaksi tambah nilai dan kaitannya dengan pautan TEN, kemudian memberikan kupon bulanan kepada pengguna yang layak. Diskaun dan kriteria tertakluk pada dasar pengendali.",
+      "tenDrawTitle": "Cabutan pakej percuma bulanan",
+      "tenDrawText": "Pengguna yang layak menyertai cabutan secara automatik tanpa permohonan berasingan. Pakej percuma diberikan kepada pemenang sahaja, bukan kepada semua peserta.",
+      "tenFlow1": "Buka pautan TEN dan simpan sebagai penanda halaman",
+      "tenFlow2": "Gunakan pautan TEN yang sama untuk tambah nilai seterusnya",
+      "tenFlow3": "Pengendali menyemak kelayakan dan asal transaksi melalui pautan",
+      "tenFlow4": "Pengguna yang layak menerima kupon bulanan dan menyertai cabutan secara automatik",
+      "tenEligibility": "Pengendali mesti mengesahkan bahawa transaksi tambah nilai memenuhi syarat dan dilakukan melalui pautan TEN.",
+      "tenVariation": "Diskaun kupon, kriteria kelayakan, hadiah bulanan akan datang dan bilangan pemenang mungkin berbeza mengikut dasar pengendali.",
+      "tenHistoryTitle": "Rekod pemberian terdahulu",
+      "tenHistoryMonth": "{month} · Pemberian selesai",
+      "tenHistoryIntro": "Rekod pemberian pakej oleh pengendali TilesSurvive.net.",
+      "tenPackageLabel": "Pakej",
+      "tenRecipientsLabel": "Penerima",
+      "tenHistoryTotal": "Pakej telah diterima oleh {count} penerima",
+      "tenHistoryCaveat": "Ini ialah rekod terdahulu; hadiah bulanan dan bilangan pemenang pada masa hadapan mungkin berbeza. Peserta yang tidak menang tidak dijamin menerima pakej.",
+      "tenBookmarkTitle": "Simpan pautan tambah nilai TEN sebagai penanda halaman",
+      "tenBookmarkText": "Buka pautan TEN di bawah dan tambahkan halaman tujuannya pada penanda halaman pelayar. Gunakan pautan yang sama untuk tambah nilai seterusnya.",
+      "tenBookmarkButton": "Cara menyimpan pautan TEN sebagai penanda halaman",
+      "tenBookmarkHint": "Buka pautan TEN, kemudian gunakan menu penanda halaman pelayar. Butang ini hanya memaparkan arahan dan tidak menambah penanda halaman secara automatik.",
+      "tenBookmarkCta": "Buka pautan TEN"
     },
     "vi": {
       "title": "LootBar: kiểm tra trước khi nạp",
@@ -1014,8 +1394,8 @@
           "Liên hệ hỗ trợ LootBar kèm mã đơn hàng và ảnh chụp lỗi. Không gửi mật khẩu hoặc mã xác minh cho bộ phận hỗ trợ."
         ],
         [
-          "Liên kết TEN có lợi ích gì?",
-          "Giao dịch đủ điều kiện có thể hỗ trợ trang này. Chưa xác nhận lợi ích riêng cho người mua tại đây; hãy kiểm tra ưu đãi hiện tại trước khi trả tiền."
+          "Dùng liên kết TEN có những quyền lợi gì?",
+          "Hãy đánh dấu liên kết TEN và dùng lại chính liên kết đó cho những lần nạp sau. Người dùng có giao dịch nạp đáp ứng điều kiện và được đơn vị vận hành xác nhận là qua liên kết này sẽ nhận phiếu ưu đãi hằng tháng theo chính sách của đơn vị vận hành. Người đủ điều kiện tự động tham gia chương trình bốc thăm gói miễn phí hằng tháng mà không cần đăng ký riêng, nhưng chỉ người trúng thưởng mới nhận được gói. Mức giảm của phiếu, điều kiện tham gia, phần thưởng và số người trúng trong tương lai có thể thay đổi theo chính sách của đơn vị vận hành."
         ]
       ],
       "choicesTitle": "Chọn bước tiếp theo",
@@ -1036,7 +1416,29 @@
       "allow": "Cho phép phân tích",
       "deny": "Từ chối phân tích",
       "statusAllowed": "Đã cho phép phân tích. Bạn có thể từ chối bất cứ lúc nào.",
-      "statusDenied": "Phân tích đang tắt. Bạn có thể cho phép bất cứ lúc nào."
+      "statusDenied": "Phân tích đang tắt. Bạn có thể cho phép bất cứ lúc nào.",
+      "tenCouponTitle": "Phiếu ưu đãi hằng tháng cho người đủ điều kiện",
+      "tenCouponText": "Đơn vị vận hành kiểm tra điều kiện và xác nhận giao dịch nạp qua liên kết TEN, rồi cấp phiếu ưu đãi hằng tháng cho người đủ điều kiện. Mức giảm và tiêu chí áp dụng theo chính sách của đơn vị vận hành.",
+      "tenDrawTitle": "Bốc thăm gói miễn phí hằng tháng",
+      "tenDrawText": "Người đủ điều kiện tự động tham gia, không cần đăng ký riêng. Chỉ người trúng thưởng nhận được gói miễn phí, không phải tất cả người tham gia.",
+      "tenFlow1": "Mở liên kết TEN và lưu vào dấu trang",
+      "tenFlow2": "Dùng lại chính liên kết TEN đó cho những lần nạp sau",
+      "tenFlow3": "Đơn vị vận hành kiểm tra điều kiện và xác nhận giao dịch qua liên kết",
+      "tenFlow4": "Người đủ điều kiện nhận phiếu hằng tháng và tự động tham gia bốc thăm",
+      "tenEligibility": "Đơn vị vận hành phải xác nhận giao dịch nạp đáp ứng điều kiện và được thực hiện qua liên kết TEN.",
+      "tenVariation": "Mức giảm của phiếu, tiêu chí áp dụng, phần thưởng hằng tháng và số người trúng trong tương lai có thể thay đổi theo chính sách của đơn vị vận hành.",
+      "tenHistoryTitle": "Lịch sử trao gói",
+      "tenHistoryMonth": "{month} · Đã trao xong",
+      "tenHistoryIntro": "Bản ghi trao gói của đơn vị vận hành TilesSurvive.net.",
+      "tenPackageLabel": "Gói",
+      "tenRecipientsLabel": "Người nhận",
+      "tenHistoryTotal": "Đã trao gói cho {count} người nhận",
+      "tenHistoryCaveat": "Đây là bản ghi trong quá khứ; phần thưởng và số người trúng mỗi tháng trong tương lai có thể khác. Người không trúng thưởng không được bảo đảm nhận gói.",
+      "tenBookmarkTitle": "Đánh dấu liên kết nạp TEN",
+      "tenBookmarkText": "Mở liên kết TEN bên dưới rồi thêm trang đích đó vào dấu trang của trình duyệt. Dùng lại chính liên kết này cho những lần nạp sau.",
+      "tenBookmarkButton": "Cách đánh dấu liên kết TEN",
+      "tenBookmarkHint": "Mở liên kết TEN, sau đó dùng menu dấu trang của trình duyệt. Nút này chỉ hiển thị hướng dẫn, không tự động thêm dấu trang.",
+      "tenBookmarkCta": "Mở liên kết TEN"
     },
     "tr": {
       "title": "LootBar: yükleme öncesi kontrol rehberi",
@@ -1071,8 +1473,8 @@
           "Sipariş numarası ve hata ekran görüntüsüyle LootBar desteğine başvurun. Desteğe asla şifre veya doğrulama kodu göndermeyin."
         ],
         [
-          "TEN bağlantısı ne sunar?",
-          "Uygun satın almalar bu siteyi destekleyebilir. Burada alıcıya özel bir avantaj doğrulanmamıştır; ödeme öncesi güncel teklifi kontrol edin."
+          "TEN bağlantısının avantajları nelerdir?",
+          "TEN bağlantısını yer imlerinize ekleyin ve sonraki yüklemelerinizde yeniden kullanın. Site işletmecisi, bu bağlantıya atfedilen yüklemeleri ve koşullara uygunluğu kontrol eder. Koşulları sağlayan kullanıcılar aylık kupon alır ve ayrı bir başvuru yapmadan aylık ücretsiz paket çekilişine otomatik olarak katılır. İndirim oranı ve katılım koşulları işletmecinin güncel kurallarına bağlıdır; çekilişteki paketleri yalnızca kazananlar alır."
         ]
       ],
       "choicesTitle": "Sonraki adımınızı seçin",
@@ -1093,7 +1495,29 @@
       "allow": "Analize izin ver",
       "deny": "Analizi reddet",
       "statusAllowed": "Analize izin verildi. İstediğiniz zaman reddedebilirsiniz.",
-      "statusDenied": "Analiz kapalı. İstediğiniz zaman izin verebilirsiniz."
+      "statusDenied": "Analiz kapalı. İstediğiniz zaman izin verebilirsiniz.",
+      "tenCouponTitle": "Aylık kuponlar",
+      "tenCouponText": "Koşulları sağlayan kullanıcılar, işletmecinin kontrolünden sonra aylık kupon alır. İndirim oranı ve uygunluk koşulları işletmecinin güncel kurallarına bağlıdır.",
+      "tenDrawTitle": "Aylık ücretsiz paket çekilişi",
+      "tenDrawText": "Koşulları sağlayan kullanıcılar ayrı bir başvuru yapmadan aylık çekilişe otomatik olarak katılır. Ücretsiz paketleri yalnızca kazananlar alır.",
+      "tenFlow1": "TEN bağlantısını açın ve yer imlerinize ekleyin.",
+      "tenFlow2": "Yüklemelerinizi TEN bağlantısı üzerinden tamamlayın ve sonraki yüklemelerde de aynı bağlantıyı kullanın.",
+      "tenFlow3": "İşletmeci, bağlantıya atfedilen yüklemeleri ve aylık kupon koşullarının karşılanıp karşılanmadığını kontrol eder.",
+      "tenFlow4": "Koşulları sağlayan kullanıcılar aylık çekilişe otomatik olarak katılır; kazananlara paketler verilir.",
+      "tenEligibility": "İşletmeci, TEN bağlantısına atfedilen yüklemelerden hangilerinin güncel koşulları sağladığını kontrol eder.",
+      "tenVariation": "İndirim oranı, katılım koşulları ve aylık ödüllerin türü ile sayısı işletmecinin kurallarına göre değişebilir.",
+      "tenHistoryTitle": "Geçmiş ödül dağıtımları",
+      "tenHistoryMonth": "{month} · tamamlandı",
+      "tenHistoryIntro": "TilesSurvive.net işletmecisinin ödül teslim kaydı.",
+      "tenPackageLabel": "Paket",
+      "tenRecipientsLabel": "Alıcılar",
+      "tenHistoryTotal": "{count} kişiye paket teslim edildi",
+      "tenHistoryCaveat": "Bu, geçmiş bir dağıtım kaydıdır. Gelecek aylardaki ödüllerin türü ve sayısı farklı olabilir; kazanmayanlara paket verilmesi garanti edilmez.",
+      "tenBookmarkTitle": "TEN yükleme bağlantısını yer imlerinize ekleyin",
+      "tenBookmarkText": "Aşağıdaki TEN bağlantısını açın ve açılan sayfayı tarayıcınızın yer imlerine ekleyin. Sonraki yüklemelerinizde bu sayfayı yeniden kullanın.",
+      "tenBookmarkButton": "TEN bağlantısı yer imlerine nasıl eklenir?",
+      "tenBookmarkHint": "TEN bağlantısını açın, ardından tarayıcınızın yer imleri menüsünü kullanın. Bu düğme yalnızca talimatları gösterir; bağlantıyı otomatik olarak yer imlerine eklemez.",
+      "tenBookmarkCta": "TEN bağlantısını aç"
     },
     "th": {
       "title": "LootBar: ตรวจสอบก่อนเติมเงิน",
@@ -1128,8 +1552,8 @@
           "ติดต่อฝ่ายสนับสนุนของ LootBar พร้อมหมายเลขคำสั่งซื้อและภาพหน้าจอข้อผิดพลาด ห้ามส่งรหัสผ่านหรือรหัสยืนยันให้ฝ่ายสนับสนุน"
         ],
         [
-          "ลิงก์ TEN มีสิทธิประโยชน์อะไร?",
-          "การซื้อที่เข้าเงื่อนไขอาจช่วยสนับสนุนเว็บไซต์นี้ ยังไม่มีการยืนยันสิทธิพิเศษเฉพาะผู้ซื้อในที่นี้ โปรดตรวจสอบข้อเสนอปัจจุบันก่อนชำระเงิน"
+          "การใช้ลิงก์ TEN มีสิทธิประโยชน์อะไรบ้าง?",
+          "บันทึกลิงก์ TEN เป็นบุ๊กมาร์กและใช้ลิงก์เดิมในการเติมเงินครั้งถัดไป ผู้ใช้ที่ผู้ดูแลเว็บไซต์ตรวจสอบแล้วว่ามีรายการเติมเงินที่เข้าเกณฑ์และมาจากลิงก์นี้จะได้รับคูปองรายเดือนตามนโยบายของผู้ดูแล ผู้มีสิทธิ์จะเข้าร่วมการจับรางวัลแพ็กเกจฟรีประจำเดือนโดยอัตโนมัติโดยไม่ต้องสมัครแยก แต่เฉพาะผู้ชนะเท่านั้นที่จะได้รับแพ็กเกจ ส่วนลดคูปอง เกณฑ์สิทธิ์ รางวัลในอนาคต และจำนวนผู้ชนะอาจแตกต่างกันตามนโยบายของผู้ดูแล"
         ]
       ],
       "choicesTitle": "เลือกขั้นตอนถัดไป",
@@ -1150,7 +1574,29 @@
       "allow": "อนุญาตการวิเคราะห์",
       "deny": "ปฏิเสธการวิเคราะห์",
       "statusAllowed": "อนุญาตการวิเคราะห์แล้ว คุณปฏิเสธได้ทุกเมื่อ",
-      "statusDenied": "ปิดการวิเคราะห์อยู่ คุณอนุญาตได้ทุกเมื่อ"
+      "statusDenied": "ปิดการวิเคราะห์อยู่ คุณอนุญาตได้ทุกเมื่อ",
+      "tenCouponTitle": "คูปองรายเดือนสำหรับผู้มีสิทธิ์",
+      "tenCouponText": "ผู้ดูแลเว็บไซต์จะตรวจสอบว่ารายการเติมเงินเข้าเกณฑ์และมาจากลิงก์ TEN แล้วมอบคูปองรายเดือนแก่ผู้มีสิทธิ์ ส่วนลดและเกณฑ์สิทธิ์เป็นไปตามนโยบายของผู้ดูแล",
+      "tenDrawTitle": "จับรางวัลแพ็กเกจฟรีประจำเดือน",
+      "tenDrawText": "ผู้มีสิทธิ์เข้าร่วมการจับรางวัลโดยอัตโนมัติ ไม่ต้องสมัครแยก แพ็กเกจฟรีมอบให้เฉพาะผู้ชนะ ไม่ใช่ผู้เข้าร่วมทุกคน",
+      "tenFlow1": "เปิดลิงก์ TEN และบันทึกเป็นบุ๊กมาร์ก",
+      "tenFlow2": "ใช้ลิงก์ TEN เดิมในการเติมเงินครั้งถัดไป",
+      "tenFlow3": "ผู้ดูแลตรวจสอบเกณฑ์และที่มาของรายการเติมเงินจากลิงก์",
+      "tenFlow4": "ผู้มีสิทธิ์รับคูปองรายเดือนและเข้าร่วมการจับรางวัลอัตโนมัติ",
+      "tenEligibility": "ผู้ดูแลเว็บไซต์ต้องยืนยันว่ารายการเติมเงินเข้าเกณฑ์และมาจากลิงก์ TEN",
+      "tenVariation": "ส่วนลดคูปอง เกณฑ์สิทธิ์ รางวัลรายเดือนในอนาคต และจำนวนผู้ชนะอาจแตกต่างกันตามนโยบายของผู้ดูแล",
+      "tenHistoryTitle": "ประวัติการแจกแพ็กเกจ",
+      "tenHistoryMonth": "{month} · แจกครบแล้ว",
+      "tenHistoryIntro": "บันทึกการแจกแพ็กเกจของผู้ดูแล TilesSurvive.net",
+      "tenPackageLabel": "แพ็กเกจ",
+      "tenRecipientsLabel": "ผู้รับ",
+      "tenHistoryTotal": "ผู้รับ {count} คนได้รับแพ็กเกจแล้ว",
+      "tenHistoryCaveat": "นี่คือบันทึกที่ผ่านมา รางวัลและจำนวนผู้ชนะในเดือนต่อไปอาจแตกต่างกัน และไม่รับประกันว่าผู้ที่ไม่ได้ชนะจะได้รับแพ็กเกจ",
+      "tenBookmarkTitle": "บันทึกลิงก์เติมเงิน TEN เป็นบุ๊กมาร์ก",
+      "tenBookmarkText": "เปิดลิงก์ TEN ด้านล่างแล้วเพิ่มหน้าปลายทางนั้นลงในบุ๊กมาร์กของเบราว์เซอร์ ใช้ลิงก์เดิมในการเติมเงินครั้งต่อไป",
+      "tenBookmarkButton": "วิธีบันทึกลิงก์ TEN เป็นบุ๊กมาร์ก",
+      "tenBookmarkHint": "เปิดลิงก์ TEN แล้วใช้เมนูบุ๊กมาร์กของเบราว์เซอร์ ปุ่มนี้แสดงวิธีการเท่านั้น ไม่ได้เพิ่มบุ๊กมาร์กให้อัตโนมัติ",
+      "tenBookmarkCta": "เปิดลิงก์ TEN"
     },
     "ar": {
       "title": "LootBar: ما يجب التحقق منه قبل الشحن",
@@ -1185,8 +1631,8 @@
           "تواصل مع دعم LootBar وأرفق رقم الطلب وصورة للخطأ. لا ترسل كلمة مرور أو رمز تحقق إلى الدعم أبدًا."
         ],
         [
-          "ما مزايا رابط TEN؟",
-          "قد تدعم المشتريات المؤهلة هذا الموقع. لم يتم تأكيد ميزة حصرية للمشتري هنا؛ تحقق من العرض الحالي قبل الدفع."
+          "ما مزايا استخدام رابط TEN؟",
+          "احفظ رابط TEN في الإشارات المرجعية واستخدم الرابط نفسه في عمليات الشحن اللاحقة. يحصل المستخدمون الذين يؤكد مشغّل الموقع أهلية عمليات شحنهم ونسبتها إلى هذا الرابط على قسائم شهرية وفق سياسة المشغّل. ويُدرجون تلقائيًا في السحب الشهري على حزم مجانية دون طلب مشاركة منفصل، لكن الحزم تُمنح للفائزين فقط. وقد تختلف خصومات القسائم وشروط الأهلية والجوائز المستقبلية وأعداد الفائزين بحسب سياسة المشغّل."
         ]
       ],
       "choicesTitle": "اختر خطوتك التالية",
@@ -1207,7 +1653,29 @@
       "allow": "السماح بالتحليل",
       "deny": "رفض التحليل",
       "statusAllowed": "التحليل مسموح. يمكنك رفضه في أي وقت.",
-      "statusDenied": "التحليل متوقف. يمكنك السماح به في أي وقت."
+      "statusDenied": "التحليل متوقف. يمكنك السماح به في أي وقت.",
+      "tenCouponTitle": "قسائم شهرية للمستخدمين المؤهلين",
+      "tenCouponText": "يتحقق مشغّل الموقع من أهلية عمليات الشحن ونسبتها إلى رابط TEN، ويمنح القسائم الشهرية للمستخدمين المؤهلين. تخضع الخصومات ومعايير الأهلية لسياسة المشغّل.",
+      "tenDrawTitle": "السحب الشهري على حزم مجانية",
+      "tenDrawText": "يشارك المستخدمون المؤهلون تلقائيًا دون الحاجة إلى تقديم طلب منفصل. تُمنح الحزم المجانية للفائزين فقط، وليس لجميع المشاركين.",
+      "tenFlow1": "افتح رابط TEN واحفظه في الإشارات المرجعية",
+      "tenFlow2": "استخدم رابط TEN نفسه في عمليات الشحن اللاحقة",
+      "tenFlow3": "يتحقق المشغّل من أهلية عمليات الشحن ونسبتها إلى الرابط",
+      "tenFlow4": "يحصل المؤهلون على قسائم شهرية ويدخلون السحب تلقائيًا",
+      "tenEligibility": "يجب أن يؤكد مشغّل الموقع أهلية عملية الشحن ونسبتها إلى رابط TEN.",
+      "tenVariation": "قد تختلف خصومات القسائم وشروط الأهلية والجوائز الشهرية المستقبلية وأعداد الفائزين بحسب سياسة المشغّل.",
+      "tenHistoryTitle": "سجل التوزيعات السابقة",
+      "tenHistoryMonth": "{month} · اكتمل التوزيع",
+      "tenHistoryIntro": "سجل توزيع الحزم لدى مشغّل TilesSurvive.net.",
+      "tenPackageLabel": "الحزمة",
+      "tenRecipientsLabel": "المستفيدون",
+      "tenHistoryTotal": "تسلّم {count} مستفيدًا حزمًا",
+      "tenHistoryCaveat": "هذا سجل سابق؛ قد تختلف الجوائز وأعداد الفائزين في الأشهر المقبلة، ولا يُضمن حصول غير الفائزين على حزم.",
+      "tenBookmarkTitle": "احفظ رابط TEN للشحن في الإشارات المرجعية",
+      "tenBookmarkText": "افتح رابط TEN أدناه وأضف الصفحة التي يفتحها إلى الإشارات المرجعية في المتصفح. استخدم الرابط نفسه للشحن لاحقًا.",
+      "tenBookmarkButton": "كيفية حفظ رابط TEN في الإشارات المرجعية",
+      "tenBookmarkHint": "افتح رابط TEN ثم استخدم قائمة الإشارات المرجعية في المتصفح. يعرض هذا الزر التعليمات فقط ولا يضيف إشارة مرجعية تلقائيًا.",
+      "tenBookmarkCta": "فتح رابط TEN"
     }
   }
 }

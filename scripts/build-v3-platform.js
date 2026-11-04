@@ -22,6 +22,8 @@ function project(input,locale,route){
  if(isTopup){
   const old=parseHTML(html).document,section=old.querySelector('[data-topup-step="2"] p');
   if(section){const before=section.outerHTML;af.projectLegacyTopup(old,locale);section.setAttribute('data-v3-owned','topup-step');const after=section.outerHTML;if(before!==after)html=html.replace(before,after);}
+  for(const change of require('./ten-benefits-content').projectBookmark(old,locale)){if(!html.includes(change.before))throw Error('Missing exact bookmark replacement '+locale);html=html.replace(change.before,change.after);}
+  for(const change of require('./ten-benefits-content').projectLegacyBenefitCopy(old,locale)){if(!html.includes(change.before))throw Error('Missing exact benefit policy replacement '+locale);html=html.replace(change.before,change.after);}
   const h1=html.indexOf('</h1>'),heroEnd=html.indexOf('</section>',h1);
   if(h1<0||heroEnd<0)throw Error('Missing topup introduction owner '+locale);
   const guide=block('AFFILIATE',`<div data-v3-owned="affiliate">${af.renderGuide(locale)}</div>`);
@@ -32,6 +34,7 @@ function project(input,locale,route){
   const trust=block('TRUST',`<div data-v3-owned="trust">${events.renderTrust(record,locale)}</div>`);html=html.replace(/(<\/h1>)/,m=>m+trust);
  }
  const assets=['css/v3-platform.css','js/v3-search-core.js'];
+ if(isTopup)assets.push('css/ten-benefits.css');
  if(isPower)assets.push('js/v3-planner.js');
  if(affine){html=af.transformAnalytics(html);html=html.replace(/<html\b/, '<html data-v3-affiliate=""');html=html.replace(/<\/main>/,block('PRIVACY',`<div data-v3-owned="privacy">${af.renderPrivacyNotice(locale)}</div>`)+ '</main>');assets.push('js/v3-affiliate.js');}
  html=html.replace(/<html\b/,'<html data-v3-platform=""').replace(/(data-v3-platform=""\s*){2,}/g,'data-v3-platform="" ').replace(/(data-v3-affiliate=""\s*){2,}/g,'data-v3-affiliate="" ');

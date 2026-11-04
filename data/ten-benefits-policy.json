@@ -1,0 +1,36 @@
+{
+  "schemaVersion": 1,
+  "policyId": "ten-monthly-member-benefits",
+  "confirmedOn": "2026-11-04",
+  "source": "TilesSurvive.net operator-provided policy and payout record",
+  "tenUrl": "https://www.lootbar.com/ko/shop/ten/top-up/tiles-survive",
+  "frequency": "monthly",
+  "eligibility": "Qualifying top-ups attributed to the TEN affiliate link, checked by the operator under the operating policy",
+  "applicationRequired": false,
+  "coupons": {
+    "recipientRule": "Users who meet the operating eligibility conditions",
+    "discountPercent": null,
+    "minimumTopUpAmount": null
+  },
+  "freePackages": {
+    "selection": "draw",
+    "automaticEligibleEntry": true,
+    "guaranteedForEveryParticipant": false
+  },
+  "history": [
+    {
+      "month": "2026-11",
+      "currency": "USD",
+      "status": "paid",
+      "source": "operator-reported",
+      "packages": [
+        { "faceValueCents": 9999, "recipients": 1 },
+        { "faceValueCents": 999, "recipients": 5 },
+        { "faceValueCents": 499, "recipients": 5 }
+      ],
+      "totalRecipients": 11,
+      "futureCompositionGuaranteed": false
+    }
+  ],
+  "conditionsMayVary": true
+}

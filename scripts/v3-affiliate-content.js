@@ -18,7 +18,9 @@ function renderPrivacyNotice(locale) {
 }
 function renderGuide(locale) {
   const c = get(locale);
-  const qa = c.faq.map(([q,a]) => `<details class="v3-topup-question"><summary>${escape(q)}</summary><p>${escape(a)}</p></details>`).join('\n');
+  // Keep the source FAQ order stable: step 2 still uses faq[3]. Render TEN's
+  // operator-confirmed benefit answer first, using the shared payout policy.
+  const qa = require('./ten-benefits-content').renderBenefits(locale) + c.faq.slice(0,7).map(([q,a]) => `<details class="v3-topup-question"><summary>${escape(q)}</summary><p>${escape(a)}</p></details>`).join('\n');
   return `<section id="v3-topup-guide" class="v3-affiliate-guide" data-v3-guide><h2>${escape(c.title)}</h2><p>${escape(c.lead)}</p>${qa}<p class="v3-source-note">${escape(c.evidence)}: <time datetime="${copy.reviewedOn}">${copy.reviewedOn}</time> · <a href="https://www.lootbar.com/top-up/tiles-survive" rel="noopener noreferrer" target="_blank">${escape(c.providerGuide)}</a> · <a href="https://static.lootbar.gg/static/user_agreement.html" rel="noopener noreferrer" target="_blank">${escape(c.providerTerms)}</a></p><p>${escape(c.disclosure)}</p><a class="v3-link-button" href="${TEN_URL}" data-v3-cta="outbound" data-v3-placement="guide" data-v3-feature="topup" target="_blank" rel="sponsored noopener noreferrer">${escape(c.outbound)}</a></section>`;
 }
 function renderResultChoices(locale, feature = 'calculator') {
