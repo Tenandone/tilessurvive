@@ -4,8 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npm run build:legacy && npm run build:50",
-    "postbuild": "node scripts/install-adsense.js --apply && npm run build:community && npm run build:v3",
+    "build": "node scripts/build-client-release.js --apply",
     "postbuild:50": "node scripts/install-adsense.js --apply && npm run build:community",
     "postbuild:building-system": "node scripts/install-adsense.js --apply && npm run build:community && npm run build:v3",
     "build:community": "node scripts/sync-community-links.js --apply && node scripts/sync-community-links.js --check",
@@ -75,7 +74,12 @@
     "postbuild:global:release": "npm run build:v3",
     "build:hero-atlas": "node scripts/build-hero-atlas.js && node scripts/build-hero-atlas-search.js && node scripts/build-v3-search.js",
     "test:hero-atlas": "node --test scripts/test-hero-atlas-runtime.js scripts/test-hero-atlas-publication.js scripts/test-hero-atlas-localization.js scripts/test-hero-atlas-search.js",
-    "postbuild:v3": "npm run build:hero-atlas"
+    "postbuild:v3": "npm run build:hero-atlas",
+    "build:historical-full": "npm run build:legacy && npm run build:50",
+    "postbuild:historical-full": "node scripts/install-adsense.js --apply && npm run build:community && npm run build:v3",
+    "build:release:check": "node scripts/build-client-release.js",
+    "build:hero-pet": "node scripts/build-hero-atlas.js && node scripts/build-hero-pet-pages.js",
+    "test:client-reanalysis": "node --test scripts/test-hero-pet-relations.js scripts/test-hero-pet-pages.js scripts/test-client-release-gate.js"
   },
   "keywords": [],
   "author": "",

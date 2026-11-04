@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "reviewedOn": "2026-11-05",
+  "assets": [
+    {
+      "entity": "lava",
+      "heroId": 25300242,
+      "clientVersion": "2.6.200",
+      "clientBuild": 1512,
+      "src": "/img/game-41/heroes/lava.png",
+      "width": 840,
+      "height": 712,
+      "bytes": 619954,
+      "sha256": "bee07232e2d8419294186d535633e6dc0ca493fb7b04988ddfc836b386b63ee2",
+      "pixelSHA256": "a0b176d74deb87af2ad65ff1cc7f3abef3f5c82bc4c9ee40ef2271722fb1336f",
+      "sourceField": "Survivor.CharacterImage",
+      "resourceName": "sp_avatar_survivor_full_lava",
+      "sourceCFGSHA256": "4e12ee2494550c27beb995f7de1615502af643d4ac9aa081a3f77710c005358a",
+      "sourceBundleSHA256": "71a57e867850c9b23a29ac5f77a0c0899cc56e7556c2ad3a977faca54a5c715e",
+      "bodySHA256": "07ae4843eeacef3eb7fabee74700507b611352af05aa24b9c089f72df1bab7fe",
+      "spritePathId": "-1185611860183176785",
+      "texturePathId": "3100040815069473199",
+      "verification": "fresh plaintext UnityFS decode; sprite and texture pixels match retained image",
+      "rights": "Game-owned artwork from retained authorized static client resources. Separate redistribution license not verified. No competitor image used."
+    }
+  ]
+}

@@ -62,7 +62,8 @@
         "ranged": "Ranged"
       },
       "heroName": "Name",
-      "legacyPromotedNote": "The existing skill and stat tables below describe the promoted SSR form. Do not apply them to the base SR form. Release and server availability of the promoted form are still unverified."
+      "legacyPromotedNote": "The existing skill and stat tables below describe the promoted SSR form. Do not apply them to the base SR form. Release and server availability of the promoted form are still unverified.",
+      "pendingLanguageFinding": "The retained language dictionaries contain a product-title key for Furiosa. This does not verify core hero or skill data, or current release status."
     },
     "ko": {
       "title": "영웅 도감",
@@ -123,7 +124,8 @@
         "ranged": "원거리"
       },
       "heroName": "이름",
-      "legacyPromotedNote": "아래 기존 스킬·능력치 표는 SSR 진급형 자료입니다. 기본 SR형에 적용하지 마세요. 진급형 출시·서버 적용 여부는 아직 확인 중입니다."
+      "legacyPromotedNote": "아래 기존 스킬·능력치 표는 SSR 진급형 자료입니다. 기본 SR형에 적용하지 마세요. 진급형 출시·서버 적용 여부는 아직 확인 중입니다.",
+      "pendingLanguageFinding": "보유 언어 사전에 Furiosa의 상품 제목 키가 있습니다. 영웅·스킬 핵심 데이터나 현재 출시 여부를 증명하지는 않습니다."
     },
     "ja": {
       "title": "英雄図鑑",
@@ -184,7 +186,8 @@
         "ranged": "遠距離"
       },
       "heroName": "名前",
-      "legacyPromotedNote": "以下の既存のスキル・能力値表は、SSRへの昇格後の形態の資料です。基本のSR形態には適用しないでください。昇格形態の実装状況と各サーバーでの利用可否は、引き続き確認中です。"
+      "legacyPromotedNote": "以下の既存のスキル・能力値表は、SSRへの昇格後の形態の資料です。基本のSR形態には適用しないでください。昇格形態の実装状況と各サーバーでの利用可否は、引き続き確認中です。",
+      "pendingLanguageFinding": "保管済みの言語辞書には、Furiosaの商品タイトルのキーが存在します。これだけでは、英雄・スキルの基本データや現在のリリース状況は確認できません。"
     },
     "zh-tw": {
       "title": "英雄圖鑑",
@@ -245,7 +248,8 @@
         "ranged": "遠距離"
       },
       "heroName": "名稱",
-      "legacyPromotedNote": "下方既有的技能與能力值表適用於晉升後的 SSR 形態，請勿套用至基本 SR 形態。晉升形態的推出情況與伺服器適用範圍仍待確認。"
+      "legacyPromotedNote": "下方既有的技能與能力值表適用於晉升後的 SSR 形態，請勿套用至基本 SR 形態。晉升形態的推出情況與伺服器適用範圍仍待確認。",
+      "pendingLanguageFinding": "保留的語言字典中有 Furiosa 的商品標題鍵。這不能證明英雄或技能的核心資料，也不能確認目前是否已推出。"
     },
     "zh-cn": {
       "title": "英雄图鉴",
@@ -306,7 +310,8 @@
         "ranged": "远距离"
       },
       "heroName": "名称",
-      "legacyPromotedNote": "下方现有的技能与属性表适用于晋升后的 SSR 形态，请勿套用到基础 SR 形态。晋升形态的推出情况与服务器适用范围仍待确认。"
+      "legacyPromotedNote": "下方现有的技能与属性表适用于晋升后的 SSR 形态，请勿套用到基础 SR 形态。晋升形态的推出情况与服务器适用范围仍待确认。",
+      "pendingLanguageFinding": "保留的语言字典中有 Furiosa 的商品标题键。这不能证明英雄或技能的核心数据，也不能确认目前是否已推出。"
     },
     "ru": {
       "title": "Атлас героев",
@@ -367,7 +372,8 @@
         "ranged": "Дальний бой"
       },
       "heroName": "Имя",
-      "legacyPromotedNote": "Существующие таблицы навыков и характеристик ниже относятся к повышенной форме SSR. Не применяйте их к базовой форме SR. Выпуск повышенной формы и её доступность на серверах пока не подтверждены."
+      "legacyPromotedNote": "Существующие таблицы навыков и характеристик ниже относятся к повышенной форме SSR. Не применяйте их к базовой форме SR. Выпуск повышенной формы и её доступность на серверах пока не подтверждены.",
+      "pendingLanguageFinding": "В сохранённых языковых словарях есть ключ названия товара для Furiosa. Это не подтверждает основные данные героя или его навыков, а также текущий статус выпуска."
     },
     "ar": {
       "title": "أطلس الأبطال",
@@ -428,7 +434,8 @@
         "mid": "مدفعي"
       },
       "heroName": "الاسم",
-      "legacyPromotedNote": "جداول المهارات والإحصاءات الحالية أدناه تخص الصيغة التي تمت ترقيتها إلى SSR. لا تطبّقها على الصيغة الأساسية SR. لا يزال إصدار الصيغة المرقّاة وتوفرها على الخوادم غير متحقق منهما."
+      "legacyPromotedNote": "جداول المهارات والإحصاءات الحالية أدناه تخص الصيغة التي تمت ترقيتها إلى SSR. لا تطبّقها على الصيغة الأساسية SR. لا يزال إصدار الصيغة المرقّاة وتوفرها على الخوادم غير متحقق منهما.",
+      "pendingLanguageFinding": "تحتوي قواميس اللغة المحفوظة على مفتاح لعنوان منتج باسم Furiosa. لا يثبت ذلك البيانات الأساسية للبطل أو مهاراته، ولا يؤكد حالة إطلاقه الحالية."
     },
     "th": {
       "title": "สารานุกรมฮีโร่",
@@ -489,7 +496,8 @@
         "ranged": "ระยะไกล"
       },
       "heroName": "ชื่อ",
-      "legacyPromotedNote": "ตารางทักษะและค่าสถานะเดิมด้านล่างเป็นข้อมูลของร่างที่เลื่อนขั้นเป็น SSR อย่านำไปใช้กับร่างพื้นฐาน SR การเปิดตัวและความพร้อมใช้งานของร่างเลื่อนขั้นบนเซิร์ฟเวอร์ยังอยู่ระหว่างการตรวจสอบ"
+      "legacyPromotedNote": "ตารางทักษะและค่าสถานะเดิมด้านล่างเป็นข้อมูลของร่างที่เลื่อนขั้นเป็น SSR อย่านำไปใช้กับร่างพื้นฐาน SR การเปิดตัวและความพร้อมใช้งานของร่างเลื่อนขั้นบนเซิร์ฟเวอร์ยังอยู่ระหว่างการตรวจสอบ",
+      "pendingLanguageFinding": "พจนานุกรมภาษาที่เก็บไว้มีคีย์ชื่อสินค้าของ Furiosa แต่สิ่งนี้ไม่ได้ยืนยันข้อมูลหลักของฮีโร่หรือสกิล หรือสถานะการเปิดตัวในปัจจุบัน"
     },
     "vi": {
       "title": "Bách khoa anh hùng",
@@ -550,7 +558,8 @@
         "mid": "Pháo thủ"
       },
       "heroName": "Tên",
-      "legacyPromotedNote": "Các bảng kỹ năng và chỉ số hiện có bên dưới mô tả dạng SSR đã thăng cấp. Không áp dụng các bảng này cho dạng SR cơ bản. Việc phát hành và khả năng sử dụng dạng đã thăng cấp trên máy chủ vẫn chưa được xác minh."
+      "legacyPromotedNote": "Các bảng kỹ năng và chỉ số hiện có bên dưới mô tả dạng SSR đã thăng cấp. Không áp dụng các bảng này cho dạng SR cơ bản. Việc phát hành và khả năng sử dụng dạng đã thăng cấp trên máy chủ vẫn chưa được xác minh.",
+      "pendingLanguageFinding": "Các từ điển ngôn ngữ được lưu giữ có một khóa tiêu đề sản phẩm dành cho Furiosa. Điều này không xác minh dữ liệu cốt lõi về anh hùng hoặc kỹ năng, cũng như tình trạng phát hành hiện tại."
     },
     "id": {
       "title": "Atlas hero",
@@ -611,7 +620,8 @@
         "ranged": "Jarak jauh"
       },
       "heroName": "Nama",
-      "legacyPromotedNote": "Tabel keterampilan dan statistik yang sudah ada di bawah ini menjelaskan bentuk SSR hasil promosi. Jangan menerapkannya pada bentuk dasar SR. Rilis dan ketersediaan bentuk hasil promosi di server masih belum terverifikasi."
+      "legacyPromotedNote": "Tabel keterampilan dan statistik yang sudah ada di bawah ini menjelaskan bentuk SSR hasil promosi. Jangan menerapkannya pada bentuk dasar SR. Rilis dan ketersediaan bentuk hasil promosi di server masih belum terverifikasi.",
+      "pendingLanguageFinding": "Kamus bahasa yang tersimpan memuat kunci judul produk untuk Furiosa. Hal ini tidak membuktikan data inti hero atau skill, maupun status perilisannya saat ini."
     },
     "ms": {
       "title": "Atlas wira",
@@ -672,7 +682,8 @@
         "ranged": "Jarak jauh"
       },
       "heroName": "Nama",
-      "legacyPromotedNote": "Jadual kemahiran dan statistik sedia ada di bawah menerangkan bentuk SSR yang telah dinaikkan pangkat. Jangan gunakannya untuk bentuk asas SR. Pelancaran dan ketersediaan bentuk yang dinaikkan pangkat pada pelayan masih belum disahkan."
+      "legacyPromotedNote": "Jadual kemahiran dan statistik sedia ada di bawah menerangkan bentuk SSR yang telah dinaikkan pangkat. Jangan gunakannya untuk bentuk asas SR. Pelancaran dan ketersediaan bentuk yang dinaikkan pangkat pada pelayan masih belum disahkan.",
+      "pendingLanguageFinding": "Kamus bahasa yang disimpan mengandungi kunci tajuk produk untuk Furiosa. Ini tidak mengesahkan data teras wira atau kemahiran, mahupun status pelancarannya pada masa ini."
     },
     "de": {
       "title": "Heldenatlas",
@@ -733,7 +744,8 @@
       "lavaGrowth": "Talentstufe 1 schaltet Angriffs- und Fähigkeitsschadensboni dauerhaft frei. X-SSR-Helden benötigen mehr Heldenfragmente; die gewöhnliche SSR-Kostentabelle darf nicht für Lava verwendet werden.",
       "effectPending": "Die Effekte je Stufe und die Entwicklungskosten sind noch nicht vollständig bestätigt. Es werden keine Schätzwerte oder übernommenen Formeln angezeigt.",
       "heroName": "Name",
-      "legacyPromotedNote": "Die vorhandenen Fähigkeits- und Wertetabellen unten beziehen sich auf die beförderte SSR-Form. Wende sie nicht auf die SR-Grundform an. Veröffentlichung und Serververfügbarkeit der beförderten Form sind weiterhin nicht bestätigt."
+      "legacyPromotedNote": "Die vorhandenen Fähigkeits- und Wertetabellen unten beziehen sich auf die beförderte SSR-Form. Wende sie nicht auf die SR-Grundform an. Veröffentlichung und Serververfügbarkeit der beförderten Form sind weiterhin nicht bestätigt.",
+      "pendingLanguageFinding": "Die aufbewahrten Sprachwörterbücher enthalten einen Produkttitel-Schlüssel für Furiosa. Das bestätigt weder die Kerndaten des Helden oder seiner Fähigkeiten noch den aktuellen Veröffentlichungsstatus."
     },
     "nl": {
       "title": "Heldenatlas",
@@ -794,7 +806,8 @@
       "lavaGrowth": "Talentniveau 1 ontgrendelt permanent bonussen voor aanval en vaardigheidsschade. X-SSR-helden hebben meer heldenfragmenten nodig; gebruik de gewone SSR-kostentabel niet voor Lava.",
       "effectPending": "De effectwaarden per niveau en de ontwikkelingskosten zijn nog niet volledig geverifieerd. Er worden geen geschatte waarden of geleende formules getoond.",
       "heroName": "Naam",
-      "legacyPromotedNote": "De bestaande vaardigheids- en statistiektabellen hieronder beschrijven de gepromoveerde SSR-vorm. Pas ze niet toe op de SR-basisvorm. De release en beschikbaarheid van de gepromoveerde vorm op servers zijn nog niet geverifieerd."
+      "legacyPromotedNote": "De bestaande vaardigheids- en statistiektabellen hieronder beschrijven de gepromoveerde SSR-vorm. Pas ze niet toe op de SR-basisvorm. De release en beschikbaarheid van de gepromoveerde vorm op servers zijn nog niet geverifieerd.",
+      "pendingLanguageFinding": "De bewaarde taalwoordenboeken bevatten een sleutel voor een producttitel voor Furiosa. Dit bevestigt niet de kerngegevens van de held of vaardigheden, noch de huidige releasestatus."
     },
     "fr": {
       "title": "Atlas des héros",
@@ -855,7 +868,8 @@
       "lavaGrowth": "Le niveau de talent 1 débloque définitivement des bonus d’attaque et de dégâts de compétence. Les héros X-SSR nécessitent davantage de fragments ; le tableau de coûts SSR ordinaire ne s’applique pas à Lava.",
       "effectPending": "Les effets par niveau et les coûts de progression ne sont pas entièrement vérifiés. Aucune estimation ni formule empruntée n’est affichée.",
       "heroName": "Nom",
-      "legacyPromotedNote": "Les tableaux de compétences et de statistiques existants ci-dessous concernent la forme promue SSR. Ne les appliquez pas à la forme de base SR. La sortie et la disponibilité de la forme promue sur les États restent à vérifier."
+      "legacyPromotedNote": "Les tableaux de compétences et de statistiques existants ci-dessous concernent la forme promue SSR. Ne les appliquez pas à la forme de base SR. La sortie et la disponibilité de la forme promue sur les États restent à vérifier.",
+      "pendingLanguageFinding": "Les dictionnaires de langues conservés contiennent une clé de titre de produit pour Furiosa. Cela ne confirme ni les données fondamentales du héros ou de ses compétences, ni son statut de sortie actuel."
     },
     "it": {
       "title": "Atlante degli eroi",
@@ -916,7 +930,8 @@
       "lavaGrowth": "Il livello talento 1 sblocca permanentemente bonus ad attacco e danni abilità. Gli eroi X-SSR richiedono più frammenti eroe; la normale tabella dei costi SSR non va applicata a Lava.",
       "effectPending": "I valori degli effetti per livello e i costi di crescita non sono stati verificati completamente. Non vengono mostrati valori stimati né formule prese da altre forme.",
       "heroName": "Nome",
-      "legacyPromotedNote": "Le tabelle esistenti di abilità e statistiche qui sotto si riferiscono alla forma promossa SSR. Non applicarle alla forma base SR. L’uscita e la disponibilità della forma promossa sui server restano da verificare."
+      "legacyPromotedNote": "Le tabelle esistenti di abilità e statistiche qui sotto si riferiscono alla forma promossa SSR. Non applicarle alla forma base SR. L’uscita e la disponibilità della forma promossa sui server restano da verificare.",
+      "pendingLanguageFinding": "I dizionari linguistici conservati contengono una chiave del titolo di un prodotto per Furiosa. Questo non conferma i dati fondamentali dell'eroe o delle abilità, né il suo attuale stato di rilascio."
     },
     "pl": {
       "title": "Atlas bohaterów",
@@ -977,7 +992,8 @@
       "lavaGrowth": "Poziom talentu 1 na stałe odblokowuje premie do ataku i obrażeń umiejętności. Bohaterowie X-SSR wymagają więcej fragmentów bohatera; zwykłej tabeli kosztów SSR nie należy stosować do bohatera Lava.",
       "effectPending": "Wartości efektów na poszczególnych poziomach i koszty rozwoju nie zostały w pełni zweryfikowane. Nie pokazujemy wartości szacunkowych ani zapożyczonych wzorów.",
       "heroName": "Imię",
-      "legacyPromotedNote": "Istniejące poniżej tabele umiejętności i statystyk dotyczą awansowanej formy SSR. Nie stosuj ich do podstawowej formy SR. Premiera awansowanej formy i jej dostępność na serwerach nadal nie zostały potwierdzone."
+      "legacyPromotedNote": "Istniejące poniżej tabele umiejętności i statystyk dotyczą awansowanej formy SSR. Nie stosuj ich do podstawowej formy SR. Premiera awansowanej formy i jej dostępność na serwerach nadal nie zostały potwierdzone.",
+      "pendingLanguageFinding": "Zachowane słowniki językowe zawierają klucz tytułu produktu z nazwą Furiosa. Nie potwierdza to podstawowych danych bohatera ani jego umiejętności, ani obecnego statusu wydania."
     },
     "pt": {
       "title": "Atlas de heróis",
@@ -1038,7 +1054,8 @@
       "lavaGrowth": "O nível de talento 1 libera permanentemente bônus de ataque e dano de habilidade. Heróis X-SSR precisam de mais fragmentos de herói; a tabela comum de custos SSR não deve ser usada para Lava.",
       "effectPending": "Os efeitos por nível e os custos de desenvolvimento ainda não foram totalmente verificados. Não mostramos estimativas nem fórmulas emprestadas.",
       "heroName": "Nome",
-      "legacyPromotedNote": "As tabelas existentes de habilidades e atributos abaixo descrevem a forma promovida SSR. Não as aplique à forma base SR. O lançamento e a disponibilidade da forma promovida nos Estados ainda não foram verificados."
+      "legacyPromotedNote": "As tabelas existentes de habilidades e atributos abaixo descrevem a forma promovida SSR. Não as aplique à forma base SR. O lançamento e a disponibilidade da forma promovida nos Estados ainda não foram verificados.",
+      "pendingLanguageFinding": "Os dicionários de idiomas preservados contêm uma chave de título de produto para Furiosa. Isso não comprova os dados principais do herói ou das habilidades, nem seu estado atual de lançamento."
     },
     "es": {
       "title": "Atlas de héroes",
@@ -1099,7 +1116,8 @@
       "lavaGrowth": "El nivel de talento 1 desbloquea permanentemente bonificaciones de ataque y daño de habilidad. Los héroes X-SSR necesitan más fragmentos de héroe; no debe usarse la tabla de costes SSR habitual para Lava.",
       "effectPending": "Los efectos por nivel y los costes de desarrollo no se han verificado por completo. No se muestran estimaciones ni fórmulas tomadas de otras formas.",
       "heroName": "Nombre",
-      "legacyPromotedNote": "Las tablas existentes de habilidades y atributos que aparecen debajo corresponden a la forma ascendida SSR. No las apliques a la forma base SR. El lanzamiento y la disponibilidad de la forma ascendida en los Estados siguen pendientes de verificación."
+      "legacyPromotedNote": "Las tablas existentes de habilidades y atributos que aparecen debajo corresponden a la forma ascendida SSR. No las apliques a la forma base SR. El lanzamiento y la disponibilidad de la forma ascendida en los Estados siguen pendientes de verificación.",
+      "pendingLanguageFinding": "Los diccionarios de idiomas conservados contienen una clave de título de producto para Furiosa. Esto no confirma los datos principales del héroe o de sus habilidades, ni su estado de lanzamiento actual."
     },
     "sv": {
       "title": "Hjälteatlas",
@@ -1160,7 +1178,8 @@
       "lavaGrowth": "Talangnivå 1 låser permanent upp bonusar för attack och färdighetsskada. X-SSR-hjältar behöver fler hjältefragment; den vanliga SSR-kostnadstabellen får inte användas för Lava.",
       "effectPending": "Effektvärden per nivå och utvecklingskostnader har inte verifierats fullt ut. Inga uppskattade värden eller lånade formler visas.",
       "heroName": "Namn",
-      "legacyPromotedNote": "De befintliga färdighets- och attributtabellerna nedan beskriver den befordrade SSR-formen. Använd dem inte för SR-grundformen. Den befordrade formens lansering och tillgänglighet på servrar är fortfarande inte verifierade."
+      "legacyPromotedNote": "De befintliga färdighets- och attributtabellerna nedan beskriver den befordrade SSR-formen. Använd dem inte för SR-grundformen. Den befordrade formens lansering och tillgänglighet på servrar är fortfarande inte verifierade.",
+      "pendingLanguageFinding": "De bevarade språkordböckerna innehåller en nyckel för en produkttitel för Furiosa. Detta bekräftar varken hjältens eller färdigheternas grunddata eller den aktuella lanseringsstatusen."
     },
     "tr": {
       "title": "Kahraman atlası",
@@ -1221,7 +1240,8 @@
       "lavaGrowth": "Yetenek seviyesi 1, saldırı ve beceri hasarı bonuslarını kalıcı olarak açar. X-SSR kahramanlar daha fazla kahraman parçası gerektirir; normal SSR maliyet tablosu Lava için kullanılmamalıdır.",
       "effectPending": "Seviyeye özel etki değerleri ve gelişim maliyetleri tam olarak doğrulanmamıştır. Tahmini değerler veya başka formlardan alınmış formüller gösterilmez.",
       "heroName": "Ad",
-      "legacyPromotedNote": "Aşağıdaki mevcut beceri ve nitelik tabloları, terfi etmiş SSR formuna aittir. Bunları temel SR formuna uygulamayın. Terfi etmiş formun çıkışı ve sunuculardaki kullanılabilirliği henüz doğrulanmamıştır."
+      "legacyPromotedNote": "Aşağıdaki mevcut beceri ve nitelik tabloları, terfi etmiş SSR formuna aittir. Bunları temel SR formuna uygulamayın. Terfi etmiş formun çıkışı ve sunuculardaki kullanılabilirliği henüz doğrulanmamıştır.",
+      "pendingLanguageFinding": "Saklanan dil sözlüklerinde Furiosa için bir ürün başlığı anahtarı bulunuyor. Bu, kahraman veya becerilere ilişkin temel verileri ya da mevcut çıkış durumunu doğrulamaz."
     },
     "nb": {
       "title": "Helteatlas",
@@ -1282,7 +1302,8 @@
       "lavaGrowth": "Talentnivå 1 låser permanent opp bonuser for angrep og ferdighetsskade. X-SSR-helter trenger flere heltefragmenter; den vanlige SSR-kostnadstabellen skal ikke brukes for Lava.",
       "effectPending": "Effektverdier per nivå og utviklingskostnader er ikke fullt bekreftet. Ingen anslåtte verdier eller lånte formler vises.",
       "heroName": "Navn",
-      "legacyPromotedNote": "De eksisterende ferdighets- og egenskapstabellene nedenfor beskriver den forfremmede SSR-formen. Ikke bruk dem for SR-grunnformen. Lanseringen og tilgjengeligheten på servere for den forfremmede formen er fortsatt ikke bekreftet."
+      "legacyPromotedNote": "De eksisterende ferdighets- og egenskapstabellene nedenfor beskriver den forfremmede SSR-formen. Ikke bruk dem for SR-grunnformen. Lanseringen og tilgjengeligheten på servere for den forfremmede formen er fortsatt ikke bekreftet.",
+      "pendingLanguageFinding": "De bevarte språkordbøkene inneholder en nøkkel for en produkttittel for Furiosa. Dette bekrefter verken kjernedata for helten eller ferdighetene, eller den nåværende lanseringsstatusen."
     }
   }
 }

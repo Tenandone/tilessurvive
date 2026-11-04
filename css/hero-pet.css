@@ -1,0 +1,12 @@
+.hero-pet-panel{margin:1.6rem 0;padding:clamp(1rem,3vw,1.8rem);border:1px solid #3b5862;border-radius:18px;background:linear-gradient(135deg,#11272e,#152329);color:#e7f0ed;line-height:1.65;scroll-margin-top:6rem}
+.hero-pet-panel h2,.hero-pet-panel h3,.hero-pet-panel h4,.hero-pet-panel h5{color:#eff8f3;line-height:1.35}
+.hero-pet-panel h2,.hero-pet-panel h3{margin-top:0}.hero-pet-panel h4{font-size:1.25rem;margin:.5rem 0}.hero-pet-panel h5{font-size:1rem;margin:1rem 0 .4rem}
+.hero-pet-panel a{color:#b5e7d2;text-underline-offset:.2em}.hero-pet-panel a:hover{color:#fff}.hero-pet-panel a:focus-visible,.hero-pet-panel summary:focus-visible{outline:3px solid #ffce7b;outline-offset:4px}
+.hp-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));gap:1rem;margin:1rem 0}.hp-card,.hp-pet{min-width:0;padding:1.1rem;background:#1b3036;border:1px solid #40575b;border-radius:12px;overflow-wrap:anywhere}
+.hp-status{display:inline-block;margin:0;padding:.25rem .6rem;border-radius:6px;font-size:.84rem;border:1px solid #7caaa3;background:#21483f;color:#d2f2df}.hp-practical-check{background:#443a29;border-color:#a08b5f;color:#ffe4ac}
+.hp-note,.hp-empty,.hp-evidence,.hp-alternatives{color:#cad8d4;font-size:.94rem}.hp-reason{margin:.8rem 0}.hero-pet-panel ul{padding-inline-start:1.3rem}.hero-pet-panel li+li{margin-top:.35rem}.hero-pet-panel details{margin:.7rem 0}.hero-pet-panel summary{cursor:pointer;padding:.35rem 0;color:#d4eadf}.hp-evidence{border-top:1px solid #48605d;padding-top:.5rem}.hp-skills{margin:.7rem 0}.hp-skills ul{margin-top:.25rem}.hp-skills small{color:#c4d2ce}
+@media(max-width:600px){.hero-pet-panel{padding:1rem;margin:1.2rem 0}.hp-grid{grid-template-columns:1fr}.hp-card,.hp-pet{padding:1rem}}
+/* The retained light-theme heading/link rules use !important. Scope the dark
+   panel contrast override to this owner, including nested atlas profiles. */
+.hero-pet-panel :is(h2,h3,h4,h5){color:#eff8f3!important}
+.hero-pet-panel a{color:#b5e7d2!important}.hero-pet-panel a:hover{color:#fff!important}

@@ -7,6 +7,29 @@ const read=file=>fs.readFileSync(path.join(ROOT,file),'utf8'),digest=file=>crypt
 const sourceFiles=codes.map(code=>'data/search/'+code+'.json').concat(['data/i18n/client-terms.json','data/i18n/contextual-terms.json']);
 const before=Object.fromEntries(sourceFiles.map(file=>[file,digest(file)]));
 const result=B.collect(),shards=result.shards;
+const atlasRoutes=require('./build-hero-atlas-search').atlasRoutes();
+function verifyNameProvenance(item,alias){
+  assert(['site-label','site-alias','retained-client','retained-english-fallback'].includes(alias.source));
+  if(!['retained-client','retained-english-fallback'].includes(alias.source))return false;
+  const hero=atlasRoutes.get(item.url)?.hero;
+  if(hero){
+    assert.deepEqual(item.search.clientIds,[{kind:'hero',id:hero.clientId}],'Route-bound hero client identity');
+    assert.equal(item.search.hero?.clientId,hero.clientId);assert.equal(item.search.hero?.nameKey,hero.nameKey);
+    assert.equal(alias.termKey,hero.nameKey,'A hero name must use its exact retained key');
+    const name=hero.names[alias.language];assert(name,'Missing retained/fallback name record');assert.equal(alias.value,name.value,'Exact client name or explicit English fallback');
+    const fallback=['ar','vi','nb'].includes(alias.language);
+    assert.equal(name.status,fallback?'english-fallback':'client-official');
+    assert.equal(alias.source,fallback?'retained-english-fallback':'retained-client','Never claim an authored locale is a retained official translation');
+    if(fallback)assert.equal(alias.value,hero.names.en.value,'Fallback must retain the exact English game name');
+    else assert(terms.locales[alias.language]?.cohort,'Official language requires a retained corpus');
+    return !fallback;
+  }
+  assert.equal(alias.source,'retained-client','English fallback is scoped to an exact reviewed hero name');
+  assert(terms.locales[alias.language]?.cohort);assert(!['ar','vi','nb'].includes(alias.language));
+  const context=contextual.find(row=>row.clientKey===alias.termKey);
+  assert.equal(alias.value,terms.terms[alias.termKey]?.[alias.language]??context?.names[alias.language]?.value);
+  return true;
+}
 const tick=()=>new Promise(resolve=>setImmediate(resolve));
 function harness(code,{header=false,query='',payload=shards[code],fetcher}={}){
   const {window,document}=parseHTML(read(code+'/search/index.html'));
@@ -71,14 +94,13 @@ test('skill searches retain working exact anchors, owner context and distinct hi
 test('official provenance is exact and entity-scoped; authored locales never masquerade as retained client terms',()=>{
   const seen=new Set();
   for(const item of shards.en.items)for(const alias of item.search.aliases){
-    assert(['site-label','site-alias','retained-client'].includes(alias.source));
-    if(alias.source!=='retained-client')continue;
-    assert(terms.locales[alias.language]?.cohort);assert(!['ar','vi','nb'].includes(alias.language));
-    const context=contextual.find(row=>row.clientKey===alias.termKey);
-    assert.equal(alias.value,terms.terms[alias.termKey]?.[alias.language]??context?.names[alias.language]?.value);
-    seen.add(alias.language);
+    if(verifyNameProvenance(item,alias))seen.add(alias.language);
   }
   assert.equal(seen.size,18);
+  const hero=shards.en.items.find(item=>item.url==='/en/heroes/beka/'),fallback=hero.search.aliases.find(a=>a.language==='ar'&&a.source==='retained-english-fallback');assert(fallback);
+  for(const mutation of [{...fallback,source:'retained-client'},{...fallback,language:'fr'},{...fallback,value:'Invented localized name'},{...fallback,termKey:'survivor_ray_name'}])assert.throws(()=>verifyNameProvenance(hero,mutation));
+  const wrongIdentity=structuredClone(hero);wrongIdentity.search.clientIds[0].id++;assert.throws(()=>verifyNameProvenance(wrongIdentity,fallback));
+  assert.throws(()=>verifyNameProvenance({...hero,url:'/en/heroes/beka/#unreviewed-skill'},fallback));
   const keys=url=>new Set(shards.en.items.find(i=>i.url===url).search.aliases.map(a=>a.termKey).filter(Boolean));
   assert.deepEqual(keys('/en/heroes/candy/'),new Set(['survivor_candy_name']));
   assert.deepEqual(keys('/en/database/pet-system/snowball/'),new Set(['pet_seal_normal_name']));

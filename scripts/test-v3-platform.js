@@ -6,6 +6,8 @@ const {execFileSync}=require('node:child_process'),{parseHTML}=require('linkedom
 const ROOT=path.resolve(__dirname,'..'),BASE='c1d9151593f621249338409c6fcbc8972f0514a5',ORIGINAL='edbac42bb41ba4289c24caa5635e388f1cd80e53';
 const P=require('./build-v3-platform'),A=require('./v3-affiliate-content'),registry=require('../data/i18n/locales.json'),codes=registry.locales.map(l=>l.code);
 const Atlas=require('./build-hero-atlas');
+const HeroPet=require('./build-hero-pet-pages');
+const petRoutes=new Set(codes.flatMap(locale=>[null,...require('../data/hero-pet-relations.json').pets.map(p=>p.id)].map(id=>`/${locale}/database/pet-system/${id?id+'/':''}`)));
 const read=file=>fs.readFileSync(path.join(ROOT,file),'utf8'),lf=value=>value.replaceAll('\r\n','\n'),sha=value=>crypto.createHash('sha256').update(value).digest('hex');
 const git=(args,options={})=>execFileSync('git',args,{cwd:ROOT,maxBuffer:150e6,...options});
 const filesAt=commit=>git(['ls-tree','-r','--name-only',commit],{encoding:'utf8'}).trim().split('\n');
@@ -61,6 +63,10 @@ function sameContent(before,after,file,locale){
   // arbitrary hero changes. All inherited tables, scripts and other content
   // outside the exact atlas projection still participate in this comparison.
   if(Atlas.isOwnedRoute(route)){before=Atlas.project(before,locale,route);Atlas.validateOwnership(after,locale,route);}
+  // The only new pet-page changes are the exact reviewed panel and stylesheet.
+  // Applying that owner to the pinned historical page retains the full-content
+  // comparison, including every original table, program, anchor and sentence.
+  if(petRoutes.has(route)){before=HeroPet.project(before,locale);HeroPet.validateOwnership(after,locale);}
   const expected=inherited(before),actual=inherited(after);
   let i=0;if(expected!==actual)while(i<expected.length&&expected[i]===actual[i])i++;
   assert.equal(sha(actual),sha(expected),file+' original content differs at '+i+'; expected '+JSON.stringify(expected.slice(i,i+100))+'; actual '+JSON.stringify(actual.slice(i,i+100)));
@@ -98,6 +104,11 @@ function verifyManifest(d,locale,route,file){
   assert.equal(atlasCSS.length,+atlas,file+' atlas styles only on approved hero routes');assert.equal(atlasJS.length,+hub,file+' atlas runtime only on hubs');
   if(atlas){assert(d.querySelector('[data-hero-atlas-owned]'),file+' reviewed atlas owner');assert.equal(atlasCSS[0].getAttribute('href'),'/css/hero-atlas.css?v='+sha(fs.readFileSync(path.join(ROOT,'css/hero-atlas.css'))).slice(0,12));}
   if(hub){assert.equal(atlasJS[0].getAttribute('src'),'/js/hero-atlas.js?v='+sha(fs.readFileSync(path.join(ROOT,'js/hero-atlas.js'))).slice(0,12));assert(atlasJS[0].hasAttribute('defer'));assert.equal(d.querySelectorAll('.hero-atlas-card').length,35);assert.equal(d.querySelectorAll('.hero-atlas-card[data-publication="published"]').length,29);assert.equal(d.querySelectorAll('.hero-atlas-card[data-publication="held"]').length,6);}
+  const petPage=petRoutes.has(route),petCSS=[...d.querySelectorAll('link[rel="stylesheet"]')].filter(n=>n.getAttribute('href').split('?')[0]==='/css/hero-pet.css');
+  assert.equal(petCSS.length,+(atlas||petPage),file+' hero/pet stylesheet only on reviewed routes');
+  if(atlas||petPage){assert.equal(petCSS[0].getAttribute('href'),HeroPet.asset().match(/href="([^"]+)"/)[1],file+' current hero/pet stylesheet');assert(petCSS[0].hasAttribute(atlas?'data-hero-atlas-owned':'data-hero-pet-owned'));}
+  assert.equal(d.querySelectorAll('[data-hero-pet-owned="pets"]').length,+petPage,file+' exact pet panel scope');
+  if(petPage)HeroPet.validateOwnership(d.toString(),locale);
   const originalIds=[...d.querySelectorAll('[id]')].map(n=>n.id),counts=new Map();originalIds.forEach(id=>counts.set(id,(counts.get(id)||0)+1));for(const [id,n]of counts)if(id.startsWith('v3-')||id==='growth-plan')assert.equal(n,1,file+' unique V3 anchor '+id);
 }
 

@@ -3751,7 +3751,113 @@
         "ms": "/ms/heroes/lava/",
         "nb": "/nb/heroes/lava/"
       },
-      "images": {}
+      "images": {
+        "en": {
+          "src": "/img/game-41/heroes/lava.png",
+          "width": 840,
+          "height": 712
+        },
+        "ko": {
+          "src": "/img/game-41/heroes/lava.png",
+          "width": 840,
+          "height": 712
+        },
+        "ja": {
+          "src": "/img/game-41/heroes/lava.png",
+          "width": 840,
+          "height": 712
+        },
+        "zh-tw": {
+          "src": "/img/game-41/heroes/lava.png",
+          "width": 840,
+          "height": 712
+        },
+        "de": {
+          "src": "/img/game-41/heroes/lava.png",
+          "width": 840,
+          "height": 712
+        },
+        "ru": {
+          "src": "/img/game-41/heroes/lava.png",
+          "width": 840,
+          "height": 712
+        },
+        "zh-cn": {
+          "src": "/img/game-41/heroes/lava.png",
+          "width": 840,
+          "height": 712
+        },
+        "ar": {
+          "src": "/img/game-41/heroes/lava.png",
+          "width": 840,
+          "height": 712
+        },
+        "nl": {
+          "src": "/img/game-41/heroes/lava.png",
+          "width": 840,
+          "height": 712
+        },
+        "fr": {
+          "src": "/img/game-41/heroes/lava.png",
+          "width": 840,
+          "height": 712
+        },
+        "id": {
+          "src": "/img/game-41/heroes/lava.png",
+          "width": 840,
+          "height": 712
+        },
+        "it": {
+          "src": "/img/game-41/heroes/lava.png",
+          "width": 840,
+          "height": 712
+        },
+        "pl": {
+          "src": "/img/game-41/heroes/lava.png",
+          "width": 840,
+          "height": 712
+        },
+        "pt": {
+          "src": "/img/game-41/heroes/lava.png",
+          "width": 840,
+          "height": 712
+        },
+        "es": {
+          "src": "/img/game-41/heroes/lava.png",
+          "width": 840,
+          "height": 712
+        },
+        "sv": {
+          "src": "/img/game-41/heroes/lava.png",
+          "width": 840,
+          "height": 712
+        },
+        "th": {
+          "src": "/img/game-41/heroes/lava.png",
+          "width": 840,
+          "height": 712
+        },
+        "tr": {
+          "src": "/img/game-41/heroes/lava.png",
+          "width": 840,
+          "height": 712
+        },
+        "vi": {
+          "src": "/img/game-41/heroes/lava.png",
+          "width": 840,
+          "height": 712
+        },
+        "ms": {
+          "src": "/img/game-41/heroes/lava.png",
+          "width": 840,
+          "height": 712
+        },
+        "nb": {
+          "src": "/img/game-41/heroes/lava.png",
+          "width": 840,
+          "height": 712
+        }
+      }
     }
   ]
 }

@@ -3,12 +3,150 @@
   "reviewedOn": "2026-11-05",
   "baseline": "c0cd3a3aea12e5e16550c36e0f77b63846d13948",
   "retainedBasePolicy": "Preserve the 28 existing hero identities; retained publication is not a new independent verification of live availability in every State.",
-  "newPublished": [{"id":"lava","clientId":25300242,"rarity":"X-SSR","addedOn":"2026-11-05","releaseEvidence":["https://tilesurvivegame.com/en/blog/1181","https://tilesurvivegame.com/en/blog/1198"],"availability":"State progression; no universal release date asserted"}],
-  "heldForms": ["chef-ken-promoted","freya-promoted","eva-promoted","travis-promoted","lucky-promoted","sarge-promoted"],
+  "newPublished": [
+    {
+      "id": "lava",
+      "clientId": 25300242,
+      "rarity": "X-SSR",
+      "addedOn": "2026-11-05",
+      "releaseEvidence": [
+        "https://tilesurvivegame.com/en/blog/1181",
+        "https://tilesurvivegame.com/en/blog/1198"
+      ],
+      "availability": "State progression; no universal release date asserted"
+    }
+  ],
+  "heldForms": [
+    "chef-ken-promoted",
+    "freya-promoted",
+    "eva-promoted",
+    "travis-promoted",
+    "lucky-promoted",
+    "sarge-promoted"
+  ],
   "heldFormReason": "The retained client explicitly defines each relationship. Named live release and applicable State conditions have not been independently established. Eva requires client version 2.6.800 and has no joined promotion group in this corpus.",
   "pending": [
-    {"id":"furiosa","sourceName":"Furiosa","status":"announced-and-hero-screen-documented; core-record-missing","sources":["https://tilesurvivegame.com/en/blog/1198","https://tilesurvivegame.com/en/blog/1206"]},
-    {"id":"alita","sourceName":"Alita","status":"officially-in-development-as-of-2026-10-30; release-and-core-record-missing","sources":["https://tilesurvivegame.com/en/blog/1213"]}
+    {
+      "id": "furiosa",
+      "sourceName": "Furiosa",
+      "status": "announced-and-hero-screen-documented; core-record-missing",
+      "sources": [
+        "https://tilesurvivegame.com/en/blog/1198",
+        "https://tilesurvivegame.com/en/blog/1206"
+      ],
+      "clientLanguageEvidence": {
+        "key": "iap_legendaryhero_furiosa_title",
+        "gameVersion": "2.6.200",
+        "reviewedOn": "2026-11-05",
+        "kind": "retained-purchase-title-only",
+        "notEvidenceOf": [
+          "hero-core-id",
+          "skills",
+          "rarity",
+          "live-release"
+        ],
+        "sources": [
+          {
+            "cohort": "ingame-apk-de",
+            "jsonSHA256": "516ea20886c914df24013300ce3f2ebb25af51921e29fc097099289b0ed0ff59",
+            "value": "SSR-Held: Furiosa"
+          },
+          {
+            "cohort": "ingame-apk-en",
+            "jsonSHA256": "a469fc698e0b031cdae6f824b5bd4f38e6d04a04b3df7235c305700908ce1e6e",
+            "value": "SSR Hero: Furiosa"
+          },
+          {
+            "cohort": "ingame-apk-es",
+            "jsonSHA256": "942b0e19ab80dc7258b4fd3513a921f76bd9ae78960b5486ccdb49d685a5b724",
+            "value": "Héroe SSR: Furiosa"
+          },
+          {
+            "cohort": "ingame-apk-fr",
+            "jsonSHA256": "34307eb76e75f7ff5730fe779523544a947b8f28ef80e16a2902f758a7afd691",
+            "value": "Héroïne SSR : Furiosa"
+          },
+          {
+            "cohort": "ingame-apk-id",
+            "jsonSHA256": "f5c67c91edda155a19399ea8dcb1dccc6c31e903115c8726eff2889d2ead19aa",
+            "value": "Hero SSR: Furiosa"
+          },
+          {
+            "cohort": "ingame-apk-it",
+            "jsonSHA256": "f28ea5d4faa893d31cd2140f50dc82528c21d76d80504691529a705653bdf04a",
+            "value": "Eroe SSR: Furiosa"
+          },
+          {
+            "cohort": "ingame-apk-ja",
+            "jsonSHA256": "70df0aceef8d75b26afd07aba081268ce0646f1896d15cbc57f786c90329227c",
+            "value": "SSR英雄・フュリオサ"
+          },
+          {
+            "cohort": "ingame-apk-ko",
+            "jsonSHA256": "b01059f83a47815f30d3adbfe06d42ca028979fc75f4414bfbe8e5e7bcafa7c2",
+            "value": "SSR 영웅 퓨리오사"
+          },
+          {
+            "cohort": "ingame-apk-my",
+            "jsonSHA256": "b47036eebd4a43648c5275fa1fdd4a7bf3b336d3389db3ff3f8cfb999a0ce212",
+            "value": "Wira SSR: Furiosa"
+          },
+          {
+            "cohort": "ingame-apk-nl",
+            "jsonSHA256": "dc793e75098b484d010f783be92ca8a665ad799be0d8a2dfa5969c9864443560",
+            "value": "Super-superzeldzame held: Furiosa"
+          },
+          {
+            "cohort": "ingame-apk-pl",
+            "jsonSHA256": "f4afefbef2fd9cf1d94f411495934af7ee88237b221a3e75d56daa3001e6fd6f",
+            "value": "Bohater SSR: Furiosa"
+          },
+          {
+            "cohort": "ingame-apk-pt",
+            "jsonSHA256": "b21be4d1d138636a090975a0b0f2c59f0e42eb4c5b20e2addc7e835dc2d70b28",
+            "value": "Heroína SSR: Furiosa"
+          },
+          {
+            "cohort": "ingame-apk-ru",
+            "jsonSHA256": "f91a9942e30896d9a05d5b5364dbe6be35b4b6923b602bf10eada6e83223f907",
+            "value": "SSR-герой: Фуриоса"
+          },
+          {
+            "cohort": "ingame-apk-sv",
+            "jsonSHA256": "0250384d1a8db784d66660628c26311301e5c4bda18ccefd7b19348b728a0ca3",
+            "value": "SSR-hjälte: Furiosa"
+          },
+          {
+            "cohort": "ingame-apk-th",
+            "jsonSHA256": "914c597fcce88bc692cac744ec41d9120896c308e2660a521eb482b5e9aa1cc7",
+            "value": "ฮีโร่ SSR: เฟอริโอซา"
+          },
+          {
+            "cohort": "ingame-apk-tr",
+            "jsonSHA256": "6329993dabd8cb2d230dcbb99f48795dc91326e63eead3f0a695d162a8fde2df",
+            "value": "SSR Kahraman: Furiosa"
+          },
+          {
+            "cohort": "ingame-apk-zh-CN",
+            "jsonSHA256": "9fd950738f3fe54f185dad5ffdf1e3424962472d7190fe022008eedaefacc2fd",
+            "value": "SSR英雄弗瑞奥萨"
+          },
+          {
+            "cohort": "ingame-apk-zh-TW",
+            "jsonSHA256": "6c1d31a2f1f2f489fc2818c4d0c8f90e84dcc247f658e1437741e3590d56a625",
+            "value": "SSR英雄弗瑞奧薩"
+          }
+        ]
+      }
+    },
+    {
+      "id": "alita",
+      "sourceName": "Alita",
+      "status": "officially-in-development-as-of-2026-10-30; release-and-core-record-missing",
+      "sources": [
+        "https://tilesurvivegame.com/en/blog/1213"
+      ]
+    }
   ],
   "imagePolicy": "Reuse retained portraits for existing identities only. No competitor image or newly extracted game portrait is published. Lava has an explicit no-verified-portrait placeholder."
 }
