@@ -155,6 +155,7 @@ function unifiedPowerPlantOwner(document, group) {
   return {host,script,renderer,anchors};
 }
 function localizePage(source, locale, group, groups, translator) {
+  if(source.includes('data-hero-atlas-owned'))require('./build-hero-atlas').validateOwnership(source,'en',group.routes.en);
   if(source.includes('data-v3-platform'))require('./build-v3-platform').validateOwnership(source,'en',group.routes.en);
   const {document}=parseHTML(source), info=L.byCode.get(locale), t=contextualTranslator(locale,group,translator);
   const powerOwner=unifiedPowerPlantOwner(document,group);
@@ -172,10 +173,10 @@ function localizePage(source, locale, group, groups, translator) {
   document.documentElement.setAttribute('data-lang',locale);
   document.documentElement.setAttribute('dir',info.dir);
   const walker=document.createTreeWalker(document,4); const nodes=[]; let node;
-  while((node=walker.nextNode())) if(!node.parentElement?.closest('script,style,template,.ts3-language nav,.language-switcher,[data-v3-owned]') && !powerOwner?.host.contains(node)) nodes.push(node);
+  while((node=walker.nextNode())) if(!node.parentElement?.closest('script,style,template,.ts3-language nav,.language-switcher,[data-v3-owned],[data-hero-atlas-owned]') && !powerOwner?.host.contains(node)) nodes.push(node);
   for (const n of nodes) n.data=t(n.data,group.file+':text:'+n.parentElement?.tagName);
   for (const el of document.querySelectorAll('*')) {
-    if(el.closest('[data-v3-owned]'))continue;
+    if(el.closest('[data-v3-owned],[data-hero-atlas-owned]'))continue;
     if(powerOwner?.host.contains(el))continue;
     if(el.getAttribute('data-lang')==='en')el.setAttribute('data-lang',locale);
     for (const attr of attrs) if(el.hasAttribute(attr))el.setAttribute(attr,t(el.getAttribute(attr),group.file+':'+attr));
@@ -188,7 +189,7 @@ function localizePage(source, locale, group, groups, translator) {
     }
   }
   for(const script of document.querySelectorAll('script[type="application/json"],script[type="application/ld+json"]')) {
-    if(script.closest('[data-v3-owned]'))continue;
+    if(script.closest('[data-v3-owned],[data-hero-atlas-owned]'))continue;
     const value=JSON.parse(script.textContent);
     const translated=L.localizeJSON(value,locale,t,groups,group.file+':'+(script.id||'json'),'',/^(?:ts3|event-calendar)-copy$/.test(script.id));
     // Building calculators read this display configuration at runtime. Keep
@@ -209,7 +210,7 @@ function localizePage(source, locale, group, groups, translator) {
     for(const anchor of [...powerOwner.anchors].reverse())if(!replacement.querySelector('[id="'+anchor.id+'"]'))replacement.prepend(anchor);
     powerOwner.host.replaceWith(replacement);
   }
-  for(const script of document.querySelectorAll('script:not([src])')) if(!script.type?.includes('json')&&!script.closest('[data-v3-owned]'))script.textContent=inlineProgram(script.textContent,locale,t,group.file);
+  for(const script of document.querySelectorAll('script:not([src])')) if(!script.type?.includes('json')&&!script.closest('[data-v3-owned],[data-hero-atlas-owned]'))script.textContent=inlineProgram(script.textContent,locale,t,group.file);
   const canonical=document.querySelector('link[rel="canonical"]');
   if(canonical)canonical.href=L.publicOrigin+group.routes[locale];
   return document;
@@ -281,7 +282,12 @@ function enhance(document, locale, group, available, ui, {preview=false}={}) {
     document.documentElement.dataset.translationStatus='preview-unpublished';
   }
   const serialized='<!doctype html>\n'+document.documentElement.outerHTML+'\n';
-  return document.documentElement.hasAttribute('data-v3-platform')?require('./build-v3-platform').project(serialized,locale,group.routes[locale]):serialized;
+  const projected=document.documentElement.hasAttribute('data-v3-platform')?require('./build-v3-platform').project(serialized,locale,group.routes[locale]):serialized;
+  if(document.querySelector('main')&&/^\/[^/]+\/heroes\//.test(group.routes[locale])){
+    const atlas=require('./build-hero-atlas');
+    if(atlas.isOwnedRoute(group.routes[locale]))return atlas.project(projected,locale,group.routes[locale]);
+  }
+  return projected;
 }
 function build({locales,stage=STAGE,publish=false}={}) {
   const groups=L.routeGroups(), targets=locales||L.registry.locales.filter(x=>!L.existing.has(x.code)).map(x=>x.code);

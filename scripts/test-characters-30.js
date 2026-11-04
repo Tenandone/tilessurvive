@@ -1,4 +1,4 @@
-const fs=require('fs'),path=require('path'),{execFileSync}=require('child_process'),{parseHTML}=require('linkedom');
+const fs=require('fs'),path=require('path'),crypto=require('crypto'),{execFileSync}=require('child_process'),{parseHTML}=require('linkedom');
 const root=path.resolve(__dirname,'..'),languages=['ko','en','ja','ru','zh-tw'];
 const {expectedSkillText}=require('./ux-301-test-allowances');
 const delta=require('./foundation-40-test-allowances');
@@ -7,16 +7,24 @@ const petIds=require('../data/companions.json').pets.map(p=>p.id),data=require('
 let checks=0;const errors=[];
 function check(value,message){checks++;if(!value)errors.push(message);}
 const norm=s=>s.trim().replace(/\s+/g,' ');
+const characterRuntime='/js/characters-30.js?v='+crypto.createHash('sha256').update(fs.readFileSync(path.join(root,'js/characters-30.js'))).digest('hex').slice(0,12);
 const parse=s=>parseHTML(s).document;
 const load=route=>parse(fs.readFileSync(path.join(root,route,'index.html'),'utf8'));
 function rows(d,file){const a=[...d.querySelectorAll('main table tr')].map(n=>[...n.querySelectorAll('th,td')].map(c=>norm(c.textContent)));return (file?delta.expectedRows(a,file):a).map(c=>c.join('|'));}
 for(const lang of languages){
  const directory=load(lang+'/heroes');
- const cards=[...directory.querySelectorAll('.ts3-roster-card')];
- check(cards.length===28,lang+': 27 original heroes plus Dave');
- check(new Set(cards.map(c=>c.dataset.characterId)).size===28,lang+': unique heroes');
- check(cards.filter(c=>c.dataset.characterId==='dave').length===1,lang+': one approved Dave card');
- const routes=cards.filter(c=>c.dataset.characterId!=='dave').map(c=>(c.matches('a')?c:c.querySelector('a[href]')).getAttribute('href').slice(1,-1));
+ const cards=[...directory.querySelectorAll('.hero-atlas-card')],published=cards.filter(c=>c.dataset.publication==='published'),held=cards.filter(c=>c.dataset.publication==='held');
+ check(cards.length===35,lang+': 29 published identities plus six explicitly held promoted forms');
+ check(new Set(cards.map(c=>c.dataset.atlasId)).size===35,lang+': unique forms');
+ check(new Set(cards.map(c=>c.dataset.identity)).size===29,lang+': unique hero identities');
+ check(published.length===29&&published.every(c=>c.dataset.form==='base'),lang+': published base identities');
+ check(held.length===6&&held.every(c=>c.dataset.form==='promoted'),lang+': promoted release verification remains held');
+ check(published.filter(c=>c.dataset.identity==='dave').length===1,lang+': one approved Dave card');
+ check(published.filter(c=>c.dataset.identity==='lava').length===1,lang+': one approved Lava card');
+ // Keep the original 27 heroes and seven pets in the historical preservation
+ // checks. Lava is new; held variants link to sections, not invented pages.
+ const routes=published.filter(c=>!['dave','lava'].includes(c.dataset.identity)).map(c=>c.querySelector('[data-atlas-detail]').getAttribute('href').slice(1,-1));
+ check(routes.length===27,lang+': all 27 historical hero detail pages remain covered');
  routes.push(...petIds.map(id=>lang+'/database/pet-system/'+id));
  for(const route of routes){
   const d=load(route),main=d.querySelector('main');
@@ -24,7 +32,8 @@ for(const lang of languages){
   check(!!main.querySelector('.ts3-character-stage'),route+': stage');
   check(d.querySelectorAll('main h1').length===1,route+': single h1');
   check(d.querySelectorAll('link[href="/css/characters-30.css"]').length===1,route+': one stylesheet');
-  check(d.querySelectorAll('script[src="/js/characters-30.js"]').length===1,route+': one enhancement');
+  const enhancements=[...d.querySelectorAll('script[src]')].filter(n=>n.getAttribute('src').split('?')[0]==='/js/characters-30.js');
+  check(enhancements.length===1&&enhancements[0].getAttribute('src')===characterRuntime,route+': one enhancement with the exact current runtime hash');
   check(d.querySelector('link[rel=canonical]')?.href===old.querySelector('link[rel=canonical]')?.href,route+': canonical preserved');
   const currentRows=rows(d);
   for(const row of rows(old,route+'/index.html'))check(currentRows.includes(row),route+': original table row with exact reviewed label correction '+row.slice(0,80));

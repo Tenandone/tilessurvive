@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "reviewedOn": "2026-11-05",
+  "baseline": "c0cd3a3aea12e5e16550c36e0f77b63846d13948",
+  "retainedBasePolicy": "Preserve the 28 existing hero identities; retained publication is not a new independent verification of live availability in every State.",
+  "newPublished": [{"id":"lava","clientId":25300242,"rarity":"X-SSR","addedOn":"2026-11-05","releaseEvidence":["https://tilesurvivegame.com/en/blog/1181","https://tilesurvivegame.com/en/blog/1198"],"availability":"State progression; no universal release date asserted"}],
+  "heldForms": ["chef-ken-promoted","freya-promoted","eva-promoted","travis-promoted","lucky-promoted","sarge-promoted"],
+  "heldFormReason": "The retained client explicitly defines each relationship. Named live release and applicable State conditions have not been independently established. Eva requires client version 2.6.800 and has no joined promotion group in this corpus.",
+  "pending": [
+    {"id":"furiosa","sourceName":"Furiosa","status":"announced-and-hero-screen-documented; core-record-missing","sources":["https://tilesurvivegame.com/en/blog/1198","https://tilesurvivegame.com/en/blog/1206"]},
+    {"id":"alita","sourceName":"Alita","status":"officially-in-development-as-of-2026-10-30; release-and-core-record-missing","sources":["https://tilesurvivegame.com/en/blog/1213"]}
+  ],
+  "imagePolicy": "Reuse retained portraits for existing identities only. No competitor image or newly extracted game portrait is published. Lava has an explicit no-verified-portrait placeholder."
+}

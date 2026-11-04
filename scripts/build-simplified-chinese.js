@@ -256,21 +256,27 @@ function featurePayloads(document,convert,route) {
   }
   return features;
 }
-function build() {
-  assert.equal(L.readJSON(path.join(L.ROOT,'node_modules/opencc-js/package.json')).version,'1.4.2','OpenCC version changed; review conversion first');
-  const groups=L.routeGroups(),converter=createConverter(),router=makeRouter(groups),ui=L.readJSON(path.join(L.ROOT,'data/i18n/ui/zh-cn.json'));
-  assert.equal(groups.length,120);assert.ok(ui?.copy,'Simplified Chinese UI is required');
-  const pages=[],outputs=[],available=[...L.existing,TARGET];
-  let numericJSONLeaves=0;
-  for(const group of groups) {
-    const sourceFile=group.routes['zh-tw'].slice(1)+'index.html', source=fs.readFileSync(path.join(L.ROOT,sourceFile),'utf8');
+function validateRouteManifest(groups) {
+  const ids=groups.map(group=>group.id);
+  assert.equal(new Set(ids).size,ids.length,'Duplicate canonical translation route');
+  assert.equal(ids.length,121,'The reviewed atlas release adds only one canonical route');
+  assert(ids.includes('heroes/lava/'),'Missing reviewed Lava detail route');
+  assert.equal(L.digest(JSON.stringify(ids.filter(id=>id!=='heroes/lava/').sort())),'a4bd34aedfa52874c8c2dcd2a27ee3ba346fb876bfe3df8ccbfa293b586882b7','The original 120 canonical routes must remain exact');
+  return true;
+}
+// Pure page projection shared by staging and focused owner-regeneration tests.
+function localizePage(source,group,groups,{converter=createConverter(),router=makeRouter(groups),ui=L.readJSON(path.join(L.ROOT,'data/i18n/ui/zh-cn.json')),available=[...L.existing,TARGET]}={}) {
+    const sourceFile=group.routes['zh-tw'].slice(1)+'index.html';
+    if(source.includes('data-hero-atlas-owned'))require('./build-hero-atlas').validateOwnership(source,'zh-tw',group.routes['zh-tw']);
+    let numericJSONLeaves=0;
     const {document}=parseHTML(source),beforeIds=[...document.querySelectorAll('[id]')].map(e=>e.id),beforeMedia=[...document.querySelectorAll('img,iframe,video,source')].map(e=>e.getAttribute('src'));
     const protectedExternal=[...document.querySelectorAll('[href],[src]')].flatMap(e=>['href','src'].filter(a=>/^https?:/.test(e.getAttribute(a)||'')&&!e.getAttribute(a).startsWith(L.publicOrigin)).map(a=>[e.tagName,a,e.getAttribute(a)]));
     const convert=(v,where)=>converter.convert(v,sourceFile+':'+where),walker=document.createTreeWalker(document,4),nodes=[];let node;
-    while((node=walker.nextNode()))if(!node.parentElement?.closest('script,style,.ts3-language nav,.language-switcher'))nodes.push(node);
+    while((node=walker.nextNode()))if(!node.parentElement?.closest('script,style,.ts3-language nav,.language-switcher,[data-hero-atlas-owned]'))nodes.push(node);
     for(const n of nodes)n.data=convert(n.data,'text:'+n.parentElement?.tagName);
     document.documentElement.lang='zh-Hans';document.documentElement.setAttribute('data-lang',TARGET);document.documentElement.dir='ltr';
     for(const el of document.querySelectorAll('*')) {
+      if(el.closest('[data-hero-atlas-owned]'))continue;
       for(const attr of attributes)if(el.hasAttribute(attr))el.setAttribute(attr,convert(el.getAttribute(attr),attr));
       for(const attr of ['href','action','data-search-url'])if(el.hasAttribute(attr)&&!el.matches('link[rel="alternate"],a[hreflang],.ts3-language a[lang]'))el.setAttribute(attr,router.route(el.getAttribute(attr)));
       if(el.hasAttribute('lang')&&/^zh-(tw|hant)$/i.test(el.getAttribute('lang'))&&!el.matches('a'))el.setAttribute('lang','zh-Hans');
@@ -283,6 +289,7 @@ function build() {
       }
     }
     for(const script of document.querySelectorAll('script[type="application/json"],script[type="application/ld+json"]')) {
+      if(script.closest('[data-hero-atlas-owned]'))continue;
       const value=JSON.parse(script.textContent),translated=jsonConvert(value,convert,router.route,script.id||'json');
       if(script.hasAttribute('data-building-system-model') && translated.locale)translated.locale.numberLocale='zh-CN';
       immutableJSON(value,translated,sourceFile+':'+(script.id||'json'));
@@ -294,7 +301,7 @@ function build() {
       script.textContent=JSON.stringify(translated).replace(/</g,'\\u003c');
     }
     let protectedPrograms=0,localizedPrograms=0;
-    for(const script of document.querySelectorAll('script:not([src])'))if(!script.type?.includes('json')) {
+    for(const script of document.querySelectorAll('script:not([src])'))if(!script.type?.includes('json')&&!script.closest('[data-hero-atlas-owned]')) {
       const before=script.textContent,after=inlineConvert(before,convert,router.route,sourceFile);
       script.textContent=after;if(before===after)protectedPrograms++;else localizedPrograms++;
     }
@@ -310,9 +317,22 @@ function build() {
     assert.deepEqual([...document.querySelectorAll('img,iframe,video,source')].map(e=>e.getAttribute('src')),beforeMedia,'Media changed: '+sourceFile);
     assert.deepEqual([...document.querySelectorAll('[href],[src]')].flatMap(e=>['href','src'].filter(a=>/^https?:/.test(e.getAttribute(a)||'')&&!e.getAttribute(a).startsWith(L.publicOrigin)).map(a=>[e.tagName,a,e.getAttribute(a)])),protectedExternal,'External services or ads changed: '+sourceFile);
     const features=featurePayloads(document,convert,router.route);
-    const html=enhance(document,TARGET,group,available,{...ui,featureCopies:{...features,...ui.featureCopies}},{preview:true}),output=path.join(STAGE,group.routes[TARGET].slice('/zh-cn/'.length),'index.html');
+    const html=enhance(document,TARGET,group,available,{...ui,featureCopies:{...features,...ui.featureCopies}},{preview:true});
+    return {html,sourceFile,numericJSONLeaves,protectedPrograms,localizedPrograms,ids:beforeIds.length,media:beforeMedia.length,featureCopies:Object.keys(features)};
+}
+function build() {
+  assert.equal(L.readJSON(path.join(L.ROOT,'node_modules/opencc-js/package.json')).version,'1.4.2','OpenCC version changed; review conversion first');
+  const groups=L.routeGroups(),converter=createConverter(),router=makeRouter(groups),ui=L.readJSON(path.join(L.ROOT,'data/i18n/ui/zh-cn.json'));
+  validateRouteManifest(groups);assert.ok(ui?.copy,'Simplified Chinese UI is required');
+  const pages=[],outputs=[],available=[...L.existing,TARGET];
+  let numericJSONLeaves=0;
+  for(const group of groups) {
+    const sourceFile=group.routes['zh-tw'].slice(1)+'index.html',source=fs.readFileSync(path.join(L.ROOT,sourceFile),'utf8');
+    const converted=localizePage(source,group,groups,{converter,router,ui,available}),{html,...stats}=converted;
+    numericJSONLeaves+=converted.numericJSONLeaves;
+    const output=path.join(STAGE,group.routes[TARGET].slice('/zh-cn/'.length),'index.html');
     assert.ok(output.startsWith(STAGE+path.sep),'Outside staging destination');
-    outputs.push({output,html});pages.push({source:sourceFile,target:group.routes[TARGET],sourceSHA256:L.digest(source),outputSHA256:L.digest(html),protectedPrograms,localizedPrograms,ids:beforeIds.length,media:beforeMedia.length,featureCopies:Object.keys(features),validation:'pass'});
+    outputs.push({output,html});pages.push({source:sourceFile,target:group.routes[TARGET],sourceSHA256:L.digest(source),outputSHA256:L.digest(html),protectedPrograms:stats.protectedPrograms,localizedPrograms:stats.localizedPrograms,ids:stats.ids,media:stats.media,featureCopies:stats.featureCopies,validation:'pass'});
   }
   const report={schemaVersion:1,locale:TARGET,mode:'private-preview',sourceLocale:'zh-tw',sourcePageCount:pages.length,opencc:{package:'opencc-js',version:'1.4.2',from:'tw',to:'cn'},
     policy:{sourceReadOnly:true,publicOutputsWritten:false,conversionAloneIsNotTranslationReview:true,nativeSpeakerReviewed:false,contextualReview:'Official entity differences, generic level exception, website regional terminology, inherited English labels and representative prose reviewed; browser runtime not verified in this generator.',
@@ -373,5 +393,5 @@ function selfTest() {
   assert.ok(model.groups.every(g=>g.search.includes(g.name.normalize('NFKC').toLocaleLowerCase())));cases++;
   console.log(JSON.stringify({selfTests:cases,pages:groups.length,schemaCount,jsonBlocks:originalJsonCount,traditionalVisibleResidues:0,status:'PASS'}));
 }
-module.exports={createConverter,jsonConvert,inlineConvert,makeRouter,numericSequence,build,selfTest};
+module.exports={createConverter,jsonConvert,inlineConvert,makeRouter,numericSequence,localizePage,validateRouteManifest,build,selfTest};
 if(require.main===module){if(process.argv.includes('--self-test'))selfTest();else build();}

@@ -186,8 +186,16 @@ function prepareV3Source(source, locale, route) {
   return {source:withoutOwned(tocChanged?document.toString():source),owned:true};
 }
 function render(source, translate, route) {
+  if(source.includes('data-hero-atlas-owned'))require('./build-hero-atlas').validateOwnership(source,'en','/en/'+route.replace(/index\.html$/,''));
   const v3=prepareV3Source(source,'en',route);source=v3.source;
-  const finishV3=html=>v3.owned?require('./build-v3-platform').project(html,'de','/de/'+route.replace(/index\.html$/,'')):html;
+  const finishV3=html=>{
+    const target='/de/'+route.replace(/index\.html$/,''),projected=v3.owned?require('./build-v3-platform').project(html,'de',target):html;
+    // The established renderer also accepts small translation-only fragments.
+    // Atlas projection requires a page; owned malformed pages already fail the
+    // source validator above rather than silently bypassing the owner.
+    if(route.startsWith('heroes/')&&parseHTML(projected).document.querySelector('main')){const atlas=require('./build-hero-atlas');if(atlas.isOwnedRoute(target))return atlas.project(projected,'de',target);}
+    return projected;
+  };
   // The retained Undine skill_2 key supersedes this page's old editorial name.
   // Accept the corrected EN source on subsequent builds without teaching the
   // global dictionary that Travis's distinct Wild Hunt is the same skill.
@@ -228,13 +236,13 @@ function render(source, translate, route) {
   // Display-localized cells retain their source lexemes for existing numeric readers.
   for(const cell of document.querySelectorAll('td')) cell.setAttribute('data-ts-original-value',cell.textContent.trim());
   function visit(node) {
-    if(node.nodeType===1&&node.hasAttribute('data-v3-owned'))return;
+    if(node.nodeType===1&&(node.hasAttribute('data-v3-owned')||node.hasAttribute('data-hero-atlas-owned')))return;
     if (node.nodeType===3 && !['SCRIPT','STYLE'].includes(node.parentNode?.tagName) && !node.parentElement?.closest('[lang]:not([lang="en"]):not(html),.ts3-language nav,.language-switcher')) node.textContent=translate(node.textContent,route+':text');
     for (const child of [...(node.childNodes||[])]) visit(child);
   }
   visit(document);
   for (const el of document.querySelectorAll('*')) {
-    if(el.closest('[data-v3-owned]'))continue;
+    if(el.closest('[data-v3-owned],[data-hero-atlas-owned]'))continue;
     for (const attr of ['alt','title','aria-label','placeholder','data-idle','data-results','data-error']) if(el.hasAttribute(attr)) el.setAttribute(attr,translate(el.getAttribute(attr),route+':'+attr));
     for (const attr of ['href','action','data-search-url']) if(el.hasAttribute(attr)) {
       if(el.matches('link[rel="alternate"],a[hreflang],.ts3-language a[lang]')) continue;
@@ -251,7 +259,7 @@ function render(source, translate, route) {
     }
   }
   for (const script of document.querySelectorAll('script[type="application/json"],script[type="application/ld+json"]')) {
-    if(script.closest('[data-v3-owned]'))continue;
+    if(script.closest('[data-v3-owned],[data-hero-atlas-owned]'))continue;
     // This is the complete equivalent-route map, not an EN-language content
     // dictionary. Every locale, including DE's own exact slug, must survive.
     if(script.id==='ts-locale-routes')continue;
@@ -261,7 +269,7 @@ function render(source, translate, route) {
     }
     script.textContent=JSON.stringify(localizeJSON(JSON.parse(script.textContent),translate,route+':json','',script.id==='ts3-copy'));
   }
-  for(const script of document.querySelectorAll('script:not([src])'))if(!script.type?.includes('json')&&!script.closest('[data-v3-owned]'))script.textContent=localizeProgram(script.textContent,translate,route);
+  for(const script of document.querySelectorAll('script:not([src])'))if(!script.type?.includes('json')&&!script.closest('[data-v3-owned],[data-hero-atlas-owned]'))script.textContent=localizeProgram(script.textContent,translate,route);
   // The canonical language routes are completed by the shared six-language finalizer.
   const langNav=document.querySelector('.ts3-language nav');
   if(langNav){for(const a of langNav.querySelectorAll('a')){if(a.lang==='de')a.remove();else a.removeAttribute('aria-current');}const a=document.createElement('a');a.href='/de/'+route.replace(/index\.html$/,'');a.lang='de';a.setAttribute('hreflang','de');a.textContent='Deutsch';a.setAttribute('aria-current','page');langNav.append(a);document.querySelector('.ts3-language summary').textContent='DE';}
@@ -283,6 +291,7 @@ function build({inventoryPath}={}) {
   const {translate,missing}=createTranslator(catalog,!!inventoryPath);
   const outputs=[];
   const inheritedRoutes=JSON.parse(fs.readFileSync(path.join(ROOT,'data/product-50/german-routes.json'),'utf8'));
+  if(fs.existsSync(path.join(ROOT,'en/heroes/lava/index.html'))&&!inheritedRoutes.includes('heroes/lava/index.html'))inheritedRoutes.push('heroes/lava/index.html');
   for(const route of inheritedRoutes) {
     // This route and its index entry are generated directly in all six languages.
     if(route==='events/calendar/index.html')continue;

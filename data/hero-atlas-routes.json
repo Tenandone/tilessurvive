@@ -1,0 +1,3757 @@
+{
+  "schemaVersion": 1,
+  "baseline": "c0cd3a3aea12e5e16550c36e0f77b63846d13948",
+  "heroes": [
+    {
+      "id": "lucky",
+      "routes": {
+        "en": "/en/heroes/lucky/",
+        "ko": "/ko/heroes/lucky/",
+        "ja": "/ja/heroes/lucky/",
+        "zh-tw": "/zh-tw/heroes/lucky/",
+        "de": "/de/heroes/lucky/",
+        "ru": "/ru/heroes/lucky/",
+        "zh-cn": "/zh-cn/heroes/lucky/",
+        "ar": "/ar/heroes/lucky/",
+        "nl": "/nl/heroes/lucky/",
+        "fr": "/fr/heroes/lucky/",
+        "id": "/id/heroes/lucky/",
+        "it": "/it/heroes/lucky/",
+        "pl": "/pl/heroes/lucky/",
+        "pt": "/pt/heroes/lucky/",
+        "es": "/es/heroes/lucky/",
+        "sv": "/sv/heroes/lucky/",
+        "th": "/th/heroes/lucky/",
+        "tr": "/tr/heroes/lucky/",
+        "vi": "/vi/heroes/lucky/",
+        "ms": "/ms/heroes/lucky/",
+        "nb": "/nb/heroes/lucky/"
+      },
+      "images": {
+        "en": {
+          "src": "/img/game-41/heroes/lucky.webp",
+          "width": 388,
+          "height": 712
+        },
+        "ko": {
+          "src": "/img/game-41/heroes/lucky.webp",
+          "width": 388,
+          "height": 712
+        },
+        "ja": {
+          "src": "/img/game-41/heroes/lucky.webp",
+          "width": 388,
+          "height": 712
+        },
+        "zh-tw": {
+          "src": "/img/game-41/heroes/lucky.webp",
+          "width": 388,
+          "height": 712
+        },
+        "de": {
+          "src": "/img/game-41/heroes/lucky.webp",
+          "width": 388,
+          "height": 712
+        },
+        "ru": {
+          "src": "/img/game-41/heroes/lucky.webp",
+          "width": 388,
+          "height": 712
+        },
+        "zh-cn": {
+          "src": "/img/game-41/heroes/lucky.webp",
+          "width": 388,
+          "height": 712
+        },
+        "ar": {
+          "src": "/img/game-41/heroes/lucky.webp",
+          "width": 388,
+          "height": 712
+        },
+        "nl": {
+          "src": "/img/game-41/heroes/lucky.webp",
+          "width": 388,
+          "height": 712
+        },
+        "fr": {
+          "src": "/img/game-41/heroes/lucky.webp",
+          "width": 388,
+          "height": 712
+        },
+        "id": {
+          "src": "/img/game-41/heroes/lucky.webp",
+          "width": 388,
+          "height": 712
+        },
+        "it": {
+          "src": "/img/game-41/heroes/lucky.webp",
+          "width": 388,
+          "height": 712
+        },
+        "pl": {
+          "src": "/img/game-41/heroes/lucky.webp",
+          "width": 388,
+          "height": 712
+        },
+        "pt": {
+          "src": "/img/game-41/heroes/lucky.webp",
+          "width": 388,
+          "height": 712
+        },
+        "es": {
+          "src": "/img/game-41/heroes/lucky.webp",
+          "width": 388,
+          "height": 712
+        },
+        "sv": {
+          "src": "/img/game-41/heroes/lucky.webp",
+          "width": 388,
+          "height": 712
+        },
+        "th": {
+          "src": "/img/game-41/heroes/lucky.webp",
+          "width": 388,
+          "height": 712
+        },
+        "tr": {
+          "src": "/img/game-41/heroes/lucky.webp",
+          "width": 388,
+          "height": 712
+        },
+        "vi": {
+          "src": "/img/game-41/heroes/lucky.webp",
+          "width": 388,
+          "height": 712
+        },
+        "ms": {
+          "src": "/img/game-41/heroes/lucky.webp",
+          "width": 388,
+          "height": 712
+        },
+        "nb": {
+          "src": "/img/game-41/heroes/lucky.webp",
+          "width": 388,
+          "height": 712
+        }
+      }
+    },
+    {
+      "id": "tony",
+      "routes": {
+        "en": "/en/heroes/tony/",
+        "ko": "/ko/heroes/tony/",
+        "ja": "/ja/heroes/tony/",
+        "zh-tw": "/zh-tw/heroes/tony/",
+        "de": "/de/heroes/tony/",
+        "ru": "/ru/heroes/tony/",
+        "zh-cn": "/zh-cn/heroes/tony/",
+        "ar": "/ar/heroes/tony/",
+        "nl": "/nl/heroes/tony/",
+        "fr": "/fr/heroes/tony/",
+        "id": "/id/heroes/tony/",
+        "it": "/it/heroes/tony/",
+        "pl": "/pl/heroes/tony/",
+        "pt": "/pt/heroes/tony/",
+        "es": "/es/heroes/tony/",
+        "sv": "/sv/heroes/tony/",
+        "th": "/th/heroes/tony/",
+        "tr": "/tr/heroes/tony/",
+        "vi": "/vi/heroes/tony/",
+        "ms": "/ms/heroes/tony/",
+        "nb": "/nb/heroes/tony/"
+      },
+      "images": {
+        "en": {
+          "src": "/img/game-41/heroes/tony.webp",
+          "width": 388,
+          "height": 712
+        },
+        "ko": {
+          "src": "/img/game-41/heroes/tony.webp",
+          "width": 388,
+          "height": 712
+        },
+        "ja": {
+          "src": "/img/game-41/heroes/tony.webp",
+          "width": 388,
+          "height": 712
+        },
+        "zh-tw": {
+          "src": "/img/game-41/heroes/tony.webp",
+          "width": 388,
+          "height": 712
+        },
+        "de": {
+          "src": "/img/game-41/heroes/tony.webp",
+          "width": 388,
+          "height": 712
+        },
+        "ru": {
+          "src": "/img/game-41/heroes/tony.webp",
+          "width": 388,
+          "height": 712
+        },
+        "zh-cn": {
+          "src": "/img/game-41/heroes/tony.webp",
+          "width": 388,
+          "height": 712
+        },
+        "ar": {
+          "src": "/img/game-41/heroes/tony.webp",
+          "width": 388,
+          "height": 712
+        },
+        "nl": {
+          "src": "/img/game-41/heroes/tony.webp",
+          "width": 388,
+          "height": 712
+        },
+        "fr": {
+          "src": "/img/game-41/heroes/tony.webp",
+          "width": 388,
+          "height": 712
+        },
+        "id": {
+          "src": "/img/game-41/heroes/tony.webp",
+          "width": 388,
+          "height": 712
+        },
+        "it": {
+          "src": "/img/game-41/heroes/tony.webp",
+          "width": 388,
+          "height": 712
+        },
+        "pl": {
+          "src": "/img/game-41/heroes/tony.webp",
+          "width": 388,
+          "height": 712
+        },
+        "pt": {
+          "src": "/img/game-41/heroes/tony.webp",
+          "width": 388,
+          "height": 712
+        },
+        "es": {
+          "src": "/img/game-41/heroes/tony.webp",
+          "width": 388,
+          "height": 712
+        },
+        "sv": {
+          "src": "/img/game-41/heroes/tony.webp",
+          "width": 388,
+          "height": 712
+        },
+        "th": {
+          "src": "/img/game-41/heroes/tony.webp",
+          "width": 388,
+          "height": 712
+        },
+        "tr": {
+          "src": "/img/game-41/heroes/tony.webp",
+          "width": 388,
+          "height": 712
+        },
+        "vi": {
+          "src": "/img/game-41/heroes/tony.webp",
+          "width": 388,
+          "height": 712
+        },
+        "ms": {
+          "src": "/img/game-41/heroes/tony.webp",
+          "width": 388,
+          "height": 712
+        },
+        "nb": {
+          "src": "/img/game-41/heroes/tony.webp",
+          "width": 388,
+          "height": 712
+        }
+      }
+    },
+    {
+      "id": "maddy",
+      "routes": {
+        "en": "/en/heroes/maddy/",
+        "ko": "/ko/heroes/maddy/",
+        "ja": "/ja/heroes/maddy/",
+        "zh-tw": "/zh-tw/heroes/maddy/",
+        "de": "/de/heroes/maddy/",
+        "ru": "/ru/heroes/maddy/",
+        "zh-cn": "/zh-cn/heroes/maddy/",
+        "ar": "/ar/heroes/maddy/",
+        "nl": "/nl/heroes/maddy/",
+        "fr": "/fr/heroes/maddy/",
+        "id": "/id/heroes/maddy/",
+        "it": "/it/heroes/maddy/",
+        "pl": "/pl/heroes/maddy/",
+        "pt": "/pt/heroes/maddy/",
+        "es": "/es/heroes/maddy/",
+        "sv": "/sv/heroes/maddy/",
+        "th": "/th/heroes/maddy/",
+        "tr": "/tr/heroes/maddy/",
+        "vi": "/vi/heroes/maddy/",
+        "ms": "/ms/heroes/maddy/",
+        "nb": "/nb/heroes/maddy/"
+      },
+      "images": {
+        "en": {
+          "src": "/img/game-41/heroes/maddy.webp",
+          "width": 388,
+          "height": 712
+        },
+        "ko": {
+          "src": "/img/game-41/heroes/maddy.webp",
+          "width": 388,
+          "height": 712
+        },
+        "ja": {
+          "src": "/img/game-41/heroes/maddy.webp",
+          "width": 388,
+          "height": 712
+        },
+        "zh-tw": {
+          "src": "/img/game-41/heroes/maddy.webp",
+          "width": 388,
+          "height": 712
+        },
+        "de": {
+          "src": "/img/game-41/heroes/maddy.webp",
+          "width": 388,
+          "height": 712
+        },
+        "ru": {
+          "src": "/img/game-41/heroes/maddy.webp",
+          "width": 388,
+          "height": 712
+        },
+        "zh-cn": {
+          "src": "/img/game-41/heroes/maddy.webp",
+          "width": 388,
+          "height": 712
+        },
+        "ar": {
+          "src": "/img/game-41/heroes/maddy.webp",
+          "width": 388,
+          "height": 712
+        },
+        "nl": {
+          "src": "/img/game-41/heroes/maddy.webp",
+          "width": 388,
+          "height": 712
+        },
+        "fr": {
+          "src": "/img/game-41/heroes/maddy.webp",
+          "width": 388,
+          "height": 712
+        },
+        "id": {
+          "src": "/img/game-41/heroes/maddy.webp",
+          "width": 388,
+          "height": 712
+        },
+        "it": {
+          "src": "/img/game-41/heroes/maddy.webp",
+          "width": 388,
+          "height": 712
+        },
+        "pl": {
+          "src": "/img/game-41/heroes/maddy.webp",
+          "width": 388,
+          "height": 712
+        },
+        "pt": {
+          "src": "/img/game-41/heroes/maddy.webp",
+          "width": 388,
+          "height": 712
+        },
+        "es": {
+          "src": "/img/game-41/heroes/maddy.webp",
+          "width": 388,
+          "height": 712
+        },
+        "sv": {
+          "src": "/img/game-41/heroes/maddy.webp",
+          "width": 388,
+          "height": 712
+        },
+        "th": {
+          "src": "/img/game-41/heroes/maddy.webp",
+          "width": 388,
+          "height": 712
+        },
+        "tr": {
+          "src": "/img/game-41/heroes/maddy.webp",
+          "width": 388,
+          "height": 712
+        },
+        "vi": {
+          "src": "/img/game-41/heroes/maddy.webp",
+          "width": 388,
+          "height": 712
+        },
+        "ms": {
+          "src": "/img/game-41/heroes/maddy.webp",
+          "width": 388,
+          "height": 712
+        },
+        "nb": {
+          "src": "/img/game-41/heroes/maddy.webp",
+          "width": 388,
+          "height": 712
+        }
+      }
+    },
+    {
+      "id": "rosie",
+      "routes": {
+        "en": "/en/heroes/rosie/",
+        "ko": "/ko/heroes/rosie/",
+        "ja": "/ja/heroes/rosie/",
+        "zh-tw": "/zh-tw/heroes/rosie/",
+        "de": "/de/heroes/rosie/",
+        "ru": "/ru/heroes/rosie/",
+        "zh-cn": "/zh-cn/heroes/rosie/",
+        "ar": "/ar/heroes/rosie/",
+        "nl": "/nl/heroes/rosie/",
+        "fr": "/fr/heroes/rosie/",
+        "id": "/id/heroes/rosie/",
+        "it": "/it/heroes/rosie/",
+        "pl": "/pl/heroes/rosie/",
+        "pt": "/pt/heroes/rosie/",
+        "es": "/es/heroes/rosie/",
+        "sv": "/sv/heroes/rosie/",
+        "th": "/th/heroes/rosie/",
+        "tr": "/tr/heroes/rosie/",
+        "vi": "/vi/heroes/rosie/",
+        "ms": "/ms/heroes/rosie/",
+        "nb": "/nb/heroes/rosie/"
+      },
+      "images": {
+        "en": {
+          "src": "/img/game-41/heroes/rosie.webp",
+          "width": 596,
+          "height": 712
+        },
+        "ko": {
+          "src": "/img/game-41/heroes/rosie.webp",
+          "width": 596,
+          "height": 712
+        },
+        "ja": {
+          "src": "/img/game-41/heroes/rosie.webp",
+          "width": 596,
+          "height": 712
+        },
+        "zh-tw": {
+          "src": "/img/game-41/heroes/rosie.webp",
+          "width": 596,
+          "height": 712
+        },
+        "de": {
+          "src": "/img/game-41/heroes/rosie.webp",
+          "width": 596,
+          "height": 712
+        },
+        "ru": {
+          "src": "/img/game-41/heroes/rosie.webp",
+          "width": 596,
+          "height": 712
+        },
+        "zh-cn": {
+          "src": "/img/game-41/heroes/rosie.webp",
+          "width": 596,
+          "height": 712
+        },
+        "ar": {
+          "src": "/img/game-41/heroes/rosie.webp",
+          "width": 596,
+          "height": 712
+        },
+        "nl": {
+          "src": "/img/game-41/heroes/rosie.webp",
+          "width": 596,
+          "height": 712
+        },
+        "fr": {
+          "src": "/img/game-41/heroes/rosie.webp",
+          "width": 596,
+          "height": 712
+        },
+        "id": {
+          "src": "/img/game-41/heroes/rosie.webp",
+          "width": 596,
+          "height": 712
+        },
+        "it": {
+          "src": "/img/game-41/heroes/rosie.webp",
+          "width": 596,
+          "height": 712
+        },
+        "pl": {
+          "src": "/img/game-41/heroes/rosie.webp",
+          "width": 596,
+          "height": 712
+        },
+        "pt": {
+          "src": "/img/game-41/heroes/rosie.webp",
+          "width": 596,
+          "height": 712
+        },
+        "es": {
+          "src": "/img/game-41/heroes/rosie.webp",
+          "width": 596,
+          "height": 712
+        },
+        "sv": {
+          "src": "/img/game-41/heroes/rosie.webp",
+          "width": 596,
+          "height": 712
+        },
+        "th": {
+          "src": "/img/game-41/heroes/rosie.webp",
+          "width": 596,
+          "height": 712
+        },
+        "tr": {
+          "src": "/img/game-41/heroes/rosie.webp",
+          "width": 596,
+          "height": 712
+        },
+        "vi": {
+          "src": "/img/game-41/heroes/rosie.webp",
+          "width": 596,
+          "height": 712
+        },
+        "ms": {
+          "src": "/img/game-41/heroes/rosie.webp",
+          "width": 596,
+          "height": 712
+        },
+        "nb": {
+          "src": "/img/game-41/heroes/rosie.webp",
+          "width": 596,
+          "height": 712
+        }
+      }
+    },
+    {
+      "id": "nikola",
+      "routes": {
+        "en": "/en/heroes/nikola/",
+        "ko": "/ko/heroes/nikola/",
+        "ja": "/ja/heroes/nikola/",
+        "zh-tw": "/zh-tw/heroes/nikola/",
+        "de": "/de/heroes/nikola/",
+        "ru": "/ru/heroes/nikola/",
+        "zh-cn": "/zh-cn/heroes/nikola/",
+        "ar": "/ar/heroes/nikola/",
+        "nl": "/nl/heroes/nikola/",
+        "fr": "/fr/heroes/nikola/",
+        "id": "/id/heroes/nikola/",
+        "it": "/it/heroes/nikola/",
+        "pl": "/pl/heroes/nikola/",
+        "pt": "/pt/heroes/nikola/",
+        "es": "/es/heroes/nikola/",
+        "sv": "/sv/heroes/nikola/",
+        "th": "/th/heroes/nikola/",
+        "tr": "/tr/heroes/nikola/",
+        "vi": "/vi/heroes/nikola/",
+        "ms": "/ms/heroes/nikola/",
+        "nb": "/nb/heroes/nikola/"
+      },
+      "images": {
+        "en": {
+          "src": "/img/game-41/heroes/nikola.webp",
+          "width": 596,
+          "height": 712
+        },
+        "ko": {
+          "src": "/img/game-41/heroes/nikola.webp",
+          "width": 596,
+          "height": 712
+        },
+        "ja": {
+          "src": "/img/game-41/heroes/nikola.webp",
+          "width": 596,
+          "height": 712
+        },
+        "zh-tw": {
+          "src": "/img/game-41/heroes/nikola.webp",
+          "width": 596,
+          "height": 712
+        },
+        "de": {
+          "src": "/img/game-41/heroes/nikola.webp",
+          "width": 596,
+          "height": 712
+        },
+        "ru": {
+          "src": "/img/game-41/heroes/nikola.webp",
+          "width": 596,
+          "height": 712
+        },
+        "zh-cn": {
+          "src": "/img/game-41/heroes/nikola.webp",
+          "width": 596,
+          "height": 712
+        },
+        "ar": {
+          "src": "/img/game-41/heroes/nikola.webp",
+          "width": 596,
+          "height": 712
+        },
+        "nl": {
+          "src": "/img/game-41/heroes/nikola.webp",
+          "width": 596,
+          "height": 712
+        },
+        "fr": {
+          "src": "/img/game-41/heroes/nikola.webp",
+          "width": 596,
+          "height": 712
+        },
+        "id": {
+          "src": "/img/game-41/heroes/nikola.webp",
+          "width": 596,
+          "height": 712
+        },
+        "it": {
+          "src": "/img/game-41/heroes/nikola.webp",
+          "width": 596,
+          "height": 712
+        },
+        "pl": {
+          "src": "/img/game-41/heroes/nikola.webp",
+          "width": 596,
+          "height": 712
+        },
+        "pt": {
+          "src": "/img/game-41/heroes/nikola.webp",
+          "width": 596,
+          "height": 712
+        },
+        "es": {
+          "src": "/img/game-41/heroes/nikola.webp",
+          "width": 596,
+          "height": 712
+        },
+        "sv": {
+          "src": "/img/game-41/heroes/nikola.webp",
+          "width": 596,
+          "height": 712
+        },
+        "th": {
+          "src": "/img/game-41/heroes/nikola.webp",
+          "width": 596,
+          "height": 712
+        },
+        "tr": {
+          "src": "/img/game-41/heroes/nikola.webp",
+          "width": 596,
+          "height": 712
+        },
+        "vi": {
+          "src": "/img/game-41/heroes/nikola.webp",
+          "width": 596,
+          "height": 712
+        },
+        "ms": {
+          "src": "/img/game-41/heroes/nikola.webp",
+          "width": 596,
+          "height": 712
+        },
+        "nb": {
+          "src": "/img/game-41/heroes/nikola.webp",
+          "width": 596,
+          "height": 712
+        }
+      }
+    },
+    {
+      "id": "ray",
+      "routes": {
+        "en": "/en/heroes/ray/",
+        "ko": "/ko/heroes/ray/",
+        "ja": "/ja/heroes/ray/",
+        "zh-tw": "/zh-tw/heroes/ray/",
+        "de": "/de/heroes/ray/",
+        "ru": "/ru/heroes/ray/",
+        "zh-cn": "/zh-cn/heroes/ray/",
+        "ar": "/ar/heroes/ray/",
+        "nl": "/nl/heroes/ray/",
+        "fr": "/fr/heroes/ray/",
+        "id": "/id/heroes/ray/",
+        "it": "/it/heroes/ray/",
+        "pl": "/pl/heroes/ray/",
+        "pt": "/pt/heroes/ray/",
+        "es": "/es/heroes/ray/",
+        "sv": "/sv/heroes/ray/",
+        "th": "/th/heroes/ray/",
+        "tr": "/tr/heroes/ray/",
+        "vi": "/vi/heroes/ray/",
+        "ms": "/ms/heroes/ray/",
+        "nb": "/nb/heroes/ray/"
+      },
+      "images": {
+        "en": {
+          "src": "/img/game-41/heroes/ray.webp",
+          "width": 596,
+          "height": 712
+        },
+        "ko": {
+          "src": "/img/game-41/heroes/ray.webp",
+          "width": 596,
+          "height": 712
+        },
+        "ja": {
+          "src": "/img/game-41/heroes/ray.webp",
+          "width": 596,
+          "height": 712
+        },
+        "zh-tw": {
+          "src": "/img/game-41/heroes/ray.webp",
+          "width": 596,
+          "height": 712
+        },
+        "de": {
+          "src": "/img/game-41/heroes/ray.webp",
+          "width": 596,
+          "height": 712
+        },
+        "ru": {
+          "src": "/img/game-41/heroes/ray.webp",
+          "width": 596,
+          "height": 712
+        },
+        "zh-cn": {
+          "src": "/img/game-41/heroes/ray.webp",
+          "width": 596,
+          "height": 712
+        },
+        "ar": {
+          "src": "/img/game-41/heroes/ray.webp",
+          "width": 596,
+          "height": 712
+        },
+        "nl": {
+          "src": "/img/game-41/heroes/ray.webp",
+          "width": 596,
+          "height": 712
+        },
+        "fr": {
+          "src": "/img/game-41/heroes/ray.webp",
+          "width": 596,
+          "height": 712
+        },
+        "id": {
+          "src": "/img/game-41/heroes/ray.webp",
+          "width": 596,
+          "height": 712
+        },
+        "it": {
+          "src": "/img/game-41/heroes/ray.webp",
+          "width": 596,
+          "height": 712
+        },
+        "pl": {
+          "src": "/img/game-41/heroes/ray.webp",
+          "width": 596,
+          "height": 712
+        },
+        "pt": {
+          "src": "/img/game-41/heroes/ray.webp",
+          "width": 596,
+          "height": 712
+        },
+        "es": {
+          "src": "/img/game-41/heroes/ray.webp",
+          "width": 596,
+          "height": 712
+        },
+        "sv": {
+          "src": "/img/game-41/heroes/ray.webp",
+          "width": 596,
+          "height": 712
+        },
+        "th": {
+          "src": "/img/game-41/heroes/ray.webp",
+          "width": 596,
+          "height": 712
+        },
+        "tr": {
+          "src": "/img/game-41/heroes/ray.webp",
+          "width": 596,
+          "height": 712
+        },
+        "vi": {
+          "src": "/img/game-41/heroes/ray.webp",
+          "width": 596,
+          "height": 712
+        },
+        "ms": {
+          "src": "/img/game-41/heroes/ray.webp",
+          "width": 596,
+          "height": 712
+        },
+        "nb": {
+          "src": "/img/game-41/heroes/ray.webp",
+          "width": 596,
+          "height": 712
+        }
+      }
+    },
+    {
+      "id": "beka",
+      "routes": {
+        "en": "/en/heroes/beka/",
+        "ko": "/ko/heroes/beka/",
+        "ja": "/ja/heroes/beka/",
+        "zh-tw": "/zh-tw/heroes/beka/",
+        "de": "/de/heroes/beka/",
+        "ru": "/ru/heroes/beka/",
+        "zh-cn": "/zh-cn/heroes/beka/",
+        "ar": "/ar/heroes/beka/",
+        "nl": "/nl/heroes/beka/",
+        "fr": "/fr/heroes/beka/",
+        "id": "/id/heroes/beka/",
+        "it": "/it/heroes/beka/",
+        "pl": "/pl/heroes/beka/",
+        "pt": "/pt/heroes/beka/",
+        "es": "/es/heroes/beka/",
+        "sv": "/sv/heroes/beka/",
+        "th": "/th/heroes/beka/",
+        "tr": "/tr/heroes/beka/",
+        "vi": "/vi/heroes/beka/",
+        "ms": "/ms/heroes/beka/",
+        "nb": "/nb/heroes/beka/"
+      },
+      "images": {
+        "en": {
+          "src": "/img/game-41/heroes/beka.webp",
+          "width": 388,
+          "height": 712
+        },
+        "ko": {
+          "src": "/img/game-41/heroes/beka.webp",
+          "width": 388,
+          "height": 712
+        },
+        "ja": {
+          "src": "/img/game-41/heroes/beka.webp",
+          "width": 388,
+          "height": 712
+        },
+        "zh-tw": {
+          "src": "/img/game-41/heroes/beka.webp",
+          "width": 388,
+          "height": 712
+        },
+        "de": {
+          "src": "/img/game-41/heroes/beka.webp",
+          "width": 388,
+          "height": 712
+        },
+        "ru": {
+          "src": "/img/game-41/heroes/beka.webp",
+          "width": 388,
+          "height": 712
+        },
+        "zh-cn": {
+          "src": "/img/game-41/heroes/beka.webp",
+          "width": 388,
+          "height": 712
+        },
+        "ar": {
+          "src": "/img/game-41/heroes/beka.webp",
+          "width": 388,
+          "height": 712
+        },
+        "nl": {
+          "src": "/img/game-41/heroes/beka.webp",
+          "width": 388,
+          "height": 712
+        },
+        "fr": {
+          "src": "/img/game-41/heroes/beka.webp",
+          "width": 388,
+          "height": 712
+        },
+        "id": {
+          "src": "/img/game-41/heroes/beka.webp",
+          "width": 388,
+          "height": 712
+        },
+        "it": {
+          "src": "/img/game-41/heroes/beka.webp",
+          "width": 388,
+          "height": 712
+        },
+        "pl": {
+          "src": "/img/game-41/heroes/beka.webp",
+          "width": 388,
+          "height": 712
+        },
+        "pt": {
+          "src": "/img/game-41/heroes/beka.webp",
+          "width": 388,
+          "height": 712
+        },
+        "es": {
+          "src": "/img/game-41/heroes/beka.webp",
+          "width": 388,
+          "height": 712
+        },
+        "sv": {
+          "src": "/img/game-41/heroes/beka.webp",
+          "width": 388,
+          "height": 712
+        },
+        "th": {
+          "src": "/img/game-41/heroes/beka.webp",
+          "width": 388,
+          "height": 712
+        },
+        "tr": {
+          "src": "/img/game-41/heroes/beka.webp",
+          "width": 388,
+          "height": 712
+        },
+        "vi": {
+          "src": "/img/game-41/heroes/beka.webp",
+          "width": 388,
+          "height": 712
+        },
+        "ms": {
+          "src": "/img/game-41/heroes/beka.webp",
+          "width": 388,
+          "height": 712
+        },
+        "nb": {
+          "src": "/img/game-41/heroes/beka.webp",
+          "width": 388,
+          "height": 712
+        }
+      }
+    },
+    {
+      "id": "laila",
+      "routes": {
+        "en": "/en/heroes/laila/",
+        "ko": "/ko/heroes/laila/",
+        "ja": "/ja/heroes/laila/",
+        "zh-tw": "/zh-tw/heroes/laila/",
+        "de": "/de/heroes/laila/",
+        "ru": "/ru/heroes/laila/",
+        "zh-cn": "/zh-cn/heroes/laila/",
+        "ar": "/ar/heroes/laila/",
+        "nl": "/nl/heroes/laila/",
+        "fr": "/fr/heroes/laila/",
+        "id": "/id/heroes/laila/",
+        "it": "/it/heroes/laila/",
+        "pl": "/pl/heroes/laila/",
+        "pt": "/pt/heroes/laila/",
+        "es": "/es/heroes/laila/",
+        "sv": "/sv/heroes/laila/",
+        "th": "/th/heroes/laila/",
+        "tr": "/tr/heroes/laila/",
+        "vi": "/vi/heroes/laila/",
+        "ms": "/ms/heroes/laila/",
+        "nb": "/nb/heroes/laila/"
+      },
+      "images": {
+        "en": {
+          "src": "/img/game-41/heroes/laila.webp",
+          "width": 596,
+          "height": 712
+        },
+        "ko": {
+          "src": "/img/game-41/heroes/laila.webp",
+          "width": 596,
+          "height": 712
+        },
+        "ja": {
+          "src": "/img/game-41/heroes/laila.webp",
+          "width": 596,
+          "height": 712
+        },
+        "zh-tw": {
+          "src": "/img/game-41/heroes/laila.webp",
+          "width": 596,
+          "height": 712
+        },
+        "de": {
+          "src": "/img/game-41/heroes/laila.webp",
+          "width": 596,
+          "height": 712
+        },
+        "ru": {
+          "src": "/img/game-41/heroes/laila.webp",
+          "width": 596,
+          "height": 712
+        },
+        "zh-cn": {
+          "src": "/img/game-41/heroes/laila.webp",
+          "width": 596,
+          "height": 712
+        },
+        "ar": {
+          "src": "/img/game-41/heroes/laila.webp",
+          "width": 596,
+          "height": 712
+        },
+        "nl": {
+          "src": "/img/game-41/heroes/laila.webp",
+          "width": 596,
+          "height": 712
+        },
+        "fr": {
+          "src": "/img/game-41/heroes/laila.webp",
+          "width": 596,
+          "height": 712
+        },
+        "id": {
+          "src": "/img/game-41/heroes/laila.webp",
+          "width": 596,
+          "height": 712
+        },
+        "it": {
+          "src": "/img/game-41/heroes/laila.webp",
+          "width": 596,
+          "height": 712
+        },
+        "pl": {
+          "src": "/img/game-41/heroes/laila.webp",
+          "width": 596,
+          "height": 712
+        },
+        "pt": {
+          "src": "/img/game-41/heroes/laila.webp",
+          "width": 596,
+          "height": 712
+        },
+        "es": {
+          "src": "/img/game-41/heroes/laila.webp",
+          "width": 596,
+          "height": 712
+        },
+        "sv": {
+          "src": "/img/game-41/heroes/laila.webp",
+          "width": 596,
+          "height": 712
+        },
+        "th": {
+          "src": "/img/game-41/heroes/laila.webp",
+          "width": 596,
+          "height": 712
+        },
+        "tr": {
+          "src": "/img/game-41/heroes/laila.webp",
+          "width": 596,
+          "height": 712
+        },
+        "vi": {
+          "src": "/img/game-41/heroes/laila.webp",
+          "width": 596,
+          "height": 712
+        },
+        "ms": {
+          "src": "/img/game-41/heroes/laila.webp",
+          "width": 596,
+          "height": 712
+        },
+        "nb": {
+          "src": "/img/game-41/heroes/laila.webp",
+          "width": 596,
+          "height": 712
+        }
+      }
+    },
+    {
+      "id": "candy",
+      "routes": {
+        "en": "/en/heroes/candy/",
+        "ko": "/ko/heroes/candy/",
+        "ja": "/ja/heroes/candy/",
+        "zh-tw": "/zh-tw/heroes/candy/",
+        "de": "/de/heroes/candy/",
+        "ru": "/ru/heroes/candy/",
+        "zh-cn": "/zh-cn/heroes/candy/",
+        "ar": "/ar/heroes/candy/",
+        "nl": "/nl/heroes/candy/",
+        "fr": "/fr/heroes/candy/",
+        "id": "/id/heroes/candy/",
+        "it": "/it/heroes/candy/",
+        "pl": "/pl/heroes/candy/",
+        "pt": "/pt/heroes/candy/",
+        "es": "/es/heroes/candy/",
+        "sv": "/sv/heroes/candy/",
+        "th": "/th/heroes/candy/",
+        "tr": "/tr/heroes/candy/",
+        "vi": "/vi/heroes/candy/",
+        "ms": "/ms/heroes/candy/",
+        "nb": "/nb/heroes/candy/"
+      },
+      "images": {
+        "en": {
+          "src": "/img/game-41/heroes/candy.webp",
+          "width": 388,
+          "height": 712
+        },
+        "ko": {
+          "src": "/img/game-41/heroes/candy.webp",
+          "width": 388,
+          "height": 712
+        },
+        "ja": {
+          "src": "/img/game-41/heroes/candy.webp",
+          "width": 388,
+          "height": 712
+        },
+        "zh-tw": {
+          "src": "/img/game-41/heroes/candy.webp",
+          "width": 388,
+          "height": 712
+        },
+        "de": {
+          "src": "/img/game-41/heroes/candy.webp",
+          "width": 388,
+          "height": 712
+        },
+        "ru": {
+          "src": "/img/game-41/heroes/candy.webp",
+          "width": 388,
+          "height": 712
+        },
+        "zh-cn": {
+          "src": "/img/game-41/heroes/candy.webp",
+          "width": 388,
+          "height": 712
+        },
+        "ar": {
+          "src": "/img/game-41/heroes/candy.webp",
+          "width": 388,
+          "height": 712
+        },
+        "nl": {
+          "src": "/img/game-41/heroes/candy.webp",
+          "width": 388,
+          "height": 712
+        },
+        "fr": {
+          "src": "/img/game-41/heroes/candy.webp",
+          "width": 388,
+          "height": 712
+        },
+        "id": {
+          "src": "/img/game-41/heroes/candy.webp",
+          "width": 388,
+          "height": 712
+        },
+        "it": {
+          "src": "/img/game-41/heroes/candy.webp",
+          "width": 388,
+          "height": 712
+        },
+        "pl": {
+          "src": "/img/game-41/heroes/candy.webp",
+          "width": 388,
+          "height": 712
+        },
+        "pt": {
+          "src": "/img/game-41/heroes/candy.webp",
+          "width": 388,
+          "height": 712
+        },
+        "es": {
+          "src": "/img/game-41/heroes/candy.webp",
+          "width": 388,
+          "height": 712
+        },
+        "sv": {
+          "src": "/img/game-41/heroes/candy.webp",
+          "width": 388,
+          "height": 712
+        },
+        "th": {
+          "src": "/img/game-41/heroes/candy.webp",
+          "width": 388,
+          "height": 712
+        },
+        "tr": {
+          "src": "/img/game-41/heroes/candy.webp",
+          "width": 388,
+          "height": 712
+        },
+        "vi": {
+          "src": "/img/game-41/heroes/candy.webp",
+          "width": 388,
+          "height": 712
+        },
+        "ms": {
+          "src": "/img/game-41/heroes/candy.webp",
+          "width": 388,
+          "height": 712
+        },
+        "nb": {
+          "src": "/img/game-41/heroes/candy.webp",
+          "width": 388,
+          "height": 712
+        }
+      }
+    },
+    {
+      "id": "sarge",
+      "routes": {
+        "en": "/en/heroes/sarge/",
+        "ko": "/ko/heroes/sarge/",
+        "ja": "/ja/heroes/sarge/",
+        "zh-tw": "/zh-tw/heroes/sarge/",
+        "de": "/de/heroes/sarge/",
+        "ru": "/ru/heroes/sarge/",
+        "zh-cn": "/zh-cn/heroes/sarge/",
+        "ar": "/ar/heroes/sarge/",
+        "nl": "/nl/heroes/sarge/",
+        "fr": "/fr/heroes/sarge/",
+        "id": "/id/heroes/sarge/",
+        "it": "/it/heroes/sarge/",
+        "pl": "/pl/heroes/sarge/",
+        "pt": "/pt/heroes/sarge/",
+        "es": "/es/heroes/sarge/",
+        "sv": "/sv/heroes/sarge/",
+        "th": "/th/heroes/sarge/",
+        "tr": "/tr/heroes/sarge/",
+        "vi": "/vi/heroes/sarge/",
+        "ms": "/ms/heroes/sarge/",
+        "nb": "/nb/heroes/sarge/"
+      },
+      "images": {
+        "en": {
+          "src": "/img/game-41/heroes/sarge.webp",
+          "width": 388,
+          "height": 712
+        },
+        "ko": {
+          "src": "/img/game-41/heroes/sarge.webp",
+          "width": 388,
+          "height": 712
+        },
+        "ja": {
+          "src": "/img/game-41/heroes/sarge.webp",
+          "width": 388,
+          "height": 712
+        },
+        "zh-tw": {
+          "src": "/img/game-41/heroes/sarge.webp",
+          "width": 388,
+          "height": 712
+        },
+        "de": {
+          "src": "/img/game-41/heroes/sarge.webp",
+          "width": 388,
+          "height": 712
+        },
+        "ru": {
+          "src": "/img/game-41/heroes/sarge.webp",
+          "width": 388,
+          "height": 712
+        },
+        "zh-cn": {
+          "src": "/img/game-41/heroes/sarge.webp",
+          "width": 388,
+          "height": 712
+        },
+        "ar": {
+          "src": "/img/game-41/heroes/sarge.webp",
+          "width": 388,
+          "height": 712
+        },
+        "nl": {
+          "src": "/img/game-41/heroes/sarge.webp",
+          "width": 388,
+          "height": 712
+        },
+        "fr": {
+          "src": "/img/game-41/heroes/sarge.webp",
+          "width": 388,
+          "height": 712
+        },
+        "id": {
+          "src": "/img/game-41/heroes/sarge.webp",
+          "width": 388,
+          "height": 712
+        },
+        "it": {
+          "src": "/img/game-41/heroes/sarge.webp",
+          "width": 388,
+          "height": 712
+        },
+        "pl": {
+          "src": "/img/game-41/heroes/sarge.webp",
+          "width": 388,
+          "height": 712
+        },
+        "pt": {
+          "src": "/img/game-41/heroes/sarge.webp",
+          "width": 388,
+          "height": 712
+        },
+        "es": {
+          "src": "/img/game-41/heroes/sarge.webp",
+          "width": 388,
+          "height": 712
+        },
+        "sv": {
+          "src": "/img/game-41/heroes/sarge.webp",
+          "width": 388,
+          "height": 712
+        },
+        "th": {
+          "src": "/img/game-41/heroes/sarge.webp",
+          "width": 388,
+          "height": 712
+        },
+        "tr": {
+          "src": "/img/game-41/heroes/sarge.webp",
+          "width": 388,
+          "height": 712
+        },
+        "vi": {
+          "src": "/img/game-41/heroes/sarge.webp",
+          "width": 388,
+          "height": 712
+        },
+        "ms": {
+          "src": "/img/game-41/heroes/sarge.webp",
+          "width": 388,
+          "height": 712
+        },
+        "nb": {
+          "src": "/img/game-41/heroes/sarge.webp",
+          "width": 388,
+          "height": 712
+        }
+      }
+    },
+    {
+      "id": "mike",
+      "routes": {
+        "en": "/en/heroes/mike/",
+        "ko": "/ko/heroes/mike/",
+        "ja": "/ja/heroes/mike/",
+        "zh-tw": "/zh-tw/heroes/mike/",
+        "de": "/de/heroes/mike/",
+        "ru": "/ru/heroes/mike/",
+        "zh-cn": "/zh-cn/heroes/mike/",
+        "ar": "/ar/heroes/mike/",
+        "nl": "/nl/heroes/mike/",
+        "fr": "/fr/heroes/mike/",
+        "id": "/id/heroes/mike/",
+        "it": "/it/heroes/mike/",
+        "pl": "/pl/heroes/mike/",
+        "pt": "/pt/heroes/mike/",
+        "es": "/es/heroes/mike/",
+        "sv": "/sv/heroes/mike/",
+        "th": "/th/heroes/mike/",
+        "tr": "/tr/heroes/mike/",
+        "vi": "/vi/heroes/mike/",
+        "ms": "/ms/heroes/mike/",
+        "nb": "/nb/heroes/mike/"
+      },
+      "images": {
+        "en": {
+          "src": "/img/game-41/heroes/mike.webp",
+          "width": 596,
+          "height": 712
+        },
+        "ko": {
+          "src": "/img/game-41/heroes/mike.webp",
+          "width": 596,
+          "height": 712
+        },
+        "ja": {
+          "src": "/img/game-41/heroes/mike.webp",
+          "width": 596,
+          "height": 712
+        },
+        "zh-tw": {
+          "src": "/img/game-41/heroes/mike.webp",
+          "width": 596,
+          "height": 712
+        },
+        "de": {
+          "src": "/img/game-41/heroes/mike.webp",
+          "width": 596,
+          "height": 712
+        },
+        "ru": {
+          "src": "/img/game-41/heroes/mike.webp",
+          "width": 596,
+          "height": 712
+        },
+        "zh-cn": {
+          "src": "/img/game-41/heroes/mike.webp",
+          "width": 596,
+          "height": 712
+        },
+        "ar": {
+          "src": "/img/game-41/heroes/mike.webp",
+          "width": 596,
+          "height": 712
+        },
+        "nl": {
+          "src": "/img/game-41/heroes/mike.webp",
+          "width": 596,
+          "height": 712
+        },
+        "fr": {
+          "src": "/img/game-41/heroes/mike.webp",
+          "width": 596,
+          "height": 712
+        },
+        "id": {
+          "src": "/img/game-41/heroes/mike.webp",
+          "width": 596,
+          "height": 712
+        },
+        "it": {
+          "src": "/img/game-41/heroes/mike.webp",
+          "width": 596,
+          "height": 712
+        },
+        "pl": {
+          "src": "/img/game-41/heroes/mike.webp",
+          "width": 596,
+          "height": 712
+        },
+        "pt": {
+          "src": "/img/game-41/heroes/mike.webp",
+          "width": 596,
+          "height": 712
+        },
+        "es": {
+          "src": "/img/game-41/heroes/mike.webp",
+          "width": 596,
+          "height": 712
+        },
+        "sv": {
+          "src": "/img/game-41/heroes/mike.webp",
+          "width": 596,
+          "height": 712
+        },
+        "th": {
+          "src": "/img/game-41/heroes/mike.webp",
+          "width": 596,
+          "height": 712
+        },
+        "tr": {
+          "src": "/img/game-41/heroes/mike.webp",
+          "width": 596,
+          "height": 712
+        },
+        "vi": {
+          "src": "/img/game-41/heroes/mike.webp",
+          "width": 596,
+          "height": 712
+        },
+        "ms": {
+          "src": "/img/game-41/heroes/mike.webp",
+          "width": 596,
+          "height": 712
+        },
+        "nb": {
+          "src": "/img/game-41/heroes/mike.webp",
+          "width": 596,
+          "height": 712
+        }
+      }
+    },
+    {
+      "id": "chef-ken",
+      "routes": {
+        "en": "/en/heroes/chef-ken/",
+        "ko": "/ko/heroes/chef-ken/",
+        "ja": "/ja/heroes/chef-ken/",
+        "zh-tw": "/zh-tw/heroes/chef-ken/",
+        "de": "/de/heroes/chef-ken/",
+        "ru": "/ru/heroes/chef-ken/",
+        "zh-cn": "/zh-cn/heroes/chef-ken/",
+        "ar": "/ar/heroes/chef-ken/",
+        "nl": "/nl/heroes/chef-ken/",
+        "fr": "/fr/heroes/chef-ken/",
+        "id": "/id/heroes/chef-ken/",
+        "it": "/it/heroes/chef-ken/",
+        "pl": "/pl/heroes/chef-ken/",
+        "pt": "/pt/heroes/chef-ken/",
+        "es": "/es/heroes/chef-ken/",
+        "sv": "/sv/heroes/chef-ken/",
+        "th": "/th/heroes/chef-ken/",
+        "tr": "/tr/heroes/chef-ken/",
+        "vi": "/vi/heroes/chef-ken/",
+        "ms": "/ms/heroes/chef-ken/",
+        "nb": "/nb/heroes/chef-ken/"
+      },
+      "images": {
+        "en": {
+          "src": "/img/game-41/heroes/chef-ken.webp",
+          "width": 596,
+          "height": 712
+        },
+        "ko": {
+          "src": "/img/game-41/heroes/chef-ken.webp",
+          "width": 596,
+          "height": 712
+        },
+        "ja": {
+          "src": "/img/game-41/heroes/chef-ken.webp",
+          "width": 596,
+          "height": 712
+        },
+        "zh-tw": {
+          "src": "/img/game-41/heroes/chef-ken.webp",
+          "width": 596,
+          "height": 712
+        },
+        "de": {
+          "src": "/img/game-41/heroes/chef-ken.webp",
+          "width": 596,
+          "height": 712
+        },
+        "ru": {
+          "src": "/img/game-41/heroes/chef-ken.webp",
+          "width": 596,
+          "height": 712
+        },
+        "zh-cn": {
+          "src": "/img/game-41/heroes/chef-ken.webp",
+          "width": 596,
+          "height": 712
+        },
+        "ar": {
+          "src": "/img/game-41/heroes/chef-ken.webp",
+          "width": 596,
+          "height": 712
+        },
+        "nl": {
+          "src": "/img/game-41/heroes/chef-ken.webp",
+          "width": 596,
+          "height": 712
+        },
+        "fr": {
+          "src": "/img/game-41/heroes/chef-ken.webp",
+          "width": 596,
+          "height": 712
+        },
+        "id": {
+          "src": "/img/game-41/heroes/chef-ken.webp",
+          "width": 596,
+          "height": 712
+        },
+        "it": {
+          "src": "/img/game-41/heroes/chef-ken.webp",
+          "width": 596,
+          "height": 712
+        },
+        "pl": {
+          "src": "/img/game-41/heroes/chef-ken.webp",
+          "width": 596,
+          "height": 712
+        },
+        "pt": {
+          "src": "/img/game-41/heroes/chef-ken.webp",
+          "width": 596,
+          "height": 712
+        },
+        "es": {
+          "src": "/img/game-41/heroes/chef-ken.webp",
+          "width": 596,
+          "height": 712
+        },
+        "sv": {
+          "src": "/img/game-41/heroes/chef-ken.webp",
+          "width": 596,
+          "height": 712
+        },
+        "th": {
+          "src": "/img/game-41/heroes/chef-ken.webp",
+          "width": 596,
+          "height": 712
+        },
+        "tr": {
+          "src": "/img/game-41/heroes/chef-ken.webp",
+          "width": 596,
+          "height": 712
+        },
+        "vi": {
+          "src": "/img/game-41/heroes/chef-ken.webp",
+          "width": 596,
+          "height": 712
+        },
+        "ms": {
+          "src": "/img/game-41/heroes/chef-ken.webp",
+          "width": 596,
+          "height": 712
+        },
+        "nb": {
+          "src": "/img/game-41/heroes/chef-ken.webp",
+          "width": 596,
+          "height": 712
+        }
+      }
+    },
+    {
+      "id": "freya",
+      "routes": {
+        "en": "/en/heroes/freya/",
+        "ko": "/ko/heroes/freya/",
+        "ja": "/ja/heroes/freya/",
+        "zh-tw": "/zh-tw/heroes/freya/",
+        "de": "/de/heroes/freya/",
+        "ru": "/ru/heroes/freya/",
+        "zh-cn": "/zh-cn/heroes/freya/",
+        "ar": "/ar/heroes/freya/",
+        "nl": "/nl/heroes/freya/",
+        "fr": "/fr/heroes/freya/",
+        "id": "/id/heroes/freya/",
+        "it": "/it/heroes/freya/",
+        "pl": "/pl/heroes/freya/",
+        "pt": "/pt/heroes/freya/",
+        "es": "/es/heroes/freya/",
+        "sv": "/sv/heroes/freya/",
+        "th": "/th/heroes/freya/",
+        "tr": "/tr/heroes/freya/",
+        "vi": "/vi/heroes/freya/",
+        "ms": "/ms/heroes/freya/",
+        "nb": "/nb/heroes/freya/"
+      },
+      "images": {
+        "en": {
+          "src": "/img/game-41/heroes/freya.webp",
+          "width": 596,
+          "height": 712
+        },
+        "ko": {
+          "src": "/img/game-41/heroes/freya.webp",
+          "width": 596,
+          "height": 712
+        },
+        "ja": {
+          "src": "/img/game-41/heroes/freya.webp",
+          "width": 596,
+          "height": 712
+        },
+        "zh-tw": {
+          "src": "/img/game-41/heroes/freya.webp",
+          "width": 596,
+          "height": 712
+        },
+        "de": {
+          "src": "/img/game-41/heroes/freya.webp",
+          "width": 596,
+          "height": 712
+        },
+        "ru": {
+          "src": "/img/game-41/heroes/freya.webp",
+          "width": 596,
+          "height": 712
+        },
+        "zh-cn": {
+          "src": "/img/game-41/heroes/freya.webp",
+          "width": 596,
+          "height": 712
+        },
+        "ar": {
+          "src": "/img/game-41/heroes/freya.webp",
+          "width": 596,
+          "height": 712
+        },
+        "nl": {
+          "src": "/img/game-41/heroes/freya.webp",
+          "width": 596,
+          "height": 712
+        },
+        "fr": {
+          "src": "/img/game-41/heroes/freya.webp",
+          "width": 596,
+          "height": 712
+        },
+        "id": {
+          "src": "/img/game-41/heroes/freya.webp",
+          "width": 596,
+          "height": 712
+        },
+        "it": {
+          "src": "/img/game-41/heroes/freya.webp",
+          "width": 596,
+          "height": 712
+        },
+        "pl": {
+          "src": "/img/game-41/heroes/freya.webp",
+          "width": 596,
+          "height": 712
+        },
+        "pt": {
+          "src": "/img/game-41/heroes/freya.webp",
+          "width": 596,
+          "height": 712
+        },
+        "es": {
+          "src": "/img/game-41/heroes/freya.webp",
+          "width": 596,
+          "height": 712
+        },
+        "sv": {
+          "src": "/img/game-41/heroes/freya.webp",
+          "width": 596,
+          "height": 712
+        },
+        "th": {
+          "src": "/img/game-41/heroes/freya.webp",
+          "width": 596,
+          "height": 712
+        },
+        "tr": {
+          "src": "/img/game-41/heroes/freya.webp",
+          "width": 596,
+          "height": 712
+        },
+        "vi": {
+          "src": "/img/game-41/heroes/freya.webp",
+          "width": 596,
+          "height": 712
+        },
+        "ms": {
+          "src": "/img/game-41/heroes/freya.webp",
+          "width": 596,
+          "height": 712
+        },
+        "nb": {
+          "src": "/img/game-41/heroes/freya.webp",
+          "width": 596,
+          "height": 712
+        }
+      }
+    },
+    {
+      "id": "travis",
+      "routes": {
+        "en": "/en/heroes/travis/",
+        "ko": "/ko/heroes/travis/",
+        "ja": "/ja/heroes/travis/",
+        "zh-tw": "/zh-tw/heroes/travis/",
+        "de": "/de/heroes/travis/",
+        "ru": "/ru/heroes/travis/",
+        "zh-cn": "/zh-cn/heroes/travis/",
+        "ar": "/ar/heroes/travis/",
+        "nl": "/nl/heroes/travis/",
+        "fr": "/fr/heroes/travis/",
+        "id": "/id/heroes/travis/",
+        "it": "/it/heroes/travis/",
+        "pl": "/pl/heroes/travis/",
+        "pt": "/pt/heroes/travis/",
+        "es": "/es/heroes/travis/",
+        "sv": "/sv/heroes/travis/",
+        "th": "/th/heroes/travis/",
+        "tr": "/tr/heroes/travis/",
+        "vi": "/vi/heroes/travis/",
+        "ms": "/ms/heroes/travis/",
+        "nb": "/nb/heroes/travis/"
+      },
+      "images": {
+        "en": {
+          "src": "/img/game-41/heroes/travis.webp",
+          "width": 388,
+          "height": 712
+        },
+        "ko": {
+          "src": "/img/game-41/heroes/travis.webp",
+          "width": 388,
+          "height": 712
+        },
+        "ja": {
+          "src": "/img/game-41/heroes/travis.webp",
+          "width": 388,
+          "height": 712
+        },
+        "zh-tw": {
+          "src": "/img/game-41/heroes/travis.webp",
+          "width": 388,
+          "height": 712
+        },
+        "de": {
+          "src": "/img/game-41/heroes/travis.webp",
+          "width": 388,
+          "height": 712
+        },
+        "ru": {
+          "src": "/img/game-41/heroes/travis.webp",
+          "width": 388,
+          "height": 712
+        },
+        "zh-cn": {
+          "src": "/img/game-41/heroes/travis.webp",
+          "width": 388,
+          "height": 712
+        },
+        "ar": {
+          "src": "/img/game-41/heroes/travis.webp",
+          "width": 388,
+          "height": 712
+        },
+        "nl": {
+          "src": "/img/game-41/heroes/travis.webp",
+          "width": 388,
+          "height": 712
+        },
+        "fr": {
+          "src": "/img/game-41/heroes/travis.webp",
+          "width": 388,
+          "height": 712
+        },
+        "id": {
+          "src": "/img/game-41/heroes/travis.webp",
+          "width": 388,
+          "height": 712
+        },
+        "it": {
+          "src": "/img/game-41/heroes/travis.webp",
+          "width": 388,
+          "height": 712
+        },
+        "pl": {
+          "src": "/img/game-41/heroes/travis.webp",
+          "width": 388,
+          "height": 712
+        },
+        "pt": {
+          "src": "/img/game-41/heroes/travis.webp",
+          "width": 388,
+          "height": 712
+        },
+        "es": {
+          "src": "/img/game-41/heroes/travis.webp",
+          "width": 388,
+          "height": 712
+        },
+        "sv": {
+          "src": "/img/game-41/heroes/travis.webp",
+          "width": 388,
+          "height": 712
+        },
+        "th": {
+          "src": "/img/game-41/heroes/travis.webp",
+          "width": 388,
+          "height": 712
+        },
+        "tr": {
+          "src": "/img/game-41/heroes/travis.webp",
+          "width": 388,
+          "height": 712
+        },
+        "vi": {
+          "src": "/img/game-41/heroes/travis.webp",
+          "width": 388,
+          "height": 712
+        },
+        "ms": {
+          "src": "/img/game-41/heroes/travis.webp",
+          "width": 388,
+          "height": 712
+        },
+        "nb": {
+          "src": "/img/game-41/heroes/travis.webp",
+          "width": 388,
+          "height": 712
+        }
+      }
+    },
+    {
+      "id": "eva",
+      "routes": {
+        "en": "/en/heroes/eva/",
+        "ko": "/ko/heroes/eva/",
+        "ja": "/ja/heroes/eva/",
+        "zh-tw": "/zh-tw/heroes/eva/",
+        "de": "/de/heroes/eva/",
+        "ru": "/ru/heroes/eva/",
+        "zh-cn": "/zh-cn/heroes/eva/",
+        "ar": "/ar/heroes/eva/",
+        "nl": "/nl/heroes/eva/",
+        "fr": "/fr/heroes/eva/",
+        "id": "/id/heroes/eva/",
+        "it": "/it/heroes/eva/",
+        "pl": "/pl/heroes/eva/",
+        "pt": "/pt/heroes/eva/",
+        "es": "/es/heroes/eva/",
+        "sv": "/sv/heroes/eva/",
+        "th": "/th/heroes/eva/",
+        "tr": "/tr/heroes/eva/",
+        "vi": "/vi/heroes/eva/",
+        "ms": "/ms/heroes/eva/",
+        "nb": "/nb/heroes/eva/"
+      },
+      "images": {
+        "en": {
+          "src": "/img/game-41/heroes/eva.webp",
+          "width": 388,
+          "height": 712
+        },
+        "ko": {
+          "src": "/img/game-41/heroes/eva.webp",
+          "width": 388,
+          "height": 712
+        },
+        "ja": {
+          "src": "/img/game-41/heroes/eva.webp",
+          "width": 388,
+          "height": 712
+        },
+        "zh-tw": {
+          "src": "/img/game-41/heroes/eva.webp",
+          "width": 388,
+          "height": 712
+        },
+        "de": {
+          "src": "/img/game-41/heroes/eva.webp",
+          "width": 388,
+          "height": 712
+        },
+        "ru": {
+          "src": "/img/game-41/heroes/eva.webp",
+          "width": 388,
+          "height": 712
+        },
+        "zh-cn": {
+          "src": "/img/game-41/heroes/eva.webp",
+          "width": 388,
+          "height": 712
+        },
+        "ar": {
+          "src": "/img/game-41/heroes/eva.webp",
+          "width": 388,
+          "height": 712
+        },
+        "nl": {
+          "src": "/img/game-41/heroes/eva.webp",
+          "width": 388,
+          "height": 712
+        },
+        "fr": {
+          "src": "/img/game-41/heroes/eva.webp",
+          "width": 388,
+          "height": 712
+        },
+        "id": {
+          "src": "/img/game-41/heroes/eva.webp",
+          "width": 388,
+          "height": 712
+        },
+        "it": {
+          "src": "/img/game-41/heroes/eva.webp",
+          "width": 388,
+          "height": 712
+        },
+        "pl": {
+          "src": "/img/game-41/heroes/eva.webp",
+          "width": 388,
+          "height": 712
+        },
+        "pt": {
+          "src": "/img/game-41/heroes/eva.webp",
+          "width": 388,
+          "height": 712
+        },
+        "es": {
+          "src": "/img/game-41/heroes/eva.webp",
+          "width": 388,
+          "height": 712
+        },
+        "sv": {
+          "src": "/img/game-41/heroes/eva.webp",
+          "width": 388,
+          "height": 712
+        },
+        "th": {
+          "src": "/img/game-41/heroes/eva.webp",
+          "width": 388,
+          "height": 712
+        },
+        "tr": {
+          "src": "/img/game-41/heroes/eva.webp",
+          "width": 388,
+          "height": 712
+        },
+        "vi": {
+          "src": "/img/game-41/heroes/eva.webp",
+          "width": 388,
+          "height": 712
+        },
+        "ms": {
+          "src": "/img/game-41/heroes/eva.webp",
+          "width": 388,
+          "height": 712
+        },
+        "nb": {
+          "src": "/img/game-41/heroes/eva.webp",
+          "width": 388,
+          "height": 712
+        }
+      }
+    },
+    {
+      "id": "rusty",
+      "routes": {
+        "en": "/en/heroes/rusty/",
+        "ko": "/ko/heroes/rusty/",
+        "ja": "/ja/heroes/rusty/",
+        "zh-tw": "/zh-tw/heroes/rusty/",
+        "de": "/de/heroes/rusty/",
+        "ru": "/ru/heroes/rusty/",
+        "zh-cn": "/zh-cn/heroes/rusty/",
+        "ar": "/ar/heroes/rusty/",
+        "nl": "/nl/heroes/rusty/",
+        "fr": "/fr/heroes/rusty/",
+        "id": "/id/heroes/rusty/",
+        "it": "/it/heroes/rusty/",
+        "pl": "/pl/heroes/rusty/",
+        "pt": "/pt/heroes/rusty/",
+        "es": "/es/heroes/rusty/",
+        "sv": "/sv/heroes/rusty/",
+        "th": "/th/heroes/rusty/",
+        "tr": "/tr/heroes/rusty/",
+        "vi": "/vi/heroes/rusty/",
+        "ms": "/ms/heroes/rusty/",
+        "nb": "/nb/heroes/rusty/"
+      },
+      "images": {
+        "en": {
+          "src": "/img/game-41/heroes/rusty.webp",
+          "width": 596,
+          "height": 712
+        },
+        "ko": {
+          "src": "/img/game-41/heroes/rusty.webp",
+          "width": 596,
+          "height": 712
+        },
+        "ja": {
+          "src": "/img/game-41/heroes/rusty.webp",
+          "width": 596,
+          "height": 712
+        },
+        "zh-tw": {
+          "src": "/img/game-41/heroes/rusty.webp",
+          "width": 596,
+          "height": 712
+        },
+        "de": {
+          "src": "/img/game-41/heroes/rusty.webp",
+          "width": 596,
+          "height": 712
+        },
+        "ru": {
+          "src": "/img/game-41/heroes/rusty.webp",
+          "width": 596,
+          "height": 712
+        },
+        "zh-cn": {
+          "src": "/img/game-41/heroes/rusty.webp",
+          "width": 596,
+          "height": 712
+        },
+        "ar": {
+          "src": "/img/game-41/heroes/rusty.webp",
+          "width": 596,
+          "height": 712
+        },
+        "nl": {
+          "src": "/img/game-41/heroes/rusty.webp",
+          "width": 596,
+          "height": 712
+        },
+        "fr": {
+          "src": "/img/game-41/heroes/rusty.webp",
+          "width": 596,
+          "height": 712
+        },
+        "id": {
+          "src": "/img/game-41/heroes/rusty.webp",
+          "width": 596,
+          "height": 712
+        },
+        "it": {
+          "src": "/img/game-41/heroes/rusty.webp",
+          "width": 596,
+          "height": 712
+        },
+        "pl": {
+          "src": "/img/game-41/heroes/rusty.webp",
+          "width": 596,
+          "height": 712
+        },
+        "pt": {
+          "src": "/img/game-41/heroes/rusty.webp",
+          "width": 596,
+          "height": 712
+        },
+        "es": {
+          "src": "/img/game-41/heroes/rusty.webp",
+          "width": 596,
+          "height": 712
+        },
+        "sv": {
+          "src": "/img/game-41/heroes/rusty.webp",
+          "width": 596,
+          "height": 712
+        },
+        "th": {
+          "src": "/img/game-41/heroes/rusty.webp",
+          "width": 596,
+          "height": 712
+        },
+        "tr": {
+          "src": "/img/game-41/heroes/rusty.webp",
+          "width": 596,
+          "height": 712
+        },
+        "vi": {
+          "src": "/img/game-41/heroes/rusty.webp",
+          "width": 596,
+          "height": 712
+        },
+        "ms": {
+          "src": "/img/game-41/heroes/rusty.webp",
+          "width": 596,
+          "height": 712
+        },
+        "nb": {
+          "src": "/img/game-41/heroes/rusty.webp",
+          "width": 596,
+          "height": 712
+        }
+      }
+    },
+    {
+      "id": "ghost",
+      "routes": {
+        "en": "/en/heroes/ghost/",
+        "ko": "/ko/heroes/ghost/",
+        "ja": "/ja/heroes/ghost/",
+        "zh-tw": "/zh-tw/heroes/ghost/",
+        "de": "/de/heroes/ghost/",
+        "ru": "/ru/heroes/ghost/",
+        "zh-cn": "/zh-cn/heroes/ghost/",
+        "ar": "/ar/heroes/ghost/",
+        "nl": "/nl/heroes/ghost/",
+        "fr": "/fr/heroes/ghost/",
+        "id": "/id/heroes/ghost/",
+        "it": "/it/heroes/ghost/",
+        "pl": "/pl/heroes/ghost/",
+        "pt": "/pt/heroes/ghost/",
+        "es": "/es/heroes/ghost/",
+        "sv": "/sv/heroes/ghost/",
+        "th": "/th/heroes/ghost/",
+        "tr": "/tr/heroes/ghost/",
+        "vi": "/vi/heroes/ghost/",
+        "ms": "/ms/heroes/ghost/",
+        "nb": "/nb/heroes/ghost/"
+      },
+      "images": {
+        "en": {
+          "src": "/img/game-41/heroes/ghost.webp",
+          "width": 596,
+          "height": 712
+        },
+        "ko": {
+          "src": "/img/game-41/heroes/ghost.webp",
+          "width": 596,
+          "height": 712
+        },
+        "ja": {
+          "src": "/img/game-41/heroes/ghost.webp",
+          "width": 596,
+          "height": 712
+        },
+        "zh-tw": {
+          "src": "/img/game-41/heroes/ghost.webp",
+          "width": 596,
+          "height": 712
+        },
+        "de": {
+          "src": "/img/game-41/heroes/ghost.webp",
+          "width": 596,
+          "height": 712
+        },
+        "ru": {
+          "src": "/img/game-41/heroes/ghost.webp",
+          "width": 596,
+          "height": 712
+        },
+        "zh-cn": {
+          "src": "/img/game-41/heroes/ghost.webp",
+          "width": 596,
+          "height": 712
+        },
+        "ar": {
+          "src": "/img/game-41/heroes/ghost.webp",
+          "width": 596,
+          "height": 712
+        },
+        "nl": {
+          "src": "/img/game-41/heroes/ghost.webp",
+          "width": 596,
+          "height": 712
+        },
+        "fr": {
+          "src": "/img/game-41/heroes/ghost.webp",
+          "width": 596,
+          "height": 712
+        },
+        "id": {
+          "src": "/img/game-41/heroes/ghost.webp",
+          "width": 596,
+          "height": 712
+        },
+        "it": {
+          "src": "/img/game-41/heroes/ghost.webp",
+          "width": 596,
+          "height": 712
+        },
+        "pl": {
+          "src": "/img/game-41/heroes/ghost.webp",
+          "width": 596,
+          "height": 712
+        },
+        "pt": {
+          "src": "/img/game-41/heroes/ghost.webp",
+          "width": 596,
+          "height": 712
+        },
+        "es": {
+          "src": "/img/game-41/heroes/ghost.webp",
+          "width": 596,
+          "height": 712
+        },
+        "sv": {
+          "src": "/img/game-41/heroes/ghost.webp",
+          "width": 596,
+          "height": 712
+        },
+        "th": {
+          "src": "/img/game-41/heroes/ghost.webp",
+          "width": 596,
+          "height": 712
+        },
+        "tr": {
+          "src": "/img/game-41/heroes/ghost.webp",
+          "width": 596,
+          "height": 712
+        },
+        "vi": {
+          "src": "/img/game-41/heroes/ghost.webp",
+          "width": 596,
+          "height": 712
+        },
+        "ms": {
+          "src": "/img/game-41/heroes/ghost.webp",
+          "width": 596,
+          "height": 712
+        },
+        "nb": {
+          "src": "/img/game-41/heroes/ghost.webp",
+          "width": 596,
+          "height": 712
+        }
+      }
+    },
+    {
+      "id": "light",
+      "routes": {
+        "en": "/en/heroes/light/",
+        "ko": "/ko/heroes/light/",
+        "ja": "/ja/heroes/light/",
+        "zh-tw": "/zh-tw/heroes/light/",
+        "de": "/de/heroes/light/",
+        "ru": "/ru/heroes/light/",
+        "zh-cn": "/zh-cn/heroes/light/",
+        "ar": "/ar/heroes/light/",
+        "nl": "/nl/heroes/light/",
+        "fr": "/fr/heroes/light/",
+        "id": "/id/heroes/light/",
+        "it": "/it/heroes/light/",
+        "pl": "/pl/heroes/light/",
+        "pt": "/pt/heroes/light/",
+        "es": "/es/heroes/light/",
+        "sv": "/sv/heroes/light/",
+        "th": "/th/heroes/light/",
+        "tr": "/tr/heroes/light/",
+        "vi": "/vi/heroes/light/",
+        "ms": "/ms/heroes/light/",
+        "nb": "/nb/heroes/light/"
+      },
+      "images": {
+        "en": {
+          "src": "/img/game-41/heroes/light.webp",
+          "width": 644,
+          "height": 712
+        },
+        "ko": {
+          "src": "/img/game-41/heroes/light.webp",
+          "width": 644,
+          "height": 712
+        },
+        "ja": {
+          "src": "/img/game-41/heroes/light.webp",
+          "width": 644,
+          "height": 712
+        },
+        "zh-tw": {
+          "src": "/img/game-41/heroes/light.webp",
+          "width": 644,
+          "height": 712
+        },
+        "de": {
+          "src": "/img/game-41/heroes/light.webp",
+          "width": 644,
+          "height": 712
+        },
+        "ru": {
+          "src": "/img/game-41/heroes/light.webp",
+          "width": 644,
+          "height": 712
+        },
+        "zh-cn": {
+          "src": "/img/game-41/heroes/light.webp",
+          "width": 644,
+          "height": 712
+        },
+        "ar": {
+          "src": "/img/game-41/heroes/light.webp",
+          "width": 644,
+          "height": 712
+        },
+        "nl": {
+          "src": "/img/game-41/heroes/light.webp",
+          "width": 644,
+          "height": 712
+        },
+        "fr": {
+          "src": "/img/game-41/heroes/light.webp",
+          "width": 644,
+          "height": 712
+        },
+        "id": {
+          "src": "/img/game-41/heroes/light.webp",
+          "width": 644,
+          "height": 712
+        },
+        "it": {
+          "src": "/img/game-41/heroes/light.webp",
+          "width": 644,
+          "height": 712
+        },
+        "pl": {
+          "src": "/img/game-41/heroes/light.webp",
+          "width": 644,
+          "height": 712
+        },
+        "pt": {
+          "src": "/img/game-41/heroes/light.webp",
+          "width": 644,
+          "height": 712
+        },
+        "es": {
+          "src": "/img/game-41/heroes/light.webp",
+          "width": 644,
+          "height": 712
+        },
+        "sv": {
+          "src": "/img/game-41/heroes/light.webp",
+          "width": 644,
+          "height": 712
+        },
+        "th": {
+          "src": "/img/game-41/heroes/light.webp",
+          "width": 644,
+          "height": 712
+        },
+        "tr": {
+          "src": "/img/game-41/heroes/light.webp",
+          "width": 644,
+          "height": 712
+        },
+        "vi": {
+          "src": "/img/game-41/heroes/light.webp",
+          "width": 644,
+          "height": 712
+        },
+        "ms": {
+          "src": "/img/game-41/heroes/light.webp",
+          "width": 644,
+          "height": 712
+        },
+        "nb": {
+          "src": "/img/game-41/heroes/light.webp",
+          "width": 644,
+          "height": 712
+        }
+      }
+    },
+    {
+      "id": "kiki",
+      "routes": {
+        "en": "/en/heroes/kiki/",
+        "ko": "/ko/heroes/kiki/",
+        "ja": "/ja/heroes/kiki/",
+        "zh-tw": "/zh-tw/heroes/kiki/",
+        "de": "/de/heroes/kiki/",
+        "ru": "/ru/heroes/kiki/",
+        "zh-cn": "/zh-cn/heroes/kiki/",
+        "ar": "/ar/heroes/kiki/",
+        "nl": "/nl/heroes/kiki/",
+        "fr": "/fr/heroes/kiki/",
+        "id": "/id/heroes/kiki/",
+        "it": "/it/heroes/kiki/",
+        "pl": "/pl/heroes/kiki/",
+        "pt": "/pt/heroes/kiki/",
+        "es": "/es/heroes/kiki/",
+        "sv": "/sv/heroes/kiki/",
+        "th": "/th/heroes/kiki/",
+        "tr": "/tr/heroes/kiki/",
+        "vi": "/vi/heroes/kiki/",
+        "ms": "/ms/heroes/kiki/",
+        "nb": "/nb/heroes/kiki/"
+      },
+      "images": {
+        "en": {
+          "src": "/img/game-41/heroes/kiki.webp",
+          "width": 488,
+          "height": 712
+        },
+        "ko": {
+          "src": "/img/game-41/heroes/kiki.webp",
+          "width": 488,
+          "height": 712
+        },
+        "ja": {
+          "src": "/img/game-41/heroes/kiki.webp",
+          "width": 488,
+          "height": 712
+        },
+        "zh-tw": {
+          "src": "/img/game-41/heroes/kiki.webp",
+          "width": 488,
+          "height": 712
+        },
+        "de": {
+          "src": "/img/game-41/heroes/kiki.webp",
+          "width": 488,
+          "height": 712
+        },
+        "ru": {
+          "src": "/img/game-41/heroes/kiki.webp",
+          "width": 488,
+          "height": 712
+        },
+        "zh-cn": {
+          "src": "/img/game-41/heroes/kiki.webp",
+          "width": 488,
+          "height": 712
+        },
+        "ar": {
+          "src": "/img/game-41/heroes/kiki.webp",
+          "width": 488,
+          "height": 712
+        },
+        "nl": {
+          "src": "/img/game-41/heroes/kiki.webp",
+          "width": 488,
+          "height": 712
+        },
+        "fr": {
+          "src": "/img/game-41/heroes/kiki.webp",
+          "width": 488,
+          "height": 712
+        },
+        "id": {
+          "src": "/img/game-41/heroes/kiki.webp",
+          "width": 488,
+          "height": 712
+        },
+        "it": {
+          "src": "/img/game-41/heroes/kiki.webp",
+          "width": 488,
+          "height": 712
+        },
+        "pl": {
+          "src": "/img/game-41/heroes/kiki.webp",
+          "width": 488,
+          "height": 712
+        },
+        "pt": {
+          "src": "/img/game-41/heroes/kiki.webp",
+          "width": 488,
+          "height": 712
+        },
+        "es": {
+          "src": "/img/game-41/heroes/kiki.webp",
+          "width": 488,
+          "height": 712
+        },
+        "sv": {
+          "src": "/img/game-41/heroes/kiki.webp",
+          "width": 488,
+          "height": 712
+        },
+        "th": {
+          "src": "/img/game-41/heroes/kiki.webp",
+          "width": 488,
+          "height": 712
+        },
+        "tr": {
+          "src": "/img/game-41/heroes/kiki.webp",
+          "width": 488,
+          "height": 712
+        },
+        "vi": {
+          "src": "/img/game-41/heroes/kiki.webp",
+          "width": 488,
+          "height": 712
+        },
+        "ms": {
+          "src": "/img/game-41/heroes/kiki.webp",
+          "width": 488,
+          "height": 712
+        },
+        "nb": {
+          "src": "/img/game-41/heroes/kiki.webp",
+          "width": 488,
+          "height": 712
+        }
+      }
+    },
+    {
+      "id": "tara",
+      "routes": {
+        "en": "/en/heroes/tara/",
+        "ko": "/ko/heroes/tara/",
+        "ja": "/ja/heroes/tara/",
+        "zh-tw": "/zh-tw/heroes/tara/",
+        "de": "/de/heroes/tara/",
+        "ru": "/ru/heroes/tara/",
+        "zh-cn": "/zh-cn/heroes/tara/",
+        "ar": "/ar/heroes/tara/",
+        "nl": "/nl/heroes/tara/",
+        "fr": "/fr/heroes/tara/",
+        "id": "/id/heroes/tara/",
+        "it": "/it/heroes/tara/",
+        "pl": "/pl/heroes/tara/",
+        "pt": "/pt/heroes/tara/",
+        "es": "/es/heroes/tara/",
+        "sv": "/sv/heroes/tara/",
+        "th": "/th/heroes/tara/",
+        "tr": "/tr/heroes/tara/",
+        "vi": "/vi/heroes/tara/",
+        "ms": "/ms/heroes/tara/",
+        "nb": "/nb/heroes/tara/"
+      },
+      "images": {
+        "en": {
+          "src": "/img/game-41/heroes/tara.webp",
+          "width": 560,
+          "height": 712
+        },
+        "ko": {
+          "src": "/img/game-41/heroes/tara.webp",
+          "width": 560,
+          "height": 712
+        },
+        "ja": {
+          "src": "/img/game-41/heroes/tara.webp",
+          "width": 560,
+          "height": 712
+        },
+        "zh-tw": {
+          "src": "/img/game-41/heroes/tara.webp",
+          "width": 560,
+          "height": 712
+        },
+        "de": {
+          "src": "/img/game-41/heroes/tara.webp",
+          "width": 560,
+          "height": 712
+        },
+        "ru": {
+          "src": "/img/game-41/heroes/tara.webp",
+          "width": 560,
+          "height": 712
+        },
+        "zh-cn": {
+          "src": "/img/game-41/heroes/tara.webp",
+          "width": 560,
+          "height": 712
+        },
+        "ar": {
+          "src": "/img/game-41/heroes/tara.webp",
+          "width": 560,
+          "height": 712
+        },
+        "nl": {
+          "src": "/img/game-41/heroes/tara.webp",
+          "width": 560,
+          "height": 712
+        },
+        "fr": {
+          "src": "/img/game-41/heroes/tara.webp",
+          "width": 560,
+          "height": 712
+        },
+        "id": {
+          "src": "/img/game-41/heroes/tara.webp",
+          "width": 560,
+          "height": 712
+        },
+        "it": {
+          "src": "/img/game-41/heroes/tara.webp",
+          "width": 560,
+          "height": 712
+        },
+        "pl": {
+          "src": "/img/game-41/heroes/tara.webp",
+          "width": 560,
+          "height": 712
+        },
+        "pt": {
+          "src": "/img/game-41/heroes/tara.webp",
+          "width": 560,
+          "height": 712
+        },
+        "es": {
+          "src": "/img/game-41/heroes/tara.webp",
+          "width": 560,
+          "height": 712
+        },
+        "sv": {
+          "src": "/img/game-41/heroes/tara.webp",
+          "width": 560,
+          "height": 712
+        },
+        "th": {
+          "src": "/img/game-41/heroes/tara.webp",
+          "width": 560,
+          "height": 712
+        },
+        "tr": {
+          "src": "/img/game-41/heroes/tara.webp",
+          "width": 560,
+          "height": 712
+        },
+        "vi": {
+          "src": "/img/game-41/heroes/tara.webp",
+          "width": 560,
+          "height": 712
+        },
+        "ms": {
+          "src": "/img/game-41/heroes/tara.webp",
+          "width": 560,
+          "height": 712
+        },
+        "nb": {
+          "src": "/img/game-41/heroes/tara.webp",
+          "width": 560,
+          "height": 712
+        }
+      }
+    },
+    {
+      "id": "jacob",
+      "routes": {
+        "en": "/en/heroes/jacob/",
+        "ko": "/ko/heroes/jacob/",
+        "ja": "/ja/heroes/jacob/",
+        "zh-tw": "/zh-tw/heroes/jacob/",
+        "de": "/de/heroes/jacob/",
+        "ru": "/ru/heroes/jacob/",
+        "zh-cn": "/zh-cn/heroes/jacob/",
+        "ar": "/ar/heroes/jacob/",
+        "nl": "/nl/heroes/jacob/",
+        "fr": "/fr/heroes/jacob/",
+        "id": "/id/heroes/jacob/",
+        "it": "/it/heroes/jacob/",
+        "pl": "/pl/heroes/jacob/",
+        "pt": "/pt/heroes/jacob/",
+        "es": "/es/heroes/jacob/",
+        "sv": "/sv/heroes/jacob/",
+        "th": "/th/heroes/jacob/",
+        "tr": "/tr/heroes/jacob/",
+        "vi": "/vi/heroes/jacob/",
+        "ms": "/ms/heroes/jacob/",
+        "nb": "/nb/heroes/jacob/"
+      },
+      "images": {
+        "en": {
+          "src": "/img/game-41/heroes/jacob.webp",
+          "width": 452,
+          "height": 712
+        },
+        "ko": {
+          "src": "/img/game-41/heroes/jacob.webp",
+          "width": 452,
+          "height": 712
+        },
+        "ja": {
+          "src": "/img/game-41/heroes/jacob.webp",
+          "width": 452,
+          "height": 712
+        },
+        "zh-tw": {
+          "src": "/img/game-41/heroes/jacob.webp",
+          "width": 452,
+          "height": 712
+        },
+        "de": {
+          "src": "/img/game-41/heroes/jacob.webp",
+          "width": 452,
+          "height": 712
+        },
+        "ru": {
+          "src": "/img/game-41/heroes/jacob.webp",
+          "width": 452,
+          "height": 712
+        },
+        "zh-cn": {
+          "src": "/img/game-41/heroes/jacob.webp",
+          "width": 452,
+          "height": 712
+        },
+        "ar": {
+          "src": "/img/game-41/heroes/jacob.webp",
+          "width": 452,
+          "height": 712
+        },
+        "nl": {
+          "src": "/img/game-41/heroes/jacob.webp",
+          "width": 452,
+          "height": 712
+        },
+        "fr": {
+          "src": "/img/game-41/heroes/jacob.webp",
+          "width": 452,
+          "height": 712
+        },
+        "id": {
+          "src": "/img/game-41/heroes/jacob.webp",
+          "width": 452,
+          "height": 712
+        },
+        "it": {
+          "src": "/img/game-41/heroes/jacob.webp",
+          "width": 452,
+          "height": 712
+        },
+        "pl": {
+          "src": "/img/game-41/heroes/jacob.webp",
+          "width": 452,
+          "height": 712
+        },
+        "pt": {
+          "src": "/img/game-41/heroes/jacob.webp",
+          "width": 452,
+          "height": 712
+        },
+        "es": {
+          "src": "/img/game-41/heroes/jacob.webp",
+          "width": 452,
+          "height": 712
+        },
+        "sv": {
+          "src": "/img/game-41/heroes/jacob.webp",
+          "width": 452,
+          "height": 712
+        },
+        "th": {
+          "src": "/img/game-41/heroes/jacob.webp",
+          "width": 452,
+          "height": 712
+        },
+        "tr": {
+          "src": "/img/game-41/heroes/jacob.webp",
+          "width": 452,
+          "height": 712
+        },
+        "vi": {
+          "src": "/img/game-41/heroes/jacob.webp",
+          "width": 452,
+          "height": 712
+        },
+        "ms": {
+          "src": "/img/game-41/heroes/jacob.webp",
+          "width": 452,
+          "height": 712
+        },
+        "nb": {
+          "src": "/img/game-41/heroes/jacob.webp",
+          "width": 452,
+          "height": 712
+        }
+      }
+    },
+    {
+      "id": "tarzan",
+      "routes": {
+        "en": "/en/heroes/tazan/",
+        "ko": "/ko/heroes/tarzan/",
+        "ja": "/ja/heroes/tarzan/",
+        "zh-tw": "/zh-tw/heroes/tarzan/",
+        "de": "/de/heroes/tazan/",
+        "ru": "/ru/heroes/tarzan/",
+        "zh-cn": "/zh-cn/heroes/tazan/",
+        "ar": "/ar/heroes/tazan/",
+        "nl": "/nl/heroes/tazan/",
+        "fr": "/fr/heroes/tazan/",
+        "id": "/id/heroes/tazan/",
+        "it": "/it/heroes/tazan/",
+        "pl": "/pl/heroes/tazan/",
+        "pt": "/pt/heroes/tazan/",
+        "es": "/es/heroes/tazan/",
+        "sv": "/sv/heroes/tazan/",
+        "th": "/th/heroes/tazan/",
+        "tr": "/tr/heroes/tazan/",
+        "vi": "/vi/heroes/tazan/",
+        "ms": "/ms/heroes/tazan/",
+        "nb": "/nb/heroes/tazan/"
+      },
+      "images": {
+        "en": {
+          "src": "/img/game-41/heroes/tarzan.webp",
+          "width": 520,
+          "height": 712
+        },
+        "ko": {
+          "src": "/img/game-41/heroes/tarzan.webp",
+          "width": 520,
+          "height": 712
+        },
+        "ja": {
+          "src": "/img/game-41/heroes/tarzan.webp",
+          "width": 520,
+          "height": 712
+        },
+        "zh-tw": {
+          "src": "/img/game-41/heroes/tarzan.webp",
+          "width": 520,
+          "height": 712
+        },
+        "de": {
+          "src": "/img/game-41/heroes/tarzan.webp",
+          "width": 520,
+          "height": 712
+        },
+        "ru": {
+          "src": "/img/game-41/heroes/tarzan.webp",
+          "width": 520,
+          "height": 712
+        },
+        "zh-cn": {
+          "src": "/img/game-41/heroes/tarzan.webp",
+          "width": 520,
+          "height": 712
+        },
+        "ar": {
+          "src": "/img/game-41/heroes/tarzan.webp",
+          "width": 520,
+          "height": 712
+        },
+        "nl": {
+          "src": "/img/game-41/heroes/tarzan.webp",
+          "width": 520,
+          "height": 712
+        },
+        "fr": {
+          "src": "/img/game-41/heroes/tarzan.webp",
+          "width": 520,
+          "height": 712
+        },
+        "id": {
+          "src": "/img/game-41/heroes/tarzan.webp",
+          "width": 520,
+          "height": 712
+        },
+        "it": {
+          "src": "/img/game-41/heroes/tarzan.webp",
+          "width": 520,
+          "height": 712
+        },
+        "pl": {
+          "src": "/img/game-41/heroes/tarzan.webp",
+          "width": 520,
+          "height": 712
+        },
+        "pt": {
+          "src": "/img/game-41/heroes/tarzan.webp",
+          "width": 520,
+          "height": 712
+        },
+        "es": {
+          "src": "/img/game-41/heroes/tarzan.webp",
+          "width": 520,
+          "height": 712
+        },
+        "sv": {
+          "src": "/img/game-41/heroes/tarzan.webp",
+          "width": 520,
+          "height": 712
+        },
+        "th": {
+          "src": "/img/game-41/heroes/tarzan.webp",
+          "width": 520,
+          "height": 712
+        },
+        "tr": {
+          "src": "/img/game-41/heroes/tarzan.webp",
+          "width": 520,
+          "height": 712
+        },
+        "vi": {
+          "src": "/img/game-41/heroes/tarzan.webp",
+          "width": 520,
+          "height": 712
+        },
+        "ms": {
+          "src": "/img/game-41/heroes/tarzan.webp",
+          "width": 520,
+          "height": 712
+        },
+        "nb": {
+          "src": "/img/game-41/heroes/tarzan.webp",
+          "width": 520,
+          "height": 712
+        }
+      }
+    },
+    {
+      "id": "kiron",
+      "routes": {
+        "en": "/en/heroes/kiron/",
+        "ko": "/ko/heroes/kiron/",
+        "ja": "/ja/heroes/kiron/",
+        "zh-tw": "/zh-tw/heroes/kiron/",
+        "de": "/de/heroes/kiron/",
+        "ru": "/ru/heroes/kiron/",
+        "zh-cn": "/zh-cn/heroes/kiron/",
+        "ar": "/ar/heroes/kiron/",
+        "nl": "/nl/heroes/kiron/",
+        "fr": "/fr/heroes/kiron/",
+        "id": "/id/heroes/kiron/",
+        "it": "/it/heroes/kiron/",
+        "pl": "/pl/heroes/kiron/",
+        "pt": "/pt/heroes/kiron/",
+        "es": "/es/heroes/kiron/",
+        "sv": "/sv/heroes/kiron/",
+        "th": "/th/heroes/kiron/",
+        "tr": "/tr/heroes/kiron/",
+        "vi": "/vi/heroes/kiron/",
+        "ms": "/ms/heroes/kiron/",
+        "nb": "/nb/heroes/kiron/"
+      },
+      "images": {
+        "en": {
+          "src": "/img/game-41/heroes/kiron.webp",
+          "width": 752,
+          "height": 712
+        },
+        "ko": {
+          "src": "/img/game-41/heroes/kiron.webp",
+          "width": 752,
+          "height": 712
+        },
+        "ja": {
+          "src": "/img/game-41/heroes/kiron.webp",
+          "width": 752,
+          "height": 712
+        },
+        "zh-tw": {
+          "src": "/img/game-41/heroes/kiron.webp",
+          "width": 752,
+          "height": 712
+        },
+        "de": {
+          "src": "/img/game-41/heroes/kiron.webp",
+          "width": 752,
+          "height": 712
+        },
+        "ru": {
+          "src": "/img/game-41/heroes/kiron.webp",
+          "width": 752,
+          "height": 712
+        },
+        "zh-cn": {
+          "src": "/img/game-41/heroes/kiron.webp",
+          "width": 752,
+          "height": 712
+        },
+        "ar": {
+          "src": "/img/game-41/heroes/kiron.webp",
+          "width": 752,
+          "height": 712
+        },
+        "nl": {
+          "src": "/img/game-41/heroes/kiron.webp",
+          "width": 752,
+          "height": 712
+        },
+        "fr": {
+          "src": "/img/game-41/heroes/kiron.webp",
+          "width": 752,
+          "height": 712
+        },
+        "id": {
+          "src": "/img/game-41/heroes/kiron.webp",
+          "width": 752,
+          "height": 712
+        },
+        "it": {
+          "src": "/img/game-41/heroes/kiron.webp",
+          "width": 752,
+          "height": 712
+        },
+        "pl": {
+          "src": "/img/game-41/heroes/kiron.webp",
+          "width": 752,
+          "height": 712
+        },
+        "pt": {
+          "src": "/img/game-41/heroes/kiron.webp",
+          "width": 752,
+          "height": 712
+        },
+        "es": {
+          "src": "/img/game-41/heroes/kiron.webp",
+          "width": 752,
+          "height": 712
+        },
+        "sv": {
+          "src": "/img/game-41/heroes/kiron.webp",
+          "width": 752,
+          "height": 712
+        },
+        "th": {
+          "src": "/img/game-41/heroes/kiron.webp",
+          "width": 752,
+          "height": 712
+        },
+        "tr": {
+          "src": "/img/game-41/heroes/kiron.webp",
+          "width": 752,
+          "height": 712
+        },
+        "vi": {
+          "src": "/img/game-41/heroes/kiron.webp",
+          "width": 752,
+          "height": 712
+        },
+        "ms": {
+          "src": "/img/game-41/heroes/kiron.webp",
+          "width": 752,
+          "height": 712
+        },
+        "nb": {
+          "src": "/img/game-41/heroes/kiron.webp",
+          "width": 752,
+          "height": 712
+        }
+      }
+    },
+    {
+      "id": "shark",
+      "routes": {
+        "en": "/en/heroes/shark/",
+        "ko": "/ko/heroes/shark/",
+        "ja": "/ja/heroes/shark/",
+        "zh-tw": "/zh-tw/heroes/shark/",
+        "de": "/de/heroes/shark/",
+        "ru": "/ru/heroes/shark/",
+        "zh-cn": "/zh-cn/heroes/shark/",
+        "ar": "/ar/heroes/shark/",
+        "nl": "/nl/heroes/shark/",
+        "fr": "/fr/heroes/shark/",
+        "id": "/id/heroes/shark/",
+        "it": "/it/heroes/shark/",
+        "pl": "/pl/heroes/shark/",
+        "pt": "/pt/heroes/shark/",
+        "es": "/es/heroes/shark/",
+        "sv": "/sv/heroes/shark/",
+        "th": "/th/heroes/shark/",
+        "tr": "/tr/heroes/shark/",
+        "vi": "/vi/heroes/shark/",
+        "ms": "/ms/heroes/shark/",
+        "nb": "/nb/heroes/shark/"
+      },
+      "images": {
+        "en": {
+          "src": "/img/game-41/heroes/shark.webp",
+          "width": 640,
+          "height": 712
+        },
+        "ko": {
+          "src": "/img/game-41/heroes/shark.webp",
+          "width": 640,
+          "height": 712
+        },
+        "ja": {
+          "src": "/img/game-41/heroes/shark.webp",
+          "width": 640,
+          "height": 712
+        },
+        "zh-tw": {
+          "src": "/img/game-41/heroes/shark.webp",
+          "width": 640,
+          "height": 712
+        },
+        "de": {
+          "src": "/img/game-41/heroes/shark.webp",
+          "width": 640,
+          "height": 712
+        },
+        "ru": {
+          "src": "/img/game-41/heroes/shark.webp",
+          "width": 640,
+          "height": 712
+        },
+        "zh-cn": {
+          "src": "/img/game-41/heroes/shark.webp",
+          "width": 640,
+          "height": 712
+        },
+        "ar": {
+          "src": "/img/game-41/heroes/shark.webp",
+          "width": 640,
+          "height": 712
+        },
+        "nl": {
+          "src": "/img/game-41/heroes/shark.webp",
+          "width": 640,
+          "height": 712
+        },
+        "fr": {
+          "src": "/img/game-41/heroes/shark.webp",
+          "width": 640,
+          "height": 712
+        },
+        "id": {
+          "src": "/img/game-41/heroes/shark.webp",
+          "width": 640,
+          "height": 712
+        },
+        "it": {
+          "src": "/img/game-41/heroes/shark.webp",
+          "width": 640,
+          "height": 712
+        },
+        "pl": {
+          "src": "/img/game-41/heroes/shark.webp",
+          "width": 640,
+          "height": 712
+        },
+        "pt": {
+          "src": "/img/game-41/heroes/shark.webp",
+          "width": 640,
+          "height": 712
+        },
+        "es": {
+          "src": "/img/game-41/heroes/shark.webp",
+          "width": 640,
+          "height": 712
+        },
+        "sv": {
+          "src": "/img/game-41/heroes/shark.webp",
+          "width": 640,
+          "height": 712
+        },
+        "th": {
+          "src": "/img/game-41/heroes/shark.webp",
+          "width": 640,
+          "height": 712
+        },
+        "tr": {
+          "src": "/img/game-41/heroes/shark.webp",
+          "width": 640,
+          "height": 712
+        },
+        "vi": {
+          "src": "/img/game-41/heroes/shark.webp",
+          "width": 640,
+          "height": 712
+        },
+        "ms": {
+          "src": "/img/game-41/heroes/shark.webp",
+          "width": 640,
+          "height": 712
+        },
+        "nb": {
+          "src": "/img/game-41/heroes/shark.webp",
+          "width": 640,
+          "height": 712
+        }
+      }
+    },
+    {
+      "id": "lagnar",
+      "routes": {
+        "en": "/en/heroes/lagnar/",
+        "ko": "/ko/heroes/lagnar/",
+        "ja": "/ja/heroes/lagnar/",
+        "zh-tw": "/zh-tw/heroes/lagnar/",
+        "de": "/de/heroes/lagnar/",
+        "ru": "/ru/heroes/lagnar/",
+        "zh-cn": "/zh-cn/heroes/lagnar/",
+        "ar": "/ar/heroes/lagnar/",
+        "nl": "/nl/heroes/lagnar/",
+        "fr": "/fr/heroes/lagnar/",
+        "id": "/id/heroes/lagnar/",
+        "it": "/it/heroes/lagnar/",
+        "pl": "/pl/heroes/lagnar/",
+        "pt": "/pt/heroes/lagnar/",
+        "es": "/es/heroes/lagnar/",
+        "sv": "/sv/heroes/lagnar/",
+        "th": "/th/heroes/lagnar/",
+        "tr": "/tr/heroes/lagnar/",
+        "vi": "/vi/heroes/lagnar/",
+        "ms": "/ms/heroes/lagnar/",
+        "nb": "/nb/heroes/lagnar/"
+      },
+      "images": {
+        "en": {
+          "src": "/img/game-40/heroes/lagnar.webp",
+          "width": 596,
+          "height": 712
+        },
+        "ko": {
+          "src": "/img/game-40/heroes/lagnar.webp",
+          "width": 596,
+          "height": 712
+        },
+        "ja": {
+          "src": "/img/game-40/heroes/lagnar.webp",
+          "width": 596,
+          "height": 712
+        },
+        "zh-tw": {
+          "src": "/img/game-40/heroes/lagnar.webp",
+          "width": 596,
+          "height": 712
+        },
+        "de": {
+          "src": "/img/game-40/heroes/lagnar.webp",
+          "width": 596,
+          "height": 712
+        },
+        "ru": {
+          "src": "/img/game-40/heroes/lagnar.webp",
+          "width": 596,
+          "height": 712
+        },
+        "zh-cn": {
+          "src": "/img/game-40/heroes/lagnar.webp",
+          "width": 596,
+          "height": 712
+        },
+        "ar": {
+          "src": "/img/game-40/heroes/lagnar.webp",
+          "width": 596,
+          "height": 712
+        },
+        "nl": {
+          "src": "/img/game-40/heroes/lagnar.webp",
+          "width": 596,
+          "height": 712
+        },
+        "fr": {
+          "src": "/img/game-40/heroes/lagnar.webp",
+          "width": 596,
+          "height": 712
+        },
+        "id": {
+          "src": "/img/game-40/heroes/lagnar.webp",
+          "width": 596,
+          "height": 712
+        },
+        "it": {
+          "src": "/img/game-40/heroes/lagnar.webp",
+          "width": 596,
+          "height": 712
+        },
+        "pl": {
+          "src": "/img/game-40/heroes/lagnar.webp",
+          "width": 596,
+          "height": 712
+        },
+        "pt": {
+          "src": "/img/game-40/heroes/lagnar.webp",
+          "width": 596,
+          "height": 712
+        },
+        "es": {
+          "src": "/img/game-40/heroes/lagnar.webp",
+          "width": 596,
+          "height": 712
+        },
+        "sv": {
+          "src": "/img/game-40/heroes/lagnar.webp",
+          "width": 596,
+          "height": 712
+        },
+        "th": {
+          "src": "/img/game-40/heroes/lagnar.webp",
+          "width": 596,
+          "height": 712
+        },
+        "tr": {
+          "src": "/img/game-40/heroes/lagnar.webp",
+          "width": 596,
+          "height": 712
+        },
+        "vi": {
+          "src": "/img/game-40/heroes/lagnar.webp",
+          "width": 596,
+          "height": 712
+        },
+        "ms": {
+          "src": "/img/game-40/heroes/lagnar.webp",
+          "width": 596,
+          "height": 712
+        },
+        "nb": {
+          "src": "/img/game-40/heroes/lagnar.webp",
+          "width": 596,
+          "height": 712
+        }
+      }
+    },
+    {
+      "id": "knotty",
+      "routes": {
+        "en": "/en/heroes/knotty/",
+        "ko": "/ko/heroes/knotty/",
+        "ja": "/ja/heroes/knotty/",
+        "zh-tw": "/zh-tw/heroes/knotty/",
+        "de": "/de/heroes/knotty/",
+        "ru": "/ru/heroes/knotty/",
+        "zh-cn": "/zh-cn/heroes/knotty/",
+        "ar": "/ar/heroes/knotty/",
+        "nl": "/nl/heroes/knotty/",
+        "fr": "/fr/heroes/knotty/",
+        "id": "/id/heroes/knotty/",
+        "it": "/it/heroes/knotty/",
+        "pl": "/pl/heroes/knotty/",
+        "pt": "/pt/heroes/knotty/",
+        "es": "/es/heroes/knotty/",
+        "sv": "/sv/heroes/knotty/",
+        "th": "/th/heroes/knotty/",
+        "tr": "/tr/heroes/knotty/",
+        "vi": "/vi/heroes/knotty/",
+        "ms": "/ms/heroes/knotty/",
+        "nb": "/nb/heroes/knotty/"
+      },
+      "images": {
+        "en": {
+          "src": "/img/game-41/heroes/knotty.webp",
+          "width": 596,
+          "height": 712
+        },
+        "ko": {
+          "src": "/img/game-41/heroes/knotty.webp",
+          "width": 596,
+          "height": 712
+        },
+        "ja": {
+          "src": "/img/game-41/heroes/knotty.webp",
+          "width": 596,
+          "height": 712
+        },
+        "zh-tw": {
+          "src": "/img/game-41/heroes/knotty.webp",
+          "width": 596,
+          "height": 712
+        },
+        "de": {
+          "src": "/img/game-41/heroes/knotty.webp",
+          "width": 596,
+          "height": 712
+        },
+        "ru": {
+          "src": "/img/game-41/heroes/knotty.webp",
+          "width": 596,
+          "height": 712
+        },
+        "zh-cn": {
+          "src": "/img/game-41/heroes/knotty.webp",
+          "width": 596,
+          "height": 712
+        },
+        "ar": {
+          "src": "/img/game-41/heroes/knotty.webp",
+          "width": 596,
+          "height": 712
+        },
+        "nl": {
+          "src": "/img/game-41/heroes/knotty.webp",
+          "width": 596,
+          "height": 712
+        },
+        "fr": {
+          "src": "/img/game-41/heroes/knotty.webp",
+          "width": 596,
+          "height": 712
+        },
+        "id": {
+          "src": "/img/game-41/heroes/knotty.webp",
+          "width": 596,
+          "height": 712
+        },
+        "it": {
+          "src": "/img/game-41/heroes/knotty.webp",
+          "width": 596,
+          "height": 712
+        },
+        "pl": {
+          "src": "/img/game-41/heroes/knotty.webp",
+          "width": 596,
+          "height": 712
+        },
+        "pt": {
+          "src": "/img/game-41/heroes/knotty.webp",
+          "width": 596,
+          "height": 712
+        },
+        "es": {
+          "src": "/img/game-41/heroes/knotty.webp",
+          "width": 596,
+          "height": 712
+        },
+        "sv": {
+          "src": "/img/game-41/heroes/knotty.webp",
+          "width": 596,
+          "height": 712
+        },
+        "th": {
+          "src": "/img/game-41/heroes/knotty.webp",
+          "width": 596,
+          "height": 712
+        },
+        "tr": {
+          "src": "/img/game-41/heroes/knotty.webp",
+          "width": 596,
+          "height": 712
+        },
+        "vi": {
+          "src": "/img/game-41/heroes/knotty.webp",
+          "width": 596,
+          "height": 712
+        },
+        "ms": {
+          "src": "/img/game-41/heroes/knotty.webp",
+          "width": 596,
+          "height": 712
+        },
+        "nb": {
+          "src": "/img/game-41/heroes/knotty.webp",
+          "width": 596,
+          "height": 712
+        }
+      }
+    },
+    {
+      "id": "undine",
+      "routes": {
+        "en": "/en/heroes/undine/",
+        "ko": "/ko/heroes/undine/",
+        "ja": "/ja/heroes/undine/",
+        "zh-tw": "/zh-tw/heroes/undine/",
+        "de": "/de/heroes/undine/",
+        "ru": "/ru/heroes/undine/",
+        "zh-cn": "/zh-cn/heroes/undine/",
+        "ar": "/ar/heroes/undine/",
+        "nl": "/nl/heroes/undine/",
+        "fr": "/fr/heroes/undine/",
+        "id": "/id/heroes/undine/",
+        "it": "/it/heroes/undine/",
+        "pl": "/pl/heroes/undine/",
+        "pt": "/pt/heroes/undine/",
+        "es": "/es/heroes/undine/",
+        "sv": "/sv/heroes/undine/",
+        "th": "/th/heroes/undine/",
+        "tr": "/tr/heroes/undine/",
+        "vi": "/vi/heroes/undine/",
+        "ms": "/ms/heroes/undine/",
+        "nb": "/nb/heroes/undine/"
+      },
+      "images": {
+        "en": {
+          "src": "/img/game-40/heroes/undine.webp",
+          "width": 652,
+          "height": 712
+        },
+        "ko": {
+          "src": "/img/game-40/heroes/undine.webp",
+          "width": 652,
+          "height": 712
+        },
+        "ja": {
+          "src": "/img/game-40/heroes/undine.webp",
+          "width": 652,
+          "height": 712
+        },
+        "zh-tw": {
+          "src": "/img/game-40/heroes/undine.webp",
+          "width": 652,
+          "height": 712
+        },
+        "de": {
+          "src": "/img/game-40/heroes/undine.webp",
+          "width": 652,
+          "height": 712
+        },
+        "ru": {
+          "src": "/img/game-40/heroes/undine.webp",
+          "width": 652,
+          "height": 712
+        },
+        "zh-cn": {
+          "src": "/img/game-40/heroes/undine.webp",
+          "width": 652,
+          "height": 712
+        },
+        "ar": {
+          "src": "/img/game-40/heroes/undine.webp",
+          "width": 652,
+          "height": 712
+        },
+        "nl": {
+          "src": "/img/game-40/heroes/undine.webp",
+          "width": 652,
+          "height": 712
+        },
+        "fr": {
+          "src": "/img/game-40/heroes/undine.webp",
+          "width": 652,
+          "height": 712
+        },
+        "id": {
+          "src": "/img/game-40/heroes/undine.webp",
+          "width": 652,
+          "height": 712
+        },
+        "it": {
+          "src": "/img/game-40/heroes/undine.webp",
+          "width": 652,
+          "height": 712
+        },
+        "pl": {
+          "src": "/img/game-40/heroes/undine.webp",
+          "width": 652,
+          "height": 712
+        },
+        "pt": {
+          "src": "/img/game-40/heroes/undine.webp",
+          "width": 652,
+          "height": 712
+        },
+        "es": {
+          "src": "/img/game-40/heroes/undine.webp",
+          "width": 652,
+          "height": 712
+        },
+        "sv": {
+          "src": "/img/game-40/heroes/undine.webp",
+          "width": 652,
+          "height": 712
+        },
+        "th": {
+          "src": "/img/game-40/heroes/undine.webp",
+          "width": 652,
+          "height": 712
+        },
+        "tr": {
+          "src": "/img/game-40/heroes/undine.webp",
+          "width": 652,
+          "height": 712
+        },
+        "vi": {
+          "src": "/img/game-40/heroes/undine.webp",
+          "width": 652,
+          "height": 712
+        },
+        "ms": {
+          "src": "/img/game-40/heroes/undine.webp",
+          "width": 652,
+          "height": 712
+        },
+        "nb": {
+          "src": "/img/game-40/heroes/undine.webp",
+          "width": 652,
+          "height": 712
+        }
+      }
+    },
+    {
+      "id": "dave",
+      "routes": {
+        "en": "/en/heroes/dave/",
+        "ko": "/ko/heroes/dave/",
+        "ja": "/ja/heroes/dave/",
+        "zh-tw": "/zh-tw/heroes/dave/",
+        "de": "/de/heroes/dave/",
+        "ru": "/ru/heroes/dave/",
+        "zh-cn": "/zh-cn/heroes/dave/",
+        "ar": "/ar/heroes/dave/",
+        "nl": "/nl/heroes/dave/",
+        "fr": "/fr/heroes/dave/",
+        "id": "/id/heroes/dave/",
+        "it": "/it/heroes/dave/",
+        "pl": "/pl/heroes/dave/",
+        "pt": "/pt/heroes/dave/",
+        "es": "/es/heroes/dave/",
+        "sv": "/sv/heroes/dave/",
+        "th": "/th/heroes/dave/",
+        "tr": "/tr/heroes/dave/",
+        "vi": "/vi/heroes/dave/",
+        "ms": "/ms/heroes/dave/",
+        "nb": "/nb/heroes/dave/"
+      },
+      "images": {
+        "en": {
+          "src": "/img/game-40/heroes/dave.webp",
+          "width": 682,
+          "height": 712
+        },
+        "ko": {
+          "src": "/img/game-40/heroes/dave.webp",
+          "width": 682,
+          "height": 712
+        },
+        "ja": {
+          "src": "/img/game-40/heroes/dave.webp",
+          "width": 682,
+          "height": 712
+        },
+        "zh-tw": {
+          "src": "/img/game-40/heroes/dave.webp",
+          "width": 682,
+          "height": 712
+        },
+        "de": {
+          "src": "/img/game-40/heroes/dave.webp",
+          "width": 682,
+          "height": 712
+        },
+        "ru": {
+          "src": "/img/game-40/heroes/dave.webp",
+          "width": 682,
+          "height": 712
+        },
+        "zh-cn": {
+          "src": "/img/game-40/heroes/dave.webp",
+          "width": 682,
+          "height": 712
+        },
+        "ar": {
+          "src": "/img/game-40/heroes/dave.webp",
+          "width": 682,
+          "height": 712
+        },
+        "nl": {
+          "src": "/img/game-40/heroes/dave.webp",
+          "width": 682,
+          "height": 712
+        },
+        "fr": {
+          "src": "/img/game-40/heroes/dave.webp",
+          "width": 682,
+          "height": 712
+        },
+        "id": {
+          "src": "/img/game-40/heroes/dave.webp",
+          "width": 682,
+          "height": 712
+        },
+        "it": {
+          "src": "/img/game-40/heroes/dave.webp",
+          "width": 682,
+          "height": 712
+        },
+        "pl": {
+          "src": "/img/game-40/heroes/dave.webp",
+          "width": 682,
+          "height": 712
+        },
+        "pt": {
+          "src": "/img/game-40/heroes/dave.webp",
+          "width": 682,
+          "height": 712
+        },
+        "es": {
+          "src": "/img/game-40/heroes/dave.webp",
+          "width": 682,
+          "height": 712
+        },
+        "sv": {
+          "src": "/img/game-40/heroes/dave.webp",
+          "width": 682,
+          "height": 712
+        },
+        "th": {
+          "src": "/img/game-40/heroes/dave.webp",
+          "width": 682,
+          "height": 712
+        },
+        "tr": {
+          "src": "/img/game-40/heroes/dave.webp",
+          "width": 682,
+          "height": 712
+        },
+        "vi": {
+          "src": "/img/game-40/heroes/dave.webp",
+          "width": 682,
+          "height": 712
+        },
+        "ms": {
+          "src": "/img/game-40/heroes/dave.webp",
+          "width": 682,
+          "height": 712
+        },
+        "nb": {
+          "src": "/img/game-40/heroes/dave.webp",
+          "width": 682,
+          "height": 712
+        }
+      }
+    },
+    {
+      "id": "lava",
+      "routes": {
+        "en": "/en/heroes/lava/",
+        "ko": "/ko/heroes/lava/",
+        "ja": "/ja/heroes/lava/",
+        "zh-tw": "/zh-tw/heroes/lava/",
+        "de": "/de/heroes/lava/",
+        "ru": "/ru/heroes/lava/",
+        "zh-cn": "/zh-cn/heroes/lava/",
+        "ar": "/ar/heroes/lava/",
+        "nl": "/nl/heroes/lava/",
+        "fr": "/fr/heroes/lava/",
+        "id": "/id/heroes/lava/",
+        "it": "/it/heroes/lava/",
+        "pl": "/pl/heroes/lava/",
+        "pt": "/pt/heroes/lava/",
+        "es": "/es/heroes/lava/",
+        "sv": "/sv/heroes/lava/",
+        "th": "/th/heroes/lava/",
+        "tr": "/tr/heroes/lava/",
+        "vi": "/vi/heroes/lava/",
+        "ms": "/ms/heroes/lava/",
+        "nb": "/nb/heroes/lava/"
+      },
+      "images": {}
+    }
+  ]
+}

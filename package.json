@@ -72,7 +72,10 @@
     "test:power-plant:global": "node --test scripts/test-power-plant-global-rebuild.js",
     "build:v3": "node scripts/build-v3-search.js && node scripts/build-v3-platform.js",
     "test:v3": "node --test scripts/test-v3-*.js",
-    "postbuild:global:release": "npm run build:v3"
+    "postbuild:global:release": "npm run build:v3",
+    "build:hero-atlas": "node scripts/build-hero-atlas.js && node scripts/build-hero-atlas-search.js && node scripts/build-v3-search.js",
+    "test:hero-atlas": "node --test scripts/test-hero-atlas-runtime.js scripts/test-hero-atlas-publication.js scripts/test-hero-atlas-localization.js scripts/test-hero-atlas-search.js",
+    "postbuild:v3": "npm run build:hero-atlas"
   },
   "keywords": [],
   "author": "",
