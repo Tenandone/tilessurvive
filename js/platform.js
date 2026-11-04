@@ -1,9 +1,12 @@
 (function () {
   "use strict";
-  const lang = document.documentElement.dataset.lang || "en",
-    t = window.TS_COPY[lang] || window.TS_COPY.en,
+  const locales = window.TS_LOCALES,
+    lang = locales ? locales.current() : document.documentElement.dataset.lang || "en",
+    t = window.TS_I18N ? window.TS_I18N.require(lang) : window.TS_COPY[lang],
     main = document.querySelector("main");
   if (!main) return;
+  if (!t) throw new Error("Missing UI translation for " + lang);
+  const isHome = () => locales ? /^\/(?:index\.html)?$/.test(locales.stripLocale(location.pathname)) : /^\/(ko|en|ja|ru|zh-tw|de)\/$/.test(location.pathname);
   // Localised table labels must not change inputs to the shared numeric formulas.
   const sourceCell = (cell) => cell.dataset.tsOriginalValue ?? cell.textContent.trim();
   const make = (tag, cls, text) => {
@@ -56,7 +59,7 @@
       nav.append(a);
     });
     const hero = main.querySelector(".hero,.hero-card,.home-world-hero");
-    if (hero && !location.pathname.match(/^\/(ko|en|ja|ru|zh-tw|de)\/$/))
+    if (hero && !isHome())
       hero.after(nav);
   }
   // Hero directory: derive filters from actual visible metadata, never guessed classifications.
@@ -481,7 +484,7 @@
   // Copy existing gift codes without altering code values or expiry claims.
   if (
     location.pathname.includes("/codes/") ||
-    location.pathname.match(/^\/(ko|en|ja|ru|zh-tw|de)\/$/)
+    isHome()
   )
     main.querySelectorAll("code").forEach((code) => {
       if (

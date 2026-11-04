@@ -17,7 +17,24 @@ test('six independent game-screen anchors still agree with their own species row
  for(const id of ['snowball','dodo','buckler','hardhead','shadow'])assert.equal(M.calculate(D.pets.find(p=>p.id===id),1,2).total,110);assert.equal(M.calculate(D.pets.find(p=>p.id==='starhorn'),44,45).total,2600);
 });
 test('five hub pages keep legacy Starhorn rows and canonical/hreflang while adding one selector/table',()=>{
- for(const lang of langs){const text=fs.readFileSync(path.join(root,lang,'database/pet-system/index.html'),'utf8'),d=parseHTML(text).document,f=d.querySelector('[data-growth-form="petExp"]');assert.equal(d.querySelectorAll('[data-pet-exp-selector-40]').length,1);assert.equal(f.querySelectorAll('select[name="pet"] option').length,7);assert.equal(f.querySelector('option[selected]').getAttribute('value'),'starhorn');assert.deepEqual(JSON.parse(f.querySelector('script[type="application/json"]').textContent).rows,G.expRows);assert.equal(d.querySelectorAll('[data-pet-exp-profiles-table] tbody tr').length,99);assert.equal(d.querySelectorAll('[data-pet-exp-profiles-table] thead th').length,4);assert.equal(d.querySelectorAll('script[src="/js/pet-exp-profiles-40.js"]').length,1);assert.equal(d.querySelector('link[rel="canonical"]').href,`https://tilessurvive.net/${lang}/database/pet-system/`);assert.equal(d.querySelectorAll('link[rel="alternate"][hreflang]').length,7);assert.equal(d.querySelectorAll('[id]').length,new Set([...d.querySelectorAll('[id]')].map(n=>n.id)).size);assert.equal(d.querySelectorAll('[data-growth-form="petTraining"]').length,1);}
+ const locales=require('../data/i18n/locales.json').locales.filter(x=>x.status==='published');
+ for(const lang of langs){
+  const text=fs.readFileSync(path.join(root,lang,'database/pet-system/index.html'),'utf8'),d=parseHTML(text).document,f=d.querySelector('[data-growth-form="petExp"]');
+  assert.equal(d.querySelectorAll('[data-pet-exp-selector-40]').length,1);
+  assert.equal(f.querySelectorAll('select[name="pet"] option').length,7);
+  assert.equal(f.querySelector('option[selected]').getAttribute('value'),'starhorn');
+  assert.deepEqual(JSON.parse(f.querySelector('script[type="application/json"]').textContent).rows,G.expRows);
+  assert.equal(d.querySelectorAll('[data-pet-exp-profiles-table] tbody tr').length,99);
+  assert.equal(d.querySelectorAll('[data-pet-exp-profiles-table] thead th').length,4);
+  const scripts=[...d.querySelectorAll('script[src]')].filter(s=>new URL(s.src,'https://tilessurvive.net').pathname==='/js/pet-exp-profiles-40.js');
+  assert.equal(scripts.length,1);
+  if(d.getElementById('ts-locale-routes'))assert.equal(new URL(scripts[0].src,'https://tilessurvive.net').searchParams.get('v'),sha(fs.readFileSync(path.join(root,'js/pet-exp-profiles-40.js'))).slice(0,12));
+  assert.equal(d.querySelector('link[rel="canonical"]').href,`https://tilessurvive.net/${lang}/database/pet-system/`);
+  const expected=locales.map(x=>[x.hreflang.toLowerCase(),`https://tilessurvive.net/${x.code}/database/pet-system/`]);expected.push(['x-default','https://tilessurvive.net/en/database/pet-system/']);
+  assert.deepEqual([...d.querySelectorAll('link[rel="alternate"][hreflang]')].map(x=>[x.hreflang.toLowerCase(),x.href]).sort(),expected.sort());
+  assert.equal(d.querySelectorAll('[id]').length,new Set([...d.querySelectorAll('[id]')].map(n=>n.id)).size);
+  assert.equal(d.querySelectorAll('[data-growth-form="petTraining"]').length,1);
+ }
 });
 test('client selects each species, renders independent totals, rejects inputs and preserves Starhorn propagation',()=>{
  for(const lang of langs){const {document,window}=parseHTML(fs.readFileSync(path.join(root,lang,'database/pet-system/index.html'),'utf8')),form=document.querySelector('[data-growth-form="petExp"]'),select=form.querySelector('[name="pet"]'),listeners=[];form.addEventListener=(type,fn,capture)=>listeners.push({type,fn,capture});let selected='starhorn';Object.defineProperty(select,'value',{get:()=>selected,set:v=>{selected=v;}});window.TS_MATH=require('../js/platform-math');vm.runInNewContext(fs.readFileSync(path.join(root,'js/pet-exp-profiles-40.js'),'utf8'),{window,globalThis:window});assert.equal(listeners.length,2);assert(listeners.every(l=>l.capture===true));let stopped=false;listeners[0].fn({stopImmediatePropagation(){stopped=true;}});assert.equal(stopped,false);

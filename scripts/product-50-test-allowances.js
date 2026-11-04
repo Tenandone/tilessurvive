@@ -11,21 +11,27 @@ function alternates(old){
 function speedupPreserved(before,after){
  // The complete implementation from numberValue onwards must remain byte-equal,
  // apart from the three specifically reviewed Number.toLocaleString arguments.
- const normal=s=>s.replace(/\r\n/g,'\n').replaceAll(".toLocaleString(getLang()==='de'?'de-DE':undefined)",'.toLocaleString()').replaceAll(".toLocaleString(getLang()==='de'?'de-DE':undefined,{maximumFractionDigits:2})",'.toLocaleString(undefined,{maximumFractionDigits:2})');
+ const globalUI="var lang=getLang();var ui=window.TS_I18N?window.TS_I18N.feature('speedup',UI[lang],UI.en):UI[lang];if(!ui)throw Error('Missing speedup translation for '+lang);var locale=lang==='de'?'de-DE':!SUPPORTED.includes(lang)?window.TS_LOCALES.locales.find(function(row){return row.code===lang;}).numberLocale:undefined;";
+ const normal=s=>s.replace(/\r\n/g,'\n').replace(globalUI,'var ui=UI[getLang()]||UI.en;').replaceAll('.toLocaleString(locale)','.toLocaleString()').replaceAll('.toLocaleString(locale,{maximumFractionDigits:2})','.toLocaleString(undefined,{maximumFractionDigits:2})').replaceAll(".toLocaleString(getLang()==='de'?'de-DE':undefined)",'.toLocaleString()').replaceAll(".toLocaleString(getLang()==='de'?'de-DE':undefined,{maximumFractionDigits:2})",'.toLocaleString(undefined,{maximumFractionDigits:2})');
  const tail=s=>normal(s).slice(normal(s).indexOf('function numberValue'));
  assert(before.includes('function numberValue')&&after.includes('function numberValue'));
  assert.equal(tail(after),tail(before),'Only explicit locale display may differ in speedup arithmetic/init/reset');
  function run(code,lang,values){const nodes={};for(const id of ['speedupDays','speedupHours','speedupMinutes','speedupTotalMinutes','speedupTotalHours','speedupBreakdown','speedupNotice','speedupCalculate','speedupReset'])nodes[id]={value:'',textContent:'',addEventListener(){}};
   ['speedupDays','speedupHours','speedupMinutes'].forEach((id,i)=>nodes[id].value=String(values[i]));
   const document={readyState:'complete',documentElement:{lang,getAttribute:()=>lang},getElementById:id=>nodes[id],querySelector:()=>({})};
-  vm.runInNewContext(code,{document},{timeout:1000});return Object.fromEntries(['speedupTotalMinutes','speedupTotalHours','speedupBreakdown','speedupNotice'].map(id=>[id,nodes[id].textContent]));}
+  vm.runInNewContext(code,{document,window:{}},{timeout:1000});return Object.fromEntries(['speedupTotalMinutes','speedupTotalHours','speedupBreakdown','speedupNotice'].map(id=>[id,nodes[id].textContent]));}
  const cases=[[0,0,0],[1,2,3],[2,25,90],['','',''],[-1,-5,-2],['bad',0,3],[1.9,2.8,3.7],[99999,12,59],[Infinity,NaN,5]];
  for(const lang of ['ko','en','ja','ru','zh-tw'])for(const values of cases)assert.deepEqual(run(after,lang,values),run(before,lang,values),'Original speedup output '+lang+' '+values);
  const de=run(after,'de',[1,2,3]);assert.equal(de.speedupTotalMinutes,'1.563');assert.equal(de.speedupTotalHours,'26,05');assert.equal(de.speedupBreakdown,'1T 2Std. 3Min.');return true;
 }
+function databaseBeforeGlobalLocale(source){
+ const display="   const displayLocale=document.documentElement.lang==='de'?'de':undefined;\n";
+ const globalDisplay="   const lang=root.TS_LOCALES?.current(),entry=root.TS_LOCALES?.locales.find(row=>row.code===lang);\n   const displayLocale=document.documentElement.lang==='de'?'de':entry&&!['ko','en','ja','ru','zh-tw','de'].includes(lang)?entry.numberLocale:undefined;\n";
+ return source.replaceAll('\r\n','\n').replace(globalDisplay,display);
+}
 function databasePreserved(before,after){
  const display="   const displayLocale=document.documentElement.lang==='de'?'de':undefined;\n";
- const a=after.replaceAll('\r\n','\n');assert.equal(a.split(display).length-1,1);assert.equal(a.split('.toLocaleString(displayLocale)').length-1,2);
+ const a=databaseBeforeGlobalLocale(after);assert.equal(a.split(display).length-1,1);assert.equal(a.split('.toLocaleString(displayLocale)').length-1,2);
  assert.equal(a.replace(display,'').replaceAll('.toLocaleString(displayLocale)','.toLocaleString()'),before.replaceAll('\r\n','\n'),'Only two German display formatters added; all arithmetic and guards byte-identical');return true;
 }
 function expectedSitemapURLs(){
@@ -51,4 +57,4 @@ function reviewedTables(doc,lang,route){
  }
  return set;
 }
-module.exports={alternates,speedupPreserved,databasePreserved,expectedSitemapURLs,reviewedTables};
+module.exports={alternates,speedupPreserved,databasePreserved,databaseBeforeGlobalLocale,expectedSitemapURLs,reviewedTables};

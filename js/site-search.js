@@ -6,7 +6,8 @@
   const count = document.getElementById("siteSearchCount");
   if (!input || !results) return;
 
-  const lang = (document.documentElement.dataset.lang || document.documentElement.lang || "en").toLowerCase();
+  const lang = window.TS_LOCALES ? window.TS_LOCALES.current() : (document.documentElement.dataset.lang || document.documentElement.lang || "en").toLowerCase();
+  const copy = window.TS_I18N ? window.TS_I18N.require(lang) : null;
   let index = [];
 
   function normalize(value) {
@@ -20,7 +21,7 @@
       return;
     }
 
-    if (count) count.textContent = `${items.length} ${input.dataset.results || "results"}`;
+    if (count) count.textContent = `${items.length} ${input.dataset.results || copy?.results || "results"}`;
     for (const item of items.slice(0, 30)) {
       const article = document.createElement("article");
       article.className = "search-result";
@@ -59,7 +60,7 @@
       search();
     })
     .catch(() => {
-      if (count) count.textContent = input.dataset.error || "Search is temporarily unavailable.";
+      if (count) count.textContent = input.dataset.error || copy?.error || "Search is temporarily unavailable.";
     });
 
   input.addEventListener("input", search);

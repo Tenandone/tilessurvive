@@ -1,0 +1,354 @@
+{
+  "schemaVersion": 1,
+  "provenance": {
+    "method": "Authored locale-specific labels and time abbreviations; values are bound from unchanged source data",
+    "nativeSpeakerReview": false
+  },
+  "locales": {
+    "zh-cn": {
+      "phrases": {
+        "{{label}} {{amount}}": "{{label}} {{amount}}",
+        "{{research}} {{ordinal}} · {{tree}}": "{{research}} {{ordinal}} · {{tree}}",
+        "{{research}} {{ordinal}}": "{{research}} {{ordinal}}",
+        "{{research}} · {{tree}}": "{{research}} · {{tree}}",
+        "Base time {{duration}} ({{exactSeconds}} s)": "基础时间 {{duration}} ({{exactSeconds}} 秒)",
+        "{{duration}} ({{exactSeconds}} s)": "{{duration}} ({{exactSeconds}} 秒)",
+        "{{duration}}": "{{duration}}",
+        "{{building}} · Requirements {{profile}}": "{{building}} · 前置条件 {{profile}}",
+        "{{building}} · Requirements {{profile}} · {{from}} → {{to}}": "{{building}} · 前置条件 {{profile}} · {{from}} → {{to}}",
+        "{{building}} · Requirements {{profile}} · {{from}} → {{to}} · {{count}}": "{{building}} · 前置条件 {{profile}} · {{from}} → {{to}} · {{count}}",
+        "{{building}} {{instance}} · Requirements {{profile}}": "{{building}} {{instance}} · 前置条件 {{profile}}",
+        "{{building}} {{instance}} · Requirements {{profile}} · {{from}} → {{to}}": "{{building}} {{instance}} · 前置条件 {{profile}} · {{from}} → {{to}}",
+        "{{building}} {{instance}} · Requirements {{profile}} · {{from}} → {{to}} · {{count}}": "{{building}} {{instance}} · 前置条件 {{profile}} · {{from}} → {{to}} · {{count}}"
+      },
+      "units": {
+        "d": "天",
+        "h": "小时",
+        "m": "分钟",
+        "s": "秒"
+      }
+    },
+    "ar": {
+      "phrases": {
+        "{{label}} {{amount}}": "{{label}} {{amount}}",
+        "{{research}} {{ordinal}} · {{tree}}": "{{research}} {{ordinal}} · {{tree}}",
+        "{{research}} {{ordinal}}": "{{research}} {{ordinal}}",
+        "{{research}} · {{tree}}": "{{research}} · {{tree}}",
+        "Base time {{duration}} ({{exactSeconds}} s)": "الوقت الأساسي {{duration}} ({{exactSeconds}} ث)",
+        "{{duration}} ({{exactSeconds}} s)": "{{duration}} ({{exactSeconds}} ث)",
+        "{{duration}}": "{{duration}}",
+        "{{building}} · Requirements {{profile}}": "{{building}} · المتطلبات {{profile}}",
+        "{{building}} · Requirements {{profile}} · {{from}} → {{to}}": "{{building}} · المتطلبات {{profile}} · {{from}} → {{to}}",
+        "{{building}} · Requirements {{profile}} · {{from}} → {{to}} · {{count}}": "{{building}} · المتطلبات {{profile}} · {{from}} → {{to}} · {{count}}",
+        "{{building}} {{instance}} · Requirements {{profile}}": "{{building}} {{instance}} · المتطلبات {{profile}}",
+        "{{building}} {{instance}} · Requirements {{profile}} · {{from}} → {{to}}": "{{building}} {{instance}} · المتطلبات {{profile}} · {{from}} → {{to}}",
+        "{{building}} {{instance}} · Requirements {{profile}} · {{from}} → {{to}} · {{count}}": "{{building}} {{instance}} · المتطلبات {{profile}} · {{from}} → {{to}} · {{count}}"
+      },
+      "units": {
+        "d": "ي",
+        "h": "س",
+        "m": "د",
+        "s": "ث"
+      }
+    },
+    "nl": {
+      "phrases": {
+        "{{label}} {{amount}}": "{{label}} {{amount}}",
+        "{{research}} {{ordinal}} · {{tree}}": "{{research}} {{ordinal}} · {{tree}}",
+        "{{research}} {{ordinal}}": "{{research}} {{ordinal}}",
+        "{{research}} · {{tree}}": "{{research}} · {{tree}}",
+        "Base time {{duration}} ({{exactSeconds}} s)": "Basistijd {{duration}} ({{exactSeconds}} s)",
+        "{{duration}} ({{exactSeconds}} s)": "{{duration}} ({{exactSeconds}} s)",
+        "{{duration}}": "{{duration}}",
+        "{{building}} · Requirements {{profile}}": "{{building}} · Vereisten {{profile}}",
+        "{{building}} · Requirements {{profile}} · {{from}} → {{to}}": "{{building}} · Vereisten {{profile}} · {{from}} → {{to}}",
+        "{{building}} · Requirements {{profile}} · {{from}} → {{to}} · {{count}}": "{{building}} · Vereisten {{profile}} · {{from}} → {{to}} · {{count}}",
+        "{{building}} {{instance}} · Requirements {{profile}}": "{{building}} {{instance}} · Vereisten {{profile}}",
+        "{{building}} {{instance}} · Requirements {{profile}} · {{from}} → {{to}}": "{{building}} {{instance}} · Vereisten {{profile}} · {{from}} → {{to}}",
+        "{{building}} {{instance}} · Requirements {{profile}} · {{from}} → {{to}} · {{count}}": "{{building}} {{instance}} · Vereisten {{profile}} · {{from}} → {{to}} · {{count}}"
+      },
+      "units": {
+        "d": "d",
+        "h": "u",
+        "m": "min",
+        "s": "s"
+      }
+    },
+    "fr": {
+      "phrases": {
+        "{{label}} {{amount}}": "{{label}} {{amount}}",
+        "{{research}} {{ordinal}} · {{tree}}": "{{research}} {{ordinal}} · {{tree}}",
+        "{{research}} {{ordinal}}": "{{research}} {{ordinal}}",
+        "{{research}} · {{tree}}": "{{research}} · {{tree}}",
+        "Base time {{duration}} ({{exactSeconds}} s)": "Durée de base {{duration}} ({{exactSeconds}} s)",
+        "{{duration}} ({{exactSeconds}} s)": "{{duration}} ({{exactSeconds}} s)",
+        "{{duration}}": "{{duration}}",
+        "{{building}} · Requirements {{profile}}": "{{building}} · Prérequis {{profile}}",
+        "{{building}} · Requirements {{profile}} · {{from}} → {{to}}": "{{building}} · Prérequis {{profile}} · {{from}} → {{to}}",
+        "{{building}} · Requirements {{profile}} · {{from}} → {{to}} · {{count}}": "{{building}} · Prérequis {{profile}} · {{from}} → {{to}} · {{count}}",
+        "{{building}} {{instance}} · Requirements {{profile}}": "{{building}} {{instance}} · Prérequis {{profile}}",
+        "{{building}} {{instance}} · Requirements {{profile}} · {{from}} → {{to}}": "{{building}} {{instance}} · Prérequis {{profile}} · {{from}} → {{to}}",
+        "{{building}} {{instance}} · Requirements {{profile}} · {{from}} → {{to}} · {{count}}": "{{building}} {{instance}} · Prérequis {{profile}} · {{from}} → {{to}} · {{count}}"
+      },
+      "units": {
+        "d": "j",
+        "h": "h",
+        "m": "min",
+        "s": "s"
+      }
+    },
+    "id": {
+      "phrases": {
+        "{{label}} {{amount}}": "{{label}} {{amount}}",
+        "{{research}} {{ordinal}} · {{tree}}": "{{research}} {{ordinal}} · {{tree}}",
+        "{{research}} {{ordinal}}": "{{research}} {{ordinal}}",
+        "{{research}} · {{tree}}": "{{research}} · {{tree}}",
+        "Base time {{duration}} ({{exactSeconds}} s)": "Waktu dasar {{duration}} ({{exactSeconds}} dtk)",
+        "{{duration}} ({{exactSeconds}} s)": "{{duration}} ({{exactSeconds}} dtk)",
+        "{{duration}}": "{{duration}}",
+        "{{building}} · Requirements {{profile}}": "{{building}} · Persyaratan {{profile}}",
+        "{{building}} · Requirements {{profile}} · {{from}} → {{to}}": "{{building}} · Persyaratan {{profile}} · {{from}} → {{to}}",
+        "{{building}} · Requirements {{profile}} · {{from}} → {{to}} · {{count}}": "{{building}} · Persyaratan {{profile}} · {{from}} → {{to}} · {{count}}",
+        "{{building}} {{instance}} · Requirements {{profile}}": "{{building}} {{instance}} · Persyaratan {{profile}}",
+        "{{building}} {{instance}} · Requirements {{profile}} · {{from}} → {{to}}": "{{building}} {{instance}} · Persyaratan {{profile}} · {{from}} → {{to}}",
+        "{{building}} {{instance}} · Requirements {{profile}} · {{from}} → {{to}} · {{count}}": "{{building}} {{instance}} · Persyaratan {{profile}} · {{from}} → {{to}} · {{count}}"
+      },
+      "units": {
+        "d": "h",
+        "h": "j",
+        "m": "mnt",
+        "s": "dtk"
+      }
+    },
+    "it": {
+      "phrases": {
+        "{{label}} {{amount}}": "{{label}} {{amount}}",
+        "{{research}} {{ordinal}} · {{tree}}": "{{research}} {{ordinal}} · {{tree}}",
+        "{{research}} {{ordinal}}": "{{research}} {{ordinal}}",
+        "{{research}} · {{tree}}": "{{research}} · {{tree}}",
+        "Base time {{duration}} ({{exactSeconds}} s)": "Tempo base {{duration}} ({{exactSeconds}} s)",
+        "{{duration}} ({{exactSeconds}} s)": "{{duration}} ({{exactSeconds}} s)",
+        "{{duration}}": "{{duration}}",
+        "{{building}} · Requirements {{profile}}": "{{building}} · Requisiti {{profile}}",
+        "{{building}} · Requirements {{profile}} · {{from}} → {{to}}": "{{building}} · Requisiti {{profile}} · {{from}} → {{to}}",
+        "{{building}} · Requirements {{profile}} · {{from}} → {{to}} · {{count}}": "{{building}} · Requisiti {{profile}} · {{from}} → {{to}} · {{count}}",
+        "{{building}} {{instance}} · Requirements {{profile}}": "{{building}} {{instance}} · Requisiti {{profile}}",
+        "{{building}} {{instance}} · Requirements {{profile}} · {{from}} → {{to}}": "{{building}} {{instance}} · Requisiti {{profile}} · {{from}} → {{to}}",
+        "{{building}} {{instance}} · Requirements {{profile}} · {{from}} → {{to}} · {{count}}": "{{building}} {{instance}} · Requisiti {{profile}} · {{from}} → {{to}} · {{count}}"
+      },
+      "units": {
+        "d": "g",
+        "h": "h",
+        "m": "min",
+        "s": "s"
+      }
+    },
+    "pl": {
+      "phrases": {
+        "{{label}} {{amount}}": "{{label}} {{amount}}",
+        "{{research}} {{ordinal}} · {{tree}}": "{{research}} {{ordinal}} · {{tree}}",
+        "{{research}} {{ordinal}}": "{{research}} {{ordinal}}",
+        "{{research}} · {{tree}}": "{{research}} · {{tree}}",
+        "Base time {{duration}} ({{exactSeconds}} s)": "Czas podstawowy {{duration}} ({{exactSeconds}} s)",
+        "{{duration}} ({{exactSeconds}} s)": "{{duration}} ({{exactSeconds}} s)",
+        "{{duration}}": "{{duration}}",
+        "{{building}} · Requirements {{profile}}": "{{building}} · Wymagania {{profile}}",
+        "{{building}} · Requirements {{profile}} · {{from}} → {{to}}": "{{building}} · Wymagania {{profile}} · {{from}} → {{to}}",
+        "{{building}} · Requirements {{profile}} · {{from}} → {{to}} · {{count}}": "{{building}} · Wymagania {{profile}} · {{from}} → {{to}} · {{count}}",
+        "{{building}} {{instance}} · Requirements {{profile}}": "{{building}} {{instance}} · Wymagania {{profile}}",
+        "{{building}} {{instance}} · Requirements {{profile}} · {{from}} → {{to}}": "{{building}} {{instance}} · Wymagania {{profile}} · {{from}} → {{to}}",
+        "{{building}} {{instance}} · Requirements {{profile}} · {{from}} → {{to}} · {{count}}": "{{building}} {{instance}} · Wymagania {{profile}} · {{from}} → {{to}} · {{count}}"
+      },
+      "units": {
+        "d": "d",
+        "h": "godz.",
+        "m": "min",
+        "s": "s"
+      }
+    },
+    "pt": {
+      "phrases": {
+        "{{label}} {{amount}}": "{{label}} {{amount}}",
+        "{{research}} {{ordinal}} · {{tree}}": "{{research}} {{ordinal}} · {{tree}}",
+        "{{research}} {{ordinal}}": "{{research}} {{ordinal}}",
+        "{{research}} · {{tree}}": "{{research}} · {{tree}}",
+        "Base time {{duration}} ({{exactSeconds}} s)": "Tempo base {{duration}} ({{exactSeconds}} s)",
+        "{{duration}} ({{exactSeconds}} s)": "{{duration}} ({{exactSeconds}} s)",
+        "{{duration}}": "{{duration}}",
+        "{{building}} · Requirements {{profile}}": "{{building}} · Requisitos {{profile}}",
+        "{{building}} · Requirements {{profile}} · {{from}} → {{to}}": "{{building}} · Requisitos {{profile}} · {{from}} → {{to}}",
+        "{{building}} · Requirements {{profile}} · {{from}} → {{to}} · {{count}}": "{{building}} · Requisitos {{profile}} · {{from}} → {{to}} · {{count}}",
+        "{{building}} {{instance}} · Requirements {{profile}}": "{{building}} {{instance}} · Requisitos {{profile}}",
+        "{{building}} {{instance}} · Requirements {{profile}} · {{from}} → {{to}}": "{{building}} {{instance}} · Requisitos {{profile}} · {{from}} → {{to}}",
+        "{{building}} {{instance}} · Requirements {{profile}} · {{from}} → {{to}} · {{count}}": "{{building}} {{instance}} · Requisitos {{profile}} · {{from}} → {{to}} · {{count}}"
+      },
+      "units": {
+        "d": "d",
+        "h": "h",
+        "m": "min",
+        "s": "s"
+      }
+    },
+    "es": {
+      "phrases": {
+        "{{label}} {{amount}}": "{{label}} {{amount}}",
+        "{{research}} {{ordinal}} · {{tree}}": "{{research}} {{ordinal}} · {{tree}}",
+        "{{research}} {{ordinal}}": "{{research}} {{ordinal}}",
+        "{{research}} · {{tree}}": "{{research}} · {{tree}}",
+        "Base time {{duration}} ({{exactSeconds}} s)": "Tiempo base {{duration}} ({{exactSeconds}} s)",
+        "{{duration}} ({{exactSeconds}} s)": "{{duration}} ({{exactSeconds}} s)",
+        "{{duration}}": "{{duration}}",
+        "{{building}} · Requirements {{profile}}": "{{building}} · Requisitos {{profile}}",
+        "{{building}} · Requirements {{profile}} · {{from}} → {{to}}": "{{building}} · Requisitos {{profile}} · {{from}} → {{to}}",
+        "{{building}} · Requirements {{profile}} · {{from}} → {{to}} · {{count}}": "{{building}} · Requisitos {{profile}} · {{from}} → {{to}} · {{count}}",
+        "{{building}} {{instance}} · Requirements {{profile}}": "{{building}} {{instance}} · Requisitos {{profile}}",
+        "{{building}} {{instance}} · Requirements {{profile}} · {{from}} → {{to}}": "{{building}} {{instance}} · Requisitos {{profile}} · {{from}} → {{to}}",
+        "{{building}} {{instance}} · Requirements {{profile}} · {{from}} → {{to}} · {{count}}": "{{building}} {{instance}} · Requisitos {{profile}} · {{from}} → {{to}} · {{count}}"
+      },
+      "units": {
+        "d": "d",
+        "h": "h",
+        "m": "min",
+        "s": "s"
+      }
+    },
+    "sv": {
+      "phrases": {
+        "{{label}} {{amount}}": "{{label}} {{amount}}",
+        "{{research}} {{ordinal}} · {{tree}}": "{{research}} {{ordinal}} · {{tree}}",
+        "{{research}} {{ordinal}}": "{{research}} {{ordinal}}",
+        "{{research}} · {{tree}}": "{{research}} · {{tree}}",
+        "Base time {{duration}} ({{exactSeconds}} s)": "Grundtid {{duration}} ({{exactSeconds}} s)",
+        "{{duration}} ({{exactSeconds}} s)": "{{duration}} ({{exactSeconds}} s)",
+        "{{duration}}": "{{duration}}",
+        "{{building}} · Requirements {{profile}}": "{{building}} · Krav {{profile}}",
+        "{{building}} · Requirements {{profile}} · {{from}} → {{to}}": "{{building}} · Krav {{profile}} · {{from}} → {{to}}",
+        "{{building}} · Requirements {{profile}} · {{from}} → {{to}} · {{count}}": "{{building}} · Krav {{profile}} · {{from}} → {{to}} · {{count}}",
+        "{{building}} {{instance}} · Requirements {{profile}}": "{{building}} {{instance}} · Krav {{profile}}",
+        "{{building}} {{instance}} · Requirements {{profile}} · {{from}} → {{to}}": "{{building}} {{instance}} · Krav {{profile}} · {{from}} → {{to}}",
+        "{{building}} {{instance}} · Requirements {{profile}} · {{from}} → {{to}} · {{count}}": "{{building}} {{instance}} · Krav {{profile}} · {{from}} → {{to}} · {{count}}"
+      },
+      "units": {
+        "d": "d",
+        "h": "h",
+        "m": "min",
+        "s": "s"
+      }
+    },
+    "th": {
+      "phrases": {
+        "{{label}} {{amount}}": "{{label}} {{amount}}",
+        "{{research}} {{ordinal}} · {{tree}}": "{{research}} {{ordinal}} · {{tree}}",
+        "{{research}} {{ordinal}}": "{{research}} {{ordinal}}",
+        "{{research}} · {{tree}}": "{{research}} · {{tree}}",
+        "Base time {{duration}} ({{exactSeconds}} s)": "เวลาพื้นฐาน {{duration}} ({{exactSeconds}} วินาที)",
+        "{{duration}} ({{exactSeconds}} s)": "{{duration}} ({{exactSeconds}} วินาที)",
+        "{{duration}}": "{{duration}}",
+        "{{building}} · Requirements {{profile}}": "{{building}} · ข้อกำหนด {{profile}}",
+        "{{building}} · Requirements {{profile}} · {{from}} → {{to}}": "{{building}} · ข้อกำหนด {{profile}} · {{from}} → {{to}}",
+        "{{building}} · Requirements {{profile}} · {{from}} → {{to}} · {{count}}": "{{building}} · ข้อกำหนด {{profile}} · {{from}} → {{to}} · {{count}}",
+        "{{building}} {{instance}} · Requirements {{profile}}": "{{building}} {{instance}} · ข้อกำหนด {{profile}}",
+        "{{building}} {{instance}} · Requirements {{profile}} · {{from}} → {{to}}": "{{building}} {{instance}} · ข้อกำหนด {{profile}} · {{from}} → {{to}}",
+        "{{building}} {{instance}} · Requirements {{profile}} · {{from}} → {{to}} · {{count}}": "{{building}} {{instance}} · ข้อกำหนด {{profile}} · {{from}} → {{to}} · {{count}}"
+      },
+      "units": {
+        "d": "วัน",
+        "h": "ชม.",
+        "m": "นาที",
+        "s": "วินาที"
+      }
+    },
+    "tr": {
+      "phrases": {
+        "{{label}} {{amount}}": "{{label}} {{amount}}",
+        "{{research}} {{ordinal}} · {{tree}}": "{{research}} {{ordinal}} · {{tree}}",
+        "{{research}} {{ordinal}}": "{{research}} {{ordinal}}",
+        "{{research}} · {{tree}}": "{{research}} · {{tree}}",
+        "Base time {{duration}} ({{exactSeconds}} s)": "Temel süre {{duration}} ({{exactSeconds}} sn)",
+        "{{duration}} ({{exactSeconds}} s)": "{{duration}} ({{exactSeconds}} sn)",
+        "{{duration}}": "{{duration}}",
+        "{{building}} · Requirements {{profile}}": "{{building}} · Gereksinimler {{profile}}",
+        "{{building}} · Requirements {{profile}} · {{from}} → {{to}}": "{{building}} · Gereksinimler {{profile}} · {{from}} → {{to}}",
+        "{{building}} · Requirements {{profile}} · {{from}} → {{to}} · {{count}}": "{{building}} · Gereksinimler {{profile}} · {{from}} → {{to}} · {{count}}",
+        "{{building}} {{instance}} · Requirements {{profile}}": "{{building}} {{instance}} · Gereksinimler {{profile}}",
+        "{{building}} {{instance}} · Requirements {{profile}} · {{from}} → {{to}}": "{{building}} {{instance}} · Gereksinimler {{profile}} · {{from}} → {{to}}",
+        "{{building}} {{instance}} · Requirements {{profile}} · {{from}} → {{to}} · {{count}}": "{{building}} {{instance}} · Gereksinimler {{profile}} · {{from}} → {{to}} · {{count}}"
+      },
+      "units": {
+        "d": "g",
+        "h": "sa",
+        "m": "dk",
+        "s": "sn"
+      }
+    },
+    "vi": {
+      "phrases": {
+        "{{label}} {{amount}}": "{{label}} {{amount}}",
+        "{{research}} {{ordinal}} · {{tree}}": "{{research}} {{ordinal}} · {{tree}}",
+        "{{research}} {{ordinal}}": "{{research}} {{ordinal}}",
+        "{{research}} · {{tree}}": "{{research}} · {{tree}}",
+        "Base time {{duration}} ({{exactSeconds}} s)": "Thời gian cơ bản {{duration}} ({{exactSeconds}} giây)",
+        "{{duration}} ({{exactSeconds}} s)": "{{duration}} ({{exactSeconds}} giây)",
+        "{{duration}}": "{{duration}}",
+        "{{building}} · Requirements {{profile}}": "{{building}} · Điều kiện {{profile}}",
+        "{{building}} · Requirements {{profile}} · {{from}} → {{to}}": "{{building}} · Điều kiện {{profile}} · {{from}} → {{to}}",
+        "{{building}} · Requirements {{profile}} · {{from}} → {{to}} · {{count}}": "{{building}} · Điều kiện {{profile}} · {{from}} → {{to}} · {{count}}",
+        "{{building}} {{instance}} · Requirements {{profile}}": "{{building}} {{instance}} · Điều kiện {{profile}}",
+        "{{building}} {{instance}} · Requirements {{profile}} · {{from}} → {{to}}": "{{building}} {{instance}} · Điều kiện {{profile}} · {{from}} → {{to}}",
+        "{{building}} {{instance}} · Requirements {{profile}} · {{from}} → {{to}} · {{count}}": "{{building}} {{instance}} · Điều kiện {{profile}} · {{from}} → {{to}} · {{count}}"
+      },
+      "units": {
+        "d": "ngày",
+        "h": "giờ",
+        "m": "phút",
+        "s": "giây"
+      }
+    },
+    "ms": {
+      "phrases": {
+        "{{label}} {{amount}}": "{{label}} {{amount}}",
+        "{{research}} {{ordinal}} · {{tree}}": "{{research}} {{ordinal}} · {{tree}}",
+        "{{research}} {{ordinal}}": "{{research}} {{ordinal}}",
+        "{{research}} · {{tree}}": "{{research}} · {{tree}}",
+        "Base time {{duration}} ({{exactSeconds}} s)": "Masa asas {{duration}} ({{exactSeconds}} s)",
+        "{{duration}} ({{exactSeconds}} s)": "{{duration}} ({{exactSeconds}} s)",
+        "{{duration}}": "{{duration}}",
+        "{{building}} · Requirements {{profile}}": "{{building}} · Syarat {{profile}}",
+        "{{building}} · Requirements {{profile}} · {{from}} → {{to}}": "{{building}} · Syarat {{profile}} · {{from}} → {{to}}",
+        "{{building}} · Requirements {{profile}} · {{from}} → {{to}} · {{count}}": "{{building}} · Syarat {{profile}} · {{from}} → {{to}} · {{count}}",
+        "{{building}} {{instance}} · Requirements {{profile}}": "{{building}} {{instance}} · Syarat {{profile}}",
+        "{{building}} {{instance}} · Requirements {{profile}} · {{from}} → {{to}}": "{{building}} {{instance}} · Syarat {{profile}} · {{from}} → {{to}}",
+        "{{building}} {{instance}} · Requirements {{profile}} · {{from}} → {{to}} · {{count}}": "{{building}} {{instance}} · Syarat {{profile}} · {{from}} → {{to}} · {{count}}"
+      },
+      "units": {
+        "d": "h",
+        "h": "j",
+        "m": "min",
+        "s": "s"
+      }
+    },
+    "nb": {
+      "phrases": {
+        "{{label}} {{amount}}": "{{label}} {{amount}}",
+        "{{research}} {{ordinal}} · {{tree}}": "{{research}} {{ordinal}} · {{tree}}",
+        "{{research}} {{ordinal}}": "{{research}} {{ordinal}}",
+        "{{research}} · {{tree}}": "{{research}} · {{tree}}",
+        "Base time {{duration}} ({{exactSeconds}} s)": "Grunntid {{duration}} ({{exactSeconds}} s)",
+        "{{duration}} ({{exactSeconds}} s)": "{{duration}} ({{exactSeconds}} s)",
+        "{{duration}}": "{{duration}}",
+        "{{building}} · Requirements {{profile}}": "{{building}} · Krav {{profile}}",
+        "{{building}} · Requirements {{profile}} · {{from}} → {{to}}": "{{building}} · Krav {{profile}} · {{from}} → {{to}}",
+        "{{building}} · Requirements {{profile}} · {{from}} → {{to}} · {{count}}": "{{building}} · Krav {{profile}} · {{from}} → {{to}} · {{count}}",
+        "{{building}} {{instance}} · Requirements {{profile}}": "{{building}} {{instance}} · Krav {{profile}}",
+        "{{building}} {{instance}} · Requirements {{profile}} · {{from}} → {{to}}": "{{building}} {{instance}} · Krav {{profile}} · {{from}} → {{to}}",
+        "{{building}} {{instance}} · Requirements {{profile}} · {{from}} → {{to}} · {{count}}": "{{building}} {{instance}} · Krav {{profile}} · {{from}} → {{to}} · {{count}}"
+      },
+      "units": {
+        "d": "d",
+        "h": "t",
+        "m": "min",
+        "s": "s"
+      }
+    }
+  }
+}

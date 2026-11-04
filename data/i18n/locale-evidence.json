@@ -1,0 +1,558 @@
+{
+  "schemaVersion": 1,
+  "observedDate": "2026-11-04",
+  "registryBasis": "Union of retained client Language config and current official App Store metadata; the evidence levels remain separate.",
+  "currentRuntimeLanguageMenuVerified": false,
+  "locales": [
+    {
+      "id": "ko",
+      "clientId": "ko",
+      "labelNative": "한국어",
+      "labelEnglish": "Korean",
+      "bcp47": "ko",
+      "hreflang": "ko",
+      "dir": "ltr",
+      "officialEvidence": {
+        "retainedClientConfiguration": true,
+        "clientIsShow": 1,
+        "clientGameVersion": "2.6.200",
+        "clientGameBuild": 1512,
+        "appStoreListed": true,
+        "appStoreObservedDate": "2026-11-04",
+        "appStoreURL": "https://apps.apple.com/us/app/tiles-survive/id6738109752",
+        "appStoreDisplayedVersion": "2.6.300",
+        "currentRuntimeLanguageMenuVerified": false
+      },
+      "glossary": {
+        "ingameCohort": "ingame-apk-ko",
+        "ingameKeyCount": 30764,
+        "loadingKeyCount": 564,
+        "missingOfficialGameTermsRemainNull": true
+      }
+    },
+    {
+      "id": "en",
+      "clientId": "en",
+      "labelNative": "English",
+      "labelEnglish": "English",
+      "bcp47": "en",
+      "hreflang": "en",
+      "dir": "ltr",
+      "officialEvidence": {
+        "retainedClientConfiguration": true,
+        "clientIsShow": 1,
+        "clientGameVersion": "2.6.200",
+        "clientGameBuild": 1512,
+        "appStoreListed": true,
+        "appStoreObservedDate": "2026-11-04",
+        "appStoreURL": "https://apps.apple.com/us/app/tiles-survive/id6738109752",
+        "appStoreDisplayedVersion": "2.6.300",
+        "currentRuntimeLanguageMenuVerified": false
+      },
+      "glossary": {
+        "ingameCohort": "ingame-apk-en",
+        "ingameKeyCount": 30824,
+        "loadingKeyCount": 575,
+        "missingOfficialGameTermsRemainNull": true
+      }
+    },
+    {
+      "id": "ja",
+      "clientId": "ja",
+      "labelNative": "日本語",
+      "labelEnglish": "Japanese",
+      "bcp47": "ja",
+      "hreflang": "ja",
+      "dir": "ltr",
+      "officialEvidence": {
+        "retainedClientConfiguration": true,
+        "clientIsShow": 1,
+        "clientGameVersion": "2.6.200",
+        "clientGameBuild": 1512,
+        "appStoreListed": true,
+        "appStoreObservedDate": "2026-11-04",
+        "appStoreURL": "https://apps.apple.com/us/app/tiles-survive/id6738109752",
+        "appStoreDisplayedVersion": "2.6.300",
+        "currentRuntimeLanguageMenuVerified": false
+      },
+      "glossary": {
+        "ingameCohort": "ingame-apk-ja",
+        "ingameKeyCount": 30766,
+        "loadingKeyCount": 579,
+        "missingOfficialGameTermsRemainNull": true
+      }
+    },
+    {
+      "id": "ru",
+      "clientId": "ru",
+      "labelNative": "Русский",
+      "labelEnglish": "Russian",
+      "bcp47": "ru",
+      "hreflang": "ru",
+      "dir": "ltr",
+      "officialEvidence": {
+        "retainedClientConfiguration": true,
+        "clientIsShow": 1,
+        "clientGameVersion": "2.6.200",
+        "clientGameBuild": 1512,
+        "appStoreListed": true,
+        "appStoreObservedDate": "2026-11-04",
+        "appStoreURL": "https://apps.apple.com/us/app/tiles-survive/id6738109752",
+        "appStoreDisplayedVersion": "2.6.300",
+        "currentRuntimeLanguageMenuVerified": false
+      },
+      "glossary": {
+        "ingameCohort": "ingame-apk-ru",
+        "ingameKeyCount": 30766,
+        "loadingKeyCount": 559,
+        "missingOfficialGameTermsRemainNull": true
+      }
+    },
+    {
+      "id": "zh-tw",
+      "clientId": "zh-TW",
+      "labelNative": "繁體中文",
+      "labelEnglish": "Traditional Chinese",
+      "bcp47": "zh-Hant",
+      "hreflang": "zh-tw",
+      "dir": "ltr",
+      "officialEvidence": {
+        "retainedClientConfiguration": true,
+        "clientIsShow": 1,
+        "clientGameVersion": "2.6.200",
+        "clientGameBuild": 1512,
+        "appStoreListed": true,
+        "appStoreObservedDate": "2026-11-04",
+        "appStoreURL": "https://apps.apple.com/us/app/tiles-survive/id6738109752",
+        "appStoreDisplayedVersion": "2.6.300",
+        "currentRuntimeLanguageMenuVerified": false
+      },
+      "glossary": {
+        "ingameCohort": "ingame-apk-zh-TW",
+        "ingameKeyCount": 30773,
+        "loadingKeyCount": 564,
+        "missingOfficialGameTermsRemainNull": true
+      }
+    },
+    {
+      "id": "de",
+      "clientId": "de",
+      "labelNative": "Deutsch",
+      "labelEnglish": "German",
+      "bcp47": "de",
+      "hreflang": "de",
+      "dir": "ltr",
+      "officialEvidence": {
+        "retainedClientConfiguration": true,
+        "clientIsShow": 1,
+        "clientGameVersion": "2.6.200",
+        "clientGameBuild": 1512,
+        "appStoreListed": true,
+        "appStoreObservedDate": "2026-11-04",
+        "appStoreURL": "https://apps.apple.com/us/app/tiles-survive/id6738109752",
+        "appStoreDisplayedVersion": "2.6.300",
+        "currentRuntimeLanguageMenuVerified": false
+      },
+      "glossary": {
+        "ingameCohort": "ingame-apk-de",
+        "ingameKeyCount": 30760,
+        "loadingKeyCount": 558,
+        "missingOfficialGameTermsRemainNull": true
+      }
+    },
+    {
+      "id": "zh-cn",
+      "clientId": "zh-CN",
+      "labelNative": "简体中文",
+      "labelEnglish": "Simplified Chinese",
+      "bcp47": "zh-Hans",
+      "hreflang": "zh-cn",
+      "dir": "ltr",
+      "officialEvidence": {
+        "retainedClientConfiguration": true,
+        "clientIsShow": 1,
+        "clientGameVersion": "2.6.200",
+        "clientGameBuild": 1512,
+        "appStoreListed": true,
+        "appStoreObservedDate": "2026-11-04",
+        "appStoreURL": "https://apps.apple.com/us/app/tiles-survive/id6738109752",
+        "appStoreDisplayedVersion": "2.6.300",
+        "currentRuntimeLanguageMenuVerified": false
+      },
+      "glossary": {
+        "ingameCohort": "ingame-apk-zh-CN",
+        "ingameKeyCount": 30854,
+        "loadingKeyCount": 562,
+        "missingOfficialGameTermsRemainNull": true
+      }
+    },
+    {
+      "id": "ar",
+      "clientId": "ar",
+      "labelNative": "العربية",
+      "labelEnglish": "Arabic",
+      "bcp47": "ar",
+      "hreflang": "ar",
+      "dir": "rtl",
+      "officialEvidence": {
+        "retainedClientConfiguration": true,
+        "clientIsShow": 1,
+        "clientGameVersion": "2.6.200",
+        "clientGameBuild": 1512,
+        "appStoreListed": true,
+        "appStoreObservedDate": "2026-11-04",
+        "appStoreURL": "https://apps.apple.com/us/app/tiles-survive/id6738109752",
+        "appStoreDisplayedVersion": "2.6.300",
+        "currentRuntimeLanguageMenuVerified": false
+      },
+      "glossary": {
+        "ingameCohort": null,
+        "ingameKeyCount": 0,
+        "loadingKeyCount": 559,
+        "missingOfficialGameTermsRemainNull": true
+      },
+      "mappingNote": "Config and App Store evidence exist, but only loading strings were retained; full game glossary not present."
+    },
+    {
+      "id": "nl",
+      "clientId": "nl",
+      "labelNative": "Nederlands",
+      "labelEnglish": "Dutch",
+      "bcp47": "nl",
+      "hreflang": "nl",
+      "dir": "ltr",
+      "officialEvidence": {
+        "retainedClientConfiguration": true,
+        "clientIsShow": 1,
+        "clientGameVersion": "2.6.200",
+        "clientGameBuild": 1512,
+        "appStoreListed": true,
+        "appStoreObservedDate": "2026-11-04",
+        "appStoreURL": "https://apps.apple.com/us/app/tiles-survive/id6738109752",
+        "appStoreDisplayedVersion": "2.6.300",
+        "currentRuntimeLanguageMenuVerified": false
+      },
+      "glossary": {
+        "ingameCohort": "ingame-apk-nl",
+        "ingameKeyCount": 30753,
+        "loadingKeyCount": 558,
+        "missingOfficialGameTermsRemainNull": true
+      }
+    },
+    {
+      "id": "fr",
+      "clientId": "fr",
+      "labelNative": "Français",
+      "labelEnglish": "French",
+      "bcp47": "fr",
+      "hreflang": "fr",
+      "dir": "ltr",
+      "officialEvidence": {
+        "retainedClientConfiguration": true,
+        "clientIsShow": 1,
+        "clientGameVersion": "2.6.200",
+        "clientGameBuild": 1512,
+        "appStoreListed": true,
+        "appStoreObservedDate": "2026-11-04",
+        "appStoreURL": "https://apps.apple.com/us/app/tiles-survive/id6738109752",
+        "appStoreDisplayedVersion": "2.6.300",
+        "currentRuntimeLanguageMenuVerified": false
+      },
+      "glossary": {
+        "ingameCohort": "ingame-apk-fr",
+        "ingameKeyCount": 30772,
+        "loadingKeyCount": 558,
+        "missingOfficialGameTermsRemainNull": true
+      }
+    },
+    {
+      "id": "id",
+      "clientId": "id",
+      "labelNative": "Bahasa Indonesia",
+      "labelEnglish": "Indonesian",
+      "bcp47": "id",
+      "hreflang": "id",
+      "dir": "ltr",
+      "officialEvidence": {
+        "retainedClientConfiguration": true,
+        "clientIsShow": 1,
+        "clientGameVersion": "2.6.200",
+        "clientGameBuild": 1512,
+        "appStoreListed": true,
+        "appStoreObservedDate": "2026-11-04",
+        "appStoreURL": "https://apps.apple.com/us/app/tiles-survive/id6738109752",
+        "appStoreDisplayedVersion": "2.6.300",
+        "currentRuntimeLanguageMenuVerified": false
+      },
+      "glossary": {
+        "ingameCohort": "ingame-apk-id",
+        "ingameKeyCount": 30746,
+        "loadingKeyCount": 559,
+        "missingOfficialGameTermsRemainNull": true
+      }
+    },
+    {
+      "id": "it",
+      "clientId": "it",
+      "labelNative": "Italiano",
+      "labelEnglish": "Italian",
+      "bcp47": "it",
+      "hreflang": "it",
+      "dir": "ltr",
+      "officialEvidence": {
+        "retainedClientConfiguration": true,
+        "clientIsShow": 1,
+        "clientGameVersion": "2.6.200",
+        "clientGameBuild": 1512,
+        "appStoreListed": true,
+        "appStoreObservedDate": "2026-11-04",
+        "appStoreURL": "https://apps.apple.com/us/app/tiles-survive/id6738109752",
+        "appStoreDisplayedVersion": "2.6.300",
+        "currentRuntimeLanguageMenuVerified": false
+      },
+      "glossary": {
+        "ingameCohort": "ingame-apk-it",
+        "ingameKeyCount": 30759,
+        "loadingKeyCount": 558,
+        "missingOfficialGameTermsRemainNull": true
+      }
+    },
+    {
+      "id": "pl",
+      "clientId": "pl",
+      "labelNative": "Polski",
+      "labelEnglish": "Polish",
+      "bcp47": "pl",
+      "hreflang": "pl",
+      "dir": "ltr",
+      "officialEvidence": {
+        "retainedClientConfiguration": true,
+        "clientIsShow": 1,
+        "clientGameVersion": "2.6.200",
+        "clientGameBuild": 1512,
+        "appStoreListed": true,
+        "appStoreObservedDate": "2026-11-04",
+        "appStoreURL": "https://apps.apple.com/us/app/tiles-survive/id6738109752",
+        "appStoreDisplayedVersion": "2.6.300",
+        "currentRuntimeLanguageMenuVerified": false
+      },
+      "glossary": {
+        "ingameCohort": "ingame-apk-pl",
+        "ingameKeyCount": 30753,
+        "loadingKeyCount": 559,
+        "missingOfficialGameTermsRemainNull": true
+      }
+    },
+    {
+      "id": "pt",
+      "clientId": "pt",
+      "labelNative": "Português",
+      "labelEnglish": "Portuguese",
+      "bcp47": "pt",
+      "hreflang": "pt",
+      "dir": "ltr",
+      "officialEvidence": {
+        "retainedClientConfiguration": true,
+        "clientIsShow": 1,
+        "clientGameVersion": "2.6.200",
+        "clientGameBuild": 1512,
+        "appStoreListed": true,
+        "appStoreObservedDate": "2026-11-04",
+        "appStoreURL": "https://apps.apple.com/us/app/tiles-survive/id6738109752",
+        "appStoreDisplayedVersion": "2.6.300",
+        "currentRuntimeLanguageMenuVerified": false
+      },
+      "glossary": {
+        "ingameCohort": "ingame-apk-pt",
+        "ingameKeyCount": 30758,
+        "loadingKeyCount": 560,
+        "missingOfficialGameTermsRemainNull": true
+      }
+    },
+    {
+      "id": "es",
+      "clientId": "es",
+      "labelNative": "Español",
+      "labelEnglish": "Spanish",
+      "bcp47": "es",
+      "hreflang": "es",
+      "dir": "ltr",
+      "officialEvidence": {
+        "retainedClientConfiguration": true,
+        "clientIsShow": 1,
+        "clientGameVersion": "2.6.200",
+        "clientGameBuild": 1512,
+        "appStoreListed": true,
+        "appStoreObservedDate": "2026-11-04",
+        "appStoreURL": "https://apps.apple.com/us/app/tiles-survive/id6738109752",
+        "appStoreDisplayedVersion": "2.6.300",
+        "currentRuntimeLanguageMenuVerified": false
+      },
+      "glossary": {
+        "ingameCohort": "ingame-apk-es",
+        "ingameKeyCount": 30759,
+        "loadingKeyCount": 559,
+        "missingOfficialGameTermsRemainNull": true
+      }
+    },
+    {
+      "id": "sv",
+      "clientId": "sv",
+      "labelNative": "Svenska",
+      "labelEnglish": "Swedish",
+      "bcp47": "sv",
+      "hreflang": "sv",
+      "dir": "ltr",
+      "officialEvidence": {
+        "retainedClientConfiguration": true,
+        "clientIsShow": 1,
+        "clientGameVersion": "2.6.200",
+        "clientGameBuild": 1512,
+        "appStoreListed": true,
+        "appStoreObservedDate": "2026-11-04",
+        "appStoreURL": "https://apps.apple.com/us/app/tiles-survive/id6738109752",
+        "appStoreDisplayedVersion": "2.6.300",
+        "currentRuntimeLanguageMenuVerified": false
+      },
+      "glossary": {
+        "ingameCohort": "ingame-apk-sv",
+        "ingameKeyCount": 30757,
+        "loadingKeyCount": 559,
+        "missingOfficialGameTermsRemainNull": true
+      }
+    },
+    {
+      "id": "th",
+      "clientId": "th",
+      "labelNative": "ไทย",
+      "labelEnglish": "Thai",
+      "bcp47": "th",
+      "hreflang": "th",
+      "dir": "ltr",
+      "officialEvidence": {
+        "retainedClientConfiguration": true,
+        "clientIsShow": 1,
+        "clientGameVersion": "2.6.200",
+        "clientGameBuild": 1512,
+        "appStoreListed": true,
+        "appStoreObservedDate": "2026-11-04",
+        "appStoreURL": "https://apps.apple.com/us/app/tiles-survive/id6738109752",
+        "appStoreDisplayedVersion": "2.6.300",
+        "currentRuntimeLanguageMenuVerified": false
+      },
+      "glossary": {
+        "ingameCohort": "ingame-apk-th",
+        "ingameKeyCount": 30746,
+        "loadingKeyCount": 559,
+        "missingOfficialGameTermsRemainNull": true
+      }
+    },
+    {
+      "id": "tr",
+      "clientId": "tr",
+      "labelNative": "Türkçe",
+      "labelEnglish": "Turkish",
+      "bcp47": "tr",
+      "hreflang": "tr",
+      "dir": "ltr",
+      "officialEvidence": {
+        "retainedClientConfiguration": true,
+        "clientIsShow": 1,
+        "clientGameVersion": "2.6.200",
+        "clientGameBuild": 1512,
+        "appStoreListed": true,
+        "appStoreObservedDate": "2026-11-04",
+        "appStoreURL": "https://apps.apple.com/us/app/tiles-survive/id6738109752",
+        "appStoreDisplayedVersion": "2.6.300",
+        "currentRuntimeLanguageMenuVerified": false
+      },
+      "glossary": {
+        "ingameCohort": "ingame-apk-tr",
+        "ingameKeyCount": 30751,
+        "loadingKeyCount": 557,
+        "missingOfficialGameTermsRemainNull": true
+      }
+    },
+    {
+      "id": "vi",
+      "clientId": "vi",
+      "labelNative": "Tiếng Việt",
+      "labelEnglish": "Vietnamese",
+      "bcp47": "vi",
+      "hreflang": "vi",
+      "dir": "ltr",
+      "officialEvidence": {
+        "retainedClientConfiguration": true,
+        "clientIsShow": 1,
+        "clientGameVersion": "2.6.200",
+        "clientGameBuild": 1512,
+        "appStoreListed": true,
+        "appStoreObservedDate": "2026-11-04",
+        "appStoreURL": "https://apps.apple.com/us/app/tiles-survive/id6738109752",
+        "appStoreDisplayedVersion": "2.6.300",
+        "currentRuntimeLanguageMenuVerified": false
+      },
+      "glossary": {
+        "ingameCohort": null,
+        "ingameKeyCount": 0,
+        "loadingKeyCount": 559,
+        "missingOfficialGameTermsRemainNull": true
+      },
+      "mappingNote": "Config and App Store evidence exist, but only loading strings were retained; full game glossary not present."
+    },
+    {
+      "id": "ms",
+      "clientId": "my",
+      "labelNative": "Bahasa Melayu",
+      "labelEnglish": "Malay",
+      "bcp47": "ms",
+      "hreflang": "ms",
+      "dir": "ltr",
+      "officialEvidence": {
+        "retainedClientConfiguration": true,
+        "clientIsShow": 1,
+        "clientGameVersion": "2.6.200",
+        "clientGameBuild": 1512,
+        "appStoreListed": false,
+        "appStoreObservedDate": "2026-11-04",
+        "appStoreURL": "https://apps.apple.com/us/app/tiles-survive/id6738109752",
+        "appStoreDisplayedVersion": "2.6.300",
+        "currentRuntimeLanguageMenuVerified": false
+      },
+      "glossary": {
+        "ingameCohort": "ingame-apk-my",
+        "ingameKeyCount": 30737,
+        "loadingKeyCount": 558,
+        "missingOfficialGameTermsRemainNull": true
+      },
+      "mappingNote": "Client code my labels Malaysia and contains Malay terms; map to web ms, never Burmese my."
+    },
+    {
+      "id": "nb",
+      "clientId": "no",
+      "labelNative": "Norsk bokmål",
+      "labelEnglish": "Norwegian Bokmål",
+      "bcp47": "nb",
+      "hreflang": "nb",
+      "dir": "ltr",
+      "officialEvidence": {
+        "retainedClientConfiguration": false,
+        "clientIsShow": null,
+        "clientGameVersion": "2.6.200",
+        "clientGameBuild": 1512,
+        "appStoreListed": true,
+        "appStoreObservedDate": "2026-11-04",
+        "appStoreURL": "https://apps.apple.com/us/app/tiles-survive/id6738109752",
+        "appStoreDisplayedVersion": "2.6.300",
+        "currentRuntimeLanguageMenuVerified": false
+      },
+      "glossary": {
+        "ingameCohort": null,
+        "ingameKeyCount": 0,
+        "loadingKeyCount": 116,
+        "missingOfficialGameTermsRemainNull": true
+      },
+      "mappingNote": "App Store lists Norwegian Bokmål. Retained loading-no exists, but no row in Language config and no retained ingame glossary."
+    }
+  ]
+}

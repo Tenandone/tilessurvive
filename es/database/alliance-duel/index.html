@@ -1,0 +1,496 @@
+<!doctype html>
+<html dir="ltr" data-section="database" class="ts-platform ts3" lang="es" data-lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tabla de la guía de Duelo de alianzas | Base de datos de Tiles Survive | TilesSurvive.net</title>
+  <base href="/">
+
+  <meta name="theme-color" content="#17362c">
+  <meta name="description" content="Esta es la tabla de guía de Duelo de alianzas de Tiles Survive. Permite consultar de un vistazo los requisitos de participación, el desarrollo del evento, las misiones recomendadas por etapa y los momentos de combate, tortugas y bonificación del rey.">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <meta name="author" content="TilesSurvive.net">
+
+  <link rel="canonical" href="https://tilessurvive.net/es/database/alliance-duel/">
+
+
+
+
+
+
+
+  <meta property="og:site_name" content="TilesSurvive.net">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="Tabla de la guía de Duelo de alianzas | Base de datos de Tiles Survive | TilesSurvive.net">
+  <meta property="og:description" content="Página de base de datos que explica los requisitos de Duelo de alianzas, el desarrollo del evento y la tabla de recomendaciones.">
+  <meta property="og:url" content="https://tilessurvive.net/es/database/alliance-duel/">
+  <meta property="og:image" content="https://tilessurvive.net/img/database/alliance-duel-guide.webp">
+  <meta property="og:locale" content="es_ES">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Tabla de la guía de Duelo de alianzas | Base de datos de Tiles Survive | TilesSurvive.net">
+  <meta name="twitter:description" content="Página de base de datos que explica los requisitos de Duelo de alianzas, el desarrollo del evento y la tabla de recomendaciones.">
+  <meta name="twitter:image" content="https://tilessurvive.net/img/database/alliance-duel-guide.webp">
+
+  <link rel="preload" as="image" href="/img/logo-tilessurvive.png">
+  <link rel="preload" as="image" href="/img/database/alliance-duel-guide.webp">
+
+  <link rel="stylesheet" href="/css/content/f83b53cc9b894d84.css">
+
+  <script id="ts-website-schema" type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"TilesSurvive.net","url":"https://tilessurvive.net/","inLanguage":"es","description":"Centro de datos que organiza la base de datos, las guías, las temporadas y los códigos de Tiles Survive.","potentialAction":{"@type":"SearchAction","target":"https://tilessurvive.net/es/search/?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+
+  <script id="ts-breadcrumb-schema" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Inicio","item":"https://tilessurvive.net/es/"},{"@type":"ListItem","position":2,"name":"Base de datos","item":"https://tilessurvive.net/es/database/"},{"@type":"ListItem","position":3,"name":"Tabla de la guía de Duelo de alianzas","item":"https://tilessurvive.net/es/database/alliance-duel/"}]}</script>
+
+  <script id="ts-article-schema" type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"Tabla de la guía de Duelo de alianzas","description":"Página de base de datos que explica los requisitos de participación en Duelo de alianzas de Tiles Survive, el desarrollo del evento y la tabla de recomendaciones.","image":"https://tilessurvive.net/img/database/alliance-duel-guide.webp","author":{"@type":"Organization","name":"TilesSurvive.net"},"publisher":{"@type":"Organization","name":"TilesSurvive.net","logo":{"@type":"ImageObject","url":"https://tilessurvive.net/img/logo-tilessurvive.png"}},"mainEntityOfPage":"https://tilessurvive.net/es/database/alliance-duel/","inLanguage":"es"}</script>
+
+  <script>
+    (function(){
+      function normalizeLang(code){
+        var low = String(code || '').trim().toLowerCase();
+        if (low === 'ko') return 'ko';
+        if (low === 'en') return 'en';
+        if (low === 'ja') return 'ja';
+        if (low === 'ru') return 'ru';
+        if (low === 'zh-tw' || low === 'zh_tw' || low === 'tw') return 'zh-tw';
+        return 'ko';
+      }
+
+      function pathWithLang(lang, path){
+        return '/' + lang + path;
+      }
+
+      function applyLang(lang){
+        lang = normalizeLang(lang);
+        var currentPath = location.pathname.replace(/^\/(ko|en|ja|ru|zh-tw)(\/|$)/i, '/');
+        if (currentPath === '') currentPath = '/';
+        location.href = pathWithLang(lang, currentPath);
+      }
+
+      window.TS_LANG = {
+        normalize: normalizeLang,
+        apply: applyLang
+      };
+    })();
+  </script>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z2MJ6TXZHK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Z2MJ6TXZHK');
+  </script>
+
+<link href="/css/product-50.css" rel="stylesheet"><link rel="stylesheet" href="/css/platform.css?v=5"><link rel="stylesheet" href="/css/refinement.css?v=2"><link data-data30-asset="" rel="stylesheet" href="/css/data-workbench-30.css?v=1"><script defer src="/js/site-locales.js?v=c66f237b7560"></script><script data-platform="" src="/js/platform-i18n.js?v=ebd8706c32f5" defer></script><script data-data30-asset="" src="/js/data-workbench-30.js?v=199806adb397" defer></script><script type="application/ld+json" data-product-30="">{"@context":"https://schema.org","@type":"WebPage","@id":"https://tilessurvive.net/es/database/alliance-duel/#webpage","url":"https://tilessurvive.net/es/database/alliance-duel/","name":"Tabla de la guía de Duelo de alianzas | Base de datos de Tiles Survive | TilesSurvive.net","inLanguage":"es","description":"Esta es la tabla de guía de Duelo de alianzas de Tiles Survive. Permite consultar de un vistazo los requisitos de participación, el desarrollo del evento, las misiones recomendadas por etapa y los momentos de combate, tortugas y bonificación del rey.","isPartOf":{"@type":"WebSite","name":"TilesSurvive.net","url":"https://tilessurvive.net/"}}</script><link data-product-30="" rel="stylesheet" href="/css/product-30.css?v=301">  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9189957764761115" crossorigin="anonymous"></script>
+<script type="application/json" id="ts-locale-routes">{"en":"/en/database/alliance-duel/","ko":"/ko/database/alliance-duel/","ja":"/ja/database/alliance-duel/","zh-tw":"/zh-tw/database/alliance-duel/","de":"/de/database/alliance-duel/","ru":"/ru/database/alliance-duel/","zh-cn":"/zh-cn/database/alliance-duel/","ar":"/ar/database/alliance-duel/","nl":"/nl/database/alliance-duel/","fr":"/fr/database/alliance-duel/","id":"/id/database/alliance-duel/","it":"/it/database/alliance-duel/","pl":"/pl/database/alliance-duel/","pt":"/pt/database/alliance-duel/","es":"/es/database/alliance-duel/","sv":"/sv/database/alliance-duel/","th":"/th/database/alliance-duel/","tr":"/tr/database/alliance-duel/","vi":"/vi/database/alliance-duel/","ms":"/ms/database/alliance-duel/","nb":"/nb/database/alliance-duel/"}</script><script type="application/json" id="ts-global-ui">{"locale":"es","copy":{"search":"Buscar","menu":"Menú","heroes":"Héroes","buildings":"Edificios","database":"Progreso y equipo","tools":"Calculadoras","guides":"Guías","seasons":"Temporadas","codes":"Códigos de regalo","events":"Eventos","topup":"Guía de recargas","all":"Todos","sort":"Ordenar","name":"Nombre","original":"Orden predeterminado","filter":"Filtrar","reset":"Restablecer","results":"resultados","current":"Nivel actual","target":"Nivel objetivo","calculate":"Calcular","total":"Total necesario","copy":"Copiar","copied":"Copiado","copyError":"No se pudo copiar. Selecciona el texto para copiarlo.","row":"Etapa seleccionada","table":"Tabla completa","range":"Intervalo","source":"El cálculo se basa en la tabla de origen mostrada. Los totales de valores redondeados son aproximados.","conflict":"El resumen y la tabla de origen muestran valores distintos. Se conservan los valores; el cálculo acumulado no estará disponible hasta verificarlos.","unknown":"Los valores desconocidos impiden calcular el total.","close":"Cerrar","language":"Idioma","related":"Información relacionada","research":"Requisitos de investigación","condition":"Requisitos previos","affiliate":"Enlace de afiliado","offer":"Consulta en LootBar las condiciones aplicables al producto, la región y la moneda.","loading":"Cargando","error":"No se pudo cargar.","retry":"Reintentar","noResults":"No se encontraron resultados.","choose":"Seleccionar","time":"Tiempo base"},"affiliate":["Consulta las ventajas actuales de recarga","Revisa el contenido de los paquetes y el calendario de eventos, y después compara las opciones de ahorro en recargas disponibles actualmente.","Consultar ofertas de recarga disponibles","Ver detalles de las ventajas"],"featureCopies":{"dataWorkbench":{"row":"Elige un nivel o una entrada","filter":"Buscar en esta tabla","sort":"Ordenar","original":"Orden original","reset":"Restablecer","selected":"Entrada seleccionada","all":"Datos completos","show":"Localizar en la tabla","count":"entradas","empty":"No hay entradas coincidentes. Prueba otra búsqueda o restablece los filtros.","scroll":"Desplázate horizontalmente para ver todas las columnas.","step":"Coste de un paso","cumulative":"Acumulado desde el primer paso","range":"Total del intervalo seleccionado","current":"Nivel actual","target":"Nivel objetivo","held":"En inventario","shortage":"Aún necesario","plan":"Recursos para tu mejora","time":"Tiempo de la tabla","boundary":"Suma los valores de la tabla desde el siguiente nivel hasta el objetivo. Los costes y tiempos reales pueden variar según la etapa de desarrollo y las bonificaciones aplicadas.","unknown":"Falta un valor de coste o tiempo en este intervalo. Consulta la tabla completa a continuación.","invalid":"Comprueba los niveles actual y objetivo e introduce existencias no negativas.","reverse":"El nivel objetivo debe ser igual o superior al actual.","noUpgrade":"Los niveles actual y objetivo coinciden. No se necesitan materiales adicionales.","result":"Resultado","copy":"Copiar resultado","copied":"Copiado","copyError":"No se puede copiar. Selecciona el texto del resultado para copiarlo.","live":"Los resultados se actualizan mientras escribes.","units":"K = 1,000 · M = 1,000,000 · B = 1,000,000,000","normalised":"Los valores vacíos y negativos cuentan como 0; se utiliza la parte entera de las fracciones.","day":"d","hour":"h","minute":"min"}}}</script><link href="/css/global-locales.css" rel="stylesheet"><link href="https://tilessurvive.net/en/database/alliance-duel/" hreflang="en" rel="alternate"><link href="https://tilessurvive.net/ko/database/alliance-duel/" hreflang="ko" rel="alternate"><link href="https://tilessurvive.net/ja/database/alliance-duel/" hreflang="ja" rel="alternate"><link href="https://tilessurvive.net/zh-tw/database/alliance-duel/" hreflang="zh-TW" rel="alternate"><link href="https://tilessurvive.net/de/database/alliance-duel/" hreflang="de" rel="alternate"><link href="https://tilessurvive.net/ru/database/alliance-duel/" hreflang="ru" rel="alternate"><link href="https://tilessurvive.net/zh-cn/database/alliance-duel/" hreflang="zh-CN" rel="alternate"><link href="https://tilessurvive.net/ar/database/alliance-duel/" hreflang="ar" rel="alternate"><link href="https://tilessurvive.net/nl/database/alliance-duel/" hreflang="nl" rel="alternate"><link href="https://tilessurvive.net/fr/database/alliance-duel/" hreflang="fr" rel="alternate"><link href="https://tilessurvive.net/id/database/alliance-duel/" hreflang="id" rel="alternate"><link href="https://tilessurvive.net/it/database/alliance-duel/" hreflang="it" rel="alternate"><link href="https://tilessurvive.net/pl/database/alliance-duel/" hreflang="pl" rel="alternate"><link href="https://tilessurvive.net/pt/database/alliance-duel/" hreflang="pt" rel="alternate"><link href="https://tilessurvive.net/es/database/alliance-duel/" hreflang="es" rel="alternate"><link href="https://tilessurvive.net/sv/database/alliance-duel/" hreflang="sv" rel="alternate"><link href="https://tilessurvive.net/th/database/alliance-duel/" hreflang="th" rel="alternate"><link href="https://tilessurvive.net/tr/database/alliance-duel/" hreflang="tr" rel="alternate"><link href="https://tilessurvive.net/vi/database/alliance-duel/" hreflang="vi" rel="alternate"><link href="https://tilessurvive.net/ms/database/alliance-duel/" hreflang="ms" rel="alternate"><link href="https://tilessurvive.net/nb/database/alliance-duel/" hreflang="nb" rel="alternate"><link href="https://tilessurvive.net/en/database/alliance-duel/" hreflang="x-default" rel="alternate"></head>
+
+<body><a class="ts-skip" href="/es/database/alliance-duel/#main">Saltar al contenido</a><header class="ts-header ts3-header"><div class="ts-header-inner"><a class="ts-brand" href="/es/">TilesSurvive</a><form class="ts-header-search ts3-search-form" action="/es/search/" role="search"><input name="q" type="search" aria-label="Buscar" placeholder="Buscar por nombre o material" autocomplete="off"><button>Buscar</button></form><details class="ts3-menu"><summary>Menú</summary><nav class="ts-dropdown" aria-label="Menú"><a href="/es/heroes/">Héroes</a><a href="/es/database/pet-system/">Mascotas</a><a href="/es/buildings/">Edificios</a><a aria-current="page" href="/es/database/">Progreso &amp; equipo</a><a href="/es/tools/">Calculadoras</a><a href="/es/guides/">Guías</a><a href="/es/seasons/">Temporadas</a><a href="/es/codes/">Códigos</a><a href="/es/events/">Eventos</a><a href="/es/top-up/">Guía de recarga</a><a href="/es/buildings/lab/">Requisitos de investigación</a></nav></details><details class="ts3-language"><summary>ES</summary><nav class="ts-dropdown" aria-label="Idioma"><a hreflang="en" lang="en" href="/en/database/alliance-duel/">English</a><a hreflang="ko" lang="ko" href="/ko/database/alliance-duel/">한국어</a><a hreflang="ja" lang="ja" href="/ja/database/alliance-duel/">日本語</a><a hreflang="zh-TW" lang="zh-Hant" href="/zh-tw/database/alliance-duel/">繁體中文</a><a hreflang="de" lang="de" href="/de/database/alliance-duel/">Deutsch</a><a hreflang="ru" lang="ru" href="/ru/database/alliance-duel/">Русский</a><a hreflang="zh-CN" lang="zh-Hans" href="/zh-cn/database/alliance-duel/">简体中文</a><a hreflang="ar" lang="ar" href="/ar/database/alliance-duel/">العربية</a><a hreflang="nl" lang="nl" href="/nl/database/alliance-duel/">Nederlands</a><a hreflang="fr" lang="fr" href="/fr/database/alliance-duel/">Français</a><a hreflang="id" lang="id" href="/id/database/alliance-duel/">Bahasa Indonesia</a><a hreflang="it" lang="it" href="/it/database/alliance-duel/">Italiano</a><a hreflang="pl" lang="pl" href="/pl/database/alliance-duel/">Polski</a><a hreflang="pt" lang="pt" href="/pt/database/alliance-duel/">Português</a><a aria-current="page" hreflang="es" lang="es" href="/es/database/alliance-duel/">Español</a><a hreflang="sv" lang="sv" href="/sv/database/alliance-duel/">Svenska</a><a hreflang="th" lang="th" href="/th/database/alliance-duel/">ไทย</a><a hreflang="tr" lang="tr" href="/tr/database/alliance-duel/">Türkçe</a><a hreflang="vi" lang="vi" href="/vi/database/alliance-duel/">Tiếng Việt</a><a hreflang="ms" lang="ms" href="/ms/database/alliance-duel/">Bahasa Melayu</a><a hreflang="nb" lang="nb" href="/nb/database/alliance-duel/">Norsk bokmål</a></nav></details></div><nav class="ts-nav" aria-label="Menú"><a href="/es/heroes/">Héroes</a><a href="/es/database/pet-system/">Mascotas</a><a href="/es/buildings/">Edificios</a><a href="/es/database/" aria-current="page">Progreso &amp; equipo</a><a href="/es/tools/">Calculadoras</a><a href="/es/guides/">Guías</a><a href="/es/seasons/">Temporadas</a><a href="/es/codes/">Códigos</a><a href="/es/events/">Eventos</a></nav></header>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <main class="container page-main ts3-data-page" id="main" role="main" aria-label="Contenido principal">
+    <section class="visually-hidden-seo" aria-label="Resumen SEO">
+      <p>Tiles Survive Duelo de alianzas tabla de guía requisitos de participación desarrollo del evento recomendaciones de combate tortugas bonificación del rey base de datos</p>
+    </section>
+
+    <nav class="breadcrumb" aria-label="Ruta de navegación">
+      <a href="/es/">Inicio</a>
+      <span>›</span>
+      <a href="/es/database/">Base de datos</a>
+      <span>›</span>
+      <span aria-current="page">Tabla de la guía de Duelo de alianzas</span>
+    </nav>
+
+    <section class="hero-wrap" aria-labelledby="pageTitle">
+      <article class="hero-card">
+        <span class="eyebrow">Base de datos</span>
+        <h1 id="pageTitle">Tabla de la guía de Duelo de alianzas</h1>
+        <p>
+          Esta página organiza los requisitos de participación, el desarrollo de Duelo de alianzas y una tabla semanal recomendada para prepararte con mayor eficiencia. También incluye los momentos recomendados de combate y tortugas, las secciones de bonificación del rey y sus horarios.
+        </p>
+
+        <div class="hero-meta">
+          <span class="meta-pill">Etapas: de 1 a 7</span>
+          <span class="meta-pill">Marcadores: recomendación de batalla / tortuga / bonificación del rey</span>
+          <span class="meta-pill">Incluye: requisitos / desarrollo del evento</span>
+        </div>
+      </article>
+
+      <aside class="info-card" aria-label="Resumen de Duelo de alianzas">
+        <div class="guide-thumb">
+          <img height="204" width="214" decoding="async" loading="lazy" src="/img/database/alliance-duel-guide.webp" alt="Tabla de la guía de Duelo de alianzas">
+        </div>
+
+        <div class="quick-stats">
+          <div class="quick-stat">
+            <strong>Requisito de edificio</strong>
+            <span>Central eléctrica Nv.10+</span>
+          </div>
+          <div class="quick-stat">
+            <strong>Requisito de miembros de la alianza</strong>
+            <span>10 miembros o más</span>
+          </div>
+          <div class="quick-stat">
+            <strong>Regla de emparejamiento</strong>
+            <span>Entre los 32 primeros del servidor</span>
+          </div>
+          <div class="quick-stat">
+            <strong>Duración del evento</strong>
+            <span>1 semana</span>
+          </div>
+        </div>
+      </aside>
+    </section>
+
+    <div class="section-stack">
+      <section class="section-card summary-section" aria-labelledby="summaryTitle">
+        <div class="section-head">
+          <h2 id="summaryTitle">De un vistazo</h2>
+        </div>
+
+        <div class="summary-grid">
+          <div class="summary-box">
+            <strong>Recomendación de batalla</strong>
+            <span>Células azules</span>
+          </div>
+          <div class="summary-box">
+            <strong>Recomendación de tortuga</strong>
+            <span>Células amarillas</span>
+          </div>
+          <div class="summary-box">
+            <strong>Recomendación de bonificación del rey</strong>
+            <span>Células azul claro</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-card rules-section" aria-labelledby="ruleTitle">
+        <div class="section-head">
+          <h2 id="ruleTitle">Requisitos de participación</h2>
+        </div>
+
+        <ol class="rules-list">
+          <li>Comandantes con <strong>Central eléctrica de nivel 10 o superior</strong> pueden participar en el evento Duelo de alianzas.</li>
+          <li>Alianzas con <strong>10 miembros o más</strong> pueden entrar en el emparejamiento de Duelo de alianzas.</li>
+          <li>Solo las alianzas clasificadas entre <strong>entre los 32 primeros de su servidor</strong> pueden entrar el domingo en el emparejamiento de Duelo de alianzas de la semana siguiente.</li>
+        </ol>
+      </section>
+
+      <section class="section-card note-section" aria-labelledby="guideNoteTitle">
+        <div class="section-head">
+          <h2 id="guideNoteTitle">Explicación del evento</h2>
+        </div>
+
+        <ol class="rules-list">
+          <li>Tu alianza se enfrenta a una alianza enemiga en un duelo de una semana. Cada día tiene un tema y los miembros pueden obtener puntos de duelo al realizar acciones relacionadas con ese tema. La alianza con más puntos de Duelo de alianzas ese día obtiene el punto de victoria diario.</li>
+          <li>La alianza con más puntos de victoria durante toda la semana gana el duelo de esa semana.</li>
+          <li>Si cambias de alianza durante el evento, tus puntos de duelo de ese día no contarán para los puntos de la alianza. Tus puntos personales no se verán afectados y podrás seguir abriendo cofres de puntos personales.</li>
+          <li>Solo puedes obtener puntos comprando paquetes que incluyan diamantes.</li>
+        </ol>
+      </section>
+
+      <section class="section-card" aria-labelledby="guideTableTitle">
+        <div class="section-head">
+          <h2 id="guideTableTitle">Tabla de la guía de Duelo de alianzas</h2>
+          <p>Esta tabla se ha adaptado a Duelo de alianzas a partir del formato de recomendaciones de Carrera de tortugas.</p>
+        </div>
+
+        <div class="table-tools">
+          <button type="button" class="mobile-open-btn" id="openLandscapeView">
+            Abrir vista horizontal
+          </button>
+          <div class="mobile-open-note">
+            En móvil, puedes desplazar la tabla horizontalmente. Si lo necesitas, usa el botón de vista horizontal para verla con más espacio.
+          </div>
+        </div>
+
+        <div class="landscape-only">Puedes ver la tabla con mayor claridad en la vista horizontal.</div>
+
+        <div class="guide-wrap">
+          <div class="ts3-data-workbench"><div class="ts3-table-controls" id="ts3-table-controls-0" hidden><label>Elige un nivel o una entrada<select data-row-select="" aria-controls="ts3-data-table-0"><option value="0">Materiales de equipo de héroe</option><option value="1">Puesto de comunicaciones</option><option value="2">Recolección</option><option value="3">Mejora del equipo del jefe</option><option value="4">Aceleradores de construcción</option><option value="5">Aceleradores de investigación</option><option value="6">Mejora de Bégimo</option><option value="7">Reclutamiento</option><option value="8">Uso de fragmentos de héroe</option><option value="9">Uso de libros de habilidad</option><option value="10">Entrenamiento de tropas</option><option value="11">Tropas eliminadas</option><option value="12">Bonificación del rey (UTC: 00:00)</option></select></label><label>Buscar en esta tabla<input type="search" data-table-query="" aria-controls="ts3-data-table-0" autocomplete="off"></label><label>Ordenar<select data-sort="" aria-controls="ts3-data-table-0"><option value="">Orden original</option><option value="0:asc">Misión ↑</option><option value="0:desc">Misión ↓</option><option value="1:asc">Etapa 1 ↑</option><option value="1:desc">Etapa 1 ↓</option><option value="2:asc">Etapa 2 ↑</option><option value="2:desc">Etapa 2 ↓</option><option value="3:asc">Etapa 3 ↑</option><option value="3:desc">Etapa 3 ↓</option><option value="4:asc">Etapa 4 ↑</option><option value="4:desc">Etapa 4 ↓</option><option value="5:asc">Etapa 5 ↑</option><option value="5:desc">Etapa 5 ↓</option><option value="6:asc">Etapa 6 ↑</option><option value="6:desc">Etapa 6 ↓</option><option value="7:asc">Etapa 7 ↑</option><option value="7:desc">Etapa 7 ↓</option></select></label><button type="button" data-table-reset="">Restablecer</button></div><p class="ts3-table-status" role="status"></p><details class="ts3-selection" hidden><summary data-selected-title="">Entrada seleccionada</summary><dl></dl><button type="button" data-locate-row="">Localizar en la tabla</button></details><div aria-label="Tabla de la guía de Duelo de alianzas" role="region" tabindex="0" class="ts-table-wrap ts3-table-scroll"><table id="ts3-data-table-0" data-workbench="" class="guide-table ts3-data-table">
+            <thead>
+              <tr>
+                <th scope="col" class="mission-cell">Misión</th>
+                <th scope="col" class="step-cell">Etapa 1</th>
+                <th scope="col" class="step-cell">Etapa 2</th>
+                <th scope="col" class="step-cell">Etapa 3</th>
+                <th scope="col" class="step-cell">Etapa 4</th>
+                <th scope="col" class="step-cell">Etapa 5</th>
+                <th scope="col" class="step-cell">Etapa 6</th>
+                <th scope="col" class="step-cell">Etapa 7</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td class="mission-cell">Materiales de equipo de héroe</td>
+                <td class="step-cell rounded bg-king-rec">
+                  <div class="dual-icon">
+                    <img data-image-role-50="table-icon" height="204" width="214" decoding="async" loading="lazy" src="img/king/battle.png" class="step-img" alt="BATALLA">
+                    <img height="287" width="324" decoding="async" loading="lazy" src="img/king/tuttle.png" class="step-img" alt="Tortuga">
+                  </div>
+                </td>
+                <td class="step-cell rounded bg-turtle"><img height="287" width="324" decoding="async" loading="lazy" src="img/king/tuttle.png" class="step-img" alt="Tortuga"></td>
+                <td class="step-cell"></td>
+                <td class="step-cell"></td>
+                <td class="step-cell rounded bg-turtle"><img height="287" width="324" decoding="async" loading="lazy" src="img/king/tuttle.png" class="step-img" alt="Tortuga"></td>
+                <td class="step-cell"></td>
+                <td class="step-cell rounded bg-turtle"><img height="287" width="324" decoding="async" loading="lazy" src="img/king/tuttle.png" class="step-img" alt="Tortuga"></td>
+              </tr>
+
+              <tr>
+                <td class="mission-cell">Puesto de comunicaciones</td>
+                <td class="step-cell rounded bg-battle"><img data-image-role-50="table-icon" height="204" width="214" decoding="async" loading="lazy" src="img/king/battle.png" class="step-img" alt="BATALLA"></td>
+                <td class="step-cell"></td>
+                <td class="step-cell rounded bg-battle"><img data-image-role-50="table-icon" height="204" width="214" decoding="async" loading="lazy" src="img/king/battle.png" class="step-img" alt="BATALLA"></td>
+                <td class="step-cell"></td>
+                <td class="step-cell rounded bg-battle"><img data-image-role-50="table-icon" height="204" width="214" decoding="async" loading="lazy" src="img/king/battle.png" class="step-img" alt="BATALLA"></td>
+                <td class="step-cell"></td>
+                <td class="step-cell"></td>
+              </tr>
+
+              <tr>
+                <td class="mission-cell">Recolección</td>
+                <td class="step-cell rounded bg-battle"><img data-image-role-50="table-icon" height="204" width="214" decoding="async" loading="lazy" src="img/king/battle.png" class="step-img" alt="BATALLA"></td>
+                <td class="step-cell"></td>
+                <td class="step-cell"></td>
+                <td class="step-cell"></td>
+                <td class="step-cell"></td>
+                <td class="step-cell"></td>
+                <td class="step-cell rounded bg-turtle"><img height="287" width="324" decoding="async" loading="lazy" src="img/king/tuttle.png" class="step-img" alt="Tortuga"></td>
+              </tr>
+
+              <tr>
+                <td class="mission-cell">Mejora del equipo del jefe</td>
+                <td class="step-cell"></td>
+                <td class="step-cell"></td>
+                <td class="step-cell"></td>
+                <td class="step-cell"></td>
+                <td class="step-cell rounded bg-turtle"><img height="287" width="324" decoding="async" loading="lazy" src="img/king/tuttle.png" class="step-img" alt="Tortuga"></td>
+                <td class="step-cell"></td>
+                <td class="step-cell rounded bg-turtle"><img height="287" width="324" decoding="async" loading="lazy" src="img/king/tuttle.png" class="step-img" alt="Tortuga"></td>
+              </tr>
+
+              <tr>
+                <td class="mission-cell">Aceleradores de construcción</td>
+                <td class="step-cell"></td>
+                <td class="step-cell rounded bg-king-rec">
+                  <div class="dual-icon">
+                    <img data-image-role-50="table-icon" height="204" width="214" decoding="async" loading="lazy" src="img/king/battle.png" class="step-img" alt="BATALLA">
+                    <img height="287" width="324" decoding="async" loading="lazy" src="img/king/tuttle.png" class="step-img" alt="Tortuga">
+                  </div>
+                </td>
+                <td class="step-cell"></td>
+                <td class="step-cell"></td>
+                <td class="step-cell rounded bg-king-rec">
+                  <div class="dual-icon">
+                    <img data-image-role-50="table-icon" height="204" width="214" decoding="async" loading="lazy" src="img/king/battle.png" class="step-img" alt="BATALLA">
+                    <img height="287" width="324" decoding="async" loading="lazy" src="img/king/tuttle.png" class="step-img" alt="Tortuga">
+                  </div>
+                </td>
+                <td class="step-cell"></td>
+                <td class="step-cell rounded bg-turtle"><img height="287" width="324" decoding="async" loading="lazy" src="img/king/tuttle.png" class="step-img" alt="Tortuga"></td>
+              </tr>
+
+              <tr>
+                <td class="mission-cell">Aceleradores de investigación</td>
+                <td class="step-cell"></td>
+                <td class="step-cell"></td>
+                <td class="step-cell rounded bg-king-rec">
+                  <div class="dual-icon">
+                    <img data-image-role-50="table-icon" height="204" width="214" decoding="async" loading="lazy" src="img/king/battle.png" class="step-img" alt="BATALLA">
+                    <img height="287" width="324" decoding="async" loading="lazy" src="img/king/tuttle.png" class="step-img" alt="Tortuga">
+                  </div>
+                </td>
+                <td class="step-cell"></td>
+                <td class="step-cell rounded bg-battle"><img data-image-role-50="table-icon" height="204" width="214" decoding="async" loading="lazy" src="img/king/battle.png" class="step-img" alt="BATALLA"></td>
+                <td class="step-cell rounded bg-king-rec">
+                  <div class="dual-icon">
+                    <img data-image-role-50="table-icon" height="204" width="214" decoding="async" loading="lazy" src="img/king/battle.png" class="step-img" alt="BATALLA">
+                    <img height="287" width="324" decoding="async" loading="lazy" src="img/king/tuttle.png" class="step-img" alt="Tortuga">
+                  </div>
+                </td>
+                <td class="step-cell rounded bg-turtle"><img height="287" width="324" decoding="async" loading="lazy" src="img/king/tuttle.png" class="step-img" alt="Tortuga"></td>
+              </tr>
+
+              <tr>
+                <td class="mission-cell">Mejora de Bégimo</td>
+                <td class="step-cell"></td>
+                <td class="step-cell"></td>
+                <td class="step-cell rounded bg-king-rec">
+                  <div class="dual-icon">
+                    <img data-image-role-50="table-icon" height="204" width="214" decoding="async" loading="lazy" src="img/king/battle.png" class="step-img" alt="BATALLA">
+                    <img height="287" width="324" decoding="async" loading="lazy" src="img/king/tuttle.png" class="step-img" alt="Tortuga">
+                  </div>
+                </td>
+                <td class="step-cell"></td>
+                <td class="step-cell"></td>
+                <td class="step-cell"></td>
+                <td class="step-cell rounded bg-turtle"><img height="287" width="324" decoding="async" loading="lazy" src="img/king/tuttle.png" class="step-img" alt="Tortuga"></td>
+              </tr>
+
+              <tr>
+                <td class="mission-cell">Reclutamiento</td>
+                <td class="step-cell"></td>
+                <td class="step-cell"></td>
+                <td class="step-cell"></td>
+                <td class="step-cell rounded bg-king-rec">
+                  <div class="dual-icon">
+                    <img data-image-role-50="table-icon" height="204" width="214" decoding="async" loading="lazy" src="img/king/battle.png" class="step-img" alt="BATALLA">
+                    <img height="287" width="324" decoding="async" loading="lazy" src="img/king/tuttle.png" class="step-img" alt="Tortuga">
+                  </div>
+                </td>
+                <td class="step-cell"></td>
+                <td class="step-cell"></td>
+                <td class="step-cell rounded bg-turtle"><img height="287" width="324" decoding="async" loading="lazy" src="img/king/tuttle.png" class="step-img" alt="Tortuga"></td>
+              </tr>
+
+              <tr>
+                <td class="mission-cell">Uso de fragmentos de héroe</td>
+                <td class="step-cell"></td>
+                <td class="step-cell"></td>
+                <td class="step-cell"></td>
+                <td class="step-cell rounded bg-king-rec">
+                  <div class="dual-icon">
+                    <img data-image-role-50="table-icon" height="204" width="214" decoding="async" loading="lazy" src="img/king/battle.png" class="step-img" alt="BATALLA">
+                    <img height="287" width="324" decoding="async" loading="lazy" src="img/king/tuttle.png" class="step-img" alt="Tortuga">
+                  </div>
+                </td>
+                <td class="step-cell"></td>
+                <td class="step-cell"></td>
+                <td class="step-cell rounded bg-turtle"><img height="287" width="324" decoding="async" loading="lazy" src="img/king/tuttle.png" class="step-img" alt="Tortuga"></td>
+              </tr>
+
+              <tr>
+                <td class="mission-cell">Uso de libros de habilidad</td>
+                <td class="step-cell"></td>
+                <td class="step-cell"></td>
+                <td class="step-cell"></td>
+                <td class="step-cell rounded bg-king-rec">
+                  <div class="dual-icon">
+                    <img data-image-role-50="table-icon" height="204" width="214" decoding="async" loading="lazy" src="img/king/battle.png" class="step-img" alt="BATALLA">
+                    <img height="287" width="324" decoding="async" loading="lazy" src="img/king/tuttle.png" class="step-img" alt="Tortuga">
+                  </div>
+                </td>
+                <td class="step-cell"></td>
+                <td class="step-cell"></td>
+                <td class="step-cell rounded bg-turtle"><img height="287" width="324" decoding="async" loading="lazy" src="img/king/tuttle.png" class="step-img" alt="Tortuga"></td>
+              </tr>
+
+              <tr>
+                <td class="mission-cell">Entrenamiento de tropas</td>
+                <td class="step-cell rounded bg-turtle"><img height="287" width="324" decoding="async" loading="lazy" src="img/king/tuttle.png" class="step-img" alt="Tortuga"></td>
+                <td class="step-cell"></td>
+                <td class="step-cell"></td>
+                <td class="step-cell"></td>
+                <td class="step-cell rounded bg-battle"><img data-image-role-50="table-icon" height="204" width="214" decoding="async" loading="lazy" src="img/king/battle.png" class="step-img" alt="BATALLA"></td>
+                <td class="step-cell rounded bg-king-rec">
+                  <div class="dual-icon">
+                    <img data-image-role-50="table-icon" height="204" width="214" decoding="async" loading="lazy" src="img/king/battle.png" class="step-img" alt="BATALLA">
+                    <img height="287" width="324" decoding="async" loading="lazy" src="img/king/tuttle.png" class="step-img" alt="Tortuga">
+                  </div>
+                </td>
+                <td class="step-cell rounded bg-turtle"><img height="287" width="324" decoding="async" loading="lazy" src="img/king/tuttle.png" class="step-img" alt="Tortuga"></td>
+              </tr>
+
+              <tr>
+                <td class="mission-cell">Tropas eliminadas</td>
+                <td class="step-cell"></td>
+                <td class="step-cell"></td>
+                <td class="step-cell"></td>
+                <td class="step-cell"></td>
+                <td class="step-cell"></td>
+                <td class="step-cell rounded bg-battle"><img data-image-role-50="table-icon" height="204" width="214" decoding="async" loading="lazy" src="img/king/battle.png" class="step-img" alt="BATALLA"></td>
+                <td class="step-cell"></td>
+              </tr>
+
+              <tr class="bg-king">
+                <td class="mission-cell">
+                  <img data-image-role-50="table-icon" height="133" width="147" decoding="async" loading="lazy" src="img/king/king.png" class="step-img-large" alt="Bonificación del rey">
+                  Bonificación del rey<br>(UTC: 00:00)
+                </td>
+                <td class="step-cell">
+                  <img height="311" width="296" decoding="async" loading="lazy" src="img/king/food.png" class="step-img-large" alt="Velocidad de recolección">
+                  <div style="font-size:11px; line-height:1.25;">Velocidad de recolección</div>
+                </td>
+                <td class="step-cell">
+                  <img height="305" width="294" decoding="async" loading="lazy" src="img/king/build.png" class="step-img-large" alt="Velocidad de construcción">
+                  <div style="font-size:11px; line-height:1.25;">Velocidad de construcción</div>
+                </td>
+                <td class="step-cell">
+                  <img height="312" width="298" decoding="async" loading="lazy" src="img/king/speed.png" class="step-img-large" alt="Velocidad de Investigación">
+                  <div style="font-size:11px; line-height:1.25;">Velocidad de Investigación</div>
+                </td>
+                <td class="step-cell">
+                  <div style="font-size:11px; line-height:1.25;">Sin bonificación</div>
+                </td>
+                <td class="step-cell">
+                  <img height="310" width="291" decoding="async" loading="lazy" src="img/king/train.png" class="step-img-large" alt="Velocidad de entrenamiento">
+                  <div style="font-size:11px; line-height:1.25;">Velocidad de entrenamiento<br>(UTC:04:00 u 08:00)</div>
+                </td>
+                <td class="step-cell">
+                  <img height="296" width="305" decoding="async" loading="lazy" src="img/king/heal.png" class="step-img-large" alt="Velocidad de curación">
+                  <div style="font-size:11px; line-height:1.25;">Velocidad de curación</div>
+                </td>
+                <td class="step-cell">
+                  <div style="font-size:11px; line-height:1.25;">Sin bonificación</div>
+                </td>
+              </tr>
+            </tbody>
+          </table></div><p class="ts3-table-note">Desplázate horizontalmente para ver todas las columnas.</p></div>
+        </div>
+
+        <p class="table-caption">
+          Las casillas azules indican recomendaciones de batalla, las amarillas recomendaciones de tortuga y las azul claro secciones recomendadas para la bonificación del rey.
+        </p>
+
+        <div class="back-list">
+          <a class="back-link" href="/es/database/">Volver a la base de datos</a>
+          <a class="back-link" href="/es/">Volver al inicio</a>
+        </div>
+      </section>
+    <section aria-labelledby="official-conditions-40-heading" data-official-facts-40="database/alliance-duel" class="ts-database-22" id="official-conditions-40"><h2 id="official-conditions-40-heading">Tareas de desarrollo de mascotas del día 2</h2><p data-official-fact-ids="alliance-duel-pet-day">En los estados con mascotas desbloqueadas, las tareas de desarrollo de mascotas otorgan puntos de Duelo de alianzas el día 2. Consulta la pantalla del evento para ver los puntos por acción. <small>(<a href="https://tilesurvivegame.com/en/blog/1188" data-official-source="blog-1188">v2.6.200</a>)</small></p></section></div>
+  <nav aria-label="Información relacionada" data-platform-related="" class="ts-toc"><a href="/es/buildings/lab/">Laboratorio</a><a href="/es/database/hero-star/">Tabla de estrellas de héroes</a><a href="/es/database/exclusive-gear/">Tabla de mejora del equipo exclusivo</a><a href="/es/behemoths/">Lista de bégimos de Tiles Survive</a><a href="/es/tools/speedup-calculator/">Calculadora de aceleradores de Tiles Survive</a></nav></main>
+
+
+
+
+
+
+
+
+
+
+
+  <script>
+    (function(){
+      var params = new URLSearchParams(location.search);
+      if (params.get('view') === 'landscape') {
+        document.body.classList.add('is-landscape-view');
+        document.title = 'Alliance Duel Guide Table Landscape View | TilesSurvive.net';
+      }
+
+      var openBtn = document.getElementById('openLandscapeView');
+      if (openBtn) {
+        openBtn.addEventListener('click', function () {
+          var url = new URL(location.href);
+          url.searchParams.set('view', 'landscape');
+          window.open(url.toString(), '_blank', 'noopener,noreferrer');
+        });
+      }
+    })();
+  </script>
+
+
+<footer class="ts-footer"><div class="ts-footer-inner"><strong>TilesSurvive.net</strong><a href="/es/search/">Buscar</a><a href="/es/codes/">Códigos</a><a href="/es/top-up/">Guía de recarga</a><a href="https://discord.gg/sGv9Ptvbd" rel="noopener noreferrer" data-support-discord="" target="_blank">Discord</a><a href="/es/about/">Acerca de</a><a href="/es/contact/">Contacto</a><a href="/es/privacy/">Privacidad</a><a href="/es/terms/">Condiciones</a><a href="/es/affiliate-disclosure/">Aviso de afiliación</a></div><small>© 2026 TilesSurvive.net · Enlace de afiliado: LootBar</small></footer><script data-platform="" src="/js/platform-math.js?v=0b4a80d08585" defer></script><script data-platform="" src="/js/platform-shell.js?v=9ce2d9502d2d" defer></script><script data-platform="" src="/js/platform.js?v=41a65fd482d4" defer></script><script data-platform="" src="/js/platform-search.js?v=71751a59182b" defer></script><script data-platform="" src="/js/platform-affiliate.js?v=554e49bc62ee" defer></script><script data-platform="" src="/js/refinement.js?v=ecb10eaf49c7" defer></script><script data-product-30="" type="application/json" id="ts3-copy">{"allResults":"Ver todos los resultados de búsqueda","searchHint":"Buscar por nombre o material","backTop":"Volver arriba"}</script><script data-product-30="" src="/js/product-30.js?v=384c90a0c409" defer></script></body>
+</html>

@@ -1,5 +1,6 @@
 (function(){'use strict';function init(){
- const lang=document.documentElement.dataset.lang||'en',t=window.TS_COPY[lang]||window.TS_COPY.en,c=JSON.parse(document.getElementById('ts3-copy')?.textContent||'{}');
+ const lang=window.TS_LOCALES?window.TS_LOCALES.current():document.documentElement.dataset.lang||'en',t=window.TS_I18N?window.TS_I18N.require(lang):window.TS_COPY[lang],c=JSON.parse(document.getElementById('ts3-copy')?.textContent||'{}');
+ if(!t)throw Error('Missing product UI translation for '+lang);
  let indexPromise;
  const normalize=s=>String(s||'').normalize('NFKC').toLocaleLowerCase(lang);
  function loadIndex(){if(!indexPromise)indexPromise=fetch('/data/search/'+lang+'.json',{cache:'no-cache'}).then(r=>{if(!r.ok)throw Error('search');return r.json();}).then(data=>(data.items||[]).filter(i=>i.language===lang)).catch(e=>{indexPromise=null;throw e;});return indexPromise;}

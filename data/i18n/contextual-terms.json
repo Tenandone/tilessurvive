@@ -1,0 +1,245 @@
+{
+  "schemaVersion": 1,
+  "scope": "Page-specific skill display-name corrections. Existing six pages change only verified Undine current labels; historical external quotations remain unchanged.",
+  "entries": [
+    {
+      "id": "undine-skill-2",
+      "groupId": "heroes/undine/",
+      "sourceAlias": "Wild Hunt",
+      "clientKey": "survivor_undine_skill_2_name_newse",
+      "descriptionKey": "survivor_undine_skill_2_description_newse",
+      "officialEnglishName": "Pelagic Resonance",
+      "reason": "The source Undine page calls this back-row-ATK skill Wild Hunt. The retained Undine skill key is Pelagic Resonance. Wild Hunt also identifies a distinct Travis skill, so a global replacement is invalid.",
+      "names": {
+        "en": {
+          "value": "Pelagic Resonance",
+          "provenance": "retained-client",
+          "sourceArtifact": "ingame-apk-en.json",
+          "sourceSha256": "a469fc698e0b031cdae6f824b5bd4f38e6d04a04b3df7235c305700908ce1e6e",
+          "nativeSpeakerReview": false
+        },
+        "fr": {
+          "value": "Résonance pélagique",
+          "provenance": "retained-client",
+          "sourceArtifact": "ingame-apk-fr.json",
+          "sourceSha256": "34307eb76e75f7ff5730fe779523544a947b8f28ef80e16a2902f758a7afd691",
+          "nativeSpeakerReview": false
+        },
+        "id": {
+          "value": "Resonansi Pelagis",
+          "provenance": "retained-client",
+          "sourceArtifact": "ingame-apk-id.json",
+          "sourceSha256": "f5c67c91edda155a19399ea8dcb1dccc6c31e903115c8726eff2889d2ead19aa",
+          "nativeSpeakerReview": false
+        },
+        "it": {
+          "value": "Risonanza pelagica",
+          "provenance": "retained-client",
+          "sourceArtifact": "ingame-apk-it.json",
+          "sourceSha256": "f28ea5d4faa893d31cd2140f50dc82528c21d76d80504691529a705653bdf04a",
+          "nativeSpeakerReview": false
+        },
+        "pl": {
+          "value": "Rezonancja pelagiczna",
+          "provenance": "retained-client",
+          "sourceArtifact": "ingame-apk-pl.json",
+          "sourceSha256": "f4afefbef2fd9cf1d94f411495934af7ee88237b221a3e75d56daa3001e6fd6f",
+          "nativeSpeakerReview": false
+        },
+        "pt": {
+          "value": "Ressonância Pelágica",
+          "provenance": "retained-client",
+          "sourceArtifact": "ingame-apk-pt.json",
+          "sourceSha256": "b21be4d1d138636a090975a0b0f2c59f0e42eb4c5b20e2addc7e835dc2d70b28",
+          "nativeSpeakerReview": false
+        },
+        "es": {
+          "value": "Resonancia pelágica",
+          "provenance": "retained-client",
+          "sourceArtifact": "ingame-apk-es.json",
+          "sourceSha256": "942b0e19ab80dc7258b4fd3513a921f76bd9ae78960b5486ccdb49d685a5b724",
+          "nativeSpeakerReview": false
+        },
+        "sv": {
+          "value": "Pelagiskt eko",
+          "provenance": "retained-client",
+          "sourceArtifact": "ingame-apk-sv.json",
+          "sourceSha256": "0250384d1a8db784d66660628c26311301e5c4bda18ccefd7b19348b728a0ca3",
+          "nativeSpeakerReview": false
+        },
+        "th": {
+          "value": "พลังประสานห้วงมหาสมุทร",
+          "provenance": "retained-client",
+          "sourceArtifact": "ingame-apk-th.json",
+          "sourceSha256": "914c597fcce88bc692cac744ec41d9120896c308e2660a521eb482b5e9aa1cc7",
+          "nativeSpeakerReview": false
+        },
+        "tr": {
+          "value": "Pelajik Rezonans",
+          "provenance": "retained-client",
+          "sourceArtifact": "ingame-apk-tr.json",
+          "sourceSha256": "6329993dabd8cb2d230dcbb99f48795dc91326e63eead3f0a695d162a8fde2df",
+          "nativeSpeakerReview": false
+        },
+        "ms": {
+          "value": "Resonans Pelagik",
+          "provenance": "retained-client",
+          "sourceArtifact": "ingame-apk-my.json",
+          "sourceSha256": "b47036eebd4a43648c5275fa1fdd4a7bf3b336d3389db3ff3f8cfb999a0ce212",
+          "nativeSpeakerReview": false
+        },
+        "nl": {
+          "value": "Pelagische resonantie",
+          "provenance": "retained-client",
+          "sourceArtifact": "ingame-apk-nl.json",
+          "sourceSha256": "dc793e75098b484d010f783be92ca8a665ad799be0d8a2dfa5969c9864443560",
+          "nativeSpeakerReview": false
+        },
+        "zh-cn": {
+          "value": "远洋共振",
+          "provenance": "retained-client",
+          "sourceArtifact": "ingame-apk-zh-CN.json",
+          "sourceSha256": "9fd950738f3fe54f185dad5ffdf1e3424962472d7190fe022008eedaefacc2fd",
+          "nativeSpeakerReview": false
+        },
+        "ar": {
+          "value": "الرنين البحري",
+          "provenance": "authored",
+          "sourceEnglish": "Pelagic Resonance",
+          "nativeSpeakerReview": false,
+          "officialClientLocaleVerified": false
+        },
+        "vi": {
+          "value": "Cộng hưởng biển khơi",
+          "provenance": "authored",
+          "sourceEnglish": "Pelagic Resonance",
+          "nativeSpeakerReview": false,
+          "officialClientLocaleVerified": false
+        },
+        "nb": {
+          "value": "Pelagisk resonans",
+          "provenance": "authored",
+          "sourceEnglish": "Pelagic Resonance",
+          "nativeSpeakerReview": false,
+          "officialClientLocaleVerified": false
+        },
+        "ko": {
+          "value": "먼바다의 공명",
+          "provenance": "retained-client",
+          "sourceArtifact": "ingame-apk-ko.json",
+          "sourceSha256": "b01059f83a47815f30d3adbfe06d42ca028979fc75f4414bfbe8e5e7bcafa7c2",
+          "nativeSpeakerReview": false
+        },
+        "ja": {
+          "value": "遠洋の共鳴",
+          "provenance": "retained-client",
+          "sourceArtifact": "ingame-apk-ja.json",
+          "sourceSha256": "70df0aceef8d75b26afd07aba081268ce0646f1896d15cbc57f786c90329227c",
+          "nativeSpeakerReview": false
+        },
+        "ru": {
+          "value": "Морской резонанс",
+          "provenance": "retained-client",
+          "sourceArtifact": "ingame-apk-ru.json",
+          "sourceSha256": "f91a9942e30896d9a05d5b5364dbe6be35b4b6923b602bf10eada6e83223f907",
+          "nativeSpeakerReview": false
+        },
+        "zh-tw": {
+          "value": "遠洋共振",
+          "provenance": "retained-client",
+          "sourceArtifact": "ingame-apk-zh-TW.json",
+          "sourceSha256": "6c1d31a2f1f2f489fc2818c4d0c8f90e84dcc247f658e1437741e3590d56a625",
+          "nativeSpeakerReview": false
+        },
+        "de": {
+          "value": "Pelagische Resonanz",
+          "provenance": "retained-client",
+          "sourceArtifact": "ingame-apk-de.json",
+          "sourceSha256": "516ea20886c914df24013300ce3f2ebb25af51921e29fc097099289b0ed0ff59",
+          "nativeSpeakerReview": false
+        }
+      },
+      "exact": [
+        {
+          "source": "Wild Hunt",
+          "translations": {
+            "fr": "Résonance pélagique",
+            "id": "Resonansi Pelagis",
+            "it": "Risonanza pelagica",
+            "pl": "Rezonancja pelagiczna",
+            "pt": "Ressonância Pelágica",
+            "es": "Resonancia pelágica",
+            "sv": "Pelagiskt eko",
+            "th": "พลังประสานห้วงมหาสมุทร",
+            "tr": "Pelajik Rezonans",
+            "vi": "Cộng hưởng biển khơi",
+            "ms": "Resonans Pelagik",
+            "nb": "Pelagisk resonans",
+            "ar": "الرنين البحري",
+            "nl": "Pelagische resonantie"
+          }
+        },
+        {
+          "source": "Wild Hunt · allied back-row ATK",
+          "translations": {
+            "fr": "Résonance pélagique · ATQ des alliés de dernière ligne",
+            "id": "Resonansi Pelagis · ATK sekutu barisan belakang",
+            "it": "Risonanza pelagica · ATT alleati in seconda fila",
+            "pl": "Rezonancja pelagiczna · ATK sojuszniczego tylnego szeregu",
+            "pt": "Ressonância Pelágica · ATQ da retaguarda aliada",
+            "es": "Resonancia pelágica · ATQ de la retaguardia aliada",
+            "sv": "Pelagiskt eko · attack för allierade i bakre raden",
+            "th": "พลังประสานห้วงมหาสมุทร · พลังโจมตีแถวหลังฝ่ายเดียวกัน",
+            "tr": "Pelajik Rezonans · Müttefik arka sıra ATK",
+            "vi": "Cộng hưởng biển khơi · ATK hàng sau đồng minh",
+            "ms": "Resonans Pelagik · ATK sekutu barisan belakang",
+            "nb": "Pelagisk resonans · alliert bakrekkes angrep",
+            "ar": "الرنين البحري · هجوم الصف الخلفي الحليف ATK",
+            "nl": "Pelagische resonantie · aanval geallieerde achterste rij"
+          }
+        },
+        {
+          "source": "The external detail page lists Azure Anthem at 507.35% ATK and Wild Hunt at 8.34% ATK without skill levels. Treat these separately from existing Lv.19–21 game-screen observations.",
+          "translations": {
+            "fr": "La fiche externe indique Hymne d’azur à 507.35% d’ATQ et Résonance pélagique (ancien libellé « Wild Hunt ») à 8.34% d’ATQ sans niveaux de compétence. Traitez ces valeurs séparément des observations existantes des écrans du jeu aux niv.19–21.",
+            "id": "Halaman detail eksternal mencantumkan Lagu Azure pada 507.35% ATK dan Resonansi Pelagis (label lama “Wild Hunt”) pada 8.34% ATK tanpa tingkat keterampilan. Pisahkan nilai ini dari pengamatan layar game Lv.19–21 yang ada.",
+            "it": "La pagina dettagliata esterna elenca Inno azzurro al 507.35% ATT e Risonanza pelagica (vecchia etichetta “Wild Hunt”) all’8.34% ATT senza livelli abilità. Considerali separatamente dalle osservazioni esistenti delle schermate di gioco Lv.19–21.",
+            "pl": "Zewnętrzna strona szczegółowa podaje dla Lazurowego hymnu 507.35% ATK, a dla Rezonancja pelagiczna (dawna etykieta „Wild Hunt”) 8.34% ATK, bez poziomów umiejętności. Traktuj te dane oddzielnie od istniejących obserwacji ekranu gry dla poz.19–21.",
+            "pt": "A página externa de detalhes lista Hino Azulado com 507.35% de ATQ e Ressonância Pelágica (nome antigo “Wild Hunt”) com 8.34% de ATQ, sem informar os níveis das habilidades. Considere esses valores separadamente das observações existentes nas telas do jogo de Nv.19–21.",
+            "es": "La página externa de detalles indica un 507.35% de ATQ para Himno azur y un 8.34% de ATQ para Resonancia pelágica (nombre anterior «Wild Hunt»), sin niveles de habilidad. Trátalos por separado de las observaciones existentes de pantallas del juego de Nv.19–21.",
+            "sv": "Den externa detaljsidan anger Azurblå hymn till 507.35% attack och Pelagiskt eko (tidigare benämning ”Wild Hunt”) till 8.34% attack utan färdighetsnivåer. Håll dessa värden åtskilda från befintliga observationer av spelskärmen på nv.19–21.",
+            "th": "หน้ารายละเอียดภายนอกระบุบทเพลงสรรเสริญสีครามที่ 507.35% ของพลังโจมตี และพลังประสานห้วงมหาสมุทร (ชื่อเดิม “Wild Hunt”)ที่ 8.34% ของพลังโจมตีโดยไม่ระบุเลเวลสกิล ให้แยกข้อมูลเหล่านี้จากการสังเกตหน้าจอเกมเลเวล 19–21 ที่มีอยู่",
+            "tr": "Harici ayrıntı sayfası, beceri seviyelerini belirtmeden Azur Marşı için %507.35 ATK ve Pelajik Rezonans (eski etiket “Wild Hunt”) için %8.34 ATK listeler. Bunları mevcut Sv.19–21 oyun ekranı gözlemlerinden ayrı değerlendirin.",
+            "vi": "Trang chi tiết ngoài liệt kê Thánh Ca Xanh 507.35% ATK và Cộng hưởng biển khơi (nhãn cũ “Wild Hunt”) 8.34% ATK nhưng không có cấp kỹ năng. Tách riêng với quan sát màn hình trò chơi Cấp 19–21 hiện có.",
+            "ms": "Halaman butiran luaran menyenaraikan Lagu Biru Langit pada 507.35% ATK dan Resonans Pelagik (label lama “Wild Hunt”) pada 8.34% ATK tanpa tahap kemahiran. Asingkan daripada pemerhatian skrin permainan Lv.19–21 sedia ada.",
+            "nb": "Den eksterne detaljsiden oppgir Asurhymne til 507.35% angrep og Pelagisk resonans (tidligere betegnelse «Wild Hunt») til 8.34% angrep uten ferdighetsnivå. Hold dette adskilt fra eksisterende spillskjermobservasjoner på nivå 19–21.",
+            "ar": "تسجل صفحة التفاصيل الخارجية النشيد اللازوردي بنسبة 507.35% من الهجوم والرنين البحري (التسمية القديمة «Wild Hunt») بنسبة 8.34% من الهجوم دون تحديد مستويات المهارات. تعامل مع هذه القيم بشكل منفصل عن مشاهدات شاشة اللعبة السابقة للمستويات 19–21.",
+            "nl": "De externe detailpagina vermeldt Azuurblauw lied met 507.35% aanval en Pelagische resonantie (oude benaming ‘Wild Hunt’) met 8.34% aanval zonder vaardigheidsniveaus. Houd deze apart van bestaande waarnemingen op spelschermen van Nv.19–21."
+          }
+        }
+      ],
+      "sourceDescriptionEvidence": "Retained English description raises the Attack of all back-row Heroes by {0}%.",
+      "existingSourcePagesModified": true,
+      "nativeSpeakerReview": false,
+      "sourceAliases": {
+        "en": [
+          "Wild Hunt"
+        ],
+        "zh-tw": [
+          "Wild Hunt",
+          "狂獵天賦",
+          "狂猎天赋"
+        ]
+      },
+      "existingDisplayNames": {
+        "en": "Wild Hunt",
+        "ko": "광기의 사냥",
+        "ja": "狩猟の天才",
+        "ru": "Дикая охота",
+        "zh-tw": "狂獵天賦",
+        "de": "Wilde Jagd"
+      },
+      "existingCorrectionScope": "Only Undine skill slot 3 summary/button label and current-locale comparison-name prefix; preserve skill ID, numeric values, units, other language maps and historical external paragraph."
+    }
+  ]
+}

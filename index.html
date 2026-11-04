@@ -1,19 +1,20 @@
 <!doctype html>
 <html lang="en" data-lang="root">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>TilesSurvive.net</title>
-  <meta name="robots" content="index,follow" />
-  <meta name="description" content="TilesSurvive.net language entry page" />
-  <link rel="canonical" href="https://tilessurvive.net/" />
-  <link rel="alternate" hreflang="x-default" href="https://tilessurvive.net/" />
-  <link rel="alternate" hreflang="en" href="https://tilessurvive.net/en/" />
-  <link rel="alternate" hreflang="ko" href="https://tilessurvive.net/ko/" />
-  <link rel="alternate" hreflang="ja" href="https://tilessurvive.net/ja/" />
-  <link rel="alternate" hreflang="ru" href="https://tilessurvive.net/ru/" />
-  <link rel="alternate" hreflang="zh-TW" href="https://tilessurvive.net/zh-tw/" />
-  <meta name="theme-color" content="#ffffff" />
+  <meta name="robots" content="index,follow">
+  <meta name="description" content="TilesSurvive.net language entry page">
+  <link rel="canonical" href="https://tilessurvive.net/">
+
+
+
+
+
+
+
+  <meta name="theme-color" content="#ffffff">
 
   <style>
     :root{
@@ -125,78 +126,7 @@
     }
   </style>
 
-  <script>
-    (function () {
-      var LANG_PATHS = {
-        en: '/en/',
-        ko: '/ko/',
-        ja: '/ja/',
-        ru: '/ru/',
-        'zh-tw': '/zh-tw/'
-      };
 
-      function normalizeLang(lang) {
-        var value = String(lang || '').toLowerCase();
-
-        if (value.startsWith('ko')) return 'ko';
-        if (value.startsWith('ja')) return 'ja';
-        if (value.startsWith('ru')) return 'ru';
-
-        if (
-          value === 'zh-tw' ||
-          value === 'zh_hant' ||
-          value.startsWith('zh-tw') ||
-          value.startsWith('zh-hant')
-        ) {
-          return 'zh-tw';
-        }
-
-        return 'en';
-      }
-
-      function goToLang(lang) {
-        var target = LANG_PATHS[lang] || LANG_PATHS.en;
-        try {
-          localStorage.setItem('preferred_lang', lang);
-        } catch (e) {}
-        window.location.replace(target);
-      }
-
-      function detectAndRedirect() {
-        var savedLang = null;
-
-        try {
-          savedLang = localStorage.getItem('preferred_lang');
-        } catch (e) {}
-
-        if (savedLang && LANG_PATHS[savedLang]) {
-          goToLang(savedLang);
-          return;
-        }
-
-        var browserLang = normalizeLang(
-          navigator.language ||
-          (navigator.languages && navigator.languages[0]) ||
-          'en'
-        );
-
-        goToLang(browserLang);
-      }
-
-      window.TS_ROOT_LANG = {
-        goToLang: goToLang
-      };
-
-      window.addEventListener('DOMContentLoaded', function () {
-        var status = document.getElementById('redirectStatus');
-        if (status) {
-          status.textContent = 'Detecting your language and redirecting...';
-        }
-
-        setTimeout(detectAndRedirect, 120);
-      });
-    })();
-  </script>
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z2MJ6TXZHK"></script>
@@ -208,23 +138,17 @@
   </script>
 
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9189957764761115" crossorigin="anonymous"></script>
-</head>
+<script type="application/json" id="ts-root-routes">{"en":"/en/","ko":"/ko/","ja":"/ja/","zh-tw":"/zh-tw/","de":"/de/","ru":"/ru/","zh-cn":"/zh-cn/","ar":"/ar/","nl":"/nl/","fr":"/fr/","id":"/id/","it":"/it/","pl":"/pl/","pt":"/pt/","es":"/es/","sv":"/sv/","th":"/th/","tr":"/tr/","vi":"/vi/","ms":"/ms/","nb":"/nb/"}</script><link href="https://tilessurvive.net/en/" hreflang="en" rel="alternate"><link href="https://tilessurvive.net/ko/" hreflang="ko" rel="alternate"><link href="https://tilessurvive.net/ja/" hreflang="ja" rel="alternate"><link href="https://tilessurvive.net/zh-tw/" hreflang="zh-TW" rel="alternate"><link href="https://tilessurvive.net/de/" hreflang="de" rel="alternate"><link href="https://tilessurvive.net/ru/" hreflang="ru" rel="alternate"><link href="https://tilessurvive.net/zh-cn/" hreflang="zh-CN" rel="alternate"><link href="https://tilessurvive.net/ar/" hreflang="ar" rel="alternate"><link href="https://tilessurvive.net/nl/" hreflang="nl" rel="alternate"><link href="https://tilessurvive.net/fr/" hreflang="fr" rel="alternate"><link href="https://tilessurvive.net/id/" hreflang="id" rel="alternate"><link href="https://tilessurvive.net/it/" hreflang="it" rel="alternate"><link href="https://tilessurvive.net/pl/" hreflang="pl" rel="alternate"><link href="https://tilessurvive.net/pt/" hreflang="pt" rel="alternate"><link href="https://tilessurvive.net/es/" hreflang="es" rel="alternate"><link href="https://tilessurvive.net/sv/" hreflang="sv" rel="alternate"><link href="https://tilessurvive.net/th/" hreflang="th" rel="alternate"><link href="https://tilessurvive.net/tr/" hreflang="tr" rel="alternate"><link href="https://tilessurvive.net/vi/" hreflang="vi" rel="alternate"><link href="https://tilessurvive.net/ms/" hreflang="ms" rel="alternate"><link href="https://tilessurvive.net/nb/" hreflang="nb" rel="alternate"><link href="https://tilessurvive.net/" hreflang="x-default" rel="alternate"><script src="/js/site-locales.js?v=c66f237b7560" defer></script><script src="/js/root-language.js?v=1f4ab8b4dffd" defer></script></head>
 <body>
   <main class="card" aria-label="Language entry">
-    <img class="logo" src="/img/logo-tilessurvive.png" alt="TilesSurvive.net" />
+    <img class="logo" src="/img/logo-tilessurvive.png" alt="TilesSurvive.net">
 
     <h1>TilesSurvive.net</h1>
     <p>Select your language or wait a moment to be redirected automatically.</p>
 
     <div id="redirectStatus" class="status">Preparing language redirect...</div>
 
-    <div class="lang-grid">
-      <a class="lang-btn" href="/en/" onclick="localStorage.setItem('preferred_lang','en')">English</a>
-      <a class="lang-btn" href="/ko/" onclick="localStorage.setItem('preferred_lang','ko')">한국어</a>
-      <a class="lang-btn" href="/ja/" onclick="localStorage.setItem('preferred_lang','ja')">日本語</a>
-      <a class="lang-btn" href="/zh-tw/" onclick="localStorage.setItem('preferred_lang','zh-tw')">繁體中文</a>
-      <a class="lang-btn" href="/ru/" onclick="localStorage.setItem('preferred_lang','ru')">Русский</a>
-    </div>
+    <div class="lang-grid"><a data-root-locale="en" hreflang="en" lang="en" href="/en/" class="lang-btn">English</a><a data-root-locale="ko" hreflang="ko" lang="ko" href="/ko/" class="lang-btn">한국어</a><a data-root-locale="ja" hreflang="ja" lang="ja" href="/ja/" class="lang-btn">日本語</a><a data-root-locale="zh-tw" hreflang="zh-TW" lang="zh-Hant" href="/zh-tw/" class="lang-btn">繁體中文</a><a data-root-locale="de" hreflang="de" lang="de" href="/de/" class="lang-btn">Deutsch</a><a data-root-locale="ru" hreflang="ru" lang="ru" href="/ru/" class="lang-btn">Русский</a><a data-root-locale="zh-cn" hreflang="zh-CN" lang="zh-Hans" href="/zh-cn/" class="lang-btn">简体中文</a><a data-root-locale="ar" hreflang="ar" lang="ar" href="/ar/" class="lang-btn">العربية</a><a data-root-locale="nl" hreflang="nl" lang="nl" href="/nl/" class="lang-btn">Nederlands</a><a data-root-locale="fr" hreflang="fr" lang="fr" href="/fr/" class="lang-btn">Français</a><a data-root-locale="id" hreflang="id" lang="id" href="/id/" class="lang-btn">Bahasa Indonesia</a><a data-root-locale="it" hreflang="it" lang="it" href="/it/" class="lang-btn">Italiano</a><a data-root-locale="pl" hreflang="pl" lang="pl" href="/pl/" class="lang-btn">Polski</a><a data-root-locale="pt" hreflang="pt" lang="pt" href="/pt/" class="lang-btn">Português</a><a data-root-locale="es" hreflang="es" lang="es" href="/es/" class="lang-btn">Español</a><a data-root-locale="sv" hreflang="sv" lang="sv" href="/sv/" class="lang-btn">Svenska</a><a data-root-locale="th" hreflang="th" lang="th" href="/th/" class="lang-btn">ไทย</a><a data-root-locale="tr" hreflang="tr" lang="tr" href="/tr/" class="lang-btn">Türkçe</a><a data-root-locale="vi" hreflang="vi" lang="vi" href="/vi/" class="lang-btn">Tiếng Việt</a><a data-root-locale="ms" hreflang="ms" lang="ms" href="/ms/" class="lang-btn">Bahasa Melayu</a><a data-root-locale="nb" hreflang="nb" lang="nb" href="/nb/" class="lang-btn">Norsk bokmål</a></div>
 
     <div class="note">
       This page is only for root language routing. Each language keeps its own separate index page.

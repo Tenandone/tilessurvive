@@ -4,6 +4,7 @@
   const LOOTBAR_HOSTS = new Set(["www.lootbar.com", "lootbar.com"]);
 
   function language() {
+    if (window.TS_LOCALES) return window.TS_LOCALES.current();
     const raw = (document.documentElement.getAttribute("lang") || "en").toLowerCase();
     return raw === "zh-tw" ? "zh-tw" : raw.split("-")[0];
   }

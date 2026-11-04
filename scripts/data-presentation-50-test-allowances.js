@@ -62,7 +62,7 @@ function equal(actual,expected,file){
  const a=String(actual).replaceAll('\r\n','\n'),e=String(expected).replaceAll('\r\n','\n');
  if(file==='sitemap.xml'){const urls=x=>[...x.matchAll(/<loc>(.*?)<\/loc>/g)].map(m=>m[1]);assert.deepEqual(urls(a).sort(),require('./product-50-test-allowances').expectedSitemapURLs());for(const url of urls(e))assert(urls(a).includes(url));return;}
  const approved=require('./lib/product-50-reviewed-runtime.json').entries.find(x=>x.file===file);
- if(approved&&a!==e){const hash=x=>crypto.createHash('sha256').update(x).digest('hex');assert.equal(hash(e),approved.before,file+' immutable pre5 runtime');assert.equal(hash(a),approved.after,file+' exact reviewed5 runtime');if(file==='js/database-22.js')require('./product-50-test-allowances').databasePreserved(e,a);if(file==='js/tools-speedup-calculator.js')require('./product-50-test-allowances').speedupPreserved(e,a);return;}
+ if(approved&&a!==e){const hash=x=>crypto.createHash('sha256').update(x).digest('hex');assert.equal(hash(e),approved.before,file+' immutable pre5 runtime');assert.equal(hash(file==='js/database-22.js'?require('./product-50-test-allowances').databaseBeforeGlobalLocale(a):a),approved.after,file+' exact reviewed5 runtime with explicit locale formatting');if(file==='js/database-22.js')require('./product-50-test-allowances').databasePreserved(e,a);if(file==='js/tools-speedup-calculator.js')require('./product-50-test-allowances').speedupPreserved(e,a);return;}
  assert.equal(html(a,file),html(e,file),file+' exact legacy content after reviewed 5.0 presentation');
 }
 module.exports={normalizeDocument,html,parse,equal};

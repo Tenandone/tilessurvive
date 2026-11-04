@@ -41,7 +41,9 @@ function localizeJSON(value, translate, context, parentKey='', prose=false) {
     if (Object.hasOwn(value,'en') && (Object.hasOwn(value,'ko') || Object.hasOwn(value,'ja'))) {
       const copy = {...value}; copy.de = localizeJSON(value.en,translate,context+'.de',parentKey,true); return copy;
     }
-    return Object.fromEntries(Object.entries(value).map(([k,v])=>[k, (k==='language'||k==='inLanguage') && v==='en' ? 'de' : localizeJSON(v,translate,context+'.'+k,k,prose||['copy','labels','descriptionTemplate'].includes(k))]));
+    // Older schema nodes use regional English tags, while newer nodes use en.
+    // Only language fields are remapped; literal IDs, units and other locales stay intact.
+    return Object.fromEntries(Object.entries(value).map(([k,v])=>[k, (k==='language'||k==='inLanguage') && typeof v==='string' && /^en(?:-[a-z0-9]{1,8})*$/i.test(v) ? 'de' : localizeJSON(v,translate,context+'.'+k,k,prose||['copy','labels','descriptionTemplate'].includes(k))]));
   }
   if (typeof value !== 'string') return value;
   if (['not-shown','one-time-purchase','percent-damage','percent-atk','percent-reduction','percent-bonus'].includes(value)) return value;
@@ -63,7 +65,56 @@ function localizeProgram(source,translate,route) {
   }
   return code;
 }
+function projectGlobalUI(value) {
+  // The shared runtime dictionary has an explicit locale owner. Reusing its
+  // reviewed DE values avoids mixing this UI with the older prose catalog.
+  const english=JSON.parse(fs.readFileSync(path.join(ROOT,'data/i18n/ui/en.json'),'utf8'));
+  const german=JSON.parse(fs.readFileSync(path.join(ROOT,'data/i18n/ui/de.json'),'utf8'));
+  if(value.locale!=='en'||german.locale!=='de')throw new Error('Invalid shared UI projection locale');
+  function project(input,source,target,where) {
+    if(Array.isArray(input)) {
+      if(!Array.isArray(source)||!Array.isArray(target)||input.length!==source.length||input.length!==target.length)throw new Error('Shared UI array mismatch: '+where);
+      return input.map((item,index)=>project(item,source[index],target[index],where+'['+index+']'));
+    }
+    if(input&&typeof input==='object') {
+      if(!source||!target||typeof source!=='object'||typeof target!=='object'||JSON.stringify(Object.keys(input).sort())!==JSON.stringify(Object.keys(source).sort())||JSON.stringify(Object.keys(source).sort())!==JSON.stringify(Object.keys(target).sort()))throw new Error('Shared UI key mismatch: '+where);
+      return Object.fromEntries(Object.entries(input).map(([key,item])=>[key,project(item,source[key],target[key],where+'.'+key)]));
+    }
+    if(input!==source)throw new Error('Unreviewed shared UI source: '+where);
+    if(typeof input==='string') {
+      if(typeof target!=='string'||!target.trim())throw new Error('Missing reviewed German UI: '+where);
+      return target;
+    }
+    if(input!==target)throw new Error('Shared UI scalar changed: '+where);
+    return input;
+  }
+  const featureCopies={};
+  for(const [name,input] of Object.entries(value.featureCopies||{})) {
+    let source=english.featureCopies?.[name],target=german.featureCopies?.[name];
+    if(source===undefined||target===undefined) {
+      if(name==='dataWorkbench') {const owner=require('../js/data-workbench-30');source=owner.copy.en;target=owner.copy.de;}
+      else if(name==='speedup') {const owner=require('../js/tools-speedup-calculator');source=owner.UI.en;target=owner.UI.de;}
+      else if(name==='eventHelper') {const owner=require('../js/event-helper');source={ui:owner.UI.en,dayLabels:owner.DAY_LABELS.en};target={ui:owner.UI.de,dayLabels:owner.DAY_LABELS.de};}
+      else throw new Error('Unknown shared UI feature: '+name);
+    }
+    featureCopies[name]=project(input,source,target,'featureCopies.'+name);
+  }
+  return {...value,locale:'de',copy:project(value.copy,english.copy,german.copy,'copy'),affiliate:project(value.affiliate,english.affiliate,german.affiliate,'affiliate'),featureCopies};
+}
 function render(source, translate, route) {
+  // The retained Undine skill_2 key supersedes this page's old editorial name.
+  // Accept the corrected EN source on subsequent builds without teaching the
+  // global dictionary that Travis's distinct Wild Hunt is the same skill.
+  if(route==='heroes/undine/index.html') {
+    const entry=require('../data/i18n/contextual-terms.json').entries.find(row=>row.id==='undine-skill-2'),inherited=translate;
+    const name=entry.names.de.value;
+    translate=(raw,context)=>{
+      const text=clean(raw);
+      if(text===entry.officialEnglishName)return raw.replace(raw.trim(),name);
+      if(text===entry.officialEnglishName+' · allied back-row ATK')return raw.replace(raw.trim(),name+' · Allied Backrow ATK');
+      return inherited(raw,context);
+    };
+  }
   // Building pages now have an independent, reviewed six-language owner.
   // Keep the German shell rather than retranslating its rendered source model.
   if(route.startsWith('buildings/')&&source.includes('data-building-system')){
@@ -103,12 +154,22 @@ function render(source, translate, route) {
     }
     if(el.tagName==='META') {
       const key=el.getAttribute('name')||el.getAttribute('property');
+      // Legacy aliases arrive from the English tree. Keep their automatic move
+      // in the same language as the localized canonical and Continue link.
+      if((el.getAttribute('http-equiv')||'').toLowerCase()==='refresh')el.setAttribute('content',(el.getAttribute('content')||'').replace(/^(\s*\d+(?:\.\d+)?\s*;\s*url\s*=\s*["']?)(https:\/\/tilessurvive\.net)?\/en(?=\/|$)/i,'$1$2/de'));
       if(['description','keywords','og:title','og:description','twitter:title','twitter:description'].includes(key)) el.setAttribute('content',translate(el.getAttribute('content')||'',route+':meta'));
       if(['og:url','twitter:url'].includes(key))el.setAttribute('content',el.getAttribute('content').replace('/en/','/de/'));
       if(key==='og:locale')el.setAttribute('content','de_DE');
     }
   }
   for (const script of document.querySelectorAll('script[type="application/json"],script[type="application/ld+json"]')) {
+    // This is the complete equivalent-route map, not an EN-language content
+    // dictionary. Every locale, including DE's own exact slug, must survive.
+    if(script.id==='ts-locale-routes')continue;
+    if(script.id==='ts-global-ui') {
+      script.textContent=JSON.stringify(projectGlobalUI(JSON.parse(script.textContent))).replace(/</g,'\\u003c');
+      continue;
+    }
     script.textContent=JSON.stringify(localizeJSON(JSON.parse(script.textContent),translate,route+':json','',script.id==='ts3-copy'));
   }
   for(const script of document.querySelectorAll('script:not([src])'))if(!script.type?.includes('json'))script.textContent=localizeProgram(script.textContent,translate,route);
@@ -153,5 +214,5 @@ function build({inventoryPath}={}) {
   let changed=0;for(const o of outputs){fs.mkdirSync(path.dirname(o.path),{recursive:true});if(!fs.existsSync(o.path)||fs.readFileSync(o.path,'utf8')!==o.content){fs.writeFileSync(o.path,o.content);changed++;}}
   return {routes:outputs.filter(o=>!o.route.startsWith('components/')&&!o.route.startsWith('data/')).length,components:2,dataFiles:2,changed,missing:0};
 }
-module.exports={addBuildingCopy,build,render,localizeJSON,createTranslator,localizeProgram,germanNumbers};
+module.exports={addBuildingCopy,build,render,localizeJSON,createTranslator,localizeProgram,projectGlobalUI,germanNumbers};
 if(require.main===module){const i=process.argv.indexOf('--inventory');console.log(JSON.stringify(build({inventoryPath:i>=0?path.resolve(process.argv[i+1]):null})));}

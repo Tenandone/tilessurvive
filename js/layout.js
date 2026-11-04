@@ -1,7 +1,8 @@
 // /js/layout.js
 
 (function () {
-  const SUPPORTED_LANGS = ["ko", "en", "ja", "ru", "zh-tw", "de"];
+  const locales = window.TS_LOCALES;
+  const SUPPORTED_LANGS = locales ? locales.codes : ["ko", "en", "ja", "ru", "zh-tw", "de"];
 
   const LANG_LABELS = {
     ko: "KO",
@@ -13,6 +14,7 @@
   };
 
   function getCurrentLang() {
+    if (locales) return locales.current();
     const html = document.documentElement;
     const raw = (html.getAttribute("data-lang") || html.getAttribute("lang") || "ko")
       .trim()
@@ -24,6 +26,7 @@
   }
 
   function normalizeLang(code) {
+    if (locales) return locales.normalize(code) || locales.defaultLocale;
     const value = String(code || "").trim().toLowerCase();
     if (value === "zh_tw" || value === "tw") return "zh-tw";
     if (SUPPORTED_LANGS.includes(value)) return value;
@@ -32,18 +35,22 @@
 
   function getPathWithoutLang() {
     const pathname = window.location.pathname || "/";
+    if (locales) return locales.stripLocale(pathname);
     const stripped = pathname.replace(/^\/(ko|en|ja|ru|zh-tw|de)(\/|$)/i, "/");
     return stripped || "/";
   }
 
   function buildLangPath(lang) {
+    if (locales) return locales.resolvePageUrl(lang);
     const cleanLang = normalizeLang(lang);
     const currentPath = getPathWithoutLang();
-    return `/${cleanLang}${currentPath}`;
+    return `/${cleanLang}${currentPath}${window.location.search || ""}${window.location.hash || ""}`;
   }
 
   function applyLang(lang) {
-    window.location.href = buildLangPath(lang);
+    const url = buildLangPath(lang);
+    if (url) window.location.href = url;
+    return !!url;
   }
 
   async function fetchPartial(url) {
@@ -150,8 +157,9 @@
     if (!root) return;
 
     root.innerHTML = SUPPORTED_LANGS.map((lang) => {
-      const label = LANG_LABELS[lang] || lang.toUpperCase();
+      const label = LANG_LABELS[lang] || locales?.locales.find((entry) => entry.code === lang)?.nativeName || lang.toUpperCase();
       const isCurrent = lang === currentLang ? "true" : "false";
+      const available = !locales || !!buildLangPath(lang);
 
       return `
         <button
@@ -159,6 +167,7 @@
           class="lang-pill"
           data-lang="${lang}"
           aria-current="${isCurrent}"
+          ${available ? "" : 'disabled aria-disabled="true"'}
         >
           ${label}
         </button>
@@ -379,7 +388,11 @@
       ru: ["Проверьте текущие бонусы пополнения", "Сначала проверьте наборы и расписание событий, затем сравните доступную выгоду пополнения.", "Проверить доступную скидку", "Подробнее о выгоде"]
     };
     copy.de = ["Verfügbare Aufladeangebote prüfen", "Paketinhalt und Ereignisbedingungen prüfen und anschließend verfügbare Aufladeangebote vergleichen.", "Verfügbare Aufladeangebote prüfen", "Bedingungen ansehen"];
-    const text = copy[lang] || copy.en;
+    const text = window.TS_PAGE_UI?.affiliate || copy[lang];
+    if (!Array.isArray(text) || text.length !== 4 || text.some((value) => typeof value !== "string" || !value.trim())) {
+      console.error("Missing affiliate UI translation for " + lang);
+      return;
+    }
     const style = document.createElement("style");
     style.id = "infoAffiliateStyles";
     style.textContent = ".info-affiliate-card{margin-top:24px;padding:18px 20px;border:1px solid #cbd5e1;border-left:4px solid #2f6e5d;border-radius:8px;background:#f8faf8}.info-affiliate-card h2{margin:0 0 5px;font-size:20px}.info-affiliate-card p{margin:0;color:#475569}.info-affiliate-actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:13px}.info-affiliate-card a{display:inline-flex;align-items:center;justify-content:center;min-height:42px;padding:0 14px;border:1px solid #17211b;border-radius:8px;background:#17211b;color:#fff;font-weight:800;text-decoration:none}.info-affiliate-card a.info-affiliate-details{background:transparent;color:#17211b}.info-affiliate-card a:focus-visible{outline:3px solid #d4a83f;outline-offset:3px}";
@@ -397,6 +410,7 @@
     normalize: normalizeLang,
     apply: applyLang,
     current: getCurrentLang,
+    url: buildLangPath,
   };
 
   document.addEventListener("DOMContentLoaded", function () {

@@ -261,7 +261,7 @@ test('capture URLs retain legacy range/exact state across languages and house fr
   assert.deepEqual([...host.querySelectorAll('[data-bs-profile]:not([hidden]) table tr[data-level]:not([hidden])')].map(n => Number(n.dataset.level)), [26, 27, 28, 29, 30]);
   // The shared deferred shell also appends the original location.search. The
   // building owner must normalize the href after that initialization completes.
-  vm.runInNewContext(read('js/platform-shell.js'), {window: capture.window, document: capture.d, location: capture.location});
+  vm.runInNewContext(read('js/platform-shell.js'), {window: capture.window, document: capture.d, location: capture.location, URL});
   capture.d.dispatchEvent(new capture.d.defaultView.Event('DOMContentLoaded'));
   for (const link of capture.d.querySelectorAll('.ts3-language a')) {
     const url = new URL(link.href, 'https://tilessurvive.net');

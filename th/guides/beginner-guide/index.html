@@ -1,0 +1,524 @@
+<!doctype html>
+<html dir="ltr" data-section="guides" class="ts-platform ts3" lang="th" data-lang="th">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>คู่มือมือใหม่ Tiles Survive | เคล็ดลับต้นเกมสำหรับผู้เล่นใหม่ | TilesSurvive.net</title>
+  <base href="/">
+
+  <meta name="theme-color" content="#17362c">
+  <meta name="description" content="คู่มือสำหรับผู้เล่นใหม่ของ Tiles Survive เรียนรู้วิธีเลือกเซิร์ฟเวอร์ใหม่ เลือกสมาคมที่เหมาะสม จัดการบัญชีฟาร์ม ใช้ไอเทมเร่งเวลาอย่างมีประสิทธิภาพ วางแผนพัฒนาโรงไฟฟ้า และสร้างกิจวัตรช่วงต้นเกมที่มั่นคง">
+  <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+  <meta name="author" content="TilesSurvive.net">
+
+  <link rel="canonical" href="https://tilessurvive.net/th/guides/beginner-guide/">
+
+
+
+
+
+
+
+  <meta property="og:site_name" content="TilesSurvive.net">
+  <meta property="og:type" content="article">
+  <meta property="og:title" content="คู่มือมือใหม่ Tiles Survive | เคล็ดลับช่วงต้นเกมสำหรับผู้เล่นใหม่">
+  <meta property="og:description" content="คู่มือช่วงต้นเกมที่ใช้งานได้จริงสำหรับผู้เล่นใหม่ของ Tiles Survive ครอบคลุมเซิร์ฟเวอร์ใหม่ สมาคมชั้นนำ บัญชีฟาร์ม การจัดการไอเทมเร่งเวลา เป้าหมายโรงไฟฟ้า และลำดับความสำคัญสำหรับผู้เติมน้อย">
+  <meta property="og:url" content="https://tilessurvive.net/th/guides/beginner-guide/">
+  <meta property="og:image" content="https://tilessurvive.net/img/guides/beginner-guide.png">
+  <meta property="og:locale" content="th_TH">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="คู่มือมือใหม่ Tiles Survive | เคล็ดลับช่วงต้นเกมสำหรับผู้เล่นใหม่">
+  <meta name="twitter:description" content="คู่มือช่วงต้นเกมสำหรับผู้เล่นใหม่ของ Tiles Survive เรียนรู้การเลือกเซิร์ฟเวอร์ ลำดับความสำคัญของสมาคม บัญชีฟาร์ม การใช้ไอเทมเร่งเวลา และเป้าหมายโรงไฟฟ้า">
+  <meta name="twitter:image" content="https://tilessurvive.net/img/guides/beginner-guide.png">
+
+  <link rel="preload" as="image" href="/img/logo-tilessurvive.png">
+  <link rel="preload" as="image" href="/img/guides/beginner-guide.png">
+
+  <link rel="stylesheet" href="/css/content/58c2d533db69ca3e.css">
+
+  <script id="ts-website-schema" type="application/ld+json">{"@context":"https://schema.org","@type":"WebSite","name":"TilesSurvive.net","url":"https://tilessurvive.net/","inLanguage":"th","description":"ศูนย์รวมข้อมูลอาคาร วีรชน ยักษ์ใหญ่ คู่มือ และเนื้อหาฤดูกาลของ Tiles Survive","potentialAction":{"@type":"SearchAction","target":"https://tilessurvive.net/th/search/?q={search_term_string}","query-input":"required name=search_term_string"}}</script>
+
+  <script id="ts-breadcrumb-schema" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"หน้าแรก","item":"https://tilessurvive.net/th/"},{"@type":"ListItem","position":2,"name":"คู่มือ","item":"https://tilessurvive.net/th/guides/"},{"@type":"ListItem","position":3,"name":"คู่มือมือใหม่ Tiles Survive","item":"https://tilessurvive.net/th/guides/beginner-guide/"}]}</script>
+
+  <script id="ts-article-schema" type="application/ld+json">{"@context":"https://schema.org","@type":"Article","headline":"คู่มือมือใหม่ Tiles Survive","description":"คู่มือช่วงต้นเกมสำหรับผู้เล่นใหม่ของ Tiles Survive ครอบคลุมการเลือกเซิร์ฟเวอร์ใหม่ ลำดับความสำคัญของสมาคม บัญชีฟาร์ม การใช้ไอเทมเร่งเวลา เป้าหมายโรงไฟฟ้า และกลยุทธ์สำหรับผู้เติมน้อย","image":"https://tilessurvive.net/img/guides/beginner-guide.png","author":{"@type":"Organization","name":"TilesSurvive.net"},"publisher":{"@type":"Organization","name":"TilesSurvive.net","logo":{"@type":"ImageObject","url":"https://tilessurvive.net/img/logo-tilessurvive.png"}},"mainEntityOfPage":"https://tilessurvive.net/th/guides/beginner-guide/","inLanguage":"th"}</script>
+
+  <script>
+    (function(){
+      function normalizeLang(code){
+        var low = String(code || '').trim().toLowerCase();
+        if (low === 'ko') return 'ko';
+        if (low === 'en') return 'en';
+        if (low === 'ja') return 'ja';
+        if (low === 'ru') return 'ru';
+        if (low === 'zh-tw' || low === 'zh_tw' || low === 'tw') return 'zh-tw';
+        return 'en';
+      }
+
+      function pathWithLang(lang, path){
+        return '/' + lang + path;
+      }
+
+      function applyLang(lang){
+        lang = normalizeLang(lang);
+        var currentPath = location.pathname.replace(/^\/(ko|en|ja|ru|zh-tw)(\/|$)/i, '/');
+        if (currentPath === '') currentPath = '/';
+        location.href = pathWithLang(lang, currentPath);
+      }
+
+      window.TS_LANG = {
+        normalize: normalizeLang,
+        apply: applyLang
+      };
+    })();
+  </script>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-Z2MJ6TXZHK"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-Z2MJ6TXZHK');
+  </script>
+<link href="/css/product-50.css" rel="stylesheet"><link rel="stylesheet" href="/css/platform.css?v=5"><link rel="stylesheet" href="/css/refinement.css?v=2"><script type="application/ld+json" data-product-30="">{"@context":"https://schema.org","@type":"WebPage","@id":"https://tilessurvive.net/th/guides/beginner-guide/#webpage","url":"https://tilessurvive.net/th/guides/beginner-guide/","name":"คู่มือมือใหม่ Tiles Survive | เคล็ดลับต้นเกมสำหรับผู้เล่นใหม่ | TilesSurvive.net","inLanguage":"th","description":"คู่มือสำหรับผู้เล่นใหม่ของ Tiles Survive เรียนรู้วิธีเลือกเซิร์ฟเวอร์ใหม่ เลือกสมาคมที่เหมาะสม จัดการบัญชีฟาร์ม ใช้ไอเทมเร่งเวลาอย่างมีประสิทธิภาพ วางแผนพัฒนาโรงไฟฟ้า และสร้างกิจวัตรช่วงต้นเกมที่มั่นคง","isPartOf":{"@type":"WebSite","name":"TilesSurvive.net","url":"https://tilessurvive.net/"}}</script><link data-product-30="" rel="stylesheet" href="/css/product-30.css?v=301">  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9189957764761115" crossorigin="anonymous"></script>
+<script type="application/json" id="ts-locale-routes">{"en":"/en/guides/beginner-guide/","ko":"/ko/guides/beginner-guide/","ja":"/ja/guides/beginner-guide/","zh-tw":"/zh-tw/guides/beginner-guide/","de":"/de/guides/beginner-guide/","ru":"/ru/guides/beginner-guide/","zh-cn":"/zh-cn/guides/beginner-guide/","ar":"/ar/guides/beginner-guide/","nl":"/nl/guides/beginner-guide/","fr":"/fr/guides/beginner-guide/","id":"/id/guides/beginner-guide/","it":"/it/guides/beginner-guide/","pl":"/pl/guides/beginner-guide/","pt":"/pt/guides/beginner-guide/","es":"/es/guides/beginner-guide/","sv":"/sv/guides/beginner-guide/","th":"/th/guides/beginner-guide/","tr":"/tr/guides/beginner-guide/","vi":"/vi/guides/beginner-guide/","ms":"/ms/guides/beginner-guide/","nb":"/nb/guides/beginner-guide/"}</script><script type="application/json" id="ts-global-ui">{"locale":"th","copy":{"search":"ค้นหา","menu":"เมนู","heroes":"วีรชน","buildings":"สิ่งปลูกสร้าง","database":"การพัฒนาและอุปกรณ์","tools":"เครื่องคำนวณ","guides":"คู่มือ","seasons":"ซีซัน","codes":"โค้ดของขวัญ","events":"กิจกรรม","topup":"คู่มือเติมเงิน","all":"ทั้งหมด","sort":"เรียงลำดับ","name":"ชื่อ","original":"ลำดับเดิม","filter":"ตัวกรอง","reset":"รีเซ็ต","results":"ผลลัพธ์","current":"เลเวลปัจจุบัน","target":"เลเวลเป้าหมาย","calculate":"คำนวณ","total":"ยอดรวมที่ต้องใช้","copy":"คัดลอก","copied":"คัดลอกแล้ว","copyError":"ไม่สามารถคัดลอกได้ โปรดเลือกข้อความเพื่อคัดลอก","row":"ขั้นที่เลือก","table":"ตารางทั้งหมด","range":"ช่วง","source":"คำนวณจากตารางต้นทางที่แสดงอยู่ ผลรวมของค่าที่ปัดเศษแล้วเป็นค่าโดยประมาณ","conflict":"ข้อมูลสรุปกับตารางต้นทางมีค่าไม่ตรงกัน ระบบเก็บค่าเดิมไว้และยังไม่เปิดให้คำนวณยอดสะสมจนกว่าจะตรวจสอบแล้ว","unknown":"มีค่าที่ยังไม่ทราบ จึงไม่สามารถคำนวณยอดรวมได้","close":"ปิด","language":"ภาษา","related":"ข้อมูลที่เกี่ยวข้อง","research":"เงื่อนไขการวิจัย","condition":"เงื่อนไขเบื้องต้น","affiliate":"ลิงก์พันธมิตร","offer":"ตรวจสอบเงื่อนไขที่ใช้กับสินค้า ภูมิภาค และสกุลเงินได้ที่ LootBar","loading":"กำลังโหลด","error":"ไม่สามารถโหลดได้","retry":"ลองอีกครั้ง","noResults":"ไม่พบผลลัพธ์","choose":"เลือก","time":"เวลาพื้นฐาน"},"affiliate":["ดูสิทธิประโยชน์การเติมเงินในขณะนี้","ตรวจสอบความคุ้มค่าของแพ็กเกจและกำหนดการกิจกรรมก่อน แล้วเปรียบเทียบส่วนลดเติมเงินที่ใช้ได้ในขณะนี้","ดูข้อเสนอเติมเงินที่ใช้ได้","ดูรายละเอียดสิทธิประโยชน์"],"featureCopies":{}}</script><script defer src="/js/site-locales.js?v=c66f237b7560"></script><script data-platform="" src="/js/platform-i18n.js?v=ebd8706c32f5" defer></script><link href="/css/global-locales.css" rel="stylesheet"><link href="https://tilessurvive.net/en/guides/beginner-guide/" hreflang="en" rel="alternate"><link href="https://tilessurvive.net/ko/guides/beginner-guide/" hreflang="ko" rel="alternate"><link href="https://tilessurvive.net/ja/guides/beginner-guide/" hreflang="ja" rel="alternate"><link href="https://tilessurvive.net/zh-tw/guides/beginner-guide/" hreflang="zh-TW" rel="alternate"><link href="https://tilessurvive.net/de/guides/beginner-guide/" hreflang="de" rel="alternate"><link href="https://tilessurvive.net/ru/guides/beginner-guide/" hreflang="ru" rel="alternate"><link href="https://tilessurvive.net/zh-cn/guides/beginner-guide/" hreflang="zh-CN" rel="alternate"><link href="https://tilessurvive.net/ar/guides/beginner-guide/" hreflang="ar" rel="alternate"><link href="https://tilessurvive.net/nl/guides/beginner-guide/" hreflang="nl" rel="alternate"><link href="https://tilessurvive.net/fr/guides/beginner-guide/" hreflang="fr" rel="alternate"><link href="https://tilessurvive.net/id/guides/beginner-guide/" hreflang="id" rel="alternate"><link href="https://tilessurvive.net/it/guides/beginner-guide/" hreflang="it" rel="alternate"><link href="https://tilessurvive.net/pl/guides/beginner-guide/" hreflang="pl" rel="alternate"><link href="https://tilessurvive.net/pt/guides/beginner-guide/" hreflang="pt" rel="alternate"><link href="https://tilessurvive.net/es/guides/beginner-guide/" hreflang="es" rel="alternate"><link href="https://tilessurvive.net/sv/guides/beginner-guide/" hreflang="sv" rel="alternate"><link href="https://tilessurvive.net/th/guides/beginner-guide/" hreflang="th" rel="alternate"><link href="https://tilessurvive.net/tr/guides/beginner-guide/" hreflang="tr" rel="alternate"><link href="https://tilessurvive.net/vi/guides/beginner-guide/" hreflang="vi" rel="alternate"><link href="https://tilessurvive.net/ms/guides/beginner-guide/" hreflang="ms" rel="alternate"><link href="https://tilessurvive.net/nb/guides/beginner-guide/" hreflang="nb" rel="alternate"><link href="https://tilessurvive.net/en/guides/beginner-guide/" hreflang="x-default" rel="alternate"></head>
+
+<body><a class="ts-skip" href="/th/guides/beginner-guide/#main">ข้ามไปยังเนื้อหา</a><header class="ts-header ts3-header"><div class="ts-header-inner"><a class="ts-brand" href="/th/">TilesSurvive</a><form class="ts-header-search ts3-search-form" action="/th/search/" role="search"><input name="q" type="search" aria-label="ค้นหา" placeholder="ค้นหาด้วยชื่อหรือวัสดุ" autocomplete="off"><button>ค้นหา</button></form><details class="ts3-menu"><summary>เมนู</summary><nav class="ts-dropdown" aria-label="เมนู"><a href="/th/heroes/">วีรชน</a><a href="/th/database/pet-system/">สัตว์เลี้ยง</a><a href="/th/buildings/">สิ่งปลูกสร้าง</a><a href="/th/database/">การพัฒนา &amp; อุปกรณ์</a><a href="/th/tools/">เครื่องคำนวณ</a><a aria-current="page" href="/th/guides/">คู่มือ</a><a href="/th/seasons/">ซีซัน</a><a href="/th/codes/">โค้ดของขวัญ</a><a href="/th/events/">กิจกรรม</a><a href="/th/top-up/">คู่มือเติมเงิน</a><a href="/th/buildings/lab/">เงื่อนไขการวิจัย</a></nav></details><details class="ts3-language"><summary>TH</summary><nav class="ts-dropdown" aria-label="ภาษา"><a hreflang="en" lang="en" href="/en/guides/beginner-guide/">English</a><a hreflang="ko" lang="ko" href="/ko/guides/beginner-guide/">한국어</a><a hreflang="ja" lang="ja" href="/ja/guides/beginner-guide/">日本語</a><a hreflang="zh-TW" lang="zh-Hant" href="/zh-tw/guides/beginner-guide/">繁體中文</a><a hreflang="de" lang="de" href="/de/guides/beginner-guide/">Deutsch</a><a hreflang="ru" lang="ru" href="/ru/guides/beginner-guide/">Русский</a><a hreflang="zh-CN" lang="zh-Hans" href="/zh-cn/guides/beginner-guide/">简体中文</a><a hreflang="ar" lang="ar" href="/ar/guides/beginner-guide/">العربية</a><a hreflang="nl" lang="nl" href="/nl/guides/beginner-guide/">Nederlands</a><a hreflang="fr" lang="fr" href="/fr/guides/beginner-guide/">Français</a><a hreflang="id" lang="id" href="/id/guides/beginner-guide/">Bahasa Indonesia</a><a hreflang="it" lang="it" href="/it/guides/beginner-guide/">Italiano</a><a hreflang="pl" lang="pl" href="/pl/guides/beginner-guide/">Polski</a><a hreflang="pt" lang="pt" href="/pt/guides/beginner-guide/">Português</a><a hreflang="es" lang="es" href="/es/guides/beginner-guide/">Español</a><a hreflang="sv" lang="sv" href="/sv/guides/beginner-guide/">Svenska</a><a aria-current="page" hreflang="th" lang="th" href="/th/guides/beginner-guide/">ไทย</a><a hreflang="tr" lang="tr" href="/tr/guides/beginner-guide/">Türkçe</a><a hreflang="vi" lang="vi" href="/vi/guides/beginner-guide/">Tiếng Việt</a><a hreflang="ms" lang="ms" href="/ms/guides/beginner-guide/">Bahasa Melayu</a><a hreflang="nb" lang="nb" href="/nb/guides/beginner-guide/">Norsk bokmål</a></nav></details></div><nav class="ts-nav" aria-label="เมนู"><a href="/th/heroes/">วีรชน</a><a href="/th/database/pet-system/">สัตว์เลี้ยง</a><a href="/th/buildings/">สิ่งปลูกสร้าง</a><a href="/th/database/">การพัฒนา &amp; อุปกรณ์</a><a href="/th/tools/">เครื่องคำนวณ</a><a href="/th/guides/" aria-current="page">คู่มือ</a><a href="/th/seasons/">ซีซัน</a><a href="/th/codes/">โค้ดของขวัญ</a><a href="/th/events/">กิจกรรม</a></nav></header>
+
+<svg aria-hidden="true" style="position:absolute;width:0;height:0;overflow:hidden">
+    <symbol id="ico-info" viewBox="0 0 24 24">
+      <path d="M12 2a10 10 0 1 0 .001 20.001A10 10 0 0 0 12 2z" fill="currentColor" />
+      <path d="M12 10v7" stroke="#fff" stroke-width="2" stroke-linecap="round" />
+      <path d="M12 7h.01" stroke="#fff" stroke-width="3" stroke-linecap="round" />
+    </symbol>
+  </svg>
+
+
+
+
+
+
+
+
+
+
+
+  <main class="container page-main ts3-editorial" id="main" role="main" aria-label="เนื้อหาหลัก">
+    <section class="visually-hidden-seo" aria-label="สรุปสำหรับการค้นหา">
+      <p>คู่มือมือใหม่ Tiles Survive เคล็ดลับต้นเกม เซิร์ฟเวอร์ใหม่ เลือกสมาคม บัญชีฟาร์ม จัดการตัวเร่งเวลา เป้าหมายระดับโรงไฟฟ้า กลยุทธ์ผู้เติมน้อย</p>
+    </section>
+
+    <nav class="breadcrumb" aria-label="เส้นทางนำทาง">
+      <a href="/th/">หน้าแรก</a>
+      <span>›</span>
+      <a href="/th/guides/">คู่มือ</a>
+      <span>›</span>
+      <span aria-current="page">คู่มือมือใหม่ Tiles Survive</span>
+    </nav>
+
+    <section class="hero" aria-labelledby="pageTitle">
+      <article class="hero-card">
+        <span class="eyebrow">คู่มือ</span>
+        <h1 id="pageTitle">คู่มือมือใหม่ Tiles Survive</h1>
+        <p>
+          คู่มือนี้สำหรับผู้เล่นใหม่ Tiles Survive ที่ต้องการทิศทางต้นเกมชัดเจน ครอบคลุมการเลือกเซิร์ฟเวอร์ใหม่ ลำดับความสำคัญของสมาคม การจัดการบัญชีฟาร์ม แผนตัวเร่งเวลา เป้าหมายโรงไฟฟ้า และคำแนะนำใช้งานจริงสำหรับผู้เติมน้อย
+        </p>
+
+        <div class="hero-meta">
+          <span class="meta-pill">เน้นเซิร์ฟเวอร์ใหม่</span>
+          <span class="meta-pill">เหมาะสำหรับมือใหม่</span>
+          <span class="meta-pill">การเลือกสมาคมสำคัญ</span>
+          <span class="meta-pill">การจัดการตัวเร่งเวลาคือหัวใจ</span>
+        </div>
+
+        <div class="hero-links">
+          <a class="hero-link is-primary" href="/th/guides/beginner-guide/#guide-start">อ่านคู่มือ</a>
+          <a class="hero-link" href="/th/guides/beginner-guide/#summary">ดูสรุป</a>
+          <a class="hero-link" href="/th/codes/">โค้ดล่าสุด</a>
+        </div>
+      </article>
+
+      <aside class="aside-card" aria-label="สรุปคู่มือมือใหม่ Tiles Survive">
+        <div class="guide-thumb">
+          <img height="374" width="376" decoding="async" loading="lazy" src="/img/guides/beginner-guide.png" alt="ภาพเด่นคู่มือมือใหม่ Tiles Survive">
+        </div>
+
+        <div class="quick-grid">
+          <div class="quick-item">
+            <strong>ประเด็นสำคัญ 1</strong>
+            <span>เริ่มบนเซิร์ฟเวอร์ใหม่</span>
+          </div>
+          <div class="quick-item">
+            <strong>ประเด็นสำคัญ 2</strong>
+            <span>เข้าร่วมสมาคมที่แข็งแกร่ง</span>
+          </div>
+          <div class="quick-item">
+            <strong>ประเด็นสำคัญ 3</strong>
+            <span>เตรียมบัญชีฟาร์มตั้งแต่เนิ่น ๆ</span>
+          </div>
+          <div class="quick-item">
+            <strong>ประเด็นสำคัญ 4</strong>
+            <span>เก็บตัวเร่งเวลาไว้</span>
+          </div>
+        </div>
+      </aside>
+    </section><nav class="ts3-contents" data-product-30="" aria-label="ในหน้านี้"><strong>ในหน้านี้</strong><a href="/th/guides/beginner-guide/#introTitle">ก่อนเริ่มต้น</a><a href="/th/guides/beginner-guide/#serverTitle">1. อย่าเริ่มบนเซิร์ฟเวอร์เก่า</a><a href="/th/guides/beginner-guide/#allianceTitle">2. หากทำได้ ให้เข้าร่วมสมาคมอันดับ 1 บนเซิร์ฟเวอร์ใหม่</a><a href="/th/guides/beginner-guide/#spenderAllianceTitle">3. ทำไมควรเข้าร่วมสมาคมที่มีผู้เติมเงินจำนวนมาก</a><a href="/th/guides/beginner-guide/#farmTitle">4. ไม่ว่าจะเล่นฟรีหรือเติมน้อย ให้สร้างบัญชีฟาร์มมากเท่าที่จัดการได้</a><a href="/th/guides/beginner-guide/#speedupTitle">5. อย่าใช้ตัวเร่งเวลาแบบสุ่มสี่สุ่มห้า</a><a href="/th/guides/beginner-guide/#powerTitle">6. เป้าหมายแรกช่วงต้นเกมควรเป็นการเพิ่มระดับโรงไฟฟ้า</a><a href="/th/guides/beginner-guide/#lightspendTitle">7. หากเติมน้อย นี่คือแนวทางเล่นที่ดี</a><a href="/th/guides/beginner-guide/#summaryTitle">สรุปท้ายคู่มือ</a></nav>
+
+    <div class="section-stack" id="guide-start">
+      <section class="section-card" aria-labelledby="introTitle">
+        <div class="section-head">
+          <h2 id="introTitle">ก่อนเริ่มต้น</h2>
+          <p>คู่มือนี้เขียนสำหรับผู้ที่เพิ่งเริ่ม Tiles Survive และต้องการแนวทางต้นเกมที่นำไปใช้ได้จริง</p>
+        </div>
+
+        <p>
+          ผมคิดว่ามีผู้เล่นจำนวนมากเหมือนผมที่รู้สึกหลงทางอย่างสิ้นเชิงตอนเริ่ม จึงตัดสินใจเขียนคู่มือต้นเกมด้วยวิธีที่เรียบง่ายที่สุด
+        </p>
+
+        <p>
+          สำหรับผู้เล่นมีประสบการณ์ นี่อาจไม่รู้สึกเหมือนคู่มือจริงด้วยซ้ำ แต่ถ้าช่วยให้ผู้เล่นใหม่หาทิศทางเร็วขึ้นนิดหนึ่ง ก็ถือว่าคุ้มที่จะเขียน อ่านแบบสบาย ๆ ได้เลย
+        </p>
+
+        <p>
+          ปัจจุบัน Tiles Survive เปิดถึงฤดูกาล 3 ข้อมูลยังไม่มากนัก ความสนุกส่วนหนึ่งจึงเป็นการเรียนรู้สิ่งต่าง ๆ ด้วยตัวเองระหว่างเล่น
+        </p>
+
+        <div class="highlight-box" style="margin-top:16px;">
+          <strong>ส่วนหลักที่ต้องใช้จ่ายในเกมนี้</strong>
+          <ul class="guide-list">
+            <li>ชิ้นส่วนวีรชนและการอัปดาว</li>
+            <li>หนังสือสกิล</li>
+            <li>อุปกรณ์วีรชน</li>
+            <li>อุปกรณ์เฉพาะตัวสำหรับวีรชน SSR</li>
+            <li>ไอเทมเร่งเวลาทุกประเภท</li>
+          </ul>
+          วีรชนอัปดาวได้ถึง 10 ดาว จึงต้องลงทุนลึกกว่าที่เห็นในตอนแรก
+        </div>
+
+        <div class="ok-note" role="note" aria-label="แนวคิดในการเล่น">
+          <div>
+            <strong>สิ่งแรกที่ควรจำ:</strong>
+            ถ้าคุณเครียดเมื่อเห็นคนอื่นพัฒนาเร็วกว่าตน เกมนี้จะเหนื่อยขึ้นเรื่อย ๆ แต่ถ้าเล่นตามจังหวะตัวเอง จะสนุกในระยะยาวได้ง่ายขึ้นมาก
+          </div>
+        </div>
+      </section>
+
+      <section class="section-card" aria-labelledby="serverTitle">
+        <div class="section-head">
+          <h2 id="serverTitle">1. อย่าเริ่มบนเซิร์ฟเวอร์เก่า</h2>
+          <p>การตัดสินใจแรกที่สำคัญที่สุดไม่ใช่ภาษาหรือภูมิภาค แต่คือเซิร์ฟเวอร์ การเริ่มบนเซิร์ฟเวอร์ไม่ดีอาจกระทบการเติบโตไปอีกนาน</p>
+        </div>
+
+        <p>
+          หลายคนบอกว่าควรเข้าเซิร์ฟเวอร์หรือสมาคมที่มีคนจากภูมิภาคเดียวกันมาก การสื่อสารสำคัญ แต่การเลือกเซิร์ฟเวอร์สำคัญยิ่งกว่า
+        </p>
+
+        <p>
+          อย่าเริ่มบนเซิร์ฟเวอร์เก่าที่ก้าวหน้าไปไกลแล้ว
+        </p>
+
+        <p>
+          เซิร์ฟเวอร์เก่ามีช่องว่างมหาศาลอยู่ก่อน ถ้าเข้าช้า การตามทันจะยากมาก เว้นแต่เติมหนักมาก ก็แทบทำอย่างคุ้มค่าไม่ได้
+        </p>
+
+        <div class="note" role="note" aria-label="ข้อควรระวังเรื่องเซิร์ฟเวอร์เก่า">
+          <svg class="note-ico" aria-hidden="true"><use href="#ico-info" /></svg>
+          <div>
+            <strong>คำเตือน:</strong> เซิร์ฟเวอร์เก่ามักมีช่องว่างพลังมหาศาลอยู่แล้ว สำหรับผู้เล่นส่วนใหญ่ โดยเฉพาะผู้ที่ไม่ได้เติมหนัก การไล่ตามไม่คุ้มค่า
+          </div>
+        </div>
+
+        <p>
+          จึงควรมองเซิร์ฟเวอร์ใหม่เป็นจุดเริ่มต้นมาตรฐาน คู่มือนี้ก็เขียนจากมุมมองของเซิร์ฟเวอร์ใหม่เช่นกัน
+        </p>
+      </section>
+
+      <section class="section-card" aria-labelledby="allianceTitle">
+        <div class="section-head">
+          <h2 id="allianceTitle">2. หากทำได้ ให้เข้าร่วมสมาคมอันดับ 1 บนเซิร์ฟเวอร์ใหม่</h2>
+          <p>“สมาคมอันดับ 1” ในที่นี้ไม่ได้หมายถึงอันดับสูงชั่วคราว แต่หมายถึงสมาคมที่มีกำลังใช้จ่ายจริงและอิทธิพลระยะยาว</p>
+        </div>
+
+        <p>
+          เมื่อผมพูดว่าสมาคมอันดับ 1 ผมไม่ได้หมายถึงกลุ่มที่ขึ้นนำชั่วคราว แต่หมายถึงสมาคมที่มีผู้เติมชัดเจนอย่างน้อยหนึ่งหรือสองคน ซึ่งน่าจะช่วยรักษาอันดับใกล้บนสุดได้
+        </p>
+
+        <p>
+          ต้นเกมเป็นเรื่องของข้อมูล เมื่อเซิร์ฟเวอร์เปิด ให้สังเกตผู้เล่นอย่างรอบคอบและค้นหาให้เร็วที่สุดว่าใครกำลังควบคุมจังหวะของอาณาจักรจริง
+        </p>
+
+        <p>
+          ถ้าเข้าสมาคมชั้นนำไม่ได้ และทั้งเซิร์ฟเวอร์เต็มไปด้วยสงครามไม่หยุดระหว่างผู้เล่นแข็งแกร่ง ก็อาจไม่คุ้มที่จะอยู่ต่อ สำหรับผู้เล่นทั่วไป อาณาจักรสงบมีค่ากว่าอาณาจักรวุ่นวายมาก
+        </p>
+
+        <p>
+          แม้เริ่มเล่นที่นั่นแล้ว ก็เริ่มใหม่บนเซิร์ฟเวอร์ใหม่อื่นได้หากบรรยากาศแย่พอ ตอนแรกอาจรู้สึกเสียดาย แต่เซิร์ฟเวอร์ใหม่ยังเปิดต่อเนื่อง สุดท้ายการหาเซิร์ฟเวอร์ที่เหมาะสำคัญกว่า
+        </p>
+
+        <div class="highlight-box" style="margin-top:16px;">
+          <strong>ถ้าคุณไม่อยากเริ่มใหม่จริง ๆ</strong>
+          อย่างน้อยลองเข้าสมาคมที่สื่อสารง่าย เกมนี้พึ่งการประสานงานมาก และการสื่อสารที่ไม่ดีทำให้หงุดหงิดได้อย่างรวดเร็ว
+        </div>
+      </section>
+
+      <section class="section-card" aria-labelledby="spenderAllianceTitle">
+        <div class="section-head">
+          <h2 id="spenderAllianceTitle">3. ทำไมควรเข้าร่วมสมาคมที่มีผู้เติมเงินจำนวนมาก</h2>
+          <p>สมาคมแข็งแกร่งมีความสำคัญมากกว่าพลังดิบ มันส่งผลต่อของขวัญ การร่วมกิจกรรม ประสิทธิภาพการรวมพล และความเร็วพัฒนาของคุณโดยรวม</p>
+        </div>
+
+        <p>
+          เหตุผลที่ควรเข้าสมาคมซึ่งมีผู้เติมมากนั้นง่ายมาก
+        </p>
+
+        <p>
+          เมื่อพวกเขาซื้อแพ็ก ของขวัญสมาคมจะถูกแบ่งให้สมาชิกอื่น ความต่างนี้ใหญ่กว่าที่ผู้เล่นใหม่หลายคนคาด
+        </p>
+
+        <p>
+          นอกจากนี้ ผู้เติมมักเข้าใจเกมดีกว่าและร่วมกิจกรรมกับการรวมพลมากกว่า สุดท้ายสมาคมเหล่านี้มักเติบโตเร็วกว่าโดยรวมมาก
+        </p>
+
+        <p>
+          เช่นเดียวกับเกม SLG ส่วนใหญ่ Tiles Survive อาจเพิ่มการย้ายเซิร์ฟเวอร์หรือระบบคล้ายกันในอนาคต แต่โดยมากไม่ได้เกิดขึ้นทันที
+        </p>
+
+        <p>
+          ในความเห็นของผม ต้องมีเวลาอย่างน้อยราวห้าเดือนบนเซิร์ฟเวอร์ค่อนข้างสงบเพื่อสร้างพื้นฐานที่ดี จึงทำให้การเลือกเซิร์ฟเวอร์และสมาคมตอนต้นสำคัญมาก
+        </p>
+
+        <div class="card-grid" style="margin-top:16px;">
+          <article class="info-box">
+            <h3>เลือกสมาคมที่แข็งแกร่ง</h3>
+            <p>
+              คุณจะได้ของขวัญสมาคม การร่วมรวมพลที่ดีขึ้น การสนับสนุนกิจกรรมที่แข็งแกร่งขึ้น และเส้นทางพัฒนาระยะยาวที่มั่นคงกว่ามาก
+            </p>
+          </article>
+          <article class="info-box">
+            <h3>เลือกเซิร์ฟเวอร์สงบหรืออ่อนแอ</h3>
+            <p>
+              คุณอาจครองกิจกรรมใช้จ่ายส่วนตัวได้ง่ายขึ้น แต่กิจกรรมข้ามเซิร์ฟเวอร์และระดับสมาคมมักยากขึ้นมาก
+            </p>
+          </article>
+        </div>
+
+        <div class="note" role="note" aria-label="หมายเหตุการเลือกสมาคม">
+          <svg class="note-ico" aria-hidden="true"><use href="#ico-info" /></svg>
+          <div>
+            <strong>สุดท้ายคือการแลกข้อดีข้อเสีย:</strong>
+            ถ้าเป้าหมายคือเก็บรางวัลกิจกรรมใช้จ่ายส่วนใหญ่ไว้เอง เซิร์ฟเวอร์อ่อนแอหรือเงียบอาจเหมาะ แต่ถ้าคุณเป็นคนเดียวที่เติมจริง รางวัลส่วนตัวอาจง่ายขึ้น ขณะที่กิจกรรมทั้งเซิร์ฟเวอร์และสมาคมยากขึ้นมาก
+          </div>
+        </div>
+      </section>
+
+      <section class="section-card" aria-labelledby="farmTitle">
+        <div class="section-head">
+          <h2 id="farmTitle">4. ไม่ว่าจะเล่นฟรีหรือเติมน้อย ให้สร้างบัญชีฟาร์มมากเท่าที่จัดการได้</h2>
+          <p>บัญชีฟาร์มไม่ได้มีไว้เพิ่มทรัพยากรเท่านั้น แต่เป็นหนึ่งในพื้นฐานสำคัญที่สุดของการเติบโตที่มั่นคงเมื่อฤดูกาลเริ่ม</p>
+        </div>
+
+        <p>
+          ส่วนนี้สำคัญมากเป็นพิเศษ
+        </p>
+
+        <p>
+          ไม่ว่าจะเล่นฟรีหรือเติมน้อย ให้สร้างบัญชีฟาร์มมากเท่าที่จัดการได้อย่างเหมาะสม เมื่อฤดูกาล 1 เริ่ม บัญชีเหล่านี้จะช่วยสนับสนุนการวิจัยและก่อสร้างได้อย่างน่าเชื่อถือ
+        </p>
+
+        <p>
+          ต้นเกม การก่อสร้างและวิจัยอาจช้าจนน่าหงุดหงิด แต่เมื่อมีหลายบัญชีฟาร์มส่งทรัพยากรให้ บัญชีหลักจะเติบโตอย่างมั่นคงขึ้นมาก
+        </p>
+
+        <p>
+          โดยเฉพาะผู้เล่นฟรี ความพยายามของตัวเองจะกลายเป็นส่วนหนึ่งของพลังในการพัฒนา
+        </p>
+
+        <div class="highlight-box" style="margin-top:16px;">
+          <strong>คุณค่าที่แท้จริงของบัญชีฟาร์ม</strong>
+          มันทำมากกว่าแค่ส่งทรัพยากร เมื่อฤดูกาลเริ่ม ยังช่วยให้ได้ประโยชน์ด้านวิจัยและก่อสร้างด้วย จึงเป็นเหตุผลที่ผู้เตรียมบัญชีฟาร์มแต่แรกมักนำหน้าในภายหลัง
+        </div>
+      </section>
+
+      <section class="section-card" aria-labelledby="speedupTitle">
+        <div class="section-head">
+          <h2 id="speedupTitle">5. อย่าใช้ตัวเร่งเวลาแบบสุ่มสี่สุ่มห้า</h2>
+          <p>การจัดการตัวเร่งเวลาส่งผลตรงต่อจังหวะพัฒนาใน Tiles Survive โดยเฉพาะตัวเร่งทั่วไปจะมีค่ามากในภายหลังหากใช้ให้ดี</p>
+        </div>
+
+        <p>
+          Tiles Survive เป็นเกมที่การใช้ตัวเร่งเวลาอย่างมีประสิทธิภาพสำคัญมาก
+        </p>
+
+        <p>
+          ตัวเร่งเวลาใช้กับก่อสร้าง วิจัย ฝึกทหาร รักษา และกิจกรรมสารพัด หากใช้โดยไม่วางแผน คุณจะรู้สึกว่าขาดเสมอ
+        </p>
+
+        <p>
+          หลายคนเปลืองตัวเร่งตอนต้นเพราะอยากดันอันดับทันที แต่โดยมากรับรางวัลพื้นฐานกิจกรรมอย่างสม่ำเสมอแล้วค่อยสะสมเพชรและทรัพยากรจะดีกว่า
+        </p>
+
+        <p>
+          ควรเก็บตัวเร่งไว้ใช้พร้อมกันในกิจกรรมใหญ่ การอัปอาคาร วิจัย ดาววีรชน และอุปกรณ์สุดท้ายแปลงเป็นคะแนน จึงทำให้จังหวะและเป้าหมายของคุณสำคัญมาก
+        </p>
+
+        <p>
+          ถ้าเล่นฟรี เรื่องนี้ยิ่งสำคัญ เมื่อเปลืองตัวเร่งมากเกินไป มักจะขาดทรัพยากร และเมื่อทรัพยากรหมด การพัฒนาโดยรวมก็ช้าลง
+        </p>
+
+        <div class="note" role="note" aria-label="หมายเหตุไอเทมเร่งเวลาทั่วไป">
+          <svg class="note-ico" aria-hidden="true"><use href="#ico-info" /></svg>
+          <div>
+            <strong>สำคัญ:</strong>
+            อย่าใช้ตัวเร่งทั่วไปกับทุกอย่าง โดยเฉพาะไม่แนะนำให้ใช้ตัวเร่งทั่วไปกับการฝึกทหาร
+          </div>
+        </div>
+
+        <p>
+          ภายหลังคุณอาจสะสมตัวเร่งทั่วไปได้ 200 หรือแม้แต่ 300 วัน ถึงอย่างนั้น ตัวเร่งเหล่านี้มักมีค่ากับวิจัยและก่อสร้างมากกว่าฝึกทหาร
+        </p>
+
+        <div class="ok-note" role="note" aria-label="คำแนะนำการใช้ไอเทมเร่งเวลา">
+          <div>
+            <strong>หลักพื้นฐาน:</strong>
+            แกนหลักที่แท้จริงของการพัฒนาบัญชีมาจากการวิจัยและก่อสร้าง ซึ่งเป็นจุดที่เห็นคุณค่าของตัวเร่งทั่วไปชัดที่สุด
+          </div>
+        </div>
+      </section>
+
+      <section class="section-card" aria-labelledby="powerTitle">
+        <div class="section-head">
+          <h2 id="powerTitle">6. เป้าหมายแรกช่วงต้นเกมควรเป็นการเพิ่มระดับโรงไฟฟ้า</h2>
+          <p>แทนที่จะเร่งทุกอย่างพร้อมกัน ให้ใช้โรงไฟฟ้าเป็นเป้าหมายใหญ่แรกแล้วสร้างพื้นฐานต่อจากนั้นจะปลอดภัยกว่า</p>
+        </div>
+
+        <p>
+          ในมุมมองผม เป้าหมายใหญ่แรกของช่วงต้นเกมคือการเพิ่มระดับโรงไฟฟ้า
+        </p>
+
+        <p>
+          เมื่อไปถึงจุดนั้น คุณก็พ้นช่วงมือใหม่แรกสุดแล้ว จากนั้นจึงเริ่มเน้นกิจกรรมมากขึ้นและเลือกทิศทางพัฒนาได้ยืดหยุ่นขึ้น
+        </p>
+
+        <p>
+          ช่วงเริ่มแรกไม่ต้องหมกมุ่นกับก่อสร้างและวิจัยมากนัก ถ้าเตรียมบัญชีฟาร์มได้ดี ทั้งสองอย่างจะง่ายกว่าที่ดูมาก
+        </p>
+
+        <p>
+          ไม่ต้องกังวลว่าจะต้องรีบขึ้นโรงไฟฟ้า 30 ทันที เมื่อฤดูกาลเริ่ม มักมีสภาพแวดล้อมที่เอื้อต่อการดันระดับสูงขึ้น
+        </p>
+
+        <p>
+          แน่นอนว่ายังต้องพึ่งสมาคมที่กระตือรือร้น อีกครั้งที่การเลือกเซิร์ฟเวอร์และสมาคมสำคัญเช่นกัน
+        </p>
+
+        <div class="highlight-box" style="margin-top:16px;">
+          <strong>สรุปแบบง่าย</strong>
+          แทนที่จะทุ่มทรัพยากรและไอเทมเร่งเวลาทั้งหมดให้ทุกอย่างพร้อมกัน การตั้งโรงไฟฟ้าเป็นเป้าหมายหลักแรกและพัฒนาบัญชีทีละขั้นจะมั่นคงกว่า
+        </div>
+      </section>
+
+      <section class="section-card" aria-labelledby="lightspendTitle">
+        <div class="section-head">
+          <h2 id="lightspendTitle">7. หากเติมน้อย นี่คือแนวทางเล่นที่ดี</h2>
+          <p>ผู้เติมน้อยใช้หลักพื้นฐานแทบเหมือนผู้เล่นฟรี แต่ต้องเลือกให้รอบคอบยิ่งขึ้นว่าจะใช้เงินกับอะไรในช่วงต้น</p>
+        </div>
+
+        <p>
+          แนวทางโดยรวมของผู้เติมน้อยไม่ต่างจากผู้เล่นฟรีมากนัก การเลือกสมาคมยังคงเป็นปัจจัยสำคัญที่สุด
+        </p>
+
+        <p>
+          หากคุณเติบโตเร็วกว่าค่าเฉลี่ยเล็กน้อยในช่วงต้น สมาคมอันดับสูงอาจติดต่อมาหาคุณก่อน หากเป็นเช่นนั้น ให้เลือกสมาคมที่บรรยากาศดีและมั่นคงในระยะยาว
+        </p>
+
+        <p>
+          ควรซื้อแพ็กอย่างรอบคอบ
+        </p>
+
+        <div class="highlight-box" style="margin-top:16px;">
+          <strong>ลำดับการซื้อที่แนะนำในช่วงต้น</strong>
+          <ul class="guide-list">
+            <li>บัตรรายเดือน</li>
+            <li>บัตรรายสัปดาห์</li>
+            <li>คิวก่อสร้างช่วงต้น</li>
+          </ul>
+          สิ่งเหล่านี้มักให้ความคุ้มค่าสูงที่สุดในช่วงต้นเกม
+        </div>
+
+        <p style="margin-top:16px;">
+          ในทางกลับกัน หากยังไม่เข้าใจระบบเกมแล้วเริ่มซื้อของตามอารมณ์ ก็อาจเสียเงินกับแพ็กที่ไม่คุ้มค่าได้ง่าย จนกว่าจะเข้าใจโครงสร้างของ Tiles Survive มากขึ้น การใช้เงินอย่างระมัดระวังจะปลอดภัยกว่า
+        </p>
+      </section>
+
+      <section class="section-card" id="summary" aria-labelledby="summaryTitle">
+        <div class="section-head">
+          <h2 id="summaryTitle">สรุปท้ายคู่มือ</h2>
+          <p>เพื่อช่วยให้ผู้เล่นใหม่เข้าใจง่ายขึ้น ต่อไปนี้คือสรุปประเด็นสำคัญที่สุดในช่วงต้นเกม</p>
+        </div>
+
+        <p>
+          นี่ไม่ใช่คู่มือฉบับสมบูรณ์แบบ แต่หวังว่าจะช่วยให้ผู้เล่นใหม่หลีกเลี่ยงข้อผิดพลาดที่ไม่จำเป็นในช่วงต้นเกมได้
+        </p>
+
+        <div class="faq-list" style="margin-top:16px;">
+          <article class="faq-item">
+            <p class="faq-q">รายการตรวจสอบช่วงต้นเกม</p>
+            <ul class="guide-list">
+              <li>เริ่มบนเซิร์ฟเวอร์ใหม่ ไม่ใช่เซิร์ฟเวอร์เก่า</li>
+              <li>หากเป็นไปได้ ให้เข้าร่วมสมาคมอันดับ 1 หรืออย่างน้อยสมาคมที่มีผู้เล่นเติมหนักที่แข็งแกร่ง</li>
+              <li>หากเซิร์ฟเวอร์มีสงครามหนักเกินไป ควรพิจารณาเริ่มใหม่ที่อื่นอย่างจริงจัง</li>
+              <li>สร้างบัญชีฟาร์มให้มากเท่าที่คุณดูแลไหว</li>
+              <li>อย่าใช้ไอเทมเร่งเวลาอย่างสิ้นเปลือง เก็บไว้สำหรับกิจกรรมสำคัญ</li>
+              <li>โดยเฉพาะอย่าเสียไอเทมเร่งเวลาทั่วไปไปกับการฝึกทหาร</li>
+              <li>ตั้งการพัฒนาโรงไฟฟ้าเป็นเป้าหมายใหญ่แรกในช่วงต้นเกม</li>
+              <li>อย่ารีบร้อนกังวลกับการเร่งโรงไฟฟ้าถึง 30 ตั้งแต่เนิ่น ๆ</li>
+              <li>อย่าเครียดกับการก่อสร้างและการวิจัยมากเกินไปในช่วงแรกสุด</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="ok-note" role="note" aria-label="หมายเหตุสุดท้าย">
+          <div>
+            <strong>ข้อเตือนใจสุดท้าย:</strong>
+            เกมนี้จะเริ่มเหนื่อยทันทีที่คุณเปรียบเทียบตัวเองกับคนอื่นตลอดเวลา แต่หากเล่นตามจังหวะของตัวเองในสมาคมที่ดี คุณก็สามารถสนุกกับเกมได้นานมาก
+          </div>
+        </div>
+
+        <div class="bottom-cta" aria-label="ลิงก์ดำเนินการจากคู่มือ">
+          <p class="title">หน้าที่มีประโยชน์ให้ดูต่อ</p>
+          <p class="desc">
+            หลังอ่านคู่มือสำหรับมือใหม่นี้แล้ว การดูโค้ดของขวัญล่าสุดและหน้าฤดูกาลก็ช่วยให้พัฒนาในแต่ละวันได้จริงมากขึ้น
+          </p>
+
+          <div class="cta-row">
+            <a class="btn btn-primary" href="/th/codes/">ดูโค้ดล่าสุด</a>
+            <a class="btn" href="/th/seasons/">ดูคู่มือฤดูกาล</a>
+            <a class="btn" href="/th/guides/gift-code-how-to-use/">วิธีแลกโค้ดของขวัญ</a>
+            <a class="btn" href="/th/guides/discount-topup/">เติมเงินพร้อมส่วนลด</a>
+          </div>
+
+          <div class="cta-badges" aria-label="หมายเหตุสั้น ๆ">
+            <span class="badge">เหมาะสำหรับมือใหม่</span>
+            <span class="badge">เน้นเซิร์ฟเวอร์ใหม่</span>
+            <span class="badge">การเลือกสมาคมสำคัญ</span>
+            <span class="badge">บัญชีฟาร์มมีความสำคัญ</span>
+            <span class="badge">การจัดการตัวเร่งเวลาคือหัวใจ</span>
+          </div>
+        </div>
+      </section>
+    </div>
+  <aside class="ts3-ad-slot" data-product-30="" data-ad-slot="article-end" data-ad-state="inactive" hidden aria-label="โฆษณา"><span>โฆษณา</span></aside></main>
+
+
+
+
+
+
+
+
+
+
+
+
+<footer class="ts-footer"><div class="ts-footer-inner"><strong>TilesSurvive.net</strong><a href="/th/search/">ค้นหา</a><a href="/th/codes/">โค้ดของขวัญ</a><a href="/th/top-up/">คู่มือเติมเงิน</a><a href="https://discord.gg/sGv9Ptvbd" rel="noopener noreferrer" data-support-discord="" target="_blank">Discord</a><a href="/th/about/">เกี่ยวกับเรา</a><a href="/th/contact/">ติดต่อ</a><a href="/th/privacy/">ความเป็นส่วนตัว</a><a href="/th/terms/">ข้อกำหนด</a><a href="/th/affiliate-disclosure/">การเปิดเผยลิงก์พันธมิตร</a></div><small>© 2026 TilesSurvive.net · ลิงก์พันธมิตร: LootBar</small></footer><script data-platform="" src="/js/platform-math.js?v=0b4a80d08585" defer></script><script data-platform="" src="/js/platform-shell.js?v=9ce2d9502d2d" defer></script><script data-platform="" src="/js/platform.js?v=41a65fd482d4" defer></script><script data-platform="" src="/js/platform-search.js?v=71751a59182b" defer></script><script data-platform="" src="/js/platform-affiliate.js?v=554e49bc62ee" defer></script><script data-platform="" src="/js/refinement.js?v=ecb10eaf49c7" defer></script><script data-product-30="" type="application/json" id="ts3-copy">{"allResults":"ดูผลการค้นหาทั้งหมด","searchHint":"ค้นหาด้วยชื่อหรือวัสดุ","backTop":"กลับด้านบน"}</script><script data-product-30="" src="/js/product-30.js?v=384c90a0c409" defer></script></body>
+</html>

@@ -4,6 +4,9 @@ exclude:
   - package.json
   - package-lock.json
   - scripts
+  - test-results
+  - delivery
+  - data/i18n
   - data/client-buildings-52.json
   - data/content-60/buildings.json
   - data/content-60/buildings-phase2.json

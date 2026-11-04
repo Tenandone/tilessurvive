@@ -302,6 +302,43 @@
     loading: 'Wird geladen', error: 'Laden fehlgeschlagen.', retry: 'Erneut versuchen',
     noResults: 'Keine Ergebnisse.', choose: 'Auswählen', time: 'Grunddauer'
   };
+  const requireCopy = (locale) => {
+    const copy = dictionary[locale];
+    const missing = keys.filter((key) => !copy || typeof copy[key] !== "string" || !copy[key].trim());
+    if (missing.length) throw new Error("Incomplete UI translation for " + locale + ": " + missing.join(", "));
+    return copy;
+  };
   if (typeof module === "object") module.exports = dictionary;
-  else root.TS_COPY = dictionary;
+  else {
+    const payload = root.document && root.document.getElementById("ts-global-ui");
+    if (payload) {
+      const data = JSON.parse(payload.textContent);
+      const locale = root.TS_LOCALES ? root.TS_LOCALES.normalize(data.locale) : data.locale;
+      const current = root.TS_LOCALES ? root.TS_LOCALES.current() : root.document.documentElement.dataset.lang;
+      if (!locale || locale !== current) throw new Error("UI translation locale does not match this page");
+      dictionary[locale] = data.copy;
+      requireCopy(locale);
+      root.TS_PAGE_UI = data;
+    }
+    const current = root.TS_LOCALES ? root.TS_LOCALES.current() : root.document.documentElement.dataset.lang || "en";
+    requireCopy(current);
+    root.TS_COPY = dictionary;
+    const feature = (name, legacy, reference) => {
+      const value = root.TS_PAGE_UI?.featureCopies?.[name] || legacy;
+      const validate = (actual, expected, path) => {
+        if (typeof expected === "string") {
+          if (typeof actual !== "string" || !actual.trim()) throw new Error("Incomplete feature translation: " + path);
+        } else if (Array.isArray(expected)) {
+          if (!Array.isArray(actual) || actual.length !== expected.length) throw new Error("Incomplete feature translation: " + path);
+          expected.forEach((item, index) => validate(actual[index], item, path + "." + index));
+        } else if (expected && typeof expected === "object") {
+          if (!actual || typeof actual !== "object" || Array.isArray(actual)) throw new Error("Incomplete feature translation: " + path);
+          Object.keys(expected).forEach((key) => validate(actual[key], expected[key], path + "." + key));
+        }
+      };
+      validate(value, reference, current + "." + name);
+      return value;
+    };
+    root.TS_I18N = Object.freeze({requiredKeys: Object.freeze(keys.slice()), require: requireCopy, feature});
+  }
 })(typeof window === "object" ? window : globalThis);

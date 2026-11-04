@@ -4,8 +4,9 @@
     results = document.getElementById("siteSearchResults"),
     count = document.getElementById("siteSearchCount");
   if (!input || !results) return;
-  const lang = document.documentElement.dataset.lang || "en",
-    t = window.TS_COPY[lang] || window.TS_COPY.en;
+  const lang = window.TS_LOCALES ? window.TS_LOCALES.current() : document.documentElement.dataset.lang || "en",
+    t = window.TS_I18N ? window.TS_I18N.require(lang) : window.TS_COPY[lang];
+  if (!t) throw new Error("Missing search translation for " + lang);
   let index = [],
     loaded = false;
   const controls = document.createElement("div");

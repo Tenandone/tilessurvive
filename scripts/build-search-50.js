@@ -24,7 +24,7 @@ for(const lang of langs)for(const file of walk(path.join(ROOT,lang))){
   entries.set(anchor.url,anchor);
  }
 }
-const items=[...entries.values()].sort((a,b)=>a.language.localeCompare(b.language)||a.title.localeCompare(b.title));
+const items=[...entries.values()].map(require('./lib/contextual-search').correctSearchEntry).sort((a,b)=>a.language.localeCompare(b.language)||a.title.localeCompare(b.title));
 const generatedAt=JSON.stringify(old.items)===JSON.stringify(items)?old.generatedAt:new Date().toISOString();
 fs.writeFileSync(path.join(ROOT,'data/search-index.json'),JSON.stringify({generatedAt,itemCount:items.length,items},null,2)+'\n');
 fs.mkdirSync(path.join(ROOT,'data/search'),{recursive:true});

@@ -17,8 +17,15 @@
     'zh-tw':{loading:'正在載入活動資料。',error:'無法載入活動資料，請稍後再試。',empty:'沒有可顯示的活動。',all:'全部',keyword:'關鍵字',day:'星期',mode:'模式',activity:'活動',reward:'獎勵關鍵字',verified:'已驗證',needsVerification:'需要驗證',reviewNeeded:'需要檢查',sourceImported:'原始資料擷取',sample:'範例資料',partial:'部分需檢查',confidence:'可信度',scoreRules:'分數項目',sourcePoints:'原始參考分數',pointsPerUnit:'確定分數',unverifiedPoints:'分數需要驗證',timeBasis:'時間基準',server:'伺服器',local:'本機','source-msk-reset':'原始資料時間基準',today:'今日',future:'預定追加',result:'結果',points:'分數',totalTime:'加速總時間',futureTools:'預定追加工具',checklist:['確認今日活動與時間基準','用獎勵搜尋確認需要的資源','用基本計算器估算數量','重新確認英雄/建築/裝備資料','確認賽季目標與伺服器時程','投入資源前再次確認遊戲內最新資訊']},
     ru:{loading:'Загрузка данных событий.',error:'Не удалось загрузить данные событий. Попробуйте позже.',empty:'Нет событий для показа.',all:'Все',keyword:'Поиск',day:'День',mode:'Режим',activity:'Активность',reward:'Ключевое слово награды',verified:'Проверено',needsVerification:'Нужна проверка',reviewNeeded:'Нужна проверка',sourceImported:'Данные из источника',sample:'Пример данных',partial:'Нужна частичная проверка',confidence:'Уверенность',scoreRules:'Строки очков',sourcePoints:'Очки из источника',pointsPerUnit:'Подтверждённые очки',unverifiedPoints:'Очки требуют проверки',timeBasis:'Время',server:'Сервер',local:'Локальное','source-msk-reset':'Время источника',today:'Сегодня',future:'Планируется',result:'Результат',points:'очков',totalTime:'Всего ускорений',futureTools:'Планируемые инструменты',checklist:['Проверь события на сегодня и время','Найди нужные ресурсы через поиск наград','Оцени количество через базовые калькуляторы','Проверь героев/здания/снаряжение','Сверь сезонные цели и расписание сервера','Перед тратой ресурсов проверь данные в игре']}
   };
-  function getLang(){var raw=(document.documentElement.getAttribute('data-lang')||document.documentElement.lang||'ko').toLowerCase();if(raw==='zh_tw'||raw==='zh-tw'||raw==='zh')return 'zh-tw';return SUPPORTED.indexOf(raw)>=0?raw:'ko';}
-  function pick(value,lang){return value&&typeof value==='object'&&!Array.isArray(value)?(lang==='de'?(value.de||''):(value[lang]||value.en||value.ko||'')):String(value||'');}
+  if(typeof module==='object'&&module.exports)module.exports={UI: UI,DAY_LABELS: DAY_LABELS};
+  if(typeof document==='undefined')return;
+  function getLang(){if(window.TS_LOCALES)return window.TS_LOCALES.current();var raw=(document.documentElement.getAttribute('data-lang')||document.documentElement.lang||'ko').toLowerCase();if(raw==='zh_tw'||raw==='zh-tw'||raw==='zh')return 'zh-tw';return SUPPORTED.indexOf(raw)>=0?raw:'ko';}
+  function pick(value,lang){
+    if(!value||typeof value!=='object'||Array.isArray(value))return String(value||'');
+    if(SUPPORTED.indexOf(lang)>=0)return lang==='de'?(value.de||''):(value[lang]||value.en||value.ko||'');
+    if(typeof value[lang]!=='string')throw Error('Missing event text for '+lang);
+    return value[lang];
+  }
   function arr(value){return Array.isArray(value)?value:[];}
   function text(s){return String(s==null?'':s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
   function todayKey(){var jsDay=new Date().getDay();return DAYS[jsDay===0?6:jsDay-1];}
@@ -67,8 +74,10 @@
   function renderSelect(select,items,current,ui,labels){if(!select)return;select.innerHTML='<option value="">'+text(ui.all)+'</option>'+items.map(function(item){var label=labels?labels[item]||item:item;return '<option value="'+text(item)+'" '+(item===current?'selected':'')+'>'+text(label)+'</option>';}).join('');}
   function renderCalculators(data,lang,ui){
     var root=el('ehCalculators');if(!root)return;root.innerHTML='';
+    var numberLocale=lang==='de'?'de-DE':SUPPORTED.indexOf(lang)<0?window.TS_LOCALES.locales.find(function(row){return row.code===lang;}).numberLocale:undefined;
     (data.calculators||[]).forEach(function(calc){
-      var labels=calc.labels&&(lang==='de'?calc.labels.de:(calc.labels[lang]||calc.labels.en))||{};
+      var labels=calc.labels&&(SUPPORTED.indexOf(lang)<0?calc.labels[lang]:lang==='de'?calc.labels.de:(calc.labels[lang]||calc.labels.en))||{};
+      if(SUPPORTED.indexOf(lang)<0&&(!labels.title||!labels.button))throw Error('Missing event calculator translation for '+lang);
       var html='';
       if(calc.type==='powerScore')html='<article class="eh-card"><h3>'+text(labels.title)+'</h3><label class="eh-field"><span>'+text(labels.amount)+'</span><input type="number" min="0" step="1" data-power-amount></label><label class="eh-field"><span>'+text(labels.rate)+'</span><input type="number" min="0" step="0.01" data-power-rate></label><button class="eh-button" type="button" data-power-button>'+text(labels.button)+'</button><div class="eh-calc-result" data-power-result>'+text(ui.result)+': 0 '+text(ui.points)+'</div></article>';
       if(calc.type==='speedupSum')html='<article class="eh-card"><h3>'+text(labels.title)+'</h3><div class="eh-grid"><label class="eh-field"><span>'+text(labels.days)+'</span><input type="number" min="0" step="1" data-speed-days></label><label class="eh-field"><span>'+text(labels.hours)+'</span><input type="number" min="0" step="1" data-speed-hours></label><label class="eh-field"><span>'+text(labels.minutes)+'</span><input type="number" min="0" step="1" data-speed-minutes></label></div><button class="eh-button" type="button" data-speed-button>'+text(labels.button)+'</button><div class="eh-calc-result" data-speed-result>'+text(ui.totalTime)+': 0h 0m</div></article>';
@@ -76,18 +85,25 @@
     });
     var future=(data.futureTools||[]).map(function(tool){return '<div class="eh-card"><h3>'+text(pick(tool.title,lang))+'</h3><p><span class="eh-pill eh-pill-warn">'+text(ui.future)+'</span></p></div>';}).join('');
     if(future)root.insertAdjacentHTML('beforeend','<article class="eh-card"><h3>'+text(ui.futureTools||'Future Tools')+'</h3><div class="eh-list">'+future+'</div></article>');
-    var powerBtn=root.querySelector('[data-power-button]');if(powerBtn)powerBtn.addEventListener('click',function(event){var card=event.currentTarget.closest('.eh-card')||root;var amount=Number((card.querySelector('[data-power-amount]')||{}).value||0);var rate=Number((card.querySelector('[data-power-rate]')||{}).value||0);var result=card.querySelector('[data-power-result]');if(result)result.textContent=ui.result+': '+Math.round(amount*rate).toLocaleString(lang==='de'?'de-DE':undefined)+' '+ui.points;});
-    var speedBtn=root.querySelector('[data-speed-button]');if(speedBtn)speedBtn.addEventListener('click',function(event){var card=event.currentTarget.closest('.eh-card')||root;var d=Number((card.querySelector('[data-speed-days]')||{}).value||0);var h=Number((card.querySelector('[data-speed-hours]')||{}).value||0);var m=Number((card.querySelector('[data-speed-minutes]')||{}).value||0);var total=d*24*60+h*60+m;var result=card.querySelector('[data-speed-result]');if(result)result.textContent=ui.totalTime+': '+Math.floor(total/60).toLocaleString(lang==='de'?'de-DE':undefined)+'h '+(total%60)+'m';});
+    var powerBtn=root.querySelector('[data-power-button]');if(powerBtn)powerBtn.addEventListener('click',function(event){var card=event.currentTarget.closest('.eh-card')||root;var amount=Number((card.querySelector('[data-power-amount]')||{}).value||0);var rate=Number((card.querySelector('[data-power-rate]')||{}).value||0);var result=card.querySelector('[data-power-result]');if(result)result.textContent=ui.result+': '+Math.round(amount*rate).toLocaleString(numberLocale)+' '+ui.points;});
+    var speedBtn=root.querySelector('[data-speed-button]');if(speedBtn)speedBtn.addEventListener('click',function(event){var card=event.currentTarget.closest('.eh-card')||root;var d=Number((card.querySelector('[data-speed-days]')||{}).value||0);var h=Number((card.querySelector('[data-speed-hours]')||{}).value||0);var m=Number((card.querySelector('[data-speed-minutes]')||{}).value||0);var total=d*24*60+h*60+m;var result=card.querySelector('[data-speed-result]');if(result)result.textContent=ui.totalTime+': '+Math.floor(total/60).toLocaleString(numberLocale)+'h '+(total%60)+'m';});
   }
   async function init(){
-    var lang=getLang();var ui=UI[lang]||UI.ko;
+    var lang=getLang();
+    var feature=window.TS_I18N?window.TS_I18N.feature('eventHelper',UI[lang]?{ui:UI[lang],dayLabels:DAY_LABELS[lang]}:undefined,{ui:UI.en,dayLabels:DAY_LABELS.en}):{ui:UI[lang],dayLabels:DAY_LABELS[lang]};
+    var ui=feature.ui;if(!ui)throw Error('Missing event helper translation for '+lang);
     document.querySelectorAll('[data-eh-label]').forEach(function(node){node.textContent=ui[node.getAttribute('data-eh-label')]||'';});
     document.querySelectorAll('[data-eh-loading]').forEach(function(node){node.textContent=ui.loading;});
     var eventsData,calcData;
     try{
-      var res=await Promise.all([fetch(lang==='de'?'/data/product-50/german-event-helper-events.json':'/data/event-helper-events.json',{cache:'no-cache'}),fetch(lang==='de'?'/data/product-50/german-event-helper-calculators.json':'/data/event-helper-calculators.json',{cache:'no-cache'})]);
-      if(!res[0].ok||!res[1].ok)throw new Error('fetch failed');
-      eventsData=await res[0].json();calcData=await res[1].json();
+      var eventsNode=el('event-helper-events-data'),calculatorsNode=el('event-helper-calculators-data');
+      if(eventsNode&&calculatorsNode){eventsData=JSON.parse(eventsNode.textContent);calcData=JSON.parse(calculatorsNode.textContent);}
+      else{
+        if(SUPPORTED.indexOf(lang)<0)throw Error('Missing localized event helper data for '+lang);
+        var res=await Promise.all([fetch(lang==='de'?'/data/product-50/german-event-helper-events.json':'/data/event-helper-events.json',{cache:'no-cache'}),fetch(lang==='de'?'/data/product-50/german-event-helper-calculators.json':'/data/event-helper-calculators.json',{cache:'no-cache'})]);
+        if(!res[0].ok||!res[1].ok)throw new Error('fetch failed');
+        eventsData=await res[0].json();calcData=await res[1].json();
+      }
     }catch(err){
       document.querySelectorAll('[data-eh-loading],#ehEventResults,#ehWeeklyCalendar,#ehRewardResults,#ehCalculators').forEach(function(node){node.innerHTML='<div class="eh-status eh-error">'+text(ui.error)+'</div>';});
       return;
@@ -95,7 +111,7 @@
     var events=arr(eventsData.events);
     if(!events.length)events=arr(eventsData.fallbackSamples);
     var state={q:'',day:'',mode:'',activity:''};
-    var dayLabels=DAY_LABELS[lang]||DAY_LABELS.en;var dayMap={};DAYS.forEach(function(d,i){dayMap[d]=dayLabels[i];});
+    var dayLabels=feature.dayLabels;var dayMap={};DAYS.forEach(function(d,i){dayMap[d]=dayLabels[i];});
     renderSelect(el('ehDayFilter'),DAYS,'',ui,dayMap);
     renderSelect(el('ehModeFilter'),unique(events.map(function(ev){return pick(ev.mode,lang);})), '', ui);
     renderSelect(el('ehActivityFilter'),unique(events.flatMap(function(ev){return arr(ev.activities);})), '', ui);

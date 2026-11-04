@@ -34,7 +34,8 @@
   if(typeof module==='object')module.exports=exports;
   if(!root.document)return;
   function init(){
-    const d=root.document,lang=d.documentElement.dataset.lang||d.documentElement.lang||'en',t=copy[lang]||copy.en;
+    const d=root.document,lang=root.TS_LOCALES?root.TS_LOCALES.current():d.documentElement.dataset.lang||d.documentElement.lang||'en',t=root.TS_I18N?root.TS_I18N.feature('dataWorkbench',copy[lang],copy.en):copy[lang];
+    if(!t)throw Error('Missing data workbench translation for '+lang);
     const make=(tag,cls,text)=>{const n=d.createElement(tag);if(cls)n.className=cls;if(text!==undefined)n.textContent=text;return n;};
     const format=n=>n.toLocaleString(lang);
     const field=(form,name)=>form.querySelector('[name="'+name+'"]');

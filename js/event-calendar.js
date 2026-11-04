@@ -3,9 +3,17 @@
   const root = document.getElementById('event-calendar'), app = document.getElementById('calendar-app'), M = window.EventCalendarMath;
   if (!root || !app || !M) return;
   const data = JSON.parse(document.getElementById('event-calendar-data').textContent), C = JSON.parse(document.getElementById('event-calendar-copy').textContent);
-  const lang = root.dataset.lang, locale = { ko: 'ko-KR', en: 'en-GB', ja: 'ja-JP', ru: 'ru-RU', 'zh-tw': 'zh-TW', de: 'de-DE' }[lang] || 'en-GB';
+  const lang = window.TS_LOCALES ? window.TS_LOCALES.normalize(root.dataset.lang) : root.dataset.lang;
+  const legacyLocales = { ko: 'ko-KR', en: 'en-GB', ja: 'ja-JP', ru: 'ru-RU', 'zh-tw': 'zh-TW', de: 'de-DE' };
+  const locale = legacyLocales[lang] || window.TS_LOCALES?.locales.find(row => row.code === lang)?.numberLocale;
+  if (!locale) throw new Error('Missing calendar locale: ' + lang);
   const storageKey = 'ts-event-calendar-utc-v1', esc = value => String(value == null ? '' : value).replace(/[&<>"']/g, x => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[x]);
-  const label = value => typeof value === 'string' ? value : value?.[lang] || value?.en || '';
+  const label = value => {
+    if (typeof value === 'string') return value;
+    if (value?.[lang]) return value[lang];
+    if (legacyLocales[lang]) return value?.en || '';
+    throw new Error('Missing calendar label for ' + lang);
+  };
   const template = (key, n) => (C[key] || '').replace('{n}', n);
   const fmtNumber = n => new Intl.NumberFormat(locale).format(n);
   let state = { event: data.events[0].id, profile: data.events[0].profiles[0].id, zone: 'UTC', view: 'pattern', scoreDay: null }, saved = {}, quantities = {}, lastSignature = '';

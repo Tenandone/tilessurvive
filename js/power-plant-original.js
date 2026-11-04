@@ -22,7 +22,8 @@
       return `<button type="button" class="number ${type==='time'?'time-number':''} ${n===0?'zero':''}" title="${esc(raw)}" data-value="${n}" data-kind="${type}" data-label="${esc(label)}" data-context="${esc(ctx)}" aria-label="${esc(label+' '+shown+', '+labels.showExactValue)}">${esc(shown)}</button>`;
     }
     function requirements(row){return row.requirements.length?'<ul class="requirements">'+row.requirements.map(r=>{
-      const target=links[r.buildingId],href=target?.replace(/^\/(ko|en|ja|ru|zh-tw|de)\//,`/${lang}/`),name=locale.buildingNames[r.buildingId];
+      const target=links[r.buildingId],localeAPI=root.TS_LOCALES||(typeof module==='object'&&typeof require==='function'?require('./site-locales'):null);
+      const href=target&&(localeAPI?`/${lang}${localeAPI.stripLocale(target)}`:target.replace(/^\/(ko|en|ja|ru|zh-tw|de)\//,`/${lang}/`)),name=locale.buildingNames[r.buildingId];
       if(!name)throw new Error('Missing localized building '+r.buildingId);
       return `<li data-building-id="${r.buildingId}" data-required-level="${r.level}" data-rank="${r.rank||0}">${href?`<a href="https://tilessurvive.net${esc(href)}" target="_blank" rel="noopener">${esc(name)} ↗</a>`:esc(name)}<span>${esc(labels.levelPrefix)}${r.level}${r.rank?' · '+esc(labels.stage)+' '+r.rank:''}</span></li>`;
     }).join('')+'</ul>':`<ul class="requirements"><li class="no-req">${esc(labels.none)}</li></ul>`;}
@@ -54,14 +55,16 @@
         const selected=()=>range==='all'?[1,30]:range.split('-').map(Number);
         function currentUrl(capture=wrapper.classList.contains('capture-mode')){const params=new URLSearchParams();if(range!=='all')params.set('range',range);if(showExact)params.set('exact','1');if(capture)params.set('capture','1');return `/${lang}/buildings/power-plant/`+(params.size?'?'+params.toString():'');}
         function languageUrl(a){
-          const url=new URL(a.href,root.location.href);
-          if(url.origin!==root.location.origin||!/^\/(ko|en|ja|ru|zh-tw|de)\/buildings\/power-plant\/$/.test(url.pathname))return null;
+          const resolved=root.TS_LOCALES?root.TS_LOCALES.resolvePageUrl(a.getAttribute('hreflang'),{document,preserveState:false}):a.href;
+          if(!resolved)return null;
+          const url=new URL(resolved,root.location.href);
+          if(url.origin!==root.location.origin||(root.TS_LOCALES?root.TS_LOCALES.stripLocale(url.pathname)!=='/buildings/power-plant/':!/^\/(ko|en|ja|ru|zh-tw|de)\/buildings\/power-plant\/$/.test(url.pathname)))return null;
           url.search=new URL(currentUrl(),root.location.href).search;
+          if(root.location.hash)url.hash=root.location.hash;
           return url;
         }
         function updateLanguageLinks(){document.querySelectorAll('.ts3-language a[hreflang]').forEach(a=>{const url=languageUrl(a);if(url)a.setAttribute('href',url.pathname+url.search+url.hash);});}
-        // The shared language handler appends location.search to href. These links
-        // already carry the sheet state, including for opening a new tab.
+        // Keep the live sheet selection in ordinary links, including new-tab navigation.
         document.addEventListener('click',event=>{
           const a=event.target.closest?.('.ts3-language a[hreflang]');if(!a)return;
           const url=languageUrl(a);if(!url)return;

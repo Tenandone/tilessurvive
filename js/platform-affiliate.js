@@ -1,9 +1,9 @@
 (function () {
   "use strict";
   const expected = "https://www.lootbar.com/ko/shop/ten/top-up/tiles-survive",
-    lang = document.documentElement.dataset.lang || "en";
+    lang = window.TS_LOCALES ? window.TS_LOCALES.current() : document.documentElement.dataset.lang || "en";
   function pageType() {
-    const route = location.pathname.replace(/^\/(ko|en|ja|ru|zh-tw|de)(?=\/)/, "");
+    const route = window.TS_LOCALES ? window.TS_LOCALES.stripLocale(location.pathname) : location.pathname.replace(/^\/(ko|en|ja|ru|zh-tw|de)(?=\/)/, "");
     if (/^\/(?:index\.html)?$/.test(route)) return "home";
     if (/^\/heroes\/[^/]+\//.test(route)) return "hero_detail";
     if (/^\/database\/pet-system\/[^/]+\//.test(route)) return "pet_detail";

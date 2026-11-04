@@ -5,7 +5,7 @@ const ROOT=path.resolve(__dirname,'..');
 const PUBLISHER='ca-pub-9189957764761115';
 const SRC='https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client='+PUBLISHER;
 const SNIPPET='<script async src="'+SRC+'" crossorigin="anonymous"></script>';
-const excluded=new Set(['node_modules','components','scripts','data','config','img','css','js','management','private','internal','audit-results','tests','test','fixtures']);
+const excluded=new Set(['node_modules','components','scripts','data','config','img','css','js','management','private','internal','audit-results','test-results','tests','test','fixtures']);
 function htmlFiles(root=ROOT){
   const walk=dir=>fs.readdirSync(dir,{withFileTypes:true}).flatMap(entry=>{
     if(entry.isSymbolicLink()||entry.name.startsWith('.')||entry.name.startsWith('_')||excluded.has(entry.name))return[];

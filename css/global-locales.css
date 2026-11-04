@@ -1,0 +1,9 @@
+/* Shared language controls grow without changing content order. */
+.ts3-language nav { max-block-size: min(70vh, 32rem); overflow-y: auto; overscroll-behavior: contain; }
+.ts3-language nav a { white-space: normal; min-inline-size: 7rem; }
+html[dir="rtl"] body { direction: rtl; }
+html[dir="rtl"] input[type="number"], html[dir="rtl"] input[type="range"],
+html[dir="rtl"] code, html[dir="rtl"] [data-code], html[dir="rtl"] .ts-code-value { direction: ltr; unicode-bidi: isolate; }
+html[dir="rtl"] .ts3-main, html[dir="rtl"] .ts-main { text-align: start; }
+html[dir="rtl"] td, html[dir="rtl"] th { text-align: start; }
+@media (max-width: 600px) { .ts3-language nav { max-inline-size: calc(100vw - 2rem); } }

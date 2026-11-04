@@ -10,17 +10,30 @@ test('official labels cover existing 28 heroes and 7 pets in five locales',()=>{
   const file=e.route.slice(1)+'index.html',d=parseHTML(fs.readFileSync(path.join(root,file),'utf8')).document;
   assert.equal(d.querySelector('h1').textContent,e.entity.names[lang],file);
   assert.ok(d.title.includes(e.entity.names[lang]),file+' title');
-  if(e.type==='heroes')assert.deepEqual([...d.querySelectorAll('details.ts-skill summary>span')].map(n=>n.textContent),e.entity.skills.map(s=>s.name[lang]),file);
+  if(e.type==='heroes'){
+   // The former Undine slot-3 label was copied from a different skill. Only
+   // this exact slot uses the retained survivor_undine_skill_2_name_newse key.
+   const reviewed=require('../data/i18n/contextual-terms.json').entries.find(row=>row.id==='undine-skill-2');
+   const expected=e.entity.skills.map((s,i)=>e.entity.id==='undine'&&i===2?reviewed.names[lang].value:s.name[lang]);
+   assert.deepEqual([...d.querySelectorAll('details.ts-skill summary>span')].map(n=>n.textContent),expected,file);
+  }
   assert.ok(![...d.querySelectorAll('details.ts-skill summary>span')].some(n=>/\{\d+\}|<color/.test(n.textContent)),file+' no unresolved game tokens');
  }
 });
 test('same production routes, canonical, hreflang and hero banners survive naming corrections',()=>{
+ const L=require('./lib/global-localization'),groups=L.routeGroups();
  for(const lang of langs)for(const e of entries(lang)){
   const file=e.route.slice(1)+'index.html';
   const old=parseHTML(execFileSync('git',['show',release+':'+file],{cwd:root,encoding:'utf8',maxBuffer:5e6})).document;
   const current=parseHTML(fs.readFileSync(path.join(root,file),'utf8')).document;
   for(const selector of ['link[rel=canonical]','.ts-lootbar-slot'])assert.deepEqual([...current.querySelectorAll(selector)].map(n=>n.outerHTML),[...old.querySelectorAll(selector)].map(n=>n.outerHTML),file+' '+selector);
-  const oldAlternates=[...old.querySelectorAll('link[hreflang]')].map(n=>[n.hreflang,n.href]); const deRoute=e.entity.id==='tarzan'?e.route.replace('/'+lang+'/','/de/').replace('/tarzan/','/tazan/'):e.route.replace('/'+lang+'/','/de/');assert.deepEqual([...current.querySelectorAll('link[hreflang]')].map(n=>[n.hreflang,n.href]).sort(),[...oldAlternates,['de','https://tilessurvive.net'+deRoute]].sort(),file+' preserved old alternates plus exact German counterpart');
+  const oldAlternates=[...old.querySelectorAll('link[hreflang]')].map(n=>[n.hreflang,n.href]);
+  const group=groups.find(g=>g.routes[lang]===e.route);
+  assert.ok(group,file+' canonical route group');
+  const expected=new Map(oldAlternates.map(([code,url])=>[code.toLowerCase(),url]));
+  for(const locale of L.registry.locales.filter(x=>x.status==='published'))expected.set(locale.hreflang.toLowerCase(),'https://tilessurvive.net'+group.routes[locale.code]);
+  if(current.getElementById('ts-locale-routes'))expected.set('x-default','https://tilessurvive.net'+group.routes.en);
+  assert.deepEqual([...current.querySelectorAll('link[hreflang]')].map(n=>[n.hreflang.toLowerCase(),n.href]).sort(),[...expected].sort(),file+' preserved old alternates plus exact published counterparts');
   const oldBodies=[...old.querySelectorAll('.ts-skill-body')],bodies=[...current.querySelectorAll('.ts-skill-body')];
   assert.equal(bodies.length,oldBodies.length,file+' complete skill panels');
   // Human-reviewed labels may change; every original displayed quantity must remain.

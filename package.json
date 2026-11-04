@@ -62,7 +62,11 @@
     "build:building-system": "node scripts/build-building-system.js && node scripts/build-search-index.js && node scripts/build-search-50.js",
     "test:building-system": "node --test scripts/test-building-system.js scripts/test-building-dependencies.js",
     "test:building-dependencies": "node --test scripts/test-building-dependencies.js",
-    "test:building-legacy-math": "node --test --test-name-pattern=\"^(four exact IDs|seconds and unrounded|all ranges are additive|barracks 2 and 3|localized times)\" scripts/test-client-buildings-52.js && node --test --test-name-pattern=\"^(the single Power Plant|compact display|six locales preserve|all 465|ko:|en:|ja:|ru:|zh-tw:|de:|selected ranges|unknown values|display and inclusive|localized literal)\" scripts/test-power-plant-original-runtime.js"
+    "test:building-legacy-math": "node --test --test-name-pattern=\"^(four exact IDs|seconds and unrounded|all ranges are additive|barracks 2 and 3|localized times)\" scripts/test-client-buildings-52.js && node --test --test-name-pattern=\"^(the single Power Plant|compact display|six locales preserve|all 465|ko:|en:|ja:|ru:|zh-tw:|de:|selected ranges|unknown values|display and inclusive|localized literal)\" scripts/test-power-plant-original-runtime.js",
+    "build:global:preview": "node scripts/build-global-locales.js",
+    "build:global:zh-cn": "node scripts/build-simplified-chinese.js && node scripts/build-simplified-chinese.js --self-test",
+    "test:global": "node --test scripts/test-site-locales.js scripts/test-global-calculators.js scripts/test-global-localization.js scripts/test-root-language.js scripts/test-existing-locale-fixes.js scripts/test-global-release.js scripts/test-contextual-terms.js scripts/test-german-global-owner.js",
+    "build:global:release": "node scripts/build-global-release.js --apply"
   },
   "keywords": [],
   "author": "",
@@ -71,6 +75,7 @@
   "devDependencies": {
     "image-size": "^2.0.4",
     "linkedom": "^0.18.13",
+    "opencc-js": "1.4.2",
     "serve": "^14.2.6"
   }
 }
