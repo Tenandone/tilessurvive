@@ -45,7 +45,15 @@ test('public building allowlist preserves runtime values and excludes management
   const permitted = (object, fields) => assert(Object.keys(object).every(key => fields.includes(key)), `Unexpected public key in ${JSON.stringify(Object.keys(object))}`);
   for (const slug of registry.slugs) {
     const buildings = registry.publicBuildings(slug);
-    assert.deepEqual(buildings, registry.model.buildings.filter(building => building.slug === slug));
+    const expected = structuredClone(registry.model.buildings.filter(building => building.slug === slug));
+    if (slug === 'power-plant') {
+      const a = expected[0].profiles.find(profile => profile.id === 'original');
+      const b = expected[0].profiles.find(profile => profile.id === 'd');
+      a.id = 'unified';
+      for (const row of a.rows) row.requirements = structuredClone(b.rows.find(value => value.level === row.level && value.rank === row.rank).requirements);
+      expected[0].profiles = [a];
+    }
+    assert.deepEqual(buildings, expected, slug + ': only the approved Power Plant public projection may differ from raw profiles');
     for (const building of buildings) {
       permitted(building, ['id', 'slug', 'name', 'profiles']);
       permitted(building.name, registry.langs);

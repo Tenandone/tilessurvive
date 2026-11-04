@@ -12,6 +12,7 @@ const {parseHTML} = require('linkedom');
 const registry = require('./building-data-registry');
 const runtime = require('../js/building-system');
 const player = require('./building-player-labels');
+const unifiedCopy = require('../data/power-plant-unified-copy.json');
 const root = path.resolve(__dirname, '..');
 const baseline = '7a82e23b3d2184673ed60dc6898813f74b4d9b79';
 const read = file => fs.readFileSync(path.join(root, file), 'utf8');
@@ -77,7 +78,7 @@ test('embedded locale and UI copy use explicit public keys without old source an
   const labelKeys = ['requirements', 'level', 'exactValues', 'capture', 'levelHeader', 'conditions', 'time', 'newConstruction', 'stage', 'none', 'exactValue', 'close', 'totals', 'levelPrefix', 'power', 'unknown'];
   for (const {lang, slug, file, config} of pages) {
     exactKeys(config, configKeys, file + ' config');
-    exactKeys(config.copy, copyKeys, file + ' copy');
+    exactKeys(config.copy, slug === 'power-plant' ? [...copyKeys, 'unified', 'checklist', 'requirementsPath'] : copyKeys, file + ' copy');
     exactKeys(config.locale, ['numberLocale', 'labels', 'units', 'messages'], file + ' locale');
     exactKeys(config.locale.labels, labelKeys, file + ' labels');
     exactKeys(config.locale.units, ['resourceSuffix', 'seconds', 'duration'], file + ' units');
@@ -89,8 +90,9 @@ test('embedded locale and UI copy use explicit public keys without old source an
     assert.equal(config.copy.d, player[lang].d);
     assert.notEqual(config.copy.original, config.copy.d, file + ' requirements choices must remain distinct');
     const hintKey = slug === 'power-plant' ? 'powerProfileHint' : slug === 'enlistment-office' ? 'profileHintInitial' : 'profileHint';
-    assert.equal(config.copy.profileHint, player[lang][hintKey]);
-    assert.equal(config.copy.powerCondition, player[lang][slug === 'power-plant' ? 'powerDependencyCondition' : 'powerCondition']);
+    assert.equal(config.copy.profileHint, slug === 'power-plant' ? unifiedCopy[lang].profileHint : player[lang][hintKey]);
+    assert.equal(config.copy.powerCondition, slug === 'power-plant' ? unifiedCopy[lang].powerCondition : player[lang].powerCondition);
+    if (slug === 'power-plant') for (const key of ['unified', 'checklist', 'requirementsPath']) assert.equal(config.copy[key], unifiedCopy[lang][key], file + ' unified copy ' + key);
     if (slug === 'enlistment-office') assert(config.buildings.every(building => building.profiles.every(profile => profile.rows.every(row => row.level === 1))), file + ' construction-only guidance must match the published scope');
     assert(Object.values(config.copy).every(value => typeof value === 'string'), file + ' missing public copy');
   }
@@ -107,15 +109,20 @@ test('public profile identities and independent datasets survive neutral labels 
     assert.deepEqual(config.buildings, expected, file + ' independent source profiles');
     const document = parseHTML(html).document;
     const options = [...document.querySelectorAll('[data-bs-choice] option')];
-    assert.equal(options[0].getAttribute('value'), '', file + ' calculation must require a choice');
+    assert.equal(options[0].getAttribute('value'), '', file + ' invalid/unselected sentinel remains available');
+    if (slug === 'power-plant') {
+      assert(document.querySelector('[data-bs-choice]').closest('[hidden]'), file + ' unified selector is not a visible choice');
+      assert.equal(options[1].hasAttribute('selected'), true, file + ' unified default is selected in static HTML');
+      assert.equal(document.querySelector('[data-bs-inputs]').hasAttribute('disabled'), false, file + ' unified calculation is initially usable');
+    }
     const ids = expected.flatMap(building => building.profiles.map(profile => `${building.id}:${profile.id}`));
     assert.deepEqual(options.slice(1).map(option => option.getAttribute('value')), ids, file + ' share URL identifiers');
     for (const building of expected) {
-      assert.deepEqual(building.profiles.map(profile => profile.id), ['original', 'd'], file + ' distinct profile IDs');
+      assert.deepEqual(building.profiles.map(profile => profile.id), slug === 'power-plant' ? ['unified'] : ['original', 'd'], file + ' explicitly scoped profile identities');
       for (const profile of building.profiles) {
         const id = `${building.id}:${profile.id}`;
         const option = options.find(node => node.getAttribute('value') === id);
-        const label = profile.id === 'original' ? player[lang].original : player[lang].d;
+        const label = profile.id === 'unified' ? unifiedCopy[lang].unified : profile.id === 'original' ? player[lang].original : player[lang].d;
         assert(option.textContent.endsWith(' · ' + label), file + ' player-facing label for ' + id);
         assert.equal(document.querySelectorAll(`[data-bs-profile="${id}"]`).length, 1, file + ' distinct profile panel');
         rowCount += profile.rows.length;
@@ -124,9 +131,9 @@ test('public profile identities and independent datasets survive neutral labels 
     const effect = registry.evidence.effects.find(entry => entry.slug === slug);
     if (effect) for (const profile of effect.profiles) assert.equal(document.querySelectorAll(`[data-bs-effect-profile="${profile.id.toLowerCase()}"]`).length, 1, file + ' independent effect profile');
   }
-  assert.equal(rowCount, 9132, '1,522 independent rows in each of six languages');
-  const power = pages.find(page => page.lang === 'ko' && page.slug === 'power-plant').config.buildings[0];
-  assert.notDeepEqual(power.profiles[0].rows, power.profiles[1].rows, 'Different requirement datasets must not be merged');
+  assert.equal(rowCount, 8952, '1,492 public rows per language; raw source rows remain separate');
+  const power = registry.model.buildings.find(building => building.id === 800005);
+  assert.notDeepEqual(power.profiles[0].rows, power.profiles[1].rows, 'The two retained Power Plant source profiles must remain distinct');
 });
 
 test('unknown construction values and guard states survive publication and still reject invalid totals', () => {

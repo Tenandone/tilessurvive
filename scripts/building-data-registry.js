@@ -17,6 +17,7 @@ const sourceFiles = [
   'data/content-60/buildings-phase2.json'
 ];
 const sources = sourceFiles.map(file => require(path.join(root, file)));
+const unifiedPower = require('./build-power-plant-unified-data').validateModel(require('../data/power-plant-unified.json'), sources[0]);
 const langs = ['ko', 'en', 'ja', 'ru', 'zh-tw', 'de'];
 const clone = value => structuredClone(value);
 
@@ -142,7 +143,27 @@ const pick = (object, fields) => Object.fromEntries(fields.filter(field => Objec
 const publicName = name => pick(name, langs);
 function publicBuildings(slug) {
   assert(slugs.includes(slug), `Unknown building route ${slug}`);
-  return model.buildings.filter(building => building.slug === slug).map(building => ({
+  const selected = model.buildings.filter(building => building.slug === slug).map(building => {
+    if (building.id !== 800005) return building;
+    // Keep the immutable raw registry (including both AB profiles) separate
+    // from this approved publication. All displayed values share this model.
+    const prerequisiteRows = building.profiles.find(profile => profile.id === 'd').rows;
+    const numericRows = building.profiles.find(profile => profile.id === 'original').rows;
+    return {...building, profiles: [{id: unifiedPower.profile, rows: unifiedPower.rows.map(row => ({
+      ...clone(row),
+      requirements: row.requirements.map(requirement => {
+        const source = prerequisiteRows.find(r => r.level === row.level && r.rank === row.rank).requirements.find(q => q.buildingId === requirement.buildingId && q.level === requirement.level && q.rank === requirement.rank);
+        assert(source, 'Missing translated Power Plant prerequisite identity');
+        return {...clone(requirement), ...(source.slug ? {slug: source.slug} : {}), ...(source.name ? {name: clone(source.name)} : {})};
+      }),
+      constructionItems: row.constructionItems.map(item => {
+        const source = numericRows.find(r => r.level === row.level && r.rank === row.rank).constructionItems.find(q => q.id === item.id);
+        assert(source?.name, 'Missing translated Power Plant construction item');
+        return {...clone(item), name: clone(source.name)};
+      })
+    }))}]};
+  });
+  return selected.map(building => ({
     id: building.id,
     slug: building.slug,
     name: publicName(building.name),

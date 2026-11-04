@@ -34,27 +34,9 @@ function render(lang){
 function project(html,file){
   file=file.replaceAll('\\','/').replace(root.replaceAll('\\','/')+'/','');
   if(!pages.includes(file))return html;
-  const lang=file.split('/')[0],d=parseHTML(html).document;
-  // The common owner replaces the legacy cost wrapper; keep it authoritative on rebuild.
-  if(d.querySelector('[data-building-system]'))return require('./build-building-system').project(html,lang,'power-plant');
-  const prior=d.querySelector('[data-power-plant-original]');
-  const old=d.querySelector('[data-client-building-52]')||d.getElementById('ts3-data-table-0');
-  const target=prior||old?.closest('section.section');
-  assert(target,'Power Plant requirements section '+file);
-  const template=d.createElement('template');template.innerHTML=render(lang);target.replaceWith(template.content);
-  d.querySelectorAll('[data-client-building-52-asset],[data-power-plant-asset]').forEach(n=>n.remove());
-  require('./build-building-ux-53').detailShell(d,lang);
-  for(const asset of ['css/power-plant-original.css','js/power-plant-original.js']){
-    const css=asset.endsWith('.css'),n=d.createElement(css?'link':'script');
-    n.setAttribute('data-power-plant-asset','');
-    n.setAttribute(css?'href':'src','/'+asset+'?v='+assetVersion(asset));
-    if(css)n.rel='stylesheet';else n.defer=true;d.head.append(n);
-  }
-  // Retain the existing cost and coal fragments, shared shell, SEO and affiliate markup.
-  const table=d.querySelector('[data-power-plant-original] .data-table');
-  assert(table);table.id='ts3-data-table-0';
-  d.documentElement.setAttribute('data-power-plant-page','');
-  return '<!DOCTYPE html>\n'+d.documentElement.outerHTML+'\n';
+  // Compatibility entry point: every published page uses the unified owner.
+  // Archived A-only formatting fixtures above are not a publication fallback.
+  return require('./build-building-system').project(html,file.split('/')[0],'power-plant');
 }
 function build(){let changed=0;for(const file of pages){const full=path.join(root,file),before=fs.readFileSync(full,'utf8'),after=project(before,file);if(before!==after){fs.writeFileSync(full,after);changed++;}}console.log(JSON.stringify({powerPlantLanguages:6,levels:30,changed}));return changed;}
 module.exports={model,links,langs,pages,render,project,build};

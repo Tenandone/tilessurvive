@@ -1,0 +1,777 @@
+{
+  "schemaVersion": 1,
+  "buildingId": 800005,
+  "profile": "unified",
+  "resourceIds": [
+    1200005,
+    1200004,
+    1200003,
+    1200002
+  ],
+  "rows": [
+    {
+      "level": 1,
+      "rank": 0,
+      "resources": [
+        7350,
+        7350,
+        0,
+        0
+      ],
+      "seconds": 0,
+      "battlePower": 5583,
+      "constructionItems": [],
+      "requirements": []
+    },
+    {
+      "level": 2,
+      "rank": 0,
+      "resources": [
+        14800,
+        14800,
+        0,
+        0
+      ],
+      "seconds": 3,
+      "battlePower": 10070,
+      "constructionItems": [],
+      "requirements": [
+        {
+          "buildingId": 800110,
+          "level": 1,
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "level": 3,
+      "rank": 0,
+      "resources": [
+        22600,
+        22600,
+        0,
+        0
+      ],
+      "seconds": 4,
+      "battlePower": 16370,
+      "constructionItems": [],
+      "requirements": [
+        {
+          "buildingId": 800003,
+          "level": 2,
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "level": 4,
+      "rank": 0,
+      "resources": [
+        31100,
+        31100,
+        0,
+        0
+      ],
+      "seconds": 5,
+      "battlePower": 24392,
+      "constructionItems": [],
+      "requirements": [
+        {
+          "buildingId": 800001,
+          "level": 3,
+          "rank": 0
+        },
+        {
+          "buildingId": 800030,
+          "level": 1,
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "level": 5,
+      "rank": 0,
+      "resources": [
+        41500,
+        41500,
+        0,
+        0
+      ],
+      "seconds": 180,
+      "battlePower": 34133,
+      "constructionItems": [],
+      "requirements": [
+        {
+          "buildingId": 800002,
+          "level": 3,
+          "rank": 0
+        },
+        {
+          "buildingId": 800150,
+          "level": 2,
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "level": 6,
+      "rank": 0,
+      "resources": [
+        56100,
+        56100,
+        0,
+        0
+      ],
+      "seconds": 1200,
+      "battlePower": 51755,
+      "constructionItems": [],
+      "requirements": [
+        {
+          "buildingId": 800003,
+          "level": 5,
+          "rank": 0
+        },
+        {
+          "buildingId": 800150,
+          "level": 3,
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "level": 7,
+      "rank": 0,
+      "resources": [
+        80000,
+        80000,
+        0,
+        0
+      ],
+      "seconds": 1800,
+      "battlePower": 72817,
+      "constructionItems": [],
+      "requirements": [
+        {
+          "buildingId": 800001,
+          "level": 5,
+          "rank": 0
+        },
+        {
+          "buildingId": 800031,
+          "level": 1,
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "level": 8,
+      "rank": 0,
+      "resources": [
+        124000,
+        124000,
+        0,
+        0
+      ],
+      "seconds": 8100,
+      "battlePower": 97320,
+      "constructionItems": [],
+      "requirements": [
+        {
+          "buildingId": 800150,
+          "level": 5,
+          "rank": 0
+        },
+        {
+          "buildingId": 800007,
+          "level": 1,
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "level": 9,
+      "rank": 0,
+      "resources": [
+        238000,
+        238000,
+        0,
+        0
+      ],
+      "seconds": 15600,
+      "battlePower": 125264,
+      "constructionItems": [],
+      "requirements": [
+        {
+          "buildingId": 800109,
+          "level": 1,
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "level": 10,
+      "rank": 0,
+      "resources": [
+        1170000,
+        1170000,
+        0,
+        0
+      ],
+      "seconds": 26100,
+      "battlePower": 156648,
+      "constructionItems": [],
+      "requirements": [
+        {
+          "buildingId": 800010,
+          "level": 1,
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "level": 11,
+      "rank": 0,
+      "resources": [
+        1575000,
+        1575000,
+        50000,
+        0
+      ],
+      "seconds": 39960,
+      "battlePower": 196053,
+      "constructionItems": [],
+      "requirements": [
+        {
+          "buildingId": 800012,
+          "level": 5,
+          "rank": 0
+        },
+        {
+          "buildingId": 800007,
+          "level": 3,
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "level": 12,
+      "rank": 0,
+      "resources": [
+        2250000,
+        2250000,
+        100000,
+        0
+      ],
+      "seconds": 56310,
+      "battlePower": 235458,
+      "constructionItems": [],
+      "requirements": [
+        {
+          "buildingId": 800016,
+          "level": 5,
+          "rank": 0
+        },
+        {
+          "buildingId": 800007,
+          "level": 5,
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "level": 13,
+      "rank": 0,
+      "resources": [
+        3150000,
+        3150000,
+        300000,
+        0
+      ],
+      "seconds": 76320,
+      "battlePower": 274864,
+      "constructionItems": [],
+      "requirements": [
+        {
+          "buildingId": 800016,
+          "level": 8,
+          "rank": 0
+        },
+        {
+          "buildingId": 800007,
+          "level": 6,
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "level": 14,
+      "rank": 0,
+      "resources": [
+        3712500,
+        3712500,
+        600000,
+        0
+      ],
+      "seconds": 105500,
+      "battlePower": 314269,
+      "constructionItems": [],
+      "requirements": [
+        {
+          "buildingId": 800012,
+          "level": 8,
+          "rank": 0
+        },
+        {
+          "buildingId": 800007,
+          "level": 10,
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "level": 15,
+      "rank": 0,
+      "resources": [
+        4567500,
+        4567500,
+        913500,
+        0
+      ],
+      "seconds": 137400,
+      "battlePower": 353673,
+      "constructionItems": [],
+      "requirements": [
+        {
+          "buildingId": 800016,
+          "level": 13,
+          "rank": 0
+        },
+        {
+          "buildingId": 800007,
+          "level": 14,
+          "rank": 0
+        },
+        {
+          "buildingId": 800010,
+          "level": 5,
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "level": 16,
+      "rank": 0,
+      "resources": [
+        6727500,
+        6727500,
+        1345500,
+        336400
+      ],
+      "seconds": 171400,
+      "battlePower": 427483,
+      "constructionItems": [],
+      "requirements": [
+        {
+          "buildingId": 800012,
+          "level": 13,
+          "rank": 0
+        },
+        {
+          "buildingId": 800007,
+          "level": 15,
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "level": 17,
+      "rank": 0,
+      "resources": [
+        8482500,
+        8482500,
+        1696500,
+        424100
+      ],
+      "seconds": 211100,
+      "battlePower": 501294,
+      "constructionItems": [],
+      "requirements": [
+        {
+          "buildingId": 800016,
+          "level": 16,
+          "rank": 0
+        },
+        {
+          "buildingId": 800007,
+          "level": 16,
+          "rank": 0
+        },
+        {
+          "buildingId": 800010,
+          "level": 8,
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "level": 18,
+      "rank": 0,
+      "resources": [
+        11722500,
+        11722500,
+        2344500,
+        586100
+      ],
+      "seconds": 260400,
+      "battlePower": 581519,
+      "constructionItems": [],
+      "requirements": [
+        {
+          "buildingId": 800012,
+          "level": 17,
+          "rank": 0
+        },
+        {
+          "buildingId": 800152,
+          "level": 13,
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "level": 19,
+      "rank": 0,
+      "resources": [
+        16312500,
+        16312500,
+        3262500,
+        815600
+      ],
+      "seconds": 547200,
+      "battlePower": 665750,
+      "constructionItems": [],
+      "requirements": [
+        {
+          "buildingId": 800016,
+          "level": 18,
+          "rank": 0
+        },
+        {
+          "buildingId": 800007,
+          "level": 18,
+          "rank": 0
+        },
+        {
+          "buildingId": 800010,
+          "level": 12,
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "level": 20,
+      "rank": 0,
+      "resources": [
+        22657500,
+        22657500,
+        4531500,
+        1132900
+      ],
+      "seconds": 810700,
+      "battlePower": 751360,
+      "constructionItems": [],
+      "requirements": [
+        {
+          "buildingId": 800012,
+          "level": 19,
+          "rank": 0
+        },
+        {
+          "buildingId": 800152,
+          "level": 16,
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "level": 21,
+      "rank": 0,
+      "resources": [
+        31567500,
+        31567500,
+        6313500,
+        1578400
+      ],
+      "seconds": 972900,
+      "battlePower": 918851,
+      "constructionItems": [],
+      "requirements": [
+        {
+          "buildingId": 800016,
+          "level": 20,
+          "rank": 0
+        },
+        {
+          "buildingId": 800007,
+          "level": 20,
+          "rank": 0
+        },
+        {
+          "buildingId": 800010,
+          "level": 15,
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "level": 22,
+      "rank": 0,
+      "resources": [
+        43717500,
+        43717500,
+        8743500,
+        2185900
+      ],
+      "seconds": 1362000,
+      "battlePower": 1089098,
+      "constructionItems": [],
+      "requirements": [
+        {
+          "buildingId": 800012,
+          "level": 21,
+          "rank": 0
+        },
+        {
+          "buildingId": 800147,
+          "level": 14,
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "level": 23,
+      "rank": 0,
+      "resources": [
+        60997500,
+        60997500,
+        12199500,
+        3049900
+      ],
+      "seconds": 1906800,
+      "battlePower": 1262095,
+      "constructionItems": [],
+      "requirements": [
+        {
+          "buildingId": 800016,
+          "level": 22,
+          "rank": 0
+        },
+        {
+          "buildingId": 800007,
+          "level": 22,
+          "rank": 0
+        },
+        {
+          "buildingId": 800010,
+          "level": 18,
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "level": 24,
+      "rank": 0,
+      "resources": [
+        87457500,
+        87457500,
+        17491500,
+        4372900
+      ],
+      "seconds": 2669400,
+      "battlePower": 1437845,
+      "constructionItems": [],
+      "requirements": [
+        {
+          "buildingId": 800012,
+          "level": 23,
+          "rank": 0
+        },
+        {
+          "buildingId": 800142,
+          "level": 18,
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "level": 25,
+      "rank": 0,
+      "resources": [
+        119857500,
+        119857500,
+        23971500,
+        5992900
+      ],
+      "seconds": 2202900,
+      "battlePower": 1616347,
+      "constructionItems": [],
+      "requirements": [
+        {
+          "buildingId": 800016,
+          "level": 24,
+          "rank": 0
+        },
+        {
+          "buildingId": 800007,
+          "level": 24,
+          "rank": 0
+        },
+        {
+          "buildingId": 800010,
+          "level": 20,
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "level": 26,
+      "rank": 0,
+      "resources": [
+        139297500,
+        139297500,
+        27859500,
+        6964900
+      ],
+      "seconds": 2543800,
+      "battlePower": 1816401,
+      "constructionItems": [],
+      "requirements": [
+        {
+          "buildingId": 800012,
+          "level": 25,
+          "rank": 0
+        },
+        {
+          "buildingId": 800148,
+          "level": 20,
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "level": 27,
+      "rank": 0,
+      "resources": [
+        161977500,
+        161977500,
+        32395500,
+        8098900
+      ],
+      "seconds": 3647400,
+      "battlePower": 2040587,
+      "constructionItems": [],
+      "requirements": [
+        {
+          "buildingId": 800016,
+          "level": 26,
+          "rank": 0
+        },
+        {
+          "buildingId": 800007,
+          "level": 26,
+          "rank": 0
+        },
+        {
+          "buildingId": 800010,
+          "level": 22,
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "level": 28,
+      "rank": 0,
+      "resources": [
+        187897500,
+        187897500,
+        37579500,
+        9394900
+      ],
+      "seconds": 3947400,
+      "battlePower": 2291803,
+      "constructionItems": [],
+      "requirements": [
+        {
+          "buildingId": 800012,
+          "level": 27,
+          "rank": 0
+        },
+        {
+          "buildingId": 800149,
+          "level": 23,
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "level": 29,
+      "rank": 0,
+      "resources": [
+        220297500,
+        220297500,
+        44059500,
+        11014900
+      ],
+      "seconds": 4336900,
+      "battlePower": 2573281,
+      "constructionItems": [],
+      "requirements": [
+        {
+          "buildingId": 800016,
+          "level": 28,
+          "rank": 0
+        },
+        {
+          "buildingId": 800007,
+          "level": 28,
+          "rank": 0
+        },
+        {
+          "buildingId": 800148,
+          "level": 24,
+          "rank": 0
+        }
+      ]
+    },
+    {
+      "level": 30,
+      "rank": 1,
+      "resources": [
+        255937500,
+        255937500,
+        51187500,
+        12796900
+      ],
+      "seconds": 5084300,
+      "battlePower": 3121084,
+      "constructionItems": [],
+      "requirements": [
+        {
+          "buildingId": 800012,
+          "level": 29,
+          "rank": 0
+        },
+        {
+          "buildingId": 800007,
+          "level": 29,
+          "rank": 0
+        },
+        {
+          "buildingId": 800147,
+          "level": 26,
+          "rank": 0
+        }
+      ]
+    }
+  ]
+}

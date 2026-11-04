@@ -291,7 +291,7 @@ test('all 132 documents retain canonical URLs, six language alternatives, static
     const ids = [...d.querySelectorAll('[id]')].map(n => n.id);
     assert.equal(new Set(ids).size, ids.length, file + ' duplicate IDs');
     for (const node of d.querySelectorAll('[aria-controls]')) for (const id of node.getAttribute('aria-controls').split(/\s+/)) assert(d.getElementById(id), file + ' missing control ' + id);
-    const expectedBuildings = buildings.filter(b => b.slug === slug);
+    const expectedBuildings = B.config(lang, slug).buildings;
     const host = d.querySelector('[data-building-system]');
     assert(host, file + ' common sheet');
     if (!expectedBuildings.length) {
@@ -326,7 +326,7 @@ test('all 132 documents retain canonical URLs, six language alternatives, static
       }
     }
   }
-  assert.equal(staticRows, 9132, '1,522 distinct source rows in each of six languages');
+  assert.equal(staticRows, 8952, '1,492 public rows per language; raw 1,522 source rows remain separately verified');
 });
 
 test('building catalog lists all 22 existing routes without duplicate entries or embedded level tables', () => {

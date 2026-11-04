@@ -151,7 +151,7 @@ test('all six languages preserve every prerequisite in public JSON, desktop tabl
       }
     }
   }
-  assert.deepEqual(counts, {pages:132,profileRows:9132,desktopRows:9132,mobileRows:9132,prerequisites:9372,multipleConditionRows:216,unlinkedConditions:36});
+  assert.deepEqual(counts, {pages:132,profileRows:8952,desktopRows:8952,mobileRows:8952,prerequisites:9216,multipleConditionRows:216,unlinkedConditions:36});
   t.diagnostic(JSON.stringify(counts));
 });
 
@@ -182,9 +182,9 @@ test('empty, unknown, initial unlock and construction-item conditions remain dis
 });
 
 test('dependency verifier rejects a missing second condition, wrong level/rank, and wrong building link', () => {
-  const cfg = builder.config('ko', 'power-plant'), building = cfg.buildings[0], profile = building.profiles.find(value => value.id === 'd');
+  const cfg = builder.config('ko', 'power-plant'), building = cfg.buildings[0], profile = building.profiles.find(value => value.id === 'unified');
   const source = profile.rows.find(value => value.level === 15);
-  const panel = page('ko', 'power-plant').querySelector('[data-bs-profile="800005:d"]');
+  const panel = page('ko', 'power-plant').querySelector('[data-bs-profile="800005:unified"]');
   const original = panel.querySelector('tr[data-level="15"] .condition');
   verifyConditions(original, source, cfg, 'control');
   const mutations = [

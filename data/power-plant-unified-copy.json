@@ -1,0 +1,149 @@
+{
+  "ko": {
+    "unified": "통합 요구량",
+    "profileHint": "레벨별 자원, 시간, 선행 건물을 한 표에서 확인하세요.",
+    "powerCondition": "각 목표 레벨에 표시된 선행 건물과 필요 레벨을 확인하세요. 선행 건물의 업그레이드 비용은 이 계산에 포함되지 않습니다.",
+    "checklist": "현재 레벨과 목표 레벨을 선택하고 보유 자원을 입력하세요. 업그레이드 전 게임 화면의 자원과 선행 조건을 확인하세요.",
+    "requirementsPath": "구간별 선행 건물"
+  },
+  "en": {
+    "unified": "Unified requirements",
+    "profileHint": "View resources, time and prerequisite buildings by level in one table.",
+    "powerCondition": "Check every prerequisite building and its required level for each target level. The cost of upgrading prerequisite buildings is not included in this calculation.",
+    "checklist": "Choose your current and target levels, then enter your available resources. Check the resources and prerequisites on the in-game screen before upgrading.",
+    "requirementsPath": "Prerequisites along the upgrade path"
+  },
+  "ja": {
+    "unified": "統合必要量",
+    "profileHint": "各レベルの資源、時間、前提建物を一つの表で確認できます。",
+    "powerCondition": "各目標レベルに表示された前提建物と必要レベルを確認してください。前提建物のアップグレード費用は、この計算に含まれません。",
+    "checklist": "現在レベルと目標レベルを選び、所持資源を入力してください。アップグレード前にゲーム内画面の資源と前提条件を確認してください。",
+    "requirementsPath": "アップグレード経路の前提建物"
+  },
+  "zh-tw": {
+    "unified": "整合需求",
+    "profileHint": "在同一張表中查看各級資源、時間與前置建築。",
+    "powerCondition": "請確認每個目標等級列出的前置建築與所需等級。本次計算不包含前置建築的升級費用。",
+    "checklist": "選擇目前與目標等級，再輸入持有資源。升級前請確認遊戲畫面中的資源與前置條件。",
+    "requirementsPath": "升級路徑的前置建築"
+  },
+  "zh-cn": {
+    "unified": "整合需求",
+    "profileHint": "在同一张表中查看各级资源、时间与前置建筑。",
+    "powerCondition": "请确认每个目标等级列出的前置建筑与所需等级。本次计算不包含前置建筑的升级费用。",
+    "checklist": "选择当前与目标等级，再输入持有资源。升级前请确认游戏画面中的资源与前置条件。",
+    "requirementsPath": "升级路径的前置建筑"
+  },
+  "de": {
+    "unified": "Einheitlicher Bedarf",
+    "profileHint": "Ressourcen, Zeit und vorausgesetzte Gebäude je Stufe in einer Tabelle.",
+    "powerCondition": "Prüfe für jede Zielstufe alle vorausgesetzten Gebäude und ihre benötigten Stufen. Die Aufwertungskosten dieser Gebäude sind in dieser Berechnung nicht enthalten.",
+    "checklist": "Wähle deine aktuelle Stufe und die Zielstufe und trage deine vorhandenen Ressourcen ein. Prüfe vor dem Aufwerten die Ressourcen und Voraussetzungen im Spiel.",
+    "requirementsPath": "Voraussetzungen entlang des Aufwertungspfads"
+  },
+  "ru": {
+    "unified": "Единые требования",
+    "profileHint": "Ресурсы, время и необходимые здания для каждого уровня в одной таблице.",
+    "powerCondition": "Проверьте все необходимые здания и их требуемые уровни для каждого целевого уровня. Стоимость улучшения этих зданий в расчёт не включена.",
+    "checklist": "Выберите текущий и целевой уровни и введите имеющиеся ресурсы. Перед улучшением проверьте ресурсы и предварительные условия на экране игры.",
+    "requirementsPath": "Требования по пути улучшения"
+  },
+  "ar": {
+    "unified": "المتطلبات الموحدة",
+    "profileHint": "اعرض الموارد والوقت والمباني المطلوبة لكل مستوى في جدول واحد.",
+    "powerCondition": "تحقق من جميع المباني المطلوبة ومستوياتها لكل مستوى مستهدف. لا يشمل هذا الحساب تكلفة ترقية المباني المطلوبة مسبقًا.",
+    "checklist": "اختر مستواك الحالي والمستوى المستهدف، ثم أدخل مواردك المتاحة. تحقق من الموارد والمتطلبات في شاشة اللعبة قبل الترقية.",
+    "requirementsPath": "المتطلبات على مسار الترقية"
+  },
+  "nl": {
+    "unified": "Gecombineerde vereisten",
+    "profileHint": "Bekijk grondstoffen, tijd en vereiste gebouwen per niveau in één tabel.",
+    "powerCondition": "Controleer voor elk doelniveau alle vereiste gebouwen en hun benodigde niveaus. De kosten om deze gebouwen te upgraden zijn niet in deze berekening opgenomen.",
+    "checklist": "Kies je huidige niveau en doelniveau en vul je beschikbare grondstoffen in. Controleer vóór het upgraden de grondstoffen en vereisten in het spel.",
+    "requirementsPath": "Vereisten langs het upgradepad"
+  },
+  "fr": {
+    "unified": "Prérequis unifiés",
+    "profileHint": "Consultez les ressources, le temps et les bâtiments requis par niveau dans un seul tableau.",
+    "powerCondition": "Vérifiez tous les bâtiments requis et leur niveau nécessaire pour chaque niveau cible. Le coût d’amélioration de ces bâtiments n’est pas inclus dans ce calcul.",
+    "checklist": "Choisissez votre niveau actuel et votre niveau cible, puis saisissez vos ressources disponibles. Vérifiez les ressources et les prérequis dans le jeu avant toute amélioration.",
+    "requirementsPath": "Prérequis du parcours d’amélioration"
+  },
+  "id": {
+    "unified": "Persyaratan terpadu",
+    "profileHint": "Lihat sumber daya, waktu, dan bangunan prasyarat per level dalam satu tabel.",
+    "powerCondition": "Periksa semua bangunan prasyarat beserta level yang diperlukan untuk setiap level tujuan. Biaya peningkatan bangunan prasyarat tidak termasuk dalam perhitungan ini.",
+    "checklist": "Pilih level saat ini dan level tujuan, lalu masukkan sumber daya yang tersedia. Periksa sumber daya dan prasyarat di layar permainan sebelum meningkatkan level.",
+    "requirementsPath": "Prasyarat sepanjang jalur peningkatan"
+  },
+  "it": {
+    "unified": "Requisiti unificati",
+    "profileHint": "Consulta risorse, tempo ed edifici richiesti per livello in un’unica tabella.",
+    "powerCondition": "Controlla tutti gli edifici richiesti e i rispettivi livelli necessari per ogni livello obiettivo. Il costo di potenziamento di questi edifici non è incluso nel calcolo.",
+    "checklist": "Scegli il livello attuale e quello obiettivo, poi inserisci le risorse disponibili. Prima di potenziare, verifica risorse e prerequisiti nella schermata di gioco.",
+    "requirementsPath": "Prerequisiti lungo il percorso di potenziamento"
+  },
+  "pl": {
+    "unified": "Ujednolicone wymagania",
+    "profileHint": "Sprawdź zasoby, czas i wymagane budynki dla każdego poziomu w jednej tabeli.",
+    "powerCondition": "Sprawdź wszystkie wymagane budynki i ich poziomy dla każdego poziomu docelowego. Koszt ulepszania tych budynków nie jest uwzględniony w obliczeniach.",
+    "checklist": "Wybierz obecny i docelowy poziom, a następnie wpisz dostępne zasoby. Przed ulepszeniem sprawdź zasoby i wymagania na ekranie gry.",
+    "requirementsPath": "Wymagania na ścieżce ulepszeń"
+  },
+  "pt": {
+    "unified": "Requisitos unificados",
+    "profileHint": "Consulte os recursos, o tempo e os edifícios necessários por nível em uma única tabela.",
+    "powerCondition": "Confira todos os edifícios necessários e seus níveis exigidos para cada nível desejado. O custo de melhoria desses edifícios não está incluído neste cálculo.",
+    "checklist": "Selecione o nível atual e o desejado e informe os recursos disponíveis. Antes de melhorar, confira os recursos e os pré-requisitos na tela do jogo.",
+    "requirementsPath": "Pré-requisitos no caminho de melhoria"
+  },
+  "es": {
+    "unified": "Requisitos unificados",
+    "profileHint": "Consulta los recursos, el tiempo y los edificios necesarios por nivel en una sola tabla.",
+    "powerCondition": "Comprueba todos los edificios necesarios y sus niveles requeridos para cada nivel objetivo. El coste de mejorar esos edificios no está incluido en este cálculo.",
+    "checklist": "Elige tu nivel actual y el nivel objetivo e introduce tus recursos disponibles. Antes de mejorar, comprueba los recursos y requisitos en la pantalla del juego.",
+    "requirementsPath": "Requisitos de la ruta de mejora"
+  },
+  "sv": {
+    "unified": "Sammanställda krav",
+    "profileHint": "Se resurser, tid och byggnadskrav per nivå i en enda tabell.",
+    "powerCondition": "Kontrollera alla byggnader och deras krävda nivåer för varje målnivå. Kostnaden för att uppgradera dessa byggnader ingår inte i beräkningen.",
+    "checklist": "Välj din nuvarande nivå och målnivå och ange tillgängliga resurser. Kontrollera resurser och förutsättningar i spelet före uppgraderingen.",
+    "requirementsPath": "Krav längs uppgraderingsvägen"
+  },
+  "th": {
+    "unified": "เงื่อนไขรวม",
+    "profileHint": "ดูทรัพยากร เวลา และสิ่งปลูกสร้างที่ต้องมีก่อนของแต่ละระดับในตารางเดียว",
+    "powerCondition": "ตรวจสอบสิ่งปลูกสร้างที่ต้องมีก่อนทั้งหมดและระดับที่กำหนดสำหรับแต่ละระดับเป้าหมาย การคำนวณนี้ไม่รวมค่าอัปเกรดสิ่งปลูกสร้างเหล่านั้น",
+    "checklist": "เลือกระดับปัจจุบันและระดับเป้าหมาย แล้วกรอกทรัพยากรที่มี ก่อนอัปเกรดให้ตรวจสอบทรัพยากรและเงื่อนไขในหน้าจอเกม",
+    "requirementsPath": "เงื่อนไขตามเส้นทางอัปเกรด"
+  },
+  "tr": {
+    "unified": "Birleştirilmiş gereksinimler",
+    "profileHint": "Her seviyenin kaynaklarını, süresini ve ön koşul binalarını tek tabloda görüntüleyin.",
+    "powerCondition": "Her hedef seviye için gereken tüm binaları ve seviyelerini kontrol edin. Bu binaların yükseltme maliyetleri hesaplamaya dahil değildir.",
+    "checklist": "Mevcut ve hedef seviyenizi seçip elinizdeki kaynakları girin. Yükseltmeden önce oyun ekranındaki kaynakları ve ön koşulları kontrol edin.",
+    "requirementsPath": "Yükseltme yolundaki ön koşullar"
+  },
+  "vi": {
+    "unified": "Yêu cầu thống nhất",
+    "profileHint": "Xem tài nguyên, thời gian và công trình tiên quyết của từng cấp trong một bảng.",
+    "powerCondition": "Kiểm tra tất cả công trình tiên quyết và cấp yêu cầu cho từng cấp mục tiêu. Chi phí nâng cấp các công trình đó không được tính trong phép tính này.",
+    "checklist": "Chọn cấp hiện tại và cấp mục tiêu, rồi nhập tài nguyên đang có. Trước khi nâng cấp, hãy kiểm tra tài nguyên và điều kiện tiên quyết trên màn hình trò chơi.",
+    "requirementsPath": "Điều kiện trên lộ trình nâng cấp"
+  },
+  "ms": {
+    "unified": "Keperluan bersepadu",
+    "profileHint": "Lihat sumber, masa dan bangunan prasyarat bagi setiap tahap dalam satu jadual.",
+    "powerCondition": "Semak semua bangunan prasyarat dan tahap yang diperlukan bagi setiap tahap sasaran. Kos menaik taraf bangunan tersebut tidak termasuk dalam pengiraan ini.",
+    "checklist": "Pilih tahap semasa dan tahap sasaran, kemudian masukkan sumber yang tersedia. Semak sumber dan prasyarat pada skrin permainan sebelum menaik taraf.",
+    "requirementsPath": "Prasyarat sepanjang laluan naik taraf"
+  },
+  "nb": {
+    "unified": "Samlede krav",
+    "profileHint": "Se ressurser, tid og nødvendige bygninger per nivå i én tabell.",
+    "powerCondition": "Kontroller alle nødvendige bygninger og nivåkrav for hvert målnivå. Kostnadene for å oppgradere disse bygningene er ikke med i beregningen.",
+    "checklist": "Velg nåværende nivå og målnivå, og oppgi ressursene du har. Kontroller ressurser og forutsetninger på spillskjermen før oppgradering.",
+    "requirementsPath": "Krav langs oppgraderingsveien"
+  }
+}

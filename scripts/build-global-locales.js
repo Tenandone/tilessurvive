@@ -92,6 +92,9 @@ function featurePayloads(document,locale,translate,groups,catalog) {
 }
 function catalogFor(locale) {
   const catalog = L.readJSON(path.join(L.ROOT,'data/i18n/messages',locale+'.json'), { exact:{},templates:[],allowUnchanged:[] });
+  // Power Plant prose has one maintained locale owner alongside its unified data.
+  const powerCopy=require('../data/power-plant-unified-copy.json');
+  if(powerCopy[locale])for(const [key,source] of Object.entries(powerCopy.en))catalog.exact[source]=powerCopy[locale][key];
   const official = {};
   const terms = require('../data/i18n/client-terms.json').terms;
   const ambiguous = new Set();
@@ -133,15 +136,35 @@ function inlineProgram(code, locale, translate, context) {
   }
   return code;
 }
+function unifiedPowerPlantOwner(document, group) {
+  const route=group.id || group.routes?.en?.replace(/^\/en\//,'');
+  if(route!=='buildings/power-plant/')return null;
+  const host=document.querySelector('[data-building-system="power-plant"]');
+  const script=host?.querySelector('[data-building-system-model]');
+  if(!script)return null;
+  const cfg=JSON.parse(script.textContent);
+  if(cfg.slug!=='power-plant'||cfg.buildings?.length!==1||cfg.buildings[0].id!==800005||cfg.buildings[0].profiles?.length!==1||cfg.buildings[0].profiles[0].id!=='unified')return null;
+  // These captions, examples and totals are renderer-owned combinations of the
+  // translated model labels. Recompose them instead of cataloguing each numeric
+  // combination. Refuse unexpected authored content rather than dropping it.
+  const renderer=require('./build-building-system').sheetFromConfig;
+  const before=host.cloneNode(true),anchors=[...before.querySelectorAll('[data-bs-legacy-anchor]')];
+  for(const anchor of anchors)anchor.remove();
+  const expected=parseHTML(renderer(cfg)).document.querySelector('[data-building-system]');
+  if(before.outerHTML!==expected.outerHTML)throw Error('Unexpected content in unified Power Plant renderer owner: '+group.file);
+  return {host,script,renderer,anchors};
+}
 function localizePage(source, locale, group, groups, translator) {
   const {document}=parseHTML(source), info=L.byCode.get(locale), t=contextualTranslator(locale,group,translator);
+  const powerOwner=unifiedPowerPlantOwner(document,group);
   document.documentElement.setAttribute('lang',info.htmlLang);
   document.documentElement.setAttribute('data-lang',locale);
   document.documentElement.setAttribute('dir',info.dir);
   const walker=document.createTreeWalker(document,4); const nodes=[]; let node;
-  while((node=walker.nextNode())) if(!node.parentElement?.closest('script,style,template,.ts3-language nav,.language-switcher')) nodes.push(node);
+  while((node=walker.nextNode())) if(!node.parentElement?.closest('script,style,template,.ts3-language nav,.language-switcher') && !powerOwner?.host.contains(node)) nodes.push(node);
   for (const n of nodes) n.data=t(n.data,group.file+':text:'+n.parentElement?.tagName);
   for (const el of document.querySelectorAll('*')) {
+    if(powerOwner?.host.contains(el))continue;
     if(el.getAttribute('data-lang')==='en')el.setAttribute('data-lang',locale);
     for (const attr of attrs) if(el.hasAttribute(attr))el.setAttribute(attr,t(el.getAttribute(attr),group.file+':'+attr));
     for (const attr of ['href','action','data-search-url']) if(el.hasAttribute(attr) && !el.matches('link[rel="alternate"],a[hreflang],.ts3-language a[lang]'))el.setAttribute(attr,L.routeURL(el.getAttribute(attr),locale,groups));
@@ -165,6 +188,13 @@ function localizePage(source, locale, group, groups, translator) {
     }
     if(script.id==='research-phase3-data')for(const row of translated.groups||[])row.search=(row.search+' '+row.name).normalize('NFKC').toLocaleLowerCase();
     script.textContent=JSON.stringify(translated).replace(/</g,'\\u003c');
+  }
+  if(powerOwner) {
+    const cfg=JSON.parse(powerOwner.script.textContent);
+    cfg.copy.sample=cfg.locale.labels.levelPrefix+'2';
+    const replacement=parseHTML(powerOwner.renderer(cfg)).document.querySelector('[data-building-system]');
+    for(const anchor of [...powerOwner.anchors].reverse())if(!replacement.querySelector('[id="'+anchor.id+'"]'))replacement.prepend(anchor);
+    powerOwner.host.replaceWith(replacement);
   }
   for(const script of document.querySelectorAll('script:not([src])')) if(!script.type?.includes('json'))script.textContent=inlineProgram(script.textContent,locale,t,group.file);
   const canonical=document.querySelector('link[rel="canonical"]');
