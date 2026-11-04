@@ -78,7 +78,7 @@ test('name sorting is stable within groups and reset restores the original order
 test('comparison caps at three forms, uses text metadata and detail links, and permits explicit removal or clear',()=>{
   const a=setup();a.select('alpha');a.select('bravo');a.select('charlie');const fourth=a.select('delta');assert.equal(fourth.checked,false);
   assert(a.host.querySelector('[data-atlas-selected]').textContent.includes(copy.compareLimit));
-  const table=a.host.querySelector('.hero-atlas-comparison-table');assert.equal(table.querySelectorAll('thead a').length,3);assert.equal(table.querySelectorAll('tbody tr').length,5);assert.equal(table.querySelectorAll('img,input,.hero-atlas-card').length,0);
+  const table=a.host.querySelector('.hero-atlas-comparison-table');assert.equal(table.querySelectorAll('thead a').length,3);assert.equal(table.querySelectorAll('tbody tr').length,4);assert.equal(table.querySelectorAll('img,input,.hero-atlas-card').length,0);
   assert.deepEqual([...table.querySelectorAll('thead a')].map(n=>n.getAttribute('href')),['/en/heroes/alpha/#base','/en/heroes/bravo/#base','/en/heroes/charlie/#base']);
   a.event(table.querySelector('[data-atlas-remove="bravo"]'),'click');assert.equal(a.byId('bravo').querySelector('[data-atlas-compare]').checked,false);assert.equal(a.host.querySelectorAll('thead a').length,2);
   a.select('delta');assert.equal(a.host.querySelectorAll('thead a').length,3);a.event(a.host.querySelector('[data-atlas-clear-compare]'),'click');assert(a.host.querySelector('[data-atlas-comparison]').hidden);assert([...a.host.querySelectorAll('[data-atlas-compare]')].every(n=>!n.checked));

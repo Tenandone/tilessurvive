@@ -1,0 +1,292 @@
+{
+  "schemaVersion": 1,
+  "reviewedOn": "2026-11-05",
+  "purpose": "Presentation mapping of existing portraits and byte-identical retained Lava skill icons; no computed gameplay values.",
+  "heroes": {
+    "lucky": {
+      "portrait": {
+        "src": "/img/game-41/heroes/lucky.webp",
+        "width": 388,
+        "height": 712
+      }
+    },
+    "tony": {
+      "portrait": {
+        "src": "/img/game-41/heroes/tony.webp",
+        "width": 388,
+        "height": 712
+      }
+    },
+    "maddy": {
+      "portrait": {
+        "src": "/img/game-41/heroes/maddy.webp",
+        "width": 388,
+        "height": 712
+      }
+    },
+    "rosie": {
+      "portrait": {
+        "src": "/img/game-41/heroes/rosie.webp",
+        "width": 596,
+        "height": 712
+      }
+    },
+    "nikola": {
+      "portrait": {
+        "src": "/img/game-41/heroes/nikola.webp",
+        "width": 596,
+        "height": 712
+      }
+    },
+    "ray": {
+      "portrait": {
+        "src": "/img/game-41/heroes/ray.webp",
+        "width": 596,
+        "height": 712
+      }
+    },
+    "beka": {
+      "portrait": {
+        "src": "/img/game-41/heroes/beka.webp",
+        "width": 388,
+        "height": 712
+      }
+    },
+    "laila": {
+      "portrait": {
+        "src": "/img/game-41/heroes/laila.webp",
+        "width": 596,
+        "height": 712
+      }
+    },
+    "candy": {
+      "portrait": {
+        "src": "/img/game-41/heroes/candy.webp",
+        "width": 388,
+        "height": 712
+      }
+    },
+    "sarge": {
+      "portrait": {
+        "src": "/img/game-41/heroes/sarge.webp",
+        "width": 388,
+        "height": 712
+      }
+    },
+    "mike": {
+      "portrait": {
+        "src": "/img/game-41/heroes/mike.webp",
+        "width": 596,
+        "height": 712
+      }
+    },
+    "chef-ken": {
+      "portrait": {
+        "src": "/img/game-41/heroes/chef-ken.webp",
+        "width": 596,
+        "height": 712
+      }
+    },
+    "freya": {
+      "portrait": {
+        "src": "/img/game-41/heroes/freya.webp",
+        "width": 596,
+        "height": 712
+      }
+    },
+    "travis": {
+      "portrait": {
+        "src": "/img/game-41/heroes/travis.webp",
+        "width": 388,
+        "height": 712
+      }
+    },
+    "eva": {
+      "portrait": {
+        "src": "/img/game-41/heroes/eva.webp",
+        "width": 388,
+        "height": 712
+      }
+    },
+    "rusty": {
+      "portrait": {
+        "src": "/img/game-41/heroes/rusty.webp",
+        "width": 596,
+        "height": 712
+      }
+    },
+    "ghost": {
+      "portrait": {
+        "src": "/img/game-41/heroes/ghost.webp",
+        "width": 596,
+        "height": 712
+      }
+    },
+    "light": {
+      "portrait": {
+        "src": "/img/game-41/heroes/light.webp",
+        "width": 644,
+        "height": 712
+      }
+    },
+    "kiki": {
+      "portrait": {
+        "src": "/img/game-41/heroes/kiki.webp",
+        "width": 488,
+        "height": 712
+      }
+    },
+    "tara": {
+      "portrait": {
+        "src": "/img/game-41/heroes/tara.webp",
+        "width": 560,
+        "height": 712
+      }
+    },
+    "jacob": {
+      "portrait": {
+        "src": "/img/game-41/heroes/jacob.webp",
+        "width": 452,
+        "height": 712
+      }
+    },
+    "tarzan": {
+      "portrait": {
+        "src": "/img/game-41/heroes/tarzan.webp",
+        "width": 520,
+        "height": 712
+      }
+    },
+    "kiron": {
+      "portrait": {
+        "src": "/img/game-41/heroes/kiron.webp",
+        "width": 752,
+        "height": 712
+      }
+    },
+    "shark": {
+      "portrait": {
+        "src": "/img/game-41/heroes/shark.webp",
+        "width": 640,
+        "height": 712
+      }
+    },
+    "lagnar": {
+      "portrait": {
+        "src": "/img/game-40/heroes/lagnar.webp",
+        "width": 596,
+        "height": 712
+      }
+    },
+    "knotty": {
+      "portrait": {
+        "src": "/img/game-41/heroes/knotty.webp",
+        "width": 596,
+        "height": 712
+      }
+    },
+    "undine": {
+      "portrait": {
+        "src": "/img/game-40/heroes/undine.webp",
+        "width": 652,
+        "height": 712
+      }
+    },
+    "dave": {
+      "portrait": {
+        "src": "/img/game-40/heroes/dave.webp",
+        "width": 682,
+        "height": 712
+      }
+    },
+    "lava": {
+      "portrait": {
+        "src": "/img/game-41/heroes/lava.png",
+        "width": 840,
+        "height": 712
+      }
+    }
+  },
+  "pets": {
+    "snowball": {
+      "portrait": {
+        "src": "/img/game-40/pets/snowball.webp"
+      }
+    },
+    "dodo": {
+      "portrait": {
+        "src": "/img/game-40/pets/dodo.webp"
+      }
+    },
+    "buckler": {
+      "portrait": {
+        "src": "/img/game-40/pets/buckler.webp"
+      }
+    },
+    "fluffy": {
+      "portrait": {
+        "src": "/img/game-40/pets/fluffy.webp"
+      }
+    },
+    "hardhead": {
+      "portrait": {
+        "src": "/img/game-40/pets/hardhead.webp"
+      }
+    },
+    "shadow": {
+      "portrait": {
+        "src": "/img/game-40/pets/shadow.webp"
+      }
+    },
+    "snowy": {
+      "portrait": {
+        "src": "/img/content-60/pets/snowy.png"
+      }
+    },
+    "starhorn": {
+      "portrait": {
+        "src": "/img/game-40/pets/starhorn.webp"
+      }
+    },
+    "chompy": {
+      "portrait": {
+        "src": "/img/content-60/pets/chompy.png"
+      }
+    },
+    "hopper": {
+      "portrait": {
+        "src": "/img/content-60/pets/hopper.png"
+      }
+    }
+  },
+  "lavaSkills": {
+    "25401384": {
+      "icon": {
+        "src": "/img/game-41/hero-skills/lava-1.png",
+        "width": 128,
+        "height": 128
+      }
+    },
+    "25401385": {
+      "icon": {
+        "src": "/img/game-41/hero-skills/lava-2.png",
+        "width": 128,
+        "height": 128
+      }
+    },
+    "25401386": {
+      "icon": {
+        "src": "/img/game-41/hero-skills/lava-3.png",
+        "width": 128,
+        "height": 128
+      }
+    },
+    "25401387": {
+      "icon": {
+        "src": "/img/game-41/hero-skills/lava-4.png",
+        "width": 128,
+        "height": 128
+      }
+    }
+  }
+}

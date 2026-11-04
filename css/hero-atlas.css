@@ -72,3 +72,89 @@ main:has([data-hero-atlas]){transform:none!important;animation:none!important}
 @media(max-width:700px){[data-hero-atlas-owned="profile"],[data-hero-atlas-owned="lava"] .hero-atlas-profile{padding:15px}[data-hero-atlas-owned="profile"] .hero-atlas-facts,[data-hero-atlas-owned="lava"] .hero-atlas-facts{grid-template-columns:repeat(2,minmax(0,1fr))}[data-hero-atlas] .hero-atlas-no-image{height:155px}}
 
 .hero-atlas-portrait{display:block;width:min(100%,420px);height:auto;margin:1rem auto;object-fit:contain}
+
+/* Shared hero guide: all retained detail templates and new heroes. */
+html.ts-platform.ts3-characters main:has(.hero-guide){--guide-ink:#193c30;--guide-accent:#276b50;--guide-border:#d7e5dc;--guide-soft:#f1f6f2}
+.hero-guide.hero-atlas-profile{border:0;background:transparent;padding:0;margin-block:28px;color:var(--guide-ink);box-shadow:none}
+.hero-guide-overview,.hero-guide-growth{padding:28px;border:1px solid var(--guide-border);border-radius:22px;background:#fff;box-shadow:0 8px 30px #1c452a08}
+.hero-guide h2,.hero-guide-growth h2,.hero-guide-skill-section>h2{margin:0 0 20px;font-size:clamp(24px,3vw,30px);letter-spacing:-.025em;line-height:1.35}
+.hero-guide-eyebrow{display:inline-block;margin:0 0 8px;color:#4c755c;font-size:12px;font-weight:750;letter-spacing:.08em;text-decoration:none}
+.hero-guide .hero-atlas-facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:0 0 20px}
+.hero-guide .hero-atlas-facts>div{padding:16px;border:0;border-radius:12px;background:var(--guide-soft)}
+.hero-guide .hero-atlas-facts dt{font-size:12px;color:#617768}
+.hero-guide .hero-atlas-facts dd{font-size:17px;margin-top:6px;color:var(--guide-ink)}
+.hero-guide-links{display:flex;gap:10px;flex-wrap:wrap;margin-top:20px}
+.hero-guide-links a,.hero-guide-jumps a{display:inline-flex;align-items:center;gap:16px;min-height:44px;padding:10px 15px;border:1px solid var(--guide-border);border-radius:10px;color:#20543e;background:#fff;text-decoration:none;font-size:14px;font-weight:650;line-height:1.5;box-sizing:border-box}
+.hero-guide-links a:hover,.hero-guide-jumps a:hover{background:#e9f3ec;border-color:#7fa68d}
+.hero-guide-links a:focus-visible,.hero-guide-jumps a:focus-visible{outline:3px solid #ad8641;outline-offset:3px}
+.hero-guide .hero-guide-forms{margin-block:24px}
+.hero-guide .hero-atlas-form{background:#f8faf6;border-color:#d6e2d7}
+.hero-guide .hero-guide-promotion{padding:14px 18px;border-inline-start:4px solid #b59849;border-radius:8px;background:#faf7ed;font-weight:650}
+.hero-guide-note{color:#637468;font-size:14px;line-height:1.7}
+.hero-guide-hero{display:grid;grid-template-columns:minmax(230px,.9fr) minmax(0,1.1fr);gap:40px;align-items:center;padding:36px;margin-block:24px 36px;border-radius:28px;border:1px solid #d0dfd4;background:radial-gradient(ellipse at 15% 40%,#e2ebd9,transparent 60%),linear-gradient(135deg,#f1f5ed,#fff 75%);overflow:hidden}
+.hero-guide-art{display:grid;place-items:center;min-width:0;position:relative}
+.hero-guide-art:before{content:"";position:absolute;inset:14%;border-radius:50%;border:1px solid #9eaf8c55;background:#e9edda77}
+.hero-guide-art .hero-atlas-portrait{position:relative;width:100%;max-width:460px;max-height:440px;object-fit:contain;margin:0;filter:drop-shadow(0 12px 18px #2b3e2820)}
+.hero-guide-heading h1{font-size:clamp(38px,5vw,62px)!important;line-height:1.1;margin:8px 0 16px!important;letter-spacing:-.04em;color:#193d2e}
+.hero-guide-heading>p{font-size:16px;line-height:1.9;color:#4c6554;margin-block:20px}
+.hero-guide-heading .hero-atlas-tags{display:flex;flex-wrap:wrap;gap:8px}
+.hero-guide-heading .hero-atlas-tags span{padding:5px 12px;background:#e3eddd;border:1px solid #cadcc9;border-radius:7px;font-weight:700;font-size:13px}
+.hero-guide-jumps{display:flex;gap:8px;flex-wrap:wrap}
+.hero-guide-jumps a:first-child{background:#285c43;color:#fff;border-color:#285c43}
+.hero-guide-skill-section{margin-block:32px}
+.hero-guide-skill-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.hero-guide-skill{position:relative;padding:25px;border:1px solid #d4e2d8;border-radius:18px;background:#fff;overflow:hidden}
+.hero-guide-skill-number{display:inline-block;font-size:12px;font-weight:750;letter-spacing:.1em;color:#7f9279;margin-bottom:12px}
+.hero-guide-skill h3{margin:0 0 12px;font-size:20px;color:#214c37;line-height:1.45}
+.hero-guide-skill p{margin:0;color:#53695b;font-size:15px;line-height:1.85}
+.hero-guide-growth{margin-block:30px;line-height:1.85}
+.hero-guide-growth a{color:#235e42;font-weight:700;text-underline-offset:4px}
+/* Existing skill effects, tables and anchors retain their original markup. */
+html.ts-platform.ts3-characters main:has(.hero-guide) .ts3-character-stage{border-radius:26px;border-color:#d4e3d7;background:linear-gradient(130deg,#edf4e9,#fff 80%);box-shadow:0 12px 34px #20472d08;padding:30px}
+html.ts-platform.ts3-characters main:has(.hero-guide) .ts3-character-art{background:radial-gradient(ellipse,#e3ecd9,transparent 70%);border-radius:20px}
+html.ts-platform.ts3-characters main:has(.hero-guide) .ts3-character-art img{max-height:440px;object-fit:contain;filter:drop-shadow(0 10px 14px #1e3b2320)}
+html.ts-platform.ts3-characters main:has(.hero-guide) .ts3-character-copy h1{font-size:clamp(34px,4vw,52px);letter-spacing:-.035em}
+html.ts-platform.ts3-characters main:has(.hero-guide) .ts3-character-section{padding:26px;border:1px solid #d9e5dc;border-radius:20px;background:#fff;margin-block:26px}
+html.ts-platform.ts3-characters main:has(.hero-guide) details.ts-skill{margin-block:12px;border:1px solid #d6e4d9;border-radius:15px;overflow:hidden;background:#f9fbf7}
+html.ts-platform.ts3-characters main:has(.hero-guide) details.ts-skill>summary{display:flex;align-items:center;gap:16px;min-height:72px;padding:16px 20px;cursor:pointer;line-height:1.5;font-weight:700;color:#214932}
+html.ts-platform.ts3-characters main:has(.hero-guide) details.ts-skill>summary:after{content:"+";margin-inline-start:auto;font-size:22px;font-weight:400;color:#52785d}
+html.ts-platform.ts3-characters main:has(.hero-guide) details.ts-skill[open]>summary:after{content:"−"}
+html.ts-platform.ts3-characters main:has(.hero-guide) details.ts-skill>summary img{width:60px;height:60px;object-fit:contain;border-radius:12px;background:#e9efe4;flex-shrink:0}
+html.ts-platform.ts3-characters main:has(.hero-guide) .ts-skill-body{padding:6px 22px 22px;line-height:1.9;font-size:15px;color:#425d4b}
+html.ts-platform.ts3-characters main:has(.hero-guide) .ts-source-details,html.ts-platform.ts3-characters main:has(.hero-guide) .hero-atlas-sources{display:none!important}
+html.ts-platform.ts3-characters main:has(.hero-guide) [id]{scroll-margin-block-start:100px}
+html.ts-platform.ts3-characters main:has(.hero-guide) .ts3-roster-neighbors{border-radius:18px;padding:22px;background:#f1f6f0;border:1px solid #d9e5d9}
+@media(max-width:700px){
+ .hero-guide-hero{grid-template-columns:1fr;gap:16px;padding:22px;margin-block:16px 24px;border-radius:20px}
+ .hero-guide-art .hero-atlas-portrait{max-height:300px;width:min(100%,350px)}
+ .hero-guide-heading h1{font-size:38px!important}
+ .hero-guide-heading>p{font-size:15px;margin-block:16px}
+ .hero-guide-overview,.hero-guide-growth{padding:20px;border-radius:18px}
+ .hero-guide .hero-atlas-facts{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+ .hero-guide .hero-atlas-facts>div{padding:13px}
+ .hero-guide-links{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+ .hero-guide-links a{justify-content:space-between;gap:6px;font-size:13px;padding:10px;overflow-wrap:anywhere}
+ .hero-guide-skill-grid{grid-template-columns:1fr;gap:12px}
+ .hero-guide-skill{padding:20px}
+ html.ts-platform.ts3-characters main:has(.hero-guide) .ts3-character-stage,html.ts-platform.ts3-characters main:has(.hero-guide) .ts3-character-section{padding:18px;border-radius:18px}
+ html.ts-platform.ts3-characters main:has(.hero-guide) details.ts-skill>summary{padding:14px;gap:12px}
+ html.ts-platform.ts3-characters main:has(.hero-guide) details.ts-skill>summary img{width:52px;height:52px}
+ html.ts-platform.ts3-characters main:has(.hero-guide) .ts-skill-body{padding:4px 16px 18px}
+}
+.hero-guide-skill-icon{float:inline-end;width:68px;height:68px;object-fit:contain;margin:0 0 12px 16px;border-radius:14px;background:#eef3e8}.hero-guide-skill p{clear:both}
+
+html.ts-platform.ts3-characters main:has(.hero-guide) .ts3-character-stage{color:#193c30;border:1px solid #d4e3d7}
+html.ts-platform.ts3-characters main:has(.hero-guide) .ts3-character-stage .hero-grid,html.ts-platform.ts3-characters main:has(.hero-guide) .ts3-character-stage.ts-character-intro{grid-template-columns:minmax(220px,.8fr) minmax(0,1.2fr);gap:32px;align-items:center}
+html.ts-platform.ts3-characters main:has(.hero-guide) .ts3-character-stage .ts3-character-copy{display:block;order:1;min-width:0}
+html.ts-platform.ts3-characters main:has(.hero-guide) .ts3-character-stage .ts3-character-art{order:0;justify-self:center;max-width:350px;width:100%;box-shadow:none;border:0;background:radial-gradient(ellipse,#e3ecd9,transparent 70%);grid-column:auto;grid-row:auto}
+html.ts-platform.ts3-characters main:has(.hero-guide) .ts3-character-stage :is(.summary-card,.ts3-character-kicker){color:#36583e;border-color:#d3e0d1}
+html.ts-platform.ts3-characters main:has(.hero-guide) .ts3-character-stage :is(.rarity-badge,.role-badge,.eyebrow){background:#e4eedf;color:#31543a;border-color:#c8dbc7}
+html.ts-platform.ts3-characters main:has(.hero-guide) .ts3-character-actions a{color:#245137;border-color:#bdd2be;background:#f7faf5}
+@media(max-width:700px){
+ html.ts-platform.ts3-characters main:has(.hero-guide) .ts3-character-stage .hero-grid,html.ts-platform.ts3-characters main:has(.hero-guide) .ts3-character-stage.ts-character-intro{grid-template-columns:minmax(0,1fr);gap:20px}
+ html.ts-platform.ts3-characters main:has(.hero-guide) .ts3-character-stage .ts3-character-art{width:100%;max-width:250px;grid-column:1;grid-row:auto}
+ html.ts-platform.ts3-characters main:has(.hero-guide) .ts3-character-stage .ts3-character-art img{max-height:280px}
+ html.ts-platform.ts3-characters main:has(.hero-guide) .ts3-character-stage .ts3-character-copy{grid-column:1}
+ html.ts-platform.ts3-characters main:has(.hero-guide) .ts3-character-stage .ts3-character-copy>*{margin-block:12px}
+ html.ts-platform.ts3-characters main:has(.hero-guide) .ts3-character-stage .ts3-character-copy .ts3-character-identity{margin-top:0}
+}

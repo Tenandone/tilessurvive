@@ -1,8 +1,10 @@
 (function(root,factory){'use strict';if(typeof module==='object'&&module.exports)module.exports=factory(require('./v4-formation-math'));else root.TS_V4_FORMATION_UI=factory(root.TS_V4_FORMATION_MATH);})(typeof globalThis!=='undefined'?globalThis:this,function(math){
  'use strict';let serial=0;
+ function petImageSrc(id){if(['snowy','hopper','chompy'].includes(id))return '/img/content-60/pets/'+id+'.png';if(['snowball','dodo','buckler','fluffy','hardhead','shadow','starhorn'].includes(id))return '/img/pets/'+id+'.webp';return null;}
  function mount(ctx){
-  const {host,model,copy,locale}=ctx,doc=host.ownerDocument,u=copy.ui,prefix='v4-formation-'+(++serial)+'-',nf=new Intl.NumberFormat(ctx.numberLocale||locale),pf=new Intl.NumberFormat(ctx.numberLocale||locale,{style:'percent',maximumFractionDigits:2});let state=math.emptyInput(model);
+  const {host,model,copy,locale}=ctx,doc=host.ownerDocument,u={...copy.ui,...(copy.guide?{intro:copy.guide.ui.formationIntro,heroSkills:copy.guide.ui.heroSkills,unknown:copy.guide.ui.notSet,yes:copy.guide.ui.skillYes,no:copy.guide.ui.skillNo}:{})},prefix='v4-formation-'+(++serial)+'-',nf=new Intl.NumberFormat(ctx.numberLocale||locale),pf=new Intl.NumberFormat(ctx.numberLocale||locale,{style:'percent',maximumFractionDigits:2});let state=math.emptyInput(model);
   const name=x=>(x.names[locale]||x.names.en).value;
+  const guide=copy.guide||{ui:{petsTitle:u.candidates,details:u.conditions,conditions:u.conditions,skills:u.evidence,petDetails:u.petDetails,heroDetails:u.heroDetails,noPets:u.noCandidates,unlockStage:u.trainingStage,alternatives:u.alternatives},reasons:copy.reasons,conditions:copy.conditions};
   function el(tag,text,cls){const n=doc.createElement(tag);if(text!==undefined)n.textContent=String(text);if(cls)n.className=cls;return n;}
   function append(parent,...nodes){for(const n of nodes)parent.appendChild(n);return parent;}
   function option(select,value,label){const n=el('option',label);n.value=value;select.appendChild(n);return n;}
@@ -12,7 +14,7 @@
   function list(parent,items,cls){if(!items.length)return;const ul=el('ul',undefined,cls);for(const text of items)ul.appendChild(el('li',text));parent.appendChild(ul);}
   function section(parent,title,cls){const s=el('section',undefined,cls||'v4-card');s.appendChild(el('h3',title));parent.appendChild(s);return s;}
   function link(parent,label,href){if(typeof href!=='string'||!href.startsWith('/'+locale+'/')||href.startsWith('//'))throw new Error('Invalid localized related link');const a=el('a',label,'v4-related-link');a.setAttribute('href',href);parent.appendChild(a);}
-  function msg(code){if(!copy.messages[code])throw new Error('Missing formation message');return copy.messages[code];}
+  function msg(code){if(code==='skill-learned-unverified'&&guide.ui.skillInputTip)return guide.ui.skillInputTip;if(!copy.messages[code])throw new Error('Missing formation message');return copy.messages[code];}
   function changed(){render();if(typeof ctx.onChange==='function')ctx.onChange();}
   host.replaceChildren();host.classList.add('v4-formation');append(host,el('h2',u.title),el('p',u.intro,'v4-intro'));
   const form=el('div',undefined,'v4-form-grid'),heroSelects=[];host.appendChild(form);
@@ -37,7 +39,7 @@
    setValue(heroSkill,state.heroSkillsUnlocked===null?'':String(state.heroSkillsUnlocked));age.value=state.serverAgeDays===null?'':String(state.serverAgeDays);
    result.replaceChildren();const a=math.analyze(state,model),status=el('p',a.valid?(a.complete?u.complete:u.partial):u.blocked,'v4-status');status.setAttribute('role','status');result.appendChild(status);
    if(!a.valid){list(result,a.errors.map(e=>msg(e.code)),'v4-warning');return;}
-   const warnings=section(result,u.cautions);list(warnings,a.warnings.filter(k=>k!=='official-name-fallback'||['ar','vi','nb'].includes(locale)).map(msg));
+   const visibleConditions=a.warnings.filter(k=>['skill-learned-unverified','incomplete-formation'].includes(k));if(visibleConditions.length){const notes=el('div',undefined,'v4-note');list(notes,visibleConditions.map(msg));result.appendChild(notes);}
    if(!a.heroCount)result.appendChild(el('p',u.empty));
    const faction=section(result,u.results,'v4-card v4-faction-results');list(faction,[[u.health,a.faction.healthBasisPoints],[u.attack,a.faction.attackBasisPoints],[u.counter,a.faction.counterBasisPoints]].map(([label,n])=>label+': '+pf.format(n/10000)));
    for(const [key,label]of [['health',u.health],['counter',u.counter]]){const g=a.gates[key];faction.appendChild(el('p',label+' · '+u.gate+': '+nf.format(g.requiredDays)+' '+u.days+' · '+({unknown:u.thresholdUnknown,met:u.thresholdMet,below:u.thresholdBelow}[g.state])));}
@@ -46,8 +48,9 @@
     for(const s of a.petSkills){const block=el('article',undefined,'v4-skill');append(block,el('h4',name(s)),el('p',u.trainingStage+': '+nf.format(s.unlockStage)+' · '+({unowned:u.unowned,unknown:u.unknown,'configured-unlocked':u.unlocked,locked:u.locked}[s.state])),el('p',u.target+': '+copy.targets[s.target]));if(s.configuredMaxLevel!==null)block.appendChild(el('p',u.skillLevel+': '+nf.format(s.configuredMaxLevel)));sec.appendChild(block);}
     list(sec,[u.baseHatch+': '+[...new Set(pet.hatchOptions.map(x=>x.baseSeconds))].map(n=>nf.format(n)+' '+u.seconds).join(' / '),u.duplicateMarks+': '+pet.duplicateMarks.map(c=>name(model.items.find(x=>x.clientId===c.itemId))+' × '+nf.format(c.quantity)).join(', ')]);link(sec,u.petDetails,'/'+locale+'/database/pet-system/'+pet.id+'/');
    }
-   const cs=section(result,u.candidates);if(!a.candidates.length)cs.appendChild(el('p',u.noCandidates));
-   for(const selected of [true,false]){const candidates=a.candidates.filter(c=>c.selectedPet===selected);if(!candidates.length)continue;cs.appendChild(el('h4',selected?u.selectedPet:u.alternatives));for(const c of candidates){const h=model.heroes.find(h=>h.id===c.heroId),p=model.pets.find(p=>p.id===c.petId),card=el('details',undefined,'v4-candidate');card.setAttribute('data-v4-candidate',c.heroId+'|'+c.petId);append(card,el('summary',name(h)+' + '+name(p)+' · '+(c.grounds.some(g=>g.readiness==='conditional')?u.conditional:u.blocked)));for(const g of c.grounds){const part=el('section',undefined,'v4-ground');part.appendChild(el('p',copy.reasons[g.reasonKey]));list(part,g.blockers.map(msg),'v4-warning');append(part,el('h5',u.conditions));list(part,g.conditionKeys.map(k=>copy.conditions[k]));append(part,el('h5',u.evidence));list(part,[...g.heroSkillIds.map(id=>name(h.skills.find(s=>s.clientId===id))),...g.petSkillIds.map(id=>name(p.skills.find(s=>s.clientId===id)))]);list(part,g.cautionKeys.map(k=>copy.cautions[k]));card.appendChild(part);}link(card,u.heroDetails,h.routes[locale]);link(card,u.petDetails,'/'+locale+'/database/pet-system/'+p.id+'/');cs.appendChild(card);}}
+   const cs=section(result,guide.ui.petsTitle,'v4-card v4-pet-recommendations');if(!a.candidates.length)cs.appendChild(el('p',guide.ui.noPets));
+   for(const selected of [true,false]){const candidates=a.candidates.filter(c=>c.selectedPet===selected);if(!candidates.length)continue;cs.appendChild(el('h4',selected?u.selectedPet:guide.ui.alternatives));const grid=el('div',undefined,'hp-grid');cs.appendChild(grid);for(const c of candidates){const h=model.heroes.find(h=>h.id===c.heroId),p=model.pets.find(p=>p.id===c.petId),card=el('article',undefined,'v4-candidate hp-card');card.setAttribute('data-v4-candidate',c.heroId+'|'+c.petId);const head=el('a',undefined,'hp-card-head');head.setAttribute('href','/'+locale+'/database/pet-system/'+p.id+'/');const src=petImageSrc(p.id),img=el(src?'img':'span',src?undefined:Array.from(name(p).trim()).slice(0,2).join(''),src?'hp-portrait':'hp-portrait hp-image-fallback');if(src){img.setAttribute('src',src);img.setAttribute('alt',name(p));img.setAttribute('width','96');img.setAttribute('height','96');img.setAttribute('loading','lazy');img.setAttribute('decoding','async');}else{img.setAttribute('role','img');img.setAttribute('aria-label',name(p));}const title=el('div');append(title,el('h4',name(p)),el('span',name(h),'v4-note'));append(head,img,title);card.appendChild(head);
+    for(const g of c.grounds){const part=el('section',undefined,'v4-ground hp-ground');part.appendChild(el('p',guide.reasons[g.reasonKey],'hp-reason'));const stage=Math.max(...g.petSkillIds.map(id=>p.skills.find(s=>s.clientId===id).unlockStage)),row=g.requiredRow?guide.conditions[g.requiredRow==='front'?'hero-in-front':'hero-in-back']+' · ':'';part.appendChild(el('p',row+guide.ui.unlockStage+' '+nf.format(stage),'hp-use'));list(part,g.blockers.map(msg),'v4-warning');const details=el('details',undefined,'hp-rule-details');append(details,el('summary',guide.ui.details),el('h5',guide.ui.conditions));list(details,g.conditionKeys.map(k=>guide.conditions[k]).concat(g.cautionKeys.includes('healing-crosses-threshold')?[copy.cautions['healing-crosses-threshold']]:[]));append(details,el('h5',guide.ui.skills));list(details,[...g.heroSkillIds.map(id=>name(h.skills.find(s=>s.clientId===id))),...g.petSkillIds.map(id=>name(p.skills.find(s=>s.clientId===id)))]);part.appendChild(details);card.appendChild(part);}const links=el('nav',undefined,'hp-related');link(links,guide.ui.heroDetails,h.routes[locale]);link(links,guide.ui.petDetails,'/'+locale+'/database/pet-system/'+p.id+'/');card.appendChild(links);grid.appendChild(card);}}
    renderGrowth();
   }
   function read(){return JSON.parse(JSON.stringify(state));}
@@ -55,5 +58,5 @@
   function reset(){state=math.emptyInput(model);for(const k of Object.keys(growthControls))growthControls[k].value=String(state.petGrowth[k]);render();}
   render();return {read,restore,reset,render};
  }
- return {mount};
+ return {mount,petImageSrc};
 });

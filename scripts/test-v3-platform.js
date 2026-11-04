@@ -107,8 +107,8 @@ function verifyManifest(d,locale,route,file){
   if(atlas){assert(d.querySelector('[data-hero-atlas-owned]'),file+' reviewed atlas owner');assert.equal(atlasCSS[0].getAttribute('href'),'/css/hero-atlas.css?v='+sha(fs.readFileSync(path.join(ROOT,'css/hero-atlas.css'))).slice(0,12));}
   if(hub){assert.equal(atlasJS[0].getAttribute('src'),'/js/hero-atlas.js?v='+sha(fs.readFileSync(path.join(ROOT,'js/hero-atlas.js'))).slice(0,12));assert(atlasJS[0].hasAttribute('defer'));assert.equal(d.querySelectorAll('.hero-atlas-card').length,35);assert.equal(d.querySelectorAll('.hero-atlas-card[data-publication="published"]').length,29);assert.equal(d.querySelectorAll('.hero-atlas-card[data-publication="held"]').length,6);}
   const petPage=petRoutes.has(route),petCSS=[...d.querySelectorAll('link[rel="stylesheet"]')].filter(n=>n.getAttribute('href').split('?')[0]==='/css/hero-pet.css');
-  assert.equal(petCSS.length,+(atlas||petPage),file+' hero/pet stylesheet only on reviewed routes');
-  if(atlas||petPage){assert.equal(petCSS[0].getAttribute('href'),HeroPet.asset().match(/href="([^"]+)"/)[1],file+' current hero/pet stylesheet');assert(petCSS[0].hasAttribute(atlas?'data-hero-atlas-owned':'data-hero-pet-owned'));}
+  assert.equal(petCSS.length,+(atlas||petPage||rel==='tools/'),file+' hero/pet stylesheet only on reviewed routes');
+  if(atlas||petPage||rel==='tools/'){assert.equal(petCSS[0].getAttribute('href'),HeroPet.asset().match(/href="([^"]+)"/)[1],file+' current hero/pet stylesheet');assert(petCSS[0].hasAttribute(atlas?'data-hero-atlas-owned':petPage?'data-hero-pet-owned':'data-v4-owned'));}
   assert.equal(d.querySelectorAll('[data-hero-pet-owned="pets"]').length,+petPage,file+' exact pet panel scope');
   if(petPage)HeroPet.validateOwnership(d.toString(),locale);
   if(V4.kindFor(route))V4.validateOwnership(d.toString(),locale,route);

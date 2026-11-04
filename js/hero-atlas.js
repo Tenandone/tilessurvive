@@ -1,6 +1,6 @@
 (function () {
   'use strict';
-  const fields = ['name', 'faction', 'rarity', 'role', 'form', 'status'];
+  const fields = ['name', 'faction', 'rarity', 'role', 'form'];
   const filters = ['faction', 'rarity', 'role', 'form'];
   const normalize = value => String(value || '').normalize('NFKD').replace(/\p{M}/gu, '').toLowerCase().replace(/\s+/gu, ' ').trim();
   const format = (text, values) => text.replace(/\{(forms|heroes|count)\}/g, (_, key) => String(values[key]));

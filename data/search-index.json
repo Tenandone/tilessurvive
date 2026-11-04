@@ -65034,14 +65034,14 @@
       "language": "en",
       "type": "heroe",
       "title": "Skills",
-      "description": "Official notes describe attacks that can inflict Burning, faster attacks during Rampage, and a switch between extra damage and healing through attacks as Health changes.",
+      "description": "Deals damage with a series of attacks, with a chance to inflict Burning for 3 seconds.",
       "url": "/en/heroes/lava/#lava-skills"
     },
     {
       "language": "en",
       "type": "heroe",
-      "title": "Growth requirements",
-      "description": "Talent Level 1 permanently unlocks Attack and Skill Damage bonuses. X-SSR heroes need more Hero Fragments; the ordinary SSR cost table must not be used for Lava.",
+      "title": "Growth",
+      "description": "Talent Level 1 unlocks Attack and Skill Damage bonuses. X-SSR heroes have different fragment requirements from ordinary SSR heroes.",
       "url": "/en/heroes/lava/#lava-growth"
     },
     {
@@ -65055,14 +65055,14 @@
       "language": "ko",
       "type": "heroe",
       "title": "스킬",
-      "description": "공식 안내에 따르면 연속 공격으로 화상을 유발할 수 있고, 폭주 상태에서는 공격 속도가 증가합니다. 체력 변화에 따라 추가 피해와 공격을 통한 회복을 전환합니다.",
+      "description": "연속 공격으로 피해를 주며, 일정 확률로 3초간 연소를 부여합니다.",
       "url": "/ko/heroes/lava/#lava-skills"
     },
     {
       "language": "ko",
       "type": "heroe",
-      "title": "성장 조건",
-      "description": "특성 1레벨 활성화 시 공격력·스킬 피해 보너스가 영구적으로 개방됩니다. X-SSR은 더 많은 영웅 조각이 필요하므로 일반 SSR 비용표를 라바에 그대로 적용하면 안 됩니다.",
+      "title": "성장",
+      "description": "특성 1레벨에서 공격력·스킬 피해 보너스가 열립니다. X-SSR 영웅은 일반 SSR과 조각 요구량이 다릅니다.",
       "url": "/ko/heroes/lava/#lava-growth"
     },
     {
@@ -65076,14 +65076,14 @@
       "language": "ja",
       "type": "heroe",
       "title": "スキル",
-      "description": "公式案内では、攻撃で炎上を付与でき、暴走中は攻撃速度が上昇すると説明されています。また、体力の変化に応じて、追加ダメージと攻撃による回復が切り替わります。",
+      "description": "連続攻撃でダメージを与え、一定確率で3秒間の燃焼を付与します。",
       "url": "/ja/heroes/lava/#lava-skills"
     },
     {
       "language": "ja",
       "type": "heroe",
-      "title": "育成条件",
-      "description": "タレントレベル 1 で、攻撃力とスキルダメージのボーナスが恒久的に解放されます。X-SSR 英雄はより多くの英雄の欠片を必要とするため、通常の SSR コスト表をマグマに適用してはいけません。",
+      "title": "成長",
+      "description": "タレントレベル 1 で攻撃力とスキルダメージのボーナスが解放されます。X-SSR 英雄は通常の SSR 英雄とは必要な欠片数が異なります。",
       "url": "/ja/heroes/lava/#lava-growth"
     },
     {
@@ -65097,14 +65097,14 @@
       "language": "zh-tw",
       "type": "heroe",
       "title": "技能",
-      "description": "官方說明指出，攻擊可造成燃燒，狂暴期間攻擊速度會提升，並會隨生命值變化，在額外傷害與透過攻擊治療之間切換。",
+      "description": "以連續攻擊造成傷害，並有一定機率施加持續3秒的燃燒。",
       "url": "/zh-tw/heroes/lava/#lava-skills"
     },
     {
       "language": "zh-tw",
       "type": "heroe",
-      "title": "成長條件",
-      "description": "天賦等級 1 可永久解鎖攻擊力與技能傷害加成。X-SSR 英雄需要更多英雄碎片，因此不可將一般 SSR 費用表套用於熔岩。",
+      "title": "成長",
+      "description": "天賦等級 1 解鎖攻擊力與技能傷害加成。X-SSR 英雄與一般 SSR 英雄的碎片需求量不同。",
       "url": "/zh-tw/heroes/lava/#lava-growth"
     },
     {
@@ -65118,14 +65118,14 @@
       "language": "de",
       "type": "heroe",
       "title": "Fähigkeiten",
-      "description": "Offizielle Hinweise beschreiben Angriffe, die Brennen verursachen können, schnellere Angriffe im Berserkermodus und einen Wechsel zwischen Zusatzschaden und Heilung durch Angriffe, abhängig vom Gesundheitszustand.",
+      "description": "Verursacht mit einer Angriffsserie Schaden und kann für 3 Sekunden Brennen auslösen.",
       "url": "/de/heroes/lava/#lava-skills"
     },
     {
       "language": "de",
       "type": "heroe",
-      "title": "Entwicklungsvoraussetzungen",
-      "description": "Talentstufe 1 schaltet Angriffs- und Fähigkeitsschadensboni dauerhaft frei. X-SSR-Helden benötigen mehr Heldenfragmente; die gewöhnliche SSR-Kostentabelle darf nicht für Lava verwendet werden.",
+      "title": "Entwicklung",
+      "description": "Talentstufe 1 schaltet Boni auf Angriff und Fähigkeitsschaden frei. X-SSR-Helden benötigen andere Fragmentmengen als gewöhnliche SSR-Helden.",
       "url": "/de/heroes/lava/#lava-growth"
     },
     {
@@ -65139,14 +65139,14 @@
       "language": "ru",
       "type": "heroe",
       "title": "Навыки",
-      "description": "По официальному описанию, атаки могут накладывать горение, во время буйства скорость атак увеличивается, а при изменении здоровья герой переключается между дополнительным уроном и исцелением за счёт атак.",
+      "description": "Наносит урон серией атак с шансом наложить горение на 3 секунды.",
       "url": "/ru/heroes/lava/#lava-skills"
     },
     {
       "language": "ru",
       "type": "heroe",
-      "title": "Условия развития",
-      "description": "Талант уровня 1 навсегда открывает бонусы к атаке и урону навыков. Героям X-SSR требуется больше фрагментов героя; обычную таблицу стоимости SSR нельзя применять к Лаве.",
+      "title": "Развитие",
+      "description": "Талант уровня 1 открывает бонусы к атаке и урону навыков. Требования к фрагментам у героев X-SSR отличаются от обычных героев SSR.",
       "url": "/ru/heroes/lava/#lava-growth"
     },
     {
@@ -65160,14 +65160,14 @@
       "language": "zh-cn",
       "type": "heroe",
       "title": "技能",
-      "description": "官方说明指出，攻击可造成燃烧，狂暴期间攻击速度会提升，并会随生命值变化，在额外伤害与通过攻击治疗之间切换。",
+      "description": "以连续攻击造成伤害，并有一定概率施加持续3秒的燃烧。",
       "url": "/zh-cn/heroes/lava/#lava-skills"
     },
     {
       "language": "zh-cn",
       "type": "heroe",
-      "title": "成长条件",
-      "description": "天赋等级 1 可永久解锁攻击力与技能伤害加成。X-SSR 英雄需要更多英雄碎片，因此不可将普通 SSR 费用表套用于熔岩。",
+      "title": "成长",
+      "description": "天赋等级 1 解锁攻击力与技能伤害加成。X-SSR 英雄与普通 SSR 英雄的碎片需求量不同。",
       "url": "/zh-cn/heroes/lava/#lava-growth"
     },
     {
@@ -65181,14 +65181,14 @@
       "language": "ar",
       "type": "heroe",
       "title": "المهارات",
-      "description": "تصف الملاحظات الرسمية هجمات قد تسبب الاحتراق، وهجمات أسرع أثناء الهياج، والتبديل بين الضرر الإضافي والشفاء عن طريق الهجمات مع تغير الصحة.",
+      "description": "يلحق ضررًا بسلسلة من الهجمات، مع احتمال إلحاق الاحتراق لمدة 3 ثوانٍ.",
       "url": "/ar/heroes/lava/#lava-skills"
     },
     {
       "language": "ar",
       "type": "heroe",
-      "title": "متطلبات التطوير",
-      "description": "يفتح مستوى الموهبة 1 مكافآت الهجوم وضرر المهارات بشكل دائم. يحتاج أبطال X-SSR إلى مزيد من شظايا الأبطال؛ لذا يجب عدم استخدام جدول تكاليف SSR العادي لشخصية Lava.",
+      "title": "التطوير",
+      "description": "يفتح مستوى الموهبة 1 مكافآت الهجوم وضرر المهارات. تختلف متطلبات الشظايا لأبطال X-SSR عن أبطال SSR العاديين.",
       "url": "/ar/heroes/lava/#lava-growth"
     },
     {
@@ -65202,14 +65202,14 @@
       "language": "nl",
       "type": "heroe",
       "title": "Vaardigheden",
-      "description": "Officiële informatie beschrijft aanvallen die brand kunnen veroorzaken, snellere aanvallen tijdens razernij en een wisseling tussen extra schade en genezing door aanvallen naarmate de gezondheid verandert.",
+      "description": "Doet schade met een reeks aanvallen, met kans op Brand gedurende 3 seconden.",
       "url": "/nl/heroes/lava/#lava-skills"
     },
     {
       "language": "nl",
       "type": "heroe",
-      "title": "Ontwikkelingsvereisten",
-      "description": "Talentniveau 1 ontgrendelt permanent bonussen voor aanval en vaardigheidsschade. X-SSR-helden hebben meer heldenfragmenten nodig; gebruik de gewone SSR-kostentabel niet voor Lava.",
+      "title": "Groei",
+      "description": "Talentniveau 1 ontgrendelt bonussen voor aanval en vaardigheidsschade. X-SSR-helden hebben andere fragmentvereisten dan gewone SSR-helden.",
       "url": "/nl/heroes/lava/#lava-growth"
     },
     {
@@ -65223,14 +65223,14 @@
       "language": "fr",
       "type": "heroe",
       "title": "Compétences",
-      "description": "Les notes officielles décrivent des attaques pouvant infliger une brûlure, des attaques accélérées pendant la frénésie et une alternance entre dégâts supplémentaires et soins par les attaques selon la santé.",
+      "description": "Inflige des dégâts par une série d’attaques, avec une chance de provoquer une brûlure pendant 3 secondes.",
       "url": "/fr/heroes/lava/#lava-skills"
     },
     {
       "language": "fr",
       "type": "heroe",
-      "title": "Conditions de progression",
-      "description": "Le niveau de talent 1 débloque définitivement des bonus d’attaque et de dégâts de compétence. Les héros X-SSR nécessitent davantage de fragments ; le tableau de coûts SSR ordinaire ne s’applique pas à Lava.",
+      "title": "Progression",
+      "description": "Le niveau de talent 1 débloque des bonus d’attaque et de dégâts de compétence. Les besoins en fragments des héros X-SSR diffèrent de ceux des héros SSR ordinaires.",
       "url": "/fr/heroes/lava/#lava-growth"
     },
     {
@@ -65244,14 +65244,14 @@
       "language": "id",
       "type": "heroe",
       "title": "Skill",
-      "description": "Catatan resmi menjelaskan serangan yang dapat menyebabkan terbakar, serangan yang lebih cepat selama mengamuk, serta peralihan antara damage tambahan dan pemulihan melalui serangan seiring perubahan HP.",
+      "description": "Memberikan damage lewat serangkaian serangan, dengan peluang menyebabkan Terbakar selama 3 detik.",
       "url": "/id/heroes/lava/#lava-skills"
     },
     {
       "language": "id",
       "type": "heroe",
-      "title": "Persyaratan pengembangan",
-      "description": "Talenta Level 1 membuka bonus Serangan dan Damage Skill secara permanen. Hero X-SSR memerlukan lebih banyak Fragmen Hero; tabel biaya SSR biasa tidak boleh digunakan untuk Lava.",
+      "title": "Perkembangan",
+      "description": "Talenta Level 1 membuka bonus Serangan dan Damage Skill. Kebutuhan fragmen hero X-SSR berbeda dari hero SSR biasa.",
       "url": "/id/heroes/lava/#lava-growth"
     },
     {
@@ -65265,14 +65265,14 @@
       "language": "it",
       "type": "heroe",
       "title": "Abilità",
-      "description": "Le note ufficiali descrivono attacchi che possono infliggere bruciatura, attacchi più rapidi durante la furia e un’alternanza tra danni aggiuntivi e cure tramite attacchi al variare della salute.",
+      "description": "Infligge danni con una serie di attacchi, con una probabilità di causare Ustione per 3 secondi.",
       "url": "/it/heroes/lava/#lava-skills"
     },
     {
       "language": "it",
       "type": "heroe",
-      "title": "Requisiti di crescita",
-      "description": "Il livello talento 1 sblocca permanentemente bonus ad attacco e danni abilità. Gli eroi X-SSR richiedono più frammenti eroe; la normale tabella dei costi SSR non va applicata a Lava.",
+      "title": "Crescita",
+      "description": "Il livello talento 1 sblocca bonus ad Attacco e danni abilità. Gli eroi X-SSR richiedono quantità di frammenti diverse dagli eroi SSR normali.",
       "url": "/it/heroes/lava/#lava-growth"
     },
     {
@@ -65286,14 +65286,14 @@
       "language": "pl",
       "type": "heroe",
       "title": "Umiejętności",
-      "description": "Oficjalne informacje opisują ataki mogące powodować podpalenie, szybsze ataki podczas szału oraz przełączanie między dodatkowymi obrażeniami a leczeniem przez ataki w zależności od zdrowia.",
+      "description": "Zadaje obrażenia serią ataków z szansą na podpalenie trwające 3 sekundy.",
       "url": "/pl/heroes/lava/#lava-skills"
     },
     {
       "language": "pl",
       "type": "heroe",
-      "title": "Wymagania rozwoju",
-      "description": "Poziom talentu 1 na stałe odblokowuje premie do ataku i obrażeń umiejętności. Bohaterowie X-SSR wymagają więcej fragmentów bohatera; zwykłej tabeli kosztów SSR nie należy stosować do bohatera Lava.",
+      "title": "Rozwój",
+      "description": "Poziom talentu 1 odblokowuje premie do Ataku i obrażeń umiejętności. Bohaterowie X-SSR wymagają innych ilości fragmentów niż zwykli bohaterowie SSR.",
       "url": "/pl/heroes/lava/#lava-growth"
     },
     {
@@ -65307,14 +65307,14 @@
       "language": "pt",
       "type": "heroe",
       "title": "Habilidades",
-      "description": "As notas oficiais descrevem ataques que podem causar queimadura, ataques mais rápidos durante a fúria e uma alternância entre dano extra e cura por ataques conforme a vida muda.",
+      "description": "Causa dano com uma sequência de ataques, com chance de aplicar Queimadura por 3 segundos.",
       "url": "/pt/heroes/lava/#lava-skills"
     },
     {
       "language": "pt",
       "type": "heroe",
-      "title": "Requisitos de desenvolvimento",
-      "description": "O nível de talento 1 libera permanentemente bônus de ataque e dano de habilidade. Heróis X-SSR precisam de mais fragmentos de herói; a tabela comum de custos SSR não deve ser usada para Lava.",
+      "title": "Evolução",
+      "description": "O nível de talento 1 libera bônus de Ataque e dano de habilidade. Os requisitos de fragmentos dos heróis X-SSR são diferentes dos heróis SSR comuns.",
       "url": "/pt/heroes/lava/#lava-growth"
     },
     {
@@ -65328,14 +65328,14 @@
       "language": "es",
       "type": "heroe",
       "title": "Habilidades",
-      "description": "Las notas oficiales describen ataques que pueden causar quemaduras, ataques más rápidos durante el frenesí y una alternancia entre daño adicional y curación mediante ataques según cambia la salud.",
+      "description": "Inflige daño con una serie de ataques, con una probabilidad de causar Quemadura durante 3 segundos.",
       "url": "/es/heroes/lava/#lava-skills"
     },
     {
       "language": "es",
       "type": "heroe",
-      "title": "Requisitos de desarrollo",
-      "description": "El nivel de talento 1 desbloquea permanentemente bonificaciones de ataque y daño de habilidad. Los héroes X-SSR necesitan más fragmentos de héroe; no debe usarse la tabla de costes SSR habitual para Lava.",
+      "title": "Progreso",
+      "description": "El nivel de talento 1 desbloquea bonificaciones de Ataque y daño de habilidad. Los héroes X-SSR necesitan cantidades de fragmentos distintas a las de los héroes SSR habituales.",
       "url": "/es/heroes/lava/#lava-growth"
     },
     {
@@ -65349,14 +65349,14 @@
       "language": "sv",
       "type": "heroe",
       "title": "Färdigheter",
-      "description": "Officiella uppgifter beskriver attacker som kan orsaka brännskada, snabbare attacker under raseri och växling mellan extra skada och läkning genom attacker när hälsan förändras.",
+      "description": "Gör skada med en serie attacker, med chans att orsaka brännskada i 3 sekunder.",
       "url": "/sv/heroes/lava/#lava-skills"
     },
     {
       "language": "sv",
       "type": "heroe",
-      "title": "Utvecklingskrav",
-      "description": "Talangnivå 1 låser permanent upp bonusar för attack och färdighetsskada. X-SSR-hjältar behöver fler hjältefragment; den vanliga SSR-kostnadstabellen får inte användas för Lava.",
+      "title": "Utveckling",
+      "description": "Talangnivå 1 låser upp bonusar för attack och färdighetsskada. X-SSR-hjältar har andra fragmentkrav än vanliga SSR-hjältar.",
       "url": "/sv/heroes/lava/#lava-growth"
     },
     {
@@ -65369,15 +65369,15 @@
     {
       "language": "th",
       "type": "heroe",
-      "title": "สกิล",
-      "description": "ประกาศทางการอธิบายว่าการโจมตีอาจทำให้ติดเผาไหม้ โจมตีได้เร็วขึ้นขณะคลุ้มคลั่ง และสลับระหว่างความเสียหายเพิ่มเติมกับการรักษาผ่านการโจมตีตามการเปลี่ยนแปลงของพลังชีวิต",
+      "title": "ทักษะ",
+      "description": "โจมตีต่อเนื่องเพื่อสร้างความเสียหาย และมีโอกาสทำให้เป้าหมายติดเผาไหม้เป็นเวลา 3 วินาที",
       "url": "/th/heroes/lava/#lava-skills"
     },
     {
       "language": "th",
       "type": "heroe",
-      "title": "เงื่อนไขการพัฒนา",
-      "description": "พรสวรรค์เลเวล 1 ปลดล็อกโบนัสพลังโจมตีและความเสียหายสกิลอย่างถาวร ฮีโร่ X-SSR ต้องใช้ชิ้นส่วนฮีโร่มากกว่า จึงห้ามใช้ตารางค่าใช้จ่าย SSR ปกติกับลาวา",
+      "title": "การเติบโต",
+      "description": "พรสวรรค์เลเวล 1 ปลดล็อกโบนัสพลังโจมตีและความเสียหายทักษะ วีรชน X-SSR ใช้จำนวนชิ้นส่วนต่างจากวีรชน SSR ทั่วไป",
       "url": "/th/heroes/lava/#lava-growth"
     },
     {
@@ -65391,14 +65391,14 @@
       "language": "tr",
       "type": "heroe",
       "title": "Beceriler",
-      "description": "Resmî notlarda yanma uygulayabilen saldırılar, öfke sırasında daha hızlı saldırılar ve sağlık değiştikçe ek hasar ile saldırılar yoluyla iyileşme arasında geçiş anlatılıyor.",
+      "description": "Art arda saldırılarla hasar verir ve 3 saniyelik Yanma uygulama ihtimali vardır.",
       "url": "/tr/heroes/lava/#lava-skills"
     },
     {
       "language": "tr",
       "type": "heroe",
-      "title": "Gelişim gereksinimleri",
-      "description": "Yetenek seviyesi 1, saldırı ve beceri hasarı bonuslarını kalıcı olarak açar. X-SSR kahramanlar daha fazla kahraman parçası gerektirir; normal SSR maliyet tablosu Lava için kullanılmamalıdır.",
+      "title": "Gelişim",
+      "description": "Yetenek seviyesi 1, Saldırı ve Beceri Hasarı bonuslarını açar. X-SSR kahramanların parça gereksinimleri normal SSR kahramanlardan farklıdır.",
       "url": "/tr/heroes/lava/#lava-growth"
     },
     {
@@ -65412,14 +65412,14 @@
       "language": "vi",
       "type": "heroe",
       "title": "Kỹ năng",
-      "description": "Theo mô tả chính thức, các đòn tấn công có thể gây thiêu đốt, tốc độ tấn công tăng trong trạng thái cuồng nộ, và cơ chế chuyển đổi giữa sát thương bổ sung với hồi phục qua đòn đánh tùy theo thay đổi của máu.",
+      "description": "Gây sát thương bằng chuỗi đòn đánh, có xác suất gây Thiêu đốt trong 3 giây.",
       "url": "/vi/heroes/lava/#lava-skills"
     },
     {
       "language": "vi",
       "type": "heroe",
-      "title": "Điều kiện phát triển",
-      "description": "Thiên phú cấp 1 mở vĩnh viễn các chỉ số cộng thêm cho tấn công và sát thương kỹ năng. Anh hùng X-SSR cần nhiều mảnh anh hùng hơn; không được dùng bảng chi phí SSR thông thường cho Lava.",
+      "title": "Phát triển",
+      "description": "Thiên phú cấp 1 mở thưởng Tấn công và Sát thương kỹ năng. Anh hùng X-SSR có yêu cầu mảnh khác với anh hùng SSR thông thường.",
       "url": "/vi/heroes/lava/#lava-growth"
     },
     {
@@ -65433,14 +65433,14 @@
       "language": "ms",
       "type": "heroe",
       "title": "Kemahiran",
-      "description": "Nota rasmi menerangkan serangan yang boleh menyebabkan pembakaran, serangan lebih pantas semasa mengamuk, serta pertukaran antara kerosakan tambahan dan pemulihan melalui serangan apabila Kesihatan berubah.",
+      "description": "Memberikan kerosakan melalui serangan berturut-turut, dengan peluang menyebabkan Terbakar selama 3 saat.",
       "url": "/ms/heroes/lava/#lava-skills"
     },
     {
       "language": "ms",
       "type": "heroe",
-      "title": "Keperluan pembangunan",
-      "description": "Bakat Tahap 1 membuka bonus Serangan dan Kerosakan Kemahiran secara kekal. Wira X-SSR memerlukan lebih banyak Serpihan Wira; jadual kos SSR biasa tidak boleh digunakan untuk Lahar.",
+      "title": "Perkembangan",
+      "description": "Bakat Tahap 1 membuka bonus Serangan dan Kerosakan Kemahiran. Keperluan serpihan wira X-SSR berbeza daripada wira SSR biasa.",
       "url": "/ms/heroes/lava/#lava-growth"
     },
     {
@@ -65454,14 +65454,14 @@
       "language": "nb",
       "type": "heroe",
       "title": "Ferdigheter",
-      "description": "Offisielle opplysninger beskriver angrep som kan påføre brannskade, raskere angrep under raseri og veksling mellom ekstra skade og heling gjennom angrep når helsen endres.",
+      "description": "Gjør skade med en serie angrep, med en sjanse til å påføre brenning i 3 sekunder.",
       "url": "/nb/heroes/lava/#lava-skills"
     },
     {
       "language": "nb",
       "type": "heroe",
-      "title": "Utviklingskrav",
-      "description": "Talentnivå 1 låser permanent opp bonuser for angrep og ferdighetsskade. X-SSR-helter trenger flere heltefragmenter; den vanlige SSR-kostnadstabellen skal ikke brukes for Lava.",
+      "title": "Utvikling",
+      "description": "Talentnivå 1 låser opp bonuser for angrep og ferdighetsskade. X-SSR-helter har andre fragmentkrav enn vanlige SSR-helter.",
       "url": "/nb/heroes/lava/#lava-growth"
     },
     {
