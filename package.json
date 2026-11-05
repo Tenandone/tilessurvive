@@ -85,7 +85,7 @@
     "test:v5": "node --test scripts/test-v5-landing.js scripts/test-v3-affiliate.js",
     "postbuild:hero-atlas": "node scripts/build-v6-system.js",
     "build:v6": "node scripts/build-v5-landing.js && node scripts/build-v6-system.js",
-    "test:v6": "node --test scripts/test-v6-landing.js scripts/test-v6-system.js scripts/test-common-events.js scripts/test-ten-benefits-copy.js"
+    "test:v6": "node --test scripts/test-v6-landing.js scripts/test-v6-system.js scripts/test-common-events.js scripts/test-ten-benefits-copy.js scripts/test-v61-ten.js scripts/test-v61-regeneration.js scripts/test-gift-codes.js scripts/test-v4-search-preservation.js"
   },
   "keywords": [],
   "author": "",

@@ -46,7 +46,8 @@ test('all 21 languages have complete independent guide, choices and privacy copy
     assert.ok(fs.existsSync(path.join(__dirname, '..', locale, 'events/daily-missions/index.html')));
     assert.equal(document.querySelectorAll('[data-v3-consent] button').length, 2);
     assert.equal(document.querySelectorAll('input,form,iframe').length, 0);
-    assert.equal(document.querySelectorAll('.v3-topup-question').length, 8);
+    assert.equal(document.querySelectorAll('.v3-topup-question').length, 7);
+    assert.equal(document.querySelectorAll('[data-ten-benefits]').length, 1);
   }
   assert.throws(() => content.renderGuide('not-a-locale'));
 });

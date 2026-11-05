@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "imageRatios": {
+    "hero": "3 / 4",
+    "pet": "1 / 1",
+    "building": "1 / 1",
+    "faction": "1 / 1",
+    "guide": "4 / 3"
+  },
+  "displayFont": {
+    "family": "TilesSurvive Sword",
+    "enabled": true,
+    "status": "authorized-local-files",
+    "referenceFamily": "StrongSword_New",
+    "faces": [
+      {
+        "path": "fonts/blackdesert/strongsword-regular.woff2",
+        "weight": 400,
+        "format": "woff2"
+      },
+      {
+        "path": "fonts/blackdesert/strongsword-semibold.woff2",
+        "weight": 600,
+        "format": "woff2"
+      }
+    ],
+    "authorization": "operator-confirmed-2026-11-05"
+  }
+}

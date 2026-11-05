@@ -4,6 +4,14 @@ const V4=require('./v4-workbench-content'),Search=require('./build-v4-search'),B
 const lf=s=>s.replaceAll('\r\n','\n');
 function stripReviewedPresentation(html,locale,route,root=ROOT){const V6=require('./build-v6-system');return V6.validateOwnership(html,locale,route,{root})?V6.strip(html):html;}
 function baseline(files,root){const b=cp.execFileSync('git',['cat-file','--batch'],{cwd:root,input:files.map(f=>BASE+':'+f).join('\n')+'\n',maxBuffer:100e6});let at=0;return new Map(files.map(f=>{const end=b.indexOf(10,at),m=/^[a-f0-9]+ blob (\d+)$/.exec(b.subarray(at,end).toString());assert(m,'Missing baseline '+f);at=end+1;const s=b.subarray(at,at+Number(m[1])).toString();at+=Number(m[1])+1;return [f,s];}));}
+function projectOriginalSearchRow(row,locale,{root=ROOT,atlas=new Map()}={}){
+ if(row.url==='/'+locale+'/codes/'){const c=require('./gift-codes-content').copy(locale);return {...row,title:c.title+' | TilesSurvive.net',description:c.intro};}
+ if(row.url==='/'+locale+'/top-up/')return {...row,description:require('./ten-benefits-content').summary(locale)};
+ const anchor=['lava-skills','lava-growth'].find(id=>row.url==='/'+locale+'/heroes/lava/#'+id),clean=v=>v.replace(/\s+/gu,' ').trim();
+ if(!anchor){if(!atlas.has(row.url)&&row.url!=='/'+locale+'/')return row;const d=parseHTML(fs.readFileSync(path.join(root,row.url.slice(1),'index.html'),'utf8')).document;return {...row,title:clean(d.querySelector('title').textContent),description:clean(d.querySelector('meta[name="description"]').getAttribute('content'))};}
+ const d=parseHTML(fs.readFileSync(path.join(root,locale,'heroes/lava/index.html'),'utf8')).document,section=d.getElementById(anchor);assert(section,'Lava search anchor missing');return {...row,title:clean(section.querySelector('h2').textContent),description:clean(section.querySelector('p').textContent)};
+}
+function verifyOriginalSearchRows(before,after,locale,options){const expected=before.map(row=>projectOriginalSearchRow(row,locale,options));assert.deepEqual(after.slice(0,before.length),expected,locale+' every original search row with exact reviewed owner metadata');}
 function validate(root=ROOT){const codes=require(path.join(root,'data/i18n/locales.json')).locales.map(l=>l.code),files=codes.flatMap(c=>Object.keys(V4.routes).map(r=>c+'/'+r+'index.html')),old=baseline([...files,...codes.map(c=>'data/search/'+c+'.json'),'sitemap.xml','robots.txt'],root),atlas=require('./build-hero-atlas-search').atlasRoutes(root);let owners=0;
 for(const file of files){const current=fs.readFileSync(path.join(root,file),'utf8'),locale=file.split('/')[0],route='/'+file.replace(/index\.html$/,'');V4.validateOwnership(current,locale,route);const reviewed=stripReviewedPresentation(current,locale,route,root);assert.equal(lf(V4.strip(reviewed)),lf(route.endsWith('/heroes/')?require('./build-hero-atlas').project(require('./build-v3-platform').project(old.get(file),locale,route),locale,route):route.endsWith('/database/pet-system/')?require('./build-hero-pet-pages').project(require('./build-v3-platform').project(old.get(file),locale,route),locale):require('./build-v3-platform').project(old.get(file),locale,route)),file+' exact preserved surrounding content');const d=parseHTML(current).document;assert(d.querySelector('[data-v4-owned]'),file+' owner missing');assert.equal(V4.project(reviewed,locale,route),reviewed,file+' idempotent');if(V4.kindFor(route)==='workspace'){assert.equal(d.querySelectorAll('[role="tab"]').length,3);for(const [key,src]of Object.entries(JSON.parse(d.querySelector('[data-v4-config]').textContent).models))assert(fs.existsSync(path.join(root,src.split('?')[0].slice(1))),key+' model');}owners++;}
 assert.equal(lf(fs.readFileSync(path.join(root,'robots.txt'),'utf8')),lf(old.get('robots.txt')),'robots.txt unchanged');
@@ -11,16 +19,9 @@ const sitemap=[...fs.readFileSync(path.join(root,'sitemap.xml'),'utf8').matchAll
 let search=0,addedSearchRecords=0;
 for(const c of codes){
  const f='data/search/'+c+'.json',before=JSON.parse(old.get(f)).items,after=JSON.parse(fs.readFileSync(path.join(root,f),'utf8')).items;
- const expected=before.map(row=>{
-  const anchor=['lava-skills','lava-growth'].find(id=>row.url==='/'+c+'/heroes/lava/#'+id);
-  if(!anchor){if(!atlas.has(row.url)&&row.url!=='/'+c+'/')return row;const d=parseHTML(fs.readFileSync(path.join(root,row.url.slice(1),'index.html'),'utf8')).document,clean=v=>v.replace(/\s+/gu,' ').trim();return {...row,title:clean(d.querySelector('title').textContent),description:clean(d.querySelector('meta[name="description"]').getAttribute('content'))};}
-  const d=parseHTML(fs.readFileSync(path.join(root,c,'heroes/lava/index.html'),'utf8')).document,section=d.getElementById(anchor),clean=v=>v.replace(/\s+/gu,' ').trim();
-  assert(section,'Lava search anchor missing');
-  return {...row,title:clean(section.querySelector('h2').textContent),description:clean(section.querySelector('p').textContent)};
- });
- assert.deepEqual(after.slice(0,before.length),expected,c+' every original search row, with only reviewed Lava section snippets');
+ verifyOriginalSearchRows(before,after,c,{root,atlas});
  const official=[...atlas].filter(([,r])=>r.locale===c&&r.hero.catalogKind==='official-introduction').map(([url])=>{const d=parseHTML(fs.readFileSync(path.join(root,url.slice(1),'index.html'),'utf8')).document,clean=v=>v.replace(/\s+/gu,' ').trim();return {language:c,type:'heroe',title:clean(d.querySelector('title').textContent),description:clean(d.querySelector('meta[name="description"]').getAttribute('content')),url};});
  const additions=[...Search.records(c),...official];assert.deepEqual(after.slice(before.length),additions,c+' only reviewed V4 and official hero records');search+=after.length;addedSearchRecords+=additions.length;
 }
 assert.equal(search,9238+addedSearchRecords);return {status:'PASS',locales:codes.length,pages:owners,newURLs:require('./client-release-gate').reviewedSitemap(root).added.length,searchRecords:search,addedSearchRecords};}
-module.exports={BASE,baseline,stripReviewedPresentation,validate};if(require.main===module)console.log(JSON.stringify(validate()));
+module.exports={BASE,baseline,stripReviewedPresentation,projectOriginalSearchRow,verifyOriginalSearchRows,validate};if(require.main===module)console.log(JSON.stringify(validate()));

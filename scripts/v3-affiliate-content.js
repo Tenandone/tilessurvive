@@ -1,5 +1,5 @@
 "use strict";
-const copy = require('../data/v3-affiliate-copy.json');
+const copy = require('./sync-ten-benefits-copy').project(require('../data/v3-affiliate-copy.json'));
 const locales = new Set(require('../data/i18n/locales.json').locales.map(x => x.code));
 const TEN_URL = 'https://www.lootbar.com/ko/shop/ten/top-up/tiles-survive';
 const MEASUREMENT_ID = 'G-Z2MJ6TXZHK';

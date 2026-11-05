@@ -1,0 +1,2072 @@
+{
+  "schemaVersion": 1,
+  "normalization": "alpha-nonzero-contain-v1",
+  "sourcePixelsRemoved": "transparent-only",
+  "originalsModified": false,
+  "images": [
+    {
+      "source": "/img/buildings/aegis-monument.png",
+      "sourceSHA256": "62d97e225a549832fcba5ab018f1c9f5608d5620fda965de22ed2c1b7e0c610e",
+      "sourceWidth": 260,
+      "sourceHeight": 303,
+      "alphaBounds": [
+        39,
+        29,
+        204,
+        281
+      ],
+      "kind": "building",
+      "src": "/img/v61-normalized/building/aegis-monument-c211174d.webp",
+      "width": 384,
+      "height": 384,
+      "visibleBounds": [
+        84,
+        27,
+        300,
+        357
+      ],
+      "sha256": "337b33ac7fb3dcfa94852560c1fb824ed77ffc1a0adb6ba0a7fe7f9df08ef491",
+      "bytes": 54246
+    },
+    {
+      "source": "/img/buildings/aegis-monument.webp",
+      "sourceSHA256": "62d97e225a549832fcba5ab018f1c9f5608d5620fda965de22ed2c1b7e0c610e",
+      "sourceWidth": 260,
+      "sourceHeight": 303,
+      "alphaBounds": [
+        39,
+        29,
+        204,
+        281
+      ],
+      "kind": "building",
+      "src": "/img/v61-normalized/building/aegis-monument-943c49b1.webp",
+      "width": 384,
+      "height": 384,
+      "visibleBounds": [
+        84,
+        27,
+        300,
+        357
+      ],
+      "sha256": "337b33ac7fb3dcfa94852560c1fb824ed77ffc1a0adb6ba0a7fe7f9df08ef491",
+      "bytes": 54246
+    },
+    {
+      "source": "/img/buildings/barracks.png",
+      "sourceSHA256": "df220fa8b814dfa9ef49fd17eabd9ffd2b8618ce477b921fb9e730f14083da57",
+      "sourceWidth": 412,
+      "sourceHeight": 455,
+      "alphaBounds": [
+        18,
+        24,
+        400,
+        443
+      ],
+      "kind": "building",
+      "src": "/img/v61-normalized/building/barracks-18dd12ab.webp",
+      "width": 384,
+      "height": 384,
+      "visibleBounds": [
+        41,
+        27,
+        342,
+        357
+      ],
+      "sha256": "f49997c4be938b5ff0b761f9c0b99940570e1dd64c2dbfb5ad3ee2670bece51c",
+      "bytes": 74464
+    },
+    {
+      "source": "/img/buildings/blessed-healing-stele.png",
+      "sourceSHA256": "9ff72287e292b2b7fd98054c4fdff6f94ad4a695f577413683985ffc21ae9fa3",
+      "sourceWidth": 255,
+      "sourceHeight": 349,
+      "alphaBounds": [
+        0,
+        53,
+        204,
+        327
+      ],
+      "kind": "building",
+      "src": "/img/v61-normalized/building/blessed-healing-stele-3d9ca717.webp",
+      "width": 384,
+      "height": 384,
+      "visibleBounds": [
+        69,
+        27,
+        315,
+        357
+      ],
+      "sha256": "600b4f0e030b9cb408a683f1c4908c1ec13ef4350ce89feba58893e129917042",
+      "bytes": 58766
+    },
+    {
+      "source": "/img/buildings/comms-outpost.png",
+      "sourceSHA256": "dfdbba59439bc24364db9e2de947b2303fe936af6c2a86e6b5b6fe2dd919ccb1",
+      "sourceWidth": 416,
+      "sourceHeight": 424,
+      "alphaBounds": [
+        47,
+        36,
+        381,
+        385
+      ],
+      "kind": "building",
+      "src": "/img/v61-normalized/building/comms-outpost-19c627fb.webp",
+      "width": 384,
+      "height": 384,
+      "visibleBounds": [
+        34,
+        27,
+        350,
+        357
+      ],
+      "sha256": "622fec47c1ae6005f25cb66b23f089f127c65432b7b89aeec827481ba0e41b24",
+      "bytes": 77340
+    },
+    {
+      "source": "/img/buildings/comms-outpost.webp",
+      "sourceSHA256": "dfdbba59439bc24364db9e2de947b2303fe936af6c2a86e6b5b6fe2dd919ccb1",
+      "sourceWidth": 416,
+      "sourceHeight": 424,
+      "alphaBounds": [
+        47,
+        36,
+        381,
+        385
+      ],
+      "kind": "building",
+      "src": "/img/v61-normalized/building/comms-outpost-99122be2.webp",
+      "width": 384,
+      "height": 384,
+      "visibleBounds": [
+        34,
+        27,
+        350,
+        357
+      ],
+      "sha256": "622fec47c1ae6005f25cb66b23f089f127c65432b7b89aeec827481ba0e41b24",
+      "bytes": 77340
+    },
+    {
+      "source": "/img/buildings/cursed-wound-stele.png",
+      "sourceSHA256": "9287c520c2d8465761911c3c4dc047529422921289d9bab2d5210a306826dd7e",
+      "sourceWidth": 255,
+      "sourceHeight": 349,
+      "alphaBounds": [
+        43,
+        33,
+        206,
+        312
+      ],
+      "kind": "building",
+      "src": "/img/v61-normalized/building/cursed-wound-stele-5a5eafa0.webp",
+      "width": 384,
+      "height": 384,
+      "visibleBounds": [
+        95,
+        27,
+        288,
+        357
+      ],
+      "sha256": "56cc1ade685eeabdf708e9ee7eadee4de1b047287d7bf849d9795a820dc72056",
+      "bytes": 53406
+    },
+    {
+      "source": "/img/buildings/enlistment-office.png",
+      "sourceSHA256": "229b557da786a02b4ab1c8fd7c7e5ff74851a61f8602886f6735ce4ab0262e05",
+      "sourceWidth": 392,
+      "sourceHeight": 416,
+      "alphaBounds": [
+        2,
+        31,
+        392,
+        416
+      ],
+      "kind": "building",
+      "src": "/img/v61-normalized/building/enlistment-office-ded570e3.webp",
+      "width": 384,
+      "height": 384,
+      "visibleBounds": [
+        27,
+        29,
+        357,
+        355
+      ],
+      "sha256": "4f2ec1b822d30f1890a58b191d7b1e9ffc1eca5e3f7a2810729c8ee33ecfc256",
+      "bytes": 67720
+    },
+    {
+      "source": "/img/buildings/garrison-station.png",
+      "sourceSHA256": "2f9102265701f9a31aa87e94b3e081f80cb24d0c18bd6374b29119d48f577271",
+      "sourceWidth": 550,
+      "sourceHeight": 516,
+      "alphaBounds": [
+        0,
+        24,
+        486,
+        500
+      ],
+      "kind": "building",
+      "src": "/img/v61-normalized/building/garrison-station-bbbb6e0b.webp",
+      "width": 384,
+      "height": 384,
+      "visibleBounds": [
+        27,
+        30,
+        357,
+        353
+      ],
+      "sha256": "a9e7aa65113b5d2c6dc428c5119029dcb4366cd6001a78df13c366e87090ce73",
+      "bytes": 56438
+    },
+    {
+      "source": "/img/buildings/garrison.png",
+      "sourceSHA256": "2f9102265701f9a31aa87e94b3e081f80cb24d0c18bd6374b29119d48f577271",
+      "sourceWidth": 550,
+      "sourceHeight": 516,
+      "alphaBounds": [
+        0,
+        24,
+        486,
+        500
+      ],
+      "kind": "building",
+      "src": "/img/v61-normalized/building/garrison-a6290534.webp",
+      "width": 384,
+      "height": 384,
+      "visibleBounds": [
+        27,
+        30,
+        357,
+        353
+      ],
+      "sha256": "a9e7aa65113b5d2c6dc428c5119029dcb4366cd6001a78df13c366e87090ce73",
+      "bytes": 56438
+    },
+    {
+      "source": "/img/buildings/guardian-of-life-monument.png",
+      "sourceSHA256": "135e2213ae284fac96dada6a55a55b19577659440b069921b58612ca8a2a3a13",
+      "sourceWidth": 260,
+      "sourceHeight": 303,
+      "alphaBounds": [
+        41,
+        26,
+        258,
+        287
+      ],
+      "kind": "building",
+      "src": "/img/v61-normalized/building/guardian-of-life-monument-d3aaa089.webp",
+      "width": 384,
+      "height": 384,
+      "visibleBounds": [
+        54,
+        27,
+        329,
+        357
+      ],
+      "sha256": "7a669a3bccb229ba7cfd0cf62c13077525e817e5c5d7aaa55ce8692017e47322",
+      "bytes": 58232
+    },
+    {
+      "source": "/img/buildings/guardian-of-life-monument.webp",
+      "sourceSHA256": "135e2213ae284fac96dada6a55a55b19577659440b069921b58612ca8a2a3a13",
+      "sourceWidth": 260,
+      "sourceHeight": 303,
+      "alphaBounds": [
+        41,
+        26,
+        258,
+        287
+      ],
+      "kind": "building",
+      "src": "/img/v61-normalized/building/guardian-of-life-monument-e9d2e081.webp",
+      "width": 384,
+      "height": 384,
+      "visibleBounds": [
+        54,
+        27,
+        329,
+        357
+      ],
+      "sha256": "7a669a3bccb229ba7cfd0cf62c13077525e817e5c5d7aaa55ce8692017e47322",
+      "bytes": 58232
+    },
+    {
+      "source": "/img/buildings/hero-academy.png",
+      "sourceSHA256": "e702ba087a44e600365ac66e43b00560bbc59e32e28f0c1875469ffccc1fbd36",
+      "sourceWidth": 364,
+      "sourceHeight": 413,
+      "alphaBounds": [
+        28,
+        40,
+        364,
+        413
+      ],
+      "kind": "building",
+      "src": "/img/v61-normalized/building/hero-academy-e360d0de.webp",
+      "width": 384,
+      "height": 384,
+      "visibleBounds": [
+        43,
+        27,
+        340,
+        357
+      ],
+      "sha256": "c4736ecda67c8b87f735dfe070c193e97b406d382390e5d37f35db21a4ab57b3",
+      "bytes": 68576
+    },
+    {
+      "source": "/img/buildings/hospital.png",
+      "sourceSHA256": "214cfb3cd0d2bce9fc2ddcfe78c83b23ae2733e8fb8ed463d4c9392079dc1aa3",
+      "sourceWidth": 406,
+      "sourceHeight": 430,
+      "alphaBounds": [
+        35,
+        34,
+        381,
+        410
+      ],
+      "kind": "building",
+      "src": "/img/v61-normalized/building/hospital-e47c5323.webp",
+      "width": 384,
+      "height": 384,
+      "visibleBounds": [
+        40,
+        27,
+        344,
+        357
+      ],
+      "sha256": "3ea7c902b6887e381fa6cac71ea8aae97c88067530fde08a5271bcc41b143051",
+      "bytes": 80772
+    },
+    {
+      "source": "/img/buildings/lab-cover.webp",
+      "sourceSHA256": "67c6d2f1175d6b4464b01e5c1d8b0c62aac4910c602a3d01e8bfd01d785d8494",
+      "sourceWidth": 432,
+      "sourceHeight": 508,
+      "alphaBounds": [
+        39,
+        11,
+        394,
+        497
+      ],
+      "kind": "building",
+      "src": "/img/v61-normalized/building/lab-cover-1d9e4521.webp",
+      "width": 384,
+      "height": 384,
+      "visibleBounds": [
+        71,
+        27,
+        312,
+        357
+      ],
+      "sha256": "9e11efd577e70f42a30ab03d5cb4223a83c89dfbdf5db88b9dda4e4c885748d6",
+      "bytes": 62048
+    },
+    {
+      "source": "/img/buildings/lab.png",
+      "sourceSHA256": "67c6d2f1175d6b4464b01e5c1d8b0c62aac4910c602a3d01e8bfd01d785d8494",
+      "sourceWidth": 432,
+      "sourceHeight": 508,
+      "alphaBounds": [
+        39,
+        11,
+        394,
+        497
+      ],
+      "kind": "building",
+      "src": "/img/v61-normalized/building/lab-1f6bd0f4.webp",
+      "width": 384,
+      "height": 384,
+      "visibleBounds": [
+        71,
+        27,
+        312,
+        357
+      ],
+      "sha256": "9e11efd577e70f42a30ab03d5cb4223a83c89dfbdf5db88b9dda4e4c885748d6",
+      "bytes": 62048
+    },
+    {
+      "source": "/img/buildings/power-plant.png",
+      "sourceSHA256": "fc17fd9b788341a4ac5a7c7accb15a9406957cfcd9261113a50100df3c9442b9",
+      "sourceWidth": 780,
+      "sourceHeight": 809,
+      "alphaBounds": [
+        51,
+        25,
+        708,
+        765
+      ],
+      "kind": "building",
+      "src": "/img/v61-normalized/building/power-plant-900878be.webp",
+      "width": 384,
+      "height": 384,
+      "visibleBounds": [
+        45,
+        27,
+        338,
+        357
+      ],
+      "sha256": "e8472d5ad303889db9cb0b3c6ce23deee3dd519d22d42155dbe8945fe25aa5d1",
+      "bytes": 93618
+    },
+    {
+      "source": "/img/buildings/refined-51/aegis-monument-icon.webp",
+      "sourceSHA256": "0274e8b692f91a65ce29c15769ea43f2ca38c96199ff5cd4be8ce9e9cb941e5f",
+      "sourceWidth": 240,
+      "sourceHeight": 240,
+      "alphaBounds": [
+        8,
+        16,
+        230,
+        232
+      ],
+      "kind": "building",
+      "src": "/img/v61-normalized/building/aegis-monument-icon-f35cc52e.webp",
+      "width": 384,
+      "height": 384,
+      "visibleBounds": [
+        27,
+        31,
+        357,
+        352
+      ],
+      "sha256": "faf72fcc18ddc2e51961564a0b3866afe808cceca5846c93b1769ce126726817",
+      "bytes": 87494
+    },
+    {
+      "source": "/img/buildings/refined-51/barracks-detail.webp",
+      "sourceSHA256": "94f8aff445bc8a8500cd44c6e4b233f5f5ee2d5f6139330e9074bca1aa97ddb2",
+      "sourceWidth": 412,
+      "sourceHeight": 455,
+      "alphaBounds": [
+        18,
+        24,
+        400,
+        443
+      ],
+      "kind": "building",
+      "src": "/img/v61-normalized/building/barracks-detail-a8fb9bf5.webp",
+      "width": 384,
+      "height": 384,
+      "visibleBounds": [
+        41,
+        27,
+        342,
+        357
+      ],
+      "sha256": "f49997c4be938b5ff0b761f9c0b99940570e1dd64c2dbfb5ad3ee2670bece51c",
+      "bytes": 74464
+    },
+    {
+      "source": "/img/buildings/refined-51/barracks-icon.webp",
+      "sourceSHA256": "119c51d7f92b88e382fce270f9a35475002618e601680b8f82693ffb99d685b0",
+      "sourceWidth": 240,
+      "sourceHeight": 240,
+      "alphaBounds": [
+        9,
+        5,
+        230,
+        229
+      ],
+      "kind": "building",
+      "src": "/img/v61-normalized/building/barracks-icon-bef7371e.webp",
+      "width": 384,
+      "height": 384,
+      "visibleBounds": [
+        29,
+        27,
+        355,
+        357
+      ],
+      "sha256": "db9863d06f7561630a6b7844487ee4c1a1fb1611d4a12210d75ae0ae6043a770",
+      "bytes": 87418
+    },
+    {
+      "source": "/img/buildings/refined-51/blessed-healing-stele-detail.webp",
+      "sourceSHA256": "81c1f4d1d69df6b3f82b25c81f9981dd5acd34377e6ba58661f6809bec123f0c",
+      "sourceWidth": 255,
+      "sourceHeight": 349,
+      "alphaBounds": [
+        0,
+        53,
+        204,
+        327
+      ],
+      "kind": "building",
+      "src": "/img/v61-normalized/building/blessed-healing-stele-detail-4fd56bd8.webp",
+      "width": 384,
+      "height": 384,
+      "visibleBounds": [
+        69,
+        27,
+        315,
+        357
+      ],
+      "sha256": "600b4f0e030b9cb408a683f1c4908c1ec13ef4350ce89feba58893e129917042",
+      "bytes": 58766
+    },
+    {
+      "source": "/img/buildings/refined-51/blessed-healing-stele-icon.webp",
+      "sourceSHA256": "8aa0cf50eb348372eca038749b973a1d90d320c8b69c14f255b764533f9a4b14",
+      "sourceWidth": 240,
+      "sourceHeight": 240,
+      "alphaBounds": [
+        9,
+        4,
+        230,
+        229
+      ],
+      "kind": "building",
+      "src": "/img/v61-normalized/building/blessed-healing-stele-icon-cd26c2ad.webp",
+      "width": 384,
+      "height": 384,
+      "visibleBounds": [
+        30,
+        27,
+        354,
+        357
+      ],
+      "sha256": "b5379a4af94deaf5b435a9b300111928f579afa5aa84ff6fe074b2c3da01a7ac",
+      "bytes": 83750
+    },
+    {
+      "source": "/img/buildings/refined-51/comms-outpost-icon.webp",
+      "sourceSHA256": "b12cc9500a350b8b0ab73cd947fbab997622f1434c2de45b243717977aa4f71b",
+      "sourceWidth": 240,
+      "sourceHeight": 240,
+      "alphaBounds": [
+        8,
+        7,
+        232,
+        230
+      ],
+      "kind": "building",
+      "src": "/img/v61-normalized/building/comms-outpost-icon-61a9a5aa.webp",
+      "width": 384,
+      "height": 384,
+      "visibleBounds": [
+        27,
+        27,
+        357,
+        356
+      ],
+      "sha256": "d6a4db400c63f65ba1ab7c03ae508a0a4630ac27b713028c12645b204e6f4be4",
+      "bytes": 97272
+    },
+    {
+      "source": "/img/buildings/refined-51/cursed-wound-stele-detail.webp",
+      "sourceSHA256": "0273a4c1d97c1c0a30476aac0205202bafb67aa48e7629d16e3e0095a7b714bb",
+      "sourceWidth": 255,
+      "sourceHeight": 349,
+      "alphaBounds": [
+        43,
+        33,
+        206,
+        312
+      ],
+      "kind": "building",
+      "src": "/img/v61-normalized/building/cursed-wound-stele-detail-cdcae131.webp",
+      "width": 384,
+      "height": 384,
+      "visibleBounds": [
+        95,
+        27,
+        288,
+        357
+      ],
+      "sha256": "56cc1ade685eeabdf708e9ee7eadee4de1b047287d7bf849d9795a820dc72056",
+      "bytes": 53406
+    },
+    {
+      "source": "/img/buildings/refined-51/cursed-wound-stele-icon.webp",
+      "sourceSHA256": "2dd21647938fc5366434eb7e9bf616837bd8300238d4247768167f04c3158cf0",
+      "sourceWidth": 240,
+      "sourceHeight": 240,
+      "alphaBounds": [
+        6,
+        5,
+        231,
+        229
+      ],
+      "kind": "building",
+      "src": "/img/v61-normalized/building/cursed-wound-stele-icon-7ee962df.webp",
+      "width": 384,
+      "height": 384,
+      "visibleBounds": [
+        27,
+        27,
+        357,
+        356
+      ],
+      "sha256": "eef493413d2806394dd756295800c1dabed60e51b5f518dc823c3c7ed4ae1f2d",
+      "bytes": 82436
+    },
+    {
+      "source": "/img/buildings/refined-51/enlistment-office-detail.webp",
+      "sourceSHA256": "7153bb6e3bbece4aa32a4a9d96e4d02c5f66c936305d5a79e6c5fbbf8d37d080",
+      "sourceWidth": 392,
+      "sourceHeight": 416,
+      "alphaBounds": [
+        2,
+        31,
+        392,
+        416
+      ],
+      "kind": "building",
+      "src": "/img/v61-normalized/building/enlistment-office-detail-c7609312.webp",
+      "width": 384,
+      "height": 384,
+      "visibleBounds": [
+        27,
+        29,
+        357,
+        355
+      ],
+      "sha256": "4f2ec1b822d30f1890a58b191d7b1e9ffc1eca5e3f7a2810729c8ee33ecfc256",
+      "bytes": 67720
+    },
+    {
+      "source": "/img/buildings/refined-51/enlistment-office-icon.webp",
+      "sourceSHA256": "7da10538292be5c03dac92c894b9593435c31cb65db060c0917b88fcefbca662",
+      "sourceWidth": 240,
+      "sourceHeight": 240,
+      "alphaBounds": [
+        8,
+        13,
+        230,
+        229
+      ],
+      "kind": "building",
+      "src": "/img/v61-normalized/building/enlistment-office-icon-3ef7f00a.webp",
+      "width": 384,
+      "height": 384,
+      "visibleBounds": [
+        27,
+        31,
+        357,
+        352
+      ],
+      "sha256": "ed12b19021b36f198875597ee41e95fb3c56ed3122c26bc7d5ecfefa053dcf00",
+      "bytes": 88788
+    },
+    {
+      "source": "/img/buildings/refined-51/garrison-station-detail.webp",
+      "sourceSHA256": "59601a7cb51a252681dbca14ce6b425a1da578d24cc37b7447607fd3e11ca1b8",
+      "sourceWidth": 550,
+      "sourceHeight": 516,
+      "alphaBounds": [
+        0,
+        24,
+        486,
+        500
+      ],
+      "kind": "building",
+      "src": "/img/v61-normalized/building/garrison-station-detail-b55adb63.webp",
+      "width": 384,
+      "height": 384,
+      "visibleBounds": [
+        27,
+        30,
+        357,
+        353
+      ],
+      "sha256": "a9e7aa65113b5d2c6dc428c5119029dcb4366cd6001a78df13c366e87090ce73",
+      "bytes": 56438
+    },
+    {
+      "source": "/img/buildings/refined-51/garrison-station-icon.webp",
+      "sourceSHA256": "f72c2f9d20804ca7873d2b4f987cca6a3e84a7d71762f269b4d91927ec8704e5",
+      "sourceWidth": 240,
+      "sourceHeight": 240,
+      "alphaBounds": [
+        6,
+        2,
+        231,
+        229
+      ],
+      "kind": "building",
+      "src": "/img/v61-normalized/building/garrison-station-icon-232e4a38.webp",
+      "width": 384,
+      "height": 384,
+      "visibleBounds": [
+        28,
+        27,
+        355,
+        357
+      ],
+      "sha256": "c35048c5b95233c8827e9ba14272f2e184ada19e4c230d0482b566c71201b648",
+      "bytes": 65978
+    },
+    {
+      "source": "/img/buildings/refined-51/guardian-of-life-monument-icon.webp",
+      "sourceSHA256": "e3c096bf21e52e4c65c9f474e26945d96e9033bd975f9f5cd3a8814134a6825a",
+      "sourceWidth": 240,
+      "sourceHeight": 240,
+      "alphaBounds": [
+        8,
+        4,
+        230,
+        232
+      ],
+      "kind": "building",
+      "src": "/img/v61-normalized/building/guardian-of-life-monument-icon-3e9a1d72.webp",
+      "width": 384,
+      "height": 384,
+      "visibleBounds": [
+        31,
+        27,
+        353,
+        357
+      ],
+      "sha256": "f61b8b3e38abaf199eb9ba554bac95fb149d253683fd8a9ccca56fb34701611e",
+      "bytes": 89970
+    },
+    {
+      "source": "/img/buildings/refined-51/hero-academy-detail.webp",
+      "sourceSHA256": "e4261ef9d32fa9540fcf376f1befa38de6f8ae91c42374b9024f494ef5c9be23",
+      "sourceWidth": 364,
+      "sourceHeight": 413,
+      "alphaBounds": [
+        28,
+        40,
+        364,
+        413
+      ],
+      "kind": "building",
+      "src": "/img/v61-normalized/building/hero-academy-detail-09572036.webp",
+      "width": 384,
+      "height": 384,
+      "visibleBounds": [
+        43,
+        27,
+        340,
+        357
+      ],
+      "sha256": "c4736ecda67c8b87f735dfe070c193e97b406d382390e5d37f35db21a4ab57b3",
+      "bytes": 68576
+    },
+    {
+      "source": "/img/buildings/refined-51/hero-academy-icon.webp",
+      "sourceSHA256": "9196d165ae128658b14b08a1e604e931ae23da796a031dfe22b1c01c29948c5a",
+      "sourceWidth": 240,
+      "sourceHeight": 240,
+      "alphaBounds": [
+        9,
+        6,
+        230,
+        229
+      ],
+      "kind": "building",
+      "src": "/img/v61-normalized/building/hero-academy-icon-1fab5d4b.webp",
+      "width": 384,
+      "height": 384,
+      "visibleBounds": [
+        28,
+        27,
+        355,
+        357
+      ],
+      "sha256": "291077b6cd5638db1bb5a9df9c65cdc283c311ec22bb56f96692a4ae97591d92",
+      "bytes": 92786
+    },
+    {
+      "source": "/img/buildings/refined-51/hospital-detail.webp",
+      "sourceSHA256": "149cdde642f29aa8b8050e33f88c0ddcb58beacefd068a1f5247d71e2e96b83e",
+      "sourceWidth": 406,
+      "sourceHeight": 430,
+      "alphaBounds": [
+        35,
+        34,
+        381,
+        410
+      ],
+      "kind": "building",
+      "src": "/img/v61-normalized/building/hospital-detail-0b1daf8e.webp",
+      "width": 384,
+      "height": 384,
+      "visibleBounds": [
+        40,
+        27,
+        344,
+        357
+      ],
+      "sha256": "3ea7c902b6887e381fa6cac71ea8aae97c88067530fde08a5271bcc41b143051",
+      "bytes": 80772
+    },
+    {
+      "source": "/img/buildings/refined-51/hospital-icon.webp",
+      "sourceSHA256": "780aa89dd43f631a5c757807e1ac815533814da3e956c11c626a9e7b2ad672eb",
+      "sourceWidth": 240,
+      "sourceHeight": 240,
+      "alphaBounds": [
+        9,
+        9,
+        230,
+        229
+      ],
+      "kind": "building",
+      "src": "/img/v61-normalized/building/hospital-icon-d6fe2c66.webp",
+      "width": 384,
+      "height": 384,
+      "visibleBounds": [
+        27,
+        27,
+        357,
+        356
+      ],
+      "sha256": "d5a7148155995afc92bd764ece01da72f14c66f8b8074111fc91d618e5f72a13",
+      "bytes": 97418
+    },
+    {
+      "source": "/img/buildings/refined-51/lab-icon.webp",
+      "sourceSHA256": "a7c9a9e7eb609458fbd273c80a12ce40ab41dee40f8dc81834041088fbebf6fd",
+      "sourceWidth": 240,
+      "sourceHeight": 240,
+      "alphaBounds": [
+        8,
+        4,
+        230,
+        229
+      ],
+      "kind": "building",
+      "src": "/img/v61-normalized/building/lab-icon-200b0923.webp",
+      "width": 384,
+      "height": 384,
+      "visibleBounds": [
+        29,
+        27,
+        355,
+        357
+      ],
+      "sha256": "6890cfcc61ddf838c109628810f82ff9a99b6de1bb3718b2bd985efe309dbfeb",
+      "bytes": 89084
+    },
+    {
+      "source": "/img/buildings/refined-51/power-plant-detail.webp",
+      "sourceSHA256": "9232695e7d4127745e0b88f00f9bf490b1479b1183c196784737a72b63dfaa5a",
+      "sourceWidth": 780,
+      "sourceHeight": 809,
+      "alphaBounds": [
+        51,
+        25,
+        708,
+        765
+      ],
+      "kind": "building",
+      "src": "/img/v61-normalized/building/power-plant-detail-5ba5e24a.webp",
+      "width": 384,
+      "height": 384,
+      "visibleBounds": [
+        45,
+        27,
+        338,
+        357
+      ],
+      "sha256": "e8472d5ad303889db9cb0b3c6ce23deee3dd519d22d42155dbe8945fe25aa5d1",
+      "bytes": 93618
+    },
+    {
+      "source": "/img/buildings/refined-51/power-plant-icon.webp",
+      "sourceSHA256": "e168ae6c119dbd1059a017167c32bf2a93820e3d8776210b2886d09acb91c3b1",
+      "sourceWidth": 240,
+      "sourceHeight": 240,
+      "alphaBounds": [
+        8,
+        0,
+        230,
+        229
+      ],
+      "kind": "building",
+      "src": "/img/v61-normalized/building/power-plant-icon-d18c1164.webp",
+      "width": 384,
+      "height": 384,
+      "visibleBounds": [
+        32,
+        27,
+        352,
+        357
+      ],
+      "sha256": "6ac68efe76fad4f3efe1f1dd559ac1a5bf7d57f08dee54dad8cf3085343ef629",
+      "bytes": 94702
+    },
+    {
+      "source": "/img/buildings/refined-51/warbringer-monument-icon.webp",
+      "sourceSHA256": "144a3c917e43a66bcee66fd4464975f213cc39ff8a8d4c51d083592b6a353b84",
+      "sourceWidth": 240,
+      "sourceHeight": 240,
+      "alphaBounds": [
+        9,
+        12,
+        230,
+        229
+      ],
+      "kind": "building",
+      "src": "/img/v61-normalized/building/warbringer-monument-icon-97c5511d.webp",
+      "width": 384,
+      "height": 384,
+      "visibleBounds": [
+        27,
+        30,
+        357,
+        354
+      ],
+      "sha256": "ad74db49a6902fcbf069316cdf777ef844becd84c6f1d2f2a87710f183586be7",
+      "bytes": 88412
+    },
+    {
+      "source": "/img/buildings/warbringer-monument.png",
+      "sourceSHA256": "7c2a23d0f37d9adad89808c3e432d8c9c90f0996d95d027cb00688b1844c1475",
+      "sourceWidth": 260,
+      "sourceHeight": 303,
+      "alphaBounds": [
+        41,
+        28,
+        209,
+        284
+      ],
+      "kind": "building",
+      "src": "/img/v61-normalized/building/warbringer-monument-c1b596a7.webp",
+      "width": 384,
+      "height": 384,
+      "visibleBounds": [
+        83,
+        27,
+        300,
+        357
+      ],
+      "sha256": "762ef2eeb4db476050b83803ca685e2a804af2889c951ec9d288396e27c54f9d",
+      "bytes": 55718
+    },
+    {
+      "source": "/img/buildings/warbringer-monument.webp",
+      "sourceSHA256": "6c7ed310a2d0b346045cc5b40c1e966c8aaaa8b189960abc47412e8241416927",
+      "sourceWidth": 260,
+      "sourceHeight": 303,
+      "alphaBounds": [
+        41,
+        28,
+        209,
+        284
+      ],
+      "kind": "building",
+      "src": "/img/v61-normalized/building/warbringer-monument-be1aa215.webp",
+      "width": 384,
+      "height": 384,
+      "visibleBounds": [
+        83,
+        27,
+        300,
+        357
+      ],
+      "sha256": "787a5338c7b80d9c83e6835248e34f70b10b2f0605598118fffbd6dbde856bee",
+      "bytes": 57764
+    },
+    {
+      "source": "/img/game-26300/heroes/alita-squad.png",
+      "sourceSHA256": "d5e1de4f519cb46b0c28255aa180f23ffaf568475bdd4b8da641cbff2914e1ae",
+      "sourceWidth": 360,
+      "sourceHeight": 492,
+      "alphaBounds": [
+        0,
+        0,
+        360,
+        492
+      ],
+      "kind": "hero",
+      "src": "/img/v61-normalized/hero/alita-squad-9be4b81a.webp",
+      "width": 480,
+      "height": 640,
+      "visibleBounds": [
+        24,
+        25,
+        455,
+        614
+      ],
+      "sha256": "eabf776db6a31887bc24d60b7ec4d0e5dc353da05aa3239aca51e2cbb5db29dc",
+      "bytes": 296388
+    },
+    {
+      "source": "/img/game-26300/heroes/alita.png",
+      "sourceSHA256": "79ba9f9bdb3f502a2a59860bb60f64390ddb98c19809fc4be11edd9c464df476",
+      "sourceWidth": 628,
+      "sourceHeight": 712,
+      "alphaBounds": [
+        28,
+        0,
+        610,
+        579
+      ],
+      "kind": "hero",
+      "src": "/img/v61-normalized/hero/alita-828b4596.webp",
+      "width": 480,
+      "height": 640,
+      "visibleBounds": [
+        19,
+        175,
+        461,
+        614
+      ],
+      "sha256": "b0ce7830dbe7d544fce3b994a21357a527d6d40f7256bcd15b962864794e6e73",
+      "bytes": 177634
+    },
+    {
+      "source": "/img/game-26300/heroes/furiosa-squad.png",
+      "sourceSHA256": "03afa105cc9b9ab1b115ca54bd54475dd1f2999aab24f93c5e52207a3dc388e7",
+      "sourceWidth": 360,
+      "sourceHeight": 492,
+      "alphaBounds": [
+        0,
+        0,
+        360,
+        492
+      ],
+      "kind": "hero",
+      "src": "/img/v61-normalized/hero/furiosa-squad-9e25fe92.webp",
+      "width": 480,
+      "height": 640,
+      "visibleBounds": [
+        24,
+        25,
+        455,
+        614
+      ],
+      "sha256": "ae2e1f841564f1d00d8ec72be7c267b4383462dd29966a507fb0529937286623",
+      "bytes": 263058
+    },
+    {
+      "source": "/img/game-26300/heroes/furiosa.png",
+      "sourceSHA256": "e7bd147af34a13c58d4e8d0f76560a7ca10458de761d8c5fdd2940557f4feb41",
+      "sourceWidth": 520,
+      "sourceHeight": 712,
+      "alphaBounds": [
+        100,
+        1,
+        495,
+        711
+      ],
+      "kind": "hero",
+      "src": "/img/v61-normalized/hero/furiosa-dd14a962.webp",
+      "width": 480,
+      "height": 640,
+      "visibleBounds": [
+        76,
+        25,
+        404,
+        614
+      ],
+      "sha256": "2e17f6612b2b0462e82d8d174c5fcd9d22ecc584591b4fad6271696522cba14d",
+      "bytes": 183106
+    },
+    {
+      "source": "/img/game-26300/heroes/lava-squad.png",
+      "sourceSHA256": "f4f72b9ea45a52cced8ae6e88ba27bb66dbf1b5af9769ee94494125cbbec96b4",
+      "sourceWidth": 360,
+      "sourceHeight": 492,
+      "alphaBounds": [
+        0,
+        14,
+        360,
+        492
+      ],
+      "kind": "hero",
+      "src": "/img/v61-normalized/hero/lava-squad-f48629d0.webp",
+      "width": 480,
+      "height": 640,
+      "visibleBounds": [
+        19,
+        28,
+        461,
+        614
+      ],
+      "sha256": "ca54572e6aa2d762aa93b1af23d726272c8c613528a1180be88aa73b6200fb83",
+      "bytes": 267154
+    },
+    {
+      "source": "/img/game-40/pets/buckler.webp",
+      "sourceSHA256": "dc887f42edbb04785c3caac2a8717a61c1298afd0519ea9564e9edd26a7cf77b",
+      "sourceWidth": 360,
+      "sourceHeight": 492,
+      "alphaBounds": [
+        5,
+        43,
+        350,
+        433
+      ],
+      "kind": "pet",
+      "src": "/img/v61-normalized/pet/buckler-079c7aa3.webp",
+      "width": 384,
+      "height": 384,
+      "visibleBounds": [
+        46,
+        27,
+        338,
+        357
+      ],
+      "sha256": "9987f01c71d407ac23213516ed58e4e570f0a19e977aea9ee358b408bdab0a6d",
+      "bytes": 83224
+    },
+    {
+      "source": "/img/game-40/pets/dodo.webp",
+      "sourceSHA256": "b8d53fa35538e00de0050e1889c5cc95fcabe2bf5cfb2863a64884f930d86698",
+      "sourceWidth": 360,
+      "sourceHeight": 492,
+      "alphaBounds": [
+        0,
+        48,
+        360,
+        435
+      ],
+      "kind": "pet",
+      "src": "/img/v61-normalized/pet/dodo-72a0434b.webp",
+      "width": 384,
+      "height": 384,
+      "visibleBounds": [
+        38,
+        27,
+        345,
+        357
+      ],
+      "sha256": "b93f4db2d0cff61e379fa6bd7cee5573c35b5376aa41ea1e4aff8a1f2fb6d9e1",
+      "bytes": 71794
+    },
+    {
+      "source": "/img/game-40/pets/fluffy.webp",
+      "sourceSHA256": "c3fd4467860bd3f66025ec4a7e94a44e42aeab7aa67caa5bc0e5a717029558a9",
+      "sourceWidth": 360,
+      "sourceHeight": 492,
+      "alphaBounds": [
+        2,
+        27,
+        358,
+        409
+      ],
+      "kind": "pet",
+      "src": "/img/v61-normalized/pet/fluffy-545d4ee5.webp",
+      "width": 384,
+      "height": 384,
+      "visibleBounds": [
+        38,
+        27,
+        346,
+        357
+      ],
+      "sha256": "847a6cd8f3d23f893648c0e1cef131fcc7128ecc385155676e82cd63a8b03665",
+      "bytes": 72844
+    },
+    {
+      "source": "/img/game-40/pets/hardhead.webp",
+      "sourceSHA256": "84ba9d62b9baffc5dffd3f1935de27d1737e999046dc61fdf794ea7d39e25184",
+      "sourceWidth": 360,
+      "sourceHeight": 492,
+      "alphaBounds": [
+        7,
+        31,
+        356,
+        407
+      ],
+      "kind": "pet",
+      "src": "/img/v61-normalized/pet/hardhead-438fb2ac.webp",
+      "width": 384,
+      "height": 384,
+      "visibleBounds": [
+        38,
+        27,
+        345,
+        357
+      ],
+      "sha256": "98030e2ad2fddd39f03007fa7da7928e6d78ac5d7c0b98a26deaea095820d3bb",
+      "bytes": 79114
+    },
+    {
+      "source": "/img/game-40/pets/shadow.webp",
+      "sourceSHA256": "9d1e71559b2abe83a7932a8df742355315b195e32dc39ce64ff4f769031e799e",
+      "sourceWidth": 360,
+      "sourceHeight": 492,
+      "alphaBounds": [
+        8,
+        11,
+        318,
+        400
+      ],
+      "kind": "pet",
+      "src": "/img/v61-normalized/pet/shadow-6a5c336a.webp",
+      "width": 384,
+      "height": 384,
+      "visibleBounds": [
+        60,
+        27,
+        323,
+        357
+      ],
+      "sha256": "f3bbd7e118c51a4aad6d50d7e4653ef93392fc35f8b74ed8f3598470a01bff93",
+      "bytes": 63802
+    },
+    {
+      "source": "/img/game-40/pets/snowball.webp",
+      "sourceSHA256": "9583116510e7b38d1bddcf2ff4769321cd0e3e00aed4bdcb54549d3dccd60ce3",
+      "sourceWidth": 360,
+      "sourceHeight": 492,
+      "alphaBounds": [
+        15,
+        23,
+        336,
+        417
+      ],
+      "kind": "pet",
+      "src": "/img/v61-normalized/pet/snowball-6b6491f0.webp",
+      "width": 384,
+      "height": 384,
+      "visibleBounds": [
+        57,
+        27,
+        326,
+        357
+      ],
+      "sha256": "17cff802dfa43fd6eb7fb962cd4a7a02c59a66f5d1db9a01b9168e12b8a96b83",
+      "bytes": 55416
+    },
+    {
+      "source": "/img/game-40/pets/starhorn.webp",
+      "sourceSHA256": "886c580f918c0db2752e46dc7681a3f1a905ee1385b3565b2c5786e2cf958ce8",
+      "sourceWidth": 360,
+      "sourceHeight": 492,
+      "alphaBounds": [
+        0,
+        0,
+        360,
+        417
+      ],
+      "kind": "pet",
+      "src": "/img/v61-normalized/pet/starhorn-ee5de93a.webp",
+      "width": 384,
+      "height": 384,
+      "visibleBounds": [
+        49,
+        27,
+        334,
+        357
+      ],
+      "sha256": "a51f802e166574fa5d727396e535ba79fe97130cffd58cf0a6d9662ed26fb5f5",
+      "bytes": 68528
+    },
+    {
+      "source": "/img/game-41/heroes/beka.webp",
+      "sourceSHA256": "9145f4293e011505bebaf7626c751a0e20957130184f55bb1e3d3fb82cf09fc3",
+      "sourceWidth": 388,
+      "sourceHeight": 712,
+      "alphaBounds": [
+        72,
+        27,
+        310,
+        712
+      ],
+      "kind": "hero",
+      "src": "/img/v61-normalized/hero/beka-2e1ec740.webp",
+      "width": 480,
+      "height": 640,
+      "visibleBounds": [
+        137,
+        25,
+        342,
+        614
+      ],
+      "sha256": "81f59659ec34060f5277e2526504af7256504608f77df14db32513560beac757",
+      "bytes": 125434
+    },
+    {
+      "source": "/img/game-41/heroes/candy.webp",
+      "sourceSHA256": "ff25554ee9ad0203c7cbd2a844c4c0e293594ee4a659a9891c9df834564b051c",
+      "sourceWidth": 388,
+      "sourceHeight": 712,
+      "alphaBounds": [
+        75,
+        7,
+        340,
+        712
+      ],
+      "kind": "hero",
+      "src": "/img/v61-normalized/hero/candy-e4e89453.webp",
+      "width": 480,
+      "height": 640,
+      "visibleBounds": [
+        129,
+        25,
+        350,
+        614
+      ],
+      "sha256": "b963d7cc89f0f7d5f57014d17af26adca24761ee1cb0fb0d6844fc4589bcce33",
+      "bytes": 112254
+    },
+    {
+      "source": "/img/game-41/heroes/chef-ken.webp",
+      "sourceSHA256": "6777b5fc67f6ba2e6422e9964bde9422b6a31be5184909520ed1c0f71e7812a2",
+      "sourceWidth": 596,
+      "sourceHeight": 712,
+      "alphaBounds": [
+        58,
+        1,
+        545,
+        705
+      ],
+      "kind": "hero",
+      "src": "/img/v61-normalized/hero/chef-ken-d1849209.webp",
+      "width": 480,
+      "height": 640,
+      "visibleBounds": [
+        36,
+        25,
+        443,
+        614
+      ],
+      "sha256": "073e1858cd870e07b7330c1eb4d382deda4361aad3b30ffa2a0539fa13a752ba",
+      "bytes": 166018
+    },
+    {
+      "source": "/img/game-41/heroes/eva.webp",
+      "sourceSHA256": "47476f2d3c956be19fd3abaabbf2f06cbc3533d5f92146d824c1a02201cc29a5",
+      "sourceWidth": 388,
+      "sourceHeight": 712,
+      "alphaBounds": [
+        92,
+        37,
+        304,
+        712
+      ],
+      "kind": "hero",
+      "src": "/img/v61-normalized/hero/eva-01fe16cb.webp",
+      "width": 480,
+      "height": 640,
+      "visibleBounds": [
+        147,
+        25,
+        332,
+        614
+      ],
+      "sha256": "23ad4ee20c9ec6884e5402548429489df31d92d49e0036d334d60c3cf5599920",
+      "bytes": 104286
+    },
+    {
+      "source": "/img/game-41/heroes/freya.webp",
+      "sourceSHA256": "34a6ab58d7c1c4f8ca33f53cea39a98f8446c8b13577a2d17314ea8c59e5bfcb",
+      "sourceWidth": 596,
+      "sourceHeight": 712,
+      "alphaBounds": [
+        115,
+        30,
+        462,
+        710
+      ],
+      "kind": "hero",
+      "src": "/img/v61-normalized/hero/freya-9a17c040.webp",
+      "width": 480,
+      "height": 640,
+      "visibleBounds": [
+        90,
+        25,
+        390,
+        614
+      ],
+      "sha256": "cc86bf9620e0a784b24be4203ac2a6657d2cf0babe292ccfc9f48179474c3d38",
+      "bytes": 133120
+    },
+    {
+      "source": "/img/game-41/heroes/ghost.webp",
+      "sourceSHA256": "5dcf9e5ed112ab8158071dc147f1d0d13ed263098180a838ccdd5324637dec0d",
+      "sourceWidth": 596,
+      "sourceHeight": 712,
+      "alphaBounds": [
+        114,
+        10,
+        415,
+        712
+      ],
+      "kind": "hero",
+      "src": "/img/v61-normalized/hero/ghost-e7b286a8.webp",
+      "width": 480,
+      "height": 640,
+      "visibleBounds": [
+        114,
+        25,
+        366,
+        614
+      ],
+      "sha256": "4d2099b23196b27fd15229acbabe71b2d00be21161a9468d76514de10fe98bcb",
+      "bytes": 127776
+    },
+    {
+      "source": "/img/game-41/heroes/jacob.webp",
+      "sourceSHA256": "9688436a36379bea32c683b481b4464e6ac6912b5b98b2470356a8bd7bde5c3e",
+      "sourceWidth": 452,
+      "sourceHeight": 712,
+      "alphaBounds": [
+        44,
+        5,
+        417,
+        708
+      ],
+      "kind": "hero",
+      "src": "/img/v61-normalized/hero/jacob-8f060c94.webp",
+      "width": 480,
+      "height": 640,
+      "visibleBounds": [
+        84,
+        25,
+        396,
+        614
+      ],
+      "sha256": "0bc08a8d352f9ac5a32c46638f0d09a08712ac6fb5c61438c4a7b7464d3ae9b4",
+      "bytes": 133038
+    },
+    {
+      "source": "/img/game-41/heroes/kiki.webp",
+      "sourceSHA256": "056f6046a72f7e0bf45f457a67b7732c97a86de29078b6935e41dc777e44c4c8",
+      "sourceWidth": 488,
+      "sourceHeight": 712,
+      "alphaBounds": [
+        60,
+        19,
+        460,
+        709
+      ],
+      "kind": "hero",
+      "src": "/img/v61-normalized/hero/kiki-530de369.webp",
+      "width": 480,
+      "height": 640,
+      "visibleBounds": [
+        69,
+        25,
+        410,
+        614
+      ],
+      "sha256": "64cbe55fbd07775bf43c5e63ef204c2ee9344845f08a8502127abb76d23b12e4",
+      "bytes": 161256
+    },
+    {
+      "source": "/img/game-41/heroes/kiron.webp",
+      "sourceSHA256": "c52b284e1dff6873170ff6c0ee9ff9668631f04fc6429ff8c7779b51d003c97d",
+      "sourceWidth": 752,
+      "sourceHeight": 712,
+      "alphaBounds": [
+        0,
+        27,
+        691,
+        712
+      ],
+      "kind": "hero",
+      "src": "/img/v61-normalized/hero/kiron-2d732508.webp",
+      "width": 480,
+      "height": 640,
+      "visibleBounds": [
+        19,
+        176,
+        461,
+        614
+      ],
+      "sha256": "40dbdcf8910d6a2ede4b89b052a2f02e31e8e4ab0163f83c7631d2c2d0e566ca",
+      "bytes": 111766
+    },
+    {
+      "source": "/img/game-41/heroes/knotty.webp",
+      "sourceSHA256": "62146c61d7f40538969d1cfdb12856a16de379094271df88d060b189a9f8b498",
+      "sourceWidth": 596,
+      "sourceHeight": 712,
+      "alphaBounds": [
+        90,
+        7,
+        489,
+        565
+      ],
+      "kind": "hero",
+      "src": "/img/v61-normalized/hero/knotty-bac09366.webp",
+      "width": 480,
+      "height": 640,
+      "visibleBounds": [
+        29,
+        25,
+        450,
+        614
+      ],
+      "sha256": "a88b2bc39b9f1f08b13b17ff1199d61930f80c6509892b7f3b419f0c0451c89d",
+      "bytes": 205514
+    },
+    {
+      "source": "/img/game-41/heroes/laila.webp",
+      "sourceSHA256": "ed13920670d248292d34730ffabfadb42c8be3093c67eea98277b75bf375e9ff",
+      "sourceWidth": 596,
+      "sourceHeight": 712,
+      "alphaBounds": [
+        23,
+        1,
+        469,
+        712
+      ],
+      "kind": "hero",
+      "src": "/img/v61-normalized/hero/laila-f175bada.webp",
+      "width": 480,
+      "height": 640,
+      "visibleBounds": [
+        55,
+        25,
+        424,
+        614
+      ],
+      "sha256": "a9bef14a5395401530d6485981be3119099c3e43b0ec880723c235e739651faf",
+      "bytes": 136042
+    },
+    {
+      "source": "/img/game-41/heroes/lava.png",
+      "sourceSHA256": "bee07232e2d8419294186d535633e6dc0ca493fb7b04988ddfc836b386b63ee2",
+      "sourceWidth": 840,
+      "sourceHeight": 712,
+      "alphaBounds": [
+        10,
+        11,
+        830,
+        687
+      ],
+      "kind": "hero",
+      "src": "/img/v61-normalized/hero/lava-840c3dd7.webp",
+      "width": 480,
+      "height": 640,
+      "visibleBounds": [
+        19,
+        250,
+        461,
+        614
+      ],
+      "sha256": "b27a15ccccf88a027a9b95de0b0e9c51da26b30e42cc5bec607533c3c074883c",
+      "bytes": 150782
+    },
+    {
+      "source": "/img/game-41/heroes/light.webp",
+      "sourceSHA256": "164bab64f9ee1cb044a233c7673391d01024a7aa9109843e68c778860ffc6de6",
+      "sourceWidth": 644,
+      "sourceHeight": 712,
+      "alphaBounds": [
+        30,
+        9,
+        590,
+        712
+      ],
+      "kind": "hero",
+      "src": "/img/v61-normalized/hero/light-87899d73.webp",
+      "width": 480,
+      "height": 640,
+      "visibleBounds": [
+        19,
+        60,
+        461,
+        614
+      ],
+      "sha256": "456eaa46743ea9a45f41402ad6b126fed439de5fb9a72058422f60b0bcc37774",
+      "bytes": 182232
+    },
+    {
+      "source": "/img/game-41/heroes/lucky.webp",
+      "sourceSHA256": "f8b8bdfb44294e42d4314cc034b407daccea8ab3d13b5e63dcc9a4003ea0b00e",
+      "sourceWidth": 388,
+      "sourceHeight": 712,
+      "alphaBounds": [
+        70,
+        16,
+        341,
+        707
+      ],
+      "kind": "hero",
+      "src": "/img/v61-normalized/hero/lucky-d4a1a655.webp",
+      "width": 480,
+      "height": 640,
+      "visibleBounds": [
+        124,
+        25,
+        355,
+        614
+      ],
+      "sha256": "fdd3e1f4df5a8dc21113cf43b7bc62780b020cbb57f1130b4b5950bfa1ebee66",
+      "bytes": 120404
+    },
+    {
+      "source": "/img/game-41/heroes/maddy.webp",
+      "sourceSHA256": "12ee081a8e8bb827cc530a4a88e5ea3328ae51e7de30effc3b2766a366f5b78d",
+      "sourceWidth": 388,
+      "sourceHeight": 712,
+      "alphaBounds": [
+        0,
+        7,
+        345,
+        712
+      ],
+      "kind": "hero",
+      "src": "/img/v61-normalized/hero/maddy-362efce4.webp",
+      "width": 480,
+      "height": 640,
+      "visibleBounds": [
+        96,
+        25,
+        384,
+        614
+      ],
+      "sha256": "4072c72451c22334f932dd767843a2e2ff40cbacb4429f8698881ee9a6898525",
+      "bytes": 136378
+    },
+    {
+      "source": "/img/game-41/heroes/mike.webp",
+      "sourceSHA256": "20e2fe90ff66aaf42fd56dd48409c0ac4c0ef6bb9d2da2617c59b3324feb1544",
+      "sourceWidth": 596,
+      "sourceHeight": 712,
+      "alphaBounds": [
+        19,
+        0,
+        540,
+        712
+      ],
+      "kind": "hero",
+      "src": "/img/v61-normalized/hero/mike-7ea7ee25.webp",
+      "width": 480,
+      "height": 640,
+      "visibleBounds": [
+        24,
+        25,
+        455,
+        614
+      ],
+      "sha256": "63d1a290c3f197487588575603e26f6c69517d218d4f6a29b99e5a53ae9e40b2",
+      "bytes": 227948
+    },
+    {
+      "source": "/img/game-41/heroes/nikola.webp",
+      "sourceSHA256": "0f5d7f0247e033f424dbc935c0c1278c272f72a389da612c57f5171bb8a9682f",
+      "sourceWidth": 596,
+      "sourceHeight": 712,
+      "alphaBounds": [
+        129,
+        29,
+        512,
+        712
+      ],
+      "kind": "hero",
+      "src": "/img/v61-normalized/hero/nikola-5eb7aa03.webp",
+      "width": 480,
+      "height": 640,
+      "visibleBounds": [
+        75,
+        25,
+        405,
+        614
+      ],
+      "sha256": "6280b7267bf5247f2bb0f4db0eea8d04e16c2fa8faa8260b3203ff9f5e08d3c3",
+      "bytes": 137516
+    },
+    {
+      "source": "/img/game-41/heroes/ray.webp",
+      "sourceSHA256": "e1de94ee5d69de91cf4b4a5d328d7191d5dcbeaa001469dbfcff813e550dadfb",
+      "sourceWidth": 596,
+      "sourceHeight": 712,
+      "alphaBounds": [
+        115,
+        32,
+        495,
+        712
+      ],
+      "kind": "hero",
+      "src": "/img/v61-normalized/hero/ray-988dd6dc.webp",
+      "width": 480,
+      "height": 640,
+      "visibleBounds": [
+        75,
+        25,
+        404,
+        614
+      ],
+      "sha256": "369e4c0b843bc12f5d28067bb982ae407c05c5fe672a51ffeecc5c197eb78390",
+      "bytes": 147496
+    },
+    {
+      "source": "/img/game-41/heroes/rosie.webp",
+      "sourceSHA256": "c8809937d46909882e97a9071f75daa659a47d43a9c7d010c2f5b533b4480e85",
+      "sourceWidth": 596,
+      "sourceHeight": 712,
+      "alphaBounds": [
+        69,
+        20,
+        487,
+        702
+      ],
+      "kind": "hero",
+      "src": "/img/v61-normalized/hero/rosie-b685af26.webp",
+      "width": 480,
+      "height": 640,
+      "visibleBounds": [
+        59,
+        25,
+        420,
+        614
+      ],
+      "sha256": "b3302b38f03cfcca2c5a7e9bec17dde063678a6e9cf32e93bfe5a0b13aecb1a6",
+      "bytes": 127980
+    },
+    {
+      "source": "/img/game-41/heroes/rusty.webp",
+      "sourceSHA256": "6ac2c0cd85f655ecf6db20c45542071170888062f52fdcd4437d9bd0fc1eb38d",
+      "sourceWidth": 596,
+      "sourceHeight": 712,
+      "alphaBounds": [
+        12,
+        6,
+        575,
+        709
+      ],
+      "kind": "hero",
+      "src": "/img/v61-normalized/hero/rusty-05eb539d.webp",
+      "width": 480,
+      "height": 640,
+      "visibleBounds": [
+        19,
+        63,
+        461,
+        614
+      ],
+      "sha256": "4e893f85a7a48fa976b9508a44cb681ebe07e24eac4b631373ee4a72ad5c46d4",
+      "bytes": 184742
+    },
+    {
+      "source": "/img/game-41/heroes/sarge.webp",
+      "sourceSHA256": "a9a8d83ee4d0ac6a04a152f8bdd69227080d70ba4400082699aa762c6ba25cdc",
+      "sourceWidth": 388,
+      "sourceHeight": 712,
+      "alphaBounds": [
+        0,
+        32,
+        365,
+        710
+      ],
+      "kind": "hero",
+      "src": "/img/v61-normalized/hero/sarge-587a5e7a.webp",
+      "width": 480,
+      "height": 640,
+      "visibleBounds": [
+        81,
+        25,
+        398,
+        614
+      ],
+      "sha256": "14f7a249d07c970ac53c18a9b76893535fd640751577b230b84bfa963e3213de",
+      "bytes": 161360
+    },
+    {
+      "source": "/img/game-41/heroes/shark.webp",
+      "sourceSHA256": "e08c8094830b125c754b673747094a9b159c60052f6b77cd1a1ee01659462b20",
+      "sourceWidth": 640,
+      "sourceHeight": 712,
+      "alphaBounds": [
+        0,
+        0,
+        626,
+        708
+      ],
+      "kind": "hero",
+      "src": "/img/v61-normalized/hero/shark-d89dd016.webp",
+      "width": 480,
+      "height": 640,
+      "visibleBounds": [
+        19,
+        115,
+        461,
+        614
+      ],
+      "sha256": "c3b5611fc5d012e044d074fce57e7a596c8b16535f3c6feb3dc1a5fd3ab93e3c",
+      "bytes": 168604
+    },
+    {
+      "source": "/img/game-41/heroes/tara.webp",
+      "sourceSHA256": "cf7c5ba7fe4d1c8743448a538030a28640ee2f407e0baf3cb0a141b28efd31ea",
+      "sourceWidth": 560,
+      "sourceHeight": 712,
+      "alphaBounds": [
+        34,
+        4,
+        528,
+        712
+      ],
+      "kind": "hero",
+      "src": "/img/v61-normalized/hero/tara-a52c2874.webp",
+      "width": 480,
+      "height": 640,
+      "visibleBounds": [
+        34,
+        25,
+        445,
+        614
+      ],
+      "sha256": "bf2a66718d85a291925ce0c9553f9839cfaa4db8fd3b75023ea460bab11e0b3c",
+      "bytes": 163816
+    },
+    {
+      "source": "/img/game-41/heroes/tarzan.webp",
+      "sourceSHA256": "3952144aa8f8905dc6e1a344d778112a00ed65c8ba840135136880df0ed41b9d",
+      "sourceWidth": 520,
+      "sourceHeight": 712,
+      "alphaBounds": [
+        8,
+        3,
+        505,
+        712
+      ],
+      "kind": "hero",
+      "src": "/img/v61-normalized/hero/tarzan-3b68cb24.webp",
+      "width": 480,
+      "height": 640,
+      "visibleBounds": [
+        33,
+        25,
+        446,
+        614
+      ],
+      "sha256": "4b889a0429657d9a34f11aeed0dce835db63e94799bfaa17d771b765e155cbd1",
+      "bytes": 206776
+    },
+    {
+      "source": "/img/game-41/heroes/tony.webp",
+      "sourceSHA256": "bc0d1cd61c915e11cc50fca96cfbc37e784866226150099c573f4bd3c9a01798",
+      "sourceWidth": 388,
+      "sourceHeight": 712,
+      "alphaBounds": [
+        31,
+        39,
+        360,
+        707
+      ],
+      "kind": "hero",
+      "src": "/img/v61-normalized/hero/tony-71a292dd.webp",
+      "width": 480,
+      "height": 640,
+      "visibleBounds": [
+        95,
+        25,
+        385,
+        614
+      ],
+      "sha256": "203bf6f6805659351fb1eb25980a352c06906a97f5d6ba344a2a65120eff767c",
+      "bytes": 112366
+    },
+    {
+      "source": "/img/game-41/heroes/travis.webp",
+      "sourceSHA256": "c7fdf0a831edfd124c3a61f86047a265e5ea878694e396d81af8848b2e6efff1",
+      "sourceWidth": 388,
+      "sourceHeight": 712,
+      "alphaBounds": [
+        15,
+        17,
+        386,
+        712
+      ],
+      "kind": "hero",
+      "src": "/img/v61-normalized/hero/travis-5b1492d9.webp",
+      "width": 480,
+      "height": 640,
+      "visibleBounds": [
+        83,
+        25,
+        397,
+        614
+      ],
+      "sha256": "e6f0d843457d32e9864592714d0237200480ff62fc8231aa3f21bc8692660b06",
+      "bytes": 139564
+    },
+    {
+      "source": "/img/pets/buckler.webp",
+      "sourceSHA256": "0ac134e994a2bb81fc96df9318a8e88cbf4f0b51aaf94b2beb07e45595c3c0c3",
+      "sourceWidth": 71,
+      "sourceHeight": 68,
+      "alphaBounds": [
+        0,
+        0,
+        71,
+        68
+      ],
+      "kind": "pet",
+      "src": "/img/v61-normalized/pet/buckler-60954694.webp",
+      "width": 384,
+      "height": 384,
+      "visibleBounds": [
+        27,
+        34,
+        357,
+        350
+      ],
+      "sha256": "647236defb6cd94fbad05be52c6fa121f34db08dd9323fc737d90c0c7b03858c",
+      "bytes": 47272
+    },
+    {
+      "source": "/img/pets/dodo.webp",
+      "sourceSHA256": "72e8cf827a1a14520aace082cc58744b048d3a4685cf75f8fe895e332929f0d0",
+      "sourceWidth": 71,
+      "sourceHeight": 75,
+      "alphaBounds": [
+        0,
+        0,
+        71,
+        75
+      ],
+      "kind": "pet",
+      "src": "/img/v61-normalized/pet/dodo-cee11872.webp",
+      "width": 384,
+      "height": 384,
+      "visibleBounds": [
+        35,
+        27,
+        348,
+        357
+      ],
+      "sha256": "dc00c9bbc2aa3a609c32ae6c29266db7b0a9f4fb89881ce0f61c477a0edb8485",
+      "bytes": 51654
+    },
+    {
+      "source": "/img/pets/fluffy.webp",
+      "sourceSHA256": "ebebe52c289c640ff5ef3724c597df3cd773bef3373d02003c61a6f4d2c0e040",
+      "sourceWidth": 66,
+      "sourceHeight": 69,
+      "alphaBounds": [
+        0,
+        0,
+        66,
+        69
+      ],
+      "kind": "pet",
+      "src": "/img/v61-normalized/pet/fluffy-369a4bd5.webp",
+      "width": 384,
+      "height": 384,
+      "visibleBounds": [
+        34,
+        27,
+        350,
+        357
+      ],
+      "sha256": "37981b7f7bce65d7b6e019008554aee8c4a3376de6f40672a93e9a2e4b7304c6",
+      "bytes": 41246
+    },
+    {
+      "source": "/img/pets/growth-source.webp",
+      "sourceSHA256": "3421c6942ae198bd9b4ef56ce713c424aac0785629802c9685a43dc2dfa03894",
+      "sourceWidth": 731,
+      "sourceHeight": 920,
+      "alphaBounds": [
+        0,
+        0,
+        731,
+        920
+      ],
+      "kind": "pet",
+      "src": "/img/v61-normalized/pet/growth-source-241ecdd3.webp",
+      "width": 384,
+      "height": 384,
+      "visibleBounds": [
+        61,
+        27,
+        323,
+        357
+      ],
+      "sha256": "dafe3659278627e17f469eb9882288daf8cedb0a85a1a9a8affbf5f5705dde6b",
+      "bytes": 108780
+    },
+    {
+      "source": "/img/pets/hardhead.webp",
+      "sourceSHA256": "8967008934757f5db7fcf3a611f3c54204b10e8e2c69aa4b5f98d7d0e4091d00",
+      "sourceWidth": 64,
+      "sourceHeight": 70,
+      "alphaBounds": [
+        0,
+        0,
+        64,
+        70
+      ],
+      "kind": "pet",
+      "src": "/img/v61-normalized/pet/hardhead-b62f9708.webp",
+      "width": 384,
+      "height": 384,
+      "visibleBounds": [
+        41,
+        27,
+        343,
+        357
+      ],
+      "sha256": "f8e38f3ab5fb5d6f166efdc4f8eeb29eb30407edc8e0705660deb215b0d75f5e",
+      "bytes": 46332
+    },
+    {
+      "source": "/img/pets/shadow.webp",
+      "sourceSHA256": "ed26889328c8ecefdd8fac67af00df971ba9adecd02332c3b407b07ed648c53f",
+      "sourceWidth": 69,
+      "sourceHeight": 66,
+      "alphaBounds": [
+        0,
+        0,
+        69,
+        66
+      ],
+      "kind": "pet",
+      "src": "/img/v61-normalized/pet/shadow-04d2e00c.webp",
+      "width": 384,
+      "height": 384,
+      "visibleBounds": [
+        27,
+        34,
+        357,
+        350
+      ],
+      "sha256": "6815b18989c47bdcd9213ae70272612843e0ed0ab0be266127ea5680b38799a1",
+      "bytes": 47754
+    },
+    {
+      "source": "/img/pets/snowball.webp",
+      "sourceSHA256": "e5373aeb2aa588435bc9548b684e52041e2d80a949a626109574d6144424bfc7",
+      "sourceWidth": 70,
+      "sourceHeight": 69,
+      "alphaBounds": [
+        0,
+        0,
+        70,
+        69
+      ],
+      "kind": "pet",
+      "src": "/img/v61-normalized/pet/snowball-16e11edb.webp",
+      "width": 384,
+      "height": 384,
+      "visibleBounds": [
+        27,
+        29,
+        357,
+        355
+      ],
+      "sha256": "43806e2371a4614a6e7fd997567161c05cecd51fbf6bf611b0cadbca2c2a768d",
+      "bytes": 44466
+    },
+    {
+      "source": "/img/pets/starhorn.webp",
+      "sourceSHA256": "6698dff581ae307fc6f49c8a9d48a6dceb472c6ec1f11d66a2de591561a8fe46",
+      "sourceWidth": 68,
+      "sourceHeight": 70,
+      "alphaBounds": [
+        0,
+        0,
+        68,
+        70
+      ],
+      "kind": "pet",
+      "src": "/img/v61-normalized/pet/starhorn-88bbb8eb.webp",
+      "width": 384,
+      "height": 384,
+      "visibleBounds": [
+        31,
+        27,
+        352,
+        357
+      ],
+      "sha256": "d9783cbefdda202217fa2670c4656c90dd505ecc19ee0c579ea9b387cbff0e38",
+      "bytes": 48850
+    }
+  ]
+}

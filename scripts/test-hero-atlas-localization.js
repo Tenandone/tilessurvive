@@ -47,7 +47,7 @@ test('German keeps atlas text and assets outside its generic catalog while retai
 test('Traditional-to-Simplified Chinese uses the reviewed atlas owner and preserves original JSON numbers',()=>{
  for(const id of routeIds){const source=readSource(id,'zh-tw'),before=originalNumbers(parseHTML(source).document),out=CN.localizePage(source,groupFor(id),groups),d=checkOutput(out.html,'zh-cn',id);
   assert.equal(d.documentElement.lang,'zh-Hans');assert.equal(d.querySelector('meta[name="robots"]').content,'noindex,nofollow');assert.deepEqual(originalNumbers(d),before,id+' original numeric data');
-  const expected=parseHTML(A.project(out.html,'zh-cn',groupFor(id).routes['zh-cn'])).document;assert.deepEqual(ownerSnapshot(d),ownerSnapshot(expected));
+  const expected=parseHTML(A.project(out.html,'zh-cn',groupFor(id).routes['zh-cn'])).document;assert.deepEqual(ownerSnapshot(parseHTML(V6.strip(out.html)).document),ownerSnapshot(expected));
  }
 });
 
@@ -73,8 +73,9 @@ test('in-memory V3 regeneration preserves all 672 reviewed atlas outputs and eve
  const comparable=html=>{const blocks=html.match(/<!-- TS_V3_ASSETS_BEGIN -->[\s\S]*?<!-- TS_V3_ASSETS_END -->/g);assert.equal(blocks?.length,1,'exactly one reviewed V3 asset block');return parseHTML(html.replace(blocks[0],'').replace('</head>',blocks[0]+'</head>')).document.toString();};
  const owned=groups.filter(g=>A.isOwnedRoute(g.routes.en));assert.equal(owned.length,32);
  for(const group of owned)for(const locale of codes){
-  const route=group.routes[locale],source=fs.readFileSync(path.join(ROOT,route.slice(1),'index.html'),'utf8'),before=parseHTML(source).document;
-  A.validateOwnership(source,locale,route);V4.validateOwnership(source,locale,route);
+  const route=group.routes[locale],source=fs.readFileSync(path.join(ROOT,route.slice(1),'index.html'),'utf8');
+  A.validateOwnership(source,locale,route);V4.validateOwnership(source,locale,route);V6.validateOwnership(source,locale,route);
+  const before=parseHTML(V6.strip(source)).document;
   const output=P.project(source,locale,route),after=parseHTML(output).document;
   A.validateOwnership(output,locale,route);assert.deepEqual(ownerSnapshot(after),ownerSnapshot(before),locale+' '+group.id+' exact atlas owner preserved');
   assert.deepEqual(originalNumbers(after),originalNumbers(before),locale+' '+group.id+' unchanged numeric models');

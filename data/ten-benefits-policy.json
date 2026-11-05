@@ -1,21 +1,50 @@
 {
-  "schemaVersion": 1,
+  "schemaVersion": 2,
   "policyId": "ten-monthly-member-benefits",
-  "confirmedOn": "2026-11-04",
+  "confirmedOn": "2026-11-05",
   "source": "TilesSurvive.net operator-provided policy and payout record",
   "tenUrl": "https://www.lootbar.com/ko/shop/ten/top-up/tiles-survive",
   "frequency": "monthly",
-  "eligibility": "Qualifying top-ups attributed to the TEN affiliate link, checked by the operator under the operating policy",
+  "eligibility": "All members who have topped up through the TEN link published on TilesSurvive.net, including members who topped up only once",
   "applicationRequired": false,
   "coupons": {
-    "recipientRule": "Users who meet the operating eligibility conditions",
+    "recipientRule": "all-ten-top-up-members",
+    "includesOneTimeTopUpMembers": true,
+    "issuancePercent": 100,
+    "issuanceGuaranteed": true,
+    "lifetimeIssuanceAfterOneTopUp": false,
     "discountPercent": null,
-    "minimumTopUpAmount": null
+    "minimumTopUpAmount": null,
+    "delivery": "lootbar-coupon-bag"
   },
   "freePackages": {
     "selection": "draw",
     "automaticEligibleEntry": true,
-    "guaranteedForEveryParticipant": false
+    "entryBasis": "monthly-cumulative-ten-top-up-records",
+    "guaranteedForEveryParticipant": false,
+    "delivery": "lootbar-coupon-bag"
+  },
+  "additionalCoupon": {
+    "code": "#s4qU",
+    "oneTime": true,
+    "newMembersOnly": false,
+    "existingMembersCanSignIn": true,
+    "redemptionSurface": "lootbar-search-box",
+    "authority": "operator-confirmed",
+    "confirmedOn": "2026-11-05",
+    "publicProviderVerification": "pending",
+    "accountRedemptionTested": false
+  },
+  "priceOffer": {
+    "maximumApproximateDiscountPercent": 24,
+    "status": "operator-confirmed",
+    "checkedOn": "2026-11-05",
+    "basis": "operator-stated-conservative-display",
+    "sourceBaseDiscountPercent": 26,
+    "couponNotCombined": true,
+    "independentlyPriceVerified": false,
+    "appliesToEveryPackage": false,
+    "priceURL": "https://www.lootbar.com/ko/shop/ten/top-up/tiles-survive"
   },
   "history": [
     {
@@ -32,5 +61,5 @@
       "futureCompositionGuaranteed": false
     }
   ],
-  "conditionsMayVary": true
+  "couponUseConditionsMayVary": true
 }

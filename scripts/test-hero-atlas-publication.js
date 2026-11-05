@@ -110,7 +110,7 @@ test('retained portraits and source-bound current native media preserve exact im
  assert.equal(lava.pixelSHA256,'a0b176d74deb87af2ad65ff1cc7f3abef3f5c82bc4c9ee40ef2271722fb1336f');assert.equal(lava.spritePathId,'-1185611860183176785');
  const bytes=fs.readFileSync(path.join(ROOT,lava.src.slice(1)));assert.equal(sha(bytes),lava.sha256);assert.equal(bytes.readUInt32BE(16),840);assert.equal(bytes.readUInt32BE(20),712);
  for(const r of R.heroes)for(const l of locales){const image=r.images[l];assert(image?.src,r.id+':'+l);const p=image.src.replace(/^\//,'').split('?')[0];if(r.id==='lava')assert.equal(image.src,lava.src);else assert(originalImages.has(p)||verifiedImages.has('/'+p),p+' was not a retained or verified native image');assert(fs.existsSync(path.join(ROOT,p)),p+' missing');}
- for(const {file}of hubs){const d=doc(read(file));for(const n of d.querySelectorAll('.hero-atlas-card img')){const p=n.getAttribute('src').replace(/^\//,'').split('?')[0];assert(originalImages.has(p)||'/'+p===lava.src||verifiedImages.has('/'+p));assert(fs.existsSync(path.join(ROOT,p)));}assert.equal(d.querySelector('[data-atlas-id="lava"] img').getAttribute('src'),lava.src);}
+ for(const {file}of hubs){const d=doc(normalizeSharedHash(read(file),file));for(const n of d.querySelectorAll('.hero-atlas-card img')){const p=n.getAttribute('src').replace(/^\//,'').split('?')[0];assert(originalImages.has(p)||'/'+p===lava.src||verifiedImages.has('/'+p));assert(fs.existsSync(path.join(ROOT,p)));}assert.equal(d.querySelector('[data-atlas-id="lava"] img').getAttribute('src'),lava.src);}
 });
 test('three native portraits, twelve skill icons and three gear icons are bound to verified client keys',()=>{
  assert.deepEqual(MEDIA.version,{game:'2.6.300',build:1531,assetManifest:'2.6.300.1547'});
@@ -124,7 +124,7 @@ test('three native portraits, twelve skill icons and three gear icons are bound 
   const media=MEDIA.heroes[h.id],portrait=MEDIA.byNativeKey[h.imageKeys.full];assert.deepEqual(media.portrait,portrait);assert.deepEqual(media.squadPortrait,MEDIA.byNativeKey[h.imageKeys.portrait]);assert.equal(X.record(h.id).portrait.src,portrait.src);assert.equal(h.skills.length,4);
   for(const skill of h.skills){assert.deepEqual(skill.icon,MEDIA.byNativeKey[skill.iconKey]);assert.deepEqual(media.skills[skill.clientId],skill.icon);}
   assert.deepEqual(media.gearSkillIcon,h.exclusiveGear.skillIcon);assert.deepEqual(h.exclusiveGear.skillIcon,MEDIA.byNativeKey[h.exclusiveGear.skillIcon.nativeKey]);
-  for(const l of locales){assert.equal(R.heroes.find(r=>r.id===h.id).images[l].src,portrait.src);const d=doc(read(fileFor(routeFor(h.id,l))));assert.equal(d.querySelector('[data-hero-atlas-owned="xssr"] .hero-atlas-portrait')?.getAttribute('src'),portrait.src);for(const skill of h.skills)assert.equal(d.querySelector('[data-xssr-skill="'+skill.clientId+'"] img')?.getAttribute('src'),skill.icon.src);assert.equal(d.querySelector('#'+h.id+'-gear img')?.getAttribute('src'),h.exclusiveGear.skillIcon.src);}
+  for(const l of locales){assert.equal(R.heroes.find(r=>r.id===h.id).images[l].src,portrait.src);const file=fileFor(routeFor(h.id,l)),d=doc(normalizeSharedHash(read(file),file));assert.equal(d.querySelector('[data-hero-atlas-owned="xssr"] .hero-atlas-portrait')?.getAttribute('src'),portrait.src);for(const skill of h.skills)assert.equal(d.querySelector('[data-xssr-skill="'+skill.clientId+'"] img')?.getAttribute('src'),skill.icon.src);assert.equal(d.querySelector('#'+h.id+'-gear img')?.getAttribute('src'),h.exclusiveGear.skillIcon.src);}
  }
 });
 test('every Lava skip link and breadcrumb target the current hero page',()=>{
@@ -150,18 +150,41 @@ test('unrelated tracked HTML and existing non-search game data remain unchanged 
  const changedHtml=git('diff','--name-only',BASELINE,'--','*.html').trim().split(/\r?\n/).filter(Boolean),sharedRefresh=changedHtml.filter(f=>!permitted.has(f)),V3=require('./build-v3-platform');loadBaseline(sharedRefresh);
  const affiliateHash=sha(fs.readFileSync(path.join(ROOT,'js/v3-affiliate.js'))).slice(0,12);
  for(const file of sharedRefresh){const html=read(file),locale=file.split('/')[0],route='/'+file.replace(/index\.html$/,'');assert(allLocales.includes(locale),file+' unreviewed route');
+  if(route===`/${locale}/codes/`||route===`/${locale}/top-up/`){
+   const Gift=require('./build-gift-codes');let expected=V3.project(before(file),locale,route);if(route===`/${locale}/codes/`){expected=Gift.project(expected,locale);Gift.validateOwnership(html,locale);}else V3.validateOwnership(html,locale,route);
+   require('./client-release-gate').verifyPreserved(before(file),html,file);
+   assert.equal(doc(normalizeSharedHash(html,file)).documentElement.outerHTML,doc(normalizeSharedHash(expected,file)).documentElement.outerHTML,file+' exact reviewed gift/TEN projection');continue;
+  }
   // Most global refreshes change only this one hash. Byte equality after that
   // exact substitution is stronger and much faster than reparsing every page.
   if(normalizeSharedHash(html,file)===normalizeSharedHash(before(file),file)){for(const m of html.matchAll(/\/js\/v3-affiliate\.js\?v=([a-f0-9]{12})/g))assert.equal(m[1],affiliateHash,file+' stale affiliate hash');continue;}
   V3.validateOwnership(html,locale,route);assert.equal(doc(normalizeSharedHash(V3.strip(html),file)).documentElement.outerHTML,doc(normalizeSharedHash(V3.strip(before(file)),file)).documentElement.outerHTML,file+' unowned HTML changed');for(const n of doc(html).querySelectorAll('[data-v3-owned="assets"]')){const url=new URL(n.getAttribute('src')||n.getAttribute('href'),'https://tilessurvive.net');assert.equal(url.searchParams.get('v'),sha(fs.readFileSync(path.join(ROOT,url.pathname.slice(1)))).slice(0,12),file+' stale shared asset');}}
  const newModels=new Set(['data/hero-growth-profiles.json','data/v5-landing-copy.json','data/xssr-detail-copy.json','data/xssr-details.json','data/xssr-presentation.json','data/xssr-skill-values.json','data/xssr-heroes.json','data/xssr-copy.json','data/xssr-lava-growth.json','data/hero-guide-copy.json','data/hero-guide-presentation.json','data/hero-atlas-client.json','data/hero-atlas-copy.json','data/hero-atlas-publication.json','data/hero-atlas-routes.json','data/hero-atlas-search-legacy.json','data/client-image-evidence.json','data/hero-pet-relations.json','data/hero-pet-copy.json','data/v4-formation.json','data/v4-formation-copy.json','data/v4-economy.json','data/v4-economy-copy.json','data/v4-workbench-copy.json','data/v4-provenance.json']);
- // Same narrow contract as test-ten-benefits-copy: only the 21 requested
- // closing sentences may differ from the deployed TEN source, never policy,
- // amounts or any other affiliate field. Do not broadly allow that whole file.
- const tenPrior=JSON.parse(git('show','8a7c777d20b34acfa3068699dd888cef6b6ad38a:data/v3-affiliate-copy.json')),tenCurrent=JSON.parse(read('data/v3-affiliate-copy.json'));
- assert.equal(tenCurrent.locales.ko.tenHistoryCaveat,'많이 이용해 주실수록 더욱 풍성한 보상과 혜택으로 보답하겠습니다.');
- for(const l of allLocales){assert.equal(typeof tenCurrent.locales[l].tenHistoryCaveat,'string');assert(tenCurrent.locales[l].tenHistoryCaveat.trim());tenCurrent.locales[l].tenHistoryCaveat=tenPrior.locales[l].tenHistoryCaveat;}
- assert.deepEqual(tenCurrent,tenPrior,'Only approved TEN closing copy may change');newModels.add('data/v3-affiliate-copy.json');
+ // Share the exact V6.1 operator-policy exception with the dedicated TEN
+ // suites. Every other affiliate field and the complete payout record remain
+ // equal to the deployed source; no whole-file policy bypass is allowed.
+ const tenPrior=JSON.parse(git('show','5bd9065aa00e773895cf41ba3f6625452c0e401f:data/v3-affiliate-copy.json')),tenCurrent=JSON.parse(read('data/v3-affiliate-copy.json'));
+ require('./ten-benefits-test-contract').assertCopyTransition(tenPrior,tenCurrent);
+ require('./ten-benefits-test-contract').assertPolicyTransition(JSON.parse(before('data/ten-benefits-policy.json')),JSON.parse(read('data/ten-benefits-policy.json')));
+ newModels.add('data/v3-affiliate-copy.json');newModels.add('data/ten-benefits-policy.json');newModels.add('data/ten-benefits-copy.json');
+ // Later V6 source files remain exact. The sole common-event change moves its
+ // already verified code into the shared gift-code model, preserving all facts.
+ for(const f of ['data/v51-event-copy.json','data/v6-assets.json']){assert.deepEqual(JSON.parse(read(f)),JSON.parse(git('show','5bd9065aa00e773895cf41ba3f6625452c0e401f:'+f)),f+' retained V6 data');newModels.add(f);}
+ const oldEvents=JSON.parse(git('show','5bd9065aa00e773895cf41ba3f6625452c0e401f:data/common-events.json')),oldCodes=JSON.parse(git('show','5bd9065aa00e773895cf41ba3f6625452c0e401f:data/tilessurvive-coupons.json')).coupons,currentCodes=require('./gift-codes-content').facts.coupons,expectedEvents=structuredClone(oldEvents);delete expectedEvents.codes;assert.deepEqual(JSON.parse(read('data/common-events.json')),expectedEvents,'Only the duplicate code store moves out of event facts');
+ assert.deepEqual(currentCodes.map(x=>x.code).sort(),[...oldCodes,...oldEvents.codes].map(x=>x.code).sort());
+ for(const row of oldCodes){const current=currentCodes.find(x=>x.code===row.code);for(const [k,v]of Object.entries(row))assert.deepEqual(current[k],v,row.code+' retained original '+k);}
+ for(const {endsAt,...row}of oldEvents.codes){const current=currentCodes.find(x=>x.code===row.code);assert.equal(current.expiresAt,endsAt);for(const [k,v]of Object.entries(row))assert.deepEqual(current[k],v,row.code+' retained verified '+k);}
+ require('./gift-codes-content').validate();newModels.add('data/common-events.json');newModels.add('data/tilessurvive-coupons.json');
+ // Staged V6.1 presentation/copy owners are new files, not exceptions for
+ // changing any pre-existing game table. Validate their exact bounded scope.
+ const newOwnerFiles=['data/gift-codes-copy.json','data/v61-assets.json','data/v61-image-assets.json','data/v61-visual-system.json'];assert.equal(git('ls-tree','-r','--name-only',BASELINE,'--',...newOwnerFiles).trim(),'','V6.1 owners must be new relative to the retained baseline');
+ const giftCopy=JSON.parse(read(newOwnerFiles[0]));assert.equal(giftCopy.schemaVersion,1);assert.deepEqual(Object.keys(giftCopy.locales).sort(),allLocales.slice().sort());for(const l of allLocales)assert.deepEqual(giftCopy.locales[l],require('./gift-codes-content').copy(l));
+ const artwork=JSON.parse(read(newOwnerFiles[1])),normalized=JSON.parse(read(newOwnerFiles[2]));assert.equal(artwork.images.length,5);assert.equal(normalized.images.length,86);assert.equal(normalized.normalization,'alpha-nonzero-contain-v1');assert.equal(normalized.sourcePixelsRemoved,'transparent-only');assert.equal(normalized.originalsModified,false);
+ for(const a of artwork.images){assert.equal(a.sourceType,'original-generated-illustration');assert.equal(a.generator,'built-in-imagegen');assert(a.src.startsWith('/img/v61/'));}for(const a of normalized.images)assert(a.src.startsWith('/img/v61-normalized/'));
+ for(const a of [...artwork.images,...normalized.images]){assert(!a.src.includes('..'));const bytes=fs.readFileSync(path.join(ROOT,a.src.slice(1)));assert.equal(sha(bytes),a.sha256,a.src+' exact manifest hash');assert.equal(bytes.length,a.bytes,a.src+' exact manifest size');}
+ const system=JSON.parse(read(newOwnerFiles[3]));assert.deepEqual(system,{schemaVersion:1,imageRatios:{hero:'3 / 4',pet:'1 / 1',building:'1 / 1',faction:'1 / 1',guide:'4 / 3'},displayFont:{family:'TilesSurvive Sword',enabled:true,status:'authorized-local-files',referenceFamily:'StrongSword_New',faces:[{path:'fonts/blackdesert/strongsword-regular.woff2',weight:400,format:'woff2'},{path:'fonts/blackdesert/strongsword-semibold.woff2',weight:600,format:'woff2'}],authorization:'operator-confirmed-2026-11-05'}});
+ for(const [file,hash]of [['fonts/blackdesert/strongsword-regular.woff2','e856eaf4ad7969f0d4552be77e3218ea41ca6389b2ccea42ccc598d45cb420c8'],['fonts/blackdesert/strongsword-semibold.woff2','6518d82afecdb1bd422cd413d73b7465d7fe9b297cc89b2f5d7b483b032e5534']])assert.equal(sha(fs.readFileSync(path.join(ROOT,file))),hash,file+' authorized original font');
+ newOwnerFiles.forEach(f=>newModels.add(f));
  const changedData=git('diff','--name-only',BASELINE,'--','data').trim().split(/\r?\n/).filter(Boolean);assert.deepEqual(changedData.filter(f=>!newModels.has(f)&&!/^data\/(?:search\/[a-z-]+\.json|v3-search\/[a-z-]+\.json|search-index\.json)$/.test(f)),[],'Existing source/game data changed');
  const newFiles=git('ls-files','--others','--exclude-standard').trim().split(/\r?\n/).filter(Boolean);assert.deepEqual(newFiles.filter(f=>/normalized-complete-v1|authorized-decryption|decoded-language|ingame-apk-|full-client-evidence|\.(?:apk|aab|bundle|bytes|jsonl)$/i.test(f)),[],'Full retained client material entered public worktree');
  for(const file of newModels){const model=read(file);assert(!/(?:[A-Z]:[\\/]|\\\\Users\\|\/Users\/)/.test(model),file+' private absolute path leaked');}
@@ -174,12 +197,14 @@ test('targeted search retains old URLs and aliases, permits reviewed hero/home/h
  const files=[...allLocales.flatMap(l=>[`data/search/${l}.json`,`data/v3-search/${l}.json`]),'data/search-index.json'];loadBaseline(files);const projectedV3=require('./build-v3-search').collect().shards;
  for(const f of files){const old=JSON.parse(before(f)),now=JSON.parse(read(f)),isV3=f.startsWith('data/v3-search/');assert.equal(now.itemCount,now.items.length,f);const oldMap=new Map(old.items.map(x=>[x.url,x])),nowMap=new Map(now.items.map(x=>[x.url,x]));assert.equal(nowMap.size,now.items.length,f+' duplicate URL');
   for(const [url,item]of oldMap){assert(nowMap.has(url),f+' removed '+url);const updated=nowMap.get(url);
-   if(isV3){const aliases=new Set(updated.search.aliases.map(x=>x.value)),contexts=new Set(updated.search.contextNames);if(!allLocales.some(l=>url===`/${l}/`))for(const alias of item.search.aliases)assert(aliases.has(alias.value),f+' lost search alias '+alias.value+' at '+url);for(const name of item.search.contextNames)assert(contexts.has(name),f+' lost context '+name+' at '+url);}
+   if(isV3){const aliases=new Set(updated.search.aliases.map(x=>x.value)),contexts=new Set(updated.search.contextNames);if(!allLocales.some(l=>url===`/${l}/`||url===`/${l}/codes/`))for(const alias of item.search.aliases)assert(aliases.has(alias.value),f+' lost search alias '+alias.value+' at '+url);for(const name of item.search.contextNames)assert(contexts.has(name),f+' lost context '+name+' at '+url);}
    if(permittedMainUrls.has(url))continue;
    // Approved exception: the 21 hub H1s changed to the local atlas title. Their
    // V3 primary name and alias expansion may follow it; no other field changes.
    const homeLocale=allLocales.find(l=>url===`/${l}/`);
    if(homeLocale){const a=structuredClone(item),b=structuredClone(updated);for(const k of ['title','description']){delete a[k];delete b[k];}if(isV3){delete a.search.primaryName;delete b.search.primaryName;delete a.search.aliases;delete b.search.aliases;assert.deepEqual(updated,projectedV3[homeLocale].items.find(x=>x.url===url),f+' homepage must match current canonical H1 alias projection');}assert.deepEqual(b,a,f+' homepage changed beyond reviewed SEO metadata');const page=doc(read(homeLocale+'/index.html'));assert(page.querySelector('[data-v5-home]'),f+' homepage lacks reviewed V5 owner');assert.equal(updated.title,page.querySelector('title').textContent.trim());assert.equal(updated.description,page.querySelector('meta[name="description"]').getAttribute('content').trim());continue;}
+   const ownerLocale=allLocales.find(l=>url===`/${l}/codes/`||url===`/${l}/top-up/`);
+   if(ownerLocale){const a=structuredClone(item),b=structuredClone(updated);if(isV3){delete a.search;delete b.search;assert.deepEqual(updated,projectedV3[ownerLocale].items.find(x=>x.url===url),f+' gift/TEN search must match canonical derived aliases');}assert.deepEqual(b,require('./v4-release-gate').projectOriginalSearchRow(a,ownerLocale),f+' gift/TEN changed beyond exact shared metadata');continue;}
    const hubLocale=isV3&&allLocales.find(l=>url===`/${l}/heroes/`);
    if(hubLocale){const a=structuredClone(item),b=structuredClone(updated);delete a.search.primaryName;delete b.search.primaryName;delete a.search.aliases;delete b.search.aliases;assert.deepEqual(b,a,f+' hub changed beyond name/aliases');assert.equal(updated.search.primaryName,C.locales[hubLocale].title);}
    else assert.deepEqual(updated,item,f+' unchanged-scope record changed '+url);
@@ -194,10 +219,13 @@ test('new atlas assets have current content hashes and baseline public tracking 
   // Windows. Compare its Git clean-filter blob, not an OS checkout newline.
   if(p==='robots.txt')assert.equal(git('hash-object','--path',p,p).trim(),git('rev-parse',BASELINE+':'+p).trim(),p+' repository content changed');
   else if(p==='js/v3-affiliate.js'){
-   const old=before(p).replace(/\r\n/g,'\n'),now=read(p).replace(/\r\n/g,'\n'),constant=(s,name)=>s.match(new RegExp('  var '+name+' = [^\\n]+'))?.[0],fn=(s,name)=>s.match(new RegExp('  function '+name+'\\([^]*?\\n  \\}'))?.[0];
+   const old=before(p).replace(/\r\n/g,'\n'),now=read(p).replace(/\r\n/g,'\n'),constant=(s,name)=>s.match(new RegExp('  var '+name+' = [^\\n]+'))?.[0],fn=(s,name)=>s.match(new RegExp('^  function '+name+'\\([^\\n]*\\}\\n','m'))?.[0].trimEnd()||s.match(new RegExp('  function '+name+'\\([^]*?\\n  \\}'))?.[0];
    for(const name of ['TEN','KEY','GA_ID','APPROVED_IDS','requestedIds','idsValid','gaIds','LOCALES','FEATURES','ACTIONS']){assert(constant(old,name),name);assert.equal(constant(now,name),constant(old,name),name+' tracking invariant changed');}
-   for(const name of ['language','pageType','safePath','sourceCategory','production','base','startGA','send','kind','stop','start','updateControls','setConsent','scan']){assert(fn(old,name),name);assert.equal(fn(now,name),fn(old,name),name+' consent/tracking behavior changed');}
+   for(const name of ['language','pageType','safePath','sourceCategory','production','base','startGA','send','kind','stop','updateControls','setConsent']){assert(fn(old,name),name);assert.equal(fn(now,name),fn(old,name),name+' consent/tracking behavior changed');}
+   // start/scan additionally observe the approved TEN banner. Their privacy,
+   // 60%/1000ms/once behavior is executed in test-v61-ten and test-v3-affiliate.
+   assert.match(fn(now,'start'),/\(ratios\.get\(anchor\) \|\| 0\) < 0\.6/);assert.match(fn(now,'start'),/\}, 1000\)/);assert.match(fn(now,'start'),/!consent/);assert.match(fn(now,'scan'),/!anchor\.closest\('\[data-ten-view\]'\)/);
    for(const event of ['page_view','topup_guide_view','affiliate_viewable','v3_feature_use','lootbar_outbound_click','free_progress_open','topup_guide_open'])assert(now.includes("'"+event+"'"),event+' base event removed');assert(now.includes("measurement_version: 'v3.1'"));assert(now.includes("document.querySelector('[data-v5-home]')"));
-  }else assert.equal(read(p),before(p),p+' changed');
+  }else if(p==='data/ten-benefits-policy.json')require('./ten-benefits-test-contract').assertPolicyTransition(JSON.parse(before(p)),JSON.parse(read(p)));else assert.equal(read(p),before(p),p+' changed');
  }else assert(!fs.existsSync(path.join(ROOT,p)),p+' was absent in the baseline');}
 });

@@ -400,7 +400,9 @@ test('analytics, affiliate destinations, image sources and meaningful existing t
   for (const lang of langs) for (const slug of slugs) {
     const file = `${lang}/buildings/${slug}/index.html`;
     const old = documentOf(previous(file));
-    const current = documentOf(read(file));
+    const html=read(file),V6=require('./build-v6-system'),route='/'+file.replace(/index\.html$/,'');
+    V6.validateOwnership(html,lang,route);
+    const current = documentOf(V6.strip(html));
     assert.deepEqual(analytics(current), analytics(old), file + ' exact known GA consent migration; all existing ads/CMP unchanged');
     assert.deepEqual(v3Checks.ads(read(file)),v3Checks.ads(deployed.get(file)),file+' exact deployed AdSense/CMP scripts');
     assert.deepEqual(affiliate(current), affiliate(old), file + ' affiliate');

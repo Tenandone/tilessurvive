@@ -1,0 +1,80 @@
+{
+  "version": 1,
+  "images": [
+    {
+      "id": "ten-supply-wide",
+      "src": "/img/v61/ten-supply-wide.webp",
+      "width": 1200,
+      "height": 800,
+      "bytes": 83776,
+      "sha256": "53361147d856e1e6eda636beb36a26d3ce4ce7ce3eac9b7330bb0d0fd5b2c6c1",
+      "sourceType": "original-generated-illustration",
+      "generator": "built-in-imagegen",
+      "usage": "decorative, not an actual purchasable game bundle",
+      "originalDimensions": [
+        1536,
+        1024
+      ]
+    },
+    {
+      "id": "ten-supply-mobile",
+      "src": "/img/v61/ten-supply-mobile.webp",
+      "width": 600,
+      "height": 900,
+      "bytes": 51890,
+      "sha256": "f779ace75f43f014810c796c740d48a4cc18989b5d6eef92e1c34ad6506dcbab",
+      "sourceType": "original-generated-illustration",
+      "generator": "built-in-imagegen",
+      "usage": "decorative, not an actual purchasable game bundle",
+      "originalDimensions": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "id": "guide-alliance",
+      "src": "/img/v61/guide-alliance.webp",
+      "width": 640,
+      "height": 480,
+      "bytes": 43068,
+      "sha256": "16c2d1b3e17cd650888d645925f4dddfa477eefb1820fe156da17d8b55562759",
+      "sourceType": "original-generated-illustration",
+      "generator": "built-in-imagegen",
+      "usage": "decorative, not an actual purchasable game bundle",
+      "originalDimensions": [
+        1448,
+        1086
+      ]
+    },
+    {
+      "id": "guide-training",
+      "src": "/img/v61/guide-training.webp",
+      "width": 640,
+      "height": 480,
+      "bytes": 54680,
+      "sha256": "acd012f468642ef312158b67c3b1a67deaba75d7cf93fc45947f49551eb8ffc7",
+      "sourceType": "original-generated-illustration",
+      "generator": "built-in-imagegen",
+      "usage": "decorative, not an actual purchasable game bundle",
+      "originalDimensions": [
+        1448,
+        1086
+      ]
+    },
+    {
+      "id": "guide-missions",
+      "src": "/img/v61/guide-missions.webp",
+      "width": 640,
+      "height": 480,
+      "bytes": 48768,
+      "sha256": "0fd43122bd9342e3f28ba70ad0f1a25d3be1b4bc463a21ed1063ece1d086e71f",
+      "sourceType": "original-generated-illustration",
+      "generator": "built-in-imagegen",
+      "usage": "decorative, not an actual purchasable game bundle",
+      "originalDimensions": [
+        1448,
+        1086
+      ]
+    }
+  ]
+}

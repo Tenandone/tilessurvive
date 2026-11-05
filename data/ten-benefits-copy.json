@@ -1,0 +1,1351 @@
+{
+  "schemaVersion": 1,
+  "reviewedOn": "2026-11-05",
+  "locales": {
+    "en": {
+      "bannerTitle": "Tiles Survive top-ups for less · Up to approximately {discount} off",
+      "bannerGeneric": "Tiles Survive top-ups for less",
+      "bannerSubtitle": "Extra monthly coupons · Free pack draw",
+      "cta": "Top up at the TEN store",
+      "guideCta": "View the top-up guide",
+      "benefitTitle": "What do I get when I top up through TEN?",
+      "couponTitle": "TEN monthly discount coupons",
+      "couponText": "Members who top up through the TEN link receive extra discount coupons, including members who top up just once.",
+      "drawTitle": "Monthly free-package draw",
+      "drawText": "Your cumulative monthly TEN top-up record is automatically included in the free-package draw. Packages go to draw winners.",
+      "deliveryText": "No separate application is needed. Find your coupons and any packages you win in your LootBar Coupon Bag.",
+      "issuanceNote": "100% coupon issuance means all TEN top-up members receive a coupon. It does not mean a 100% discount.",
+      "steps": [
+        {
+          "title": "Open the TEN shop",
+          "text": "Follow this site's dedicated TEN link to the Tiles Survive shop on LootBar."
+        },
+        {
+          "title": "Bookmark · Register or sign in",
+          "text": "Save the original TEN store address. Create a LootBar account or sign in to your existing account."
+        },
+        {
+          "title": "Top up at a discount",
+          "text": "Return through your saved TEN link and choose a package."
+        },
+        {
+          "title": "Receive monthly benefits",
+          "text": "Get monthly coupons and automatic entry in the draw based on your monthly top-ups. Check your Coupon Bag."
+        }
+      ],
+      "newTitle": "Get an extra LootBar coupon",
+      "newText": "Open the TEN store, then enter {code} in the LootBar search box to receive an extra coupon once.",
+      "newOnce": "One-time extra coupon",
+      "newAfter": "This is a LootBar search code, separate from game gift codes.",
+      "bookmarkTitle": "Bookmark the TEN link",
+      "bookmarkText": "Save the original TEN address below for your next top-up. If login or a language change redirects you, edit the saved address back to this TEN link.",
+      "bookmarkButton": "How to bookmark",
+      "bookmarkHint": "This shows instructions; it does not save a bookmark automatically. Menu names may vary by browser version.",
+      "bookmarkSteps": [
+        "Open TEN → Ctrl + D → Save bookmark Edit the saved bookmark so its address matches the original TEN address above.",
+        "Open TEN → Command + D → Save bookmark Edit the saved bookmark so its address matches the original TEN address above.",
+        "Open TEN → Chrome menu → Star or Add bookmark Edit the saved bookmark so its address matches the original TEN address above.",
+        "Open TEN → Share → Add Bookmark Edit the saved bookmark so its address matches the original TEN address above."
+      ],
+      "copyCode": "Copy code",
+      "copied": "Copied",
+      "copyFailed": "Select the code and copy it",
+      "priceNote": "Discounts vary by package. Check the current price and coupon conditions on LootBar.",
+      "priceChecked": "Prices checked",
+      "newMemberCta": "Open the TEN store",
+      "historyTitle": "Past payouts",
+      "historyMonth": "{month} · paid",
+      "historyIntro": "Free-package payout record supplied by the TilesSurvive.net operator.",
+      "packageLabel": "Package",
+      "recipientsLabel": "Recipients",
+      "historyTotal": "{count} recipients received packages",
+      "historyCaveat": "The more you support us, the more generous the rewards and benefits we’ll offer in return.",
+      "bannerDiscount": "Up to approximately {discount} off",
+      "copyUrl": "Copy TEN store address",
+      "urlCopied": "TEN address copied",
+      "urlCopyFailed": "Select and copy the TEN address below",
+      "urlLabel": "TEN address to save"
+    },
+    "ko": {
+      "bannerTitle": "타일서바이벌 할인 충전 · 최대 약 {discount} 할인",
+      "bannerGeneric": "타일서바이벌 할인 충전",
+      "bannerSubtitle": "매월 추가 쿠폰 · 무료 패키지 추첨",
+      "cta": "TEN 상점에서 충전하기",
+      "guideCta": "충전 가이드 보기",
+      "benefitTitle": "TEN 링크로 충전하면 어떤 혜택이 있나요?",
+      "couponTitle": "TEN 월별 할인쿠폰",
+      "couponText": "TEN 링크로 충전한 회원에게 추가 할인쿠폰을 지급합니다. 1회 충전 회원도 포함됩니다.",
+      "drawTitle": "월별 무료 패키지 추첨",
+      "drawText": "월간 누적 TEN 충전 내역은 무료 패키지 추첨에 자동 반영됩니다. 무료 패키지는 추첨 당첨자에게 지급됩니다.",
+      "deliveryText": "별도의 이벤트 신청은 필요하지 않습니다. 쿠폰과 당첨 패키지는 LootBar 쿠폰가방에서 확인하세요.",
+      "issuanceNote": "쿠폰 지급률 100%는 TEN 링크로 충전한 모든 회원에게 쿠폰을 지급한다는 뜻이며, 100% 할인이라는 뜻이 아닙니다.",
+      "steps": [
+        {
+          "title": "타일서바이벌 TEN 상점 접속",
+          "text": "사이트에 안내된 TEN 전용 LootBar 링크로 이동하세요."
+        },
+        {
+          "title": "즐겨찾기 · 가입 또는 로그인",
+          "text": "원본 TEN 상점 주소를 저장하세요. LootBar에 가입하거나 기존 계정으로 로그인하세요."
+        },
+        {
+          "title": "타일서바이벌 할인 충전",
+          "text": "저장한 TEN 링크로 접속해 원하는 패키지를 할인 충전하세요."
+        },
+        {
+          "title": "매월 추가 혜택 받기",
+          "text": "매월 쿠폰을 받고, 월간 누적 충전 기록으로 추첨에 자동 참여하세요. 지급 내역은 쿠폰가방에서 확인합니다."
+        }
+      ],
+      "newTitle": "LootBar 추가 쿠폰 한 번 더 받기",
+      "newText": "TEN 상점에 접속한 뒤 LootBar 검색창에 {code}를 입력하세요. 추가 쿠폰이 1회 지급됩니다.",
+      "newOnce": "추가 쿠폰 1회 지급",
+      "newAfter": "게임 기프트 코드와 구분하세요. 이 코드는 LootBar 검색창에 입력합니다.",
+      "bookmarkTitle": "TEN 링크 즐겨찾기",
+      "bookmarkText": "아래 원본 TEN 주소를 저장하고 다음 충전에도 이용하세요. 로그인이나 언어 변경 후 주소가 달라지면 저장할 주소를 아래 TEN 주소로 수정하세요.",
+      "bookmarkButton": "즐겨찾기 방법 보기",
+      "bookmarkHint": "이 버튼은 방법만 안내하며 즐겨찾기를 자동 저장하지 않습니다. 브라우저 버전에 따라 메뉴 이름이 다를 수 있습니다.",
+      "bookmarkSteps": [
+        "TEN 링크 열기 → Ctrl + D → 즐겨찾기 저장 저장한 북마크를 편집해 주소를 위의 원본 TEN 주소로 맞추세요.",
+        "TEN 링크 열기 → Command + D → 북마크 저장 저장한 북마크를 편집해 주소를 위의 원본 TEN 주소로 맞추세요.",
+        "TEN 링크 열기 → Chrome 메뉴 → 별표 또는 북마크 추가 저장한 북마크를 편집해 주소를 위의 원본 TEN 주소로 맞추세요.",
+        "TEN 링크 열기 → 공유 → 책갈피 추가 저장한 북마크를 편집해 주소를 위의 원본 TEN 주소로 맞추세요."
+      ],
+      "copyCode": "코드 복사",
+      "copied": "복사 완료",
+      "copyFailed": "코드를 선택해 복사하세요",
+      "priceNote": "상품별 할인율은 다를 수 있습니다. 현재 가격과 쿠폰 사용 조건은 LootBar에서 확인하세요.",
+      "priceChecked": "가격 확인일",
+      "newMemberCta": "TEN 상점 열기",
+      "historyTitle": "과거 지급 실적",
+      "historyMonth": "{month} · 지급 완료",
+      "historyIntro": "TilesSurvive.net 운영자가 제공한 무료 패키지 지급 기록입니다.",
+      "packageLabel": "패키지",
+      "recipientsLabel": "지급 인원",
+      "historyTotal": "총 {count}명 지급 완료",
+      "historyCaveat": "많이 이용해 주실수록 더욱 풍성한 보상과 혜택으로 보답하겠습니다.",
+      "bannerDiscount": "최대 약 {discount} 할인",
+      "copyUrl": "TEN 상점 주소 복사",
+      "urlCopied": "TEN 주소 복사 완료",
+      "urlCopyFailed": "아래 TEN 주소를 선택해 복사하세요",
+      "urlLabel": "저장할 TEN 주소"
+    },
+    "ja": {
+      "bannerTitle": "タイルサバイバルをお得にチャージ · 最大約{discount}割引",
+      "bannerGeneric": "タイルサバイバルをお得にチャージ",
+      "bannerSubtitle": "毎月の追加クーポン · 無料パック抽選",
+      "cta": "TENショップでチャージ",
+      "guideCta": "チャージガイドを見る",
+      "benefitTitle": "TENリンクでチャージすると、どんな特典がありますか？",
+      "couponTitle": "TENの月間割引クーポン",
+      "couponText": "TENリンクからチャージした会員に追加割引クーポンを配布します。1回だけチャージした会員も対象です。",
+      "drawTitle": "毎月の無料パック抽選",
+      "drawText": "毎月のTEN経由の累計チャージ履歴が、無料パック抽選に自動で反映されます。パックは当選者に配布されます。",
+      "deliveryText": "別途の応募は不要です。クーポンと当選パックはLootBarのクーポンバッグで確認できます。",
+      "issuanceNote": "クーポン配布率100%は、TEN経由でチャージしたすべての会員にクーポンを配布するという意味です。100%割引ではありません。",
+      "steps": [
+        {
+          "title": "TENショップを開く",
+          "text": "当サイトのTEN専用リンクから、LootBarのTiles Surviveショップへ進みます。"
+        },
+        {
+          "title": "ブックマーク · 登録またはログイン",
+          "text": "元のTENショップアドレスを保存し、LootBarに登録するか既存のアカウントでログインしてください。"
+        },
+        {
+          "title": "お得にチャージ",
+          "text": "保存したTENリンクからアクセスし、希望のパックを選びます。"
+        },
+        {
+          "title": "毎月の特典を受け取る",
+          "text": "毎月のクーポンを受け取り、その月の累計チャージ履歴で抽選に自動参加。クーポンバッグをご確認ください。"
+        }
+      ],
+      "newTitle": "LootBarの追加クーポンを受け取る",
+      "newText": "TENショップを開き、LootBarの検索欄に{code}を入力してください。追加クーポンを1回受け取れます。",
+      "newOnce": "追加クーポンは1回配布",
+      "newAfter": "ゲームのギフトコードとは別です。このコードはLootBarの検索欄に入力します。",
+      "bookmarkTitle": "TENリンクをブックマーク",
+      "bookmarkText": "次回のチャージ用に、下記の元のTENアドレスを保存してください。ログインや言語変更で移動先が変わった場合は、保存するアドレスをこのTENリンクに修正してください。",
+      "bookmarkButton": "ブックマーク方法を見る",
+      "bookmarkHint": "このボタンは手順を表示するだけで、自動保存は行いません。メニュー名はブラウザのバージョンにより異なる場合があります。",
+      "bookmarkSteps": [
+        "TENリンクを開く → Ctrl + D → ブックマークを保存 保存したブックマークを編集し、アドレスを上記の元のTENアドレスに合わせてください。",
+        "TENリンクを開く → Command + D → ブックマークを保存 保存したブックマークを編集し、アドレスを上記の元のTENアドレスに合わせてください。",
+        "TENリンクを開く → Chromeメニュー → 星印またはブックマーク追加 保存したブックマークを編集し、アドレスを上記の元のTENアドレスに合わせてください。",
+        "TENリンクを開く → 共有 → ブックマークを追加 保存したブックマークを編集し、アドレスを上記の元のTENアドレスに合わせてください。"
+      ],
+      "copyCode": "コードをコピー",
+      "copied": "コピーしました",
+      "copyFailed": "コードを選択してコピーしてください",
+      "priceNote": "割引率は商品によって異なります。現在の価格とクーポン利用条件はLootBarでご確認ください。",
+      "priceChecked": "価格確認日",
+      "newMemberCta": "TENショップを開く",
+      "historyTitle": "過去の配付実績",
+      "historyMonth": "{month} · 配付完了",
+      "historyIntro": "TilesSurvive.net運営者によるパッケージ配付記録です。",
+      "packageLabel": "パッケージ",
+      "recipientsLabel": "受取人数",
+      "historyTotal": "{count}名にパッケージを配付しました",
+      "historyCaveat": "たくさんご利用いただくほど、より充実した報酬と特典でお応えしてまいります。",
+      "bannerDiscount": "最大約{discount}割引",
+      "copyUrl": "TENショップのアドレスをコピー",
+      "urlCopied": "TENアドレスをコピーしました",
+      "urlCopyFailed": "下記のTENアドレスを選択してコピーしてください",
+      "urlLabel": "保存するTENアドレス"
+    },
+    "zh-tw": {
+      "bannerTitle": "Tiles Survive 優惠儲值 · 最高約省 {discount}",
+      "bannerGeneric": "Tiles Survive 優惠儲值",
+      "bannerSubtitle": "每月額外優惠券 · 免費禮包抽獎",
+      "cta": "前往 TEN 商店儲值",
+      "guideCta": "查看儲值指南",
+      "benefitTitle": "透過 TEN 連結儲值有什麼福利？",
+      "couponTitle": "TEN 每月折扣券",
+      "couponText": "透過 TEN 連結儲值的會員可獲額外折扣券，僅儲值一次的會員也包含在內。",
+      "drawTitle": "每月免費禮包抽獎",
+      "drawText": "每月透過 TEN 儲值的累計紀錄會自動納入免費禮包抽獎。免費禮包發放給抽獎得主。",
+      "deliveryText": "不需另外報名。優惠券與中獎禮包請至 LootBar 優惠券包查看。",
+      "issuanceNote": "優惠券發放率 100% 是指所有透過 TEN 儲值的會員都會獲發優惠券，並非 100% 折扣。",
+      "steps": [
+        {
+          "title": "開啟 TEN 商店",
+          "text": "透過本站的 TEN 專屬連結，前往 LootBar 的 Tiles Survive 商店。"
+        },
+        {
+          "title": "加入書籤 · 註冊或登入",
+          "text": "儲存原始 TEN 商店網址，註冊 LootBar 或登入既有帳號。"
+        },
+        {
+          "title": "優惠儲值",
+          "text": "從儲存的 TEN 連結進入，選擇想購買的禮包。"
+        },
+        {
+          "title": "每月領取額外福利",
+          "text": "每月領取優惠券，並以當月累計儲值紀錄自動參加抽獎。發放結果請至優惠券包查看。"
+        }
+      ],
+      "newTitle": "再領取一張 LootBar 額外優惠券",
+      "newText": "開啟 TEN 商店後，在 LootBar 搜尋欄輸入 {code}，即可領取一次額外優惠券。",
+      "newOnce": "額外優惠券限領一次",
+      "newAfter": "這不是遊戲禮包碼，請在 LootBar 搜尋欄輸入此代碼。",
+      "bookmarkTitle": "將 TEN 連結加入書籤",
+      "bookmarkText": "請儲存下方原始 TEN 網址，以便下次儲值。若登入或切換語言後網址改變，請將書籤網址改回此 TEN 連結。",
+      "bookmarkButton": "查看加入書籤方式",
+      "bookmarkHint": "此按鈕只顯示操作說明，不會自動儲存書籤。選單名稱可能因瀏覽器版本而異。",
+      "bookmarkSteps": [
+        "開啟 TEN 連結 → Ctrl + D → 儲存書籤 編輯已儲存的書籤，將網址改為上方原始 TEN 網址。",
+        "開啟 TEN 連結 → Command + D → 儲存書籤 編輯已儲存的書籤，將網址改為上方原始 TEN 網址。",
+        "開啟 TEN 連結 → Chrome 選單 → 星號或新增書籤 編輯已儲存的書籤，將網址改為上方原始 TEN 網址。",
+        "開啟 TEN 連結 → 分享 → 加入書籤 編輯已儲存的書籤，將網址改為上方原始 TEN 網址。"
+      ],
+      "copyCode": "複製代碼",
+      "copied": "已複製",
+      "copyFailed": "請選取代碼後複製",
+      "priceNote": "折扣依商品而異。現行價格與優惠券使用條件請以 LootBar 頁面為準。",
+      "priceChecked": "價格確認日期",
+      "newMemberCta": "開啟 TEN 商店",
+      "historyTitle": "過往發放紀錄",
+      "historyMonth": "{month} · 已完成發放",
+      "historyIntro": "TilesSurvive.net營運者的禮包發放紀錄。",
+      "packageLabel": "禮包",
+      "recipientsLabel": "領取人數",
+      "historyTotal": "已向{count}名使用者發放禮包",
+      "historyCaveat": "大家的支持越多，我們就會以更豐富的獎勵與福利回饋大家。",
+      "bannerDiscount": "最高約省 {discount}",
+      "copyUrl": "複製 TEN 商店網址",
+      "urlCopied": "已複製 TEN 網址",
+      "urlCopyFailed": "請選取並複製下方 TEN 網址",
+      "urlLabel": "請儲存此 TEN 網址"
+    },
+    "de": {
+      "bannerTitle": "Tiles Survive günstiger aufladen · Bis zu etwa {discount} Rabatt",
+      "bannerGeneric": "Tiles Survive günstiger aufladen",
+      "bannerSubtitle": "Zusätzliche Monatscoupons · Verlosung kostenloser Pakete",
+      "cta": "Im TEN-Shop aufladen",
+      "guideCta": "Aufladeanleitung ansehen",
+      "benefitTitle": "Welche Vorteile bekomme ich beim Aufladen über TEN?",
+      "couponTitle": "Monatliche TEN-Rabattcoupons",
+      "couponText": "Mitglieder, die über den TEN-Link aufladen, erhalten zusätzliche Rabattcoupons. Das gilt auch für Mitglieder mit nur einer Aufladung.",
+      "drawTitle": "Monatliche Verlosung kostenloser Pakete",
+      "drawText": "Deine über TEN gesammelten Aufladungen eines Monats werden automatisch für die Paketverlosung berücksichtigt. Die kostenlosen Pakete gehen an die ausgelosten Gewinner.",
+      "deliveryText": "Eine separate Anmeldung ist nicht nötig. Deine Coupons und gewonnenen Pakete findest du in der Coupon-Tasche bei LootBar.",
+      "issuanceNote": "Eine Coupon-Ausgabe von 100 % bedeutet, dass alle Mitglieder mit einer TEN-Aufladung einen Coupon erhalten. Gemeint ist kein Rabatt von 100 %.",
+      "steps": [
+        {
+          "title": "TEN-Shop öffnen",
+          "text": "Nutze den TEN-Link dieser Website zum Tiles-Survive-Shop auf LootBar."
+        },
+        {
+          "title": "Speichern · Registrieren oder anmelden",
+          "text": "Speichere die ursprüngliche TEN-Shop-Adresse. Erstelle ein LootBar-Konto oder melde dich mit deinem bestehenden Konto an."
+        },
+        {
+          "title": "Günstiger aufladen",
+          "text": "Öffne deinen gespeicherten TEN-Link und wähle ein Paket."
+        },
+        {
+          "title": "Monatliche Vorteile erhalten",
+          "text": "Erhalte Monatscoupons und nimm mit deinen gesammelten Monatsaufladungen automatisch an der Verlosung teil. Prüfe deine Coupon-Tasche."
+        }
+      ],
+      "newTitle": "Einen zusätzlichen LootBar-Coupon erhalten",
+      "newText": "Öffne den TEN-Shop und gib {code} in die LootBar-Suche ein, um einmalig einen zusätzlichen Coupon zu erhalten.",
+      "newOnce": "Einmaliger zusätzlicher Coupon",
+      "newAfter": "Dieser Code gehört in die LootBar-Suche. Er ist kein Geschenkcode für das Spiel.",
+      "bookmarkTitle": "TEN-Link als Lesezeichen speichern",
+      "bookmarkText": "Speichere die unten angegebene ursprüngliche TEN-Adresse für deine nächste Aufladung. Ändert sich die Adresse nach Anmeldung oder Sprachwechsel, bearbeite das Lesezeichen und trage diesen TEN-Link ein.",
+      "bookmarkButton": "Lesezeichen-Anleitung ansehen",
+      "bookmarkHint": "Dieser Button zeigt nur die Anleitung und speichert kein Lesezeichen automatisch. Menübezeichnungen können je nach Browserversion abweichen.",
+      "bookmarkSteps": [
+        "TEN öffnen → Ctrl + D → Lesezeichen speichern Bearbeite das gespeicherte Lesezeichen und setze seine Adresse auf die ursprüngliche TEN-Adresse oben.",
+        "TEN öffnen → Command + D → Lesezeichen speichern Bearbeite das gespeicherte Lesezeichen und setze seine Adresse auf die ursprüngliche TEN-Adresse oben.",
+        "TEN öffnen → Chrome-Menü → Stern oder Lesezeichen hinzufügen Bearbeite das gespeicherte Lesezeichen und setze seine Adresse auf die ursprüngliche TEN-Adresse oben.",
+        "TEN öffnen → Teilen → Lesezeichen hinzufügen Bearbeite das gespeicherte Lesezeichen und setze seine Adresse auf die ursprüngliche TEN-Adresse oben."
+      ],
+      "copyCode": "Code kopieren",
+      "copied": "Kopiert",
+      "copyFailed": "Code auswählen und kopieren",
+      "priceNote": "Rabatte unterscheiden sich je nach Paket. Prüfe den aktuellen Preis und die Coupon-Bedingungen auf LootBar.",
+      "priceChecked": "Preise geprüft am",
+      "newMemberCta": "TEN-Shop öffnen",
+      "historyTitle": "Bisherige Paketvergaben",
+      "historyMonth": "{month} · abgeschlossen",
+      "historyIntro": "Vergabeprotokoll des Betreibers von TilesSurvive.net.",
+      "packageLabel": "Paket",
+      "recipientsLabel": "Empfänger",
+      "historyTotal": "{count} Empfänger haben Pakete erhalten",
+      "historyCaveat": "Je mehr Sie unser Angebot nutzen, desto großzügiger werden die Belohnungen und Vorteile, mit denen wir uns bei Ihnen bedanken.",
+      "bannerDiscount": "Bis zu etwa {discount} Rabatt",
+      "copyUrl": "TEN-Shop-Adresse kopieren",
+      "urlCopied": "TEN-Adresse kopiert",
+      "urlCopyFailed": "TEN-Adresse unten auswählen und kopieren",
+      "urlLabel": "Diese TEN-Adresse speichern"
+    },
+    "ru": {
+      "bannerTitle": "Пополняйте Tiles Survive со скидкой · Скидка примерно до {discount}",
+      "bannerGeneric": "Пополняйте Tiles Survive со скидкой",
+      "bannerSubtitle": "Дополнительные купоны каждый месяц · Розыгрыш бесплатных наборов",
+      "cta": "Пополнить в магазине TEN",
+      "guideCta": "Открыть руководство по пополнению",
+      "benefitTitle": "Какие преимущества даёт пополнение через TEN?",
+      "couponTitle": "Ежемесячные купоны TEN на скидку",
+      "couponText": "Участники, пополняющие по ссылке TEN, получают дополнительные купоны на скидку. Это относится и к тем, кто пополнил только один раз.",
+      "drawTitle": "Ежемесячный розыгрыш бесплатных наборов",
+      "drawText": "Суммарная история ваших пополнений через TEN за месяц автоматически учитывается в розыгрыше бесплатных наборов. Наборы получают победители розыгрыша.",
+      "deliveryText": "Отдельная заявка не нужна. Купоны и выигранные наборы появятся в сумке купонов LootBar.",
+      "issuanceNote": "Выдача купонов 100% участников означает, что купон получают все, кто пополнял через TEN. Это не означает скидку 100%.",
+      "steps": [
+        {
+          "title": "Откройте магазин TEN",
+          "text": "Перейдите по специальной ссылке TEN с этого сайта в магазин Tiles Survive на LootBar."
+        },
+        {
+          "title": "Сохраните · Зарегистрируйтесь или войдите",
+          "text": "Сохраните исходный адрес магазина TEN. Создайте аккаунт LootBar или войдите в существующий."
+        },
+        {
+          "title": "Пополните со скидкой",
+          "text": "Откройте сохранённую ссылку TEN и выберите нужный набор."
+        },
+        {
+          "title": "Получайте ежемесячные преимущества",
+          "text": "Получайте купоны каждый месяц и автоматически участвуйте в розыгрыше по суммарной истории пополнений за месяц. Проверяйте сумку купонов."
+        }
+      ],
+      "newTitle": "Получите дополнительный купон LootBar",
+      "newText": "Откройте магазин TEN и введите {code} в строку поиска LootBar, чтобы один раз получить дополнительный купон.",
+      "newOnce": "Дополнительный купон выдаётся один раз",
+      "newAfter": "Этот код вводится в поиск LootBar. Он не относится к подарочным кодам игры.",
+      "bookmarkTitle": "Добавьте ссылку TEN в закладки",
+      "bookmarkText": "Сохраните исходный адрес TEN ниже для следующего пополнения. Если адрес изменится после входа или смены языка, исправьте адрес закладки на эту ссылку TEN.",
+      "bookmarkButton": "Как добавить в закладки",
+      "bookmarkHint": "Эта кнопка лишь показывает инструкцию и не сохраняет закладку автоматически. Названия пунктов меню зависят от версии браузера.",
+      "bookmarkSteps": [
+        "Откройте TEN → Ctrl + D → Сохраните закладку Измените адрес сохранённой закладки на исходный адрес TEN, указанный выше.",
+        "Откройте TEN → Command + D → Сохраните закладку Измените адрес сохранённой закладки на исходный адрес TEN, указанный выше.",
+        "Откройте TEN → Меню Chrome → Звёздочка или Добавить в закладки Измените адрес сохранённой закладки на исходный адрес TEN, указанный выше.",
+        "Откройте TEN → Поделиться → Добавить закладку Измените адрес сохранённой закладки на исходный адрес TEN, указанный выше."
+      ],
+      "copyCode": "Копировать код",
+      "copied": "Скопировано",
+      "copyFailed": "Выделите код и скопируйте его",
+      "priceNote": "Размер скидки зависит от набора. Актуальные цены и условия использования купонов уточняйте на LootBar.",
+      "priceChecked": "Дата проверки цен",
+      "newMemberCta": "Открыть магазин TEN",
+      "historyTitle": "Прошлые выдачи",
+      "historyMonth": "{month} · выдача завершена",
+      "historyIntro": "Отчёт оператора TilesSurvive.net о выдаче наборов.",
+      "packageLabel": "Набор",
+      "recipientsLabel": "Получатели",
+      "historyTotal": "Наборы выданы. Число получателей: {count}",
+      "historyCaveat": "Чем активнее вы пользуетесь нашим сервисом, тем больше наград и преимуществ мы будем предлагать вам в благодарность за поддержку.",
+      "bannerDiscount": "Скидка примерно до {discount}",
+      "copyUrl": "Копировать адрес магазина TEN",
+      "urlCopied": "Адрес TEN скопирован",
+      "urlCopyFailed": "Выделите и скопируйте адрес TEN ниже",
+      "urlLabel": "Адрес TEN для сохранения"
+    },
+    "zh-cn": {
+      "bannerTitle": "Tiles Survive 优惠充值 · 最高约省 {discount}",
+      "bannerGeneric": "Tiles Survive 优惠充值",
+      "bannerSubtitle": "每月额外优惠券 · 免费礼包抽奖",
+      "cta": "前往 TEN 商店充值",
+      "guideCta": "查看充值指南",
+      "benefitTitle": "通过 TEN 链接充值有什么福利？",
+      "couponTitle": "TEN 每月折扣券",
+      "couponText": "通过 TEN 链接充值的会员可获得额外折扣券，仅充值一次的会员也包括在内。",
+      "drawTitle": "每月免费礼包抽奖",
+      "drawText": "每月通过 TEN 充值的累计记录会自动纳入免费礼包抽奖。免费礼包发放给抽奖得主。",
+      "deliveryText": "无需另行报名。优惠券与中奖礼包请前往 LootBar 优惠券包查看。",
+      "issuanceNote": "优惠券发放率 100% 是指所有通过 TEN 充值的会员都会获发优惠券，并非 100% 折扣。",
+      "steps": [
+        {
+          "title": "打开 TEN 商店",
+          "text": "通过本站的 TEN 专属链接，前往 LootBar 的 Tiles Survive 商店。"
+        },
+        {
+          "title": "添加书签 · 注册或登录",
+          "text": "保存原始 TEN 商店地址，注册 LootBar 或登录已有账号。"
+        },
+        {
+          "title": "优惠充值",
+          "text": "从保存的 TEN 链接进入，选择想购买的礼包。"
+        },
+        {
+          "title": "每月领取额外福利",
+          "text": "每月领取优惠券，并以当月累计充值记录自动参加抽奖。发放结果请前往优惠券包查看。"
+        }
+      ],
+      "newTitle": "再领一张 LootBar 额外优惠券",
+      "newText": "打开 TEN 商店后，在 LootBar 搜索框输入 {code}，即可领取一次额外优惠券。",
+      "newOnce": "额外优惠券限领一次",
+      "newAfter": "这不是游戏礼包码，请在 LootBar 搜索框输入此代码。",
+      "bookmarkTitle": "将 TEN 链接添加到书签",
+      "bookmarkText": "请保存下方原始 TEN 地址，方便下次充值。若登录或切换语言后地址改变，请将书签地址改回此 TEN 链接。",
+      "bookmarkButton": "查看添加书签的方法",
+      "bookmarkHint": "此按钮只显示操作说明，不会自动保存书签。菜单名称可能因浏览器版本而异。",
+      "bookmarkSteps": [
+        "打开 TEN 链接 → Ctrl + D → 保存书签 编辑已保存的书签，将地址改为上方原始 TEN 地址。",
+        "打开 TEN 链接 → Command + D → 保存书签 编辑已保存的书签，将地址改为上方原始 TEN 地址。",
+        "打开 TEN 链接 → Chrome 菜单 → 星标或添加书签 编辑已保存的书签，将地址改为上方原始 TEN 地址。",
+        "打开 TEN 链接 → 分享 → 添加书签 编辑已保存的书签，将地址改为上方原始 TEN 地址。"
+      ],
+      "copyCode": "复制代码",
+      "copied": "已复制",
+      "copyFailed": "请选择代码后复制",
+      "priceNote": "折扣因商品而异。当前价格与优惠券使用条件请以 LootBar 页面为准。",
+      "priceChecked": "价格确认日期",
+      "newMemberCta": "打开 TEN 商店",
+      "historyTitle": "历史发放记录",
+      "historyMonth": "{month} · 已完成发放",
+      "historyIntro": "TilesSurvive.net运营者的礼包发放记录。",
+      "packageLabel": "礼包",
+      "recipientsLabel": "领取人数",
+      "historyTotal": "已向{count}名用户发放礼包",
+      "historyCaveat": "大家的支持越多，我们就会以更丰富的奖励与福利回馈大家。",
+      "bannerDiscount": "最高约省 {discount}",
+      "copyUrl": "复制 TEN 商店地址",
+      "urlCopied": "TEN 地址已复制",
+      "urlCopyFailed": "请选择并复制下方 TEN 地址",
+      "urlLabel": "需要保存的 TEN 地址"
+    },
+    "ar": {
+      "bannerTitle": "اشحن Tiles Survive بسعر أقل · خصم يصل إلى نحو {discount}",
+      "bannerGeneric": "اشحن Tiles Survive بسعر أقل",
+      "bannerSubtitle": "قسائم إضافية شهرية · سحب حزم مجانية",
+      "cta": "اشحن من متجر TEN",
+      "guideCta": "عرض دليل الشحن",
+      "benefitTitle": "ما المزايا التي أحصل عليها عند الشحن عبر TEN؟",
+      "couponTitle": "قسائم خصم TEN الشهرية",
+      "couponText": "يحصل الأعضاء الذين يشحنون عبر رابط TEN على قسائم خصم إضافية، ويشمل ذلك من شحنوا مرة واحدة فقط.",
+      "drawTitle": "سحب شهري على حزم مجانية",
+      "drawText": "يُدرج سجل شحنك التراكمي عبر TEN خلال كل شهر تلقائيًا في سحب الحزم المجانية. تُمنح الحزم للفائزين بالسحب.",
+      "deliveryText": "لا حاجة إلى تقديم طلب منفصل. ستجد القسائم والحزم التي تفوز بها في حقيبة القسائم على LootBar.",
+      "issuanceNote": "إصدار القسائم بنسبة 100% يعني أن جميع الأعضاء الذين شحنوا عبر TEN يحصلون على قسيمة، ولا يعني خصمًا بنسبة 100%.",
+      "steps": [
+        {
+          "title": "افتح متجر TEN",
+          "text": "انتقل من رابط TEN المخصص في هذا الموقع إلى متجر Tiles Survive على LootBar."
+        },
+        {
+          "title": "احفظ الرابط وسجّل أو ادخل لحسابك",
+          "text": "احفظ عنوان متجر TEN الأصلي. أنشئ حسابًا على LootBar أو سجّل الدخول إلى حسابك الحالي."
+        },
+        {
+          "title": "اشحن بسعر مخفّض",
+          "text": "افتح رابط TEN المحفوظ واختر الحزمة التي تريدها."
+        },
+        {
+          "title": "احصل على مزايا شهرية",
+          "text": "استلم القسائم الشهرية وادخل السحب تلقائيًا وفق سجل شحنك التراكمي للشهر. راجع حقيبة القسائم."
+        }
+      ],
+      "newTitle": "احصل على قسيمة LootBar إضافية",
+      "newText": "افتح متجر TEN، ثم أدخل {code} في مربع بحث LootBar لتحصل على قسيمة إضافية مرة واحدة.",
+      "newOnce": "قسيمة إضافية لمرة واحدة",
+      "newAfter": "هذا رمز يُدخل في بحث LootBar، وهو منفصل عن رموز هدايا اللعبة.",
+      "bookmarkTitle": "احفظ رابط TEN",
+      "bookmarkText": "احفظ عنوان TEN الأصلي أدناه لشحنتك التالية. إذا تغيّر العنوان بعد تسجيل الدخول أو تغيير اللغة، فعدّل عنوان الإشارة المرجعية ليطابق رابط TEN هذا.",
+      "bookmarkButton": "طريقة حفظ الرابط",
+      "bookmarkHint": "يعرض هذا الزر التعليمات فقط ولا يحفظ الإشارة المرجعية تلقائيًا. قد تختلف أسماء القوائم باختلاف إصدار المتصفح.",
+      "bookmarkSteps": [
+        "افتح TEN ← اضغط Ctrl + D ← احفظ الإشارة المرجعية عدّل الإشارة المرجعية المحفوظة ليطابق عنوانها عنوان TEN الأصلي أعلاه.",
+        "افتح TEN ← اضغط Command + D ← احفظ الإشارة المرجعية عدّل الإشارة المرجعية المحفوظة ليطابق عنوانها عنوان TEN الأصلي أعلاه.",
+        "افتح TEN ← قائمة Chrome ← النجمة أو إضافة إشارة مرجعية عدّل الإشارة المرجعية المحفوظة ليطابق عنوانها عنوان TEN الأصلي أعلاه.",
+        "افتح TEN ← مشاركة ← إضافة إشارة مرجعية عدّل الإشارة المرجعية المحفوظة ليطابق عنوانها عنوان TEN الأصلي أعلاه."
+      ],
+      "copyCode": "نسخ الرمز",
+      "copied": "تم النسخ",
+      "copyFailed": "حدّد الرمز وانسخه",
+      "priceNote": "تختلف الخصومات حسب الحزمة. تحقّق من السعر الحالي وشروط استخدام القسيمة على LootBar.",
+      "priceChecked": "تاريخ التحقق من الأسعار",
+      "newMemberCta": "افتح متجر TEN",
+      "historyTitle": "سجل التوزيعات السابقة",
+      "historyMonth": "{month} · اكتمل التوزيع",
+      "historyIntro": "سجل توزيع الحزم لدى مشغّل TilesSurvive.net.",
+      "packageLabel": "الحزمة",
+      "recipientsLabel": "المستفيدون",
+      "historyTotal": "تسلّم {count} مستفيدًا حزمًا",
+      "historyCaveat": "كلما زاد دعمكم لنا، قدمنا لكم مكافآت ومزايا أكثر سخاءً تقديرًا لدعمكم.",
+      "bannerDiscount": "خصم يصل إلى نحو {discount}",
+      "copyUrl": "نسخ عنوان متجر TEN",
+      "urlCopied": "تم نسخ عنوان TEN",
+      "urlCopyFailed": "حدّد عنوان TEN أدناه وانسخه",
+      "urlLabel": "عنوان TEN المطلوب حفظه"
+    },
+    "nl": {
+      "bannerTitle": "Bespaar op Tiles Survive-opwaarderingen · Tot ongeveer {discount} korting",
+      "bannerGeneric": "Bespaar op Tiles Survive-opwaarderingen",
+      "bannerSubtitle": "Gebruik TEN voor extra maandelijkse coupons en een verloting van gratis pakketten",
+      "cta": "Waardeer op in de TEN-winkel",
+      "guideCta": "Bekijk de opwaardeergids",
+      "benefitTitle": "Wat krijg ik als ik via TEN opwaardeer?",
+      "couponTitle": "Elke maand extra coupons",
+      "couponText": "Leden die via de TEN-link opwaarderen, ontvangen extra kortingscoupons. Ook leden die slechts één keer hebben opgewaardeerd vallen hieronder.",
+      "drawTitle": "Maandelijkse verloting van gratis pakketten",
+      "drawText": "Je totale TEN-opwaarderingen van de maand worden automatisch meegenomen in de verloting van gratis pakketten. De winnaars ontvangen de pakketten.",
+      "deliveryText": "Apart aanmelden is niet nodig. Je vindt je coupons en gewonnen pakketten in je Coupon Bag op LootBar.",
+      "issuanceNote": "100% couponuitgifte betekent dat iedereen die via TEN opwaardeert een coupon ontvangt. Het betekent geen korting van 100%.",
+      "steps": [
+        {
+          "title": "Open de TEN-winkel",
+          "text": "Gebruik de speciale TEN-link op deze site om de Tiles Survive-winkel op LootBar te openen."
+        },
+        {
+          "title": "Maak een bladwijzer en registreer je of log in",
+          "text": "Sla de TEN-winkellink op als bladwijzer. Maak een LootBar-account aan of log in als je er al een hebt."
+        },
+        {
+          "title": "Waardeer op met korting",
+          "text": "Open je opgeslagen TEN-link en kies een pakket."
+        },
+        {
+          "title": "Ontvang maandelijkse voordelen",
+          "text": "Ontvang elke maand coupons en doe automatisch mee aan de verloting op basis van je maandelijkse opwaarderingen. Bekijk je Coupon Bag."
+        }
+      ],
+      "newTitle": "Extra LootBar-coupon",
+      "newText": "Open de TEN-winkel en voer {code} in het zoekvak van LootBar in om eenmalig een extra coupon te ontvangen.",
+      "newOnce": "De extra coupon wordt één keer verstrekt",
+      "newAfter": "Dit is een code voor een extra coupon via het zoekvak van LootBar, geen cadeaucode voor in de game.",
+      "bookmarkTitle": "Sla de TEN-link op als bladwijzer",
+      "bookmarkText": "Open de TEN-link hieronder en sla hem op als bladwijzer. Gebruik de opgeslagen link voor volgende opwaarderingen om maandelijkse coupons te blijven ontvangen en mee te doen aan de verloting van gratis pakketten.",
+      "bookmarkButton": "Zo maak je een bladwijzer",
+      "bookmarkHint": "Deze knop toont instructies en slaat niet automatisch een bladwijzer op. Menunamen kunnen per browserversie verschillen.",
+      "bookmarkSteps": [
+        "Open TEN → Ctrl + D → Vervang het adres door de oorspronkelijke TEN-link → Opslaan",
+        "Open TEN → Command + D → Vervang het adres door de oorspronkelijke TEN-link → Opslaan",
+        "Open TEN → Chrome-menu → Bladwijzer toevoegen → Wijzig het adres naar de oorspronkelijke TEN-link",
+        "Open TEN → Deel → Voeg bladwijzer toe → Wijzig het adres naar de oorspronkelijke TEN-link"
+      ],
+      "copyCode": "Code kopiëren",
+      "copied": "Gekopieerd",
+      "copyFailed": "Selecteer en kopieer de code",
+      "priceNote": "Kortingen verschillen per pakket. Controleer de actuele prijs en couponvoorwaarden op LootBar.",
+      "priceChecked": "Prijzen gecontroleerd",
+      "newMemberCta": "Open de TEN-winkel",
+      "historyTitle": "Eerder uitgereikte pakketten",
+      "historyMonth": "{month} · afgerond",
+      "historyIntro": "Uitgifteregistratie van de beheerder van TilesSurvive.net.",
+      "packageLabel": "Pakket",
+      "recipientsLabel": "Ontvangers",
+      "historyTotal": "{count} ontvangers hebben pakketten ontvangen",
+      "historyCaveat": "Hoe meer jullie ons steunen, hoe royaler de beloningen en voordelen waarmee we jullie zullen bedanken.",
+      "bannerDiscount": "Tot ongeveer {discount} korting",
+      "copyUrl": "Adres van TEN-winkel kopiëren",
+      "urlCopied": "TEN-adres gekopieerd",
+      "urlCopyFailed": "Selecteer en kopieer het TEN-adres hieronder",
+      "urlLabel": "TEN-adres om op te slaan"
+    },
+    "fr": {
+      "bannerTitle": "Rechargez Tiles Survive à prix réduit · Jusqu’à environ {discount} de réduction",
+      "bannerGeneric": "Rechargez Tiles Survive à prix réduit",
+      "bannerSubtitle": "Coupons mensuels supplémentaires · Tirage de packs gratuits",
+      "cta": "Recharger dans la boutique TEN",
+      "guideCta": "Voir le guide de recharge",
+      "benefitTitle": "Quels avantages pour une recharge via TEN ?",
+      "couponTitle": "Coupons de réduction mensuels TEN",
+      "couponText": "Les membres qui rechargent via le lien TEN reçoivent des coupons de réduction supplémentaires, y compris ceux qui n’effectuent qu’une recharge.",
+      "drawTitle": "Tirage mensuel de packs gratuits",
+      "drawText": "Le cumul de vos recharges du mois via TEN est automatiquement pris en compte pour le tirage au sort de packs gratuits. Les packs sont attribués aux gagnants.",
+      "deliveryText": "Aucune inscription séparée n’est nécessaire. Retrouvez vos coupons et les packs gagnés dans votre sac à coupons LootBar.",
+      "issuanceNote": "Une distribution de coupons à 100 % signifie que tous les membres ayant rechargé via TEN reçoivent un coupon. Cela ne signifie pas une réduction de 100 %.",
+      "steps": [
+        {
+          "title": "Ouvrir la boutique TEN",
+          "text": "Suivez le lien TEN dédié de ce site vers la boutique Tiles Survive sur LootBar."
+        },
+        {
+          "title": "Enregistrer · S’inscrire ou se connecter",
+          "text": "Enregistrez l’adresse d’origine de la boutique TEN. Créez un compte LootBar ou connectez-vous à votre compte existant."
+        },
+        {
+          "title": "Recharger à prix réduit",
+          "text": "Revenez par votre lien TEN enregistré et choisissez un pack."
+        },
+        {
+          "title": "Profiter des avantages mensuels",
+          "text": "Recevez vos coupons chaque mois et participez automatiquement au tirage selon vos recharges cumulées du mois. Consultez votre sac à coupons."
+        }
+      ],
+      "newTitle": "Recevoir un coupon LootBar supplémentaire",
+      "newText": "Ouvrez la boutique TEN, puis saisissez {code} dans la barre de recherche LootBar pour recevoir une fois un coupon supplémentaire.",
+      "newOnce": "Un coupon supplémentaire, une seule fois",
+      "newAfter": "Ce code s’utilise dans la recherche LootBar. Il est distinct des codes cadeaux du jeu.",
+      "bookmarkTitle": "Ajouter le lien TEN aux favoris",
+      "bookmarkText": "Enregistrez l’adresse TEN d’origine ci-dessous pour votre prochaine recharge. Si la connexion ou un changement de langue vous redirige, remplacez l’adresse du favori par ce lien TEN.",
+      "bookmarkButton": "Comment ajouter aux favoris",
+      "bookmarkHint": "Ce bouton affiche les instructions ; il n’enregistre pas automatiquement un favori. Les noms des menus peuvent varier selon la version du navigateur.",
+      "bookmarkSteps": [
+        "Ouvrir TEN → Ctrl + D → Enregistrer le favori Modifiez le favori enregistré pour que son adresse corresponde à l’adresse TEN d’origine ci-dessus.",
+        "Ouvrir TEN → Command + D → Enregistrer le favori Modifiez le favori enregistré pour que son adresse corresponde à l’adresse TEN d’origine ci-dessus.",
+        "Ouvrir TEN → Menu Chrome → Étoile ou Ajouter aux favoris Modifiez le favori enregistré pour que son adresse corresponde à l’adresse TEN d’origine ci-dessus.",
+        "Ouvrir TEN → Partager → Ajouter un signet Modifiez le favori enregistré pour que son adresse corresponde à l’adresse TEN d’origine ci-dessus."
+      ],
+      "copyCode": "Copier le code",
+      "copied": "Code copié",
+      "copyFailed": "Sélectionnez le code pour le copier",
+      "priceNote": "Les réductions varient selon le pack. Vérifiez le prix actuel et les conditions des coupons sur LootBar.",
+      "priceChecked": "Prix vérifiés le",
+      "newMemberCta": "Ouvrir la boutique TEN",
+      "historyTitle": "Lots déjà distribués",
+      "historyMonth": "{month} · terminé",
+      "historyIntro": "Registre de distribution de l’exploitant de TilesSurvive.net.",
+      "packageLabel": "Pack",
+      "recipientsLabel": "Bénéficiaires",
+      "historyTotal": "{count} bénéficiaires ont reçu des packs",
+      "historyCaveat": "Plus vous nous soutenez, plus nous vous proposerons de récompenses et d’avantages pour vous remercier.",
+      "bannerDiscount": "Jusqu’à environ {discount} de réduction",
+      "copyUrl": "Copier l’adresse de la boutique TEN",
+      "urlCopied": "Adresse TEN copiée",
+      "urlCopyFailed": "Sélectionnez et copiez l’adresse TEN ci-dessous",
+      "urlLabel": "Adresse TEN à enregistrer"
+    },
+    "id": {
+      "bannerTitle": "Hemat saat top up Tiles Survive · Diskon hingga sekitar {discount}",
+      "bannerGeneric": "Hemat saat top up Tiles Survive",
+      "bannerSubtitle": "Gunakan TEN untuk kupon tambahan bulanan dan undian paket gratis",
+      "cta": "Top up di toko TEN",
+      "guideCta": "Lihat panduan top up",
+      "benefitTitle": "Apa keuntungan top up melalui TEN?",
+      "couponTitle": "Kupon tambahan setiap bulan",
+      "couponText": "Anggota yang top up melalui tautan TEN menerima kupon diskon tambahan. Anggota yang baru top up satu kali juga termasuk.",
+      "drawTitle": "Undian paket gratis bulanan",
+      "drawText": "Total riwayat top up TEN Anda selama sebulan otomatis disertakan dalam undian paket gratis. Paket diberikan kepada pemenang undian.",
+      "deliveryText": "Tidak perlu mendaftar secara terpisah. Kupon dan paket yang Anda menangkan tersedia di Kantong Kupon LootBar.",
+      "issuanceNote": "Pemberian kupon 100% berarti semua anggota yang top up melalui TEN menerima kupon. Ini bukan diskon 100%.",
+      "steps": [
+        {
+          "title": "Buka toko TEN",
+          "text": "Gunakan tautan khusus TEN di situs ini untuk membuka toko Tiles Survive di LootBar."
+        },
+        {
+          "title": "Simpan bookmark dan daftar atau masuk",
+          "text": "Simpan tautan toko TEN sebagai bookmark. Buat akun LootBar, atau masuk jika sudah memiliki akun."
+        },
+        {
+          "title": "Top up dengan diskon",
+          "text": "Buka kembali tautan TEN yang sudah disimpan, lalu pilih paket."
+        },
+        {
+          "title": "Terima keuntungan bulanan",
+          "text": "Dapatkan kupon setiap bulan dan ikuti undian otomatis berdasarkan top up bulanan Anda. Periksa Kantong Kupon."
+        }
+      ],
+      "newTitle": "Kupon tambahan LootBar",
+      "newText": "Buka toko TEN, lalu masukkan {code} di kotak pencarian LootBar untuk menerima kupon tambahan satu kali.",
+      "newOnce": "Kupon tambahan diberikan satu kali",
+      "newAfter": "Ini adalah kode kupon tambahan untuk kotak pencarian LootBar, bukan kode hadiah dalam game.",
+      "bookmarkTitle": "Simpan tautan TEN",
+      "bookmarkText": "Buka tautan TEN di bawah dan simpan sebagai bookmark. Gunakan tautan tersimpan untuk top up berikutnya agar tetap menerima kupon bulanan dan mengikuti undian paket gratis.",
+      "bookmarkButton": "Cara menyimpan bookmark",
+      "bookmarkHint": "Tombol ini menampilkan petunjuk, bukan menyimpan bookmark secara otomatis. Nama menu dapat berbeda menurut versi browser.",
+      "bookmarkSteps": [
+        "Buka TEN → Ctrl + D → Ganti alamat dengan tautan TEN asli → Simpan",
+        "Buka TEN → Command + D → Ganti alamat dengan tautan TEN asli → Simpan",
+        "Buka TEN → Menu Chrome → Tambahkan bookmark → Edit alamat menjadi tautan TEN asli",
+        "Buka TEN → Bagikan → Tambahkan Bookmark → Edit alamat menjadi tautan TEN asli"
+      ],
+      "copyCode": "Salin kode",
+      "copied": "Tersalin",
+      "copyFailed": "Pilih kode, lalu salin",
+      "priceNote": "Diskon berbeda untuk setiap paket. Periksa harga terkini dan ketentuan kupon di LootBar.",
+      "priceChecked": "Harga diperiksa",
+      "newMemberCta": "Buka toko TEN",
+      "historyTitle": "Riwayat pembagian paket",
+      "historyMonth": "{month} · Selesai dibagikan",
+      "historyIntro": "Catatan pembagian paket oleh pengelola TilesSurvive.net.",
+      "packageLabel": "Paket",
+      "recipientsLabel": "Penerima",
+      "historyTotal": "Paket telah diterima oleh {count} penerima",
+      "historyCaveat": "Semakin besar dukungan Anda, semakin banyak hadiah dan manfaat yang akan kami berikan sebagai bentuk terima kasih.",
+      "bannerDiscount": "Diskon hingga sekitar {discount}",
+      "copyUrl": "Salin alamat toko TEN",
+      "urlCopied": "Alamat TEN tersalin",
+      "urlCopyFailed": "Pilih alamat TEN di bawah, lalu salin",
+      "urlLabel": "Alamat TEN untuk disimpan"
+    },
+    "it": {
+      "bannerTitle": "Risparmia sulle ricariche Tiles Survive · Fino a circa il {discount} di sconto",
+      "bannerGeneric": "Risparmia sulle ricariche Tiles Survive",
+      "bannerSubtitle": "Usa TEN per ricevere coupon mensili aggiuntivi e partecipare all'estrazione di pacchetti gratuiti",
+      "cta": "Ricarica nel negozio TEN",
+      "guideCta": "Leggi la guida alle ricariche",
+      "benefitTitle": "Quali vantaggi offre una ricarica tramite TEN?",
+      "couponTitle": "Coupon aggiuntivi ogni mese",
+      "couponText": "Gli utenti che ricaricano tramite il link TEN ricevono coupon sconto aggiuntivi, anche dopo una sola ricarica.",
+      "drawTitle": "Estrazione mensile di pacchetti gratuiti",
+      "drawText": "Il totale delle tue ricariche TEN del mese viene incluso automaticamente nell'estrazione di pacchetti gratuiti. I pacchetti vengono assegnati ai vincitori.",
+      "deliveryText": "Non serve una richiesta separata. Trovi i coupon e gli eventuali pacchetti vinti nella tua raccolta coupon di LootBar.",
+      "issuanceNote": "L'assegnazione dei coupon al 100% significa che ogni utente che ricarica tramite TEN riceve un coupon. Non significa uno sconto del 100%.",
+      "steps": [
+        {
+          "title": "Apri il negozio TEN",
+          "text": "Segui il link TEN dedicato di questo sito per aprire il negozio Tiles Survive su LootBar."
+        },
+        {
+          "title": "Salva il link e registrati o accedi",
+          "text": "Aggiungi il negozio TEN ai preferiti. Crea un account LootBar oppure accedi se ne hai già uno."
+        },
+        {
+          "title": "Ricarica con uno sconto",
+          "text": "Torna tramite il link TEN salvato e scegli un pacchetto."
+        },
+        {
+          "title": "Ricevi i vantaggi mensili",
+          "text": "Ricevi coupon ogni mese e partecipa automaticamente all'estrazione in base alle tue ricariche mensili. Controlla la raccolta coupon."
+        }
+      ],
+      "newTitle": "Coupon aggiuntivo LootBar",
+      "newText": "Apri il negozio TEN e inserisci {code} nella barra di ricerca di LootBar per ricevere una sola volta un coupon aggiuntivo.",
+      "newOnce": "Il coupon aggiuntivo viene assegnato una sola volta",
+      "newAfter": "Questo codice serve a ottenere un coupon aggiuntivo tramite la ricerca di LootBar; non è un codice regalo da inserire nel gioco.",
+      "bookmarkTitle": "Aggiungi il link TEN ai preferiti",
+      "bookmarkText": "Apri il link TEN qui sotto e aggiungilo ai preferiti. Usalo per le prossime ricariche per continuare a ricevere coupon mensili e partecipare all'estrazione di pacchetti gratuiti.",
+      "bookmarkButton": "Come aggiungere ai preferiti",
+      "bookmarkHint": "Questo pulsante mostra le istruzioni; non salva automaticamente un preferito. I nomi dei menu possono variare in base alla versione del browser.",
+      "bookmarkSteps": [
+        "Apri TEN → Ctrl + D → Imposta l’indirizzo sul link TEN originale → Salva",
+        "Apri TEN → Command + D → Imposta l’indirizzo sul link TEN originale → Salva",
+        "Apri TEN → Menu Chrome → Aggiungi ai preferiti → Modifica l’indirizzo usando il link TEN originale",
+        "Apri TEN → Condividi → Aggiungi segnalibro → Modifica l’indirizzo usando il link TEN originale"
+      ],
+      "copyCode": "Copia codice",
+      "copied": "Copiato",
+      "copyFailed": "Seleziona il codice e copialo",
+      "priceNote": "Gli sconti variano in base al pacchetto. Controlla il prezzo attuale e le condizioni dei coupon su LootBar.",
+      "priceChecked": "Prezzi verificati",
+      "newMemberCta": "Apri il negozio TEN",
+      "historyTitle": "Premi già consegnati",
+      "historyMonth": "{month} · completato",
+      "historyIntro": "Registro delle consegne del gestore di TilesSurvive.net.",
+      "packageLabel": "Pacchetto",
+      "recipientsLabel": "Destinatari",
+      "historyTotal": "{count} destinatari hanno ricevuto pacchetti",
+      "historyCaveat": "Più ci sostenete, più ricche saranno le ricompense e i vantaggi con cui vi ringrazieremo.",
+      "bannerDiscount": "Fino a circa il {discount} di sconto",
+      "copyUrl": "Copia l’indirizzo del negozio TEN",
+      "urlCopied": "Indirizzo TEN copiato",
+      "urlCopyFailed": "Seleziona e copia l’indirizzo TEN qui sotto",
+      "urlLabel": "Indirizzo TEN da salvare"
+    },
+    "pl": {
+      "bannerTitle": "Oszczędzaj na doładowaniach Tiles Survive · Do około {discount} zniżki",
+      "bannerGeneric": "Oszczędzaj na doładowaniach Tiles Survive",
+      "bannerSubtitle": "Korzystaj z TEN, by otrzymywać dodatkowe kupony co miesiąc i brać udział w losowaniu darmowych pakietów",
+      "cta": "Doładuj w sklepie TEN",
+      "guideCta": "Zobacz poradnik doładowań",
+      "benefitTitle": "Co zyskuję, doładowując przez TEN?",
+      "couponTitle": "Dodatkowe kupony co miesiąc",
+      "couponText": "Użytkownicy doładowujący przez link TEN otrzymują dodatkowe kupony rabatowe. Dotyczy to również osób, które doładowały tylko raz.",
+      "drawTitle": "Comiesięczne losowanie darmowych pakietów",
+      "drawText": "Łączna wartość Twoich doładowań TEN z danego miesiąca jest automatycznie uwzględniana w losowaniu darmowych pakietów. Pakiety otrzymują zwycięzcy losowania.",
+      "deliveryText": "Nie musisz zgłaszać się osobno. Kupony i wygrane pakiety znajdziesz w sekcji Coupon Bag na LootBar.",
+      "issuanceNote": "100% przyznawania kuponów oznacza, że każdy użytkownik doładowujący przez TEN otrzymuje kupon. Nie oznacza to zniżki 100%.",
+      "steps": [
+        {
+          "title": "Otwórz sklep TEN",
+          "text": "Użyj dedykowanego linku TEN na tej stronie, aby otworzyć sklep Tiles Survive na LootBar."
+        },
+        {
+          "title": "Dodaj zakładkę i zarejestruj się lub zaloguj",
+          "text": "Zapisz sklep TEN w zakładkach. Utwórz konto LootBar lub zaloguj się, jeśli już je masz."
+        },
+        {
+          "title": "Doładuj ze zniżką",
+          "text": "Wróć przez zapisany link TEN i wybierz pakiet."
+        },
+        {
+          "title": "Odbieraj korzyści co miesiąc",
+          "text": "Otrzymuj comiesięczne kupony i automatycznie bierz udział w losowaniu na podstawie miesięcznych doładowań. Sprawdzaj sekcję Coupon Bag."
+        }
+      ],
+      "newTitle": "Dodatkowy kupon LootBar",
+      "newText": "Otwórz sklep TEN i wpisz {code} w wyszukiwarce LootBar, aby jednorazowo otrzymać dodatkowy kupon.",
+      "newOnce": "Dodatkowy kupon przyznawany jest jeden raz",
+      "newAfter": "To kod na dodatkowy kupon wpisywany w wyszukiwarce LootBar, a nie kod prezentowy do wykorzystania w grze.",
+      "bookmarkTitle": "Dodaj link TEN do zakładek",
+      "bookmarkText": "Otwórz poniższy link TEN i dodaj go do zakładek. Używaj zapisanego linku przy kolejnych doładowaniach, aby nadal otrzymywać comiesięczne kupony i brać udział w losowaniu darmowych pakietów.",
+      "bookmarkButton": "Jak dodać zakładkę",
+      "bookmarkHint": "Przycisk pokazuje instrukcję i nie zapisuje zakładki automatycznie. Nazwy opcji mogą się różnić zależnie od wersji przeglądarki.",
+      "bookmarkSteps": [
+        "Otwórz TEN → Ctrl + D → Ustaw oryginalny link TEN jako adres → Zapisz",
+        "Otwórz TEN → Command + D → Ustaw oryginalny link TEN jako adres → Zapisz",
+        "Otwórz TEN → Menu Chrome → Dodaj zakładkę → Zmień adres na oryginalny link TEN",
+        "Otwórz TEN → Udostępnij → Dodaj zakładkę → Zmień adres na oryginalny link TEN"
+      ],
+      "copyCode": "Kopiuj kod",
+      "copied": "Skopiowano",
+      "copyFailed": "Zaznacz kod i skopiuj go",
+      "priceNote": "Zniżki zależą od pakietu. Sprawdź aktualne ceny i warunki kuponów na LootBar.",
+      "priceChecked": "Data sprawdzenia cen",
+      "newMemberCta": "Otwórz sklep TEN",
+      "historyTitle": "Dotychczas przekazane nagrody",
+      "historyMonth": "{month} · zakończono",
+      "historyIntro": "Rejestr nagród przekazanych przez operatora TilesSurvive.net.",
+      "packageLabel": "Pakiet",
+      "recipientsLabel": "Odbiorcy",
+      "historyTotal": "Liczba osób, które otrzymały pakiety: {count}",
+      "historyCaveat": "Im częściej korzystacie z naszych usług, tym hojniejszymi nagrodami i korzyściami będziemy odwdzięczać się za Wasze wsparcie.",
+      "bannerDiscount": "Do około {discount} zniżki",
+      "copyUrl": "Kopiuj adres sklepu TEN",
+      "urlCopied": "Skopiowano adres TEN",
+      "urlCopyFailed": "Zaznacz i skopiuj poniższy adres TEN",
+      "urlLabel": "Adres TEN do zapisania"
+    },
+    "pt": {
+      "bannerTitle": "Recarregue Tiles Survive por menos · Até cerca de {discount} de desconto",
+      "bannerGeneric": "Recarregue Tiles Survive por menos",
+      "bannerSubtitle": "Cupons extras mensais · Sorteio de pacotes grátis",
+      "cta": "Recarregar na loja TEN",
+      "guideCta": "Ver o guia de recarga",
+      "benefitTitle": "Quais benefícios recebo ao recarregar pelo TEN?",
+      "couponTitle": "Cupons de desconto mensais TEN",
+      "couponText": "Membros que recarregam pelo link TEN recebem cupons de desconto extras, inclusive quem recarrega apenas uma vez.",
+      "drawTitle": "Sorteio mensal de pacotes grátis",
+      "drawText": "O total das suas recargas pelo TEN no mês é incluído automaticamente no sorteio de pacotes grátis. Os pacotes são entregues aos ganhadores.",
+      "deliveryText": "Não é preciso fazer uma inscrição separada. Confira seus cupons e os pacotes que ganhar na bolsa de cupons do LootBar.",
+      "issuanceNote": "A distribuição de cupons a 100% significa que todos os membros que recarregaram pelo TEN recebem um cupom. Não significa um desconto de 100%.",
+      "steps": [
+        {
+          "title": "Abrir a loja TEN",
+          "text": "Use o link TEN deste site para acessar a loja de Tiles Survive no LootBar."
+        },
+        {
+          "title": "Salvar · Cadastrar-se ou entrar",
+          "text": "Salve o endereço original da loja TEN. Crie uma conta no LootBar ou entre com sua conta existente."
+        },
+        {
+          "title": "Recarregar com desconto",
+          "text": "Acesse pelo link TEN salvo e escolha um pacote."
+        },
+        {
+          "title": "Receber benefícios mensais",
+          "text": "Receba cupons mensais e participe automaticamente do sorteio com base nas recargas acumuladas do mês. Confira sua bolsa de cupons."
+        }
+      ],
+      "newTitle": "Receber um cupom extra do LootBar",
+      "newText": "Abra a loja TEN e digite {code} na busca do LootBar para receber um cupom extra uma única vez.",
+      "newOnce": "Cupom extra entregue uma vez",
+      "newAfter": "Este código deve ser usado na busca do LootBar. Ele é diferente dos códigos de presente do jogo.",
+      "bookmarkTitle": "Salvar o link TEN nos favoritos",
+      "bookmarkText": "Salve o endereço TEN original abaixo para a próxima recarga. Se o endereço mudar após o login ou a troca de idioma, edite o favorito e restaure este link TEN.",
+      "bookmarkButton": "Como salvar nos favoritos",
+      "bookmarkHint": "Este botão apenas mostra as instruções; ele não salva um favorito automaticamente. Os nomes dos menus podem variar conforme a versão do navegador.",
+      "bookmarkSteps": [
+        "Abrir TEN → Ctrl + D → Salvar favorito Edite o favorito salvo para que o endereço corresponda ao endereço TEN original acima.",
+        "Abrir TEN → Command + D → Salvar favorito Edite o favorito salvo para que o endereço corresponda ao endereço TEN original acima.",
+        "Abrir TEN → Menu do Chrome → Estrela ou Adicionar favorito Edite o favorito salvo para que o endereço corresponda ao endereço TEN original acima.",
+        "Abrir TEN → Compartilhar → Adicionar favorito Edite o favorito salvo para que o endereço corresponda ao endereço TEN original acima."
+      ],
+      "copyCode": "Copiar código",
+      "copied": "Copiado",
+      "copyFailed": "Selecione o código e copie",
+      "priceNote": "Os descontos variam conforme o pacote. Confira o preço atual e as condições dos cupons no LootBar.",
+      "priceChecked": "Preços verificados em",
+      "newMemberCta": "Abrir a loja TEN",
+      "historyTitle": "Prêmios já entregues",
+      "historyMonth": "{month} · concluído",
+      "historyIntro": "Registro de entregas do operador do TilesSurvive.net.",
+      "packageLabel": "Pacote",
+      "recipientsLabel": "Destinatários",
+      "historyTotal": "{count} destinatários receberam pacotes",
+      "historyCaveat": "Quanto mais vocês nos apoiarem, mais generosas serão as recompensas e os benefícios que ofereceremos em agradecimento.",
+      "bannerDiscount": "Até cerca de {discount} de desconto",
+      "copyUrl": "Copiar endereço da loja TEN",
+      "urlCopied": "Endereço TEN copiado",
+      "urlCopyFailed": "Selecione e copie o endereço TEN abaixo",
+      "urlLabel": "Endereço TEN para salvar"
+    },
+    "es": {
+      "bannerTitle": "Recarga Tiles Survive por menos · Hasta aproximadamente un {discount} de descuento",
+      "bannerGeneric": "Recarga Tiles Survive por menos",
+      "bannerSubtitle": "Cupones mensuales adicionales · Sorteo de paquetes gratis",
+      "cta": "Recargar en la tienda TEN",
+      "guideCta": "Ver la guía de recarga",
+      "benefitTitle": "¿Qué ventajas obtengo al recargar a través de TEN?",
+      "couponTitle": "Cupones de descuento mensuales TEN",
+      "couponText": "Los miembros que recargan mediante el enlace TEN reciben cupones de descuento adicionales, incluidos quienes solo recargan una vez.",
+      "drawTitle": "Sorteo mensual de paquetes gratis",
+      "drawText": "El total de tus recargas del mes mediante TEN se incluye automáticamente en el sorteo de paquetes gratis. Los paquetes se entregan a los ganadores.",
+      "deliveryText": "No hace falta inscribirse por separado. Encontrarás tus cupones y los paquetes que ganes en la bolsa de cupones de LootBar.",
+      "issuanceNote": "Una entrega de cupones del 100 % significa que todos los miembros que hayan recargado mediante TEN reciben un cupón. No significa un descuento del 100 %.",
+      "steps": [
+        {
+          "title": "Abrir la tienda TEN",
+          "text": "Sigue el enlace TEN de este sitio para entrar en la tienda de Tiles Survive en LootBar."
+        },
+        {
+          "title": "Guardar · Registrarse o iniciar sesión",
+          "text": "Guarda la dirección original de la tienda TEN. Crea una cuenta de LootBar o inicia sesión con tu cuenta actual."
+        },
+        {
+          "title": "Recargar con descuento",
+          "text": "Entra desde el enlace TEN guardado y elige un paquete."
+        },
+        {
+          "title": "Recibir ventajas cada mes",
+          "text": "Recibe cupones mensuales y participa automáticamente en el sorteo según tus recargas acumuladas del mes. Consulta tu bolsa de cupones."
+        }
+      ],
+      "newTitle": "Recibir un cupón extra de LootBar",
+      "newText": "Abre la tienda TEN e introduce {code} en el buscador de LootBar para recibir una vez un cupón adicional.",
+      "newOnce": "Cupón adicional por una sola vez",
+      "newAfter": "Este código se introduce en el buscador de LootBar. Es distinto de los códigos de regalo del juego.",
+      "bookmarkTitle": "Guardar el enlace TEN en favoritos",
+      "bookmarkText": "Guarda la dirección TEN original de abajo para tu próxima recarga. Si cambia al iniciar sesión o cambiar de idioma, edita el marcador y vuelve a poner este enlace TEN.",
+      "bookmarkButton": "Cómo guardar en favoritos",
+      "bookmarkHint": "Este botón solo muestra las instrucciones; no guarda un marcador automáticamente. Los nombres de los menús pueden variar según la versión del navegador.",
+      "bookmarkSteps": [
+        "Abrir TEN → Ctrl + D → Guardar marcador Edita el marcador guardado para que su dirección coincida con la dirección TEN original de arriba.",
+        "Abrir TEN → Command + D → Guardar marcador Edita el marcador guardado para que su dirección coincida con la dirección TEN original de arriba.",
+        "Abrir TEN → Menú de Chrome → Estrella o Añadir marcador Edita el marcador guardado para que su dirección coincida con la dirección TEN original de arriba.",
+        "Abrir TEN → Compartir → Añadir marcador Edita el marcador guardado para que su dirección coincida con la dirección TEN original de arriba."
+      ],
+      "copyCode": "Copiar código",
+      "copied": "Copiado",
+      "copyFailed": "Selecciona el código y cópialo",
+      "priceNote": "Los descuentos varían según el paquete. Consulta el precio actual y las condiciones de los cupones en LootBar.",
+      "priceChecked": "Precios comprobados el",
+      "newMemberCta": "Abrir la tienda TEN",
+      "historyTitle": "Premios ya entregados",
+      "historyMonth": "{month} · completado",
+      "historyIntro": "Registro de entregas del operador de TilesSurvive.net.",
+      "packageLabel": "Paquete",
+      "recipientsLabel": "Destinatarios",
+      "historyTotal": "{count} destinatarios recibieron paquetes",
+      "historyCaveat": "Cuanto más nos apoyen, más generosas serán las recompensas y ventajas con las que les agradeceremos su apoyo.",
+      "bannerDiscount": "Hasta aproximadamente un {discount} de descuento",
+      "copyUrl": "Copiar dirección de la tienda TEN",
+      "urlCopied": "Dirección TEN copiada",
+      "urlCopyFailed": "Selecciona y copia la dirección TEN de abajo",
+      "urlLabel": "Dirección TEN que debes guardar"
+    },
+    "sv": {
+      "bannerTitle": "Spara på påfyllningar i Tiles Survive · Upp till cirka {discount} rabatt",
+      "bannerGeneric": "Spara på påfyllningar i Tiles Survive",
+      "bannerSubtitle": "Använd TEN för extra månadskuponger och utlottning av gratispaket",
+      "cta": "Fyll på i TEN-butiken",
+      "guideCta": "Läs påfyllningsguiden",
+      "benefitTitle": "Vilka förmåner får jag när jag fyller på via TEN?",
+      "couponTitle": "Extra kuponger varje månad",
+      "couponText": "Medlemmar som fyller på via TEN-länken får extra rabattkuponger. Det gäller även den som bara har fyllt på en gång.",
+      "drawTitle": "Månatlig utlottning av gratispaket",
+      "drawText": "Dina sammanlagda TEN-påfyllningar under månaden tas automatiskt med i utlottningen av gratispaket. Paketen går till vinnarna.",
+      "deliveryText": "Ingen separat anmälan behövs. Dina kuponger och eventuella paketvinster finns i din Coupon Bag på LootBar.",
+      "issuanceNote": "100% kupongutdelning innebär att alla medlemmar som fyller på via TEN får en kupong. Det betyder inte 100% rabatt.",
+      "steps": [
+        {
+          "title": "Öppna TEN-butiken",
+          "text": "Följ webbplatsens särskilda TEN-länk till Tiles Survive-butiken på LootBar."
+        },
+        {
+          "title": "Bokmärk och registrera dig eller logga in",
+          "text": "Spara TEN-butiken som bokmärke. Skapa ett LootBar-konto eller logga in om du redan har ett."
+        },
+        {
+          "title": "Fyll på med rabatt",
+          "text": "Öppna din sparade TEN-länk och välj ett paket."
+        },
+        {
+          "title": "Få förmåner varje månad",
+          "text": "Få månadskuponger och delta automatiskt i utlottningen utifrån dina påfyllningar under månaden. Kontrollera din Coupon Bag."
+        }
+      ],
+      "newTitle": "Extra LootBar-kupong",
+      "newText": "Öppna TEN-butiken och ange {code} i LootBars sökruta för att få en extra kupong en gång.",
+      "newOnce": "Den extra kupongen ges en gång",
+      "newAfter": "Det här är en kod för en extra kupong via LootBars sökruta, inte en presentkod att ange i spelet.",
+      "bookmarkTitle": "Bokmärk TEN-länken",
+      "bookmarkText": "Öppna TEN-länken nedan och bokmärk den. Använd den sparade länken för kommande påfyllningar för att fortsätta få månadskuponger och delta i utlottningen av gratispaket.",
+      "bookmarkButton": "Så bokmärker du länken",
+      "bookmarkHint": "Knappen visar instruktioner och sparar inte ett bokmärke automatiskt. Menynamnen kan variera mellan webbläsarversioner.",
+      "bookmarkSteps": [
+        "Öppna TEN → Ctrl + D → Ange den ursprungliga TEN-länken som adress → Spara",
+        "Öppna TEN → Command + D → Ange den ursprungliga TEN-länken som adress → Spara",
+        "Öppna TEN → Chrome-menyn → Lägg till bokmärke → Ändra adressen till den ursprungliga TEN-länken",
+        "Öppna TEN → Dela → Lägg till bokmärke → Ändra adressen till den ursprungliga TEN-länken"
+      ],
+      "copyCode": "Kopiera kod",
+      "copied": "Kopierad",
+      "copyFailed": "Markera koden och kopiera den",
+      "priceNote": "Rabatten varierar mellan paketen. Kontrollera aktuellt pris och kupongvillkor på LootBar.",
+      "priceChecked": "Priser kontrollerade",
+      "newMemberCta": "Öppna TEN-butiken",
+      "historyTitle": "Tidigare utdelningar",
+      "historyMonth": "{month} · slutfört",
+      "historyIntro": "Utdelningsregister från operatören för TilesSurvive.net.",
+      "packageLabel": "Paket",
+      "recipientsLabel": "Mottagare",
+      "historyTotal": "{count} mottagare har fått paket",
+      "historyCaveat": "Ju mer ni använder vår tjänst, desto generösare belöningar och förmåner kommer vi att erbjuda som tack.",
+      "bannerDiscount": "Upp till cirka {discount} rabatt",
+      "copyUrl": "Kopiera TEN-butikens adress",
+      "urlCopied": "TEN-adressen kopierad",
+      "urlCopyFailed": "Markera och kopiera TEN-adressen nedan",
+      "urlLabel": "TEN-adress att spara"
+    },
+    "th": {
+      "bannerTitle": "เติมเกม Tiles Survive ในราคาประหยัด · ลดสูงสุดประมาณ {discount}",
+      "bannerGeneric": "เติมเกม Tiles Survive ในราคาประหยัด",
+      "bannerSubtitle": "ใช้ลิงก์ TEN เพื่อรับคูปองเพิ่มทุกเดือนและร่วมลุ้นแพ็กเกจฟรี",
+      "cta": "เติมเกมที่ร้าน TEN",
+      "guideCta": "ดูคู่มือเติมเกม",
+      "benefitTitle": "เติมเกมผ่าน TEN ได้รับสิทธิประโยชน์อะไรบ้าง?",
+      "couponTitle": "คูปองเพิ่มทุกเดือน",
+      "couponText": "สมาชิกที่เติมเกมผ่านลิงก์ TEN จะได้รับคูปองส่วนลดเพิ่มเติม รวมถึงสมาชิกที่เคยเติมเพียงครั้งเดียว",
+      "drawTitle": "จับรางวัลแพ็กเกจฟรีทุกเดือน",
+      "drawText": "ยอดเติมผ่าน TEN สะสมในแต่ละเดือนของคุณจะถูกนำไปร่วมการจับรางวัลแพ็กเกจฟรีโดยอัตโนมัติ ผู้ที่ถูกรางวัลจะได้รับแพ็กเกจ",
+      "deliveryText": "ไม่ต้องสมัครกิจกรรมแยกต่างหาก ดูคูปองและแพ็กเกจที่คุณถูกรางวัลได้ในกระเป๋าคูปอง LootBar",
+      "issuanceNote": "การแจกคูปอง 100% หมายถึงสมาชิกทุกคนที่เติมผ่าน TEN จะได้รับคูปอง ไม่ได้หมายถึงส่วนลด 100%",
+      "steps": [
+        {
+          "title": "เปิดร้าน TEN",
+          "text": "ใช้ลิงก์ TEN เฉพาะบนเว็บไซต์นี้เพื่อเปิดร้าน Tiles Survive บน LootBar"
+        },
+        {
+          "title": "บันทึกบุ๊กมาร์กและสมัครหรือเข้าสู่ระบบ",
+          "text": "บันทึกร้าน TEN เป็นบุ๊กมาร์ก สร้างบัญชี LootBar หรือเข้าสู่ระบบหากมีบัญชีแล้ว"
+        },
+        {
+          "title": "เติมเกมพร้อมส่วนลด",
+          "text": "กลับเข้าผ่านลิงก์ TEN ที่บันทึกไว้ แล้วเลือกแพ็กเกจ"
+        },
+        {
+          "title": "รับสิทธิประโยชน์ทุกเดือน",
+          "text": "รับคูปองทุกเดือนและร่วมจับรางวัลอัตโนมัติตามยอดเติมสะสมรายเดือน ตรวจสอบได้ในกระเป๋าคูปอง"
+        }
+      ],
+      "newTitle": "คูปองเพิ่มเติมของ LootBar",
+      "newText": "เปิดร้าน TEN แล้วกรอก {code} ในช่องค้นหาของ LootBar เพื่อรับคูปองเพิ่มเติมหนึ่งครั้ง",
+      "newOnce": "คูปองเพิ่มเติมรับได้หนึ่งครั้ง",
+      "newAfter": "โค้ดนี้ใช้รับคูปองเพิ่มเติมผ่านช่องค้นหาของ LootBar ไม่ใช่โค้ดของขวัญสำหรับกรอกในเกม",
+      "bookmarkTitle": "บันทึกลิงก์ TEN เป็นบุ๊กมาร์ก",
+      "bookmarkText": "เปิดลิงก์ TEN ด้านล่างแล้วบันทึกเป็นบุ๊กมาร์ก ใช้ลิงก์ที่บันทึกไว้ในการเติมครั้งต่อไปเพื่อรับคูปองรายเดือนและร่วมลุ้นแพ็กเกจฟรีอย่างต่อเนื่อง",
+      "bookmarkButton": "วิธีบันทึกบุ๊กมาร์ก",
+      "bookmarkHint": "ปุ่มนี้แสดงขั้นตอนเท่านั้น ไม่ได้บันทึกบุ๊กมาร์กให้อัตโนมัติ ชื่อเมนูอาจแตกต่างกันตามเวอร์ชันเบราว์เซอร์",
+      "bookmarkSteps": [
+        "เปิด TEN → Ctrl + D → เปลี่ยนที่อยู่เป็นลิงก์ TEN ต้นฉบับ → บันทึก",
+        "เปิด TEN → Command + D → เปลี่ยนที่อยู่เป็นลิงก์ TEN ต้นฉบับ → บันทึก",
+        "เปิด TEN → เมนู Chrome → เพิ่มบุ๊กมาร์ก → แก้ไขที่อยู่เป็นลิงก์ TEN ต้นฉบับ",
+        "เปิด TEN → แชร์ → เพิ่มบุ๊กมาร์ก → แก้ไขที่อยู่เป็นลิงก์ TEN ต้นฉบับ"
+      ],
+      "copyCode": "คัดลอกโค้ด",
+      "copied": "คัดลอกแล้ว",
+      "copyFailed": "เลือกโค้ดแล้วคัดลอก",
+      "priceNote": "ส่วนลดแตกต่างกันตามแพ็กเกจ ตรวจสอบราคาปัจจุบันและเงื่อนไขคูปองบน LootBar",
+      "priceChecked": "วันที่ตรวจสอบราคา",
+      "newMemberCta": "เปิดร้าน TEN",
+      "historyTitle": "ประวัติการแจกแพ็กเกจ",
+      "historyMonth": "{month} · แจกครบแล้ว",
+      "historyIntro": "บันทึกการแจกแพ็กเกจของผู้ดูแล TilesSurvive.net",
+      "packageLabel": "แพ็กเกจ",
+      "recipientsLabel": "ผู้รับ",
+      "historyTotal": "ผู้รับ {count} คนได้รับแพ็กเกจแล้ว",
+      "historyCaveat": "ยิ่งทุกท่านใช้บริการและสนับสนุนเรามากขึ้น เราก็จะยิ่งตอบแทนด้วยรางวัลและสิทธิประโยชน์ที่มากขึ้น",
+      "bannerDiscount": "ลดสูงสุดประมาณ {discount}",
+      "copyUrl": "คัดลอกที่อยู่ร้าน TEN",
+      "urlCopied": "คัดลอกที่อยู่ TEN แล้ว",
+      "urlCopyFailed": "เลือกที่อยู่ TEN ด้านล่างแล้วคัดลอก",
+      "urlLabel": "ที่อยู่ TEN ที่ต้องบันทึก"
+    },
+    "tr": {
+      "bannerTitle": "Tiles Survive yüklemelerinde tasarruf edin · Yaklaşık {discount}’e varan indirim",
+      "bannerGeneric": "Tiles Survive yüklemelerinde tasarruf edin",
+      "bannerSubtitle": "Her ay ek kuponlar ve ücretsiz paket çekilişi için TEN'i kullanın",
+      "cta": "TEN mağazasında yükleme yapın",
+      "guideCta": "Yükleme rehberini görüntüleyin",
+      "benefitTitle": "TEN üzerinden yükleme yaptığımda hangi avantajları kazanırım?",
+      "couponTitle": "Her ay ek kuponlar",
+      "couponText": "TEN bağlantısı üzerinden yükleme yapan üyelere ek indirim kuponları verilir. Yalnızca bir kez yükleme yapan üyeler de dahildir.",
+      "drawTitle": "Aylık ücretsiz paket çekilişi",
+      "drawText": "Aylık toplam TEN yükleme kaydınız ücretsiz paket çekilişine otomatik olarak dahil edilir. Paketler çekilişi kazananlara verilir.",
+      "deliveryText": "Ayrı bir başvuru yapmanız gerekmez. Kuponlarınızı ve kazandığınız paketleri LootBar Kupon Çantanızda bulabilirsiniz.",
+      "issuanceNote": "%100 kupon dağıtımı, TEN üzerinden yükleme yapan tüm üyelere kupon verildiği anlamına gelir. %100 indirim anlamına gelmez.",
+      "steps": [
+        {
+          "title": "TEN mağazasını açın",
+          "text": "LootBar'daki Tiles Survive mağazasına bu sitedeki özel TEN bağlantısı üzerinden gidin."
+        },
+        {
+          "title": "Yer işareti ekleyip kaydolun veya giriş yapın",
+          "text": "TEN mağazasını yer işaretlerine ekleyin. LootBar hesabı oluşturun veya hesabınız varsa giriş yapın."
+        },
+        {
+          "title": "İndirimli yükleme yapın",
+          "text": "Kaydettiğiniz TEN bağlantısı üzerinden geri dönüp bir paket seçin."
+        },
+        {
+          "title": "Aylık avantajlardan yararlanın",
+          "text": "Her ay kupon alın ve aylık yüklemeleriniz temelinde çekilişe otomatik katılın. Kupon Çantanızı kontrol edin."
+        }
+      ],
+      "newTitle": "LootBar ek kuponu",
+      "newText": "TEN mağazasını açın ve tek seferlik ek kuponu almak için LootBar arama kutusuna {code} yazın.",
+      "newOnce": "Ek kupon bir kez verilir",
+      "newAfter": "Bu kod, LootBar arama kutusunda kullanılan bir ek kupon kodudur; oyun içinde girilen bir hediye kodu değildir.",
+      "bookmarkTitle": "TEN bağlantısını yer işaretlerine ekleyin",
+      "bookmarkText": "Aşağıdaki TEN bağlantısını açıp yer işaretlerine ekleyin. Aylık kuponlar almaya ve ücretsiz paket çekilişine katılmaya devam etmek için sonraki yüklemelerinizde kayıtlı bağlantıyı kullanın.",
+      "bookmarkButton": "Yer işareti nasıl eklenir?",
+      "bookmarkHint": "Bu düğme yalnızca talimatları gösterir; otomatik olarak yer işareti kaydetmez. Menü adları tarayıcı sürümüne göre değişebilir.",
+      "bookmarkSteps": [
+        "TEN’i açın → Ctrl + D → Adresi özgün TEN bağlantısı olarak düzenleyin → Kaydedin",
+        "TEN’i açın → Command + D → Adresi özgün TEN bağlantısı olarak düzenleyin → Kaydedin",
+        "TEN’i açın → Chrome menüsü → Yer işareti ekle → Adresi özgün TEN bağlantısıyla değiştirin",
+        "TEN’i açın → Paylaş → Yer İşareti Ekle → Adresi özgün TEN bağlantısıyla değiştirin"
+      ],
+      "copyCode": "Kodu kopyala",
+      "copied": "Kopyalandı",
+      "copyFailed": "Kodu seçip kopyalayın",
+      "priceNote": "İndirimler pakete göre değişir. Güncel fiyatı ve kupon koşullarını LootBar'dan kontrol edin.",
+      "priceChecked": "Fiyat kontrol tarihi",
+      "newMemberCta": "TEN mağazasını açın",
+      "historyTitle": "Geçmiş ödül dağıtımları",
+      "historyMonth": "{month} · tamamlandı",
+      "historyIntro": "TilesSurvive.net işletmecisinin ödül teslim kaydı.",
+      "packageLabel": "Paket",
+      "recipientsLabel": "Alıcılar",
+      "historyTotal": "{count} kişiye paket teslim edildi",
+      "historyCaveat": "Bizi ne kadar çok desteklerseniz, teşekkürümüzü o kadar zengin ödüller ve avantajlarla göstereceğiz.",
+      "bannerDiscount": "Yaklaşık {discount}’e varan indirim",
+      "copyUrl": "TEN mağazası adresini kopyala",
+      "urlCopied": "TEN adresi kopyalandı",
+      "urlCopyFailed": "Aşağıdaki TEN adresini seçip kopyalayın",
+      "urlLabel": "Kaydedilecek TEN adresi"
+    },
+    "vi": {
+      "bannerTitle": "Tiết kiệm khi nạp Tiles Survive · Giảm đến khoảng {discount}",
+      "bannerGeneric": "Tiết kiệm khi nạp Tiles Survive",
+      "bannerSubtitle": "Dùng TEN để nhận thêm phiếu giảm giá hằng tháng và tham gia bốc thăm gói miễn phí",
+      "cta": "Nạp tại cửa hàng TEN",
+      "guideCta": "Xem hướng dẫn nạp",
+      "benefitTitle": "Nạp qua TEN có những quyền lợi gì?",
+      "couponTitle": "Thêm phiếu giảm giá mỗi tháng",
+      "couponText": "Thành viên nạp qua liên kết TEN được nhận thêm phiếu giảm giá, bao gồm cả người mới nạp một lần.",
+      "drawTitle": "Bốc thăm gói miễn phí hằng tháng",
+      "drawText": "Tổng lịch sử nạp TEN trong tháng của bạn được tự động đưa vào chương trình bốc thăm gói miễn phí. Gói sẽ được trao cho người trúng thưởng.",
+      "deliveryText": "Không cần đăng ký riêng. Bạn có thể xem phiếu giảm giá và các gói trúng thưởng trong Túi phiếu giảm giá trên LootBar.",
+      "issuanceNote": "Phát phiếu cho 100% thành viên nghĩa là mọi thành viên nạp qua TEN đều nhận phiếu. Điều này không có nghĩa là giảm giá 100%.",
+      "steps": [
+        {
+          "title": "Mở cửa hàng TEN",
+          "text": "Dùng liên kết TEN riêng trên trang này để đến cửa hàng Tiles Survive trên LootBar."
+        },
+        {
+          "title": "Đánh dấu trang và đăng ký hoặc đăng nhập",
+          "text": "Lưu cửa hàng TEN vào dấu trang. Tạo tài khoản LootBar hoặc đăng nhập nếu bạn đã có tài khoản."
+        },
+        {
+          "title": "Nạp với giá ưu đãi",
+          "text": "Truy cập lại bằng liên kết TEN đã lưu và chọn gói."
+        },
+        {
+          "title": "Nhận quyền lợi hằng tháng",
+          "text": "Nhận phiếu mỗi tháng và tự động tham gia bốc thăm dựa trên lịch sử nạp trong tháng. Kiểm tra Túi phiếu giảm giá."
+        }
+      ],
+      "newTitle": "Phiếu bổ sung LootBar",
+      "newText": "Mở cửa hàng TEN rồi nhập {code} vào ô tìm kiếm của LootBar để nhận thêm phiếu giảm giá một lần.",
+      "newOnce": "Phiếu bổ sung được cấp một lần",
+      "newAfter": "Đây là mã nhận phiếu bổ sung qua ô tìm kiếm của LootBar, không phải mã quà tặng nhập trong trò chơi.",
+      "bookmarkTitle": "Đánh dấu liên kết TEN",
+      "bookmarkText": "Mở liên kết TEN bên dưới và lưu vào dấu trang. Dùng liên kết đã lưu cho các lần nạp sau để tiếp tục nhận phiếu hằng tháng và tham gia bốc thăm gói miễn phí.",
+      "bookmarkButton": "Cách đánh dấu trang",
+      "bookmarkHint": "Nút này chỉ hiển thị hướng dẫn, không tự động lưu dấu trang. Tên menu có thể khác nhau tùy phiên bản trình duyệt.",
+      "bookmarkSteps": [
+        "Mở TEN → Ctrl + D → Đổi địa chỉ thành liên kết TEN gốc → Lưu",
+        "Mở TEN → Command + D → Đổi địa chỉ thành liên kết TEN gốc → Lưu",
+        "Mở TEN → Menu Chrome → Thêm dấu trang → Sửa địa chỉ thành liên kết TEN gốc",
+        "Mở TEN → Chia sẻ → Thêm dấu trang → Sửa địa chỉ thành liên kết TEN gốc"
+      ],
+      "copyCode": "Sao chép mã",
+      "copied": "Đã sao chép",
+      "copyFailed": "Chọn mã rồi sao chép",
+      "priceNote": "Mức giảm giá tùy theo gói. Kiểm tra giá hiện tại và điều kiện sử dụng phiếu trên LootBar.",
+      "priceChecked": "Ngày kiểm tra giá",
+      "newMemberCta": "Mở cửa hàng TEN",
+      "historyTitle": "Lịch sử trao gói",
+      "historyMonth": "{month} · Đã trao xong",
+      "historyIntro": "Bản ghi trao gói của đơn vị vận hành TilesSurvive.net.",
+      "packageLabel": "Gói",
+      "recipientsLabel": "Người nhận",
+      "historyTotal": "Đã trao gói cho {count} người nhận",
+      "historyCaveat": "Càng nhận được nhiều sự ủng hộ từ các bạn, chúng tôi sẽ càng mang đến nhiều phần thưởng và ưu đãi hấp dẫn hơn để đáp lại.",
+      "bannerDiscount": "Giảm đến khoảng {discount}",
+      "copyUrl": "Sao chép địa chỉ cửa hàng TEN",
+      "urlCopied": "Đã sao chép địa chỉ TEN",
+      "urlCopyFailed": "Chọn địa chỉ TEN bên dưới rồi sao chép",
+      "urlLabel": "Địa chỉ TEN cần lưu"
+    },
+    "ms": {
+      "bannerTitle": "Jimat untuk tambah nilai Tiles Survive · Diskaun sehingga kira-kira {discount}",
+      "bannerGeneric": "Jimat untuk tambah nilai Tiles Survive",
+      "bannerSubtitle": "Gunakan TEN untuk kupon tambahan bulanan dan cabutan pakej percuma",
+      "cta": "Tambah nilai di kedai TEN",
+      "guideCta": "Lihat panduan tambah nilai",
+      "benefitTitle": "Apakah faedah tambah nilai melalui TEN?",
+      "couponTitle": "Kupon tambahan setiap bulan",
+      "couponText": "Ahli yang menambah nilai melalui pautan TEN menerima kupon diskaun tambahan, termasuk ahli yang baru menambah nilai sekali.",
+      "drawTitle": "Cabutan pakej percuma bulanan",
+      "drawText": "Rekod jumlah tambah nilai TEN bulanan anda disertakan secara automatik dalam cabutan pakej percuma. Pakej diberikan kepada pemenang cabutan.",
+      "deliveryText": "Tiada permohonan berasingan diperlukan. Semak kupon dan pakej yang anda menangi dalam Beg Kupon LootBar.",
+      "issuanceNote": "Pemberian kupon 100% bermaksud semua ahli yang menambah nilai melalui TEN menerima kupon. Ia tidak bermaksud diskaun 100%.",
+      "steps": [
+        {
+          "title": "Buka kedai TEN",
+          "text": "Gunakan pautan khas TEN di laman ini untuk membuka kedai Tiles Survive di LootBar."
+        },
+        {
+          "title": "Simpan penanda buku dan daftar atau log masuk",
+          "text": "Simpan kedai TEN sebagai penanda buku. Cipta akaun LootBar atau log masuk jika anda sudah mempunyai akaun."
+        },
+        {
+          "title": "Tambah nilai dengan diskaun",
+          "text": "Kembali melalui pautan TEN yang disimpan dan pilih pakej."
+        },
+        {
+          "title": "Terima faedah bulanan",
+          "text": "Terima kupon setiap bulan dan sertai cabutan secara automatik berdasarkan tambah nilai bulanan anda. Semak Beg Kupon."
+        }
+      ],
+      "newTitle": "Kupon tambahan LootBar",
+      "newText": "Buka kedai TEN dan masukkan {code} dalam kotak carian LootBar untuk menerima kupon tambahan sekali sahaja.",
+      "newOnce": "Kupon tambahan diberikan sekali sahaja",
+      "newAfter": "Ini ialah kod kupon tambahan untuk kotak carian LootBar, bukannya kod hadiah yang dimasukkan dalam permainan.",
+      "bookmarkTitle": "Simpan pautan TEN sebagai penanda buku",
+      "bookmarkText": "Buka pautan TEN di bawah dan simpan sebagai penanda buku. Gunakan pautan yang disimpan untuk tambah nilai seterusnya supaya terus menerima kupon bulanan dan menyertai cabutan pakej percuma.",
+      "bookmarkButton": "Cara menyimpan penanda buku",
+      "bookmarkHint": "Butang ini memaparkan arahan sahaja; ia tidak menyimpan penanda buku secara automatik. Nama menu mungkin berbeza mengikut versi pelayar.",
+      "bookmarkSteps": [
+        "Buka TEN → Ctrl + D → Tukar alamat kepada pautan TEN asal → Simpan",
+        "Buka TEN → Command + D → Tukar alamat kepada pautan TEN asal → Simpan",
+        "Buka TEN → Menu Chrome → Tambah penanda buku → Edit alamat kepada pautan TEN asal",
+        "Buka TEN → Kongsi → Tambah Penanda Buku → Edit alamat kepada pautan TEN asal"
+      ],
+      "copyCode": "Salin kod",
+      "copied": "Disalin",
+      "copyFailed": "Pilih kod dan salinnya",
+      "priceNote": "Diskaun berbeza mengikut pakej. Semak harga semasa dan syarat kupon di LootBar.",
+      "priceChecked": "Harga disemak",
+      "newMemberCta": "Buka kedai TEN",
+      "historyTitle": "Rekod pemberian terdahulu",
+      "historyMonth": "{month} · Pemberian selesai",
+      "historyIntro": "Rekod pemberian pakej oleh pengendali TilesSurvive.net.",
+      "packageLabel": "Pakej",
+      "recipientsLabel": "Penerima",
+      "historyTotal": "Pakej telah diterima oleh {count} penerima",
+      "historyCaveat": "Semakin banyak anda menggunakan perkhidmatan kami, semakin banyak ganjaran dan manfaat yang akan kami tawarkan sebagai tanda penghargaan.",
+      "bannerDiscount": "Diskaun sehingga kira-kira {discount}",
+      "copyUrl": "Salin alamat kedai TEN",
+      "urlCopied": "Alamat TEN disalin",
+      "urlCopyFailed": "Pilih alamat TEN di bawah dan salinnya",
+      "urlLabel": "Alamat TEN untuk disimpan"
+    },
+    "nb": {
+      "bannerTitle": "Spar på påfyll i Tiles Survive · Opptil omtrent {discount} rabatt",
+      "bannerGeneric": "Spar på påfyll i Tiles Survive",
+      "bannerSubtitle": "Bruk TEN for ekstra månedlige kuponger og trekning av gratispakker",
+      "cta": "Fyll på i TEN-butikken",
+      "guideCta": "Se veiledningen for påfyll",
+      "benefitTitle": "Hvilke fordeler får jeg ved å fylle på gjennom TEN?",
+      "couponTitle": "Ekstra kuponger hver måned",
+      "couponText": "Medlemmer som fyller på via TEN-lenken, får ekstra rabattkuponger. Dette gjelder også dem som bare har fylt på én gang.",
+      "drawTitle": "Månedlig trekning av gratispakker",
+      "drawText": "Dine samlede TEN-påfyll i løpet av måneden tas automatisk med i trekningen av gratispakker. Pakkene gis til vinnerne.",
+      "deliveryText": "Du trenger ikke å melde deg på separat. Kupongene dine og eventuelle pakker du vinner, finner du i Coupon Bag på LootBar.",
+      "issuanceNote": "100% kupongutdeling betyr at alle medlemmer som fyller på gjennom TEN, får en kupong. Det betyr ikke 100% rabatt.",
+      "steps": [
+        {
+          "title": "Åpne TEN-butikken",
+          "text": "Bruk nettstedets egen TEN-lenke for å åpne Tiles Survive-butikken på LootBar."
+        },
+        {
+          "title": "Bokmerk og registrer deg eller logg inn",
+          "text": "Lagre TEN-butikken som bokmerke. Opprett en LootBar-konto eller logg inn hvis du allerede har en."
+        },
+        {
+          "title": "Fyll på med rabatt",
+          "text": "Åpne den lagrede TEN-lenken og velg en pakke."
+        },
+        {
+          "title": "Få månedlige fordeler",
+          "text": "Få kuponger hver måned og delta automatisk i trekningen basert på månedens påfyll. Sjekk Coupon Bag."
+        }
+      ],
+      "newTitle": "Ekstra LootBar-kupong",
+      "newText": "Åpne TEN-butikken og skriv inn {code} i søkefeltet på LootBar for å få en ekstra kupong én gang.",
+      "newOnce": "Den ekstra kupongen gis én gang",
+      "newAfter": "Dette er en kode for en ekstra kupong via søkefeltet på LootBar, ikke en gavekode som skal brukes i spillet.",
+      "bookmarkTitle": "Bokmerk TEN-lenken",
+      "bookmarkText": "Åpne TEN-lenken nedenfor og bokmerk den. Bruk den lagrede lenken ved senere påfyll for å fortsette å få månedlige kuponger og delta i trekningen av gratispakker.",
+      "bookmarkButton": "Slik bokmerker du lenken",
+      "bookmarkHint": "Knappen viser en veiledning og lagrer ikke et bokmerke automatisk. Menynavn kan variere med nettleserversjonen.",
+      "bookmarkSteps": [
+        "Åpne TEN → Ctrl + D → Sett adressen til den opprinnelige TEN-lenken → Lagre",
+        "Åpne TEN → Command + D → Sett adressen til den opprinnelige TEN-lenken → Lagre",
+        "Åpne TEN → Chrome-menyen → Legg til bokmerke → Endre adressen til den opprinnelige TEN-lenken",
+        "Åpne TEN → Del → Legg til bokmerke → Endre adressen til den opprinnelige TEN-lenken"
+      ],
+      "copyCode": "Kopier kode",
+      "copied": "Kopiert",
+      "copyFailed": "Marker koden og kopier den",
+      "priceNote": "Rabatten varierer mellom pakkene. Sjekk gjeldende pris og kupongvilkår på LootBar.",
+      "priceChecked": "Priser kontrollert",
+      "newMemberCta": "Åpne TEN-butikken",
+      "historyTitle": "Tidligere utdelinger",
+      "historyMonth": "{month} · fullført",
+      "historyIntro": "Utdelingsoversikt fra operatøren av TilesSurvive.net.",
+      "packageLabel": "Pakke",
+      "recipientsLabel": "Mottakere",
+      "historyTotal": "{count} mottakere har fått pakker",
+      "historyCaveat": "Jo mer dere bruker tjenesten vår, desto større belønninger og flere fordeler vil vi tilby som takk.",
+      "bannerDiscount": "Opptil omtrent {discount} rabatt",
+      "copyUrl": "Kopier adressen til TEN-butikken",
+      "urlCopied": "TEN-adressen er kopiert",
+      "urlCopyFailed": "Marker og kopier TEN-adressen nedenfor",
+      "urlLabel": "TEN-adresse som skal lagres"
+    }
+  },
+  "copyVersion": "v6.1-2026-11-05-operator-correction"
+}

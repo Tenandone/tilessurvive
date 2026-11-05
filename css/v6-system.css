@@ -294,3 +294,115 @@ html[data-v6-system][dir=rtl] :is(.hero-guide-eyebrow,.eyebrow,.v4-eyebrow,.xssr
  html[data-v6-system] main :is(.hero-guide-hero,.ts3-character-stage,.ts3-directory-intro) :is(h1,h2,h3,p,.value,.label){color:#000!important}
  html[data-v6-system] main [data-v6-scroll]{overflow:visible;max-height:none;box-shadow:none}
 }
+/* V6.1: shared typography, native stretched links and complete image stages. */
+html[data-v6-system]{
+ --v61-font-locale:ui-sans-serif,system-ui,-apple-system,"Segoe UI",Arial,sans-serif;
+ --v61-font-body:var(--v61-font-locale);--v61-font-display:"TilesSurvive Sword",var(--v61-font-locale);--v61-font-numeric:"TilesSurvive Sword",ui-sans-serif,system-ui,"Segoe UI",sans-serif;
+ --v6-font:var(--v61-font-body);--v61-ratio-hero:3/4;--v61-ratio-pet:1;--v61-ratio-building:1;--v61-ratio-faction:1;--v61-ratio-guide:4/3;
+ --v61-motion:180ms;--v61-stage:radial-gradient(ellipse at 50% 75%,#6e8a6955,transparent 65%),linear-gradient(145deg,#254c46,#102e2c);--v61-stage-light:radial-gradient(ellipse at 50% 65%,#f2dca2,#e8eee2 72%);
+}
+html[data-v6-system]:lang(ko){--v61-font-locale:"Noto Sans KR","Malgun Gothic","Apple SD Gothic Neo",sans-serif}
+html[data-v6-system]:lang(ja){--v61-font-locale:"Noto Sans JP","Yu Gothic","Hiragino Kaku Gothic ProN",sans-serif}
+html[data-v6-system]:is(:lang(zh-CN),:lang(zh-Hans)){--v61-font-locale:"Noto Sans SC","Microsoft YaHei","PingFang SC",sans-serif}
+html[data-v6-system]:is(:lang(zh-TW),:lang(zh-Hant)){--v61-font-locale:"Noto Sans TC","Microsoft JhengHei","PingFang TC",sans-serif}
+html[data-v6-system]:lang(ar){--v61-font-locale:"Noto Sans Arabic",Tahoma,"Segoe UI",sans-serif}
+html[data-v6-system]:lang(th){--v61-font-locale:"Noto Sans Thai",Tahoma,"Leelawadee UI",sans-serif}
+html[data-v6-system]:lang(vi){--v61-font-locale:"Noto Sans","Segoe UI",Arial,sans-serif}
+html[data-v6-system] main:not(:has([data-v5-home])) :is(h1,h2,h3,h4,.ts3-character-name,.hero-atlas-card h3){font-family:var(--v61-font-display);font-weight:600;font-synthesis:none;letter-spacing:-.025em}
+html[data-v6-system] main:not(:has([data-v5-home])) :is(output,.v4-result strong,.r60-power strong,.xssr-calculator output){font-family:var(--v61-font-numeric);font-variant-numeric:tabular-nums}
+html[data-v6-system]:is(:lang(ar),:lang(th)) main:not(:has([data-v5-home])) :is(h1,h2,h3,h4){letter-spacing:normal;line-height:1.5}
+/* The real anchor owns the overlay: browser new-tab, context menu and Enter work.
+   Independent controls keep their original nodes, targets and event handlers. */
+html[data-v6-system] main [data-v61-card]{position:relative;isolation:isolate;cursor:pointer;transition:transform var(--v61-motion),box-shadow var(--v61-motion),border-color var(--v61-motion)}
+html[data-v6-system] main [data-v61-link],html[data-v6-system] main [data-v61-link-path]{position:static}
+html[data-v6-system] main [data-v61-link]::after{content:"";position:absolute;inset:0;z-index:1;border-radius:inherit;cursor:pointer;touch-action:manipulation}
+html[data-v6-system] main [data-v61-link]:focus-visible::after{outline:3px solid #b87920;outline-offset:-4px;border-radius:inherit}
+html[data-v6-system] main [data-v61-control]{position:relative;z-index:2;cursor:auto}
+html[data-v6-system] main :is(a,button,summary)[data-v61-control]{cursor:pointer}
+html[data-v6-system] main [data-v61-card] :is(a,button,summary,label){min-height:44px;align-content:center;touch-action:manipulation}
+html[data-v6-system] main [data-v61-card] label{display:inline-flex;align-items:center;gap:8px;padding-block:8px}
+@media(hover:hover){html[data-v6-system] main [data-v61-card]:hover{transform:translateY(-3px);border-color:#a3864e;box-shadow:0 14px 28px #17343118}}
+html[data-v6-system] main [data-v61-card]:active{transform:translateY(-1px)}
+/* Hero stages keep every source pixel, including wide weapons and head/feet. */
+html[data-v6-system] [data-hero-atlas] .hero-atlas-card>img{display:block;width:100%;height:auto;aspect-ratio:var(--v61-ratio-hero);padding:14px;object-fit:contain;object-position:center bottom;background:var(--v61-stage)}
+html[data-v6-system] [data-hero-atlas] .hero-atlas-card-body{display:flex;flex-direction:column;flex:1}
+html[data-v6-system] [data-hero-atlas] .hero-atlas-card-actions{margin-block-start:auto;gap:8px;flex-wrap:wrap}
+html[data-v6-system].ts-platform.ts3-characters main :is(.hero-guide-art,.ts3-character-stage .ts3-character-art){width:min(100%,330px);aspect-ratio:var(--v61-ratio-hero);height:auto;min-height:0;justify-self:center;display:grid;place-items:center;padding:12px;overflow:visible}
+html[data-v6-system].ts-platform.ts3-characters main :is(.hero-guide-art,.ts3-character-stage .ts3-character-art)>img{width:100%;height:100%;max-height:none;min-height:0;object-fit:contain;object-position:center bottom}
+/* Pet art is a square stage, never a small circular portrait. */
+html[data-v6-system].ts-platform.ts3-characters main .ts3-pet-tile>img{width:100%;height:auto;aspect-ratio:var(--v61-ratio-pet);padding:14px;border-radius:12px;object-fit:contain;object-position:center;background:var(--v61-stage-light)}
+html[data-v6-system].ts-platform.ts3-characters main .ts3-pet-portrait{width:min(100%,300px);aspect-ratio:var(--v61-ratio-pet);height:auto;margin-inline:auto;display:grid;place-items:center;padding:12px;background:var(--v61-stage-light);border-radius:20px}
+html[data-v6-system].ts-platform.ts3-characters main .ts3-pet-portrait img{width:100%;height:100%;max-height:none;object-fit:contain}
+html[data-v6-system] .hp-card-head{align-items:center;gap:14px}
+html[data-v6-system] .hp-portrait.hp-pet-portrait{width:104px;height:104px;aspect-ratio:1;padding:6px;object-fit:contain;object-position:center;background:var(--v61-stage-light);border-radius:12px;flex-shrink:0}
+html[data-v6-system] .hp-portrait.hp-hero-portrait{width:90px;height:120px;aspect-ratio:3/4;padding:6px;object-fit:contain;object-position:center bottom;background:var(--v61-stage);border-radius:10px;flex-shrink:0}
+html[data-v6-system] .ts3-pet-neighbors>a img{width:84px;height:84px;aspect-ratio:1;padding:6px;object-fit:contain;background:var(--v61-stage-light);border-radius:10px}
+/* Buildings, creatures and source diagrams use complete contain frames. */
+html[data-v6-system].ts-platform.ts3 main :is(.building-card,.behemoth-card,.database-card,.tool-card,.guide-card){border:1px solid var(--v6-border);border-radius:14px;overflow:hidden;background:var(--v6-surface)}
+html[data-v6-system].ts-platform.ts3 main :is(.building-thumb,.behemoth-thumb,.tool-thumb,.database-thumb){display:grid;place-items:center;aspect-ratio:var(--v61-ratio-building);height:auto;background:var(--v61-stage-light);padding:18px;overflow:hidden}
+html[data-v6-system].ts-platform.ts3 main :is(.building-thumb,.behemoth-thumb,.tool-thumb,.database-thumb)>img{display:block;width:100%;height:100%;max-height:none;object-fit:contain;object-position:center}
+html[data-v6-system].ts-platform.ts3 main .guide-thumb{display:grid;place-items:center;aspect-ratio:var(--v61-ratio-guide);height:auto;padding:12px;background:var(--v61-stage-light)}
+html[data-v6-system].ts-platform.ts3 main .guide-thumb img{width:100%;height:100%;max-height:none;object-fit:contain}
+html[data-v6-system].ts-platform.ts3 main [data-building-frame-51=detail]{aspect-ratio:1;width:min(100%,360px);height:auto;display:grid;place-items:center;padding:12px;background:var(--v61-stage-light);border-radius:18px}
+html[data-v6-system].ts-platform.ts3 main [data-building-frame-51=detail]>img{width:100%;height:100%;max-height:none;object-fit:contain;object-position:center}
+html[data-v6-system] main :is(.v61-faction-art,[data-v61-image=faction]){width:100%;aspect-ratio:var(--v61-ratio-faction);height:auto;object-fit:contain;object-position:center;background:var(--v61-stage);padding:16px;border-radius:14px}
+@media(max-width:650px){
+ html[data-v6-system] [data-hero-atlas] [data-atlas-grid]{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+ html[data-v6-system] [data-hero-atlas] .hero-atlas-card>img{padding:8px}
+ html[data-v6-system] [data-hero-atlas] .hero-atlas-card .hero-atlas-card-body{padding:12px}
+ html[data-v6-system] [data-hero-atlas] .hero-atlas-card h3{font-size:1.03rem;line-height:1.35}
+ html[data-v6-system] [data-hero-atlas] .hero-atlas-tags{gap:4px}
+ html[data-v6-system] [data-hero-atlas] .hero-atlas-tags>span{font-size:.64rem;padding:2px 4px}
+ html[data-v6-system].ts-platform.ts3-characters main .ts3-pet-gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+ html[data-v6-system].ts-platform.ts3-characters main .ts3-pet-tile{padding:12px;gap:9px}
+ html[data-v6-system].ts-platform.ts3-characters main .ts3-pet-tile>img{padding:5px}
+ html[data-v6-system].ts-platform.ts3-characters main :is(.hero-guide-art,.ts3-character-stage .ts3-character-art){width:min(100%,260px)}
+ html[data-v6-system] .hp-portrait.hp-pet-portrait{width:88px;height:88px}
+ html[data-v6-system] .hp-portrait.hp-hero-portrait{width:72px;height:96px}
+}
+@media(prefers-reduced-motion:reduce){html[data-v6-system] main [data-v61-card]{transition:none!important;transform:none!important}}
+@media(forced-colors:active){html[data-v6-system] main [data-v61-link]:focus-visible::after{outline-color:Highlight}}
+/* Catalog panels give their artwork a deliberate frame instead of legacy icons. */
+html[data-v6-system].ts-platform.ts3 main :is(.building-grid,.behemoth-grid,.database-grid,.tool-grid,.guide-grid){display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,270px),1fr));gap:20px}
+html[data-v6-system].ts-platform.ts3 main :is(.building-card,.behemoth-card,.database-card,.tool-card,.guide-card){display:flex;flex-direction:column;align-items:stretch;padding:0;gap:0;min-width:0}
+html[data-v6-system].ts-platform.ts3 main :is(.building-thumb,.behemoth-thumb,.tool-thumb,.database-thumb,.guide-thumb){width:100%;min-width:0;max-width:none;align-self:stretch;flex:none}
+html[data-v6-system].ts-platform.ts3 main :is(.building-body,.behemoth-body,.database-body,.tool-body,.guide-body){min-width:0;padding:20px;display:flex;flex-direction:column;align-items:start;flex:1;gap:10px}
+html[data-v6-system].ts-platform.ts3 main :is(.building-body,.behemoth-body,.database-body,.tool-body,.guide-body) :is(h3,p){margin:0}
+html[data-v6-system].ts-platform.ts3 main :is(.building-body,.behemoth-body,.database-body,.tool-body,.guide-body) h3{font-size:1.25rem;line-height:1.3}
+html[data-v6-system].ts-platform.ts3 main :is(.building-body,.behemoth-body,.database-body,.tool-body,.guide-body)>p{font-size:.88rem;line-height:1.65}
+@media(max-width:650px){
+ html[data-v6-system].ts-platform.ts3 main :is(.building-grid,.behemoth-grid,.database-grid,.tool-grid,.guide-grid){grid-template-columns:minmax(0,1fr);gap:14px}
+ html[data-v6-system].ts-platform.ts3 main :is(.building-card,.behemoth-card,.database-card,.tool-card,.guide-card){display:grid;grid-template-columns:112px minmax(0,1fr);align-items:start}
+ html[data-v6-system].ts-platform.ts3 main :is(.building-thumb,.behemoth-thumb,.tool-thumb,.database-thumb,.guide-thumb){width:112px;align-self:start;padding:8px;border-radius:12px;aspect-ratio:1}
+ html[data-v6-system].ts-platform.ts3 main :is(.building-body,.behemoth-body,.database-body,.tool-body,.guide-body){padding:14px;gap:9px}
+ html[data-v6-system].ts-platform.ts3 main :is(.building-body,.behemoth-body,.database-body,.tool-body,.guide-body) h3{font-size:1.06rem}
+ html[data-v6-system].ts-platform.ts3 main :is(.building-body,.behemoth-body,.database-body,.tool-body,.guide-body)>p{font-size:.8rem}
+}
+/* Explicit tracks prevent percentage-sized lazy images from a zero intrinsic track. */
+html[data-v6-system].ts-platform.ts3 main :is(.building-thumb,.behemoth-thumb,.tool-thumb,.database-thumb,.guide-thumb,[data-building-frame-51=detail],.hero-guide-art,.ts3-character-art,.ts3-pet-portrait){grid-template-columns:minmax(0,1fr);grid-template-rows:minmax(0,1fr)}
+/* Retire the old !important data-catalog row reset only for these visual cards. */
+html[data-v6-system].ts-platform.ts3 main :is(.building-grid,.behemoth-grid,.tool-grid).ts3-data-catalog{grid-template-columns:repeat(auto-fit,minmax(min(100%,270px),1fr))!important;gap:20px!important;border:0}
+html[data-v6-system].ts-platform.ts3 main :is(.building-card,.behemoth-card,.tool-card).ts3-catalog-entry:not([hidden]){display:flex!important;padding:0!important;border:1px solid var(--v6-border)!important;border-radius:14px!important;background:var(--v6-surface)!important}
+@media(max-width:650px){
+ html[data-v6-system].ts-platform.ts3 main :is(.building-grid,.behemoth-grid,.tool-grid).ts3-data-catalog{grid-template-columns:minmax(0,1fr)!important;gap:14px!important}
+ html[data-v6-system].ts-platform.ts3 main :is(.building-card,.behemoth-card,.tool-card).ts3-catalog-entry:not([hidden]){display:grid!important}
+}
+/* Derived artboards already contain measured safe margins; do not pad twice. */
+html[data-v6-system] main img[data-v61-image]{padding:0!important;object-fit:contain;object-position:center}
+/* Keep catalog name baselines aligned; the new marker belongs on the art. */
+html[data-v6-system] [data-hero-atlas] .hero-atlas-new{position:absolute;inset-block-start:12px;inset-inline-start:12px;z-index:2;margin:0!important;padding:4px 9px;border:1px solid #e6c574;border-radius:5px;background:#163c32;color:#fff3c7;font-size:.7rem;font-weight:700;line-height:1.4;pointer-events:none}
+html[data-v6-system] [data-hero-atlas] .hero-atlas-card .hero-atlas-card-body{padding:14px;gap:9px}
+html[data-v6-system] [data-hero-atlas] .hero-atlas-card h3{margin:0!important;line-height:1.3;font-size:1.18rem}
+html[data-v6-system] [data-hero-atlas] .hero-atlas-release{margin:0;line-height:1.5;font-size:.78rem}
+html[data-v6-system] [data-hero-atlas] .hero-atlas-card-actions{padding-block-start:4px;gap:7px}
+html[data-v6-system] [data-hero-atlas] [data-atlas-compare-control]{min-height:44px;padding:6px 10px;line-height:1.35}
+@media(max-width:650px){html[data-v6-system] [data-hero-atlas] .hero-atlas-card .hero-atlas-card-body{padding:12px;gap:8px}html[data-v6-system] [data-hero-atlas] .hero-atlas-card h3{font-size:1.03rem}}
+html[data-v6-system].ts-platform.ts3-characters main .ts3-pet-tile{gap:9px;align-items:stretch;justify-content:flex-start}
+html[data-v6-system].ts-platform.ts3-characters main .ts3-pet-tile>img{margin-block-end:0}
+html[data-v6-system].ts-platform.ts3-characters main .ts3-pet-tile>span{align-self:start}
+html[data-v6-system].ts-platform.ts3-characters main .ts3-pet-tile>div :is(h3,p){margin:0}
+html[data-v6-system].ts-platform.ts3-characters main .ts3-pet-tile>a{margin-block-start:0;min-height:44px;padding-block:7px;line-height:1.4;align-content:center}
+@media screen{
+ html[data-v6-system].ts-platform.ts3-characters main .ts3-directory-intro>[data-pet-team-rule]>a[data-pet-team-source]{color:#ffe1a7;text-decoration:underline;text-underline-offset:.18em}
+ html[data-v6-system].ts-platform.ts3-characters main .ts3-directory-intro>[data-pet-team-rule]>a[data-pet-team-source]:is(:hover,:focus-visible){color:var(--v6-on-dark)}
+}

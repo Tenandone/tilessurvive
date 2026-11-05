@@ -8,7 +8,7 @@ function block(key,body){return '<!-- TS_V3_'+key+'_BEGIN -->'+body+'<!-- TS_V3_
 function fileAsset(file){const stamp=digest(fs.readFileSync(path.join(ROOT,file)));return file.endsWith('.css')?`<link data-v3-owned="assets" rel="stylesheet" href="/${file}?v=${stamp}">`:`<script data-v3-owned="assets" defer src="/${file}?v=${stamp}"></script>`;}
 function project(input,locale,route){
  if(!registry.locales.some(l=>l.code===locale))throw Error('Unsupported V3 locale '+locale);
- let html=strip(input);const d=parseHTML(html).document;
+ let html=strip(require('./build-v6-system').strip(input));const d=parseHTML(html).document;
  route=route||new URL(d.querySelector('link[rel="canonical"]')?.href||'https://tilessurvive.net/').pathname;
  if(!d.querySelector('main')||!route.startsWith('/'+locale+'/')||/noindex/i.test(d.querySelector('meta[name="robots"]')?.content||''))return html;
  const rel=route.slice(locale.length+2),isPower=rel==='buildings/power-plant/',isCalendar=rel==='events/calendar/',isTopup=rel==='top-up/',isHub=['','tools/','events/','tools/event-helper/'].includes(rel),isSearch=rel==='search/';
@@ -24,6 +24,7 @@ function project(input,locale,route){
   if(section){const before=section.outerHTML;af.projectLegacyTopup(old,locale);section.setAttribute('data-v3-owned','topup-step');const after=section.outerHTML;if(before!==after)html=html.replace(before,after);}
   for(const change of require('./ten-benefits-content').projectBookmark(old,locale)){if(!html.includes(change.before))throw Error('Missing exact bookmark replacement '+locale);html=html.replace(change.before,change.after);}
   for(const change of require('./ten-benefits-content').projectLegacyBenefitCopy(old,locale)){if(!html.includes(change.before))throw Error('Missing exact benefit policy replacement '+locale);html=html.replace(change.before,change.after);}
+  for(const change of require('./ten-benefits-content').projectMetadata(old,locale)){if(!html.includes(change.before))throw Error('Missing exact TEN metadata replacement '+locale);html=html.replace(change.before,change.after);}
   const h1=html.indexOf('</h1>'),heroEnd=html.indexOf('</section>',h1);
   if(h1<0||heroEnd<0)throw Error('Missing topup introduction owner '+locale);
   const guide=block('AFFILIATE',`<div data-v3-owned="affiliate">${af.renderGuide(locale)}</div>`);
@@ -34,7 +35,7 @@ function project(input,locale,route){
   const trust=block('TRUST',`<div data-v3-owned="trust">${events.renderTrust(record,locale)}</div>`);html=html.replace(/(<\/h1>)/,m=>m+trust);
  }
  const assets=['css/v3-platform.css','js/v3-search-core.js'];
- if(isTopup)assets.push('css/ten-benefits.css');
+ if(isTopup)assets.push('css/ten-benefits.css',...require('./v61-ten-content').assetFiles);
  if(isPower)assets.push('js/v3-planner.js');
  if(affine){html=af.transformAnalytics(html);html=html.replace(/<html\b/, '<html data-v3-affiliate=""');html=html.replace(/<\/main>/,block('PRIVACY',`<div data-v3-owned="privacy">${af.renderPrivacyNotice(locale)}</div>`)+ '</main>');assets.push('js/v3-affiliate.js');}
  html=html.replace(/<html\b/,'<html data-v3-platform=""').replace(/(data-v3-platform=""\s*){2,}/g,'data-v3-platform="" ').replace(/(data-v3-affiliate=""\s*){2,}/g,'data-v3-affiliate="" ');
@@ -45,6 +46,15 @@ function project(input,locale,route){
  return html;
 }
 function walk(dir){return fs.readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(path.join(dir,e.name)):e.name==='index.html'?[path.join(dir,e.name)]:[]);}
+function projectTenSearch(input,pages){
+ const output=structuredClone(input);for(const item of output.items){const url=new URL(item.url,'https://tilessurvive.net'),route=url.pathname,locale=route.split('/')[1];if(url.origin!=='https://tilessurvive.net'||url.hash||url.search||route!=='/'+locale+'/top-up/'||!pages.has(locale))continue;const page=pages.get(locale);item.title=page.title;item.description=page.description;}
+ return output;
+}
+function syncTenSearch(){
+ const pages=new Map(registry.locales.map(l=>{const d=parseHTML(read(l.code+'/top-up/index.html')).document;return [l.code,{title:d.querySelector('title').textContent.trim(),description:d.querySelector('meta[name="description"]').getAttribute('content').trim()}];}));
+ let changed=0;for(const file of ['data/search-index.json',...registry.locales.map(l=>'data/search/'+l.code+'.json')]){const before=read(file),input=JSON.parse(before),projected=projectTenSearch(input,pages);if(JSON.stringify(projected)!==JSON.stringify(input)){fs.writeFileSync(path.join(ROOT,file),JSON.stringify(projected,null,2)+'\n');changed++;}}
+ return changed;
+}
 function build(){
  const report={locales:21,pages:0,changed:0,counts:{},compatibilityAnalytics:0,deployed:false},outputs=[],seen=new Set();
  for(const l of registry.locales){let count=0;for(const file of walk(path.join(ROOT,l.code))){const before=fs.readFileSync(file,'utf8'),route='/'+path.relative(ROOT,file).replaceAll('\\','/').replace(/index\.html$/,'');let after=project(before,l.code,route);if(!after.includes('data-v3-platform')&&/G-Z2MJ6TXZHK/.test(after))after=require('./v3-affiliate-content').transformAnalytics(after);outputs.push({file,before,after});seen.add(file);count++;}report.counts[l.code]=count;report.pages+=count;}
@@ -52,7 +62,7 @@ function build(){
  // Remove only their eager GA bootstrap; the destination offers the shared choice.
  const tracked=require('node:child_process').execFileSync('git',['ls-files','*.html'],{cwd:ROOT,encoding:'utf8'}).trim().split('\n');
  for(const rel of tracked){if(rel.startsWith('node_modules/'))continue;const file=path.join(ROOT,rel);if(seen.has(file)||!fs.existsSync(file))continue;const before=fs.readFileSync(file,'utf8');if(!/G-Z2MJ6TXZHK/.test(before)||!/<head\b/.test(before))continue;const after=require('./v3-affiliate-content').transformAnalytics(before);outputs.push({file,before,after});report.compatibilityAnalytics++;}
- for(const {file,before,after}of outputs)if(before!==after){fs.writeFileSync(file,after);report.changed++;}console.log(JSON.stringify(report));return report;
+ for(const {file,before,after}of outputs)if(before!==after){fs.writeFileSync(file,after);report.changed++;}report.tenSearchFiles=syncTenSearch();console.log(JSON.stringify(report));return report;
 }
 function validateOwnership(html,locale,route){const a=parseHTML(html).document;if(!a.documentElement.hasAttribute('data-v3-platform'))return;const b=parseHTML(project(html,locale,route)).document;const snapshot=d=>[...d.querySelectorAll('[data-v3-owned]')].filter(n=>n.getAttribute('data-v3-owned')!=='assets').map(n=>n.outerHTML);if(JSON.stringify(snapshot(a))!==JSON.stringify(snapshot(b)))throw Error('V3 renderer ownership mismatch: regenerate the reviewed V3 blocks before translating '+route);}
-module.exports={project,strip,build,fileAsset,validateOwnership};if(require.main===module)build();
+module.exports={project,strip,build,fileAsset,validateOwnership,projectTenSearch,syncTenSearch};if(require.main===module)build();

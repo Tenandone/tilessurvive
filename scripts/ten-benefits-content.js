@@ -1,5 +1,5 @@
 'use strict';
-const copy=require('../data/v3-affiliate-copy.json');
+const copy=require('./sync-ten-benefits-copy').project(require('../data/v3-affiliate-copy.json'));
 const policy=require('../data/ten-benefits-policy.json');
 const registry=require('../data/i18n/locales.json');
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -16,18 +16,11 @@ function link(locale,extra=''){
 }
 function validatePolicy(){
   if(policy.tenUrl!=='https://www.lootbar.com/ko/shop/ten/top-up/tiles-survive'||policy.frequency!=='monthly'||policy.applicationRequired!==false||policy.freePackages.selection!=='draw'||policy.freePackages.guaranteedForEveryParticipant!==false)throw Error('TEN policy requires an explicit review');
+  if(policy.schemaVersion!==2||policy.coupons.recipientRule!=='all-ten-top-up-members'||policy.coupons.includesOneTimeTopUpMembers!==true||policy.coupons.issuancePercent!==100||policy.coupons.issuanceGuaranteed!==true||policy.coupons.lifetimeIssuanceAfterOneTopUp!==false||policy.coupons.discountPercent!==null||policy.coupons.delivery!=='lootbar-coupon-bag'||policy.freePackages.entryBasis!=='monthly-cumulative-ten-top-up-records'||policy.freePackages.delivery!=='lootbar-coupon-bag'||policy.additionalCoupon.code!=='#s4qU'||policy.additionalCoupon.oneTime!==true||policy.additionalCoupon.newMembersOnly!==false||policy.additionalCoupon.redemptionSurface!=='lootbar-search-box')throw Error('TEN V6.1 member policy requires review');
   for(const h of policy.history){if(!/^\d{4}-(0[1-9]|1[0-2])$/.test(h.month)||h.currency!=='USD'||h.status!=='paid'||h.futureCompositionGuaranteed!==false||h.packages.some(p=>!Number.isSafeInteger(p.faceValueCents)||p.faceValueCents<=0||!Number.isSafeInteger(p.recipients)||p.recipients<1)||h.packages.reduce((n,p)=>n+p.recipients,0)!==h.totalRecipients)throw Error('Invalid TEN payout record');}
 }
 function renderBenefits(locale){
-  validatePolicy();const {c,definition,values:v}=get(locale),language=definition.numberLocale;
-  const number=new Intl.NumberFormat(language),money=new Intl.NumberFormat(language,{style:'currency',currency:'USD',currencyDisplay:'code',minimumFractionDigits:2,maximumFractionDigits:2});
-  const history=policy.history.map(h=>{
-    const month=new Intl.DateTimeFormat(language,{year:'numeric',month:'long',timeZone:'UTC',calendar:'gregory'}).format(new Date(h.month+'-01T00:00:00Z'));
-    const period=v.historyMonth.replace('{month}',month),total=v.historyTotal.replace('{count}',number.format(h.totalRecipients));
-    const rows=h.packages.map(p=>`<tr><td><data value="${p.faceValueCents}" data-ten-package-cents>${esc(money.format(p.faceValueCents/100))}</data></td><td><data value="${p.recipients}" data-ten-recipients>${number.format(p.recipients)}</data></td></tr>`).join('');
-    return `<details class="ten-payouts" data-ten-history="${h.month}" data-payout-status="${h.status}"><summary>${esc(v.historyTitle)} · <time datetime="${h.month}">${esc(period)}</time> · <span data-ten-total="${h.totalRecipients}">${esc(total)}</span></summary><p>${esc(v.historyIntro)}</p><div class="ten-payout-table"><table><caption>${esc(period)}</caption><thead><tr><th scope="col">${esc(v.packageLabel)} (USD)</th><th scope="col">${esc(v.recipientsLabel)}</th></tr></thead><tbody>${rows}</tbody></table></div><p class="ten-conditions">${esc(v.historyCaveat)}</p></details>`;
-  }).join('');
-  return `<details class="v3-topup-question ten-benefits" data-ten-benefits="${policy.policyId}" open><summary>${esc(c.faq[7][0])}</summary><ol class="ten-benefit-flow">${[v.flow1,v.flow2,v.flow3,v.flow4].map(s=>'<li>'+esc(s)+'</li>').join('')}</ol><div class="ten-benefit-grid"><article><h3>${esc(v.couponTitle)}</h3><p>${esc(v.couponText)}</p></article><article><h3>${esc(v.drawTitle)}</h3><p>${esc(v.drawText)}</p></article></div><p class="ten-conditions">${esc(v.eligibility)}</p><p class="ten-conditions">${esc(v.variation)}</p>${history}<div class="ten-benefit-actions">${link(locale)}<a class="ten-bookmark-jump" href="/${locale}/top-up/#ten-bookmark">${esc(v.bookmarkButton)}</a></div><p class="ten-disclosure">${esc(c.disclosure)}</p></details>`;
+  validatePolicy();return require('./v61-ten-content').renderProgram(locale,{placement:'guide'});
 }
 // Only the legacy bookmark box and its existing same-page contents link change.
 // Existing article anchors and the delegated bookmark button listener survive.
@@ -38,7 +31,7 @@ function projectBookmark(document,locale){
   if(!section||!heading?.id)throw Error('Missing legacy bookmark owner '+locale);
   const changes=[],before=section.outerHTML,id=heading.id;
   section.id='ten-bookmark';section.setAttribute('data-v3-owned','topup-bookmark');
-  section.innerHTML=`<div class="bookmark-box"><h2 id="${esc(id)}">${esc(v.bookmarkTitle)}</h2><p>${esc(v.bookmarkText)}</p><div class="ten-bookmark-actions">${link(locale,' data-ten-bookmark-destination')}<button class="btn" type="button" data-bookmark-cta="" data-affiliate-placement="topup_bookmark">${esc(v.bookmarkButton)}</button></div><p class="bookmark-hint" data-bookmark-hint="" hidden>${esc(v.bookmarkHint)}</p></div>`;
+  section.innerHTML=require('./v61-ten-content').renderBookmark(locale,'guide',{headingId:id,headingLevel:2});
   if(before!==section.outerHTML)changes.push({before,after:section.outerHTML,reason:'TEN destination bookmark instructions, not a promise of automatic bookmarking or eligibility'});
   for(const anchor of document.querySelectorAll('a[href]')){
     let url;try{url=new URL(anchor.getAttribute('href'),'https://tilessurvive.net/'+locale+'/top-up/');}catch(_){continue;}
@@ -60,4 +53,11 @@ function projectLegacyBenefitCopy(document,locale){
   if(beforeDisclosure!==disclosure.outerHTML)changes.push({before:beforeDisclosure,after:disclosure.outerHTML,reason:'Retain commission disclosure without conflating operator benefits and provider rewards'});
   return changes;
 }
-module.exports={get,fields,link,validatePolicy,renderBenefits,projectBookmark,projectLegacyBenefitCopy};
+function summary(locale){const c=require('./v61-ten-content').get(locale);return c.couponText+' '+c.drawText;}
+function projectMetadata(document,locale){
+  const description=summary(locale),changes=[];
+  for(const node of document.querySelectorAll('meta[name="description"],meta[property="og:description"],meta[name="twitter:description"]')){const before=node.outerHTML;node.setAttribute('content',description);if(before!==node.outerHTML)changes.push({before,after:node.outerHTML,reason:'Shared TEN policy summary'});}
+  for(const node of document.querySelectorAll('script[type="application/ld+json"]')){let data;try{data=JSON.parse(node.textContent);}catch(_){continue;}if(data['@type']!=='WebPage'||data.url!=='https://tilessurvive.net/'+locale+'/top-up/')continue;const before=node.outerHTML;data.description=description;node.textContent=JSON.stringify(data);if(before!==node.outerHTML)changes.push({before,after:node.outerHTML,reason:'Shared TEN policy structured description'});}
+  return changes;
+}
+module.exports={get,fields,link,validatePolicy,renderBenefits,projectBookmark,projectLegacyBenefitCopy,summary,projectMetadata};

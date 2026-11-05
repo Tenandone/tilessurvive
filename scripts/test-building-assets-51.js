@@ -6,6 +6,12 @@ const path = require('node:path');
 const { parseHTML } = require('linkedom');
 const { project, pages, manifest, validateAssets } = require('./build-building-assets-51');
 const root = path.resolve(__dirname, '..');
+const V6 = require('./build-v6-system');
+function reviewedSource(file) {
+  const html=fs.readFileSync(path.join(root,file),'utf8'),route='/'+file.replace(/index\.html$/,''),locale=file.split('/')[0];
+  V6.validateOwnership(html,locale,route);
+  return V6.strip(html);
+}
 function dimensions(file) {
   const b = fs.readFileSync(file);
   if (b.toString('ascii', 1, 4) === 'PNG') return [b.readUInt32BE(16), b.readUInt32BE(20)];
@@ -59,7 +65,7 @@ test('all selected asset hashes and decoded dimensions match; retained details n
 test('all 84 pages apply idempotently, preserve all text, links, calculators and SEO', () => {
   assert.equal(pages.length, 84);
   for (const file of pages) {
-    const before = fs.readFileSync(path.join(root, file), 'utf8'), after = project(before, file);
+    const before = reviewedSource(file), after = project(before, file);
     assert.equal(project(after, file), after, file);
     assert.equal(preservedDOM(after, file), preservedDOM(before, file), file);
     const d = parseHTML(after).document, catalog = file.split('/').length === 3;
@@ -78,7 +84,7 @@ test('only exact derivative detail image preloads migrate; social images and oth
     if (a.detail.src === a.detail.previousSrc) continue;
     for (const lang of manifest.languages) {
       const file = `${lang}/buildings/${a.slug}/index.html`;
-      const html = fs.readFileSync(path.join(root, file), 'utf8');
+      const html = reviewedSource(file);
       const fixture = `<link rel="preload" as="image" href="${a.detail.previousSrc}" fetchpriority="high">` +
         `<link rel="prefetch" as="image" href="${a.detail.previousSrc}">` +
         `<link rel="preload" as="image" href="${a.detail.previousSrc}?variant=other">` +
@@ -98,7 +104,7 @@ test('only exact derivative detail image preloads migrate; social images and oth
   }
 });
 test('unknown route, missing image, duplicate art and unexpected frame fail closed', () => {
-  const file = 'ko/buildings/power-plant/index.html', html = fs.readFileSync(path.join(root, file), 'utf8');
+  const file = 'ko/buildings/power-plant/index.html', html = reviewedSource(file);
   assert.throws(() => project(html, 'ko/heroes/shark/index.html'), /Unapproved/);
   assert.throws(() => project(html.replace(/<img\b[^>]*>/g, ''), file), /Missing/);
   const changed = project(html, file), image = changed.match(/<img\b[^>]*data-building-art-51[^>]*>/)[0];

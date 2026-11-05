@@ -89,6 +89,17 @@ function applyPetSkillLevels(document, pet, lang, data) {
   return document;
 }
 
+function removeVerifiedFluffyNote(document, data = require('../data/pet-skill-levels.json')) {
+  const pet = data.pets.find(p => p.id === 'fluffy');
+  if (!pet || pet.skills.length !== 4 || !pet.skills.every(s => s.levels.length === s.maxLevel && s.highestVerifiedLevel === s.maxLevel)) return false;
+  const card = document.querySelector('main #pet-fluffy.ts-pet-row');
+  if (!card?.querySelector('a[data-pet-skill-roster-levels="fluffy"][href$="/fluffy/#pet-skills-heading-41"]')) return false;
+  const notes = [...card.children].filter(n => n.matches('span.ts-evidence-label'));
+  assert(notes.length <= 1, 'Duplicate Fluffy legacy uncertainty');
+  notes.forEach(n => n.remove());
+  return !!notes.length;
+}
+
 function applyPetSkillRoster(document, lang, data) {
   for (const pet of data.pets) {
     const card = document.querySelector(`main #pet-${pet.id}.ts-pet-row`);
@@ -101,6 +112,7 @@ function applyPetSkillRoster(document, lang, data) {
     link.textContent = copy[lang].roster;
     if (!existing.length) card.append(link);
   }
+  removeVerifiedFluffyNote(document, data);
   return document;
 }
 
@@ -145,4 +157,4 @@ function build() {
 }
 
 if (require.main === module) build();
-module.exports = {build, applyPetSkillLevels, applyPetSkillRoster, stripOwnedSections, renderSection, renderSkill, validatedSkill, langs};
+module.exports = {build, applyPetSkillLevels, applyPetSkillRoster, removeVerifiedFluffyNote, stripOwnedSections, renderSection, renderSkill, validatedSkill, langs};

@@ -14,7 +14,9 @@
   var LANDING_SECTIONS = new Set(['dashboard','missions','duel','scores','guides','codes','heroes','pets','factions','glossary','simulators','tools','events','news','topup','common_event','event_official','event_guide','event_rules','event_schedule','planner','bookmark','score_preview','score_planner','coupon']);
   var ACTIONS = new Set(['result','save','restore','clear','select','open','change']);
   var LANDING_ACTIONS = new Set(Array.from(ACTIONS).concat(['view','copy','previous','next']));
-  function uiVersion(){var home=document.querySelector('[data-v5-home]');return home&&home.getAttribute('data-ui-version')==='v6'?'v6':'v5';}
+  var TEN_PLACEMENTS = new Set(['banner','footer','guide','additional_coupon','bookmark']);
+  var TEN_ACTIONS = new Set(['code_copy','url_copy','bookmark_help']);
+  function uiVersion(){var home=document.querySelector('[data-v5-home]'),version=home&&home.getAttribute('data-ui-version');return ['v6','v6.1'].includes(version)?version:'v5';}
   var consent = false, gaReady = false, pageSent = new Set(), guideSent = false, landingSent = false;
   try { consent = window.localStorage.getItem(KEY) === 'granted'; } catch (_) {}
   function language() {
@@ -116,16 +118,19 @@
     var feature = anchor.dataset.v3Feature || pageType();
     var result={placement: PLACEMENTS.has(placement) ? placement : 'content', feature: FEATURES.has(feature) ? feature : 'content', destination_type: kind(anchor), creative_type: anchor.classList.contains('ts-lootbar') ? 'banner' : 'text_link'};
     if(document.querySelector('[data-v5-home]'))result.ui_version=uiVersion();
+    var tenPlacement=anchor.getAttribute('data-ten-placement');
+    if(TEN_PLACEMENTS.has(tenPlacement)){result.ten_placement=tenPlacement;result.component=anchor.hasAttribute('data-ten-view')?'ten_banner':'ten_program';result.ui_version='v6.1';if(anchor.hasAttribute('data-ten-view'))result.destination_type='external';}
     return result;
   }
-  var seen = new WeakSet(), observed = new WeakSet(), timers = new Map(), ratios = new Map(), observer;
+  var seen = new WeakSet(), observed = new WeakSet(), timers = new Map(), ratios = new Map(), observer,tenBannerSeen=false;
   function stop(anchor) { clearTimeout(timers.get(anchor)); timers.delete(anchor); }
   function start(anchor) {
-    if (!consent || !production() || document.hidden || seen.has(anchor) || timers.has(anchor) || (ratios.get(anchor) || 0) < 0.6) return;
+    if (!consent || !production() || document.hidden || seen.has(anchor) || (anchor.hasAttribute('data-ten-view')&&tenBannerSeen) || timers.has(anchor) || (ratios.get(anchor) || 0) < 0.6) return;
     timers.set(anchor, setTimeout(function () {
       timers.delete(anchor);
-      if (!consent || document.hidden || !anchor.isConnected || (ratios.get(anchor) || 0) < 0.6 || seen.has(anchor)) return;
+      if (!consent || document.hidden || !anchor.isConnected || (ratios.get(anchor) || 0) < 0.6 || seen.has(anchor) || (anchor.hasAttribute('data-ten-view')&&tenBannerSeen)) return;
       if (send('affiliate_viewable', dimensions(anchor))) {
+        if(anchor.hasAttribute('data-ten-view'))tenBannerSeen=true;
         seen.add(anchor); ratios.delete(anchor); observer.unobserve(anchor);
       }
     }, 1000));
@@ -160,6 +165,10 @@
     trackLanding: function (action, section) {
       if(!document.querySelector('[data-v5-home]')||!LANDING_ACTIONS.has(action)||!LANDING_SECTIONS.has(section))return false;
       return send('landing_use',{ui_version:uiVersion(),action:action,section:section});
+    },
+    trackTen: function (action, placement) {
+      if(!TEN_ACTIONS.has(action)||!TEN_PLACEMENTS.has(placement)||!document.querySelector('[data-v61-ten]'))return false;
+      return send('ten_program_use',{ui_version:'v6.1',component:'ten_program',action:action,ten_placement:placement});
     }
   });
   document.addEventListener('click', function (event) {
@@ -167,7 +176,7 @@
     if (!target || !target.closest) return;
     if (target.closest('[data-v3-consent-allow]')) { setConsent(true); return; }
     if (target.closest('[data-v3-consent-deny]')) { setConsent(false); return; }
-    if (target.closest('[data-bookmark-cta]')) {
+    if (target.closest('[data-bookmark-cta]:not([data-ten-bookmark])')) {
       var hint = document.querySelector('[data-bookmark-hint]');
       if (hint) hint.hidden = false;
     }
@@ -177,9 +186,10 @@
     send(destination === 'external' ? 'lootbar_outbound_click' : destination === 'free' ? 'free_progress_open' : 'topup_guide_open', dimensions(anchor));
   });
   function scan(root) {
-    var nodes = root.matches && root.matches('a[href]') ? [root].concat(Array.from(root.querySelectorAll('a[href]'))) : Array.from(root.querySelectorAll('a[href]'));
+    var selector='a[href],[data-ten-view]',nodes = root.matches && root.matches(selector) ? [root].concat(Array.from(root.querySelectorAll(selector))) : Array.from(root.querySelectorAll(selector));
     nodes.forEach(function (anchor) {
-      if (kind(anchor) && !observed.has(anchor)) { observed.add(anchor); observer.observe(anchor); }
+      var banner=anchor.matches('[data-v61-ten="banner"][data-ten-view][data-ten-placement="banner"]');
+      if ((banner||(kind(anchor)&&!anchor.closest('[data-ten-view]'))) && !observed.has(anchor)) { observed.add(anchor); observer.observe(anchor); }
     });
   }
   if ('IntersectionObserver' in window) {

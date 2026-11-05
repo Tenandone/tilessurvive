@@ -102,7 +102,30 @@ function preservedContent(html){
  const ten=[...html.matchAll(/<a\b[^>]*href=["']([^"']*lootbar[^"']*)["'][^>]*>/gi)].map(m=>m[1]);
  return {programs,models,tables,ads,ten};
 }
-function verifyPreserved(before,after,file){if(/^[a-z-]+\/index\.html$/.test(file)&&after.includes('data-v5-home')){const l=file.split('/')[0],V5=require('./build-v5-landing');V5.validateOwnership(after,l);assert.equal(parseHTML(after).document.querySelector('main').innerHTML,parseHTML(V5.project(before,l)).document.querySelector('main').innerHTML,file+' exact reviewed landing replacement');assert.deepEqual(preservedContent(before).ads,preservedContent(after).ads,file+' protected ads');return;}const V4=require('./v4-workbench-content'),route='/'+file.replace(/index\.html$/,''),locale=file.split('/')[0];if(V4.kindFor(route)){V4.validateOwnership(after,locale,route);before=V4.strip(before);after=V4.strip(after);}const a=preservedContent(before),b=preservedContent(after);for(const key of ['programs','models','ads','ten'])assert.deepEqual(b[key],a[key],file+' protected '+key);let at=0;for(const value of a.tables){at=b.tables.indexOf(value,at);assert(at>=0,file+' original numeric table removed or changed');at++;}}
+function verifyPreserved(before,after,file){
+ const System=require('./build-v6-system');before=System.strip(before);after=System.strip(after);
+ const locale=file.split('/')[0],route='/'+file.replace(/index\.html$/,'');
+ if(/^[a-z-]+\/index\.html$/.test(file)&&after.includes('data-v5-home')){
+  const V5=require('./build-v5-landing');V5.validateOwnership(after,locale);
+  assert.equal(parseHTML(after).document.querySelector('main').innerHTML,parseHTML(System.strip(V5.project(before,locale))).document.querySelector('main').innerHTML,file+' exact reviewed landing replacement');
+  assert.deepEqual(preservedContent(before).ads,preservedContent(after).ads,file+' protected ads');return;
+ }
+ if(/^[a-z-]+\/codes\/index\.html$/.test(file)&&after.includes('data-gift-owned')){
+  const Gift=require('./build-gift-codes'),V3=require('./build-v3-platform');Gift.validateOwnership(after,locale);
+  const expected=Gift.project(V3.project(before,locale,route),locale);
+  assert.equal(parseHTML(after).document.querySelector('main').innerHTML,parseHTML(expected).document.querySelector('main').innerHTML,file+' exact reviewed gift-code replacement');
+  const a=preservedContent(expected),b=preservedContent(after);for(const key of ['programs','models','ads','ten'])assert.deepEqual(b[key],a[key],file+' protected '+key);
+  assert.deepEqual(preservedContent(before).ads,b.ads,file+' protected pre-update ads');return;
+ }
+ if(/^[a-z-]+\/top-up\/index\.html$/.test(file)){
+  const V3=require('./build-v3-platform'),expected=V3.project(before,locale,route);V3.validateOwnership(after,locale,route);
+  assert.equal(parseHTML(after).document.querySelector('main').innerHTML,parseHTML(expected).document.querySelector('main').innerHTML,file+' exact reviewed TEN replacement');
+  const a=preservedContent(expected),b=preservedContent(after);for(const key of ['programs','models','ads','ten'])assert.deepEqual(b[key],a[key],file+' protected '+key);
+  assert.deepEqual(preservedContent(before).ads,b.ads,file+' protected pre-update ads');return;
+ }
+ const V4=require('./v4-workbench-content');if(V4.kindFor(route)){V4.validateOwnership(after,locale,route);before=V4.strip(before);after=V4.strip(after);}
+ const a=preservedContent(before),b=preservedContent(after);for(const key of ['programs','models','ads','ten'])assert.deepEqual(b[key],a[key],file+' protected '+key);let at=0;for(const value of a.tables){at=b.tables.indexOf(value,at);assert(at>=0,file+' original numeric table removed or changed');at++;}
+}
 function hook(root=ROOT){const script='scripts/build-hero-pet-pages.js',data='data/hero-pet-relations.json',hasScript=fs.existsSync(path.join(root,script)),hasData=fs.existsSync(path.join(root,data));assert.equal(hasScript,hasData,'Hero/pet renderer and validated data must enter the release together');if(!hasScript)return null;const owner=require(path.join(root,script));assert.equal(typeof owner.validate,'function','Hero/pet model validator is required');assert.equal(typeof owner.project,'function','Hero/pet pure projection is required');owner.validate(json(root,data));return script;}
 function validate(root=ROOT,{before,backup}={}){
  const registry=json(root,'data/i18n/locales.json').locales;assert.equal(registry.length,21,'The published locale set must not shrink');

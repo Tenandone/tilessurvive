@@ -1395,7 +1395,7 @@
       "language": "ar",
       "type": "top-up",
       "title": "دليل الشحن | TilesSurvive.net",
-      "description": "راجع خيارات شحن Tiles Survive ومتطلبات الحساب والشروط، ثم تابع عبر رابط LootBar المخصص.",
+      "description": "يحصل الأعضاء الذين يشحنون عبر رابط TEN على قسائم خصم إضافية، ويشمل ذلك من شحنوا مرة واحدة فقط. يُدرج سجل شحنك التراكمي عبر TEN خلال كل شهر تلقائيًا في سحب الحزم المجانية. تُمنح الحزم للفائزين بالسحب.",
       "url": "/ar/top-up/"
     },
     {
@@ -1561,8 +1561,8 @@
     {
       "language": "ar",
       "type": "code",
-      "title": "رموز هدايا Tiles Survive | الرموز النشطة والدائمة والعد التنازلي للانتهاء | TilesSurvive.net",
-      "description": "اطلع على رموز هدايا Tiles Survive النشطة والدائمة والعد التنازلي لأقرب انتهاء في صفحة واحدة، مع توقيت آسيا وأوروبا وأمريكا وأزرار النسخ والأسئلة الشائعة.",
+      "title": "رموز هدايا لعبة Tiles Survive | TilesSurvive.net",
+      "description": "انسخ الرمز واستبدله داخل اللعبة. تحقق من نوعه ووقت انتهائه قبل استخدامه.",
       "url": "/ar/codes/"
     },
     {
@@ -3268,7 +3268,7 @@
       "language": "de",
       "type": "top-up",
       "title": "Aufladung Guide | TilesSurvive.net",
-      "description": "Überprüfen Sie die Tiles Survive-Aufladeoptionen, Kontoanforderungen und -bedingungen und fahren Sie dann über den dedizierten LootBar-Link fort.",
+      "description": "Mitglieder, die über den TEN-Link aufladen, erhalten zusätzliche Rabattcoupons. Das gilt auch für Mitglieder mit nur einer Aufladung. Deine über TEN gesammelten Aufladungen eines Monats werden automatisch für die Paketverlosung berücksichtigt. Die kostenlosen Pakete gehen an die ausgelosten Gewinner.",
       "url": "/de/top-up/"
     },
     {
@@ -5451,8 +5451,8 @@
     {
       "language": "de",
       "type": "code",
-      "title": "Tiles Survive Geschenkcodes | Aktive Codes, Permanent Codes, Ablauf Countdown | TilesSurvive.net",
-      "description": "Überprüfen Sie aktive Tiles Survive-Geschenkcodes, permanente Codes und den nächsten Ablauf Countdown auf einer Seite. Enthält Verfallszeiten in Asien, Europa und Amerika, Kopierschaltflächen und FAQ.",
+      "title": "Tiles Survive Geschenkcodes fürs Spiel | TilesSurvive.net",
+      "description": "Kopiere einen Code und löse ihn im Spiel ein. Prüfe zuvor die Art und das Ablaufdatum.",
       "url": "/de/codes/"
     },
     {
@@ -8795,8 +8795,8 @@
     {
       "language": "en",
       "type": "code",
-      "title": "Tiles Survive Gift Codes | Active Codes, Permanent Codes, Expiry Countdown | TilesSurvive.net",
-      "description": "Check active Tiles Survive gift codes, permanent codes, and the next expiry countdown on one page. Includes Asia, Europe, and America expiry times, copy buttons, and FAQ.",
+      "title": "Tiles Survive game gift codes | TilesSurvive.net",
+      "description": "Copy a code and redeem it in the game. Check its type and expiry before using it.",
       "url": "/en/codes/"
     },
     {
@@ -8847,7 +8847,7 @@
       "language": "en",
       "type": "top-up",
       "title": "Top-up guide | TilesSurvive.net",
-      "description": "Review Tiles Survive top-up options, account requirements and conditions, then continue through the dedicated LootBar link.",
+      "description": "Members who top up through the TEN link receive extra discount coupons, including members who top up just once. Your cumulative monthly TEN top-up record is automatically included in the free-package draw. Packages go to draw winners.",
       "url": "/en/top-up/"
     },
     {
@@ -9697,8 +9697,8 @@
     {
       "language": "es",
       "type": "code",
-      "title": "Códigos de regalo de Tiles Survive | Códigos activos, permanentes y cuenta atrás de caducidad | TilesSurvive.net",
-      "description": "Consulta los códigos de regalo activos de Tiles Survive, los códigos permanentes y la cuenta atrás de la próxima caducidad en una sola página. Incluye horas de caducidad para Asia, Europa y América, botones para copiar y preguntas frecuentes.",
+      "title": "Códigos de regalo del juego Tiles Survive | TilesSurvive.net",
+      "description": "Copia un código y canjéalo en el juego. Comprueba su tipo y vencimiento antes de usarlo.",
       "url": "/es/codes/"
     },
     {
@@ -10747,7 +10747,7 @@
       "language": "es",
       "type": "top-up",
       "title": "Guía de recarga | TilesSurvive.net",
-      "description": "Revisa las opciones de recarga de Tiles Survive, los requisitos de cuenta y las condiciones; después continúa mediante el enlace exclusivo de LootBar.",
+      "description": "Los miembros que recargan mediante el enlace TEN reciben cupones de descuento adicionales, incluidos quienes solo recargan una vez. El total de tus recargas del mes mediante TEN se incluye automáticamente en el sorteo de paquetes gratis. Los paquetes se entregan a los ganadores.",
       "url": "/es/top-up/"
     },
     {
@@ -12749,8 +12749,8 @@
     {
       "language": "fr",
       "type": "code",
-      "title": "Codes cadeaux Tiles Survive | Codes actifs, codes permanents, compte à rebours d’expiration | TilesSurvive.net",
-      "description": "Consultez sur une seule page les codes cadeaux Tiles Survive actifs, les codes permanents et le prochain compte à rebours d’expiration. Les horaires d’expiration pour l’Asie, l’Europe et l’Amérique, les boutons de copie et une FAQ sont inclus.",
+      "title": "Codes cadeaux en jeu Tiles Survive | TilesSurvive.net",
+      "description": "Copiez un code et utilisez-le dans le jeu. Vérifiez son type et sa date d’expiration avant de l’utiliser.",
       "url": "/fr/codes/"
     },
     {
@@ -13856,7 +13856,7 @@
       "language": "fr",
       "type": "top-up",
       "title": "Guide de recharge | TilesSurvive.net",
-      "description": "Examinez les options de recharge Tiles Survive, les prérequis et les conditions du compte, puis poursuivez via le lien LootBar dédié.",
+      "description": "Les membres qui rechargent via le lien TEN reçoivent des coupons de réduction supplémentaires, y compris ceux qui n’effectuent qu’une recharge. Le cumul de vos recharges du mois via TEN est automatiquement pris en compte pour le tirage au sort de packs gratuits. Les packs sont attribués aux gagnants.",
       "url": "/fr/top-up/"
     },
     {
@@ -16896,8 +16896,8 @@
     {
       "language": "id",
       "type": "code",
-      "title": "Kode hadiah Tiles Survive | Kode aktif, kode permanen, hitung mundur kedaluwarsa | TilesSurvive.net",
-      "description": "Periksa kode hadiah Tiles Survive aktif, kode permanen, dan hitung mundur kedaluwarsa berikutnya pada satu halaman. Termasuk waktu kedaluwarsa Asia, Eropa, dan Amerika, tombol salin, serta pertanyaan umum.",
+      "title": "Kode hadiah game Tiles Survive | TilesSurvive.net",
+      "description": "Salin kode dan tukarkan di dalam game. Periksa jenis dan masa berlakunya sebelum digunakan.",
       "url": "/id/codes/"
     },
     {
@@ -17372,7 +17372,7 @@
       "language": "id",
       "type": "top-up",
       "title": "Panduan top up | TilesSurvive.net",
-      "description": "Tinjau opsi top up Tiles Survive, persyaratan dan ketentuan akun, lalu lanjutkan melalui tautan khusus LootBar.",
+      "description": "Anggota yang top up melalui tautan TEN menerima kupon diskon tambahan. Anggota yang baru top up satu kali juga termasuk. Total riwayat top up TEN Anda selama sebulan otomatis disertakan dalam undian paket gratis. Paket diberikan kepada pemenang undian.",
       "url": "/id/top-up/"
     },
     {
@@ -18951,8 +18951,8 @@
     {
       "language": "it",
       "type": "code",
-      "title": "Codici regalo Tiles Survive | Codici attivi, permanenti e conto alla rovescia della scadenza | TilesSurvive.net",
-      "description": "Controlla in un’unica pagina i codici regalo Tiles Survive attivi, quelli permanenti e il conto alla rovescia della prossima scadenza. Include gli orari per Asia, Europa e America, pulsanti di copia e domande frequenti.",
+      "title": "Codici regalo per il gioco Tiles Survive | TilesSurvive.net",
+      "description": "Copia un codice e riscattalo nel gioco. Controlla il tipo e la scadenza prima di usarlo.",
       "url": "/it/codes/"
     },
     {
@@ -19939,7 +19939,7 @@
       "language": "it",
       "type": "top-up",
       "title": "Guida alle ricariche | TilesSurvive.net",
-      "description": "Consulta opzioni di ricarica, requisiti dell’account e condizioni di Tiles Survive, poi prosegui tramite il link dedicato di LootBar.",
+      "description": "Gli utenti che ricaricano tramite il link TEN ricevono coupon sconto aggiuntivi, anche dopo una sola ricarica. Il totale delle tue ricariche TEN del mese viene incluso automaticamente nell'estrazione di pacchetti gratuiti. I pacchetti vengono assegnati ai vincitori.",
       "url": "/it/top-up/"
     },
     {
@@ -24071,8 +24071,8 @@
     {
       "language": "ja",
       "type": "code",
-      "title": "タイルズサバイバル ギフトコード | 有効コード・常設コード・期限カウントダウン | TilesSurvive.net",
-      "description": "タイルズサバイバルの有効ギフトコード、常設コード、次の期限カウントダウンを1ページで確認できます。アジア・ヨーロッパ・アメリカ基準の期限時間、コピー機能、FAQまでまとめました。",
+      "title": "Tiles Survive ゲーム内ギフトコード | TilesSurvive.net",
+      "description": "コードをコピーしてゲーム内で入力してください。種類と有効期限を確認できます。",
       "url": "/ja/codes/"
     },
     {
@@ -24129,7 +24129,7 @@
       "language": "ja",
       "type": "top-up",
       "title": "チャージ案内 | TilesSurvive.net",
-      "description": "Tiles Surviveのチャージ方法、利用条件、アカウントの確認事項を調べて、LootBar専用リンクへ進めます。",
+      "description": "TENリンクからチャージした会員に追加割引クーポンを配布します。1回だけチャージした会員も対象です。 毎月のTEN経由の累計チャージ履歴が、無料パック抽選に自動で反映されます。パックは当選者に配布されます。",
       "url": "/ja/top-up/"
     },
     {
@@ -27239,7 +27239,7 @@
       "language": "ko",
       "type": "top-up",
       "title": "충전 안내 | TilesSurvive.net",
-      "description": "타일서바이벌 충전 방법과 이용 조건, 계정 확인 사항을 살펴보고 LootBar 전용 링크로 이동하세요.",
+      "description": "TEN 링크로 충전한 회원에게 추가 할인쿠폰을 지급합니다. 1회 충전 회원도 포함됩니다. 월간 누적 TEN 충전 내역은 무료 패키지 추첨에 자동 반영됩니다. 무료 패키지는 추첨 당첨자에게 지급됩니다.",
       "url": "/ko/top-up/"
     },
     {
@@ -27328,8 +27328,8 @@
     {
       "language": "ko",
       "type": "code",
-      "title": "타일서바이벌 기프트코드 | 활성 코드, 상시 코드, 만료 카운트다운 | TilesSurvive.net",
-      "description": "타일서바이벌 활성 기프트코드, 상시 코드, 다음 만료 카운트다운을 한 페이지에서 확인하세요. 아시아, 유럽, 아메리카 기준 만료 시간과 복사 버튼, FAQ까지 정리했습니다.",
+      "title": "타일서바이벌 게임 기프트 코드 | TilesSurvive.net",
+      "description": "코드를 복사해 게임에서 입력하세요. 코드 유형과 만료 시각을 확인할 수 있습니다.",
       "url": "/ko/codes/"
     },
     {
@@ -29374,8 +29374,8 @@
     {
       "language": "ms",
       "type": "code",
-      "title": "Kod Hadiah Tiles Survive | Kod Aktif, Kod Kekal, Kira Detik Tamat Tempoh | TilesSurvive.net",
-      "description": "Semak kod hadiah Tiles Survive aktif, kod kekal dan kira detik tamat seterusnya pada satu halaman. Termasuk waktu tamat Asia, Eropah dan Amerika, butang salin serta soalan lazim.",
+      "title": "Kod hadiah permainan Tiles Survive | TilesSurvive.net",
+      "description": "Salin kod dan tebus dalam permainan. Semak jenis dan tarikh luput sebelum menggunakannya.",
       "url": "/ms/codes/"
     },
     {
@@ -29862,7 +29862,7 @@
       "language": "ms",
       "type": "top-up",
       "title": "Panduan tambah nilai | TilesSurvive.net",
-      "description": "Semak pilihan tambah nilai Tiles Survive, keperluan akaun dan syarat, kemudian teruskan melalui pautan khusus LootBar.",
+      "description": "Ahli yang menambah nilai melalui pautan TEN menerima kupon diskaun tambahan, termasuk ahli yang baru menambah nilai sekali. Rekod jumlah tambah nilai TEN bulanan anda disertakan secara automatik dalam cabutan pakej percuma. Pakej diberikan kepada pemenang cabutan.",
       "url": "/ms/top-up/"
     },
     {
@@ -31642,8 +31642,8 @@
     {
       "language": "nb",
       "type": "code",
-      "title": "Gavekoder for Tiles Survive | Aktive koder, permanente koder og nedtelling til utløp | TilesSurvive.net",
-      "description": "Se aktive gavekoder for Tiles Survive, permanente koder og nedtelling til neste utløp på én side. Inkluderer utløpstider for Asia, Europa og Amerika, kopieringsknapper og vanlige spørsmål.",
+      "title": "Gavekoder i Tiles Survive | TilesSurvive.net",
+      "description": "Kopier en kode og løs den inn i spillet. Sjekk type og utløpstid før bruk.",
       "url": "/nb/codes/"
     },
     {
@@ -32577,7 +32577,7 @@
       "language": "nb",
       "type": "top-up",
       "title": "Påfyllingsveiledning | TilesSurvive.net",
-      "description": "Se påfyllingsalternativer, kontokrav og vilkår for Tiles Survive, og fortsett via den dedikerte LootBar-lenken.",
+      "description": "Medlemmer som fyller på via TEN-lenken, får ekstra rabattkuponger. Dette gjelder også dem som bare har fylt på én gang. Dine samlede TEN-påfyll i løpet av måneden tas automatisk med i trekningen av gratispakker. Pakkene gis til vinnerne.",
       "url": "/nb/top-up/"
     },
     {
@@ -35602,7 +35602,7 @@
       "language": "nl",
       "type": "top-up",
       "title": "Opwaardeergids | TilesSurvive.net",
-      "description": "Bekijk de opwaardeeropties, accountvereisten en voorwaarden voor Tiles Survive en ga daarna verder via de speciale LootBar-link.",
+      "description": "Leden die via de TEN-link opwaarderen, ontvangen extra kortingscoupons. Ook leden die slechts één keer hebben opgewaardeerd vallen hieronder. Je totale TEN-opwaarderingen van de maand worden automatisch meegenomen in de verloting van gratis pakketten. De winnaars ontvangen de pakketten.",
       "url": "/nl/top-up/"
     },
     {
@@ -36389,8 +36389,8 @@
     {
       "language": "nl",
       "type": "code",
-      "title": "Tiles Survive-cadeaucodes | Actieve codes, permanente codes, aftellen tot vervaldatum | TilesSurvive.net",
-      "description": "Bekijk actieve Tiles Survive-cadeaucodes, permanente codes en de volgende vervalaftelling op één pagina. Met vervaltijden voor Azië, Europa en Amerika, kopieerknoppen en veelgestelde vragen.",
+      "title": "Cadeaucodes voor de game Tiles Survive | TilesSurvive.net",
+      "description": "Kopieer een code en wissel hem in de game in. Controleer eerst het type en de vervaldatum.",
       "url": "/nl/codes/"
     },
     {
@@ -37840,8 +37840,8 @@
     {
       "language": "pl",
       "type": "code",
-      "title": "Kody podarunkowe Tiles Survive | Aktywne kody, stałe kody, odliczanie do wygaśnięcia | TilesSurvive.net",
-      "description": "Sprawdź na jednej stronie aktywne i stałe kody podarunkowe Tiles Survive oraz odliczanie do najbliższego wygaśnięcia. Strona zawiera terminy dla Azji, Europy i Ameryki, przyciski kopiowania oraz odpowiedzi na częste pytania.",
+      "title": "Kody prezentowe do gry Tiles Survive | TilesSurvive.net",
+      "description": "Skopiuj kod i wykorzystaj go w grze. Przed użyciem sprawdź jego rodzaj i termin ważności.",
       "url": "/pl/codes/"
     },
     {
@@ -38645,7 +38645,7 @@
       "language": "pl",
       "type": "top-up",
       "title": "Poradnik doładowania | TilesSurvive.net",
-      "description": "Sprawdź opcje doładowania Tiles Survive, wymagania i warunki konta, a następnie przejdź dalej przez specjalny link LootBar.",
+      "description": "Użytkownicy doładowujący przez link TEN otrzymują dodatkowe kupony rabatowe. Dotyczy to również osób, które doładowały tylko raz. Łączna wartość Twoich doładowań TEN z danego miesiąca jest automatycznie uwzględniana w losowaniu darmowych pakietów. Pakiety otrzymują zwycięzcy losowania.",
       "url": "/pl/top-up/"
     },
     {
@@ -40790,8 +40790,8 @@
     {
       "language": "pt",
       "type": "code",
-      "title": "Códigos de presente de Tiles Survive | Códigos ativos, permanentes e contagem até expirar | TilesSurvive.net",
-      "description": "Confira códigos de presente ativos e permanentes de Tiles Survive e a contagem até a próxima expiração em uma só página. Inclui horários de expiração na Ásia, Europa e América, botões para copiar e perguntas frequentes.",
+      "title": "Códigos de presente do jogo Tiles Survive | TilesSurvive.net",
+      "description": "Copie um código e resgate-o no jogo. Confira o tipo e a validade antes de usar.",
       "url": "/pt/codes/"
     },
     {
@@ -41749,7 +41749,7 @@
       "language": "pt",
       "type": "top-up",
       "title": "Guia de recarga | TilesSurvive.net",
-      "description": "Confira as opções de recarga de Tiles Survive, os requisitos da conta e as condições, e continue pelo link dedicado do LootBar.",
+      "description": "Membros que recarregam pelo link TEN recebem cupons de desconto extras, inclusive quem recarrega apenas uma vez. O total das suas recargas pelo TEN no mês é incluído automaticamente no sorteio de pacotes grátis. Os pacotes são entregues aos ganhadores.",
       "url": "/pt/top-up/"
     },
     {
@@ -45053,8 +45053,8 @@
     {
       "language": "ru",
       "type": "code",
-      "title": "Подарочные коды Tiles Survive | Активные коды, постоянные коды, обратный отсчёт до истечения | TilesSurvive.net",
-      "description": "Проверьте активные подарочные коды Tiles Survive, постоянные коды и обратный отсчёт до следующего истечения на одной странице. Время истечения для Азии, Европы и Америки, кнопки копирования и FAQ собраны в одном месте.",
+      "title": "Подарочные коды Tiles Survive для игры | TilesSurvive.net",
+      "description": "Скопируйте код и введите его в игре. Перед использованием проверьте тип и срок действия.",
       "url": "/ru/codes/"
     },
     {
@@ -45131,7 +45131,7 @@
       "language": "ru",
       "type": "top-up",
       "title": "Пополнение | TilesSurvive.net",
-      "description": "Изучите способы пополнения Tiles Survive, требования к аккаунту и условия использования, затем перейдите по специальной ссылке LootBar.",
+      "description": "Участники, пополняющие по ссылке TEN, получают дополнительные купоны на скидку. Это относится и к тем, кто пополнил только один раз. Суммарная история ваших пополнений через TEN за месяц автоматически учитывается в розыгрыше бесплатных наборов. Наборы получают победители розыгрыша.",
       "url": "/ru/top-up/"
     },
     {
@@ -48089,7 +48089,7 @@
       "language": "sv",
       "type": "top-up",
       "title": "Påfyllningsguide | TilesSurvive.net",
-      "description": "Gå igenom alternativ för påfyllning i Tiles Survive, kontokrav och villkor och fortsätt sedan via den särskilda LootBar-länken.",
+      "description": "Medlemmar som fyller på via TEN-länken får extra rabattkuponger. Det gäller även den som bara har fyllt på en gång. Dina sammanlagda TEN-påfyllningar under månaden tas automatiskt med i utlottningen av gratispaket. Paketen går till vinnarna.",
       "url": "/sv/top-up/"
     },
     {
@@ -49085,8 +49085,8 @@
     {
       "language": "sv",
       "type": "code",
-      "title": "Tiles Survive-presentkoder | Aktiva koder, permanenta koder, nedräkning till utgång | TilesSurvive.net",
-      "description": "Kontrollera aktiva Tiles Survive-presentkoder, permanenta koder och nästa utgångsnedräkning på en sida. Med utgångstider för Asien, Europa och Amerika, kopieringsknappar och vanliga frågor.",
+      "title": "Presentkoder i Tiles Survive | TilesSurvive.net",
+      "description": "Kopiera en kod och lös in den i spelet. Kontrollera typ och sluttid innan du använder den.",
       "url": "/sv/codes/"
     },
     {
@@ -50127,7 +50127,7 @@
       "language": "th",
       "type": "top-up",
       "title": "คู่มือเติมเงิน | TilesSurvive.net",
-      "description": "ทบทวนตัวเลือกเติมเงิน Tiles Survive ข้อกำหนดบัญชีและเงื่อนไข แล้วดำเนินการต่อผ่านลิงก์ LootBar เฉพาะ",
+      "description": "สมาชิกที่เติมเกมผ่านลิงก์ TEN จะได้รับคูปองส่วนลดเพิ่มเติม รวมถึงสมาชิกที่เคยเติมเพียงครั้งเดียว ยอดเติมผ่าน TEN สะสมในแต่ละเดือนของคุณจะถูกนำไปร่วมการจับรางวัลแพ็กเกจฟรีโดยอัตโนมัติ ผู้ที่ถูกรางวัลจะได้รับแพ็กเกจ",
       "url": "/th/top-up/"
     },
     {
@@ -50203,8 +50203,8 @@
     {
       "language": "th",
       "type": "code",
-      "title": "โค้ดของขวัญ Tiles Survive | โค้ดที่ใช้ได้ โค้ดถาวร และนับถอยหลังหมดอายุ | TilesSurvive.net",
-      "description": "ดูโค้ดของขวัญ Tiles Survive ที่ใช้ได้ โค้ดถาวร และนับถอยหลังหมดอายุในหน้าเดียว พร้อมเวลาเอเชีย ยุโรป อเมริกา ปุ่มคัดลอก และคำถามที่พบบ่อย",
+      "title": "โค้ดของขวัญในเกม Tiles Survive | TilesSurvive.net",
+      "description": "คัดลอกโค้ดแล้วนำไปแลกในเกม ตรวจสอบประเภทและวันหมดอายุก่อนใช้",
       "url": "/th/codes/"
     },
     {
@@ -55384,8 +55384,8 @@
     {
       "language": "tr",
       "type": "code",
-      "title": "Tiles Survive Hediye Kodları | Aktif Kodlar, Kalıcı Kodlar, Süre Sonu Geri Sayımı | TilesSurvive.net",
-      "description": "Aktif Tiles Survive hediye kodlarını, kalıcı kodları ve bir sonraki bitişe kalan süreyi tek sayfada kontrol edin. Asya, Avrupa ve Amerika bitiş saatlerini, kopyalama düğmelerini ve sık sorulan soruları içerir.",
+      "title": "Tiles Survive oyun içi hediye kodları | TilesSurvive.net",
+      "description": "Kodu kopyalayıp oyunda kullanın. Önce türünü ve son kullanma tarihini kontrol edin.",
       "url": "/tr/codes/"
     },
     {
@@ -55691,7 +55691,7 @@
       "language": "tr",
       "type": "top-up",
       "title": "Yükleme rehberi | TilesSurvive.net",
-      "description": "Tiles Survive yükleme seçeneklerini, hesap gereksinimlerini ve koşulları inceleyip özel LootBar bağlantısından devam edin.",
+      "description": "TEN bağlantısı üzerinden yükleme yapan üyelere ek indirim kuponları verilir. Yalnızca bir kez yükleme yapan üyeler de dahildir. Aylık toplam TEN yükleme kaydınız ücretsiz paket çekilişine otomatik olarak dahil edilir. Paketler çekilişi kazananlara verilir.",
       "url": "/tr/top-up/"
     },
     {
@@ -56997,7 +56997,7 @@
       "language": "vi",
       "type": "top-up",
       "title": "Hướng dẫn nạp tiền | TilesSurvive.net",
-      "description": "Xem lựa chọn nạp tiền Tiles Survive, yêu cầu tài khoản và điều kiện, rồi tiếp tục qua liên kết LootBar riêng.",
+      "description": "Thành viên nạp qua liên kết TEN được nhận thêm phiếu giảm giá, bao gồm cả người mới nạp một lần. Tổng lịch sử nạp TEN trong tháng của bạn được tự động đưa vào chương trình bốc thăm gói miễn phí. Gói sẽ được trao cho người trúng thưởng.",
       "url": "/vi/top-up/"
     },
     {
@@ -57394,8 +57394,8 @@
     {
       "language": "vi",
       "type": "code",
-      "title": "Mã Quà tặng Tiles Survive | Mã Còn hiệu lực, Mã Vĩnh viễn, Đếm ngược Hạn dùng | TilesSurvive.net",
-      "description": "Xem mã quà tặng Tiles Survive còn hiệu lực, mã vĩnh viễn và đếm ngược hạn tiếp trên một trang. Gồm giờ hết hạn Châu Á, Châu Âu, Châu Mỹ, nút sao chép và hỏi đáp.",
+      "title": "Mã quà tặng trong trò chơi Tiles Survive | TilesSurvive.net",
+      "description": "Sao chép mã và đổi trong trò chơi. Kiểm tra loại mã và thời hạn trước khi dùng.",
       "url": "/vi/codes/"
     },
     {
@@ -60462,7 +60462,7 @@
       "language": "zh-cn",
       "type": "top-up",
       "title": "充值说明 | TilesSurvive.net",
-      "description": "查看Tiles Survive充值方式、使用条件与账号确认事项，再透过LootBar专属链接前往充值。",
+      "description": "通过 TEN 链接充值的会员可获得额外折扣券，仅充值一次的会员也包括在内。 每月通过 TEN 充值的累计记录会自动纳入免费礼包抽奖。免费礼包发放给抽奖得主。",
       "url": "/zh-cn/top-up/"
     },
     {
@@ -61892,8 +61892,8 @@
     {
       "language": "zh-cn",
       "type": "code",
-      "title": "Tiles Survive 礼包码 | 有效代码・常驻代码・到期倒数 | TilesSurvive.net",
-      "description": "可在这一页查看 Tiles Survive 的有效礼包码、常驻代码与下一个到期倒数。整理亚洲、欧洲、美洲基准时间、复制功能与 FAQ。",
+      "title": "Tiles Survive 游戏礼包码 | TilesSurvive.net",
+      "description": "复制代码后在游戏内输入，使用前请确认类型与到期时间。",
       "url": "/zh-cn/codes/"
     },
     {
@@ -64424,7 +64424,7 @@
       "language": "zh-tw",
       "type": "top-up",
       "title": "儲值說明 | TilesSurvive.net",
-      "description": "查看Tiles Survive儲值方式、使用條件與帳號確認事項，再透過LootBar專屬連結前往儲值。",
+      "description": "透過 TEN 連結儲值的會員可獲額外折扣券，僅儲值一次的會員也包含在內。 每月透過 TEN 儲值的累計紀錄會自動納入免費禮包抽獎。免費禮包發放給抽獎得主。",
       "url": "/zh-tw/top-up/"
     },
     {
@@ -64977,8 +64977,8 @@
     {
       "language": "zh-tw",
       "type": "code",
-      "title": "Tiles Survive 禮包碼 | 有效代碼・常駐代碼・到期倒數 | TilesSurvive.net",
-      "description": "可在這一頁查看 Tiles Survive 的有效禮包碼、常駐代碼與下一個到期倒數。整理亞洲、歐洲、美洲基準時間、複製功能與 FAQ。",
+      "title": "Tiles Survive 遊戲禮包碼 | TilesSurvive.net",
+      "description": "複製代碼後在遊戲內輸入，使用前請確認類型與到期時間。",
       "url": "/zh-tw/codes/"
     },
     {

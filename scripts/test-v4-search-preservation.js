@@ -1,0 +1,11 @@
+'use strict';
+// No HTML writes: exercise the same search-row gate used by the full release.
+const test=require('node:test'),assert=require('node:assert/strict');
+const Gate=require('./v4-release-gate'),Gift=require('./gift-codes-content'),Ten=require('./ten-benefits-content'),locales=require('../data/i18n/locales.json').locales;
+function fixture(locale){return [{language:locale,type:'code',url:'/'+locale+'/codes/',title:'Original game-code title',description:'Original code summary',keywords:['retain'],source:{reviewed:true}},{language:locale,type:'top-up',url:'/'+locale+'/top-up/',title:'Retained top-up title',description:'Original top-up summary',keywords:['retain']},{language:locale,type:'guide',url:'/'+locale+'/guides/unchanged/',title:'Unchanged title',description:'Unchanged description',keywords:['retain']}];}
+test('all 21 search locales accept only shared gift-code and TEN metadata projections',()=>{
+ for(const {code:l}of locales){const before=fixture(l),saved=structuredClone(before),expected=[{...before[0],title:Gift.copy(l).title+' | TilesSurvive.net',description:Gift.copy(l).intro},{...before[1],description:Ten.summary(l)},before[2]];assert.deepEqual(before.map(row=>Gate.projectOriginalSearchRow(row,l)),expected);assert.doesNotThrow(()=>Gate.verifyOriginalSearchRows(before,expected,l));assert.deepEqual(before,saved);}
+});
+test('search preservation rejects arbitrary copy, route, identity, extra-field and unrelated-row changes',()=>{
+ for(const {code:l}of locales){const before=fixture(l),approved=before.map(row=>Gate.projectOriginalSearchRow(row,l));for(const [row,key,value]of [[0,'title','Unreviewed title'],[0,'description','Unreviewed game-code summary'],[1,'description','Guaranteed free package for everyone'],[1,'title','Unapproved top-up title'],[0,'url','/'+l+'/codes/?different=1'],[1,'language','unreviewed'],[0,'keywords',['changed']],[1,'type','wrong'],[2,'description','Unowned change']]){const changed=structuredClone(approved);changed[row][key]=value;assert.throws(()=>Gate.verifyOriginalSearchRows(before,changed,l),/every original search row/,l+' '+row+'.'+key);}const extra=structuredClone(approved);extra[0].unreviewed=true;assert.throws(()=>Gate.verifyOriginalSearchRows(before,extra,l),/every original search row/);}
+});

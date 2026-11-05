@@ -150,27 +150,5 @@
       "artSrcset": "/img/v6/halloween-mobile.webp 768w, /img/events/halloween-2026-original.webp 1536w",
       "thumbnail": "/img/v6/halloween-mobile.webp"
     }
-  ],
-  "codes": [
-    {
-      "code": "THANKS40MLN",
-      "verified": true,
-      "verification": "official-announcement",
-      "redemptionTested": false,
-      "announcedAt": "2026-11-04T09:33:02Z",
-      "endsAt": "2026-11-22T23:59:00Z",
-      "endPrecision": "minute",
-      "endPolicy": "stop-at-start-of-official-end-minute",
-      "officialURL": "https://x.com/TilesSurvive/status/2117912999415443840",
-      "sources": [
-        {
-          "url": "https://cdn.syndication.twimg.com/tweet-result?id=2117912999415443840&lang=en&token=0",
-          "description": "Public first-party X response from TilesSurvive confirms code and November 22, 23:59 UTC expiration. No account redemption was performed.",
-          "checkedAt": "2026-11-05T02:32:43.641Z",
-          "sha256": "455170f7499ef7b614c761b0da567a5b19c338a5e41390d1c6c04264abc53c27",
-          "hashKind": "saved-public-post-extract"
-        }
-      ]
-    }
   ]
 }
