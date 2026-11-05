@@ -3626,6 +3626,34 @@
       "bundleId": 207825,
       "sourceCRC32": 1567323363,
       "losslessPixelEquality": true
+    },
+    "sp_icon_level_upper": {
+      "nativeKey": "sp_icon_level_upper",
+      "src": "/img/nuclear-age/stage-emblem.png",
+      "width": 128,
+      "height": 128,
+      "bytes": 23345,
+      "sha256": "753bedb4690d69e6f1af9aa1b31a291599d2b5e5765c11c262a37f148ed41da0",
+      "sourcePNG_SHA256": "753bedb4690d69e6f1af9aa1b31a291599d2b5e5765c11c262a37f148ed41da0",
+      "sourceBundleSHA256": "8cf0033a7bb0a1e9e33e3063fec72d3026883dbd9771429a875e71bb14380989",
+      "assetId": 61513,
+      "bundleId": 206883,
+      "sourceCRC32": 1473611868,
+      "losslessPixelEquality": true
+    },
+    "sp_city_building_university": {
+      "nativeKey": "sp_city_building_university",
+      "src": "/img/nuclear-age/laboratory.png",
+      "width": 240,
+      "height": 240,
+      "bytes": 66263,
+      "sha256": "72d5079208d500195551d48c7f02ebdf9f976be102fd416ba22734bcb9fdef5a",
+      "sourcePNG_SHA256": "72d5079208d500195551d48c7f02ebdf9f976be102fd416ba22734bcb9fdef5a",
+      "sourceBundleSHA256": "e46d6e749cfedb5f07bfe49d3c9a4d86f189c97dd85f85818d7d30a940e1d2a3",
+      "assetId": 55613,
+      "bundleId": 207824,
+      "sourceCRC32": 3146524485,
+      "losslessPixelEquality": true
     }
   },
   "rewards": [
@@ -3677,5 +3705,919 @@
       "currentDayVerified": false,
       "scoreMultiplier": null
     }
-  ]
+  ],
+  "stageMarker": {
+    "nativeKey": "sp_icon_level_upper",
+    "src": "/img/nuclear-age/stage-emblem.png",
+    "width": 128,
+    "height": 128,
+    "bytes": 23345,
+    "sha256": "753bedb4690d69e6f1af9aa1b31a291599d2b5e5765c11c262a37f148ed41da0",
+    "sourcePNG_SHA256": "753bedb4690d69e6f1af9aa1b31a291599d2b5e5765c11c262a37f148ed41da0",
+    "sourceBundleSHA256": "8cf0033a7bb0a1e9e33e3063fec72d3026883dbd9771429a875e71bb14380989",
+    "assetId": 61513,
+    "bundleId": 206883,
+    "sourceCRC32": 1473611868,
+    "losslessPixelEquality": true
+  },
+  "configuredBuildings": [
+    {
+      "id": 800012,
+      "code": "university",
+      "nameKey": "university_name",
+      "names": {
+        "en": "Lab 1",
+        "ko": "1번 실험실",
+        "ja": "実験室1",
+        "zh-tw": "1號實驗室",
+        "de": "Labor 1",
+        "ru": "Лаборатория 1",
+        "zh-cn": "1号实验室",
+        "ar": "Lab 1",
+        "nl": "Lab 1",
+        "fr": "Labo 1",
+        "id": "Lab 1",
+        "it": "Laboratorio 1",
+        "pl": "Laboratorium 1",
+        "pt": "Laboratório 1",
+        "es": "Laboratorio 1",
+        "sv": "Labb 1",
+        "th": "ห้องปฏิบัติการ 1",
+        "tr": "Lab 1",
+        "vi": "Lab 1",
+        "ms": "Makmal 1",
+        "nb": "Lab 1"
+      },
+      "nameEvidence": {
+        "en": "official-client",
+        "ko": "official-client",
+        "ja": "official-client",
+        "zh-tw": "official-client",
+        "de": "official-client",
+        "ru": "official-client",
+        "zh-cn": "official-client",
+        "ar": "english-fallback",
+        "nl": "official-client",
+        "fr": "official-client",
+        "id": "official-client",
+        "it": "official-client",
+        "pl": "official-client",
+        "pt": "official-client",
+        "es": "official-client",
+        "sv": "official-client",
+        "th": "official-client",
+        "tr": "official-client",
+        "vi": "english-fallback",
+        "ms": "official-client",
+        "nb": "english-fallback"
+      },
+      "nativeImage": "sp_city_building_university",
+      "scope": "verified-client-configured-state-gated-release-not-independently-proven",
+      "image": {
+        "nativeKey": "sp_city_building_university",
+        "src": "/img/nuclear-age/laboratory.png",
+        "width": 240,
+        "height": 240,
+        "bytes": 66263,
+        "sha256": "72d5079208d500195551d48c7f02ebdf9f976be102fd416ba22734bcb9fdef5a",
+        "sourcePNG_SHA256": "72d5079208d500195551d48c7f02ebdf9f976be102fd416ba22734bcb9fdef5a",
+        "sourceBundleSHA256": "e46d6e749cfedb5f07bfe49d3c9a4d86f189c97dd85f85818d7d30a940e1d2a3",
+        "assetId": 55613,
+        "bundleId": 207824,
+        "sourceCRC32": 3146524485,
+        "losslessPixelEquality": true
+      },
+      "stages": [
+        {
+          "sourceId": 507675,
+          "sourceKey": "building_university_30_2",
+          "sequence": 1,
+          "targetNuclearLevel": 1,
+          "step": 1,
+          "level": 30,
+          "rank": 1,
+          "completedNuclearLevel": 0,
+          "nuclearFuel": 40,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501054,
+              "buildingId": 800005,
+              "code": "building_stronghold_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": "building_level_upper_limit_time_33"
+        },
+        {
+          "sourceId": 507676,
+          "sourceKey": "building_university_30_3",
+          "sequence": 2,
+          "targetNuclearLevel": 1,
+          "step": 2,
+          "level": 30,
+          "rank": 2,
+          "completedNuclearLevel": 0,
+          "nuclearFuel": 56,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501054,
+              "buildingId": 800005,
+              "code": "building_stronghold_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507677,
+          "sourceKey": "building_university_30_4",
+          "sequence": 3,
+          "targetNuclearLevel": 1,
+          "step": 3,
+          "level": 30,
+          "rank": 3,
+          "completedNuclearLevel": 0,
+          "nuclearFuel": 72,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501054,
+              "buildingId": 800005,
+              "code": "building_stronghold_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507678,
+          "sourceKey": "building_university_30_5",
+          "sequence": 4,
+          "targetNuclearLevel": 1,
+          "step": 4,
+          "level": 30,
+          "rank": 4,
+          "completedNuclearLevel": 0,
+          "nuclearFuel": 88,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501054,
+              "buildingId": 800005,
+              "code": "building_stronghold_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507679,
+          "sourceKey": "building_university_31_1",
+          "sequence": 5,
+          "targetNuclearLevel": 1,
+          "step": 5,
+          "level": 31,
+          "rank": 0,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 104,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501054,
+              "buildingId": 800005,
+              "code": "building_stronghold_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507680,
+          "sourceKey": "building_university_31_2",
+          "sequence": 6,
+          "targetNuclearLevel": 2,
+          "step": 1,
+          "level": 31,
+          "rank": 1,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 120,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501058,
+              "buildingId": 800005,
+              "code": "building_stronghold_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507681,
+          "sourceKey": "building_university_31_3",
+          "sequence": 7,
+          "targetNuclearLevel": 2,
+          "step": 2,
+          "level": 31,
+          "rank": 2,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 136,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501058,
+              "buildingId": 800005,
+              "code": "building_stronghold_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507682,
+          "sourceKey": "building_university_31_4",
+          "sequence": 8,
+          "targetNuclearLevel": 2,
+          "step": 3,
+          "level": 31,
+          "rank": 3,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 152,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501058,
+              "buildingId": 800005,
+              "code": "building_stronghold_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507683,
+          "sourceKey": "building_university_31_5",
+          "sequence": 9,
+          "targetNuclearLevel": 2,
+          "step": 4,
+          "level": 31,
+          "rank": 4,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 168,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501058,
+              "buildingId": 800005,
+              "code": "building_stronghold_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507684,
+          "sourceKey": "building_university_32_1",
+          "sequence": 10,
+          "targetNuclearLevel": 2,
+          "step": 5,
+          "level": 32,
+          "rank": 0,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 168,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501058,
+              "buildingId": 800005,
+              "code": "building_stronghold_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507685,
+          "sourceKey": "building_university_32_2",
+          "sequence": 11,
+          "targetNuclearLevel": 3,
+          "step": 1,
+          "level": 32,
+          "rank": 1,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 168,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501249,
+              "buildingId": 800005,
+              "code": "building_stronghold_33_1",
+              "level": 33,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507686,
+          "sourceKey": "building_university_32_3",
+          "sequence": 12,
+          "targetNuclearLevel": 3,
+          "step": 2,
+          "level": 32,
+          "rank": 2,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 168,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501249,
+              "buildingId": 800005,
+              "code": "building_stronghold_33_1",
+              "level": 33,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507687,
+          "sourceKey": "building_university_32_4",
+          "sequence": 13,
+          "targetNuclearLevel": 3,
+          "step": 3,
+          "level": 32,
+          "rank": 3,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 168,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501249,
+              "buildingId": 800005,
+              "code": "building_stronghold_33_1",
+              "level": 33,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507688,
+          "sourceKey": "building_university_32_5",
+          "sequence": 14,
+          "targetNuclearLevel": 3,
+          "step": 4,
+          "level": 32,
+          "rank": 4,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 168,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501249,
+              "buildingId": 800005,
+              "code": "building_stronghold_33_1",
+              "level": 33,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507689,
+          "sourceKey": "building_university_33_1",
+          "sequence": 15,
+          "targetNuclearLevel": 3,
+          "step": 5,
+          "level": 33,
+          "rank": 0,
+          "completedNuclearLevel": 3,
+          "nuclearFuel": 168,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501249,
+              "buildingId": 800005,
+              "code": "building_stronghold_33_1",
+              "level": 33,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        }
+      ],
+      "availability": "configured-release-unverified"
+    },
+    {
+      "id": 800168,
+      "code": "university_2",
+      "nameKey": "university_2_name",
+      "names": {
+        "en": "Lab 2",
+        "ko": "2번 실험실",
+        "ja": "実験室2",
+        "zh-tw": "2號實驗室",
+        "de": "Labor 2",
+        "ru": "Лаборатория 2",
+        "zh-cn": "2号实验室",
+        "ar": "Lab 2",
+        "nl": "Lab 2",
+        "fr": "Labo 2",
+        "id": "Lab 2",
+        "it": "Laboratorio 2",
+        "pl": "Laboratorium 2",
+        "pt": "Laboratório 2",
+        "es": "Laboratorio 2",
+        "sv": "Labb 2",
+        "th": "ห้องวิจัย 2",
+        "tr": "2. Laboratuvar",
+        "vi": "Lab 2",
+        "ms": "Makmal 2",
+        "nb": "Lab 2"
+      },
+      "nameEvidence": {
+        "en": "official-client",
+        "ko": "official-client",
+        "ja": "official-client",
+        "zh-tw": "official-client",
+        "de": "official-client",
+        "ru": "official-client",
+        "zh-cn": "official-client",
+        "ar": "english-fallback",
+        "nl": "official-client",
+        "fr": "official-client",
+        "id": "official-client",
+        "it": "official-client",
+        "pl": "official-client",
+        "pt": "official-client",
+        "es": "official-client",
+        "sv": "official-client",
+        "th": "official-client",
+        "tr": "official-client",
+        "vi": "english-fallback",
+        "ms": "official-client",
+        "nb": "english-fallback"
+      },
+      "nativeImage": "sp_city_building_university",
+      "scope": "verified-client-configured-state-gated-release-not-independently-proven",
+      "image": {
+        "nativeKey": "sp_city_building_university",
+        "src": "/img/nuclear-age/laboratory.png",
+        "width": 240,
+        "height": 240,
+        "bytes": 66263,
+        "sha256": "72d5079208d500195551d48c7f02ebdf9f976be102fd416ba22734bcb9fdef5a",
+        "sourcePNG_SHA256": "72d5079208d500195551d48c7f02ebdf9f976be102fd416ba22734bcb9fdef5a",
+        "sourceBundleSHA256": "e46d6e749cfedb5f07bfe49d3c9a4d86f189c97dd85f85818d7d30a940e1d2a3",
+        "assetId": 55613,
+        "bundleId": 207824,
+        "sourceCRC32": 3146524485,
+        "losslessPixelEquality": true
+      },
+      "stages": [
+        {
+          "sourceId": 507735,
+          "sourceKey": "building_university_2_30_2",
+          "sequence": 1,
+          "targetNuclearLevel": 1,
+          "step": 1,
+          "level": 30,
+          "rank": 1,
+          "completedNuclearLevel": 0,
+          "nuclearFuel": 40,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501054,
+              "buildingId": 800005,
+              "code": "building_stronghold_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": "building_level_upper_limit_time_33"
+        },
+        {
+          "sourceId": 507736,
+          "sourceKey": "building_university_2_30_3",
+          "sequence": 2,
+          "targetNuclearLevel": 1,
+          "step": 2,
+          "level": 30,
+          "rank": 2,
+          "completedNuclearLevel": 0,
+          "nuclearFuel": 56,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501054,
+              "buildingId": 800005,
+              "code": "building_stronghold_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507737,
+          "sourceKey": "building_university_2_30_4",
+          "sequence": 3,
+          "targetNuclearLevel": 1,
+          "step": 3,
+          "level": 30,
+          "rank": 3,
+          "completedNuclearLevel": 0,
+          "nuclearFuel": 72,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501054,
+              "buildingId": 800005,
+              "code": "building_stronghold_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507738,
+          "sourceKey": "building_university_2_30_5",
+          "sequence": 4,
+          "targetNuclearLevel": 1,
+          "step": 4,
+          "level": 30,
+          "rank": 4,
+          "completedNuclearLevel": 0,
+          "nuclearFuel": 88,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501054,
+              "buildingId": 800005,
+              "code": "building_stronghold_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507739,
+          "sourceKey": "building_university_2_31_1",
+          "sequence": 5,
+          "targetNuclearLevel": 1,
+          "step": 5,
+          "level": 31,
+          "rank": 0,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 104,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501054,
+              "buildingId": 800005,
+              "code": "building_stronghold_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507740,
+          "sourceKey": "building_university_2_31_2",
+          "sequence": 6,
+          "targetNuclearLevel": 2,
+          "step": 1,
+          "level": 31,
+          "rank": 1,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 120,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501058,
+              "buildingId": 800005,
+              "code": "building_stronghold_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507741,
+          "sourceKey": "building_university_2_31_3",
+          "sequence": 7,
+          "targetNuclearLevel": 2,
+          "step": 2,
+          "level": 31,
+          "rank": 2,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 136,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501058,
+              "buildingId": 800005,
+              "code": "building_stronghold_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507742,
+          "sourceKey": "building_university_2_31_4",
+          "sequence": 8,
+          "targetNuclearLevel": 2,
+          "step": 3,
+          "level": 31,
+          "rank": 3,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 152,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501058,
+              "buildingId": 800005,
+              "code": "building_stronghold_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507743,
+          "sourceKey": "building_university_2_31_5",
+          "sequence": 9,
+          "targetNuclearLevel": 2,
+          "step": 4,
+          "level": 31,
+          "rank": 4,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 168,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501058,
+              "buildingId": 800005,
+              "code": "building_stronghold_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507744,
+          "sourceKey": "building_university_2_32_1",
+          "sequence": 10,
+          "targetNuclearLevel": 2,
+          "step": 5,
+          "level": 32,
+          "rank": 0,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 168,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501058,
+              "buildingId": 800005,
+              "code": "building_stronghold_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507745,
+          "sourceKey": "building_university_2_32_2",
+          "sequence": 11,
+          "targetNuclearLevel": 3,
+          "step": 1,
+          "level": 32,
+          "rank": 1,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 168,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501249,
+              "buildingId": 800005,
+              "code": "building_stronghold_33_1",
+              "level": 33,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507746,
+          "sourceKey": "building_university_2_32_3",
+          "sequence": 12,
+          "targetNuclearLevel": 3,
+          "step": 2,
+          "level": 32,
+          "rank": 2,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 168,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501249,
+              "buildingId": 800005,
+              "code": "building_stronghold_33_1",
+              "level": 33,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507747,
+          "sourceKey": "building_university_2_32_4",
+          "sequence": 13,
+          "targetNuclearLevel": 3,
+          "step": 3,
+          "level": 32,
+          "rank": 3,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 168,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501249,
+              "buildingId": 800005,
+              "code": "building_stronghold_33_1",
+              "level": 33,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507748,
+          "sourceKey": "building_university_2_32_5",
+          "sequence": 14,
+          "targetNuclearLevel": 3,
+          "step": 4,
+          "level": 32,
+          "rank": 4,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 168,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501249,
+              "buildingId": 800005,
+              "code": "building_stronghold_33_1",
+              "level": 33,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507749,
+          "sourceKey": "building_university_2_33_1",
+          "sequence": 15,
+          "targetNuclearLevel": 3,
+          "step": 5,
+          "level": 33,
+          "rank": 0,
+          "completedNuclearLevel": 3,
+          "nuclearFuel": 168,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501249,
+              "buildingId": 800005,
+              "code": "building_stronghold_33_1",
+              "level": 33,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        }
+      ],
+      "availability": "configured-release-unverified"
+    }
+  ],
+  "configuredBuildingScope": {
+    "includedInReleasedTotals": false,
+    "buildingTypeIds": [
+      800012,
+      800168
+    ],
+    "releaseStatus": "not-confirmed-by-current-release-notes"
+  }
 }
