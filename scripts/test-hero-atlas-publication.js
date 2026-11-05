@@ -16,9 +16,13 @@ const byId=new Map(D.heroes.map(x=>[x.id,x])),read=p=>fs.readFileSync(path.join(
 const git=(...args)=>cp.execFileSync('git',args,{cwd:ROOT,encoding:'utf8',maxBuffer:64*1024*1024});
 const fileFor=r=>r.replace(/^\//,'')+'index.html',routeFor=(id,l)=>R.heroes.find(h=>h.id===id).routes[l];
 const sha=x=>crypto.createHash('sha256').update(x).digest('hex');
-// Consent-aware V5 landing events extend this shared runtime. Only its content
-// hash may change on retained pages; original programs and markup still compare.
-const normalizeSharedHash=html=>html.replace(/(\/js\/v3-affiliate\.js\?v=)[a-f0-9]{12}/g,'$1REVIEWED-HASH');
+// V6 may add only its reviewed presentation assets/root flags. Validate the
+// exact current owner before stripping it; keep all content, models and ads.
+// Consent-aware landing events also update this one shared runtime's hash.
+const normalizeSharedHash=(html,sourceFile)=>{
+ if(/data-v6-system|TS_V6_SYSTEM_BEGIN/.test(html)){const d=doc(html),canonical=new URL(d.querySelector('link[rel="canonical"]').href);assert.equal(canonical.origin,'https://tilessurvive.net');const route=sourceFile?'/'+sourceFile.replace(/index\.html$/,''):canonical.pathname,locale=route.split('/')[1];html=require('./v4-release-gate').stripReviewedPresentation(html,locale,route,ROOT);}
+ return html.replace(/(\/js\/v3-affiliate\.js\?v=)[a-f0-9]{12}/g,'$1REVIEWED-HASH');
+};
 const oldRoutes=R.heroes.filter(x=>x.id!=='lava'&&byId.has(x.id)).flatMap(x=>locales.map(l=>({id:x.id,locale:l,route:x.routes[l],file:fileFor(x.routes[l])})));
 const hubs=locales.map(l=>({locale:l,route:`/${l}/heroes/`,file:`${l}/heroes/index.html`}));
 const baseline=new Map();
@@ -136,7 +140,7 @@ test('Lucky and Sarge explicitly scope their preserved legacy skill and stat tab
  for(const l of locales){const note=GUIDE.locales[l].ui.promotionStats;assert(typeof note==='string'&&note.includes('SSR'),l+' promoted-table notice missing');for(const id of ['lucky','sarge']){const d=doc(read(fileFor(routeFor(id,l)))),profile=d.getElementById('hero-atlas-profile');assert(profile.textContent.includes(note),l+':'+id+' retained SSR table scope absent');assert.equal(profile.textContent.split(note).length-1,1,l+':'+id+' duplicated notice');}const chef=doc(read(fileFor(routeFor('chef-ken',l))));assert(!chef.getElementById('hero-atlas-profile').textContent.includes(note),l+' notice incorrectly applied to base SR tables');}
 });
 test('representative projector calls are pure, idempotent and reject forged managed content',()=>{
- const V4=require('./v4-workbench-content'),project=(html,l,r)=>V4.project(B.project(html,l,r),l,r);
+ const V4=require('./v4-workbench-content'),V6=require('./build-v6-system'),project=(html,l,r)=>V6.project(V4.project(B.project(html,l,r),l,r),l,r);
  for(const l of locales){for(const r of [`/${l}/heroes/`,routeFor('lucky',l),routeFor('kiron',l),routeFor('lava',l)]){const original=read(fileFor(r));V4.validateOwnership(original,l,r);const projected=project(original,l,r);assert.equal(sha(projected),sha(original),r+' generated output stale');assert.equal(sha(project(projected,l,r)),sha(projected),r+' not idempotent');assert.doesNotThrow(()=>B.validateOwnership(projected,l,r));assert.doesNotThrow(()=>V4.validateOwnership(projected,l,r));assert.equal(doc(projected).querySelectorAll('[data-v4-owned="navigation"]').length,r===`/${l}/heroes/`?1:0);}}
  const l=locales[0],r=`/${l}/heroes/`,original=read(fileFor(r)),bad=original.replace('data-client-hero-id="25300242"','data-client-hero-id="99999999"');assert.notEqual(bad,original);assert.throws(()=>B.validateOwnership(bad,l,r));assert.equal(B.project('<html>unrelated</html>',l,`/${l}/buildings/`),'<html>unrelated</html>');
 });
@@ -148,9 +152,16 @@ test('unrelated tracked HTML and existing non-search game data remain unchanged 
  for(const file of sharedRefresh){const html=read(file),locale=file.split('/')[0],route='/'+file.replace(/index\.html$/,'');assert(allLocales.includes(locale),file+' unreviewed route');
   // Most global refreshes change only this one hash. Byte equality after that
   // exact substitution is stronger and much faster than reparsing every page.
-  if(normalizeSharedHash(html)===normalizeSharedHash(before(file))){for(const m of html.matchAll(/\/js\/v3-affiliate\.js\?v=([a-f0-9]{12})/g))assert.equal(m[1],affiliateHash,file+' stale affiliate hash');continue;}
-  V3.validateOwnership(html,locale,route);assert.equal(doc(normalizeSharedHash(V3.strip(html))).documentElement.outerHTML,doc(normalizeSharedHash(V3.strip(before(file)))).documentElement.outerHTML,file+' unowned HTML changed');for(const n of doc(html).querySelectorAll('[data-v3-owned="assets"]')){const url=new URL(n.getAttribute('src')||n.getAttribute('href'),'https://tilessurvive.net');assert.equal(url.searchParams.get('v'),sha(fs.readFileSync(path.join(ROOT,url.pathname.slice(1)))).slice(0,12),file+' stale shared asset');}}
+  if(normalizeSharedHash(html,file)===normalizeSharedHash(before(file),file)){for(const m of html.matchAll(/\/js\/v3-affiliate\.js\?v=([a-f0-9]{12})/g))assert.equal(m[1],affiliateHash,file+' stale affiliate hash');continue;}
+  V3.validateOwnership(html,locale,route);assert.equal(doc(normalizeSharedHash(V3.strip(html),file)).documentElement.outerHTML,doc(normalizeSharedHash(V3.strip(before(file)),file)).documentElement.outerHTML,file+' unowned HTML changed');for(const n of doc(html).querySelectorAll('[data-v3-owned="assets"]')){const url=new URL(n.getAttribute('src')||n.getAttribute('href'),'https://tilessurvive.net');assert.equal(url.searchParams.get('v'),sha(fs.readFileSync(path.join(ROOT,url.pathname.slice(1)))).slice(0,12),file+' stale shared asset');}}
  const newModels=new Set(['data/hero-growth-profiles.json','data/v5-landing-copy.json','data/xssr-detail-copy.json','data/xssr-details.json','data/xssr-presentation.json','data/xssr-skill-values.json','data/xssr-heroes.json','data/xssr-copy.json','data/xssr-lava-growth.json','data/hero-guide-copy.json','data/hero-guide-presentation.json','data/hero-atlas-client.json','data/hero-atlas-copy.json','data/hero-atlas-publication.json','data/hero-atlas-routes.json','data/hero-atlas-search-legacy.json','data/client-image-evidence.json','data/hero-pet-relations.json','data/hero-pet-copy.json','data/v4-formation.json','data/v4-formation-copy.json','data/v4-economy.json','data/v4-economy-copy.json','data/v4-workbench-copy.json','data/v4-provenance.json']);
+ // Same narrow contract as test-ten-benefits-copy: only the 21 requested
+ // closing sentences may differ from the deployed TEN source, never policy,
+ // amounts or any other affiliate field. Do not broadly allow that whole file.
+ const tenPrior=JSON.parse(git('show','8a7c777d20b34acfa3068699dd888cef6b6ad38a:data/v3-affiliate-copy.json')),tenCurrent=JSON.parse(read('data/v3-affiliate-copy.json'));
+ assert.equal(tenCurrent.locales.ko.tenHistoryCaveat,'많이 이용해 주실수록 더욱 풍성한 보상과 혜택으로 보답하겠습니다.');
+ for(const l of allLocales){assert.equal(typeof tenCurrent.locales[l].tenHistoryCaveat,'string');assert(tenCurrent.locales[l].tenHistoryCaveat.trim());tenCurrent.locales[l].tenHistoryCaveat=tenPrior.locales[l].tenHistoryCaveat;}
+ assert.deepEqual(tenCurrent,tenPrior,'Only approved TEN closing copy may change');newModels.add('data/v3-affiliate-copy.json');
  const changedData=git('diff','--name-only',BASELINE,'--','data').trim().split(/\r?\n/).filter(Boolean);assert.deepEqual(changedData.filter(f=>!newModels.has(f)&&!/^data\/(?:search\/[a-z-]+\.json|v3-search\/[a-z-]+\.json|search-index\.json)$/.test(f)),[],'Existing source/game data changed');
  const newFiles=git('ls-files','--others','--exclude-standard').trim().split(/\r?\n/).filter(Boolean);assert.deepEqual(newFiles.filter(f=>/normalized-complete-v1|authorized-decryption|decoded-language|ingame-apk-|full-client-evidence|\.(?:apk|aab|bundle|bytes|jsonl)$/i.test(f)),[],'Full retained client material entered public worktree');
  for(const file of newModels){const model=read(file);assert(!/(?:[A-Z]:[\\/]|\\\\Users\\|\/Users\/)/.test(model),file+' private absolute path leaked');}
@@ -183,7 +194,7 @@ test('new atlas assets have current content hashes and baseline public tracking 
   // Windows. Compare its Git clean-filter blob, not an OS checkout newline.
   if(p==='robots.txt')assert.equal(git('hash-object','--path',p,p).trim(),git('rev-parse',BASELINE+':'+p).trim(),p+' repository content changed');
   else if(p==='js/v3-affiliate.js'){
-   const old=before(p),now=read(p),constant=(s,name)=>s.match(new RegExp('  var '+name+' = [^\\n]+'))?.[0],fn=(s,name)=>s.match(new RegExp('  function '+name+'\\([^]*?\\n  \\}'))?.[0];
+   const old=before(p).replace(/\r\n/g,'\n'),now=read(p).replace(/\r\n/g,'\n'),constant=(s,name)=>s.match(new RegExp('  var '+name+' = [^\\n]+'))?.[0],fn=(s,name)=>s.match(new RegExp('  function '+name+'\\([^]*?\\n  \\}'))?.[0];
    for(const name of ['TEN','KEY','GA_ID','APPROVED_IDS','requestedIds','idsValid','gaIds','LOCALES','FEATURES','ACTIONS']){assert(constant(old,name),name);assert.equal(constant(now,name),constant(old,name),name+' tracking invariant changed');}
    for(const name of ['language','pageType','safePath','sourceCategory','production','base','startGA','send','kind','stop','start','updateControls','setConsent','scan']){assert(fn(old,name),name);assert.equal(fn(now,name),fn(old,name),name+' consent/tracking behavior changed');}
    for(const event of ['page_view','topup_guide_view','affiliate_viewable','v3_feature_use','lootbar_outbound_click','free_progress_open','topup_guide_open'])assert(now.includes("'"+event+"'"),event+' base event removed');assert(now.includes("measurement_version: 'v3.1'"));assert(now.includes("document.querySelector('[data-v5-home]')"));

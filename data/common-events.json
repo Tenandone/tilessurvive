@@ -1,0 +1,176 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-11-05T02:32:43.641Z",
+  "reviewSchedule": {
+    "weekday": "MO",
+    "timeZone": "Asia/Seoul",
+    "hour": 9,
+    "minute": 17
+  },
+  "events": [
+    {
+      "id": "halloween2026",
+      "verified": true,
+      "startsAt": "2026-10-26T00:00:00Z",
+      "endsAt": "2026-11-08T23:59:00Z",
+      "endPrecision": "minute",
+      "endPolicy": "stop-at-start-of-official-end-minute",
+      "officialURL": "https://ts-halloween-web.funplus.com/",
+      "scope": "global-participants",
+      "goal": 2000000,
+      "art": "/img/events/halloween-2026-original.webp",
+      "milestones": [
+        {
+          "threshold": 500000,
+          "reward": "gems",
+          "quantity": 1000
+        },
+        {
+          "threshold": 1000000,
+          "reward": "lucky",
+          "quantity": 1
+        },
+        {
+          "threshold": 1500000,
+          "reward": "cell",
+          "quantity": 10
+        },
+        {
+          "threshold": 2000000,
+          "reward": "speedup",
+          "quantity": 10,
+          "durationMinutes": 60
+        }
+      ],
+      "tasks": [
+        {
+          "id": "login",
+          "cadence": "daily",
+          "attempts": 1,
+          "optionalPurchase": false
+        },
+        {
+          "id": "share",
+          "cadence": "daily",
+          "attempts": 1,
+          "optionalPurchase": false
+        },
+        {
+          "id": "store",
+          "cadence": "daily",
+          "attempts": 1,
+          "optionalPurchase": false,
+          "requiresEventPageLink": true
+        },
+        {
+          "id": "purchase",
+          "cadence": "daily",
+          "attempts": 1,
+          "optionalPurchase": true,
+          "inGameCashPurchase": true
+        },
+        {
+          "id": "social",
+          "cadence": "once-per-channel",
+          "attempts": 1,
+          "optionalPurchase": false,
+          "channels": 10
+        },
+        {
+          "id": "invite",
+          "cadence": "once-per-threshold",
+          "attempts": 1,
+          "optionalPurchase": false,
+          "thresholds": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27,
+            28,
+            29,
+            30
+          ]
+        }
+      ],
+      "dailyResetUTC": "00:00",
+      "unclaimedDailyAttemptsExpire": true,
+      "claimedAttemptsCarryUntilEventEnd": true,
+      "mailValidityDays": 30,
+      "mailUnlockRequired": true,
+      "milestoneDistributionBusinessDays": 15,
+      "minimumLightings": 1,
+      "uidLoginRequired": true,
+      "purchaseRequired": false,
+      "sources": [
+        {
+          "url": "https://ts-halloween-web.funplus.com/",
+          "description": "Official event page and its referenced public rules, task, prize-pool and milestone configuration.",
+          "checkedAt": "2026-11-05T02:32:43.641Z",
+          "sha256": "7c17c6b9dce6705c87fc80d4f2d6f2d7eaf959ca6907030f120d37e1f8655a50",
+          "hashKind": "raw-response"
+        },
+        {
+          "url": "https://ts-halloween-web.funplus.com/assets/index-2aa61ca9.js",
+          "description": "Public event UI bundle: 20 localized rule sets, UTC period, daily reset, eligibility and reward definitions.",
+          "checkedAt": "2026-11-05T02:32:43.641Z",
+          "sha256": "c72c428014bf9e509fd9082abdc3eb8f46b508c19941a4931f05f5904135f983",
+          "hashKind": "raw-response"
+        },
+        {
+          "url": "https://x.com/TilesSurvive/status/2114664614545776878",
+          "description": "Official announcement dated 2026-10-26; its public X syndication response confirms both UTC event dates.",
+          "checkedAt": "2026-11-05T02:32:43.641Z",
+          "sha256": "49b8524a868d5eae267723536fa7b8cd0eb0b13eb7bdc466f302b0f9b9f02a25",
+          "hashKind": "saved-public-post-extract"
+        }
+      ],
+      "artSrcset": "/img/v6/halloween-mobile.webp 768w, /img/events/halloween-2026-original.webp 1536w",
+      "thumbnail": "/img/v6/halloween-mobile.webp"
+    }
+  ],
+  "codes": [
+    {
+      "code": "THANKS40MLN",
+      "verified": true,
+      "verification": "official-announcement",
+      "redemptionTested": false,
+      "announcedAt": "2026-11-04T09:33:02Z",
+      "endsAt": "2026-11-22T23:59:00Z",
+      "endPrecision": "minute",
+      "endPolicy": "stop-at-start-of-official-end-minute",
+      "officialURL": "https://x.com/TilesSurvive/status/2117912999415443840",
+      "sources": [
+        {
+          "url": "https://cdn.syndication.twimg.com/tweet-result?id=2117912999415443840&lang=en&token=0",
+          "description": "Public first-party X response from TilesSurvive confirms code and November 22, 23:59 UTC expiration. No account redemption was performed.",
+          "checkedAt": "2026-11-05T02:32:43.641Z",
+          "sha256": "455170f7499ef7b614c761b0da567a5b19c338a5e41390d1c6c04264abc53c27",
+          "hashKind": "saved-public-post-extract"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "schemaVersion": 1,
+  "checkedAt": "2026-11-05T02:37:11.833Z",
+  "sources": [
+    {
+      "id": "halloween-page",
+      "url": "https://ts-halloween-web.funplus.com/",
+      "kind": "event-page",
+      "status": "ok",
+      "semanticSha256": "97198a65f0cfdb1364d3de083395cd7f4b46e6f5d14a91f18d6ceed460e74037",
+      "semantic": {
+        "articles": []
+      }
+    },
+    {
+      "id": "official-home",
+      "url": "https://tilesurvivegame.com/",
+      "kind": "news-page",
+      "status": "ok",
+      "semanticSha256": "743f57d631b6814dcf4256a8b5c021135f5df460d4a25c34acdd0e6f05fcfdde",
+      "semantic": {
+        "articles": []
+      }
+    },
+    {
+      "id": "official-news",
+      "url": "https://tilesurvivegame.com/en/list",
+      "kind": "news-page",
+      "status": "ok",
+      "semanticSha256": "b67f5152d2d30e05e8a9aad49eee0d7167e3ab567820c90afa8fda7c295563d7",
+      "semantic": {
+        "articles": [
+          "https://tilesurvivegame.com/en/blog/1008",
+          "https://tilesurvivegame.com/en/blog/1017",
+          "https://tilesurvivegame.com/en/blog/1035",
+          "https://tilesurvivegame.com/en/blog/1047",
+          "https://tilesurvivegame.com/en/blog/1055",
+          "https://tilesurvivegame.com/en/blog/1062",
+          "https://tilesurvivegame.com/en/blog/1078",
+          "https://tilesurvivegame.com/en/blog/1086",
+          "https://tilesurvivegame.com/en/blog/1093",
+          "https://tilesurvivegame.com/en/blog/1100",
+          "https://tilesurvivegame.com/en/blog/1107",
+          "https://tilesurvivegame.com/en/blog/1114",
+          "https://tilesurvivegame.com/en/blog/1121",
+          "https://tilesurvivegame.com/en/blog/1134",
+          "https://tilesurvivegame.com/en/blog/1173",
+          "https://tilesurvivegame.com/en/blog/1181",
+          "https://tilesurvivegame.com/en/blog/1188",
+          "https://tilesurvivegame.com/en/blog/1198",
+          "https://tilesurvivegame.com/en/blog/1206",
+          "https://tilesurvivegame.com/en/blog/1213",
+          "https://tilesurvivegame.com/en/blog/800",
+          "https://tilesurvivegame.com/en/blog/807",
+          "https://tilesurvivegame.com/en/blog/814",
+          "https://tilesurvivegame.com/en/blog/821",
+          "https://tilesurvivegame.com/en/blog/828",
+          "https://tilesurvivegame.com/en/blog/835",
+          "https://tilesurvivegame.com/en/blog/842",
+          "https://tilesurvivegame.com/en/blog/849",
+          "https://tilesurvivegame.com/en/blog/868",
+          "https://tilesurvivegame.com/en/blog/883",
+          "https://tilesurvivegame.com/en/blog/890",
+          "https://tilesurvivegame.com/en/blog/899",
+          "https://tilesurvivegame.com/en/blog/906",
+          "https://tilesurvivegame.com/en/blog/947",
+          "https://tilesurvivegame.com/en/blog/954",
+          "https://tilesurvivegame.com/en/blog/961",
+          "https://tilesurvivegame.com/en/blog/968",
+          "https://tilesurvivegame.com/en/blog/975",
+          "https://tilesurvivegame.com/en/blog/983"
+        ]
+      }
+    },
+    {
+      "id": "halloween-script-1",
+      "url": "https://ts-halloween-web.funplus.com/assets/index-2aa61ca9.js",
+      "kind": "event-script",
+      "status": "ok",
+      "semanticSha256": "ea3d7432c49739271be4360fd127785a71a40f2a9fd0ae25ef531217e346a461"
+    }
+  ]
+}

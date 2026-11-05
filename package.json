@@ -82,7 +82,10 @@
     "test:client-reanalysis": "node --test scripts/test-hero-pet-relations.js scripts/test-hero-pet-pages.js scripts/test-client-release-gate.js",
     "test:v4": "node --test scripts/test-v4-*.js scripts/client-audit/test_v4_compare.cjs",
     "test:xssr": "node --test scripts/test-xssr.js scripts/test-xssr-lava-data.js scripts/test-xssr-details.js scripts/test-xssr-skill-values.js scripts/test-xssr-detail-content.js scripts/test-xssr-formation.js",
-    "test:v5": "node --test scripts/test-v5-landing.js scripts/test-v3-affiliate.js"
+    "test:v5": "node --test scripts/test-v5-landing.js scripts/test-v3-affiliate.js",
+    "postbuild:hero-atlas": "node scripts/build-v6-system.js",
+    "build:v6": "node scripts/build-v5-landing.js && node scripts/build-v6-system.js",
+    "test:v6": "node --test scripts/test-v6-landing.js scripts/test-v6-system.js scripts/test-common-events.js scripts/test-ten-benefits-copy.js"
   },
   "keywords": [],
   "author": "",

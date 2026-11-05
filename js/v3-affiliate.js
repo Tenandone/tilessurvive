@@ -11,8 +11,10 @@
   var LOCALES = new Set(['en','ko','ja','zh-tw','de','ru','zh-cn','ar','nl','fr','id','it','pl','pt','es','sv','th','tr','vi','ms','nb']);
   var FEATURES = new Set(['calculator','power_plant','calendar','search','home','tools','topup','content']);
   var PLACEMENTS = new Set(['guide','result','header','footer','banner','content','landing_top','landing_bottom']);
-  var LANDING_SECTIONS = new Set(['dashboard','missions','duel','scores','guides','codes','heroes','pets','factions','glossary','simulators','tools','events','news','topup']);
+  var LANDING_SECTIONS = new Set(['dashboard','missions','duel','scores','guides','codes','heroes','pets','factions','glossary','simulators','tools','events','news','topup','common_event','event_official','event_guide','event_rules','event_schedule','planner','bookmark','score_preview','score_planner','coupon']);
   var ACTIONS = new Set(['result','save','restore','clear','select','open','change']);
+  var LANDING_ACTIONS = new Set(Array.from(ACTIONS).concat(['view','copy','previous','next']));
+  function uiVersion(){var home=document.querySelector('[data-v5-home]');return home&&home.getAttribute('data-ui-version')==='v6'?'v6':'v5';}
   var consent = false, gaReady = false, pageSent = new Set(), guideSent = false, landingSent = false;
   try { consent = window.localStorage.getItem(KEY) === 'granted'; } catch (_) {}
   function language() {
@@ -96,7 +98,7 @@
       if (!pageSent.has(id) && send('page_view', null, id)) pageSent.add(id);
     });
     if (!guideSent && document.querySelector('[data-v3-guide]') && send('topup_guide_view', {feature: 'topup'})) guideSent = true;
-    if (!landingSent && document.querySelector('[data-v5-home]') && send('landing_view', {ui_version:'v5'})) landingSent = true;
+    if (!landingSent && document.querySelector('[data-v5-home]') && send('landing_view', {ui_version:uiVersion()})) landingSent = true;
   }
   function kind(anchor) {
     if (!anchor) return '';
@@ -113,7 +115,7 @@
     var placement = anchor.dataset.v3Placement || (anchor.classList.contains('ts-lootbar') ? 'banner' : 'content');
     var feature = anchor.dataset.v3Feature || pageType();
     var result={placement: PLACEMENTS.has(placement) ? placement : 'content', feature: FEATURES.has(feature) ? feature : 'content', destination_type: kind(anchor), creative_type: anchor.classList.contains('ts-lootbar') ? 'banner' : 'text_link'};
-    if(document.querySelector('[data-v5-home]'))result.ui_version='v5';
+    if(document.querySelector('[data-v5-home]'))result.ui_version=uiVersion();
     return result;
   }
   var seen = new WeakSet(), observed = new WeakSet(), timers = new Map(), ratios = new Map(), observer;
@@ -156,8 +158,8 @@
       return send('v3_feature_use', {feature: feature, action: action});
     },
     trackLanding: function (action, section) {
-      if(!document.querySelector('[data-v5-home]')||!ACTIONS.has(action)||!LANDING_SECTIONS.has(section))return false;
-      return send('landing_use',{ui_version:'v5',action:action,section:section});
+      if(!document.querySelector('[data-v5-home]')||!LANDING_ACTIONS.has(action)||!LANDING_SECTIONS.has(section))return false;
+      return send('landing_use',{ui_version:uiVersion(),action:action,section:section});
     }
   });
   document.addEventListener('click', function (event) {

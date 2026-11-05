@@ -1,0 +1,148 @@
+{
+  "date": "2026-11-05",
+  "libraries": [
+    {
+      "name": "embla-carousel",
+      "version": "8.6.0",
+      "license": "MIT",
+      "source": "https://github.com/davidjerleke/embla-carousel",
+      "runtimeBytes": 17946,
+      "gzipBytes": 7156
+    },
+    {
+      "name": "lucide-static",
+      "version": "1.68.0",
+      "license": "ISC",
+      "source": "https://github.com/lucide-icons/lucide",
+      "selectedSVGs": 29,
+      "runtimeJavaScriptBytes": 0
+    }
+  ],
+  "generatedArt": {
+    "path": "/img/events/halloween-2026-original.webp",
+    "width": 1536,
+    "height": 1024,
+    "bytes": 191270,
+    "source": "Original image generated with built-in imagegen. Not an official game screenshot.",
+    "prompt": "Original wide cinematic Halloween woodland survival settlement at twilight; glowing jack-o-lanterns at right, dark negative space at left, teal/violet/amber, no existing game characters, logos, text or reward items."
+  },
+  "optimizedMedia": [
+    {
+      "source": "/img/game-26300/heroes/furiosa.png",
+      "sourceSHA256": "e7bd147af34a13c58d4e8d0f76560a7ca10458de761d8c5fdd2940557f4feb41",
+      "path": "/img/v6/furiosa.webp",
+      "sha256": "a99a886f810fdd746f57d0ee5beefb13f47ef43a65cd3a3f46ba5a6d00be50bb",
+      "width": 327,
+      "height": 448,
+      "bytes": 31512
+    },
+    {
+      "source": "/img/game-26300/heroes/alita.png",
+      "sourceSHA256": "79ba9f9bdb3f502a2a59860bb60f64390ddb98c19809fc4be11edd9c464df476",
+      "path": "/img/v6/alita.webp",
+      "sha256": "11bfbfcbd89769dfb885a00527b4d1a0f075e1e3438449d07356fc033643afb9",
+      "width": 395,
+      "height": 448,
+      "bytes": 30886
+    },
+    {
+      "source": "/img/game-41/heroes/lava.png",
+      "sourceSHA256": "bee07232e2d8419294186d535633e6dc0ca493fb7b04988ddfc836b386b63ee2",
+      "path": "/img/v6/lava.webp",
+      "sha256": "93afa6929256f90c4e92169a63e4a912f843866fd460c58d5b8f5c4ff9afa29e",
+      "width": 529,
+      "height": 448,
+      "bytes": 41840
+    },
+    {
+      "source": "/img/game-41/heroes/sarge.webp",
+      "sourceSHA256": "a9a8d83ee4d0ac6a04a152f8bdd69227080d70ba4400082699aa762c6ba25cdc",
+      "path": "/img/v6/sarge.webp",
+      "sha256": "1f1e2ce6f7fbead5efcf858432b95f01c27c30f2ae898fad01499895321d19f5",
+      "width": 244,
+      "height": 448,
+      "bytes": 25562
+    },
+    {
+      "source": "/img/game-41/heroes/lucky.webp",
+      "sourceSHA256": "f8b8bdfb44294e42d4314cc034b407daccea8ab3d13b5e63dcc9a4003ea0b00e",
+      "path": "/img/v6/lucky.webp",
+      "sha256": "1e9523e57ce1084fe1c744eace9d733d83e58409dbe8191d974c35d65e646d7c",
+      "width": 244,
+      "height": 448,
+      "bytes": 23470
+    },
+    {
+      "source": "/img/game-40/pets/fluffy.webp",
+      "sourceSHA256": "c3fd4467860bd3f66025ec4a7e94a44e42aeab7aa67caa5bc0e5a717029558a9",
+      "path": "/img/v6/fluffy.webp",
+      "sha256": "6b579c8f8c81c833e76832778c244dedc6c6e63af99bde1e6183a3c3a86c89ff",
+      "width": 328,
+      "height": 448,
+      "bytes": 17374
+    },
+    {
+      "source": "/img/buildings/barracks.png",
+      "sourceSHA256": "df220fa8b814dfa9ef49fd17eabd9ffd2b8618ce477b921fb9e730f14083da57",
+      "path": "/img/v6/barracks.webp",
+      "sha256": "31225f62f92e25053ecf2e5fff041ae54a1fa901f111bf65e2301c422b3c05a0",
+      "width": 406,
+      "height": 448,
+      "bytes": 19686
+    },
+    {
+      "source": "/img/guides/beginner-guide.png",
+      "sourceSHA256": "0cfc5b716737bddf57e9c3d39869f237615227e50f19e9e50bffc5747a15ab91",
+      "path": "/img/v6/beginner.webp",
+      "sha256": "8b04144c92189daeedcdad0fea8fe193ed6e5d2654a655b32bc5d434269f6192",
+      "width": 376,
+      "height": 374,
+      "bytes": 11472
+    },
+    {
+      "source": "/img/banners/official-world.webp",
+      "sourceSHA256": "713413bf1064e9633e23e1f9f49dbbc3bbd81d303856572aecdc5f79a922f279",
+      "path": "/img/v6/world.webp",
+      "sha256": "a3249edc0961ee012742a7dd5ef0a1ebf04db344e2120650bdb750039b4e0036",
+      "width": 640,
+      "height": 360,
+      "bytes": 25394
+    },
+    {
+      "source": "/img/home/guides.png",
+      "sourceSHA256": "911de7cefb6ad89bdab054dfbd0be07688c11cbc871b53c64079b9fd8727f4ee",
+      "path": "/img/v6/guides.webp",
+      "sha256": "b99ca68177b05162e2ebbd5ca6e3d0c778123c819f831e3caf496c20bd5d47cd",
+      "width": 256,
+      "height": 256,
+      "bytes": 9150
+    },
+    {
+      "source": "/img/home/database.png",
+      "sourceSHA256": "44501f578de81f519091f1c61819b9ee82b0d361f7553246598548aea987b4dd",
+      "path": "/img/v6/database.webp",
+      "sha256": "33af3783dc881d24f2d713f3e4be22dd6f090f7aab58918830bd521bf9e3ec8b",
+      "width": 256,
+      "height": 256,
+      "bytes": 8254
+    },
+    {
+      "source": "/img/home/calculator.png",
+      "sourceSHA256": "80b50c67b35d2e8d4bf7dfa1caf895edcbcddaac53c92908f13302b43849145f",
+      "path": "/img/v6/calculator.webp",
+      "sha256": "ed9a7af449698dc5d0d3fbd96701a0ba7eb3561ebef3df87e58026c0a52d5a62",
+      "width": 256,
+      "height": 256,
+      "bytes": 6180
+    },
+    {
+      "source": "/img/events/halloween-2026-original.webp",
+      "sourceSHA256": "ca9692ed778078075642505a581b8955c6e2f47d694ea7815759803b99c2caf3",
+      "path": "/img/v6/halloween-mobile.webp",
+      "sha256": "cbff1548ef4fda922cbd26965f6c5d4b819a2d7e2c2c9fb0881bfa01ded29417",
+      "width": 768,
+      "height": 512,
+      "bytes": 51522
+    }
+  ]
+}

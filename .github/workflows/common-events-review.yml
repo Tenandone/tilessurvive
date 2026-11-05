@@ -1,0 +1,37 @@
+name: Review official common events
+
+on:
+  workflow_dispatch:
+  schedule:
+    # Monday 09:17 Asia/Seoul (UTC+09:00).
+    - cron: '17 0 * * 1'
+
+permissions:
+  contents: read
+
+jobs:
+  review:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - name: Install parser dependency
+        run: npm ci --ignore-scripts
+      - name: Check the monitor
+        run: node --test scripts/test-common-events.js
+      - name: Download and compare official public sources
+        run: node scripts/check-common-events.js --baseline .github/common-events-baseline.json --output "$RUNNER_TEMP/common-events-review.json"
+      - name: Keep review evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: common-events-review-${{ github.run_id }}
+          path: ${{ runner.temp }}/common-events-review.json
+          if-no-files-found: error
+          retention-days: 30

@@ -219,6 +219,10 @@ function localizePage(source, locale, group, groups, translator) {
   return document;
 }
 function enhance(document, locale, group, available, ui, {preview=false}={}) {
+  // The shared runtime is inserted before the first deferred script. Remove
+  // V6's two owned asset tags first so that insertion can never land inside
+  // the V6 marker block and be removed by its final projection below.
+  for(const asset of document.querySelectorAll('[data-v6-owned="system-assets"]'))asset.remove();
   repairContextualHeroNames(document,locale,group);
   const retired={
     'heroes/legend-gear-star/':'database/legend-gear-star/',
@@ -281,9 +285,16 @@ function enhance(document, locale, group, available, ui, {preview=false}={}) {
   }
   if(!document.querySelector('link[href="/css/global-locales.css"]')){const css=document.createElement('link');css.rel='stylesheet';css.href='/css/global-locales.css';document.head.append(css);}
   if(preview) {
-    let robots=document.querySelector('meta[name="robots"]');if(!robots){robots=document.createElement('meta');robots.name='robots';document.head.append(robots);}robots.content='noindex,nofollow';
+    // V3 intentionally skips public enhancement on noindex pages. Staging still
+    // needs its reviewed content owners, so apply preview indexing protection
+    // after projection; an inherited preview flag must not erase those blocks.
+    document.querySelector('meta[name="robots"]')?.remove();
     document.documentElement.dataset.translationStatus='preview-unpublished';
   }
+  // Canonicalize managed alternate-link placement after newly added runtime
+  // metadata as well. A fresh page and its subsequent rebuild then serialize
+  // identically without changing a URL, hreflang or executable script order.
+  for(const alternate of document.querySelectorAll('link[rel="alternate"][hreflang]'))document.head.append(alternate);
   const serialized='<!doctype html>\n'+document.documentElement.outerHTML+'\n';
   let projected=document.documentElement.hasAttribute('data-v3-platform')?require('./build-v3-platform').project(serialized,locale,group.routes[locale]):serialized;
   if(document.querySelector('main')&&/^\/[^/]+\/heroes\//.test(group.routes[locale])){
@@ -292,7 +303,12 @@ function enhance(document, locale, group, available, ui, {preview=false}={}) {
   }
   if(/^\/[^/]+\/database\/pet-system\//.test(group.routes[locale]))projected=require('./build-hero-pet-pages').project(projected,locale);
   projected=require('./v4-workbench-content').project(projected,locale,group.routes[locale]);
-  return group.id===''&&document.querySelector('[data-v5-home]')?require('./build-v5-landing').project(projected,locale):projected;
+  if(group.id===''&&document.querySelector('[data-v5-home]'))projected=require('./build-v5-landing').project(projected,locale);
+  if(preview){const staged=parseHTML(projected).document;let robots=staged.querySelector('meta[name="robots"]');if(!robots){robots=staged.createElement('meta');robots.name='robots';staged.head.append(robots);}robots.content='noindex,nofollow';projected='<!doctype html>\n'+staged.documentElement.outerHTML+'\n';}
+  // Older feature owners append their assets. Finalize presentation last so
+  // every supported route, including a newly localized page, has one fresh V6
+  // bundle after the retained feature styles. This never rewrites page data.
+  return require('./build-v6-system').project(projected,locale,group.routes[locale]);
 }
 function build({locales,stage=STAGE,publish=false}={}) {
   const groups=L.routeGroups(), targets=locales||L.registry.locales.filter(x=>!L.existing.has(x.code)).map(x=>x.code);

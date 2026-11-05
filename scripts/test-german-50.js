@@ -38,6 +38,21 @@ function ownedBuildingProjection(d,lang,slug,route){
 for(const route of routes){
  const source=fs.readFileSync(path.join(R,'en',route),'utf8');
  const en=parseHTML(source).document,de=parseHTML(G.render(source,translate,route)).document;
+ // The current homepage has an independent 21-language owner, just like the
+ // Power Plant owner below. Its native DE table labels are not inherited EN
+ // lexemes. Verify the complete reviewed output, all model scalars and every
+ // control bound before removing only that owner from the generic cell test.
+ if(route==='index.html'&&en.querySelector('[data-v5-home]')){
+  const home=require('./build-v5-landing'),fields=n=>['name','type','value','min','max','step'].map(a=>n.getAttribute(a));
+  const a=en.querySelector('[data-v5-home]'),b=de.querySelector('[data-v5-home]');assert(b,'DE homepage owner retained');
+  for(const [lang,host]of [['en',a],['de',b]])eq(host.outerHTML,parseHTML(home.render(lang)).document.querySelector('[data-v5-home]').outerHTML,'exact reviewed homepage owner '+lang);
+  const ac=JSON.parse(a.querySelector('[data-v5-config]').textContent),bc=JSON.parse(b.querySelector('[data-v5-config]').textContent);
+  eq(typed(bc.profiles),typed(ac.profiles),'homepage source numeric/boolean/null profiles');eq(bc.commonEvents,ac.commonEvents,'homepage exact event identities, dates, rewards and rules');
+  eq([...b.querySelectorAll('input,select option')].map(fields),[...a.querySelectorAll('input,select option')].map(fields),'homepage exact control values and bounds');
+  eq([...b.querySelectorAll('img')].map(n=>n.getAttribute('src')),[...a.querySelectorAll('img')].map(n=>n.getAttribute('src')),'homepage media sources');
+  const affiliate=host=>[...host.querySelectorAll('a[href*="lootbar"]')].map(n=>[n.href,n.rel,n.getAttribute('data-v3-placement')]);eq(affiliate(b),affiliate(a),'homepage exact TEN links and tracking placements');
+  a.remove();b.remove();
+ }
  const buildingSlug=/^buildings\/([^/]+)\/index\.html$/.exec(route)?.[1];
  if(route==='buildings/index.html'&&en.documentElement.hasAttribute('data-building-system-catalog')){
   for(const [lang,d] of [['en',en],['de',de]]){
@@ -77,7 +92,16 @@ for(const route of routes){
  }
  eq(de.documentElement.lang,'de',route+' language');
  const ec=[...en.querySelectorAll('td')],dc=[...de.querySelectorAll('td')];eq(ec.length,dc.length,route+' cells');
- ec.forEach((e,i)=>{eq(W.sourceValue(dc[i]),e.textContent.trim(),route+' raw cell '+i);cells++;
+ ec.forEach((e,i)=>{
+  const payout=e.querySelector('data[data-ten-package-cents]');
+  if(route==='top-up/index.html'&&payout){
+   const target=dc[i].querySelector('data[data-ten-package-cents]'),month=e.closest('[data-ten-history]')?.getAttribute('data-ten-history'),history=require('../data/ten-benefits-policy.json').history.find(h=>h.month===month),cents=Number(payout.getAttribute('value'));
+   assert(history&&history.currency==='USD'&&history.status==='paid','reviewed TEN payout currency and month');assert(history.packages.some(p=>p.faceValueCents===cents),'reviewed TEN package amount');assert(target,'native DE payout data retained');
+   eq(target.getAttribute('value'),payout.getAttribute('value'),'TEN original face value cents');
+   const money=language=>new Intl.NumberFormat(language,{style:'currency',currency:history.currency,currencyDisplay:'code',minimumFractionDigits:2,maximumFractionDigits:2}).format(cents/100);
+   eq(payout.textContent,money('en'),'TEN EN currency display');eq(target.textContent,money('de'),'TEN DE currency display');cells++;return;
+  }
+  eq(W.sourceValue(dc[i]),e.textContent.trim(),route+' raw cell '+i);cells++;
   const s=e.textContent.trim();if(/^[+−-]?[\d,.]+(?:%|[KMB])?$/.test(s))eq(dc[i].textContent.trim(),G.germanNumbers(s,s),route+' displayed numeric cell '+i);
  });
  const attrs=n=>['name','type','value','min','max','step'].map(a=>n.getAttribute(a));

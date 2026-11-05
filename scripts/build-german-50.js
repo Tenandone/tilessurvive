@@ -196,10 +196,14 @@ function render(source, translate, route) {
     // The established renderer also accepts small translation-only fragments.
     // Atlas projection requires a page; owned malformed pages already fail the
     // source validator above rather than silently bypassing the owner.
-    if(route.startsWith('heroes/')&&parseHTML(projected).document.querySelector('main')){const atlas=require('./build-hero-atlas');if(atlas.isOwnedRoute(target))projected=atlas.project(projected,'de',target);}
+    const heroDocument=route.startsWith('heroes/')?parseHTML(projected).document:null;
+    if(heroDocument?.querySelector('main')&&heroDocument.querySelector('.ts3-character-stage,[data-hero-atlas],[data-hero-atlas-owned]')){const atlas=require('./build-hero-atlas');if(atlas.isOwnedRoute(target))projected=atlas.project(projected,'de',target);}
     if(route.startsWith('database/pet-system/'))projected=require('./build-hero-pet-pages').project(projected,'de');
     projected=require('./v4-workbench-content').project(projected,'de',target);
-    return route==='index.html'&&projected.includes('data-v5-home')?require('./build-v5-landing').project(projected,'de'):projected;
+    if(route==='index.html'&&projected.includes('data-v5-home'))projected=require('./build-v5-landing').project(projected,'de');
+    // V6 owns only its asset block/root flags; translation-only fragments are
+    // left intact while real pages receive the same final style order.
+    return require('./build-v6-system').project(projected,'de',target);
   };
   // The retained Undine skill_2 key supersedes this page's old editorial name.
   // Accept the corrected EN source on subsequent builds without teaching the

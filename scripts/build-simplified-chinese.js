@@ -322,7 +322,8 @@ function localizePage(source,group,groups,{converter=createConverter(),router=ma
     assert.deepEqual([...document.querySelectorAll('img,iframe,video,source')].map(e=>e.getAttribute('src')),beforeMedia,'Media changed: '+sourceFile);
     assert.deepEqual([...document.querySelectorAll('[href],[src]')].flatMap(e=>['href','src'].filter(a=>/^https?:/.test(e.getAttribute(a)||'')&&!e.getAttribute(a).startsWith(L.publicOrigin)).map(a=>[e.tagName,a,e.getAttribute(a)])),protectedExternal,'External services or ads changed: '+sourceFile);
     const features=featurePayloads(document,convert,router.route);
-    const html=enhance(document,TARGET,group,available,{...ui,featureCopies:{...features,...ui.featureCopies}},{preview:true});
+    const enhanced=enhance(document,TARGET,group,available,{...ui,featureCopies:{...features,...ui.featureCopies}},{preview:true});
+    const html=require('./build-v6-system').project(enhanced,TARGET,group.routes[TARGET]);
     return {html,sourceFile,numericJSONLeaves,protectedPrograms,localizedPrograms,ids:beforeIds.length,media:beforeMedia.length,featureCopies:Object.keys(features)};
 }
 function build() {
