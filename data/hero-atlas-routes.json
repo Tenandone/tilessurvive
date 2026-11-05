@@ -3858,6 +3858,316 @@
           "height": 712
         }
       }
+    },
+    {
+      "id": "furiosa",
+      "clientId": null,
+      "routes": {
+        "en": "/en/heroes/furiosa/",
+        "ko": "/ko/heroes/furiosa/",
+        "ja": "/ja/heroes/furiosa/",
+        "zh-tw": "/zh-tw/heroes/furiosa/",
+        "de": "/de/heroes/furiosa/",
+        "ru": "/ru/heroes/furiosa/",
+        "zh-cn": "/zh-cn/heroes/furiosa/",
+        "ar": "/ar/heroes/furiosa/",
+        "nl": "/nl/heroes/furiosa/",
+        "fr": "/fr/heroes/furiosa/",
+        "id": "/id/heroes/furiosa/",
+        "it": "/it/heroes/furiosa/",
+        "pl": "/pl/heroes/furiosa/",
+        "pt": "/pt/heroes/furiosa/",
+        "es": "/es/heroes/furiosa/",
+        "sv": "/sv/heroes/furiosa/",
+        "th": "/th/heroes/furiosa/",
+        "tr": "/tr/heroes/furiosa/",
+        "vi": "/vi/heroes/furiosa/",
+        "ms": "/ms/heroes/furiosa/",
+        "nb": "/nb/heroes/furiosa/"
+      },
+      "images": {
+        "en": {
+          "src": "/img/official-xssr/furiosa.jpg",
+          "width": 1080,
+          "height": 1080,
+          "kind": "official-announcement-art"
+        },
+        "ko": {
+          "src": "/img/official-xssr/furiosa.jpg",
+          "width": 1080,
+          "height": 1080,
+          "kind": "official-announcement-art"
+        },
+        "ja": {
+          "src": "/img/official-xssr/furiosa.jpg",
+          "width": 1080,
+          "height": 1080,
+          "kind": "official-announcement-art"
+        },
+        "zh-tw": {
+          "src": "/img/official-xssr/furiosa.jpg",
+          "width": 1080,
+          "height": 1080,
+          "kind": "official-announcement-art"
+        },
+        "de": {
+          "src": "/img/official-xssr/furiosa.jpg",
+          "width": 1080,
+          "height": 1080,
+          "kind": "official-announcement-art"
+        },
+        "ru": {
+          "src": "/img/official-xssr/furiosa.jpg",
+          "width": 1080,
+          "height": 1080,
+          "kind": "official-announcement-art"
+        },
+        "zh-cn": {
+          "src": "/img/official-xssr/furiosa.jpg",
+          "width": 1080,
+          "height": 1080,
+          "kind": "official-announcement-art"
+        },
+        "ar": {
+          "src": "/img/official-xssr/furiosa.jpg",
+          "width": 1080,
+          "height": 1080,
+          "kind": "official-announcement-art"
+        },
+        "nl": {
+          "src": "/img/official-xssr/furiosa.jpg",
+          "width": 1080,
+          "height": 1080,
+          "kind": "official-announcement-art"
+        },
+        "fr": {
+          "src": "/img/official-xssr/furiosa.jpg",
+          "width": 1080,
+          "height": 1080,
+          "kind": "official-announcement-art"
+        },
+        "id": {
+          "src": "/img/official-xssr/furiosa.jpg",
+          "width": 1080,
+          "height": 1080,
+          "kind": "official-announcement-art"
+        },
+        "it": {
+          "src": "/img/official-xssr/furiosa.jpg",
+          "width": 1080,
+          "height": 1080,
+          "kind": "official-announcement-art"
+        },
+        "pl": {
+          "src": "/img/official-xssr/furiosa.jpg",
+          "width": 1080,
+          "height": 1080,
+          "kind": "official-announcement-art"
+        },
+        "pt": {
+          "src": "/img/official-xssr/furiosa.jpg",
+          "width": 1080,
+          "height": 1080,
+          "kind": "official-announcement-art"
+        },
+        "es": {
+          "src": "/img/official-xssr/furiosa.jpg",
+          "width": 1080,
+          "height": 1080,
+          "kind": "official-announcement-art"
+        },
+        "sv": {
+          "src": "/img/official-xssr/furiosa.jpg",
+          "width": 1080,
+          "height": 1080,
+          "kind": "official-announcement-art"
+        },
+        "th": {
+          "src": "/img/official-xssr/furiosa.jpg",
+          "width": 1080,
+          "height": 1080,
+          "kind": "official-announcement-art"
+        },
+        "tr": {
+          "src": "/img/official-xssr/furiosa.jpg",
+          "width": 1080,
+          "height": 1080,
+          "kind": "official-announcement-art"
+        },
+        "vi": {
+          "src": "/img/official-xssr/furiosa.jpg",
+          "width": 1080,
+          "height": 1080,
+          "kind": "official-announcement-art"
+        },
+        "ms": {
+          "src": "/img/official-xssr/furiosa.jpg",
+          "width": 1080,
+          "height": 1080,
+          "kind": "official-announcement-art"
+        },
+        "nb": {
+          "src": "/img/official-xssr/furiosa.jpg",
+          "width": 1080,
+          "height": 1080,
+          "kind": "official-announcement-art"
+        }
+      }
+    },
+    {
+      "id": "alita",
+      "clientId": null,
+      "routes": {
+        "en": "/en/heroes/alita/",
+        "ko": "/ko/heroes/alita/",
+        "ja": "/ja/heroes/alita/",
+        "zh-tw": "/zh-tw/heroes/alita/",
+        "de": "/de/heroes/alita/",
+        "ru": "/ru/heroes/alita/",
+        "zh-cn": "/zh-cn/heroes/alita/",
+        "ar": "/ar/heroes/alita/",
+        "nl": "/nl/heroes/alita/",
+        "fr": "/fr/heroes/alita/",
+        "id": "/id/heroes/alita/",
+        "it": "/it/heroes/alita/",
+        "pl": "/pl/heroes/alita/",
+        "pt": "/pt/heroes/alita/",
+        "es": "/es/heroes/alita/",
+        "sv": "/sv/heroes/alita/",
+        "th": "/th/heroes/alita/",
+        "tr": "/tr/heroes/alita/",
+        "vi": "/vi/heroes/alita/",
+        "ms": "/ms/heroes/alita/",
+        "nb": "/nb/heroes/alita/"
+      },
+      "images": {
+        "en": {
+          "src": "/img/official-xssr/alita.jpg",
+          "width": 1080,
+          "height": 1080,
+          "kind": "official-announcement-art"
+        },
+        "ko": {
+          "src": "/img/official-xssr/alita.jpg",
+          "width": 1080,
+          "height": 1080,
+          "kind": "official-announcement-art"
+        },
+        "ja": {
+          "src": "/img/official-xssr/alita.jpg",
+          "width": 1080,
+          "height": 1080,
+          "kind": "official-announcement-art"
+        },
+        "zh-tw": {
+          "src": "/img/official-xssr/alita.jpg",
+          "width": 1080,
+          "height": 1080,
+          "kind": "official-announcement-art"
+        },
+        "de": {
+          "src": "/img/official-xssr/alita.jpg",
+          "width": 1080,
+          "height": 1080,
+          "kind": "official-announcement-art"
+        },
+        "ru": {
+          "src": "/img/official-xssr/alita.jpg",
+          "width": 1080,
+          "height": 1080,
+          "kind": "official-announcement-art"
+        },
+        "zh-cn": {
+          "src": "/img/official-xssr/alita.jpg",
+          "width": 1080,
+          "height": 1080,
+          "kind": "official-announcement-art"
+        },
+        "ar": {
+          "src": "/img/official-xssr/alita.jpg",
+          "width": 1080,
+          "height": 1080,
+          "kind": "official-announcement-art"
+        },
+        "nl": {
+          "src": "/img/official-xssr/alita.jpg",
+          "width": 1080,
+          "height": 1080,
+          "kind": "official-announcement-art"
+        },
+        "fr": {
+          "src": "/img/official-xssr/alita.jpg",
+          "width": 1080,
+          "height": 1080,
+          "kind": "official-announcement-art"
+        },
+        "id": {
+          "src": "/img/official-xssr/alita.jpg",
+          "width": 1080,
+          "height": 1080,
+          "kind": "official-announcement-art"
+        },
+        "it": {
+          "src": "/img/official-xssr/alita.jpg",
+          "width": 1080,
+          "height": 1080,
+          "kind": "official-announcement-art"
+        },
+        "pl": {
+          "src": "/img/official-xssr/alita.jpg",
+          "width": 1080,
+          "height": 1080,
+          "kind": "official-announcement-art"
+        },
+        "pt": {
+          "src": "/img/official-xssr/alita.jpg",
+          "width": 1080,
+          "height": 1080,
+          "kind": "official-announcement-art"
+        },
+        "es": {
+          "src": "/img/official-xssr/alita.jpg",
+          "width": 1080,
+          "height": 1080,
+          "kind": "official-announcement-art"
+        },
+        "sv": {
+          "src": "/img/official-xssr/alita.jpg",
+          "width": 1080,
+          "height": 1080,
+          "kind": "official-announcement-art"
+        },
+        "th": {
+          "src": "/img/official-xssr/alita.jpg",
+          "width": 1080,
+          "height": 1080,
+          "kind": "official-announcement-art"
+        },
+        "tr": {
+          "src": "/img/official-xssr/alita.jpg",
+          "width": 1080,
+          "height": 1080,
+          "kind": "official-announcement-art"
+        },
+        "vi": {
+          "src": "/img/official-xssr/alita.jpg",
+          "width": 1080,
+          "height": 1080,
+          "kind": "official-announcement-art"
+        },
+        "ms": {
+          "src": "/img/official-xssr/alita.jpg",
+          "width": 1080,
+          "height": 1080,
+          "kind": "official-announcement-art"
+        },
+        "nb": {
+          "src": "/img/official-xssr/alita.jpg",
+          "width": 1080,
+          "height": 1080,
+          "kind": "official-announcement-art"
+        }
+      }
     }
   ]
 }

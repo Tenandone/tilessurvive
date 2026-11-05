@@ -4,14 +4,33 @@ const {parseHTML}=require('linkedom'),G=require('./client-release-gate'),B=requi
 const root=path.resolve(__dirname,'..'),read=f=>fs.readFileSync(path.join(root,f),'utf8');
 const registry=require('../data/i18n/locales.json').locales,groups=require('./lib/global-localization').routeGroups();
 const data=require('../data/hero-atlas-client.json'),publication=require('../data/hero-atlas-publication.json'),routes=require('../data/hero-atlas-routes.json');
+const introductions=require('../data/xssr-heroes.json');
 test('reviewed client rows and release decisions remain separate; new or unheld rows fail closed',()=>{
  assert.equal(G.validatePublication(data,publication,routes).held,6);
  const extra=structuredClone(data);extra.heroes.push({...extra.heroes[0],id:'unverified',clientId:999});assert.throws(()=>G.validatePublication(extra,publication,routes),/publication review/);
  const released=structuredClone(publication);released.heldForms.pop();assert.throws(()=>G.validatePublication(data,released,routes),/Promotion release policy/);
  const fabricated=structuredClone(publication);fabricated.newPublished[0].releaseEvidence=['https://example.org/guide'];assert.throws(()=>G.validatePublication(data,fabricated,routes),/official evidence/);
 });
-test('all 21 current home and Lava pages retain reciprocal language navigation and exact current-page maps',()=>{
- for(const group of groups.filter(g=>['','heroes/lava/'].includes(g.id)))for(const locale of registry){const route=group.routes[locale.code];assert(G.validateDocument(read(route.slice(1)+'index.html'),{locale:locale.code,route,routes:group.routes,registry}));}
+
+test('official introductions authorize localized routes without becoming client records or universal releases',()=>{
+ const extra=G.officialAdditions(data,routes,introductions);assert.deepEqual(extra.map(h=>h.id),['furiosa','alita']);assert(extra.every(h=>h.clientId===null));
+ assert.equal(G.validatePublication(data,publication,routes,introductions).catalogIdentities,31);
+ assert.equal(G.reviewedSitemap().added.length,42);assert.equal(new Set(G.reviewedSitemap().expected).size,G.reviewedSitemap().expected.length);
+ const fake=structuredClone(introductions);fake.heroes.find(h=>h.id==='furiosa').clientId=999;assert.throws(()=>G.officialAdditions(data,routes,fake),/fabricate a client/);
+ const released=structuredClone(introductions);released.heroes.find(h=>h.id==='alita').release.universalUnlock=true;assert.throws(()=>G.officialAdditions(data,routes,released),/server eligibility/);
+ const thirdParty=structuredClone(introductions);thirdParty.heroes.find(h=>h.id==='furiosa').release.sources=['https://tilesmania.com/ko/heroes'];assert.throws(()=>G.officialAdditions(data,routes,thirdParty),/official evidence/);
+ const wrong=structuredClone(routes);wrong.heroes.find(h=>h.id==='alita').routes.fr='/fr/heroes/furiosa/';assert.throws(()=>G.officialAdditions(data,wrong,introductions),/route shape/);
+ const missing=structuredClone(introductions);delete missing.heroes.find(h=>h.id==='alita').names.fr;assert.throws(()=>G.officialAdditions(data,routes,missing),/hero name/);
+ const undeclared=structuredClone(routes);undeclared.heroes.push({id:'unreviewed',routes:{}});assert.throws(()=>G.officialAdditions(data,undeclared,introductions),/reviewed identity routes/);
+});
+test('official introductions cannot enter calculation models or display fabricated client IDs and private paths',()=>{
+ assert.deepEqual(G.validateOfficialIsolation(root),{officialPages:42,calculationIdentities:29,officialGameplayRows:0});
+ const formation=structuredClone(require('../data/v4-formation.json'));formation.heroes.push({...formation.heroes[0],id:'furiosa',clientId:null});assert.throws(()=>G.validateOfficialIsolation(root,{formation}),/verified client identities/);
+ const relations=structuredClone(require('../data/hero-pet-relations.json'));relations.rules.push({...relations.rules[0],heroId:'alita'});assert.throws(()=>G.validateOfficialIsolation(root,{relations}),/unsupported pairing/);
+ for(const insert of ['<span data-client-skill-id="999999">Invented skill</span>','<p>C:\\Users\\private\\decoded-language</p>'])assert.throws(()=>G.validateOfficialIsolation(root,{readPage:file=>read(file).replace('<h1>',''+insert+'<h1>')}),/masquerade|Private client/);
+});
+test('all 21 current home and X-SSR pages retain reciprocal language navigation and exact current-page maps',()=>{
+ for(const group of groups.filter(g=>['','heroes/lava/','heroes/furiosa/','heroes/alita/'].includes(g.id)))for(const locale of registry){const route=group.routes[locale.code];assert(G.validateDocument(read(route.slice(1)+'index.html'),{locale:locale.code,route,routes:group.routes,registry}));}
 });
 test('a six-language finalizer regression, stale route map and copied managed TOC all block publication',()=>{
  const group=groups.find(g=>g.id===''),route=group.routes.en,html=read('en/index.html'),options={locale:'en',route,routes:group.routes,registry};

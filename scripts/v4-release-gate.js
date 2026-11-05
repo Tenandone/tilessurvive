@@ -3,21 +3,23 @@ const fs=require('fs'),path=require('path'),cp=require('child_process'),assert=r
 const V4=require('./v4-workbench-content'),Search=require('./build-v4-search'),BASE='fe4d8d394b5f4e0624ac8e8be15864e5de5e00b8',ROOT=path.resolve(__dirname,'..');
 const lf=s=>s.replaceAll('\r\n','\n');
 function baseline(files,root){const b=cp.execFileSync('git',['cat-file','--batch'],{cwd:root,input:files.map(f=>BASE+':'+f).join('\n')+'\n',maxBuffer:100e6});let at=0;return new Map(files.map(f=>{const end=b.indexOf(10,at),m=/^[a-f0-9]+ blob (\d+)$/.exec(b.subarray(at,end).toString());assert(m,'Missing baseline '+f);at=end+1;const s=b.subarray(at,at+Number(m[1])).toString();at+=Number(m[1])+1;return [f,s];}));}
-function validate(root=ROOT){const codes=require(path.join(root,'data/i18n/locales.json')).locales.map(l=>l.code),files=codes.flatMap(c=>Object.keys(V4.routes).map(r=>c+'/'+r+'index.html')),old=baseline([...files,...codes.map(c=>'data/search/'+c+'.json'),'sitemap.xml','robots.txt'],root);let owners=0;
+function validate(root=ROOT){const codes=require(path.join(root,'data/i18n/locales.json')).locales.map(l=>l.code),files=codes.flatMap(c=>Object.keys(V4.routes).map(r=>c+'/'+r+'index.html')),old=baseline([...files,...codes.map(c=>'data/search/'+c+'.json'),'sitemap.xml','robots.txt'],root),atlas=require('./build-hero-atlas-search').atlasRoutes(root);let owners=0;
 for(const file of files){const current=fs.readFileSync(path.join(root,file),'utf8'),locale=file.split('/')[0],route='/'+file.replace(/index\.html$/,'');V4.validateOwnership(current,locale,route);assert.equal(lf(V4.strip(current)),lf(route.endsWith('/heroes/')?require('./build-hero-atlas').project(old.get(file),locale,route):route.endsWith('/database/pet-system/')?require('./build-hero-pet-pages').project(old.get(file),locale):old.get(file)),file+' exact preserved surrounding content');const d=parseHTML(current).document;assert(d.querySelector('[data-v4-owned]'),file+' owner missing');assert.equal(V4.project(current,locale,route),current,file+' idempotent');if(V4.kindFor(route)==='workspace'){assert.equal(d.querySelectorAll('[role="tab"]').length,3);for(const [key,src]of Object.entries(JSON.parse(d.querySelector('[data-v4-config]').textContent).models))assert(fs.existsSync(path.join(root,src.split('?')[0].slice(1))),key+' model');}owners++;}
-for(const file of ['sitemap.xml','robots.txt'])assert.equal(lf(fs.readFileSync(path.join(root,file),'utf8')),lf(old.get(file)),file+' unchanged');
-let search=0;
+assert.equal(lf(fs.readFileSync(path.join(root,'robots.txt'),'utf8')),lf(old.get('robots.txt')),'robots.txt unchanged');
+const sitemap=[...fs.readFileSync(path.join(root,'sitemap.xml'),'utf8').matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1]);assert.deepEqual(sitemap.slice().sort(),require('./client-release-gate').reviewedSitemap(root).expected.sort(),'Only reviewed official hero sitemap additions');
+let search=0,addedSearchRecords=0;
 for(const c of codes){
  const f='data/search/'+c+'.json',before=JSON.parse(old.get(f)).items,after=JSON.parse(fs.readFileSync(path.join(root,f),'utf8')).items;
  const expected=before.map(row=>{
   const anchor=['lava-skills','lava-growth'].find(id=>row.url==='/'+c+'/heroes/lava/#'+id);
-  if(!anchor)return row;
+  if(!anchor){if(!atlas.has(row.url))return row;const d=parseHTML(fs.readFileSync(path.join(root,row.url.slice(1),'index.html'),'utf8')).document,clean=v=>v.replace(/\s+/gu,' ').trim();return {...row,title:clean(d.querySelector('title').textContent),description:clean(d.querySelector('meta[name="description"]').getAttribute('content'))};}
   const d=parseHTML(fs.readFileSync(path.join(root,c,'heroes/lava/index.html'),'utf8')).document,section=d.getElementById(anchor),clean=v=>v.replace(/\s+/gu,' ').trim();
   assert(section,'Lava search anchor missing');
   return {...row,title:clean(section.querySelector('h2').textContent),description:clean(section.querySelector('p').textContent)};
  });
  assert.deepEqual(after.slice(0,before.length),expected,c+' every original search row, with only reviewed Lava section snippets');
- assert.deepEqual(after.slice(before.length),Search.records(c),c+' only reviewed V4 records');search+=after.length;
+ const official=[...atlas].filter(([,r])=>r.locale===c&&r.hero.catalogKind==='official-introduction').map(([url])=>{const d=parseHTML(fs.readFileSync(path.join(root,url.slice(1),'index.html'),'utf8')).document,clean=v=>v.replace(/\s+/gu,' ').trim();return {language:c,type:'heroe',title:clean(d.querySelector('title').textContent),description:clean(d.querySelector('meta[name="description"]').getAttribute('content')),url};});
+ const additions=[...Search.records(c),...official];assert.deepEqual(after.slice(before.length),additions,c+' only reviewed V4 and official hero records');search+=after.length;addedSearchRecords+=additions.length;
 }
-assert.equal(search,9301);return {status:'PASS',locales:codes.length,pages:owners,newURLs:0,searchRecords:search,addedSearchRecords:63};}
+assert.equal(search,9238+addedSearchRecords);return {status:'PASS',locales:codes.length,pages:owners,newURLs:require('./client-release-gate').reviewedSitemap(root).added.length,searchRecords:search,addedSearchRecords};}
 module.exports={BASE,baseline,validate};if(require.main===module)console.log(JSON.stringify(validate()));

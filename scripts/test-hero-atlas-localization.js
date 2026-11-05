@@ -12,14 +12,14 @@ const readSource=(id,locale='en')=>{const g=groupFor(id),route=g.routes[locale],
 const ownerSnapshot=document=>[...document.querySelectorAll('[data-hero-atlas-owned]')].filter(n=>!n.parentElement?.closest('[data-hero-atlas-owned]')).map(n=>n.outerHTML);
 function originalNumbers(document){const out={};for(const n of document.querySelectorAll('script[type="application/json"]')){if(n.closest('[data-hero-atlas-owned],[data-v3-owned]')||['ts-global-ui','ts-locale-routes'].includes(n.id))continue;const values=[];const visit=(v,p)=>{if(typeof v==='number'||v===null||typeof v==='boolean'||typeof v==='string'&&/^-?\d+(?:\.\d+)?$/.test(v))values.push([p,v]);else if(Array.isArray(v))v.forEach((x,i)=>visit(x,p+'.'+i));else if(v&&typeof v==='object')for(const k of Object.keys(v).sort())visit(v[k],p+'.'+k);};visit(JSON.parse(n.textContent),'$');if(values.length)out[n.id||n.outerHTML.match(/data-[\w-]+/)?.[0]]=values;}return out;}
 function checkOutput(html,locale,id){const g=groupFor(id),d=parseHTML(html).document;A.validateOwnership(html,locale,g.routes[locale]);V4.validateOwnership(html,locale,g.routes[locale]);assert.equal(projectComplete(html,locale,g.routes[locale]),html,'Atlas + exact V4 lifecycle idempotence '+locale+' '+id);assert.equal(d.querySelectorAll('[data-v4-owned="navigation"]').length,id==='heroes/'?1:0);if(id==='heroes/')assert.equal(d.querySelector('[data-v4-owned="navigation"] a').getAttribute('href'),'/'+locale+'/tools/#v4-formation');assert(d.querySelector('[data-hero-atlas-owned]'));assert.equal(d.querySelector('link[rel="canonical"]').href,L.publicOrigin+g.routes[locale]);
- if(id==='heroes/'){const cfg=JSON.parse(d.querySelector('[data-atlas-config]').textContent);assert.equal(cfg.locale,locale);assert.equal(d.querySelectorAll('.hero-atlas-card').length,35);assert.equal(d.querySelectorAll('.hero-atlas-card[data-publication="published"]').length,29);assert.equal(d.querySelectorAll('.hero-atlas-card[data-publication="held"]').length,6);assert.equal(d.querySelectorAll('.hero-item').length,0);assert.equal(d.querySelectorAll('[data-character-empty]').length,0);}
+ if(id==='heroes/'){const cfg=JSON.parse(d.querySelector('[data-atlas-config]').textContent);assert.equal(cfg.locale,locale);assert.equal(d.querySelectorAll('.hero-atlas-card').length,37);assert.equal(d.querySelectorAll('.hero-atlas-card[data-publication="published"]').length,31);assert.equal(d.querySelectorAll('.hero-atlas-card[data-publication="held"]').length,6);assert.equal(d.querySelectorAll('.hero-item').length,0);assert.equal(d.querySelectorAll('[data-character-empty]').length,0);}
  for(const n of d.querySelectorAll('script[type="application/ld+json"][data-hero-atlas-owned]')){const x=JSON.parse(n.textContent);if(x['@type']==='WebPage'){assert.equal(x.url,L.publicOrigin+g.routes[locale]);assert.equal(x.inLanguage,L.byCode.get(locale).htmlLang);}if(x['@type']==='BreadcrumbList')for(const row of x.itemListElement||[]){const value=typeof row.item==='string'?row.item:row.item?.['@id'];if(value){const url=new URL(value,L.publicOrigin);assert(url.pathname==='/'||url.pathname.startsWith('/'+locale+'/'),'Localized breadcrumb '+locale+' '+id+' '+value);}}}
  return d;
 }
 
-test('the canonical route manifest preserves the exact 120 old groups and permits only the reviewed Lava addition',()=>{
+test('the canonical route manifest preserves the exact 120 old groups and permits only reviewed X-SSR introductions',()=>{
  assert(CN.validateRouteManifest(groups));assert.throws(()=>CN.validateRouteManifest(groups.filter(g=>g.id!=='heroes/lava/')),/reviewed|Missing/);
- const wrong=groups.map(g=>g.id==='heroes/lava/'?{...g,id:'heroes/alita/'}:g);assert.throws(()=>CN.validateRouteManifest(wrong),/Lava/);
+ const wrong=groups.map(g=>g.id==='heroes/lava/'?{...g,id:'heroes/alita/'}:g);assert.throws(()=>CN.validateRouteManifest(wrong),/Lava|Duplicate/);
  const renamed=groups.map(g=>g.id==='heroes/sarge/'?{...g,id:'heroes/other/'}:g);assert.throws(()=>CN.validateRouteManifest(renamed),/original 120/);
  assert.throws(()=>CN.validateRouteManifest([...groups,groups[0]]),/Duplicate/);
 });
@@ -63,11 +63,11 @@ test('the V3 build lifecycle reapplies the atlas without a recursive npm hook',(
  assert(!/npm\s+run\s+build:v3/.test(scripts['build:hero-atlas']));
 });
 
-test('in-memory V3 regeneration preserves all 630 reviewed atlas outputs and every original numeric model',()=>{
+test('in-memory V3 regeneration preserves all 672 reviewed atlas outputs and every original numeric model',()=>{
  const P=require('./build-v3-platform');let count=0;
  const digest=value=>crypto.createHash('sha256').update(value).digest('hex');
  const comparable=html=>{const blocks=html.match(/<!-- TS_V3_ASSETS_BEGIN -->[\s\S]*?<!-- TS_V3_ASSETS_END -->/g);assert.equal(blocks?.length,1,'exactly one reviewed V3 asset block');return parseHTML(html.replace(blocks[0],'').replace('</head>',blocks[0]+'</head>')).document.toString();};
- const owned=groups.filter(g=>A.isOwnedRoute(g.routes.en));assert.equal(owned.length,30);
+ const owned=groups.filter(g=>A.isOwnedRoute(g.routes.en));assert.equal(owned.length,32);
  for(const group of owned)for(const locale of codes){
   const route=group.routes[locale],source=fs.readFileSync(path.join(ROOT,route.slice(1),'index.html'),'utf8'),before=parseHTML(source).document;
   A.validateOwnership(source,locale,route);V4.validateOwnership(source,locale,route);
@@ -82,7 +82,7 @@ test('in-memory V3 regeneration preserves all 630 reviewed atlas outputs and eve
   assert.equal(digest(comparable(final)),digest(comparable(source)),locale+' '+group.id+' full content after the approved lifecycle');
   assert.equal(digest(projectComplete(P.project(final,locale,route),locale,route)),digest(final),locale+' '+group.id+' subsequent complete lifecycle byte-idempotence');count++;
  }
- assert.equal(count,630);
+ assert.equal(count,672);
 });
 test('all localization entry points reject forged V4 navigation while preserving exact atlas and numeric owners',()=>{
  for(const sourceLocale of ['en','zh-tw']){const g=groupFor('heroes/'),d=parseHTML(readSource('heroes/',sourceLocale)).document,link=d.querySelector('[data-v4-owned="navigation"] a');assert(link);link.setAttribute('href','https://unreviewed.invalid/');const bad=d.toString();if(sourceLocale==='en'){assert.throws(()=>G.localizePage(bad,'fr',g,groups,L.createTranslator('fr',G.catalogFor('fr'))),/V4/);assert.throws(()=>DE.render(bad,x=>x,'heroes/index.html'),/V4/);}else assert.throws(()=>CN.localizePage(bad,g,groups),/V4/);}

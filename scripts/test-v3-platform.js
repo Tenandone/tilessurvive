@@ -105,7 +105,7 @@ function verifyManifest(d,locale,route,file){
   const atlas=Atlas.isOwnedRoute(route),hub=rel==='heroes/',atlasCSS=[...d.querySelectorAll('link[rel="stylesheet"]')].filter(n=>n.getAttribute('href').split('?')[0]==='/css/hero-atlas.css'),atlasJS=scripts.filter(n=>n.getAttribute('src').split('?')[0]==='/js/hero-atlas.js');
   assert.equal(atlasCSS.length,+atlas,file+' atlas styles only on approved hero routes');assert.equal(atlasJS.length,+hub,file+' atlas runtime only on hubs');
   if(atlas){assert(d.querySelector('[data-hero-atlas-owned]'),file+' reviewed atlas owner');assert.equal(atlasCSS[0].getAttribute('href'),'/css/hero-atlas.css?v='+sha(fs.readFileSync(path.join(ROOT,'css/hero-atlas.css'))).slice(0,12));}
-  if(hub){assert.equal(atlasJS[0].getAttribute('src'),'/js/hero-atlas.js?v='+sha(fs.readFileSync(path.join(ROOT,'js/hero-atlas.js'))).slice(0,12));assert(atlasJS[0].hasAttribute('defer'));assert.equal(d.querySelectorAll('.hero-atlas-card').length,35);assert.equal(d.querySelectorAll('.hero-atlas-card[data-publication="published"]').length,29);assert.equal(d.querySelectorAll('.hero-atlas-card[data-publication="held"]').length,6);}
+  if(hub){assert.equal(atlasJS[0].getAttribute('src'),'/js/hero-atlas.js?v='+sha(fs.readFileSync(path.join(ROOT,'js/hero-atlas.js'))).slice(0,12));assert(atlasJS[0].hasAttribute('defer'));assert.equal(d.querySelectorAll('.hero-atlas-card').length,37);assert.equal(d.querySelectorAll('.hero-atlas-card[data-publication="published"]').length,31);assert.equal(d.querySelectorAll('.hero-atlas-card[data-publication="held"]').length,6);}
   const petPage=petRoutes.has(route),petCSS=[...d.querySelectorAll('link[rel="stylesheet"]')].filter(n=>n.getAttribute('href').split('?')[0]==='/css/hero-pet.css');
   assert.equal(petCSS.length,+(atlas||petPage||rel==='tools/'),file+' hero/pet stylesheet only on reviewed routes');
   if(atlas||petPage||rel==='tools/'){assert.equal(petCSS[0].getAttribute('href'),HeroPet.asset().match(/href="([^"]+)"/)[1],file+' current hero/pet stylesheet');assert(petCSS[0].hasAttribute(atlas?'data-hero-atlas-owned':petPage?'data-hero-pet-owned':'data-v4-owned'));}
@@ -121,13 +121,13 @@ if(require.main===module){
     const files=[...original,'data/power-plant-unified.json','scripts/building-data/dependencies-2026-10-13.json'],old=batch(files);
     for(const file of files)assert.equal(sha(lf(read(file))),sha(lf(old.get(file))),file+' source content unchanged (LF-normalized checkout)');
   });
-  test('sitemap preserves all 2522 deployed entries and adds only the 21 approved Lava URLs; robots stays exact',()=>{
+  test('sitemap preserves all 2522 deployed entries and adds only the 63 approved X-SSR URLs; robots stays exact',()=>{
     const old=batch(['sitemap.xml','robots.txt']);assert.equal(lf(read('robots.txt')),lf(old.get('robots.txt')),'robots directives');
     const entries=html=>new Map([...html.matchAll(/<url>\s*<loc>(.*?)<\/loc>[\s\S]*?<\/url>/g)].map(m=>[m[1],m[0]]));
-    const before=entries(lf(old.get('sitemap.xml'))),after=entries(lf(read('sitemap.xml')));assert.equal(before.size,2522);assert.equal(after.size,2543);
+    const before=entries(lf(old.get('sitemap.xml'))),after=entries(lf(read('sitemap.xml')));assert.equal(before.size,2522);assert.equal(after.size,2585);
     assert.equal([...read('sitemap.xml').matchAll(/<loc>/g)].length,after.size,'unique sitemap entries');
     for(const [url,entry]of before)assert.equal(after.get(url),entry,'preserved sitemap node '+url);
-    assert.deepEqual([...after.keys()].filter(url=>!before.has(url)).sort(),codes.map(locale=>'https://tilessurvive.net/'+locale+'/heroes/lava/').sort());
+    assert.deepEqual([...after.keys()].filter(url=>!before.has(url)).sort(),codes.flatMap(locale=>['lava','furiosa','alita'].map(id=>'https://tilessurvive.net/'+locale+'/heroes/'+id+'/')).sort());
   });
   const tracked=filesAt(BASE).filter(f=>codes.includes(f.split('/')[0])&&f.endsWith('/index.html'));assert.equal(tracked.length,2537);
   for(const locale of codes)test(locale+': every deployed locale page preserves original content/SEO/ads and has the exact V3 feature manifest',()=>{
@@ -144,16 +144,17 @@ if(require.main===module){
         verifyManifest(d,locale,route,file);sameContent(before,current,file,locale);
       }else assert.equal(sha(lf(current)),sha(lf(before)),file+' noindex/redirect alias unchanged');
     }catch(error){failures.push({file,message:error.message});}}
-    // Lava is the only newly authorized canonical page. Existing redirects and
-    // noindex aliases above remain byte-exact; they are not new identities.
-    const lavaFile=locale+'/heroes/lava/index.html',lava=read(lavaFile),lavaRoute='/'+locale+'/heroes/lava/',lavaDoc=parseHTML(lava).document;
-    assert.equal(lavaDoc.querySelector('link[rel="canonical"]').href,'https://tilessurvive.net'+lavaRoute);assert(!/noindex/i.test(lavaDoc.querySelector('meta[name="robots"]')?.content||''));
-    const alternates=[...lavaDoc.querySelectorAll('link[rel="alternate"][hreflang]')];
-    for(const {code,hreflang}of registry.locales)assert(alternates.some(a=>a.getAttribute('hreflang')===hreflang&&a.getAttribute('href')==='https://tilessurvive.net/'+code+'/heroes/lava/'),locale+' Lava alternate '+code);
-    assert.equal(alternates.length,22);assert.equal(new Set(alternates.map(a=>a.getAttribute('hreflang'))).size,22);assert(alternates.some(a=>a.getAttribute('hreflang')==='x-default'&&a.getAttribute('href')==='https://tilessurvive.net/en/heroes/lava/'));
-    assert.deepEqual(ads(lava),ads(old.get(locale+'/heroes/index.html')),locale+' Lava inherits the unchanged AdSense/CMP shell');
-    Atlas.validateOwnership(lava,locale,lavaRoute);verifyManifest(lavaDoc,locale,lavaRoute,lavaFile);canonical++;
-    assert.equal(canonical,121,locale+' canonical pages');
+    // Reviewed introductions inherit the same navigation, advertising and consent shell.
+    for(const id of ['lava','furiosa','alita']){
+      const file=locale+'/heroes/'+id+'/index.html',html=read(file),route='/'+locale+'/heroes/'+id+'/',d=parseHTML(html).document;
+      assert.equal(d.querySelector('link[rel="canonical"]').href,'https://tilessurvive.net'+route);assert(!/noindex/i.test(d.querySelector('meta[name="robots"]')?.content||''));
+      const alternatives=[...d.querySelectorAll('link[rel="alternate"][hreflang]')];
+      for(const {code,hreflang}of registry.locales)assert(alternatives.some(a=>a.getAttribute('hreflang')===hreflang&&a.getAttribute('href')==='https://tilessurvive.net/'+code+'/heroes/'+id+'/'),locale+' '+id+' alternate '+code);
+      assert.equal(alternatives.length,22);assert.equal(new Set(alternatives.map(a=>a.getAttribute('hreflang'))).size,22);assert(alternatives.some(a=>a.getAttribute('hreflang')==='x-default'&&a.getAttribute('href')==='https://tilessurvive.net/en/heroes/'+id+'/'));
+      assert.deepEqual(ads(html),ads(old.get(locale+'/heroes/index.html')),locale+' '+id+' unchanged AdSense/CMP shell');
+      Atlas.validateOwnership(html,locale,route);verifyManifest(d,locale,route,file);canonical++;
+    }
+    assert.equal(canonical,123,locale+' canonical pages');
     assert.deepEqual(failures,[],locale+' preservation/manifest errors');
   });
   test('every derived search URL, fragment and alias provenance remains valid in the integrated site',()=>{
@@ -166,14 +167,14 @@ if(require.main===module){
         if(mainHeroRoutes.has(item.url)){const {title,description,...remaining}=current,{title:oldTitle,description:oldDescription,...oldRemaining}=item;assert.deepEqual(remaining,oldRemaining,item.url+' hero search changes only reviewed metadata');const doc=parseHTML(read(item.url.slice(1)+'index.html')).document;assert.equal(title,doc.querySelector('title').textContent.trim().replace(/\s+/g,' '));assert.equal(description,doc.querySelector('meta[name="description"]').getAttribute('content').trim().replace(/\s+/g,' '));}
         else assert.deepEqual(current,item,item.url+' non-main-hero search record unchanged');
       }
-      assert.deepEqual(original.items.slice(baseline.length).map(item=>item.url).sort(),['/'+locale+'/heroes/lava/','/'+locale+'/heroes/lava/#lava-skills','/'+locale+'/heroes/lava/#lava-growth',...require('./build-v4-search').records(locale).map(r=>r.url)].sort(),locale+' exactly six reviewed additions');
+      assert.deepEqual(original.items.slice(baseline.length).map(item=>item.url).sort(),['/'+locale+'/heroes/furiosa/','/'+locale+'/heroes/alita/','/'+locale+'/heroes/lava/','/'+locale+'/heroes/lava/#lava-skills','/'+locale+'/heroes/lava/#lava-growth',...require('./build-v4-search').records(locale).map(r=>r.url)].sort(),locale+' exactly six reviewed additions');
       for(const item of derived.items){const u=new URL(item.url,'https://tilessurvive.net');assert.equal(u.origin,'https://tilessurvive.net');assert(u.pathname.startsWith('/'+locale+'/'));const file=u.pathname.slice(1)+'index.html';if(!pages.has(file))pages.set(file,read(file));if(u.hash){const id=decodeURIComponent(u.hash.slice(1));assert(new RegExp('\\bid=["\\\']'+id.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'["\\\']').test(pages.get(file)),item.url+' real fragment');}
-        for(const a of item.search.aliases){assert(codes.includes(a.language));assert.equal(typeof a.value,'string');assert(['site-label','site-alias','retained-client','retained-english-fallback'].includes(a.source));if(['ar','vi','nb'].includes(a.language))assert.notEqual(a.source,'retained-client');
+        for(const a of item.search.aliases){assert(codes.includes(a.language));assert.equal(typeof a.value,'string');assert(['site-label','site-alias','retained-client','retained-english-fallback','official-announcement','official-english-fallback'].includes(a.source));if(['ar','vi','nb'].includes(a.language))assert.notEqual(a.source,'retained-client');
           if(a.source==='retained-english-fallback'){assert(['ar','vi','nb'].includes(a.language));assert(item.search.hero,'Fallback is tied to an explicit client hero');const hero=require('../data/hero-atlas-client.json').heroes.find(h=>h.id===item.search.hero.formId);assert(hero);assert.equal(a.termKey,hero.nameKey);assert.equal(hero.names[a.language].status,'english-fallback');assert.equal(a.value,hero.names.en.value,'English fallback never claims a verified local client name');}
         }count++;
       }
     }
-    assert.equal(retainedCount,9175);assert.equal(count,9301);
+    assert.equal(retainedCount,9175);assert.equal(count,9343);
   });
   test('future global regeneration keeps 14 locales times 3 V3 feature routes fully translated and owned',()=>{
     const L=require('./lib/global-localization'),G=require('./build-global-locales'),groups=L.routeGroups(),targets=codes.filter(c=>!L.existing.has(c)&&c!=='zh-cn');assert.equal(targets.length,14);let count=0;

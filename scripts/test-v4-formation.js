@@ -47,6 +47,17 @@ test('DOM restores atomically without callbacks, prevents duplicate selections a
  const d=dom(),s=filled();assert.equal(d.api.restore(s),true);assert.deepEqual(d.api.read(),s);assert.equal(d.changes(),0);assert(d.host.querySelector('[data-v4-field="front-0"]').querySelector('option[value="kiron"]').disabled);assert(!d.host.querySelector('option[value="'+model.heldHeroIds[0]+'"]'));
  const invalid=clone(s);invalid.back[0]='rusty';assert.throws(()=>d.api.restore(invalid));assert.deepEqual(d.api.read(),s);assert.equal(d.changes(),0);choose(d,d.host.querySelector('[data-v4-field="front-0"]'),'tony');assert.equal(d.api.read().front[0],'tony');assert.equal(d.changes(),1);d.api.reset();assert.deepEqual(d.api.read(),math.emptyInput(model));assert.equal(d.changes(),1);
 });
+
+test('official X-SSR introductions link from all formation locales but remain disabled and rejected by math',()=>{
+ const workbench=require('./v4-workbench-content');
+ for(const locale of Object.keys(copy.locales)){
+  const config=JSON.parse(parseHTML(workbench.render(locale)).document.querySelector('[data-v4-config]').textContent),{document,window}=parseHTML('<div id="host"></div>'),host=document.querySelector('#host');
+  const api=ui.mount({host,model,copy:config.formationCopy,locale});assert.equal(host.querySelectorAll('[data-v4-official-heroes] a').length,2);
+  for(const h of config.formationCopy.xssr.heroes){assert(!model.heroes.some(x=>x.id===h.id));assert.equal(host.querySelectorAll('option[value="'+h.id+'"]').length,5);for(const o of host.querySelectorAll('option[value="'+h.id+'"]'))assert(o.disabled);assert(host.querySelector('a[href="/'+locale+'/heroes/'+h.id+'/"]'));const attempted=filled();attempted.front[0]=h.id;assert.equal(math.validateInput(attempted,model).valid,false);assert.throws(()=>api.restore(attempted));}
+  const s=host.querySelector('[data-v4-field="front-0"]');for(const o of s.options)o.selected=false;s.querySelector('option[value="furiosa"]').selected=true;s.dispatchEvent(new window.Event('change'));assert.equal(api.read().front[0],null);
+  api.restore(filled());api.render();for(const o of host.querySelectorAll('[data-v4-official-only]'))assert(o.disabled);
+ }
+});
 test('DOM pet ownership gates deployment; state changes are reflected without activating locked skills',()=>{
  const d=dom(),sel=d.host.querySelector('[data-v4-field="pet"]'),cb=d.host.querySelector('[data-v4-owned="starhorn"]');assert(sel.querySelector('option[value="starhorn"]').disabled);cb.checked=true;cb.dispatchEvent(new d.window.Event('change'));assert(!sel.querySelector('option[value="starhorn"]').disabled);choose(d,sel,'starhorn');assert.equal(d.api.read().petId,'starhorn');assert(d.host.textContent.includes(copy.locales.en.messages['skill-learned-unverified']));cb.checked=false;cb.dispatchEvent(new d.window.Event('change'));assert.equal(d.api.read().petId,null);
 });

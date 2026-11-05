@@ -78,7 +78,7 @@ test('name sorting is stable within groups and reset restores the original order
 test('comparison caps at three forms, uses text metadata and detail links, and permits explicit removal or clear',()=>{
   const a=setup();a.select('alpha');a.select('bravo');a.select('charlie');const fourth=a.select('delta');assert.equal(fourth.checked,false);
   assert(a.host.querySelector('[data-atlas-selected]').textContent.includes(copy.compareLimit));
-  const table=a.host.querySelector('.hero-atlas-comparison-table');assert.equal(table.querySelectorAll('thead a').length,3);assert.equal(table.querySelectorAll('tbody tr').length,4);assert.equal(table.querySelectorAll('img,input,.hero-atlas-card').length,0);
+  const table=a.host.querySelector('.hero-atlas-comparison-table');assert.equal(table.querySelectorAll('thead a').length,3);assert.equal(table.querySelectorAll('tbody tr').length,5);assert.equal(table.querySelectorAll('img,input,.hero-atlas-card').length,0);
   assert.deepEqual([...table.querySelectorAll('thead a')].map(n=>n.getAttribute('href')),['/en/heroes/alpha/#base','/en/heroes/bravo/#base','/en/heroes/charlie/#base']);
   a.event(table.querySelector('[data-atlas-remove="bravo"]'),'click');assert.equal(a.byId('bravo').querySelector('[data-atlas-compare]').checked,false);assert.equal(a.host.querySelectorAll('thead a').length,2);
   a.select('delta');assert.equal(a.host.querySelectorAll('thead a').length,3);a.event(a.host.querySelector('[data-atlas-clear-compare]'),'click');assert(a.host.querySelector('[data-atlas-comparison]').hidden);assert([...a.host.querySelectorAll('[data-atlas-compare]')].every(n=>!n.checked));
@@ -108,7 +108,7 @@ test('table host, Arabic display numbers, accessibility labels and repeated init
   assert.equal(a.location.href,'https://tilessurvive.net/en/heroes/?retained=value#existing-faction');
 });
 
-test('all 21 real locale renderers satisfy the runtime contract with 29 published identities and six held forms',()=>{
+test('all 21 real locale renderers satisfy the runtime contract with 31 catalog identities and six held forms',()=>{
   const atlas=require('./build-hero-atlas');
   const locales=require('../data/i18n/locales.json').locales.map(row=>row.code);assert.equal(locales.length,21);
   for(const locale of locales){
@@ -117,8 +117,8 @@ test('all 21 real locale renderers satisfy the runtime contract with 29 publishe
     const host=document.querySelector('[data-hero-atlas]');
     vm.runInNewContext(source,{document,window:{location:new URL('https://tilessurvive.net/'+locale+'/heroes/')},URL,Intl,Map,Set});
     assert(host.hasAttribute('data-atlas-ready'),locale+' renderer/runtime initialization');
-    const cards=[...host.querySelectorAll('.hero-atlas-card')];assert.equal(cards.length,35);assert.equal(cards.filter(c=>!c.hidden).length,29);
-    assert.equal(new Set(cards.filter(c=>!c.hidden).map(c=>c.dataset.identity)).size,29);
+    const cards=[...host.querySelectorAll('.hero-atlas-card')];assert.equal(cards.length,37);assert.equal(cards.filter(c=>!c.hidden).length,31);
+    assert.equal(new Set(cards.filter(c=>!c.hidden).map(c=>c.dataset.identity)).size,31);
     const promoted=host.querySelector('[data-atlas-filter="form"]');promoted.value='promoted';promoted.dispatchEvent(new Event('change'));
     assert.equal(cards.filter(c=>!c.hidden).length,0);
     const include=host.querySelector('[data-atlas-include-held]');include.checked=true;include.dispatchEvent(new Event('change'));

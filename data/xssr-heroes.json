@@ -1,0 +1,407 @@
+{
+  "schemaVersion": 1,
+  "reviewedOn": "2026-11-05",
+  "heroes": [
+    {
+      "id": "lava",
+      "clientId": 25300242,
+      "rarity": "X-SSR",
+      "factionRaw": 1,
+      "typeRaw": 1,
+      "professionRaw": "zealots",
+      "names": {
+        "en": {
+          "value": "Lava",
+          "status": "client-official",
+          "cohort": "ingame-apk-en"
+        },
+        "ko": {
+          "value": "라바",
+          "status": "client-official",
+          "cohort": "ingame-apk-ko"
+        },
+        "ja": {
+          "value": "マグマ",
+          "status": "client-official",
+          "cohort": "ingame-apk-ja"
+        },
+        "zh-tw": {
+          "value": "熔岩",
+          "status": "client-official",
+          "cohort": "ingame-apk-zh-TW"
+        },
+        "de": {
+          "value": "Lava",
+          "status": "client-official",
+          "cohort": "ingame-apk-de"
+        },
+        "ru": {
+          "value": "Лава",
+          "status": "client-official",
+          "cohort": "ingame-apk-ru"
+        },
+        "zh-cn": {
+          "value": "熔岩",
+          "status": "client-official",
+          "cohort": "ingame-apk-zh-CN"
+        },
+        "ar": {
+          "value": "Lava",
+          "status": "english-fallback",
+          "cohort": "ingame-apk-en"
+        },
+        "nl": {
+          "value": "Lava",
+          "status": "client-official",
+          "cohort": "ingame-apk-nl"
+        },
+        "fr": {
+          "value": "Lave",
+          "status": "client-official",
+          "cohort": "ingame-apk-fr"
+        },
+        "id": {
+          "value": "Lava",
+          "status": "client-official",
+          "cohort": "ingame-apk-id"
+        },
+        "it": {
+          "value": "Lava",
+          "status": "client-official",
+          "cohort": "ingame-apk-it"
+        },
+        "pl": {
+          "value": "Lava",
+          "status": "client-official",
+          "cohort": "ingame-apk-pl"
+        },
+        "pt": {
+          "value": "Lava",
+          "status": "client-official",
+          "cohort": "ingame-apk-pt"
+        },
+        "es": {
+          "value": "Lava",
+          "status": "client-official",
+          "cohort": "ingame-apk-es"
+        },
+        "sv": {
+          "value": "Lava",
+          "status": "client-official",
+          "cohort": "ingame-apk-sv"
+        },
+        "th": {
+          "value": "ลาวา",
+          "status": "client-official",
+          "cohort": "ingame-apk-th"
+        },
+        "tr": {
+          "value": "Lava",
+          "status": "client-official",
+          "cohort": "ingame-apk-tr"
+        },
+        "vi": {
+          "value": "Lava",
+          "status": "english-fallback",
+          "cohort": "ingame-apk-en"
+        },
+        "ms": {
+          "value": "Lahar",
+          "status": "client-official",
+          "cohort": "ingame-apk-my"
+        },
+        "nb": {
+          "value": "Lava",
+          "status": "english-fallback",
+          "cohort": "ingame-apk-en"
+        }
+      },
+      "release": {
+        "status": "released",
+        "sources": [
+          "https://tilesurvivegame.com/en/blog/1181",
+          "https://tilesurvivegame.com/en/blog/1198"
+        ],
+        "asOf": "2026-11-05",
+        "universalUnlock": false
+      },
+      "skills": [
+        {
+          "clientId": 25401384
+        },
+        {
+          "clientId": 25401385
+        },
+        {
+          "clientId": 25401386
+        },
+        {
+          "clientId": 25401387
+        }
+      ],
+      "portrait": {
+        "src": "/img/game-41/heroes/lava.png",
+        "width": 840,
+        "height": 712
+      }
+    },
+    {
+      "id": "furiosa",
+      "clientId": null,
+      "rarity": "X-SSR",
+      "factionRaw": 2,
+      "typeRaw": null,
+      "professionRaw": null,
+      "names": {
+        "en": {
+          "value": "Furiosa",
+          "status": "client-official"
+        },
+        "ko": {
+          "value": "퓨리오사",
+          "status": "client-official"
+        },
+        "ja": {
+          "value": "フュリオサ",
+          "status": "client-official"
+        },
+        "zh-tw": {
+          "value": "弗瑞奧薩",
+          "status": "client-official"
+        },
+        "de": {
+          "value": "Furiosa",
+          "status": "client-official"
+        },
+        "ru": {
+          "value": "Фуриоса",
+          "status": "client-official"
+        },
+        "zh-cn": {
+          "value": "弗瑞奥萨",
+          "status": "client-official"
+        },
+        "ar": {
+          "value": "Furiosa",
+          "status": "english-fallback"
+        },
+        "nl": {
+          "value": "Furiosa",
+          "status": "client-official"
+        },
+        "fr": {
+          "value": "Furiosa",
+          "status": "client-official"
+        },
+        "id": {
+          "value": "Furiosa",
+          "status": "client-official"
+        },
+        "it": {
+          "value": "Furiosa",
+          "status": "client-official"
+        },
+        "pl": {
+          "value": "Furiosa",
+          "status": "client-official"
+        },
+        "pt": {
+          "value": "Furiosa",
+          "status": "client-official"
+        },
+        "es": {
+          "value": "Furiosa",
+          "status": "client-official"
+        },
+        "sv": {
+          "value": "Furiosa",
+          "status": "client-official"
+        },
+        "th": {
+          "value": "เฟอริโอซา",
+          "status": "client-official"
+        },
+        "tr": {
+          "value": "Furiosa",
+          "status": "client-official"
+        },
+        "vi": {
+          "value": "Furiosa",
+          "status": "english-fallback"
+        },
+        "ms": {
+          "value": "Furiosa",
+          "status": "client-official"
+        },
+        "nb": {
+          "value": "Furiosa",
+          "status": "english-fallback"
+        }
+      },
+      "release": {
+        "status": "released",
+        "sources": [
+          "https://tilesurvivegame.com/en/blog/1198",
+          "https://tilesurvivegame.com/en/blog/1206",
+          "https://x.com/TilesSurvive/status/2112170746420064511"
+        ],
+        "asOf": "2026-11-05",
+        "universalUnlock": false
+      },
+      "skills": [],
+      "effects": [
+        "deadly-barrage",
+        "ragehorn-rampage",
+        "ride-together",
+        "wasteland-heart"
+      ],
+      "mount": {
+        "name": "Ragehorn",
+        "exclusiveGear": false,
+        "names": {
+          "en": "Ragehorn",
+          "ko": "분노의 뿔"
+        }
+      },
+      "portrait": {
+        "src": "/img/official-xssr/furiosa.jpg",
+        "width": 1080,
+        "height": 1080,
+        "kind": "official-announcement-art"
+      },
+      "officialSkillNames": [
+        "Deadly Barrage",
+        "Ragehorn Rampage",
+        "Ride Together",
+        "Wasteland Heart"
+      ]
+    },
+    {
+      "id": "alita",
+      "clientId": null,
+      "rarity": "X-SSR",
+      "factionRaw": 3,
+      "typeRaw": null,
+      "professionRaw": null,
+      "names": {
+        "en": {
+          "value": "Alita",
+          "status": "official-announcement"
+        },
+        "ko": {
+          "value": "알리타",
+          "status": "official-announcement"
+        },
+        "ja": {
+          "value": "Alita",
+          "status": "english-fallback"
+        },
+        "zh-tw": {
+          "value": "Alita",
+          "status": "english-fallback"
+        },
+        "de": {
+          "value": "Alita",
+          "status": "english-fallback"
+        },
+        "ru": {
+          "value": "Alita",
+          "status": "english-fallback"
+        },
+        "zh-cn": {
+          "value": "Alita",
+          "status": "english-fallback"
+        },
+        "ar": {
+          "value": "Alita",
+          "status": "english-fallback"
+        },
+        "nl": {
+          "value": "Alita",
+          "status": "english-fallback"
+        },
+        "fr": {
+          "value": "Alita",
+          "status": "english-fallback"
+        },
+        "id": {
+          "value": "Alita",
+          "status": "english-fallback"
+        },
+        "it": {
+          "value": "Alita",
+          "status": "english-fallback"
+        },
+        "pl": {
+          "value": "Alita",
+          "status": "english-fallback"
+        },
+        "pt": {
+          "value": "Alita",
+          "status": "english-fallback"
+        },
+        "es": {
+          "value": "Alita",
+          "status": "english-fallback"
+        },
+        "sv": {
+          "value": "Alita",
+          "status": "english-fallback"
+        },
+        "th": {
+          "value": "Alita",
+          "status": "english-fallback"
+        },
+        "tr": {
+          "value": "Alita",
+          "status": "english-fallback"
+        },
+        "vi": {
+          "value": "Alita",
+          "status": "english-fallback"
+        },
+        "ms": {
+          "value": "Alita",
+          "status": "english-fallback"
+        },
+        "nb": {
+          "value": "Alita",
+          "status": "english-fallback"
+        }
+      },
+      "release": {
+        "status": "upcoming",
+        "sources": [
+          "https://tilesurvivegame.com/en/blog/1213",
+          "https://x.com/TilesSurvive/status/2117559350147379648",
+          "https://tilesurvivegame.com/ko/blog/1218"
+        ],
+        "asOf": "2026-11-05",
+        "universalUnlock": false,
+        "developmentAnnouncedOn": "2026-10-30",
+        "previewAnnouncedOn": "2026-11-03"
+      },
+      "skills": [],
+      "effects": [
+        "laser",
+        "carrot-bombs",
+        "cleanse",
+        "control-resistance"
+      ],
+      "mount": {
+        "name": "Bad Bunny Mk.I",
+        "exclusiveGear": false,
+        "names": {
+          "en": "Bad Bunny Mk.I",
+          "ko": "배드 래빗 1호"
+        }
+      },
+      "portrait": {
+        "src": "/img/official-xssr/alita.jpg",
+        "width": 1080,
+        "height": 1080,
+        "kind": "official-announcement-art"
+      }
+    }
+  ]
+}

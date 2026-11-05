@@ -1,0 +1,12 @@
+'use strict';
+const D=require('../data/xssr-lava-growth.json'),X=require('./lib/xssr-catalog');
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function render(locale){
+ const c=X.copy(locale),g=require('../data/hero-guide-copy.json').locales[locale].ui,nf=new Intl.NumberFormat(locale),n=x=>nf.format(x),item=id=>D.items[id].names[locale],gear=D.exclusiveGear;
+ const table=(headers,rows,id)=>'<div class="xssr-table-wrap" tabindex="0" role="region" aria-label="'+esc(headers.join(' · '))+'"><table class="xssr-growth-table" data-xssr-table="'+id+'"><thead><tr>'+headers.map(t=>'<th scope="col">'+esc(t)+'</th>').join('')+'</tr></thead><tbody>'+rows.map(row=>'<tr>'+row.map((v,i)=>i?'<td>'+esc(v)+'</td>':'<th scope="row">'+esc(v)+'</th>').join('')+'</tr>').join('')+'</tbody></table></div>';
+ const ranks=table([c.rank,c.stepCosts,c.quantity,c.cumulative],D.rankGrowth.rankGroups.map(r=>[n(r.rank),r.stepQuantities.map(n).join(' / '),n(r.quantity),n(r.cumulativeQuantity)]),'rank');
+ const gearRows=table([c.level,c.quantity,c.cumulative,c.effect],gear.levels.map(r=>[n(r.level),n(r.cost.quantity),n(r.cumulativeQuantity),D.englishFallbackLocales.includes(locale)?c.attackDefenseEffect.replace('{percent}',n(r.attackAndDefensePercent)):r.effect[locale]]),'gear');
+ const skillRows=D.skills.filter(s=>s.materialCosts.length).map(s=>'<details class="xssr-growth-details"><summary>'+esc(s.names[locale])+'</summary>'+table([c.level,c.quantity],s.materialCosts.map(r=>[n(r.destinationLevel),n(r.cost.quantity)]),'skill-'+s.clientId)+'</details>').join('');
+ return '<div data-xssr-growth="lava"><p class="hero-guide-note">'+esc(c.clientVersion)+'</p><h3>'+esc(c.rankGrowth)+'</h3><p>'+esc(item(210474))+' · '+esc(c.total)+': <strong>'+n(D.rankGrowth.totalFragments)+'</strong></p><p>'+esc(c.recruitment)+': '+esc(item(D.recruitment.cost.itemId))+' × '+n(D.recruitment.cost.quantity)+'</p><p class="hero-guide-note">'+esc(c.rankNote)+'</p>'+ranks+'<h3>'+esc(g.gear)+' · '+esc(gear.names[locale])+'</h3><p>'+esc(gear.skillNames[locale])+' · '+esc(item(210473))+' · '+esc(c.total)+': <strong>'+n(gear.totalFragments)+'</strong></p><p class="hero-guide-note">'+esc(c.gearCostNote)+'</p><details class="xssr-growth-details"><summary>'+esc(c.gearCosts)+'</summary>'+gearRows+'</details><h3>'+esc(c.skillCosts)+'</h3><p>'+esc(item(201725))+'</p><p class="hero-guide-note">'+esc(c.skillCostNote)+'</p>'+skillRows+'</div>';
+}
+module.exports={render};

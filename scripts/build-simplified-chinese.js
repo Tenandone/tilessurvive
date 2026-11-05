@@ -259,9 +259,11 @@ function featurePayloads(document,convert,route) {
 function validateRouteManifest(groups) {
   const ids=groups.map(group=>group.id);
   assert.equal(new Set(ids).size,ids.length,'Duplicate canonical translation route');
-  assert.equal(ids.length,121,'The reviewed atlas release adds only one canonical route');
+  const gate=require('./client-release-gate'),additions=gate.officialAdditions(require('../data/hero-atlas-client.json'),require('../data/hero-atlas-routes.json')).map(h=>'heroes/'+h.id+'/');
+  assert.equal(ids.length,121+additions.length,'Only reviewed atlas routes may be added');
   assert(ids.includes('heroes/lava/'),'Missing reviewed Lava detail route');
-  assert.equal(L.digest(JSON.stringify(ids.filter(id=>id!=='heroes/lava/').sort())),'a4bd34aedfa52874c8c2dcd2a27ee3ba346fb876bfe3df8ccbfa293b586882b7','The original 120 canonical routes must remain exact');
+  for(const id of additions)assert(ids.includes(id),'Missing reviewed official hero route '+id);
+  assert.equal(L.digest(JSON.stringify(ids.filter(id=>id!=='heroes/lava/'&&!additions.includes(id)).sort())),'a4bd34aedfa52874c8c2dcd2a27ee3ba346fb876bfe3df8ccbfa293b586882b7','The original 120 canonical routes must remain exact');
   return true;
 }
 // Pure page projection shared by staging and focused owner-regeneration tests.

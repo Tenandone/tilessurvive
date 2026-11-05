@@ -29,7 +29,7 @@
     {
       "id": "furiosa",
       "sourceName": "Furiosa",
-      "status": "announced-and-hero-screen-documented; core-record-missing",
+      "status": "released-by-official-announcement; numeric-client-record-pending",
       "sources": [
         "https://tilesurvivegame.com/en/blog/1198",
         "https://tilesurvivegame.com/en/blog/1206"
@@ -142,11 +142,13 @@
     {
       "id": "alita",
       "sourceName": "Alita",
-      "status": "officially-in-development-as-of-2026-10-30; release-and-core-record-missing",
+      "status": "upcoming-as-of-2026-11-03; playable-release-and-core-record-pending",
       "sources": [
-        "https://tilesurvivegame.com/en/blog/1213"
+        "https://tilesurvivegame.com/en/blog/1213",
+        "https://x.com/TilesSurvive/status/2117559350147379648"
       ]
     }
   ],
-  "imagePolicy": "Reuse retained portraits for existing identities only. No competitor image or newly extracted game portrait is published. Lava has an explicit no-verified-portrait placeholder."
+  "imagePolicy": "Retained authentic Lava portrait and skill icons; Furiosa and Alita use their official hero announcement artwork. No benchmark artwork or inferred skill icons are published.",
+  "officialCatalog": "data/xssr-heroes.json"
 }

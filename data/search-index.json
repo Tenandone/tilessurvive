@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-11-04T08:55:46.238Z",
-  "itemCount": 9301,
+  "itemCount": 9343,
   "items": [
     {
       "language": "ar",
@@ -65904,6 +65904,300 @@
       "title": "Utvikling og ressurser · Strategiverksted",
       "description": "Sammenlign laget, beholdningen og utviklingsmålene dine med bekreftede regler.",
       "url": "/nb/tools/#v4-growth"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
+      "title": "Furiosa · Skills · Growth requirements | TilesSurvive.net",
+      "description": "A Rover X-SSR hero who supports the front row. Ragehorn provides area damage and stuns, while her skills weaken enemy defense and strengthen frontline allies.",
+      "url": "/en/heroes/furiosa/"
+    },
+    {
+      "language": "en",
+      "type": "heroe",
+      "title": "Alita · Skills · Growth requirements | TilesSurvive.net",
+      "description": "An upcoming Aeronaut X-SSR hero. Bad Bunny Mk. I combines rapid lasers and carrot bombs with self-cleansing and resistance to control effects.",
+      "url": "/en/heroes/alita/"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
+      "title": "퓨리오사 · 스킬 · 성장 조건 | TilesSurvive.net",
+      "description": "전방을 지원하는 황야 X-SSR 영웅입니다. 분노의 뿔로 범위 피해와 기절을 가하며, 적의 방어력을 낮추고 전방 아군을 강화합니다.",
+      "url": "/ko/heroes/furiosa/"
+    },
+    {
+      "language": "ko",
+      "type": "heroe",
+      "title": "알리타 · 스킬 · 성장 조건 | TilesSurvive.net",
+      "description": "출시가 예고된 하늘 X-SSR 영웅입니다. 배드 래빗 1호의 연속 레이저와 당근 폭탄을 사용하고, 자신의 디버프를 해제하며 제어 효과에 저항합니다.",
+      "url": "/ko/heroes/alita/"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
+      "title": "フュリオサ · スキル · 育成条件 | TilesSurvive.net",
+      "description": "前衛を支援するRoverのX-SSR英雄。Ragehornで範囲ダメージとスタンを与え、敵の防御を下げて前衛の味方を強化します。",
+      "url": "/ja/heroes/furiosa/"
+    },
+    {
+      "language": "ja",
+      "type": "heroe",
+      "title": "Alita · スキル · 育成条件 | TilesSurvive.net",
+      "description": "登場予定のAeronautのX-SSR英雄。Bad Bunny Mk. Iで連続レーザーとニンジン爆弾を放ち、自身のデバフを解除して行動妨害に抵抗します。",
+      "url": "/ja/heroes/alita/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "heroe",
+      "title": "弗瑞奧薩 · 技能 · 成長條件 | TilesSurvive.net",
+      "description": "支援前排的Rover陣營X-SSR英雄。Ragehorn造成範圍傷害與暈眩，技能能降低敵人防禦並強化前排隊友。",
+      "url": "/zh-tw/heroes/furiosa/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "heroe",
+      "title": "Alita · 技能 · 成長條件 | TilesSurvive.net",
+      "description": "即將登場的Aeronaut陣營X-SSR英雄。駕駛Bad Bunny Mk. I發射連續雷射與胡蘿蔔炸彈，解除自身減益並抵抗控制效果。",
+      "url": "/zh-tw/heroes/alita/"
+    },
+    {
+      "language": "de",
+      "type": "heroe",
+      "title": "Furiosa · Fähigkeiten · Entwicklungsvoraussetzungen | TilesSurvive.net",
+      "description": "Eine X-SSR-Heldin der Rover-Fraktion, die die vordere Reihe unterstützt. Ragehorn verursacht Flächenschaden und Betäubung; ihre Fähigkeiten schwächen die gegnerische Verteidigung und stärken Verbündete vorne.",
+      "url": "/de/heroes/furiosa/"
+    },
+    {
+      "language": "de",
+      "type": "heroe",
+      "title": "Alita · Fähigkeiten · Entwicklungsvoraussetzungen | TilesSurvive.net",
+      "description": "Eine kommende X-SSR-Heldin der Aeronaut-Fraktion. Bad Bunny Mk. I kombiniert Laser und Karottenbomben mit dem Entfernen eigener Schwächungen und Widerstand gegen Kontrolleffekte.",
+      "url": "/de/heroes/alita/"
+    },
+    {
+      "language": "ru",
+      "type": "heroe",
+      "title": "Фуриоса · Навыки · Условия развития | TilesSurvive.net",
+      "description": "Героиня X-SSR фракции Rover, поддерживающая передний ряд. Ragehorn наносит урон по области и оглушает, а навыки ослабляют защиту врагов и усиливают союзников впереди.",
+      "url": "/ru/heroes/furiosa/"
+    },
+    {
+      "language": "ru",
+      "type": "heroe",
+      "title": "Alita · Навыки · Условия развития | TilesSurvive.net",
+      "description": "Будущая героиня X-SSR фракции Aeronaut. Bad Bunny Mk. I использует лазеры и морковные бомбы; героиня снимает с себя ослабления и сопротивляется эффектам контроля.",
+      "url": "/ru/heroes/alita/"
+    },
+    {
+      "language": "zh-cn",
+      "type": "heroe",
+      "title": "弗瑞奥萨 · 技能 · 成长条件 | TilesSurvive.net",
+      "description": "支援前排的Rover阵营X-SSR英雄。Ragehorn造成范围伤害与眩晕，技能能降低敌人防御并强化前排队友。",
+      "url": "/zh-cn/heroes/furiosa/"
+    },
+    {
+      "language": "zh-cn",
+      "type": "heroe",
+      "title": "Alita · 技能 · 成长条件 | TilesSurvive.net",
+      "description": "即将登场的Aeronaut阵营X-SSR英雄。驾驶Bad Bunny Mk. I发射连续激光与胡萝卜炸弹，解除自身减益并抵抗控制效果。",
+      "url": "/zh-cn/heroes/alita/"
+    },
+    {
+      "language": "ar",
+      "type": "heroe",
+      "title": "Furiosa · المهارات · متطلبات التطوير | TilesSurvive.net",
+      "description": "بطلة X-SSR من فصيل Rover تدعم الصف الأمامي. تُلحق Ragehorn ضررًا جماعيًا وتصعق الأعداء، بينما تُضعف مهاراتها دفاعهم وتقوّي الحلفاء في المقدمة.",
+      "url": "/ar/heroes/furiosa/"
+    },
+    {
+      "language": "ar",
+      "type": "heroe",
+      "title": "Alita · المهارات · متطلبات التطوير | TilesSurvive.net",
+      "description": "بطلة X-SSR قادمة من فصيل Aeronaut. تجمع Bad Bunny Mk. I بين الليزر وقنابل الجزر وإزالة التأثيرات السلبية الذاتية ومقاومة تأثيرات التحكم.",
+      "url": "/ar/heroes/alita/"
+    },
+    {
+      "language": "nl",
+      "type": "heroe",
+      "title": "Furiosa · Vaardigheden · Ontwikkelingsvereisten | TilesSurvive.net",
+      "description": "Een X-SSR-heldin van de Rover-factie die de voorste rij ondersteunt. Ragehorn brengt gebiedsschade en verdooft; haar vaardigheden verzwakken vijandelijke verdediging en versterken bondgenoten vooraan.",
+      "url": "/nl/heroes/furiosa/"
+    },
+    {
+      "language": "nl",
+      "type": "heroe",
+      "title": "Alita · Vaardigheden · Ontwikkelingsvereisten | TilesSurvive.net",
+      "description": "Een aankomende X-SSR-heldin van de Aeronaut-factie. Bad Bunny Mk. I combineert lasers en wortelbommen met het verwijderen van eigen verzwakkingen en weerstand tegen controle-effecten.",
+      "url": "/nl/heroes/alita/"
+    },
+    {
+      "language": "fr",
+      "type": "heroe",
+      "title": "Furiosa · Compétences · Conditions de progression | TilesSurvive.net",
+      "description": "Une héroïne X-SSR de la faction Rover qui soutient la première ligne. Ragehorn inflige des dégâts de zone et étourdit, tandis que ses compétences affaiblissent la défense ennemie et renforcent les alliés à l’avant.",
+      "url": "/fr/heroes/furiosa/"
+    },
+    {
+      "language": "fr",
+      "type": "heroe",
+      "title": "Alita · Compétences · Conditions de progression | TilesSurvive.net",
+      "description": "Une future héroïne X-SSR de la faction Aeronaut. Bad Bunny Mk. I combine lasers et bombes-carottes, dissipation de ses propres malus et résistance aux effets de contrôle.",
+      "url": "/fr/heroes/alita/"
+    },
+    {
+      "language": "id",
+      "type": "heroe",
+      "title": "Furiosa · Skill · Persyaratan pengembangan | TilesSurvive.net",
+      "description": "Hero X-SSR faksi Rover yang mendukung barisan depan. Ragehorn memberi damage area dan stun, sedangkan skill-nya melemahkan pertahanan musuh dan memperkuat rekan di depan.",
+      "url": "/id/heroes/furiosa/"
+    },
+    {
+      "language": "id",
+      "type": "heroe",
+      "title": "Alita · Skill · Persyaratan pengembangan | TilesSurvive.net",
+      "description": "Hero X-SSR faksi Aeronaut yang akan hadir. Bad Bunny Mk. I menggabungkan laser dan bom wortel dengan pembersihan debuff sendiri serta ketahanan terhadap efek kontrol.",
+      "url": "/id/heroes/alita/"
+    },
+    {
+      "language": "it",
+      "type": "heroe",
+      "title": "Furiosa · Abilità · Requisiti di crescita | TilesSurvive.net",
+      "description": "Eroina X-SSR della fazione Rover che sostiene la prima linea. Ragehorn infligge danni ad area e stordisce; le sue abilità riducono la difesa nemica e rafforzano gli alleati davanti.",
+      "url": "/it/heroes/furiosa/"
+    },
+    {
+      "language": "it",
+      "type": "heroe",
+      "title": "Alita · Abilità · Requisiti di crescita | TilesSurvive.net",
+      "description": "Eroina X-SSR della fazione Aeronaut in arrivo. Bad Bunny Mk. I combina laser e bombe carota con la rimozione dei propri malus e la resistenza agli effetti di controllo.",
+      "url": "/it/heroes/alita/"
+    },
+    {
+      "language": "pl",
+      "type": "heroe",
+      "title": "Furiosa · Umiejętności · Wymagania rozwoju | TilesSurvive.net",
+      "description": "Bohaterka X-SSR frakcji Rover wspierająca przedni rząd. Ragehorn zadaje obrażenia obszarowe i ogłusza, a jej umiejętności osłabiają obronę wrogów i wzmacniają sojuszników z przodu.",
+      "url": "/pl/heroes/furiosa/"
+    },
+    {
+      "language": "pl",
+      "type": "heroe",
+      "title": "Alita · Umiejętności · Wymagania rozwoju | TilesSurvive.net",
+      "description": "Nadchodząca bohaterka X-SSR frakcji Aeronaut. Bad Bunny Mk. I łączy lasery i marchewkowe bomby z usuwaniem własnych osłabień i odpornością na efekty kontroli.",
+      "url": "/pl/heroes/alita/"
+    },
+    {
+      "language": "pt",
+      "type": "heroe",
+      "title": "Furiosa · Habilidades · Requisitos de desenvolvimento | TilesSurvive.net",
+      "description": "Heroína X-SSR da facção Rover que apoia a linha de frente. Ragehorn causa dano em área e atordoa, enquanto suas habilidades reduzem a defesa inimiga e fortalecem os aliados da frente.",
+      "url": "/pt/heroes/furiosa/"
+    },
+    {
+      "language": "pt",
+      "type": "heroe",
+      "title": "Alita · Habilidades · Requisitos de desenvolvimento | TilesSurvive.net",
+      "description": "Futura heroína X-SSR da facção Aeronaut. Bad Bunny Mk. I combina lasers e bombas de cenoura com remoção dos próprios efeitos negativos e resistência a controle.",
+      "url": "/pt/heroes/alita/"
+    },
+    {
+      "language": "es",
+      "type": "heroe",
+      "title": "Furiosa · Habilidades · Requisitos de desarrollo | TilesSurvive.net",
+      "description": "Heroína X-SSR de la facción Rover que apoya a la primera fila. Ragehorn causa daño de área y aturde; sus habilidades reducen la defensa enemiga y refuerzan a los aliados de delante.",
+      "url": "/es/heroes/furiosa/"
+    },
+    {
+      "language": "es",
+      "type": "heroe",
+      "title": "Alita · Habilidades · Requisitos de desarrollo | TilesSurvive.net",
+      "description": "Próxima heroína X-SSR de la facción Aeronaut. Bad Bunny Mk. I combina láseres y bombas zanahoria con la eliminación de sus propios efectos negativos y resistencia al control.",
+      "url": "/es/heroes/alita/"
+    },
+    {
+      "language": "sv",
+      "type": "heroe",
+      "title": "Furiosa · Färdigheter · Utvecklingskrav | TilesSurvive.net",
+      "description": "En X-SSR-hjälte från Rover-fraktionen som stöder främre raden. Ragehorn ger områdesskada och bedövar, medan förmågorna försvagar fiendens försvar och stärker allierade längst fram.",
+      "url": "/sv/heroes/furiosa/"
+    },
+    {
+      "language": "sv",
+      "type": "heroe",
+      "title": "Alita · Färdigheter · Utvecklingskrav | TilesSurvive.net",
+      "description": "En kommande X-SSR-hjälte från Aeronaut-fraktionen. Bad Bunny Mk. I kombinerar lasrar och morotsbomber med att ta bort egna försvagningar och stå emot kontrolleffekter.",
+      "url": "/sv/heroes/alita/"
+    },
+    {
+      "language": "th",
+      "type": "heroe",
+      "title": "เฟอริโอซา · สกิล · เงื่อนไขการพัฒนา | TilesSurvive.net",
+      "description": "ฮีโร่ X-SSR ฝ่าย Rover ที่สนับสนุนแนวหน้า Ragehorn สร้างความเสียหายวงกว้างและสตัน ส่วนสกิลลดพลังป้องกันศัตรูและเสริมพลังเพื่อนร่วมทีมแนวหน้า",
+      "url": "/th/heroes/furiosa/"
+    },
+    {
+      "language": "th",
+      "type": "heroe",
+      "title": "Alita · สกิล · เงื่อนไขการพัฒนา | TilesSurvive.net",
+      "description": "ฮีโร่ X-SSR ฝ่าย Aeronaut ที่กำลังจะมา ใช้ Bad Bunny Mk. I ยิงเลเซอร์และระเบิดแครอท พร้อมลบดีบัฟของตนเองและต้านทานผลควบคุม",
+      "url": "/th/heroes/alita/"
+    },
+    {
+      "language": "tr",
+      "type": "heroe",
+      "title": "Furiosa · Beceriler · Gelişim gereksinimleri | TilesSurvive.net",
+      "description": "Ön sırayı destekleyen Rover grubundan bir X-SSR kahramanı. Ragehorn alan hasarı verir ve sersemletir; yetenekleri düşman savunmasını zayıflatıp öndeki müttefikleri güçlendirir.",
+      "url": "/tr/heroes/furiosa/"
+    },
+    {
+      "language": "tr",
+      "type": "heroe",
+      "title": "Alita · Beceriler · Gelişim gereksinimleri | TilesSurvive.net",
+      "description": "Yakında gelecek Aeronaut grubundan bir X-SSR kahramanı. Bad Bunny Mk. I lazer ve havuç bombalarını, kendi zayıflatmalarını temizleme ve kontrol etkilerine dirençle birleştirir.",
+      "url": "/tr/heroes/alita/"
+    },
+    {
+      "language": "vi",
+      "type": "heroe",
+      "title": "Furiosa · Kỹ năng · Điều kiện phát triển | TilesSurvive.net",
+      "description": "Anh hùng X-SSR phe Rover hỗ trợ hàng trước. Ragehorn gây sát thương diện rộng và choáng; các kỹ năng giảm phòng thủ địch và tăng sức mạnh đồng đội phía trước.",
+      "url": "/vi/heroes/furiosa/"
+    },
+    {
+      "language": "vi",
+      "type": "heroe",
+      "title": "Alita · Kỹ năng · Điều kiện phát triển | TilesSurvive.net",
+      "description": "Anh hùng X-SSR phe Aeronaut sắp ra mắt. Bad Bunny Mk. I kết hợp laser và bom cà rốt với khả năng tự xóa bất lợi và kháng hiệu ứng khống chế.",
+      "url": "/vi/heroes/alita/"
+    },
+    {
+      "language": "ms",
+      "type": "heroe",
+      "title": "Furiosa · Kemahiran · Keperluan pembangunan | TilesSurvive.net",
+      "description": "Wira X-SSR puak Rover yang menyokong barisan hadapan. Ragehorn memberikan kerosakan kawasan dan kejutan; kemahirannya melemahkan pertahanan musuh serta menguatkan sekutu di hadapan.",
+      "url": "/ms/heroes/furiosa/"
+    },
+    {
+      "language": "ms",
+      "type": "heroe",
+      "title": "Alita · Kemahiran · Keperluan pembangunan | TilesSurvive.net",
+      "description": "Wira X-SSR puak Aeronaut yang akan datang. Bad Bunny Mk. I menggabungkan laser dan bom lobak merah dengan penyingkiran kesan negatif sendiri serta rintangan terhadap kawalan.",
+      "url": "/ms/heroes/alita/"
+    },
+    {
+      "language": "nb",
+      "type": "heroe",
+      "title": "Furiosa · Ferdigheter · Utviklingskrav | TilesSurvive.net",
+      "description": "En X-SSR-helt fra Rover-fraksjonen som støtter fremste rad. Ragehorn gir områdeskade og bedøver, mens evnene svekker fiendens forsvar og styrker allierte foran.",
+      "url": "/nb/heroes/furiosa/"
+    },
+    {
+      "language": "nb",
+      "type": "heroe",
+      "title": "Alita · Ferdigheter · Utviklingskrav | TilesSurvive.net",
+      "description": "En kommende X-SSR-helt fra Aeronaut-fraksjonen. Bad Bunny Mk. I kombinerer lasere og gulrotbomber med å fjerne egne svekkelser og motstå kontrolleffekter.",
+      "url": "/nb/heroes/alita/"
     }
   ]
 }

@@ -10,6 +10,7 @@
     let config;
     try { config = JSON.parse(host.querySelector('script[data-atlas-config]')?.textContent || 'null'); } catch (_) { return; }
     const copy = config?.copy;
+    const displayFields = copy?.fields?.status ? [...fields, 'status'] : fields;
     if (!config || typeof config.locale !== 'string' || !copy ||
         ['results', 'empty', 'compareLimit', 'selected', 'remove', 'compare'].some(key => typeof copy[key] !== 'string' || !copy[key].trim()) ||
         fields.some(key => typeof copy.fields?.[key] !== 'string' || !copy.fields[key].trim())) return;
@@ -28,7 +29,7 @@
     if ([controls, query, includeHeld, sort, reset, status, empty, comparison, tableHost, selectedStatus, clear, ...selects.values()].some(node => !node)) return;
 
     const cards = [...host.querySelectorAll('.hero-atlas-card')].map((node, index) => {
-      const values = Object.fromEntries(fields.map(key => [key, node.querySelector('[data-atlas-field="' + key + '"]')?.textContent.trim()]));
+      const values = Object.fromEntries(displayFields.map(key => [key, node.querySelector('[data-atlas-field="' + key + '"]')?.textContent.trim()]));
       const box = node.querySelector('[data-atlas-compare]');
       return {node, index, id: node.dataset.atlasId, identity: node.dataset.identity, publication: node.dataset.publication, values, box,
         detail: node.querySelector('a[data-atlas-detail]'), search: normalize((node.dataset.search || '') + ' ' + (values.name || ''))};
@@ -115,7 +116,7 @@
       }
       head.appendChild(row);table.appendChild(head);
       const body = create('tbody');
-      for (const key of fields.slice(1)) {
+      for (const key of displayFields.slice(1)) {
         const line = create('tr'), label = create('th', copy.fields[key]);label.scope = 'row';line.appendChild(label);
         for (const card of selected.values()) line.appendChild(create('td', card.values[key]));
         body.appendChild(line);

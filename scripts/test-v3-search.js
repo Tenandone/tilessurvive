@@ -9,9 +9,17 @@ const before=Object.fromEntries(sourceFiles.map(file=>[file,digest(file)]));
 const result=B.collect(),shards=result.shards;
 const atlasRoutes=require('./build-hero-atlas-search').atlasRoutes();
 function verifyNameProvenance(item,alias){
-  assert(['site-label','site-alias','retained-client','retained-english-fallback'].includes(alias.source));
-  if(!['retained-client','retained-english-fallback'].includes(alias.source))return false;
+  assert(['site-label','site-alias','retained-client','retained-english-fallback','official-announcement','official-english-fallback'].includes(alias.source));
   const hero=atlasRoutes.get(item.url)?.hero;
+  if(hero?.catalogKind==='official-introduction'&&!['site-label','site-alias'].includes(alias.source)){
+    assert.deepEqual(item.search.clientIds,[],'Introduction has no verified client identity');assert.equal(item.search.hero.clientId,null);
+    const name=hero.names[alias.language];assert(name);assert.equal(alias.value,name.value);
+    assert.equal(alias.source,name.status==='client-official'?'retained-client':name.status==='english-fallback'?'official-english-fallback':'official-announcement');
+    if(name.status==='client-official'){const evidence=require('../data/hero-atlas-publication.json').pending.find(p=>p.id===hero.id).clientLanguageEvidence;assert.equal(alias.termKey,evidence.key);const cohort={'zh-cn':'zh-CN','zh-tw':'zh-TW',ms:'my'}[alias.language]||alias.language;assert(evidence.sources.some(s=>s.cohort==='ingame-apk-'+cohort&&s.value.includes(alias.value)),'Name must be present in the retained localized purchase title');return true;}
+    if(name.status==='english-fallback')assert.equal(alias.value,hero.names.en.value);
+    return false;
+  }
+  if(!['retained-client','retained-english-fallback'].includes(alias.source))return false;
   if(hero){
     assert.deepEqual(item.search.clientIds,[{kind:'hero',id:hero.clientId}],'Route-bound hero client identity');
     assert.equal(item.search.hero?.clientId,hero.clientId);assert.equal(item.search.hero?.nameKey,hero.nameKey);

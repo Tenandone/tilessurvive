@@ -36,7 +36,7 @@ function collect({root=ROOT}={}){
         if(anchor)assert(new RegExp('\\bid=["\\\']'+anchor.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'["\\\']').test(html),'Missing search anchor '+item.url);
         const entityId='page:'+group.id+(anchor?'#'+anchor:'');
         const hero=!anchor?atlas.get(canonicalPath)?.hero:null;
-        const buildingAnchor=anchor.match(/^building-(\d+)$/),clientIds=hero?[{kind:'hero',id:hero.clientId}]:buildingAnchor?buildings.filter(b=>b.id===Number(buildingAnchor[1])).map(b=>({kind:'building',id:b.id})):!anchor&&buildings.length===1?[{kind:'building',id:buildings[0].id}]:[];
+        const buildingAnchor=anchor.match(/^building-(\d+)$/),clientIds=hero?(Number.isSafeInteger(hero.clientId)?[{kind:'hero',id:hero.clientId}]:[]):buildingAnchor?buildings.filter(b=>b.id===Number(buildingAnchor[1])).map(b=>({kind:'building',id:b.id})):!anchor&&buildings.length===1?[{kind:'building',id:buildings[0].id}]:[];
         const primaryName=anchor?item.title:(h1||item.title);
         const row={item,lang,entityId,groupId:group.id,primaryName,ownerName:anchor?h1:'',clientIds,hero};records.push(row);
         if(!entities.has(entityId))entities.set(entityId,[]);entities.get(entityId).push(row);
@@ -56,15 +56,15 @@ function collect({root=ROOT}={}){
   }
   for(const [id,rows] of entities){
     const aliases=new Map();
-    function add(value,language,source,termKey){if(typeof value!=='string'||!value.trim())return;value=value.trim();const key=language+'|'+S.normalize(value),prior=aliases.get(key);if(!prior||source==='retained-client'||(source==='retained-english-fallback'&&prior.source!=='retained-client'))aliases.set(key,{value,language,source,...(termKey?{termKey}:{})});}
+    function add(value,language,source,termKey){if(typeof value!=='string'||!value.trim())return;value=value.trim();const key=language+'|'+S.normalize(value),prior=aliases.get(key),rank={'retained-client':4,'official-announcement':3,'retained-english-fallback':2,'official-english-fallback':2};if(!prior||(rank[source]||0)>(rank[prior.source]||0)||source==='retained-client')aliases.set(key,{value,language,source,...(termKey?{termKey}:{})});}
     for(const row of rows){add(row.primaryName,row.lang,'site-label');add(row.item.aliases,row.lang,'site-alias');}
     // Preserve historical site spellings by explicit route. They remain site
     // aliases, even when the new client layer intentionally falls back to English.
     if(!id.includes('#'))for(const alias of legacy[rows[0].groupId]?.mainAliases||[])add(alias.value,alias.language,'site-alias');
     const hero=rows.find(r=>r.hero)?.hero;
     if(hero){
-      assert(rows.every(r=>r.hero?.clientId===hero.clientId),'Atlas route group must identify one client form');
-      for(const [language,name]of Object.entries(hero.names))if(name.value)add(name.value,language,name.status==='client-official'?'retained-client':'retained-english-fallback',hero.nameKey);
+      assert(rows.every(r=>r.hero?.id===hero.id&&r.hero?.clientId===hero.clientId),'Atlas route group must identify one reviewed identity');
+      for(const [language,name]of Object.entries(hero.names))if(name.value){const source=hero.catalogKind==='official-introduction'?(name.status==='client-official'?'retained-client':name.status==='english-fallback'?'official-english-fallback':'official-announcement'):(name.status==='client-official'?'retained-client':'retained-english-fallback');add(name.value,language,source,hero.nameKey);}
       officialLinks++;
     }
     // Names alone never merge entities. Two retained language labels must agree

@@ -11,8 +11,11 @@ function atlasRoutes(root=ROOT){
  if(!fs.existsSync(dFile)&&!fs.existsSync(rFile))return new Map();
  assert(fs.existsSync(dFile)&&fs.existsSync(rFile),'Atlas client and routes must exist together');
  const data=read(root,'data/hero-atlas-client.json'),routeData=read(root,'data/hero-atlas-routes.json'),map=new Map();
+ const registry=read(root,'data/xssr-heroes.json'),publication=read(root,'data/hero-atlas-publication.json'),additions=require('./client-release-gate').officialAdditions(data,routeData,registry,read(root,'data/i18n/locales.json').locales);
  for(const entry of routeData.heroes){
-  const hero=data.heroes.find(h=>h.id===entry.id);assert(hero&&hero.variant==='base','Only explicit base identity routes are searchable');
+  const retained=data.heroes.find(h=>h.id===entry.id),intro=additions.find(h=>h.id===entry.id);
+  assert(retained?.variant==='base'||intro,'Only explicit reviewed identity routes are searchable');
+  const hero=retained||{...intro,identityId:intro.id,variant:'base',catalogKind:'official-introduction',nameKey:intro.nameKey||publication.pending?.find(p=>p.id===intro.id)?.clientLanguageEvidence?.key};
   for(const [locale,route]of Object.entries(entry.routes)){assert(route.startsWith('/'+locale+'/heroes/'));assert(!map.has(route),'Duplicate atlas route '+route);map.set(route,{hero,locale});}
  }
  return map;
@@ -33,7 +36,7 @@ function collect({root=ROOT}={}){
    assert.equal(new URL(d.querySelector('link[rel="canonical"]')?.getAttribute('href'),ORIGIN).href,ORIGIN+route,'Atlas canonical mismatch '+route);
    const title=clean(d.querySelector('title')?.textContent),description=clean(d.querySelector('meta[name="description"]')?.getAttribute('content'));
    assert(title&&description,'Missing atlas search metadata '+route);
-   const old=byUrl.get(route);assert(old||hero.id==='lava','A retained hero main record must already exist '+route);
+   const old=byUrl.get(route);assert(old||hero.id==='lava'||hero.catalogKind==='official-introduction','A retained hero main record must already exist '+route);
    const record=old?{...old,title,description}:{language:locale,type:'heroe',title,description,url:route};
    localeUpdates.set(route,record);updates.set(route,record);summary.mainRecords++;
    if(old&&JSON.stringify(old)!==JSON.stringify(record))summary.mainRecordsChanged++;
@@ -49,7 +52,7 @@ function collect({root=ROOT}={}){
   assert.deepEqual(items.slice(0,input.items.length).map(i=>i.url),input.items.map(i=>i.url),'Existing URL order');
   for(const item of input.items)if(!localeUpdates.has(item.url)){assert.deepEqual(items.find(i=>i.url===item.url),item);summary.nonMainRecordsPreserved++;}
   assert.equal(new Set(items.map(i=>i.url)).size,items.length);
-  for(const row of additions){assert(row.url===`/${locale}/heroes/lava/`||row.url.startsWith(`/${locale}/heroes/lava/#lava-`));newRows.set(row.url,row);}
+  for(const row of additions){assert(routes.has(row.url)||row.url===`/${locale}/heroes/lava/#lava-skills`||row.url===`/${locale}/heroes/lava/#lava-growth`,'Unreviewed new search route');newRows.set(row.url,row);}
   shards[locale]={...input,itemCount:items.length,items};summary.recordsAdded+=additions.length;summary.shards[locale]={before:input.items.length,after:items.length,added:additions.length};
  }
  const aggregate=read(root,'data/search-index.json');assert.equal(aggregate.itemCount,aggregate.items.length);

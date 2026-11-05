@@ -158,3 +158,17 @@ html.ts-platform.ts3-characters main:has(.hero-guide) .ts3-character-actions a{c
  html.ts-platform.ts3-characters main:has(.hero-guide) .ts3-character-stage .ts3-character-copy>*{margin-block:12px}
  html.ts-platform.ts3-characters main:has(.hero-guide) .ts3-character-stage .ts3-character-copy .ts3-character-identity{margin-top:0}
 }
+/* X-SSR release information and compact growth tables. */
+.hero-atlas-release{display:block;margin:.5rem 0;color:#50665a;font-size:.85rem;font-weight:600}
+[data-release="upcoming"] .hero-atlas-release,[data-hero-release="upcoming"]{color:#865611}
+.hero-guide-announcement .hero-guide-art{margin:0}
+.hero-guide-announcement .hero-guide-art img{width:100%;height:auto;max-height:540px;object-fit:contain;border-radius:18px}
+.hero-guide-art figcaption{font-size:.75rem;text-align:center;color:#50665a;margin-top:.5rem}
+.xssr-table-wrap{max-width:100%;overflow-x:auto;margin:1rem 0;border:1px solid #ccded2;border-radius:12px}
+.xssr-growth-table{width:100%;border-collapse:collapse;font-size:.9rem}
+.xssr-growth-table th,.xssr-growth-table td{padding:.7rem .9rem;text-align:start;border-bottom:1px solid #dce7df;vertical-align:top}
+.xssr-growth-table thead{background:#eef5f0}
+.xssr-growth-table tbody th{font-weight:600;white-space:nowrap}
+.xssr-growth-details{margin:.8rem 0;padding:.75rem 1rem;border:1px solid #ccded2;border-radius:12px}
+.xssr-growth-details summary{cursor:pointer;font-weight:600}
+@media(max-width:480px){.xssr-growth-table th,.xssr-growth-table td{padding:.6rem}.xssr-growth-table{font-size:.8rem}.hero-guide-art figcaption{margin-bottom:1rem}}
