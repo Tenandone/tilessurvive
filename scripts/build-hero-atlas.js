@@ -77,6 +77,7 @@ function asset(file){const stamp=hash(fs.readFileSync(path.join(ROOT,file)));ret
 function project(html,l,routeValue){if(!isOwnedRoute(routeValue))return html;const h=byRoute.has(routeValue)?byId.get(byRoute.get(routeValue).id):null;const d=parseHTML(strip(html)).document,main=d.querySelector('main');assert(main,'Missing atlas main '+routeValue);
  if(!h||X.record(h.id)){const privacy=[...main.querySelectorAll('[data-v3-owned="privacy"]')].map(e=>e.outerHTML).join('');main.innerHTML=block('',h?renderXssr(h,l):renderHub(l))+(privacy?'<!-- TS_V3_PRIVACY_BEGIN -->'+privacy+'<!-- TS_V3_PRIVACY_END -->':'');}
  else{correctIdentity(d,h,l);const stage=d.querySelector('.ts3-character-stage');assert(stage,'Missing original hero stage '+routeValue);stage.insertAdjacentHTML('afterend',block('',profile(h,l)));}
+ require('./lib/image-preloads').removeUnusedImagePreloads(d,['/img/logo-tilessurvive.png']);
  metadata(d,l,routeValue,h);
  if(h&&X.record(h.id)){const n=d.getElementById('ts-locale-routes');assert(n,'Missing Lava locale routes');n.textContent=json(Object.fromEntries(registry.map(info=>[info.code,route(h,info.code)])));const skip=d.querySelector('a.ts-skip');if(skip)skip.setAttribute('href',routeValue+'#main');}
  const assets=[asset('css/hero-atlas.css'),asset('css/hero-pet.css'),...(h&&X.record(h.id)?[asset('css/xssr-detail.css'),asset('js/xssr-growth-calculator.js')]:[]),...(!h?[asset('js/hero-atlas.js')]:[])].join('');d.head.insertAdjacentHTML('beforeend',block('ASSETS_',assets));
