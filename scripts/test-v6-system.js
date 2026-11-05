@@ -42,7 +42,7 @@ function dimensions(node,width=300,scroll=600){for(const [key,value]of Object.en
 
 test('overflowing tables gain a native keyboard stop and localized name without touching data or handlers',()=>{
  const {document,host}=fixture('<div class="xssr-table-wrap"><table><caption>تكلفة النمو</caption><tbody><tr><td>3049</td><td><button id="calc">حساب</button></td></tr></tbody></table></div>','rtl'),node=document.querySelector('.xssr-table-wrap'),button=document.querySelector('#calc'),table=node.querySelector('table'),original=table.outerHTML;
- dimensions(node);let clicked=0;button.addEventListener('click',()=>clicked++);const mounted=R.mount(document,host);
+ dimensions(node);let clicked=0;button.addEventListener('click',()=>clicked++);const mounted=R.mount(document,host);mounted.refresh();
  assert.equal(node.getAttribute('tabindex'),'0');assert.equal(node.getAttribute('role'),'region');assert.equal(node.getAttribute('aria-label'),'تكلفة النمو');assert.equal(table.outerHTML,original);assert.equal(document.querySelector('#calc'),button);button.click();assert.equal(clicked,1);
  node.scrollWidth=250;mounted.refresh();assert.equal(node.getAttribute('tabindex'),null);assert.equal(node.getAttribute('role'),null);assert.equal(node.getAttribute('aria-label'),null);
  node.scrollWidth=700;mounted.refresh();assert.equal(node.getAttribute('tabindex'),'0');mounted.destroy();assert.equal(node.getAttribute('data-v6-scroll'),null);assert.equal(table.outerHTML,original);
@@ -57,7 +57,7 @@ test('dynamic results and nested tables have one scroll stop, and existing seman
 
 test('hidden, non-scrolling and unrelated tables do not add focus noise',()=>{
  const {document,host}=fixture('<div hidden><div class="v4-table-wrap"><table><tr><td>1</td></tr></table></div></div><div class="r60-scroll"><table><tr><td>2</td></tr></table></div><div id="unowned"><table><tr><td>3</td></tr></table></div>');
- dimensions(document.querySelector('.v4-table-wrap'));dimensions(document.querySelector('.r60-scroll'),500,300);const mounted=R.mount(document,host);assert.equal(document.querySelectorAll('[tabindex]').length,0);assert.equal(document.querySelector('#unowned').getAttribute('data-v6-scroll'),null);mounted.destroy();
+ dimensions(document.querySelector('.v4-table-wrap'));dimensions(document.querySelector('.r60-scroll'),500,300);const mounted=R.mount(document,host);mounted.refresh();assert.equal(document.querySelectorAll('[tabindex]').length,0);assert.equal(document.querySelector('#unowned').getAttribute('data-v6-scroll'),null);mounted.destroy();
 });
 
 test('whole-card presentation uses original native links and preserves comparison, secondary links and expandable content',()=>{
@@ -144,14 +144,30 @@ test('observed catalog additions normalize only the new subtree and retain indep
 test('table layout reads are batched before ARIA writes and content updates measure only their own scroll region',()=>{
  const {document}=fixture('<div class="r60-scroll"><table><tr><td>1</td></tr></table></div><div class="v4-table-wrap"><table><tr><td>2</td></tr></table></div>'),events=observedHost(),nodes=[...document.querySelectorAll('.r60-scroll,.v4-table-wrap')],operations=[];
  for(const [id,node]of nodes.entries()){for(const [key,value]of Object.entries({clientWidth:300,scrollWidth:600,clientHeight:200,scrollHeight:200}))Object.defineProperty(node,key,{get(){operations.push(['read',id,key]);return value;}});const set=node.setAttribute.bind(node);node.setAttribute=(...args)=>{operations.push(['write',id,args[0]]);return set(...args);};}
- const api=R.mount(document,events.host),firstWrite=operations.findIndex(x=>x[0]==='write');assert(firstWrite>0);assert(operations.slice(firstWrite).every(x=>x[0]!=='read'),'All table layout must be read before attribute writes');
+ const api=R.mount(document,events.host);assert.equal(operations.length,0,'Mount must not read geometry or write table ARIA');events.resize(nodes);const firstWrite=operations.findIndex(x=>x[0]==='write');assert(firstWrite>0);assert(operations.slice(firstWrite).every(x=>x[0]!=='read'),'All table layout must be read before attribute writes');
  operations.length=0;const cell=nodes[0].querySelector('td'),old=cell.firstChild;cell.textContent='123456789';events.mutate([{target:cell,addedNodes:[cell.firstChild],removedNodes:[old]}]);events.flush();assert(operations.some(x=>x[0]==='read'));assert(operations.every(x=>x[1]===0),'A table update cannot measure an unrelated table');assert.equal(nodes[0].getAttribute('tabindex'),'0');
  operations.length=0;events.resize([nodes[1]]);events.flush();assert(operations.some(x=>x[0]==='read'));assert(operations.every(x=>x[1]===1));api.destroy();
 });
 
 test('an observed initially empty table wrapper becomes accessible and nested replacements retain one scroll stop',()=>{
- const {document}=fixture('<div class="ts-table-wrap"></div>'),events=observedHost(),outer=document.querySelector('.ts-table-wrap');dimensions(outer);const api=R.mount(document,events.host);outer.innerHTML='<table><tr><td>1</td></tr></table>';events.mutate([{target:outer,addedNodes:[outer.firstElementChild],removedNodes:[]}]);events.flush();assert.equal(outer.getAttribute('tabindex'),'0');
+ const {document}=fixture('<div class="ts-table-wrap"></div>'),events=observedHost(),outer=document.querySelector('.ts-table-wrap');dimensions(outer);const api=R.mount(document,events.host);outer.innerHTML='<table><tr><td>1</td></tr></table>';events.mutate([{target:outer,addedNodes:[outer.firstElementChild],removedNodes:[]}]);events.flush();assert.equal(outer.getAttribute('tabindex'),null);events.resize([outer]);assert.equal(outer.getAttribute('tabindex'),'0');
  const old=outer.firstElementChild;outer.innerHTML='<div class="r60-scroll"><table><tr><td>2</td></tr></table></div>';const inner=outer.firstElementChild;dimensions(inner);events.mutate([{target:outer,addedNodes:[inner],removedNodes:[old]}]);events.flush();assert.equal(outer.getAttribute('tabindex'),null);assert.equal(inner.getAttribute('tabindex'),'0');assert.equal(document.querySelectorAll('[tabindex="0"]').length,1);api.destroy();
+});
+
+test('mount and automatic updates never read initial geometry before the first ResizeObserver layout result',()=>{
+ const {document}=fixture('<article class="hero-atlas-card"><h3>Lava</h3><a href="/en/heroes/lava/">Details</a></article><div class="r60-scroll"><table><caption>Growth</caption><tr><td>10</td></tr></table></div>'),events=observedHost(),node=document.querySelector('.r60-scroll');let layoutDelivered=false,reads=0;
+ for(const [key,value]of Object.entries({clientWidth:300,scrollWidth:600,clientHeight:200,scrollHeight:200}))Object.defineProperty(node,key,{get(){assert(layoutDelivered,'Geometry forced before natural initial layout');reads++;return value;}});
+ const api=R.mount(document,events.host);assert.equal(reads,0);assert.equal(node.getAttribute('tabindex'),null);assert(document.querySelector('.hero-atlas-card[data-v61-card] a[data-v61-link]'),'Native card enhancement is immediate');
+ const cell=node.querySelector('td'),old=cell.firstChild;cell.textContent='123456';events.mutate([{target:cell,addedNodes:[cell.firstChild],removedNodes:[old]}]);document.dispatchEvent(new document.defaultView.Event('change'));document.dispatchEvent(new document.defaultView.Event('toggle'));events.flush();assert.equal(reads,0,'Pending mutation/change/toggle cannot pull initial reads forward');
+ layoutDelivered=true;events.resize([node]);assert(reads>0);assert.equal(node.getAttribute('tabindex'),'0');assert.equal(node.getAttribute('role'),'region');assert.equal(node.getAttribute('aria-label'),'Growth');api.destroy();assert.equal(node.getAttribute('tabindex'),null);const before=reads;events.resize([node]);events.flush();assert.equal(reads,before,'Destroyed observers cannot read layout');
+});
+
+test('without ResizeObserver initial table reads wait for a paint opportunity and pending fallback is cancellable',()=>{
+ for(const cancel of [false,true]){const {document}=fixture('<div class="r60-scroll"><table><tr><td>1</td></tr></table></div>'),events=observedHost(),node=document.querySelector('.r60-scroll');delete events.host.ResizeObserver;let reads=0;
+  for(const [key,value]of Object.entries({clientWidth:300,scrollWidth:600,clientHeight:200,scrollHeight:200}))Object.defineProperty(node,key,{get(){reads++;return value;}});
+  const api=R.mount(document,events.host);assert.equal(reads,0);assert.equal(events.pending(),1);events.flush();assert.equal(reads,0,'The first animation frame must not force initial layout');assert.equal(events.pending(),1);
+  if(cancel){api.destroy();assert.equal(events.pending(),0);events.flush();assert.equal(reads,0);}else{events.flush();assert(reads>0);assert.equal(node.getAttribute('tabindex'),'0');api.destroy();}
+ }
 });
 
 test('normalized artwork binds each untouched authentic source to an existing deterministic artboard',()=>{
