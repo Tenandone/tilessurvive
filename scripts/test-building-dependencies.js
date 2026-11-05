@@ -151,7 +151,7 @@ test('all six languages preserve every prerequisite in public JSON, desktop tabl
       }
     }
   }
-  assert.deepEqual(counts, {pages:132,profileRows:8952,desktopRows:8952,mobileRows:8952,prerequisites:9216,multipleConditionRows:216,unlinkedConditions:36});
+  assert.deepEqual(counts, {pages:132,profileRows:4566,desktopRows:4566,mobileRows:4566,prerequisites:4818,multipleConditionRows:204,unlinkedConditions:30});
   t.diagnostic(JSON.stringify(counts));
 });
 
@@ -163,7 +163,7 @@ test('empty, unknown, initial unlock and construction-item conditions remain dis
       row.requirements = state === 'unknown' ? null : [];
       delete row.availability;
       if (state === 'initial_conditions_unconfirmed') row.availability = state;
-      const d = documentOf(runtime.renderProfile(building, {id:'original',rows:[row]}, cfg));
+      const d = documentOf(runtime.renderProfile(building, {id:'unified',rows:[row]}, cfg));
       verifyConditions(d.querySelector('td.condition'), row, cfg, `${lang}:${state}:desktop`);
       verifyConditions(d.querySelector('.card-conditions'), row, cfg, `${lang}:${state}:mobile`);
     }

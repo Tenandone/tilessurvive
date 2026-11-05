@@ -137,22 +137,24 @@ function inlineProgram(code, locale, translate, context) {
   }
   return code;
 }
-function unifiedPowerPlantOwner(document, group) {
+function unifiedBuildingOwner(document, group) {
   const route=group.id || group.routes?.en?.replace(/^\/en\//,'');
-  if(route!=='buildings/power-plant/')return null;
-  const host=document.querySelector('[data-building-system="power-plant"]');
+  const match=route?.match(/^buildings\/([^/]+)\/$/);
+  if(!match||!require('./building-data-registry').slugs.includes(match[1]))return null;
+  const slug=match[1],host=document.querySelector('[data-building-system="'+slug+'"]');
   const script=host?.querySelector('[data-building-system-model]');
   if(!script)return null;
   const cfg=JSON.parse(script.textContent);
-  if(cfg.slug!=='power-plant'||cfg.buildings?.length!==1||cfg.buildings[0].id!==800005||cfg.buildings[0].profiles?.length!==1||cfg.buildings[0].profiles[0].id!=='unified')return null;
+  if(cfg.slug!==slug||!cfg.buildings?.length||!cfg.buildings.every(b=>b.profiles?.length===1&&b.profiles[0].id==='unified'))return null;
+  const nativeConfig=require('./build-buildings-unified').localizedConfig(cfg,cfg.lang,slug);
   // These captions, examples and totals are renderer-owned combinations of the
   // translated model labels. Recompose them instead of cataloguing each numeric
   // combination. Refuse unexpected authored content rather than dropping it.
   const renderer=require('./build-building-system').sheetFromConfig;
   const before=host.cloneNode(true),anchors=[...before.querySelectorAll('[data-bs-legacy-anchor]')];
   for(const anchor of anchors)anchor.remove();
-  const expected=parseHTML(renderer(cfg)).document.querySelector('[data-building-system]');
-  if(before.outerHTML!==expected.outerHTML)throw Error('Unexpected content in unified Power Plant renderer owner: '+group.file);
+  const expected=parseHTML(renderer(nativeConfig)).document.querySelector('[data-building-system]');
+  if(before.outerHTML!==expected.outerHTML)throw Error('Unexpected content in unified '+(slug==='power-plant'?'Power Plant':'building')+' renderer owner: '+group.file);
   return {host,script,renderer,anchors};
 }
 function localizePage(source, locale, group, groups, translator) {
@@ -173,7 +175,7 @@ function localizePage(source, locale, group, groups, translator) {
   if(source.includes('data-hero-atlas-owned'))require('./build-hero-atlas').validateOwnership(source,'en',group.routes.en);
   if(source.includes('data-v3-platform'))require('./build-v3-platform').validateOwnership(source,'en',group.routes.en);
   const {document}=parseHTML(source), info=L.byCode.get(locale), t=contextualTranslator(locale,group,translator);
-  const powerOwner=unifiedPowerPlantOwner(document,group);
+  const powerOwner=unifiedBuildingOwner(document,group);
   // These inherited top-up links remain in place when the TEN owner is
   // regenerated. Validate the English owner above, then localize only their
   // route and the retained affiliate-policy link label. Benefit prose stays
@@ -221,10 +223,10 @@ function localizePage(source, locale, group, groups, translator) {
     script.textContent=JSON.stringify(translated).replace(/</g,'\\u003c');
   }
   if(powerOwner) {
-    const cfg=JSON.parse(powerOwner.script.textContent);
+    const translated=JSON.parse(powerOwner.script.textContent),cfg=require('./build-buildings-unified').localizedConfig(translated,locale,translated.slug);
     cfg.copy.sample=cfg.locale.labels.levelPrefix+'2';
     const replacement=parseHTML(powerOwner.renderer(cfg)).document.querySelector('[data-building-system]');
-    for(const anchor of [...powerOwner.anchors].reverse())if(!replacement.querySelector('[id="'+anchor.id+'"]'))replacement.prepend(anchor);
+    require('./build-buildings-unified').restoreAnchors(replacement,powerOwner.host);
     powerOwner.host.replaceWith(replacement);
   }
   for(const script of document.querySelectorAll('script:not([src])')) if(!script.type?.includes('json')&&!script.closest('[data-v3-owned],[data-hero-atlas-owned],[data-hero-pet-owned],[data-v4-owned],[data-v5-owned],[data-gift-owned],[data-nuclear-owned]'))script.textContent=inlineProgram(script.textContent,locale,t,group.file);

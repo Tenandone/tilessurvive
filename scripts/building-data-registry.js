@@ -18,6 +18,7 @@ const sourceFiles = [
 ];
 const sources = sourceFiles.map(file => require(path.join(root, file)));
 const unifiedPower = require('./build-power-plant-unified-data').validateModel(require('../data/power-plant-unified.json'), sources[0]);
+const {unifyBuilding} = require('./building-data/unified');
 const langs = ['ko', 'en', 'ja', 'ru', 'zh-tw', 'de'];
 const clone = value => structuredClone(value);
 
@@ -143,26 +144,16 @@ const pick = (object, fields) => Object.fromEntries(fields.filter(field => Objec
 const publicName = name => pick(name, langs);
 function publicBuildings(slug) {
   assert(slugs.includes(slug), `Unknown building route ${slug}`);
-  const selected = model.buildings.filter(building => building.slug === slug).map(building => {
-    if (building.id !== 800005) return building;
-    // Keep the immutable raw registry (including both AB profiles) separate
-    // from this approved publication. All displayed values share this model.
-    const prerequisiteRows = building.profiles.find(profile => profile.id === 'd').rows;
-    const numericRows = building.profiles.find(profile => profile.id === 'original').rows;
-    return {...building, profiles: [{id: unifiedPower.profile, rows: unifiedPower.rows.map(row => ({
-      ...clone(row),
-      requirements: row.requirements.map(requirement => {
-        const source = prerequisiteRows.find(r => r.level === row.level && r.rank === row.rank).requirements.find(q => q.buildingId === requirement.buildingId && q.level === requirement.level && q.rank === requirement.rank);
-        assert(source, 'Missing translated Power Plant prerequisite identity');
-        return {...clone(requirement), ...(source.slug ? {slug: source.slug} : {}), ...(source.name ? {name: clone(source.name)} : {})};
-      }),
-      constructionItems: row.constructionItems.map(item => {
-        const source = numericRows.find(r => r.level === row.level && r.rank === row.rank).constructionItems.find(q => q.id === item.id);
-        assert(source?.name, 'Missing translated Power Plant construction item');
-        return {...clone(item), name: clone(source.name)};
-      })
-    }))}]};
-  });
+  const selected = model.buildings.filter(building => building.slug === slug).map(building => unifyBuilding(building,{resourceCount:model.resources.length}));
+  const power = selected.find(building => building.id === 800005);
+  if (power) {
+    const rows = power.profiles[0].rows.map(row => ({
+      ...pick(row,['level','rank','resources','seconds','battlePower']),
+      constructionItems:row.constructionItems.map(item=>pick(item,['id','quantity'])),
+      requirements:row.requirements.map(requirement=>pick(requirement,['buildingId','level','rank']))
+    }));
+    assert.deepEqual(rows,unifiedPower.rows,'Generic building join must preserve the approved Power Plant model exactly');
+  }
   return selected.map(building => ({
     id: building.id,
     slug: building.slug,

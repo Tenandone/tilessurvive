@@ -1,13 +1,16 @@
 'use strict';
 // In-memory owner projections only: no generated HTML, source facts or assets are written.
-const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),{parseHTML}=require('linkedom');
+const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto'),{parseHTML}=require('linkedom');
 const N=require('./build-nuclear-age'),S=require('./build-v6-system'),G=require('./build-global-locales'),DE=require('./build-german-50'),CN=require('./build-simplified-chinese'),L=require('./lib/global-localization'),V4=require('./v4-workbench-content');
 const registry=require('../data/i18n/locales.json').locales,M=require('../data/nuclear-age.json'),TEN=require('../data/ten-benefits-policy.json').tenUrl;
 const locales=registry.map(x=>x.code),groups=L.routeGroups(),guide=groups.find(g=>g.id==='eras/nuclear-age/'),tools=groups.find(g=>g.id==='tools/');
 const documentOf=html=>parseHTML(html).document,read=(l,g=guide)=>fs.readFileSync(path.join(N.ROOT,g.routes[l],'index.html'),'utf8');
 const fresh=(l,g=guide)=>S.project(g===guide?N.project(read(l,g),l,g.routes[l]):N.projectLinks(read(l,g),l,g.routes[l]),l,g.routes[l]);
 const numeric=cfg=>cfg.buildings.map(b=>({id:b.id,stages:b.stages.map(s=>({id:s.id,fuel:s.fuel}))}));
-const expectedNumeric=[...M.buildings.map(b=>({id:b.id,stages:b.stages.map(s=>({id:s.sourceId,fuel:s.nuclearFuel}))})),{id:M.factory.id,stages:M.factory.levels.map(s=>({id:s.sourceId,fuel:s.nuclearFuel}))}];
+const originalIds=[800005,800007,800008,800009,800010,800419],configuredIds=[800012,800168,800016,800152,800142,800147,800148,800149,800150];
+const expectedBuildingIds=[...originalIds.slice(0,5),...configuredIds,800419];
+const expectedNumeric=[...[...M.buildings,...M.configuredBuildings].map(b=>({id:b.id,stages:b.stages.map(s=>({id:s.sourceId,fuel:s.nuclearFuel}))})),{id:M.factory.id,stages:M.factory.levels.map(s=>({id:s.sourceId,fuel:s.nuclearFuel}))}];
+const digest=rows=>crypto.createHash('sha256').update(JSON.stringify(rows)).digest('hex');
 const ui=l=>require('../data/i18n/ui/'+l+'.json');
 const ads=d=>[...d.querySelectorAll('script')].filter(n=>/adsbygoogle|googlesyndication|fundingchoices|__tcfapi|__gpp/i.test(n.outerHTML)).map(n=>n.outerHTML);
 const slots=d=>[...d.querySelectorAll('[data-ad-client],[data-ad-slot]')].map(n=>[n.getAttribute('data-ad-client'),n.getAttribute('data-ad-slot')]);
@@ -17,11 +20,16 @@ function checkGuide(html,l,source){
  assert(N.validateOwnership(html,l));const language=L.byCode.get(l);assert([language.htmlLang,...language.aliases].map(x=>x.toLowerCase()).includes(d.documentElement.lang.toLowerCase()),l+' has an unregistered language tag');assert.equal(d.documentElement.dir||'ltr',language.dir);
  assert.equal(d.querySelector('[data-nuclear-owned="guide"] h1').textContent,c.title);assert.equal(d.querySelector('meta[name="description"]').content,c.description);
  assert.deepEqual(cfg,N.calculatorConfig(l));assert.deepEqual(numeric(cfg),expectedNumeric,l+' source IDs, fuel requirements and unknown values');
- assert.deepEqual(cfg.buildings.map(b=>b.id),[800005,800007,800008,800009,800010,800419]);assert.equal(cfg.buildings.flatMap(b=>b.stages).length,87);
- assert.equal(cfg.buildings[0].stages[0].fuel,null);assert.equal(cfg.buildings[5].stages[0].fuel,null);assert.equal(cfg.buildings[1].stages.reduce((n,s)=>n+s.fuel,0),1944);
+ assert.deepEqual(cfg.buildings.map(b=>b.id),expectedBuildingIds);assert.equal(cfg.buildings.flatMap(b=>b.stages).length,222);
+ const original=numeric(cfg).filter(b=>originalIds.includes(b.id)),configured=numeric(cfg).filter(b=>configuredIds.includes(b.id));
+ // Exact original 87 rows from 90b72553e and 135 rows from the pinned client extraction.
+ assert.equal(original.flatMap(b=>b.stages).length,87);assert.equal(digest(original),'d13a68dc32d7823cd1fe1d787343ff5241340826d01b1e07ff4fa3af12d59fe3');
+ assert.equal(configured.flatMap(b=>b.stages).length,135);assert.equal(digest(configured),'3a26eadfd2970a906508352209a1ae9ac1f6285ebff67395205e943504b889b3');
+ assert.equal(cfg.buildings[0].stages[0].fuel,null);assert.equal(cfg.buildings[14].stages[0].fuel,null);assert.equal(cfg.buildings[1].stages.reduce((n,s)=>n+s.fuel,0),1944);
  const nf=new Intl.NumberFormat(L.byCode.get(l).numberLocale),rows=[...d.querySelectorAll('tr[data-stage-id]')],stages=expectedNumeric.flatMap(b=>b.stages);
- assert.equal(rows.length,87);rows.forEach((row,i)=>{assert.equal(Number(row.dataset.stageId),stages[i].id);assert.equal(row.querySelector('td').textContent,stages[i].fuel===null?c.unknownValue:nf.format(stages[i].fuel));});
- for(const b of [...M.buildings,M.factory])assert(d.querySelector('[data-nuclear-owned="guide"]').textContent.includes(b.names[l]),l+' lost native building name '+b.id);
+ assert.equal(rows.length,222);assert.equal(new Set(rows.map(row=>row.dataset.stageId)).size,222);rows.forEach((row,i)=>{assert.equal(Number(row.dataset.stageId),stages[i].id);assert.equal(row.querySelector('td').textContent,stages[i].fuel===null?c.unknownValue:nf.format(stages[i].fuel));});
+ const options=[...d.querySelectorAll('[data-nuclear-planner] select[name="building"] option')];assert.deepEqual(options.map(n=>Number(n.value)),expectedBuildingIds);
+ for(const b of [...M.buildings,...M.configuredBuildings,M.factory]){assert(d.querySelector('[data-nuclear-owned="guide"]').textContent.includes(b.names[l]),l+' lost native building name '+b.id);assert.equal(options.find(n=>Number(n.value)===b.id).textContent,b.names[l],l+' option name '+b.id);}
  assert.equal(d.querySelector('link[rel="canonical"]').href,L.publicOrigin+N.route(l));assert.equal(d.querySelectorAll('link[rel="alternate"][hreflang]').length,22);
  for(const x of registry)assert.equal(d.querySelector('link[hreflang="'+x.hreflang+'"]').href,L.publicOrigin+N.route(x.code));
  assert.deepEqual(JSON.parse(d.getElementById('ts-locale-routes').textContent),Object.fromEntries(locales.map(x=>[x,N.route(x)])));
@@ -60,7 +68,7 @@ test('German and Simplified Chinese guide and tools regeneration use their exact
  assert(CN.validateRouteManifest(groups));assert.throws(()=>CN.validateRouteManifest(groups.filter(g=>g!==guide)),/Nuclear|nuclear|reviewed/i);
 });
 
-test('all 21 native projections share the same 87 source rows and remain idempotent',()=>{
+test('all 21 native projections share the same 222 source rows and preserve the original 87 while remaining idempotent',()=>{
  for(const l of locales){const before=read(l),after=fresh(l);checkGuide(after,l,before);assert.equal(S.project(N.project(after,l),l,N.route(l)),after,l+' native reprojection');}
 });
 

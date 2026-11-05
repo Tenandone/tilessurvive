@@ -1,7 +1,7 @@
 'use strict';
 // New, bounded projection. Retained CFG and all existing public models are read-only.
 const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict'),crypto=require('node:crypto');
-const ROOT=path.resolve(__dirname,'..'),B=require('./building-data-registry'),R=require('../data/content-60/research-phase3/model.json');
+const ROOT=path.resolve(__dirname,'..'),B=require('./building-data-registry'),R=require('../data/content-60/research-phase3/model.json'),{projectBuildings}=require('./sync-v4-building-projection');
 const codes=require('../data/i18n/locales.json').locales.map(x=>x.code),clientCodes={ko:'ko',en:'en',ja:'ja',ru:'ru','zh-tw':'zh-TW',de:'de','zh-cn':'zh-CN',nl:'nl',fr:'fr',id:'id',it:'it',pl:'pl',pt:'pt',es:'es',sv:'sv',th:'th',tr:'tr',ms:'my'};
 const clone=x=>JSON.parse(JSON.stringify(x)),sha=x=>crypto.createHash('sha256').update(x).digest('hex');
 function createModel(sourceDir){
@@ -14,7 +14,7 @@ function createModel(sourceDir){
  const referenceNames={};function reference(id,n){if(!referenceNames[id])referenceNames[id]=existing(n);return id;}
  const resources=B.model.resources.map(r=>({id:r.id,...existing(r.name)})),resourceIds=resources.map(r=>r.id);
  const types=new Map(table('building_type').map(r=>[r.InternalId,r]));
- const buildings=B.slugs.flatMap(slug=>B.publicBuildings(slug)).map(b=>({id:b.id,slug:b.slug,...existing(b.name),profiles:b.profiles.map(p=>({id:p.id,rows:p.rows.map(r=>({level:r.level,rank:r.rank,resources:clone(r.resources),seconds:r.seconds,battlePower:r.battlePower??null,constructionItems:clone(r.constructionItems),requirements:r.requirements===null?null:r.requirements.map(q=>({buildingId:reference(q.buildingId,q.name||B.names[q.buildingId]||{en:String(q.buildingId)}),level:q.level,rank:q.rank,route:B.links[q.buildingId]?'/buildings/'+B.links[q.buildingId]+'/':null})),blocked:r.availability==='initial_conditions_unconfirmed'}))}))}));
+ const buildings=projectBuildings({root:ROOT,labels:b=>existing(b.name),reference});
  assert.equal(new Set(buildings.map(b=>b.id)).size,buildings.length,'Duplicate building');
  const research=R.groups.map(g=>({id:g.id,treeId:g.treeId,...existing(g.names),route:'/database/research/?group='+g.id,levels:g.levels.map(r=>({level:r.level,totalPower:r.totalPower,resources:null,seconds:null,requirements:r.conditions.references.map(q=>({kind:q.kind,id:q.kind==='building'?reference(q.targetId,q.names):q.targetId,level:q.level,rank:q.rank,route:q.route})),additionalConditions:r.conditions.hasAdditionalConditions})),reasonCodes:['researchCostEncoding','researchConditionLogic']}));
  table('research_main');

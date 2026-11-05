@@ -9,10 +9,11 @@
  }
  function mountSummary(document){
   var host=document&&document.querySelector('[data-nuclear-fuel-summary]');if(!host||host.dataset.nuclearFuelMounted==='true')return;
-  var buttons=host.querySelectorAll('[data-nuclear-fuel-mode]'),panels=host.querySelectorAll('[data-nuclear-fuel-panel]');
-  function select(mode){if(mode!=='incremental'&&mode!=='cumulative')return;buttons.forEach(function(button){button.setAttribute('aria-pressed',String(button.dataset.nuclearFuelMode===mode));});panels.forEach(function(panel){panel.hidden=panel.dataset.nuclearFuelPanel!==mode;});host.dataset.nuclearFuelMode=mode;}
-  buttons.forEach(function(button){button.addEventListener('click',function(){select(button.dataset.nuclearFuelMode);});});
-  host.dataset.nuclearFuelMounted='true';select('incremental');
+  var buttons=host.querySelectorAll('[data-nuclear-fuel-mode]'),scopes=host.querySelectorAll('[data-nuclear-fuel-scope-control]'),panels=host.querySelectorAll('[data-nuclear-fuel-panel]'),downloads=host.querySelectorAll('[data-nuclear-fuel-download-scope]'),mode='incremental',scope='tree';
+  function update(){buttons.forEach(function(button){button.setAttribute('aria-pressed',String(button.dataset.nuclearFuelMode===mode));});scopes.forEach(function(button){button.setAttribute('aria-pressed',String(button.dataset.nuclearFuelScopeControl===scope));});panels.forEach(function(panel){panel.hidden=panel.dataset.nuclearFuelPanel!==mode||panel.dataset.nuclearFuelScope!==scope;});downloads.forEach(function(link){link.hidden=link.dataset.nuclearFuelDownloadScope!==scope;});host.dataset.nuclearFuelMode=mode;host.dataset.nuclearFuelScope=scope;}
+  buttons.forEach(function(button){button.addEventListener('click',function(){var next=button.dataset.nuclearFuelMode;if(next!=='incremental'&&next!=='cumulative')return;mode=next;update();});});
+  scopes.forEach(function(button){button.addEventListener('click',function(){var next=button.dataset.nuclearFuelScopeControl;if(next!=='tree'&&next!=='all')return;scope=next;update();});});
+  host.dataset.nuclearFuelMounted='true';update();
  }
  function mount(document){
   mountSummary(document);

@@ -1,127 +1,284 @@
 {
-  "schemaVersion": 1,
-  "projectionSHA256": "f2432e49ffc54475d3e1d28ce7b68f44a9839e606c28c6551c91d2717ba8bbf7",
+  "schemaVersion": 2,
+  "projectionSHA256": {
+    "all": "35c97889ae8d13052b240dabc2706d3addb09efc7fbec509aa8463c2793bd3cb",
+    "tree": "7afde10fdc40668136de0e9f8b9f8314966cda0a537ebe231306cae740554d11"
+  },
   "sources": {
-    "data/nuclear-age.json": "f3072eb82bdf08bf16c37be9f4db4f2feebcaab1e6f6580acb5689786ef3b14b",
-    "data/nuclear-fuel-copy.json": "e295cea880d6bfed2355c89a1cda42f90c76b8f488730a170c5c0651021590ae",
+    "data/nuclear-age.json": "85c35b69226787bc221a96f8e07ad90cacb4dd9a77a595fcb332a69cfa441b86",
+    "data/nuclear-fuel-copy.json": "2f1963ce243b45d1f47778ece105a9d6875a2b9e3b09bb811701111852d855ff",
     "data/i18n/locales.json": "b604d858cae600ac7b228618464e5cb4909a3d661045edb7b8db97ace61d3537",
-    "js/nuclear-age.js": "f4ddae08bea1bd4bef6d52c4a68f51a7b3c31af6cb2075ebeedc36dba4ea70eb",
-    "scripts/nuclear-fuel-summary.js": "02d799bd1d2e45559baa3158cce954b298798316847ce139b1824b17d1c4ea65",
-    "scripts/build-nuclear-fuel-poster.js": "969e7e942d69438961ccf7907040d4cabe5d1bb761c9367ce9c2780a1ffdaffb"
+    "js/nuclear-age.js": "4c7211b86e6c7b67c2f067e61f4f4aeb8c76c44b1cbd2fd93000f996d4c67156",
+    "scripts/nuclear-fuel-summary.js": "06e23513c5267154db149347605f2724599b34bbf039e39b50c53b54d054cc3a",
+    "scripts/build-nuclear-fuel-poster.js": "54c6db9c76549a312b55e2d5db49820b6b89962a9d0fabf7102ecc589420dcb5"
   },
   "images": {
+    "/img/nuclear-age/aegis-monument.png": "1e1e35774e53311625109e78dcc2e333afc677b6b6ad544395758265ae8afed2",
+    "/img/nuclear-age/artifact-workshop.png": "be514ef751ba205a3515c27b535cacc5211cac99416217c93aee8e0422fbb698",
     "/img/nuclear-age/barracks.webp": "900d483195514f50ee5987a484c047aff93327edd40c866fce03e5865596cc70",
+    "/img/nuclear-age/comms-outpost.png": "af11076094c5e06523db5e1e43f905a99f026935aa2fec0f98840ab318af5634",
     "/img/nuclear-age/fuel.webp": "8fa18baafa5b0405b14eab1fb17e7f132b4694b6a33aedb5e5d1cd9863db6d9f",
+    "/img/nuclear-age/garrison-station.png": "269c5c0ba77a017e6bbd54fddc3899cd7538ded51249932110a460ac5460dc9b",
+    "/img/nuclear-age/guardian-of-life-monument.png": "b8fc5df9984537b137aa72183258d0bdd9b315d51a4e8cc121bb464eba464a9f",
+    "/img/nuclear-age/hero-academy.png": "b01f7a403bdd1a573b9bbd7bcb93877143f00acd23d9bb3b2b90d30a8160c7eb",
     "/img/nuclear-age/hospital.webp": "8cbf5b86c65c6850e9e300157a2245bcd710f9b97bac5be426b2b34cdd41927d",
     "/img/nuclear-age/laboratory.png": "72d5079208d500195551d48c7f02ebdf9f976be102fd416ba22734bcb9fdef5a",
     "/img/nuclear-age/power-plant.webp": "fa2449fb5eed52812ee8cb1e19e340a04856ea76f04124eeb057c0349899783c",
-    "/img/nuclear-age/stage-emblem.png": "753bedb4690d69e6f1af9aa1b31a291599d2b5e5765c11c262a37f148ed41da0"
+    "/img/nuclear-age/stage-emblem.png": "753bedb4690d69e6f1af9aa1b31a291599d2b5e5765c11c262a37f148ed41da0",
+    "/img/nuclear-age/warbringer-monument.png": "daf223158650787e5dc7e1b65883cd72a46a1d022d165f09112c04bf29b16972"
   },
   "outputs": {
     "img/nuclear-age/fuel-table-en.svg": {
-      "sha256": "89e1c954c30bc9b79e91fd2d143ca9034f14f205c39b38f03dce5a5e902fdbe9",
-      "bytes": 455905,
-      "locale": "en"
+      "sha256": "356fd809d02468017eaf75dd35e4d6b1d2a2954356093b42cb9dcc0f55f5d1ce",
+      "bytes": 1120245,
+      "locale": "en",
+      "scope": "all"
+    },
+    "img/nuclear-age/fuel-table-tree-en.svg": {
+      "sha256": "c7d9117d0f18a821e51a68eb9ef671a83407cd6ce9f1925ea68e90e2a3b0bd39",
+      "bytes": 442134,
+      "locale": "en",
+      "scope": "tree"
     },
     "img/nuclear-age/fuel-table-ko.svg": {
-      "sha256": "4baa1b86fdcf7bc80f8ffaba12a38967683c61b9ffb8ee6f234e95afcfb7028b",
-      "bytes": 455960,
-      "locale": "ko"
+      "sha256": "47cbd43de2a3b6dab05b5e9c62db61c340d06bb6e8c885fe0b5c68bcd20b210d",
+      "bytes": 1120278,
+      "locale": "ko",
+      "scope": "all"
+    },
+    "img/nuclear-age/fuel-table-tree-ko.svg": {
+      "sha256": "56aeca55939c5b6afe16c38bc0e49ae5085a1ec4ef4834c8c4131759bbc81c60",
+      "bytes": 442018,
+      "locale": "ko",
+      "scope": "tree"
     },
     "img/nuclear-age/fuel-table-ja.svg": {
-      "sha256": "5c2e96b78726817c64f414744be4e30d64c19c9a733723481b3f63d26ea5b4c5",
-      "bytes": 455982,
-      "locale": "ja"
+      "sha256": "a4baab4f642ce332e2daa14cfff42d49813c3d1676e8be4a65a043cf30f5143d",
+      "bytes": 1120291,
+      "locale": "ja",
+      "scope": "all"
+    },
+    "img/nuclear-age/fuel-table-tree-ja.svg": {
+      "sha256": "3d1e315579c00a2115b0d77d0ab9d05759962ecb36a139e8fff41c47d194f872",
+      "bytes": 442132,
+      "locale": "ja",
+      "scope": "tree"
     },
     "img/nuclear-age/fuel-table-zh-tw.svg": {
-      "sha256": "fcd7930b675c31aba966c0aa83c9c2ca49b3cfa0f6cd629a985da34515da7de0",
-      "bytes": 455525,
-      "locale": "zh-tw"
+      "sha256": "f323abf95b623e640a0fdfb953ee38b1b0b212043dc97adce9b23da0b77eaf98",
+      "bytes": 1120014,
+      "locale": "zh-tw",
+      "scope": "all"
+    },
+    "img/nuclear-age/fuel-table-tree-zh-tw.svg": {
+      "sha256": "0e607c6912dc8dca4e5a00fe3834712c0645c9497889b472b8bc97bb7b13804a",
+      "bytes": 441729,
+      "locale": "zh-tw",
+      "scope": "tree"
     },
     "img/nuclear-age/fuel-table-de.svg": {
-      "sha256": "4608711a42926a33c58baed70353acce323c3f785266e7ce4246c26e5fb03558",
-      "bytes": 456009,
-      "locale": "de"
+      "sha256": "93c1f743f0001ed93926523a5714351f3e83435a81f35b688ee4a2ccf7700c95",
+      "bytes": 1120442,
+      "locale": "de",
+      "scope": "all"
+    },
+    "img/nuclear-age/fuel-table-tree-de.svg": {
+      "sha256": "63502273e6a470a2c6ade309f725d3591dc9e206ee5bd401e651a73dc331f3b6",
+      "bytes": 442363,
+      "locale": "de",
+      "scope": "tree"
     },
     "img/nuclear-age/fuel-table-ru.svg": {
-      "sha256": "70bbc5fa70d666ec0474ed658769f0734f1923ea43b4706a257ea2c101545807",
-      "bytes": 457146,
-      "locale": "ru"
+      "sha256": "d1e3a2465789168ca6076b971cfca37e33caa28d10787b978af93f5fd628fe8f",
+      "bytes": 1121195,
+      "locale": "ru",
+      "scope": "all"
+    },
+    "img/nuclear-age/fuel-table-tree-ru.svg": {
+      "sha256": "d56ce7db620ef356d96f021af1a077a56f0a05b05d55093ee9b0a2428dec6934",
+      "bytes": 443055,
+      "locale": "ru",
+      "scope": "tree"
     },
     "img/nuclear-age/fuel-table-zh-cn.svg": {
-      "sha256": "a869220593a61f1b585cae6c210dd145d22ca4d761cf078bbce40364889ad6a6",
-      "bytes": 455525,
-      "locale": "zh-cn"
+      "sha256": "5a6370e3483b430e6a394f8014aa036603e8d1d472f27fc98b92a1e871664ecb",
+      "bytes": 1120014,
+      "locale": "zh-cn",
+      "scope": "all"
+    },
+    "img/nuclear-age/fuel-table-tree-zh-cn.svg": {
+      "sha256": "2abe0c0825c759f1684933cbd0aa64555b508d8ad26b5a86750370e934879adf",
+      "bytes": 441729,
+      "locale": "zh-cn",
+      "scope": "tree"
     },
     "img/nuclear-age/fuel-table-ar.svg": {
-      "sha256": "4600ff39b74ed1c103f8dbd8c33691310d966fc6e71da2227f000007ea2c4dd8",
-      "bytes": 456682,
-      "locale": "ar"
+      "sha256": "18d8293eea4c32746d24bbb7280cb2800dce9dceeb83dfde0b7f15896e1ac3c3",
+      "bytes": 1120519,
+      "locale": "ar",
+      "scope": "all"
+    },
+    "img/nuclear-age/fuel-table-tree-ar.svg": {
+      "sha256": "b5dd563b88df709c8544d9e14d80ae205bffefd68a3118e4e8c77e516a89c648",
+      "bytes": 442547,
+      "locale": "ar",
+      "scope": "tree"
     },
     "img/nuclear-age/fuel-table-nl.svg": {
-      "sha256": "874d81012d00ea38a4fb804761a8e2bc9ed36f99a778fef4409b6b6b01d9ae14",
-      "bytes": 456156,
-      "locale": "nl"
+      "sha256": "f9cf4286fb8e23eac90987f9ba5460ef85d55054729c69cb0306e12d8c86fb95",
+      "bytes": 1120458,
+      "locale": "nl",
+      "scope": "all"
+    },
+    "img/nuclear-age/fuel-table-tree-nl.svg": {
+      "sha256": "b50c6140e23ea25062f16116a4d251f07a45d8201d578ec5d2046a0844fcc181",
+      "bytes": 442425,
+      "locale": "nl",
+      "scope": "tree"
     },
     "img/nuclear-age/fuel-table-fr.svg": {
-      "sha256": "90de85970e1b9f41dccc8cd967a2d5313b3355b5a2231bfa4135fcd980481be8",
-      "bytes": 456322,
-      "locale": "fr"
+      "sha256": "6e62077d02f85fdcf65139d6d19d950806b645e33a3889d4f901250844c389ce",
+      "bytes": 1120904,
+      "locale": "fr",
+      "scope": "all"
+    },
+    "img/nuclear-age/fuel-table-tree-fr.svg": {
+      "sha256": "fc4d39c2a35e42e36726f661e23141e3578b1da6e3f60b41e00885f0d3478688",
+      "bytes": 442494,
+      "locale": "fr",
+      "scope": "tree"
     },
     "img/nuclear-age/fuel-table-id.svg": {
-      "sha256": "5c9ba6fb971b0fd3a39bf34d4047a321267049c77ce58e97cf934a88943b7725",
-      "bytes": 456024,
-      "locale": "id"
+      "sha256": "5d4ded3f8cbb52c8bbdcd4d3cb9d6f1a1f618ba1a64b228edc205889e00ebfef",
+      "bytes": 1120306,
+      "locale": "id",
+      "scope": "all"
+    },
+    "img/nuclear-age/fuel-table-tree-id.svg": {
+      "sha256": "4e830a029c4e7422289378074379faaabb3b052bcee5a53870ce1e079ab8e07e",
+      "bytes": 442211,
+      "locale": "id",
+      "scope": "tree"
     },
     "img/nuclear-age/fuel-table-it.svg": {
-      "sha256": "1b4dfb384985dbfc49789155b0650992a6f86a4edd3fbc42d8896ce70f8143d4",
-      "bytes": 456141,
-      "locale": "it"
+      "sha256": "b375b27f2e0ee2eb37dc0962cfaee2ca9231303660679a87f3e99e03efcdeb57",
+      "bytes": 1120529,
+      "locale": "it",
+      "scope": "all"
+    },
+    "img/nuclear-age/fuel-table-tree-it.svg": {
+      "sha256": "a2c7e176c040e058a77f82685eb4583f4eb67f27fb64bd2030b603d1b3a467f4",
+      "bytes": 442383,
+      "locale": "it",
+      "scope": "tree"
     },
     "img/nuclear-age/fuel-table-pl.svg": {
-      "sha256": "57cf6b922be48d2a1dbb4d2f823a07c5b39d33ad985117992d8cae4acd01a874",
-      "bytes": 456099,
-      "locale": "pl"
+      "sha256": "99dc608f1c572c5789238d6f7081cc4b64356d92ad283cf61af8b0d3393152df",
+      "bytes": 1120170,
+      "locale": "pl",
+      "scope": "all"
+    },
+    "img/nuclear-age/fuel-table-tree-pl.svg": {
+      "sha256": "df966236ef25649dc87fbcdfa3b0562ca189d2619e54de6ca759e7416941ec7b",
+      "bytes": 442062,
+      "locale": "pl",
+      "scope": "tree"
     },
     "img/nuclear-age/fuel-table-pt.svg": {
-      "sha256": "c3b1e74ce960fc9d23c3426555cfb893bb07327fc0a1434ccb4ea76a2fc01b72",
-      "bytes": 456202,
-      "locale": "pt"
+      "sha256": "a3a9c9ba777f419bbe3042ad84cc0cfdf451d6be59336e742d96b80e76e12270",
+      "bytes": 1120574,
+      "locale": "pt",
+      "scope": "all"
+    },
+    "img/nuclear-age/fuel-table-tree-pt.svg": {
+      "sha256": "ad5e386fa2f482beeaafe6546ae16390dc1da89205cab1d91132e596c689484d",
+      "bytes": 442377,
+      "locale": "pt",
+      "scope": "tree"
     },
     "img/nuclear-age/fuel-table-es.svg": {
-      "sha256": "47003bd034dbb29e061900a342106211cd4afb33cff8f4eb574a9bb0bbcf9344",
-      "bytes": 456143,
-      "locale": "es"
+      "sha256": "22295d2c10083b2ce08a1369574a65643b35128055738d240aaa24a9034f26cf",
+      "bytes": 1120537,
+      "locale": "es",
+      "scope": "all"
+    },
+    "img/nuclear-age/fuel-table-tree-es.svg": {
+      "sha256": "ef989c1c650abd7e2db365d11587da614e22a34db00c60700241201677b126f1",
+      "bytes": 442409,
+      "locale": "es",
+      "scope": "tree"
     },
     "img/nuclear-age/fuel-table-sv.svg": {
-      "sha256": "7f3b3c51c0720ef3230f50e5b1ed709ce14fcfc0a14f6619f8b6d8bebf00b0f6",
-      "bytes": 455989,
-      "locale": "sv"
+      "sha256": "daacaa5f5db759f3c706f9e7ec954920f1ae0cb11a32476c71a7975f97ea54c7",
+      "bytes": 1120225,
+      "locale": "sv",
+      "scope": "all"
+    },
+    "img/nuclear-age/fuel-table-tree-sv.svg": {
+      "sha256": "4f2c5ee49e519a428a679095645e730a26e73f7769840cf1a6231d75c8facf73",
+      "bytes": 441918,
+      "locale": "sv",
+      "scope": "tree"
     },
     "img/nuclear-age/fuel-table-th.svg": {
-      "sha256": "6345fc091b51a70a5edfa428a282bc4ee0084a373306132e358a67e8f0f576c1",
-      "bytes": 458406,
-      "locale": "th"
+      "sha256": "434003fdfc69f90278a5f706e522658bc50cace1d2433b1a6cf4f7953bf32cd9",
+      "bytes": 1122416,
+      "locale": "th",
+      "scope": "all"
+    },
+    "img/nuclear-age/fuel-table-tree-th.svg": {
+      "sha256": "0f14b27fffe8750ebe99790b82091662d677b69c4bb8b47bfdeb54ab1eded1d1",
+      "bytes": 444177,
+      "locale": "th",
+      "scope": "tree"
     },
     "img/nuclear-age/fuel-table-tr.svg": {
-      "sha256": "3358086bc4294538b00e0bb0cda20826f4c9640e4c24ac1c4ee85df225f3271f",
-      "bytes": 456026,
-      "locale": "tr"
+      "sha256": "fcfdc2bc68cf1cf477e4aa3fbb4ae0eab0305aaec15b868b2e6cde577f5fb298",
+      "bytes": 1120404,
+      "locale": "tr",
+      "scope": "all"
+    },
+    "img/nuclear-age/fuel-table-tree-tr.svg": {
+      "sha256": "5309ddb85c0c1d23fa8eef9620405af691a561946468013b9d34df738f9116ad",
+      "bytes": 442303,
+      "locale": "tr",
+      "scope": "tree"
     },
     "img/nuclear-age/fuel-table-vi.svg": {
-      "sha256": "96e4f3c3db0d215a8e257b6816ffe759119c56007d50ef6bdef8427325352cb5",
-      "bytes": 456296,
-      "locale": "vi"
+      "sha256": "ba90ce926718389cef355f94da7fea85d62fb802743297aa7eed70fe4e6c254a",
+      "bytes": 1120490,
+      "locale": "vi",
+      "scope": "all"
+    },
+    "img/nuclear-age/fuel-table-tree-vi.svg": {
+      "sha256": "5de64b048d95d5717f087fb2c64b12355ea04413d7bf9d038f0615ddfd29a3d7",
+      "bytes": 442521,
+      "locale": "vi",
+      "scope": "tree"
     },
     "img/nuclear-age/fuel-table-ms.svg": {
-      "sha256": "1704ec8b3f7be7865a135a4b59ebaa59fc42e365125b990dbfbbb72c70091bae",
-      "bytes": 456187,
-      "locale": "ms"
+      "sha256": "6225fe4198a5c34fe7403341d9ec411763d412df79dca60c82ae6962db8fcc3b",
+      "bytes": 1120469,
+      "locale": "ms",
+      "scope": "all"
+    },
+    "img/nuclear-age/fuel-table-tree-ms.svg": {
+      "sha256": "855e8a14893d23fe61cf2bd89d115c47a88dfca2b0e9b4a41bfb8ba8f4700826",
+      "bytes": 442360,
+      "locale": "ms",
+      "scope": "tree"
     },
     "img/nuclear-age/fuel-table-nb.svg": {
-      "sha256": "5c59b41ddd7d80832a3a724e5633aa5b793c118d733b1058837c7845a00556ab",
-      "bytes": 455959,
-      "locale": "nb"
+      "sha256": "fb852627ea9fca48b33216b16ecce46e1b0ed9277709041edc2363a33dcdc892",
+      "bytes": 1120210,
+      "locale": "nb",
+      "scope": "all"
+    },
+    "img/nuclear-age/fuel-table-tree-nb.svg": {
+      "sha256": "f6e0c945f057d6ca55f9981115b399d1e89122d07a8e496224667ad98eafecc7",
+      "bytes": 442038,
+      "locale": "nb",
+      "scope": "tree"
     }
   }
 }
