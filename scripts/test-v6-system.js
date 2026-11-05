@@ -74,8 +74,21 @@ test('card enhancement excludes home, calculation rows, skills and action-only c
 });
 
 test('font scaffold makes no missing or external request and only registers explicitly authorized verified local faces',()=>{
- assert(B.fontFaces().includes('font-family:"TilesSurvive Sword"'));const temp=fs.mkdtempSync(path.join(os.tmpdir(),'ts-v61-font-test-'));try{fs.mkdirSync(path.join(temp,'data'));const config=structuredClone(require('../data/v61-visual-system.json')),write=()=>fs.writeFileSync(path.join(temp,'data/v61-visual-system.json'),JSON.stringify(config));config.displayFont.enabled=false;config.displayFont.status='awaiting-authorized-font-files';write();assert.equal(B.fontFaces(temp),'');config.displayFont.enabled=true;write();assert.throws(()=>B.fontFaces(temp),/authorized local files/);config.displayFont.status='authorized-local-files';write();assert.throws(()=>B.fontFaces(temp),/ENOENT/);
- for(const face of config.displayFont.faces){fs.mkdirSync(path.dirname(path.join(temp,face.path)),{recursive:true});fs.writeFileSync(path.join(temp,face.path),Buffer.from('wOF2testfixture'));}const css=B.fontFaces(temp);assert.equal((css.match(/@font-face/g)||[]).length,2);assert(css.includes('font-weight:400'));assert(css.includes('font-weight:600'));assert(!css.includes('font-weight:700'));assert(css.includes('font-display:swap'));assert(!css.includes('https:'));config.displayFont.faces[0].path='../outside.woff2';write();assert.throws(()=>B.fontFaces(temp),/Invalid local font path/);
+ const F=require('./v61-font-delivery'),manifest=F.validateManifest(),temp=fs.mkdtempSync(path.join(os.tmpdir(),'ts-v61-font-test-'));assert.match(B.fontFaces(),/^<link .*\/css\/v61-fonts\.css\?v=[a-f0-9]{12}/);
+ try{fs.mkdirSync(path.join(temp,'data'));const config=structuredClone(require('../data/v61-visual-system.json')),write=()=>fs.writeFileSync(path.join(temp,'data/v61-visual-system.json'),JSON.stringify(config));config.displayFont.enabled=false;config.displayFont.status='awaiting-authorized-font-files';write();assert.equal(B.fontFaces(temp),'');config.displayFont.enabled=true;write();assert.throws(()=>B.fontFaces(temp),/authorized local files/);config.displayFont.status='authorized-local-files';write();assert.throws(()=>B.fontFaces(temp),/ENOENT/);
+ for(const file of [F.MANIFEST,F.STYLESHEET,...manifest.faces.flatMap(f=>[f.source.path,...f.subsets.map(s=>s.path)])]){fs.mkdirSync(path.dirname(path.join(temp,file)),{recursive:true});fs.copyFileSync(path.join(B.ROOT,file),path.join(temp,file));}
+ assert.equal(B.fontFaces(temp),F.stylesheet(temp));const css=F.cssText(temp);assert.equal((css.match(/@font-face/g)||[]).length,12);assert.equal((css.match(/font-weight:400/g)||[]).length,6);assert.equal((css.match(/font-weight:600/g)||[]).length,6);assert(!/font-weight:700|https:|preload|src:url\("\/fonts\/blackdesert\/strongsword-/.test(css));assert.equal((css.match(/font-display:swap/g)||[]).length,12);
+ const inventory=manifest.groups.flatMap(g=>F.codepoints(g.unicodeRange));assert.equal(inventory.length,13131);assert.equal(new Set(inventory).size,13131);assert.equal(F.sha(inventory.sort((a,b)=>a-b).join(',')),F.CMAP_SHA);
+ const homeGlyphs=new Set(F.codepoints(manifest.groups.find(g=>g.id==='home-base').unicodeRange));for(const cp of [...Array.from({length:95},(_,i)=>i+0x20),0xa0])assert(homeGlyphs.has(cp),'Dynamic ASCII/NBSP stays in the first font partition');
+ const manifestFile=path.join(temp,F.MANIFEST),save=m=>fs.writeFileSync(manifestFile,JSON.stringify(m)),reject=(mutate,pattern)=>{const m=structuredClone(manifest);mutate(m);save(m);assert.throws(()=>F.validateManifest(temp),pattern);save(manifest);};
+ reject(m=>m.faces[0].source.sha256='0'.repeat(64),/Unreviewed original/);reject(m=>m.faces[0].subsets[0].path='fonts/elsewhere.woff2',/outside owned directory/);
+ const range=(group,values)=>{group.unicodeRange=values.map(v=>'U+'+v.toString(16).toUpperCase()).join(',');group.codepointCount=values.length;group.inventorySHA256=F.sha(values.join(','));};
+ reject(m=>{range(m.groups[0],F.codepoints(m.groups[0].unicodeRange).filter(cp=>cp!==0x35));range(m.groups[1],[...F.codepoints(m.groups[1].unicodeRange),0x35].sort((a,b)=>a-b));},/Dynamic ASCII\/NBSP must be in home font partition/);
+ reject(m=>{const values=F.codepoints(m.groups[0].unicodeRange);values.splice(values.findIndex(cp=>cp>0xa0),1);range(m.groups[0],values);},/coverage must remain complete/);
+ reject(m=>range(m.groups[1],[...F.codepoints(m.groups[1].unicodeRange),F.codepoints(m.groups[0].unicodeRange)[0]].sort((a,b)=>a-b)),/Overlapping/);
+ const subset=path.join(temp,manifest.faces[0].subsets[0].path),bytes=fs.readFileSync(subset),changed=Buffer.from(bytes);changed[changed.length-1]^=1;fs.writeFileSync(subset,changed);assert.throws(()=>F.validateManifest(temp),/Font hash changed/);fs.writeFileSync(subset,bytes);
+ fs.appendFileSync(path.join(temp,F.STYLESHEET),'/* unreviewed */');assert.throws(()=>B.fontFaces(temp),/Stale generated font stylesheet/);fs.copyFileSync(path.join(B.ROOT,F.STYLESHEET),path.join(temp,F.STYLESHEET));
+ config.displayFont.faces[0].path='../outside.woff2';write();assert.throws(()=>B.fontFaces(temp),/Original font registration changed/);
  }finally{assert(temp.startsWith(path.join(os.tmpdir(),'ts-v61-font-test-')));fs.rmSync(temp,{recursive:true,force:true});}
 });
 
@@ -102,6 +115,45 @@ test('dynamic catalog replacement reuses the static normalized image mapping wit
  const {document,host}=fixture('<article class="hero-atlas-card"><img data-v61-source="/source.png" data-v61-image="hero" src="/normalized.webp" width="480" height="640"><h3>Lava</h3><a href="/ko/heroes/lava/">Details</a></article>'),api=R.mount(document,host);document.querySelector('section').insertAdjacentHTML('beforeend','<article class="hero-atlas-card"><img src="/source.png" width="840" height="712"><h3>Lava</h3><a href="/ko/heroes/lava/">Details</a></article>');const img=document.querySelectorAll('.hero-atlas-card img')[1];api.refresh();assert.equal(img.getAttribute('src'),'/normalized.webp');assert.equal(img.getAttribute('width'),'480');api.destroy();assert.equal(img.getAttribute('src'),'/source.png');assert.equal(img.getAttribute('width'),'840');
 });
 
+function observedHost(){
+ const queue=new Map();let sequence=0,mutation,resize;
+ const host={addEventListener(){},removeEventListener(){},requestAnimationFrame(fn){queue.set(++sequence,fn);return sequence;},cancelAnimationFrame(id){queue.delete(id);},MutationObserver:class{constructor(fn){mutation=fn;}observe(){}disconnect(){}},ResizeObserver:class{constructor(fn){resize=fn;}observe(){}unobserve(){}disconnect(){}}};
+ return {host,mutate:records=>mutation(records),resize:targets=>resize(targets.map(target=>({target}))),pending:()=>queue.size,flush(){const current=[...queue.values()];queue.clear();for(const fn of current)fn();}};
+}
+
+test('static cards stay untouched and countdown text or unrelated leaf replacements schedule no DOM refresh',()=>{
+ const staticCard='<article class="hero-atlas-card" data-v61-card><h3>Lava</h3><a href="/en/heroes/lava/" data-v61-link>Details</a><label data-v61-control><input type="checkbox">Compare</label></article>';
+ const {document}=fixture('<div data-v5-home><time id="clock">00:00</time></div>'+staticCard.repeat(100)),events=observedHost(),main=document.querySelector('main'),clock=document.getElementById('clock'),before=document.toString();let scans=0,writes=0,cardQueries=0;
+ const query=main.querySelectorAll.bind(main);main.querySelectorAll=s=>{scans++;return query(s);};
+ for(const card of document.querySelectorAll('.hero-atlas-card')){for(const method of ['querySelector','querySelectorAll']){const original=card[method].bind(card);card[method]=s=>{cardQueries++;return original(s);};}for(const node of [card,...card.querySelectorAll('*')]){const set=node.setAttribute.bind(node);node.setAttribute=(...args)=>{writes++;return set(...args);};}}
+ cardQueries=0;const api=R.mount(document,events.host);assert.equal(document.toString(),before);assert.equal(writes,0);assert.equal(cardQueries,0,'Build-time native links require no runtime card traversal');const initialScans=scans;
+ for(let i=0;i<60;i++){const old=clock.firstChild;clock.textContent=String(i);events.mutate([{target:clock,addedNodes:[clock.firstChild],removedNodes:[old]}]);}
+ const span=document.createElement('span');span.textContent='next minute';clock.append(span);events.mutate([{target:clock,addedNodes:[span],removedNodes:[]}]);
+ assert.equal(events.pending(),0,'Clock updates must not enqueue a full-page frame');assert.equal(scans,initialScans);assert.equal(writes,0);assert.equal(cardQueries,0);api.destroy();
+});
+
+test('observed catalog additions normalize only the new subtree and retain independent native controls',()=>{
+ const {document}=fixture('<article class="hero-atlas-card" data-v61-card><img data-v61-source="/source.png" data-v61-image="hero" src="/normalized.webp" width="480" height="640"><h3>Static</h3><a data-v61-link href="/en/heroes/lava/">Details</a></article>'),events=observedHost(),main=document.querySelector('main'),section=document.querySelector('section');let scans=0;
+ const query=main.querySelectorAll.bind(main);main.querySelectorAll=s=>{scans++;return query(s);};const api=R.mount(document,events.host),initialScans=scans,staticCard=document.querySelector('article'),original=staticCard.outerHTML;
+ staticCard.querySelector=staticCard.querySelectorAll=()=>{throw Error('Unrelated static card was rescanned');};
+ section.insertAdjacentHTML('beforeend','<article class="hero-atlas-card"><img src="/source.png" width="840" height="712"><h3>Lava</h3><a href="/en/heroes/lava/">Details</a><label><input type="checkbox">Compare</label></article>');const card=section.lastElementChild,img=card.querySelector('img'),input=card.querySelector('input'),link=card.querySelector('a');let changes=0;input.addEventListener('change',()=>changes++);
+ events.mutate([{target:section,addedNodes:[card],removedNodes:[]}]);assert.equal(events.pending(),1);events.flush();assert.equal(scans,initialScans);assert.equal(staticCard.outerHTML,original);assert.equal(img.getAttribute('src'),'/normalized.webp');assert.equal(img.getAttribute('width'),'480');assert.equal(card.querySelector('[data-v61-link]'),link);assert(input.closest('[data-v61-control]'));input.dispatchEvent(new document.defaultView.Event('change'));assert.equal(changes,1);
+ card.remove();events.mutate([{target:section,addedNodes:[],removedNodes:[card]}]);events.flush();assert.equal(img.getAttribute('src'),'/source.png');assert.equal(img.getAttribute('width'),'840');assert(!card.hasAttribute('data-v61-card'));api.destroy();
+});
+
+test('table layout reads are batched before ARIA writes and content updates measure only their own scroll region',()=>{
+ const {document}=fixture('<div class="r60-scroll"><table><tr><td>1</td></tr></table></div><div class="v4-table-wrap"><table><tr><td>2</td></tr></table></div>'),events=observedHost(),nodes=[...document.querySelectorAll('.r60-scroll,.v4-table-wrap')],operations=[];
+ for(const [id,node]of nodes.entries()){for(const [key,value]of Object.entries({clientWidth:300,scrollWidth:600,clientHeight:200,scrollHeight:200}))Object.defineProperty(node,key,{get(){operations.push(['read',id,key]);return value;}});const set=node.setAttribute.bind(node);node.setAttribute=(...args)=>{operations.push(['write',id,args[0]]);return set(...args);};}
+ const api=R.mount(document,events.host),firstWrite=operations.findIndex(x=>x[0]==='write');assert(firstWrite>0);assert(operations.slice(firstWrite).every(x=>x[0]!=='read'),'All table layout must be read before attribute writes');
+ operations.length=0;const cell=nodes[0].querySelector('td'),old=cell.firstChild;cell.textContent='123456789';events.mutate([{target:cell,addedNodes:[cell.firstChild],removedNodes:[old]}]);events.flush();assert(operations.some(x=>x[0]==='read'));assert(operations.every(x=>x[1]===0),'A table update cannot measure an unrelated table');assert.equal(nodes[0].getAttribute('tabindex'),'0');
+ operations.length=0;events.resize([nodes[1]]);events.flush();assert(operations.some(x=>x[0]==='read'));assert(operations.every(x=>x[1]===1));api.destroy();
+});
+
+test('an observed initially empty table wrapper becomes accessible and nested replacements retain one scroll stop',()=>{
+ const {document}=fixture('<div class="ts-table-wrap"></div>'),events=observedHost(),outer=document.querySelector('.ts-table-wrap');dimensions(outer);const api=R.mount(document,events.host);outer.innerHTML='<table><tr><td>1</td></tr></table>';events.mutate([{target:outer,addedNodes:[outer.firstElementChild],removedNodes:[]}]);events.flush();assert.equal(outer.getAttribute('tabindex'),'0');
+ const old=outer.firstElementChild;outer.innerHTML='<div class="r60-scroll"><table><tr><td>2</td></tr></table></div>';const inner=outer.firstElementChild;dimensions(inner);events.mutate([{target:outer,addedNodes:[inner],removedNodes:[old]}]);events.flush();assert.equal(outer.getAttribute('tabindex'),null);assert.equal(inner.getAttribute('tabindex'),'0');assert.equal(document.querySelectorAll('[tabindex="0"]').length,1);api.destroy();
+});
+
 test('normalized artwork binds each untouched authentic source to an existing deterministic artboard',()=>{
  const crypto=require('node:crypto'),{imageSize}=require('image-size'),manifest=require('../data/v61-image-assets.json');assert.equal(manifest.originalsModified,false);assert.equal(manifest.sourcePixelsRemoved,'transparent-only');assert(manifest.images.length>=80);const seen=new Set();for(const image of manifest.images){assert(!seen.has(image.source));seen.add(image.source);for(const [file,hash]of [[image.source,image.sourceSHA256],[image.src,image.sha256]])assert.equal(crypto.createHash('sha256').update(fs.readFileSync(path.join(B.ROOT,file))).digest('hex'),hash,file);const size=imageSize(fs.readFileSync(path.join(B.ROOT,image.src)));assert.deepEqual([size.width,size.height],[image.width,image.height]);assert.equal(image.width/image.height,image.kind==='hero'?.75:1);assert(image.visibleBounds[0]>=0&&image.visibleBounds[1]>=0&&image.visibleBounds[2]<=image.width&&image.visibleBounds[3]<=image.height);}
 });
@@ -118,5 +170,8 @@ test('design tokens meet text contrast and stylesheet covers actual component se
  assert(!/html\[data-v6-system\] main :is\(input/.test(css));
  for(const heading of ['h1','h2','h3'])assert(css.includes('main:not(:has([data-v5-home])) '+heading+'{'));
  assert(css.includes('main:not(:has([data-v5-home])) :is(h1,h2,h3,h4)'));
- assert(!/@import|url\(https?:|display\s*:\s*contents/.test(css));assert(Buffer.byteLength(css)<50000);assert(fs.statSync(path.join(B.ROOT,'js/v6-system.js')).size<6000);
+ assert(!/@import|url\(https?:|display\s*:\s*contents/.test(css));assert(Buffer.byteLength(css)<50000);
+ // Incremental mutation/resize queues replace repeated full-page work. Bound
+ // both source complexity and its actual transfer cost (under 3 KB gzip).
+ const runtime=fs.readFileSync(path.join(B.ROOT,'js/v6-system.js'));assert(runtime.length<8000);assert(require('node:zlib').gzipSync(runtime).length<3000);
 });

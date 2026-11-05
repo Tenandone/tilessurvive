@@ -24,6 +24,11 @@
         "format": "woff2"
       }
     ],
-    "authorization": "operator-confirmed-2026-11-05"
+    "authorization": "operator-confirmed-2026-11-05",
+    "delivery": {
+      "mode": "unicode-range-subsets",
+      "manifest": "data/v61-font-subsets.json",
+      "stylesheet": "css/v61-fonts.css"
+    }
   }
 }
