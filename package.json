@@ -91,7 +91,8 @@
     "test:nuclear-fuel": "node --test scripts/test-nuclear-fuel-summary.js scripts/test-nuclear-fuel-publication.js scripts/test-nuclear-fuel-poster.js",
     "build:buildings:unified": "node scripts/build-buildings-unified.js",
     "test:buildings:unified": "node --test scripts/test-building-unified.js scripts/test-building-unified-runtime.js scripts/test-buildings-unified-publication.js scripts/test-buildings-unified-regeneration.js scripts/test-v4-building-projection.js scripts/test-v4-economy-unified.js",
-    "sync:buildings:v4": "node scripts/sync-v4-building-projection.js --write"
+    "sync:buildings:v4": "node scripts/sync-v4-building-projection.js --write",
+    "test:analytics": "node --test scripts/test-analytics-contract.js scripts/test-analytics-privacy.js scripts/test-analytics-instrumentation.js scripts/test-analytics-invariants.js scripts/test-v3-affiliate.js scripts/test-v61-ten.js scripts/test-site-invariants.js"
   },
   "keywords": [],
   "author": "",

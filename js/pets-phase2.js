@@ -9,8 +9,8 @@
  }
  function mount(document){for(const form of document.querySelectorAll('[data-pets-phase2-exp]')){let data;try{data=JSON.parse(form.querySelector('[data-pets-phase2-data]').textContent);}catch(_){continue;}
   const output=form.querySelector('[data-pets-phase2-result]'),from=form.querySelector('[name="from"]'),to=form.querySelector('[name="to"]');
-  function update(){const value=sumExp(data.expRows,from.value,to.value);output.textContent=value===null?data.invalid:value.toLocaleString(data.locale==='zh-tw'?'zh-TW':data.locale)+' EXP';}
-  form.addEventListener('submit',function(event){event.preventDefault();update();});from.addEventListener('input',update);to.addEventListener('input',update);update();
+  function update(measure){const value=sumExp(data.expRows,from.value,to.value);output.textContent=value===null?data.invalid:value.toLocaleString(data.locale==='zh-tw'?'zh-TW':data.locale)+' EXP';if(measure===true&&value!==null){try{root.TS_ANALYTICS?.track?.('calculator_run',{feature:'pet_growth',action:'result',placement:'calculator'});}catch(_){}}}
+  form.addEventListener('submit',function(event){event.preventDefault();update(true);});from.addEventListener('input',update);to.addEventListener('input',update);update();
  }}
  if(typeof module==='object'&&module.exports)module.exports={sumExp,mount};if(root.document)mount(root.document);
 })(typeof window==='object'?window:globalThis);

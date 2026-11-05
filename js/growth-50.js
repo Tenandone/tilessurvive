@@ -22,7 +22,7 @@
       const status = section.querySelector('[data-growth-status]');
       const locale = config.language === 'zh-tw' ? 'zh-TW' : config.language;
       const fmt = n => n.toLocaleString(locale);
-      function update() {
+      function update(measure) {
         try {
           const values = compare(config.curve, Number(from.value), Number(to.value));
           status.textContent = '';
@@ -33,12 +33,13 @@
             ['from', 'to', 'gain'].forEach(key => { row.querySelector('[data-value="' + key + '"]').textContent = fmt(value[key]); });
           }
           section.querySelector('[data-growth-results]').hidden = false;
+          if(measure===true){try{doc.defaultView?.TS_ANALYTICS?.track?.('calculator_run',{feature:'hero_growth',action:'result',placement:'calculator'});}catch(_){}}
         } catch (_) {
           status.textContent = config.copy.error;
           section.querySelector('[data-growth-results]').hidden = true;
         }
       }
-      form.addEventListener('submit', e => { e.preventDefault(); update(); });
+      form.addEventListener('submit', e => { e.preventDefault(); update(true); });
       form.addEventListener('change', update);
       section.dataset.growthMounted = 'true';
       form.hidden = false;

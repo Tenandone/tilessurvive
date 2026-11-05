@@ -13,7 +13,7 @@
  const trainingSelect=form.querySelector('[name="pet"]');if(!select||!trainingSelect)return;
  const defaults=new Map([...form.querySelectorAll('input')].map(input=>[input,input.getAttribute('value')]));
  const number=name=>{const value=form.querySelector(`[name="${name}"]`).value;return value.trim()===''?NaN:Number(value);};
- function render(){
+ function render(measure){
   const profile=profiles.get(select.value),from=number('from'),to=number('to'),held=number('held'),result=calculate(profile,from,to,held);
   trainingSelect.value=select.value;
   const resource=profile?.resourceNames[lang]||'';form.querySelector('[data-pet-training-unit-41]').textContent=resource?' · '+resource:'';
@@ -22,6 +22,7 @@
   out.dataset.result=result.error||String(result.total);out.dataset.shortage=result.shortage??'';out.classList.toggle('ts3-result-error',!!result.error);out.replaceChildren();
   const table=d.getElementById(form.dataset.growthTable);table?.querySelectorAll('tbody tr').forEach((row,i)=>row.classList.toggle('ts3-in-range',!result.error&&i>=from&&i<to));
   if(result.error){out.textContent=cfg.labels[result.error];return;}
+  if(measure===true){try{root.TS_ANALYTICS?.track?.('calculator_run',{feature:'pet_growth',action:'result',placement:'calculator'});}catch(_){}}
   const range=d.createElement('span');range.className='ts3-result-range';range.textContent=profile.names[lang]+' · '+format(from)+' → '+format(to);out.append(range);
   for(const [label,value] of [[original.total,result.total],[original.shortage,result.shortage]]){const group=d.createElement('div');group.className='ts3-result-value';for(const [tag,text] of [['span',label],['strong',format(value)],['small',resource]]){const node=d.createElement(tag);node.textContent=text;group.append(node);}out.append(group);}
  }
@@ -29,7 +30,7 @@
   form.addEventListener(type,event=>{
    event.stopImmediatePropagation();
    if(event.target===trainingSelect){select.value=trainingSelect.value;select.dispatchEvent(new root.Event('change',{bubbles:true}));}
-   render();
+   render(type==='change'&&event.target!==trainingSelect);
   },true);
   // Document capture sees species changes before the EXP form's existing capture handler.
   d.addEventListener(type,event=>{if(exp.contains(event.target))render();},true);

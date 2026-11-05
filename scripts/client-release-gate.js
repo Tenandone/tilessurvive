@@ -152,7 +152,9 @@ function validate(root=ROOT,{before,backup,allowUnprojectedIdentity=false}={}){
  const identity=Identity.validate(root,{required:!allowUnprojectedIdentity}),reviewedRoutes=Reviewed.validate(root);
  const buildingsUnified=validateBuildings(root),growthBuildings=require(path.join(root,'scripts/sync-v4-building-projection')).validate(undefined,{root});
  for(const file of Identity.standaloneFiles(root)){const html=read(root,file);Analytics.signature(html);if(before&&backup&&before.files[file])Analytics.preserved(read(backup,file),html);}
- const registry=json(root,'data/i18n/locales.json').locales;assert.equal(registry.length,21,'The published locale set must not shrink');
+ const registry=json(root,'data/i18n/locales.json').locales;
+ const policy=require(path.join(root,'scripts/build-analytics-privacy'));policy.validate();for(const l of registry)policy.validateOwnership(read(root,l.code+'/privacy/index.html'),l.code);
+ assert.equal(registry.length,21,'The published locale set must not shrink');
  const model=validatePublication(json(root,'data/hero-atlas-client.json'),json(root,'data/hero-atlas-publication.json'),json(root,'data/hero-atlas-routes.json'),officialRegistry(root));hook(root);const isolation=validateOfficialIsolation(root);
  const expected=reviewedSitemap(root).expected;const actual=urls(read(root,'sitemap.xml'));assert.equal(new Set(actual).size,actual.length,'Duplicate sitemap URL');assert.deepEqual([...actual].sort(),[...expected].sort(),'Retained sitemap plus reviewed official introductions only');
  const expectedSet=new Set(expected);for(const file of publicFiles(root).filter(f=>f.endsWith('.html'))){const html=read(root,file),head=parseHTML(html.match(/<head\b[^>]*>[\s\S]*?<\/head>/i)?.[0]||'').document,canonical=head.querySelector('link[rel="canonical"]')?.getAttribute('href'),own=ORIGIN+'/'+file.replace(/index\.html$/,'');if(canonical===own&&!/noindex/i.test(head.querySelector('meta[name="robots"]')?.getAttribute('content')||''))assert(expectedSet.has(own),'Unreviewed canonical route from a legacy builder: '+own);}

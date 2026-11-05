@@ -4,7 +4,7 @@ const locales = new Set(require('../data/i18n/locales.json').locales.map(x => x.
 const TEN_URL = 'https://www.lootbar.com/ko/shop/ten/top-up/tiles-survive';
 const MEASUREMENT_ID = 'G-Z2MJ6TXZHK';
 const SECONDARY_MEASUREMENT_ID = 'G-TMGDGSEWW6';
-// Retain this distinct historical home-page ID verbatim; ownership is unverified.
+// Historical IDs are accepted only as reviewed migration inputs, never new destinations.
 const LEGACY_HOME_MEASUREMENT_ID = 'G-Z2MJ6TZXHK';
 const APPROVED_MEASUREMENT_IDS = new Set([MEASUREMENT_ID, SECONDARY_MEASUREMENT_ID, LEGACY_HOME_MEASUREMENT_ID]);
 const escape = s => String(s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
@@ -12,10 +12,8 @@ function get(locale) {
   if (!locales.has(locale) || !copy.locales[locale]) throw new Error('Missing V3 affiliate locale: ' + locale);
   return copy.locales[locale];
 }
-function renderPrivacyNotice(locale) {
-  const c = get(locale);
-  return `<section class="v3-consent" data-v3-consent aria-label="${escape(c.privacyTitle)}"><h2>${escape(c.privacyTitle)}</h2><p>${escape(c.privacyText)}</p><div class="v3-consent-actions"><button type="button" data-v3-consent-allow aria-pressed="false">${escape(c.allow)}</button><button type="button" data-v3-consent-deny aria-pressed="true">${escape(c.deny)}</button></div><p data-v3-consent-status data-allowed="${escape(c.statusAllowed)}" data-denied="${escape(c.statusDenied)}" role="status">${escape(c.statusDenied)}</p></section>`;
-}
+function renderPrivacyNotice(locale) { get(locale); return ''; }
+
 function renderGuide(locale) {
   const c = get(locale);
   // Keep the source FAQ order stable: step 2 still uses faq[3]. Render TEN's
@@ -42,8 +40,7 @@ function projectLegacyTopup(document, locale) {
   return [{selector: '[data-topup-step="2"] p', before, after, reason: 'Provider procedure: payment precedes Self-TopUp redemption', source: copy.provenance.sources[0], reviewedOn: copy.reviewedOn}];
 }
 /** Replace only the site's known GA4 bootstrap. AdSense/CMP scripts are untouched.
- * The early consent default is inert until the deferred V3 runtime sees opt-in.
- * No GA library or config call is made while consent is unknown/denied.
+ * The shared runtime performs only denied-storage GA measurement and respects objections.
  */
 function transformAnalytics(html) {
   const ids = new Set([MEASUREMENT_ID]);
@@ -96,8 +93,8 @@ function transformAnalytics(html) {
     }
     return whole;
   });
-  const orderedIds = [MEASUREMENT_ID, SECONDARY_MEASUREMENT_ID, LEGACY_HOME_MEASUREMENT_ID].filter(id => ids.has(id));
-  const boot = `<script data-v3-ga-bootstrap data-v3-owned="analytics">window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){window.dataLayer.push(arguments)};window.gtag('consent','default',{analytics_storage:'denied'});window.TS_V3_GA_IDS=${JSON.stringify(orderedIds)};</script>`;
+  const orderedIds = [MEASUREMENT_ID];
+  const boot = `<script data-v3-ga-bootstrap data-v3-owned="analytics">window.dataLayer=window.dataLayer||[];window.gtag=window.gtag||function(){window.dataLayer.push(arguments)};window.gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});window.gtag('set','ads_data_redaction',true);window.gtag('set','url_passthrough',false);window.TS_ANALYTICS_BOOTSTRAPPED=true;window.TS_V3_GA_IDS=${JSON.stringify(orderedIds)};</script>`;
   if (!/<head\b[^>]*>/i.test(stripped)) throw new Error('Expected HTML head');
   return stripped.replace(/<head\b[^>]*>/i, match => match + boot);
 }

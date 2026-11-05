@@ -251,9 +251,10 @@ test('existing calculator formulas, verified source models and affiliate target 
   ]) {
     const before = execFileSync('git', ['show', BASELINE + ':' + file], {cwd:ROOT});
     if(file==='js/tools-speedup-calculator.js'){
-      // Exact locale-only delta plus old-output differential cases; arithmetic,
-      // validation, reset and event binding still compare to the fixed baseline.
-      assert.ok(require('./product-50-test-allowances').speedupPreserved(before.toString('utf8'),fs.readFileSync(path.join(ROOT,file),'utf8')));continue;
+      // Reverse the exact reviewed success notification before the existing
+      // locale-only guard; arithmetic, reset and original binding stay protected.
+      const current=require('./analytics-instrumentation-preservation').strip(file,fs.readFileSync(path.join(ROOT,file),'utf8'));
+      assert.ok(require('./product-50-test-allowances').speedupPreserved(before.toString('utf8'),current));continue;
     }
     assert.equal(fs.readFileSync(path.join(ROOT,file),'utf8').replaceAll('\r\n','\n'), before.toString('utf8').replaceAll('\r\n','\n'), file);
   }

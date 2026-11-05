@@ -1,0 +1,826 @@
+{
+  "schemaVersion": 1,
+  "contact": "ant79798@gmail.com",
+  "updatedOn": "2026-11-06",
+  "locales": {
+    "en": {
+      "title": "Site usage statistics and privacy",
+      "intro": "We apply the same privacy-minimizing measurement settings across all 21 languages. Guides and tools do not require registration, a real name or contact details.",
+      "sections": [
+        {
+          "heading": "What we measure",
+          "body": "GA4 (G-Z2MJ6TXZHK) measures page views, language, approximate country, tool use, gift-code copies and TEN link clicks. Events use an explicit allowlist. Measurement parameters exclude raw URL queries, fragments, calculator or form inputs, and full external URLs."
+        },
+        {
+          "heading": "Cookieless signals",
+          "body": "Analytics and advertising consent states default to denied and are not automatically granted. GA4 can still send cookieless signals, including technical request information. The site does not create individual visitor profiles or its own persistent analytics identifiers."
+        },
+        {
+          "heading": "IP address processing",
+          "body": "Google and hosting infrastructure process IP addresses to handle requests. Google states that EU, Swiss and UK IP addresses are discarded after deriving location. Elsewhere, Google uses IP addresses for basic services; linked advertising services may also use encrypted IP data under their settings. Cookieless does not mean no data is transmitted or processed."
+        },
+        {
+          "heading": "Stop or resume transmission",
+          "body": "The controls below stop or resume this site's GA4 transmission in this browser. The preference is stored only here and does not inherit previous consent records. Resuming never changes consent to granted. Transmission remains stopped while GPC or DNT is enabled. These controls do not change advertising consent or your saved tool plans."
+        },
+        {
+          "heading": "Google and other service providers",
+          "body": "Search Console provides aggregated Google Search performance, separate from on-site usage. GA4, GitHub Pages and AdSense continue to process data under their respective terms. Required advertising consent and CMP controls remain available. This notice does not describe the entire site or these providers as cookie-free."
+        },
+        {
+          "heading": "What the numbers mean",
+          "body": "Counts and modeled estimates are not an exact count of unique visitors. Blocking, network failures and reporting methods can create gaps. A TEN click is not proof of a purchase. We do not invent missing historical statistics."
+        },
+        {
+          "heading": "Questions and requests",
+          "body": "Contact ant79798@gmail.com about privacy, objections or regional rights. We review requests and applicable requirements. A common global configuration does not override local obligations, and this notice does not replace any separately required consent."
+        }
+      ],
+      "stop": "Stop statistics transmission",
+      "resume": "Resume cookieless statistics",
+      "stopped": "Statistics transmission is stopped in this browser.",
+      "active": "Cookieless statistics transmission is enabled. This does not grant consent to cookies.",
+      "updatedLabel": "Last updated"
+    },
+    "ko": {
+      "title": "사이트 이용 통계와 개인정보",
+      "intro": "21개 언어에 개인정보 수집을 최소화하는 동일한 측정 설정을 적용합니다. 가이드와 도구 이용에는 회원가입, 실명 또는 연락처가 필요하지 않습니다.",
+      "sections": [
+        {
+          "heading": "측정하는 항목",
+          "body": "GA4(G-Z2MJ6TXZHK)로 페이지 조회, 언어, 대략적인 국가, 도구 이용, 게임 기프트 코드 복사, TEN 링크 클릭을 측정합니다. 이벤트는 명시된 허용 목록으로 제한합니다. 측정 매개변수에는 URL 쿼리·해시 원문, 계산기·양식 입력값, 외부 URL 전체를 포함하지 않습니다."
+        },
+        {
+          "heading": "쿠키 없는 측정 신호",
+          "body": "분석·광고 관련 동의 상태는 기본 거부이며 자동으로 허용되지 않습니다. 이 상태에서도 GA4는 요청의 기술 정보 등을 포함한 쿠키 없는 신호를 전송할 수 있습니다. 사이트는 개인별 방문 프로필이나 자체적인 지속 분석 식별자를 만들지 않습니다."
+        },
+        {
+          "heading": "IP 주소 처리",
+          "body": "Google과 호스팅 인프라는 요청 처리 과정에서 IP 주소를 처리합니다. Google은 EU·스위스·영국의 IP를 위치 정보 산출 후 폐기한다고 설명합니다. 그 외 지역에서는 기본 서비스에 IP를 사용하며, 연결된 광고 서비스가 설정에 따라 암호화된 IP 정보를 사용할 수도 있습니다. 쿠키가 없다는 것은 데이터 전송이나 처리가 없다는 뜻이 아닙니다."
+        },
+        {
+          "heading": "통계 전송 중지와 재개",
+          "body": "아래 버튼은 이 브라우저에서 사이트의 GA4 전송을 중지하거나 재개합니다. 설정은 이 브라우저에만 저장하며 과거 동의 기록을 승계하지 않습니다. 재개해도 동의 상태는 허용으로 바뀌지 않습니다. GPC 또는 DNT가 켜져 있으면 전송 중지를 유지합니다. 광고 동의와 저장한 도구 계획은 변경하지 않습니다."
+        },
+        {
+          "heading": "Google 및 외부 서비스",
+          "body": "Search Console은 사이트 내 이용 통계와 구분되는 Google 검색 실적 집계를 제공합니다. GA4, GitHub Pages, AdSense는 각 서비스의 약관에 따라 데이터를 처리합니다. 필요한 광고 동의와 CMP 선택 기능은 유지합니다. 이 안내는 사이트 전체나 외부 서비스가 모두 쿠키를 사용하지 않는다는 뜻이 아닙니다."
+        },
+        {
+          "heading": "통계 수치의 의미",
+          "body": "횟수와 모델링 추정치는 정확한 순방문자 수가 아닙니다. 차단, 네트워크 오류, 보고 방식에 따라 누락이 생길 수 있습니다. TEN 링크 클릭은 구매 증거가 아니며, 누락된 과거 통계를 임의로 만들지 않습니다."
+        },
+        {
+          "heading": "문의와 권리 요청",
+          "body": "개인정보 문의, 이의제기, 지역별 권리 요청은 ant79798@gmail.com으로 보내주세요. 요청과 적용 요건을 검토합니다. 전 세계 공통 설정이 지역별 의무를 없애지는 않으며, 이 안내는 법적으로 필요한 별도 동의를 대신하지 않습니다."
+        }
+      ],
+      "stop": "통계 전송 중지",
+      "resume": "쿠키 없는 통계 재개",
+      "stopped": "이 브라우저의 통계 전송이 중지되었습니다.",
+      "active": "쿠키 없는 통계 전송이 활성화되어 있습니다. 쿠키 사용에 동의한 것은 아닙니다.",
+      "updatedLabel": "최종 수정일"
+    },
+    "ja": {
+      "title": "サイト利用統計とプライバシー",
+      "intro": "全21言語で、個人情報の収集を最小限に抑える共通の計測設定を使用します。ガイドやツールの利用に、登録・実名・連絡先の提供は必要ありません。",
+      "sections": [
+        {
+          "heading": "計測する項目",
+          "body": "GA4（G-Z2MJ6TXZHK）でページ閲覧、言語、おおよその国、ツール利用、ゲームギフトコードのコピー、TENリンクのクリックを計測します。イベントは明示した許可リストに限定します。計測パラメータにURLのクエリやフラグメントの原文、計算機・フォームの入力値、外部URL全体は含めません。"
+        },
+        {
+          "heading": "Cookieを使わない計測信号",
+          "body": "分析・広告に関する同意状態は既定で拒否となり、自動的に許可へ変更されません。その状態でもGA4は、リクエストの技術情報などを含むCookieなしの信号を送信する場合があります。当サイトは訪問者ごとのプロフィールや独自の永続的な分析識別子を作成しません。"
+        },
+        {
+          "heading": "IPアドレスの処理",
+          "body": "Googleとホスティング基盤はリクエスト処理にIPアドレスを使用します。GoogleはEU・スイス・英国のIPを位置情報の算出後に破棄すると説明しています。それ以外の地域では基本サービスにIPを使用し、連携する広告サービスが設定に応じて暗号化されたIP情報を使用する場合もあります。Cookieなしでも、データの送信や処理は行われます。"
+        },
+        {
+          "heading": "統計送信の停止と再開",
+          "body": "下のボタンで、このブラウザからの当サイトのGA4送信を停止・再開できます。設定はこのブラウザにのみ保存され、過去の同意記録を引き継ぎません。再開しても同意は許可に変わりません。GPCまたはDNTが有効な間は送信停止を維持します。広告への同意や保存済みツールの計画は変更しません。"
+        },
+        {
+          "heading": "Googleと外部サービス",
+          "body": "Search Consoleは、サイト内の利用統計とは別にGoogle検索の実績を集計します。GA4、GitHub Pages、AdSenseは各サービスの規約に従ってデータを処理します。必要な広告同意とCMPの選択機能は維持します。この案内は、サイト全体や外部サービスが一切Cookieを使わないという意味ではありません。"
+        },
+        {
+          "heading": "統計の意味",
+          "body": "回数やモデルによる推定値は、正確なユニーク訪問者数ではありません。ブロック、通信障害、報告方式により欠測が生じる場合があります。TENリンクのクリックは購入の証拠ではありません。欠けた過去の統計を作り足すことはありません。"
+        },
+        {
+          "heading": "お問い合わせと権利の請求",
+          "body": "プライバシーに関する質問、異議申し立て、地域の権利に関する請求はant79798@gmail.comへお送りください。請求内容と適用要件を確認します。世界共通の設定でも地域ごとの義務はなくならず、この案内は別途必要な同意に代わるものではありません。"
+        }
+      ],
+      "stop": "統計の送信を停止",
+      "resume": "Cookieなしの統計を再開",
+      "stopped": "このブラウザからの統計送信は停止しています。",
+      "active": "Cookieなしの統計送信が有効です。Cookieの使用に同意したことにはなりません。",
+      "updatedLabel": "最終更新日"
+    },
+    "zh-tw": {
+      "title": "網站使用統計與隱私",
+      "intro": "全部21種語言採用相同、盡量減少個人資料蒐集的統計設定。閱讀指南和使用工具不需要註冊、提供真實姓名或聯絡資料。",
+      "sections": [
+        {
+          "heading": "統計項目",
+          "body": "GA4（G-Z2MJ6TXZHK）用於統計頁面瀏覽、語言、概略國家、工具使用、遊戲禮包碼複製與TEN連結點擊。事件限於明確的允許清單。統計參數不包含網址查詢字串或片段的原文、計算器或表單輸入值，以及完整外部網址。"
+        },
+        {
+          "heading": "無Cookie統計訊號",
+          "body": "分析與廣告相關同意狀態預設為拒絕，不會自動改為同意。即使如此，GA4仍可能傳送包含請求技術資訊的無Cookie訊號。本網站不建立個別訪客的行為檔案或自行設定持續性的分析識別碼。"
+        },
+        {
+          "heading": "IP位址處理",
+          "body": "Google及代管基礎設施會為處理請求而處理IP位址。Google表示，歐盟、瑞士及英國的IP會在推算位置後捨棄。其他地區的IP會用於基本服務；已連結的廣告服務也可能依設定使用加密IP資料。無Cookie不代表沒有資料傳送或處理。"
+        },
+        {
+          "heading": "停止或恢復統計傳送",
+          "body": "下方按鈕可停止或恢復本瀏覽器向GA4傳送本站統計。設定只儲存在此瀏覽器，不承接過去的同意紀錄。恢復不會將同意狀態改為允許。GPC或DNT啟用時，仍維持停止傳送。廣告同意及已儲存的工具計畫不受影響。"
+        },
+        {
+          "heading": "Google與其他服務",
+          "body": "Search Console提供Google搜尋成效的彙整資料，與網站內使用統計分開。GA4、GitHub Pages與AdSense依各自條款處理資料。必要的廣告同意與CMP選項仍予保留。本說明不表示整個網站或外部服務完全不使用Cookie。"
+        },
+        {
+          "heading": "統計數字的意義",
+          "body": "次數及模型估計不等於精確的不重複訪客人數。封鎖、網路故障與報表方式可能造成缺漏。點擊TEN連結不代表完成購買。我們不會編造缺失的歷史統計。"
+        },
+        {
+          "heading": "詢問與權利請求",
+          "body": "隱私詢問、異議或地區性權利請求，請寄至ant79798@gmail.com。我們會審查請求與適用要求。全球共通設定不排除當地義務，本說明也不取代依法另行取得的同意。"
+        }
+      ],
+      "stop": "停止統計傳送",
+      "resume": "恢復無Cookie統計",
+      "stopped": "此瀏覽器已停止傳送統計。",
+      "active": "無Cookie統計傳送已啟用，並不代表同意使用Cookie。",
+      "updatedLabel": "最後更新"
+    },
+    "de": {
+      "title": "Nutzungsstatistik und Datenschutz",
+      "intro": "In allen 21 Sprachen gelten dieselben datensparsamen Messeinstellungen. Für Anleitungen und Werkzeuge sind weder Registrierung noch Klarname oder Kontaktdaten erforderlich.",
+      "sections": [
+        {
+          "heading": "Was wir messen",
+          "body": "GA4 (G-Z2MJ6TXZHK) erfasst Seitenaufrufe, Sprache, ungefähres Land, Werkzeugnutzung, kopierte Spielcodes und TEN-Linkklicks. Ereignisse sind auf eine ausdrückliche Positivliste beschränkt. Messparameter enthalten keine unbearbeiteten URL-Abfragen oder Fragmente, Rechner- oder Formulareingaben und keine vollständigen externen URLs."
+        },
+        {
+          "heading": "Signale ohne Cookies",
+          "body": "Die Einwilligungszustände für Analyse und Werbung stehen standardmäßig auf abgelehnt und werden nicht automatisch auf erteilt gesetzt. GA4 kann trotzdem Signale ohne Cookies mit technischen Anfragedaten senden. Die Website erstellt keine individuellen Besucherprofile oder eigenen dauerhaften Analysekennungen."
+        },
+        {
+          "heading": "Verarbeitung von IP-Adressen",
+          "body": "Google und die Hosting-Infrastruktur verarbeiten IP-Adressen zur Bearbeitung von Anfragen. Laut Google werden IP-Adressen aus der EU, der Schweiz und dem Vereinigten Königreich nach der Standortermittlung verworfen. Andernorts nutzt Google sie für grundlegende Dienste; verknüpfte Werbedienste können je nach Einstellung auch verschlüsselte IP-Daten nutzen. Ohne Cookies bedeutet nicht ohne Datenübertragung oder Verarbeitung."
+        },
+        {
+          "heading": "Übertragung stoppen oder fortsetzen",
+          "body": "Die Schaltflächen unten stoppen oder starten die GA4-Übertragung dieser Website in diesem Browser. Die Einstellung wird nur hier gespeichert und übernimmt keine früheren Einwilligungen. Fortsetzen erteilt keine Einwilligung. Bei aktiviertem GPC oder DNT bleibt die Übertragung gestoppt. Werbeeinwilligungen und gespeicherte Werkzeugpläne bleiben unverändert."
+        },
+        {
+          "heading": "Google und weitere Dienste",
+          "body": "Search Console liefert aggregierte Google-Suchergebnisse, getrennt von der Nutzung auf der Website. GA4, GitHub Pages und AdSense verarbeiten Daten weiterhin nach ihren jeweiligen Bedingungen. Erforderliche Werbeeinwilligungen und CMP-Auswahlmöglichkeiten bleiben bestehen. Dieser Hinweis erklärt nicht die gesamte Website oder diese Anbieter für cookie-frei."
+        },
+        {
+          "heading": "Bedeutung der Zahlen",
+          "body": "Zählwerte und modellierte Schätzungen sind keine exakte Zahl eindeutiger Besucher. Blockierungen, Netzwerkfehler und Berichtsmethoden können Lücken verursachen. Ein TEN-Klick belegt keinen Kauf. Fehlende historische Statistiken werden nicht erfunden."
+        },
+        {
+          "heading": "Fragen und Rechte",
+          "body": "Fragen zum Datenschutz, Widersprüche und Anfragen zu regionalen Rechten richten Sie an ant79798@gmail.com. Wir prüfen Anfragen und geltende Anforderungen. Eine weltweit einheitliche Konfiguration setzt lokale Pflichten nicht außer Kraft; dieser Hinweis ersetzt keine gesondert erforderliche Einwilligung."
+        }
+      ],
+      "stop": "Statistikübertragung stoppen",
+      "resume": "Statistik ohne Cookies fortsetzen",
+      "stopped": "Die Statistikübertragung ist in diesem Browser gestoppt.",
+      "active": "Die Statistikübertragung ohne Cookies ist aktiviert. Dadurch wird keine Einwilligung in Cookies erteilt.",
+      "updatedLabel": "Zuletzt aktualisiert"
+    },
+    "ru": {
+      "title": "Статистика использования и конфиденциальность",
+      "intro": "Во всех 21 языковой версии действуют одинаковые настройки измерения с минимизацией персональных данных. Для руководств и инструментов не нужны регистрация, настоящее имя или контактные данные.",
+      "sections": [
+        {
+          "heading": "Что мы измеряем",
+          "body": "GA4 (G-Z2MJ6TXZHK) измеряет просмотры страниц, язык, примерную страну, использование инструментов, копирование игровых подарочных кодов и клики по ссылкам TEN. События ограничены явным списком разрешённых. Параметры не содержат исходные строки запроса и фрагменты URL, введённые в калькуляторы или формы данные и полные внешние URL."
+        },
+        {
+          "heading": "Сигналы без cookie",
+          "body": "Состояния согласия на аналитику и рекламу по умолчанию установлены в «отказано» и автоматически не меняются на «разрешено». При этом GA4 может отправлять сигналы без cookie, включая техническую информацию о запросах. Сайт не создаёт индивидуальные профили посетителей или собственные постоянные аналитические идентификаторы."
+        },
+        {
+          "heading": "Обработка IP-адресов",
+          "body": "Google и инфраструктура хостинга обрабатывают IP-адреса для обслуживания запросов. Google сообщает, что IP из ЕС, Швейцарии и Великобритании удаляются после определения местоположения. В других регионах IP используются для базовых сервисов; связанные рекламные сервисы также могут использовать зашифрованные IP согласно настройкам. Отсутствие cookie не означает отсутствие передачи и обработки данных."
+        },
+        {
+          "heading": "Остановка и возобновление передачи",
+          "body": "Кнопки ниже останавливают или возобновляют передачу этого сайта в GA4 в данном браузере. Настройка хранится только здесь и не наследует прежние записи согласия. Возобновление не означает предоставление согласия. При включённом GPC или DNT передача остаётся остановленной. Рекламное согласие и сохранённые планы инструментов не меняются."
+        },
+        {
+          "heading": "Google и другие сервисы",
+          "body": "Search Console предоставляет сводные результаты Google Поиска отдельно от статистики использования сайта. GA4, GitHub Pages и AdSense обрабатывают данные по своим условиям. Необходимое согласие на рекламу и настройки CMP сохраняются. Это уведомление не утверждает, что весь сайт или эти сервисы не используют cookie."
+        },
+        {
+          "heading": "Значение показателей",
+          "body": "Счётчики и модельные оценки не являются точным числом уникальных посетителей. Блокировки, сетевые ошибки и способы отчётности могут приводить к пропускам. Клик TEN не доказывает покупку. Мы не выдумываем отсутствующую статистику за прошлые периоды."
+        },
+        {
+          "heading": "Вопросы и запросы",
+          "body": "По вопросам конфиденциальности, возражений и региональных прав пишите на ant79798@gmail.com. Мы рассматриваем запросы и применимые требования. Общая глобальная конфигурация не отменяет местных обязанностей, а это уведомление не заменяет отдельно требуемое согласие."
+        }
+      ],
+      "stop": "Остановить передачу статистики",
+      "resume": "Возобновить статистику без cookie",
+      "stopped": "Передача статистики в этом браузере остановлена.",
+      "active": "Передача статистики без cookie включена. Это не означает согласие на cookie.",
+      "updatedLabel": "Последнее обновление"
+    },
+    "zh-cn": {
+      "title": "网站使用统计与隐私",
+      "intro": "全部21种语言采用相同、尽量减少个人信息收集的统计设置。阅读指南和使用工具无需注册、提供真实姓名或联系方式。",
+      "sections": [
+        {
+          "heading": "统计项目",
+          "body": "GA4（G-Z2MJ6TXZHK）用于统计页面浏览、语言、大致国家、工具使用、游戏礼包码复制和TEN链接点击。事件仅限明确的允许列表。统计参数不包含网址查询字符串或片段的原文、计算器或表单输入值，以及完整的外部网址。"
+        },
+        {
+          "heading": "无Cookie统计信号",
+          "body": "分析和广告相关同意状态默认为拒绝，不会自动改为同意。即使如此，GA4仍可能发送包含请求技术信息的无Cookie信号。本站不建立个人访客画像或自行设置持久性的分析标识符。"
+        },
+        {
+          "heading": "IP地址处理",
+          "body": "Google和托管基础设施会为处理请求而处理IP地址。Google表示，欧盟、瑞士和英国的IP会在推算位置后丢弃。其他地区的IP会用于基本服务；已关联的广告服务也可能根据设置使用加密IP信息。无Cookie不代表没有数据传输或处理。"
+        },
+        {
+          "heading": "停止或恢复统计发送",
+          "body": "下方按钮可停止或恢复本浏览器向GA4发送本站统计。设置仅保存在此浏览器，不继承过去的同意记录。恢复不会将同意状态改为允许。GPC或DNT启用时，仍保持停止发送。广告同意和已保存的工具计划不受影响。"
+        },
+        {
+          "heading": "Google及其他服务",
+          "body": "Search Console提供Google搜索表现的汇总数据，与站内使用统计分开。GA4、GitHub Pages和AdSense根据各自条款处理数据。必要的广告同意和CMP选项仍予保留。本说明不表示整个网站或外部服务完全不使用Cookie。"
+        },
+        {
+          "heading": "统计数字的含义",
+          "body": "次数和模型估计不等于精确的独立访客人数。拦截、网络故障和报告方式可能造成缺失。点击TEN链接不代表完成购买。我们不会编造缺失的历史统计。"
+        },
+        {
+          "heading": "咨询和权利请求",
+          "body": "隐私咨询、异议或地区性权利请求，请发送至ant79798@gmail.com。我们会审查请求和适用要求。全球统一设置不排除当地义务，本说明也不替代依法另行取得的同意。"
+        }
+      ],
+      "stop": "停止统计发送",
+      "resume": "恢复无Cookie统计",
+      "stopped": "此浏览器已停止发送统计。",
+      "active": "无Cookie统计发送已启用，并不代表同意使用Cookie。",
+      "updatedLabel": "最后更新"
+    },
+    "ar": {
+      "title": "إحصاءات استخدام الموقع والخصوصية",
+      "intro": "نطبق إعدادات القياس نفسها التي تقلل البيانات الشخصية في اللغات الـ21. لا تتطلب الأدلة والأدوات التسجيل أو الاسم الحقيقي أو بيانات الاتصال.",
+      "sections": [
+        {
+          "heading": "ما الذي نقيسه؟",
+          "body": "يقيس GA4 ‏(G-Z2MJ6TXZHK) مشاهدات الصفحات واللغة والبلد التقريبي واستخدام الأدوات ونسخ رموز هدايا اللعبة والنقرات على روابط TEN. تقتصر الأحداث على قائمة سماح محددة. لا تتضمن معلمات القياس نصوص استعلامات الروابط أو أجزائها، ولا مدخلات الحاسبات والنماذج، ولا الروابط الخارجية الكاملة."
+        },
+        {
+          "heading": "إشارات دون ملفات تعريف ارتباط",
+          "body": "تكون حالات الموافقة المتعلقة بالتحليلات والإعلانات مرفوضة افتراضياً، ولا تتحول إلى موافقة تلقائياً. ومع ذلك، قد يرسل GA4 إشارات دون ملفات تعريف ارتباط تتضمن معلومات تقنية عن الطلبات. لا ينشئ الموقع ملفات شخصية للزوار أو معرّفات تحليلية دائمة خاصة به."
+        },
+        {
+          "heading": "معالجة عناوين IP",
+          "body": "تعالج Google وبنية الاستضافة عناوين IP لتنفيذ الطلبات. وتوضح Google أنها تتخلص من عناوين IP الخاصة بالاتحاد الأوروبي وسويسرا والمملكة المتحدة بعد استنتاج الموقع. وفي المناطق الأخرى تستخدمها للخدمات الأساسية؛ وقد تستخدم الخدمات الإعلانية المرتبطة بيانات IP مشفرة وفق إعداداتها. غياب ملفات تعريف الارتباط لا يعني غياب نقل البيانات أو معالجتها."
+        },
+        {
+          "heading": "إيقاف الإرسال أو استئنافه",
+          "body": "توقف الأزرار أدناه إرسال هذا الموقع إلى GA4 أو تستأنفه في هذا المتصفح. يُحفظ التفضيل هنا فقط ولا يرث سجلات الموافقة السابقة. الاستئناف لا يحوّل حالة الموافقة إلى السماح. يبقى الإرسال متوقفاً عند تفعيل GPC أو DNT. لا تتغير موافقة الإعلانات أو الخطط المحفوظة في الأدوات."
+        },
+        {
+          "heading": "Google والخدمات الأخرى",
+          "body": "توفر Search Console إحصاءات مجمعة لأداء بحث Google، منفصلة عن استخدام الموقع. تواصل GA4 وGitHub Pages وAdSense معالجة البيانات وفق شروط كل خدمة. تبقى الموافقات الإعلانية المطلوبة وخيارات CMP متاحة. لا يعني هذا الإشعار أن الموقع كله أو هذه الجهات لا تستخدم ملفات تعريف ارتباط."
+        },
+        {
+          "heading": "معنى الأرقام",
+          "body": "الأعداد والتقديرات المبنية على النمذجة ليست إحصاءً دقيقاً للزوار الفريدين. قد يسبب الحجب وأخطاء الشبكة وطرق التقارير نقصاً في البيانات. النقر على TEN ليس دليلاً على الشراء. لا نختلق إحصاءات تاريخية مفقودة."
+        },
+        {
+          "heading": "الاستفسارات والطلبات",
+          "body": "للاستفسار عن الخصوصية أو الاعتراض أو الحقوق الإقليمية، تواصل عبر ant79798@gmail.com. نراجع الطلبات والمتطلبات المنطبقة. الإعداد العالمي الموحد لا يلغي الالتزامات المحلية، وهذا الإشعار لا يحل محل أي موافقة منفصلة مطلوبة."
+        }
+      ],
+      "stop": "إيقاف إرسال الإحصاءات",
+      "resume": "استئناف الإحصاءات دون ملفات تعريف ارتباط",
+      "stopped": "إرسال الإحصاءات متوقف في هذا المتصفح.",
+      "active": "إرسال الإحصاءات دون ملفات تعريف ارتباط مفعّل. هذا لا يعني الموافقة على ملفات تعريف الارتباط.",
+      "updatedLabel": "آخر تحديث"
+    },
+    "nl": {
+      "title": "Gebruiksstatistieken en privacy",
+      "intro": "In alle 21 talen gebruiken we dezelfde meetinstellingen die persoonsgegevens beperken. Voor gidsen en hulpmiddelen zijn geen registratie, echte naam of contactgegevens nodig.",
+      "sections": [
+        {
+          "heading": "Wat we meten",
+          "body": "GA4 (G-Z2MJ6TXZHK) meet paginaweergaven, taal, het geschatte land, gebruik van hulpmiddelen, gekopieerde spelcodes en klikken op TEN-links. Gebeurtenissen volgen een expliciete lijst van toegestane waarden. Meetparameters bevatten geen ruwe URL-query's of fragmenten, invoer uit rekenhulpen of formulieren, of volledige externe URL's."
+        },
+        {
+          "heading": "Signalen zonder cookies",
+          "body": "Toestemmingsstatussen voor analyse en advertenties staan standaard op geweigerd en worden niet automatisch toegestaan. GA4 kan toch signalen zonder cookies versturen, met technische informatie over verzoeken. De site maakt geen individuele bezoekersprofielen of eigen blijvende analyse-ID's."
+        },
+        {
+          "heading": "Verwerking van IP-adressen",
+          "body": "Google en de hostinginfrastructuur verwerken IP-adressen om verzoeken af te handelen. Volgens Google worden IP-adressen uit de EU, Zwitserland en het VK verwijderd na het afleiden van de locatie. Elders gebruikt Google IP-adressen voor basisdiensten; gekoppelde advertentiediensten kunnen ook versleutelde IP-gegevens gebruiken volgens hun instellingen. Zonder cookies betekent niet zonder gegevensoverdracht of verwerking."
+        },
+        {
+          "heading": "Verzending stoppen of hervatten",
+          "body": "Met de knoppen hieronder stop of hervat je de GA4-verzending van deze site in deze browser. De voorkeur wordt alleen hier bewaard en neemt eerdere toestemmingsgegevens niet over. Hervatten geeft nooit toestemming. Bij ingeschakelde GPC of DNT blijft de verzending gestopt. Advertentietoestemming en opgeslagen hulpmiddelplannen veranderen niet."
+        },
+        {
+          "heading": "Google en andere diensten",
+          "body": "Search Console levert samengevoegde prestaties van Google Zoeken, los van het gebruik op de site. GA4, GitHub Pages en AdSense verwerken gegevens volgens hun eigen voorwaarden. Vereiste advertentietoestemming en CMP-keuzes blijven beschikbaar. Deze melding stelt niet dat de hele site of deze aanbieders geen cookies gebruiken."
+        },
+        {
+          "heading": "Wat de cijfers betekenen",
+          "body": "Aantallen en gemodelleerde schattingen zijn geen exact aantal unieke bezoekers. Blokkeringen, netwerkfouten en rapportagemethoden kunnen hiaten veroorzaken. Een TEN-klik bewijst geen aankoop. Ontbrekende historische statistieken worden niet verzonnen."
+        },
+        {
+          "heading": "Vragen en verzoeken",
+          "body": "Mail ant79798@gmail.com voor privacyvragen, bezwaar of regionale rechten. We beoordelen verzoeken en toepasselijke vereisten. Een gezamenlijke wereldwijde configuratie heft lokale verplichtingen niet op en deze melding vervangt geen afzonderlijk vereiste toestemming."
+        }
+      ],
+      "stop": "Verzending van statistieken stoppen",
+      "resume": "Statistieken zonder cookies hervatten",
+      "stopped": "De verzending van statistieken is in deze browser gestopt.",
+      "active": "Statistieken zonder cookies worden verstuurd. Dit geeft geen toestemming voor cookies.",
+      "updatedLabel": "Laatst bijgewerkt"
+    },
+    "fr": {
+      "title": "Statistiques d’utilisation et confidentialité",
+      "intro": "Les 21 langues utilisent les mêmes réglages de mesure limitant les données personnelles. Les guides et outils ne nécessitent ni inscription, ni nom réel, ni coordonnées.",
+      "sections": [
+        {
+          "heading": "Ce que nous mesurons",
+          "body": "GA4 (G-Z2MJ6TXZHK) mesure les pages vues, la langue, le pays approximatif, l’utilisation des outils, les copies de codes cadeaux du jeu et les clics sur les liens TEN. Les événements suivent une liste autorisée explicite. Les paramètres excluent les requêtes et fragments d’URL bruts, les saisies des calculateurs ou formulaires et les URL externes complètes."
+        },
+        {
+          "heading": "Signaux sans cookies",
+          "body": "Les états de consentement à l’analyse et à la publicité sont refusés par défaut et ne passent pas automatiquement à accordés. GA4 peut néanmoins envoyer des signaux sans cookies contenant des informations techniques de requête. Le site ne crée ni profil individuel des visiteurs ni identifiant d’analyse persistant propre au site."
+        },
+        {
+          "heading": "Traitement des adresses IP",
+          "body": "Google et l’infrastructure d’hébergement traitent les adresses IP pour gérer les requêtes. Google indique supprimer les IP de l’UE, de la Suisse et du Royaume-Uni après avoir déduit la localisation. Ailleurs, les IP servent aux services de base ; les services publicitaires associés peuvent aussi utiliser des IP chiffrées selon leurs réglages. Sans cookies ne signifie pas sans transmission ni traitement de données."
+        },
+        {
+          "heading": "Arrêter ou reprendre l’envoi",
+          "body": "Les boutons ci-dessous arrêtent ou reprennent l’envoi GA4 du site dans ce navigateur. Le choix est enregistré uniquement ici, sans reprendre les anciens consentements. Reprendre ne vaut jamais consentement accordé. L’envoi reste arrêté si GPC ou DNT est activé. Le consentement publicitaire et les plans enregistrés dans les outils restent inchangés."
+        },
+        {
+          "heading": "Google et autres services",
+          "body": "Search Console fournit des résultats agrégés de Google Search, distincts de l’utilisation du site. GA4, GitHub Pages et AdSense traitent les données selon leurs conditions respectives. Les consentements publicitaires nécessaires et les choix de la CMP sont maintenus. Cette notice ne présente pas l’ensemble du site ou ces prestataires comme exempts de cookies."
+        },
+        {
+          "heading": "Interprétation des chiffres",
+          "body": "Les comptes et estimations modélisées ne sont pas un décompte exact des visiteurs uniques. Les blocages, erreurs réseau et méthodes de rapport peuvent entraîner des lacunes. Un clic TEN ne prouve pas un achat. Nous n’inventons pas les statistiques historiques manquantes."
+        },
+        {
+          "heading": "Questions et demandes",
+          "body": "Pour la confidentialité, une opposition ou vos droits régionaux, écrivez à ant79798@gmail.com. Nous examinons les demandes et les exigences applicables. Une configuration mondiale commune n’écarte pas les obligations locales et cette notice ne remplace aucun consentement distinct requis."
+        }
+      ],
+      "stop": "Arrêter l’envoi des statistiques",
+      "resume": "Reprendre les statistiques sans cookies",
+      "stopped": "L’envoi des statistiques est arrêté dans ce navigateur.",
+      "active": "L’envoi de statistiques sans cookies est activé. Cela ne vaut pas consentement aux cookies.",
+      "updatedLabel": "Dernière mise à jour"
+    },
+    "id": {
+      "title": "Statistik penggunaan dan privasi",
+      "intro": "Kami menerapkan pengaturan pengukuran yang sama untuk meminimalkan data pribadi dalam 21 bahasa. Panduan dan alat tidak memerlukan pendaftaran, nama asli, atau informasi kontak.",
+      "sections": [
+        {
+          "heading": "Yang kami ukur",
+          "body": "GA4 (G-Z2MJ6TXZHK) mengukur tayangan halaman, bahasa, perkiraan negara, penggunaan alat, penyalinan kode hadiah game, dan klik tautan TEN. Peristiwa dibatasi pada daftar izin yang jelas. Parameter pengukuran tidak menyertakan kueri atau fragmen URL mentah, masukan kalkulator atau formulir, maupun URL eksternal lengkap."
+        },
+        {
+          "heading": "Sinyal tanpa cookie",
+          "body": "Status persetujuan analitik dan iklan secara default ditolak dan tidak otomatis diizinkan. GA4 tetap dapat mengirim sinyal tanpa cookie yang mencakup informasi teknis permintaan. Situs tidak membuat profil pengunjung individual atau pengenal analitik persisten milik sendiri."
+        },
+        {
+          "heading": "Pemrosesan alamat IP",
+          "body": "Google dan infrastruktur hosting memproses alamat IP untuk menangani permintaan. Google menyatakan bahwa IP dari UE, Swiss, dan Inggris dibuang setelah menentukan lokasi. Di wilayah lain, Google menggunakan IP untuk layanan dasar; layanan iklan tertaut juga dapat menggunakan IP terenkripsi sesuai pengaturannya. Tanpa cookie bukan berarti tidak ada pengiriman atau pemrosesan data."
+        },
+        {
+          "heading": "Hentikan atau lanjutkan pengiriman",
+          "body": "Tombol di bawah menghentikan atau melanjutkan pengiriman situs ini ke GA4 di browser ini. Preferensi hanya disimpan di sini dan tidak mewarisi catatan persetujuan lama. Melanjutkan tidak pernah mengubah status menjadi setuju. Pengiriman tetap dihentikan selama GPC atau DNT aktif. Persetujuan iklan dan rencana alat yang tersimpan tidak berubah."
+        },
+        {
+          "heading": "Google dan layanan lainnya",
+          "body": "Search Console menyediakan kinerja Google Penelusuran yang diagregasi, terpisah dari penggunaan situs. GA4, GitHub Pages, dan AdSense memproses data sesuai ketentuannya masing-masing. Persetujuan iklan yang diperlukan dan pilihan CMP tetap tersedia. Pemberitahuan ini tidak menyatakan bahwa seluruh situs atau penyedia tersebut bebas cookie."
+        },
+        {
+          "heading": "Arti angka statistik",
+          "body": "Jumlah peristiwa dan estimasi pemodelan bukan jumlah pasti pengunjung unik. Pemblokiran, gangguan jaringan, dan metode pelaporan dapat menimbulkan kekosongan data. Klik TEN bukan bukti pembelian. Kami tidak mengarang statistik historis yang hilang."
+        },
+        {
+          "heading": "Pertanyaan dan permintaan",
+          "body": "Hubungi ant79798@gmail.com untuk pertanyaan privasi, keberatan, atau hak regional. Kami meninjau permintaan dan persyaratan yang berlaku. Konfigurasi global yang sama tidak menghapus kewajiban lokal, dan pemberitahuan ini tidak menggantikan persetujuan terpisah yang diwajibkan."
+        }
+      ],
+      "stop": "Hentikan pengiriman statistik",
+      "resume": "Lanjutkan statistik tanpa cookie",
+      "stopped": "Pengiriman statistik dihentikan di browser ini.",
+      "active": "Pengiriman statistik tanpa cookie aktif. Ini tidak memberikan persetujuan untuk cookie.",
+      "updatedLabel": "Terakhir diperbarui"
+    },
+    "it": {
+      "title": "Statistiche di utilizzo e privacy",
+      "intro": "Applichiamo le stesse impostazioni di misurazione che limitano i dati personali in tutte le 21 lingue. Guide e strumenti non richiedono registrazione, nome reale o recapiti.",
+      "sections": [
+        {
+          "heading": "Cosa misuriamo",
+          "body": "GA4 (G-Z2MJ6TXZHK) misura visualizzazioni di pagina, lingua, paese approssimativo, uso degli strumenti, copie dei codici regalo del gioco e clic sui link TEN. Gli eventi seguono una lista esplicita di valori consentiti. I parametri escludono query e frammenti URL grezzi, dati inseriti in calcolatori o moduli e URL esterni completi."
+        },
+        {
+          "heading": "Segnali senza cookie",
+          "body": "Gli stati di consenso per analisi e pubblicità sono negati per impostazione predefinita e non vengono concessi automaticamente. GA4 può comunque inviare segnali senza cookie con informazioni tecniche delle richieste. Il sito non crea profili dei singoli visitatori né propri identificatori analitici persistenti."
+        },
+        {
+          "heading": "Trattamento degli indirizzi IP",
+          "body": "Google e l’infrastruttura di hosting trattano gli indirizzi IP per gestire le richieste. Google dichiara di eliminare gli IP di UE, Svizzera e Regno Unito dopo aver ricavato la posizione. Altrove usa gli IP per i servizi di base; i servizi pubblicitari collegati possono anche usare IP cifrati secondo le impostazioni. Senza cookie non significa senza trasmissione o trattamento dei dati."
+        },
+        {
+          "heading": "Interrompere o riprendere l’invio",
+          "body": "I pulsanti seguenti interrompono o riprendono l’invio del sito a GA4 in questo browser. La preferenza è salvata solo qui e non eredita i vecchi consensi. Riprendere non concede mai il consenso. L’invio resta interrotto se GPC o DNT è attivo. Il consenso pubblicitario e i piani salvati negli strumenti non cambiano."
+        },
+        {
+          "heading": "Google e altri servizi",
+          "body": "Search Console fornisce dati aggregati sul rendimento nella Ricerca Google, separati dall’uso del sito. GA4, GitHub Pages e AdSense trattano i dati secondo i rispettivi termini. Restano disponibili i consensi pubblicitari necessari e le scelte della CMP. Questa informativa non afferma che l’intero sito o questi fornitori siano privi di cookie."
+        },
+        {
+          "heading": "Significato dei numeri",
+          "body": "Conteggi e stime modellate non sono un numero esatto di visitatori unici. Blocchi, errori di rete e metodi di rendicontazione possono causare lacune. Un clic TEN non dimostra un acquisto. Non inventiamo statistiche storiche mancanti."
+        },
+        {
+          "heading": "Domande e richieste",
+          "body": "Per privacy, opposizioni o diritti regionali, scrivi a ant79798@gmail.com. Esaminiamo richieste e requisiti applicabili. Una configurazione globale comune non annulla gli obblighi locali e questa informativa non sostituisce alcun consenso separato richiesto."
+        }
+      ],
+      "stop": "Interrompi l’invio delle statistiche",
+      "resume": "Riprendi le statistiche senza cookie",
+      "stopped": "L’invio delle statistiche è interrotto in questo browser.",
+      "active": "L’invio delle statistiche senza cookie è attivo. Ciò non concede il consenso ai cookie.",
+      "updatedLabel": "Ultimo aggiornamento"
+    },
+    "pl": {
+      "title": "Statystyki korzystania i prywatność",
+      "intro": "We wszystkich 21 językach stosujemy te same ustawienia pomiaru ograniczające dane osobowe. Poradniki i narzędzia nie wymagają rejestracji, prawdziwego imienia i nazwiska ani danych kontaktowych.",
+      "sections": [
+        {
+          "heading": "Co mierzymy",
+          "body": "GA4 (G-Z2MJ6TXZHK) mierzy odsłony, język, przybliżony kraj, użycie narzędzi, kopiowanie kodów prezentowych gry i kliknięcia linków TEN. Zdarzenia są ograniczone do jawnej listy dozwolonych. Parametry nie zawierają surowych zapytań i fragmentów URL, danych wpisanych do kalkulatorów lub formularzy ani pełnych zewnętrznych URL."
+        },
+        {
+          "heading": "Sygnały bez plików cookie",
+          "body": "Stany zgody na analitykę i reklamy są domyślnie ustawione na odmowę i nie zmieniają się automatycznie na zgodę. GA4 może mimo to wysyłać sygnały bez cookie, zawierające techniczne informacje o żądaniach. Witryna nie tworzy indywidualnych profili odwiedzających ani własnych trwałych identyfikatorów analitycznych."
+        },
+        {
+          "heading": "Przetwarzanie adresów IP",
+          "body": "Google i infrastruktura hostingowa przetwarzają adresy IP do obsługi żądań. Google informuje, że usuwa IP z UE, Szwajcarii i Wielkiej Brytanii po ustaleniu lokalizacji. W innych regionach używa IP do podstawowych usług; powiązane usługi reklamowe mogą też używać zaszyfrowanych IP zgodnie z ustawieniami. Brak cookie nie oznacza braku przesyłania lub przetwarzania danych."
+        },
+        {
+          "heading": "Zatrzymanie lub wznowienie wysyłania",
+          "body": "Poniższe przyciski zatrzymują lub wznawiają wysyłanie danych witryny do GA4 w tej przeglądarce. Ustawienie jest zapisane tylko tutaj i nie dziedziczy dawnych zgód. Wznowienie nigdy nie oznacza udzielenia zgody. Przy włączonym GPC lub DNT wysyłanie pozostaje zatrzymane. Zgoda reklamowa i zapisane plany narzędzi nie zmieniają się."
+        },
+        {
+          "heading": "Google i inne usługi",
+          "body": "Search Console dostarcza zbiorcze wyniki wyszukiwarki Google, oddzielnie od korzystania z witryny. GA4, GitHub Pages i AdSense przetwarzają dane zgodnie ze swoimi warunkami. Wymagane zgody reklamowe i opcje CMP pozostają dostępne. Ta informacja nie oznacza, że cała witryna lub ci dostawcy nie używają cookie."
+        },
+        {
+          "heading": "Znaczenie liczb",
+          "body": "Liczby zdarzeń i szacunki modeli nie są dokładną liczbą unikalnych odwiedzających. Blokady, awarie sieci i metody raportowania mogą powodować braki. Kliknięcie TEN nie potwierdza zakupu. Nie wymyślamy brakujących danych historycznych."
+        },
+        {
+          "heading": "Pytania i wnioski",
+          "body": "Pytania o prywatność, sprzeciwy i wnioski dotyczące praw regionalnych kieruj na ant79798@gmail.com. Rozpatrujemy wnioski i obowiązujące wymogi. Wspólna konfiguracja globalna nie znosi lokalnych obowiązków, a ta informacja nie zastępuje odrębnie wymaganej zgody."
+        }
+      ],
+      "stop": "Zatrzymaj wysyłanie statystyk",
+      "resume": "Wznów statystyki bez cookie",
+      "stopped": "Wysyłanie statystyk jest zatrzymane w tej przeglądarce.",
+      "active": "Wysyłanie statystyk bez cookie jest włączone. Nie oznacza to zgody na cookie.",
+      "updatedLabel": "Ostatnia aktualizacja"
+    },
+    "pt": {
+      "title": "Estatísticas de uso e privacidade",
+      "intro": "Aplicamos as mesmas configurações de medição que minimizam dados pessoais nos 21 idiomas. Guias e ferramentas não exigem cadastro, nome real ou dados de contato.",
+      "sections": [
+        {
+          "heading": "O que medimos",
+          "body": "O GA4 (G-Z2MJ6TXZHK) mede visualizações de páginas, idioma, país aproximado, uso de ferramentas, cópias de códigos de presente do jogo e cliques em links TEN. Os eventos seguem uma lista explícita de permissões. Os parâmetros excluem consultas e fragmentos brutos de URL, entradas de calculadoras ou formulários e URLs externas completas."
+        },
+        {
+          "heading": "Sinais sem cookies",
+          "body": "Os estados de consentimento para análise e publicidade são negados por padrão e não são concedidos automaticamente. Mesmo assim, o GA4 pode enviar sinais sem cookies com informações técnicas das solicitações. O site não cria perfis individuais de visitantes nem identificadores próprios e persistentes de análise."
+        },
+        {
+          "heading": "Tratamento de endereços IP",
+          "body": "O Google e a infraestrutura de hospedagem processam endereços IP para atender às solicitações. O Google informa que descarta os IPs da UE, Suíça e Reino Unido após determinar a localização. Em outras regiões, usa IPs para serviços básicos; serviços de publicidade vinculados também podem usar IPs criptografados conforme suas configurações. Sem cookies não significa ausência de transmissão ou tratamento de dados."
+        },
+        {
+          "heading": "Interromper ou retomar o envio",
+          "body": "Os botões abaixo interrompem ou retomam o envio deste site ao GA4 neste navegador. A preferência é salva apenas aqui, sem herdar consentimentos anteriores. Retomar nunca concede consentimento. O envio permanece interrompido enquanto GPC ou DNT estiver ativado. O consentimento de publicidade e os planos salvos nas ferramentas não são alterados."
+        },
+        {
+          "heading": "Google e outros serviços",
+          "body": "O Search Console fornece dados agregados da Pesquisa Google, separados do uso do site. GA4, GitHub Pages e AdSense tratam dados conforme seus respectivos termos. O consentimento de publicidade necessário e as opções da CMP são mantidos. Este aviso não afirma que todo o site ou esses provedores sejam livres de cookies."
+        },
+        {
+          "heading": "O significado dos números",
+          "body": "Contagens e estimativas modeladas não representam um número exato de visitantes únicos. Bloqueios, falhas de rede e métodos de relatório podem causar lacunas. Um clique TEN não comprova uma compra. Não inventamos estatísticas históricas ausentes."
+        },
+        {
+          "heading": "Dúvidas e solicitações",
+          "body": "Para questões de privacidade, oposição ou direitos regionais, entre em contato por ant79798@gmail.com. Avaliamos as solicitações e os requisitos aplicáveis. Uma configuração global comum não elimina obrigações locais, e este aviso não substitui qualquer consentimento separado exigido."
+        }
+      ],
+      "stop": "Interromper envio de estatísticas",
+      "resume": "Retomar estatísticas sem cookies",
+      "stopped": "O envio de estatísticas está interrompido neste navegador.",
+      "active": "O envio de estatísticas sem cookies está ativado. Isso não concede consentimento para cookies.",
+      "updatedLabel": "Última atualização"
+    },
+    "es": {
+      "title": "Estadísticas de uso y privacidad",
+      "intro": "Aplicamos los mismos ajustes de medición que minimizan los datos personales en los 21 idiomas. Las guías y herramientas no requieren registro, nombre real ni datos de contacto.",
+      "sections": [
+        {
+          "heading": "Qué medimos",
+          "body": "GA4 (G-Z2MJ6TXZHK) mide visitas a páginas, idioma, país aproximado, uso de herramientas, copias de códigos de regalo del juego y clics en enlaces TEN. Los eventos se limitan a una lista explícita de permitidos. Los parámetros excluyen consultas y fragmentos de URL sin procesar, entradas de calculadoras o formularios y URL externas completas."
+        },
+        {
+          "heading": "Señales sin cookies",
+          "body": "Los estados de consentimiento para análisis y publicidad están denegados por defecto y no se conceden automáticamente. Aun así, GA4 puede enviar señales sin cookies que incluyen información técnica de las solicitudes. El sitio no crea perfiles individuales de visitantes ni identificadores analíticos persistentes propios."
+        },
+        {
+          "heading": "Tratamiento de direcciones IP",
+          "body": "Google y la infraestructura de alojamiento procesan direcciones IP para atender solicitudes. Google indica que descarta las IP de la UE, Suiza y Reino Unido tras deducir la ubicación. En otros lugares las utiliza para servicios básicos; los servicios publicitarios vinculados también pueden usar IP cifradas según sus ajustes. Sin cookies no significa sin transmisión ni tratamiento de datos."
+        },
+        {
+          "heading": "Detener o reanudar el envío",
+          "body": "Los botones siguientes detienen o reanudan el envío a GA4 de este sitio en este navegador. La preferencia se guarda solo aquí y no hereda consentimientos anteriores. Reanudar nunca concede consentimiento. El envío permanece detenido mientras GPC o DNT estén activados. No se modifican el consentimiento publicitario ni los planes guardados en las herramientas."
+        },
+        {
+          "heading": "Google y otros servicios",
+          "body": "Search Console ofrece datos agregados de Google Search, separados del uso del sitio. GA4, GitHub Pages y AdSense siguen tratando datos conforme a sus respectivas condiciones. Se mantienen el consentimiento publicitario necesario y las opciones de la CMP. Este aviso no afirma que todo el sitio o estos proveedores estén libres de cookies."
+        },
+        {
+          "heading": "Qué significan las cifras",
+          "body": "Los recuentos y estimaciones modeladas no son una cifra exacta de visitantes únicos. Los bloqueos, fallos de red y métodos de informe pueden generar lagunas. Un clic en TEN no demuestra una compra. No inventamos estadísticas históricas faltantes."
+        },
+        {
+          "heading": "Consultas y solicitudes",
+          "body": "Para consultas de privacidad, oposición o derechos regionales, escribe a ant79798@gmail.com. Revisamos las solicitudes y los requisitos aplicables. Una configuración global común no anula las obligaciones locales y este aviso no sustituye ningún consentimiento adicional exigido."
+        }
+      ],
+      "stop": "Detener el envío de estadísticas",
+      "resume": "Reanudar estadísticas sin cookies",
+      "stopped": "El envío de estadísticas está detenido en este navegador.",
+      "active": "El envío de estadísticas sin cookies está activado. Esto no concede consentimiento para cookies.",
+      "updatedLabel": "Última actualización"
+    },
+    "sv": {
+      "title": "Användningsstatistik och integritet",
+      "intro": "Vi använder samma mätinställningar som minimerar personuppgifter på alla 21 språk. Guider och verktyg kräver varken registrering, riktigt namn eller kontaktuppgifter.",
+      "sections": [
+        {
+          "heading": "Vad vi mäter",
+          "body": "GA4 (G-Z2MJ6TXZHK) mäter sidvisningar, språk, ungefärligt land, verktygsanvändning, kopiering av spelkoder och klick på TEN-länkar. Händelser begränsas till en uttrycklig tillåtelselista. Mätparametrar innehåller inte råa URL-frågesträngar eller fragment, inmatningar i kalkylatorer eller formulär eller fullständiga externa URL:er."
+        },
+        {
+          "heading": "Signaler utan kakor",
+          "body": "Samtyckesstatus för analys och annonsering är nekad som standard och ändras inte automatiskt till beviljad. GA4 kan ändå skicka signaler utan kakor med teknisk information om anrop. Webbplatsen skapar inte individuella besökarprofiler eller egna beständiga analysidentifierare."
+        },
+        {
+          "heading": "Behandling av IP-adresser",
+          "body": "Google och webbhotellsinfrastrukturen behandlar IP-adresser för att hantera anrop. Google uppger att IP-adresser från EU, Schweiz och Storbritannien raderas efter att platsen har härletts. I andra regioner används IP-adresser för grundläggande tjänster; kopplade annonstjänster kan även använda krypterade IP-uppgifter enligt sina inställningar. Utan kakor betyder inte utan dataöverföring eller behandling."
+        },
+        {
+          "heading": "Stoppa eller återuppta överföring",
+          "body": "Knapparna nedan stoppar eller återupptar webbplatsens GA4-överföring i den här webbläsaren. Valet sparas bara här och ärver inte tidigare samtycken. Att återuppta innebär aldrig att samtycke ges. Överföringen förblir stoppad när GPC eller DNT är aktiverat. Annonssamtycke och sparade verktygsplaner ändras inte."
+        },
+        {
+          "heading": "Google och andra tjänster",
+          "body": "Search Console ger sammanställda resultat från Google Sök, separat från användningen av webbplatsen. GA4, GitHub Pages och AdSense behandlar uppgifter enligt sina respektive villkor. Nödvändigt annonssamtycke och CMP-val finns kvar. Denna information innebär inte att hela webbplatsen eller dessa leverantörer är fria från kakor."
+        },
+        {
+          "heading": "Vad siffrorna betyder",
+          "body": "Antal och modellerade uppskattningar är inte ett exakt antal unika besökare. Blockering, nätverksfel och rapporteringsmetoder kan orsaka luckor. Ett TEN-klick bevisar inte ett köp. Vi hittar inte på saknad historisk statistik."
+        },
+        {
+          "heading": "Frågor och begäranden",
+          "body": "Kontakta ant79798@gmail.com om integritet, invändningar eller regionala rättigheter. Vi granskar begäranden och tillämpliga krav. En gemensam global konfiguration upphäver inte lokala skyldigheter, och denna information ersätter inte något separat samtycke som krävs."
+        }
+      ],
+      "stop": "Stoppa statistiköverföring",
+      "resume": "Återuppta statistik utan kakor",
+      "stopped": "Statistiköverföringen är stoppad i den här webbläsaren.",
+      "active": "Statistiköverföring utan kakor är aktiverad. Det innebär inte samtycke till kakor.",
+      "updatedLabel": "Senast uppdaterad"
+    },
+    "th": {
+      "title": "สถิติการใช้งานและความเป็นส่วนตัว",
+      "intro": "เราใช้การตั้งค่าการวัดผลแบบเดียวกันที่ลดการเก็บข้อมูลส่วนบุคคลในทั้ง 21 ภาษา การอ่านคู่มือและใช้เครื่องมือไม่ต้องสมัครสมาชิก ระบุชื่อจริง หรือให้ข้อมูลติดต่อ",
+      "sections": [
+        {
+          "heading": "สิ่งที่เราวัดผล",
+          "body": "GA4 (G-Z2MJ6TXZHK) วัดยอดดูหน้าเว็บ ภาษา ประเทศโดยประมาณ การใช้เครื่องมือ การคัดลอกรหัสของขวัญเกม และการคลิกลิงก์ TEN เหตุการณ์จำกัดตามรายการที่อนุญาตไว้อย่างชัดเจน พารามิเตอร์ไม่รวมข้อความค้นหาหรือส่วนย่อยของ URL แบบดิบ ข้อมูลที่กรอกในเครื่องคำนวณหรือแบบฟอร์ม และ URL ภายนอกแบบเต็ม"
+        },
+        {
+          "heading": "สัญญาณที่ไม่ใช้คุกกี้",
+          "body": "สถานะความยินยอมด้านการวิเคราะห์และโฆษณาเริ่มต้นเป็นปฏิเสธ และจะไม่เปลี่ยนเป็นยินยอมโดยอัตโนมัติ อย่างไรก็ตาม GA4 ยังอาจส่งสัญญาณที่ไม่ใช้คุกกี้ รวมถึงข้อมูลทางเทคนิคของคำขอ เว็บไซต์ไม่สร้างโปรไฟล์ผู้เข้าชมรายบุคคลหรือตัวระบุถาวรสำหรับการวิเคราะห์ของตนเอง"
+        },
+        {
+          "heading": "การประมวลผลที่อยู่ IP",
+          "body": "Google และโครงสร้างพื้นฐานโฮสติ้งประมวลผลที่อยู่ IP เพื่อจัดการคำขอ Google ระบุว่าจะทิ้ง IP จากสหภาพยุโรป สวิตเซอร์แลนด์ และสหราชอาณาจักรหลังจากระบุตำแหน่งโดยประมาณแล้ว ในภูมิภาคอื่น Google ใช้ IP สำหรับบริการพื้นฐาน และบริการโฆษณาที่เชื่อมโยงอาจใช้ IP ที่เข้ารหัสตามการตั้งค่า การไม่ใช้คุกกี้ไม่ได้แปลว่าไม่มีการส่งหรือประมวลผลข้อมูล"
+        },
+        {
+          "heading": "หยุดหรือกลับมาส่งสถิติ",
+          "body": "ปุ่มด้านล่างใช้หยุดหรือกลับมาส่งข้อมูลของเว็บไซต์ไปยัง GA4 ในเบราว์เซอร์นี้ การตั้งค่าถูกบันทึกไว้ที่นี่เท่านั้นและไม่รับช่วงบันทึกความยินยอมเดิม การกลับมาส่งไม่เปลี่ยนสถานะเป็นยินยอม หากเปิด GPC หรือ DNT การส่งจะยังคงหยุดอยู่ ความยินยอมโฆษณาและแผนที่บันทึกในเครื่องมือจะไม่เปลี่ยนแปลง"
+        },
+        {
+          "heading": "Google และบริการอื่น",
+          "body": "Search Console ให้ข้อมูลประสิทธิภาพการค้นหาบน Google แบบรวม ซึ่งแยกจากการใช้งานภายในเว็บไซต์ GA4, GitHub Pages และ AdSense ประมวลผลข้อมูลตามข้อกำหนดของแต่ละบริการ ความยินยอมโฆษณาที่จำเป็นและตัวเลือก CMP ยังคงมีอยู่ ประกาศนี้ไม่ได้ระบุว่าทั้งเว็บไซต์หรือผู้ให้บริการเหล่านี้ไม่ใช้คุกกี้เลย"
+        },
+        {
+          "heading": "ความหมายของตัวเลข",
+          "body": "จำนวนครั้งและค่าประมาณจากแบบจำลองไม่ใช่จำนวนผู้เข้าชมที่ไม่ซ้ำกันอย่างแม่นยำ การบล็อก ความผิดพลาดของเครือข่าย และวิธีรายงานอาจทำให้ข้อมูลขาดหาย การคลิก TEN ไม่ใช่หลักฐานการซื้อ เราไม่สร้างสถิติย้อนหลังที่ขาดหายขึ้นเอง"
+        },
+        {
+          "heading": "คำถามและคำขอใช้สิทธิ",
+          "body": "ติดต่อ ant79798@gmail.com สำหรับเรื่องความเป็นส่วนตัว การคัดค้าน หรือสิทธิในแต่ละภูมิภาค เราจะตรวจสอบคำขอและข้อกำหนดที่ใช้บังคับ การตั้งค่าร่วมกันทั่วโลกไม่ได้ลบล้างหน้าที่ตามกฎหมายท้องถิ่น และประกาศนี้ไม่ทดแทนความยินยอมอื่นที่กฎหมายกำหนดให้ต้องขอแยกต่างหาก"
+        }
+      ],
+      "stop": "หยุดส่งสถิติ",
+      "resume": "กลับมาส่งสถิติที่ไม่ใช้คุกกี้",
+      "stopped": "หยุดส่งสถิติในเบราว์เซอร์นี้แล้ว",
+      "active": "เปิดการส่งสถิติที่ไม่ใช้คุกกี้อยู่ ซึ่งไม่ได้หมายถึงการยินยอมให้ใช้คุกกี้",
+      "updatedLabel": "อัปเดตล่าสุด"
+    },
+    "tr": {
+      "title": "Kullanım istatistikleri ve gizlilik",
+      "intro": "21 dilin tamamında kişisel verileri en aza indiren aynı ölçüm ayarlarını kullanıyoruz. Rehberler ve araçlar kayıt, gerçek ad veya iletişim bilgisi gerektirmez.",
+      "sections": [
+        {
+          "heading": "Neleri ölçüyoruz?",
+          "body": "GA4 (G-Z2MJ6TXZHK); sayfa görüntülemelerini, dili, yaklaşık ülkeyi, araç kullanımını, oyun hediye kodu kopyalamalarını ve TEN bağlantısı tıklamalarını ölçer. Olaylar açık bir izin listesiyle sınırlıdır. Ölçüm parametreleri ham URL sorgularını veya parçalarını, hesaplayıcı ya da form girdilerini ve tam harici URL’leri içermez."
+        },
+        {
+          "heading": "Çerezsiz sinyaller",
+          "body": "Analiz ve reklam onay durumları varsayılan olarak reddedilmiştir ve otomatik olarak onaylanmaz. GA4 yine de isteklerin teknik bilgilerini içeren çerezsiz sinyaller gönderebilir. Site, ziyaretçilere ait bireysel profiller veya kendine ait kalıcı analiz tanımlayıcıları oluşturmaz."
+        },
+        {
+          "heading": "IP adreslerinin işlenmesi",
+          "body": "Google ve barındırma altyapısı, istekleri işlemek için IP adreslerini işler. Google, AB, İsviçre ve Birleşik Krallık IP’lerini konum çıkarıldıktan sonra sildiğini belirtir. Diğer bölgelerde IP’ler temel hizmetler için kullanılır; bağlantılı reklam hizmetleri de ayarlara göre şifrelenmiş IP verilerini kullanabilir. Çerezsiz olması, veri iletimi veya işlenmesi olmadığı anlamına gelmez."
+        },
+        {
+          "heading": "İletimi durdurma veya sürdürme",
+          "body": "Aşağıdaki düğmeler, bu tarayıcıda sitenin GA4 iletimini durdurur veya sürdürür. Tercih yalnızca burada saklanır ve eski onay kayıtlarını devralmaz. Sürdürmek hiçbir zaman onay verildiği anlamına gelmez. GPC veya DNT açıkken iletim durdurulmuş kalır. Reklam onayı ve araçlarda kaydedilen planlar değişmez."
+        },
+        {
+          "heading": "Google ve diğer hizmetler",
+          "body": "Search Console, site içi kullanımdan ayrı olarak toplu Google Arama performansı sağlar. GA4, GitHub Pages ve AdSense kendi koşullarına göre veri işlemeyi sürdürür. Gerekli reklam onayı ve CMP seçenekleri korunur. Bu bildirim, sitenin tamamının veya bu sağlayıcıların çerezsiz olduğunu söylemez."
+        },
+        {
+          "heading": "Sayıların anlamı",
+          "body": "Sayımlar ve modellenen tahminler, benzersiz ziyaretçilerin kesin sayısı değildir. Engelleme, ağ hataları ve raporlama yöntemleri eksiklere neden olabilir. TEN tıklaması satın alma kanıtı değildir. Eksik geçmiş istatistikleri uydurmuyoruz."
+        },
+        {
+          "heading": "Sorular ve talepler",
+          "body": "Gizlilik, itiraz veya bölgesel haklar için ant79798@gmail.com adresine yazın. Talepleri ve geçerli gereklilikleri inceliyoruz. Ortak küresel yapılandırma yerel yükümlülükleri geçersiz kılmaz; bu bildirim ayrıca gerekli olan hiçbir onayın yerine geçmez."
+        }
+      ],
+      "stop": "İstatistik iletimini durdur",
+      "resume": "Çerezsiz istatistikleri sürdür",
+      "stopped": "Bu tarayıcıda istatistik iletimi durduruldu.",
+      "active": "Çerezsiz istatistik iletimi açık. Bu, çerezlere onay verildiği anlamına gelmez.",
+      "updatedLabel": "Son güncelleme"
+    },
+    "vi": {
+      "title": "Thống kê sử dụng và quyền riêng tư",
+      "intro": "Chúng tôi áp dụng cùng một thiết lập đo lường nhằm giảm thiểu dữ liệu cá nhân cho cả 21 ngôn ngữ. Bạn không cần đăng ký, cung cấp tên thật hoặc thông tin liên hệ để dùng hướng dẫn và công cụ.",
+      "sections": [
+        {
+          "heading": "Những gì được đo lường",
+          "body": "GA4 (G-Z2MJ6TXZHK) đo lượt xem trang, ngôn ngữ, quốc gia ước tính, lượt dùng công cụ, sao chép mã quà tặng trò chơi và nhấp liên kết TEN. Sự kiện được giới hạn bằng danh sách cho phép rõ ràng. Tham số đo lường không chứa truy vấn hoặc đoạn URL nguyên gốc, dữ liệu nhập vào máy tính hay biểu mẫu, hoặc URL bên ngoài đầy đủ."
+        },
+        {
+          "heading": "Tín hiệu không dùng cookie",
+          "body": "Trạng thái đồng ý cho phân tích và quảng cáo mặc định là từ chối và không tự chuyển sang cho phép. GA4 vẫn có thể gửi tín hiệu không dùng cookie, gồm thông tin kỹ thuật của yêu cầu. Trang không tạo hồ sơ riêng cho từng khách truy cập hoặc mã nhận dạng phân tích lâu dài của riêng mình."
+        },
+        {
+          "heading": "Xử lý địa chỉ IP",
+          "body": "Google và hạ tầng lưu trữ xử lý địa chỉ IP để phục vụ yêu cầu. Google cho biết IP từ EU, Thụy Sĩ và Vương quốc Anh bị loại bỏ sau khi suy ra vị trí. Ở nơi khác, Google dùng IP cho dịch vụ cơ bản; dịch vụ quảng cáo liên kết cũng có thể dùng IP được mã hóa tùy cài đặt. Không dùng cookie không có nghĩa là không truyền hoặc xử lý dữ liệu."
+        },
+        {
+          "heading": "Dừng hoặc tiếp tục gửi",
+          "body": "Các nút bên dưới dừng hoặc tiếp tục việc trang gửi dữ liệu tới GA4 trong trình duyệt này. Tùy chọn chỉ được lưu tại đây và không kế thừa hồ sơ đồng ý cũ. Tiếp tục không bao giờ chuyển trạng thái thành đồng ý. Việc gửi vẫn dừng khi GPC hoặc DNT được bật. Sự đồng ý quảng cáo và các kế hoạch đã lưu trong công cụ không thay đổi."
+        },
+        {
+          "heading": "Google và các dịch vụ khác",
+          "body": "Search Console cung cấp hiệu suất tổng hợp của Google Tìm kiếm, tách biệt với hoạt động trên trang. GA4, GitHub Pages và AdSense xử lý dữ liệu theo điều khoản riêng. Các yêu cầu đồng ý quảng cáo và lựa chọn CMP vẫn được giữ lại. Thông báo này không khẳng định toàn bộ trang hoặc các nhà cung cấp đều không dùng cookie."
+        },
+        {
+          "heading": "Ý nghĩa của số liệu",
+          "body": "Số lần và ước tính từ mô hình không phải số khách truy cập riêng biệt chính xác. Chặn theo dõi, lỗi mạng và phương pháp báo cáo có thể gây thiếu dữ liệu. Nhấp TEN không chứng minh đã mua hàng. Chúng tôi không tạo ra thống kê lịch sử còn thiếu."
+        },
+        {
+          "heading": "Câu hỏi và yêu cầu",
+          "body": "Liên hệ ant79798@gmail.com về quyền riêng tư, phản đối hoặc quyền theo khu vực. Chúng tôi xem xét yêu cầu và quy định áp dụng. Cấu hình chung toàn cầu không loại bỏ nghĩa vụ địa phương, và thông báo này không thay thế bất kỳ sự đồng ý riêng nào được yêu cầu."
+        }
+      ],
+      "stop": "Dừng gửi thống kê",
+      "resume": "Tiếp tục thống kê không cookie",
+      "stopped": "Việc gửi thống kê đã dừng trong trình duyệt này.",
+      "active": "Đang bật gửi thống kê không dùng cookie. Điều này không có nghĩa là đồng ý dùng cookie.",
+      "updatedLabel": "Cập nhật lần cuối"
+    },
+    "ms": {
+      "title": "Statistik penggunaan dan privasi",
+      "intro": "Kami menggunakan tetapan pengukuran yang sama untuk meminimumkan data peribadi dalam semua 21 bahasa. Panduan dan alat tidak memerlukan pendaftaran, nama sebenar atau maklumat hubungan.",
+      "sections": [
+        {
+          "heading": "Perkara yang diukur",
+          "body": "GA4 (G-Z2MJ6TXZHK) mengukur paparan halaman, bahasa, anggaran negara, penggunaan alat, penyalinan kod hadiah permainan dan klik pautan TEN. Peristiwa dihadkan kepada senarai dibenarkan yang jelas. Parameter pengukuran tidak mengandungi pertanyaan atau fragmen URL mentah, input kalkulator atau borang, atau URL luaran penuh."
+        },
+        {
+          "heading": "Isyarat tanpa kuki",
+          "body": "Status persetujuan analitik dan pengiklanan ditetapkan kepada ditolak secara lalai dan tidak dibenarkan secara automatik. GA4 masih boleh menghantar isyarat tanpa kuki yang merangkumi maklumat teknikal permintaan. Laman ini tidak membina profil pelawat individu atau pengecam analitik kekal miliknya sendiri."
+        },
+        {
+          "heading": "Pemprosesan alamat IP",
+          "body": "Google dan infrastruktur pengehosan memproses alamat IP untuk mengendalikan permintaan. Google menyatakan bahawa IP dari EU, Switzerland dan UK dibuang selepas lokasi ditentukan. Di tempat lain, Google menggunakan IP untuk perkhidmatan asas; perkhidmatan iklan yang dipautkan juga mungkin menggunakan IP disulitkan mengikut tetapan. Tanpa kuki tidak bermaksud tiada penghantaran atau pemprosesan data."
+        },
+        {
+          "heading": "Hentikan atau sambung penghantaran",
+          "body": "Butang di bawah menghentikan atau menyambung penghantaran laman ini ke GA4 dalam pelayar ini. Pilihan hanya disimpan di sini dan tidak mewarisi rekod persetujuan lama. Menyambung tidak pernah memberikan persetujuan. Penghantaran kekal dihentikan semasa GPC atau DNT diaktifkan. Persetujuan iklan dan pelan alat yang disimpan tidak berubah."
+        },
+        {
+          "heading": "Google dan perkhidmatan lain",
+          "body": "Search Console menyediakan prestasi Carian Google yang diagregatkan, berasingan daripada penggunaan laman. GA4, GitHub Pages dan AdSense memproses data mengikut terma masing-masing. Persetujuan iklan yang diperlukan dan pilihan CMP dikekalkan. Notis ini tidak menyatakan bahawa seluruh laman atau penyedia ini bebas kuki."
+        },
+        {
+          "heading": "Maksud angka statistik",
+          "body": "Kiraan dan anggaran model bukan jumlah tepat pelawat unik. Sekatan, kegagalan rangkaian dan kaedah pelaporan boleh menyebabkan jurang. Klik TEN bukan bukti pembelian. Kami tidak mereka statistik sejarah yang hilang."
+        },
+        {
+          "heading": "Soalan dan permintaan",
+          "body": "Hubungi ant79798@gmail.com untuk privasi, bantahan atau hak serantau. Kami meneliti permintaan dan keperluan yang terpakai. Konfigurasi global yang sama tidak mengetepikan kewajipan tempatan, dan notis ini tidak menggantikan sebarang persetujuan berasingan yang diwajibkan."
+        }
+      ],
+      "stop": "Hentikan penghantaran statistik",
+      "resume": "Sambung statistik tanpa kuki",
+      "stopped": "Penghantaran statistik dihentikan dalam pelayar ini.",
+      "active": "Penghantaran statistik tanpa kuki diaktifkan. Ini tidak memberikan persetujuan untuk kuki.",
+      "updatedLabel": "Kemas kini terakhir"
+    },
+    "nb": {
+      "title": "Bruksstatistikk og personvern",
+      "intro": "Vi bruker de samme måleinnstillingene som begrenser personopplysninger på alle 21 språk. Guider og verktøy krever verken registrering, ekte navn eller kontaktopplysninger.",
+      "sections": [
+        {
+          "heading": "Hva vi måler",
+          "body": "GA4 (G-Z2MJ6TXZHK) måler sidevisninger, språk, omtrentlig land, verktøybruk, kopiering av gavekoder i spillet og klikk på TEN-lenker. Hendelser er begrenset til en uttrykkelig liste over tillatte verdier. Måleparametere inneholder ikke rå URL-spørringer eller fragmenter, inndata fra kalkulatorer eller skjemaer eller fullstendige eksterne URL-er."
+        },
+        {
+          "heading": "Signaler uten informasjonskapsler",
+          "body": "Samtykkestatus for analyse og annonser er avslått som standard og endres ikke automatisk til godkjent. GA4 kan likevel sende signaler uten informasjonskapsler med teknisk informasjon om forespørsler. Nettstedet oppretter ikke individuelle besøksprofiler eller egne varige analyseidentifikatorer."
+        },
+        {
+          "heading": "Behandling av IP-adresser",
+          "body": "Google og vertsinfrastrukturen behandler IP-adresser for å håndtere forespørsler. Google opplyser at IP-adresser fra EU, Sveits og Storbritannia slettes etter at stedet er utledet. Andre steder brukes IP-adresser til grunntjenester; tilknyttede annonsetjenester kan også bruke krypterte IP-data i tråd med innstillingene. Uten informasjonskapsler betyr ikke uten dataoverføring eller behandling."
+        },
+        {
+          "heading": "Stopp eller gjenoppta overføring",
+          "body": "Knappene nedenfor stopper eller gjenopptar nettstedets GA4-overføring i denne nettleseren. Valget lagres bare her og arver ikke tidligere samtykker. Gjenopptakelse gir aldri samtykke. Overføringen forblir stoppet mens GPC eller DNT er aktivert. Annonssamtykke og lagrede verktøyplaner endres ikke."
+        },
+        {
+          "heading": "Google og andre tjenester",
+          "body": "Search Console gir samlede resultater fra Google Søk, separat fra bruken av nettstedet. GA4, GitHub Pages og AdSense behandler data etter sine respektive vilkår. Nødvendig annonsesamtykke og CMP-valg beholdes. Denne informasjonen sier ikke at hele nettstedet eller disse leverandørene er uten informasjonskapsler."
+        },
+        {
+          "heading": "Hva tallene betyr",
+          "body": "Antall og modellerte anslag er ikke et nøyaktig antall unike besøkende. Blokkering, nettverksfeil og rapporteringsmetoder kan gi mangler. Et TEN-klikk beviser ikke et kjøp. Vi dikter ikke opp manglende historisk statistikk."
+        },
+        {
+          "heading": "Spørsmål og forespørsler",
+          "body": "Kontakt ant79798@gmail.com om personvern, innsigelser eller regionale rettigheter. Vi vurderer forespørsler og gjeldende krav. En felles global konfigurasjon opphever ikke lokale plikter, og denne informasjonen erstatter ikke særskilt påkrevd samtykke."
+        }
+      ],
+      "stop": "Stopp sending av statistikk",
+      "resume": "Gjenoppta statistikk uten informasjonskapsler",
+      "stopped": "Sending av statistikk er stoppet i denne nettleseren.",
+      "active": "Statistikk uten informasjonskapsler sendes. Dette gir ikke samtykke til informasjonskapsler.",
+      "updatedLabel": "Sist oppdatert"
+    }
+  }
+}

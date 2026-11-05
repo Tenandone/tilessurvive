@@ -146,7 +146,7 @@
           if(select){const index=rows.findIndex(r=>r.level===to);if(index>=0&&!select.options[index]?.disabled){const summary=table.closest('.ts3-data-workbench').querySelector('.ts3-selection'),open=summary.open;select.value=String(index);select.dispatchEvent(new Event('change'));summary.open=open;}}
         }catch{out.dataset.result='missing';out.textContent=t.unknown;out.classList.add('ts3-result-error');highlight(table,NaN,NaN);}
       }
-      form.addEventListener('input',update);form.addEventListener('change',update);form.addEventListener('submit',e=>e.preventDefault());
+      form.addEventListener('input',update);form.addEventListener('change',()=>{update();if(out.dataset.result?.startsWith('{')){try{root.TS_ANALYTICS?.track?.('calculator_run',{feature:'building_growth',action:'result',placement:'calculator'});}catch(_){}}});form.addEventListener('submit',e=>e.preventDefault());
       actions.querySelector('[data-building-reset]').addEventListener('click',()=>{form.querySelectorAll('input').forEach(n=>n.value='0');form.querySelectorAll('select').forEach(n=>n.value=n.dataset.default);update();});update();
     });
     const speedup=d.querySelector('[data-speedup-calculator-page]');

@@ -1,16 +1,26 @@
 'use strict';
-const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
+const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto'),{execFileSync}=require('node:child_process');
 const {parseHTML}=require('linkedom');
 const G=require('./build-german-50'),V=require('./build-v3-platform');
 const affiliate=require('../data/v3-affiliate-copy.json').locales,events=require('../data/v3-events-copy.json').copy;
 const ROOT=path.resolve(__dirname,'..');
-const read=route=>V.project(fs.readFileSync(path.join(ROOT,'en',route),'utf8'),'en','/en/'+route.replace(/index\.html$/,''));
+// Use committed templates and current owners in memory, independently of a
+// concurrent publication pass rebuilding the checked-out locale pages.
+const templates=new Map();
+const read=route=>{if(!templates.has(route))templates.set(route,execFileSync('git',['show','HEAD:en/'+route],{cwd:ROOT,encoding:'utf8',maxBuffer:4e6}));return V.project(templates.get(route),'en','/en/'+route.replace(/index\.html$/,''));};
+function assertAnalyticsShell(document){
+ assert.equal(document.querySelectorAll('[data-v3-consent],[data-v3-owned="privacy"]').length,0);
+ const boot=document.querySelectorAll('[data-v3-ga-bootstrap]');assert.equal(boot.length,1);const text=boot[0].textContent;
+ for(const key of ['analytics_storage','ad_storage','ad_user_data','ad_personalization'])assert(text.includes(key+":'denied'"));assert(!text.includes('granted'));assert(text.includes('window.TS_V3_GA_IDS=["G-Z2MJ6TXZHK"]'));assert(text.includes("'url_passthrough',false"));assert(text.includes("'ads_data_redaction',true"));
+ const scripts=[...document.querySelectorAll('script[src]')];for(const name of ['analytics-contract','v3-affiliate']){const matches=scripts.filter(s=>s.getAttribute('src').startsWith('/js/'+name+'.js'));assert.equal(matches.length,1);assert(matches[0].hasAttribute('defer'));const hash=crypto.createHash('sha256').update(fs.readFileSync(path.join(ROOT,'js',name+'.js'))).digest('hex').slice(0,12);assert.equal(matches[0].getAttribute('src'),'/js/'+name+'.js?v='+hash);}
+ assert(scripts.findIndex(s=>s.getAttribute('src').startsWith('/js/analytics-contract.js'))<scripts.findIndex(s=>s.getAttribute('src').startsWith('/js/v3-affiliate.js')));
+}
 
 test('German regeneration uses reviewed DE V3 owners rather than translating their English prose',()=>{
  for(const route of ['events/index.html','tools/event-helper/index.html','top-up/index.html','heroes/travis/index.html']){
   const input=read(route),calls=[];
   const output=G.render(input,(text)=>{calls.push(text.trim());return text;},route),document=parseHTML(output).document;
-  assert.equal(document.querySelector('[data-v3-consent] h2').textContent,affiliate.de.privacyTitle,route);
+  assertAnalyticsShell(document);
   assert(!calls.includes(affiliate.en.privacyText),'managed privacy text cannot reach generic catalog');
   if(route==='top-up/index.html'){
    assert.equal(document.querySelector('[data-v3-guide] h2').textContent,affiliate.de.title);
@@ -28,7 +38,13 @@ test('only verified legacy heading decorations, their exact generated TOC links 
  const route='top-up/index.html',document=parseHTML(read(route)).document;
  const title=document.querySelector('[data-v3-guide] h2');title.id='article-section-999';
  document.querySelector('[data-v3-guide]').classList.add('ts3-character-section');
- for(const link of document.querySelectorAll('[data-v3-cta="outbound"]'))link.textContent='LootBar →';
+ const enTen=require('./ten-benefits-content').get('en').values;
+ for(const link of document.querySelectorAll('[data-v3-cta="outbound"]')){
+  // Only links that historically used this label are a valid legacy fixture.
+  // The additional-coupon action has its own reviewed "Open the TEN store"
+  // label; changing it into a top-up action was already invalid at baseline.
+  if(!link.classList.contains('ten-link')||link.textContent===enTen.bookmarkCta)link.textContent='LootBar →';
+ }
  const nav=document.createElement('nav');nav.className='ts3-contents';nav.setAttribute('data-product-30','');
  nav.innerHTML='<a href="/en/top-up/#article-section-999">'+affiliate.en.title+'</a><a href="#unrelated">Unrelated original section</a>';
  document.querySelector('main').prepend(nav);
@@ -38,13 +54,15 @@ test('only verified legacy heading decorations, their exact generated TOC links 
  assert([...parseHTML(prepared).document.querySelectorAll('[data-v3-owned]')].every(node=>node.getAttribute('data-v3-owned')==='analytics'));
  const output=G.render(document.toString(),value=>value,route);
  assert.equal(parseHTML(output).document.querySelector('[data-v3-guide] > [data-v3-cta="outbound"]').textContent,affiliate.de.outbound);
- for(const link of parseHTML(output).document.querySelectorAll('a.ten-link'))assert.equal(link.textContent,require('./ten-benefits-content').get('de').values.bookmarkCta);
+ const values=require('./ten-benefits-content').get('de').values,tenCopy=require('./v61-ten-content').get('de'),labels={additional_coupon:tenCopy.newMemberCta,guide:values.bookmarkCta,bookmark:tenCopy.newMemberCta},links=[...parseHTML(output).document.querySelectorAll('a.ten-link')];
+ assert.deepEqual(links.map(link=>link.getAttribute('data-ten-placement')),['additional_coupon','guide','bookmark']);for(const link of links)assert.equal(link.textContent,labels[link.getAttribute('data-ten-placement')]);
 });
 
 test('forged owners, unreviewed managed text, changed game-facing values and foreign assets fail closed',()=>{
  const route='events/index.html';
  for(const mutate of [
-  d=>{d.querySelector('[data-v3-consent] p').textContent='Unreviewed managed prose';},
+  d=>{const title=d.querySelector('#v3-events-title');assert(title);title.textContent='Unreviewed managed prose';},
+  d=>{const boot=d.querySelector('[data-v3-ga-bootstrap]');assert(boot);boot.textContent=boot.textContent.replace("analytics_storage:'denied'","analytics_storage:'granted'");},
   d=>{d.querySelector('#v3-events-data').textContent=d.querySelector('#v3-events-data').textContent.replace('"confirmedSchedules":[]','"confirmedSchedules":[{"invented":1}]');},
   d=>{const node=d.createElement('p');node.setAttribute('data-v3-owned','privacy');node.textContent='Pretend to be managed';d.querySelector('main').append(node);},
   d=>{const node=d.createElement('p');node.setAttribute('data-v3-owned','unknown-owner');d.querySelector('main').append(node);},

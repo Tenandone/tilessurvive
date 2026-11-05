@@ -118,8 +118,8 @@
     var list = select('[data-v3-plans]');
     var now = function () { return Date.now(); };
     function notify(key) { message.textContent = t[key]; }
-    function save(key) {
-      try { host.localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); notify(key); }
+    function save(key, action) {
+      try { host.localStorage.setItem(STORAGE_KEY, JSON.stringify(state)); notify(key); if(action){try{host.TS_ANALYTICS?.track?.('planner_use',{feature:'event_planner',action:action,placement:'planner'});}catch(_){}} }
       catch (_) { notify('storageUnavailable'); }
     }
     function tick() {
@@ -166,7 +166,7 @@
       var id = 'p-' + now().toString(36) + '-' + Math.random().toString(36).slice(2, 10);
       var result = addPlan(state, {eventId: select('[data-v3-event]').value, start: select('[data-v3-start]').value, end: select('[data-v3-end]').value}, ids, id);
       if (result.error) { notify(result.error); return; }
-      state = result.state; renderPlans(); save('saved');
+      state = result.state; renderPlans(); save('saved','save');
     });
     list.addEventListener('click', function (event) {
       var button = event.target.closest('[data-v3-remove]');
@@ -176,7 +176,7 @@
       renderPlans(); save('saved');
     });
     select('[data-v3-clear]').addEventListener('click', function () {
-      state = {version: 1, offset: state.offset, plans: []}; renderPlans(); save('clearDone');
+      state = {version: 1, offset: state.offset, plans: []}; renderPlans(); save('clearDone','clear');
     });
     root.setAttribute('data-mounted', 'true');
     root.querySelectorAll('[data-v3-interactive]').forEach(function (node) { node.hidden = false; });
