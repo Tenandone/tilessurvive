@@ -31,7 +31,17 @@
       "allTitle": "All buildings: Nuclear Fuel quick reference",
       "scopeLabel": "Building scope",
       "treeHelp": "Compare buildings in the Power Plant prerequisite chain. Values cover upgrading each building to the selected nuclear level; they are not the minimum cost to reach a Power Plant level.",
-      "allHelp": "Compare all buildings with Nuclear Fuel upgrades at N1–N3."
+      "allHelp": "Compare all buildings with Nuclear Fuel upgrades at N1–N3.",
+      "firstUpgradeFreeNote": "Only the Power Plant’s first N1 substep requires 0 Nuclear Fuel.",
+      "powerPlantBadge": "Power Plant completion required",
+      "powerPlantSharedNote": "The six marked buildings can advance through a nuclear level only after the Power Plant has completed that same level.",
+      "powerPlantStage": "Current Power Plant stage",
+      "powerPlantCompletedStage": "N{level} complete",
+      "powerPlantRequired": "Complete Power Plant N{level} first",
+      "powerPlantMet": "Power Plant N{level} requirement met",
+      "otherConditions": "Check the selected building’s own stages and other unlock conditions as well.",
+      "selectedBuildingFuel": "Nuclear Fuel for the selected building",
+      "prerequisiteCostNote": "Only the selected building is counted. Prerequisite building costs are excluded."
     },
     "ko": {
       "title": "원자력 레벨별 핵연료",
@@ -63,7 +73,17 @@
       "allTitle": "전체 핵연료 간이표",
       "scopeLabel": "건물 범위",
       "treeHelp": "발전소의 선행 건물 관계에 포함된 건물을 비교합니다. 각 건물을 선택한 원자력 레벨까지 올리는 요구량이며, 발전소 달성에 필요한 최소 비용은 아닙니다.",
-      "allHelp": "N1–N3 핵연료 업그레이드가 있는 모든 건물을 비교하세요."
+      "allHelp": "N1–N3 핵연료 업그레이드가 있는 모든 건물을 비교하세요.",
+      "firstUpgradeFreeNote": "발전소 N1의 첫 세부 단계만 핵연료가 0개입니다.",
+      "powerPlantBadge": "발전소 완료 필요",
+      "powerPlantSharedNote": "표시된 6종은 발전소의 같은 N레벨을 완료한 뒤 해당 레벨의 업그레이드를 진행할 수 있습니다.",
+      "powerPlantStage": "현재 발전소 완료 단계",
+      "powerPlantCompletedStage": "N{level} 완료",
+      "powerPlantRequired": "발전소 N{level} 완료 필요",
+      "powerPlantMet": "발전소 N{level} 조건 충족",
+      "otherConditions": "선택 건물의 자체 단계와 다른 해금 조건도 확인하세요.",
+      "selectedBuildingFuel": "선택 건물의 핵연료",
+      "prerequisiteCostNote": "선택한 건물만 합산합니다. 선행 건물의 비용은 포함하지 않습니다."
     },
     "ja": {
       "title": "原子力レベル別の核燃料",
@@ -95,7 +115,17 @@
       "allTitle": "全建物の核燃料早見表",
       "scopeLabel": "建物の範囲",
       "treeHelp": "発電所の前提建物のつながりに含まれる建物を比較します。各建物を選択した原子力レベルまで上げるための必要量であり、発電所の目標レベル達成に必要な最小量ではありません。",
-      "allHelp": "N1～N3の核燃料アップグレードがあるすべての建物を比較できます。"
+      "allHelp": "N1～N3の核燃料アップグレードがあるすべての建物を比較できます。",
+      "firstUpgradeFreeNote": "核燃料が0個なのは、発電所N1の最初の細分段階だけです。",
+      "powerPlantBadge": "発電所の完了が必要",
+      "powerPlantSharedNote": "印の付いた6種類の建物は、発電所の同じNレベルを完了してから、そのレベルのアップグレードを進められます。",
+      "powerPlantStage": "発電所の現在の完了段階",
+      "powerPlantCompletedStage": "N{level}完了",
+      "powerPlantRequired": "発電所N{level}の完了が必要",
+      "powerPlantMet": "発電所N{level}の条件を達成",
+      "otherConditions": "選択した建物自体の段階と、その他の解放条件も確認してください。",
+      "selectedBuildingFuel": "選択した建物の核燃料",
+      "prerequisiteCostNote": "選択した建物のみを合算します。前提となる建物の費用は含みません。"
     },
     "zh-tw": {
       "title": "各核能等級所需核燃料",
@@ -127,7 +157,17 @@
       "allTitle": "全部建築核燃料速查表",
       "scopeLabel": "建築範圍",
       "treeHelp": "比較發電廠前置建築關係中的建築。數值是將各建築升至所選核能等級的需求，並非達成發電廠目標等級的最低成本。",
-      "allHelp": "比較所有可進行N1–N3核燃料升級的建築。"
+      "allHelp": "比較所有可進行N1–N3核燃料升級的建築。",
+      "firstUpgradeFreeNote": "只有發電廠N1的第一個細分階段需要0個核燃料。",
+      "powerPlantBadge": "需先完成發電廠階段",
+      "powerPlantSharedNote": "標記的6種建築須先完成發電廠的相同N等級，才能進行該等級的升級。",
+      "powerPlantStage": "發電廠目前完成階段",
+      "powerPlantCompletedStage": "N{level}已完成",
+      "powerPlantRequired": "須先完成發電廠N{level}",
+      "powerPlantMet": "已滿足發電廠N{level}條件",
+      "otherConditions": "也請確認所選建築自身的階段及其他解鎖條件。",
+      "selectedBuildingFuel": "所選建築的核燃料",
+      "prerequisiteCostNote": "僅計算所選建築，不含前置建築的費用。"
     },
     "de": {
       "title": "Kernbrennstoff je Stufe",
@@ -159,7 +199,17 @@
       "allTitle": "Kernbrennstoffübersicht aller Gebäude",
       "scopeLabel": "Gebäudeumfang",
       "treeHelp": "Vergleiche die Gebäude in der Voraussetzungskette des Kraftwerks. Die Werte gelten für den Ausbau jedes Gebäudes auf die gewählte Nuklearstufe, nicht für die Mindestkosten zum Erreichen einer Kraftwerkstufe.",
-      "allHelp": "Vergleiche alle Gebäude mit Kernbrennstoff-Upgrades auf N1–N3."
+      "allHelp": "Vergleiche alle Gebäude mit Kernbrennstoff-Upgrades auf N1–N3.",
+      "firstUpgradeFreeNote": "Nur der erste Teilschritt von N1 beim Kraftwerk benötigt 0 Kernbrennstoff.",
+      "powerPlantBadge": "Abgeschlossenes Kraftwerk-Level erforderlich",
+      "powerPlantSharedNote": "Die sechs markierten Gebäude können erst in einem nuklearen Level ausgebaut werden, wenn das Kraftwerk dieses Level vollständig abgeschlossen hat.",
+      "powerPlantStage": "Aktuell abgeschlossener Kraftwerk-Schritt",
+      "powerPlantCompletedStage": "N{level} abgeschlossen",
+      "powerPlantRequired": "Zuerst Kraftwerk N{level} abschließen",
+      "powerPlantMet": "Kraftwerk-Bedingung für N{level} erfüllt",
+      "otherConditions": "Prüfe auch die eigenen Ausbauschritte des gewählten Gebäudes und weitere Freischaltbedingungen.",
+      "selectedBuildingFuel": "Kernbrennstoff für das gewählte Gebäude",
+      "prerequisiteCostNote": "Es wird nur das gewählte Gebäude berechnet. Kosten für vorausgesetzte Gebäude sind nicht enthalten."
     },
     "ru": {
       "title": "Ядерное топливо по уровням",
@@ -191,7 +241,17 @@
       "allTitle": "Ядерное топливо: сводная таблица всех зданий",
       "scopeLabel": "Набор зданий",
       "treeHelp": "Сравните здания из цепочки требований электростанции. Значения показывают потребность для улучшения каждого здания до выбранного ядерного уровня, а не минимальную стоимость достижения уровня электростанции.",
-      "allHelp": "Сравните все здания с ядерными улучшениями N1–N3, требующими топлива."
+      "allHelp": "Сравните все здания с ядерными улучшениями N1–N3, требующими топлива.",
+      "firstUpgradeFreeNote": "Только первый подэтап N1 электростанции требует 0 ядерного топлива.",
+      "powerPlantBadge": "Требуется завершить уровень электростанции",
+      "powerPlantSharedNote": "Улучшать шесть отмеченных зданий на ядерном уровне можно только после полного завершения того же уровня электростанции.",
+      "powerPlantStage": "Текущий завершённый этап электростанции",
+      "powerPlantCompletedStage": "N{level} завершён",
+      "powerPlantRequired": "Сначала завершите N{level} электростанции",
+      "powerPlantMet": "Условие электростанции N{level} выполнено",
+      "otherConditions": "Также проверьте собственные этапы выбранного здания и другие условия открытия.",
+      "selectedBuildingFuel": "Ядерное топливо для выбранного здания",
+      "prerequisiteCostNote": "Учитывается только выбранное здание. Затраты на необходимые здания не включены."
     },
     "zh-cn": {
       "title": "各核能等级所需核燃料",
@@ -223,7 +283,17 @@
       "allTitle": "全部建筑核燃料速查表",
       "scopeLabel": "建筑范围",
       "treeHelp": "比较发电厂前置建筑关系中的建筑。数值是将各建筑升至所选核能等级的需求，并非达成发电厂目标等级的最低成本。",
-      "allHelp": "比较所有可进行N1–N3核燃料升级的建筑。"
+      "allHelp": "比较所有可进行N1–N3核燃料升级的建筑。",
+      "firstUpgradeFreeNote": "只有发电厂N1的第一个细分阶段需要0个核燃料。",
+      "powerPlantBadge": "需先完成发电厂阶段",
+      "powerPlantSharedNote": "标记的6种建筑须先完成发电厂的相同N等级，才能进行该等级的升级。",
+      "powerPlantStage": "发电厂目前完成阶段",
+      "powerPlantCompletedStage": "N{level}已完成",
+      "powerPlantRequired": "须先完成发电厂N{level}",
+      "powerPlantMet": "已满足发电厂N{level}条件",
+      "otherConditions": "也请确认所选建筑自身的阶段及其他解锁条件。",
+      "selectedBuildingFuel": "所选建筑的核燃料",
+      "prerequisiteCostNote": "仅计算所选建筑，不含前置建筑的费用。"
     },
     "ar": {
       "title": "الوقود النووي حسب المستوى",
@@ -255,7 +325,17 @@
       "allTitle": "جدول الوقود النووي لجميع المباني",
       "scopeLabel": "نطاق المباني",
       "treeHelp": "قارن المباني ضمن سلسلة المتطلبات السابقة لمحطة الطاقة. القيم هي متطلبات ترقية كل مبنى إلى المستوى النووي المحدد، وليست الحد الأدنى لتكلفة الوصول إلى مستوى محطة الطاقة.",
-      "allHelp": "قارن جميع المباني ذات ترقيات الوقود النووي N1–N3."
+      "allHelp": "قارن جميع المباني ذات ترقيات الوقود النووي N1–N3.",
+      "firstUpgradeFreeNote": "الخطوة الفرعية الأولى فقط من N1 لمحطة الطاقة تتطلب 0 من الوقود النووي.",
+      "powerPlantBadge": "يلزم إكمال مستوى محطة الطاقة",
+      "powerPlantSharedNote": "لا يمكن تطوير المباني الستة المعلّمة ضمن مستوى نووي إلا بعد إكمال محطة الطاقة للمستوى نفسه.",
+      "powerPlantStage": "المرحلة المكتملة الحالية لمحطة الطاقة",
+      "powerPlantCompletedStage": "اكتمل N{level}",
+      "powerPlantRequired": "أكمل N{level} لمحطة الطاقة أولاً",
+      "powerPlantMet": "تحقق شرط محطة الطاقة N{level}",
+      "otherConditions": "تحقق أيضاً من مراحل المبنى المحدد وشروط الفتح الأخرى.",
+      "selectedBuildingFuel": "الوقود النووي للمبنى المحدد",
+      "prerequisiteCostNote": "يُحسب المبنى المحدد فقط، ولا تشمل النتيجة تكاليف المباني المطلوبة مسبقاً."
     },
     "nl": {
       "title": "Nucleaire brandstof per niveau",
@@ -287,7 +367,17 @@
       "allTitle": "Nucleaire brandstof: alle gebouwen",
       "scopeLabel": "Gebouwselectie",
       "treeHelp": "Vergelijk gebouwen in de keten van vereisten voor de energiecentrale. De waarden gelden voor het upgraden van elk gebouw naar het gekozen nucleaire niveau, niet voor de minimale kosten om een niveau van de energiecentrale te bereiken.",
-      "allHelp": "Vergelijk alle gebouwen met nucleaire brandstofupgrades op N1–N3."
+      "allHelp": "Vergelijk alle gebouwen met nucleaire brandstofupgrades op N1–N3.",
+      "firstUpgradeFreeNote": "Alleen de eerste N1-deelstap van de Energiecentrale kost 0 kernbrandstof.",
+      "powerPlantBadge": "Voltooiing Energiecentrale vereist",
+      "powerPlantSharedNote": "De zes gemarkeerde gebouwen kunnen pas binnen een nucleair niveau worden verbeterd nadat de Energiecentrale datzelfde niveau heeft voltooid.",
+      "powerPlantStage": "Huidige fase van de Energiecentrale",
+      "powerPlantCompletedStage": "N{level} voltooid",
+      "powerPlantRequired": "Voltooi eerst N{level} van de Energiecentrale",
+      "powerPlantMet": "Aan de eis voor Energiecentrale N{level} voldaan",
+      "otherConditions": "Controleer ook de eigen fasen van het gekozen gebouw en de overige ontgrendelvoorwaarden.",
+      "selectedBuildingFuel": "Kernbrandstof voor het gekozen gebouw",
+      "prerequisiteCostNote": "Alleen het gekozen gebouw telt mee. Kosten van vereiste andere gebouwen zijn niet inbegrepen."
     },
     "fr": {
       "title": "Combustible nucléaire par niveau",
@@ -319,7 +409,17 @@
       "allTitle": "Combustible nucléaire : tableau de tous les bâtiments",
       "scopeLabel": "Bâtiments affichés",
       "treeHelp": "Comparez les bâtiments de la chaîne de prérequis du Centre. Les valeurs correspondent à l’amélioration de chaque bâtiment jusqu’au niveau nucléaire choisi, et non au coût minimum pour atteindre un niveau du Centre.",
-      "allHelp": "Comparez tous les bâtiments avec des améliorations N1–N3 nécessitant du combustible nucléaire."
+      "allHelp": "Comparez tous les bâtiments avec des améliorations N1–N3 nécessitant du combustible nucléaire.",
+      "firstUpgradeFreeNote": "Seule la première sous-étape N1 du Centre nécessite 0 combustible nucléaire.",
+      "powerPlantBadge": "Niveau du Centre à terminer",
+      "powerPlantSharedNote": "Les six bâtiments marqués ne peuvent progresser dans un niveau nucléaire qu’après l’achèvement de ce même niveau par le Centre.",
+      "powerPlantStage": "Étape actuellement terminée du Centre",
+      "powerPlantCompletedStage": "N{level} terminé",
+      "powerPlantRequired": "Terminez d’abord le niveau N{level} du Centre",
+      "powerPlantMet": "Condition du Centre N{level} remplie",
+      "otherConditions": "Vérifiez aussi les étapes propres au bâtiment choisi et les autres conditions de déblocage.",
+      "selectedBuildingFuel": "Combustible nucléaire du bâtiment choisi",
+      "prerequisiteCostNote": "Seul le bâtiment choisi est compté. Les coûts des bâtiments prérequis sont exclus."
     },
     "id": {
       "title": "Bahan bakar nuklir per level",
@@ -351,7 +451,17 @@
       "allTitle": "Ringkasan bahan bakar nuklir semua bangunan",
       "scopeLabel": "Cakupan bangunan",
       "treeHelp": "Bandingkan bangunan dalam rantai prasyarat Pembangkit Listrik. Nilai menunjukkan kebutuhan untuk menaikkan setiap bangunan ke level nuklir yang dipilih, bukan biaya minimum untuk mencapai level Pembangkit Listrik.",
-      "allHelp": "Bandingkan semua bangunan dengan peningkatan N1–N3 yang membutuhkan bahan bakar nuklir."
+      "allHelp": "Bandingkan semua bangunan dengan peningkatan N1–N3 yang membutuhkan bahan bakar nuklir.",
+      "firstUpgradeFreeNote": "Hanya sub-tahap pertama N1 Pembangkit Listrik yang membutuhkan 0 Bahan Bakar Nuklir.",
+      "powerPlantBadge": "Pembangkit Listrik harus menyelesaikan level",
+      "powerPlantSharedNote": "Keenam bangunan bertanda hanya dapat ditingkatkan dalam suatu level nuklir setelah Pembangkit Listrik menyelesaikan level yang sama.",
+      "powerPlantStage": "Tahap Pembangkit Listrik saat ini",
+      "powerPlantCompletedStage": "N{level} selesai",
+      "powerPlantRequired": "Selesaikan N{level} Pembangkit Listrik terlebih dahulu",
+      "powerPlantMet": "Syarat Pembangkit Listrik N{level} terpenuhi",
+      "otherConditions": "Periksa juga tahap bangunan yang dipilih dan syarat pembukaan lainnya.",
+      "selectedBuildingFuel": "Bahan Bakar Nuklir untuk bangunan yang dipilih",
+      "prerequisiteCostNote": "Hanya bangunan yang dipilih yang dihitung. Biaya bangunan prasyarat tidak termasuk."
     },
     "it": {
       "title": "Combustibile nucleare per livello",
@@ -383,7 +493,17 @@
       "allTitle": "Combustibile nucleare: tabella di tutti gli edifici",
       "scopeLabel": "Edifici inclusi",
       "treeHelp": "Confronta gli edifici nella catena di prerequisiti della Centrale. I valori indicano il fabbisogno per portare ogni edificio al livello nucleare scelto, non il costo minimo per raggiungere un livello della Centrale.",
-      "allHelp": "Confronta tutti gli edifici con miglioramenti N1–N3 che richiedono combustibile nucleare."
+      "allHelp": "Confronta tutti gli edifici con miglioramenti N1–N3 che richiedono combustibile nucleare.",
+      "firstUpgradeFreeNote": "Solo il primo sottolivello N1 della Centrale richiede 0 Carburante nucleare.",
+      "powerPlantBadge": "Completamento della Centrale richiesto",
+      "powerPlantSharedNote": "I sei edifici contrassegnati possono avanzare in un livello nucleare solo dopo che la Centrale ha completato lo stesso livello.",
+      "powerPlantStage": "Fase attuale della Centrale",
+      "powerPlantCompletedStage": "N{level} completato",
+      "powerPlantRequired": "Completa prima N{level} della Centrale",
+      "powerPlantMet": "Requisito della Centrale N{level} soddisfatto",
+      "otherConditions": "Controlla anche le fasi dell’edificio selezionato e le altre condizioni di sblocco.",
+      "selectedBuildingFuel": "Carburante nucleare per l’edificio selezionato",
+      "prerequisiteCostNote": "Viene conteggiato solo l’edificio selezionato. I costi degli edifici richiesti come prerequisito sono esclusi."
     },
     "pl": {
       "title": "Paliwo jądrowe według poziomu",
@@ -415,7 +535,17 @@
       "allTitle": "Paliwo jądrowe: tabela wszystkich budynków",
       "scopeLabel": "Zakres budynków",
       "treeHelp": "Porównaj budynki w łańcuchu wymagań elektrowni. Wartości oznaczają potrzeby ulepszenia każdego budynku do wybranego poziomu jądrowego, a nie minimalny koszt osiągnięcia poziomu elektrowni.",
-      "allHelp": "Porównaj wszystkie budynki z ulepszeniami N1–N3 wymagającymi paliwa jądrowego."
+      "allHelp": "Porównaj wszystkie budynki z ulepszeniami N1–N3 wymagającymi paliwa jądrowego.",
+      "firstUpgradeFreeNote": "Tylko pierwszy podetap N1 Elektrowni wymaga 0 paliwa jądrowego.",
+      "powerPlantBadge": "Wymagane ukończenie poziomu Elektrowni",
+      "powerPlantSharedNote": "Sześć oznaczonych budynków można ulepszać w ramach danego poziomu jądrowego dopiero po ukończeniu tego samego poziomu Elektrowni.",
+      "powerPlantStage": "Obecny etap Elektrowni",
+      "powerPlantCompletedStage": "N{level} ukończony",
+      "powerPlantRequired": "Najpierw ukończ N{level} Elektrowni",
+      "powerPlantMet": "Warunek Elektrowni N{level} spełniony",
+      "otherConditions": "Sprawdź też etapy wybranego budynku i pozostałe warunki odblokowania.",
+      "selectedBuildingFuel": "Paliwo jądrowe dla wybranego budynku",
+      "prerequisiteCostNote": "Uwzględniono tylko wybrany budynek. Koszty budynków wymaganych wstępnie nie są wliczone."
     },
     "pt": {
       "title": "Combustível nuclear por nível",
@@ -447,7 +577,17 @@
       "allTitle": "Combustível nuclear: tabela de todas as construções",
       "scopeLabel": "Construções incluídas",
       "treeHelp": "Compare as construções na cadeia de pré-requisitos da Usina. Os valores indicam o necessário para elevar cada construção ao nível nuclear escolhido, não o custo mínimo para atingir um nível da Usina.",
-      "allHelp": "Compare todas as construções com melhorias N1–N3 que exigem combustível nuclear."
+      "allHelp": "Compare todas as construções com melhorias N1–N3 que exigem combustível nuclear.",
+      "firstUpgradeFreeNote": "Apenas a primeira subetapa N1 da Usina exige 0 Combustível Nuclear.",
+      "powerPlantBadge": "É preciso concluir o nível da Usina",
+      "powerPlantSharedNote": "Os seis edifícios marcados só podem avançar em um nível nuclear depois que a Usina concluir esse mesmo nível.",
+      "powerPlantStage": "Etapa atual concluída da Usina",
+      "powerPlantCompletedStage": "N{level} concluído",
+      "powerPlantRequired": "Conclua primeiro o N{level} da Usina",
+      "powerPlantMet": "Condição da Usina N{level} atendida",
+      "otherConditions": "Verifique também as etapas do próprio edifício escolhido e outras condições de desbloqueio.",
+      "selectedBuildingFuel": "Combustível Nuclear do edifício escolhido",
+      "prerequisiteCostNote": "Só o edifício escolhido é contabilizado. Os custos dos edifícios exigidos como pré-requisito não estão incluídos."
     },
     "es": {
       "title": "Combustible nuclear por nivel",
@@ -479,7 +619,17 @@
       "allTitle": "Combustible nuclear: tabla de todos los edificios",
       "scopeLabel": "Edificios incluidos",
       "treeHelp": "Compara los edificios de la cadena de requisitos previos de la central eléctrica. Los valores indican lo necesario para mejorar cada edificio al nivel nuclear elegido, no el coste mínimo para alcanzar un nivel de la central.",
-      "allHelp": "Compara todos los edificios con mejoras N1–N3 que requieren combustible nuclear."
+      "allHelp": "Compara todos los edificios con mejoras N1–N3 que requieren combustible nuclear.",
+      "firstUpgradeFreeNote": "Solo la primera subetapa N1 de la central eléctrica requiere 0 combustible nuclear.",
+      "powerPlantBadge": "Se debe completar el nivel de la central",
+      "powerPlantSharedNote": "Los seis edificios marcados solo pueden avanzar en un nivel nuclear después de que la central eléctrica complete ese mismo nivel.",
+      "powerPlantStage": "Etapa actual completada de la central eléctrica",
+      "powerPlantCompletedStage": "N{level} completado",
+      "powerPlantRequired": "Completa primero N{level} de la central eléctrica",
+      "powerPlantMet": "Condición de la central eléctrica N{level} cumplida",
+      "otherConditions": "Comprueba también las etapas del propio edificio elegido y las demás condiciones de desbloqueo.",
+      "selectedBuildingFuel": "Combustible nuclear del edificio elegido",
+      "prerequisiteCostNote": "Solo se cuenta el edificio elegido. No se incluyen los costes de los edificios previos necesarios."
     },
     "sv": {
       "title": "Kärnbränsle per nivå",
@@ -511,7 +661,17 @@
       "allTitle": "Kärnbränsleöversikt för alla byggnader",
       "scopeLabel": "Byggnadsurval",
       "treeHelp": "Jämför byggnaderna i kraftverkets förkravskedja. Värdena gäller uppgradering av varje byggnad till vald kärnkraftsnivå, inte minimikostnaden för att nå en kraftverksnivå.",
-      "allHelp": "Jämför alla byggnader med uppgraderingar på N1–N3 som kräver kärnbränsle."
+      "allHelp": "Jämför alla byggnader med uppgraderingar på N1–N3 som kräver kärnbränsle.",
+      "firstUpgradeFreeNote": "Endast Kraftverkets första delsteg i N1 kräver 0 kärnbränsle.",
+      "powerPlantBadge": "Kraftverkets nivå måste vara slutförd",
+      "powerPlantSharedNote": "De sex markerade byggnaderna kan uppgraderas inom en kärnnivå först när Kraftverket har slutfört samma nivå.",
+      "powerPlantStage": "Kraftverkets nuvarande steg",
+      "powerPlantCompletedStage": "N{level} slutförd",
+      "powerPlantRequired": "Slutför Kraftverkets N{level} först",
+      "powerPlantMet": "Kravet på Kraftverkets N{level} är uppfyllt",
+      "otherConditions": "Kontrollera även den valda byggnadens egna steg och övriga upplåsningsvillkor.",
+      "selectedBuildingFuel": "Kärnbränsle för den valda byggnaden",
+      "prerequisiteCostNote": "Endast den valda byggnaden räknas. Kostnader för byggnader som krävs i förväg ingår inte."
     },
     "th": {
       "title": "เชื้อเพลิงนิวเคลียร์ตามระดับ",
@@ -543,7 +703,17 @@
       "allTitle": "ตารางเชื้อเพลิงนิวเคลียร์ของทุกสิ่งปลูกสร้าง",
       "scopeLabel": "ขอบเขตสิ่งปลูกสร้าง",
       "treeHelp": "เปรียบเทียบสิ่งปลูกสร้างในสายเงื่อนไขก่อนอัปเกรดโรงไฟฟ้า ตัวเลขแสดงปริมาณที่ต้องใช้เพื่ออัปเกรดแต่ละสิ่งปลูกสร้างถึงระดับนิวเคลียร์ที่เลือก ไม่ใช่ค่าใช้จ่ายขั้นต่ำเพื่อให้โรงไฟฟ้าถึงระดับเป้าหมาย",
-      "allHelp": "เปรียบเทียบทุกสิ่งปลูกสร้างที่มีการอัปเกรด N1–N3 ซึ่งต้องใช้เชื้อเพลิงนิวเคลียร์"
+      "allHelp": "เปรียบเทียบทุกสิ่งปลูกสร้างที่มีการอัปเกรด N1–N3 ซึ่งต้องใช้เชื้อเพลิงนิวเคลียร์",
+      "firstUpgradeFreeNote": "เฉพาะขั้นย่อยแรกของ N1 ของโรงไฟฟ้าเท่านั้นที่ใช้เชื้อเพลิงนิวเคลียร์ 0 หน่วย",
+      "powerPlantBadge": "ต้องอัปเกรดโรงไฟฟ้าให้ครบระดับก่อน",
+      "powerPlantSharedNote": "อาคารทั้งหกที่ทำเครื่องหมายไว้จะอัปเกรดในระดับนิวเคลียร์นั้นได้ก็ต่อเมื่อโรงไฟฟ้าอัปเกรดครบระดับเดียวกันแล้ว",
+      "powerPlantStage": "ขั้นปัจจุบันของโรงไฟฟ้า",
+      "powerPlantCompletedStage": "อัปเกรด N{level} ครบแล้ว",
+      "powerPlantRequired": "อัปเกรดโรงไฟฟ้า N{level} ให้ครบก่อน",
+      "powerPlantMet": "ผ่านเงื่อนไขโรงไฟฟ้า N{level} แล้ว",
+      "otherConditions": "ตรวจสอบขั้นของอาคารที่เลือกและเงื่อนไขปลดล็อกอื่น ๆ ด้วย",
+      "selectedBuildingFuel": "เชื้อเพลิงนิวเคลียร์สำหรับอาคารที่เลือก",
+      "prerequisiteCostNote": "นับเฉพาะอาคารที่เลือก ไม่รวมค่าใช้จ่ายของอาคารที่เป็นเงื่อนไขก่อนหน้า"
     },
     "tr": {
       "title": "Seviyeye göre nükleer yakıt",
@@ -575,7 +745,17 @@
       "allTitle": "Tüm binaların nükleer yakıt tablosu",
       "scopeLabel": "Bina kapsamı",
       "treeHelp": "Güç Santralinin ön koşul zincirindeki binaları karşılaştırın. Değerler her binayı seçilen nükleer seviyeye yükseltmek için gereken miktardır; bir Güç Santrali seviyesine ulaşmanın asgari maliyeti değildir.",
-      "allHelp": "N1–N3 yükseltmeleri için nükleer yakıt gereken tüm binaları karşılaştırın."
+      "allHelp": "N1–N3 yükseltmeleri için nükleer yakıt gereken tüm binaları karşılaştırın.",
+      "firstUpgradeFreeNote": "Yalnızca Güç Santralinin ilk N1 alt aşaması 0 Nükleer Yakıt gerektirir.",
+      "powerPlantBadge": "Güç Santrali seviyesinin tamamlanması gerekir",
+      "powerPlantSharedNote": "İşaretli altı bina, bir nükleer seviyede ancak Güç Santrali aynı seviyeyi tamamladıktan sonra yükseltilebilir.",
+      "powerPlantStage": "Güç Santralinin mevcut aşaması",
+      "powerPlantCompletedStage": "N{level} tamamlandı",
+      "powerPlantRequired": "Önce Güç Santralinin N{level} seviyesini tamamlayın",
+      "powerPlantMet": "Güç Santrali N{level} koşulu karşılandı",
+      "otherConditions": "Seçili binanın kendi aşamalarını ve diğer kilit açma koşullarını da kontrol edin.",
+      "selectedBuildingFuel": "Seçili bina için Nükleer Yakıt",
+      "prerequisiteCostNote": "Yalnızca seçili bina hesaba katılır. Ön koşul olan binaların maliyetleri dahil değildir."
     },
     "vi": {
       "title": "Nhiên liệu hạt nhân theo cấp",
@@ -607,7 +787,17 @@
       "allTitle": "Bảng nhiên liệu hạt nhân của mọi công trình",
       "scopeLabel": "Phạm vi công trình",
       "treeHelp": "So sánh các công trình trong chuỗi điều kiện tiên quyết của nhà máy điện. Số liệu là nhu cầu để nâng từng công trình lên cấp hạt nhân đã chọn, không phải chi phí tối thiểu để nhà máy điện đạt một cấp.",
-      "allHelp": "So sánh mọi công trình có nâng cấp N1–N3 cần nhiên liệu hạt nhân."
+      "allHelp": "So sánh mọi công trình có nâng cấp N1–N3 cần nhiên liệu hạt nhân.",
+      "firstUpgradeFreeNote": "Chỉ bước phụ đầu tiên của N1 tại Power Plant cần 0 Nhiên liệu hạt nhân.",
+      "powerPlantBadge": "Cần hoàn thành cấp Power Plant",
+      "powerPlantSharedNote": "Sáu công trình được đánh dấu chỉ có thể nâng cấp trong một cấp hạt nhân sau khi Power Plant đã hoàn thành cấp tương ứng.",
+      "powerPlantStage": "Giai đoạn hiện tại của Power Plant",
+      "powerPlantCompletedStage": "Đã hoàn thành N{level}",
+      "powerPlantRequired": "Hoàn thành N{level} của Power Plant trước",
+      "powerPlantMet": "Đã đáp ứng yêu cầu Power Plant N{level}",
+      "otherConditions": "Hãy kiểm tra cả các giai đoạn của công trình đã chọn và những điều kiện mở khóa khác.",
+      "selectedBuildingFuel": "Nhiên liệu hạt nhân cho công trình đã chọn",
+      "prerequisiteCostNote": "Chỉ tính công trình đã chọn. Không bao gồm chi phí của các công trình tiên quyết."
     },
     "ms": {
       "title": "Bahan api nuklear mengikut tahap",
@@ -639,7 +829,17 @@
       "allTitle": "Jadual bahan api nuklear semua bangunan",
       "scopeLabel": "Skop bangunan",
       "treeHelp": "Bandingkan bangunan dalam rantaian prasyarat Loji Kuasa. Nilai menunjukkan keperluan untuk menaik taraf setiap bangunan ke tahap nuklear yang dipilih, bukan kos minimum untuk mencapai tahap Loji Kuasa.",
-      "allHelp": "Bandingkan semua bangunan dengan naik taraf N1–N3 yang memerlukan bahan api nuklear."
+      "allHelp": "Bandingkan semua bangunan dengan naik taraf N1–N3 yang memerlukan bahan api nuklear.",
+      "firstUpgradeFreeNote": "Hanya subperingkat pertama N1 Loji Kuasa memerlukan 0 Bahan Api Nuklear.",
+      "powerPlantBadge": "Peringkat Loji Kuasa mesti diselesaikan",
+      "powerPlantSharedNote": "Enam bangunan yang ditandakan hanya boleh dinaik taraf dalam sesuatu tahap nuklear selepas Loji Kuasa menyelesaikan tahap yang sama.",
+      "powerPlantStage": "Peringkat semasa Loji Kuasa",
+      "powerPlantCompletedStage": "N{level} selesai",
+      "powerPlantRequired": "Selesaikan N{level} Loji Kuasa dahulu",
+      "powerPlantMet": "Syarat Loji Kuasa N{level} dipenuhi",
+      "otherConditions": "Semak juga peringkat bangunan yang dipilih dan syarat pembukaan lain.",
+      "selectedBuildingFuel": "Bahan Api Nuklear untuk bangunan yang dipilih",
+      "prerequisiteCostNote": "Hanya bangunan yang dipilih dikira. Kos bangunan prasyarat tidak termasuk."
     },
     "nb": {
       "title": "Kjernebrensel per nivå",
@@ -671,7 +871,17 @@
       "allTitle": "Kjernebrenseloversikt for alle bygninger",
       "scopeLabel": "Bygningsutvalg",
       "treeHelp": "Sammenlign bygningene i kraftverkets kjede av forutsetninger. Verdiene gjelder oppgradering av hver bygning til valgt kjernekraftnivå, ikke minimumskostnaden for å nå et kraftverksnivå.",
-      "allHelp": "Sammenlign alle bygninger med oppgraderinger på N1–N3 som krever kjernebrensel."
+      "allHelp": "Sammenlign alle bygninger med oppgraderinger på N1–N3 som krever kjernebrensel.",
+      "firstUpgradeFreeNote": "Bare det første deltrinnet i N1 for Power Plant krever 0 kjernebrensel.",
+      "powerPlantBadge": "Power Plant-nivået må være fullført",
+      "powerPlantSharedNote": "De seks merkede bygningene kan oppgraderes innenfor et kjernenivå først etter at Power Plant har fullført samme nivå.",
+      "powerPlantStage": "Nåværende trinn for Power Plant",
+      "powerPlantCompletedStage": "N{level} fullført",
+      "powerPlantRequired": "Fullfør N{level} for Power Plant først",
+      "powerPlantMet": "Kravet til Power Plant N{level} er oppfylt",
+      "otherConditions": "Kontroller også den valgte bygningens egne trinn og andre opplåsingsvilkår.",
+      "selectedBuildingFuel": "Kjernebrensel for den valgte bygningen",
+      "prerequisiteCostNote": "Bare den valgte bygningen regnes med. Kostnader for bygninger som kreves på forhånd, er ikke inkludert."
     }
   }
 }

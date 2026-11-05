@@ -4,6 +4,7 @@
 const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto'),assert=require('node:assert/strict');
 const {execFileSync}=require('node:child_process');
 const {project}=require('./nuclear-fuel-summary');
+const {SIX}=require('./nuclear-service-overrides');
 const ROOT=path.resolve(__dirname,'..');
 const REG=require('../data/i18n/locales.json').locales;
 const DATA=require('../data/nuclear-age.json'),COPY=require('../data/nuclear-fuel-copy.json').locales;
@@ -15,7 +16,7 @@ function route(locale,scope='all'){
  return `img/nuclear-age/fuel-table-${scope==='tree'?'tree-':''}${locale}.svg`;
 }
 const manifestPath='data/nuclear-fuel-poster-manifest.json';
-const sourceFiles=['data/nuclear-age.json','data/nuclear-fuel-copy.json','data/i18n/locales.json','js/nuclear-age.js','scripts/nuclear-fuel-summary.js','scripts/build-nuclear-fuel-poster.js'];
+const sourceFiles=['data/nuclear-age.json','data/nuclear-fuel-copy.json','data/i18n/locales.json','js/nuclear-age.js','scripts/nuclear-fuel-summary.js','scripts/nuclear-service-overrides.js','scripts/build-nuclear-fuel-poster.js'];
 const pngCache=new Map();
 function embeddedImage(src){
  const bytes=fs.readFileSync(path.join(ROOT,src)),key=sha(bytes);if(pngCache.has(key))return pngCache.get(key);
@@ -40,15 +41,21 @@ function render(locale,model=project()){
  assert(typeof c.correctionNote==='string'&&c.correctionNote.trim(),'Missing poster correction note');
  const nf=new Intl.NumberFormat(loc.numberLocale),rtl=loc.dir==='rtl',parts=[],images=new Map();
  const name=b=>b.names[locale]||b.names.en,number=n=>nf.format(n);
+ const marked=model.buildings.filter(b=>b.levels.some(l=>l.powerPlantRequirement));
+ assert.deepEqual(marked.map(b=>b.id).sort((a,b)=>a-b),model.scope==='all'?[...SIX].sort((a,b)=>a-b):[],'Unreviewed poster prerequisite scope');
+ const hasPowerPlantRequirement=b=>marked.some(x=>x.id===b.id);
+ const first=model.firstPowerPlantUpgrade,showFirstZero=first?.buildingId===800005&&first.sourceId===501051&&first.nuclearFuel===0;
+ if(showFirstZero)assert(typeof c.firstUpgradeFreeNote==='string'&&c.firstUpgradeFreeNote.trim(),'Missing first upgrade note');
+ if(marked.length)for(const key of ['powerPlantBadge','powerPlantSharedNote','powerPlantCompletedStage'])assert(typeof c[key]==='string'&&c[key].trim(),'Missing prerequisite copy '+key);
  function image(src,x,y,w,h=w){
   if(!src)return;let id=images.get(src);if(!id){id='asset'+images.size;images.set(src,id);}
   parts.push(`<use href="#${id}" x="${x}" y="${y}" width="${w}" height="${h}"/>`);
  }
- function text(value,x,y,size=22,color='#173f3b',anchor='start',bold=false,maxWidth){
+ function text(value,x,y,size=22,color='#173f3b',anchor='start',bold=false,maxWidth,central=false){
   const actual=maxWidth?Math.min(size,maxWidth/Math.max(1,weight(value))):size;
   const arabic=/[\u0620-\u064a\u066e-\u06d3\u06fa-\u06fc]/.test(String(value));
   const physicalAnchor=arabic?({start:'end',end:'start',middle:'middle'}[anchor]):anchor;
-  parts.push(`<text x="${x}" y="${y}" font-size="${actual.toFixed(2)}" fill="${color}" text-anchor="${physicalAnchor}" direction="${arabic?'rtl':'ltr'}" unicode-bidi="plaintext"${bold?' font-weight="700"':''}>${esc(value)}</text>`);
+  parts.push(`<text x="${x}" y="${y}" font-size="${actual.toFixed(2)}" fill="${color}" text-anchor="${physicalAnchor}" direction="${arabic?'rtl':'ltr'}" unicode-bidi="plaintext"${bold?' font-weight="700"':''}${central?' dominant-baseline="central"':''}>${esc(value)}</text>`);
  }
  function paragraph(value,y,{x=68,width=944,size=20,color='#526a64',lineHeight=29}={}){
   const rows=lines(value,width/size);for(const row of rows){text(row,rtl?x+width:x,y,size,color,rtl?'end':'start');y+=lineHeight;}return y;
@@ -66,15 +73,16 @@ function render(locale,model=project()){
   rect(55,top+1,970,headerH,'#e5eddd',17);
   text(c.building,rtl?312:76,top+headerH/2+8,22,'#284b40',rtl?'end':'start',true,235);
   model.levels.forEach((level,i)=>{
-   if(!compact){image(model.stageMarker?.src,centers[i]-27,top+7,54);text(number(level),centers[i],top+43,26,'#fffdf2','middle',true);}
+   if(!compact){parts.push(`<g data-nuclear-level-marker="${level}">`);image(model.stageMarker?.src,centers[i]-27,top+7,54);text(number(level),centers[i],top+34,26,'#fffdf2','middle',true,undefined,true);parts.push('</g>');}
    text(c.level+' '+number(level),centers[i],top+headerH-15,19,'#244c40','middle',true,207);
   });
   rows.forEach((b,i)=>{
-   parts.push(`<g data-nuclear-fuel-building="${b.id}">`);
+   const markedRow=hasPowerPlantRequirement(b);
+   parts.push(`<g data-nuclear-fuel-building="${b.id}"${markedRow?` data-nuclear-power-plant-badge="${b.id}" aria-label="${esc(name(b)+' · '+c.powerPlantBadge)}"`:''}>`);
    const y=top+headerH+i*rowH;if(i%2===1)rect(55,y,970,rowH,'#f1f5e9');
    image(b.image?.src,69,y+9,rowH-18);
    const labelX=rtl?315:69+rowH-8;const labelWidth=compact?184:170;
-   text(name(b),labelX,y+rowH/2+7,22,'#24463d',rtl?'end':'start',true,labelWidth);
+   text(name(b)+(markedRow?' †':''),labelX,y+rowH/2+7,22,'#24463d',rtl?'end':'start',true,labelWidth);
    b.levels.forEach((l,j)=>requirement(l[mode],centers[j],y+rowH/2+10,{size:compact?28:32}));
    parts.push('</g>');
   });
@@ -85,14 +93,38 @@ function render(locale,model=project()){
   parts.push('</g></g>');
   return totalY+110;
  }
+ function prerequisites(top){
+  if(!marked.length)return top;
+  text('† '+c.powerPlantBadge,rtl?1012:68,top,24,'#24473e',rtl?'end':'start',true,944);
+  parts.push('<g id="nuclear-power-plant-note">');
+  let y=paragraph(c.powerPlantSharedNote,top+34,{size:19,lineHeight:28});parts.push('</g>');
+  y+=8;const powerPlant=model.buildings.find(b=>b.id===800005);assert(powerPlant,'Missing prerequisite Power Plant label');
+  parts.push('<g id="nuclear-power-plant-flow">');
+  model.levels.forEach((level,index)=>{
+   const required=marked[0].levels[index].powerPlantRequirement;assert(required,'Missing prerequisite level');
+   for(const b of marked)assert.deepEqual(b.levels[index].powerPlantRequirement,required,'All six buildings must share the displayed prerequisite');
+   assert.equal(required.completedNuclearLevel,level);assert.equal(required.completedSequence,level*5);assert.equal(required.buildingId,800005);
+   const x=54+index*330,center=x+156;
+   parts.push(`<g data-nuclear-power-plant-flow-level="${level}" data-required-sequence="${required.completedSequence}" data-required-source="${required.sourceId}">`);
+   rect(x,y,312,143,'#e8efdf',12,'#c9d5c8');
+   text(name(powerPlant),center,y+28,22,'#24473e','middle',true,284);
+   text(c.powerPlantCompletedStage.replace(/\{level\}/g,number(required.completedNuclearLevel)),center,y+57,24,'#24473e','middle',true,284);
+   text('↓',center,y+91,30,'#8b6728','middle',true);
+   text('† N'+number(level),center,y+124,26,'#24473e','middle',true);
+   parts.push('</g>');
+  });
+  parts.push('</g>');return y+143+51;
+ }
  rect(0,0,1080,224,'#103d3b');rect(0,0,1080,7,'#d6b362');
  text('TILES SURVIVE  /  NUCLEAR AGE',68,51,18,'#d9c986','start',true);
  text(title,rtl?902:68,119,47,'#fff9e8',rtl?'end':'start',true,817);
  text(c.fromBase.replace('{level}',number(model.baseLevel))+'  ·  '+c.fiveSteps.replace('{count}',number(model.stepsPerLevel)),rtl?902:68,166,24,'#d9e4ce',rtl?'end':'start',false,790);
  image(model.item.image?.src,925,58,105);
  let y=paragraph(help,267,{size:19,lineHeight:28})+22;
+ if(showFirstZero){parts.push('<g id="nuclear-first-upgrade-zero">');y=paragraph(c.firstUpgradeFreeNote,y,{size:19,lineHeight:28,color:'#6b4a15'})+20;parts.push('</g>');}
  text(c.incremental,rtl?1012:68,y,31,'#173e36',rtl?'end':'start',true,944);
  y=paragraph(c.incrementalHelp,y+36)+17;y=table(y,'incremental')+57;
+ y=prerequisites(y);
  text(c.cumulative,rtl?1012:68,y,31,'#173e36',rtl?'end':'start',true,944);
  y=paragraph(c.cumulativeHelp,y+36)+17;y=table(y,'cumulative',true)+54;
  parts.push('<g id="nuclear-fuel-correction-note">');
@@ -104,7 +136,7 @@ function render(locale,model=project()){
  text(`Lv30 → 1 / 2 / 3  ·  ${model.client.version}`,1012,y+40,17,'#536b60','end');
  const height=Math.ceil((y+73)/10)*10;
  const defs=[...images].map(([src,id])=>`<symbol id="${id}" viewBox="0 0 1 1"><image width="1" height="1" preserveAspectRatio="xMidYMid meet" href="${embeddedImage(src)}"/></symbol>`).join('');
- return `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1080" height="${height}" viewBox="0 0 1080 ${height}" lang="${esc(loc.htmlLang)}" role="img" aria-labelledby="poster-title poster-desc"><title id="poster-title">${esc(title)}</title><desc id="poster-desc">${esc(help+' '+c.scopeNote)}</desc><metadata id="nuclear-fuel-projection">${esc(JSON.stringify(model))}</metadata><defs>${defs}</defs><g font-family="Malgun Gothic, Arial, Noto Sans, sans-serif"><rect id="poster-background" width="1080" height="${height}" fill="#f4f1e6"/>${parts.join('')}</g></svg>\n`;
+ return `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1080" height="${height}" viewBox="0 0 1080 ${height}" lang="${esc(loc.htmlLang)}" role="img" aria-labelledby="poster-title poster-desc"><title id="poster-title">${esc(title)}</title><desc id="poster-desc">${esc([help,c.scopeNote,showFirstZero?c.firstUpgradeFreeNote:'',marked.length?c.powerPlantSharedNote:''].filter(Boolean).join(' '))}</desc><metadata id="nuclear-fuel-projection">${esc(JSON.stringify(model))}</metadata><defs>${defs}</defs><g font-family="Malgun Gothic, Arial, Noto Sans, sans-serif"><rect id="poster-background" width="1080" height="${height}" fill="#f4f1e6"/>${parts.join('')}</g></svg>\n`;
 }
 function build({check=false}={}){
  const models=Object.fromEntries(SCOPES.map(scope=>[scope,project(DATA,scope)])),outputs={},sources=Object.fromEntries(sourceFiles.map(file=>[file,sha(fs.readFileSync(path.join(ROOT,file)))]));let changed=0;
