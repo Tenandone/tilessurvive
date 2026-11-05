@@ -1,0 +1,19 @@
+{
+  "schemaVersion": 1,
+  "icons": [
+    { "path": "/favicon.ico", "rel": "icon", "type": "image/x-icon", "sizes": "16x16 32x32 48x48" },
+    { "path": "/favicon-96x96.png", "rel": "icon", "type": "image/png", "sizes": "96x96" },
+    { "path": "/apple-touch-icon.png", "rel": "apple-touch-icon", "type": "image/png", "sizes": "180x180" },
+    { "path": "/icons/icon-192.png", "rel": "icon", "type": "image/png", "sizes": "192x192" },
+    { "path": "/icons/icon-512.png", "rel": "icon", "type": "image/png", "sizes": "512x512" }
+  ],
+  "verification": {
+    "files": [
+      {
+        "path": "naverc704fd6c935203e88cfa188739a53ddd.html",
+        "sha256": "dfa2da5494f28c4e06924a87587b7c4749f32ddd8c636696db63a257709de08f"
+      }
+    ],
+    "meta": []
+  }
+}

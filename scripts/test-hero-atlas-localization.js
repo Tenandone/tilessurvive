@@ -21,11 +21,12 @@ function checkOutput(html,locale,id){const g=groupFor(id),d=parseHTML(html).docu
  V6.validateOwnership(html,locale,g.routes[locale]);return d;
 }
 
-test('the canonical route manifest preserves the exact 120 old groups and permits only reviewed X-SSR introductions',()=>{
+test('the canonical route manifest preserves the exact 120 old groups and permits only reviewed X-SSR and nuclear-age introductions',()=>{
  assert(CN.validateRouteManifest(groups));assert.throws(()=>CN.validateRouteManifest(groups.filter(g=>g.id!=='heroes/lava/')),/reviewed|Missing/);
  const wrong=groups.map(g=>g.id==='heroes/lava/'?{...g,id:'heroes/alita/'}:g);assert.throws(()=>CN.validateRouteManifest(wrong),/Lava|Duplicate/);
  const renamed=groups.map(g=>g.id==='heroes/sarge/'?{...g,id:'heroes/other/'}:g);assert.throws(()=>CN.validateRouteManifest(renamed),/original 120/);
  assert.throws(()=>CN.validateRouteManifest([...groups,groups[0]]),/Duplicate/);
+ for(const r of require('./reviewed-routes').entries())assert.throws(()=>CN.validateRouteManifest(groups.filter(g=>g.id!==r.path)),/reviewed/);
 });
 
 test('four real atlas route shapes regenerate in every ordinary new locale without generic owner translation or numeric-model changes',()=>{

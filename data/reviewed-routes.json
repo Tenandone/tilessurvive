@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "routes": [
+    {
+      "id": "nuclear-age",
+      "path": "eras/nuclear-age/",
+      "owner": "scripts/build-nuclear-age.js",
+      "model": "data/nuclear-age.json",
+      "clientVersion": "2.6.400",
+      "clientBuild": 1546
+    }
+  ]
+}

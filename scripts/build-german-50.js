@@ -161,7 +161,11 @@ function prepareV3Source(source, locale, route) {
       const allowedNames=script?['data-v3-owned','defer','src']:['data-v3-owned','href','rel'];
       const target=node.getAttribute(script?'src':'href')||'';
       const knownAsset=/^\/(?:css\/v3-(?:platform|events)\.css|js\/v3-(?:search-core|affiliate|planner|events)\.js)\?v=[a-f0-9]{12}$/.test(target);
-      const topupAsset=route==='top-up/index.html'&&/^\/css\/ten-benefits\.css\?v=[a-f0-9]{12}$/.test(target);
+      const topupAsset=route==='top-up/index.html'&&(
+        /^\/css\/ten-benefits\.css\?v=[a-f0-9]{12}$/.test(target)||
+        /^\/(?:css\/v61-ten\.css|js\/v61-ten\.js)\?v=[a-f0-9]{12}$/.test(target)&&
+        [...expected.querySelectorAll('[data-v3-owned="assets"]')].some(asset=>asset.getAttribute(script?'src':'href')===target&&fingerprint(asset)===fingerprint(node))
+      );
       if(JSON.stringify(names)!==JSON.stringify(allowedNames)||(!script&&(node.tagName!=='LINK'||node.getAttribute('rel')!=='stylesheet'))||!(knownAsset||topupAsset))throw new Error('Unreviewed V3 asset in German source: '+route);
       continue;
     }
@@ -187,6 +191,11 @@ function prepareV3Source(source, locale, route) {
 }
 function render(source, translate, route) {
   source=require('./build-v6-system').strip(source);
+  const Nuclear=require('./build-nuclear-age'),nuclearGuide=route==='eras/nuclear-age/index.html',sourceRoute='/en/'+route.replace(/index\.html$/,'');
+  if(nuclearGuide)Nuclear.validateOwnership(source,'en',sourceRoute);
+  if(Nuclear.linkRoutes('en').includes(sourceRoute)){
+    Nuclear.validateLinks(source,'en',sourceRoute);source=Nuclear.stripLinks(source);
+  }
   if(source.includes('data-v5-home'))require('./build-v5-landing').validateOwnership(source,'en');
   if(route==='codes/index.html'&&source.includes('data-gift-owned'))require('./build-gift-codes').validateOwnership(source,'en');
   if(source.includes('data-hero-atlas-owned'))require('./build-hero-atlas').validateOwnership(source,'en','/en/'+route.replace(/index\.html$/,''));
@@ -204,6 +213,8 @@ function render(source, translate, route) {
     projected=require('./v4-workbench-content').project(projected,'de',target);
     if(route==='index.html'&&projected.includes('data-v5-home'))projected=require('./build-v5-landing').project(projected,'de');
     if(route==='codes/index.html')projected=require('./build-gift-codes').project(projected,'de');
+    if(nuclearGuide)projected=Nuclear.project(projected,'de',target);
+    if(Nuclear.linkRoutes('de').includes(target))projected=Nuclear.projectLinks(projected,'de',target);
     // V6 owns only its asset block/root flags; translation-only fragments are
     // left intact while real pages receive the same final style order.
     return require('./build-v6-system').project(projected,'de',target);
@@ -246,15 +257,15 @@ function render(source, translate, route) {
   document.querySelectorAll('[data-growth-50],[data-growth-research-50],[data-growth50-asset],[data-package-offer-50],[data-event-calendar-entry]').forEach(node=>node.remove());
   document.documentElement.lang='de'; document.documentElement.dataset.lang='de';
   // Display-localized cells retain their source lexemes for existing numeric readers.
-  for(const cell of document.querySelectorAll('td')) cell.setAttribute('data-ts-original-value',cell.textContent.trim());
+  for(const cell of document.querySelectorAll('td')) if(!cell.closest('[data-nuclear-owned]'))cell.setAttribute('data-ts-original-value',cell.textContent.trim());
   function visit(node) {
-    if(node.nodeType===1&&(node.hasAttribute('data-v3-owned')||node.hasAttribute('data-hero-atlas-owned')||node.hasAttribute('data-hero-pet-owned')||node.hasAttribute('data-v4-owned')||node.hasAttribute('data-v5-owned')||node.hasAttribute('data-gift-owned')))return;
+    if(node.nodeType===1&&(node.hasAttribute('data-v3-owned')||node.hasAttribute('data-hero-atlas-owned')||node.hasAttribute('data-hero-pet-owned')||node.hasAttribute('data-v4-owned')||node.hasAttribute('data-v5-owned')||node.hasAttribute('data-gift-owned')||node.hasAttribute('data-nuclear-owned')||(nuclearGuide&&node.tagName==='TITLE')))return;
     if (node.nodeType===3 && !['SCRIPT','STYLE'].includes(node.parentNode?.tagName) && !node.parentElement?.closest('[lang]:not([lang="en"]):not(html),.ts3-language nav,.language-switcher')) node.textContent=translate(node.textContent,route+':text');
     for (const child of [...(node.childNodes||[])]) visit(child);
   }
   visit(document);
   for (const el of document.querySelectorAll('*')) {
-    if(el.closest('[data-v3-owned],[data-hero-atlas-owned],[data-hero-pet-owned],[data-v4-owned],[data-v5-owned],[data-gift-owned]'))continue;
+    if(el.closest('[data-v3-owned],[data-hero-atlas-owned],[data-hero-pet-owned],[data-v4-owned],[data-v5-owned],[data-gift-owned],[data-nuclear-owned]'))continue;
     for (const attr of ['alt','title','aria-label','placeholder','data-idle','data-results','data-error']) if(el.hasAttribute(attr)) el.setAttribute(attr,translate(el.getAttribute(attr),route+':'+attr));
     for (const attr of ['href','action','data-search-url']) if(el.hasAttribute(attr)) {
       if(el.matches('link[rel="alternate"],a[hreflang],.ts3-language a[lang]')) continue;
@@ -265,13 +276,13 @@ function render(source, translate, route) {
       // Legacy aliases arrive from the English tree. Keep their automatic move
       // in the same language as the localized canonical and Continue link.
       if((el.getAttribute('http-equiv')||'').toLowerCase()==='refresh')el.setAttribute('content',(el.getAttribute('content')||'').replace(/^(\s*\d+(?:\.\d+)?\s*;\s*url\s*=\s*["']?)(https:\/\/tilessurvive\.net)?\/en(?=\/|$)/i,'$1$2/de'));
-      if(['description','keywords','og:title','og:description','twitter:title','twitter:description'].includes(key)) el.setAttribute('content',translate(el.getAttribute('content')||'',route+':meta'));
+      if(['description','keywords','og:title','og:description','twitter:title','twitter:description'].includes(key)&&!(nuclearGuide&&key!=='keywords')) el.setAttribute('content',translate(el.getAttribute('content')||'',route+':meta'));
       if(['og:url','twitter:url'].includes(key))el.setAttribute('content',el.getAttribute('content').replace('/en/','/de/'));
       if(key==='og:locale')el.setAttribute('content','de_DE');
     }
   }
   for (const script of document.querySelectorAll('script[type="application/json"],script[type="application/ld+json"]')) {
-    if(script.closest('[data-v3-owned],[data-hero-atlas-owned],[data-hero-pet-owned],[data-v4-owned],[data-v5-owned],[data-gift-owned]'))continue;
+    if(script.closest('[data-v3-owned],[data-hero-atlas-owned],[data-hero-pet-owned],[data-v4-owned],[data-v5-owned],[data-gift-owned],[data-nuclear-owned]'))continue;
     // This is the complete equivalent-route map, not an EN-language content
     // dictionary. Every locale, including DE's own exact slug, must survive.
     if(script.id==='ts-locale-routes')continue;
@@ -281,7 +292,7 @@ function render(source, translate, route) {
     }
     script.textContent=JSON.stringify(localizeJSON(JSON.parse(script.textContent),translate,route+':json','',script.id==='ts3-copy'));
   }
-  for(const script of document.querySelectorAll('script:not([src])'))if(!script.type?.includes('json')&&!script.closest('[data-v3-owned],[data-hero-atlas-owned],[data-hero-pet-owned],[data-v4-owned],[data-v5-owned],[data-gift-owned]'))script.textContent=localizeProgram(script.textContent,translate,route);
+  for(const script of document.querySelectorAll('script:not([src])'))if(!script.type?.includes('json')&&!script.closest('[data-v3-owned],[data-hero-atlas-owned],[data-hero-pet-owned],[data-v4-owned],[data-v5-owned],[data-gift-owned],[data-nuclear-owned]'))script.textContent=localizeProgram(script.textContent,translate,route);
   // The canonical language routes are completed by the shared six-language finalizer.
   const langNav=document.querySelector('.ts3-language nav');
   if(langNav){for(const a of langNav.querySelectorAll('a')){if(a.lang==='de')a.remove();else a.removeAttribute('aria-current');}const a=document.createElement('a');a.href='/de/'+route.replace(/index\.html$/,'');a.lang='de';a.setAttribute('hreflang','de');a.textContent='Deutsch';a.setAttribute('aria-current','page');langNav.append(a);document.querySelector('.ts3-language summary').textContent='DE';}

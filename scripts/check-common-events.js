@@ -9,10 +9,17 @@ const {parseHTML} = require('linkedom');
 const ROOT = path.resolve(__dirname, '..');
 const EVENT_ORIGIN = 'https://ts-halloween-web.funplus.com';
 const NEWS_ORIGIN = 'https://tilesurvivegame.com';
+const NUCLEAR_PAGES = ['/en/blog/1213', '/ko/blog/1218', '/en/blog/1221', '/ko/blog/1226'];
+const CLIENT_MODEL_PATH = 'data/nuclear-age.json';
 const DEFAULT_SOURCES = [
   {id:'halloween-page', url:EVENT_ORIGIN + '/', kind:'event-page'},
   {id:'official-home', url:NEWS_ORIGIN + '/', kind:'news-page'},
-  {id:'official-news', url:NEWS_ORIGIN + '/en/list', kind:'news-page'}
+  {id:'official-news', url:NEWS_ORIGIN + '/en/list', kind:'news-page'},
+  {id:'nuclear-official-en', url:NEWS_ORIGIN + NUCLEAR_PAGES[0], kind:'nuclear-page'},
+  {id:'nuclear-official-ko', url:NEWS_ORIGIN + NUCLEAR_PAGES[1], kind:'nuclear-page'},
+  {id:'nuclear-release-en', url:NEWS_ORIGIN + NUCLEAR_PAGES[2], kind:'nuclear-page'},
+  {id:'nuclear-release-ko', url:NEWS_ORIGIN + NUCLEAR_PAGES[3], kind:'nuclear-page'},
+  {id:'nuclear-client-model', url:'repository:' + CLIENT_MODEL_PATH, kind:'client-model', reviewOnly:true}
 ];
 const sha = value => crypto.createHash('sha256').update(value).digest('hex');
 const normalize = value => String(value || '').normalize('NFC').replace(/<br\s*\/?\s*>/gi,' ').replace(/\s+/g,' ').trim();
@@ -22,7 +29,7 @@ function allowedURL(value) {
   const u = new URL(value);
   if (u.protocol !== 'https:' || u.username || u.password || u.port || u.search || u.hash) throw new Error('URL_NOT_ALLOWED');
   if (u.origin === EVENT_ORIGIN && (u.pathname === '/' || /^\/assets\/[A-Za-z0-9_.-]+\.js$/.test(u.pathname))) return u;
-  if (u.origin === NEWS_ORIGIN && ['/', '/en', '/en/', '/en/list', '/en/list/'].includes(u.pathname)) return u;
+  if (u.origin === NEWS_ORIGIN && ['/', '/en', '/en/', '/en/list', '/en/list/', ...NUCLEAR_PAGES].includes(u.pathname)) return u;
   throw new Error('URL_NOT_ALLOWED');
 }
 
@@ -89,6 +96,39 @@ function pageSemantic(html, url) {
   return {semantic, assets};
 }
 
+function canonicalJSON(value) {
+  if (Array.isArray(value)) return value.map(canonicalJSON);
+  if (value && typeof value === 'object') return Object.fromEntries(Object.keys(value).sort().map(key=>[key,canonicalJSON(value[key])]));
+  return value;
+}
+
+function clientModelSemantic(source) {
+  if (Buffer.byteLength(source) > 5 * 1024 * 1024) throw new Error('CLIENT_MODEL_TOO_LARGE');
+  let data;
+  try { data = JSON.parse(String(source)); } catch { throw new Error('CLIENT_MODEL_INVALID_JSON'); }
+  if (data?.schemaVersion !== 1 || data.id !== 'nuclear-age' || !data.client || typeof data.client.version !== 'string' || !Number.isInteger(data.client.build) || !data.scope || !Array.isArray(data.scope.buildingTypeIds)) throw new Error('CLIENT_MODEL_INVALID');
+  const digest = sha(JSON.stringify(canonicalJSON(data)));
+  // The fixed, already-public model is only a review candidate. No raw game
+  // files, account data, private source paths, or downloaded code are loaded.
+  return {kind:'client-model',modelId:data.id,modelSha256:digest,clientVersion:data.client.version,clientBuild:data.client.build,buildingTypeCount:data.scope.buildingTypeIds.length,reviewOnly:true};
+}
+
+function inspectClientModel(item) {
+  if (item.id !== 'nuclear-client-model' || item.url !== 'repository:' + CLIENT_MODEL_PATH) throw new Error('CLIENT_MODEL_SOURCE_NOT_ALLOWED');
+  const file = path.join(ROOT,CLIENT_MODEL_PATH);
+  let source;
+  try {
+    if (fs.lstatSync(file).isSymbolicLink() || fs.realpathSync(file) !== file) throw new Error('CLIENT_MODEL_PATH_INVALID');
+    if (fs.statSync(file).size > 5 * 1024 * 1024) throw new Error('CLIENT_MODEL_TOO_LARGE');
+    source = fs.readFileSync(file,'utf8');
+  } catch(error) {
+    if (/^CLIENT_MODEL_/.test(error.message)) throw error;
+    throw new Error('CLIENT_MODEL_READ_FAILED');
+  }
+  const semantic = clientModelSemantic(source);
+  return {...item,status:'ok',bytes:Buffer.byteLength(source),rawSha256:sha(source),semanticSha256:sha(JSON.stringify(semantic)),semantic};
+}
+
 function bundleSemantic(source) {
   // Only JSON string literals and simple key-to-identifier maps are decoded.
   // No eval, VM, module import, browser context, or downloaded-code execution.
@@ -147,6 +187,7 @@ async function check(options = {}) {
   const report = {schemaVersion:1,checkedAt:new Date().toISOString(),baselineProvided:!!options.baseline,sources:[]};
   async function inspect(item) {
     try {
+      if (item.kind === 'client-model') return inspectClientModel(item);
       const response = await fetchPublic(item.url, options);
       let semantic, assets = [];
       if (item.kind === 'event-script') semantic = bundleSemantic(response.text);
@@ -205,5 +246,5 @@ async function main(argv = process.argv.slice(2)) {
   return report;
 }
 
-module.exports = {allowedURL,fetchPublic,pageSemantic,bundleSemantic,compare,check,externalOutput,main,DEFAULT_SOURCES,normalize};
+module.exports = {allowedURL,fetchPublic,pageSemantic,bundleSemantic,clientModelSemantic,inspectClientModel,compare,check,externalOutput,main,DEFAULT_SOURCES,normalize};
 if (require.main === module) main().catch(error=>{console.error(error.message);process.exitCode=1;});

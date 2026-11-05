@@ -222,8 +222,8 @@ test('all 21 published Power Plant JSON payloads, desktop rows and mobile cards 
 
 test('every other building page retains its exact model and original content outside reviewed V3 blocks and GA migration', () => {
   let checked=0;
-  const withoutCache=v3Preservation.inherited;
+  const withoutCache=(html,file)=>{const locale=file.split('/')[0],route='/'+file.replace(/index\.html$/,''),N=require('./build-nuclear-age');let reviewed=require('./v4-release-gate').stripReviewedPresentation(html,locale,route,root);if(/TS_NUCLEAR_LINK_|data-nuclear-owned="link"/.test(reviewed)){assert(N.linkRoutes(locale).includes(route),'Unreviewed era link route');assert.equal(N.validateLinks(reviewed,locale,route),true);reviewed=N.stripLinks(reviewed);}return v3Preservation.inherited(reviewed);};
   for(const locale of locales){const files=registry.slugs.filter(s=>s!=='power-plant').map(s=>locale.code+'/buildings/'+s+'/index.html'),old=baselineBatch(files);
-    for(const file of files){const current=read(file),baseline=old.get(file);assert.deepEqual(payload(current),payload(baseline),file+' other-building model must be unchanged');assert.equal(hash(withoutCache(current)),hash(withoutCache(baseline)),file+' original content preserved after exact known GA migration and five reviewed runtime cache keys');checked++;}}
+    for(const file of files){const current=read(file),baseline=old.get(file);assert.deepEqual(payload(current),payload(baseline),file+' other-building model must be unchanged');assert.equal(hash(withoutCache(current,file)),hash(withoutCache(baseline,file)),file+' original content preserved after exact known GA migration and five reviewed runtime cache keys');checked++;}}
   assert.equal(checked,441);
 });

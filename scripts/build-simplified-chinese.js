@@ -260,15 +260,20 @@ function validateRouteManifest(groups) {
   const ids=groups.map(group=>group.id);
   assert.equal(new Set(ids).size,ids.length,'Duplicate canonical translation route');
   const gate=require('./client-release-gate'),additions=gate.officialAdditions(require('../data/hero-atlas-client.json'),require('../data/hero-atlas-routes.json')).map(h=>'heroes/'+h.id+'/');
-  assert.equal(ids.length,121+additions.length,'Only reviewed atlas routes may be added');
+  const reviewed=require('./reviewed-routes').entries().map(r=>r.path);
+  assert.equal(ids.length,121+additions.length+reviewed.length,'Only reviewed atlas and era routes may be added');
+  for(const id of reviewed)assert(ids.includes(id),'Missing reviewed era route '+id);
   assert(ids.includes('heroes/lava/'),'Missing reviewed Lava detail route');
   for(const id of additions)assert(ids.includes(id),'Missing reviewed official hero route '+id);
-  assert.equal(L.digest(JSON.stringify(ids.filter(id=>id!=='heroes/lava/'&&!additions.includes(id)).sort())),'a4bd34aedfa52874c8c2dcd2a27ee3ba346fb876bfe3df8ccbfa293b586882b7','The original 120 canonical routes must remain exact');
+  assert.equal(L.digest(JSON.stringify(ids.filter(id=>id!=='heroes/lava/'&&!additions.includes(id)&&!reviewed.includes(id)).sort())),'a4bd34aedfa52874c8c2dcd2a27ee3ba346fb876bfe3df8ccbfa293b586882b7','The original 120 canonical routes must remain exact');
   return true;
 }
 // Pure page projection shared by staging and focused owner-regeneration tests.
 function localizePage(source,group,groups,{converter=createConverter(),router=makeRouter(groups),ui=L.readJSON(path.join(L.ROOT,'data/i18n/ui/zh-cn.json')),available=[...L.existing,TARGET]}={}) {
   source=require('./build-v6-system').strip(source);
+  const Nuclear=require('./build-nuclear-age'),sourceRoute=group.routes['zh-tw'],targetRoute=group.routes[TARGET],nuclearGuide=sourceRoute===Nuclear.route('zh-tw'),nuclearLink=Nuclear.linkRoutes('zh-tw').includes(sourceRoute);
+  if(nuclearGuide)Nuclear.validateOwnership(source,'zh-tw',sourceRoute);
+  if(nuclearLink){assert.equal(Nuclear.validateLinks(source,'zh-tw',sourceRoute),true);source=Nuclear.stripLinks(source);}
     const sourceFile=group.routes['zh-tw'].slice(1)+'index.html';
     if(source.includes('data-v5-home'))require('./build-v5-landing').validateOwnership(source,'zh-tw');
   if(group.id==='codes/'&&source.includes('data-gift-owned'))require('./build-gift-codes').validateOwnership(source,'zh-tw');
@@ -279,11 +284,11 @@ function localizePage(source,group,groups,{converter=createConverter(),router=ma
     const {document}=parseHTML(source),beforeIds=[...document.querySelectorAll('[id]')].map(e=>e.id),beforeMedia=[...document.querySelectorAll('img,iframe,video,source')].map(e=>e.getAttribute('src'));
     const protectedExternal=[...document.querySelectorAll('[href],[src]')].flatMap(e=>['href','src'].filter(a=>/^https?:/.test(e.getAttribute(a)||'')&&!e.getAttribute(a).startsWith(L.publicOrigin)).map(a=>[e.tagName,a,e.getAttribute(a)]));
     const convert=(v,where)=>converter.convert(v,sourceFile+':'+where),walker=document.createTreeWalker(document,4),nodes=[];let node;
-    while((node=walker.nextNode()))if(!node.parentElement?.closest('script,style,.ts3-language nav,.language-switcher,[data-hero-atlas-owned],[data-hero-pet-owned],[data-v4-owned],[data-v5-owned],[data-gift-owned]'))nodes.push(node);
+    while((node=walker.nextNode()))if(!node.parentElement?.closest('script,style,.ts3-language nav,.language-switcher,[data-hero-atlas-owned],[data-hero-pet-owned],[data-v4-owned],[data-v5-owned],[data-gift-owned],[data-nuclear-owned]'))nodes.push(node);
     for(const n of nodes)n.data=convert(n.data,'text:'+n.parentElement?.tagName);
     document.documentElement.lang='zh-Hans';document.documentElement.setAttribute('data-lang',TARGET);document.documentElement.dir='ltr';
     for(const el of document.querySelectorAll('*')) {
-      if(el.closest('[data-hero-atlas-owned],[data-hero-pet-owned],[data-v4-owned],[data-v5-owned],[data-gift-owned]'))continue;
+      if(el.closest('[data-hero-atlas-owned],[data-hero-pet-owned],[data-v4-owned],[data-v5-owned],[data-gift-owned],[data-nuclear-owned]'))continue;
       for(const attr of attributes)if(el.hasAttribute(attr))el.setAttribute(attr,convert(el.getAttribute(attr),attr));
       for(const attr of ['href','action','data-search-url'])if(el.hasAttribute(attr)&&!el.matches('link[rel="alternate"],a[hreflang],.ts3-language a[lang]'))el.setAttribute(attr,router.route(el.getAttribute(attr)));
       if(el.hasAttribute('lang')&&/^zh-(tw|hant)$/i.test(el.getAttribute('lang'))&&!el.matches('a'))el.setAttribute('lang','zh-Hans');
@@ -296,7 +301,7 @@ function localizePage(source,group,groups,{converter=createConverter(),router=ma
       }
     }
     for(const script of document.querySelectorAll('script[type="application/json"],script[type="application/ld+json"]')) {
-      if(script.closest('[data-hero-atlas-owned],[data-hero-pet-owned],[data-v4-owned],[data-v5-owned],[data-gift-owned]'))continue;
+      if(script.closest('[data-hero-atlas-owned],[data-hero-pet-owned],[data-v4-owned],[data-v5-owned],[data-gift-owned],[data-nuclear-owned]'))continue;
       const value=JSON.parse(script.textContent),translated=jsonConvert(value,convert,router.route,script.id||'json');
       if(script.hasAttribute('data-building-system-model') && translated.locale)translated.locale.numberLocale='zh-CN';
       immutableJSON(value,translated,sourceFile+':'+(script.id||'json'));
@@ -308,7 +313,7 @@ function localizePage(source,group,groups,{converter=createConverter(),router=ma
       script.textContent=JSON.stringify(translated).replace(/</g,'\\u003c');
     }
     let protectedPrograms=0,localizedPrograms=0;
-    for(const script of document.querySelectorAll('script:not([src])'))if(!script.type?.includes('json')&&!script.closest('[data-hero-atlas-owned],[data-hero-pet-owned],[data-v4-owned],[data-v5-owned],[data-gift-owned]')) {
+    for(const script of document.querySelectorAll('script:not([src])'))if(!script.type?.includes('json')&&!script.closest('[data-hero-atlas-owned],[data-hero-pet-owned],[data-v4-owned],[data-v5-owned],[data-gift-owned],[data-nuclear-owned]')) {
       const before=script.textContent,after=inlineConvert(before,convert,router.route,sourceFile);
       script.textContent=after;if(before===after)protectedPrograms++;else localizedPrograms++;
     }
@@ -325,7 +330,8 @@ function localizePage(source,group,groups,{converter=createConverter(),router=ma
     assert.deepEqual([...document.querySelectorAll('[href],[src]')].flatMap(e=>['href','src'].filter(a=>/^https?:/.test(e.getAttribute(a)||'')&&!e.getAttribute(a).startsWith(L.publicOrigin)).map(a=>[e.tagName,a,e.getAttribute(a)])),protectedExternal,'External services or ads changed: '+sourceFile);
     const features=featurePayloads(document,convert,router.route);
     const enhanced=enhance(document,TARGET,group,available,{...ui,featureCopies:{...features,...ui.featureCopies}},{preview:true});
-    const html=require('./build-v6-system').project(enhanced,TARGET,group.routes[TARGET]);
+    const native=nuclearGuide?Nuclear.project(enhanced,TARGET,targetRoute):nuclearLink?Nuclear.projectLinks(enhanced,TARGET,targetRoute):enhanced;
+    const html=require('./build-v6-system').project(native,TARGET,targetRoute);
     return {html,sourceFile,numericJSONLeaves,protectedPrograms,localizedPrograms,ids:beforeIds.length,media:beforeMedia.length,featureCopies:Object.keys(features)};
 }
 function build() {
@@ -383,7 +389,7 @@ function selfTest() {
     assert.equal(d.documentElement.lang,'zh-Hans');assert.equal(d.documentElement.dataset.lang,TARGET);
     assert.equal(d.querySelector('link[rel="canonical"]').href,L.publicOrigin+group.routes[TARGET]);
     assert.equal(d.querySelector('meta[name="robots"]').content,'noindex,nofollow');
-    const alternate=[...d.querySelectorAll('link[rel="alternate"][hreflang]')];assert.equal(alternate.length,8);
+    const alternate=[...d.querySelectorAll('link[rel="alternate"][hreflang]')];assert.equal(alternate.length,group.id==='eras/nuclear-age/'?L.registry.locales.length+1:8);
     assert.equal(alternate.find(x=>x.hreflang==='zh-CN').href,L.publicOrigin+group.routes[TARGET]);
     const walk=d.createTreeWalker(d,4);let n;
     while((n=walk.nextNode()))if(!n.parentElement?.closest('script,style,.ts3-language,.language-switcher'))assert.equal(cc(n.data),n.data,'Remaining traditional text: '+group.id+' '+n.data.trim());

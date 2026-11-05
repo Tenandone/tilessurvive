@@ -15,7 +15,7 @@ test('reviewed client rows and release decisions remain separate; new or unheld 
 test('official introductions authorize localized routes without becoming client records or universal releases',()=>{
  const extra=G.officialAdditions(data,routes,introductions);assert.deepEqual(extra.map(h=>h.id),['furiosa','alita']);assert.deepEqual(extra.map(h=>h.clientId),[25300243,25300244]);
  assert.equal(G.validatePublication(data,publication,routes,introductions).catalogIdentities,31);
- assert.equal(G.reviewedSitemap().added.length,42);assert.equal(new Set(G.reviewedSitemap().expected).size,G.reviewedSitemap().expected.length);
+ assert.equal(G.reviewedSitemap().added.length,42+require('./reviewed-routes').routes().length);assert.equal(new Set(G.reviewedSitemap().expected).size,G.reviewedSitemap().expected.length);
  const fake=structuredClone(introductions);fake.heroes.find(h=>h.id==='furiosa').clientId=999;assert.throws(()=>G.officialAdditions(data,routes,fake),/fabricate a client/);
  const released=structuredClone(introductions);released.heroes.find(h=>h.id==='alita').release.universalUnlock=true;assert.throws(()=>G.officialAdditions(data,routes,released),/server eligibility/);
  const thirdParty=structuredClone(introductions);thirdParty.heroes.find(h=>h.id==='furiosa').release.sources=['https://tilesmania.com/ko/heroes'];assert.throws(()=>G.officialAdditions(data,routes,thirdParty),/official evidence/);
