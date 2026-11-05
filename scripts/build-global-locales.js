@@ -6,6 +6,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const { parseHTML } = require('linkedom');
 const L = require('./lib/global-localization');
+const Nuclear = require('./build-nuclear-age');
 const DELIVERY = path.resolve(L.ROOT, '../global-language-delivery-20261104');
 const STAGE = path.join(DELIVERY, 'staging');
 const attrs = ['alt','title','aria-label','placeholder','data-idle','data-results','data-error','data-search-title','data-search-description'];
@@ -156,6 +157,15 @@ function unifiedPowerPlantOwner(document, group) {
 }
 function localizePage(source, locale, group, groups, translator) {
   source=require('./build-v6-system').strip(source);
+  const nuclearGuide=group.id==='eras/nuclear-age/';
+  if(nuclearGuide)Nuclear.validateOwnership(source,'en',group.routes.en);
+  // Validate English cards before removing them. The V4 owner validates native
+  // cards, so these must not survive into generic translation or target V4.
+  // Registered pages require the card. Small translation-only fragments lack
+  // a route-group ID, but any explicit Nuclear block must still be validated.
+  if(Nuclear.linkRoutes('en').includes(group.routes.en)&&(group.id||/TS_NUCLEAR_LINK_|data-nuclear-owned=["']link/.test(source))){
+    Nuclear.validateLinks(source,'en',group.routes.en);source=Nuclear.stripLinks(source);
+  }
   if(source.includes('data-v5-home'))require('./build-v5-landing').validateOwnership(source,'en');
   if(group.id==='codes/'&&source.includes('data-gift-owned'))require('./build-gift-codes').validateOwnership(source,'en');
   require('./build-hero-pet-pages').validateOwnership(source,'en');
@@ -178,23 +188,25 @@ function localizePage(source, locale, group, groups, translator) {
   document.documentElement.setAttribute('data-lang',locale);
   document.documentElement.setAttribute('dir',info.dir);
   const walker=document.createTreeWalker(document,4); const nodes=[]; let node;
-  while((node=walker.nextNode())) if(!node.parentElement?.closest('script,style,template,.ts3-language nav,.language-switcher,[data-v3-owned],[data-hero-atlas-owned],[data-hero-pet-owned],[data-v4-owned],[data-v5-owned],[data-gift-owned]') && !powerOwner?.host.contains(node)) nodes.push(node);
+  while((node=walker.nextNode())) if(!node.parentElement?.closest('script,style,template,.ts3-language nav,.language-switcher,[data-v3-owned],[data-hero-atlas-owned],[data-hero-pet-owned],[data-v4-owned],[data-v5-owned],[data-gift-owned],[data-nuclear-owned]') && !(nuclearGuide&&node.parentElement?.tagName==='TITLE') && !powerOwner?.host.contains(node)) nodes.push(node);
   for (const n of nodes) n.data=t(n.data,group.file+':text:'+n.parentElement?.tagName);
   for (const el of document.querySelectorAll('*')) {
-    if(el.closest('[data-v3-owned],[data-hero-atlas-owned],[data-hero-pet-owned],[data-v4-owned],[data-v5-owned],[data-gift-owned]'))continue;
+    if(el.closest('[data-v3-owned],[data-hero-atlas-owned],[data-hero-pet-owned],[data-v4-owned],[data-v5-owned],[data-gift-owned],[data-nuclear-owned]'))continue;
     if(powerOwner?.host.contains(el))continue;
     if(el.getAttribute('data-lang')==='en')el.setAttribute('data-lang',locale);
     for (const attr of attrs) if(el.hasAttribute(attr))el.setAttribute(attr,t(el.getAttribute(attr),group.file+':'+attr));
     for (const attr of ['href','action','data-search-url']) if(el.hasAttribute(attr) && !el.matches('link[rel="alternate"],a[hreflang],.ts3-language a[lang]'))el.setAttribute(attr,L.routeURL(el.getAttribute(attr),locale,groups));
     if(el.tagName==='META') {
       const key=el.getAttribute('name')||el.getAttribute('property');
-      if(metaKeys.has(key))el.setAttribute('content',t(el.getAttribute('content')||'',group.file+':meta'));
+      // The source owner already proved this route's exact metadata. Rebuild it
+      // from native Nuclear copy later, without weakening catalog checks elsewhere.
+      if(metaKeys.has(key)&&!nuclearGuide)el.setAttribute('content',t(el.getAttribute('content')||'',group.file+':meta'));
       if(['og:url','twitter:url'].includes(key))el.setAttribute('content',L.routeURL(el.content,locale,groups));
       if(key==='og:locale')el.setAttribute('content',info.numberLocale.replace('-','_'));
     }
   }
   for(const script of document.querySelectorAll('script[type="application/json"],script[type="application/ld+json"]')) {
-    if(script.closest('[data-v3-owned],[data-hero-atlas-owned],[data-hero-pet-owned],[data-v4-owned],[data-v5-owned],[data-gift-owned]'))continue;
+    if(script.closest('[data-v3-owned],[data-hero-atlas-owned],[data-hero-pet-owned],[data-v4-owned],[data-v5-owned],[data-gift-owned],[data-nuclear-owned]'))continue;
     const value=JSON.parse(script.textContent);
     const translated=L.localizeJSON(value,locale,t,groups,group.file+':'+(script.id||'json'),'',/^(?:ts3|event-calendar)-copy$/.test(script.id));
     // Building calculators read this display configuration at runtime. Keep
@@ -215,7 +227,7 @@ function localizePage(source, locale, group, groups, translator) {
     for(const anchor of [...powerOwner.anchors].reverse())if(!replacement.querySelector('[id="'+anchor.id+'"]'))replacement.prepend(anchor);
     powerOwner.host.replaceWith(replacement);
   }
-  for(const script of document.querySelectorAll('script:not([src])')) if(!script.type?.includes('json')&&!script.closest('[data-v3-owned],[data-hero-atlas-owned],[data-hero-pet-owned],[data-v4-owned],[data-v5-owned],[data-gift-owned]'))script.textContent=inlineProgram(script.textContent,locale,t,group.file);
+  for(const script of document.querySelectorAll('script:not([src])')) if(!script.type?.includes('json')&&!script.closest('[data-v3-owned],[data-hero-atlas-owned],[data-hero-pet-owned],[data-v4-owned],[data-v5-owned],[data-gift-owned],[data-nuclear-owned]'))script.textContent=inlineProgram(script.textContent,locale,t,group.file);
   const canonical=document.querySelector('link[rel="canonical"]');
   if(canonical)canonical.href=L.publicOrigin+group.routes[locale];
   return document;
@@ -307,6 +319,8 @@ function enhance(document, locale, group, available, ui, {preview=false}={}) {
   projected=require('./v4-workbench-content').project(projected,locale,group.routes[locale]);
   if(group.id===''&&document.querySelector('[data-v5-home]'))projected=require('./build-v5-landing').project(projected,locale);
   if(group.id==='codes/')projected=require('./build-gift-codes').project(projected,locale);
+  if(group.id==='eras/nuclear-age/')projected=Nuclear.project(projected,locale,group.routes[locale]);
+  if(Nuclear.linkRoutes(locale).includes(group.routes[locale]))projected=Nuclear.projectLinks(projected,locale,group.routes[locale]);
   if(preview){const staged=parseHTML(projected).document;let robots=staged.querySelector('meta[name="robots"]');if(!robots){robots=staged.createElement('meta');robots.name='robots';staged.head.append(robots);}robots.content='noindex,nofollow';projected='<!doctype html>\n'+staged.documentElement.outerHTML+'\n';}
   // Older feature owners append their assets. Finalize presentation last so
   // every supported route, including a newly localized page, has one fresh V6

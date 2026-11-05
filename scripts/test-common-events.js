@@ -6,8 +6,8 @@ const bundle='const title="Jack-o\u0027-Lantern",rules="Oct 26, 2026 00:00 UTC<b
 const reply=(body,type='text/html')=>new Response(body,{status:200,headers:{'content-type':type}});
 
 test('only explicit public page and same-origin asset URLs are allowed',()=>{
- for(const u of ['https://tilesurvivegame.com/','https://tilesurvivegame.com/en/list','https://ts-halloween-web.funplus.com/assets/index-x.js'])assert(M.allowedURL(u));
- for(const u of ['http://tilesurvivegame.com/','https://tilesurvivegame.com/?uid=1','https://user:secret@tilesurvivegame.com/','https://tilesurvivegame.com/account','https://example.com/','https://ts-halloween-web.funplus.com/api/account','https://127.0.0.1/'])assert.throws(()=>M.allowedURL(u));
+ for(const u of ['https://tilesurvivegame.com/','https://tilesurvivegame.com/en/list','https://tilesurvivegame.com/en/blog/1213','https://tilesurvivegame.com/ko/blog/1218','https://ts-halloween-web.funplus.com/assets/index-x.js'])assert(M.allowedURL(u));
+ for(const u of ['http://tilesurvivegame.com/','https://tilesurvivegame.com/?uid=1','https://user:secret@tilesurvivegame.com/','https://tilesurvivegame.com/account','https://tilesurvivegame.com/en/blog/1218','https://tilesurvivegame.com/ko/blog/1213','https://tilesurvivegame.com/en/blog/1213?uid=1','repository:data/nuclear-age.json','https://example.com/','https://ts-halloween-web.funplus.com/api/account','https://127.0.0.1/'])assert.throws(()=>M.allowedURL(u));
 });
 test('semantic extraction ignores minifier names and bundle asset hashes, but retains rules and numeric changes',()=>{
  assert.deepEqual(M.bundleSemantic(bundle),M.bundleSemantic(bundle.replaceAll('title=','aTitle=').replaceAll(':title',':aTitle').replaceAll('rules=','aRules=').replaceAll(':rules',':aRules')));
@@ -32,10 +32,38 @@ test('response byte limits, MIME checks and timeout fail explicitly',async()=>{
 });
 test('new articles, changed content and access failures are distinct; failure never looks unchanged',async()=>{
  const fetcher=async u=>u.includes('/assets/')?reply(bundle,'text/javascript'):reply(u.includes('halloween')?'<html><title>Halloween</title><script src="/assets/index-abc.js"></script></html>':page);
- const first=await M.check({fetcher});assert.equal(first.status,'baseline-created');assert.equal(first.sources.length,4);
+ const first=await M.check({fetcher});assert.equal(first.status,'baseline-created');assert.equal(first.sources.length,M.DEFAULT_SOURCES.length+1);
  const same=await M.check({fetcher,baseline:first});assert.equal(same.status,'unchanged');
  const changed=await M.check({baseline:first,fetcher:async u=>u.includes('/en/list')?reply(page.replace('/1213','/9999')):fetcher(u)});assert.equal(changed.status,'changed');assert.deepEqual(changed.changes.newArticles,['https://tilesurvivegame.com/en/blog/9999']);assert(changed.changes.contentChanged.includes('official-news'));
  const failed=await M.check({baseline:first,fetcher:async u=>u.includes('/en/list')?new Response('Denied',{status:403}):fetcher(u)});assert.equal(failed.status,'needs-review');assert.equal(failed.changes.accessFailures[0].error,'HTTP_403');assert.deepEqual(failed.changes.removedArticles,[]);
+});
+
+test('Nuclear Age announcement changes and failures remain review candidates without changing the model',async()=>{
+ const file=path.join(__dirname,'../data/nuclear-age.json'),before=fs.readFileSync(file),calls=[];
+ const fetcher=async u=>{calls.push(u);return u.includes('/assets/')?reply(bundle,'text/javascript'):reply(u.includes('halloween')?'<html><title>Halloween</title><script src="/assets/index-abc.js"></script></html>':page);};
+ const first=await M.check({fetcher});
+ const model=first.sources.find(s=>s.id==='nuclear-client-model');
+ assert.equal(model.status,'ok');assert.equal(model.reviewOnly,true);assert.equal(model.semantic.clientVersion,JSON.parse(before).client.version);
+ assert(calls.includes('https://tilesurvivegame.com/en/blog/1213'));assert(calls.includes('https://tilesurvivegame.com/ko/blog/1218'));assert(calls.every(u=>u.startsWith('https://')));
+ assert(calls.includes('https://tilesurvivegame.com/en/blog/1221'));assert(calls.includes('https://tilesurvivegame.com/ko/blog/1226'));
+ const changed=await M.check({baseline:first,fetcher:async u=>u.endsWith('/ko/blog/1218')?reply(page.replace('Alita preview','Nuclear Age release update')):fetcher(u)});
+ assert.equal(changed.status,'changed');assert.deepEqual(changed.changes.contentChanged,['nuclear-official-ko']);
+ const failure=await M.check({baseline:first,fetcher:async u=>u.endsWith('/en/blog/1213')?new Response('Unavailable',{status:503}):fetcher(u)});
+ assert.equal(failure.status,'needs-review');assert(failure.changes.accessFailures.some(s=>s.id==='nuclear-official-en'&&s.error==='HTTP_503'));
+ assert.deepEqual(fs.readFileSync(file),before);
+});
+
+test('fixed client-model digest ignores JSON formatting but catches configuration changes without executing content',()=>{
+ const source=JSON.stringify({schemaVersion:1,id:'nuclear-age',client:{version:'2.6.400',build:1546},scope:{buildingTypeIds:[800005]},stages:[{id:1,nuclearFuelRequirement:50}]});
+ const plain=JSON.parse(source),a=M.clientModelSemantic(source);
+ assert.deepEqual(M.clientModelSemantic(JSON.stringify({stages:plain.stages,scope:plain.scope,client:plain.client,id:plain.id,schemaVersion:1},null,4)),a);
+ plain.stages[0].nuclearFuelRequirement=75;const b=M.clientModelSemantic(JSON.stringify(plain));assert.notEqual(b.modelSha256,a.modelSha256);
+ const wrap=semantic=>({sources:[{id:'nuclear-client-model',status:'ok',semanticSha256:semantic.modelSha256,semantic}]});
+ assert.deepEqual(M.compare(wrap(b),wrap(a)).contentChanged,['nuclear-client-model']);
+ assert.throws(()=>M.clientModelSemantic('globalThis.monitorExecuted=true'),/INVALID_JSON/);assert.equal(globalThis.monitorExecuted,undefined);
+ assert.throws(()=>M.clientModelSemantic('{"schemaVersion":1,"id":"other-game"}'),/CLIENT_MODEL_INVALID/);
+ assert.throws(()=>M.inspectClientModel({id:'nuclear-client-model',url:'repository:../private.json'}),/SOURCE_NOT_ALLOWED/);
+ assert.throws(()=>M.inspectClientModel({id:'unreviewed-model',url:'repository:data/nuclear-age.json'}),/SOURCE_NOT_ALLOWED/);
 });
 test('reports require an external output and refuse repository paths and baseline overwrite',async()=>{
  const dir=fs.mkdtempSync(path.join(os.tmpdir(),'tiles-events-'));

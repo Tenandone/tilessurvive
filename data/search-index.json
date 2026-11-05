@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-11-04T08:55:46.238Z",
-  "itemCount": 9343,
+  "itemCount": 9364,
   "items": [
     {
       "language": "ar",
@@ -66198,6 +66198,153 @@
       "title": "Alita · Ferdigheter · Utviklingskrav | TilesSurvive.net",
       "description": "En kommende X-SSR-helt fra Aeronaut-fraksjonen. Bad Bunny Mk. I kombinerer lasere og gulrotbomber med å fjerne egne svekkelser og motstå kontrolleffekter.",
       "url": "/nb/heroes/alita/"
+    },
+    {
+      "language": "en",
+      "type": "guide",
+      "title": "Nuclear Age Manual | TilesSurvive.net",
+      "description": "Plan your Nuclear Age upgrades: unlock conditions, buildings, fuel, troop improvements and upgrade costs.",
+      "url": "/en/eras/nuclear-age/"
+    },
+    {
+      "language": "ko",
+      "type": "guide",
+      "title": "원자력 시대 수첩 | TilesSurvive.net",
+      "description": "원자력 시대의 진입 조건, 건물, 핵연료, 병사 강화와 업그레이드 비용을 살펴보고 다음 성장을 준비하세요.",
+      "url": "/ko/eras/nuclear-age/"
+    },
+    {
+      "language": "ja",
+      "type": "guide",
+      "title": "原子力時代ガイド | TilesSurvive.net",
+      "description": "原子力時代の解放条件、建築、核燃料、兵士の強化、アップグレード費用を確認し、次の成長に備えましょう。",
+      "url": "/ja/eras/nuclear-age/"
+    },
+    {
+      "language": "zh-tw",
+      "type": "guide",
+      "title": "核能時代手冊 | TilesSurvive.net",
+      "description": "了解核能時代的開放條件、建築、燃料、兵種強化與升級成本，規劃下一步成長。",
+      "url": "/zh-tw/eras/nuclear-age/"
+    },
+    {
+      "language": "de",
+      "type": "guide",
+      "title": "Atomzeitalter-Handbuch | TilesSurvive.net",
+      "description": "Plane deinen Ausbau im Atomzeitalter: Freischaltung, Gebäude, Brennstoff, Truppenverbesserungen und Ausbaukosten.",
+      "url": "/de/eras/nuclear-age/"
+    },
+    {
+      "language": "ru",
+      "type": "guide",
+      "title": "Руководство по ядерной эпохе | TilesSurvive.net",
+      "description": "Планируйте развитие в ядерной эпохе: условия открытия, здания, топливо, усиление войск и стоимость улучшений.",
+      "url": "/ru/eras/nuclear-age/"
+    },
+    {
+      "language": "zh-cn",
+      "type": "guide",
+      "title": "核能时代手册 | TilesSurvive.net",
+      "description": "了解核能时代的开放条件、建筑、燃料、兵种强化与升级成本，规划下一步成长。",
+      "url": "/zh-cn/eras/nuclear-age/"
+    },
+    {
+      "language": "ar",
+      "type": "guide",
+      "title": "Nuclear Age Manual | TilesSurvive.net",
+      "description": "خطط لترقيات العصر النووي: شروط الفتح والمباني والوقود وتعزيز القوات وتكاليف الترقية.",
+      "url": "/ar/eras/nuclear-age/"
+    },
+    {
+      "language": "nl",
+      "type": "guide",
+      "title": "Nucleaire tijdperk-handboek | TilesSurvive.net",
+      "description": "Plan je nucleaire upgrades: ontgrendeling, gebouwen, brandstof, troepenverbeteringen en upgradekosten.",
+      "url": "/nl/eras/nuclear-age/"
+    },
+    {
+      "language": "fr",
+      "type": "guide",
+      "title": "Manuel de l'ère nucléaire | TilesSurvive.net",
+      "description": "Préparez vos améliorations nucléaires : accès, bâtiments, combustible, renforcement des troupes et coûts.",
+      "url": "/fr/eras/nuclear-age/"
+    },
+    {
+      "language": "id",
+      "type": "guide",
+      "title": "Manual Zaman Nuklir | TilesSurvive.net",
+      "description": "Rencanakan peningkatan Zaman Nuklir: syarat buka, bangunan, bahan bakar, penguatan pasukan, dan biaya peningkatan.",
+      "url": "/id/eras/nuclear-age/"
+    },
+    {
+      "language": "it",
+      "type": "guide",
+      "title": "Manuale Età nucleare | TilesSurvive.net",
+      "description": "Pianifica i potenziamenti dell’Età nucleare: sblocco, edifici, combustibile, miglioramenti delle truppe e costi.",
+      "url": "/it/eras/nuclear-age/"
+    },
+    {
+      "language": "pl",
+      "type": "guide",
+      "title": "Poradnik ery jądrowej | TilesSurvive.net",
+      "description": "Zaplanuj ulepszenia ery jądrowej: warunki odblokowania, budynki, paliwo, wzmocnienia wojsk i koszty.",
+      "url": "/pl/eras/nuclear-age/"
+    },
+    {
+      "language": "pt",
+      "type": "guide",
+      "title": "Manual da Era Nuclear | TilesSurvive.net",
+      "description": "Planeje as melhorias da Era Nuclear: condições de acesso, construções, combustível, fortalecimento das tropas e custos.",
+      "url": "/pt/eras/nuclear-age/"
+    },
+    {
+      "language": "es",
+      "type": "guide",
+      "title": "Manual de la Era nuclear | TilesSurvive.net",
+      "description": "Planifica las mejoras de la Era nuclear: desbloqueo, edificios, combustible, mejoras de tropas y costes.",
+      "url": "/es/eras/nuclear-age/"
+    },
+    {
+      "language": "sv",
+      "type": "guide",
+      "title": "Handbok för kärnkraftsåldern | TilesSurvive.net",
+      "description": "Planera uppgraderingar i kärnkraftsåldern: upplåsning, byggnader, bränsle, truppförbättringar och kostnader.",
+      "url": "/sv/eras/nuclear-age/"
+    },
+    {
+      "language": "th",
+      "type": "guide",
+      "title": "คู่มือยุคนิวเคลียร์ | TilesSurvive.net",
+      "description": "วางแผนอัปเกรดยุคนิวเคลียร์ ทั้งเงื่อนไขปลดล็อก สิ่งปลูกสร้าง เชื้อเพลิง การเสริมกำลังทหาร และค่าใช้จ่าย",
+      "url": "/th/eras/nuclear-age/"
+    },
+    {
+      "language": "tr",
+      "type": "guide",
+      "title": "Nükleer Çağ Kılavuzu | TilesSurvive.net",
+      "description": "Nükleer Çağ yükseltmelerini planla: açılma koşulları, binalar, yakıt, birlik geliştirmeleri ve yükseltme maliyetleri.",
+      "url": "/tr/eras/nuclear-age/"
+    },
+    {
+      "language": "vi",
+      "type": "guide",
+      "title": "Nuclear Age Manual | TilesSurvive.net",
+      "description": "Lên kế hoạch nâng cấp thời đại hạt nhân: điều kiện mở khóa, công trình, nhiên liệu, tăng cường binh lính và chi phí.",
+      "url": "/vi/eras/nuclear-age/"
+    },
+    {
+      "language": "ms",
+      "type": "guide",
+      "title": "Manual Zaman Nuklear | TilesSurvive.net",
+      "description": "Rancang naik taraf Zaman Nuklear: syarat pembukaan, bangunan, bahan api, pengukuhan tentera dan kos naik taraf.",
+      "url": "/ms/eras/nuclear-age/"
+    },
+    {
+      "language": "nb",
+      "type": "guide",
+      "title": "Nuclear Age Manual | TilesSurvive.net",
+      "description": "Planlegg atomoppgraderinger: krav for tilgang, bygninger, brensel, sterkere tropper og oppgraderingskostnader.",
+      "url": "/nb/eras/nuclear-age/"
     }
   ]
 }

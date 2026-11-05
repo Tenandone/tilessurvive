@@ -19,6 +19,15 @@
   function uiVersion(){var home=document.querySelector('[data-v5-home]'),version=home&&home.getAttribute('data-ui-version');return ['v6','v6.1'].includes(version)?version:'v5';}
   var consent = false, gaReady = false, pageSent = new Set(), guideSent = false, landingSent = false;
   try { consent = window.localStorage.getItem(KEY) === 'granted'; } catch (_) {}
+  // Denied storage alone can still allow cookieless pings from an already loaded
+  // tag. Keep our opt-in policy on revocation too, without changing ad/CMP state.
+  // https://developers.google.com/tag-platform/security/guides/privacy
+  function syncGACollection() {
+    APPROVED_IDS.forEach(function (id) {
+      window['ga-disable-' + id] = !(consent && production() && idsValid && gaIds.includes(id));
+    });
+  }
+  syncGACollection();
   function language() {
     var fromRegistry = window.TS_LOCALES && window.TS_LOCALES.current();
     var lang = fromRegistry || location.pathname.split('/')[1] || document.documentElement.dataset.lang;
@@ -142,6 +151,7 @@
   }
   function setConsent(allowed) {
     consent = allowed === true;
+    syncGACollection();
     try { window.localStorage.setItem(KEY, consent ? 'granted' : 'denied'); } catch (_) {}
     updateControls();
     if (consent) {

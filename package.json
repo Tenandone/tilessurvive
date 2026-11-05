@@ -85,7 +85,9 @@
     "test:v5": "node --test scripts/test-v5-landing.js scripts/test-v3-affiliate.js",
     "postbuild:hero-atlas": "node scripts/build-v6-system.js",
     "build:v6": "node scripts/build-v5-landing.js && node scripts/build-v6-system.js",
-    "test:v6": "node --test scripts/test-v6-landing.js scripts/test-v6-system.js scripts/test-common-events.js scripts/test-ten-benefits-copy.js scripts/test-v61-ten.js scripts/test-v61-regeneration.js scripts/test-gift-codes.js scripts/test-v4-search-preservation.js"
+    "test:v6": "node --test scripts/test-v6-landing.js scripts/test-v6-system.js scripts/test-common-events.js scripts/test-ten-benefits-copy.js scripts/test-v61-ten.js scripts/test-v61-regeneration.js scripts/test-gift-codes.js scripts/test-v4-search-preservation.js",
+    "test:nuclear-age": "node --test scripts/test-nuclear-age-runtime.js scripts/test-nuclear-age-publication.js scripts/test-nuclear-age-regeneration.js",
+    "test:site-identity": "node --test scripts/test-favicon-assets.js scripts/test-site-identity.js scripts/test-site-invariants.js"
   },
   "keywords": [],
   "author": "",
@@ -95,6 +97,7 @@
     "image-size": "^2.0.4",
     "linkedom": "^0.18.13",
     "opencc-js": "1.4.2",
-    "serve": "^14.2.6"
+    "serve": "^14.2.6",
+    "sharp": "0.35.5"
   }
 }

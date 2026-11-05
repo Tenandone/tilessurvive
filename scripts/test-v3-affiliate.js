@@ -90,6 +90,29 @@ test('revocation, storage changes and blocked storage are safe; localhost never 
   const blocked = setup({storageThrows:true}); blocked.window.TS_V3_AFFILIATE.setConsent(true); assert.equal(blocked.events('page_view').length,1);
   const local = setup({hostname:'localhost',saved:'granted'}); local.click('[data-v3-cta="outbound"]'); assert.equal(local.calls.length, 0);
 });
+
+test('revocation disables every configured Google destination before consent update and can resume without duplicate views', () => {
+  const ids=[content.MEASUREMENT_ID,content.SECONDARY_MEASUREMENT_ID,content.LEGACY_HOME_MEASUREMENT_ID];
+  const a=setup({gaIds:ids});
+  for(const id of ids)assert.equal(a.window['ga-disable-'+id],true);
+  a.window.TS_V3_AFFILIATE.setConsent(true);
+  for(const id of ids)assert.equal(a.window['ga-disable-'+id],false);
+  const views=a.events('page_view').length,gtag=a.window.gtag;
+  let denied=0;
+  a.window.gtag=(...args)=>{if(args[0]==='consent'&&args[2]?.analytics_storage==='denied'){for(const id of ids)assert.equal(a.window['ga-disable-'+id],true);denied++;}gtag(...args);};
+  a.window.TS_V3_AFFILIATE.setConsent(false);
+  assert.equal(denied,1);
+  a.click('[data-v3-cta="outbound"]');assert.equal(a.events('lootbar_outbound_click').length,0);
+  a.handlers.storage({key:'tiles.v3.analyticsConsent',newValue:'granted'});
+  for(const id of ids)assert.equal(a.window['ga-disable-'+id],false);
+  assert.equal(a.events('page_view').length,views);assert.equal(a.document.querySelectorAll('[data-v3-ga-loader]').length,1);
+  a.handlers.storage({key:null,newValue:null});for(const id of ids)assert.equal(a.window['ga-disable-'+id],true);
+  for(const options of [{saved:'denied'},{storageThrows:true},{hostname:'localhost',saved:'granted'},{saved:'granted',gaIds:[content.MEASUREMENT_ID,'G-UNKNOWN123']}]){
+    const b=setup(options);for(const id of ids)assert.equal(b.window['ga-disable-'+id],true);
+    assert.equal(b.window['ga-disable-G-UNKNOWN123'],undefined);assert.equal(b.calls.length,0);
+  }
+  const primary=setup({saved:'granted'});assert.equal(primary.window['ga-disable-'+ids[0]],false);for(const id of ids.slice(1))assert.equal(primary.window['ga-disable-'+id],true);
+});
 test('duplicate module load does not duplicate listeners; feature API rejects arbitrary values; bookmark still works', () => {
   const a = setup({saved:'granted'}); a.rerun(); a.click('[data-v3-cta="outbound"]'); assert.equal(a.events('lootbar_outbound_click').length,1);
   assert.equal(a.window.TS_V3_AFFILIATE.trackFeature('email@example.com','result'), false);

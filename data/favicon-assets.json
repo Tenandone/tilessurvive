@@ -1,0 +1,72 @@
+{
+  "schemaVersion": 1,
+  "source": {
+    "path": "/img/brand/tiles-survive-app-2.6.400.webp",
+    "sha256": "defbba5c40209e2035ba9f24543e306376b9b81c3121053bb24054e7d9f31dce",
+    "width": 192,
+    "height": 192,
+    "package": "com.funplus.ts.global",
+    "appVersion": "2.6.400",
+    "versionCode": 1546,
+    "apkEntry": "res/mipmap-xxxhdpi-v4/app_icon.webp",
+    "apkSha256": "f8b56ca5b55e3dbbaa966623ef384833784ed70017f03cbc99f214461749ef7a",
+    "capturedAt": "2026-11-05T09:24:27.579736Z"
+  },
+  "transform": {
+    "horizontalMirror": true,
+    "colorInversion": "RGB: 255 - channel",
+    "alpha": "preserved before resampling",
+    "crop": {
+      "left": 16,
+      "top": 18,
+      "width": 160,
+      "height": 163
+    },
+    "marginRatio": 0.04,
+    "resampling": "lanczos3",
+    "largerOutputs": "upscaled from the official 192px source; no invented detail"
+  },
+  "generator": {
+    "sharp": "0.35.5"
+  },
+  "outputs": [
+    {
+      "path": "/favicon.ico",
+      "sizes": [
+        16,
+        32,
+        48
+      ],
+      "bytes": 9007,
+      "sha256": "c2bc4ce21b93b92e67290db1e484c4bff48c1c5214d181b1a8350da9538ba5b3"
+    },
+    {
+      "path": "/favicon-96x96.png",
+      "width": 96,
+      "height": 96,
+      "bytes": 16512,
+      "sha256": "deb09f8cf0ec97bdc1d760a574439170219f5fd7c1a1eba58dcc4e707fde9c24"
+    },
+    {
+      "path": "/apple-touch-icon.png",
+      "width": 180,
+      "height": 180,
+      "bytes": 47837,
+      "sha256": "eb0aa023dec987ef8401a37f56d91899059d56681bbffe46708d3c32c5d6d24c"
+    },
+    {
+      "path": "/icons/icon-192.png",
+      "width": 192,
+      "height": 192,
+      "bytes": 53314,
+      "sha256": "13867d688ca320f390f60e6f3162cc3d1262a931bbf5044affd3ce271f5aea4b"
+    },
+    {
+      "path": "/icons/icon-512.png",
+      "width": 512,
+      "height": 512,
+      "bytes": 306281,
+      "sha256": "b82f10b5b5c3e86e5fdcfe07363d8fd154195baa5ff2aaca41e2f0a39e9c0405"
+    }
+  ]
+}

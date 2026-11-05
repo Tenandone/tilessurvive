@@ -1,0 +1,3681 @@
+{
+  "schemaVersion": 1,
+  "id": "nuclear-age",
+  "client": {
+    "version": "2.6.400",
+    "build": 1546,
+    "resourceMarker": "2.6.400.1546",
+    "observedRManifest": "2.6.400.1548",
+    "capturedDate": "2026-11-05",
+    "tables": {
+      "buildings": {
+        "md5": "ec06afe55beb136abce85aafd4b66301",
+        "sha256": "19b0eb838c5dfce7c47c3fae2dacbaf98bf2754bdb90fc98ef963be076fd76df",
+        "rowCount": 6414
+      },
+      "building_type": {
+        "md5": "3e88bc813532d83e8bc331be48f6d985",
+        "sha256": "379291ff191ab0a9cf3a8b60c36701d2be0b368252e63833f7c655e724a07305",
+        "rowCount": 331
+      },
+      "building_star_translation": {
+        "md5": "813ce1318b749be8b9f894bb595d911b",
+        "sha256": "18b99d33dcceeeb69ed6a806a9b923f41f1f1b80032db6c6a8eb4b07413daea9",
+        "rowCount": 10
+      },
+      "function_open": {
+        "md5": "f35915d063823d782cd0294258da1567",
+        "sha256": "2cb2e425a949b05c3c3b093fb255dff2c87eca105cc8d57c4f5e2c5271a9d181",
+        "rowCount": 765
+      },
+      "game_configs": {
+        "md5": "569f35110f854c44bb38529781c2d1c6",
+        "sha256": "7297bc64868b0f61ea14388ce63f5d6153a8240ac6ab1982b650c12e29b83242",
+        "rowCount": 2722
+      },
+      "army_soldier_star": {
+        "md5": "68a2d5ea4835570a0134dc1182cf83bd",
+        "sha256": "e076be620ad6ab15d1994b5c110dbeea5ffe29d52f9992eec73f5fffe23090a9",
+        "rowCount": 30
+      },
+      "benefits": {
+        "md5": "5f703852c1883d5d1318134eb3531851",
+        "sha256": "27aff0b4cf8166cb0785bbe692ce0c6f859eb5849653b4725ba10add1c85bf86",
+        "rowCount": 2164
+      },
+      "itemlist": {
+        "md5": "878b34ddc40577ccc90282d639950f3e",
+        "sha256": "94949537395a907e35a8e9b60e5e3a9ff399d3fe6e8d5b022f6e951269bb2157",
+        "rowCount": 8873
+      },
+      "reward_unlock": {
+        "md5": "73b292f1c102c14963d50b62c8e03d85",
+        "sha256": "c54c48ce99c352548666ffcf7c69b1a97e54930510405c36d000ef38f8f5ee56",
+        "rowCount": 1
+      },
+      "activity_alliance_1v1_duel_box": {
+        "md5": "fd34d2310e1cefa1f3279effad8aa130",
+        "sha256": "3ff4383827014b1544f7f6c08bea49f3de7d3259ab372b000d7e1ddbf798dec6",
+        "rowCount": 12
+      },
+      "activity_alliance_1v1_duel_box_group": {
+        "md5": "867b4a98f390f405a4201a7fc12bc133",
+        "sha256": "ec2becf4ed41ee5c3f2e32d85ac10670f9223b169e374b040c2847f7ffc64637",
+        "rowCount": 4
+      },
+      "research_main": {
+        "md5": "adc00c74efcb3b7e546504fdbeabaa51",
+        "sha256": "a05047cb2662ba4a7857c2bcfffd8c5d78f6f875f688ad1abe709d785c59c87b",
+        "rowCount": 2524
+      },
+      "research_group": {
+        "md5": "3a5afefde6211c99cc59691685ba8cbb",
+        "sha256": "7fac4350425d369567560f1f30d46867194d31dccc6a2f7d70f1ceb8e74273eb",
+        "rowCount": 461
+      }
+    }
+  },
+  "scope": {
+    "initialNuclearMax": 3,
+    "stepsPerLevel": 5,
+    "minimumPowerPlantLevel": 30,
+    "minClientVersion": "2.6.400",
+    "stateRolloutVerified": false,
+    "seasonResetVerified": false,
+    "buildingTypeIds": [
+      800005,
+      800007,
+      800008,
+      800009,
+      800010
+    ],
+    "unreleasedHigherConfigExcluded": true,
+    "releaseStatus": "released-state-gated"
+  },
+  "gates": {
+    "powerPlantLevel": {
+      "sourceId": 23200849,
+      "sourceKey": "building_level_upper_limit_33",
+      "type": 1,
+      "param": "30"
+    },
+    "stateFeature": {
+      "sourceId": 23200853,
+      "sourceKey": "building_level_upper_limit_time_33",
+      "type": 41,
+      "param": "17",
+      "interpretation": "opaque-feature-parameter-not-server-age"
+    },
+    "higherConfiguredGates": [
+      {
+        "sourceId": 23200854,
+        "sourceKey": "building_level_upper_limit_time_35",
+        "type": 41,
+        "param": "999",
+        "publishedAsReleased": false
+      },
+      {
+        "sourceId": 23200855,
+        "sourceKey": "building_level_upper_limit_time_38",
+        "type": 41,
+        "param": "999",
+        "publishedAsReleased": false
+      },
+      {
+        "sourceId": 23200856,
+        "sourceKey": "building_level_upper_limit_time_40",
+        "type": 41,
+        "param": "999",
+        "publishedAsReleased": false
+      }
+    ]
+  },
+  "item": {
+    "id": 210658,
+    "code": "item_nuclear_fuel",
+    "nameKey": "nuclear_fuel",
+    "names": {
+      "en": "Nuclear Fuel",
+      "ko": "핵연료",
+      "ja": "核燃料",
+      "zh-tw": "核燃料",
+      "de": "Kernbrennstoff",
+      "ru": "Ядерное топливо",
+      "zh-cn": "核燃料",
+      "ar": "Nuclear Fuel",
+      "nl": "Nucleaire brandstof",
+      "fr": "Combustible nucléaire",
+      "id": "Bahan Bakar Nuklir",
+      "it": "Combustibile nucleare",
+      "pl": "Paliwo jądrowe",
+      "pt": "Combustível Nuclear",
+      "es": "Combustible nuclear",
+      "sv": "Kärnbränsle",
+      "th": "เชื้อเพลิงนิวเคลียร์",
+      "tr": "Nükleer Yakıt",
+      "vi": "Nuclear Fuel",
+      "ms": "Bahan Api Nuklear",
+      "nb": "Nuclear Fuel"
+    },
+    "nameEvidence": {
+      "en": "official-client",
+      "ko": "official-client",
+      "ja": "official-client",
+      "zh-tw": "official-client",
+      "de": "official-client",
+      "ru": "official-client",
+      "zh-cn": "official-client",
+      "ar": "english-fallback",
+      "nl": "official-client",
+      "fr": "official-client",
+      "id": "official-client",
+      "it": "official-client",
+      "pl": "official-client",
+      "pt": "official-client",
+      "es": "official-client",
+      "sv": "official-client",
+      "th": "official-client",
+      "tr": "official-client",
+      "vi": "english-fallback",
+      "ms": "official-client",
+      "nb": "english-fallback"
+    },
+    "descriptionKey": "nuclear_fuel_des",
+    "descriptions": {
+      "en": "Packed with energy, this fuel can provide a steady supply of electricity when used wisely.",
+      "ko": "막대한 에너지가 깃들어 있으며, 적절하게 사용하면 전력을 안정적으로 공급할 수 있습니다.",
+      "ja": "膨大なエネルギーを秘めた燃料です。適切に利用することで、安定した電力を供給できます",
+      "zh-tw": "蘊含大量能源，使用得當將獲得源源不絕的電力",
+      "de": "Dieser Kraftstoff steckt voller Energie und kann bei sinnvoller Nutzung für eine konstante Stromversorgung sorgen.",
+      "ru": "При разумном применении это высокоэнергетическое топливо способно обеспечить стабильную подачу электроэнергии.",
+      "zh-cn": "蕴含海量能源，使用得当将获得源源不绝的电力",
+      "ar": "Packed with energy, this fuel can provide a steady supply of electricity when used wisely.",
+      "nl": "Deze brandstof zit boordevol energie en kan bij verstandig gebruik een gestage stroom elektriciteit leveren.",
+      "fr": "Très riche en énergie, ce combustible peut assurer un approvisionnement régulier en électricité s'il est utilisé à bon escient.",
+      "id": "Dikemas padat dengan energi, bahan bakar ini dapat menyediakan pasokan listrik yang stabil kalau digunakan dengan bijak.",
+      "it": "Ricco di energia, questo combustibile può fornire un flusso costante di elettricità se utilizzato con accortezza.",
+      "pl": "Pełne energii, to paliwo może zapewnić stały dopływ prądu, jeśli zostanie wykorzystane mądrze.",
+      "pt": "Cheio de energia, este combustível pode fornecer um suprimento constante de eletricidade quando usado com sabedoria.",
+      "es": "Rebosante de energía, este combustible puede suministrar electricidad de forma constante si se usa con prudencia.",
+      "sv": "Det här bränslet är fullpackat med energi och kan ge en stadig strömförsörjning om det används klokt.",
+      "th": "อัดแน่นด้วยพลังงาน เชื้อเพลิงนี้จะมอบกระแสไฟฟ้าอย่างต่อเนื่องหากใช้งานอย่างชาญฉลาด",
+      "tr": "Enerjiyle dolup taşan bu yakıt, akıllıca kullanıldığında düzenli bir elektrik arzı sağlayabilir.",
+      "vi": "Packed with energy, this fuel can provide a steady supply of electricity when used wisely.",
+      "ms": "Dipenuhi tenaga, bahan api ini boleh menyediakan bekalan elektrik yang stabil apabila digunakan dengan bijak.",
+      "nb": "Packed with energy, this fuel can provide a steady supply of electricity when used wisely."
+    },
+    "nativeIcon": "sp_icon_level_upper_energy",
+    "image": {
+      "nativeKey": "sp_icon_level_upper_energy",
+      "src": "/img/nuclear-age/fuel.webp",
+      "width": 128,
+      "height": 128,
+      "bytes": 14284,
+      "sha256": "8fa18baafa5b0405b14eab1fb17e7f132b4694b6a33aedb5e5d1cd9863db6d9f",
+      "sourcePNG_SHA256": "86bc8b591ef732578c59837d650ea8c7a7bcf63b24f8274e77bbdc69c57a5300",
+      "sourceBundleSHA256": "8cf0033a7bb0a1e9e33e3063fec72d3026883dbd9771429a875e71bb14380989",
+      "assetId": 61514,
+      "bundleId": 206883,
+      "sourceCRC32": 1473611868,
+      "losslessPixelEquality": true
+    }
+  },
+  "buildings": [
+    {
+      "id": 800005,
+      "code": "stronghold",
+      "nameKey": "building_electricity_panel_text_6_title",
+      "names": {
+        "en": "Power Plant",
+        "ko": "발전소",
+        "ja": "発電所",
+        "zh-tw": "發電廠",
+        "de": "Das Kraftwerk",
+        "ru": "Электростанция",
+        "zh-cn": "发电厂",
+        "ar": "Power Plant",
+        "nl": "Energiecentrale",
+        "fr": "Le Centre",
+        "id": "Pembangkit Listrik",
+        "it": "La Centrale",
+        "pl": "Elektrownia",
+        "pt": "A Usina",
+        "es": "La central eléctrica",
+        "sv": "Kraftverk",
+        "th": "โรงไฟฟ้า",
+        "tr": "Güç Santrali",
+        "vi": "Power Plant",
+        "ms": "Loji Kuasa",
+        "nb": "Power Plant"
+      },
+      "nameEvidence": {
+        "en": "official-client",
+        "ko": "official-client",
+        "ja": "official-client",
+        "zh-tw": "official-client",
+        "de": "official-client",
+        "ru": "official-client",
+        "zh-cn": "official-client",
+        "ar": "english-fallback",
+        "nl": "official-client",
+        "fr": "official-client",
+        "id": "official-client",
+        "it": "official-client",
+        "pl": "official-client",
+        "pt": "official-client",
+        "es": "official-client",
+        "sv": "official-client",
+        "th": "official-client",
+        "tr": "official-client",
+        "vi": "english-fallback",
+        "ms": "official-client",
+        "nb": "english-fallback"
+      },
+      "nativeImage": "sp_citybuilding_stronghold_lv1",
+      "scope": "official-initial-release-building-types",
+      "stages": [
+        {
+          "sourceId": 501051,
+          "sourceKey": "building_stronghold_30_2",
+          "sequence": 1,
+          "targetNuclearLevel": 1,
+          "step": 1,
+          "level": 30,
+          "rank": 1,
+          "completedNuclearLevel": 0,
+          "nuclearFuel": null,
+          "nuclearFuelStatus": "unconfirmed-null-source",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": null,
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "null-source",
+          "functionOpen": "building_level_upper_limit_time_33"
+        },
+        {
+          "sourceId": 501052,
+          "sourceKey": "building_stronghold_30_3",
+          "sequence": 2,
+          "targetNuclearLevel": 1,
+          "step": 2,
+          "level": 30,
+          "rank": 2,
+          "completedNuclearLevel": 0,
+          "nuclearFuel": 70,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": null,
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "null-source",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 501053,
+          "sourceKey": "building_stronghold_30_4",
+          "sequence": 3,
+          "targetNuclearLevel": 1,
+          "step": 3,
+          "level": 30,
+          "rank": 3,
+          "completedNuclearLevel": 0,
+          "nuclearFuel": 90,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": null,
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "null-source",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 501246,
+          "sourceKey": "building_stronghold_30_5",
+          "sequence": 4,
+          "targetNuclearLevel": 1,
+          "step": 4,
+          "level": 30,
+          "rank": 4,
+          "completedNuclearLevel": 0,
+          "nuclearFuel": 110,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": null,
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "null-source",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 501054,
+          "sourceKey": "building_stronghold_31_1",
+          "sequence": 5,
+          "targetNuclearLevel": 1,
+          "step": 5,
+          "level": 31,
+          "rank": 0,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 130,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 507646,
+              "buildingId": 800419,
+              "code": "building_nuclear_plant_3",
+              "level": 3,
+              "rank": 0
+            },
+            {
+              "id": 500815,
+              "buildingId": 800007,
+              "code": "building_barracks_30",
+              "level": 30,
+              "rank": 0
+            },
+            {
+              "id": 500154,
+              "buildingId": 800012,
+              "code": "building_university_30",
+              "level": 30,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 501055,
+          "sourceKey": "building_stronghold_31_2",
+          "sequence": 6,
+          "targetNuclearLevel": 2,
+          "step": 1,
+          "level": 31,
+          "rank": 1,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 150,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 507646,
+              "buildingId": 800419,
+              "code": "building_nuclear_plant_3",
+              "level": 3,
+              "rank": 0
+            },
+            {
+              "id": 500815,
+              "buildingId": 800007,
+              "code": "building_barracks_30",
+              "level": 30,
+              "rank": 0
+            },
+            {
+              "id": 500154,
+              "buildingId": 800012,
+              "code": "building_university_30",
+              "level": 30,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 501056,
+          "sourceKey": "building_stronghold_31_3",
+          "sequence": 7,
+          "targetNuclearLevel": 2,
+          "step": 2,
+          "level": 31,
+          "rank": 2,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 170,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 507646,
+              "buildingId": 800419,
+              "code": "building_nuclear_plant_3",
+              "level": 3,
+              "rank": 0
+            },
+            {
+              "id": 500815,
+              "buildingId": 800007,
+              "code": "building_barracks_30",
+              "level": 30,
+              "rank": 0
+            },
+            {
+              "id": 500154,
+              "buildingId": 800012,
+              "code": "building_university_30",
+              "level": 30,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 501057,
+          "sourceKey": "building_stronghold_31_4",
+          "sequence": 8,
+          "targetNuclearLevel": 2,
+          "step": 3,
+          "level": 31,
+          "rank": 3,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 190,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 507646,
+              "buildingId": 800419,
+              "code": "building_nuclear_plant_3",
+              "level": 3,
+              "rank": 0
+            },
+            {
+              "id": 500815,
+              "buildingId": 800007,
+              "code": "building_barracks_30",
+              "level": 30,
+              "rank": 0
+            },
+            {
+              "id": 500154,
+              "buildingId": 800012,
+              "code": "building_university_30",
+              "level": 30,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 501247,
+          "sourceKey": "building_stronghold_31_5",
+          "sequence": 9,
+          "targetNuclearLevel": 2,
+          "step": 4,
+          "level": 31,
+          "rank": 4,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 210,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 507646,
+              "buildingId": 800419,
+              "code": "building_nuclear_plant_3",
+              "level": 3,
+              "rank": 0
+            },
+            {
+              "id": 500815,
+              "buildingId": 800007,
+              "code": "building_barracks_30",
+              "level": 30,
+              "rank": 0
+            },
+            {
+              "id": 500154,
+              "buildingId": 800012,
+              "code": "building_university_30",
+              "level": 30,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 501058,
+          "sourceKey": "building_stronghold_32_1",
+          "sequence": 10,
+          "targetNuclearLevel": 2,
+          "step": 5,
+          "level": 32,
+          "rank": 0,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 210,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 507649,
+              "buildingId": 800419,
+              "code": "building_nuclear_plant_6",
+              "level": 6,
+              "rank": 0
+            },
+            {
+              "id": 501186,
+              "buildingId": 800007,
+              "code": "building_barracks_31_1",
+              "level": 31,
+              "rank": 0
+            },
+            {
+              "id": 501150,
+              "buildingId": 800010,
+              "code": "building_hospital_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 501059,
+          "sourceKey": "building_stronghold_32_2",
+          "sequence": 11,
+          "targetNuclearLevel": 3,
+          "step": 1,
+          "level": 32,
+          "rank": 1,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 210,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 507649,
+              "buildingId": 800419,
+              "code": "building_nuclear_plant_6",
+              "level": 6,
+              "rank": 0
+            },
+            {
+              "id": 501186,
+              "buildingId": 800007,
+              "code": "building_barracks_31_1",
+              "level": 31,
+              "rank": 0
+            },
+            {
+              "id": 501150,
+              "buildingId": 800010,
+              "code": "building_hospital_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 501060,
+          "sourceKey": "building_stronghold_32_3",
+          "sequence": 12,
+          "targetNuclearLevel": 3,
+          "step": 2,
+          "level": 32,
+          "rank": 2,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 210,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 507649,
+              "buildingId": 800419,
+              "code": "building_nuclear_plant_6",
+              "level": 6,
+              "rank": 0
+            },
+            {
+              "id": 501186,
+              "buildingId": 800007,
+              "code": "building_barracks_31_1",
+              "level": 31,
+              "rank": 0
+            },
+            {
+              "id": 501150,
+              "buildingId": 800010,
+              "code": "building_hospital_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 501061,
+          "sourceKey": "building_stronghold_32_4",
+          "sequence": 13,
+          "targetNuclearLevel": 3,
+          "step": 3,
+          "level": 32,
+          "rank": 3,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 210,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 507649,
+              "buildingId": 800419,
+              "code": "building_nuclear_plant_6",
+              "level": 6,
+              "rank": 0
+            },
+            {
+              "id": 501186,
+              "buildingId": 800007,
+              "code": "building_barracks_31_1",
+              "level": 31,
+              "rank": 0
+            },
+            {
+              "id": 501150,
+              "buildingId": 800010,
+              "code": "building_hospital_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 501248,
+          "sourceKey": "building_stronghold_32_5",
+          "sequence": 14,
+          "targetNuclearLevel": 3,
+          "step": 4,
+          "level": 32,
+          "rank": 4,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 210,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 507649,
+              "buildingId": 800419,
+              "code": "building_nuclear_plant_6",
+              "level": 6,
+              "rank": 0
+            },
+            {
+              "id": 501186,
+              "buildingId": 800007,
+              "code": "building_barracks_31_1",
+              "level": 31,
+              "rank": 0
+            },
+            {
+              "id": 501150,
+              "buildingId": 800010,
+              "code": "building_hospital_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 501249,
+          "sourceKey": "building_stronghold_33_1",
+          "sequence": 15,
+          "targetNuclearLevel": 3,
+          "step": 5,
+          "level": 33,
+          "rank": 0,
+          "completedNuclearLevel": 3,
+          "nuclearFuel": 210,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 507652,
+              "buildingId": 800419,
+              "code": "building_nuclear_plant_9",
+              "level": 9,
+              "rank": 0
+            },
+            {
+              "id": 501190,
+              "buildingId": 800007,
+              "code": "building_barracks_32_1",
+              "level": 32,
+              "rank": 0
+            },
+            {
+              "id": 507684,
+              "buildingId": 800012,
+              "code": "building_university_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        }
+      ],
+      "image": {
+        "nativeKey": "sp_citybuilding_stronghold_lv1",
+        "src": "/img/nuclear-age/power-plant.webp",
+        "width": 240,
+        "height": 240,
+        "bytes": 51288,
+        "sha256": "fa2449fb5eed52812ee8cb1e19e340a04856ea76f04124eeb057c0349899783c",
+        "sourcePNG_SHA256": "7e8846b49c53e06cff0918e0e690cbc40bc2b2be011f03c2956eb0d3451ecbd1",
+        "sourceBundleSHA256": "7735a4229f6f0661af95afa2c41402c98c2ce6d92d965238efb7815b07af3ec1",
+        "assetId": 55944,
+        "bundleId": 207825,
+        "sourceCRC32": 1567323363,
+        "losslessPixelEquality": true
+      }
+    },
+    {
+      "id": 800007,
+      "code": "barracks",
+      "nameKey": "barracks_name_1",
+      "names": {
+        "en": "Barracks 1",
+        "ko": "1호 병영",
+        "ja": "兵舎1",
+        "zh-tw": "1號兵營",
+        "de": "Kaserne 1",
+        "ru": "Казарма 1",
+        "zh-cn": "1号兵营",
+        "ar": "Barracks 1",
+        "nl": "Kazerne 1",
+        "fr": "Caserne 1",
+        "id": "Barak 1",
+        "it": "Caserma 1",
+        "pl": "Koszary 1",
+        "pt": "Quartel 1",
+        "es": "Barracas 1",
+        "sv": "Baracker 1",
+        "th": "ค่ายทหาร 1",
+        "tr": "1. Kışla",
+        "vi": "Barracks 1",
+        "ms": "Barak 1",
+        "nb": "Barracks 1"
+      },
+      "nameEvidence": {
+        "en": "official-client",
+        "ko": "official-client",
+        "ja": "official-client",
+        "zh-tw": "official-client",
+        "de": "official-client",
+        "ru": "official-client",
+        "zh-cn": "official-client",
+        "ar": "english-fallback",
+        "nl": "official-client",
+        "fr": "official-client",
+        "id": "official-client",
+        "it": "official-client",
+        "pl": "official-client",
+        "pt": "official-client",
+        "es": "official-client",
+        "sv": "official-client",
+        "th": "official-client",
+        "tr": "official-client",
+        "vi": "english-fallback",
+        "ms": "official-client",
+        "nb": "english-fallback"
+      },
+      "nativeImage": "sp_citybuilding_barracks_lv0",
+      "scope": "official-initial-release-building-types",
+      "stages": [
+        {
+          "sourceId": 501183,
+          "sourceKey": "building_barracks_30_2",
+          "sequence": 1,
+          "targetNuclearLevel": 1,
+          "step": 1,
+          "level": 30,
+          "rank": 1,
+          "completedNuclearLevel": 0,
+          "nuclearFuel": 40,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501054,
+              "buildingId": 800005,
+              "code": "building_stronghold_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": "building_level_upper_limit_time_33"
+        },
+        {
+          "sourceId": 501184,
+          "sourceKey": "building_barracks_30_3",
+          "sequence": 2,
+          "targetNuclearLevel": 1,
+          "step": 2,
+          "level": 30,
+          "rank": 2,
+          "completedNuclearLevel": 0,
+          "nuclearFuel": 56,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501054,
+              "buildingId": 800005,
+              "code": "building_stronghold_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 501185,
+          "sourceKey": "building_barracks_30_4",
+          "sequence": 3,
+          "targetNuclearLevel": 1,
+          "step": 3,
+          "level": 30,
+          "rank": 3,
+          "completedNuclearLevel": 0,
+          "nuclearFuel": 72,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501054,
+              "buildingId": 800005,
+              "code": "building_stronghold_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 501290,
+          "sourceKey": "building_barracks_30_5",
+          "sequence": 4,
+          "targetNuclearLevel": 1,
+          "step": 4,
+          "level": 30,
+          "rank": 4,
+          "completedNuclearLevel": 0,
+          "nuclearFuel": 88,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501054,
+              "buildingId": 800005,
+              "code": "building_stronghold_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 501186,
+          "sourceKey": "building_barracks_31_1",
+          "sequence": 5,
+          "targetNuclearLevel": 1,
+          "step": 5,
+          "level": 31,
+          "rank": 0,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 104,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501054,
+              "buildingId": 800005,
+              "code": "building_stronghold_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 501187,
+          "sourceKey": "building_barracks_31_2",
+          "sequence": 6,
+          "targetNuclearLevel": 2,
+          "step": 1,
+          "level": 31,
+          "rank": 1,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 120,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501058,
+              "buildingId": 800005,
+              "code": "building_stronghold_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 501188,
+          "sourceKey": "building_barracks_31_3",
+          "sequence": 7,
+          "targetNuclearLevel": 2,
+          "step": 2,
+          "level": 31,
+          "rank": 2,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 136,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501058,
+              "buildingId": 800005,
+              "code": "building_stronghold_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 501189,
+          "sourceKey": "building_barracks_31_4",
+          "sequence": 8,
+          "targetNuclearLevel": 2,
+          "step": 3,
+          "level": 31,
+          "rank": 3,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 152,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501058,
+              "buildingId": 800005,
+              "code": "building_stronghold_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 501291,
+          "sourceKey": "building_barracks_31_5",
+          "sequence": 9,
+          "targetNuclearLevel": 2,
+          "step": 4,
+          "level": 31,
+          "rank": 4,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 168,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501058,
+              "buildingId": 800005,
+              "code": "building_stronghold_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 501190,
+          "sourceKey": "building_barracks_32_1",
+          "sequence": 10,
+          "targetNuclearLevel": 2,
+          "step": 5,
+          "level": 32,
+          "rank": 0,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 168,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501058,
+              "buildingId": 800005,
+              "code": "building_stronghold_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 501191,
+          "sourceKey": "building_barracks_32_2",
+          "sequence": 11,
+          "targetNuclearLevel": 3,
+          "step": 1,
+          "level": 32,
+          "rank": 1,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 168,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501249,
+              "buildingId": 800005,
+              "code": "building_stronghold_33_1",
+              "level": 33,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 501192,
+          "sourceKey": "building_barracks_32_3",
+          "sequence": 12,
+          "targetNuclearLevel": 3,
+          "step": 2,
+          "level": 32,
+          "rank": 2,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 168,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501249,
+              "buildingId": 800005,
+              "code": "building_stronghold_33_1",
+              "level": 33,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 501193,
+          "sourceKey": "building_barracks_32_4",
+          "sequence": 13,
+          "targetNuclearLevel": 3,
+          "step": 3,
+          "level": 32,
+          "rank": 3,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 168,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501249,
+              "buildingId": 800005,
+              "code": "building_stronghold_33_1",
+              "level": 33,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 501292,
+          "sourceKey": "building_barracks_32_5",
+          "sequence": 14,
+          "targetNuclearLevel": 3,
+          "step": 4,
+          "level": 32,
+          "rank": 4,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 168,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501249,
+              "buildingId": 800005,
+              "code": "building_stronghold_33_1",
+              "level": 33,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 501293,
+          "sourceKey": "building_barracks_33_1",
+          "sequence": 15,
+          "targetNuclearLevel": 3,
+          "step": 5,
+          "level": 33,
+          "rank": 0,
+          "completedNuclearLevel": 3,
+          "nuclearFuel": 168,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501249,
+              "buildingId": 800005,
+              "code": "building_stronghold_33_1",
+              "level": 33,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        }
+      ],
+      "image": {
+        "nativeKey": "sp_citybuilding_barracks_lv0",
+        "src": "/img/nuclear-age/barracks.webp",
+        "width": 240,
+        "height": 240,
+        "bytes": 47568,
+        "sha256": "900d483195514f50ee5987a484c047aff93327edd40c866fce03e5865596cc70",
+        "sourcePNG_SHA256": "582e0aeee190e5c9d2e1d77ddc8db3474704ee6666e9ce264006990de9487fb3",
+        "sourceBundleSHA256": "e46d6e749cfedb5f07bfe49d3c9a4d86f189c97dd85f85818d7d30a940e1d2a3",
+        "assetId": 55650,
+        "bundleId": 207824,
+        "sourceCRC32": 3146524485,
+        "losslessPixelEquality": true
+      }
+    },
+    {
+      "id": 800008,
+      "code": "range",
+      "nameKey": "barracks_name_2",
+      "names": {
+        "en": "Barracks 2",
+        "ko": "2호 병영",
+        "ja": "兵舎2",
+        "zh-tw": "2號兵營",
+        "de": "Kaserne 2",
+        "ru": "Казарма 2",
+        "zh-cn": "2号兵营",
+        "ar": "Barracks 2",
+        "nl": "Kazerne 2",
+        "fr": "Caserne 2",
+        "id": "Barak 2",
+        "it": "Caserma 2",
+        "pl": "Koszary 2",
+        "pt": "Quartel 2",
+        "es": "Barracas 2",
+        "sv": "Baracker 2",
+        "th": "ทหารค่ายที่ 2",
+        "tr": "2. Kışla",
+        "vi": "Barracks 2",
+        "ms": "Barak 2",
+        "nb": "Barracks 2"
+      },
+      "nameEvidence": {
+        "en": "official-client",
+        "ko": "official-client",
+        "ja": "official-client",
+        "zh-tw": "official-client",
+        "de": "official-client",
+        "ru": "official-client",
+        "zh-cn": "official-client",
+        "ar": "english-fallback",
+        "nl": "official-client",
+        "fr": "official-client",
+        "id": "official-client",
+        "it": "official-client",
+        "pl": "official-client",
+        "pt": "official-client",
+        "es": "official-client",
+        "sv": "official-client",
+        "th": "official-client",
+        "tr": "official-client",
+        "vi": "english-fallback",
+        "ms": "official-client",
+        "nb": "english-fallback"
+      },
+      "nativeImage": "sp_citybuilding_barracks_lv0",
+      "scope": "official-initial-release-building-types",
+      "stages": [
+        {
+          "sourceId": 501087,
+          "sourceKey": "building_range_30_2",
+          "sequence": 1,
+          "targetNuclearLevel": 1,
+          "step": 1,
+          "level": 30,
+          "rank": 1,
+          "completedNuclearLevel": 0,
+          "nuclearFuel": 40,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501054,
+              "buildingId": 800005,
+              "code": "building_stronghold_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": "building_level_upper_limit_time_33"
+        },
+        {
+          "sourceId": 501088,
+          "sourceKey": "building_range_30_3",
+          "sequence": 2,
+          "targetNuclearLevel": 1,
+          "step": 2,
+          "level": 30,
+          "rank": 2,
+          "completedNuclearLevel": 0,
+          "nuclearFuel": 56,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501054,
+              "buildingId": 800005,
+              "code": "building_stronghold_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 501089,
+          "sourceKey": "building_range_30_4",
+          "sequence": 3,
+          "targetNuclearLevel": 1,
+          "step": 3,
+          "level": 30,
+          "rank": 3,
+          "completedNuclearLevel": 0,
+          "nuclearFuel": 72,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501054,
+              "buildingId": 800005,
+              "code": "building_stronghold_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 501258,
+          "sourceKey": "building_range_30_5",
+          "sequence": 4,
+          "targetNuclearLevel": 1,
+          "step": 4,
+          "level": 30,
+          "rank": 4,
+          "completedNuclearLevel": 0,
+          "nuclearFuel": 88,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501054,
+              "buildingId": 800005,
+              "code": "building_stronghold_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 501090,
+          "sourceKey": "building_range_31_1",
+          "sequence": 5,
+          "targetNuclearLevel": 1,
+          "step": 5,
+          "level": 31,
+          "rank": 0,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 104,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501054,
+              "buildingId": 800005,
+              "code": "building_stronghold_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 501091,
+          "sourceKey": "building_range_31_2",
+          "sequence": 6,
+          "targetNuclearLevel": 2,
+          "step": 1,
+          "level": 31,
+          "rank": 1,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 120,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501058,
+              "buildingId": 800005,
+              "code": "building_stronghold_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 501092,
+          "sourceKey": "building_range_31_3",
+          "sequence": 7,
+          "targetNuclearLevel": 2,
+          "step": 2,
+          "level": 31,
+          "rank": 2,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 136,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501058,
+              "buildingId": 800005,
+              "code": "building_stronghold_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 501093,
+          "sourceKey": "building_range_31_4",
+          "sequence": 8,
+          "targetNuclearLevel": 2,
+          "step": 3,
+          "level": 31,
+          "rank": 3,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 152,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501058,
+              "buildingId": 800005,
+              "code": "building_stronghold_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 501259,
+          "sourceKey": "building_range_31_5",
+          "sequence": 9,
+          "targetNuclearLevel": 2,
+          "step": 4,
+          "level": 31,
+          "rank": 4,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 168,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501058,
+              "buildingId": 800005,
+              "code": "building_stronghold_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 501094,
+          "sourceKey": "building_range_32_1",
+          "sequence": 10,
+          "targetNuclearLevel": 2,
+          "step": 5,
+          "level": 32,
+          "rank": 0,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 168,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501058,
+              "buildingId": 800005,
+              "code": "building_stronghold_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 501095,
+          "sourceKey": "building_range_32_2",
+          "sequence": 11,
+          "targetNuclearLevel": 3,
+          "step": 1,
+          "level": 32,
+          "rank": 1,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 168,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501249,
+              "buildingId": 800005,
+              "code": "building_stronghold_33_1",
+              "level": 33,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 501096,
+          "sourceKey": "building_range_32_3",
+          "sequence": 12,
+          "targetNuclearLevel": 3,
+          "step": 2,
+          "level": 32,
+          "rank": 2,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 168,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501249,
+              "buildingId": 800005,
+              "code": "building_stronghold_33_1",
+              "level": 33,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 501097,
+          "sourceKey": "building_range_32_4",
+          "sequence": 13,
+          "targetNuclearLevel": 3,
+          "step": 3,
+          "level": 32,
+          "rank": 3,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 168,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501249,
+              "buildingId": 800005,
+              "code": "building_stronghold_33_1",
+              "level": 33,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 501260,
+          "sourceKey": "building_range_32_5",
+          "sequence": 14,
+          "targetNuclearLevel": 3,
+          "step": 4,
+          "level": 32,
+          "rank": 4,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 168,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501249,
+              "buildingId": 800005,
+              "code": "building_stronghold_33_1",
+              "level": 33,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 501261,
+          "sourceKey": "building_range_33_1",
+          "sequence": 15,
+          "targetNuclearLevel": 3,
+          "step": 5,
+          "level": 33,
+          "rank": 0,
+          "completedNuclearLevel": 3,
+          "nuclearFuel": 168,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501249,
+              "buildingId": 800005,
+              "code": "building_stronghold_33_1",
+              "level": 33,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        }
+      ],
+      "image": {
+        "nativeKey": "sp_citybuilding_barracks_lv0",
+        "src": "/img/nuclear-age/barracks.webp",
+        "width": 240,
+        "height": 240,
+        "bytes": 47568,
+        "sha256": "900d483195514f50ee5987a484c047aff93327edd40c866fce03e5865596cc70",
+        "sourcePNG_SHA256": "582e0aeee190e5c9d2e1d77ddc8db3474704ee6666e9ce264006990de9487fb3",
+        "sourceBundleSHA256": "e46d6e749cfedb5f07bfe49d3c9a4d86f189c97dd85f85818d7d30a940e1d2a3",
+        "assetId": 55650,
+        "bundleId": 207824,
+        "sourceCRC32": 3146524485,
+        "losslessPixelEquality": true
+      }
+    },
+    {
+      "id": 800009,
+      "code": "stables",
+      "nameKey": "barracks_name_3",
+      "names": {
+        "en": "Barracks 3",
+        "ko": "3호 병영",
+        "ja": "兵舎3",
+        "zh-tw": "3號兵營",
+        "de": "Kaserne 3",
+        "ru": "Казарма 3",
+        "zh-cn": "3号兵营",
+        "ar": "Barracks 3",
+        "nl": "Kazerne 3",
+        "fr": "Caserne 3",
+        "id": "Barak 3",
+        "it": "Caserma 3",
+        "pl": "Koszary 3",
+        "pt": "Quartel 3",
+        "es": "Barracas 3",
+        "sv": "Baracker 3",
+        "th": "ค่ายทหาร 3",
+        "tr": "3. Kışla",
+        "vi": "Barracks 3",
+        "ms": "Barak 3",
+        "nb": "Barracks 3"
+      },
+      "nameEvidence": {
+        "en": "official-client",
+        "ko": "official-client",
+        "ja": "official-client",
+        "zh-tw": "official-client",
+        "de": "official-client",
+        "ru": "official-client",
+        "zh-cn": "official-client",
+        "ar": "english-fallback",
+        "nl": "official-client",
+        "fr": "official-client",
+        "id": "official-client",
+        "it": "official-client",
+        "pl": "official-client",
+        "pt": "official-client",
+        "es": "official-client",
+        "sv": "official-client",
+        "th": "official-client",
+        "tr": "official-client",
+        "vi": "english-fallback",
+        "ms": "official-client",
+        "nb": "english-fallback"
+      },
+      "nativeImage": "sp_citybuilding_barracks_lv0",
+      "scope": "official-initial-release-building-types",
+      "stages": [
+        {
+          "sourceId": 501075,
+          "sourceKey": "building_stables_30_2",
+          "sequence": 1,
+          "targetNuclearLevel": 1,
+          "step": 1,
+          "level": 30,
+          "rank": 1,
+          "completedNuclearLevel": 0,
+          "nuclearFuel": 40,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501054,
+              "buildingId": 800005,
+              "code": "building_stronghold_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": "building_level_upper_limit_time_33"
+        },
+        {
+          "sourceId": 501076,
+          "sourceKey": "building_stables_30_3",
+          "sequence": 2,
+          "targetNuclearLevel": 1,
+          "step": 2,
+          "level": 30,
+          "rank": 2,
+          "completedNuclearLevel": 0,
+          "nuclearFuel": 56,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501054,
+              "buildingId": 800005,
+              "code": "building_stronghold_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 501077,
+          "sourceKey": "building_stables_30_4",
+          "sequence": 3,
+          "targetNuclearLevel": 1,
+          "step": 3,
+          "level": 30,
+          "rank": 3,
+          "completedNuclearLevel": 0,
+          "nuclearFuel": 72,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501054,
+              "buildingId": 800005,
+              "code": "building_stronghold_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 501254,
+          "sourceKey": "building_stables_30_5",
+          "sequence": 4,
+          "targetNuclearLevel": 1,
+          "step": 4,
+          "level": 30,
+          "rank": 4,
+          "completedNuclearLevel": 0,
+          "nuclearFuel": 88,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501054,
+              "buildingId": 800005,
+              "code": "building_stronghold_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 501078,
+          "sourceKey": "building_stables_31_1",
+          "sequence": 5,
+          "targetNuclearLevel": 1,
+          "step": 5,
+          "level": 31,
+          "rank": 0,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 104,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501054,
+              "buildingId": 800005,
+              "code": "building_stronghold_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 501079,
+          "sourceKey": "building_stables_31_2",
+          "sequence": 6,
+          "targetNuclearLevel": 2,
+          "step": 1,
+          "level": 31,
+          "rank": 1,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 120,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501058,
+              "buildingId": 800005,
+              "code": "building_stronghold_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 501080,
+          "sourceKey": "building_stables_31_3",
+          "sequence": 7,
+          "targetNuclearLevel": 2,
+          "step": 2,
+          "level": 31,
+          "rank": 2,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 136,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501058,
+              "buildingId": 800005,
+              "code": "building_stronghold_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 501081,
+          "sourceKey": "building_stables_31_4",
+          "sequence": 8,
+          "targetNuclearLevel": 2,
+          "step": 3,
+          "level": 31,
+          "rank": 3,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 152,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501058,
+              "buildingId": 800005,
+              "code": "building_stronghold_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 501255,
+          "sourceKey": "building_stables_31_5",
+          "sequence": 9,
+          "targetNuclearLevel": 2,
+          "step": 4,
+          "level": 31,
+          "rank": 4,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 168,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501058,
+              "buildingId": 800005,
+              "code": "building_stronghold_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 501082,
+          "sourceKey": "building_stables_32_1",
+          "sequence": 10,
+          "targetNuclearLevel": 2,
+          "step": 5,
+          "level": 32,
+          "rank": 0,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 168,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501058,
+              "buildingId": 800005,
+              "code": "building_stronghold_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 501083,
+          "sourceKey": "building_stables_32_2",
+          "sequence": 11,
+          "targetNuclearLevel": 3,
+          "step": 1,
+          "level": 32,
+          "rank": 1,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 168,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501249,
+              "buildingId": 800005,
+              "code": "building_stronghold_33_1",
+              "level": 33,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 501084,
+          "sourceKey": "building_stables_32_3",
+          "sequence": 12,
+          "targetNuclearLevel": 3,
+          "step": 2,
+          "level": 32,
+          "rank": 2,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 168,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501249,
+              "buildingId": 800005,
+              "code": "building_stronghold_33_1",
+              "level": 33,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 501085,
+          "sourceKey": "building_stables_32_4",
+          "sequence": 13,
+          "targetNuclearLevel": 3,
+          "step": 3,
+          "level": 32,
+          "rank": 3,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 168,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501249,
+              "buildingId": 800005,
+              "code": "building_stronghold_33_1",
+              "level": 33,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 501256,
+          "sourceKey": "building_stables_32_5",
+          "sequence": 14,
+          "targetNuclearLevel": 3,
+          "step": 4,
+          "level": 32,
+          "rank": 4,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 168,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501249,
+              "buildingId": 800005,
+              "code": "building_stronghold_33_1",
+              "level": 33,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 501257,
+          "sourceKey": "building_stables_33_1",
+          "sequence": 15,
+          "targetNuclearLevel": 3,
+          "step": 5,
+          "level": 33,
+          "rank": 0,
+          "completedNuclearLevel": 3,
+          "nuclearFuel": 168,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501249,
+              "buildingId": 800005,
+              "code": "building_stronghold_33_1",
+              "level": 33,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        }
+      ],
+      "image": {
+        "nativeKey": "sp_citybuilding_barracks_lv0",
+        "src": "/img/nuclear-age/barracks.webp",
+        "width": 240,
+        "height": 240,
+        "bytes": 47568,
+        "sha256": "900d483195514f50ee5987a484c047aff93327edd40c866fce03e5865596cc70",
+        "sourcePNG_SHA256": "582e0aeee190e5c9d2e1d77ddc8db3474704ee6666e9ce264006990de9487fb3",
+        "sourceBundleSHA256": "e46d6e749cfedb5f07bfe49d3c9a4d86f189c97dd85f85818d7d30a940e1d2a3",
+        "assetId": 55650,
+        "bundleId": 207824,
+        "sourceCRC32": 3146524485,
+        "losslessPixelEquality": true
+      }
+    },
+    {
+      "id": 800010,
+      "code": "hospital",
+      "nameKey": "hospital_name",
+      "names": {
+        "en": "Hospital",
+        "ko": "병원",
+        "ja": "病院",
+        "zh-tw": "醫院",
+        "de": "Krankenhaus",
+        "ru": "Госпиталь",
+        "zh-cn": "医院",
+        "ar": "Hospital",
+        "nl": "Ziekenhuis",
+        "fr": "HÔPITAL",
+        "id": "Rumah Sakit",
+        "it": "Ospedale",
+        "pl": "Szpital",
+        "pt": "Hospital",
+        "es": "Hospital",
+        "sv": "Sjukhus",
+        "th": "โรงพยาบาล",
+        "tr": "Hastane",
+        "vi": "Hospital",
+        "ms": "Hospital",
+        "nb": "Hospital"
+      },
+      "nameEvidence": {
+        "en": "official-client",
+        "ko": "official-client",
+        "ja": "official-client",
+        "zh-tw": "official-client",
+        "de": "official-client",
+        "ru": "official-client",
+        "zh-cn": "official-client",
+        "ar": "english-fallback",
+        "nl": "official-client",
+        "fr": "official-client",
+        "id": "official-client",
+        "it": "official-client",
+        "pl": "official-client",
+        "pt": "official-client",
+        "es": "official-client",
+        "sv": "official-client",
+        "th": "official-client",
+        "tr": "official-client",
+        "vi": "english-fallback",
+        "ms": "official-client",
+        "nb": "english-fallback"
+      },
+      "nativeImage": "sp_city_building_hospital",
+      "scope": "official-initial-release-building-types",
+      "stages": [
+        {
+          "sourceId": 501147,
+          "sourceKey": "building_hospital_30_2",
+          "sequence": 1,
+          "targetNuclearLevel": 1,
+          "step": 1,
+          "level": 30,
+          "rank": 1,
+          "completedNuclearLevel": 0,
+          "nuclearFuel": 40,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501054,
+              "buildingId": 800005,
+              "code": "building_stronghold_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": "building_level_upper_limit_time_33"
+        },
+        {
+          "sourceId": 501148,
+          "sourceKey": "building_hospital_30_3",
+          "sequence": 2,
+          "targetNuclearLevel": 1,
+          "step": 2,
+          "level": 30,
+          "rank": 2,
+          "completedNuclearLevel": 0,
+          "nuclearFuel": 56,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501054,
+              "buildingId": 800005,
+              "code": "building_stronghold_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 501149,
+          "sourceKey": "building_hospital_30_4",
+          "sequence": 3,
+          "targetNuclearLevel": 1,
+          "step": 3,
+          "level": 30,
+          "rank": 3,
+          "completedNuclearLevel": 0,
+          "nuclearFuel": 72,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501054,
+              "buildingId": 800005,
+              "code": "building_stronghold_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 501278,
+          "sourceKey": "building_hospital_30_5",
+          "sequence": 4,
+          "targetNuclearLevel": 1,
+          "step": 4,
+          "level": 30,
+          "rank": 4,
+          "completedNuclearLevel": 0,
+          "nuclearFuel": 88,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501054,
+              "buildingId": 800005,
+              "code": "building_stronghold_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 501150,
+          "sourceKey": "building_hospital_31_1",
+          "sequence": 5,
+          "targetNuclearLevel": 1,
+          "step": 5,
+          "level": 31,
+          "rank": 0,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 104,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501054,
+              "buildingId": 800005,
+              "code": "building_stronghold_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 501151,
+          "sourceKey": "building_hospital_31_2",
+          "sequence": 6,
+          "targetNuclearLevel": 2,
+          "step": 1,
+          "level": 31,
+          "rank": 1,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 120,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501058,
+              "buildingId": 800005,
+              "code": "building_stronghold_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 501152,
+          "sourceKey": "building_hospital_31_3",
+          "sequence": 7,
+          "targetNuclearLevel": 2,
+          "step": 2,
+          "level": 31,
+          "rank": 2,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 136,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501058,
+              "buildingId": 800005,
+              "code": "building_stronghold_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 501153,
+          "sourceKey": "building_hospital_31_4",
+          "sequence": 8,
+          "targetNuclearLevel": 2,
+          "step": 3,
+          "level": 31,
+          "rank": 3,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 152,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501058,
+              "buildingId": 800005,
+              "code": "building_stronghold_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 501279,
+          "sourceKey": "building_hospital_31_5",
+          "sequence": 9,
+          "targetNuclearLevel": 2,
+          "step": 4,
+          "level": 31,
+          "rank": 4,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 168,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501058,
+              "buildingId": 800005,
+              "code": "building_stronghold_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 501154,
+          "sourceKey": "building_hospital_32_1",
+          "sequence": 10,
+          "targetNuclearLevel": 2,
+          "step": 5,
+          "level": 32,
+          "rank": 0,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 168,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501058,
+              "buildingId": 800005,
+              "code": "building_stronghold_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 501155,
+          "sourceKey": "building_hospital_32_2",
+          "sequence": 11,
+          "targetNuclearLevel": 3,
+          "step": 1,
+          "level": 32,
+          "rank": 1,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 168,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501249,
+              "buildingId": 800005,
+              "code": "building_stronghold_33_1",
+              "level": 33,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 501156,
+          "sourceKey": "building_hospital_32_3",
+          "sequence": 12,
+          "targetNuclearLevel": 3,
+          "step": 2,
+          "level": 32,
+          "rank": 2,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 168,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501249,
+              "buildingId": 800005,
+              "code": "building_stronghold_33_1",
+              "level": 33,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 501157,
+          "sourceKey": "building_hospital_32_4",
+          "sequence": 13,
+          "targetNuclearLevel": 3,
+          "step": 3,
+          "level": 32,
+          "rank": 3,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 168,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501249,
+              "buildingId": 800005,
+              "code": "building_stronghold_33_1",
+              "level": 33,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 501280,
+          "sourceKey": "building_hospital_32_5",
+          "sequence": 14,
+          "targetNuclearLevel": 3,
+          "step": 4,
+          "level": 32,
+          "rank": 4,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 168,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501249,
+              "buildingId": 800005,
+              "code": "building_stronghold_33_1",
+              "level": 33,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 501281,
+          "sourceKey": "building_hospital_33_1",
+          "sequence": 15,
+          "targetNuclearLevel": 3,
+          "step": 5,
+          "level": 33,
+          "rank": 0,
+          "completedNuclearLevel": 3,
+          "nuclearFuel": 168,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501249,
+              "buildingId": 800005,
+              "code": "building_stronghold_33_1",
+              "level": 33,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        }
+      ],
+      "image": {
+        "nativeKey": "sp_city_building_hospital",
+        "src": "/img/nuclear-age/hospital.webp",
+        "width": 240,
+        "height": 240,
+        "bytes": 52052,
+        "sha256": "8cbf5b86c65c6850e9e300157a2245bcd710f9b97bac5be426b2b34cdd41927d",
+        "sourcePNG_SHA256": "f8db33e135af452f1ad67ea184e452e2f0ac5991aff1b38df91f320b171f90d5",
+        "sourceBundleSHA256": "e46d6e749cfedb5f07bfe49d3c9a4d86f189c97dd85f85818d7d30a940e1d2a3",
+        "assetId": 55564,
+        "bundleId": 207824,
+        "sourceCRC32": 3146524485,
+        "losslessPixelEquality": true
+      }
+    }
+  ],
+  "factory": {
+    "id": 800419,
+    "code": "nuclear_plant",
+    "nameKey": "nuclear_fuel_plant",
+    "names": {
+      "en": "Nuclear Fuel Factory",
+      "ko": "핵연료 공장",
+      "ja": "核燃料工場",
+      "zh-tw": "核燃料工廠",
+      "de": "Kernbrennstofffabrik",
+      "ru": "Завод по производству ядерного топлива",
+      "zh-cn": "核燃料工厂",
+      "ar": "Nuclear Fuel Factory",
+      "nl": "Nucleaire-brandstoffabriek",
+      "fr": "Usine de combustible nucléaire",
+      "id": "Pabrik Bahan Bakar Nuklir",
+      "it": "Fabbrica di combustibile nucleare",
+      "pl": "Fabryka paliwa jądrowego",
+      "pt": "Fábrica de Combustível Nuclear",
+      "es": "Fábrica de combustible nuclear",
+      "sv": "Kärnbränslefabrik",
+      "th": "โรงงานเชื้อเพลิงนิวเคลียร์",
+      "tr": "Nükleer Yakıt Fabrikası",
+      "vi": "Nuclear Fuel Factory",
+      "ms": "Kilang Bahan Api Nuklear",
+      "nb": "Nuclear Fuel Factory"
+    },
+    "nameEvidence": {
+      "en": "official-client",
+      "ko": "official-client",
+      "ja": "official-client",
+      "zh-tw": "official-client",
+      "de": "official-client",
+      "ru": "official-client",
+      "zh-cn": "official-client",
+      "ar": "english-fallback",
+      "nl": "official-client",
+      "fr": "official-client",
+      "id": "official-client",
+      "it": "official-client",
+      "pl": "official-client",
+      "pt": "official-client",
+      "es": "official-client",
+      "sv": "official-client",
+      "th": "official-client",
+      "tr": "official-client",
+      "vi": "english-fallback",
+      "ms": "official-client",
+      "nb": "english-fallback"
+    },
+    "nativeImage": "sp_citybuilding_nuclear_plant",
+    "producedItemId": 210658,
+    "productionRate": null,
+    "productionRateStatus": "profile-selection-not-currently-corroborated",
+    "levels": [
+      {
+        "sourceId": 507644,
+        "sourceKey": "building_nuclear_plant_1",
+        "level": 1,
+        "nuclearFuel": null,
+        "nuclearFuelStatus": "unconfirmed-null-source",
+        "requiredBuildings": [
+          {
+            "id": 500236,
+            "buildingId": 800005,
+            "code": "building_stronghold_30",
+            "level": 30,
+            "rank": 0
+          }
+        ]
+      },
+      {
+        "sourceId": 507645,
+        "sourceKey": "building_nuclear_plant_2",
+        "level": 2,
+        "nuclearFuel": 5,
+        "nuclearFuelStatus": "verified-configured-requirement",
+        "requiredBuildings": [
+          {
+            "id": 500236,
+            "buildingId": 800005,
+            "code": "building_stronghold_30",
+            "level": 30,
+            "rank": 0
+          }
+        ]
+      },
+      {
+        "sourceId": 507646,
+        "sourceKey": "building_nuclear_plant_3",
+        "level": 3,
+        "nuclearFuel": 10,
+        "nuclearFuelStatus": "verified-configured-requirement",
+        "requiredBuildings": [
+          {
+            "id": 500236,
+            "buildingId": 800005,
+            "code": "building_stronghold_30",
+            "level": 30,
+            "rank": 0
+          }
+        ]
+      },
+      {
+        "sourceId": 507647,
+        "sourceKey": "building_nuclear_plant_4",
+        "level": 4,
+        "nuclearFuel": 15,
+        "nuclearFuelStatus": "verified-configured-requirement",
+        "requiredBuildings": [
+          {
+            "id": 501054,
+            "buildingId": 800005,
+            "code": "building_stronghold_31_1",
+            "level": 31,
+            "rank": 0
+          }
+        ]
+      },
+      {
+        "sourceId": 507648,
+        "sourceKey": "building_nuclear_plant_5",
+        "level": 5,
+        "nuclearFuel": 20,
+        "nuclearFuelStatus": "verified-configured-requirement",
+        "requiredBuildings": [
+          {
+            "id": 501054,
+            "buildingId": 800005,
+            "code": "building_stronghold_31_1",
+            "level": 31,
+            "rank": 0
+          }
+        ]
+      },
+      {
+        "sourceId": 507649,
+        "sourceKey": "building_nuclear_plant_6",
+        "level": 6,
+        "nuclearFuel": 30,
+        "nuclearFuelStatus": "verified-configured-requirement",
+        "requiredBuildings": [
+          {
+            "id": 501054,
+            "buildingId": 800005,
+            "code": "building_stronghold_31_1",
+            "level": 31,
+            "rank": 0
+          }
+        ]
+      },
+      {
+        "sourceId": 507650,
+        "sourceKey": "building_nuclear_plant_7",
+        "level": 7,
+        "nuclearFuel": 40,
+        "nuclearFuelStatus": "verified-configured-requirement",
+        "requiredBuildings": [
+          {
+            "id": 501058,
+            "buildingId": 800005,
+            "code": "building_stronghold_32_1",
+            "level": 32,
+            "rank": 0
+          }
+        ]
+      },
+      {
+        "sourceId": 507651,
+        "sourceKey": "building_nuclear_plant_8",
+        "level": 8,
+        "nuclearFuel": 50,
+        "nuclearFuelStatus": "verified-configured-requirement",
+        "requiredBuildings": [
+          {
+            "id": 501058,
+            "buildingId": 800005,
+            "code": "building_stronghold_32_1",
+            "level": 32,
+            "rank": 0
+          }
+        ]
+      },
+      {
+        "sourceId": 507652,
+        "sourceKey": "building_nuclear_plant_9",
+        "level": 9,
+        "nuclearFuel": 60,
+        "nuclearFuelStatus": "verified-configured-requirement",
+        "requiredBuildings": [
+          {
+            "id": 501058,
+            "buildingId": 800005,
+            "code": "building_stronghold_32_1",
+            "level": 32,
+            "rank": 0
+          }
+        ]
+      },
+      {
+        "sourceId": 507653,
+        "sourceKey": "building_nuclear_plant_10",
+        "level": 10,
+        "nuclearFuel": 70,
+        "nuclearFuelStatus": "verified-configured-requirement",
+        "requiredBuildings": [
+          {
+            "id": 501249,
+            "buildingId": 800005,
+            "code": "building_stronghold_33_1",
+            "level": 33,
+            "rank": 0
+          }
+        ]
+      },
+      {
+        "sourceId": 507654,
+        "sourceKey": "building_nuclear_plant_11",
+        "level": 11,
+        "nuclearFuel": 80,
+        "nuclearFuelStatus": "verified-configured-requirement",
+        "requiredBuildings": [
+          {
+            "id": 501249,
+            "buildingId": 800005,
+            "code": "building_stronghold_33_1",
+            "level": 33,
+            "rank": 0
+          }
+        ]
+      },
+      {
+        "sourceId": 507655,
+        "sourceKey": "building_nuclear_plant_12",
+        "level": 12,
+        "nuclearFuel": 100,
+        "nuclearFuelStatus": "verified-configured-requirement",
+        "requiredBuildings": [
+          {
+            "id": 501249,
+            "buildingId": 800005,
+            "code": "building_stronghold_33_1",
+            "level": 33,
+            "rank": 0
+          }
+        ]
+      }
+    ],
+    "image": {
+      "nativeKey": "sp_citybuilding_nuclear_plant",
+      "src": "/img/nuclear-age/fuel-factory.webp",
+      "width": 240,
+      "height": 240,
+      "bytes": 44050,
+      "sha256": "7cda3ca2ac54d4f50a3774b0b219faa8299f65289d6290d50c06bd78debfff60",
+      "sourcePNG_SHA256": "49cd0df9a1e1b074995af3ceaac928a9669ef16f54d11391474ab8aa74f686cf",
+      "sourceBundleSHA256": "e46d6e749cfedb5f07bfe49d3c9a4d86f189c97dd85f85818d7d30a940e1d2a3",
+      "assetId": 55882,
+      "bundleId": 207824,
+      "sourceCRC32": 3146524485,
+      "losslessPixelEquality": true
+    }
+  },
+  "troops": {
+    "barracksIds": [
+      800007,
+      800008,
+      800009
+    ],
+    "aggregationRule": null,
+    "aggregationStatus": "combined-barracks-contribution-confirmed-by-handbook-exact-native-sum-not-proven",
+    "stars": [
+      {
+        "sourceId": 198200001,
+        "sourceKey": "soldier_star_1",
+        "star": 1,
+        "display": {
+          "power": 3,
+          "attack": 2,
+          "defense": 1,
+          "health": 0
+        },
+        "skill": null
+      },
+      {
+        "sourceId": 198200002,
+        "sourceKey": "soldier_star_2",
+        "star": 2,
+        "display": {
+          "power": 6,
+          "attack": 4,
+          "defense": 1,
+          "health": 1
+        },
+        "skill": null
+      },
+      {
+        "sourceId": 198200003,
+        "sourceKey": "soldier_star_3",
+        "star": 3,
+        "display": {
+          "power": 9,
+          "attack": 6,
+          "defense": 2,
+          "health": 1
+        },
+        "skill": null
+      },
+      {
+        "sourceId": 198200004,
+        "sourceKey": "soldier_star_4",
+        "star": 4,
+        "display": {
+          "power": 12,
+          "attack": 8,
+          "defense": 2,
+          "health": 2
+        },
+        "skill": null
+      },
+      {
+        "sourceId": 198200005,
+        "sourceKey": "soldier_star_5",
+        "star": 5,
+        "display": {
+          "power": 15,
+          "attack": 10,
+          "defense": 3,
+          "health": 2
+        },
+        "skill": null
+      },
+      {
+        "sourceId": 198200006,
+        "sourceKey": "soldier_star_6",
+        "star": 6,
+        "display": {
+          "power": 18,
+          "attack": 12,
+          "defense": 3,
+          "health": 3
+        },
+        "skill": null
+      },
+      {
+        "sourceId": 198200007,
+        "sourceKey": "soldier_star_7",
+        "star": 7,
+        "display": {
+          "power": 21,
+          "attack": 14,
+          "defense": 4,
+          "health": 3
+        },
+        "skill": null
+      },
+      {
+        "sourceId": 198200008,
+        "sourceKey": "soldier_star_8",
+        "star": 8,
+        "display": {
+          "power": 24,
+          "attack": 16,
+          "defense": 4,
+          "health": 4
+        },
+        "skill": null
+      },
+      {
+        "sourceId": 198200009,
+        "sourceKey": "soldier_star_9",
+        "star": 9,
+        "display": {
+          "power": 27,
+          "attack": 18,
+          "defense": 5,
+          "health": 4
+        },
+        "skill": {
+          "nameKey": "soldier_star_skill_1_title",
+          "names": {
+            "en": "Nuclear Ray",
+            "ko": "원자력 광선",
+            "ja": "ニュークリアレイ",
+            "zh-tw": "核能射線",
+            "de": "Nuklearstrahl",
+            "ru": "Ядерный луч",
+            "zh-cn": "核能射线",
+            "ar": "Nuclear Ray",
+            "nl": "Nucleaire straal",
+            "fr": "Rayon nucléaire",
+            "id": "Sinar Nuklir",
+            "it": "Raggio nucleare",
+            "pl": "Promień jądrowy",
+            "pt": "Raio Nuclear",
+            "es": "Rayo nuclear",
+            "sv": "Kärnstråle",
+            "th": "รังสีนิวเคลียร์",
+            "tr": "Nükleer Işın",
+            "vi": "Nuclear Ray",
+            "ms": "Pancaran Nuklear",
+            "nb": "Nuclear Ray"
+          },
+          "descriptionKey": "soldier_star_skill_1_des",
+          "descriptionTemplates": {
+            "en": "Fire a Nuclear Ray to increase troop damage by {0}.",
+            "ko": "원자력 광선을 발사하고 병사의 대미지를 {0} 증가시킵니다.",
+            "ja": "核エネルギーの光線を放ち、兵士が与えるダメージを{0}増加させます",
+            "zh-tw": "發射核能射線，士兵獲得{0}傷害提升。",
+            "de": "Feuere einen Nuklearstrahl ab, um den Schaden deiner Truppen um {0} zu erhöhen.",
+            "ru": "Выпускает ядерный луч, увеличивая урон отрядов на {0}.",
+            "zh-cn": "发射核能射线，士兵获得{0}伤害提升。",
+            "ar": "Fire a Nuclear Ray to increase troop damage by {0}.",
+            "nl": "Vuur een nucleaire straal af om de troepenschade met {0} te verhogen.",
+            "fr": "Lancez un rayon nucléaire pour augmenter les dégâts infligés par vos troupes de {0}.",
+            "id": "Tembakkan Sinar Nuklir untuk meningkatkan damage pasukan sebesar {0}.",
+            "it": "Spara un raggio nucleare per aumentare il danno delle truppe di {0}.",
+            "pl": "Wystrzel promień nuklearny, zwiększając obrażenia żołnierzy o {0}.",
+            "pt": "Dispare um Raio Nuclear para aumentar o dano das tropas em {0}.",
+            "es": "Dispara un rayo nuclear que aumenta el daño de las tropas en {0}.",
+            "sv": "Avfyra en kärnstråle för att öka truppskadan med {0}.",
+            "th": "ยิงรังสีนิวเคลียร์เพื่อเพิ่มแดเมจกองกำลังขึ้น {0}",
+            "tr": "Bir Nükleer Işın atarak Birlik hasarını {0} artır.",
+            "vi": "Fire a Nuclear Ray to increase troop damage by {0}.",
+            "ms": "Lepaskan Pancaran Nuklear untuk meningkatkan kerosakan pasukan sebanyak {0}.",
+            "nb": "Fire a Nuclear Ray to increase troop damage by {0}."
+          },
+          "level": 1,
+          "nativeIcon": "sp_icon_troop_skill_1",
+          "value": 0.05,
+          "valueType": "percent-fraction",
+          "displayValue": "5%",
+          "evidence": "fresh-lua-TroopStarInfoCell-format-percent",
+          "icon": {
+            "nativeKey": "sp_icon_troop_skill_1",
+            "src": "/img/nuclear-age/nuclear-ray.webp",
+            "width": 128,
+            "height": 128,
+            "bytes": 19550,
+            "sha256": "b71f40a61f86bfb0b8b66a852de98ca4511ac561f41ef96c1c84be7e087c583f",
+            "sourcePNG_SHA256": "25ed442563142e9083f12dc63733ed8450230fc630e23ab1ed57ee8df31f9deb",
+            "sourceBundleSHA256": "ed30fec603767f9d611c0375a6a6181c2aa5df0e53a07d7fda7ec22ce84156be",
+            "assetId": 64054,
+            "bundleId": 207557,
+            "sourceCRC32": 1974641433,
+            "losslessPixelEquality": true
+          }
+        }
+      }
+    ]
+  },
+  "rules": {
+    "fuelUsedForUpgrades": true,
+    "fuelConsumedEvidence": [
+      "official-announcement-en-1213",
+      "official-announcement-ko-1218",
+      "client-ko-building_level_star_cancel_hq_upgrade_confirm"
+    ],
+    "cancelFuelRefund": false,
+    "cancelFuelRefundEvidence": "client-ko-building_level_star_cancel_hq_upgrade_confirm",
+    "requiredItemUseEvidence": "fresh-lua-BuildingSocRepairUIMediator-119-139-149-155-191-207",
+    "fuelPlannerMode": "known-configured-requirement-subtotal",
+    "missingRequirementIsZero": false,
+    "resourceCostsIncluded": false,
+    "buildTimesIncluded": false,
+    "productionRatesIncluded": false
+  },
+  "official": {
+    "en": "https://tilesurvivegame.com/en/blog/1221",
+    "ko": "https://tilesurvivegame.com/ko/blog/1226",
+    "initialScopeEn": "https://tilesurvivegame.com/en/blog/1213",
+    "initialScopeKo": "https://tilesurvivegame.com/ko/blog/1218",
+    "releaseDate": "2026-11-05"
+  },
+  "localization": {
+    "sourceLanguages": [
+      "en",
+      "ko",
+      "ja",
+      "zh-tw",
+      "de",
+      "ru",
+      "zh-cn",
+      "nl",
+      "fr",
+      "id",
+      "it",
+      "pl",
+      "pt",
+      "es",
+      "sv",
+      "th",
+      "tr",
+      "ms"
+    ],
+    "sources": {
+      "en": {
+        "cohort": "ingame-apk-en",
+        "sha256": "040d78a48d6ec7b033e5f813c6fb255da0bd7b40a98609a5f75a614c87a44954",
+        "official": true
+      },
+      "ko": {
+        "cohort": "ingame-cache-ko",
+        "sha256": "ba44b67fb1377aed85636743ac1f07e27ec6dea59afa6698bd0cafda65aff35f",
+        "official": true
+      },
+      "ja": {
+        "cohort": "ingame-apk-ja",
+        "sha256": "c0216f3f8d7b5018ad5b16197475355f1c33126a78132e612570075749247493",
+        "official": true
+      },
+      "zh-tw": {
+        "cohort": "ingame-apk-zh-tw",
+        "sha256": "b7995be79a9aaa29ab3cce061a3619e09cc06826a33c2805be46d46fb31f7720",
+        "official": true
+      },
+      "de": {
+        "cohort": "ingame-apk-de",
+        "sha256": "d49d513a50b5e68a11fec453ba7575cc844066d8714ed50840011f28371e558c",
+        "official": true
+      },
+      "ru": {
+        "cohort": "ingame-apk-ru",
+        "sha256": "e7408e3c7b3d2325f88513af5283bbf9ab308738719a1827259f08bd6fb25646",
+        "official": true
+      },
+      "zh-cn": {
+        "cohort": "ingame-apk-zh-cn",
+        "sha256": "0a62856a900cece53791d426248b684764a3609a636ca27701291ae788a13328",
+        "official": true
+      },
+      "nl": {
+        "cohort": "ingame-apk-nl",
+        "sha256": "4b30401d78721cb1a33e83efb41f6ee4b7155bca41317480342c850d64e33be4",
+        "official": true
+      },
+      "fr": {
+        "cohort": "ingame-apk-fr",
+        "sha256": "18251532b152839018e7d46ec8f44df49d0b66fa710a2493b1d36445032110af",
+        "official": true
+      },
+      "id": {
+        "cohort": "ingame-apk-id",
+        "sha256": "0a2e2805f39067b09f254bbabb6b289d11bbe11dbde4815d9df4338cbd88916b",
+        "official": true
+      },
+      "it": {
+        "cohort": "ingame-apk-it",
+        "sha256": "91bc23412ed10c26fed7332febe4e7748ecb9c1c1a5fca2627671050c2a350bd",
+        "official": true
+      },
+      "pl": {
+        "cohort": "ingame-apk-pl",
+        "sha256": "7e66c167e453bc239d8482c8c9bb6344089c923d87bc2eee02bcdd0e6c769e83",
+        "official": true
+      },
+      "pt": {
+        "cohort": "ingame-apk-pt",
+        "sha256": "40de8cab62e293d1ce10df5a1418f78a9c45300c5cc1a9f52cfb08eb3753521e",
+        "official": true
+      },
+      "es": {
+        "cohort": "ingame-apk-es",
+        "sha256": "d6eada4bdf67393a1cedd77dba9935e29d111d299886762478493285680a6c14",
+        "official": true
+      },
+      "sv": {
+        "cohort": "ingame-apk-sv",
+        "sha256": "3d9dd876e5251f7858b978eeeec1a99684011b76c3253213ce57ec8a8cf106af",
+        "official": true
+      },
+      "th": {
+        "cohort": "ingame-apk-th",
+        "sha256": "1af8650b80b8cea5f4e8bb43b8bf691d000a65505c3e7b1f93c1bd2989515961",
+        "official": true
+      },
+      "tr": {
+        "cohort": "ingame-apk-tr",
+        "sha256": "dd92ce8d399e45d66a50255fc9d0043caa08f4fdc3dbdfe8a40a534d32a2947e",
+        "official": true
+      },
+      "ms": {
+        "cohort": "ingame-apk-my",
+        "sha256": "12d8dec9fb67795122b9c329d980292dcc38b1c48d1acea1eb1697e2d9131964",
+        "official": true
+      }
+    },
+    "fallback": "en"
+  },
+  "evidence": {
+    "lua": [
+      {
+        "file": "ota+custom_lua_module_b/BuildingSocRepairUIMediator.lua",
+        "sha256": "8ad9b250fcb47437dc2fce0e947f70eed9cc0968b698092310cb2f0cb265c2c0"
+      },
+      {
+        "file": "ota+custom_lua_module_b/StrongHoldUpgradeModule.lua",
+        "sha256": "c908083848f1c567fb1d76a1725694877a8409371a539201ad57fb0abe2c311d"
+      },
+      {
+        "file": "ota+custom_lua_module_march/BuildingLevelUpperComponent.lua",
+        "sha256": "8a15fbf73a16300de633e4eca4380570db952dc98d9cf71b4ab0570c83d6039d"
+      },
+      {
+        "file": "ota+custom_lua_module_titanb/TroopStarInfoCell.lua",
+        "sha256": "be061f9a7eb4ca100f621f36f27378f213cdf08dc515920034cc54ed7d200098"
+      }
+    ],
+    "currentIndexTables": 2051,
+    "currentIndexUnresolved": 0,
+    "buildingBaseVsShardRows": 6414,
+    "buildingBaseVsShardDifferent": 0,
+    "limitations": [
+      "Nuclear Fuel values are required item quantities from captured configuration. No account balance or actual debit was measured.",
+      "Null ReqItemSoc or ReqBuildingD stays unknown; it is never silently converted to zero or no prerequisite.",
+      "Base resources and construction times are excluded because fresh runtime profile selection has not been independently corroborated.",
+      "Configured level availability does not establish every State rollout date."
+    ]
+  },
+  "requiredBuildingNames": {
+    "800005": {
+      "id": 800005,
+      "code": "stronghold",
+      "nameKey": "building_electricity_panel_text_6_title",
+      "names": {
+        "en": "Power Plant",
+        "ko": "발전소",
+        "ja": "発電所",
+        "zh-tw": "發電廠",
+        "de": "Das Kraftwerk",
+        "ru": "Электростанция",
+        "zh-cn": "发电厂",
+        "ar": "Power Plant",
+        "nl": "Energiecentrale",
+        "fr": "Le Centre",
+        "id": "Pembangkit Listrik",
+        "it": "La Centrale",
+        "pl": "Elektrownia",
+        "pt": "A Usina",
+        "es": "La central eléctrica",
+        "sv": "Kraftverk",
+        "th": "โรงไฟฟ้า",
+        "tr": "Güç Santrali",
+        "vi": "Power Plant",
+        "ms": "Loji Kuasa",
+        "nb": "Power Plant"
+      },
+      "nameEvidence": {
+        "en": "official-client",
+        "ko": "official-client",
+        "ja": "official-client",
+        "zh-tw": "official-client",
+        "de": "official-client",
+        "ru": "official-client",
+        "zh-cn": "official-client",
+        "ar": "english-fallback",
+        "nl": "official-client",
+        "fr": "official-client",
+        "id": "official-client",
+        "it": "official-client",
+        "pl": "official-client",
+        "pt": "official-client",
+        "es": "official-client",
+        "sv": "official-client",
+        "th": "official-client",
+        "tr": "official-client",
+        "vi": "english-fallback",
+        "ms": "official-client",
+        "nb": "english-fallback"
+      }
+    },
+    "800007": {
+      "id": 800007,
+      "code": "barracks",
+      "nameKey": "barracks_name_1",
+      "names": {
+        "en": "Barracks 1",
+        "ko": "1호 병영",
+        "ja": "兵舎1",
+        "zh-tw": "1號兵營",
+        "de": "Kaserne 1",
+        "ru": "Казарма 1",
+        "zh-cn": "1号兵营",
+        "ar": "Barracks 1",
+        "nl": "Kazerne 1",
+        "fr": "Caserne 1",
+        "id": "Barak 1",
+        "it": "Caserma 1",
+        "pl": "Koszary 1",
+        "pt": "Quartel 1",
+        "es": "Barracas 1",
+        "sv": "Baracker 1",
+        "th": "ค่ายทหาร 1",
+        "tr": "1. Kışla",
+        "vi": "Barracks 1",
+        "ms": "Barak 1",
+        "nb": "Barracks 1"
+      },
+      "nameEvidence": {
+        "en": "official-client",
+        "ko": "official-client",
+        "ja": "official-client",
+        "zh-tw": "official-client",
+        "de": "official-client",
+        "ru": "official-client",
+        "zh-cn": "official-client",
+        "ar": "english-fallback",
+        "nl": "official-client",
+        "fr": "official-client",
+        "id": "official-client",
+        "it": "official-client",
+        "pl": "official-client",
+        "pt": "official-client",
+        "es": "official-client",
+        "sv": "official-client",
+        "th": "official-client",
+        "tr": "official-client",
+        "vi": "english-fallback",
+        "ms": "official-client",
+        "nb": "english-fallback"
+      }
+    },
+    "800008": {
+      "id": 800008,
+      "code": "range",
+      "nameKey": "barracks_name_2",
+      "names": {
+        "en": "Barracks 2",
+        "ko": "2호 병영",
+        "ja": "兵舎2",
+        "zh-tw": "2號兵營",
+        "de": "Kaserne 2",
+        "ru": "Казарма 2",
+        "zh-cn": "2号兵营",
+        "ar": "Barracks 2",
+        "nl": "Kazerne 2",
+        "fr": "Caserne 2",
+        "id": "Barak 2",
+        "it": "Caserma 2",
+        "pl": "Koszary 2",
+        "pt": "Quartel 2",
+        "es": "Barracas 2",
+        "sv": "Baracker 2",
+        "th": "ทหารค่ายที่ 2",
+        "tr": "2. Kışla",
+        "vi": "Barracks 2",
+        "ms": "Barak 2",
+        "nb": "Barracks 2"
+      },
+      "nameEvidence": {
+        "en": "official-client",
+        "ko": "official-client",
+        "ja": "official-client",
+        "zh-tw": "official-client",
+        "de": "official-client",
+        "ru": "official-client",
+        "zh-cn": "official-client",
+        "ar": "english-fallback",
+        "nl": "official-client",
+        "fr": "official-client",
+        "id": "official-client",
+        "it": "official-client",
+        "pl": "official-client",
+        "pt": "official-client",
+        "es": "official-client",
+        "sv": "official-client",
+        "th": "official-client",
+        "tr": "official-client",
+        "vi": "english-fallback",
+        "ms": "official-client",
+        "nb": "english-fallback"
+      }
+    },
+    "800009": {
+      "id": 800009,
+      "code": "stables",
+      "nameKey": "barracks_name_3",
+      "names": {
+        "en": "Barracks 3",
+        "ko": "3호 병영",
+        "ja": "兵舎3",
+        "zh-tw": "3號兵營",
+        "de": "Kaserne 3",
+        "ru": "Казарма 3",
+        "zh-cn": "3号兵营",
+        "ar": "Barracks 3",
+        "nl": "Kazerne 3",
+        "fr": "Caserne 3",
+        "id": "Barak 3",
+        "it": "Caserma 3",
+        "pl": "Koszary 3",
+        "pt": "Quartel 3",
+        "es": "Barracas 3",
+        "sv": "Baracker 3",
+        "th": "ค่ายทหาร 3",
+        "tr": "3. Kışla",
+        "vi": "Barracks 3",
+        "ms": "Barak 3",
+        "nb": "Barracks 3"
+      },
+      "nameEvidence": {
+        "en": "official-client",
+        "ko": "official-client",
+        "ja": "official-client",
+        "zh-tw": "official-client",
+        "de": "official-client",
+        "ru": "official-client",
+        "zh-cn": "official-client",
+        "ar": "english-fallback",
+        "nl": "official-client",
+        "fr": "official-client",
+        "id": "official-client",
+        "it": "official-client",
+        "pl": "official-client",
+        "pt": "official-client",
+        "es": "official-client",
+        "sv": "official-client",
+        "th": "official-client",
+        "tr": "official-client",
+        "vi": "english-fallback",
+        "ms": "official-client",
+        "nb": "english-fallback"
+      }
+    },
+    "800010": {
+      "id": 800010,
+      "code": "hospital",
+      "nameKey": "hospital_name",
+      "names": {
+        "en": "Hospital",
+        "ko": "병원",
+        "ja": "病院",
+        "zh-tw": "醫院",
+        "de": "Krankenhaus",
+        "ru": "Госпиталь",
+        "zh-cn": "医院",
+        "ar": "Hospital",
+        "nl": "Ziekenhuis",
+        "fr": "HÔPITAL",
+        "id": "Rumah Sakit",
+        "it": "Ospedale",
+        "pl": "Szpital",
+        "pt": "Hospital",
+        "es": "Hospital",
+        "sv": "Sjukhus",
+        "th": "โรงพยาบาล",
+        "tr": "Hastane",
+        "vi": "Hospital",
+        "ms": "Hospital",
+        "nb": "Hospital"
+      },
+      "nameEvidence": {
+        "en": "official-client",
+        "ko": "official-client",
+        "ja": "official-client",
+        "zh-tw": "official-client",
+        "de": "official-client",
+        "ru": "official-client",
+        "zh-cn": "official-client",
+        "ar": "english-fallback",
+        "nl": "official-client",
+        "fr": "official-client",
+        "id": "official-client",
+        "it": "official-client",
+        "pl": "official-client",
+        "pt": "official-client",
+        "es": "official-client",
+        "sv": "official-client",
+        "th": "official-client",
+        "tr": "official-client",
+        "vi": "english-fallback",
+        "ms": "official-client",
+        "nb": "english-fallback"
+      }
+    },
+    "800012": {
+      "id": 800012,
+      "code": "university",
+      "nameKey": "university_name",
+      "names": {
+        "en": "Lab 1",
+        "ko": "1번 실험실",
+        "ja": "実験室1",
+        "zh-tw": "1號實驗室",
+        "de": "Labor 1",
+        "ru": "Лаборатория 1",
+        "zh-cn": "1号实验室",
+        "ar": "Lab 1",
+        "nl": "Lab 1",
+        "fr": "Labo 1",
+        "id": "Lab 1",
+        "it": "Laboratorio 1",
+        "pl": "Laboratorium 1",
+        "pt": "Laboratório 1",
+        "es": "Laboratorio 1",
+        "sv": "Labb 1",
+        "th": "ห้องปฏิบัติการ 1",
+        "tr": "Lab 1",
+        "vi": "Lab 1",
+        "ms": "Makmal 1",
+        "nb": "Lab 1"
+      },
+      "nameEvidence": {
+        "en": "official-client",
+        "ko": "official-client",
+        "ja": "official-client",
+        "zh-tw": "official-client",
+        "de": "official-client",
+        "ru": "official-client",
+        "zh-cn": "official-client",
+        "ar": "english-fallback",
+        "nl": "official-client",
+        "fr": "official-client",
+        "id": "official-client",
+        "it": "official-client",
+        "pl": "official-client",
+        "pt": "official-client",
+        "es": "official-client",
+        "sv": "official-client",
+        "th": "official-client",
+        "tr": "official-client",
+        "vi": "english-fallback",
+        "ms": "official-client",
+        "nb": "english-fallback"
+      }
+    },
+    "800419": {
+      "id": 800419,
+      "code": "nuclear_plant",
+      "nameKey": "nuclear_fuel_plant",
+      "names": {
+        "en": "Nuclear Fuel Factory",
+        "ko": "핵연료 공장",
+        "ja": "核燃料工場",
+        "zh-tw": "核燃料工廠",
+        "de": "Kernbrennstofffabrik",
+        "ru": "Завод по производству ядерного топлива",
+        "zh-cn": "核燃料工厂",
+        "ar": "Nuclear Fuel Factory",
+        "nl": "Nucleaire-brandstoffabriek",
+        "fr": "Usine de combustible nucléaire",
+        "id": "Pabrik Bahan Bakar Nuklir",
+        "it": "Fabbrica di combustibile nucleare",
+        "pl": "Fabryka paliwa jądrowego",
+        "pt": "Fábrica de Combustível Nuclear",
+        "es": "Fábrica de combustible nuclear",
+        "sv": "Kärnbränslefabrik",
+        "th": "โรงงานเชื้อเพลิงนิวเคลียร์",
+        "tr": "Nükleer Yakıt Fabrikası",
+        "vi": "Nuclear Fuel Factory",
+        "ms": "Kilang Bahan Api Nuklear",
+        "nb": "Nuclear Fuel Factory"
+      },
+      "nameEvidence": {
+        "en": "official-client",
+        "ko": "official-client",
+        "ja": "official-client",
+        "zh-tw": "official-client",
+        "de": "official-client",
+        "ru": "official-client",
+        "zh-cn": "official-client",
+        "ar": "english-fallback",
+        "nl": "official-client",
+        "fr": "official-client",
+        "id": "official-client",
+        "it": "official-client",
+        "pl": "official-client",
+        "pt": "official-client",
+        "es": "official-client",
+        "sv": "official-client",
+        "th": "official-client",
+        "tr": "official-client",
+        "vi": "english-fallback",
+        "ms": "official-client",
+        "nb": "english-fallback"
+      }
+    }
+  },
+  "media": {
+    "sp_icon_level_upper_energy": {
+      "nativeKey": "sp_icon_level_upper_energy",
+      "src": "/img/nuclear-age/fuel.webp",
+      "width": 128,
+      "height": 128,
+      "bytes": 14284,
+      "sha256": "8fa18baafa5b0405b14eab1fb17e7f132b4694b6a33aedb5e5d1cd9863db6d9f",
+      "sourcePNG_SHA256": "86bc8b591ef732578c59837d650ea8c7a7bcf63b24f8274e77bbdc69c57a5300",
+      "sourceBundleSHA256": "8cf0033a7bb0a1e9e33e3063fec72d3026883dbd9771429a875e71bb14380989",
+      "assetId": 61514,
+      "bundleId": 206883,
+      "sourceCRC32": 1473611868,
+      "losslessPixelEquality": true
+    },
+    "sp_icon_troop_skill_1": {
+      "nativeKey": "sp_icon_troop_skill_1",
+      "src": "/img/nuclear-age/nuclear-ray.webp",
+      "width": 128,
+      "height": 128,
+      "bytes": 19550,
+      "sha256": "b71f40a61f86bfb0b8b66a852de98ca4511ac561f41ef96c1c84be7e087c583f",
+      "sourcePNG_SHA256": "25ed442563142e9083f12dc63733ed8450230fc630e23ab1ed57ee8df31f9deb",
+      "sourceBundleSHA256": "ed30fec603767f9d611c0375a6a6181c2aa5df0e53a07d7fda7ec22ce84156be",
+      "assetId": 64054,
+      "bundleId": 207557,
+      "sourceCRC32": 1974641433,
+      "losslessPixelEquality": true
+    },
+    "sp_city_building_hospital": {
+      "nativeKey": "sp_city_building_hospital",
+      "src": "/img/nuclear-age/hospital.webp",
+      "width": 240,
+      "height": 240,
+      "bytes": 52052,
+      "sha256": "8cbf5b86c65c6850e9e300157a2245bcd710f9b97bac5be426b2b34cdd41927d",
+      "sourcePNG_SHA256": "f8db33e135af452f1ad67ea184e452e2f0ac5991aff1b38df91f320b171f90d5",
+      "sourceBundleSHA256": "e46d6e749cfedb5f07bfe49d3c9a4d86f189c97dd85f85818d7d30a940e1d2a3",
+      "assetId": 55564,
+      "bundleId": 207824,
+      "sourceCRC32": 3146524485,
+      "losslessPixelEquality": true
+    },
+    "sp_citybuilding_nuclear_plant": {
+      "nativeKey": "sp_citybuilding_nuclear_plant",
+      "src": "/img/nuclear-age/fuel-factory.webp",
+      "width": 240,
+      "height": 240,
+      "bytes": 44050,
+      "sha256": "7cda3ca2ac54d4f50a3774b0b219faa8299f65289d6290d50c06bd78debfff60",
+      "sourcePNG_SHA256": "49cd0df9a1e1b074995af3ceaac928a9669ef16f54d11391474ab8aa74f686cf",
+      "sourceBundleSHA256": "e46d6e749cfedb5f07bfe49d3c9a4d86f189c97dd85f85818d7d30a940e1d2a3",
+      "assetId": 55882,
+      "bundleId": 207824,
+      "sourceCRC32": 3146524485,
+      "losslessPixelEquality": true
+    },
+    "sp_citybuilding_barracks_lv0": {
+      "nativeKey": "sp_citybuilding_barracks_lv0",
+      "src": "/img/nuclear-age/barracks.webp",
+      "width": 240,
+      "height": 240,
+      "bytes": 47568,
+      "sha256": "900d483195514f50ee5987a484c047aff93327edd40c866fce03e5865596cc70",
+      "sourcePNG_SHA256": "582e0aeee190e5c9d2e1d77ddc8db3474704ee6666e9ce264006990de9487fb3",
+      "sourceBundleSHA256": "e46d6e749cfedb5f07bfe49d3c9a4d86f189c97dd85f85818d7d30a940e1d2a3",
+      "assetId": 55650,
+      "bundleId": 207824,
+      "sourceCRC32": 3146524485,
+      "losslessPixelEquality": true
+    },
+    "sp_citybuilding_stronghold_lv1": {
+      "nativeKey": "sp_citybuilding_stronghold_lv1",
+      "src": "/img/nuclear-age/power-plant.webp",
+      "width": 240,
+      "height": 240,
+      "bytes": 51288,
+      "sha256": "fa2449fb5eed52812ee8cb1e19e340a04856ea76f04124eeb057c0349899783c",
+      "sourcePNG_SHA256": "7e8846b49c53e06cff0918e0e690cbc40bc2b2be011f03c2956eb0d3451ecbd1",
+      "sourceBundleSHA256": "7735a4229f6f0661af95afa2c41402c98c2ce6d92d965238efb7815b07af3ec1",
+      "assetId": 55944,
+      "bundleId": 207825,
+      "sourceCRC32": 1567323363,
+      "losslessPixelEquality": true
+    }
+  },
+  "rewards": [
+    {
+      "id": 189800001,
+      "sourceKey": "alliance_1v1_duel_box_6_nuclear_fuel",
+      "itemId": 210658,
+      "amount": 10,
+      "points": 1500000,
+      "boxId": 182600021,
+      "boxKey": "box_s1_2_3_nuclear_fuel",
+      "groupId": 182700007,
+      "groupKey": "box_group_s1_2_nuclear_fuel",
+      "nuclearGateId": 23200853,
+      "groupUnlockGateId": 23200277,
+      "researchAdvice": {
+        "id": 4202165,
+        "sourceKey": "new_1v1_duel_common_increase_20",
+        "groupId": 4100465,
+        "level": 20,
+        "nameKey": "new_1v1_duel_common_increase_name",
+        "names": {
+          "en": "Clash Specialist",
+          "ko": "대결 전문가",
+          "ja": "対決専門家",
+          "zh-tw": "對決專家",
+          "de": "Kampfexperte",
+          "ru": "Мастер состязаний",
+          "zh-cn": "对决专家",
+          "ar": "Clash Specialist",
+          "nl": "Strijdspecialist",
+          "fr": "Spécialiste du Clash",
+          "id": "Spesialis Clash",
+          "it": "Specialista di scontri",
+          "pl": "Specjalista od Starcia",
+          "pt": "Especialista no Confronto",
+          "es": "Especialista en choques",
+          "sv": "Konfliktspecialist",
+          "th": "ผู้เชี่ยวชาญการปะทะ",
+          "tr": "Çarpışma Uzmanı",
+          "vi": "Clash Specialist",
+          "ms": "Pakar Pertempuran",
+          "nb": "Clash Specialist"
+        },
+        "isDirectHardRequirement": false
+      },
+      "status": "configured-conditional-reward",
+      "availability": "requires-nuclear-feature-and-applicable-vs-reward-group",
+      "currentDayVerified": false,
+      "scoreMultiplier": null
+    }
+  ]
+}

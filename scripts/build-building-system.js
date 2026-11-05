@@ -53,7 +53,7 @@ function project(html,lang,slug){
  const name=pageName(slug,lang),category=require('../data/content-60/buildings-phase2-copy')[lang].buildings,url=`https://tilessurvive.net/${lang}/buildings/${slug}/`;
  d.querySelector('h1').textContent=name;d.querySelector('title').textContent=name+' | '+category+' | TilesSurvive.net';
  for(const n of d.querySelectorAll('meta[property="og:title"],meta[name="twitter:title"]'))n.setAttribute('content',name+' | TilesSurvive.net');
- for(const n of hero.querySelectorAll('img'))n.alt=name;
+ for(const n of hero.querySelectorAll('img'))if(!n.closest('[data-nuclear-owned]'))n.alt=name;
  const crumb=d.querySelector('main .breadcrumb [aria-current="page"]')||d.querySelector('main .breadcrumb span:last-child');if(crumb)crumb.textContent=name;
  const existingAnchors=new Map([...d.querySelectorAll('[data-bs-legacy-anchor]')].map(n=>[n.id,{html:n.outerHTML,parentId:n.parentElement?.id,parentTag:n.parentElement?.tagName,parentClass:n.parentElement?.className,index:[...n.parentElement.children].indexOf(n)}]));
  const retainedAnchors=new Set(existingAnchors.keys());
@@ -67,7 +67,7 @@ function project(html,lang,slug){
  d.querySelectorAll('#upgrade-sheet,.building-detail-nav-53,[data-c60-house-select]').forEach(n=>n.tagName==='SELECT'?n.parentElement.remove():n.remove());
  d.querySelectorAll('[data-power-plant-asset],[data-building-growth-60-asset],[data-building-phase2-asset],[data-client-building-52-asset],[data-building-ux-53-asset],[data-bs-asset]').forEach(n=>n.remove());
  d.documentElement.removeAttribute('data-power-plant-page');d.documentElement.removeAttribute('data-building-ux-53');d.documentElement.setAttribute('data-building-system-page',slug);
- const ownParagraph=selector=>[...hero.querySelectorAll(selector)].find(n=>!n.closest('[data-v3-owned],[data-hero-atlas-owned]'));
+ const ownParagraph=selector=>[...hero.querySelectorAll(selector)].find(n=>!n.closest('[data-v3-owned],[data-hero-atlas-owned],[data-nuclear-owned]'));
  const p=ownParagraph('.hero-grid > div:last-child > p')||ownParagraph('p:not(.eyebrow)');if(p)p.textContent=entry.role[lang];
  if(['power-plant','barracks','hospital','lab','aegis-monument','warbringer-monument','guardian-of-life-monument','cursed-wound-stele','blessed-healing-stele'].includes(slug))hero.querySelectorAll('.summary-grid,.hero-summary').forEach(n=>n.remove());
  if(slug==='hospital')d.querySelectorAll('main section.section').forEach(n=>{if(n.querySelector('.status-grid'))n.remove();});

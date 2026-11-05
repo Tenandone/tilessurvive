@@ -19,6 +19,11 @@ function render(locale){
 }
 function project(input,locale,route){
  const kind=kindFor(route);assert(registry.some(l=>l.code===locale),'Unknown locale');let html=strip(require('./build-v6-system').strip(input));if(!kind)return html;
+ // A later era card sits inside the retained introduction. Validate its exact
+ // owner before removing it from the byte-boundary check; restore that same
+ // source projection after V4 so standalone projector calls remain idempotent.
+ const hasEra=/TS_NUCLEAR_LINK_(?:BEGIN|ASSETS_BEGIN)|data-nuclear-owned="link"/.test(html),Era=hasEra?require('./build-nuclear-age'):null;
+ if(hasEra){assert(Era.linkRoutes(locale).includes(route),'Era link on unrelated V4 route');assert.equal(Era.validateLinks(html,locale,route),true);html=Era.stripLinks(html);}
  const c=C.locales[locale];assert(/<main\b/.test(html),'V4 requires an existing main');
  if(kind==='workspace'){
   const d=parseHTML(html).document,main=d.querySelector('main');let intro=main.querySelector('h1');assert(intro,'V4 page needs its existing heading');while(intro.parentElement!==main)intro=intro.parentElement;
@@ -27,7 +32,7 @@ function project(input,locale,route){
   const assets=files.filter(f=>!new RegExp('(?:src|href)=["\']/'+f.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')+'(?:[?"\'])').test(html)).map(asset).join('');
   html=html.replace('</head>',block('ASSETS',assets)+'</head>');
  }else html=html.replace(/(<main\b[^>]*>)/,m=>m+block('NAV',`<nav class="v3-nav" data-v4-owned="navigation" aria-label="${esc(c.open)}"><a href="/${locale}/tools/#v4-${kind}">${esc(c[kind])} · ${esc(c.open)} →</a></nav>`));
- return html;
+ return hasEra?Era.projectLinks(html,locale,route):html;
 }
 function validateOwnership(html,locale,route){
  html=require('./build-v6-system').strip(html);

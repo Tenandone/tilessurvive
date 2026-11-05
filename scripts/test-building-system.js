@@ -442,3 +442,5 @@ test('common projection is idempotent in all languages and every building-specif
     }
   }
 });
+
+test('legacy building projection preserves the exact separately owned Nuclear Age card images and introduction',()=>{const N=require('./build-nuclear-age');for(const lang of ['ko','en'])for(const slug of ['barracks','hospital','power-plant']){const route='/'+lang+'/buildings/'+slug+'/',input=read(route.slice(1)+'index.html');assert.equal(N.validateLinks(input,lang,route),true);const original=documentOf(input).querySelector('[data-nuclear-owned="link"]').outerHTML,output=B.project(input,lang,slug);assert.equal(documentOf(output).querySelector('[data-nuclear-owned="link"]').outerHTML,original,route+' foreign owner changed');assert.equal(N.validateLinks(output,lang,route),true);}});
