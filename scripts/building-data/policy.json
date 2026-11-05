@@ -39,9 +39,9 @@
   "applicability": {
     "accountVariant": "unconfirmed",
     "automaticDetection": false,
-    "choiceRequiredForCalculation": true,
-    "choiceGuidance": "Compare the displayed costs, base times and prerequisites with the game, then choose the matching requirement table.",
-    "distinctVariants": "Labels A and B are presentation aliases only. Never merge, interpolate or substitute profiles, even where individual values happen to match.",
+    "choiceRequiredForCalculation": false,
+    "choiceGuidance": "The approved public table uses A numeric values and the complete B prerequisite list. Select a building where a route contains multiple instances; no A/B choice is required.",
+    "distinctVariants": "Retained Original and D source profiles remain independent and unchanged. The user's approved publication combines Original numeric fields with D prerequisites for all 29 building IDs, matching level and rank exactly. This does not assert that the combination is an official live-game profile; never add A and B resource quantities together.",
     "levelScope": "Publish only the explicitly retained level/rank rows. Higher configuration records do not establish available progression or account eligibility.",
     "bonuses": "Base values exclude research, heroes, alliance effects and other account bonuses."
   },
@@ -58,7 +58,7 @@
     "owner": "js/building-system.js#sumRange",
     "range": "currentLevel < row.level <= targetLevel",
     "initialConstruction": "Current level 0 includes the level-1 construction row. Current level 1 excludes it.",
-    "profile": "Exactly one building ID and one profile per calculation.",
+    "profile": "Exactly one building ID and its unified public profile per calculation. The unchanged runtime can still validate retained source profiles in offline regression tests.",
     "rank": "Keep rank in every source join. The current level-based calculator requires exactly one row for each selected target level and rejects ambiguous or missing levels.",
     "resourceTotal": "Sum each selected unrounded resource-vector component independently.",
     "timeTotal": "Sum selected unrounded base seconds.",
@@ -93,13 +93,18 @@
   "displayPolicy": {
     "managementData": "Build-only. Do not serialize governance, original source files, audit reasons, old guidance, hashes or extraction history into public HTML, JSON, structured data or metadata.",
     "publicProjection": "Use an explicit field allowlist. Keep only values, names, navigation identifiers and essential calculation state needed by the user-facing table and calculator. The renderer configuration retains original availability states internally. HTML serialization removes every availability field, emits calculationBlocked: true only for initial_conditions_unconfirmed, and runtime initialization restores that guard before using the unchanged sumRange function.",
-    "profiles": "Retain original/d URL and calculation IDs. Display neutral requirement-table choices and concise game-matching guidance.",
+    "profiles": "Preserve old original/d URL inputs as aliases of the same building ID's unified public profile. Preserve building selection on multi-building routes. Unregistered IDs or profiles remain invalid; do not silently select another building.",
     "unknownValues": "Keep null and the calculation guard. Use a short unavailable value marker; do not repeat internal explanations or create empty sections.",
     "knownRanges": "Keep the actual supported level range visible. Do not imply absent levels or uncertain account assignment are verified.",
     "effects": "Display only reviewed functional metrics and their own units. Do not substitute battle power or another building's effect.",
     "priorGuidance": "legacy-guidance-7a82e23b.json preserves previous internal explanations without exporting them to page payloads."
   },
   "changeHistory": [
+    {
+      "date": "2026-11-06",
+      "kind": "approved-all-building-publication",
+      "description": "The user extended the prior Power Plant-only publication rule to all 29 retained building IDs on 22 routes. Public rows use A numeric values and complete B prerequisites, while original source profiles, missing values, initial-condition guards and profile-specific effect metadata remain intact. A effects use A rows together with A metric definitions."
+    },
     {
       "date": "2026-10-13",
       "kind": "dependency-verification",

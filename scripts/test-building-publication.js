@@ -78,7 +78,7 @@ test('embedded locale and UI copy use explicit public keys without old source an
   const labelKeys = ['requirements', 'level', 'exactValues', 'capture', 'levelHeader', 'conditions', 'time', 'newConstruction', 'stage', 'none', 'exactValue', 'close', 'totals', 'levelPrefix', 'power', 'unknown'];
   for (const {lang, slug, file, config} of pages) {
     exactKeys(config, configKeys, file + ' config');
-    exactKeys(config.copy, slug === 'power-plant' ? [...copyKeys, 'unified', 'checklist', 'requirementsPath'] : copyKeys, file + ' copy');
+    exactKeys(config.copy, [...copyKeys, 'unified', 'checklist', 'requirementsPath'], file + ' copy');
     exactKeys(config.locale, ['numberLocale', 'labels', 'units', 'messages'], file + ' locale');
     exactKeys(config.locale.labels, labelKeys, file + ' labels');
     exactKeys(config.locale.units, ['resourceSuffix', 'seconds', 'duration'], file + ' units');
@@ -88,17 +88,16 @@ test('embedded locale and UI copy use explicit public keys without old source an
     assert.equal(config.locale.labels.unknown, '—');
     assert.equal(config.copy.original, player[lang].original);
     assert.equal(config.copy.d, player[lang].d);
-    assert.notEqual(config.copy.original, config.copy.d, file + ' requirements choices must remain distinct');
-    const hintKey = slug === 'power-plant' ? 'powerProfileHint' : slug === 'enlistment-office' ? 'profileHintInitial' : 'profileHint';
-    assert.equal(config.copy.profileHint, slug === 'power-plant' ? unifiedCopy[lang].profileHint : player[lang][hintKey]);
-    assert.equal(config.copy.powerCondition, slug === 'power-plant' ? unifiedCopy[lang].powerCondition : player[lang].powerCondition);
-    if (slug === 'power-plant') for (const key of ['unified', 'checklist', 'requirementsPath']) assert.equal(config.copy[key], unifiedCopy[lang][key], file + ' unified copy ' + key);
+    assert.notEqual(config.copy.original, config.copy.d, file + ' retained legacy labels must remain distinct');
+    assert.equal(config.copy.profileHint, unifiedCopy[lang].profileHint);
+    assert.equal(config.copy.powerCondition, unifiedCopy[lang].powerCondition);
+    for (const key of ['unified', 'checklist', 'requirementsPath']) assert.equal(config.copy[key], unifiedCopy[lang][key], file + ' unified copy ' + key);
     if (slug === 'enlistment-office') assert(config.buildings.every(building => building.profiles.every(profile => profile.rows.every(row => row.level === 1))), file + ' construction-only guidance must match the published scope');
     assert(Object.values(config.copy).every(value => typeof value === 'string'), file + ' missing public copy');
   }
 });
 
-test('public profile identities and independent datasets survive neutral labels in all six languages', () => {
+test('public unified identities retain exact A values and D prerequisites in all six languages', () => {
   let rowCount = 0;
   for (const {lang, slug, file, html, config} of pages) {
     const expected = registry.publicBuildings(slug);
@@ -106,32 +105,34 @@ test('public profile identities and independent datasets survive neutral labels 
       if (row.availability === 'initial_conditions_unconfirmed') row.calculationBlocked = true;
       delete row.availability;
     }
-    assert.deepEqual(config.buildings, expected, file + ' independent source profiles');
+    assert.deepEqual(config.buildings, expected, file + ' approved unified source projection');
     const document = parseHTML(html).document;
     const options = [...document.querySelectorAll('[data-bs-choice] option')];
     assert.equal(options[0].getAttribute('value'), '', file + ' invalid/unselected sentinel remains available');
-    if (slug === 'power-plant') {
+    if (expected.length === 1) {
       assert(document.querySelector('[data-bs-choice]').closest('[hidden]'), file + ' unified selector is not a visible choice');
       assert.equal(options[1].hasAttribute('selected'), true, file + ' unified default is selected in static HTML');
       assert.equal(document.querySelector('[data-bs-inputs]').hasAttribute('disabled'), false, file + ' unified calculation is initially usable');
+    } else {
+      assert(!document.querySelector('[data-bs-choice]').closest('[hidden]'),file+' multi-building selector remains visible');
+      assert.equal(document.querySelector('[data-bs-inputs]').hasAttribute('disabled'),true,file+' building selection is required');
     }
     const ids = expected.flatMap(building => building.profiles.map(profile => `${building.id}:${profile.id}`));
     assert.deepEqual(options.slice(1).map(option => option.getAttribute('value')), ids, file + ' share URL identifiers');
     for (const building of expected) {
-      assert.deepEqual(building.profiles.map(profile => profile.id), slug === 'power-plant' ? ['unified'] : ['original', 'd'], file + ' explicitly scoped profile identities');
+      assert.deepEqual(building.profiles.map(profile => profile.id), ['unified'], file + ' explicitly scoped profile identities');
       for (const profile of building.profiles) {
         const id = `${building.id}:${profile.id}`;
         const option = options.find(node => node.getAttribute('value') === id);
-        const label = profile.id === 'unified' ? unifiedCopy[lang].unified : profile.id === 'original' ? player[lang].original : player[lang].d;
-        assert(option.textContent.endsWith(' · ' + label), file + ' player-facing label for ' + id);
+        assert.equal(option.textContent,building.name[lang]+(expected.length===1?' · '+unifiedCopy[lang].unified:''), file + ' player-facing label for ' + id);
         assert.equal(document.querySelectorAll(`[data-bs-profile="${id}"]`).length, 1, file + ' distinct profile panel');
         rowCount += profile.rows.length;
       }
     }
     const effect = registry.evidence.effects.find(entry => entry.slug === slug);
-    if (effect) for (const profile of effect.profiles) assert.equal(document.querySelectorAll(`[data-bs-effect-profile="${profile.id.toLowerCase()}"]`).length, 1, file + ' independent effect profile');
+    if (effect) {assert.equal(document.querySelectorAll('[data-bs-effect-profile]').length,1,file+' one public effect profile');assert.equal(document.querySelectorAll('[data-bs-effect-profile="unified"]').length,1,file+' A effect projection');}
   }
-  assert.equal(rowCount, 8952, '1,492 public rows per language; raw source rows remain separate');
+  assert.equal(rowCount, 4566, '761 unified public rows per language; raw source rows remain separate');
   const power = registry.model.buildings.find(building => building.id === 800005);
   assert.notDeepEqual(power.profiles[0].rows, power.profiles[1].rows, 'The two retained Power Plant source profiles must remain distinct');
 });
@@ -152,8 +153,8 @@ test('unknown construction values and guard states survive publication and still
       }
     }
   }
-  assert.equal(guardedRows, 24, 'two buildings x two profiles x six languages retain their initial gate');
-  assert(unknownRows > 0, 'unknown values must remain present rather than coerced to zero');
+  assert.equal(guardedRows, 12, 'two buildings x one unified profile x six languages retain their initial gate');
+  assert.equal(unknownRows,54,'nine A initial rows x six languages retain unknown quantities');
 });
 
 test('runtime initialization restores the private calculation guard without changing the public payload', () => {
@@ -173,7 +174,7 @@ test('runtime initialization restores the private calculation guard without chan
     const from = host.querySelector('[name="from"]');
     const to = host.querySelector('[name="to"]');
     const output = host.querySelector('[data-bs-result]');
-    const building = registry.model.buildings.find(entry => entry.slug === slug);
+    const building = registry.publicBuildings(slug)[0];
     for (const profile of building.profiles) {
       choice.value = `${building.id}:${profile.id}`;
       change(choice);
@@ -188,13 +189,15 @@ test('runtime initialization restores the private calculation guard without chan
   }
 });
 
-test('the cumulative calculation function and completed layout CSS remain identical to 7a82e23b', () => {
+test('the cumulative calculation function preserves its arithmetic with only the approved serialized guard and unchanged layout CSS', () => {
   const calculation = source => {
     const match = source.replaceAll('\r\n', '\n').match(/  function sumRange\([\s\S]*?(?=\n  function duration)/);
     assert(match, 'sumRange function boundary');
     return match[0];
   };
-  assert.equal(calculation(read('js/building-system.js')), calculation(oldFile('js/building-system.js').toString('utf8')), 'sumRange changed during a presentation-only integration');
+  const current=calculation(read('js/building-system.js')),guard='||r.calculationBlocked===true';
+  assert.equal(current.split(guard).length-1,1,'Exactly one explicit public-payload guard is added');
+  assert.equal(current.replace(guard,''), calculation(oldFile('js/building-system.js').toString('utf8')), 'No arithmetic, source availability or validation change beyond the reviewed serialized guard');
   assert.deepEqual(fs.readFileSync(path.join(root, 'css/building-system.css')), oldFile('css/building-system.css'), 'completed layout fixes changed');
 });
 

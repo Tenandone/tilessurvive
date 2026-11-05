@@ -220,10 +220,20 @@ test('all 21 published Power Plant JSON payloads, desktop rows and mobile cards 
   assert.equal(signatures.size,1);assert.equal(rows,630);assert.equal(conditions,1323);
 });
 
-test('every other building page retains its exact model and original content outside reviewed V3 blocks and GA migration', () => {
+test('every other building page matches its exact approved unified projection and preserves content outside reviewed owners', () => {
   let checked=0;
+  const unifiedPublisher=require('./build-buildings-unified');
   const withoutCache=(html,file)=>{const locale=file.split('/')[0],route='/'+file.replace(/index\.html$/,''),N=require('./build-nuclear-age');let reviewed=require('./v4-release-gate').stripReviewedPresentation(html,locale,route,root);if(/TS_NUCLEAR_LINK_|data-nuclear-owned="link"/.test(reviewed)){assert(N.linkRoutes(locale).includes(route),'Unreviewed era link route');assert.equal(N.validateLinks(reviewed,locale,route),true);reviewed=N.stripLinks(reviewed);}return v3Preservation.inherited(reviewed);};
   for(const locale of locales){const files=registry.slugs.filter(s=>s!=='power-plant').map(s=>locale.code+'/buildings/'+s+'/index.html'),old=baselineBatch(files);
-    for(const file of files){const current=read(file),baseline=old.get(file);assert.deepEqual(payload(current),payload(baseline),file+' other-building model must be unchanged');assert.equal(hash(withoutCache(current,file)),hash(withoutCache(baseline,file)),file+' original content preserved after exact known GA migration and five reviewed runtime cache keys');checked++;}}
+    for(const file of files){
+      const slug=file.split('/')[2],current=withoutCache(read(file),file),baseline=withoutCache(old.get(file),file);
+      // Recompose only the validated sheet/effect owners from frozen A/D values.
+      // The publisher independently refuses numeric drift, reordered prerequisites,
+      // missing localized names and unreviewed effect columns before projecting.
+      const expected=unifiedPublisher.project(baseline,locale.code,slug);
+      assert(unifiedPublisher.validateOwnership(current,locale.code,slug));
+      assert.deepEqual(payload(current),payload(expected),file+' exact approved public A/D projection');
+      assert.equal(hash(current),hash(expected),file+' original content outside exact sheet/effect owners remains unchanged');checked++;
+    }}
   assert.equal(checked,441);
 });

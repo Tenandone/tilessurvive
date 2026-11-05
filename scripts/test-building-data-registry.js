@@ -46,14 +46,14 @@ test('public building allowlist preserves runtime values and excludes management
   for (const slug of registry.slugs) {
     const buildings = registry.publicBuildings(slug);
     const expected = structuredClone(registry.model.buildings.filter(building => building.slug === slug));
-    if (slug === 'power-plant') {
-      const a = expected[0].profiles.find(profile => profile.id === 'original');
-      const b = expected[0].profiles.find(profile => profile.id === 'd');
+    for (const building of expected) {
+      const a = building.profiles.find(profile => profile.id === 'original');
+      const b = building.profiles.find(profile => profile.id === 'd');
       a.id = 'unified';
       for (const row of a.rows) row.requirements = structuredClone(b.rows.find(value => value.level === row.level && value.rank === row.rank).requirements);
-      expected[0].profiles = [a];
+      building.profiles = [a];
     }
-    assert.deepEqual(buildings, expected, slug + ': only the approved Power Plant public projection may differ from raw profiles');
+    assert.deepEqual(buildings, expected, slug + ': unified public projection uses A values and the complete ordered D prerequisites');
     for (const building of buildings) {
       permitted(building, ['id', 'slug', 'name', 'profiles']);
       permitted(building.name, registry.langs);

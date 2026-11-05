@@ -160,7 +160,7 @@ test('legacy calculator numerical behavior is unchanged for all already supporte
   assert.equal(runtime.sumRange(barracks3.rows, 4, 5).seconds, 300);
 });
 
-test('six-language runtime keeps profile selection, level filtering, exact display and inventory calculations independent', () => {
+test('six-language runtime keeps building selection, level filtering, exact display and unified inventory calculations independent', () => {
   for (const lang of langs) {
     const d = documentOf(B.sheet(lang, 'houses'));
     const host = d.querySelector('[data-building-system]');
@@ -178,11 +178,11 @@ test('six-language runtime keeps profile selection, level filtering, exact displ
     runtime.init(d);
     assert.equal(host.querySelector('[data-bs-inputs]').disabled, true);
     assert.equal(result.dataset.result, 'unselected');
-    choice.value = '800115:d';
+    choice.value = '800115:unified';
     change(choice);
     const active = [...host.querySelectorAll('[data-bs-profile]')].filter(panel => !panel.hidden);
     assert.equal(active.length, 1);
-    assert.equal(active[0].getAttribute('data-bs-profile'), '800115:d');
+    assert.equal(active[0].getAttribute('data-bs-profile'), '800115:unified');
     assert.equal(active[0].open, true);
     assert.equal(host.querySelector('[data-bs-inputs]').disabled, false);
     level.value = '2';
@@ -190,7 +190,7 @@ test('six-language runtime keeps profile selection, level filtering, exact displ
     assert.equal(active[0].querySelectorAll('[data-level]:not([hidden])').length, 2, 'one table row and one mobile card');
     exact.checked = true;
     change(exact);
-    const source = buildings.find(b => b.id === 800115).profiles.find(p => p.id === 'd').rows;
+    const source = buildings.find(b => b.id === 800115).profiles.find(p => p.id === 'original').rows;
     const value = active[0].querySelector('tr[data-level="2"] [data-resource="0"] button');
     assert.equal(value.textContent, source[1].resources[0].toLocaleString(lang === 'zh-tw' ? 'zh-TW' : lang));
     field('from').value = '1';
@@ -209,7 +209,7 @@ test('six-language runtime keeps profile selection, level filtering, exact displ
     change(choice);
     assert.equal(result.dataset.result, 'unselected');
     assert.equal(host.querySelector('[data-bs-inputs]').disabled, true);
-    assert.equal([...host.querySelectorAll('[data-bs-profile]')].filter(panel => !panel.hidden).length, 12);
+    assert.equal([...host.querySelectorAll('[data-bs-profile]')].filter(panel => !panel.hidden).length, 6);
     assert.equal(host.querySelector('[data-building-system-model]').textContent, payload, 'UI never mutates source payload');
     runtime.init(d);
     assert.equal(host.querySelectorAll('[data-bs-choice]').length, 1, 'initialization is idempotent');
@@ -221,11 +221,12 @@ test('runtime refuses incomplete construction rows while preserving valid upgrad
   const host = d.querySelector('[data-building-system]');
   const choice = host.querySelector('[data-bs-choice]');
   const level = host.querySelector('[data-bs-level]');
-  for (const [element, initial] of [[choice, '800007:original'], [level, 'all']]) {
+  for (const [element, initial] of [[choice, ''], [level, 'all']]) {
     let value = initial;
     Object.defineProperty(element, 'value', {get: () => value, set: next => { value = String(next); }});
   }
   runtime.init(d);
+  choice.value='800007:unified';choice.dispatchEvent(new d.defaultView.Event('change',{bubbles:true}));
   const from = host.querySelector('[name="from"]');
   const to = host.querySelector('[name="to"]');
   const output = host.querySelector('[data-bs-result]');
@@ -326,7 +327,7 @@ test('all 132 documents retain canonical URLs, six language alternatives, static
       }
     }
   }
-  assert.equal(staticRows, 8952, '1,492 public rows per language; raw 1,522 source rows remain separately verified');
+  assert.equal(staticRows, 4566, '761 unified public rows per language; raw 1,522 source rows remain separately verified');
 });
 
 test('building catalog lists all 22 existing routes without duplicate entries or embedded level tables', () => {
@@ -341,14 +342,17 @@ test('building catalog lists all 22 existing routes without duplicate entries or
   }
 });
 
-test('all reviewed functional effects are joined by building, profile, level, rank and metric without copying power values', () => {
+test('unified functional effects use exact A metrics while both retained effect profiles remain immutable', () => {
+  const frozen=require('./building-data/baseline-7a82e23b.json');
+  assert.equal(crypto.createHash('sha256').update(JSON.stringify(evidence.effects)).digest('hex'),frozen.effectsSha256,'Both A and D effect sources remain unchanged');
   let count = 0;
   for (const lang of langs) for (const building of evidence.effects) {
     const d = documentOf(read(`${lang}/buildings/${building.slug}/index.html`));
     const host = d.querySelector('[data-bs-effects]');
     assert(host, building.slug + ' source-reviewed effects');
-    for (const profile of building.profiles) {
-      const panel = host.querySelector(`[data-bs-effect-profile="${profile.id.toLowerCase()}"]`);
+    assert.equal(host.querySelectorAll('[data-bs-effect-profile]').length,1,building.slug+' has one public effect profile');
+    for (const profile of building.profiles.filter(p=>p.id.toLowerCase()==='original')) {
+      const panel = host.querySelector('[data-bs-effect-profile="unified"]');
       assert(panel);
       const metrics = profile.metrics || building.metrics;
       const rows = [...panel.querySelectorAll('tr[data-effect-level]')];
@@ -365,7 +369,7 @@ test('all reviewed functional effects are joined by building, profile, level, ra
       }
     }
   }
-  assert.equal(count, 4680, '780 source effect rows in six locales');
+  assert.equal(count, 2340, '390 A effect rows in six locales; all 780 raw source effect rows remain preserved');
 });
 
 test('unconfirmed initial gates remain explicit in desktop and mobile rows even when individual fields are verified', () => {

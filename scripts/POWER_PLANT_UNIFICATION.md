@@ -1,8 +1,10 @@
 # Power Plant requirements publication
 
-The approved publication rule is **A numeric values + B prerequisites**. This is
-an explicit exception for Power Plant `800005` only. Other building profiles are
-independent and must not be combined.
+The approved publication rule is **A numeric values + B prerequisites**.
+It began as a Power Plant `800005` exception. On 2026-11-06 the user explicitly
+extended this public projection to all 29 retained building IDs. Raw profiles
+remain independent and unchanged. See `BUILDINGS_UNIFICATION.md` for the current
+all-building publisher; the Power Plant model and its existing values remain exact.
 
 ## Sources and ownership
 

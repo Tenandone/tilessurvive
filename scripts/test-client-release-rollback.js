@@ -2,6 +2,17 @@
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),os=require('node:os');
 const G=require('./client-release-gate'),B=require('./build-client-release');
 
+test('release pipeline projects every unified building before Nuclear links and final presentation',()=>{
+ const plan=B.steps(),building=plan.indexOf('scripts/build-buildings-unified.js');
+ assert.equal(plan.filter(file=>file==='scripts/build-buildings-unified.js').length,1);
+ assert(building>plan.indexOf('scripts/build-v3-platform.js'));
+ assert.equal(plan[building+1],'scripts/build-nuclear-age.js');
+ assert(building<plan.indexOf('scripts/build-v6-system.js'));
+ assert(building<plan.indexOf('scripts/build-site-identity.js'));
+ assert.equal(plan.length,13,'All retained owners plus the explicit building owner remain in the release');
+ assert(!plan.some(file=>/build-(?:global-locales|german-50|simplified-chinese|building-system)\.js$/.test(file)),'Legacy regeneration must not run in release publication');
+});
+
 function fixture(t){
  const base=fs.mkdtempSync(path.join(os.tmpdir(),'tilessurvive-release-rollback-')),root=path.join(base,'site'),artifacts=path.join(base,'artifacts');
  const files={'data/i18n/locales.json':JSON.stringify({locales:[{code:'en'}]}),'en/a/index.html':'first original','en/b/index.html':'second original','en/c/index.html':'third original'};

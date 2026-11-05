@@ -235,6 +235,8 @@ function render(source, translate, route) {
   // Building pages now have an independent, reviewed six-language owner.
   // Keep the German shell rather than retranslating its rendered source model.
   if(route.startsWith('buildings/')&&source.includes('data-building-system')){
+    const sourceDoc=parseHTML(source).document,sourceModel=sourceDoc.querySelector('[data-building-system-model]');
+    if(sourceModel&&JSON.parse(sourceModel.textContent).buildings.every(b=>b.profiles.length===1&&b.profiles[0].id==='unified'))require('./build-buildings-unified').validateOwnership(source,'en',route.split('/')[1]);
     const current=fs.readFileSync(path.join(ROOT,'de',route),'utf8'),owner=require('./build-building-system');
     return finishV3(route==='buildings/index.html'?owner.catalog(current,'de'):owner.project(current,'de',route.split('/')[1]));
   }

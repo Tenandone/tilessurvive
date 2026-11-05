@@ -13,11 +13,10 @@
  function amountMap(m,allowed){object(m);for(const [key,n]of Object.entries(m)){if(!allowed.has(String(key)))fail('unknownResource');number(n);}return m;}
  function resourceKeys(model){return new Set([...model.resources.map(r=>String(r.id)),...model.buildings.flatMap(b=>b.profiles.flatMap(p=>p.rows.flatMap(r=>(r.constructionItems||[]).map(i=>String(i.id??i.itemId)))))]);}
  function powerDifference(rows,from,to,key){if(from===to)return 0;const a=from===0?0:rows.find(r=>r.level===from)?.[key],b=rows.find(r=>r.level===to)?.[key];return integer(a)&&integer(b)&&b>=a?b-a:null;}
- function quoteGoal(model,goal){object(goal);const kind=goal.kind;let resources=null,seconds=null,powerDelta=null,requirements=[],reasonCodes=[],route=null;
+ function normalizeGoal(model,goal){object(goal);const result={...goal};if(goal.kind==='building'){const entity=find(model.buildings,goal.id);let profile=goal.profile;if(entity.profiles.length===1&&entity.profiles[0].id==='unified'&&['original','d'].includes(profile))profile='unified';result.id=entity.id;result.profile=find(entity.profiles,profile).id;}return result;}
+ function quoteGoal(model,goal){goal=normalizeGoal(model,goal);const kind=goal.kind;let resources=null,seconds=null,powerDelta=null,requirements=[],reasonCodes=[],route=null;
   if(kind==='building'){
-   const entity=find(model.buildings,goal.id);let profile=goal.profile;
-   if(String(entity.id)==='800005'&&['original','d'].includes(profile))profile='unified';
-   const p=find(entity.profiles,profile);const rows=range(p.rows,goal.from,goal.to);route='/buildings/'+entity.slug+'/';
+   const entity=find(model.buildings,goal.id),p=find(entity.profiles,goal.profile);const rows=range(p.rows,goal.from,goal.to);route='/buildings/'+entity.slug+'/';
    requirements=rows.flatMap(r=>(r.requirements||[]).map(q=>({...copy(q),step:r.level})));powerDelta=powerDifference(p.rows,goal.from,goal.to,'battlePower');
    if(rows.some(r=>r.blocked||!Array.isArray(r.resources)||r.resources.some(x=>!integer(x))||!integer(r.seconds)||r.requirements===null)){reasonCodes.push('buildingIncomplete');}
    else{if(!building?.sumRange)fail('missingDependency');const q=building.sumRange(p.rows,goal.from,goal.to,[0,0,0,0]);resources=Object.fromEntries(model.resources.map((r,i)=>[r.id,q.resources[i]]));for(const item of q.constructionItems){const id=item.id??item.itemId;resources[id]=add(resources[id]||0,item.quantity);}seconds=q.seconds;}
@@ -32,7 +31,7 @@
   }else fail('unknownKind');
   return {kind,id:goal.id,resources,seconds,powerDelta,requirements,route,reasonCodes:[...new Set(reasonCodes)]};
  }
- function plan(model,input){object(input);if(!Array.isArray(input.goals)||input.goals.length>30)fail('invalidInput');const goals=input.goals;unique(goals,g=>g.uid);for(const g of goals)if(typeof g.uid!=='string'||!g.uid||g.uid.length>80)fail('invalidInput');
+ function plan(model,input){object(input);if(!Array.isArray(input.goals)||input.goals.length>30)fail('invalidInput');const goals=input.goals.map(goal=>normalizeGoal(model,goal));unique(goals,g=>g.uid);for(const g of goals)if(typeof g.uid!=='string'||!g.uid||g.uid.length>80)fail('invalidInput');
   // A single entity cannot be charged twice for overlapping level transitions.
   const levelGoals=goals.filter(g=>['building','research'].includes(g.kind));for(let i=0;i<levelGoals.length;i++)for(let j=i+1;j<levelGoals.length;j++){const a=levelGoals[i],b=levelGoals[j];if(a.kind===b.kind&&String(a.id)===String(b.id)&&(a.profile!==b.profile||Math.max(a.from,b.from)<Math.min(a.to,b.to)))fail('overlappingGoal');}
   const allowed=resourceKeys(model),held=amountMap(input.held||{},allowed),wallet={...held},speedup=input.speedupSeconds||{};amountMap(speedup,new Set(['construction','research','training','healing','universal']));const speeds={construction:0,research:0,training:0,healing:0,universal:0,...speedup};
@@ -51,5 +50,5 @@
   let target=null;if(input.targetStage!==null&&input.targetStage!==undefined){target=stages.find(s=>s.id===input.targetStage);if(!target)fail('unknownId');}
   const used=new Set(day.rules.map(r=>r.materialId));return {eventId:event.id,profileId:profile.id,day:day.day,basePoints,totalPoints,currentPoints:current,perDay,stages,target,eligibleStages:stages.filter(s=>s.pointsMet&&s.unlockConfirmed).map(s=>s.id),excludedMaterials:Object.keys(quantities).filter(id=>quantities[id]>0&&!used.has(id)),reasonCodes:copy(event.reasonCodes)};
  }
- return {quoteGoal,plan,scoreEvent};
+ return {normalizeGoal,quoteGoal,plan,scoreEvent};
 });

@@ -107,6 +107,14 @@ function verifyPreserved(before,after,file){
  Analytics.preserved(before,after);
  const System=require('./build-v6-system');before=Identity.strip(System.strip(before));after=Identity.strip(System.strip(after));
  const locale=file.split('/')[0],route='/'+file.replace(/index\.html$/,'');
+ const Buildings=require('./build-buildings-unified');
+ if(Buildings.pages.includes(file)){
+  // Only the registered building sheet and original-effect projection may
+  // replace retained A/B output. Everything else still enters the same
+  // protected program/model/table/ad/TEN comparisons below.
+  Buildings.validateOwnership(after,locale,file.split('/')[2]);
+  before=Buildings.project(before,locale,file.split('/')[2]);
+ }
  if(/^[a-z-]+\/index\.html$/.test(file)&&after.includes('data-v5-home')){
   const V5=require('./build-v5-landing');V5.validateOwnership(after,locale);
   assert.equal(parseHTML(after).document.querySelector('main').innerHTML,parseHTML(System.strip(V5.project(before,locale))).document.querySelector('main').innerHTML,file+' exact reviewed landing replacement');
@@ -129,8 +137,20 @@ function verifyPreserved(before,after,file){
  const a=preservedContent(before),b=preservedContent(after);for(const key of ['programs','models','ads','ten'])assert.deepEqual(b[key],a[key],file+' protected '+key);let at=0;for(const value of a.tables){at=b.tables.indexOf(value,at);assert(at>=0,file+' original numeric table removed or changed');at++;}
 }
 function hook(root=ROOT){const script='scripts/build-hero-pet-pages.js',data='data/hero-pet-relations.json',hasScript=fs.existsSync(path.join(root,script)),hasData=fs.existsSync(path.join(root,data));assert.equal(hasScript,hasData,'Hero/pet renderer and validated data must enter the release together');if(!hasScript)return null;const owner=require(path.join(root,script));assert.equal(typeof owner.validate,'function','Hero/pet model validator is required');assert.equal(typeof owner.project,'function','Hero/pet pure projection is required');owner.validate(json(root,data));return script;}
+function validateBuildings(root=ROOT,{readPage=file=>read(root,file)}={}){
+ const owner=require(path.join(root,'scripts/build-buildings-unified')),registry=require(path.join(root,'scripts/building-data-registry')),codes=json(root,'data/i18n/locales.json').locales.map(l=>l.code);
+ for(const key of ['project','validateOwnership'])assert.equal(typeof owner[key],'function','Missing unified building owner '+key);
+ assert.deepEqual([...owner.codes].sort(),[...codes].sort(),'Unified building locale inventory changed');
+ assert.deepEqual([...owner.slugs].sort(),[...registry.slugs].sort(),'Unified building route inventory changed');
+ const expected=codes.flatMap(locale=>registry.slugs.map(slug=>`${locale}/buildings/${slug}/index.html`));
+ assert.equal(new Set(owner.pages).size,owner.pages.length,'Duplicate unified building publication page');
+ assert.deepEqual([...owner.pages].sort(),[...expected].sort(),'Unified building publication coverage changed');
+ for(const file of expected){const [locale,,slug]=file.split('/');assert.equal(owner.validateOwnership(readPage(file),locale,slug),true,file+' unified building ownership');}
+ return {locales:codes.length,routes:registry.slugs.length,pages:expected.length,buildingIds:registry.model.buildings.length};
+}
 function validate(root=ROOT,{before,backup,allowUnprojectedIdentity=false}={}){
  const identity=Identity.validate(root,{required:!allowUnprojectedIdentity}),reviewedRoutes=Reviewed.validate(root);
+ const buildingsUnified=validateBuildings(root),growthBuildings=require(path.join(root,'scripts/sync-v4-building-projection')).validate(undefined,{root});
  for(const file of Identity.standaloneFiles(root)){const html=read(root,file);Analytics.signature(html);if(before&&backup&&before.files[file])Analytics.preserved(read(backup,file),html);}
  const registry=json(root,'data/i18n/locales.json').locales;assert.equal(registry.length,21,'The published locale set must not shrink');
  const model=validatePublication(json(root,'data/hero-atlas-client.json'),json(root,'data/hero-atlas-publication.json'),json(root,'data/hero-atlas-routes.json'),officialRegistry(root));hook(root);const isolation=validateOfficialIsolation(root);
@@ -141,7 +161,7 @@ function validate(root=ROOT,{before,backup,allowUnprojectedIdentity=false}={}){
  const index=json(root,'data/search-index.json');assert.equal(index.itemCount,index.items.length);assert.equal(new Set(index.items.map(i=>i.url)).size,index.items.length);const indexed=new Set(index.items.map(i=>i.url));
  for(const l of registry){const raw=json(root,'data/search/'+l.code+'.json'),derived=json(root,'data/v3-search/'+l.code+'.json');assert.equal(raw.items.length,raw.itemCount);assert.equal(derived.items.length,raw.itemCount);assert.deepEqual(derived.items.map(({search,...item})=>item),raw.items,l.code+' search source preservation');for(const item of raw.items){assert(indexed.has(item.url),'Missing aggregate record');assert(item.url.startsWith('/'+l.code+'/'),'Cross-language search record');}}
  if(before)verifyStableFiles(root,before);
- return {status:'PASS',locales:registry.length,canonicalPages:pages,sitemapURLs:actual.length,routeGroups:groups.length,searchRecords:index.itemCount,...model,...isolation,siteIdentity:identity,reviewedRoutes};
+ return {status:'PASS',locales:registry.length,canonicalPages:pages,sitemapURLs:actual.length,routeGroups:groups.length,searchRecords:index.itemCount,...model,...isolation,siteIdentity:identity,reviewedRoutes,buildingsUnified,growthBuildings};
 }
-module.exports={ROOT,BASELINE,officialRegistry,officialAdditions,reviewedSitemap,validateOfficialIsolation,publicFiles,snapshot,validatePublication,validateDocument,preservedContent,verifyPreserved,verifyStableFiles,hook,validate};
+module.exports={ROOT,BASELINE,officialRegistry,officialAdditions,reviewedSitemap,validateOfficialIsolation,publicFiles,snapshot,validatePublication,validateDocument,preservedContent,verifyPreserved,verifyStableFiles,hook,validateBuildings,validate};
 if(require.main===module)console.log(JSON.stringify(validate()));

@@ -271,6 +271,9 @@ function validateRouteManifest(groups) {
 // Pure page projection shared by staging and focused owner-regeneration tests.
 function localizePage(source,group,groups,{converter=createConverter(),router=makeRouter(groups),ui=L.readJSON(path.join(L.ROOT,'data/i18n/ui/zh-cn.json')),available=[...L.existing,TARGET]}={}) {
   source=require('./build-v6-system').strip(source);
+  const buildingMatch=group.id?.match(/^buildings\/([^/]+)\/$/),buildingOwner=require('./build-buildings-unified');
+  const buildingSlug=buildingMatch&&buildingOwner.slugs.includes(buildingMatch[1])?buildingMatch[1]:null;
+  if(buildingSlug){const sourceModel=parseHTML(source).document.querySelector('[data-building-system-model]');if(sourceModel&&JSON.parse(sourceModel.textContent).buildings.every(b=>b.profiles.length===1&&b.profiles[0].id==='unified'))buildingOwner.validateOwnership(source,'zh-tw',buildingSlug);}
   const Nuclear=require('./build-nuclear-age'),sourceRoute=group.routes['zh-tw'],targetRoute=group.routes[TARGET],nuclearGuide=sourceRoute===Nuclear.route('zh-tw'),nuclearLink=Nuclear.linkRoutes('zh-tw').includes(sourceRoute);
   if(nuclearGuide)Nuclear.validateOwnership(source,'zh-tw',sourceRoute);
   if(nuclearLink){assert.equal(Nuclear.validateLinks(source,'zh-tw',sourceRoute),true);source=Nuclear.stripLinks(source);}
@@ -330,7 +333,8 @@ function localizePage(source,group,groups,{converter=createConverter(),router=ma
     assert.deepEqual([...document.querySelectorAll('[href],[src]')].flatMap(e=>['href','src'].filter(a=>/^https?:/.test(e.getAttribute(a)||'')&&!e.getAttribute(a).startsWith(L.publicOrigin)).map(a=>[e.tagName,a,e.getAttribute(a)])),protectedExternal,'External services or ads changed: '+sourceFile);
     const features=featurePayloads(document,convert,router.route);
     const enhanced=enhance(document,TARGET,group,available,{...ui,featureCopies:{...features,...ui.featureCopies}},{preview:true});
-    const native=nuclearGuide?Nuclear.project(enhanced,TARGET,targetRoute):nuclearLink?Nuclear.projectLinks(enhanced,TARGET,targetRoute):enhanced;
+    let native=nuclearGuide?Nuclear.project(enhanced,TARGET,targetRoute):nuclearLink?Nuclear.projectLinks(enhanced,TARGET,targetRoute):enhanced;
+    if(buildingSlug)native=buildingOwner.project(require('./build-v6-system').strip(native),TARGET,buildingSlug);
     const html=require('./build-v6-system').project(native,TARGET,targetRoute);
     return {html,sourceFile,numericJSONLeaves,protectedPrograms,localizedPrograms,ids:beforeIds.length,media:beforeMedia.length,featureCopies:Object.keys(features)};
 }

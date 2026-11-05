@@ -3654,6 +3654,104 @@
       "bundleId": 207824,
       "sourceCRC32": 3146524485,
       "losslessPixelEquality": true
+    },
+    "sp_city_building_embassy": {
+      "nativeKey": "sp_city_building_embassy",
+      "src": "/img/nuclear-age/comms-outpost.png",
+      "width": 240,
+      "height": 240,
+      "bytes": 73976,
+      "sha256": "af11076094c5e06523db5e1e43f905a99f026935aa2fec0f98840ab318af5634",
+      "sourcePNG_SHA256": "af11076094c5e06523db5e1e43f905a99f026935aa2fec0f98840ab318af5634",
+      "sourceBundleSHA256": "e46d6e749cfedb5f07bfe49d3c9a4d86f189c97dd85f85818d7d30a940e1d2a3",
+      "assetId": 55562,
+      "bundleId": 207824,
+      "sourceCRC32": 3146524485,
+      "losslessPixelEquality": true
+    },
+    "sp_city_building_garrison": {
+      "nativeKey": "sp_city_building_garrison",
+      "src": "/img/nuclear-age/garrison-station.png",
+      "width": 240,
+      "height": 240,
+      "bytes": 52355,
+      "sha256": "269c5c0ba77a017e6bbd54fddc3899cd7538ded51249932110a460ac5460dc9b",
+      "sourcePNG_SHA256": "269c5c0ba77a017e6bbd54fddc3899cd7538ded51249932110a460ac5460dc9b",
+      "sourceBundleSHA256": "e46d6e749cfedb5f07bfe49d3c9a4d86f189c97dd85f85818d7d30a940e1d2a3",
+      "assetId": 55563,
+      "bundleId": 207824,
+      "sourceCRC32": 3146524485,
+      "losslessPixelEquality": true
+    },
+    "sp_city_building_storehouse": {
+      "nativeKey": "sp_city_building_storehouse",
+      "src": "/img/nuclear-age/hero-academy.png",
+      "width": 240,
+      "height": 240,
+      "bytes": 69476,
+      "sha256": "b01f7a403bdd1a573b9bbd7bcb93877143f00acd23d9bb3b2b90d30a8160c7eb",
+      "sourcePNG_SHA256": "b01f7a403bdd1a573b9bbd7bcb93877143f00acd23d9bb3b2b90d30a8160c7eb",
+      "sourceBundleSHA256": "e46d6e749cfedb5f07bfe49d3c9a4d86f189c97dd85f85818d7d30a940e1d2a3",
+      "assetId": 55608,
+      "bundleId": 207824,
+      "sourceCRC32": 3146524485,
+      "losslessPixelEquality": true
+    },
+    "sp_citybuilding_hero_buff_attack": {
+      "nativeKey": "sp_citybuilding_hero_buff_attack",
+      "src": "/img/nuclear-age/warbringer-monument.png",
+      "width": 240,
+      "height": 240,
+      "bytes": 67302,
+      "sha256": "daf223158650787e5dc7e1b65883cd72a46a1d022d165f09112c04bf29b16972",
+      "sourcePNG_SHA256": "daf223158650787e5dc7e1b65883cd72a46a1d022d165f09112c04bf29b16972",
+      "sourceBundleSHA256": "e46d6e749cfedb5f07bfe49d3c9a4d86f189c97dd85f85818d7d30a940e1d2a3",
+      "assetId": 55835,
+      "bundleId": 207824,
+      "sourceCRC32": 3146524485,
+      "losslessPixelEquality": true
+    },
+    "sp_citybuilding_hero_buff_defence": {
+      "nativeKey": "sp_citybuilding_hero_buff_defence",
+      "src": "/img/nuclear-age/aegis-monument.png",
+      "width": 240,
+      "height": 240,
+      "bytes": 66445,
+      "sha256": "1e1e35774e53311625109e78dcc2e333afc677b6b6ad544395758265ae8afed2",
+      "sourcePNG_SHA256": "1e1e35774e53311625109e78dcc2e333afc677b6b6ad544395758265ae8afed2",
+      "sourceBundleSHA256": "e46d6e749cfedb5f07bfe49d3c9a4d86f189c97dd85f85818d7d30a940e1d2a3",
+      "assetId": 55837,
+      "bundleId": 207824,
+      "sourceCRC32": 3146524485,
+      "losslessPixelEquality": true
+    },
+    "sp_citybuilding_hero_buff_hp": {
+      "nativeKey": "sp_citybuilding_hero_buff_hp",
+      "src": "/img/nuclear-age/guardian-of-life-monument.png",
+      "width": 240,
+      "height": 240,
+      "bytes": 71646,
+      "sha256": "b8fc5df9984537b137aa72183258d0bdd9b315d51a4e8cc121bb464eba464a9f",
+      "sourcePNG_SHA256": "b8fc5df9984537b137aa72183258d0bdd9b315d51a4e8cc121bb464eba464a9f",
+      "sourceBundleSHA256": "e46d6e749cfedb5f07bfe49d3c9a4d86f189c97dd85f85818d7d30a940e1d2a3",
+      "assetId": 55839,
+      "bundleId": 207824,
+      "sourceCRC32": 3146524485,
+      "losslessPixelEquality": true
+    },
+    "sp_citybuilding_electricity_policy_lv0": {
+      "nativeKey": "sp_citybuilding_electricity_policy_lv0",
+      "src": "/img/nuclear-age/artifact-workshop.png",
+      "width": 240,
+      "height": 240,
+      "bytes": 68302,
+      "sha256": "be514ef751ba205a3515c27b535cacc5211cac99416217c93aee8e0422fbb698",
+      "sourcePNG_SHA256": "be514ef751ba205a3515c27b535cacc5211cac99416217c93aee8e0422fbb698",
+      "sourceBundleSHA256": "7735a4229f6f0661af95afa2c41402c98c2ce6d92d965238efb7815b07af3ec1",
+      "assetId": 55811,
+      "bundleId": 207825,
+      "sourceCRC32": 1567323363,
+      "losslessPixelEquality": true
     }
   },
   "rewards": [
@@ -4610,14 +4708,3182 @@
         }
       ],
       "availability": "configured-release-unverified"
+    },
+    {
+      "id": 800016,
+      "code": "embassy",
+      "nameKey": "embassy_name",
+      "names": {
+        "en": "Comms Outpost",
+        "ko": "연락소",
+        "ja": "集会所",
+        "zh-tw": "聯絡站",
+        "de": "Außenposten",
+        "ru": "Станция связи",
+        "zh-cn": "联络站",
+        "ar": "Comms Outpost",
+        "nl": "Assemblagepunt",
+        "fr": "Avant-poste de communication",
+        "id": "Pos Komunikasi",
+        "it": "Avamposto delle comunicazioni",
+        "pl": "Miejsce zbiórki",
+        "pt": "Ponto de Montagem",
+        "es": "Puesto de comunicaciones",
+        "sv": "Samlingspunkt",
+        "th": "สถานีสื่อสาร",
+        "tr": "İletişim Karakolu",
+        "vi": "Comms Outpost",
+        "ms": "Pos Komunikasi",
+        "nb": "Comms Outpost"
+      },
+      "nameEvidence": {
+        "en": "official-client",
+        "ko": "official-client",
+        "ja": "official-client",
+        "zh-tw": "official-client",
+        "de": "official-client",
+        "ru": "official-client",
+        "zh-cn": "official-client",
+        "ar": "english-fallback",
+        "nl": "official-client",
+        "fr": "official-client",
+        "id": "official-client",
+        "it": "official-client",
+        "pl": "official-client",
+        "pt": "official-client",
+        "es": "official-client",
+        "sv": "official-client",
+        "th": "official-client",
+        "tr": "official-client",
+        "vi": "english-fallback",
+        "ms": "official-client",
+        "nb": "english-fallback"
+      },
+      "nativeImage": "sp_city_building_embassy",
+      "scope": "verified-client-configured-state-gated-release-not-independently-proven",
+      "image": {
+        "nativeKey": "sp_city_building_embassy",
+        "src": "/img/nuclear-age/comms-outpost.png",
+        "width": 240,
+        "height": 240,
+        "bytes": 73976,
+        "sha256": "af11076094c5e06523db5e1e43f905a99f026935aa2fec0f98840ab318af5634",
+        "sourcePNG_SHA256": "af11076094c5e06523db5e1e43f905a99f026935aa2fec0f98840ab318af5634",
+        "sourceBundleSHA256": "e46d6e749cfedb5f07bfe49d3c9a4d86f189c97dd85f85818d7d30a940e1d2a3",
+        "assetId": 55562,
+        "bundleId": 207824,
+        "sourceCRC32": 3146524485,
+        "losslessPixelEquality": true
+      },
+      "stages": [
+        {
+          "sourceId": 507690,
+          "sourceKey": "building_embassy_30_2",
+          "sequence": 1,
+          "targetNuclearLevel": 1,
+          "step": 1,
+          "level": 30,
+          "rank": 1,
+          "completedNuclearLevel": 0,
+          "nuclearFuel": 40,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501054,
+              "buildingId": 800005,
+              "code": "building_stronghold_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": "building_level_upper_limit_time_33"
+        },
+        {
+          "sourceId": 507691,
+          "sourceKey": "building_embassy_30_3",
+          "sequence": 2,
+          "targetNuclearLevel": 1,
+          "step": 2,
+          "level": 30,
+          "rank": 2,
+          "completedNuclearLevel": 0,
+          "nuclearFuel": 56,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501054,
+              "buildingId": 800005,
+              "code": "building_stronghold_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507692,
+          "sourceKey": "building_embassy_30_4",
+          "sequence": 3,
+          "targetNuclearLevel": 1,
+          "step": 3,
+          "level": 30,
+          "rank": 3,
+          "completedNuclearLevel": 0,
+          "nuclearFuel": 72,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501054,
+              "buildingId": 800005,
+              "code": "building_stronghold_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507693,
+          "sourceKey": "building_embassy_30_5",
+          "sequence": 4,
+          "targetNuclearLevel": 1,
+          "step": 4,
+          "level": 30,
+          "rank": 4,
+          "completedNuclearLevel": 0,
+          "nuclearFuel": 88,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501054,
+              "buildingId": 800005,
+              "code": "building_stronghold_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507694,
+          "sourceKey": "building_embassy_31_1",
+          "sequence": 5,
+          "targetNuclearLevel": 1,
+          "step": 5,
+          "level": 31,
+          "rank": 0,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 104,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501054,
+              "buildingId": 800005,
+              "code": "building_stronghold_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507695,
+          "sourceKey": "building_embassy_31_2",
+          "sequence": 6,
+          "targetNuclearLevel": 2,
+          "step": 1,
+          "level": 31,
+          "rank": 1,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 120,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501058,
+              "buildingId": 800005,
+              "code": "building_stronghold_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507696,
+          "sourceKey": "building_embassy_31_3",
+          "sequence": 7,
+          "targetNuclearLevel": 2,
+          "step": 2,
+          "level": 31,
+          "rank": 2,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 136,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501058,
+              "buildingId": 800005,
+              "code": "building_stronghold_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507697,
+          "sourceKey": "building_embassy_31_4",
+          "sequence": 8,
+          "targetNuclearLevel": 2,
+          "step": 3,
+          "level": 31,
+          "rank": 3,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 152,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501058,
+              "buildingId": 800005,
+              "code": "building_stronghold_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507698,
+          "sourceKey": "building_embassy_31_5",
+          "sequence": 9,
+          "targetNuclearLevel": 2,
+          "step": 4,
+          "level": 31,
+          "rank": 4,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 168,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501058,
+              "buildingId": 800005,
+              "code": "building_stronghold_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507699,
+          "sourceKey": "building_embassy_32_1",
+          "sequence": 10,
+          "targetNuclearLevel": 2,
+          "step": 5,
+          "level": 32,
+          "rank": 0,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 168,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501058,
+              "buildingId": 800005,
+              "code": "building_stronghold_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507700,
+          "sourceKey": "building_embassy_32_2",
+          "sequence": 11,
+          "targetNuclearLevel": 3,
+          "step": 1,
+          "level": 32,
+          "rank": 1,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 168,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501249,
+              "buildingId": 800005,
+              "code": "building_stronghold_33_1",
+              "level": 33,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507701,
+          "sourceKey": "building_embassy_32_3",
+          "sequence": 12,
+          "targetNuclearLevel": 3,
+          "step": 2,
+          "level": 32,
+          "rank": 2,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 168,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501249,
+              "buildingId": 800005,
+              "code": "building_stronghold_33_1",
+              "level": 33,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507702,
+          "sourceKey": "building_embassy_32_4",
+          "sequence": 13,
+          "targetNuclearLevel": 3,
+          "step": 3,
+          "level": 32,
+          "rank": 3,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 168,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501249,
+              "buildingId": 800005,
+              "code": "building_stronghold_33_1",
+              "level": 33,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507703,
+          "sourceKey": "building_embassy_32_5",
+          "sequence": 14,
+          "targetNuclearLevel": 3,
+          "step": 4,
+          "level": 32,
+          "rank": 4,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 168,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501249,
+              "buildingId": 800005,
+              "code": "building_stronghold_33_1",
+              "level": 33,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507704,
+          "sourceKey": "building_embassy_33_1",
+          "sequence": 15,
+          "targetNuclearLevel": 3,
+          "step": 5,
+          "level": 33,
+          "rank": 0,
+          "completedNuclearLevel": 3,
+          "nuclearFuel": 168,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501249,
+              "buildingId": 800005,
+              "code": "building_stronghold_33_1",
+              "level": 33,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        }
+      ],
+      "availability": "configured-release-unverified"
+    },
+    {
+      "id": 800152,
+      "code": "garrison",
+      "nameKey": "garrison_name",
+      "names": {
+        "en": "Garrison",
+        "ko": "주둔소",
+        "ja": "駐屯所",
+        "zh-tw": "駐兵所",
+        "de": "Garnison",
+        "ru": "Гарнизон",
+        "zh-cn": "驻兵所",
+        "ar": "Garrison",
+        "nl": "Garnizoen",
+        "fr": "Garnison",
+        "id": "Garnisun",
+        "it": "Presidio",
+        "pl": "Garnizon",
+        "pt": "Guarnição",
+        "es": "Guarnición",
+        "sv": "Garnison",
+        "th": "ค่ายทหาร",
+        "tr": "Garnizon",
+        "vi": "Garrison",
+        "ms": "Garisun",
+        "nb": "Garrison"
+      },
+      "nameEvidence": {
+        "en": "official-client",
+        "ko": "official-client",
+        "ja": "official-client",
+        "zh-tw": "official-client",
+        "de": "official-client",
+        "ru": "official-client",
+        "zh-cn": "official-client",
+        "ar": "english-fallback",
+        "nl": "official-client",
+        "fr": "official-client",
+        "id": "official-client",
+        "it": "official-client",
+        "pl": "official-client",
+        "pt": "official-client",
+        "es": "official-client",
+        "sv": "official-client",
+        "th": "official-client",
+        "tr": "official-client",
+        "vi": "english-fallback",
+        "ms": "official-client",
+        "nb": "english-fallback"
+      },
+      "nativeImage": "sp_city_building_garrison",
+      "scope": "verified-client-configured-state-gated-release-not-independently-proven",
+      "image": {
+        "nativeKey": "sp_city_building_garrison",
+        "src": "/img/nuclear-age/garrison-station.png",
+        "width": 240,
+        "height": 240,
+        "bytes": 52355,
+        "sha256": "269c5c0ba77a017e6bbd54fddc3899cd7538ded51249932110a460ac5460dc9b",
+        "sourcePNG_SHA256": "269c5c0ba77a017e6bbd54fddc3899cd7538ded51249932110a460ac5460dc9b",
+        "sourceBundleSHA256": "e46d6e749cfedb5f07bfe49d3c9a4d86f189c97dd85f85818d7d30a940e1d2a3",
+        "assetId": 55563,
+        "bundleId": 207824,
+        "sourceCRC32": 3146524485,
+        "losslessPixelEquality": true
+      },
+      "stages": [
+        {
+          "sourceId": 508280,
+          "sourceKey": "garrison_30_2",
+          "sequence": 1,
+          "targetNuclearLevel": 1,
+          "step": 1,
+          "level": 30,
+          "rank": 1,
+          "completedNuclearLevel": 0,
+          "nuclearFuel": 100,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501054,
+              "buildingId": 800005,
+              "code": "building_stronghold_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": "building_level_upper_limit_time_33"
+        },
+        {
+          "sourceId": 508281,
+          "sourceKey": "garrison_30_3",
+          "sequence": 2,
+          "targetNuclearLevel": 1,
+          "step": 2,
+          "level": 30,
+          "rank": 2,
+          "completedNuclearLevel": 0,
+          "nuclearFuel": 170,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501054,
+              "buildingId": 800005,
+              "code": "building_stronghold_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 508282,
+          "sourceKey": "garrison_30_4",
+          "sequence": 3,
+          "targetNuclearLevel": 1,
+          "step": 3,
+          "level": 30,
+          "rank": 3,
+          "completedNuclearLevel": 0,
+          "nuclearFuel": 220,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501054,
+              "buildingId": 800005,
+              "code": "building_stronghold_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 508283,
+          "sourceKey": "garrison_30_5",
+          "sequence": 4,
+          "targetNuclearLevel": 1,
+          "step": 4,
+          "level": 30,
+          "rank": 4,
+          "completedNuclearLevel": 0,
+          "nuclearFuel": 250,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501054,
+              "buildingId": 800005,
+              "code": "building_stronghold_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 508284,
+          "sourceKey": "garrison_31_1",
+          "sequence": 5,
+          "targetNuclearLevel": 1,
+          "step": 5,
+          "level": 31,
+          "rank": 0,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 280,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501054,
+              "buildingId": 800005,
+              "code": "building_stronghold_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 508285,
+          "sourceKey": "garrison_31_2",
+          "sequence": 6,
+          "targetNuclearLevel": 2,
+          "step": 1,
+          "level": 31,
+          "rank": 1,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 300,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501058,
+              "buildingId": 800005,
+              "code": "building_stronghold_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 508286,
+          "sourceKey": "garrison_31_3",
+          "sequence": 7,
+          "targetNuclearLevel": 2,
+          "step": 2,
+          "level": 31,
+          "rank": 2,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 320,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501058,
+              "buildingId": 800005,
+              "code": "building_stronghold_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 508287,
+          "sourceKey": "garrison_31_4",
+          "sequence": 8,
+          "targetNuclearLevel": 2,
+          "step": 3,
+          "level": 31,
+          "rank": 3,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 340,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501058,
+              "buildingId": 800005,
+              "code": "building_stronghold_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 508288,
+          "sourceKey": "garrison_31_5",
+          "sequence": 9,
+          "targetNuclearLevel": 2,
+          "step": 4,
+          "level": 31,
+          "rank": 4,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 360,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501058,
+              "buildingId": 800005,
+              "code": "building_stronghold_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 508289,
+          "sourceKey": "garrison_32_1",
+          "sequence": 10,
+          "targetNuclearLevel": 2,
+          "step": 5,
+          "level": 32,
+          "rank": 0,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 380,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501058,
+              "buildingId": 800005,
+              "code": "building_stronghold_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 508290,
+          "sourceKey": "garrison_32_2",
+          "sequence": 11,
+          "targetNuclearLevel": 3,
+          "step": 1,
+          "level": 32,
+          "rank": 1,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 400,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501249,
+              "buildingId": 800005,
+              "code": "building_stronghold_33_1",
+              "level": 33,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 508291,
+          "sourceKey": "garrison_32_3",
+          "sequence": 12,
+          "targetNuclearLevel": 3,
+          "step": 2,
+          "level": 32,
+          "rank": 2,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 410,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501249,
+              "buildingId": 800005,
+              "code": "building_stronghold_33_1",
+              "level": 33,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 508292,
+          "sourceKey": "garrison_32_4",
+          "sequence": 13,
+          "targetNuclearLevel": 3,
+          "step": 3,
+          "level": 32,
+          "rank": 3,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 430,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501249,
+              "buildingId": 800005,
+              "code": "building_stronghold_33_1",
+              "level": 33,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 508293,
+          "sourceKey": "garrison_32_5",
+          "sequence": 14,
+          "targetNuclearLevel": 3,
+          "step": 4,
+          "level": 32,
+          "rank": 4,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 440,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501249,
+              "buildingId": 800005,
+              "code": "building_stronghold_33_1",
+              "level": 33,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 508294,
+          "sourceKey": "garrison_33_1",
+          "sequence": 15,
+          "targetNuclearLevel": 3,
+          "step": 5,
+          "level": 33,
+          "rank": 0,
+          "completedNuclearLevel": 3,
+          "nuclearFuel": 450,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501249,
+              "buildingId": 800005,
+              "code": "building_stronghold_33_1",
+              "level": 33,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        }
+      ],
+      "availability": "configured-release-unverified"
+    },
+    {
+      "id": 800142,
+      "code": "hero_skill_book",
+      "nameKey": "building_hero_skill_book_name",
+      "names": {
+        "en": "Hero Academy",
+        "ko": "영웅 아카데미",
+        "ja": "英雄学院",
+        "zh-tw": "英雄學院",
+        "de": "Heldenakademie",
+        "ru": "Академия героев",
+        "zh-cn": "英雄学院",
+        "ar": "Hero Academy",
+        "nl": "Kamer van legendes",
+        "fr": "Académie de héros",
+        "id": "Akademi Pahlawan",
+        "it": "Accademia degli Eroi",
+        "pl": "Komnata legend",
+        "pt": "Academia de Herói",
+        "es": "Academia de héroes",
+        "sv": "Legendernas sal",
+        "th": "โรงเรียนวีรบุรุษ",
+        "tr": "Kahraman Akademisi",
+        "vi": "Hero Academy",
+        "ms": "Akademi Wira",
+        "nb": "Hero Academy"
+      },
+      "nameEvidence": {
+        "en": "official-client",
+        "ko": "official-client",
+        "ja": "official-client",
+        "zh-tw": "official-client",
+        "de": "official-client",
+        "ru": "official-client",
+        "zh-cn": "official-client",
+        "ar": "english-fallback",
+        "nl": "official-client",
+        "fr": "official-client",
+        "id": "official-client",
+        "it": "official-client",
+        "pl": "official-client",
+        "pt": "official-client",
+        "es": "official-client",
+        "sv": "official-client",
+        "th": "official-client",
+        "tr": "official-client",
+        "vi": "english-fallback",
+        "ms": "official-client",
+        "nb": "english-fallback"
+      },
+      "nativeImage": "sp_city_building_storehouse",
+      "scope": "verified-client-configured-state-gated-release-not-independently-proven",
+      "image": {
+        "nativeKey": "sp_city_building_storehouse",
+        "src": "/img/nuclear-age/hero-academy.png",
+        "width": 240,
+        "height": 240,
+        "bytes": 69476,
+        "sha256": "b01f7a403bdd1a573b9bbd7bcb93877143f00acd23d9bb3b2b90d30a8160c7eb",
+        "sourcePNG_SHA256": "b01f7a403bdd1a573b9bbd7bcb93877143f00acd23d9bb3b2b90d30a8160c7eb",
+        "sourceBundleSHA256": "e46d6e749cfedb5f07bfe49d3c9a4d86f189c97dd85f85818d7d30a940e1d2a3",
+        "assetId": 55608,
+        "bundleId": 207824,
+        "sourceCRC32": 3146524485,
+        "losslessPixelEquality": true
+      },
+      "stages": [
+        {
+          "sourceId": 507705,
+          "sourceKey": "building_hero_skill_book_30_2",
+          "sequence": 1,
+          "targetNuclearLevel": 1,
+          "step": 1,
+          "level": 30,
+          "rank": 1,
+          "completedNuclearLevel": 0,
+          "nuclearFuel": 100,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501054,
+              "buildingId": 800005,
+              "code": "building_stronghold_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": "building_level_upper_limit_time_33"
+        },
+        {
+          "sourceId": 507706,
+          "sourceKey": "building_hero_skill_book_30_3",
+          "sequence": 2,
+          "targetNuclearLevel": 1,
+          "step": 2,
+          "level": 30,
+          "rank": 2,
+          "completedNuclearLevel": 0,
+          "nuclearFuel": 170,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501054,
+              "buildingId": 800005,
+              "code": "building_stronghold_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507707,
+          "sourceKey": "building_hero_skill_book_30_4",
+          "sequence": 3,
+          "targetNuclearLevel": 1,
+          "step": 3,
+          "level": 30,
+          "rank": 3,
+          "completedNuclearLevel": 0,
+          "nuclearFuel": 220,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501054,
+              "buildingId": 800005,
+              "code": "building_stronghold_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507708,
+          "sourceKey": "building_hero_skill_book_30_5",
+          "sequence": 4,
+          "targetNuclearLevel": 1,
+          "step": 4,
+          "level": 30,
+          "rank": 4,
+          "completedNuclearLevel": 0,
+          "nuclearFuel": 250,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501054,
+              "buildingId": 800005,
+              "code": "building_stronghold_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507709,
+          "sourceKey": "building_hero_skill_book_31_1",
+          "sequence": 5,
+          "targetNuclearLevel": 1,
+          "step": 5,
+          "level": 31,
+          "rank": 0,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 280,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501054,
+              "buildingId": 800005,
+              "code": "building_stronghold_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507710,
+          "sourceKey": "building_hero_skill_book_31_2",
+          "sequence": 6,
+          "targetNuclearLevel": 2,
+          "step": 1,
+          "level": 31,
+          "rank": 1,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 300,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501058,
+              "buildingId": 800005,
+              "code": "building_stronghold_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507711,
+          "sourceKey": "building_hero_skill_book_31_3",
+          "sequence": 7,
+          "targetNuclearLevel": 2,
+          "step": 2,
+          "level": 31,
+          "rank": 2,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 320,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501058,
+              "buildingId": 800005,
+              "code": "building_stronghold_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507712,
+          "sourceKey": "building_hero_skill_book_31_4",
+          "sequence": 8,
+          "targetNuclearLevel": 2,
+          "step": 3,
+          "level": 31,
+          "rank": 3,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 340,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501058,
+              "buildingId": 800005,
+              "code": "building_stronghold_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507713,
+          "sourceKey": "building_hero_skill_book_31_5",
+          "sequence": 9,
+          "targetNuclearLevel": 2,
+          "step": 4,
+          "level": 31,
+          "rank": 4,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 360,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501058,
+              "buildingId": 800005,
+              "code": "building_stronghold_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507714,
+          "sourceKey": "building_hero_skill_book_32_1",
+          "sequence": 10,
+          "targetNuclearLevel": 2,
+          "step": 5,
+          "level": 32,
+          "rank": 0,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 380,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501058,
+              "buildingId": 800005,
+              "code": "building_stronghold_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507715,
+          "sourceKey": "building_hero_skill_book_32_2",
+          "sequence": 11,
+          "targetNuclearLevel": 3,
+          "step": 1,
+          "level": 32,
+          "rank": 1,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 400,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501249,
+              "buildingId": 800005,
+              "code": "building_stronghold_33_1",
+              "level": 33,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507716,
+          "sourceKey": "building_hero_skill_book_32_3",
+          "sequence": 12,
+          "targetNuclearLevel": 3,
+          "step": 2,
+          "level": 32,
+          "rank": 2,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 410,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501249,
+              "buildingId": 800005,
+              "code": "building_stronghold_33_1",
+              "level": 33,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507717,
+          "sourceKey": "building_hero_skill_book_32_4",
+          "sequence": 13,
+          "targetNuclearLevel": 3,
+          "step": 3,
+          "level": 32,
+          "rank": 3,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 430,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501249,
+              "buildingId": 800005,
+              "code": "building_stronghold_33_1",
+              "level": 33,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507718,
+          "sourceKey": "building_hero_skill_book_32_5",
+          "sequence": 14,
+          "targetNuclearLevel": 3,
+          "step": 4,
+          "level": 32,
+          "rank": 4,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 440,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501249,
+              "buildingId": 800005,
+              "code": "building_stronghold_33_1",
+              "level": 33,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507719,
+          "sourceKey": "building_hero_skill_book_33_1",
+          "sequence": 15,
+          "targetNuclearLevel": 3,
+          "step": 5,
+          "level": 33,
+          "rank": 0,
+          "completedNuclearLevel": 3,
+          "nuclearFuel": 450,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501249,
+              "buildingId": 800005,
+              "code": "building_stronghold_33_1",
+              "level": 33,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        }
+      ],
+      "availability": "configured-release-unverified"
+    },
+    {
+      "id": 800147,
+      "code": "hero_buff_attack",
+      "nameKey": "building_hero_attack_name",
+      "names": {
+        "en": "Warbringer",
+        "ko": "전장의 신 기념비",
+        "ja": "戦神の記念碑",
+        "zh-tw": "戰神紀念碑",
+        "de": "Kriegsbringer",
+        "ru": "Вестник войны",
+        "zh-cn": "战神纪念碑",
+        "ar": "Warbringer",
+        "nl": "Oorlogsbrenger",
+        "fr": "Héraut des guerres",
+        "id": "Pembawa Perang",
+        "it": "Portaguerra",
+        "pl": "Niosący wojnę",
+        "pt": "Portador da Guerra",
+        "es": "Heraldo de guerra",
+        "sv": "Krigsbringaren",
+        "th": "วอร์บริงเกอร์",
+        "tr": "Savaş Getiren",
+        "vi": "Warbringer",
+        "ms": "Pembawa Peperangan",
+        "nb": "Warbringer"
+      },
+      "nameEvidence": {
+        "en": "official-client",
+        "ko": "official-client",
+        "ja": "official-client",
+        "zh-tw": "official-client",
+        "de": "official-client",
+        "ru": "official-client",
+        "zh-cn": "official-client",
+        "ar": "english-fallback",
+        "nl": "official-client",
+        "fr": "official-client",
+        "id": "official-client",
+        "it": "official-client",
+        "pl": "official-client",
+        "pt": "official-client",
+        "es": "official-client",
+        "sv": "official-client",
+        "th": "official-client",
+        "tr": "official-client",
+        "vi": "english-fallback",
+        "ms": "official-client",
+        "nb": "english-fallback"
+      },
+      "nativeImage": "sp_citybuilding_hero_buff_attack",
+      "scope": "verified-client-configured-state-gated-release-not-independently-proven",
+      "image": {
+        "nativeKey": "sp_citybuilding_hero_buff_attack",
+        "src": "/img/nuclear-age/warbringer-monument.png",
+        "width": 240,
+        "height": 240,
+        "bytes": 67302,
+        "sha256": "daf223158650787e5dc7e1b65883cd72a46a1d022d165f09112c04bf29b16972",
+        "sourcePNG_SHA256": "daf223158650787e5dc7e1b65883cd72a46a1d022d165f09112c04bf29b16972",
+        "sourceBundleSHA256": "e46d6e749cfedb5f07bfe49d3c9a4d86f189c97dd85f85818d7d30a940e1d2a3",
+        "assetId": 55835,
+        "bundleId": 207824,
+        "sourceCRC32": 3146524485,
+        "losslessPixelEquality": true
+      },
+      "stages": [
+        {
+          "sourceId": 507599,
+          "sourceKey": "building_hero_buff_attack_30_2",
+          "sequence": 1,
+          "targetNuclearLevel": 1,
+          "step": 1,
+          "level": 30,
+          "rank": 1,
+          "completedNuclearLevel": 0,
+          "nuclearFuel": 100,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501054,
+              "buildingId": 800005,
+              "code": "building_stronghold_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": "building_level_upper_limit_time_33"
+        },
+        {
+          "sourceId": 507600,
+          "sourceKey": "building_hero_buff_attack_30_3",
+          "sequence": 2,
+          "targetNuclearLevel": 1,
+          "step": 2,
+          "level": 30,
+          "rank": 2,
+          "completedNuclearLevel": 0,
+          "nuclearFuel": 170,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501054,
+              "buildingId": 800005,
+              "code": "building_stronghold_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507601,
+          "sourceKey": "building_hero_buff_attack_30_4",
+          "sequence": 3,
+          "targetNuclearLevel": 1,
+          "step": 3,
+          "level": 30,
+          "rank": 3,
+          "completedNuclearLevel": 0,
+          "nuclearFuel": 220,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501054,
+              "buildingId": 800005,
+              "code": "building_stronghold_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507602,
+          "sourceKey": "building_hero_buff_attack_30_5",
+          "sequence": 4,
+          "targetNuclearLevel": 1,
+          "step": 4,
+          "level": 30,
+          "rank": 4,
+          "completedNuclearLevel": 0,
+          "nuclearFuel": 250,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501054,
+              "buildingId": 800005,
+              "code": "building_stronghold_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507603,
+          "sourceKey": "building_hero_buff_attack_31_1",
+          "sequence": 5,
+          "targetNuclearLevel": 1,
+          "step": 5,
+          "level": 31,
+          "rank": 0,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 280,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501054,
+              "buildingId": 800005,
+              "code": "building_stronghold_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507604,
+          "sourceKey": "building_hero_buff_attack_31_2",
+          "sequence": 6,
+          "targetNuclearLevel": 2,
+          "step": 1,
+          "level": 31,
+          "rank": 1,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 300,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501058,
+              "buildingId": 800005,
+              "code": "building_stronghold_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507605,
+          "sourceKey": "building_hero_buff_attack_31_3",
+          "sequence": 7,
+          "targetNuclearLevel": 2,
+          "step": 2,
+          "level": 31,
+          "rank": 2,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 320,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501058,
+              "buildingId": 800005,
+              "code": "building_stronghold_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507606,
+          "sourceKey": "building_hero_buff_attack_31_4",
+          "sequence": 8,
+          "targetNuclearLevel": 2,
+          "step": 3,
+          "level": 31,
+          "rank": 3,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 340,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501058,
+              "buildingId": 800005,
+              "code": "building_stronghold_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507607,
+          "sourceKey": "building_hero_buff_attack_31_5",
+          "sequence": 9,
+          "targetNuclearLevel": 2,
+          "step": 4,
+          "level": 31,
+          "rank": 4,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 360,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501058,
+              "buildingId": 800005,
+              "code": "building_stronghold_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507608,
+          "sourceKey": "building_hero_buff_attack_32_1",
+          "sequence": 10,
+          "targetNuclearLevel": 2,
+          "step": 5,
+          "level": 32,
+          "rank": 0,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 380,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501058,
+              "buildingId": 800005,
+              "code": "building_stronghold_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507609,
+          "sourceKey": "building_hero_buff_attack_32_2",
+          "sequence": 11,
+          "targetNuclearLevel": 3,
+          "step": 1,
+          "level": 32,
+          "rank": 1,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 400,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501249,
+              "buildingId": 800005,
+              "code": "building_stronghold_33_1",
+              "level": 33,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507610,
+          "sourceKey": "building_hero_buff_attack_32_3",
+          "sequence": 12,
+          "targetNuclearLevel": 3,
+          "step": 2,
+          "level": 32,
+          "rank": 2,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 410,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501249,
+              "buildingId": 800005,
+              "code": "building_stronghold_33_1",
+              "level": 33,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507611,
+          "sourceKey": "building_hero_buff_attack_32_4",
+          "sequence": 13,
+          "targetNuclearLevel": 3,
+          "step": 3,
+          "level": 32,
+          "rank": 3,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 430,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501249,
+              "buildingId": 800005,
+              "code": "building_stronghold_33_1",
+              "level": 33,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507612,
+          "sourceKey": "building_hero_buff_attack_32_5",
+          "sequence": 14,
+          "targetNuclearLevel": 3,
+          "step": 4,
+          "level": 32,
+          "rank": 4,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 440,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501249,
+              "buildingId": 800005,
+              "code": "building_stronghold_33_1",
+              "level": 33,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507613,
+          "sourceKey": "building_hero_buff_attack_33_1",
+          "sequence": 15,
+          "targetNuclearLevel": 3,
+          "step": 5,
+          "level": 33,
+          "rank": 0,
+          "completedNuclearLevel": 3,
+          "nuclearFuel": 450,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501249,
+              "buildingId": 800005,
+              "code": "building_stronghold_33_1",
+              "level": 33,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        }
+      ],
+      "availability": "configured-release-unverified"
+    },
+    {
+      "id": 800148,
+      "code": "hero_buff_defence",
+      "nameKey": "building_hero_defence_name",
+      "names": {
+        "en": "Golden Aegis",
+        "ko": "이지스 수호비",
+        "ja": "神盾の記念碑",
+        "zh-tw": "神盾守護碑",
+        "de": "Goldene Ägis",
+        "ru": "Золотая защита",
+        "zh-cn": "神盾守护碑",
+        "ar": "Golden Aegis",
+        "nl": "Gouden schild",
+        "fr": "Égide d'or",
+        "id": "Aegis Emas",
+        "it": "Egida dorata",
+        "pl": "Złota egida",
+        "pt": "Égide Dourada",
+        "es": "Égida dorada",
+        "sv": "Gyllene Aigis",
+        "th": "ทองเอจิส",
+        "tr": "Altın Aegis",
+        "vi": "Golden Aegis",
+        "ms": "Aegis Emas",
+        "nb": "Golden Aegis"
+      },
+      "nameEvidence": {
+        "en": "official-client",
+        "ko": "official-client",
+        "ja": "official-client",
+        "zh-tw": "official-client",
+        "de": "official-client",
+        "ru": "official-client",
+        "zh-cn": "official-client",
+        "ar": "english-fallback",
+        "nl": "official-client",
+        "fr": "official-client",
+        "id": "official-client",
+        "it": "official-client",
+        "pl": "official-client",
+        "pt": "official-client",
+        "es": "official-client",
+        "sv": "official-client",
+        "th": "official-client",
+        "tr": "official-client",
+        "vi": "english-fallback",
+        "ms": "official-client",
+        "nb": "english-fallback"
+      },
+      "nativeImage": "sp_citybuilding_hero_buff_defence",
+      "scope": "verified-client-configured-state-gated-release-not-independently-proven",
+      "image": {
+        "nativeKey": "sp_citybuilding_hero_buff_defence",
+        "src": "/img/nuclear-age/aegis-monument.png",
+        "width": 240,
+        "height": 240,
+        "bytes": 66445,
+        "sha256": "1e1e35774e53311625109e78dcc2e333afc677b6b6ad544395758265ae8afed2",
+        "sourcePNG_SHA256": "1e1e35774e53311625109e78dcc2e333afc677b6b6ad544395758265ae8afed2",
+        "sourceBundleSHA256": "e46d6e749cfedb5f07bfe49d3c9a4d86f189c97dd85f85818d7d30a940e1d2a3",
+        "assetId": 55837,
+        "bundleId": 207824,
+        "sourceCRC32": 3146524485,
+        "losslessPixelEquality": true
+      },
+      "stages": [
+        {
+          "sourceId": 507614,
+          "sourceKey": "building_hero_buff_defence_30_2",
+          "sequence": 1,
+          "targetNuclearLevel": 1,
+          "step": 1,
+          "level": 30,
+          "rank": 1,
+          "completedNuclearLevel": 0,
+          "nuclearFuel": 100,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501054,
+              "buildingId": 800005,
+              "code": "building_stronghold_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": "building_level_upper_limit_time_33"
+        },
+        {
+          "sourceId": 507615,
+          "sourceKey": "building_hero_buff_defence_30_3",
+          "sequence": 2,
+          "targetNuclearLevel": 1,
+          "step": 2,
+          "level": 30,
+          "rank": 2,
+          "completedNuclearLevel": 0,
+          "nuclearFuel": 170,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501054,
+              "buildingId": 800005,
+              "code": "building_stronghold_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507616,
+          "sourceKey": "building_hero_buff_defence_30_4",
+          "sequence": 3,
+          "targetNuclearLevel": 1,
+          "step": 3,
+          "level": 30,
+          "rank": 3,
+          "completedNuclearLevel": 0,
+          "nuclearFuel": 220,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501054,
+              "buildingId": 800005,
+              "code": "building_stronghold_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507617,
+          "sourceKey": "building_hero_buff_defence_30_5",
+          "sequence": 4,
+          "targetNuclearLevel": 1,
+          "step": 4,
+          "level": 30,
+          "rank": 4,
+          "completedNuclearLevel": 0,
+          "nuclearFuel": 250,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501054,
+              "buildingId": 800005,
+              "code": "building_stronghold_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507618,
+          "sourceKey": "building_hero_buff_defence_31_1",
+          "sequence": 5,
+          "targetNuclearLevel": 1,
+          "step": 5,
+          "level": 31,
+          "rank": 0,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 280,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501054,
+              "buildingId": 800005,
+              "code": "building_stronghold_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507619,
+          "sourceKey": "building_hero_buff_defence_31_2",
+          "sequence": 6,
+          "targetNuclearLevel": 2,
+          "step": 1,
+          "level": 31,
+          "rank": 1,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 300,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501058,
+              "buildingId": 800005,
+              "code": "building_stronghold_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507620,
+          "sourceKey": "building_hero_buff_defence_31_3",
+          "sequence": 7,
+          "targetNuclearLevel": 2,
+          "step": 2,
+          "level": 31,
+          "rank": 2,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 320,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501058,
+              "buildingId": 800005,
+              "code": "building_stronghold_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507621,
+          "sourceKey": "building_hero_buff_defence_31_4",
+          "sequence": 8,
+          "targetNuclearLevel": 2,
+          "step": 3,
+          "level": 31,
+          "rank": 3,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 340,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501058,
+              "buildingId": 800005,
+              "code": "building_stronghold_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507622,
+          "sourceKey": "building_hero_buff_defence_31_5",
+          "sequence": 9,
+          "targetNuclearLevel": 2,
+          "step": 4,
+          "level": 31,
+          "rank": 4,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 360,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501058,
+              "buildingId": 800005,
+              "code": "building_stronghold_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507623,
+          "sourceKey": "building_hero_buff_defence_32_1",
+          "sequence": 10,
+          "targetNuclearLevel": 2,
+          "step": 5,
+          "level": 32,
+          "rank": 0,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 380,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501058,
+              "buildingId": 800005,
+              "code": "building_stronghold_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507624,
+          "sourceKey": "building_hero_buff_defence_32_2",
+          "sequence": 11,
+          "targetNuclearLevel": 3,
+          "step": 1,
+          "level": 32,
+          "rank": 1,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 400,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501249,
+              "buildingId": 800005,
+              "code": "building_stronghold_33_1",
+              "level": 33,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507625,
+          "sourceKey": "building_hero_buff_defence_32_3",
+          "sequence": 12,
+          "targetNuclearLevel": 3,
+          "step": 2,
+          "level": 32,
+          "rank": 2,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 410,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501249,
+              "buildingId": 800005,
+              "code": "building_stronghold_33_1",
+              "level": 33,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507626,
+          "sourceKey": "building_hero_buff_defence_32_4",
+          "sequence": 13,
+          "targetNuclearLevel": 3,
+          "step": 3,
+          "level": 32,
+          "rank": 3,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 430,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501249,
+              "buildingId": 800005,
+              "code": "building_stronghold_33_1",
+              "level": 33,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507627,
+          "sourceKey": "building_hero_buff_defence_32_5",
+          "sequence": 14,
+          "targetNuclearLevel": 3,
+          "step": 4,
+          "level": 32,
+          "rank": 4,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 440,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501249,
+              "buildingId": 800005,
+              "code": "building_stronghold_33_1",
+              "level": 33,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507628,
+          "sourceKey": "building_hero_buff_defence_33_1",
+          "sequence": 15,
+          "targetNuclearLevel": 3,
+          "step": 5,
+          "level": 33,
+          "rank": 0,
+          "completedNuclearLevel": 3,
+          "nuclearFuel": 450,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501249,
+              "buildingId": 800005,
+              "code": "building_stronghold_33_1",
+              "level": 33,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        }
+      ],
+      "availability": "configured-release-unverified"
+    },
+    {
+      "id": 800149,
+      "code": "hero_buff_hp",
+      "nameKey": "building_hero_hp_name",
+      "names": {
+        "en": "Guardian of Life",
+        "ko": "생명의 용사비",
+        "ja": "勇士の記念碑",
+        "zh-tw": "生命勇士碑",
+        "de": "Wächter des Lebens",
+        "ru": "Хранитель жизни",
+        "zh-cn": "生命勇士碑",
+        "ar": "Guardian of Life",
+        "nl": "Beschermer van het leven",
+        "fr": "Gardien de la vie",
+        "id": "Penjaga Kehidupan",
+        "it": "Custode della vita",
+        "pl": "Strażnik życia",
+        "pt": "Guardião da Vida",
+        "es": "Guardián de la vida",
+        "sv": "Livets väktare",
+        "th": "ผู้พิทักษ์แห่งชีวิต",
+        "tr": "Hayatın Muhafızı",
+        "vi": "Guardian of Life",
+        "ms": "Pengawal Kehidupan",
+        "nb": "Guardian of Life"
+      },
+      "nameEvidence": {
+        "en": "official-client",
+        "ko": "official-client",
+        "ja": "official-client",
+        "zh-tw": "official-client",
+        "de": "official-client",
+        "ru": "official-client",
+        "zh-cn": "official-client",
+        "ar": "english-fallback",
+        "nl": "official-client",
+        "fr": "official-client",
+        "id": "official-client",
+        "it": "official-client",
+        "pl": "official-client",
+        "pt": "official-client",
+        "es": "official-client",
+        "sv": "official-client",
+        "th": "official-client",
+        "tr": "official-client",
+        "vi": "english-fallback",
+        "ms": "official-client",
+        "nb": "english-fallback"
+      },
+      "nativeImage": "sp_citybuilding_hero_buff_hp",
+      "scope": "verified-client-configured-state-gated-release-not-independently-proven",
+      "image": {
+        "nativeKey": "sp_citybuilding_hero_buff_hp",
+        "src": "/img/nuclear-age/guardian-of-life-monument.png",
+        "width": 240,
+        "height": 240,
+        "bytes": 71646,
+        "sha256": "b8fc5df9984537b137aa72183258d0bdd9b315d51a4e8cc121bb464eba464a9f",
+        "sourcePNG_SHA256": "b8fc5df9984537b137aa72183258d0bdd9b315d51a4e8cc121bb464eba464a9f",
+        "sourceBundleSHA256": "e46d6e749cfedb5f07bfe49d3c9a4d86f189c97dd85f85818d7d30a940e1d2a3",
+        "assetId": 55839,
+        "bundleId": 207824,
+        "sourceCRC32": 3146524485,
+        "losslessPixelEquality": true
+      },
+      "stages": [
+        {
+          "sourceId": 507629,
+          "sourceKey": "building_hero_buff_hp_30_2",
+          "sequence": 1,
+          "targetNuclearLevel": 1,
+          "step": 1,
+          "level": 30,
+          "rank": 1,
+          "completedNuclearLevel": 0,
+          "nuclearFuel": 100,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501054,
+              "buildingId": 800005,
+              "code": "building_stronghold_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": "building_level_upper_limit_time_33"
+        },
+        {
+          "sourceId": 507630,
+          "sourceKey": "building_hero_buff_hp_30_3",
+          "sequence": 2,
+          "targetNuclearLevel": 1,
+          "step": 2,
+          "level": 30,
+          "rank": 2,
+          "completedNuclearLevel": 0,
+          "nuclearFuel": 170,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501054,
+              "buildingId": 800005,
+              "code": "building_stronghold_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507631,
+          "sourceKey": "building_hero_buff_hp_30_4",
+          "sequence": 3,
+          "targetNuclearLevel": 1,
+          "step": 3,
+          "level": 30,
+          "rank": 3,
+          "completedNuclearLevel": 0,
+          "nuclearFuel": 220,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501054,
+              "buildingId": 800005,
+              "code": "building_stronghold_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507632,
+          "sourceKey": "building_hero_buff_hp_30_5",
+          "sequence": 4,
+          "targetNuclearLevel": 1,
+          "step": 4,
+          "level": 30,
+          "rank": 4,
+          "completedNuclearLevel": 0,
+          "nuclearFuel": 250,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501054,
+              "buildingId": 800005,
+              "code": "building_stronghold_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507633,
+          "sourceKey": "building_hero_buff_hp_31_1",
+          "sequence": 5,
+          "targetNuclearLevel": 1,
+          "step": 5,
+          "level": 31,
+          "rank": 0,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 280,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501054,
+              "buildingId": 800005,
+              "code": "building_stronghold_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507634,
+          "sourceKey": "building_hero_buff_hp_31_2",
+          "sequence": 6,
+          "targetNuclearLevel": 2,
+          "step": 1,
+          "level": 31,
+          "rank": 1,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 300,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501058,
+              "buildingId": 800005,
+              "code": "building_stronghold_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507635,
+          "sourceKey": "building_hero_buff_hp_31_3",
+          "sequence": 7,
+          "targetNuclearLevel": 2,
+          "step": 2,
+          "level": 31,
+          "rank": 2,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 320,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501058,
+              "buildingId": 800005,
+              "code": "building_stronghold_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507636,
+          "sourceKey": "building_hero_buff_hp_31_4",
+          "sequence": 8,
+          "targetNuclearLevel": 2,
+          "step": 3,
+          "level": 31,
+          "rank": 3,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 340,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501058,
+              "buildingId": 800005,
+              "code": "building_stronghold_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507637,
+          "sourceKey": "building_hero_buff_hp_31_5",
+          "sequence": 9,
+          "targetNuclearLevel": 2,
+          "step": 4,
+          "level": 31,
+          "rank": 4,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 360,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501058,
+              "buildingId": 800005,
+              "code": "building_stronghold_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507638,
+          "sourceKey": "building_hero_buff_hp_32_1",
+          "sequence": 10,
+          "targetNuclearLevel": 2,
+          "step": 5,
+          "level": 32,
+          "rank": 0,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 380,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501058,
+              "buildingId": 800005,
+              "code": "building_stronghold_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507639,
+          "sourceKey": "building_hero_buff_hp_32_2",
+          "sequence": 11,
+          "targetNuclearLevel": 3,
+          "step": 1,
+          "level": 32,
+          "rank": 1,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 400,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501249,
+              "buildingId": 800005,
+              "code": "building_stronghold_33_1",
+              "level": 33,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507640,
+          "sourceKey": "building_hero_buff_hp_32_3",
+          "sequence": 12,
+          "targetNuclearLevel": 3,
+          "step": 2,
+          "level": 32,
+          "rank": 2,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 410,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501249,
+              "buildingId": 800005,
+              "code": "building_stronghold_33_1",
+              "level": 33,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507641,
+          "sourceKey": "building_hero_buff_hp_32_4",
+          "sequence": 13,
+          "targetNuclearLevel": 3,
+          "step": 3,
+          "level": 32,
+          "rank": 3,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 430,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501249,
+              "buildingId": 800005,
+              "code": "building_stronghold_33_1",
+              "level": 33,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507642,
+          "sourceKey": "building_hero_buff_hp_32_5",
+          "sequence": 14,
+          "targetNuclearLevel": 3,
+          "step": 4,
+          "level": 32,
+          "rank": 4,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 440,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501249,
+              "buildingId": 800005,
+              "code": "building_stronghold_33_1",
+              "level": 33,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507643,
+          "sourceKey": "building_hero_buff_hp_33_1",
+          "sequence": 15,
+          "targetNuclearLevel": 3,
+          "step": 5,
+          "level": 33,
+          "rank": 0,
+          "completedNuclearLevel": 3,
+          "nuclearFuel": 450,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501249,
+              "buildingId": 800005,
+              "code": "building_stronghold_33_1",
+              "level": 33,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        }
+      ],
+      "availability": "configured-release-unverified"
+    },
+    {
+      "id": 800150,
+      "code": "construction_speed_up",
+      "nameKey": "building_construction_speed_up_name",
+      "names": {
+        "en": "Artifact Workshop",
+        "ko": "도구 공방",
+        "ja": "配電設備",
+        "zh-tw": "器具工坊",
+        "de": "Artefaktwerkstatt",
+        "ru": "Мастерская артефактов",
+        "zh-cn": "器具工坊",
+        "ar": "Artifact Workshop",
+        "nl": "Onderstation",
+        "fr": "Atelier d'artefacts",
+        "id": "Bengkel Artefak",
+        "it": "Officina di manufatti",
+        "pl": "Podstacja",
+        "pt": "Oficina de Artefatos",
+        "es": "Taller de artefactos",
+        "sv": "Ställverk",
+        "th": "ห้องปฏิบัติการสิ่งประดิษฐ์",
+        "tr": "Eser Atölyesi",
+        "vi": "Artifact Workshop",
+        "ms": "Bengkel Artefak",
+        "nb": "Artifact Workshop"
+      },
+      "nameEvidence": {
+        "en": "official-client",
+        "ko": "official-client",
+        "ja": "official-client",
+        "zh-tw": "official-client",
+        "de": "official-client",
+        "ru": "official-client",
+        "zh-cn": "official-client",
+        "ar": "english-fallback",
+        "nl": "official-client",
+        "fr": "official-client",
+        "id": "official-client",
+        "it": "official-client",
+        "pl": "official-client",
+        "pt": "official-client",
+        "es": "official-client",
+        "sv": "official-client",
+        "th": "official-client",
+        "tr": "official-client",
+        "vi": "english-fallback",
+        "ms": "official-client",
+        "nb": "english-fallback"
+      },
+      "nativeImage": "sp_citybuilding_electricity_policy_lv0",
+      "scope": "verified-client-configured-state-gated-release-not-independently-proven",
+      "image": {
+        "nativeKey": "sp_citybuilding_electricity_policy_lv0",
+        "src": "/img/nuclear-age/artifact-workshop.png",
+        "width": 240,
+        "height": 240,
+        "bytes": 68302,
+        "sha256": "be514ef751ba205a3515c27b535cacc5211cac99416217c93aee8e0422fbb698",
+        "sourcePNG_SHA256": "be514ef751ba205a3515c27b535cacc5211cac99416217c93aee8e0422fbb698",
+        "sourceBundleSHA256": "7735a4229f6f0661af95afa2c41402c98c2ce6d92d965238efb7815b07af3ec1",
+        "assetId": 55811,
+        "bundleId": 207825,
+        "sourceCRC32": 1567323363,
+        "losslessPixelEquality": true
+      },
+      "stages": [
+        {
+          "sourceId": 507720,
+          "sourceKey": "construction_speed_up_30_2",
+          "sequence": 1,
+          "targetNuclearLevel": 1,
+          "step": 1,
+          "level": 30,
+          "rank": 1,
+          "completedNuclearLevel": 0,
+          "nuclearFuel": 35,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501054,
+              "buildingId": 800005,
+              "code": "building_stronghold_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": "building_level_upper_limit_time_33"
+        },
+        {
+          "sourceId": 507721,
+          "sourceKey": "construction_speed_up_30_3",
+          "sequence": 2,
+          "targetNuclearLevel": 1,
+          "step": 2,
+          "level": 30,
+          "rank": 2,
+          "completedNuclearLevel": 0,
+          "nuclearFuel": 49,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501054,
+              "buildingId": 800005,
+              "code": "building_stronghold_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507722,
+          "sourceKey": "construction_speed_up_30_4",
+          "sequence": 3,
+          "targetNuclearLevel": 1,
+          "step": 3,
+          "level": 30,
+          "rank": 3,
+          "completedNuclearLevel": 0,
+          "nuclearFuel": 63,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501054,
+              "buildingId": 800005,
+              "code": "building_stronghold_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507723,
+          "sourceKey": "construction_speed_up_30_5",
+          "sequence": 4,
+          "targetNuclearLevel": 1,
+          "step": 4,
+          "level": 30,
+          "rank": 4,
+          "completedNuclearLevel": 0,
+          "nuclearFuel": 77,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501054,
+              "buildingId": 800005,
+              "code": "building_stronghold_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507724,
+          "sourceKey": "construction_speed_up_31_1",
+          "sequence": 5,
+          "targetNuclearLevel": 1,
+          "step": 5,
+          "level": 31,
+          "rank": 0,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 91,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501054,
+              "buildingId": 800005,
+              "code": "building_stronghold_31_1",
+              "level": 31,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507725,
+          "sourceKey": "construction_speed_up_31_2",
+          "sequence": 6,
+          "targetNuclearLevel": 2,
+          "step": 1,
+          "level": 31,
+          "rank": 1,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 105,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501058,
+              "buildingId": 800005,
+              "code": "building_stronghold_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507726,
+          "sourceKey": "construction_speed_up_31_3",
+          "sequence": 7,
+          "targetNuclearLevel": 2,
+          "step": 2,
+          "level": 31,
+          "rank": 2,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 119,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501058,
+              "buildingId": 800005,
+              "code": "building_stronghold_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507727,
+          "sourceKey": "construction_speed_up_31_4",
+          "sequence": 8,
+          "targetNuclearLevel": 2,
+          "step": 3,
+          "level": 31,
+          "rank": 3,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 133,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501058,
+              "buildingId": 800005,
+              "code": "building_stronghold_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507728,
+          "sourceKey": "construction_speed_up_31_5",
+          "sequence": 9,
+          "targetNuclearLevel": 2,
+          "step": 4,
+          "level": 31,
+          "rank": 4,
+          "completedNuclearLevel": 1,
+          "nuclearFuel": 147,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501058,
+              "buildingId": 800005,
+              "code": "building_stronghold_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507729,
+          "sourceKey": "construction_speed_up_32_1",
+          "sequence": 10,
+          "targetNuclearLevel": 2,
+          "step": 5,
+          "level": 32,
+          "rank": 0,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 147,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501058,
+              "buildingId": 800005,
+              "code": "building_stronghold_32_1",
+              "level": 32,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507730,
+          "sourceKey": "construction_speed_up_32_2",
+          "sequence": 11,
+          "targetNuclearLevel": 3,
+          "step": 1,
+          "level": 32,
+          "rank": 1,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 147,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501249,
+              "buildingId": 800005,
+              "code": "building_stronghold_33_1",
+              "level": 33,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507731,
+          "sourceKey": "construction_speed_up_32_3",
+          "sequence": 12,
+          "targetNuclearLevel": 3,
+          "step": 2,
+          "level": 32,
+          "rank": 2,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 147,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501249,
+              "buildingId": 800005,
+              "code": "building_stronghold_33_1",
+              "level": 33,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507732,
+          "sourceKey": "construction_speed_up_32_4",
+          "sequence": 13,
+          "targetNuclearLevel": 3,
+          "step": 3,
+          "level": 32,
+          "rank": 3,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 147,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501249,
+              "buildingId": 800005,
+              "code": "building_stronghold_33_1",
+              "level": 33,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507733,
+          "sourceKey": "construction_speed_up_32_5",
+          "sequence": 14,
+          "targetNuclearLevel": 3,
+          "step": 4,
+          "level": 32,
+          "rank": 4,
+          "completedNuclearLevel": 2,
+          "nuclearFuel": 147,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501249,
+              "buildingId": 800005,
+              "code": "building_stronghold_33_1",
+              "level": 33,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        },
+        {
+          "sourceId": 507734,
+          "sourceKey": "construction_speed_up_33_1",
+          "sequence": 15,
+          "targetNuclearLevel": 3,
+          "step": 5,
+          "level": 33,
+          "rank": 0,
+          "completedNuclearLevel": 3,
+          "nuclearFuel": 147,
+          "nuclearFuelStatus": "verified-configured-requirement",
+          "nuclearFuelSourceField": "ReqItemSoc",
+          "requiredBuildings": [
+            {
+              "id": 501249,
+              "buildingId": 800005,
+              "code": "building_stronghold_33_1",
+              "level": 33,
+              "rank": 0
+            }
+          ],
+          "requirementsSourceField": "ReqBuildingD",
+          "requirementsStatus": "verified-configured-requirement",
+          "functionOpen": null
+        }
+      ],
+      "availability": "configured-release-unverified"
     }
   ],
   "configuredBuildingScope": {
     "includedInReleasedTotals": false,
     "buildingTypeIds": [
       800012,
-      800168
+      800168,
+      800016,
+      800152,
+      800142,
+      800147,
+      800148,
+      800149,
+      800150
     ],
-    "releaseStatus": "not-confirmed-by-current-release-notes"
+    "releaseStatus": "not-confirmed-by-current-release-notes",
+    "includedInAllBuildingsSummary": true
+  },
+  "fuelSummaryScopes": {
+    "primaryPrerequisiteField": "ReqBuildingD",
+    "tree": {
+      "buildingIds": [
+        800005,
+        800007,
+        800010,
+        800012
+      ],
+      "sourceTableSHA256": "19b0eb838c5dfce7c47c3fae2dacbaf98bf2754bdb90fc98ef963be076fd76df",
+      "sourceTargetRowIds": [
+        501054,
+        501058,
+        501249
+      ],
+      "scopeMeaning": "Sum every included building to the same selected nuclear level; this is not the minimum dependency cost to reach that Power Plant level."
+    },
+    "all": {
+      "buildingIds": [
+        800005,
+        800007,
+        800008,
+        800009,
+        800010,
+        800012,
+        800168,
+        800016,
+        800152,
+        800142,
+        800147,
+        800148,
+        800149,
+        800150
+      ]
+    },
+    "ordinaryFactory": {
+      "buildingId": 800419,
+      "requiredLevelsByPowerPlantNuclearLevel": [
+        3,
+        6,
+        9
+      ],
+      "includedInNuclearLevelTotals": false
+    }
   }
 }

@@ -5,6 +5,7 @@ const root=path.resolve(__dirname,'..'),read=f=>fs.readFileSync(path.join(root,f
 const registry=require('../data/i18n/locales.json').locales,groups=require('./lib/global-localization').routeGroups();
 const data=require('../data/hero-atlas-client.json'),publication=require('../data/hero-atlas-publication.json'),routes=require('../data/hero-atlas-routes.json');
 const introductions=require('../data/xssr-heroes.json');
+const Buildings=require('./build-buildings-unified');
 test('reviewed client rows and release decisions remain separate; new or unheld rows fail closed',()=>{
  assert.equal(G.validatePublication(data,publication,routes).held,6);
  const extra=structuredClone(data);extra.heroes.push({...extra.heroes[0],id:'unverified',clientId:999});assert.throws(()=>G.validatePublication(extra,publication,routes),/publication review/);
@@ -44,13 +45,36 @@ test('numeric model strings, old table values, executable programs, ads and TEN 
  for(const [a,b]of [['"100"','"101"'],['window.answer=7','window.answer=8'],['<td>100</td>','<td>101</td>'],['adsbygoogle.js','adsbygoogle-removed.js'],['/shop/ten/','/shop/other/']])assert.throws(()=>G.verifyPreserved(html,html.replace(a,b),'fixture'),/protected|numeric table/);
 });
 test('Aegis keeps exact published bytes while real source changes are regenerated',()=>{
- const html=read('ko/buildings/aegis-monument/index.html');assert.equal(B.project(html,'ko','aegis-monument'),html);
+ const html=Buildings.project(read('ko/buildings/aegis-monument/index.html'),'ko','aegis-monument');assert.equal(B.project(html,'ko','aegis-monument'),html);
  const d=parseHTML(html).document;const cfg=d.querySelector('[data-building-system-model]');const model=JSON.parse(cfg.textContent);model.buildings[0].profiles[0].rows[0].resources[0]++;
  cfg.textContent=JSON.stringify(model);const altered=d.toString();const fixed=B.project(altered,'ko','aegis-monument');assert.notEqual(fixed,altered);assert.deepEqual(JSON.parse(parseHTML(fixed).document.querySelector('[data-building-system-model]').textContent),JSON.parse(parseHTML(html).document.querySelector('[data-building-system-model]').textContent));
 });
 test('building projection never treats a V3 trust paragraph as its own building introduction',()=>{
- const html=read('ko/buildings/lab/index.html'),before=parseHTML(html).document.querySelector('[data-v3-owned="trust"]')?.outerHTML;assert(before);const projected=B.project(html,'ko','lab');assert.equal(parseHTML(projected).document.querySelector('[data-v3-owned="trust"]').outerHTML,before);assert.equal(projected,html);
+ const html=Buildings.project(read('ko/buildings/lab/index.html'),'ko','lab'),before=parseHTML(html).document.querySelector('[data-v3-owned="trust"]')?.outerHTML;assert(before);const projected=B.project(html,'ko','lab');assert.equal(parseHTML(projected).document.querySelector('[data-v3-owned="trust"]').outerHTML,before);assert.equal(projected,html);
 });
 test('existing legacy anchors keep their precise parent and accessibility attributes',()=>{
- const html=read('ko/buildings/artifact-workshop/index.html'),d=parseHTML(html).document;assert(d.querySelector('.sheet-heading #ts3-data-table-0'));assert.equal(B.project(html,'ko','artifact-workshop'),html);
+ const html=Buildings.project(read('ko/buildings/artifact-workshop/index.html'),'ko','artifact-workshop'),d=parseHTML(html).document;assert(d.querySelector('.sheet-heading #ts3-data-table-0'));assert.equal(B.project(html,'ko','artifact-workshop'),html);
+});
+
+test('all 462 registered building pages require the exact unified owner, not merely a matching route count',()=>{
+ const seen=[];
+ assert.deepEqual(G.validateBuildings(root,{readPage:file=>{seen.push(file);const [locale,,slug]=file.split('/');return Buildings.project(read(file),locale,slug);}}),{locales:21,routes:22,pages:462,buildingIds:29});
+ assert.deepEqual([...seen].sort(),[...Buildings.pages].sort());
+ const saved=Buildings.pages;try{Buildings.pages=saved.slice(1);assert.throws(()=>G.validateBuildings(root),/publication coverage/);}finally{Buildings.pages=saved;}
+ const first=Buildings.pages[0];
+ assert.throws(()=>G.validateBuildings(root,{readPage:file=>{const [locale,,slug]=file.split('/'),html=Buildings.project(read(file),locale,slug);return file===first?html.replace('data-building-system="'+slug+'"','data-building-system="unreviewed"'):html;}}),/unreviewed|Expected|hospital|power-plant|strictly equal/);
+});
+
+test('building migration normalizes only registered before sheets while retaining numeric, program, ad and TEN guards',()=>{
+ const file='en/buildings/hospital/index.html',d=parseHTML(read(file)).document,cfgBefore=B.config('en','hospital');
+ // Explicit legacy input keeps the allowance test meaningful after publication
+ // has already migrated the real page. Never mutate a public file.
+ cfgBefore.buildings[0].profiles=structuredClone(B.model.buildings.find(b=>b.id===800010).profiles);
+ const template=d.createElement('template');template.innerHTML=B.sheetFromConfig(cfgBefore);d.querySelector('[data-building-system]').replaceWith(template.content);
+ const extra='<script type="application/json" id="unowned-fixture">{"cost":"420"}</script><script>window.unownedFixture=420;</script><table data-unowned-fixture><tr><td>420</td></tr></table><script src="https://pagead2.googlesyndication.com/adsbygoogle-fixture.js"></script><a href="https://www.lootbar.com/en/shop/ten/fixture">TEN fixture</a>',before=d.toString().replace('</main>',extra+'</main>'),after=Buildings.project(before,'en','hospital');
+ assert.doesNotThrow(()=>G.verifyPreserved(before,after,file));
+ for(const [a,b]of [['"cost":"420"','"cost":"421"'],['window.unownedFixture=420','window.unownedFixture=421'],['<td>420</td>','<td>421</td>'],['adsbygoogle-fixture.js','adsbygoogle-removed.js'],['/shop/ten/fixture','/shop/other/fixture']])assert.throws(()=>G.verifyPreserved(before,after.replace(a,b),file),/protected|numeric table/);
+ const tampered=parseHTML(after).document,model=tampered.querySelector('[data-building-system-model]'),cfg=JSON.parse(model.textContent);cfg.buildings[0].profiles[0].rows[1].resources[0]++;model.textContent=JSON.stringify(cfg);assert.throws(()=>G.verifyPreserved(before,tampered.toString(),file),/A numeric values changed|unified building owner/);
+ const injected=after.replace('<div class="sheet-heading">','<p>Unreviewed building claim</p><div class="sheet-heading">');assert.notEqual(injected,after);assert.throws(()=>G.verifyPreserved(before,injected,file),/unified building owner/);
+ assert.throws(()=>G.verifyPreserved(before,after,'en/buildings/hospital-unregistered/index.html'),/protected models|numeric table/,'Unregistered routes cannot borrow the building migration allowance');
 });
