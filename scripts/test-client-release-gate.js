@@ -13,7 +13,7 @@ test('reviewed client rows and release decisions remain separate; new or unheld 
 });
 
 test('official introductions authorize localized routes without becoming client records or universal releases',()=>{
- const extra=G.officialAdditions(data,routes,introductions);assert.deepEqual(extra.map(h=>h.id),['furiosa','alita']);assert(extra.every(h=>h.clientId===null));
+ const extra=G.officialAdditions(data,routes,introductions);assert.deepEqual(extra.map(h=>h.id),['furiosa','alita']);assert.deepEqual(extra.map(h=>h.clientId),[25300243,25300244]);
  assert.equal(G.validatePublication(data,publication,routes,introductions).catalogIdentities,31);
  assert.equal(G.reviewedSitemap().added.length,42);assert.equal(new Set(G.reviewedSitemap().expected).size,G.reviewedSitemap().expected.length);
  const fake=structuredClone(introductions);fake.heroes.find(h=>h.id==='furiosa').clientId=999;assert.throws(()=>G.officialAdditions(data,routes,fake),/fabricate a client/);
@@ -24,10 +24,10 @@ test('official introductions authorize localized routes without becoming client 
  const undeclared=structuredClone(routes);undeclared.heroes.push({id:'unreviewed',routes:{}});assert.throws(()=>G.officialAdditions(data,undeclared,introductions),/reviewed identity routes/);
 });
 test('official introductions cannot enter calculation models or display fabricated client IDs and private paths',()=>{
- assert.deepEqual(G.validateOfficialIsolation(root),{officialPages:42,calculationIdentities:29,officialGameplayRows:0});
+ assert.deepEqual(G.validateOfficialIsolation(root),{officialPages:42,calculationIdentities:31,officialGameplayRows:2});
  const formation=structuredClone(require('../data/v4-formation.json'));formation.heroes.push({...formation.heroes[0],id:'furiosa',clientId:null});assert.throws(()=>G.validateOfficialIsolation(root,{formation}),/verified client identities/);
- const relations=structuredClone(require('../data/hero-pet-relations.json'));relations.rules.push({...relations.rules[0],heroId:'alita'});assert.throws(()=>G.validateOfficialIsolation(root,{relations}),/unsupported pairing/);
- for(const insert of ['<span data-client-skill-id="999999">Invented skill</span>','<p>C:\\Users\\private\\decoded-language</p>'])assert.throws(()=>G.validateOfficialIsolation(root,{readPage:file=>read(file).replace('<h1>',''+insert+'<h1>')}),/masquerade|Private client/);
+ const relations=structuredClone(require('../data/hero-pet-relations.json'));relations.rules.push({...relations.rules[0],heroId:'alita'});assert.throws(()=>G.validateOfficialIsolation(root,{relations}),/Unsupported pairing/);
+ for(const insert of ['<span data-xssr-skill="999999">Invented skill</span>','<p>C:\\Users\\private\\decoded-language</p>'])assert.throws(()=>G.validateOfficialIsolation(root,{readPage:file=>read(file).replace('<h1>',''+insert+'<h1>')}),/verified client skills|Private client/);
 });
 test('all 21 current home and X-SSR pages retain reciprocal language navigation and exact current-page maps',()=>{
  for(const group of groups.filter(g=>['','heroes/lava/','heroes/furiosa/','heroes/alita/'].includes(g.id)))for(const locale of registry){const route=group.routes[locale.code];assert(G.validateDocument(read(route.slice(1)+'index.html'),{locale:locale.code,route,routes:group.routes,registry}));}

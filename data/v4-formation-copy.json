@@ -113,7 +113,8 @@
         "low-health-target": "The hero and pet both have bonuses against low-Health targets.",
         "healing-support": "The hero restores Health and the pet has a Healing Effect bonus; interaction needs testing.",
         "low-health-survival": "The hero has a low-Health effect and the pet reduces Normal Attack damage in a matching low-Health window.",
-        "position-attack-scaling": "The pet increases Attack in this row, and a cited hero skill explicitly scales with the hero’s Attack."
+        "position-attack-scaling": "The pet increases Attack in this row, and a cited hero skill explicitly scales with the hero’s Attack.",
+        "front-row-healing": "The pet heals front-row allies at the start of battle."
       },
       "conditions": {
         "same-target": "The low-health conditions of both the hero skill and pet skill must apply to the same attack target.",
@@ -248,7 +249,8 @@
         "low-health-target": "영웅과 펫 모두 체력이 낮은 대상을 상대로 추가 효과가 있습니다.",
         "healing-support": "영웅은 체력을 회복시키고 펫은 치유 효과 보너스를 제공합니다. 실제 상호작용은 검증이 필요합니다.",
         "low-health-survival": "영웅의 낮은 체력 조건과 펫의 일반 공격 피해 감소 조건이 겹칠 수 있습니다.",
-        "position-attack-scaling": "펫이 해당 열의 공격력을 높이며, 근거 영웅 스킬은 자신의 공격력에 비례한다고 명시합니다."
+        "position-attack-scaling": "펫이 해당 열의 공격력을 높이며, 근거 영웅 스킬은 자신의 공격력에 비례한다고 명시합니다.",
+        "front-row-healing": "전투 시작 시 펫이 전방 아군을 치유합니다."
       },
       "conditions": {
         "same-target": "영웅 스킬과 펫 스킬의 저체력 조건은 같은 공격 대상에 적용되어야 합니다.",
@@ -383,7 +385,8 @@
         "low-health-target": "英雄とペットの両方に、低HPの対象への追加効果があります。",
         "healing-support": "英雄はHPを回復し、ペットには治療効果ボーナスがあります。相互作用は実戦検証が必要です。",
         "low-health-survival": "英雄の低HP効果と、ペットの通常攻撃ダメージ軽減の発動範囲が重なる可能性があります。",
-        "position-attack-scaling": "ペットがこの列の攻撃力を高め、参照する英雄スキルは明示的に自身の攻撃力に比例します。"
+        "position-attack-scaling": "ペットがこの列の攻撃力を高め、参照する英雄スキルは明示的に自身の攻撃力に比例します。",
+        "front-row-healing": "戦闘開始時にペットが前列の味方を回復します。"
       },
       "conditions": {
         "same-target": "英雄スキルとペットスキルの低HP条件は、同じ攻撃対象に適用される必要があります。",
@@ -518,7 +521,8 @@
         "low-health-target": "英雄和宠物均对低生命值目标拥有额外效果。",
         "healing-support": "英雄可恢复生命，宠物提供治疗效果加成；两者的互动需要实战验证。",
         "low-health-survival": "英雄的低生命值效果可能与宠物降低普通攻击伤害的生效区间重合。",
-        "position-attack-scaling": "宠物提高该排攻击力，且引用的英雄技能明确按自身攻击力计算。"
+        "position-attack-scaling": "宠物提高该排攻击力，且引用的英雄技能明确按自身攻击力计算。",
+        "front-row-healing": "战斗开始时，宠物会治疗前排友方。"
       },
       "conditions": {
         "same-target": "英雄技能和宠物技能的低生命值条件必须针对同一个攻击目标。",
@@ -653,7 +657,8 @@
         "low-health-target": "英雄和寵物均對低生命值目標擁有額外效果。",
         "healing-support": "英雄可恢復生命，寵物提供治療效果加成；兩者的互動需要實戰驗證。",
         "low-health-survival": "英雄的低生命值效果可能與寵物降低普通攻擊傷害的生效區間重合。",
-        "position-attack-scaling": "寵物提高該排攻擊力，且引用的英雄技能明確依自身攻擊力計算。"
+        "position-attack-scaling": "寵物提高該排攻擊力，且引用的英雄技能明確依自身攻擊力計算。",
+        "front-row-healing": "戰鬥開始時，寵物會治療前排友方。"
       },
       "conditions": {
         "same-target": "英雄技能與寵物技能的低生命值條件必須針對同一個攻擊目標。",
@@ -788,7 +793,8 @@
         "low-health-target": "Hero dan pet memiliki efek tambahan terhadap target dengan HP rendah.",
         "healing-support": "Hero memulihkan HP dan pet memberi bonus Efek Penyembuhan; interaksinya perlu diuji.",
         "low-health-survival": "Efek hero saat HP rendah dapat bertepatan dengan pengurangan damage Serangan Normal dari pet.",
-        "position-attack-scaling": "Pet meningkatkan Serangan di baris ini, dan skill hero yang dirujuk secara eksplisit mengikuti Serangan hero itu."
+        "position-attack-scaling": "Pet meningkatkan Serangan di baris ini, dan skill hero yang dirujuk secara eksplisit mengikuti Serangan hero itu.",
+        "front-row-healing": "Pet menyembuhkan sekutu baris depan pada awal pertempuran."
       },
       "conditions": {
         "same-target": "Syarat HP rendah pada skill hero dan skill pet harus berlaku untuk target serangan yang sama.",
@@ -923,7 +929,8 @@
         "low-health-target": "Wira dan haiwan mempunyai kesan tambahan terhadap sasaran dengan HP rendah.",
         "healing-support": "Wira memulihkan HP dan haiwan memberi bonus Kesan Penyembuhan; interaksinya perlu diuji.",
         "low-health-survival": "Kesan wira pada HP rendah mungkin bertindih dengan pengurangan kerosakan Serangan Biasa oleh haiwan.",
-        "position-attack-scaling": "Haiwan teman meningkatkan Serangan barisan ini, dan kemahiran wira dirujuk secara jelas berskala dengan Serangan wira."
+        "position-attack-scaling": "Haiwan teman meningkatkan Serangan barisan ini, dan kemahiran wira dirujuk secara jelas berskala dengan Serangan wira.",
+        "front-row-healing": "Haiwan peliharaan memulihkan sekutu barisan hadapan pada awal pertempuran."
       },
       "conditions": {
         "same-target": "Syarat HP rendah bagi kemahiran wira dan kemahiran haiwan mesti terpakai pada sasaran serangan yang sama.",
@@ -1058,7 +1065,8 @@
         "low-health-target": "Anh hùng và thú cưng đều có hiệu ứng bổ sung với mục tiêu ít HP.",
         "healing-support": "Anh hùng hồi HP và thú cưng tăng hiệu quả trị liệu; cần kiểm chứng tương tác thực tế.",
         "low-health-survival": "Điều kiện HP thấp của anh hùng có thể trùng với khoảng giảm sát thương Đánh thường của thú cưng.",
-        "position-attack-scaling": "Thú cưng tăng Tấn công của hàng này, và kỹ năng anh hùng được dẫn có hệ số rõ ràng theo Tấn công của anh hùng."
+        "position-attack-scaling": "Thú cưng tăng Tấn công của hàng này, và kỹ năng anh hùng được dẫn có hệ số rõ ràng theo Tấn công của anh hùng.",
+        "front-row-healing": "Thú cưng hồi máu cho đồng minh hàng trước khi trận chiến bắt đầu."
       },
       "conditions": {
         "same-target": "Điều kiện máu thấp của kỹ năng anh hùng và kỹ năng thú cưng phải áp dụng cho cùng một mục tiêu tấn công.",
@@ -1193,7 +1201,8 @@
         "low-health-target": "ทั้งฮีโร่และสัตว์เลี้ยงมีเอฟเฟกต์เพิ่มเติมต่อเป้าหมายที่มี HP ต่ำ",
         "healing-support": "ฮีโร่ฟื้นฟู HP และสัตว์เลี้ยงเพิ่มประสิทธิภาพการรักษา ต้องทดสอบการทำงานร่วมกัน",
         "low-health-survival": "เอฟเฟกต์เมื่อ HP ต่ำของฮีโร่อาจตรงกับช่วงลดความเสียหายจากการโจมตีปกติของสัตว์เลี้ยง",
-        "position-attack-scaling": "สัตว์เลี้ยงเพิ่มพลังโจมตีในแถวนี้ และสกิลฮีโร่ที่อ้างถึงมีผลตามพลังโจมตีของฮีโร่อย่างชัดเจน"
+        "position-attack-scaling": "สัตว์เลี้ยงเพิ่มพลังโจมตีในแถวนี้ และสกิลฮีโร่ที่อ้างถึงมีผลตามพลังโจมตีของฮีโร่อย่างชัดเจน",
+        "front-row-healing": "สัตว์เลี้ยงจะฟื้นฟูพลังชีวิตให้พันธมิตรแถวหน้าเมื่อเริ่มการต่อสู้"
       },
       "conditions": {
         "same-target": "เงื่อนไขพลังชีวิตต่ำของสกิลฮีโร่และสกิลสัตว์เลี้ยงต้องใช้กับเป้าหมายการโจมตีเดียวกัน",
@@ -1328,7 +1337,8 @@
         "low-health-target": "لدى البطل والحيوان الأليف تأثيرات إضافية ضد الأهداف منخفضة الصحة.",
         "healing-support": "يستعيد البطل الصحة ويمنح الحيوان الأليف مكافأة لفعالية العلاج؛ يتطلب التفاعل اختباراً عملياً.",
         "low-health-survival": "قد يتزامن تأثير البطل عند انخفاض الصحة مع نطاق تقليل ضرر الهجمات العادية للحيوان الأليف.",
-        "position-attack-scaling": "يزيد الحيوان المرافق الهجوم في هذا الصف، وتتدرج مهارة البطل المستشهد بها صراحة مع هجومه."
+        "position-attack-scaling": "يزيد الحيوان المرافق الهجوم في هذا الصف، وتتدرج مهارة البطل المستشهد بها صراحة مع هجومه.",
+        "front-row-healing": "يشفي الأليف حلفاء الصف الأمامي في بداية المعركة."
       },
       "conditions": {
         "same-target": "يجب أن تنطبق شروط انخفاض الصحة في مهارة البطل ومهارة الحيوان الأليف على هدف الهجوم نفسه.",
@@ -1463,7 +1473,8 @@
         "low-health-target": "Held und Begleiter haben beide Boni gegen Ziele mit wenigen Lebenspunkten.",
         "healing-support": "Der Held stellt Lebenspunkte wieder her und der Begleiter besitzt einen Bonus auf die Heilwirkung; das Zusammenspiel muss getestet werden.",
         "low-health-survival": "Der Held hat einen Effekt bei wenigen Lebenspunkten, und der Begleiter verringert den Schaden durch normale Angriffe in einem passenden Bereich mit wenigen Lebenspunkten.",
-        "position-attack-scaling": "Das Haustier erhöht den Angriff in dieser Reihe, und eine angeführte Heldenfähigkeit skaliert ausdrücklich mit dem Angriff des Helden."
+        "position-attack-scaling": "Das Haustier erhöht den Angriff in dieser Reihe, und eine angeführte Heldenfähigkeit skaliert ausdrücklich mit dem Angriff des Helden.",
+        "front-row-healing": "Das Haustier heilt zu Kampfbeginn Verbündete in der vorderen Reihe."
       },
       "conditions": {
         "same-target": "Die Bedingungen für niedrige Lebenspunkte der Helden- und Begleiterfähigkeit müssen für dasselbe Angriffsziel gelten.",
@@ -1598,7 +1609,8 @@
         "low-health-target": "И герой, и питомец имеют бонусы против целей с низким Здоровьем.",
         "healing-support": "Герой восстанавливает Здоровье, а у питомца есть бонус к эффекту лечения; их взаимодействие требует проверки.",
         "low-health-survival": "У героя есть эффект при низком Здоровье, а питомец снижает урон обычных атак в соответствующем диапазоне низкого Здоровья.",
-        "position-attack-scaling": "Питомец повышает атаку в этом ряду, а указанный навык героя явно зависит от атаки самого героя."
+        "position-attack-scaling": "Питомец повышает атаку в этом ряду, а указанный навык героя явно зависит от атаки самого героя.",
+        "front-row-healing": "В начале боя питомец исцеляет союзников в переднем ряду."
       },
       "conditions": {
         "same-target": "Условия низкого здоровья в навыке героя и навыке питомца должны относиться к одной и той же цели атаки.",
@@ -1733,7 +1745,8 @@
         "low-health-target": "Le héros et le familier bénéficient tous deux de bonus contre les cibles dont les PV sont faibles.",
         "healing-support": "Le héros restaure des PV et le familier possède un bonus d’efficacité des soins ; leur interaction doit être testée.",
         "low-health-survival": "Le héros possède un effet lié à des PV faibles, et le familier réduit les dégâts des attaques normales dans une plage correspondante de PV faibles.",
-        "position-attack-scaling": "Le familier augmente l’attaque dans cette rangée, et une compétence de héros citée dépend explicitement de l’attaque du héros."
+        "position-attack-scaling": "Le familier augmente l’attaque dans cette rangée, et une compétence de héros citée dépend explicitement de l’attaque du héros.",
+        "front-row-healing": "Le familier soigne les alliés de première ligne au début du combat."
       },
       "conditions": {
         "same-target": "Les conditions de PV faibles de la compétence du héros et de celle du familier doivent s’appliquer à la même cible d’attaque.",
@@ -1868,7 +1881,8 @@
         "low-health-target": "Tanto el héroe como la mascota tienen bonificaciones contra objetivos con poca Salud.",
         "healing-support": "El héroe restaura Salud y la mascota tiene una bonificación al efecto de curación; la interacción requiere pruebas.",
         "low-health-survival": "El héroe tiene un efecto con Salud baja y la mascota reduce el daño de ataques normales en un intervalo correspondiente de Salud baja.",
-        "position-attack-scaling": "La mascota aumenta el ataque en esta fila, y una habilidad de héroe citada escala explícitamente con el ataque del héroe."
+        "position-attack-scaling": "La mascota aumenta el ataque en esta fila, y una habilidad de héroe citada escala explícitamente con el ataque del héroe.",
+        "front-row-healing": "La mascota cura a los aliados de la primera fila al comenzar la batalla."
       },
       "conditions": {
         "same-target": "Las condiciones de poca salud de la habilidad del héroe y de la habilidad de la mascota deben aplicarse al mismo objetivo del ataque.",
@@ -2003,7 +2017,8 @@
         "low-health-target": "O herói e o mascote têm bônus contra alvos com pouca Vida.",
         "healing-support": "O herói restaura Vida e o mascote tem um bônus de efeito de cura; a interação requer testes.",
         "low-health-survival": "O herói tem um efeito com Vida baixa, e o mascote reduz o dano de ataques normais em uma faixa correspondente de Vida baixa.",
-        "position-attack-scaling": "O mascote aumenta o ataque nesta linha, e uma habilidade de herói citada depende explicitamente do ataque do herói."
+        "position-attack-scaling": "O mascote aumenta o ataque nesta linha, e uma habilidade de herói citada depende explicitamente do ataque do herói.",
+        "front-row-healing": "O pet cura os aliados da linha da frente no início da batalha."
       },
       "conditions": {
         "same-target": "As condições de vida baixa da habilidade do herói e da habilidade do mascote devem se aplicar ao mesmo alvo do ataque.",
@@ -2138,7 +2153,8 @@
         "low-health-target": "Sia l’eroe sia il famiglio hanno bonus contro bersagli con poca Salute.",
         "healing-support": "L’eroe ripristina Salute e il famiglio ha un bonus all’efficacia delle cure; l’interazione richiede prove.",
         "low-health-survival": "L’eroe ha un effetto a Salute bassa e il famiglio riduce i danni degli attacchi normali in una fascia corrispondente di Salute bassa.",
-        "position-attack-scaling": "L’animale aumenta l’attacco in questa fila e un’abilità di eroe citata dipende esplicitamente dall’attacco dell’eroe."
+        "position-attack-scaling": "L’animale aumenta l’attacco in questa fila e un’abilità di eroe citata dipende esplicitamente dall’attacco dell’eroe.",
+        "front-row-healing": "L’animale cura gli alleati in prima fila all’inizio della battaglia."
       },
       "conditions": {
         "same-target": "Le condizioni di salute bassa dell’abilità dell’eroe e di quella del famiglio devono riferirsi allo stesso bersaglio dell’attacco.",
@@ -2273,7 +2289,8 @@
         "low-health-target": "De held en het huisdier hebben allebei bonussen tegen doelen met weinig gezondheid.",
         "healing-support": "De held herstelt gezondheid en het huisdier heeft een bonus op het genezingseffect; de wisselwerking moet worden getest.",
         "low-health-survival": "De held heeft een effect bij weinig gezondheid en het huisdier vermindert schade door normale aanvallen in een overeenkomstig bereik van weinig gezondheid.",
-        "position-attack-scaling": "Het huisdier verhoogt de aanval in deze rij en een aangehaalde heldenvaardigheid schaalt expliciet mee met de aanval van de held."
+        "position-attack-scaling": "Het huisdier verhoogt de aanval in deze rij en een aangehaalde heldenvaardigheid schaalt expliciet mee met de aanval van de held.",
+        "front-row-healing": "Het huisdier geneest bondgenoten op de voorste rij aan het begin van het gevecht."
       },
       "conditions": {
         "same-target": "De voorwaarden voor lage gezondheid van de heldenvaardigheid en de huisdiervaardigheid moeten op hetzelfde aanvalsdoel van toepassing zijn.",
@@ -2408,7 +2425,8 @@
         "low-health-target": "Både hjälten och husdjuret har bonusar mot mål med låg hälsa.",
         "healing-support": "Hjälten återställer hälsa och husdjuret har en bonus till läkande effekt; samspelet behöver testas.",
         "low-health-survival": "Hjälten har en effekt vid låg hälsa, och husdjuret minskar skadan från normala attacker inom ett motsvarande intervall med låg hälsa.",
-        "position-attack-scaling": "Husdjuret ökar attacken i denna rad, och en angiven hjälteförmåga skalar uttryckligen med hjältens attack."
+        "position-attack-scaling": "Husdjuret ökar attacken i denna rad, och en angiven hjälteförmåga skalar uttryckligen med hjältens attack.",
+        "front-row-healing": "Husdjuret helar allierade i främre raden när striden börjar."
       },
       "conditions": {
         "same-target": "Villkoren för låg hälsa i hjältens och husdjurets färdigheter måste gälla samma attackmål.",
@@ -2543,7 +2561,8 @@
         "low-health-target": "Både helten og kjæledyret har bonuser mot mål med lite helse.",
         "healing-support": "Helten gjenoppretter helse, og kjæledyret har en bonus til helbredelseseffekten; samspillet må testes.",
         "low-health-survival": "Helten har en effekt ved lav helse, og kjæledyret reduserer skade fra normale angrep i et tilsvarende intervall med lav helse.",
-        "position-attack-scaling": "Kjæledyret øker angrepet i denne rekken, og en oppgitt helteferdighet skalerer uttrykkelig med heltens angrep."
+        "position-attack-scaling": "Kjæledyret øker angrepet i denne rekken, og en oppgitt helteferdighet skalerer uttrykkelig med heltens angrep.",
+        "front-row-healing": "Kjæledyret helbreder allierte på fremste rad ved kampstart."
       },
       "conditions": {
         "same-target": "Vilkårene for lav helse i heltens og kjæledyrets ferdigheter må gjelde det samme angrepsmålet.",
@@ -2678,7 +2697,8 @@
         "low-health-target": "Bohater i zwierzak mają premie przeciwko celom z niskim Zdrowiem.",
         "healing-support": "Bohater przywraca Zdrowie, a zwierzak ma premię do efektu leczenia; ich interakcja wymaga testów.",
         "low-health-survival": "Bohater ma efekt przy niskim Zdrowiu, a zwierzak ogranicza obrażenia od zwykłych ataków w odpowiadającym mu przedziale niskiego Zdrowia.",
-        "position-attack-scaling": "Zwierzak zwiększa atak w tym rzędzie, a wskazana umiejętność bohatera wyraźnie skaluje się z jego atakiem."
+        "position-attack-scaling": "Zwierzak zwiększa atak w tym rzędzie, a wskazana umiejętność bohatera wyraźnie skaluje się z jego atakiem.",
+        "front-row-healing": "Zwierzak leczy sojuszników w przednim rzędzie na początku bitwy."
       },
       "conditions": {
         "same-target": "Warunki niskiego poziomu zdrowia w umiejętności bohatera i umiejętności zwierzaka muszą dotyczyć tego samego celu ataku.",
@@ -2813,7 +2833,8 @@
         "low-health-target": "Hem kahramanın hem evcil hayvanın düşük Sağlıklı hedeflere karşı bonusları vardır.",
         "healing-support": "Kahraman Sağlık yeniler ve evcil hayvanın İyileştirme Etkisi bonusu vardır; etkileşim test edilmelidir.",
         "low-health-survival": "Kahramanın düşük Sağlıkta çalışan bir etkisi vardır ve evcil hayvan, buna karşılık gelen düşük Sağlık aralığında Normal Saldırı hasarını azaltır.",
-        "position-attack-scaling": "Evcil hayvan bu sıradaki saldırıyı artırır ve belirtilen bir kahraman becerisi açıkça kahramanın saldırısına göre ölçeklenir."
+        "position-attack-scaling": "Evcil hayvan bu sıradaki saldırıyı artırır ve belirtilen bir kahraman becerisi açıkça kahramanın saldırısına göre ölçeklenir.",
+        "front-row-healing": "Evcil hayvan savaşın başında ön sıradaki müttefikleri iyileştirir."
       },
       "conditions": {
         "same-target": "Kahramanın becerisindeki ve evcil hayvanın becerisindeki düşük sağlık koşulları aynı saldırı hedefi için geçerli olmalıdır.",

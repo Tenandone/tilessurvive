@@ -1,0 +1,794 @@
+{
+  "schemaVersion": 1,
+  "version": {
+    "game": "2.6.300",
+    "build": 1531,
+    "reviewedOn": "2026-11-05"
+  },
+  "rankProfiles": [
+    {
+      "id": "rank-six-steps-30aaf52eaf58",
+      "rankGroups": [
+        {
+          "rank": 1,
+          "stepQuantities": [
+            3,
+            3,
+            3,
+            5,
+            5,
+            5
+          ],
+          "quantity": 24,
+          "cumulativeQuantity": 24,
+          "configuredSkillCaps": [
+            5,
+            5,
+            5,
+            0
+          ]
+        },
+        {
+          "rank": 2,
+          "stepQuantities": [
+            10,
+            10,
+            10,
+            10,
+            15,
+            15
+          ],
+          "quantity": 70,
+          "cumulativeQuantity": 94,
+          "configuredSkillCaps": [
+            10,
+            10,
+            10,
+            0
+          ]
+        },
+        {
+          "rank": 3,
+          "stepQuantities": [
+            25,
+            25,
+            25,
+            30,
+            30,
+            30
+          ],
+          "quantity": 165,
+          "cumulativeQuantity": 259,
+          "configuredSkillCaps": [
+            15,
+            15,
+            15,
+            0
+          ]
+        },
+        {
+          "rank": 4,
+          "stepQuantities": [
+            40,
+            40,
+            40,
+            40,
+            40,
+            40
+          ],
+          "quantity": 240,
+          "cumulativeQuantity": 499,
+          "configuredSkillCaps": [
+            20,
+            20,
+            20,
+            0
+          ]
+        },
+        {
+          "rank": 5,
+          "stepQuantities": [
+            50,
+            50,
+            50,
+            50,
+            50,
+            50
+          ],
+          "quantity": 300,
+          "cumulativeQuantity": 799,
+          "configuredSkillCaps": [
+            20,
+            20,
+            20,
+            0
+          ]
+        },
+        {
+          "rank": 6,
+          "stepQuantities": [
+            60,
+            60,
+            60,
+            60,
+            60,
+            60
+          ],
+          "quantity": 360,
+          "cumulativeQuantity": 1159,
+          "configuredSkillCaps": [
+            25,
+            25,
+            25,
+            0
+          ]
+        },
+        {
+          "rank": 7,
+          "stepQuantities": [
+            70,
+            70,
+            70,
+            70,
+            70,
+            70
+          ],
+          "quantity": 420,
+          "cumulativeQuantity": 1579,
+          "configuredSkillCaps": [
+            25,
+            25,
+            25,
+            0
+          ]
+        },
+        {
+          "rank": 8,
+          "stepQuantities": [
+            75,
+            75,
+            75,
+            75,
+            75,
+            75
+          ],
+          "quantity": 450,
+          "cumulativeQuantity": 2029,
+          "configuredSkillCaps": [
+            30,
+            30,
+            30,
+            5
+          ]
+        },
+        {
+          "rank": 9,
+          "stepQuantities": [
+            80,
+            80,
+            80,
+            80,
+            80,
+            80
+          ],
+          "quantity": 480,
+          "cumulativeQuantity": 2509,
+          "configuredSkillCaps": [
+            35,
+            35,
+            35,
+            5
+          ]
+        },
+        {
+          "rank": 10,
+          "stepQuantities": [
+            90,
+            90,
+            90,
+            90,
+            90,
+            90
+          ],
+          "quantity": 540,
+          "cumulativeQuantity": 3049,
+          "configuredSkillCaps": [
+            50,
+            50,
+            50,
+            5
+          ]
+        }
+      ],
+      "totalFragments": 3049
+    }
+  ],
+  "gearProfiles": [
+    {
+      "id": "exclusive-gear-cost-212b7e81d081",
+      "levels": [
+        {
+          "level": 1,
+          "quantity": 10,
+          "cumulativeQuantity": 10
+        },
+        {
+          "level": 2,
+          "quantity": 5,
+          "cumulativeQuantity": 15
+        },
+        {
+          "level": 3,
+          "quantity": 10,
+          "cumulativeQuantity": 25
+        },
+        {
+          "level": 4,
+          "quantity": 20,
+          "cumulativeQuantity": 45
+        },
+        {
+          "level": 5,
+          "quantity": 25,
+          "cumulativeQuantity": 70
+        },
+        {
+          "level": 6,
+          "quantity": 30,
+          "cumulativeQuantity": 100
+        },
+        {
+          "level": 7,
+          "quantity": 30,
+          "cumulativeQuantity": 130
+        },
+        {
+          "level": 8,
+          "quantity": 30,
+          "cumulativeQuantity": 160
+        },
+        {
+          "level": 9,
+          "quantity": 30,
+          "cumulativeQuantity": 190
+        },
+        {
+          "level": 10,
+          "quantity": 30,
+          "cumulativeQuantity": 220
+        },
+        {
+          "level": 11,
+          "quantity": 30,
+          "cumulativeQuantity": 250
+        },
+        {
+          "level": 12,
+          "quantity": 30,
+          "cumulativeQuantity": 280
+        },
+        {
+          "level": 13,
+          "quantity": 40,
+          "cumulativeQuantity": 320
+        },
+        {
+          "level": 14,
+          "quantity": 40,
+          "cumulativeQuantity": 360
+        },
+        {
+          "level": 15,
+          "quantity": 40,
+          "cumulativeQuantity": 400
+        },
+        {
+          "level": 16,
+          "quantity": 50,
+          "cumulativeQuantity": 450
+        },
+        {
+          "level": 17,
+          "quantity": 50,
+          "cumulativeQuantity": 500
+        },
+        {
+          "level": 18,
+          "quantity": 50,
+          "cumulativeQuantity": 550
+        },
+        {
+          "level": 19,
+          "quantity": 50,
+          "cumulativeQuantity": 600
+        },
+        {
+          "level": 20,
+          "quantity": 50,
+          "cumulativeQuantity": 650
+        }
+      ],
+      "totalFragments": 650
+    }
+  ],
+  "skillManualProfiles": [
+    {
+      "id": "skill-manual-1114aa1017b5",
+      "levels": [
+        {
+          "destinationLevel": 2,
+          "quantity": 1
+        },
+        {
+          "destinationLevel": 3,
+          "quantity": 3
+        },
+        {
+          "destinationLevel": 4,
+          "quantity": 6
+        },
+        {
+          "destinationLevel": 5,
+          "quantity": 10
+        },
+        {
+          "destinationLevel": 6,
+          "quantity": 20
+        },
+        {
+          "destinationLevel": 7,
+          "quantity": 30
+        },
+        {
+          "destinationLevel": 8,
+          "quantity": 40
+        },
+        {
+          "destinationLevel": 9,
+          "quantity": 50
+        },
+        {
+          "destinationLevel": 10,
+          "quantity": 70
+        },
+        {
+          "destinationLevel": 11,
+          "quantity": 90
+        },
+        {
+          "destinationLevel": 12,
+          "quantity": 110
+        },
+        {
+          "destinationLevel": 13,
+          "quantity": 130
+        },
+        {
+          "destinationLevel": 14,
+          "quantity": 150
+        },
+        {
+          "destinationLevel": 15,
+          "quantity": 180
+        },
+        {
+          "destinationLevel": 16,
+          "quantity": 210
+        },
+        {
+          "destinationLevel": 17,
+          "quantity": 240
+        },
+        {
+          "destinationLevel": 18,
+          "quantity": 270
+        },
+        {
+          "destinationLevel": 19,
+          "quantity": 300
+        },
+        {
+          "destinationLevel": 20,
+          "quantity": 335
+        },
+        {
+          "destinationLevel": 21,
+          "quantity": 370
+        },
+        {
+          "destinationLevel": 22,
+          "quantity": 405
+        },
+        {
+          "destinationLevel": 23,
+          "quantity": 440
+        },
+        {
+          "destinationLevel": 24,
+          "quantity": 475
+        },
+        {
+          "destinationLevel": 25,
+          "quantity": 510
+        },
+        {
+          "destinationLevel": 26,
+          "quantity": 545
+        },
+        {
+          "destinationLevel": 27,
+          "quantity": 580
+        },
+        {
+          "destinationLevel": 28,
+          "quantity": 615
+        },
+        {
+          "destinationLevel": 29,
+          "quantity": 650
+        },
+        {
+          "destinationLevel": 30,
+          "quantity": 735
+        },
+        {
+          "destinationLevel": 31,
+          "quantity": 850
+        },
+        {
+          "destinationLevel": 32,
+          "quantity": 990
+        },
+        {
+          "destinationLevel": 33,
+          "quantity": 1140
+        },
+        {
+          "destinationLevel": 34,
+          "quantity": 1300
+        },
+        {
+          "destinationLevel": 35,
+          "quantity": 1470
+        },
+        {
+          "destinationLevel": 36,
+          "quantity": 1650
+        },
+        {
+          "destinationLevel": 37,
+          "quantity": 1840
+        },
+        {
+          "destinationLevel": 38,
+          "quantity": 2040
+        },
+        {
+          "destinationLevel": 39,
+          "quantity": 2245
+        },
+        {
+          "destinationLevel": 40,
+          "quantity": 2460
+        },
+        {
+          "destinationLevel": 41,
+          "quantity": 1200
+        },
+        {
+          "destinationLevel": 42,
+          "quantity": 1200
+        },
+        {
+          "destinationLevel": 43,
+          "quantity": 1200
+        },
+        {
+          "destinationLevel": 44,
+          "quantity": 1200
+        },
+        {
+          "destinationLevel": 45,
+          "quantity": 1200
+        },
+        {
+          "destinationLevel": 46,
+          "quantity": 1200
+        },
+        {
+          "destinationLevel": 47,
+          "quantity": 1200
+        },
+        {
+          "destinationLevel": 48,
+          "quantity": 1200
+        },
+        {
+          "destinationLevel": 49,
+          "quantity": 1200
+        },
+        {
+          "destinationLevel": 50,
+          "quantity": 1200
+        }
+      ],
+      "totalManuals": 35555
+    }
+  ],
+  "bindings": {
+    "lava": {
+      "clientId": 25300242,
+      "rankProfileId": "rank-six-steps-30aaf52eaf58",
+      "gearProfileId": "exclusive-gear-cost-212b7e81d081",
+      "rankRowIds": [
+        26409130,
+        26409131,
+        26409132,
+        26409133,
+        26409134,
+        26409135,
+        26409136,
+        26409137,
+        26409138,
+        26409139,
+        26409140,
+        26409141,
+        26409142,
+        26409143,
+        26409144,
+        26409145,
+        26409146,
+        26409147,
+        26409148,
+        26409149,
+        26409150,
+        26409151,
+        26409152,
+        26409153,
+        26409154,
+        26409155,
+        26409156,
+        26409157,
+        26409158,
+        26409159,
+        26409160,
+        26409161,
+        26409162,
+        26409163,
+        26409164,
+        26409165,
+        26409166,
+        26409167,
+        26409168,
+        26409169,
+        26409170,
+        26409171,
+        26409172,
+        26409173,
+        26409174,
+        26409175,
+        26409176,
+        26409177,
+        26409178,
+        26409179,
+        26409180,
+        26409181,
+        26409182,
+        26409183,
+        26409184,
+        26409185,
+        26409186,
+        26409187,
+        26409188,
+        26409189,
+        26409190
+      ],
+      "gearId": 59600022,
+      "gearLevelRowIds": [
+        59700301,
+        59700302,
+        59700303,
+        59700304,
+        59700305,
+        59700306,
+        59700307,
+        59700308,
+        59700309,
+        59700310,
+        59700311,
+        59700312,
+        59700313,
+        59700314,
+        59700315,
+        59700316,
+        59700317,
+        59700318,
+        59700319,
+        59700320
+      ]
+    },
+    "furiosa": {
+      "clientId": 25300243,
+      "rankProfileId": "rank-six-steps-30aaf52eaf58",
+      "gearProfileId": "exclusive-gear-cost-212b7e81d081",
+      "rankRowIds": [
+        26409191,
+        26409192,
+        26409193,
+        26409194,
+        26409195,
+        26409196,
+        26409197,
+        26409198,
+        26409199,
+        26409200,
+        26409201,
+        26409202,
+        26409203,
+        26409204,
+        26409205,
+        26409206,
+        26409207,
+        26409208,
+        26409209,
+        26409210,
+        26409211,
+        26409212,
+        26409213,
+        26409214,
+        26409215,
+        26409216,
+        26409217,
+        26409218,
+        26409219,
+        26409220,
+        26409221,
+        26409222,
+        26409223,
+        26409224,
+        26409225,
+        26409226,
+        26409227,
+        26409228,
+        26409229,
+        26409230,
+        26409231,
+        26409232,
+        26409233,
+        26409234,
+        26409235,
+        26409236,
+        26409237,
+        26409238,
+        26409239,
+        26409240,
+        26409241,
+        26409242,
+        26409243,
+        26409244,
+        26409245,
+        26409246,
+        26409247,
+        26409248,
+        26409249,
+        26409250,
+        26409251
+      ],
+      "gearId": 59600023,
+      "gearLevelRowIds": [
+        59700321,
+        59700322,
+        59700323,
+        59700324,
+        59700325,
+        59700326,
+        59700327,
+        59700328,
+        59700329,
+        59700330,
+        59700331,
+        59700332,
+        59700333,
+        59700334,
+        59700335,
+        59700336,
+        59700337,
+        59700338,
+        59700339,
+        59700340
+      ]
+    },
+    "alita": {
+      "clientId": 25300244,
+      "rankProfileId": "rank-six-steps-30aaf52eaf58",
+      "gearProfileId": "exclusive-gear-cost-212b7e81d081",
+      "rankRowIds": [
+        26409252,
+        26409253,
+        26409254,
+        26409255,
+        26409256,
+        26409257,
+        26409258,
+        26409259,
+        26409260,
+        26409261,
+        26409262,
+        26409263,
+        26409264,
+        26409265,
+        26409266,
+        26409267,
+        26409268,
+        26409269,
+        26409270,
+        26409271,
+        26409272,
+        26409273,
+        26409274,
+        26409275,
+        26409276,
+        26409277,
+        26409278,
+        26409279,
+        26409280,
+        26409281,
+        26409282,
+        26409283,
+        26409284,
+        26409285,
+        26409286,
+        26409287,
+        26409288,
+        26409289,
+        26409290,
+        26409291,
+        26409292,
+        26409293,
+        26409294,
+        26409295,
+        26409296,
+        26409297,
+        26409298,
+        26409299,
+        26409300,
+        26409301,
+        26409302,
+        26409303,
+        26409304,
+        26409305,
+        26409306,
+        26409307,
+        26409308,
+        26409309,
+        26409310,
+        26409311,
+        26409312
+      ],
+      "gearId": 59600024,
+      "gearLevelRowIds": [
+        59700341,
+        59700342,
+        59700343,
+        59700344,
+        59700345,
+        59700346,
+        59700347,
+        59700348,
+        59700349,
+        59700350,
+        59700351,
+        59700352,
+        59700353,
+        59700354,
+        59700355,
+        59700356,
+        59700357,
+        59700358,
+        59700359,
+        59700360
+      ]
+    }
+  },
+  "applicability": "Only explicit bindings verified from the same captured source; rarity alone never selects a growth profile."
+}

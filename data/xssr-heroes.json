@@ -142,16 +142,22 @@
       "portrait": {
         "src": "/img/game-41/heroes/lava.png",
         "width": 840,
-        "height": 712
-      }
+        "height": 712,
+        "sha256": "bee07232e2d8419294186d535633e6dc0ca493fb7b04988ddfc836b386b63ee2",
+        "nativeKey": "sp_avatar_survivor_full_lava",
+        "retainedExisting": true,
+        "extractedSourceSHA256": "bee07232e2d8419294186d535633e6dc0ca493fb7b04988ddfc836b386b63ee2",
+        "kind": "client-portrait"
+      },
+      "clientVersion": "2.6.300"
     },
     {
       "id": "furiosa",
-      "clientId": null,
+      "clientId": 25300243,
       "rarity": "X-SSR",
       "factionRaw": 2,
-      "typeRaw": null,
-      "professionRaw": null,
+      "typeRaw": 3,
+      "professionRaw": "assault",
       "names": {
         "en": {
           "value": "Furiosa",
@@ -248,7 +254,20 @@
         "asOf": "2026-11-05",
         "universalUnlock": false
       },
-      "skills": [],
+      "skills": [
+        {
+          "clientId": 25401397
+        },
+        {
+          "clientId": 25401398
+        },
+        {
+          "clientId": 25401399
+        },
+        {
+          "clientId": 25401400
+        }
+      ],
       "effects": [
         "deadly-barrage",
         "ragehorn-rampage",
@@ -264,25 +283,30 @@
         }
       },
       "portrait": {
-        "src": "/img/official-xssr/furiosa.jpg",
-        "width": 1080,
-        "height": 1080,
-        "kind": "official-announcement-art"
+        "src": "/img/game-26300/heroes/furiosa.png",
+        "width": 520,
+        "height": 712,
+        "sha256": "e7bd147af34a13c58d4e8d0f76560a7ca10458de761d8c5fdd2940557f4feb41",
+        "nativeKey": "sp_avatar_survivor_full_furiosa",
+        "retainedExisting": false,
+        "extractedSourceSHA256": "e7bd147af34a13c58d4e8d0f76560a7ca10458de761d8c5fdd2940557f4feb41",
+        "kind": "client-portrait"
       },
       "officialSkillNames": [
         "Deadly Barrage",
         "Ragehorn Rampage",
         "Ride Together",
         "Wasteland Heart"
-      ]
+      ],
+      "clientVersion": "2.6.300"
     },
     {
       "id": "alita",
-      "clientId": null,
+      "clientId": 25300244,
       "rarity": "X-SSR",
       "factionRaw": 3,
-      "typeRaw": null,
-      "professionRaw": null,
+      "typeRaw": 3,
+      "professionRaw": "assault",
       "names": {
         "en": {
           "value": "Alita",
@@ -290,7 +314,8 @@
         },
         "ko": {
           "value": "알리타",
-          "status": "official-announcement"
+          "status": "client-official",
+          "cohort": "ingame-cache-ko"
         },
         "ja": {
           "value": "Alita",
@@ -381,7 +406,20 @@
         "developmentAnnouncedOn": "2026-10-30",
         "previewAnnouncedOn": "2026-11-03"
       },
-      "skills": [],
+      "skills": [
+        {
+          "clientId": 25401405
+        },
+        {
+          "clientId": 25401406
+        },
+        {
+          "clientId": 25401407
+        },
+        {
+          "clientId": 25401409
+        }
+      ],
       "effects": [
         "laser",
         "carrot-bombs",
@@ -397,11 +435,16 @@
         }
       },
       "portrait": {
-        "src": "/img/official-xssr/alita.jpg",
-        "width": 1080,
-        "height": 1080,
-        "kind": "official-announcement-art"
-      }
+        "src": "/img/game-26300/heroes/alita.png",
+        "width": 628,
+        "height": 712,
+        "sha256": "79ba9f9bdb3f502a2a59860bb60f64390ddb98c19809fc4be11edd9c464df476",
+        "nativeKey": "sp_avatar_survivor_full_alita",
+        "retainedExisting": false,
+        "extractedSourceSHA256": "79ba9f9bdb3f502a2a59860bb60f64390ddb98c19809fc4be11edd9c464df476",
+        "kind": "client-portrait"
+      },
+      "clientVersion": "2.6.300"
     }
   ]
 }

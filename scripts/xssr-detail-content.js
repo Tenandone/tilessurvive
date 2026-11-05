@@ -1,0 +1,53 @@
+'use strict';
+const assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path');
+const Data=require('./xssr-details-data'),Copy=require('../data/xssr-detail-copy.json'),V4=require('../data/v4-formation.json'),Catalog=require('./lib/xssr-catalog');
+const ROOT=path.resolve(__dirname,'..');
+const esc=x=>String(x??'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+const json=x=>JSON.stringify(x).replace(/</g,'\\u003c');
+const clean=x=>String(x??'').replace(/<[^>]*>/g,'').trim();
+const localized=(x,l)=>typeof x==='string'?x:x?.[l]?.value||x?.[l]||x?.en?.value||x?.en||null;
+const Pets=require('./hero-guide-pet-cards');
+function copy(l){assert(Copy.locales[l],'Missing X-SSR detail locale '+l);return Copy.locales[l];}
+function hero(h){const r=Data.record(typeof h==='string'?h:h.id);assert(r,'Missing X-SSR detail');return r;}
+function skillName(h,s,l){return localized(s.names,l)||Copy.authoredEnglishSkillNames[h.id]?.[s.slot]||copy(l).ui.skills;}
+function skillNameNote(h,s,l){if(localized(s.names,l)||!Copy.authoredEnglishSkillNames[h.id]?.[s.slot])return '';const u=copy(l).ui;return '<details class="xssr-note" data-xssr-authored-name><summary>'+esc(u.englishReferenceName)+'</summary><p>'+esc(u.koreanOriginal)+': <span lang="ko" dir="ltr">'+esc(s.names.ko)+'</span></p></details>';}
+function parameters(h,s,level){return typeof Data.skillParameters==='function'?Data.skillParameters(h.id,s.clientId,level):null;}
+function substitute(template,values){if(!template||!values)return null;const result=clean(template).replace(/\{(\d+)\}/g,(m,i)=>values[Number(i)]??m);return /\{\d+\}/.test(result)?null:result;}
+function skillText(h,s,level,l){
+ const c=copy(l),p=parameters(h,s,level),fallback=['ar','vi','nb'].includes(l);
+ if(h.id==='alita'&&(!s.descriptionTemplates[l]||fallback))return substitute(c.alitaTemplates[s.slot],p);
+ if(fallback&&c.skillTemplates?.[h.id])return substitute(c.skillTemplates[h.id][s.slot],p);
+ if(!fallback&&typeof Data.skillEffect==='function'){const out=Data.skillEffect(h.id,s.clientId,level,l);if(out&&!/\{\d+\}/.test(out))return clean(out);}
+ return !fallback?substitute(s.descriptionTemplates[l],p):null;
+}
+function image(icon){const src=typeof icon==='string'?icon:icon?.src;return src&&/^\/img\/[a-zA-Z0-9/_\-.]+$/.test(src)&&fs.existsSync(path.join(ROOT,src))?{src,width:icon?.width||80,height:icon?.height||80}:null;}
+function table(headers,rows,id){return '<div class="xssr-table-wrap" tabindex="0" role="region" aria-label="'+esc(headers.join(' · '))+'"><table class="xssr-detail-table" data-xssr-table="'+id+'"><thead><tr>'+headers.map(t=>'<th scope="col">'+esc(t)+'</th>').join('')+'</tr></thead><tbody>'+rows.map(row=>'<tr>'+row.map((x,i)=>(i?'<td>':'<th scope="row">')+esc(x)+(i?'</td>':'</th>')).join('')+'</tr>').join('')+'</tbody></table></div>';}
+function skillCards(h,l){const c=copy(l),u=c.ui,n=new Intl.NumberFormat(l).format,initial=[];
+ return '<section id="'+h.id+'-skills" class="xssr-section"><h2>'+esc(u.skills)+'</h2><div class="xssr-skill-grid">'+h.skills.map(s=>{
+  const icon=image(s.icon),range=s.configuredLevelRange,texts={};for(let level=range.min;level<=range.max;level++){const text=skillText(h,s,level,l);if(text)texts[level]=text;}
+  const levels=Object.keys(texts),first=levels[0],text=first?texts[first]:c.skillSummaries[h.id]?.[s.slot]||u.unknown;
+  return '<article class="xssr-skill-card" data-xssr-skill="'+s.clientId+'">'+(icon?'<img src="'+esc(icon.src)+'" width="'+icon.width+'" height="'+icon.height+'" alt="" loading="lazy" decoding="async">':'')+'<div><span class="xssr-eyebrow">'+n(s.slot+1)+' · '+esc(u.finalLevel)+' '+n(range.max)+'</span><h3>'+esc(skillName(h,s,l))+'</h3>'+skillNameNote(h,s,l)+'</div><p data-xssr-skill-text>'+esc(text)+'</p>'+(levels.length?'<label class="xssr-skill-picker">'+esc(u.skillLevel)+'<select data-xssr-skill-level>'+levels.map(v=>'<option value="'+v+'">'+n(Number(v))+'</option>').join('')+'</select></label><script type="application/json" data-xssr-skill-data>'+json(texts)+'</script>':'<small class="xssr-note">'+esc(u.unknown)+'</small>')+'</article>';
+ }).join('')+'</div></section>';
+}
+function itemName(id,l){const name=localized(Data.data.items[id]?.names,l);if(name)return name;const h=Data.heroes().find(h=>h.recruitment.cost.itemId===Number(id)||h.exclusiveGear.levels[0].cost.itemId===Number(id));return h?localized(h.names,l)+' · '+copy(l).ui[h.recruitment.cost.itemId===Number(id)?'fragments':'parts']:copy(l).ui.quantity;}
+function calculatorConfig(h,kind,l){const g=Data.growth(h.id),u=copy(l).ui,rows=kind==='rank'?g.rank.rankGroups.map(r=>({level:r.rank,quantity:r.quantity})):g.gear.levels.map(r=>({level:r.level,quantity:r.quantity}));return{kind,locale:l,rows,item:kind==='rank'?itemName(h.recruitment.cost.itemId,l):itemName(h.exclusiveGear.levels[0].cost.itemId,l),copy:{total:u.total,invalidRange:u.invalidRange},max:rows.length};}
+function calculator(h,kind,l){const u=copy(l).ui,cfg=calculatorConfig(h,kind,l),n=new Intl.NumberFormat(l).format,options=selected=>Array.from({length:cfg.max+1},(_,v)=>'<option value="'+v+'"'+(v===selected?' selected':'')+'>'+n(v)+'</option>').join(''),total=cfg.rows.reduce((s,r)=>s+r.quantity,0);
+ return '<div class="xssr-calculator" data-xssr-calculator><h3>'+esc(u.calculator)+'</h3><p>'+esc(kind==='rank'?u.stageCalcNote:u.gearCostNote)+'</p><div class="xssr-calc-controls"><label>'+esc(kind==='rank'?u.fromStage:u.fromLevel)+'<select data-xssr-from>'+options(0)+'</select></label><label>'+esc(kind==='rank'?u.toStage:u.toLevel)+'<select data-xssr-to>'+options(cfg.max)+'</select></label><button type="button" data-xssr-calculate>'+esc(u.calculate)+'</button></div><output data-xssr-result aria-live="polite">'+esc(u.total)+': '+n(total)+' · '+esc(cfg.item)+'</output><script type="application/json" data-xssr-calc-data>'+json(cfg)+'</script></div>';
+}
+function growth(h,l){const u=copy(l).ui,g=Data.growth(h.id),n=new Intl.NumberFormat(l).format,release=Catalog.record(h.id)?.release.status;
+ const rows=g.rank.rankGroups.map(r=>[n(r.rank),r.stepQuantities.map(n).join(' / '),n(r.quantity),n(r.cumulativeQuantity)]);
+ const materials=h.skills.filter(s=>s.materialCosts.length).map(s=>'<details class="xssr-details"><summary>'+esc(skillName(h,s,l))+' · '+n(s.totalManualsToMax)+'</summary>'+table([u.level,u.quantity],s.materialCosts.map(r=>[n(r.destinationLevel),n(r.cost.quantity)]),'skill-cost-'+s.clientId)+'</details>').join('');
+ return '<section id="'+h.id+'-growth" class="xssr-section"><h2>'+esc(u.rankGrowth)+'</h2>'+(release!=='released'?'<p class="xssr-note">'+esc(u.previewCalc)+'</p>':'')+'<p>'+esc(itemName(h.recruitment.cost.itemId,l))+' · '+esc(u.total)+': <strong>'+n(g.rank.totalFragments)+'</strong></p><p>'+esc(u.recruitment)+': '+n(h.recruitment.cost.quantity)+' · '+esc(itemName(h.recruitment.cost.itemId,l))+'</p><p class="xssr-note">'+esc(u.rankNote)+'</p>'+(h.growth.universalFragment?'<p class="xssr-note" data-xssr-universal><strong>'+esc(itemName(h.growth.universalFragment.itemId,l))+'</strong> · '+esc(u.universalNote)+'</p>':'')+table([u.rank,u.stepCosts,u.quantity,u.cumulative],rows,'rank')+calculator(h,'rank',l)+'<details class="xssr-details"><summary>'+esc(u.skillCosts)+'</summary><p>'+esc(itemName(201725,l))+'</p><p class="xssr-note">'+esc(u.skillCostNote)+'</p>'+materials+'</details></section>';
+}
+function gear(h,l){const u=copy(l).ui,n=new Intl.NumberFormat(l).format,g=h.exclusiveGear,icon=image(g.skillIcon),hasPower=g.levels.some(r=>Number.isFinite(r.power));
+ const effect=r=>{const native=Data.gearEffect(h.id,r.level,l);if(native&&!['ar','vi','nb'].includes(l)&&!(/\{\d+\}/.test(native)))return clean(native);const p=r.skillDisplayParameters||[],a=p[0],d=p[1]??p[0],percent=x=>String(x??'').includes('%')?x:x==null?'—':x+'%';return u.attack+' +'+percent(a)+' · '+u.defense+' +'+percent(d);};
+ const rows=g.levels.map(r=>[n(r.level),n(r.cost.quantity),n(r.cumulativeQuantity),...(hasPower?[Number.isFinite(r.power)?n(r.power):'—']:[]),n(r.attack),n(r.defense),n(r.health),effect(r)]);
+ return '<section id="'+h.id+'-gear" class="xssr-section"><h2>'+esc(u.gear)+'</h2>'+(icon?'<img class="xssr-gear-icon" src="'+esc(icon.src)+'" width="80" height="80" alt="" loading="lazy" decoding="async">':'')+'<h3>'+esc(localized(g.names,l)||Catalog.record(h.id)?.mount?.names?.[l]||Catalog.record(h.id)?.mount?.name||u.gear)+'</h3><p>'+esc(localized(g.skillNames,l)||u.gearSkill)+' · '+esc(u.total)+': <strong>'+n(g.totalQuantity)+'</strong> '+esc(itemName(g.levels[0].cost.itemId,l))+'</p>'+table([u.level,u.parts,u.cumulative,...(hasPower?[u.power]:[]),u.attack,u.defense,u.health,u.gearSkill],rows,'gear')+calculator(h,'gear',l)+'</section>';
+}
+function pets(h,l){return '<div id="'+h.id+'-pets" class="xssr-section">'+Pets.renderHero(h.id,l)+'</div>';}
+function related(h,l){const u=copy(l).ui,rules=V4.factionRules.relations,strong=rules.filter(r=>r.from===h.factionRaw),weak=rules.filter(r=>r.to===h.factionRaw),faction=id=>localized(V4.factions.find(f=>f.id===id)?.names,l),links=[[u.atlas,'/'+l+'/heroes/'],[u.compare,'/'+l+'/heroes/#heroesIndexTitle'],[u.formation,'/'+l+'/tools/#v4-formation'],[u.petDirectory,'/'+l+'/database/pet-system/'],...Data.heroes().filter(x=>x.id!==h.id).map(x=>[localized(x.names,l)+' · X-SSR','/'+l+'/heroes/'+x.id+'/'])];
+ return '<section class="xssr-section"><h2>'+esc(u.related)+'</h2><dl class="xssr-matchups"><div><dt>'+esc(u.strongAgainst)+'</dt><dd>'+esc(strong.map(r=>faction(r.to)).join(' · ')||'—')+'</dd></div><div><dt>'+esc(u.weakAgainst)+'</dt><dd>'+esc(weak.map(r=>faction(r.from)).join(' · ')||'—')+'</dd></div></dl><nav class="xssr-related" aria-label="'+esc(u.related)+'">'+links.map(([label,url])=>'<a href="'+esc(url)+'">'+esc(label)+' ↗</a>').join('')+'</nav></section>';
+}
+function render(h,l){h=hero(h);copy(l);return '<div class="xssr-detail" data-xssr-detail="'+h.id+'">'+skillCards(h,l)+growth(h,l)+gear(h,l)+pets(h,l)+related(h,l)+'</div>';}
+function validate(){Data.validate();for(const l of Object.keys(Copy.locales)){const c=copy(l);assert.deepEqual(Object.keys(c.ui).sort(),Object.keys(copy('en').ui).sort());assert.equal(c.alitaTemplates.length,4);for(const h of Data.heroes()){const html=render(h,l);assert(!/\{\d+\}/.test(html),'Raw skill template '+h.id+':'+l);assert(!/undefined|C:\\Users|Documents\\New project/.test(html),'Invalid public text '+h.id+':'+l);assert.equal((html.match(/data-xssr-skill="/g)||[]).length,4);assert.equal((html.match(/data-hp-pair="/g)||[]).length,Pets.groupsForHero(h.id).length);}}return true;}
+module.exports={render,validate,copy,skillText,skillName,calculatorConfig};

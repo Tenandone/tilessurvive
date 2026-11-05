@@ -29,7 +29,7 @@
     {
       "id": "furiosa",
       "sourceName": "Furiosa",
-      "status": "released-by-official-announcement; numeric-client-record-pending",
+      "status": "released-by-official-announcement; verified-client-2.6.300",
       "sources": [
         "https://tilesurvivegame.com/en/blog/1198",
         "https://tilesurvivegame.com/en/blog/1206"
@@ -136,19 +136,33 @@
             "jsonSHA256": "6c1d31a2f1f2f489fc2818c4d0c8f90e84dcc247f658e1437741e3590d56a625",
             "value": "SSR英雄弗瑞奧薩"
           }
-        ]
-      }
+        ],
+        "historicalEvidenceOnly": true
+      },
+      "clientId": 25300243,
+      "clientData": "data/xssr-details.json"
     },
     {
       "id": "alita",
       "sourceName": "Alita",
-      "status": "upcoming-as-of-2026-11-03; playable-release-and-core-record-pending",
+      "status": "upcoming-as-of-2026-11-03; verified-client-2.6.300",
       "sources": [
         "https://tilesurvivegame.com/en/blog/1213",
         "https://x.com/TilesSurvive/status/2117559350147379648"
-      ]
+      ],
+      "clientId": 25300244,
+      "clientData": "data/xssr-details.json"
     }
   ],
-  "imagePolicy": "Retained authentic Lava portrait and skill icons; Furiosa and Alita use their official hero announcement artwork. No benchmark artwork or inferred skill icons are published.",
-  "officialCatalog": "data/xssr-heroes.json"
+  "imagePolicy": "Retained authentic Lava portrait and skill icons; verified current-client native Furiosa and Alita portraits, skill icons and gear icons. Native keys and hashes are bound in data/xssr-presentation.json. No benchmark artwork is published.",
+  "officialCatalog": "data/xssr-heroes.json",
+  "supplementalClient": {
+    "game": "2.6.300",
+    "build": 1531,
+    "reviewedOn": "2026-11-05",
+    "data": "data/xssr-details.json",
+    "growthProfiles": "data/hero-growth-profiles.json",
+    "skillValues": "data/xssr-skill-values.json",
+    "clientPresenceProvesLiveRelease": false
+  }
 }

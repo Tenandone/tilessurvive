@@ -29,7 +29,7 @@ function officialAdditions(data,routes,registry=officialRegistry(),locales=json(
   assert.equal(h.release.universalUnlock,false,'Universal server eligibility is not established');
   for(const l of locales){const n=h.names?.[l.code];assert(n&&typeof n.value==='string'&&n.value.trim(),'Missing official/fallback hero name '+h.id+':'+l.code);if(n.status==='english-fallback')assert.equal(n.value,h.names.en.value,'Fallback must preserve English name');}
   if(retained.has(h.id))assert.equal(h.clientId,retained.get(h.id).clientId,'Official registry changed retained client identity');
-  else assert.equal(h.clientId,null,'Public introduction cannot fabricate a client identity');
+  else {const verified=require('./xssr-details-data').record(h.id);assert(verified&&verified.clientId===h.clientId,'Public introduction cannot fabricate a client identity');assert.deepEqual(h.skills.map(s=>s.clientId),verified.skills.map(s=>s.clientId),'Verified hero skill binding changed');}
  }
  const additions=registry.heroes.filter(h=>!retained.has(h.id));
  assert.equal(routes.heroes.length,retained.size+additions.length,'Only reviewed identity routes may be published');
@@ -44,18 +44,21 @@ function reviewedSitemap(root=ROOT){
 }
 function validateOfficialIsolation(root=ROOT,overrides={}){
  const data=json(root,'data/hero-atlas-client.json'),routes=json(root,'data/hero-atlas-routes.json'),registry=officialRegistry(root),locales=json(root,'data/i18n/locales.json').locales,additions=officialAdditions(data,routes,registry,locales);
- const formation=overrides.formation||json(root,'data/v4-formation.json'),relations=overrides.relations||json(root,'data/hero-pet-relations.json'),retained=new Map(data.heroes.filter(h=>h.variant==='base').map(h=>[h.id,h.clientId]));
+ const details=json(root,'data/xssr-details.json');assert.equal(details.version.game,'2.6.300');assert.equal(details.version.build,1531);require('./xssr-details-data').validate();
+ const formation=overrides.formation||json(root,'data/v4-formation.json'),relations=overrides.relations||json(root,'data/hero-pet-relations.json'),retained=new Map(data.heroes.filter(h=>h.variant==='base').map(h=>[h.id,h.clientId]).concat(additions.map(h=>[h.id,details.heroes[h.id]?.clientId])));
  assert.deepEqual(formation.heroes.map(h=>h.id).sort(),[...retained.keys()].sort(),'Formation must contain only verified client identities');
  for(const h of formation.heroes)assert.equal(h.clientId,retained.get(h.id),'Formation client identity differs from retained source');
- for(const h of additions){assert(!relations.heroes.some(r=>r.id===h.id),'Official introduction entered client recommendation data');assert(!formation.rules.some(r=>r.heroId===h.id)&&!relations.rules.some(r=>r.heroId===h.id),'Official introduction acquired an unsupported pairing rule');}
+ for(const h of additions){assert(!relations.heroes.some(r=>r.id===h.id),'Supplemental heroes must keep their own reviewed source');assert(!relations.rules.some(r=>r.heroId===h.id),'Unsupported pairing in legacy source');for(const r of formation.rules.filter(r=>r.heroId===h.id)){assert(r.heroSkillIds.every(id=>details.heroes[h.id].skills.some(s=>s.clientId===id)),'Unsupported hero skill in pairing');const pet=formation.pets.find(p=>p.id===r.petId);assert(pet&&r.petSkillIds.every(id=>pet.skills.some(s=>s.clientId===id)),'Unsupported pet skill in pairing');}}
+ const expectedSupplement=require('./sync-xssr-formation').additions(formation).rules;assert.deepEqual(formation.rules.filter(r=>additions.some(h=>h.id===r.heroId)),expectedSupplement,'Only source-derived supplemental pet rules may enter calculations');
  const privatePattern=/(?:[A-Z]:[\\/](?:Users|workspace)|authorized-decryption|decoded-language|normalized-complete-v1|raw-template-and-bindings)/i;
- for(const file of ['data/xssr-heroes.json','data/xssr-copy.json','data/xssr-lava-growth.json'])if(fs.existsSync(path.join(root,file)))assert(!privatePattern.test(read(root,file)),'Private client material in public X-SSR data');
- let pages=0;for(const h of additions)for(const l of locales){const route=routes.heroes.find(r=>r.id===h.id).routes[l.code],html=(overrides.readPage||((file)=>read(root,file)))(route.slice(1)+'index.html'),d=parseHTML(html).document,owner=d.querySelector('[data-hero-atlas-owned="announcement"]');
-  assert(owner&&owner.getAttribute('data-hero-id')===h.id,'Official hero requires a distinct announcement page owner');
-  assert(!owner.querySelector('[data-client-hero-id],[data-client-skill-id],[data-hp-rule],[data-hp-pair],[data-v4-config],[data-building-system-model]'),'Public introduction must not masquerade as verified client gameplay');
+ for(const file of ['data/xssr-heroes.json','data/xssr-copy.json','data/xssr-lava-growth.json','data/xssr-details.json','data/hero-growth-profiles.json'])if(fs.existsSync(path.join(root,file)))assert(!privatePattern.test(read(root,file)),'Private client material in public X-SSR data');
+ let pages=0;for(const h of additions)for(const l of locales){const route=routes.heroes.find(r=>r.id===h.id).routes[l.code],html=(overrides.readPage||((file)=>read(root,file)))(route.slice(1)+'index.html'),d=parseHTML(html).document,owner=d.querySelector('[data-hero-atlas-owned="xssr"]');
+  assert(owner&&owner.getAttribute('data-hero-id')===h.id,'Verified hero requires its reviewed X-SSR page owner');
+  assert.equal(Number(owner.getAttribute('data-client-hero-id')),details.heroes[h.id].clientId);
+  assert.deepEqual([...owner.querySelectorAll('[data-xssr-skill]')].map(n=>Number(n.getAttribute('data-xssr-skill'))),details.heroes[h.id].skills.map(s=>s.clientId),'Page must display only verified client skills');
   assert(!privatePattern.test(html),'Private client filesystem path or raw audit material on an official hero page');pages++;
  }
- return {officialPages:pages,calculationIdentities:formation.heroes.length,officialGameplayRows:0};
+ return {officialPages:pages,calculationIdentities:formation.heroes.length,officialGameplayRows:additions.length};
 }
 function validatePublication(data,publication,routes,registry=officialRegistry()){
  assert.equal(data.heroes.length,35,'A new client row requires an explicit publication review');
@@ -99,7 +102,7 @@ function preservedContent(html){
  const ten=[...html.matchAll(/<a\b[^>]*href=["']([^"']*lootbar[^"']*)["'][^>]*>/gi)].map(m=>m[1]);
  return {programs,models,tables,ads,ten};
 }
-function verifyPreserved(before,after,file){const V4=require('./v4-workbench-content'),route='/'+file.replace(/index\.html$/,''),locale=file.split('/')[0];if(V4.kindFor(route)){V4.validateOwnership(after,locale,route);before=V4.strip(before);after=V4.strip(after);}const a=preservedContent(before),b=preservedContent(after);for(const key of ['programs','models','ads','ten'])assert.deepEqual(b[key],a[key],file+' protected '+key);let at=0;for(const value of a.tables){at=b.tables.indexOf(value,at);assert(at>=0,file+' original numeric table removed or changed');at++;}}
+function verifyPreserved(before,after,file){if(/^[a-z-]+\/index\.html$/.test(file)&&after.includes('data-v5-home')){const l=file.split('/')[0],V5=require('./build-v5-landing');V5.validateOwnership(after,l);assert.equal(parseHTML(after).document.querySelector('main').innerHTML,parseHTML(V5.project(before,l)).document.querySelector('main').innerHTML,file+' exact reviewed landing replacement');assert.deepEqual(preservedContent(before).ads,preservedContent(after).ads,file+' protected ads');return;}const V4=require('./v4-workbench-content'),route='/'+file.replace(/index\.html$/,''),locale=file.split('/')[0];if(V4.kindFor(route)){V4.validateOwnership(after,locale,route);before=V4.strip(before);after=V4.strip(after);}const a=preservedContent(before),b=preservedContent(after);for(const key of ['programs','models','ads','ten'])assert.deepEqual(b[key],a[key],file+' protected '+key);let at=0;for(const value of a.tables){at=b.tables.indexOf(value,at);assert(at>=0,file+' original numeric table removed or changed');at++;}}
 function hook(root=ROOT){const script='scripts/build-hero-pet-pages.js',data='data/hero-pet-relations.json',hasScript=fs.existsSync(path.join(root,script)),hasData=fs.existsSync(path.join(root,data));assert.equal(hasScript,hasData,'Hero/pet renderer and validated data must enter the release together');if(!hasScript)return null;const owner=require(path.join(root,script));assert.equal(typeof owner.validate,'function','Hero/pet model validator is required');assert.equal(typeof owner.project,'function','Hero/pet pure projection is required');owner.validate(json(root,data));return script;}
 function validate(root=ROOT,{before,backup}={}){
  const registry=json(root,'data/i18n/locales.json').locales;assert.equal(registry.length,21,'The published locale set must not shrink');

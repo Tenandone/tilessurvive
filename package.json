@@ -81,7 +81,8 @@
     "build:hero-pet": "node scripts/build-hero-atlas.js && node scripts/build-hero-pet-pages.js && node scripts/v4-workbench-content.js",
     "test:client-reanalysis": "node --test scripts/test-hero-pet-relations.js scripts/test-hero-pet-pages.js scripts/test-client-release-gate.js",
     "test:v4": "node --test scripts/test-v4-*.js scripts/client-audit/test_v4_compare.cjs",
-    "test:xssr": "node --test scripts/test-xssr.js scripts/test-xssr-lava-data.js"
+    "test:xssr": "node --test scripts/test-xssr.js scripts/test-xssr-lava-data.js scripts/test-xssr-details.js scripts/test-xssr-skill-values.js scripts/test-xssr-detail-content.js scripts/test-xssr-formation.js",
+    "test:v5": "node --test scripts/test-v5-landing.js scripts/test-v3-affiliate.js"
   },
   "keywords": [],
   "author": "",

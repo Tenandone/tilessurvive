@@ -5,8 +5,8 @@ const ROOT=path.resolve(__dirname,'..'),CORPUS=path.resolve(ROOT,'../audit-resul
 function filled(){const s=math.emptyInput(model);s.front=['rusty','kiron'];s.back=['lucky','beka','lagnar'];for(const p of model.pets)s.petStates[p.id]={owned:true,trainStage:5};s.heroSkillsUnlocked=true;s.petId='starhorn';return s;}
 function dom(locale='en'){const {document,window}=parseHTML('<html><body><div id="host"></div></body></html>');const host=document.querySelector('#host');let changes=0;const api=ui.mount({host,model,copy:copy.locales[locale],locale,numberLocale:locale,onChange:()=>changes++});return {document,window,host,api,changes:()=>changes};}
 function choose(d,select,value){for(const o of select.options)o.selected=false;select.querySelector('option[value="'+value+'"]').selected=true;select.dispatchEvent(new d.window.Event('change'));}
-test('new model reproduces from retained original CFG, APK constants and prefab bytes; old published model is untouched',()=>{
- const result=builder.collect(CORPUS);assert.deepEqual(result.model,model);assert.equal(result.audit.original.constants['MarchConstant.SURVIVOR_SLOT_MAX'].value,5);
+test('retained model still reproduces from original CFG, APK constants and prefab bytes alongside explicit new client additions',()=>{
+ const result=builder.collect(CORPUS),retained=clone(model),supplement=require('./sync-xssr-formation').additions(model);delete retained.supplementalSources;retained.heroes=retained.heroes.filter(h=>!supplement.heroes.some(x=>x.id===h.id));retained.rules=retained.rules.filter(r=>r.origin!==require('./sync-xssr-formation').ORIGIN);assert.deepEqual(result.model,retained);assert.deepEqual(model.heroes.slice(-2),supplement.heroes);assert.deepEqual(model.rules.slice(-4),supplement.rules);assert.equal(result.audit.original.constants['MarchConstant.SURVIVOR_SLOT_MAX'].value,5);
  assert.equal(result.audit.original.positions.length,5);assert.equal(result.audit.summary.rules,70);assert.equal(result.audit.summary.uniqueHeroPetPairs,69);
  for(const file of ['data/hero-pet-relations.json','data/hero-atlas-client.json','data/hero-pet-copy.json'])assert.equal(fs.readFileSync(path.join(ROOT,file),'utf8'),cp.execFileSync('git',['show','fe4d8d394b5f4e0624ac8e8be15864e5de5e00b8:'+file],{cwd:ROOT,encoding:'utf8',maxBuffer:16*1024*1024}));
 });
@@ -48,14 +48,14 @@ test('DOM restores atomically without callbacks, prevents duplicate selections a
  const invalid=clone(s);invalid.back[0]='rusty';assert.throws(()=>d.api.restore(invalid));assert.deepEqual(d.api.read(),s);assert.equal(d.changes(),0);choose(d,d.host.querySelector('[data-v4-field="front-0"]'),'tony');assert.equal(d.api.read().front[0],'tony');assert.equal(d.changes(),1);d.api.reset();assert.deepEqual(d.api.read(),math.emptyInput(model));assert.equal(d.changes(),1);
 });
 
-test('official X-SSR introductions link from all formation locales but remain disabled and rejected by math',()=>{
+test('verified X-SSR client heroes are selectable in all locales while release state stays independent',()=>{
  const workbench=require('./v4-workbench-content');
  for(const locale of Object.keys(copy.locales)){
   const config=JSON.parse(parseHTML(workbench.render(locale)).document.querySelector('[data-v4-config]').textContent),{document,window}=parseHTML('<div id="host"></div>'),host=document.querySelector('#host');
-  const api=ui.mount({host,model,copy:config.formationCopy,locale});assert.equal(host.querySelectorAll('[data-v4-official-heroes] a').length,2);
-  for(const h of config.formationCopy.xssr.heroes){assert(!model.heroes.some(x=>x.id===h.id));assert.equal(host.querySelectorAll('option[value="'+h.id+'"]').length,5);for(const o of host.querySelectorAll('option[value="'+h.id+'"]'))assert(o.disabled);assert(host.querySelector('a[href="/'+locale+'/heroes/'+h.id+'/"]'));const attempted=filled();attempted.front[0]=h.id;assert.equal(math.validateInput(attempted,model).valid,false);assert.throws(()=>api.restore(attempted));}
-  const s=host.querySelector('[data-v4-field="front-0"]');for(const o of s.options)o.selected=false;s.querySelector('option[value="furiosa"]').selected=true;s.dispatchEvent(new window.Event('change'));assert.equal(api.read().front[0],null);
-  api.restore(filled());api.render();for(const o of host.querySelectorAll('[data-v4-official-only]'))assert(o.disabled);
+  const api=ui.mount({host,model,copy:config.formationCopy,locale});assert.equal(config.formationCopy.xssr.heroes.length,0);
+  for(const id of ['furiosa','alita']){assert(model.heroes.some(x=>x.id===id));assert.equal(host.querySelectorAll('option[value="'+id+'"]').length,5);const option=host.querySelector('[data-v4-field="front-0"] option[value="'+id+'"]');assert(!option.disabled);const attempted=filled();attempted.front[0]=id;assert.equal(math.validateInput(attempted,model).valid,true);assert(api.restore(attempted));assert(host.querySelector('a[href="/'+locale+'/heroes/'+id+'/"]'));api.reset();}
+  assert.equal(model.heroes.find(h=>h.id==='alita').releaseStatus,'upcoming');const s=host.querySelector('[data-v4-field="front-0"]');for(const o of s.options)o.selected=false;s.querySelector('option[value="furiosa"]').selected=true;s.dispatchEvent(new window.Event('change'));assert.equal(api.read().front[0],'furiosa');
+  api.restore(filled());api.render();assert.equal(host.querySelectorAll('[data-v4-official-only]').length,0);
  }
 });
 test('DOM pet ownership gates deployment; state changes are reflected without activating locked skills',()=>{

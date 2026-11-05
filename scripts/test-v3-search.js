@@ -12,10 +12,10 @@ function verifyNameProvenance(item,alias){
   assert(['site-label','site-alias','retained-client','retained-english-fallback','official-announcement','official-english-fallback'].includes(alias.source));
   const hero=atlasRoutes.get(item.url)?.hero;
   if(hero?.catalogKind==='official-introduction'&&!['site-label','site-alias'].includes(alias.source)){
-    assert.deepEqual(item.search.clientIds,[],'Introduction has no verified client identity');assert.equal(item.search.hero.clientId,null);
+    assert.deepEqual(item.search.clientIds,[{kind:'hero',id:hero.clientId}],'Verified supplement identity must match its route');assert.equal(item.search.hero.clientId,require('../data/xssr-details.json').heroes[hero.id].clientId);
     const name=hero.names[alias.language];assert(name);assert.equal(alias.value,name.value);
     assert.equal(alias.source,name.status==='client-official'?'retained-client':name.status==='english-fallback'?'official-english-fallback':'official-announcement');
-    if(name.status==='client-official'){const evidence=require('../data/hero-atlas-publication.json').pending.find(p=>p.id===hero.id).clientLanguageEvidence;assert.equal(alias.termKey,evidence.key);const cohort={'zh-cn':'zh-CN','zh-tw':'zh-TW',ms:'my'}[alias.language]||alias.language;assert(evidence.sources.some(s=>s.cohort==='ingame-apk-'+cohort&&s.value.includes(alias.value)),'Name must be present in the retained localized purchase title');return true;}
+    if(name.status==='client-official'){const evidence=require('../data/xssr-details.json').heroes[hero.id];assert.equal(alias.termKey,evidence.nameKey);assert.equal(alias.value,evidence.names[alias.language]?.value||evidence.names[alias.language],'Name must equal the current native hero name');return true;}
     if(name.status==='english-fallback')assert.equal(alias.value,hero.names.en.value);
     return false;
   }

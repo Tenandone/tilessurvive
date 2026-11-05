@@ -16,7 +16,7 @@ function project(input,locale,route){
  const affine=true;
  const af=require('./v3-affiliate-content');
  const title=pc[locale].title,ec=require('../data/v3-events-copy.json').copy[locale];
- if(isHub||isPower||isCalendar||isTopup){const payload=JSON.parse(d.getElementById('ts-global-ui')?.textContent||'{}'),search=payload.copy?.search||d.querySelector('input[name="q"]')?.getAttribute('aria-label');if(!search)throw Error('Missing navigation copy '+locale);const nav=block('NAV',`<nav class="v3-nav" data-v3-owned="navigation" aria-label="${esc(title)}"><a href="/${locale}/buildings/power-plant/#growth-plan">${esc(title)}</a><a href="/${locale}/events/calendar/#v3-events">${esc(ec.title)}</a><a href="/${locale}/search/">${esc(search)}</a></nav>`);html=html.replace(/(<main\b[^>]*>)/,m=>m+nav);}
+ if((isHub||isPower||isCalendar||isTopup)&&!(rel===''&&d.querySelector('[data-v5-home]'))){const payload=JSON.parse(d.getElementById('ts-global-ui')?.textContent||'{}'),search=payload.copy?.search||d.querySelector('input[name="q"]')?.getAttribute('aria-label');if(!search)throw Error('Missing navigation copy '+locale);const nav=block('NAV',`<nav class="v3-nav" data-v3-owned="navigation" aria-label="${esc(title)}"><a href="/${locale}/buildings/power-plant/#growth-plan">${esc(title)}</a><a href="/${locale}/events/calendar/#v3-events">${esc(ec.title)}</a><a href="/${locale}/search/">${esc(search)}</a></nav>`);html=html.replace(/(<main\b[^>]*>)/,m=>m+nav);}
  if(isPower)html=planner.project(html,locale);
  if(isCalendar||rel==='tools/event-helper/'||rel==='events/')html=events.project(html,locale);
  if(isTopup){

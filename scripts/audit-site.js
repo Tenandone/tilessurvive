@@ -1,8 +1,9 @@
 const fs = require("node:fs");
 const path = require("node:path");
+const { parseHTML } = require("linkedom");
 
 const ROOT = path.resolve(__dirname, "..");
-const LANGS = new Set(["ko", "en", "ja", "ru", "zh-tw", "de"]);
+const LANGS = new Set(require("../data/i18n/locales.json").locales.map(locale => locale.code));
 const SKIP_DIRS = new Set([".git", "node_modules", "test-results", "_sources", "blue", "makeup"]);
 
 function walk(dir, files = []) {
@@ -31,18 +32,19 @@ function auditHtml(file) {
   const text = fs.readFileSync(file, "utf8");
   const rel = path.relative(ROOT, file).replace(/\\/g, "/");
   const lang = rel.split("/")[0];
-  const indexable = LANGS.has(lang) && !/name=["']robots["'][^>]+noindex/i.test(text);
+  const head = parseHTML(text.match(/<head\b[^>]*>[\s\S]*?<\/head>/i)?.[0] || "<head></head>").document;
+  const indexable = LANGS.has(lang) && !/noindex/i.test(head.querySelector('meta[name="robots"]')?.getAttribute('content') || '');
   const issues = [];
 
   if (indexable) {
-    if (!/<title>[^<]+<\/title>/i.test(text)) issues.push("missing title");
-    if (!/<meta\s+name=["']description["'][^>]+content=["'][^"']+/i.test(text)) issues.push("missing description");
-    if (!/<link\s+rel=["']canonical["'][^>]+href=/i.test(text)) issues.push("missing canonical");
+    if (!head.querySelector('title')?.textContent.trim()) issues.push("missing title");
+    if (!head.querySelector('meta[name="description"]')?.getAttribute('content')?.trim()) issues.push("missing description");
+    if (!head.querySelector('link[rel="canonical"]')?.getAttribute('href')) issues.push("missing canonical");
     if (count(/<h1\b/gi, text) !== 1) issues.push(`h1 count ${count(/<h1\b/gi, text)}`);
-    const canonical = text.match(/<link\s+rel=["']canonical["'][^>]+href=["']([^"']+)/i)?.[1];
+    const canonical = head.querySelector('link[rel="canonical"]')?.getAttribute('href');
     const ownUrl = 'https://tilessurvive.net/' + rel.replace(/index\.html$/, '');
     // Alternate-canonical aliases do not belong in reciprocal language groups.
-    if (canonical === ownUrl && !/hreflang=["']x-default["']/i.test(text)) issues.push("missing x-default hreflang");
+    if (canonical === ownUrl && !head.querySelector('link[hreflang="x-default"]')) issues.push("missing x-default hreflang");
   }
 
   for (const block of text.matchAll(/<script[^>]+type=["']application\/ld\+json["'][^>]*>([\s\S]*?)<\/script>/gi)) {

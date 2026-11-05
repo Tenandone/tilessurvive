@@ -186,6 +186,7 @@ function prepareV3Source(source, locale, route) {
   return {source:withoutOwned(tocChanged?document.toString():source),owned:true};
 }
 function render(source, translate, route) {
+  if(source.includes('data-v5-home'))require('./build-v5-landing').validateOwnership(source,'en');
   if(source.includes('data-hero-atlas-owned'))require('./build-hero-atlas').validateOwnership(source,'en','/en/'+route.replace(/index\.html$/,''));
   require('./build-hero-pet-pages').validateOwnership(source,'en');
   require('./v4-workbench-content').validateOwnership(source,'en','/en/'+route.replace(/index\.html$/,''));
@@ -197,7 +198,8 @@ function render(source, translate, route) {
     // source validator above rather than silently bypassing the owner.
     if(route.startsWith('heroes/')&&parseHTML(projected).document.querySelector('main')){const atlas=require('./build-hero-atlas');if(atlas.isOwnedRoute(target))projected=atlas.project(projected,'de',target);}
     if(route.startsWith('database/pet-system/'))projected=require('./build-hero-pet-pages').project(projected,'de');
-    return require('./v4-workbench-content').project(projected,'de',target);
+    projected=require('./v4-workbench-content').project(projected,'de',target);
+    return route==='index.html'&&projected.includes('data-v5-home')?require('./build-v5-landing').project(projected,'de'):projected;
   };
   // The retained Undine skill_2 key supersedes this page's old editorial name.
   // Accept the corrected EN source on subsequent builds without teaching the
@@ -239,13 +241,13 @@ function render(source, translate, route) {
   // Display-localized cells retain their source lexemes for existing numeric readers.
   for(const cell of document.querySelectorAll('td')) cell.setAttribute('data-ts-original-value',cell.textContent.trim());
   function visit(node) {
-    if(node.nodeType===1&&(node.hasAttribute('data-v3-owned')||node.hasAttribute('data-hero-atlas-owned')||node.hasAttribute('data-hero-pet-owned')||node.hasAttribute('data-v4-owned')))return;
+    if(node.nodeType===1&&(node.hasAttribute('data-v3-owned')||node.hasAttribute('data-hero-atlas-owned')||node.hasAttribute('data-hero-pet-owned')||node.hasAttribute('data-v4-owned')||node.hasAttribute('data-v5-owned')))return;
     if (node.nodeType===3 && !['SCRIPT','STYLE'].includes(node.parentNode?.tagName) && !node.parentElement?.closest('[lang]:not([lang="en"]):not(html),.ts3-language nav,.language-switcher')) node.textContent=translate(node.textContent,route+':text');
     for (const child of [...(node.childNodes||[])]) visit(child);
   }
   visit(document);
   for (const el of document.querySelectorAll('*')) {
-    if(el.closest('[data-v3-owned],[data-hero-atlas-owned],[data-hero-pet-owned],[data-v4-owned]'))continue;
+    if(el.closest('[data-v3-owned],[data-hero-atlas-owned],[data-hero-pet-owned],[data-v4-owned],[data-v5-owned]'))continue;
     for (const attr of ['alt','title','aria-label','placeholder','data-idle','data-results','data-error']) if(el.hasAttribute(attr)) el.setAttribute(attr,translate(el.getAttribute(attr),route+':'+attr));
     for (const attr of ['href','action','data-search-url']) if(el.hasAttribute(attr)) {
       if(el.matches('link[rel="alternate"],a[hreflang],.ts3-language a[lang]')) continue;
@@ -262,7 +264,7 @@ function render(source, translate, route) {
     }
   }
   for (const script of document.querySelectorAll('script[type="application/json"],script[type="application/ld+json"]')) {
-    if(script.closest('[data-v3-owned],[data-hero-atlas-owned],[data-hero-pet-owned],[data-v4-owned]'))continue;
+    if(script.closest('[data-v3-owned],[data-hero-atlas-owned],[data-hero-pet-owned],[data-v4-owned],[data-v5-owned]'))continue;
     // This is the complete equivalent-route map, not an EN-language content
     // dictionary. Every locale, including DE's own exact slug, must survive.
     if(script.id==='ts-locale-routes')continue;
@@ -272,7 +274,7 @@ function render(source, translate, route) {
     }
     script.textContent=JSON.stringify(localizeJSON(JSON.parse(script.textContent),translate,route+':json','',script.id==='ts3-copy'));
   }
-  for(const script of document.querySelectorAll('script:not([src])'))if(!script.type?.includes('json')&&!script.closest('[data-v3-owned],[data-hero-atlas-owned],[data-hero-pet-owned],[data-v4-owned]'))script.textContent=localizeProgram(script.textContent,translate,route);
+  for(const script of document.querySelectorAll('script:not([src])'))if(!script.type?.includes('json')&&!script.closest('[data-v3-owned],[data-hero-atlas-owned],[data-hero-pet-owned],[data-v4-owned],[data-v5-owned]'))script.textContent=localizeProgram(script.textContent,translate,route);
   // The canonical language routes are completed by the shared six-language finalizer.
   const langNav=document.querySelector('.ts3-language nav');
   if(langNav){for(const a of langNav.querySelectorAll('a')){if(a.lang==='de')a.remove();else a.removeAttribute('aria-current');}const a=document.createElement('a');a.href='/de/'+route.replace(/index\.html$/,'');a.lang='de';a.setAttribute('hreflang','de');a.textContent='Deutsch';a.setAttribute('aria-current','page');langNav.append(a);document.querySelector('.ts3-language summary').textContent='DE';}

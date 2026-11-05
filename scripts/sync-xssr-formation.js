@@ -1,0 +1,31 @@
+'use strict';
+// Add independently verified capabilities without replacing the retained model.
+const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict');
+const ROOT=path.resolve(__dirname,'..'),D=require('../data/xssr-details.json'),C=require('../data/xssr-heroes.json'),R=require('../data/hero-atlas-routes.json'),G=require('../data/hero-guide-copy.json');
+const ORIGIN='xssr-client-2.6.300';
+const FRONT_HEAL={en:'The pet heals front-row allies at the start of battle.',ko:'전투 시작 시 펫이 전방 아군을 치유합니다.',ja:'戦闘開始時にペットが前列の味方を回復します。','zh-tw':'戰鬥開始時，寵物會治療前排友方。',de:'Das Haustier heilt zu Kampfbeginn Verbündete in der vorderen Reihe.',ru:'В начале боя питомец исцеляет союзников в переднем ряду.','zh-cn':'战斗开始时，宠物会治疗前排友方。',ar:'يشفي الأليف حلفاء الصف الأمامي في بداية المعركة.',nl:'Het huisdier geneest bondgenoten op de voorste rij aan het begin van het gevecht.',fr:'Le familier soigne les alliés de première ligne au début du combat.',id:'Pet menyembuhkan sekutu baris depan pada awal pertempuran.',it:'L’animale cura gli alleati in prima fila all’inizio della battaglia.',pl:'Zwierzak leczy sojuszników w przednim rzędzie na początku bitwy.',pt:'O pet cura os aliados da linha da frente no início da batalha.',es:'La mascota cura a los aliados de la primera fila al comenzar la batalla.',sv:'Husdjuret helar allierade i främre raden när striden börjar.',th:'สัตว์เลี้ยงจะฟื้นฟูพลังชีวิตให้พันธมิตรแถวหน้าเมื่อเริ่มการต่อสู้',tr:'Evcil hayvan savaşın başında ön sıradaki müttefikleri iyileştirir.',vi:'Thú cưng hồi máu cho đồng minh hàng trước khi trận chiến bắt đầu.',ms:'Haiwan peliharaan memulihkan sekutu barisan hadapan pada awal pertempuran.',nb:'Kjæledyret helbreder allierte på fremste rad ved kampstart.'};
+function wrappedNames(values,slot){return Object.fromEntries(Object.keys(G.locales).map(locale=>[locale,{value:values[locale]||values.en||G.locales[locale].ui.skills+' '+(slot+1),status:values[locale]?'client-official':values.en?'english-fallback':'neutral-label'}]));}
+function additions(model){
+ const ids=Object.keys(D.heroes).filter(id=>!require('../data/hero-atlas-client.json').heroes.some(h=>h.id===id));
+ const heroes=ids.map(id=>{const h=D.heroes[id],registry=C.heroes.find(x=>x.id===id);assert(h.capabilities.formationPlanning&&h.capabilities.factionCounting);assert(h.skills[0].descriptionTemplates.en?.includes('Attack')||h.skills[0].descriptionTemplates.ko?.includes('공격력'),'ATK scaling must be explicit in the cited skill');return{id,identityId:id,clientId:h.clientId,names:registry.names,routes:R.heroes.find(r=>r.id===id).routes,faction:h.factionRaw,type:h.typeRaw,attackScalingSkillId:h.skills[0].clientId,skills:h.skills.map(s=>({clientId:s.clientId,sourceId:s.sourceId,names:wrappedNames(s.names,s.slot),slot:s.slot})),releaseStatus:registry.release.status,clientCapabilities:h.capabilities,sourceVersion:D.version,evidenceRefs:h.evidenceRefs};});
+ const cautions=['not-official-pairing','no-performance-estimate','current-rules-unverified','modifier-order-unverified'];
+ function rule(heroId,petId,suffix,reasonKey,heroSkillIds,petSkillIds,requiredRow,conditionKeys){const hero=heroes.find(h=>h.id===heroId),pet=model.pets.find(p=>p.id===petId);assert(hero&&pet);for(const id of heroSkillIds)assert(hero.skills.some(s=>s.clientId===id));for(const id of petSkillIds)assert(pet.skills.some(s=>s.clientId===id));return{id:heroId+'-'+petId+'-'+suffix,heroId,petId,origin:ORIGIN,status:'data-based',mode:'squad',reasonKey,requiredRow,conditionKeys,cautionKeys:cautions,heroSkillIds,petSkillIds,alternatePetIds:[],evidenceRefs:[...heroSkillIds,...petSkillIds].map(id=>'survivor_skill_type:'+id)};}
+ const rules=[
+  rule('furiosa','fluffy','front-healing','front-row-healing',[25401399],[25401367],'front',['hero-deployed','hero-in-front','hero-skill-unlocked','pet-skill-unlocked','temporary-window']),
+  rule('furiosa','hardhead','front-attack','position-attack-scaling',[25401397],[25401372],'front',['hero-skill-unlocked','pet-skill-unlocked','attack-modifier-applies','hero-in-front']),
+  rule('alita','chompy','deployed-attack','position-attack-scaling',[25401405],[25401394],null,['hero-deployed','hero-skill-unlocked','pet-skill-unlocked','attack-modifier-applies']),
+  rule('alita','starhorn','back-attack','position-attack-scaling',[25401405],[25401379],'back',['hero-skill-unlocked','pet-skill-unlocked','attack-modifier-applies','hero-in-back','temporary-window'])
+ ];
+ return{heroes,rules};
+}
+function sync(){
+ const file=path.join(ROOT,'data/v4-formation.json'),model=JSON.parse(fs.readFileSync(file)),extra=additions(model),ids=new Set(extra.heroes.map(h=>h.id));
+ const originalHeroes=model.heroes.filter(h=>!ids.has(h.id)),originalRules=model.rules.filter(r=>r.origin!==ORIGIN);
+ model.heroes=[...originalHeroes,...extra.heroes];model.rules=[...originalRules,...extra.rules];model.supplementalSources=[{id:'xssr-details',version:D.version,heroIds:[...ids]}];
+ fs.writeFileSync(file,JSON.stringify(model)+'\n');
+ for(const relative of ['data/v4-formation-copy.json','data/hero-guide-copy.json']){const target=path.join(ROOT,relative),copy=JSON.parse(fs.readFileSync(target));for(const [locale,value]of Object.entries(copy.locales)){assert(FRONT_HEAL[locale]);value.reasons['front-row-healing']=FRONT_HEAL[locale];}fs.writeFileSync(target,JSON.stringify(copy,null,2)+'\n');}
+ const registry=JSON.parse(fs.readFileSync(path.join(ROOT,'data/xssr-heroes.json')));
+ for(const h of registry.heroes){const d=D.heroes[h.id];if(!d)continue;h.clientId=d.clientId;h.typeRaw=d.typeRaw;h.professionRaw=d.professionRaw;h.factionRaw=d.factionRaw;h.skills=d.skills.map(s=>({clientId:s.clientId}));h.clientVersion=D.version.game;if(d.portrait)h.portrait={...d.portrait,kind:'client-portrait'};if(h.id==='alita')h.names.ko={value:d.names.ko,status:'client-official',cohort:'ingame-cache-ko'};}
+ fs.writeFileSync(path.join(ROOT,'data/xssr-heroes.json'),JSON.stringify(registry,null,2)+'\n');return{heroes:model.heroes.length,rules:model.rules.length,added:extra.heroes.map(h=>h.id),retainedHeroes:originalHeroes.length,retainedRules:originalRules.length};
+}
+module.exports={additions,sync,ORIGIN};if(require.main===module)console.log(JSON.stringify(sync()));

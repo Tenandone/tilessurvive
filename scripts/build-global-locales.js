@@ -155,6 +155,7 @@ function unifiedPowerPlantOwner(document, group) {
   return {host,script,renderer,anchors};
 }
 function localizePage(source, locale, group, groups, translator) {
+  if(source.includes('data-v5-home'))require('./build-v5-landing').validateOwnership(source,'en');
   require('./build-hero-pet-pages').validateOwnership(source,'en');
   require('./v4-workbench-content').validateOwnership(source,'en',group.routes.en);
   if(source.includes('data-hero-atlas-owned'))require('./build-hero-atlas').validateOwnership(source,'en',group.routes.en);
@@ -175,10 +176,10 @@ function localizePage(source, locale, group, groups, translator) {
   document.documentElement.setAttribute('data-lang',locale);
   document.documentElement.setAttribute('dir',info.dir);
   const walker=document.createTreeWalker(document,4); const nodes=[]; let node;
-  while((node=walker.nextNode())) if(!node.parentElement?.closest('script,style,template,.ts3-language nav,.language-switcher,[data-v3-owned],[data-hero-atlas-owned],[data-hero-pet-owned],[data-v4-owned]') && !powerOwner?.host.contains(node)) nodes.push(node);
+  while((node=walker.nextNode())) if(!node.parentElement?.closest('script,style,template,.ts3-language nav,.language-switcher,[data-v3-owned],[data-hero-atlas-owned],[data-hero-pet-owned],[data-v4-owned],[data-v5-owned]') && !powerOwner?.host.contains(node)) nodes.push(node);
   for (const n of nodes) n.data=t(n.data,group.file+':text:'+n.parentElement?.tagName);
   for (const el of document.querySelectorAll('*')) {
-    if(el.closest('[data-v3-owned],[data-hero-atlas-owned],[data-hero-pet-owned],[data-v4-owned]'))continue;
+    if(el.closest('[data-v3-owned],[data-hero-atlas-owned],[data-hero-pet-owned],[data-v4-owned],[data-v5-owned]'))continue;
     if(powerOwner?.host.contains(el))continue;
     if(el.getAttribute('data-lang')==='en')el.setAttribute('data-lang',locale);
     for (const attr of attrs) if(el.hasAttribute(attr))el.setAttribute(attr,t(el.getAttribute(attr),group.file+':'+attr));
@@ -191,7 +192,7 @@ function localizePage(source, locale, group, groups, translator) {
     }
   }
   for(const script of document.querySelectorAll('script[type="application/json"],script[type="application/ld+json"]')) {
-    if(script.closest('[data-v3-owned],[data-hero-atlas-owned],[data-hero-pet-owned],[data-v4-owned]'))continue;
+    if(script.closest('[data-v3-owned],[data-hero-atlas-owned],[data-hero-pet-owned],[data-v4-owned],[data-v5-owned]'))continue;
     const value=JSON.parse(script.textContent);
     const translated=L.localizeJSON(value,locale,t,groups,group.file+':'+(script.id||'json'),'',/^(?:ts3|event-calendar)-copy$/.test(script.id));
     // Building calculators read this display configuration at runtime. Keep
@@ -212,7 +213,7 @@ function localizePage(source, locale, group, groups, translator) {
     for(const anchor of [...powerOwner.anchors].reverse())if(!replacement.querySelector('[id="'+anchor.id+'"]'))replacement.prepend(anchor);
     powerOwner.host.replaceWith(replacement);
   }
-  for(const script of document.querySelectorAll('script:not([src])')) if(!script.type?.includes('json')&&!script.closest('[data-v3-owned],[data-hero-atlas-owned],[data-hero-pet-owned],[data-v4-owned]'))script.textContent=inlineProgram(script.textContent,locale,t,group.file);
+  for(const script of document.querySelectorAll('script:not([src])')) if(!script.type?.includes('json')&&!script.closest('[data-v3-owned],[data-hero-atlas-owned],[data-hero-pet-owned],[data-v4-owned],[data-v5-owned]'))script.textContent=inlineProgram(script.textContent,locale,t,group.file);
   const canonical=document.querySelector('link[rel="canonical"]');
   if(canonical)canonical.href=L.publicOrigin+group.routes[locale];
   return document;
@@ -290,7 +291,8 @@ function enhance(document, locale, group, available, ui, {preview=false}={}) {
     if(atlas.isOwnedRoute(group.routes[locale]))projected=atlas.project(projected,locale,group.routes[locale]);
   }
   if(/^\/[^/]+\/database\/pet-system\//.test(group.routes[locale]))projected=require('./build-hero-pet-pages').project(projected,locale);
-  return require('./v4-workbench-content').project(projected,locale,group.routes[locale]);
+  projected=require('./v4-workbench-content').project(projected,locale,group.routes[locale]);
+  return group.id===''&&document.querySelector('[data-v5-home]')?require('./build-v5-landing').project(projected,locale):projected;
 }
 function build({locales,stage=STAGE,publish=false}={}) {
   const groups=L.routeGroups(), targets=locales||L.registry.locales.filter(x=>!L.existing.has(x.code)).map(x=>x.code);

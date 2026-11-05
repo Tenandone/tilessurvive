@@ -15,7 +15,8 @@ function atlasRoutes(root=ROOT){
  for(const entry of routeData.heroes){
   const retained=data.heroes.find(h=>h.id===entry.id),intro=additions.find(h=>h.id===entry.id);
   assert(retained?.variant==='base'||intro,'Only explicit reviewed identity routes are searchable');
-  const hero=retained||{...intro,identityId:intro.id,variant:'base',catalogKind:'official-introduction',nameKey:intro.nameKey||publication.pending?.find(p=>p.id===intro.id)?.clientLanguageEvidence?.key};
+  const supplement=require('./lib/xssr-catalog').verifiedHeroes().find(h=>h.id===entry.id);
+  const hero=retained||{...intro,...supplement,identityId:intro.id,variant:'base',catalogKind:'official-introduction',nameKey:supplement?.nameKey||intro.nameKey||publication.pending?.find(p=>p.id===intro.id)?.clientLanguageEvidence?.key};
   for(const [locale,route]of Object.entries(entry.routes)){assert(route.startsWith('/'+locale+'/heroes/'));assert(!map.has(route),'Duplicate atlas route '+route);map.set(route,{hero,locale});}
  }
  return map;

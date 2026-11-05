@@ -1,0 +1,402 @@
+{
+  "schemaVersion": 1,
+  "version": {
+    "game": "2.6.300",
+    "build": 1531,
+    "assetManifest": "2.6.300.1547"
+  },
+  "byNativeKey": {
+    "sp_icon_survivor_skill_alita_3": {
+      "src": "/img/game-26300/hero-skills/alita-3.png",
+      "width": 128,
+      "height": 128,
+      "sha256": "6bb8343e5af58b6654a7b644bf78998905a9ff0889dadba28ae36d77afa3959a",
+      "nativeKey": "sp_icon_survivor_skill_alita_3",
+      "retainedExisting": false,
+      "extractedSourceSHA256": "6bb8343e5af58b6654a7b644bf78998905a9ff0889dadba28ae36d77afa3959a"
+    },
+    "sp_icon_survivor_skill_alita_2": {
+      "src": "/img/game-26300/hero-skills/alita-2.png",
+      "width": 128,
+      "height": 128,
+      "sha256": "7f2b66506b72162a4e8fb6c3f635caf90648f0c63c8dee1eb921b704cb3965f6",
+      "nativeKey": "sp_icon_survivor_skill_alita_2",
+      "retainedExisting": false,
+      "extractedSourceSHA256": "7f2b66506b72162a4e8fb6c3f635caf90648f0c63c8dee1eb921b704cb3965f6"
+    },
+    "sp_icon_exclusive_gear_skill_alita": {
+      "src": "/img/game-26300/hero-skills/alita-gear.png",
+      "width": 128,
+      "height": 128,
+      "sha256": "56545c3cf009ac736e3a1b88f63d05e24b99f9d939cdf8c9eef5843708388d17",
+      "nativeKey": "sp_icon_exclusive_gear_skill_alita",
+      "retainedExisting": false,
+      "extractedSourceSHA256": "56545c3cf009ac736e3a1b88f63d05e24b99f9d939cdf8c9eef5843708388d17"
+    },
+    "sp_icon_survivor_skill_alita_1": {
+      "src": "/img/game-26300/hero-skills/alita-1.png",
+      "width": 128,
+      "height": 128,
+      "sha256": "4b74465a4c73d51a1ddd5699ae946bd85f66cf14b52005341764fd4ba37afd66",
+      "nativeKey": "sp_icon_survivor_skill_alita_1",
+      "retainedExisting": false,
+      "extractedSourceSHA256": "4b74465a4c73d51a1ddd5699ae946bd85f66cf14b52005341764fd4ba37afd66"
+    },
+    "sp_icon_exclusive_gear_skill_furiosa": {
+      "src": "/img/game-26300/hero-skills/furiosa-gear.png",
+      "width": 128,
+      "height": 128,
+      "sha256": "b7435925ffc3632287d4ba050e4ed079c9d91368f806cd60f09d948ff2088bf6",
+      "nativeKey": "sp_icon_exclusive_gear_skill_furiosa",
+      "retainedExisting": false,
+      "extractedSourceSHA256": "b7435925ffc3632287d4ba050e4ed079c9d91368f806cd60f09d948ff2088bf6"
+    },
+    "sp_icon_exclusive_gear_skill_lava": {
+      "src": "/img/game-26300/hero-skills/lava-gear.png",
+      "width": 128,
+      "height": 128,
+      "sha256": "d61f1312f3eb33e36b009fda41b7a5d638df0a4b6dad7f394cfa069feeef3812",
+      "nativeKey": "sp_icon_exclusive_gear_skill_lava",
+      "retainedExisting": false,
+      "extractedSourceSHA256": "d61f1312f3eb33e36b009fda41b7a5d638df0a4b6dad7f394cfa069feeef3812"
+    },
+    "sp_icon_survivor_skill_alita_4": {
+      "src": "/img/game-26300/hero-skills/alita-4.png",
+      "width": 128,
+      "height": 128,
+      "sha256": "4ef8292bd10c1056e23f0f45f21ada1a8eff4b7d6d995edea01a252c9d5eacae",
+      "nativeKey": "sp_icon_survivor_skill_alita_4",
+      "retainedExisting": false,
+      "extractedSourceSHA256": "4ef8292bd10c1056e23f0f45f21ada1a8eff4b7d6d995edea01a252c9d5eacae"
+    },
+    "sp_avatar_survivor_squad_alita": {
+      "src": "/img/game-26300/heroes/alita-squad.png",
+      "width": 360,
+      "height": 492,
+      "sha256": "d5e1de4f519cb46b0c28255aa180f23ffaf568475bdd4b8da641cbff2914e1ae",
+      "nativeKey": "sp_avatar_survivor_squad_alita",
+      "retainedExisting": false,
+      "extractedSourceSHA256": "d5e1de4f519cb46b0c28255aa180f23ffaf568475bdd4b8da641cbff2914e1ae"
+    },
+    "sp_avatar_survivor_full_lava": {
+      "src": "/img/game-41/heroes/lava.png",
+      "width": 840,
+      "height": 712,
+      "sha256": "bee07232e2d8419294186d535633e6dc0ca493fb7b04988ddfc836b386b63ee2",
+      "nativeKey": "sp_avatar_survivor_full_lava",
+      "retainedExisting": true,
+      "extractedSourceSHA256": "bee07232e2d8419294186d535633e6dc0ca493fb7b04988ddfc836b386b63ee2"
+    },
+    "sp_avatar_survivor_full_alita": {
+      "src": "/img/game-26300/heroes/alita.png",
+      "width": 628,
+      "height": 712,
+      "sha256": "79ba9f9bdb3f502a2a59860bb60f64390ddb98c19809fc4be11edd9c464df476",
+      "nativeKey": "sp_avatar_survivor_full_alita",
+      "retainedExisting": false,
+      "extractedSourceSHA256": "79ba9f9bdb3f502a2a59860bb60f64390ddb98c19809fc4be11edd9c464df476"
+    },
+    "sp_avatar_survivor_full_furiosa": {
+      "src": "/img/game-26300/heroes/furiosa.png",
+      "width": 520,
+      "height": 712,
+      "sha256": "e7bd147af34a13c58d4e8d0f76560a7ca10458de761d8c5fdd2940557f4feb41",
+      "nativeKey": "sp_avatar_survivor_full_furiosa",
+      "retainedExisting": false,
+      "extractedSourceSHA256": "e7bd147af34a13c58d4e8d0f76560a7ca10458de761d8c5fdd2940557f4feb41"
+    },
+    "sp_avatar_survivor_squad_lava": {
+      "src": "/img/game-26300/heroes/lava-squad.png",
+      "width": 360,
+      "height": 492,
+      "sha256": "f4f72b9ea45a52cced8ae6e88ba27bb66dbf1b5af9769ee94494125cbbec96b4",
+      "nativeKey": "sp_avatar_survivor_squad_lava",
+      "retainedExisting": false,
+      "extractedSourceSHA256": "f4f72b9ea45a52cced8ae6e88ba27bb66dbf1b5af9769ee94494125cbbec96b4"
+    },
+    "sp_avatar_survivor_squad_furiosa": {
+      "src": "/img/game-26300/heroes/furiosa-squad.png",
+      "width": 360,
+      "height": 492,
+      "sha256": "03afa105cc9b9ab1b115ca54bd54475dd1f2999aab24f93c5e52207a3dc388e7",
+      "nativeKey": "sp_avatar_survivor_squad_furiosa",
+      "retainedExisting": false,
+      "extractedSourceSHA256": "03afa105cc9b9ab1b115ca54bd54475dd1f2999aab24f93c5e52207a3dc388e7"
+    },
+    "sp_icon_survivor_skill_lava_4": {
+      "src": "/img/game-41/hero-skills/lava-4.png",
+      "width": 128,
+      "height": 128,
+      "sha256": "0763e7b5085d84c9730be4859e551cd8a462f707e0e4a184bc84de20b4f693ed",
+      "nativeKey": "sp_icon_survivor_skill_lava_4",
+      "retainedExisting": true,
+      "extractedSourceSHA256": "33c6821556355f37dc2ea243515bd5de2aa098ef951dc9e1f936a852e953447a"
+    },
+    "sp_icon_survivor_skill_lava_1": {
+      "src": "/img/game-41/hero-skills/lava-1.png",
+      "width": 128,
+      "height": 128,
+      "sha256": "65c9147b71737b0a033b3c4da29da0f5cd43212403187091ad5a76def923053c",
+      "nativeKey": "sp_icon_survivor_skill_lava_1",
+      "retainedExisting": true,
+      "extractedSourceSHA256": "75e69710524e164899dff9f9725e7a4d9a436846c538e4cf718ab20d0d43bef8"
+    },
+    "sp_icon_survivor_skill_furiosa_3": {
+      "src": "/img/game-26300/hero-skills/furiosa-3.png",
+      "width": 128,
+      "height": 128,
+      "sha256": "c327945b08c0f3c0b2a947fa0452fa13d837099a393b011c051b759d781442a8",
+      "nativeKey": "sp_icon_survivor_skill_furiosa_3",
+      "retainedExisting": false,
+      "extractedSourceSHA256": "c327945b08c0f3c0b2a947fa0452fa13d837099a393b011c051b759d781442a8"
+    },
+    "sp_icon_survivor_skill_furiosa_4": {
+      "src": "/img/game-26300/hero-skills/furiosa-4.png",
+      "width": 128,
+      "height": 128,
+      "sha256": "988e73c6279125f3b832ce18a7af98539b4a5c399f17331118a38c983085517e",
+      "nativeKey": "sp_icon_survivor_skill_furiosa_4",
+      "retainedExisting": false,
+      "extractedSourceSHA256": "988e73c6279125f3b832ce18a7af98539b4a5c399f17331118a38c983085517e"
+    },
+    "sp_icon_survivor_skill_lava_2": {
+      "src": "/img/game-41/hero-skills/lava-2.png",
+      "width": 128,
+      "height": 128,
+      "sha256": "e6d64516a7246a2e7dd60bce8ea0acc8afa2e3d039b7d10e6fa82218d0dedbb4",
+      "nativeKey": "sp_icon_survivor_skill_lava_2",
+      "retainedExisting": true,
+      "extractedSourceSHA256": "ca19546d2ec29a07013ca9143b127367c4fab67a90aa890f7cda43e3deeec688"
+    },
+    "sp_icon_survivor_skill_furiosa_1": {
+      "src": "/img/game-26300/hero-skills/furiosa-1.png",
+      "width": 128,
+      "height": 128,
+      "sha256": "4c9958d06e9403f9a867719198580d81e8b92052ef782e87522b2a3894058ffe",
+      "nativeKey": "sp_icon_survivor_skill_furiosa_1",
+      "retainedExisting": false,
+      "extractedSourceSHA256": "4c9958d06e9403f9a867719198580d81e8b92052ef782e87522b2a3894058ffe"
+    },
+    "sp_icon_survivor_skill_furiosa_2": {
+      "src": "/img/game-26300/hero-skills/furiosa-2.png",
+      "width": 128,
+      "height": 128,
+      "sha256": "6f03d290302fb0ebe8de84a2e659ab413313747438ef2cb36a6638752aa10304",
+      "nativeKey": "sp_icon_survivor_skill_furiosa_2",
+      "retainedExisting": false,
+      "extractedSourceSHA256": "6f03d290302fb0ebe8de84a2e659ab413313747438ef2cb36a6638752aa10304"
+    },
+    "sp_icon_survivor_skill_lava_3": {
+      "src": "/img/game-41/hero-skills/lava-3.png",
+      "width": 128,
+      "height": 128,
+      "sha256": "e3078ad98ca15409cb173311883f3399982f6f023aedc2c9723e50df55fb0499",
+      "nativeKey": "sp_icon_survivor_skill_lava_3",
+      "retainedExisting": true,
+      "extractedSourceSHA256": "708f29a391b3d889d2a07cbbf2ad91ae7bc2b1dda701b0b6773328e09f0cf594"
+    }
+  },
+  "heroes": {
+    "lava": {
+      "portrait": {
+        "src": "/img/game-41/heroes/lava.png",
+        "width": 840,
+        "height": 712,
+        "sha256": "bee07232e2d8419294186d535633e6dc0ca493fb7b04988ddfc836b386b63ee2",
+        "nativeKey": "sp_avatar_survivor_full_lava",
+        "retainedExisting": true,
+        "extractedSourceSHA256": "bee07232e2d8419294186d535633e6dc0ca493fb7b04988ddfc836b386b63ee2"
+      },
+      "squadPortrait": {
+        "src": "/img/game-26300/heroes/lava-squad.png",
+        "width": 360,
+        "height": 492,
+        "sha256": "f4f72b9ea45a52cced8ae6e88ba27bb66dbf1b5af9769ee94494125cbbec96b4",
+        "nativeKey": "sp_avatar_survivor_squad_lava",
+        "retainedExisting": false,
+        "extractedSourceSHA256": "f4f72b9ea45a52cced8ae6e88ba27bb66dbf1b5af9769ee94494125cbbec96b4"
+      },
+      "skills": {
+        "25401384": {
+          "src": "/img/game-41/hero-skills/lava-1.png",
+          "width": 128,
+          "height": 128,
+          "sha256": "65c9147b71737b0a033b3c4da29da0f5cd43212403187091ad5a76def923053c",
+          "nativeKey": "sp_icon_survivor_skill_lava_1",
+          "retainedExisting": true,
+          "extractedSourceSHA256": "75e69710524e164899dff9f9725e7a4d9a436846c538e4cf718ab20d0d43bef8"
+        },
+        "25401385": {
+          "src": "/img/game-41/hero-skills/lava-2.png",
+          "width": 128,
+          "height": 128,
+          "sha256": "e6d64516a7246a2e7dd60bce8ea0acc8afa2e3d039b7d10e6fa82218d0dedbb4",
+          "nativeKey": "sp_icon_survivor_skill_lava_2",
+          "retainedExisting": true,
+          "extractedSourceSHA256": "ca19546d2ec29a07013ca9143b127367c4fab67a90aa890f7cda43e3deeec688"
+        },
+        "25401386": {
+          "src": "/img/game-41/hero-skills/lava-3.png",
+          "width": 128,
+          "height": 128,
+          "sha256": "e3078ad98ca15409cb173311883f3399982f6f023aedc2c9723e50df55fb0499",
+          "nativeKey": "sp_icon_survivor_skill_lava_3",
+          "retainedExisting": true,
+          "extractedSourceSHA256": "708f29a391b3d889d2a07cbbf2ad91ae7bc2b1dda701b0b6773328e09f0cf594"
+        },
+        "25401387": {
+          "src": "/img/game-41/hero-skills/lava-4.png",
+          "width": 128,
+          "height": 128,
+          "sha256": "0763e7b5085d84c9730be4859e551cd8a462f707e0e4a184bc84de20b4f693ed",
+          "nativeKey": "sp_icon_survivor_skill_lava_4",
+          "retainedExisting": true,
+          "extractedSourceSHA256": "33c6821556355f37dc2ea243515bd5de2aa098ef951dc9e1f936a852e953447a"
+        }
+      },
+      "gearSkillIcon": {
+        "src": "/img/game-26300/hero-skills/lava-gear.png",
+        "width": 128,
+        "height": 128,
+        "sha256": "d61f1312f3eb33e36b009fda41b7a5d638df0a4b6dad7f394cfa069feeef3812",
+        "nativeKey": "sp_icon_exclusive_gear_skill_lava",
+        "retainedExisting": false,
+        "extractedSourceSHA256": "d61f1312f3eb33e36b009fda41b7a5d638df0a4b6dad7f394cfa069feeef3812"
+      }
+    },
+    "furiosa": {
+      "portrait": {
+        "src": "/img/game-26300/heroes/furiosa.png",
+        "width": 520,
+        "height": 712,
+        "sha256": "e7bd147af34a13c58d4e8d0f76560a7ca10458de761d8c5fdd2940557f4feb41",
+        "nativeKey": "sp_avatar_survivor_full_furiosa",
+        "retainedExisting": false,
+        "extractedSourceSHA256": "e7bd147af34a13c58d4e8d0f76560a7ca10458de761d8c5fdd2940557f4feb41"
+      },
+      "squadPortrait": {
+        "src": "/img/game-26300/heroes/furiosa-squad.png",
+        "width": 360,
+        "height": 492,
+        "sha256": "03afa105cc9b9ab1b115ca54bd54475dd1f2999aab24f93c5e52207a3dc388e7",
+        "nativeKey": "sp_avatar_survivor_squad_furiosa",
+        "retainedExisting": false,
+        "extractedSourceSHA256": "03afa105cc9b9ab1b115ca54bd54475dd1f2999aab24f93c5e52207a3dc388e7"
+      },
+      "skills": {
+        "25401397": {
+          "src": "/img/game-26300/hero-skills/furiosa-1.png",
+          "width": 128,
+          "height": 128,
+          "sha256": "4c9958d06e9403f9a867719198580d81e8b92052ef782e87522b2a3894058ffe",
+          "nativeKey": "sp_icon_survivor_skill_furiosa_1",
+          "retainedExisting": false,
+          "extractedSourceSHA256": "4c9958d06e9403f9a867719198580d81e8b92052ef782e87522b2a3894058ffe"
+        },
+        "25401398": {
+          "src": "/img/game-26300/hero-skills/furiosa-2.png",
+          "width": 128,
+          "height": 128,
+          "sha256": "6f03d290302fb0ebe8de84a2e659ab413313747438ef2cb36a6638752aa10304",
+          "nativeKey": "sp_icon_survivor_skill_furiosa_2",
+          "retainedExisting": false,
+          "extractedSourceSHA256": "6f03d290302fb0ebe8de84a2e659ab413313747438ef2cb36a6638752aa10304"
+        },
+        "25401399": {
+          "src": "/img/game-26300/hero-skills/furiosa-3.png",
+          "width": 128,
+          "height": 128,
+          "sha256": "c327945b08c0f3c0b2a947fa0452fa13d837099a393b011c051b759d781442a8",
+          "nativeKey": "sp_icon_survivor_skill_furiosa_3",
+          "retainedExisting": false,
+          "extractedSourceSHA256": "c327945b08c0f3c0b2a947fa0452fa13d837099a393b011c051b759d781442a8"
+        },
+        "25401400": {
+          "src": "/img/game-26300/hero-skills/furiosa-4.png",
+          "width": 128,
+          "height": 128,
+          "sha256": "988e73c6279125f3b832ce18a7af98539b4a5c399f17331118a38c983085517e",
+          "nativeKey": "sp_icon_survivor_skill_furiosa_4",
+          "retainedExisting": false,
+          "extractedSourceSHA256": "988e73c6279125f3b832ce18a7af98539b4a5c399f17331118a38c983085517e"
+        }
+      },
+      "gearSkillIcon": {
+        "src": "/img/game-26300/hero-skills/furiosa-gear.png",
+        "width": 128,
+        "height": 128,
+        "sha256": "b7435925ffc3632287d4ba050e4ed079c9d91368f806cd60f09d948ff2088bf6",
+        "nativeKey": "sp_icon_exclusive_gear_skill_furiosa",
+        "retainedExisting": false,
+        "extractedSourceSHA256": "b7435925ffc3632287d4ba050e4ed079c9d91368f806cd60f09d948ff2088bf6"
+      }
+    },
+    "alita": {
+      "portrait": {
+        "src": "/img/game-26300/heroes/alita.png",
+        "width": 628,
+        "height": 712,
+        "sha256": "79ba9f9bdb3f502a2a59860bb60f64390ddb98c19809fc4be11edd9c464df476",
+        "nativeKey": "sp_avatar_survivor_full_alita",
+        "retainedExisting": false,
+        "extractedSourceSHA256": "79ba9f9bdb3f502a2a59860bb60f64390ddb98c19809fc4be11edd9c464df476"
+      },
+      "squadPortrait": {
+        "src": "/img/game-26300/heroes/alita-squad.png",
+        "width": 360,
+        "height": 492,
+        "sha256": "d5e1de4f519cb46b0c28255aa180f23ffaf568475bdd4b8da641cbff2914e1ae",
+        "nativeKey": "sp_avatar_survivor_squad_alita",
+        "retainedExisting": false,
+        "extractedSourceSHA256": "d5e1de4f519cb46b0c28255aa180f23ffaf568475bdd4b8da641cbff2914e1ae"
+      },
+      "skills": {
+        "25401405": {
+          "src": "/img/game-26300/hero-skills/alita-1.png",
+          "width": 128,
+          "height": 128,
+          "sha256": "4b74465a4c73d51a1ddd5699ae946bd85f66cf14b52005341764fd4ba37afd66",
+          "nativeKey": "sp_icon_survivor_skill_alita_1",
+          "retainedExisting": false,
+          "extractedSourceSHA256": "4b74465a4c73d51a1ddd5699ae946bd85f66cf14b52005341764fd4ba37afd66"
+        },
+        "25401406": {
+          "src": "/img/game-26300/hero-skills/alita-2.png",
+          "width": 128,
+          "height": 128,
+          "sha256": "7f2b66506b72162a4e8fb6c3f635caf90648f0c63c8dee1eb921b704cb3965f6",
+          "nativeKey": "sp_icon_survivor_skill_alita_2",
+          "retainedExisting": false,
+          "extractedSourceSHA256": "7f2b66506b72162a4e8fb6c3f635caf90648f0c63c8dee1eb921b704cb3965f6"
+        },
+        "25401407": {
+          "src": "/img/game-26300/hero-skills/alita-3.png",
+          "width": 128,
+          "height": 128,
+          "sha256": "6bb8343e5af58b6654a7b644bf78998905a9ff0889dadba28ae36d77afa3959a",
+          "nativeKey": "sp_icon_survivor_skill_alita_3",
+          "retainedExisting": false,
+          "extractedSourceSHA256": "6bb8343e5af58b6654a7b644bf78998905a9ff0889dadba28ae36d77afa3959a"
+        },
+        "25401409": {
+          "src": "/img/game-26300/hero-skills/alita-4.png",
+          "width": 128,
+          "height": 128,
+          "sha256": "4ef8292bd10c1056e23f0f45f21ada1a8eff4b7d6d995edea01a252c9d5eacae",
+          "nativeKey": "sp_icon_survivor_skill_alita_4",
+          "retainedExisting": false,
+          "extractedSourceSHA256": "4ef8292bd10c1056e23f0f45f21ada1a8eff4b7d6d995edea01a252c9d5eacae"
+        }
+      },
+      "gearSkillIcon": {
+        "src": "/img/game-26300/hero-skills/alita-gear.png",
+        "width": 128,
+        "height": 128,
+        "sha256": "56545c3cf009ac736e3a1b88f63d05e24b99f9d939cdf8c9eef5843708388d17",
+        "nativeKey": "sp_icon_exclusive_gear_skill_alita",
+        "retainedExisting": false,
+        "extractedSourceSHA256": "56545c3cf009ac736e3a1b88f63d05e24b99f9d939cdf8c9eef5843708388d17"
+      }
+    }
+  }
+}

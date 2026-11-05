@@ -269,6 +269,7 @@ function validateRouteManifest(groups) {
 // Pure page projection shared by staging and focused owner-regeneration tests.
 function localizePage(source,group,groups,{converter=createConverter(),router=makeRouter(groups),ui=L.readJSON(path.join(L.ROOT,'data/i18n/ui/zh-cn.json')),available=[...L.existing,TARGET]}={}) {
     const sourceFile=group.routes['zh-tw'].slice(1)+'index.html';
+    if(source.includes('data-v5-home'))require('./build-v5-landing').validateOwnership(source,'zh-tw');
     require('./build-hero-pet-pages').validateOwnership(source,'zh-tw');
     require('./v4-workbench-content').validateOwnership(source,'zh-tw',group.routes['zh-tw']);
     if(source.includes('data-hero-atlas-owned'))require('./build-hero-atlas').validateOwnership(source,'zh-tw',group.routes['zh-tw']);
@@ -276,11 +277,11 @@ function localizePage(source,group,groups,{converter=createConverter(),router=ma
     const {document}=parseHTML(source),beforeIds=[...document.querySelectorAll('[id]')].map(e=>e.id),beforeMedia=[...document.querySelectorAll('img,iframe,video,source')].map(e=>e.getAttribute('src'));
     const protectedExternal=[...document.querySelectorAll('[href],[src]')].flatMap(e=>['href','src'].filter(a=>/^https?:/.test(e.getAttribute(a)||'')&&!e.getAttribute(a).startsWith(L.publicOrigin)).map(a=>[e.tagName,a,e.getAttribute(a)]));
     const convert=(v,where)=>converter.convert(v,sourceFile+':'+where),walker=document.createTreeWalker(document,4),nodes=[];let node;
-    while((node=walker.nextNode()))if(!node.parentElement?.closest('script,style,.ts3-language nav,.language-switcher,[data-hero-atlas-owned],[data-hero-pet-owned],[data-v4-owned]'))nodes.push(node);
+    while((node=walker.nextNode()))if(!node.parentElement?.closest('script,style,.ts3-language nav,.language-switcher,[data-hero-atlas-owned],[data-hero-pet-owned],[data-v4-owned],[data-v5-owned]'))nodes.push(node);
     for(const n of nodes)n.data=convert(n.data,'text:'+n.parentElement?.tagName);
     document.documentElement.lang='zh-Hans';document.documentElement.setAttribute('data-lang',TARGET);document.documentElement.dir='ltr';
     for(const el of document.querySelectorAll('*')) {
-      if(el.closest('[data-hero-atlas-owned],[data-hero-pet-owned],[data-v4-owned]'))continue;
+      if(el.closest('[data-hero-atlas-owned],[data-hero-pet-owned],[data-v4-owned],[data-v5-owned]'))continue;
       for(const attr of attributes)if(el.hasAttribute(attr))el.setAttribute(attr,convert(el.getAttribute(attr),attr));
       for(const attr of ['href','action','data-search-url'])if(el.hasAttribute(attr)&&!el.matches('link[rel="alternate"],a[hreflang],.ts3-language a[lang]'))el.setAttribute(attr,router.route(el.getAttribute(attr)));
       if(el.hasAttribute('lang')&&/^zh-(tw|hant)$/i.test(el.getAttribute('lang'))&&!el.matches('a'))el.setAttribute('lang','zh-Hans');
@@ -293,7 +294,7 @@ function localizePage(source,group,groups,{converter=createConverter(),router=ma
       }
     }
     for(const script of document.querySelectorAll('script[type="application/json"],script[type="application/ld+json"]')) {
-      if(script.closest('[data-hero-atlas-owned],[data-hero-pet-owned],[data-v4-owned]'))continue;
+      if(script.closest('[data-hero-atlas-owned],[data-hero-pet-owned],[data-v4-owned],[data-v5-owned]'))continue;
       const value=JSON.parse(script.textContent),translated=jsonConvert(value,convert,router.route,script.id||'json');
       if(script.hasAttribute('data-building-system-model') && translated.locale)translated.locale.numberLocale='zh-CN';
       immutableJSON(value,translated,sourceFile+':'+(script.id||'json'));
@@ -305,7 +306,7 @@ function localizePage(source,group,groups,{converter=createConverter(),router=ma
       script.textContent=JSON.stringify(translated).replace(/</g,'\\u003c');
     }
     let protectedPrograms=0,localizedPrograms=0;
-    for(const script of document.querySelectorAll('script:not([src])'))if(!script.type?.includes('json')&&!script.closest('[data-hero-atlas-owned],[data-hero-pet-owned],[data-v4-owned]')) {
+    for(const script of document.querySelectorAll('script:not([src])'))if(!script.type?.includes('json')&&!script.closest('[data-hero-atlas-owned],[data-hero-pet-owned],[data-v4-owned],[data-v5-owned]')) {
       const before=script.textContent,after=inlineConvert(before,convert,router.route,sourceFile);
       script.textContent=after;if(before===after)protectedPrograms++;else localizedPrograms++;
     }

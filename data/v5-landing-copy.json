@@ -1,0 +1,2504 @@
+{
+  "schemaVersion": 1,
+  "locales": {
+    "en": {
+      "title": "Plan your next move",
+      "intro": "Daily tasks, event preparation and growth tools in one place.",
+      "today": "Today",
+      "events": "Event guides",
+      "eventLead": "Prepare materials, explore rewards and calculate costs.",
+      "schedule": "Schedule",
+      "scoreActions": "Actions that earn points",
+      "scoreLead": "Choose an activity to explore its scoring rules.",
+      "duel": "Alliance Duel",
+      "duelLead": "Plan daily goals and compare your reserves.",
+      "guides": "Guides",
+      "guideLead": "Practical help for growth and team building.",
+      "news": "Official news",
+      "newsLead": "Updates and hero announcements from the game team.",
+      "codes": "Gift codes",
+      "codesLead": "Check code details before redeeming in-game.",
+      "noVerifiedCodes": "No currently usable codes have been independently verified.",
+      "codesChecked": "Last checked: {date}",
+      "lootbarTop": "TEN monthly benefits",
+      "lootbarBottom": "Top up through TEN",
+      "tools": "Quick tools",
+      "missionTitle": "Today’s checklist",
+      "missionNotice": "Mark tasks after checking your game. A new checklist starts at midnight in the selected timezone.",
+      "personalSchedule": "My schedule",
+      "planAction": "Add a plan",
+      "localOnly": "Saved in this browser.",
+      "chooseStage": "Choose an event day",
+      "stageNote": "Choose the day shown in your game; this does not set a live schedule.",
+      "resetDay": "Reset checklist",
+      "complete": "Done",
+      "liveNotice": "Your State’s live event schedule is not connected.",
+      "confirmed": "Confirmed schedule",
+      "nextEvent": "Next event",
+      "noUpcoming": "No upcoming personal plans.",
+      "allGuides": "All guides",
+      "allNews": "All news",
+      "readGuide": "Read guide",
+      "features": {
+        "scores": {
+          "title": "Scores",
+          "description": "Calculate points from materials."
+        },
+        "guides": {
+          "title": "Guides",
+          "description": "Prepare for events and growth."
+        },
+        "codes": {
+          "title": "Codes",
+          "description": "Find redemption details."
+        },
+        "heroes": {
+          "title": "Heroes",
+          "description": "Compare skills and growth."
+        },
+        "pets": {
+          "title": "Pets",
+          "description": "Explore skills and pairings."
+        },
+        "factions": {
+          "title": "Factions",
+          "description": "Plan matchups and your team."
+        },
+        "glossary": {
+          "title": "Glossary",
+          "description": "Understand common terms."
+        },
+        "simulators": {
+          "title": "Simulators",
+          "description": "Plan formations and resources."
+        }
+      },
+      "missions": [
+        "Complete daily missions",
+        "Check free recruitment",
+        "Check current events",
+        "Collect available rewards"
+      ],
+      "glossary": [
+        {
+          "term": "Base points",
+          "description": "Points before research and other bonuses."
+        },
+        {
+          "term": "Speedups",
+          "description": "Items that shorten eligible building, research or training tasks."
+        },
+        {
+          "term": "Faction",
+          "description": "A hero’s faction affects team bonuses and matchups."
+        }
+      ],
+      "newsItems": [
+        {
+          "title": "Version 2.6.300",
+          "description": "Pet rankings, faction enhancement and hero-screen improvements."
+        },
+        {
+          "title": "Meet Furiosa",
+          "description": "Ragehorn brings area control and support for the front row."
+        },
+        {
+          "title": "Alita preview",
+          "description": "An Aeronaut X-SSR hero in development; availability follows State progression."
+        },
+        {
+          "title": "Alita · Coming soon · State unlocks vary",
+          "description": "An upcoming Aeronaut X-SSR hero. Bad Bunny Mk. I combines rapid lasers and carrot bombs with self-cleansing and resistance to control effects. Availability follows your State’s hero release schedule. Check Hero Recruitment in your game."
+        }
+      ],
+      "noPlans": "No personal plans saved.",
+      "personal": "My plans",
+      "vsPlanner": "VS stockpile planner",
+      "serverTime": "Selected timezone",
+      "localTime": "Your local clock",
+      "bookmark": "Bookmark the TEN top-up link",
+      "readNews": "Read official article",
+      "rewardPreview": "Reward preview"
+    },
+    "ko": {
+      "title": "오늘의 성장, 다음 수를 준비하세요",
+      "intro": "일일 할 일부터 이벤트 준비와 성장 계산까지 한곳에서.",
+      "today": "오늘 할 일",
+      "events": "이벤트 공략",
+      "eventLead": "준비물과 보상을 살펴보고 필요한 비용을 계산하세요.",
+      "schedule": "일정",
+      "scoreActions": "점수가 오르는 행동",
+      "scoreLead": "행동을 골라 이벤트 점수 규칙을 확인하세요.",
+      "duel": "연맹 대결",
+      "duelLead": "일차별 목표를 준비하고 비축 재료를 비교하세요.",
+      "guides": "공략",
+      "guideLead": "성장과 편성을 위한 실전 안내를 만나보세요.",
+      "news": "공식 소식",
+      "newsLead": "게임 운영팀의 업데이트와 영웅 소식입니다.",
+      "codes": "기프트 코드",
+      "codesLead": "코드 안내를 확인한 뒤 게임에서 사용하세요.",
+      "noVerifiedCodes": "현재 사용 가능 여부가 확인된 코드가 없습니다.",
+      "codesChecked": "확인 날짜: {date}",
+      "lootbarTop": "TEN 매월 혜택",
+      "lootbarBottom": "TEN 링크로 충전하기",
+      "tools": "자주 찾는 기능",
+      "missionTitle": "오늘의 체크리스트",
+      "missionNotice": "게임에서 확인한 뒤 체크하세요. 선택한 시간대의 자정을 기준으로 새 체크리스트가 시작됩니다.",
+      "personalSchedule": "내 일정",
+      "planAction": "계획 추가",
+      "localOnly": "이 브라우저에 저장됩니다.",
+      "chooseStage": "이벤트 일차 선택",
+      "stageNote": "게임에 표시된 일차를 선택하세요. 실제 일정이 자동 설정되지는 않습니다.",
+      "resetDay": "체크리스트 초기화",
+      "complete": "완료",
+      "liveNotice": "내 서버의 실시간 이벤트 일정은 연결되어 있지 않습니다.",
+      "confirmed": "확인된 일정",
+      "nextEvent": "다음 이벤트",
+      "noUpcoming": "예정된 개인 계획이 없습니다.",
+      "allGuides": "공략 전체",
+      "allNews": "소식 전체",
+      "readGuide": "공략 보기",
+      "features": {
+        "scores": {
+          "title": "점수 계산",
+          "description": "재료로 얻는 점수를 계산하세요."
+        },
+        "guides": {
+          "title": "공략",
+          "description": "이벤트와 성장을 준비하세요."
+        },
+        "codes": {
+          "title": "쿠폰",
+          "description": "코드 사용 안내를 확인하세요."
+        },
+        "heroes": {
+          "title": "영웅",
+          "description": "스킬과 성장 정보를 비교하세요."
+        },
+        "pets": {
+          "title": "펫",
+          "description": "스킬과 어울리는 영웅을 살펴보세요."
+        },
+        "factions": {
+          "title": "진영",
+          "description": "상성과 편성을 계획하세요."
+        },
+        "glossary": {
+          "title": "용어",
+          "description": "자주 쓰는 말을 알아보세요."
+        },
+        "simulators": {
+          "title": "시뮬레이터",
+          "description": "편성과 자원 사용을 계획하세요."
+        }
+      },
+      "missions": [
+        "일일 임무 완료",
+        "무료 모집 확인",
+        "진행 중인 이벤트 확인",
+        "받을 수 있는 보상 수령"
+      ],
+      "glossary": [
+        {
+          "term": "기본 점수",
+          "description": "연구와 기타 보너스 적용 전 점수입니다."
+        },
+        {
+          "term": "가속",
+          "description": "적용 가능한 건설·연구·훈련 시간을 줄이는 아이템입니다."
+        },
+        {
+          "term": "진영",
+          "description": "영웅의 진영은 편성 보너스와 상성에 영향을 줍니다."
+        }
+      ],
+      "newsItems": [
+        {
+          "title": "2.6.300 업데이트",
+          "description": "펫 랭킹, 진영 강화와 영웅 화면 개선 사항을 확인하세요."
+        },
+        {
+          "title": "퓨리오사 소개",
+          "description": "분노의 뿔을 타고 범위 제어와 전방 지원을 펼칩니다."
+        },
+        {
+          "title": "알리타 개발 소식",
+          "description": "개발 중인 하늘 X-SSR 영웅으로, 서버 진행도에 따라 공개됩니다."
+        },
+        {
+          "title": "알리타 · 출시 예고 · 서버별 해금",
+          "description": "출시가 예고된 하늘 X-SSR 영웅입니다. 배드 래빗 1호의 연속 레이저와 당근 폭탄을 사용하고, 자신의 디버프를 해제하며 제어 효과에 저항합니다. 서버의 영웅 출시 일정에 따라 해금됩니다. 게임 내 영웅 모집 화면에서 확인하세요."
+        }
+      ],
+      "noPlans": "저장된 개인 계획이 없습니다.",
+      "personal": "내 계획",
+      "vsPlanner": "VS 비축 플래너",
+      "serverTime": "선택한 시간대",
+      "localTime": "내 지역 시계",
+      "bookmark": "TEN 충전 링크 즐겨찾기",
+      "readNews": "공식 기사 보기",
+      "rewardPreview": "주요 보상 미리보기"
+    },
+    "ja": {
+      "title": "今日の育成と次の一手を準備",
+      "intro": "毎日のタスク、イベント準備、育成計算をひとつに。",
+      "today": "今日の予定",
+      "events": "イベント攻略",
+      "eventLead": "必要な素材と報酬を確認し、費用を計算しましょう。",
+      "schedule": "スケジュール",
+      "scoreActions": "ポイントを獲得する行動",
+      "scoreLead": "行動を選び、得点ルールを確認しましょう。",
+      "duel": "同盟対決",
+      "duelLead": "日ごとの目標を立て、備蓄を比較しましょう。",
+      "guides": "攻略",
+      "guideLead": "育成とチーム編成に役立つガイド。",
+      "news": "公式ニュース",
+      "newsLead": "運営チームからの更新情報と英雄紹介。",
+      "codes": "ギフトコード",
+      "codesLead": "詳細を確認してからゲーム内で交換してください。",
+      "noVerifiedCodes": "現在使用できると確認されたコードはありません。",
+      "codesChecked": "確認日：{date}",
+      "lootbarTop": "TENの毎月の特典",
+      "lootbarBottom": "TENリンクでチャージ",
+      "tools": "よく使う機能",
+      "missionTitle": "今日のチェックリスト",
+      "missionNotice": "ゲーム内で確認してからチェックしてください。選択した時間帯の午前0時に新しいリストが始まります。",
+      "personalSchedule": "自分の予定",
+      "planAction": "予定を追加",
+      "localOnly": "このブラウザーに保存されます。",
+      "chooseStage": "イベントの日を選択",
+      "stageNote": "ゲーム内に表示された日を選んでください。実際の日程は自動設定されません。",
+      "resetDay": "チェックをリセット",
+      "complete": "完了",
+      "liveNotice": "自分のサーバーのリアルタイム日程は連携されていません。",
+      "confirmed": "確認済みの日程",
+      "nextEvent": "次のイベント",
+      "noUpcoming": "今後の個人予定はありません。",
+      "allGuides": "攻略一覧",
+      "allNews": "ニュース一覧",
+      "readGuide": "攻略を見る",
+      "features": {
+        "scores": {
+          "title": "ポイント計算",
+          "description": "素材から獲得ポイントを計算。"
+        },
+        "guides": {
+          "title": "攻略",
+          "description": "イベントと育成を準備。"
+        },
+        "codes": {
+          "title": "コード",
+          "description": "交換方法を確認。"
+        },
+        "heroes": {
+          "title": "英雄",
+          "description": "スキルと育成情報を比較。"
+        },
+        "pets": {
+          "title": "ペット",
+          "description": "スキルと組み合わせを確認。"
+        },
+        "factions": {
+          "title": "陣営",
+          "description": "相性と編成を計画。"
+        },
+        "glossary": {
+          "title": "用語集",
+          "description": "よく使う用語を確認。"
+        },
+        "simulators": {
+          "title": "シミュレーター",
+          "description": "編成と資源配分を計画。"
+        }
+      },
+      "missions": [
+        "デイリーミッションを完了",
+        "無料募集を確認",
+        "開催中のイベントを確認",
+        "受け取れる報酬を回収"
+      ],
+      "glossary": [
+        {
+          "term": "基本ポイント",
+          "description": "研究やその他のボーナス適用前のポイントです。"
+        },
+        {
+          "term": "加速",
+          "description": "対象となる建設・研究・訓練の時間を短縮するアイテムです。"
+        },
+        {
+          "term": "陣営",
+          "description": "英雄の陣営はチームのボーナスや相性に影響します。"
+        }
+      ],
+      "newsItems": [
+        {
+          "title": "バージョン2.6.300",
+          "description": "ペットランキング、陣営強化、英雄画面の改善。"
+        },
+        {
+          "title": "フュリオサの紹介",
+          "description": "猛牛バイクで範囲制御と前列支援を行います。"
+        },
+        {
+          "title": "Alitaの開発情報",
+          "description": "開発中の天空のX-SSR英雄。登場時期はサーバーの進行状況によります。"
+        },
+        {
+          "title": "Alita · 登場予定・ステートごとに解放",
+          "description": "登場予定のAeronautのX-SSR英雄。Bad Bunny Mk. Iで連続レーザーとニンジン爆弾を放ち、自身のデバフを解除して行動妨害に抵抗します。 解放はステートの英雄登場日程に従います。ゲーム内の英雄募集で確認してください。"
+        }
+      ],
+      "noPlans": "保存された個人の予定はありません。",
+      "personal": "自分の予定",
+      "vsPlanner": "VS備蓄プランナー",
+      "serverTime": "選択したタイムゾーン",
+      "localTime": "端末の現地時刻",
+      "bookmark": "TENチャージリンクをブックマーク",
+      "readNews": "公式記事を読む",
+      "rewardPreview": "主な報酬のプレビュー"
+    },
+    "zh-cn": {
+      "title": "规划今日成长与下一步行动",
+      "intro": "每日任务、活动准备和成长工具，一站查看。",
+      "today": "今日安排",
+      "events": "活动攻略",
+      "eventLead": "查看准备材料和奖励，计算所需成本。",
+      "schedule": "日程",
+      "scoreActions": "得分行动",
+      "scoreLead": "选择行动，查看对应的得分规则。",
+      "duel": "联盟对决",
+      "duelLead": "规划每日目标，比较储备材料。",
+      "guides": "攻略",
+      "guideLead": "为成长和阵容搭配提供实用指引。",
+      "news": "官方消息",
+      "newsLead": "查看游戏团队的更新与英雄介绍。",
+      "codes": "礼包码",
+      "codesLead": "查看说明后再前往游戏兑换。",
+      "noVerifiedCodes": "目前没有已独立确认可用的礼包码。",
+      "codesChecked": "核查日期：{date}",
+      "lootbarTop": "TEN每月福利",
+      "lootbarBottom": "通过TEN链接充值",
+      "tools": "常用功能",
+      "missionTitle": "今日清单",
+      "missionNotice": "请在游戏内确认后勾选。清单将在所选时区的午夜开始新一天。",
+      "personalSchedule": "我的日程",
+      "planAction": "添加计划",
+      "localOnly": "保存在此浏览器中。",
+      "chooseStage": "选择活动天数",
+      "stageNote": "请选择游戏内显示的活动日，不会自动设定实际日程。",
+      "resetDay": "重置清单",
+      "complete": "已完成",
+      "liveNotice": "尚未连接您所在服务器的实时活动日程。",
+      "confirmed": "已确认日程",
+      "nextEvent": "下一场活动",
+      "noUpcoming": "暂无即将开始的个人计划。",
+      "allGuides": "全部攻略",
+      "allNews": "全部消息",
+      "readGuide": "查看攻略",
+      "features": {
+        "scores": {
+          "title": "积分计算",
+          "description": "计算材料可获得的积分。"
+        },
+        "guides": {
+          "title": "攻略",
+          "description": "准备活动与成长。"
+        },
+        "codes": {
+          "title": "礼包码",
+          "description": "查看兑换说明。"
+        },
+        "heroes": {
+          "title": "英雄",
+          "description": "比较技能与成长。"
+        },
+        "pets": {
+          "title": "宠物",
+          "description": "了解技能与搭配。"
+        },
+        "factions": {
+          "title": "阵营",
+          "description": "规划克制关系与阵容。"
+        },
+        "glossary": {
+          "title": "术语",
+          "description": "了解常见游戏用语。"
+        },
+        "simulators": {
+          "title": "模拟器",
+          "description": "规划阵容与资源使用。"
+        }
+      },
+      "missions": [
+        "完成每日任务",
+        "查看免费招募",
+        "查看当前活动",
+        "领取可用奖励"
+      ],
+      "glossary": [
+        {
+          "term": "基础积分",
+          "description": "研究和其他加成生效前的积分。"
+        },
+        {
+          "term": "加速",
+          "description": "缩短适用建筑、研究或训练任务时间的道具。"
+        },
+        {
+          "term": "阵营",
+          "description": "英雄阵营会影响队伍加成与克制关系。"
+        }
+      ],
+      "newsItems": [
+        {
+          "title": "2.6.300版本更新",
+          "description": "宠物排行榜、阵营强化与英雄界面改进。"
+        },
+        {
+          "title": "弗瑞奥萨介绍",
+          "description": "狂角机车带来范围控制与前排支援。"
+        },
+        {
+          "title": "Alita开发预告",
+          "description": "开发中的天空阵营X-SSR英雄，开放时间取决于服务器进度。"
+        },
+        {
+          "title": "Alita · 即将登场・按服务器解锁",
+          "description": "即将登场的Aeronaut阵营X-SSR英雄。驾驶Bad Bunny Mk. I发射连续激光与胡萝卜炸弹，解除自身减益并抵抗控制效果。 根据所属服务器的英雄开放进度解锁，请查看游戏内的英雄招募。"
+        }
+      ],
+      "noPlans": "尚未保存个人计划。",
+      "personal": "我的计划",
+      "vsPlanner": "VS储备规划器",
+      "serverTime": "所选时区",
+      "localTime": "你的当地时钟",
+      "bookmark": "将TEN充值链接加入书签",
+      "readNews": "查看官方文章",
+      "rewardPreview": "主要奖励预览"
+    },
+    "zh-tw": {
+      "title": "規劃今日成長與下一步行動",
+      "intro": "每日任務、活動準備與成長工具，一站查看。",
+      "today": "今日安排",
+      "events": "活動攻略",
+      "eventLead": "查看準備材料與獎勵，計算所需成本。",
+      "schedule": "日程",
+      "scoreActions": "得分行動",
+      "scoreLead": "選擇行動，查看對應的得分規則。",
+      "duel": "聯盟對決",
+      "duelLead": "規劃每日目標，比較儲備材料。",
+      "guides": "攻略",
+      "guideLead": "為成長與陣容搭配提供實用指引。",
+      "news": "官方消息",
+      "newsLead": "查看遊戲團隊的更新與英雄介紹。",
+      "codes": "禮包碼",
+      "codesLead": "查看說明後再前往遊戲兌換。",
+      "noVerifiedCodes": "目前沒有已獨立確認可用的禮包碼。",
+      "codesChecked": "查核日期：{date}",
+      "lootbarTop": "TEN每月福利",
+      "lootbarBottom": "透過TEN連結儲值",
+      "tools": "常用功能",
+      "missionTitle": "今日清單",
+      "missionNotice": "請在遊戲內確認後勾選。清單將在所選時區的午夜開始新一天。",
+      "personalSchedule": "我的日程",
+      "planAction": "新增計畫",
+      "localOnly": "儲存在此瀏覽器中。",
+      "chooseStage": "選擇活動天數",
+      "stageNote": "請選擇遊戲內顯示的活動日，不會自動設定實際日程。",
+      "resetDay": "重設清單",
+      "complete": "已完成",
+      "liveNotice": "尚未連接您所在伺服器的即時活動日程。",
+      "confirmed": "已確認日程",
+      "nextEvent": "下一場活動",
+      "noUpcoming": "暫無即將開始的個人計畫。",
+      "allGuides": "全部攻略",
+      "allNews": "全部消息",
+      "readGuide": "查看攻略",
+      "features": {
+        "scores": {
+          "title": "積分計算",
+          "description": "計算材料可獲得的積分。"
+        },
+        "guides": {
+          "title": "攻略",
+          "description": "準備活動與成長。"
+        },
+        "codes": {
+          "title": "禮包碼",
+          "description": "查看兌換說明。"
+        },
+        "heroes": {
+          "title": "英雄",
+          "description": "比較技能與成長。"
+        },
+        "pets": {
+          "title": "寵物",
+          "description": "了解技能與搭配。"
+        },
+        "factions": {
+          "title": "陣營",
+          "description": "規劃剋制關係與陣容。"
+        },
+        "glossary": {
+          "title": "術語",
+          "description": "了解常見遊戲用語。"
+        },
+        "simulators": {
+          "title": "模擬器",
+          "description": "規劃陣容與資源使用。"
+        }
+      },
+      "missions": [
+        "完成每日任務",
+        "查看免費招募",
+        "查看當前活動",
+        "領取可用獎勵"
+      ],
+      "glossary": [
+        {
+          "term": "基礎積分",
+          "description": "研究與其他加成生效前的積分。"
+        },
+        {
+          "term": "加速",
+          "description": "縮短適用建築、研究或訓練任務時間的道具。"
+        },
+        {
+          "term": "陣營",
+          "description": "英雄陣營會影響隊伍加成與剋制關係。"
+        }
+      ],
+      "newsItems": [
+        {
+          "title": "2.6.300版本更新",
+          "description": "寵物排行榜、陣營強化與英雄介面改進。"
+        },
+        {
+          "title": "弗瑞奧薩介紹",
+          "description": "狂角機車帶來範圍控制與前排支援。"
+        },
+        {
+          "title": "Alita開發預告",
+          "description": "開發中的天空陣營X-SSR英雄，開放時間取決於伺服器進度。"
+        },
+        {
+          "title": "Alita · 即將登場・依伺服器解鎖",
+          "description": "即將登場的Aeronaut陣營X-SSR英雄。駕駛Bad Bunny Mk. I發射連續雷射與胡蘿蔔炸彈，解除自身減益並抵抗控制效果。 依所屬伺服器的英雄開放進度解鎖，請查看遊戲內的英雄招募。"
+        }
+      ],
+      "noPlans": "尚未儲存個人計畫。",
+      "personal": "我的計畫",
+      "vsPlanner": "VS儲備規劃器",
+      "serverTime": "所選時區",
+      "localTime": "你的當地時鐘",
+      "bookmark": "將TEN儲值連結加入書籤",
+      "readNews": "查看官方文章",
+      "rewardPreview": "主要獎勵預覽"
+    },
+    "vi": {
+      "title": "Chuẩn bị cho bước tiến tiếp theo",
+      "intro": "Nhiệm vụ hằng ngày, chuẩn bị sự kiện và công cụ phát triển tại một nơi.",
+      "today": "Hôm nay",
+      "events": "Hướng dẫn sự kiện",
+      "eventLead": "Xem vật liệu, phần thưởng và tính chi phí.",
+      "schedule": "Lịch",
+      "scoreActions": "Hoạt động nhận điểm",
+      "scoreLead": "Chọn hoạt động để xem quy tắc tính điểm.",
+      "duel": "Đối đầu liên minh",
+      "duelLead": "Lập mục tiêu từng ngày và so sánh vật liệu dự trữ.",
+      "guides": "Hướng dẫn",
+      "guideLead": "Chỉ dẫn thiết thực về phát triển và xây dựng đội hình.",
+      "news": "Tin chính thức",
+      "newsLead": "Cập nhật và giới thiệu anh hùng từ đội ngũ trò chơi.",
+      "codes": "Mã quà tặng",
+      "codesLead": "Xem thông tin mã trước khi đổi trong trò chơi.",
+      "noVerifiedCodes": "Chưa xác minh độc lập được mã nào hiện còn dùng được.",
+      "codesChecked": "Ngày kiểm tra: {date}",
+      "lootbarTop": "Ưu đãi hằng tháng từ TEN",
+      "lootbarBottom": "Nạp qua liên kết TEN",
+      "tools": "Công cụ nhanh",
+      "missionTitle": "Danh sách hôm nay",
+      "missionNotice": "Kiểm tra nhiệm vụ trong trò chơi rồi đánh dấu. Danh sách mới bắt đầu lúc nửa đêm theo múi giờ đã chọn.",
+      "personalSchedule": "Lịch của tôi",
+      "planAction": "Thêm kế hoạch",
+      "localOnly": "Lưu trong trình duyệt này.",
+      "chooseStage": "Chọn ngày sự kiện",
+      "stageNote": "Chọn ngày hiển thị trong trò chơi; thao tác này không đặt lịch thực tế.",
+      "resetDay": "Đặt lại danh sách",
+      "complete": "Hoàn thành",
+      "liveNotice": "Chưa kết nối lịch sự kiện trực tiếp của máy chủ bạn.",
+      "confirmed": "Lịch đã xác nhận",
+      "nextEvent": "Sự kiện tiếp theo",
+      "noUpcoming": "Chưa có kế hoạch cá nhân sắp tới.",
+      "allGuides": "Tất cả hướng dẫn",
+      "allNews": "Tất cả tin tức",
+      "readGuide": "Đọc hướng dẫn",
+      "features": {
+        "scores": {
+          "title": "Điểm",
+          "description": "Tính điểm từ vật liệu."
+        },
+        "guides": {
+          "title": "Hướng dẫn",
+          "description": "Chuẩn bị sự kiện và phát triển."
+        },
+        "codes": {
+          "title": "Mã quà",
+          "description": "Xem cách đổi mã."
+        },
+        "heroes": {
+          "title": "Anh hùng",
+          "description": "So sánh kỹ năng và phát triển."
+        },
+        "pets": {
+          "title": "Thú cưng",
+          "description": "Xem kỹ năng và cách phối hợp."
+        },
+        "factions": {
+          "title": "Phe",
+          "description": "Lập đội và xem tương khắc."
+        },
+        "glossary": {
+          "title": "Thuật ngữ",
+          "description": "Hiểu các từ thường dùng."
+        },
+        "simulators": {
+          "title": "Mô phỏng",
+          "description": "Lập kế hoạch đội hình và tài nguyên."
+        }
+      },
+      "missions": [
+        "Hoàn thành nhiệm vụ hằng ngày",
+        "Kiểm tra chiêu mộ miễn phí",
+        "Kiểm tra sự kiện hiện tại",
+        "Nhận phần thưởng có sẵn"
+      ],
+      "glossary": [
+        {
+          "term": "Điểm cơ bản",
+          "description": "Điểm trước khi áp dụng thưởng nghiên cứu và các thưởng khác."
+        },
+        {
+          "term": "Tăng tốc",
+          "description": "Vật phẩm rút ngắn các tác vụ xây dựng, nghiên cứu hoặc huấn luyện phù hợp."
+        },
+        {
+          "term": "Phe",
+          "description": "Phe của anh hùng ảnh hưởng đến thưởng đội và tương khắc."
+        }
+      ],
+      "newsItems": [
+        {
+          "title": "Phiên bản 2.6.300",
+          "description": "Xếp hạng thú cưng, tăng cường phe và cải tiến màn hình anh hùng."
+        },
+        {
+          "title": "Giới thiệu Furiosa",
+          "description": "Ragehorn kiểm soát diện rộng và hỗ trợ hàng trước."
+        },
+        {
+          "title": "Giới thiệu sớm Alita",
+          "description": "Anh hùng X-SSR phe Aeronaut đang phát triển; thời điểm mở tùy tiến độ máy chủ."
+        },
+        {
+          "title": "Alita · Sắp ra mắt · mở theo State",
+          "description": "Anh hùng X-SSR phe Aeronaut sắp ra mắt. Bad Bunny Mk. I kết hợp laser và bom cà rốt với khả năng tự xóa bất lợi và kháng hiệu ứng khống chế. Mở theo lịch ra mắt anh hùng của State. Hãy xem mục tuyển mộ anh hùng trong trò chơi."
+        }
+      ],
+      "noPlans": "Chưa lưu kế hoạch cá nhân nào.",
+      "personal": "Kế hoạch của tôi",
+      "vsPlanner": "Lập kế hoạch dự trữ VS",
+      "serverTime": "Múi giờ đã chọn",
+      "localTime": "Giờ địa phương của bạn",
+      "bookmark": "Đánh dấu liên kết nạp TEN",
+      "readNews": "Đọc bài viết chính thức",
+      "rewardPreview": "Xem trước phần thưởng"
+    },
+    "th": {
+      "title": "เตรียมพร้อมสำหรับก้าวต่อไป",
+      "intro": "ภารกิจประจำวัน การเตรียมอีเวนต์ และเครื่องมือพัฒนาในที่เดียว",
+      "today": "วันนี้",
+      "events": "คู่มืออีเวนต์",
+      "eventLead": "ดูวัสดุที่ต้องเตรียม รางวัล และคำนวณค่าใช้จ่าย",
+      "schedule": "กำหนดการ",
+      "scoreActions": "กิจกรรมที่ให้คะแนน",
+      "scoreLead": "เลือกกิจกรรมเพื่อดูกติกาการรับคะแนน",
+      "duel": "ศึกพันธมิตร",
+      "duelLead": "วางเป้าหมายรายวันและเปรียบเทียบวัสดุสะสม",
+      "guides": "คู่มือ",
+      "guideLead": "คำแนะนำเพื่อการพัฒนาและจัดทีม",
+      "news": "ข่าวทางการ",
+      "newsLead": "อัปเดตและข่าวฮีโร่จากทีมเกม",
+      "codes": "โค้ดของขวัญ",
+      "codesLead": "ตรวจสอบรายละเอียดก่อนแลกในเกม",
+      "noVerifiedCodes": "ยังไม่มีโค้ดที่ตรวจสอบยืนยันได้ว่าใช้งานได้ในขณะนี้",
+      "codesChecked": "ตรวจสอบเมื่อ: {date}",
+      "lootbarTop": "สิทธิประโยชน์รายเดือนของ TEN",
+      "lootbarBottom": "เติมเงินผ่านลิงก์ TEN",
+      "tools": "เครื่องมือที่ใช้บ่อย",
+      "missionTitle": "รายการวันนี้",
+      "missionNotice": "ตรวจสอบภารกิจในเกมแล้วทำเครื่องหมาย รายการใหม่จะเริ่มตอนเที่ยงคืนตามเขตเวลาที่เลือก",
+      "personalSchedule": "กำหนดการของฉัน",
+      "planAction": "เพิ่มแผน",
+      "localOnly": "บันทึกในเบราว์เซอร์นี้",
+      "chooseStage": "เลือกวันของอีเวนต์",
+      "stageNote": "เลือกวันที่แสดงในเกม การเลือกนี้ไม่ได้ตั้งกำหนดการจริง",
+      "resetDay": "รีเซ็ตรายการ",
+      "complete": "เสร็จแล้ว",
+      "liveNotice": "ยังไม่ได้เชื่อมต่อกำหนดการอีเวนต์สดของเซิร์ฟเวอร์คุณ",
+      "confirmed": "กำหนดการที่ยืนยันแล้ว",
+      "nextEvent": "อีเวนต์ถัดไป",
+      "noUpcoming": "ยังไม่มีแผนส่วนตัวที่กำลังจะมาถึง",
+      "allGuides": "คู่มือทั้งหมด",
+      "allNews": "ข่าวทั้งหมด",
+      "readGuide": "อ่านคู่มือ",
+      "features": {
+        "scores": {
+          "title": "คะแนน",
+          "description": "คำนวณคะแนนจากวัสดุ"
+        },
+        "guides": {
+          "title": "คู่มือ",
+          "description": "เตรียมพร้อมสำหรับอีเวนต์และการพัฒนา"
+        },
+        "codes": {
+          "title": "โค้ด",
+          "description": "ดูรายละเอียดการแลก"
+        },
+        "heroes": {
+          "title": "ฮีโร่",
+          "description": "เปรียบเทียบสกิลและการพัฒนา"
+        },
+        "pets": {
+          "title": "สัตว์เลี้ยง",
+          "description": "ดูสกิลและการจับคู่"
+        },
+        "factions": {
+          "title": "ฝ่าย",
+          "description": "วางทีมและดูการแพ้ทาง"
+        },
+        "glossary": {
+          "title": "คำศัพท์",
+          "description": "ทำความเข้าใจคำที่พบบ่อย"
+        },
+        "simulators": {
+          "title": "เครื่องมือจำลอง",
+          "description": "วางแผนทีมและทรัพยากร"
+        }
+      },
+      "missions": [
+        "ทำภารกิจประจำวัน",
+        "ตรวจสอบการรับสมัครฟรี",
+        "ตรวจสอบอีเวนต์ปัจจุบัน",
+        "รับรางวัลที่พร้อมรับ"
+      ],
+      "glossary": [
+        {
+          "term": "คะแนนพื้นฐาน",
+          "description": "คะแนนก่อนรวมโบนัสจากการวิจัยและโบนัสอื่น"
+        },
+        {
+          "term": "เร่งเวลา",
+          "description": "ไอเทมที่ลดเวลางานก่อสร้าง วิจัย หรือฝึกฝนที่รองรับ"
+        },
+        {
+          "term": "ฝ่าย",
+          "description": "ฝ่ายของฮีโร่มีผลต่อโบนัสทีมและการแพ้ทาง"
+        }
+      ],
+      "newsItems": [
+        {
+          "title": "เวอร์ชัน 2.6.300",
+          "description": "อันดับสัตว์เลี้ยง การเสริมพลังฝ่าย และการปรับปรุงหน้าฮีโร่"
+        },
+        {
+          "title": "แนะนำ เฟอริโอซา",
+          "description": "เรจฮอร์น ควบคุมพื้นที่และสนับสนุนแนวหน้า"
+        },
+        {
+          "title": "ข่าวการพัฒนา Alita",
+          "description": "ฮีโร่ X-SSR ฝ่าย แอโรนอต อยู่ระหว่างพัฒนา การเปิดใช้ขึ้นกับความคืบหน้าของเซิร์ฟเวอร์"
+        },
+        {
+          "title": "Alita · เร็ว ๆ นี้ · ปลดล็อกตามรัฐ",
+          "description": "ฮีโร่ X-SSR ฝ่าย Aeronaut ที่กำลังจะมา ใช้ Bad Bunny Mk. I ยิงเลเซอร์และระเบิดแครอท พร้อมลบดีบัฟของตนเองและต้านทานผลควบคุม ปลดล็อกตามกำหนดเปิดตัวฮีโร่ของรัฐ ตรวจสอบหน้ารับสมัครฮีโร่ในเกม"
+        }
+      ],
+      "noPlans": "ยังไม่มีแผนส่วนตัวที่บันทึกไว้",
+      "personal": "แผนของฉัน",
+      "vsPlanner": "เครื่องมือวางแผนสะสม VS",
+      "serverTime": "เขตเวลาที่เลือก",
+      "localTime": "เวลาท้องถิ่นของคุณ",
+      "bookmark": "บันทึกลิงก์เติมเงิน TEN เป็นบุ๊กมาร์ก",
+      "readNews": "อ่านบทความทางการ",
+      "rewardPreview": "ตัวอย่างรางวัล"
+    },
+    "id": {
+      "title": "Siapkan langkah berikutnya",
+      "intro": "Tugas harian, persiapan acara, dan alat pengembangan di satu tempat.",
+      "today": "Hari ini",
+      "events": "Panduan acara",
+      "eventLead": "Cek bahan, hadiah, dan hitung kebutuhan biaya.",
+      "schedule": "Jadwal",
+      "scoreActions": "Aktivitas penghasil poin",
+      "scoreLead": "Pilih aktivitas untuk melihat aturan perolehan poin.",
+      "duel": "Duel Aliansi",
+      "duelLead": "Rencanakan target harian dan bandingkan cadangan bahan.",
+      "guides": "Panduan",
+      "guideLead": "Bantuan praktis untuk pengembangan dan susunan tim.",
+      "news": "Berita resmi",
+      "newsLead": "Pembaruan dan pengenalan hero dari tim game.",
+      "codes": "Kode hadiah",
+      "codesLead": "Periksa detail kode sebelum menukarnya di game.",
+      "noVerifiedCodes": "Belum ada kode aktif yang berhasil diverifikasi secara independen.",
+      "codesChecked": "Terakhir diperiksa: {date}",
+      "lootbarTop": "Manfaat bulanan TEN",
+      "lootbarBottom": "Isi ulang melalui TEN",
+      "tools": "Alat cepat",
+      "missionTitle": "Daftar tugas hari ini",
+      "missionNotice": "Periksa tugas di game lalu tandai. Daftar baru dimulai tengah malam sesuai zona waktu pilihan.",
+      "personalSchedule": "Jadwal saya",
+      "planAction": "Tambah rencana",
+      "localOnly": "Disimpan di browser ini.",
+      "chooseStage": "Pilih hari acara",
+      "stageNote": "Pilih hari yang tampil di game; pilihan ini tidak menetapkan jadwal langsung.",
+      "resetDay": "Reset daftar",
+      "complete": "Selesai",
+      "liveNotice": "Jadwal acara langsung server Anda belum terhubung.",
+      "confirmed": "Jadwal terkonfirmasi",
+      "nextEvent": "Acara berikutnya",
+      "noUpcoming": "Belum ada rencana pribadi mendatang.",
+      "allGuides": "Semua panduan",
+      "allNews": "Semua berita",
+      "readGuide": "Baca panduan",
+      "features": {
+        "scores": {
+          "title": "Poin",
+          "description": "Hitung poin dari bahan."
+        },
+        "guides": {
+          "title": "Panduan",
+          "description": "Siapkan acara dan pengembangan."
+        },
+        "codes": {
+          "title": "Kode",
+          "description": "Lihat cara penukaran."
+        },
+        "heroes": {
+          "title": "Hero",
+          "description": "Bandingkan skill dan pengembangan."
+        },
+        "pets": {
+          "title": "Pet",
+          "description": "Pelajari skill dan pasangan."
+        },
+        "factions": {
+          "title": "Faksi",
+          "description": "Rencanakan tim dan keunggulan faksi."
+        },
+        "glossary": {
+          "title": "Istilah",
+          "description": "Pahami istilah umum."
+        },
+        "simulators": {
+          "title": "Simulator",
+          "description": "Rencanakan formasi dan sumber daya."
+        }
+      },
+      "missions": [
+        "Selesaikan misi harian",
+        "Cek rekrutmen gratis",
+        "Cek acara saat ini",
+        "Ambil hadiah yang tersedia"
+      ],
+      "glossary": [
+        {
+          "term": "Poin dasar",
+          "description": "Poin sebelum bonus riset dan bonus lainnya."
+        },
+        {
+          "term": "Percepatan",
+          "description": "Item yang mempersingkat tugas pembangunan, riset, atau pelatihan yang sesuai."
+        },
+        {
+          "term": "Faksi",
+          "description": "Faksi hero memengaruhi bonus tim dan keunggulan terhadap lawan."
+        }
+      ],
+      "newsItems": [
+        {
+          "title": "Versi 2.6.300",
+          "description": "Peringkat pet, peningkatan faksi, dan perbaikan layar hero."
+        },
+        {
+          "title": "Kenali Furiosa",
+          "description": "Ragehorn memberi kendali area dan dukungan baris depan."
+        },
+        {
+          "title": "Pratinjau Alita",
+          "description": "Hero X-SSR Aeronaut dalam pengembangan; ketersediaan mengikuti progres server."
+        },
+        {
+          "title": "Alita · Segera hadir · sesuai State",
+          "description": "Hero X-SSR faksi Aeronaut yang akan hadir. Bad Bunny Mk. I menggabungkan laser dan bom wortel dengan pembersihan debuff sendiri serta ketahanan terhadap efek kontrol. Pembukaan mengikuti jadwal hero di State Anda. Periksa perekrutan hero dalam game."
+        }
+      ],
+      "noPlans": "Belum ada rencana pribadi tersimpan.",
+      "personal": "Rencana saya",
+      "vsPlanner": "Perencana persediaan VS",
+      "serverTime": "Zona waktu pilihan",
+      "localTime": "Waktu lokal Anda",
+      "bookmark": "Simpan tautan top-up TEN sebagai bookmark",
+      "readNews": "Baca artikel resmi",
+      "rewardPreview": "Pratinjau hadiah"
+    },
+    "ms": {
+      "title": "Sediakan langkah seterusnya",
+      "intro": "Tugas harian, persediaan acara dan alat perkembangan di satu tempat.",
+      "today": "Hari ini",
+      "events": "Panduan acara",
+      "eventLead": "Semak bahan, ganjaran dan kira kos yang diperlukan.",
+      "schedule": "Jadual",
+      "scoreActions": "Tindakan yang memberi mata",
+      "scoreLead": "Pilih aktiviti untuk melihat peraturan pemarkahan.",
+      "duel": "Pertarungan Pakatan",
+      "duelLead": "Rancang sasaran harian dan bandingkan simpanan bahan.",
+      "guides": "Panduan",
+      "guideLead": "Bantuan praktikal untuk perkembangan dan pembentukan pasukan.",
+      "news": "Berita rasmi",
+      "newsLead": "Kemas kini dan pengenalan wira daripada pasukan permainan.",
+      "codes": "Kod hadiah",
+      "codesLead": "Semak butiran kod sebelum menebusnya dalam permainan.",
+      "noVerifiedCodes": "Belum ada kod yang disahkan secara bebas masih boleh digunakan.",
+      "codesChecked": "Disemak pada: {date}",
+      "lootbarTop": "Manfaat bulanan TEN",
+      "lootbarBottom": "Tambah nilai melalui TEN",
+      "tools": "Alat pantas",
+      "missionTitle": "Senarai semak hari ini",
+      "missionNotice": "Semak tugas dalam permainan lalu tandakannya. Senarai baharu bermula pada tengah malam mengikut zon waktu pilihan.",
+      "personalSchedule": "Jadual saya",
+      "planAction": "Tambah rancangan",
+      "localOnly": "Disimpan dalam pelayar ini.",
+      "chooseStage": "Pilih hari acara",
+      "stageNote": "Pilih hari yang dipaparkan dalam permainan; ini tidak menetapkan jadual langsung.",
+      "resetDay": "Tetapkan semula senarai",
+      "complete": "Selesai",
+      "liveNotice": "Jadual acara langsung pelayan anda belum disambungkan.",
+      "confirmed": "Jadual yang disahkan",
+      "nextEvent": "Acara seterusnya",
+      "noUpcoming": "Tiada rancangan peribadi akan datang.",
+      "allGuides": "Semua panduan",
+      "allNews": "Semua berita",
+      "readGuide": "Baca panduan",
+      "features": {
+        "scores": {
+          "title": "Mata",
+          "description": "Kira mata daripada bahan."
+        },
+        "guides": {
+          "title": "Panduan",
+          "description": "Sediakan acara dan perkembangan."
+        },
+        "codes": {
+          "title": "Kod",
+          "description": "Semak cara penebusan."
+        },
+        "heroes": {
+          "title": "Wira",
+          "description": "Bandingkan kemahiran dan perkembangan."
+        },
+        "pets": {
+          "title": "Haiwan",
+          "description": "Terokai kemahiran dan padanan."
+        },
+        "factions": {
+          "title": "Puak",
+          "description": "Rancang pasukan dan kelebihan puak."
+        },
+        "glossary": {
+          "title": "Istilah",
+          "description": "Fahami istilah lazim."
+        },
+        "simulators": {
+          "title": "Simulator",
+          "description": "Rancang formasi dan sumber."
+        }
+      },
+      "missions": [
+        "Selesaikan misi harian",
+        "Semak perekrutan percuma",
+        "Semak acara semasa",
+        "Tuntut ganjaran tersedia"
+      ],
+      "glossary": [
+        {
+          "term": "Mata asas",
+          "description": "Mata sebelum bonus penyelidikan dan bonus lain."
+        },
+        {
+          "term": "Pecutan",
+          "description": "Item yang memendekkan tugas pembinaan, penyelidikan atau latihan yang sesuai."
+        },
+        {
+          "term": "Puak",
+          "description": "Puak wira mempengaruhi bonus pasukan dan kelebihan terhadap lawan."
+        }
+      ],
+      "newsItems": [
+        {
+          "title": "Versi 2.6.300",
+          "description": "Kedudukan haiwan, pengukuhan puak dan penambahbaikan skrin wira."
+        },
+        {
+          "title": "Kenali Furiosa",
+          "description": "Ragehorn memberikan kawalan kawasan dan sokongan barisan hadapan."
+        },
+        {
+          "title": "Pratonton Alita",
+          "description": "Wira X-SSR Aeronaut sedang dibangunkan; ketersediaan mengikut kemajuan pelayan."
+        },
+        {
+          "title": "Alita · Akan datang · mengikut State",
+          "description": "Wira X-SSR puak Aeronaut yang akan datang. Bad Bunny Mk. I menggabungkan laser dan bom lobak merah dengan penyingkiran kesan negatif sendiri serta rintangan terhadap kawalan. Pembukaan mengikut jadual wira State anda. Semak perekrutan wira dalam permainan."
+        }
+      ],
+      "noPlans": "Tiada rancangan peribadi disimpan.",
+      "personal": "Rancangan saya",
+      "vsPlanner": "Perancang simpanan VS",
+      "serverTime": "Zon waktu pilihan",
+      "localTime": "Waktu tempatan anda",
+      "bookmark": "Simpan pautan tambah nilai TEN sebagai penanda halaman",
+      "readNews": "Baca artikel rasmi",
+      "rewardPreview": "Pratonton ganjaran"
+    },
+    "de": {
+      "title": "Plane deinen nächsten Schritt",
+      "intro": "Tägliche Aufgaben, Eventvorbereitung und Entwicklungstools an einem Ort.",
+      "today": "Heute",
+      "events": "Event-Guides",
+      "eventLead": "Prüfe Materialien und Belohnungen und berechne die Kosten.",
+      "schedule": "Zeitplan",
+      "scoreActions": "Aktionen für Punkte",
+      "scoreLead": "Wähle eine Aktivität und sieh dir ihre Punkteregeln an.",
+      "duel": "Allianzduell",
+      "duelLead": "Plane Tagesziele und vergleiche deine Vorräte.",
+      "guides": "Guides",
+      "guideLead": "Praktische Hilfe für Entwicklung und Teamaufbau.",
+      "news": "Offizielle Neuigkeiten",
+      "newsLead": "Updates und Heldenvorstellungen vom Spielteam.",
+      "codes": "Geschenkcodes",
+      "codesLead": "Prüfe die Details, bevor du Codes im Spiel einlöst.",
+      "noVerifiedCodes": "Derzeit wurde kein nutzbarer Code unabhängig bestätigt.",
+      "codesChecked": "Zuletzt geprüft: {date}",
+      "lootbarTop": "Monatliche TEN-Vorteile",
+      "lootbarBottom": "Über TEN aufladen",
+      "tools": "Schnellzugriff",
+      "missionTitle": "Heutige Checkliste",
+      "missionNotice": "Prüfe Aufgaben im Spiel und hake sie ab. Um Mitternacht der gewählten Zeitzone beginnt eine neue Checkliste.",
+      "personalSchedule": "Mein Zeitplan",
+      "planAction": "Plan hinzufügen",
+      "localOnly": "In diesem Browser gespeichert.",
+      "chooseStage": "Eventtag wählen",
+      "stageNote": "Wähle den im Spiel angezeigten Tag. Dadurch wird kein Live-Zeitplan festgelegt.",
+      "resetDay": "Checkliste zurücksetzen",
+      "complete": "Erledigt",
+      "liveNotice": "Der Live-Eventplan deines Servers ist nicht verbunden.",
+      "confirmed": "Bestätigter Zeitplan",
+      "nextEvent": "Nächstes Event",
+      "noUpcoming": "Keine bevorstehenden persönlichen Pläne.",
+      "allGuides": "Alle Guides",
+      "allNews": "Alle Neuigkeiten",
+      "readGuide": "Guide lesen",
+      "features": {
+        "scores": {
+          "title": "Punkte",
+          "description": "Berechne Punkte aus Materialien."
+        },
+        "guides": {
+          "title": "Guides",
+          "description": "Bereite Events und Entwicklung vor."
+        },
+        "codes": {
+          "title": "Codes",
+          "description": "Prüfe die Einlösehinweise."
+        },
+        "heroes": {
+          "title": "Helden",
+          "description": "Vergleiche Fähigkeiten und Entwicklung."
+        },
+        "pets": {
+          "title": "Begleiter",
+          "description": "Entdecke Fähigkeiten und Kombinationen."
+        },
+        "factions": {
+          "title": "Fraktionen",
+          "description": "Plane Team und Konter."
+        },
+        "glossary": {
+          "title": "Glossar",
+          "description": "Verstehe häufige Begriffe."
+        },
+        "simulators": {
+          "title": "Simulatoren",
+          "description": "Plane Aufstellungen und Ressourcen."
+        }
+      },
+      "missions": [
+        "Tägliche Missionen abschließen",
+        "Kostenlose Rekrutierung prüfen",
+        "Aktuelle Events prüfen",
+        "Verfügbare Belohnungen abholen"
+      ],
+      "glossary": [
+        {
+          "term": "Basispunkte",
+          "description": "Punkte vor Forschungs- und anderen Boni."
+        },
+        {
+          "term": "Beschleuniger",
+          "description": "Gegenstände, die geeignete Bau-, Forschungs- oder Trainingsaufgaben verkürzen."
+        },
+        {
+          "term": "Fraktion",
+          "description": "Die Fraktion eines Helden beeinflusst Teamboni und Konter."
+        }
+      ],
+      "newsItems": [
+        {
+          "title": "Version 2.6.300",
+          "description": "Begleiter-Ranglisten, Fraktionsverstärkung und Verbesserungen der Heldenansicht."
+        },
+        {
+          "title": "Furiosa vorgestellt",
+          "description": "Wuthorn bringt Flächenkontrolle und Unterstützung für die Frontreihe."
+        },
+        {
+          "title": "Vorschau auf Alita",
+          "description": "Eine X-SSR-Heldin der Flugheld-Fraktion in Entwicklung; die Verfügbarkeit folgt dem Serverfortschritt."
+        },
+        {
+          "title": "Alita · Demnächst · Freischaltung je Staat",
+          "description": "Eine kommende X-SSR-Heldin der Aeronaut-Fraktion. Bad Bunny Mk. I kombiniert Laser und Karottenbomben mit dem Entfernen eigener Schwächungen und Widerstand gegen Kontrolleffekte. Die Freischaltung folgt dem Heldenzeitplan deines Staates. Prüfe die Heldenrekrutierung im Spiel."
+        }
+      ],
+      "noPlans": "Keine persönlichen Pläne gespeichert.",
+      "personal": "Meine Pläne",
+      "vsPlanner": "VS-Vorratsplaner",
+      "serverTime": "Gewählte Zeitzone",
+      "localTime": "Deine Ortszeit",
+      "bookmark": "TEN-Aufladelink als Lesezeichen speichern",
+      "readNews": "Offiziellen Artikel lesen",
+      "rewardPreview": "Belohnungsvorschau"
+    },
+    "es": {
+      "title": "Prepara tu próximo paso",
+      "intro": "Tareas diarias, preparación de eventos y herramientas de progreso en un solo lugar.",
+      "today": "Hoy",
+      "events": "Guías de eventos",
+      "eventLead": "Consulta materiales y recompensas y calcula los costes.",
+      "schedule": "Calendario",
+      "scoreActions": "Acciones que dan puntos",
+      "scoreLead": "Elige una actividad para consultar sus reglas de puntuación.",
+      "duel": "Duelo de Alianzas",
+      "duelLead": "Planifica objetivos diarios y compara tus reservas.",
+      "guides": "Guías",
+      "guideLead": "Ayuda práctica para progresar y formar tu equipo.",
+      "news": "Noticias oficiales",
+      "newsLead": "Actualizaciones y presentaciones de héroes del equipo del juego.",
+      "codes": "Códigos de regalo",
+      "codesLead": "Consulta los detalles antes de canjearlos en el juego.",
+      "noVerifiedCodes": "No se ha verificado de forma independiente ningún código utilizable actualmente.",
+      "codesChecked": "Última comprobación: {date}",
+      "lootbarTop": "Ventajas mensuales de TEN",
+      "lootbarBottom": "Recarga a través de TEN",
+      "tools": "Accesos rápidos",
+      "missionTitle": "Lista de hoy",
+      "missionNotice": "Comprueba las tareas en el juego y márcalas. Una nueva lista comienza a medianoche en la zona horaria elegida.",
+      "personalSchedule": "Mi calendario",
+      "planAction": "Añadir plan",
+      "localOnly": "Se guarda en este navegador.",
+      "chooseStage": "Elige el día del evento",
+      "stageNote": "Selecciona el día que muestra el juego; esto no establece un calendario en directo.",
+      "resetDay": "Restablecer lista",
+      "complete": "Hecho",
+      "liveNotice": "El calendario de eventos en directo de tu servidor no está conectado.",
+      "confirmed": "Calendario confirmado",
+      "nextEvent": "Próximo evento",
+      "noUpcoming": "No hay próximos planes personales.",
+      "allGuides": "Todas las guías",
+      "allNews": "Todas las noticias",
+      "readGuide": "Leer guía",
+      "features": {
+        "scores": {
+          "title": "Puntos",
+          "description": "Calcula puntos a partir de materiales."
+        },
+        "guides": {
+          "title": "Guías",
+          "description": "Prepara eventos y progresión."
+        },
+        "codes": {
+          "title": "Códigos",
+          "description": "Consulta cómo canjearlos."
+        },
+        "heroes": {
+          "title": "Héroes",
+          "description": "Compara habilidades y progreso."
+        },
+        "pets": {
+          "title": "Mascotas",
+          "description": "Explora habilidades y combinaciones."
+        },
+        "factions": {
+          "title": "Facciones",
+          "description": "Planifica ventajas y equipo."
+        },
+        "glossary": {
+          "title": "Glosario",
+          "description": "Comprende los términos habituales."
+        },
+        "simulators": {
+          "title": "Simuladores",
+          "description": "Planifica formaciones y recursos."
+        }
+      },
+      "missions": [
+        "Completar misiones diarias",
+        "Comprobar reclutamiento gratis",
+        "Consultar eventos actuales",
+        "Recoger recompensas disponibles"
+      ],
+      "glossary": [
+        {
+          "term": "Puntos básicos",
+          "description": "Puntos antes de las bonificaciones de investigación y otras mejoras."
+        },
+        {
+          "term": "Aceleradores",
+          "description": "Objetos que acortan tareas compatibles de construcción, investigación o entrenamiento."
+        },
+        {
+          "term": "Facción",
+          "description": "La facción de un héroe afecta a las bonificaciones del equipo y a sus ventajas frente al rival."
+        }
+      ],
+      "newsItems": [
+        {
+          "title": "Versión 2.6.300",
+          "description": "Clasificaciones de mascotas, mejora de facciones y ajustes de la pantalla de héroes."
+        },
+        {
+          "title": "Conoce a Furiosa",
+          "description": "Cuernofuria aporta control de área y apoyo a la primera fila."
+        },
+        {
+          "title": "Avance de Alita",
+          "description": "Heroína X-SSR de Aeronauta en desarrollo; su disponibilidad depende del progreso del servidor."
+        },
+        {
+          "title": "Alita · Próximamente · desbloqueo por estado",
+          "description": "Próxima heroína X-SSR de la facción Aeronaut. Bad Bunny Mk. I combina láseres y bombas zanahoria con la eliminación de sus propios efectos negativos y resistencia al control. El desbloqueo sigue el calendario de héroes de tu estado. Consulta el reclutamiento de héroes en el juego."
+        }
+      ],
+      "noPlans": "No hay planes personales guardados.",
+      "personal": "Mis planes",
+      "vsPlanner": "Planificador de reservas VS",
+      "serverTime": "Zona horaria elegida",
+      "localTime": "Tu hora local",
+      "bookmark": "Guarda el enlace de recarga TEN en tus favoritos",
+      "readNews": "Leer artículo oficial",
+      "rewardPreview": "Vista previa de recompensas"
+    },
+    "fr": {
+      "title": "Préparez votre prochaine étape",
+      "intro": "Tâches quotidiennes, préparation des événements et outils de progression au même endroit.",
+      "today": "Aujourd’hui",
+      "events": "Guides d’événements",
+      "eventLead": "Consultez les matériaux et récompenses, puis calculez les coûts.",
+      "schedule": "Calendrier",
+      "scoreActions": "Actions qui rapportent des points",
+      "scoreLead": "Choisissez une activité pour consulter ses règles de score.",
+      "duel": "Duel d’alliances",
+      "duelLead": "Planifiez vos objectifs quotidiens et comparez vos réserves.",
+      "guides": "Guides",
+      "guideLead": "Des conseils pratiques pour progresser et composer votre équipe.",
+      "news": "Actualités officielles",
+      "newsLead": "Mises à jour et présentations de héros par l’équipe du jeu.",
+      "codes": "Codes cadeaux",
+      "codesLead": "Consultez les détails avant de les utiliser en jeu.",
+      "noVerifiedCodes": "Aucun code actuellement utilisable n’a été vérifié de façon indépendante.",
+      "codesChecked": "Dernière vérification : {date}",
+      "lootbarTop": "Avantages mensuels TEN",
+      "lootbarBottom": "Recharger via TEN",
+      "tools": "Accès rapides",
+      "missionTitle": "Liste du jour",
+      "missionNotice": "Vérifiez les tâches en jeu puis cochez-les. Une nouvelle liste commence à minuit dans le fuseau choisi.",
+      "personalSchedule": "Mon calendrier",
+      "planAction": "Ajouter un plan",
+      "localOnly": "Enregistré dans ce navigateur.",
+      "chooseStage": "Choisir le jour de l’événement",
+      "stageNote": "Sélectionnez le jour affiché en jeu ; cela ne définit pas un calendrier en direct.",
+      "resetDay": "Réinitialiser la liste",
+      "complete": "Terminé",
+      "liveNotice": "Le calendrier en direct de votre serveur n’est pas connecté.",
+      "confirmed": "Calendrier confirmé",
+      "nextEvent": "Prochain événement",
+      "noUpcoming": "Aucun prochain plan personnel.",
+      "allGuides": "Tous les guides",
+      "allNews": "Toutes les actualités",
+      "readGuide": "Lire le guide",
+      "features": {
+        "scores": {
+          "title": "Points",
+          "description": "Calculez les points issus des matériaux."
+        },
+        "guides": {
+          "title": "Guides",
+          "description": "Préparez événements et progression."
+        },
+        "codes": {
+          "title": "Codes",
+          "description": "Consultez les modalités d’échange."
+        },
+        "heroes": {
+          "title": "Héros",
+          "description": "Comparez compétences et progression."
+        },
+        "pets": {
+          "title": "Animaux",
+          "description": "Explorez compétences et associations."
+        },
+        "factions": {
+          "title": "Factions",
+          "description": "Planifiez votre équipe et ses avantages."
+        },
+        "glossary": {
+          "title": "Glossaire",
+          "description": "Comprenez les termes courants."
+        },
+        "simulators": {
+          "title": "Simulateurs",
+          "description": "Planifiez formations et ressources."
+        }
+      },
+      "missions": [
+        "Terminer les missions quotidiennes",
+        "Vérifier le recrutement gratuit",
+        "Consulter les événements en cours",
+        "Récupérer les récompenses disponibles"
+      ],
+      "glossary": [
+        {
+          "term": "Points de base",
+          "description": "Points avant les bonus de recherche et autres améliorations."
+        },
+        {
+          "term": "Accélérateurs",
+          "description": "Objets réduisant la durée des tâches compatibles de construction, de recherche ou d’entraînement."
+        },
+        {
+          "term": "Faction",
+          "description": "La faction d’un héros influence les bonus d’équipe et les rapports de force."
+        }
+      ],
+      "newsItems": [
+        {
+          "title": "Version 2.6.300",
+          "description": "Classements des animaux, renforcement des factions et améliorations de l’écran des héros."
+        },
+        {
+          "title": "Découvrez Furiosa",
+          "description": "Corne-de-Rage assure le contrôle de zone et soutient la première ligne."
+        },
+        {
+          "title": "Aperçu d’Alita",
+          "description": "Héroïne X-SSR Aéronaute en développement ; sa disponibilité suit la progression du serveur."
+        },
+        {
+          "title": "Alita · À venir · déblocage selon l’État",
+          "description": "Une future héroïne X-SSR de la faction Aeronaut. Bad Bunny Mk. I combine lasers et bombes-carottes, dissipation de ses propres malus et résistance aux effets de contrôle. Le déblocage suit le calendrier des héros de votre État. Consultez le recrutement des héros en jeu."
+        }
+      ],
+      "noPlans": "Aucun projet personnel enregistré.",
+      "personal": "Mes projets",
+      "vsPlanner": "Planificateur de réserves VS",
+      "serverTime": "Fuseau horaire choisi",
+      "localTime": "Votre heure locale",
+      "bookmark": "Ajoutez le lien de recharge TEN à vos favoris",
+      "readNews": "Lire l’article officiel",
+      "rewardPreview": "Aperçu des récompenses"
+    },
+    "it": {
+      "title": "Prepara la tua prossima mossa",
+      "intro": "Attività quotidiane, preparazione agli eventi e strumenti di crescita in un unico posto.",
+      "today": "Oggi",
+      "events": "Guide agli eventi",
+      "eventLead": "Controlla materiali e ricompense e calcola i costi.",
+      "schedule": "Calendario",
+      "scoreActions": "Azioni che danno punti",
+      "scoreLead": "Scegli un’attività per consultarne le regole dei punti.",
+      "duel": "Duello tra alleanze",
+      "duelLead": "Pianifica gli obiettivi giornalieri e confronta le scorte.",
+      "guides": "Guide",
+      "guideLead": "Consigli pratici per crescere e costruire la squadra.",
+      "news": "Notizie ufficiali",
+      "newsLead": "Aggiornamenti e presentazioni degli eroi dal team del gioco.",
+      "codes": "Codici regalo",
+      "codesLead": "Controlla i dettagli prima di riscattarli nel gioco.",
+      "noVerifiedCodes": "Nessun codice attualmente utilizzabile è stato verificato in modo indipendente.",
+      "codesChecked": "Ultimo controllo: {date}",
+      "lootbarTop": "Vantaggi mensili TEN",
+      "lootbarBottom": "Ricarica tramite TEN",
+      "tools": "Accesso rapido",
+      "missionTitle": "Lista di oggi",
+      "missionNotice": "Controlla le attività nel gioco e spuntale. Una nuova lista inizia a mezzanotte nel fuso selezionato.",
+      "personalSchedule": "Il mio calendario",
+      "planAction": "Aggiungi piano",
+      "localOnly": "Salvato in questo browser.",
+      "chooseStage": "Scegli il giorno dell’evento",
+      "stageNote": "Seleziona il giorno mostrato nel gioco; questo non imposta un calendario in tempo reale.",
+      "resetDay": "Reimposta lista",
+      "complete": "Fatto",
+      "liveNotice": "Il calendario in tempo reale del tuo server non è collegato.",
+      "confirmed": "Calendario confermato",
+      "nextEvent": "Prossimo evento",
+      "noUpcoming": "Nessun prossimo piano personale.",
+      "allGuides": "Tutte le guide",
+      "allNews": "Tutte le notizie",
+      "readGuide": "Leggi la guida",
+      "features": {
+        "scores": {
+          "title": "Punti",
+          "description": "Calcola i punti ottenuti dai materiali."
+        },
+        "guides": {
+          "title": "Guide",
+          "description": "Prepara eventi e crescita."
+        },
+        "codes": {
+          "title": "Codici",
+          "description": "Consulta le istruzioni per il riscatto."
+        },
+        "heroes": {
+          "title": "Eroi",
+          "description": "Confronta abilità e crescita."
+        },
+        "pets": {
+          "title": "Animali",
+          "description": "Esplora abilità e abbinamenti."
+        },
+        "factions": {
+          "title": "Fazioni",
+          "description": "Pianifica squadra e vantaggi."
+        },
+        "glossary": {
+          "title": "Glossario",
+          "description": "Comprendi i termini più comuni."
+        },
+        "simulators": {
+          "title": "Simulatori",
+          "description": "Pianifica formazioni e risorse."
+        }
+      },
+      "missions": [
+        "Completa le missioni quotidiane",
+        "Controlla il reclutamento gratuito",
+        "Controlla gli eventi attuali",
+        "Ritira le ricompense disponibili"
+      ],
+      "glossary": [
+        {
+          "term": "Punti base",
+          "description": "Punti prima dei bonus di ricerca e degli altri bonus."
+        },
+        {
+          "term": "Accelerazioni",
+          "description": "Oggetti che riducono la durata delle attività compatibili di costruzione, ricerca o addestramento."
+        },
+        {
+          "term": "Fazione",
+          "description": "La fazione di un eroe influisce sui bonus di squadra e sui vantaggi contro gli avversari."
+        }
+      ],
+      "newsItems": [
+        {
+          "title": "Versione 2.6.300",
+          "description": "Classifiche degli animali, potenziamento delle fazioni e miglioramenti alla schermata degli eroi."
+        },
+        {
+          "title": "Scopri Furiosa",
+          "description": "Cornopazzo offre controllo ad area e supporto alla prima linea."
+        },
+        {
+          "title": "Anteprima di Alita",
+          "description": "Eroina X-SSR Aviatore in sviluppo; la disponibilità dipende dai progressi del server."
+        },
+        {
+          "title": "Alita · In arrivo · sblocco per Stato",
+          "description": "Eroina X-SSR della fazione Aeronaut in arrivo. Bad Bunny Mk. I combina laser e bombe carota con la rimozione dei propri malus e la resistenza agli effetti di controllo. Lo sblocco segue il calendario degli eroi del tuo Stato. Controlla il reclutamento eroi nel gioco."
+        }
+      ],
+      "noPlans": "Nessun programma personale salvato.",
+      "personal": "I miei programmi",
+      "vsPlanner": "Pianificatore delle scorte VS",
+      "serverTime": "Fuso orario selezionato",
+      "localTime": "La tua ora locale",
+      "bookmark": "Salva il link di ricarica TEN nei preferiti",
+      "readNews": "Leggi l’articolo ufficiale",
+      "rewardPreview": "Anteprima delle ricompense"
+    },
+    "pt": {
+      "title": "Prepare seu próximo passo",
+      "intro": "Tarefas diárias, preparação de eventos e ferramentas de evolução em um só lugar.",
+      "today": "Hoje",
+      "events": "Guias de eventos",
+      "eventLead": "Confira materiais e recompensas e calcule os custos.",
+      "schedule": "Calendário",
+      "scoreActions": "Ações que rendem pontos",
+      "scoreLead": "Escolha uma atividade para consultar suas regras de pontuação.",
+      "duel": "Duelo de Alianças",
+      "duelLead": "Planeje metas diárias e compare suas reservas.",
+      "guides": "Guias",
+      "guideLead": "Ajuda prática para evoluir e montar sua equipe.",
+      "news": "Notícias oficiais",
+      "newsLead": "Atualizações e apresentações de heróis da equipe do jogo.",
+      "codes": "Códigos de presente",
+      "codesLead": "Confira os detalhes antes de resgatar no jogo.",
+      "noVerifiedCodes": "Nenhum código atualmente utilizável foi verificado de forma independente.",
+      "codesChecked": "Última verificação: {date}",
+      "lootbarTop": "Benefícios mensais TEN",
+      "lootbarBottom": "Recarregue pelo TEN",
+      "tools": "Acesso rápido",
+      "missionTitle": "Lista de hoje",
+      "missionNotice": "Confira as tarefas no jogo e marque-as. Uma nova lista começa à meia-noite no fuso escolhido.",
+      "personalSchedule": "Meu calendário",
+      "planAction": "Adicionar plano",
+      "localOnly": "Salvo neste navegador.",
+      "chooseStage": "Escolha o dia do evento",
+      "stageNote": "Selecione o dia mostrado no jogo; isso não define um calendário ao vivo.",
+      "resetDay": "Redefinir lista",
+      "complete": "Concluído",
+      "liveNotice": "O calendário ao vivo do seu servidor não está conectado.",
+      "confirmed": "Calendário confirmado",
+      "nextEvent": "Próximo evento",
+      "noUpcoming": "Nenhum plano pessoal futuro.",
+      "allGuides": "Todos os guias",
+      "allNews": "Todas as notícias",
+      "readGuide": "Ler guia",
+      "features": {
+        "scores": {
+          "title": "Pontos",
+          "description": "Calcule pontos a partir dos materiais."
+        },
+        "guides": {
+          "title": "Guias",
+          "description": "Prepare eventos e evolução."
+        },
+        "codes": {
+          "title": "Códigos",
+          "description": "Confira como resgatar."
+        },
+        "heroes": {
+          "title": "Heróis",
+          "description": "Compare habilidades e evolução."
+        },
+        "pets": {
+          "title": "Pets",
+          "description": "Explore habilidades e combinações."
+        },
+        "factions": {
+          "title": "Facções",
+          "description": "Planeje vantagens e equipe."
+        },
+        "glossary": {
+          "title": "Glossário",
+          "description": "Entenda os termos comuns."
+        },
+        "simulators": {
+          "title": "Simuladores",
+          "description": "Planeje formações e recursos."
+        }
+      },
+      "missions": [
+        "Concluir missões diárias",
+        "Conferir recrutamento grátis",
+        "Conferir eventos atuais",
+        "Coletar recompensas disponíveis"
+      ],
+      "glossary": [
+        {
+          "term": "Pontos básicos",
+          "description": "Pontos antes dos bônus de pesquisa e de outros bônus."
+        },
+        {
+          "term": "Aceleradores",
+          "description": "Itens que reduzem o tempo de tarefas compatíveis de construção, pesquisa ou treinamento."
+        },
+        {
+          "term": "Facção",
+          "description": "A facção de um herói afeta os bônus da equipe e as vantagens contra o adversário."
+        }
+      ],
+      "newsItems": [
+        {
+          "title": "Versão 2.6.300",
+          "description": "Classificações de pets, aprimoramento de facções e melhorias na tela de heróis."
+        },
+        {
+          "title": "Conheça Furiosa",
+          "description": "Chifre da Fúria oferece controle de área e apoio à linha de frente."
+        },
+        {
+          "title": "Prévia de Alita",
+          "description": "Heroína X-SSR Aeronauta em desenvolvimento; a disponibilidade depende do progresso do servidor."
+        },
+        {
+          "title": "Alita · Em breve · desbloqueio por Estado",
+          "description": "Futura heroína X-SSR da facção Aeronaut. Bad Bunny Mk. I combina lasers e bombas de cenoura com remoção dos próprios efeitos negativos e resistência a controle. O desbloqueio segue o calendário de heróis do seu Estado. Confira o recrutamento de heróis no jogo."
+        }
+      ],
+      "noPlans": "Nenhum plano pessoal salvo.",
+      "personal": "Meus planos",
+      "vsPlanner": "Planejador de reservas VS",
+      "serverTime": "Fuso horário escolhido",
+      "localTime": "Sua hora local",
+      "bookmark": "Salve o link de recarga TEN nos favoritos",
+      "readNews": "Ler artigo oficial",
+      "rewardPreview": "Prévia das recompensas"
+    },
+    "nl": {
+      "title": "Plan je volgende stap",
+      "intro": "Dagelijkse taken, voorbereiding op evenementen en groeihulpmiddelen op één plek.",
+      "today": "Vandaag",
+      "events": "Evenementengidsen",
+      "eventLead": "Bekijk materialen en beloningen en bereken de kosten.",
+      "schedule": "Planning",
+      "scoreActions": "Acties die punten opleveren",
+      "scoreLead": "Kies een activiteit om de puntenregels te bekijken.",
+      "duel": "Alliantieduel",
+      "duelLead": "Plan dagelijkse doelen en vergelijk je voorraden.",
+      "guides": "Gidsen",
+      "guideLead": "Praktische hulp bij groei en het samenstellen van je team.",
+      "news": "Officieel nieuws",
+      "newsLead": "Updates en heldenintroducties van het spelteam.",
+      "codes": "Cadeaucodes",
+      "codesLead": "Bekijk de details voordat je codes in het spel inwisselt.",
+      "noVerifiedCodes": "Er zijn geen momenteel bruikbare codes onafhankelijk geverifieerd.",
+      "codesChecked": "Laatst gecontroleerd: {date}",
+      "lootbarTop": "Maandelijkse TEN-voordelen",
+      "lootbarBottom": "Opwaarderen via TEN",
+      "tools": "Snel naar",
+      "missionTitle": "Checklist voor vandaag",
+      "missionNotice": "Controleer taken in het spel en vink ze af. Om middernacht in de gekozen tijdzone begint een nieuwe checklist.",
+      "personalSchedule": "Mijn planning",
+      "planAction": "Plan toevoegen",
+      "localOnly": "Opgeslagen in deze browser.",
+      "chooseStage": "Kies een evenementdag",
+      "stageNote": "Kies de dag die je spel toont; dit stelt geen liveplanning in.",
+      "resetDay": "Checklist wissen",
+      "complete": "Klaar",
+      "liveNotice": "De live-evenementenplanning van je server is niet gekoppeld.",
+      "confirmed": "Bevestigde planning",
+      "nextEvent": "Volgend evenement",
+      "noUpcoming": "Geen komende persoonlijke plannen.",
+      "allGuides": "Alle gidsen",
+      "allNews": "Al het nieuws",
+      "readGuide": "Gids lezen",
+      "features": {
+        "scores": {
+          "title": "Punten",
+          "description": "Bereken punten uit materialen."
+        },
+        "guides": {
+          "title": "Gidsen",
+          "description": "Bereid evenementen en groei voor."
+        },
+        "codes": {
+          "title": "Codes",
+          "description": "Bekijk hoe je codes inwisselt."
+        },
+        "heroes": {
+          "title": "Helden",
+          "description": "Vergelijk vaardigheden en groei."
+        },
+        "pets": {
+          "title": "Huisdieren",
+          "description": "Ontdek vaardigheden en combinaties."
+        },
+        "factions": {
+          "title": "Facties",
+          "description": "Plan je team en tegenstanders."
+        },
+        "glossary": {
+          "title": "Begrippen",
+          "description": "Begrijp veelgebruikte termen."
+        },
+        "simulators": {
+          "title": "Simulatoren",
+          "description": "Plan opstellingen en grondstoffen."
+        }
+      },
+      "missions": [
+        "Dagelijkse missies voltooien",
+        "Gratis rekrutering controleren",
+        "Huidige evenementen bekijken",
+        "Beschikbare beloningen ophalen"
+      ],
+      "glossary": [
+        {
+          "term": "Basispunten",
+          "description": "Punten vóór onderzoeksbonussen en andere bonussen."
+        },
+        {
+          "term": "Versnellers",
+          "description": "Voorwerpen die geschikte bouw-, onderzoeks- of trainingstaken verkorten."
+        },
+        {
+          "term": "Factie",
+          "description": "De factie van een held beïnvloedt teambonussen en voordelen tegen andere facties."
+        }
+      ],
+      "newsItems": [
+        {
+          "title": "Versie 2.6.300",
+          "description": "Huisdierranglijsten, factieversterking en verbeteringen aan het heldenscherm."
+        },
+        {
+          "title": "Maak kennis met Furiosa",
+          "description": "Woedehoorn biedt gebiedscontrole en ondersteuning voor de voorste rij."
+        },
+        {
+          "title": "Vooruitblik op Alita",
+          "description": "Een Aeronaut X-SSR-heldin in ontwikkeling; beschikbaarheid volgt de servervoortgang."
+        },
+        {
+          "title": "Alita · Binnenkort · vrijgave per staat",
+          "description": "Een aankomende X-SSR-heldin van de Aeronaut-factie. Bad Bunny Mk. I combineert lasers en wortelbommen met het verwijderen van eigen verzwakkingen en weerstand tegen controle-effecten. De vrijgave volgt het heldenschema van je staat. Bekijk de heldenwerving in het spel."
+        }
+      ],
+      "noPlans": "Geen persoonlijke plannen opgeslagen.",
+      "personal": "Mijn plannen",
+      "vsPlanner": "VS-voorraadplanner",
+      "serverTime": "Gekozen tijdzone",
+      "localTime": "Je lokale tijd",
+      "bookmark": "Sla de TEN-opwaardeerlink op als bladwijzer",
+      "readNews": "Officieel artikel lezen",
+      "rewardPreview": "Voorbeeld van beloningen"
+    },
+    "sv": {
+      "title": "Planera ditt nästa steg",
+      "intro": "Dagliga uppgifter, eventförberedelser och utvecklingsverktyg på samma plats.",
+      "today": "Idag",
+      "events": "Eventguider",
+      "eventLead": "Se material och belöningar och beräkna kostnaderna.",
+      "schedule": "Schema",
+      "scoreActions": "Handlingar som ger poäng",
+      "scoreLead": "Välj en aktivitet för att se dess poängregler.",
+      "duel": "Alliansduell",
+      "duelLead": "Planera dagliga mål och jämför dina förråd.",
+      "guides": "Guider",
+      "guideLead": "Praktisk hjälp för utveckling och lagbygge.",
+      "news": "Officiella nyheter",
+      "newsLead": "Uppdateringar och hjältepresentationer från spelteamet.",
+      "codes": "Presentkoder",
+      "codesLead": "Läs detaljerna innan du löser in koder i spelet.",
+      "noVerifiedCodes": "Inga koder har oberoende verifierats som användbara just nu.",
+      "codesChecked": "Senast kontrollerat: {date}",
+      "lootbarTop": "TEN:s månadsförmåner",
+      "lootbarBottom": "Fyll på via TEN",
+      "tools": "Snabbverktyg",
+      "missionTitle": "Dagens checklista",
+      "missionNotice": "Kontrollera uppgifterna i spelet och bocka av dem. En ny checklista börjar vid midnatt i vald tidszon.",
+      "personalSchedule": "Mitt schema",
+      "planAction": "Lägg till plan",
+      "localOnly": "Sparas i den här webbläsaren.",
+      "chooseStage": "Välj eventdag",
+      "stageNote": "Välj den dag som visas i spelet. Det ställer inte in ett liveschema.",
+      "resetDay": "Återställ checklistan",
+      "complete": "Klart",
+      "liveNotice": "Din servers aktuella eventschema är inte anslutet.",
+      "confirmed": "Bekräftat schema",
+      "nextEvent": "Nästa event",
+      "noUpcoming": "Inga kommande personliga planer.",
+      "allGuides": "Alla guider",
+      "allNews": "Alla nyheter",
+      "readGuide": "Läs guiden",
+      "features": {
+        "scores": {
+          "title": "Poäng",
+          "description": "Beräkna poäng från material."
+        },
+        "guides": {
+          "title": "Guider",
+          "description": "Förbered event och utveckling."
+        },
+        "codes": {
+          "title": "Koder",
+          "description": "Se hur koder löses in."
+        },
+        "heroes": {
+          "title": "Hjältar",
+          "description": "Jämför färdigheter och utveckling."
+        },
+        "pets": {
+          "title": "Husdjur",
+          "description": "Utforska färdigheter och kombinationer."
+        },
+        "factions": {
+          "title": "Fraktioner",
+          "description": "Planera lag och motstånd."
+        },
+        "glossary": {
+          "title": "Ordlista",
+          "description": "Förstå vanliga begrepp."
+        },
+        "simulators": {
+          "title": "Simulatorer",
+          "description": "Planera formationer och resurser."
+        }
+      },
+      "missions": [
+        "Slutför dagliga uppdrag",
+        "Kontrollera gratis rekrytering",
+        "Kontrollera aktuella event",
+        "Hämta tillgängliga belöningar"
+      ],
+      "glossary": [
+        {
+          "term": "Baspoäng",
+          "description": "Poäng före forskningsbonusar och andra bonusar."
+        },
+        {
+          "term": "Snabbningar",
+          "description": "Föremål som förkortar kompatibla bygg-, forsknings- eller träningsuppgifter."
+        },
+        {
+          "term": "Fraktion",
+          "description": "En hjältes fraktion påverkar lagbonusar och styrkeförhållanden."
+        }
+      ],
+      "newsItems": [
+        {
+          "title": "Version 2.6.300",
+          "description": "Husdjursrankningar, fraktionsförstärkning och förbättringar av hjälteskärmen."
+        },
+        {
+          "title": "Möt Furiosa",
+          "description": "Ragehorn ger områdeskontroll och stöd till främre raden."
+        },
+        {
+          "title": "Förhandstitt på Alita",
+          "description": "En Aeronaut X-SSR-hjälte under utveckling; tillgängligheten följer serverns framsteg."
+        },
+        {
+          "title": "Alita · Kommer snart · upplåsning per stat",
+          "description": "En kommande X-SSR-hjälte från Aeronaut-fraktionen. Bad Bunny Mk. I kombinerar lasrar och morotsbomber med att ta bort egna försvagningar och stå emot kontrolleffekter. Upplåsningen följer din stats hjälteschema. Kontrollera hjälterekryteringen i spelet."
+        }
+      ],
+      "noPlans": "Inga personliga planer sparade.",
+      "personal": "Mina planer",
+      "vsPlanner": "VS-förrådsplanerare",
+      "serverTime": "Vald tidszon",
+      "localTime": "Din lokala tid",
+      "bookmark": "Spara TEN-länken för påfyllning som bokmärke",
+      "readNews": "Läs den officiella artikeln",
+      "rewardPreview": "Förhandsvisning av belöningar"
+    },
+    "nb": {
+      "title": "Planlegg ditt neste steg",
+      "intro": "Daglige oppgaver, arrangementsforberedelser og utviklingsverktøy på ett sted.",
+      "today": "I dag",
+      "events": "Arrangementsguider",
+      "eventLead": "Se materialer og belønninger, og beregn kostnadene.",
+      "schedule": "Tidsplan",
+      "scoreActions": "Handlinger som gir poeng",
+      "scoreLead": "Velg en aktivitet for å se poengreglene.",
+      "duel": "Allianseduell",
+      "duelLead": "Planlegg daglige mål og sammenlign lagrene dine.",
+      "guides": "Guider",
+      "guideLead": "Praktisk hjelp til utvikling og lagbygging.",
+      "news": "Offisielle nyheter",
+      "newsLead": "Oppdateringer og heltepresentasjoner fra spillteamet.",
+      "codes": "Gavekoder",
+      "codesLead": "Les detaljene før du løser inn kodene i spillet.",
+      "noVerifiedCodes": "Ingen koder er uavhengig bekreftet som brukbare akkurat nå.",
+      "codesChecked": "Sist kontrollert: {date}",
+      "lootbarTop": "Månedlige TEN-fordeler",
+      "lootbarBottom": "Fyll på via TEN",
+      "tools": "Hurtigverktøy",
+      "missionTitle": "Dagens sjekkliste",
+      "missionNotice": "Kontroller oppgavene i spillet og kryss dem av. En ny sjekkliste starter ved midnatt i valgt tidssone.",
+      "personalSchedule": "Min tidsplan",
+      "planAction": "Legg til plan",
+      "localOnly": "Lagres i denne nettleseren.",
+      "chooseStage": "Velg arrangementsdag",
+      "stageNote": "Velg dagen som vises i spillet. Dette angir ikke en direktetidsplan.",
+      "resetDay": "Tilbakestill sjekklisten",
+      "complete": "Ferdig",
+      "liveNotice": "Serverens gjeldende arrangementsplan er ikke koblet til.",
+      "confirmed": "Bekreftet tidsplan",
+      "nextEvent": "Neste arrangement",
+      "noUpcoming": "Ingen kommende personlige planer.",
+      "allGuides": "Alle guider",
+      "allNews": "Alle nyheter",
+      "readGuide": "Les guiden",
+      "features": {
+        "scores": {
+          "title": "Poeng",
+          "description": "Beregn poeng fra materialer."
+        },
+        "guides": {
+          "title": "Guider",
+          "description": "Forbered arrangementer og utvikling."
+        },
+        "codes": {
+          "title": "Koder",
+          "description": "Se hvordan du løser inn koder."
+        },
+        "heroes": {
+          "title": "Helter",
+          "description": "Sammenlign ferdigheter og utvikling."
+        },
+        "pets": {
+          "title": "Kjæledyr",
+          "description": "Utforsk ferdigheter og kombinasjoner."
+        },
+        "factions": {
+          "title": "Fraksjoner",
+          "description": "Planlegg laget og styrkeforhold."
+        },
+        "glossary": {
+          "title": "Ordliste",
+          "description": "Forstå vanlige begreper."
+        },
+        "simulators": {
+          "title": "Simulatorer",
+          "description": "Planlegg formasjoner og ressurser."
+        }
+      },
+      "missions": [
+        "Fullfør daglige oppdrag",
+        "Sjekk gratis rekruttering",
+        "Sjekk aktuelle arrangementer",
+        "Hent tilgjengelige belønninger"
+      ],
+      "glossary": [
+        {
+          "term": "Grunnpoeng",
+          "description": "Poeng før forskningsbonuser og andre bonuser."
+        },
+        {
+          "term": "Tidsforkortelser",
+          "description": "Gjenstander som forkorter egnede bygge-, forsknings- eller treningsoppgaver."
+        },
+        {
+          "term": "Fraksjon",
+          "description": "Heltens fraksjon påvirker lagbonuser og styrkeforhold."
+        }
+      ],
+      "newsItems": [
+        {
+          "title": "Versjon 2.6.300",
+          "description": "Kjæledyrrangeringer, fraksjonsforsterkning og forbedringer av helteskjermen."
+        },
+        {
+          "title": "Møt Furiosa",
+          "description": "Ragehorn gir områdekontroll og støtte til fremste rad."
+        },
+        {
+          "title": "Forhåndsvisning av Alita",
+          "description": "En Aeronaut X-SSR-helt under utvikling; tilgjengeligheten følger serverens fremgang."
+        },
+        {
+          "title": "Alita · Kommer snart · opplåsing per stat",
+          "description": "En kommende X-SSR-helt fra Aeronaut-fraksjonen. Bad Bunny Mk. I kombinerer lasere og gulrotbomber med å fjerne egne svekkelser og motstå kontrolleffekter. Opplåsing følger heltelanseringene i staten din. Sjekk helterekruttering i spillet."
+        }
+      ],
+      "noPlans": "Ingen personlige planer lagret.",
+      "personal": "Mine planer",
+      "vsPlanner": "VS-lagerplanlegger",
+      "serverTime": "Valgt tidssone",
+      "localTime": "Din lokale tid",
+      "bookmark": "Lagre TEN-lenken for påfylling som bokmerke",
+      "readNews": "Les den offisielle artikkelen",
+      "rewardPreview": "Forhåndsvisning av belønninger"
+    },
+    "pl": {
+      "title": "Zaplanuj kolejny krok",
+      "intro": "Codzienne zadania, przygotowania do wydarzeń i narzędzia rozwoju w jednym miejscu.",
+      "today": "Dzisiaj",
+      "events": "Poradniki wydarzeń",
+      "eventLead": "Sprawdź materiały i nagrody oraz oblicz koszty.",
+      "schedule": "Harmonogram",
+      "scoreActions": "Działania dające punkty",
+      "scoreLead": "Wybierz aktywność, aby sprawdzić zasady punktacji.",
+      "duel": "Pojedynek sojuszy",
+      "duelLead": "Planuj codzienne cele i porównuj zapasy.",
+      "guides": "Poradniki",
+      "guideLead": "Praktyczna pomoc w rozwoju i budowaniu drużyny.",
+      "news": "Oficjalne wiadomości",
+      "newsLead": "Aktualizacje i prezentacje bohaterów od twórców gry.",
+      "codes": "Kody podarunkowe",
+      "codesLead": "Sprawdź szczegóły przed wykorzystaniem kodu w grze.",
+      "noVerifiedCodes": "Nie potwierdzono niezależnie żadnego obecnie działającego kodu.",
+      "codesChecked": "Ostatnia kontrola: {date}",
+      "lootbarTop": "Comiesięczne korzyści TEN",
+      "lootbarBottom": "Doładuj przez TEN",
+      "tools": "Szybki dostęp",
+      "missionTitle": "Dzisiejsza lista zadań",
+      "missionNotice": "Sprawdź zadania w grze i oznacz je. Nowa lista zaczyna się o północy w wybranej strefie czasowej.",
+      "personalSchedule": "Mój harmonogram",
+      "planAction": "Dodaj plan",
+      "localOnly": "Zapisano w tej przeglądarce.",
+      "chooseStage": "Wybierz dzień wydarzenia",
+      "stageNote": "Wybierz dzień widoczny w grze. Nie ustawia to harmonogramu na żywo.",
+      "resetDay": "Wyczyść listę",
+      "complete": "Gotowe",
+      "liveNotice": "Harmonogram wydarzeń Twojego serwera nie jest połączony na żywo.",
+      "confirmed": "Potwierdzony harmonogram",
+      "nextEvent": "Następne wydarzenie",
+      "noUpcoming": "Brak nadchodzących planów osobistych.",
+      "allGuides": "Wszystkie poradniki",
+      "allNews": "Wszystkie wiadomości",
+      "readGuide": "Czytaj poradnik",
+      "features": {
+        "scores": {
+          "title": "Punkty",
+          "description": "Oblicz punkty z materiałów."
+        },
+        "guides": {
+          "title": "Poradniki",
+          "description": "Przygotuj wydarzenia i rozwój."
+        },
+        "codes": {
+          "title": "Kody",
+          "description": "Sprawdź zasady wykorzystania."
+        },
+        "heroes": {
+          "title": "Bohaterowie",
+          "description": "Porównaj umiejętności i rozwój."
+        },
+        "pets": {
+          "title": "Zwierzaki",
+          "description": "Poznaj umiejętności i połączenia."
+        },
+        "factions": {
+          "title": "Frakcje",
+          "description": "Zaplanuj drużynę i przewagi."
+        },
+        "glossary": {
+          "title": "Słownik",
+          "description": "Poznaj często używane pojęcia."
+        },
+        "simulators": {
+          "title": "Symulatory",
+          "description": "Planuj formacje i zasoby."
+        }
+      },
+      "missions": [
+        "Ukończ codzienne misje",
+        "Sprawdź darmową rekrutację",
+        "Sprawdź bieżące wydarzenia",
+        "Odbierz dostępne nagrody"
+      ],
+      "glossary": [
+        {
+          "term": "Punkty bazowe",
+          "description": "Punkty przed premiami z badań i innymi bonusami."
+        },
+        {
+          "term": "Przyspieszenia",
+          "description": "Przedmioty skracające obsługiwane zadania budowy, badań lub szkolenia."
+        },
+        {
+          "term": "Frakcja",
+          "description": "Frakcja bohatera wpływa na premie drużyny i przewagi nad przeciwnikiem."
+        }
+      ],
+      "newsItems": [
+        {
+          "title": "Wersja 2.6.300",
+          "description": "Rankingi zwierzaków, wzmocnienie frakcji i ulepszenia ekranu bohaterów."
+        },
+        {
+          "title": "Poznaj Furiosę",
+          "description": "Róg Gniewu zapewnia kontrolę obszaru i wsparcie przedniego szeregu."
+        },
+        {
+          "title": "Zapowiedź Ality",
+          "description": "Bohaterka X-SSR frakcji Aeronauta w opracowaniu; dostępność zależy od postępu serwera."
+        },
+        {
+          "title": "Alita · Wkrótce · odblokowanie zależy od stanu",
+          "description": "Nadchodząca bohaterka X-SSR frakcji Aeronaut. Bad Bunny Mk. I łączy lasery i marchewkowe bomby z usuwaniem własnych osłabień i odpornością na efekty kontroli. Odblokowanie zależy od harmonogramu bohaterów twojego stanu. Sprawdź rekrutację bohaterów w grze."
+        }
+      ],
+      "noPlans": "Brak zapisanych własnych planów.",
+      "personal": "Moje plany",
+      "vsPlanner": "Planer zapasów VS",
+      "serverTime": "Wybrana strefa czasowa",
+      "localTime": "Twój czas lokalny",
+      "bookmark": "Zapisz link doładowania TEN w zakładkach",
+      "readNews": "Czytaj oficjalny artykuł",
+      "rewardPreview": "Podgląd nagród"
+    },
+    "ru": {
+      "title": "Планируйте следующий шаг",
+      "intro": "Ежедневные задачи, подготовка к событиям и инструменты развития в одном месте.",
+      "today": "Сегодня",
+      "events": "Гайды по событиям",
+      "eventLead": "Проверьте материалы и награды, рассчитайте затраты.",
+      "schedule": "Расписание",
+      "scoreActions": "Действия для набора очков",
+      "scoreLead": "Выберите занятие, чтобы узнать правила начисления очков.",
+      "duel": "Дуэль альянсов",
+      "duelLead": "Планируйте ежедневные цели и сравнивайте запасы.",
+      "guides": "Гайды",
+      "guideLead": "Практические советы по развитию и составу команды.",
+      "news": "Официальные новости",
+      "newsLead": "Обновления и анонсы героев от команды игры.",
+      "codes": "Подарочные коды",
+      "codesLead": "Проверьте условия перед активацией в игре.",
+      "noVerifiedCodes": "Ни один доступный сейчас код не подтверждён независимой проверкой.",
+      "codesChecked": "Дата проверки: {date}",
+      "lootbarTop": "Ежемесячные бонусы TEN",
+      "lootbarBottom": "Пополнение через TEN",
+      "tools": "Быстрый доступ",
+      "missionTitle": "Список задач на сегодня",
+      "missionNotice": "Проверьте задачи в игре и отметьте их. Новый список начинается в полночь по выбранному часовому поясу.",
+      "personalSchedule": "Моё расписание",
+      "planAction": "Добавить план",
+      "localOnly": "Сохраняется в этом браузере.",
+      "chooseStage": "Выберите день события",
+      "stageNote": "Выберите день, указанный в игре. Это не задаёт расписание в реальном времени.",
+      "resetDay": "Сбросить список",
+      "complete": "Готово",
+      "liveNotice": "Расписание событий вашего сервера в реальном времени не подключено.",
+      "confirmed": "Подтверждённое расписание",
+      "nextEvent": "Следующее событие",
+      "noUpcoming": "Нет предстоящих личных планов.",
+      "allGuides": "Все гайды",
+      "allNews": "Все новости",
+      "readGuide": "Читать гайд",
+      "features": {
+        "scores": {
+          "title": "Очки",
+          "description": "Рассчитайте очки за материалы."
+        },
+        "guides": {
+          "title": "Гайды",
+          "description": "Подготовьтесь к событиям и развитию."
+        },
+        "codes": {
+          "title": "Коды",
+          "description": "Проверьте условия активации."
+        },
+        "heroes": {
+          "title": "Герои",
+          "description": "Сравните навыки и развитие."
+        },
+        "pets": {
+          "title": "Питомцы",
+          "description": "Изучите навыки и сочетания."
+        },
+        "factions": {
+          "title": "Фракции",
+          "description": "Планируйте состав и преимущества."
+        },
+        "glossary": {
+          "title": "Словарь",
+          "description": "Узнайте частые термины."
+        },
+        "simulators": {
+          "title": "Симуляторы",
+          "description": "Планируйте отряды и ресурсы."
+        }
+      },
+      "missions": [
+        "Выполнить ежедневные задания",
+        "Проверить бесплатный найм",
+        "Проверить текущие события",
+        "Забрать доступные награды"
+      ],
+      "glossary": [
+        {
+          "term": "Базовые очки",
+          "description": "Очки до бонусов исследований и других усилений."
+        },
+        {
+          "term": "Ускорения",
+          "description": "Предметы, сокращающие время подходящих задач строительства, исследований или обучения."
+        },
+        {
+          "term": "Фракция",
+          "description": "Фракция героя влияет на бонусы команды и преимущества над противником."
+        }
+      ],
+      "newsItems": [
+        {
+          "title": "Версия 2.6.300",
+          "description": "Рейтинги питомцев, усиление фракций и улучшения экрана героев."
+        },
+        {
+          "title": "Знакомьтесь: Фуриоса",
+          "description": "Рог ярости обеспечивает контроль области и поддержку переднего ряда."
+        },
+        {
+          "title": "Анонс Алиты",
+          "description": "Героиня X-SSR фракции Воздухоплаватель в разработке; доступность зависит от прогресса сервера."
+        },
+        {
+          "title": "Alita · Скоро · открытие зависит от штата",
+          "description": "Будущая героиня X-SSR фракции Aeronaut. Bad Bunny Mk. I использует лазеры и морковные бомбы; героиня снимает с себя ослабления и сопротивляется эффектам контроля. Открытие зависит от графика выхода героев в вашем штате. Проверьте раздел найма героев в игре."
+        }
+      ],
+      "noPlans": "Нет сохранённых личных планов.",
+      "personal": "Мои планы",
+      "vsPlanner": "Планировщик запасов VS",
+      "serverTime": "Выбранный часовой пояс",
+      "localTime": "Ваше местное время",
+      "bookmark": "Сохраните ссылку TEN для пополнения в закладках",
+      "readNews": "Читать официальную статью",
+      "rewardPreview": "Предварительный обзор наград"
+    },
+    "tr": {
+      "title": "Sonraki adımını planla",
+      "intro": "Günlük görevler, etkinlik hazırlıkları ve gelişim araçları bir arada.",
+      "today": "Bugün",
+      "events": "Etkinlik rehberleri",
+      "eventLead": "Malzemeleri ve ödülleri incele, maliyetleri hesapla.",
+      "schedule": "Takvim",
+      "scoreActions": "Puan kazandıran eylemler",
+      "scoreLead": "Puan kurallarını görmek için bir etkinlik seç.",
+      "duel": "İttifak Düellosu",
+      "duelLead": "Günlük hedeflerini planla ve stoklarını karşılaştır.",
+      "guides": "Rehberler",
+      "guideLead": "Gelişim ve takım kurma için pratik bilgiler.",
+      "news": "Resmî haberler",
+      "newsLead": "Oyun ekibinden güncellemeler ve kahraman tanıtımları.",
+      "codes": "Hediye kodları",
+      "codesLead": "Oyunda kullanmadan önce kod ayrıntılarını kontrol et.",
+      "noVerifiedCodes": "Şu anda kullanılabildiği bağımsız olarak doğrulanan kod yok.",
+      "codesChecked": "Son kontrol: {date}",
+      "lootbarTop": "TEN aylık avantajları",
+      "lootbarBottom": "TEN üzerinden yükleme",
+      "tools": "Hızlı araçlar",
+      "missionTitle": "Bugünün kontrol listesi",
+      "missionNotice": "Görevleri oyunda kontrol edip işaretle. Seçilen saat diliminde gece yarısı yeni bir liste başlar.",
+      "personalSchedule": "Takvimim",
+      "planAction": "Plan ekle",
+      "localOnly": "Bu tarayıcıda kaydedilir.",
+      "chooseStage": "Etkinlik gününü seç",
+      "stageNote": "Oyunda gösterilen günü seç; bu seçim canlı bir takvim oluşturmaz.",
+      "resetDay": "Listeyi sıfırla",
+      "complete": "Tamamlandı",
+      "liveNotice": "Sunucunun canlı etkinlik takvimi bağlı değil.",
+      "confirmed": "Doğrulanmış takvim",
+      "nextEvent": "Sıradaki etkinlik",
+      "noUpcoming": "Yaklaşan kişisel plan yok.",
+      "allGuides": "Tüm rehberler",
+      "allNews": "Tüm haberler",
+      "readGuide": "Rehberi oku",
+      "features": {
+        "scores": {
+          "title": "Puanlar",
+          "description": "Malzemelerden kazanılacak puanı hesapla."
+        },
+        "guides": {
+          "title": "Rehberler",
+          "description": "Etkinliklere ve gelişime hazırlan."
+        },
+        "codes": {
+          "title": "Kodlar",
+          "description": "Kullanım ayrıntılarını incele."
+        },
+        "heroes": {
+          "title": "Kahramanlar",
+          "description": "Becerileri ve gelişimi karşılaştır."
+        },
+        "pets": {
+          "title": "Evcil hayvanlar",
+          "description": "Becerileri ve eşleşmeleri keşfet."
+        },
+        "factions": {
+          "title": "Gruplar",
+          "description": "Takımını ve üstünlükleri planla."
+        },
+        "glossary": {
+          "title": "Sözlük",
+          "description": "Yaygın terimleri öğren."
+        },
+        "simulators": {
+          "title": "Simülatörler",
+          "description": "Dizilimleri ve kaynakları planla."
+        }
+      },
+      "missions": [
+        "Günlük görevleri tamamla",
+        "Ücretsiz alımı kontrol et",
+        "Mevcut etkinlikleri kontrol et",
+        "Alınabilir ödülleri topla"
+      ],
+      "glossary": [
+        {
+          "term": "Temel puan",
+          "description": "Araştırma ve diğer bonuslar uygulanmadan önceki puan."
+        },
+        {
+          "term": "Hızlandırmalar",
+          "description": "Uygun inşa, araştırma veya eğitim görevlerinin süresini kısaltan eşyalar."
+        },
+        {
+          "term": "Grup",
+          "description": "Kahramanın grubu, takım bonuslarını ve rakiplere karşı üstünlüğünü etkiler."
+        }
+      ],
+      "newsItems": [
+        {
+          "title": "2.6.300 sürümü",
+          "description": "Evcil hayvan sıralamaları, grup güçlendirmesi ve kahraman ekranı iyileştirmeleri."
+        },
+        {
+          "title": "Furiosa ile tanış",
+          "description": "Hiddetli Boynuz alan kontrolü ve ön sıraya destek sunar."
+        },
+        {
+          "title": "Alita ön gösterimi",
+          "description": "Geliştirme aşamasındaki Pilot X-SSR kahramanı; erişim sunucu ilerlemesine bağlıdır."
+        },
+        {
+          "title": "Alita · Yakında · eyalete göre açılır",
+          "description": "Yakında gelecek Aeronaut grubundan bir X-SSR kahramanı. Bad Bunny Mk. I lazer ve havuç bombalarını, kendi zayıflatmalarını temizleme ve kontrol etkilerine dirençle birleştirir. Açılma zamanı eyaletinizin kahraman takvimine bağlıdır. Oyundaki kahraman alımı ekranını kontrol edin."
+        }
+      ],
+      "noPlans": "Kayıtlı kişisel plan yok.",
+      "personal": "Planlarım",
+      "vsPlanner": "VS stok planlayıcısı",
+      "serverTime": "Seçilen saat dilimi",
+      "localTime": "Yerel saatiniz",
+      "bookmark": "TEN yükleme bağlantısını yer imlerinize ekleyin",
+      "readNews": "Resmî yazıyı oku",
+      "rewardPreview": "Ödül ön izlemesi"
+    },
+    "ar": {
+      "title": "خطّط لخطوتك التالية",
+      "intro": "مهام يومية واستعداد للأحداث وأدوات تطوير في مكان واحد.",
+      "today": "اليوم",
+      "events": "أدلة الأحداث",
+      "eventLead": "راجع المواد والمكافآت واحسب التكاليف.",
+      "schedule": "الجدول",
+      "scoreActions": "أفعال تمنح نقاطًا",
+      "scoreLead": "اختر نشاطًا للاطلاع على قواعد احتساب نقاطه.",
+      "duel": "مبارزة التحالفات",
+      "duelLead": "خطّط لأهدافك اليومية وقارن مخزونك.",
+      "guides": "الأدلة",
+      "guideLead": "إرشادات عملية للتطوير وتشكيل الفريق.",
+      "news": "الأخبار الرسمية",
+      "newsLead": "تحديثات وتعريف بالأبطال من فريق اللعبة.",
+      "codes": "رموز الهدايا",
+      "codesLead": "راجع التفاصيل قبل استبدال الرموز داخل اللعبة.",
+      "noVerifiedCodes": "لم يُتحقق بشكل مستقل من أي رمز صالح للاستخدام حاليًا.",
+      "codesChecked": "آخر تحقق: {date}",
+      "lootbarTop": "مزايا TEN الشهرية",
+      "lootbarBottom": "اشحن عبر TEN",
+      "tools": "أدوات سريعة",
+      "missionTitle": "قائمة مهام اليوم",
+      "missionNotice": "تحقق من المهام في اللعبة ثم علّمها. تبدأ قائمة جديدة عند منتصف الليل في المنطقة الزمنية المختارة.",
+      "personalSchedule": "جدولي",
+      "planAction": "إضافة خطة",
+      "localOnly": "يُحفظ في هذا المتصفح.",
+      "chooseStage": "اختر يوم الحدث",
+      "stageNote": "اختر اليوم الظاهر في اللعبة؛ لا يؤدي ذلك إلى تحديد جدول مباشر.",
+      "resetDay": "إعادة ضبط القائمة",
+      "complete": "تم",
+      "liveNotice": "جدول الأحداث المباشر لخادمك غير متصل.",
+      "confirmed": "جدول مؤكد",
+      "nextEvent": "الحدث التالي",
+      "noUpcoming": "لا توجد خطط شخصية قادمة.",
+      "allGuides": "كل الأدلة",
+      "allNews": "كل الأخبار",
+      "readGuide": "قراءة الدليل",
+      "features": {
+        "scores": {
+          "title": "النقاط",
+          "description": "احسب النقاط الناتجة عن المواد."
+        },
+        "guides": {
+          "title": "الأدلة",
+          "description": "استعد للأحداث والتطوير."
+        },
+        "codes": {
+          "title": "الرموز",
+          "description": "راجع طريقة الاستبدال."
+        },
+        "heroes": {
+          "title": "الأبطال",
+          "description": "قارن المهارات والتطوير."
+        },
+        "pets": {
+          "title": "الحيوانات",
+          "description": "استكشف المهارات والتوافق."
+        },
+        "factions": {
+          "title": "الفصائل",
+          "description": "خطّط للفريق ونقاط التفوق."
+        },
+        "glossary": {
+          "title": "المصطلحات",
+          "description": "تعرّف إلى الكلمات الشائعة."
+        },
+        "simulators": {
+          "title": "المحاكاة",
+          "description": "خطّط للتشكيلات والموارد."
+        }
+      },
+      "missions": [
+        "إكمال المهام اليومية",
+        "التحقق من التجنيد المجاني",
+        "التحقق من الأحداث الحالية",
+        "استلام المكافآت المتاحة"
+      ],
+      "glossary": [
+        {
+          "term": "النقاط الأساسية",
+          "description": "النقاط قبل مكافآت البحث والمكافآت الأخرى."
+        },
+        {
+          "term": "التسريعات",
+          "description": "عناصر تقلّل مدة مهام البناء أو البحث أو التدريب المتوافقة معها."
+        },
+        {
+          "term": "الفصيل",
+          "description": "يؤثر فصيل البطل في مكافآت الفريق والتفوق على الخصوم."
+        }
+      ],
+      "newsItems": [
+        {
+          "title": "الإصدار 2.6.300",
+          "description": "تصنيفات الحيوانات وتعزيز الفصائل وتحسينات شاشة الأبطال."
+        },
+        {
+          "title": "تعرّف إلى Furiosa",
+          "description": "توفر Ragehorn تحكمًا بالمنطقة ودعمًا للصف الأمامي."
+        },
+        {
+          "title": "نظرة أولية على Alita",
+          "description": "بطلة X-SSR من فصيل Aeronaut قيد التطوير؛ يتوقف توفرها على تقدم الخادم."
+        },
+        {
+          "title": "Alita · قريبًا · يختلف الفتح حسب الولاية",
+          "description": "بطلة X-SSR قادمة من فصيل Aeronaut. تجمع Bad Bunny Mk. I بين الليزر وقنابل الجزر وإزالة التأثيرات السلبية الذاتية ومقاومة تأثيرات التحكم. يُفتح البطل وفق جدول إصدار الأبطال في ولايتك. راجع تجنيد الأبطال داخل اللعبة."
+        }
+      ],
+      "noPlans": "لا توجد خطط شخصية محفوظة.",
+      "personal": "خططي",
+      "vsPlanner": "مخطط مخزون VS",
+      "serverTime": "المنطقة الزمنية المختارة",
+      "localTime": "وقتك المحلي",
+      "bookmark": "احفظ رابط TEN للشحن في الإشارات المرجعية",
+      "readNews": "قراءة المقال الرسمي",
+      "rewardPreview": "معاينة المكافآت"
+    }
+  }
+}
