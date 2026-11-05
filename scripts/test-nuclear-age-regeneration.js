@@ -2,6 +2,7 @@
 // In-memory owner projections only: no generated HTML, source facts or assets are written.
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto'),{parseHTML}=require('linkedom');
 const N=require('./build-nuclear-age'),S=require('./build-v6-system'),G=require('./build-global-locales'),DE=require('./build-german-50'),CN=require('./build-simplified-chinese'),L=require('./lib/global-localization'),V4=require('./v4-workbench-content');
+const Analytics=require('./analytics-invariants');
 const registry=require('../data/i18n/locales.json').locales,M=require('../data/nuclear-age.json'),TEN=require('../data/ten-benefits-policy.json').tenUrl;
 const locales=registry.map(x=>x.code),groups=L.routeGroups(),guide=groups.find(g=>g.id==='eras/nuclear-age/'),tools=groups.find(g=>g.id==='tools/');
 const documentOf=html=>parseHTML(html).document,read=(l,g=guide)=>fs.readFileSync(path.join(N.ROOT,g.routes[l],'index.html'),'utf8');
@@ -14,6 +15,13 @@ const digest=rows=>crypto.createHash('sha256').update(JSON.stringify(rows)).dige
 const ui=l=>require('../data/i18n/ui/'+l+'.json');
 const ads=d=>[...d.querySelectorAll('script')].filter(n=>/adsbygoogle|googlesyndication|fundingchoices|__tcfapi|__gpp/i.test(n.outerHTML)).map(n=>n.outerHTML);
 const slots=d=>[...d.querySelectorAll('[data-ad-client],[data-ad-slot]')].map(n=>[n.getAttribute('data-ad-client'),n.getAttribute('data-ad-slot')]);
+function checkAnalytics(html){
+ const a=Analytics.signature(html);
+ // The common signature also rejects retained consent controls, duplicate Google
+ // initialization and a schema loaded after its runtime.
+ assert.deepEqual(a.ids,['G-Z2MJ6TXZHK']);assert.equal(a.runtime,1);assert.equal(a.contract,1);assert.equal(a.legacy,false);assert.equal(a.bootstrap.length,1);
+ assert(a.bootstrap[0].includes("window.gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});"));
+}
 
 function checkGuide(html,l,source){
  const d=documentOf(html),before=documentOf(source),c=N.copy(l),cfg=JSON.parse(d.getElementById('ts-nuclear-age').textContent);
@@ -35,7 +43,7 @@ function checkGuide(html,l,source){
  for(const x of registry)assert.equal(d.querySelector('link[hreflang="'+x.hreflang+'"]').href,L.publicOrigin+N.route(x.code));
  assert.deepEqual(JSON.parse(d.getElementById('ts-locale-routes').textContent),Object.fromEntries(locales.map(x=>[x,N.route(x)])));
  assert.deepEqual(ads(d),ads(before));assert.deepEqual(slots(d),slots(before));assert.equal(d.querySelectorAll('a[href="'+TEN+'"]').length,before.querySelectorAll('a[href="'+TEN+'"]').length);
- assert(d.querySelector('[data-v3-owned="privacy"]'));assert.equal(d.querySelectorAll('script[src^="/js/nuclear-age.js"]').length,1);assert.equal(d.querySelectorAll('link[href^="/css/nuclear-age.css"]').length,1);
+ checkAnalytics(html);assert.equal(d.querySelectorAll('script[src^="/js/nuclear-age.js"]').length,1);assert.equal(d.querySelectorAll('link[href^="/css/nuclear-age.css"]').length,1);
  return d;
 }
 function checkLinks(html,l,g,source){
@@ -43,6 +51,7 @@ function checkLinks(html,l,g,source){
  assert.equal(d.querySelector('[data-nuclear-owned="link"]').outerHTML,documentOf(N.renderEntry(l,{compact:true})).querySelector('section').outerHTML);
  assert.equal(d.querySelector('[data-nuclear-owned="link"] a').getAttribute('href'),N.route(l));assert.equal(d.querySelectorAll('[data-nuclear-owned="link"]').length,1);
  assert.equal(d.querySelectorAll('link[href^="/css/nuclear-age.css"]').length,1);assert.deepEqual(ads(d),ads(documentOf(source)));assert.deepEqual(slots(d),slots(documentOf(source)));
+ checkAnalytics(html);
  return d;
 }
 function generic(source,l,g,{preview=false}={}){

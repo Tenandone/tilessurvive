@@ -9,7 +9,7 @@ test('release pipeline projects every unified building before Nuclear links and 
  assert.equal(plan[building+1],'scripts/build-nuclear-age.js');
  assert(building<plan.indexOf('scripts/build-v6-system.js'));
  assert(building<plan.indexOf('scripts/build-site-identity.js'));
- assert.equal(plan.length,13,'All retained owners plus the explicit building owner remain in the release');
+ assert.equal(plan.length,14,'All retained owners plus the explicit analytics policy owner remain in the release');
  assert(!plan.some(file=>/build-(?:global-locales|german-50|simplified-chinese|building-system)\.js$/.test(file)),'Legacy regeneration must not run in release publication');
 });
 

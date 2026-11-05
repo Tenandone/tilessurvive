@@ -125,10 +125,11 @@
       if (tableHost !== table) tableHost.replaceChildren(table);
     }
 
+    function track(){try{document.defaultView?.TS_ANALYTICS?.track?.('content_action',{feature:'hero_catalog',action:'select',placement:'catalog'});}catch{/* Filters and comparison work without analytics. */}}
     query.addEventListener('input', render);
     includeHeld.checked = false;
     includeHeld.addEventListener('change', render);
-    for (const select of selects.values()) select.addEventListener('change', render);
+    for (const select of selects.values()) select.addEventListener('change', () => {render();track();});
     sort.addEventListener('change', render);
     reset.addEventListener('click', () => {
       query.value = '';includeHeld.checked = false;for (const select of selects.values()) select.value = '';sort.value = 'original';render();query.focus();
@@ -146,7 +147,7 @@
           }
           selected.set(card.id, byId.get(card.id));
         } else selected.delete(card.id);
-        renderComparison();announceResults();
+        renderComparison();announceResults();track();
       });
     }
     status.setAttribute('aria-live', 'polite');

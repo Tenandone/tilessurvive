@@ -96,6 +96,7 @@ function catalogFor(locale) {
   // Power Plant prose has one maintained locale owner alongside its unified data.
   const powerCopy=require('../data/power-plant-unified-copy.json');
   if(powerCopy[locale])for(const [key,source] of Object.entries(powerCopy.en))catalog.exact[source]=powerCopy[locale][key];
+  catalog.exact[require('./ten-benefits-content').summary('en')]=require('./ten-benefits-content').summary(locale);
   const official = {};
   const terms = require('../data/i18n/client-terms.json').terms;
   const ambiguous = new Set();

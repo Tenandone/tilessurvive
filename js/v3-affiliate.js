@@ -2,66 +2,38 @@
   'use strict';
   if (!document.documentElement.hasAttribute('data-v3-affiliate') || window.TS_V3_AFFILIATE) return;
   var TEN = 'https://www.lootbar.com/ko/shop/ten/top-up/tiles-survive';
-  var KEY = 'tiles.v3.analyticsConsent';
-  var GA_ID = 'G-Z2MJ6TXZHK';
-  var APPROVED_IDS = new Set([GA_ID, 'G-TMGDGSEWW6', 'G-Z2MJ6TZXHK']);
+  var OLD_KEY = 'tiles.v3.analyticsConsent', OBJECTION_KEY = 'tiles.analytics.objection.v1';
+  // Retire the old system without reading either historical decision.
+  try { window.localStorage.removeItem(OLD_KEY); } catch (_) {}
+  var GA_ID = 'G-Z2MJ6TXZHK', HISTORICAL_IDS = ['G-TMGDGSEWW6','G-Z2MJ6TZXHK'];
+  var SCHEMA = window.TS_ANALYTICS_SCHEMA;
+  if (!SCHEMA) return;
   var requestedIds = window.TS_V3_GA_IDS === undefined ? [GA_ID] : window.TS_V3_GA_IDS;
-  var idsValid = Array.isArray(requestedIds) && requestedIds.includes(GA_ID) && requestedIds.every(function (id) { return APPROVED_IDS.has(id); });
-  var gaIds = idsValid ? Array.from(new Set(requestedIds)) : [];
-  var LOCALES = new Set(['en','ko','ja','zh-tw','de','ru','zh-cn','ar','nl','fr','id','it','pl','pt','es','sv','th','tr','vi','ms','nb']);
-  var FEATURES = new Set(['calculator','power_plant','calendar','search','home','tools','topup','content']);
-  var PLACEMENTS = new Set(['guide','result','header','footer','banner','content','landing_top','landing_bottom']);
-  var LANDING_SECTIONS = new Set(['dashboard','missions','duel','scores','guides','codes','heroes','pets','factions','glossary','simulators','tools','events','news','topup','common_event','event_official','event_guide','event_rules','event_schedule','planner','bookmark','score_preview','score_planner','coupon']);
-  var ACTIONS = new Set(['result','save','restore','clear','select','open','change']);
-  var LANDING_ACTIONS = new Set(Array.from(ACTIONS).concat(['view','copy','previous','next']));
+  var idsValid = Array.isArray(requestedIds) && requestedIds.length === 1 && requestedIds[0] === GA_ID;
+  var LOCALES = new Set(SCHEMA.locales), FEATURES = new Set(SCHEMA.features), ACTIONS = new Set(SCHEMA.actions), PLACEMENTS = new Set(SCHEMA.placements);
   var TEN_PLACEMENTS = new Set(['banner','footer','guide','additional_coupon','bookmark']);
   var TEN_ACTIONS = new Set(['code_copy','url_copy','bookmark_help']);
+  var gaReady = false, pageSent = false, guideSent = false, landingSent = false, objection = false;
+  try { objection = window.localStorage.getItem(OBJECTION_KEY) === 'true'; } catch (_) { objection = true; }
   function uiVersion(){var home=document.querySelector('[data-v5-home]'),version=home&&home.getAttribute('data-ui-version');return ['v6','v6.1'].includes(version)?version:'v5';}
-  var consent = false, gaReady = false, pageSent = new Set(), guideSent = false, landingSent = false;
-  try { consent = window.localStorage.getItem(KEY) === 'granted'; } catch (_) {}
-  // Denied storage alone can still allow cookieless pings from an already loaded
-  // tag. Keep our opt-in policy on revocation too, without changing ad/CMP state.
-  // https://developers.google.com/tag-platform/security/guides/privacy
+  function restricted() {
+    var nav = window.navigator || {}, dnt = nav.doNotTrack || window.doNotTrack || nav.msDoNotTrack;
+    var test = false;try { test = new URLSearchParams(location.search).get('analytics_test') === '1'; } catch (_) {}
+    return objection || nav.globalPrivacyControl === true || dnt === '1' || dnt === 'yes' || nav.webdriver === true || test;
+  }
+  function enabled() { return production() && idsValid && !restricted() && !!pageMetadata(); }
   function syncGACollection() {
-    APPROVED_IDS.forEach(function (id) {
-      window['ga-disable-' + id] = !(consent && production() && idsValid && gaIds.includes(id));
-    });
+    window['ga-disable-' + GA_ID] = !enabled();
+    HISTORICAL_IDS.forEach(function (id) { window['ga-disable-' + id] = true; });
   }
-  syncGACollection();
-  function language() {
-    var fromRegistry = window.TS_LOCALES && window.TS_LOCALES.current();
-    var lang = fromRegistry || location.pathname.split('/')[1] || document.documentElement.dataset.lang;
-    return LOCALES.has(lang) ? lang : 'en';
-  }
-  function pageType() {
-    var p = location.pathname.replace(/^\/[^/]+(?=\/)/, '');
-    if (/^\/(?:index\.html)?$/.test(p)) return 'home';
-    if (/^\/top-up\//.test(p)) return 'topup';
-    if (/^\/buildings\/power-plant\//.test(p)) return 'power_plant';
-    if (/calendar/.test(p)) return 'calendar';
-    if (/^\/search\//.test(p)) return 'search';
-    if (/^\/tools\//.test(p)) return 'tools';
-    if (/^\/heroes\/[^/]+\//.test(p)) return 'hero_detail';
-    if (/^\/database\/pet-system\/[^/]+\//.test(p)) return 'pet_detail';
-    if (/^\/buildings\/[^/]+\//.test(p)) return 'building_detail';
-    if (/^\/guides\//.test(p)) return 'guide';
-    if (/^\/events\//.test(p)) return 'event';
-    if (/^\/codes\//.test(p)) return 'coupon';
-    if (/research/.test(p)) return 'research';
-    if (/^\/database\//.test(p)) return 'database';
-    return 'content';
-  }
-  // A publisher-controlled canonical path is used, never location.search/hash.
-  function safePath() {
+  // A publisher-controlled canonical path is used, never user query/hash data.
+  function pageMetadata() {
     var link = document.querySelector('link[rel="canonical"]');
-    if (link) {
-      try {
-        var url = new URL(link.href, location.origin);
-        if (url.hostname === 'tilessurvive.net' && /^\/(?:[a-z0-9-]+\/)*(?:index\.html)?$/.test(url.pathname) && url.pathname.length <= 220) return url.pathname;
-      } catch (_) {}
-    }
-    return '/' + language() + '/' + (pageType() === 'home' ? '' : pageType() + '/');
+    if (!link) return null;
+    try { var url = new URL(link.href, location.origin);return url.origin === 'https://tilessurvive.net' ? SCHEMA.classify(url.pathname) : null; } catch (_) { return null; }
   }
+  function pageType() { var meta=pageMetadata();return meta ? meta.page_type : 'content'; }
+  function safePath() { var meta=pageMetadata();return meta ? meta.page : ''; }
   function sourceCategory() {
     if (!document.referrer) return 'direct';
     try {
@@ -74,40 +46,39 @@
   }
   function production() { return location.hostname === 'tilessurvive.net'; }
   function base() {
-    return {page: safePath(), page_type: pageType(), language: language(), source_category: sourceCategory(), measurement_version: 'v3.1', campaign: 'lootbar_ten'};
+    return Object.assign({}, pageMetadata(), {site_language: pageMetadata().language, source_category: sourceCategory(), measurement_version: 'global-1', campaign: 'lootbar_ten'});
   }
   function startGA() {
-    if (!consent || !production() || gaReady || !idsValid) return;
+    syncGACollection();
+    if (!enabled() || gaReady) return;
+    try {
     window.dataLayer = window.dataLayer || [];
     window.gtag = window.gtag || function () { window.dataLayer.push(arguments); };
-    window.gtag('consent', 'update', {analytics_storage: 'granted'});
+    if (!window.TS_ANALYTICS_BOOTSTRAPPED) {
+      window.gtag('consent','default',{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});
+      window.gtag('set','ads_data_redaction',true);window.gtag('set','url_passthrough',false);
+      window.TS_ANALYTICS_BOOTSTRAPPED=true;
+    }
     window.gtag('js', new Date());
-    gaIds.forEach(function (id) {
-      window.gtag('config', id, {send_page_view: false, page_location: 'https://tilessurvive.net' + safePath(), page_referrer: '', page_title: 'TilesSurvive.net | ' + pageType(), allow_google_signals: false, allow_ad_personalization_signals: false});
-    });
-    var script = document.createElement('script');
-    script.async = true;
+    window.gtag('config', GA_ID, {send_page_view: false, page_location: 'https://tilessurvive.net' + safePath(), page_referrer: '', page_title: 'TilesSurvive.net | ' + pageType(), allow_google_signals: false, allow_ad_personalization_signals: false, ignore_referrer: true, campaign_id:'',campaign_name:'',campaign_source:'',campaign_medium:'',campaign_term:'',campaign_content:''});
+    var script = document.createElement('script');script.async = true;
     script.src = 'https://www.googletagmanager.com/gtag/js?id=' + GA_ID;
-    script.dataset.v3GaLoader = '';
-    document.head.appendChild(script);
-    gaReady = true;
+    script.dataset.v3GaLoader = '';document.head.appendChild(script);gaReady = true;
+    } catch (_) { gaReady = false; }
   }
-  function send(name, extra, destination) {
-    destination = destination || GA_ID;
-    if (!consent || !production() || !gaReady || !gaIds.includes(destination) || typeof window.gtag !== 'function') return false;
-    var payload = Object.assign(base(), extra || {});
-    // These overrides also apply to the custom events, independent of defaults.
-    payload.page_location = 'https://tilessurvive.net' + safePath();
-    payload.page_referrer = '';
-    payload.page_title = 'TilesSurvive.net | ' + pageType();
-    payload.send_to = destination;
-    window.gtag('event', name, payload);
+  function send(name, extra) {
+    if (SCHEMA.events.indexOf(name) === -1) return false;
+    syncGACollection();
+    if (!enabled() || !gaReady || typeof window.gtag !== 'function' || (name === 'page_view' && pageSent)) return false;
+    var payload = Object.assign(base(), SCHEMA.dimensions(extra));
+    payload.page_location = 'https://tilessurvive.net' + safePath();payload.page_referrer = '';
+    payload.page_title = 'TilesSurvive.net | ' + pageType();payload.send_to = GA_ID;
+    try { window.gtag('event', name, payload); } catch (_) { return false; }
+    if (name === 'page_view') pageSent = true;
     return true;
   }
   function pageViews() {
-    gaIds.forEach(function (id) {
-      if (!pageSent.has(id) && send('page_view', null, id)) pageSent.add(id);
-    });
+    send('page_view');
     if (!guideSent && document.querySelector('[data-v3-guide]') && send('topup_guide_view', {feature: 'topup'})) guideSent = true;
     if (!landingSent && document.querySelector('[data-v5-home]') && send('landing_view', {ui_version:uiVersion()})) landingSent = true;
   }
@@ -134,10 +105,10 @@
   var seen = new WeakSet(), observed = new WeakSet(), timers = new Map(), ratios = new Map(), observer,tenBannerSeen=false;
   function stop(anchor) { clearTimeout(timers.get(anchor)); timers.delete(anchor); }
   function start(anchor) {
-    if (!consent || !production() || document.hidden || seen.has(anchor) || (anchor.hasAttribute('data-ten-view')&&tenBannerSeen) || timers.has(anchor) || (ratios.get(anchor) || 0) < 0.6) return;
+    if (!enabled() || document.hidden || seen.has(anchor) || (anchor.hasAttribute('data-ten-view')&&tenBannerSeen) || timers.has(anchor) || (ratios.get(anchor) || 0) < 0.6) return;
     timers.set(anchor, setTimeout(function () {
       timers.delete(anchor);
-      if (!consent || document.hidden || !anchor.isConnected || (ratios.get(anchor) || 0) < 0.6 || seen.has(anchor) || (anchor.hasAttribute('data-ten-view')&&tenBannerSeen)) return;
+      if (!enabled() || document.hidden || !anchor.isConnected || (ratios.get(anchor) || 0) < 0.6 || seen.has(anchor) || (anchor.hasAttribute('data-ten-view')&&tenBannerSeen)) return;
       if (send('affiliate_viewable', dimensions(anchor))) {
         if(anchor.hasAttribute('data-ten-view'))tenBannerSeen=true;
         seen.add(anchor); ratios.delete(anchor); observer.unobserve(anchor);
@@ -145,37 +116,29 @@
     }, 1000));
   }
   function updateControls() {
-    document.querySelectorAll('[data-v3-consent-allow]').forEach(function (b) { b.setAttribute('aria-pressed', String(consent)); });
-    document.querySelectorAll('[data-v3-consent-deny]').forEach(function (b) { b.setAttribute('aria-pressed', String(!consent)); });
-    document.querySelectorAll('[data-v3-consent-status]').forEach(function (p) { p.textContent = consent ? p.dataset.allowed : p.dataset.denied; });
+    document.querySelectorAll('[data-analytics-status]').forEach(function (p) { p.textContent = enabled() ? p.dataset.active : p.dataset.stopped; });
+    document.querySelectorAll('[data-analytics-stop]').forEach(function (button) { button.setAttribute('aria-pressed',String(objection)); });
+    document.querySelectorAll('[data-analytics-resume]').forEach(function (button) { button.setAttribute('aria-pressed',String(!objection)); });
   }
-  function setConsent(allowed) {
-    consent = allowed === true;
-    syncGACollection();
-    try { window.localStorage.setItem(KEY, consent ? 'granted' : 'denied'); } catch (_) {}
-    updateControls();
-    if (consent) {
-      startGA();
-      // The GA script is already initialized after a previous allow/revoke cycle.
-      if (gaReady && production()) window.gtag('consent', 'update', {analytics_storage: 'granted'});
-      pageViews(); ratios.forEach(function (_, a) { start(a); });
-    } else {
-      timers.forEach(function (_, a) { stop(a); });
-      if (gaReady && production()) window.gtag('consent', 'update', {analytics_storage: 'denied'});
-    }
-    return consent;
+  function applyPreference() {
+    syncGACollection();updateControls();
+    if (enabled()) {startGA();pageViews();ratios.forEach(function (_, a) {start(a);});}
+    else timers.forEach(function (_, a) {stop(a);});
+    return enabled();
   }
+  function stopAnalytics() {objection=true;try {window.localStorage.setItem(OBJECTION_KEY,'true');} catch (_) {}applyPreference();return true;}
+  function resumeAnalytics() {objection=false;try {window.localStorage.removeItem(OBJECTION_KEY);} catch (_) {}return applyPreference();}
+  window.TS_ANALYTICS = Object.freeze({track:send,isEnabled:enabled,stop:stopAnalytics,resume:resumeAnalytics});
   window.TS_V3_AFFILIATE = Object.freeze({
-    setConsent: setConsent,
-    hasConsent: function () { return consent; },
     trackFeature: function (feature, action) {
       if (!FEATURES.has(feature) || !ACTIONS.has(action)) return false;
       return send('v3_feature_use', {feature: feature, action: action});
     },
     trackLanding: function (action, section) {
-      if(!document.querySelector('[data-v5-home]')||!LANDING_ACTIONS.has(action)||!LANDING_SECTIONS.has(section))return false;
+      if(!document.querySelector('[data-v5-home]')||!ACTIONS.has(action)||SCHEMA.dimensions({section:section}).section!==section)return false;
       return send('landing_use',{ui_version:uiVersion(),action:action,section:section});
     },
+    trackCoupon: function () { return send('coupon_copy',{feature:'coupon',action:'copy'}); },
     trackTen: function (action, placement) {
       if(!TEN_ACTIONS.has(action)||!TEN_PLACEMENTS.has(placement)||!document.querySelector('[data-v61-ten]'))return false;
       return send('ten_program_use',{ui_version:'v6.1',component:'ten_program',action:action,ten_placement:placement});
@@ -184,8 +147,8 @@
   document.addEventListener('click', function (event) {
     var target = event.target && (event.target.nodeType === 1 ? event.target : event.target.parentElement);
     if (!target || !target.closest) return;
-    if (target.closest('[data-v3-consent-allow]')) { setConsent(true); return; }
-    if (target.closest('[data-v3-consent-deny]')) { setConsent(false); return; }
+    if (target.closest('[data-analytics-stop]')) { stopAnalytics(); return; }
+    if (target.closest('[data-analytics-resume]')) { resumeAnalytics(); return; }
     if (target.closest('[data-bookmark-cta]:not([data-ten-bookmark])')) {
       var hint = document.querySelector('[data-bookmark-hint]');
       if (hint) hint.hidden = false;
@@ -220,7 +183,9 @@
     });
   }
   window.addEventListener('storage', function (event) {
-    if (event.key === KEY || event.key === null) setConsent(event.key === KEY && event.newValue === 'granted');
+    if (event.key === OLD_KEY) {try {window.localStorage.removeItem(OLD_KEY);} catch (_) {}return;}
+    if (event.key === OBJECTION_KEY) {objection=event.newValue === 'true';applyPreference();}
+    else if (event.key === null) {objection=false;applyPreference();}
   });
-  updateControls(); startGA(); pageViews();
+  applyPreference();
 })();

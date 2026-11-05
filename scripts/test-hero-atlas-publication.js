@@ -2,6 +2,7 @@
 // Read-only publication checks. No builder, network, fixture regeneration or source writes.
 const test=require('node:test'),assert=require('node:assert/strict'),fs=require('node:fs'),path=require('node:path'),cp=require('node:child_process'),crypto=require('node:crypto'),vm=require('node:vm');
 const {parseHTML}=require('linkedom');
+const TASK_BASELINE='c24bf28940a8e2322b71764140e3c687377e12a1';
 const ROOT=path.resolve(__dirname,'..'),BASELINE='c0cd3a3aea12e5e16550c36e0f77b63846d13948';
 const GUIDE=require('../data/hero-guide-copy.json'),X=require('./lib/xssr-catalog'),catalogById=new Map(X.heroes().map(h=>[h.id,h]));
 const DETAILS=require('../data/xssr-details.json'),MEDIA=require('../data/xssr-presentation.json'),verifiedImages=new Set(Object.values(MEDIA.byNativeKey).map(x=>x.src));
@@ -19,10 +20,33 @@ const sha=x=>crypto.createHash('sha256').update(x).digest('hex');
 // V6 may add only its reviewed presentation assets/root flags. Validate the
 // exact current owner before stripping it; keep all content, models and ads.
 // Consent-aware landing events also update this one shared runtime's hash.
-const normalizeSharedHash=(html,sourceFile)=>{
+const legacyCopy=JSON.parse(cp.execFileSync('git',['show',TASK_BASELINE+':data/v3-affiliate-copy.json'],{cwd:ROOT,encoding:'utf8'}));
+const legacyPrivacy=locale=>{
+ const c=legacyCopy.locales[locale],escape=s=>String(s).replace(/[&<>"']/g,k=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[k]));assert(c);
+ return `<div data-v3-owned="privacy"><section class="v3-consent" data-v3-consent aria-label="${escape(c.privacyTitle)}"><h2>${escape(c.privacyTitle)}</h2><p>${escape(c.privacyText)}</p><div class="v3-consent-actions"><button type="button" data-v3-consent-allow aria-pressed="false">${escape(c.allow)}</button><button type="button" data-v3-consent-deny aria-pressed="true">${escape(c.deny)}</button></div><p data-v3-consent-status data-allowed="${escape(c.statusAllowed)}" data-denied="${escape(c.statusDenied)}" role="status">${escape(c.statusDenied)}</p></section></div>`;
+};
+// Bounded, per-document reuse only; never retain the whole site's parsed DOMs.
+const normalizationCache=[],runtimeStampCache=new Map();
+function runtimeStamp(file){if(!runtimeStampCache.has(file))runtimeStampCache.set(file,sha(fs.readFileSync(path.join(ROOT,file))).slice(0,12));return runtimeStampCache.get(file);}
+function refreshReviewedRuntimeHashes(html){for(const file of require('./build-v3-platform').runtimeFiles){if(!html.includes('/'+file))continue;const pattern=new RegExp('(<script\\b[^>]*\\bsrc=["\'])(/'+file.replaceAll('.','\\.')+')(?:\\?v=[a-f0-9]+)?(["\'])','g');html=html.replace(pattern,(_,prefix,src,quote)=>prefix+src+'?v='+runtimeStamp(file)+quote);}return html;}
+function normalizeAnalyticsMigration(html,sourceFile,historical=false){
+ const A=require('./analytics-invariants'),V3=require('./build-v3-platform'),C=require('./v3-affiliate-content'),sig=A.signature(html,{allowLegacy:historical});
+ if(historical&&sig.legacy){
+  const locale=sourceFile?.split('/')[0]||new URL(doc(html).querySelector('link[rel="canonical"]').href).pathname.split('/')[1];
+  const blocks=[...html.matchAll(/<!-- TS_V3_PRIVACY_BEGIN -->([\s\S]*?)<!-- TS_V3_PRIVACY_END -->/g)];assert.equal(blocks.length,sig.runtime,'Exact legacy privacy owner count');
+  for(const match of blocks){assert.equal(doc(match[1]).toString(),doc(legacyPrivacy(locale)).toString(),'Only the task-start consent UI can retire');html=html.replace(match[0],'');}
+  html=C.transformAnalytics(html);
+  if(sig.runtime)html=html.replace(/<script\b[^>]*src=["']\/js\/v3-affiliate\.js[^>]*><\/script>/,m=>V3.fileAsset('js/analytics-contract.js')+m);
+ }else if(!historical){
+  for(const n of doc(html).querySelectorAll('script[src]')){const url=new URL(n.getAttribute('src'),'https://tilessurvive.net');if(url.origin==='https://tilessurvive.net'&&V3.runtimeFiles.includes(url.pathname.slice(1)))assert.equal(url.search,'?v='+runtimeStamp(url.pathname.slice(1)),'Only current reviewed asset hashes may normalize');}
+ }
+ return historical?refreshReviewedRuntimeHashes(html):html;
+}
+const normalizeSharedHash=(html,sourceFile,historical=false)=>{
+ const input=html,found=normalizationCache.find(x=>x.input===input&&x.sourceFile===sourceFile&&x.historical===historical);if(found)return found.output;
  const Identity=require('./site-identity');if(Identity.validateOwnership(html,{root:ROOT}))html=Identity.strip(html);
  if(/data-v6-system|TS_V6_SYSTEM_BEGIN/.test(html)){const d=doc(html),canonical=new URL(d.querySelector('link[rel="canonical"]').href);assert.equal(canonical.origin,'https://tilessurvive.net');const route=sourceFile?'/'+sourceFile.replace(/index\.html$/,''):canonical.pathname,locale=route.split('/')[1];html=require('./v4-release-gate').stripReviewedPresentation(html,locale,route,ROOT);}
- return html.replace(/(\/js\/v3-affiliate\.js\?v=)[a-f0-9]{12}/g,'$1REVIEWED-HASH');
+ const output=normalizeAnalyticsMigration(html,sourceFile,historical);normalizationCache.unshift({input,sourceFile,historical,output});if(normalizationCache.length>8)normalizationCache.pop();return output;
 };
 const oldRoutes=R.heroes.filter(x=>x.id!=='lava'&&byId.has(x.id)).flatMap(x=>locales.map(l=>({id:x.id,locale:l,route:x.routes[l],file:fileFor(x.routes[l])})));
 const hubs=locales.map(l=>({locale:l,route:`/${l}/heroes/`,file:`${l}/heroes/index.html`}));
@@ -33,6 +57,14 @@ function loadBaseline(files){
  for(const f of needed){const end=bytes.indexOf(10,at),header=bytes.subarray(at,end).toString('utf8'),match=header.match(/^\w+ blob (\d+)$/);assert(match,'Missing baseline blob '+f);const length=Number(match[1]);at=end+1;baseline.set(f,bytes.subarray(at,at+length).toString('utf8'));at+=length+1;}
 }
 function before(f){loadBaseline([f]);return baseline.get(f);}
+const taskBaseline=new Map();
+function loadTaskBaseline(files){
+ const needed=[...new Set(files)].filter(f=>!taskBaseline.has(f));if(!needed.length)return;
+ const bytes=cp.execFileSync('git',['cat-file','--batch'],{cwd:ROOT,input:needed.map(f=>TASK_BASELINE+':'+f+'\n').join(''),maxBuffer:256*1024*1024});let at=0;
+ for(const f of needed){const end=bytes.indexOf(10,at),match=bytes.subarray(at,end).toString('utf8').match(/^\w+ blob (\d+)$/);assert(match,'Missing task-start blob '+f);const length=Number(match[1]);at=end+1;taskBaseline.set(f,bytes.subarray(at,at+length).toString('utf8'));at+=length+1;}
+}
+function taskBefore(file){loadTaskBaseline([file]);return taskBaseline.get(file);}
+
 function flat(o,p=''){return Object.fromEntries(Object.entries(o).flatMap(([k,v])=>v&&typeof v==='object'?Object.entries(flat(v,p+k+'.')):[[p+k,v]]));}
 function numbers(s){return String(s).match(/\d+(?:[.,]\d+)*(?:%|[KMB])?/g)||[];}
 function attrs(n){return [...n.attributes].map(a=>[a.name,a.value]).sort((a,b)=>a[0].localeCompare(b[0]));}
@@ -53,7 +85,7 @@ function allowedIdentity(n,id){
 let preservation;
 function preserveOldDetails(){
  if(preservation)return preservation;loadBaseline(oldRoutes.map(x=>x.file));const result={pages:0,tables:0,payloads:0,programs:0,anchors:0,controls:0};
- for(const entry of oldRoutes){const a=doc(normalizeSharedHash(before(entry.file))),b=doc(normalizeSharedHash(B.strip(read(entry.file)))),label=entry.file;
+ for(const entry of oldRoutes){const a=doc(normalizeSharedHash(before(entry.file),entry.file,true)),b=doc(normalizeSharedHash(B.strip(read(entry.file)))),label=entry.file;
   assert.deepEqual(programs(b),programs(a),label+' executable scripts changed');
   assert.deepEqual(jsonPayloads(b),jsonPayloads(a),label+' JSON calculator/data payload changed');
   const ta=[...a.querySelectorAll('table')].map(n=>n.outerHTML),tb=[...b.querySelectorAll('table')].map(n=>n.outerHTML);assert.deepEqual(tb,ta,label+' table changed');
@@ -135,7 +167,7 @@ test('existing hero numeric data, calculator payloads, programs, tables, anchors
  const result=preserveOldDetails();assert.equal(result.pages,28*locales.length);t.diagnostic(JSON.stringify(result));
 });
 test('hub replacement preserves old anchors and executable/commerce integrations; added IDs are unique',()=>{
- loadBaseline(hubs.map(x=>x.file));for(const {file}of hubs){const a=doc(normalizeSharedHash(before(file))),b=doc(read(file)),clean=doc(normalizeSharedHash(B.strip(read(file))));assert.deepEqual(programs(clean),programs(a),file+' hub program changed');assert.deepEqual(protectedCommerce(clean),protectedCommerce(a),file+' hub commerce changed');const current=anchors(b);for(const id of anchors(a))assert(current.includes(id),file+' lost old anchor '+id);for(const id of new Set(current))assert.equal(current.filter(x=>x===id).length,1,file+' duplicate '+id);}
+ loadBaseline(hubs.map(x=>x.file));for(const {file}of hubs){const a=doc(normalizeSharedHash(before(file),file,true)),b=doc(read(file)),clean=doc(normalizeSharedHash(B.strip(read(file))));assert.deepEqual(programs(clean),programs(a),file+' hub program changed');assert.deepEqual(protectedCommerce(clean),protectedCommerce(a),file+' hub commerce changed');const current=anchors(b);for(const id of anchors(a))assert(current.includes(id),file+' lost old anchor '+id);for(const id of new Set(current))assert.equal(current.filter(x=>x===id).length,1,file+' duplicate '+id);}
 });
 test('Lucky and Sarge explicitly scope their preserved legacy skill and stat tables to the promoted SSR form',()=>{
  for(const l of locales){const note=GUIDE.locales[l].ui.promotionStats;assert(typeof note==='string'&&note.includes('SSR'),l+' promoted-table notice missing');for(const id of ['lucky','sarge']){const d=doc(read(fileFor(routeFor(id,l)))),profile=d.getElementById('hero-atlas-profile');assert(profile.textContent.includes(note),l+':'+id+' retained SSR table scope absent');assert.equal(profile.textContent.split(note).length-1,1,l+':'+id+' duplicated notice');}const chef=doc(read(fileFor(routeFor('chef-ken',l))));assert(!chef.getElementById('hero-atlas-profile').textContent.includes(note),l+' notice incorrectly applied to base SR tables');}
@@ -145,14 +177,17 @@ test('representative projector calls are pure, idempotent and reject forged mana
  for(const l of locales){for(const r of [`/${l}/heroes/`,routeFor('lucky',l),routeFor('kiron',l),routeFor('lava',l)]){const original=read(fileFor(r));V4.validateOwnership(original,l,r);const projected=project(original,l,r);assert.equal(sha(projected),sha(original),r+' generated output stale');assert.equal(sha(project(projected,l,r)),sha(projected),r+' not idempotent');assert.doesNotThrow(()=>B.validateOwnership(projected,l,r));assert.doesNotThrow(()=>V4.validateOwnership(projected,l,r));assert.equal(doc(projected).querySelectorAll('[data-v4-owned="navigation"]').length,r===`/${l}/heroes/`?1:0);}}
  const l=locales[0],r=`/${l}/heroes/`,original=read(fileFor(r)),bad=original.replace('data-client-hero-id="25300242"','data-client-hero-id="99999999"');assert.notEqual(bad,original);assert.throws(()=>B.validateOwnership(bad,l,r));assert.equal(B.project('<html>unrelated</html>',l,`/${l}/buildings/`),'<html>unrelated</html>');
 });
-test('unrelated tracked HTML and existing non-search game data remain unchanged across the atlas and relation updates',()=>{
+test('unrelated tracked HTML remains unchanged across the atlas and relation updates',()=>{
  const permitted=new Set(allLocales.flatMap(l=>[`${l}/index.html`,`${l}/heroes/index.html`,...R.heroes.map(h=>fileFor(h.routes[l])),`${l}/database/pet-system/index.html`,...require('../data/hero-pet-relations.json').pets.map(p=>`${l}/database/pet-system/${p.id}/index.html`)]));
  for(const locale of allLocales)for(const route of Object.keys(require('./v4-workbench-content').routes))permitted.add(locale+'/'+route+'index.html');
  const Era=require('./build-nuclear-age'),addedRoutes=new Set(require('./reviewed-routes').routes().map(r=>fileFor(r.route)));require('./reviewed-routes').validate();
- const changedHtml=git('diff','--name-only',BASELINE,'--','*.html').trim().split(/\r?\n/).filter(Boolean),sharedRefresh=changedHtml.filter(f=>!permitted.has(f)&&!addedRoutes.has(f)),V3=require('./build-v3-platform');loadBaseline(sharedRefresh);
+ const changedHtml=git('diff','--name-only',BASELINE,'--','*.html').trim().split(/\r?\n/).filter(Boolean),sharedRefresh=changedHtml.filter(f=>!permitted.has(f)&&!addedRoutes.has(f)),V3=require('./build-v3-platform');loadBaseline(sharedRefresh);loadTaskBaseline(sharedRefresh.filter(f=>require('./build-buildings-unified').pages.includes(f)||/^[a-z-]+\/privacy\/index\.html$/.test(f)));
  const affiliateHash=sha(fs.readFileSync(path.join(ROOT,'js/v3-affiliate.js'))).slice(0,12);
  for(const file of sharedRefresh){const html=read(file),locale=file.split('/')[0],route='/'+file.replace(/index\.html$/,'');
-  if(!allLocales.includes(locale)){assert.equal(normalizeSharedHash(html,file),normalizeSharedHash(before(file),file),file+' only reviewed identity head may change');continue;}
+  if(!allLocales.includes(locale)){assert.equal(normalizeSharedHash(html,file),normalizeSharedHash(before(file),file,true),file+' only reviewed identity head may change');continue;}
+  if(route===`/${locale}/privacy/`){const Policy=require('./build-analytics-privacy'),source=taskBefore(file);Policy.validateOwnership(html,locale);const expected=Policy.project(V3.project(source,locale,route),locale);assert.equal(doc(normalizeSharedHash(html,file)).documentElement.outerHTML,doc(normalizeSharedHash(expected,file)).documentElement.outerHTML,file+' exact reviewed privacy projection');require('./analytics-invariants').preserved(source,html);assert.deepEqual(require('./client-release-gate').preservedContent(html).ads,require('./client-release-gate').preservedContent(source).ads);continue;}
+  const Buildings=require('./build-buildings-unified');
+  if(Buildings.pages.includes(file)){const source=taskBefore(file);Buildings.validateOwnership(html,locale,file.split('/')[2]);let expected=V3.project(source,locale,route);if(Era.linkRoutes(locale).includes(route))expected=Era.projectLinks(expected,locale,route);assert.equal(doc(normalizeSharedHash(html,file)).documentElement.outerHTML,doc(normalizeSharedHash(expected,file)).documentElement.outerHTML,file+' pinned unified building plus exact analytics migration');require('./client-release-gate').verifyPreserved(source,html,file);continue;}
   if(Era.linkRoutes(locale).includes(route)){assert.equal(Era.validateLinks(html,locale,route),true);const expected=Era.projectLinks(V3.project(before(file),locale,route),locale,route);assert.equal(doc(normalizeSharedHash(html,file)).documentElement.outerHTML,doc(normalizeSharedHash(expected,file)).documentElement.outerHTML,file+' exact reviewed era navigation only');require('./client-release-gate').verifyPreserved(before(file),html,file);continue;}
   if(route===`/${locale}/codes/`||route===`/${locale}/top-up/`){
    const Gift=require('./build-gift-codes');let expected=V3.project(before(file),locale,route);if(route===`/${locale}/codes/`){expected=Gift.project(expected,locale);Gift.validateOwnership(html,locale);}else V3.validateOwnership(html,locale,route);
@@ -161,8 +196,13 @@ test('unrelated tracked HTML and existing non-search game data remain unchanged 
   }
   // Most global refreshes change only this one hash. Byte equality after that
   // exact substitution is stronger and much faster than reparsing every page.
-  if(normalizeSharedHash(html,file)===normalizeSharedHash(before(file),file)){for(const m of html.matchAll(/\/js\/v3-affiliate\.js\?v=([a-f0-9]{12})/g))assert.equal(m[1],affiliateHash,file+' stale affiliate hash');continue;}
-  V3.validateOwnership(html,locale,route);assert.equal(doc(normalizeSharedHash(V3.strip(html),file)).documentElement.outerHTML,doc(normalizeSharedHash(V3.strip(before(file)),file)).documentElement.outerHTML,file+' unowned HTML changed');for(const n of doc(html).querySelectorAll('[data-v3-owned="assets"]')){const url=new URL(n.getAttribute('src')||n.getAttribute('href'),'https://tilessurvive.net');assert.equal(url.searchParams.get('v'),sha(fs.readFileSync(path.join(ROOT,url.pathname.slice(1)))).slice(0,12),file+' stale shared asset');}}
+  if(normalizeSharedHash(html,file)===normalizeSharedHash(before(file),file,true)){for(const m of html.matchAll(/\/js\/v3-affiliate\.js\?v=([a-f0-9]{12})/g))assert.equal(m[1],affiliateHash,file+' stale affiliate hash');continue;}
+  V3.validateOwnership(normalizeSharedHash(html,file),locale,route);assert.equal(doc(normalizeSharedHash(V3.strip(html),file)).documentElement.outerHTML,doc(normalizeSharedHash(V3.strip(normalizeAnalyticsMigration(before(file),file,true)),file)).documentElement.outerHTML,file+' unowned HTML changed');for(const n of doc(html).querySelectorAll('[data-v3-owned="assets"]')){const url=new URL(n.getAttribute('src')||n.getAttribute('href'),'https://tilessurvive.net');assert.equal(url.searchParams.get('v'),sha(fs.readFileSync(path.join(ROOT,url.pathname.slice(1)))).slice(0,12),file+' stale shared asset');}}
+});
+
+function assertPosterManifestTransition(prior,current){const expected=structuredClone(prior);assert(Object.hasOwn(expected.sources,'js/nuclear-age.js'));expected.sources['js/nuclear-age.js']=sha(fs.readFileSync(path.join(ROOT,'js/nuclear-age.js')));assert.deepEqual(current,expected,'Only the instrumented runtime source binding may change');}
+
+test('existing non-search game data preserves the task-start models and the one derived poster runtime binding',()=>{
  const newModels=new Set(['data/hero-growth-profiles.json','data/v5-landing-copy.json','data/xssr-detail-copy.json','data/xssr-details.json','data/xssr-presentation.json','data/xssr-skill-values.json','data/xssr-heroes.json','data/xssr-copy.json','data/xssr-lava-growth.json','data/hero-guide-copy.json','data/hero-guide-presentation.json','data/hero-atlas-client.json','data/hero-atlas-copy.json','data/hero-atlas-publication.json','data/hero-atlas-routes.json','data/hero-atlas-search-legacy.json','data/client-image-evidence.json','data/hero-pet-relations.json','data/hero-pet-copy.json','data/v4-formation.json','data/v4-formation-copy.json','data/v4-economy.json','data/v4-economy-copy.json','data/v4-workbench-copy.json','data/v4-provenance.json']);
  // Share the exact V6.1 operator-policy exception with the dedicated TEN
  // suites. Every other affiliate field and the complete payout record remain
@@ -191,7 +231,12 @@ test('unrelated tracked HTML and existing non-search game data remain unchanged 
  newOwnerFiles.forEach(f=>newModels.add(f));
  require('./site-identity').validate();require('./reviewed-routes').validate();
  for(const f of ['data/site-identity.json','data/favicon-assets.json','data/reviewed-routes.json','data/nuclear-age.json','data/nuclear-age-copy.json']){assert.equal(git('ls-tree','-r','--name-only',BASELINE,'--',f).trim(),'','Era/identity owner must be new: '+f);newModels.add(f);}
- const changedData=git('diff','--name-only',BASELINE,'--','data').trim().split(/\r?\n/).filter(Boolean);assert.deepEqual(changedData.filter(f=>!newModels.has(f)&&!/^data\/(?:search\/[a-z-]+\.json|v3-search\/[a-z-]+\.json|search-index\.json)$/.test(f)),[],'Existing source/game data changed');
+ require('./build-analytics-privacy').validate();newModels.add('data/analytics-privacy-copy.json');
+ const changedData=git('diff','--name-only',BASELINE,'--','data').trim().split(/\r?\n/).filter(Boolean);
+ // Historical fuel/unified-building models were already published at task-start.
+ // Preserve those exact c24 bytes; only the separately validated policy model is new here.
+ for(const file of changedData.filter(f=>!newModels.has(f)&&!/^data\/(?:search\/[a-z-]+\.json|v3-search\/[a-z-]+\.json|search-index\.json)$/.test(f))){if(file==='data/nuclear-fuel-poster-manifest.json')assertPosterManifestTransition(JSON.parse(taskBefore(file)),JSON.parse(read(file)));else assert.equal(read(file).replaceAll('\r\n','\n'),taskBefore(file).replaceAll('\r\n','\n'),file+' task-start game data changed');newModels.add(file);}
+ assert.deepEqual(changedData.filter(f=>!newModels.has(f)&&!/^data\/(?:search\/[a-z-]+\.json|v3-search\/[a-z-]+\.json|search-index\.json)$/.test(f)),[],'Existing source/game data changed');
  const newFiles=git('ls-files','--others','--exclude-standard').trim().split(/\r?\n/).filter(Boolean);assert.deepEqual(newFiles.filter(f=>/normalized-complete-v1|authorized-decryption|decoded-language|ingame-apk-|full-client-evidence|\.(?:apk|aab|bundle|bytes|jsonl)$/i.test(f)),[],'Full retained client material entered public worktree');
  for(const file of newModels){const model=read(file);assert(!/(?:[A-Z]:[\\/]|\\\\Users\\|\/Users\/)/.test(model),file+' private absolute path leaked');}
 });
@@ -203,7 +248,7 @@ test('targeted search retains old URLs and aliases, permits reviewed hero/home/h
  const files=[...allLocales.flatMap(l=>[`data/search/${l}.json`,`data/v3-search/${l}.json`]),'data/search-index.json'];loadBaseline(files);const projectedV3=require('./build-v3-search').collect().shards;
  for(const f of files){const old=JSON.parse(before(f)),now=JSON.parse(read(f)),isV3=f.startsWith('data/v3-search/');assert.equal(now.itemCount,now.items.length,f);const oldMap=new Map(old.items.map(x=>[x.url,x])),nowMap=new Map(now.items.map(x=>[x.url,x]));assert.equal(nowMap.size,now.items.length,f+' duplicate URL');
   for(const [url,item]of oldMap){assert(nowMap.has(url),f+' removed '+url);const updated=nowMap.get(url);
-   if(isV3){const aliases=new Set(updated.search.aliases.map(x=>x.value)),contexts=new Set(updated.search.contextNames);if(!allLocales.some(l=>url===`/${l}/`||url===`/${l}/codes/`))for(const alias of item.search.aliases)assert(aliases.has(alias.value),f+' lost search alias '+alias.value+' at '+url);for(const name of item.search.contextNames)assert(contexts.has(name),f+' lost context '+name+' at '+url);}
+   if(isV3){const aliases=new Set(updated.search.aliases.map(x=>x.value)),contexts=new Set(updated.search.contextNames);if(!allLocales.some(l=>url===`/${l}/`||url===`/${l}/codes/`||url===`/${l}/privacy/`))for(const alias of item.search.aliases)assert(aliases.has(alias.value),f+' lost search alias '+alias.value+' at '+url);for(const name of item.search.contextNames)assert(contexts.has(name),f+' lost context '+name+' at '+url);}
    if(permittedMainUrls.has(url))continue;
    // Approved exception: the 21 hub H1s changed to the local atlas title. Their
    // V3 primary name and alias expansion may follow it; no other field changes.
@@ -211,6 +256,8 @@ test('targeted search retains old URLs and aliases, permits reviewed hero/home/h
    if(homeLocale){const a=structuredClone(item),b=structuredClone(updated);for(const k of ['title','description']){delete a[k];delete b[k];}if(isV3){delete a.search.primaryName;delete b.search.primaryName;delete a.search.aliases;delete b.search.aliases;assert.deepEqual(updated,projectedV3[homeLocale].items.find(x=>x.url===url),f+' homepage must match current canonical H1 alias projection');}assert.deepEqual(b,a,f+' homepage changed beyond reviewed SEO metadata');const page=doc(read(homeLocale+'/index.html'));assert(page.querySelector('[data-v5-home]'),f+' homepage lacks reviewed V5 owner');assert.equal(updated.title,page.querySelector('title').textContent.trim());assert.equal(updated.description,page.querySelector('meta[name="description"]').getAttribute('content').trim());continue;}
    const ownerLocale=allLocales.find(l=>url===`/${l}/codes/`||url===`/${l}/top-up/`);
    if(ownerLocale){const a=structuredClone(item),b=structuredClone(updated);if(isV3){delete a.search;delete b.search;assert.deepEqual(updated,projectedV3[ownerLocale].items.find(x=>x.url===url),f+' gift/TEN search must match canonical derived aliases');}assert.deepEqual(b,require('./v4-release-gate').projectOriginalSearchRow(a,ownerLocale),f+' gift/TEN changed beyond exact shared metadata');continue;}
+   const privacyLocale=isV3&&allLocales.find(l=>url===`/${l}/privacy/`);
+   if(privacyLocale){const a=structuredClone(item),b=structuredClone(updated);for(const key of ['primaryName','aliases']){delete a.search[key];delete b.search[key];}assert.deepEqual(b,a,f+' privacy changed beyond exact policy H1 aliases');assert.deepEqual(updated,projectedV3[privacyLocale].items.find(x=>x.url===url),f+' exact derived privacy aliases');assert.equal(updated.search.primaryName,require('../data/analytics-privacy-copy.json').locales[privacyLocale].title);continue;}
    const hubLocale=isV3&&allLocales.find(l=>url===`/${l}/heroes/`);
    if(hubLocale){const a=structuredClone(item),b=structuredClone(updated);delete a.search.primaryName;delete b.search.primaryName;delete a.search.aliases;delete b.search.aliases;assert.deepEqual(b,a,f+' hub changed beyond name/aliases');assert.equal(updated.search.primaryName,C.locales[hubLocale].title);}
    else assert.deepEqual(updated,item,f+' unchanged-scope record changed '+url);
@@ -218,22 +265,64 @@ test('targeted search retains old URLs and aliases, permits reviewed hero/home/h
   const langs=f==='data/search-index.json'?allLocales:[path.basename(f,'.json')],expected=langs.flatMap(l=>[routeFor('furiosa',l),routeFor('alita',l),routeFor('lava',l),routeFor('lava',l)+'#lava-skills',routeFor('lava',l)+'#lava-growth',...require('./build-v4-search').records(l).map(r=>r.url),...require('./reviewed-routes').searchRecords(l).map(r=>r.url)]);assert.deepEqual([...nowMap.keys()].filter(u=>!oldMap.has(u)).sort(),expected.sort(),f+' unexpected added URLs');
  }
 });
-test('new atlas assets have current content hashes and baseline public tracking files are unchanged',()=>{
+function assertGlobalAnalyticsContract(source){
+ const fn=name=>source.match(new RegExp('^  function '+name+'\\([^\\n]*\\}\\n','m'))?.[0].trimEnd()||source.match(new RegExp('  function '+name+'\\([^]*?\\n  \\}'))?.[0];
+ assert.deepEqual([...source.matchAll(/localStorage\.getItem\(([^)]*)\)/g)].map(m=>m[1]),['OBJECTION_KEY'],'only the new browser objection may be read');
+ assert(!/setConsent|data-v3-consent|analytics_storage:\s*['"]granted/.test(source),'retired consent API/UI must not return');
+ assert.match(fn('enabled'),/production\(\) && idsValid && !restricted\(\) && !!pageMetadata\(\)/);
+ assert.match(fn('send'),/SCHEMA\.events\.indexOf\(name\) === -1/);assert.match(fn('send'),/SCHEMA\.dimensions\(extra\)/);
+ assert.match(fn('start'),/\(ratios\.get\(anchor\) \|\| 0\) < 0\.6/);assert.match(fn('start'),/\}, 1000\)/);assert.match(fn('start'),/!enabled\(\)/);assert.match(fn('scan'),/!anchor\.closest\('\[data-ten-view\]'\)/);
+ const schema=require('../js/analytics-contract'),vm=require('node:vm');
+ for(const event of ['page_view','topup_guide_view','affiliate_viewable','v3_feature_use','lootbar_outbound_click','free_progress_open','topup_guide_open'])assert(schema.events.includes(event),event+' base event removed');
+ assert(!schema.events.some(e=>['purchase','begin_checkout'].includes(e)),'outbound clicks are never purchases');
+ for(const legacy of [undefined,'true','false']){
+  const {document}=parseHTML('<html data-v3-affiliate><head><link rel="canonical" href="https://tilessurvive.net/ko/"></head><body><main data-v5-home data-ui-version="v6.1"></main></body></html>'),values=new Map(legacy===undefined?[]:[['tiles.v3.analyticsConsent',legacy]]),reads=[],calls=[];
+  Object.defineProperty(document,'cookie',{get(){throw new Error('Analytics must not read cookies');}});Object.defineProperty(document,'referrer',{value:'https://example.org/private-referrer?private-token=1'});
+  const window={TS_ANALYTICS_SCHEMA:schema,localStorage:{getItem:key=>{reads.push(key);assert.notEqual(key,'tiles.v3.analyticsConsent');return values.get(key)||null;},setItem:(key,value)=>values.set(key,value),removeItem:key=>values.delete(key)},gtag:(...args)=>calls.push(args),addEventListener(){}},location={hostname:'tilessurvive.net',origin:'https://tilessurvive.net',pathname:'/ko/',search:'?private-query=secret',hash:'#private-hash'};
+  vm.runInNewContext(source,{window,document,location,URL,URLSearchParams,setTimeout,clearTimeout});
+  assert.deepEqual(reads,['tiles.analytics.objection.v1']);assert.equal(values.has('tiles.v3.analyticsConsent'),false);assert.equal(window.TS_V3_AFFILIATE.setConsent,undefined);assert.equal(window.TS_ANALYTICS.isEnabled(),true);
+  const consent=calls.filter(c=>c[0]==='consent');assert.equal(consent.length,1);assert.equal(consent[0][1],'default');assert.deepEqual(JSON.parse(JSON.stringify(consent[0][2])),{analytics_storage:'denied',ad_storage:'denied',ad_user_data:'denied',ad_personalization:'denied'});
+  const config=calls.filter(c=>c[0]==='config');assert.equal(config.length,1);assert.equal(config[0][1],'G-Z2MJ6TXZHK');assert.equal(config[0][2].send_page_view,false);assert.equal(config[0][2].allow_google_signals,false);assert.equal(config[0][2].allow_ad_personalization_signals,false);assert.equal(config[0][2].page_referrer,'');assert.equal(config[0][2].page_location,'https://tilessurvive.net/ko/');
+  for(const id of ['G-TMGDGSEWW6','G-Z2MJ6TZXHK'])assert.equal(window['ga-disable-'+id],true);
+  assert.equal(window.TS_V3_AFFILIATE.trackFeature('private-feature','open'),false);assert.equal(window.TS_ANALYTICS.track('content_action',{feature:'content',action:'open',query:'private-input',external_url:'https://example.org/private-url'}),true);
+  const events=calls.filter(c=>c[0]==='event');assert(events.every(c=>c[2].send_to==='G-Z2MJ6TXZHK'&&c[2].measurement_version==='global-1'&&c[2].page_referrer===''&&c[2].page_location==='https://tilessurvive.net/ko/'));assert(!JSON.stringify(calls).includes('private-'));
+  window.TS_ANALYTICS.stop();const stopped=calls.length;assert.equal(window['ga-disable-G-Z2MJ6TXZHK'],true);assert.equal(window.TS_V3_AFFILIATE.trackFeature('content','open'),false);assert.equal(calls.length,stopped);assert.equal(values.get('tiles.analytics.objection.v1'),'true');
+  assert.equal(window.TS_ANALYTICS.resume(),true);assert.equal(values.has('tiles.analytics.objection.v1'),false);assert.equal(calls.filter(c=>c[0]==='consent').length,1);assert.equal(calls.filter(c=>c[1]==='page_view').length,1);assert.equal(calls.filter(c=>c[1]==='landing_view').length,1);assert.equal(document.querySelectorAll('[data-v3-ga-loader]').length,1);assert(!JSON.stringify(calls).includes('granted'));
+ }
+}
+test('poster binding exception rejects altered numeric projections, outputs and other source hashes',()=>{
+ const prior=JSON.parse(taskBefore('data/nuclear-fuel-poster-manifest.json')),current=JSON.parse(read('data/nuclear-fuel-poster-manifest.json'));assertPosterManifestTransition(prior,current);
+ for(const mutate of [x=>x.projectionSHA256.all='0'.repeat(64),x=>x.sources['data/nuclear-age.json']='0'.repeat(64),x=>x.outputs[Object.keys(x.outputs)[0]].sha256='0'.repeat(64)]){const changed=structuredClone(current);mutate(changed);assert.throws(()=>assertPosterManifestTransition(prior,changed));}
+});
+
+test('analytics migration normalization rejects stale or forged assets and leaves unknown scripts and data protected',()=>{
+ const file='en/heroes/lucky/index.html',source=taskBefore(file),V3=require('./build-v3-platform'),current=V3.project(source,'en','/en/heroes/lucky/');
+ const clean=normalizeSharedHash(current,file),previous=normalizeSharedHash(source,file,true);assert.deepEqual(programs(doc(clean)),programs(doc(previous)));
+ assert.throws(()=>normalizeAnalyticsMigration(current.replace(/analytics-contract\.js\?v=[a-f0-9]+/,'analytics-contract.js?v=000000000000'),file));
+ assert.throws(()=>normalizeAnalyticsMigration(source.replace('Optional usage analytics','Injected privacy'),file,true));
+ assert.throws(()=>normalizeAnalyticsMigration(source.replace('<!-- TS_V3_PRIVACY_END -->','<script>window.unreviewed=true</script><!-- TS_V3_PRIVACY_END -->'),file,true));
+ const checked=html=>{const candidate=doc(normalizeAnalyticsMigration(html,file));assert.deepEqual(programs(candidate),programs(doc(clean)));assert.deepEqual(jsonPayloads(candidate),jsonPayloads(doc(clean)));};
+ assert.throws(()=>checked(current.replace('</head>','<script>window.unreviewed=true</script></head>')));
+ assert.throws(()=>checked(current.replace('</main>','<script type="application/json">{"unreviewed":999999}</script></main>')));
+});
+
+test('global analytics retires legacy decisions and keeps the exact denied-mode measurement and privacy contract',()=>{
+ assertGlobalAnalyticsContract(read('js/v3-affiliate.js').replace(/\r\n/g,'\n'));
+});
+test('new atlas assets have current content hashes and baseline public tracking files preserve reviewed invariants',()=>{
  for(const entry of [...hubs,...oldRoutes.slice(0,3),...locales.map(l=>({file:fileFor(routeFor('lava',l))}))]){const d=doc(read(entry.file));for(const n of d.querySelectorAll('[data-hero-atlas-owned="assets"]')){const value=n.getAttribute('src')||n.getAttribute('href'),url=new URL(value,'https://tilessurvive.net'),p=url.pathname.slice(1);assert(['js/hero-atlas.js','css/hero-atlas.css','css/hero-pet.css','css/xssr-detail.css','js/xssr-growth-calculator.js'].includes(p));assert.equal(url.searchParams.get('v'),sha(fs.readFileSync(path.join(ROOT,p))).slice(0,12));}}
  const paths=['robots.txt','ads.txt','data/ten-benefits-policy.json','js/v3-affiliate.js','js/platform-affiliate.js'],present=new Set(git('ls-tree','-r','--name-only',BASELINE,'--',...paths).trim().split(/\r?\n/).filter(Boolean));loadBaseline(paths.filter(p=>present.has(p)));for(const p of paths){if(present.has(p)){
   // robots.txt has no eol attribute: core.autocrlf checks it out as CRLF on
   // Windows. Compare its Git clean-filter blob, not an OS checkout newline.
   if(p==='robots.txt')assert.equal(git('hash-object','--path',p,p).trim(),git('rev-parse',BASELINE+':'+p).trim(),p+' repository content changed');
   else if(p==='js/v3-affiliate.js'){
-   const old=before(p).replace(/\r\n/g,'\n'),now=read(p).replace(/\r\n/g,'\n'),constant=(s,name)=>s.match(new RegExp('  var '+name+' = [^\\n]+'))?.[0],fn=(s,name)=>s.match(new RegExp('^  function '+name+'\\([^\\n]*\\}\\n','m'))?.[0].trimEnd()||s.match(new RegExp('  function '+name+'\\([^]*?\\n  \\}'))?.[0];
-   for(const name of ['TEN','KEY','GA_ID','APPROVED_IDS','requestedIds','idsValid','gaIds','LOCALES','FEATURES','ACTIONS']){assert(constant(old,name),name);assert.equal(constant(now,name),constant(old,name),name+' tracking invariant changed');}
-   for(const name of ['language','pageType','safePath','sourceCategory','production','base','startGA','send','kind','stop','updateControls','setConsent']){assert(fn(old,name),name);assert.equal(name==='setConsent'?fn(now,name).replace('    syncGACollection();\n',''):fn(now,name),fn(old,name),name+' consent/tracking behavior changed');}
-   assert.match(fn(now,'syncGACollection'),/window\['ga-disable-' \+ id\] = !\(consent && production\(\) && idsValid && gaIds.includes\(id\)\)/);
-   assert.match(fn(now,'setConsent'),/consent = allowed === true;\n    syncGACollection\(\);/);
-   // start/scan additionally observe the approved TEN banner. Their privacy,
-   // 60%/1000ms/once behavior is executed in test-v61-ten and test-v3-affiliate.
-   assert.match(fn(now,'start'),/\(ratios\.get\(anchor\) \|\| 0\) < 0\.6/);assert.match(fn(now,'start'),/\}, 1000\)/);assert.match(fn(now,'start'),/!consent/);assert.match(fn(now,'scan'),/!anchor\.closest\('\[data-ten-view\]'\)/);
-   for(const event of ['page_view','topup_guide_view','affiliate_viewable','v3_feature_use','lootbar_outbound_click','free_progress_open','topup_guide_open'])assert(now.includes("'"+event+"'"),event+' base event removed');assert(now.includes("measurement_version: 'v3.1'"));assert(now.includes("document.querySelector('[data-v5-home]')"));
+   const old=before(p).replace(/\r\n/g,'\n'),now=read(p).replace(/\r\n/g,'\n');
+   const ten=s=>s.match(/var TEN = '([^']+)'/)?.[1];assert.equal(ten(now),ten(old),'exact approved TEN destination retained');
+   // The global denied-mode policy intentionally replaces the former opt-in
+   // functions. Verify the executable contract instead of old function bytes.
+   assertGlobalAnalyticsContract(now);
+  }else if(p==='js/platform-affiliate.js'){
+   const retired="(function () {\n  'use strict';\n  // Retired compatibility asset. The shared GA4 runtime owns all affiliate events.\n  // Keep this URL inert so cached pages cannot add a second listener or read old choices.\n})();\n";assert.equal(read(p).replaceAll('\r\n','\n'),retired,'Only the exact inert migration is approved');assert(git('show',TASK_BASELINE+':'+p).includes('addEventListener'),'Task-start compatibility asset provenance');
   }else if(p==='data/ten-benefits-policy.json')require('./ten-benefits-test-contract').assertPolicyTransition(JSON.parse(before(p)),JSON.parse(read(p)));else assert.equal(read(p),before(p),p+' changed');
  }else assert(!fs.existsSync(path.join(ROOT,p)),p+' was absent in the baseline');}
 });

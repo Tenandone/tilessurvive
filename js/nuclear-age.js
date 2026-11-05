@@ -39,7 +39,7 @@
    try{
     var p=plan(data.buildings,building.value,Number(from.value),Number(to.value));result.textContent=p.complete||p.knownFuel>0?nf.format(p.knownFuel):'—';status.textContent=p.complete?'':data.copy.incompletePlan;host.dataset.complete=String(p.complete);
     if(needsPowerPlant&&powerPlant&&requirement){var condition=powerPlantCondition(data.buildings,building.value,Number(from.value),Number(to.value),Number(powerPlant.value));if(condition.requiredLevel!==null){requirement.textContent=data.copy[condition.met?'powerPlantMet':'powerPlantRequired'].replace(/\{level\}/g,nf.format(condition.requiredLevel))+' '+data.copy.otherConditions;requirement.hidden=false;requirement.dataset.met=String(condition.met);}}
-    if(track&&typeof window==='object'&&window.TS_V3_AFFILIATE)window.TS_V3_AFFILIATE.trackFeature('calculator','result');
+    if(track&&p.complete){try{document.defaultView?.TS_ANALYTICS?.track?.('calculator_run',{feature:'nuclear_fuel',action:'result',placement:'calculator'});}catch(_){/* Measurement cannot change a valid result. */}}
    }catch(_){result.textContent='—';status.textContent=data.copy.invalidRange;host.dataset.complete='false';}
   }
   building.addEventListener('change',function(){options();update(false);});from.addEventListener('change',function(){update(false);});to.addEventListener('change',function(){update(false);});

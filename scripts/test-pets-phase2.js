@@ -4,6 +4,8 @@ const {parseHTML}=require('linkedom'),B=require('./build-pets-phase2'),R=require
 const root=path.resolve(__dirname,'..'),baseline='bbe712d5242a65fa1fff7aaf8e53f17bdb492ed6';
 const read=p=>fs.readFileSync(path.join(root,p),'utf8'),digest=s=>crypto.createHash('sha256').update(s).digest('hex');
 const source=p=>cp.execFileSync('git',['show',baseline+':'+p],{cwd:root,encoding:'utf8',maxBuffer:8*1024*1024});
+const S=require('./build-v6-system'),HP=require('./build-hero-pet-pages'),locales=require('../data/i18n/locales.json').locales;
+function sourceDocument(html,lang,route){S.validateOwnership(html,lang,route);HP.validateOwnership(html,lang);const d=parseHTML(S.strip(html)).document;d.querySelectorAll('[data-hero-pet-owned="pets"]').forEach(n=>n.remove());return d;}
 test('reviewed allowlist, version, availability and copy coverage',()=>{
  B.validate();for(const l of B.langs){assert.deepEqual(Object.keys(B.copy[l]).sort(),Object.keys(B.copy.en).sort());Object.values(B.copy[l]).forEach(v=>assert(v.length));}
  for(const alter of [m=>m.availability='released',m=>m.pets[0].expRows[0].exp=null,m=>m.pets[0].expRows[0].exp=0,m=>m.pets[0].trainingRows[0].quantity=null,m=>m.pets[0].rawSource='secret',m=>m.pets[0].skills[0].levels[0].description.en+='?',m=>m.pets[2].skills[2].status='verified-tooltip']){const x=structuredClone(B.model);alter(x);assert.throws(()=>B.validate(x));}
@@ -21,9 +23,9 @@ test('invalid input, missing/zero/null rows and reversed ranges remain unknown',
 });
 test('18 pages contain exact numeric tables, six-language descriptions, SEO scope, images and accessibility hooks',()=>{
  let pages=0,exp=0,training=0,descriptions=0;
- for(const lang of B.langs)for(const p of B.model.pets){const html=read(`${lang}/database/pet-system/${p.id}/index.html`),d=parseHTML(html).document,t=B.copy[lang];pages++;
+ for(const lang of B.langs)for(const p of B.model.pets){const html=read(`${lang}/database/pet-system/${p.id}/index.html`),d=sourceDocument(html,lang,`/${lang}/database/pet-system/${p.id}/`),t=B.copy[lang];pages++;
   assert.equal(d.querySelectorAll('h1').length,1);assert.equal(d.querySelector('h1').textContent,p.names[lang]);assert.equal(d.querySelector('[data-pets-phase2-availability]').textContent,t.scope);
-  assert(d.title.includes(t.title)&&d.title.includes('2.6.200'));assert(d.querySelector('meta[name="description"]').content.includes(t.scope));assert.equal(d.querySelectorAll('link[rel="alternate"]').length,7);
+  assert(d.title.includes(t.title)&&d.title.includes('2.6.200'));assert(d.querySelector('meta[name="description"]').content.includes(t.scope));const alternate=locales.map(l=>[l.hreflang.toLowerCase(),`https://tilessurvive.net/${l.code}/database/pet-system/${p.id}/`]);alternate.push(['x-default',`https://tilessurvive.net/en/database/pet-system/${p.id}/`]);assert.deepEqual([...d.querySelectorAll('link[rel="alternate"]')].map(n=>[n.hreflang.toLowerCase(),n.href]).sort(),alternate.sort());
   assert.equal(d.querySelectorAll('[data-pets-phase2-exp-row]').length,99);assert.equal(d.querySelectorAll('[data-pets-phase2-training-row]').length,5);exp+=99;training+=5;
   const expData=JSON.parse(d.querySelector('[data-pets-phase2-data]').textContent);assert.deepEqual(expData.expRows,p.expRows);
   const fmt=n=>n.toLocaleString(lang==='zh-tw'?'zh-TW':lang);
@@ -41,7 +43,7 @@ test('hub projection is idempotent and preserves every baseline node outside exa
 });
 test('the seven existing pet data and calculator modules remain exactly the deployed version',()=>{
  const files=['data/pet-skill-levels.json','data/foundation-40/pet-exp-profiles.json','data/foundation-40/pet-training-profiles-41.json','data/foundation-40/pet-observations.json','data/foundation-40/pet-skills-41.json','data/foundation-40/starhorn-growth.json','js/pet-exp-profiles-40.js','js/pet-training-profiles-41.js','js/pet-skill-levels.js'];
- for(const rel of files)assert.equal(read(rel).replaceAll('\r\n','\n'),source(rel).replaceAll('\r\n','\n'),rel);
+ for(const rel of files)assert.equal(require('./analytics-instrumentation-preservation').strip(rel,read(rel)),source(rel).replaceAll('\r\n','\n'),rel);
 });
 test('EXP browser wiring renders valid/invalid/equal targets using exact data',()=>{
  const html=read('en/database/pet-system/hopper/index.html'),{document,Event}=parseHTML(html);R.mount(document);const f=document.querySelector('[data-pets-phase2-exp]'),a=f.querySelector('[name="from"]'),b=f.querySelector('[name="to"]'),o=f.querySelector('output');

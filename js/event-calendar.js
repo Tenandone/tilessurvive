@@ -97,6 +97,7 @@
     saved[state.event] = value; const persisted = save(); state.view = 'today'; render();
     document.getElementById('calendar-anchor-message').textContent = persisted ? C.anchorSaved : C.localStorageUnavailable;
     if (!persisted) app.querySelector('.calendar-anchor').open = true;
+    else {try{window.TS_ANALYTICS?.track?.('planner_use',{feature:'event_planner',action:'save',placement:'planner'});}catch(_){}}
     app.querySelector('[data-calendar-view="today"]').focus();
   });
   app.addEventListener('click', e => {

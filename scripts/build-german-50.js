@@ -161,12 +161,14 @@ function prepareV3Source(source, locale, route) {
       const allowedNames=script?['data-v3-owned','defer','src']:['data-v3-owned','href','rel'];
       const target=node.getAttribute(script?'src':'href')||'';
       const knownAsset=/^\/(?:css\/v3-(?:platform|events)\.css|js\/v3-(?:search-core|affiliate|planner|events)\.js)\?v=[a-f0-9]{12}$/.test(target);
+      const analyticsAsset=script&&/^\/js\/analytics-contract\.js\?v=[a-f0-9]{12}$/.test(target)&&
+        [...expected.querySelectorAll('script[data-v3-owned="assets"]')].some(asset=>asset.getAttribute('src')===target&&fingerprint(asset)===fingerprint(node));
       const topupAsset=route==='top-up/index.html'&&(
         /^\/css\/ten-benefits\.css\?v=[a-f0-9]{12}$/.test(target)||
         /^\/(?:css\/v61-ten\.css|js\/v61-ten\.js)\?v=[a-f0-9]{12}$/.test(target)&&
         [...expected.querySelectorAll('[data-v3-owned="assets"]')].some(asset=>asset.getAttribute(script?'src':'href')===target&&fingerprint(asset)===fingerprint(node))
       );
-      if(JSON.stringify(names)!==JSON.stringify(allowedNames)||(!script&&(node.tagName!=='LINK'||node.getAttribute('rel')!=='stylesheet'))||!(knownAsset||topupAsset))throw new Error('Unreviewed V3 asset in German source: '+route);
+      if(JSON.stringify(names)!==JSON.stringify(allowedNames)||(!script&&(node.tagName!=='LINK'||node.getAttribute('rel')!=='stylesheet'))||!(knownAsset||analyticsAsset||topupAsset))throw new Error('Unreviewed V3 asset in German source: '+route);
       continue;
     }
     const index=remaining.indexOf(fingerprint(node));

@@ -8,7 +8,7 @@
     "data/nuclear-age.json": "63138f2e62c0318a7df228b25e255a06e3613a3e962eda3021c527b0c757689b",
     "data/nuclear-fuel-copy.json": "5427b1c27a8dfab51efaf1a1937f309f89b631e80e5d670ba640f329a97a8366",
     "data/i18n/locales.json": "b604d858cae600ac7b228618464e5cb4909a3d661045edb7b8db97ace61d3537",
-    "js/nuclear-age.js": "c8f800deadb06ac31b0757ffb30e2faab8941d536a28b4c5df40d2acb2f49601",
+    "js/nuclear-age.js": "e387b3668e269a93f12a3f25aac77fd0f1aa33705749677f73c66fb1c9d816af",
     "scripts/nuclear-fuel-summary.js": "b8c56837caa714835db2b390a4b286be8bef64b329a68b9f76f8ae733426ea1e",
     "scripts/nuclear-service-overrides.js": "b19386d83b3753ba672e48df72c34cd811a7f081f44ffd5970e1ab27e11c191d",
     "scripts/build-nuclear-fuel-poster.js": "5096eb11fc57c01121f67d526a7638da501c896aae914f62beaea67aad9c9844"
