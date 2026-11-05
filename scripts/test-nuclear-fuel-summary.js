@@ -17,12 +17,12 @@ test('all and tree totals distinguish five-step requirements from cumulative req
   assert.deepEqual(result.officialBuildingIds,ANNOUNCED);assert.deepEqual(result.announcedBuildingIds,ANNOUNCED);
   assert.deepEqual(result.sourceConfiguredBuildingIds,CONFIGURED);assert.deepEqual(result.configuredBuildings,[]);
   assert.deepEqual(result.totals.map(l=>l.incremental.knownFuel),incremental);
-  assert.deepEqual(result.totals.map(l=>l.incremental.total),[null,...incremental.slice(1)]);
+  assert.deepEqual(result.totals.map(l=>l.incremental.total),incremental);
   assert.deepEqual(result.totals.map(l=>l.cumulative.knownFuel),cumulative);
-  assert.deepEqual(result.totals.map(l=>l.cumulative.total),[null,null,null]);
+  assert.deepEqual(result.totals.map(l=>l.cumulative.total),cumulative);
   assert.deepEqual(result.totals.map(l=>l.incremental.stageCount),[count,count,count]);
   assert.deepEqual(result.totals.map(l=>l.cumulative.stageCount),[count,count*2,count*3]);
-  assert.deepEqual(result.totals.map(l=>l.cumulative.missingSourceIds),[[501051],[501051],[501051]]);
+  assert.deepEqual(result.totals.map(l=>l.cumulative.missingSourceIds),[[],[],[]]);
  }
  assert.deepEqual(project(),project(M,'all'));
 });
@@ -30,7 +30,7 @@ test('all and tree totals distinguish five-step requirements from cumulative req
 test('each building retains independent reviewed increments, exact source order and unknown propagation',()=>{
  const result=project(),power=result.buildings[0];
  assert.deepEqual(power.levels.map(l=>l.incremental.knownFuel),[400,930,1050]);
- assert.deepEqual(power.levels.map(l=>l.incremental.complete),[false,true,true]);
+ assert.deepEqual(power.levels.map(l=>l.incremental.complete),[true,true,true]);
  assert.deepEqual(power.levels.map(l=>l.cumulative.knownFuel),[400,1330,2380]);
  for(const b of result.buildings.slice(1)){
   const high=[800152,800142,800147,800148,800149].includes(b.id),workshop=b.id===800150;
@@ -74,7 +74,7 @@ test('an unknown added-building requirement propagates only through the selected
  const all=project(data),tree=project(data,'tree');
  assert.equal(all.totals[1].incremental.total,null);assert.equal(all.totals[1].incremental.knownFuel,15289-120);
  assert.deepEqual(all.totals[1].incremental.missingSourceIds,[row.sourceId]);
- assert.deepEqual(all.totals[1].cumulative.missingSourceIds,[501051,row.sourceId]);
+ assert.deepEqual(all.totals[1].cumulative.missingSourceIds,[row.sourceId]);
  assert.deepEqual(tree,project(M,'tree'));
 });
 

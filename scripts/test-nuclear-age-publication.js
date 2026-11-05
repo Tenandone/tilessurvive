@@ -17,12 +17,13 @@ const expectedRows=allSourceRows.map(s=>s.sourceId);
 test('the original 87 numeric rows and the independently extracted 135 configured rows remain exact',()=>{
  const original=canonicalNumeric.filter(b=>originalIds.includes(b.id)),configured=canonicalNumeric.filter(b=>configuredIds.includes(b.id));
  assert.deepEqual(original.map(b=>b.id),originalIds);assert.equal(original.flatMap(b=>b.stages).length,87);
- // Original IDs, ordered stage IDs and nullable fuel values from commit 90b72553e.
- assert.equal(digest(original),'d13a68dc32d7823cd1fe1d787343ff5241340826d01b1e07ff4fa3af12d59fe3');
+ // Only the operator-confirmed 501051 cost differs from the retained source.
+ const retained=structuredClone(original);assert.equal(retained[0].stages[0].id,501051);assert.equal(retained[0].stages[0].fuel,0);retained[0].stages[0].fuel=null;
+ assert.equal(digest(retained),'d13a68dc32d7823cd1fe1d787343ff5241340826d01b1e07ff4fa3af12d59fe3');
  // Independent pinned 2.6.400 extraction: configured-nuclear-buildings.json.
  assert.deepEqual(configured.map(b=>b.id),configuredIds);assert.equal(configured.flatMap(b=>b.stages).length,135);
  assert.equal(digest(configured),'3a26eadfd2970a906508352209a1ae9ac1f6285ebff67395205e943504b889b3');
- assert.deepEqual(allSourceRows.filter(s=>s.nuclearFuel===null).map(s=>s.sourceId),[501051,507644]);
+ assert.deepEqual(allSourceRows.filter(s=>s.nuclearFuel===null).map(s=>s.sourceId),[507644]);
 });
 
 test('21 generated guides retain native copy, 222 static rows and exact canonical/hreflang metadata',()=>{
@@ -51,7 +52,7 @@ test('all 21 embedded calculators preserve identical source IDs, requirements an
  const expected=numericConfig(N.calculatorConfig('en'));
  assert.deepEqual(expected,canonicalNumeric);assert.deepEqual(expected.map(b=>b.id),expectedBuildingIds);
  assert.deepEqual(expected.map(b=>b.stages.length),[...Array(14).fill(15),12]);
- assert.equal(expected[0].stages[0].fuel,null);assert.equal(expected[14].stages[0].fuel,null);
+ assert.equal(expected[0].stages[0].fuel,0);assert.equal(expected[14].stages[0].fuel,null);
  for(const {code:l,numberLocale}of REG){
   const d=documentOf(read(N.route(l))),scripts=d.querySelectorAll('#ts-nuclear-age');assert.equal(scripts.length,1);
   const cfg=JSON.parse(scripts[0].textContent);assert.deepEqual(cfg,N.calculatorConfig(l));assert.equal(cfg.locale,l);assert.equal(cfg.numberLocale,numberLocale);
@@ -103,7 +104,7 @@ test('guide ownership rejects appended main siblings, duplicate guides and alter
   assert.throws(()=>N.validateOwnership(sibling.toString(),l),'Appended sibling accepted '+l);
   const duplicate=documentOf(html),guide=duplicate.querySelector('[data-nuclear-owned="guide"]');guide.parentNode.appendChild(guide.cloneNode(true));
   assert.throws(()=>N.validateOwnership(duplicate.toString(),l),'Duplicate guide accepted '+l);
-  const changed=documentOf(html),payload=changed.getElementById('ts-nuclear-age'),cfg=JSON.parse(payload.textContent);cfg.buildings[0].stages[0].fuel=0;payload.textContent=JSON.stringify(cfg);
+  const changed=documentOf(html),payload=changed.getElementById('ts-nuclear-age'),cfg=JSON.parse(payload.textContent);cfg.buildings.find(b=>b.id===800419).stages[0].fuel=0;payload.textContent=JSON.stringify(cfg);
   assert.throws(()=>N.validateOwnership(changed.toString(),l),'Unknown fuel converted to zero '+l);
  }
 });

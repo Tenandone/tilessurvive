@@ -22,10 +22,11 @@ function checkGuide(html,l,source){
  assert.deepEqual(cfg,N.calculatorConfig(l));assert.deepEqual(numeric(cfg),expectedNumeric,l+' source IDs, fuel requirements and unknown values');
  assert.deepEqual(cfg.buildings.map(b=>b.id),expectedBuildingIds);assert.equal(cfg.buildings.flatMap(b=>b.stages).length,222);
  const original=numeric(cfg).filter(b=>originalIds.includes(b.id)),configured=numeric(cfg).filter(b=>configuredIds.includes(b.id));
- // Exact original 87 rows from 90b72553e and 135 rows from the pinned client extraction.
- assert.equal(original.flatMap(b=>b.stages).length,87);assert.equal(digest(original),'d13a68dc32d7823cd1fe1d787343ff5241340826d01b1e07ff4fa3af12d59fe3');
+ // Preserve the exact retained digest after reversing only the confirmed 501051 correction.
+ assert.equal(original.flatMap(b=>b.stages).length,87);const retained=structuredClone(original);assert.equal(retained[0].stages[0].id,501051);assert.equal(retained[0].stages[0].fuel,0);retained[0].stages[0].fuel=null;
+ assert.equal(digest(retained),'d13a68dc32d7823cd1fe1d787343ff5241340826d01b1e07ff4fa3af12d59fe3');
  assert.equal(configured.flatMap(b=>b.stages).length,135);assert.equal(digest(configured),'3a26eadfd2970a906508352209a1ae9ac1f6285ebff67395205e943504b889b3');
- assert.equal(cfg.buildings[0].stages[0].fuel,null);assert.equal(cfg.buildings[14].stages[0].fuel,null);assert.equal(cfg.buildings[1].stages.reduce((n,s)=>n+s.fuel,0),1944);
+ assert.equal(cfg.buildings[0].stages[0].fuel,0);assert.equal(cfg.buildings[14].stages[0].fuel,null);assert.equal(cfg.buildings[1].stages.reduce((n,s)=>n+s.fuel,0),1944);
  const nf=new Intl.NumberFormat(L.byCode.get(l).numberLocale),rows=[...d.querySelectorAll('tr[data-stage-id]')],stages=expectedNumeric.flatMap(b=>b.stages);
  assert.equal(rows.length,222);assert.equal(new Set(rows.map(row=>row.dataset.stageId)).size,222);rows.forEach((row,i)=>{assert.equal(Number(row.dataset.stageId),stages[i].id);assert.equal(row.querySelector('td').textContent,stages[i].fuel===null?c.unknownValue:nf.format(stages[i].fuel));});
  const options=[...d.querySelectorAll('[data-nuclear-planner] select[name="building"] option')];assert.deepEqual(options.map(n=>Number(n.value)),expectedBuildingIds);
@@ -82,7 +83,7 @@ test('all three regeneration paths reject forged guide content, metadata, routes
  const mutations=[
   d=>{d.querySelector('[data-nuclear-owned="guide"] h1').textContent='Unreviewed era';},
   d=>{d.querySelector('main').insertAdjacentHTML('beforeend','<p>Unreviewed sibling promise</p>');},
-  d=>{const n=d.getElementById('ts-nuclear-age'),cfg=JSON.parse(n.textContent);cfg.buildings[0].stages[0].fuel=0;n.textContent=JSON.stringify(cfg);},
+  d=>{const n=d.getElementById('ts-nuclear-age'),cfg=JSON.parse(n.textContent);cfg.buildings.find(b=>b.id===800419).stages[0].fuel=0;n.textContent=JSON.stringify(cfg);},
   d=>{d.querySelector('meta[name="description"]').content='Unreviewed SEO';},
   d=>{d.querySelector('link[hreflang="fr"]').href=L.publicOrigin+'/fr/seasons/';},
   d=>{const n=d.getElementById('ts-locale-routes'),routes=JSON.parse(n.textContent);routes.fr='/fr/seasons/';n.textContent=JSON.stringify(routes);},

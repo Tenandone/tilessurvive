@@ -36,6 +36,18 @@ function project(data=require('../data/nuclear-age.json'),scope='all'){
   assert.deepEqual(ids,expected,'Unreviewed Nuclear Fuel summary scope or order '+name);
  }
  const buildingIds=new Set(),sourceIds=new Set();
+ const powerPlant=data.buildings.find(b=>b.id===800005);
+ function powerPlantRequirement(source,level){
+  const requirements=source.stages.slice((level-1)*5,level*5).map(stage=>stage.powerPlantRequirement??null);
+  if(requirements.every(value=>value===null))return null;
+  const requirement=requirements[0];assert(requirement,'Missing first Power Plant prerequisite in a nuclear level');
+  for(const value of requirements)assert.deepEqual(value,requirement,'Every substep must retain the same reviewed Power Plant prerequisite');
+  assert.equal(requirement.buildingId,800005,'Wrong prerequisite direction');
+  assert.equal(requirement.completedNuclearLevel,level,'Prerequisite must match the target nuclear level');
+  assert.equal(requirement.completedSequence,level*5,'Prerequisite must complete all five substeps');
+  assert.equal(requirement.sourceId,powerPlant.stages[requirement.completedSequence-1].sourceId,'Wrong Power Plant completion source row');
+  return {...requirement};
+ }
  function building(source){
   assert(Number.isSafeInteger(source.id)&&source.id>0&&!buildingIds.has(source.id),'Invalid or duplicate Nuclear Age building');buildingIds.add(source.id);
   assert(Array.isArray(source.stages)&&source.stages.length===15,'N1–N3 require exactly fifteen reviewed steps');
@@ -46,11 +58,11 @@ function project(data=require('../data/nuclear-age.json'),scope='all'){
    assert.equal(stage.step,index%5+1,'Unreviewed Nuclear Age substep');
   }
   const input={id:source.id,stages:source.stages.map(s=>({id:s.sourceId,fuel:s.nuclearFuel}))};
-  return {id:source.id,names:{...source.names},image:source.image?{...source.image}:null,levels:[1,2,3].map(level=>({level,badge:BADGES[level-1],sourceIds:input.stages.slice((level-1)*5,level*5).map(s=>s.id),incremental:amount(input,(level-1)*5,level*5),cumulative:amount(input,0,level*5)}))};
+  return {id:source.id,names:{...source.names},image:source.image?{...source.image}:null,levels:[1,2,3].map(level=>({level,badge:BADGES[level-1],sourceIds:input.stages.slice((level-1)*5,level*5).map(s=>s.id),powerPlantRequirement:powerPlantRequirement(source,level),incremental:amount(input,(level-1)*5,level*5),cumulative:amount(input,0,level*5)}))};
  }
  // Validate every reviewed source building even when the selected table omits it.
  const allBuildings=[...data.buildings,...configured].map(building),byId=new Map(allBuildings.map(b=>[b.id,b]));
  const selectedIds=[...data.fuelSummaryScopes[scope].buildingIds],buildings=selectedIds.map(id=>byId.get(id));
- return {schemaVersion:2,scope,buildingIds:selectedIds,baseLevel:30,stepsPerLevel:5,levels:[1,2,3],officialBuildingIds:[...OFFICIAL_IDS],announcedBuildingIds:[...OFFICIAL_IDS],sourceConfiguredBuildingIds:[...CONFIGURED_IDS],client:{version:data.client.version,build:data.client.build},item:{id:data.item.id,names:{...data.item.names},image:data.item.image?{...data.item.image}:null},stageMarker:data.stageMarker?{...data.stageMarker}:null,buildings,totals:[1,2,3].map(level=>({level,badge:BADGES[level-1],incremental:combine(buildings.map(b=>b.levels[level-1].incremental)),cumulative:combine(buildings.map(b=>b.levels[level-1].cumulative))})),configuredBuildings:[]};
+ return {schemaVersion:2,scope,buildingIds:selectedIds,baseLevel:30,stepsPerLevel:5,levels:[1,2,3],firstPowerPlantUpgrade:{buildingId:powerPlant.id,sourceId:powerPlant.stages[0].sourceId,nuclearFuel:powerPlant.stages[0].nuclearFuel},officialBuildingIds:[...OFFICIAL_IDS],announcedBuildingIds:[...OFFICIAL_IDS],sourceConfiguredBuildingIds:[...CONFIGURED_IDS],client:{version:data.client.version,build:data.client.build},item:{id:data.item.id,names:{...data.item.names},image:data.item.image?{...data.item.image}:null},stageMarker:data.stageMarker?{...data.stageMarker}:null,buildings,totals:[1,2,3].map(level=>({level,badge:BADGES[level-1],incremental:combine(buildings.map(b=>b.levels[level-1].incremental)),cumulative:combine(buildings.map(b=>b.levels[level-1].cumulative))})),configuredBuildings:[]};
 }
 module.exports={project};

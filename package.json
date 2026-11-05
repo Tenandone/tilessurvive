@@ -86,7 +86,7 @@
     "postbuild:hero-atlas": "node scripts/build-v6-system.js",
     "build:v6": "node scripts/build-v5-landing.js && node scripts/build-v6-system.js",
     "test:v6": "node --test scripts/test-v6-landing.js scripts/test-v6-system.js scripts/test-common-events.js scripts/test-ten-benefits-copy.js scripts/test-v61-ten.js scripts/test-v61-regeneration.js scripts/test-gift-codes.js scripts/test-v4-search-preservation.js",
-    "test:nuclear-age": "node --test scripts/test-nuclear-age-runtime.js scripts/test-nuclear-age-publication.js scripts/test-nuclear-age-regeneration.js",
+    "test:nuclear-age": "node --test scripts/test-nuclear-age-runtime.js scripts/test-nuclear-age-publication.js scripts/test-nuclear-age-regeneration.js scripts/test-nuclear-service-overrides.js scripts/test-nuclear-service-integration.js scripts/test-nuclear-planner-ui.js",
     "test:site-identity": "node --test scripts/test-favicon-assets.js scripts/test-site-identity.js scripts/test-site-invariants.js",
     "test:nuclear-fuel": "node --test scripts/test-nuclear-fuel-summary.js scripts/test-nuclear-fuel-publication.js scripts/test-nuclear-fuel-poster.js",
     "build:buildings:unified": "node scripts/build-buildings-unified.js",
