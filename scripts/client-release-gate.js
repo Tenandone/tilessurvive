@@ -12,9 +12,9 @@ const json=(root,file)=>JSON.parse(read(root,file));
 const urls=xml=>[...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map(m=>m[1]);
 function walk(root,relative){const dir=path.join(root,relative);return fs.existsSync(dir)?fs.readdirSync(dir,{withFileTypes:true}).flatMap(e=>e.isDirectory()?walk(root,path.posix.join(relative,e.name)):[path.posix.join(relative,e.name)]):[];}
 function publicFiles(root=ROOT){const codes=json(root,'data/i18n/locales.json').locales.map(x=>x.code);return [...new Set([...codes.flatMap(c=>walk(root,c).filter(f=>f.endsWith('.html'))),...Identity.standaloneFiles(root),...(fs.existsSync(path.join(root,'data/site-identity.json'))?Identity.protectedFiles(root):[]),...walk(root,'data').filter(f=>/\.(json|js)$/.test(f)),...['js','css'].flatMap(dir=>walk(root,dir).filter(f=>/\.(js|css)$/.test(f))),...['index.html','tiktok-live-match/index.html','sitemap.xml','robots.txt'].filter(f=>fs.existsSync(path.join(root,f)))])].sort();}
-function snapshot(root=ROOT,backup){const files={};for(const file of publicFiles(root)){const bytes=fs.readFileSync(path.join(root,file));files[file]=sha(bytes);if(backup){const to=path.join(backup,file);fs.mkdirSync(path.dirname(to),{recursive:true});fs.writeFileSync(to,bytes);}}return {schemaVersion:1,files};}
+function snapshot(root=ROOT,backup){const files={};for(const file of publicFiles(root)){const bytes=fs.readFileSync(path.join(root,file));files[file]=sha(bytes);if(backup){const to=path.join(backup,file);fs.mkdirSync(path.dirname(to),{recursive:true});fs.writeFileSync(to,bytes);}}return {schemaVersion:1,files,sitemapText:read(root,'sitemap.xml')};}
 const immutable=file=>['robots.txt','sitemap.xml','favicon.ico','favicon-96x96.png','apple-touch-icon.png','icons/icon-192.png','icons/icon-512.png','img/brand/tiles-survive-app-2.6.400.webp'].includes(file)||/^(?:google|naver)[a-z0-9]+\.html$/.test(file)||/^(?:js|css)\//.test(file)||file.startsWith('data/')&&!/^data\/(?:search\/|v3-search\/|search-index\.json$)/.test(file);
-function verifyStableFiles(root,before){for(const [file,hash]of Object.entries(before.files))if(immutable(file))assert.equal(sha(fs.readFileSync(path.join(root,file))),hash,'Immutable release input changed: '+file);for(const file of publicFiles(root))if(immutable(file))assert(Object.hasOwn(before.files,file),'Unvalidated new public input: '+file);}
+function verifyStableFiles(root,before){for(const [file,hash]of Object.entries(before.files))if(immutable(file)){const current=fs.readFileSync(path.join(root,file));if(file==='sitemap.xml'&&sha(current)!==hash){assert.equal(sha(current),sha(require('./build-answer-guides').projectSitemap(before.sitemapText||'')),'Only reviewed answer lastmod changes are allowed');}else assert.equal(sha(current),hash,'Immutable release input changed: '+file);}for(const file of publicFiles(root))if(immutable(file))assert(Object.hasOwn(before.files,file),'Unvalidated new public input: '+file);}
 // Public introductions are reviewed separately from retained client records.
 // The registry authorizes routes and release labels, never calculator inputs.
 function officialRegistry(root=ROOT){return json(root,'data/xssr-heroes.json');}
@@ -105,8 +105,11 @@ function preservedContent(html){
 }
 function verifyPreserved(before,after,file){
  Analytics.preserved(before,after);
+ const answerLocale=file.split('/')[0],answerRoute='/'+file.replace(/index\.html$/,'');
+ after=require('./answer-guide-content').validateAndStrip(after,answerLocale,answerRoute);before=require('./answer-guide-content').strip(before);
  const System=require('./build-v6-system');before=Identity.strip(System.strip(before));after=Identity.strip(System.strip(after));
  const locale=file.split('/')[0],route='/'+file.replace(/index\.html$/,'');
+ if(route==='/'+locale+'/eras/nuclear-age/'){const Nuclear=require('./build-nuclear-age');Nuclear.validateOwnership(after,locale,route);before=Nuclear.project(before,locale,route);}
  const Buildings=require('./build-buildings-unified');
  if(Buildings.pages.includes(file)){
   // Only the registered building sheet and original-effect projection may
@@ -162,8 +165,9 @@ function validate(root=ROOT,{before,backup,allowUnprojectedIdentity=false}={}){
  for(const group of groups)for(const l of registry){const route=group.routes[l.code];assert(route,'Missing locale counterpart '+group.id+'/'+l.code);const file=route.slice(1)+'index.html',html=read(root,file);validateDocument(html,{locale:l.code,route,routes:group.routes,registry});if(before&&backup&&before.files[file])verifyPreserved(read(backup,file),html,file);pages++;}
  const index=json(root,'data/search-index.json');assert.equal(index.itemCount,index.items.length);assert.equal(new Set(index.items.map(i=>i.url)).size,index.items.length);const indexed=new Set(index.items.map(i=>i.url));
  for(const l of registry){const raw=json(root,'data/search/'+l.code+'.json'),derived=json(root,'data/v3-search/'+l.code+'.json');assert.equal(raw.items.length,raw.itemCount);assert.equal(derived.items.length,raw.itemCount);assert.deepEqual(derived.items.map(({search,...item})=>item),raw.items,l.code+' search source preservation');for(const item of raw.items){assert(indexed.has(item.url),'Missing aggregate record');assert(item.url.startsWith('/'+l.code+'/'),'Cross-language search record');}}
+ const answerGuides=require('./build-answer-guides').validate({root,required:!allowUnprojectedIdentity});
  if(before)verifyStableFiles(root,before);
- return {status:'PASS',locales:registry.length,canonicalPages:pages,sitemapURLs:actual.length,routeGroups:groups.length,searchRecords:index.itemCount,...model,...isolation,siteIdentity:identity,reviewedRoutes,buildingsUnified,growthBuildings};
+ return {status:'PASS',locales:registry.length,canonicalPages:pages,sitemapURLs:actual.length,routeGroups:groups.length,searchRecords:index.itemCount,...model,...isolation,siteIdentity:identity,reviewedRoutes,buildingsUnified,growthBuildings,answerGuides};
 }
 module.exports={ROOT,BASELINE,officialRegistry,officialAdditions,reviewedSitemap,validateOfficialIsolation,publicFiles,snapshot,validatePublication,validateDocument,preservedContent,verifyPreserved,verifyStableFiles,hook,validateBuildings,validate};
 if(require.main===module)console.log(JSON.stringify(validate()));

@@ -160,6 +160,9 @@ function unifiedBuildingOwner(document, group) {
 }
 function localizePage(source, locale, group, groups, translator) {
   source=require('./build-v6-system').strip(source);
+  // Answers are native projections, not entries in the general translation
+  // dictionary. Reject altered blocks before removing the complete owner.
+  source=require('./answer-guide-content').validateAndStrip(source,'en',group.routes.en);
   const nuclearGuide=group.id==='eras/nuclear-age/';
   if(nuclearGuide)Nuclear.validateOwnership(source,'en',group.routes.en);
   // Validate English cards before removing them. The V4 owner validates native
@@ -324,6 +327,7 @@ function enhance(document, locale, group, available, ui, {preview=false}={}) {
   if(group.id==='codes/')projected=require('./build-gift-codes').project(projected,locale);
   if(group.id==='eras/nuclear-age/')projected=Nuclear.project(projected,locale,group.routes[locale]);
   if(Nuclear.linkRoutes(locale).includes(group.routes[locale]))projected=Nuclear.projectLinks(projected,locale,group.routes[locale]);
+  projected=require('./answer-guide-content').project(projected,locale,group.routes[locale]);
   if(preview){const staged=parseHTML(projected).document;let robots=staged.querySelector('meta[name="robots"]');if(!robots){robots=staged.createElement('meta');robots.name='robots';staged.head.append(robots);}robots.content='noindex,nofollow';projected='<!doctype html>\n'+staged.documentElement.outerHTML+'\n';}
   // Older feature owners append their assets. Finalize presentation last so
   // every supported route, including a newly localized page, has one fresh V6

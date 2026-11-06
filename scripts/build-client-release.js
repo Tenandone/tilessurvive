@@ -8,7 +8,7 @@ function writeFailureReport(artifacts,result){
  try{fs.writeFileSync(path.join(artifacts,'result.json'),JSON.stringify(result,null,2)+'\n');}
  catch(error){(result.reportingErrors??=[]).push(errorDetails(error));console.error('Unable to write release failure report:',error.message);}
 }
-function steps(root=G.ROOT){return ['scripts/build-v3-platform.js','scripts/build-analytics-privacy.js','scripts/build-hero-atlas.js',...(G.hook(root)?[G.hook(root)]:[]),'scripts/v4-workbench-content.js','scripts/build-gift-codes.js','scripts/build-buildings-unified.js','scripts/build-nuclear-age.js','scripts/build-v5-landing.js','scripts/build-hero-atlas-search.js','scripts/build-v4-search.js','scripts/build-v3-search.js','scripts/build-v6-system.js','scripts/build-site-identity.js'];}
+function steps(root=G.ROOT){return ['scripts/build-v3-platform.js','scripts/build-analytics-privacy.js','scripts/build-hero-atlas.js',...(G.hook(root)?[G.hook(root)]:[]),'scripts/v4-workbench-content.js','scripts/build-gift-codes.js','scripts/build-buildings-unified.js','scripts/build-nuclear-age.js','scripts/build-v5-landing.js','scripts/build-hero-atlas-search.js','scripts/build-v4-search.js','scripts/build-answer-guides.js','scripts/build-v3-search.js','scripts/build-v6-system.js','scripts/build-site-identity.js'];}
 function build({root=G.ROOT,apply=false,artifactRoot}={}){
  const plan=steps(root);G.validate(root,{allowUnprojectedIdentity:apply});
  if(!apply){const result={mode:'check',validated:true,steps:plan,deployed:false};console.log(JSON.stringify(result));return result;}

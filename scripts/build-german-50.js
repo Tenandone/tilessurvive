@@ -194,6 +194,7 @@ function prepareV3Source(source, locale, route) {
 function render(source, translate, route) {
   source=require('./build-v6-system').strip(source);
   const Nuclear=require('./build-nuclear-age'),nuclearGuide=route==='eras/nuclear-age/index.html',sourceRoute='/en/'+route.replace(/index\.html$/,'');
+  source=require('./answer-guide-content').validateAndStrip(source,'en',sourceRoute);
   if(nuclearGuide)Nuclear.validateOwnership(source,'en',sourceRoute);
   if(Nuclear.linkRoutes('en').includes(sourceRoute)){
     Nuclear.validateLinks(source,'en',sourceRoute);source=Nuclear.stripLinks(source);
@@ -217,6 +218,9 @@ function render(source, translate, route) {
     if(route==='codes/index.html')projected=require('./build-gift-codes').project(projected,'de');
     if(nuclearGuide)projected=Nuclear.project(projected,'de',target);
     if(Nuclear.linkRoutes('de').includes(target))projected=Nuclear.projectLinks(projected,'de',target);
+    // Keep the existing translation-fragment API; complete pages receive the
+    // native answer owner only after all source content owners have finished.
+    if(parseHTML(projected).document.querySelector('main h1'))projected=require('./answer-guide-content').project(projected,'de',target);
     // V6 owns only its asset block/root flags; translation-only fragments are
     // left intact while real pages receive the same final style order.
     return require('./build-v6-system').project(projected,'de',target);

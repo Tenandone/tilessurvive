@@ -133,8 +133,10 @@ function render(locale,model=project()){
  y=paragraph(c.scopeNote,y+7,{size:17,lineHeight:25})+25;
  parts.push(`<path d="M68 ${y}H1012" stroke="#bcc8b7"/>`);
  text('TilesSurvive.net',68,y+40,23,'#24473e','start',true);
+ const canonical=`https://tilessurvive.net/${locale}/eras/nuclear-age/`;
+ parts.push(`<a href="${canonical}" target="_blank">`);text(canonical,68,y+70,16,'#24473e','start',false,900);parts.push('</a>');
  text(`Lv30 → 1 / 2 / 3  ·  ${model.client.version}`,1012,y+40,17,'#536b60','end');
- const height=Math.ceil((y+73)/10)*10;
+ const height=Math.ceil((y+103)/10)*10;
  const defs=[...images].map(([src,id])=>`<symbol id="${id}" viewBox="0 0 1 1"><image width="1" height="1" preserveAspectRatio="xMidYMid meet" href="${embeddedImage(src)}"/></symbol>`).join('');
  return `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1080" height="${height}" viewBox="0 0 1080 ${height}" lang="${esc(loc.htmlLang)}" role="img" aria-labelledby="poster-title poster-desc"><title id="poster-title">${esc(title)}</title><desc id="poster-desc">${esc([help,c.scopeNote,showFirstZero?c.firstUpgradeFreeNote:'',marked.length?c.powerPlantSharedNote:''].filter(Boolean).join(' '))}</desc><metadata id="nuclear-fuel-projection">${esc(JSON.stringify(model))}</metadata><defs>${defs}</defs><g font-family="Malgun Gothic, Arial, Noto Sans, sans-serif"><rect id="poster-background" width="1080" height="${height}" fill="#f4f1e6"/>${parts.join('')}</g></svg>\n`;
 }
