@@ -92,7 +92,9 @@
     "build:buildings:unified": "node scripts/build-buildings-unified.js",
     "test:buildings:unified": "node --test scripts/test-building-unified.js scripts/test-building-unified-runtime.js scripts/test-buildings-unified-publication.js scripts/test-buildings-unified-regeneration.js scripts/test-v4-building-projection.js scripts/test-v4-economy-unified.js",
     "sync:buildings:v4": "node scripts/sync-v4-building-projection.js --write",
-    "test:analytics": "node --test scripts/test-analytics-contract.js scripts/test-analytics-privacy.js scripts/test-analytics-instrumentation.js scripts/test-analytics-invariants.js scripts/test-v3-affiliate.js scripts/test-v61-ten.js scripts/test-site-invariants.js"
+    "test:analytics": "node --test scripts/test-analytics-contract.js scripts/test-analytics-privacy.js scripts/test-analytics-instrumentation.js scripts/test-analytics-invariants.js scripts/test-v3-affiliate.js scripts/test-v61-ten.js scripts/test-site-invariants.js",
+    "build:answers": "node scripts/build-answer-guides.js && node scripts/build-v3-search.js && node scripts/build-v6-system.js && node scripts/build-site-identity.js",
+    "test:answers": "node --test scripts/test-answer-*.js"
   },
   "keywords": [],
   "author": "",

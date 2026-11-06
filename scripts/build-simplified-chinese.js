@@ -271,6 +271,7 @@ function validateRouteManifest(groups) {
 // Pure page projection shared by staging and focused owner-regeneration tests.
 function localizePage(source,group,groups,{converter=createConverter(),router=makeRouter(groups),ui=L.readJSON(path.join(L.ROOT,'data/i18n/ui/zh-cn.json')),available=[...L.existing,TARGET]}={}) {
   source=require('./build-v6-system').strip(source);
+  source=require('./answer-guide-content').validateAndStrip(source,'zh-tw',group.routes['zh-tw']);
   const buildingMatch=group.id?.match(/^buildings\/([^/]+)\/$/),buildingOwner=require('./build-buildings-unified');
   const buildingSlug=buildingMatch&&buildingOwner.slugs.includes(buildingMatch[1])?buildingMatch[1]:null;
   if(buildingSlug){const sourceModel=parseHTML(source).document.querySelector('[data-building-system-model]');if(sourceModel&&JSON.parse(sourceModel.textContent).buildings.every(b=>b.profiles.length===1&&b.profiles[0].id==='unified'))buildingOwner.validateOwnership(source,'zh-tw',buildingSlug);}
@@ -335,6 +336,7 @@ function localizePage(source,group,groups,{converter=createConverter(),router=ma
     const enhanced=enhance(document,TARGET,group,available,{...ui,featureCopies:{...features,...ui.featureCopies}},{preview:true});
     let native=nuclearGuide?Nuclear.project(enhanced,TARGET,targetRoute):nuclearLink?Nuclear.projectLinks(enhanced,TARGET,targetRoute):enhanced;
     if(buildingSlug)native=buildingOwner.project(require('./build-v6-system').strip(native),TARGET,buildingSlug);
+    native=require('./answer-guide-content').project(native,TARGET,targetRoute);
     const html=require('./build-v6-system').project(native,TARGET,targetRoute);
     return {html,sourceFile,numericJSONLeaves,protectedPrograms,localizedPrograms,ids:beforeIds.length,media:beforeMedia.length,featureCopies:Object.keys(features)};
 }

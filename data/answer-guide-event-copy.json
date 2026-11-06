@@ -1,0 +1,236 @@
+{
+  "schemaVersion": 1,
+  "locales": {
+    "en": {
+      "title": "{event}: daily base points and reward-target example",
+      "question": "How many points do actions give on event day {day} ({theme})?",
+      "pointSentence": "{event}, {profiles}, event day {day}: {action} gives {points} base points.",
+      "sharedProfiles": "The listed one-unit actions have the same base rates in these profiles: {profiles}.",
+      "exampleTitle": "Example: how many units reach {target} points?",
+      "example": "With {current} existing points, reaching {target} points through this action alone requires {quantity} units: {action}. The calculated total is {total} points.",
+      "rounding": "Round up to a whole action unit: {target} ÷ {rate} → {quantity}. With {previousQuantity} units, the total is only {previousTotal} points.",
+      "action": "Action and one-unit amount",
+      "tableCaption": "{event} · {profiles} · day {day} · base points before bonuses"
+    },
+    "ko": {
+      "title": "{event} 일차별 기본 점수와 목표 보상 계산 예제",
+      "question": "이벤트 {day}일차({theme}) 행동별 점수는 얼마인가요?",
+      "pointSentence": "{event} {day}일차({profiles})의 기본 점수: {action} → {points}점.",
+      "sharedProfiles": "표에 나온 단위 행동은 {profiles}에서 기본 점수가 같습니다.",
+      "exampleTitle": "예제: {target}점까지 몇 개가 필요한가요?",
+      "example": "현재 {current}점에서 다음 행동을 {quantity}회 반복하면 {total}점으로 목표 {target}점에 도달합니다: {action}.",
+      "rounding": "행동 단위는 올림합니다: {target} ÷ {rate} → {quantity}. {previousQuantity}개라면 {previousTotal}점으로 부족합니다.",
+      "action": "행동과 1단위 기준",
+      "tableCaption": "{event} · {profiles} · {day}일차 · 보너스 전 기본 점수"
+    },
+    "ja": {
+      "title": "{event}の日別基本ポイントと報酬目標の計算例",
+      "question": "イベント{day}日目（{theme}）の行動で何ポイント獲得できますか？",
+      "pointSentence": "{event}、{profiles}、イベント{day}日目：{action}で基本{points}ポイントを獲得します。",
+      "sharedProfiles": "次のプロファイルでは、表の単位行動ごとの基本ポイントが同じです：{profiles}。",
+      "exampleTitle": "例：{target}ポイントに達するには何単位必要ですか？",
+      "example": "現在{current}ポイントから、この行動だけで{target}ポイントに達するには、{action}を{quantity}単位分行います。計算結果は{total}ポイントです。",
+      "rounding": "行動単位に切り上げます：{target} ÷ {rate} → {quantity}。{previousQuantity}単位では{previousTotal}ポイントにとどまります。",
+      "action": "行動と1単位の基準",
+      "tableCaption": "{event} · {profiles} · {day}日目 · ボーナス適用前の基本ポイント"
+    },
+    "zh-tw": {
+      "title": "{event}每日基礎積分與獎勵目標計算範例",
+      "question": "活動第{day}日（{theme}）各項行動可獲得多少積分？",
+      "pointSentence": "{event}，{profiles}，活動第{day}日：{action}可獲得{points}基礎積分。",
+      "sharedProfiles": "下列設定中，表列單位行動的基礎積分相同：{profiles}。",
+      "exampleTitle": "範例：達到{target}積分需要多少單位？",
+      "example": "目前{current}積分，若僅透過此行動達到{target}積分，需要{quantity}個單位：{action}。計算結果為{total}積分。",
+      "rounding": "行動單位須無條件進位：{target} ÷ {rate} → {quantity}。{previousQuantity}個單位只有{previousTotal}積分。",
+      "action": "行動與單位基準",
+      "tableCaption": "{event} · {profiles} · 第{day}日 · 加成前基礎積分"
+    },
+    "zh-cn": {
+      "title": "{event}每日基础积分与奖励目标计算示例",
+      "question": "活动第{day}日（{theme}）各项行动可获得多少积分？",
+      "pointSentence": "{event}，{profiles}，活动第{day}日：{action}可获得{points}基础积分。",
+      "sharedProfiles": "下列配置中，表列单位行动的基础积分相同：{profiles}。",
+      "exampleTitle": "示例：达到{target}积分需要多少单位？",
+      "example": "当前{current}积分，若仅通过此行动达到{target}积分，需要{quantity}个单位：{action}。计算结果为{total}积分。",
+      "rounding": "行动单位向上取整：{target} ÷ {rate} → {quantity}。{previousQuantity}个单位只有{previousTotal}积分。",
+      "action": "行动与单位基准",
+      "tableCaption": "{event} · {profiles} · 第{day}日 · 加成前基础积分"
+    },
+    "de": {
+      "title": "{event}: tägliche Basispunkte und Beispiel für ein Belohnungsziel",
+      "question": "Wie viele Punkte bringen Aktionen an Eventtag {day} ({theme})?",
+      "pointSentence": "{event}, {profiles}, Eventtag {day}: {action} bringt {points} Basispunkte.",
+      "sharedProfiles": "Die aufgeführten Aktionen pro Einheit haben in diesen Profilen dieselben Basispunkte: {profiles}.",
+      "exampleTitle": "Beispiel: Wie viele Einheiten erreichen {target} Punkte?",
+      "example": "Bei {current} vorhandenen Punkten sind für {target} Punkte allein durch diese Aktion {quantity} Einheiten nötig: {action}. Das berechnete Ergebnis beträgt {total} Punkte.",
+      "rounding": "Auf ganze Aktionseinheiten aufrunden: {target} ÷ {rate} → {quantity}. Mit {previousQuantity} Einheiten sind es nur {previousTotal} Punkte.",
+      "action": "Aktion und Menge je Einheit",
+      "tableCaption": "{event} · {profiles} · Tag {day} · Basispunkte vor Boni"
+    },
+    "fr": {
+      "title": "{event} : points de base par jour et exemple d’objectif de récompense",
+      "question": "Combien de points rapportent les actions du jour {day} ({theme}) ?",
+      "pointSentence": "{event}, {profiles}, jour {day} : {action} rapporte {points} points de base.",
+      "sharedProfiles": "Les actions unitaires du tableau ont les mêmes points de base dans ces profils : {profiles}.",
+      "exampleTitle": "Exemple : combien d’unités pour atteindre {target} points ?",
+      "example": "Avec {current} points actuels, atteindre {target} points par cette seule action nécessite {quantity} unités : {action}. Le total calculé est de {total} points.",
+      "rounding": "Arrondir au nombre entier supérieur d’unités : {target} ÷ {rate} → {quantity}. Avec {previousQuantity} unités, le total n’est que de {previousTotal} points.",
+      "action": "Action et quantité unitaire",
+      "tableCaption": "{event} · {profiles} · jour {day} · points de base avant bonus"
+    },
+    "es": {
+      "title": "{event}: puntos base diarios y ejemplo de objetivo de recompensa",
+      "question": "¿Cuántos puntos dan las acciones del día {day} ({theme})?",
+      "pointSentence": "{event}, {profiles}, día {day}: {action} da {points} puntos base.",
+      "sharedProfiles": "Las acciones unitarias de la tabla tienen los mismos puntos base en estos perfiles: {profiles}.",
+      "exampleTitle": "Ejemplo: ¿cuántas unidades hacen falta para alcanzar {target} puntos?",
+      "example": "Con {current} puntos actuales, alcanzar {target} puntos solo con esta acción requiere {quantity} unidades: {action}. El total calculado es de {total} puntos.",
+      "rounding": "Redondea hacia arriba a unidades enteras: {target} ÷ {rate} → {quantity}. Con {previousQuantity} unidades, el total es solo de {previousTotal} puntos.",
+      "action": "Acción y cantidad por unidad",
+      "tableCaption": "{event} · {profiles} · día {day} · puntos base antes de bonificaciones"
+    },
+    "it": {
+      "title": "{event}: punti base giornalieri ed esempio di obiettivo ricompensa",
+      "question": "Quanti punti danno le azioni del giorno {day} ({theme})?",
+      "pointSentence": "{event}, {profiles}, giorno {day}: {action} fornisce {points} punti base.",
+      "sharedProfiles": "Le azioni per unità elencate hanno gli stessi punti base in questi profili: {profiles}.",
+      "exampleTitle": "Esempio: quante unità servono per raggiungere {target} punti?",
+      "example": "Con {current} punti attuali, raggiungere {target} punti solo con questa azione richiede {quantity} unità: {action}. Il totale calcolato è {total} punti.",
+      "rounding": "Arrotonda per eccesso a unità intere: {target} ÷ {rate} → {quantity}. Con {previousQuantity} unità, il totale è solo {previousTotal} punti.",
+      "action": "Azione e quantità per unità",
+      "tableCaption": "{event} · {profiles} · giorno {day} · punti base prima dei bonus"
+    },
+    "pt": {
+      "title": "{event}: pontos básicos por dia e exemplo de meta de recompensa",
+      "question": "Quantos pontos rendem as ações no dia {day} ({theme})?",
+      "pointSentence": "{event}, {profiles}, dia {day}: {action} rende {points} pontos básicos.",
+      "sharedProfiles": "As ações unitárias listadas têm os mesmos pontos básicos nestes perfis: {profiles}.",
+      "exampleTitle": "Exemplo: quantas unidades para atingir {target} pontos?",
+      "example": "Com {current} pontos atuais, atingir {target} pontos apenas com esta ação exige {quantity} unidades: {action}. O total calculado é {total} pontos.",
+      "rounding": "Arredonde para cima em unidades inteiras: {target} ÷ {rate} → {quantity}. Com {previousQuantity} unidades, o total é apenas {previousTotal} pontos.",
+      "action": "Ação e quantidade por unidade",
+      "tableCaption": "{event} · {profiles} · dia {day} · pontos básicos antes dos bônus"
+    },
+    "nl": {
+      "title": "{event}: dagelijkse basispunten en voorbeeld van een beloningsdoel",
+      "question": "Hoeveel punten leveren acties op evenementdag {day} ({theme}) op?",
+      "pointSentence": "{event}, {profiles}, evenementdag {day}: {action} levert {points} basispunten op.",
+      "sharedProfiles": "De genoemde acties per eenheid hebben in deze profielen dezelfde basispunten: {profiles}.",
+      "exampleTitle": "Voorbeeld: hoeveel eenheden zijn nodig voor {target} punten?",
+      "example": "Met {current} bestaande punten zijn {quantity} eenheden nodig om alleen met deze actie {target} punten te bereiken: {action}. Het berekende totaal is {total} punten.",
+      "rounding": "Rond naar boven af op hele actie-eenheden: {target} ÷ {rate} → {quantity}. Met {previousQuantity} eenheden is het totaal slechts {previousTotal} punten.",
+      "action": "Actie en hoeveelheid per eenheid",
+      "tableCaption": "{event} · {profiles} · dag {day} · basispunten vóór bonussen"
+    },
+    "pl": {
+      "title": "{event}: dzienne punkty bazowe i przykład celu nagrody",
+      "question": "Ile punktów dają działania w dniu {day} ({theme})?",
+      "pointSentence": "{event}, {profiles}, dzień {day}: {action} daje {points} punktów bazowych.",
+      "sharedProfiles": "Wymienione działania jednostkowe mają takie same punkty bazowe w tych profilach: {profiles}.",
+      "exampleTitle": "Przykład: ile jednostek potrzeba do {target} punktów?",
+      "example": "Przy obecnych {current} punktach osiągnięcie {target} punktów wyłącznie tą czynnością wymaga {quantity} jednostek: {action}. Obliczony wynik to {total} punktów.",
+      "rounding": "Zaokrąglij w górę do pełnych jednostek: {target} ÷ {rate} → {quantity}. Przy {previousQuantity} jednostkach wynik to tylko {previousTotal} punktów.",
+      "action": "Działanie i ilość jednostkowa",
+      "tableCaption": "{event} · {profiles} · dzień {day} · punkty bazowe przed premiami"
+    },
+    "sv": {
+      "title": "{event}: dagliga baspoäng och exempel på belöningsmål",
+      "question": "Hur många poäng ger handlingar på evenemangsdag {day} ({theme})?",
+      "pointSentence": "{event}, {profiles}, evenemangsdag {day}: {action} ger {points} baspoäng.",
+      "sharedProfiles": "De listade handlingarna per enhet har samma baspoäng i dessa profiler: {profiles}.",
+      "exampleTitle": "Exempel: hur många enheter behövs för {target} poäng?",
+      "example": "Med {current} befintliga poäng krävs {quantity} enheter för att nå {target} poäng enbart med denna handling: {action}. Den beräknade summan är {total} poäng.",
+      "rounding": "Avrunda uppåt till hela handlingsenheter: {target} ÷ {rate} → {quantity}. Med {previousQuantity} enheter blir summan bara {previousTotal} poäng.",
+      "action": "Handling och mängd per enhet",
+      "tableCaption": "{event} · {profiles} · dag {day} · baspoäng före bonusar"
+    },
+    "nb": {
+      "title": "{event}: daglige grunnpoeng og eksempel på belønningsmål",
+      "question": "Hvor mange poeng gir handlinger på arrangementsdag {day} ({theme})?",
+      "pointSentence": "{event}, {profiles}, arrangementsdag {day}: {action} gir {points} grunnpoeng.",
+      "sharedProfiles": "De oppførte handlingene per enhet har samme grunnpoeng i disse profilene: {profiles}.",
+      "exampleTitle": "Eksempel: hvor mange enheter trengs for {target} poeng?",
+      "example": "Med {current} poeng fra før kreves {quantity} enheter for å nå {target} poeng bare med denne handlingen: {action}. Beregnet sum er {total} poeng.",
+      "rounding": "Rund opp til hele handlingsenheter: {target} ÷ {rate} → {quantity}. Med {previousQuantity} enheter blir summen bare {previousTotal} poeng.",
+      "action": "Handling og mengde per enhet",
+      "tableCaption": "{event} · {profiles} · dag {day} · grunnpoeng før bonuser"
+    },
+    "ru": {
+      "title": "{event}: базовые очки по дням и пример достижения награды",
+      "question": "Сколько очков дают действия в день {day} ({theme})?",
+      "pointSentence": "{event}, {profiles}, день {day}: {action} даёт {points} базовых очков.",
+      "sharedProfiles": "У перечисленных единичных действий одинаковые базовые очки в этих профилях: {profiles}.",
+      "exampleTitle": "Пример: сколько единиц нужно для {target} очков?",
+      "example": "При текущих {current} очках для достижения {target} очков только этим действием нужно {quantity} единиц: {action}. Расчётный итог — {total} очков.",
+      "rounding": "Округляйте число действий вверх: {target} ÷ {rate} → {quantity}. При {previousQuantity} единицах получится только {previousTotal} очков.",
+      "action": "Действие и единичное количество",
+      "tableCaption": "{event} · {profiles} · день {day} · базовые очки без бонусов"
+    },
+    "tr": {
+      "title": "{event}: günlük temel puanlar ve ödül hedefi örneği",
+      "question": "Etkinliğin {day}. gününde ({theme}) eylemler kaç puan verir?",
+      "pointSentence": "{event}, {profiles}, etkinliğin {day}. günü: {action}, {points} temel puan verir.",
+      "sharedProfiles": "Listelenen birim eylemlerin temel puanları şu profillerde aynıdır: {profiles}.",
+      "exampleTitle": "Örnek: {target} puana ulaşmak için kaç birim gerekir?",
+      "example": "Mevcut {current} puandan yalnızca bu eylemle {target} puana ulaşmak için {quantity} birim gerekir: {action}. Hesaplanan toplam {total} puandır.",
+      "rounding": "Tam eylem birimine yukarı yuvarlayın: {target} ÷ {rate} → {quantity}. {previousQuantity} birimle toplam yalnızca {previousTotal} puan olur.",
+      "action": "Eylem ve birim miktarı",
+      "tableCaption": "{event} · {profiles} · {day}. gün · bonuslardan önce temel puanlar"
+    },
+    "id": {
+      "title": "{event}: poin dasar harian dan contoh target hadiah",
+      "question": "Berapa poin dari tindakan pada hari acara {day} ({theme})?",
+      "pointSentence": "{event}, {profiles}, hari acara {day}: {action} memberikan {points} poin dasar.",
+      "sharedProfiles": "Tindakan per unit yang tercantum memiliki poin dasar yang sama dalam profil berikut: {profiles}.",
+      "exampleTitle": "Contoh: berapa unit untuk mencapai {target} poin?",
+      "example": "Dengan {current} poin saat ini, mencapai {target} poin melalui tindakan ini saja memerlukan {quantity} unit: {action}. Total hasil hitungan adalah {total} poin.",
+      "rounding": "Bulatkan ke atas ke unit tindakan utuh: {target} ÷ {rate} → {quantity}. Dengan {previousQuantity} unit, totalnya hanya {previousTotal} poin.",
+      "action": "Tindakan dan jumlah per unit",
+      "tableCaption": "{event} · {profiles} · hari {day} · poin dasar sebelum bonus"
+    },
+    "ms": {
+      "title": "{event}: mata asas harian dan contoh sasaran ganjaran",
+      "question": "Berapa mata bagi tindakan pada hari acara {day} ({theme})?",
+      "pointSentence": "{event}, {profiles}, hari acara {day}: {action} memberikan {points} mata asas.",
+      "sharedProfiles": "Tindakan setiap unit yang disenaraikan mempunyai mata asas yang sama dalam profil ini: {profiles}.",
+      "exampleTitle": "Contoh: berapa unit untuk mencapai {target} mata?",
+      "example": "Dengan {current} mata semasa, mencapai {target} mata melalui tindakan ini sahaja memerlukan {quantity} unit: {action}. Jumlah yang dikira ialah {total} mata.",
+      "rounding": "Bundarkan ke atas kepada unit tindakan penuh: {target} ÷ {rate} → {quantity}. Dengan {previousQuantity} unit, jumlahnya hanya {previousTotal} mata.",
+      "action": "Tindakan dan kuantiti seunit",
+      "tableCaption": "{event} · {profiles} · hari {day} · mata asas sebelum bonus"
+    },
+    "vi": {
+      "title": "{event}: điểm cơ bản mỗi ngày và ví dụ mục tiêu phần thưởng",
+      "question": "Hành động ở ngày sự kiện {day} ({theme}) cho bao nhiêu điểm?",
+      "pointSentence": "{event}, {profiles}, ngày sự kiện {day}: {action} cho {points} điểm cơ bản.",
+      "sharedProfiles": "Các hành động đơn vị trong bảng có cùng điểm cơ bản ở các cấu hình sau: {profiles}.",
+      "exampleTitle": "Ví dụ: cần bao nhiêu đơn vị để đạt {target} điểm?",
+      "example": "Với {current} điểm hiện có, để đạt {target} điểm chỉ bằng hành động này cần {quantity} đơn vị: {action}. Tổng điểm tính được là {total}.",
+      "rounding": "Làm tròn lên số đơn vị hành động nguyên: {target} ÷ {rate} → {quantity}. Với {previousQuantity} đơn vị, tổng chỉ đạt {previousTotal} điểm.",
+      "action": "Hành động và lượng cho mỗi đơn vị",
+      "tableCaption": "{event} · {profiles} · ngày {day} · điểm cơ bản trước thưởng"
+    },
+    "th": {
+      "title": "{event}: คะแนนพื้นฐานรายวันและตัวอย่างเป้าหมายรางวัล",
+      "question": "การกระทำในวันที่ {day} ของกิจกรรม ({theme}) ได้กี่คะแนน?",
+      "pointSentence": "{event}, {profiles}, วันที่ {day} ของกิจกรรม: {action} ได้คะแนนพื้นฐาน {points} คะแนน",
+      "sharedProfiles": "การกระทำต่อหน่วยในตารางมีคะแนนพื้นฐานเท่ากันในโปรไฟล์เหล่านี้: {profiles}",
+      "exampleTitle": "ตัวอย่าง: ต้องใช้กี่หน่วยเพื่อให้ถึง {target} คะแนน?",
+      "example": "จากคะแนนปัจจุบัน {current} หากทำเฉพาะการกระทำนี้เพื่อให้ถึง {target} คะแนน ต้องใช้ {quantity} หน่วย: {action} ผลรวมที่คำนวณได้คือ {total} คะแนน",
+      "rounding": "ปัดจำนวนหน่วยการกระทำขึ้นเป็นจำนวนเต็ม: {target} ÷ {rate} → {quantity} หากใช้ {previousQuantity} หน่วย จะได้เพียง {previousTotal} คะแนน",
+      "action": "การกระทำและปริมาณต่อหนึ่งหน่วย",
+      "tableCaption": "{event} · {profiles} · วันที่ {day} · คะแนนพื้นฐานก่อนโบนัส"
+    },
+    "ar": {
+      "title": "{event}: النقاط الأساسية اليومية ومثال لهدف المكافأة",
+      "question": "كم نقطة تمنح الأفعال في يوم الحدث {day} ({theme})؟",
+      "pointSentence": "{event}، {profiles}، يوم الحدث {day}: يمنح {action} عدد {points} من النقاط الأساسية.",
+      "sharedProfiles": "للأفعال الفردية المدرجة المعدلات الأساسية نفسها في هذه الملفات: {profiles}.",
+      "exampleTitle": "مثال: كم وحدة تلزم للوصول إلى {target} نقطة؟",
+      "example": "مع {current} نقطة حالية، يتطلب الوصول إلى {target} نقطة بهذا الفعل وحده {quantity} وحدة: {action}. المجموع المحسوب هو {total} نقطة.",
+      "rounding": "قرّب إلى عدد صحيح أعلى من وحدات الفعل: {target} ÷ {rate} → {quantity}. مع {previousQuantity} وحدة، يبلغ المجموع {previousTotal} نقطة فقط.",
+      "action": "الفعل والكمية لكل وحدة",
+      "tableCaption": "{event} · {profiles} · اليوم {day} · النقاط الأساسية قبل المكافآت"
+    }
+  }
+}
