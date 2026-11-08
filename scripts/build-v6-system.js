@@ -66,6 +66,8 @@ function fontFaces(root=ROOT){
 function assets(root=ROOT){return fontFaces(root)+ASSETS.map(file=>{const url='/'+file+'?v='+digest(fs.readFileSync(path.join(root,file)));return file.endsWith('.css')?'<link data-v6-owned="system-assets" rel="stylesheet" href="'+url+'">':'<script data-v6-owned="system-assets" defer src="'+url+'"></script>';}).join('');}
 function project(input,locale,route='/'+locale+'/',options={}){
  if(!locales.includes(locale))throw Error('Unsupported V6 locale: '+locale);
+ // The root already includes the finished V6 home, projected by build-root-home.
+ if(route==='/')return input;
  const html=strip(input);
  if(!route.startsWith('/'+locale+'/')||!/<main\b/i.test(html)||!/<\/head>/i.test(html)||/<meta\b[^>]*http-equiv=["']refresh["']/i.test(html))return html;
  const block='<!-- TS_V6_SYSTEM_BEGIN -->'+(options.assets||assets(options.root))+'<!-- TS_V6_SYSTEM_END -->';
