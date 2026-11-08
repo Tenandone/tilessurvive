@@ -14,9 +14,11 @@ test('all 21 locale pages retain exact unowned HTML bytes and rebuild determinis
  assert(count>2500);for(const type of ['home','hero-atlas','hero-detail','pet-atlas','pet-detail','tools','buildings','building-detail','research','database','codes','topup'])assert(types.has(type),type);
 });
 
-test('project requires a real locale content page and preserves redirects and language entry',()=>{
+test('V6 presentation applies to locale content routes and preserves legacy redirects',()=>{
  const template='<html lang="en"><head><title>A</title></head><body><main>Text</main></body></html>';
  assert.equal(B.project(template,'en','/'),template);
+ const independentlyOwnedHome=fs.readFileSync(path.join(B.ROOT,'index.html'),'utf8');
+ assert.equal(B.project(independentlyOwnedHome,'en','/'),independentlyOwnedHome,'Generic V6 projection must preserve the complete root home');
  assert.equal(B.project(template.replace('<main>Text</main>',''),'en','/en/'),template.replace('<main>Text</main>',''));
  const redirect=template.replace('</head>','<meta http-equiv="refresh" content="0;url=/en/"></head>');assert.equal(B.project(redirect,'en','/en/old/'),redirect);
  assert.throws(()=>B.project(template,'invalid'),/Unsupported V6 locale/);
@@ -27,10 +29,12 @@ test('file build applies only locale index pages, supports dry run and has a zer
  const temp=fs.mkdtempSync(path.join(os.tmpdir(),'ts-v6-test-'));
  try{for(const asset of B.ASSETS){const target=path.join(temp,asset);fs.mkdirSync(path.dirname(target),{recursive:true});fs.copyFileSync(path.join(B.ROOT,asset),target);}
   const input='<html lang="en"><head><title>A</title><script type="application/json">{"cost":3049}</script></head><body><main id="main">A</main></body></html>';
+  const rootHome=fs.readFileSync(path.join(B.ROOT,'index.html'),'utf8');
+  assert(rootHome.includes('id="ts-root-home"'),'Expected the independently generated root homepage');
   for(const code of B.locales){fs.mkdirSync(path.join(temp,code),{recursive:true});fs.writeFileSync(path.join(temp,code,'index.html'),input);}
-  fs.writeFileSync(path.join(temp,'index.html'),input);fs.mkdirSync(path.join(temp,'components'));fs.writeFileSync(path.join(temp,'components','index.html'),input);
+  fs.writeFileSync(path.join(temp,'index.html'),rootHome);fs.mkdirSync(path.join(temp,'components'));fs.writeFileSync(path.join(temp,'components','index.html'),input);
   const first=B.build({root:temp,apply:false});assert.equal(first.changed,21);assert.equal(fs.readFileSync(path.join(temp,'en/index.html'),'utf8'),input);
-  const applied=B.build({root:temp});assert.equal(applied.changed,21);assert.equal(B.build({root:temp}).changed,0);assert.equal(fs.readFileSync(path.join(temp,'index.html'),'utf8'),input);assert.equal(fs.readFileSync(path.join(temp,'components/index.html'),'utf8'),input);
+  const applied=B.build({root:temp});assert.equal(applied.changed,21);assert.equal(B.build({root:temp}).changed,0);assert.equal(fs.readFileSync(path.join(temp,'index.html'),'utf8'),rootHome);assert.equal(fs.readFileSync(path.join(temp,'components/index.html'),'utf8'),input);
  }finally{assert(temp.startsWith(path.join(os.tmpdir(),'ts-v6-test-')));fs.rmSync(temp,{recursive:true,force:true});}
 });
 

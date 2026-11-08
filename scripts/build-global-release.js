@@ -4,7 +4,7 @@
 const fs=require('node:fs'),path=require('node:path'),assert=require('node:assert/strict'),vm=require('node:vm');
 const {parseHTML}=require('linkedom');
 const L=require('./lib/global-localization'),G=require('./build-global-locales');
-const {rootDocument}=require('./build-global-navigation');
+const RootHome=require('./build-root-home');
 const DELIVERY=path.resolve(L.ROOT,'../global-language-delivery-20261104'),STAGE=path.join(DELIVERY,'staging');
 const literal=/"(?:\\.|[^"\\\r\n])*"|'(?:\\.|[^'\\\r\n])*'/g;
 const uiIds=new Set(['ts-global-ui','ts-locale-routes']);
@@ -103,7 +103,7 @@ function prepare({locales,apply=false,rebuild=true}={}) {
   }));
   if(rebuild){const ordinary=selected.filter(c=>c!=='zh-cn');if(ordinary.length)G.build({locales:ordinary});if(selected.includes('zh-cn')){const cn=require('./build-simplified-chinese');cn.build();cn.selfTest();}}
   const groups=L.routeGroups(),available=L.registry.locales.filter(l=>L.existing.has(l.code)||l.status==='published'||selected.includes(l.code)).map(l=>l.code);
-  const plans=[],validation={},newPages=new Map();
+  const plans=[],validation={},newPages=new Map(),homes=new Map();
   for(const code of selected){
     const cn=code==='zh-cn',report=L.readJSON(cn?path.join(L.ROOT,'data/i18n/messages/zh-cn-review.json'):path.join(DELIVERY,'translation-build-'+code+'.json'));
     assert.ok(report,'Missing translation report '+code);
@@ -129,16 +129,18 @@ function prepare({locales,apply=false,rebuild=true}={}) {
     validation[code]={pages:rows.length,immutableNumericBooleanNullValues:scalars,executablePrograms:programs,missing:0,errors:0,nativeSpeakerReview:false};
   }
   const nextRegistry=JSON.parse(JSON.stringify(L.registry));for(const l of nextRegistry.locales)if(selected.includes(l.code))l.status='published';
-  const runtimeFile=path.join(L.ROOT,'js/site-locales.js'),runtime=registryRuntime(fs.readFileSync(runtimeFile,'utf8'),nextRegistry);
+  const runtimeFile=path.join(L.ROOT,'js/site-locales.js'),runtime=registryRuntime(fs.readFileSync(runtimeFile,'utf8'),nextRegistry).replace(/\r\n/g,'\n');
   const runtimeHash=L.digest(runtime).slice(0,12);
   for(const code of available)for(const group of groups){
     const route=group.routes[code],file=path.join(L.ROOT,route.slice(1),'index.html');
     const d=parseHTML(newPages.get(route)||fs.readFileSync(file,'utf8')).document;
     const body=G.enhance(d,code,group,available,uiSnapshots.get(code).ui).replace(/(\/js\/site-locales\.js\?v=)[a-f0-9]+/g,'$1'+runtimeHash);
+    if(route==='/'+code+'/')homes.set(code,body);
     plans.push({file,body});
   }
-  const root=rootDocument(fs.readFileSync(path.join(L.ROOT,'index.html'),'utf8'),available).replace(/(\/js\/site-locales\.js\?v=)[a-f0-9]+/g,'$1'+runtimeHash);
-  plans.push({file:path.join(L.ROOT,'index.html'),body:root},{file:runtimeFile,body:runtime},{file:path.join(L.ROOT,'data/i18n/locales.json'),body:JSON.stringify(nextRegistry,null,2)+'\n'});
+  const root=RootHome.compile(L.ROOT,available,{homes,assetURLs:{'js/site-locales.js':'/js/site-locales.js?v='+runtimeHash}});
+  for(const [file,body] of root.files)plans.push({file:path.join(L.ROOT,file),body});
+  plans.push({file:path.join(L.ROOT,'index.html'),body:root.html},{file:runtimeFile,body:runtime},{file:path.join(L.ROOT,'data/i18n/locales.json'),body:JSON.stringify(nextRegistry,null,2)+'\n'});
   const xml=sitemap(fs.readFileSync(path.join(L.ROOT,'sitemap.xml'),'utf8'),groups.flatMap(g=>available.map(c=>L.publicOrigin+g.routes[c])));
   plans.push({file:path.join(L.ROOT,'sitemap.xml'),body:xml});
   plans.push(...require('./refresh-global-asset-versions').legacyPlans(new Set(plans.map(p=>p.file))));

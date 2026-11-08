@@ -4,159 +4,268 @@ const test = require('node:test');
 const assert = require('node:assert/strict');
 const fs = require('node:fs');
 const path = require('node:path');
-const crypto = require('node:crypto');
 const vm = require('node:vm');
-const { parseHTML } = require('linkedom');
-const { rootDocument } = require('./build-global-navigation');
-const { locales } = require('../data/i18n/locales.json');
+const crypto = require('node:crypto');
+const {parseHTML} = require('linkedom');
+const registry = require('../data/i18n/locales.json').locales.filter(l => l.status === 'published');
 
 const root = path.resolve(__dirname, '..');
 const origin = 'https://tilessurvive.net';
-const html = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
-const codes = locales.filter(locale => locale.status === 'published').map(locale => locale.code);
-const features = ['/ko/heroes/', '/ko/database/pet-system/', '/ko/buildings/', '/ko/tools/', '/ko/events/calendar/', '/ko/codes/'];
+const choiceKey = 'tiles.locale.explicit.v1';
+const read = file => fs.readFileSync(path.join(root, file), 'utf8');
+const dom = source => parseHTML(source).document;
+const home = code => dom(read(code + '/index.html'));
+const metadata = (document, attr, key) => document.querySelector(`meta[${attr}="${key}"]`)?.content;
+const canonical = document => document.querySelector('link[rel="canonical"]')?.href;
+const manifests = document => JSON.parse(document.getElementById('ts-root-home').textContent);
+const normalText = node => node.textContent.replace(/\s+/g, ' ').trim();
 
-function visit({ preferred = null, languages, language, available, blockedStorage = false } = {}) {
-  const document = parseHTML(available ? rootDocument(html, available) : html).document;
-  const navigation = [], writes = [], timers = [];
-  const location = {
-    origin, pathname: '/', search: '', hash: '',
-    get href() { return origin + '/'; },
-    set href(next) { navigation.push(String(next)); },
-    assign(next) { navigation.push(String(next)); },
-    replace(next) { navigation.push(String(next)); },
+// Compare the human-facing dashboard, its destinations and its calculation inputs
+// with the already-published localized home. Root-only metadata lives in the head.
+function dashboard(document, rootDestinations = false) {
+  const main = document.querySelector('main#main');
+  assert(main?.querySelector('[data-v5-home]'), 'A complete landing page is required');
+  return {
+    headings: [...main.querySelectorAll('h1,h2,h3')].map(normalText),
+    links: [...main.querySelectorAll('a[href]')].map(a => {
+      const href = a.getAttribute('href');
+      const localPrefix = '/' + document.documentElement.dataset.lang + '/#';
+      return [normalText(a), rootDestinations && href.startsWith(localPrefix) ? '/#' + href.slice(localPrefix.length) : href];
+    }),
+    images: [...main.querySelectorAll('img[src]')].map(img => [img.getAttribute('src'), img.getAttribute('alt')]),
+    configs: ['[data-v5-config]', '[data-gift-config]'].map(selector => JSON.parse(document.querySelector(selector).textContent)),
   };
-  const localStorage = {
-    getItem(key) {
-      if (blockedStorage) throw new Error('Storage unavailable');
-      return key === 'preferred_lang' ? preferred : null;
-    },
-    setItem(key, value) {
-      if (blockedStorage) throw new Error('Storage unavailable');
-      writes.push([key, value]);
-    },
-  };
-  const window = { document, navigator: { languages, language }, localStorage,
-    setTimeout(callback) { timers.push(callback); }, clearTimeout() {} };
-  const sandbox = { window, document, navigator: window.navigator, localStorage, URL, setTimeout: window.setTimeout, clearTimeout: window.clearTimeout };
-  const trackedLocation = { get: () => location, set: next => navigation.push(String(next)) };
-  Object.defineProperty(window, 'location', trackedLocation);
-  Object.defineProperty(sandbox, 'location', trackedLocation);
-  const context = vm.createContext(sandbox);
-  for (const script of document.querySelectorAll('script')) {
-    if (script.type && !/^(?:application|text)\/javascript$/i.test(script.type)) continue;
-    const src = script.getAttribute('src');
-    if (!src) vm.runInContext(script.textContent, context, { filename: 'index.html' });
-    else {
-      const url = new URL(src, origin);
-      if (url.origin !== origin) continue; // No external network or ad execution in this test.
-      const file = path.join(root, url.pathname.slice(1));
-      vm.runInContext(fs.readFileSync(file, 'utf8'), context, { filename: file });
-    }
-  }
-  document.dispatchEvent(new document.defaultView.Event('DOMContentLoaded'));
-  for (const callback of timers.slice()) callback();
-  return { document, navigation, writes };
 }
 
-function selectedRecommendation(document) {
-  return [...document.querySelectorAll('[data-root-locale][data-recommended]')].map(link => link.dataset.rootLocale);
+function checkAlternates(document) {
+  const found = [...document.querySelectorAll('link[rel="alternate"][hreflang]')].map(n => [n.hreflang,n.href]).sort();
+  const expected = registry.map(l => [l.hreflang, `${origin}/${l.code}/`]);
+  expected.push(['x-default', origin + '/']);
+  assert.deepEqual(found, expected.sort());
 }
 
-function activate(document, code, options = {}, prevented = false) {
-  const link = document.querySelector(`[data-root-locale="${code}"]`);
-  const event = new document.defaultView.Event('click', { bubbles: true, cancelable: true });
-  Object.assign(event, { button: 0, detail: 1, ...options });
-  if (prevented) event.preventDefault();
-  link.dispatchEvent(event);
-  return { href: link.getAttribute('href'), defaultPrevented: event.defaultPrevented };
-}
-
-test('saved or detected languages only recommend a published anchor on load', () => {
-  const scenarios = [
-    [{ preferred: 'de', languages: ['ko-KR'] }, 'de'],
-    [{ preferred: 'unsupported', languages: ['de-DE', 'en-US'] }, 'de'],
-    [{ languages: ['my-MM', 'ms-MY'] }, 'ms'],
-    [{ languages: ['no-NO'] }, 'nb'],
-    [{ languages: ['zh-Hans-CN'] }, 'zh-cn'],
-    [{ languages: ['zh-Hant-TW'] }, 'zh-tw'],
-    [{ languages: undefined, language: 'ko-KR' }, 'ko'],
-    [{ languages: ['my-MM'], language: 'my-MM' }, null],
-    [{ preferred: 'fr', languages: ['fr-FR','ko-KR'], available: ['en','ko','de'] }, 'ko'],
-    [{ preferred: 'de', languages: ['ko-KR'], blockedStorage: true }, 'ko'],
-  ];
-  for (const [inputs, recommendation] of scenarios) {
-    const page = visit(inputs);
-    assert.deepEqual(page.navigation, [], 'Loading the root must retain its URL');
-    assert.deepEqual(page.writes, [], 'A visit must not save an automatic choice');
-    assert.deepEqual(selectedRecommendation(page.document), recommendation ? [recommendation] : [], JSON.stringify(inputs));
-  }
-});
-
-test('an explicit choice retains normal anchor navigation and records the exact language', () => {
-  for (const [code, input] of [['zh-tw', { detail: 1 }], ['de', { detail: 0 }]]) {
-    const page = visit({ preferred: 'ko', languages: ['en-US'] });
-    assert.deepEqual(activate(page.document, code, input), { href: `/${code}/`, defaultPrevented: false });
-    assert.deepEqual(page.writes, [['preferred_lang', code]]);
-    assert.deepEqual(page.navigation, [], 'The browser should handle the activated href');
-  }
-  const blocked = visit({ blockedStorage: true, languages: ['ko-KR'] });
-  assert.deepEqual(activate(blocked.document, 'ar'), { href: '/ar/', defaultPrevented: false });
-  assert.deepEqual(blocked.navigation, []);
-});
-
-test('modified, middle and already-cancelled clicks preserve browser conventions', () => {
-  for (const modifiers of [{ ctrlKey: true }, { metaKey: true }, { shiftKey: true }, { altKey: true }, { button: 1 }]) {
-    const page = visit();
-    assert.equal(activate(page.document, 'ko', modifiers).defaultPrevented, false);
-    assert.deepEqual(page.writes, []);
-    assert.deepEqual(page.navigation, []);
-  }
-  const cancelled = visit();
-  assert.equal(activate(cancelled.document, 'ko', {}, true).defaultPrevented, true);
-  assert.deepEqual(cancelled.writes, []);
-  assert.deepEqual(cancelled.navigation, []);
-});
-
-function staticEntry(source, expectedCodes) {
-  const document = parseHTML(source).document;
-  const main = document.querySelector('main');
-  assert(main, 'The static entry must include its visible main content');
-  assert.match(main.querySelector('h1')?.textContent || '', /타일\s*서바이벌|Tiles\s*Survive/i);
-  assert(main.querySelector('p')?.textContent.trim(), 'Site introduction should be readable before JavaScript');
-  assert.doesNotMatch(main.textContent, /wait a moment to be redirected|preparing language redirect/i);
-  assert.equal(document.querySelectorAll('meta[http-equiv="refresh" i]').length, 0);
-  assert.deepEqual([...document.querySelectorAll('link[rel="canonical"]')].map(n => n.href), [origin + '/']);
-  assert(!/\b(noindex|none)\b/i.test(document.querySelector('meta[name="robots"]')?.content || ''));
-  const languageLinks = [...main.querySelectorAll('.lang-grid a[data-root-locale]')];
-  assert.deepEqual(languageLinks.map(a => a.dataset.rootLocale), expectedCodes);
-  const expectedAlternates = expectedCodes.map(code => {
-    const locale = locales.find(l => l.code === code);
-    const link = languageLinks.find(a => a.dataset.rootLocale === code);
-    assert.equal(link.getAttribute('href'), `/${code}/`);
-    assert.equal(link.getAttribute('hreflang'), locale.hreflang);
-    assert.equal(link.getAttribute('lang'), locale.htmlLang);
-    assert.equal(link.textContent.trim(), locale.nativeName);
-    assert(!link.closest('[hidden],[aria-hidden="true"]'));
-    assert(fs.existsSync(path.join(root, code, 'index.html')));
-    return [locale.hreflang, `${origin}/${code}/`];
-  });
-  expectedAlternates.push(['x-default', origin + '/']);
-  assert.deepEqual([...document.querySelectorAll('link[rel="alternate"][hreflang]')].map(n => [n.hreflang,n.href]).sort(), expectedAlternates.sort());
-  const actualFeatures = [...main.querySelectorAll('.feature-grid a[href]')].map(link => link.getAttribute('href'));
-  for (const href of features) {
-    assert(actualFeatures.includes(href), 'Missing static feature link '+href);
-    assert(fs.existsSync(path.join(root, href.slice(1), 'index.html')), 'Missing feature destination '+href);
+test('raw root HTML contains the complete English dashboard and 21 direct language links', () => {
+  const document = dom(read('index.html'));
+  assert(document.documentElement.hasAttribute('data-root-home'));
+  assert.equal(document.documentElement.lang, 'en');
+  assert.equal(canonical(document), origin + '/');
+  assert.equal(metadata(document, 'property', 'og:url'), origin + '/');
+  assert(!/\b(noindex|none)\b/i.test(metadata(document, 'name', 'robots') || ''));
+  assert.equal(document.querySelectorAll('meta[http-equiv="refresh" i],iframe').length, 0);
+  assert.deepEqual(dashboard(document), dashboard(home('en'), true));
+  checkAlternates(document);
+  const menu = [...document.querySelectorAll('header a[data-root-locale]')];
+  assert.equal(menu.length, 21);
+  for (const l of registry) {
+    const link = menu.find(a => a.dataset.rootLocale === l.code);
+    assert(link, l.code);
+    assert.equal(link.getAttribute('href'), `/${l.code}/`);
+    assert.equal(link.getAttribute('hreflang'), l.hreflang);
+    assert(link.textContent.includes(l.nativeName));
+    assert.equal(canonical(home(l.code)), `${origin}/${l.code}/`);
   }
   assert.equal(document.querySelectorAll('script[src*="adsbygoogle.js"]').length, 1);
-  const runtime = document.querySelector('script[src^="/js/root-language.js"]');
-  const digest = crypto.createHash('sha256').update(fs.readFileSync(path.join(root, 'js/root-language.js'))).digest('hex').slice(0,12);
-  assert.equal(runtime.getAttribute('src'), '/js/root-language.js?v=' + digest, 'Published root must reference the current language-selection runtime');
+  assert.equal(document.querySelectorAll('script[data-v3-ga-bootstrap]').length, 1);
+});
+
+test('the root manifest pins every published locale payload and each home runtime exactly once', () => {
+  const document = dom(read('index.html'));
+  const manifest = manifests(document);
+  assert.equal(manifest.schemaVersion, 1);
+  assert.equal(manifest.baseLocale, 'en');
+  assert.deepEqual(Object.keys(manifest.locales).sort(), registry.map(l => l.code).sort());
+  assert.equal(manifest.locales.en, null);
+  for (const l of registry.filter(l => l.code !== 'en')) {
+    const url = new URL(manifest.locales[l.code], origin);
+    assert.equal(url.origin, origin); assert.equal(url.pathname, `/data/root-home/${l.code}.json`);
+    const bytes = fs.readFileSync(path.join(root, url.pathname.slice(1)));
+    assert.equal(url.searchParams.get('v'), crypto.createHash('sha256').update(bytes).digest('hex').slice(0,12));
+    const data = JSON.parse(bytes);
+    assert.equal(data.schemaVersion, manifest.schemaVersion); assert.equal(data.version, manifest.version);
+    assert.equal(data.locale, l.code); assert.equal(data.lang, l.htmlLang); assert.equal(data.dir, l.dir);
+  }
+  const scripts = manifest.scripts.map(src => new URL(src, origin).pathname);
+  assert.equal(new Set(scripts).size, scripts.length);
+  for (const script of ['/js/analytics-contract.js','/js/root-home-analytics.js','/js/v3-affiliate.js','/js/v5-landing.js','/js/v6-system.js']) assert(scripts.includes(script), script);
+  assert(scripts.indexOf('/js/analytics-contract.js') < scripts.indexOf('/js/root-home-analytics.js'));
+  assert(scripts.indexOf('/js/root-home-analytics.js') < scripts.indexOf('/js/v3-affiliate.js'));
+  const initial = [...document.querySelectorAll('script[src]')].map(n => new URL(n.src, origin)).filter(u => u.origin === origin).map(u => u.pathname);
+  const earlyHelper='/js/home-form-state.js';
+  assert.deepEqual(initial, ['/js/site-locales.js',earlyHelper,'/js/root-language.js']);
+  assert(!scripts.includes(earlyHelper),'The form state helper must not start twice at the root');
+  const rootHelper=document.querySelector('script[src^="'+earlyHelper+'?"]').getAttribute('src');
+  for(const {code} of registry){
+    const sources=[...home(code).querySelectorAll('script[src]')].map(n=>n.getAttribute('src'));
+    const matches=sources.filter(src=>src.split('?')[0]===earlyHelper);
+    assert.deepEqual(matches,[rootHelper],code+' must load the same form state helper once');
+    assert.match(sources[sources.indexOf(rootHelper)+1],/^\/js\/v5-landing\.js\?v=[a-f0-9]{12}$/);
+  }
+  const updatedScripts = new Set(['/js/site-locales.js',earlyHelper,'/js/root-language.js','/js/root-home-analytics.js','/js/v5-landing.js']);
+  for (const src of [...manifest.scripts,...document.querySelectorAll('script[src^="/js/"]')].map(source => typeof source === 'string' ? source : source.src)) {
+    const url = new URL(src,origin);
+    if (!updatedScripts.has(url.pathname)) continue;
+    const file = read(url.pathname.slice(1));
+    const hash = body => crypto.createHash('sha256').update(body).digest('hex').slice(0,12);
+    assert([hash(file),hash(file.replaceAll('\r\n','\n'))].includes(url.searchParams.get('v')), 'Stale root script version '+url.pathname);
+  }
+});
+
+// A deterministic browser fixture exercises the actual loader and analytics code.
+// Other landing scripts only acknowledge load; real controls are exercised by their
+// own suites and the browser smoke test. No third-party request leaves this process.
+async function visit({pathname = '/', source, stored = {}, languages = ['en'], language, changePayload, changeManifest, corruptBytes = false, failFetch = false, blockedStorage = false, navigatorExtra = {}} = {}) {
+  const document = dom(source || read('index.html'));
+  const originalNodes = ['body','header.ts-header','main#main','[data-v5-home]','footer.ts-footer'].map(selector => [selector,document.querySelector(selector)]);
+  const reads = [], writes = [], requests = [], scripts = [], navigation = [];
+  const state = new Map(Object.entries(stored));
+  const alternateBodies = new Map();
+  const location = new URL(pathname, origin);
+  const trackedLocation = new Proxy(location, {
+    get(target, key) { return ['assign','replace'].includes(key) ? url => navigation.push(String(url)) : Reflect.get(target,key,target); },
+    set(target, key, value) { navigation.push([key,String(value)]); return true; },
+  });
+  const localStorage = {
+    getItem(key) { reads.push(key); if (blockedStorage) throw Error('Storage unavailable'); return state.get(key) ?? null; },
+    setItem(key, value) { if (blockedStorage) throw Error('Storage unavailable'); writes.push([key,value]); state.set(key,value); },
+    removeItem(key) { if (blockedStorage) throw Error('Storage unavailable'); state.delete(key); },
+  };
+  const fetch = async input => {
+    const url = new URL(input, origin); requests.push(url.href);
+    assert.equal(url.origin, origin); assert.match(url.pathname, /^\/data\/root-home\/[a-z-]+\.json$/);
+    if (failFetch) throw Error('Payload unavailable');
+    const text = alternateBodies.get(url.pathname) ?? read(url.pathname.slice(1));
+    const response = new Response(corruptBytes ? text + ' ' : text, {headers:{'Content-Type':'application/json'}});
+    Object.defineProperty(response, 'url', {value: url.href}); return response;
+  };
+  const navigator = {languages, language, ...navigatorExtra};
+  const window = {document,navigator,localStorage,fetch,location:trackedLocation,AbortController,TextEncoder,crypto:crypto.webcrypto,addEventListener(){},removeEventListener(){},setTimeout,clearTimeout};
+  const env = {window,document,navigator,localStorage,fetch,location:trackedLocation,URL,URLSearchParams,Promise,AbortController,TextDecoder,TextEncoder,crypto:crypto.webcrypto,setTimeout,clearTimeout,console};
+  const context = vm.createContext(env);
+  const execute = file => vm.runInContext(read(file), context, {filename:file});
+  const analyticsScripts = new Set(['/js/analytics-contract.js','/js/root-home-analytics.js','/js/v3-affiliate.js']);
+  const seen = new WeakSet();
+  function inserted(node) {
+    if (node?.tagName !== 'SCRIPT' || !node.src || seen.has(node)) return;
+    seen.add(node);
+    const url = new URL(node.src, origin);
+    if (url.origin !== origin) return;
+    scripts.push(url.pathname);
+    queueMicrotask(() => {
+      if (analyticsScripts.has(url.pathname)) execute(url.pathname.slice(1));
+      node.dispatchEvent(new document.defaultView.Event('load'));
+    });
+  }
+  for (const parent of [document.head, document.body]) {
+    const append = parent.append.bind(parent), appendChild = parent.appendChild.bind(parent);
+    parent.append = (...nodes) => {append(...nodes);nodes.forEach(inserted);};
+    parent.appendChild = node => {const result=appendChild(node);inserted(node);return result;};
+  }
+  if (changeManifest || changePayload) {
+    const node=document.getElementById('ts-root-home'), manifest=JSON.parse(node.textContent);
+    if (changePayload) {
+      const url = new URL(manifest.locales.ko,origin), data = JSON.parse(read(url.pathname.slice(1)));
+      changePayload(data);
+      const body=JSON.stringify(data)+'\n';alternateBodies.set(url.pathname,body);
+      // A matching content hash forces the test through semantic validation too.
+      manifest.locales.ko=url.pathname+'?v='+crypto.createHash('sha256').update(body).digest('hex').slice(0,12);
+    }
+    if(changeManifest)changeManifest(manifest);
+    node.textContent=JSON.stringify(manifest);
+  }
+  Object.defineProperty(document, 'readyState', {value:'complete', configurable:true});
+  const boot = document.querySelector('script[data-v3-ga-bootstrap]');
+  if (boot) vm.runInContext(boot.textContent, context);
+  execute('js/site-locales.js'); execute('js/home-form-state.js'); execute('js/root-language.js');
+  document.dispatchEvent(new document.defaultView.Event('DOMContentLoaded'));
+  const ready = await window.TS_ROOT_HOME_READY;
+  for(const [selector,original] of originalNodes) assert.equal(document.querySelector(selector),original,'Unexpected replacement of '+selector);
+  const calls = () => [...(window.dataLayer || [])].map(call => [...call]);
+  return {document,window,ready,requests,reads,writes,scripts,navigation,calls,execute};
 }
 
-test('published and regenerated roots expose native links and complete localized alternates without JavaScript', () => {
-  assert.equal(codes.length, 21);
-  staticEntry(html, codes);
-  staticEntry(rootDocument(html, codes), codes);
-  staticEntry(rootDocument(html, ['en','ko','zh-tw','de']), ['en','ko','zh-tw','de']);
+function assertHome(page, code) {
+  const l=registry.find(l=>l.code===code);
+  const localized = home(code);
+  assert.equal(page.document.documentElement.dataset.lang,code);
+  assert.equal(page.document.documentElement.lang,l.htmlLang);
+  assert.equal(page.document.documentElement.getAttribute('dir') || 'ltr',l.dir);
+  assert.deepEqual(dashboard(page.document),dashboard(localized, true),code+' dashboard or configuration mismatch');
+  assert.equal(page.document.title,localized.title);
+  for(const [attr,key] of [['name','description'],['property','og:title'],['property','og:description'],['property','og:locale']]) assert.equal(metadata(page.document,attr,key), metadata(localized,attr,key),code+' '+key);
+  const schema=JSON.parse(page.document.querySelector('script[type="application/ld+json"][data-v5-owned="metadata"]').textContent);
+  assert.equal(schema.url,origin+'/');assert.equal(schema['@id'],origin+'/#webpage');
+  assert.equal(metadata(page.document,'property','og:url'),origin+'/');
+  assert.equal(canonical(page.document),origin+'/'); checkAlternates(page.document);
+  assert.deepEqual(page.navigation,[]);
+}
+
+test('manual choice, browser priority, aliases and unsupported languages select consistent full homes', async () => {
+  const cases = [
+    [{stored:{[choiceKey]:'de',preferred_lang:'en'},languages:['ko-KR']},'de'],
+    [{stored:{preferred_lang:'ko'},languages:['my-MM','ar-EG']},'ar'],
+    [{stored:{[choiceKey]:'unsupported'},languages:['zh-Hant-TW']},'zh-tw'],
+    [{languages:['zh-Hans-CN']},'zh-cn'], [{languages:['no-NO']},'nb'],
+    [{languages:['my-MM']},'en'], [{pathname:'/index.html',languages:['en-US']},'en'],
+    [{blockedStorage:true,languages:['ko-KR']},'ko'],
+  ];
+  for (const [inputs,code] of cases) {
+    const page=await visit(inputs);
+    assertHome(page,code);
+    assert.equal(page.ready.locale,code);
+    assert(!page.reads.includes('preferred_lang'),'Old automatic preferences cannot represent an explicit choice');
+    assert.deepEqual(page.writes,[]);
+    assert.equal(page.requests.length,code==='en'?0:1);
+    assert.equal(new Set(page.scripts).size,page.scripts.length);
+  }
+});
+
+test('each explicit locale matches its published dashboard, metadata and runtime configuration', async () => {
+  for (const {code} of registry) {
+    const page = await visit({stored:{[choiceKey]:code},languages:['en-US']});
+    assertHome(page,code);
+    assert.equal(page.ready.locale,code);
+  }
+});
+
+test('network, version, locale and late invalid slot failures retain the complete English home', async () => {
+  const cases=[{failFetch:true},{corruptBytes:true},{changePayload:p=>{p.version+='-invalid';}},{changePayload:p=>{p.locale='de';}},
+    {changePayload:p=>{p.changes.push({id:99999999,text:[[0,'Unreviewed final slot']]});}},
+    {changeManifest:m=>{m.locales.ko='https://untrusted.example/ko.json';}}];
+  for(const fault of cases) {
+    const page=await visit({languages:['ko'],...fault});assertHome(page,'en');
+    assert(page.requests.every(u=>new URL(u).origin===origin));
+    assert.equal(page.scripts.filter(p=>p==='/js/v5-landing.js').length,1);
+  }
+});
+
+test('localized URLs retain their own language, manual links retain browser navigation', async () => {
+  const page=await visit({pathname:'/ar/',source:read('ar/index.html'),stored:{[choiceKey]:'de'},languages:['ko-KR']});
+  assert.equal(page.document.documentElement.dataset.lang,'ar');assert.equal(canonical(page.document),origin+'/ar/');
+  assert.deepEqual(page.requests,[]);assert.deepEqual(page.navigation,[]);
+  page.execute('js/analytics-contract.js');page.execute('js/root-home-analytics.js');page.execute('js/v3-affiliate.js');
+  const directViews=page.calls().filter(call=>call[0]==='event'&&call[1]==='page_view');
+  assert.equal(directViews.length,1);assert.equal(directViews[0][2].page,'/ar/');assert.equal(directViews[0][2].language,'ar');
+  const top=await visit({languages:['en-US']});
+  const link=top.document.querySelector('header [data-root-locale="ko"]');
+  function click(modifiers={}) {const e=new top.document.defaultView.Event('click',{bubbles:true,cancelable:true});Object.assign(e,{button:0,...modifiers});link.dispatchEvent(e);return e.defaultPrevented;}
+  assert.equal(click({ctrlKey:true}),false);assert.deepEqual(top.writes,[]);
+  assert.equal(click({detail:0}),false);assert.deepEqual(top.writes,[[choiceKey,'ko']]);
+  assert.equal(link.getAttribute('href'),'/ko/');assert.deepEqual(top.navigation,[]);
+});
+
+test('root analytics starts once after locale selection and continues honoring privacy signals', async () => {
+  const page=await visit({languages:['ar-EG']});
+  const before=page.scripts.slice(); page.execute('js/root-language.js'); await page.window.TS_ROOT_HOME_READY;
+  assert.deepEqual(page.scripts,before,'Loader ran a second home script sequence');
+  const calls=page.calls();
+  for(const name of ['page_view','landing_view']) {
+    const events=calls.filter(x=>x[0]==='event'&&x[1]===name);assert.equal(events.length,1,name);
+    assert.equal(events[0][2].send_to,'G-Z2MJ6TXZHK');assert.equal(events[0][2].page,'/');
+    assert.equal(events[0][2].language,'ar');assert.equal(events[0][2].page_type,'home');
+  }
+  assert.equal(calls.filter(c=>c[0]==='config').length,1);
+  const defaults=calls.filter(c=>c[0]==='consent');assert.equal(defaults.length,1);
+  assert(Object.values(defaults[0][2]).every(v=>v==='denied'));
+  const blocked=await visit({languages:['ar'],navigatorExtra:{globalPrivacyControl:true}});
+  assert.equal(blocked.calls().filter(c=>c[0]==='event'||c[0]==='config').length,0);
 });
