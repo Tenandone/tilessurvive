@@ -14,6 +14,15 @@ const published = () => L.registry.locales.filter(x => x.status === 'published')
 const compactJSON = value => JSON.stringify(value).replace(/</g, '\\u003c');
 const jsonTypes = new Set(['application/json', 'application/ld+json']);
 const earlyScripts = ['js/site-locales.js','js/home-form-state.js'];
+// Only the root uses these short titles. Keep localized homepage titles that already fit.
+const shortRootLabels = {
+  en:'Tiles Survive Guide', de:'Events und Spieltipps', ru:'События и гайды',
+  ar:'الفعاليات وأدلة اللعب', nl:'Evenementen en tips', fr:'Événements et guides',
+  id:'Event dan panduan', it:'Eventi e guide', pl:'Wydarzenia i porady',
+  pt:'Eventos e guias', es:'Eventos y guías', sv:'Evenemang och guider',
+  th:'กิจกรรมและคู่มือเกม', tr:'Etkinlik rehberi', vi:'Sự kiện và hướng dẫn',
+  ms:'Acara dan panduan', nb:'Hendelser og guider',
+};
 const headSelectors = [
   'title', 'meta[name="description"]', 'meta[name="keywords"]',
   'meta[property="og:title"]', 'meta[property="og:description"]', 'meta[property="og:locale"]',
@@ -33,6 +42,14 @@ function prepareHome(source, locale, available, root) {
   const info = L.byCode.get(locale);
   html.setAttribute('data-root-home', '');
   html.dir = info.dir;
+  const ogTitle = document.querySelector('meta[property="og:title"]');
+  if (locale === 'en' || [document.title,ogTitle.content].some(t => [...t].length > 40)) {
+    assert(shortRootLabels[locale], 'Missing short root title: ' + locale);
+    const title = shortRootLabels[locale] + ' | TilesSurvive.net';
+    assert([...title].length <= 40, 'Root title exceeds 40 characters: ' + locale);
+    document.title = title;
+    ogTitle.content = title;
+  }
   document.querySelector('link[rel="canonical"]').setAttribute('href', origin + '/');
   document.querySelector('meta[property="og:url"]').content = origin + '/';
   const pageSchema = document.querySelector('script[type="application/ld+json"][data-v5-owned="metadata"]');

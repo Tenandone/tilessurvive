@@ -12,6 +12,7 @@ const registry = require('../data/i18n/locales.json').locales.filter(l => l.stat
 const root = path.resolve(__dirname, '..');
 const origin = 'https://tilessurvive.net';
 const choiceKey = 'tiles.locale.explicit.v1';
+const englishRootTitle = 'Tiles Survive Guide | TilesSurvive.net';
 const read = file => fs.readFileSync(path.join(root, file), 'utf8');
 const dom = source => parseHTML(source).document;
 const home = code => dom(read(code + '/index.html'));
@@ -48,6 +49,8 @@ test('raw root HTML contains the complete English dashboard and 21 direct langua
   const document = dom(read('index.html'));
   assert(document.documentElement.hasAttribute('data-root-home'));
   assert.equal(document.documentElement.lang, 'en');
+  assert.equal(document.title,englishRootTitle);
+  assert.equal(metadata(document,'property','og:title'),englishRootTitle);
   assert.equal(canonical(document), origin + '/');
   assert.equal(metadata(document, 'property', 'og:url'), origin + '/');
   assert(!/\b(noindex|none)\b/i.test(metadata(document, 'name', 'robots') || ''));
@@ -190,8 +193,14 @@ function assertHome(page, code) {
   assert.equal(page.document.documentElement.lang,l.htmlLang);
   assert.equal(page.document.documentElement.getAttribute('dir') || 'ltr',l.dir);
   assert.deepEqual(dashboard(page.document),dashboard(localized, true),code+' dashboard or configuration mismatch');
-  assert.equal(page.document.title,localized.title);
-  for(const [attr,key] of [['name','description'],['property','og:title'],['property','og:description'],['property','og:locale']]) assert.equal(metadata(page.document,attr,key), metadata(localized,attr,key),code+' '+key);
+  const title = page.document.title;
+  assert.equal(metadata(page.document,'property','og:title'),title,code+' root Open Graph title');
+  assert.match(title,/^.+ \| TilesSurvive\.net$/);
+  assert([...title].length <= 40,code+' root title exceeds 40 characters');
+  if(code==='en') assert.equal(title,englishRootTitle);
+  else if([...localized.title].length<=40) assert.equal(title,localized.title);
+  else assert.notEqual(title,englishRootTitle,code+' must retain its own language');
+  for(const [attr,key] of [['name','description'],['property','og:description'],['property','og:locale'],['name','twitter:title']]) assert.equal(metadata(page.document,attr,key), metadata(localized,attr,key),code+' '+key);
   const schema=JSON.parse(page.document.querySelector('script[type="application/ld+json"][data-v5-owned="metadata"]').textContent);
   assert.equal(schema.url,origin+'/');assert.equal(schema['@id'],origin+'/#webpage');
   assert.equal(metadata(page.document,'property','og:url'),origin+'/');
